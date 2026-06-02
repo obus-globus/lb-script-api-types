@@ -71,7 +71,11 @@ The `types/` tree is generated — not hand-edited. The **whole flow is one comm
 
 Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25 + JDK 21. Bump `PINNED_SHA` in
 `tools/regen-types.sh` (and `version` in `typings/package.json`) when moving to a
-newer LB.
+newer LB. Hit a crash during regen? See [docs/regen-troubleshooting.md](docs/regen-troubleshooting.md)
+(notably the Kotlin-runtime-skew `KParameter$Kind … CONTEXT` failure).
+
+Useful env knobs: `REGEN_TIMEOUT` (default `60m`, caps the headless run) and
+`SKIP_JAR_BUILD=1` (reuse the existing generator jar instead of rebuilding).
 
 ### Containerised / CI
 - **Docker** — `docker/regen.sh` runs the whole flow in a pinned-toolchain image
