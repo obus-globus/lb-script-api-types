@@ -1,0 +1,13 @@
+# The image clones the repo at runtime; the build context only needs
+# docker/entrypoint.sh. Keep the context tiny — exclude the heavy trees.
+typings/
+generator/
+tools/regen-output/
+references/
+**/build/
+**/.gradle/
+**/node_modules/
+**/kotlinc/
+**/.venv*/
+**/__pycache__/
+.git/

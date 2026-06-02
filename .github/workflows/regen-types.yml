@@ -1,0 +1,94 @@
+name: Regenerate script-api types
+
+# Runs the WHOLE type-generation flow (build generator → headless LiquidBounce
+# introspection → apply-kdoc + fix-binding → promote) inside the regen container,
+# then opens a PR if the committed typings/ changed.
+#
+# NOTE: the flow launches a real Minecraft client headlessly (~50-60 min on Mesa
+# softpipe) and downloads several GB of Gradle/MC deps. GitHub-hosted runners are
+# resource-constrained (2 vCPU / ~14 GB disk) — this may be slow or run out of
+# disk; a larger or self-hosted runner is recommended for routine use. The Gradle
+# cache is persisted across runs to skip the re-downloads.
+on:
+  workflow_dispatch:
+    inputs:
+      promote:
+        description: "Promote regen output into typings/ and open a PR"
+        type: boolean
+        default: true
+  # Uncomment to check weekly for upstream drift:
+  # schedule:
+  #   - cron: "0 4 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Free up disk
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache/CodeQL || true
+          df -h /
+
+      - name: Cache Gradle + Minecraft downloads
+        uses: actions/cache@v4
+        with:
+          path: gradle-cache
+          key: regen-gradle-${{ hashFiles('generator/**/*.gradle', 'tools/regen-types.sh') }}
+          restore-keys: regen-gradle-
+
+      - name: Build the regen image
+        run: docker build -f docker/Dockerfile -t lb-regen:ci .
+
+      - name: Run the regen flow
+        env:
+          PROMOTE_FLAG: ${{ inputs.promote == false && '--no-promote' || '' }}
+        run: |
+          mkdir -p gradle-cache
+          # Run against the checked-out repo (so it uses THIS branch's generator
+          # + pipeline). Root in-container; ownership fixed afterwards.
+          docker run --rm --shm-size=1g \
+            -e HOME=/work \
+            -v "$PWD":/work \
+            -v "$PWD/gradle-cache":/cache/gradle \
+            lb-regen:ci $PROMOTE_FLAG
+          sudo chown -R "$(id -u):$(id -g)" . || true
+
+      - name: Upload regen-output artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regen-output
+          path: tools/regen-output/
+          if-no-files-found: ignore
+
+      - name: Detect typings changes
+        id: diff
+        run: |
+          if [[ -n "$(git status --porcelain typings/)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to typings/ — generator reproduced the committed tree."
+          fi
+
+      - name: Open PR with regenerated types
+        if: steps.diff.outputs.changed == 'true' && inputs.promote != false
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: regen/types-update
+          title: "chore: regenerate script-api types"
+          commit-message: "chore: regenerate script-api types (headless introspection)"
+          body: |
+            Automated regeneration via the headless LiquidBounce introspection flow
+            (`run-regen.sh`). Review the diff before merging.
+          add-paths: typings/
+          delete-branch: true

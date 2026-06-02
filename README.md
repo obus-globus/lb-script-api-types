@@ -73,6 +73,15 @@ Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25 + JDK 21. Bump `PINNED_SHA` 
 `tools/regen-types.sh` (and `version` in `typings/package.json`) when moving to a
 newer LB.
 
+### Containerised / CI
+- **Docker** — `docker/regen.sh` runs the whole flow in a pinned-toolchain image
+  with cached volumes (Gradle + Minecraft downloads persist across runs). See
+  [docker/README.md](docker/README.md).
+- **GitHub Actions** — `.github/workflows/regen-types.yml` runs the flow and opens
+  a PR with the regenerated types; `.github/workflows/docker-image.yml` publishes
+  the regen image to GHCR. (The headless-client run is heavy — a larger or
+  self-hosted runner is recommended.)
+
 ## Provenance / notes
 - The generator lives in its own repo (`generator/` submodule) so it stays a clean
   Kotlin project; the KDoc feature was reconciled into it (it had diverged inside
