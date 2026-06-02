@@ -26,13 +26,26 @@ PINNED_SHA="${PINNED_SHA:-fac52d9c85c85141cb327e00599cdf8e0a7afc66}"
 LB_DIR="$REPO_ROOT/references/liquidbounce"
 mkdir -p "$REPO_ROOT/references"
 
+# Disk-friendly reuse: if a sibling liquidbounce-helper checkout already has the
+# LB source (commonly already built with MC deps), symlink to it instead of
+# re-cloning gigabytes. Override with FRESH_CLONE=1.
+SIBLING="$REPO_ROOT/../liquidbounce-helper/references/liquidbounce"
+if [[ "${FRESH_CLONE:-0}" != "1" && ! -e "$LB_DIR" && -d "$SIBLING/.git" ]]; then
+  echo "Reusing sibling LB checkout via symlink: $SIBLING"
+  ln -s "$(cd "$SIBLING" && pwd)" "$LB_DIR"
+fi
+
 if [[ ! -d "$LB_DIR/.git" ]]; then
   echo "Cloning LiquidBounce into references/liquidbounce …"
   git clone --recurse-submodules https://github.com/CCBlueX/LiquidBounce.git "$LB_DIR"
 fi
-echo "Checking out LiquidBounce @ $PINNED_SHA …"
-git -C "$LB_DIR" fetch --all --tags
-git -C "$LB_DIR" checkout --recurse-submodules "$PINNED_SHA"
+if [[ "$(git -C "$LB_DIR" rev-parse HEAD 2>/dev/null)" == "$PINNED_SHA" ]]; then
+  echo "references/liquidbounce already at $PINNED_SHA."
+else
+  echo "Checking out LiquidBounce @ $PINNED_SHA …"
+  git -C "$LB_DIR" fetch --all --tags
+  git -C "$LB_DIR" checkout --recurse-submodules "$PINNED_SHA"
+fi
 echo "Done. references/liquidbounce is at $PINNED_SHA."
 
 # Initialise the generator submodule if needed.

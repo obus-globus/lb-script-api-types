@@ -50,18 +50,28 @@ As a local `file:` dependency (how `lb-nodeflow` uses it):
 ```
 
 ## Regenerating the types
-The `types/` tree is generated — not hand-edited. To regenerate against a new
-LiquidBounce build:
+The `types/` tree is generated — not hand-edited. The **whole flow is one command**:
 
 ```bash
-git submodule update --init generator   # the Kotlin generator
-./fetch-references.sh                    # clone LB source @ the pinned SHA (gitignored)
-# plus: provide tools/script-runner/ (headless JDK 25 + Xvfb + MC) — see fetch-references.sh
-tools/regen-types.sh                     # build jar → run in-client → post-process → typings/
+./run-regen.sh                  # inputs → regen (+ apply-kdoc + fix-binding) → promote
+./run-regen.sh --no-promote     # stop at tools/regen-output/ (review the diff first)
 ```
-Bump `PINNED_SHA` in `tools/regen-types.sh` (and `version` in `typings/package.json`)
-when moving to a newer LB. The headless-client run requires the MC runner harness,
-which is host-specific and not committed here.
+
+`run-regen.sh` does, end to end:
+1. **inputs** — `fetch-references.sh` (LB source; reuses a sibling
+   `liquidbounce-helper` checkout via symlink if present, else clones) + inits the
+   `generator/` submodule.
+2. **regen** — `tools/regen-types.sh`: builds the generator shadow jar (JDK 21),
+   launches LiquidBounce headless (`xvfb-run` + Mesa llvmpipe, JDK 25) so
+   `ts-defgen.js` introspects the live class graph → `tools/regen-output/`, then
+   `post-patches.sh` applies `apply-kdoc.py` (TSDoc) + `fix-binding-types.py`
+   (F4/F5 binding fixes). **~50–60 min** on softpipe.
+3. **promote** — copies the post-processed tree into `typings/`, keeping the
+   hand-curated `package.json` + `__smoke/` + `tsconfig.json`.
+
+Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25 + JDK 21. Bump `PINNED_SHA` in
+`tools/regen-types.sh` (and `version` in `typings/package.json`) when moving to a
+newer LB.
 
 ## Provenance / notes
 - The generator lives in its own repo (`generator/` submodule) so it stays a clean
