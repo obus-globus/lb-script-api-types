@@ -16,6 +16,10 @@ on:
         description: "Promote regen output into typings/ and open a PR"
         type: boolean
         default: true
+      skip_regen:
+        description: "Skip the headless regen; reuse an existing tools/regen-output/ (fast re-promote / CI validation)"
+        type: boolean
+        default: false
   # Uncomment to check weekly for upstream drift:
   # schedule:
   #   - cron: "0 4 * * 1"
@@ -50,7 +54,9 @@ jobs:
 
       - name: Run the regen flow
         env:
-          PROMOTE_FLAG: ${{ inputs.promote == false && '--no-promote' || '' }}
+          REGEN_ARGS: >-
+            ${{ inputs.promote == false && '--no-promote' || '' }}
+            ${{ inputs.skip_regen && '--no-regen' || '' }}
         run: |
           mkdir -p gradle-cache
           # Run against the checked-out repo (so it uses THIS branch's generator
@@ -59,7 +65,7 @@ jobs:
             -e HOME=/work \
             -v "$PWD":/work \
             -v "$PWD/gradle-cache":/cache/gradle \
-            lb-regen:ci $PROMOTE_FLAG
+            lb-regen:ci $REGEN_ARGS
           sudo chown -R "$(id -u):$(id -g)" . || true
 
       - name: Upload regen-output artifact
