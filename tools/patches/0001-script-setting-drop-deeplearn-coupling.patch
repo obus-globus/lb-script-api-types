@@ -1,0 +1,29 @@
+# Target: liquidbounce
+--- a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt
++++ b/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt
+@@ -23,10 +23,10 @@
+ import net.ccbluex.liquidbounce.config.types.Value
+ import net.ccbluex.liquidbounce.config.types.ValueType
+ import net.ccbluex.liquidbounce.config.types.list.ChoiceListValue
++import net.ccbluex.liquidbounce.config.types.list.ListValue
+ import net.ccbluex.liquidbounce.config.types.list.MultiChoiceListValue
+ import net.ccbluex.liquidbounce.config.types.list.Tagged
+ import net.ccbluex.liquidbounce.config.types.list.Tagged.Companion.asTagged
+-import net.ccbluex.liquidbounce.deeplearn.ModelManager.list
+ import net.ccbluex.liquidbounce.script.asArray
+ import net.ccbluex.liquidbounce.script.asDoubleArray
+ import net.ccbluex.liquidbounce.script.asIntArray
+@@ -132,7 +132,12 @@
+         val name = value.getMember("name").asString()
+         val default = value.getMember("default").asArray<String>()
+ 
+-        return list(name, default.toMutableList(), ValueType.TEXT)
++        return ListValue(
++            name = name,
++            value = default.toMutableList(),
++            innerValueType = ValueType.TEXT,
++            innerType = String::class.java,
++        )
+     }
+ 
+     @JvmName("choose")

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/obus-globus/liquidbounce-helper/tools/kdoc-extractor/manifest.schema.json",
+  "title": "kdoc-extractor manifest",
+  "description": "Output of the T-Doc Phase B kdoc-extractor (PSI walker). Envelope wraps FQN→entry map; consumed by tools/regen/apply-kdoc.py and ts-generator's KDocSource.",
+  "type": "object",
+  "required": ["schemaVersion", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 2,
+      "description": "Manifest shape version. Bump in lockstep with MANIFEST_SCHEMA_VERSION in both extractor and apply-kdoc.py."
+    },
+    "entries": {
+      "type": "object",
+      "description": "Map of fully-qualified Kotlin name → entry (or list of entries for overloads).",
+      "additionalProperties": {
+        "oneOf": [
+          { "$ref": "#/$defs/entry" },
+          {
+            "type": "array",
+            "items": { "$ref": "#/$defs/entry" },
+            "minItems": 1
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "doc": {
+          "type": "string",
+          "description": "KDoc summary + body (Markdown-ish, with `[Symbol]` cross-refs)."
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["class", "interface", "enum", "object", "function", "property", "constructor", "typealias"],
+          "description": "Kotlin declaration kind."
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "file":  { "type": "string", "description": "Path relative to LB repo root." },
+            "line":  { "type": "integer", "minimum": 1, "description": "1-based line number of declaration." }
+          },
+          "required": ["file", "line"]
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "description": "@param name → KDoc description."
+        },
+        "returns":    { "type": "string", "description": "@return value description." },
+        "deprecated": { "type": "string", "description": "@deprecated message." },
+        "since":      { "type": "string", "description": "@since version." },
+        "see": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of @see references."
+        },
+        "sample":     { "type": "string", "description": "@sample code snippet (optional)." },
+        "authors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of @author entries (one per author)."
+        },
+        "anticheat":        { "type": "string", "description": "@anticheat target name (LB-specific)." },
+        "anticheatVersion": { "type": "string", "description": "@anticheatVersion target version (LB-specific)." },
+        "testedOn":         { "type": "string", "description": "@testedOn server list (LB-specific)." },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of @note bullet points (LB-specific)."
+        }
+      }
+    }
+  }
+}

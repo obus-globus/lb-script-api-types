@@ -1,0 +1,522 @@
+#!/usr/bin/env python3
+"""
+ts-extract.py — tree-sitter-based KDoc extractor for the
+@liquidbounce-helper/script-api-types Phase B pipeline.
+
+Same output schema as hybrid-extract.py (the LSP+regex version):
+
+    {
+      "<fqn>": [
+        {
+          "doc": "...",
+          "params": {...},
+          "returns": "...",
+          "deprecated": "...",
+          "since": "...",
+          "see": [...],
+          "sample": "...",
+          "kind": "class|object|interface|function|property|...",
+          "source": {"file": "...", "line": N}
+        },
+        ...
+      ],
+      ...
+    }
+
+Why a tree-sitter rewrite of hybrid-extract.py:
+
+  • No 1.2 GB kotlin-lsp dependency. tree-sitter-kotlin is a 2 MB
+    Python wheel.
+  • No JSON-RPC dance / startup race.
+  • Synchronous in-process; the full LB checkout extracts in seconds
+    instead of ~50 s.
+  • Single file, no Gradle / JVM / DAEMON involvement.
+
+Setup (one-time):
+
+    python3 -m venv tools/kdoc-extractor/.venv-ts
+    tools/kdoc-extractor/.venv-ts/bin/pip install tree-sitter tree-sitter-kotlin
+
+Usage:
+
+    tools/kdoc-extractor/.venv-ts/bin/python3 \\
+        tools/kdoc-extractor/lsp/ts-extract.py \\
+        --project references/liquidbounce \\
+        --out tools/kdoc-extractor/manifest.json
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+import time
+from pathlib import Path
+from typing import Any, Iterable, Optional
+
+import tree_sitter_kotlin as tsk
+from tree_sitter import Language, Node, Parser
+
+LANG = Language(tsk.language())
+PARSER = Parser(LANG)
+
+
+# ------------------------------------------------------------------------
+# KDoc text parser — shared with hybrid-extract.py semantics
+# ------------------------------------------------------------------------
+TAG_RE = re.compile(r"^@(\w+)(?:\s+(.*))?$")
+
+
+def _strip_kdoc(text: str) -> str:
+    """Strip the surrounding /** … */ and leading ` * `."""
+    text = text.strip()
+    if text.startswith("/**"):
+        text = text[3:]
+    elif text.startswith("/*"):
+        text = text[2:]
+    if text.endswith("*/"):
+        text = text[:-2]
+    lines: list[str] = []
+    for raw in text.splitlines():
+        s = raw.strip()
+        if s.startswith("*"):
+            s = s[1:]
+            if s.startswith(" "):
+                s = s[1:]
+        lines.append(s)
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    while lines and not lines[-1].strip():
+        lines.pop()
+    return "\n".join(lines)
+
+
+def parse_kdoc(raw: str) -> Optional[dict[str, Any]]:
+    """Parse a KDoc /** … */ block text into our manifest entry shape."""
+    body = _strip_kdoc(raw)
+    if not body.strip():
+        return None
+    doc_lines: list[str] = []
+    params: dict[str, str] = {}
+    returns: Optional[str] = None
+    deprecated: Optional[str] = None
+    since: Optional[str] = None
+    see: list[str] = []
+    sample: Optional[str] = None
+
+    current: Optional[tuple[str, Any]] = None  # ("param", name) | ("returns",) etc.
+
+    def flush(buf: list[str]) -> str:
+        return "\n".join(buf).rstrip()
+
+    buf: list[str] = []
+
+    def commit():
+        nonlocal returns, deprecated, since, sample
+        if current is None:
+            return
+        text = flush(buf)
+        kind = current[0]
+        if kind == "param":
+            params[current[1]] = text
+        elif kind == "returns":
+            returns = text
+        elif kind == "deprecated":
+            deprecated = text
+        elif kind == "since":
+            since = text
+        elif kind == "see":
+            see.append(text)
+        elif kind == "sample":
+            sample = text
+        buf.clear()
+
+    for line in body.splitlines():
+        m = TAG_RE.match(line.strip())
+        if m:
+            commit()
+            tag, rest = m.group(1), (m.group(2) or "").strip()
+            if tag == "param":
+                parts = rest.split(None, 1)
+                if not parts:
+                    current = None
+                    continue
+                name = parts[0]
+                current = ("param", name)
+                buf = [parts[1]] if len(parts) > 1 else []
+            elif tag in ("return", "returns"):
+                current = ("returns",)
+                buf = [rest] if rest else []
+            elif tag == "deprecated":
+                current = ("deprecated",)
+                buf = [rest] if rest else []
+            elif tag == "since":
+                current = ("since",)
+                buf = [rest] if rest else []
+            elif tag == "see":
+                current = ("see",)
+                buf = [rest] if rest else []
+            elif tag == "sample":
+                current = ("sample",)
+                buf = [rest] if rest else []
+            else:
+                # Unknown tag — fold into the previous bucket's text.
+                if current is None:
+                    doc_lines.append(line)
+                else:
+                    buf.append(line)
+        else:
+            if current is None:
+                doc_lines.append(line)
+            else:
+                buf.append(line)
+    commit()
+
+    doc = "\n".join(doc_lines).strip()
+    if not (doc or params or returns or deprecated or since or see or sample):
+        return None
+    out: dict[str, Any] = {"doc": doc}
+    if params:
+        out["params"] = params
+    if returns is not None:
+        out["returns"] = returns
+    if deprecated is not None:
+        out["deprecated"] = deprecated
+    if since is not None:
+        out["since"] = since
+    if see:
+        out["see"] = see
+    if sample:
+        out["sample"] = sample
+    return out
+
+
+# ------------------------------------------------------------------------
+# tree-sitter walker
+# ------------------------------------------------------------------------
+# Kotlin grammar nodes that introduce a declaration we want to extract.
+DECL_TYPES = {
+    "class_declaration": "class",
+    "object_declaration": "object",
+    "interface_declaration": "interface",
+    "function_declaration": "function",
+    "property_declaration": "property",
+    "type_alias": "typealias",
+    "enum_class_body": "enum",
+    "secondary_constructor": "constructor",
+}
+
+# Nodes whose children contain further declarations.
+CONTAINER_TYPES = {
+    "source_file",
+    "class_body",
+    "enum_class_body",
+    "object_literal",  # for completeness; we skip locals later
+}
+
+
+def _node_text(src: bytes, n: Node) -> str:
+    return src[n.start_byte : n.end_byte].decode("utf-8", "replace")
+
+
+def _find_identifier(n: Node) -> Optional[str]:
+    """Get the declared simple name from a declaration node."""
+    # function_declaration: optional receiver (user_type . identifier).
+    # We want the last `identifier` child that is NOT inside a
+    # function_value_parameters / type_parameters / user_type subtree.
+    if n.type == "function_declaration":
+        # The declared name is the identifier child that is a *direct*
+        # child of n and comes after the optional receiver `.` token.
+        # Receiver form:  fun  USER_TYPE  .  IDENT  ( params )
+        # Normal form:    fun  IDENT             ( params )
+        # Walk direct children.
+        ident_children = [c for c in n.children if c.type == "identifier"]
+        if not ident_children:
+            return None
+        return _node_text_at(n, ident_children[-1])
+    if n.type == "property_declaration":
+        # variable_declaration → identifier
+        for c in n.children:
+            if c.type == "variable_declaration":
+                for cc in c.children:
+                    if cc.type == "identifier":
+                        return _node_text_at(n, cc)
+        return None
+    if n.type == "secondary_constructor":
+        return "<init>"
+    # class/object/interface/typealias all have a direct `identifier` child.
+    for c in n.children:
+        if c.type == "identifier":
+            return _node_text_at(n, c)
+    return None
+
+
+def _node_text_at(parent: Node, child: Node) -> str:
+    """Like _node_text, but reuse the parent's source bytes if we passed it."""
+    # Tree-sitter Node has .text directly; use it.
+    return child.text.decode("utf-8", "replace") if child.text else ""
+
+
+def _is_function_receiver(fn_node: Node) -> Optional[str]:
+    """For function_declaration: return the receiver type as a string if it
+    is an extension function (e.g. `fun String.foo()` → 'String'); else None.
+    """
+    children = list(fn_node.children)
+    # Find user_type followed by '.' followed by identifier near the start.
+    for i, c in enumerate(children):
+        if c.type == "user_type" and i + 2 < len(children):
+            if children[i + 1].type == "." and children[i + 2].type == "identifier":
+                return c.text.decode("utf-8", "replace") if c.text else None
+        if c.type == "function_value_parameters":
+            break
+    return None
+
+
+def _preceding_kdoc(node: Node) -> Optional[str]:
+    """Walk up to the parent's children and grab the nearest preceding
+    block_comment that starts with '/**'. Skip blank text / line_comment."""
+    parent = node.parent
+    if parent is None:
+        return None
+    siblings = parent.children
+    try:
+        idx = siblings.index(node)
+    except ValueError:
+        return None
+    for j in range(idx - 1, -1, -1):
+        sib = siblings[j]
+        t = sib.type
+        if t in ("block_comment",):
+            text = sib.text.decode("utf-8", "replace") if sib.text else ""
+            if text.startswith("/**"):
+                return text
+            # /* … */ but not a KDoc — stop searching (it would shadow KDoc above).
+            return None
+        if t == "line_comment":
+            # //-comments are skipped (don't shadow).
+            continue
+        if t in ("modifiers", "annotation"):
+            # Modifiers/annotations attach to the decl; continue searching above.
+            continue
+        # Any other real node (another declaration, a `{`/`}`, etc.) means
+        # there is no KDoc directly above this one.
+        return None
+    return None
+
+
+def _extract_package(root: Node) -> str:
+    for c in root.children:
+        if c.type == "package_header":
+            # `package <qualified_identifier>` — collect identifiers and backticks.
+            parts: list[str] = []
+            for cc in c.children:
+                if cc.type == "qualified_identifier":
+                    for ccc in cc.children:
+                        if ccc.type == "identifier":
+                            txt = ccc.text.decode("utf-8", "replace") if ccc.text else ""
+                            parts.append(txt.strip("`"))
+                elif cc.type == "identifier":
+                    txt = cc.text.decode("utf-8", "replace") if cc.text else ""
+                    parts.append(txt.strip("`"))
+            return ".".join(parts)
+    return ""
+
+
+def _walk(
+    node: Node,
+    parent_parts: list[str],
+    rel_file: str,
+    package: str,
+    out: dict[str, list[dict[str, Any]]],
+) -> None:
+    for child in node.children:
+        if child.type in DECL_TYPES:
+            kind = DECL_TYPES[child.type]
+            name = _find_identifier(child)
+            if name is None:
+                continue
+            name = name.strip("`")
+
+            # Companion-object flattening: members live on the parent class
+            # namespace in the generated TS.
+            if name == "Companion" and kind == "object":
+                # Don't emit "Foo.Companion"; just recurse with parent scope.
+                body = _child_of_type(child, "class_body")
+                if body is not None:
+                    _walk(body, parent_parts, rel_file, package, out)
+                continue
+
+            # Extension functions on type receivers: re-parent so the FQN
+            # is "<package>.<ReceiverType>.<name>".
+            parts: list[str]
+            if kind == "function" and not parent_parts:
+                recv = _is_function_receiver(child)
+                if recv:
+                    parts = [recv, name]
+                else:
+                    parts = [name]
+            else:
+                parts = parent_parts + [name]
+
+            fqn = (package + "." if package else "") + ".".join(parts)
+
+            kdoc_text = _preceding_kdoc(child)
+            if kdoc_text:
+                parsed = parse_kdoc(kdoc_text)
+                if parsed is not None:
+                    entry = dict(parsed)
+                    entry["kind"] = kind
+                    entry["source"] = {"file": rel_file, "line": child.start_point[0] + 1}
+                    out.setdefault(fqn, []).append(entry)
+
+            # Also harvest data-class / constructor params.
+            if kind in ("class", "object", "interface"):
+                ctor = _child_of_type(child, "primary_constructor")
+                if ctor is not None:
+                    cparams = _child_of_type(ctor, "class_parameters")
+                    if cparams is not None:
+                        for cp in cparams.children:
+                            if cp.type != "class_parameter":
+                                continue
+                            # val/var keyword tells us it's a property; otherwise it's
+                            # only a constructor parameter, no public API.
+                            has_property_keyword = any(
+                                c.type in ("val", "var") for c in cp.children
+                            )
+                            if not has_property_keyword:
+                                continue
+                            ident = None
+                            for cc in cp.children:
+                                if cc.type == "identifier":
+                                    ident = cc.text.decode("utf-8", "replace") if cc.text else ""
+                                    break
+                            if not ident:
+                                continue
+                            ident = ident.strip("`")
+                            kdoc_text2 = _preceding_kdoc(cp)
+                            if kdoc_text2:
+                                parsed2 = parse_kdoc(kdoc_text2)
+                                if parsed2 is not None:
+                                    member_fqn = fqn + "." + ident
+                                    entry2 = dict(parsed2)
+                                    entry2["kind"] = "property"
+                                    entry2["source"] = {
+                                        "file": rel_file,
+                                        "line": cp.start_point[0] + 1,
+                                    }
+                                    out.setdefault(member_fqn, []).append(entry2)
+                # Recurse into class body for nested members.
+                body = _child_of_type(child, "class_body")
+                if body is None:
+                    body = _child_of_type(child, "enum_class_body")
+                if body is not None:
+                    _walk(body, parts, rel_file, package, out)
+        elif child.type in CONTAINER_TYPES:
+            _walk(child, parent_parts, rel_file, package, out)
+        elif child.type == "companion_object":
+            # Companion-object members flatten into the enclosing class
+            # namespace (TS generator emits them as statics).
+            body = _child_of_type(child, "class_body")
+            if body is not None:
+                _walk(body, parent_parts, rel_file, package, out)
+
+
+def _child_of_type(node: Node, type_name: str) -> Optional[Node]:
+    for c in node.children:
+        if c.type == type_name:
+            return c
+    return None
+
+
+# ------------------------------------------------------------------------
+# Main
+# ------------------------------------------------------------------------
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--project", required=True, help="Path to LiquidBounce checkout")
+    ap.add_argument("--out", required=True, help="Output manifest.json path")
+    ap.add_argument(
+        "--source-roots",
+        nargs="+",
+        default=["src/main/kotlin"],
+        help="Source roots inside --project to scan (relative paths).",
+    )
+    ap.add_argument("--limit", type=int, default=0, help="Stop after N files (debug)")
+    args = ap.parse_args()
+
+    project = Path(args.project).resolve()
+    if not project.is_dir():
+        print(f"FAIL: --project {project} is not a directory", file=sys.stderr)
+        return 2
+
+    files: list[Path] = []
+    for root in args.source_roots:
+        files.extend(sorted((project / root).rglob("*.kt")))
+    if args.limit:
+        files = files[: args.limit]
+    if not files:
+        print("FAIL: no .kt files found", file=sys.stderr)
+        return 2
+
+    print(f"[ts] scanning {len(files)} .kt files under {project}", file=sys.stderr)
+
+    out: dict[str, list[dict[str, Any]]] = {}
+    files_with_kdoc = 0
+    kdocs = 0
+    t0 = time.time()
+    for i, path in enumerate(files):
+        try:
+            data = path.read_bytes()
+        except OSError as e:
+            print(f"  [warn] {path}: {e}", file=sys.stderr)
+            continue
+        tree = PARSER.parse(data)
+        root = tree.root_node
+        if root.has_error:
+            # Tree-sitter is forgiving; partial trees are still useful.
+            pass
+        package = _extract_package(root)
+        rel_file = str(path.relative_to(project))
+        before = sum(len(v) for v in out.values())
+        _walk(root, [], rel_file, package, out)
+        after = sum(len(v) for v in out.values())
+        added = after - before
+        if added:
+            files_with_kdoc += 1
+            kdocs += added
+        if (i + 1) % 200 == 0:
+            elapsed = time.time() - t0
+            rate = (i + 1) / max(elapsed, 1e-6)
+            print(
+                f"[ts] {i + 1}/{len(files)} files ({rate:.0f}/s); "
+                f"{files_with_kdoc} with KDoc, {kdocs} KDocs extracted",
+                file=sys.stderr,
+            )
+
+    elapsed = time.time() - t0
+    print(
+        f"[ts] done {len(files)} files in {elapsed:.1f}s "
+        f"({len(files) / max(elapsed,1e-6):.0f}/s); "
+        f"{files_with_kdoc} with KDoc, {kdocs} KDocs",
+        file=sys.stderr,
+    )
+
+    # Collapse single-entry lists to scalar dict (manifest historical shape).
+    final: dict[str, Any] = {}
+    for fqn, entries in sorted(out.items()):
+        if len(entries) == 1:
+            final[fqn] = entries[0]
+        else:
+            final[fqn] = entries
+
+    Path(args.out).write_text(json.dumps(final, indent=2, ensure_ascii=False) + "\n")
+    print(
+        f"[ts] wrote {len(final)} unique FQNs (from {kdocs} KDocs in "
+        f"{files_with_kdoc} files) → {args.out}",
+        file=sys.stderr,
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
