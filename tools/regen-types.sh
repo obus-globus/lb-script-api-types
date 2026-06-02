@@ -77,7 +77,9 @@ if [[ "$REGEN" == "1" ]]; then
   #    mtime — a touched source file invalidates the jar.
   TS_GEN_JAR="$TS_GEN_DIR/build/libs/ts-generator-1.1.4-all.jar"
   build_jar=0
-  if [[ ! -f "$TS_GEN_JAR" ]]; then
+  if [[ "${SKIP_JAR_BUILD:-0}" == "1" ]]; then
+    echo "SKIP_JAR_BUILD=1 — using existing $TS_GEN_JAR" >&2
+  elif [[ ! -f "$TS_GEN_JAR" ]]; then
     build_jar=1
   elif find "$TS_GEN_DIR/src" -type f -newer "$TS_GEN_JAR" -print -quit 2>/dev/null | grep -q .; then
     echo "ts-generator sources newer than jar; rebuilding…" >&2
@@ -161,7 +163,7 @@ EOF
          GALLIUM_DRIVER=llvmpipe \
          MESA_GL_VERSION_OVERRIDE=4.6 \
          JAVA_TOOL_OPTIONS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED" \
-         timeout 60m xvfb-run --auto-servernum --server-args="-screen 0 1280x720x24 +extension GLX +render -noreset" \
+         timeout "${REGEN_TIMEOUT:-60m}" xvfb-run --auto-servernum --server-args="-screen 0 1280x720x24 +extension GLX +render -noreset" \
          ./gradlew runClient -Dfabric.headless=true
   )
   rc=$?
