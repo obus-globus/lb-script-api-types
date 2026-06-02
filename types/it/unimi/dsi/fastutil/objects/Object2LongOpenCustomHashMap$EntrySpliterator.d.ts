@@ -1,0 +1,20 @@
+import type { Object2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2LongMap$Entry.d.ts'
+import type { Object2LongOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2LongOpenCustomHashMap$MapSpliterator.d.ts'
+import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+export class Object2LongOpenCustomHashMap$EntrySpliterator extends Object2LongOpenCustomHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Object2LongMap$Entry<K>> {
+    static CONCURRENT: number;
+    static DISTINCT: number;
+    static IMMUTABLE: number;
+    static NONNULL: number;
+    static ORDERED: number;
+    static SIZED: number;
+    static SORTED: number;
+    static SUBSIZED: number;
+    constructor(null_: Object2LongOpenCustomHashMap$EntrySpliterator)
+    constructor(null_: Object2LongOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    acceptOnIndex(arg0: (param0: Object2LongMap$Entry<K>) => void, arg1: number): void;
+    characteristics(): number;
+    makeForSplit(arg0: number, arg1: number, arg2: boolean): Object2LongOpenCustomHashMap$EntrySpliterator;
+    skip(arg0: number): number;
+}

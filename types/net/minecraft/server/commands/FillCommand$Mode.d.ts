@@ -1,0 +1,22 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+import type { BlockInput } from '../../../../net/minecraft/commands/arguments/blocks/BlockInput.d.ts'
+import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
+import type { FillCommand$Affector } from '../../../../net/minecraft/server/commands/FillCommand$Affector.d.ts'
+import type { FillCommand$Filter } from '../../../../net/minecraft/server/commands/FillCommand$Filter.d.ts'
+import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { BoundingBox } from '../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
+export class FillCommand$Mode extends Enum<FillCommand$Mode> {
+    static DESTROY: FillCommand$Mode;
+    static HOLLOW: FillCommand$Mode;
+    static OUTLINE: FillCommand$Mode;
+    static REPLACE: FillCommand$Mode;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramname: string): FillCommand$Mode;
+    static values(): (Object | null)[];
+    private constructor(affector: (param0: ServerLevel, param1: BlockPos) => kotlin.Boolean, filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => net.minecraft.commands.arguments.blocks.BlockInput)
+    affector: (param0: ServerLevel, param1: BlockPos) => kotlin.Boolean;
+    filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => net.minecraft.commands.arguments.blocks.BlockInput;
+    name(): "REPLACE" | "OUTLINE" | "HOLLOW" | "DESTROY";
+}

@@ -1,0 +1,50 @@
+import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
+import type { DoubleSupplier } from '../../../../../java/util/function/DoubleSupplier.d.ts'
+import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
+import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ValueUpdateNotifier } from '../../../../../net/irisshaders/iris/gl/state/ValueUpdateNotifier.d.ts'
+import type { DynamicUniformHolder } from '../../../../../net/irisshaders/iris/gl/uniform/DynamicUniformHolder.d.ts'
+import type { FloatSupplier } from '../../../../../net/irisshaders/iris/gl/uniform/FloatSupplier.d.ts'
+import type { LocationalUniformHolder } from '../../../../../net/irisshaders/iris/gl/uniform/LocationalUniformHolder.d.ts'
+import type { Uniform } from '../../../../../net/irisshaders/iris/gl/uniform/Uniform.d.ts'
+import type { UniformUpdateFrequency } from '../../../../../net/irisshaders/iris/gl/uniform/UniformUpdateFrequency.d.ts'
+import type { Matrix3fc } from '../../../../../org/joml/Matrix3fc.d.ts'
+import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
+import type { Vector2f } from '../../../../../org/joml/Vector2f.d.ts'
+import type { Vector2i } from '../../../../../org/joml/Vector2i.d.ts'
+import type { Vector3d } from '../../../../../org/joml/Vector3d.d.ts'
+import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
+import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
+import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
+import type { Vector4i } from '../../../../../org/joml/Vector4i.d.ts'
+export interface DynamicLocationalUniformHolder extends Object, DynamicUniformHolder, LocationalUniformHolder{
+    addDynamicUniform(arg0: Uniform, arg1: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): LocationalUniformHolder;
+    uniform1f(arg0: string, arg1: () => kotlin.Double, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1f(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1f(arg0: string, arg1: () => kotlin.Float, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Double): LocationalUniformHolder;
+    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): LocationalUniformHolder;
+    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Float): LocationalUniformHolder;
+    uniform1i(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): LocationalUniformHolder;
+    uniform2f(arg0: string, arg1: () => Vector2f, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform2f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2f): LocationalUniformHolder;
+    uniform2i(arg0: string, arg1: () => Vector2i, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform2i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2i): LocationalUniformHolder;
+    uniform3d(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector3d): LocationalUniformHolder;
+    uniform3f(arg0: string, arg1: () => Vector3f, arg2: ValueUpdateNotifier): DynamicUniformHolder;
+    uniform3f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector3f): LocationalUniformHolder;
+    uniform3i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector3i): LocationalUniformHolder;
+    uniform4f(arg0: string, arg1: () => Vector4f, arg2: ValueUpdateNotifier): DynamicUniformHolder;
+    uniform4f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector4f): LocationalUniformHolder;
+    uniform4fArray(arg0: string, arg1: () => number[], arg2: ValueUpdateNotifier): DynamicUniformHolder;
+    uniform4fArray(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number[]): LocationalUniformHolder;
+    uniform4i(arg0: string, arg1: () => Vector4i, arg2: ValueUpdateNotifier): DynamicUniformHolder;
+    uniformMatrix(arg0: string, arg1: () => Matrix4fc, arg2: ValueUpdateNotifier): DynamicUniformHolder;
+    uniformMatrix(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Matrix4fc): LocationalUniformHolder;
+    uniformMatrix3(arg0: string, arg1: () => Matrix3fc, arg2: ValueUpdateNotifier): DynamicUniformHolder;
+    uniformMatrixFromArray(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number[]): LocationalUniformHolder;
+    uniformTruncated3f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector4f): LocationalUniformHolder;
+}

@@ -1,0 +1,111 @@
+import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
+import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
+import type { NDIndex } from '../../../ai/djl/ndarray/index/NDIndex.d.ts'
+import type { DataType } from '../../../ai/djl/ndarray/types/DataType.d.ts'
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Function } from '../../../java/util/function/Function.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Number } from '../../../java/lang/Number.d.ts'
+export interface SparseNDArray extends NDArray, Object{
+    all(): NDArray;
+    allClose(arg0: NDArray): boolean;
+    allClose(arg0: NDArray, arg1: number, arg2: number, arg3: boolean): boolean;
+    any(): NDArray;
+    argSort(): NDArray;
+    argSort(arg0: number): NDArray;
+    booleanMask(arg0: NDArray): NDArray;
+    broadcast(arg0: number[]): NDArray;
+    concat(arg0: NDArray): NDArray;
+    concat(arg0: NDArray, arg1: number): NDArray;
+    copyTo(arg0: NDArray): void;
+    countNonzero(): NDArray;
+    countNonzero(arg0: number): NDArray;
+    duplicate(): NDArray;
+    encode(): number[];
+    fft(arg0: number): NDArray;
+    fft2(arg0: number[]): NDArray;
+    get(arg0: NDArray): NDArray;
+    get(arg0: NDManager, arg1: NDIndex): NDArray;
+    get(arg0: NDManager, arg1: number[]): NDArray;
+    get(arg0: NDIndex): NDArray;
+    get(arg0: number[]): NDArray;
+    get(arg0: string, arg1: Object[]): NDArray;
+    getBoolean(arg0: number[]): boolean;
+    getByte(arg0: number[]): number;
+    getDouble(arg0: number[]): number;
+    getFloat(arg0: number[]): number;
+    getInt(arg0: number[]): number;
+    getLong(arg0: number[]): number;
+    getResourceNDArrays(): NDArray[];
+    getScalar(arg0: number[]): NDArray;
+    getUint8(arg0: number[]): number;
+    ifft(arg0: number): NDArray;
+    ifft2(arg0: number[]): NDArray;
+    irfft(arg0: number): NDArray;
+    isEmpty(): boolean;
+    isScalar(): boolean;
+    isSparse(): boolean;
+    like(): NDArray;
+    max(arg0: number[]): NDArray;
+    mean(arg0: number[]): NDArray;
+    min(arg0: number[]): NDArray;
+    none(): NDArray;
+    norm(): NDArray;
+    norm(arg0: number[]): NDArray;
+    norm(arg0: number[], arg1: boolean): NDArray;
+    normalize(): NDArray;
+    normalize(arg0: number, arg1: number): NDArray;
+    oneHot(arg0: number): NDArray;
+    oneHot(arg0: number, arg1: DataType): NDArray;
+    onesLike(): NDArray;
+    prod(arg0: number[]): NDArray;
+    reshape(arg0: number[]): NDArray;
+    rfft(arg0: number): NDArray;
+    scaleGradient(arg0: number): NDArray;
+    set(arg0: NDArray, arg1: Number): void;
+    set(arg0: NDIndex, arg1: NDArray): void;
+    set(arg0: NDIndex, arg1: (param0: NDArray) => NDArray): void;
+    set(arg0: NDIndex, arg1: Number): void;
+    set(arg0: number[]): void;
+    set(arg0: number[]): void;
+    set(arg0: number[]): void;
+    set(arg0: number[]): void;
+    set(arg0: number[]): void;
+    setScalar(arg0: NDIndex, arg1: Number): void;
+    shapeEquals(arg0: NDArray): boolean;
+    size(): number;
+    size(arg0: number): number;
+    split(arg0: number): (Object | null)[];
+    split(arg0: number, arg1: number): (Object | null)[];
+    split(arg0: number[]): (Object | null)[];
+    squeeze(): NDArray;
+    squeeze(arg0: number): NDArray;
+    stack(arg0: NDArray): NDArray;
+    stack(arg0: NDArray, arg1: number): NDArray;
+    stft(arg0: number, arg1: number, arg2: boolean, arg3: NDArray, arg4: boolean): NDArray;
+    sum(arg0: number[]): NDArray;
+    swapAxes(arg0: number, arg1: number): NDArray;
+    take(arg0: NDArray): NDArray;
+    toArray(): Number[];
+    toBooleanArray(): (Object | null)[];
+    toByteArray(): number[];
+    toByteBuffer(): ByteBuffer;
+    toDebugString(): string;
+    toDebugString(arg0: boolean): string;
+    toDebugString(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): string;
+    toDoubleArray(): number[];
+    toFloatArray(): number[];
+    toIntArray(): number[];
+    toLongArray(): number[];
+    toShortArray(): number[];
+    toStringArray(): string[];
+    toUint8Array(): number[];
+    toUnsignedIntArray(): number[];
+    toUnsignedShortArray(): number[];
+    topK(arg0: number, arg1: number): (Object | null)[];
+    trace(): NDArray;
+    trace(arg0: number): NDArray;
+    unique(): (Object | null)[];
+    unique(arg0: boolean, arg1: boolean, arg2: boolean): (Object | null)[];
+    zerosLike(): NDArray;
+}

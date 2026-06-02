@@ -1,0 +1,24 @@
+import type { Class } from '../java/lang/Class.d.ts'
+import type { Object } from '../java/lang/Object.d.ts'
+import type { Cloneable } from '../java/lang/Cloneable.d.ts'
+import type { Function0 } from '../kotlin/jvm/functions/Function0.d.ts'
+import type { KClass } from '../kotlin/reflect/KClass.d.ts'
+import type { Callback } from '../okhttp3/Callback.d.ts'
+import type { Request } from '../okhttp3/Request.d.ts'
+import type { Response } from '../okhttp3/Response.d.ts'
+import type { Timeout } from '../okio/Timeout.d.ts'
+export interface Call extends Object, Cloneable{
+    cancel(): void;
+    protected clone(): Object;
+    clone(): Call;
+    enqueue(responseCallback: Callback): void;
+    execute(): Response;
+    isCanceled(): boolean;
+    isExecuted(): boolean;
+    request(): Request;
+    tag<T extends Object | number | string | boolean>(type: Class<T>, computeIfAbsent: Function0<T>): T;
+    tag<T extends Object | number | string | boolean>(type: Class<T>): T | null;
+    tag<T extends Object | number | string | boolean>(type: KClass<T>): T | null;
+    tag<T extends Object | number | string | boolean>(type: KClass<T>, computeIfAbsent: Function0<T>): T;
+    timeout(): Timeout;
+}

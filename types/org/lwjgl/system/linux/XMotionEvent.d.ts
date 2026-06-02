@@ -1,0 +1,115 @@
+import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class XMotionEvent extends Struct<XMotionEvent> implements NativeResource {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static DISPLAY: number;
+    static IS_HINT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static ROOT: number;
+    static SAME_SCREEN: number;
+    static SEND_EVENT: number;
+    static SERIAL: number;
+    static SIZEOF: number;
+    static STATE: number;
+    static SUBWINDOW: number;
+    static TIME: number;
+    static TYPE: number;
+    static WINDOW: number;
+    static X: number;
+    static X_ROOT: number;
+    static Y: number;
+    static Y_ROOT: number;
+    static calloc(): XMotionEvent;
+    static calloc(paramarg0: MemoryStack): XMotionEvent;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): XMotionEvent;
+    static create(paramarg0: number): XMotionEvent;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): XMotionEvent;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): XMotionEvent;
+    static malloc(paramarg0: MemoryStack): XMotionEvent;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static ndisplay(paramarg0: number): number;
+    static ndisplay(paramarg0: number, paramarg1: number): void;
+    static nis_hint(paramarg0: number): number;
+    static nis_hint(paramarg0: number, paramarg1: number): void;
+    static nroot(paramarg0: number): number;
+    static nroot(paramarg0: number, paramarg1: number): void;
+    static nsame_screen(paramarg0: number): number;
+    static nsame_screen(paramarg0: number, paramarg1: number): void;
+    static nsend_event(paramarg0: number): number;
+    static nsend_event(paramarg0: number, paramarg1: number): void;
+    static nserial(paramarg0: number): number;
+    static nserial(paramarg0: number, paramarg1: number): void;
+    static nstate(paramarg0: number): number;
+    static nstate(paramarg0: number, paramarg1: number): void;
+    static nsubwindow(paramarg0: number): number;
+    static nsubwindow(paramarg0: number, paramarg1: number): void;
+    static ntime(paramarg0: number): number;
+    static ntime(paramarg0: number, paramarg1: number): void;
+    static ntype(paramarg0: number): number;
+    static ntype(paramarg0: number, paramarg1: number): void;
+    static nwindow(paramarg0: number): number;
+    static nwindow(paramarg0: number, paramarg1: number): void;
+    static nx(paramarg0: number): number;
+    static nx(paramarg0: number, paramarg1: number): void;
+    static nx_root(paramarg0: number): number;
+    static nx_root(paramarg0: number, paramarg1: number): void;
+    static ny(paramarg0: number): number;
+    static ny(paramarg0: number, paramarg1: number): void;
+    static ny_root(paramarg0: number): number;
+    static ny_root(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    close(): void;
+    create(arg0: number, arg1: ByteBuffer): XMotionEvent;
+    display(): number;
+    display(arg0: number): XMotionEvent;
+    is_hint(): number;
+    is_hint(arg0: number): XMotionEvent;
+    root(): number;
+    root(arg0: number): XMotionEvent;
+    same_screen(): boolean;
+    same_screen(arg0: boolean): XMotionEvent;
+    send_event(): boolean;
+    send_event(arg0: boolean): XMotionEvent;
+    serial(): number;
+    serial(arg0: number): XMotionEvent;
+    set(arg0: number, arg1: number, arg2: boolean, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: number, arg14: boolean): XMotionEvent;
+    set(arg0: XMotionEvent): XMotionEvent;
+    sizeof(): number;
+    state(): number;
+    state(arg0: number): XMotionEvent;
+    subwindow(): number;
+    subwindow(arg0: number): XMotionEvent;
+    time(): number;
+    time(arg0: number): XMotionEvent;
+    type(): number;
+    type(arg0: number): XMotionEvent;
+    window(): number;
+    window(arg0: number): XMotionEvent;
+    x(): number;
+    x(arg0: number): XMotionEvent;
+    x_root(): number;
+    x_root(arg0: number): XMotionEvent;
+    y(): number;
+    y(arg0: number): XMotionEvent;
+    y_root(): number;
+    y_root(arg0: number): XMotionEvent;
+}

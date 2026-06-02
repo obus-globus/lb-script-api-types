@@ -1,0 +1,52 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
+import type { Position } from '../../../../net/minecraft/core/Position.d.ts'
+import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
+import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
+import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
+import type { InteractionResult } from '../../../../net/minecraft/world/InteractionResult.d.ts'
+import type { LivingEntity } from '../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Player } from '../../../../net/minecraft/world/entity/player/Player.d.ts'
+import type { Projectile } from '../../../../net/minecraft/world/entity/projectile/Projectile.d.ts'
+import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
+import type { Item$Properties } from '../../../../net/minecraft/world/item/Item$Properties.d.ts'
+import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { ItemUseAnimation } from '../../../../net/minecraft/world/item/ItemUseAnimation.d.ts'
+import type { ProjectileItem } from '../../../../net/minecraft/world/item/ProjectileItem.d.ts'
+import type { ProjectileItem$DispenseConfig } from '../../../../net/minecraft/world/item/ProjectileItem$DispenseConfig.d.ts'
+import type { ItemAttributeModifiers } from '../../../../net/minecraft/world/item/component/ItemAttributeModifiers.d.ts'
+import type { Tool } from '../../../../net/minecraft/world/item/component/Tool.d.ts'
+import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
+import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
+import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
+export class TridentItem extends Item implements ProjectileItem {
+    static ABSOLUTE_MAX_STACK_SIZE: number;
+    static BASE_ATTACK_DAMAGE_ID: Identifier;
+    static BASE_ATTACK_SPEED_ID: Identifier;
+    static BASE_DAMAGE: number;
+    static BY_BLOCK: Map<Block, Item>;
+    static CODEC: Codec<Object>;
+    static CODEC_WITH_BOUND_COMPONENTS: Codec<Object>;
+    static DEFAULT_LIGHT_COLOR: Vector3f;
+    static DEFAULT_MAX_STACK_SIZE: number;
+    static FILTERED_REGISTRIES: (Object | null)[];
+    static MAX_BAR_WIDTH: number;
+    static PROJECTILE_SHOOT_POWER: number;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static THROW_THRESHOLD_TIME: number;
+    static byBlock(paramblock: Block): Item;
+    static byId(paramid: number): Item;
+    static createAttributes(): ItemAttributeModifiers;
+    static createToolProperties(): Tool;
+    static getId(paramitem: Item): number;
+    constructor(properties: Item$Properties)
+    asProjectile(level: Level, position: Position, itemStack: ItemStack, direction: Direction): Projectile;
+    createDispenseConfig(): ProjectileItem$DispenseConfig;
+    getUseAnimation(itemStack: ItemStack): ItemUseAnimation;
+    getUseDuration(itemStack: ItemStack, user: LivingEntity): number;
+    releaseUsing(itemStack: ItemStack, level: Level, entity: LivingEntity, remainingTime: number): boolean;
+    shoot(projectile: Projectile, xd: number, yd: number, zd: number, pow: number, uncertainty: number): void;
+    use(level: Level, player: Player, hand: InteractionHand): InteractionResult;
+}

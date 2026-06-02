@@ -1,0 +1,19 @@
+import type { Class } from '../../../java/lang/Class.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../java/lang/Enum.d.ts'
+export class Platform$Architecture extends Enum<Platform$Architecture> {
+    static ARM32: Platform$Architecture;
+    static ARM64: Platform$Architecture;
+    static PPC64LE: Platform$Architecture;
+    static RISCV64: Platform$Architecture;
+    static X64: Platform$Architecture;
+    static X86: Platform$Architecture;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): Platform$Architecture;
+    static values(): (Object | null)[];
+    private constructor(arg2: boolean)
+    // private is64Bit: boolean;
+    is32Bit(): boolean;
+    is64Bit(): boolean;
+    name(): "X64" | "X86" | "ARM64" | "ARM32" | "PPC64LE" | "RISCV64";
+}

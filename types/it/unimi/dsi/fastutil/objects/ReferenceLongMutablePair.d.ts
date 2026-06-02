@@ -1,0 +1,28 @@
+import type { ReferenceLongPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceLongPair.d.ts'
+import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class ReferenceLongMutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceLongPair<K>, Serializable {
+    static of(paramarg0: Object | null, paramarg1: number): ReferenceLongMutablePair<Object>;
+    static of(paramarg0: Object | null, paramarg1: number): ReferenceLongPair<Object>;
+    constructor(arg0: K, arg1: number)
+    // private left: K;
+    // private right: number;
+    equals(arg0: Object | null): boolean;
+    hashCode(): number;
+    left(): K;
+    left(arg0: K): ReferenceLongMutablePair<K>;
+    right(arg0: number): ReferenceLongMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceLongPair<K>;
+    right(arg0: number): ReferenceLongPair<K>;
+    rightLong(): number;
+    second(): number;
+    second(arg0: number): ReferenceLongPair<K>;
+    second(arg0: number): ReferenceLongPair<K>;
+    secondLong(): number;
+    toString(): string;
+    value(): number;
+    value(arg0: number): ReferenceLongPair<K>;
+    value(arg0: number): ReferenceLongPair<K>;
+    valueLong(): number;
+}

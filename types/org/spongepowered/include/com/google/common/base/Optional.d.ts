@@ -1,0 +1,7 @@
+import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+export abstract class Optional<T extends Object | number | string | boolean> extends Object implements Serializable {
+    static absent(): Optional<Object>;
+    constructor()
+    or(arg0: T): T;
+}

@@ -1,0 +1,35 @@
+import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TypedArrayFunctionBuiltins$TypedArrayFromNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayFunctionBuiltins$TypedArrayFromNode.d.ts'
+import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class TypedArrayFunctionBuiltinsFactory$TypedArrayFromNodeGen extends TypedArrayFunctionBuiltins$TypedArrayFromNode {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramarguments: (Object | null)[]): TypedArrayFunctionBuiltins$TypedArrayFromNode;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
+    // private arguments0_: JavaScriptNode;
+    // private arguments1_: JavaScriptNode;
+    // private arguments2_: JavaScriptNode;
+    // private arguments3_: JavaScriptNode;
+    // private arrayFrom_getIteratorFromMethod__field1_: Node;
+    // private arrayFrom_getIteratorFromMethod__field2_: Node;
+    // private arrayFrom_getIteratorFromMethod__field3_: Node;
+    // private arrayFrom_getIteratorFromMethod__field4_: Node;
+    // private state_0_: number;
+    execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object, arguments3Value: Object): Object;
+    // private fallbackGuard_(state_0: number, arguments0Value: Object, arguments1Value: Object, arguments2Value: Object, arguments3Value: Object): boolean;
+    getArguments(): JavaScriptNode[];
+}

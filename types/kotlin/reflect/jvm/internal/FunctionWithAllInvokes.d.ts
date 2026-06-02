@@ -1,0 +1,50 @@
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
+import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
+import type { Function10 } from '../../../../kotlin/jvm/functions/Function10.d.ts'
+import type { Function11 } from '../../../../kotlin/jvm/functions/Function11.d.ts'
+import type { Function12 } from '../../../../kotlin/jvm/functions/Function12.d.ts'
+import type { Function13 } from '../../../../kotlin/jvm/functions/Function13.d.ts'
+import type { Function14 } from '../../../../kotlin/jvm/functions/Function14.d.ts'
+import type { Function15 } from '../../../../kotlin/jvm/functions/Function15.d.ts'
+import type { Function16 } from '../../../../kotlin/jvm/functions/Function16.d.ts'
+import type { Function17 } from '../../../../kotlin/jvm/functions/Function17.d.ts'
+import type { Function18 } from '../../../../kotlin/jvm/functions/Function18.d.ts'
+import type { Function19 } from '../../../../kotlin/jvm/functions/Function19.d.ts'
+import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
+import type { Function20 } from '../../../../kotlin/jvm/functions/Function20.d.ts'
+import type { Function21 } from '../../../../kotlin/jvm/functions/Function21.d.ts'
+import type { Function22 } from '../../../../kotlin/jvm/functions/Function22.d.ts'
+import type { Function3 } from '../../../../kotlin/jvm/functions/Function3.d.ts'
+import type { Function4 } from '../../../../kotlin/jvm/functions/Function4.d.ts'
+import type { Function5 } from '../../../../kotlin/jvm/functions/Function5.d.ts'
+import type { Function6 } from '../../../../kotlin/jvm/functions/Function6.d.ts'
+import type { Function7 } from '../../../../kotlin/jvm/functions/Function7.d.ts'
+import type { Function8 } from '../../../../kotlin/jvm/functions/Function8.d.ts'
+import type { Function9 } from '../../../../kotlin/jvm/functions/Function9.d.ts'
+import type { KCallable } from '../../../../kotlin/reflect/KCallable.d.ts'
+export interface FunctionWithAllInvokes extends Object, Function0<Object>, Function1<Object, Object>, Function10<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function11<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function12<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function13<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function14<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function15<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function16<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function17<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function18<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function19<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function2<Object, Object, Object>, Function20<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function21<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function22<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function3<Object, Object, Object, Object>, Function4<Object, Object, Object, Object, Object>, Function5<Object, Object, Object, Object, Object, Object>, Function6<Object, Object, Object, Object, Object, Object, Object>, Function7<Object, Object, Object, Object, Object, Object, Object, Object>, Function8<Object, Object, Object, Object, Object, Object, Object, Object, Object>, Function9<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>, KCallable<Object>{
+    invoke(): Object | null;
+    invoke(p1: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null, p17: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null, p17: Object | null, p18: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null, p17: Object | null, p18: Object | null, p19: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null, p17: Object | null, p18: Object | null, p19: Object | null, p20: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null, p17: Object | null, p18: Object | null, p19: Object | null, p20: Object | null, p21: Object | null): Object | null;
+    invoke(p1: Object | null, p2: Object | null, p3: Object | null, p4: Object | null, p5: Object | null, p6: Object | null, p7: Object | null, p8: Object | null, p9: Object | null, p10: Object | null, p11: Object | null, p12: Object | null, p13: Object | null, p14: Object | null, p15: Object | null, p16: Object | null, p17: Object | null, p18: Object | null, p19: Object | null, p20: Object | null, p21: Object | null, p22: Object | null): Object | null;
+}

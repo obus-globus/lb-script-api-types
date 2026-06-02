@@ -1,0 +1,20 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+export class Dimension extends Enum<Dimension> {
+    static END: Dimension;
+    static NETHER: Dimension;
+    static OVERWORLD: Dimension;
+    static fromId(paramarg0: number): Dimension;
+    static fromString(paramarg0: string): Dimension;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): Dimension;
+    static values(): (Object | null)[];
+    private constructor(arg2: string, arg3: number)
+    readonly id: number;
+    readonly name: string;
+    getId(): number;
+    getName(): string;
+    toString(): string;
+    name(): "OVERWORLD" | "NETHER" | "END";
+}

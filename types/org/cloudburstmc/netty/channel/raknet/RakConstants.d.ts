@@ -1,0 +1,62 @@
+import type { InetSocketAddress } from '../../../../../java/net/InetSocketAddress.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class RakConstants extends Object {
+    static CC_ADDITIONAL_VARIANCE: number;
+    static CC_MAXIMUM_THRESHOLD: number;
+    static CC_SYN: number;
+    static DEFAULT_GLOBAL_PACKET_LIMIT: number;
+    static DEFAULT_PACKET_LIMIT: number;
+    static DEFAULT_UNCONNECTED_MAGIC: number[];
+    static FLAG_ACK: number;
+    static FLAG_CONTINUOUS_SEND: number;
+    static FLAG_HAS_B_AND_AS: number;
+    static FLAG_NACK: number;
+    static FLAG_NEEDS_B_AND_AS: number;
+    static FLAG_PACKET_PAIR: number;
+    static FLAG_VALID: number;
+    static ID_ADVERTISE_SYSTEM: number;
+    static ID_ALREADY_CONNECTED: number;
+    static ID_CONNECTED_PING: number;
+    static ID_CONNECTED_PONG: number;
+    static ID_CONNECTION_BANNED: number;
+    static ID_CONNECTION_LOST: number;
+    static ID_CONNECTION_REQUEST: number;
+    static ID_CONNECTION_REQUEST_ACCEPTED: number;
+    static ID_CONNECTION_REQUEST_FAILED: number;
+    static ID_DETECT_LOST_CONNECTION: number;
+    static ID_DISCONNECTION_NOTIFICATION: number;
+    static ID_GAME_PACKET: number;
+    static ID_INCOMPATIBLE_PROTOCOL_VERSION: number;
+    static ID_IP_RECENTLY_CONNECTED: number;
+    static ID_NEW_INCOMING_CONNECTION: number;
+    static ID_NO_FREE_INCOMING_CONNECTIONS: number;
+    static ID_OPEN_CONNECTION_REPLY_1: number;
+    static ID_OPEN_CONNECTION_REPLY_2: number;
+    static ID_OPEN_CONNECTION_REQUEST_1: number;
+    static ID_OPEN_CONNECTION_REQUEST_2: number;
+    static ID_TIMESTAMP: number;
+    static ID_UNCONNECTED_PING: number;
+    static ID_UNCONNECTED_PING_OPEN_CONNECTIONS: number;
+    static ID_UNCONNECTED_PONG: number;
+    static ID_USER_PACKET_ENUM: number;
+    static IPV4_MESSAGE_SIZE: number;
+    static IPV6_MESSAGE_SIZE: number;
+    static LOCAL_ADDRESS: InetSocketAddress;
+    static LOCAL_IP_ADDRESSES_V4: (Object | null)[];
+    static LOCAL_IP_ADDRESSES_V6: (Object | null)[];
+    static LOOPBACK_V4: InetSocketAddress;
+    static LOOPBACK_V6: InetSocketAddress;
+    static MAXIMUM_CONNECTION_ATTEMPTS: number;
+    static MAXIMUM_ENCAPSULATED_HEADER_SIZE: number;
+    static MAXIMUM_MTU_SIZE: number;
+    static MAXIMUM_ORDERING_CHANNELS: number;
+    static MINIMUM_MTU_SIZE: number;
+    static MTU_SIZES: (Object | null)[];
+    static RAKNET_DATAGRAM_HEADER_SIZE: number;
+    static RAKNET_PROTOCOL_VERSION: number;
+    static SESSION_STALE_MS: number;
+    static SESSION_TIMEOUT_MS: number;
+    static TIME_BETWEEN_SEND_CONNECTION_ATTEMPTS_MS: number;
+    static UDP_HEADER_SIZE: number;
+    constructor()
+}

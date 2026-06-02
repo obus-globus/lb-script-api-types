@@ -1,0 +1,10 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { MemoryDump$MetaObjectCopy } from '../../../../../../org/graalvm/tools/insight/heap/instrument/MemoryDump$MetaObjectCopy.d.ts'
+export class MemoryDump$StackCopier extends Object {
+    private constructor(null_: MemoryDump$StackCopier)
+    // private duplicates: Map<Object, Object>;
+    copyMetaObject(obj: Object): MemoryDump$MetaObjectCopy;
+    // private copyObject(obj: Object, depth: number): Object;
+    copyStack(eventStack: Object, eventDepth: number): Object;
+    // private preferredValueOf(obj: Object): Object;
+}

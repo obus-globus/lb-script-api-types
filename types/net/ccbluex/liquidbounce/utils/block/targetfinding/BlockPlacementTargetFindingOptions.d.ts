@@ -1,0 +1,25 @@
+import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { BlockOffsetOptions } from '../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/BlockOffsetOptions.d.ts'
+import type { BlockPlacementTargetFindingOptions$Companion } from '../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/BlockPlacementTargetFindingOptions$Companion.d.ts'
+import type { FaceHandlingOptions } from '../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/FaceHandlingOptions.d.ts'
+import type { PlayerLocationOnPlacement } from '../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/PlayerLocationOnPlacement.d.ts'
+import type { Line } from '../../../../../../net/ccbluex/liquidbounce/utils/math/geometry/Line.d.ts'
+import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
+/**
+ * Parameters used when generating a targeting plan for a block placement.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt:66}
+ */
+export class BlockPlacementTargetFindingOptions extends Object {
+    static Companion: BlockPlacementTargetFindingOptions$Companion;
+    static leastBlockDistanceToLine(paramarg0: Line): (param0: BlockPos) => kotlin.Boolean;
+    static leastBlockDistanceToPos(paramarg0: Vec3): (param0: BlockPos) => kotlin.Boolean;
+    constructor(offsetOptions: BlockOffsetOptions, faceHandlingOptions: FaceHandlingOptions, stackToPlaceWith: ItemStack, playerLocationOnPlacement: PlayerLocationOnPlacement)
+    readonly faceHandlingOptions: FaceHandlingOptions;
+    readonly offsetOptions: BlockOffsetOptions;
+    readonly playerLocationOnPlacement: PlayerLocationOnPlacement;
+    readonly stackToPlaceWith: ItemStack;
+}

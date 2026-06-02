@@ -1,0 +1,33 @@
+import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
+import type { MappedItem } from '../../../../../com/viaversion/viabackwards/api/data/MappedItem.d.ts'
+import type { BiMappings } from '../../../../../com/viaversion/viaversion/api/data/BiMappings.d.ts'
+import type { MappingDataBase } from '../../../../../com/viaversion/viaversion/api/data/MappingDataBase.d.ts'
+import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export class BackwardsMappingData extends MappingDataBase {
+    constructor(arg0: string, arg1: string)
+    constructor(arg0: string, arg1: string, arg2: Class<Protocol<Object, Object, Object, Object>>)
+    backwardsItemMappings: Int2ObjectMap<MappedItem>;
+    // private enchantmentNames: Int2ObjectMap<string>;
+    // private entityNames: { [key: string]: string };
+    // private vvProtocolClass: Class<Protocol<Object, Object, Object, Object>>;
+    getBackwardsItemMappings(): Int2ObjectMap<MappedItem>;
+    getLogger(): Logger;
+    getMappedItem(arg0: number): MappedItem;
+    getMappedNamedSound(arg0: string): string;
+    getNewAttributeId(arg0: number): number;
+    getNewBlockId(arg0: number): number;
+    getNewItemId(arg0: number): number;
+    getOldItemId(arg0: number): number;
+    getViaVersionProtocolClass(): Class<Protocol<Object, Object, Object, Object>>;
+    loadBiMappings(arg0: Map$Entry<string, Tag>[], arg1: string): BiMappings;
+    loadExtras(arg0: Map$Entry<string, Tag>[]): void;
+    // private loadNameByIdMappings(arg0: Map$Entry<string, Tag>[], arg1: string): Int2ObjectMap<string>;
+    // private loadNameByStringMappings(arg0: Map$Entry<string, Tag>[], arg1: string): { [key: string]: string };
+    mappedEnchantmentName(arg0: number): string;
+    mappedEntityName(arg0: string): string;
+    readMappingsFile(arg0: string): Map$Entry<string, Tag>[];
+}

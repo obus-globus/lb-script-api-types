@@ -1,0 +1,75 @@
+import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
+export class Symbol extends Object implements Comparable<Symbol> {
+    static HAS_BEEN_DECLARED: number;
+    static IS_ARGUMENTS: number;
+    static IS_BLOCK_FUNCTION_DECLARATION: number;
+    static IS_CATCH_PARAMETER: number;
+    static IS_CLOSED_OVER: number;
+    static IS_CONST: number;
+    static IS_DECLARED_IN_SWITCH_BLOCK: number;
+    static IS_FUNCTION_SELF: number;
+    static IS_GLOBAL: number;
+    static IS_HOISTABLE_DECLARATION: number;
+    static IS_HOISTED_BLOCK_FUNCTION: number;
+    static IS_IMPORT_BINDING: number;
+    static IS_INTERNAL: number;
+    static IS_LET: number;
+    static IS_NEW_TARGET: number;
+    static IS_PARAM: number;
+    static IS_PRIVATE_NAME: number;
+    static IS_PRIVATE_NAME_ACCESSOR: number;
+    static IS_PRIVATE_NAME_METHOD: number;
+    static IS_PRIVATE_NAME_STATIC: number;
+    static IS_PROGRAM_LEVEL: number;
+    static IS_SUPER: number;
+    static IS_THIS: number;
+    static IS_USED: number;
+    static IS_USED_IN_INNER_SCOPE: number;
+    static IS_VAR: number;
+    static IS_VAR_REDECLARED_HERE: number;
+    static KINDMASK: number;
+    constructor(name: TruffleString, flags: number)
+    readonly flags: number;
+    readonly name: string;
+    readonly nameTS: TruffleString;
+    compareTo(other: Symbol): number;
+    getFlags(): number;
+    getName(): string;
+    getNameTS(): TruffleString;
+    hasBeenDeclared(): boolean;
+    isArguments(): boolean;
+    isBlockFunctionDeclaration(): boolean;
+    isBlockScoped(): boolean;
+    isCatchParameter(): boolean;
+    isClosedOver(): boolean;
+    isConst(): boolean;
+    isDeclaredInSwitchBlock(): boolean;
+    isFunctionSelf(): boolean;
+    isGlobal(): boolean;
+    isHoistableDeclaration(): boolean;
+    isHoistedBlockFunctionDeclaration(): boolean;
+    isImportBinding(): boolean;
+    isInternal(): boolean;
+    isLet(): boolean;
+    isNewTarget(): boolean;
+    isParam(): boolean;
+    isPrivateAccessor(): boolean;
+    isPrivateField(): boolean;
+    isPrivateMethod(): boolean;
+    isPrivateName(): boolean;
+    isPrivateNameStatic(): boolean;
+    isProgramLevel(): boolean;
+    isSuper(): boolean;
+    isThis(): boolean;
+    isUsed(): boolean;
+    isUsedInInnerScope(): boolean;
+    isVar(): boolean;
+    isVarRedeclaredHere(): boolean;
+    setClosedOver(): void;
+    setHoistedBlockFunctionDeclaration(): void;
+    setUsed(): void;
+    setUsedInInnerScope(): void;
+    toString(): string;
+}

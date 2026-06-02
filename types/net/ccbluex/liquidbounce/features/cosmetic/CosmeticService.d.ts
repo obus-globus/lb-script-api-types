@@ -1,0 +1,53 @@
+import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
+import type { UUID } from '../../../../../java/util/UUID.d.ts'
+import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
+import type { Job } from '../../../../../kotlinx/coroutines/Job.d.ts'
+import type { Cosmetic } from '../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/Cosmetic.d.ts'
+import type { CosmeticCategory } from '../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/CosmeticCategory.d.ts'
+import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
+import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
+import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
+import type { DisconnectEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/DisconnectEvent.d.ts'
+import type { SessionEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/SessionEvent.d.ts'
+import type { Chronometer } from '../../../../../net/ccbluex/liquidbounce/utils/client/Chronometer.d.ts'
+import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
+/**
+ * A more reliable, safer and stress reduced cosmetics service
+ *
+ * It will frequently update all carriers of cosmetics into a set with their MD5-hashed UUID.
+ * This allows to only request cosmetics of a carrier when it is needed.
+ *
+ * We know this might cause sometimes users to not have their cosmetics
+ * shown immediately when account switches, but we can reduce the stress
+ * on the API and the connection of the user.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:39}
+ */
+export class CosmeticService extends ValueGroup implements EventListener {
+    static INSTANCE: CosmeticService;
+    // private REFRESH_DELAY: number;
+    // private carriers: string[];
+    /*not mapped: */ getCarriers$liquidbounce(): string[];
+    // private carriersCosmetics: Map<UUID, Cosmetic[]>;
+    /*not mapped: */ getCarriersCosmetics$liquidbounce(): Map<UUID, Cosmetic[]>;
+    // private disconnectHandler: EventHook<DisconnectEvent>;
+    // private lastUpdate: Chronometer;
+    // private logger: Logger;
+    // private sessionHandler: EventHook<SessionEvent>;
+    // private task: Job | null;
+    children(): EventListener[];
+    fetchCosmetic(uuid: UUID, category: CosmeticCategory, done: Function1<Cosmetic, void>): void;
+    // private getCosmetic(uuid: UUID, category: CosmeticCategory): Cosmetic | null;
+    hasCosmetic(uuid: UUID, category: CosmeticCategory): boolean;
+    parent(): EventListener | null;
+    /**
+     * Refresh cosmetic carriers if needed from the API in a MD5-hashed UUID set
+     * and then call out {@link done}.
+     * It will only refresh when the REFRESH_DELAY has passed or when {@link force} is true.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:66}
+     */
+    refreshCarriers(force: boolean, done: () => void): void;
+    // private transferTemporaryOwnership(uuid: UUID): void;
+    unregister(): void;
+}

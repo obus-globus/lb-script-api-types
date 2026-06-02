@@ -1,0 +1,74 @@
+import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
+export class EntityEvent extends Enum<EntityEvent> {
+    static ARMADILLO_PEEK: EntityEvent;
+    static ARMORSTAND_WOBBLE: EntityEvent;
+    static BODY_BREAK: EntityEvent;
+    static CANCEL_SHAKE_WETNESS: EntityEvent;
+    static CHEST_BREAK: EntityEvent;
+    static DEATH: EntityEvent;
+    static DOLPHIN_LOOKING_FOR_TREASURE: EntityEvent;
+    static DROWN_PARTICLES: EntityEvent;
+    static EAT_GRASS: EntityEvent;
+    static END_RAM: EntityEvent;
+    static FEET_BREAK: EntityEvent;
+    static FIREWORKS_EXPLODE: EntityEvent;
+    static FISHING_ROD_REEL_IN: EntityEvent;
+    static FOX_EAT: EntityEvent;
+    static FULL_DEBUG_INFO: EntityEvent;
+    static GUARDIAN_ATTACK_SOUND: EntityEvent;
+    static HEAD_BREAK: EntityEvent;
+    static HONEY_JUMP: EntityEvent;
+    static HONEY_SLIDE: EntityEvent;
+    static IN_LOVE_HEARTS: EntityEvent;
+    static JUMP: EntityEvent;
+    static LEGS_BREAK: EntityEvent;
+    static LOVE_HEARTS: EntityEvent;
+    static MAINHAND_BREAK: EntityEvent;
+    static OFFER_FLOWER: EntityEvent;
+    static OFFHAND_BREAK: EntityEvent;
+    static PERMISSION_LEVEL_ADMINS: EntityEvent;
+    static PERMISSION_LEVEL_ALL: EntityEvent;
+    static PERMISSION_LEVEL_GAMEMASTERS: EntityEvent;
+    static PERMISSION_LEVEL_MODERATORS: EntityEvent;
+    static PERMISSION_LEVEL_OWNERS: EntityEvent;
+    static POOF: EntityEvent;
+    static PROTECTED_FROM_DEATH: EntityEvent;
+    static RAVAGER_ROARED: EntityEvent;
+    static RAVAGER_STUNNED: EntityEvent;
+    static REDUCED_DEBUG_INFO: EntityEvent;
+    static SADDLE_BREAK: EntityEvent;
+    static SHAKE: EntityEvent;
+    static SHAKE_WETNESS: EntityEvent;
+    static SILVERFISH_MERGE_ANIM: EntityEvent;
+    static SNIFFER_DIGGING_SOUND: EntityEvent;
+    static SONIC_CHARGE: EntityEvent;
+    static SQUID_ANIM_SYNCH: EntityEvent;
+    static START_ATTACKING: EntityEvent;
+    static START_RAM: EntityEvent;
+    static STOP_ATTACKING: EntityEvent;
+    static STOP_OFFER_FLOWER: EntityEvent;
+    static SWAP_HANDS: EntityEvent;
+    static TAMING_FAILED: EntityEvent;
+    static TAMING_SUCCEEDED: EntityEvent;
+    static TELEPORT: EntityEvent;
+    static TENDRILS_SHIVER: EntityEvent;
+    static TRUSTING_FAILED: EntityEvent;
+    static TRUSTING_SUCCEEDED: EntityEvent;
+    static USE_ITEM_COMPLETE: EntityEvent;
+    static VILLAGER_ANGRY: EntityEvent;
+    static VILLAGER_HAPPY: EntityEvent;
+    static VILLAGER_SWEAT: EntityEvent;
+    static WITCH_HAT_MAGIC: EntityEvent;
+    static ZOMBIE_CONVERTING: EntityEvent;
+    static getByValue(paramarg0: number): EntityEvent;
+    static getByValue(paramarg0: number, paramarg1: EntityEvent): EntityEvent;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): EntityEvent;
+    static values(): (Object | null)[];
+    private constructor(arg2: number)
+    readonly value: number;
+    getValue(): number;
+    name(): "JUMP" | "DEATH" | "START_ATTACKING" | "STOP_ATTACKING" | "TAMING_FAILED" | "TAMING_SUCCEEDED" | "SHAKE_WETNESS" | "USE_ITEM_COMPLETE" | "EAT_GRASS" | "OFFER_FLOWER" | "LOVE_HEARTS" | "VILLAGER_ANGRY" | "VILLAGER_HAPPY" | "WITCH_HAT_MAGIC" | "ZOMBIE_CONVERTING" | "FIREWORKS_EXPLODE" | "IN_LOVE_HEARTS" | "SQUID_ANIM_SYNCH" | "SILVERFISH_MERGE_ANIM" | "GUARDIAN_ATTACK_SOUND" | "REDUCED_DEBUG_INFO" | "FULL_DEBUG_INFO" | "PERMISSION_LEVEL_ALL" | "PERMISSION_LEVEL_MODERATORS" | "PERMISSION_LEVEL_GAMEMASTERS" | "PERMISSION_LEVEL_ADMINS" | "PERMISSION_LEVEL_OWNERS" | "FISHING_ROD_REEL_IN" | "ARMORSTAND_WOBBLE" | "STOP_OFFER_FLOWER" | "PROTECTED_FROM_DEATH" | "DOLPHIN_LOOKING_FOR_TREASURE" | "RAVAGER_STUNNED" | "TRUSTING_FAILED" | "TRUSTING_SUCCEEDED" | "VILLAGER_SWEAT" | "FOX_EAT" | "TELEPORT" | "MAINHAND_BREAK" | "OFFHAND_BREAK" | "HEAD_BREAK" | "CHEST_BREAK" | "LEGS_BREAK" | "FEET_BREAK" | "HONEY_SLIDE" | "HONEY_JUMP" | "SWAP_HANDS" | "CANCEL_SHAKE_WETNESS" | "START_RAM" | "END_RAM" | "POOF" | "TENDRILS_SHIVER" | "SONIC_CHARGE" | "SNIFFER_DIGGING_SOUND" | "ARMADILLO_PEEK" | "BODY_BREAK" | "SHAKE" | "DROWN_PARTICLES" | "SADDLE_BREAK" | "RAVAGER_ROARED";
+}

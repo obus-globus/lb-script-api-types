@@ -1,0 +1,115 @@
+import type { TokenTyped } from '../../../../../io/github/douira/glsl_transformer/ast/data/TokenTyped.d.ts'
+import type { Type$NumberType } from '../../../../../io/github/douira/glsl_transformer/util/Type$NumberType.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
+import type { Token } from '../../../../../org/antlr/v4/runtime/Token.d.ts'
+export class Type extends Enum<Type> implements TokenTyped {
+    static BOOL: Type;
+    static BVEC2: Type;
+    static BVEC3: Type;
+    static BVEC4: Type;
+    static F16MAT2X2: Type;
+    static F16MAT2X3: Type;
+    static F16MAT2X4: Type;
+    static F16MAT3X2: Type;
+    static F16MAT3X3: Type;
+    static F16MAT3X4: Type;
+    static F16MAT4X2: Type;
+    static F16MAT4X3: Type;
+    static F16MAT4X4: Type;
+    static F16VEC2: Type;
+    static F16VEC3: Type;
+    static F16VEC4: Type;
+    static F32MAT2X2: Type;
+    static F32MAT2X3: Type;
+    static F32MAT2X4: Type;
+    static F32MAT3X2: Type;
+    static F32MAT3X3: Type;
+    static F32MAT3X4: Type;
+    static F32MAT4X2: Type;
+    static F32MAT4X3: Type;
+    static F32MAT4X4: Type;
+    static F32VEC2: Type;
+    static F32VEC3: Type;
+    static F32VEC4: Type;
+    static F64MAT2X2: Type;
+    static F64MAT2X3: Type;
+    static F64MAT2X4: Type;
+    static F64MAT3X2: Type;
+    static F64MAT3X3: Type;
+    static F64MAT3X4: Type;
+    static F64MAT4X2: Type;
+    static F64MAT4X3: Type;
+    static F64MAT4X4: Type;
+    static F64VEC2: Type;
+    static F64VEC3: Type;
+    static F64VEC4: Type;
+    static FLOAT16: Type;
+    static FLOAT32: Type;
+    static FLOAT64: Type;
+    static I16VEC2: Type;
+    static I16VEC3: Type;
+    static I16VEC4: Type;
+    static I32VEC2: Type;
+    static I32VEC3: Type;
+    static I32VEC4: Type;
+    static I64VEC2: Type;
+    static I64VEC3: Type;
+    static I64VEC4: Type;
+    static I8VEC2: Type;
+    static I8VEC3: Type;
+    static I8VEC4: Type;
+    static INT16: Type;
+    static INT32: Type;
+    static INT64: Type;
+    static INT8: Type;
+    static STRING: Type;
+    static U16VEC2: Type;
+    static U16VEC3: Type;
+    static U16VEC4: Type;
+    static U32VEC2: Type;
+    static U32VEC3: Type;
+    static U32VEC4: Type;
+    static U64VEC2: Type;
+    static U64VEC3: Type;
+    static U64VEC4: Type;
+    static U8VEC2: Type;
+    static U8VEC3: Type;
+    static U8VEC4: Type;
+    static UINT16: Type;
+    static UINT32: Type;
+    static UINT64: Type;
+    static UINT8: Type;
+    static fromToken(paramarg0: Token): Type;
+    static ofLiteralTokenType(paramarg0: number): Type;
+    static ofTokenType(paramarg0: number): Type;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): Type;
+    static values(): (Object | null)[];
+    private constructor(arg2: Type$NumberType, arg3: string, arg4: string)
+    private constructor(arg2: number, arg3: Type$NumberType, arg4: string, arg5: string, arg6: number, arg7: number[])
+    private constructor(arg2: number, arg3: number, arg4: Type$NumberType, arg5: string, arg6: string, arg7: number, arg8: number[])
+    // private SCALAR_DIMENSIONS: number[];
+    readonly bitDepth: number;
+    readonly compactName: string;
+    readonly dimensions: number[];
+    readonly explicitName: string;
+    // private implicitCastTypes: Type[];
+    // private literalTokenType: number;
+    readonly numberType: Type$NumberType;
+    readonly tokenType: number;
+    getBitDepth(): number;
+    getCompactName(): string;
+    getDimension(): number;
+    getDimensions(): number[];
+    getExplicitName(): string;
+    getImplicitCasts(): Type[];
+    getMostCompactName(): string;
+    getNumberType(): Type$NumberType;
+    getTokenType(): number;
+    isMatrix(): boolean;
+    isScalar(): boolean;
+    isVector(): boolean;
+    name(): "STRING" | "BOOL" | "BVEC2" | "BVEC3" | "BVEC4" | "INT8" | "I8VEC2" | "I8VEC3" | "I8VEC4" | "UINT8" | "U8VEC2" | "U8VEC3" | "U8VEC4" | "INT16" | "I16VEC2" | "I16VEC3" | "I16VEC4" | "UINT16" | "U16VEC2" | "U16VEC3" | "U16VEC4" | "INT32" | "I32VEC2" | "I32VEC3" | "I32VEC4" | "UINT32" | "U32VEC2" | "U32VEC3" | "U32VEC4" | "INT64" | "I64VEC2" | "I64VEC3" | "I64VEC4" | "UINT64" | "U64VEC2" | "U64VEC3" | "U64VEC4" | "FLOAT16" | "F16VEC2" | "F16VEC3" | "F16VEC4" | "F16MAT2X2" | "F16MAT2X3" | "F16MAT2X4" | "F16MAT3X2" | "F16MAT3X3" | "F16MAT3X4" | "F16MAT4X2" | "F16MAT4X3" | "F16MAT4X4" | "FLOAT32" | "F32VEC2" | "F32VEC3" | "F32VEC4" | "F32MAT2X2" | "F32MAT2X3" | "F32MAT2X4" | "F32MAT3X2" | "F32MAT3X3" | "F32MAT3X4" | "F32MAT4X2" | "F32MAT4X3" | "F32MAT4X4" | "FLOAT64" | "F64VEC2" | "F64VEC3" | "F64VEC4" | "F64MAT2X2" | "F64MAT2X3" | "F64MAT2X4" | "F64MAT3X2" | "F64MAT3X3" | "F64MAT3X4" | "F64MAT4X2" | "F64MAT4X3" | "F64MAT4X4";
+}

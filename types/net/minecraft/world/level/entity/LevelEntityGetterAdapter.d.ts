@@ -1,0 +1,21 @@
+import type { UUID } from '../../../../../java/util/UUID.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { AbortableIterationConsumer } from '../../../../../net/minecraft/util/AbortableIterationConsumer.d.ts'
+import type { EntityAccess } from '../../../../../net/minecraft/world/level/entity/EntityAccess.d.ts'
+import type { EntityLookup } from '../../../../../net/minecraft/world/level/entity/EntityLookup.d.ts'
+import type { EntitySectionStorage } from '../../../../../net/minecraft/world/level/entity/EntitySectionStorage.d.ts'
+import type { EntityTypeTest } from '../../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
+import type { LevelEntityGetter } from '../../../../../net/minecraft/world/level/entity/LevelEntityGetter.d.ts'
+import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
+export class LevelEntityGetterAdapter<T extends EntityAccess> extends Object implements LevelEntityGetter<T> {
+    constructor(visibleEntities: EntityLookup<T>, sectionStorage: EntitySectionStorage<T>)
+    // private sectionStorage: EntitySectionStorage<T>;
+    // private visibleEntities: EntityLookup<T>;
+    get(id: UUID): T;
+    get(id: number): T;
+    get(type: EntityTypeTest<T, U>, consumer: (param0: U) => net.minecraft.util.AbortableIterationConsumer.Continuation): void;
+    get(type: EntityTypeTest<T, U>, bb: AABB, consumer: (param0: U) => net.minecraft.util.AbortableIterationConsumer.Continuation): void;
+    get(bb: AABB, output: (param0: T) => void): void;
+    getAll(): T[];
+}

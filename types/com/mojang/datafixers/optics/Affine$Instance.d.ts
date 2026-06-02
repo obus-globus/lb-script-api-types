@@ -1,0 +1,17 @@
+import type { FunctionType } from '../../../../com/mojang/datafixers/FunctionType.d.ts'
+import type { App2 } from '../../../../com/mojang/datafixers/kinds/App2.d.ts'
+import type { Affine$Mu } from '../../../../com/mojang/datafixers/optics/Affine$Mu.d.ts'
+import type { AffineP } from '../../../../com/mojang/datafixers/optics/profunctors/AffineP.d.ts'
+import type { AffineP$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/AffineP$Mu.d.ts'
+import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
+import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
+import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export class Affine$Instance<A2 extends Object | number | string | boolean, B2 extends Object | number | string | boolean> extends Object implements AffineP<Affine$Mu<A2, B2>, AffineP$Mu> {
+    constructor()
+    dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Affine$Mu<A2, B2>, A, B>, App2<Affine$Mu<A2, B2>, C, D>>;
+    first(arg0: App2<Affine$Mu<A2, B2>, A, B>): App2<Affine$Mu<A2, B2>, Pair<A, C>, Pair<B, C>>;
+    left(arg0: App2<Affine$Mu<A2, B2>, A, B>): App2<Affine$Mu<A2, B2>, Either<A, C>, Either<B, C>>;
+    right(arg0: App2<Affine$Mu<A2, B2>, A, B>): App2<Affine$Mu<A2, B2>, Either<C, A>, Either<C, B>>;
+    second(arg0: App2<Affine$Mu<A2, B2>, A, B>): App2<Affine$Mu<A2, B2>, Pair<C, A>, Pair<C, B>>;
+}

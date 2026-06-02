@@ -1,0 +1,29 @@
+import type { CodecException } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/CodecException.d.ts'
+import type { Result } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Result.d.ts'
+import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../../../../../java/lang/Throwable.d.ts'
+export class Result$Success<T extends Object | number | string | boolean> extends Object implements Result<T> {
+    static error(paramarg0: string): Result<Object>;
+    static error(paramarg0: Throwable): Result<Object>;
+    static mergeErrors(paramarg0: string, paramarg1: E[]): Result<Object>;
+    static success(paramarg0: Object | null): Result<Object>;
+    static unexpected(paramarg0: Object, paramarg1: Object | null): Result<Object>;
+    static unexpected(paramarg0: Object, paramarg1: (Object | null)[]): Result<Object>;
+    private constructor(arg0: T)
+    // private result: T;
+    canEqual(arg0: Object): boolean;
+    equals(arg0: Object | null): boolean;
+    get(): T;
+    getError(): CodecException;
+    getOrThrow(arg0: (param0: Throwable) => Throwable): T;
+    hashCode(): number;
+    isError(): boolean;
+    isSuccessful(): boolean;
+    map(arg0: (param0: T) => N): Result<N>;
+    mapError(): Result<N>;
+    mapResult(arg0: (param0: T) => Result<N>): Result<N>;
+    orElse(arg0: T): T;
+    orElseThrow(arg0: (param0: Throwable) => Throwable): T;
+    toString(): string;
+}

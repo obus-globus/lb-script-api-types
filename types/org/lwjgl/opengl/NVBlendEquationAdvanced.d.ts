@@ -1,0 +1,55 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class NVBlendEquationAdvanced extends Object {
+    static GL_BLEND_OVERLAP_NV: number;
+    static GL_BLEND_PREMULTIPLIED_SRC_NV: number;
+    static GL_BLUE_NV: number;
+    static GL_COLORBURN_NV: number;
+    static GL_COLORDODGE_NV: number;
+    static GL_CONJOINT_NV: number;
+    static GL_CONTRAST_NV: number;
+    static GL_DARKEN_NV: number;
+    static GL_DIFFERENCE_NV: number;
+    static GL_DISJOINT_NV: number;
+    static GL_DST_ATOP_NV: number;
+    static GL_DST_IN_NV: number;
+    static GL_DST_NV: number;
+    static GL_DST_OUT_NV: number;
+    static GL_DST_OVER_NV: number;
+    static GL_EXCLUSION_NV: number;
+    static GL_GREEN_NV: number;
+    static GL_HARDLIGHT_NV: number;
+    static GL_HARDMIX_NV: number;
+    static GL_HSL_COLOR_NV: number;
+    static GL_HSL_HUE_NV: number;
+    static GL_HSL_LUMINOSITY_NV: number;
+    static GL_HSL_SATURATION_NV: number;
+    static GL_INVERT_OVG_NV: number;
+    static GL_INVERT_RGB_NV: number;
+    static GL_LIGHTEN_NV: number;
+    static GL_LINEARBURN_NV: number;
+    static GL_LINEARDODGE_NV: number;
+    static GL_LINEARLIGHT_NV: number;
+    static GL_MINUS_CLAMPED_NV: number;
+    static GL_MINUS_NV: number;
+    static GL_MULTIPLY_NV: number;
+    static GL_OVERLAY_NV: number;
+    static GL_PINLIGHT_NV: number;
+    static GL_PLUS_CLAMPED_ALPHA_NV: number;
+    static GL_PLUS_CLAMPED_NV: number;
+    static GL_PLUS_DARKER_NV: number;
+    static GL_PLUS_NV: number;
+    static GL_RED_NV: number;
+    static GL_SCREEN_NV: number;
+    static GL_SOFTLIGHT_NV: number;
+    static GL_SRC_ATOP_NV: number;
+    static GL_SRC_IN_NV: number;
+    static GL_SRC_NV: number;
+    static GL_SRC_OUT_NV: number;
+    static GL_SRC_OVER_NV: number;
+    static GL_UNCORRELATED_NV: number;
+    static GL_VIVIDLIGHT_NV: number;
+    static GL_XOR_NV: number;
+    static glBlendBarrierNV(): void;
+    static glBlendParameteriNV(paramarg0: number, paramarg1: number): void;
+    constructor()
+}

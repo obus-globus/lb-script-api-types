@@ -1,0 +1,82 @@
+import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
+export class PlayerAuthInputPacket_InputData extends Enum<PlayerAuthInputPacket_InputData> {
+    static Ascend: PlayerAuthInputPacket_InputData;
+    static AscendBlock: PlayerAuthInputPacket_InputData;
+    static AutoJumpingInWater: PlayerAuthInputPacket_InputData;
+    static BlockBreakingDelayEnabled: PlayerAuthInputPacket_InputData;
+    static ChangeHeight: PlayerAuthInputPacket_InputData;
+    static ClientAckServerData: PlayerAuthInputPacket_InputData;
+    static Descend: PlayerAuthInputPacket_InputData;
+    static DescendBlock: PlayerAuthInputPacket_InputData;
+    static Down: PlayerAuthInputPacket_InputData;
+    static DownLeft: PlayerAuthInputPacket_InputData;
+    static DownRight: PlayerAuthInputPacket_InputData;
+    static Emoting: PlayerAuthInputPacket_InputData;
+    static HandledTeleport: PlayerAuthInputPacket_InputData;
+    static HorizontalCollision: PlayerAuthInputPacket_InputData;
+    static IsCameraRelativeMovementEnabled_DEPRECATED: PlayerAuthInputPacket_InputData;
+    static IsHotbarOnlyTouch: PlayerAuthInputPacket_InputData;
+    static IsInClientPredictedVehicle: PlayerAuthInputPacket_InputData;
+    static IsRotControlledByMoveDirection_DEPRECATED: PlayerAuthInputPacket_InputData;
+    static JumpCurrentRaw: PlayerAuthInputPacket_InputData;
+    static JumpDown: PlayerAuthInputPacket_InputData;
+    static JumpPressedRaw: PlayerAuthInputPacket_InputData;
+    static JumpReleasedRaw: PlayerAuthInputPacket_InputData;
+    static Jumping: PlayerAuthInputPacket_InputData;
+    static Left: PlayerAuthInputPacket_InputData;
+    static MissedSwing: PlayerAuthInputPacket_InputData;
+    static NorthJump_DEPRECATED: PlayerAuthInputPacket_InputData;
+    static PaddlingLeft: PlayerAuthInputPacket_InputData;
+    static PaddlingRight: PlayerAuthInputPacket_InputData;
+    static PerformBlockActions: PlayerAuthInputPacket_InputData;
+    static PerformItemInteraction: PlayerAuthInputPacket_InputData;
+    static PerformItemStackRequest: PlayerAuthInputPacket_InputData;
+    static PersistSneak: PlayerAuthInputPacket_InputData;
+    static Right: PlayerAuthInputPacket_InputData;
+    static SneakCurrentRaw: PlayerAuthInputPacket_InputData;
+    static SneakDown: PlayerAuthInputPacket_InputData;
+    static SneakPressedRaw: PlayerAuthInputPacket_InputData;
+    static SneakReleasedRaw: PlayerAuthInputPacket_InputData;
+    static SneakToggleDown: PlayerAuthInputPacket_InputData;
+    static Sneaking: PlayerAuthInputPacket_InputData;
+    static SprintDown: PlayerAuthInputPacket_InputData;
+    static Sprinting: PlayerAuthInputPacket_InputData;
+    static StartCrawling: PlayerAuthInputPacket_InputData;
+    static StartFlying: PlayerAuthInputPacket_InputData;
+    static StartGliding: PlayerAuthInputPacket_InputData;
+    static StartJumping: PlayerAuthInputPacket_InputData;
+    static StartSneaking: PlayerAuthInputPacket_InputData;
+    static StartSpinAttack: PlayerAuthInputPacket_InputData;
+    static StartSprinting: PlayerAuthInputPacket_InputData;
+    static StartSwimming: PlayerAuthInputPacket_InputData;
+    static StartUsingItem: PlayerAuthInputPacket_InputData;
+    static StopCrawling: PlayerAuthInputPacket_InputData;
+    static StopFlying: PlayerAuthInputPacket_InputData;
+    static StopGliding: PlayerAuthInputPacket_InputData;
+    static StopSneaking: PlayerAuthInputPacket_InputData;
+    static StopSpinAttack: PlayerAuthInputPacket_InputData;
+    static StopSprinting: PlayerAuthInputPacket_InputData;
+    static StopSwimming: PlayerAuthInputPacket_InputData;
+    static Up: PlayerAuthInputPacket_InputData;
+    static UpLeft: PlayerAuthInputPacket_InputData;
+    static UpRight: PlayerAuthInputPacket_InputData;
+    static VerticalCollision: PlayerAuthInputPacket_InputData;
+    static WantDown: PlayerAuthInputPacket_InputData;
+    static WantDownSlow: PlayerAuthInputPacket_InputData;
+    static WantUp: PlayerAuthInputPacket_InputData;
+    static WantUpSlow: PlayerAuthInputPacket_InputData;
+    static getByName(paramarg0: string): PlayerAuthInputPacket_InputData;
+    static getByName(paramarg0: string, paramarg1: PlayerAuthInputPacket_InputData): PlayerAuthInputPacket_InputData;
+    static getByValue(paramarg0: number): PlayerAuthInputPacket_InputData;
+    static getByValue(paramarg0: number, paramarg1: PlayerAuthInputPacket_InputData): PlayerAuthInputPacket_InputData;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): PlayerAuthInputPacket_InputData;
+    static values(): (Object | null)[];
+    private constructor(arg2: number)
+    private constructor(arg2: PlayerAuthInputPacket_InputData)
+    readonly value: number;
+    getValue(): number;
+    name(): "Ascend" | "Descend" | "NorthJump_DEPRECATED" | "JumpDown" | "SprintDown" | "ChangeHeight" | "Jumping" | "AutoJumpingInWater" | "Sneaking" | "SneakDown" | "Up" | "Down" | "Left" | "Right" | "UpLeft" | "UpRight" | "WantUp" | "WantDown" | "WantDownSlow" | "WantUpSlow" | "Sprinting" | "AscendBlock" | "DescendBlock" | "SneakToggleDown" | "PersistSneak" | "StartSprinting" | "StopSprinting" | "StartSneaking" | "StopSneaking" | "StartSwimming" | "StopSwimming" | "StartJumping" | "StartGliding" | "StopGliding" | "PerformItemInteraction" | "PerformBlockActions" | "PerformItemStackRequest" | "HandledTeleport" | "Emoting" | "MissedSwing" | "StartCrawling" | "StopCrawling" | "StartFlying" | "StopFlying" | "ClientAckServerData" | "IsInClientPredictedVehicle" | "PaddlingLeft" | "PaddlingRight" | "BlockBreakingDelayEnabled" | "HorizontalCollision" | "VerticalCollision" | "DownLeft" | "DownRight" | "StartUsingItem" | "IsCameraRelativeMovementEnabled_DEPRECATED" | "IsRotControlledByMoveDirection_DEPRECATED" | "StartSpinAttack" | "StopSpinAttack" | "IsHotbarOnlyTouch" | "JumpReleasedRaw" | "JumpPressedRaw" | "JumpCurrentRaw" | "SneakReleasedRaw" | "SneakPressedRaw" | "SneakCurrentRaw";
+}

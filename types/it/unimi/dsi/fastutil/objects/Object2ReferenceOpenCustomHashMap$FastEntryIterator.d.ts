@@ -1,0 +1,12 @@
+import type { Object2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceMap$Entry.d.ts'
+import type { Object2ReferenceOpenCustomHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceOpenCustomHashMap$MapEntry.d.ts'
+import type { Object2ReferenceOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceOpenCustomHashMap$MapIterator.d.ts'
+import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+export class Object2ReferenceOpenCustomHashMap$FastEntryIterator extends Object2ReferenceOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Object2ReferenceMap$Entry<K, V>> {
+    private constructor(null_: Object2ReferenceOpenCustomHashMap$FastEntryIterator)
+    // private entry: Object2ReferenceOpenCustomHashMap$MapEntry;
+    acceptOnIndex(arg0: (param0: Object2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
+    next(): Object2ReferenceOpenCustomHashMap$MapEntry;
+    skip(arg0: number): number;
+}

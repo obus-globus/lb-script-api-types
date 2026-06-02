@@ -1,0 +1,10 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export interface Char2FloatMap$Entry extends Object, Map$Entry<string, number>{
+    readonly key: string;
+    readonly value: number;
+    getCharKey(): string;
+    getFloatValue(): number;
+    setValue(arg0: number): number;
+    setValue(arg0: number): number;
+}

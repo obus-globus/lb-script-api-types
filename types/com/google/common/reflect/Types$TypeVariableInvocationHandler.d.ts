@@ -1,0 +1,10 @@
+import type { Types$TypeVariableImpl } from '../../../../com/google/common/reflect/Types$TypeVariableImpl.d.ts'
+import type { InvocationHandler } from '../../../../java/lang/reflect/InvocationHandler.d.ts'
+import type { Method } from '../../../../java/lang/reflect/Method.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export class Types$TypeVariableInvocationHandler extends Object implements InvocationHandler {
+    static invokeDefault(paramarg0: Object, paramarg1: Method, paramarg2: (Object | null)[]): Object;
+    constructor(typeVariableImpl: Types$TypeVariableImpl<Object>)
+    // private typeVariableImpl: Types$TypeVariableImpl<Object>;
+    invoke(proxy: Object, method: Method, args: Object[]): Object;
+}

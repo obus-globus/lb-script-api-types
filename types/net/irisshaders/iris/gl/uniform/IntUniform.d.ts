@@ -1,0 +1,11 @@
+import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
+import type { ValueUpdateNotifier } from '../../../../../net/irisshaders/iris/gl/state/ValueUpdateNotifier.d.ts'
+import type { Uniform } from '../../../../../net/irisshaders/iris/gl/uniform/Uniform.d.ts'
+export class IntUniform extends Uniform {
+    constructor(arg0: number, arg1: () => kotlin.Int)
+    constructor(arg0: number, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier)
+    // private cachedValue: number;
+    // private value: () => kotlin.Int;
+    update(): void;
+    // private updateValue(): void;
+}

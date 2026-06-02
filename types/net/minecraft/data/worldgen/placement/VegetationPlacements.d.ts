@@ -1,0 +1,102 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { BootstrapContext } from '../../../../../net/minecraft/data/worldgen/BootstrapContext.d.ts'
+import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
+import type { PlacedFeature } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
+import type { PlacementModifier } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacementModifier.d.ts'
+export class VegetationPlacements extends Object {
+    static BAMBOO: ResourceKey<PlacedFeature>;
+    static BAMBOO_LIGHT: ResourceKey<PlacedFeature>;
+    static BAMBOO_VEGETATION: ResourceKey<PlacedFeature>;
+    static BIRCH_TALL: ResourceKey<PlacedFeature>;
+    static BROWN_MUSHROOM_NETHER: ResourceKey<PlacedFeature>;
+    static BROWN_MUSHROOM_NORMAL: ResourceKey<PlacedFeature>;
+    static BROWN_MUSHROOM_OLD_GROWTH: ResourceKey<PlacedFeature>;
+    static BROWN_MUSHROOM_SWAMP: ResourceKey<PlacedFeature>;
+    static BROWN_MUSHROOM_TAIGA: ResourceKey<PlacedFeature>;
+    static DARK_FOREST_VEGETATION: ResourceKey<PlacedFeature>;
+    static FLOWER_CHERRY: ResourceKey<PlacedFeature>;
+    static FLOWER_DEFAULT: ResourceKey<PlacedFeature>;
+    static FLOWER_FLOWER_FOREST: ResourceKey<PlacedFeature>;
+    static FLOWER_FOREST_FLOWERS: ResourceKey<PlacedFeature>;
+    static FLOWER_MEADOW: ResourceKey<PlacedFeature>;
+    static FLOWER_PALE_GARDEN: ResourceKey<PlacedFeature>;
+    static FLOWER_PLAINS: ResourceKey<PlacedFeature>;
+    static FLOWER_SWAMP: ResourceKey<PlacedFeature>;
+    static FLOWER_WARM: ResourceKey<PlacedFeature>;
+    static FOREST_FLOWERS: ResourceKey<PlacedFeature>;
+    static GRASS_BONEMEAL: ResourceKey<PlacedFeature>;
+    static MUSHROOM_ISLAND_VEGETATION: ResourceKey<PlacedFeature>;
+    static PALE_GARDEN_FLOWERS: ResourceKey<PlacedFeature>;
+    static PALE_GARDEN_VEGETATION: ResourceKey<PlacedFeature>;
+    static PALE_MOSS_PATCH: ResourceKey<PlacedFeature>;
+    static PATCH_BERRY_COMMON: ResourceKey<PlacedFeature>;
+    static PATCH_BERRY_RARE: ResourceKey<PlacedFeature>;
+    static PATCH_BUSH: ResourceKey<PlacedFeature>;
+    static PATCH_CACTUS_DECORATED: ResourceKey<PlacedFeature>;
+    static PATCH_CACTUS_DESERT: ResourceKey<PlacedFeature>;
+    static PATCH_DEAD_BUSH: ResourceKey<PlacedFeature>;
+    static PATCH_DEAD_BUSH_2: ResourceKey<PlacedFeature>;
+    static PATCH_DEAD_BUSH_BADLANDS: ResourceKey<PlacedFeature>;
+    static PATCH_DRY_GRASS_BADLANDS: ResourceKey<PlacedFeature>;
+    static PATCH_DRY_GRASS_DESERT: ResourceKey<PlacedFeature>;
+    static PATCH_FIREFLY_BUSH_NEAR_WATER: ResourceKey<PlacedFeature>;
+    static PATCH_FIREFLY_BUSH_NEAR_WATER_SWAMP: ResourceKey<PlacedFeature>;
+    static PATCH_FIREFLY_BUSH_SWAMP: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_BADLANDS: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_FOREST: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_JUNGLE: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_MEADOW: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_NORMAL: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_PLAIN: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_SAVANNA: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_TAIGA: ResourceKey<PlacedFeature>;
+    static PATCH_GRASS_TAIGA_2: ResourceKey<PlacedFeature>;
+    static PATCH_LARGE_FERN: ResourceKey<PlacedFeature>;
+    static PATCH_LEAF_LITTER: ResourceKey<PlacedFeature>;
+    static PATCH_MELON: ResourceKey<PlacedFeature>;
+    static PATCH_MELON_SPARSE: ResourceKey<PlacedFeature>;
+    static PATCH_PUMPKIN: ResourceKey<PlacedFeature>;
+    static PATCH_SUGAR_CANE: ResourceKey<PlacedFeature>;
+    static PATCH_SUGAR_CANE_BADLANDS: ResourceKey<PlacedFeature>;
+    static PATCH_SUGAR_CANE_DESERT: ResourceKey<PlacedFeature>;
+    static PATCH_SUGAR_CANE_SWAMP: ResourceKey<PlacedFeature>;
+    static PATCH_SUNFLOWER: ResourceKey<PlacedFeature>;
+    static PATCH_TALL_GRASS: ResourceKey<PlacedFeature>;
+    static PATCH_TALL_GRASS_2: ResourceKey<PlacedFeature>;
+    static PATCH_WATERLILY: ResourceKey<PlacedFeature>;
+    static RED_MUSHROOM_NETHER: ResourceKey<PlacedFeature>;
+    static RED_MUSHROOM_NORMAL: ResourceKey<PlacedFeature>;
+    static RED_MUSHROOM_OLD_GROWTH: ResourceKey<PlacedFeature>;
+    static RED_MUSHROOM_SWAMP: ResourceKey<PlacedFeature>;
+    static RED_MUSHROOM_TAIGA: ResourceKey<PlacedFeature>;
+    static TREES_BADLANDS: ResourceKey<PlacedFeature>;
+    static TREES_BIRCH: ResourceKey<PlacedFeature>;
+    static TREES_BIRCH_AND_OAK_LEAF_LITTER: ResourceKey<PlacedFeature>;
+    static TREES_CHERRY: ResourceKey<PlacedFeature>;
+    static TREES_FLOWER_FOREST: ResourceKey<PlacedFeature>;
+    static TREES_GROVE: ResourceKey<PlacedFeature>;
+    static TREES_JUNGLE: ResourceKey<PlacedFeature>;
+    static TREES_MANGROVE: ResourceKey<PlacedFeature>;
+    static TREES_MEADOW: ResourceKey<PlacedFeature>;
+    static TREES_OLD_GROWTH_PINE_TAIGA: ResourceKey<PlacedFeature>;
+    static TREES_OLD_GROWTH_SPRUCE_TAIGA: ResourceKey<PlacedFeature>;
+    static TREES_PLAINS: ResourceKey<PlacedFeature>;
+    static TREES_SAVANNA: ResourceKey<PlacedFeature>;
+    static TREES_SNOWY: ResourceKey<PlacedFeature>;
+    static TREES_SPARSE_JUNGLE: ResourceKey<PlacedFeature>;
+    static TREES_SWAMP: ResourceKey<PlacedFeature>;
+    static TREES_TAIGA: ResourceKey<PlacedFeature>;
+    static TREES_WATER: ResourceKey<PlacedFeature>;
+    static TREES_WINDSWEPT_FOREST: ResourceKey<PlacedFeature>;
+    static TREES_WINDSWEPT_HILLS: ResourceKey<PlacedFeature>;
+    static TREES_WINDSWEPT_SAVANNA: ResourceKey<PlacedFeature>;
+    static VINES: ResourceKey<PlacedFeature>;
+    static WILDFLOWERS_BIRCH_FOREST: ResourceKey<PlacedFeature>;
+    static WILDFLOWERS_MEADOW: ResourceKey<PlacedFeature>;
+    static bootstrap(paramcontext: BootstrapContext<PlacedFeature>): void;
+    static treePlacement(paramfrequency: PlacementModifier): PlacementModifier[];
+    static treePlacement(paramfrequency: PlacementModifier, paramsapling: Block): PlacementModifier[];
+    static worldSurfaceSquaredWithCount(paramcount: number): PlacementModifier[];
+    constructor()
+}

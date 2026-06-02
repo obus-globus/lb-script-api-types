@@ -1,0 +1,33 @@
+import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { ArrayPrototypeBuiltins$JSArrayOperation } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$JSArrayOperation.d.ts'
+import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { IsArrayNode } from '../../../../../com/oracle/truffle/js/nodes/access/IsArrayNode.d.ts'
+import type { JSArrayFirstElementIndexNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSArrayFirstElementIndexNode.d.ts'
+import type { JSArrayLastElementIndexNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSArrayLastElementIndexNode.d.ts'
+import type { TestArrayNode } from '../../../../../com/oracle/truffle/js/nodes/array/TestArrayNode.d.ts'
+import type { DeletePropertyNode } from '../../../../../com/oracle/truffle/js/nodes/control/DeletePropertyNode.d.ts'
+import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export abstract class ArrayPrototypeBuiltins$JSArrayUnshiftNode extends ArrayPrototypeBuiltins$JSArrayOperation {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    constructor(context: JSContext, builtin: JSBuiltin)
+    // private hasHolesNode: TestArrayNode;
+    // private isArrayNode: IsArrayNode;
+    isFastPath(thisObj: Object): boolean;
+    unshiftDouble(thisObj: JSDynamicObject, args: Object[]): number;
+    // private unshiftHoleless(thisObj: JSDynamicObject, args: Object[]): number;
+    unshiftHoles(thisObjParam: Object, args: Object[], deletePropertyNode: DeletePropertyNode, lastElementIndexNode: JSArrayLastElementIndexNode, firstElementIndexNode: JSArrayFirstElementIndexNode): number;
+    unshiftInt(thisObj: JSDynamicObject, args: Object[]): number;
+}

@@ -1,0 +1,14 @@
+import type { Biome } from '../../../../../../com/seedfinding/mcbiome/biome/Biome.d.ts'
+import type { SurfaceConfig } from '../../../../../../com/seedfinding/mcbiome/biome/surface/SurfaceConfig.d.ts'
+import type { SurfaceBuilder } from '../../../../../../com/seedfinding/mcbiome/biome/surface/builder/SurfaceBuilder.d.ts'
+import type { BiomeSource } from '../../../../../../com/seedfinding/mcbiome/source/BiomeSource.d.ts'
+import type { Block } from '../../../../../../com/seedfinding/mccore/block/Block.d.ts'
+import type { ChunkRand } from '../../../../../../com/seedfinding/mccore/rand/ChunkRand.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class DefaultSurfaceBuilder extends SurfaceBuilder {
+    constructor(arg0: SurfaceConfig)
+    applyExtraConditions(arg0: number, arg1: Block, arg2: Object[]): Block;
+    applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: Block, arg11: Block): Block[];
+    generateExtras(arg0: ChunkRand, arg1: number): Object[];
+    getBaseBlock(arg0: BiomeSource, arg1: number, arg2: Block[], arg3: ChunkRand, arg4: number): Block;
+}

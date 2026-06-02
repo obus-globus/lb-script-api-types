@@ -1,0 +1,26 @@
+import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Winsvc$ChangeServiceConfig2Info } from '../../../../../com/sun/jna/platform/win32/Winsvc$ChangeServiceConfig2Info.d.ts'
+import type { Winsvc$SC_ACTION$ByReference } from '../../../../../com/sun/jna/platform/win32/Winsvc$SC_ACTION$ByReference.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class Winsvc$SERVICE_FAILURE_ACTIONS extends Winsvc$ChangeServiceConfig2Info {
+    static ALIGN_DEFAULT: number;
+    static ALIGN_GNUC: number;
+    static ALIGN_MSVC: number;
+    static ALIGN_NONE: number;
+    static autoRead(paramarg0: (Object | null)[]): void;
+    static autoWrite(paramarg0: (Object | null)[]): void;
+    static createFieldsOrder(paramarg0: string): string[];
+    static createFieldsOrder(paramarg0: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
+    static newInstance(paramarg0: Class<Object>): Object | null;
+    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    constructor()
+    constructor(arg0: Pointer)
+    cActions: number;
+    dwResetPeriod: number;
+    lpCommand: string;
+    lpRebootMsg: string;
+    lpsaActions: Winsvc$SC_ACTION$ByReference;
+}

@@ -1,0 +1,8 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { JNI$JByteArray } from '../../../org/graalvm/jniutils/JNI$JByteArray.d.ts'
+import type { JNI$JNIEnv } from '../../../org/graalvm/jniutils/JNI$JNIEnv.d.ts'
+import type { CFunctionPointer } from '../../../org/graalvm/nativeimage/c/function/CFunctionPointer.d.ts'
+import type { CCharPointer } from '../../../org/graalvm/nativeimage/c/type/CCharPointer.d.ts'
+export interface JNI$ReleaseByteArrayElements extends Object, CFunctionPointer{
+    call(env: JNI$JNIEnv, array: JNI$JByteArray, elems: CCharPointer, mode: number): void;
+}

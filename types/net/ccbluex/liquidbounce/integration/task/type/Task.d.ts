@@ -1,0 +1,42 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Job } from '../../../../../../kotlinx/coroutines/Job.d.ts'
+import type { ResourceTask } from '../../../../../../net/ccbluex/liquidbounce/integration/task/type/ResourceTask.d.ts'
+/**
+ * An asynchronous task with progress tracking
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:25}
+ */
+export class Task extends Object {
+    constructor(name: string)
+    // private isCompleted: boolean;
+    /*not mapped: */ isCompleted(): boolean;
+    job: Job | null;
+    readonly name: string;
+    progress: number;
+    startTime: number;
+    readonly subTasks: { [key: string]: Task };
+    /**
+     * Checks if all subtasks are completed
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:60}
+     */
+    areAllSubTasksCompleted(): boolean;
+    /**
+     * Calculates aggregate progress of all subtasks
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:52}
+     */
+    calculateProgress(): number;
+    /**
+     * Creates or gets an existing download sub-task
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:45}
+     */
+    getOrCreateFileTask(subTaskName: string): ResourceTask;
+    /**
+     * Creates or gets an existing sub-task
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:38}
+     */
+    getOrCreateTask(subTaskName: string): Task;
+}

@@ -1,0 +1,9 @@
+import type { ByteCode } from '../../../../../../../../org/apache/commons/compress/harmony/unpack200/bytecode/ByteCode.d.ts'
+import type { OperandManager } from '../../../../../../../../org/apache/commons/compress/harmony/unpack200/bytecode/OperandManager.d.ts'
+import type { ByteCodeForm } from '../../../../../../../../org/apache/commons/compress/harmony/unpack200/bytecode/forms/ByteCodeForm.d.ts'
+import type { SwitchForm } from '../../../../../../../../org/apache/commons/compress/harmony/unpack200/bytecode/forms/SwitchForm.d.ts'
+export class LookupSwitchForm extends SwitchForm {
+    static get(paramarg0: number): ByteCodeForm;
+    constructor(arg0: number, arg1: string)
+    setByteCodeOperands(arg0: ByteCode, arg1: OperandManager, arg2: number): void;
+}

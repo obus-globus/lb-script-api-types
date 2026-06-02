@@ -1,0 +1,154 @@
+import type { CompareOp } from '../../../../com/mojang/blaze3d/platform/CompareOp.d.ts'
+import type { DestFactor } from '../../../../com/mojang/blaze3d/platform/DestFactor.d.ts'
+import type { NativeImage$Format } from '../../../../com/mojang/blaze3d/platform/NativeImage$Format.d.ts'
+import type { PolygonMode } from '../../../../com/mojang/blaze3d/platform/PolygonMode.d.ts'
+import type { SourceFactor } from '../../../../com/mojang/blaze3d/platform/SourceFactor.d.ts'
+import type { ShaderType } from '../../../../com/mojang/blaze3d/shaders/ShaderType.d.ts'
+import type { AddressMode } from '../../../../com/mojang/blaze3d/textures/AddressMode.d.ts'
+import type { TextureFormat } from '../../../../com/mojang/blaze3d/textures/TextureFormat.d.ts'
+import type { VertexFormat$IndexType } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$IndexType.d.ts'
+import type { VertexFormat$Mode } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$Mode.d.ts'
+import type { VertexFormatElement$Type } from '../../../../com/mojang/blaze3d/vertex/VertexFormatElement$Type.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export class GlConst extends Object {
+    static CUBEMAP_TARGETS: number[];
+    static GL_ALPHA_BIAS: number;
+    static GL_ALWAYS: number;
+    static GL_ARRAY_BUFFER: number;
+    static GL_BGR: number;
+    static GL_BYTE: number;
+    static GL_CLAMP_TO_EDGE: number;
+    static GL_COLOR_ATTACHMENT0: number;
+    static GL_COLOR_BUFFER_BIT: number;
+    static GL_COMPILE_STATUS: number;
+    static GL_COPY_READ_BUFFER: number;
+    static GL_COPY_WRITE_BUFFER: number;
+    static GL_DEPTH_ATTACHMENT: number;
+    static GL_DEPTH_BUFFER_BIT: number;
+    static GL_DEPTH_COMPONENT: number;
+    static GL_DEPTH_COMPONENT24: number;
+    static GL_DEPTH_COMPONENT32: number;
+    static GL_DEPTH_TEXTURE_MODE: number;
+    static GL_DRAW_FRAMEBUFFER: number;
+    static GL_DST_ALPHA: number;
+    static GL_DST_COLOR: number;
+    static GL_DYNAMIC_COPY: number;
+    static GL_DYNAMIC_DRAW: number;
+    static GL_DYNAMIC_READ: number;
+    static GL_ELEMENT_ARRAY_BUFFER: number;
+    static GL_EQUAL: number;
+    static GL_FALSE: number;
+    static GL_FILL: number;
+    static GL_FLOAT: number;
+    static GL_FRAGMENT_SHADER: number;
+    static GL_FRAMEBUFFER: number;
+    static GL_FRAMEBUFFER_COMPLETE: number;
+    static GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT: number;
+    static GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER: number;
+    static GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: number;
+    static GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER: number;
+    static GL_FRAMEBUFFER_UNSUPPORTED: number;
+    static GL_FRONT: number;
+    static GL_FRONT_AND_BACK: number;
+    static GL_FUNC_ADD: number;
+    static GL_FUNC_REVERSE_SUBTRACT: number;
+    static GL_FUNC_SUBTRACT: number;
+    static GL_GEQUAL: number;
+    static GL_GREATER: number;
+    static GL_INT: number;
+    static GL_LEQUAL: number;
+    static GL_LESS: number;
+    static GL_LINE: number;
+    static GL_LINEAR: number;
+    static GL_LINEAR_MIPMAP_LINEAR: number;
+    static GL_LINES: number;
+    static GL_LINE_STRIP: number;
+    static GL_LINK_STATUS: number;
+    static GL_MAP_READ_BIT: number;
+    static GL_MAP_WRITE_BIT: number;
+    static GL_MAX: number;
+    static GL_MAX_TEXTURE_SIZE: number;
+    static GL_MIN: number;
+    static GL_NEAREST: number;
+    static GL_NEAREST_MIPMAP_LINEAR: number;
+    static GL_NONE: number;
+    static GL_ONE: number;
+    static GL_ONE_MINUS_DST_ALPHA: number;
+    static GL_ONE_MINUS_DST_COLOR: number;
+    static GL_ONE_MINUS_SRC_ALPHA: number;
+    static GL_ONE_MINUS_SRC_COLOR: number;
+    static GL_OUT_OF_MEMORY: number;
+    static GL_PACK_ALIGNMENT: number;
+    static GL_PACK_ROW_LENGTH: number;
+    static GL_PIXEL_PACK_BUFFER: number;
+    static GL_PIXEL_UNPACK_BUFFER: number;
+    static GL_POINTS: number;
+    static GL_PROXY_TEXTURE_2D: number;
+    static GL_R8: number;
+    static GL_READ_FRAMEBUFFER: number;
+    static GL_READ_ONLY: number;
+    static GL_READ_WRITE: number;
+    static GL_RED: number;
+    static GL_RENDERBUFFER: number;
+    static GL_REPEAT: number;
+    static GL_REPLACE: number;
+    static GL_RG: number;
+    static GL_RGB: number;
+    static GL_RGBA: number;
+    static GL_RGBA8: number;
+    static GL_SHORT: number;
+    static GL_SRC_ALPHA: number;
+    static GL_SRC_COLOR: number;
+    static GL_STATIC_COPY: number;
+    static GL_STATIC_DRAW: number;
+    static GL_STATIC_READ: number;
+    static GL_STREAM_COPY: number;
+    static GL_STREAM_DRAW: number;
+    static GL_STREAM_READ: number;
+    static GL_SYNC_GPU_COMMANDS_COMPLETE: number;
+    static GL_TEXTURE0: number;
+    static GL_TEXTURE1: number;
+    static GL_TEXTURE2: number;
+    static GL_TEXTURE_2D: number;
+    static GL_TEXTURE_COMPARE_MODE: number;
+    static GL_TEXTURE_MAG_FILTER: number;
+    static GL_TEXTURE_MIN_FILTER: number;
+    static GL_TEXTURE_WIDTH: number;
+    static GL_TEXTURE_WRAP_S: number;
+    static GL_TEXTURE_WRAP_T: number;
+    static GL_TIMEOUT_EXPIRED: number;
+    static GL_TRIANGLES: number;
+    static GL_TRIANGLE_FAN: number;
+    static GL_TRIANGLE_STRIP: number;
+    static GL_TRUE: number;
+    static GL_UNIFORM_BUFFER: number;
+    static GL_UNPACK_ALIGNMENT: number;
+    static GL_UNPACK_LSB_FIRST: number;
+    static GL_UNPACK_ROW_LENGTH: number;
+    static GL_UNPACK_SKIP_PIXELS: number;
+    static GL_UNPACK_SKIP_ROWS: number;
+    static GL_UNPACK_SWAP_BYTES: number;
+    static GL_UNSIGNED_BYTE: number;
+    static GL_UNSIGNED_INT: number;
+    static GL_UNSIGNED_SHORT: number;
+    static GL_VERTEX_SHADER: number;
+    static GL_WAIT_FAILED: number;
+    static GL_WRITE_ONLY: number;
+    static GL_ZERO: number;
+    static bufferUsageToGlEnum(paramusage: number): number;
+    static bufferUsageToGlFlag(paramusage: number): number;
+    static toGl(paramcompareOp: CompareOp): number;
+    static toGl(paramdestFactor: DestFactor): number;
+    static toGl(paramformat: NativeImage$Format): number;
+    static toGl(parampolygonMode: PolygonMode): number;
+    static toGl(paramsourceFactor: SourceFactor): number;
+    static toGl(paramtype: ShaderType): number;
+    static toGl(paramaddressMode: AddressMode): number;
+    static toGl(paramindexType: VertexFormat$IndexType): number;
+    static toGl(parammode: VertexFormat$Mode): number;
+    static toGl(paramtype: VertexFormatElement$Type): number;
+    static toGlExternalId(paramtextureFormat: TextureFormat): number;
+    static toGlInternalId(paramtextureFormat: TextureFormat): number;
+    static toGlType(paramtextureFormat: TextureFormat): number;
+    constructor()
+}

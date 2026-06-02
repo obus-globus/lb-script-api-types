@@ -1,0 +1,16 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+export class Level extends Enum<Level> {
+    static DEBUG: Level;
+    static ERROR: Level;
+    static FATAL: Level;
+    static INFO: Level;
+    static TRACE: Level;
+    static WARN: Level;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): Level;
+    static values(): (Object | null)[];
+    private constructor()
+    name(): "FATAL" | "ERROR" | "WARN" | "INFO" | "DEBUG" | "TRACE";
+}

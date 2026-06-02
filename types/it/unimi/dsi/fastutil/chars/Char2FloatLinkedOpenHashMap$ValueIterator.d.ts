@@ -1,0 +1,16 @@
+import type { Char2FloatLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2FloatLinkedOpenHashMap$MapIterator.d.ts'
+import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
+import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
+export class Char2FloatLinkedOpenHashMap$ValueIterator extends Char2FloatLinkedOpenHashMap$MapIterator<(param0: number) => void> implements FloatListIterator {
+    constructor(null_: Char2FloatLinkedOpenHashMap$ValueIterator)
+    acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
+    add(arg0: number): void;
+    add(arg0: number): void;
+    next(): number;
+    nextFloat(): number;
+    previous(): number;
+    previousFloat(): number;
+    remove(): void;
+    set(arg0: number): void;
+    set(arg0: number): void;
+}

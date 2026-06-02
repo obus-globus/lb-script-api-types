@@ -1,0 +1,22 @@
+import type { Input } from '../../../../../ai/djl/modality/Input.d.ts'
+import type { Output } from '../../../../../ai/djl/modality/Output.d.ts'
+import type { EmbeddingOutput } from '../../../../../ai/djl/modality/nlp/EmbeddingOutput.d.ts'
+import type { Batchifier } from '../../../../../ai/djl/translate/Batchifier.d.ts'
+import type { Translator } from '../../../../../ai/djl/translate/Translator.d.ts'
+import type { TranslatorContext } from '../../../../../ai/djl/translate/TranslatorContext.d.ts'
+import type { TranslatorOptions } from '../../../../../ai/djl/translate/TranslatorOptions.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class SparseRetrievalServingTranslator extends Object implements Translator<Input, Output> {
+    constructor(arg0: Translator<string, EmbeddingOutput>)
+    // private translator: Translator<string, EmbeddingOutput>;
+    batchProcessInput(arg0: TranslatorContext, arg1: Input[]): (Object | null)[];
+    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    getBatchifier(): Batchifier;
+    getExpansions(): TranslatorOptions;
+    prepare(arg0: TranslatorContext): void;
+    prepare(arg0: TranslatorContext): void;
+    processInput(arg0: TranslatorContext, arg1: Input): (Object | null)[];
+    processOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output;
+}

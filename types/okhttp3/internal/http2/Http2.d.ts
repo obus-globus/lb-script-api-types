@@ -1,0 +1,52 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { ByteString } from '../../../okio/ByteString.d.ts'
+export class Http2 extends Object {
+    static CONNECTION_PREFACE: ByteString;
+    static FLAG_ACK: number;
+    static FLAG_COMPRESSED: number;
+    static FLAG_END_HEADERS: number;
+    static FLAG_END_PUSH_PROMISE: number;
+    static FLAG_END_STREAM: number;
+    static FLAG_NONE: number;
+    static FLAG_PADDED: number;
+    static FLAG_PRIORITY: number;
+    static INITIAL_MAX_FRAME_SIZE: number;
+    static INSTANCE: Http2;
+    static TYPE_CONTINUATION: number;
+    static TYPE_DATA: number;
+    static TYPE_GOAWAY: number;
+    static TYPE_HEADERS: number;
+    static TYPE_PING: number;
+    static TYPE_PRIORITY: number;
+    static TYPE_PUSH_PROMISE: number;
+    static TYPE_RST_STREAM: number;
+    static TYPE_SETTINGS: number;
+    static TYPE_WINDOW_UPDATE: number;
+    // private BINARY: string[];
+    CONNECTION_PREFACE: ByteString;
+    // private FLAGS: (string | null)[];
+    FLAG_ACK: number;
+    FLAG_COMPRESSED: number;
+    FLAG_END_HEADERS: number;
+    FLAG_END_PUSH_PROMISE: number;
+    FLAG_END_STREAM: number;
+    FLAG_NONE: number;
+    FLAG_PADDED: number;
+    FLAG_PRIORITY: number;
+    // private FRAME_NAMES: string[];
+    INITIAL_MAX_FRAME_SIZE: number;
+    TYPE_CONTINUATION: number;
+    TYPE_DATA: number;
+    TYPE_GOAWAY: number;
+    TYPE_HEADERS: number;
+    TYPE_PING: number;
+    TYPE_PRIORITY: number;
+    TYPE_PUSH_PROMISE: number;
+    TYPE_RST_STREAM: number;
+    TYPE_SETTINGS: number;
+    TYPE_WINDOW_UPDATE: number;
+    formatFlags(type: number, flags: number): string;
+    formattedType(type: number): string;
+    frameLog(inbound: boolean, streamId: number, length: number, type: number, flags: number): string;
+    frameLogWindowUpdate(inbound: boolean, streamId: number, length: number, windowSizeIncrement: number): string;
+}

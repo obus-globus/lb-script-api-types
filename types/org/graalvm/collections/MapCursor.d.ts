@@ -1,0 +1,6 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { UnmodifiableMapCursor } from '../../../org/graalvm/collections/UnmodifiableMapCursor.d.ts'
+export interface MapCursor<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object, UnmodifiableMapCursor<K, V>{
+    remove(): void;
+    setValue(newValue: V): V;
+}

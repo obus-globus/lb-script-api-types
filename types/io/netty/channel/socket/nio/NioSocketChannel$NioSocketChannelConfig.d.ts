@@ -1,0 +1,19 @@
+import type { ChannelOption } from '../../../../../io/netty/channel/ChannelOption.d.ts'
+import type { DefaultSocketChannelConfig } from '../../../../../io/netty/channel/socket/DefaultSocketChannelConfig.d.ts'
+import type { NioSocketChannel } from '../../../../../io/netty/channel/socket/nio/NioSocketChannel.d.ts'
+import type { Socket } from '../../../../../java/net/Socket.d.ts'
+import type { SocketChannel } from '../../../../../java/nio/channels/SocketChannel.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class NioSocketChannel$NioSocketChannelConfig extends DefaultSocketChannelConfig {
+    private constructor(null_: NioSocketChannel$NioSocketChannelConfig, arg1: NioSocketChannel, arg2: Socket)
+    // private maxBytesPerGatheringWrite: number;
+    autoReadCleared(): void;
+    // private calculateMaxBytesPerGatheringWrite(): void;
+    getMaxBytesPerGatheringWrite(): number;
+    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOptions(): Map<ChannelOption<Object>, Object>;
+    // private jdkChannel(): SocketChannel;
+    setMaxBytesPerGatheringWrite(arg0: number): void;
+    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setSendBufferSize(arg0: number): NioSocketChannel$NioSocketChannelConfig;
+}

@@ -1,0 +1,12 @@
+import type { Object2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharMap$Entry.d.ts'
+import type { Object2CharOpenCustomHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharOpenCustomHashMap$MapEntry.d.ts'
+import type { Object2CharOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharOpenCustomHashMap$MapIterator.d.ts'
+import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+export class Object2CharOpenCustomHashMap$FastEntryIterator extends Object2CharOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Object2CharMap$Entry<K>> {
+    private constructor(null_: Object2CharOpenCustomHashMap$FastEntryIterator)
+    // private entry: Object2CharOpenCustomHashMap$MapEntry;
+    acceptOnIndex(arg0: (param0: Object2CharMap$Entry<K>) => void, arg1: number): void;
+    next(): Object2CharOpenCustomHashMap$MapEntry;
+    skip(arg0: number): number;
+}

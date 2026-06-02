@@ -1,0 +1,28 @@
+import type { SuggestionsBuilder } from '../../../../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Minecraft } from '../../../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { LocalPlayer } from '../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
+import type { SharedSuggestionProvider } from '../../../../../../../net/minecraft/commands/SharedSuggestionProvider.d.ts'
+import type { SharedSuggestionProvider$ElementSuggestionType } from '../../../../../../../net/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType.d.ts'
+import type { HolderLookup } from '../../../../../../../net/minecraft/core/HolderLookup.d.ts'
+import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
+import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { Vec2 } from '../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
+import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
+export interface FabricClientCommandSource extends Object, SharedSuggestionProvider{
+    getAbsoluteCoordinates(): E[];
+    getClient(): Minecraft;
+    getCustomTabSuggestions(): E[];
+    getEntity(): Entity;
+    getLevel(): ClientLevel;
+    getMeta(arg0: string): Object;
+    getPlayer(): LocalPlayer;
+    getPosition(): Vec3;
+    getRelevantCoordinates(): E[];
+    getRotation(): Vec2;
+    getSelectedEntities(): E[];
+    sendError(arg0: Component): void;
+    sendFeedback(arg0: Component): void;
+    suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
+}

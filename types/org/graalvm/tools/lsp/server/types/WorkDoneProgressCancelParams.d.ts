@@ -1,0 +1,11 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
+import type { JSONBase } from '../../../../../../org/graalvm/tools/lsp/server/types/JSONBase.d.ts'
+export class WorkDoneProgressCancelParams extends JSONBase {
+    static create(paramtoken: Object): WorkDoneProgressCancelParams;
+    constructor(jsonData: JSONObject)
+    equals(obj: Object | null): boolean;
+    getToken(): Object;
+    hashCode(): number;
+    setToken(token: Object): WorkDoneProgressCancelParams;
+}

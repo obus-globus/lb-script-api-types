@@ -1,0 +1,9 @@
+import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
+import type { Serializable } from '../../../../java/io/Serializable.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
+export class ImmutableRangeSet$SerializedForm<C extends Comparable<Object>> extends Object implements Serializable {
+    constructor(ranges: Range<C>[])
+    // private ranges: Range<C>[];
+    readResolve(): Object;
+}

@@ -1,0 +1,38 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export interface DoubleBooleanPair extends Pair<number, boolean>, Object{
+    first<L extends Object | number | string | boolean>(): L;
+    first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    first(): number;
+    first(arg0: number): DoubleBooleanPair;
+    first(arg0: number): DoubleBooleanPair;
+    firstDouble(): number;
+    key<L extends Object | number | string | boolean>(): L;
+    key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    key(): number;
+    key(arg0: number): DoubleBooleanPair;
+    key(arg0: number): DoubleBooleanPair;
+    keyDouble(): number;
+    left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    left(): number;
+    left(arg0: number): DoubleBooleanPair;
+    left(arg0: number): DoubleBooleanPair;
+    leftDouble(): number;
+    right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    right(): boolean;
+    right(arg0: boolean): DoubleBooleanPair;
+    right(arg0: boolean): DoubleBooleanPair;
+    rightBoolean(): boolean;
+    second<R extends Object | number | string | boolean>(): R;
+    second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    second(): boolean;
+    second(arg0: boolean): DoubleBooleanPair;
+    second(arg0: boolean): DoubleBooleanPair;
+    secondBoolean(): boolean;
+    value<R extends Object | number | string | boolean>(): R;
+    value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    value(): boolean;
+    value(arg0: boolean): DoubleBooleanPair;
+    value(arg0: boolean): DoubleBooleanPair;
+    valueBoolean(): boolean;
+}

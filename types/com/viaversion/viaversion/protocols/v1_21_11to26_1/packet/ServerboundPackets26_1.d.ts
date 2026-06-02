@@ -1,0 +1,82 @@
+import type { ServerboundPacket26_1 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_11to26_1/packet/ServerboundPacket26_1.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
+export class ServerboundPackets26_1 extends Enum<ServerboundPackets26_1> implements ServerboundPacket26_1 {
+    static ACCEPT_TELEPORTATION: ServerboundPackets26_1;
+    static ATTACK: ServerboundPackets26_1;
+    static BLOCK_ENTITY_TAG_QUERY: ServerboundPackets26_1;
+    static BUNDLE_ITEM_SELECTED: ServerboundPackets26_1;
+    static CHANGE_DIFFICULTY: ServerboundPackets26_1;
+    static CHANGE_GAME_MODE: ServerboundPackets26_1;
+    static CHAT: ServerboundPackets26_1;
+    static CHAT_ACK: ServerboundPackets26_1;
+    static CHAT_COMMAND: ServerboundPackets26_1;
+    static CHAT_COMMAND_SIGNED: ServerboundPackets26_1;
+    static CHAT_SESSION_UPDATE: ServerboundPackets26_1;
+    static CHUNK_BATCH_RECEIVED: ServerboundPackets26_1;
+    static CLIENT_COMMAND: ServerboundPackets26_1;
+    static CLIENT_INFORMATION: ServerboundPackets26_1;
+    static CLIENT_TICK_END: ServerboundPackets26_1;
+    static COMMAND_SUGGESTION: ServerboundPackets26_1;
+    static CONFIGURATION_ACKNOWLEDGED: ServerboundPackets26_1;
+    static CONTAINER_BUTTON_CLICK: ServerboundPackets26_1;
+    static CONTAINER_CLICK: ServerboundPackets26_1;
+    static CONTAINER_CLOSE: ServerboundPackets26_1;
+    static CONTAINER_SLOT_STATE_CHANGED: ServerboundPackets26_1;
+    static COOKIE_RESPONSE: ServerboundPackets26_1;
+    static CUSTOM_CLICK_ACTION: ServerboundPackets26_1;
+    static CUSTOM_PAYLOAD: ServerboundPackets26_1;
+    static DEBUG_SAMPLE_SUBSCRIPTION: ServerboundPackets26_1;
+    static EDIT_BOOK: ServerboundPackets26_1;
+    static ENTITY_TAG_QUERY: ServerboundPackets26_1;
+    static INTERACT: ServerboundPackets26_1;
+    static JIGSAW_GENERATE: ServerboundPackets26_1;
+    static KEEP_ALIVE: ServerboundPackets26_1;
+    static LOCK_DIFFICULTY: ServerboundPackets26_1;
+    static MOVE_PLAYER_POS: ServerboundPackets26_1;
+    static MOVE_PLAYER_POS_ROT: ServerboundPackets26_1;
+    static MOVE_PLAYER_ROT: ServerboundPackets26_1;
+    static MOVE_PLAYER_STATUS_ONLY: ServerboundPackets26_1;
+    static MOVE_VEHICLE: ServerboundPackets26_1;
+    static PADDLE_BOAT: ServerboundPackets26_1;
+    static PICK_ITEM_FROM_BLOCK: ServerboundPackets26_1;
+    static PICK_ITEM_FROM_ENTITY: ServerboundPackets26_1;
+    static PING_REQUEST: ServerboundPackets26_1;
+    static PLACE_RECIPE: ServerboundPackets26_1;
+    static PLAYER_ABILITIES: ServerboundPackets26_1;
+    static PLAYER_ACTION: ServerboundPackets26_1;
+    static PLAYER_COMMAND: ServerboundPackets26_1;
+    static PLAYER_INPUT: ServerboundPackets26_1;
+    static PLAYER_LOADED: ServerboundPackets26_1;
+    static PONG: ServerboundPackets26_1;
+    static RECIPE_BOOK_CHANGE_SETTINGS: ServerboundPackets26_1;
+    static RECIPE_BOOK_SEEN_RECIPE: ServerboundPackets26_1;
+    static RENAME_ITEM: ServerboundPackets26_1;
+    static RESOURCE_PACK: ServerboundPackets26_1;
+    static SEEN_ADVANCEMENTS: ServerboundPackets26_1;
+    static SELECT_TRADE: ServerboundPackets26_1;
+    static SET_BEACON: ServerboundPackets26_1;
+    static SET_CARRIED_ITEM: ServerboundPackets26_1;
+    static SET_COMMAND_BLOCK: ServerboundPackets26_1;
+    static SET_COMMAND_MINECART: ServerboundPackets26_1;
+    static SET_CREATIVE_MODE_SLOT: ServerboundPackets26_1;
+    static SET_GAME_RULE: ServerboundPackets26_1;
+    static SET_JIGSAW_BLOCK: ServerboundPackets26_1;
+    static SET_STRUCTURE_BLOCK: ServerboundPackets26_1;
+    static SET_TEST_BLOCK: ServerboundPackets26_1;
+    static SIGN_UPDATE: ServerboundPackets26_1;
+    static SPECTATE_ENTITY: ServerboundPackets26_1;
+    static SWING: ServerboundPackets26_1;
+    static TELEPORT_TO_ENTITY: ServerboundPackets26_1;
+    static TEST_INSTANCE_BLOCK_ACTION: ServerboundPackets26_1;
+    static USE_ITEM: ServerboundPackets26_1;
+    static USE_ITEM_ON: ServerboundPackets26_1;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): ServerboundPackets26_1;
+    static values(): (Object | null)[];
+    private constructor()
+    getId(): number;
+    getName(): string;
+    name(): "ACCEPT_TELEPORTATION" | "ATTACK" | "BLOCK_ENTITY_TAG_QUERY" | "BUNDLE_ITEM_SELECTED" | "CHANGE_DIFFICULTY" | "CHANGE_GAME_MODE" | "CHAT_ACK" | "CHAT_COMMAND" | "CHAT_COMMAND_SIGNED" | "CHAT" | "CHAT_SESSION_UPDATE" | "CHUNK_BATCH_RECEIVED" | "CLIENT_COMMAND" | "CLIENT_TICK_END" | "CLIENT_INFORMATION" | "COMMAND_SUGGESTION" | "CONFIGURATION_ACKNOWLEDGED" | "CONTAINER_BUTTON_CLICK" | "CONTAINER_CLICK" | "CONTAINER_CLOSE" | "CONTAINER_SLOT_STATE_CHANGED" | "COOKIE_RESPONSE" | "CUSTOM_PAYLOAD" | "DEBUG_SAMPLE_SUBSCRIPTION" | "EDIT_BOOK" | "ENTITY_TAG_QUERY" | "INTERACT" | "JIGSAW_GENERATE" | "KEEP_ALIVE" | "LOCK_DIFFICULTY" | "MOVE_PLAYER_POS" | "MOVE_PLAYER_POS_ROT" | "MOVE_PLAYER_ROT" | "MOVE_PLAYER_STATUS_ONLY" | "MOVE_VEHICLE" | "PADDLE_BOAT" | "PICK_ITEM_FROM_BLOCK" | "PICK_ITEM_FROM_ENTITY" | "PING_REQUEST" | "PLACE_RECIPE" | "PLAYER_ABILITIES" | "PLAYER_ACTION" | "PLAYER_COMMAND" | "PLAYER_INPUT" | "PLAYER_LOADED" | "PONG" | "RECIPE_BOOK_CHANGE_SETTINGS" | "RECIPE_BOOK_SEEN_RECIPE" | "RENAME_ITEM" | "RESOURCE_PACK" | "SEEN_ADVANCEMENTS" | "SELECT_TRADE" | "SET_BEACON" | "SET_CARRIED_ITEM" | "SET_COMMAND_BLOCK" | "SET_COMMAND_MINECART" | "SET_CREATIVE_MODE_SLOT" | "SET_GAME_RULE" | "SET_JIGSAW_BLOCK" | "SET_STRUCTURE_BLOCK" | "SET_TEST_BLOCK" | "SIGN_UPDATE" | "SPECTATE_ENTITY" | "SWING" | "TELEPORT_TO_ENTITY" | "TEST_INSTANCE_BLOCK_ACTION" | "USE_ITEM_ON" | "USE_ITEM" | "CUSTOM_CLICK_ACTION";
+}

@@ -1,0 +1,36 @@
+import type { LayoutType } from '../../../../ai/djl/ndarray/types/LayoutType.d.ts'
+import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
+import type { AbstractBlock } from '../../../../ai/djl/nn/AbstractBlock.d.ts'
+import type { Parameter } from '../../../../ai/djl/nn/Parameter.d.ts'
+import type { Convolution$ConvolutionBuilder } from '../../../../ai/djl/nn/convolutional/Convolution$ConvolutionBuilder.d.ts'
+import type { ParameterStore } from '../../../../ai/djl/training/ParameterStore.d.ts'
+import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
+import type { DataInputStream } from '../../../../java/io/DataInputStream.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export abstract class Convolution extends AbstractBlock {
+    constructor(arg0: Convolution$ConvolutionBuilder<Object>)
+    // private bias: Parameter;
+    dilation: Shape;
+    filters: number;
+    groups: number;
+    includeBias: boolean;
+    kernelShape: Shape;
+    padding: Shape;
+    stride: Shape;
+    // private weight: Parameter;
+    beforeInitialize(arg0: Shape[]): void;
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
+    getDilation(): Shape;
+    getExpectedLayout(): LayoutType[];
+    getFilters(): number;
+    getGroups(): number;
+    getKernelShape(): Shape;
+    getOutputShapes(arg0: Shape[]): Shape[];
+    getPadding(): Shape;
+    getStride(): Shape;
+    getStringLayout(): string;
+    isIncludeBias(): boolean;
+    loadMetadata(arg0: number, arg1: DataInputStream): void;
+    numDimensions(): number;
+    prepare(arg0: Shape[]): void;
+}

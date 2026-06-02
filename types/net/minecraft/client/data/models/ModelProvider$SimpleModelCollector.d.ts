@@ -1,0 +1,14 @@
+import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
+import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ModelInstance } from '../../../../../net/minecraft/client/data/models/model/ModelInstance.d.ts'
+import type { CachedOutput } from '../../../../../net/minecraft/data/CachedOutput.d.ts'
+import type { PackOutput$PathProvider } from '../../../../../net/minecraft/data/PackOutput$PathProvider.d.ts'
+import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
+export class ModelProvider$SimpleModelCollector extends Object implements BiConsumer<Identifier, ModelInstance> {
+    private constructor()
+    // private models: Map<Identifier, ModelInstance>;
+    accept(id: Identifier, contents: ModelInstance): void;
+    andThen(arg0: (param0: T, param1: U) => void): (param0: T, param1: U) => void;
+    save(cache: CachedOutput, pathProvider: PackOutput$PathProvider): CompletableFuture<Object>;
+}

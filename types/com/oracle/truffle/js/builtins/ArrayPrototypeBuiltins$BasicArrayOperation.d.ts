@@ -1,0 +1,43 @@
+import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { BranchProfile } from '../../../../../com/oracle/truffle/api/profiles/BranchProfile.d.ts'
+import type { ArrayPrototypeBuiltins$ArraySpeciesConstructorNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$ArraySpeciesConstructorNode.d.ts'
+import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSGetLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSGetLengthNode.d.ts'
+import type { TypedArrayLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/TypedArrayLengthNode.d.ts'
+import type { JSToObjectNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToObjectNode.d.ts'
+import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { IsCallableNode } from '../../../../../com/oracle/truffle/js/nodes/unary/IsCallableNode.d.ts'
+import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSTypedArrayObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export abstract class ArrayPrototypeBuiltins$BasicArrayOperation extends JSBuiltinNode {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    constructor(context: JSContext, builtin: JSBuiltin)
+    constructor(context: JSContext, builtin: JSBuiltin, isTypedArrayImplementation: boolean)
+    // private arraySpeciesCreateNode: ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
+    // private errorBranch: BranchProfile;
+    // private getLengthNode: JSGetLengthNode;
+    // private isCallableNode: IsCallableNode;
+    // private isTypedArrayImplementation: boolean;
+    // private toObjectNode: JSToObjectNode;
+    // private typedArrayLengthNode: TypedArrayLengthNode;
+    checkCallbackIsFunction(callback: Object): Object;
+    checkOutOfBounds(view: JSTypedArrayObject): void;
+    getArraySpeciesConstructorNode(): ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
+    getLength(thisObject: Object): number;
+    isCallable(callback: Object): boolean;
+    reportLoopCount(count: number): void;
+    toObject(target: Object): Object;
+    toObjectOrValidateTypedArray(thisObj: Object): Object;
+    validateTypedArray(obj: Object): JSTypedArrayObject;
+}

@@ -1,0 +1,26 @@
+import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
+import type { StructuredDataContainer } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataContainer.d.ts'
+import type { HashedItem } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/HashedItem.d.ts'
+import type { Item } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
+import type { StructuredItem } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/StructuredItem.d.ts'
+import type { PacketWrapper } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
+import type { Protocol1_21_4To1_21_5 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_4to1_21_5/Protocol1_21_4To1_21_5.d.ts'
+import type { ServerboundPacket1_21_5 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_4to1_21_5/packet/ServerboundPacket1_21_5.d.ts'
+import type { ClientboundPacket1_21_2 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/packet/ClientboundPacket1_21_2.d.ts'
+import type { StructuredItemRewriter } from '../../../../../../com/viaversion/viaversion/rewriter/StructuredItemRewriter.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class BlockItemPacketRewriter1_21_5 extends StructuredItemRewriter<ClientboundPacket1_21_2, ServerboundPacket1_21_5, Protocol1_21_4To1_21_5> {
+    static HIDE_ADDITIONAL_KEYS: (Object | null)[];
+    static MARKER_KEY: string;
+    static NEW_DATA_TO_REMOVE: (Object | null)[];
+    static downgradeItemData(paramarg0: Item): void;
+    static updateItemData(paramarg0: Item): void;
+    constructor(arg0: Protocol1_21_4To1_21_5)
+    // private appendItemDataFixComponents(arg0: UserConnection, arg1: Item): void;
+    // private convertClientAsset(arg0: PacketWrapper): void;
+    // private convertHashedItemToStructuredItem(arg0: UserConnection, arg1: HashedItem): StructuredItem;
+    handleItemDataComponentsToServer(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;
+    handleItemToClient(arg0: UserConnection, arg1: Item): Item;
+    // private heightmapType(arg0: string): number;
+    registerPackets(): void;
+}

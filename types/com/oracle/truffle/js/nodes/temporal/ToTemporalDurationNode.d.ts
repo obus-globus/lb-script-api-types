@@ -1,0 +1,13 @@
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
+import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
+import type { ToTemporalDurationRecordNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/ToTemporalDurationRecordNode.d.ts'
+import type { JSTemporalDurationObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/JSTemporalDurationObject.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export abstract class ToTemporalDurationNode extends JavaScriptBaseNode {
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    constructor()
+    execute(item: Object): JSTemporalDurationObject;
+    toTemporalDuration(item: Object, toTemporalDurationRecord: ToTemporalDurationRecordNode, errorBranch: InlinedBranchProfile): JSTemporalDurationObject;
+}

@@ -1,0 +1,75 @@
+import type { Freezable } from '../../../../com/ibm/icu/util/Freezable.d.ts'
+import type { TimeZone$SystemTimeZoneType } from '../../../../com/ibm/icu/util/TimeZone$SystemTimeZoneType.d.ts'
+import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
+import type { Serializable } from '../../../../java/io/Serializable.d.ts'
+import type { Date } from '../../../../java/util/Date.d.ts'
+import type { Locale } from '../../../../java/util/Locale.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export abstract class TimeZone extends Object implements Freezable<TimeZone>, Serializable, Cloneable {
+    static GENERIC_LOCATION: number;
+    static GMT_ZONE: TimeZone;
+    static LONG: number;
+    static LONG_GENERIC: number;
+    static LONG_GMT: number;
+    static SHORT: number;
+    static SHORT_COMMONLY_USED: number;
+    static SHORT_GENERIC: number;
+    static SHORT_GMT: number;
+    static TIMEZONE_ICU: number;
+    static TIMEZONE_JDK: number;
+    static UNKNOWN_ZONE: TimeZone;
+    static UNKNOWN_ZONE_ID: string;
+    static countEquivalentIDs(paramarg0: string): number;
+    static forLocaleOrDefault(paramarg0: Locale): TimeZone;
+    static forULocaleOrDefault(paramarg0: ULocale): TimeZone;
+    static getAvailableIDs(): (Object | null)[];
+    static getAvailableIDs(paramarg0: number): (Object | null)[];
+    static getAvailableIDs(paramarg0: string): (Object | null)[];
+    static getAvailableIDs(paramarg0: TimeZone$SystemTimeZoneType, paramarg1: string, paramarg2: number): string[];
+    static getCanonicalID(paramarg0: string): string;
+    static getCanonicalID(paramarg0: string, paramarg1: (Object | null)[]): string;
+    static getDefault(): TimeZone;
+    static getDefaultTimeZoneType(): number;
+    static getEquivalentID(paramarg0: string, paramarg1: number): string;
+    static getFrozenTimeZone(paramarg0: string): TimeZone;
+    static getIDForWindowsID(paramarg0: string, paramarg1: string): string;
+    static getIanaID(paramarg0: string): string;
+    static getRegion(paramarg0: string): string;
+    static getTZDataVersion(): string;
+    static getTimeZone(paramarg0: string): TimeZone;
+    static getTimeZone(paramarg0: string, paramarg1: number): TimeZone;
+    static getWindowsID(paramarg0: string): string;
+    static setDefault(paramarg0: TimeZone): void;
+    static setDefaultTimeZoneType(paramarg0: number): void;
+    static setICUDefault(paramarg0: TimeZone): void;
+    constructor()
+    constructor(arg0: string)
+    readonly ID: string;
+    // private _getDisplayName(arg0: number, arg1: boolean, arg2: ULocale): string;
+    clone(): Object;
+    protected clone(): Object;
+    cloneAsThawed(): TimeZone;
+    equals(arg0: Object | null): boolean;
+    freeze(): TimeZone;
+    getDSTSavings(): number;
+    getDisplayName(): string;
+    getDisplayName(arg0: ULocale): string;
+    getDisplayName(arg0: Locale): string;
+    getDisplayName(arg0: boolean, arg1: number): string;
+    getDisplayName(arg0: boolean, arg1: number, arg2: ULocale): string;
+    getDisplayName(arg0: boolean, arg1: number, arg2: Locale): string;
+    getID(): string;
+    getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
+    getOffset(arg0: number): number;
+    getOffset(arg0: number, arg1: boolean, arg2: number[]): void;
+    getRawOffset(): number;
+    hasSameRules(arg0: TimeZone): boolean;
+    hashCode(): number;
+    inDaylightTime(arg0: Date): boolean;
+    isFrozen(): boolean;
+    observesDaylightTime(): boolean;
+    setID(arg0: string): void;
+    setRawOffset(arg0: number): void;
+    useDaylightTime(): boolean;
+}

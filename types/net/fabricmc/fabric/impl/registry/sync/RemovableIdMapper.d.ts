@@ -1,0 +1,8 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export interface RemovableIdMapper<T extends Object | number | string | boolean> extends Object{
+    fabric_clear(): void;
+    fabric_remapId(arg0: number, arg1: number): void;
+    fabric_remapIds(arg0: Int2IntMap): void;
+    fabric_remove(arg0: T): void;
+    fabric_removeId(arg0: number): void;
+}

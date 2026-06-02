@@ -1,0 +1,44 @@
+import type { LocalTime } from '../../../java/time/LocalTime.d.ts'
+import type { ChronoLocalDateTime } from '../../../java/time/chrono/ChronoLocalDateTime.d.ts'
+import type { ChronoPeriod } from '../../../java/time/chrono/ChronoPeriod.d.ts'
+import type { Chronology } from '../../../java/time/chrono/Chronology.d.ts'
+import type { Era } from '../../../java/time/chrono/Era.d.ts'
+import type { DateTimeFormatter } from '../../../java/time/format/DateTimeFormatter.d.ts'
+import type { Temporal } from '../../../java/time/temporal/Temporal.d.ts'
+import type { TemporalAdjuster } from '../../../java/time/temporal/TemporalAdjuster.d.ts'
+import type { TemporalAmount } from '../../../java/time/temporal/TemporalAmount.d.ts'
+import type { TemporalField } from '../../../java/time/temporal/TemporalField.d.ts'
+import type { TemporalQuery } from '../../../java/time/temporal/TemporalQuery.d.ts'
+import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../java/lang/Comparable.d.ts'
+export interface ChronoLocalDate extends Temporal, TemporalAdjuster, Object, Comparable<ChronoLocalDate>{
+    adjustInto(arg0: Temporal): Temporal;
+    atTime(arg0: LocalTime): ChronoLocalDateTime<Object>;
+    compareTo(arg0: ChronoLocalDate): number;
+    format(arg0: DateTimeFormatter): string;
+    getChronology(): Chronology;
+    getEra(): Era;
+    isAfter(arg0: ChronoLocalDate): boolean;
+    isBefore(arg0: ChronoLocalDate): boolean;
+    isEqual(arg0: ChronoLocalDate): boolean;
+    isLeapYear(): boolean;
+    isSupported(arg0: TemporalField): boolean;
+    isSupported(arg0: TemporalUnit): boolean;
+    lengthOfMonth(): number;
+    lengthOfYear(): number;
+    minus(arg0: TemporalAmount): ChronoLocalDate;
+    minus(arg0: number, arg1: TemporalUnit): ChronoLocalDate;
+    minus(arg0: TemporalAmount): Temporal;
+    minus(arg0: number, arg1: TemporalUnit): Temporal;
+    plus(arg0: TemporalAmount): ChronoLocalDate;
+    plus(arg0: number, arg1: TemporalUnit): ChronoLocalDate;
+    plus(arg0: TemporalAmount): Temporal;
+    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    toEpochDay(): number;
+    until(arg0: ChronoLocalDate): ChronoPeriod;
+    until(arg0: Temporal, arg1: TemporalUnit): number;
+    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): ChronoLocalDate;
+    with(arg0: TemporalField, arg1: number): ChronoLocalDate;
+    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+}

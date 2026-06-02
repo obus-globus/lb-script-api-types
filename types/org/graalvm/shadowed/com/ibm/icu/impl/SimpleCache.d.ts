@@ -1,0 +1,17 @@
+import type { Reference } from '../../../../../../../java/lang/ref/Reference.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { ICUCache } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUCache.d.ts'
+export class SimpleCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements ICUCache<K, V> {
+    static NULL: Object;
+    static SOFT: number;
+    static WEAK: number;
+    constructor()
+    constructor(cacheType: number)
+    constructor(cacheType: number, initialCapacity: number)
+    // private cacheRef: Reference<Map<K, V>>;
+    // private capacity: number;
+    // private type: number;
+    clear(): void;
+    get(key: Object): V;
+    put(key: K, value: V): void;
+}

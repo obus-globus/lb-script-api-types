@@ -1,0 +1,21 @@
+import type { LocalCache$ValueReference } from '../../../../com/google/common/cache/LocalCache$ValueReference.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export interface ReferenceEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
+    getAccessTime(): number;
+    getHash(): number;
+    getKey(): K;
+    getNext(): ReferenceEntry<K, V>;
+    getNextInAccessQueue(): ReferenceEntry<K, V>;
+    getNextInWriteQueue(): ReferenceEntry<K, V>;
+    getPreviousInAccessQueue(): ReferenceEntry<K, V>;
+    getPreviousInWriteQueue(): ReferenceEntry<K, V>;
+    getValueReference(): LocalCache$ValueReference<K, V>;
+    getWriteTime(): number;
+    setAccessTime(time: number): void;
+    setNextInAccessQueue(next: ReferenceEntry<K, V>): void;
+    setNextInWriteQueue(next: ReferenceEntry<K, V>): void;
+    setPreviousInAccessQueue(previous: ReferenceEntry<K, V>): void;
+    setPreviousInWriteQueue(previous: ReferenceEntry<K, V>): void;
+    setValueReference(valueReference: LocalCache$ValueReference<K, V>): void;
+    setWriteTime(time: number): void;
+}

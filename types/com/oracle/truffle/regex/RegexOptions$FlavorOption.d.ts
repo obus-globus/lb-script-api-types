@@ -1,0 +1,17 @@
+import type { RegexFlavor } from '../../../../com/oracle/truffle/regex/tregex/parser/RegexFlavor.d.ts'
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+export class RegexOptions$FlavorOption extends Enum<RegexOptions$FlavorOption> {
+    static ECMAScript: RegexOptions$FlavorOption;
+    static JavaUtilPattern: RegexOptions$FlavorOption;
+    static OracleDB: RegexOptions$FlavorOption;
+    static Python: RegexOptions$FlavorOption;
+    static Ruby: RegexOptions$FlavorOption;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramname: string): RegexOptions$FlavorOption;
+    static values(): (Object | null)[];
+    private constructor()
+    get(): RegexFlavor;
+    name(): "ECMAScript" | "Python" | "Ruby" | "OracleDB" | "JavaUtilPattern";
+}

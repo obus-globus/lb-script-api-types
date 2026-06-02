@@ -1,0 +1,33 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Value } from '../../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
+import type { Mode } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
+import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
+import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { Event } from '../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
+import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
+export class ScriptMode extends Mode {
+    static Companion: Tagged$Companion;
+    constructor(choiceObject: { [key: string]: Object }, parent: ModeValueGroup<Mode>)
+    // private _values: { [key: string]: Value<Object> };
+    // private events: { [key: string]: Value };
+    readonly parent: ModeValueGroup<Mode>;
+    /**
+     * Allows the user to access values by typing module.settings.<valuename>
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt:37}
+     */
+    readonly settings: { [key: string]: Value<Object> };
+    // private callEvent(event: string, payload: Event | null): void;
+    disable(): void;
+    enable(): void;
+    // private hookHandler(eventName: string): void;
+    /**
+     * Called from inside the script to register a new event handler.
+     *
+     * @param eventName Name of the event.
+     * @param handler JavaScript function used to handle the event.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt:52}
+     */
+    on(eventName: string, handler: Value): void;
+}

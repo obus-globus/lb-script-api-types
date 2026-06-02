@@ -1,0 +1,9 @@
+import type { BranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/BranchProfile.d.ts'
+import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { PropertyProxy } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyProxy.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class JSFunction$FunctionLengthPropertyProxy extends PropertyProxy {
+    static getProfiled(paramstore: JSDynamicObject, paramisBoundBranch: BranchProfile): number;
+    constructor()
+    get(store: JSDynamicObject): Object;
+}

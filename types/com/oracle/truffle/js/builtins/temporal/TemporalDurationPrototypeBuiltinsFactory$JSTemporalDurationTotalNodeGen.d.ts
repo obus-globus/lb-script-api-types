@@ -1,0 +1,46 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { TruffleString$EqualNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$EqualNode.d.ts'
+import type { TemporalDurationPrototypeBuiltins$JSTemporalDurationTotal } from '../../../../../../com/oracle/truffle/js/builtins/temporal/TemporalDurationPrototypeBuiltins$JSTemporalDurationTotal.d.ts'
+import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { DifferencePlainDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferencePlainDateTimeWithRoundingNode.d.ts'
+import type { DifferenceZonedDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithRoundingNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
+import type { TemporalAddDateNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddDateNode.d.ts'
+import type { TemporalAddZonedDateTimeNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddZonedDateTimeNode.d.ts'
+import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
+import type { ToRelativeTemporalObjectNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/ToRelativeTemporalObjectNode.d.ts'
+import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { TemporalUtil$RoundingMode } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$RoundingMode.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class TemporalDurationPrototypeBuiltinsFactory$JSTemporalDurationTotalNodeGen extends TemporalDurationPrototypeBuiltins$JSTemporalDurationTotal {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramarguments: (Object | null)[]): TemporalDurationPrototypeBuiltins$JSTemporalDurationTotal;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static toTemporalRoundingMode(paramoptions: JSDynamicObject, paramfallback: TruffleString, paramequalNode: TruffleString$EqualNode, paramgetOptionNode: TemporalGetOptionNode): TemporalUtil$RoundingMode;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
+    // private arguments0_: JavaScriptNode;
+    // private arguments1_: JavaScriptNode;
+    // private state_0_: number;
+    // private total_addDate_: TemporalAddDateNode;
+    // private total_addZonedDateTimeNode_: TemporalAddZonedDateTimeNode;
+    // private total_differencePlainDateTimeWithRounding_: DifferencePlainDateTimeWithRoundingNode;
+    // private total_differenceZonedDateTimeWithRounding_: DifferenceZonedDateTimeWithRoundingNode;
+    // private total_getTemporalUnit_: GetTemporalUnitNode;
+    // private total_toRelativeTemporalObjectNode_: ToRelativeTemporalObjectNode;
+    execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;
+    getArguments(): JavaScriptNode[];
+}

@@ -1,0 +1,11 @@
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
+import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
+import type { DescriptorSchemaCache$Key } from '../../../../kotlinx/serialization/json/internal/DescriptorSchemaCache$Key.d.ts'
+export class DescriptorSchemaCache extends Object {
+    constructor()
+    // private map: Map<SerialDescriptor, Map<DescriptorSchemaCache$Key<Object>, Object>>;
+    get<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>): T | null;
+    getOrPut<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>, defaultValue: Function0<T>): T;
+    set<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>, value: T): void;
+}

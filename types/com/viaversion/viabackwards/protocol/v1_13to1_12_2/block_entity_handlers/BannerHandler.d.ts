@@ -1,0 +1,8 @@
+import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
+import type { BackwardsBlockEntityProvider$BackwardsBlockEntityHandler } from '../../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/provider/BackwardsBlockEntityProvider$BackwardsBlockEntityHandler.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
+export class BannerHandler extends Object implements BackwardsBlockEntityProvider$BackwardsBlockEntityHandler {
+    constructor()
+    transform(arg0: number, arg1: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
+}

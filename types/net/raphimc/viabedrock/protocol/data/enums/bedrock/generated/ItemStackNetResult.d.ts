@@ -1,0 +1,85 @@
+import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
+export class ItemStackNetResult extends Enum<ItemStackNetResult> {
+    static ActionRequestNotAllowed: ItemStackNetResult;
+    static CannotConsumeItem: ItemStackNetResult;
+    static CannotDestroyItem: ItemStackNetResult;
+    static CannotDropItem: ItemStackNetResult;
+    static CannotPlaceItem: ItemStackNetResult;
+    static CannotRemoveItem: ItemStackNetResult;
+    static CannotSwapItem: ItemStackNetResult;
+    static ConsumedItemNotAllowed: ItemStackNetResult;
+    static ConsumedItemOutOfAllowedSlotRange: ItemStackNetResult;
+    static ConsumedTooMuchFromSlot: ItemStackNetResult;
+    static DstContainerAndSlotEqualToSrcContainerAndSlot: ItemStackNetResult;
+    static DstContainerEqualToCreatedOutputContainer: ItemStackNetResult;
+    static EmptyCraftResults: ItemStackNetResult;
+    static Error: ItemStackNetResult;
+    static ExpectedAnywhereItemNotFullyConsumed: ItemStackNetResult;
+    static ExpectedItemSlotNotFullyConsumed: ItemStackNetResult;
+    static FailedToCraftCreative: ItemStackNetResult;
+    static FailedToEnchant: ItemStackNetResult;
+    static FailedToFindRecipeByNetId: ItemStackNetResult;
+    static FailedToGetLevelRecipe: ItemStackNetResult;
+    static FailedToInitSparseContainer: ItemStackNetResult;
+    static FailedToMatchExpectedAllowedAnywhereConsumedItem: ItemStackNetResult;
+    static FailedToMatchExpectedSlotConsumedItem: ItemStackNetResult;
+    static FailedToSetCreatedItemOutputSlot: ItemStackNetResult;
+    static FailedToValidateDstSlot: ItemStackNetResult;
+    static FailedToValidateSrcSlot: ItemStackNetResult;
+    static InsufficientPlayerLevelToEnchant: ItemStackNetResult;
+    static InvalidAdjustedAmount: ItemStackNetResult;
+    static InvalidCraftRequest: ItemStackNetResult;
+    static InvalidCraftRequestScreen: ItemStackNetResult;
+    static InvalidCraftResult: ItemStackNetResult;
+    static InvalidCraftResultIndex: ItemStackNetResult;
+    static InvalidCraftResultItem: ItemStackNetResult;
+    static InvalidCraftResultStackSize: ItemStackNetResult;
+    static InvalidExperimentalRecipeRequest: ItemStackNetResult;
+    static InvalidItemNetId: ItemStackNetResult;
+    static InvalidItemSetType: ItemStackNetResult;
+    static InvalidNumCrafts: ItemStackNetResult;
+    static InvalidRegion: ItemStackNetResult;
+    static InvalidRemovedAmount: ItemStackNetResult;
+    static InvalidRequestActionType: ItemStackNetResult;
+    static InvalidRequestCraftActionType: ItemStackNetResult;
+    static InvalidSourceContainer: ItemStackNetResult;
+    static InvalidTransferAmount: ItemStackNetResult;
+    static ItemAlreadyConsumedFromSlot: ItemStackNetResult;
+    static ItemNotConsumed: ItemStackNetResult;
+    static ItemRequestActionHandlerCommitFailed: ItemStackNetResult;
+    static MismatchSlotExpectedConsumedItem: ItemStackNetResult;
+    static MismatchSlotExpectedConsumedItemNetIdVariant: ItemStackNetResult;
+    static MismatchedCraftingSize: ItemStackNetResult;
+    static MismatchedRecipeForInputGridItems: ItemStackNetResult;
+    static MissingActor: ItemStackNetResult;
+    static MissingCreatedOutputContainer: ItemStackNetResult;
+    static MissingInputItem: ItemStackNetResult;
+    static MissingInputSparseContainer: ItemStackNetResult;
+    static MissingMaterialItem: ItemStackNetResult;
+    static PlayerNotInCreativeMode: ItemStackNetResult;
+    static PrimaryEffectOutOfRange: ItemStackNetResult;
+    static PrimaryEffectUnavailable: ItemStackNetResult;
+    static RequestAlreadyInProgress: ItemStackNetResult;
+    static ResultTransferFailed: ItemStackNetResult;
+    static ScreenHandlerEndRequestFailed: ItemStackNetResult;
+    static ScreenStackError: ItemStackNetResult;
+    static SecondaryEffectOutOfRange: ItemStackNetResult;
+    static SecondaryEffectUnavailable: ItemStackNetResult;
+    static Success: ItemStackNetResult;
+    static UnhandledItemSetType: ItemStackNetResult;
+    static UnknownPrimaryEffect: ItemStackNetResult;
+    static getByName(paramarg0: string): ItemStackNetResult;
+    static getByName(paramarg0: string, paramarg1: ItemStackNetResult): ItemStackNetResult;
+    static getByValue(paramarg0: number): ItemStackNetResult;
+    static getByValue(paramarg0: number, paramarg1: ItemStackNetResult): ItemStackNetResult;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): ItemStackNetResult;
+    static values(): (Object | null)[];
+    private constructor(arg2: number)
+    private constructor(arg2: ItemStackNetResult)
+    readonly value: number;
+    getValue(): number;
+    name(): "Success" | "Error" | "InvalidRequestActionType" | "ActionRequestNotAllowed" | "ScreenHandlerEndRequestFailed" | "ItemRequestActionHandlerCommitFailed" | "InvalidRequestCraftActionType" | "InvalidCraftRequest" | "InvalidCraftRequestScreen" | "InvalidCraftResult" | "InvalidCraftResultIndex" | "InvalidCraftResultItem" | "InvalidItemNetId" | "MissingCreatedOutputContainer" | "FailedToSetCreatedItemOutputSlot" | "RequestAlreadyInProgress" | "FailedToInitSparseContainer" | "ResultTransferFailed" | "ExpectedItemSlotNotFullyConsumed" | "ExpectedAnywhereItemNotFullyConsumed" | "ItemAlreadyConsumedFromSlot" | "ConsumedTooMuchFromSlot" | "MismatchSlotExpectedConsumedItem" | "MismatchSlotExpectedConsumedItemNetIdVariant" | "FailedToMatchExpectedSlotConsumedItem" | "FailedToMatchExpectedAllowedAnywhereConsumedItem" | "ConsumedItemOutOfAllowedSlotRange" | "ConsumedItemNotAllowed" | "PlayerNotInCreativeMode" | "InvalidExperimentalRecipeRequest" | "FailedToCraftCreative" | "FailedToGetLevelRecipe" | "FailedToFindRecipeByNetId" | "MismatchedCraftingSize" | "MissingInputSparseContainer" | "MismatchedRecipeForInputGridItems" | "EmptyCraftResults" | "FailedToEnchant" | "MissingInputItem" | "InsufficientPlayerLevelToEnchant" | "MissingMaterialItem" | "MissingActor" | "UnknownPrimaryEffect" | "PrimaryEffectOutOfRange" | "PrimaryEffectUnavailable" | "SecondaryEffectOutOfRange" | "SecondaryEffectUnavailable" | "DstContainerEqualToCreatedOutputContainer" | "DstContainerAndSlotEqualToSrcContainerAndSlot" | "FailedToValidateSrcSlot" | "FailedToValidateDstSlot" | "InvalidAdjustedAmount" | "InvalidItemSetType" | "InvalidTransferAmount" | "CannotSwapItem" | "CannotPlaceItem" | "UnhandledItemSetType" | "InvalidRemovedAmount" | "InvalidRegion" | "CannotDropItem" | "CannotDestroyItem" | "InvalidSourceContainer" | "ItemNotConsumed" | "InvalidNumCrafts" | "InvalidCraftResultStackSize" | "CannotRemoveItem" | "CannotConsumeItem" | "ScreenStackError";
+}

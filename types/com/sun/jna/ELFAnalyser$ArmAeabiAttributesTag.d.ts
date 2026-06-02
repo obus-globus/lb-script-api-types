@@ -1,0 +1,60 @@
+import type { ELFAnalyser$ArmAeabiAttributesTag$ParameterType } from '../../../com/sun/jna/ELFAnalyser$ArmAeabiAttributesTag$ParameterType.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class ELFAnalyser$ArmAeabiAttributesTag extends Object {
+    static ABI_FP_16bit_format: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_FP_denormal: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_FP_exceptions: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_FP_number_model: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_FP_optimization_goals: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_FP_rounding: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_FP_user_exceptions: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_HardFP_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_PCS_GOT_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_PCS_R9_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_PCS_RO_data: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_PCS_RW_data: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_PCS_wchar_t: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_VFP_args: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_WMMX_args: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_align8_preserved: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_align_needed: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_enum_size: ELFAnalyser$ArmAeabiAttributesTag;
+    static ABI_optimization_goals: ELFAnalyser$ArmAeabiAttributesTag;
+    static ARM_ISA_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static Advanced_SIMD_arch: ELFAnalyser$ArmAeabiAttributesTag;
+    static CPU_arch: ELFAnalyser$ArmAeabiAttributesTag;
+    static CPU_arch_profile: ELFAnalyser$ArmAeabiAttributesTag;
+    static CPU_name: ELFAnalyser$ArmAeabiAttributesTag;
+    static CPU_raw_name: ELFAnalyser$ArmAeabiAttributesTag;
+    static CPU_unaligned_access: ELFAnalyser$ArmAeabiAttributesTag;
+    static DIV_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static FP_HP_extension: ELFAnalyser$ArmAeabiAttributesTag;
+    static FP_arch: ELFAnalyser$ArmAeabiAttributesTag;
+    static File: ELFAnalyser$ArmAeabiAttributesTag;
+    static MPextension_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static MPextension_use2: ELFAnalyser$ArmAeabiAttributesTag;
+    static PCS_config: ELFAnalyser$ArmAeabiAttributesTag;
+    static Section: ELFAnalyser$ArmAeabiAttributesTag;
+    static Symbol: ELFAnalyser$ArmAeabiAttributesTag;
+    static T2EE_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static THUMB_ISA_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static Virtualization_use: ELFAnalyser$ArmAeabiAttributesTag;
+    static WMMX_arch: ELFAnalyser$ArmAeabiAttributesTag;
+    static also_compatible_with: ELFAnalyser$ArmAeabiAttributesTag;
+    static compatibility: ELFAnalyser$ArmAeabiAttributesTag;
+    static conformance: ELFAnalyser$ArmAeabiAttributesTag;
+    static nodefaults: ELFAnalyser$ArmAeabiAttributesTag;
+    static getByName(paramarg0: string): ELFAnalyser$ArmAeabiAttributesTag;
+    static getByValue(paramarg0: number): ELFAnalyser$ArmAeabiAttributesTag;
+    static getTags(): ELFAnalyser$ArmAeabiAttributesTag[];
+    constructor(arg0: number, arg1: string, arg2: ELFAnalyser$ArmAeabiAttributesTag$ParameterType)
+    readonly name: string;
+    readonly parameterType: ELFAnalyser$ArmAeabiAttributesTag$ParameterType;
+    readonly value: number;
+    equals(arg0: Object | null): boolean;
+    getName(): string;
+    getParameterType(): ELFAnalyser$ArmAeabiAttributesTag$ParameterType;
+    getValue(): number;
+    hashCode(): number;
+    toString(): string;
+}

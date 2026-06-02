@@ -1,0 +1,51 @@
+import type { BaseImmutableMultimap } from '../../../../com/google/common/collect/BaseImmutableMultimap.d.ts'
+import type { ImmutableMultimap$Builder } from '../../../../com/google/common/collect/ImmutableMultimap$Builder.d.ts'
+import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
+import type { UnmodifiableIterator } from '../../../../com/google/common/collect/UnmodifiableIterator.d.ts'
+import type { Serializable } from '../../../../java/io/Serializable.d.ts'
+import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
+import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
+export abstract class ImmutableMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends BaseImmutableMultimap<K, V> implements Serializable {
+    static builder(): ImmutableMultimap$Builder<Object, Object>;
+    static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableMultimap$Builder<Object, Object>;
+    static copyOf(parammultimap: Multimap<Object, Object>): ImmutableMultimap<Object, Object>;
+    static copyOf(paramentries: (Object | null)[]): ImmutableMultimap<Object, Object>;
+    static of(): ImmutableMultimap<Object, Object>;
+    static of(paramk1: Object | null, paramv1: Object | null): ImmutableMultimap<Object, Object>;
+    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null): ImmutableMultimap<Object, Object>;
+    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null): ImmutableMultimap<Object, Object>;
+    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null): ImmutableMultimap<Object, Object>;
+    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null, paramk5: Object | null, paramv5: Object | null): ImmutableMultimap<Object, Object>;
+    constructor(map: Map<K, V[]>, size: number)
+    // private map: Map<K, V[]>;
+    // private size: number;
+    asMap(): Map<K, E[]>;
+    clear(): void;
+    containsKey(key: Object): boolean;
+    containsValue(value: Object): boolean;
+    createAsMap(): Map<K, E[]>;
+    createEntries(): Map$Entry<K, V>[];
+    createKeySet(): K[];
+    createKeys(): K[];
+    createValues(): V[];
+    entries(): Map$Entry<K, V>[];
+    entryIterator(): UnmodifiableIterator<Map$Entry<K, V>>;
+    entrySpliterator(): Spliterator<Map$Entry<K, V>>;
+    forEach(action: (param0: K, param1: V) => void): void;
+    get(key: K): V[];
+    inverse(): ImmutableMultimap<V, K>;
+    isPartialView(): boolean;
+    keySet(): K[];
+    keys(): K[];
+    put(key: K, value: V): boolean;
+    putAll(key: K, values: V[]): boolean;
+    putAll(multimap: Multimap<K, V>): boolean;
+    remove(key: Object, value: Object): boolean;
+    removeAll(key: Object): V[];
+    replaceValues(key: K, values: V[]): V[];
+    size(): number;
+    valueIterator(): UnmodifiableIterator<V>;
+    values(): V[];
+}

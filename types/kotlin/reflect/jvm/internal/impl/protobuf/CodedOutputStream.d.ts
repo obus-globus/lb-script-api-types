@@ -1,0 +1,94 @@
+import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { LazyFieldLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/LazyFieldLite.d.ts'
+import type { MessageLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/MessageLite.d.ts'
+export class CodedOutputStream extends Object {
+    static computeBoolSize(paramarg0: number, paramarg1: boolean): number;
+    static computeBoolSizeNoTag(paramarg0: boolean): number;
+    static computeByteArraySizeNoTag(paramarg0: number[]): number;
+    static computeBytesSize(paramarg0: number, paramarg1: number[]): number;
+    static computeBytesSizeNoTag(paramarg0: number[]): number;
+    static computeDoubleSize(paramarg0: number, paramarg1: number): number;
+    static computeDoubleSizeNoTag(paramarg0: number): number;
+    static computeEnumSize(paramarg0: number, paramarg1: number): number;
+    static computeEnumSizeNoTag(paramarg0: number): number;
+    static computeFixed32SizeNoTag(paramarg0: number): number;
+    static computeFixed64SizeNoTag(paramarg0: number): number;
+    static computeFloatSize(paramarg0: number, paramarg1: number): number;
+    static computeFloatSizeNoTag(paramarg0: number): number;
+    static computeGroupSizeNoTag(paramarg0: MessageLite): number;
+    static computeInt32Size(paramarg0: number, paramarg1: number): number;
+    static computeInt32SizeNoTag(paramarg0: number): number;
+    static computeInt64SizeNoTag(paramarg0: number): number;
+    static computeLazyFieldSizeNoTag(paramarg0: LazyFieldLite): number;
+    static computeMessageSize(paramarg0: number, paramarg1: MessageLite): number;
+    static computeMessageSizeNoTag(paramarg0: MessageLite): number;
+    static computeRawVarint32Size(paramarg0: number): number;
+    static computeRawVarint64Size(paramarg0: number): number;
+    static computeSFixed32SizeNoTag(paramarg0: number): number;
+    static computeSFixed64SizeNoTag(paramarg0: number): number;
+    static computeSInt32SizeNoTag(paramarg0: number): number;
+    static computeSInt64Size(paramarg0: number, paramarg1: number): number;
+    static computeSInt64SizeNoTag(paramarg0: number): number;
+    static computeStringSizeNoTag(paramarg0: string): number;
+    static computeTagSize(paramarg0: number): number;
+    static computeUInt32SizeNoTag(paramarg0: number): number;
+    static computeUInt64SizeNoTag(paramarg0: number): number;
+    static encodeZigZag32(paramarg0: number): number;
+    static encodeZigZag64(paramarg0: number): number;
+    static newInstance(paramarg0: number[]): CodedOutputStream;
+    static newInstance(paramarg0: number[], paramarg1: number, paramarg2: number): CodedOutputStream;
+    static newInstance(paramarg0: OutputStream, paramarg1: number): CodedOutputStream;
+    private constructor(arg0: OutputStream, arg1: number[])
+    private constructor(arg0: number[], arg1: number, arg2: number)
+    // private buffer: number[];
+    // private limit: number;
+    // private output: OutputStream;
+    // private position: number;
+    // private totalBytesWritten: number;
+    checkNoSpaceLeft(): void;
+    flush(): void;
+    // private refreshBuffer(): void;
+    spaceLeft(): number;
+    writeBool(arg0: number, arg1: boolean): void;
+    writeBoolNoTag(arg0: boolean): void;
+    writeByteArrayNoTag(arg0: number[]): void;
+    writeBytes(arg0: number, arg1: number[]): void;
+    writeBytesNoTag(arg0: number[]): void;
+    writeDouble(arg0: number, arg1: number): void;
+    writeDoubleNoTag(arg0: number): void;
+    writeEnum(arg0: number, arg1: number): void;
+    writeEnumNoTag(arg0: number): void;
+    writeFixed32NoTag(arg0: number): void;
+    writeFixed64NoTag(arg0: number): void;
+    writeFloat(arg0: number, arg1: number): void;
+    writeFloatNoTag(arg0: number): void;
+    writeGroup(arg0: number, arg1: MessageLite): void;
+    writeGroupNoTag(arg0: MessageLite): void;
+    writeInt32(arg0: number, arg1: number): void;
+    writeInt32NoTag(arg0: number): void;
+    writeInt64NoTag(arg0: number): void;
+    writeMessage(arg0: number, arg1: MessageLite): void;
+    writeMessageNoTag(arg0: MessageLite): void;
+    writeMessageSetExtension(arg0: number, arg1: MessageLite): void;
+    writeRawByte(arg0: number): void;
+    writeRawByte(arg0: number): void;
+    writeRawBytes(arg0: number[]): void;
+    writeRawBytes(arg0: number[], arg1: number, arg2: number): void;
+    writeRawBytes(arg0: number[]): void;
+    writeRawBytes(arg0: number[], arg1: number, arg2: number): void;
+    writeRawLittleEndian32(arg0: number): void;
+    writeRawLittleEndian64(arg0: number): void;
+    writeRawVarint32(arg0: number): void;
+    writeRawVarint64(arg0: number): void;
+    writeSFixed32NoTag(arg0: number): void;
+    writeSFixed64NoTag(arg0: number): void;
+    writeSInt32NoTag(arg0: number): void;
+    writeSInt64(arg0: number, arg1: number): void;
+    writeSInt64NoTag(arg0: number): void;
+    writeStringNoTag(arg0: string): void;
+    writeTag(arg0: number, arg1: number): void;
+    writeUInt32(arg0: number, arg1: number): void;
+    writeUInt32NoTag(arg0: number): void;
+    writeUInt64NoTag(arg0: number): void;
+}

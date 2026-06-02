@@ -1,0 +1,11 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { FishingRodHookedTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/FishingRodHookedTrigger$TriggerInstance.d.ts'
+import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/criterion/SimpleCriterionTrigger.d.ts'
+import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { FishingHook } from '../../../../net/minecraft/world/entity/projectile/FishingHook.d.ts'
+import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
+export class FishingRodHookedTrigger extends SimpleCriterionTrigger<FishingRodHookedTrigger$TriggerInstance> {
+    constructor()
+    codec(): Codec<FishingRodHookedTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, rod: ItemStack, hook: FishingHook, items: E[]): void;
+}

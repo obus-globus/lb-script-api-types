@@ -1,0 +1,14 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+export class StringTrieBuilder$State extends Enum<StringTrieBuilder$State> {
+    static ADDING: StringTrieBuilder$State;
+    static BUILDING_FAST: StringTrieBuilder$State;
+    static BUILDING_SMALL: StringTrieBuilder$State;
+    static BUILT: StringTrieBuilder$State;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): StringTrieBuilder$State;
+    static values(): (Object | null)[];
+    private constructor()
+    name(): "ADDING" | "BUILDING_FAST" | "BUILDING_SMALL" | "BUILT";
+}

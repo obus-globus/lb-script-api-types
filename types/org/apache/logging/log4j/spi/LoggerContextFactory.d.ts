@@ -1,0 +1,12 @@
+import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
+import type { URI } from '../../../../../java/net/URI.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { LoggerContext } from '../../../../../org/apache/logging/log4j/spi/LoggerContext.d.ts'
+export interface LoggerContextFactory extends Object{
+    getContext(fqcn: string, loader: ClassLoader, externalContext: Object, currentContext: boolean): LoggerContext;
+    getContext(fqcn: string, loader: ClassLoader, externalContext: Object, currentContext: boolean, configLocation: URI, name: string): LoggerContext;
+    hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
+    isClassLoaderDependent(): boolean;
+    removeContext(context: LoggerContext): void;
+    shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
+}

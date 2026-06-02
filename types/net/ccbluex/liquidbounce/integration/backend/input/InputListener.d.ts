@@ -1,0 +1,36 @@
+import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
+import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
+import type { KeyboardCharEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/KeyboardCharEvent.d.ts'
+import type { KeyboardKeyEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/KeyboardKeyEvent.d.ts'
+import type { MouseButtonEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/MouseButtonEvent.d.ts'
+import type { MouseCursorEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/MouseCursorEvent.d.ts'
+import type { MouseScrollEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/MouseScrollEvent.d.ts'
+import type { Browser } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/Browser.d.ts'
+import type { InputAcceptor } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputAcceptor.d.ts'
+import type { InputHandler } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputHandler.d.ts'
+/**
+ * Handles input events for a single browser instance.
+ *
+ * This {@link EventListener} needs to be unregistered when the browser is closed.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt:37}
+ */
+export class InputListener extends Object implements AutoCloseable, EventListener {
+    constructor(browser: Browser, inputHandler: InputHandler, acceptor: InputAcceptor)
+    readonly acceptor: InputAcceptor;
+    readonly browser: Browser;
+    readonly inputHandler: InputHandler;
+    // private keyboardCharHandler: EventHook<KeyboardCharEvent>;
+    // private keyboardKeyHandler: EventHook<KeyboardKeyEvent>;
+    // private mouseButtonHandler: EventHook<MouseButtonEvent>;
+    // private mouseCursorHandler: EventHook<MouseCursorEvent>;
+    // private mouseScrollHandler: EventHook<MouseScrollEvent>;
+    // private mouseX: number;
+    // private mouseY: number;
+    children(): EventListener[];
+    close(): void;
+    parent(): EventListener | null;
+    unregister(): void;
+}

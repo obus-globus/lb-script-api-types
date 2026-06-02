@@ -1,0 +1,15 @@
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { ItemApiLookup } from '../../../../../../../net/fabricmc/fabric/api/lookup/v1/item/ItemApiLookup.d.ts'
+import type { ItemVariant } from '../../../../../../../net/fabricmc/fabric/api/transfer/v1/item/ItemVariant.d.ts'
+import type { TransactionContext } from '../../../../../../../net/fabricmc/fabric/api/transfer/v1/transaction/TransactionContext.d.ts'
+export interface ContainerItemContext extends Object{
+    exchange(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
+    extract(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
+    find<A extends Object | number | string | boolean>(arg0: ItemApiLookup<A, ContainerItemContext>): A;
+    getAdditionalSlots(): ItemVariant[][];
+    getAmount(): number;
+    getItemVariant(): ItemVariant;
+    getMainSlot(): ItemVariant[];
+    insert(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
+    insertOverflow(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
+}

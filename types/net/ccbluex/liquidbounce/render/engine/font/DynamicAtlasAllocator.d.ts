@@ -1,0 +1,26 @@
+import type { Dimension } from '../../../../../../java/awt/Dimension.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { AtlasSlice } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/AtlasSlice.d.ts'
+import type { AtlasSliceHandle } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/AtlasSliceHandle.d.ts'
+export class DynamicAtlasAllocator extends Object {
+    constructor(dimension: Dimension, verticalCutSize: number, minDimension: Dimension)
+    readonly availableSlices: AtlasSlice[];
+    readonly dimension: Dimension;
+    /**
+     * The minimal dimension of a slice. If a cut would be smaller than this, it will be made available.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt:32}
+     */
+    readonly minDimension: Dimension;
+    /**
+     * In order to reduce the fragmentation the allocator will cut the texture into slices.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt:28}
+     */
+    readonly verticalCutSize: number;
+    allocate(dimension: Dimension): AtlasSliceHandle | null;
+    free(handle: AtlasSliceHandle): void;
+    // private removeChildrenRecursively(highestUnallocatedParent: AtlasSlice): void;
+    // private tryCutSlice(slice: AtlasSlice, dimension: Dimension): AtlasSlice[] | null;
+    updateParentAllocationStatusRecursively(parent: AtlasSlice): AtlasSlice | null;
+}

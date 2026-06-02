@@ -1,0 +1,15 @@
+import type { AbstractInt2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil/ints/AbstractInt2DoubleFunction.d.ts'
+import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
+export class Int2DoubleFunctions$Singleton extends AbstractInt2DoubleFunction implements Serializable, Cloneable {
+    constructor(arg0: number, arg1: number)
+    // private key: number;
+    // private value: number;
+    clone(): Object;
+    protected clone(): Object;
+    containsKey(arg0: number): boolean;
+    get(arg0: number): number;
+    getOrDefault(arg0: number, arg1: number): number;
+    size(): number;
+}

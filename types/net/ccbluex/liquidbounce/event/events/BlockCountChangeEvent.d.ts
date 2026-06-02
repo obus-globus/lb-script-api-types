@@ -1,0 +1,8 @@
+import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
+import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
+import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
+export class BlockCountChangeEvent extends Event implements WebSocketEvent {
+    constructor(nextBlock: Block | null, count: number | null)
+    readonly count: number | null;
+    readonly nextBlock: Block | null;
+}

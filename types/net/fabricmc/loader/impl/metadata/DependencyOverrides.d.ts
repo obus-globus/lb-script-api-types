@@ -1,0 +1,9 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { DependencyOverrides$Entry } from '../../../../../net/fabricmc/loader/impl/metadata/DependencyOverrides$Entry.d.ts'
+import type { LoaderModMetadata } from '../../../../../net/fabricmc/loader/impl/metadata/LoaderModMetadata.d.ts'
+export class DependencyOverrides extends Object {
+    constructor(arg0: Path[])
+    // private dependencyOverrides: { [key: string]: DependencyOverrides$Entry[] };
+    apply(arg0: LoaderModMetadata): void;
+    getAffectedModIds(): E[];
+}

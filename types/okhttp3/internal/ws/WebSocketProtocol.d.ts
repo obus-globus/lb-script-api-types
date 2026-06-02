@@ -1,0 +1,53 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Buffer$UnsafeCursor } from '../../../okio/Buffer$UnsafeCursor.d.ts'
+export class WebSocketProtocol extends Object {
+    static ACCEPT_MAGIC: string;
+    static B0_FLAG_FIN: number;
+    static B0_FLAG_RSV1: number;
+    static B0_FLAG_RSV2: number;
+    static B0_FLAG_RSV3: number;
+    static B0_MASK_OPCODE: number;
+    static B1_FLAG_MASK: number;
+    static B1_MASK_LENGTH: number;
+    static CLOSE_CLIENT_GOING_AWAY: number;
+    static CLOSE_MESSAGE_MAX: number;
+    static CLOSE_NO_STATUS_CODE: number;
+    static INSTANCE: WebSocketProtocol;
+    static OPCODE_BINARY: number;
+    static OPCODE_CONTINUATION: number;
+    static OPCODE_CONTROL_CLOSE: number;
+    static OPCODE_CONTROL_PING: number;
+    static OPCODE_CONTROL_PONG: number;
+    static OPCODE_FLAG_CONTROL: number;
+    static OPCODE_TEXT: number;
+    static PAYLOAD_BYTE_MAX: number;
+    static PAYLOAD_LONG: number;
+    static PAYLOAD_SHORT: number;
+    static PAYLOAD_SHORT_MAX: number;
+    ACCEPT_MAGIC: string;
+    B0_FLAG_FIN: number;
+    B0_FLAG_RSV1: number;
+    B0_FLAG_RSV2: number;
+    B0_FLAG_RSV3: number;
+    B0_MASK_OPCODE: number;
+    B1_FLAG_MASK: number;
+    B1_MASK_LENGTH: number;
+    CLOSE_CLIENT_GOING_AWAY: number;
+    CLOSE_MESSAGE_MAX: number;
+    CLOSE_NO_STATUS_CODE: number;
+    OPCODE_BINARY: number;
+    OPCODE_CONTINUATION: number;
+    OPCODE_CONTROL_CLOSE: number;
+    OPCODE_CONTROL_PING: number;
+    OPCODE_CONTROL_PONG: number;
+    OPCODE_FLAG_CONTROL: number;
+    OPCODE_TEXT: number;
+    PAYLOAD_BYTE_MAX: number;
+    PAYLOAD_LONG: number;
+    PAYLOAD_SHORT: number;
+    PAYLOAD_SHORT_MAX: number;
+    acceptHeader(key: string): string;
+    closeCodeExceptionMessage(code: number): string | null;
+    toggleMask(cursor: Buffer$UnsafeCursor, key: number[]): void;
+    validateCloseCode(code: number): void;
+}

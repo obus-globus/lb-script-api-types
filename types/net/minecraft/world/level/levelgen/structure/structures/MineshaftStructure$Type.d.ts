@@ -1,0 +1,38 @@
+import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
+import type { Keyable } from '../../../../../../../com/mojang/serialization/Keyable.d.ts'
+import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
+import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
+import type { StringRepresentable } from '../../../../../../../net/minecraft/util/StringRepresentable.d.ts'
+import type { StringRepresentable$EnumCodec } from '../../../../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
+import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
+import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+export class MineshaftStructure$Type extends Enum<MineshaftStructure$Type> implements StringRepresentable {
+    static CODEC: Codec<MineshaftStructure$Type>;
+    static MESA: MineshaftStructure$Type;
+    static NORMAL: MineshaftStructure$Type;
+    static PRE_BUILT_MAP_THRESHOLD: number;
+    static byId(paramid: number): MineshaftStructure$Type;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
+    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static keys(paramvalues: (Object | null)[]): Keyable;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramname: string): MineshaftStructure$Type;
+    static values(): (Object | null)[];
+    private constructor(name: string, wood: Block, plank: Block, fence: Block)
+    readonly fenceState: BlockState;
+    readonly name: string;
+    readonly planksState: BlockState;
+    readonly woodState: BlockState;
+    getFenceState(): BlockState;
+    getName(): string;
+    getPlanksState(): BlockState;
+    getSerializedName(): string;
+    getWoodState(): BlockState;
+    name(): "NORMAL" | "MESA";
+}

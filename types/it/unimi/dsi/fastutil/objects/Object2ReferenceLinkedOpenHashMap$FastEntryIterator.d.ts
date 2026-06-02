@@ -1,0 +1,17 @@
+import type { Object2ReferenceLinkedOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceLinkedOpenHashMap$MapEntry.d.ts'
+import type { Object2ReferenceLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceLinkedOpenHashMap$MapIterator.d.ts'
+import type { Object2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceMap$Entry.d.ts'
+import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class Object2ReferenceLinkedOpenHashMap$FastEntryIterator extends Object2ReferenceLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Object2ReferenceMap$Entry<K, V>> {
+    constructor(null_: Object2ReferenceLinkedOpenHashMap$FastEntryIterator)
+    constructor(null_: Object2ReferenceLinkedOpenHashMap$FastEntryIterator)
+    // private entry: Object2ReferenceLinkedOpenHashMap$MapEntry;
+    acceptOnIndex(arg0: (param0: Object2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: K): void;
+    next(): Object2ReferenceLinkedOpenHashMap$MapEntry;
+    previous(): Object2ReferenceLinkedOpenHashMap$MapEntry;
+    remove(): void;
+    set<K extends Object | number | string | boolean>(arg0: K): void;
+}

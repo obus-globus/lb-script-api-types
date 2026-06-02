@@ -1,0 +1,17 @@
+import type { TruffleCompiler } from '../../../../com/oracle/truffle/compiler/TruffleCompiler.d.ts'
+import type { TruffleCompilerOptionDescriptor } from '../../../../com/oracle/truffle/compiler/TruffleCompilerOptionDescriptor.d.ts'
+import type { TruffleCompilerRuntime } from '../../../../com/oracle/truffle/compiler/TruffleCompilerRuntime.d.ts'
+import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
+export interface TruffleCompilationSupport extends Object{
+    compilerOptionExists(key: string): boolean;
+    createCompiler(runtime: TruffleCompilerRuntime): TruffleCompiler;
+    getCompilerConfigurationName(runtime: TruffleCompilerRuntime): string;
+    getCompilerVersion(): string;
+    isSuppressedCompilationFailure(throwable: Throwable): boolean;
+    listCompilerOptions(): TruffleCompilerOptionDescriptor[];
+    openCompilerThreadScope(): AutoCloseable;
+    registerRuntime(runtime: TruffleCompilerRuntime): void;
+    validateCompilerOption(key: string, value: string): string;
+}

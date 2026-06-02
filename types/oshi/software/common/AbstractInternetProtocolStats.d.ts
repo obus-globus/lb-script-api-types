@@ -1,0 +1,11 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { InternetProtocolStats } from '../../../oshi/software/os/InternetProtocolStats.d.ts'
+import type { InternetProtocolStats$IPConnection } from '../../../oshi/software/os/InternetProtocolStats$IPConnection.d.ts'
+import type { InternetProtocolStats$TcpStats } from '../../../oshi/software/os/InternetProtocolStats$TcpStats.d.ts'
+import type { InternetProtocolStats$UdpStats } from '../../../oshi/software/os/InternetProtocolStats$UdpStats.d.ts'
+export abstract class AbstractInternetProtocolStats extends Object implements InternetProtocolStats {
+    constructor()
+    getConnections(): InternetProtocolStats$IPConnection[];
+    getTCPv6Stats(): InternetProtocolStats$TcpStats;
+    getUDPv6Stats(): InternetProtocolStats$UdpStats;
+}

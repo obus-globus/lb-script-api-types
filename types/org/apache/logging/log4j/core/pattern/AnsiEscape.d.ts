@@ -1,0 +1,77 @@
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
+export class AnsiEscape extends Enum<AnsiEscape> {
+    static BG_BLACK: AnsiEscape;
+    static BG_BLUE: AnsiEscape;
+    static BG_BRIGHT_BLACK: AnsiEscape;
+    static BG_BRIGHT_BLUE: AnsiEscape;
+    static BG_BRIGHT_CYAN: AnsiEscape;
+    static BG_BRIGHT_GREEN: AnsiEscape;
+    static BG_BRIGHT_MAGENTA: AnsiEscape;
+    static BG_BRIGHT_RED: AnsiEscape;
+    static BG_BRIGHT_WHITE: AnsiEscape;
+    static BG_BRIGHT_YELLOW: AnsiEscape;
+    static BG_CYAN: AnsiEscape;
+    static BG_GREEN: AnsiEscape;
+    static BG_MAGENTA: AnsiEscape;
+    static BG_RED: AnsiEscape;
+    static BG_WHITE: AnsiEscape;
+    static BG_YELLOW: AnsiEscape;
+    static BLACK: AnsiEscape;
+    static BLINK: AnsiEscape;
+    static BLUE: AnsiEscape;
+    static BOLD: AnsiEscape;
+    static BRIGHT: AnsiEscape;
+    static BRIGHT_BLACK: AnsiEscape;
+    static BRIGHT_BLUE: AnsiEscape;
+    static BRIGHT_CYAN: AnsiEscape;
+    static BRIGHT_GREEN: AnsiEscape;
+    static BRIGHT_MAGENTA: AnsiEscape;
+    static BRIGHT_RED: AnsiEscape;
+    static BRIGHT_WHITE: AnsiEscape;
+    static BRIGHT_YELLOW: AnsiEscape;
+    static CSI: AnsiEscape;
+    static CYAN: AnsiEscape;
+    static DEFAULT: AnsiEscape;
+    static DIM: AnsiEscape;
+    static FG_BLACK: AnsiEscape;
+    static FG_BLUE: AnsiEscape;
+    static FG_BRIGHT_BLACK: AnsiEscape;
+    static FG_BRIGHT_BLUE: AnsiEscape;
+    static FG_BRIGHT_CYAN: AnsiEscape;
+    static FG_BRIGHT_GREEN: AnsiEscape;
+    static FG_BRIGHT_MAGENTA: AnsiEscape;
+    static FG_BRIGHT_RED: AnsiEscape;
+    static FG_BRIGHT_WHITE: AnsiEscape;
+    static FG_BRIGHT_YELLOW: AnsiEscape;
+    static FG_CYAN: AnsiEscape;
+    static FG_DEFAULT: AnsiEscape;
+    static FG_GREEN: AnsiEscape;
+    static FG_MAGENTA: AnsiEscape;
+    static FG_RED: AnsiEscape;
+    static FG_WHITE: AnsiEscape;
+    static FG_YELLOW: AnsiEscape;
+    static GREEN: AnsiEscape;
+    static HIDDEN: AnsiEscape;
+    static MAGENTA: AnsiEscape;
+    static NORMAL: AnsiEscape;
+    static RED: AnsiEscape;
+    static REVERSE: AnsiEscape;
+    static SEPARATOR: AnsiEscape;
+    static SUFFIX: AnsiEscape;
+    static UNDERLINE: AnsiEscape;
+    static WHITE: AnsiEscape;
+    static YELLOW: AnsiEscape;
+    static createMap(paramvalues: string, paramdontEscapeKeys: (Object | null)[]): { [key: string]: string };
+    static createMap(paramvalues: (Object | null)[], paramdontEscapeKeys: (Object | null)[]): { [key: string]: string };
+    static createSequence(paramnames: (Object | null)[]): string;
+    static getDefaultStyle(): string;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramname: string): AnsiEscape;
+    static values(): (Object | null)[];
+    private constructor(code: string)
+    readonly code: string;
+    getCode(): string;
+    name(): "CSI" | "SUFFIX" | "SEPARATOR" | "NORMAL" | "BRIGHT" | "BOLD" | "DIM" | "UNDERLINE" | "BLINK" | "REVERSE" | "HIDDEN" | "BLACK" | "FG_BLACK" | "RED" | "FG_RED" | "GREEN" | "FG_GREEN" | "YELLOW" | "FG_YELLOW" | "BLUE" | "FG_BLUE" | "MAGENTA" | "FG_MAGENTA" | "CYAN" | "FG_CYAN" | "WHITE" | "FG_WHITE" | "DEFAULT" | "FG_DEFAULT" | "BG_BLACK" | "BG_RED" | "BG_GREEN" | "BG_YELLOW" | "BG_BLUE" | "BG_MAGENTA" | "BG_CYAN" | "BG_WHITE" | "BRIGHT_BLACK" | "FG_BRIGHT_BLACK" | "BRIGHT_RED" | "FG_BRIGHT_RED" | "BRIGHT_GREEN" | "FG_BRIGHT_GREEN" | "BRIGHT_YELLOW" | "FG_BRIGHT_YELLOW" | "BRIGHT_BLUE" | "FG_BRIGHT_BLUE" | "BRIGHT_MAGENTA" | "FG_BRIGHT_MAGENTA" | "BRIGHT_CYAN" | "FG_BRIGHT_CYAN" | "BRIGHT_WHITE" | "FG_BRIGHT_WHITE" | "BG_BRIGHT_BLACK" | "BG_BRIGHT_RED" | "BG_BRIGHT_GREEN" | "BG_BRIGHT_YELLOW" | "BG_BRIGHT_BLUE" | "BG_BRIGHT_MAGENTA" | "BG_BRIGHT_CYAN" | "BG_BRIGHT_WHITE";
+}

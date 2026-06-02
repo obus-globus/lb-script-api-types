@@ -1,0 +1,16 @@
+import type { TruffleContext } from '../../../../com/oracle/truffle/api/TruffleContext.d.ts'
+import type { PolyglotInstrument } from '../../../../com/oracle/truffle/polyglot/PolyglotInstrument.d.ts'
+import type { PolyglotLocals$AbstractContextThreadLocal } from '../../../../com/oracle/truffle/polyglot/PolyglotLocals$AbstractContextThreadLocal.d.ts'
+import type { PolyglotLocals$LocalLocation } from '../../../../com/oracle/truffle/polyglot/PolyglotLocals$LocalLocation.d.ts'
+import type { Thread } from '../../../../java/lang/Thread.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export class PolyglotLocals$InstrumentContextThreadLocal<T extends Object | number | string | boolean> extends PolyglotLocals$AbstractContextThreadLocal<T> {
+    constructor(factory: Object)
+    // private factory: Object;
+    // private instrument: PolyglotInstrument;
+    createLocation(localIndex: number): PolyglotLocals$LocalLocation;
+    get(): T;
+    get(context: TruffleContext): T;
+    get(context: TruffleContext, t: Thread): T;
+    get(t: Thread): T;
+}

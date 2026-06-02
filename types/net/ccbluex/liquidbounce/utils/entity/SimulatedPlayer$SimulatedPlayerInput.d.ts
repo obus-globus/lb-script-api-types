@@ -1,0 +1,21 @@
+import type { SimulatedPlayer$SimulatedPlayerInput$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer$SimulatedPlayerInput$Companion.d.ts'
+import type { DirectionalInput } from '../../../../../net/ccbluex/liquidbounce/utils/movement/DirectionalInput.d.ts'
+import type { ClientInput } from '../../../../../net/minecraft/client/player/ClientInput.d.ts'
+import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
+export class SimulatedPlayer$SimulatedPlayerInput extends ClientInput {
+    static Companion: SimulatedPlayer$SimulatedPlayerInput$Companion;
+    static fromClientPlayer(paramarg0: DirectionalInput, paramarg1: boolean, paramarg2: boolean, paramarg3: boolean): SimulatedPlayer$SimulatedPlayerInput;
+    /**
+     * Guesses the current input of a server player based on player position and velocity
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer.kt#L1006 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer.kt:1006}
+     */
+    static guessInput(paramarg0: Player): SimulatedPlayer$SimulatedPlayerInput;
+    constructor(directionalInput: DirectionalInput, jumping: boolean, sprinting: boolean, sneaking: boolean, ignoreClippingAtLedge: boolean)
+    readonly directionalInput: DirectionalInput;
+    forceSafeWalk: boolean;
+    ignoreClippingAtLedge: boolean;
+    sprinting: boolean;
+    toString(): string;
+    update(): void;
+}

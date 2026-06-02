@@ -1,0 +1,15 @@
+import type { AbstractRegexObject } from '../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class TruffleReadOnlyKeysArray extends AbstractRegexObject {
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    constructor(keys: string[])
+    // private keys: string[];
+    contains(key: string): boolean;
+    getArraySize(): number;
+    hasArrayElements(): boolean;
+    isArrayElementReadable(index: number): boolean;
+    readArrayElement(index: number): string;
+    size(): number;
+    toString(): string;
+}

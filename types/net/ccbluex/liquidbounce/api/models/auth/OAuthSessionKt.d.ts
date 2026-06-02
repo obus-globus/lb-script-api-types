@@ -1,0 +1,6 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { OAuthSession } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/OAuthSession.d.ts'
+import type { Headers$Builder } from '../../../../../../okhttp3/Headers$Builder.d.ts'
+export class OAuthSessionKt extends Object {
+    static addAuth(paramarg0: Headers$Builder, paramarg1: OAuthSession): Headers$Builder;
+}

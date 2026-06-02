@@ -1,0 +1,10 @@
+import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
+import type { TypeConverter } from '../../../../../../com/viaversion/viaversion/api/type/TypeConverter.d.ts'
+import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class UnsignedShortType extends Type<number> implements TypeConverter<number> {
+    constructor()
+    from(arg0: Object): number;
+    read(arg0: ByteBuf): number;
+    write(arg0: ByteBuf, arg1: number): void;
+}

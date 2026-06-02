@@ -1,0 +1,56 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class TextureSlot extends Object {
+    static ALL: TextureSlot;
+    static BACK: TextureSlot;
+    static BARS: TextureSlot;
+    static BOTTOM: TextureSlot;
+    static CANDLE: TextureSlot;
+    static CONTENT: TextureSlot;
+    static CROP: TextureSlot;
+    static CROSS: TextureSlot;
+    static CROSS_EMISSIVE: TextureSlot;
+    static DIRT: TextureSlot;
+    static DOWN: TextureSlot;
+    static EAST: TextureSlot;
+    static EDGE: TextureSlot;
+    static END: TextureSlot;
+    static FAN: TextureSlot;
+    static FIRE: TextureSlot;
+    static FLOWERBED: TextureSlot;
+    static FRONT: TextureSlot;
+    static INNER_TOP: TextureSlot;
+    static INSIDE: TextureSlot;
+    static LANTERN: TextureSlot;
+    static LAYER0: TextureSlot;
+    static LAYER1: TextureSlot;
+    static LAYER2: TextureSlot;
+    static LIT_LOG: TextureSlot;
+    static NORTH: TextureSlot;
+    static PANE: TextureSlot;
+    static PARTICLE: TextureSlot;
+    static PATTERN: TextureSlot;
+    static PLANT: TextureSlot;
+    static PLATFORM: TextureSlot;
+    static RAIL: TextureSlot;
+    static SIDE: TextureSlot;
+    static SOUTH: TextureSlot;
+    static STEM: TextureSlot;
+    static TENTACLES: TextureSlot;
+    static TEXTURE: TextureSlot;
+    static TOP: TextureSlot;
+    static TORCH: TextureSlot;
+    static UNSTICKY: TextureSlot;
+    static UP: TextureSlot;
+    static UPPER_STEM: TextureSlot;
+    static WALL: TextureSlot;
+    static WEST: TextureSlot;
+    static WOOL: TextureSlot;
+    static create(paramid: string): TextureSlot;
+    static create(paramid: string, paramparent: TextureSlot): TextureSlot;
+    private constructor(id: string, parent: TextureSlot)
+    readonly id: string;
+    readonly parent: TextureSlot;
+    getId(): string;
+    getParent(): TextureSlot;
+    toString(): string;
+}

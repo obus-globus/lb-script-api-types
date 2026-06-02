@@ -1,0 +1,15 @@
+import type { Long2DoubleAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2DoubleAVLTreeMap$TreeIterator.d.ts'
+import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongListIterator.d.ts'
+export class Long2DoubleAVLTreeMap$KeyIterator extends Long2DoubleAVLTreeMap$TreeIterator implements LongListIterator {
+    constructor(null_: Long2DoubleAVLTreeMap$KeyIterator)
+    constructor(null_: Long2DoubleAVLTreeMap$KeyIterator, arg1: number)
+    add(arg0: number): void;
+    add(arg0: number): void;
+    next(): number;
+    nextLong(): number;
+    previous(): number;
+    previousLong(): number;
+    remove(): void;
+    set(arg0: number): void;
+    set(arg0: number): void;
+}

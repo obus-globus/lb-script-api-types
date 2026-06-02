@@ -1,0 +1,5 @@
+import type { Jwt } from '../../io/jsonwebtoken/Jwt.d.ts'
+import type { DigestSupplier } from '../../io/jsonwebtoken/security/DigestSupplier.d.ts'
+import type { Object } from '../../java/lang/Object.d.ts'
+export interface ProtectedJwt<H extends ProtectedHeader, P extends Object | number | string | boolean> extends Jwt<H, P>, DigestSupplier, Object{
+}

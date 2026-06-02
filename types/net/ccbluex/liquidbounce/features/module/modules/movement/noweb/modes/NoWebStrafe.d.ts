@@ -1,0 +1,24 @@
+import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
+import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { NoWebMode } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/noweb/NoWebMode.d.ts'
+import type { NoWebStrafe$Motion } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe$Motion.d.ts'
+import type { BlockPos } from '../../../../../../../../../net/minecraft/core/BlockPos.d.ts'
+/**
+ * Bypassing Vulcan anticheat (6/27/2025)
+ * Bypassing Grim anticheat (7/28/2025)
+ *
+ * @author XeContrast
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe.kt:30}
+ */
+export class NoWebStrafe extends NoWebMode {
+    static Companion: Tagged$Companion;
+    static INSTANCE: NoWebStrafe;
+    // private motionY: NoWebStrafe$Motion;
+    // private onlyGround: boolean;
+    // private /*not mapped: */ getOnlyGround(): boolean;
+    readonly parent: ModeValueGroup<NoWebMode>;
+    // private strength: number;
+    // private /*not mapped: */ getStrength(): number;
+    handleEntityCollision(pos: BlockPos): boolean;
+}

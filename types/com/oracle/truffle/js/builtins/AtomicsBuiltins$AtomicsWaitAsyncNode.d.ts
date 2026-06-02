@@ -1,0 +1,34 @@
+import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { AtomicsBuiltins$AtomicsWaitBaseNode } from '../../../../../com/oracle/truffle/js/builtins/AtomicsBuiltins$AtomicsWaitBaseNode.d.ts'
+import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { TypedArray } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArray.d.ts'
+import type { JSTypedArrayObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export abstract class AtomicsBuiltins$AtomicsWaitAsyncNode extends AtomicsBuiltins$AtomicsWaitBaseNode {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static isDirectBigInt64Array(paramta: TypedArray): boolean;
+    static isDirectBigUint64Array(paramta: TypedArray): boolean;
+    static isDirectInt16Array(paramta: TypedArray): boolean;
+    static isDirectInt32Array(paramta: TypedArray): boolean;
+    static isDirectInt8Array(paramta: TypedArray): boolean;
+    static isDirectUint16Array(paramta: TypedArray): boolean;
+    static isDirectUint32Array(paramta: TypedArray): boolean;
+    static isDirectUint8Array(paramta: TypedArray): boolean;
+    static isInt32SharedBufferView(paramobject: JSTypedArrayObject): boolean;
+    static isSharedBufferView(paramobject: JSTypedArrayObject): boolean;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    constructor(context: JSContext, builtin: JSBuiltin)
+    doGeneric(frame: VirtualFrame, maybeTarget: Object, index: Object, value: Object, timeout: Object): Object;
+}

@@ -1,0 +1,12 @@
+import type { AbstractPublicNode } from '../../../../../com/oracle/truffle/api/strings/AbstractPublicNode.d.ts'
+import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { TruffleStringBuilder } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilder.d.ts'
+import type { TruffleStringBuilder$ToStringIntlNode } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilder$ToStringIntlNode.d.ts'
+export abstract class TruffleStringBuilder$ToStringNode extends AbstractPublicNode {
+    static create(): TruffleStringBuilder$ToStringNode;
+    static getUncached(): TruffleStringBuilder$ToStringNode;
+    constructor()
+    createString(sb: TruffleStringBuilder, lazy: boolean, intlNode: TruffleStringBuilder$ToStringIntlNode): TruffleString;
+    execute(sb: TruffleStringBuilder): TruffleString;
+    execute(sb: TruffleStringBuilder, lazy: boolean): TruffleString;
+}

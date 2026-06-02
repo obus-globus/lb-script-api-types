@@ -1,0 +1,40 @@
+import type { Object2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharMap$Entry.d.ts'
+import type { ObjectCharPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectCharPair.d.ts'
+import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export class Object2CharOpenHashMap$MapEntry extends Object implements Object2CharMap$Entry<K>, ObjectCharPair<K>, Map$Entry<K, string> {
+    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
+    static lexComparator(): (param0: Object | null) => kotlin.Boolean;
+    static of(paramarg0: Object | null, paramarg1: string): ObjectCharPair<Object>;
+    constructor(null_: Object2CharOpenHashMap$MapEntry)
+    constructor(null_: Object2CharOpenHashMap$MapEntry, arg1: number)
+    // private index: number;
+    readonly key: K;
+    readonly value: string;
+    equals(arg0: Object | null): boolean;
+    getCharValue(): string;
+    hashCode(): number;
+    left<K extends Object | number | string | boolean>(): K;
+    right(arg0: string): ObjectCharPair<K>;
+    right(): string;
+    right(arg0: string): ObjectCharPair<K>;
+    right(arg0: string): ObjectCharPair<K>;
+    rightChar(): string;
+    second(): string;
+    second(arg0: string): ObjectCharPair<K>;
+    second(arg0: string): ObjectCharPair<K>;
+    secondChar(): string;
+    setValue(arg0: string): string;
+    setValue(arg0: string): string;
+    setValue(arg0: string): string;
+    toString(): string;
+    value(): string;
+    value(arg0: string): ObjectCharPair<K>;
+    value(arg0: string): ObjectCharPair<K>;
+    valueChar(): string;
+}

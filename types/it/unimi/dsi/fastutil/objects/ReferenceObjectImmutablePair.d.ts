@@ -1,0 +1,15 @@
+import type { ReferenceObjectPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceObjectPair.d.ts'
+import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class ReferenceObjectImmutablePair<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements ReferenceObjectPair<K, V>, Serializable {
+    static of(paramarg0: Object | null, paramarg1: Object | null): ReferenceObjectImmutablePair<Object, Object>;
+    static of(paramarg0: Object | null, paramarg1: Object | null): ReferenceObjectPair<Object, Object>;
+    constructor(arg0: K, arg1: V)
+    // private left: K;
+    // private right: V;
+    equals(arg0: Object | null): boolean;
+    hashCode(): number;
+    left(): K;
+    right(): V;
+    toString(): string;
+}

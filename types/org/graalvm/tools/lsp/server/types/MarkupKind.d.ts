@@ -1,0 +1,15 @@
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
+export class MarkupKind extends Enum<MarkupKind> {
+    static Markdown: MarkupKind;
+    static PlainText: MarkupKind;
+    static get(paramstringValue: string): MarkupKind;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramname: string): MarkupKind;
+    static values(): (Object | null)[];
+    private constructor(stringValue: string)
+    readonly stringValue: string;
+    getStringValue(): string;
+    name(): "PlainText" | "Markdown";
+}

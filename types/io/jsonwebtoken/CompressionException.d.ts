@@ -1,0 +1,6 @@
+import type { IOException } from '../../io/jsonwebtoken/io/IOException.d.ts'
+import type { Throwable } from '../../java/lang/Throwable.d.ts'
+export class CompressionException extends IOException {
+    constructor(arg0: string)
+    constructor(arg0: string, arg1: Throwable)
+}

@@ -1,0 +1,84 @@
+import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
+export class ContainerEnumName extends Enum<ContainerEnumName> {
+    static AnvilInputContainer: ContainerEnumName;
+    static AnvilMaterialContainer: ContainerEnumName;
+    static AnvilResultPreviewContainer: ContainerEnumName;
+    static ArmorContainer: ContainerEnumName;
+    static BarrelContainer: ContainerEnumName;
+    static BeaconPaymentContainer: ContainerEnumName;
+    static BlastFurnaceIngredientContainer: ContainerEnumName;
+    static BrewingStandFuelContainer: ContainerEnumName;
+    static BrewingStandInputContainer: ContainerEnumName;
+    static BrewingStandResultContainer: ContainerEnumName;
+    static CartographyAdditionalContainer: ContainerEnumName;
+    static CartographyInputContainer: ContainerEnumName;
+    static CartographyResultPreviewContainer: ContainerEnumName;
+    static CombinedHotbarAndInventoryContainer: ContainerEnumName;
+    static CompoundCreatorInput: ContainerEnumName;
+    static CompoundCreatorOutputPreview: ContainerEnumName;
+    static CrafterLevelEntityContainer: ContainerEnumName;
+    static CraftingInputContainer: ContainerEnumName;
+    static CraftingOutputPreviewContainer: ContainerEnumName;
+    static CreatedOutputContainer: ContainerEnumName;
+    static CursorContainer: ContainerEnumName;
+    static DynamicContainer: ContainerEnumName;
+    static ElementConstructorOutputPreview: ContainerEnumName;
+    static EnchantingInputContainer: ContainerEnumName;
+    static EnchantingMaterialContainer: ContainerEnumName;
+    static FurnaceFuelContainer: ContainerEnumName;
+    static FurnaceIngredientContainer: ContainerEnumName;
+    static FurnaceResultContainer: ContainerEnumName;
+    static GrindstoneAdditionalContainer: ContainerEnumName;
+    static GrindstoneInputContainer: ContainerEnumName;
+    static GrindstoneResultPreviewContainer: ContainerEnumName;
+    static HorseEquipContainer: ContainerEnumName;
+    static HotbarContainer: ContainerEnumName;
+    static InventoryContainer: ContainerEnumName;
+    static LabTableInput: ContainerEnumName;
+    static LevelEntityContainer: ContainerEnumName;
+    static LoomDyeContainer: ContainerEnumName;
+    static LoomInputContainer: ContainerEnumName;
+    static LoomMaterialContainer: ContainerEnumName;
+    static LoomResultPreviewContainer: ContainerEnumName;
+    static MaterialReducerInput: ContainerEnumName;
+    static MaterialReducerOutput: ContainerEnumName;
+    static OffhandContainer: ContainerEnumName;
+    static RecipeBlocksContainer: ContainerEnumName;
+    static RecipeBookContainer: ContainerEnumName;
+    static RecipeConstructionContainer: ContainerEnumName;
+    static RecipeEquipmentContainer: ContainerEnumName;
+    static RecipeFoodContainer: ContainerEnumName;
+    static RecipeFurnaceItemsContainer: ContainerEnumName;
+    static RecipeItemsContainer: ContainerEnumName;
+    static RecipeNatureContainer: ContainerEnumName;
+    static RecipeSearchBarContainer: ContainerEnumName;
+    static RecipeSearchContainer: ContainerEnumName;
+    static ShulkerBoxContainer: ContainerEnumName;
+    static SmithingTableInputContainer: ContainerEnumName;
+    static SmithingTableMaterialContainer: ContainerEnumName;
+    static SmithingTableResultPreviewContainer: ContainerEnumName;
+    static SmithingTableTemplateContainer: ContainerEnumName;
+    static SmokerIngredientContainer: ContainerEnumName;
+    static StonecutterInputContainer: ContainerEnumName;
+    static StonecutterResultPreviewContainer: ContainerEnumName;
+    static Trade2Ingredient1Container: ContainerEnumName;
+    static Trade2Ingredient2Container: ContainerEnumName;
+    static Trade2ResultPreviewContainer: ContainerEnumName;
+    static TradeIngredient1Container: ContainerEnumName;
+    static TradeIngredient2Container: ContainerEnumName;
+    static TradeResultPreviewContainer: ContainerEnumName;
+    static getByName(paramarg0: string): ContainerEnumName;
+    static getByName(paramarg0: string, paramarg1: ContainerEnumName): ContainerEnumName;
+    static getByValue(paramarg0: number): ContainerEnumName;
+    static getByValue(paramarg0: number, paramarg1: ContainerEnumName): ContainerEnumName;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): ContainerEnumName;
+    static values(): (Object | null)[];
+    private constructor(arg2: number)
+    private constructor(arg2: ContainerEnumName)
+    readonly value: number;
+    getValue(): number;
+    name(): "AnvilInputContainer" | "AnvilMaterialContainer" | "AnvilResultPreviewContainer" | "SmithingTableInputContainer" | "SmithingTableMaterialContainer" | "SmithingTableResultPreviewContainer" | "ArmorContainer" | "LevelEntityContainer" | "BeaconPaymentContainer" | "BrewingStandInputContainer" | "BrewingStandResultContainer" | "BrewingStandFuelContainer" | "CombinedHotbarAndInventoryContainer" | "CraftingInputContainer" | "CraftingOutputPreviewContainer" | "RecipeConstructionContainer" | "RecipeNatureContainer" | "RecipeItemsContainer" | "RecipeFoodContainer" | "RecipeBlocksContainer" | "RecipeFurnaceItemsContainer" | "RecipeSearchContainer" | "RecipeSearchBarContainer" | "RecipeEquipmentContainer" | "RecipeBookContainer" | "EnchantingInputContainer" | "EnchantingMaterialContainer" | "FurnaceFuelContainer" | "FurnaceIngredientContainer" | "FurnaceResultContainer" | "HorseEquipContainer" | "HotbarContainer" | "InventoryContainer" | "ShulkerBoxContainer" | "TradeIngredient1Container" | "TradeIngredient2Container" | "TradeResultPreviewContainer" | "OffhandContainer" | "CompoundCreatorInput" | "CompoundCreatorOutputPreview" | "ElementConstructorOutputPreview" | "MaterialReducerInput" | "MaterialReducerOutput" | "LabTableInput" | "LoomInputContainer" | "LoomDyeContainer" | "LoomMaterialContainer" | "LoomResultPreviewContainer" | "BlastFurnaceIngredientContainer" | "SmokerIngredientContainer" | "Trade2Ingredient1Container" | "Trade2Ingredient2Container" | "Trade2ResultPreviewContainer" | "GrindstoneInputContainer" | "GrindstoneAdditionalContainer" | "GrindstoneResultPreviewContainer" | "StonecutterInputContainer" | "StonecutterResultPreviewContainer" | "CartographyInputContainer" | "CartographyAdditionalContainer" | "CartographyResultPreviewContainer" | "BarrelContainer" | "CursorContainer" | "CreatedOutputContainer" | "SmithingTableTemplateContainer" | "CrafterLevelEntityContainer" | "DynamicContainer";
+}

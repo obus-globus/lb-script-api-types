@@ -1,0 +1,41 @@
+import type { LongFloatPair } from '../../../../../it/unimi/dsi/fastutil/longs/LongFloatPair.d.ts'
+import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
+import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class LongFloatMutablePair extends Object implements LongFloatPair, Serializable {
+    static lexComparator(): (param0: LongFloatPair) => kotlin.Boolean;
+    static of(paramarg0: number, paramarg1: number): LongFloatMutablePair;
+    static of(paramarg0: number, paramarg1: number): LongFloatPair;
+    constructor(arg0: number, arg1: number)
+    // private left: number;
+    // private right: number;
+    equals(arg0: Object | null): boolean;
+    first(): number;
+    first(arg0: number): LongFloatPair;
+    first(arg0: number): LongFloatPair;
+    firstLong(): number;
+    hashCode(): number;
+    key(): number;
+    key(arg0: number): LongFloatPair;
+    key(arg0: number): LongFloatPair;
+    keyLong(): number;
+    left(arg0: number): LongFloatMutablePair;
+    left(): number;
+    left(arg0: number): LongFloatPair;
+    left(arg0: number): LongFloatPair;
+    leftLong(): number;
+    right(arg0: number): LongFloatMutablePair;
+    right(): number;
+    right(arg0: number): LongFloatPair;
+    right(arg0: number): LongFloatPair;
+    rightFloat(): number;
+    second(): number;
+    second(arg0: number): LongFloatPair;
+    second(arg0: number): LongFloatPair;
+    secondFloat(): number;
+    toString(): string;
+    value(): number;
+    value(arg0: number): LongFloatPair;
+    value(arg0: number): LongFloatPair;
+    valueFloat(): number;
+}

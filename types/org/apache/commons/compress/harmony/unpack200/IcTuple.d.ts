@@ -1,0 +1,50 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class IcTuple extends Object {
+    static NESTED_CLASS_FLAG: number;
+    constructor(arg0: string, arg1: number, arg2: string, arg3: string, arg4: number, arg5: number, arg6: number, arg7: number)
+    // private C: string;
+    // private C2: string;
+    // private F: number;
+    // private N: string;
+    readonly anonymous: boolean;
+    // private c2Index: number;
+    // private cIndex: number;
+    // private cachedHashCode: number;
+    // private cachedOuterClassIndex: number;
+    // private cachedOuterClassString: string;
+    // private cachedSimpleClassName: string;
+    // private cachedSimpleClassNameIndex: number;
+    // private hashCodeComputed: boolean;
+    // private initialized: boolean;
+    readonly member: boolean;
+    // private nIndex: number;
+    // private outerIsAnonymous: boolean;
+    // private predictOuter: boolean;
+    // private predictSimple: boolean;
+    // private tIndex: number;
+    // private computeOuterIsAnonymous(): boolean;
+    equals(arg0: Object | null): boolean;
+    // private generateHashCode(): void;
+    getC(): string;
+    getC2(): string;
+    getF(): number;
+    getN(): string;
+    getTupleIndex(): number;
+    hashCode(): number;
+    // private initializeClassStrings(): void;
+    innerBreakAtDollar(arg0: string): string[];
+    // private isAllDigits(arg0: string): boolean;
+    isAnonymous(): boolean;
+    isMember(): boolean;
+    nestedExplicitFlagSet(): boolean;
+    nullSafeEquals(arg0: string, arg1: string): boolean;
+    outerClassIndex(): number;
+    outerClassString(): string;
+    outerIsAnonymous(): boolean;
+    predicted(): boolean;
+    simpleClassName(): string;
+    simpleClassNameIndex(): number;
+    thisClassIndex(): number;
+    thisClassString(): string;
+    toString(): string;
+}

@@ -1,0 +1,16 @@
+import type { ClosingFuture } from '../../../../../com/google/common/util/concurrent/ClosingFuture.d.ts'
+import type { ClosingFuture$Combiner } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Combiner.d.ts'
+import type { ClosingFuture$Combiner5$AsyncClosingFunction5 } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Combiner5$AsyncClosingFunction5.d.ts'
+import type { ClosingFuture$Combiner5$ClosingFunction5 } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Combiner5$ClosingFunction5.d.ts'
+import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class ClosingFuture$Combiner5<V1 extends Object | number | string | boolean, V2 extends Object | number | string | boolean, V3 extends Object | number | string | boolean, V4 extends Object | number | string | boolean, V5 extends Object | number | string | boolean> extends ClosingFuture$Combiner {
+    private constructor(future1: ClosingFuture<V1>, future2: ClosingFuture<V2>, future3: ClosingFuture<V3>, future4: ClosingFuture<V4>, future5: ClosingFuture<V5>)
+    // private future1: ClosingFuture<V1>;
+    // private future2: ClosingFuture<V2>;
+    // private future3: ClosingFuture<V3>;
+    // private future4: ClosingFuture<V4>;
+    // private future5: ClosingFuture<V5>;
+    call(function_: (param0: V1, param1: V2, param2: V3, param3: V4, param4: V5, param5: U) => unknown, executor: Executor): ClosingFuture<U>;
+    callAsync(function_: (param0: V1, param1: V2, param2: V3, param3: V4, param4: V5, param5: U) => com.google.common.util.concurrent.ClosingFuture<unknown>, executor: Executor): ClosingFuture<U>;
+}

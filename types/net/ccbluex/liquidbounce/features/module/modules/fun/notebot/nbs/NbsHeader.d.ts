@@ -1,0 +1,50 @@
+import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+export class NbsHeader extends Object {
+    constructor(version: number, vanillaInstrumentCount: number, songLength: number, layerCount: number, songName: string | null, songAuthor: string | null, songOriginalAuthor: string | null, songDescription: string | null, tempo: number, autoSaving: number, autoSavingDuration: number, timeSignature: number, minutesSpent: number, leftClicks: number, rightClicks: number, noteBlocksAdded: number, noteBlocksRemoved: number, midiFileName: string | null, loopOnOff: number, maxLoopCount: number, loopStartTick: number)
+    readonly autoSaving: number;
+    readonly autoSavingDuration: number;
+    readonly layerCount: number;
+    readonly leftClicks: number;
+    readonly loopOnOff: number;
+    readonly loopStartTick: number;
+    readonly maxLoopCount: number;
+    readonly midiFileName: string | null;
+    readonly minutesSpent: number;
+    readonly noteBlocksAdded: number;
+    readonly noteBlocksRemoved: number;
+    readonly rightClicks: number;
+    readonly songAuthor: string | null;
+    readonly songDescription: string | null;
+    readonly songLength: number;
+    readonly songName: string | null;
+    readonly songOriginalAuthor: string | null;
+    readonly tempo: number;
+    readonly timeSignature: number;
+    readonly vanillaInstrumentCount: number;
+    readonly version: number;
+    component1(): number;
+    component10(): number;
+    component11(): number;
+    component12(): number;
+    component13(): number;
+    component14(): number;
+    component15(): number;
+    component16(): number;
+    component17(): number;
+    component18(): string | null;
+    component19(): number;
+    component2(): number;
+    component20(): number;
+    component21(): number;
+    component3(): number;
+    component4(): number;
+    component5(): string | null;
+    component6(): string | null;
+    component7(): string | null;
+    component8(): string | null;
+    component9(): number;
+    copy(version: number, vanillaInstrumentCount: number, songLength: number, layerCount: number, songName: string | null, songAuthor: string | null, songOriginalAuthor: string | null, songDescription: string | null, tempo: number, autoSaving: number, autoSavingDuration: number, timeSignature: number, minutesSpent: number, leftClicks: number, rightClicks: number, noteBlocksAdded: number, noteBlocksRemoved: number, midiFileName: string | null, loopOnOff: number, maxLoopCount: number, loopStartTick: number): NbsHeader;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
+    toString(): string;
+}

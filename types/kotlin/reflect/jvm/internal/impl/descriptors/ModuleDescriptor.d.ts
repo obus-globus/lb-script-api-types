@@ -1,0 +1,16 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
+import type { KotlinBuiltIns } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
+import type { DeclarationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
+import type { ModuleCapability } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleCapability.d.ts'
+import type { PackageViewDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PackageViewDescriptor.d.ts'
+import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
+import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
+export interface ModuleDescriptor extends Object, DeclarationDescriptor{
+    getBuiltIns(): KotlinBuiltIns;
+    getCapability<T extends Object | number | string | boolean>(arg0: ModuleCapability<T>): T;
+    getExpectedByModules(): ModuleDescriptor[];
+    getPackage(arg0: FqName): PackageViewDescriptor;
+    getSubPackagesOf(arg0: FqName, arg1: Function1<Name, boolean>): E[];
+    shouldSeeInternalsOf(arg0: ModuleDescriptor): boolean;
+}

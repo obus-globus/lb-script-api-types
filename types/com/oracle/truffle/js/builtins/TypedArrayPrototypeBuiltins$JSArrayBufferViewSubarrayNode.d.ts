@@ -1,0 +1,28 @@
+import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
+import type { ArrayBufferPrototypeBuiltins$JSArrayBufferOperation } from '../../../../../com/oracle/truffle/js/builtins/ArrayBufferPrototypeBuiltins$JSArrayBufferOperation.d.ts'
+import type { ArrayPrototypeBuiltins$ArraySpeciesConstructorNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$ArraySpeciesConstructorNode.d.ts'
+import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSTypedArrayObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export abstract class TypedArrayPrototypeBuiltins$JSArrayBufferViewSubarrayNode extends ArrayBufferPrototypeBuiltins$JSArrayBufferOperation {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    constructor(context: JSContext, builtin: JSBuiltin)
+    // private arraySpeciesCreateNode: ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
+    getArraySpeciesConstructorNode(): ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
+    subarray(thisObj: JSTypedArrayObject, start: Object, end: Object, negativeBegin: InlinedConditionProfile, negativeEnd: InlinedConditionProfile, smallerEnd: InlinedConditionProfile): JSTypedArrayObject;
+    subarrayGeneric(thisObj: Object, begin0: Object, end0: Object): JSTypedArrayObject;
+    subarrayImpl(thisObj: JSTypedArrayObject, beginByteOffset: number, newLength: Object): JSTypedArrayObject;
+}

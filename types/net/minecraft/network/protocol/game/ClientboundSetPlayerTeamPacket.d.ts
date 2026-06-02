@@ -1,0 +1,35 @@
+import type { Optional } from '../../../../../java/util/Optional.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
+import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
+import type { StreamDecoder } from '../../../../../net/minecraft/network/codec/StreamDecoder.d.ts'
+import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/codec/StreamMemberEncoder.d.ts'
+import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
+import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
+import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
+import type { ClientboundSetPlayerTeamPacket$Action } from '../../../../../net/minecraft/network/protocol/game/ClientboundSetPlayerTeamPacket$Action.d.ts'
+import type { ClientboundSetPlayerTeamPacket$Parameters } from '../../../../../net/minecraft/network/protocol/game/ClientboundSetPlayerTeamPacket$Parameters.d.ts'
+import type { PlayerTeam } from '../../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
+export class ClientboundSetPlayerTeamPacket extends Object implements Packet<ClientGamePacketListener> {
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetPlayerTeamPacket>;
+    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static createAddOrModifyPacket(paramteam: PlayerTeam, paramcreateNew: boolean): ClientboundSetPlayerTeamPacket;
+    static createPlayerPacket(paramteam: PlayerTeam, paramplayer: string, paramaction: ClientboundSetPlayerTeamPacket$Action): ClientboundSetPlayerTeamPacket;
+    static createRemovePacket(paramteam: PlayerTeam): ClientboundSetPlayerTeamPacket;
+    private constructor(name: string, method: number, parameters: Optional<ClientboundSetPlayerTeamPacket$Parameters>, players: E[])
+    private constructor(input: RegistryFriendlyByteBuf)
+    // private method: number;
+    readonly name: string;
+    readonly parameters: Optional<ClientboundSetPlayerTeamPacket$Parameters>;
+    readonly players: E[];
+    getName(): string;
+    getParameters(): Optional<ClientboundSetPlayerTeamPacket$Parameters>;
+    getPlayerAction(): ClientboundSetPlayerTeamPacket$Action;
+    getPlayers(): E[];
+    getTeamAction(): ClientboundSetPlayerTeamPacket$Action;
+    handle(listener: ClientGamePacketListener): void;
+    isSkippable(): boolean;
+    isTerminal(): boolean;
+    type(): PacketType<ClientboundSetPlayerTeamPacket>;
+    // private write(output: RegistryFriendlyByteBuf): void;
+}

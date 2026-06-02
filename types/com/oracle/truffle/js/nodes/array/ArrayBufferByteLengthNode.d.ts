@@ -1,0 +1,10 @@
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
+import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSArrayBufferObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject.d.ts'
+export abstract class ArrayBufferByteLengthNode extends JavaScriptBaseNode {
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    constructor()
+    execute(node: Node, arrayBufferObj: JSArrayBufferObject, context: JSContext): number;
+}

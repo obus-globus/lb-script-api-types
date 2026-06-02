@@ -1,0 +1,19 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
+import type { BiConsumer } from '../../../../../org/apache/logging/log4j/util/BiConsumer.d.ts'
+import type { PropertySource } from '../../../../../org/apache/logging/log4j/util/PropertySource.d.ts'
+export class EnvironmentPropertySource extends Object implements PropertySource {
+    static provider(): PropertySource;
+    constructor()
+    containsProperty(key: string): boolean;
+    containsProperty(key: string): boolean;
+    forEach(action: (param0: string, param1: string) => void): void;
+    forEach(action: (param0: string, param1: string) => void): void;
+    getNormalForm(tokens: CharSequence[]): CharSequence;
+    getNormalForm(tokens: CharSequence[]): CharSequence;
+    getPriority(): number;
+    getProperty(key: string): string;
+    getProperty(key: string): string;
+    getPropertyNames(): E[];
+    getPropertyNames(): E[];
+}

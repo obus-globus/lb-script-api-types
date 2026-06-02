@@ -1,0 +1,7 @@
+import type { SNbt } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/snbt/SNbt.d.ts'
+import type { EventSerializer$IOFunction } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/EventSerializer$IOFunction.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+export interface EventSerializer$BasicIOFunction<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends EventSerializer$IOFunction<I, O>, Object{
+    apply(arg0: I): O;
+    apply(arg0: SNbt<Object>, arg1: I): O;
+}

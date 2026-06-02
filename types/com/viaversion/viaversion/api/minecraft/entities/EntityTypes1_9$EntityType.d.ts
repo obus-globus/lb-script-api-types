@@ -1,0 +1,108 @@
+import type { EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
+export class EntityTypes1_9$EntityType extends Enum<EntityTypes1_9$EntityType> implements EntityType {
+    static ABSTRACT_AGEABLE: EntityTypes1_9$EntityType;
+    static ABSTRACT_ANIMAL: EntityTypes1_9$EntityType;
+    static ABSTRACT_ARROW: EntityTypes1_9$EntityType;
+    static ABSTRACT_CREATURE: EntityTypes1_9$EntityType;
+    static ABSTRACT_GOLEM: EntityTypes1_9$EntityType;
+    static ABSTRACT_MINECART: EntityTypes1_9$EntityType;
+    static ABSTRACT_MINECART_CONTAINER: EntityTypes1_9$EntityType;
+    static ABSTRACT_MONSTER: EntityTypes1_9$EntityType;
+    static AMBIENT_CREATURE: EntityTypes1_9$EntityType;
+    static AREA_EFFECT_CLOUD: EntityTypes1_9$EntityType;
+    static ARMOR_STAND: EntityTypes1_9$EntityType;
+    static ARROW: EntityTypes1_9$EntityType;
+    static BAT: EntityTypes1_9$EntityType;
+    static BLAZE: EntityTypes1_9$EntityType;
+    static BOAT: EntityTypes1_9$EntityType;
+    static CAVE_SPIDER: EntityTypes1_9$EntityType;
+    static CHEST_MINECART: EntityTypes1_9$EntityType;
+    static CHICKEN: EntityTypes1_9$EntityType;
+    static COMMAND_BLOCK_MINECART: EntityTypes1_9$EntityType;
+    static COW: EntityTypes1_9$EntityType;
+    static CREEPER: EntityTypes1_9$EntityType;
+    static DRAGON_FIREBALL: EntityTypes1_9$EntityType;
+    static EGG: EntityTypes1_9$EntityType;
+    static ENDERMAN: EntityTypes1_9$EntityType;
+    static ENDERMITE: EntityTypes1_9$EntityType;
+    static ENDER_DRAGON: EntityTypes1_9$EntityType;
+    static ENDER_PEARL: EntityTypes1_9$EntityType;
+    static END_CRYSTAL: EntityTypes1_9$EntityType;
+    static ENTITY: EntityTypes1_9$EntityType;
+    static EXPERIENCE_BOTTLE: EntityTypes1_9$EntityType;
+    static EXPERIENCE_ORB: EntityTypes1_9$EntityType;
+    static EYE_OF_ENDER: EntityTypes1_9$EntityType;
+    static FALLING_BLOCK: EntityTypes1_9$EntityType;
+    static FIREBALL: EntityTypes1_9$EntityType;
+    static FIREWORK_ROCKET: EntityTypes1_9$EntityType;
+    static FISHING_HOOK: EntityTypes1_9$EntityType;
+    static FLYING_MOB: EntityTypes1_9$EntityType;
+    static FURNACE_MINECART: EntityTypes1_9$EntityType;
+    static GHAST: EntityTypes1_9$EntityType;
+    static GIANT: EntityTypes1_9$EntityType;
+    static GUARDIAN: EntityTypes1_9$EntityType;
+    static HANGING_ENTITY: EntityTypes1_9$EntityType;
+    static HOPPER_MINECART: EntityTypes1_9$EntityType;
+    static HORSE: EntityTypes1_9$EntityType;
+    static HURTING_PROJECTILE: EntityTypes1_9$EntityType;
+    static IRON_GOLEM: EntityTypes1_9$EntityType;
+    static ITEM: EntityTypes1_9$EntityType;
+    static ITEM_FRAME: EntityTypes1_9$EntityType;
+    static LEASH_KNOT: EntityTypes1_9$EntityType;
+    static LIGHTNING_BOLT: EntityTypes1_9$EntityType;
+    static LIVING_ENTITY: EntityTypes1_9$EntityType;
+    static LIVING_ENTITY_BASE: EntityTypes1_9$EntityType;
+    static MAGMA_CUBE: EntityTypes1_9$EntityType;
+    static MINECART: EntityTypes1_9$EntityType;
+    static MOOSHROOM: EntityTypes1_9$EntityType;
+    static OCELOT: EntityTypes1_9$EntityType;
+    static PAINTING: EntityTypes1_9$EntityType;
+    static PIG: EntityTypes1_9$EntityType;
+    static PLAYER: EntityTypes1_9$EntityType;
+    static POTION: EntityTypes1_9$EntityType;
+    static PROJECTILE: EntityTypes1_9$EntityType;
+    static RABBIT: EntityTypes1_9$EntityType;
+    static SHEEP: EntityTypes1_9$EntityType;
+    static SHULKER: EntityTypes1_9$EntityType;
+    static SHULKER_BULLET: EntityTypes1_9$EntityType;
+    static SILVERFISH: EntityTypes1_9$EntityType;
+    static SKELETON: EntityTypes1_9$EntityType;
+    static SLIME: EntityTypes1_9$EntityType;
+    static SMALL_FIREBALL: EntityTypes1_9$EntityType;
+    static SNOWBALL: EntityTypes1_9$EntityType;
+    static SNOW_GOLEM: EntityTypes1_9$EntityType;
+    static SPAWNER_MINECART: EntityTypes1_9$EntityType;
+    static SPECTRAL_ARROW: EntityTypes1_9$EntityType;
+    static SPIDER: EntityTypes1_9$EntityType;
+    static SQUID: EntityTypes1_9$EntityType;
+    static TAMABLE_ANIMAL: EntityTypes1_9$EntityType;
+    static TNT: EntityTypes1_9$EntityType;
+    static TNT_MINECART: EntityTypes1_9$EntityType;
+    static VILLAGER: EntityTypes1_9$EntityType;
+    static WATER_ANIMAL: EntityTypes1_9$EntityType;
+    static WITCH: EntityTypes1_9$EntityType;
+    static WITHER: EntityTypes1_9$EntityType;
+    static WITHER_SKULL: EntityTypes1_9$EntityType;
+    static WOLF: EntityTypes1_9$EntityType;
+    static ZOMBIE: EntityTypes1_9$EntityType;
+    static ZOMBIE_PIGMEN: EntityTypes1_9$EntityType;
+    static findById(paramarg0: number): EntityTypes1_9$EntityType;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): EntityTypes1_9$EntityType;
+    static values(): (Object | null)[];
+    private constructor()
+    private constructor(arg2: EntityTypes1_9$EntityType)
+    private constructor(arg2: number, arg3: EntityTypes1_9$EntityType)
+    readonly id: number;
+    readonly parent: EntityTypes1_9$EntityType;
+    getId(): number;
+    getParent(): EntityTypes1_9$EntityType;
+    identifier(): string;
+    is(arg0: EntityType): boolean;
+    isAbstractType(): boolean;
+    isOrHasParent(arg0: EntityType): boolean;
+    name(): "ENTITY" | "AREA_EFFECT_CLOUD" | "END_CRYSTAL" | "EXPERIENCE_ORB" | "EYE_OF_ENDER" | "FALLING_BLOCK" | "ITEM" | "TNT" | "LIGHTNING_BOLT" | "HANGING_ENTITY" | "LEASH_KNOT" | "ITEM_FRAME" | "PAINTING" | "PROJECTILE" | "FIREWORK_ROCKET" | "SHULKER_BULLET" | "SNOWBALL" | "ENDER_PEARL" | "EGG" | "EXPERIENCE_BOTTLE" | "POTION" | "FISHING_HOOK" | "ABSTRACT_ARROW" | "ARROW" | "SPECTRAL_ARROW" | "HURTING_PROJECTILE" | "DRAGON_FIREBALL" | "FIREBALL" | "SMALL_FIREBALL" | "WITHER_SKULL" | "BOAT" | "ABSTRACT_MINECART" | "MINECART" | "FURNACE_MINECART" | "COMMAND_BLOCK_MINECART" | "TNT_MINECART" | "SPAWNER_MINECART" | "ABSTRACT_MINECART_CONTAINER" | "CHEST_MINECART" | "HOPPER_MINECART" | "LIVING_ENTITY_BASE" | "ARMOR_STAND" | "PLAYER" | "LIVING_ENTITY" | "ENDER_DRAGON" | "ABSTRACT_CREATURE" | "SLIME" | "MAGMA_CUBE" | "FLYING_MOB" | "GHAST" | "AMBIENT_CREATURE" | "BAT" | "ABSTRACT_GOLEM" | "SNOW_GOLEM" | "IRON_GOLEM" | "SHULKER" | "WATER_ANIMAL" | "SQUID" | "ABSTRACT_AGEABLE" | "VILLAGER" | "ABSTRACT_ANIMAL" | "CHICKEN" | "COW" | "MOOSHROOM" | "PIG" | "RABBIT" | "SHEEP" | "HORSE" | "TAMABLE_ANIMAL" | "OCELOT" | "WOLF" | "ABSTRACT_MONSTER" | "BLAZE" | "CREEPER" | "ENDERMITE" | "ENDERMAN" | "GIANT" | "SILVERFISH" | "WITCH" | "WITHER" | "SKELETON" | "ZOMBIE" | "ZOMBIE_PIGMEN" | "GUARDIAN" | "SPIDER" | "CAVE_SPIDER";
+}

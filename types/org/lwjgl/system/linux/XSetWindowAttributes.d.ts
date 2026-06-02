@@ -1,0 +1,114 @@
+import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class XSetWindowAttributes extends Struct<XSetWindowAttributes> implements NativeResource {
+    static ALIGNOF: number;
+    static BACKGROUND_PIXEL: number;
+    static BACKGROUND_PIXMAP: number;
+    static BACKING_PIXEL: number;
+    static BACKING_PLANES: number;
+    static BACKING_STORE: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static BIT_GRAVITY: number;
+    static BORDER_PIXEL: number;
+    static BORDER_PIXMAP: number;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static COLORMAP: number;
+    static CURSOR: number;
+    static DO_NOT_PROPAGATE_MASK: number;
+    static EVENT_MASK: number;
+    static OVERRIDE_REDIRECT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SAVE_UNDER: number;
+    static SIZEOF: number;
+    static WIN_GRAVITY: number;
+    static calloc(): XSetWindowAttributes;
+    static calloc(paramarg0: MemoryStack): XSetWindowAttributes;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): XSetWindowAttributes;
+    static create(paramarg0: number): XSetWindowAttributes;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): XSetWindowAttributes;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): XSetWindowAttributes;
+    static malloc(paramarg0: MemoryStack): XSetWindowAttributes;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static nbackground_pixel(paramarg0: number): number;
+    static nbackground_pixel(paramarg0: number, paramarg1: number): void;
+    static nbackground_pixmap(paramarg0: number): number;
+    static nbackground_pixmap(paramarg0: number, paramarg1: number): void;
+    static nbacking_pixel(paramarg0: number): number;
+    static nbacking_pixel(paramarg0: number, paramarg1: number): void;
+    static nbacking_planes(paramarg0: number): number;
+    static nbacking_planes(paramarg0: number, paramarg1: number): void;
+    static nbacking_store(paramarg0: number): number;
+    static nbacking_store(paramarg0: number, paramarg1: number): void;
+    static nbit_gravity(paramarg0: number): number;
+    static nbit_gravity(paramarg0: number, paramarg1: number): void;
+    static nborder_pixel(paramarg0: number): number;
+    static nborder_pixel(paramarg0: number, paramarg1: number): void;
+    static nborder_pixmap(paramarg0: number): number;
+    static nborder_pixmap(paramarg0: number, paramarg1: number): void;
+    static ncolormap(paramarg0: number): number;
+    static ncolormap(paramarg0: number, paramarg1: number): void;
+    static ncursor(paramarg0: number): number;
+    static ncursor(paramarg0: number, paramarg1: number): void;
+    static ndo_not_propagate_mask(paramarg0: number): number;
+    static ndo_not_propagate_mask(paramarg0: number, paramarg1: number): void;
+    static nevent_mask(paramarg0: number): number;
+    static nevent_mask(paramarg0: number, paramarg1: number): void;
+    static noverride_redirect(paramarg0: number): number;
+    static noverride_redirect(paramarg0: number, paramarg1: number): void;
+    static nsave_under(paramarg0: number): number;
+    static nsave_under(paramarg0: number, paramarg1: number): void;
+    static nwin_gravity(paramarg0: number): number;
+    static nwin_gravity(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    background_pixel(): number;
+    background_pixel(arg0: number): XSetWindowAttributes;
+    background_pixmap(): number;
+    background_pixmap(arg0: number): XSetWindowAttributes;
+    backing_pixel(): number;
+    backing_pixel(arg0: number): XSetWindowAttributes;
+    backing_planes(): number;
+    backing_planes(arg0: number): XSetWindowAttributes;
+    backing_store(): number;
+    backing_store(arg0: number): XSetWindowAttributes;
+    bit_gravity(): number;
+    bit_gravity(arg0: number): XSetWindowAttributes;
+    border_pixel(): number;
+    border_pixel(arg0: number): XSetWindowAttributes;
+    border_pixmap(): number;
+    border_pixmap(arg0: number): XSetWindowAttributes;
+    close(): void;
+    colormap(): number;
+    colormap(arg0: number): XSetWindowAttributes;
+    create(arg0: number, arg1: ByteBuffer): XSetWindowAttributes;
+    cursor(): number;
+    cursor(arg0: number): XSetWindowAttributes;
+    do_not_propagate_mask(): number;
+    do_not_propagate_mask(arg0: number): XSetWindowAttributes;
+    event_mask(): number;
+    event_mask(arg0: number): XSetWindowAttributes;
+    override_redirect(): boolean;
+    override_redirect(arg0: boolean): XSetWindowAttributes;
+    save_under(): boolean;
+    save_under(arg0: boolean): XSetWindowAttributes;
+    set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: boolean, arg10: number, arg11: number, arg12: boolean, arg13: number, arg14: number): XSetWindowAttributes;
+    set(arg0: XSetWindowAttributes): XSetWindowAttributes;
+    sizeof(): number;
+    win_gravity(): number;
+    win_gravity(arg0: number): XSetWindowAttributes;
+}

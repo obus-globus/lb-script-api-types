@@ -1,0 +1,15 @@
+import type { Float2ByteAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/floats/Float2ByteAVLTreeMap$TreeIterator.d.ts'
+import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
+export class Float2ByteAVLTreeMap$KeyIterator extends Float2ByteAVLTreeMap$TreeIterator implements FloatListIterator {
+    constructor(null_: Float2ByteAVLTreeMap$KeyIterator)
+    constructor(null_: Float2ByteAVLTreeMap$KeyIterator, arg1: number)
+    add(arg0: number): void;
+    add(arg0: number): void;
+    next(): number;
+    nextFloat(): number;
+    previous(): number;
+    previousFloat(): number;
+    remove(): void;
+    set(arg0: number): void;
+    set(arg0: number): void;
+}

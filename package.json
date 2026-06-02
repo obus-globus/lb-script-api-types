@@ -1,0 +1,18 @@
+{
+    "name": "@ccbluex/liquidbounce-script-api",
+    "version": "2026.5.25+nextgen.git-fac52d9",
+    "files": [
+        "types/**/*.d.ts"
+        ,
+"augmentations/**/*.d.ts", "ambient/ambient.d.ts"
+    ],
+    "typesVersions": {
+        "*": {
+            "types/*": ["./types/*"],
+            "augmentations/*": ["./augmentations/*"],
+            "ambient": ["./ambient/ambient.d.ts"]
+        }
+    }
+    ,
+"types": "ambient/ambient.d.ts"
+}

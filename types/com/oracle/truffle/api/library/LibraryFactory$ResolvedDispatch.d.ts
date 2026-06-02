@@ -1,0 +1,12 @@
+import type { LibraryExport } from '../../../../../com/oracle/truffle/api/library/LibraryExport.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class LibraryFactory$ResolvedDispatch extends Object {
+    private constructor(parent: LibraryFactory$ResolvedDispatch, dispatchClass: Class<Object>, libs: LibraryExport<Object>[])
+    // private dispatchClass: Class<Object>;
+    // private libraries: Map<Class<Object>, LibraryExport<Object>>;
+    // private parent: LibraryFactory$ResolvedDispatch;
+    getLibraries(): Class<Object>[];
+    getLibrary(libraryClass: Class<T>): LibraryExport<T>;
+    toString(): string;
+}

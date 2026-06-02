@@ -1,0 +1,29 @@
+import type { Device } from '../../../../ai/djl/Device.d.ts'
+import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
+import type { Adadelta$Builder } from '../../../../ai/djl/training/optimizer/Adadelta$Builder.d.ts'
+import type { Adagrad$Builder } from '../../../../ai/djl/training/optimizer/Adagrad$Builder.d.ts'
+import type { Adam$Builder } from '../../../../ai/djl/training/optimizer/Adam$Builder.d.ts'
+import type { AdamW$Builder } from '../../../../ai/djl/training/optimizer/AdamW$Builder.d.ts'
+import type { Nag$Builder } from '../../../../ai/djl/training/optimizer/Nag$Builder.d.ts'
+import type { Optimizer } from '../../../../ai/djl/training/optimizer/Optimizer.d.ts'
+import type { RmsProp$Builder } from '../../../../ai/djl/training/optimizer/RmsProp$Builder.d.ts'
+import type { Sgd$Builder } from '../../../../ai/djl/training/optimizer/Sgd$Builder.d.ts'
+import type { ParameterTracker } from '../../../../ai/djl/training/tracker/ParameterTracker.d.ts'
+export class AdamW extends Optimizer {
+    static adadelta(): Adadelta$Builder;
+    static adagrad(): Adagrad$Builder;
+    static adam(): Adam$Builder;
+    static adamW(): AdamW$Builder;
+    static builder(): AdamW$Builder;
+    static nag(): Nag$Builder;
+    static rmsprop(): RmsProp$Builder;
+    static sgd(): Sgd$Builder;
+    constructor(arg0: AdamW$Builder)
+    // private beta1: number;
+    // private beta2: number;
+    // private epsilon: number;
+    // private learningRateTracker: ParameterTracker;
+    // private means: { [key: string]: Map<Device, NDArray> };
+    // private variances: { [key: string]: Map<Device, NDArray> };
+    update(arg0: string, arg1: NDArray, arg2: NDArray): void;
+}

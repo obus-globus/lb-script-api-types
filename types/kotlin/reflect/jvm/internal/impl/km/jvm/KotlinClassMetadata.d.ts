@@ -1,0 +1,8 @@
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { KotlinClassMetadata$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/jvm/KotlinClassMetadata$Companion.d.ts'
+export abstract class KotlinClassMetadata extends Object {
+    static Companion: KotlinClassMetadata$Companion;
+    private constructor()
+    // private isAllowedToWrite: boolean;
+    setAllowedToWrite$kotlin_metadata_jvm(arg0: boolean): void;
+}

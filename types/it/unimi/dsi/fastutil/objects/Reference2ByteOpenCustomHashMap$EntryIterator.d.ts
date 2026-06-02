@@ -1,0 +1,13 @@
+import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
+import type { Reference2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteMap$Entry.d.ts'
+import type { Reference2ByteOpenCustomHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteOpenCustomHashMap$MapEntry.d.ts'
+import type { Reference2ByteOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteOpenCustomHashMap$MapIterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+export class Reference2ByteOpenCustomHashMap$EntryIterator extends Reference2ByteOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Reference2ByteMap$Entry<K>> {
+    private constructor(null_: Reference2ByteOpenCustomHashMap$EntryIterator)
+    // private entry: Reference2ByteOpenCustomHashMap$MapEntry;
+    acceptOnIndex(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
+    next(): Reference2ByteOpenCustomHashMap$MapEntry;
+    remove(): void;
+    skip(arg0: number): number;
+}

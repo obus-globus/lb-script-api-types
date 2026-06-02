@@ -1,0 +1,42 @@
+import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
+import type { Function3 } from '../../../../../../../kotlin/jvm/functions/Function3.d.ts'
+import type { Mode } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
+import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
+import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
+import type { WorldRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
+import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
+import type { ModuleStorageESP$ChestType } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP$ChestType.d.ts'
+import type { DistanceFadeUniformValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/render/utils/DistanceFadeUniformValueGroup.d.ts'
+import type { PositionedVoxelShape } from '../../../../../../../net/ccbluex/liquidbounce/utils/math/PositionedVoxelShape.d.ts'
+import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
+/**
+ * StorageESP module
+ *
+ * Allows you to see chests, dispensers, etc. through walls.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt:83}
+ */
+export class ModuleStorageESP extends ClientModule {
+    static INSTANCE: ModuleStorageESP;
+    static categorize(paramarg0: Entity): ModuleStorageESP$ChestType;
+    static categorize(paramarg0: BlockEntity): ModuleStorageESP$ChestType;
+    // private allTypes: ModuleStorageESP$ChestType[];
+    // private distanceFade: DistanceFadeUniformValueGroup;
+    // private mergeAdjacent: boolean;
+    // private /*not mapped: */ getMergeAdjacent(): boolean;
+    // private modes: ModeValueGroup<Mode>;
+    // private renderHandler: EventHook<WorldRenderEvent>;
+    // private requiresChestStealer: boolean;
+    // private /*not mapped: */ getRequiresChestStealer(): boolean;
+    readonly running: boolean;
+    // private collectTrackedBlockShapes(skipWhen: Function1<BlockState, boolean>): PositionedVoxelShape<ModuleStorageESP$ChestType>[];
+    // private forEachTrackedBlockShapes(skipWhen: Function1<BlockState, boolean>, block: Function3<BlockPos, ModuleStorageESP$ChestType, VoxelShape, void>): void;
+    // private markDirtyForModes(): void;
+    onDisabled(): void;
+    onEnabled(): void;
+    showTracers(): boolean;
+}

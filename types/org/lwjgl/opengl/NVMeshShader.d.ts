@@ -1,0 +1,56 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class NVMeshShader extends Object {
+    static GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_MESH_SHADER_NV: number;
+    static GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_NV: number;
+    static GL_MAX_COMBINED_MESH_UNIFORM_COMPONENTS_NV: number;
+    static GL_MAX_COMBINED_TASK_UNIFORM_COMPONENTS_NV: number;
+    static GL_MAX_DRAW_MESH_TASKS_COUNT_NV: number;
+    static GL_MAX_MESH_ATOMIC_COUNTERS_NV: number;
+    static GL_MAX_MESH_ATOMIC_COUNTER_BUFFERS_NV: number;
+    static GL_MAX_MESH_IMAGE_UNIFORMS_NV: number;
+    static GL_MAX_MESH_OUTPUT_PRIMITIVES_NV: number;
+    static GL_MAX_MESH_OUTPUT_VERTICES_NV: number;
+    static GL_MAX_MESH_SHADER_STORAGE_BLOCKS_NV: number;
+    static GL_MAX_MESH_TEXTURE_IMAGE_UNITS_NV: number;
+    static GL_MAX_MESH_TOTAL_MEMORY_SIZE_NV: number;
+    static GL_MAX_MESH_UNIFORM_BLOCKS_NV: number;
+    static GL_MAX_MESH_UNIFORM_COMPONENTS_NV: number;
+    static GL_MAX_MESH_VIEWS_NV: number;
+    static GL_MAX_MESH_WORK_GROUP_INVOCATIONS_NV: number;
+    static GL_MAX_MESH_WORK_GROUP_SIZE_NV: number;
+    static GL_MAX_TASK_ATOMIC_COUNTERS_NV: number;
+    static GL_MAX_TASK_ATOMIC_COUNTER_BUFFERS_NV: number;
+    static GL_MAX_TASK_IMAGE_UNIFORMS_NV: number;
+    static GL_MAX_TASK_OUTPUT_COUNT_NV: number;
+    static GL_MAX_TASK_SHADER_STORAGE_BLOCKS_NV: number;
+    static GL_MAX_TASK_TEXTURE_IMAGE_UNITS_NV: number;
+    static GL_MAX_TASK_TOTAL_MEMORY_SIZE_NV: number;
+    static GL_MAX_TASK_UNIFORM_BLOCKS_NV: number;
+    static GL_MAX_TASK_UNIFORM_COMPONENTS_NV: number;
+    static GL_MAX_TASK_WORK_GROUP_INVOCATIONS_NV: number;
+    static GL_MAX_TASK_WORK_GROUP_SIZE_NV: number;
+    static GL_MESH_OUTPUT_PER_PRIMITIVE_GRANULARITY_NV: number;
+    static GL_MESH_OUTPUT_PER_VERTEX_GRANULARITY_NV: number;
+    static GL_MESH_OUTPUT_TYPE_NV: number;
+    static GL_MESH_PRIMITIVES_OUT_NV: number;
+    static GL_MESH_SHADER_BIT_NV: number;
+    static GL_MESH_SHADER_NV: number;
+    static GL_MESH_SUBROUTINE_NV: number;
+    static GL_MESH_SUBROUTINE_UNIFORM_NV: number;
+    static GL_MESH_VERTICES_OUT_NV: number;
+    static GL_MESH_WORK_GROUP_SIZE_NV: number;
+    static GL_REFERENCED_BY_MESH_SHADER_NV: number;
+    static GL_REFERENCED_BY_TASK_SHADER_NV: number;
+    static GL_TASK_SHADER_BIT_NV: number;
+    static GL_TASK_SHADER_NV: number;
+    static GL_TASK_SUBROUTINE_NV: number;
+    static GL_TASK_SUBROUTINE_UNIFORM_NV: number;
+    static GL_TASK_WORK_GROUP_SIZE_NV: number;
+    static GL_UNIFORM_BLOCK_REFERENCED_BY_MESH_SHADER_NV: number;
+    static GL_UNIFORM_BLOCK_REFERENCED_BY_TASK_SHADER_NV: number;
+    static glDrawMeshTasksIndirectNV(paramarg0: number): void;
+    static glDrawMeshTasksNV(paramarg0: number, paramarg1: number): void;
+    static glMultiDrawMeshTasksIndirectCountNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static glMultiDrawMeshTasksIndirectNV(paramarg0: number, paramarg1: number, paramarg2: number): void;
+    constructor()
+}

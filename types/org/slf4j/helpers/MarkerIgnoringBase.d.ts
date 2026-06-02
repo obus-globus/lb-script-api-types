@@ -1,0 +1,50 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Logger } from '../../../org/slf4j/Logger.d.ts'
+import type { Marker } from '../../../org/slf4j/Marker.d.ts'
+import type { Level } from '../../../org/slf4j/event/Level.d.ts'
+import type { NamedLoggerBase } from '../../../org/slf4j/helpers/NamedLoggerBase.d.ts'
+import type { LoggingEventBuilder } from '../../../org/slf4j/spi/LoggingEventBuilder.d.ts'
+export abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logger {
+    static ROOT_LOGGER_NAME: string;
+    constructor()
+    atDebug(): LoggingEventBuilder;
+    atError(): LoggingEventBuilder;
+    atInfo(): LoggingEventBuilder;
+    atLevel(arg0: Level): LoggingEventBuilder;
+    atTrace(): LoggingEventBuilder;
+    atWarn(): LoggingEventBuilder;
+    debug(arg0: Marker, arg1: string): void;
+    debug(arg0: Marker, arg1: string, arg2: Object): void;
+    debug(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
+    debug(arg0: Marker, arg1: string, arg2: Object[]): void;
+    debug(arg0: Marker, arg1: string, arg2: Throwable): void;
+    error(arg0: Marker, arg1: string): void;
+    error(arg0: Marker, arg1: string, arg2: Object): void;
+    error(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
+    error(arg0: Marker, arg1: string, arg2: Object[]): void;
+    error(arg0: Marker, arg1: string, arg2: Throwable): void;
+    info(arg0: Marker, arg1: string): void;
+    info(arg0: Marker, arg1: string, arg2: Object): void;
+    info(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
+    info(arg0: Marker, arg1: string, arg2: Object[]): void;
+    info(arg0: Marker, arg1: string, arg2: Throwable): void;
+    isDebugEnabled(arg0: Marker): boolean;
+    isEnabledForLevel(arg0: Level): boolean;
+    isErrorEnabled(arg0: Marker): boolean;
+    isInfoEnabled(arg0: Marker): boolean;
+    isTraceEnabled(arg0: Marker): boolean;
+    isWarnEnabled(arg0: Marker): boolean;
+    makeLoggingEventBuilder(arg0: Level): LoggingEventBuilder;
+    toString(): string;
+    trace(arg0: Marker, arg1: string): void;
+    trace(arg0: Marker, arg1: string, arg2: Object): void;
+    trace(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
+    trace(arg0: Marker, arg1: string, arg2: Object[]): void;
+    trace(arg0: Marker, arg1: string, arg2: Throwable): void;
+    warn(arg0: Marker, arg1: string): void;
+    warn(arg0: Marker, arg1: string, arg2: Object): void;
+    warn(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
+    warn(arg0: Marker, arg1: string, arg2: Object[]): void;
+    warn(arg0: Marker, arg1: string, arg2: Throwable): void;
+}

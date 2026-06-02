@@ -1,0 +1,12 @@
+import type { EntityData } from '../../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
+import type { Item } from '../../../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
+import type { Type } from '../../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+export class Types1_4_2 extends Object {
+    static ENTITY_DATA: Type<EntityData>;
+    static ENTITY_DATA_LIST: Type<Object>;
+    static NBTLESS_ITEM: Type<Item>;
+    static NBTLESS_ITEM_ARRAY: Type<(Object | null)[]>;
+    static UNSIGNED_BYTE_BYTE_ARRAY: Type<number[]>;
+    constructor()
+}

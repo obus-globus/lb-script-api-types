@@ -1,0 +1,41 @@
+import type { IntFloatPair } from '../../../../../it/unimi/dsi/fastutil/ints/IntFloatPair.d.ts'
+import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
+import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class IntFloatMutablePair extends Object implements IntFloatPair, Serializable {
+    static lexComparator(): (param0: IntFloatPair) => kotlin.Boolean;
+    static of(paramarg0: number, paramarg1: number): IntFloatMutablePair;
+    static of(paramarg0: number, paramarg1: number): IntFloatPair;
+    constructor(arg0: number, arg1: number)
+    // private left: number;
+    // private right: number;
+    equals(arg0: Object | null): boolean;
+    first(): number;
+    first(arg0: number): IntFloatPair;
+    first(arg0: number): IntFloatPair;
+    firstInt(): number;
+    hashCode(): number;
+    key(): number;
+    key(arg0: number): IntFloatPair;
+    key(arg0: number): IntFloatPair;
+    keyInt(): number;
+    left(arg0: number): IntFloatMutablePair;
+    left(): number;
+    left(arg0: number): IntFloatPair;
+    left(arg0: number): IntFloatPair;
+    leftInt(): number;
+    right(arg0: number): IntFloatMutablePair;
+    right(): number;
+    right(arg0: number): IntFloatPair;
+    right(arg0: number): IntFloatPair;
+    rightFloat(): number;
+    second(): number;
+    second(arg0: number): IntFloatPair;
+    second(arg0: number): IntFloatPair;
+    secondFloat(): number;
+    toString(): string;
+    value(): number;
+    value(arg0: number): IntFloatPair;
+    value(arg0: number): IntFloatPair;
+    valueFloat(): number;
+}

@@ -1,0 +1,37 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { RepeatableNode } from '../../../../../../com/oracle/truffle/js/nodes/RepeatableNode.d.ts'
+import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/BigInt.d.ts'
+import type { SafeInteger } from '../../../../../../com/oracle/truffle/js/runtime/SafeInteger.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export abstract class JSConstantNode extends JavaScriptNode implements RepeatableNode {
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static create(paramvalue: Object): JSConstantNode;
+    static createBigInt(paramvalue: BigInt): JSConstantNode;
+    static createBoolean(paramvalue: boolean): JSConstantNode;
+    static createDouble(paramvalue: number): JSConstantNode;
+    static createInt(paramvalue: number): JSConstantNode;
+    static createNull(): JSConstantNode;
+    static createSafeInteger(paramvalue: SafeInteger): JSConstantNode;
+    static createString(paramvalue: TruffleString): JSConstantNode;
+    static createUndefined(): JSConstantNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    constructor()
+    copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
+    executeVoid(frame: VirtualFrame): void;
+    expressionToString(): string;
+    getDebugProperties(): { [key: string]: Object };
+    getNodeObject(): Object;
+    getValue(): Object;
+    hasTag(tag: Class<Tag>): boolean;
+}

@@ -1,0 +1,29 @@
+import type { ToggleableValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
+import type { Line } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/math/geometry/Line.d.ts'
+import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
+export class ScaffoldMovementPrediction extends ToggleableValueGroup {
+    static INSTANCE: ScaffoldMovementPrediction;
+    // private MAX_PLACEMENT_OFFSETS: number;
+    // private bootstrapBackoff: number;
+    // private /*not mapped: */ getBootstrapBackoff(): number;
+    // private lastPlacementOffsets: Vec3[];
+    // private predictionCutoffDistance: number;
+    // private /*not mapped: */ getPredictionCutoffDistance(): number;
+    // private warmupPlacements: number;
+    // private /*not mapped: */ getWarmupPlacements(): number;
+    getAvgPlacementPos(): Vec3 | null;
+    // private getBootstrapPlacementPos(fallOffPoint: Vec3, fallOffPointToPlayer: Vec3): Vec3;
+    getFallOffPositionOnLine(optimalLine: Line): Vec3 | null;
+    /**
+     * Calculates where the player will stand when he places the block. Useful for rotations
+     *
+     * @returns the predicted pos or `null` if the prediction failed
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/features/ScaffoldMovementPrediction.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/features/ScaffoldMovementPrediction.kt:91}
+     */
+    getPredictedPlacementPos(optimalLine: Line | null): Vec3 | null;
+    // private getWarmupBlendFactor(): number;
+    onDisabled(): void;
+    onPlace(optimalLine: Line | null, lastFallOffPosition: Vec3 | null): void;
+    reset(): void;
+}

@@ -1,0 +1,12 @@
+import type { InetNameResolver } from '../../../io/netty/resolver/InetNameResolver.d.ts'
+import type { NameResolver } from '../../../io/netty/resolver/NameResolver.d.ts'
+import type { Promise } from '../../../io/netty/util/concurrent/Promise.d.ts'
+import type { InetAddress } from '../../../java/net/InetAddress.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class RoundRobinInetAddressResolver extends InetNameResolver {
+    constructor(arg0: (Object | null)[], arg1: NameResolver<InetAddress>)
+    // private nameResolver: NameResolver<InetAddress>;
+    close(): void;
+    doResolve(arg0: string, arg1: Promise<InetAddress>): void;
+    doResolveAll(arg0: string, arg1: Promise<InetAddress[]>): void;
+}

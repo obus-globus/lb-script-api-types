@@ -1,0 +1,63 @@
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
+export class VersionInfo extends Object implements Comparable<VersionInfo> {
+    static ICU_DATA_VERSION: VersionInfo;
+    static ICU_DATA_VERSION_PATH: string;
+    static ICU_VERSION: VersionInfo;
+    static UCOL_BUILDER_VERSION: VersionInfo;
+    static UCOL_RUNTIME_VERSION: VersionInfo;
+    static UCOL_TAILORINGS_VERSION: VersionInfo;
+    static UNICODE_10_0: VersionInfo;
+    static UNICODE_11_0: VersionInfo;
+    static UNICODE_12_0: VersionInfo;
+    static UNICODE_12_1: VersionInfo;
+    static UNICODE_13_0: VersionInfo;
+    static UNICODE_14_0: VersionInfo;
+    static UNICODE_15_0: VersionInfo;
+    static UNICODE_15_1: VersionInfo;
+    static UNICODE_16_0: VersionInfo;
+    static UNICODE_1_0: VersionInfo;
+    static UNICODE_1_0_1: VersionInfo;
+    static UNICODE_1_1_0: VersionInfo;
+    static UNICODE_1_1_5: VersionInfo;
+    static UNICODE_2_0: VersionInfo;
+    static UNICODE_2_1_2: VersionInfo;
+    static UNICODE_2_1_5: VersionInfo;
+    static UNICODE_2_1_8: VersionInfo;
+    static UNICODE_2_1_9: VersionInfo;
+    static UNICODE_3_0: VersionInfo;
+    static UNICODE_3_0_1: VersionInfo;
+    static UNICODE_3_1_0: VersionInfo;
+    static UNICODE_3_1_1: VersionInfo;
+    static UNICODE_3_2: VersionInfo;
+    static UNICODE_4_0: VersionInfo;
+    static UNICODE_4_0_1: VersionInfo;
+    static UNICODE_4_1: VersionInfo;
+    static UNICODE_5_0: VersionInfo;
+    static UNICODE_5_1: VersionInfo;
+    static UNICODE_5_2: VersionInfo;
+    static UNICODE_6_0: VersionInfo;
+    static UNICODE_6_1: VersionInfo;
+    static UNICODE_6_2: VersionInfo;
+    static UNICODE_6_3: VersionInfo;
+    static UNICODE_7_0: VersionInfo;
+    static UNICODE_8_0: VersionInfo;
+    static UNICODE_9_0: VersionInfo;
+    static getInstance(paramarg0: number): VersionInfo;
+    static getInstance(paramarg0: number, paramarg1: number): VersionInfo;
+    static getInstance(paramarg0: number, paramarg1: number, paramarg2: number): VersionInfo;
+    static getInstance(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): VersionInfo;
+    static getInstance(paramarg0: string): VersionInfo;
+    static main(paramarg0: (Object | null)[]): void;
+    private constructor(arg0: number)
+    // private m_version_: number;
+    compareTo(arg0: VersionInfo): number;
+    equals(arg0: Object | null): boolean;
+    getMajor(): number;
+    getMicro(): number;
+    getMilli(): number;
+    getMinor(): number;
+    getVersionString(arg0: number, arg1: number): string;
+    hashCode(): number;
+    toString(): string;
+}

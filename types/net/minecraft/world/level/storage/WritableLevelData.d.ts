@@ -1,0 +1,9 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { CrashReportCategory } from '../../../../../net/minecraft/CrashReportCategory.d.ts'
+import type { LevelHeightAccessor } from '../../../../../net/minecraft/world/level/LevelHeightAccessor.d.ts'
+import type { LevelData } from '../../../../../net/minecraft/world/level/storage/LevelData.d.ts'
+import type { LevelData$RespawnData } from '../../../../../net/minecraft/world/level/storage/LevelData$RespawnData.d.ts'
+export interface WritableLevelData extends Object, LevelData{
+    fillCrashReportCategory(category: CrashReportCategory, levelHeightAccessor: LevelHeightAccessor): void;
+    setSpawn(respawnData: LevelData$RespawnData): void;
+}

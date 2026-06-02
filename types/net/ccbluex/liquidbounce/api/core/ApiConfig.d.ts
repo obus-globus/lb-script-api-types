@@ -1,0 +1,24 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ApiConfig$Companion } from '../../../../../net/ccbluex/liquidbounce/api/core/ApiConfig$Companion.d.ts'
+export class ApiConfig extends Object {
+    /**
+     * This makes sense because we want forks to be able to use this API and not only the official client.
+     * It also allows us to use API endpoints for legacy on other branches.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt:58}
+     */
+    static API_BRANCH: string;
+    static AUTH_AUTHORIZE_URL: string;
+    static AUTH_BASE_URL: string;
+    static AUTH_CLIENT_ID: string;
+    static AVATAR_USERNAME_URL: string;
+    static AVATAR_UUID_URL: string;
+    static CLIENT_CDN: string;
+    static Companion: ApiConfig$Companion;
+    constructor(url: string, secure: boolean, sessionToken: string)
+    readonly apiEndpointV1: string;
+    readonly apiEndpointV3: string;
+    readonly secure: boolean;
+    readonly sessionToken: string;
+    readonly url: string;
+}

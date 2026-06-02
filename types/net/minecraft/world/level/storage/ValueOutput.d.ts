@@ -1,0 +1,28 @@
+import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
+import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { FabricValueOutput } from '../../../../../net/fabricmc/fabric/api/serialization/v1/value/FabricValueOutput.d.ts'
+import type { ValueOutputMixin } from '../../../../../net/fabricmc/fabric/mixin/serialization/ValueOutputMixin.d.ts'
+import type { ValueOutput$TypedOutputList } from '../../../../../net/minecraft/world/level/storage/ValueOutput$TypedOutputList.d.ts'
+import type { ValueOutput$ValueOutputList } from '../../../../../net/minecraft/world/level/storage/ValueOutput$ValueOutputList.d.ts'
+export interface ValueOutput extends Object, FabricValueOutput, ValueOutputMixin{
+    child(name: string): ValueOutput;
+    childrenList(name: string): ValueOutput$ValueOutputList;
+    discard(name: string): void;
+    isEmpty(): boolean;
+    list(name: string, codec: Codec<T>): ValueOutput$TypedOutputList<T>;
+    putBoolean(name: string, value: boolean): void;
+    putByte(name: string, value: number): void;
+    putByteArray(arg0: string, arg1: number[]): void;
+    putDouble(name: string, value: number): void;
+    putFloat(name: string, value: number): void;
+    putInt(name: string, value: number): void;
+    putIntArray(name: string, value: number[]): void;
+    putLong(name: string, value: number): void;
+    putLongArray(arg0: string, arg1: number[]): void;
+    putShort(name: string, value: number): void;
+    putString(name: string, value: string): void;
+    store<T extends Object | number | string | boolean>(codec: MapCodec<T>, value: T): void;
+    store<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, value: T): void;
+    storeNullable<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, value: T): void;
+}

@@ -1,0 +1,48 @@
+import type { OutputStream } from '../java/io/OutputStream.d.ts'
+import type { ByteBuffer } from '../java/nio/ByteBuffer.d.ts'
+import type { Charset } from '../java/nio/charset/Charset.d.ts'
+import type { Object } from '../java/lang/Object.d.ts'
+import type { Buffer } from '../okio/Buffer.d.ts'
+import type { BufferedSink } from '../okio/BufferedSink.d.ts'
+import type { ByteString } from '../okio/ByteString.d.ts'
+import type { Sink } from '../okio/Sink.d.ts'
+import type { Source } from '../okio/Source.d.ts'
+import type { Timeout } from '../okio/Timeout.d.ts'
+export class RealBufferedSink extends Object implements BufferedSink {
+    constructor(sink: Sink)
+    readonly buffer: Buffer;
+    bufferField: Buffer;
+    closed: boolean;
+    sink: Sink;
+    buffer(): Buffer;
+    close(): void;
+    emit(): BufferedSink;
+    emitCompleteSegments(): BufferedSink;
+    flush(): void;
+    isOpen(): boolean;
+    outputStream(): OutputStream;
+    timeout(): Timeout;
+    toString(): string;
+    write(source: ByteBuffer): number;
+    write(source: number[]): BufferedSink;
+    write(source: number[], offset: number, byteCount: number): BufferedSink;
+    write(source: Buffer, byteCount: number): void;
+    write(byteString: ByteString): BufferedSink;
+    write(byteString: ByteString, offset: number, byteCount: number): BufferedSink;
+    write(source: Source, byteCount: number): BufferedSink;
+    writeAll(source: Source): number;
+    writeByte(b: number): BufferedSink;
+    writeDecimalLong(v: number): BufferedSink;
+    writeHexadecimalUnsignedLong(v: number): BufferedSink;
+    writeInt(i: number): BufferedSink;
+    writeIntLe(i: number): BufferedSink;
+    writeLong(v: number): BufferedSink;
+    writeLongLe(v: number): BufferedSink;
+    writeShort(s: number): BufferedSink;
+    writeShortLe(s: number): BufferedSink;
+    writeString(string: string, charset: Charset): BufferedSink;
+    writeString(string: string, beginIndex: number, endIndex: number, charset: Charset): BufferedSink;
+    writeUtf8(string: string): BufferedSink;
+    writeUtf8(string: string, beginIndex: number, endIndex: number): BufferedSink;
+    writeUtf8CodePoint(codePoint: number): BufferedSink;
+}

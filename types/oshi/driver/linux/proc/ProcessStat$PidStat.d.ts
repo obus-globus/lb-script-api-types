@@ -1,0 +1,62 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+export class ProcessStat$PidStat extends Enum<ProcessStat$PidStat> {
+    static ARG_END: ProcessStat$PidStat;
+    static ARG_START: ProcessStat$PidStat;
+    static BLOCKED: ProcessStat$PidStat;
+    static CGUEST_TIME: ProcessStat$PidStat;
+    static CMAJFLT: ProcessStat$PidStat;
+    static CMINFLT: ProcessStat$PidStat;
+    static CNSWAP: ProcessStat$PidStat;
+    static COMM: ProcessStat$PidStat;
+    static CSTIME: ProcessStat$PidStat;
+    static CUTIME: ProcessStat$PidStat;
+    static DELAYACCT_BLKIO_TICKS: ProcessStat$PidStat;
+    static ENDCODE: ProcessStat$PidStat;
+    static END_DATA: ProcessStat$PidStat;
+    static ENV_END: ProcessStat$PidStat;
+    static ENV_START: ProcessStat$PidStat;
+    static EXIT_CODE: ProcessStat$PidStat;
+    static EXIT_SIGNAL: ProcessStat$PidStat;
+    static FLAGS: ProcessStat$PidStat;
+    static GUEST_TIME: ProcessStat$PidStat;
+    static ITREALVALUE: ProcessStat$PidStat;
+    static KSTKEIP: ProcessStat$PidStat;
+    static KSTKESP: ProcessStat$PidStat;
+    static MAJFLT: ProcessStat$PidStat;
+    static MINFLT: ProcessStat$PidStat;
+    static NICE: ProcessStat$PidStat;
+    static NSWAP: ProcessStat$PidStat;
+    static NUM_THREADS: ProcessStat$PidStat;
+    static PGRP: ProcessStat$PidStat;
+    static PID: ProcessStat$PidStat;
+    static POLICY: ProcessStat$PidStat;
+    static PPID: ProcessStat$PidStat;
+    static PRIORITY: ProcessStat$PidStat;
+    static PROCESSOR: ProcessStat$PidStat;
+    static PTGID: ProcessStat$PidStat;
+    static RSS: ProcessStat$PidStat;
+    static RSSLIM: ProcessStat$PidStat;
+    static RT_PRIORITY: ProcessStat$PidStat;
+    static SESSION: ProcessStat$PidStat;
+    static SIGCATCH: ProcessStat$PidStat;
+    static SIGIGNORE: ProcessStat$PidStat;
+    static SIGNAL: ProcessStat$PidStat;
+    static STARTCODE: ProcessStat$PidStat;
+    static STARTSTACK: ProcessStat$PidStat;
+    static STARTTIME: ProcessStat$PidStat;
+    static START_BRK: ProcessStat$PidStat;
+    static START_DATA: ProcessStat$PidStat;
+    static STATE: ProcessStat$PidStat;
+    static STIME: ProcessStat$PidStat;
+    static TTY_NR: ProcessStat$PidStat;
+    static UTIME: ProcessStat$PidStat;
+    static VSIZE: ProcessStat$PidStat;
+    static WCHAN: ProcessStat$PidStat;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): ProcessStat$PidStat;
+    static values(): (Object | null)[];
+    private constructor()
+    name(): "PID" | "COMM" | "STATE" | "PPID" | "PGRP" | "SESSION" | "TTY_NR" | "PTGID" | "FLAGS" | "MINFLT" | "CMINFLT" | "MAJFLT" | "CMAJFLT" | "UTIME" | "STIME" | "CUTIME" | "CSTIME" | "PRIORITY" | "NICE" | "NUM_THREADS" | "ITREALVALUE" | "STARTTIME" | "VSIZE" | "RSS" | "RSSLIM" | "STARTCODE" | "ENDCODE" | "STARTSTACK" | "KSTKESP" | "KSTKEIP" | "SIGNAL" | "BLOCKED" | "SIGIGNORE" | "SIGCATCH" | "WCHAN" | "NSWAP" | "CNSWAP" | "EXIT_SIGNAL" | "PROCESSOR" | "RT_PRIORITY" | "POLICY" | "DELAYACCT_BLKIO_TICKS" | "GUEST_TIME" | "CGUEST_TIME" | "START_DATA" | "END_DATA" | "START_BRK" | "ARG_START" | "ARG_END" | "ENV_START" | "ENV_END" | "EXIT_CODE";
+}

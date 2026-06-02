@@ -1,0 +1,133 @@
+import type { File } from '../../../../../java/io/File.d.ts'
+import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
+import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d.ts'
+import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
+import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
+import type { MessageDigest } from '../../../../../java/security/MessageDigest.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class DigestUtils extends Object {
+    static digest(paramarg0: MessageDigest, paramarg1: number[]): number[];
+    static digest(paramarg0: MessageDigest, paramarg1: File): number[];
+    static digest(paramarg0: MessageDigest, paramarg1: InputStream): number[];
+    static digest(paramarg0: MessageDigest, paramarg1: RandomAccessFile): number[];
+    static digest(paramarg0: MessageDigest, paramarg1: ByteBuffer): number[];
+    static digest(paramarg0: MessageDigest, paramarg1: Path[][], paramarg2: (Object | null)[]): number[];
+    static getDigest(paramarg0: string): MessageDigest;
+    static getDigest(paramarg0: string, paramarg1: MessageDigest): MessageDigest;
+    static getMd2Digest(): MessageDigest;
+    static getMd5Digest(): MessageDigest;
+    static getSha1Digest(): MessageDigest;
+    static getSha256Digest(): MessageDigest;
+    static getSha384Digest(): MessageDigest;
+    static getSha3_224Digest(): MessageDigest;
+    static getSha3_256Digest(): MessageDigest;
+    static getSha3_384Digest(): MessageDigest;
+    static getSha3_512Digest(): MessageDigest;
+    static getSha512Digest(): MessageDigest;
+    static getSha512_224Digest(): MessageDigest;
+    static getSha512_256Digest(): MessageDigest;
+    static getShaDigest(): MessageDigest;
+    static isAvailable(paramarg0: string): boolean;
+    static md2(paramarg0: number[]): number[];
+    static md2(paramarg0: InputStream): number[];
+    static md2(paramarg0: string): number[];
+    static md2Hex(paramarg0: number[]): string;
+    static md2Hex(paramarg0: InputStream): string;
+    static md2Hex(paramarg0: string): string;
+    static md5(paramarg0: number[]): number[];
+    static md5(paramarg0: InputStream): number[];
+    static md5(paramarg0: string): number[];
+    static md5Hex(paramarg0: number[]): string;
+    static md5Hex(paramarg0: InputStream): string;
+    static md5Hex(paramarg0: string): string;
+    static sha(paramarg0: number[]): number[];
+    static sha(paramarg0: InputStream): number[];
+    static sha(paramarg0: string): number[];
+    static sha1(paramarg0: number[]): number[];
+    static sha1(paramarg0: InputStream): number[];
+    static sha1(paramarg0: string): number[];
+    static sha1Hex(paramarg0: number[]): string;
+    static sha1Hex(paramarg0: InputStream): string;
+    static sha1Hex(paramarg0: string): string;
+    static sha256(paramarg0: number[]): number[];
+    static sha256(paramarg0: InputStream): number[];
+    static sha256(paramarg0: string): number[];
+    static sha256Hex(paramarg0: number[]): string;
+    static sha256Hex(paramarg0: InputStream): string;
+    static sha256Hex(paramarg0: string): string;
+    static sha384(paramarg0: number[]): number[];
+    static sha384(paramarg0: InputStream): number[];
+    static sha384(paramarg0: string): number[];
+    static sha384Hex(paramarg0: number[]): string;
+    static sha384Hex(paramarg0: InputStream): string;
+    static sha384Hex(paramarg0: string): string;
+    static sha3_224(paramarg0: number[]): number[];
+    static sha3_224(paramarg0: InputStream): number[];
+    static sha3_224(paramarg0: string): number[];
+    static sha3_224Hex(paramarg0: number[]): string;
+    static sha3_224Hex(paramarg0: InputStream): string;
+    static sha3_224Hex(paramarg0: string): string;
+    static sha3_256(paramarg0: number[]): number[];
+    static sha3_256(paramarg0: InputStream): number[];
+    static sha3_256(paramarg0: string): number[];
+    static sha3_256Hex(paramarg0: number[]): string;
+    static sha3_256Hex(paramarg0: InputStream): string;
+    static sha3_256Hex(paramarg0: string): string;
+    static sha3_384(paramarg0: number[]): number[];
+    static sha3_384(paramarg0: InputStream): number[];
+    static sha3_384(paramarg0: string): number[];
+    static sha3_384Hex(paramarg0: number[]): string;
+    static sha3_384Hex(paramarg0: InputStream): string;
+    static sha3_384Hex(paramarg0: string): string;
+    static sha3_512(paramarg0: number[]): number[];
+    static sha3_512(paramarg0: InputStream): number[];
+    static sha3_512(paramarg0: string): number[];
+    static sha3_512Hex(paramarg0: number[]): string;
+    static sha3_512Hex(paramarg0: InputStream): string;
+    static sha3_512Hex(paramarg0: string): string;
+    static sha512(paramarg0: number[]): number[];
+    static sha512(paramarg0: InputStream): number[];
+    static sha512(paramarg0: string): number[];
+    static sha512Hex(paramarg0: number[]): string;
+    static sha512Hex(paramarg0: InputStream): string;
+    static sha512Hex(paramarg0: string): string;
+    static sha512_224(paramarg0: number[]): number[];
+    static sha512_224(paramarg0: InputStream): number[];
+    static sha512_224(paramarg0: string): number[];
+    static sha512_224Hex(paramarg0: number[]): string;
+    static sha512_224Hex(paramarg0: InputStream): string;
+    static sha512_224Hex(paramarg0: string): string;
+    static sha512_256(paramarg0: number[]): number[];
+    static sha512_256(paramarg0: InputStream): number[];
+    static sha512_256(paramarg0: string): number[];
+    static sha512_256Hex(paramarg0: number[]): string;
+    static sha512_256Hex(paramarg0: InputStream): string;
+    static sha512_256Hex(paramarg0: string): string;
+    static shaHex(paramarg0: number[]): string;
+    static shaHex(paramarg0: InputStream): string;
+    static shaHex(paramarg0: string): string;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: number[]): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: File): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: InputStream): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: RandomAccessFile): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: string): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: ByteBuffer): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: Path[][], paramarg2: (Object | null)[]): MessageDigest;
+    constructor()
+    constructor(arg0: MessageDigest)
+    constructor(arg0: string)
+    readonly messageDigest: MessageDigest;
+    digest(arg0: File): number[];
+    digest(arg0: InputStream): number[];
+    digest(arg0: ByteBuffer): number[];
+    digest(arg0: Path[], arg1: OpenOption[]): number[];
+    digest(arg0: number[]): number[];
+    digest(arg0: string): number[];
+    digestAsHex(arg0: File): string;
+    digestAsHex(arg0: InputStream): string;
+    digestAsHex(arg0: ByteBuffer): string;
+    digestAsHex(arg0: Path[], arg1: OpenOption[]): string;
+    digestAsHex(arg0: number[]): string;
+    digestAsHex(arg0: string): string;
+    getMessageDigest(): MessageDigest;
+}

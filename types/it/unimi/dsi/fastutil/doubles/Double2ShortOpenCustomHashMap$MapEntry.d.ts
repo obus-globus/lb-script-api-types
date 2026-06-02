@@ -1,0 +1,52 @@
+import type { Double2ShortMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ShortMap$Entry.d.ts'
+import type { DoubleShortPair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleShortPair.d.ts'
+import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export class Double2ShortOpenCustomHashMap$MapEntry extends Object implements Double2ShortMap$Entry, DoubleShortPair, Map$Entry<number, number> {
+    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
+    static lexComparator(): (param0: DoubleShortPair) => kotlin.Boolean;
+    static of(paramarg0: number, paramarg1: number): DoubleShortPair;
+    constructor(null_: Double2ShortOpenCustomHashMap$MapEntry)
+    constructor(null_: Double2ShortOpenCustomHashMap$MapEntry, arg1: number)
+    // private index: number;
+    readonly key: number;
+    readonly value: number;
+    equals(arg0: Object | null): boolean;
+    first(): number;
+    first(arg0: number): DoubleShortPair;
+    first(arg0: number): DoubleShortPair;
+    firstDouble(): number;
+    getDoubleKey(): number;
+    getShortValue(): number;
+    hashCode(): number;
+    key(): number;
+    key(arg0: number): DoubleShortPair;
+    key(arg0: number): DoubleShortPair;
+    keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleShortPair;
+    left(arg0: number): DoubleShortPair;
+    leftDouble(): number;
+    right(arg0: number): DoubleShortPair;
+    right(): number;
+    right(arg0: number): DoubleShortPair;
+    right(arg0: number): DoubleShortPair;
+    rightShort(): number;
+    second(): number;
+    second(arg0: number): DoubleShortPair;
+    second(arg0: number): DoubleShortPair;
+    secondShort(): number;
+    setValue(arg0: number): number;
+    setValue(arg0: number): number;
+    setValue(arg0: number): number;
+    toString(): string;
+    value(): number;
+    value(arg0: number): DoubleShortPair;
+    value(arg0: number): DoubleShortPair;
+    valueShort(): number;
+}

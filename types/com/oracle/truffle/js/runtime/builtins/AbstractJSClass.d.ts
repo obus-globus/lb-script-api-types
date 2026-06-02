@@ -1,0 +1,34 @@
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { JSClass } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSClass.d.ts'
+import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export abstract class AbstractJSClass extends JSClass {
+    static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
+    static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;
+    static isInstance(paramobject: Object, paramjsclass: JSClass): boolean;
+    constructor()
+    defineOwnProperty(thisObj: JSDynamicObject, key: Object, desc: PropertyDescriptor, doThrow: boolean): boolean;
+    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
+    getHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
+    getHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
+    getMethodHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
+    getOwnHelper(store: JSDynamicObject, thisObj: Object, name: Object, encapsulatingNode: Node): Object;
+    getOwnHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
+    getOwnProperty(thisObj: JSDynamicObject, key: Object): PropertyDescriptor;
+    getOwnPropertyKeys(thisObj: JSDynamicObject, strings: boolean, symbols: boolean): Object[];
+    getPrototypeOf(thisObj: JSDynamicObject): JSDynamicObject;
+    hasOnlyShapeProperties(obj: JSDynamicObject): boolean;
+    hasOwnProperty(thisObj: JSDynamicObject, key: Object): boolean;
+    hasOwnProperty(thisObj: JSDynamicObject, index: number): boolean;
+    hasProperty(thisObj: JSDynamicObject, key: Object): boolean;
+    hasProperty(thisObj: JSDynamicObject, index: number): boolean;
+    isExtensible(thisObj: JSDynamicObject): boolean;
+    preventExtensions(thisObj: JSDynamicObject, doThrow: boolean): boolean;
+    set(thisObj: JSDynamicObject, key: Object, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
+    set(thisObj: JSDynamicObject, index: number, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
+    setPrototypeOf(thisObj: JSDynamicObject, newPrototype: JSDynamicObject): boolean;
+    usesOrdinaryGetOwnProperty(): boolean;
+    usesOrdinaryIsExtensible(): boolean;
+}

@@ -1,0 +1,13 @@
+import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { RegistryDataLoader$RegistryData } from '../../../../../../net/minecraft/resources/RegistryDataLoader$RegistryData.d.ts'
+import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
+export class DynamicRegistriesImpl extends Object {
+    static DYNAMIC_REGISTRY_KEYS: (Object | null)[];
+    static FABRIC_DYNAMIC_REGISTRY_KEYS: (Object | null)[];
+    static SKIP_EMPTY_SYNC_REGISTRIES: (Object | null)[];
+    static addSyncedRegistry(paramarg0: ResourceKey<Object>, paramarg1: Codec<Object>, paramarg2: (Object | null)[]): void;
+    static getDynamicRegistries(): (Object | null)[];
+    static register(paramarg0: ResourceKey<Object>, paramarg1: Codec<Object>): RegistryDataLoader$RegistryData<Object>;
+    private constructor()
+}

@@ -1,0 +1,7 @@
+import type { Message } from '../../../io/jsonwebtoken/security/Message.d.ts'
+import type { SecureRandom } from '../../../java/security/SecureRandom.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+export interface Request<T extends Object | number | string | boolean> extends Message<T>, Object{
+    getProvider(): Provider;
+    getSecureRandom(): SecureRandom;
+}

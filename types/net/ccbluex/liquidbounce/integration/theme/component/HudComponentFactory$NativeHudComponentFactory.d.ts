@@ -1,0 +1,20 @@
+import type { Function0 } from '../../../../../../kotlin/jvm/functions/Function0.d.ts'
+import type { HudComponent } from '../../../../../../net/ccbluex/liquidbounce/integration/theme/component/HudComponent.d.ts'
+import type { HudComponentFactory } from '../../../../../../net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.d.ts'
+/**
+ * Factory for creating native components from a function.
+ *
+ * @param name Component name
+ * @param enabled Whether the component is enabled
+ * @param function Function producing the component
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt:61}
+ */
+export class HudComponentFactory$NativeHudComponentFactory extends HudComponentFactory {
+    constructor(name: string, enabled: boolean, singleton: boolean, function_: Function0<HudComponent>)
+    readonly enabled: boolean;
+    // private function: () => HudComponent;
+    readonly name: string;
+    readonly singleton: boolean;
+    createComponent(): HudComponent;
+}

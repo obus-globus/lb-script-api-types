@@ -1,0 +1,52 @@
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
+import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
+import type { AnnotationNode } from '../../../../../../org/objectweb/asm/tree/AnnotationNode.d.ts'
+import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
+import type { At } from '../../../../../../org/spongepowered/asm/mixin/injection/At.d.ts'
+import type { At$Shift } from '../../../../../../org/spongepowered/asm/mixin/injection/At$Shift.d.ts'
+import type { Constant$Condition } from '../../../../../../org/spongepowered/asm/mixin/injection/Constant$Condition.d.ts'
+import type { IInjectionPointContext } from '../../../../../../org/spongepowered/asm/mixin/injection/IInjectionPointContext.d.ts'
+import type { InjectionPoint } from '../../../../../../org/spongepowered/asm/mixin/injection/InjectionPoint.d.ts'
+import type { InjectionPointData } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionPointData.d.ts'
+import type { IMixinContext } from '../../../../../../org/spongepowered/asm/mixin/refmap/IMixinContext.d.ts'
+export class BeforeConstant extends InjectionPoint {
+    static DEFAULT_ALLOWED_SHIFT_BY: number;
+    static MAX_ALLOWED_SHIFT_BY: number;
+    static after(paramarg0: InjectionPoint): InjectionPoint;
+    static and(paramarg0: (Object | null)[]): InjectionPoint;
+    static before(paramarg0: InjectionPoint): InjectionPoint;
+    static or(paramarg0: (Object | null)[]): InjectionPoint;
+    static parse(paramarg0: IInjectionPointContext, paramarg1: AnnotationNode[]): InjectionPoint[];
+    static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: AnnotationNode[]): InjectionPoint[];
+    static parse(paramarg0: IInjectionPointContext, paramarg1: string, paramarg2: At$Shift, paramarg3: number, paramarg4: string[], paramarg5: string, paramarg6: string, paramarg7: number, paramarg8: number, paramarg9: string, paramarg10: number): InjectionPoint;
+    static parse(paramarg0: IInjectionPointContext, paramarg1: AnnotationNode): InjectionPoint;
+    static parse(paramarg0: IInjectionPointContext, paramarg1: At): InjectionPoint;
+    static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: string, paramarg4: At$Shift, paramarg5: number, paramarg6: string[], paramarg7: string, paramarg8: string, paramarg9: number, paramarg10: number, paramarg11: string, paramarg12: number): InjectionPoint;
+    static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: AnnotationNode): InjectionPoint;
+    static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: At): InjectionPoint;
+    static register(paramarg0: Class<Object>): void;
+    static register(paramarg0: Class<Object>, paramarg1: string): void;
+    static shift(paramarg0: InjectionPoint, paramarg1: number): InjectionPoint;
+    constructor(arg0: InjectionPointData)
+    constructor(arg0: IMixinContext, arg1: AnnotationNode, arg2: string)
+    // private doubleValue: number;
+    // private expand: boolean;
+    // private expandOpcodes: number[];
+    // private floatValue: number;
+    // private intValue: number;
+    // private log: boolean;
+    // private longValue: number;
+    // private matchByType: string;
+    // private nullValue: boolean;
+    // private ordinal: number;
+    // private stringValue: string;
+    // private typeValue: Type;
+    find(arg0: string, arg1: AbstractInsnNode[], arg2: E[]): boolean;
+    log(arg0: string, arg1: Object[]): void;
+    // private matchesConditionalInsn(arg0: number, arg1: AbstractInsnNode): boolean;
+    // private matchesConstantInsn(arg0: AbstractInsnNode): boolean;
+    // private parseExpandOpcodes(arg0: Constant$Condition[]): number[];
+    // private validateDiscriminator(arg0: IMixinContext, arg1: string, arg2: boolean, arg3: string): string;
+}

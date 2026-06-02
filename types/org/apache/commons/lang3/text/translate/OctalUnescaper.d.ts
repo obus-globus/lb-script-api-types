@@ -1,0 +1,9 @@
+import type { Writer } from '../../../../../../java/io/Writer.d.ts'
+import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
+import type { CharSequenceTranslator } from '../../../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.d.ts'
+export class OctalUnescaper extends CharSequenceTranslator {
+    static hex(paramarg0: number): string;
+    constructor()
+    // private isZeroToThree(arg0: string): boolean;
+    translate(arg0: CharSequence, arg1: number, arg2: Writer): number;
+}

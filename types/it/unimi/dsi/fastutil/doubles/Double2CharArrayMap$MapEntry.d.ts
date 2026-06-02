@@ -1,0 +1,52 @@
+import type { Double2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2CharMap$Entry.d.ts'
+import type { DoubleCharPair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleCharPair.d.ts'
+import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export class Double2CharArrayMap$MapEntry extends Object implements Double2CharMap$Entry, DoubleCharPair, Map$Entry<number, string> {
+    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
+    static lexComparator(): (param0: DoubleCharPair) => kotlin.Boolean;
+    static of(paramarg0: number, paramarg1: string): DoubleCharPair;
+    constructor(null_: Double2CharArrayMap$MapEntry)
+    constructor(null_: Double2CharArrayMap$MapEntry, arg1: number)
+    // private index: number;
+    readonly key: number;
+    readonly value: string;
+    equals(arg0: Object | null): boolean;
+    first(): number;
+    first(arg0: number): DoubleCharPair;
+    first(arg0: number): DoubleCharPair;
+    firstDouble(): number;
+    getCharValue(): string;
+    getDoubleKey(): number;
+    hashCode(): number;
+    key(): number;
+    key(arg0: number): DoubleCharPair;
+    key(arg0: number): DoubleCharPair;
+    keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleCharPair;
+    left(arg0: number): DoubleCharPair;
+    leftDouble(): number;
+    right(arg0: string): DoubleCharPair;
+    right(): string;
+    right(arg0: string): DoubleCharPair;
+    right(arg0: string): DoubleCharPair;
+    rightChar(): string;
+    second(): string;
+    second(arg0: string): DoubleCharPair;
+    second(arg0: string): DoubleCharPair;
+    secondChar(): string;
+    setValue(arg0: string): string;
+    setValue(arg0: string): string;
+    setValue(arg0: string): string;
+    toString(): string;
+    value(): string;
+    value(arg0: string): DoubleCharPair;
+    value(arg0: string): DoubleCharPair;
+    valueChar(): string;
+}

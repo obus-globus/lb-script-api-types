@@ -1,0 +1,21 @@
+import type { Char2BooleanAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/Char2BooleanAVLTreeMap$Entry.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class Char2BooleanAVLTreeMap$TreeIterator extends Object {
+    constructor(null_: Char2BooleanAVLTreeMap$TreeIterator)
+    constructor(null_: Char2BooleanAVLTreeMap$TreeIterator, arg1: string)
+    // private curr: Char2BooleanAVLTreeMap$Entry;
+    // private index: number;
+    // private next: Char2BooleanAVLTreeMap$Entry;
+    // private prev: Char2BooleanAVLTreeMap$Entry;
+    back(arg0: number): number;
+    hasNext(): boolean;
+    hasPrevious(): boolean;
+    nextEntry(): Char2BooleanAVLTreeMap$Entry;
+    nextIndex(): number;
+    previousEntry(): Char2BooleanAVLTreeMap$Entry;
+    previousIndex(): number;
+    remove(): void;
+    skip(arg0: number): number;
+    updateNext(): void;
+    updatePrevious(): void;
+}

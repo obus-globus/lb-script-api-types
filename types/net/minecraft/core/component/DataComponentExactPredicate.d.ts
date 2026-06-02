@@ -1,0 +1,33 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { DataComponentExactPredicate$Builder } from '../../../../net/minecraft/core/component/DataComponentExactPredicate$Builder.d.ts'
+import type { DataComponentGetter } from '../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
+import type { DataComponentPatch } from '../../../../net/minecraft/core/component/DataComponentPatch.d.ts'
+import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
+import type { TypedDataComponent } from '../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
+import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
+import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
+export class DataComponentExactPredicate extends Object implements Predicate<DataComponentGetter> {
+    static CODEC: Codec<DataComponentExactPredicate>;
+    static EMPTY: DataComponentExactPredicate;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentExactPredicate>;
+    static allOf(paramcomponents: TypedDataComponent<Object>[]): DataComponentExactPredicate;
+    static builder(): DataComponentExactPredicate$Builder;
+    static expect(paramtype: DataComponentType<Object>, paramvalue: Object | null): DataComponentExactPredicate;
+    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
+    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static someOf(paramcomponents: TypedDataComponent<Object>[], paramtypes: Object | null): DataComponentExactPredicate;
+    private constructor(expectedComponents: TypedDataComponent<Object>[])
+    // private expectedComponents: TypedDataComponent<Object>[];
+    alwaysMatches(): boolean;
+    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    asPatch(): DataComponentPatch;
+    equals(obj: Object | null): boolean;
+    hashCode(): number;
+    isEmpty(): boolean;
+    negate(): (param0: T) => kotlin.Boolean;
+    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    test(actualComponents: DataComponentGetter): boolean;
+    toString(): string;
+}

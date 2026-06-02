@@ -1,0 +1,41 @@
+import type { Class } from '../../../../../../../../../java/lang/Class.d.ts'
+import type { Predicate } from '../../../../../../../../../java/util/function/Predicate.d.ts'
+import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../../../java/lang/Enum.d.ts'
+import type { Tagged } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
+import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { TagKey } from '../../../../../../../../../net/minecraft/tags/TagKey.d.ts'
+import type { Item } from '../../../../../../../../../net/minecraft/world/item/Item.d.ts'
+import type { ItemStack } from '../../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
+/**
+ * @see ArmorMaterials
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:80}
+ */
+export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMode$Armor$ArmorPredicate> implements Tagged {
+    static CHAIN: CustomAntiBotMode$Armor$ArmorPredicate;
+    static Companion: Tagged$Companion;
+    static DIAMOND: CustomAntiBotMode$Armor$ArmorPredicate;
+    static ELYTRA: CustomAntiBotMode$Armor$ArmorPredicate;
+    static GOLD: CustomAntiBotMode$Armor$ArmorPredicate;
+    static IRON: CustomAntiBotMode$Armor$ArmorPredicate;
+    static LEATHER: CustomAntiBotMode$Armor$ArmorPredicate;
+    static NETHERITE: CustomAntiBotMode$Armor$ArmorPredicate;
+    static NOTHING: CustomAntiBotMode$Armor$ArmorPredicate;
+    static PUMPKIN: CustomAntiBotMode$Armor$ArmorPredicate;
+    static SKULL: CustomAntiBotMode$Armor$ArmorPredicate;
+    static TURTLE_SCUTE: CustomAntiBotMode$Armor$ArmorPredicate;
+    static getEntries(): CustomAntiBotMode$Armor$ArmorPredicate[];
+    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static of(paramarg0: string): Tagged;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): CustomAntiBotMode$Armor$ArmorPredicate;
+    static values(): (Object | null)[];
+    private constructor(tag: string, predicate: (param0: ItemStack) => kotlin.Boolean)
+    private constructor(choiceName: string, items: Item[])
+    private constructor(choiceName: string, tag: TagKey<Item>)
+    private constructor(choiceName: string, item: Item)
+    readonly predicate: (param0: ItemStack) => kotlin.Boolean;
+    readonly tag: string;
+    name(): "NOTHING" | "LEATHER" | "CHAIN" | "IRON" | "GOLD" | "DIAMOND" | "NETHERITE" | "ELYTRA" | "TURTLE_SCUTE" | "PUMPKIN" | "SKULL";
+}

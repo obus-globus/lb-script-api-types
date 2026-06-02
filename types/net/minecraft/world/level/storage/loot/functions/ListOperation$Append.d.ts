@@ -1,0 +1,14 @@
+import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { ListOperation } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/ListOperation.d.ts'
+import type { ListOperation$Type } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/ListOperation$Type.d.ts'
+export class ListOperation$Append extends Object implements ListOperation {
+    static INSTANCE: ListOperation$Append;
+    static MAP_CODEC: MapCodec<ListOperation$Append>;
+    static UNLIMITED_CODEC: MapCodec<ListOperation>;
+    static codec(parammaxSize: number): MapCodec<ListOperation>;
+    private constructor()
+    apply(original: T[], replacement: T[], maxSize: number): T[];
+    apply(original: T[], replacement: T[]): T[];
+    mode(): ListOperation$Type;
+}

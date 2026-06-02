@@ -1,0 +1,13 @@
+import type { File } from '../../../../java/io/File.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { PackLocationInfo } from '../../../../net/minecraft/server/packs/PackLocationInfo.d.ts'
+import type { PackResources } from '../../../../net/minecraft/server/packs/PackResources.d.ts'
+import type { Pack$Metadata } from '../../../../net/minecraft/server/packs/repository/Pack$Metadata.d.ts'
+import type { Pack$ResourcesSupplier } from '../../../../net/minecraft/server/packs/repository/Pack$ResourcesSupplier.d.ts'
+export class FilePackResources$FileResourcesSupplier extends Object implements Pack$ResourcesSupplier {
+    constructor(content: File)
+    constructor(content: Path[])
+    // private content: File;
+    openFull(location: PackLocationInfo, metadata: Pack$Metadata): PackResources;
+    openPrimary(location: PackLocationInfo): PackResources;
+}

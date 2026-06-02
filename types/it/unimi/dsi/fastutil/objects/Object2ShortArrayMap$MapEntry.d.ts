@@ -1,0 +1,40 @@
+import type { Object2ShortMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortMap$Entry.d.ts'
+import type { ObjectShortPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectShortPair.d.ts'
+import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export class Object2ShortArrayMap$MapEntry extends Object implements Object2ShortMap$Entry<K>, ObjectShortPair<K>, Map$Entry<K, number> {
+    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
+    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
+    static lexComparator(): (param0: Object | null) => kotlin.Boolean;
+    static of(paramarg0: Object | null, paramarg1: number): ObjectShortPair<Object>;
+    constructor(null_: Object2ShortArrayMap$MapEntry)
+    constructor(null_: Object2ShortArrayMap$MapEntry, arg1: number)
+    // private index: number;
+    readonly key: K;
+    readonly value: number;
+    equals(arg0: Object | null): boolean;
+    getShortValue(): number;
+    hashCode(): number;
+    left<K extends Object | number | string | boolean>(): K;
+    right(arg0: number): ObjectShortPair<K>;
+    right(): number;
+    right(arg0: number): ObjectShortPair<K>;
+    right(arg0: number): ObjectShortPair<K>;
+    rightShort(): number;
+    second(): number;
+    second(arg0: number): ObjectShortPair<K>;
+    second(arg0: number): ObjectShortPair<K>;
+    secondShort(): number;
+    setValue(arg0: number): number;
+    setValue(arg0: number): number;
+    setValue(arg0: number): number;
+    toString(): string;
+    value(): number;
+    value(arg0: number): ObjectShortPair<K>;
+    value(arg0: number): ObjectShortPair<K>;
+    valueShort(): number;
+}

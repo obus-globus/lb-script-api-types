@@ -1,0 +1,8 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
+export interface Object2BooleanMap$Entry<K extends Object | number | string | boolean> extends Object, Map$Entry<K, boolean>{
+    readonly value: boolean;
+    getBooleanValue(): boolean;
+    setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
+}

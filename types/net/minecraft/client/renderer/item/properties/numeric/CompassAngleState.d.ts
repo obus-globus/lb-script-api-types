@@ -1,0 +1,23 @@
+import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
+import type { ClientLevel } from '../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { CompassAngleState$CompassTarget } from '../../../../../../../net/minecraft/client/renderer/item/properties/numeric/CompassAngleState$CompassTarget.d.ts'
+import type { NeedleDirectionHelper } from '../../../../../../../net/minecraft/client/renderer/item/properties/numeric/NeedleDirectionHelper.d.ts'
+import type { NeedleDirectionHelper$Wobbler } from '../../../../../../../net/minecraft/client/renderer/item/properties/numeric/NeedleDirectionHelper$Wobbler.d.ts'
+import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
+import type { ItemOwner } from '../../../../../../../net/minecraft/world/entity/ItemOwner.d.ts'
+import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
+export class CompassAngleState extends NeedleDirectionHelper {
+    static MAP_CODEC: MapCodec<CompassAngleState>;
+    static nonWobbler(): NeedleDirectionHelper$Wobbler;
+    static standardWobbler(paramfactor: number): NeedleDirectionHelper$Wobbler;
+    constructor(wobble: boolean, compassTarget: CompassAngleState$CompassTarget)
+    // private compassTarget: CompassAngleState$CompassTarget;
+    // private noTargetWobbler: NeedleDirectionHelper$Wobbler;
+    // private random: RandomSource;
+    // private wobbler: NeedleDirectionHelper$Wobbler;
+    calculate(itemStack: ItemStack, level: ClientLevel, seed: number, owner: ItemOwner): number;
+    // private getRandomlySpinningRotation(seed: number, gameTime: number): number;
+    // private getRotationTowardsCompassTarget(owner: ItemOwner, gameTime: number, compassTargetPos: BlockPos): number;
+    target(): CompassAngleState$CompassTarget;
+}

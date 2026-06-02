@@ -1,0 +1,32 @@
+import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
+export class BuildPlatform extends Enum<BuildPlatform> {
+    static Amazon: BuildPlatform;
+    static Dedicated: BuildPlatform;
+    static GearVR_Deprecated: BuildPlatform;
+    static Google: BuildPlatform;
+    static Linux: BuildPlatform;
+    static Nx: BuildPlatform;
+    static OSX: BuildPlatform;
+    static Sony: BuildPlatform;
+    static UWP: BuildPlatform;
+    static Unknown: BuildPlatform;
+    static Win32: BuildPlatform;
+    static WindowsPhone_Deprecated: BuildPlatform;
+    static Xbox: BuildPlatform;
+    static iOS: BuildPlatform;
+    static tvOS_Deprecated: BuildPlatform;
+    static getByName(paramarg0: string): BuildPlatform;
+    static getByName(paramarg0: string, paramarg1: BuildPlatform): BuildPlatform;
+    static getByValue(paramarg0: number): BuildPlatform;
+    static getByValue(paramarg0: number, paramarg1: BuildPlatform): BuildPlatform;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): BuildPlatform;
+    static values(): (Object | null)[];
+    private constructor(arg2: number)
+    private constructor(arg2: BuildPlatform)
+    readonly value: number;
+    getValue(): number;
+    name(): "Google" | "iOS" | "OSX" | "Amazon" | "GearVR_Deprecated" | "UWP" | "Win32" | "Dedicated" | "tvOS_Deprecated" | "Sony" | "Nx" | "Xbox" | "WindowsPhone_Deprecated" | "Linux" | "Unknown";
+}

@@ -1,0 +1,5 @@
+import type { LookControl } from '../../../../../../net/minecraft/world/entity/ai/control/LookControl.d.ts'
+export class Camel$CamelLookControl extends LookControl {
+    private constructor(null_: Camel$CamelLookControl)
+    tick(): void;
+}

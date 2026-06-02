@@ -1,0 +1,77 @@
+import type { OptionValuesImpl } from '../../../../com/oracle/truffle/polyglot/OptionValuesImpl.d.ts'
+import type { PolyglotContextConfig$FileSystemConfig } from '../../../../com/oracle/truffle/polyglot/PolyglotContextConfig$FileSystemConfig.d.ts'
+import type { PolyglotContextConfig$PreinitConfig } from '../../../../com/oracle/truffle/polyglot/PolyglotContextConfig$PreinitConfig.d.ts'
+import type { PolyglotEngineImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotEngineImpl.d.ts'
+import type { PolyglotInstrument } from '../../../../com/oracle/truffle/polyglot/PolyglotInstrument.d.ts'
+import type { PolyglotLanguage } from '../../../../com/oracle/truffle/polyglot/PolyglotLanguage.d.ts'
+import type { PolyglotLimits } from '../../../../com/oracle/truffle/polyglot/PolyglotLimits.d.ts'
+import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
+import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
+import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
+import type { ZoneId } from '../../../../java/time/ZoneId.d.ts'
+import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
+import type { Level } from '../../../../java/util/logging/Level.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
+import type { AbstractPolyglotImpl$APIAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$APIAccess.d.ts'
+import type { AbstractPolyglotImpl$LogHandler } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$LogHandler.d.ts'
+import type { ProcessHandler } from '../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
+export class PolyglotContextConfig extends Object {
+    constructor(engine: PolyglotEngineImpl, fileSystemConfig: PolyglotContextConfig$FileSystemConfig, sharableConfig: PolyglotContextConfig$PreinitConfig)
+    constructor(engine: PolyglotEngineImpl, sandboxPolicy: SandboxPolicy, forceSharing: boolean, out: OutputStream, err: OutputStream, in_: InputStream, hostLookupAllowed: boolean, polyglotAccess: Object, nativeAccessAllowed: boolean, createThreadAllowed: boolean, threadAccessDeniedHandler: (param0: string) => void, hostClassLoadingAllowed: boolean, contextOptionsAllowed: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => kotlin.Boolean, applicationArguments: { [key: string]: string[] }, onlyLanguages: string[], options: { [key: string]: string }, fileSystemConfig: PolyglotContextConfig$FileSystemConfig, logHandler: AbstractPolyglotImpl$LogHandler, createProcessAllowed: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: { [key: string]: string }, timeZone: ZoneId, limits: PolyglotLimits, hostClassLoader: ClassLoader, hostAccess: Object, allowValueSharing: boolean, useSystemExit: boolean, creatorArguments: { [key: string]: Object }, onCancelled: () => void, onExited: (param0: number) => void, onClosed: () => void)
+    // private allowExperimentalOptions: boolean;
+    // private allowValueSharing: boolean;
+    // private allowedPublicLanguages: string[];
+    // private api: AbstractPolyglotImpl$APIAccess;
+    // private applicationArguments: { [key: string]: string[] };
+    // private classFilter: (param0: string) => kotlin.Boolean;
+    // private configuredInstruments: PolyglotInstrument[];
+    // private configuredLanguages: PolyglotLanguage[];
+    // private createProcessAllowed: boolean;
+    // private createThreadAllowed: boolean;
+    // private creatorArguments: { [key: string]: Object };
+    // private customEnvironment: { [key: string]: string };
+    // private environmentAccess: Object;
+    // private err: OutputStream;
+    // private fileSystemConfig: PolyglotContextConfig$FileSystemConfig;
+    // private forceCodeSharing: boolean;
+    // private hostAccess: Object;
+    // private hostClassLoader: ClassLoader;
+    // private hostClassLoadingAllowed: boolean;
+    // private hostLookupAllowed: boolean;
+    // private in: InputStream;
+    // private innerContextOptionsAllowed: boolean;
+    // private limits: PolyglotLimits;
+    // private logHandler: AbstractPolyglotImpl$LogHandler;
+    // private logLevels: { [key: string]: Level };
+    // private nativeAccessAllowed: boolean;
+    // private onCancelled: () => void;
+    // private onClosed: () => void;
+    // private onExited: (param0: number) => void;
+    // private onlyLanguages: string[];
+    // private optionsById: { [key: string]: OptionValuesImpl };
+    // private originalOptions: { [key: string]: string };
+    // private out: OutputStream;
+    // private polyglotAccess: Object;
+    // private processHandler: ProcessHandler;
+    // private resolvedEnvironment: { [key: string]: string };
+    // private sandboxPolicy: SandboxPolicy;
+    // private threadAccessDeniedHandler: (param0: string) => void;
+    // private timeZone: ZoneId;
+    // private useSystemExit: boolean;
+    addConfiguredLanguage(engine: PolyglotEngineImpl, languages: PolyglotLanguage[], language: PolyglotLanguage): void;
+    // private collectDependentLanguages(engine: PolyglotEngineImpl, languageIds: E[], foundLanguages: E[]): void;
+    getApplicationArguments(lang: PolyglotLanguage): string[];
+    getConfiguredInstruments(): E[];
+    getConfiguredLanguages(): PolyglotLanguage[];
+    getEnvironment(): { [key: string]: string };
+    getInstrumentOptionValues(instrument: PolyglotInstrument): OptionValuesImpl;
+    getLanguageOptionValues(lang: PolyglotLanguage): OptionValuesImpl;
+    getTimeZone(): ZoneId;
+    isAccessPermitted(from: PolyglotLanguage, to: PolyglotLanguage): boolean;
+    isAllowIO(): boolean;
+    isCodeSharingDisabled(): boolean;
+    isCodeSharingForced(): boolean;
+}

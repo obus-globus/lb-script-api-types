@@ -1,0 +1,61 @@
+import type { Object } from '../java/lang/Object.d.ts'
+import type { HttpUrl } from '../okhttp3/HttpUrl.d.ts'
+export class HttpUrl$Builder extends Object {
+    constructor()
+    // private encodedFragment: string | null;
+    /*not mapped: */ getEncodedFragment$okhttp(): string | null;
+    // private encodedPassword: string;
+    /*not mapped: */ getEncodedPassword$okhttp(): string;
+    // private encodedPathSegments: string[];
+    /*not mapped: */ getEncodedPathSegments$okhttp(): string[];
+    // private encodedQueryNamesAndValues: (string | null)[] | null;
+    /*not mapped: */ getEncodedQueryNamesAndValues$okhttp(): (string | null)[] | null;
+    // private encodedUsername: string;
+    /*not mapped: */ getEncodedUsername$okhttp(): string;
+    // private host: string | null;
+    /*not mapped: */ getHost$okhttp(): string | null;
+    // private port: number;
+    /*not mapped: */ getPort$okhttp(): number;
+    // private scheme: string | null;
+    /*not mapped: */ getScheme$okhttp(): string | null;
+    addEncodedPathSegment(encodedPathSegment: string): HttpUrl$Builder;
+    addEncodedPathSegments(encodedPathSegments: string): HttpUrl$Builder;
+    addEncodedQueryParameter(encodedName: string, encodedValue: string | null): HttpUrl$Builder;
+    addPathSegment(pathSegment: string): HttpUrl$Builder;
+    addPathSegments(pathSegments: string): HttpUrl$Builder;
+    // private addPathSegments(pathSegments: string, alreadyEncoded: boolean): HttpUrl$Builder;
+    addQueryParameter(name: string, value: string | null): HttpUrl$Builder;
+    build(): HttpUrl;
+    // private effectivePort(): number;
+    encodedFragment(encodedFragment: string | null): HttpUrl$Builder;
+    encodedPassword(encodedPassword: string): HttpUrl$Builder;
+    encodedPath(encodedPath: string): HttpUrl$Builder;
+    encodedQuery(encodedQuery: string | null): HttpUrl$Builder;
+    encodedUsername(encodedUsername: string): HttpUrl$Builder;
+    fragment(fragment: string | null): HttpUrl$Builder;
+    host(host: string): HttpUrl$Builder;
+    // private isDot(input: string): boolean;
+    // private isDotDot(input: string): boolean;
+    parse(base: HttpUrl | null, input: string): HttpUrl$Builder;
+    // private parsePort(input: string, pos: number, limit: number): number;
+    password(password: string): HttpUrl$Builder;
+    // private pop(): void;
+    port(port: number): HttpUrl$Builder;
+    // private portColonOffset(input: string, pos: number, limit: number): number;
+    // private push(input: string, pos: number, limit: number, addTrailingSlash: boolean, alreadyEncoded: boolean): void;
+    query(query: string | null): HttpUrl$Builder;
+    reencodeForUri(): HttpUrl$Builder;
+    // private removeAllCanonicalQueryParameters(canonicalName: string): void;
+    removeAllEncodedQueryParameters(encodedName: string): HttpUrl$Builder;
+    removeAllQueryParameters(name: string): HttpUrl$Builder;
+    removePathSegment(index: number): HttpUrl$Builder;
+    // private resolvePath(input: string, startPos: number, limit: number): void;
+    scheme(scheme: string): HttpUrl$Builder;
+    // private schemeDelimiterOffset(input: string, pos: number, limit: number): number;
+    setEncodedPathSegment(index: number, encodedPathSegment: string): HttpUrl$Builder;
+    setEncodedQueryParameter(encodedName: string, encodedValue: string | null): HttpUrl$Builder;
+    setPathSegment(index: number, pathSegment: string): HttpUrl$Builder;
+    setQueryParameter(name: string, value: string | null): HttpUrl$Builder;
+    toString(): string;
+    username(username: string): HttpUrl$Builder;
+}

@@ -1,0 +1,48 @@
+import type { Byte2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2ObjectFunction.d.ts'
+import type { Char2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/chars/Char2ObjectFunction.d.ts'
+import type { Double2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ObjectFunction.d.ts'
+import type { Float2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/floats/Float2ObjectFunction.d.ts'
+import type { Int2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/ints/Int2ObjectFunction.d.ts'
+import type { Long2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/longs/Long2ObjectFunction.d.ts'
+import type { Object2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ByteFunction.d.ts'
+import type { Object2CharFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharFunction.d.ts'
+import type { Object2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2DoubleFunction.d.ts'
+import type { Object2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2FloatFunction.d.ts'
+import type { Object2IntFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntFunction.d.ts'
+import type { Object2LongFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2LongFunction.d.ts'
+import type { Object2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ObjectFunction.d.ts'
+import type { Object2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceFunction.d.ts'
+import type { Object2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortFunction.d.ts'
+import type { Reference2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ObjectFunction.d.ts'
+import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
+import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export abstract class AbstractObject2ObjectFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Object2ObjectFunction<K, V>, Serializable {
+    constructor()
+    // private defRetValue: V;
+    andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: K) => kotlin.Byte;
+    andThenChar(arg0: (param0: V) => kotlin.Char): (param0: K) => kotlin.Char;
+    andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: K) => kotlin.Double;
+    andThenFloat(arg0: (param0: V) => kotlin.Float): (param0: K) => kotlin.Float;
+    andThenInt(arg0: (param0: V) => kotlin.Int): (param0: K) => kotlin.Int;
+    andThenLong(arg0: (param0: V) => kotlin.Long): (param0: K) => kotlin.Long;
+    andThenObject(arg0: (param0: V) => T): (param0: K) => T;
+    andThenReference(arg0: (param0: V) => T): (param0: K) => T;
+    andThenShort(arg0: (param0: V) => kotlin.Short): (param0: K) => kotlin.Short;
+    composeByte(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    composeChar(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    composeDouble(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    composeFloat(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    composeInt(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    composeLong(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    composeObject(arg0: (param0: T) => K): (param0: T) => V;
+    composeReference(arg0: (param0: T) => K): (param0: T) => V;
+    composeShort(arg0: (param0: K) => unknown): (param0: V) => unknown;
+    defaultReturnValue(): V;
+    defaultReturnValue(arg0: V): void;
+    defaultReturnValue(): V;
+    defaultReturnValue(arg0: V): void;
+    getOrDefault(arg0: Object, arg1: V): V;
+    put(arg0: K, arg1: V): V;
+    remove(arg0: Object): V;
+}

@@ -1,0 +1,44 @@
+import type { D3DKMTQueryAdapterInfoType$WDDM20 } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/platform/windows/api/d3dkmt/D3DKMTQueryAdapterInfoType$WDDM20.d.ts'
+export class D3DKMTQueryAdapterInfoType$WDDM21 extends D3DKMTQueryAdapterInfoType$WDDM20 {
+    static KMTQAITYPE_ADAPTERADDRESS: number;
+    static KMTQAITYPE_ADAPTERGUID: number;
+    static KMTQAITYPE_ADAPTERREGISTRYINFO: number;
+    static KMTQAITYPE_ADAPTERTYPE: number;
+    static KMTQAITYPE_CHECKDRIVERUPDATESTATUS: number;
+    static KMTQAITYPE_CPDRIVERNAME: number;
+    static KMTQAITYPE_CURRENTDISPLAYMODE: number;
+    static KMTQAITYPE_DIRECTFLIP_SUPPORT: number;
+    static KMTQAITYPE_DLIST_DRIVER_NAME: number;
+    static KMTQAITYPE_DRIVERCAPS_EXT: number;
+    static KMTQAITYPE_DRIVERVERSION: number;
+    static KMTQAITYPE_FLIPQUEUEINFO: number;
+    static KMTQAITYPE_GETSEGMENTSIZE: number;
+    static KMTQAITYPE_INDEPENDENTFLIP_SECONDARY_SUPPORT: number;
+    static KMTQAITYPE_INDEPENDENTFLIP_SUPPORT: number;
+    static KMTQAITYPE_MIRACASTCOMPANIONDRIVERNAME: number;
+    static KMTQAITYPE_MODELIST: number;
+    static KMTQAITYPE_MULTIPLANEOVERLAY_HUD_SUPPORT: number;
+    static KMTQAITYPE_MULTIPLANEOVERLAY_SECONDARY_SUPPORT: number;
+    static KMTQAITYPE_MULTIPLANEOVERLAY_SUPPORT: number;
+    static KMTQAITYPE_NODEMETADATA: number;
+    static KMTQAITYPE_OUTPUTDUPLCONTEXTSCOUNT: number;
+    static KMTQAITYPE_PANELFITTER_SUPPORT: number;
+    static KMTQAITYPE_PHYSICALADAPTERCOUNT: number;
+    static KMTQAITYPE_PHYSICALADAPTERDEVICEIDS: number;
+    static KMTQAITYPE_QUERY_GPUMMU_CAPS: number;
+    static KMTQAITYPE_QUERY_HW_PROTECTION_TEARDOWN_COUNT: number;
+    static KMTQAITYPE_QUERY_ISBADDRIVERFORHWPROTECTIONDISABLED: number;
+    static KMTQAITYPE_QUERY_MIRACAST_DRIVER_TYPE: number;
+    static KMTQAITYPE_QUERY_MULTIPLANEOVERLAY_DECODE_SUPPORT: number;
+    static KMTQAITYPE_SETWORKINGSETINFO: number;
+    static KMTQAITYPE_UMDRIVERNAME: number;
+    static KMTQAITYPE_UMDRIVERPRIVATE: number;
+    static KMTQAITYPE_UMD_DRIVER_VERSION: number;
+    static KMTQAITYPE_UMOPENGLINFO: number;
+    static KMTQAITYPE_VIRTUALADDRESSINFO: number;
+    static KMTQAITYPE_WDDM_1_2_CAPS: number;
+    static KMTQAITYPE_WDDM_1_3_CAPS: number;
+    static KMTQAITYPE_WDDM_2_0_CAPS: number;
+    static KMTQAITYPE_XBOX: number;
+    constructor()
+}

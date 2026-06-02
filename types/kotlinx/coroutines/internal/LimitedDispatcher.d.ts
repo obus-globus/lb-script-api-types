@@ -1,0 +1,28 @@
+import type { Runnable } from '../../../java/lang/Runnable.d.ts'
+import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
+import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
+import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
+import type { CoroutineDispatcher } from '../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
+import type { CoroutineDispatcher$Key } from '../../../kotlinx/coroutines/CoroutineDispatcher$Key.d.ts'
+import type { Delay } from '../../../kotlinx/coroutines/Delay.d.ts'
+import type { DisposableHandle } from '../../../kotlinx/coroutines/DisposableHandle.d.ts'
+import type { LimitedDispatcher$Worker } from '../../../kotlinx/coroutines/internal/LimitedDispatcher$Worker.d.ts'
+import type { LockFreeTaskQueue } from '../../../kotlinx/coroutines/internal/LockFreeTaskQueue.d.ts'
+export class LimitedDispatcher extends CoroutineDispatcher implements Delay {
+    static Key: ContinuationInterceptor$Key;
+    static Key: CoroutineDispatcher$Key;
+    constructor(dispatcher: CoroutineDispatcher, parallelism: number, name: string | null)
+    delay(time: number): void;
+    delay(time: number): void;
+    dispatch(context: CoroutineContext, block: () => void): void;
+    // private dispatchInternal(block: () => void, startWorker: Function1<LimitedDispatcher$Worker, void>): void;
+    dispatchYield(context: CoroutineContext, block: () => void): void;
+    invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
+    invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
+    limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
+    // private obtainTaskOrDeallocateWorker(): () => void | null;
+    scheduleResumeAfterDelay(timeMillis: number, continuation: CancellableContinuation<void>): void;
+    toString(): string;
+    // private tryAllocateWorker(): boolean;
+}

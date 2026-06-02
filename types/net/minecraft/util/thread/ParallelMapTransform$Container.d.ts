@@ -1,0 +1,21 @@
+import type { Record } from '../../../../java/lang/Record.d.ts'
+import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export class ParallelMapTransform$Container<K extends Object | number | string | boolean, U extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Record {
+    // private keys: Object[];
+    // private operation: (param0: K, param1: U) => V;
+    // private values: Object[];
+    applyOperation(index: number): void;
+    copyOut(index: number, output: Map<K, V>): void;
+    equals(o: Object | null): boolean;
+    hashCode(): number;
+    // private input(index: number): U;
+    // private key(index: number): K;
+    keys(): Object[];
+    operation(): (param0: K, param1: U) => V;
+    // private output(index: number): V;
+    put(index: number, key: K, input: U): void;
+    size(): number;
+    toString(): string;
+    values(): Object[];
+}

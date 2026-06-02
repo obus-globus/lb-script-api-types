@@ -1,0 +1,10 @@
+import type { TranslationUnit } from '../../../../../../io/github/douira/glsl_transformer/ast/node/TranslationUnit.d.ts'
+import type { Root } from '../../../../../../io/github/douira/glsl_transformer/ast/query/Root.d.ts'
+import type { ASTParser } from '../../../../../../io/github/douira/glsl_transformer/ast/transform/ASTParser.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { VanillaParameters } from '../../../../../../net/irisshaders/iris/pipeline/transform/parameter/VanillaParameters.d.ts'
+export class EntityPatcher extends Object {
+    static patchEntityId(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: VanillaParameters): void;
+    static patchOverlayColor(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: VanillaParameters): void;
+    constructor()
+}

@@ -1,0 +1,63 @@
+import type { Component } from '../../../java/awt/Component.d.ts'
+import type { ComponentEvent } from '../../../java/awt/event/ComponentEvent.d.ts'
+export class InputEvent extends ComponentEvent {
+    static ACTION_EVENT_MASK: number;
+    static ADJUSTMENT_EVENT_MASK: number;
+    static ALT_DOWN_MASK: number;
+    static ALT_GRAPH_DOWN_MASK: number;
+    static ALT_GRAPH_MASK: number;
+    static ALT_MASK: number;
+    static BUTTON1_DOWN_MASK: number;
+    static BUTTON1_MASK: number;
+    static BUTTON2_DOWN_MASK: number;
+    static BUTTON2_MASK: number;
+    static BUTTON3_DOWN_MASK: number;
+    static BUTTON3_MASK: number;
+    static COMPONENT_EVENT_MASK: number;
+    static COMPONENT_FIRST: number;
+    static COMPONENT_HIDDEN: number;
+    static COMPONENT_LAST: number;
+    static COMPONENT_MOVED: number;
+    static COMPONENT_RESIZED: number;
+    static COMPONENT_SHOWN: number;
+    static CONTAINER_EVENT_MASK: number;
+    static CTRL_DOWN_MASK: number;
+    static CTRL_MASK: number;
+    static FOCUS_EVENT_MASK: number;
+    static HIERARCHY_BOUNDS_EVENT_MASK: number;
+    static HIERARCHY_EVENT_MASK: number;
+    static INPUT_METHOD_EVENT_MASK: number;
+    static INVOCATION_EVENT_MASK: number;
+    static ITEM_EVENT_MASK: number;
+    static KEY_EVENT_MASK: number;
+    static META_DOWN_MASK: number;
+    static META_MASK: number;
+    static MOUSE_EVENT_MASK: number;
+    static MOUSE_MOTION_EVENT_MASK: number;
+    static MOUSE_WHEEL_EVENT_MASK: number;
+    static PAINT_EVENT_MASK: number;
+    static RESERVED_ID_MAX: number;
+    static SHIFT_DOWN_MASK: number;
+    static SHIFT_MASK: number;
+    static TEXT_EVENT_MASK: number;
+    static WINDOW_EVENT_MASK: number;
+    static WINDOW_FOCUS_EVENT_MASK: number;
+    static WINDOW_STATE_EVENT_MASK: number;
+    static getMaskForButton(paramarg0: number): number;
+    static getModifiersExText(paramarg0: number): string;
+    constructor(arg0: Component, arg1: number, arg2: number, arg3: number)
+    // private canAccessSystemClipboard: boolean;
+    modifiers: number;
+    when: number;
+    // private canAccessSystemClipboard(): boolean;
+    consume(): void;
+    getModifiers(): number;
+    getModifiersEx(): number;
+    getWhen(): number;
+    isAltDown(): boolean;
+    isAltGraphDown(): boolean;
+    isConsumed(): boolean;
+    isControlDown(): boolean;
+    isMetaDown(): boolean;
+    isShiftDown(): boolean;
+}

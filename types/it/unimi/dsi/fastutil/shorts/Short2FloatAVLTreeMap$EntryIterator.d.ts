@@ -1,0 +1,15 @@
+import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
+import type { Short2FloatAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2FloatAVLTreeMap$TreeIterator.d.ts'
+import type { Short2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2FloatMap$Entry.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class Short2FloatAVLTreeMap$EntryIterator extends Short2FloatAVLTreeMap$TreeIterator implements ObjectListIterator<Short2FloatMap$Entry> {
+    constructor(null_: Short2FloatAVLTreeMap$EntryIterator)
+    constructor(null_: Short2FloatAVLTreeMap$EntryIterator, arg1: number)
+    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add(arg0: Short2FloatMap$Entry): void;
+    next(): Short2FloatMap$Entry;
+    previous(): Short2FloatMap$Entry;
+    remove(): void;
+    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set(arg0: Short2FloatMap$Entry): void;
+}

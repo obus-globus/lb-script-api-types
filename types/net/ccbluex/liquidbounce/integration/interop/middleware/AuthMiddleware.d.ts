@@ -1,0 +1,23 @@
+import type { ChannelHandlerContext } from '../../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
+import type { FullHttpResponse } from '../../../../../../io/netty/handler/codec/http/FullHttpResponse.d.ts'
+import type { HttpRequest } from '../../../../../../io/netty/handler/codec/http/HttpRequest.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { AuthMiddleware$Companion } from '../../../../../../net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware$Companion.d.ts'
+import type { Middleware$OnRequest } from '../../../../../../net/ccbluex/netty/http/middleware/Middleware$OnRequest.d.ts'
+import type { Middleware$OnResponse } from '../../../../../../net/ccbluex/netty/http/middleware/Middleware$OnResponse.d.ts'
+import type { Middleware$OnWebSocketUpgrade } from '../../../../../../net/ccbluex/netty/http/middleware/Middleware$OnWebSocketUpgrade.d.ts'
+import type { RequestContext } from '../../../../../../net/ccbluex/netty/http/model/RequestContext.d.ts'
+export class AuthMiddleware extends Object implements Middleware$OnRequest, Middleware$OnResponse, Middleware$OnWebSocketUpgrade {
+    static AUTH_CODE_PARAM: string;
+    static AUTH_COOKIE_NAME: string;
+    static Companion: AuthMiddleware$Companion;
+    constructor()
+    /**
+     * On request handler
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt:55}
+     */
+    invoke(ctx: ChannelHandlerContext, request: HttpRequest): FullHttpResponse | null;
+    invoke(context: RequestContext): FullHttpResponse | null;
+    invoke(context: RequestContext, response: FullHttpResponse): FullHttpResponse;
+}

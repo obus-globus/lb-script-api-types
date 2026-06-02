@@ -1,0 +1,21 @@
+import type { Double2CharAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2CharAVLTreeMap$Entry.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class Double2CharAVLTreeMap$TreeIterator extends Object {
+    constructor(null_: Double2CharAVLTreeMap$TreeIterator)
+    constructor(null_: Double2CharAVLTreeMap$TreeIterator, arg1: number)
+    // private curr: Double2CharAVLTreeMap$Entry;
+    // private index: number;
+    // private next: Double2CharAVLTreeMap$Entry;
+    // private prev: Double2CharAVLTreeMap$Entry;
+    back(arg0: number): number;
+    hasNext(): boolean;
+    hasPrevious(): boolean;
+    nextEntry(): Double2CharAVLTreeMap$Entry;
+    nextIndex(): number;
+    previousEntry(): Double2CharAVLTreeMap$Entry;
+    previousIndex(): number;
+    remove(): void;
+    skip(arg0: number): number;
+    updateNext(): void;
+    updatePrevious(): void;
+}

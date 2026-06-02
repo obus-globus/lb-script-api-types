@@ -1,0 +1,14 @@
+import type { StorableObject } from '../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
+import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { PreNettyPacketType } from '../../../../../net/raphimc/vialegacy/api/splitter/PreNettyPacketType.d.ts'
+export class PreNettySplitter extends Object implements StorableObject {
+    constructor(arg0: Class<Protocol<Object, Object, Object, Object>>, arg1: (param0: PreNettyPacketType) => unknown)
+    // private packetTypeSupplier: (param0: PreNettyPacketType) => unknown;
+    // private protocolClass: Class<Protocol<Object, Object, Object, Object>>;
+    getPacketType(arg0: number): PreNettyPacketType;
+    getProtocolName(): string;
+    onRemove(): void;
+}

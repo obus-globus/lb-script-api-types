@@ -1,0 +1,123 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { FloatBuffer } from '../../../java/nio/FloatBuffer.d.ts'
+import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
+import type { ShortBuffer } from '../../../java/nio/ShortBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
+import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
+import type { STBIIOCallbacks } from '../../../org/lwjgl/stb/STBIIOCallbacks.d.ts'
+export class STBImage extends Object {
+    static STBI_default: number;
+    static STBI_grey: number;
+    static STBI_grey_alpha: number;
+    static STBI_rgb: number;
+    static STBI_rgb_alpha: number;
+    static nstbi_convert_iphone_png_to_rgb(paramarg0: number): void;
+    static nstbi_convert_iphone_png_to_rgb_thread(paramarg0: number): void;
+    static nstbi_failure_reason(): number;
+    static nstbi_image_free(paramarg0: number): void;
+    static nstbi_info(paramarg0: number, paramarg1: number[], paramarg2: number[], paramarg3: number[]): number;
+    static nstbi_info(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
+    static nstbi_info_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[]): number;
+    static nstbi_info_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
+    static nstbi_info_from_memory(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[]): number;
+    static nstbi_info_from_memory(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
+    static nstbi_is_16_bit(paramarg0: number): number;
+    static nstbi_is_16_bit_from_callbacks(paramarg0: number, paramarg1: number): number;
+    static nstbi_is_16_bit_from_memory(paramarg0: number, paramarg1: number): number;
+    static nstbi_is_hdr(paramarg0: number): number;
+    static nstbi_is_hdr_from_callbacks(paramarg0: number, paramarg1: number): number;
+    static nstbi_is_hdr_from_memory(paramarg0: number, paramarg1: number): number;
+    static nstbi_load(paramarg0: number, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): number;
+    static nstbi_load(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
+    static nstbi_load_16(paramarg0: number, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): number;
+    static nstbi_load_16(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
+    static nstbi_load_16_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): number;
+    static nstbi_load_16_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
+    static nstbi_load_16_from_memory(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): number;
+    static nstbi_load_16_from_memory(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
+    static nstbi_load_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): number;
+    static nstbi_load_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
+    static nstbi_load_from_memory(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): number;
+    static nstbi_load_from_memory(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
+    static nstbi_load_gif_from_memory(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[], paramarg4: number[], paramarg5: number[], paramarg6: number[], paramarg7: number): number;
+    static nstbi_load_gif_from_memory(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): number;
+    static nstbi_loadf(paramarg0: number, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): number;
+    static nstbi_loadf(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
+    static nstbi_loadf_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): number;
+    static nstbi_loadf_from_callbacks(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
+    static nstbi_loadf_from_memory(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): number;
+    static nstbi_loadf_from_memory(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
+    static nstbi_set_flip_vertically_on_load(paramarg0: number): void;
+    static nstbi_set_unpremultiply_on_load(paramarg0: number): void;
+    static nstbi_set_unpremultiply_on_load_thread(paramarg0: number): void;
+    static nstbi_zlib_decode_buffer(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
+    static nstbi_zlib_decode_malloc(paramarg0: number, paramarg1: number, paramarg2: number): number;
+    static nstbi_zlib_decode_malloc_guesssize(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
+    static nstbi_zlib_decode_malloc_guesssize_headerflag(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
+    static nstbi_zlib_decode_noheader_buffer(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
+    static nstbi_zlib_decode_noheader_malloc(paramarg0: number, paramarg1: number, paramarg2: number): number;
+    static stbi_convert_iphone_png_to_rgb(paramarg0: boolean): void;
+    static stbi_convert_iphone_png_to_rgb_thread(paramarg0: boolean): void;
+    static stbi_failure_reason(): string;
+    static stbi_hdr_to_ldr_gamma(paramarg0: number): void;
+    static stbi_hdr_to_ldr_scale(paramarg0: number): void;
+    static stbi_image_free(paramarg0: ByteBuffer): void;
+    static stbi_image_free(paramarg0: FloatBuffer): void;
+    static stbi_image_free(paramarg0: ShortBuffer): void;
+    static stbi_info(paramarg0: CharSequence, paramarg1: number[], paramarg2: number[], paramarg3: number[]): boolean;
+    static stbi_info(paramarg0: CharSequence, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer): boolean;
+    static stbi_info(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[]): boolean;
+    static stbi_info(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer): boolean;
+    static stbi_info_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[]): boolean;
+    static stbi_info_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: IntBuffer): boolean;
+    static stbi_info_from_memory(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[]): boolean;
+    static stbi_info_from_memory(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer): boolean;
+    static stbi_is_16_bit(paramarg0: CharSequence): boolean;
+    static stbi_is_16_bit(paramarg0: ByteBuffer): boolean;
+    static stbi_is_16_bit_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number): boolean;
+    static stbi_is_16_bit_from_memory(paramarg0: ByteBuffer): boolean;
+    static stbi_is_hdr(paramarg0: CharSequence): boolean;
+    static stbi_is_hdr(paramarg0: ByteBuffer): boolean;
+    static stbi_is_hdr_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number): boolean;
+    static stbi_is_hdr_from_memory(paramarg0: ByteBuffer): boolean;
+    static stbi_ldr_to_hdr_gamma(paramarg0: number): void;
+    static stbi_ldr_to_hdr_scale(paramarg0: number): void;
+    static stbi_load(paramarg0: CharSequence, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): ByteBuffer;
+    static stbi_load(paramarg0: CharSequence, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): ByteBuffer;
+    static stbi_load(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): ByteBuffer;
+    static stbi_load(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): ByteBuffer;
+    static stbi_load_16(paramarg0: CharSequence, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): ShortBuffer;
+    static stbi_load_16(paramarg0: CharSequence, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): ShortBuffer;
+    static stbi_load_16(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): ShortBuffer;
+    static stbi_load_16(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): ShortBuffer;
+    static stbi_load_16_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): ShortBuffer;
+    static stbi_load_16_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: IntBuffer, paramarg5: number): ShortBuffer;
+    static stbi_load_16_from_memory(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): ShortBuffer;
+    static stbi_load_16_from_memory(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): ShortBuffer;
+    static stbi_load_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): ByteBuffer;
+    static stbi_load_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: IntBuffer, paramarg5: number): ByteBuffer;
+    static stbi_load_from_memory(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): ByteBuffer;
+    static stbi_load_from_memory(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): ByteBuffer;
+    static stbi_load_gif_from_memory(paramarg0: ByteBuffer, paramarg1: PointerBuffer, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number[], paramarg6: number): ByteBuffer;
+    static stbi_load_gif_from_memory(paramarg0: ByteBuffer, paramarg1: PointerBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: IntBuffer, paramarg5: IntBuffer, paramarg6: number): ByteBuffer;
+    static stbi_loadf(paramarg0: CharSequence, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): FloatBuffer;
+    static stbi_loadf(paramarg0: CharSequence, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): FloatBuffer;
+    static stbi_loadf(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): FloatBuffer;
+    static stbi_loadf(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): FloatBuffer;
+    static stbi_loadf_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: number): FloatBuffer;
+    static stbi_loadf_from_callbacks(paramarg0: STBIIOCallbacks, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: IntBuffer, paramarg5: number): FloatBuffer;
+    static stbi_loadf_from_memory(paramarg0: ByteBuffer, paramarg1: number[], paramarg2: number[], paramarg3: number[], paramarg4: number): FloatBuffer;
+    static stbi_loadf_from_memory(paramarg0: ByteBuffer, paramarg1: IntBuffer, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: number): FloatBuffer;
+    static stbi_set_flip_vertically_on_load(paramarg0: boolean): void;
+    static stbi_set_flip_vertically_on_load_thread(paramarg0: number): void;
+    static stbi_set_unpremultiply_on_load(paramarg0: boolean): void;
+    static stbi_set_unpremultiply_on_load_thread(paramarg0: boolean): void;
+    static stbi_zlib_decode_buffer(paramarg0: ByteBuffer, paramarg1: ByteBuffer): number;
+    static stbi_zlib_decode_malloc(paramarg0: ByteBuffer): ByteBuffer;
+    static stbi_zlib_decode_malloc_guesssize(paramarg0: ByteBuffer, paramarg1: number): ByteBuffer;
+    static stbi_zlib_decode_malloc_guesssize_headerflag(paramarg0: ByteBuffer, paramarg1: number, paramarg2: boolean): ByteBuffer;
+    static stbi_zlib_decode_noheader_buffer(paramarg0: ByteBuffer, paramarg1: ByteBuffer): number;
+    static stbi_zlib_decode_noheader_malloc(paramarg0: ByteBuffer): ByteBuffer;
+    constructor()
+}

@@ -1,0 +1,83 @@
+import type { Hash$Strategy } from '../../../../../it/unimi/dsi/fastutil/Hash$Strategy.d.ts'
+import type { DoubleComparator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleComparator.d.ts'
+import type { Random } from '../../../../../java/util/Random.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class DoubleArrays extends Object {
+    static DEFAULT_EMPTY_ARRAY: number[];
+    static EMPTY_ARRAY: number[];
+    static HASH_STRATEGY: Hash$Strategy<number[]>;
+    static binarySearch(paramarg0: number[], paramarg1: number): number;
+    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): number;
+    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): number;
+    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => kotlin.Int): number;
+    static copy(paramarg0: number[]): number[];
+    static copy(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
+    static ensureCapacity(paramarg0: number[], paramarg1: number): number[];
+    static ensureCapacity(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
+    static ensureFromTo(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static ensureOffsetLength(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static ensureSameLength(paramarg0: number[], paramarg1: number[]): void;
+    static equals(paramarg0: number[], paramarg1: number[]): boolean;
+    static fill(paramarg0: number[], paramarg1: number): void;
+    static fill(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static forceCapacity(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
+    static grow(paramarg0: number[], paramarg1: number): number[];
+    static grow(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
+    static mergeSort(paramarg0: number[]): void;
+    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number[]): void;
+    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
+    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int, paramarg4: number[]): void;
+    static mergeSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static parallelQuickSort(paramarg0: number[]): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: number[]): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static parallelQuickSortIndirect(paramarg0: number[], paramarg1: number[]): void;
+    static parallelQuickSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static parallelRadixSort(paramarg0: number[]): void;
+    static parallelRadixSort(paramarg0: number[], paramarg1: number[]): void;
+    static parallelRadixSort(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static parallelRadixSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static parallelRadixSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: boolean): void;
+    static parallelRadixSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number, paramarg4: boolean): void;
+    static quickSort(paramarg0: number[]): void;
+    static quickSort(paramarg0: number[], paramarg1: number[]): void;
+    static quickSort(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static quickSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static quickSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
+    static quickSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static quickSortIndirect(paramarg0: number[], paramarg1: number[]): void;
+    static quickSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static radixSort(paramarg0: number[]): void;
+    static radixSort(paramarg0: number[], paramarg1: number[]): void;
+    static radixSort(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static radixSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static radixSort(paramarg0: (Object | null)[]): void;
+    static radixSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
+    static radixSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: boolean): void;
+    static radixSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number[], paramarg3: boolean): void;
+    static radixSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number[], paramarg3: number, paramarg4: number, paramarg5: boolean): void;
+    static radixSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number, paramarg4: boolean): void;
+    static reverse(paramarg0: number[]): number[];
+    static reverse(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
+    static setLength(paramarg0: number[], paramarg1: number): number[];
+    static shuffle(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: Random): number[];
+    static shuffle(paramarg0: number[], paramarg1: Random): number[];
+    static stabilize(paramarg0: number[], paramarg1: number[]): void;
+    static stabilize(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
+    static stableSort(paramarg0: number[]): void;
+    static stableSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static stableSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
+    static stableSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static swap(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static swap(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static trim(paramarg0: number[], paramarg1: number): number[];
+    static unstableSort(paramarg0: number[]): void;
+    static unstableSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
+    static unstableSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
+    static unstableSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    private constructor()
+}

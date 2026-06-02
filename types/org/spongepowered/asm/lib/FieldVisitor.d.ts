@@ -1,0 +1,4 @@
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export abstract class FieldVisitor extends Object {
+    constructor()
+}

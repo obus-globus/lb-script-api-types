@@ -1,0 +1,13 @@
+import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
+import type { Record } from '../../../../../java/lang/Record.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { TimerQueue$Event$Packed } from '../../../../../net/minecraft/world/level/timers/TimerQueue$Event$Packed.d.ts'
+export class TimerQueue$Packed<T extends Object | number | string | boolean> extends Record {
+    static codec(paramcallbackCodec: Codec<Object>): Codec<Object>;
+    constructor(events: TimerQueue$Event$Packed<T>[])
+    // private events: TimerQueue$Event$Packed<T>[];
+    equals(o: Object | null): boolean;
+    events(): TimerQueue$Event$Packed<T>[];
+    hashCode(): number;
+    toString(): string;
+}

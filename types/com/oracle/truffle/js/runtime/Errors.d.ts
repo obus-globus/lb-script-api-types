@@ -1,0 +1,192 @@
+import type { ParserException } from '../../../../../com/oracle/js/parser/ParserException.d.ts'
+import type { InteropException } from '../../../../../com/oracle/truffle/api/interop/InteropException.d.ts'
+import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
+import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSErrorType } from '../../../../../com/oracle/truffle/js/runtime/JSErrorType.d.ts'
+import type { JSException } from '../../../../../com/oracle/truffle/js/runtime/JSException.d.ts'
+import type { JSRealm } from '../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
+import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { Exception } from '../../../../../java/lang/Exception.d.ts'
+import type { OutOfMemoryError } from '../../../../../java/lang/OutOfMemoryError.d.ts'
+import type { RuntimeException } from '../../../../../java/lang/RuntimeException.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
+export class Errors extends Object {
+    static createAggregateError(paramerrors: Object, paramoriginatingNode: Node): JSException;
+    static createAggregateError(paramerrors: Object, parammessage: string, paramoriginatingNode: Node): JSException;
+    static createCompileError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createCompileError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createError(parammessage: string): JSException;
+    static createError(parammessage: string, parame: Throwable): JSException;
+    static createErrorCannotConvertToBigInt(paramtype: JSErrorType, paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createErrorFromException(parame: Throwable): JSException;
+    static createEvalDisabled(): JSException;
+    static createEvalError(parammessage: string): JSException;
+    static createICU4JDataError(parame: Exception): JSException;
+    static createLinkError(parammessage: string): JSException;
+    static createLinkError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createLinkError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createNotAFileError(parampath: string): JSException;
+    static createRangeError(parammessage: string): JSException;
+    static createRangeError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createRangeError(parammessage: string, paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createRangeError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createRangeErrorBigIntMaxSizeExceeded(): JSException;
+    static createRangeErrorCurrencyNotWellFormed(paramcurrencyCode: string): JSException;
+    static createRangeErrorEncodingNotSupported(paramencoding: TruffleString): JSException;
+    static createRangeErrorFormat(parammessage: string, paramoriginatingNode: Node, paramargs: (Object | null)[]): JSException;
+    static createRangeErrorIndexNegative(paramoriginatingNode: Node): JSException;
+    static createRangeErrorIndexTooLarge(paramoriginatingNode: Node): JSException;
+    static createRangeErrorInvalidArrayLength(): JSException;
+    static createRangeErrorInvalidArrayLength(paramoriginatingNode: Node): JSException;
+    static createRangeErrorInvalidBufferOffset(): JSException;
+    static createRangeErrorInvalidBufferSize(): JSException;
+    static createRangeErrorInvalidCalendar(paramcalendar: string): JSException;
+    static createRangeErrorInvalidDateTimeField(paramdateTimeField: string): JSException;
+    static createRangeErrorInvalidDuration(paramoriginatingNode: Node, paramduration: Object): JSException;
+    static createRangeErrorInvalidLanguageId(paramlanguageId: string): JSException;
+    static createRangeErrorInvalidLanguageSubtag(paramlanguage: string): JSException;
+    static createRangeErrorInvalidOptions(paramoriginatingNode: Node): JSException;
+    static createRangeErrorInvalidRegion(paramregion: string): JSException;
+    static createRangeErrorInvalidScript(paramscript: string): JSException;
+    static createRangeErrorInvalidStringLength(): JSException;
+    static createRangeErrorInvalidStringLength(paramoriginatingNode: Node): JSException;
+    static createRangeErrorInvalidTimeValue(): JSException;
+    static createRangeErrorInvalidTimeZone(paramtimeZoneName: string): JSException;
+    static createRangeErrorInvalidUnitArgument(paramfunctionName: string, paramunit: Object): JSException;
+    static createRangeErrorInvalidUnitIdentifier(paramunitIdentifier: string): JSException;
+    static createRangeErrorInvalidVariant(paramvariant: string): JSException;
+    static createRangeErrorStackOverflow(): JSException;
+    static createRangeErrorStackOverflow(paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createRangeErrorTooManyArguments(): JSException;
+    static createReferenceError(parammessage: string): JSException;
+    static createReferenceError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createReferenceError(parammessage: string, paramsourceLocation: SourceSection): JSException;
+    static createReferenceError(parammessage: string, paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createReferenceErrorDerivedConstructorThisNotInitialized(paramoriginatingNode: Node): JSException;
+    static createReferenceErrorNotDefined(paramkey: Object, paramoriginatingNode: Node): JSException;
+    static createRuntimeError(parammessage: string, paramrealm: JSRealm): JSException;
+    static createRuntimeError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createSyntaxError(paramcause: ParserException, paramcontext: JSContext): JSException;
+    static createSyntaxError(parammessage: string): JSException;
+    static createSyntaxError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createSyntaxError(parammessage: string, paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createSyntaxError(parammessage: string, paramcause: Throwable, paramsourceLocation: SourceSection, paramisIncompleteSource: boolean): JSException;
+    static createSyntaxErrorFormat(parammessage: string, paramoriginatingNode: Node, paramargs: (Object | null)[]): JSException;
+    static createSyntaxErrorVariableAlreadyDeclared(paramvarName: TruffleString, paramoriginatingNode: Node): JSException;
+    static createTypeError(parammessage: string): JSException;
+    static createTypeError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createTypeError(parammessage: string, paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createTypeError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
+    static createTypeErrorArrayBufferExpected(): JSException;
+    static createTypeErrorArrayBufferViewExpected(): JSException;
+    static createTypeErrorAsyncGeneratorObjectExpected(): JSException;
+    static createTypeErrorCallableExpected(): JSException;
+    static createTypeErrorCalledOnNonObject(): JSException;
+    static createTypeErrorCannotAddPrivateMember(paramname: string, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotConvertBigIntToNumber(paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotConvertToNumber(paramwhat: string): JSException;
+    static createTypeErrorCannotConvertToNumber(paramwhat: string, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotConvertToPrimitiveValue(): JSException;
+    static createTypeErrorCannotConvertToPrimitiveValue(paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotConvertToString(paramwhat: string): JSException;
+    static createTypeErrorCannotConvertToString(paramwhat: string, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotDeclareGlobalFunction(paramvarName: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotDeletePropertyOf(paramkey: Object, paramobject: Object): JSException;
+    static createTypeErrorCannotDeletePropertyOfSealedArray(paramindex: number): JSException;
+    static createTypeErrorCannotGetAccessorProperty(paramkey: Object, paramstore: JSDynamicObject, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotGetPrivateMember(paramfieldAccess: boolean, paramname: TruffleString, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotGetProperty(paramkeyOrIndex: Object, paramobject: Object, paramisGetMethod: boolean, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotMixBigIntWithOtherTypes(paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotRedefineProperty(paramkey: Object): JSException;
+    static createTypeErrorCannotRedefineProperty(paramindex: number): JSException;
+    static createTypeErrorCannotRedefineTypedArrayElement(): JSException;
+    static createTypeErrorCannotSetAccessorProperty(paramkey: Object, paramstore: JSDynamicObject, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotSetPrivateMember(paramname: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotSetProperty(paramkeyOrIndex: Object, paramobject: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorCannotSetProto(paramthisObj: JSDynamicObject, paramproto: JSDynamicObject): JSException;
+    static createTypeErrorClassConstructorRequiresNew(paramclassName: TruffleString, paramoriginatingNode: Node): JSException;
+    static createTypeErrorClassNotFound(paramclassName: Object): JSException;
+    static createTypeErrorConfigurableExpected(): JSException;
+    static createTypeErrorConstReassignment(paramkey: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorDerivedConstructorReturnedIllegalType(paramoriginatingNode: Node): JSException;
+    static createTypeErrorDetachedBuffer(): JSException;
+    static createTypeErrorDisplayNamesExpected(): JSException;
+    static createTypeErrorFinalizationRegistryExpected(): JSException;
+    static createTypeErrorFormat(parammessage: string, paramargs: (Object | null)[]): JSException;
+    static createTypeErrorGeneratorObjectExpected(): JSException;
+    static createTypeErrorGlobalObjectNotExtensible(paramoriginatingNode: Node): JSException;
+    static createTypeErrorIncompatibleReceiver(parammethodName: TruffleString, paramreceiver: Object): JSException;
+    static createTypeErrorIncompatibleReceiver(paramwhat: Object): JSException;
+    static createTypeErrorIncompatibleReceiver(parammethodName: string, paramreceiver: Object): JSException;
+    static createTypeErrorIndexTooLarge(): JSException;
+    static createTypeErrorInteropException(paramreceiver: Object, paramcause: InteropException, parammessage: string, paramoriginatingNode: Node): JSException;
+    static createTypeErrorInteropException(paramreceiver: Object, paramcause: InteropException, parammessage: string, parammessageDetails: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorInvalidDetachKey(): JSException;
+    static createTypeErrorInvalidIdentifier(paramidentifier: Object): JSException;
+    static createTypeErrorInvalidInstanceofTarget(paramtarget: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorInvalidPrototype(paramvalue: Object): JSException;
+    static createTypeErrorInvalidTimeValue(): JSException;
+    static createTypeErrorIterResultNotAnObject(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorIteratorResultNotObject(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorJSObjectExpected(): JSException;
+    static createTypeErrorLengthNotWritable(): JSException;
+    static createTypeErrorLocaleExpected(): JSException;
+    static createTypeErrorMapExpected(): JSException;
+    static createTypeErrorMethodCalledOnNonObjectOrWrongType(parammethod: string): JSException;
+    static createTypeErrorNoOverloadFoundBinary(paramoperatorName: TruffleString, paramleft: Object, paramright: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNoOverloadFoundUnary(paramoperatorName: TruffleString, paramoperand: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotAConstructor(paramobject: Object, paramoriginatingNode: Node, paramcontext: JSContext): JSException;
+    static createTypeErrorNotAConstructor(paramobject: Object, paramcontext: JSContext): JSException;
+    static createTypeErrorNotADataView(): JSException;
+    static createTypeErrorNotADate(): JSException;
+    static createTypeErrorNotAFunction(paramfunctionObj: Object): JSException;
+    static createTypeErrorNotAFunction(paramfunctionObj: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotANumber(paramvalue: Object): JSException;
+    static createTypeErrorNotARegExp(paramvalue: Object): JSException;
+    static createTypeErrorNotAString(paramvalue: Object): JSException;
+    static createTypeErrorNotATruffleObject(parammessage: string): JSException;
+    static createTypeErrorNotAnObject(paramvalue: Object): JSException;
+    static createTypeErrorNotAnObject(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotConfigurableProperty(paramkey: Object): JSException;
+    static createTypeErrorNotExtensible(paramthisObj: JSDynamicObject, paramkey: Object): JSException;
+    static createTypeErrorNotIterable(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotIterator(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotObjectCoercible(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotWritableProperty(paramkey: Object, paramthisObj: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorNotWritableProperty(paramindex: number, paramthisObj: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorOutOfBoundsTypedArray(): JSException;
+    static createTypeErrorOwnKeysTrapMissingKey(parampropertyKey: Object): JSException;
+    static createTypeErrorPrivateSymbolInProxy(): JSException;
+    static createTypeErrorPrivateSymbolInProxy(paramoriginatingNode: Node): JSException;
+    static createTypeErrorPropertyDescriptorNotAnObject(paramvalue: Object, paramoriginatingNode: Node): JSException;
+    static createTypeErrorProxyGetInvariantViolated(parampropertyKey: Object, paramexpectedValue: Object, paramactualValue: Object): JSException;
+    static createTypeErrorProxyRevoked(): JSException;
+    static createTypeErrorProxyRevoked(paramtrap: TruffleString, paramoriginatingNode: Node): JSException;
+    static createTypeErrorProxyTargetNotExtensible(): JSException;
+    static createTypeErrorReadOnlyBuffer(): JSException;
+    static createTypeErrorSameResultExpected(): JSException;
+    static createTypeErrorSegmenterExpected(): JSException;
+    static createTypeErrorSegmentsExpected(): JSException;
+    static createTypeErrorSetExpected(): JSException;
+    static createTypeErrorSetNonObjectReceiver(paramreceiver: Object, paramkey: Object): JSException;
+    static createTypeErrorSharedArrayBufferExpected(): JSException;
+    static createTypeErrorTrapReturnedFalsish(paramtrap: Object, parampropertyKey: Object): JSException;
+    static createTypeErrorTypeXExpected(paramtype: Object): JSException;
+    static createTypeErrorUint8ArrayExpected(): JSException;
+    static createTypeErrorUnboxException(paramreceiver: Object, paramcause: InteropException, paramoriginatingNode: Node): JSException;
+    static createTypeErrorUnsupportedInteropType(paramvalue: Object): JSException;
+    static createTypeErrorWrongDecoratorReturn(paramoriginatingNode: Node): JSException;
+    static createTypeErrorYieldStarThrowMethodMissing(paramoriginatingNode: Node): JSException;
+    static createURIError(parammessage: string): JSException;
+    static notImplemented(parammessage: string): RuntimeException;
+    static outOfMemoryError(): OutOfMemoryError;
+    static shouldNotReachHere(): RuntimeException;
+    static shouldNotReachHere(parammessage: string): RuntimeException;
+    static shouldNotReachHere(paramexception: Throwable): RuntimeException;
+    static shouldNotReachHereUnexpectedValue(paramvalue: Object): RuntimeException;
+    static unsupported(parammessage: string): RuntimeException;
+    private constructor()
+}

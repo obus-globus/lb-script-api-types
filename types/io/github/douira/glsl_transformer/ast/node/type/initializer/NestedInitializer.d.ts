@@ -1,0 +1,23 @@
+import type { ASTNode } from '../../../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
+import type { Initializer } from '../../../../../../../../io/github/douira/glsl_transformer/ast/node/type/initializer/Initializer.d.ts'
+import type { Initializer$InitializerType } from '../../../../../../../../io/github/douira/glsl_transformer/ast/node/type/initializer/Initializer$InitializerType.d.ts'
+import type { Root } from '../../../../../../../../io/github/douira/glsl_transformer/ast/query/Root.d.ts'
+import type { ASTListener } from '../../../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTListener.d.ts'
+import type { ASTVisitor } from '../../../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTVisitor.d.ts'
+import type { Stream } from '../../../../../../../../java/util/stream/Stream.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+export class NestedInitializer extends Initializer {
+    static clone(paramarg0: Object | null): Object | null;
+    static clone(paramarg0: (Object | null)[]): Stream<Object>;
+    static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
+    constructor()
+    constructor(arg0: Stream<Initializer>)
+    initializers: Initializer[];
+    clone(): NestedInitializer;
+    cloneInto(arg0: Root): NestedInitializer;
+    enterNode(arg0: ASTListener): void;
+    exitNode(arg0: ASTListener): void;
+    getInitializerType(): Initializer$InitializerType;
+    getInitializers(): Initializer[];
+    initializerAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+}

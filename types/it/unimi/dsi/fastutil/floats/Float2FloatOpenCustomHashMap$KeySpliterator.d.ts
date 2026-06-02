@@ -1,0 +1,24 @@
+import type { Float2FloatOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/floats/Float2FloatOpenCustomHashMap$MapSpliterator.d.ts'
+import type { FloatComparator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatComparator.d.ts'
+import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
+import type { FloatSpliterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatSpliterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+export class Float2FloatOpenCustomHashMap$KeySpliterator extends Float2FloatOpenCustomHashMap$MapSpliterator<(param0: number) => void, Float2FloatOpenCustomHashMap$KeySpliterator> implements FloatSpliterator {
+    static CONCURRENT: number;
+    static DISTINCT: number;
+    static IMMUTABLE: number;
+    static NONNULL: number;
+    static ORDERED: number;
+    static SIZED: number;
+    static SORTED: number;
+    static SUBSIZED: number;
+    constructor(null_: Float2FloatOpenCustomHashMap$KeySpliterator)
+    constructor(null_: Float2FloatOpenCustomHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
+    characteristics(): number;
+    forEachRemaining(arg0: (param0: number) => void): void;
+    getComparator(): (param0: number, param1: number) => kotlin.Int;
+    makeForSplit(arg0: number, arg1: number, arg2: boolean): Float2FloatOpenCustomHashMap$KeySpliterator;
+    skip(arg0: number): number;
+    tryAdvance(arg0: (param0: number) => void): boolean;
+}

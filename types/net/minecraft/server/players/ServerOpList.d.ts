@@ -1,0 +1,17 @@
+import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
+import type { File } from '../../../../java/io/File.d.ts'
+import type { NotificationService } from '../../../../net/minecraft/server/notifications/NotificationService.d.ts'
+import type { NameAndId } from '../../../../net/minecraft/server/players/NameAndId.d.ts'
+import type { ServerOpListEntry } from '../../../../net/minecraft/server/players/ServerOpListEntry.d.ts'
+import type { StoredUserEntry } from '../../../../net/minecraft/server/players/StoredUserEntry.d.ts'
+import type { StoredUserList } from '../../../../net/minecraft/server/players/StoredUserList.d.ts'
+export class ServerOpList extends StoredUserList<NameAndId, ServerOpListEntry> {
+    constructor(file: File, notificationService: NotificationService)
+    add(infos: ServerOpListEntry): boolean;
+    canBypassPlayerLimit(user: NameAndId): boolean;
+    clear(): void;
+    createEntry(object: JsonObject): StoredUserEntry<NameAndId>;
+    getKeyForUser(user: NameAndId): string;
+    getUserList(): string[];
+    remove(user: NameAndId): boolean;
+}

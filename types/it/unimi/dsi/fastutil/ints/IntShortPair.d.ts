@@ -1,0 +1,38 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export interface IntShortPair extends Pair<number, number>, Object{
+    first<L extends Object | number | string | boolean>(): L;
+    first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    first(): number;
+    first(arg0: number): IntShortPair;
+    first(arg0: number): IntShortPair;
+    firstInt(): number;
+    key<L extends Object | number | string | boolean>(): L;
+    key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    key(): number;
+    key(arg0: number): IntShortPair;
+    key(arg0: number): IntShortPair;
+    keyInt(): number;
+    left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    left(): number;
+    left(arg0: number): IntShortPair;
+    left(arg0: number): IntShortPair;
+    leftInt(): number;
+    right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    right(): number;
+    right(arg0: number): IntShortPair;
+    right(arg0: number): IntShortPair;
+    rightShort(): number;
+    second<R extends Object | number | string | boolean>(): R;
+    second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    second(): number;
+    second(arg0: number): IntShortPair;
+    second(arg0: number): IntShortPair;
+    secondShort(): number;
+    value<R extends Object | number | string | boolean>(): R;
+    value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    value(): number;
+    value(arg0: number): IntShortPair;
+    value(arg0: number): IntShortPair;
+    valueShort(): number;
+}

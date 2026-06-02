@@ -1,0 +1,5 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ParseState } from '../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
+export interface Rule$RuleAction<S extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Object{
+    run(state: ParseState<S>): T;
+}

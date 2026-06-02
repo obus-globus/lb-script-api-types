@@ -1,0 +1,52 @@
+import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class BDF_Property extends Struct<BDF_Property> implements NativeResource {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SIZEOF: number;
+    static TYPE: number;
+    static U: number;
+    static U_ATOM: number;
+    static U_CARDINAL: number;
+    static U_INTEGER: number;
+    static calloc(): BDF_Property;
+    static calloc(paramarg0: MemoryStack): BDF_Property;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): BDF_Property;
+    static create(paramarg0: number): BDF_Property;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): BDF_Property;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): BDF_Property;
+    static malloc(paramarg0: MemoryStack): BDF_Property;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static ntype(paramarg0: number): number;
+    static nu_atom(paramarg0: number): ByteBuffer;
+    static nu_atomString(paramarg0: number): string;
+    static nu_cardinal(paramarg0: number): number;
+    static nu_integer(paramarg0: number): number;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    close(): void;
+    create(arg0: number, arg1: ByteBuffer): BDF_Property;
+    sizeof(): number;
+    type(): number;
+    u_atom(): ByteBuffer;
+    u_atomString(): string;
+    u_cardinal(): number;
+    u_integer(): number;
+}

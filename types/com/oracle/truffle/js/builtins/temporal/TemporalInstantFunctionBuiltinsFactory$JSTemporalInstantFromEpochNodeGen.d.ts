@@ -1,0 +1,33 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TemporalInstantFunctionBuiltins$JSTemporalInstantFromEpochNode } from '../../../../../../com/oracle/truffle/js/builtins/temporal/TemporalInstantFunctionBuiltins$JSTemporalInstantFromEpochNode.d.ts'
+import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSNumberToBigIntNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSNumberToBigIntNode.d.ts'
+import type { JSToNumberNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToNumberNode.d.ts'
+import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/BigInt.d.ts'
+import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSTemporalInstantObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/JSTemporalInstantObject.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class TemporalInstantFunctionBuiltinsFactory$JSTemporalInstantFromEpochNodeGen extends TemporalInstantFunctionBuiltins$JSTemporalInstantFromEpochNode {
+    static ARGUMENTS: string;
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramfactor: BigInt, paramnumberToBigIntConversion: boolean, paramarguments: (Object | null)[]): TemporalInstantFunctionBuiltins$JSTemporalInstantFromEpochNode;
+    static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    private constructor(context: JSContext, builtin: JSBuiltin, factor: BigInt, numberToBigIntConversion: boolean, arguments: JavaScriptNode[])
+    // private arguments0_: JavaScriptNode;
+    // private numberToBigIntNode_: JSNumberToBigIntNode;
+    // private state_0_: number;
+    // private toNumberNode_: JSToNumberNode;
+    execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object): JSTemporalInstantObject;
+    getArguments(): JavaScriptNode[];
+}

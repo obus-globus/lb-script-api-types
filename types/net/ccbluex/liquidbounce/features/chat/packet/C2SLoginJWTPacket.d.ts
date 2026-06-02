@@ -1,0 +1,22 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { AxochatPacket$C2S } from '../../../../../../net/ccbluex/liquidbounce/features/chat/packet/AxochatPacket$C2S.d.ts'
+/**
+ * To log in using a json web token, the client has to send a LoginJWT packet.
+ * it will send Success if the login was successful.
+ *
+ * @param token can be retrieved by sending RequestJWT on an already authenticated connection.
+ * @param allowMessages If allow_messages is true, other clients may send private messages to this client.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:61}
+ */
+export class C2SLoginJWTPacket extends Object implements AxochatPacket$C2S {
+    constructor(token: string, allowMessages: boolean)
+    readonly allowMessages: boolean;
+    readonly token: string;
+    component1(): string;
+    component2(): boolean;
+    copy(token: string, allowMessages: boolean): C2SLoginJWTPacket;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
+    toString(): string;
+}

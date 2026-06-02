@@ -1,0 +1,23 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSToStringNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToStringNode.d.ts'
+import type { JSToStringNode$JSToStringWrapperNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToStringNode$JSToStringWrapperNode.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export class JSToStringNodeGen$JSToStringWrapperNodeGen extends JSToStringNode$JSToStringWrapperNode {
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static create(paramoperand: JavaScriptNode): JSToStringNode$JSToStringWrapperNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    private constructor(operand: JavaScriptNode)
+    // private state_0_: number;
+    // private toStringNode_: JSToStringNode;
+    execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(operandNodeValue: Object): Object;
+    executeVoid(frameValue: VirtualFrame): void;
+}

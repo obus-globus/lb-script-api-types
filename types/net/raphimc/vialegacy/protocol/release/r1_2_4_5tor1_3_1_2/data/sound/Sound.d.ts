@@ -1,0 +1,75 @@
+import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
+export class Sound extends Enum<Sound> {
+    static CHEST_CLOSE: Sound;
+    static CHEST_OPEN: Sound;
+    static MOB_BLAZE: Sound;
+    static MOB_BLAZE_DEATH: Sound;
+    static MOB_BLAZE_HURT: Sound;
+    static MOB_CAT: Sound;
+    static MOB_CAT_HURT: Sound;
+    static MOB_CAT_MEOW: Sound;
+    static MOB_CAT_PURREOW: Sound;
+    static MOB_CHICKEN: Sound;
+    static MOB_CHICKEN_HURT: Sound;
+    static MOB_COW: Sound;
+    static MOB_COW_HURT: Sound;
+    static MOB_CREEPER: Sound;
+    static MOB_CREEPER_DEATH: Sound;
+    static MOB_ENDERMEN: Sound;
+    static MOB_ENDERMEN_DEATH: Sound;
+    static MOB_ENDERMEN_HURT: Sound;
+    static MOB_GHAST: Sound;
+    static MOB_GHAST_DEATH: Sound;
+    static MOB_GHAST_HURT: Sound;
+    static MOB_HUMAN_HURT: Sound;
+    static MOB_IRON_GOLEM_DEATH: Sound;
+    static MOB_IRON_GOLEM_HURT: Sound;
+    static MOB_MAGMACUBE_SMALL: Sound;
+    static MOB_PIG: Sound;
+    static MOB_PIG_DEATH: Sound;
+    static MOB_PIG_ZOMBIE: Sound;
+    static MOB_PIG_ZOMBIE_DEATH: Sound;
+    static MOB_PIG_ZOMBIE_HURT: Sound;
+    static MOB_SHEEP: Sound;
+    static MOB_SILVERFISH: Sound;
+    static MOB_SILVERFISH_DEATH: Sound;
+    static MOB_SILVERFISH_HURT: Sound;
+    static MOB_SKELETON: Sound;
+    static MOB_SKELETON_DEATH: Sound;
+    static MOB_SKELETON_HURT: Sound;
+    static MOB_SLIME: Sound;
+    static MOB_SPIDER: Sound;
+    static MOB_SPIDER_DEATH: Sound;
+    static MOB_VILLAGER: Sound;
+    static MOB_VILLAGER_DEATH: Sound;
+    static MOB_VILLAGER_HURT: Sound;
+    static MOB_WOLF: Sound;
+    static MOB_WOLF_DEATH: Sound;
+    static MOB_WOLF_GROWL: Sound;
+    static MOB_WOLF_HURT: Sound;
+    static MOB_WOLF_PANTING: Sound;
+    static MOB_WOLF_WHINE: Sound;
+    static MOB_ZOMBIE: Sound;
+    static MOB_ZOMBIE_DEATH: Sound;
+    static MOB_ZOMBIE_HURT: Sound;
+    static NOTE_BASS_ATTACK: Sound;
+    static NOTE_CLICK: Sound;
+    static NOTE_HARP: Sound;
+    static NOTE_HAT: Sound;
+    static NOTE_SNARE: Sound;
+    static NO_SOUND: Sound;
+    static PISTON_IN: Sound;
+    static PISTON_OUT: Sound;
+    static RANDOM_BOW: Sound;
+    static RANDOM_EXPLODE: Sound;
+    static RANDOM_FUSE: Sound;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): Sound;
+    static values(): (Object | null)[];
+    private constructor(arg2: string)
+    readonly soundName: string;
+    getSoundName(): string;
+    name(): "NOTE_SNARE" | "NOTE_HAT" | "NOTE_CLICK" | "NOTE_HARP" | "NOTE_BASS_ATTACK" | "PISTON_OUT" | "PISTON_IN" | "CHEST_OPEN" | "CHEST_CLOSE" | "RANDOM_FUSE" | "RANDOM_EXPLODE" | "RANDOM_BOW" | "MOB_ZOMBIE" | "MOB_HUMAN_HURT" | "MOB_ZOMBIE_HURT" | "MOB_ZOMBIE_DEATH" | "MOB_PIG_ZOMBIE" | "MOB_PIG_ZOMBIE_HURT" | "MOB_PIG_ZOMBIE_DEATH" | "MOB_SPIDER" | "MOB_SPIDER_DEATH" | "MOB_CREEPER" | "MOB_CREEPER_DEATH" | "MOB_SKELETON" | "MOB_SKELETON_HURT" | "MOB_SKELETON_DEATH" | "MOB_ENDERMEN" | "MOB_ENDERMEN_HURT" | "MOB_ENDERMEN_DEATH" | "MOB_BLAZE" | "MOB_BLAZE_HURT" | "MOB_BLAZE_DEATH" | "MOB_GHAST" | "MOB_GHAST_HURT" | "MOB_GHAST_DEATH" | "MOB_SILVERFISH" | "MOB_SILVERFISH_HURT" | "MOB_SILVERFISH_DEATH" | "MOB_CAT" | "MOB_CAT_HURT" | "MOB_CAT_PURREOW" | "MOB_CAT_MEOW" | "MOB_IRON_GOLEM_HURT" | "MOB_IRON_GOLEM_DEATH" | "MOB_WOLF" | "MOB_WOLF_HURT" | "MOB_WOLF_DEATH" | "MOB_WOLF_GROWL" | "MOB_WOLF_WHINE" | "MOB_WOLF_PANTING" | "MOB_SHEEP" | "MOB_PIG" | "MOB_PIG_DEATH" | "MOB_COW" | "MOB_COW_HURT" | "MOB_CHICKEN" | "MOB_CHICKEN_HURT" | "MOB_SLIME" | "MOB_MAGMACUBE_SMALL" | "MOB_VILLAGER" | "MOB_VILLAGER_HURT" | "MOB_VILLAGER_DEATH" | "NO_SOUND";
+}

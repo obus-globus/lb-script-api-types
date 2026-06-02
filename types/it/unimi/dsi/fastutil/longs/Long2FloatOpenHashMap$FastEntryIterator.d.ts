@@ -1,0 +1,12 @@
+import type { Long2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2FloatMap$Entry.d.ts'
+import type { Long2FloatOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2FloatOpenHashMap$MapEntry.d.ts'
+import type { Long2FloatOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2FloatOpenHashMap$MapIterator.d.ts'
+import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+export class Long2FloatOpenHashMap$FastEntryIterator extends Long2FloatOpenHashMap$MapIterator<(param0: Long2FloatMap$Entry) => void> implements ObjectIterator<Long2FloatMap$Entry> {
+    private constructor(null_: Long2FloatOpenHashMap$FastEntryIterator)
+    // private entry: Long2FloatOpenHashMap$MapEntry;
+    acceptOnIndex(arg0: (param0: Long2FloatMap$Entry) => void, arg1: number): void;
+    next(): Long2FloatOpenHashMap$MapEntry;
+    skip(arg0: number): number;
+}

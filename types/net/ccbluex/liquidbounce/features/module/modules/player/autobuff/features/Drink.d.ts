@@ -1,0 +1,13 @@
+import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
+import type { KeybindIsPressedEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/KeybindIsPressedEvent.d.ts'
+import type { StatusEffectBasedBuff } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autobuff/StatusEffectBasedBuff.d.ts'
+import type { HotbarItemSlot } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot.d.ts'
+import type { ItemStack } from '../../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
+export class Drink extends StatusEffectBasedBuff {
+    static INSTANCE: Drink;
+    // private forceUseKey: boolean;
+    // private keyBindIsPressedHandler: EventHook<KeybindIsPressedEvent>;
+    execute(slot: HotbarItemSlot): void;
+    protected isValidPotion(stack: ItemStack): boolean;
+    onDisabled(): void;
+}

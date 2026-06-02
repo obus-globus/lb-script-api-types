@@ -1,0 +1,10 @@
+import type { DictionaryMatcher } from '../../../../../com/ibm/icu/impl/breakiter/DictionaryMatcher.d.ts'
+import type { CharacterIterator } from '../../../../../java/text/CharacterIterator.d.ts'
+export class BytesDictionaryMatcher extends DictionaryMatcher {
+    constructor(arg0: number[], arg1: number)
+    // private characters: number[];
+    // private transform: number;
+    getType(): number;
+    matches(arg0: CharacterIterator, arg1: number, arg2: number[], arg3: number[], arg4: number, arg5: number[]): number;
+    // private transform(arg0: number): number;
+}

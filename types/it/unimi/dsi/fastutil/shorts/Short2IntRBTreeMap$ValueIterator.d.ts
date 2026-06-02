@@ -1,0 +1,14 @@
+import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntListIterator.d.ts'
+import type { Short2IntRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2IntRBTreeMap$TreeIterator.d.ts'
+export class Short2IntRBTreeMap$ValueIterator extends Short2IntRBTreeMap$TreeIterator implements IntListIterator {
+    private constructor(null_: Short2IntRBTreeMap$ValueIterator)
+    add(arg0: number): void;
+    add(arg0: number): void;
+    next(): number;
+    nextInt(): number;
+    previous(): number;
+    previousInt(): number;
+    remove(): void;
+    set(arg0: number): void;
+    set(arg0: number): void;
+}

@@ -1,0 +1,17 @@
+import type { LocalCache$WeakEntry } from '../../../../com/google/common/cache/LocalCache$WeakEntry.d.ts'
+import type { ReferenceEntry } from '../../../../com/google/common/cache/ReferenceEntry.d.ts'
+import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export class LocalCache$WeakAccessEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LocalCache$WeakEntry<K, V> {
+    static reachabilityFence(paramarg0: Object): void;
+    constructor(queue: ReferenceQueue<K>, key: K, hash: number, next: ReferenceEntry<K, V>)
+    accessTime: number;
+    // private nextAccess: ReferenceEntry<K, V>;
+    // private previousAccess: ReferenceEntry<K, V>;
+    getAccessTime(): number;
+    getNextInAccessQueue(): ReferenceEntry<K, V>;
+    getPreviousInAccessQueue(): ReferenceEntry<K, V>;
+    setAccessTime(time: number): void;
+    setNextInAccessQueue(next: ReferenceEntry<K, V>): void;
+    setPreviousInAccessQueue(previous: ReferenceEntry<K, V>): void;
+}

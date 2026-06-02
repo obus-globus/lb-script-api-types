@@ -1,0 +1,31 @@
+import type { Frame } from '../../../../../../com/oracle/truffle/api/frame/Frame.d.ts'
+import type { InstrumentableNode } from '../../../../../../com/oracle/truffle/api/instrumentation/InstrumentableNode.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { JSFrameSlot } from '../../../../../../com/oracle/truffle/js/nodes/JSFrameSlot.d.ts'
+import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { FrameSlotNode$WithDescriptor } from '../../../../../../com/oracle/truffle/js/nodes/access/FrameSlotNode$WithDescriptor.d.ts'
+import type { ScopeFrameNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ScopeFrameNode.d.ts'
+import type { WriteNode } from '../../../../../../com/oracle/truffle/js/nodes/access/WriteNode.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+export abstract class JSWriteFrameSlotNode extends FrameSlotNode$WithDescriptor implements WriteNode {
+    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static create(paramframeSlot: JSFrameSlot, paramrhs: JavaScriptNode, paramhasTemporalDeadZone: boolean): JSWriteFrameSlotNode;
+    static create(paramframeSlot: JSFrameSlot, paramscopeFrameNode: ScopeFrameNode, paramrhs: JavaScriptNode, paramhasTemporalDeadZone: boolean): JSWriteFrameSlotNode;
+    static create(paramslotIndex: number, paramidentifier: Object, paramscopeFrameNode: ScopeFrameNode, paramrhs: JavaScriptNode, paramhasTemporalDeadZone: boolean): JSWriteFrameSlotNode;
+    static findBlockScopeNode(paramnode: Node): Node;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
+    constructor(slot: number, identifier: Object)
+    executeWithFrame(frame: Frame, value: Object): void;
+    getNodeObject(): Object;
+    getRhs(): JavaScriptNode;
+    hasTag(tag: Class<Tag>): boolean;
+    isResultAlwaysOfType(clazz: Class<Object>): boolean;
+    materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;
+}

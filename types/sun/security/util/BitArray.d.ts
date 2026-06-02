@@ -1,0 +1,20 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class BitArray extends Object {
+    constructor(arg0: (Object | null)[])
+    constructor(arg0: number)
+    constructor(arg0: number, arg1: number[])
+    constructor(arg0: number, arg1: number[], arg2: number)
+    private constructor(arg0: BitArray)
+    // private length: number;
+    // private repn: number[];
+    clone(): Object;
+    equals(arg0: Object | null): boolean;
+    get(arg0: number): boolean;
+    hashCode(): number;
+    length(): number;
+    set(arg0: number, arg1: boolean): void;
+    toBooleanArray(): (Object | null)[];
+    toByteArray(): number[];
+    toString(): string;
+    truncate(): BitArray;
+}

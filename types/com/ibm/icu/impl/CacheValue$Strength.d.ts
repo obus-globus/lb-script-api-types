@@ -1,0 +1,12 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
+export class CacheValue$Strength extends Enum<CacheValue$Strength> {
+    static SOFT: CacheValue$Strength;
+    static STRONG: CacheValue$Strength;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramarg0: string): CacheValue$Strength;
+    static values(): (Object | null)[];
+    private constructor()
+    name(): "STRONG" | "SOFT";
+}

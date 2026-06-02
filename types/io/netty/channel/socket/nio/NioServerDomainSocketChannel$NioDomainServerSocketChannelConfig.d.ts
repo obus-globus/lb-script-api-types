@@ -1,0 +1,16 @@
+import type { ChannelOption } from '../../../../../io/netty/channel/ChannelOption.d.ts'
+import type { DefaultChannelConfig } from '../../../../../io/netty/channel/DefaultChannelConfig.d.ts'
+import type { NioServerDomainSocketChannel } from '../../../../../io/netty/channel/socket/nio/NioServerDomainSocketChannel.d.ts'
+import type { ServerSocketChannel } from '../../../../../java/nio/channels/ServerSocketChannel.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig extends DefaultChannelConfig {
+    private constructor(null_: NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig, arg1: NioServerDomainSocketChannel)
+    // private backlog: number;
+    autoReadCleared(): void;
+    // private getBacklog(): number;
+    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOptions(): Map<ChannelOption<Object>, Object>;
+    // private jdkChannel(): ServerSocketChannel;
+    // private setBacklog(arg0: number): NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig;
+    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+}

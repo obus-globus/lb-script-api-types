@@ -1,0 +1,13 @@
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
+export class TemporalUtil$FieldsType extends Enum<TemporalUtil$FieldsType> {
+    static DATE: TemporalUtil$FieldsType;
+    static MONTH_DAY: TemporalUtil$FieldsType;
+    static YEAR_MONTH: TemporalUtil$FieldsType;
+    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf(paramname: string): TemporalUtil$FieldsType;
+    static values(): (Object | null)[];
+    private constructor()
+    name(): "DATE" | "YEAR_MONTH" | "MONTH_DAY";
+}

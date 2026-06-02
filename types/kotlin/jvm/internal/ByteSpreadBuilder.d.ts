@@ -1,0 +1,7 @@
+import type { PrimitiveSpreadBuilder } from '../../../kotlin/jvm/internal/PrimitiveSpreadBuilder.d.ts'
+export class ByteSpreadBuilder extends PrimitiveSpreadBuilder<number[]> {
+    constructor(size: number)
+    // private values: number[];
+    add(value: number): void;
+    toArray(): number[];
+}

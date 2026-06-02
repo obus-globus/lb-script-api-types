@@ -1,0 +1,21 @@
+import type { Object2ShortRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortRBTreeMap$Entry.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+export class Object2ShortRBTreeMap$TreeIterator extends Object {
+    constructor(null_: Object2ShortRBTreeMap$TreeIterator)
+    constructor(null_: Object2ShortRBTreeMap$TreeIterator)
+    // private curr: Object2ShortRBTreeMap$Entry<K>;
+    // private index: number;
+    // private next: Object2ShortRBTreeMap$Entry<K>;
+    // private prev: Object2ShortRBTreeMap$Entry<K>;
+    back(arg0: number): number;
+    hasNext(): boolean;
+    hasPrevious(): boolean;
+    nextEntry(): Object2ShortRBTreeMap$Entry<K>;
+    nextIndex(): number;
+    previousEntry(): Object2ShortRBTreeMap$Entry<K>;
+    previousIndex(): number;
+    remove(): void;
+    skip(arg0: number): number;
+    updateNext(): void;
+    updatePrevious(): void;
+}
