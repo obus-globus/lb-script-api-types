@@ -2,10 +2,15 @@ node_modules/
 *.log
 .DS_Store
 
-# --- heavy regen inputs/outputs, fetched/generated on demand (see fetch-references.sh) ---
-references/                 # LiquidBounce source + decompiled MC (cloned by fetch-references.sh)
-tools/regen-output/         # raw ts-generator output before it's promoted into typings/
-tools/script-runner/        # headless JDK+MC harness (large; provide separately)
-**/kotlinc/                 # downloaded Kotlin compiler toolchain (kdoc-extractor)
-**/.venv*/                  # python venvs
+# Heavy regen inputs/outputs, fetched/generated on demand (see fetch-references.sh).
+# LiquidBounce source + decompiled MC (cloned/symlinked by fetch-references.sh):
+references/
+# Raw ts-generator output before it's promoted into typings/:
+tools/regen-output/
+# Headless JDK+MC harness (large; provided separately):
+tools/script-runner/
+# Downloaded Kotlin compiler toolchain (kdoc-extractor):
+**/kotlinc/
+# Python venvs / caches:
+**/.venv*/
 **/__pycache__/
