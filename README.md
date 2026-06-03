@@ -6,6 +6,11 @@ can reach at runtime — **and the pipeline that generates them**. Split out of 
 `liquidbounce-helper` monorepo so the types (and their generator) can be versioned
 and consumed on their own.
 
+This is a heavily-refined fork of CCBlueX's published types — typed per-event
+`on()` overloads, KDoc→TSDoc hover docs, binding fixes, ambient globals, and more.
+See **[docs/improvements.md](docs/improvements.md)** for the full list of what we
+add over the official `@ccbluex/liquidbounce-script-api`.
+
 ## Layout
 
 ```
