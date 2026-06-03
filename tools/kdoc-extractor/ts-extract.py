@@ -354,6 +354,7 @@ def _walk(
     package: str,
     out: dict[str, list[dict[str, Any]]],
     sigs: dict[str, list[dict[str, Any]]],
+    deps: dict[str, dict[str, Any]],
 ) -> None:
     for child in node.children:
         if child.type in DECL_TYPES:
@@ -381,7 +382,7 @@ def _walk(
                 # Don't emit "Foo.Companion"; just recurse with parent scope.
                 body = _child_of_type(child, "class_body")
                 if body is not None:
-                    _walk(body, parent_parts, rel_file, package, out, sigs)
+                    _walk(body, parent_parts, rel_file, package, out, sigs, deps)
                 continue
 
             # Extension functions on type receivers: re-parent so the FQN
@@ -397,6 +398,13 @@ def _walk(
                 parts = parent_parts + [name]
 
             fqn = (package + "." if package else "") + ".".join(parts)
+
+            # @Deprecated annotation (independent of KDoc), keyed like the KDoc
+            # manifest so apply-deprecations resolves it the same way.
+            dep = _deprecation_of(child)
+            if dep is not None:
+                deps[fqn] = {**dep, "kind": kind,
+                             "source": {"file": rel_file, "line": child.start_point[0] + 1}}
 
             kdoc_text = _preceding_kdoc(child)
             if kdoc_text:
@@ -437,11 +445,16 @@ def _walk(
                             if not ident:
                                 continue
                             ident = ident.strip("`")
+                            member_fqn = fqn + "." + ident
+                            dep2 = _deprecation_of(cp)
+                            if dep2 is not None:
+                                deps[member_fqn] = {**dep2, "kind": "property",
+                                                    "source": {"file": rel_file,
+                                                               "line": cp.start_point[0] + 1}}
                             kdoc_text2 = _preceding_kdoc(cp)
                             if kdoc_text2:
                                 parsed2 = parse_kdoc(kdoc_text2)
                                 if parsed2 is not None:
-                                    member_fqn = fqn + "." + ident
                                     entry2 = dict(parsed2)
                                     entry2["kind"] = "property"
                                     entry2["source"] = {
@@ -454,15 +467,15 @@ def _walk(
                 if body is None:
                     body = _child_of_type(child, "enum_class_body")
                 if body is not None:
-                    _walk(body, parts, rel_file, package, out, sigs)
+                    _walk(body, parts, rel_file, package, out, sigs, deps)
         elif child.type in CONTAINER_TYPES:
-            _walk(child, parent_parts, rel_file, package, out, sigs)
+            _walk(child, parent_parts, rel_file, package, out, sigs, deps)
         elif child.type == "companion_object":
             # Companion-object members flatten into the enclosing class
             # namespace (TS generator emits them as statics).
             body = _child_of_type(child, "class_body")
             if body is not None:
-                _walk(body, parent_parts, rel_file, package, out, sigs)
+                _walk(body, parent_parts, rel_file, package, out, sigs, deps)
 
 
 def _child_of_type(node: Node, type_name: str) -> Optional[Node]:
@@ -584,6 +597,71 @@ def _return_type_str(fn_node: Node) -> Optional[str]:
     return None
 
 
+def _string_content(string_literal: Node) -> str:
+    """Concatenate the literal text of a `string_literal` node (its
+    `string_content` children), ignoring interpolations/escapes' structure."""
+    parts: list[str] = []
+    for c in string_literal.children:
+        if c.type == "string_content":
+            parts.append(c.text.decode("utf-8", "replace") if c.text else "")
+    return "".join(parts)
+
+
+def _deprecation_of(child: Node) -> Optional[dict[str, str]]:
+    """If the declaration carries a Kotlin `@Deprecated(...)` annotation,
+    return {message?, replaceWith?}; else None. Handles the positional or
+    `message = "..."` form, and an optional `ReplaceWith("...")` argument."""
+    mods = _child_of_type(child, "modifiers")
+    if mods is None:
+        return None
+    for ann in mods.children:
+        if ann.type != "annotation":
+            continue
+        ci = _child_of_type(ann, "constructor_invocation")
+        if ci is None:
+            continue
+        ut = _child_of_type(ci, "user_type")
+        name = (ut.text.decode("utf-8", "replace") if ut is not None and ut.text else "")
+        if name.split(".")[-1] != "Deprecated":
+            continue
+        message: Optional[str] = None
+        replace_with: Optional[str] = None
+        vargs = _child_of_type(ci, "value_arguments")
+        if vargs is not None:
+            for va in vargs.children:
+                if va.type != "value_argument":
+                    continue
+                # The message is the first value-argument carrying a direct
+                # string literal (positional, or `message = "..."`).
+                sl = _child_of_type(va, "string_literal")
+                if sl is not None:
+                    if message is None:
+                        message = _string_content(sl)
+                    continue
+                # ReplaceWith("...") — its string is nested one level deeper.
+                inner = _child_of_type(va, "constructor_invocation")
+                if inner is not None:
+                    inner_ut = _child_of_type(inner, "user_type")
+                    inner_name = (inner_ut.text.decode("utf-8", "replace")
+                                  if inner_ut is not None and inner_ut.text else "")
+                    if inner_name.split(".")[-1] == "ReplaceWith":
+                        inner_vargs = _child_of_type(inner, "value_arguments")
+                        if inner_vargs is not None:
+                            for iva in inner_vargs.children:
+                                if iva.type == "value_argument":
+                                    isl = _child_of_type(iva, "string_literal")
+                                    if isl is not None:
+                                        replace_with = _string_content(isl)
+                                        break
+        out: dict[str, str] = {}
+        if message:
+            out["message"] = message
+        if replace_with:
+            out["replaceWith"] = replace_with
+        return out  # may be {} — still flags "deprecated" with no message
+    return None
+
+
 def _owner_fqn(parent_parts: list[str], package: str, rel_file: str) -> str:
     """The FQN of the class that ts-generator emits this declaration onto.
 
@@ -614,6 +692,9 @@ def main() -> int:
     ap.add_argument("--signatures-out", default=None,
                     help="Output signatures.json path (#12b — real parameter "
                          "names + types for the paramargN rename post-patch).")
+    ap.add_argument("--deprecations-out", default=None,
+                    help="Output deprecations.json path (W2 — @Deprecated "
+                         "annotation messages for the @deprecated TSDoc post-patch).")
     ap.add_argument(
         "--source-roots",
         nargs="+",
@@ -623,8 +704,9 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0, help="Stop after N files (debug)")
     args = ap.parse_args()
 
-    if not args.out and not args.signatures_out:
-        print("FAIL: pass at least one of --out / --signatures-out", file=sys.stderr)
+    if not args.out and not args.signatures_out and not args.deprecations_out:
+        print("FAIL: pass at least one of --out / --signatures-out / --deprecations-out",
+              file=sys.stderr)
         return 2
 
     project = Path(args.project).resolve()
@@ -645,6 +727,7 @@ def main() -> int:
 
     out: dict[str, list[dict[str, Any]]] = {}
     sigs: dict[str, list[dict[str, Any]]] = {}
+    deps: dict[str, dict[str, Any]] = {}
     files_with_kdoc = 0
     kdocs = 0
     t0 = time.time()
@@ -662,7 +745,7 @@ def main() -> int:
         package = _extract_package(root)
         rel_file = str(path.relative_to(project))
         before = sum(len(v) for v in out.values())
-        _walk(root, [], rel_file, package, out, sigs)
+        _walk(root, [], rel_file, package, out, sigs, deps)
         after = sum(len(v) for v in out.values())
         added = after - before
         if added:
@@ -716,6 +799,19 @@ def main() -> int:
             f"[ts] wrote signatures for {len(sigs)} members "
             f"({total_overloads} overloads, {total_params} params) "
             f"→ {args.signatures_out}",
+            file=sys.stderr,
+        )
+
+    if args.deprecations_out:
+        envelope = {
+            "schemaVersion": 1,
+            "deprecations": {fqn: deps[fqn] for fqn in sorted(deps)},
+        }
+        Path(args.deprecations_out).write_text(
+            json.dumps(envelope, indent=2, ensure_ascii=False) + "\n"
+        )
+        print(
+            f"[ts] wrote {len(deps)} @Deprecated entries → {args.deprecations_out}",
             file=sys.stderr,
         )
     return 0

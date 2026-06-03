@@ -6,6 +6,9 @@ import type { RotationTarget } from '../../../../../../../../../net/ccbluex/liqu
 import type { Rotation } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { FactorAngleSmooth } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/FactorAngleSmooth.d.ts'
 import type { Vec2 } from '../../../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
+/**
+ * @deprecated Interpolation mode combines Sigmoid and Bezier interpolation
+ */
 export class SigmoidAngleSmooth extends FactorAngleSmooth {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<Object>)

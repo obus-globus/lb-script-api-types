@@ -86,6 +86,9 @@ export class Color4b extends Record {
      */
     interpolateTo(other: Color4b, percentage: number): Color4b;
     interpolateTo(other: Color4b, tR: number, tG: number, tB: number, tA: number): Color4b;
+    /**
+     * @deprecated Replaced with Color4b.argb
+     */
     toARGB(): number;
     /**
      * Converts this {@link Color4b} to a Java AWT Color

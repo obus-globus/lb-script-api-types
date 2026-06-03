@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "deprecations": {
+    "net.ccbluex.liquidbounce.api.core.HttpClient.EMPTY_HEADERS": {
+      "message": "Use Headers.EMPTY instead when Lunar Client updates OkHttp to 5.10 or newer.",
+      "kind": "property",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
+        "line": 92
+      }
+    },
+    "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent.screenName": {
+      "message": "Use `type` instead",
+      "kind": "property",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/ClientEvents.kt",
+        "line": 171
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.ModuleCategory.readableName": {
+      "message": "For script compatibility only. Use choiceName instead",
+      "kind": "property",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleCategory.kt",
+        "line": 25
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.EssentialsPayStarExploit": {
+      "message": "This exploit is outdated and no longer works.",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/servercrasher/exploits/EssentialsPayStarExploit.kt",
+        "line": 23
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.PermissionsExPromoteExploit": {
+      "message": "This exploit is outdated and no longer works.",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/servercrasher/exploits/PermissionsExPromoteExploit.kt",
+        "line": 26
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.WorldEditCalcExploit": {
+      "message": "This exploit is outdated and no longer works.",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/servercrasher/exploits/WorldEditCalcExploit.kt",
+        "line": 29
+      }
+    },
+    "net.ccbluex.liquidbounce.render.engine.type.Color4b.toARGB": {
+      "message": "Replaced with Color4b.argb",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt",
+        "line": 163
+      }
+    },
+    "net.ccbluex.liquidbounce.script.PolyglotScript.registerChoice": {
+      "message": "Use registerMode instead",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
+        "line": 270
+      }
+    },
+    "net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.impl.SigmoidAngleSmooth": {
+      "message": "Interpolation mode combines Sigmoid and Bezier interpolation",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/SigmoidAngleSmooth.kt",
+        "line": 30
+      }
+    },
+    "net.ccbluex.liquidbounce.utils.math.Vec3.toVec3i": {
+      "message": "use this.toBlockPos instead",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
+        "line": 200
+      }
+    },
+    "net.ccbluex.liquidbounce.utils.sorting.compareByCondition": {
+      "message": "Use standard compareBy instead",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt",
+        "line": 51
+      }
+    },
+    "net.ccbluex.liquidbounce.utils.sorting.compareValueByCondition": {
+      "message": "Use standard compareValuesBy instead",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt",
+        "line": 40
+      }
+    }
+  }
+}

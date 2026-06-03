@@ -90,6 +90,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      * @see ModeValueGroup
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L259 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:259}
+     * @deprecated Use registerMode instead
      */
     registerChoice(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: Object }, callback: (param0: Mode) => void): void;
     /**

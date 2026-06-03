@@ -809,6 +809,23 @@ else
 fi
 
 # -----------------------------------------------------------------------------
+# W2 — @deprecated. The reflection generator doesn't surface Kotlin's
+# @Deprecated annotation; apply-deprecations.py injects @deprecated TSDoc from
+# the committed deprecations manifest (source-derived, so gated under the same
+# doc-enrichment toggle as KDoc). Runs after apply-kdoc so it can merge into
+# the doc blocks that step produced.
+DEPRECATIONS="$REPO_ROOT/tools/kdoc-extractor/deprecations.json"
+DEP_SCRIPT="$REPO_ROOT/tools/regen/apply-deprecations.py"
+if [ "$SKIP_KDOC_EFF" == "1" ]; then
+    echo "post-patches: @deprecated skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
+elif [ -f "$DEPRECATIONS" ] && [ -f "$DEP_SCRIPT" ]; then
+    python3 "$DEP_SCRIPT" "$PKG_ROOT" "$DEPRECATIONS" || \
+        echo "post-patches: @deprecated failed (non-fatal, continuing)"
+else
+    echo "post-patches: @deprecated skipped (deprecations or apply script missing)"
+fi
+
+# -----------------------------------------------------------------------------
 # T-9 — kotlin.Any? nullable-suffix bleed (Issue #10)
 # -----------------------------------------------------------------------------
 # ts-generator emits Kotlin's `Any?` (nullable Any) verbatim, including the

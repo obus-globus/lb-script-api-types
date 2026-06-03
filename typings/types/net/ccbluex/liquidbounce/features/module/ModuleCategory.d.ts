@@ -6,6 +6,9 @@ export class ModuleCategory extends Object implements Tagged {
     static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
     static of(paramarg0: string): Tagged;
     constructor(tag: string)
+    /**
+     * @deprecated For script compatibility only. Use choiceName instead
+     */
     readonly readableName: string;
     readonly tag: string;
 }

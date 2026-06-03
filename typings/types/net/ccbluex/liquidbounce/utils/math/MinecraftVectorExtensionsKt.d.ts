@@ -68,6 +68,9 @@ export class MinecraftVectorExtensionsKt extends Object {
     static toVec3d(vec3i: Vec3i, xOffset: number, yOffset: number, zOffset: number): Vec3;
     static toVec3d(vector3fc: Vector3fc): Vec3;
     static toVec3f(vec3: Vec3): Vec3f;
+    /**
+     * @deprecated use this.toBlockPos instead
+     */
     static toVec3i(vec3: Vec3): Vec3i;
     static unaryMinus(paramarg0: BlockPos): BlockPos;
     static unaryMinus(paramarg0: Vec3i): Vec3i;

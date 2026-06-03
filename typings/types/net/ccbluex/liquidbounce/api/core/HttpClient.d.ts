@@ -17,6 +17,7 @@ export class HttpClient extends Object {
      * Unfortunately, Lunar Client uses OkHttp 4.12.0 which does not have {@link Headers.EMPTY}
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:89}
+     * @deprecated Use Headers.EMPTY instead when Lunar Client updates OkHttp to 5.10 or newer.
      */
     static EMPTY_HEADERS: Pair<string, string>[];
     static INSTANCE: HttpClient;

@@ -18,6 +18,7 @@ cd "$REPO_ROOT"
 
 LB_DIR="${LB_DIR:-$REPO_ROOT/references/liquidbounce}"
 OUT="${OUT:-$REPO_ROOT/tools/kdoc-extractor/signatures.json}"
+DEPS_OUT="${DEPS_OUT:-$REPO_ROOT/tools/kdoc-extractor/deprecations.json}"
 VENV="${VENV:-$REPO_ROOT/tools/kdoc-extractor/.venv-ts}"
 EXTRACT="$REPO_ROOT/tools/kdoc-extractor/ts-extract.py"
 
@@ -34,6 +35,6 @@ if [[ ! -d "$LB_DIR/src/main/kotlin" ]]; then
     exit 2
 fi
 
-echo "Extracting signatures from $LB_DIR ..." >&2
-"$PY" "$EXTRACT" --project "$LB_DIR" --signatures-out "$OUT"
-echo "Signatures written to $OUT" >&2
+echo "Extracting signatures + deprecations from $LB_DIR ..." >&2
+"$PY" "$EXTRACT" --project "$LB_DIR" --signatures-out "$OUT" --deprecations-out "$DEPS_OUT"
+echo "Signatures written to $OUT; deprecations to $DEPS_OUT" >&2
