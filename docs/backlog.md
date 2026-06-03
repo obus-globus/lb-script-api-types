@@ -117,10 +117,12 @@ tree-sitter extractor can.
   statics). Merging all `Foo$Companion` members onto `Foo` would make the types
   claim `Foo.member` resolves when the runtime requires `Foo.Companion.member` -
   a correctness regression. **Won't-do.**
-- **[ ] W12 - reflection-type leak (`Class<>`, `KProperty`).** *Partial:*
-  `ScriptReflectionUtil` got typed generic overloads, but the original
-  `Class<Object>` overloads remain - **4,980** `Class<Object>` sites (verified).
-  _Layer: generator / augmentation._
+- **[~] W12 - reflection-type leak (`Class<>`, `KProperty`).** *Partial / low
+  priority:* `ScriptReflectionUtil` already got typed generic overloads. The
+  remaining **4,980** `Class<Object>` sites are **valid TS, just broad** - and
+  the imprecision is the same type-erasure (`Object` for an erased arg) tracked
+  by W6/#12b, so it's subsumed by that recovery rather than a separate fix. Not
+  error-producing; deprioritised. _Layer: generator._
 - **[x] W12b - duplicate-name imports (`Duplicate identifier`).** *Discovered
   2026-06-04 while narrowing registerMode.* **562 files** imported two different
   types under the **same simple name** (e.g. `ScriptMode.d.ts` imports both
