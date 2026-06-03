@@ -37,12 +37,22 @@ tree-sitter extractor can.
   `paramarg0`). First pass: **628 decls / 1,558 params across 189 files**;
   verified zero new `tsc` errors. The structured **types** are already captured
   in the manifest, ready for the substitution pass below.
-- **[ ] Type substitution (W5 + W6).** Use `signatures.json`'s `type` field to
-  replace bare `Object` / `Function*<Object>` params with the real declared
-  type. Needs a Kotlin->TS type map + import resolution (the risky part), so
-  it's deferred from the names pass. Doing this would also let
-  `apply-signatures` disambiguate the **same-arity overloads it currently skips**
-  (188 of them) by matching param types. _Layer: post-patch / generator._
+- **[~] Type substitution (W5 + W6) - largely realised elsewhere; residual
+  blocked.** Investigated 2026-06-04:
+  - **W5 (lambda erasure) is fixed** by the W5a generator work - Kotlin function
+    types now render as real arrows with their reflected arg types, not
+    `Function*<Object>`.
+  - **W6 (bare `Object`) for LB is tiny and not post-patchable.** After #12b
+    names + W5a + W12b, only **~299 LB params** are bare `Object`, and under
+    strict arity-unique matching the *import-free* subset (primitive or
+    already-imported type) is **~0** - the rest are either ambiguous overloads
+    (correctly skipped) or need a **new import**. And the import-requiring ones
+    are blocked: `signatures.json` stores **simple** type names (`Vec3`), not
+    FQNs, so a post-patch can't resolve the import path. A real fix needs
+    FQN-aware import resolution in the extractor (resolve each Kotlin source
+    import) - a large change for ~31-55 LB sites. The 78k tree-wide figure is
+    dominated by **unrecoverable third-party Java erasure**. _Deferred:
+    low-ROI; the proper layer is the generator/extractor, not a post-patch._
 
 ---
 
@@ -75,11 +85,12 @@ tree-sitter extractor can.
   recovers the type args reflection already has). (b) Genuinely-erased arg
   *types* that surface as `Object` are the residual - those need the
   type-substitution pass under #12b (`signatures.json`). _Layer: generator (a, done) / post-patch (b)._
-- **[ ] W6 - bare `Object` returns/params.** **78,340** bare-`Object` occurrences (verified) where reflection
-  fell back to `Object`; prefer the raw declared class. The per-param Kotlin
-  source type is already captured in `signatures.json` - the remaining work is
-  the Kotlin->TS type map + import resolution (the type-substitution item under
-  #12b). _Layer: post-patch/generator._
+- **[~] W6 - bare `Object` returns/params.** **78,340** tree-wide, but
+  measured 2026-06-04: **~299 are LB's own** params (the rest unrecoverable
+  third-party Java erasure), of which the safely-substitutable subset is **~0**
+  via post-patch (see the type-substitution item under #12b - blocked on
+  FQN-aware import resolution). The high-value lambda subset (W5) is already
+  fixed by W5a. _Deferred; proper layer is generator/extractor._
 - **[x] W7 - nullable over-promotion - RESOLVED (not a standalone fix).**
   Re-investigated 2026-06-04: the audit's premise is **stale**. The generator
   *already* drives nullability from `KType.isMarkedNullable`, so LiquidBounce's
