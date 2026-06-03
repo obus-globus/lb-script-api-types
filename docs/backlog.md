@@ -127,9 +127,12 @@ tree-sitter extractor can.
   absent from the types. _The audit's `getItemId` example is ambiguous - verified
   `getItemId` does appear (on unrelated viaversion/iris classes), so the example
   is bad._ Needs a real enumeration pass to become actionable. _Layer: augmentation / generator._
-- **[ ] W19 - overloaded-method redeclaration variance.** A subclass override
-  drops the parent's sibling overloads, making it structurally non-assignable to
-  the parent. Re-emit all parent overloads on override (or none). _Layer: generator._
+- **[x] W19 - overloaded-method redeclaration variance.** Fixed in the
+  generator: `functionsOf` now re-emits the inherited sibling overloads of any
+  method name a subclass redeclares (matched by `overloadSignature`), so a child
+  overriding one overload no longer shadows the parent's others. Confirmed with
+  `tsc` that the bug was a hard `TS2416` (child non-assignable to parent) and
+  that the fix resolves it; generator unit test added. _Layer: generator._
 
 ## Smaller, standalone
 
