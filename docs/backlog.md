@@ -121,14 +121,16 @@ tree-sitter extractor can.
   `ScriptReflectionUtil` got typed generic overloads, but the original
   `Class<Object>` overloads remain - **4,980** `Class<Object>` sites (verified).
   _Layer: generator / augmentation._
-- **[ ] W12b - duplicate-name imports (`Duplicate identifier`).** *Discovered
-  2026-06-04 while narrowing registerMode.* **562 files** import two different
+- **[x] W12b - duplicate-name imports (`Duplicate identifier`).** *Discovered
+  2026-06-04 while narrowing registerMode.* **562 files** imported two different
   types under the **same simple name** (e.g. `ScriptMode.d.ts` imports both
   `config/types/Value` and `org/graalvm/polyglot/Value` as `Value`), producing
-  `TS2300 Duplicate identifier` + a bare-generic `TS2314` at the use site. The
-  generator must **alias colliding simple names** on import and use the alias at
-  each reference. High impact (576 collisions); the right next generator fix.
-  _Layer: generator._
+  `TS2300 Duplicate identifier`. **Fixed in the generator:** a two-pass module
+  build detects same-simple-name collisions (and collisions with the class's own
+  name), aliases the losing types (`Value as Value_2`), and uses the alias at the
+  import *and* every reference (`tsNameFor`). Unit test covers import + reference
+  aliasing; full suite green. Clears all 562 on the next regen (incl. the
+  ScriptMode case behind registerMode). _Layer: generator._
 - **[ ] W13 - `okhttp3.Response` leak.** `ScriptAsyncUtil.asyncHttp()` returns the
   raw okhttp type - **19** LB files reference `okhttp3` (verified). Add a `ScriptHttpResponse` facade. _Layer: augmentation._
 - **[ ] W17 - missing runtime helpers.** Some methods that exist at runtime are
