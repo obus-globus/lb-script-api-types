@@ -50,5 +50,5 @@ export class SuspendHandlersKt extends Object {
      */
     static waitMatches(paramarg0: EventListener, paramarg1: Class<Object>, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean, paramarg4: Continuation<Object>): Object;
     static waitMatches(paramarg0: EventListener, paramarg1: number, paramarg2: (param0: Object | null) => kotlin.Boolean, paramarg3: Continuation<Object>): Object;
-//     static waitMatchesWithTimeout-WPwdCS8(paramarg0: EventListener, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean, paramarg4: Continuation<Object>): Object;
- // ; invalid because of -}
+// (invalid TS: name contains '-')     static waitMatchesWithTimeout-WPwdCS8(paramarg0: EventListener, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean, paramarg4: Continuation<Object>): Object;
+}
