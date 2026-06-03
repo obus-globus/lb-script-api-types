@@ -64,6 +64,14 @@ TS_RESERVED = {
 IDENT_RE = re.compile(r"^[A-Za-z_$][A-Za-z0-9_$]*$")
 PARAMARG_RE = re.compile(r"\bparamarg(\d+)\b")
 
+# Kotlin `suspend fun`s compile to a JVM method with a trailing
+# `Continuation` parameter, so the reflected overload has one MORE param than
+# the source. That inflated arity can coincidentally equal a real source
+# overload's arity and get mislabeled (the continuation slot named after a
+# real param). The continuation is never a source param, so any declaration
+# carrying one is skipped — its arity does not correspond to the source.
+CONTINUATION_RE = re.compile(r"\bContinuation\s*<")
+
 
 def sanitize_name(name: str) -> Optional[str]:
     """Return a TS-safe identifier for a source param name, or None if it
@@ -221,6 +229,9 @@ def rename_in_file(
         indices = [int(x) for x in PARAMARG_RE.findall(params_span)]
         if not indices:
             continue  # already renamed / no placeholders
+        if CONTINUATION_RE.search(params_span):
+            stats["skip-suspend"] += 1
+            continue
         arity = max(indices) + 1
         if sorted(set(indices)) != list(range(arity)):
             stats["skip-noncontig"] += 1
@@ -289,6 +300,7 @@ def main(argv: list[str]) -> int:
     stats = {
         "renamed-decls": 0, "renamed-params": 0,
         "skip-ambiguous": 0, "skip-noncontig": 0, "skip-unusable": 0,
+        "skip-suspend": 0,
         "files-changed": 0, "owners-unresolved": 0,
     }
     report_rows: list[tuple[str, str, str]] = []
@@ -324,6 +336,7 @@ def main(argv: list[str]) -> int:
         f"skip-ambiguous={stats['skip-ambiguous']} "
         f"skip-noncontig={stats['skip-noncontig']} "
         f"skip-unusable={stats['skip-unusable']} "
+        f"skip-suspend={stats['skip-suspend']} "
         f"owners-unresolved={stats['owners-unresolved']}"
     )
     return 0

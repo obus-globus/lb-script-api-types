@@ -25,7 +25,7 @@ import type { ResourceManagerReloadListener } from '../../../../../net/minecraft
  */
 export class Theme extends BaseApi implements Closeable, ResourceManagerReloadListener {
     static Companion: Theme$Companion;
-    static load(origin: string, file: Continuation<Object>): Object;
+    static load(paramarg0: string, paramarg1: Continuation<Object>): Object;
     static load(paramarg0: Theme$Origin, paramarg1: File, paramarg2: Continuation<Object>): Object;
     private constructor(origin: Theme$Origin, url: string)
     // private _colors: ValueGroup | null;

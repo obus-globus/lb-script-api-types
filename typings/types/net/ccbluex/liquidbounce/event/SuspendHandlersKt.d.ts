@@ -49,6 +49,6 @@ export class SuspendHandlersKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:122}
      */
     static waitMatches(paramarg0: EventListener, paramarg1: Class<Object>, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean, paramarg4: Continuation<Object>): Object;
-    static waitMatches(eventListener: EventListener, eventClass: number, priority: (param0: Object | null) => kotlin.Boolean, predicate: Continuation<Object>): Object;
+    static waitMatches(paramarg0: EventListener, paramarg1: number, paramarg2: (param0: Object | null) => kotlin.Boolean, paramarg3: Continuation<Object>): Object;
 //     static waitMatchesWithTimeout-WPwdCS8(paramarg0: EventListener, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean, paramarg4: Continuation<Object>): Object;
  // ; invalid because of -}
