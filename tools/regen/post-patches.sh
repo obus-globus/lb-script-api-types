@@ -764,9 +764,25 @@ PY
 # The manifest is committed to git alongside the extractor so this step is
 # fully offline / reproducible.
 
+# Source-enrichment toggles (build-time knobs). These two steps - and only
+# these two - derive from the LiquidBounce *source* (via the committed
+# manifests). Everything else in the package comes from runtime reflection.
+#   SKIP_SOURCE_ENRICHMENT=1  master: disables both KDoc docs and param names
+#   SKIP_KDOC=1               disables KDoc -> TSDoc injection only
+#   SKIP_PARAM_NAMES=1        disables paramargN -> real-name rename only
+# (To fully disable KDoc you also want regen-types.sh to stop staging
+# manifest.json for the in-generator KDocSource path; it honours the same
+# vars.) The manifests stay committed - this only gates whether they're applied.
+SKIP_KDOC_EFF=0
+SKIP_PARAM_NAMES_EFF=0
+[[ "${SKIP_KDOC:-0}" == "1" || "${SKIP_SOURCE_ENRICHMENT:-0}" == "1" ]] && SKIP_KDOC_EFF=1
+[[ "${SKIP_PARAM_NAMES:-0}" == "1" || "${SKIP_SOURCE_ENRICHMENT:-0}" == "1" ]] && SKIP_PARAM_NAMES_EFF=1
+
 MANIFEST="$REPO_ROOT/tools/kdoc-extractor/manifest.json"
 APPLY_SCRIPT="$REPO_ROOT/tools/regen/apply-kdoc.py"
-if [ -f "$MANIFEST" ] && [ -f "$APPLY_SCRIPT" ]; then
+if [ "$SKIP_KDOC_EFF" == "1" ]; then
+    echo "post-patches: T-Doc-Phase-C skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
+elif [ -f "$MANIFEST" ] && [ -f "$APPLY_SCRIPT" ]; then
     python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$MANIFEST" || \
         echo "post-patches: T-Doc-Phase-C failed (non-fatal, continuing)"
 else
@@ -783,7 +799,9 @@ fi
 # is fully offline / reproducible.
 SIGNATURES="$REPO_ROOT/tools/kdoc-extractor/signatures.json"
 SIG_SCRIPT="$REPO_ROOT/tools/regen/apply-signatures.py"
-if [ -f "$SIGNATURES" ] && [ -f "$SIG_SCRIPT" ]; then
+if [ "$SKIP_PARAM_NAMES_EFF" == "1" ]; then
+    echo "post-patches: param-name rename skipped (SKIP_PARAM_NAMES/SKIP_SOURCE_ENRICHMENT)"
+elif [ -f "$SIGNATURES" ] && [ -f "$SIG_SCRIPT" ]; then
     python3 "$SIG_SCRIPT" "$PKG_ROOT" "$SIGNATURES" || \
         echo "post-patches: param-name rename failed (non-fatal, continuing)"
 else

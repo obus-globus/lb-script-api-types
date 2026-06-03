@@ -125,6 +125,19 @@ Kotlin-runtime-skew `KParameter$Kind CONTEXT` failure).
 Env knobs: `REGEN_TIMEOUT` (default `60m`, caps the headless run) and
 `SKIP_JAR_BUILD=1` (reuse the existing generator jar instead of rebuilding).
 
+**Source-enrichment toggles.** Almost everything in the package comes from
+runtime reflection of the LiquidBounce build; only two enrichments read the
+LiquidBounce *source* (via the committed manifests): KDoc -> TSDoc docs and
+real parameter names. Disable them for a pure-reflection build:
+
+- `SKIP_SOURCE_ENRICHMENT=1` - master switch, turns off both.
+- `SKIP_KDOC=1` - drop KDoc -> TSDoc injection only (post-patch *and* the
+  in-generator inline path).
+- `SKIP_PARAM_NAMES=1` - keep the `paramargN` placeholders (skip the rename).
+
+The manifests stay committed; these only gate whether they are applied during
+`run-regen.sh` / `post-patches.sh`.
+
 ### Container and CI
 
 - **Docker**: `docker/regen.sh` runs the whole flow in a pinned-toolchain image

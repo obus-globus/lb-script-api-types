@@ -110,7 +110,16 @@ if [[ "$REGEN" == "1" ]]; then
   # symlinks across filesystems can race).
   cp -f "$TS_GEN_JAR" "$STAGE/ts-generator.jar"
   cp -f "$REPO_ROOT/tools/regen/ts-defgen.js" "$STAGE/ts-defgen.js"
-  cp -f "$REPO_ROOT/tools/kdoc-extractor/manifest.json" "$STAGE/manifest.json"
+  # Stage the KDoc manifest for the in-generator KDocSource path, unless KDoc
+  # enrichment is disabled (SKIP_KDOC / SKIP_SOURCE_ENRICHMENT). Without it
+  # staged, ts-defgen.js detects the absent manifest and emits no inline TSDoc;
+  # post-patches.sh honours the same vars for the post-patch apply-kdoc step.
+  if [[ "${SKIP_KDOC:-0}" == "1" || "${SKIP_SOURCE_ENRICHMENT:-0}" == "1" ]]; then
+    rm -f "$STAGE/manifest.json"
+    echo "SKIP_KDOC/SKIP_SOURCE_ENRICHMENT — not staging manifest.json (no inline TSDoc)" >&2
+  else
+    cp -f "$REPO_ROOT/tools/kdoc-extractor/manifest.json" "$STAGE/manifest.json"
+  fi
 
   # 3b. Drop a Fabric-mod-wrapped copy of ts-generator.jar into run/mods/ so
   #     Knot loads its classes onto the runtime classpath. ts-defgen.js then
