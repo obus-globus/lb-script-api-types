@@ -1,18 +1,50 @@
 {
-    "name": "@ccbluex/liquidbounce-script-api",
-    "version": "2026.5.25+nextgen.git-fac52d9",
-    "files": [
-        "types/**/*.d.ts"
-        ,
-"augmentations/**/*.d.ts", "ambient/ambient.d.ts"
-    ],
-    "typesVersions": {
-        "*": {
-            "types/*": ["./types/*"],
-            "augmentations/*": ["./augmentations/*"],
-            "ambient": ["./ambient/ambient.d.ts"]
-        }
+  "name": "@obus-globus/lb-script-api-types",
+  "version": "2026.6.3+nextgen.git-fac52d9",
+  "description": "TypeScript types for the LiquidBounce (nextgen, MC 1.21+) GraalJS script API — a heavily-refined fork of CCBlueX's @ccbluex/liquidbounce-script-api with typed per-event on() overloads, KDoc→TSDoc docs, binding fixes, and ambient globals.",
+  "license": "GPL-3.0-or-later",
+  "author": "obus-globus",
+  "homepage": "https://github.com/obus-globus/lb-script-api-types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obus-globus/lb-script-api-types.git",
+    "directory": "typings"
+  },
+  "bugs": {
+    "url": "https://github.com/obus-globus/lb-script-api-types/issues"
+  },
+  "keywords": [
+    "liquidbounce",
+    "minecraft",
+    "graaljs",
+    "graalvm",
+    "script-api",
+    "scripting",
+    "types",
+    "typescript",
+    "ccbluex"
+  ],
+  "types": "ambient/ambient.d.ts",
+  "files": [
+    "types/**/*.d.ts",
+    "augmentations/**/*.d.ts",
+    "ambient/ambient.d.ts"
+  ],
+  "typesVersions": {
+    "*": {
+      "types/*": [
+        "./types/*"
+      ],
+      "augmentations/*": [
+        "./augmentations/*"
+      ],
+      "ambient": [
+        "./ambient/ambient.d.ts"
+      ]
     }
-    ,
-"types": "ambient/ambient.d.ts"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "restricted"
+  }
 }

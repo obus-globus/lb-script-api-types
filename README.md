@@ -55,6 +55,27 @@ As a local `file:` dependency (how `lb-nodeflow` uses it):
 "compilerOptions": { "types": ["@liquidbounce-helper/script-api-types/ambient"] }
 ```
 
+## Publishing to npm
+
+The `typings/` package publishes as **`@obus-globus/lb-script-api-types`**
+(types-only, no build step). License: GPL-3.0-or-later (derived from LiquidBounce;
+not affiliated with CCBlueX).
+
+```bash
+cd typings
+npm pack --dry-run     # verify contents (≈10.6 MB packed)
+npm publish            # uses publishConfig.access in package.json
+```
+
+- **Access** — `publishConfig.access` is `"restricted"` (private). Scoped private
+  packages need a paid npm plan; to go **public**, change it to `"public"` (or
+  `npm publish --access public`).
+- **CI** — `.github/workflows/npm-publish.yml` publishes on a GitHub Release (and
+  a manual dry-run). It needs an `NPM_TOKEN` repo/org secret (an npm automation
+  token with publish rights for the `@obus-globus` scope).
+- **Version** — bump `version` in `typings/package.json` (`<regen-date>+nextgen.git-<sha>`)
+  on each promote; npm won't accept a re-publish of an existing version.
+
 ## Regenerating the types
 The `types/` tree is generated — not hand-edited. The **whole flow is one command**:
 

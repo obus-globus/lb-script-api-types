@@ -1,0 +1,44 @@
+name: Publish to npm
+
+# Publishes the typings/ package (@obus-globus/lb-script-api-types). The package
+# is types-only — no build step. Access is controlled by publishConfig.access in
+# typings/package.json ("restricted" now; switch to "public" to go public).
+#
+# Requires a repo/org secret NPM_TOKEN (an npm automation token with publish
+# rights for the @obus-globus scope). Scoped *restricted* (private) packages need
+# a paid npm plan; a public package does not.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run only (npm pack, no publish)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+          scope: "@obus-globus"
+
+      - name: Verify package contents
+        working-directory: typings
+        run: npm pack --dry-run
+
+      - name: Publish
+        if: ${{ github.event_name == 'release' || inputs.dry_run == false }}
+        working-directory: typings
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
