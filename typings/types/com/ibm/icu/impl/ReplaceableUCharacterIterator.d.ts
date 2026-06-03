@@ -21,6 +21,8 @@ export class ReplaceableUCharacterIterator extends UCharacterIterator {
     currentCodePoint(): number;
     getIndex(): number;
     getLength(): number;
+    getText(): string;
+    getText(arg0: string[]): number;
     getText(arg0: string[], arg1: number): number;
     next(): number;
     previous(): number;

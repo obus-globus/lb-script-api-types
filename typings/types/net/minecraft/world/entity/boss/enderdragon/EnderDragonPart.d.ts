@@ -1,12 +1,16 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ClientGamePacketListener } from '../../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerEntity } from '../../../../../../net/minecraft/server/level/ServerEntity.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { DamageSource } from '../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityDimensions } from '../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
+import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Pose } from '../../../../../../net/minecraft/world/entity/Pose.d.ts'
 import type { EnderDragon } from '../../../../../../net/minecraft/world/entity/boss/enderdragon/EnderDragon.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -66,7 +70,12 @@ export class EnderDragonPart extends Entity {
     getDimensions(pose: Pose): EntityDimensions;
     getPickResult(): ItemStack;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
+    is(type: Holder<EntityType<Object>>): boolean;
+    is(set: Holder<T>[]): boolean;
+    is(type: ResourceKey<EntityType<Object>>): boolean;
+    is(tag: TagKey<EntityType<Object>>): boolean;
     is(other: Entity): boolean;
+    is(rawType: EntityType<Object>): boolean;
     isPickable(): boolean;
     readAdditionalSaveData(input: ValueInput): void;
     shouldBeSaved(): boolean;

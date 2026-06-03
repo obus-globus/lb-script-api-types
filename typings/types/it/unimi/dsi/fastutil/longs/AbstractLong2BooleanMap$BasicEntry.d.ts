@@ -12,5 +12,6 @@ export class AbstractLong2BooleanMap$BasicEntry extends Object implements Long2B
     hashCode(): number;
     setValue(arg0: boolean): boolean;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     toString(): string;
 }

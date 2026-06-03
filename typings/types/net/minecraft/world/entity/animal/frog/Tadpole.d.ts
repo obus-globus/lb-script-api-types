@@ -162,5 +162,6 @@ export class Tadpole extends AbstractFish {
     // private setAgeLockedData(): void;
     setFromBucket(fromBucket: boolean): void;
     shouldDropExperience(): boolean;
+    usePlayerItem(player: Player, hand: InteractionHand, itemStack: ItemStack): void;
     // private usePlayerItem(player: Player, itemStack: ItemStack): void;
 }

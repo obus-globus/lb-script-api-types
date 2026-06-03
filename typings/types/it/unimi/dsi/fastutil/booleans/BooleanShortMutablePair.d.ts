@@ -19,11 +19,15 @@ export class BooleanShortMutablePair extends Object implements BooleanShortPair,
     key(arg0: boolean): BooleanShortPair;
     key(arg0: boolean): BooleanShortPair;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanShortPair;
     left(arg0: boolean): BooleanShortMutablePair;
     left(): boolean;
     left(arg0: boolean): BooleanShortPair;
     left(arg0: boolean): BooleanShortPair;
     leftBoolean(): boolean;
+    right(): number;
+    right(arg0: number): BooleanShortPair;
     right(arg0: number): BooleanShortMutablePair;
     right(): number;
     right(arg0: number): BooleanShortPair;

@@ -6,12 +6,12 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { TextTrieMap } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TextTrieMap.d.ts'
 import type { MeasureUnitImpl } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/units/MeasureUnitImpl.d.ts'
 import type { DecimalFormatSymbols } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DecimalFormatSymbols.d.ts'
-import type { Currency } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Currency.d.ts'
+import type { Currency as Currency_2 } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Currency.d.ts'
 import type { Currency$CurrencyStringInfo } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Currency$CurrencyStringInfo.d.ts'
 import type { MeasureUnit } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/MeasureUnit.d.ts'
 import type { TimeUnit } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeUnit.d.ts'
 import type { ULocale } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class CustomSymbolCurrency extends Currency {
+export class CustomSymbolCurrency extends Currency_2 {
     static ACRE: MeasureUnit;
     static ACRE_FOOT: MeasureUnit;
     static AMPERE: MeasureUnit;
@@ -213,32 +213,34 @@ export class CustomSymbolCurrency extends Currency {
     static YEAR_PERSON: MeasureUnit;
     static findBySubType(paramsubType: string): MeasureUnit;
     static forIdentifier(paramidentifier: string): MeasureUnit;
-    static fromJavaCurrency(paramcurrency: Currency): Currency;
+    static fromJavaCurrency(paramcurrency: Currency): Currency_2;
     static fromMeasureUnitImpl(parammeasureUnitImpl: MeasureUnitImpl): MeasureUnit;
     static getAvailable(paramtype: string): MeasureUnit[];
     static getAvailable(): MeasureUnit[];
-    static getAvailableCurrencies(): Currency[];
+    static getAvailableCurrencies(): Currency_2[];
     static getAvailableCurrencyCodes(paramloc: Locale, paramd: Date): (Object | null)[];
     static getAvailableCurrencyCodes(paramloc: ULocale, paramd: Date): (Object | null)[];
     static getAvailableLocales(): (Object | null)[];
     static getAvailableTypes(): string[];
     static getAvailableULocales(): (Object | null)[];
-    static getInstance(paramtheISOCode: string): Currency;
-    static getInstance(paramlocale: Locale): Currency;
-    static getInstance(paramlocale: ULocale): Currency;
+    static getInstance(paramtheISOCode: string): Currency_2;
+    static getInstance(paramlocale: Locale): Currency_2;
+    static getInstance(paramlocale: ULocale): Currency_2;
     static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): (Object | null)[];
     static getParsingTrie(paramlocale: ULocale, paramtype: number): TextTrieMap<Currency$CurrencyStringInfo>;
     static internalGetInstance(paramtype: string, paramsubType: string): MeasureUnit;
     static isAvailable(paramcode: string, paramfrom: Date, paramto: Date): boolean;
     static parse(paramlocale: ULocale, paramtext: string, paramtype: number, parampos: ParsePosition): string;
-    static registerInstance(paramcurrency: Currency, paramlocale: ULocale): Object;
-    static resolve(paramcurrency: Currency, paramlocale: ULocale, paramsymbols: DecimalFormatSymbols): Currency;
+    static registerInstance(paramcurrency: Currency_2, paramlocale: ULocale): Object;
+    static resolve(paramcurrency: Currency_2, paramlocale: ULocale, paramsymbols: DecimalFormatSymbols): Currency_2;
     static unregister(paramregistryKey: Object): boolean;
     constructor(isoCode: string, currency1Sym: string, currency2Sym: string)
     // private symbol1: string;
     // private symbol2: string;
     equals(other: Object | null): boolean;
     getCurrencyCode(): string;
+    getName(locale: Locale, nameStyle: number, isChoiceFormat: (Object | null)[]): string;
+    getName(locale: Locale, nameStyle: number, pluralCount: string, isChoiceFormat: (Object | null)[]): string;
     getName(locale: ULocale, nameStyle: number, isChoiceFormat: (Object | null)[]): string;
     getName(locale: ULocale, nameStyle: number, pluralCount: string, isChoiceFormat: (Object | null)[]): string;
     hashCode(): number;

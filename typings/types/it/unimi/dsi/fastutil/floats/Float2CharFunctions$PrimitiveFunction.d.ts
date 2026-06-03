@@ -72,6 +72,7 @@ export class Float2CharFunctions$PrimitiveFunction extends Object implements Flo
     put(arg0: number, arg1: string): string;
     put(arg0: number, arg1: string): string;
     put(arg0: number, arg1: string): string;
+    put(arg0: number, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: number): string;
 }

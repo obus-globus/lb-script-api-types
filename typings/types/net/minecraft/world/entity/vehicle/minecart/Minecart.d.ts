@@ -68,6 +68,7 @@ export class Minecart extends AbstractMinecart {
     getPickResult(): ItemStack;
     interact(player: Player, hand: InteractionHand, location: Vec3): InteractionResult;
     isRideable(): boolean;
+    positionRider(passenger: Entity): void;
     positionRider(passenger: Entity, moveFunction: (param0: Entity, param1: number, param2: number, param3: number) => void): void;
     tick(): void;
 }

@@ -7,6 +7,7 @@ export class UnpooledUnsafeNoCleanerDirectByteBuf extends UnpooledUnsafeDirectBy
     constructor(arg0: ByteBufAllocator, arg1: number, arg2: number, arg3: boolean)
     allocateDirect(arg0: number): ByteBuffer;
     allocateDirectBuffer(arg0: number): CleanableDirectBuffer;
+    capacity(): number;
     capacity(arg0: number): ByteBuf;
     freeDirect(arg0: ByteBuffer): void;
     reallocateDirect(arg0: CleanableDirectBuffer, arg1: number): CleanableDirectBuffer;

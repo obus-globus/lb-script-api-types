@@ -18,8 +18,10 @@ export class Field extends AccessibleObject implements Member {
     accessFlags(): AccessFlag[];
     // private acquireFieldAccessor(): FieldAccessor;
     // private acquireOverrideFieldAccessor(): FieldAccessor;
+    checkAccess(arg0: Class<Object>, arg1: Class<Object>, arg2: Class<Object>, arg3: number): void;
     // private checkAccess(arg0: Class<Object>, arg1: Object): void;
     checkCanSetAccessible(arg0: Class<Object>): void;
+    checkCanSetAccessible(arg0: Class<Object>, arg1: Class<Object>): void;
     copy(): Field;
     // private declaredAnnotations(): Map<Class<Annotation>, Annotation>;
     equals(arg0: Object | null): boolean;

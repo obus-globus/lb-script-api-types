@@ -10,5 +10,6 @@ export class MdcPatternConverter extends LogEventPatternConverter {
     // private key: string;
     // private keys: string[];
     emptyVariableOutput(): string;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

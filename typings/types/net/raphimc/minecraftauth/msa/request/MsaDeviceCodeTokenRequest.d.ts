@@ -9,6 +9,7 @@ import type { MsaResponseHandler } from '../../../../../net/raphimc/minecraftaut
 export class MsaDeviceCodeTokenRequest extends PostRequest implements MsaResponseHandler<MsaToken> {
     constructor(arg0: MsaApplicationConfig, arg1: string)
     constructor(arg0: MsaApplicationConfig, arg1: MsaDeviceCode)
+    handle(arg0: HttpResponse): MsaToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MsaToken;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

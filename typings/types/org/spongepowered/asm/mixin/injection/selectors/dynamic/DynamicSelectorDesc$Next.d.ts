@@ -12,4 +12,5 @@ export class DynamicSelectorDesc$Next extends DynamicSelectorDesc {
     constructor(null_: DynamicSelectorDesc$Next, arg1: number, arg2: IResolvedDescriptor)
     // private index: number;
     next(): ITargetSelector;
+    next(arg0: number): ITargetSelector;
 }

@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
@@ -31,5 +30,5 @@ export abstract class DescriptorRenderer extends Object {
     renderName(arg0: Name, arg1: boolean): string;
     renderType(arg0: KotlinType): string;
     renderTypeProjection(arg0: TypeProjection): string;
-    withOptions(arg0: Function1<DescriptorRendererOptions, void>): DescriptorRenderer;
+    withOptions(arg0: (param0: DescriptorRendererOptions) => void): DescriptorRenderer;
 }

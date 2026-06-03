@@ -2,6 +2,7 @@ import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Codec$ResultFunction } from '../../../../com/mojang/serialization/Codec$ResultFunction.d.ts'
 import type { DataResult } from '../../../../com/mojang/serialization/DataResult.d.ts'
+import type { Dynamic } from '../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Lifecycle } from '../../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.ts'
@@ -13,6 +14,7 @@ import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface PrimitiveCodec<A extends Object | number | string | boolean> extends Codec<A>, Object{
     comapFlatMap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;
+    decode(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<A, T>>;
     deprecated(arg0: number): Codec<A>;
     dispatch(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;

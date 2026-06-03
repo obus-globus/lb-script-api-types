@@ -11,5 +11,6 @@ export class HiddenFileFilter extends AbstractFileFilter implements Serializable
     static VISIBLE: IOFileFilter;
     constructor()
     accept(arg0: File): boolean;
+    accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
 }

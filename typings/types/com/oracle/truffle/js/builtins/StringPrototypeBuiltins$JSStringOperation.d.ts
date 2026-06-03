@@ -25,5 +25,6 @@ export abstract class StringPrototypeBuiltins$JSStringOperation extends JSBuilti
     // private toStringNode: JSToStringNode;
     requireObjectCoercible(target: Object): void;
     toIntegerAsInt(target: Object): number;
+    toString(): string;
     toString(target: Object): TruffleString;
 }

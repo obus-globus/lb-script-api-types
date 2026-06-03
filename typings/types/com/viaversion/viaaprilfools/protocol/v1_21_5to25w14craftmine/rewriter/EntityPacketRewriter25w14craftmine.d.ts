@@ -8,5 +8,6 @@ export class EntityPacketRewriter25w14craftmine extends EntityRewriter<Clientbou
     registerPackets(): void;
     registerRewrites(): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private updatePlayerSpawnInfo(arg0: PacketWrapper): void;
 }

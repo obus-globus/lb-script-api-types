@@ -4,6 +4,7 @@ import type { DataComponentType } from '../../../../net/minecraft/core/component
 import type { ParticleOptions } from '../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { DamageSource } from '../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 import type { MobEffectInstance } from '../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
@@ -98,6 +99,7 @@ export class AreaEffectCloud extends Entity implements TraceableEntity {
     getWaitTime(): number;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     isWaiting(): boolean;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     refreshDimensions(): void;

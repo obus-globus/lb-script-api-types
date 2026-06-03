@@ -8,4 +8,5 @@ export class EntityPacketRewriter1_11_1 extends LegacyEntityRewriter<Clientbound
     registerPackets(): void;
     registerRewrites(): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

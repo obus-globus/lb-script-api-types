@@ -30,7 +30,11 @@ export class RollingRandomAccessFileManager extends RollingFileManager {
     isEndOfBatch(): boolean;
     setEndOfBatch(endOfBatch: boolean): void;
     updateData(data: Object): void;
+    write(bytes: number[]): void;
+    write(bytes: number[], immediateFlush: boolean): void;
+    write(bytes: number[], offset: number, length: number): void;
     write(bytes: number[], offset: number, length: number, immediateFlush: boolean): void;
     // private writeHeader(): void;
+    writeHeader(os: OutputStream): void;
     writeToDestination(bytes: number[], offset: number, length: number): void;
 }

@@ -1,4 +1,5 @@
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
+import type { Future } from '../../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -19,9 +20,12 @@ export class CronTriggeringPolicy extends AbstractTriggeringPolicy {
     // private lastRollDate: Date;
     // private manager: RollingFileManager;
     getCronExpression(): CronExpression;
+    initialize(): void;
     initialize(aManager: RollingFileManager): void;
     isTriggeringEvent(event: LogEvent): boolean;
     // private rollover(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
     toString(): string;
 }

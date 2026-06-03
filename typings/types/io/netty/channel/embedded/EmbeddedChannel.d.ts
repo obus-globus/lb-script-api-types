@@ -62,6 +62,7 @@ export class EmbeddedChannel extends AbstractChannel {
     doClose(): void;
     doDisconnect(): void;
     doRegister(): void;
+    doRegister(arg0: ChannelPromise): void;
     doWrite(arg0: ChannelOutboundBuffer): void;
     // private embeddedEventLoop(): (Object | null)[];
     ensureOpen(): void;

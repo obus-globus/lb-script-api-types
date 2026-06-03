@@ -6,6 +6,7 @@ export class Double2FloatFunctions$UnmodifiableFunction extends AbstractDouble2F
     constructor(arg0: (param0: number) => kotlin.Float)
     // private function: (param0: number) => kotlin.Float;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

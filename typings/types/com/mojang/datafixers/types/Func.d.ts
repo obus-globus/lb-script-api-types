@@ -16,6 +16,7 @@ export class Func<A extends Object | number | string | boolean, B extends Object
     buildCodec(): Codec<(param0: A) => B>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     first(): Type<A>;
     hashCode(): number;
     second(): Type<B>;

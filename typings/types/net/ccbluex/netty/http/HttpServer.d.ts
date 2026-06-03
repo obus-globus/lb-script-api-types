@@ -2,7 +2,6 @@ import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { LoggingHandler } from '../../../../io/netty/handler/logging/LoggingHandler.d.ts'
 import type { ThreadFactory } from '../../../../java/util/concurrent/ThreadFactory.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Mutex } from '../../../../kotlinx/coroutines/sync/Mutex.d.ts'
 import type { HttpServer$Companion } from '../../../../net/ccbluex/netty/http/HttpServer$Companion.d.ts'
 import type { Middleware } from '../../../../net/ccbluex/netty/http/middleware/Middleware.d.ts'
@@ -22,7 +21,7 @@ export class HttpServer extends Object {
     readonly webSocketController: WebSocketController | null;
     // private workerGroup: (Object | null)[] | null;
     middleware(middleware: Middleware): HttpServer;
-    routing(block: Function1<Node, void>): void;
+    routing(block: (param0: Node) => void): void;
     start(port: number, useNativeTransport: boolean, threadFactory: ThreadFactory | null, loggingHandler: LoggingHandler | null): number;
     stop(): void;
     stopBlocking(): void;

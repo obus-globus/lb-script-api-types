@@ -3,7 +3,7 @@ import type { Streams$DoubleFunctionWithIndex } from '../../../../com/google/com
 import type { Streams$FunctionWithIndex } from '../../../../com/google/common/collect/Streams$FunctionWithIndex.d.ts'
 import type { Streams$IntFunctionWithIndex } from '../../../../com/google/common/collect/Streams$IntFunctionWithIndex.d.ts'
 import type { Streams$LongFunctionWithIndex } from '../../../../com/google/common/collect/Streams$LongFunctionWithIndex.d.ts'
-import type { Optional } from '../../../../java/util/Optional.d.ts'
+import type { Optional as Optional_2 } from '../../../../java/util/Optional.d.ts'
 import type { OptionalDouble } from '../../../../java/util/OptionalDouble.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { OptionalLong } from '../../../../java/util/OptionalLong.d.ts'
@@ -20,7 +20,7 @@ export class Streams extends Object {
     static concat(paramstreams: (Object | null)[]): DoubleStream;
     static concat(paramstreams: (Object | null)[]): IntStream;
     static concat(paramstreams: (Object | null)[]): LongStream;
-    static findLast(paramstream: Stream<Object>): Optional<Object>;
+    static findLast(paramstream: Stream<Object>): Optional_2<Object>;
     static findLast(paramstream: DoubleStream): OptionalDouble;
     static findLast(paramstream: IntStream): OptionalInt;
     static findLast(paramstream: LongStream): OptionalLong;
@@ -33,7 +33,7 @@ export class Streams extends Object {
     static stream(paramiterable: (Object | null)[]): Stream<Object>;
     static stream(paramcollection: E[]): Stream<Object>;
     static stream(paramiterator: Iterator<Object>): Stream<Object>;
-    static stream(paramoptional: Optional<Object>): Stream<Object>;
+    static stream(paramoptional: Optional_2<Object>): Stream<Object>;
     static stream(paramoptional: OptionalDouble): DoubleStream;
     static stream(paramoptional: OptionalInt): IntStream;
     static stream(paramoptional: OptionalLong): LongStream;

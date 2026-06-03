@@ -12,5 +12,7 @@ export class VoxelShapeEmpty extends VoxelShape implements VoxelShapeCaster {
     intersects(arg0: AABB, arg1: number, arg2: number, arg3: number): boolean;
     isEmpty(): boolean;
     max(arg0: Direction$Axis): number;
+    max(aAxis: Direction$Axis, b: number, c: number): number;
     min(arg0: Direction$Axis): number;
+    min(aAxis: Direction$Axis, b: number, c: number): number;
 }

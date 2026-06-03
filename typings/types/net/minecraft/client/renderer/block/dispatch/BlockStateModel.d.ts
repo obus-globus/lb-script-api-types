@@ -16,8 +16,11 @@ export interface BlockStateModel extends Object, FabricBlockStateModel, BlockSta
     emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Direction) => kotlin.Boolean): void;
     hasMaterialFlag(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource, arg4: number): boolean;
     hasMaterialFlag(flag: number): boolean;
+    hasMaterialFlag(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource, arg4: number): boolean;
     materialFlags(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): number;
     materialFlags(): number;
+    materialFlags(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): number;
     particleMaterial(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState): Material$Baked;
     particleMaterial(): Material$Baked;
+    particleMaterial(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState): Material$Baked;
 }

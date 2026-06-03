@@ -19,4 +19,5 @@ export class ItemArgument extends Object implements ArgumentType<ItemInput> {
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): ItemInput;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ItemInput;
 }

@@ -1,5 +1,6 @@
 import type { AbstractByteBuf } from '../../../io/netty/buffer/AbstractByteBuf.d.ts'
 import type { AbstractUnpooledSlicedByteBuf } from '../../../io/netty/buffer/AbstractUnpooledSlicedByteBuf.d.ts'
+import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 export class UnpooledSlicedByteBuf extends AbstractUnpooledSlicedByteBuf {
     constructor(arg0: AbstractByteBuf, arg1: number, arg2: number)
     _getByte(arg0: number): number;
@@ -21,5 +22,6 @@ export class UnpooledSlicedByteBuf extends AbstractUnpooledSlicedByteBuf {
     _setShort(arg0: number, arg1: number): void;
     _setShortLE(arg0: number, arg1: number): void;
     capacity(): number;
+    capacity(arg0: number): ByteBuf;
     unwrap(): AbstractByteBuf;
 }

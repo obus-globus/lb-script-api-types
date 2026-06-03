@@ -17,6 +17,7 @@ import type { ListSelectionModel } from '../../javax/swing/ListSelectionModel.d.
 import type { Scrollable } from '../../javax/swing/Scrollable.d.ts'
 import type { TransferHandler$DropLocation } from '../../javax/swing/TransferHandler$DropLocation.d.ts'
 import type { ListSelectionListener } from '../../javax/swing/event/ListSelectionListener.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { ListUI } from '../../javax/swing/plaf/ListUI.d.ts'
 import type { Position$Bias } from '../../javax/swing/text/Position$Bias.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
@@ -106,6 +107,7 @@ export class JList<E extends Object | number | string | boolean> extends JCompon
     getSelectionForeground(): Color;
     getSelectionMode(): number;
     getSelectionModel(): ListSelectionModel;
+    getToolTipText(): string;
     getToolTipText(arg0: MouseEvent): string;
     getUI(): ListUI;
     getUIClassID(): string;
@@ -137,6 +139,7 @@ export class JList<E extends Object | number | string | boolean> extends JCompon
     setSelectionInterval(arg0: number, arg1: number): void;
     setSelectionMode(arg0: number): void;
     setSelectionModel(arg0: ListSelectionModel): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: ListUI): void;
     setValueIsAdjusting(arg0: boolean): void;
     setVisibleRowCount(arg0: number): void;

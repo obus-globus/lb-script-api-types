@@ -3,6 +3,7 @@ import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/char
 export abstract class CharIterators$AbstractIndexBasedListIterator extends CharIterators$AbstractIndexBasedIterator implements CharListIterator {
     constructor(arg0: number, arg1: number)
     add(arg0: string): void;
+    add(arg0: string): void;
     add(arg0: number, arg1: string): void;
     add(arg0: string): void;
     add(arg0: string): void;
@@ -14,6 +15,7 @@ export abstract class CharIterators$AbstractIndexBasedListIterator extends CharI
     previousChar(): string;
     previousIndex(): number;
     remove(): void;
+    set(arg0: string): void;
     set(arg0: string): void;
     set(arg0: number, arg1: string): void;
     set(arg0: string): void;

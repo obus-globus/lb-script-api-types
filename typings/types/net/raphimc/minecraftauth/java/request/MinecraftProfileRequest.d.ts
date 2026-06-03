@@ -7,6 +7,7 @@ import type { MinecraftToken } from '../../../../../net/raphimc/minecraftauth/ja
 import type { MinecraftServicesResponseHandler } from '../../../../../net/raphimc/minecraftauth/java/responsehandler/MinecraftServicesResponseHandler.d.ts'
 export class MinecraftProfileRequest extends GetRequest implements MinecraftServicesResponseHandler<MinecraftProfile> {
     constructor(arg0: MinecraftToken)
+    handle(arg0: HttpResponse): MinecraftProfile;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftProfile;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;

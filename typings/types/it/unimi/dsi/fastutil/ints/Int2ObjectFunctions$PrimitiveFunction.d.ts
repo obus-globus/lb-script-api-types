@@ -71,6 +71,7 @@ export class Int2ObjectFunctions$PrimitiveFunction<V extends Object | number | s
     put(arg0: number, arg1: V): V;
     put(arg0: number, arg1: V): V;
     put(arg0: number, arg1: V): V;
+    put(arg0: number, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: number): V;
 }

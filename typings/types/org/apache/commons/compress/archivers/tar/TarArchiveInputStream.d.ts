@@ -47,6 +47,8 @@ export class TarArchiveInputStream extends ArchiveInputStream<TarArchiveEntry> {
     mark(arg0: number): void;
     markSupported(): boolean;
     // private paxHeaders(): void;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readGlobalPaxHeaders(): void;
     // private readOldGNUSparse(): void;

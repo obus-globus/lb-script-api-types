@@ -10,4 +10,6 @@ export class CircularInputStream extends AbstractInputStream {
     available(): number;
     close(): void;
     read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
 }

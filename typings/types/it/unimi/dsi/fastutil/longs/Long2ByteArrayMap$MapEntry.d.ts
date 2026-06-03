@@ -32,6 +32,8 @@ export class Long2ByteArrayMap$MapEntry extends Object implements Long2ByteMap$E
     left(arg0: number): LongBytePair;
     left(arg0: number): LongBytePair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongBytePair;
     right(arg0: number): LongBytePair;
     right(): number;
     right(arg0: number): LongBytePair;

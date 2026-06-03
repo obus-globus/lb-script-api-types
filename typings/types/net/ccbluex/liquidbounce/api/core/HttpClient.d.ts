@@ -1,7 +1,6 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { HttpMethod } from '../../../../../net/ccbluex/liquidbounce/api/core/HttpMethod.d.ts'
 import type { OkHttpProgressInterceptor$ProgressListener } from '../../../../../net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor$ProgressListener.d.ts'
@@ -35,5 +34,5 @@ export class HttpClient extends Object {
     // private clientHttpApiInterceptor: Interceptor;
     // private defaultClient: OkHttpClient;
     download(url: string, file: File, agent: string, progressListener: (param0: number, param1: number, param2: boolean) => void | null): number;
-    request(url: string, method: HttpMethod, agent: string, headers: Function1<Headers$Builder, void>, body: RequestBody | null, progressListener: (param0: number, param1: number, param2: boolean) => void | null): Response;
+    request(url: string, method: HttpMethod, agent: string, headers: (param0: Headers$Builder) => void, body: RequestBody | null, progressListener: (param0: number, param1: number, param2: boolean) => void | null): Response;
 }

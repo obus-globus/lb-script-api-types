@@ -12,4 +12,5 @@ export class ContinuedEvent extends Event {
     getBody(): ContinuedEvent$EventBody;
     hashCode(): number;
     setBody(body: ContinuedEvent$EventBody): ContinuedEvent;
+    setBody(body: Object): Event;
 }

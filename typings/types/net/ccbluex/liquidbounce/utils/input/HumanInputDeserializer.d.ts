@@ -1,7 +1,6 @@
 import type { InputConstants$Key } from '../../../../../com/mojang/blaze3d/platform/InputConstants$Key.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { Color4b } from '../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
@@ -21,7 +20,7 @@ export class HumanInputDeserializer extends Object {
     readonly textArrayDeserializer: HumanInputDeserializer$StringDeserializer<string[]>;
     readonly textDeserializer: HumanInputDeserializer$StringDeserializer<string>;
     parseArray(str: string, componentDeserializer: HumanInputDeserializer$StringDeserializer<T>): T[];
-    // private parseRange<R extends Object | number | string | boolean>(str: string, numberParser: HumanInputDeserializer$StringDeserializer<N>, rangeSupplier: Function2<N, N, R>): R;
+    // private parseRange<R extends Object | number | string | boolean>(str: string, numberParser: HumanInputDeserializer$StringDeserializer<N>, rangeSupplier: (param0: N, param1: N) => R): R;
     registryItemDeserializer(registry: T[]): HumanInputDeserializer$StringDeserializer<T>;
     registryItemDeserializer(key: ResourceKey<T[]>): HumanInputDeserializer$StringDeserializer<T>;
 }

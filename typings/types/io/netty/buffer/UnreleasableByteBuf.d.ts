@@ -8,6 +8,7 @@ export class UnreleasableByteBuf extends WrappedByteBuf {
     // private swappedBuf: SwappedByteBuf;
     asReadOnly(): ByteBuf;
     duplicate(): ByteBuf;
+    order(): ByteOrder;
     order(arg0: ByteOrder): ByteBuf;
     readRetainedSlice(arg0: number): ByteBuf;
     readSlice(arg0: number): ByteBuf;

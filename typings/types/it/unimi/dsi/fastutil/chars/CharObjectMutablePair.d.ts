@@ -19,6 +19,8 @@ export class CharObjectMutablePair<V extends Object | number | string | boolean>
     key(arg0: string): CharObjectPair<V>;
     key(arg0: string): CharObjectPair<V>;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharObjectPair<V>;
     left(arg0: string): CharObjectMutablePair<V>;
     left(): string;
     left(arg0: string): CharObjectPair<V>;

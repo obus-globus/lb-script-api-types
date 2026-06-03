@@ -78,6 +78,7 @@ export class ServerChunkCache extends ChunkSource {
     // private createChunkLoadTicket(arg0: number, arg1: number, arg2: number): void;
     deactivateTicketsOnClosing(): void;
     gatherStats(): string;
+    getChunk(x: number, z: number, loadOrGenerate: boolean): LevelChunk;
     getChunk(arg0: number, arg1: number, arg2: ChunkStatus, arg3: boolean): ChunkAccess;
     // private getChunkBlocking(arg0: number, arg1: number, arg2: ChunkStatus, arg3: boolean): ChunkAccess;
     getChunkDebugData(pos: ChunkPos): string;

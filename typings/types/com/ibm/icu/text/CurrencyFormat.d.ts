@@ -18,7 +18,9 @@ export class CurrencyFormat extends MeasureFormat {
     static getInstance(paramarg0: Locale, paramarg1: MeasureFormat$FormatWidth, paramarg2: NumberFormat): MeasureFormat;
     static getRangeFormat(paramarg0: ULocale, paramarg1: MeasureFormat$FormatWidth): string;
     constructor(arg0: ULocale)
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): CurrencyAmount;
     // private readResolve(): Object;
     // private writeReplace(): Object;

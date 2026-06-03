@@ -17,6 +17,8 @@ export class FloatReferenceMutablePair<V extends Object | number | string | bool
     key(arg0: number): FloatReferencePair<V>;
     key(arg0: number): FloatReferencePair<V>;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatReferencePair<V>;
     left(arg0: number): FloatReferenceMutablePair<V>;
     left(): number;
     left(arg0: number): FloatReferencePair<V>;

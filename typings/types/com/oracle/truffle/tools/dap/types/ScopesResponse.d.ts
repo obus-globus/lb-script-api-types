@@ -12,4 +12,5 @@ export class ScopesResponse extends Response {
     getBody(): ScopesResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ScopesResponse$ResponseBody): ScopesResponse;
+    setBody(body: Object): Response;
 }

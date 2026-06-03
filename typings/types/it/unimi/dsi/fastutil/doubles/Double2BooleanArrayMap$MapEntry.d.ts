@@ -32,6 +32,8 @@ export class Double2BooleanArrayMap$MapEntry extends Object implements Double2Bo
     left(arg0: number): DoubleBooleanPair;
     left(arg0: number): DoubleBooleanPair;
     leftDouble(): number;
+    right(): boolean;
+    right(arg0: boolean): DoubleBooleanPair;
     right(arg0: boolean): DoubleBooleanPair;
     right(): boolean;
     right(arg0: boolean): DoubleBooleanPair;

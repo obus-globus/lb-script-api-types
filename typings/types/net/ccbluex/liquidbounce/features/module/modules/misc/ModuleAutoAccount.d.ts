@@ -1,5 +1,3 @@
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Regex } from '../../../../../../../kotlin/text/Regex.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ModuleAutoAccount$MessageSource } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount$MessageSource.d.ts'
@@ -30,8 +28,8 @@ export class ModuleAutoAccount extends ClientModule {
     // private /*not mapped: */ getRegisterRegex(): Regex;
     readonly running: boolean;
     // private sending: boolean;
-    // private action(operation: Function0<void>): void;
-    // private createMessageHandler(messageSource: ModuleAutoAccount$MessageSource, textProvider: Function1<T, string>): void;
+    // private action(operation: () => void): void;
+    // private createMessageHandler(messageSource: ModuleAutoAccount$MessageSource, textProvider: (param0: T) => string | null): void;
     login(): void;
     onDisabled(): void;
     register(): void;

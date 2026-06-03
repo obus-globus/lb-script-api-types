@@ -5,5 +5,6 @@ import type { RuleBasedCollator$UTF16NFDIterator } from '../../../../../../../or
 export class RuleBasedCollator$FCDUTF16NFDIterator extends RuleBasedCollator$UTF16NFDIterator {
     constructor()
     // private str: StringBuilder;
+    setText(seq: CharSequence, start: number): void;
     setText(nfcImpl: Normalizer2Impl, seq: CharSequence, start: number): void;
 }

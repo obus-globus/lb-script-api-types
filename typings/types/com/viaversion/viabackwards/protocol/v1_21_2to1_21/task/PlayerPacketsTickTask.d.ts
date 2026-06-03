@@ -3,5 +3,6 @@ import type { UserConnection } from '../../../../../../com/viaversion/viaversion
 import type { StorableObjectTask } from '../../../../../../com/viaversion/viaversion/connection/StorableObjectTask.d.ts'
 export class PlayerPacketsTickTask extends StorableObjectTask<PlayerStorage> {
     constructor()
+    run(): void;
     run(arg0: UserConnection, arg1: PlayerStorage): void;
 }

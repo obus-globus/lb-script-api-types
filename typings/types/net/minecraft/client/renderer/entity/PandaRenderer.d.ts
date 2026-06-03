@@ -11,6 +11,7 @@ export class PandaRenderer extends AgeableMobRenderer<Panda, PandaRenderState, P
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): PandaRenderState;
+    createRenderState(entity: Panda, partialTicks: number): PandaRenderState;
     extractRenderState(entity: Panda, state: PandaRenderState, partialTicks: number): void;
     // private getAngle(thisAngle: number, nextAngle: number, nextRollPos: number, rollTransitionTime: number, threshold: number): number;
     getTextureLocation(state: PandaRenderState): Identifier;

@@ -4,5 +4,6 @@ export class JndiLookup extends AbstractLookup {
     static CATEGORY: string;
     constructor()
     // private convertJndiName(jndiName: string): string;
+    lookup(key: string): string;
     lookup(ignored: LogEvent, key: string): string;
 }

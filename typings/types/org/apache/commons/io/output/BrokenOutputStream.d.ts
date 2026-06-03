@@ -16,5 +16,7 @@ export class BrokenOutputStream extends OutputStream {
     close(): void;
     flush(): void;
     // private rethrow(arg0: string): RuntimeException;
+    write(arg0: number[]): void;
+    write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

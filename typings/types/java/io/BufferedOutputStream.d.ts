@@ -11,6 +11,7 @@ export class BufferedOutputStream extends FilterOutputStream {
     flush(): void;
     // private flushBuffer(): void;
     // private growIfNeeded(arg0: number): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

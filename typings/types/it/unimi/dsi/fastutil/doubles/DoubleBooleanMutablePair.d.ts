@@ -19,11 +19,15 @@ export class DoubleBooleanMutablePair extends Object implements DoubleBooleanPai
     key(arg0: number): DoubleBooleanPair;
     key(arg0: number): DoubleBooleanPair;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleBooleanPair;
     left(arg0: number): DoubleBooleanMutablePair;
     left(): number;
     left(arg0: number): DoubleBooleanPair;
     left(arg0: number): DoubleBooleanPair;
     leftDouble(): number;
+    right(): boolean;
+    right(arg0: boolean): DoubleBooleanPair;
     right(arg0: boolean): DoubleBooleanMutablePair;
     right(): boolean;
     right(arg0: boolean): DoubleBooleanPair;

@@ -52,6 +52,7 @@ export abstract class DateFormat extends Format {
     format(arg0: Date): string;
     format(arg0: Date, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Date, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Object, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     getCalendar(): Calendar;
@@ -61,6 +62,7 @@ export abstract class DateFormat extends Format {
     isLenient(): boolean;
     parse(arg0: string): Date;
     parse(arg0: string, arg1: ParsePosition): Date;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     setCalendar(arg0: Calendar): void;
     setLenient(arg0: boolean): void;

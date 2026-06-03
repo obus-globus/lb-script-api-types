@@ -8,5 +8,5 @@ export class DateTimePeriodKt extends Object {
     static plus(paramarg0: DateTimePeriod, paramarg1: DateTimePeriod): DateTimePeriod;
     static toDatePeriod(paramarg0: string): DatePeriod;
     static toDateTimePeriod(paramarg0: string): DateTimePeriod;
-//     static toDateTimePeriod-LRDsOJo(paramarg0: number): DateTimePeriod;
- // ; invalid because of -}
+// (invalid TS: name contains '-')     static toDateTimePeriod-LRDsOJo(paramarg0: number): DateTimePeriod;
+}

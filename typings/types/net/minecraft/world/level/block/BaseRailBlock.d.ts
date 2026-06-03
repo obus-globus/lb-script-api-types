@@ -100,11 +100,13 @@ export abstract class BaseRailBlock extends Block implements SimpleWaterloggedBl
     getShapeProperty(): Property<RailShape>;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     isStraight(): boolean;
+    mirror(state: BlockState, mirror: Mirror): BlockState;
     mirror(shape: RailShape, mirror: Mirror): RailShape;
     neighborChanged(state: BlockState, level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
     pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
+    rotate(state: BlockState, rotation: Rotation): BlockState;
     rotate(shape: RailShape, rotation: Rotation): RailShape;
     updateDir(level: Level, pos: BlockPos, state: BlockState, first: boolean): BlockState;
     updateShape(state: BlockState, level: LevelReader, ticks: ScheduledTickAccess, pos: BlockPos, directionToNeighbour: Direction, neighbourPos: BlockPos, neighbourState: BlockState, random: RandomSource): BlockState;

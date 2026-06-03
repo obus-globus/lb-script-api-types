@@ -5,6 +5,7 @@ import type { Locale } from '../../java/util/Locale.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 import type { JComponent } from '../../javax/swing/JComponent.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { PanelUI } from '../../javax/swing/plaf/PanelUI.d.ts'
 export class JPanel extends JComponent implements Accessible {
     static ABORT: number;
@@ -36,6 +37,7 @@ export class JPanel extends JComponent implements Accessible {
     getUI(): PanelUI;
     getUIClassID(): string;
     paramString(): string;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: PanelUI): void;
     updateUI(): void;
     // private writeObject(arg0: ObjectOutputStream): void;

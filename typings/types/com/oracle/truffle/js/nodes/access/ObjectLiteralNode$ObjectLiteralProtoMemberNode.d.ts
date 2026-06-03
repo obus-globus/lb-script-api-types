@@ -15,5 +15,6 @@ export class ObjectLiteralNode$ObjectLiteralProtoMemberNode extends ObjectLitera
     constructor(isStatic: boolean, valueNode: JavaScriptNode)
     // private valueNode: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
 }

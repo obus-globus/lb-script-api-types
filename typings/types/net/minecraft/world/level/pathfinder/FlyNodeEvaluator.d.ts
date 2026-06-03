@@ -1,5 +1,6 @@
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
+import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { Mob } from '../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { BlockGetter } from '../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { PathNavigationRegion } from '../../../../../net/minecraft/world/level/PathNavigationRegion.d.ts'
@@ -22,8 +23,10 @@ export class FlyNodeEvaluator extends WalkNodeEvaluator {
     canStartAt(pos: BlockPos): boolean;
     done(): void;
     findAcceptedNode(x: number, y: number, z: number): Node;
+    findAcceptedNode(x: number, y: number, z: number, jumpSize: number, nodeHeight: number, travelDirection: Direction, blockPathTypeCurrent: PathType): Node;
     getCachedPathType(x: number, y: number, z: number): PathType;
     getNeighbors(neighbors: Node[], pos: Node): number;
+    getPathType(mob: Mob, pos: BlockPos): PathType;
     getPathType(context: PathfindingContext, x: number, y: number, z: number): PathType;
     getStart(): Node;
     getTarget(x: number, y: number, z: number): Target;

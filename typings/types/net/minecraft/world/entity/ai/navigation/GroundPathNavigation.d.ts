@@ -1,3 +1,4 @@
+import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
@@ -14,7 +15,13 @@ export class GroundPathNavigation extends PathNavigation {
     readonly canPathToTargetsBelowSurface: boolean;
     canNavigateGround(): boolean;
     canUpdatePath(): boolean;
+    createPath(positions: Stream<BlockPos>, reachRange: number): Path;
+    createPath(x: number, y: number, z: number, reachRange: number): Path;
+    createPath(positions: BlockPos[], reachRange: number): Path;
+    createPath(targets: BlockPos[], radiusOffset: number, above: boolean, reachRange: number): Path;
+    createPath(targets: BlockPos[], radiusOffset: number, above: boolean, reachRange: number, maxPathLength: number): Path;
     createPath(pos: BlockPos, reachRange: number): Path;
+    createPath(pos: BlockPos, reachRange: number, maxPathLength: number): Path;
     createPath(target: Entity, reachRange: number): Path;
     createPathFinder(maxVisitedNodes: number): PathFinder;
     findSurfacePosition(chunk: LevelChunk, pos: BlockPos, reachRange: number): BlockPos;

@@ -52,6 +52,7 @@ export class DateIntervalFormat extends UFormat {
     format(arg0: Calendar, arg1: Calendar, arg2: StringBuffer, arg3: FieldPosition): StringBuffer;
     format(arg0: DateInterval, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Temporal, arg1: Temporal, arg2: StringBuffer, arg3: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     // private formatImpl(arg0: Calendar, arg1: Calendar, arg2: StringBuffer, arg3: FieldPosition, arg4: DateIntervalFormat$FormatOutput, arg5: FieldPosition[]): StringBuffer;
     // private formatIntervalImpl(arg0: DateInterval, arg1: StringBuffer, arg2: FieldPosition, arg3: DateIntervalFormat$FormatOutput, arg4: FieldPosition[]): StringBuffer;
@@ -71,6 +72,7 @@ export class DateIntervalFormat extends UFormat {
     // private initializeIntervalPattern(arg0: string, arg1: ULocale): { [key: string]: DateIntervalInfo$PatternInfo };
     // private initializePattern(arg0: ICUCache<string, { [key: string]: DateIntervalInfo$PatternInfo }>): void;
     // private normalizeHourMetacharacters(arg0: string, arg1: ULocale): string;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     // private readObject(arg0: ObjectInputStream): void;
     setContext(arg0: DisplayContext): void;

@@ -9,11 +9,11 @@ export class JsonElementKt extends Object {
     static JsonPrimitive(paramarg0: boolean): JsonPrimitive;
     static JsonPrimitive(paramarg0: Number): JsonPrimitive;
     static JsonPrimitive(paramarg0: string): JsonPrimitive;
-//     static JsonPrimitive-7apg3OU(paramarg0: number): JsonPrimitive;
- // ; invalid because of -//     static JsonPrimitive-VKZWuLQ(paramarg0: number): JsonPrimitive;
- // ; invalid because of -//     static JsonPrimitive-WZ4Q5Ns(paramarg0: number): JsonPrimitive;
- // ; invalid because of -//     static JsonPrimitive-xj2QHRw(paramarg0: number): JsonPrimitive;
- // ; invalid because of -    static JsonUnquotedLiteral(paramarg0: string): JsonPrimitive;
+// (invalid TS: name contains '-')     static JsonPrimitive-7apg3OU(paramarg0: number): JsonPrimitive;
+// (invalid TS: name contains '-')     static JsonPrimitive-VKZWuLQ(paramarg0: number): JsonPrimitive;
+// (invalid TS: name contains '-')     static JsonPrimitive-WZ4Q5Ns(paramarg0: number): JsonPrimitive;
+// (invalid TS: name contains '-')     static JsonPrimitive-xj2QHRw(paramarg0: number): JsonPrimitive;
+    static JsonUnquotedLiteral(paramarg0: string): JsonPrimitive;
     static getBoolean(paramarg0: JsonPrimitive): boolean;
     static getBooleanOrNull(paramarg0: JsonPrimitive): boolean;
     static getContentOrNull(paramarg0: JsonPrimitive): string;

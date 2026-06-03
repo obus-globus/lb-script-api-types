@@ -14,4 +14,5 @@ export class UserBanList extends StoredUserList<NameAndId, UserBanListEntry> {
     getUserList(): string[];
     isBanned(user: NameAndId): boolean;
     remove(user: NameAndId): boolean;
+    remove(infos: StoredUserEntry<NameAndId>): boolean;
 }

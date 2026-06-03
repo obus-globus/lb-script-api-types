@@ -12,12 +12,14 @@ import type { Calendar } from '../../../../com/ibm/icu/util/Calendar.d.ts'
 import type { Calendar$FormatConfiguration } from '../../../../com/ibm/icu/util/Calendar$FormatConfiguration.d.ts'
 import type { Output } from '../../../../com/ibm/icu/util/Output.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
+import type { ULocale$Type } from '../../../../com/ibm/icu/util/ULocale$Type.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
 import type { AttributedCharacterIterator } from '../../../../java/text/AttributedCharacterIterator.d.ts'
 import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
+import type { Temporal } from '../../../../java/time/temporal/Temporal.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -204,12 +206,20 @@ export class SimpleDateFormat extends DateFormat {
     // private format(arg0: Calendar, arg1: DisplayContext, arg2: StringBuffer, arg3: FieldPosition, arg4: FieldPosition[]): StringBuffer;
     format(arg0: Calendar, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Calendar, arg1: StringBuffer, arg2: FieldPosition, arg3: FieldPosition[]): StringBuffer;
+    format(arg0: Temporal): string;
+    format(arg0: Temporal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Date): string;
+    format(arg0: Date, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     formatToCharacterIterator(arg0: Object): AttributedCharacterIterator;
     get2DigitYearStart(): Date;
     getDateFormatSymbols(): DateFormatSymbols;
     // private getDefaultCenturyStart(): Date;
     // private getDefaultCenturyStartYear(): number;
     getLocale(): ULocale;
+    getLocale(arg0: ULocale$Type): ULocale;
+    getNumberFormat(): NumberFormat;
     getNumberFormat(arg0: string): NumberFormat;
     // private getPatternItems(): Object[];
     getSymbols(): DateFormatSymbols;
@@ -229,7 +239,9 @@ export class SimpleDateFormat extends DateFormat {
     matchQuarterString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: Calendar): number;
     matchString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: Calendar): number;
     // private matchString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: string, arg5: Calendar): number;
+    parse(arg0: string): Date;
     parse(arg0: string, arg1: Calendar, arg2: ParsePosition): void;
+    parse(arg0: string, arg1: ParsePosition): Date;
     // private parseAmbiguousDatesAsAfter(arg0: Date): void;
     // private parseInt(arg0: string, arg1: ParsePosition, arg2: boolean, arg3: NumberFormat): Number;
     // private parseInt(arg0: string, arg1: number, arg2: ParsePosition, arg3: boolean, arg4: NumberFormat): Number;

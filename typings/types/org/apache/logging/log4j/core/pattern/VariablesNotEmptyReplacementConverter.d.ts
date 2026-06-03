@@ -9,6 +9,7 @@ export class VariablesNotEmptyReplacementConverter extends LogEventPatternConver
     static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): VariablesNotEmptyReplacementConverter;
     private constructor(formatters: PatternFormatter[])
     // private formatters: PatternFormatter[];
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     handlesThrowable(): boolean;
 }

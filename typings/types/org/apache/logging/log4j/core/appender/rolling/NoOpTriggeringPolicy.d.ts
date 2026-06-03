@@ -8,6 +8,7 @@ export class NoOpTriggeringPolicy extends AbstractTriggeringPolicy {
     static INSTANCE: NoOpTriggeringPolicy;
     static createPolicy(): NoOpTriggeringPolicy;
     constructor()
+    initialize(): void;
     initialize(manager: RollingFileManager): void;
     isTriggeringEvent(logEvent: LogEvent): boolean;
 }

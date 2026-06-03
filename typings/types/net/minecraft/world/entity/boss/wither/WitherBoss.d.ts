@@ -147,6 +147,7 @@ export class WitherBoss extends Monster implements RangedAttackMob {
     // private yRotHeads: number[];
     // private yRotOHeads: number[];
     addAdditionalSaveData(output: ValueOutput): void;
+    addEffect(newEffect: MobEffectInstance): boolean;
     addEffect(newEffect: MobEffectInstance, source: Entity): boolean;
     aiStep(): void;
     canBeAffected(newEffect: MobEffectInstance): boolean;

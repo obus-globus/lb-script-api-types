@@ -19,4 +19,5 @@ export class FactorTracker extends Object implements Tracker {
     // private maxUpdates: number;
     getNewValue(arg0: number): number;
     getNewValue(arg0: string, arg1: number): number;
+    getNewValue(arg0: string, arg1: number): number;
 }

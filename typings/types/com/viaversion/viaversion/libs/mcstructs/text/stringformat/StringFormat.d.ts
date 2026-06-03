@@ -33,6 +33,7 @@ export abstract class StringFormat extends Object {
     shouldResetAtEnd(): boolean;
     split(arg0: string, arg1: string, arg2: ColorHandling, arg3: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting, arg4: (param0: ResolvedFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): string[];
     styleAt(arg0: string, arg1: number, arg2: ColorHandling, arg3: (param0: ResolvedFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): Style;
+    toString(): string;
     toString(arg0: TextComponent, arg1: ColorHandling, arg2: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): string;
     toString(arg0: TextComponent, arg1: ColorHandling, arg2: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting, arg3: boolean): string;
     write(arg0: StringBuilder, arg1: TextFormatting): void;

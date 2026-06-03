@@ -14,4 +14,5 @@ export class UserWhiteList extends StoredUserList<NameAndId, UserWhiteListEntry>
     getUserList(): string[];
     isWhiteListed(user: NameAndId): boolean;
     remove(user: NameAndId): boolean;
+    remove(infos: StoredUserEntry<NameAndId>): boolean;
 }

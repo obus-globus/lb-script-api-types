@@ -2,7 +2,6 @@ import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { AutoSettings } from '../../../../../net/ccbluex/liquidbounce/api/models/client/AutoSettings.d.ts'
 import type { AutoSettingsStatusType } from '../../../../../net/ccbluex/liquidbounce/api/types/enums/AutoSettingsStatusType.d.ts'
 import type { AutoSettingsType } from '../../../../../net/ccbluex/liquidbounce/api/types/enums/AutoSettingsType.d.ts'
@@ -37,5 +36,5 @@ export class AutoConfig extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L254 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:254}
      */
     serializeAutoConfig(writer: Writer, includeConfiguration: IncludeConfiguration, autoSettingsType: AutoSettingsType, statusType: AutoSettingsStatusType): void;
-    withLoading(block: Function0<void>): void;
+    withLoading(block: () => void): void;
 }

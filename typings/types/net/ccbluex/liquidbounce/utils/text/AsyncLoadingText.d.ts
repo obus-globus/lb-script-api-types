@@ -3,7 +3,6 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Deferred } from '../../../../../kotlinx/coroutines/Deferred.d.ts'
 import type { DelegatedComponent } from '../../../../../net/ccbluex/liquidbounce/utils/text/DelegatedComponent.d.ts'
@@ -22,7 +21,7 @@ export class AsyncLoadingText extends Record implements DelegatedComponent {
     static DEFAULT_ON_LOADING: () => Component;
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
-    static lazy(paramarg0: Function0<Component>): () => unknown;
+    static lazy(paramarg0: () => Component): () => unknown;
     constructor(arg0: Deferred<Component>)
     constructor(delegate: Deferred<Component>, onLoading: () => Component, onException: (param0: Throwable) => Component)
     // private delegate: Deferred<Component>;

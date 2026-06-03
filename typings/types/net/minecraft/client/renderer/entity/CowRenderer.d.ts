@@ -16,6 +16,7 @@ export class CowRenderer extends MobRenderer<Cow, CowRenderState, CowModel> {
     constructor(context: EntityRendererProvider$Context)
     // private models: { [key in CowVariant$ModelType]: AdultAndBabyModelPair<CowModel> };
     createRenderState(): CowRenderState;
+    createRenderState(entity: Cow, partialTicks: number): CowRenderState;
     extractRenderState(entity: Cow, state: CowRenderState, partialTicks: number): void;
     getTextureLocation(state: CowRenderState): Identifier;
     submit(state: CowRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

@@ -11,6 +11,7 @@ export class SquidRenderer<T extends Squid> extends AgeableMobRenderer<T, SquidR
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, model: SquidModel, babyModel: SquidModel)
     createRenderState(): SquidRenderState;
+    createRenderState(entity: T, partialTicks: number): SquidRenderState;
     extractRenderState(entity: T, state: SquidRenderState, partialTicks: number): void;
     getTextureLocation(state: SquidRenderState): Identifier;
     setupRotations(state: SquidRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;

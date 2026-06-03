@@ -31,6 +31,7 @@ export class XoroshiroRandomSource extends Object implements RandomSource {
     nextInt(origin: number, bound: number): number;
     nextInt(): number;
     nextInt(bound: number): number;
+    nextInt(origin: number, bound: number): number;
     nextIntBetweenInclusive(min: number, maxInclusive: number): number;
     nextLong(): number;
     setSeed(seed: number): void;

@@ -41,6 +41,7 @@ export class TitleScreen extends Screen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private getMultiplayerDisabledReason(): Component;
     init(): void;
+    init(width: number, height: number): void;
     isPauseScreen(): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     // private realmsNotificationsEnabled(): boolean;

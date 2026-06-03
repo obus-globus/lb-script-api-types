@@ -31,6 +31,7 @@ export class CreateFlatWorldScreen extends Screen {
     // private parent: CreateWorldScreen;
     // private hasValidSelection(): boolean;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
     setConfig(generator: FlatLevelGeneratorSettings): void;

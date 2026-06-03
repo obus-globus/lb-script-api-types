@@ -8,5 +8,6 @@ export class EntityPacketRewriter1_21_5 extends EntityRewriter<ClientboundPacket
     registerPackets(): void;
     registerRewrites(): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private visibility(arg0: number): string;
 }

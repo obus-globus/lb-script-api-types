@@ -19,11 +19,15 @@ export class BooleanByteMutablePair extends Object implements BooleanBytePair, S
     key(arg0: boolean): BooleanBytePair;
     key(arg0: boolean): BooleanBytePair;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanBytePair;
     left(arg0: boolean): BooleanByteMutablePair;
     left(): boolean;
     left(arg0: boolean): BooleanBytePair;
     left(arg0: boolean): BooleanBytePair;
     leftBoolean(): boolean;
+    right(): number;
+    right(arg0: number): BooleanBytePair;
     right(arg0: number): BooleanByteMutablePair;
     right(): number;
     right(arg0: number): BooleanBytePair;

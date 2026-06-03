@@ -10,6 +10,7 @@ export class WardenRenderer extends MobRenderer<Warden, WardenRenderState, Warde
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): WardenRenderState;
+    createRenderState(entity: Warden, partialTicks: number): WardenRenderState;
     extractRenderState(entity: Warden, state: WardenRenderState, partialTicks: number): void;
     getTextureLocation(state: WardenRenderState): Identifier;
 }

@@ -38,10 +38,13 @@ export class JSModuleNamespace extends JSNonProxy {
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
+    getOwnHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     getOwnProperty(thisObj: JSDynamicObject, key: Object): PropertyDescriptor;
     getOwnPropertyKeys(thisObj: JSDynamicObject, strings: boolean, symbols: boolean): Object[];
     hasOwnProperty(thisObj: JSDynamicObject, key: Object): boolean;
+    hasOwnProperty(thisObj: JSDynamicObject, index: number): boolean;
     hasProperty(thisObj: JSDynamicObject, key: Object): boolean;
+    hasProperty(thisObj: JSDynamicObject, index: number): boolean;
     set(thisObj: JSDynamicObject, key: Object, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
     set(thisObj: JSDynamicObject, index: number, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
     setPrototypeOf(thisObj: JSDynamicObject, newPrototype: JSDynamicObject): boolean;

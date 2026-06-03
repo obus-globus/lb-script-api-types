@@ -17,6 +17,8 @@ import type { MenuDragMouseEvent } from '../../javax/swing/event/MenuDragMouseEv
 import type { MenuDragMouseListener } from '../../javax/swing/event/MenuDragMouseListener.d.ts'
 import type { MenuKeyEvent } from '../../javax/swing/event/MenuKeyEvent.d.ts'
 import type { MenuKeyListener } from '../../javax/swing/event/MenuKeyListener.d.ts'
+import type { ButtonUI } from '../../javax/swing/plaf/ButtonUI.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { MenuItemUI } from '../../javax/swing/plaf/MenuItemUI.d.ts'
 export class JMenuItem extends AbstractButton implements Accessible, MenuElement {
     static ABORT: number;
@@ -102,6 +104,7 @@ export class JMenuItem extends AbstractButton implements Accessible, MenuElement
     getAccelerator(): KeyStroke;
     getAccessibleContext(): AccessibleContext;
     getComponent(): Component;
+    getComponent(arg0: number): Component;
     getMenuDragMouseListeners(): MenuDragMouseListener[];
     getMenuKeyListeners(): MenuKeyListener[];
     getSubElements(): MenuElement[];
@@ -112,9 +115,11 @@ export class JMenuItem extends AbstractButton implements Accessible, MenuElement
     largeIconChanged(arg0: Action): void;
     menuSelectionChanged(arg0: boolean): void;
     paramString(): string;
+    processKeyEvent(arg0: KeyEvent): void;
     processKeyEvent(arg0: KeyEvent, arg1: MenuElement[], arg2: MenuSelectionManager): void;
     processMenuDragMouseEvent(arg0: MenuDragMouseEvent): void;
     processMenuKeyEvent(arg0: MenuKeyEvent): void;
+    processMouseEvent(arg0: MouseEvent): void;
     processMouseEvent(arg0: MouseEvent, arg1: MenuElement[], arg2: MenuSelectionManager): void;
     // private readObject(arg0: ObjectInputStream): void;
     removeMenuDragMouseListener(arg0: MenuDragMouseListener): void;
@@ -124,6 +129,8 @@ export class JMenuItem extends AbstractButton implements Accessible, MenuElement
     setEnabled(arg0: boolean): void;
     setIconFromAction(arg0: Action): void;
     setModel(arg0: ButtonModel): void;
+    setUI(arg0: ButtonUI): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: MenuItemUI): void;
     smallIconChanged(arg0: Action): void;
     updateUI(): void;

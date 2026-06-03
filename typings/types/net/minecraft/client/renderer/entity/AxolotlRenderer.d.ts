@@ -10,6 +10,7 @@ export class AxolotlRenderer extends AgeableMobRenderer<Axolotl, AxolotlRenderSt
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): AxolotlRenderState;
+    createRenderState(entity: Axolotl, partialTicks: number): AxolotlRenderState;
     extractRenderState(entity: Axolotl, state: AxolotlRenderState, partialTicks: number): void;
     getTextureLocation(state: AxolotlRenderState): Identifier;
 }

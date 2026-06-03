@@ -7,6 +7,7 @@ import type { PlayFabResponseHandler } from '../../../../../net/raphimc/minecraf
 import type { XblXstsToken } from '../../../../../net/raphimc/minecraftauth/xbl/model/XblXstsToken.d.ts'
 export class PlayFabLoginWithXboxRequest extends PostRequest implements PlayFabResponseHandler<PlayFabToken> {
     constructor(arg0: XblXstsToken, arg1: string)
+    handle(arg0: HttpResponse): PlayFabToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): PlayFabToken;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

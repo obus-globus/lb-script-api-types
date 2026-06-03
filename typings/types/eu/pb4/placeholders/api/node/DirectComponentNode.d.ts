@@ -19,7 +19,10 @@ export class DirectComponentNode extends Record implements TextNode {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     isDynamic(): boolean;
+    toComponent(): Component;
+    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
+    toComponent(arg0: PlaceholderContext): Component;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: PlaceholderContext): Component;

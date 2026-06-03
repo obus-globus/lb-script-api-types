@@ -14,8 +14,10 @@ export class IdEmbedding extends AbstractBlock {
     // private dictionarySize: number;
     // private embedding: Parameter;
     // private embeddingSize: number;
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
+    getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getValue(arg0: ParameterStore, arg1: Device, arg2: boolean): NDArray;
     initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
     probabilities(arg0: ParameterStore, arg1: NDArray, arg2: boolean): NDArray;

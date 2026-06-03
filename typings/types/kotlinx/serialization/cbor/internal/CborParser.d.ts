@@ -1,5 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { Pair } from '../../../../kotlin/Pair.d.ts'
 import type { Triple } from '../../../../kotlin/Triple.d.ts'
 import type { ByteArrayInput } from '../../../../kotlinx/serialization/cbor/internal/ByteArrayInput.d.ts'
@@ -34,7 +33,7 @@ export class CborParser extends Object {
     // private readLong(): number;
     // private readNumber(): number;
     // private readShort(): number;
-    // private readUnsignedIntegerIgnoringMajorType(valueDescriptionForError: Function0<string>): number;
+    // private readUnsignedIntegerIgnoringMajorType(valueDescriptionForError: () => string): number;
     // private skipByte(expected: number): void;
     skipElement(tags: (Object | null)[] | null): void;
     startArray(tags: (Object | null)[] | null): number;

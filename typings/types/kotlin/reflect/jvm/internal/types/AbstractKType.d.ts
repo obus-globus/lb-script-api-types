@@ -1,6 +1,5 @@
 import type { Type } from '../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { KTypeBase } from '../../../../../kotlin/jvm/internal/KTypeBase.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 import type { KType } from '../../../../../kotlin/reflect/KType.d.ts'
@@ -10,7 +9,7 @@ import type { FlexibleTypeMarker } from '../../../../../kotlin/reflect/jvm/inter
 import type { SimpleTypeMarker } from '../../../../../kotlin/reflect/jvm/internal/impl/types/model/SimpleTypeMarker.d.ts'
 import type { TypeArgumentListMarker } from '../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeArgumentListMarker.d.ts'
 export abstract class AbstractKType extends Object implements KTypeBase, DefinitelyNotNullTypeMarker, FlexibleTypeMarker, SimpleTypeMarker, TypeArgumentListMarker {
-    constructor(computeJavaType: Function0<Type> | null)
+    constructor(computeJavaType: () => Type | null)
     readonly abbreviation: KType | null;
     // private computeJavaType: ReflectProperties$LazySoftVal<Type> | null;
     // private /*not mapped: */ getComputeJavaType(): ReflectProperties$LazySoftVal<Type> | null;

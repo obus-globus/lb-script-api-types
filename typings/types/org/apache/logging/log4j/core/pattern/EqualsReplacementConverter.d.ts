@@ -8,5 +8,6 @@ export class EqualsReplacementConverter extends EqualsBaseReplacementConverter {
     static CATEGORY: string;
     static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): EqualsReplacementConverter;
     private constructor(formatters: PatternFormatter[], testString: string, substitution: string, parser: PatternParser)
+    equals(other: Object | null): boolean;
     equals(str: string, buff: StringBuilder, from: number, len: number): boolean;
 }

@@ -21,6 +21,7 @@ export class WindowsHardwareAbstractionLayer extends AbstractHardwareAbstraction
     getDisplays(): Display[];
     getGraphicsCards(): GraphicsCard[];
     getLogicalVolumeGroups(): LogicalVolumeGroup[];
+    getNetworkIFs(): NetworkIF[];
     getNetworkIFs(arg0: boolean): NetworkIF[];
     getPowerSources(): PowerSource[];
     getSoundCards(): SoundCard[];

@@ -10,6 +10,7 @@ export class NautilusRenderer<T extends AbstractNautilus> extends AgeableMobRend
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): NautilusRenderState;
+    createRenderState(entity: T, partialTicks: number): NautilusRenderState;
     extractRenderState(entity: T, state: NautilusRenderState, partialTicks: number): void;
     getTextureLocation(state: NautilusRenderState): Identifier;
 }

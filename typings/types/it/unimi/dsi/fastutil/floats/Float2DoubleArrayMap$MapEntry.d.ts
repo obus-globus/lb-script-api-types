@@ -32,6 +32,8 @@ export class Float2DoubleArrayMap$MapEntry extends Object implements Float2Doubl
     left(arg0: number): FloatDoublePair;
     left(arg0: number): FloatDoublePair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatDoublePair;
     right(arg0: number): FloatDoublePair;
     right(): number;
     right(arg0: number): FloatDoublePair;

@@ -12,4 +12,5 @@ export class ReadMemoryResponse extends Response {
     getBody(): ReadMemoryResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ReadMemoryResponse$ResponseBody): ReadMemoryResponse;
+    setBody(body: Object): Response;
 }

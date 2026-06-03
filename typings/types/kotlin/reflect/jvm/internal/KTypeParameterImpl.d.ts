@@ -1,5 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { KTypeParameter } from '../../../../kotlin/reflect/KTypeParameter.d.ts'
 import type { KVariance } from '../../../../kotlin/reflect/KVariance.d.ts'
 import type { KTypeParameterOwnerImpl } from '../../../../kotlin/reflect/jvm/internal/KTypeParameterOwnerImpl.d.ts'
@@ -9,7 +8,7 @@ import type { TypeParameterMarker } from '../../../../kotlin/reflect/jvm/interna
 export class KTypeParameterImpl extends Object implements KTypeParameter, TypeConstructorMarker, TypeParameterMarker {
     constructor(container: KTypeParameterOwnerImpl, name: string, variance: KVariance, isReified: boolean)
     constructor(container: KTypeParameterOwnerImpl | null, descriptor: TypeParameterDescriptor)
-    private constructor(descriptor: TypeParameterDescriptor | null, _container: KTypeParameterOwnerImpl | null, computeContainer: Function0<KTypeParameterOwnerImpl> | null, name: string, variance: KVariance, isReified: boolean)
+    private constructor(descriptor: TypeParameterDescriptor | null, _container: KTypeParameterOwnerImpl | null, computeContainer: () => KTypeParameterOwnerImpl | null, name: string, variance: KVariance, isReified: boolean)
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

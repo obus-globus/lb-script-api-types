@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntMap$Entry.d.ts'
 import type { ObjectIntPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIntPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2IntOpenHashMap$MapEntry extends Object implements Object2Int
     getIntValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ObjectIntPair<K>;
     right(arg0: number): ObjectIntPair<K>;
     right(): number;
     right(arg0: number): ObjectIntPair<K>;

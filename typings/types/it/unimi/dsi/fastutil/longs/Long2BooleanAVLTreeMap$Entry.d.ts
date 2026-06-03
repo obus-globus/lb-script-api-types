@@ -25,6 +25,7 @@ export class Long2BooleanAVLTreeMap$Entry extends AbstractLong2BooleanMap$BasicE
     right(): Long2BooleanAVLTreeMap$Entry;
     right(arg0: Long2BooleanAVLTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Long2BooleanAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

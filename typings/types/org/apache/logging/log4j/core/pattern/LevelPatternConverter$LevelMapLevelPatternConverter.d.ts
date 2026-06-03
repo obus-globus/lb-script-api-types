@@ -8,5 +8,6 @@ export class LevelPatternConverter$LevelMapLevelPatternConverter extends LevelPa
     static newInstance(paramoptions: (Object | null)[]): LevelPatternConverter;
     private constructor(levelMap: Map<Level, string>)
     // private levelMap: Map<Level, string>;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;
 }

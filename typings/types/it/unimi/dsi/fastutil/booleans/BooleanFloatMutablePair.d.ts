@@ -19,11 +19,15 @@ export class BooleanFloatMutablePair extends Object implements BooleanFloatPair,
     key(arg0: boolean): BooleanFloatPair;
     key(arg0: boolean): BooleanFloatPair;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanFloatPair;
     left(arg0: boolean): BooleanFloatMutablePair;
     left(): boolean;
     left(arg0: boolean): BooleanFloatPair;
     left(arg0: boolean): BooleanFloatPair;
     leftBoolean(): boolean;
+    right(): number;
+    right(arg0: number): BooleanFloatPair;
     right(arg0: number): BooleanFloatMutablePair;
     right(): number;
     right(arg0: number): BooleanFloatPair;

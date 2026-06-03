@@ -58,9 +58,11 @@ export class RuleBasedCollator extends Collator {
     // private checkNotFrozen(): void;
     clone(): Object;
     cloneAsThawed(): RuleBasedCollator;
+    compare(source: Object, target: Object): number;
     compare(source: string, target: string): number;
     doCompare(left: CharSequence, right: CharSequence): number;
     equals(obj: Object | null): boolean;
+    equals(source: string, target: string): boolean;
     freeze(): Collator;
     // private getCollationBuffer(): RuleBasedCollator$CollationBuffer;
     getCollationElementIterator(source: CharacterIterator): CollationElementIterator;

@@ -19,4 +19,5 @@ export class ScoreboardSlotArgument extends Object implements ArgumentType<Displ
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): DisplaySlot;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): DisplaySlot;
 }

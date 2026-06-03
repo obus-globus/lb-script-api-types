@@ -4,6 +4,7 @@ import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { ParticleOptions } from '../../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { SoundSource } from '../../../../../net/minecraft/sounds/SoundSource.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -165,9 +166,12 @@ export class Slime extends Mob implements Enemy {
     isDealsDamage(): boolean;
     isTiny(): boolean;
     jumpFromGround(): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playerTouch(player: Player): void;
+    push(xa: number, ya: number, za: number): void;
     push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     refreshDimensions(): void;
     registerGoals(): void;

@@ -18,6 +18,7 @@ export interface Matrix3dc extends Object{
     add(arg0: Matrix3dc, arg1: Matrix3d): Matrix3d;
     cofactor(arg0: Matrix3d): Matrix3d;
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix3dc, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: DoubleBuffer): DoubleBuffer;

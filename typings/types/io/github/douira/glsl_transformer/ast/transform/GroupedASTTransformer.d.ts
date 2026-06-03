@@ -22,4 +22,6 @@ export class GroupedASTTransformer<J extends JobParameters, K extends Object | n
     setTransformation(arg0: (param0: N) => void): void;
     setTuMapSupplier(arg0: () => N): void;
     transform(arg0: RootSupplier, arg1: Map<K, string>): M;
+    transform(arg0: Map<K, string>): Map<K, string>;
+    transform(arg0: Map<K, string>, arg1: J): Map<K, string>;
 }

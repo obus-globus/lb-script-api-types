@@ -11,5 +11,6 @@ export class MacHashFunction extends AbstractHashFunction {
     // private toString: string;
     bits(): number;
     newHasher(): Hasher;
+    newHasher(expectedInputSize: number): Hasher;
     toString(): string;
 }

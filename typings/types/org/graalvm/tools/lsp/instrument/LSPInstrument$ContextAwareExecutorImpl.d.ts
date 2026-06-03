@@ -15,6 +15,7 @@ export class LSPInstrument$ContextAwareExecutorImpl extends Object implements Co
     // private workerThread: WeakReference<Thread>;
     // private execute(taskWithResult: () => T): Future<T>;
     executeWithDefaultContext(taskWithResult: () => T): Future<T>;
+    executeWithNestedContext(taskWithResult: () => T): Future<T>;
     executeWithNestedContext(taskWithResult: () => T, cached: boolean): Future<T>;
     executeWithNestedContext(taskWithResult: () => T, timeoutMillis: number, onTimeoutTask: () => T): Future<T>;
     executeWithNestedContext(taskWithResult: () => T): Future<T>;

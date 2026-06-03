@@ -7,5 +7,6 @@ export class NdcPatternConverter extends LogEventPatternConverter {
     static newInstance(paramoptions: (Object | null)[]): NdcPatternConverter;
     private constructor()
     emptyVariableOutput(): string;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

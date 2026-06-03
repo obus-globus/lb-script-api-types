@@ -11,6 +11,7 @@ export class ShortIterators$UnmodifiableIterator extends Object implements Short
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;

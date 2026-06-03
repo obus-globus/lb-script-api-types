@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { BooleanObjectPair } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class BooleanObjectImmutablePair<V extends Object | number | string | boo
     left(arg0: boolean): BooleanObjectPair<V>;
     leftBoolean(): boolean;
     right(): V;
+    right(arg0: V): Pair<boolean, V>;
     toString(): string;
 }

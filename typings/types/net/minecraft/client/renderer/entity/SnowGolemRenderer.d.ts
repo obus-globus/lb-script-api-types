@@ -14,6 +14,7 @@ export class SnowGolemRenderer extends MobRenderer<SnowGolem, SnowGolemRenderSta
     constructor(context: EntityRendererProvider$Context)
     // private blockModelResolver: BlockModelResolver;
     createRenderState(): SnowGolemRenderState;
+    createRenderState(entity: SnowGolem, partialTicks: number): SnowGolemRenderState;
     extractRenderState(entity: SnowGolem, state: SnowGolemRenderState, partialTicks: number): void;
     getTextureLocation(state: SnowGolemRenderState): Identifier;
 }

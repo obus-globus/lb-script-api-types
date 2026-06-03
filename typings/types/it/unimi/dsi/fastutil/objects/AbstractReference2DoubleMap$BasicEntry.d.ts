@@ -12,5 +12,6 @@ export class AbstractReference2DoubleMap$BasicEntry<K extends Object | number | 
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

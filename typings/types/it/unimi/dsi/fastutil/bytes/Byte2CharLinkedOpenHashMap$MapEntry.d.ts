@@ -32,6 +32,8 @@ export class Byte2CharLinkedOpenHashMap$MapEntry extends Object implements Byte2
     left(arg0: number): ByteCharPair;
     left(arg0: number): ByteCharPair;
     leftByte(): number;
+    right(): string;
+    right(arg0: string): ByteCharPair;
     right(arg0: string): ByteCharPair;
     right(): string;
     right(arg0: string): ByteCharPair;

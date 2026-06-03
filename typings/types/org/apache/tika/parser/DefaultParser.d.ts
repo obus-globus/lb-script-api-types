@@ -18,5 +18,6 @@ export class DefaultParser extends CompositeParser {
     constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: EncodingDetector, arg3: Renderer)
     // private loader: ServiceLoader;
     getAllComponentParsers(): Parser[];
+    getParsers(): Map<MediaType, Parser>;
     getParsers(arg0: ParseContext): Map<MediaType, Parser>;
 }

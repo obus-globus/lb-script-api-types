@@ -26,6 +26,7 @@ export class ShareToLanScreen extends Screen {
     // private portEdit: EditBox;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private tryParsePort(value: string): Component;
 }

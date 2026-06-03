@@ -4,6 +4,7 @@ import type { Graphics } from '../../java/awt/Graphics.d.ts'
 import type { Image } from '../../java/awt/Image.d.ts'
 import type { Insets } from '../../java/awt/Insets.d.ts'
 import type { LayoutManager } from '../../java/awt/LayoutManager.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
 import type { Rectangle } from '../../java/awt/Rectangle.d.ts'
 import type { ComponentListener } from '../../java/awt/event/ComponentListener.d.ts'
@@ -16,6 +17,7 @@ import type { Timer } from '../../javax/swing/Timer.d.ts'
 import type { Border } from '../../javax/swing/border/Border.d.ts'
 import type { ChangeEvent } from '../../javax/swing/event/ChangeEvent.d.ts'
 import type { ChangeListener } from '../../javax/swing/event/ChangeListener.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { ViewportUI } from '../../javax/swing/plaf/ViewportUI.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class JViewport extends JComponent implements Accessible {
@@ -68,6 +70,14 @@ export class JViewport extends JComponent implements Accessible {
     // private createScaledImage(arg0: number, arg1: number, arg2: number, arg3: number): Image;
     createViewListener(): JViewport$ViewListener;
     firePropertyChange(arg0: string, arg1: Object, arg2: Object): void;
+    firePropertyChange(arg0: string, arg1: boolean, arg2: boolean): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: string, arg2: string): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
     fireStateChanged(): void;
     // private flushViewDirtyRegion(arg0: Graphics, arg1: Rectangle): void;
     getAccessibleContext(): AccessibleContext;
@@ -97,7 +107,13 @@ export class JViewport extends JComponent implements Accessible {
     paramString(): string;
     // private positionAdjustment(arg0: number, arg1: number, arg2: number): number;
     remove(arg0: Component): void;
+    remove(arg0: MenuComponent): void;
+    remove(arg0: number): void;
     removeChangeListener(arg0: ChangeListener): void;
+    repaint(): void;
+    repaint(arg0: Rectangle): void;
+    repaint(arg0: number, arg1: number, arg2: number, arg3: number): void;
+    repaint(arg0: number): void;
     repaint(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
     reshape(arg0: number, arg1: number, arg2: number, arg3: number): void;
     scrollRectToVisible(arg0: Rectangle): void;
@@ -105,6 +121,7 @@ export class JViewport extends JComponent implements Accessible {
     setBorder(arg0: Border): void;
     setExtentSize(arg0: Dimension): void;
     setScrollMode(arg0: number): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: ViewportUI): void;
     setView(arg0: Component): void;
     setViewPosition(arg0: Point): void;

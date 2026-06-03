@@ -8,6 +8,7 @@ export class CharsetISO2022$CharsetEncoderISO2022CN extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
     constructor(null_: CharsetISO2022$CharsetEncoderISO2022CN, cs: CharsetICU)
     cbFromUWriteSub(encoder: CharsetEncoderICU, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): CoderResult;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

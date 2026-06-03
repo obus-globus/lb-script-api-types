@@ -1,3 +1,4 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { InstrumentableNode } from '../../../../../../com/oracle/truffle/api/instrumentation/InstrumentableNode.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
@@ -22,6 +23,7 @@ export abstract class JSIsNullOrUndefinedNode extends JSUnaryNode {
     // private isUndefined: boolean;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     doJSValueOrForeign(operand: Object, interop: InteropLibrary): boolean;
+    executeBoolean(frame: VirtualFrame): boolean;
     executeBoolean(input: Object): boolean;
     hasTag(tag: Class<Tag>): boolean;
     isResultAlwaysOfType(clazz: Class<Object>): boolean;

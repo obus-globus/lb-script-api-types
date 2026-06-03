@@ -2,6 +2,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { Display } from '../../../../net/minecraft/world/entity/Display.d.ts'
 import type { Display$TextDisplay$Align } from '../../../../net/minecraft/world/entity/Display$TextDisplay$Align.d.ts'
 import type { Display$TextDisplay$CachedInfo } from '../../../../net/minecraft/world/entity/Display$TextDisplay$CachedInfo.d.ts'
@@ -89,6 +90,7 @@ export class Display$TextDisplay extends Display {
     getLineWidth(): number;
     getText(): Component;
     getTextOpacity(): number;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     setBackgroundColor(color: number): void;

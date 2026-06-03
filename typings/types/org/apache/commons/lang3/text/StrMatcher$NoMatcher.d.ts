@@ -14,5 +14,6 @@ export class StrMatcher$NoMatcher extends StrMatcher {
     static tabMatcher(): StrMatcher;
     static trimMatcher(): StrMatcher;
     constructor()
+    isMatch(arg0: string[], arg1: number): number;
     isMatch(arg0: string[], arg1: number, arg2: number, arg3: number): number;
 }

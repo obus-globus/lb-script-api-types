@@ -6,6 +6,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { TabManager } from '../../../../../../net/minecraft/client/gui/components/tabs/TabManager.d.ts'
 import type { TabNavigationBar } from '../../../../../../net/minecraft/client/gui/components/tabs/TabNavigationBar.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
@@ -60,11 +61,13 @@ export class CreateWorldScreen extends Screen {
     // private createNewWorld(finalLayers: LayeredRegistryAccess<RegistryLayer>, worldDataAndGenSettings: LevelDataAndDimensions$WorldDataAndGenSettings, gameRules: Optional<GameRules>): boolean;
     // private createWorldAndCleanup(finalLayers: LayeredRegistryAccess<RegistryLayer>, worldDataAndGenSettings: LevelDataAndDimensions$WorldDataAndGenSettings, gameRules: Optional<GameRules>): void;
     extractMenuBackground(graphics: GuiGraphicsExtractor): void;
+    extractMenuBackground(graphics: GuiGraphicsExtractor, x: number, y: number, width: number, height: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private getDataPackSelectionSettings(dataConfiguration: WorldDataConfiguration): Pair<Path[], PackRepository>;
     // private getOrCreateTempDataPackDir(): Path[];
     getUiState(): WorldCreationUiState;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     onClose(): void;
     // private onCreate(): void;
@@ -74,5 +77,6 @@ export class CreateWorldScreen extends Screen {
     // private removeTempDataPackDir(): void;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     // private tryApplyNewDataPacks(packRepository: PackRepository, isDataPackScreen: boolean, onAbort: (param0: WorldDataConfiguration) => void): void;
 }

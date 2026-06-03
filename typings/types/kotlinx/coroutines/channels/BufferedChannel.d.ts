@@ -1,10 +1,5 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../../kotlin/jvm/functions/Function2.d.ts'
-import type { Function3 } from '../../../kotlin/jvm/functions/Function3.d.ts'
-import type { Function4 } from '../../../kotlin/jvm/functions/Function4.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
@@ -23,7 +18,7 @@ export class BufferedChannel<E extends Object | number | string | boolean> exten
     static OPTIONAL_CHANNEL: number;
     static RENDEZVOUS: number;
     static UNLIMITED: number;
-    constructor(capacity: number, onUndeliveredElement: Function1<E, void> | null)
+    constructor(capacity: number, onUndeliveredElement: (param0: E) => void | null)
     // private bufferOrRendezvousSend(curSenders: number): boolean;
     cancel(): void;
     cancel(cause: Throwable | null): boolean;
@@ -45,7 +40,7 @@ export class BufferedChannel<E extends Object | number | string | boolean> exten
     hasElements(): boolean;
     // private incCompletedExpandBufferAttempts(nAttempts: number): void;
     // private invokeCloseHandler(): void;
-    invokeOnClose(handler: Function1<Throwable, void>): void;
+    invokeOnClose(handler: (param0: Throwable | null) => void): void;
     // private isCellNonEmpty(segment: ChannelSegment<E>, index: number, globalIndex: number): boolean;
     // private isClosed(sendersAndCloseStatusCur: number, isClosedForReceive: boolean): boolean;
     iterator(): ChannelIterator<E>;
@@ -72,16 +67,16 @@ export class BufferedChannel<E extends Object | number | string | boolean> exten
     receive(): E;
     receiveCatching(): ChannelResult<E>;
     // private receiveCatchingOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): ChannelResult<E>;
-    // private receiveImpl<R extends Object | number | string | boolean>(waiter: Object | null, onElementRetrieved: Function1<E, R>, onSuspend: Function3<ChannelSegment<E>, number, number, R>, onClosed: Function0<R>, onNoWaiterSuspend: Function3<ChannelSegment<E>, number, number, R>): R;
-    // private receiveImplOnNoWaiter(segment: ChannelSegment<E>, index: number, r: number, waiter: Waiter, onElementRetrieved: Function1<E, void>, onClosed: Function0<void>): void;
+    // private receiveImpl<R extends Object | number | string | boolean>(waiter: Object | null, onElementRetrieved: (param0: E) => R, onSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R): R;
+    // private receiveImplOnNoWaiter(segment: ChannelSegment<E>, index: number, r: number, waiter: Waiter, onElementRetrieved: (param0: E) => void, onClosed: () => void): void;
     // private receiveOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): E;
     // private registerSelectForReceive(select: SelectInstance<Object>, ignoredParam: Object | null): void;
     protected registerSelectForSend(select: SelectInstance<Object>, element: Object | null): void;
     // private removeUnprocessedElements(lastSegment: ChannelSegment<E>): void;
     send(element: E): void;
     sendBroadcast(element: E): boolean;
-    // private sendImpl<R extends Object | number | string | boolean>(element: E, waiter: Object | null, onRendezvousOrBuffered: Function0<R>, onSuspend: Function2<ChannelSegment<E>, number, R>, onClosed: Function0<R>, onNoWaiterSuspend: Function4<ChannelSegment<E>, number, E, number, R>): R;
-    // private sendImplOnNoWaiter(segment: ChannelSegment<E>, index: number, element: E, s: number, waiter: Waiter, onRendezvousOrBuffered: Function0<void>, onClosed: Function0<void>): void;
+    // private sendImpl<R extends Object | number | string | boolean>(element: E, waiter: Object | null, onRendezvousOrBuffered: () => R, onSuspend: (param0: ChannelSegment<E>, param1: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: E, param3: number) => R): R;
+    // private sendImplOnNoWaiter(segment: ChannelSegment<E>, index: number, element: E, s: number, waiter: Waiter, onRendezvousOrBuffered: () => void, onClosed: () => void): void;
     // private sendOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, element: E, s: number): void;
     shouldSendSuspend(): boolean;
     // private shouldSendSuspend(curSendersAndCloseStatus: number): boolean;

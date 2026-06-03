@@ -27,6 +27,7 @@ export class LongHeapPriorityQueue extends Object implements LongPriorityQueue, 
     dequeueLong(): number;
     enqueue(arg0: number): void;
     enqueue(arg0: number): void;
+    enqueue(arg0: number): void;
     first(): number;
     firstLong(): number;
     last(): number;

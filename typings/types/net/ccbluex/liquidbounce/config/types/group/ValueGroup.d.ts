@@ -4,7 +4,6 @@ import type { File } from '../../../../../../java/io/File.d.ts'
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ClosedRange } from '../../../../../../kotlin/ranges/ClosedRange.d.ts'
 import type { Sequence } from '../../../../../../kotlin/sequences/Sequence.d.ts'
@@ -74,28 +73,6 @@ export class ValueGroup extends Value<E[]> {
     protected collectValuesRecursivelyInternal(output: Value<Object>[]): void;
     color(name: string, default_: Color4b): Value<Color4b>;
     // private constructBaseKey(): string;
-    /**
-     * Declares a {@link CurveValue} setting using the Kotlin-DSL-style
-     * builder. Inside the `block`, `this` is bound to {@link CurveValue$Builder}
-     * so you can configure curve points fluently. **Use a `function` (not an
-     * arrow), or the `this` binding will be lost.**
-     *
-     * @param name Display name of the setting.
-     * @param block Builder configurator. `this` is the curve builder.
-     * @returns The curve setting, which you can use to read interpolated
-     *          values at runtime.
-     *
-     * @example
-     * ```ts
-     * const easing = group.curve("Speed Curve", function () {
-     *     this.tension = 0.5;
-     *     // configure points...
-     * });
-     * ```
-     *
-     * Source: `ValueGroup.kt:502` — inline DSL builder. (Method has no
-     * KDoc in upstream; this docstring is authored locally.)
-     */
     curve(name: string, block: (this: CurveValue$Builder) => void): CurveValue;
     curve(name: string, default_: Vector2f[], xAxis: CurveValue$Axis, yAxis: CurveValue$Axis, tension: number): CurveValue;
     drop<T extends ValueGroup>(valueGroup: T): T;
@@ -141,8 +118,8 @@ export class ValueGroup extends Value<E[]> {
     list<T extends E[]>(name: string, defaultValue: T, valueType: ValueType): ListValue<T, E>;
     mobEffects<C extends MobEffect[]>(name: string, default_: C): RegistryListValue<C, MobEffect>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, active: T, modes: T[]): ModeValueGroup<T>;
-    protected modes(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => kotlin.Int, modesCallback: Function1<ModeValueGroup<T>, T[]>): ModeValueGroup<T>;
-    protected modes(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: Function1<ModeValueGroup<T>, T[]>): ModeValueGroup<T>;
+    protected modes(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => kotlin.Int, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     multiEnumChoice(name: string, default_: T[], choices: T[], canBeNone: boolean): MultiChoiceListValue<T>;
     multiEnumChoice(name: string, default_: T[], choices: T[], canBeNone: boolean): MultiChoiceListValue<T>;
     multiEnumChoice(name: string, default_: T[], canBeNone: boolean): MultiChoiceListValue<T>;

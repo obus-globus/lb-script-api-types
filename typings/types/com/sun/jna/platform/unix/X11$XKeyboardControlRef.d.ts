@@ -26,4 +26,5 @@ export class X11$XKeyboardControlRef extends Structure implements Structure$ByRe
     led: number;
     led_mode: number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

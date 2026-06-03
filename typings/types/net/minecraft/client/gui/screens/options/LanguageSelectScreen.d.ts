@@ -3,6 +3,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { Options } from '../../../../../../net/minecraft/client/Options.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -33,4 +34,5 @@ export class LanguageSelectScreen extends OptionsSubScreen {
     panoramaShouldSpin(): boolean;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
 }

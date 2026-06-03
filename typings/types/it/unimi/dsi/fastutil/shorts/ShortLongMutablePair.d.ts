@@ -19,11 +19,15 @@ export class ShortLongMutablePair extends Object implements ShortLongPair, Seria
     key(arg0: number): ShortLongPair;
     key(arg0: number): ShortLongPair;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortLongPair;
     left(arg0: number): ShortLongMutablePair;
     left(): number;
     left(arg0: number): ShortLongPair;
     left(arg0: number): ShortLongPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortLongPair;
     right(arg0: number): ShortLongMutablePair;
     right(): number;
     right(arg0: number): ShortLongPair;

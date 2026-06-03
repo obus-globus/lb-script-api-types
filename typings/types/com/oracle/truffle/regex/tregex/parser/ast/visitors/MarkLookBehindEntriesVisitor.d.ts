@@ -1,6 +1,7 @@
 import type { LookAheadAssertion } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookAheadAssertion.d.ts'
 import type { RegexAST } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
 import type { RegexASTNode } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
+import type { Term } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Term.d.ts'
 import type { NFATraversalRegexASTVisitor } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/visitors/NFATraversalRegexASTVisitor.d.ts'
 export class MarkLookBehindEntriesVisitor extends NFATraversalRegexASTVisitor {
     constructor(ast: RegexAST)
@@ -14,5 +15,6 @@ export class MarkLookBehindEntriesVisitor extends NFATraversalRegexASTVisitor {
     leaveLookAhead(assertion: LookAheadAssertion): void;
     // private movePastLookAheadBoundaries(): void;
     run(): void;
+    run(runRoot: Term): void;
     visit(target: RegexASTNode): void;
 }

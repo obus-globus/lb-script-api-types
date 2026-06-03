@@ -1,7 +1,6 @@
 import type { ByteBuffer } from '../../java/nio/ByteBuffer.d.ts'
 import type { UUID } from '../../java/util/UUID.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function3 } from '../../kotlin/jvm/functions/Function3.d.ts'
 import type { Uuid } from '../../kotlin/uuid/Uuid.d.ts'
 import type { UuidKt__UuidKt } from '../../kotlin/uuid/UuidKt__UuidKt.d.ts'
 export class UuidKt extends UuidKt__UuidKt {
@@ -21,14 +20,14 @@ export class UuidKt extends UuidKt__UuidKt {
     static setLongAtCommonImpl(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static toJavaUuid(paramarg0: Uuid): UUID;
     static toKotlinUuid(paramarg0: UUID): Uuid;
-    static uuidCheckHyphenAt(paramarg0: string, paramarg1: number, paramarg2: Function3<Object, Object, Object, void>): void;
+    static uuidCheckHyphenAt(paramarg0: string, paramarg1: number, paramarg2: (param0: Object | null, param1: Object | null, param2: Object | null) => void): void;
     static uuidFromRandomBytes(paramarg0: number[]): Uuid;
     static uuidParseHex(paramarg0: string): Uuid;
     static uuidParseHexCommonImpl(paramarg0: string): Uuid;
-    static uuidParseHexCommonImpl(paramarg0: string, paramarg1: Function3<Object, Object, Object, Object>): Uuid;
+    static uuidParseHexCommonImpl(paramarg0: string, paramarg1: (param0: Object | null, param1: Object | null, param2: Object | null) => Object | null): Uuid;
     static uuidParseHexDash(paramarg0: string): Uuid;
     static uuidParseHexDashCommonImpl(paramarg0: string): Uuid;
-    static uuidParseHexDashCommonImpl(paramarg0: string, paramarg1: Function3<Object, Object, Object, Object>): Uuid;
+    static uuidParseHexDashCommonImpl(paramarg0: string, paramarg1: (param0: Object | null, param1: Object | null, param2: Object | null) => Object | null): Uuid;
     static uuidParseHexDashOrNull(paramarg0: string): Uuid;
     static uuidParseHexDashOrNullCommonImpl(paramarg0: string): Uuid;
     static uuidParseHexOrNull(paramarg0: string): Uuid;

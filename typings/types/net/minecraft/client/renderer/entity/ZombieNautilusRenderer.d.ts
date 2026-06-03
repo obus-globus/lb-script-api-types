@@ -15,6 +15,7 @@ export class ZombieNautilusRenderer extends MobRenderer<ZombieNautilus, Nautilus
     constructor(context: EntityRendererProvider$Context)
     // private models: { [key in ZombieNautilusVariant$ModelType]: NautilusModel };
     createRenderState(): NautilusRenderState;
+    createRenderState(entity: ZombieNautilus, partialTicks: number): NautilusRenderState;
     extractRenderState(entity: ZombieNautilus, state: NautilusRenderState, partialTicks: number): void;
     getTextureLocation(state: NautilusRenderState): Identifier;
     submit(state: NautilusRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

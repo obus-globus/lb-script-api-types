@@ -23,6 +23,7 @@ export class Object2CharRBTreeMap$Entry<K extends Object | number | string | boo
     right(): Object2CharRBTreeMap$Entry<K>;
     right(arg0: Object2CharRBTreeMap$Entry<K>): void;
     setValue(arg0: string): string;
+    setValue(arg0: string): string;
     succ(): boolean;
     succ(arg0: Object2CharRBTreeMap$Entry<K>): void;
     succ(arg0: boolean): void;

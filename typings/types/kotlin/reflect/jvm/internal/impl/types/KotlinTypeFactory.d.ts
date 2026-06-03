@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { TypeAliasDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeAliasDescriptor.d.ts'
 import type { IntegerLiteralTypeConstructor } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/constants/IntegerLiteralTypeConstructor.d.ts'
@@ -21,7 +20,7 @@ export class KotlinTypeFactory extends Object {
     static simpleType(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean): SimpleType;
     static simpleType(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: KotlinTypeRefiner): SimpleType;
     static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: MemberScope): SimpleType;
-    static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: MemberScope, paramarg5: Function1<Object, Object>): SimpleType;
+    static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: MemberScope, paramarg5: (param0: Object | null) => Object | null): SimpleType;
     private constructor()
     // private computeMemberScope(arg0: TypeConstructor, arg1: TypeProjection[], arg2: KotlinTypeRefiner): MemberScope;
     // private refineConstructor(arg0: TypeConstructor, arg1: KotlinTypeRefiner, arg2: TypeProjection[]): KotlinTypeFactory$ExpandedTypeOrRefinedConstructor;

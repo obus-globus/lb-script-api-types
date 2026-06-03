@@ -27,6 +27,7 @@ export class ByteHeapPriorityQueue extends Object implements BytePriorityQueue, 
     dequeueByte(): number;
     enqueue(arg0: number): void;
     enqueue(arg0: number): void;
+    enqueue(arg0: number): void;
     first(): number;
     firstByte(): number;
     last(): number;

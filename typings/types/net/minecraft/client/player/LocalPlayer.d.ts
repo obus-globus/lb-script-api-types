@@ -19,6 +19,7 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { Dialog } from '../../../../net/minecraft/server/dialog/Dialog.d.ts'
 import type { PermissionSet } from '../../../../net/minecraft/server/permissions/PermissionSet.d.ts'
 import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.ts'
@@ -33,6 +34,7 @@ import type { MoverType } from '../../../../net/minecraft/world/entity/MoverType
 import type { PlayerRideableJumping } from '../../../../net/minecraft/world/entity/PlayerRideableJumping.d.ts'
 import type { AttributeModifier } from '../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { AttributeSupplier$Builder } from '../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
+import type { ItemEntity } from '../../../../net/minecraft/world/entity/item/ItemEntity.d.ts'
 import type { Input } from '../../../../net/minecraft/world/entity/player/Input.d.ts'
 import type { MinecartCommandBlock } from '../../../../net/minecraft/world/entity/vehicle/minecart/MinecartCommandBlock.d.ts'
 import type { ClickAction } from '../../../../net/minecraft/world/inventory/ClickAction.d.ts'
@@ -195,6 +197,8 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     closeContainer(): void;
     crit(entity: Entity): void;
     drop(all: boolean): boolean;
+    drop(itemStack: ItemStack, thrownFromHand: boolean): ItemEntity;
+    drop(itemStack: ItemStack, randomly: boolean, thrownFromHand: boolean): ItemEntity;
     getActivePortalLocalTransition(): Portal$Transition;
     getCurrentConstantMood(): number;
     getCurrentMood(): number;
@@ -240,7 +244,9 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     // private modifyInput(input: Vec2): Vec2;
     move(moverType: MoverType, delta: Vec3): void;
     // private moveTowardsClosestSpace(x: number, z: number): void;
+    moveTowardsClosestSpace(x: number, y: number, z: number): void;
     onGameModeChanged(gameType: GameType): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     onUpdateAbilities(): void;
     openCommandBlock(commandBlock: CommandBlockEntity): void;
@@ -253,6 +259,7 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     openTestInstanceBlock(testInstanceBlock: TestInstanceBlockEntity): void;
     openTextEdit(sign: SignBlockEntity, isFrontText: boolean): void;
     permissions(): PermissionSet;
+    playSound(sound: SoundEvent): void;
     playSound(sound: SoundEvent, volume: number, pitch: number): void;
     raycastHitResult(a: number, cameraEntity: Entity): HitResult;
     refreshChatAbilities(): void;
@@ -277,11 +284,13 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     shouldShowDeathScreen(): boolean;
     // private shouldStopRunSprinting(): boolean;
     // private shouldStopSwimSprinting(): boolean;
+    startRiding(entity: Entity): boolean;
     startRiding(entity: Entity, force: boolean, sendEventAndTriggers: boolean): boolean;
     startUsingItem(hand: InteractionHand): void;
     stopUsingItem(): void;
     // private suffocatesAt(pos: BlockPos): boolean;
     swing(hand: InteractionHand): void;
+    swing(hand: InteractionHand, sendToSwingingEntity: boolean): void;
     tick(): void;
     tickDeath(): void;
     updateAutoJump(xa: number, za: number): void;

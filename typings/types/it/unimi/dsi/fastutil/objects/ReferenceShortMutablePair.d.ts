@@ -11,6 +11,8 @@ export class ReferenceShortMutablePair<K extends Object | number | string | bool
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceShortMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceShortPair<K>;
     right(arg0: number): ReferenceShortMutablePair<K>;
     right(): number;
     right(arg0: number): ReferenceShortPair<K>;

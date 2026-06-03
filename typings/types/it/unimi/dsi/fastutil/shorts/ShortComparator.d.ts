@@ -11,6 +11,8 @@ export interface ShortComparator extends Comparator<number>, Object{
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: number, param1: number) => kotlin.Int): (param0: number, param1: number) => kotlin.Int;
     thenComparing(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
+    thenComparing(arg0: (param0: number) => U): (param0: number) => kotlin.Boolean;
+    thenComparing(arg0: (param0: number) => U, arg1: (param0: U) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;

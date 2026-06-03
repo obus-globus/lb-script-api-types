@@ -14,6 +14,7 @@ import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.
 import type { Pair } from '../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { DataResult } from '../../../../../com/mojang/serialization/DataResult.d.ts'
+import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { DynamicOps } from '../../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -30,6 +31,7 @@ export class Check$CheckType<A extends Object | number | string | boolean> exten
     buildCodec(): Codec<A>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     everywhere(arg0: TypeRewriteRule, arg1: PointFreeRule, arg2: boolean, arg3: boolean): Optional<RewriteResult<A, Object>>;
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
@@ -38,7 +40,9 @@ export class Check$CheckType<A extends Object | number | string | boolean> exten
     hashCode(): number;
     one(arg0: TypeRewriteRule): Optional<RewriteResult<A, Object>>;
     point(arg0: DynamicOps<Object>): Optional<A>;
+    read(arg0: Dynamic<T>): DataResult<Pair<A, Dynamic<T>>>;
     // private read<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<A, T>>;
+    read<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: TypeRewriteRule, arg2: PointFreeRule, arg3: T): DataResult<Pair<Optional<Object>, T>>;
     toString(): string;
     updateMu(arg0: RecursiveTypeFamily): Type<Object>;
 }

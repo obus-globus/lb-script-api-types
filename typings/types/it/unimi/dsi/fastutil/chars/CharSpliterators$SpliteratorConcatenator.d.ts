@@ -32,5 +32,6 @@ export class CharSpliterators$SpliteratorConcatenator extends Object implements 
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;
     tryAdvance(arg0: (param0: string) => void): boolean;
+    tryAdvance(arg0: (param0: string) => void): boolean;
     trySplit(): CharSpliterator;
 }

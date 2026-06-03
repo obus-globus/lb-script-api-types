@@ -9,6 +9,7 @@ export abstract class AbstractDerivedByteBuf extends AbstractByteBuf {
     isAccessible0(): boolean;
     isContiguous(): boolean;
     isReadOnly(): boolean;
+    nioBuffer(): ByteBuffer;
     nioBuffer(arg0: number, arg1: number): ByteBuffer;
     refCnt(): number;
     refCnt0(): number;

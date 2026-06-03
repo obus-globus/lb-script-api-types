@@ -32,6 +32,8 @@ export class Int2ShortOpenCustomHashMap$MapEntry extends Object implements Int2S
     left(arg0: number): IntShortPair;
     left(arg0: number): IntShortPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntShortPair;
     right(arg0: number): IntShortPair;
     right(): number;
     right(arg0: number): IntShortPair;

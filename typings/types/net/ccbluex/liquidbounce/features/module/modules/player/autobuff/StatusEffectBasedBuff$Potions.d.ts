@@ -14,5 +14,6 @@ export class StatusEffectBasedBuff$Potions extends ValueGroup {
     // private strengthPotion: StatusEffectBasedBuff$Potion;
     // private values: Map<Holder<MobEffect>, StatusEffectBasedBuff$Potion>;
     // private waterBreathingPotion: StatusEffectBasedBuff$Potion;
+    get(): E[];
     get(statusEffect: Holder<MobEffect>): StatusEffectBasedBuff$Potion | null;
 }

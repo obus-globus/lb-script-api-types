@@ -7,6 +7,7 @@ export class CRC32 extends Object implements Checksum {
     getValue(): number;
     reset(): void;
     update(arg0: ByteBuffer): void;
+    update(arg0: number[]): void;
     update(arg0: number[], arg1: number, arg2: number): void;
     update(arg0: number): void;
     update(arg0: ByteBuffer): void;

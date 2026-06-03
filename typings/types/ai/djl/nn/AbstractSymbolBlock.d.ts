@@ -1,4 +1,5 @@
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
+import type { DataType } from '../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { Shape } from '../../../ai/djl/ndarray/types/Shape.d.ts'
 import type { AbstractBaseBlock } from '../../../ai/djl/nn/AbstractBaseBlock.d.ts'
 import type { SymbolBlock } from '../../../ai/djl/nn/SymbolBlock.d.ts'
@@ -11,5 +12,6 @@ export abstract class AbstractSymbolBlock extends AbstractBaseBlock implements S
     describeOutput(): Pair<K, V>[];
     getChildren(): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
+    getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     removeLastBlock(): void;
 }

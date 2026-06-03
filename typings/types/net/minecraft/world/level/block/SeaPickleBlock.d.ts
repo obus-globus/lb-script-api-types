@@ -95,6 +95,7 @@ export class SeaPickleBlock extends VegetationBlock implements BonemealableBlock
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;
     codec(): MapCodec<SeaPickleBlock>;

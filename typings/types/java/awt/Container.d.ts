@@ -13,7 +13,9 @@ import type { GraphicsConfiguration } from '../../java/awt/GraphicsConfiguration
 import type { Insets } from '../../java/awt/Insets.d.ts'
 import type { LayoutManager } from '../../java/awt/LayoutManager.d.ts'
 import type { LightweightDispatcher } from '../../java/awt/LightweightDispatcher.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
+import type { PopupMenu } from '../../java/awt/PopupMenu.d.ts'
 import type { ContainerEvent } from '../../java/awt/event/ContainerEvent.d.ts'
 import type { ContainerListener } from '../../java/awt/event/ContainerListener.d.ts'
 import type { KeyEvent } from '../../java/awt/event/KeyEvent.d.ts'
@@ -66,6 +68,7 @@ export class Container extends Component {
     add(arg0: Component, arg1: Object): void;
     add(arg0: Component, arg1: Object, arg2: number): void;
     add(arg0: Component, arg1: number): Component;
+    add(arg0: PopupMenu): void;
     add(arg0: string, arg1: Component): Component;
     addContainerListener(arg0: ContainerListener): void;
     // private addDelicately(arg0: Component, arg1: Container, arg2: number): void;
@@ -129,6 +132,7 @@ export class Container extends Component {
     getMouseEventTarget(arg0: number, arg1: number, arg2: boolean): Component;
     // private getMouseEventTarget(arg0: number, arg1: number, arg2: boolean, arg3: Container$EventTargetFilter, arg4: boolean): Component;
     // private getMouseEventTargetImpl(arg0: number, arg1: number, arg2: boolean, arg3: Container$EventTargetFilter, arg4: boolean, arg5: boolean): Component;
+    getMousePosition(): Point;
     getMousePosition(arg0: boolean): Point;
     getOpaqueShape(): Region;
     getPreferredSize(): Dimension;
@@ -154,7 +158,10 @@ export class Container extends Component {
     layout(): void;
     lightweightPaint(arg0: Graphics): void;
     lightweightPrint(arg0: Graphics): void;
+    list(): void;
+    list(arg0: PrintStream): void;
     list(arg0: PrintStream, arg1: number): void;
+    list(arg0: PrintWriter): void;
     list(arg0: PrintWriter, arg1: number): void;
     locate(arg0: number, arg1: number): Component;
     minimumSize(): Dimension;
@@ -189,6 +196,7 @@ export class Container extends Component {
     recursiveSubtractAndApplyShape(arg0: Region, arg1: number): void;
     recursiveSubtractAndApplyShape(arg0: Region, arg1: number, arg2: number): void;
     remove(arg0: Component): void;
+    remove(arg0: MenuComponent): void;
     remove(arg0: number): void;
     removeAll(): void;
     removeContainerListener(arg0: ContainerListener): void;

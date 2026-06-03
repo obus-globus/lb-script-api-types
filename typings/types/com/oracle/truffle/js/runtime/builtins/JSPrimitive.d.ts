@@ -22,5 +22,6 @@ export abstract class JSPrimitive extends JSNonProxy implements PrototypeSupplie
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
     constructor()
     getHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
+    getHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     getMethodHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
 }

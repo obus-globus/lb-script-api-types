@@ -28,6 +28,7 @@ export interface Quaternionfc extends Object{
     difference(arg0: Quaternionfc, arg1: Quaternionf): Quaternionf;
     div(arg0: number, arg1: Quaternionf): Quaternionf;
     div(arg0: Quaternionfc, arg1: Quaternionf): Quaternionf;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     equals(arg0: Quaternionfc, arg1: number): boolean;
     get(arg0: AxisAngle4d): AxisAngle4d;

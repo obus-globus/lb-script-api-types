@@ -11,6 +11,7 @@ export abstract class SimpleAnimatedParticle extends SingleQuadParticle {
     // private sprites: SpriteSet;
     getLayer(): SingleQuadParticle$Layer;
     getLightCoords(a: number): number;
+    setColor(r: number, g: number, b: number): void;
     setColor(rgb: number): void;
     setFadeColor(rgb: number): void;
     tick(): void;

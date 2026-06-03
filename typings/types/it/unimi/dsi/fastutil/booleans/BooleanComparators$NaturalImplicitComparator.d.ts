@@ -15,6 +15,7 @@ export class BooleanComparators$NaturalImplicitComparator extends Object impleme
     constructor()
     compare(arg0: boolean, arg1: boolean): number;
     compare(arg0: boolean, arg1: boolean): number;
+    compare(arg0: boolean, arg1: boolean): number;
     // private readResolve(): Object;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;

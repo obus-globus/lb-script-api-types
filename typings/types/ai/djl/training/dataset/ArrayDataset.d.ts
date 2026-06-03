@@ -17,8 +17,12 @@ export class ArrayDataset extends RandomAccessDataset {
     get(arg0: NDManager, arg1: number): Record;
     getByIndices(arg0: NDManager, arg1: number[]): Batch;
     getByRange(arg0: NDManager, arg1: number, arg2: number): Batch;
+    getData(arg0: NDManager): Batch[];
+    getData(arg0: NDManager, arg1: Sampler): Batch[];
     getData(arg0: NDManager, arg1: Sampler, arg2: ExecutorService): Batch[];
+    getData(arg0: NDManager, arg1: ExecutorService): Batch[];
     newSubDataset(arg0: number[], arg1: number, arg2: number): RandomAccessDataset;
     newSubDataset(arg0: number[]): RandomAccessDataset;
+    prepare(): void;
     prepare(arg0: Progress): void;
 }

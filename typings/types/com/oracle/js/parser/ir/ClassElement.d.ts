@@ -35,6 +35,8 @@ export class ClassElement extends PropertyNode {
     setKey(key: Expression): ClassElement;
     setSetter(set: FunctionNode): ClassElement;
     setValue(value: Expression): ClassElement;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
     // private toStringKey(sb: StringBuilder, printType: boolean): void;
 }

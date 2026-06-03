@@ -1,10 +1,14 @@
 import type { AbstractIntIterator } from '../../../../../it/unimi/dsi/fastutil/ints/AbstractIntIterator.d.ts'
-import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
+import type { IntConsumer } from '../../../../../it/unimi/dsi/fastutil/ints/IntConsumer.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 export abstract class IntIterators$AbstractIndexBasedIterator extends AbstractIntIterator {
     constructor(arg0: number, arg1: number)
     // private lastReturned: number;
     // private minPos: number;
     // private pos: number;
+    forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     get(arg0: number): number;
     getMaxPos(): number;

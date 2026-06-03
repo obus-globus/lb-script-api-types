@@ -46,8 +46,12 @@ export abstract class DelegatingSslContext extends SslContext {
     isClient(): boolean;
     newEngine(arg0: ByteBufAllocator): SSLEngine;
     newEngine(arg0: ByteBufAllocator, arg1: string, arg2: number): SSLEngine;
+    newHandler(arg0: ByteBufAllocator): SslHandler;
+    newHandler(arg0: ByteBufAllocator, arg1: Executor): SslHandler;
     newHandler(arg0: ByteBufAllocator, arg1: boolean): SslHandler;
     newHandler(arg0: ByteBufAllocator, arg1: boolean, arg2: Executor): SslHandler;
+    newHandler(arg0: ByteBufAllocator, arg1: string, arg2: number): SslHandler;
+    newHandler(arg0: ByteBufAllocator, arg1: string, arg2: number, arg3: Executor): SslHandler;
     newHandler(arg0: ByteBufAllocator, arg1: string, arg2: number, arg3: boolean): SslHandler;
     newHandler(arg0: ByteBufAllocator, arg1: string, arg2: number, arg3: boolean, arg4: Executor): SslHandler;
     sessionCacheSize(): number;

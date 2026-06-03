@@ -12,6 +12,7 @@ export class CleaningPathVisitor extends CountingPathVisitor {
     // private overrideReadOnly: boolean;
     // private skip: string[];
     // private accept(arg0: Path[]): boolean;
+    accept(arg0: Path[], arg1: BasicFileAttributes): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     preVisitDirectory(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;

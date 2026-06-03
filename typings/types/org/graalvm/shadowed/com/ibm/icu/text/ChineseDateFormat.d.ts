@@ -4,6 +4,7 @@ import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { DateFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat.d.ts'
 import type { DateFormat$Field } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat$Field.d.ts'
+import type { DateFormatSymbols } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormatSymbols.d.ts'
 import type { DisplayContext } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DisplayContext.d.ts'
 import type { SimpleDateFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/SimpleDateFormat.d.ts'
 import type { Calendar } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar.d.ts'
@@ -157,5 +158,7 @@ export class ChineseDateFormat extends SimpleDateFormat {
     constructor(pattern: string, locale: ULocale)
     patternCharToDateFormatField(ch: string): DateFormat$Field;
     subFormat(buf: StringBuffer, ch: string, count: number, beginOffset: number, fieldNum: number, capitalizationContext: DisplayContext, pos: FieldPosition, patternCharToOutput: string, cal: Calendar): void;
+    subFormat(ch: string, count: number, beginOffset: number, pos: FieldPosition, fmtData: DateFormatSymbols, cal: Calendar): string;
+    subFormat(ch: string, count: number, beginOffset: number, fieldNum: number, capitalizationContext: DisplayContext, pos: FieldPosition, patternCharToOutput: string, cal: Calendar): string;
     subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: (Object | null)[], cal: Calendar): number;
 }

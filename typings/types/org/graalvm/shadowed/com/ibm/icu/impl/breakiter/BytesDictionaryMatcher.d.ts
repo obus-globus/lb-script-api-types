@@ -5,6 +5,7 @@ export class BytesDictionaryMatcher extends DictionaryMatcher {
     // private characters: number[];
     // private transform: number;
     getType(): number;
+    matches(text: CharacterIterator, maxLength: number, lengths: number[], count: number[], limit: number): number;
     matches(text_: CharacterIterator, maxLength: number, lengths: number[], count_: number[], limit: number, values: number[]): number;
     // private transform(c: number): number;
 }

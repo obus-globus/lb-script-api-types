@@ -23,6 +23,7 @@ export class AixHardwareAbstractionLayer extends AbstractHardwareAbstractionLaye
     getDiskStores(): HWDiskStore[];
     getDisplays(): Display[];
     getGraphicsCards(): GraphicsCard[];
+    getNetworkIFs(): NetworkIF[];
     getNetworkIFs(arg0: boolean): NetworkIF[];
     getPowerSources(): PowerSource[];
     getSoundCards(): SoundCard[];

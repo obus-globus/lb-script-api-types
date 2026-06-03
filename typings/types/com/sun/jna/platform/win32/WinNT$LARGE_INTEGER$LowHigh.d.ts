@@ -23,4 +23,5 @@ export class WinNT$LARGE_INTEGER$LowHigh extends Structure {
     LowPart: WinDef$DWORD;
     longValue(): number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

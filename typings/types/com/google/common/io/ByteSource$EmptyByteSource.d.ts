@@ -1,3 +1,4 @@
+import type { ByteProcessor } from '../../../../com/google/common/io/ByteProcessor.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
 import type { ByteSource$ByteArrayByteSource } from '../../../../com/google/common/io/ByteSource$ByteArrayByteSource.d.ts'
 import type { CharSource } from '../../../../com/google/common/io/CharSource.d.ts'
@@ -13,5 +14,6 @@ export class ByteSource$EmptyByteSource extends ByteSource$ByteArrayByteSource {
     constructor()
     asCharSource(charset: Charset): CharSource;
     read(): number[];
+    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
     toString(): string;
 }

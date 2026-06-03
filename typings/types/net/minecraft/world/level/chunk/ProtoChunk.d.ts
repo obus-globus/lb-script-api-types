@@ -1,3 +1,4 @@
+import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -10,6 +11,7 @@ import type { LevelHeightAccessor } from '../../../../../net/minecraft/world/lev
 import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { CarvingMask } from '../../../../../net/minecraft/world/level/chunk/CarvingMask.d.ts'
 import type { ChunkAccess } from '../../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
@@ -50,6 +52,7 @@ export class ProtoChunk extends ChunkAccess {
     getBelowZeroRetrogen(): BelowZeroRetrogen;
     getBlockEntities(): Map<BlockPos, BlockEntity>;
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
     getBlockEntityNbts(): Map<BlockPos, CompoundTag>;
     getBlockState(pos: BlockPos): BlockState;
@@ -67,6 +70,7 @@ export class ProtoChunk extends ChunkAccess {
     removeBlockEntity(pos: BlockPos): void;
     setBelowZeroRetrogen(belowZeroRetrogen: BelowZeroRetrogen): void;
     setBlockEntity(blockEntity: BlockEntity): void;
+    setBlockState(pos: BlockPos, state: BlockState): BlockState;
     setBlockState(pos: BlockPos, state: BlockState, flags: number): BlockState;
     setCarvingMask(data: CarvingMask): void;
     setLightEngine(lightEngine: LevelLightEngine): void;

@@ -71,6 +71,7 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     getIterator(receiver: Object): Object;
     getIteratorNextElement(receiver: Object): Object;
     getLanguage(receiver: Object): Class<TruffleLanguage<Object>>;
+    getMembers(receiver: Object): Object;
     getMembers(receiver: Object, internal: boolean): Object;
     getMetaObject(receiver: Object): Object;
     getMetaParents(receiver: Object): Object;
@@ -152,6 +153,7 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     removeHashEntry(receiver: Object, key: Object): void;
     removeMember(receiver: Object, identifier: string): void;
     throwException(receiver: Object): RuntimeException;
+    toDisplayString(receiver: Object): Object;
     toDisplayString(receiver: Object, allowSideEffects: boolean): Object;
     toNative(receiver: Object): void;
     verifyIsSame(result: boolean, receiver: Object, other: Object, otherInterop: InteropLibrary): boolean;

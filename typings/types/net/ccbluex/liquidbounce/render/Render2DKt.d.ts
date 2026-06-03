@@ -1,7 +1,6 @@
 import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { Float2IntFunction } from '../../../../it/unimi/dsi/fastutil/floats/Float2IntFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { BoundingBox2f } from '../../../../net/ccbluex/liquidbounce/render/engine/type/BoundingBox2f.d.ts'
 import type { Color4b } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { VerticesSetupHandler } from '../../../../net/ccbluex/liquidbounce/utils/render/VerticesSetupHandler.d.ts'
@@ -51,6 +50,6 @@ export class Render2DKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:89}
      */
     static getBoundsXYWH(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, w: number, h: number): ScreenRectangle;
-    static withPush(scissorStack: GuiGraphicsExtractor$ScissorStack, rect: ScreenRectangle, block: Function1<Object, void>): void;
-    static withPush(matrix3x2fStack: Matrix3x2fStack, block: Function1<Object, void>): void;
+    static withPush(scissorStack: GuiGraphicsExtractor$ScissorStack, rect: ScreenRectangle, block: (param0: Object | null) => void): void;
+    static withPush(matrix3x2fStack: Matrix3x2fStack, block: (param0: Object | null) => void): void;
 }

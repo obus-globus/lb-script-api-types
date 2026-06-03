@@ -14,5 +14,6 @@ export class Const$PrimitiveType<A extends Object | number | string | boolean> e
     buildCodec(): Codec<A>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     toString(): string;
 }

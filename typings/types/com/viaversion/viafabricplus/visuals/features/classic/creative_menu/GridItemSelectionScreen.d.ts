@@ -25,6 +25,7 @@ export class GridItemSelectionScreen extends Screen {
     selectedItem: ItemStack;
     extractRenderState(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: number): void;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(arg0: KeyEvent): boolean;
     mouseClicked(arg0: MouseButtonEvent, arg1: boolean): boolean;
 }

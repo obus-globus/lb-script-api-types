@@ -9,4 +9,5 @@ export class VertexSorters$SortByFallback extends VertexSorters$AbstractSorter {
     // private function: (param0: Vector3f) => kotlin.Float;
     // private scratch: Vector3f;
     applyMetric(arg0: number, arg1: number, arg2: number): number;
+    applyMetric(arg0: Vector3f): number;
 }

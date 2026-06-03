@@ -21,10 +21,12 @@ export class CharSpliterators$SingletonSpliterator extends Object implements Cha
     estimateSize(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     getComparator(): (param0: string, param1: string) => kotlin.Int;
     getComparator(): (param0: string, param1: string) => kotlin.Int;
     skip(arg0: number): number;
     skip(arg0: number): number;
+    tryAdvance(arg0: (param0: string) => void): boolean;
     tryAdvance(arg0: (param0: string) => void): boolean;
     tryAdvance(arg0: (param0: string) => void): boolean;
     trySplit(): CharSpliterator;

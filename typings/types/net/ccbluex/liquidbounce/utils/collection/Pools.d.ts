@@ -1,7 +1,6 @@
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pool } from '../../../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { Matrix3x2f } from '../../../../../org/joml/Matrix3x2f.d.ts'
@@ -26,6 +25,6 @@ export class Pools extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Pools.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Pools.kt:53}
      */
-    buildStringPooled(builderAction: Function1<StringBuilder, void>): string;
-    buildStringPooled(capacity: number, builderAction: Function1<StringBuilder, void>): string;
+    buildStringPooled(builderAction: (param0: StringBuilder) => void): string;
+    buildStringPooled(capacity: number, builderAction: (param0: StringBuilder) => void): string;
 }

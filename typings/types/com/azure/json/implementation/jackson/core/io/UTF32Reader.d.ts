@@ -1,6 +1,7 @@
 import type { IOContext } from '../../../../../../../com/azure/json/implementation/jackson/core/io/IOContext.d.ts'
 import type { InputStream } from '../../../../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../../../../java/io/Reader.d.ts'
+import type { CharBuffer } from '../../../../../../../java/nio/CharBuffer.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 export class UTF32Reader extends Reader {
     static nullReader(): Reader;
@@ -21,6 +22,8 @@ export class UTF32Reader extends Reader {
     // private freeBuffers(): void;
     // private loadMore(arg0: number): boolean;
     read(): number;
+    read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
     // private reportBounds(arg0: string[], arg1: number, arg2: number): void;
     // private reportInvalid(arg0: number, arg1: number, arg2: string): void;

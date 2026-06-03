@@ -28,6 +28,7 @@ export class RealmsTermsScreen extends RealmsScreen {
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
 }

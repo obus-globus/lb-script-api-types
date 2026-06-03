@@ -106,8 +106,11 @@ export class HebrewCalendar extends Calendar {
     handleGetYearLength(eyear: number): number;
     inTemporalLeapYear(): boolean;
     internalGetMonth(): number;
+    internalGetMonth(defaultValue: number): number;
+    roll(field: number, up: boolean): void;
     roll(field: number, amount: number): void;
     setTemporalMonthCode(temporalMonth: string): void;
     validateField(field: number): void;
+    validateField(field: number, min: number, max: number): void;
     // private yearType(year: number): number;
 }

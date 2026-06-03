@@ -20,6 +20,11 @@ export class SplittableRandom$AbstractSplittableGeneratorProxy extends RandomSup
     static longs(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number, paramarg3: number): LongStream;
     private constructor(null_: SplittableRandom$AbstractSplittableGeneratorProxy)
     nextInt(): number;
+    nextInt(arg0: number): number;
+    nextInt(arg0: number, arg1: number): number;
     nextLong(): number;
+    nextLong(arg0: number): number;
+    nextLong(arg0: number, arg1: number): number;
+    split(): RandomGenerator$SplittableGenerator;
     split(arg0: RandomGenerator$SplittableGenerator): SplittableRandom;
 }

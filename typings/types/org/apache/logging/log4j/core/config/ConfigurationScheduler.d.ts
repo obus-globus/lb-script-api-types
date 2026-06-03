@@ -1,6 +1,7 @@
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Date } from '../../../../../../java/util/Date.d.ts'
 import type { Callable } from '../../../../../../java/util/concurrent/Callable.d.ts'
+import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { ScheduledExecutorService } from '../../../../../../java/util/concurrent/ScheduledExecutorService.d.ts'
 import type { ScheduledFuture } from '../../../../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -28,6 +29,8 @@ export class ConfigurationScheduler extends AbstractLifeCycle {
     scheduleWithCron(cronExpression: CronExpression, startDate: Date, command: () => void): CronScheduledFuture<Object>;
     scheduleWithFixedDelay(command: () => void, initialDelay: number, delay: number, unit: TimeUnit): ScheduledFuture<Object>;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
     toString(): string;
 }

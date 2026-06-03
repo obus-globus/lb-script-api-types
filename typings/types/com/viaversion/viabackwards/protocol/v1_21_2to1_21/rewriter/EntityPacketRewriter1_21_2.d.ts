@@ -18,6 +18,7 @@ export class EntityPacketRewriter1_21_2 extends EntityRewriter<ClientboundPacket
     // private replaceColor(arg0: Map$Entry<string, Tag>[], arg1: string): void;
     // private sendSneakingPlayerCommand(arg0: PacketWrapper, arg1: boolean): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private updateParticleFormat(arg0: Map$Entry<string, Tag>[], arg1: string): void;
     // private writePackedRotation(arg0: PacketWrapper, arg1: number, arg2: number): void;
 }

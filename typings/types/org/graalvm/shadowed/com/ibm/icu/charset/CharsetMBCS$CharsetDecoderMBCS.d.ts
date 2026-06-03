@@ -11,6 +11,7 @@ export class CharsetMBCS$CharsetDecoderMBCS extends CharsetDecoderICU {
     // private cnvMBCSSingleToUnicodeWithOffsets(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     cnvMBCSToUnicodeWithOffsets(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private continueMatchToU(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, srcIndex: number, flush: boolean): CoderResult;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private getFallback(mbcsTable: CharsetMBCS$UConverterMBCSTable, offset: number): number;
     // private hasValidTrailBytes(stateTable: number[][], state: number): boolean;

@@ -19,6 +19,7 @@ export abstract class ContainerObjectSelectionList<E extends ContainerObjectSele
     entriesCanBeSelected(): boolean;
     narrationPriority(): NarratableEntry$NarrationPriority;
     nextFocusPath(navigationEvent: FocusNavigationEvent): ComponentPath;
+    setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;
     updateWidgetNarration(output: NarrationElementOutput): void;
 }

@@ -33,7 +33,10 @@ export abstract class EntityRewriterBase<C extends ClientboundPacketType, T exte
     handleEntityData(arg0: number, arg1: EntityData[], arg2: UserConnection): void;
     hasData(arg0: EntityType): boolean;
     mapEntityTypeWithData(arg0: EntityType, arg1: EntityType): EntityReplacement;
+    registerEntityDataTypeHandler(arg0: EntityDataType, arg1: EntityDataType, arg2: EntityDataType): void;
+    registerEntityDataTypeHandler(arg0: EntityDataType, arg1: EntityDataType, arg2: EntityDataType, arg3: EntityDataType, arg4: EntityDataType): void;
     registerEntityDataTypeHandler(arg0: EntityDataType, arg1: EntityDataType, arg2: EntityDataType, arg3: EntityDataType, arg4: EntityDataType, arg5: EntityDataType): void;
+    registerEntityDataTypeHandler(arg0: EntityDataType, arg1: EntityDataType, arg2: EntityDataType, arg3: EntityDataType, arg4: EntityDataType, arg5: EntityDataType, arg6: EntityDataType): void;
     registerEntityDataTypeHandler1_20_3(arg0: EntityDataType, arg1: EntityDataType, arg2: EntityDataType, arg3: EntityDataType, arg4: EntityDataType, arg5: EntityDataType, arg6: EntityDataType): void;
     removeData(arg0: number, arg1: EntityData[]): void;
     storedEntityData(arg0: EntityDataHandlerEvent): StoredEntityData;

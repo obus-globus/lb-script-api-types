@@ -22,5 +22,7 @@ export class AccessNode extends BaseNode {
     isPrivate(): boolean;
     // private setBase(base: Expression): AccessNode;
     setIsSuper(): AccessNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

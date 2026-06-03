@@ -6,6 +6,7 @@ import type { StreamReadCapability } from '../../../../../../../com/azure/json/i
 import type { ParserBase } from '../../../../../../../com/azure/json/implementation/jackson/core/base/ParserBase.d.ts'
 import type { IOContext } from '../../../../../../../com/azure/json/implementation/jackson/core/io/IOContext.d.ts'
 import type { ByteQuadsCanonicalizer } from '../../../../../../../com/azure/json/implementation/jackson/core/sym/ByteQuadsCanonicalizer.d.ts'
+import type { ByteArrayBuilder } from '../../../../../../../com/azure/json/implementation/jackson/core/util/ByteArrayBuilder.d.ts'
 import type { JacksonFeatureSet } from '../../../../../../../com/azure/json/implementation/jackson/core/util/JacksonFeatureSet.d.ts'
 import type { InputStream } from '../../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../../java/io/OutputStream.d.ts'
@@ -31,6 +32,7 @@ export class UTF8StreamJsonParser extends ParserBase {
     // private _closeObjectScope(): void;
     // private _closeScope(arg0: number): JsonToken;
     _decodeBase64(arg0: Base64Variant): number[];
+    _decodeBase64(arg0: string, arg1: ByteArrayBuilder, arg2: Base64Variant): void;
     _decodeCharForError(arg0: number): number;
     _decodeEscaped(): string;
     // private _decodeUtf8_2(arg0: number): number;
@@ -94,6 +96,7 @@ export class UTF8StreamJsonParser extends ParserBase {
     // private findName(arg0: number, arg1: number, arg2: number, arg3: number): string;
     // private findName(arg0: number[], arg1: number, arg2: number, arg3: number): string;
     finishToken(): void;
+    getBinaryValue(): number[];
     getBinaryValue(arg0: Base64Variant): number[];
     getCodec(): ObjectCodec;
     getCurrentLocation(): JsonLocation;

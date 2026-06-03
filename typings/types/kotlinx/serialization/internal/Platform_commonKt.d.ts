@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
 import type { KTypeProjection } from '../../../kotlin/reflect/KTypeProjection.d.ts'
@@ -13,7 +12,7 @@ export class Platform_commonKt extends Object {
     static cast(paramarg0: KSerializer<Object>): KSerializer<Object>;
     static cast(paramarg0: SerializationStrategy<Object>): SerializationStrategy<Object>;
     static compactArray(paramarg0: (Object | null)[]): (Object | null)[];
-    static elementsHashCodeBy(paramarg0: (Object | null)[], paramarg1: Function1<Object, Object>): number;
+    static elementsHashCodeBy(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => Object | null): number;
     static kclass(paramarg0: KType): KClass<Object>;
     static notRegisteredMessage(paramarg0: string): string;
     static notRegisteredMessage(paramarg0: KClass<Object>): string;

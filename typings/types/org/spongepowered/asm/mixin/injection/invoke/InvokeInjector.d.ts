@@ -10,6 +10,7 @@ export abstract class InvokeInjector extends Injector {
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo, arg1: string)
     checkTarget(arg0: AbstractInsnNode[]): void;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     injectAtInvoke(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     sanityCheck(arg0: AbstractInsnNode[], arg1: InjectionPoint[]): void;

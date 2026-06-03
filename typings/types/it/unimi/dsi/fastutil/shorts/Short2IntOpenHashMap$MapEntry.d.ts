@@ -32,6 +32,8 @@ export class Short2IntOpenHashMap$MapEntry extends Object implements Short2IntMa
     left(arg0: number): ShortIntPair;
     left(arg0: number): ShortIntPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortIntPair;
     right(arg0: number): ShortIntPair;
     right(): number;
     right(arg0: number): ShortIntPair;

@@ -1,9 +1,8 @@
 import type { Serializable } from '../java/io/Serializable.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-import type { Function0 } from '../kotlin/jvm/functions/Function0.d.ts'
 import type { Lazy } from '../kotlin/Lazy.d.ts'
 export class SynchronizedLazyImpl<T extends Object | number | string | boolean> extends Object implements Serializable, Lazy<T> {
-    constructor(initializer: Function0<T>, lock: Object | null)
+    constructor(initializer: () => T, lock: Object | null)
     // private _value: Object | null;
     // private initializer: () => T;
     // private lock: Object;

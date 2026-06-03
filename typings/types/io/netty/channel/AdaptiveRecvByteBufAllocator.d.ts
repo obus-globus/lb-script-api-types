@@ -11,5 +11,6 @@ export class AdaptiveRecvByteBufAllocator extends DefaultMaxMessagesRecvByteBufA
     // private maximum: number;
     // private minimum: number;
     newHandle(): RecvByteBufAllocator$Handle;
+    respectMaybeMoreData(): boolean;
     respectMaybeMoreData(arg0: boolean): AdaptiveRecvByteBufAllocator;
 }

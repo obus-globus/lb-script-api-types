@@ -7,5 +7,7 @@ export class DemuxOutputStream extends OutputStream {
     bindStream(arg0: OutputStream): OutputStream;
     close(): void;
     flush(): void;
+    write(arg0: number[]): void;
+    write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

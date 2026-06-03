@@ -5,6 +5,7 @@ import type { RegexAST } from '../../../../../../../com/oracle/truffle/regex/tre
 import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
 import type { Sequence } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Sequence.d.ts'
 import type { RegexASTVisitorIterable } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/visitors/RegexASTVisitorIterable.d.ts'
+import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class Group extends QuantifiableTerm implements RegexASTVisitorIterable {
     static groupNumberToBoundaryIndexEnd(paramgroupNumber: number): number;
@@ -27,6 +28,7 @@ export class Group extends QuantifiableTerm implements RegexASTVisitorIterable {
     clearGroupNumber(): void;
     copy(ast: RegexAST): Group;
     copyRecursive(ast: RegexAST, compilationBuffer: CompilationBuffer): Group;
+    equalsSemantic(obj: RegexASTNode): boolean;
     equalsSemantic(obj: RegexASTNode, ignoreQuantifier: boolean): boolean;
     getAlternatives(): Sequence[];
     getBoundaryIndexEnd(): number;
@@ -65,6 +67,7 @@ export class Group extends QuantifiableTerm implements RegexASTVisitorIterable {
     setLoop(loop: boolean): void;
     size(): number;
     toJson(): JsonValue;
+    toJson(typeName: string): JsonObject;
     toString(): string;
     visitorGetNext(reverse: boolean): RegexASTNode;
     visitorHasNext(): boolean;

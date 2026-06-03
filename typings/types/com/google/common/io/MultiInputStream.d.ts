@@ -11,6 +11,7 @@ export class MultiInputStream extends InputStream {
     close(): void;
     markSupported(): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(b: number[], off: number, len: number): number;
     skip(n: number): number;
 }

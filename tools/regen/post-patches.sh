@@ -569,9 +569,11 @@ for method, refined in SIGS:
     indented = "    " + refined
     if indented in src:
         continue  # idempotent
-    # Match: `    <method>(value: Value): <return>;` — generated form.
+    # Match: `    <method>(value: Value): <return>;` — generated form. The
+    # param type may be aliased (`Value_2`) by the W12b import-collision fix
+    # when the file imports two `Value` types, so tolerate a `_N` suffix.
     raw_pat = re.compile(
-        rf"^[ \t]*{re.escape(method)}\(value: Value\):[^\n]+;[ \t]*$",
+        rf"^[ \t]*{re.escape(method)}\(value: Value(?:_\d+)?\):[^\n]+;[ \t]*$",
         re.MULTILINE,
     )
     new, n = raw_pat.subn(indented, src, count=1)
@@ -611,17 +613,28 @@ from pathlib import Path
 path = Path(sys.argv[1])
 src = path.read_text()
 
-raw = "    curve(name: string, block: Function1<CurveValue$Builder, void>): CurveValue;"
 refined = "    curve(name: string, block: (this: CurveValue$Builder) => void): CurveValue;"
+
+# Match the generator's curve(block) param in either form: the nominal
+# `Function1<CurveValue$Builder, void>` or — since the W5a function-type-arrow
+# change — the arrow `(param0: CurveValue$Builder) => void`. Rewrite the block
+# to a receiver-typed lambda so `this` is `CurveValue$Builder` inside.
+raw_pat = re.compile(
+    r"^[ \t]*curve\(name: string, block: "
+    r"(?:Function1<CurveValue\$Builder, void>"
+    r"|\(param0: CurveValue\$Builder\) => void)\): CurveValue;[ \t]*$",
+    re.MULTILINE,
+)
 
 if refined in src:
     print(f"post-patches: T-7 no-op on {path.name} (already refined)")
-elif raw in src:
-    src = src.replace(raw, refined, 1)
-    path.write_text(src)
-    print(f"post-patches: T-7 refined ValueGroup.curve in {path.name}")
 else:
-    print(f"post-patches: T-7 skip — raw curve signature not found in {path.name}")
+    src, n = raw_pat.subn(refined, src, count=1)
+    if n:
+        path.write_text(src)
+        print(f"post-patches: T-7 refined ValueGroup.curve in {path.name}")
+    else:
+        print(f"post-patches: T-7 skip — raw curve signature not found in {path.name}")
 PY
 fi
 

@@ -9,8 +9,8 @@ import type { BufferedSource } from '../okio/BufferedSource.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 export class -DeprecatedOkio extends Object {
-//     static INSTANCE: -DeprecatedOkio;
- // ; invalid because of -    appendingSink(file: File): Sink;
+// (invalid TS: name contains '-')     static INSTANCE: -DeprecatedOkio;
+    appendingSink(file: File): Sink;
     blackhole(): Sink;
     buffer(sink: Sink): BufferedSink;
     buffer(source: Source): BufferedSource;

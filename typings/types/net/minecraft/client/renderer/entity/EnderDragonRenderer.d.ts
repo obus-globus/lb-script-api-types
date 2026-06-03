@@ -15,6 +15,7 @@ export class EnderDragonRenderer extends EntityRenderer<EnderDragon, EnderDragon
     // private model: EnderDragonModel;
     affectedByCulling(entity: EnderDragon): boolean;
     createRenderState(): EnderDragonRenderState;
+    createRenderState(entity: EnderDragon, partialTicks: number): EnderDragonRenderState;
     extractRenderState(entity: EnderDragon, state: EnderDragonRenderState, partialTicks: number): void;
     submit(state: EnderDragonRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

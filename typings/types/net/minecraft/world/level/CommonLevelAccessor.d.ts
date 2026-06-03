@@ -21,6 +21,7 @@ import type { ChunkAccess } from '../../../../net/minecraft/world/level/chunk/Ch
 import type { ChunkStatus } from '../../../../net/minecraft/world/level/chunk/status/ChunkStatus.d.ts'
 import type { Heightmap$Types } from '../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
+import type { CollisionContext } from '../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, LevelSimulatedRW{
     canSeeSkyFromBelowWater(pos: BlockPos): boolean;
@@ -62,7 +63,9 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     hasNearbyAlivePlayer(x: number, y: number, z: number, range: number): boolean;
     holderLookup(key: ResourceKey<T[]>): HolderLookup<T>;
     isEmptyBlock(pos: BlockPos): boolean;
+    isUnobstructed(ignore: Entity): boolean;
     isUnobstructed(source: Entity, shape: VoxelShape): boolean;
+    isUnobstructed(state: BlockState, pos: BlockPos, context: CollisionContext): boolean;
     isUnobstructed(source: Entity, shape: VoxelShape): boolean;
     isWaterAt(pos: BlockPos): boolean;
     lithium$getLoadedChunk(arg0: number, arg1: number): ChunkAccess;

@@ -52,8 +52,11 @@ export abstract class ASTPrinterBase extends ASTListenerVisitor<void> {
     superNodeTypeResult(): void;
     unindent(): void;
     visit(arg0: ASTNode): void;
+    visit(arg0: void, arg1: ASTNode): void;
     visitCommaSpaced(arg0: ASTNode[]): void;
+    visitData(arg0: void, arg1: Object): void;
     visitData(arg0: Object): void;
     visitSafe(arg0: ASTNode): boolean;
+    visitSafe(arg0: void, arg1: ASTNode): void;
     visitWithSeparator(arg0: ASTNode[], arg1: () => void): void;
 }

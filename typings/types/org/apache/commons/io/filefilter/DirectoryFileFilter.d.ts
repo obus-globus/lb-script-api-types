@@ -11,5 +11,6 @@ export class DirectoryFileFilter extends AbstractFileFilter implements Serializa
     static INSTANCE: IOFileFilter;
     constructor()
     accept(arg0: File): boolean;
+    accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
 }

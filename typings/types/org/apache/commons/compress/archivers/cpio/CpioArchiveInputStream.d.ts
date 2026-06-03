@@ -60,6 +60,8 @@ export class CpioArchiveInputStream extends ArchiveInputStream<CpioArchiveEntry>
     // private ensureOpen(): void;
     getNextCPIOEntry(): CpioArchiveEntry;
     getNextEntry(): CpioArchiveEntry;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readAsciiLong(arg0: number, arg1: number): number;
     // private readBinaryLong(arg0: number, arg1: boolean): number;

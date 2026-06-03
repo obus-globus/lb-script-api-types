@@ -8,6 +8,7 @@ export class ListOperation$Insert extends Record implements ListOperation {
     static UNLIMITED_CODEC: MapCodec<ListOperation>;
     static codec(parammaxSize: number): MapCodec<ListOperation>;
     // private offset: number;
+    apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
     apply(original: T[], replacement: T[]): T[];
     equals(o: Object | null): boolean;

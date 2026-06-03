@@ -9,6 +9,7 @@ export class UnlimitedIoScheduler extends CoroutineDispatcher {
     static Key: CoroutineDispatcher$Key;
     dispatch(context: CoroutineContext, block: () => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     toString(): string;
 }

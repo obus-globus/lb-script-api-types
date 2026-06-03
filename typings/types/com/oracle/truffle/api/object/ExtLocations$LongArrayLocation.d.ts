@@ -13,6 +13,8 @@ export class ExtLocations$LongArrayLocation extends ExtLocations$AbstractPrimiti
     canStore(value: Object): boolean;
     clear(store: DynamicObject): void;
     equals(obj: Object | null): boolean;
+    get(store: DynamicObject): Object;
+    get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     getBytes(): number;
     getFinalLong(store: DynamicObject, condition: boolean): number;
@@ -24,7 +26,10 @@ export class ExtLocations$LongArrayLocation extends ExtLocations$AbstractPrimiti
     isImplicitCastIntToLong(): boolean;
     longValue(value: Object): number;
     primitiveArrayCount(): number;
+    set(store: DynamicObject, value: Object, shape: Shape): void;
+    set(store: DynamicObject, value: Object, oldShape: Shape, newShape: Shape): void;
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
+    setLong(store: DynamicObject, value: number, shape: Shape): void;
     setLong(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
     setLong(store: DynamicObject, value: number, shape: Shape): void;
     setLongInternal(store: DynamicObject, value: number, guard: boolean): void;

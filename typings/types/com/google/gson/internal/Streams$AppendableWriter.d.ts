@@ -7,11 +7,14 @@ export class Streams$AppendableWriter extends Writer {
     constructor(arg0: Appendable)
     // private appendable: Appendable;
     // private currentWrite: Streams$AppendableWriter$CurrentWrite;
+    append(arg0: string): Writer;
     append(arg0: CharSequence): Writer;
     append(arg0: CharSequence, arg1: number, arg2: number): Writer;
     close(): void;
     flush(): void;
+    write(arg0: string[]): void;
     write(arg0: string[], arg1: number, arg2: number): void;
     write(arg0: number): void;
+    write(arg0: string): void;
     write(arg0: string, arg1: number, arg2: number): void;
 }

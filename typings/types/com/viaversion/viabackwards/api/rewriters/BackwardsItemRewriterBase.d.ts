@@ -16,6 +16,7 @@ export abstract class BackwardsItemRewriterBase<C extends ClientboundPacketType,
     handleItemToServer(arg0: UserConnection, arg1: Item): Item;
     hasBackupTag(arg0: Map$Entry<string, Tag>[], arg1: string): boolean;
     nbtTagName(): string;
+    nbtTagName(arg0: string): string;
     restoreDisplayTag(arg0: Item): void;
     restoreListTag(arg0: Map$Entry<string, Tag>[], arg1: string): void;
     restoreStringTag(arg0: Map$Entry<string, Tag>[], arg1: string): void;

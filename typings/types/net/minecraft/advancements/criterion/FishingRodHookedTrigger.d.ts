@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { FishingRodHookedTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/FishingRodHookedTrigger$TriggerInstance.d.ts'
 import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/criterion/SimpleCriterionTrigger.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
@@ -7,5 +8,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class FishingRodHookedTrigger extends SimpleCriterionTrigger<FishingRodHookedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<FishingRodHookedTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: FishingRodHookedTrigger$TriggerInstance) => kotlin.Boolean): void;
     trigger(player: ServerPlayer, rod: ItemStack, hook: FishingHook, items: E[]): void;
 }

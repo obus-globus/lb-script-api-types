@@ -14,6 +14,7 @@ import type { ValueClassRepresentation } from '../../../../../../../kotlin/refle
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { AbstractClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/AbstractClassDescriptor.d.ts'
 import type { ModuleAwareClassDescriptor$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/ModuleAwareClassDescriptor$Companion.d.ts'
+import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { MemberScope$Empty } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope$Empty.d.ts'
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
@@ -43,6 +44,7 @@ export class FunctionClassDescriptor extends AbstractClassDescriptor {
     getSource(): SourceElement;
     getStaticScope(): MemberScope$Empty;
     getTypeConstructor(): TypeConstructor;
+    getUnsubstitutedMemberScope(): MemberScope;
     getUnsubstitutedMemberScope(arg0: KotlinTypeRefiner): FunctionClassScope;
     getUnsubstitutedPrimaryConstructor(): void;
     getValueClassRepresentation(): ValueClassRepresentation<SimpleType>;

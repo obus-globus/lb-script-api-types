@@ -10,5 +10,6 @@ export class RandomAccessDataset$SubDataset extends RandomAccessDataset {
     // private to: number;
     availableSize(): number;
     get(arg0: NDManager, arg1: number): Record;
+    prepare(): void;
     prepare(arg0: Progress): void;
 }

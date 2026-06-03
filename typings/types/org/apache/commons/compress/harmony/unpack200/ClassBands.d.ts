@@ -87,4 +87,5 @@ export class ClassBands extends BandSet {
     // private parseMethodMetadataBands(arg0: InputStream, arg1: number[]): number;
     read(arg0: InputStream): void;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

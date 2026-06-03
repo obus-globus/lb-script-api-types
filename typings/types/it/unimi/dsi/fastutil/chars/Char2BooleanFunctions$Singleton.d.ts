@@ -8,8 +8,11 @@ export class Char2BooleanFunctions$Singleton extends AbstractChar2BooleanFunctio
     // private value: boolean;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
+    get(arg0: Object): boolean;
     get(arg0: string): boolean;
+    getOrDefault(arg0: Object, arg1: boolean): boolean;
     getOrDefault(arg0: string, arg1: boolean): boolean;
     size(): number;
 }

@@ -16,6 +16,7 @@ export class Constructor<T extends Object | number | string | boolean> extends E
     constructor(arg0: Class<T>, arg1: Class<Object>[], arg2: Class<Object>[], arg3: number, arg4: number, arg5: string, arg6: number[], arg7: number[])
     // private acquireConstructorAccessor(): ConstructorAccessor;
     checkCanSetAccessible(arg0: Class<Object>): void;
+    checkCanSetAccessible(arg0: Class<Object>, arg1: Class<Object>): void;
     copy(): Constructor<T>;
     equals(arg0: Object | null): boolean;
     getAnnotatedReceiverType(): AnnotatedType;

@@ -38,6 +38,7 @@ export class PresetFlatWorldScreen extends Screen {
     // private shareText: Component;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     mouseScrolled(x: number, y: number, scrollX: number, scrollY: number): boolean;
     onClose(): void;
     resize(width: number, height: number): void;

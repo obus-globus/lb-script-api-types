@@ -23,6 +23,7 @@ export class AsyncIteratorCloseNode$AsyncIteratorCloseRootNode extends JavaScrip
     // private valueNode: JavaScriptNode;
     execute(frame: VirtualFrame): Object;
     getAsyncStackTraceInfo(handlerFunction: JSFunctionObject): AsyncHandlerRootNode$AsyncStackTraceInfo;
+    getAsyncStackTraceInfo(handlerFunction: JSFunctionObject, argument: Object): AsyncHandlerRootNode$AsyncStackTraceInfo;
     getAsyncStackTraceInfo(handlerFunction: JSFunctionObject): AsyncHandlerRootNode$AsyncStackTraceInfo;
     getAsyncStackTraceInfo(handlerFunction: JSFunctionObject, argument: Object): AsyncHandlerRootNode$AsyncStackTraceInfo;
 }

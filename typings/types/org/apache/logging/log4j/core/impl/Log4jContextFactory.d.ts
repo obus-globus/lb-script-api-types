@@ -10,7 +10,7 @@ import type { ConfigurationSource } from '../../../../../../org/apache/logging/l
 import type { ContextSelector } from '../../../../../../org/apache/logging/log4j/core/selector/ContextSelector.d.ts'
 import type { Cancellable } from '../../../../../../org/apache/logging/log4j/core/util/Cancellable.d.ts'
 import type { ShutdownCallbackRegistry } from '../../../../../../org/apache/logging/log4j/core/util/ShutdownCallbackRegistry.d.ts'
-import type { LoggerContext } from '../../../../../../org/apache/logging/log4j/spi/LoggerContext.d.ts'
+import type { LoggerContext as LoggerContext_2 } from '../../../../../../org/apache/logging/log4j/spi/LoggerContext.d.ts'
 import type { LoggerContextFactory } from '../../../../../../org/apache/logging/log4j/spi/LoggerContextFactory.d.ts'
 export class Log4jContextFactory extends Object implements ShutdownCallbackRegistry, LoggerContextFactory {
     static SHUTDOWN_CALLBACK_REGISTRY: string;
@@ -37,7 +37,7 @@ export class Log4jContextFactory extends Object implements ShutdownCallbackRegis
     isClassLoaderDependent(): boolean;
     isClassLoaderDependent(): boolean;
     isShutdownHookEnabled(): boolean;
-    removeContext(context: LoggerContext): void;
+    removeContext(context: LoggerContext_2): void;
     shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
     shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
 }

@@ -11,6 +11,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter25w14craftmine extends NBTComponentRewriter<ClientboundPacket25w14craftmine> implements TranslatableRewriter {
     constructor(arg0: Protocol25w14craftmineTo1_21_5)
     // private mappingData: MappingData25w14craftmine;
+    handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
     handleTranslate(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: StringTag): void;
     handleTranslate(arg0: JsonObject, arg1: string): void;

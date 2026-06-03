@@ -5,7 +5,7 @@ import type { Level } from '../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Logger } from '../../../../org/apache/logging/log4j/Logger.d.ts'
 import type { Marker } from '../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { Log4jMarkerFactory } from '../../../../org/apache/logging/slf4j/Log4jMarkerFactory.d.ts'
-import type { Marker } from '../../../../org/slf4j/Marker.d.ts'
+import type { Marker as Marker_2 } from '../../../../org/slf4j/Marker.d.ts'
 import type { CallerBoundaryAware } from '../../../../org/slf4j/spi/CallerBoundaryAware.d.ts'
 import type { LoggingEventBuilder } from '../../../../org/slf4j/spi/LoggingEventBuilder.d.ts'
 export class Log4jEventBuilder extends Object implements CallerBoundaryAware, LoggingEventBuilder {
@@ -23,7 +23,7 @@ export class Log4jEventBuilder extends Object implements CallerBoundaryAware, Lo
     addArgument(p: Object): LoggingEventBuilder;
     addKeyValue(key: string, valueSupplier: () => Object): LoggingEventBuilder;
     addKeyValue(key: string, value: Object): LoggingEventBuilder;
-    addMarker(marker: Marker): LoggingEventBuilder;
+    addMarker(marker: Marker_2): LoggingEventBuilder;
     log(): void;
     log(messageSupplier: () => string): void;
     log(message: string): void;

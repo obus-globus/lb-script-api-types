@@ -18,6 +18,7 @@ export class RecursiveMetadataContentHandlerProxy extends RecursiveParserWrapper
     // private output: DataOutputStream;
     // private resource: number;
     // private doneSending(): void;
+    endDocument(): void;
     endDocument(arg0: ContentHandler, arg1: Metadata): void;
     endEmbeddedDocument(arg0: ContentHandler, arg1: Metadata): void;
     init(arg0: DataInputStream, arg1: DataOutputStream): void;

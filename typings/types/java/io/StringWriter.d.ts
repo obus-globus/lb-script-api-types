@@ -13,6 +13,7 @@ export class StringWriter extends Writer {
     flush(): void;
     getBuffer(): StringBuffer;
     toString(): string;
+    write(arg0: string[]): void;
     write(arg0: string[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     write(arg0: string): void;

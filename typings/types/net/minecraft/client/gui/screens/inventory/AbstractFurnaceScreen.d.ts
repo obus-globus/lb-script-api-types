@@ -27,4 +27,5 @@ export abstract class AbstractFurnaceScreen<T extends AbstractFurnaceMenu> exten
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getRecipeBookButtonPosition(): ScreenPosition;
     init(): void;
+    init(width: number, height: number): void;
 }

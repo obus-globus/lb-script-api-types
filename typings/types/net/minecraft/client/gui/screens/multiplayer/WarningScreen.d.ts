@@ -31,5 +31,6 @@ export abstract class WarningScreen extends Screen {
     addFooterButtons(): Layout;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
 }

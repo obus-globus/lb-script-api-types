@@ -5,13 +5,13 @@ import type { FullMappings } from '../../../../com/viaversion/viaversion/api/dat
 import type { RegistryEntry } from '../../../../com/viaversion/viaversion/api/minecraft/RegistryEntry.d.ts'
 import type { Protocol } from '../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
-import type { RegistryDataRewriter } from '../../../../com/viaversion/viaversion/api/rewriter/RegistryDataRewriter.d.ts'
+import type { RegistryDataRewriter as RegistryDataRewriter_2 } from '../../../../com/viaversion/viaversion/api/rewriter/RegistryDataRewriter.d.ts'
 import type { KeyMappings } from '../../../../com/viaversion/viaversion/util/KeyMappings.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class RegistryDataRewriter extends Object implements RegistryDataRewriter {
+export class RegistryDataRewriter extends Object implements RegistryDataRewriter_2 {
     constructor(arg0: Protocol<Object, Object, Object, Object>)
     // private enchantmentEffectHandlers: { [key: string]: (param0: Map$Entry<string, Tag>[]) => void };
     // private protocol: Protocol<Object, Object, Object, Object>;

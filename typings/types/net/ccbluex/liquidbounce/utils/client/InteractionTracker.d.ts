@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { PacketEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
@@ -17,5 +16,5 @@ export class InteractionTracker extends Object implements EventListener {
     children(): EventListener[];
     parent(): EventListener | null;
     unregister(): void;
-    untracked(block: Function0<void>): void;
+    untracked(block: () => void): void;
 }

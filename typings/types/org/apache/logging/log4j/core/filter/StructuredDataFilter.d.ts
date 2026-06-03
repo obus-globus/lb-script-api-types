@@ -8,8 +8,10 @@ import type { Filter$Result } from '../../../../../../org/apache/logging/log4j/c
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/core/Logger.d.ts'
 import type { MapFilter } from '../../../../../../org/apache/logging/log4j/core/filter/MapFilter.d.ts'
+import type { MapMessage } from '../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 import type { Message } from '../../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { StructuredDataMessage } from '../../../../../../org/apache/logging/log4j/message/StructuredDataMessage.d.ts'
+import type { ReadOnlyStringMap } from '../../../../../../org/apache/logging/log4j/util/ReadOnlyStringMap.d.ts'
 export class StructuredDataFilter extends MapFilter {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
@@ -19,9 +21,25 @@ export class StructuredDataFilter extends MapFilter {
     static createFilter(parampairs: (Object | null)[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): StructuredDataFilter;
     private constructor(map: { [key: string]: string[] }, oper: boolean, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private appendOrNull(value: string, sb: StringBuilder): StringBuilder;
+    filter(data: { [key: string]: string }): boolean;
     filter(event: LogEvent): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, params: Object[]): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Message, t: Throwable): Filter$Result;
+    filter(mapMessage: MapMessage<Object, Object>): boolean;
     filter(message: StructuredDataMessage): Filter$Result;
+    filter(data: ReadOnlyStringMap): boolean;
     // private getStringBuilder(): StringBuilder;
     // private getValue(data: StructuredDataMessage, key: string): StringBuilder;
     // private listContainsValue(candidates: string[], toMatch: StringBuilder): boolean;

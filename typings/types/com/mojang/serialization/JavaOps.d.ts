@@ -72,6 +72,7 @@ export class JavaOps extends Object implements DynamicOps<Object> {
     getMapValues(arg0: Object): DataResult<Stream<Pair<Object, Object>>>;
     getNumberValue<T extends Object | number | string | boolean>(arg0: T, arg1: Number): Number;
     getNumberValue(arg0: Object): DataResult<Number>;
+    getNumberValue(arg0: Object, arg1: Number): Number;
     getStream(arg0: Object): DataResult<Stream<Object>>;
     getStringValue(arg0: Object): DataResult<string>;
     listBuilder(): ListBuilder<T>;

@@ -7,5 +7,6 @@ import type { TcpSocketManager$TcpSocketManagerFactory } from '../../../../../..
 export class SslSocketManager$SslSocketManagerFactory extends TcpSocketManager$TcpSocketManagerFactory<SslSocketManager, SslSocketManager$SslFactoryData> {
     private constructor()
     createManager(name: string, os: OutputStream, socket: Socket, inetAddress: InetAddress, data: SslSocketManager$SslFactoryData): SslSocketManager;
+    createManager(name: string, data: SslSocketManager$SslFactoryData): SslSocketManager;
     createSocket(data: SslSocketManager$SslFactoryData): Socket;
 }

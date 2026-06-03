@@ -23,4 +23,6 @@ export class SingleASTTransformer<J extends JobParameters> extends ASTTransforme
     setTransformation(arg0: (param0: TranslationUnit, param1: Root) => void): void;
     setTransformation(arg0: (param0: TranslationUnit) => void): void;
     transform(arg0: RootSupplier, arg1: string): string;
+    transform(arg0: string): string;
+    transform(arg0: string, arg1: J): string;
 }

@@ -7,5 +7,7 @@ export abstract class JumpStatement extends Statement {
     getLabelName(): string;
     getStatementName(): string;
     hasGoto(): boolean;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

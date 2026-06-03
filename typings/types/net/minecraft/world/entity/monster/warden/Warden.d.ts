@@ -10,6 +10,7 @@ import type { ClientGamePacketListener } from '../../../../../../net/minecraft/n
 import type { ClientboundAddEntityPacket } from '../../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerEntity } from '../../../../../../net/minecraft/server/level/ServerEntity.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
@@ -213,6 +214,7 @@ export class Warden extends Monster implements VibrationSystem {
     getTendrilAnimation(a: number): number;
     getVibrationData(): VibrationSystem$Data;
     getVibrationUser(): VibrationSystem$User;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     handleEntityEvent(id: number): void;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
@@ -224,6 +226,7 @@ export class Warden extends Monster implements VibrationSystem {
     isPushable(): boolean;
     makeBrain(packedBrain: Brain$Packed): Brain<Warden>;
     nextStep(): number;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     // private playListeningSound(): void;
     playStepSound(pos: BlockPos, blockState: BlockState): void;

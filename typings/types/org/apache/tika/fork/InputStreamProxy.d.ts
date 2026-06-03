@@ -10,5 +10,6 @@ export class InputStreamProxy extends InputStream implements ForkProxy {
     // private resource: number;
     init(arg0: DataInputStream, arg1: DataOutputStream): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

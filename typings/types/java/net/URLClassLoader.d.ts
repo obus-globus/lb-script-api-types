@@ -5,8 +5,10 @@ import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
 import type { Package } from '../../java/lang/Package.d.ts'
 import type { URL } from '../../java/net/URL.d.ts'
 import type { URLStreamHandlerFactory } from '../../java/net/URLStreamHandlerFactory.d.ts'
+import type { ByteBuffer } from '../../java/nio/ByteBuffer.d.ts'
 import type { CodeSource } from '../../java/security/CodeSource.d.ts'
 import type { PermissionCollection } from '../../java/security/PermissionCollection.d.ts'
+import type { ProtectionDomain } from '../../java/security/ProtectionDomain.d.ts'
 import type { SecureClassLoader } from '../../java/security/SecureClassLoader.d.ts'
 import type { Enumeration } from '../../java/util/Enumeration.d.ts'
 import type { Manifest } from '../../java/util/jar/Manifest.d.ts'
@@ -30,10 +32,19 @@ export class URLClassLoader extends SecureClassLoader implements Closeable {
     // private ucp: URLClassPath;
     addURL(arg0: URL): void;
     close(): void;
+    defineClass(arg0: number[], arg1: number, arg2: number): Class<Object>;
+    defineClass(arg0: string, arg1: ByteBuffer, arg2: CodeSource): Class<Object>;
+    defineClass(arg0: string, arg1: ByteBuffer, arg2: ProtectionDomain): Class<Object>;
     // private defineClass(arg0: string, arg1: Resource): Class<Object>;
+    defineClass(arg0: string, arg1: number[], arg2: number, arg3: number): Class<Object>;
+    defineClass(arg0: string, arg1: number[], arg2: number, arg3: number, arg4: CodeSource): Class<Object>;
+    defineClass(arg0: string, arg1: number[], arg2: number, arg3: number, arg4: ProtectionDomain): Class<Object>;
     definePackage(arg0: string, arg1: Manifest, arg2: URL): Package;
+    definePackage(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: URL): Package;
     findClass(arg0: string): Class<Object>;
+    findClass(arg0: string, arg1: string): Class<Object>;
     findResource(arg0: string): URL;
+    findResource(arg0: string, arg1: string): URL;
     findResources(arg0: string): Enumeration<URL>;
     // private getAndVerifyPackage(arg0: string, arg1: Manifest, arg2: URL): Package;
     getPermissions(arg0: CodeSource): PermissionCollection;

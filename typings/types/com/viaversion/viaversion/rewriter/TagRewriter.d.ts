@@ -5,10 +5,10 @@ import type { Protocol } from '../../../../com/viaversion/viaversion/api/protoco
 import type { ClientboundPacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketHandler } from '../../../../com/viaversion/viaversion/api/protocol/remapper/PacketHandler.d.ts'
-import type { TagRewriter } from '../../../../com/viaversion/viaversion/api/rewriter/TagRewriter.d.ts'
+import type { TagRewriter as TagRewriter_2 } from '../../../../com/viaversion/viaversion/api/rewriter/TagRewriter.d.ts'
 import type { IdRewriteFunction } from '../../../../com/viaversion/viaversion/rewriter/IdRewriteFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class TagRewriter<C extends ClientboundPacketType> extends Object implements TagRewriter {
+export class TagRewriter<C extends ClientboundPacketType> extends Object implements TagRewriter_2 {
     constructor(arg0: Protocol<C, Object, Object, Object>)
     // private protocol: Protocol<C, Object, Object, Object>;
     // private toAdd: { [key in RegistryType]: TagData[] };

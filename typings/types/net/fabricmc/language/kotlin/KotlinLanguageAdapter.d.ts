@@ -6,4 +6,5 @@ export class KotlinLanguageAdapter extends Object implements LanguageAdapter {
     constructor()
     createInstance(clazz: Class<Object>, options: LanguageAdapter$Options): Object;
     createInstance(arg0: string, arg1: LanguageAdapter$Options): Object;
+    createInstance(arg0: string, arg1: LanguageAdapter$Options): Object;
 }

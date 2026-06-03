@@ -12,4 +12,5 @@ export class GotoTargetsResponse extends Response {
     getBody(): GotoTargetsResponse$ResponseBody;
     hashCode(): number;
     setBody(body: GotoTargetsResponse$ResponseBody): GotoTargetsResponse;
+    setBody(body: Object): Response;
 }

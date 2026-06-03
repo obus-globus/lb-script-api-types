@@ -15,6 +15,7 @@ export class CharSequenceReader extends Reader {
     markSupported(): boolean;
     read(): number;
     read(target: CharBuffer): number;
+    read(arg0: string[]): number;
     read(cbuf: string[], off: number, len: number): number;
     ready(): boolean;
     // private remaining(): number;

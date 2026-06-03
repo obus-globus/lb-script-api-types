@@ -1,11 +1,10 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ItemConstraintInfo } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemConstraintInfo.d.ts'
 import type { ItemSortChoice } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemSortChoice.d.ts'
 import type { ItemFacet } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ItemFacet.d.ts'
 import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
 export class CleanupPlanPlacementTemplate extends Object {
-    constructor(slotContentMap: Map<ItemSlot, ItemSortChoice>, itemAmountConstraintProvider: Function1<ItemFacet, ItemConstraintInfo[]>, isGreedy: boolean, forbiddenSlots: ItemSlot[], forbiddenSlotsToFill: ItemSlot[])
+    constructor(slotContentMap: Map<ItemSlot, ItemSortChoice>, itemAmountConstraintProvider: (param0: ItemFacet) => ItemConstraintInfo[], isGreedy: boolean, forbiddenSlots: ItemSlot[], forbiddenSlotsToFill: ItemSlot[])
     readonly forbiddenSlots: ItemSlot[];
     readonly forbiddenSlotsToFill: ItemSlot[];
     // private isGreedy: boolean;

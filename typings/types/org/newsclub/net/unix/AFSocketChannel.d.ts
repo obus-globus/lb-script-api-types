@@ -38,6 +38,7 @@ export abstract class AFSocketChannel<A extends AFSocketAddress> extends SocketC
     isConnected(): boolean;
     isConnectionPending(): boolean;
     read(arg0: ByteBuffer): number;
+    read(arg0: ByteBuffer[]): number;
     read(arg0: ByteBuffer[], arg1: number, arg2: number): number;
     setAncillaryReceiveBufferSize(arg0: number): void;
     setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): AFSocketChannel<A>;
@@ -48,5 +49,6 @@ export abstract class AFSocketChannel<A extends AFSocketAddress> extends SocketC
     supportedOptions(): SocketOption<Object>[];
     toString(): string;
     write(arg0: ByteBuffer): number;
+    write(arg0: ByteBuffer[]): number;
     write(arg0: ByteBuffer[], arg1: number, arg2: number): number;
 }

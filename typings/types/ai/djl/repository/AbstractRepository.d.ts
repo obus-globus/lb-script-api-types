@@ -30,6 +30,7 @@ export abstract class AbstractRepository extends Object implements Repository {
     model(arg0: Application, arg1: string, arg2: string, arg3: string): MRL;
     model(arg0: Application, arg1: string, arg2: string, arg3: string, arg4: string): MRL;
     openStream(arg0: Artifact$Item, arg1: string): InputStream;
+    prepare(arg0: Artifact): void;
     prepare(arg0: Artifact, arg1: Progress): void;
     prepare(arg0: Artifact): void;
     resolvePath(arg0: Artifact$Item, arg1: string): URI;

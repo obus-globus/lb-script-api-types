@@ -21,6 +21,7 @@ export class CharsetBOCU1$CharsetDecoderBOCU extends CharsetDecoderICU {
     // private afterGetTrail(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer): number;
     // private decodeBocu1LeadByte(b: number): number;
     // private decodeBocu1TrailByte(countValue: number, b: number): number;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private endLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer): void;
     // private fastSingle(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer): number;

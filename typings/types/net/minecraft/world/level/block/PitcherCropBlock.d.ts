@@ -31,6 +31,7 @@ import type { StateDefinition$Builder } from '../../../../../net/minecraft/world
 import type { DoubleBlockHalf } from '../../../../../net/minecraft/world/level/block/state/properties/DoubleBlockHalf.d.ts'
 import type { EnumProperty } from '../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
 import type { IntegerProperty } from '../../../../../net/minecraft/world/level/block/state/properties/IntegerProperty.d.ts'
+import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class PitcherCropBlock extends DoublePlantBlock implements BonemealableBlock {
@@ -97,6 +98,7 @@ export class PitcherCropBlock extends DoublePlantBlock implements BonemealableBl
     constructor(properties: BlockBehaviour$Properties)
     // private shapes: (param0: BlockState) => VoxelShape;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     // private canGrow(level: LevelReader, lowerPos: BlockPos, lowerState: BlockState, newAge: number): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;
     codec(): MapCodec<PitcherCropBlock>;

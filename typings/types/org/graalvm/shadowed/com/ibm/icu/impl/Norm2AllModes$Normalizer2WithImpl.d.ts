@@ -24,6 +24,7 @@ export abstract class Norm2AllModes$Normalizer2WithImpl extends Normalizer2 {
     getQuickCheck(c: number): number;
     getRawDecomposition(c: number): string;
     isNormalized(s: CharSequence): boolean;
+    normalize(src: CharSequence): string;
     normalize(src: CharSequence, dest: Appendable): Appendable;
     normalize(src: CharSequence, dest: StringBuilder): StringBuilder;
     normalize(src: CharSequence, buffer: Normalizer2Impl$ReorderingBuffer): void;

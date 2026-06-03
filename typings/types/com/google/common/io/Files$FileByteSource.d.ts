@@ -1,4 +1,5 @@
 import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
+import type { ByteProcessor } from '../../../../com/google/common/io/ByteProcessor.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { FileInputStream } from '../../../../java/io/FileInputStream.d.ts'
@@ -14,6 +15,7 @@ export class Files$FileByteSource extends ByteSource {
     // private file: File;
     openStream(): FileInputStream;
     read(): number[];
+    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
     size(): number;
     sizeIfKnown(): Optional<number>;
     toString(): string;

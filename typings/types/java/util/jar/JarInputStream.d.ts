@@ -60,5 +60,7 @@ export class JarInputStream extends ZipInputStream {
     getManifest(): Manifest;
     getNextEntry(): ZipEntry;
     getNextJarEntry(): JarEntry;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

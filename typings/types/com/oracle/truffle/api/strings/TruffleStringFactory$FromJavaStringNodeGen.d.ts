@@ -15,5 +15,6 @@ export class TruffleStringFactory$FromJavaStringNodeGen extends TruffleString$Fr
     // private state_7_: number;
     // private switchEncodingNode__field8_: number;
     // private switchEncodingNode__field9_: number;
+    execute(value: string, encoding: TruffleString$Encoding): TruffleString;
     execute(arg0Value: string, arg1Value: number, arg2Value: number, arg3Value: TruffleString$Encoding, arg4Value: boolean): TruffleString;
 }

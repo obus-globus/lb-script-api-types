@@ -9,6 +9,7 @@ export class BooleanIterators$ListIteratorWrapper extends Object implements Bool
     add(arg0: boolean): void;
     add(arg0: boolean): void;
     add(arg0: boolean): void;
+    add(arg0: boolean): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
@@ -21,6 +22,7 @@ export class BooleanIterators$ListIteratorWrapper extends Object implements Bool
     previousIndex(): number;
     remove(): void;
     remove(): void;
+    set(arg0: boolean): void;
     set(arg0: boolean): void;
     set(arg0: boolean): void;
     set(arg0: boolean): void;

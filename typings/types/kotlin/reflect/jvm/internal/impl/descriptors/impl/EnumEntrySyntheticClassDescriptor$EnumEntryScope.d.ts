@@ -1,4 +1,3 @@
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { LookupLocation } from '../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { DescriptorKindFilter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindFilter.d.ts'
@@ -18,7 +17,7 @@ export class EnumEntrySyntheticClassDescriptor$EnumEntryScope extends MemberScop
     // private computeFunctions(arg0: Name): E[];
     // private computeProperties(arg0: Name): E[];
     getClassifierNames(): Name[];
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
     getFunctionNames(): Name[];

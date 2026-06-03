@@ -98,6 +98,7 @@ export class MultifaceBlock extends Block implements SimpleWaterloggedBlock {
     // private canRotate: boolean;
     // private shapes: (param0: BlockState) => VoxelShape;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;
     codec(): MapCodec<MultifaceBlock>;

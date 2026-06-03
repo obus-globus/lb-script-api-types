@@ -32,6 +32,8 @@ export class Short2ByteOpenCustomHashMap$MapEntry extends Object implements Shor
     left(arg0: number): ShortBytePair;
     left(arg0: number): ShortBytePair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortBytePair;
     right(arg0: number): ShortBytePair;
     right(): number;
     right(arg0: number): ShortBytePair;

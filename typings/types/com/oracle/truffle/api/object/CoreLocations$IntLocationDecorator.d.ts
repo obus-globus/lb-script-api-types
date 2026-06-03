@@ -8,13 +8,18 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CoreLocations$IntLocationDecorator extends CoreLocations$PrimitiveLocationDecorator implements CoreLocations$IntLocation {
     constructor(longLocation: CoreLocations$LongLocation)
     canStore(value: Object): boolean;
+    get(store: DynamicObject): Object;
+    get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     getInt(store: DynamicObject, shape: Shape): number;
     getInt(store: DynamicObject, shape: Shape): number;
     getInt(store: DynamicObject, guard: boolean): number;
     getType(): Class<number>;
     getType(): Class<number>;
+    set(store: DynamicObject, value: Object, shape: Shape): void;
+    set(store: DynamicObject, value: Object, oldShape: Shape, newShape: Shape): void;
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
+    setInt(store: DynamicObject, value: number, shape: Shape): void;
     setInt(store: DynamicObject, value: number, shape: Shape): void;
     setInt(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
 }

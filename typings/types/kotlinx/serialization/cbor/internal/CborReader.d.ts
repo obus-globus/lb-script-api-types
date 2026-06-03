@@ -26,8 +26,8 @@ export class CborReader extends AbstractDecoder implements CborDecoder {
     // private size: number;
     // private /*not mapped: */ getSize(): number;
     // private tags: (Object | null)[] | null;
-//     // private /*not mapped: */ getTags-2g2roS4(): (Object | null)[] | null;
- // ; invalid because of -    beginStructure(descriptor: SerialDescriptor): CompositeDecoder;
+// (invalid TS: name contains '-')     // private /*not mapped: */ getTags-2g2roS4(): (Object | null)[] | null;
+    beginStructure(descriptor: SerialDescriptor): CompositeDecoder;
     decodeBoolean(): boolean;
     decodeByte(): number;
     decodeChar(): string;
@@ -42,6 +42,7 @@ export class CborReader extends AbstractDecoder implements CborDecoder {
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
     decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
+    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeString(): string;
     endStructure(descriptor: SerialDescriptor): void;

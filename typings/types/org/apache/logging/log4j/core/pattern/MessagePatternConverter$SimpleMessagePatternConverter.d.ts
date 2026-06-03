@@ -7,5 +7,6 @@ export class MessagePatternConverter$SimpleMessagePatternConverter extends Messa
     static CATEGORY: string;
     static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): MessagePatternConverter;
     private constructor()
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

@@ -1,4 +1,3 @@
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
@@ -37,6 +36,6 @@ export class ModuleBlockIn extends ClientModule {
     // private getPositions(): void;
     onDisabled(): void;
     onEnabled(): void;
-    // private rotateSurroundings(action: Function1<Direction, void>): void;
+    // private rotateSurroundings(action: (param0: Direction) => void): void;
     // private slotFinder(pos: BlockPos | null): HotbarItemSlot | null;
 }

@@ -6,4 +6,5 @@ export class EntityPacketRewriter1_21_7 extends EntityRewriter<ClientboundPacket
     constructor(arg0: Protocol1_21_7To1_21_6)
     registerRewrites(): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

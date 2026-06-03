@@ -12,6 +12,8 @@ export class CharSpliterators$IteratorFromSpliterator extends Object implements 
     accept(arg0: string): void;
     accept(arg0: number): void;
     accept(arg0: string): void;
+    accept(arg0: string): void;
+    accept(arg0: number): void;
     andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: number) => void): (param0: string) => void;
@@ -19,6 +21,8 @@ export class CharSpliterators$IteratorFromSpliterator extends Object implements 
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;
     nextChar(): string;

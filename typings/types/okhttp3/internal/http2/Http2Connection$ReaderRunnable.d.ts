@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../kotlin/jvm/functions/Function0.d.ts'
 import type { ErrorCode } from '../../../okhttp3/internal/http2/ErrorCode.d.ts'
 import type { Header } from '../../../okhttp3/internal/http2/Header.d.ts'
 import type { Http2Reader } from '../../../okhttp3/internal/http2/Http2Reader.d.ts'
@@ -7,7 +6,7 @@ import type { Http2Reader$Handler } from '../../../okhttp3/internal/http2/Http2R
 import type { Settings } from '../../../okhttp3/internal/http2/Settings.d.ts'
 import type { BufferedSource } from '../../../okio/BufferedSource.d.ts'
 import type { ByteString } from '../../../okio/ByteString.d.ts'
-export class Http2Connection$ReaderRunnable extends Object implements Function0<void>, Http2Reader$Handler {
+export class Http2Connection$ReaderRunnable extends Object implements () => void, Http2Reader$Handler {
     constructor(null_: Http2Connection$ReaderRunnable, reader: Http2Reader)
     // private reader: Http2Reader;
     /*not mapped: */ getReader$okhttp(): Http2Reader;

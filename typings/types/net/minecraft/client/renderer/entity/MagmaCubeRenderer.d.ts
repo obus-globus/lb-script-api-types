@@ -12,6 +12,7 @@ export class MagmaCubeRenderer extends MobRenderer<MagmaCube, SlimeRenderState, 
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SlimeRenderState;
+    createRenderState(entity: MagmaCube, partialTicks: number): SlimeRenderState;
     extractRenderState(entity: MagmaCube, state: SlimeRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: MagmaCube, blockPos: BlockPos): number;
     getShadowRadius(state: SlimeRenderState): number;

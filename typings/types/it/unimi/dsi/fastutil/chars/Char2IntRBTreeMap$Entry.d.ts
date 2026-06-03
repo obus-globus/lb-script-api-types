@@ -23,6 +23,7 @@ export class Char2IntRBTreeMap$Entry extends AbstractChar2IntMap$BasicEntry impl
     right(): Char2IntRBTreeMap$Entry;
     right(arg0: Char2IntRBTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Char2IntRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

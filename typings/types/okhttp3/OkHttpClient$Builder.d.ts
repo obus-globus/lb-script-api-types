@@ -7,8 +7,7 @@ import type { HostnameVerifier } from '../javax/net/ssl/HostnameVerifier.d.ts'
 import type { SSLSocketFactory } from '../javax/net/ssl/SSLSocketFactory.d.ts'
 import type { X509TrustManager } from '../javax/net/ssl/X509TrustManager.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-import type { Function1 } from '../kotlin/jvm/functions/Function1.d.ts'
-import type { Duration } from '../kotlin/time/Duration.d.ts'
+import type { Duration as Duration_2 } from '../kotlin/time/Duration.d.ts'
 import type { Authenticator } from '../okhttp3/Authenticator.d.ts'
 import type { Cache } from '../okhttp3/Cache.d.ts'
 import type { CertificatePinner } from '../okhttp3/CertificatePinner.d.ts'
@@ -96,20 +95,20 @@ export class OkHttpClient$Builder extends Object {
     /*not mapped: */ getWriteTimeout$okhttp(): number;
     // private x509TrustManagerOrNull: X509TrustManager | null;
     /*not mapped: */ getX509TrustManagerOrNull$okhttp(): X509TrustManager | null;
-    addInterceptor(block: Function1<Interceptor$Chain, Response>): OkHttpClient$Builder;
+    addInterceptor(block: (param0: Interceptor$Chain) => Response): OkHttpClient$Builder;
     addInterceptor(interceptor: Interceptor): OkHttpClient$Builder;
-    addNetworkInterceptor(block: Function1<Interceptor$Chain, Response>): OkHttpClient$Builder;
+    addNetworkInterceptor(block: (param0: Interceptor$Chain) => Response): OkHttpClient$Builder;
     addNetworkInterceptor(interceptor: Interceptor): OkHttpClient$Builder;
     authenticator(authenticator: Authenticator): OkHttpClient$Builder;
     build(): OkHttpClient;
     cache(cache: Cache | null): OkHttpClient$Builder;
     callTimeout(duration: Duration): OkHttpClient$Builder;
     callTimeout(timeout: number, unit: TimeUnit): OkHttpClient$Builder;
-    callTimeout(duration: Duration): OkHttpClient$Builder;
+    callTimeout(duration: Duration_2): OkHttpClient$Builder;
     certificatePinner(certificatePinner: CertificatePinner): OkHttpClient$Builder;
     connectTimeout(duration: Duration): OkHttpClient$Builder;
     connectTimeout(timeout: number, unit: TimeUnit): OkHttpClient$Builder;
-    connectTimeout(duration: Duration): OkHttpClient$Builder;
+    connectTimeout(duration: Duration_2): OkHttpClient$Builder;
     connectionPool(connectionPool: ConnectionPool): OkHttpClient$Builder;
     connectionSpecs(connectionSpecs: ConnectionSpec[]): OkHttpClient$Builder;
     cookieJar(cookieJar: CookieJar): OkHttpClient$Builder;
@@ -126,14 +125,14 @@ export class OkHttpClient$Builder extends Object {
     networkInterceptors(): Interceptor[];
     pingInterval(duration: Duration): OkHttpClient$Builder;
     pingInterval(interval: number, unit: TimeUnit): OkHttpClient$Builder;
-    pingInterval(duration: Duration): OkHttpClient$Builder;
+    pingInterval(duration: Duration_2): OkHttpClient$Builder;
     protocols(protocols: Protocol[]): OkHttpClient$Builder;
     proxy(proxy: Proxy | null): OkHttpClient$Builder;
     proxyAuthenticator(proxyAuthenticator: Authenticator): OkHttpClient$Builder;
     proxySelector(proxySelector: ProxySelector): OkHttpClient$Builder;
     readTimeout(duration: Duration): OkHttpClient$Builder;
     readTimeout(timeout: number, unit: TimeUnit): OkHttpClient$Builder;
-    readTimeout(duration: Duration): OkHttpClient$Builder;
+    readTimeout(duration: Duration_2): OkHttpClient$Builder;
     retryOnConnectionFailure(retryOnConnectionFailure: boolean): OkHttpClient$Builder;
     socketFactory(socketFactory: SocketFactory): OkHttpClient$Builder;
     sslSocketFactory(sslSocketFactory: SSLSocketFactory): OkHttpClient$Builder;
@@ -141,8 +140,8 @@ export class OkHttpClient$Builder extends Object {
     taskRunner(taskRunner: TaskRunner): OkHttpClient$Builder;
     webSocketCloseTimeout(duration: Duration): OkHttpClient$Builder;
     webSocketCloseTimeout(timeout: number, unit: TimeUnit): OkHttpClient$Builder;
-    webSocketCloseTimeout(duration: Duration): OkHttpClient$Builder;
+    webSocketCloseTimeout(duration: Duration_2): OkHttpClient$Builder;
     writeTimeout(duration: Duration): OkHttpClient$Builder;
     writeTimeout(timeout: number, unit: TimeUnit): OkHttpClient$Builder;
-    writeTimeout(duration: Duration): OkHttpClient$Builder;
+    writeTimeout(duration: Duration_2): OkHttpClient$Builder;
 }

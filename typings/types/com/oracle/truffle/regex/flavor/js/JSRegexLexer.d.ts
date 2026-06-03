@@ -19,6 +19,7 @@ export class JSRegexLexer extends RegexLexer {
     readonly globalFlags: RegexFlags;
     boundedQuantifierMaxValue(): number;
     caseFoldClassSetAtom(classSetContents: ClassSetContents): ClassSetContents;
+    caseFoldUnfold(codePointSet: (Object | null)[]): (Object | null)[];
     caseFoldUnfold(charClass: Range[]): void;
     checkClassSetCharacter(codePoint: number): void;
     complementClassSet(codePointSet: (Object | null)[]): (Object | null)[];

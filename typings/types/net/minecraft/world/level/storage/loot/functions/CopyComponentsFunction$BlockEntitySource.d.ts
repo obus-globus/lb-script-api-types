@@ -14,6 +14,7 @@ export class CopyComponentsFunction$BlockEntitySource extends Record implements 
     equals(o: Object | null): boolean;
     get<R extends Object | number | string | boolean>(context: LootContext): R;
     get(blockEntity: BlockEntity): DataComponentGetter;
+    get(context: LootContext): DataComponentGetter;
     hashCode(): number;
     toString(): string;
 }

@@ -17,9 +17,13 @@ export class ThreadLocalRandom extends Random {
     // private pad7: number;
     // private rnd: number;
     next(arg0: number): number;
+    nextDouble(): number;
     nextDouble(arg0: number): number;
     nextDouble(arg0: number, arg1: number): number;
+    nextInt(): number;
+    nextInt(arg0: number): number;
     nextInt(arg0: number, arg1: number): number;
+    nextLong(): number;
     nextLong(arg0: number): number;
     nextLong(arg0: number, arg1: number): number;
     setSeed(arg0: number): void;

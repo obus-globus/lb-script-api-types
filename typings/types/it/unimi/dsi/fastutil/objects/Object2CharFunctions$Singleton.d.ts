@@ -11,5 +11,6 @@ export class Object2CharFunctions$Singleton<K extends Object | number | string |
     containsKey(arg0: Object): boolean;
     getChar(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
+    getOrDefault(arg0: Object, arg1: string): string;
     size(): number;
 }

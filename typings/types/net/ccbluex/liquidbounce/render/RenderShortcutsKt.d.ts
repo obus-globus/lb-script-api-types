@@ -3,9 +3,6 @@ import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/Ren
 import type { RenderTarget } from '../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { DrawMode } from '../../../../net/ccbluex/liquidbounce/render/DrawMode.d.ts'
 import type { StaticMeshStorage } from '../../../../net/ccbluex/liquidbounce/render/StaticMeshStorage.d.ts'
 import type { WorldRenderEnvironment } from '../../../../net/ccbluex/liquidbounce/render/WorldRenderEnvironment.d.ts'
@@ -70,14 +67,14 @@ export class RenderShortcutsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L169 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:169}
      */
-    static drawCustomMesh(worldRenderEnvironment: WorldRenderEnvironment, pipeline: RenderPipeline, textures: { [key: string]: Object | null }, uniforms: { [key: string]: GpuBufferSlice }, drawer: Function2<Object, Object, void>): void;
+    static drawCustomMesh(worldRenderEnvironment: WorldRenderEnvironment, pipeline: RenderPipeline, textures: { [key: string]: Object | null }, uniforms: { [key: string]: GpuBufferSlice }, drawer: (param0: Object | null, param1: Object | null) => void): void;
     /**
      * Variant of {@link drawCustomMesh} that binds {@link sampler0} as `Sampler0`.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L154 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:154}
      */
-    static drawCustomMeshTextured(worldRenderEnvironment: WorldRenderEnvironment, sampler0: AbstractTexture, pipeline: RenderPipeline, uniforms: { [key: string]: GpuBufferSlice }, drawer: Function2<Object, Object, void>): void;
-    static drawGenericBlockESP(renderTarget: RenderTarget, renderState: StaticMeshStorage, pipeline: RenderPipeline, distanceFade: DistanceFadeUniformValueGroup, dynamicTransforms: Function0<GpuBufferSlice>): boolean;
+    static drawCustomMeshTextured(worldRenderEnvironment: WorldRenderEnvironment, sampler0: AbstractTexture, pipeline: RenderPipeline, uniforms: { [key: string]: GpuBufferSlice }, drawer: (param0: Object | null, param1: Object | null) => void): void;
+    static drawGenericBlockESP(renderTarget: RenderTarget, renderState: StaticMeshStorage, pipeline: RenderPipeline, distanceFade: DistanceFadeUniformValueGroup, dynamicTransforms: () => GpuBufferSlice): boolean;
     /**
      * Function to draw a circle of the size {@link outerRadius} with a cutout of size {@link innerRadius}
      *
@@ -148,13 +145,13 @@ export class RenderShortcutsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:77}
      */
-    static renderEnvironmentForWorld(poseStack: PoseStack, renderTarget: RenderTarget, mode: DrawMode, camera: Camera, draw: Function1<Object, void>): void;
+    static renderEnvironmentForWorld(poseStack: PoseStack, renderTarget: RenderTarget, mode: DrawMode, camera: Camera, draw: (param0: Object | null) => void): void;
     /**
      * Shorthand for `withPosition(relativeToCamera(pos))`
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L109 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:109}
      */
-    static withPositionRelativeToCamera(worldRenderEnvironment: WorldRenderEnvironment, draw: Function1<Object, void>): void;
-    static withPositionRelativeToCamera(paramarg0: WorldRenderEnvironment, paramarg1: Vec3i, paramarg2: Function1<Object, void>): void;
-    static withPositionRelativeToCamera(paramarg0: WorldRenderEnvironment, paramarg1: Vec3, paramarg2: Function1<Object, void>): void;
+    static withPositionRelativeToCamera(worldRenderEnvironment: WorldRenderEnvironment, draw: (param0: Object | null) => void): void;
+    static withPositionRelativeToCamera(paramarg0: WorldRenderEnvironment, paramarg1: Vec3i, paramarg2: (param0: Object | null) => void): void;
+    static withPositionRelativeToCamera(paramarg0: WorldRenderEnvironment, paramarg1: Vec3, paramarg2: (param0: Object | null) => void): void;
 }

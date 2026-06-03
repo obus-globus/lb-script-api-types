@@ -7,6 +7,7 @@ export class DFACaptureGroupLazyTransition$BranchesIndirect extends DFACaptureGr
     static create(paramtransitions: (Object | null)[], parampossibleValues: number[]): DFACaptureGroupLazyTransition$BranchesIndirect;
     constructor(transitions: DFACaptureGroupPartialTransition[], possibleValues: number[])
     // private possibleValues: number[];
+    apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode): void;
     apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode, preFinal: boolean): void;
     equals(obj: Object | null): boolean;
     hashCode(): number;

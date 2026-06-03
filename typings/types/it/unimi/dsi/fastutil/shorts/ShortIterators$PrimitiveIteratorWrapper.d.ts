@@ -11,6 +11,8 @@ export class ShortIterators$PrimitiveIteratorWrapper extends Object implements S
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;

@@ -45,6 +45,7 @@ export class JoinMultiplayerScreen extends Screen {
     getPinger(): ServerStatusPinger;
     getServers(): ServerList;
     init(): void;
+    init(width: number, height: number): void;
     join(data: ServerData): void;
     keyPressed(event: KeyEvent): boolean;
     onClose(): void;

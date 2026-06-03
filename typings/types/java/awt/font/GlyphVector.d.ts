@@ -18,6 +18,7 @@ export abstract class GlyphVector extends Object implements Cloneable {
     constructor()
     protected clone(): Object;
     equals(arg0: GlyphVector): boolean;
+    equals(other: Object | null): boolean;
     getFont(): Font;
     getFontRenderContext(): FontRenderContext;
     getGlyphCharIndex(arg0: number): number;

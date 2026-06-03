@@ -13,5 +13,6 @@ export abstract class AbstractSignatureAlgorithm extends AbstractSecureDigestAlg
     doVerify(arg0: VerifySecureDigestRequest<PublicKey>): boolean;
     sign(arg0: Signature, arg1: InputStream): number[];
     validateKey(arg0: Key, arg1: boolean): void;
+    verify(arg0: VerifySecureDigestRequest<PublicKey>): boolean;
     verify(arg0: Signature, arg1: InputStream, arg2: number[]): boolean;
 }

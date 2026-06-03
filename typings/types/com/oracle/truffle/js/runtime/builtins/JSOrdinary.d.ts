@@ -51,6 +51,7 @@ export class JSOrdinary extends JSNonProxy implements PrototypeSupplier {
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
     private constructor()
+    get(thisObj: JSDynamicObject, key: Object): Object;
     get(thisObj: JSDynamicObject, index: number): Object;
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
     hasOnlyShapeProperties(obj: JSDynamicObject): boolean;

@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../kotlin/Pair.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { DeserializationStrategy } from '../../../kotlinx/serialization/DeserializationStrategy.d.ts'
@@ -14,8 +13,8 @@ export class PolymorphicModuleBuilder<Base extends Object | number | string | bo
     // private defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null;
     // private subclasses: Pair<KClass<Base>, KSerializer<Base>>[];
     buildTo(builder: SerializersModuleBuilder): void;
-    default(defaultSerializerProvider: Function1<string, DeserializationStrategy<Base>>): void;
-    defaultDeserializer(defaultDeserializerProvider: Function1<string, DeserializationStrategy<Base>>): void;
+    default(defaultSerializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
+    defaultDeserializer(defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
     subclass(subclass: KClass<T>, serializer: KSerializer<T>): void;
     subclassesOfSealed(): void;
     subclassesOfSealed(serializer: KSerializer<T>): void;

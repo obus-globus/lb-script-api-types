@@ -157,6 +157,7 @@ export class Ocelot extends Animal {
     getDeathSound(): SoundEvent;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     handleEntityEvent(id: number): void;
     isFood(itemStack: ItemStack): boolean;
     isSteppingCarefully(): boolean;

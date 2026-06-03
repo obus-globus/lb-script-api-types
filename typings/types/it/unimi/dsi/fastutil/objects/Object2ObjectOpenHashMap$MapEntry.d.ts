@@ -24,6 +24,7 @@ export class Object2ObjectOpenHashMap$MapEntry extends Object implements Pair<K,
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     right<V extends Object | number | string | boolean>(): V;
     right<V extends Object | number | string | boolean>(arg0: V): Pair<K, V>;

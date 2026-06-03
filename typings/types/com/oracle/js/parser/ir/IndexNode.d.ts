@@ -17,5 +17,7 @@ export class IndexNode extends BaseNode {
     // private setBase(base: Expression): IndexNode;
     setIndex(index: Expression): IndexNode;
     setIsSuper(): IndexNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

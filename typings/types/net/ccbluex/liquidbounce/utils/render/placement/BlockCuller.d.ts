@@ -2,14 +2,14 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockCuller$Owner } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/BlockCuller$Owner.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 export class BlockCuller extends Object {
-//     static box-impl(paramarg0: BlockCuller$Owner): BlockCuller;
- // ; invalid because of -//     static constructor-impl(paramarg0: BlockCuller$Owner): BlockCuller$Owner;
- // ; invalid because of -//     static equals-impl(paramarg0: BlockCuller$Owner, paramarg1: Object): boolean;
- // ; invalid because of -//     static equals-impl0(paramarg0: BlockCuller$Owner, paramarg1: BlockCuller$Owner): boolean;
- // ; invalid because of -//     static getCullData-impl(paramarg0: BlockCuller$Owner, paramarg1: number): number;
- // ; invalid because of -//     static hashCode-impl(paramarg0: BlockCuller$Owner): number;
- // ; invalid because of -//     static toString-impl(paramarg0: BlockCuller$Owner): string;
- // ; invalid because of -    constructor(owner: BlockCuller$Owner)
+// (invalid TS: name contains '-')     static box-impl(paramarg0: BlockCuller$Owner): BlockCuller;
+// (invalid TS: name contains '-')     static constructor-impl(paramarg0: BlockCuller$Owner): BlockCuller$Owner;
+// (invalid TS: name contains '-')     static equals-impl(paramarg0: BlockCuller$Owner, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl0(paramarg0: BlockCuller$Owner, paramarg1: BlockCuller$Owner): boolean;
+// (invalid TS: name contains '-')     static getCullData-impl(paramarg0: BlockCuller$Owner, paramarg1: number): number;
+// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: BlockCuller$Owner): number;
+// (invalid TS: name contains '-')     static toString-impl(paramarg0: BlockCuller$Owner): string;
+    constructor(owner: BlockCuller$Owner)
     readonly owner: BlockCuller$Owner;
     // private contains(pos: number, direction: Direction): boolean;
     // private contains(pos: number, direction1: Direction, direction2: Direction): boolean;

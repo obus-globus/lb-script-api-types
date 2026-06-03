@@ -2,6 +2,8 @@ import type { InlineSupport$InlineTarget } from '../../../../../com/oracle/truff
 import type { InlineSupport$LongField } from '../../../../../com/oracle/truffle/api/dsl/InlineSupport$LongField.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { AbstractInlinedValueProfile } from '../../../../../com/oracle/truffle/api/profiles/AbstractInlinedValueProfile.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InlinedLongValueProfile extends AbstractInlinedValueProfile {
     static getUncached(): InlinedLongValueProfile;
     static inline(paramtarget: InlineSupport$InlineTarget): InlinedLongValueProfile;
@@ -10,5 +12,7 @@ export class InlinedLongValueProfile extends AbstractInlinedValueProfile {
     // private cachedValue: InlineSupport$LongField;
     getCachedValue(node: Node): number;
     profile(node: Node, value: number): number;
+    toString(): string;
     toString(node: Node): string;
+    toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;
 }

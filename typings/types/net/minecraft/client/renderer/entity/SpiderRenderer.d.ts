@@ -11,6 +11,7 @@ export class SpiderRenderer<T extends Spider> extends MobRenderer<T, LivingEntit
     constructor(context: EntityRendererProvider$Context)
     constructor(context: EntityRendererProvider$Context, model: ModelLayerLocation)
     createRenderState(): LivingEntityRenderState;
+    createRenderState(entity: T, partialTicks: number): LivingEntityRenderState;
     extractRenderState(entity: T, state: LivingEntityRenderState, partialTicks: number): void;
     getFlipDegrees(): number;
     getTextureLocation(state: LivingEntityRenderState): Identifier;

@@ -3,8 +3,8 @@ import type { File } from '../../../java/io/File.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
 import type { Logger } from '../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { ViaLegacyConfig } from '../../../net/raphimc/vialegacy/platform/ViaLegacyConfig.d.ts'
-export class ViaLegacyConfig extends Config implements ViaLegacyConfig {
+import type { ViaLegacyConfig as ViaLegacyConfig_2 } from '../../../net/raphimc/vialegacy/platform/ViaLegacyConfig.d.ts'
+export class ViaLegacyConfig extends Config implements ViaLegacyConfig_2 {
     constructor(arg0: File, arg1: Logger)
     readonly b1_7_3Motd: string;
     readonly classicChunkRange: number;

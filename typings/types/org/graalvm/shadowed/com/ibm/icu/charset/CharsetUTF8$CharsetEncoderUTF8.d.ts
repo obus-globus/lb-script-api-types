@@ -11,6 +11,7 @@ export class CharsetUTF8$CharsetEncoderUTF8 extends CharsetEncoderICU {
     // private targetIndex: number;
     // private encodeFourBytes(source: CharBuffer, target: ByteBuffer, char32: number): CoderResult;
     // private encodeFourBytes(sourceArray: string[], targetArray: number[], sourceLimit: number, targetLimit: number, char32: number): CoderResult;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

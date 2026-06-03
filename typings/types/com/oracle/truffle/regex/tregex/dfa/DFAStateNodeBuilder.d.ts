@@ -42,11 +42,13 @@ export class DFAStateNodeBuilder extends BasicState<DFAStateNodeBuilder, DFAStat
     hashCode(): number;
     isBackwardPrefixState(): boolean;
     isFinalState(): boolean;
+    isFinalState(forward: boolean): boolean;
     isFinalStateSuccessor(): boolean;
     isForward(): boolean;
     isPrioritySensitive(): boolean;
     isReachable(): boolean;
     isUnAnchoredFinalState(): boolean;
+    isUnAnchoredFinalState(forward: boolean): boolean;
     setAnchoredFinalStateTransition(anchoredFinalStateTransition: NFAStateTransition): void;
     setBackwardPrefixState(backwardPrefixState: number): void;
     setFinalStateSuccessor(): void;

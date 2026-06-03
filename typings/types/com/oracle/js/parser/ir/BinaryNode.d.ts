@@ -28,5 +28,7 @@ export class BinaryNode extends Expression implements Assignment<Expression> {
     isSelfModifying(): boolean;
     setLHS(lhs: Expression): BinaryNode;
     setRHS(rhs: Expression): BinaryNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

@@ -23,4 +23,5 @@ export class RealmsConfirmScreen extends RealmsScreen {
     // private title2: Component;
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
 }

@@ -32,6 +32,8 @@ export class Double2DoubleOpenHashMap$MapEntry extends Object implements Double2
     left(arg0: number): DoubleDoublePair;
     left(arg0: number): DoubleDoublePair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleDoublePair;
     right(arg0: number): DoubleDoublePair;
     right(): number;
     right(arg0: number): DoubleDoublePair;

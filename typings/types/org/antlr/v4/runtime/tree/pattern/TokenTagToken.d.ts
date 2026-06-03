@@ -1,4 +1,6 @@
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CommonToken } from '../../../../../../org/antlr/v4/runtime/CommonToken.d.ts'
+import type { Recognizer } from '../../../../../../org/antlr/v4/runtime/Recognizer.d.ts'
 export class TokenTagToken extends CommonToken {
     static DEFAULT_CHANNEL: number;
     static EOF: number;
@@ -15,4 +17,5 @@ export class TokenTagToken extends CommonToken {
     getText(): string;
     getTokenName(): string;
     toString(): string;
+    toString(arg0: Recognizer<Object, Object>): string;
 }

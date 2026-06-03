@@ -32,6 +32,8 @@ export class Int2DoubleOpenCustomHashMap$MapEntry extends Object implements Int2
     left(arg0: number): IntDoublePair;
     left(arg0: number): IntDoublePair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntDoublePair;
     right(arg0: number): IntDoublePair;
     right(): number;
     right(arg0: number): IntDoublePair;

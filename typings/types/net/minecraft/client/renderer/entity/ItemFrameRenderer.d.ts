@@ -22,6 +22,7 @@ export class ItemFrameRenderer<T extends ItemFrame> extends EntityRenderer<T, It
     // private itemModelResolver: ItemModelResolver;
     // private mapRenderer: MapRenderer;
     createRenderState(): ItemFrameRenderState;
+    createRenderState(entity: T, partialTicks: number): ItemFrameRenderState;
     extractRenderState(entity: T, state: ItemFrameRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: T, blockPos: BlockPos): number;
     // private getLightCoords(isGlowFrame: boolean, glowLightCoords: number, originalLightCoords: number): number;

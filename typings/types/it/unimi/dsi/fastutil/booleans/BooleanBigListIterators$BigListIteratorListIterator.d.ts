@@ -9,6 +9,7 @@ export class BooleanBigListIterators$BigListIteratorListIterator extends Object 
     add(arg0: boolean): void;
     add(arg0: boolean): void;
     add(arg0: boolean): void;
+    add(arg0: boolean): void;
     back(arg0: number): number;
     back(arg0: number): number;
     back(arg0: number): number;
@@ -22,6 +23,7 @@ export class BooleanBigListIterators$BigListIteratorListIterator extends Object 
     previousBoolean(): boolean;
     previousIndex(): number;
     remove(): void;
+    set(arg0: boolean): void;
     set(arg0: boolean): void;
     set(arg0: boolean): void;
     set(arg0: boolean): void;

@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ReflectJavaElement } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/ReflectJavaElement.d.ts'
 import type { JavaAnnotation } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaAnnotation.d.ts'
 import type { JavaPackage } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaPackage.d.ts'
@@ -11,7 +10,7 @@ export class ReflectJavaPackage extends ReflectJavaElement implements JavaPackag
     equals(arg0: Object | null): boolean;
     findAnnotation(arg0: FqName): JavaAnnotation;
     getAnnotations(): JavaAnnotation[];
-    getClasses(arg0: Function1<Name, boolean>): E[];
+    getClasses(arg0: (param0: Name) => boolean): E[];
     getFqName(): FqName;
     getSubPackages(): E[];
     hashCode(): number;

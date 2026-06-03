@@ -19,11 +19,15 @@ export class CharDoubleMutablePair extends Object implements CharDoublePair, Ser
     key(arg0: string): CharDoublePair;
     key(arg0: string): CharDoublePair;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharDoublePair;
     left(arg0: string): CharDoubleMutablePair;
     left(): string;
     left(arg0: string): CharDoublePair;
     left(arg0: string): CharDoublePair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharDoublePair;
     right(arg0: number): CharDoubleMutablePair;
     right(): number;
     right(arg0: number): CharDoublePair;

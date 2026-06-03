@@ -12,6 +12,7 @@ export class ParrotRenderer extends MobRenderer<Parrot, ParrotRenderState, Parro
     static getVariantTexture(paramvariant: Parrot$Variant): Identifier;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ParrotRenderState;
+    createRenderState(entity: Parrot, partialTicks: number): ParrotRenderState;
     extractRenderState(entity: Parrot, state: ParrotRenderState, partialTicks: number): void;
     getTextureLocation(state: ParrotRenderState): Identifier;
 }

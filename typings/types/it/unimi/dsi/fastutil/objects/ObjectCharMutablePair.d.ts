@@ -13,6 +13,8 @@ export class ObjectCharMutablePair<K extends Object | number | string | boolean>
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectCharMutablePair<K>;
+    right(): string;
+    right(arg0: string): ObjectCharPair<K>;
     right(arg0: string): ObjectCharMutablePair<K>;
     right(): string;
     right(arg0: string): ObjectCharPair<K>;

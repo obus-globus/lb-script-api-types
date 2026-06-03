@@ -12,6 +12,7 @@ export class ProfunctorTransformer<S extends Object | number | string | boolean,
     equals(arg0: Object | null): boolean;
     eval(): (param0: DynamicOps<Object>) => (param0: (param0: A) => B) => (param0: S) => T;
     hashCode(): number;
+    toString(): string;
     toString(arg0: number): string;
     type(): Type<(param0: (param0: A) => B) => (param0: S) => T>;
 }

@@ -12,6 +12,7 @@ export class Object2ShortFunctions$EmptyFunction<K extends Object | number | str
     defaultReturnValue(arg0: number): void;
     equals(arg0: Object | null): boolean;
     getOrDefault(arg0: Object, arg1: number): number;
+    getOrDefault(arg0: Object, arg1: number): number;
     getShort(arg0: Object): number;
     hashCode(): number;
     // private readResolve(): Object;

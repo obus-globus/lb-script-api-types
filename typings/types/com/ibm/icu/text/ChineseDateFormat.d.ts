@@ -1,5 +1,6 @@
 import type { DateFormat } from '../../../../com/ibm/icu/text/DateFormat.d.ts'
 import type { DateFormat$Field } from '../../../../com/ibm/icu/text/DateFormat$Field.d.ts'
+import type { DateFormatSymbols } from '../../../../com/ibm/icu/text/DateFormatSymbols.d.ts'
 import type { DisplayContext } from '../../../../com/ibm/icu/text/DisplayContext.d.ts'
 import type { SimpleDateFormat } from '../../../../com/ibm/icu/text/SimpleDateFormat.d.ts'
 import type { Calendar } from '../../../../com/ibm/icu/util/Calendar.d.ts'
@@ -157,5 +158,7 @@ export class ChineseDateFormat extends SimpleDateFormat {
     constructor(arg0: string, arg1: string, arg2: ULocale)
     patternCharToDateFormatField(arg0: string): DateFormat$Field;
     subFormat(arg0: StringBuffer, arg1: string, arg2: number, arg3: number, arg4: number, arg5: DisplayContext, arg6: FieldPosition, arg7: string, arg8: Calendar): void;
+    subFormat(arg0: string, arg1: number, arg2: number, arg3: FieldPosition, arg4: DateFormatSymbols, arg5: Calendar): string;
+    subFormat(arg0: string, arg1: number, arg2: number, arg3: number, arg4: DisplayContext, arg5: FieldPosition, arg6: string, arg7: Calendar): string;
     subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: (Object | null)[], arg7: Calendar): number;
 }

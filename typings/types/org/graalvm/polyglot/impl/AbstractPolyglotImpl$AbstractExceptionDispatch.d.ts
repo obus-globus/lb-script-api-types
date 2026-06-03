@@ -27,5 +27,6 @@ export abstract class AbstractPolyglotImpl$AbstractExceptionDispatch extends Abs
     onCreate(receiver: Object, polyglotException: RuntimeException): void;
     printStackTrace(receiver: Object, s: PrintStream): void;
     printStackTrace(receiver: Object, s: PrintWriter): void;
+    toString(): string;
     toString(receiver: Object): string;
 }

@@ -4,6 +4,7 @@ import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise
 import type { RecvByteBufAllocator$Handle } from '../../../../io/netty/channel/RecvByteBufAllocator$Handle.d.ts'
 import type { AbstractEpollStreamChannel } from '../../../../io/netty/channel/epoll/AbstractEpollStreamChannel.d.ts'
 import type { AbstractEpollStreamChannel$SpliceInTask } from '../../../../io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceInTask.d.ts'
+import type { FileDescriptor } from '../../../../io/netty/channel/unix/FileDescriptor.d.ts'
 export class AbstractEpollStreamChannel$SpliceInChannelTask extends AbstractEpollStreamChannel$SpliceInTask implements ChannelFutureListener {
     static CLOSE: ChannelFutureListener;
     static CLOSE_ON_FAILURE: ChannelFutureListener;
@@ -12,4 +13,5 @@ export class AbstractEpollStreamChannel$SpliceInChannelTask extends AbstractEpol
     // private ch: AbstractEpollStreamChannel;
     operationComplete(arg0: ChannelFuture): void;
     spliceIn(arg0: RecvByteBufAllocator$Handle): boolean;
+    spliceIn(arg0: FileDescriptor, arg1: RecvByteBufAllocator$Handle): number;
 }

@@ -18,6 +18,7 @@ export abstract class LootPoolEntryContainer$Builder<T extends LootPoolEntryCont
     otherwise(other: LootPoolEntryContainer$Builder<Object>): AlternativesEntry$Builder;
     then(other: LootPoolEntryContainer$Builder<Object>): SequentialEntry$Builder;
     unwrap(): T;
+    when(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
     when(condition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
     when(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
 }

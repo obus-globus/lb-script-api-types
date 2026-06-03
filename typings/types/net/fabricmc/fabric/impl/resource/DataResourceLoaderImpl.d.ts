@@ -40,4 +40,5 @@ export class DataResourceLoaderImpl extends ResourceLoaderImpl implements DataRe
     collectReloadersToAdd(arg0: SetupMarkerResourceReloader): Map$Entry<Identifier, (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, param3: Executor) => java.util.concurrent.CompletableFuture<java.lang.Void>>[];
     hasResourceReloader(arg0: Identifier): boolean;
     registerReloadListener(arg0: Identifier, arg1: (param0: HolderLookup$Provider) => (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, param3: Executor) => java.util.concurrent.CompletableFuture<java.lang.Void>): void;
+    registerReloadListener(arg0: Identifier, arg1: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, param3: Executor) => java.util.concurrent.CompletableFuture<java.lang.Void>): void;
 }

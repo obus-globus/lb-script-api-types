@@ -32,6 +32,8 @@ export class Double2ShortOpenCustomHashMap$MapEntry extends Object implements Do
     left(arg0: number): DoubleShortPair;
     left(arg0: number): DoubleShortPair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleShortPair;
     right(arg0: number): DoubleShortPair;
     right(): number;
     right(arg0: number): DoubleShortPair;

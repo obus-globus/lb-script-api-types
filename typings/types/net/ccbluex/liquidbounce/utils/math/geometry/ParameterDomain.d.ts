@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 export class ParameterDomain extends Enum<ParameterDomain> {
     static FORWARD: ParameterDomain;
     static SEGMENT_01: ParameterDomain;
@@ -13,7 +12,7 @@ export class ParameterDomain extends Enum<ParameterDomain> {
     private constructor(lowerBound: number, upperBound: number)
     lowerBound: number;
     upperBound: number;
-    forEachFiniteBoundary(action: Function1<number, void>): void;
+    forEachFiniteBoundary(action: (param0: number) => void): void;
     /**
      * @returns {@link Double.NaN} if {@link parameter} out of bounds
      *

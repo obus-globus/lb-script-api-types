@@ -6,6 +6,7 @@ export class CountingOutputStream extends FilterOutputStream {
     readonly count: number;
     close(): void;
     getCount(): number;
+    write(arg0: number[]): void;
     write(b: number[], off: number, len: number): void;
     write(b: number): void;
 }

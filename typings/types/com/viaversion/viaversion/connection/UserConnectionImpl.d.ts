@@ -43,6 +43,7 @@ export class UserConnectionImpl extends Object implements UserConnection {
     checkIncomingPacket(arg0: number): boolean;
     checkOutgoingPacket(): boolean;
     checkServerboundPacket(): boolean;
+    checkServerboundPacket(): boolean;
     checkServerboundPacket(arg0: number): boolean;
     clearStoredObjects(): void;
     disconnect(arg0: string): void;

@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { YearMonth } from '../../../kotlinx/datetime/YearMonth.d.ts'
 import type { AbstractDateTimeFormatBuilder } from '../../../kotlinx/datetime/format/AbstractDateTimeFormatBuilder.d.ts'
 import type { AbstractWithYearMonthBuilder } from '../../../kotlinx/datetime/format/AbstractWithYearMonthBuilder.d.ts'
@@ -14,8 +13,8 @@ export class YearMonthFormat$Builder extends Object implements AbstractDateTimeF
     constructor(actualBuilder: AppendableFormatStructure<YearMonthFieldContainer>)
     readonly actualBuilder: AppendableFormatStructure<YearMonthFieldContainer>;
     addFormatStructureForYearMonth(structure: FormatStructure<YearMonthFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: Function1<ActualSelf, void>[], mainFormat: Function1<ActualSelf, void>): void;
-    appendOptionalImpl(onZero: string, format: Function1<ActualSelf, void>): void;
+    appendAlternativeParsingImpl(otherFormats: (param0: ActualSelf) => void[], mainFormat: (param0: ActualSelf) => void): void;
+    appendOptionalImpl(onZero: string, format: (param0: ActualSelf) => void): void;
     build(): CachedFormatStructure<Target>;
     chars(value: string): void;
     createEmpty(): YearMonthFormat$Builder;

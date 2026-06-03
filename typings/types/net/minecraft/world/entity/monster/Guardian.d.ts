@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -160,10 +161,12 @@ export class Guardian extends Monster {
     getMovementEmission(): Entity$MovementEmission;
     getSpikesAnimation(a: number): number;
     getTailAnimation(a: number): number;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     hasActiveAttackTarget(): boolean;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     isMoving(): boolean;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     registerGoals(): void;
     // private setActiveAttackTarget(entityId: number): void;

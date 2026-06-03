@@ -1,6 +1,6 @@
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Function<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Function<K, V>, Object{
+export interface Function<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Function_2<K, V>, Object{
     andThen(arg0: (param0: R) => V): (param0: T) => V;
     apply(arg0: K): V;
     clear(): void;

@@ -55,6 +55,7 @@ export class RakSessionCodec extends ChannelDuplexHandler implements IRakSession
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;
     // private checkForClosed(): void;
     // private checkForOrdered(arg0: ChannelHandlerContext, arg1: EncapsulatedPacket): void;
+    close(arg0: ChannelHandlerContext, arg1: ChannelPromise): void;
     close(arg0: RakDisconnectReason): void;
     createDatagramPacket(): RakDatagramPacket;
     // private createEncapsulated(arg0: RakMessage): EncapsulatedPacket[];

@@ -169,6 +169,7 @@ export abstract class DateFormat extends UFormat {
     format(arg0: Temporal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Date): string;
     format(arg0: Date, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     getBooleanAttribute(arg0: DateFormat$BooleanAttribute): boolean;
     getCalendar(): Calendar;
@@ -181,6 +182,7 @@ export abstract class DateFormat extends UFormat {
     parse(arg0: string): Date;
     parse(arg0: string, arg1: Calendar, arg2: ParsePosition): void;
     parse(arg0: string, arg1: ParsePosition): Date;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     // private readObject(arg0: ObjectInputStream): void;
     setBooleanAttribute(arg0: DateFormat$BooleanAttribute, arg1: boolean): DateFormat;

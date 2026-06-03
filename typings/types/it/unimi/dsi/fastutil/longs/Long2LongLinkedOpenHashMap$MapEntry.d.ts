@@ -32,6 +32,8 @@ export class Long2LongLinkedOpenHashMap$MapEntry extends Object implements Long2
     left(arg0: number): LongLongPair;
     left(arg0: number): LongLongPair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongLongPair;
     right(arg0: number): LongLongPair;
     right(): number;
     right(arg0: number): LongLongPair;

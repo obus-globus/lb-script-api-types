@@ -14,5 +14,6 @@ export class LongRange extends NumberRange<number> {
     static of(paramarg0: number, paramarg1: number): LongRange;
     private constructor(arg0: number, arg1: number)
     fit(arg0: number): number;
+    fit(arg0: number): number;
     toLongStream(): LongStream;
 }

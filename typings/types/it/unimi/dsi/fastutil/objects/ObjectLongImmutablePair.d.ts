@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ObjectLongPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectLongPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -12,6 +13,7 @@ export class ObjectLongImmutablePair<K extends Object | number | string | boolea
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): K;
+    left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectLongPair<K>;
     right(arg0: number): ObjectLongPair<K>;

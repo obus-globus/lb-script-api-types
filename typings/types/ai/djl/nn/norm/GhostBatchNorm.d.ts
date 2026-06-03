@@ -17,6 +17,7 @@ export class GhostBatchNorm extends BatchNorm {
     // private batchifier: Batchifier;
     // private virtualBatchSize: number;
     batchify(arg0: (Object | null)[][]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     split(arg0: (Object | null)[]): (Object | null)[][];
     squeezeExtraDimensions(arg0: (Object | null)[]): (Object | null)[];

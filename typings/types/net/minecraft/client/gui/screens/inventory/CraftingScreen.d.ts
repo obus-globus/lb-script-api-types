@@ -23,4 +23,5 @@ export class CraftingScreen extends AbstractRecipeBookScreen<CraftingMenu> {
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getRecipeBookButtonPosition(): ScreenPosition;
     init(): void;
+    init(width: number, height: number): void;
 }

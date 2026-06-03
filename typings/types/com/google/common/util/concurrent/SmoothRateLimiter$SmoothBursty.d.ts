@@ -11,5 +11,6 @@ export class SmoothRateLimiter$SmoothBursty extends SmoothRateLimiter {
     // private maxBurstSeconds: number;
     coolDownIntervalMicros(): number;
     doSetRate(permitsPerSecond: number, stableIntervalMicros: number): void;
+    doSetRate(permitsPerSecond: number, nowMicros: number): void;
     storedPermitsToWaitTime(storedPermits: number, permitsToTake: number): number;
 }

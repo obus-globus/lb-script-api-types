@@ -5,7 +5,6 @@ import type { Method } from '../../../../java/lang/reflect/Method.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { KType } from '../../../../kotlin/reflect/KType.d.ts'
 import type { KVisibility } from '../../../../kotlin/reflect/KVisibility.d.ts'
 import type { ReflectKCallable } from '../../../../kotlin/reflect/jvm/internal/ReflectKCallable.d.ts'
@@ -28,7 +27,7 @@ export class UtilKt extends Object {
     static computeAnnotations(paramarg0: Annotated): Annotation[];
     static createArrayType(paramarg0: Class<Object>): Class<Object>;
     static defaultPrimitiveValue(paramarg0: Type): Object;
-    static deserializeToDescriptor(paramarg0: Class<Object>, paramarg1: Object | null, paramarg2: NameResolver, paramarg3: TypeTable, paramarg4: BinaryVersion, paramarg5: Function2<Object, Object, Object>): Object | null;
+    static deserializeToDescriptor(paramarg0: Class<Object>, paramarg1: Object | null, paramarg2: NameResolver, paramarg3: TypeTable, paramarg4: BinaryVersion, paramarg5: (param0: Object | null, param1: Object | null) => Object | null): Object | null;
     static getDeclaredFieldOrNull(paramarg0: Class<Object>, paramarg1: string): Field;
     static getDeclaredMethodOrNull(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Method;
     static getInstanceReceiverParameter(paramarg0: CallableDescriptor): ReceiverParameterDescriptor;

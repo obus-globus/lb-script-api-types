@@ -32,6 +32,8 @@ export class Int2CharOpenCustomHashMap$MapEntry extends Object implements Int2Ch
     left(arg0: number): IntCharPair;
     left(arg0: number): IntCharPair;
     leftInt(): number;
+    right(): string;
+    right(arg0: string): IntCharPair;
     right(arg0: string): IntCharPair;
     right(): string;
     right(arg0: string): IntCharPair;

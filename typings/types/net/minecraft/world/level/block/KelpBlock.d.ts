@@ -88,6 +88,7 @@ export class KelpBlock extends GrowingPlantHeadBlock implements LiquidBlockConta
     getBlocksToGrowWhenBonemealed(random: RandomSource): number;
     getBodyBlock(): Block;
     getFluidState(state: BlockState): FluidState;
+    getStateForPlacement(random: RandomSource): BlockState;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
 }

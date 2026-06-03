@@ -23,6 +23,7 @@ export class Float2ShortRBTreeMap$Entry extends AbstractFloat2ShortMap$BasicEntr
     right(): Float2ShortRBTreeMap$Entry;
     right(arg0: Float2ShortRBTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Float2ShortRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -8,5 +8,6 @@ import type { RegexAST } from '../../../../../com/oracle/truffle/regex/tregex/pa
 export class LiteralRegexExecNodeGen extends LiteralRegexExecNode {
     static create(paramlanguage: RegexLanguage, paramast: RegexAST, paramimplNode: LiteralRegexExecNode$LiteralRegexExecImplNode): LiteralRegexExecNode;
     private constructor(language: RegexLanguage, ast: RegexAST, implNode: LiteralRegexExecNode$LiteralRegexExecImplNode)
+    execute(frame: VirtualFrame): RegexResult;
     execute(frameValue: VirtualFrame, arg0Value: TruffleString, arg1Value: number, arg2Value: number, arg3Value: number, arg4Value: number): RegexResult;
 }

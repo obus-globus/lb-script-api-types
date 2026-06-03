@@ -31,7 +31,7 @@ import type { Reference2ShortFunction } from '../../../../../it/unimi/dsi/fastut
 import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2FloatFunction.d.ts'
 import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceFunction.d.ts'
 import type { DoubleFunction } from '../../../../../java/util/function/DoubleFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Float2ReferenceFunction<V extends Object | number | string | boolean> extends Function<number, V>, DoubleFunction<V>, Object{
     andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: number) => kotlin.Byte;
@@ -44,6 +44,7 @@ export interface Float2ReferenceFunction<V extends Object | number | string | bo
     andThenReference(arg0: (param0: V) => T): (param0: T) => unknown;
     andThenShort(arg0: (param0: V) => kotlin.Short): (param0: number) => kotlin.Short;
     apply<K extends Object | number | string | boolean>(arg0: K): V;
+    apply(arg0: number): V;
     apply(arg0: number): V;
     clear(): void;
     compose(arg0: (param0: T) => number): (param0: T) => V;

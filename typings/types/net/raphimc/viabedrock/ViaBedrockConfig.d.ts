@@ -3,10 +3,10 @@ import type { File } from '../../../java/io/File.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
 import type { Logger } from '../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { ViaBedrockConfig } from '../../../net/raphimc/viabedrock/platform/ViaBedrockConfig.d.ts'
+import type { ViaBedrockConfig as ViaBedrockConfig_2 } from '../../../net/raphimc/viabedrock/platform/ViaBedrockConfig.d.ts'
 import type { ViaBedrockConfig$BlobCacheMode } from '../../../net/raphimc/viabedrock/platform/ViaBedrockConfig$BlobCacheMode.d.ts'
 import type { ViaBedrockConfig$PackCacheMode } from '../../../net/raphimc/viabedrock/platform/ViaBedrockConfig$PackCacheMode.d.ts'
-export class ViaBedrockConfig extends Config implements ViaBedrockConfig {
+export class ViaBedrockConfig extends Config implements ViaBedrockConfig_2 {
     constructor(arg0: File, arg1: Logger)
     readonly blobCacheMode: ViaBedrockConfig$BlobCacheMode;
     // private disableServerBlacklist: boolean;

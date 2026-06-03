@@ -4,6 +4,7 @@ import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/clien
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
 import type { DebugScreenProfile } from '../../../../../../net/minecraft/client/gui/components/debug/DebugScreenProfile.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { LinearLayout } from '../../../../../../net/minecraft/client/gui/layouts/LinearLayout.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -31,6 +32,8 @@ export class DebugOptionsScreen extends Screen {
     extractBlurredBackground(graphics: GuiGraphicsExtractor): void;
     getOptionList(): DebugOptionsScreen$OptionList;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
 }

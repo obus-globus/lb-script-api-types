@@ -7,6 +7,7 @@ import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/i
 export class CharsetUTF7$CharsetEncoderUTF7 extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
     constructor(null_: CharsetUTF7$CharsetEncoderUTF7, cs: CharsetICU)
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

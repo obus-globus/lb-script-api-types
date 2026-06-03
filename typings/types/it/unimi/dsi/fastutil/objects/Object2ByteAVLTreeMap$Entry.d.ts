@@ -25,6 +25,7 @@ export class Object2ByteAVLTreeMap$Entry<K extends Object | number | string | bo
     right(): Object2ByteAVLTreeMap$Entry<K>;
     right(arg0: Object2ByteAVLTreeMap$Entry<K>): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Object2ByteAVLTreeMap$Entry<K>): void;
     succ(arg0: boolean): void;

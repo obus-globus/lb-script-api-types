@@ -6,6 +6,7 @@ export class UnshrinkingInputStream extends LZWInputStream {
     constructor(arg0: InputStream)
     // private isUsed: (Object | null)[];
     addEntry(arg0: number, arg1: number): number;
+    addEntry(arg0: number, arg1: number, arg2: number): number;
     decompressNextSymbol(): number;
     // private partialClear(): void;
 }

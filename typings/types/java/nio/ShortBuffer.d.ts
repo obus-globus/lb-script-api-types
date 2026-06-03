@@ -36,10 +36,12 @@ export class ShortBuffer extends Buffer implements Comparable<ShortBuffer> {
     hashCode(): number;
     heapSegment(arg0: Object, arg1: number, arg2: number, arg3: boolean, arg4: MemorySessionImpl): AbstractMemorySegmentImpl;
     isDirect(): boolean;
+    limit(): number;
     limit(arg0: number): ShortBuffer;
     mark(): ShortBuffer;
     mismatch(arg0: ShortBuffer): number;
     order(): ByteOrder;
+    position(): number;
     position(arg0: number): ShortBuffer;
     put(arg0: ShortBuffer): ShortBuffer;
     put(arg0: number, arg1: ShortBuffer, arg2: number, arg3: number): ShortBuffer;

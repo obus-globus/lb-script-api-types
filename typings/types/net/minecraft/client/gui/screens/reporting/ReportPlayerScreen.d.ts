@@ -27,6 +27,7 @@ export class ReportPlayerScreen extends Screen {
     // private player: PlayerEntry;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

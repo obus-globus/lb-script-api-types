@@ -1,12 +1,12 @@
 import type { Type } from '../../../../../../../com/oracle/truffle/api/impl/asm/Type.d.ts'
 import type { Constructor } from '../../../../../../../java/lang/reflect/Constructor.d.ts'
-import type { Method } from '../../../../../../../java/lang/reflect/Method.d.ts'
+import type { Method as Method_2 } from '../../../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Method extends Object {
     static getMethod(parammethod: string): Method;
     static getMethod(parammethod: string, paramdefaultPackage: boolean): Method;
     static getMethod(paramconstructor: Constructor<Object>): Method;
-    static getMethod(parammethod: Method): Method;
+    static getMethod(parammethod: Method_2): Method;
     constructor(name: string, returnType: Type, argumentTypes: Type[])
     constructor(name: string, descriptor: string)
     readonly descriptor: string;

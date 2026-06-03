@@ -62,12 +62,14 @@ export class RuleBasedTimeZone extends BasicTimeZone {
     freeze(): TimeZone;
     getNextTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, milliseconds: number): number;
+    getOffset(date: number): number;
     // private getOffset(time: number, local: boolean, NonExistingTimeOpt: number, DuplicatedTimeOpt: number, offsets: number[]): void;
     getOffset(time: number, local: boolean, offsets: number[]): void;
     getOffsetFromLocal(date: number, nonExistingTimeOpt: BasicTimeZone$LocalOption, duplicatedTimeOpt: BasicTimeZone$LocalOption, offsets: number[]): void;
     getPreviousTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getRawOffset(): number;
     getTimeZoneRules(): TimeZoneRule[];
+    getTimeZoneRules(start: number): TimeZoneRule[];
     hasSameRules(other: TimeZone): boolean;
     inDaylightTime(date: Date): boolean;
     isFrozen(): boolean;

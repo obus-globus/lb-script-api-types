@@ -31,6 +31,7 @@ export abstract class AbstractConstantEmptyArray extends AbstractConstantArray {
     deleteElementImpl(object: JSDynamicObject, index: number, strict: boolean): ScriptArray;
     firstElementIndex(object: JSDynamicObject): number;
     getElementInBounds(object: JSDynamicObject, index: number): Object;
+    getElementInBounds(object: JSDynamicObject, index: number): Object;
     hasElement(object: JSDynamicObject, index: number): boolean;
     hasHoles(object: JSDynamicObject): boolean;
     isHolesType(): boolean;

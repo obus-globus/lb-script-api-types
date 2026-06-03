@@ -104,6 +104,7 @@ export class CandleBlock extends AbstractCandleBlock implements SimpleWaterlogge
     constructor(properties: BlockBehaviour$Properties)
     canBeLit(state: BlockState): boolean;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;
     codec(): MapCodec<CandleBlock>;

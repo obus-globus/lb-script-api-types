@@ -3,7 +3,7 @@ import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/double
 import type { DoubleSpliterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleSpliterator.d.ts'
 import type { Spliterator } from '../../../../../java/util/Spliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
+import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleSpliterators$SpliteratorWrapper extends Object implements DoubleSpliterator {
     static CONCURRENT: number;

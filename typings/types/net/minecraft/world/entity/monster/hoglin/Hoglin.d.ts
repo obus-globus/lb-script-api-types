@@ -182,6 +182,7 @@ export class Hoglin extends Animal implements Enemy, HoglinBase {
     getSwimSound(): SoundEvent;
     getSwimSplashSound(): SoundEvent;
     getTarget(): LivingEntity;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     handleEntityEvent(id: number): void;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;

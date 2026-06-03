@@ -12,6 +12,7 @@ export class SetWrittenBookPagesFunction extends LootItemConditionalFunction {
     constructor(predicates: LootItemCondition[], pages: Filterable<Component>[], pageOperation: ListOperation)
     // private pageOperation: ListOperation;
     // private pages: Filterable<Component>[];
+    apply(itemStack: ItemStack, context: LootContext): ItemStack;
     apply(original: WrittenBookContent): WrittenBookContent;
     codec(): MapCodec<SetWrittenBookPagesFunction>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;

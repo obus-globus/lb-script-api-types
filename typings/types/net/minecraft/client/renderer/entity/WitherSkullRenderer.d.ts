@@ -15,6 +15,7 @@ export class WitherSkullRenderer extends EntityRenderer<WitherSkull, WitherSkull
     constructor(context: EntityRendererProvider$Context)
     // private model: SkullModel;
     createRenderState(): WitherSkullRenderState;
+    createRenderState(entity: WitherSkull, partialTicks: number): WitherSkullRenderState;
     extractRenderState(entity: WitherSkull, state: WitherSkullRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: WitherSkull, blockPos: BlockPos): number;
     // private getTextureLocation(state: WitherSkullRenderState): Identifier;

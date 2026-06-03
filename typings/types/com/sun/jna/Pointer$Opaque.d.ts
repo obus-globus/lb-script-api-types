@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../com/sun/jna/Pointer.d.ts'
+import type { WString } from '../../../com/sun/jna/WString.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 export class Pointer$Opaque extends Pointer {
     static NULL: Pointer;
@@ -19,6 +20,7 @@ export class Pointer$Opaque extends Pointer {
     getLong(arg0: number): number;
     getPointer(arg0: number): Pointer;
     getShort(arg0: number): number;
+    getString(arg0: number): string;
     getString(arg0: number, arg1: string): string;
     getWideString(arg0: number): string;
     indexOf(arg0: number, arg1: number): number;
@@ -39,8 +41,11 @@ export class Pointer$Opaque extends Pointer {
     setMemory(arg0: number, arg1: number, arg2: number): void;
     setPointer(arg0: number, arg1: Pointer): void;
     setShort(arg0: number, arg1: number): void;
+    setString(arg0: number, arg1: WString): void;
+    setString(arg0: number, arg1: string): void;
     setString(arg0: number, arg1: string, arg2: string): void;
     setWideString(arg0: number, arg1: string): void;
+    share(arg0: number): Pointer;
     share(arg0: number, arg1: number): Pointer;
     toString(): string;
     write(arg0: number, arg1: Pointer[], arg2: number, arg3: number): void;

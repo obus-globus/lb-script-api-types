@@ -46,6 +46,7 @@ export abstract class LegacyItemRewriter<C extends ClientboundPacketType, S exte
     nbtTagName(): string;
     nbtTagName(arg0: string): string;
     nbtTagName(): string;
+    nbtTagName(arg0: string): string;
     registerCreativeInventoryAction(arg0: S): void;
     // private setRemappedNameRead(arg0: Item, arg1: string): void;
     // private setRemappedTagWrite(arg0: Item): void;

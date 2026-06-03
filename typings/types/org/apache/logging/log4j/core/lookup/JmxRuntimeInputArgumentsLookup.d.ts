@@ -7,5 +7,6 @@ export class JmxRuntimeInputArgumentsLookup extends MapLookup {
     static setMainArguments(paramargs: (Object | null)[]): void;
     constructor()
     constructor(map: { [key: string]: string })
+    lookup(key: string): string;
     lookup(ignored: LogEvent, key: string): string;
 }

@@ -21,6 +21,7 @@ export abstract class BigIntPrototypeBuiltins$JSBigIntToStringNode extends BigIn
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(thisObj: JSBigIntObject, radix: Object, radixErrorBranch: InlinedBranchProfile): TruffleString;
     toStringBigInt(thisObj: BigInt, radix: Object, radixErrorBranch: InlinedBranchProfile): TruffleString;
     toStringBigIntRadix10(thisObj: BigInt, radix: Object, radixErrorBranch: InlinedBranchProfile): TruffleString;

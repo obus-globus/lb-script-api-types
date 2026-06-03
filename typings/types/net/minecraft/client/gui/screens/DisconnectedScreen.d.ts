@@ -30,6 +30,7 @@ export class DisconnectedScreen extends Screen {
     // private parent: Screen;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
     shouldCloseOnEsc(): boolean;
 }

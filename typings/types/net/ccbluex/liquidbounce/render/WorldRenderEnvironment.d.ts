@@ -6,7 +6,6 @@ import type { MeshData } from '../../../../com/mojang/blaze3d/vertex/MeshData.d.
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { BatchCollector } from '../../../../net/ccbluex/liquidbounce/render/BatchCollector.d.ts'
 import type { DrawMode } from '../../../../net/ccbluex/liquidbounce/render/DrawMode.d.ts'
 import type { RenderBufferKey } from '../../../../net/ccbluex/liquidbounce/render/RenderBufferKey.d.ts'
@@ -52,7 +51,7 @@ export class WorldRenderEnvironment extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L226 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:226}
      */
-    batch(block: Function1<WorldRenderEnvironment, void>): void;
+    batch(block: (param0: WorldRenderEnvironment) => void): void;
     // private drawImmediate(key: RenderBufferKey, meshData: MeshData): void;
     /**
      * Low-level completion for a {@link VertexConsumer} obtained from {@link start}.
@@ -68,7 +67,7 @@ export class WorldRenderEnvironment extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:231}
      */
-    immediate(block: Function1<WorldRenderEnvironment, void>): void;
+    immediate(block: (param0: WorldRenderEnvironment) => void): void;
     /**
      * Converts a world-space position to the camera-relative coordinate system.
      *
@@ -85,5 +84,5 @@ export class WorldRenderEnvironment extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:236}
      */
     start(pipeline: RenderPipeline, textures: { [key: string]: AbstractTexture }, uniforms: { [key: string]: GpuBufferSlice }): VertexConsumer;
-    withMode(mode: DrawMode, block: Function1<WorldRenderEnvironment, void>): void;
+    withMode(mode: DrawMode, block: (param0: WorldRenderEnvironment) => void): void;
 }

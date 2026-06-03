@@ -8,6 +8,7 @@ import type { DataComponentType } from '../../../../../net/minecraft/core/compon
 import type { ClientboundAddEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { SoundSource } from '../../../../../net/minecraft/sounds/SoundSource.d.ts'
@@ -176,21 +177,28 @@ export class Shulker extends AbstractGolem implements Enemy {
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     // private isClosed(): boolean;
     // private isPositionBlocked(target: BlockPos): boolean;
+    makeBoundingBox(): AABB;
     makeBoundingBox(position: Vec3): AABB;
     move(moverType: MoverType, delta: Vec3): void;
     // private onPeekAmountChange(): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playAmbientSound(): void;
+    push(xa: number, ya: number, za: number): void;
     push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     recreateFromPacket(packet: ClientboundAddEntityPacket): void;
     registerGoals(): void;
     sanitizeScale(scale: number): number;
     // private setAttachFace(attachmentDirection: Direction): void;
+    setDeltaMovement(xd: number, yd: number, zd: number): void;
     setDeltaMovement(deltaMovement: Vec3): void;
     setPos(x: number, y: number, z: number): void;
+    setPos(pos: Vec3): void;
     // private setRawPeekAmount(amount: number): void;
     // private setVariant(color: Optional<DyeColor>): void;
+    startRiding(entity: Entity): boolean;
     startRiding(entity: Entity, force: boolean, sendEventAndTriggers: boolean): boolean;
     stopRiding(): void;
     teleportSomewhere(): boolean;

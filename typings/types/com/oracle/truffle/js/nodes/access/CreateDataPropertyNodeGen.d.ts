@@ -14,4 +14,5 @@ export class CreateDataPropertyNodeGen extends CreateDataPropertyNode {
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): void;
     executeVoid(arg0Value: Object, arg1Value: Object): void;
+    executeVoid(object: Object, propertyKey: Object, value: Object): void;
 }

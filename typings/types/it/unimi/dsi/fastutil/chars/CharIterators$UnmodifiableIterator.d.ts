@@ -11,6 +11,7 @@ export class CharIterators$UnmodifiableIterator extends Object implements CharIt
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;
     nextChar(): string;

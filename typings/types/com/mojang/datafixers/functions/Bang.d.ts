@@ -11,6 +11,7 @@ export class Bang<A extends Object | number | string | boolean> extends PointFre
     equals(arg0: Object | null): boolean;
     eval(): (param0: DynamicOps<Object>) => (param0: A) => Unit;
     hashCode(): number;
+    toString(): string;
     toString(arg0: number): string;
     type(): Type<(param0: A) => Unit>;
 }

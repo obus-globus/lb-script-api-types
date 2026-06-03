@@ -8,5 +8,6 @@ export class URLHandler$JarURLHandler extends URLHandler {
     constructor(arg0: URL)
     // private jarFile: JarFile;
     // private prefix: string;
+    guide(arg0: URLHandler$URLVisitor, arg1: boolean): void;
     guide(arg0: URLHandler$URLVisitor, arg1: boolean, arg2: boolean): void;
 }

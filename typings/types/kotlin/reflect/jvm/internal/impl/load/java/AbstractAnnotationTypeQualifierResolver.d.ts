@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
 import type { AnnotationQualifierApplicabilityType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/AnnotationQualifierApplicabilityType.d.ts'
 import type { JavaDefaultQualifiers } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/JavaDefaultQualifiers.d.ts'
@@ -18,8 +17,8 @@ export abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation extend
     extractAndMergeDefaultQualifiers(arg0: JavaTypeQualifiersByElementType, arg1: TAnnotation[], arg2: boolean): JavaTypeQualifiersByElementType;
     // private extractDefaultQualifiers(arg0: TAnnotation, arg1: boolean): JavaDefaultQualifiers;
     extractMutability(arg0: TAnnotation[]): MutabilityQualifier;
-    // private extractNullability(arg0: TAnnotation, arg1: Function1<TAnnotation, boolean>): NullabilityQualifierWithMigrationStatus;
-    extractNullability(arg0: TAnnotation[], arg1: Function1<TAnnotation, boolean>): NullabilityQualifierWithMigrationStatus;
+    // private extractNullability(arg0: TAnnotation, arg1: (param0: TAnnotation) => boolean): NullabilityQualifierWithMigrationStatus;
+    extractNullability(arg0: TAnnotation[], arg1: (param0: TAnnotation) => boolean): NullabilityQualifierWithMigrationStatus;
     // private findAnnotation(arg0: TAnnotation, arg1: FqName): TAnnotation;
     getFqName(arg0: TAnnotation): FqName;
     getKey(arg0: TAnnotation): Object;

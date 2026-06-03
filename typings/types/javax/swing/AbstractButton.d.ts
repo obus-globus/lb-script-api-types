@@ -20,6 +20,7 @@ import type { SwingConstants } from '../../javax/swing/SwingConstants.d.ts'
 import type { ChangeEvent } from '../../javax/swing/event/ChangeEvent.d.ts'
 import type { ChangeListener } from '../../javax/swing/event/ChangeListener.d.ts'
 import type { ButtonUI } from '../../javax/swing/plaf/ButtonUI.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class AbstractButton extends JComponent implements ItemSelectable, SwingConstants {
     static ABORT: number;
@@ -216,6 +217,7 @@ export abstract class AbstractButton extends JComponent implements ItemSelectabl
     setText(arg0: string): void;
     // private setTextFromAction(arg0: Action, arg1: boolean): void;
     setUI(arg0: ButtonUI): void;
+    setUI(arg0: ComponentUI): void;
     setUIProperty(arg0: string, arg1: Object): void;
     setVerticalAlignment(arg0: number): void;
     setVerticalTextPosition(arg0: number): void;

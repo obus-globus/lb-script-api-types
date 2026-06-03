@@ -1,5 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { DeserializationStrategy } from '../../../../kotlinx/serialization/DeserializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { AbstractDecoder } from '../../../../kotlinx/serialization/encoding/AbstractDecoder.d.ts'
@@ -50,9 +49,10 @@ export class StreamingJsonDecoder extends AbstractDecoder implements ChunkedDeco
     // private decodeObjectIndex(descriptor: SerialDescriptor): number;
     decodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
+    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeString(): string;
-    decodeStringChunked(consumeChunk: Function1<string, void>): void;
+    decodeStringChunked(consumeChunk: (param0: string) => void): void;
     // private decodeStringKey(): string;
     endStructure(descriptor: SerialDescriptor): void;
     // private handleUnknown(descriptor: SerialDescriptor, key: string): boolean;

@@ -4,6 +4,7 @@ import type { ChannelPromise } from '../../../io/netty/channel/ChannelPromise.d.
 import type { DefaultPromise } from '../../../io/netty/util/concurrent/DefaultPromise.d.ts'
 import type { Future } from '../../../io/netty/util/concurrent/Future.d.ts'
 import type { GenericFutureListener } from '../../../io/netty/util/concurrent/GenericFutureListener.d.ts'
+import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DefaultChannelPromise extends DefaultPromise<void> implements ChannelFlushPromiseNotifier$FlushCheckpoint, ChannelPromise {
@@ -15,7 +16,11 @@ export class DefaultChannelPromise extends DefaultPromise<void> implements Chann
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
     addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     await(): ChannelPromise;
+    await(arg0: number): boolean;
+    await(arg0: number, arg1: TimeUnit): boolean;
     awaitUninterruptibly(): ChannelPromise;
+    awaitUninterruptibly(arg0: number): boolean;
+    awaitUninterruptibly(arg0: number, arg1: TimeUnit): boolean;
     channel(): Channel;
     checkDeadLock(): void;
     executor(): (Object | null)[];
@@ -31,5 +36,6 @@ export class DefaultChannelPromise extends DefaultPromise<void> implements Chann
     sync(): ChannelPromise;
     syncUninterruptibly(): ChannelPromise;
     trySuccess(): boolean;
+    trySuccess(arg0: void): boolean;
     unvoid(): ChannelPromise;
 }

@@ -164,6 +164,7 @@ export class Turtle extends Animal {
     getDefaultDimensions(pose: Pose): EntityDimensions;
     getHurtSound(source: DamageSource): SoundEvent;
     getSwimSound(): SoundEvent;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     hasEgg(): boolean;
     isFood(itemStack: ItemStack): boolean;

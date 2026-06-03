@@ -1,3 +1,4 @@
+import type { Ops } from '../../../../../../../com/viaversion/viaversion/api/minecraft/codec/Ops.d.ts'
 import type { StructuredData } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredData.d.ts'
 import type { DataComponentMatchers } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/predicate/DataComponentMatchers.d.ts'
 import type { DataComponentPredicate } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/predicate/DataComponentPredicate.d.ts'
@@ -9,5 +10,6 @@ export class DataComponentMatchers$DataComponentMatchersType extends Type<DataCo
     // private dataArrayType: Type<StructuredData<Object>[]>;
     // private predicateArrayType: Type<DataComponentPredicate[]>;
     read(arg0: ByteBuf): DataComponentMatchers;
+    write(arg0: Ops, arg1: DataComponentMatchers): void;
     write(arg0: ByteBuf, arg1: DataComponentMatchers): void;
 }

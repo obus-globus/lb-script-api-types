@@ -32,6 +32,7 @@ export abstract class AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$Asyn
     // private callResolveOrReject(promise: JSDynamicObject, resolveOrReject: Object, resultValue: Object): void;
     getArgs(frame: VirtualFrame): T;
     getAsyncStackTraceInfo(handlerFunction: JSFunctionObject): AsyncHandlerRootNode$AsyncStackTraceInfo;
+    getAsyncStackTraceInfo(handlerFunction: JSFunctionObject, argument: Object): AsyncHandlerRootNode$AsyncStackTraceInfo;
     getAsyncStackTraceInfo(handlerFunction: JSFunctionObject): AsyncHandlerRootNode$AsyncStackTraceInfo;
     getAsyncStackTraceInfo(handlerFunction: JSFunctionObject, argument: Object): AsyncHandlerRootNode$AsyncStackTraceInfo;
     getThis(frame: VirtualFrame): JSAsyncGeneratorObject;

@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
@@ -25,7 +24,7 @@ export class IntersectionTypeConstructor extends Object implements TypeConstruct
     getSupertypes(): E[];
     hashCode(): number;
     isDenotable(): boolean;
-    makeDebugNameForIntersectionType(arg0: Function1<KotlinType, Object>): string;
+    makeDebugNameForIntersectionType(arg0: (param0: KotlinType) => any): string;
     refine(arg0: KotlinTypeRefiner): IntersectionTypeConstructor;
     setAlternative(arg0: KotlinType): IntersectionTypeConstructor;
     toString(): string;

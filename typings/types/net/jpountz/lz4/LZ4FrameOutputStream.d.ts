@@ -24,6 +24,7 @@ export class LZ4FrameOutputStream extends FilterOutputStream {
     close(): void;
     // private ensureNotFinished(): void;
     flush(): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     // private writeBlock(): void;

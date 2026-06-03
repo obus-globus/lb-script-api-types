@@ -14,6 +14,7 @@ export class StringBuilder extends AbstractStringBuilder implements Serializable
     constructor(arg0: CharSequence)
     constructor(arg0: number)
     constructor(arg0: string)
+    append(arg0: AbstractStringBuilder): AbstractStringBuilder;
     append(arg0: StringBuffer): StringBuilder;
     append(arg0: Object): StringBuilder;
     append(arg0: boolean): StringBuilder;
@@ -30,6 +31,7 @@ export class StringBuilder extends AbstractStringBuilder implements Serializable
     appendCodePoint(arg0: number): StringBuilder;
     chars(): IntStream;
     codePoints(): IntStream;
+    compareTo(arg0: AbstractStringBuilder): number;
     compareTo(arg0: StringBuilder): number;
     delete(arg0: number, arg1: number): StringBuilder;
     deleteCharAt(arg0: number): StringBuilder;

@@ -34,6 +34,7 @@ export class BackupConfirmScreen extends Screen {
     // private promptForCacheErase: boolean;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     shouldCloseOnEsc(): boolean;
 }

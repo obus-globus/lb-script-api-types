@@ -5,4 +5,5 @@ import type { RecordComponentRemapper } from '../../../../../../org/objectweb/as
 export class AsmClassRemapper$AsmRecordComponentRemapper extends RecordComponentRemapper {
     constructor(arg0: RecordComponentVisitor, arg1: AsmRemapper)
     createAnnotationRemapper(arg0: string, arg1: AnnotationVisitor): AnnotationVisitor;
+    createAnnotationRemapper(arg0: AnnotationVisitor): AnnotationVisitor;
 }

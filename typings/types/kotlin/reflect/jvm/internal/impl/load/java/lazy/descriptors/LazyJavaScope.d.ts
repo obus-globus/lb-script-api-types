@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { FunctionDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/FunctionDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -39,21 +38,21 @@ export abstract class LazyJavaScope extends MemberScopeImpl {
     // private mainScope: LazyJavaScope;
     // private properties: MemoizedFunctionToNotNull<Name, PropertyDescriptor[]>;
     // private propertyNamesLazy$delegate: NotNullLazyValue<Object>;
-    computeClassNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
-    computeDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): DeclarationDescriptor[];
-    computeFunctionNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computeClassNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
+    computeDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];
+    computeFunctionNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeImplicitlyDeclaredFunctions(arg0: E[], arg1: Name): void;
     computeMemberIndex(): DeclaredMemberIndex;
     computeMethodReturnType(arg0: JavaMethod, arg1: LazyJavaResolverContext): KotlinType;
     computeNonDeclaredFunctions(arg0: E[], arg1: Name): void;
     computeNonDeclaredProperties(arg0: Name, arg1: E[]): void;
-    computePropertyNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     // private createPropertyDescriptor(arg0: JavaField): PropertyDescriptorImpl;
     getAllDescriptors(): NotNullLazyValue<E[]>;
     getC(): LazyJavaResolverContext;
     // private getClassNamesLazy(): Name[];
     getClassifierNames(): Name[];
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
     getDeclaredMemberIndex(): NotNullLazyValue<DeclaredMemberIndex>;

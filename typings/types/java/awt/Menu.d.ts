@@ -23,6 +23,7 @@ export class Menu extends MenuItem implements MenuContainer, Accessible {
     constructComponentName(): string;
     countItems(): number;
     countItemsImpl(): number;
+    deleteShortcut(): void;
     deleteShortcut(arg0: MenuShortcut): void;
     getAccessibleChildIndex(arg0: MenuComponent): number;
     getAccessibleContext(): AccessibleContext;

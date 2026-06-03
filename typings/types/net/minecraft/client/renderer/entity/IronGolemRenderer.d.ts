@@ -15,6 +15,7 @@ export class IronGolemRenderer extends MobRenderer<IronGolem, IronGolemRenderSta
     constructor(context: EntityRendererProvider$Context)
     // private blockModelResolver: BlockModelResolver;
     createRenderState(): IronGolemRenderState;
+    createRenderState(entity: IronGolem, partialTicks: number): IronGolemRenderState;
     extractRenderState(entity: IronGolem, state: IronGolemRenderState, partialTicks: number): void;
     getTextureLocation(state: IronGolemRenderState): Identifier;
     setupRotations(state: IronGolemRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;

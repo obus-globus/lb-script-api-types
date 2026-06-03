@@ -20,6 +20,7 @@ export class NBTList extends NBTTag<NBTTag<Object>[]> {
     getElementType(): number;
     getElements(): Object[];
     getElements(arg0: Class<T>): T[];
+    getValue(): NBTTag<Object>[];
     getValue(arg0: Class<T>): T[];
     isEmpty(): boolean;
     readPayload(arg0: ByteBuffer): void;

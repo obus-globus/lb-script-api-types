@@ -1,4 +1,5 @@
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
+import type { Dynamic } from '../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { Writer } from '../../../../java/io/Writer.d.ts'
 import type { IllegalStateException } from '../../../../java/lang/IllegalStateException.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
@@ -20,6 +21,7 @@ import type { ChunkMapAccessor } from '../../../../net/fabricmc/fabric/mixin/net
 import type { ReportedException } from '../../../../net/minecraft/ReportedException.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts'
+import type { Tag } from '../../../../net/minecraft/nbt/Tag.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ClientGamePacketListener } from '../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
@@ -176,6 +178,9 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     // private updateChunkTracking(player: ServerPlayer): void;
     // private updatePlayerPos(player: ServerPlayer): void;
     updatePlayerStatus(player: ServerPlayer, added: boolean): void;
+    upgradeChunkTag(chunkTag: Dynamic<Tag>, defaultVersion: number): Dynamic<Tag>;
     // private upgradeChunkTag(tag: CompoundTag): CompoundTag;
+    upgradeChunkTag(chunkTag: CompoundTag, defaultVersion: number): CompoundTag;
+    upgradeChunkTag(chunkTag: CompoundTag, defaultVersion: number, dataFixContextTag: CompoundTag, targetVersion: number): CompoundTag;
     waitForLightBeforeSending(centerChunk: ChunkPos, chunkRadius: number): void;
 }

@@ -32,6 +32,8 @@ export class Short2LongArrayMap$MapEntry extends Object implements Short2LongMap
     left(arg0: number): ShortLongPair;
     left(arg0: number): ShortLongPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortLongPair;
     right(arg0: number): ShortLongPair;
     right(): number;
     right(arg0: number): ShortLongPair;

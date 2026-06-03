@@ -13,6 +13,8 @@ export class ObjectFloatMutablePair<K extends Object | number | string | boolean
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectFloatMutablePair<K>;
+    right(): number;
+    right(arg0: number): ObjectFloatPair<K>;
     right(arg0: number): ObjectFloatMutablePair<K>;
     right(): number;
     right(arg0: number): ObjectFloatPair<K>;

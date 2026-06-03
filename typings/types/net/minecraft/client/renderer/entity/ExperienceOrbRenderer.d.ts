@@ -10,6 +10,7 @@ export class ExperienceOrbRenderer extends EntityRenderer<ExperienceOrb, Experie
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ExperienceOrbRenderState;
+    createRenderState(entity: ExperienceOrb, partialTicks: number): ExperienceOrbRenderState;
     extractRenderState(entity: ExperienceOrb, state: ExperienceOrbRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: ExperienceOrb, blockPos: BlockPos): number;
     submit(state: ExperienceOrbRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

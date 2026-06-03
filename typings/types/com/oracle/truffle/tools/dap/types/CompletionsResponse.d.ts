@@ -12,4 +12,5 @@ export class CompletionsResponse extends Response {
     getBody(): CompletionsResponse$ResponseBody;
     hashCode(): number;
     setBody(body: CompletionsResponse$ResponseBody): CompletionsResponse;
+    setBody(body: Object): Response;
 }

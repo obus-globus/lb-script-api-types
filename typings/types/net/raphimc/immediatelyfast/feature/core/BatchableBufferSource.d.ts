@@ -15,6 +15,7 @@ export class BatchableBufferSource extends MultiBufferSource$BufferSource implem
     drawDirect(arg0: RenderType): void;
     endBatch(): void;
     endBatch(arg0: RenderType): void;
+    endBatch(type: RenderType, builder: BufferBuilder): void;
     endLastBatch(): void;
     getBuffer(arg0: RenderType): VertexConsumer;
     // private getNextByteBufferBuilder(): ByteBufferBuilder;

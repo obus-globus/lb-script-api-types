@@ -32,6 +32,7 @@ export abstract class AbstractNioChannel extends AbstractChannel {
     doConnect(arg0: SocketAddress, arg1: SocketAddress): boolean;
     doDeregister(): void;
     doFinishConnect(): void;
+    doRegister(): void;
     doRegister(arg0: ChannelPromise): void;
     isCompatible(arg0: (Object | null)[]): boolean;
     isOpen(): boolean;

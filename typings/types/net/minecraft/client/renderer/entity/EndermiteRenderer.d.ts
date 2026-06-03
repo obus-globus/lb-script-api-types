@@ -9,6 +9,7 @@ export class EndermiteRenderer extends MobRenderer<Endermite, LivingEntityRender
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): LivingEntityRenderState;
+    createRenderState(entity: Endermite, partialTicks: number): LivingEntityRenderState;
     getFlipDegrees(): number;
     getTextureLocation(state: LivingEntityRenderState): Identifier;
 }

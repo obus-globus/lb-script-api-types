@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { BrowserAccelerationFlags } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.d.ts'
 import type { BrowserBackend } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserBackend.d.ts'
@@ -29,7 +28,7 @@ export class ExternalSystemBrowserBackend extends Object implements EventListene
     // private addBrowser(browser: ExternalSystemBrowser): void;
     children(): EventListener[];
     createBrowser(url: string, position: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null): ExternalSystemBrowser;
-    makeDependenciesAvailable(taskManager: TaskManager, whenAvailable: Function0<void>): void;
+    makeDependenciesAvailable(taskManager: TaskManager, whenAvailable: () => void): void;
     parent(): EventListener | null;
     removeBrowser(browser: ExternalSystemBrowser): void;
     start(): void;

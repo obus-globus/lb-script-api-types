@@ -30,7 +30,7 @@ import type { Reference2LongFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Reference2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ObjectFunction.d.ts'
 import type { Short2LongFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2LongFunction.d.ts'
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { LongFunction } from '../../../../../java/util/function/LongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Long2ObjectFunction<V extends Object | number | string | boolean> extends Function<number, V>, LongFunction<V>, Object{
@@ -44,6 +44,7 @@ export interface Long2ObjectFunction<V extends Object | number | string | boolea
     andThenReference(arg0: (param0: V) => T): (param0: T) => unknown;
     andThenShort(arg0: (param0: V) => kotlin.Short): (param0: number) => kotlin.Short;
     apply<K extends Object | number | string | boolean>(arg0: K): V;
+    apply(arg0: number): V;
     apply(arg0: number): V;
     clear(): void;
     compose(arg0: (param0: T) => number): (param0: T) => V;

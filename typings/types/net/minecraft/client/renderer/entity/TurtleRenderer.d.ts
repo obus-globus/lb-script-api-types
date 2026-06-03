@@ -10,6 +10,7 @@ export class TurtleRenderer extends AgeableMobRenderer<Turtle, TurtleRenderState
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): TurtleRenderState;
+    createRenderState(entity: Turtle, partialTicks: number): TurtleRenderState;
     extractRenderState(entity: Turtle, state: TurtleRenderState, partialTicks: number): void;
     getShadowRadius(state: TurtleRenderState): number;
     getTextureLocation(state: TurtleRenderState): Identifier;

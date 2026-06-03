@@ -5,6 +5,7 @@ import type { PostRequest } from '../../../../../../net/lenni0451/commons/httpcl
 import type { RealmsResponseHandler } from '../../../../../../net/raphimc/minecraftauth/extra/realms/responsehandler/RealmsResponseHandler.d.ts'
 export class JavaRealmsTosAgreedRequest extends PostRequest implements RealmsResponseHandler<void> {
     constructor()
+    handle(arg0: HttpResponse): void;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

@@ -11,4 +11,5 @@ export class SynchronizedRegistryEitherType extends EitherType<number, string> {
     constructor(arg0: RegistryKey)
     // private registryKey: RegistryKey;
     write(arg0: Ops, arg1: Either<number, string>): void;
+    write(arg0: ByteBuf, arg1: Either<number, string>): void;
 }

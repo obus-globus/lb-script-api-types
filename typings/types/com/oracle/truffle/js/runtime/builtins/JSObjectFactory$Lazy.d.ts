@@ -13,6 +13,7 @@ export abstract class JSObjectFactory$Lazy extends JSObjectFactory {
     constructor(context: JSContext, slot: number)
     // private sharedShape: Shape;
     // private slot: number;
+    getShape(realm: JSRealm): Shape;
     getShape(realm: JSRealm, prototype: JSDynamicObject): Shape;
     makeInitialShape(prototype: JSDynamicObject): Shape;
 }

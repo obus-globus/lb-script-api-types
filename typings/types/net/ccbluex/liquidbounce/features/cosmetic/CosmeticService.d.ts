@@ -1,6 +1,5 @@
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Job } from '../../../../../kotlinx/coroutines/Job.d.ts'
 import type { Cosmetic } from '../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/Cosmetic.d.ts'
 import type { CosmeticCategory } from '../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/CosmeticCategory.d.ts'
@@ -36,7 +35,7 @@ export class CosmeticService extends ValueGroup implements EventListener {
     // private sessionHandler: EventHook<SessionEvent>;
     // private task: Job | null;
     children(): EventListener[];
-    fetchCosmetic(uuid: UUID, category: CosmeticCategory, done: Function1<Cosmetic, void>): void;
+    fetchCosmetic(uuid: UUID, category: CosmeticCategory, done: (param0: Cosmetic) => void): void;
     // private getCosmetic(uuid: UUID, category: CosmeticCategory): Cosmetic | null;
     hasCosmetic(uuid: UUID, category: CosmeticCategory): boolean;
     parent(): EventListener | null;

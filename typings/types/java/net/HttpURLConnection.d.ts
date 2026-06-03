@@ -66,6 +66,7 @@ export abstract class HttpURLConnection extends URLConnection {
     disconnect(): void;
     getErrorStream(): InputStream;
     getHeaderField(arg0: number): string;
+    getHeaderField(arg0: string): string;
     getHeaderFieldDate(arg0: string, arg1: number): number;
     getHeaderFieldKey(arg0: number): string;
     getInstanceFollowRedirects(): boolean;

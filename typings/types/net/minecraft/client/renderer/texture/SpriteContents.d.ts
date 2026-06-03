@@ -7,9 +7,9 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SpriteContentsExtension } from '../../../../../net/caffeinemc/mods/sodium/client/render/texture/SpriteContentsExtension.d.ts'
 import type { SpriteContentsAccessor } from '../../../../../net/irisshaders/iris/mixin/texture/SpriteContentsAccessor.d.ts'
-import type { SpriteContentsExtension } from '../../../../../net/irisshaders/iris/pbr/SpriteContentsExtension.d.ts'
+import type { SpriteContentsExtension as SpriteContentsExtension_2 } from '../../../../../net/irisshaders/iris/pbr/SpriteContentsExtension.d.ts'
 import type { PBRSpriteHolder } from '../../../../../net/irisshaders/iris/pbr/texture/PBRSpriteHolder.d.ts'
-import type { SpriteContentsExtension } from '../../../../../net/irisshaders/iris/pbr/texture/SpriteContentsExtension.d.ts'
+import type { SpriteContentsExtension as SpriteContentsExtension_3 } from '../../../../../net/irisshaders/iris/pbr/texture/SpriteContentsExtension.d.ts'
 import type { MipmapStrategy } from '../../../../../net/minecraft/client/renderer/texture/MipmapStrategy.d.ts'
 import type { SpriteContents$AnimatedTexture } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents$AnimatedTexture.d.ts'
 import type { SpriteContents$AnimationState } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents$AnimationState.d.ts'
@@ -20,7 +20,7 @@ import type { TextureMetadataSection } from '../../../../../net/minecraft/client
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MetadataSectionType } from '../../../../../net/minecraft/server/packs/metadata/MetadataSectionType.d.ts'
 import type { MetadataSectionType$WithValue } from '../../../../../net/minecraft/server/packs/metadata/MetadataSectionType$WithValue.d.ts'
-export class SpriteContents extends Object implements AutoCloseable, SpriteContentsExtension, SpriteContentsAccessor, SpriteContentsExtension, SpriteContentsExtension, Stitcher$Entry {
+export class SpriteContents extends Object implements AutoCloseable, SpriteContentsExtension, SpriteContentsAccessor, SpriteContentsExtension_2, SpriteContentsExtension_3, Stitcher$Entry {
     static UBO_SIZE: number;
     constructor(name: Identifier, frameSize: FrameSize, image: NativeImage)
     constructor(name: Identifier, frameSize: FrameSize, image: NativeImage, animationInfo: Optional<AnimationMetadataSection>, additionalMetadata: MetadataSectionType$WithValue<Object>[], textureInfo: Optional<TextureMetadataSection>)

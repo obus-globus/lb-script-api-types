@@ -5,6 +5,7 @@ export abstract class AbstractSortedSetMultimap<K extends Object | number | stri
     constructor(map: Map<K, E[]>)
     asMap(): Map<K, E[]>;
     createCollection(): V[];
+    createCollection(key: K): E[];
     createUnmodifiableEmptyCollection(): V[];
     get(key: K): V[];
     removeAll(key: Object): V[];

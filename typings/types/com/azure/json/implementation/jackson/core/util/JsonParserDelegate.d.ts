@@ -8,6 +8,7 @@ import type { JsonStreamContext } from '../../../../../../../com/azure/json/impl
 import type { JsonToken } from '../../../../../../../com/azure/json/implementation/jackson/core/JsonToken.d.ts'
 import type { ObjectCodec } from '../../../../../../../com/azure/json/implementation/jackson/core/ObjectCodec.d.ts'
 import type { StreamReadCapability } from '../../../../../../../com/azure/json/implementation/jackson/core/StreamReadCapability.d.ts'
+import type { StreamReadFeature } from '../../../../../../../com/azure/json/implementation/jackson/core/StreamReadFeature.d.ts'
 import type { Version } from '../../../../../../../com/azure/json/implementation/jackson/core/Version.d.ts'
 import type { JacksonFeatureSet } from '../../../../../../../com/azure/json/implementation/jackson/core/util/JacksonFeatureSet.d.ts'
 import type { OutputStream } from '../../../../../../../java/io/OutputStream.d.ts'
@@ -35,6 +36,7 @@ export class JsonParserDelegate extends JsonParser {
     enable(arg0: JsonParser$Feature): JsonParser;
     finishToken(): void;
     getBigIntegerValue(): BigInteger;
+    getBinaryValue(): number[];
     getBinaryValue(arg0: Base64Variant): number[];
     getBooleanValue(): boolean;
     getByteValue(): number;
@@ -84,6 +86,7 @@ export class JsonParserDelegate extends JsonParser {
     hasTokenId(arg0: number): boolean;
     isClosed(): boolean;
     isEnabled(arg0: JsonParser$Feature): boolean;
+    isEnabled(arg0: StreamReadFeature): boolean;
     isExpectedNumberIntToken(): boolean;
     isExpectedStartArrayToken(): boolean;
     isExpectedStartObjectToken(): boolean;

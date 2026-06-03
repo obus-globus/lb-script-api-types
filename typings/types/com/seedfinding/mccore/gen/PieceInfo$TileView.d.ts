@@ -8,6 +8,7 @@ export class PieceInfo$TileView extends Tile {
     constructor(arg0: PieceInfo, arg1: BPos)
     // private parent: PieceInfo;
     readonly pos: BPos;
+    copy(): Tile;
     copy(arg0: BlockPalette): Tile;
     copy(arg0: number): Tile;
     getBlockEntity(): NBTCompound;

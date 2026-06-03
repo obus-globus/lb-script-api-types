@@ -25,6 +25,7 @@ export class MessageFormat extends Format {
     // private applyPatternImpl(arg0: string): void;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Object, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     format(arg0: Object[], arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
@@ -37,6 +38,7 @@ export class MessageFormat extends Format {
     hashCode(): number;
     parse(arg0: string): Object[];
     parse(arg0: string, arg1: ParsePosition): Object[];
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     // private patternFromFormat(arg0: Format): string;
     // private readObject(arg0: ObjectInputStream): void;

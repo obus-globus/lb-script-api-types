@@ -1,16 +1,15 @@
 import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Random } from '../../java/util/Random.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { CollectionsKt__CollectionsJVMKt } from '../../kotlin/collections/CollectionsKt__CollectionsJVMKt.d.ts'
-import type { Random } from '../../kotlin/random/Random.d.ts'
+import type { Random as Random_2 } from '../../kotlin/random/Random.d.ts'
 export class CollectionsKt__CollectionsKt extends CollectionsKt__CollectionsJVMKt {
     static arrayListOf(paramarg0: Object | null): (Object | null)[];
     static asCollection(paramarg0: Object | null, paramarg1: boolean): E[];
     static binarySearch(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: number, paramarg3: number): number;
     static binarySearch(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: (param0: Object | null) => kotlin.Boolean, paramarg3: number, paramarg4: number): number;
-    static binarySearch(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: Function1<Object, number>): number;
-    static binarySearchBy(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: number, paramarg3: number, paramarg4: Function1<Object, Object>): number;
+    static binarySearch(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null) => number): number;
+    static binarySearchBy(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: number, paramarg3: number, paramarg4: (param0: Object | null) => Object | null): number;
     static build(paramarg0: (Object | null)[]): (Object | null)[];
     static collectionToArrayCommonImpl(paramarg0: E[], paramarg1: Object | null): Object | null;
     static collectionToArrayCommonImpl(paramarg0: E[]): (Object | null)[];
@@ -28,7 +27,7 @@ export class CollectionsKt__CollectionsKt extends CollectionsKt__CollectionsJVMK
     static optimizeReadOnlyList(paramarg0: (Object | null)[]): (Object | null)[];
     static shuffled(paramarg0: (Object | null)[]): (Object | null)[];
     static shuffled(paramarg0: (Object | null)[], paramarg1: Random): (Object | null)[];
-    static shuffled(paramarg0: (Object | null)[], paramarg1: Random): (Object | null)[];
+    static shuffled(paramarg0: (Object | null)[], paramarg1: Random_2): (Object | null)[];
     static terminateCollectionToArray(paramarg0: number, paramarg1: Object | null): Object | null;
     static throwCountOverflow(): void;
     static throwIndexOverflow(): void;

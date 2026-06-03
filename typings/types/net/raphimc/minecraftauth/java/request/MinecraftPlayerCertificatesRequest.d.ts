@@ -7,6 +7,7 @@ import type { MinecraftToken } from '../../../../../net/raphimc/minecraftauth/ja
 import type { MinecraftServicesResponseHandler } from '../../../../../net/raphimc/minecraftauth/java/responsehandler/MinecraftServicesResponseHandler.d.ts'
 export class MinecraftPlayerCertificatesRequest extends PostRequest implements MinecraftServicesResponseHandler<MinecraftPlayerCertificates> {
     constructor(arg0: MinecraftToken)
+    handle(arg0: HttpResponse): MinecraftPlayerCertificates;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftPlayerCertificates;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

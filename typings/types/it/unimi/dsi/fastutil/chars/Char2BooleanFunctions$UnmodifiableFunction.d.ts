@@ -6,6 +6,7 @@ export class Char2BooleanFunctions$UnmodifiableFunction extends AbstractChar2Boo
     constructor(arg0: (param0: string) => kotlin.Boolean)
     // private function: (param0: string) => kotlin.Boolean;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;

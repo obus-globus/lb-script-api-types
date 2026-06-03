@@ -54,6 +54,7 @@ export class SeekableXZInputStream extends SeekableInputStream {
     // private locateBlockByPos(info: BlockInfo, pos: number): void;
     position(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(buf: number[], off: number, len: number): number;
     // private seek(): void;
     seek(pos: number): void;

@@ -5,7 +5,7 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { Calendar } from '../../../../java/util/Calendar.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { TimeZone } from '../../../../java/util/TimeZone.d.ts'
+import type { TimeZone as TimeZone_2 } from '../../../../java/util/TimeZone.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JavaTimeZone extends TimeZone {
     static GENERIC_LOCATION: number;
@@ -46,15 +46,16 @@ export class JavaTimeZone extends TimeZone {
     static setDefaultTimeZoneType(paramarg0: number): void;
     static setICUDefault(paramarg0: TimeZone): void;
     constructor()
-    constructor(arg0: TimeZone, arg1: string)
+    constructor(arg0: TimeZone_2, arg1: string)
     // private isFrozen: boolean;
     // private javacal: Calendar;
-    // private javatz: TimeZone;
+    // private javatz: TimeZone_2;
     clone(): Object;
     cloneAsThawed(): TimeZone;
     freeze(): TimeZone;
     getDSTSavings(): number;
     getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
+    getOffset(arg0: number): number;
     getOffset(arg0: number, arg1: boolean, arg2: number[]): void;
     getRawOffset(): number;
     hashCode(): number;
@@ -63,6 +64,6 @@ export class JavaTimeZone extends TimeZone {
     observesDaylightTime(): boolean;
     // private readObject(arg0: ObjectInputStream): void;
     setRawOffset(arg0: number): void;
-    unwrap(): TimeZone;
+    unwrap(): TimeZone_2;
     useDaylightTime(): boolean;
 }

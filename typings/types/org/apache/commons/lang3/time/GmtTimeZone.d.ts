@@ -20,6 +20,7 @@ export class GmtTimeZone extends TimeZone {
     equals(arg0: Object | null): boolean;
     getID(): string;
     getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
+    getOffset(arg0: number): number;
     getRawOffset(): number;
     hashCode(): number;
     inDaylightTime(arg0: Date): boolean;

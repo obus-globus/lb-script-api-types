@@ -1,6 +1,9 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
+import type { URI } from '../../../../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
+import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { ConfigurationFactory } from '../../../../../../../org/apache/logging/log4j/core/config/ConfigurationFactory.d.ts'
 import type { ConfigurationSource } from '../../../../../../../org/apache/logging/log4j/core/config/ConfigurationSource.d.ts'
 import type { ConfigurationBuilder } from '../../../../../../../org/apache/logging/log4j/core/config/builder/api/ConfigurationBuilder.d.ts'
@@ -24,6 +27,8 @@ export class PropertiesConfigurationFactory extends ConfigurationFactory {
     static resetConfigurationFactory(): void;
     static setConfigurationFactory(paramfactory: ConfigurationFactory): void;
     constructor()
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI): Configuration;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI, loader: ClassLoader): Configuration;
     getConfiguration(loggerContext: LoggerContext, source: ConfigurationSource): PropertiesConfiguration;
     getSupportedTypes(): string[];
 }

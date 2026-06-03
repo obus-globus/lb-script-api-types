@@ -43,5 +43,6 @@ export class HttpHeaderDateFormat extends SimpleDateFormat {
     private constructor()
     // private format1: SimpleDateFormat;
     // private format2: SimpleDateFormat;
+    parse(arg0: string): Date;
     parse(arg0: string, arg1: ParsePosition): Date;
 }

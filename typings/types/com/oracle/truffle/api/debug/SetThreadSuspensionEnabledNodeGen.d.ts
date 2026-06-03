@@ -6,6 +6,7 @@ export class SetThreadSuspensionEnabledNodeGen extends SetThreadSuspensionEnable
     private constructor()
     // private cached_cache: SetThreadSuspensionEnabledNodeGen$CachedData;
     // private state_0_: number;
+    execute(suspensionEnabled: boolean, sessions: Breakpoint$SessionList): void;
     execute(arg0Value: boolean, arg1Value: Breakpoint$SessionList, arg2Value: number): void;
     // private executeAndSpecialize(arg0Value: boolean, arg1Value: Breakpoint$SessionList, arg2Value: number): void;
 }

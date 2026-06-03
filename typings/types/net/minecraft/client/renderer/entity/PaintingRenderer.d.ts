@@ -13,6 +13,7 @@ export class PaintingRenderer extends EntityRenderer<Painting, PaintingRenderSta
     constructor(context: EntityRendererProvider$Context)
     // private paintingsAtlas: TextureAtlas;
     createRenderState(): PaintingRenderState;
+    createRenderState(entity: Painting, partialTicks: number): PaintingRenderState;
     extractRenderState(entity: Painting, state: PaintingRenderState, partialTicks: number): void;
     // private renderPainting(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, renderType: RenderType, lightCoordsMap: number[], width: number, height: number, front: TextureAtlasSprite, back: TextureAtlasSprite): void;
     submit(state: PaintingRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

@@ -20,6 +20,7 @@ export class EntityPacketRewriter1_20_5 extends EntityRewriter<ClientboundPacket
     // private sendCarpetColorUpdate(arg0: UserConnection, arg1: number, arg2: Item): void;
     // private toMappings(arg0: RegistryEntry[]): KeyMappings;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private updateDimensionTypeData(arg0: Map$Entry<string, Tag>[]): void;
     // private updateParticleFormat(arg0: Map$Entry<string, Tag>[], arg1: string): void;
 }

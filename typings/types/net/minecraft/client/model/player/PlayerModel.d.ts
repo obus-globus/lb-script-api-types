@@ -7,6 +7,7 @@ import type { MeshDefinition } from '../../../../../net/minecraft/client/model/g
 import type { MeshTransformer } from '../../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 import type { ArmorModelSet } from '../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { AvatarRenderState } from '../../../../../net/minecraft/client/renderer/entity/state/AvatarRenderState.d.ts'
+import type { HumanoidRenderState } from '../../../../../net/minecraft/client/renderer/entity/state/HumanoidRenderState.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { HumanoidArm } from '../../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
 export class PlayerModel extends HumanoidModel<AvatarRenderState> {
@@ -32,4 +33,5 @@ export class PlayerModel extends HumanoidModel<AvatarRenderState> {
     getRandomBodyPart(random: RandomSource): ModelPart;
     setupAnim(state: AvatarRenderState): void;
     translateToHand(state: AvatarRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
+    translateToHand(state: HumanoidRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
 }

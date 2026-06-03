@@ -14,6 +14,7 @@ export class DefaultOioDatagramChannelConfig extends DefaultDatagramChannelConfi
     constructor(arg0: DatagramChannel, arg1: DatagramSocket)
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSoTimeout(): number;
     setAllocator(arg0: ByteBufAllocator): OioDatagramChannelConfig;
     setAutoClose(arg0: boolean): OioDatagramChannelConfig;

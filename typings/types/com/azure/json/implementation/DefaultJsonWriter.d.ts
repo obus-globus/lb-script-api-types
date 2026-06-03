@@ -15,6 +15,7 @@ export class DefaultJsonWriter extends JsonWriter {
     getWriteContext(): JsonWriteContext;
     writeBinary(arg0: number[]): JsonWriter;
     writeBoolean(arg0: boolean): JsonWriter;
+    writeBoolean(arg0: boolean): JsonWriter;
     writeDouble(arg0: number): JsonWriter;
     writeEndArray(): JsonWriter;
     writeEndObject(): JsonWriter;
@@ -25,6 +26,8 @@ export class DefaultJsonWriter extends JsonWriter {
     writeNull(): JsonWriter;
     writeRawValue(arg0: string): JsonWriter;
     writeStartArray(): JsonWriter;
+    writeStartArray(arg0: string): JsonWriter;
     writeStartObject(): JsonWriter;
+    writeStartObject(arg0: string): JsonWriter;
     writeString(arg0: string): JsonWriter;
 }

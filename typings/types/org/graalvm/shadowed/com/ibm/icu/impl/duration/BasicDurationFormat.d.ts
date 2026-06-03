@@ -15,6 +15,7 @@ export class BasicDurationFormat extends DurationFormat {
     // private formatter: DurationFormatter;
     // private pformatter: PeriodFormatter;
     // private pfs: PeriodFormatterService;
+    format(arg0: Object): string;
     format(object: Object, toAppend: StringBuffer, pos: FieldPosition): StringBuffer;
     formatDuration(obj: Object): string;
     formatDurationFrom(duration: number, referenceDate: number): string;

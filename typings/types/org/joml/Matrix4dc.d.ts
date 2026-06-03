@@ -34,6 +34,7 @@ export interface Matrix4dc extends Object{
     determinant(): number;
     determinant3x3(): number;
     determinantAffine(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix4dc, arg1: number): boolean;
     fma4x3(arg0: Matrix4dc, arg1: number, arg2: Matrix4d): Matrix4d;
     frustum(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: boolean, arg7: Matrix4d): Matrix4d;

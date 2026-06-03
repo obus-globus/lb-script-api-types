@@ -6,6 +6,7 @@ export class ThrowableInvertedStackTraceRenderer extends ThrowableStackTraceRend
     constructor(ignoredPackageNames: string[], maxLineCount: number)
     // private renderCause(buffer: StringBuilder, cause: Throwable, context: ThrowableStackTraceRenderer$Context, visitedThrowables: Throwable[], prefix: string, lineSeparator: string, lineCapacityAcquired: boolean): boolean;
     renderSuppressed(buffer: StringBuilder, suppressedThrowables: Throwable[], context: ThrowableStackTraceRenderer$Context, visitedThrowables: Throwable[], prefix: string, lineSeparator: string): void;
+    renderThrowable(buffer: StringBuilder, throwable: Throwable, lineSeparator: string): void;
     renderThrowable(buffer: StringBuilder, throwable: Throwable, context: ThrowableStackTraceRenderer$Context, visitedThrowables: Throwable[], lineSeparator: string): void;
     // private renderThrowable(buffer: StringBuilder, throwable: Throwable, context: ThrowableStackTraceRenderer$Context, visitedThrowables: Throwable[], prefix: string, lineSeparator: string, lineCapacityAcquired: boolean): void;
 }

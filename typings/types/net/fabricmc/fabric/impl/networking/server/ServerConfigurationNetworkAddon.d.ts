@@ -39,7 +39,10 @@ export class ServerConfigurationNetworkAddon extends AbstractChanneledNetworkAdd
     receive(arg0: (param0: Object | null, param1: ServerConfigurationNetworking$Context) => void, arg1: CustomPacketPayload): void;
     receiveRegistration(arg0: boolean, arg1: RegistrationPayload): void;
     schedule(arg0: () => void): void;
+    sendPacket(arg0: Packet<Object>): void;
     sendPacket(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
+    sendPacket(arg0: CustomPacketPayload): void;
+    sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
     setReconfiguring(): void;
     startConfiguration(): boolean;
 }

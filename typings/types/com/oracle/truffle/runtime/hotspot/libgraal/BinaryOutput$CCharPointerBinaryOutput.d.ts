@@ -21,6 +21,13 @@ export class BinaryOutput$CCharPointerBinaryOutput extends BinaryOutput implemen
     getAddress(): CCharPointer;
     getPosition(): number;
     skip(numberOfBytes: number): void;
+    write(array: (Object | null)[], off: number, len: number): void;
     write(b: number[], off: number, len: number): void;
+    write(array: string[], off: number, len: number): void;
+    write(array: number[], off: number, len: number): void;
+    write(array: number[], off: number, len: number): void;
     write(b: number): void;
+    write(array: number[], off: number, len: number): void;
+    write(array: number[], off: number, len: number): void;
+    write(array: number[], off: number, len: number): void;
 }

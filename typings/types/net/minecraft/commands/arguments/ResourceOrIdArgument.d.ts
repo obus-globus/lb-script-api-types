@@ -52,5 +52,6 @@ export class ResourceOrIdArgument<T extends Object | number | string | boolean> 
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): Holder<T>;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder<T>;
     // private parse(reader: StringReader, grammar: Grammar<ResourceOrIdArgument$Result<T, O>>, ops: DynamicOps<O>): Holder<T>;
 }

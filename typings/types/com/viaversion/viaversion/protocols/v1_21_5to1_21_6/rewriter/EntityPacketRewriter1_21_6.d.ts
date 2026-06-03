@@ -9,4 +9,5 @@ export class EntityPacketRewriter1_21_6 extends EntityRewriter<ClientboundPacket
     registerRewrites(): void;
     // private serverLinksDialog(): RegistryEntry;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

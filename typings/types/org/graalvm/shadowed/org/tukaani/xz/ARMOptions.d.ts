@@ -9,6 +9,8 @@ export class ARMOptions extends BCJOptions {
     static getEncoderMemoryUsage(paramoptions: (Object | null)[]): number;
     constructor()
     getFilterEncoder(): FilterEncoder;
+    getInputStream(in_: InputStream): InputStream;
     getInputStream(in_: InputStream, arrayCache: ArrayCache): InputStream;
+    getOutputStream(out: FinishableOutputStream): FinishableOutputStream;
     getOutputStream(out: FinishableOutputStream, arrayCache: ArrayCache): FinishableOutputStream;
 }

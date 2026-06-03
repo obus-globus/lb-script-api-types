@@ -15,6 +15,7 @@ export class StrMatcher$StringMatcher extends StrMatcher {
     static trimMatcher(): StrMatcher;
     constructor(str: string)
     // private chars: string[];
+    isMatch(buffer: string[], pos: number): number;
     isMatch(buffer: string[], pos: number, bufferStart: number, bufferEnd: number): number;
     toString(): string;
 }

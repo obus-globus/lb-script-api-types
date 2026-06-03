@@ -6,8 +6,10 @@ import type { BlockPos$MutableBlockPos } from '../../../../../../net/minecraft/c
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { LevelAccessor } from '../../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
+import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -118,4 +120,5 @@ export class TwistingVinesFeature extends Feature<TwistingVinesConfig> {
     static placeWeepingVinesColumn(paramlevel: LevelAccessor, paramrandom: RandomSource, paramplacePos: BlockPos$MutableBlockPos, paramtotalHeight: number, paramminAge: number, paramnaxAge: number): void;
     constructor(codec: Codec<TwistingVinesConfig>)
     place(context: FeaturePlaceContext<TwistingVinesConfig>): boolean;
+    place(config: TwistingVinesConfig, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
 }

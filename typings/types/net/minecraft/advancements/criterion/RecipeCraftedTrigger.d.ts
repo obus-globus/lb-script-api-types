@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { RecipeCraftedTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/RecipeCraftedTrigger$TriggerInstance.d.ts'
 import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/criterion/SimpleCriterionTrigger.d.ts'
@@ -9,5 +10,6 @@ import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recip
 export class RecipeCraftedTrigger extends SimpleCriterionTrigger<RecipeCraftedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<RecipeCraftedTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: RecipeCraftedTrigger$TriggerInstance) => kotlin.Boolean): void;
     trigger(player: ServerPlayer, id: ResourceKey<Recipe<Object>>, usedIngredients: ItemStack[]): void;
 }

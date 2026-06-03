@@ -24,6 +24,7 @@ import type { GrowingPlantBlock } from '../../../../../net/minecraft/world/level
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockBehaviour$Properties } from '../../../../../net/minecraft/world/level/block/state/BlockBehaviour$Properties.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export abstract class GrowingPlantBodyBlock extends GrowingPlantBlock implements BonemealableBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
@@ -80,6 +81,7 @@ export abstract class GrowingPlantBodyBlock extends GrowingPlantBlock implements
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties, growthDirection: Direction, shape: VoxelShape, scheduleFluidTicks: boolean)
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     codec(): MapCodec<GrowingPlantBodyBlock>;
     getBodyBlock(): Block;
     getCloneItemStack(level: LevelReader, pos: BlockPos, state: BlockState, includeData: boolean): ItemStack;

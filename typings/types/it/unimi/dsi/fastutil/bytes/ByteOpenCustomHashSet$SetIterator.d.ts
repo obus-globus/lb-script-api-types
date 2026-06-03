@@ -14,6 +14,8 @@ export class ByteOpenCustomHashSet$SetIterator extends Object implements ByteIte
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextByte(): number;

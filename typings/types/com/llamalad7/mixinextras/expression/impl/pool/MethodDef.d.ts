@@ -8,6 +8,7 @@ import type { MemberInfo } from '../../../../../../org/spongepowered/asm/mixin/i
 export class MethodDef extends Object implements SimpleMemberDefinition {
     constructor(arg0: string, arg1: InjectionInfo)
     // private memberInfo: MemberInfo;
+    matches(arg0: FlowValue): boolean;
     matches(arg0: Handle): boolean;
     matches(arg0: AbstractInsnNode): boolean;
     matches(arg0: FlowValue): boolean;

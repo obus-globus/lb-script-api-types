@@ -16,6 +16,7 @@ export class SocketEventListener extends Object implements EventListener {
     registerAll(): void;
     // private serializeAndBroadcast(event: Event): void;
     unregister(): void;
+    unregister(): void;
     unregister(name: string): void;
     // private writeToSockets(event: Event): void;
 }

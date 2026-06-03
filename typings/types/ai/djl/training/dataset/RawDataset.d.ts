@@ -7,6 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface RawDataset<T extends Object | number | string | boolean> extends Dataset, Object{
     getData(arg0: NDManager, arg1: ExecutorService): Batch[];
     getData(): T;
+    getData(arg0: NDManager, arg1: ExecutorService): Batch[];
     matchingTranslatorOptions(): TranslatorOptions;
     prepare(): void;
 }

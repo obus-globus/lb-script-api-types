@@ -3,7 +3,7 @@ import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/double
 import type { DoubleSpliterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleSpliterator.d.ts'
 import type { Reference2DoubleOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2DoubleOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
+import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Reference2DoubleOpenHashMap$ValueSpliterator extends Reference2DoubleOpenHashMap$MapSpliterator<Object, Object> implements DoubleSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;

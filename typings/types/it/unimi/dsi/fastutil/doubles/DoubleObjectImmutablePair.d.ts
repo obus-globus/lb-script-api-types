@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { DoubleObjectPair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class DoubleObjectImmutablePair<V extends Object | number | string | bool
     left(arg0: number): DoubleObjectPair<V>;
     leftDouble(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

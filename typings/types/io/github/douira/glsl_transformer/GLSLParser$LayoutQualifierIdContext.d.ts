@@ -4,5 +4,6 @@ export class GLSLParser$LayoutQualifierIdContext extends ParserRuleContext {
     constructor()
     constructor(arg0: ParserRuleContext, arg1: number)
     copyFrom(arg0: GLSLParser$LayoutQualifierIdContext): void;
+    copyFrom(arg0: ParserRuleContext): void;
     getRuleIndex(): number;
 }

@@ -72,6 +72,7 @@ export class Long2IntFunctions$PrimitiveFunction extends Object implements Long2
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
+    put(arg0: number, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: number): number;
 }

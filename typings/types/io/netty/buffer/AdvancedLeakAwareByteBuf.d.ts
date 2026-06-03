@@ -19,6 +19,7 @@ export class AdvancedLeakAwareByteBuf extends SimpleLeakAwareByteBuf {
     bytesBefore(arg0: number): number;
     bytesBefore(arg0: number, arg1: number): number;
     bytesBefore(arg0: number, arg1: number, arg2: number): number;
+    capacity(): number;
     capacity(arg0: number): ByteBuf;
     copy(): ByteBuf;
     copy(arg0: number, arg1: number): ByteBuf;
@@ -69,6 +70,7 @@ export class AdvancedLeakAwareByteBuf extends SimpleLeakAwareByteBuf {
     nioBufferCount(): number;
     nioBuffers(): ByteBuffer[];
     nioBuffers(arg0: number, arg1: number): ByteBuffer[];
+    order(): ByteOrder;
     order(arg0: ByteOrder): ByteBuf;
     readBoolean(): boolean;
     readByte(): number;
@@ -138,6 +140,7 @@ export class AdvancedLeakAwareByteBuf extends SimpleLeakAwareByteBuf {
     skipBytes(arg0: number): ByteBuf;
     slice(): ByteBuf;
     slice(arg0: number, arg1: number): ByteBuf;
+    toString(): string;
     toString(arg0: Charset): string;
     toString(arg0: number, arg1: number, arg2: Charset): string;
     touch(): ByteBuf;

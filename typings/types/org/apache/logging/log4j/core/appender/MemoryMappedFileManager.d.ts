@@ -33,5 +33,8 @@ export class MemoryMappedFileManager extends OutputStreamManager {
     isImmediateFlush(): boolean;
     // private remap(): void;
     setEndOfBatch(endOfBatch: boolean): void;
+    write(bytes: number[]): void;
+    write(bytes: number[], immediateFlush: boolean): void;
+    write(bytes: number[], offset: number, length: number): void;
     write(bytes: number[], offset: number, length: number, immediateFlush: boolean): void;
 }

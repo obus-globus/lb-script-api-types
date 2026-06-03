@@ -19,6 +19,8 @@ export class FloatObjectMutablePair<V extends Object | number | string | boolean
     key(arg0: number): FloatObjectPair<V>;
     key(arg0: number): FloatObjectPair<V>;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatObjectPair<V>;
     left(arg0: number): FloatObjectMutablePair<V>;
     left(): number;
     left(arg0: number): FloatObjectPair<V>;

@@ -7,6 +7,7 @@ export class DFACaptureGroupLazyTransition$BranchesWithLookupTable extends DFACa
     static create(paramtransitions: (Object | null)[], paramlookupTable: number[]): DFACaptureGroupLazyTransition$BranchesWithLookupTable;
     constructor(transitions: DFACaptureGroupPartialTransition[], lookupTable: number[])
     // private lookupTable: number[];
+    apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode): void;
     apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode, preFinal: boolean): void;
     equals(o: Object | null): boolean;
     hashCode(): number;

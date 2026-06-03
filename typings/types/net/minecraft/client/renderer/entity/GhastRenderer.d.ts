@@ -10,6 +10,7 @@ export class GhastRenderer extends MobRenderer<Ghast, GhastRenderState, GhastMod
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): GhastRenderState;
+    createRenderState(entity: Ghast, partialTicks: number): GhastRenderState;
     extractRenderState(entity: Ghast, state: GhastRenderState, partialTicks: number): void;
     getTextureLocation(state: GhastRenderState): Identifier;
 }

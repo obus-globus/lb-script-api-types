@@ -69,6 +69,7 @@ export class ICUResourceBundleImpl$ResourceTable extends ICUResourceBundleImpl$R
     constructor(wholeBundle: ICUResourceBundle$WholeBundle, rootRes: number)
     constructor(container: ICUResourceBundleImpl, key: string, resource: number)
     findString(key: string): string;
+    getKey(): string;
     getKey(index: number): string;
     getType(): number;
     handleGet(index: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;

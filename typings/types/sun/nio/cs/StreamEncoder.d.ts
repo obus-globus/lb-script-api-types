@@ -38,8 +38,10 @@ export class StreamEncoder extends Writer {
     implWrite(arg0: string[], arg1: number, arg2: number): void;
     // private isOpen(): boolean;
     write(arg0: CharBuffer): void;
+    write(arg0: string[]): void;
     write(arg0: string[], arg1: number, arg2: number): void;
     write(arg0: number): void;
+    write(arg0: string): void;
     write(arg0: string, arg1: number, arg2: number): void;
     // private writeBytes(): void;
 }

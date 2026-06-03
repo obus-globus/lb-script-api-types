@@ -32,5 +32,7 @@ export abstract class LiteralNode<T extends Object | number | string | boolean> 
     getValue(): T;
     isArray(): boolean;
     isString(): boolean;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

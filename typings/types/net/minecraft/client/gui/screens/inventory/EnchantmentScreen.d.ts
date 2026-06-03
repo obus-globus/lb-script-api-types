@@ -36,6 +36,7 @@ export class EnchantmentScreen extends AbstractContainerScreen<EnchantmentMenu> 
     // private extractBook(graphics: GuiGraphicsExtractor, left: number, top: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, ignored: number): void;
     init(): void;
+    init(width: number, height: number): void;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     tickBook(): void;
 }

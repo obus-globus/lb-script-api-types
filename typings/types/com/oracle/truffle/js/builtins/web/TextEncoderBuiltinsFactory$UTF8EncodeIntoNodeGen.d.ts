@@ -14,6 +14,7 @@ export class TextEncoderBuiltinsFactory$UTF8EncodeIntoNodeGen extends TextEncode
     // private interopBuffer_asByteBufferInterop_: InteropLibrary;
     // private interopBuffer_bufferInterop_: InteropLibrary;
     // private state_0_: number;
+    execute(string: TruffleString, destination: JSTypedArrayObject): number;
     execute(arg0Value: TruffleString, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: number): number;
     // private executeAndSpecialize(arg0Value: TruffleString, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: number): number;
 }

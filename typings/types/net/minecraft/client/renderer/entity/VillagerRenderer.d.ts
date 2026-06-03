@@ -12,6 +12,7 @@ export class VillagerRenderer extends AgeableMobRenderer<Villager, VillagerRende
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): VillagerRenderState;
+    createRenderState(entity: Villager, partialTicks: number): VillagerRenderState;
     extractRenderState(entity: Villager, state: VillagerRenderState, partialTicks: number): void;
     getShadowRadius(state: VillagerRenderState): number;
     getTextureLocation(state: VillagerRenderState): Identifier;

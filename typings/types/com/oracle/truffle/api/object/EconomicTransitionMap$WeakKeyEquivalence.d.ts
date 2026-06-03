@@ -6,5 +6,7 @@ export class EconomicTransitionMap$WeakKeyEquivalence extends Equivalence {
     static IDENTITY_WITH_SYSTEM_HASHCODE: Equivalence;
     private constructor()
     equals(a: Object, b: Object): boolean;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
     hashCode(o: Object): number;
 }

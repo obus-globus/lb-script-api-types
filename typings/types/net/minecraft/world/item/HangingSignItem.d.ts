@@ -9,6 +9,7 @@ import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { Item$Properties } from '../../../../net/minecraft/world/item/Item$Properties.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { SignItem } from '../../../../net/minecraft/world/item/SignItem.d.ts'
+import type { BlockPlaceContext } from '../../../../net/minecraft/world/item/context/BlockPlaceContext.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelReader } from '../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
@@ -34,5 +35,6 @@ export class HangingSignItem extends SignItem {
     static setBlockEntityData(paramstack: ItemStack, paramtype: BlockEntityType<Object>, paramoutput: TagValueOutput): void;
     static updateCustomBlockEntityTag(paramlevel: Level, paramplayer: Player, parampos: BlockPos, paramitemStack: ItemStack): boolean;
     constructor(hangingSign: Block, wallHangingSign: Block, properties: Item$Properties)
+    canPlace(context: BlockPlaceContext, stateForPlacement: BlockState): boolean;
     canPlace(level: LevelReader, possibleState: BlockState, pos: BlockPos): boolean;
 }

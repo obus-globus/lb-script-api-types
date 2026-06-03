@@ -15,7 +15,7 @@ import type { Holder } from '../../../net/minecraft/core/Holder.d.ts'
 import type { Connection } from '../../../net/minecraft/network/Connection.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { MobEffect } from '../../../net/minecraft/world/effect/MobEffect.d.ts'
-import type { Item } from '../../../net/minecraft/world/item/Item.d.ts'
+import type { Item as Item_2 } from '../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Enchantment } from '../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 import type { BannerPattern } from '../../../net/minecraft/world/level/block/entity/BannerPattern.d.ts'
@@ -50,8 +50,8 @@ export class ViaFabricPlusImpl extends Object implements ViaFabricPlusBase {
     getUserConnection(arg0: Connection): UserConnection;
     getVersion(): string;
     init(): void;
-    itemExists(arg0: Item, arg1: ProtocolVersion): boolean;
-    itemExistsInConnection(arg0: Item): boolean;
+    itemExists(arg0: Item_2, arg1: ProtocolVersion): boolean;
+    itemExistsInConnection(arg0: Item_2): boolean;
     itemExistsInConnection(arg0: ItemStack): boolean;
     openProtocolSelectionScreen(arg0: Screen): void;
     openSettingsScreen(arg0: Screen): void;

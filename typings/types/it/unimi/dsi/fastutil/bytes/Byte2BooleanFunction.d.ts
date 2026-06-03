@@ -33,7 +33,7 @@ import type { Reference2BooleanFunction } from '../../../../../it/unimi/dsi/fast
 import type { Reference2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteFunction.d.ts'
 import type { Short2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2BooleanFunction.d.ts'
 import type { Short2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ByteFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntPredicate } from '../../../../../java/util/function/IntPredicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Byte2BooleanFunction extends Function<number, boolean>, IntPredicate, Object{

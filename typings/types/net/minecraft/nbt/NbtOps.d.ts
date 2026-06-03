@@ -44,6 +44,7 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     createLongList(input: LongStream): Tag;
     createMap<T extends Object | number | string | boolean>(arg0: Map<T, T>): T;
     createMap(map: Stream<Pair<Tag, Tag>>): Tag;
+    createMap(arg0: Map<Tag, Tag>): Tag;
     createNumeric(i: Number): Tag;
     createShort<T extends Object | number | string | boolean>(arg0: number): T;
     createShort(value: number): Tag;
@@ -71,6 +72,7 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     getMapValues(input: Tag): DataResult<Stream<Pair<Tag, Tag>>>;
     getNumberValue<T extends Object | number | string | boolean>(arg0: T, arg1: Number): Number;
     getNumberValue(input: Tag): DataResult<Number>;
+    getNumberValue(arg0: Tag, arg1: Number): Number;
     getStream(input: Tag): DataResult<Stream<Tag>>;
     getStringValue(input: Tag): DataResult<string>;
     listBuilder(): ListBuilder<T>;

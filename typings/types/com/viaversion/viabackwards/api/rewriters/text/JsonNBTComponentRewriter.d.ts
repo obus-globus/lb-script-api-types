@@ -6,10 +6,10 @@ import type { UserConnection } from '../../../../../../com/viaversion/viaversion
 import type { ClientboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { JsonObject } from '../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { ComponentRewriterBase$ReadType } from '../../../../../../com/viaversion/viaversion/rewriter/text/ComponentRewriterBase$ReadType.d.ts'
-import type { JsonNBTComponentRewriter } from '../../../../../../com/viaversion/viaversion/rewriter/text/JsonNBTComponentRewriter.d.ts'
+import type { JsonNBTComponentRewriter as JsonNBTComponentRewriter_2 } from '../../../../../../com/viaversion/viaversion/rewriter/text/JsonNBTComponentRewriter.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
-export class JsonNBTComponentRewriter<C extends ClientboundPacketType> extends JsonNBTComponentRewriter<C> implements TranslatableRewriter {
+export class JsonNBTComponentRewriter<C extends ClientboundPacketType> extends JsonNBTComponentRewriter_2<C> implements TranslatableRewriter {
     constructor(arg0: BackwardsProtocol<C, Object, Object, Object>, arg1: ComponentRewriterBase$ReadType)
     constructor(arg0: BackwardsProtocol<C, Object, Object, Object>, arg1: ComponentRewriterBase$ReadType, arg2: string)
     // private translatables: { [key: string]: string };

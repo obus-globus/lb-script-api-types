@@ -2,6 +2,7 @@ import type { ObjectInput } from '../../java/io/ObjectInput.d.ts'
 import type { ObjectOutput } from '../../java/io/ObjectOutput.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Matrix4x3d } from '../../org/joml/Matrix4x3d.d.ts'
+import type { Matrix4x3dc } from '../../org/joml/Matrix4x3dc.d.ts'
 export class Matrix4x3dStack extends Matrix4x3d {
     static PLANE_NX: number;
     static PLANE_NY: number;
@@ -20,6 +21,7 @@ export class Matrix4x3dStack extends Matrix4x3d {
     clear(): Matrix4x3dStack;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    equals(arg0: Matrix4x3dc, arg1: number): boolean;
     hashCode(): number;
     popMatrix(): Matrix4x3dStack;
     pushMatrix(): Matrix4x3dStack;

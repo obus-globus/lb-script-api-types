@@ -32,6 +32,8 @@ export class Double2LongArrayMap$MapEntry extends Object implements Double2LongM
     left(arg0: number): DoubleLongPair;
     left(arg0: number): DoubleLongPair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleLongPair;
     right(arg0: number): DoubleLongPair;
     right(): number;
     right(arg0: number): DoubleLongPair;

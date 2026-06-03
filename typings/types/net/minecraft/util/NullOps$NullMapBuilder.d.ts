@@ -5,6 +5,8 @@ import type { Unit } from '../../../net/minecraft/util/Unit.d.ts'
 export class NullOps$NullMapBuilder extends RecordBuilder$AbstractUniversalBuilder<Unit, Unit> {
     constructor(ops: DynamicOps<Unit>)
     append(key: Unit, value: Unit, builder: Unit): Unit;
+    build(arg0: DataResult<Unit>): DataResult<Unit>;
+    build(arg0: Unit): DataResult<Unit>;
     build(builder: Unit, prefix: Unit): DataResult<Unit>;
     initBuilder(): Unit;
 }

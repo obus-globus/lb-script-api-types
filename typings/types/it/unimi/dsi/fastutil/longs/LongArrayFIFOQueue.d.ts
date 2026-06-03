@@ -20,6 +20,7 @@ export class LongArrayFIFOQueue extends Object implements LongPriorityQueue, Ser
     dequeueLong(): number;
     enqueue(arg0: number): void;
     enqueue(arg0: number): void;
+    enqueue(arg0: number): void;
     enqueueFirst(arg0: number): void;
     // private expand(): void;
     first(): number;

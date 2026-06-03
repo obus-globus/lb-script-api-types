@@ -23,6 +23,7 @@ export class Double2BooleanRBTreeMap$Entry extends AbstractDouble2BooleanMap$Bas
     right(): Double2BooleanRBTreeMap$Entry;
     right(arg0: Double2BooleanRBTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Double2BooleanRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

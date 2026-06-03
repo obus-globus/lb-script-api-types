@@ -28,4 +28,5 @@ export class WinNT$LARGE_INTEGER extends Structure implements Comparable<WinNT$L
     getLow(): WinDef$DWORD;
     getValue(): number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

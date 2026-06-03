@@ -6,6 +6,7 @@ import type { Closeable } from '../../../../java/io/Closeable.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
+import type { Package } from '../../../../java/lang/Package.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Enumeration } from '../../../../java/util/Enumeration.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -24,9 +25,12 @@ export class HostClassLoader extends ClassLoader implements Closeable {
     addClasspathRoot(file: TruffleFile): void;
     close(): void;
     // private definePackage(className: string): void;
+    definePackage(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: URL): Package;
     findClass(className: string): Class<Object>;
+    findClass(arg0: string, arg1: string): Class<Object>;
     // private findFirstResource(name: string): HostClassLoader$Resource;
     findResource(name: string): URL;
+    findResource(arg0: string, arg1: string): URL;
     findResources(name: string): Enumeration<URL>;
     // private getLoaders(): HostClassLoader$Loader[];
     getResourceAsStream(name: string): InputStream;

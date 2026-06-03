@@ -21,6 +21,7 @@ export class GenericMessageScreen extends Screen {
     // private textWidget: FocusableTextWidget;
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
     shouldCloseOnEsc(): boolean;
     shouldNarrateNavigation(): boolean;

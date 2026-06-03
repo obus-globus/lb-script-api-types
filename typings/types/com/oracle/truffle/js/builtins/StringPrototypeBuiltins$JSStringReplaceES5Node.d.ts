@@ -21,6 +21,7 @@ import type { TRegexUtil$InteropReadIntMemberNode } from '../../../../../com/ora
 import type { TRegexUtil$InvokeGetGroupBoundariesMethodNode } from '../../../../../com/oracle/truffle/js/runtime/util/TRegexUtil$InvokeGetGroupBoundariesMethodNode.d.ts'
 import type { TRegexUtil$TRegexCompiledRegexSingleFlagAccessorNode } from '../../../../../com/oracle/truffle/js/runtime/util/TRegexUtil$TRegexCompiledRegexSingleFlagAccessorNode.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 export abstract class StringPrototypeBuiltins$JSStringReplaceES5Node extends StringPrototypeBuiltins$JSStringReplaceBaseNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
@@ -44,6 +45,8 @@ export abstract class StringPrototypeBuiltins$JSStringReplaceES5Node extends Str
     // private getStringReplacerNode(): StringPrototypeBuiltins$JSStringReplaceES5Node$StringReplacer;
     // private indexOf(s1: TruffleString, s2: TruffleString): number;
     match(regExp: JSRegExpObject, input: TruffleString): Object;
+    replace<T extends Node>(newNode: T): T;
+    replace<T extends Node>(newNode: T, reason: CharSequence): T;
     // private replace<T extends Object | number | string | boolean>(thisStr: TruffleString, result: Object, groupCount: number, replacer: StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<T>, replaceValue: T, tRegexCompiledRegex: Object, node: Node): TruffleString;
     replace(thisObj: Object, searchValue: Object, replaceValue: Object, node: Node, toString2Node: JSToStringNode, toString3Node: JSToStringNode, ifIsMatch: InlinedCountingConditionProfile, isRegExp: InlinedConditionProfile, isFnRepl: InlinedCountingConditionProfile, readGroupCount: TRegexUtil$InteropReadIntMemberNode, readIsMatch: TRegexUtil$InteropReadBooleanMemberNode, getGlobalFlag: TRegexUtil$TRegexCompiledRegexSingleFlagAccessorNode, errorBranch: InlinedBranchProfile): Object;
     // private replaceAll<T extends Object | number | string | boolean>(regExp: JSRegExpObject, input: TruffleString, groupCount: number, replacer: StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<T>, replaceValue: T, tRegexCompiledRegex: Object, node: Node, ifIsMatch: InlinedCountingConditionProfile, readIsMatch: TRegexUtil$InteropReadBooleanMemberNode): TruffleString;

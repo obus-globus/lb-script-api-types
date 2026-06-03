@@ -11,6 +11,7 @@ import type { Window } from '../../../../java/awt/Window.d.ts'
 import type { Area } from '../../../../java/awt/geom/Area.d.ts'
 import type { BufferedImage } from '../../../../java/awt/image/BufferedImage.d.ts'
 import type { Raster } from '../../../../java/awt/image/Raster.d.ts'
+import type { Icon } from '../../../../javax/swing/Icon.d.ts'
 export class WindowUtils$W32WindowUtils extends WindowUtils$NativeWindowUtils {
     private constructor()
     getAllWindows(arg0: boolean): DesktopWindow[];
@@ -26,6 +27,8 @@ export class WindowUtils$W32WindowUtils extends WindowUtils$NativeWindowUtils {
     setMask(arg0: Component, arg1: Raster): void;
     setWindowAlpha(arg0: Window, arg1: number): void;
     setWindowMask(arg0: Component, arg1: Shape): void;
+    setWindowMask(arg0: Component, arg1: Raster): void;
+    setWindowMask(arg0: Component, arg1: Icon): void;
     // private setWindowRegion(arg0: Component, arg1: WinDef$HRGN): void;
     setWindowTransparent(arg0: Window, arg1: boolean): void;
     // private storeAlpha(arg0: Window, arg1: number): void;

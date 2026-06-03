@@ -4,6 +4,7 @@ export class BooleanProperty extends Property<boolean> {
     static create(paramname: string): BooleanProperty;
     private constructor(name: string)
     getInternalIndex(value: boolean): number;
+    getName(): string;
     getName(value: boolean): string;
     getPossibleValues(): boolean[];
     getValue(name: string): Optional<boolean>;

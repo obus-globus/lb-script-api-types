@@ -10,6 +10,7 @@ export class DolphinRenderer extends AgeableMobRenderer<Dolphin, DolphinRenderSt
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): DolphinRenderState;
+    createRenderState(entity: Dolphin, partialTicks: number): DolphinRenderState;
     extractRenderState(entity: Dolphin, state: DolphinRenderState, partialTicks: number): void;
     getTextureLocation(state: DolphinRenderState): Identifier;
 }

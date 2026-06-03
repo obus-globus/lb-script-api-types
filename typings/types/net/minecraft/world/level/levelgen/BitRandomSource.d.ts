@@ -9,6 +9,7 @@ export interface BitRandomSource extends Object, RandomSource{
     nextInt(origin: number, bound: number): number;
     nextInt(): number;
     nextInt(bound: number): number;
+    nextInt(origin: number, bound: number): number;
     nextIntBetweenInclusive(min: number, maxInclusive: number): number;
     nextLong(): number;
     triangle(mean: number, spread: number): number;

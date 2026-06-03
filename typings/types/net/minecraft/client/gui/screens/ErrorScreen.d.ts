@@ -21,5 +21,6 @@ export class ErrorScreen extends Screen {
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     shouldCloseOnEsc(): boolean;
 }

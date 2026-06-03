@@ -59,9 +59,12 @@ export class JSSlowArray extends JSAbstractArray {
     static toArrayLengthOrRangeError(paramobj: Object, paramoriginatingNode: Node): number;
     private constructor()
     defineOwnPropertyIndex(thisObj: JSDynamicObject, name: TruffleString, descriptor: PropertyDescriptor, doThrow: boolean): boolean;
+    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
+    getOwnHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     makeSlowArray(thisObj: JSDynamicObject): JSDynamicObject;
+    set(thisObj: JSDynamicObject, key: Object, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
     set(thisObj: JSDynamicObject, index: number, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
     setLength(thisObj: JSDynamicObject, length: number, doThrow: boolean): boolean;
 }

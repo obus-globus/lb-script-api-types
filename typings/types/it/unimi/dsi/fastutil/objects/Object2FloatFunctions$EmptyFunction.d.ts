@@ -13,6 +13,7 @@ export class Object2FloatFunctions$EmptyFunction<K extends Object | number | str
     equals(arg0: Object | null): boolean;
     getFloat(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
+    getOrDefault(arg0: Object, arg1: number): number;
     hashCode(): number;
     // private readResolve(): Object;
     size(): number;

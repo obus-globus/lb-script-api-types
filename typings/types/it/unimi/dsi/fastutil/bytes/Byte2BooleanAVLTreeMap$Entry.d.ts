@@ -25,6 +25,7 @@ export class Byte2BooleanAVLTreeMap$Entry extends AbstractByte2BooleanMap$BasicE
     right(): Byte2BooleanAVLTreeMap$Entry;
     right(arg0: Byte2BooleanAVLTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Byte2BooleanAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -32,6 +32,8 @@ export class Float2CharOpenHashMap$MapEntry extends Object implements Float2Char
     left(arg0: number): FloatCharPair;
     left(arg0: number): FloatCharPair;
     leftFloat(): number;
+    right(): string;
+    right(arg0: string): FloatCharPair;
     right(arg0: string): FloatCharPair;
     right(): string;
     right(arg0: string): FloatCharPair;

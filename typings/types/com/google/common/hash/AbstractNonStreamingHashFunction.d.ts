@@ -7,6 +7,7 @@ import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export abstract class AbstractNonStreamingHashFunction extends AbstractHashFunction {
     constructor()
     hashBytes(input: ByteBuffer): HashCode;
+    hashBytes(input: number[]): HashCode;
     hashBytes(input: number[], off: number, len: number): HashCode;
     hashInt(input: number): HashCode;
     hashLong(input: number): HashCode;

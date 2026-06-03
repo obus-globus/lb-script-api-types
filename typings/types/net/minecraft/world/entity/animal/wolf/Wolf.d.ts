@@ -188,6 +188,7 @@ export class Wolf extends TamableAnimal implements NeutralMob {
     getHeadRollAngle(a: number): number;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getMaxHeadXRot(): number;
     getMaxSpawnClusterSize(): number;
     getPersistentAngerEndTime(): number;

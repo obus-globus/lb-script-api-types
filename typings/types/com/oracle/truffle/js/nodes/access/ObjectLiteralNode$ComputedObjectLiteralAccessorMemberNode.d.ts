@@ -28,6 +28,7 @@ export class ObjectLiteralNode$ComputedObjectLiteralAccessorMemberNode extends O
     defineClassElement(frame: VirtualFrame, homeObject: JSObject, classElement: ClassElementDefinitionRecord): void;
     evaluateClassElementDefinition(frame: VirtualFrame, homeObject: JSObject, realm: JSRealm, decorators: Object[]): ClassElementDefinitionRecord;
     // private evaluateKey(frame: VirtualFrame): Object;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
     hasGetter(): boolean;
     hasSetter(): boolean;

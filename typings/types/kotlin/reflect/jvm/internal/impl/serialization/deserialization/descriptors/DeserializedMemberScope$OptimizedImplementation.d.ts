@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { TypeAliasDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeAliasDescriptor.d.ts'
 import type { LookupLocation } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
 import type { ProtoBuf$Property } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$Property.d.ts'
@@ -20,7 +19,7 @@ export class DeserializedMemberScope$OptimizedImplementation extends Object impl
     // private typeAliasByName: MemoizedFunctionToNullable<Name, TypeAliasDescriptor>;
     // private typeAliasBytes: Map<Name, number[]>;
     // private variableNames$delegate: NotNullLazyValue<Object>;
-    addFunctionsAndPropertiesTo(arg0: E[], arg1: DescriptorKindFilter, arg2: Function1<Name, boolean>, arg3: LookupLocation): void;
+    addFunctionsAndPropertiesTo(arg0: E[], arg1: DescriptorKindFilter, arg2: (param0: Name) => boolean, arg3: LookupLocation): void;
     // private computeFunctions(arg0: Name): E[];
     // private computeProperties(arg0: Name): E[];
     // private createTypeAlias(arg0: Name): TypeAliasDescriptor;

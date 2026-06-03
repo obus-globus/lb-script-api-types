@@ -137,6 +137,7 @@ export class Silverfish extends Monster {
     getDeathSound(): SoundEvent;
     getHurtSound(source: DamageSource): SoundEvent;
     getMovementEmission(): Entity$MovementEmission;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     playStepSound(pos: BlockPos, blockState: BlockState): void;

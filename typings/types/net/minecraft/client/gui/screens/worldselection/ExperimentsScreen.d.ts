@@ -30,6 +30,7 @@ export class ExperimentsScreen extends Screen {
     // private scrollArea: ScrollableLayout;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private onDone(): void;
     repositionElements(): void;

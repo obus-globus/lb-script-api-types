@@ -1,5 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { SerializationStrategy } from '../../../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { AbstractEncoder } from '../../../../kotlinx/serialization/encoding/AbstractEncoder.d.ts'
@@ -26,7 +25,7 @@ export class StreamingJsonEncoder extends AbstractEncoder implements JsonEncoder
     // private polymorphicSerialName: string | null;
     readonly serializersModule: SerializersModule;
     beginStructure(descriptor: SerialDescriptor): CompositeEncoder;
-    // private composerAs<T extends Composer>(composerCreator: Function2<InternalJsonWriter, boolean, T>): T;
+    // private composerAs<T extends Composer>(composerCreator: (param0: InternalJsonWriter, param1: boolean) => T): T;
     encodeBoolean(value: boolean): void;
     encodeByte(value: number): void;
     encodeChar(value: string): void;

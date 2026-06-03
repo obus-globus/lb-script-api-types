@@ -11,6 +11,7 @@ export class AES256SHA256Decoder$AES256SHA256DecoderOutputStream extends OutputS
     close(): void;
     flush(): void;
     // private flushBuffer(): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

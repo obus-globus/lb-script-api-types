@@ -14,6 +14,7 @@ export class TapeInputStream extends FilterInputStream {
     getBytesRead(): number;
     peek(): number[];
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readBlock(arg0: boolean): void;
     // private readFully(arg0: number[], arg1: number, arg2: number): void;

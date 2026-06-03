@@ -32,6 +32,8 @@ export class Byte2BooleanArrayMap$MapEntry extends Object implements Byte2Boolea
     left(arg0: number): ByteBooleanPair;
     left(arg0: number): ByteBooleanPair;
     leftByte(): number;
+    right(): boolean;
+    right(arg0: boolean): ByteBooleanPair;
     right(arg0: boolean): ByteBooleanPair;
     right(): boolean;
     right(arg0: boolean): ByteBooleanPair;

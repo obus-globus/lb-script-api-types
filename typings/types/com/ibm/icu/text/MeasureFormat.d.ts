@@ -10,6 +10,7 @@ import type { UFormat } from '../../../../com/ibm/icu/text/UFormat.d.ts'
 import type { Measure } from '../../../../com/ibm/icu/util/Measure.d.ts'
 import type { MeasureUnit } from '../../../../com/ibm/icu/util/MeasureUnit.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
+import type { ULocale$Type } from '../../../../com/ibm/icu/util/ULocale$Type.d.ts'
 import type { Appendable } from '../../../../java/lang/Appendable.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
@@ -40,6 +41,7 @@ export class MeasureFormat extends UFormat {
     // private rules: PluralRules;
     clearCache(): void;
     equals(arg0: Object | null): boolean;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     // private formatMeasure(arg0: Measure): FormattedStringBuilder;
     // private formatMeasureInteger(arg0: Measure): FormattedStringBuilder;
@@ -50,6 +52,7 @@ export class MeasureFormat extends UFormat {
     // private formatMeasuresSlowTrack(arg0: ListFormatter, arg1: Appendable, arg2: FieldPosition, arg3: Measure[]): void;
     // private formatNumeric(arg0: Number[], arg1: Appendable): void;
     getLocale(): ULocale;
+    getLocale(arg0: ULocale$Type): ULocale;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
     getNumberFormatter(): LocalizedNumberFormatter;
@@ -57,6 +60,7 @@ export class MeasureFormat extends UFormat {
     // private getUnitFormatterFromCache(arg0: number, arg1: MeasureUnit, arg2: MeasureUnit): LocalizedNumberFormatter;
     getWidth(): MeasureFormat$FormatWidth;
     hashCode(): number;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Measure;
     toCurrencyProxy(): Object;
     toTimeUnitProxy(): Object;

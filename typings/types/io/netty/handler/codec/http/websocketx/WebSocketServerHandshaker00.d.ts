@@ -14,7 +14,9 @@ export class WebSocketServerHandshaker00 extends WebSocketServerHandshaker {
     static SUB_PROTOCOL_WILDCARD: string;
     constructor(arg0: string, arg1: string, arg2: WebSocketDecoderConfig)
     constructor(arg0: string, arg1: string, arg2: number)
+    close(arg0: Channel, arg1: CloseWebSocketFrame): ChannelFuture;
     close(arg0: Channel, arg1: CloseWebSocketFrame, arg2: ChannelPromise): ChannelFuture;
+    close(arg0: ChannelHandlerContext, arg1: CloseWebSocketFrame): ChannelFuture;
     close(arg0: ChannelHandlerContext, arg1: CloseWebSocketFrame, arg2: ChannelPromise): ChannelFuture;
     newHandshakeResponse(arg0: FullHttpRequest, arg1: Map$Entry<string, string>[]): FullHttpResponse;
     newWebSocketEncoder(): WebSocketFrameEncoder;

@@ -4,19 +4,20 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 import type { LoggerContext } from '../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { ContextSelector } from '../../../../../../org/apache/logging/log4j/core/selector/ContextSelector.d.ts'
-import type { LoggerContext } from '../../../../../../org/apache/logging/log4j/spi/LoggerContext.d.ts'
+import type { LoggerContext as LoggerContext_2 } from '../../../../../../org/apache/logging/log4j/spi/LoggerContext.d.ts'
 import type { LoggerContextShutdownAware } from '../../../../../../org/apache/logging/log4j/spi/LoggerContextShutdownAware.d.ts'
 import type { Lazy } from '../../../../../../org/apache/logging/log4j/util/Lazy.d.ts'
 export class ClassLoaderContextSelector extends Object implements ContextSelector, LoggerContextShutdownAware {
     static DEFAULT_STOP_TIMEOUT: number;
     constructor()
     // private defaultLoggerContext: Lazy<LoggerContext>;
-    contextShutdown(loggerContext: LoggerContext): void;
+    contextShutdown(loggerContext: LoggerContext_2): void;
     createContext(name: string, configLocation: URI): LoggerContext;
     defaultContextName(): string;
     // private findContext(loaderOrNull: ClassLoader): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, currentContext: boolean, configLocation: URI): LoggerContext;
+    getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;

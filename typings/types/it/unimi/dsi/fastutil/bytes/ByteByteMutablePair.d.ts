@@ -19,11 +19,15 @@ export class ByteByteMutablePair extends Object implements ByteBytePair, Seriali
     key(arg0: number): ByteBytePair;
     key(arg0: number): ByteBytePair;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteBytePair;
     left(arg0: number): ByteByteMutablePair;
     left(): number;
     left(arg0: number): ByteBytePair;
     left(arg0: number): ByteBytePair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteBytePair;
     right(arg0: number): ByteByteMutablePair;
     right(): number;
     right(arg0: number): ByteBytePair;

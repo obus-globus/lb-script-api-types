@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { LongReferencePair } from '../../../../../it/unimi/dsi/fastutil/longs/LongReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -22,5 +23,6 @@ export class LongReferenceImmutablePair<V extends Object | number | string | boo
     left(arg0: number): LongReferencePair<V>;
     leftLong(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

@@ -2,6 +2,7 @@ import type { ATNConfig } from '../../../../../../../com/llamalad7/mixinextras/l
 import type { ATNState } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATNState.d.ts'
 import type { LexerActionExecutor } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/LexerActionExecutor.d.ts'
 import type { PredictionContext } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/PredictionContext.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class LexerATNConfig extends ATNConfig {
     constructor(arg0: ATNState, arg1: number, arg2: PredictionContext)
     constructor(arg0: LexerATNConfig, arg1: ATNState)
@@ -10,6 +11,7 @@ export class LexerATNConfig extends ATNConfig {
     readonly lexerActionExecutor: LexerActionExecutor;
     // private passedThroughNonGreedyDecision: boolean;
     equals(arg0: ATNConfig): boolean;
+    equals(arg0: Object | null): boolean;
     getLexerActionExecutor(): LexerActionExecutor;
     hasPassedThroughNonGreedyDecision(): boolean;
     hashCode(): number;

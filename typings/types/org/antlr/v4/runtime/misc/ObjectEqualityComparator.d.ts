@@ -4,5 +4,7 @@ export class ObjectEqualityComparator extends AbstractEqualityComparator<Object>
     static INSTANCE: ObjectEqualityComparator;
     constructor()
     equals(arg0: Object, arg1: Object): boolean;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
     hashCode(arg0: Object): number;
 }

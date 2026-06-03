@@ -80,6 +80,7 @@ export abstract class PolyglotValueDispatch extends AbstractPolyglotImpl$Abstrac
     removeMember(languageContext: Object, receiver: Object, key: string): boolean;
     setArrayElement(languageContext: Object, receiver: Object, index: number, value: Object): void;
     throwException(languageContext: Object, receiver: Object): RuntimeException;
+    toString(): string;
     toString(languageContext: Object, receiver: Object): string;
     toStringImpl(context: PolyglotLanguageContext, receiver: Object): string;
     writeBufferByte(languageContext: Object, receiver: Object, byteOffset: number, value: number): void;

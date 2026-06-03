@@ -5,5 +5,7 @@ export class OctalUnescaper extends CharSequenceTranslator {
     static hex(paramarg0: number): string;
     constructor()
     // private isZeroToThree(arg0: string): boolean;
+    translate(arg0: CharSequence): string;
+    translate(arg0: CharSequence, arg1: Writer): void;
     translate(arg0: CharSequence, arg1: number, arg2: Writer): number;
 }

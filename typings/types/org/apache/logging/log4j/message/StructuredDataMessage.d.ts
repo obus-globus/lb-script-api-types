@@ -22,6 +22,7 @@ export class StructuredDataMessage extends MapMessage<StructuredDataMessage, str
     asString(format: string): string;
     asString(format: StructuredDataMessage$Format, structuredDataId: StructuredDataId): string;
     asString(format: StructuredDataMessage$Format, structuredDataId: StructuredDataId, sb: StringBuilder): void;
+    asXml(sb: StringBuilder): void;
     // private asXml(structuredDataId: StructuredDataId, sb: StringBuilder): void;
     equals(o: Object | null): boolean;
     formatTo(buffer: StringBuilder): void;

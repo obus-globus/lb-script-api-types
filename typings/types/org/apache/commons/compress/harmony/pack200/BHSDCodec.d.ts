@@ -32,6 +32,7 @@ export class BHSDCodec extends Codec {
     decodeInts(arg0: number, arg1: InputStream, arg2: number): number[];
     encode(arg0: number): number[];
     encode(arg0: number, arg1: number): number[];
+    encode(arg0: number[]): number[];
     encodes(arg0: number): boolean;
     equals(arg0: Object | null): boolean;
     getB(): number;

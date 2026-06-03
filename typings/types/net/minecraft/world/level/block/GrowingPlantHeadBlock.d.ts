@@ -11,6 +11,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { BlockPlaceContext } from '../../../../../net/minecraft/world/item/context/BlockPlaceContext.d.ts'
 import type { BlockGetter } from '../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
@@ -92,6 +93,7 @@ export abstract class GrowingPlantHeadBlock extends GrowingPlantBlock implements
     getMaxAgeState(fromState: BlockState): BlockState;
     getParticlePos(blockPos: BlockPos): BlockPos;
     getStateForPlacement(random: RandomSource): BlockState;
+    getStateForPlacement(context: BlockPlaceContext): BlockState;
     getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;
     isMaxAge(state: BlockState): boolean;

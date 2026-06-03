@@ -47,6 +47,8 @@ export class TimeZone$ConstantZone extends TimeZone {
     cloneAsThawed(): TimeZone;
     freeze(): TimeZone;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, milliseconds: number): number;
+    getOffset(date: number): number;
+    getOffset(date: number, local: boolean, offsets: number[]): void;
     getRawOffset(): number;
     inDaylightTime(date: Date): boolean;
     isFrozen(): boolean;

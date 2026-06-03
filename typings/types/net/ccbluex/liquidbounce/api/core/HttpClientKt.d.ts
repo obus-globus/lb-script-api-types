@@ -1,6 +1,5 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { CoroutineScope } from '../../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 import type { Job } from '../../../../../kotlinx/coroutines/Job.d.ts'
@@ -34,5 +33,5 @@ export class HttpClientKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:251}
      */
     static utf8Lines(bufferedSource: BufferedSource): Iterator<string>;
-    static withScope(block: Function2<Object, Object, Object>): Job;
+    static withScope(block: (param0: Object | null, param1: Object | null) => Object | null): Job;
 }

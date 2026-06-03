@@ -25,6 +25,7 @@ export class Byte2IntAVLTreeMap$Entry extends AbstractByte2IntMap$BasicEntry imp
     right(): Byte2IntAVLTreeMap$Entry;
     right(arg0: Byte2IntAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Byte2IntAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

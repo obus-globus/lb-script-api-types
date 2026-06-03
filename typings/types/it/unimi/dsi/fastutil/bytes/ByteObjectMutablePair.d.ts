@@ -19,6 +19,8 @@ export class ByteObjectMutablePair<V extends Object | number | string | boolean>
     key(arg0: number): ByteObjectPair<V>;
     key(arg0: number): ByteObjectPair<V>;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteObjectPair<V>;
     left(arg0: number): ByteObjectMutablePair<V>;
     left(): number;
     left(arg0: number): ByteObjectPair<V>;

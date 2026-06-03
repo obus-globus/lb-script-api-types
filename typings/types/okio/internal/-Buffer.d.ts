@@ -1,5 +1,4 @@
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { Buffer } from '../../okio/Buffer.d.ts'
 import type { Buffer$UnsafeCursor } from '../../okio/Buffer$UnsafeCursor.d.ts'
 import type { ByteString } from '../../okio/ByteString.d.ts'
@@ -70,6 +69,6 @@ export class -Buffer extends Object {
     static getHEX_DIGIT_BYTES(): number[];
     static rangeEquals(paramarg0: Segment, paramarg1: number, paramarg2: number[], paramarg3: number, paramarg4: number): boolean;
     static readUtf8Line(paramarg0: Buffer, paramarg1: number): string;
-    static seek(paramarg0: Buffer, paramarg1: number, paramarg2: Function2<Object, Object, Object>): Object | null;
+    static seek(paramarg0: Buffer, paramarg1: number, paramarg2: (param0: Object | null, param1: Object | null) => Object | null): Object | null;
     static selectPrefix(paramarg0: Buffer, paramarg1: (Object | null)[], paramarg2: boolean): number;
 }

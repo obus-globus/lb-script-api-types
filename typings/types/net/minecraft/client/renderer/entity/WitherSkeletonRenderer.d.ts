@@ -13,5 +13,6 @@ export class WitherSkeletonRenderer extends AbstractSkeletonRenderer<WitherSkele
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SkeletonRenderState;
+    createRenderState(entity: WitherSkeleton, partialTicks: number): SkeletonRenderState;
     getTextureLocation(state: SkeletonRenderState): Identifier;
 }

@@ -71,6 +71,7 @@ export class Double2ReferenceFunctions$PrimitiveFunction<V extends Object | numb
     put(arg0: number, arg1: V): V;
     put(arg0: number, arg1: V): V;
     put(arg0: number, arg1: V): V;
+    put(arg0: number, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: number): V;
 }

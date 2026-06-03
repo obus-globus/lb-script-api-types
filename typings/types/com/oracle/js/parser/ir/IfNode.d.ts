@@ -23,5 +23,7 @@ export class IfNode extends Statement {
     // private setFail(fail: Block): IfNode;
     // private setPass(pass: Block): IfNode;
     setTest(test: Expression): IfNode;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

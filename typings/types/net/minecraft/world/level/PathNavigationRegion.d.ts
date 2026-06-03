@@ -11,6 +11,7 @@ import type { CollisionGetter } from '../../../../net/minecraft/world/level/Coll
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { Biome } from '../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { WorldBorder } from '../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 import type { ChunkAccess } from '../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
@@ -37,6 +38,7 @@ export class PathNavigationRegion extends Object implements ChunkView, Collision
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
     // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockState(pos: BlockPos): BlockState;
     // private getChunk(chunkX: number, chunkZ: number): ChunkAccess;
     // private getChunk(pos: BlockPos): ChunkAccess;

@@ -13,6 +13,7 @@ export class TypeScriptGenerator$TypeScriptModule extends Object {
     readonly klass: KClass<Object>;
     readonly moduleText: string;
     readonly path: string;
+    readonly typeAliases: Map<KClass<Object>, string>;
     // private arrayFromKType(kType: KType): string;
     // private constructorsOf(klass: KClass<Object>): string;
     // private createKotlinType(javaClass: Class<Object>): KType;
@@ -28,9 +29,11 @@ export class TypeScriptGenerator$TypeScriptModule extends Object {
     // private getIterableElementType(kType: KType): KType | null;
     isFunctionalInterface(javaType: Type): boolean;
     // private javaTypeToKotlinType(type: Type): KType;
+    // private kotlinFunctionArrow(kType: KType): string | null;
     // private mapFromKType(kType: KType): string;
     // private nonPrimitiveFromKType(kType: KType): string;
     // private propertiesOf(klass: KClass<Object>): string;
     // private staticFieldsOf(klass: KClass<Object>): string;
     // private staticMethodsOf(klass: KClass<Object>, interfaceSupertypes: KType[], typeParameters: KTypeParameter[]): string;
+    // private tsNameFor(kClass: KClass<Object>): string;
 }

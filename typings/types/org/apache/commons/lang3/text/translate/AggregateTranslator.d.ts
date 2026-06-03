@@ -5,5 +5,7 @@ export class AggregateTranslator extends CharSequenceTranslator {
     static hex(paramarg0: number): string;
     constructor(arg0: CharSequenceTranslator[])
     // private translators: CharSequenceTranslator[];
+    translate(arg0: CharSequence): string;
+    translate(arg0: CharSequence, arg1: Writer): void;
     translate(arg0: CharSequence, arg1: number, arg2: Writer): number;
 }

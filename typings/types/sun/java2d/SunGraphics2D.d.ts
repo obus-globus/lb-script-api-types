@@ -8,6 +8,7 @@ import type { Graphics2D } from '../../java/awt/Graphics2D.d.ts'
 import type { GraphicsConfiguration } from '../../java/awt/GraphicsConfiguration.d.ts'
 import type { Image } from '../../java/awt/Image.d.ts'
 import type { Paint } from '../../java/awt/Paint.d.ts'
+import type { Polygon } from '../../java/awt/Polygon.d.ts'
 import type { Rectangle } from '../../java/awt/Rectangle.d.ts'
 import type { RenderingHints$Key } from '../../java/awt/RenderingHints$Key.d.ts'
 import type { Shape } from '../../java/awt/Shape.d.ts'
@@ -133,6 +134,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     copyArea(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     copyImage(arg0: Image, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: Color, arg8: ImageObserver): boolean;
     create(): Graphics;
+    create(arg0: number, arg1: number, arg2: number, arg3: number): Graphics;
     dispose(): void;
     // private doCopyArea(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     draw(arg0: Shape): void;
@@ -151,6 +153,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     drawImage(arg0: BufferedImage, arg1: BufferedImageOp, arg2: number, arg3: number): void;
     drawLine(arg0: number, arg1: number, arg2: number, arg3: number): void;
     drawOval(arg0: number, arg1: number, arg2: number, arg3: number): void;
+    drawPolygon(arg0: Polygon): void;
     drawPolygon(arg0: number[], arg1: number[], arg2: number): void;
     drawPolyline(arg0: number[], arg1: number[], arg2: number): void;
     drawRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
@@ -165,6 +168,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     fill(arg0: Shape): void;
     fillArc(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     fillOval(arg0: number, arg1: number, arg2: number, arg3: number): void;
+    fillPolygon(arg0: Polygon): void;
     fillPolygon(arg0: number[], arg1: number[], arg2: number): void;
     fillRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
     fillRoundRect(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;

@@ -21,6 +21,7 @@ export class JukeboxPlayablePredicate extends Record implements SingleComponentI
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
+    matches(components: DataComponentGetter): boolean;
     matches(value: JukeboxPlayable): boolean;
     song(): Optional<Holder<T>[]>;
     toString(): string;

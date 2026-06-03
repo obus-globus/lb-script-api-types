@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ReferenceBooleanPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceBooleanPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,6 +11,7 @@ export class ReferenceBooleanImmutablePair<K extends Object | number | string | 
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): K;
+    left(arg0: K): Pair<K, boolean>;
     right(): boolean;
     right(arg0: boolean): ReferenceBooleanPair<K>;
     right(arg0: boolean): ReferenceBooleanPair<K>;

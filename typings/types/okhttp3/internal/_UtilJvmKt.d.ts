@@ -6,7 +6,6 @@ import type { TimeZone } from '../../java/util/TimeZone.d.ts'
 import type { ThreadFactory } from '../../java/util/concurrent/ThreadFactory.d.ts'
 import type { TimeUnit } from '../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function0 } from '../../kotlin/jvm/functions/Function0.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { Dispatcher } from '../../okhttp3/Dispatcher.d.ts'
 import type { EventListener } from '../../okhttp3/EventListener.d.ts'
@@ -24,8 +23,8 @@ export class _UtilJvmKt extends Object {
     static assertLockNotHeld(paramarg0: Dispatcher): void;
     static canReuseConnectionFor(paramarg0: HttpUrl, paramarg1: HttpUrl): boolean;
     static checkDuration(paramarg0: string, paramarg1: number, paramarg2: TimeUnit): number;
-//     static checkDuration-HG0u8IE(paramarg0: string, paramarg1: number): number;
- // ; invalid because of -    static closeQuietly(paramarg0: ServerSocket): void;
+// (invalid TS: name contains '-')     static checkDuration-HG0u8IE(paramarg0: string, paramarg1: number): number;
+    static closeQuietly(paramarg0: ServerSocket): void;
     static closeQuietly(paramarg0: Socket): void;
     static discard(paramarg0: Source, paramarg1: number, paramarg2: TimeUnit): boolean;
     static format(paramarg0: string, paramarg1: (Object | null)[]): string;
@@ -37,7 +36,7 @@ export class _UtilJvmKt extends Object {
     static skipAll(paramarg0: Source, paramarg1: number, paramarg2: TimeUnit): boolean;
     static skipAll(paramarg0: BufferedSource): void;
     static threadFactory(paramarg0: string, paramarg1: boolean): ThreadFactory;
-    static threadName(paramarg0: string, paramarg1: Function0<void>): void;
+    static threadName(paramarg0: string, paramarg1: () => void): void;
     static toHeaderList(paramarg0: Pair<string, string>[]): Header[];
     static toHeaders(paramarg0: Header[]): Pair<string, string>[];
     static toHexString(paramarg0: number): string;

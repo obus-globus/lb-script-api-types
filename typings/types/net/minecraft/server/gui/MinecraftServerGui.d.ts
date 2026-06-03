@@ -1,4 +1,5 @@
 import type { Component } from '../../../../java/awt/Component.d.ts'
+import type { Graphics } from '../../../../java/awt/Graphics.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
@@ -40,6 +41,7 @@ export class MinecraftServerGui extends JComponent {
     // private buildInfoPanel(): JComponent;
     // private buildPlayerPanel(): JComponent;
     close(): void;
+    print(arg0: Graphics): void;
     print(console: JTextArea, scrollPane: JScrollPane, line: string): void;
     // private runFinalizers(): void;
     start(): void;

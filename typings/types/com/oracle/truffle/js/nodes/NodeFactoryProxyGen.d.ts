@@ -97,6 +97,7 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createClassDefinition(arg0: JSContext, arg1: JSFunctionExpressionNode, arg2: JavaScriptNode, arg3: ObjectLiteralNode$ObjectLiteralMemberNode[], arg4: JSWriteFrameSlotNode, arg5: JSWriteFrameSlotNode, arg6: JavaScriptNode[], arg7: DecoratorListEvaluationNode[], arg8: TruffleString, arg9: number, arg10: number, arg11: boolean, arg12: boolean, arg13: JSFrameSlot): JavaScriptNode;
     createClearFrameSlotRange(arg0: ScopeFrameNode, arg1: number, arg2: number): JavaScriptNode;
     createClearFrameSlots(arg0: ScopeFrameNode, arg1: number[]): JavaScriptNode;
+    createClearFrameSlots(scope: ScopeFrameNode, slots: number[], from: number, to: number): JavaScriptNode;
     createCompoundWriteElementNode(arg0: JavaScriptNode, arg1: JavaScriptNode, arg2: JavaScriptNode, arg3: JSWriteFrameSlotNode, arg4: JSContext, arg5: boolean): WriteElementNode;
     createComputedAccessorMember(arg0: JavaScriptNode, arg1: boolean, arg2: boolean, arg3: JavaScriptNode, arg4: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;
     createComputedAutoAccessor(arg0: JavaScriptNode, arg1: boolean, arg2: boolean, arg3: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;

@@ -10,10 +10,16 @@ export class ReadElementNodeFactory$JSObjectReadElementTypeCacheNodeGen extends 
     // private arrayDispatch_field1_: Node;
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): Object;
+    executeJSObjectGet(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;
     executeJSObjectGet(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): Object;
+    executeJSObjectGet(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;
     executeJSObjectGet(arg0Value: Object, arg1Value: number, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): Object;
+    executeJSObjectGetDouble(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeJSObjectGetDouble(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
+    executeJSObjectGetDouble(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeJSObjectGetDouble(arg0Value: Object, arg1Value: number, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
+    executeJSObjectGetInt(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeJSObjectGetInt(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
+    executeJSObjectGetInt(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeJSObjectGetInt(arg0Value: Object, arg1Value: number, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
 }

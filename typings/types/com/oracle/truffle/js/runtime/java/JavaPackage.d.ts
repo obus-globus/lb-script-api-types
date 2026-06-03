@@ -38,5 +38,6 @@ export class JavaPackage extends JSNonProxy {
     static toPrimitiveString(paramobj: JSDynamicObject): Object;
     private constructor()
     getHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
+    getHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     makeInitialShape(context: JSContext, objectPrototype: JSDynamicObject): Shape;
 }

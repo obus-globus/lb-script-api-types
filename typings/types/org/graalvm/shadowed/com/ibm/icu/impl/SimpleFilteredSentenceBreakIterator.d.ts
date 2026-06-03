@@ -1,6 +1,7 @@
 import type { CharacterIterator } from '../../../../../../../java/text/CharacterIterator.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
 import type { UCharacterIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UCharacterIterator.d.ts'
 import type { CharsTrie$Entry } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CharsTrie$Entry.d.ts'
@@ -66,4 +67,6 @@ export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
     previous(): number;
     // private resetState(): void;
     setText(newText: CharacterIterator): void;
+    setText(newText: CharSequence): void;
+    setText(newText: string): void;
 }

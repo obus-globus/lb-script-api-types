@@ -93,11 +93,14 @@ export class SimpleTimeZone extends BasicTimeZone {
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, millis: number): number;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, millis: number, monthLength: number): number;
     // private getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, millis: number, monthLength: number, prevMonthLength: number): number;
+    getOffset(date: number): number;
+    getOffset(date: number, local: boolean, offsets: number[]): void;
     getOffsetFromLocal(date: number, nonExistingTimeOpt: BasicTimeZone$LocalOption, duplicatedTimeOpt: BasicTimeZone$LocalOption, offsets: number[]): void;
     getPreviousTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getRawOffset(): number;
     // private getSTZInfo(): STZInfo;
     getTimeZoneRules(): TimeZoneRule[];
+    getTimeZoneRules(start: number): TimeZoneRule[];
     hasSameRules(othr: TimeZone): boolean;
     hashCode(): number;
     // private idEquals(id1: string, id2: string): boolean;

@@ -9,6 +9,7 @@ export class CharsetISCII$CharsetDecoderISCII extends CharsetDecoderICU {
     constructor(null_: CharsetISCII$CharsetDecoderISCII, cs: CharsetICU)
     // private GetMapping(sourceChar: number, targetUniChar: number, data: CharsetISCII$UConverterDataISCII): number;
     // private WriteToTargetToU(offsets: IntBuffer, offset: number, source: ByteBuffer, target: CharBuffer, targetUniChar: number, delta: number): CoderResult;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

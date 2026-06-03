@@ -2,7 +2,6 @@ import type { Class } from '../../java/lang/Class.d.ts'
 import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Comparable } from '../../java/lang/Comparable.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { ArraysKt__ArraysKt } from '../../kotlin/collections/ArraysKt__ArraysKt.d.ts'
 export class ArraysKt___ArraysJvmKt extends ArraysKt__ArraysKt {
@@ -69,15 +68,15 @@ export class ArraysKt___ArraysJvmKt extends ArraysKt__ArraysKt {
     static max(paramarg0: number[]): number;
     static max(paramarg0: number[]): number;
     static max(paramarg0: number[]): number;
-    static maxBy(paramarg0: (Object | null)[], paramarg1: Function1<Object, Object>): boolean;
-    static maxBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static maxBy(paramarg0: string[], paramarg1: Function1<Object, Object>): string;
-    static maxBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static maxBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static maxBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static maxBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static maxBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static maxBy(paramarg0: Object | null, paramarg1: Function1<Object, Object>): Object | null;
+    static maxBy(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => Object | null): boolean;
+    static maxBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static maxBy(paramarg0: string[], paramarg1: (param0: Object | null) => Object | null): string;
+    static maxBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static maxBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static maxBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static maxBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static maxBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static maxBy(paramarg0: Object | null, paramarg1: (param0: Object | null) => Object | null): Object | null;
     static maxWith(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => kotlin.Boolean): boolean;
     static maxWith(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
     static maxWith(paramarg0: string[], paramarg1: (param0: Object | null) => kotlin.Boolean): string;
@@ -97,15 +96,15 @@ export class ArraysKt___ArraysJvmKt extends ArraysKt__ArraysKt {
     static min(paramarg0: number[]): number;
     static min(paramarg0: number[]): number;
     static min(paramarg0: number[]): number;
-    static minBy(paramarg0: (Object | null)[], paramarg1: Function1<Object, Object>): boolean;
-    static minBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static minBy(paramarg0: string[], paramarg1: Function1<Object, Object>): string;
-    static minBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static minBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static minBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static minBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static minBy(paramarg0: number[], paramarg1: Function1<Object, Object>): number;
-    static minBy(paramarg0: Object | null, paramarg1: Function1<Object, Object>): Object | null;
+    static minBy(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => Object | null): boolean;
+    static minBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static minBy(paramarg0: string[], paramarg1: (param0: Object | null) => Object | null): string;
+    static minBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static minBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static minBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static minBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static minBy(paramarg0: number[], paramarg1: (param0: Object | null) => Object | null): number;
+    static minBy(paramarg0: Object | null, paramarg1: (param0: Object | null) => Object | null): Object | null;
     static minWith(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => kotlin.Boolean): boolean;
     static minWith(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
     static minWith(paramarg0: string[], paramarg1: (param0: Object | null) => kotlin.Boolean): string;

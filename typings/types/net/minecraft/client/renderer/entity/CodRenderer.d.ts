@@ -10,6 +10,7 @@ export class CodRenderer extends MobRenderer<Cod, LivingEntityRenderState, CodMo
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): LivingEntityRenderState;
+    createRenderState(entity: Cod, partialTicks: number): LivingEntityRenderState;
     getTextureLocation(state: LivingEntityRenderState): Identifier;
     setupRotations(state: LivingEntityRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;
 }

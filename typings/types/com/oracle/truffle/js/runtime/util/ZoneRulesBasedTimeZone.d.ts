@@ -45,6 +45,8 @@ export class ZoneRulesBasedTimeZone extends TimeZone {
     constructor(id: string, rules: ZoneRules)
     // private rules: ZoneRules;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, milliseconds: number): number;
+    getOffset(date: number): number;
+    getOffset(date: number, local: boolean, offsets: number[]): void;
     getRawOffset(): number;
     inDaylightTime(date: Date): boolean;
     setRawOffset(offsetMillis: number): void;

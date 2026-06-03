@@ -10,6 +10,7 @@ export class IntegerProperty extends Property<number> {
     equals(o: Object | null): boolean;
     generateHashCode(): number;
     getInternalIndex(value: number): number;
+    getName(): string;
     getName(value: number): string;
     getPossibleValues(): number[];
     getValue(name: string): Optional<number>;

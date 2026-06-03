@@ -2,6 +2,7 @@ import type { Color } from '../../../java/awt/Color.d.ts'
 import type { Component } from '../../../java/awt/Component.d.ts'
 import type { ComponentOrientation } from '../../../java/awt/ComponentOrientation.d.ts'
 import type { Dimension } from '../../../java/awt/Dimension.d.ts'
+import type { Graphics } from '../../../java/awt/Graphics.d.ts'
 import type { Insets } from '../../../java/awt/Insets.d.ts'
 import type { Point } from '../../../java/awt/Point.d.ts'
 import type { Rectangle } from '../../../java/awt/Rectangle.d.ts'
@@ -29,6 +30,7 @@ import type { Scrollable } from '../../../javax/swing/Scrollable.d.ts'
 import type { TransferHandler$DropLocation } from '../../../javax/swing/TransferHandler$DropLocation.d.ts'
 import type { CaretEvent } from '../../../javax/swing/event/CaretEvent.d.ts'
 import type { CaretListener } from '../../../javax/swing/event/CaretListener.d.ts'
+import type { ComponentUI } from '../../../javax/swing/plaf/ComponentUI.d.ts'
 import type { TextUI } from '../../../javax/swing/plaf/TextUI.d.ts'
 import type { Caret } from '../../../javax/swing/text/Caret.d.ts'
 import type { Document } from '../../../javax/swing/text/Document.d.ts'
@@ -137,6 +139,7 @@ export abstract class JTextComponent extends JComponent implements Accessible, S
     getSelectionStart(): number;
     getText(): string;
     getText(arg0: number, arg1: number): string;
+    getToolTipText(): string;
     getToolTipText(arg0: MouseEvent): string;
     getUI(): TextUI;
     // private installDefaultTransferHandlerIfNecessary(): void;
@@ -149,6 +152,7 @@ export abstract class JTextComponent extends JComponent implements Accessible, S
     paramString(): string;
     paste(): void;
     print(): boolean;
+    print(arg0: Graphics): void;
     print(arg0: MessageFormat, arg1: MessageFormat): boolean;
     print(arg0: MessageFormat, arg1: MessageFormat, arg2: boolean, arg3: PrintService, arg4: PrintRequestAttributeSet, arg5: boolean): boolean;
     processInputMethodEvent(arg0: InputMethodEvent): void;
@@ -183,6 +187,7 @@ export abstract class JTextComponent extends JComponent implements Accessible, S
     setSelectionEnd(arg0: number): void;
     setSelectionStart(arg0: number): void;
     setText(arg0: string): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: TextUI): void;
     // private shouldSynthensizeKeyEvents(): boolean;
     updateInputMap(arg0: Keymap, arg1: Keymap): void;

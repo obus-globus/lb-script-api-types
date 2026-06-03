@@ -25,6 +25,7 @@ export class Byte2CharAVLTreeMap$Entry extends AbstractByte2CharMap$BasicEntry i
     right(): Byte2CharAVLTreeMap$Entry;
     right(arg0: Byte2CharAVLTreeMap$Entry): void;
     setValue(arg0: string): string;
+    setValue(arg0: string): string;
     succ(): boolean;
     succ(arg0: Byte2CharAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

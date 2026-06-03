@@ -35,5 +35,7 @@ export class ExportNode extends Node {
     isDefault(): boolean;
     setExportClause(exportClause: NamedExportsNode): ExportNode;
     setFromSpecifier(from: LiteralNode<TruffleString>): ExportNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

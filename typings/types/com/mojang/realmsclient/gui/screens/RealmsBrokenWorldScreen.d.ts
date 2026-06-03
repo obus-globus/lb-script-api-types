@@ -37,6 +37,7 @@ export class RealmsBrokenWorldScreen extends RealmsScreen {
     // private getFramePositionX(i: number): number;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     // private isMinigame(): boolean;
     onClose(): void;
     tick(): void;

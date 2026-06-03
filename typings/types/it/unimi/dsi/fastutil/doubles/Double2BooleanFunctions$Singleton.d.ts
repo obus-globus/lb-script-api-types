@@ -8,8 +8,11 @@ export class Double2BooleanFunctions$Singleton extends AbstractDouble2BooleanFun
     // private value: boolean;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
+    get(arg0: Object): boolean;
     get(arg0: number): boolean;
+    getOrDefault(arg0: Object, arg1: boolean): boolean;
     getOrDefault(arg0: number, arg1: boolean): boolean;
     size(): number;
 }

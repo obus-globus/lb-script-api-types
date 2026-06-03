@@ -20,6 +20,7 @@ export class Fold<A extends Object | number | string | boolean, B extends Object
     equals(arg0: Object | null): boolean;
     eval(): (param0: DynamicOps<Object>) => (param0: A) => B;
     hashCode(): number;
+    toString(): string;
     toString(arg0: number): string;
     type(): Type<(param0: A) => B>;
 }

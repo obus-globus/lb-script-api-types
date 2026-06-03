@@ -151,6 +151,7 @@ export class IronGolem extends AbstractGolem implements NeutralMob {
     getDeathSound(): SoundEvent;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getOfferFlowerTick(): number;
     getPersistentAngerEndTime(): number;
     getPersistentAngerTarget(): EntityReference<LivingEntity>;

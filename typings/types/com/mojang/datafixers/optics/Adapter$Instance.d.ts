@@ -10,7 +10,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Adapter$Instance<A2 extends Object | number | string | boolean, B2 extends Object | number | string | boolean> extends Object implements Profunctor<Adapter$Mu<A2, B2>, Profunctor$Mu> {
     static unbox(paramarg0: App<Object, Object>): Profunctor<Object, Object>;
     constructor()
+    dimap(arg0: App2<Adapter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Adapter$Mu<A2, B2>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Adapter$Mu<A2, B2>, A, B>, App2<Adapter$Mu<A2, B2>, C, D>>;
+    dimap(arg0: () => App2<Adapter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Adapter$Mu<A2, B2>, C, D>;
     dimap(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     dimap(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     lmap(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;

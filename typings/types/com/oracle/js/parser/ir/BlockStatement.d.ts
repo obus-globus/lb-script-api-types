@@ -16,5 +16,7 @@ export class BlockStatement extends Statement {
     isSynthetic(): boolean;
     isTerminal(): boolean;
     setBlock(block: Block): BlockStatement;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

@@ -24,6 +24,7 @@ export abstract class NumberPrototypeBuiltins$JSNumberToStringNode extends JSBui
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     isRadix10(radix: Object): boolean;
+    toString(): string;
     toString(thisObj: JSNumberObject, radix: Object, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile): Object;
     toStringForeignObject(thisObj: Object, radix: Object, node: Node, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile, interop: InteropLibrary): Object;
     toStringIntRadix10(thisObj: JSNumberObject, radix: Object): Object;

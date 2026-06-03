@@ -9,6 +9,7 @@ import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/
 export class ErrorClassDescriptor extends ClassDescriptorImpl {
     static Companion: ModuleAwareClassDescriptor$Companion;
     constructor(arg0: Name)
+    getMemberScope(arg0: TypeSubstitution): MemberScope;
     getMemberScope(arg0: TypeSubstitution, arg1: KotlinTypeRefiner): MemberScope;
     substitute(arg0: TypeSubstitutor): ClassDescriptor;
     toString(): string;

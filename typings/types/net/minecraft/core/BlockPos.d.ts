@@ -75,6 +75,7 @@ export class BlockPos extends Vec3i {
     getCenter(): Vec3;
     immutable(): BlockPos;
     multiply(scale: number): BlockPos;
+    multiply(xScale: number, yScale: number, zScale: number): Vec3i;
     mutable(): BlockPos$MutableBlockPos;
     north(): BlockPos;
     north(arg0: number): BlockPos;

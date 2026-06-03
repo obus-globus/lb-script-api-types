@@ -7,6 +7,9 @@ import type { CustomPacketPayload } from '../../../../../../net/minecraft/networ
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface LoginPacketSender extends Object, PacketSender{
     createPacket(arg0: Identifier, arg1: FriendlyByteBuf): Packet<Object>;
+    sendPacket(arg0: Packet<Object>): void;
+    sendPacket(arg0: CustomPacketPayload): void;
+    sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
     sendPacket(arg0: Identifier, arg1: FriendlyByteBuf): void;
     sendPacket(arg0: Identifier, arg1: FriendlyByteBuf, arg2: ChannelFutureListener): void;
     sendPacket(arg0: Packet<Object>): void;

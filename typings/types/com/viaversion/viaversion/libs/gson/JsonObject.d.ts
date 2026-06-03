@@ -16,8 +16,11 @@ export class JsonObject extends JsonElement {
     entrySet(): Map$Entry<string, JsonElement>[];
     equals(arg0: Object | null): boolean;
     get(arg0: string): JsonElement;
+    getAsJsonArray(): JsonElement[];
     getAsJsonArray(arg0: string): JsonElement[];
+    getAsJsonObject(): JsonObject;
     getAsJsonObject(arg0: string): JsonObject;
+    getAsJsonPrimitive(): JsonPrimitive;
     getAsJsonPrimitive(arg0: string): JsonPrimitive;
     has(arg0: string): boolean;
     hashCode(): number;

@@ -2,6 +2,7 @@ import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
 import type { HashCode } from '../../../../com/google/common/hash/HashCode.d.ts'
 import type { HashFunction } from '../../../../com/google/common/hash/HashFunction.d.ts'
 import type { ByteProcessor } from '../../../../com/google/common/io/ByteProcessor.d.ts'
+import type { ByteSink } from '../../../../com/google/common/io/ByteSink.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
@@ -18,6 +19,7 @@ export class ByteSource$ByteArrayByteSource extends ByteSource {
     // private bytes: number[];
     // private length: number;
     // private offset: number;
+    copyTo(sink: ByteSink): number;
     copyTo(output: OutputStream): number;
     hash(hashFunction: HashFunction): HashCode;
     isEmpty(): boolean;

@@ -6,7 +6,6 @@ import type { AtomicBoolean } from '../../../java/util/concurrent/atomic/AtomicB
 import type { AtomicReference } from '../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../java/lang/Cloneable.d.ts'
-import type { Function0 } from '../../../kotlin/jvm/functions/Function0.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { Call } from '../../../okhttp3/Call.d.ts'
 import type { Callback } from '../../../okhttp3/Callback.d.ts'
@@ -69,10 +68,10 @@ export class RealCall extends Object implements Cloneable, Call, Lockable {
     releaseConnectionNoEvents(): Socket | null;
     request(): Request;
     retryAfterFailure(): boolean;
-    tag<T extends Object | number | string | boolean>(type: Class<T>, computeIfAbsent: Function0<T>): T;
+    tag<T extends Object | number | string | boolean>(type: Class<T>, computeIfAbsent: () => T): T;
     tag<T extends Object | number | string | boolean>(type: Class<T>): T | null;
     tag<T extends Object | number | string | boolean>(type: KClass<T>): T | null;
-    tag<T extends Object | number | string | boolean>(type: KClass<T>, computeIfAbsent: Function0<T>): T;
+    tag<T extends Object | number | string | boolean>(type: KClass<T>, computeIfAbsent: () => T): T;
     timeout(): Timeout;
     timeoutEarlyExit(): void;
     // private timeoutExit(cause: IOException | null): IOException | null;

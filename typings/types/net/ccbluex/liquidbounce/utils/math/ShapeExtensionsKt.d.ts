@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { DoubleFaceConsumer } from '../../../../../net/ccbluex/liquidbounce/utils/math/DoubleFaceConsumer.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -21,7 +20,7 @@ export class ShapeExtensionsKt extends Object {
     static forAllFaces(voxelShape: VoxelShape, action: DoubleFaceConsumer): void;
     static forAllSideFaces(voxelShape: VoxelShape, side: Direction, hitPos: Vec3, action: DoubleFaceConsumer): void;
     static forAllSideOutlineEdges(voxelShape: VoxelShape, side: Direction, hitPos: Vec3, action: Shapes$DoubleLineConsumer): void;
-    static ifEmpty(voxelShape: VoxelShape, defaultValue: Function0<Object>): VoxelShape;
+    static ifEmpty(voxelShape: VoxelShape, defaultValue: () => Object | null): VoxelShape;
     static mergeAdjacentVoxelShapes(collection: E[]): (Object | null)[];
     static orEmpty(paramarg0: VoxelShape): VoxelShape;
     /**

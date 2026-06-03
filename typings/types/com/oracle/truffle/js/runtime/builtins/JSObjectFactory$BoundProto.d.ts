@@ -13,5 +13,6 @@ export class JSObjectFactory$BoundProto extends JSObjectFactory {
     // private factory: Shape;
     // private prototype: JSDynamicObject;
     getPrototype(realm: JSRealm): JSDynamicObject;
+    getShape(realm: JSRealm): Shape;
     getShape(realm: JSRealm, proto: JSDynamicObject): Shape;
 }

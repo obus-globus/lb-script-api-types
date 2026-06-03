@@ -16,6 +16,7 @@ export class EmptyPart extends Type<Unit> {
     buildCodec(): Codec<Unit>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     point(arg0: DynamicOps<Object>): Optional<Unit>;
     toString(): string;
 }

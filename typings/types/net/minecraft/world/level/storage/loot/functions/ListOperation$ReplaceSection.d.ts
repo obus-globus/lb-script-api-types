@@ -10,6 +10,7 @@ export class ListOperation$ReplaceSection extends Record implements ListOperatio
     static codec(parammaxSize: number): MapCodec<ListOperation>;
     // private offset: number;
     // private size: Optional<number>;
+    apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
     apply(original: T[], replacement: T[]): T[];
     equals(o: Object | null): boolean;

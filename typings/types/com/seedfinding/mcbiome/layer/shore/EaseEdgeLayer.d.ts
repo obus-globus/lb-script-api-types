@@ -12,5 +12,7 @@ export class EaseEdgeLayer extends CrossLayer {
     // private canBeNeighbors(arg0: number, arg1: Biome): boolean;
     // private replaceEdge(arg0: number[], arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: Biome, arg7: Biome): boolean;
     // private replaceEdgeIfNeeded(arg0: number[], arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: Biome, arg7: Biome): boolean;
+    sample(arg0: number, arg1: number, arg2: number): number;
     sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
 }

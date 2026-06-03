@@ -1,5 +1,6 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { SettingDescriptor } from '../../../jdk/jfr/SettingDescriptor.d.ts'
+import type { ValueDescriptor } from '../../../jdk/jfr/ValueDescriptor.d.ts'
 import type { Type } from '../../../jdk/jfr/internal/Type.d.ts'
 import type { Throttler } from '../../../jdk/jfr/internal/settings/Throttler.d.ts'
 import type { Modification } from '../../../jdk/jfr/internal/tracing/Modification.d.ts'
@@ -46,6 +47,7 @@ export class PlatformEventType extends Type {
     readonly thresholdTicks: number;
     readonly throttler: Throttler;
     add(arg0: SettingDescriptor): void;
+    add(arg0: ValueDescriptor): void;
     // private determineBackToBackSensitive(): boolean;
     // private determineMethodSampling(): boolean;
     // private determineStackTraceOffset(): number;

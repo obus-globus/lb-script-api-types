@@ -22,6 +22,7 @@ export class ConfirmExperimentalFeaturesScreen$DetailsScreen extends Screen {
     // private layout: HeaderAndFooterLayout;
     // private list: ConfirmExperimentalFeaturesScreen$DetailsScreen$PackList;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

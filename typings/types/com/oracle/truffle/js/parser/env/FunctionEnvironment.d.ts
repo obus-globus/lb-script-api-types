@@ -61,6 +61,7 @@ export class FunctionEnvironment extends Environment {
     getAsyncResultSlot(): JSFrameSlot;
     getBlockFrameDescriptor(): JSFrameDescriptor;
     getBlockScopeSlot(): JSFrameSlot;
+    getBlockScopeSlot(frameLevel: number, scopeLevel: number): JSFrameSlot;
     getCurrentBlockScopeSlot(): JSFrameSlot;
     getExplicitOrInternalFunctionName(): TruffleString;
     getFunctionFrameDescriptor(): JSFrameDescriptor;

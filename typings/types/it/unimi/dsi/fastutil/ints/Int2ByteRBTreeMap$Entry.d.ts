@@ -23,6 +23,7 @@ export class Int2ByteRBTreeMap$Entry extends AbstractInt2ByteMap$BasicEntry impl
     right(): Int2ByteRBTreeMap$Entry;
     right(arg0: Int2ByteRBTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Int2ByteRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

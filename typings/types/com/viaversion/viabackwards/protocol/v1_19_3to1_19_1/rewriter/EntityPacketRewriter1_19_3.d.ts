@@ -11,4 +11,5 @@ export class EntityPacketRewriter1_19_3 extends EntityRewriter<ClientboundPacket
     registerRewrites(): void;
     // private sendPlayerProfileUpdate(arg0: UserConnection, arg1: number, arg2: EntityPacketRewriter1_19_3$PlayerProfileUpdate[]): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

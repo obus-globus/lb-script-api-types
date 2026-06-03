@@ -1,4 +1,5 @@
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
+import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 export class NullReader extends Reader {
     static INSTANCE: NullReader;
@@ -23,6 +24,7 @@ export class NullReader extends Reader {
     processChar(): number;
     processChars(arg0: string[], arg1: number, arg2: number): void;
     read(): number;
+    read(arg0: CharBuffer): number;
     read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
     reset(): void;

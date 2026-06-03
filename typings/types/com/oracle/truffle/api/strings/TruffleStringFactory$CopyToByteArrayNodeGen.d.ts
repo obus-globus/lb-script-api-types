@@ -6,5 +6,6 @@ export class TruffleStringFactory$CopyToByteArrayNodeGen extends TruffleString$C
     static getUncached(): TruffleString$CopyToByteArrayNode;
     private constructor()
     // private state_0_: number;
+    execute(string: AbstractTruffleString, expectedEncoding: TruffleString$Encoding): number[];
     execute(arg0Value: AbstractTruffleString, arg1Value: number, arg2Value: number[], arg3Value: number, arg4Value: number, arg5Value: TruffleString$Encoding): void;
 }

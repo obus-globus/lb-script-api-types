@@ -60,6 +60,7 @@ export class ModsScreen extends Screen {
     getSearchInput(): string;
     getSelectedEntry(): ModListEntry;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(arg0: KeyEvent): boolean;
     onClose(): void;
     onFilesDrop(arg0: Path[][]): void;

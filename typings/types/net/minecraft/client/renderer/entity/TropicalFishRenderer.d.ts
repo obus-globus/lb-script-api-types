@@ -15,6 +15,7 @@ export class TropicalFishRenderer extends MobRenderer<TropicalFish, TropicalFish
     // private largeModel: EntityModel<TropicalFishRenderState>;
     // private smallModel: EntityModel<TropicalFishRenderState>;
     createRenderState(): TropicalFishRenderState;
+    createRenderState(entity: TropicalFish, partialTicks: number): TropicalFishRenderState;
     extractRenderState(entity: TropicalFish, state: TropicalFishRenderState, partialTicks: number): void;
     getModelTint(state: TropicalFishRenderState): number;
     getTextureLocation(state: TropicalFishRenderState): Identifier;

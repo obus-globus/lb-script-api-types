@@ -22,6 +22,8 @@ export class SimpleLoggerContext extends Object implements LoggerContext {
     // private stream: PrintStream;
     // private createLogger(name: string, messageFactory: MessageFactory): ExtendedLogger;
     getExternalContext(): Object;
+    getLogger(cls: Class<Object>): ExtendedLogger;
+    getLogger(cls: Class<Object>, messageFactory: MessageFactory): ExtendedLogger;
     getLogger(name: string): ExtendedLogger;
     getLogger(name: string, messageFactory: MessageFactory): ExtendedLogger;
     getLogger(cls: Class<Object>): ExtendedLogger;

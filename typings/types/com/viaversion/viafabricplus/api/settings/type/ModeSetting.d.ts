@@ -11,5 +11,6 @@ export class ModeSetting extends AbstractSetting<MutableComponent> {
     getOptions(): MutableComponent[];
     read(arg0: JsonObject): void;
     setValue(arg0: number): void;
+    setValue(arg0: MutableComponent): void;
     write(arg0: JsonObject): void;
 }

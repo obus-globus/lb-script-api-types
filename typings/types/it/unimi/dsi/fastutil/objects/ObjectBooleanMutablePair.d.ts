@@ -13,6 +13,8 @@ export class ObjectBooleanMutablePair<K extends Object | number | string | boole
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectBooleanMutablePair<K>;
+    right(): boolean;
+    right(arg0: boolean): ObjectBooleanPair<K>;
     right(arg0: boolean): ObjectBooleanMutablePair<K>;
     right(): boolean;
     right(arg0: boolean): ObjectBooleanPair<K>;

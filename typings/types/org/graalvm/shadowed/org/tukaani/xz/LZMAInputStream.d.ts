@@ -34,5 +34,6 @@ export class LZMAInputStream extends InputStream {
     // private initialize(in_: InputStream, uncompSize: number, lc: number, lp: number, pb: number, dictSize: number, presetDict: number[], arrayCache: ArrayCache): void;
     // private putArraysToCache(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(buf: number[], off: number, len: number): number;
 }

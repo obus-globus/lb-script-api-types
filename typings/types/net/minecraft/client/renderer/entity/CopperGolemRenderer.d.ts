@@ -14,6 +14,7 @@ export class CopperGolemRenderer extends MobRenderer<CopperGolem, CopperGolemRen
     constructor(context: EntityRendererProvider$Context)
     // private blockModelResolver: BlockModelResolver;
     createRenderState(): CopperGolemRenderState;
+    createRenderState(entity: CopperGolem, partialTicks: number): CopperGolemRenderState;
     extractRenderState(entity: CopperGolem, state: CopperGolemRenderState, partialTicks: number): void;
     getTextureLocation(state: CopperGolemRenderState): Identifier;
 }

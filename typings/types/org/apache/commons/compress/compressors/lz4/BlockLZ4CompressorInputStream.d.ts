@@ -7,6 +7,8 @@ export class BlockLZ4CompressorInputStream extends AbstractLZ77CompressorInputSt
     // private nextBackReferenceSize: number;
     // private state: BlockLZ4CompressorInputStream$State;
     // private initializeBackReference(): boolean;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readSizeBytes(): number;
     // private readSizes(): void;

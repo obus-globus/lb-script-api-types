@@ -13,5 +13,6 @@ export class StrayRenderer extends AbstractSkeletonRenderer<Stray, SkeletonRende
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SkeletonRenderState;
+    createRenderState(entity: Stray, partialTicks: number): SkeletonRenderState;
     getTextureLocation(state: SkeletonRenderState): Identifier;
 }

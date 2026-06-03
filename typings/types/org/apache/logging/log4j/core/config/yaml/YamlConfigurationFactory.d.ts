@@ -1,4 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
+import type { URI } from '../../../../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
@@ -25,6 +27,8 @@ export class YamlConfigurationFactory extends ConfigurationFactory {
     static setConfigurationFactory(paramfactory: ConfigurationFactory): void;
     constructor()
     // private isActive: boolean;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI): Configuration;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI, loader: ClassLoader): Configuration;
     getConfiguration(loggerContext: LoggerContext, source: ConfigurationSource): Configuration;
     getSupportedTypes(): string[];
     isActive(): boolean;

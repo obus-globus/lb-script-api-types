@@ -11,6 +11,7 @@ export class FireworkEntityRenderer extends EntityRenderer<FireworkRocketEntity,
     constructor(context: EntityRendererProvider$Context)
     // private itemModelResolver: ItemModelResolver;
     createRenderState(): FireworkRocketRenderState;
+    createRenderState(entity: FireworkRocketEntity, partialTicks: number): FireworkRocketRenderState;
     extractRenderState(entity: FireworkRocketEntity, state: FireworkRocketRenderState, partialTicks: number): void;
     submit(state: FireworkRocketRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

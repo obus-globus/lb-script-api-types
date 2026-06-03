@@ -32,6 +32,8 @@ export class Int2ByteArrayMap$MapEntry extends Object implements Int2ByteMap$Ent
     left(arg0: number): IntBytePair;
     left(arg0: number): IntBytePair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntBytePair;
     right(arg0: number): IntBytePair;
     right(): number;
     right(arg0: number): IntBytePair;

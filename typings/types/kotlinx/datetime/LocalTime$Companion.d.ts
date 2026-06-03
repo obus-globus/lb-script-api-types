@@ -1,6 +1,5 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { LocalTime } from '../../kotlinx/datetime/LocalTime.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 import type { DateTimeFormatBuilder$WithTime } from '../../kotlinx/datetime/format/DateTimeFormatBuilder$WithTime.d.ts'
@@ -11,7 +10,7 @@ export class LocalTime$Companion extends Object {
     // private MIN: LocalTime;
     /*not mapped: */ getMIN$kotlinx_datetime(): LocalTime;
     // private serialVersionUID: number;
-    Format(builder: Function1<DateTimeFormatBuilder$WithTime, void>): DateTimeFormat<LocalTime>;
+    Format(builder: (param0: DateTimeFormatBuilder$WithTime) => void): DateTimeFormat<LocalTime>;
     fromMillisecondOfDay(millisecondOfDay: number): LocalTime;
     fromNanosecondOfDay(nanosecondOfDay: number): LocalTime;
     fromSecondOfDay(secondOfDay: number): LocalTime;

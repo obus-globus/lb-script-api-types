@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { CharReferencePair } from '../../../../../it/unimi/dsi/fastutil/chars/CharReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -22,5 +23,6 @@ export class CharReferenceImmutablePair<V extends Object | number | string | boo
     left(arg0: string): CharReferencePair<V>;
     leftChar(): string;
     right(): V;
+    right(arg0: V): Pair<string, V>;
     toString(): string;
 }

@@ -1,9 +1,6 @@
 import type { BooleanObjectPair } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanObjectPair.d.ts'
 import type { IntLongPair } from '../../../../../it/unimi/dsi/fastutil/ints/IntLongPair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { Sequence } from '../../../../../kotlin/sequences/Sequence.d.ts'
 import type { SwingMode } from '../../../../../net/ccbluex/liquidbounce/utils/block/SwingMode.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -36,7 +33,7 @@ export class BlockExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L418 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:418}
      */
-    static collideBlockIntersects(aABB: AABB, checkCollisionShape: boolean, isCorrectBlock: Function1<Object, boolean>): boolean;
+    static collideBlockIntersects(aABB: AABB, checkCollisionShape: boolean, isCorrectBlock: (param0: Object | null) => boolean): boolean;
     /**
      * Breaks the block
      *
@@ -50,9 +47,9 @@ export class BlockExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L498 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:498}
      */
-    static doPlacement(hitResult: BlockHitResult, hand: InteractionHand, onPlacementSuccess: Function0<boolean>, onItemUseSuccess: Function0<boolean>, swingMode: SwingMode): void;
+    static doPlacement(hitResult: BlockHitResult, hand: InteractionHand, onPlacementSuccess: () => boolean, onItemUseSuccess: () => boolean, swingMode: SwingMode): void;
     static getBlock(blockPos: BlockPos): Block;
-    static getBlockingEntities(blockPos: BlockPos, include: Function1<Object, boolean>): Entity[];
+    static getBlockingEntities(blockPos: BlockPos, include: (param0: Object | null) => boolean): Entity[];
     static getCenterDistanceSquared(blockPos: BlockPos): number;
     static getCenterDistanceSquaredEyes(blockPos: BlockPos): number;
     static getCollidingRegion(paramarg0: AABB): BoundingBox;
@@ -80,8 +77,8 @@ export class BlockExtensionsKt extends Object {
     static getPotentialSecondBedBlock(bedBlock: BedBlock, state: BlockState, pos: BlockPos): BlockPos;
     static getSortedSphere(blockPos: BlockPos, radius: number): (Object | null)[];
     static getState(paramarg0: BlockPos): BlockState;
-//     static getState-deprecated(paramarg0: BlockPos): BlockState;
- // ; invalid because of -    static getStateOrEmpty(paramarg0: BlockPos): BlockState;
+// (invalid TS: name contains '-')     static getState-deprecated(paramarg0: BlockPos): BlockState;
+    static getStateOrEmpty(paramarg0: BlockPos): BlockState;
     static getTargetBlockPos(paramarg0: BlockHitResult): BlockPos;
     static isBed(paramarg0: BlockState): boolean;
     static isBlastResistant(blockPos: BlockPos): boolean;
@@ -90,7 +87,7 @@ export class BlockExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L396 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:396}
      */
-    static isBlockAtPosition(aABB: AABB, isCorrectBlock: Function1<Object, boolean>): boolean;
+    static isBlockAtPosition(aABB: AABB, isCorrectBlock: (param0: Object | null) => boolean): boolean;
     static isBlockedByEntities(blockPos: BlockPos): boolean;
     /**
      * Like {@link isBlockedByEntities} but it returns a blocking end crystal if present.
@@ -142,7 +139,7 @@ export class BlockExtensionsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:196}
      */
     static searchBlocksInCuboid(vec3: Vec3, radius: number): BlockPos[];
-    static searchBlocksInCuboid(vec3: Vec3, radius: number, filter: Function2<Object, Object, boolean>): Sequence<Object>;
+    static searchBlocksInCuboid(vec3: Vec3, radius: number, filter: (param0: Object | null, param1: Object | null) => boolean): Sequence<Object>;
     /**
      * Scan blocks around the position in a cuboid, filtered and sorted by shape distance from this {@link Vec3}.
      * Distance calculation is based on outline shape:
@@ -152,7 +149,7 @@ export class BlockExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L213 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:213}
      */
-    static searchBlocksInRangeSorted(vec3: Vec3, range: number, shapeGetter: ClipContext$ShapeGetter, collisionContext: CollisionContext, filter: Function2<Object, Object, boolean>): (Object | null)[];
+    static searchBlocksInRangeSorted(vec3: Vec3, range: number, shapeGetter: ClipContext$ShapeGetter, collisionContext: CollisionContext, filter: (param0: Object | null, param1: Object | null) => boolean): (Object | null)[];
     /**
      * Scan blocks outwards from center along given {@link directions}, up to {@link layers}
      *

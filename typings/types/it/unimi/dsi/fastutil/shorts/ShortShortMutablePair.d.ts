@@ -19,11 +19,15 @@ export class ShortShortMutablePair extends Object implements ShortShortPair, Ser
     key(arg0: number): ShortShortPair;
     key(arg0: number): ShortShortPair;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortShortPair;
     left(arg0: number): ShortShortMutablePair;
     left(): number;
     left(arg0: number): ShortShortPair;
     left(arg0: number): ShortShortPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortShortPair;
     right(arg0: number): ShortShortMutablePair;
     right(): number;
     right(arg0: number): ShortShortPair;

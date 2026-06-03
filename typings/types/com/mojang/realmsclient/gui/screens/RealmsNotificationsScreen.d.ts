@@ -37,5 +37,6 @@ export class RealmsNotificationsScreen extends RealmsScreen {
     // private getRealmsNotificationsEnabled(): boolean;
     // private inTitleScreen(): boolean;
     init(): void;
+    init(width: number, height: number): void;
     tick(): void;
 }

@@ -17,6 +17,7 @@ export class DefaultIoScheduler extends ExecutorCoroutineDispatcher implements E
     dispatch(context: CoroutineContext, block: () => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;
     execute(command: () => void): void;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     toString(): string;
 }

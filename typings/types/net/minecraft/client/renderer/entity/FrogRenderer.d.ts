@@ -10,6 +10,7 @@ export class FrogRenderer extends MobRenderer<Frog, FrogRenderState, FrogModel> 
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): FrogRenderState;
+    createRenderState(entity: Frog, partialTicks: number): FrogRenderState;
     extractRenderState(entity: Frog, state: FrogRenderState, partialTicks: number): void;
     getTextureLocation(state: FrogRenderState): Identifier;
 }

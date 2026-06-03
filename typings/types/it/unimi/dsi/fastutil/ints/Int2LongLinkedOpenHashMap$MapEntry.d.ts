@@ -32,6 +32,8 @@ export class Int2LongLinkedOpenHashMap$MapEntry extends Object implements Int2Lo
     left(arg0: number): IntLongPair;
     left(arg0: number): IntLongPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntLongPair;
     right(arg0: number): IntLongPair;
     right(): number;
     right(arg0: number): IntLongPair;

@@ -17,6 +17,8 @@ export class LongReferenceMutablePair<V extends Object | number | string | boole
     key(arg0: number): LongReferencePair<V>;
     key(arg0: number): LongReferencePair<V>;
     keyLong(): number;
+    left(): number;
+    left(arg0: number): LongReferencePair<V>;
     left(arg0: number): LongReferenceMutablePair<V>;
     left(): number;
     left(arg0: number): LongReferencePair<V>;

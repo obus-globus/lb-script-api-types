@@ -2,7 +2,6 @@ import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/Ren
 import type { PoseStack$Pose } from '../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function3 } from '../../../../kotlin/jvm/functions/Function3.d.ts'
 import type { StaticMeshStorage } from '../../../../net/ccbluex/liquidbounce/render/StaticMeshStorage.d.ts'
 import type { Color4b } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { Vec3f } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Vec3f.d.ts'
@@ -36,7 +35,7 @@ export class VertexBuilderKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
      */
-    static buildMesh(staticMeshStorage: StaticMeshStorage, pipeline: RenderPipeline, rotate: boolean, origin: BlockPos, block: Function3<Object, Object, Object, void>): void;
+    static buildMesh(staticMeshStorage: StaticMeshStorage, pipeline: RenderPipeline, rotate: boolean, origin: BlockPos, block: (param0: Object | null, param1: Object | null, param2: Object | null) => void): void;
     static setColor(vertexConsumer: VertexConsumer, color: Color4b): VertexConsumer;
     static setNormal(vertexConsumer: VertexConsumer, pose: PoseStack$Pose, normalVector: Vec3f): VertexConsumer;
 }

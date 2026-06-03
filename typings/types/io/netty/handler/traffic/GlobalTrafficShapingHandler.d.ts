@@ -27,6 +27,7 @@ export class GlobalTrafficShapingHandler extends AbstractTrafficShapingHandler {
     release(): void;
     // private sendAllValid(arg0: ChannelHandlerContext, arg1: GlobalTrafficShapingHandler$PerChannel, arg2: number): void;
     setMaxGlobalWriteSize(arg0: number): void;
+    submitWrite(arg0: ChannelHandlerContext, arg1: Object, arg2: number, arg3: ChannelPromise): void;
     submitWrite(arg0: ChannelHandlerContext, arg1: Object, arg2: number, arg3: number, arg4: number, arg5: ChannelPromise): void;
     userDefinedWritabilityIndex(): number;
 }

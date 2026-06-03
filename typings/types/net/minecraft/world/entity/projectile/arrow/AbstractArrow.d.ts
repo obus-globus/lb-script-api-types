@@ -3,12 +3,14 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { EntityDataAccessor } from '../../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { DamageSource } from '../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Entity$MovementEmission } from '../../../../../../net/minecraft/world/entity/Entity$MovementEmission.d.ts'
+import type { EntityReference } from '../../../../../../net/minecraft/world/entity/EntityReference.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { MoverType } from '../../../../../../net/minecraft/world/entity/MoverType.d.ts'
@@ -123,9 +125,12 @@ export abstract class AbstractArrow extends Projectile {
     onHitEntity(hitResult: EntityHitResult): void;
     onInsideBubbleColumn(dragDown: boolean): void;
     onItemBreak(item: Item): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playerTouch(player: Player): void;
     push(xa: number, ya: number, za: number): void;
+    push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     // private resetPiercedEntities(): void;
     setBaseDamage(baseDamage: number): void;
@@ -135,6 +140,7 @@ export abstract class AbstractArrow extends Projectile {
     setInGround(inGround: boolean): void;
     setNoPhysics(noPhysics: boolean): void;
     setOwner(owner: Entity): void;
+    setOwner(owner: EntityReference<Entity>): void;
     setPickupItemStack(itemStack: ItemStack): void;
     // private setPierceLevel(pieceLevel: number): void;
     setSoundEvent(soundEvent: SoundEvent): void;

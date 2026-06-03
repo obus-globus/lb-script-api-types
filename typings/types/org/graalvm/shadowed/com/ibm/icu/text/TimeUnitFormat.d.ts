@@ -36,11 +36,13 @@ export class TimeUnitFormat extends MeasureFormat {
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
     getNumberFormatter(): LocalizedNumberFormatter;
+    parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): TimeUnitAmount;
     // private readResolve(): Object;
     // private searchInTree(resourceKey: string, styl: number, timeUnit: TimeUnit, srcPluralCount: string, searchPluralCount: string, countToPatterns: { [key: string]: Object[] }): void;
     setLocale(locale: Locale): TimeUnitFormat;
     setLocale(locale: ULocale): TimeUnitFormat;
+    setLocale(valid: ULocale, actual: ULocale): void;
     setNumberFormat(format: NumberFormat): TimeUnitFormat;
     // private setup(): void;
     // private setup(resourceKey: string, timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>, style: number, pluralKeywords: string[]): void;

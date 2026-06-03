@@ -13,8 +13,8 @@ import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ServerWorldExtended } from '../../../../net/caffeinemc/mods/lithium/common/world/ServerWorldExtended.d.ts'
 import type { ServerLevelAccessor } from '../../../../net/caffeinemc/mods/lithium/mixin/minimal_nonvanilla/spawning/ServerLevelAccessor.d.ts'
-import type { ServerLevelAccessor } from '../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/ServerLevelAccessor.d.ts'
-import type { ServerLevelAccessor } from '../../../../net/caffeinemc/mods/lithium/mixin/util/entity_movement_tracking/ServerLevelAccessor.d.ts'
+import type { ServerLevelAccessor as ServerLevelAccessor_2 } from '../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/ServerLevelAccessor.d.ts'
+import type { ServerLevelAccessor as ServerLevelAccessor_3 } from '../../../../net/caffeinemc/mods/lithium/mixin/util/entity_movement_tracking/ServerLevelAccessor.d.ts'
 import type { AttachmentTarget } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentType } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { GlobalAttachments } from '../../../../net/fabricmc/fabric/api/attachment/v1/GlobalAttachments.d.ts'
@@ -119,7 +119,7 @@ import type { ValueOutput } from '../../../../net/minecraft/world/level/storage/
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { LevelTicks } from '../../../../net/minecraft/world/ticks/LevelTicks.d.ts'
-export class ServerLevel extends Level implements ServerWorldExtended, ServerLevelAccessor, ServerLevelAccessor, ServerLevelAccessor, AttachmentTargetImpl, ServerLevelCache, ServerEntityGetter, WorldGenLevel {
+export class ServerLevel extends Level implements ServerWorldExtended, ServerLevelAccessor, ServerLevelAccessor_2, ServerLevelAccessor_3, AttachmentTargetImpl, ServerLevelCache, ServerEntityGetter, WorldGenLevel {
     static DIRECTIONS: (Object | null)[];
     static END: ResourceKey<Level>;
     static END_SPAWN_POINT: BlockPos;
@@ -204,7 +204,11 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     enabledFeatures(): FeatureFlagSet;
     ensureCanWrite(pos: BlockPos): boolean;
     environmentAttributes(): EnvironmentAttributeSystem;
+    explode(source: Entity, x: number, y: number, z: number, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
+    explode(source: Entity, x: number, y: number, z: number, r: number, blockInteraction: Level$ExplosionInteraction): void;
+    explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, x: number, y: number, z: number, r: number, fire: boolean, interactionType: Level$ExplosionInteraction): void;
     explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, x: number, y: number, z: number, r: number, fire: boolean, interactionType: Level$ExplosionInteraction, smallExplosionParticles: ParticleOptions, largeExplosionParticles: ParticleOptions, blockParticles: WeightedList<ExplosionParticleInfo>, explosionSound: Holder<SoundEvent>): void;
+    explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, boomPos: Vec3, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
@@ -229,7 +233,11 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     findLightningTargetAround(pos: BlockPos): BlockPos;
     findNearestMapStructure(structureTag: TagKey<Structure>, origin: BlockPos, maxSearchRadius: number, createReference: boolean): BlockPos;
     fuelValues(): FuelValues;
+    gameEvent(gameEvent: Holder<GameEvent>, pos: BlockPos, context: GameEvent$Context): void;
     gameEvent(gameEvent: Holder<GameEvent>, position: Vec3, context: GameEvent$Context): void;
+    gameEvent(gameEvent: ResourceKey<GameEvent>, pos: BlockPos, context: GameEvent$Context): void;
+    gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: BlockPos): void;
+    gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: Vec3): void;
     gatherChunkSourceStats(): string;
     getAllEntities(): Entity[];
     getBlockTicks(): LevelTicks<Block>;
@@ -240,9 +248,15 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     getDragonFight(): EnderDragonFight;
     getDragons(): EnderDragon[];
     getEntities(): LevelEntityGetter<Entity>;
+    getEntities(except: Entity, bb: AABB): Entity[];
+    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
     getEntities(type: EntityTypeTest<Entity, T>, selector: (param0: T) => kotlin.Boolean): T[];
     getEntities(type: EntityTypeTest<Entity, T>, selector: (param0: T) => kotlin.Boolean, result: T[]): void;
     getEntities(type: EntityTypeTest<Entity, T>, selector: (param0: T) => kotlin.Boolean, result: T[], maxResults: number): void;
+    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
+    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[]): void;
+    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[], maxResults: number): void;
+    getEntity(uuid: UUID): Entity;
     getEntity(id: number): Entity;
     getEntityInAnyDimension(uuid: UUID): Entity;
     getEntityOrPart(id: number): Entity;
@@ -298,6 +312,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     isSpawningMonsters(): boolean;
     isVillage(pos: BlockPos): boolean;
     isVillage(sectionPos: SectionPos): boolean;
+    levelEvent(type: number, pos: BlockPos, data: number): void;
     levelEvent(source: Entity, type: number, pos: BlockPos, data: number): void;
     lithium$setNavigationActive(arg0: Mob): void;
     lithium$setNavigationInactive(arg0: Mob): void;
@@ -309,6 +324,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     onReputationEvent(type: ReputationEventType, source: Entity, target: ReputationEventHandler): void;
     onStructureStartsAvailable(chunk: ChunkAccess): void;
     playSeededSound(except: Entity, x: number, y: number, z: number, sound: Holder<SoundEvent>, source: SoundSource, volume: number, pitch: number, seed: number): void;
+    playSeededSound(except: Entity, x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, seed: number): void;
     playSeededSound(except: Entity, sourceEntity: Entity, sound: Holder<SoundEvent>, source: SoundSource, volume: number, pitch: number, seed: number): void;
     players(): ServerPlayer[];
     potionBrewing(): PotionBrewing;
@@ -334,6 +350,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     setMapData(id: MapId, data: MapItemSavedData): void;
     setRespawnData(respawnData: LevelData$RespawnData): void;
     shouldTickBlocksAt(chunkPos: number): boolean;
+    shouldTickBlocksAt(pos: BlockPos): boolean;
     startTickingChunk(levelChunk: LevelChunk): void;
     structureManager(): StructureManager;
     tick(haveTime: () => kotlin.Boolean): void;

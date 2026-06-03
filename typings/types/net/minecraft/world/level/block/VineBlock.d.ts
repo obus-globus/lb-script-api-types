@@ -24,6 +24,7 @@ import type { BlockBehaviour$Properties } from '../../../../../net/minecraft/wor
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { StateDefinition$Builder } from '../../../../../net/minecraft/world/level/block/state/StateDefinition$Builder.d.ts'
 import type { BooleanProperty } from '../../../../../net/minecraft/world/level/block/state/properties/BooleanProperty.d.ts'
+import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class VineBlock extends Block {
@@ -89,6 +90,7 @@ export class VineBlock extends Block {
     constructor(properties: BlockBehaviour$Properties)
     // private shapes: (param0: BlockState) => VoxelShape;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     // private canSpread(level: BlockGetter, pos: BlockPos): boolean;
     // private canSupportAtFace(level: BlockGetter, pos: BlockPos, direction: Direction): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;

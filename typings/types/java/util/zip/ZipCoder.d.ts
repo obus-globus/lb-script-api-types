@@ -15,6 +15,7 @@ export class ZipCoder extends Object {
     // private encoder(): CharsetEncoder;
     getBytes(arg0: string): number[];
     isUTF8(): boolean;
+    toString(): string;
     toString(arg0: number[]): string;
     toString(arg0: number[], arg1: number): string;
     toString(arg0: number[], arg1: number, arg2: number): string;

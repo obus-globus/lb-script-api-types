@@ -12,4 +12,5 @@ export class SetFunctionBreakpointsResponse extends Response {
     getBody(): SetFunctionBreakpointsResponse$ResponseBody;
     hashCode(): number;
     setBody(body: SetFunctionBreakpointsResponse$ResponseBody): SetFunctionBreakpointsResponse;
+    setBody(body: Object): Response;
 }

@@ -1,4 +1,5 @@
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
+import type { Future } from '../../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Lock } from '../../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
@@ -28,5 +29,8 @@ export abstract class AbstractDatabaseAppender<T extends AbstractDatabaseManager
     getManager(): T;
     replaceManager(manager: T): void;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
+    stop(timeout: number, timeUnit: TimeUnit, changeLifeCycleState: boolean): boolean;
 }

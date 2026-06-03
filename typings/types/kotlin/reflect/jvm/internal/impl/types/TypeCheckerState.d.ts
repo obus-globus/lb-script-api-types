@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { AbstractTypePreparator } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/AbstractTypePreparator.d.ts'
 import type { AbstractTypeRefiner } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/AbstractTypeRefiner.d.ts'
 import type { TypeCheckerState$ForkPointContext } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeCheckerState$ForkPointContext.d.ts'
@@ -35,5 +34,5 @@ export class TypeCheckerState extends Object {
     isStubTypeEqualsToAnything(): boolean;
     prepareType(arg0: KotlinTypeMarker): KotlinTypeMarker;
     refineType(arg0: KotlinTypeMarker): KotlinTypeMarker;
-    runForkingPoint(arg0: Function1<TypeCheckerState$ForkPointContext, void>): boolean;
+    runForkingPoint(arg0: (param0: TypeCheckerState$ForkPointContext) => void): boolean;
 }

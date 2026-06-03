@@ -24,7 +24,12 @@ export class ChunkVertexConsumer extends Object implements VertexConsumer, Block
     addVertex(x: number, y: number, z: number, color: number, u: number, v: number, overlayCoords: number, lightCoords: number, nx: number, ny: number, nz: number): void;
     addVertex(arg0: Matrix4fc, arg1: number, arg2: number, arg3: number): VertexConsumer;
     addVertex(position: Vector3fc): VertexConsumer;
+    addVertex(pose: PoseStack$Pose, x: number, y: number, z: number): VertexConsumer;
+    addVertex(pose: PoseStack$Pose, position: Vector3fc): VertexConsumer;
     addVertex(arg0: number, arg1: number, arg2: number): VertexConsumer;
+    addVertex(x: number, y: number, z: number, color: number, u: number, v: number, overlayCoords: number, lightCoords: number, nx: number, ny: number, nz: number): void;
+    addVertex(arg0: Matrix4fc, arg1: number, arg2: number, arg3: number): VertexConsumer;
+    addVertex(position: Vector3fc): VertexConsumer;
     addVertexWith2DPose(pose: Matrix3x2fc, x: number, y: number): VertexConsumer;
     beginBlock(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     // private calculateNormal(): number;
@@ -43,6 +48,8 @@ export class ChunkVertexConsumer extends Object implements VertexConsumer, Block
     setLight(packedLightCoords: number): VertexConsumer;
     setLight(arg0: number): VertexConsumer;
     setLineWidth(arg0: number): VertexConsumer;
+    setNormal(arg0: PoseStack$Pose, arg1: number, arg2: number, arg3: number): VertexConsumer;
+    setNormal(pose: PoseStack$Pose, normal: Vector3fc): VertexConsumer;
     setNormal(arg0: PoseStack$Pose, arg1: number, arg2: number, arg3: number): VertexConsumer;
     setNormal(pose: PoseStack$Pose, normal: Vector3fc): VertexConsumer;
     setNormal(arg0: number, arg1: number, arg2: number): VertexConsumer;

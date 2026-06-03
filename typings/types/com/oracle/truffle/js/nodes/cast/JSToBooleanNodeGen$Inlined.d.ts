@@ -16,5 +16,6 @@ export class JSToBooleanNodeGen$Inlined extends JSToBooleanNode implements Unado
     // private state_0_: InlineSupport$StateField;
     // private executeAndSpecialize(arg0Value: Node, arg1Value: Object): boolean;
     executeBoolean(arg0Value: Node, arg1Value: Object): boolean;
+    executeBoolean(value: Object): boolean;
     // private foreignObject1Boundary0(state_0: number, arg0Value: Node, arg1Value: Object): boolean;
 }

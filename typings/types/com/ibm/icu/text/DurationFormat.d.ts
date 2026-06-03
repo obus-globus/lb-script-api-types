@@ -9,9 +9,11 @@ export abstract class DurationFormat extends UFormat {
     static getInstance(paramarg0: ULocale): DurationFormat;
     constructor()
     constructor(arg0: ULocale)
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     formatDurationFrom(arg0: number, arg1: number): string;
     formatDurationFromNow(arg0: number): string;
     formatDurationFromNowTo(arg0: Date): string;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
 }

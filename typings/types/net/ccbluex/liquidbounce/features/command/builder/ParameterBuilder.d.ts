@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { AutoCompletionProvider } from '../../../../../../net/ccbluex/liquidbounce/features/command/AutoCompletionProvider.d.ts'
 import type { Parameter } from '../../../../../../net/ccbluex/liquidbounce/features/command/Parameter.d.ts'
 import type { Parameter$Verificator } from '../../../../../../net/ccbluex/liquidbounce/features/command/Parameter$Verificator.d.ts'
@@ -29,7 +28,7 @@ export class ParameterBuilder<T extends Object | number | string | boolean> exte
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:106}
      */
-    autocompletedFrom(ignoreCase: boolean, minecraftPlaceholders: boolean, placeholdersProvider: Function0<string[]>): ParameterBuilder<T>;
+    autocompletedFrom(ignoreCase: boolean, minecraftPlaceholders: boolean, placeholdersProvider: () => string[] | null): ParameterBuilder<T>;
     autocompletedWith(autocompletionHandler: AutoCompletionProvider): ParameterBuilder<T>;
     build(): Parameter<T>;
     optional(default_: T | null): ParameterBuilder<T>;

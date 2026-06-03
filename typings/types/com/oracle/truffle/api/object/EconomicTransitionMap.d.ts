@@ -2,6 +2,7 @@ import type { StrongKeyWeakValueEntry } from '../../../../../com/oracle/truffle/
 import type { TransitionMap } from '../../../../../com/oracle/truffle/api/object/TransitionMap.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class EconomicTransitionMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends TransitionMap<K, V> {
     static create(): TransitionMap<Object, Object>;
@@ -10,6 +11,7 @@ export class EconomicTransitionMap<K extends Object | number | string | boolean,
     expungeStaleEntry(entry: StrongKeyWeakValueEntry<Object, V>): void;
     forEach(consumer: (param0: K, param1: V) => void): void;
     get(key: Object): V;
+    getValue(entry: Map$Entry<K, V>): V;
     // private getValue(entry: StrongKeyWeakValueEntry<K, V>): V;
     putAnyKey(key: Object, value: V): V;
     putAnyKeyIfAbsent(key: Object, value: V): V;

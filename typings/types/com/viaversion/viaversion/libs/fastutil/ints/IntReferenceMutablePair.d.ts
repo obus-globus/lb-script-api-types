@@ -17,6 +17,8 @@ export class IntReferenceMutablePair<V extends Object | number | string | boolea
     key(arg0: number): IntReferencePair<V>;
     key(arg0: number): IntReferencePair<V>;
     keyInt(): number;
+    left(): number;
+    left(arg0: number): IntReferencePair<V>;
     left(arg0: number): IntReferenceMutablePair<V>;
     left(): number;
     left(arg0: number): IntReferencePair<V>;

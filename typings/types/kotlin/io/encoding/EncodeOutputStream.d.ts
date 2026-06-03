@@ -16,6 +16,7 @@ export class EncodeOutputStream extends OutputStream {
     // private encodeByteBufferIntoOutput(): void;
     // private encodeIntoOutput(source: number[], startIndex: number, endIndex: number): number;
     flush(): void;
+    write(arg0: number[]): void;
     write(source: number[], offset: number, length: number): void;
     write(b: number): void;
 }

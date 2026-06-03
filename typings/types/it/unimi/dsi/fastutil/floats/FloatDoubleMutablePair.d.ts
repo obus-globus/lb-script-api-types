@@ -19,11 +19,15 @@ export class FloatDoubleMutablePair extends Object implements FloatDoublePair, S
     key(arg0: number): FloatDoublePair;
     key(arg0: number): FloatDoublePair;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatDoublePair;
     left(arg0: number): FloatDoubleMutablePair;
     left(): number;
     left(arg0: number): FloatDoublePair;
     left(arg0: number): FloatDoublePair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatDoublePair;
     right(arg0: number): FloatDoubleMutablePair;
     right(): number;
     right(arg0: number): FloatDoublePair;

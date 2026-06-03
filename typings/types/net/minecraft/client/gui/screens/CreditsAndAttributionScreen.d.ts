@@ -21,6 +21,7 @@ export class CreditsAndAttributionScreen extends Screen {
     // private lastScreen: Screen;
     // private layout: HeaderAndFooterLayout;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private openCreditsScreen(): void;
     repositionElements(): void;

@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ByteObjectPair } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class ByteObjectImmutablePair<V extends Object | number | string | boolea
     left(arg0: number): ByteObjectPair<V>;
     leftByte(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

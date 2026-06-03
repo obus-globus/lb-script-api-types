@@ -8,6 +8,7 @@ import type { ParserATNSimulator } from '../../../../../org/antlr/v4/runtime/atn
 import type { SemanticContext } from '../../../../../org/antlr/v4/runtime/atn/SemanticContext.d.ts'
 import type { DFA } from '../../../../../org/antlr/v4/runtime/dfa/DFA.d.ts'
 import type { DFAState } from '../../../../../org/antlr/v4/runtime/dfa/DFAState.d.ts'
+import type { DFAState$PredPrediction } from '../../../../../org/antlr/v4/runtime/dfa/DFAState$PredPrediction.d.ts'
 export class ProfilingATNSimulator extends ParserATNSimulator {
     static ERROR: DFAState;
     static TURN_OFF_LR_LOOP_ENTRY_BRANCH_OPT: boolean;
@@ -27,6 +28,7 @@ export class ProfilingATNSimulator extends ParserATNSimulator {
     adaptivePredict(arg0: TokenStream, arg1: number, arg2: ParserRuleContext): number;
     computeReachSet(arg0: (Object | null)[], arg1: number, arg2: boolean): (Object | null)[];
     computeTargetState(arg0: DFA, arg1: DFAState, arg2: number): DFAState;
+    evalSemanticContext(arg0: DFAState$PredPrediction[], arg1: ParserRuleContext, arg2: boolean): BitSet;
     evalSemanticContext(arg0: SemanticContext, arg1: ParserRuleContext, arg2: number, arg3: boolean): boolean;
     getCurrentState(): DFAState;
     getDecisionInfo(): DecisionInfo[];

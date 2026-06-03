@@ -23,4 +23,5 @@ export class Wincon$KEY_EVENT_RECORD extends Structure {
     wVirtualKeyCode: number;
     wVirtualScanCode: number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

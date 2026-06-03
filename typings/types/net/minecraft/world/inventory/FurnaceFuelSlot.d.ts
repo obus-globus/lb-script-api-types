@@ -5,6 +5,7 @@ export class FurnaceFuelSlot extends Slot {
     static isBucket(paramitemStack: ItemStack): boolean;
     constructor(menu: AbstractFurnaceMenu, container: ItemStack[], slot: number, x: number, y: number)
     // private menu: AbstractFurnaceMenu;
+    getMaxStackSize(): number;
     getMaxStackSize(itemStack: ItemStack): number;
     mayPlace(itemStack: ItemStack): boolean;
 }

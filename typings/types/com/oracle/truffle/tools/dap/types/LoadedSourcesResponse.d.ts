@@ -12,4 +12,5 @@ export class LoadedSourcesResponse extends Response {
     getBody(): LoadedSourcesResponse$ResponseBody;
     hashCode(): number;
     setBody(body: LoadedSourcesResponse$ResponseBody): LoadedSourcesResponse;
+    setBody(body: Object): Response;
 }

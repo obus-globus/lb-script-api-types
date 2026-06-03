@@ -23,6 +23,8 @@ export abstract class AbstractLZ77CompressorInputStream extends CompressorInputS
     hasMoreDataInBlock(): boolean;
     prefill(arg0: number[]): void;
     read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
     readBackReference(arg0: number[], arg1: number, arg2: number): number;
     // private readFromBuffer(arg0: number[], arg1: number, arg2: number): number;
     readLiteral(arg0: number[], arg1: number, arg2: number): number;

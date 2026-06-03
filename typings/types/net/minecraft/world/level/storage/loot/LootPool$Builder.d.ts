@@ -27,6 +27,8 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     add(entry: LootPoolEntryContainer$Builder<Object>): LootPool$Builder;
     apply(arg0: E[]): LootPool$Builder;
     apply(arg0: LootItemFunction): LootPool$Builder;
+    apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;
+    apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;
     apply(arg0: E[]): LootPool$Builder;
     apply(arg0: LootItemFunction): LootPool$Builder;
     apply(function_: LootItemFunction$Builder): LootPool$Builder;
@@ -39,6 +41,7 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     unwrap(): LootPool$Builder;
     when(arg0: E[]): LootPool$Builder;
     when(arg0: LootItemCondition): LootPool$Builder;
+    when(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): LootPool$Builder;
     when(arg0: E[]): LootPool$Builder;
     when(arg0: LootItemCondition): LootPool$Builder;
     when(condition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): LootPool$Builder;

@@ -19,11 +19,15 @@ export class ShortByteMutablePair extends Object implements ShortBytePair, Seria
     key(arg0: number): ShortBytePair;
     key(arg0: number): ShortBytePair;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortBytePair;
     left(arg0: number): ShortByteMutablePair;
     left(): number;
     left(arg0: number): ShortBytePair;
     left(arg0: number): ShortBytePair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortBytePair;
     right(arg0: number): ShortByteMutablePair;
     right(): number;
     right(arg0: number): ShortBytePair;

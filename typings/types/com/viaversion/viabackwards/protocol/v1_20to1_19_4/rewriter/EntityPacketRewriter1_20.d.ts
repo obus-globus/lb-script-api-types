@@ -10,4 +10,5 @@ export class EntityPacketRewriter1_20 extends EntityRewriter<ClientboundPackets1
     registerRewrites(): void;
     // private rotateY180(arg0: Quaternion): Quaternion;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

@@ -70,6 +70,7 @@ export class Object2BooleanFunctions$PrimitiveFunction<K extends Object | number
     put(arg0: K, arg1: boolean): boolean;
     put(arg0: K, arg1: boolean): boolean;
     put(arg0: K, arg1: boolean): boolean;
+    put(arg0: K, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     removeBoolean(arg0: Object): boolean;
     test(arg0: K): boolean;

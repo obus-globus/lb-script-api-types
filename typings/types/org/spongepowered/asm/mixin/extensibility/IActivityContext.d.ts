@@ -4,5 +4,6 @@ export interface IActivityContext extends Object{
     begin(arg0: string): IActivityContext$IActivity;
     begin(arg0: string, arg1: Object[]): IActivityContext$IActivity;
     clear(): void;
+    toString(): string;
     toString(arg0: string): string;
 }

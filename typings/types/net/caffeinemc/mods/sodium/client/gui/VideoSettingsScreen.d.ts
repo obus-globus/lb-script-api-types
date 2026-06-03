@@ -67,6 +67,7 @@ export class VideoSettingsScreen extends Screen implements ScreenPromptable, Scr
     // private ifNotInsetX(arg0: number): number;
     // private ifNotInsetY(arg0: number): number;
     init(): void;
+    init(width: number, height: number): void;
     jumpToPage(arg0: Page): void;
     keyPressed(arg0: KeyEvent): boolean;
     keyReleased(arg0: KeyEvent): boolean;

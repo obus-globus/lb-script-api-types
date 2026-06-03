@@ -20,6 +20,7 @@ export abstract class CoroutineDispatcher extends AbstractCoroutineContextElemen
     limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    plus(context: CoroutineContext): CoroutineContext;
     plus(other: CoroutineDispatcher): CoroutineDispatcher;
     releaseInterceptedContinuation(continuation: Continuation<Object>): void;
     releaseInterceptedContinuation(continuation: Continuation<Object>): void;

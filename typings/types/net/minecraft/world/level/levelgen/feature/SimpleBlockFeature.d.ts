@@ -3,8 +3,11 @@ import type { Function } from '../../../../../../java/util/function/Function.d.t
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
+import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
+import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -114,4 +117,5 @@ export class SimpleBlockFeature extends Feature<SimpleBlockConfiguration> {
     static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => kotlin.Boolean;
     constructor(codec: Codec<SimpleBlockConfiguration>)
     place(context: FeaturePlaceContext<SimpleBlockConfiguration>): boolean;
+    place(config: SimpleBlockConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
 }

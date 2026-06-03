@@ -9,5 +9,6 @@ export class Murmur3_128HashFunction extends AbstractHashFunction implements Ser
     equals(object: Object | null): boolean;
     hashCode(): number;
     newHasher(): Hasher;
+    newHasher(expectedInputSize: number): Hasher;
     toString(): string;
 }

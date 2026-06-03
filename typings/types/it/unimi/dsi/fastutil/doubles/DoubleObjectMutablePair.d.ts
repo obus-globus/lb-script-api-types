@@ -19,6 +19,8 @@ export class DoubleObjectMutablePair<V extends Object | number | string | boolea
     key(arg0: number): DoubleObjectPair<V>;
     key(arg0: number): DoubleObjectPair<V>;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleObjectPair<V>;
     left(arg0: number): DoubleObjectMutablePair<V>;
     left(): number;
     left(arg0: number): DoubleObjectPair<V>;

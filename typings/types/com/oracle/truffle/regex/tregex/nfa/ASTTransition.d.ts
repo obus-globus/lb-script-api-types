@@ -23,6 +23,7 @@ export class ASTTransition extends Object implements AbstractTransition<Term, AS
     getSource(): Term;
     getTarget<S extends AbstractState<S, T>>(forward: boolean): S;
     getTarget(): Term;
+    getTarget(forward: boolean): Term;
     hashCode(): number;
     setGroupBoundaries(groupBoundaries: GroupBoundaries): void;
     setMatchedConditionGroups(matchedConditionGroups: number[]): void;

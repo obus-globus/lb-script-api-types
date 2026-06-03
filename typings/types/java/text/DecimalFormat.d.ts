@@ -96,11 +96,14 @@ export class DecimalFormat extends NumberFormat {
     format(arg0: BigDecimal, arg1: Format$StringBuf, arg2: Format$FieldDelegate): Format$StringBuf;
     // private format(arg0: BigInteger, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     format(arg0: BigInteger, arg1: Format$StringBuf, arg2: Format$FieldDelegate, arg3: boolean): Format$StringBuf;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Object, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
+    format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     format(arg0: number, arg1: Format$StringBuf, arg2: Format$FieldDelegate): Format$StringBuf;
+    format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     format(arg0: number, arg1: Format$StringBuf, arg2: Format$FieldDelegate): Format$StringBuf;
@@ -134,6 +137,7 @@ export class DecimalFormat extends NumberFormat {
     isParseBigDecimal(): boolean;
     isStrict(): boolean;
     // private localizeDigits(arg0: string[]): void;
+    parse(arg0: string): Number;
     parse(arg0: string, arg1: ParsePosition): Number;
     // private posEqualsNegPattern(): boolean;
     // private prependPrefix(arg0: string[], arg1: number, arg2: string[]): void;

@@ -6,4 +6,5 @@ export class ArgOffsets$Default extends ArgOffsets {
     constructor()
     apply(arg0: Type[]): Type[];
     getArgIndex(arg0: number): number;
+    getArgIndex(arg0: number, arg1: boolean): number;
 }

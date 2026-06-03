@@ -20,5 +20,6 @@ export class WindowUtils$HeavyweightForcer extends Window {
     constructor(arg0: Window)
     // private packed: boolean;
     getBounds(): Rectangle;
+    getBounds(arg0: Rectangle): Rectangle;
     isVisible(): boolean;
 }

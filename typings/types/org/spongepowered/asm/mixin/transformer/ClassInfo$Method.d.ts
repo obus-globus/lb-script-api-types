@@ -15,6 +15,7 @@ export class ClassInfo$Method extends ClassInfo$Member {
     // private isAccessor: boolean;
     conform(arg0: string): string;
     equals(arg0: Object | null): boolean;
+    equals(arg0: string, arg1: string): boolean;
     // private gatherFrames(arg0: MethodNode): ClassInfo$FrameData[];
     getFrames(): ClassInfo$FrameData[];
     getOwner(): ClassInfo;

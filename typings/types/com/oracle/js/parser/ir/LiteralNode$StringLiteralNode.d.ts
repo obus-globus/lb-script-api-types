@@ -20,5 +20,7 @@ export class LiteralNode$StringLiteralNode extends LiteralNode$PrimitiveLiteralN
     private constructor(token: number, finish: number, value: TruffleString)
     getPropertyName(): string;
     getPropertyNameTS(): TruffleString;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

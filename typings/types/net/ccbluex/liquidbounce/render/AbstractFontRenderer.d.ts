@@ -1,5 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { AbstractFontRenderer$DrawParameters } from '../../../../net/ccbluex/liquidbounce/render/AbstractFontRenderer$DrawParameters.d.ts'
 import type { WorldRenderEnvironment } from '../../../../net/ccbluex/liquidbounce/render/WorldRenderEnvironment.d.ts'
 import type { ProcessedText } from '../../../../net/ccbluex/liquidbounce/render/engine/font/processor/ProcessedText.d.ts'
@@ -16,12 +15,12 @@ export abstract class AbstractFontRenderer<T extends ProcessedText> extends Obje
      */
     readonly scaleToVanillaFont: number;
     readonly size: number;
-    draw(ctx: WorldRenderEnvironment, text: T, parameters: Function1<AbstractFontRenderer$DrawParameters, void>): number;
+    draw(ctx: WorldRenderEnvironment, text: T, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     draw(ctx: WorldRenderEnvironment, text: T, parameters: AbstractFontRenderer$DrawParameters): number;
-    draw(ctx: WorldRenderEnvironment, text: Component, parameters: Function1<AbstractFontRenderer$DrawParameters, void>): number;
-    draw(ctx: GuiGraphicsExtractor, text: T, parameters: Function1<AbstractFontRenderer$DrawParameters, void>): number;
+    draw(ctx: WorldRenderEnvironment, text: Component, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
+    draw(ctx: GuiGraphicsExtractor, text: T, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     draw(ctx: GuiGraphicsExtractor, text: T, parameters: AbstractFontRenderer$DrawParameters): number;
-    draw(ctx: GuiGraphicsExtractor, text: Component, parameters: Function1<AbstractFontRenderer$DrawParameters, void>): number;
+    draw(ctx: GuiGraphicsExtractor, text: Component, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     /**
      * Approximates the width of a text. Accurate except for obfuscated (`§k`) formatting
      *

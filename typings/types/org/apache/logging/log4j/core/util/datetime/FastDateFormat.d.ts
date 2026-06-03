@@ -39,6 +39,7 @@ export class FastDateFormat extends Format implements DatePrinter {
     format<B extends Appendable>(calendar: Calendar, buf: B): B;
     format(date: Date): string;
     format<B extends Appendable>(date: Date, buf: B): B;
+    format(obj: Object): string;
     format(obj: Object, toAppendTo: StringBuilder, pos: FieldPosition): StringBuilder;
     format(millis: number): string;
     format<B extends Appendable>(millis: number, buf: B): B;

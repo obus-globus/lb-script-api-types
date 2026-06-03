@@ -5,13 +5,12 @@ import type { BigInteger } from '../../java/math/BigInteger.d.ts'
 import type { MathContext } from '../../java/math/MathContext.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { StringsKt__StringNumberConversionsJVMKt } from '../../kotlin/text/StringsKt__StringNumberConversionsJVMKt.d.ts'
 export class StringsKt__StringNumberConversionsKt extends StringsKt__StringNumberConversionsJVMKt {
     static append(paramarg0: Object | null, paramarg1: (Object | null)[]): Object | null;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
-    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: Function1<Object, Object>): void;
+    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object | null) => Object | null): void;
     static appendRange(paramarg0: Object | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Object | null;
     static appendln(paramarg0: Appendable): Appendable;
     static appendln(paramarg0: StringBuilder): StringBuilder;

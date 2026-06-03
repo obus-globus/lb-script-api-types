@@ -32,6 +32,8 @@ export class Float2BooleanOpenHashMap$MapEntry extends Object implements Float2B
     left(arg0: number): FloatBooleanPair;
     left(arg0: number): FloatBooleanPair;
     leftFloat(): number;
+    right(): boolean;
+    right(arg0: boolean): FloatBooleanPair;
     right(arg0: boolean): FloatBooleanPair;
     right(): boolean;
     right(arg0: boolean): FloatBooleanPair;

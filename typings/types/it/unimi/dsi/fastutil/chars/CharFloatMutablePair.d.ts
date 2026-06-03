@@ -19,11 +19,15 @@ export class CharFloatMutablePair extends Object implements CharFloatPair, Seria
     key(arg0: string): CharFloatPair;
     key(arg0: string): CharFloatPair;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharFloatPair;
     left(arg0: string): CharFloatMutablePair;
     left(): string;
     left(arg0: string): CharFloatPair;
     left(arg0: string): CharFloatPair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharFloatPair;
     right(arg0: number): CharFloatMutablePair;
     right(): number;
     right(arg0: number): CharFloatPair;

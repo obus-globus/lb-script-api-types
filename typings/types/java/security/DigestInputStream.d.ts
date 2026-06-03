@@ -9,6 +9,7 @@ export class DigestInputStream extends FilterInputStream {
     getMessageDigest(): MessageDigest;
     on(arg0: boolean): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     setMessageDigest(arg0: MessageDigest): void;
     toString(): string;

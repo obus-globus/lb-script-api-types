@@ -15,8 +15,13 @@ export class EventRecordingLogger extends LegacyAbstractLogger {
     getName(): string;
     handleNormalizedLoggingCall(arg0: Level, arg1: Marker, arg2: string, arg3: Object[], arg4: Throwable): void;
     isDebugEnabled(): boolean;
+    isDebugEnabled(arg0: Marker): boolean;
     isErrorEnabled(): boolean;
+    isErrorEnabled(arg0: Marker): boolean;
     isInfoEnabled(): boolean;
+    isInfoEnabled(arg0: Marker): boolean;
     isTraceEnabled(): boolean;
+    isTraceEnabled(arg0: Marker): boolean;
     isWarnEnabled(): boolean;
+    isWarnEnabled(arg0: Marker): boolean;
 }

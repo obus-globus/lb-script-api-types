@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Reference2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2CharMap$Entry.d.ts'
 import type { ReferenceCharPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceCharPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -19,6 +20,9 @@ export class Reference2CharLinkedOpenHashMap$MapEntry extends Object implements 
     getCharValue(): string;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, string>;
+    right(): string;
+    right(arg0: string): ReferenceCharPair<K>;
     right(arg0: string): ReferenceCharPair<K>;
     right(): string;
     right(arg0: string): ReferenceCharPair<K>;

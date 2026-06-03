@@ -12,5 +12,6 @@ export class AbstractShort2LongMap$BasicEntry extends Object implements Short2Lo
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

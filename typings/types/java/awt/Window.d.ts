@@ -158,6 +158,7 @@ export class Window extends Container implements Accessible {
     isAutoRequestFocus(): boolean;
     isDisposing(): boolean;
     isFocusCycleRoot(): boolean;
+    isFocusCycleRoot(arg0: Container): boolean;
     isFocusableWindow(): boolean;
     isFocused(): boolean;
     isLocationByPlatform(): boolean;
@@ -215,6 +216,7 @@ export class Window extends Container implements Accessible {
     setType(arg0: Window$Type): void;
     setVisible(arg0: boolean): void;
     show(): void;
+    show(arg0: boolean): void;
     toBack(): void;
     toBack_NoClientCode(): void;
     toFront(): void;

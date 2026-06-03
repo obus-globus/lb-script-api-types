@@ -18,5 +18,6 @@ export class JSArrayPreviousElementIndexNodeGen extends JSArrayPreviousElementIn
     // private state_0_: number;
     // private withoutHolesCached_cache: JSArrayPreviousElementIndexNodeGen$WithoutHolesCachedData;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number, arg2Value: boolean): number;
+    executeLong(object: Object, currentIndex: number): number;
     executeLong(arg0Value: Object, arg1Value: number, arg2Value: boolean): number;
 }

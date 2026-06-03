@@ -16,6 +16,7 @@ export class SalmonRenderer extends MobRenderer<Salmon, SalmonRenderState, Salmo
     // private mediumSalmonModel: SalmonModel;
     // private smallSalmonModel: SalmonModel;
     createRenderState(): SalmonRenderState;
+    createRenderState(entity: Salmon, partialTicks: number): SalmonRenderState;
     extractRenderState(entity: Salmon, state: SalmonRenderState, partialTicks: number): void;
     getTextureLocation(state: SalmonRenderState): Identifier;
     setupRotations(state: SalmonRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;

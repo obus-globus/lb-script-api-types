@@ -10,6 +10,7 @@ export class BooleanBigListIterators$EmptyBigListIterator extends Object impleme
     add(arg0: boolean): void;
     back(arg0: number): number;
     back(arg0: number): number;
+    back(arg0: number): number;
     clone(): Object;
     protected clone(): Object;
     forEachRemaining(arg0: (param0: boolean) => void): void;
@@ -23,6 +24,7 @@ export class BooleanBigListIterators$EmptyBigListIterator extends Object impleme
     // private readResolve(): Object;
     set(arg0: boolean): void;
     set(arg0: boolean): void;
+    skip(arg0: number): number;
     skip(arg0: number): number;
     skip(arg0: number): number;
     skip(arg0: number): number;

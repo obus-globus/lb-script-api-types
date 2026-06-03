@@ -24,6 +24,7 @@ export class JSMaterializedInvokeTargetableNode$MaterializedTargetableReadElemen
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     execute(frame: VirtualFrame): Object;
     executeWithTarget(frame: VirtualFrame, targetValue: Object): Object;
+    executeWithTarget(frame: VirtualFrame, target: Object, receiver: Object): Object;
     hasTag(tag: Class<Tag>): boolean;
     isInstrumentable(): boolean;
     materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;

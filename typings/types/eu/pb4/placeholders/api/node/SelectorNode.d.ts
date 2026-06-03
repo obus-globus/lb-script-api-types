@@ -23,7 +23,10 @@ export class SelectorNode extends Record implements TextNode {
     isDynamic(): boolean;
     selector(): TextNode;
     separator(): Optional<TextNode>;
+    toComponent(): Component;
+    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
+    toComponent(arg0: PlaceholderContext): Component;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: PlaceholderContext): Component;

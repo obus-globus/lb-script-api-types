@@ -19,11 +19,15 @@ export class LongLongMutablePair extends Object implements LongLongPair, Seriali
     key(arg0: number): LongLongPair;
     key(arg0: number): LongLongPair;
     keyLong(): number;
+    left(): number;
+    left(arg0: number): LongLongPair;
     left(arg0: number): LongLongMutablePair;
     left(): number;
     left(arg0: number): LongLongPair;
     left(arg0: number): LongLongPair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongLongPair;
     right(arg0: number): LongLongMutablePair;
     right(): number;
     right(arg0: number): LongLongPair;

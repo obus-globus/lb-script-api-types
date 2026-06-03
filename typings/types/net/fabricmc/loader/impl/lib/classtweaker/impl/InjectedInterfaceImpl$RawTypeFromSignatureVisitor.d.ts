@@ -8,5 +8,6 @@ export class InjectedInterfaceImpl$RawTypeFromSignatureVisitor extends Signature
     // private rawType: StringBuilder;
     visitClassType(arg0: string): void;
     visitInnerClassType(arg0: string): void;
+    visitTypeArgument(): void;
     visitTypeArgument(arg0: string): SignatureVisitor;
 }

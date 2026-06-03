@@ -27,6 +27,7 @@ export class CharsetSCSU$CharsetEncoderSCSU extends CharsetEncoderICU {
     // private targetCapacity: number;
     // private trail: string;
     // private window: number;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private endLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): void;
     // private getDynamicOffset(): number;

@@ -19,6 +19,7 @@ export class BlockItemPacketRewriter25w14craftmine extends BackwardsStructuredIt
     registerPackets(): void;
     // private removeMapMakingContainerSlot(arg0: number): number;
     // private removeMapMakingContainerSlots(arg0: PacketWrapper): void;
+    restoreBackupData(arg0: Item): void;
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
     // private rewriteWorldModifiers(arg0: UserConnection, arg1: StructuredDataContainer): void;
 }

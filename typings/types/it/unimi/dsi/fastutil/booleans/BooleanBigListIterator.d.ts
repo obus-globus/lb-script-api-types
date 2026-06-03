@@ -7,6 +7,7 @@ export interface BooleanBigListIterator extends BigListIterator<boolean>, Boolea
     add(arg0: boolean): void;
     back(arg0: number): number;
     back(arg0: number): number;
+    back(arg0: number): number;
     previous(): boolean;
     set<K extends Object | number | string | boolean>(arg0: K): void;
     set(arg0: boolean): void;

@@ -13,5 +13,6 @@ export class AFSocketImpl$AFInputStreamImpl extends AFInputStream {
     // private forceCloseSocket(): void;
     getFileDescriptor(): FileDescriptor;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

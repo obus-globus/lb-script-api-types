@@ -76,11 +76,14 @@ export abstract class AbstractWindCharge extends AbstractHurtingProjectile imple
     getItem(): ItemStack;
     getLiquidInertia(): number;
     getTrailParticle(): ParticleOptions;
+    makeBoundingBox(): AABB;
     makeBoundingBox(position: Vec3): AABB;
     onHit(hitResult: HitResult): void;
     onHitBlock(hitResult: BlockHitResult): void;
     onHitEntity(hitResult: EntityHitResult): void;
     push(xa: number, ya: number, za: number): void;
+    push(entity: Entity): void;
+    push(impulse: Vec3): void;
     shouldBurn(): boolean;
     tick(): void;
 }

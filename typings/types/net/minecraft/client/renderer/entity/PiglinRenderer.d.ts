@@ -18,6 +18,7 @@ export class PiglinRenderer extends HumanoidMobRenderer<AbstractPiglin, PiglinRe
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, body: ModelLayerLocation, babyBody: ModelLayerLocation, armorSet: ArmorModelSet<ModelLayerLocation>, babyArmorSet: ArmorModelSet<ModelLayerLocation>)
     createRenderState(): PiglinRenderState;
+    createRenderState(entity: AbstractPiglin, partialTicks: number): PiglinRenderState;
     extractRenderState(entity: AbstractPiglin, state: PiglinRenderState, partialTicks: number): void;
     getTextureLocation(state: PiglinRenderState): Identifier;
     isShaking(state: PiglinRenderState): boolean;

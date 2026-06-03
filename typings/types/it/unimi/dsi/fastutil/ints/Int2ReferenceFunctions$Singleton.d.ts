@@ -8,8 +8,11 @@ export class Int2ReferenceFunctions$Singleton<V extends Object | number | string
     // private value: V;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
+    get(arg0: Object): V;
     get(arg0: number): V;
+    getOrDefault(arg0: Object, arg1: V): V;
     getOrDefault(arg0: number, arg1: V): V;
     size(): number;
 }

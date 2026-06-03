@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { KFunction } from '../../../kotlin/reflect/KFunction.d.ts'
 import type { KParameter } from '../../../kotlin/reflect/KParameter.d.ts'
@@ -7,7 +6,7 @@ import type { KProperty } from '../../../kotlin/reflect/KProperty.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
 import type { ClassTransformer } from '../../../me/ntrrgc/tsGenerator/ClassTransformer.d.ts'
 export class FilteredClassTransformer extends Object implements ClassTransformer {
-    constructor(wrappedTransformer: ClassTransformer, filter: Function1<KClass<Object>, boolean>)
+    constructor(wrappedTransformer: ClassTransformer, filter: (param0: KClass<Object>) => boolean)
     readonly filter: (param0: KClass<Object>) => boolean;
     readonly wrappedTransformer: ClassTransformer;
     transformFunctionList(functions: KFunction<Object>[], klass: KClass<Object>): KFunction<Object>[];

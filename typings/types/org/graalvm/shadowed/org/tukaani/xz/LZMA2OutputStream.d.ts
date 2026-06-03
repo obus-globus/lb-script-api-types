@@ -26,6 +26,7 @@ export class LZMA2OutputStream extends FinishableOutputStream {
     close(): void;
     finish(): void;
     flush(): void;
+    write(arg0: number[]): void;
     write(buf: number[], off: number, len: number): void;
     write(b: number): void;
     // private writeChunk(): void;

@@ -15,5 +15,6 @@ export class FullClauseSelectorSolver<T extends ISolver> extends AbstractClauseS
     getLastClause(): IVecInt;
     getLastConstr(): IConstr;
     model(): number[];
+    model(arg0: number): boolean;
     setLastConstr(arg0: IConstr): void;
 }

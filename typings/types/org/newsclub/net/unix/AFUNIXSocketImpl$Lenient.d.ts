@@ -1,4 +1,5 @@
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
+import type { SocketOption } from '../../../../java/net/SocketOption.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFUNIXSocketImpl } from '../../../../org/newsclub/net/unix/AFUNIXSocketImpl.d.ts'
 export class AFUNIXSocketImpl$Lenient extends AFUNIXSocketImpl {
@@ -18,6 +19,8 @@ export class AFUNIXSocketImpl$Lenient extends AFUNIXSocketImpl {
     static SO_TIMEOUT: number;
     static TCP_NODELAY: number;
     constructor(arg0: FileDescriptor)
+    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
     getOption(arg0: number): Object;
+    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
     setOption(arg0: number, arg1: Object): void;
 }

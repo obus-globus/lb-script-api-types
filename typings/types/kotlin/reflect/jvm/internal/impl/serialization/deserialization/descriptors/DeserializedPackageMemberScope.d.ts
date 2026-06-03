@@ -1,5 +1,3 @@
-import type { Function0 } from '../../../../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PackageFragmentDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PackageFragmentDescriptor.d.ts'
@@ -17,15 +15,15 @@ import type { DeserializedContainerSource } from '../../../../../../../../kotlin
 import type { DeserializedMemberScope } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedMemberScope.d.ts'
 export class DeserializedPackageMemberScope extends DeserializedMemberScope {
     static Companion: MemberScope$Companion;
-    constructor(arg0: PackageFragmentDescriptor, arg1: ProtoBuf$Package, arg2: NameResolver, arg3: BinaryVersion, arg4: DeserializedContainerSource, arg5: DeserializationComponents, arg6: string, arg7: Function0<E[]>)
+    constructor(arg0: PackageFragmentDescriptor, arg1: ProtoBuf$Package, arg2: NameResolver, arg3: BinaryVersion, arg4: DeserializedContainerSource, arg5: DeserializationComponents, arg6: string, arg7: () => E[])
     // private debugName: string;
     // private packageDescriptor: PackageFragmentDescriptor;
     // private packageFqName: FqName;
     readonly proto: ProtoBuf$Package;
-    addEnumEntryDescriptors(arg0: E[], arg1: Function1<Name, boolean>): void;
+    addEnumEntryDescriptors(arg0: E[], arg1: (param0: Name) => boolean): void;
     createClassId(arg0: Name): ClassId;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): DeclarationDescriptor[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];
     getNonDeclaredClassifierNames(): Name[];
     getNonDeclaredFunctionNames(): Name[];
     getNonDeclaredVariableNames(): Name[];

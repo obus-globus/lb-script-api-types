@@ -18,6 +18,8 @@ export class CharacterIteratorWrapper extends UCharacterIterator {
     getCharacterIterator(): CharacterIterator;
     getIndex(): number;
     getLength(): number;
+    getText(): string;
+    getText(fillIn: string[]): number;
     getText(fillIn: string[], offset: number): number;
     moveIndex(delta: number): number;
     next(): number;

@@ -7,8 +7,8 @@ export class DateTimeUnit$TimeBased extends DateTimeUnit {
     static Companion: DateTimeUnit$Companion;
     static Companion: DateTimeUnit$TimeBased$Companion;
     constructor(nanoseconds: number)
-//     /*not mapped: */ getDuration-UwyO8pc(): Duration;
- // ; invalid because of -    readonly nanoseconds: number;
+// (invalid TS: name contains '-')     /*not mapped: */ getDuration-UwyO8pc(): Duration;
+    readonly nanoseconds: number;
     // private unitName: string;
     // private unitScale: number;
     equals(other: Object | null): boolean;

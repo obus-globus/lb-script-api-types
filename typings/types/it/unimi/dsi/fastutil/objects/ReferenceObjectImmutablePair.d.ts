@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ReferenceObjectPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,6 +11,8 @@ export class ReferenceObjectImmutablePair<K extends Object | number | string | b
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): K;
+    left(arg0: K): Pair<K, V>;
     right(): V;
+    right(arg0: V): Pair<K, V>;
     toString(): string;
 }

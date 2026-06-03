@@ -30,7 +30,7 @@ import type { Reference2ByteFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Reference2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2FloatFunction.d.ts'
 import type { Short2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ByteFunction.d.ts'
 import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2FloatFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntToDoubleFunction } from '../../../../../java/util/function/IntToDoubleFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Byte2FloatFunction extends Function<number, number>, IntToDoubleFunction, Object{

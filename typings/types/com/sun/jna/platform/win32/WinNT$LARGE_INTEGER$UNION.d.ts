@@ -23,4 +23,5 @@ export class WinNT$LARGE_INTEGER$UNION extends Union {
     longValue(): number;
     read(): void;
     toString(): string;
+    toString(arg0: boolean): string;
 }

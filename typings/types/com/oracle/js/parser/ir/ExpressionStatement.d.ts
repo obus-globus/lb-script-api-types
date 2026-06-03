@@ -15,5 +15,7 @@ export class ExpressionStatement extends Statement {
     getExpression(): Expression;
     isCompletionValueNeverEmpty(): boolean;
     setExpression(expression: Expression): ExpressionStatement;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

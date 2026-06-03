@@ -13,5 +13,6 @@ export class ParchedRenderer extends AbstractSkeletonRenderer<Parched, SkeletonR
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SkeletonRenderState;
+    createRenderState(entity: Parched, partialTicks: number): SkeletonRenderState;
     getTextureLocation(state: SkeletonRenderState): Identifier;
 }

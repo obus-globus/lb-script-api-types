@@ -1,6 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
 import type { JavaToKotlinClassMapper } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JavaToKotlinClassMapper.d.ts'
 import type { JvmBuiltIns$Settings } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JvmBuiltIns$Settings.d.ts'
@@ -25,7 +23,7 @@ import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/int
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 export class JvmBuiltInsCustomizer extends Object implements AdditionalClassPartsProvider, PlatformDependentDeclarationFilter {
-    constructor(arg0: ModuleDescriptor, arg1: StorageManager, arg2: Function0<JvmBuiltIns$Settings>)
+    constructor(arg0: ModuleDescriptor, arg1: StorageManager, arg2: () => JvmBuiltIns$Settings)
     // private cloneableType$delegate: NotNullLazyValue<Object>;
     // private deprecationForSomeOfTheListMethods: MemoizedFunctionToNotNull<Pair<string, string>, AnnotationDescriptor[]>;
     // private j2kClassMapper: JavaToKotlinClassMapper;
@@ -36,7 +34,7 @@ export class JvmBuiltInsCustomizer extends Object implements AdditionalClassPart
     // private settings$delegate: NotNullLazyValue<Object>;
     // private createCloneForArray(arg0: DeserializedClassDescriptor, arg1: SimpleFunctionDescriptor): SimpleFunctionDescriptor;
     // private createMockJavaIoSerializableType(arg0: StorageManager): KotlinType;
-    // private getAdditionalFunctions(arg0: ClassDescriptor, arg1: Function1<MemberScope, E[]>): E[];
+    // private getAdditionalFunctions(arg0: ClassDescriptor, arg1: (param0: MemberScope) => E[]): E[];
     // private getCloneableType(): SimpleType;
     getConstructors(arg0: ClassDescriptor): E[];
     getFunctions(arg0: Name, arg1: ClassDescriptor): E[];

@@ -18,5 +18,6 @@ export class JSArrayNextElementIndexNodeGen extends JSArrayNextElementIndexNode 
     // private state_0_: number;
     // private withoutHolesCached_cache: JSArrayNextElementIndexNodeGen$WithoutHolesCachedData;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number, arg2Value: number, arg3Value: boolean): number;
+    executeLong(object: Object, currentIndex: number, length: number): number;
     executeLong(arg0Value: Object, arg1Value: number, arg2Value: number, arg3Value: boolean): number;
 }

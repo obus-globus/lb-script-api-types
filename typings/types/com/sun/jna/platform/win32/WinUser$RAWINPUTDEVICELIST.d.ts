@@ -22,4 +22,5 @@ export class WinUser$RAWINPUTDEVICELIST extends Structure {
     hDevice: WinNT$HANDLE;
     sizeof(): number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

@@ -20,5 +20,7 @@ export class TernaryNode extends Expression {
     setFalseExpression(falseExpr: JoinPredecessorExpression): TernaryNode;
     setTest(test: Expression): TernaryNode;
     setTrueExpression(trueExpr: JoinPredecessorExpression): TernaryNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

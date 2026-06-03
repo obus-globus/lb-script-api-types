@@ -15,4 +15,5 @@ export class EdwardsPublicKeyDeriver$ConstantRandom extends SecureRandom {
     constructor(arg0: number[])
     // private value: number[];
     nextBytes(arg0: number[]): void;
+    nextBytes(arg0: number[], arg1: SecureRandomParameters): void;
 }

@@ -32,6 +32,8 @@ export class Long2LongArrayMap$MapEntry extends Object implements Long2LongMap$E
     left(arg0: number): LongLongPair;
     left(arg0: number): LongLongPair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongLongPair;
     right(arg0: number): LongLongPair;
     right(): number;
     right(arg0: number): LongLongPair;

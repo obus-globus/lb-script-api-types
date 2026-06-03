@@ -8,8 +8,8 @@ import type { EntityMovementTrackerSection } from '../../../../../net/caffeinemc
 import type { SectionedEntityMovementTracker } from '../../../../../net/caffeinemc/mods/lithium/common/tracking/entity/SectionedEntityMovementTracker.d.ts'
 import type { ClimbingMobCachingSection } from '../../../../../net/caffeinemc/mods/lithium/common/world/ClimbingMobCachingSection.d.ts'
 import type { EntitySectionAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/block/hopper/EntitySectionAccessor.d.ts'
-import type { EntitySectionAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/minimal_nonvanilla/spawning/EntitySectionAccessor.d.ts'
-import type { EntitySectionAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/EntitySectionAccessor.d.ts'
+import type { EntitySectionAccessor as EntitySectionAccessor_2 } from '../../../../../net/caffeinemc/mods/lithium/mixin/minimal_nonvanilla/spawning/EntitySectionAccessor.d.ts'
+import type { EntitySectionAccessor as EntitySectionAccessor_3 } from '../../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/EntitySectionAccessor.d.ts'
 import type { AbortableIterationConsumer } from '../../../../../net/minecraft/util/AbortableIterationConsumer.d.ts'
 import type { AbortableIterationConsumer$Continuation } from '../../../../../net/minecraft/util/AbortableIterationConsumer$Continuation.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -20,7 +20,7 @@ import type { EntitySectionStorage } from '../../../../../net/minecraft/world/le
 import type { EntityTypeTest } from '../../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
 import type { Visibility } from '../../../../../net/minecraft/world/level/entity/Visibility.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
-export class EntitySection<T extends EntityAccess> extends Object implements PositionedEntityTrackingSection, EntityMovementTrackerSection, ClimbingMobCachingSection, EntitySectionAccessor<Object>, EntitySectionAccessor<Object>, EntitySectionAccessor<Object> {
+export class EntitySection<T extends EntityAccess> extends Object implements PositionedEntityTrackingSection, EntityMovementTrackerSection, ClimbingMobCachingSection, EntitySectionAccessor<Object>, EntitySectionAccessor_2<Object>, EntitySectionAccessor_3<Object> {
     constructor(entityClass: Class<T>, chunkStatus: Visibility)
     // private chunkStatus: Visibility;
     // private entityMovementListenersByType: Object[][];

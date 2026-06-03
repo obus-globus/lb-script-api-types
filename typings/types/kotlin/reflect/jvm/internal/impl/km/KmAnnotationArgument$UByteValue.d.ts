@@ -5,6 +5,6 @@ export class KmAnnotationArgument$UByteValue extends KmAnnotationArgument$Litera
     private constructor(arg0: number)
     readonly value: number;
     equals(arg0: Object | null): boolean;
-//     getValue-w2LRezQ(): number;
- // ; invalid because of -    hashCode(): number;
+// (invalid TS: name contains '-')     getValue-w2LRezQ(): number;
+    hashCode(): number;
 }

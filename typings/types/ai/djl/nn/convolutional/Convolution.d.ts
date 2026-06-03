@@ -1,3 +1,4 @@
+import type { DataType } from '../../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { LayoutType } from '../../../../ai/djl/ndarray/types/LayoutType.d.ts'
 import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
 import type { AbstractBlock } from '../../../../ai/djl/nn/AbstractBlock.d.ts'
@@ -19,6 +20,7 @@ export abstract class Convolution extends AbstractBlock {
     stride: Shape;
     // private weight: Parameter;
     beforeInitialize(arg0: Shape[]): void;
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     getDilation(): Shape;
     getExpectedLayout(): LayoutType[];
@@ -26,6 +28,7 @@ export abstract class Convolution extends AbstractBlock {
     getGroups(): number;
     getKernelShape(): Shape;
     getOutputShapes(arg0: Shape[]): Shape[];
+    getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getPadding(): Shape;
     getStride(): Shape;
     getStringLayout(): string;

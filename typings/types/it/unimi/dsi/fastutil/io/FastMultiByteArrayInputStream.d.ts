@@ -22,6 +22,7 @@ export class FastMultiByteArrayInputStream extends MeasurableInputStream impleme
     position(): number;
     position(arg0: number): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     reset(): void;
     skip(arg0: number): number;

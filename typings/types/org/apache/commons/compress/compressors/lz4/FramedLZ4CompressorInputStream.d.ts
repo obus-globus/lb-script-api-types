@@ -29,6 +29,7 @@ export class FramedLZ4CompressorInputStream extends CompressorInputStream implem
     // private maybeFinishCurrentBlock(): void;
     // private nextBlock(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readFrameDescriptor(): void;
     // private readOnce(arg0: number[], arg1: number, arg2: number): number;

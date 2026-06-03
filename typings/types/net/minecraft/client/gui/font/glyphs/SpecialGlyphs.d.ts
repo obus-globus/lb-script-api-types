@@ -18,6 +18,7 @@ export class SpecialGlyphs extends Enum<SpecialGlyphs> implements GlyphInfo {
     bake(stitcher: GlyphStitcher): BakedSheetGlyph;
     getAdvance(bold: boolean): number;
     getAdvance(): number;
+    getAdvance(bold: boolean): number;
     getBoldOffset(): number;
     getShadowOffset(): number;
     name(): "WHITE" | "MISSING";

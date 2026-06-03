@@ -12,5 +12,6 @@ export class AbstractInt2LongMap$BasicEntry extends Object implements Int2LongMa
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

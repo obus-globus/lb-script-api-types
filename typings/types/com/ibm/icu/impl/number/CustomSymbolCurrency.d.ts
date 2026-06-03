@@ -7,7 +7,7 @@ import type { MeasureUnit } from '../../../../../com/ibm/icu/util/MeasureUnit.d.
 import type { TimeUnit } from '../../../../../com/ibm/icu/util/TimeUnit.d.ts'
 import type { ULocale } from '../../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ParsePosition } from '../../../../../java/text/ParsePosition.d.ts'
-import type { Currency } from '../../../../../java/util/Currency.d.ts'
+import type { Currency as Currency_2 } from '../../../../../java/util/Currency.d.ts'
 import type { Date } from '../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -214,7 +214,7 @@ export class CustomSymbolCurrency extends Currency {
     static YEAR_PERSON: MeasureUnit;
     static findBySubType(paramarg0: string): MeasureUnit;
     static forIdentifier(paramarg0: string): MeasureUnit;
-    static fromJavaCurrency(paramarg0: Currency): Currency;
+    static fromJavaCurrency(paramarg0: Currency_2): Currency;
     static fromMeasureUnitImpl(paramarg0: MeasureUnitImpl): MeasureUnit;
     static getAvailable(paramarg0: string): MeasureUnit[];
     static getAvailable(): MeasureUnit[];
@@ -242,5 +242,7 @@ export class CustomSymbolCurrency extends Currency {
     getCurrencyCode(): string;
     getName(arg0: ULocale, arg1: number, arg2: (Object | null)[]): string;
     getName(arg0: ULocale, arg1: number, arg2: string, arg3: (Object | null)[]): string;
+    getName(arg0: Locale, arg1: number, arg2: (Object | null)[]): string;
+    getName(arg0: Locale, arg1: number, arg2: string, arg3: (Object | null)[]): string;
     hashCode(): number;
 }

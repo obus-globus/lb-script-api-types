@@ -28,5 +28,6 @@ export abstract class TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDate
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(zonedDateTime: JSTemporalZonedDateTimeObject, optionsParam: Object, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, toFractionalSecondDigitsNode: ToFractionalSecondDigitsNode, getSmallestUnit: GetTemporalUnitNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

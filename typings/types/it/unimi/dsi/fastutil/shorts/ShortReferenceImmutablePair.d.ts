@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ShortReferencePair } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -22,5 +23,6 @@ export class ShortReferenceImmutablePair<V extends Object | number | string | bo
     left(arg0: number): ShortReferencePair<V>;
     leftShort(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

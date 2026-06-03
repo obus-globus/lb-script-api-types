@@ -3,5 +3,6 @@ export class None extends Check {
     static getInstance(paramcheckType: number): Check;
     constructor()
     finish(): number[];
+    update(buf: number[]): void;
     update(buf: number[], off: number, len: number): void;
 }

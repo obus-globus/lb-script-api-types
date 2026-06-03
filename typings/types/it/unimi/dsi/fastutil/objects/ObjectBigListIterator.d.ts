@@ -6,6 +6,7 @@ export interface ObjectBigListIterator<K extends Object | number | string | bool
     add(arg0: K): void;
     back(arg0: number): number;
     back(arg0: number): number;
+    back(arg0: number): number;
     set(arg0: K): void;
     set(arg0: K): void;
     skip(arg0: number): number;

@@ -13,6 +13,7 @@ export class SafeZoneCullingFrustum extends AdvancedShadowCullingFrustum impleme
     // private distanceCuller: BoxCuller;
     fastAabbTest(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
     intersectAab(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
+    isVisible(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
     isVisible(arg0: AABB): boolean;
     prepare(arg0: number, arg1: number, arg2: number): void;
     testAab(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): boolean;

@@ -13,7 +13,9 @@ export class Timestamp extends Date {
     constructor(arg0: number)
     readonly nanos: number;
     after(arg0: Timestamp): boolean;
+    after(arg0: Date): boolean;
     before(arg0: Timestamp): boolean;
+    before(arg0: Date): boolean;
     compareTo(arg0: Timestamp): number;
     compareTo(arg0: Date): number;
     equals(arg0: Timestamp): boolean;

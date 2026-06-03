@@ -7,6 +7,7 @@ export abstract class BoundedArchiveInputStream extends InputStream {
     // private loc: number;
     // private singleByteBuffer: ByteBuffer;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     read(arg0: number, arg1: ByteBuffer): number;
 }

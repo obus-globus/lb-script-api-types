@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceMap$Entry.d.ts'
 import type { ObjectReferencePair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectReferencePair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -18,6 +19,7 @@ export class Object2ReferenceLinkedOpenCustomHashMap$MapEntry extends Object imp
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
     right<V extends Object | number | string | boolean>(): V;
     right<V extends Object | number | string | boolean>(arg0: V): ObjectReferencePair<K, V>;
     setValue<V extends Object | number | string | boolean>(arg0: V): V;

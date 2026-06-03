@@ -13,5 +13,6 @@ export class ArrayDataset$SubDataset extends ArrayDataset {
     get(arg0: NDManager, arg1: number): Record;
     getByIndices(arg0: NDManager, arg1: number[]): Batch;
     getByRange(arg0: NDManager, arg1: number, arg2: number): Batch;
+    prepare(): void;
     prepare(arg0: Progress): void;
 }

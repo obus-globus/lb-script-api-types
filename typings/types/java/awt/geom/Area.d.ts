@@ -21,6 +21,7 @@ export class Area extends Object implements Shape, Cloneable {
     contains(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     createTransformedArea(arg0: AffineTransform): Area;
     equals(arg0: Area): boolean;
+    equals(other: Object | null): boolean;
     exclusiveOr(arg0: Area): void;
     getBounds(): Rectangle;
     getBounds2D(): Rectangle2D;

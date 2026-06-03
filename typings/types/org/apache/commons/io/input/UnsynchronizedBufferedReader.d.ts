@@ -1,4 +1,5 @@
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
+import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { UnsynchronizedReader } from '../../../../../org/apache/commons/io/input/UnsynchronizedReader.d.ts'
 export class UnsynchronizedBufferedReader extends UnsynchronizedReader {
@@ -20,6 +21,8 @@ export class UnsynchronizedBufferedReader extends UnsynchronizedReader {
     peek(): number;
     peek(arg0: string[]): number;
     read(): number;
+    read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
     readLine(): string;
     ready(): boolean;

@@ -11,6 +11,8 @@ export class ReferenceCharMutablePair<K extends Object | number | string | boole
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceCharMutablePair<K>;
+    right(): string;
+    right(arg0: string): ReferenceCharPair<K>;
     right(arg0: string): ReferenceCharMutablePair<K>;
     right(): string;
     right(arg0: string): ReferenceCharPair<K>;

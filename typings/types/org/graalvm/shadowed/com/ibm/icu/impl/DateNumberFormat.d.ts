@@ -7,9 +7,10 @@ import type { ParsePosition } from '../../../../../../../java/text/ParsePosition
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
-import type { BigDecimal } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
 import type { NumberFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberFormat.d.ts'
 import type { NumberFormat$NumberFormatFactory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberFormat$NumberFormatFactory.d.ts'
+import type { CurrencyAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class DateNumberFormat extends NumberFormat {
     static ACCOUNTINGCURRENCYSTYLE: number;
@@ -62,17 +63,27 @@ export class DateNumberFormat extends NumberFormat {
     readonly zeroDigit: string;
     clone(): Object;
     equals(obj: Object | null): boolean;
+    format(number: BigDecimal): string;
     format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: BigInteger): string;
     format(number: BigInteger, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(number: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: number): string;
     format(number: number, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: number): string;
     format(numberL: number, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
-    format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: BigDecimal_2): string;
+    format(number: BigDecimal_2, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(currAmt: CurrencyAmount): string;
+    format(currAmt: CurrencyAmount, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     getDigits(): string[];
     getMaximumIntegerDigits(): number;
     getMinimumIntegerDigits(): number;
     getZeroDigit(): string;
     hashCode(): number;
     // private initialize(loc: ULocale, digitString: string, nsName: string): void;
+    parse(text: string): Number;
     parse(text: string, parsePosition: ParsePosition): Number;
     // private readObject(stream: ObjectInputStream): void;
     setMaximumIntegerDigits(newValue: number): void;

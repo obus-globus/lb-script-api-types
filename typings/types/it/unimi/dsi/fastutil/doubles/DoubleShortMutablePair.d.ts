@@ -19,11 +19,15 @@ export class DoubleShortMutablePair extends Object implements DoubleShortPair, S
     key(arg0: number): DoubleShortPair;
     key(arg0: number): DoubleShortPair;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleShortPair;
     left(arg0: number): DoubleShortMutablePair;
     left(): number;
     left(arg0: number): DoubleShortPair;
     left(arg0: number): DoubleShortPair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleShortPair;
     right(arg0: number): DoubleShortMutablePair;
     right(): number;
     right(arg0: number): DoubleShortPair;

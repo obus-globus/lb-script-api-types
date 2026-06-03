@@ -17,6 +17,7 @@ export class HC4 extends LZEncoder {
     readonly matches: Matches;
     getMatches(): Matches;
     // private movePos(): number;
+    movePos(requiredForFlushing: number, requiredForFinishing: number): number;
     putArraysToCache(arrayCache: ArrayCache): void;
     skip(len: number): void;
 }

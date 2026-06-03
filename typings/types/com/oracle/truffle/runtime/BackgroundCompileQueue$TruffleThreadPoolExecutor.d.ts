@@ -9,6 +9,7 @@ import type { RunnableFuture } from '../../../../java/util/concurrent/RunnableFu
 import type { ThreadFactory } from '../../../../java/util/concurrent/ThreadFactory.d.ts'
 import type { ThreadPoolExecutor } from '../../../../java/util/concurrent/ThreadPoolExecutor.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class BackgroundCompileQueue$TruffleThreadPoolExecutor extends ThreadPoolExecutor {
     private constructor(corePoolSize: number, maximumPoolSize: number, keepAliveTime: number, unit: TimeUnit, workQueue: () => void[], threadFactory: ThreadFactory, dynamicCompilationThresholds: BackgroundCompileQueue$DynamicCompilationThresholds)
@@ -20,8 +21,11 @@ export class BackgroundCompileQueue$TruffleThreadPoolExecutor extends ThreadPool
     flush(engine: EngineData): void;
     getAllTargets(engine: EngineData): E[];
     getQueuedTargets(engine: EngineData): E[];
+    newTaskFor<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): RunnableFuture<T>;
     newTaskFor(callable: () => T): RunnableFuture<T>;
     remove(task: () => void): boolean;
     // private scaleThresholds(): void;
+    submit(arg0: () => void): Future<Object>;
+    submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
     submit(task: () => T): Future<T>;
 }

@@ -13,6 +13,7 @@ export class EndCrystalRenderer extends EntityRenderer<EndCrystal, EndCrystalRen
     constructor(context: EntityRendererProvider$Context)
     // private model: EndCrystalModel;
     createRenderState(): EndCrystalRenderState;
+    createRenderState(entity: EndCrystal, partialTicks: number): EndCrystalRenderState;
     extractRenderState(entity: EndCrystal, state: EndCrystalRenderState, partialTicks: number): void;
     shouldRender(entity: EndCrystal, culler: Frustum, camX: number, camY: number, camZ: number): boolean;
     submit(state: EndCrystalRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

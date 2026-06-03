@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { SwingMode } from '../../../../../net/ccbluex/liquidbounce/utils/block/SwingMode.d.ts'
 import type { ClientLevel } from '../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
@@ -23,7 +22,7 @@ export class CombatExtensionsKt extends Object {
     static findEnemy(clientLevel: ClientLevel, minRange: number, maxRange: number, enemyConf: (Object | null)[]): Entity;
     static findEnemy(paramarg0: ClientLevel, paramarg1: ClosedFloatingPointRange<number>): Entity;
     static findEnemy(clientLevel: ClientLevel, range: ClosedFloatingPointRange<number>, enemyConf: (Object | null)[]): Entity;
-    static getEntitiesBoxInRange(clientLevel: ClientLevel, midPos: Vec3, range: number, predicate: Function1<Object, boolean>): Entity[];
+    static getEntitiesBoxInRange(clientLevel: ClientLevel, midPos: Vec3, range: number, predicate: (param0: Object | null) => boolean): Entity[];
     static shouldBeAttacked(enemyConf: Entity): boolean;
     static shouldBeAttacked(paramarg0: Entity, paramarg1: (Object | null)[]): boolean;
     static shouldBeShown(enemyConf: Entity): boolean;

@@ -1,6 +1,6 @@
 import type { Cookie } from '../../../../../io/netty/handler/codec/http/Cookie.d.ts'
-import type { DefaultCookie } from '../../../../../io/netty/handler/codec/http/cookie/DefaultCookie.d.ts'
-export class DefaultCookie extends DefaultCookie implements Cookie {
+import type { DefaultCookie as DefaultCookie_2 } from '../../../../../io/netty/handler/codec/http/cookie/DefaultCookie.d.ts'
+export class DefaultCookie extends DefaultCookie_2 implements Cookie {
     static UNDEFINED_MAX_AGE: number;
     constructor(arg0: string, arg1: string)
     readonly comment: string;

@@ -22,7 +22,11 @@ export class ArArchiveOutputStream extends ArchiveOutputStream<ArArchiveEntry> {
     // private pad(arg0: number, arg1: number, arg2: string): number;
     putArchiveEntry(arg0: ArArchiveEntry): void;
     setLongFileMode(arg0: number): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     // private write(arg0: string): number;
     // private writeArchiveHeader(): number[];
     // private writeEntryHeader(arg0: ArArchiveEntry): number;

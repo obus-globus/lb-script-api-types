@@ -9,6 +9,8 @@ export abstract class LootPoolSingletonContainer$Builder<T extends LootPoolSingl
     // private functions: ImmutableList$Builder<LootItemFunction>;
     // private quality: number;
     // private weight: number;
+    apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
+    apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     apply(function_: LootItemFunction$Builder): T;
     apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;

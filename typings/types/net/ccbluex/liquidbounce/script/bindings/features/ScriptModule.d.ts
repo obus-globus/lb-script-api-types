@@ -4,13 +4,13 @@ import type { Value } from '../../../../../../net/ccbluex/liquidbounce/config/ty
 import type { Event } from '../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { ClientModule } from '../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { PolyglotScript } from '../../../../../../net/ccbluex/liquidbounce/script/PolyglotScript.d.ts'
-import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
+import type { Value as Value_2 } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
 export class ScriptModule extends ClientModule {
     constructor(script: PolyglotScript, moduleObject: { [key: string]: Object })
     // private _description: string | null;
     // private _values: { [key: string]: Value<Object> };
     description: () => string | null;
-    // private events: { [key: string]: Value };
+    // private events: { [key: string]: Value_2 };
     readonly script: PolyglotScript;
     /**
      * Allows the user to access values by typing module.settings.<valuename>
@@ -29,7 +29,7 @@ export class ScriptModule extends ClientModule {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:79}
      */
-    // T-10: base on() removed; see augmentations/ScriptModule.augmentation.d.ts
+    on(eventName: string, handler: Value_2): void;
     onDisabled(): void;
     onEnabled(): void;
 }

@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Reference2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteMap$Entry.d.ts'
 import type { ReferenceBytePair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceBytePair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -19,6 +20,9 @@ export class Reference2ByteLinkedOpenHashMap$MapEntry extends Object implements 
     getByteValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ReferenceBytePair<K>;
     right(arg0: number): ReferenceBytePair<K>;
     right(): number;
     right(arg0: number): ReferenceBytePair<K>;

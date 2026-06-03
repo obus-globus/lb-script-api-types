@@ -19,11 +19,15 @@ export class CharByteMutablePair extends Object implements CharBytePair, Seriali
     key(arg0: string): CharBytePair;
     key(arg0: string): CharBytePair;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharBytePair;
     left(arg0: string): CharByteMutablePair;
     left(): string;
     left(arg0: string): CharBytePair;
     left(arg0: string): CharBytePair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharBytePair;
     right(arg0: number): CharByteMutablePair;
     right(): number;
     right(arg0: number): CharBytePair;

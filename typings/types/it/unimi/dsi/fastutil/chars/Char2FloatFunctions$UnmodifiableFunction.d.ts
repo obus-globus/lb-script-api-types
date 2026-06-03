@@ -6,6 +6,7 @@ export class Char2FloatFunctions$UnmodifiableFunction extends AbstractChar2Float
     constructor(arg0: (param0: string) => kotlin.Float)
     // private function: (param0: string) => kotlin.Float;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

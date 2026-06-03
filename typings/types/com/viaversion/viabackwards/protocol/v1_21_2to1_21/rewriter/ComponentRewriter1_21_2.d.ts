@@ -7,6 +7,7 @@ import type { SerializerVersion } from '../../../../../../com/viaversion/viavers
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter1_21_2 extends JsonNBTComponentRewriter<ClientboundPacket1_21_2> {
     constructor(arg0: Protocol1_21_2To1_21)
+    handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
     inputSerializerVersion(): SerializerVersion;
 }

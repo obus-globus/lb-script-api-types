@@ -32,6 +32,8 @@ export class Char2ShortOpenHashMap$MapEntry extends Object implements Char2Short
     left(arg0: string): CharShortPair;
     left(arg0: string): CharShortPair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharShortPair;
     right(arg0: number): CharShortPair;
     right(): number;
     right(arg0: number): CharShortPair;

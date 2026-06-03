@@ -33,6 +33,7 @@ export class DeathScreen extends Screen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private handleExitToTitleScreen(): void;
     init(): void;
+    init(width: number, height: number): void;
     isAllowedInPortal(): boolean;
     isPauseScreen(): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;

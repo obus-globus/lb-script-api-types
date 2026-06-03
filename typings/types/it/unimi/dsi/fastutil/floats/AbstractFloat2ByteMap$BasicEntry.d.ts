@@ -12,5 +12,6 @@ export class AbstractFloat2ByteMap$BasicEntry extends Object implements Float2By
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

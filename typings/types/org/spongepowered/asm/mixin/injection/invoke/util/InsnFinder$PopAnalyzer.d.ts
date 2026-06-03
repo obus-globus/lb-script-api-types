@@ -254,4 +254,5 @@ export class InsnFinder$PopAnalyzer extends Analyzer<BasicValue> {
     constructor(arg0: AbstractInsnNode)
     // private node: AbstractInsnNode;
     newFrame(arg0: number, arg1: number): Frame<BasicValue>;
+    newFrame(arg0: Frame<BasicValue>): Frame<BasicValue>;
 }

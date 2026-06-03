@@ -32,6 +32,8 @@ export class Short2BooleanOpenCustomHashMap$MapEntry extends Object implements S
     left(arg0: number): ShortBooleanPair;
     left(arg0: number): ShortBooleanPair;
     leftShort(): number;
+    right(): boolean;
+    right(arg0: boolean): ShortBooleanPair;
     right(arg0: boolean): ShortBooleanPair;
     right(): boolean;
     right(arg0: boolean): ShortBooleanPair;

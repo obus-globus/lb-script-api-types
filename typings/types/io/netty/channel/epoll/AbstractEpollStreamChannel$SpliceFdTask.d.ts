@@ -8,4 +8,5 @@ export class AbstractEpollStreamChannel$SpliceFdTask extends AbstractEpollStream
     // private offset: number;
     // private promise: ChannelPromise;
     spliceIn(arg0: RecvByteBufAllocator$Handle): boolean;
+    spliceIn(arg0: FileDescriptor, arg1: RecvByteBufAllocator$Handle): number;
 }

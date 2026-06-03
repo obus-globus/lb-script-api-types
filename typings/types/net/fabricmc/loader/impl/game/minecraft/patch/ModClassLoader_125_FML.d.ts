@@ -18,6 +18,7 @@ export class ModClassLoader_125_FML extends URLClassLoader {
     addFile(arg0: File): void;
     addURL(arg0: URL): void;
     findResource(arg0: string): URL;
+    findResource(arg0: string, arg1: string): URL;
     findResources(arg0: string): Enumeration<URL>;
     getParentSource(): File;
     getParentSources(): File[];

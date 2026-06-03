@@ -1,4 +1,5 @@
 import type { PreCalculatedResultFactory } from '../../../../../../../../com/oracle/truffle/regex/result/PreCalculatedResultFactory.d.ts'
+import type { AtomicGroup } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/AtomicGroup.d.ts'
 import type { BackReference } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/BackReference.d.ts'
 import type { CharacterClass } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/CharacterClass.d.ts'
 import type { Group } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Group.d.ts'
@@ -28,7 +29,12 @@ export class PreCalcResultVisitor extends DepthFirstTraversalRegexASTVisitor {
     getMask(): number[];
     getResultFactory(): PreCalculatedResultFactory;
     isBooleanMatch(): boolean;
+    leave(atomicGroup: AtomicGroup): void;
     leave(group: Group): void;
+    leave(assertion: LookAheadAssertion): void;
+    leave(assertion: LookBehindAssertion): void;
+    leave(sequence: Sequence): void;
+    visit(atomicGroup: AtomicGroup): void;
     visit(backReference: BackReference): void;
     visit(characterClass: CharacterClass): void;
     visit(group: Group): void;

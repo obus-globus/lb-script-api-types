@@ -8,5 +8,6 @@ export class ChecksumHashFunction$ChecksumHasher extends AbstractByteHasher {
     hash(): HashCode;
     update(b: ByteBuffer): void;
     update(b: number): void;
+    update(b: number[]): void;
     update(bytes: number[], off: number, len: number): void;
 }

@@ -13,6 +13,8 @@ export class ObjectByteMutablePair<K extends Object | number | string | boolean>
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectByteMutablePair<K>;
+    right(): number;
+    right(arg0: number): ObjectBytePair<K>;
     right(arg0: number): ObjectByteMutablePair<K>;
     right(): number;
     right(arg0: number): ObjectBytePair<K>;

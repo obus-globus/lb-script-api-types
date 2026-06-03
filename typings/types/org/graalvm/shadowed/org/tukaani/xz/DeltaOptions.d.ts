@@ -17,7 +17,9 @@ export class DeltaOptions extends FilterOptions {
     getDistance(): number;
     getEncoderMemoryUsage(): number;
     getFilterEncoder(): FilterEncoder;
+    getInputStream(in_: InputStream): InputStream;
     getInputStream(in_: InputStream, arrayCache: ArrayCache): InputStream;
+    getOutputStream(out: FinishableOutputStream): FinishableOutputStream;
     getOutputStream(out: FinishableOutputStream, arrayCache: ArrayCache): FinishableOutputStream;
     setDistance(distance: number): void;
 }

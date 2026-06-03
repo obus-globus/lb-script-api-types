@@ -24,8 +24,11 @@ export abstract class AbstractPooledDerivedByteBuf extends AbstractReferenceCoun
     isReadOnly(): boolean;
     nioBufferCount(): number;
     order(): ByteOrder;
+    order(arg0: ByteOrder): ByteBuf;
     parent(arg0: ByteBuf): void;
     retainedSlice(): ByteBuf;
+    retainedSlice(arg0: number, arg1: number): ByteBuf;
+    slice(): ByteBuf;
     slice(arg0: number, arg1: number): ByteBuf;
     unwrap(): AbstractByteBuf;
 }

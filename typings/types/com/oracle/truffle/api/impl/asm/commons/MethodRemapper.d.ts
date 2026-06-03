@@ -21,6 +21,7 @@ export class MethodRemapper extends MethodVisitor {
     visitLdcInsn(value: Object): void;
     visitLocalVariable(name: string, descriptor: string, signature: string, start: Label, end: Label, index: number): void;
     visitLocalVariableAnnotation(typeRef: number, typePath: TypePath, start: Label[], end: Label[], index: number[], descriptor: string, visible: boolean): AnnotationVisitor;
+    visitMethodInsn(opcode: number, owner: string, name: string, descriptor: string): void;
     visitMethodInsn(opcodeAndSource: number, owner: string, name: string, descriptor: string, isInterface: boolean): void;
     visitMultiANewArrayInsn(descriptor: string, numDimensions: number): void;
     visitParameterAnnotation(parameter: number, descriptor: string, visible: boolean): AnnotationVisitor;

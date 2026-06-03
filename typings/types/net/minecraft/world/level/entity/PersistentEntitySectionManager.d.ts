@@ -6,8 +6,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PersistentEntitySectionManagerAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/minimal_nonvanilla/spawning/PersistentEntitySectionManagerAccessor.d.ts'
-import type { PersistentEntitySectionManagerAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/PersistentEntitySectionManagerAccessor.d.ts'
-import type { PersistentEntitySectionManagerAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/util/entity_movement_tracking/PersistentEntitySectionManagerAccessor.d.ts'
+import type { PersistentEntitySectionManagerAccessor as PersistentEntitySectionManagerAccessor_2 } from '../../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/PersistentEntitySectionManagerAccessor.d.ts'
+import type { PersistentEntitySectionManagerAccessor as PersistentEntitySectionManagerAccessor_3 } from '../../../../../net/caffeinemc/mods/lithium/mixin/util/entity_movement_tracking/PersistentEntitySectionManagerAccessor.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { FullChunkStatus } from '../../../../../net/minecraft/server/level/FullChunkStatus.d.ts'
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
@@ -21,7 +21,7 @@ import type { LevelCallback } from '../../../../../net/minecraft/world/level/ent
 import type { LevelEntityGetter } from '../../../../../net/minecraft/world/level/entity/LevelEntityGetter.d.ts'
 import type { PersistentEntitySectionManager$ChunkLoadStatus } from '../../../../../net/minecraft/world/level/entity/PersistentEntitySectionManager$ChunkLoadStatus.d.ts'
 import type { Visibility } from '../../../../../net/minecraft/world/level/entity/Visibility.d.ts'
-export class PersistentEntitySectionManager<T extends EntityAccess> extends Object implements AutoCloseable, PersistentEntitySectionManagerAccessor<EntityAccess>, PersistentEntitySectionManagerAccessor<EntityAccess>, PersistentEntitySectionManagerAccessor<EntityAccess> {
+export class PersistentEntitySectionManager<T extends EntityAccess> extends Object implements AutoCloseable, PersistentEntitySectionManagerAccessor<EntityAccess>, PersistentEntitySectionManagerAccessor_2<EntityAccess>, PersistentEntitySectionManagerAccessor_3<EntityAccess> {
     constructor(entityClass: Class<T>, callbacks: LevelCallback<T>, permanentStorage: EntityPersistentStorage<T>)
     // private callbacks: LevelCallback<T>;
     // private chunkLoadStatuses: Long2ObjectMap<PersistentEntitySectionManager$ChunkLoadStatus>;

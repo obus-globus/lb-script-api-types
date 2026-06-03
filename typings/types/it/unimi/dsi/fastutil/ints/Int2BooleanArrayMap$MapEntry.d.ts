@@ -32,6 +32,8 @@ export class Int2BooleanArrayMap$MapEntry extends Object implements Int2BooleanM
     left(arg0: number): IntBooleanPair;
     left(arg0: number): IntBooleanPair;
     leftInt(): number;
+    right(): boolean;
+    right(arg0: boolean): IntBooleanPair;
     right(arg0: boolean): IntBooleanPair;
     right(): boolean;
     right(arg0: boolean): IntBooleanPair;

@@ -6,6 +6,7 @@ export class Byte2IntFunctions$UnmodifiableFunction extends AbstractByte2IntFunc
     constructor(arg0: (param0: number) => kotlin.Int)
     // private function: (param0: number) => kotlin.Int;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

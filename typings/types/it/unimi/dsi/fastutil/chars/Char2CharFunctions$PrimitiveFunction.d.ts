@@ -58,6 +58,7 @@ export class Char2CharFunctions$PrimitiveFunction extends Object implements Char
     put(arg0: string, arg1: string): string;
     put(arg0: string, arg1: string): string;
     put(arg0: string, arg1: string): string;
+    put(arg0: string, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: string): string;
 }

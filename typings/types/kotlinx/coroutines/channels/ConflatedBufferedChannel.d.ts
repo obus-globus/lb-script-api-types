@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { BufferOverflow } from '../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
 import type { BufferedChannel } from '../../../kotlinx/coroutines/channels/BufferedChannel.d.ts'
 import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Channel$Factory.d.ts'
@@ -13,7 +12,7 @@ export class ConflatedBufferedChannel<E extends Object | number | string | boole
     static OPTIONAL_CHANNEL: number;
     static RENDEZVOUS: number;
     static UNLIMITED: number;
-    constructor(capacity: number, onBufferOverflow: BufferOverflow, onUndeliveredElement: Function1<E, void> | null)
+    constructor(capacity: number, onBufferOverflow: BufferOverflow, onUndeliveredElement: (param0: E) => void | null)
     // private capacity: number;
     // private /*not mapped: */ isConflatedDropOldest(): boolean;
     // private onBufferOverflow: BufferOverflow;

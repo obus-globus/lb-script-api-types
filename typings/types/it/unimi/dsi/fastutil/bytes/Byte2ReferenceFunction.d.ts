@@ -30,7 +30,7 @@ import type { Reference2ReferenceFunction } from '../../../../../it/unimi/dsi/fa
 import type { Reference2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ShortFunction.d.ts'
 import type { Short2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ByteFunction.d.ts'
 import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Byte2ReferenceFunction<V extends Object | number | string | boolean> extends Function<number, V>, IntFunction<V>, Object{
@@ -44,6 +44,7 @@ export interface Byte2ReferenceFunction<V extends Object | number | string | boo
     andThenReference(arg0: (param0: V) => T): (param0: T) => unknown;
     andThenShort(arg0: (param0: V) => kotlin.Short): (param0: number) => kotlin.Short;
     apply<K extends Object | number | string | boolean>(arg0: K): V;
+    apply(arg0: number): V;
     apply(arg0: number): V;
     clear(): void;
     compose(arg0: (param0: T) => number): (param0: T) => V;

@@ -19,6 +19,8 @@ export class BooleanObjectMutablePair<V extends Object | number | string | boole
     key(arg0: boolean): BooleanObjectPair<V>;
     key(arg0: boolean): BooleanObjectPair<V>;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanObjectPair<V>;
     left(arg0: boolean): BooleanObjectMutablePair<V>;
     left(): boolean;
     left(arg0: boolean): BooleanObjectPair<V>;

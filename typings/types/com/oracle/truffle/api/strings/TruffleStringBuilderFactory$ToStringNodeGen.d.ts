@@ -6,5 +6,6 @@ export class TruffleStringBuilderFactory$ToStringNodeGen extends TruffleStringBu
     static getUncached(): TruffleStringBuilder$ToStringNode;
     private constructor()
     // private state_0_: number;
+    execute(sb: TruffleStringBuilder): TruffleString;
     execute(arg0Value: TruffleStringBuilder, arg1Value: boolean): TruffleString;
 }

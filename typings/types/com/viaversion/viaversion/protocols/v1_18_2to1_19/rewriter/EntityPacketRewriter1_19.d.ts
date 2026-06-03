@@ -13,5 +13,6 @@ export class EntityPacketRewriter1_19 extends EntityRewriter<ClientboundPackets1
     registerRewrites(): void;
     // private to3dId(arg0: number): number;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private writeDimensionKey(arg0: PacketWrapper, arg1: DimensionRegistryStorage): void;
 }

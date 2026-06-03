@@ -2,6 +2,7 @@ import type { CharMatcher } from '../../../../com/google/common/base/CharMatcher
 import type { CharMatcher$FastMatcher } from '../../../../com/google/common/base/CharMatcher$FastMatcher.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { BitSet } from '../../../../java/util/BitSet.d.ts'
+import type { Predicate as Predicate_2 } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class CharMatcher$Is extends CharMatcher$FastMatcher {
@@ -28,10 +29,13 @@ export class CharMatcher$Is extends CharMatcher$FastMatcher {
     constructor(match: string)
     // private match: string;
     and(other: CharMatcher): CharMatcher;
+    and(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     matches(c: string): boolean;
     negate(): CharMatcher;
     or(other: CharMatcher): CharMatcher;
+    or(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     replaceFrom(sequence: CharSequence, replacement: string): string;
+    replaceFrom(sequence: CharSequence, replacement: CharSequence): string;
     setBits(table: BitSet): void;
     toString(): string;
 }

@@ -63,6 +63,7 @@ export class VTimeZone extends BasicTimeZone {
     getLastModified(): Date;
     getNextTransition(arg0: number, arg1: boolean): TimeZoneTransition;
     getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
+    getOffset(arg0: number): number;
     getOffset(arg0: number, arg1: boolean, arg2: number[]): void;
     getOffsetFromLocal(arg0: number, arg1: BasicTimeZone$LocalOption, arg2: BasicTimeZone$LocalOption, arg3: number[]): void;
     getPreviousTransition(arg0: number, arg1: boolean): TimeZoneTransition;
@@ -71,6 +72,7 @@ export class VTimeZone extends BasicTimeZone {
     getTimeZoneRules(): TimeZoneRule[];
     getTimeZoneRules(arg0: number): TimeZoneRule[];
     hasEquivalentTransitions(arg0: TimeZone, arg1: number, arg2: number): boolean;
+    hasEquivalentTransitions(arg0: TimeZone, arg1: number, arg2: number, arg3: boolean): boolean;
     hasSameRules(arg0: TimeZone): boolean;
     inDaylightTime(arg0: Date): boolean;
     isFrozen(): boolean;

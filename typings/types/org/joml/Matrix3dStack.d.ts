@@ -2,6 +2,7 @@ import type { ObjectInput } from '../../java/io/ObjectInput.d.ts'
 import type { ObjectOutput } from '../../java/io/ObjectOutput.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Matrix3d } from '../../org/joml/Matrix3d.d.ts'
+import type { Matrix3dc } from '../../org/joml/Matrix3dc.d.ts'
 export class Matrix3dStack extends Matrix3d {
     constructor()
     constructor(arg0: number)
@@ -10,6 +11,7 @@ export class Matrix3dStack extends Matrix3d {
     clear(): Matrix3dStack;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    equals(arg0: Matrix3dc, arg1: number): boolean;
     hashCode(): number;
     popMatrix(): Matrix3dStack;
     pushMatrix(): Matrix3dStack;

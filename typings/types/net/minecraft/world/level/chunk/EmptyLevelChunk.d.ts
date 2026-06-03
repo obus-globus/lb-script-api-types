@@ -1,3 +1,4 @@
+import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -7,6 +8,7 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 import type { LevelChunk$EntityCreationType } from '../../../../../net/minecraft/world/level/chunk/LevelChunk$EntityCreationType.d.ts'
@@ -19,8 +21,11 @@ export class EmptyLevelChunk extends LevelChunk {
     constructor(level: Level, pos: ChunkPos, biome: Holder<Biome>)
     // private biome: Holder<Biome>;
     addAndRegisterBlockEntity(blockEntity: BlockEntity): void;
+    getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos, creationType: LevelChunk$EntityCreationType): BlockEntity;
     getBlockState(pos: BlockPos): BlockState;
+    getFluidState(arg0: number, arg1: number, arg2: number): FluidState;
     getFluidState(pos: BlockPos): FluidState;
     getFullStatus(): FullChunkStatus;
     getLightEmission(pos: BlockPos): number;
@@ -29,5 +34,6 @@ export class EmptyLevelChunk extends LevelChunk {
     isYSpaceEmpty(yStartInclusive: number, yEndInclusive: number): boolean;
     removeBlockEntity(pos: BlockPos): void;
     setBlockEntity(blockEntity: BlockEntity): void;
+    setBlockState(pos: BlockPos, state: BlockState): BlockState;
     setBlockState(pos: BlockPos, state: BlockState, flags: number): BlockState;
 }

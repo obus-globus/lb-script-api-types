@@ -11,5 +11,6 @@ export class SplitPacketHelper extends AbstractReferenceCounted {
     add(arg0: EncapsulatedPacket, arg1: ByteBufAllocator): EncapsulatedPacket;
     deallocate(): void;
     expired(): boolean;
+    touch(): ReferenceCounted;
     touch(arg0: Object): ReferenceCounted;
 }

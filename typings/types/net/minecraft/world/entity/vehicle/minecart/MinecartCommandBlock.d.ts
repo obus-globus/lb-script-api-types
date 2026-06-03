@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { EntityDataAccessor } from '../../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { InteractionHand } from '../../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../../../net/minecraft/world/InteractionResult.d.ts'
@@ -76,6 +77,7 @@ export class MinecartCommandBlock extends AbstractMinecart {
     getDropItem(): Item;
     getPickResult(): ItemStack;
     interact(player: Player, hand: InteractionHand, location: Vec3): InteractionResult;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
 }

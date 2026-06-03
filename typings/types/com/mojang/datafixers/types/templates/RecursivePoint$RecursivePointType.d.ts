@@ -29,6 +29,7 @@ export class RecursivePoint$RecursivePointType<A extends Object | number | strin
     buildCodec(): Codec<A>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     everywhere(arg0: TypeRewriteRule, arg1: PointFreeRule, arg2: boolean, arg3: boolean): Optional<RewriteResult<A, Object>>;
     family(): RecursiveTypeFamily;
     findCheckedType(arg0: number): Optional<Type<Object>>;

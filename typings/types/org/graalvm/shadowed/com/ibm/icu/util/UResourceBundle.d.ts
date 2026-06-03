@@ -54,7 +54,9 @@ export abstract class UResourceBundle extends ResourceBundle {
     getSize(): number;
     getString(): string;
     getString(index: number): string;
+    getString(arg0: string): string;
     getStringArray(): string[];
+    getStringArray(arg0: string): string[];
     getType(): number;
     getUInt(): number;
     getULocale(): ULocale;

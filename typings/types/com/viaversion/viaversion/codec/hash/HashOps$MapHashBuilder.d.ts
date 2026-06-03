@@ -12,6 +12,8 @@ export class HashOps$MapHashBuilder extends HashOps$CollectionHashBuilder implem
     write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
     write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;
     write<K extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Type<K>, arg1: K, arg2: Type<T>, arg3: T): Ops$MapSerializer;
+    write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
+    write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;
     writeInlinedMap<T extends Object | number | string | boolean>(arg0: Type<T>, arg1: T): Ops$MapSerializer;
     writeList(arg0: string, arg1: (param0: Ops$ListSerializer) => void): Ops$MapSerializer;
     writeMap(arg0: string, arg1: (param0: Ops$MapSerializer) => void): Ops$MapSerializer;

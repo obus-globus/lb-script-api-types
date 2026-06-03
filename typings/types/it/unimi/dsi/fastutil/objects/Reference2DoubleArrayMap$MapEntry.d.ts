@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Reference2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2DoubleMap$Entry.d.ts'
 import type { ReferenceDoublePair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceDoublePair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -19,6 +20,9 @@ export class Reference2DoubleArrayMap$MapEntry extends Object implements Referen
     getDoubleValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ReferenceDoublePair<K>;
     right(arg0: number): ReferenceDoublePair<K>;
     right(): number;
     right(arg0: number): ReferenceDoublePair<K>;

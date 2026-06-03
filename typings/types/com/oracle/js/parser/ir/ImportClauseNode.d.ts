@@ -26,5 +26,7 @@ export class ImportClauseNode extends Node {
     setDefaultBinding(defaultBinding: IdentNode): ImportClauseNode;
     setNameSpaceImport(nameSpaceImport: NameSpaceImportNode): ImportClauseNode;
     setNamedImports(namedImports: NamedImportsNode): ImportClauseNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

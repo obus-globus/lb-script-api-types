@@ -1,4 +1,3 @@
-import type { Function3 } from '../../../../../../../kotlin/jvm/functions/Function3.d.ts'
 import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -28,7 +27,7 @@ export class ModuleBlockESP extends ClientModule {
     // private targets: Block[];
     // private /*not mapped: */ getTargets(): Block[];
     // private collectBlockShapes(colorMode: GenericColorMode<Pair<BlockPos, BlockState>>, useColor: boolean): PositionedVoxelShape<ModuleBlockESP$BlockMergeKey>[];
-    // private forEachTrackedBlocks(block: Function3<BlockPos, BlockState, VoxelShape, void>): void;
+    // private forEachTrackedBlocks(block: (param0: BlockPos, param1: BlockState, param2: VoxelShape) => void): void;
     // private markDirtyForModes(): void;
     onDisabled(): void;
     onEnabled(): void;

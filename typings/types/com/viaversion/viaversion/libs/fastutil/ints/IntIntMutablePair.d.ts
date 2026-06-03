@@ -19,11 +19,15 @@ export class IntIntMutablePair extends Object implements IntIntPair, Serializabl
     key(arg0: number): IntIntPair;
     key(arg0: number): IntIntPair;
     keyInt(): number;
+    left(): number;
+    left(arg0: number): IntIntPair;
     left(arg0: number): IntIntMutablePair;
     left(): number;
     left(arg0: number): IntIntPair;
     left(arg0: number): IntIntPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntIntPair;
     right(arg0: number): IntIntMutablePair;
     right(): number;
     right(arg0: number): IntIntPair;

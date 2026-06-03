@@ -15,6 +15,7 @@ export abstract class AbstractRecursiveParserWrapperHandler extends DefaultHandl
     // private embeddedResources: number;
     // private maxEmbeddedResources: number;
     decrementEmbeddedDepth(): void;
+    endDocument(): void;
     endDocument(arg0: ContentHandler, arg1: Metadata): void;
     endEmbeddedDocument(arg0: ContentHandler, arg1: Metadata): void;
     getContentHandlerFactory(): ContentHandlerFactory;

@@ -11,5 +11,6 @@ export class Reference2ByteFunctions$Singleton<K extends Object | number | strin
     containsKey(arg0: Object): boolean;
     getByte(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
+    getOrDefault(arg0: Object, arg1: number): number;
     size(): number;
 }

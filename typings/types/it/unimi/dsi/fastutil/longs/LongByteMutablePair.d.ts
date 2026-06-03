@@ -19,11 +19,15 @@ export class LongByteMutablePair extends Object implements LongBytePair, Seriali
     key(arg0: number): LongBytePair;
     key(arg0: number): LongBytePair;
     keyLong(): number;
+    left(): number;
+    left(arg0: number): LongBytePair;
     left(arg0: number): LongByteMutablePair;
     left(): number;
     left(arg0: number): LongBytePair;
     left(arg0: number): LongBytePair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongBytePair;
     right(arg0: number): LongByteMutablePair;
     right(): number;
     right(arg0: number): LongBytePair;

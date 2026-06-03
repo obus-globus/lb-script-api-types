@@ -12,6 +12,7 @@ import type { ClientHandshake } from '../../../../../../com/oracle/truffle/tools
 import type { WebSocketServer } from '../../../../../../com/oracle/truffle/tools/utils/java_websocket/server/WebSocketServer.d.ts'
 import type { Exception } from '../../../../../../java/lang/Exception.d.ts'
 import type { InetSocketAddress } from '../../../../../../java/net/InetSocketAddress.d.ts'
+import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
 import type { CountDownLatch } from '../../../../../../java/util/concurrent/CountDownLatch.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InspectorServer extends WebSocketServer implements InspectorWSConnection {
@@ -30,6 +31,7 @@ export class InspectorServer extends WebSocketServer implements InspectorWSConne
     // private getWSAddress(serverSession: InspectorServer$ServerPathSession): string;
     onClose(conn: WebSocket, code: number, reason: string, remote: boolean): void;
     onError(conn: WebSocket, ex: Exception): void;
+    onMessage(arg0: WebSocket, arg1: ByteBuffer): void;
     onMessage(conn: WebSocket, message: string): void;
     onOpen(conn: WebSocket, handshake: ClientHandshake): void;
     onPreparePing(conn: WebSocket): PingFrame;
@@ -37,4 +39,6 @@ export class InspectorServer extends WebSocketServer implements InspectorWSConne
     onWebsocketPing(conn: WebSocket, f: Framedata): void;
     onWebsocketPong(conn: WebSocket, f: Framedata): void;
     stop(): void;
+    stop(arg0: number): void;
+    stop(arg0: number, arg1: string): void;
 }

@@ -13,6 +13,8 @@ export class ObjectDoubleMutablePair<K extends Object | number | string | boolea
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectDoubleMutablePair<K>;
+    right(): number;
+    right(arg0: number): ObjectDoublePair<K>;
     right(arg0: number): ObjectDoubleMutablePair<K>;
     right(): number;
     right(arg0: number): ObjectDoublePair<K>;

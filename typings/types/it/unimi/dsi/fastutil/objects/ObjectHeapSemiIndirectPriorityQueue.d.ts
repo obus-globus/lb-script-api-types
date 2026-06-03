@@ -19,6 +19,7 @@ export class ObjectHeapSemiIndirectPriorityQueue<K extends Object | number | str
     changed(): void;
     changed(arg0: number): void;
     changed(): void;
+    changed(arg0: number): void;
     clear(): void;
     comparator(): (param0: K) => kotlin.Boolean;
     contains(arg0: number): boolean;

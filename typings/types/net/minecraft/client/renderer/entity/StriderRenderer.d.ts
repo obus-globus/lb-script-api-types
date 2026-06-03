@@ -10,6 +10,7 @@ export class StriderRenderer extends AgeableMobRenderer<Strider, StriderRenderSt
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): StriderRenderState;
+    createRenderState(entity: Strider, partialTicks: number): StriderRenderState;
     extractRenderState(entity: Strider, state: StriderRenderState, partialTicks: number): void;
     getShadowRadius(state: StriderRenderState): number;
     getTextureLocation(state: StriderRenderState): Identifier;

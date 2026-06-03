@@ -9,6 +9,7 @@ import type { LevelAccessor } from '../../../../../../net/minecraft/world/level/
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -123,6 +124,7 @@ export abstract class AbstractHugeMushroomFeature extends Feature<HugeMushroomFe
     isValidPosition(level: WorldGenLevel, origin: BlockPos, treeHeight: number, blockPos: BlockPos$MutableBlockPos, config: HugeMushroomFeatureConfiguration): boolean;
     makeCap(level: WorldGenLevel, random: RandomSource, origin: BlockPos, treeHeight: number, blockPos: BlockPos$MutableBlockPos, config: HugeMushroomFeatureConfiguration): void;
     place(context: FeaturePlaceContext<HugeMushroomFeatureConfiguration>): boolean;
+    place(config: HugeMushroomFeatureConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     placeMushroomBlock(level: LevelAccessor, blockPos: BlockPos$MutableBlockPos, newState: BlockState): void;
     placeTrunk(level: WorldGenLevel, random: RandomSource, origin: BlockPos, config: HugeMushroomFeatureConfiguration, treeHeight: number, blockPos: BlockPos$MutableBlockPos): void;
 }

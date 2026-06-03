@@ -1,5 +1,7 @@
+import type { LongConsumer } from '../../../../../../com/viaversion/viaversion/libs/fastutil/longs/LongConsumer.d.ts'
 import type { LongListIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/longs/LongListIterator.d.ts'
-import type { LongConsumer } from '../../../../../../java/util/function/LongConsumer.d.ts'
+import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
+import type { LongConsumer as LongConsumer_2 } from '../../../../../../java/util/function/LongConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LongLinkedOpenHashSet$SetIterator extends Object implements LongListIterator {
     constructor(null_: LongLinkedOpenHashSet$SetIterator)
@@ -11,6 +13,8 @@ export class LongLinkedOpenHashSet$SetIterator extends Object implements LongLis
     add(arg0: number): void;
     add(arg0: number): void;
     // private ensureIndexKnown(): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

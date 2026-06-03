@@ -1,7 +1,11 @@
 import type { Optional } from '../../../../java/util/Optional.d.ts'
+import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
+import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
+import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { NavigatingEntity } from '../../../../net/caffeinemc/mods/lithium/common/entity/NavigatingEntity.d.ts'
+import type { EntityAnchorArgument$Anchor } from '../../../../net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../net/minecraft/core/Vec3i.d.ts'
@@ -55,6 +59,7 @@ import type { PathType } from '../../../../net/minecraft/world/level/pathfinder/
 import type { ValueInput } from '../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 import type { LootParams } from '../../../../net/minecraft/world/level/storage/loot/LootParams.d.ts'
+import type { LootParams$Builder } from '../../../../net/minecraft/world/level/storage/loot/LootParams$Builder.d.ts'
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -218,7 +223,10 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     doHurtTarget(level: ServerLevel, target: Entity): boolean;
     dropCustomDeathLoot(level: ServerLevel, source: DamageSource, killedByPlayer: boolean): void;
+    dropFromLootTable(level: ServerLevel, key: ResourceKey<LootTable>, paramsBuilder: (param0: LootParams$Builder) => LootParams, consumer: (param0: ServerLevel, param1: ItemStack) => void): boolean;
     dropFromLootTable(level: ServerLevel, source: DamageSource, playerKilled: boolean): void;
+    dropFromLootTable(level: ServerLevel, source: DamageSource, playerKilled: boolean, lootTable: ResourceKey<LootTable>): void;
+    dropFromLootTable(level: ServerLevel, source: DamageSource, playerKilled: boolean, lootTable: ResourceKey<LootTable>, itemStackConsumer: (param0: ItemStack) => void): void;
     dropLeash(): void;
     dropPreservedEquipment(level: ServerLevel): void;
     dropPreservedEquipment(level: ServerLevel, shouldDrop: (param0: ItemStack) => kotlin.Boolean): EquipmentSlot[];
@@ -229,7 +237,10 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: { [key in EquipmentSlot]: number }): void;
     equip(equipment: EquipmentTable, lootParams: LootParams): void;
     equip(lootTable: ResourceKey<LootTable>, dropChances: { [key in EquipmentSlot]: number }): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: { [key in EquipmentSlot]: number }): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: { [key in EquipmentSlot]: number }): void;
     equip(equipment: EquipmentTable): void;
+    equip(equipment: EquipmentTable, lootParams: LootParams): void;
     equipItemIfPossible(level: ServerLevel, itemStack: ItemStack): ItemStack;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
     getAmbientSound(): SoundEvent;
@@ -295,6 +306,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     lithium$isRegisteredToWorld(): boolean;
     lithium$setRegisteredToWorld(arg0: PathNavigation): void;
     lithium$updateNavigationRegistration(): void;
+    lookAt(anchor: EntityAnchorArgument$Anchor, pos: Vec3): void;
     lookAt(entity: Entity, yMax: number, xMax: number): void;
     mayBeLeashed(): boolean;
     mobInteract(player: Player, hand: InteractionHand): InteractionResult;
@@ -347,6 +359,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     setZza(zza: number): void;
     shouldPassengersInheritMalus(): boolean;
     spawnAnim(): void;
+    startRiding(entity: Entity): boolean;
     startRiding(entity: Entity, force: boolean, sendEventAndTriggers: boolean): boolean;
     stopInPlace(): void;
     sunProtectionSlot(): EquipmentSlot;

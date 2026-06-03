@@ -6,7 +6,7 @@ import type { SourceSection } from '../../../../../../com/oracle/truffle/api/sou
 import type { BreakpointsHandler$ResolvedHandler } from '../../../../../../com/oracle/truffle/tools/dap/server/BreakpointsHandler$ResolvedHandler.d.ts'
 import type { BreakpointsHandler$SectionsCollector } from '../../../../../../com/oracle/truffle/tools/dap/server/BreakpointsHandler$SectionsCollector.d.ts'
 import type { ExecutionContext } from '../../../../../../com/oracle/truffle/tools/dap/server/ExecutionContext.d.ts'
-import type { Breakpoint } from '../../../../../../com/oracle/truffle/tools/dap/types/Breakpoint.d.ts'
+import type { Breakpoint as Breakpoint_2 } from '../../../../../../com/oracle/truffle/tools/dap/types/Breakpoint.d.ts'
 import type { BreakpointLocation } from '../../../../../../com/oracle/truffle/tools/dap/types/BreakpointLocation.d.ts'
 import type { BreakpointLocationsArguments } from '../../../../../../com/oracle/truffle/tools/dap/types/BreakpointLocationsArguments.d.ts'
 import type { FunctionBreakpoint } from '../../../../../../com/oracle/truffle/tools/dap/types/FunctionBreakpoint.d.ts'
@@ -35,7 +35,7 @@ export class BreakpointsHandler extends Object {
     // private collectSuspendableLocations(source: Source, startIndex: number, endIndex: number): BreakpointsHandler$SectionsCollector;
     // private findSuspendableLocations(range: SourceSection): SourceSection[];
     getLogMessage(bp: Breakpoint): string;
-    setBreakpoints(args: SetBreakpointsArguments): Breakpoint[];
+    setBreakpoints(args: SetBreakpointsArguments): Breakpoint_2[];
     setExceptionBreakpoint(caught: boolean, uncaught: boolean): void;
-    setFunctionBreakpoints(args: SetFunctionBreakpointsArguments): Breakpoint[];
+    setFunctionBreakpoints(args: SetFunctionBreakpointsArguments): Breakpoint_2[];
 }

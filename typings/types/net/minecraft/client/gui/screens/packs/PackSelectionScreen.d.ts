@@ -5,6 +5,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
@@ -44,6 +45,7 @@ export class PackSelectionScreen extends Screen {
     // private filterEntries(value: string, oldEntries: Stream<PackSelectionModel$Entry>, listToUpdate: TransferableSelectionList): void;
     // private getPackIcon(pack: Pack): Identifier;
     init(): void;
+    init(width: number, height: number): void;
     // private loadPackIcon(textureManager: TextureManager, pack: Pack): Identifier;
     onClose(): void;
     onFilesDrop(files: Path[][]): void;
@@ -51,6 +53,7 @@ export class PackSelectionScreen extends Screen {
     // private reload(): void;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     tick(): void;
     // private updateFilteredEntries(value: string): void;
 }

@@ -11,5 +11,6 @@ export class LeashKnotRenderer extends EntityRenderer<LeashFenceKnotEntity, Enti
     constructor(context: EntityRendererProvider$Context)
     // private model: LeashKnotModel;
     createRenderState(): EntityRenderState;
+    createRenderState(entity: LeashFenceKnotEntity, partialTicks: number): EntityRenderState;
     submit(state: EntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

@@ -22,4 +22,5 @@ export class ConfigCorruptedScreen extends Screen {
     // private prevScreen: Screen;
     extractRenderState(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: number): void;
     init(): void;
+    init(width: number, height: number): void;
 }

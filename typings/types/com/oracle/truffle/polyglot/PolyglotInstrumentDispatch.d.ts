@@ -6,12 +6,14 @@ import type { AbstractPolyglotImpl$AbstractInstrumentDispatch } from '../../../.
 export class PolyglotInstrumentDispatch extends AbstractPolyglotImpl$AbstractInstrumentDispatch {
     constructor(impl: PolyglotImpl)
     equals(receiver: Object, otherImpl: Object): boolean;
+    equals(other: Object | null): boolean;
     getId(receiver: Object): string;
     getName(receiver: Object): string;
     getOptions(receiver: Object): OptionDescriptor[];
     getSourceOptions(receiver: Object): OptionDescriptor[];
     getVersion(receiver: Object): string;
     getWebsite(receiver: Object): string;
+    hashCode(): number;
     hashCode(receiver: Object): number;
     lookup<T extends Object | number | string | boolean>(receiver: Object, type: Class<T>): T;
 }

@@ -68,6 +68,9 @@ export class RollingFileManager extends FileManager {
     setRolloverStrategy(rolloverStrategy: RolloverStrategy): void;
     setTriggeringPolicy(triggeringPolicy: TriggeringPolicy): void;
     updateData(data: Object): void;
+    write(bytes: number[]): void;
+    write(bytes: number[], immediateFlush: boolean): void;
+    write(bytes: number[], offset: number, length: number): void;
     write(bytes: number[], offset: number, length: number, immediateFlush: boolean): void;
     writeToDestination(bytes: number[], offset: number, length: number): void;
 }

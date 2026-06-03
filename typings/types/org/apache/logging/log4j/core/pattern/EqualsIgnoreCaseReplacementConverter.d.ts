@@ -8,5 +8,6 @@ export class EqualsIgnoreCaseReplacementConverter extends EqualsBaseReplacementC
     static CATEGORY: string;
     static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): EqualsIgnoreCaseReplacementConverter;
     private constructor(formatters: PatternFormatter[], testString: string, substitution: string, parser: PatternParser)
+    equals(other: Object | null): boolean;
     equals(str: string, buff: StringBuilder, from: number, len: number): boolean;
 }

@@ -3,6 +3,7 @@ import type { PositionAssertion$Type } from '../../../../../../../com/oracle/tru
 import type { RegexAST } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
 import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
 import type { Term } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Term.d.ts'
+import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class PositionAssertion extends Term {
     private constructor(copy: PositionAssertion)
@@ -17,5 +18,6 @@ export class PositionAssertion extends Term {
     isDollar(): boolean;
     setNext(next: RegexASTNode): void;
     toJson(): JsonValue;
+    toJson(typeName: string): JsonObject;
     toString(): string;
 }

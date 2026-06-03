@@ -10,6 +10,7 @@ export class DataOutputStream extends FilterOutputStream implements DataOutput {
     flush(): void;
     // private incCount(arg0: number): void;
     size(): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     writeBoolean(arg0: boolean): void;

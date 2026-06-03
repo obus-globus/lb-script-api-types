@@ -90,6 +90,9 @@ export class PoweredRailBlock extends BaseRailBlock {
     getShapeProperty(): Property<RailShape>;
     isSameRailWithPower(level: Level, pos: BlockPos, forward: boolean, searchDepth: number, dir: RailShape): boolean;
     mirror(state: BlockState, mirror: Mirror): BlockState;
+    mirror(shape: RailShape, mirror: Mirror): RailShape;
     rotate(state: BlockState, rotation: Rotation): BlockState;
+    rotate(shape: RailShape, rotation: Rotation): RailShape;
+    updateState(state: BlockState, level: Level, pos: BlockPos, movedByPiston: boolean): BlockState;
     updateState(state: BlockState, level: Level, pos: BlockPos, block: Block): void;
 }

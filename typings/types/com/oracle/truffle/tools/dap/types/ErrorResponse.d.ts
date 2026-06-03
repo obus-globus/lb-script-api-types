@@ -12,4 +12,5 @@ export class ErrorResponse extends Response {
     getBody(): ErrorResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ErrorResponse$ResponseBody): ErrorResponse;
+    setBody(body: Object): Response;
 }

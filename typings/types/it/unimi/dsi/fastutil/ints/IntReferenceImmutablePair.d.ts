@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { IntReferencePair } from '../../../../../it/unimi/dsi/fastutil/ints/IntReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -22,5 +23,6 @@ export class IntReferenceImmutablePair<V extends Object | number | string | bool
     left(arg0: number): IntReferencePair<V>;
     leftInt(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

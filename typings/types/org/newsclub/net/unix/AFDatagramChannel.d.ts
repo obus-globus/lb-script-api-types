@@ -41,6 +41,7 @@ export abstract class AFDatagramChannel<A extends AFSocketAddress> extends Datag
     join(arg0: InetAddress, arg1: NetworkInterface): MembershipKey;
     join(arg0: InetAddress, arg1: NetworkInterface, arg2: InetAddress): MembershipKey;
     read(arg0: ByteBuffer): number;
+    read(arg0: ByteBuffer[]): number;
     read(arg0: ByteBuffer[], arg1: number, arg2: number): number;
     receive(arg0: ByteBuffer): A;
     send(arg0: ByteBuffer, arg1: SocketAddress): number;
@@ -51,5 +52,6 @@ export abstract class AFDatagramChannel<A extends AFSocketAddress> extends Datag
     socket(): AFDatagramSocket<A>;
     supportedOptions(): SocketOption<Object>[];
     write(arg0: ByteBuffer): number;
+    write(arg0: ByteBuffer[]): number;
     write(arg0: ByteBuffer[], arg1: number, arg2: number): number;
 }

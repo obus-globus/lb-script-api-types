@@ -1,4 +1,5 @@
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { MacOSXLibrary } from '../../../../org/lwjgl/system/macosx/MacOSXLibrary.d.ts'
 export class MacOSXLibraryDL extends MacOSXLibrary {
     static BITS32: boolean;
@@ -13,5 +14,6 @@ export class MacOSXLibraryDL extends MacOSXLibrary {
     constructor(arg0: string, arg1: number)
     free(): void;
     getFunctionAddress(arg0: ByteBuffer): number;
+    getFunctionAddress(arg0: CharSequence): number;
     getPath(): string;
 }

@@ -159,6 +159,7 @@ export class Pillager extends AbstractIllager implements CrossbowAttackMob, Inve
     getMaxSpawnClusterSize(): number;
     getPreferredWeaponType(): TagKey<Item>;
     getSlot(slot: number): SlotAccess;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     isChargingCrossbow(): boolean;
     onCrossbowAttackPerformed(): void;

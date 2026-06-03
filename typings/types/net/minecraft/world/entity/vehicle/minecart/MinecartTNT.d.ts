@@ -74,6 +74,7 @@ export class MinecartTNT extends AbstractMinecart {
     addAdditionalSaveData(output: ValueOutput): void;
     causeFallDamage(fallDistance: number, damageModifier: number, damageSource: DamageSource): boolean;
     destroy(level: ServerLevel, source: DamageSource): void;
+    destroy(level: ServerLevel, dropItem: Item): void;
     explode(damageSource: DamageSource, speedSqr: number): void;
     getBlockExplosionResistance(explosion: Explosion, level: BlockGetter, pos: BlockPos, block: BlockState, fluid: FluidState, resistance: number): number;
     getDefaultDisplayBlockState(): BlockState;

@@ -47,8 +47,11 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     forkIfDefault(): DataConverter<JsonElement>;
     mergeList<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeList(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
+    mergeList(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T, arg2: T): Result<T>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
+    mergeMap(arg0: JsonElement, arg1: JsonElement, arg2: JsonElement): Result<JsonElement>;
+    mergeMap(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
     mergeMap(arg0: JsonElement, arg1: Map<JsonElement, JsonElement>): Result<JsonElement>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<T>;

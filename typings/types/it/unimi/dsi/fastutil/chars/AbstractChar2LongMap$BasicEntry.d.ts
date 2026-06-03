@@ -12,5 +12,6 @@ export class AbstractChar2LongMap$BasicEntry extends Object implements Char2Long
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

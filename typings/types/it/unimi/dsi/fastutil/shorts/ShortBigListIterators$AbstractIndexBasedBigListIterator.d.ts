@@ -6,6 +6,8 @@ export abstract class ShortBigListIterators$AbstractIndexBasedBigListIterator ex
     add(arg0: number): void;
     add(arg0: number, arg1: number): void;
     add(arg0: number): void;
+    add(arg0: number): void;
+    back(arg0: number): number;
     back(arg0: number): number;
     back(arg0: number): number;
     hasPrevious(): boolean;
@@ -15,6 +17,7 @@ export abstract class ShortBigListIterators$AbstractIndexBasedBigListIterator ex
     set(arg0: number): void;
     set(arg0: number): void;
     set(arg0: number, arg1: number): void;
+    set(arg0: number): void;
     set(arg0: number): void;
     skip(arg0: number): number;
     skip(arg0: number): number;

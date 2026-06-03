@@ -19,6 +19,7 @@ export class PropertyGetterDescriptorImpl extends PropertyAccessorDescriptorImpl
     accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getOriginal(): PropertyGetterDescriptor;
     getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(arg0: boolean): E[];
     getReturnType(): KotlinType;
     getValueParameters(): ValueParameterDescriptor[];
     initialize(arg0: KotlinType): void;

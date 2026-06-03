@@ -14,11 +14,15 @@ export class WithNode extends LexicalContextStatement {
     readonly expression: Expression;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept(visitor: NodeVisitor<LexicalContext>): Node;
+    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     getExpression(): Expression;
     isCompletionValueNeverEmpty(): boolean;
     isTerminal(): boolean;
     setBody(lc: LexicalContext, body: Block): WithNode;
     setExpression(lc: LexicalContext, expression: Expression): WithNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

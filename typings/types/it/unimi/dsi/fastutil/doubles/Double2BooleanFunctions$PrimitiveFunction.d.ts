@@ -74,6 +74,7 @@ export class Double2BooleanFunctions$PrimitiveFunction extends Object implements
     put(arg0: number, arg1: boolean): boolean;
     put(arg0: number, arg1: boolean): boolean;
     put(arg0: number, arg1: boolean): boolean;
+    put(arg0: number, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: number): boolean;
     test(arg0: number): boolean;

@@ -9,5 +9,7 @@ export class EmptyNode extends Statement {
     constructor(lineNumber: number, token: number, finish: number)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

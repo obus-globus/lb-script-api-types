@@ -11,6 +11,7 @@ export class DisplayRenderer$BlockDisplayRenderer extends DisplayRenderer<Displa
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): BlockDisplayEntityRenderState;
+    createRenderState(entity: Display$BlockDisplay, partialTicks: number): BlockDisplayEntityRenderState;
     extractRenderState(entity: Display$BlockDisplay, state: BlockDisplayEntityRenderState, partialTicks: number): void;
     submitInner(state: BlockDisplayEntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, interpolationProgress: number): void;
 }

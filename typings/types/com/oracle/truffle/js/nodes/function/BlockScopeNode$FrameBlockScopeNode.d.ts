@@ -37,6 +37,7 @@ export class BlockScopeNode$FrameBlockScopeNode extends BlockScopeNode implement
     appendScopeFrame(frame: VirtualFrame): VirtualFrame;
     // private clearVirtualSlots(frame: VirtualFrame): void;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
+    exitScope(frame: VirtualFrame): void;
     exitScope(frame: VirtualFrame, yield_: boolean): void;
     getBlockScope(frame: VirtualFrame): Object;
     getFrameDescriptor(): FrameDescriptor;

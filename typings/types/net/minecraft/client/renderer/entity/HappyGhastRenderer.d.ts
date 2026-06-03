@@ -11,6 +11,7 @@ export class HappyGhastRenderer extends AgeableMobRenderer<HappyGhast, HappyGhas
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): HappyGhastRenderState;
+    createRenderState(entity: HappyGhast, partialTicks: number): HappyGhastRenderState;
     extractRenderState(entity: HappyGhast, state: HappyGhastRenderState, partialTicks: number): void;
     getBoundingBoxForCulling(entity: HappyGhast): AABB;
     getTextureLocation(state: HappyGhastRenderState): Identifier;

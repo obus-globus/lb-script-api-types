@@ -12,4 +12,5 @@ export class StoppedEvent extends Event {
     getBody(): StoppedEvent$EventBody;
     hashCode(): number;
     setBody(body: StoppedEvent$EventBody): StoppedEvent;
+    setBody(body: Object): Event;
 }

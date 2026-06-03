@@ -37,12 +37,16 @@ export abstract class AbstractChanneledNetworkAddon<H extends Object | number | 
     receiveRegistration(arg0: boolean, arg1: RegistrationPayload): void;
     register(arg0: Identifier[]): void;
     // private registerChannel(arg0: Identifier): void;
+    registerChannel(arg0: Identifier, arg1: H): boolean;
     registerPendingChannels(arg0: ChannelInfoHolder, arg1: ConnectionProtocol): void;
     schedule(arg0: () => void): void;
     sendInitialChannelRegistrationPacket(): void;
     sendPacket(arg0: Packet<Object>): void;
     sendPacket(arg0: CustomPacketPayload): void;
     sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
+    sendPacket(arg0: Packet<Object>): void;
     sendPacket(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
+    sendPacket(arg0: CustomPacketPayload): void;
+    sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
     unregister(arg0: Identifier[]): void;
 }

@@ -25,6 +25,7 @@ export class Char2IntAVLTreeMap$Entry extends AbstractChar2IntMap$BasicEntry imp
     right(): Char2IntAVLTreeMap$Entry;
     right(arg0: Char2IntAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Char2IntAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -11,6 +11,8 @@ export class ChunkedSampleByteBuf extends Object implements FloatConsumer {
     // private currentBuffer: ByteBuffer;
     accept(arg0: number): void;
     accept(arg0: number): void;
+    accept(arg0: number): void;
+    accept(arg0: number): void;
     accept(sample: number): void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;

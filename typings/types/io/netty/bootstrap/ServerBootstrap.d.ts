@@ -23,6 +23,7 @@ export class ServerBootstrap extends AbstractBootstrap<ServerBootstrap, ServerCh
     childOptions(): Map<ChannelOption<Object>, Object>;
     clone(): ServerBootstrap;
     config(): ServerBootstrapConfig;
+    group(): (Object | null)[];
     group(arg0: (Object | null)[]): ServerBootstrap;
     group(arg0: (Object | null)[], arg1: (Object | null)[]): ServerBootstrap;
     init(arg0: Channel): void;

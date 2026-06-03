@@ -73,7 +73,9 @@ export class ZipOutputStream extends DeflaterOutputStream implements ZipConstant
     setLevel(arg0: number): void;
     setMethod(arg0: number): void;
     // private versionMadeBy(arg0: ZipEntry, arg1: number): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     // private writeByte(arg0: number): void;
     // private writeBytes(arg0: number[], arg1: number, arg2: number): void;
     // private writeCEN(arg0: ZipOutputStream$XEntry): void;

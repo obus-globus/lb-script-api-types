@@ -12,5 +12,6 @@ export class AbstractInt2BooleanMap$BasicEntry extends Object implements Int2Boo
     hashCode(): number;
     setValue(arg0: boolean): boolean;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     toString(): string;
 }

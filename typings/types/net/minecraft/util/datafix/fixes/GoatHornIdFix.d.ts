@@ -1,4 +1,5 @@
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
+import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
@@ -12,5 +13,6 @@ export class GoatHornIdFix extends ItemStackTagRemainderFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
     static createFixer(paramitemStackType: Type<Object>, paramidFilter: (param0: string) => kotlin.Boolean, paramfixer: (param0: Object | null) => unknown): (param0: Object | null) => unknown;
     constructor(outputSchema: Schema)
+    fixItemStackTag(tag: Typed<Object>): Typed<Object>;
     fixItemStackTag(tag: Dynamic<T>): Dynamic<T>;
 }

@@ -1,4 +1,3 @@
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { ModuleDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
@@ -12,7 +11,7 @@ export class KotlinTypeRefiner$Default extends KotlinTypeRefiner {
     static INSTANCE: KotlinTypeRefiner$Default;
     private constructor()
     findClassAcrossModuleDependencies(arg0: ClassId): ClassDescriptor;
-    getOrPutScopeForClass<S extends MemberScope>(arg0: ClassDescriptor, arg1: Function0<S>): S;
+    getOrPutScopeForClass<S extends MemberScope>(arg0: ClassDescriptor, arg1: () => S): S;
     isRefinementNeededForModule(arg0: ModuleDescriptor): boolean;
     isRefinementNeededForTypeConstructor(arg0: TypeConstructor): boolean;
     refineDescriptor(arg0: DeclarationDescriptor): ClassDescriptor;

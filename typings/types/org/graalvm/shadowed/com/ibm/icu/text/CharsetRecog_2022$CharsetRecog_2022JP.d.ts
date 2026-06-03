@@ -5,5 +5,6 @@ export class CharsetRecog_2022$CharsetRecog_2022JP extends CharsetRecog_2022 {
     constructor()
     // private escapeSequences: number[][];
     getName(): string;
+    match(text: number[], textLen: number, escapeSequences: number[][]): number;
     match(det: CharsetDetector): CharsetMatch;
 }

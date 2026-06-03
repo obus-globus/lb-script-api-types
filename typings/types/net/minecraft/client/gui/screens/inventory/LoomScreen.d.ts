@@ -38,6 +38,7 @@ export class LoomScreen extends AbstractContainerScreen<LoomMenu> {
     // private extractBannerOnButton(graphics: GuiGraphicsExtractor, posX: number, posY: number, bannerPatternSprite: TextureAtlasSprite): void;
     hasClickedOutside(mx: number, my: number, xo: number, yo: number): boolean;
     init(): void;
+    init(width: number, height: number): void;
     // private isScrollBarActive(): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;

@@ -9,6 +9,7 @@ export class ZCompressorInputStream extends LZWInputStream {
     // private maxCodeSize: number;
     // private totalCodesRead: number;
     addEntry(arg0: number, arg1: number): number;
+    addEntry(arg0: number, arg1: number, arg2: number): number;
     // private clearEntries(): void;
     decompressNextSymbol(): number;
     // private reAlignReading(): void;

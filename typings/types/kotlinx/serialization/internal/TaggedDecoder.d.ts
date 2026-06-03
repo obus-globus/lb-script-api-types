@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../kotlin/jvm/functions/Function0.d.ts'
 import type { DeserializationStrategy } from '../../../kotlinx/serialization/DeserializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
@@ -44,6 +43,7 @@ export abstract class TaggedDecoder<Tag extends Object | number | string | boole
     decodeSequentially(): boolean;
     decodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
+    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
     protected decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
@@ -66,5 +66,5 @@ export abstract class TaggedDecoder<Tag extends Object | number | string | boole
     endStructure(descriptor: SerialDescriptor): void;
     protected popTag(): Tag;
     protected pushTag(name: Tag): void;
-    // private tagBlock<E extends Object | number | string | boolean>(tag: Tag, block: Function0<E>): E;
+    // private tagBlock<E extends Object | number | string | boolean>(tag: Tag, block: () => E): E;
 }

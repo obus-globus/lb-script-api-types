@@ -7,6 +7,7 @@ export class DFACaptureGroupLazyTransition$Single extends DFACaptureGroupLazyTra
     static create(paramtransition: DFACaptureGroupPartialTransition): DFACaptureGroupLazyTransition$Single;
     constructor(transition: DFACaptureGroupPartialTransition)
     // private transition: DFACaptureGroupPartialTransition;
+    apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode): void;
     apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode, preFinal: boolean): void;
     equals(obj: Object | null): boolean;
     getCost(): number;

@@ -8,6 +8,7 @@ export class ChecksumVerifyingInputStream extends CheckedInputStream {
     // private remaining: number;
     getBytesRemaining(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private verify(): void;
 }

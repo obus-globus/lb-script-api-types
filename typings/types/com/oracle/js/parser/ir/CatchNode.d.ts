@@ -28,5 +28,7 @@ export class CatchNode extends Statement {
     setDestructuringPattern(pattern: Expression): CatchNode;
     setException(exception: IdentNode): CatchNode;
     setExceptionCondition(exceptionCondition: Expression): CatchNode;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

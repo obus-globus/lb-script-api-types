@@ -12,5 +12,6 @@ export class CircularBufferInputStream extends FilterInputStream {
     fillBuffer(): void;
     haveBytes(arg0: number): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

@@ -12,4 +12,5 @@ export class SetVariableResponse extends Response {
     getBody(): SetVariableResponse$ResponseBody;
     hashCode(): number;
     setBody(body: SetVariableResponse$ResponseBody): SetVariableResponse;
+    setBody(body: Object): Response;
 }

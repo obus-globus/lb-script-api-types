@@ -5,6 +5,7 @@ import type { SampleStorage } from '../../../../../../net/minecraft/util/debugch
 export class PingDebugChart extends AbstractDebugChart {
     constructor(font: Font, sampleStorage: SampleStorage)
     extractAdditionalLinesAndLabels(graphics: GuiGraphicsExtractor, left: number, width: number, bottom: number): void;
+    getSampleColor(sample: number, min: number, minColor: number, mid: number, midColor: number, max: number, maxColor: number): number;
     getSampleColor(millis: number): number;
     getSampleHeight(millis: number): number;
     toDisplayString(millis: number): string;

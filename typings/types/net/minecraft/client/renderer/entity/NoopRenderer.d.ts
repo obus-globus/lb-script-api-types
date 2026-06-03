@@ -6,4 +6,5 @@ export class NoopRenderer<T extends Entity> extends EntityRenderer<T, EntityRend
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): EntityRenderState;
+    createRenderState(entity: T, partialTicks: number): EntityRenderState;
 }

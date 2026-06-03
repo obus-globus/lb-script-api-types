@@ -20,6 +20,7 @@ export class JSToObjectArrayNodeGen extends JSToObjectArrayNode {
     // private toArray_getLengthNode_: JSGetLengthNode;
     // private toArray_readNode_: ReadElementNode;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number): Object[];
+    executeObjectArray(value: Object): Object[];
     executeObjectArray(arg0Value: Object, arg1Value: number): Object[];
     // private fallbackGuard_(state_0: number, arg0Value: Object, arg1Value: number): boolean;
     // private foreignObject1Boundary(state_0: number, arg0Value: Object, arg1Value: number, foreignConvertNode__: ImportValueNode): Object[];

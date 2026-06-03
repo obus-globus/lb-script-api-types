@@ -5,6 +5,6 @@ export class KmAnnotationArgument$ULongValue extends KmAnnotationArgument$Litera
     private constructor(arg0: number)
     readonly value: number;
     equals(arg0: Object | null): boolean;
-//     getValue-s-VKNKU(): number;
- // ; invalid because of -    hashCode(): number;
+// (invalid TS: name contains '-')     getValue-s-VKNKU(): number;
+    hashCode(): number;
 }

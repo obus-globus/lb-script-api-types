@@ -11,6 +11,7 @@ import type { LevelAccessor } from '../../../../../../net/minecraft/world/level/
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -126,6 +127,7 @@ export class FallenTreeFeature extends Feature<FallenTreeConfiguration> {
     // private isOverSolidGround(level: LevelAccessor, blockPos: BlockPos): boolean;
     // private mayPlaceOn(level: LevelAccessor, blockPos: BlockPos): boolean;
     place(context: FeaturePlaceContext<FallenTreeConfiguration>): boolean;
+    place(config: FallenTreeConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     // private placeFallenLog(config: FallenTreeConfiguration, level: WorldGenLevel, random: RandomSource, logLength: number, logStartPos: BlockPos$MutableBlockPos, direction: Direction): void;
     // private placeFallenTree(config: FallenTreeConfiguration, origin: BlockPos, level: WorldGenLevel, random: RandomSource): void;
     // private placeLogBlock(config: FallenTreeConfiguration, level: WorldGenLevel, random: RandomSource, blockPos: BlockPos$MutableBlockPos, sidewaysStateModifier: (param0: BlockState) => BlockState): BlockPos;

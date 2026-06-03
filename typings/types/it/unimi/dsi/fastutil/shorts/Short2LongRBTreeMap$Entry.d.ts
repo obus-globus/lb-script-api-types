@@ -23,6 +23,7 @@ export class Short2LongRBTreeMap$Entry extends AbstractShort2LongMap$BasicEntry 
     right(): Short2LongRBTreeMap$Entry;
     right(arg0: Short2LongRBTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Short2LongRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -8,6 +8,7 @@ import type { ServerLevelAccessor } from '../../../../../../net/minecraft/world/
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { EndSpikeFeature$EndSpike } from '../../../../../../net/minecraft/world/level/levelgen/feature/EndSpikeFeature$EndSpike.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
@@ -120,5 +121,6 @@ export class EndSpikeFeature extends Feature<EndSpikeConfiguration> {
     static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => kotlin.Boolean;
     constructor(codec: Codec<EndSpikeConfiguration>)
     place(context: FeaturePlaceContext<EndSpikeConfiguration>): boolean;
+    place(config: EndSpikeConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     // private placeSpike(level: ServerLevelAccessor, random: RandomSource, config: EndSpikeConfiguration, spike: EndSpikeFeature$EndSpike): void;
 }

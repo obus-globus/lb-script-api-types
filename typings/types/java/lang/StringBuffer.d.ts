@@ -36,6 +36,7 @@ export class StringBuffer extends AbstractStringBuilder implements Serializable,
     codePointBefore(arg0: number): number;
     codePointCount(arg0: number, arg1: number): number;
     codePoints(): IntStream;
+    compareTo(arg0: AbstractStringBuilder): number;
     compareTo(arg0: StringBuffer): number;
     delete(arg0: number, arg1: number): StringBuffer;
     deleteCharAt(arg0: number): StringBuffer;

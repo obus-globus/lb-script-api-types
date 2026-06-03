@@ -12,5 +12,6 @@ export class AbstractDouble2DoubleMap$BasicEntry extends Object implements Doubl
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

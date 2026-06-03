@@ -12,5 +12,6 @@ export class AbstractReference2CharMap$BasicEntry<K extends Object | number | st
     hashCode(): number;
     setValue(arg0: string): string;
     setValue(arg0: string): string;
+    setValue(arg0: string): string;
     toString(): string;
 }

@@ -15,6 +15,7 @@ export class DisplayRenderer$TextDisplayRenderer extends DisplayRenderer<Display
     constructor(context: EntityRendererProvider$Context)
     readonly font: Font;
     createRenderState(): TextDisplayEntityRenderState;
+    createRenderState(entity: Display$TextDisplay, partialTicks: number): TextDisplayEntityRenderState;
     extractRenderState(entity: Display$TextDisplay, state: TextDisplayEntityRenderState, partialTicks: number): void;
     // private splitLines(input: Component, width: number): Display$TextDisplay$CachedInfo;
     submitInner(state: TextDisplayEntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, interpolationProgress: number): void;

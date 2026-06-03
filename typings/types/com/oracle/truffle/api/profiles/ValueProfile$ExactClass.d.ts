@@ -18,4 +18,5 @@ export class ValueProfile$ExactClass extends ValueProfile {
     profile<T extends Object | number | string | boolean>(value: T): T;
     reset(): void;
     toString(): string;
+    toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;
 }

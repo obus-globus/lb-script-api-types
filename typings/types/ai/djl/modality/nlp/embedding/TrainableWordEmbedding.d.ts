@@ -18,8 +18,11 @@ export class TrainableWordEmbedding extends Embedding<string> implements WordEmb
     private constructor(arg0: NDArray, arg1: string[], arg2: SparseFormat)
     // private vocabulary: Vocabulary;
     decode(arg0: number[]): string;
+    embed(arg0: NDManager, arg1: string[]): NDArray;
     embed(arg0: string): number;
     embedWord(arg0: NDArray): NDArray;
+    embedWord(arg0: NDManager, arg1: number): NDArray;
+    embedWord(arg0: NDManager, arg1: string): NDArray;
     embedWord(arg0: NDManager, arg1: number): NDArray;
     embedWord(arg0: NDManager, arg1: string): NDArray;
     encode(arg0: string): number[];

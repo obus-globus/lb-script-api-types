@@ -6,8 +6,10 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class URLStreamHandler extends Object {
     constructor()
     equals(arg0: URL, arg1: URL): boolean;
+    equals(other: Object | null): boolean;
     getDefaultPort(): number;
     getHostAddress(arg0: URL): InetAddress;
+    hashCode(): number;
     hashCode(arg0: URL): number;
     hostsEqual(arg0: URL, arg1: URL): boolean;
     openConnection(arg0: URL): URLConnection;

@@ -38,5 +38,7 @@ export class CallNode extends OptionalExpression {
     isTaggedTemplateLiteral(): boolean;
     setArgs(args: Expression[]): CallNode;
     setFunction(function_: Expression): CallNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

@@ -119,6 +119,7 @@ export class VegetationPatchFeature extends Feature<VegetationPatchConfiguration
     constructor(codec: Codec<VegetationPatchConfiguration>)
     distributeVegetation(context: FeaturePlaceContext<VegetationPatchConfiguration>, level: WorldGenLevel, config: VegetationPatchConfiguration, random: RandomSource, surface: BlockPos[], xRadius: number, zRadius: number): void;
     place(context: FeaturePlaceContext<VegetationPatchConfiguration>): boolean;
+    place(config: VegetationPatchConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     placeGround(level: WorldGenLevel, config: VegetationPatchConfiguration, replaceable: (param0: BlockState) => kotlin.Boolean, random: RandomSource, belowPos: BlockPos$MutableBlockPos, depth: number): boolean;
     placeGroundPatch(level: WorldGenLevel, config: VegetationPatchConfiguration, random: RandomSource, origin: BlockPos, replaceable: (param0: BlockState) => kotlin.Boolean, xRadius: number, zRadius: number): BlockPos[];
     placeVegetation(level: WorldGenLevel, config: VegetationPatchConfiguration, generator: ChunkGenerator, random: RandomSource, vegetationPos: BlockPos): boolean;

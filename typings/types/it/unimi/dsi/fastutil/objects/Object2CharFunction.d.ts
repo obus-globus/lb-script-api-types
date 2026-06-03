@@ -30,7 +30,7 @@ import type { Reference2CharFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Reference2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ObjectFunction.d.ts'
 import type { Short2CharFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2CharFunction.d.ts'
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Object2CharFunction<K extends Object | number | string | boolean> extends Function<K, string>, ToIntFunction<K>, Object{

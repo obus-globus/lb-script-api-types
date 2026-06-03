@@ -102,7 +102,10 @@ export class ChineseCalendar extends Calendar {
     handleComputeFields(arg0: number): void;
     handleComputeMonthStart(arg0: number, arg1: number, arg2: boolean): number;
     // private handleComputeMonthStartWithLeap(arg0: number, arg1: number, arg2: number): number;
+    handleGetDateFormat(arg0: string, arg1: ULocale): DateFormat;
+    handleGetDateFormat(arg0: string, arg1: Locale): DateFormat;
     handleGetDateFormat(arg0: string, arg1: string, arg2: ULocale): DateFormat;
+    handleGetDateFormat(arg0: string, arg1: string, arg2: Locale): DateFormat;
     handleGetExtendedYear(): number;
     handleGetLimit(arg0: number, arg1: number): number;
     handleGetMonthLength(arg0: number, arg1: number): number;
@@ -119,6 +122,7 @@ export class ChineseCalendar extends Calendar {
     // private newYear(arg0: number): number;
     // private offsetMonth(arg0: number, arg1: number, arg2: number): void;
     // private readObject(arg0: ObjectInputStream): void;
+    roll(arg0: number, arg1: boolean): void;
     roll(arg0: number, arg1: number): void;
     setTemporalMonthCode(arg0: string): void;
     // private synodicMonthsBetween(arg0: number, arg1: number): number;

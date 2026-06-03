@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CancelHandler } from '../../../kotlinx/coroutines/CancelHandler.d.ts'
@@ -20,7 +19,7 @@ export class SelectImplementation<R extends Object | number | string | boolean> 
     // private findClause(clauseObject: Object): SelectImplementation$ClauseData | null;
     invoke(cause: Throwable | null): void;
     invokeOnCancellation(segment: Segment<Object>, index: number): void;
-    onTimeout(timeMillis: number, block: Function1<Object, Object>): void;
+    onTimeout(timeMillis: number, block: () => R): void;
     // private processResultAndInvokeBlockRecoveringException(clause: SelectImplementation$ClauseData, internalResult: Object | null): R;
     // private reregisterClause(clauseObject: Object): void;
     selectInRegistrationPhase(internalResult: Object | null): void;

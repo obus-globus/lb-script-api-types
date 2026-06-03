@@ -64,8 +64,11 @@ export class JSSlowArgumentsArray extends JSAbstractArgumentsArray {
     static toArrayLengthOrRangeError(paramobj: Object, paramoriginatingNode: Node): number;
     static wasIndexDisconnected(paramargumentsArray: JSDynamicObject, paramindex: number): boolean;
     private constructor()
+    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
+    getOwnHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     makeSlowArray(thisObj: JSDynamicObject): JSDynamicObject;
+    set(thisObj: JSDynamicObject, key: Object, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
     set(thisObj: JSDynamicObject, index: number, value: Object, receiver: Object, isStrict: boolean, encapsulatingNode: Node): boolean;
 }

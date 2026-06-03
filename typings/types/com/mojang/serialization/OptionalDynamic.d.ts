@@ -16,19 +16,25 @@ export class OptionalDynamic<T extends Object | number | string | boolean> exten
     constructor(arg0: DynamicOps<T>, arg1: DataResult<Dynamic<T>>)
     // private delegate: DataResult<Dynamic<T>>;
     asBoolean(): DataResult<boolean>;
+    asBoolean(arg0: boolean): boolean;
     asByteBufferOpt(): DataResult<ByteBuffer>;
     asIntStreamOpt(): DataResult<IntStream>;
     asLongStreamOpt(): DataResult<LongStream>;
     asMapOpt(): DataResult<Stream<Pair<Dynamic<T>, Dynamic<T>>>>;
+    asMapOpt(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
     asNumber(): DataResult<Number>;
+    asNumber(arg0: Number): Number;
     asStreamOpt(): DataResult<Stream<Dynamic<T>>>;
     asString(): DataResult<string>;
+    asString(arg0: string): string;
     decode(arg0: Decoder<A>): DataResult<Pair<A, T>>;
     flatMap(arg0: (param0: Dynamic<T>) => DataResult<U>): DataResult<U>;
     get(): DataResult<Dynamic<T>>;
     get(arg0: string): OptionalDynamic<T>;
     getElement(arg0: string): DataResult<T>;
+    getElement(arg0: string, arg1: T): T;
     getElementGeneric(arg0: T): DataResult<T>;
+    getElementGeneric(arg0: T, arg1: T): T;
     getGeneric(arg0: T): DataResult<T>;
     into(arg0: (param0: Dynamic<T>) => V): DataResult<V>;
     map(arg0: (param0: Dynamic<T>) => U): DataResult<U>;

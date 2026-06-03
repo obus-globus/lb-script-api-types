@@ -16,9 +16,9 @@ import type { OptionalDouble } from '../../../../java/util/OptionalDouble.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { GpuDeviceAccessor } from '../../../../net/caffeinemc/mods/sodium/mixin/core/GpuDeviceAccessor.d.ts'
-import type { GpuDeviceAccessor } from '../../../../net/irisshaders/iris/mixin/GpuDeviceAccessor.d.ts'
+import type { GpuDeviceAccessor as GpuDeviceAccessor_2 } from '../../../../net/irisshaders/iris/mixin/GpuDeviceAccessor.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export class GpuDevice extends Object implements GpuDeviceAccessor, GpuDeviceAccessor {
+export class GpuDevice extends Object implements GpuDeviceAccessor, GpuDeviceAccessor_2 {
     constructor(backend: GpuDeviceBackend)
     readonly backend: GpuDeviceBackend;
     clearPipelineCache(): void;

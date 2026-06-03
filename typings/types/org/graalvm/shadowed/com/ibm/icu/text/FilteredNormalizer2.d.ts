@@ -26,6 +26,7 @@ export class FilteredNormalizer2 extends Normalizer2 {
     hasBoundaryBefore(c: number): boolean;
     isInert(c: number): boolean;
     isNormalized(s: CharSequence): boolean;
+    normalize(src: CharSequence): string;
     normalize(src: CharSequence, dest: Appendable): Appendable;
     // private normalize(src: CharSequence, dest: Appendable, spanCondition: UnicodeSet$SpanCondition): Appendable;
     normalize(src: CharSequence, dest: StringBuilder): StringBuilder;

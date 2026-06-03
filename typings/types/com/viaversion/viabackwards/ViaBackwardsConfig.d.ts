@@ -1,5 +1,5 @@
 import type { DialogStyleConfig } from '../../../com/viaversion/viabackwards/api/DialogStyleConfig.d.ts'
-import type { ViaBackwardsConfig } from '../../../com/viaversion/viabackwards/api/ViaBackwardsConfig.d.ts'
+import type { ViaBackwardsConfig as ViaBackwardsConfig_2 } from '../../../com/viaversion/viabackwards/api/ViaBackwardsConfig.d.ts'
 import type { Config } from '../../../com/viaversion/viaversion/util/Config.d.ts'
 import type { ConfigSection } from '../../../com/viaversion/viaversion/util/ConfigSection.d.ts'
 import type { File } from '../../../java/io/File.d.ts'
@@ -7,7 +7,7 @@ import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
 import type { Logger } from '../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ViaBackwardsConfig extends Config implements ViaBackwardsConfig {
+export class ViaBackwardsConfig extends Config implements ViaBackwardsConfig_2 {
     constructor(arg0: File, arg1: Logger)
     // private addCustomEnchantsToLore: boolean;
     // private addTeamColorToPrefix: boolean;
@@ -37,6 +37,7 @@ export class ViaBackwardsConfig extends Config implements ViaBackwardsConfig {
     getDefaultConfigInputStream(): InputStream;
     getDefaultConfigURL(): URL;
     getString(arg0: ConfigSection, arg1: string, arg2: string): string;
+    getString(arg0: string, arg1: string): string;
     getUnsupportedOptions(): string[];
     handleConfig(arg0: { [key: string]: Object }): void;
     handlePingsAsInvAcknowledgements(): boolean;

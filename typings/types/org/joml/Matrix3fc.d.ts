@@ -13,6 +13,7 @@ export interface Matrix3fc extends Object{
     add(arg0: Matrix3fc, arg1: Matrix3f): Matrix3f;
     cofactor(arg0: Matrix3f): Matrix3f;
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix3fc, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: FloatBuffer): FloatBuffer;

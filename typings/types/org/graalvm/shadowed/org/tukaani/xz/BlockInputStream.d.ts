@@ -23,6 +23,7 @@ export class BlockInputStream extends InputStream {
     getUncompressedSize(): number;
     getUnpaddedSize(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(buf: number[], off: number, len: number): number;
     // private validate(): void;
 }

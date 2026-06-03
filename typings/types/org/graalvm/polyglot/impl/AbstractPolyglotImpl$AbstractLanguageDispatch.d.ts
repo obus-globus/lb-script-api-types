@@ -6,6 +6,7 @@ export abstract class AbstractPolyglotImpl$AbstractLanguageDispatch extends Abst
     constructor()
     constructor(engineImpl: AbstractPolyglotImpl)
     equals(receiver: Object, otherImpl: Object): boolean;
+    equals(other: Object | null): boolean;
     getDefaultMimeType(receiver: Object): string;
     getId(receiver: Object): string;
     getImplementationName(receiver: Object): string;
@@ -15,6 +16,7 @@ export abstract class AbstractPolyglotImpl$AbstractLanguageDispatch extends Abst
     getSourceOptions(receiver: Object): OptionDescriptor[];
     getVersion(receiver: Object): string;
     getWebsite(receiver: Object): string;
+    hashCode(): number;
     hashCode(receiver: Object): number;
     isInteractive(receiver: Object): boolean;
 }

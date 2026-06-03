@@ -31,5 +31,6 @@ export class FileFixerProgressScreen extends Screen {
     // private extractTypeProgress(graphics: GuiGraphicsExtractor, xCenter: number, y: number, progress: number): void;
     // private extractTypeText(graphics: GuiGraphicsExtractor, xCenter: number, y: number): void;
     init(): void;
+    init(width: number, height: number): void;
     shouldCloseOnEsc(): boolean;
 }

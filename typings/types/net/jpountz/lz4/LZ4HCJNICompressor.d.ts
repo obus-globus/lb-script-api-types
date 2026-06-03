@@ -5,6 +5,11 @@ export class LZ4HCJNICompressor extends LZ4Compressor {
     constructor()
     constructor(arg0: number)
     // private compressionLevel: number;
+    compress(arg0: ByteBuffer, arg1: ByteBuffer): void;
     compress(arg0: ByteBuffer, arg1: number, arg2: number, arg3: ByteBuffer, arg4: number, arg5: number): number;
+    compress(arg0: number[]): number[];
+    compress(arg0: number[], arg1: number[]): number;
+    compress(arg0: number[], arg1: number, arg2: number): number[];
+    compress(arg0: number[], arg1: number, arg2: number, arg3: number[], arg4: number): number;
     compress(arg0: number[], arg1: number, arg2: number, arg3: number[], arg4: number, arg5: number): number;
 }

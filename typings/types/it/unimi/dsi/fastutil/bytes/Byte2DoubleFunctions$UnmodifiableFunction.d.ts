@@ -6,6 +6,7 @@ export class Byte2DoubleFunctions$UnmodifiableFunction extends AbstractByte2Doub
     constructor(arg0: (param0: number) => kotlin.Double)
     // private function: (param0: number) => kotlin.Double;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

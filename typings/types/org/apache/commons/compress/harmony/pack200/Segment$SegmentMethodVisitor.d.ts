@@ -23,6 +23,7 @@ export class Segment$SegmentMethodVisitor extends MethodVisitor {
     visitLookupSwitchInsn(arg0: Label, arg1: number[], arg2: Label[]): void;
     visitMaxs(arg0: number, arg1: number): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
+    visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitParameterAnnotation(arg0: number, arg1: string, arg2: boolean): AnnotationVisitor;
     visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;

@@ -14,6 +14,7 @@ export class FractionalPartSubstitution extends NFSubstitution {
     composeRuleValue(arg0: number, arg1: number): number;
     doParse(arg0: string, arg1: ParsePosition, arg2: number, arg3: number, arg4: boolean, arg5: number, arg6: number): Number;
     doSubstitution(arg0: number, arg1: StringBuilder, arg2: number, arg3: number): void;
+    doSubstitution(arg0: number, arg1: StringBuilder, arg2: number, arg3: number): void;
     tokenChar(): string;
     transformNumber(arg0: number): number;
     transformNumber(arg0: number): number;

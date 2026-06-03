@@ -5,6 +5,7 @@ import type { SampleStorage } from '../../../../../../net/minecraft/util/debugch
 export class FpsDebugChart extends AbstractDebugChart {
     constructor(font: Font, sampleStorage: SampleStorage)
     extractAdditionalLinesAndLabels(graphics: GuiGraphicsExtractor, left: number, width: number, bottom: number): void;
+    getSampleColor(sample: number, min: number, minColor: number, mid: number, midColor: number, max: number, maxColor: number): number;
     getSampleColor(nanos: number): number;
     getSampleHeight(nanos: number): number;
     toDisplayString(nanos: number): string;

@@ -10,6 +10,7 @@ import type { XblXstsToken } from '../../../../../net/raphimc/minecraftauth/xbl/
 import type { XblResponseHandler } from '../../../../../net/raphimc/minecraftauth/xbl/responsehandler/XblResponseHandler.d.ts'
 export class XblXstsAuthorizeRequest extends PostRequest implements XblResponseHandler<XblXstsToken> {
     constructor(arg0: XblDeviceToken, arg1: XblUserToken, arg2: XblTitleToken, arg3: string)
+    handle(arg0: HttpResponse): XblXstsToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): XblXstsToken;
     handle<R extends Object | number | string | boolean>(arg0: HttpResponse): R;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;

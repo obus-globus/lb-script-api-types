@@ -9,6 +9,9 @@ export class ScreenNarrationCollector$Output extends Object implements Narration
     add(type: NarratedElementType, contents: Component[]): void;
     add(type: NarratedElementType, contents: string): void;
     add(type: NarratedElementType, contents: Component): void;
+    add(type: NarratedElementType, contents: Component[]): void;
+    add(type: NarratedElementType, contents: string): void;
     add(type: NarratedElementType, contents: NarrationThunk<Object>): void;
+    add(type: NarratedElementType, contents: Component): void;
     nest(): NarrationElementOutput;
 }

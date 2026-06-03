@@ -6,4 +6,5 @@ export class AndroidBase64Codec extends AbstractTextCodec {
     constructor()
     decode(arg0: string): number[];
     encode(arg0: number[]): string;
+    encode(arg0: string): string;
 }

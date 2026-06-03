@@ -5,5 +5,6 @@ import type { Key } from '../../../../java/security/Key.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class OctetJwkFactory<K extends Key, J extends Jwk<K>> extends AbstractFamilyJwkFactory<K, J> {
     constructor(arg0: Class<K>, arg1: Parameter<Object>[])
+    supports(arg0: JwkContext<Object>): boolean;
     supports(arg0: Key): boolean;
 }

@@ -31,6 +31,7 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     // private pendingMembers: Map<MemoryMappingTree$GlobalMemberKey, MemoryMappingTree$MemberEntry<Object>>;
     readonly srcNamespace: string;
     // private srcNsMap: number;
+    accept(arg0: MappingVisitor): void;
     accept(arg0: MappingVisitor, arg1: VisitOrder): void;
     // private addPendingClass(arg0: MemoryMappingTree$ClassEntry): void;
     // private addPendingMember(arg0: MemoryMappingTree$MemberEntry<Object>): void;

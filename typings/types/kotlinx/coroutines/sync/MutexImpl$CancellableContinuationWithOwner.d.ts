@@ -1,6 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function3 } from '../../../kotlin/jvm/functions/Function3.d.ts'
 import type { Result } from '../../../kotlin/Result.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
@@ -19,12 +17,12 @@ export class MutexImpl$CancellableContinuationWithOwner extends Object implement
     cancel(cause: Throwable | null): boolean;
     completeResume(token: Object): void;
     initCancellability(): void;
-    invokeOnCancellation(handler: Function1<Throwable, void>): void;
+    invokeOnCancellation(handler: (param0: Throwable | null) => void): void;
     invokeOnCancellation(segment: Segment<Object>, index: number): void;
-    resume<R extends void>(value: R, onCancellation: Function3<Throwable, R, CoroutineContext, void> | null): void;
-    resume(value: void, onCancellation: Function1<Throwable, void> | null): void;
+    resume<R extends void>(value: R, onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void | null): void;
+    resume(value: void, onCancellation: (param0: Throwable) => void | null): void;
     resumeWith(result: Result<void>): void;
-    tryResume<R extends void>(value: R, idempotent: Object | null, onCancellation: Function3<Throwable, R, CoroutineContext, void> | null): Object | null;
+    tryResume<R extends void>(value: R, idempotent: Object | null, onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void | null): Object | null;
     tryResume(value: void, idempotent: Object | null): Object | null;
     tryResumeWithException(exception: Throwable): Object | null;
 }

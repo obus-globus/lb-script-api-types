@@ -15,7 +15,9 @@ export class Procompose$ProfunctorInstance<F extends K2, G extends K2> extends O
     // private p1: Profunctor<F, Profunctor$Mu>;
     // private p2: Profunctor<G, Profunctor$Mu>;
     // private cap(arg0: Procompose<F, G, A, B, E>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
+    dimap(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Procompose$Mu<F, G>, A, B>, App2<Procompose$Mu<F, G>, C, D>>;
+    dimap(arg0: () => App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
     dimap(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     dimap(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     lmap(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;

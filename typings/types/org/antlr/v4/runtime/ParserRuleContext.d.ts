@@ -29,6 +29,7 @@ export class ParserRuleContext extends RuleContext {
     getChild(arg0: number): ParseTree;
     getChildCount(): number;
     getParent(): ParserRuleContext;
+    getRuleContext(): RuleContext;
     getRuleContext<T extends ParserRuleContext>(arg0: Class<T>, arg1: number): T;
     getRuleContexts(arg0: Class<T>): T[];
     getSourceInterval(): Interval;

@@ -23,6 +23,7 @@ export class AmphibiousNodeEvaluator extends WalkNodeEvaluator {
     // private prefersShallowSwimming: boolean;
     done(): void;
     getNeighbors(neighbors: Node[], pos: Node): number;
+    getPathType(mob: Mob, pos: BlockPos): PathType;
     getPathType(context: PathfindingContext, x: number, y: number, z: number): PathType;
     getStart(): Node;
     getTarget(x: number, y: number, z: number): Target;

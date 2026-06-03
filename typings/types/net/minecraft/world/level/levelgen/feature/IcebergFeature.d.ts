@@ -6,8 +6,10 @@ import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { BlockGetter } from '../../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { LevelAccessor } from '../../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
+import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -125,6 +127,7 @@ export class IcebergFeature extends Feature<BlockStateConfiguration> {
     // private heightDependentRadiusRound(random: RandomSource, yOff: number, height: number, width: number): number;
     // private heightDependentRadiusSteep(random: RandomSource, yOff: number, height: number, width: number): number;
     place(context: FeaturePlaceContext<BlockStateConfiguration>): boolean;
+    place(config: BlockStateConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     // private removeFloatingSnowLayer(level: LevelAccessor, pos: BlockPos): void;
     // private setIcebergBlock(pos: BlockPos, level: LevelAccessor, random: RandomSource, hDiff: number, height: number, isEllipse: boolean, snowOnTop: boolean, mainBlockState: BlockState): void;
     // private signedDistanceCircle(xo: number, zo: number, origin: BlockPos, radius: number, random: RandomSource): number;

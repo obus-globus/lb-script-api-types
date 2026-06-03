@@ -16,5 +16,6 @@ export class ChannelTrafficShapingHandler extends AbstractTrafficShapingHandler 
     handlerRemoved(arg0: ChannelHandlerContext): void;
     queueSize(): number;
     // private sendAllValid(arg0: ChannelHandlerContext, arg1: number): void;
+    submitWrite(arg0: ChannelHandlerContext, arg1: Object, arg2: number, arg3: ChannelPromise): void;
     submitWrite(arg0: ChannelHandlerContext, arg1: Object, arg2: number, arg3: number, arg4: number, arg5: ChannelPromise): void;
 }

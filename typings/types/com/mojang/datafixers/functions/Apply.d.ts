@@ -17,6 +17,7 @@ export class Apply<A extends Object | number | string | boolean, B extends Objec
     eval(): (param0: DynamicOps<Object>) => B;
     hashCode(): number;
     one(arg0: PointFreeRule): Optional<PointFree<B>>;
+    toString(): string;
     toString(arg0: number): string;
     type(): Type<B>;
 }

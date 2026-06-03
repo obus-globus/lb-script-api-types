@@ -130,6 +130,7 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     getTextName(): string;
     handleError(type: CommandExceptionType, message: Message, forked: boolean, tracer: TraceCallbacks): void;
     handleError(e: CommandSyntaxException, forked: boolean, tracer: TraceCallbacks): void;
+    handleError(e: CommandSyntaxException, forked: boolean, tracer: TraceCallbacks): void;
     isPlayer(): boolean;
     isSilent(): boolean;
     levels(): ResourceKey<Level>[];
@@ -140,6 +141,7 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     sendSuccess(messageSupplier: () => Component, broadcast: boolean): void;
     sendSystemMessage(message: Component): void;
     shouldFilterMessageTo(receiver: ServerPlayer): boolean;
+    suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     withAnchor(anchor: EntityAnchorArgument$Anchor): CommandSourceStack;

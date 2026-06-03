@@ -9,5 +9,6 @@ export class VindicatorRenderer extends IllagerRenderer<Vindicator, IllagerRende
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): IllagerRenderState;
+    createRenderState(entity: Vindicator, partialTicks: number): IllagerRenderState;
     getTextureLocation(state: IllagerRenderState): Identifier;
 }

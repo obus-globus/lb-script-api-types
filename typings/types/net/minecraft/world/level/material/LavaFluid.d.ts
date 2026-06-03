@@ -37,9 +37,11 @@ export abstract class LavaFluid extends FlowingFluid {
     getDropOff(level: LevelReader): number;
     getExplosionResistance(): number;
     getFlowing(): Fluid;
+    getFlowing(amount: number, falling: boolean): FluidState;
     getPickupSound(): Optional<SoundEvent>;
     getSlopeFindDistance(level: LevelReader): number;
     getSource(): Fluid;
+    getSource(falling: boolean): FluidState;
     getSpreadDelay(level: Level, pos: BlockPos, oldFluidState: FluidState, newFluidState: FluidState): number;
     getTickDelay(level: LevelReader): number;
     // private hasFlammableNeighbours(level: LevelReader, pos: BlockPos): boolean;

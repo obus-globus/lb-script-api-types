@@ -10,6 +10,7 @@ export class WitchRenderer extends MobRenderer<Witch, WitchRenderState, WitchMod
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): WitchRenderState;
+    createRenderState(entity: Witch, partialTicks: number): WitchRenderState;
     extractRenderState(entity: Witch, state: WitchRenderState, partialTicks: number): void;
     getTextureLocation(state: WitchRenderState): Identifier;
 }

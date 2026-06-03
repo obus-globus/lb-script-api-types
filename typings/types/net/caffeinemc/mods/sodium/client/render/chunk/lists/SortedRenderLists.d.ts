@@ -8,5 +8,6 @@ export class SortedRenderLists extends Object implements ChunkRenderListIterable
     constructor(arg0: ChunkRenderList[])
     // private lists: ChunkRenderList[];
     iterator(): Iterator<ChunkRenderList>;
+    iterator(): Iterator<ChunkRenderList>;
     iterator(arg0: boolean): ReversibleObjectArrayIterator<ChunkRenderList>;
 }

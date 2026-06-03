@@ -10,13 +10,13 @@ export class ULong extends Object implements Comparable<ULong> {
     static MIN_VALUE: number;
     static SIZE_BITS: number;
     static SIZE_BYTES: number;
-//     static box-impl(paramarg0: number): ULong;
- // ; invalid because of -//     static constructor-impl(paramarg0: number): number;
- // ; invalid because of -//     static equals-impl(paramarg0: number, paramarg1: Object): boolean;
- // ; invalid because of -//     static equals-impl0(paramarg0: number, paramarg1: number): boolean;
- // ; invalid because of -//     static hashCode-impl(paramarg0: number): number;
- // ; invalid because of -//     static toString-impl(paramarg0: number): string;
- // ; invalid because of -    constructor(data: number)
+// (invalid TS: name contains '-')     static box-impl(paramarg0: number): ULong;
+// (invalid TS: name contains '-')     static constructor-impl(paramarg0: number): number;
+// (invalid TS: name contains '-')     static equals-impl(paramarg0: number, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl0(paramarg0: number, paramarg1: number): boolean;
+// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: number): number;
+// (invalid TS: name contains '-')     static toString-impl(paramarg0: number): string;
+    constructor(data: number)
     // private data: number;
     and(other: ULong): ULong;
     compareTo(other: UByte): number;

@@ -19,5 +19,7 @@ export class UnaryNode extends Expression implements Assignment<Expression> {
     isAssignment(): boolean;
     isSelfModifying(): boolean;
     setExpression(expression: Expression): UnaryNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

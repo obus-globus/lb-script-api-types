@@ -28,6 +28,7 @@ export class Product$ProductType<F extends Object | number | string | boolean, G
     // private capLeft(arg0: TypedOptic<F, F2, FT, FR>): Either<TypedOptic<Pair<F, G>, Object, FT, FR>, Type$FieldNotFoundException>;
     // private capRight(arg0: TypedOptic<G, G2, FT, FR>): TypedOptic<Pair<F, G>, Object, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;

@@ -8,6 +8,7 @@ export class OnStartupTriggeringPolicy extends AbstractTriggeringPolicy {
     static createPolicy(paramminSize: number): OnStartupTriggeringPolicy;
     private constructor(minSize: number)
     // private minSize: number;
+    initialize(): void;
     initialize(manager: RollingFileManager): void;
     isTriggeringEvent(event: LogEvent): boolean;
     toString(): string;

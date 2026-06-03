@@ -5,6 +5,6 @@ export class KmAnnotationArgument$UIntValue extends KmAnnotationArgument$Literal
     private constructor(arg0: number)
     readonly value: number;
     equals(arg0: Object | null): boolean;
-//     getValue-pVg5ArA(): number;
- // ; invalid because of -    hashCode(): number;
+// (invalid TS: name contains '-')     getValue-pVg5ArA(): number;
+    hashCode(): number;
 }

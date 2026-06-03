@@ -25,6 +25,7 @@ export class ClientChunkCache extends ChunkSource {
     storage: ClientChunkCache$Storage;
     drop(pos: ChunkPos): void;
     gatherStats(): string;
+    getChunk(x: number, z: number, loadOrGenerate: boolean): LevelChunk;
     getChunk(x: number, z: number, targetStatus: ChunkStatus, loadOrGenerate: boolean): LevelChunk;
     getLevel(): BlockGetter;
     getLightEngine(): LevelLightEngine;

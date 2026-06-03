@@ -23,6 +23,7 @@ export class Joiner extends Object {
     join(parts: (Object | null)[]): string;
     join(parts: Iterator<Object>): string;
     skipNulls(): Joiner;
+    toString(): string;
     toString(part: Object): CharSequence;
     useForNull(nullText: string): Joiner;
     withKeyValueSeparator(keyValueSeparator: string): Joiner$MapJoiner;

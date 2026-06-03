@@ -1,6 +1,7 @@
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { BitSet } from '../../../../java/util/BitSet.d.ts'
+import type { Predicate as Predicate_2 } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export abstract class CharMatcher extends Object implements Predicate<string> {
@@ -26,6 +27,7 @@ export abstract class CharMatcher extends Object implements Predicate<string> {
     static whitespace(): CharMatcher;
     constructor()
     and(other: CharMatcher): CharMatcher;
+    and(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     apply(character: string): boolean;
     collapseFrom(sequence: CharSequence, replacement: string): string;
     countIn(sequence: CharSequence): number;
@@ -39,6 +41,7 @@ export abstract class CharMatcher extends Object implements Predicate<string> {
     matchesNoneOf(sequence: CharSequence): boolean;
     negate(): CharMatcher;
     or(other: CharMatcher): CharMatcher;
+    or(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     precomputed(): CharMatcher;
     precomputedInternal(): CharMatcher;
     removeFrom(sequence: CharSequence): string;

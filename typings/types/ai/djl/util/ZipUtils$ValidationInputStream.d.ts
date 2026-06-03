@@ -11,6 +11,7 @@ export class ZipUtils$ValidationInputStream extends FilterInputStream {
     // private findEND(arg0: ByteBuffer): ZipUtils$ValidationInputStream$End;
     // private initCEN(arg0: number[]): string[];
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     validate(arg0: string[]): void;
 }

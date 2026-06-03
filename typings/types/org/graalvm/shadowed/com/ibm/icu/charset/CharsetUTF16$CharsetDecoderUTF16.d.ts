@@ -9,6 +9,7 @@ export class CharsetUTF16$CharsetDecoderUTF16 extends CharsetDecoderICU {
     // private actualBOM: number[];
     // private actualEndianXOR: number;
     // private isBOMReadYet: boolean;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private decodeTrail(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, lead: string): CoderResult;
     implReset(): void;

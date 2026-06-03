@@ -5,4 +5,6 @@ export class CharsetRecog_sbcs$CharsetRecog_IBM420_ar_rtl extends CharsetRecog_s
     constructor()
     getName(): string;
     match(det: CharsetDetector): CharsetMatch;
+    match(det: CharsetDetector, ngrams: number[], byteMap: number[]): number;
+    match(det: CharsetDetector, ngrams: number[], byteMap: number[], spaceChar: number): number;
 }

@@ -32,6 +32,8 @@ export class Byte2ShortOpenHashMap$MapEntry extends Object implements Byte2Short
     left(arg0: number): ByteShortPair;
     left(arg0: number): ByteShortPair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteShortPair;
     right(arg0: number): ByteShortPair;
     right(): number;
     right(arg0: number): ByteShortPair;

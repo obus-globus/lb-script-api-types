@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ObjectBooleanPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBooleanPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -12,6 +13,7 @@ export class ObjectBooleanImmutablePair<K extends Object | number | string | boo
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): K;
+    left(arg0: K): Pair<K, boolean>;
     right(): boolean;
     right(arg0: boolean): ObjectBooleanPair<K>;
     right(arg0: boolean): ObjectBooleanPair<K>;

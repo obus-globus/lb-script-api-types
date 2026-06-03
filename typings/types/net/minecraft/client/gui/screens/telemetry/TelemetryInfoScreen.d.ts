@@ -6,6 +6,7 @@ import type { AbstractWidget } from '../../../../../../net/minecraft/client/gui/
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
 import type { Checkbox } from '../../../../../../net/minecraft/client/gui/components/Checkbox.d.ts'
 import type { MultiLineTextWidget } from '../../../../../../net/minecraft/client/gui/components/MultiLineTextWidget.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
@@ -33,6 +34,7 @@ export class TelemetryInfoScreen extends Screen {
     // private telemetryEventWidget: TelemetryEventWidget;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private onOptInChanged(widget: AbstractWidget, value: boolean): void;
     // private openDataFolder(button: Button): void;
@@ -40,4 +42,5 @@ export class TelemetryInfoScreen extends Screen {
     // private openPrivacyStatementLink(button: Button): void;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
 }

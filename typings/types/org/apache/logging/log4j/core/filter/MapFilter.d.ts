@@ -23,6 +23,8 @@ export class MapFilter extends AbstractFilter {
     // private map: IndexedStringMap;
     filter(data: { [key: string]: string }): boolean;
     filter(event: LogEvent): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object): Filter$Result;
@@ -33,6 +35,7 @@ export class MapFilter extends AbstractFilter {
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, params: Object[]): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Message, t: Throwable): Filter$Result;
     filter(mapMessage: MapMessage<Object, Object>): boolean;
     filter(data: ReadOnlyStringMap): boolean;

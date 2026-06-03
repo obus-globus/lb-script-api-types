@@ -19,5 +19,6 @@ export class JSArrayFirstElementIndexNodeGen extends JSArrayFirstElementIndexNod
     // private withHolesUncached_arrayTypeProfile__field1_: Class<Object>;
     // private withoutHolesCached_cache: JSArrayFirstElementIndexNodeGen$WithoutHolesCachedData;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number, arg2Value: boolean): number;
+    executeLong(object: Object, length: number): number;
     executeLong(arg0Value: Object, arg1Value: number, arg2Value: boolean): number;
 }

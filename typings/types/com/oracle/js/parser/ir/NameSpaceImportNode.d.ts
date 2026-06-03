@@ -13,5 +13,7 @@ export class NameSpaceImportNode extends Node {
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBindingIdentifier(): IdentNode;
     setBindingIdentifier(bindingIdentifier: IdentNode): NameSpaceImportNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

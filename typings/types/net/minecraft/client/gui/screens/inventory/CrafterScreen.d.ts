@@ -32,6 +32,7 @@ export class CrafterScreen extends AbstractContainerScreen<CrafterMenu> {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractSlot(graphics: GuiGraphicsExtractor, slot: Slot, mouseX: number, mouseY: number): void;
     init(): void;
+    init(width: number, height: number): void;
     slotClicked(slot: Slot, slotId: number, buttonNum: number, containerInput: ContainerInput): void;
     // private updateSlotState(slotId: number, enabled: boolean): void;
 }

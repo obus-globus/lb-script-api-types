@@ -1,6 +1,8 @@
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { FieldPosition } from '../../../../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
+import type { Temporal } from '../../../../../../../java/time/temporal/Temporal.d.ts'
+import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { RelativeDateFormat$URelativeString } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/RelativeDateFormat$URelativeString.d.ts'
@@ -170,12 +172,20 @@ export class RelativeDateFormat extends DateFormat {
     // private fTimeFormat: DateFormat;
     // private fTimePattern: string;
     // private fTimeStyle: number;
+    format(date: Temporal): string;
+    format(date: Temporal, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
+    format(date: Date): string;
+    format(date: Date, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(obj: Object, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
     format(cal: Calendar, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
     // private getStringForDay(day: number): string;
     // private initCapitalizationContextInfo(locale: ULocale): void;
     // private initializeCalendar(zone: TimeZone, locale: ULocale): Calendar;
     // private initializeCombinedFormat(cal: Calendar, locale: ULocale): MessageFormat;
     // private loadDates(): void;
+    parse(text: string): Date;
+    parse(text: string, pos: ParsePosition): Date;
     parse(text: string, cal: Calendar, pos: ParsePosition): void;
     setContext(context: DisplayContext): void;
 }

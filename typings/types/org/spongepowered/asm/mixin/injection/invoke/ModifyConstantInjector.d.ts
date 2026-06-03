@@ -13,6 +13,7 @@ export class ModifyConstantInjector extends RedirectInjector {
     constructor(arg0: InjectionInfo)
     // private checkNarrowing(arg0: AbstractInsnNode[], arg1: AbstractInsnNode, arg2: Type): void;
     // private checkNarrowing(arg0: AbstractInsnNode[], arg1: AbstractInsnNode, arg2: Type, arg3: Type, arg4: number, arg5: string): void;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private injectConstantModifier(arg0: AbstractInsnNode[], arg1: AbstractInsnNode): void;
     // private injectExpandedConstantModifier(arg0: AbstractInsnNode[], arg1: JumpInsnNode): void;

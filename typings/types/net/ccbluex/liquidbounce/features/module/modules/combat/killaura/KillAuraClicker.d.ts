@@ -1,4 +1,3 @@
-import type { Function0 } from '../../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { ModuleKillAura } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.d.ts'
 import type { Rotation } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { Clicker } from '../../../../../../../../net/ccbluex/liquidbounce/utils/clicking/Clicker.d.ts'
@@ -16,5 +15,5 @@ export class KillAuraClicker extends Clicker<ModuleKillAura> {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/KillAuraClicker.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/KillAuraClicker.kt:108}
      */
-    prepareForAttack(rotation: Rotation | null, attack: Function0<boolean>): void;
+    prepareForAttack(rotation: Rotation | null, attack: () => boolean): void;
 }

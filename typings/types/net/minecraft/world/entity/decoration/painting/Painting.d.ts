@@ -10,6 +10,7 @@ import type { ClientGamePacketListener } from '../../../../../../net/minecraft/n
 import type { ClientboundAddEntityPacket } from '../../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerEntity } from '../../../../../../net/minecraft/server/level/ServerEntity.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -79,11 +80,16 @@ export class Painting extends HangingEntity {
     getPickResult(): ItemStack;
     getVariant(): Holder<PaintingVariant>;
     // private offsetForPaintingSize(size: number): number;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playPlacementSound(): void;
     readAdditionalSaveData(input: ValueInput): void;
     recreateFromPacket(packet: ClientboundAddEntityPacket): void;
     // private setVariant(variant: Holder<PaintingVariant>): void;
+    snapTo(x: number, y: number, z: number): void;
     snapTo(x: number, y: number, z: number, yRot: number, xRot: number): void;
+    snapTo(spawnPos: BlockPos, yRot: number, xRot: number): void;
+    snapTo(pos: Vec3): void;
+    snapTo(spawnPos: Vec3, yRot: number, xRot: number): void;
     trackingPosition(): Vec3;
 }

@@ -10,5 +10,6 @@ export class ChecksumHashFunction extends AbstractHashFunction implements Serial
     // private toString: string;
     bits(): number;
     newHasher(): Hasher;
+    newHasher(expectedInputSize: number): Hasher;
     toString(): string;
 }

@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
@@ -18,7 +17,7 @@ export class TypeUtils extends Object {
     static NO_EXPECTED_TYPE: SimpleType;
     static UNIT_EXPECTED_TYPE: SimpleType;
     static acceptsNullable(paramarg0: KotlinType): boolean;
-    static contains(paramarg0: KotlinType, paramarg1: Function1<UnwrappedType, boolean>): boolean;
+    static contains(paramarg0: KotlinType, paramarg1: (param0: UnwrappedType) => boolean): boolean;
     static createSubstitutedSupertype(paramarg0: KotlinType, paramarg1: KotlinType, paramarg2: TypeSubstitutor): KotlinType;
     static getClassDescriptor(paramarg0: KotlinType): ClassDescriptor;
     static getDefaultTypeProjections(paramarg0: TypeParameterDescriptor[]): TypeProjection[];
@@ -35,8 +34,8 @@ export class TypeUtils extends Object {
     static makeNullableIfNeeded(paramarg0: SimpleType, paramarg1: boolean): SimpleType;
     static makeStarProjection(paramarg0: TypeParameterDescriptor): TypeProjection;
     static makeStarProjection(paramarg0: TypeParameterDescriptor, paramarg1: ErasureTypeAttributes): TypeProjection;
-    static makeUnsubstitutedType(paramarg0: ClassifierDescriptor, paramarg1: MemberScope, paramarg2: Function1<KotlinTypeRefiner, SimpleType>): SimpleType;
-    static makeUnsubstitutedType(paramarg0: TypeConstructor, paramarg1: MemberScope, paramarg2: Function1<KotlinTypeRefiner, SimpleType>): SimpleType;
+    static makeUnsubstitutedType(paramarg0: ClassifierDescriptor, paramarg1: MemberScope, paramarg2: (param0: KotlinTypeRefiner) => SimpleType): SimpleType;
+    static makeUnsubstitutedType(paramarg0: TypeConstructor, paramarg1: MemberScope, paramarg2: (param0: KotlinTypeRefiner) => SimpleType): SimpleType;
     static noExpectedType(paramarg0: KotlinType): boolean;
     constructor()
 }

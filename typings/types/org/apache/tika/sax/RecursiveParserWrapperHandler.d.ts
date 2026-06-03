@@ -12,6 +12,7 @@ export class RecursiveParserWrapperHandler extends AbstractRecursiveParserWrappe
     // private metadataFilter: MetadataFilter;
     readonly metadataList: Metadata[];
     addContent(arg0: ContentHandler, arg1: Metadata): void;
+    endDocument(): void;
     endDocument(arg0: ContentHandler, arg1: Metadata): void;
     endEmbeddedDocument(arg0: ContentHandler, arg1: Metadata): void;
     getMetadataList(): Metadata[];

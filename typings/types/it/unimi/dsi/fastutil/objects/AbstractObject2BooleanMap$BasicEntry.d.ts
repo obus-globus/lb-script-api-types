@@ -12,5 +12,6 @@ export class AbstractObject2BooleanMap$BasicEntry<K extends Object | number | st
     hashCode(): number;
     setValue(arg0: boolean): boolean;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     toString(): string;
 }

@@ -14,6 +14,7 @@ export class PineFoliagePlacer extends FoliagePlacer {
     static CODEC: MapCodec<PineFoliagePlacer>;
     constructor(radius: IntProvider, offset: IntProvider, height: IntProvider)
     // private height: IntProvider;
+    createFoliage(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, treeHeight: number, foliageAttachment: FoliagePlacer$FoliageAttachment, foliageHeight: number, leafRadius: number): void;
     createFoliage(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, treeHeight: number, foliageAttachment: FoliagePlacer$FoliageAttachment, foliageHeight: number, leafRadius: number, offset: number): void;
     foliageHeight(random: RandomSource, treeHeight: number, config: TreeConfiguration): number;
     foliageRadius(random: RandomSource, trunkHeight: number): number;

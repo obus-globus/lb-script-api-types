@@ -12,5 +12,6 @@ export class JavaLookup extends AbstractLookup {
     // private getSystemProperty(name: string): string;
     // private getSystemProperty(prefix: string, name: string): string;
     getVirtualMachine(): string;
+    lookup(key: string): string;
     lookup(ignored: LogEvent, key: string): string;
 }

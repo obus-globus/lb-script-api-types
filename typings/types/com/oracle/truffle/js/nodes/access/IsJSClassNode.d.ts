@@ -1,3 +1,4 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -22,6 +23,7 @@ export abstract class IsJSClassNode extends JSUnaryNode {
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     doIsInstance(object: Object): boolean;
     doIsInstanceObject(object: JSDynamicObject): boolean;
+    executeBoolean(frame: VirtualFrame): boolean;
     executeBoolean(obj: Object): boolean;
     isResultAlwaysOfType(clazz: Class<Object>): boolean;
 }

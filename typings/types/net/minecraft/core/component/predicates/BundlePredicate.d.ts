@@ -23,6 +23,7 @@ export class BundlePredicate extends Record implements SingleComponentItemPredic
     hashCode(): number;
     items(): Optional<CollectionPredicate<ItemInstance, ItemPredicate>>;
     matches(components: DataComponentGetter): boolean;
+    matches(components: DataComponentGetter): boolean;
     matches(value: BundleContents): boolean;
     toString(): string;
 }

@@ -6,5 +6,6 @@ export class MarkerPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): MarkerPatternConverter;
     private constructor(options: string[])
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

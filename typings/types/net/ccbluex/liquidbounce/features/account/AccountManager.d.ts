@@ -1,5 +1,4 @@
 import type { AtomicBoolean } from '../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Result } from '../../../../../kotlin/Result.d.ts'
 import type { AlteningAccount } from '../../../../../net/ccbluex/liquidbounce/authlib/account/AlteningAccount.d.ts'
 import type { MicrosoftAccount } from '../../../../../net/ccbluex/liquidbounce/authlib/account/MicrosoftAccount.d.ts'
@@ -33,8 +32,8 @@ export class AccountManager extends Config implements EventListener {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L214 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:214}
      */
-    newMicrosoftAccount(url: Function1<string, void>): void;
-    // private newMicrosoftAccount(url: Function1<string, void>, success: Function1<MicrosoftAccount, void>, error: Function1<string, void>): void;
+    newMicrosoftAccount(url: (param0: string) => void): void;
+    // private newMicrosoftAccount(url: (param0: string) => void, success: (param0: MicrosoftAccount) => void, error: (param0: string) => void): void;
     newSessionAccount(token: string): void;
     orderAccounts(order: number[]): void;
     parent(): EventListener | null;

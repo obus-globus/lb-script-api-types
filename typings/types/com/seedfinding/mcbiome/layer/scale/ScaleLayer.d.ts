@@ -11,4 +11,5 @@ export class ScaleLayer extends IntBiomeLayer {
     getType(): ScaleLayer$Type;
     sample(arg0: number, arg1: number, arg2: number): number;
     sample(arg0: number, arg1: number, arg2: number, arg3: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
 }

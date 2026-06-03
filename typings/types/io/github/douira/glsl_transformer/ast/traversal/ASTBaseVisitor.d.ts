@@ -129,12 +129,14 @@ export abstract class ASTBaseVisitor<R extends Object | number | string | boolea
     constructor()
     // private context: ASTNode;
     aggregateResult(arg0: R, arg1: R): R;
+    aggregateResult(arg0: R, arg1: R, arg2: R): R;
     defaultResult(): R;
     enterContext(arg0: ASTNode): void;
     initialResult(): R;
     setContext(arg0: ASTNode): void;
     startVisit(arg0: ASTNode): R;
     superNodeTypeResult(): R;
+    visit(arg0: R, arg1: ASTNode): R;
     visit(arg0: ASTNode): R;
     visitAdditionAssignmentExpression(arg0: AdditionAssignmentExpression): R;
     visitAdditionExpression(arg0: AdditionExpression): R;

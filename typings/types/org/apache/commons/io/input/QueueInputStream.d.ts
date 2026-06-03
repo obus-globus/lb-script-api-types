@@ -14,5 +14,6 @@ export class QueueInputStream extends InputStream {
     getTimeout(): Duration;
     newQueueOutputStream(): QueueOutputStream;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

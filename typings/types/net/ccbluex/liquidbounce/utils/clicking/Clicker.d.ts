@@ -1,4 +1,3 @@
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -57,7 +56,7 @@ export class Clicker<T extends EventListener> extends ValueGroup implements Even
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L169 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:169}
      */
-    click(block: Function0<boolean>): void;
+    click(block: () => boolean): void;
     // private fill(): void;
     getClickAmount(tick: number): number;
     // private isEnforcedClick(tick: number): boolean;

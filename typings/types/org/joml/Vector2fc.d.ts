@@ -21,6 +21,7 @@ export interface Vector2fc extends Object{
     div(arg0: number, arg1: Vector2f): Vector2f;
     div(arg0: Vector2fc, arg1: Vector2f): Vector2f;
     dot(arg0: Vector2fc): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number): boolean;
     equals(arg0: Vector2fc, arg1: number): boolean;
     floor(arg0: Vector2f): Vector2f;

@@ -63,6 +63,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
      */
     onRegistration(): void;
     onToggled(state: boolean): boolean;
+    onToggled(state: boolean, isParentUpdate: boolean): boolean;
     parent(): EventListener | null;
     tagBy(setting: Value<Object>): void;
     toString(): string;

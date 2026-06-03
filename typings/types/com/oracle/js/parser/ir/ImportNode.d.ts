@@ -22,5 +22,7 @@ export class ImportNode extends Node {
     getModuleSpecifier(): LiteralNode<TruffleString>;
     setImportClause(importClause: ImportClauseNode): ImportNode;
     setModuleSpecifier(moduleSpecifier: LiteralNode<TruffleString>): ImportNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

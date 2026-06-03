@@ -13,6 +13,7 @@ export class ThrownTridentRenderer extends EntityRenderer<ThrownTrident, ThrownT
     constructor(context: EntityRendererProvider$Context)
     // private model: TridentModel;
     createRenderState(): ThrownTridentRenderState;
+    createRenderState(entity: ThrownTrident, partialTicks: number): ThrownTridentRenderState;
     extractRenderState(entity: ThrownTrident, state: ThrownTridentRenderState, partialTicks: number): void;
     submit(state: ThrownTridentRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

@@ -6,6 +6,7 @@ export class Char2DoubleFunctions$UnmodifiableFunction extends AbstractChar2Doub
     constructor(arg0: (param0: string) => kotlin.Double)
     // private function: (param0: string) => kotlin.Double;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

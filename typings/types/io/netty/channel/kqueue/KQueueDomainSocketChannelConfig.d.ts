@@ -15,6 +15,7 @@ export class KQueueDomainSocketChannelConfig extends KQueueChannelConfig impleme
     // private mode: DomainSocketReadMode;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReadMode(): DomainSocketReadMode;
     getReceiveBufferSize(): number;
     getSendBufferSize(): number;

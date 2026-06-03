@@ -23,6 +23,7 @@ export class InitIDVisitor extends DepthFirstTraversalRegexASTVisitor {
     leave(group: Group): void;
     leave(assertion: LookAheadAssertion): void;
     leave(assertion: LookBehindAssertion): void;
+    leave(sequence: Sequence): void;
     // private leaveSubtreeRootNode(subtree: RegexASTSubtreeRootNode): void;
     visit(atomicGroup: AtomicGroup): void;
     visit(backReference: BackReference): void;

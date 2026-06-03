@@ -16,6 +16,7 @@ export class BlockItemPacketRewriter1_21_11 extends BackwardsStructuredItemRewri
     handleItemDataComponentsToServer(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;
     // private loadDamageCondition(arg0: Map$Entry<string, Tag>[], arg1: string): KineticWeapon$Condition;
     registerPackets(): void;
+    restoreBackupData(arg0: Item): void;
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
     // private saveDamageCondition(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: KineticWeapon$Condition): void;
 }

@@ -139,6 +139,7 @@ export abstract class Monster extends PathfinderMob implements Enemy {
     getSoundSource(): SoundSource;
     getSwimSound(): SoundEvent;
     getSwimSplashSound(): SoundEvent;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     isPreventingPlayerRest(level: ServerLevel, player: Player): boolean;
     shouldDropExperience(): boolean;

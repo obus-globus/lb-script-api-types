@@ -26,6 +26,7 @@ export class JavaRegexLexer extends RegexLexer {
     // private unicode: JavaUnicodeProperties;
     boundedQuantifierMaxValue(): number;
     caseFoldClassSetAtom(classSetContents: ClassSetContents): ClassSetContents;
+    caseFoldUnfold(codePointSet: (Object | null)[]): (Object | null)[];
     caseFoldUnfold(charClass: Range[]): void;
     checkClassSetCharacter(codePoint: number): void;
     complementClassSet(codePointSet: (Object | null)[]): (Object | null)[];

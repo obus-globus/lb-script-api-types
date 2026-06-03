@@ -24,6 +24,7 @@ export class WaitingForResponseScreen extends Screen {
     // private previousScreen: Screen;
     // private ticks: number;
     init(): void;
+    init(width: number, height: number): void;
     isPauseScreen(): boolean;
     onClose(): void;
     previousScreen(): Screen;

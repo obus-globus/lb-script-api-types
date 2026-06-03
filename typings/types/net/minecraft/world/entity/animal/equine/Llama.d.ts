@@ -175,6 +175,7 @@ export class Llama extends AbstractChestedHorse implements RangedAttackMob {
     getHurtSound(source: DamageSource): SoundEvent;
     getInventoryColumns(): number;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getMaxTemper(): number;
     getPassengerAttachmentPoint(passenger: Entity, dimensions: EntityDimensions, scale: number): Vec3;
     getStrength(): number;

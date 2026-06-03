@@ -11,6 +11,7 @@ export class WindChargeRenderer extends EntityRenderer<AbstractWindCharge, Entit
     constructor(context: EntityRendererProvider$Context)
     // private model: WindChargeModel;
     createRenderState(): EntityRenderState;
+    createRenderState(entity: AbstractWindCharge, partialTicks: number): EntityRenderState;
     submit(state: EntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     xOffset(t: number): number;
 }

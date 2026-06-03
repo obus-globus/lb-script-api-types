@@ -38,6 +38,7 @@ export class StandingAndWallBlockItem extends BlockItem {
     constructor(block: Block, wallBlock: Block, attachmentDirection: Direction, properties: Item$Properties)
     // private attachmentDirection: Direction;
     // private wallBlock: Block;
+    canPlace(context: BlockPlaceContext, stateForPlacement: BlockState): boolean;
     canPlace(level: LevelReader, possibleState: BlockState, pos: BlockPos): boolean;
     getPlacementState(context: BlockPlaceContext): BlockState;
     registerBlocks(map: Map<Block, Item>, item: Item): void;

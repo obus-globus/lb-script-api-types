@@ -18,6 +18,7 @@ export class DeflaterOutputStream extends FilterOutputStream {
     deflate(): void;
     finish(): void;
     flush(): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

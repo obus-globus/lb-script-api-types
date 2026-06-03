@@ -19,11 +19,15 @@ export class FloatIntMutablePair extends Object implements FloatIntPair, Seriali
     key(arg0: number): FloatIntPair;
     key(arg0: number): FloatIntPair;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatIntPair;
     left(arg0: number): FloatIntMutablePair;
     left(): number;
     left(arg0: number): FloatIntPair;
     left(arg0: number): FloatIntPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatIntPair;
     right(arg0: number): FloatIntMutablePair;
     right(): number;
     right(arg0: number): FloatIntPair;

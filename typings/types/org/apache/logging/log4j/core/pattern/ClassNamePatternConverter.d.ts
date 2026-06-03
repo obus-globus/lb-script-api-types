@@ -7,6 +7,7 @@ export class ClassNamePatternConverter extends NamePatternConverter implements L
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): ClassNamePatternConverter;
     private constructor(options: string[])
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     requiresLocation(): boolean;
 }

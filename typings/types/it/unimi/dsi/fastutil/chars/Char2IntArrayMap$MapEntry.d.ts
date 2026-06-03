@@ -32,6 +32,8 @@ export class Char2IntArrayMap$MapEntry extends Object implements Char2IntMap$Ent
     left(arg0: string): CharIntPair;
     left(arg0: string): CharIntPair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharIntPair;
     right(arg0: number): CharIntPair;
     right(): number;
     right(arg0: number): CharIntPair;

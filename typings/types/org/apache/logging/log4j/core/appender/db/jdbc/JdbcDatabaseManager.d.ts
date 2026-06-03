@@ -51,6 +51,7 @@ export class JdbcDatabaseManager extends AbstractDatabaseManager {
     shutdownInternal(): boolean;
     startupInternal(): void;
     // private truncate(nameKey: string, value: Object): Object;
+    writeInternal(event: LogEvent): void;
     writeInternal(event: LogEvent, serializable: Serializable): void;
     writeThrough(event: LogEvent, serializable: Serializable): void;
 }

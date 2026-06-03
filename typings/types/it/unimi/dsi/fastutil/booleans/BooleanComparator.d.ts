@@ -11,6 +11,8 @@ export interface BooleanComparator extends Comparator<boolean>, Object{
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: boolean, param1: boolean) => kotlin.Int): (param0: boolean, param1: boolean) => kotlin.Int;
     thenComparing(arg0: (param0: boolean) => kotlin.Boolean): (param0: boolean) => kotlin.Boolean;
+    thenComparing(arg0: (param0: boolean) => U): (param0: boolean) => kotlin.Boolean;
+    thenComparing(arg0: (param0: boolean) => U, arg1: (param0: U) => kotlin.Boolean): (param0: boolean) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;

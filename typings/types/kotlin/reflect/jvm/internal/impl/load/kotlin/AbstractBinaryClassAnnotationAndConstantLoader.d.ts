@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { AbstractBinaryClassAnnotationLoader } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/AbstractBinaryClassAnnotationLoader.d.ts'
 import type { AbstractBinaryClassAnnotationLoader$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/AbstractBinaryClassAnnotationLoader$Companion.d.ts'
 import type { AnnotationsContainerWithConstants } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/AnnotationsContainerWithConstants.d.ts'
@@ -25,7 +24,7 @@ export abstract class AbstractBinaryClassAnnotationAndConstantLoader<A extends O
     loadAnnotationDefaultValue(arg0: ProtoContainer, arg1: ProtoBuf$Property, arg2: KotlinType): C;
     // private loadAnnotationsAndInitializers(arg0: KotlinJvmBinaryClass): AnnotationsContainerWithConstants<A, C>;
     loadConstant(arg0: string, arg1: Object): C;
-    // private loadConstantFromProperty(arg0: ProtoContainer, arg1: ProtoBuf$Property, arg2: AnnotatedCallableKind, arg3: KotlinType, arg4: Function2<AnnotationsContainerWithConstants<A, C>, MemberSignature, C>): C;
+    // private loadConstantFromProperty(arg0: ProtoContainer, arg1: ProtoBuf$Property, arg2: AnnotatedCallableKind, arg3: KotlinType, arg4: (param0: AnnotationsContainerWithConstants<A, C>, param1: MemberSignature) => C): C;
     loadPropertyConstant(arg0: ProtoContainer, arg1: ProtoBuf$Property, arg2: KotlinType): C;
     transformToUnsignedConstant(arg0: C): C;
 }

@@ -4,6 +4,7 @@ export class AdaptiveRecvByteBufAllocator$HandleImpl extends DefaultMaxMessagesR
     constructor(null_: AdaptiveRecvByteBufAllocator$HandleImpl, arg1: number, arg2: number, arg3: number)
     // private calculator: AdaptiveCalculator;
     guess(): number;
+    lastBytesRead(): number;
     lastBytesRead(arg0: number): void;
     readComplete(): void;
 }

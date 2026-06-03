@@ -9,7 +9,9 @@ export class TheEndBiomeData$ResourceKeyHashStrategy extends Enum<TheEndBiomeDat
     static valueOf(paramarg0: string): TheEndBiomeData$ResourceKeyHashStrategy;
     static values(): (Object | null)[];
     private constructor()
+    equals(other: Object | null): boolean;
     equals(arg0: Holder<Object>, arg1: Holder<Object>): boolean;
+    hashCode(): number;
     hashCode(arg0: Holder<Object>): number;
     name(): "INSTANCE";
 }

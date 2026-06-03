@@ -10,6 +10,7 @@ import type { XblXstsToken } from '../../../../../net/raphimc/minecraftauth/xbl/
 export class MinecraftSessionStartRequest extends PostRequest implements MinecraftServicesResponseHandler<MinecraftSession> {
     constructor(arg0: PlayFabToken, arg1: string, arg2: UUID)
     constructor(arg0: XblXstsToken, arg1: PlayFabToken, arg2: string, arg3: UUID)
+    handle(arg0: HttpResponse): MinecraftSession;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftSession;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

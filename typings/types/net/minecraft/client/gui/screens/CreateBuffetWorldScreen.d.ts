@@ -32,6 +32,7 @@ export class CreateBuffetWorldScreen extends Screen {
     // private list: CreateBuffetWorldScreen$BiomeList;
     // private parent: Screen;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
     // private updateButtonValidity(): void;

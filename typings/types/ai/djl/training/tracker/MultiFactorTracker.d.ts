@@ -20,4 +20,5 @@ export class MultiFactorTracker extends Object implements Tracker {
     // private steps: number[];
     getNewValue(arg0: number): number;
     getNewValue(arg0: string, arg1: number): number;
+    getNewValue(arg0: string, arg1: number): number;
 }

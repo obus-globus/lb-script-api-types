@@ -39,6 +39,7 @@ export class CopyOnWriteFSProvider extends FileSystemProvider {
     newDirectoryStream(dir: Path[], filter: (param0: Path[]) => kotlin.Boolean): T[];
     newFileChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): FileChannel;
     newFileSystem(uri: URI, env: { [key: string]: Object | null }): FileSystem;
+    newFileSystem(arg0: Path[], arg1: { [key: string]: Object | null }): FileSystem;
     readAttributes<A extends BasicFileAttributes>(path: Path[], type: Class<A>, options: LinkOption[]): A;
     readAttributes(path: Path[], attributes: string, options: LinkOption[]): { [key: string]: Object };
     setAttribute(path: Path[], attribute: string, value: Object, options: LinkOption[]): void;

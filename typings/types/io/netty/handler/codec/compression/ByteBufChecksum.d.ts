@@ -9,4 +9,6 @@ export abstract class ByteBufChecksum extends Object implements Checksum {
     update(arg0: ByteBuf, arg1: number, arg2: number): void;
     update(arg0: ByteBuffer): void;
     update(arg0: number[]): void;
+    update(arg0: ByteBuffer): void;
+    update(arg0: number[]): void;
 }

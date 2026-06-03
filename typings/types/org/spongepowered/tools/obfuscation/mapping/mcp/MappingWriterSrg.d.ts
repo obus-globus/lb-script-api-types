@@ -10,6 +10,7 @@ export class MappingWriterSrg extends MappingWriter {
     constructor(arg0: Messager, arg1: Filer)
     formatFieldMapping(arg0: IMappingConsumer$MappingSet$Pair<MappingField>): string;
     formatMethodMapping(arg0: IMappingConsumer$MappingSet$Pair<MappingMethod>): string;
+    openFileWriter(arg0: string, arg1: string): PrintWriter;
     openFileWriter(arg0: string, arg1: ObfuscationType): PrintWriter;
     write(arg0: string, arg1: ObfuscationType, arg2: MappingField[], arg3: MappingMethod[]): void;
     writeFieldMappings(arg0: PrintWriter, arg1: MappingField[]): void;

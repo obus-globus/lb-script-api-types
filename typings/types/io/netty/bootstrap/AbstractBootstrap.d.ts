@@ -1,7 +1,7 @@
 import type { AbstractBootstrapConfig } from '../../../io/netty/bootstrap/AbstractBootstrapConfig.d.ts'
 import type { ChannelFactory } from '../../../io/netty/bootstrap/ChannelFactory.d.ts'
 import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
-import type { ChannelFactory } from '../../../io/netty/channel/ChannelFactory.d.ts'
+import type { ChannelFactory as ChannelFactory_2 } from '../../../io/netty/channel/ChannelFactory.d.ts'
 import type { ChannelFuture } from '../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelHandler } from '../../../io/netty/channel/ChannelHandler.d.ts'
 import type { ChannelOption } from '../../../io/netty/channel/ChannelOption.d.ts'
@@ -34,7 +34,7 @@ export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     channel(arg0: Class<C>): B;
     channelFactory(): ChannelFactory<C>;
     channelFactory(arg0: ChannelFactory<C>): B;
-    channelFactory(arg0: ChannelFactory<C>): B;
+    channelFactory(arg0: ChannelFactory_2<C>): B;
     clone(): B;
     protected clone(): Object;
     config(): AbstractBootstrapConfig<B, C>;

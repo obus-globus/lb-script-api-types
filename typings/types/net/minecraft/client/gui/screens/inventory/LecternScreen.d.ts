@@ -34,6 +34,7 @@ export class LecternScreen extends BookViewScreen implements MenuAccess<LecternM
     forcePage(page: number): boolean;
     getMenu(): LecternMenu;
     init(): void;
+    init(width: number, height: number): void;
     isPauseScreen(): boolean;
     onClose(): void;
     pageBack(): void;

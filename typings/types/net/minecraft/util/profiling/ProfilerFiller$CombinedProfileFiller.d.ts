@@ -14,7 +14,9 @@ export class ProfilerFiller$CombinedProfileFiller extends Object implements Prof
     addZoneValue(value: number): void;
     addZoneValue(value: number): void;
     endTick(): void;
+    incrementCounter(name: () => string): void;
     incrementCounter(name: () => string, amount: number): void;
+    incrementCounter(name: string): void;
     incrementCounter(name: string, amount: number): void;
     incrementCounter(name: () => string): void;
     incrementCounter(name: string): void;

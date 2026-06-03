@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Reference2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2FloatMap$Entry.d.ts'
 import type { ReferenceFloatPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceFloatPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -19,6 +20,9 @@ export class Reference2FloatOpenCustomHashMap$MapEntry extends Object implements
     getFloatValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ReferenceFloatPair<K>;
     right(arg0: number): ReferenceFloatPair<K>;
     right(): number;
     right(arg0: number): ReferenceFloatPair<K>;

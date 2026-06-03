@@ -36,6 +36,7 @@ export class ReportReasonSelectionScreen extends Screen {
     // private descriptionWidth(): number;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     // private listHeight(): number;
     onClose(): void;
     repositionElements(): void;

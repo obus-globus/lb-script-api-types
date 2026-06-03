@@ -8,6 +8,7 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -120,4 +121,5 @@ export class OreFeature extends Feature<OreConfiguration> {
     constructor(codec: Codec<OreConfiguration>)
     doPlace(level: WorldGenLevel, random: RandomSource, config: OreConfiguration, x0: number, x1: number, z0: number, z1: number, y0: number, y1: number, xStart: number, yStart: number, zStart: number, sizeXZ: number, sizeY: number): boolean;
     place(context: FeaturePlaceContext<OreConfiguration>): boolean;
+    place(config: OreConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
 }

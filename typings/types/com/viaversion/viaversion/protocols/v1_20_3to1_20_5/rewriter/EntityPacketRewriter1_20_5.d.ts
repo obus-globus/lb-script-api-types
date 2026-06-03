@@ -21,6 +21,7 @@ export class EntityPacketRewriter1_20_5 extends EntityRewriter<ClientboundPacket
     // private sendRangeAttributes(arg0: UserConnection, arg1: boolean): void;
     // private toMappings(arg0: RegistryEntry[]): KeyMappings;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private updateParticleFormat(arg0: Map$Entry<string, Tag>[], arg1: string): void;
     // private writeAttribute(arg0: PacketWrapper, arg1: string, arg2: number, arg3: UUID, arg4: number): void;
 }

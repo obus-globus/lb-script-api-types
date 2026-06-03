@@ -154,6 +154,7 @@ export class MushroomCow extends AbstractCow implements Shearable {
     // private getEffectsFromItemStack(itemStack: ItemStack): Optional<SuspiciousStewEffects>;
     // private getOffspringVariant(mate: MushroomCow): MushroomCow$Variant;
     getVariant(): MushroomCow$Variant;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     mobInteract(player: Player, hand: InteractionHand): InteractionResult;
     readAdditionalSaveData(input: ValueInput): void;

@@ -7,11 +7,14 @@ export class Byte2ShortFunctions$EmptyFunction extends AbstractByte2ShortFunctio
     clear(): void;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;
     equals(arg0: Object | null): boolean;
+    get(arg0: Object): number;
     get(arg0: number): number;
+    getOrDefault(arg0: Object, arg1: number): number;
     getOrDefault(arg0: number, arg1: number): number;
     hashCode(): number;
     // private readResolve(): Object;

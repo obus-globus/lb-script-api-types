@@ -6,6 +6,7 @@ export class Long2ObjectFunctions$UnmodifiableFunction<V extends Object | number
     constructor(arg0: (param0: V) => unknown)
     // private function: (param0: V) => unknown;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;

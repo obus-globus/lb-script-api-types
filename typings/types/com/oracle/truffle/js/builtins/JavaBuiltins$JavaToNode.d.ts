@@ -29,5 +29,6 @@ export abstract class JavaBuiltins$JavaToNode extends JSBuiltinNode {
     to(jsObj: Object, toType: Object, typeInterop: InteropLibrary): Object;
     // private toArray(jsObj: Object, arrayType: Object): Object;
     toNonObject(obj: Object, toType: Object, objInterop: InteropLibrary, typeInterop: InteropLibrary): Object;
+    toString(): string;
     // private toString(target: Object): TruffleString;
 }

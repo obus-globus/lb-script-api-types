@@ -22,4 +22,5 @@ export class ResourceOrTagArgument<T extends Object | number | string | boolean>
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): ResourceOrTagArgument$Result<T>;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ResourceOrTagArgument$Result<T>;
 }

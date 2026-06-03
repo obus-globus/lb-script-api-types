@@ -26,7 +26,10 @@ export class DynamicTextNode extends Record implements TextNode {
     isDynamic(): boolean;
     isDynamic(): boolean;
     key(): ParserContext$Key<(param0: string) => Component>;
+    toComponent(): Component;
+    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
+    toComponent(arg0: PlaceholderContext): Component;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: PlaceholderContext): Component;

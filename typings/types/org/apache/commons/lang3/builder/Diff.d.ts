@@ -16,4 +16,5 @@ export abstract class Diff<T extends Object | number | string | boolean> extends
     getType(): Type;
     setValue(arg0: T): T;
     toString(): string;
+    toString(arg0: string): string;
 }

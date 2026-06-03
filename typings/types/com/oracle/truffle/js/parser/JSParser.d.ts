@@ -6,8 +6,10 @@ import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSC
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface JSParser extends Evaluator, Object{
+    parseScript(context: JSContext, source: Source): ScriptNode;
     parseScript(context: JSContext, source: Source, snapshotProvider: SnapshotProvider): ScriptNode;
     parseScript(context: JSContext, source: Source, binary: ByteBuffer): ScriptNode;
+    parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean): ScriptNode;
     parseScript(context: JSContext, source: Source): ScriptNode;
     parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean): ScriptNode;
 }

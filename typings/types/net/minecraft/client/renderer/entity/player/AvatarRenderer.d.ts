@@ -6,6 +6,7 @@ import type { SubmitNodeCollector } from '../../../../../../net/minecraft/client
 import type { EntityRendererProvider$Context } from '../../../../../../net/minecraft/client/renderer/entity/EntityRendererProvider$Context.d.ts'
 import type { LivingEntityRenderer } from '../../../../../../net/minecraft/client/renderer/entity/LivingEntityRenderer.d.ts'
 import type { AvatarRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/AvatarRenderState.d.ts'
+import type { EntityRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
 import type { LivingEntityRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/LivingEntityRenderState.d.ts'
 import type { CameraRenderState } from '../../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
@@ -18,6 +19,7 @@ export class AvatarRenderer<AvatarlikeEntity extends Avatar & ClientAvatarEntity
     static isPlayerUpsideDown(paramplayer: Player): boolean;
     constructor(context: EntityRendererProvider$Context, slimSteve: boolean)
     createRenderState(): AvatarRenderState;
+    createRenderState(entity: AvatarlikeEntity, partialTicks: number): AvatarRenderState;
     // private extractCapeState(entity: AvatarlikeEntity, state: AvatarRenderState, partialTicks: number): void;
     // private extractFlightData(entity: AvatarlikeEntity, state: AvatarRenderState, partialTicks: number): void;
     extractRenderState(entity: AvatarlikeEntity, state: AvatarRenderState, partialTicks: number): void;
@@ -31,5 +33,6 @@ export class AvatarRenderer<AvatarlikeEntity extends Avatar & ClientAvatarEntity
     setupRotations(state: AvatarRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;
     shouldRenderLayers(state: AvatarRenderState): boolean;
     shouldShowName(entity: AvatarlikeEntity, distanceToCameraSq: number): boolean;
+    submitNameDisplay<S extends EntityRenderState>(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState, offset: number): void;
     submitNameDisplay(state: AvatarRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

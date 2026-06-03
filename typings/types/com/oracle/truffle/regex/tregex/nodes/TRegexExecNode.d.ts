@@ -25,6 +25,7 @@ export class TRegexExecNode extends RegexExecNode implements RegexProfile$Tracks
     readonly regexProfile: RegexProfile;
     // private runnerNode: TRegexExecNode$RunRegexSearchNode;
     // private sticky: boolean;
+    execute(frame: VirtualFrame): RegexResult;
     execute(frame: VirtualFrame, input: TruffleString, fromIndex: number, maxIndex: number, regionFrom: number, regionTo: number): RegexResult;
     getEngineLabel(): string;
     getNumberOfCaptureGroups(): number;

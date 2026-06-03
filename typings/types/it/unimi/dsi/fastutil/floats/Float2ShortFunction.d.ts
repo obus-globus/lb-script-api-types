@@ -31,7 +31,7 @@ import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceFunction.d.ts'
 import type { Short2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ShortFunction.d.ts'
 import type { DoubleToIntFunction } from '../../../../../java/util/function/DoubleToIntFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Float2ShortFunction extends Function<number, number>, DoubleToIntFunction, Object{
     andThen(arg0: (param0: number) => T): (param0: number) => T;

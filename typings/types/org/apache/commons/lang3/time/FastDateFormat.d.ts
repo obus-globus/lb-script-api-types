@@ -46,6 +46,7 @@ export class FastDateFormat extends Format implements DateParser, DatePrinter {
     format(arg0: Date): string;
     format<B extends Appendable>(arg0: Date, arg1: B): B;
     format(arg0: Date, arg1: StringBuffer): StringBuffer;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number): string;
     format<B extends Appendable>(arg0: number, arg1: B): B;
@@ -58,6 +59,7 @@ export class FastDateFormat extends Format implements DateParser, DatePrinter {
     parse(arg0: string): Date;
     parse(arg0: string, arg1: ParsePosition): Date;
     parse(arg0: string, arg1: ParsePosition, arg2: Calendar): boolean;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     toString(): string;
 }

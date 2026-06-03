@@ -11,6 +11,7 @@ export class CreeperRenderer extends MobRenderer<Creeper, CreeperRenderState, Cr
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): CreeperRenderState;
+    createRenderState(entity: Creeper, partialTicks: number): CreeperRenderState;
     extractRenderState(entity: Creeper, state: CreeperRenderState, partialTicks: number): void;
     getTextureLocation(state: CreeperRenderState): Identifier;
     getWhiteOverlayProgress(state: CreeperRenderState): number;

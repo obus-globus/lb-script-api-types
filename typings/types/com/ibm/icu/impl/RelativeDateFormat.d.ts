@@ -10,6 +10,8 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
 import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
+import type { Temporal } from '../../../../java/time/temporal/Temporal.d.ts'
+import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RelativeDateFormat extends DateFormat {
@@ -171,11 +173,19 @@ export class RelativeDateFormat extends DateFormat {
     // private fTimePattern: string;
     // private fTimeStyle: number;
     format(arg0: Calendar, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Temporal): string;
+    format(arg0: Temporal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Date): string;
+    format(arg0: Date, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     // private getStringForDay(arg0: number): string;
     // private initCapitalizationContextInfo(arg0: ULocale): void;
     // private initializeCalendar(arg0: TimeZone, arg1: ULocale): Calendar;
     // private initializeCombinedFormat(arg0: Calendar, arg1: ULocale): MessageFormat;
     // private loadDates(): void;
+    parse(arg0: string): Date;
     parse(arg0: string, arg1: Calendar, arg2: ParsePosition): void;
+    parse(arg0: string, arg1: ParsePosition): Date;
     setContext(arg0: DisplayContext): void;
 }

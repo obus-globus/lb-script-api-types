@@ -5,6 +5,7 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { CharacterIterator } from '../../../../java/text/CharacterIterator.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
     static DONE: number;
     static KIND_CHARACTER: number;
@@ -66,4 +67,6 @@ export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
     previous(): number;
     // private resetState(): void;
     setText(arg0: CharacterIterator): void;
+    setText(arg0: CharSequence): void;
+    setText(arg0: string): void;
 }

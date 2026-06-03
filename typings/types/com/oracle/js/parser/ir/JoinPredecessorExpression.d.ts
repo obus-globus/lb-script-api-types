@@ -15,5 +15,7 @@ export class JoinPredecessorExpression extends Expression {
     isAlwaysFalse(): boolean;
     isAlwaysTrue(): boolean;
     setExpression(expression: Expression): JoinPredecessorExpression;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

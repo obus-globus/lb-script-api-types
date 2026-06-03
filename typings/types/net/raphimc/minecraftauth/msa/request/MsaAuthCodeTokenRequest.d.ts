@@ -7,6 +7,7 @@ import type { MsaToken } from '../../../../../net/raphimc/minecraftauth/msa/mode
 import type { MsaResponseHandler } from '../../../../../net/raphimc/minecraftauth/msa/responsehandler/MsaResponseHandler.d.ts'
 export class MsaAuthCodeTokenRequest extends PostRequest implements MsaResponseHandler<MsaToken> {
     constructor(arg0: MsaApplicationConfig, arg1: string)
+    handle(arg0: HttpResponse): MsaToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MsaToken;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

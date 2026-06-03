@@ -17,12 +17,21 @@ export class ThreadLocalInsecureRandom extends SecureRandom {
     getAlgorithm(): string;
     nextBoolean(): boolean;
     nextBytes(arg0: number[]): void;
+    nextBytes(arg0: number[], arg1: SecureRandomParameters): void;
     nextDouble(): number;
+    nextDouble(arg0: number): number;
+    nextDouble(arg0: number, arg1: number): number;
     nextFloat(): number;
+    nextFloat(arg0: number): number;
+    nextFloat(arg0: number, arg1: number): number;
     nextGaussian(): number;
+    nextGaussian(arg0: number, arg1: number): number;
     nextInt(): number;
     nextInt(arg0: number): number;
+    nextInt(arg0: number, arg1: number): number;
     nextLong(): number;
+    nextLong(arg0: number): number;
+    nextLong(arg0: number, arg1: number): number;
     setSeed(arg0: number[]): void;
     setSeed(arg0: number): void;
 }

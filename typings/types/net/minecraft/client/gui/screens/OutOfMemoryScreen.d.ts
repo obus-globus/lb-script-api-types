@@ -20,6 +20,7 @@ export class OutOfMemoryScreen extends Screen {
     constructor()
     // private layout: HeaderAndFooterLayout;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
     shouldCloseOnEsc(): boolean;
 }

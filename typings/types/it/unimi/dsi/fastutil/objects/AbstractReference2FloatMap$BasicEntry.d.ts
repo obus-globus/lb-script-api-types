@@ -12,5 +12,6 @@ export class AbstractReference2FloatMap$BasicEntry<K extends Object | number | s
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

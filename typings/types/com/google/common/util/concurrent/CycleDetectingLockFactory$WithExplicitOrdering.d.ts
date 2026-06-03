@@ -13,6 +13,10 @@ export class CycleDetectingLockFactory$WithExplicitOrdering<E extends Enum<E>> e
     // private lockGraphNodes: Map<E, CycleDetectingLockFactory$LockGraphNode>;
     newReentrantLock(rank: E): ReentrantLock;
     newReentrantLock(rank: E, fair: boolean): ReentrantLock;
+    newReentrantLock(lockName: string): ReentrantLock;
+    newReentrantLock(lockName: string, fair: boolean): ReentrantLock;
     newReentrantReadWriteLock(rank: E): ReentrantReadWriteLock;
     newReentrantReadWriteLock(rank: E, fair: boolean): ReentrantReadWriteLock;
+    newReentrantReadWriteLock(lockName: string): ReentrantReadWriteLock;
+    newReentrantReadWriteLock(lockName: string, fair: boolean): ReentrantReadWriteLock;
 }

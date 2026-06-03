@@ -6,6 +6,7 @@ export class Float2CharFunctions$UnmodifiableFunction extends AbstractFloat2Char
     constructor(arg0: (param0: number) => kotlin.Char)
     // private function: (param0: number) => kotlin.Char;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;

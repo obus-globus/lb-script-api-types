@@ -1,6 +1,8 @@
 import type { AWTEvent } from '../../java/awt/AWTEvent.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { ItemSelectable } from '../../java/awt/ItemSelectable.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
+import type { PopupMenu } from '../../java/awt/PopupMenu.d.ts'
 import type { ItemEvent } from '../../java/awt/event/ItemEvent.d.ts'
 import type { ItemListener } from '../../java/awt/event/ItemListener.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
@@ -28,6 +30,7 @@ export class Choice extends Component implements ItemSelectable, Accessible {
     // private itemListener: ItemListener;
     // private pItems: string[];
     selectedIndex: number;
+    add(arg0: PopupMenu): void;
     add(arg0: string): void;
     addItem(arg0: string): void;
     addItemListener(arg0: ItemListener): void;
@@ -50,6 +53,7 @@ export class Choice extends Component implements ItemSelectable, Accessible {
     processEvent(arg0: AWTEvent): void;
     processItemEvent(arg0: ItemEvent): void;
     // private readObject(arg0: ObjectInputStream): void;
+    remove(arg0: MenuComponent): void;
     remove(arg0: number): void;
     remove(arg0: string): void;
     removeAll(): void;

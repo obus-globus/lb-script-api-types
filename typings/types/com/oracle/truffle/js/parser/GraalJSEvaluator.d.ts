@@ -53,8 +53,10 @@ export class GraalJSEvaluator extends Object implements JSParser {
     parseInlineScript(context: JSContext, source: Source, lexicalContextFrame: MaterializedFrame, isStrict: boolean, locationNode: Node): JavaScriptNode;
     parseJSONModule(realm: JSRealm, source: Source): AbstractModuleRecord;
     parseModule(context: JSContext, source: Source): JSModuleData;
+    parseScript(context: JSContext, source: Source): ScriptNode;
     parseScript(context: JSContext, source: Source, snapshotProvider: SnapshotProvider): ScriptNode;
     parseScript(context: JSContext, source: Source, binary: ByteBuffer): ScriptNode;
+    parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean): ScriptNode;
     parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean, argumentNames: string[]): ScriptNode;
     parseScript(context: JSContext, sourceCode: string): ScriptNode;
     parseToJSON(context: JSContext, code: string, name: string, includeLoc: boolean): string;

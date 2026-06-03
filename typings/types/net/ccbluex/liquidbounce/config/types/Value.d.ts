@@ -4,13 +4,12 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { Result } from '../../../../../kotlin/Result.d.ts'
 import type { KProperty } from '../../../../../kotlin/reflect/KProperty.d.ts'
 import type { MutableStateFlow } from '../../../../../kotlinx/coroutines/flow/MutableStateFlow.d.ts'
 import type { StateFlow } from '../../../../../kotlinx/coroutines/flow/StateFlow.d.ts'
 import type { ValueType } from '../../../../../net/ccbluex/liquidbounce/config/types/ValueType.d.ts'
-import type { Value } from '../../../../../org/graalvm/polyglot/Value.d.ts'
+import type { Value as Value_2 } from '../../../../../org/graalvm/polyglot/Value.d.ts'
 /**
  * Value based on generics and support for readable names and descriptions.
  *
@@ -66,7 +65,7 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      */
     deserializeFrom(gson: Gson, element: JsonElement): void;
     doNotIncludeAlways(): Value<T>;
-    doNotIncludeWhen(condition: Function0<boolean>): Value<T>;
+    doNotIncludeWhen(condition: () => boolean): Value<T>;
     get(): T;
     getTagValue(): Object;
     /**
@@ -99,7 +98,7 @@ export class Value<T extends Object | number | string | boolean> extends Object 
     set(t: T, apply: (param0: T) => void): void;
     setByString(string: string): void;
     setValue(u: Object | null, property: KProperty<Object>, t: T): void;
-    setValue(t: Value): Result<void>;
+    setValue(t: Value_2): Result<void>;
     toString(): string;
     type(): ValueType;
 }

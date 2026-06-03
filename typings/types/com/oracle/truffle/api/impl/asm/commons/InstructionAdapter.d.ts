@@ -99,6 +99,7 @@ export class InstructionAdapter extends MethodVisitor {
     visitLabel(label: Label): void;
     visitLdcInsn(value: Object): void;
     visitLookupSwitchInsn(dflt: Label, keys: number[], labels: Label[]): void;
+    visitMethodInsn(opcode: number, owner: string, name: string, descriptor: string): void;
     visitMethodInsn(opcodeAndSource: number, owner: string, name: string, descriptor: string, isInterface: boolean): void;
     visitMultiANewArrayInsn(descriptor: string, numDimensions: number): void;
     visitTableSwitchInsn(min: number, max: number, dflt: Label, labels: Label[]): void;

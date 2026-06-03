@@ -12,4 +12,5 @@ export class BreakpointLocationsResponse extends Response {
     getBody(): BreakpointLocationsResponse$ResponseBody;
     hashCode(): number;
     setBody(body: BreakpointLocationsResponse$ResponseBody): BreakpointLocationsResponse;
+    setBody(body: Object): Response;
 }

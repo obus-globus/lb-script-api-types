@@ -22,6 +22,7 @@ export interface Matrix4x3fc extends Object{
     cofactor3x3(arg0: Matrix3f): Matrix3f;
     cofactor3x3(arg0: Matrix4x3f): Matrix4x3f;
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix4x3fc, arg1: number): boolean;
     fma(arg0: Matrix4x3fc, arg1: number, arg2: Matrix4x3f): Matrix4x3f;
     frustumPlane(arg0: number, arg1: Vector4f): Vector4f;

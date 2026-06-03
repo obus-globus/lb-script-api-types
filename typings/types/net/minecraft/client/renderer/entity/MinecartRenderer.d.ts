@@ -9,4 +9,5 @@ export class MinecartRenderer extends AbstractMinecartRenderer<AbstractMinecart,
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context, model: ModelLayerLocation)
     createRenderState(): MinecartRenderState;
+    createRenderState(entity: AbstractMinecart, partialTicks: number): MinecartRenderState;
 }

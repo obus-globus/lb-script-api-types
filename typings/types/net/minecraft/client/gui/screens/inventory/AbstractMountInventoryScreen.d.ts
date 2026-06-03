@@ -8,6 +8,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { AbstractMountInventoryMenu } from '../../../../../../net/minecraft/world/inventory/AbstractMountInventoryMenu.d.ts'
+import type { Slot } from '../../../../../../net/minecraft/world/inventory/Slot.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export abstract class AbstractMountInventoryScreen<T extends AbstractMountInventoryMenu> extends AbstractContainerScreen<T> {
     static FOOTER_SEPARATOR: Identifier;
@@ -27,6 +28,7 @@ export abstract class AbstractMountInventoryScreen<T extends AbstractMountInvent
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractSlot(graphics: GuiGraphicsExtractor, x: number, y: number): void;
+    extractSlot(graphics: GuiGraphicsExtractor, slot: Slot, mouseX: number, mouseY: number): void;
     getBackgroundTextureLocation(): Identifier;
     getChestSlotsSpriteLocation(): Identifier;
     getSlotSpriteLocation(): Identifier;

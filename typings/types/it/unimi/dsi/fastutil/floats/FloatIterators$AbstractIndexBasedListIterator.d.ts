@@ -3,6 +3,7 @@ import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/flo
 export abstract class FloatIterators$AbstractIndexBasedListIterator extends FloatIterators$AbstractIndexBasedIterator implements FloatListIterator {
     constructor(arg0: number, arg1: number)
     add(arg0: number): void;
+    add(arg0: number): void;
     add(arg0: number, arg1: number): void;
     add(arg0: number): void;
     add(arg0: number): void;
@@ -14,6 +15,7 @@ export abstract class FloatIterators$AbstractIndexBasedListIterator extends Floa
     previousFloat(): number;
     previousIndex(): number;
     remove(): void;
+    set(arg0: number): void;
     set(arg0: number): void;
     set(arg0: number, arg1: number): void;
     set(arg0: number): void;

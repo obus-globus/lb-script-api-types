@@ -71,6 +71,9 @@ export class UTF8JsonGenerator extends JsonGeneratorImpl {
     getOutputTarget(): Object;
     writeBinary(arg0: Base64Variant, arg1: InputStream, arg2: number): number;
     writeBinary(arg0: Base64Variant, arg1: number[], arg2: number, arg3: number): void;
+    writeBinary(arg0: InputStream, arg1: number): number;
+    writeBinary(arg0: number[]): void;
+    writeBinary(arg0: number[], arg1: number, arg2: number): void;
     writeBoolean(arg0: boolean): void;
     writeEndArray(): void;
     writeEndObject(): void;
@@ -93,11 +96,16 @@ export class UTF8JsonGenerator extends JsonGeneratorImpl {
     writeRaw(arg0: string, arg1: number, arg2: number): void;
     writeRawUTF8String(arg0: number[], arg1: number, arg2: number): void;
     writeRawValue(arg0: SerializableString): void;
+    writeRawValue(arg0: string[], arg1: number, arg2: number): void;
+    writeRawValue(arg0: string): void;
+    writeRawValue(arg0: string, arg1: number, arg2: number): void;
     writeStartArray(): void;
     writeStartArray(arg0: Object): void;
     writeStartArray(arg0: Object, arg1: number): void;
+    writeStartArray(arg0: number): void;
     writeStartObject(): void;
     writeStartObject(arg0: Object): void;
+    writeStartObject(arg0: Object, arg1: number): void;
     writeString(arg0: SerializableString): void;
     writeString(arg0: Reader, arg1: number): void;
     writeString(arg0: string[], arg1: number, arg2: number): void;

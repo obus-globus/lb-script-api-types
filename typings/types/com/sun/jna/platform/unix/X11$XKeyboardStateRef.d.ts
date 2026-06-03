@@ -26,4 +26,5 @@ export class X11$XKeyboardStateRef extends Structure implements Structure$ByRefe
     key_click_percent: number;
     led_mask: NativeLong;
     toString(): string;
+    toString(arg0: boolean): string;
 }

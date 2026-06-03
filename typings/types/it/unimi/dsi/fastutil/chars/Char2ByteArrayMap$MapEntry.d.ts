@@ -32,6 +32,8 @@ export class Char2ByteArrayMap$MapEntry extends Object implements Char2ByteMap$E
     left(arg0: string): CharBytePair;
     left(arg0: string): CharBytePair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharBytePair;
     right(arg0: number): CharBytePair;
     right(): number;
     right(arg0: number): CharBytePair;

@@ -1,5 +1,5 @@
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
-import type { BigDecimal } from '../../../../../../../java/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../../../../java/math/BigDecimal.d.ts'
 import type { BigInteger } from '../../../../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
@@ -21,7 +21,7 @@ export class BigDecimal extends Number implements Serializable, Comparable<BigDe
     static valueOf(paramlint: number): BigDecimal;
     static valueOf(paramlint: number, paramscale: number): BigDecimal;
     private constructor()
-    constructor(bd: BigDecimal)
+    constructor(bd: BigDecimal_2)
     constructor(bi: BigInteger)
     constructor(bi: BigInteger, scale: number)
     constructor(inchars: string[])
@@ -85,7 +85,7 @@ export class BigDecimal extends Number implements Serializable, Comparable<BigDe
     signum(): number;
     subtract(rhs: BigDecimal): BigDecimal;
     subtract(rhs: BigDecimal, set: MathContext): BigDecimal;
-    toBigDecimal(): BigDecimal;
+    toBigDecimal(): BigDecimal_2;
     toBigInteger(): BigInteger;
     toBigIntegerExact(): BigInteger;
     toCharArray(): string[];

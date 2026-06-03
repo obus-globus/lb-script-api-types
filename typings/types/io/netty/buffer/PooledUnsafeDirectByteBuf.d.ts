@@ -7,6 +7,9 @@ import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPo
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
+import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
+import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 export class PooledUnsafeDirectByteBuf extends PooledByteBuf<ByteBuffer> {
     private constructor(arg0: ObjectPool$Handle<PooledUnsafeDirectByteBuf>, arg1: number)
     // private memoryAddress: number;
@@ -32,10 +35,16 @@ export class PooledUnsafeDirectByteBuf extends PooledByteBuf<ByteBuffer> {
     // private addr(arg0: number): number;
     array(): number[];
     arrayOffset(): number;
+    copy(): ByteBuf;
     copy(arg0: number, arg1: number): ByteBuf;
+    getBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    getBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     getBytes(arg0: number, arg1: OutputStream, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
+    getBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
+    getBytes(arg0: number, arg1: GatheringByteChannel, arg2: number): number;
+    getBytes(arg0: number, arg1: number[]): ByteBuf;
     getBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     hasArray(): boolean;
     hasMemoryAddress(): boolean;
@@ -46,9 +55,14 @@ export class PooledUnsafeDirectByteBuf extends PooledByteBuf<ByteBuffer> {
     memoryAddress(): number;
     newInternalNioBuffer(arg0: ByteBuffer): ByteBuffer;
     newSwappedByteBuf(): SwappedByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     setBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     setBytes(arg0: number, arg1: InputStream, arg2: number): number;
     setBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
+    setBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
+    setBytes(arg0: number, arg1: ScatteringByteChannel, arg2: number): number;
+    setBytes(arg0: number, arg1: number[]): ByteBuf;
     setBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     setZero(arg0: number, arg1: number): ByteBuf;
     writeZero(arg0: number): ByteBuf;

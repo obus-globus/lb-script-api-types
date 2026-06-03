@@ -1,5 +1,6 @@
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { Reader } from '../../../java/io/Reader.d.ts'
+import type { CharBuffer } from '../../../java/nio/CharBuffer.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Preprocessor } from '../../../org/anarres/cpp/Preprocessor.d.ts'
 export class CppReader extends Reader implements Closeable {
@@ -15,6 +16,8 @@ export class CppReader extends Reader implements Closeable {
     close(): void;
     getPreprocessor(): Preprocessor;
     read(): number;
+    read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
     // private refill(): boolean;
 }

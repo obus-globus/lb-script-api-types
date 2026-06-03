@@ -16,6 +16,7 @@ export class ChickenRenderer extends MobRenderer<Chicken, ChickenRenderState, Ch
     constructor(context: EntityRendererProvider$Context)
     // private models: { [key in ChickenVariant$ModelType]: AdultAndBabyModelPair<ChickenModel> };
     createRenderState(): ChickenRenderState;
+    createRenderState(entity: Chicken, partialTicks: number): ChickenRenderState;
     extractRenderState(entity: Chicken, state: ChickenRenderState, partialTicks: number): void;
     getTextureLocation(state: ChickenRenderState): Identifier;
     submit(state: ChickenRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

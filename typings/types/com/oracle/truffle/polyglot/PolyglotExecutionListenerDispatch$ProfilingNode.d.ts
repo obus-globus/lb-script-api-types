@@ -14,6 +14,7 @@ export class PolyglotExecutionListenerDispatch$ProfilingNode extends PolyglotExe
     // private invokeExceptionAllocate(inputValues: Object[], result: Throwable): void;
     invokeExceptionAllocate(inputValues: Object[], e: Throwable): void;
     // private invokeReturnAllocate(inputValues: Object[], result: Object): void;
+    invokeReturnAllocate(inputValues: Object[], returnValue: Object): void;
     onInputValue(frame: VirtualFrame, inputContext: EventContext, inputIndex: number, inputValue: Object): void;
     onReturnExceptional(frame: VirtualFrame, exception: Throwable): void;
     onReturnValue(frame: VirtualFrame, result: Object): void;

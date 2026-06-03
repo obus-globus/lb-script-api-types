@@ -14,6 +14,7 @@ export class ModifyArgInjector extends InvokeInjector {
     // private singleArgMode: boolean;
     checkTarget(arg0: AbstractInsnNode[]): void;
     findArgIndex(arg0: AbstractInsnNode[], arg1: Type[]): number;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     injectAtInvoke(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private injectMultiArgHandler(arg0: AbstractInsnNode[], arg1: Target$Extension, arg2: Type[], arg3: number, arg4: number, arg5: AbstractInsnNode[], arg6: boolean): void;

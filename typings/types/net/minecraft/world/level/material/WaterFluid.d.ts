@@ -34,9 +34,11 @@ export abstract class WaterFluid extends FlowingFluid {
     getDropOff(level: LevelReader): number;
     getExplosionResistance(): number;
     getFlowing(): Fluid;
+    getFlowing(amount: number, falling: boolean): FluidState;
     getPickupSound(): Optional<SoundEvent>;
     getSlopeFindDistance(level: LevelReader): number;
     getSource(): Fluid;
+    getSource(falling: boolean): FluidState;
     getTickDelay(level: LevelReader): number;
     isSame(other: Fluid): boolean;
 }

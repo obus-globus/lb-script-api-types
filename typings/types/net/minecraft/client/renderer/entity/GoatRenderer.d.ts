@@ -10,6 +10,7 @@ export class GoatRenderer extends AgeableMobRenderer<Goat, GoatRenderState, Goat
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): GoatRenderState;
+    createRenderState(entity: Goat, partialTicks: number): GoatRenderState;
     extractRenderState(entity: Goat, state: GoatRenderState, partialTicks: number): void;
     getTextureLocation(state: GoatRenderState): Identifier;
 }

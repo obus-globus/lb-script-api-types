@@ -15,5 +15,6 @@ export class Deflate64CompressorInputStream extends CompressorInputStream implem
     // private closeDecoder(): void;
     getCompressedCount(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

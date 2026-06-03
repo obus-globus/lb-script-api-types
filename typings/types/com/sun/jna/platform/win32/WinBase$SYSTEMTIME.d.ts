@@ -32,4 +32,5 @@ export class WinBase$SYSTEMTIME extends Structure {
     fromCalendar(arg0: Calendar): void;
     toCalendar(): Calendar;
     toString(): string;
+    toString(arg0: boolean): string;
 }

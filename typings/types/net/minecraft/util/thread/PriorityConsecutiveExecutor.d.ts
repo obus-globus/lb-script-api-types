@@ -6,6 +6,7 @@ import type { AbstractConsecutiveExecutor } from '../../../../net/minecraft/util
 import type { StrictQueue$RunnableWithPriority } from '../../../../net/minecraft/util/thread/StrictQueue$RunnableWithPriority.d.ts'
 export class PriorityConsecutiveExecutor extends AbstractConsecutiveExecutor<StrictQueue$RunnableWithPriority> {
     constructor(priorityCount: number, executor: Executor, name: string)
+    scheduleWithResult(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
     scheduleWithResult(priority: number, futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
     wrapRunnable(runnable: () => void): StrictQueue$RunnableWithPriority;
 }

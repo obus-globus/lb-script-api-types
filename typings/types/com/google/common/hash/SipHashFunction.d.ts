@@ -12,5 +12,6 @@ export class SipHashFunction extends AbstractHashFunction implements Serializabl
     equals(object: Object | null): boolean;
     hashCode(): number;
     newHasher(): Hasher;
+    newHasher(expectedInputSize: number): Hasher;
     toString(): string;
 }

@@ -9,4 +9,5 @@ export class GetIteratorDirectNodeGen$Uncached extends GetIteratorDirectNode imp
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Node, arg1Value: Object): IteratorRecord;
+    execute(iterator: Object): IteratorRecord;
 }

@@ -17,6 +17,7 @@ export abstract class AbstractFileFilter extends Object implements PathVisitor, 
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
     and(arg0: IOFileFilter): IOFileFilter;
     append(arg0: Object[], arg1: StringBuilder): void;
     append(arg0: (Object | null)[], arg1: StringBuilder): void;

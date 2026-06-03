@@ -19,5 +19,6 @@ export class ObjectLiteralNode$ObjectLiteralSpreadMemberNode extends ObjectLiter
     // private toObjectNode: JSToObjectNode;
     // private valueNode: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, target: JSObject, realm: JSRealm): void;
 }

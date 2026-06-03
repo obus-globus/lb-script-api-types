@@ -1,3 +1,4 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { InstrumentableNode } from '../../../../../../com/oracle/truffle/api/instrumentation/InstrumentableNode.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -31,6 +32,7 @@ export abstract class JSLeftShiftConstantNode extends JSUnaryNode {
     doInteger(a: number): number;
     doOverloaded(a: JSOverloadedOperatorsObject, overloadedOperatorNode: JSOverloadedBinaryNode): Object;
     doSafeInteger(a: SafeInteger): number;
+    executeInt(frame: VirtualFrame): number;
     executeInt(a: Object): number;
     expressionToString(): string;
     getOverloadedOperatorName(): TruffleString;

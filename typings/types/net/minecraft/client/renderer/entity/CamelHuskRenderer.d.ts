@@ -10,6 +10,7 @@ export class CamelHuskRenderer extends MobRenderer<Camel, CamelRenderState, Came
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): CamelRenderState;
+    createRenderState(entity: Camel, partialTicks: number): CamelRenderState;
     extractRenderState(entity: Camel, state: CamelRenderState, partialTicks: number): void;
     getTextureLocation(state: CamelRenderState): Identifier;
 }

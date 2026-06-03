@@ -24,6 +24,7 @@ export interface Vector4fc extends Object{
     div(arg0: Vector4fc, arg1: Vector4f): Vector4f;
     dot(arg0: number, arg1: number, arg2: number, arg3: number): number;
     dot(arg0: Vector4fc): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     equals(arg0: Vector4fc, arg1: number): boolean;
     floor(arg0: Vector4f): Vector4f;

@@ -26,6 +26,7 @@ export class RealmsLongRunningMcoConnectTaskScreen extends RealmsLongRunningMcoT
     // private task: LongRunningTask;
     cancel(): void;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
     tick(): void;
 }

@@ -7,8 +7,10 @@ export class NNExampleModelDetector extends TrainedModelDetector {
     constructor()
     constructor(arg0: File)
     constructor(arg0: Path[])
+    loadDefaultModels(arg0: File): void;
     loadDefaultModels(arg0: InputStream): void;
     loadDefaultModels(arg0: ClassLoader): void;
+    loadDefaultModels(arg0: Path[]): void;
     // private readDescription(arg0: NNTrainedModelBuilder, arg1: string): void;
     // private readNNParams(arg0: NNTrainedModelBuilder, arg1: string): void;
 }

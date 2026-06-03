@@ -25,6 +25,7 @@ export class RealmsParentalConsentScreen extends RealmsScreen {
     // private textWidget: MultiLineTextWidget;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

@@ -12,4 +12,5 @@ export class BreakpointEvent extends Event {
     getBody(): BreakpointEvent$EventBody;
     hashCode(): number;
     setBody(body: BreakpointEvent$EventBody): BreakpointEvent;
+    setBody(body: Object): Event;
 }

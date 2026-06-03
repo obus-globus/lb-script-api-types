@@ -30,6 +30,7 @@ export class LZMAOutputStream extends FinishableOutputStream {
     flush(): void;
     getProps(): number;
     getUncompressedSize(): number;
+    write(arg0: number[]): void;
     write(buf: number[], off: number, len: number): void;
     write(b: number): void;
 }

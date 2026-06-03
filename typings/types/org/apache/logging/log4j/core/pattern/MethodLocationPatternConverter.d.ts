@@ -7,6 +7,7 @@ export class MethodLocationPatternConverter extends LogEventPatternConverter imp
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): MethodLocationPatternConverter;
     private constructor()
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     requiresLocation(): boolean;
 }

@@ -10,6 +10,7 @@ export class OcelotRenderer extends AgeableMobRenderer<Ocelot, FelineRenderState
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): FelineRenderState;
+    createRenderState(entity: Ocelot, partialTicks: number): FelineRenderState;
     extractRenderState(entity: Ocelot, state: FelineRenderState, partialTicks: number): void;
     getTextureLocation(state: FelineRenderState): Identifier;
 }

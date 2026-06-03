@@ -12,4 +12,5 @@ export class CapabilitiesEvent extends Event {
     getBody(): CapabilitiesEvent$EventBody;
     hashCode(): number;
     setBody(body: CapabilitiesEvent$EventBody): CapabilitiesEvent;
+    setBody(body: Object): Event;
 }

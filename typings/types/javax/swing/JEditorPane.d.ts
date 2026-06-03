@@ -2,6 +2,7 @@ import type { Component } from '../../java/awt/Component.d.ts'
 import type { Dimension } from '../../java/awt/Dimension.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
+import type { Reader } from '../../java/io/Reader.d.ts'
 import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
 import type { HttpURLConnection } from '../../java/net/HttpURLConnection.d.ts'
 import type { URL } from '../../java/net/URL.d.ts'
@@ -75,6 +76,7 @@ export class JEditorPane extends JTextComponent {
     getScrollableTracksViewportWidth(): boolean;
     getStream(arg0: URL): InputStream;
     getText(): string;
+    getText(arg0: number, arg1: number): string;
     getUIClassID(): string;
     // private handleConnectionProperties(arg0: URLConnection): void;
     // private handlePostData(arg0: HttpURLConnection, arg1: Object): void;
@@ -82,6 +84,7 @@ export class JEditorPane extends JTextComponent {
     paramString(): string;
     read(arg0: InputStream, arg1: Document): void;
     read(arg0: InputStream, arg1: Object): void;
+    read(arg0: Reader, arg1: Object): void;
     removeHyperlinkListener(arg0: HyperlinkListener): void;
     replaceSelection(arg0: string): void;
     scrollToReference(arg0: string): void;

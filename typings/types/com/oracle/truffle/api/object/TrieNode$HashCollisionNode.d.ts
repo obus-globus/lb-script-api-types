@@ -6,8 +6,11 @@ export class TrieNode$HashCollisionNode<K extends Object | number | string | boo
     // private entries: Object[];
     // private hashcode: number;
     entries(): Object[];
+    find(key: K, hash: number): E;
     find(key: K, hash: number, shift: number): E;
     // private findIndex(key: K): number;
+    put(key: K, hash: number, entry: E): TrieNode<K, V, E>;
     put(key: K, hash: number, entry: E, shift: number): TrieNode<K, V, E>;
+    remove(key: K, hash: number): TrieNode<K, V, E>;
     remove(key: K, hash: number, shift: number): TrieNode<K, V, E>;
 }

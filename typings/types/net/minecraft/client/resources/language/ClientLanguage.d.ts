@@ -17,7 +17,9 @@ export class ClientLanguage extends Language implements ClientLanguageAccessor {
     private constructor(storage: { [key: string]: string }, defaultRightToLeft: boolean)
     readonly defaultRightToLeft: boolean;
     storage: { [key: string]: string };
+    getOrDefault(elementId: string): string;
     getOrDefault(key: string, defaultValue: string): string;
+    getVisualOrder(lines: FormattedText[]): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
     getVisualOrder(logicalOrderText: FormattedText): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
     has(key: string): boolean;
     // private iris$lookupOverriddenEntry(arg0: string): string;

@@ -39,5 +39,7 @@ export class LiteralNode$ArrayLiteralNode extends LiteralNode<Expression[]> impl
     isArray(): boolean;
     // private setValue(lc: LexicalContext, value: Expression[]): LiteralNode$ArrayLiteralNode;
     // private setValue(lc: LexicalContext, value: Expression[]): LiteralNode$ArrayLiteralNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

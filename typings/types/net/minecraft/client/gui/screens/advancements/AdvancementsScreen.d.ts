@@ -49,6 +49,7 @@ export class AdvancementsScreen extends Screen implements ClientAdvancements$Lis
     getAdvancementWidget(node: AdvancementNode): AdvancementWidget;
     // private getTab(node: AdvancementNode): AdvancementTab;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;

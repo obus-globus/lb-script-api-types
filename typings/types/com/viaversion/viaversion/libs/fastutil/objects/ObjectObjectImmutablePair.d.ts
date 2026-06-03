@@ -17,8 +17,10 @@ export class ObjectObjectImmutablePair<K extends Object | number | string | bool
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left(): K;
+    left(arg0: K): Pair<K, V>;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     right(): V;
+    right(arg0: V): Pair<K, V>;
     second<R extends Object | number | string | boolean>(): R;
     second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     toString(): string;

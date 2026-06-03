@@ -6,6 +6,7 @@ export abstract class AbstractPolyglotImpl$AbstractSourceSectionDispatch extends
     constructor()
     constructor(engineImpl: AbstractPolyglotImpl)
     equals(impl: Object, obj: Object): boolean;
+    equals(other: Object | null): boolean;
     getCharEndIndex(impl: Object): number;
     getCharIndex(impl: Object): number;
     getCharLength(impl: Object): number;
@@ -17,7 +18,9 @@ export abstract class AbstractPolyglotImpl$AbstractSourceSectionDispatch extends
     hasCharIndex(impl: Object): boolean;
     hasColumns(impl: Object): boolean;
     hasLines(impl: Object): boolean;
+    hashCode(): number;
     hashCode(impl: Object): number;
     isAvailable(impl: Object): boolean;
+    toString(): string;
     toString(impl: Object): string;
 }

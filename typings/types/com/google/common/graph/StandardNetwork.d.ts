@@ -24,6 +24,7 @@ export class StandardNetwork<N extends Object | number | string | boolean, E ext
     edgeOrder(): ElementOrder<E>;
     edges(): E[];
     edgesConnecting(nodeU: N, nodeV: N): E[];
+    edgesConnecting(endpoints: N[]): E[];
     inEdges(node: N): E[];
     incidentEdges(node: N): E[];
     incidentNodes(edge: E): N[];

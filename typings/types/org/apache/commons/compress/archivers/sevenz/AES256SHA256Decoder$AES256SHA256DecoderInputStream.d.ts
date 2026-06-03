@@ -13,5 +13,6 @@ export class AES256SHA256Decoder$AES256SHA256DecoderInputStream extends InputStr
     close(): void;
     // private init(): CipherInputStream;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

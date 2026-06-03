@@ -12,7 +12,9 @@ export class SequentialMatchers$UTF8SequentialMatchers extends SequentialMatcher
     getEnc3(): CharMatcher[];
     getEnc4(): CharMatcher[];
     getMaxBytes(): number;
+    match(c: number): number;
     match(i: number, c: number): boolean;
     size(): number;
+    toString(): string;
     toString(i: number): string;
 }

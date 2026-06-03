@@ -38,7 +38,7 @@ import type { AbstractPolyglotImpl$AbstractSourceSectionDispatch } from '../../.
 import type { AbstractPolyglotImpl$LogHandler } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$LogHandler.d.ts'
 import type { AbstractPolyglotImpl$ThreadScope } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$ThreadScope.d.ts'
 import type { ByteSequence } from '../../../../org/graalvm/polyglot/io/ByteSequence.d.ts'
-import type { FileSystem } from '../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
+import type { FileSystem as FileSystem_2 } from '../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 import type { FileSystem$Selector } from '../../../../org/graalvm/polyglot/io/FileSystem$Selector.d.ts'
 import type { MessageTransport } from '../../../../org/graalvm/polyglot/io/MessageTransport.d.ts'
 import type { ProcessHandler } from '../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
@@ -59,7 +59,7 @@ export class PolyglotImpl extends AbstractPolyglotImpl {
     // private primitiveValues: Map<Class<Object>, PolyglotValueDispatch>;
     // private sourceDispatch: PolyglotSourceDispatch;
     // private sourceSectionDispatch: PolyglotSourceSectionDispatch;
-    allowInternalResourceAccess(fileSystem: FileSystem): FileSystem;
+    allowInternalResourceAccess(fileSystem: FileSystem_2): FileSystem_2;
     asByteSequence(object: Object): ByteSequence;
     asValue(currentContext: PolyglotContextImpl, hostValue: Object): Object;
     asValue(hostValue: Object): Object;
@@ -91,19 +91,19 @@ export class PolyglotImpl extends AbstractPolyglotImpl {
     getTruffleVersion(): string;
     initialize(): void;
     isDefaultProcessHandler(processHandler: ProcessHandler): boolean;
-    isHostFileSystem(fileSystem: FileSystem): boolean;
+    isHostFileSystem(fileSystem: FileSystem_2): boolean;
     isInCurrentEngineHostCallback(engine: Object): boolean;
-    isInternalFileSystem(fileSystem: FileSystem): boolean;
+    isInternalFileSystem(fileSystem: FileSystem_2): boolean;
     loadLanguageClass(className: string): Class<Object>;
-    newCompositeFileSystem(fallbackFileSystem: FileSystem, delegates: FileSystem$Selector[]): FileSystem;
-    newDefaultFileSystem(hostTmpDir: string): FileSystem;
+    newCompositeFileSystem(fallbackFileSystem: FileSystem_2, delegates: FileSystem$Selector[]): FileSystem_2;
+    newDefaultFileSystem(hostTmpDir: string): FileSystem_2;
     newDefaultProcessHandler(): ProcessHandler;
-    newDenyIOFileSystem(): FileSystem;
-    newFileSystem(fs: FileSystem): FileSystem;
-    newIOAccess(name: string, allowHostFileAccess: boolean, allowHostSocketAccess: boolean, customFileSystem: FileSystem): Object;
+    newDenyIOFileSystem(): FileSystem_2;
+    newFileSystem(fs: FileSystem_2): FileSystem_2;
+    newIOAccess(name: string, allowHostFileAccess: boolean, allowHostSocketAccess: boolean, customFileSystem: FileSystem_2): Object;
     newLogHandler(logHandlerOrStream: Object): AbstractPolyglotImpl$LogHandler;
-    newNIOFileSystem(fileSystem: FileSystem): FileSystem;
-    newReadOnlyFileSystem(fileSystem: FileSystem): FileSystem;
+    newNIOFileSystem(fileSystem: FileSystem): FileSystem_2;
+    newReadOnlyFileSystem(fileSystem: FileSystem_2): FileSystem_2;
     newTargetTypeMapping(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => kotlin.Boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
     onEngineCreated(polyglotEngine: Object): void;
     preInitializeEngine(): void;

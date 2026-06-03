@@ -12,4 +12,5 @@ export class ThreadsResponse extends Response {
     getBody(): ThreadsResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ThreadsResponse$ResponseBody): ThreadsResponse;
+    setBody(body: Object): Response;
 }

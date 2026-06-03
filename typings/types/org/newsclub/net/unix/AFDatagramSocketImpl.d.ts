@@ -3,6 +3,7 @@ import type { DatagramPacket } from '../../../../java/net/DatagramPacket.d.ts'
 import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { NetworkInterface } from '../../../../java/net/NetworkInterface.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
+import type { SocketOption } from '../../../../java/net/SocketOption.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
@@ -55,6 +56,7 @@ export abstract class AFDatagramSocketImpl<A extends AFSocketAddress> extends Da
     getImplExtensions(): AFSocketImplExtensions<A>;
     getLocalPort1(): number;
     getLocalSocketAddress(): A;
+    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
     getOption(arg0: number): Object;
     getRemotePort(): number;
     getRemoteSocketAddress(): A;
@@ -75,6 +77,7 @@ export abstract class AFDatagramSocketImpl<A extends AFSocketAddress> extends Da
     // private recv(arg0: DatagramPacket, arg1: number): void;
     send(arg0: DatagramPacket): void;
     send(arg0: ByteBuffer, arg1: SocketAddress): number;
+    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
     setOption(arg0: number, arg1: Object): void;
     setSocketAddress(arg0: AFSocketAddress): void;
     setTTL(arg0: number): void;

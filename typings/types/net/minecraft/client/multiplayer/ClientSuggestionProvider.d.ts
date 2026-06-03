@@ -80,6 +80,7 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     registryAccess(): RegistryAccess;
     sendError(arg0: Component): void;
     sendFeedback(arg0: Component): void;
+    suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
 }

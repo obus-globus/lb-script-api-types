@@ -37,6 +37,7 @@ export class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDescriptor
     getTypeTable(): TypeTable;
     getUnderlyingType(): SimpleType;
     getVersionRequirementTable(): VersionRequirementTable;
+    initialize(arg0: TypeParameterDescriptor[]): void;
     initialize(arg0: TypeParameterDescriptor[], arg1: SimpleType, arg2: SimpleType): void;
     substitute(arg0: TypeSubstitutor): TypeAliasDescriptor;
 }

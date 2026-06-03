@@ -15,6 +15,7 @@ export class FishingHookRenderer extends EntityRenderer<FishingHook, FishingHook
     constructor(context: EntityRendererProvider$Context)
     affectedByCulling(entity: FishingHook): boolean;
     createRenderState(): FishingHookRenderState;
+    createRenderState(entity: FishingHook, partialTicks: number): FishingHookRenderState;
     extractRenderState(entity: FishingHook, state: FishingHookRenderState, partialTicks: number): void;
     // private getPlayerHandPos(owner: Player, swing: number, partialTicks: number): Vec3;
     shouldRender(entity: FishingHook, culler: Frustum, camX: number, camY: number, camZ: number): boolean;

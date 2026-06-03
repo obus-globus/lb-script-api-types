@@ -48,5 +48,6 @@ export abstract class LightEngine<M extends DataLayerStorageMap<M>, S extends La
     runLightUpdates(): number;
     setLightEnabled(pos: ChunkPos, enable: boolean): void;
     shapeOccludes(fromState: BlockState, toState: BlockState, direction: Direction): boolean;
+    updateSectionStatus(pos: BlockPos, sectionEmpty: boolean): void;
     updateSectionStatus(pos: SectionPos, sectionEmpty: boolean): void;
 }

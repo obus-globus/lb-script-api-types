@@ -18,6 +18,7 @@ export class DefaultDatagramChannelConfig extends DefaultChannelConfig implement
     getNetworkInterface(): NetworkInterface;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
     getSendBufferSize(): number;
     getTimeToLive(): number;

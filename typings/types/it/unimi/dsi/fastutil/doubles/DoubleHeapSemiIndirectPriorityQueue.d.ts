@@ -16,6 +16,7 @@ export class DoubleHeapSemiIndirectPriorityQueue extends Object implements Doubl
     // private size: number;
     allChanged(): void;
     changed(): void;
+    changed(arg0: number): void;
     clear(): void;
     comparator(): (param0: number, param1: number) => kotlin.Int;
     dequeue(): number;

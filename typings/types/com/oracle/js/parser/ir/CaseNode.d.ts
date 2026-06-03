@@ -20,5 +20,7 @@ export class CaseNode extends Node implements Terminal {
     isTerminal(): boolean;
     setStatements(statements: Statement[]): CaseNode;
     setTest(test: Expression): CaseNode;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

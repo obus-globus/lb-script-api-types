@@ -1,6 +1,5 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { LocalDate } from '../../kotlinx/datetime/LocalDate.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 import type { DateTimeFormatBuilder$WithDate } from '../../kotlinx/datetime/format/DateTimeFormatBuilder$WithDate.d.ts'
@@ -11,7 +10,7 @@ export class LocalDate$Companion extends Object {
     // private MIN: LocalDate;
     /*not mapped: */ getMIN$kotlinx_datetime(): LocalDate;
     // private serialVersionUID: number;
-    Format(block: Function1<DateTimeFormatBuilder$WithDate, void>): DateTimeFormat<LocalDate>;
+    Format(block: (param0: DateTimeFormatBuilder$WithDate) => void): DateTimeFormat<LocalDate>;
     fromEpochDays(epochDays: number): LocalDate;
     fromEpochDays(epochDays: number): LocalDate;
     parse(input: CharSequence, format: DateTimeFormat<LocalDate>): LocalDate;

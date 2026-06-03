@@ -21,4 +21,5 @@ export class DebugLoadFailedGridScreen extends Screen {
     // private exception: Exception;
     // private parent: Screen;
     init(): void;
+    init(width: number, height: number): void;
 }

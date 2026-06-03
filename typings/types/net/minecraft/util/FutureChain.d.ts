@@ -13,6 +13,7 @@ export class FutureChain extends Object implements AutoCloseable, TaskChainer {
     // private closed: boolean;
     // private executor: Executor;
     // private head: CompletableFuture<Object>;
+    append(task: () => void): void;
     append(preparation: CompletableFuture<T>, chainedTask: (param0: T) => void): void;
     append(task: () => void): void;
     close(): void;

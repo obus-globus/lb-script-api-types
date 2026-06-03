@@ -5,6 +5,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export interface Spliterator$OfPrimitive<T extends Object | number | string | boolean, T_CONS extends Object | number | string | boolean, T_SPLITR extends Spliterator$OfPrimitive<T, T_CONS, T_SPLITR>> extends Spliterator<T>, Object{
     forEachRemaining(arg0: T_CONS): void;
     forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: T) => void): void;
     getComparator(): (param0: T) => kotlin.Boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;

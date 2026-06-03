@@ -1,6 +1,10 @@
 import type { CompilationBuffer } from '../../../../../../com/oracle/truffle/regex/tregex/buffer/CompilationBuffer.d.ts'
 import type { RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimization } from '../../../../../../com/oracle/truffle/regex/tregex/parser/RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimization.d.ts'
+import type { AtomicGroup } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/AtomicGroup.d.ts'
+import type { Group } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Group.d.ts'
+import type { LookAheadAssertion } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookAheadAssertion.d.ts'
 import type { LookAroundAssertion } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookAroundAssertion.d.ts'
+import type { LookBehindAssertion } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookBehindAssertion.d.ts'
 import type { RegexAST } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
 import type { Sequence } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Sequence.d.ts'
 import type { DepthFirstTraversalRegexASTVisitor } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/visitors/DepthFirstTraversalRegexASTVisitor.d.ts'
@@ -11,6 +15,10 @@ export class RegexASTPostProcessor$OptimizeLookAroundsVisitor extends DepthFirst
     // private ast: RegexAST;
     // private compilationBuffer: CompilationBuffer;
     // private countVisitor: NodeCountVisitor;
+    leave(atomicGroup: AtomicGroup): void;
+    leave(group: Group): void;
+    leave(assertion: LookAheadAssertion): void;
+    leave(assertion: LookBehindAssertion): void;
     leave(sequence: Sequence): void;
     // private optimizeLookAround(lookaround: LookAroundAssertion): RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimization;
 }

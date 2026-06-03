@@ -11,6 +11,7 @@ export class AllayRenderer extends MobRenderer<Allay, AllayRenderState, AllayMod
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): AllayRenderState;
+    createRenderState(entity: Allay, partialTicks: number): AllayRenderState;
     extractRenderState(entity: Allay, state: AllayRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: Allay, blockPos: BlockPos): number;
     getTextureLocation(state: AllayRenderState): Identifier;

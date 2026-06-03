@@ -7,6 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EdSignatureAlgorithm extends AbstractSignatureAlgorithm {
     private constructor()
     // private preferredCurve: EdwardsCurve;
+    getJcaName(): string;
     getJcaName(arg0: Request<Object>): string;
     keyPair(): KeyPairBuilder;
     validateKey(arg0: Key, arg1: boolean): void;

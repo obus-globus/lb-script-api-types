@@ -35,6 +35,7 @@ export class VFPScreen extends Screen {
     getSubtitle(): Component;
     getSubtitleWidget(): PlainTextButton;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     open(arg0: Screen): void;
     renderScreenTitle(arg0: GuiGraphicsExtractor): void;

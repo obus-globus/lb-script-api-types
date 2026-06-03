@@ -12,4 +12,5 @@ export class LoadedSourceEvent extends Event {
     getBody(): LoadedSourceEvent$EventBody;
     hashCode(): number;
     setBody(body: LoadedSourceEvent$EventBody): LoadedSourceEvent;
+    setBody(body: Object): Event;
 }

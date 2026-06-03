@@ -6,6 +6,7 @@ import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex
 import type { RegexASTSubtreeRootNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTSubtreeRootNode.d.ts'
 import type { Term } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Term.d.ts'
 import type { RegexASTVisitorIterable } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/visitors/RegexASTVisitorIterable.d.ts'
+import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class Sequence extends RegexASTNode implements RegexASTVisitorIterable {
     constructor()
@@ -38,6 +39,7 @@ export class Sequence extends RegexASTNode implements RegexASTVisitorIterable {
     setParent(parent: RegexASTNode): void;
     size(): number;
     toJson(): JsonValue;
+    toJson(typeName: string): JsonObject;
     toString(): string;
     visitorGetNext(reverse: boolean): RegexASTNode;
     visitorHasNext(): boolean;

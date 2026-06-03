@@ -4,10 +4,10 @@ import type { Protocol } from '../../../../com/viaversion/viaversion/api/protoco
 import type { ClientboundPacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketHandler } from '../../../../com/viaversion/viaversion/api/protocol/remapper/PacketHandler.d.ts'
-import type { ParticleRewriter } from '../../../../com/viaversion/viaversion/api/rewriter/ParticleRewriter.d.ts'
+import type { ParticleRewriter as ParticleRewriter_2 } from '../../../../com/viaversion/viaversion/api/rewriter/ParticleRewriter.d.ts'
 import type { Type } from '../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ParticleRewriter<C extends ClientboundPacketType> extends Object implements ParticleRewriter {
+export class ParticleRewriter<C extends ClientboundPacketType> extends Object implements ParticleRewriter_2 {
     constructor(arg0: Protocol<C, Object, Object, Object>)
     // private mappedParticleType: Type<Particle>;
     // private particleType: Type<Particle>;

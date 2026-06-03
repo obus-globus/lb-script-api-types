@@ -28,6 +28,7 @@ export class NoticeWithLinkScreen extends Screen {
     // private uri: URI;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

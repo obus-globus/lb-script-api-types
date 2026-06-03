@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { ModeValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ToggleableValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -14,7 +13,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt:71}
  */
 export class TargetRenderer extends ToggleableValueGroup {
-    constructor(owner: ToggleableValueGroup, target: Function0<Entity>)
+    constructor(owner: ToggleableValueGroup, target: () => Entity | null)
     constructor(module: ToggleableValueGroup, targetTracker: TargetTracker)
     // private appearance: ModeValueGroup<TargetRenderAppearance<Object>>;
     // private guiRenderHandler: EventHook<OverlayRenderEvent>;

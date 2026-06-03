@@ -13,6 +13,8 @@ export class ObjectLongMutablePair<K extends Object | number | string | boolean>
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectLongMutablePair<K>;
+    right(): number;
+    right(arg0: number): ObjectLongPair<K>;
     right(arg0: number): ObjectLongMutablePair<K>;
     right(): number;
     right(arg0: number): ObjectLongPair<K>;

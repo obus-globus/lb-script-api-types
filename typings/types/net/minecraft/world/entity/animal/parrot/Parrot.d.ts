@@ -176,6 +176,7 @@ export class Parrot extends ShoulderRidingEntity implements FlyingAnimal {
     getDeathSound(): SoundEvent;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getSoundSource(): SoundSource;
     getVariant(): Parrot$Variant;
     getVoicePitch(): number;

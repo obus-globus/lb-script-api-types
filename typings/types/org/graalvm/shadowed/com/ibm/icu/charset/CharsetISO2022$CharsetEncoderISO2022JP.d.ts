@@ -9,6 +9,7 @@ export class CharsetISO2022$CharsetEncoderISO2022JP extends CharsetEncoderICU {
     constructor(null_: CharsetISO2022$CharsetEncoderISO2022JP, cs: CharsetICU)
     // private _2022FromSJIS(value: number): number;
     cbFromUWriteSub(encoder: CharsetEncoderICU, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): CoderResult;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
     // private jisx201FromU(value: number): number;

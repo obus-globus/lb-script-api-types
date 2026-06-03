@@ -78,6 +78,7 @@ export class CreativeModeInventoryScreen extends AbstractContainerScreen<Creativ
     // private hasGroupForPage(arg0: number): boolean;
     // private hasPermissions(player: Player): boolean;
     init(): void;
+    init(width: number, height: number): void;
     insideScrollbar(xm: number, ym: number): boolean;
     // private isCreativeSlot(slot: Slot): boolean;
     isInventoryOpen(): boolean;

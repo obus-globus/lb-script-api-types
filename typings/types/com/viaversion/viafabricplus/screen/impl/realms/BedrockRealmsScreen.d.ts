@@ -34,6 +34,7 @@ export class BedrockRealmsScreen extends VFPScreen {
     // private createView(): void;
     // private error(arg0: string, arg1: Throwable): void;
     init(): void;
+    init(width: number, height: number): void;
     // private loadRealms(): void;
     subtitleCentered(): boolean;
     tick(): void;

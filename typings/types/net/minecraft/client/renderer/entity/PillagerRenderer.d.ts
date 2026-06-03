@@ -9,5 +9,6 @@ export class PillagerRenderer extends IllagerRenderer<Pillager, IllagerRenderSta
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): IllagerRenderState;
+    createRenderState(entity: Pillager, partialTicks: number): IllagerRenderState;
     getTextureLocation(state: IllagerRenderState): Identifier;
 }

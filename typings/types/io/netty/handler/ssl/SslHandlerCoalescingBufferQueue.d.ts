@@ -6,6 +6,7 @@ export abstract class SslHandlerCoalescingBufferQueue extends AbstractCoalescing
     constructor(arg0: Channel, arg1: number, arg2: boolean)
     // private wantsDirectBuffer: boolean;
     compose(arg0: ByteBufAllocator, arg1: ByteBuf, arg2: ByteBuf): ByteBuf;
+    composeFirst(arg0: ByteBufAllocator, arg1: ByteBuf): ByteBuf;
     composeFirst(arg0: ByteBufAllocator, arg1: ByteBuf, arg2: number): ByteBuf;
     removeEmptyValue(): ByteBuf;
     wrapDataSize(): number;

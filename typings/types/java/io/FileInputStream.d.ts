@@ -34,6 +34,7 @@ export class FileInputStream extends InputStream {
     // private read0(): number;
     readAllBytes(): number[];
     // private readBytes(arg0: number[], arg1: number, arg2: number): number;
+    readNBytes(arg0: number[], arg1: number, arg2: number): number;
     readNBytes(arg0: number): number[];
     skip(arg0: number): number;
     // private skip0(arg0: number): number;

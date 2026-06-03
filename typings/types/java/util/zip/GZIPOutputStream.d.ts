@@ -9,7 +9,9 @@ export class GZIPOutputStream extends DeflaterOutputStream {
     constructor(arg0: OutputStream, arg1: number, arg2: boolean)
     // private crc: CRC32;
     finish(): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     // private writeHeader(): void;
     // private writeInt(arg0: number, arg1: number[], arg2: number): void;
     // private writeShort(arg0: number, arg1: number[], arg2: number): void;

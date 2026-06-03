@@ -10,9 +10,11 @@ export class ArmorSlot extends Slot {
     // private owner: LivingEntity;
     // private slot: EquipmentSlot;
     getMaxStackSize(): number;
+    getMaxStackSize(itemStack: ItemStack): number;
     getNoItemIcon(): Identifier;
     isActive(): boolean;
     mayPickup(player: Player): boolean;
     mayPlace(itemStack: ItemStack): boolean;
+    setByPlayer(itemStack: ItemStack): void;
     setByPlayer(itemStack: ItemStack, previous: ItemStack): void;
 }

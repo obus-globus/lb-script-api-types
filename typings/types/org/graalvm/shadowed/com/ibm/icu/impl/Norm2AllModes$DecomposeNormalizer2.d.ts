@@ -1,4 +1,6 @@
 import type { InputStream } from '../../../../../../../java/io/InputStream.d.ts'
+import type { Appendable } from '../../../../../../../java/lang/Appendable.d.ts'
+import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 import type { Norm2AllModes$Normalizer2WithImpl } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/Norm2AllModes$Normalizer2WithImpl.d.ts'
 import type { Normalizer2Impl } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/Normalizer2Impl.d.ts'
@@ -18,6 +20,9 @@ export class Norm2AllModes$DecomposeNormalizer2 extends Norm2AllModes$Normalizer
     hasBoundaryAfter(c: number): boolean;
     hasBoundaryBefore(c: number): boolean;
     isInert(c: number): boolean;
+    normalize(src: CharSequence): string;
+    normalize(src: CharSequence, dest: Appendable): Appendable;
+    normalize(src: CharSequence, dest: StringBuilder): StringBuilder;
     normalize(src: CharSequence, buffer: Normalizer2Impl$ReorderingBuffer): void;
     normalizeAndAppend(src: CharSequence, doNormalize: boolean, buffer: Normalizer2Impl$ReorderingBuffer): void;
     spanQuickCheckYes(s: CharSequence): number;

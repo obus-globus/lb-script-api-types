@@ -8,6 +8,7 @@ import type { MinecraftResponseHandler } from '../../../../../net/raphimc/minecr
 import type { XblXstsToken } from '../../../../../net/raphimc/minecraftauth/xbl/model/XblXstsToken.d.ts'
 export class MinecraftAuthenticationRequest extends PostRequest implements MinecraftResponseHandler<MinecraftCertificateChain> {
     constructor(arg0: XblXstsToken, arg1: KeyPair)
+    handle(arg0: HttpResponse): MinecraftCertificateChain;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftCertificateChain;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

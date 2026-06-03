@@ -24,6 +24,7 @@ export class ObjectInputStream$BlockDataInputStream extends InputStream implemen
     peek(): number;
     peekByte(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     read(arg0: number[], arg1: number, arg2: number, arg3: boolean): number;
     // private readBlockHeader(arg0: boolean): number;

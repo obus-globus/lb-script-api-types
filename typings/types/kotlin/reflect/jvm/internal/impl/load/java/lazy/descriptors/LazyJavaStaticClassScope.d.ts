@@ -1,4 +1,3 @@
-import type { Function1 } from '../../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -18,14 +17,14 @@ export class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     constructor(arg0: LazyJavaResolverContext, arg1: JavaClass, arg2: JavaClassDescriptor)
     // private jClass: JavaClass;
     readonly ownerDescriptor: JavaClassDescriptor;
-    computeClassNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
-    computeFunctionNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computeClassNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
+    computeFunctionNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeImplicitlyDeclaredFunctions(arg0: E[], arg1: Name): void;
     computeMemberIndex(): ClassDeclaredMemberIndex;
     computeNonDeclaredFunctions(arg0: E[], arg1: Name): void;
     computeNonDeclaredProperties(arg0: Name, arg1: E[]): void;
-    computePropertyNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
-    // private flatMapJavaStaticSupertypesScopes(arg0: ClassDescriptor, arg1: R[], arg2: Function1<MemberScope, E[]>): R[];
+    computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
+    // private flatMapJavaStaticSupertypesScopes(arg0: ClassDescriptor, arg1: R[], arg2: (param0: MemberScope) => E[]): R[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getOwnerDescriptor(): JavaClassDescriptor;
     // private getRealOriginal(arg0: PropertyDescriptor): PropertyDescriptor;

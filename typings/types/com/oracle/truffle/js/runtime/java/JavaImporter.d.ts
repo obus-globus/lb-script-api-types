@@ -39,6 +39,8 @@ export class JavaImporter extends JSNonProxy implements JSConstructorFactory$Def
     getClassName(): TruffleString;
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
+    getOwnHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     hasOwnProperty(thisObj: JSDynamicObject, name: Object): boolean;
+    hasOwnProperty(thisObj: JSDynamicObject, index: number): boolean;
     makeInitialShape(context: JSContext, prototype: JSDynamicObject): Shape;
 }

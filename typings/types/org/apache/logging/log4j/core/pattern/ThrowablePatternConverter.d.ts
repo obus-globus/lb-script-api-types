@@ -19,6 +19,7 @@ export class ThrowablePatternConverter extends LogEventPatternConverter {
     // private formatters: PatternFormatter[];
     readonly options: ThrowableFormatOptions;
     // private renderer: ThrowableRenderer;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, buffer: StringBuilder): void;
     getOptions(): ThrowableFormatOptions;
     getSuffix(logEvent: LogEvent): string;

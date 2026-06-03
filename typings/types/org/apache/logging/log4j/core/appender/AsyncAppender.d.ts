@@ -1,3 +1,4 @@
+import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
@@ -47,6 +48,9 @@ export class AsyncAppender extends AbstractAppender {
     // private logToErrorAppenderIfNecessary(appendSuccessful: boolean, logEvent: LogEvent): void;
     requiresLocation(): boolean;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
+    stop(timeout: number, timeUnit: TimeUnit, changeLifeCycleState: boolean): boolean;
     // private transfer(memento: LogEvent): boolean;
 }

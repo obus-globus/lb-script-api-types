@@ -28,6 +28,7 @@ export interface Vector4dc extends Object{
     div(arg0: Vector4dc, arg1: Vector4d): Vector4d;
     dot(arg0: number, arg1: number, arg2: number, arg3: number): number;
     dot(arg0: Vector4dc): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     equals(arg0: Vector4dc, arg1: number): boolean;
     floor(arg0: Vector4d): Vector4d;

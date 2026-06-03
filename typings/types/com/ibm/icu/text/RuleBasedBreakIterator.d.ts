@@ -11,6 +11,7 @@ import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { CharacterIterator } from '../../../../java/text/CharacterIterator.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class RuleBasedBreakIterator extends BreakIterator {
     static DONE: number;
     static KIND_CHARACTER: number;
@@ -85,5 +86,7 @@ export class RuleBasedBreakIterator extends BreakIterator {
     preceding(arg0: number): number;
     previous(): number;
     setText(arg0: CharacterIterator): void;
+    setText(arg0: CharSequence): void;
+    setText(arg0: string): void;
     toString(): string;
 }

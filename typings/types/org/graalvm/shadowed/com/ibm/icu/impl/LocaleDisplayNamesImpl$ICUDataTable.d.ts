@@ -4,6 +4,7 @@ import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/
 export class LocaleDisplayNamesImpl$ICUDataTable extends LocaleDisplayNamesImpl$DataTable {
     constructor(path: string, locale: ULocale, nullIfNotFound: boolean)
     // private bundle: ICUResourceBundle;
+    get(tableName: string, code: string): string;
     get(tableName: string, subTableName: string, code: string): string;
     getLocale(): ULocale;
 }

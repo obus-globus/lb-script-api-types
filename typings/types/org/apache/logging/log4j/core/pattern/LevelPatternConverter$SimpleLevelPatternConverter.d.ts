@@ -6,5 +6,6 @@ export class LevelPatternConverter$SimpleLevelPatternConverter extends LevelPatt
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): LevelPatternConverter;
     private constructor()
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;
 }

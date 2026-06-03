@@ -7,6 +7,7 @@ export class LocalParameterServer extends Object implements ParameterServer {
     // private optimizer: Optimizer;
     close(): void;
     init(arg0: string, arg1: NDArray[]): void;
+    update(arg0: string, arg1: NDArray[]): void;
     update(arg0: string, arg1: NDArray[], arg2: NDArray[]): void;
     update(arg0: string, arg1: NDArray[]): void;
 }

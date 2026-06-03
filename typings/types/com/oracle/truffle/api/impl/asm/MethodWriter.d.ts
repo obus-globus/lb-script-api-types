@@ -103,6 +103,7 @@ export class MethodWriter extends MethodVisitor {
     visitLocalVariableAnnotation(typeRef: number, typePath: TypePath, start: Label[], end: Label[], index: number[], descriptor: string, visible: boolean): AnnotationVisitor;
     visitLookupSwitchInsn(dflt: Label, keys: number[], labels: Label[]): void;
     visitMaxs(maxStack: number, maxLocals: number): void;
+    visitMethodInsn(opcode: number, owner: string, name: string, descriptor: string): void;
     visitMethodInsn(opcode: number, owner: string, name: string, descriptor: string, isInterface: boolean): void;
     visitMultiANewArrayInsn(descriptor: string, numDimensions: number): void;
     visitParameter(name: string, access: number): void;

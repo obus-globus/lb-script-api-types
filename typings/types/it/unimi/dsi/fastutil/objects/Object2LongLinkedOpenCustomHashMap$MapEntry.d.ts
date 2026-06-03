@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2LongMap$Entry.d.ts'
 import type { ObjectLongPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectLongPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2LongLinkedOpenCustomHashMap$MapEntry extends Object implemen
     getLongValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ObjectLongPair<K>;
     right(arg0: number): ObjectLongPair<K>;
     right(): number;
     right(arg0: number): ObjectLongPair<K>;

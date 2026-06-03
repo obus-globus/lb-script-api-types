@@ -2,6 +2,7 @@ import type { ObjectInput } from '../../java/io/ObjectInput.d.ts'
 import type { ObjectOutput } from '../../java/io/ObjectOutput.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Matrix4f } from '../../org/joml/Matrix4f.d.ts'
+import type { Matrix4fc } from '../../org/joml/Matrix4fc.d.ts'
 import type { Vector3f } from '../../org/joml/Vector3f.d.ts'
 export class Matrix4fStack extends Matrix4f {
     static CORNER_NXNYNZ: number;
@@ -32,6 +33,7 @@ export class Matrix4fStack extends Matrix4f {
     clear(): Matrix4fStack;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    equals(arg0: Matrix4fc, arg1: number): boolean;
     hashCode(): number;
     popMatrix(): Matrix4fStack;
     pushMatrix(): Matrix4fStack;

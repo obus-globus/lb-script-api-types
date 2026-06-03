@@ -26,6 +26,7 @@ export class CustomStandaloneMinecraftScreen extends Screen implements AutoClose
     readonly screenType: CustomScreenType;
     close(): void;
     protected init(): void;
+    init(width: number, height: number): void;
     isPauseScreen(): boolean;
     onClose(): void;
     sync(): void;

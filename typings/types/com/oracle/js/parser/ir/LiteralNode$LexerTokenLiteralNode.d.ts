@@ -19,5 +19,7 @@ export class LiteralNode$LexerTokenLiteralNode extends LiteralNode<Lexer$LexerTo
     static newInstance(paramtoken: number, paramfinish: number): LiteralNode<Object>;
     private constructor(literalNode: LiteralNode$LexerTokenLiteralNode)
     private constructor(token: number, finish: number, value: Lexer$LexerToken)
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

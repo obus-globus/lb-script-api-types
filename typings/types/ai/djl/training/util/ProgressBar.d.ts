@@ -13,10 +13,12 @@ export class ProgressBar extends Object implements Progress {
     // private trailingMessage: string;
     end(): void;
     increment(arg0: number): void;
+    reset(arg0: string, arg1: number): void;
     reset(arg0: string, arg1: number, arg2: string): void;
     reset(arg0: string, arg1: number): void;
     start(arg0: number): void;
     // private trimMessage(arg0: string): string;
+    update(arg0: number): void;
     update(arg0: number, arg1: string): void;
     update(arg0: number): void;
 }

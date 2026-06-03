@@ -55,6 +55,7 @@ export class JSArrayBufferView extends JSNonProxy {
     private constructor()
     defineOwnProperty(thisObj: JSDynamicObject, key: Object, descriptor: PropertyDescriptor, doThrow: boolean): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
     getHelper(store: JSDynamicObject, receiver: Object, key: Object, encapsulatingNode: Node): Object;
     getHelper(store: JSDynamicObject, receiver: Object, index: number, encapsulatingNode: Node): Object;
     getOwnHelper(store: JSDynamicObject, receiver: Object, key: Object, encapsulatingNode: Node): Object;

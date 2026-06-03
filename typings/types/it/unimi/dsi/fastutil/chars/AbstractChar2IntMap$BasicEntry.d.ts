@@ -12,5 +12,6 @@ export class AbstractChar2IntMap$BasicEntry extends Object implements Char2IntMa
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

@@ -46,6 +46,7 @@ export abstract class AbstractSignEditScreen extends Screen {
     getSignTextScale(): Vector3f;
     getSignYOffset(): number;
     init(): void;
+    init(width: number, height: number): void;
     isInGameUi(): boolean;
     isPauseScreen(): boolean;
     // private isValid(): boolean;

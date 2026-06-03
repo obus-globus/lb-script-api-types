@@ -9,6 +9,7 @@ export class CharsetHZ$CharsetDecoderHZ extends CharsetDecoderICU {
     constructor(null_: CharsetHZ$CharsetDecoderHZ, cs: CharsetICU)
     // private gbDecoder: CharsetMBCS$CharsetDecoderMBCS;
     // private isStateDBCS: boolean;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

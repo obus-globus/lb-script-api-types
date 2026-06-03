@@ -50,6 +50,7 @@ export class DateIntervalFormat extends UFormat {
     // private fallbackFormat(fromCalendar: Calendar, toCalendar: Calendar, fromToOnSameDay: boolean, appendTo: StringBuffer, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[], fullPattern: string): StringBuffer;
     // private fallbackFormatRange(fromCalendar: Calendar, toCalendar: Calendar, appendTo: StringBuffer, patternSB: StringBuilder, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[]): void;
     format(fromTemporal: Temporal, toTemporal: Temporal, appendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
     format(obj: Object, appendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
     format(fromCalendar: Calendar, toCalendar: Calendar, appendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(dtInterval: DateInterval, appendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
@@ -71,6 +72,7 @@ export class DateIntervalFormat extends UFormat {
     // private initializeIntervalPattern(fullPattern: string, locale: ULocale): { [key: string]: DateIntervalInfo$PatternInfo };
     // private initializePattern(cache: ICUCache<string, { [key: string]: DateIntervalInfo$PatternInfo }>): void;
     // private normalizeHourMetacharacters(skeleton: string, locale: ULocale): string;
+    parseObject(arg0: string): Object;
     parseObject(source: string, parse_pos: ParsePosition): Object;
     // private readObject(stream: ObjectInputStream): void;
     setContext(context: DisplayContext): void;

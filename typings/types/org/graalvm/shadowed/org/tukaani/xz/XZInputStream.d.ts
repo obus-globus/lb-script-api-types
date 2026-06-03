@@ -23,5 +23,6 @@ export class XZInputStream extends InputStream {
     close(closeInput: boolean): void;
     // private prepareNextStream(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(buf: number[], off: number, len: number): number;
 }

@@ -73,6 +73,7 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     getMapValues(input: Unit): DataResult<Stream<Pair<Unit, Unit>>>;
     getNumberValue<T extends Object | number | string | boolean>(arg0: T, arg1: Number): Number;
     getNumberValue(input: Unit): DataResult<Number>;
+    getNumberValue(arg0: Unit, arg1: Number): Number;
     getStream(input: Unit): DataResult<Stream<Unit>>;
     getStringValue(input: Unit): DataResult<string>;
     listBuilder(): ListBuilder<T>;

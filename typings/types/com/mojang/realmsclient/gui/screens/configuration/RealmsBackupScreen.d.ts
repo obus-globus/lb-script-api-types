@@ -37,6 +37,7 @@ export class RealmsBackupScreen extends RealmsScreen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private fetchRealmsBackups(): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

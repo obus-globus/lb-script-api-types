@@ -12,6 +12,7 @@ export abstract class AbstractBoatRenderer extends EntityRenderer<AbstractBoat, 
     constructor(context: EntityRendererProvider$Context, texture: Identifier)
     // private texture: Identifier;
     createRenderState(): BoatRenderState;
+    createRenderState(entity: AbstractBoat, partialTicks: number): BoatRenderState;
     extractRenderState(entity: AbstractBoat, state: BoatRenderState, partialTicks: number): void;
     model(): EntityModel<BoatRenderState>;
     submit(state: BoatRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

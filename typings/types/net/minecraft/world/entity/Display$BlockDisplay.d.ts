@@ -1,6 +1,7 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { Display } from '../../../../net/minecraft/world/entity/Display.d.ts'
 import type { Display$BlockDisplay$BlockRenderState } from '../../../../net/minecraft/world/entity/Display$BlockDisplay$BlockRenderState.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -72,6 +73,7 @@ export class Display$BlockDisplay extends Display {
     blockRenderState(): Display$BlockDisplay$BlockRenderState;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     getBlockState(): BlockState;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     setBlockState(blockState: BlockState): void;

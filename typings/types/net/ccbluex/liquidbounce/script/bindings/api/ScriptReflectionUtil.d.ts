@@ -2,7 +2,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../../java/lang/reflect/Field.d.ts'
 import type { Method } from '../../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../../kotlin/Pair.d.ts'
 import type { Triple } from '../../../../../../kotlin/Triple.d.ts'
 export class ScriptReflectionUtil extends Object {
@@ -11,7 +10,7 @@ export class ScriptReflectionUtil extends Object {
     // private methodCache: Map<Triple<Class<Object>, string, Class<Object>[]>, Method>;
     // private primitiveTypeMap: Map<Class<Object>, Class<Object> | null>;
     classByName(name: string): Class<Object>;
-    // private findMethodInternal(clazz: Class<Object>, name: string, args: (Object | null)[], methodProvider: Function1<Class<Object>, Method[]>): Method;
+    // private findMethodInternal(clazz: Class<Object>, name: string, args: (Object | null)[], methodProvider: (param0: Class<Object>) => Method[]): Method;
     /**
      * Get the value of a declared field from class
      *

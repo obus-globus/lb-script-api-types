@@ -12,4 +12,5 @@ export class ThreadEvent extends Event {
     getBody(): ThreadEvent$EventBody;
     hashCode(): number;
     setBody(body: ThreadEvent$EventBody): ThreadEvent;
+    setBody(body: Object): Event;
 }

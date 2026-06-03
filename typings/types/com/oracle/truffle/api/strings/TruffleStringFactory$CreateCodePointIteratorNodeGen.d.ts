@@ -8,5 +8,6 @@ export class TruffleStringFactory$CreateCodePointIteratorNodeGen extends Truffle
     static getUncached(): TruffleString$CreateCodePointIteratorNode;
     private constructor()
     // private state_0_: number;
+    execute(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding): TruffleStringIterator;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: TruffleString$ErrorHandling): TruffleStringIterator;
 }

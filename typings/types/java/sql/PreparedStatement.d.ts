@@ -32,6 +32,10 @@ export interface PreparedStatement extends Statement, Object{
     executeLargeUpdate(arg0: string, arg1: string[]): number;
     executeLargeUpdate(arg0: string, arg1: number): number;
     executeLargeUpdate(arg0: string, arg1: number[]): number;
+    executeLargeUpdate(arg0: string): number;
+    executeLargeUpdate(arg0: string, arg1: string[]): number;
+    executeLargeUpdate(arg0: string, arg1: number): number;
+    executeLargeUpdate(arg0: string, arg1: number[]): number;
     executeQuery(): ResultSet;
     executeUpdate(): number;
     getLargeMaxRows(): number;

@@ -7,5 +7,6 @@ export class CustomItemTextureResourceRewriter extends ItemModelResourceRewriter
     static ITEM_MODEL_KEY: Key;
     static getCustomModelData(paramarg0: string): CustomModelData1_21_4;
     constructor()
+    apply(arg0: ResourcePackStorage, arg1: Content): void;
     apply(arg0: ResourcePackStorage, arg1: Content, arg2: string[]): void;
 }

@@ -7,6 +7,7 @@ export class ModDiscoverer$RewindableInputStream extends InputStream {
     // private pos: number;
     getBuffer(): ByteBuffer;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     rewind(): void;
 }

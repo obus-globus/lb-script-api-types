@@ -13,6 +13,7 @@ export class PluralRulesLoader extends PluralRules$Factory {
     // private pluralRulesCache: { [key: string]: PluralRules };
     // private rulesIdToEquivalentULocale: { [key: string]: ULocale };
     // private checkBuildRulesIdMaps(): void;
+    forLocale(arg0: ULocale): PluralRules;
     forLocale(arg0: ULocale, arg1: PluralRules$PluralType): PluralRules;
     getAvailableULocales(): ULocale[];
     getFunctionalEquivalent(arg0: ULocale, arg1: (Object | null)[]): ULocale;

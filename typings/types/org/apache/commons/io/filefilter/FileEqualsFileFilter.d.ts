@@ -9,5 +9,6 @@ export class FileEqualsFileFilter extends AbstractFileFilter {
     // private file: File;
     // private path: Path[];
     accept(arg0: File): boolean;
+    accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
 }

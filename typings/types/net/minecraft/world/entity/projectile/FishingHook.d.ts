@@ -6,12 +6,14 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ClientboundAddEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerEntity } from '../../../../../net/minecraft/server/level/ServerEntity.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Entity$MovementEmission } from '../../../../../net/minecraft/world/entity/Entity$MovementEmission.d.ts'
 import type { Entity$RemovalReason } from '../../../../../net/minecraft/world/entity/Entity$RemovalReason.d.ts'
+import type { EntityReference } from '../../../../../net/minecraft/world/entity/EntityReference.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { InterpolationHandler } from '../../../../../net/minecraft/world/entity/InterpolationHandler.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
@@ -110,6 +112,7 @@ export class FishingHook extends Projectile {
     onClientRemoval(): void;
     onHitBlock(hitResult: BlockHitResult): void;
     onHitEntity(hitResult: EntityHitResult): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     pullEntity(entity: Entity): void;
     readAdditionalSaveData(input: ValueInput): void;
@@ -118,6 +121,7 @@ export class FishingHook extends Projectile {
     retrieve(rod: ItemStack): number;
     // private setHookedEntity(hookedIn: Entity): void;
     setOwner(owner: Entity): void;
+    setOwner(owner: EntityReference<Entity>): void;
     shouldBounceOnWorldBorder(): boolean;
     shouldRenderAtSqrDistance(distance: number): boolean;
     // private shouldStopFishing(owner: Player): boolean;

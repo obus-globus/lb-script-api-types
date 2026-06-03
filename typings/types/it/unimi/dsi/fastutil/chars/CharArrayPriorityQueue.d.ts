@@ -25,6 +25,7 @@ export class CharArrayPriorityQueue extends Object implements CharPriorityQueue,
     dequeueChar(): string;
     enqueue(arg0: string): void;
     enqueue(arg0: string): void;
+    enqueue(arg0: string): void;
     // private ensureNonEmpty(): void;
     // private findFirst(): number;
     first(): string;

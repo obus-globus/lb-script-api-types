@@ -14,6 +14,7 @@ export class Murmur3_32HashFunction$Murmur3_32Hasher extends AbstractHasher {
     hash(): HashCode;
     putByte(b: number): Hasher;
     putBytes(buffer: ByteBuffer): Hasher;
+    putBytes(bytes: number[]): Hasher;
     putBytes(bytes: number[], off: number, len: number): Hasher;
     putChar(c: string): Hasher;
     putInt(i: number): Hasher;

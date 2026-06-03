@@ -19,6 +19,7 @@ export abstract class GraalJSException extends AbstractTruffleException {
     // private jsStackTrace: GraalJSException$JSStackTraceElement[];
     readonly location: Object;
     // private stackTraceLimit: number;
+    fillInStackTrace(): Throwable;
     fillInStackTrace(capture: boolean, skipFramesUpTo: JSDynamicObject, customSkip: boolean): GraalJSException;
     getErrorObject(): Object;
     getErrorObjectLazy(): Object;

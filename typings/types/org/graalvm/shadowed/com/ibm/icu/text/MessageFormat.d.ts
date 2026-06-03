@@ -16,6 +16,7 @@ import type { MessagePattern$ApostropheMode } from '../../../../../../../org/gra
 import type { NumberFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberFormat.d.ts'
 import type { UFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UFormat.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
+import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
 export class MessageFormat extends UFormat {
     static autoQuoteApostrophe(parampattern: string): string;
     static format(parampattern: string, paramarguments: (Object | null)[]): string;
@@ -41,6 +42,7 @@ export class MessageFormat extends UFormat {
     equals(obj: Object | null): boolean;
     // private findFirstPluralNumberArg(msgStart: number, argName: string): number;
     // private findOtherSubMessage(partIndex: number): number;
+    format(arg0: Object): string;
     format(arguments: Object, result: StringBuffer, pos: FieldPosition): StringBuffer;
     // private format(arguments: Object, result: MessageFormat$AppendableWrapper, fp: FieldPosition): void;
     format(arguments: Object[], result: StringBuffer, pos: FieldPosition): StringBuffer;
@@ -57,6 +59,7 @@ export class MessageFormat extends UFormat {
     getFormatsByArgumentIndex(): Format[];
     // private getLiteralStringUntilNextArgument(from: number): string;
     getLocale(): Locale;
+    getLocale(type: ULocale$Type): ULocale;
     // private getStockDateFormatter(): DateFormat;
     // private getStockNumberFormatter(): NumberFormat;
     getULocale(): ULocale;
@@ -65,6 +68,7 @@ export class MessageFormat extends UFormat {
     // private parse(msgStart: number, source: string, pos: ParsePosition, args: Object[], argsMap: { [key: string]: Object }): void;
     parse(source: string): Object[];
     parse(source: string, pos: ParsePosition): Object[];
+    parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): Object;
     parseToMap(source: string): { [key: string]: Object };
     parseToMap(source: string, pos: ParsePosition): { [key: string]: Object };
@@ -80,6 +84,7 @@ export class MessageFormat extends UFormat {
     setFormatsByArgumentName(newFormats: { [key: string]: Format }): void;
     setLocale(locale: Locale): void;
     setLocale(locale: ULocale): void;
+    setLocale(valid: ULocale, actual: ULocale): void;
     toPattern(): string;
     // private updateMetaData(dest: MessageFormat$AppendableWrapper, prevLength: number, fp: FieldPosition, argId: Object): FieldPosition;
     usesNamedArguments(): boolean;

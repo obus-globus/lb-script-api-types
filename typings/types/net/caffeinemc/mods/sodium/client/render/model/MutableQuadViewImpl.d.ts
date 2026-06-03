@@ -29,6 +29,7 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements Extend
     // private fromVanillaInternal(arg0: BakedQuadView): void;
     getWrapper(): MutableQuadViewWrapper;
     load(): void;
+    normalFlags(): number;
     normalFlags(arg0: number): void;
     populateMissingNormals(): void;
     setAmbientOcclusion(arg0: TriState): MutableQuadViewImpl;

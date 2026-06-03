@@ -5,6 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { EditBox } from '../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -29,8 +30,10 @@ export class RealmsCreateRealmScreen extends RealmsScreen {
     // private nameBox: EditBox;
     // private createWorld(server: RealmsServer, initializeSnapshotRealm: boolean): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     // private showResetWorldScreen(server: RealmsServer): void;
 }

@@ -6,6 +6,7 @@ export class Int2ShortFunctions$UnmodifiableFunction extends AbstractInt2ShortFu
     constructor(arg0: (param0: number) => kotlin.Short)
     // private function: (param0: number) => kotlin.Short;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

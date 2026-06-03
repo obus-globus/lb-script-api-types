@@ -5,6 +5,9 @@ export class ObjectType extends Object {
     constructor()
     dispatch(): Class<Object>;
     equals(object: DynamicObject, other: Object): boolean;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
     hashCode(object: DynamicObject): number;
+    toString(): string;
     toString(object: DynamicObject): string;
 }

@@ -41,6 +41,7 @@ export abstract class DialogScreen<T extends Dialog> extends Screen {
     // private createWarningButton(): Button;
     // private handleDialogClickEvent(event: ClickEvent, activeScreen: Screen): void;
     init(): void;
+    init(width: number, height: number): void;
     isPauseScreen(): boolean;
     makeSureWarningButtonIsInBounds(): void;
     onClose(): void;

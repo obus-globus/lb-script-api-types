@@ -9,5 +9,7 @@ export class ErrorNode extends Expression {
     constructor(token: number, finish: number)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

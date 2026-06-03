@@ -6,6 +6,7 @@ import type { Channel } from '../../../../../io/netty/channel/Channel.d.ts'
 import type { ChannelConfig } from '../../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelMetadata } from '../../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOutboundBuffer } from '../../../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
+import type { ChannelPromise } from '../../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { InetSocketAddress } from '../../../../../java/net/InetSocketAddress.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -26,6 +27,7 @@ export abstract class NetherNetChannel extends AbstractChannel {
     doDeregister(): void;
     doDisconnect(): void;
     doRegister(): void;
+    doRegister(arg0: ChannelPromise): void;
     doWrite(arg0: ChannelOutboundBuffer): void;
     isActive(): boolean;
     isCompatible(arg0: (Object | null)[]): boolean;

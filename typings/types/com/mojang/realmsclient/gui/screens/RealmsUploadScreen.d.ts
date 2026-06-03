@@ -55,6 +55,7 @@ export class RealmsUploadScreen extends RealmsScreen implements RealmsWorldUploa
     // private extractUploadSpeed0(graphics: GuiGraphicsExtractor, bytesPerSecond: number): void;
     getUploadStatus(): UploadStatus;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     // private onBack(): void;
     // private onCancel(): void;

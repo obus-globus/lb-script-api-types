@@ -20,6 +20,7 @@ export class MulticastSocket extends DatagramSocket {
     joinGroup(arg0: SocketAddress, arg1: NetworkInterface): void;
     leaveGroup(arg0: InetAddress): void;
     leaveGroup(arg0: SocketAddress, arg1: NetworkInterface): void;
+    send(arg0: DatagramPacket): void;
     send(arg0: DatagramPacket, arg1: number): void;
     setInterface(arg0: InetAddress): void;
     setLoopbackMode(arg0: boolean): void;

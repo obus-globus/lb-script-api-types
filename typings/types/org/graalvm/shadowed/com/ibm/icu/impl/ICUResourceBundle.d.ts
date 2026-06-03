@@ -80,6 +80,8 @@ export class ICUResourceBundle extends UResourceBundle {
     findTopLevel(index: number): ICUResourceBundle;
     findTopLevel(aKey: string): ICUResourceBundle;
     findWithFallback(path: string): ICUResourceBundle;
+    get(index: number): UResourceBundle;
+    get(aKey: string): UResourceBundle;
     get(aKey: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): ICUResourceBundle;
     getAllChildrenWithFallback(path: string, sink: UResource$Sink): void;
     getAllItemsWithFallback(path: string, sink: UResource$Sink): void;

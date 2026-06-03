@@ -174,6 +174,7 @@ export class Creaking extends Monster {
     getHomePos(): BlockPos;
     getHurtSound(source: DamageSource): SoundEvent;
     getTarget(): LivingEntity;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     handleEntityEvent(id: number): void;
     hasGlowingEyes(): boolean;
@@ -188,6 +189,8 @@ export class Creaking extends Monster {
     playStepSound(pos: BlockPos, blockState: BlockState): void;
     playerIsStuckInYou(): boolean;
     push(xa: number, ya: number, za: number): void;
+    push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     setHomePos(pos: BlockPos): void;
     setIsActive(active: boolean): void;

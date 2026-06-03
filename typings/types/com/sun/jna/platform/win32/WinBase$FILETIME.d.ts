@@ -29,5 +29,6 @@ export class WinBase$FILETIME extends Structure {
     toDWordLong(): WinDef$DWORDLONG;
     toDate(): Date;
     toString(): string;
+    toString(arg0: boolean): string;
     toTime(): number;
 }

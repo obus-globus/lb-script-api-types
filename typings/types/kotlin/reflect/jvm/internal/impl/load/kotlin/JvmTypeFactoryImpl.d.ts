@@ -11,5 +11,6 @@ export class JvmTypeFactoryImpl extends Object implements JvmTypeFactory<JvmType
     createObjectType(arg0: string): JvmType$Object;
     createPrimitiveType(arg0: PrimitiveType): JvmType;
     getJavaLangClassType(): JvmType;
+    toString(): string;
     toString(arg0: JvmType): string;
 }

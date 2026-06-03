@@ -70,6 +70,7 @@ export abstract class AbstractSelectionList<E extends AbstractSelectionList$Entr
     // private scroll(amount: number): void;
     scrollBarX(): number;
     scrollToEntry(entry: E): void;
+    setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;
     setScrollAmount(scrollAmount: number): void;
     setSelected(selected: E): void;

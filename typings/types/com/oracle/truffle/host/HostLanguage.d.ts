@@ -1,7 +1,9 @@
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLanguage$Env } from '../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
+import type { TruffleLanguage$InlineParsingRequest } from '../../../../com/oracle/truffle/api/TruffleLanguage$InlineParsingRequest.d.ts'
 import type { TruffleLanguage$ParsingRequest } from '../../../../com/oracle/truffle/api/TruffleLanguage$ParsingRequest.d.ts'
+import type { ExecutableNode } from '../../../../com/oracle/truffle/api/nodes/ExecutableNode.d.ts'
 import type { HostClassCache } from '../../../../com/oracle/truffle/host/HostClassCache.d.ts'
 import type { HostContext } from '../../../../com/oracle/truffle/host/HostContext.d.ts'
 import type { HostLanguageService } from '../../../../com/oracle/truffle/host/HostLanguageService.d.ts'
@@ -28,6 +30,7 @@ export class HostLanguage extends TruffleLanguage<HostContext> {
     getScope(context: HostContext): Object;
     initializeHostAccess(hostAccess: Object): void;
     isThreadAccessAllowed(thread: Thread, singleThreaded: boolean): boolean;
+    parse(request: TruffleLanguage$InlineParsingRequest): ExecutableNode;
     parse(request: TruffleLanguage$ParsingRequest): CallTarget;
     patchContext(context: HostContext, newEnv: TruffleLanguage$Env): boolean;
     // private unwrapIfScoped(obj: Object): Object;

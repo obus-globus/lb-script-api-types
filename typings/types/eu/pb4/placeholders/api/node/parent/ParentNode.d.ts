@@ -1,4 +1,5 @@
 import type { ParserContext } from '../../../../../../eu/pb4/placeholders/api/ParserContext.d.ts'
+import type { PlaceholderContext } from '../../../../../../eu/pb4/placeholders/api/PlaceholderContext.d.ts'
 import type { TextNode } from '../../../../../../eu/pb4/placeholders/api/node/TextNode.d.ts'
 import type { ParentTextNode } from '../../../../../../eu/pb4/placeholders/api/node/parent/ParentTextNode.d.ts'
 import type { NodeParser } from '../../../../../../eu/pb4/placeholders/api/parsers/NodeParser.d.ts'
@@ -17,9 +18,15 @@ export class ParentNode extends Object implements ParentTextNode {
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
     copyWith(arg0: E[]): ParentTextNode;
     copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
+    copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
+    copyWith(arg0: E[]): ParentTextNode;
+    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     getChildren(): TextNode[];
     isDynamic(): boolean;
     isDynamicNoChildren(): boolean;
+    toComponent(): Component;
+    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
+    toComponent(arg0: PlaceholderContext): Component;
     toString(): string;
 }

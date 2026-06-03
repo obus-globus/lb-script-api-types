@@ -3,6 +3,7 @@ export class StringJsonLexerWithComments extends StringJsonLexer {
     constructor(source: string)
     canConsumeValue(): boolean;
     consumeNextToken(): number;
+    consumeNextToken(expected: number): number;
     consumeNextToken(expected: string): void;
     peekNextToken(): number;
     skipWhitespaces(): number;

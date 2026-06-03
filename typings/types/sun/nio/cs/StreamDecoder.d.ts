@@ -1,6 +1,7 @@
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../java/io/Reader.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { CharBuffer } from '../../../java/nio/CharBuffer.d.ts'
 import type { ReadableByteChannel } from '../../../java/nio/channels/ReadableByteChannel.d.ts'
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 import type { CharsetDecoder } from '../../../java/nio/charset/CharsetDecoder.d.ts'
@@ -35,6 +36,8 @@ export class StreamDecoder extends Reader {
     // private inReady(): boolean;
     // private isOpen(): boolean;
     read(): number;
+    read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
     // private read0(): number;
     // private readBytes(): number;

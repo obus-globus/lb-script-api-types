@@ -9,6 +9,7 @@ export class DataInputStream extends FilterInputStream implements DataInput {
     // private chararr: string[];
     // private lineBuffer: string[];
     // private readBuffer: number[];
+    read(): number;
     read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     readBoolean(): boolean;

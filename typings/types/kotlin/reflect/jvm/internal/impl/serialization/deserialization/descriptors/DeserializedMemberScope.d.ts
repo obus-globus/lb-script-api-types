@@ -1,6 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -21,13 +19,13 @@ import type { NotNullLazyValue } from '../../../../../../../../kotlin/reflect/jv
 import type { NullableLazyValue } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/storage/NullableLazyValue.d.ts'
 export abstract class DeserializedMemberScope extends MemberScopeImpl {
     static Companion: MemberScope$Companion;
-    constructor(arg0: DeserializationContext, arg1: ProtoBuf$Function[], arg2: ProtoBuf$Property[], arg3: ProtoBuf$TypeAlias[], arg4: Function0<E[]>)
+    constructor(arg0: DeserializationContext, arg1: ProtoBuf$Function[], arg2: ProtoBuf$Property[], arg3: ProtoBuf$TypeAlias[], arg4: () => E[])
     readonly c: DeserializationContext;
     // private classNames$delegate: NotNullLazyValue<Object>;
     // private classifierNamesLazy$delegate: NullableLazyValue<Object>;
     // private impl: DeserializedMemberScope$Implementation;
-    addEnumEntryDescriptors(arg0: E[], arg1: Function1<Name, boolean>): void;
-    computeDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>, arg2: LookupLocation): E[];
+    addEnumEntryDescriptors(arg0: E[], arg1: (param0: Name) => boolean): void;
+    computeDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean, arg2: LookupLocation): E[];
     computeNonDeclaredFunctions(arg0: Name, arg1: SimpleFunctionDescriptor[]): void;
     computeNonDeclaredProperties(arg0: Name, arg1: PropertyDescriptor[]): void;
     createClassId(arg0: Name): ClassId;

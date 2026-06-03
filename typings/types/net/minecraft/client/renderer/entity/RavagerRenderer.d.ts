@@ -10,6 +10,7 @@ export class RavagerRenderer extends MobRenderer<Ravager, RavagerRenderState, Ra
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): RavagerRenderState;
+    createRenderState(entity: Ravager, partialTicks: number): RavagerRenderState;
     extractRenderState(entity: Ravager, state: RavagerRenderState, partialTicks: number): void;
     getTextureLocation(state: RavagerRenderState): Identifier;
 }

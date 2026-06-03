@@ -12,5 +12,6 @@ export class AbstractDouble2ShortMap$BasicEntry extends Object implements Double
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

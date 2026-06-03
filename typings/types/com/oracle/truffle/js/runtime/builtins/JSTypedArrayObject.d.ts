@@ -114,6 +114,7 @@ export class JSTypedArrayObject extends JSArrayBufferViewBase {
     getClassName(): TruffleString;
     getLength(): number;
     getLengthFixed(): number;
+    getMembers(internal: boolean): Object;
     getMembers(includeInternal: boolean, self: InteropLibrary): Object;
     hasArrayElements(): boolean;
     isArrayElementInsertable(index: number): boolean;

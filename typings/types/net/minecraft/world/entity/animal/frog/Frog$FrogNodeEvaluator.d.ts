@@ -17,6 +17,7 @@ export class Frog$FrogNodeEvaluator extends AmphibiousNodeEvaluator {
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor(prefersShallowSwimming: boolean)
     // private belowPos: BlockPos$MutableBlockPos;
+    getPathType(mob: Mob, pos: BlockPos): PathType;
     getPathType(context: PathfindingContext, x: number, y: number, z: number): PathType;
     getStart(): Node;
 }

@@ -38,6 +38,7 @@ export class ConnectScreen extends Screen implements ConnectScreenAccessor {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private getConnectionDetails(arg0: Connection, arg1: ServerAddress): Component;
     init(): void;
+    init(width: number, height: number): void;
     shouldCloseOnEsc(): boolean;
     tick(): void;
     updateStatus(status: Component): void;

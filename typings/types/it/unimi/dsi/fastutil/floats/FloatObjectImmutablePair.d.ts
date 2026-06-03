@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { FloatObjectPair } from '../../../../../it/unimi/dsi/fastutil/floats/FloatObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class FloatObjectImmutablePair<V extends Object | number | string | boole
     left(arg0: number): FloatObjectPair<V>;
     leftFloat(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

@@ -17,6 +17,8 @@ export class ShortReferenceMutablePair<V extends Object | number | string | bool
     key(arg0: number): ShortReferencePair<V>;
     key(arg0: number): ShortReferencePair<V>;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortReferencePair<V>;
     left(arg0: number): ShortReferenceMutablePair<V>;
     left(): number;
     left(arg0: number): ShortReferencePair<V>;

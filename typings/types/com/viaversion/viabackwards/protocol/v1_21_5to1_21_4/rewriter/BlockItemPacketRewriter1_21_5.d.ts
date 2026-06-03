@@ -23,6 +23,7 @@ export class BlockItemPacketRewriter1_21_5 extends BackwardsStructuredItemRewrit
     // private itemToHashedItem(arg0: PacketWrapper, arg1: HashedItemConverterStorage): void;
     // private originalHashedItemFromBackup(arg0: Item): OriginalHashedItem;
     registerPackets(): void;
+    restoreBackupData(arg0: Item): void;
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
     // private sendSaddledEntityData(arg0: UserConnection, arg1: TrackedEntity, arg2: number, arg3: boolean): void;
     // private tagToSound(arg0: Map$Entry<string, Tag>[]): SoundEvent;

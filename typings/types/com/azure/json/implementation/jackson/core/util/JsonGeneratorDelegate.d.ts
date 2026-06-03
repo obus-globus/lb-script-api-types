@@ -7,6 +7,7 @@ import type { JsonStreamContext } from '../../../../../../../com/azure/json/impl
 import type { ObjectCodec } from '../../../../../../../com/azure/json/implementation/jackson/core/ObjectCodec.d.ts'
 import type { SerializableString } from '../../../../../../../com/azure/json/implementation/jackson/core/SerializableString.d.ts'
 import type { StreamWriteCapability } from '../../../../../../../com/azure/json/implementation/jackson/core/StreamWriteCapability.d.ts'
+import type { StreamWriteFeature } from '../../../../../../../com/azure/json/implementation/jackson/core/StreamWriteFeature.d.ts'
 import type { TreeNode } from '../../../../../../../com/azure/json/implementation/jackson/core/TreeNode.d.ts'
 import type { Version } from '../../../../../../../com/azure/json/implementation/jackson/core/Version.d.ts'
 import type { CharacterEscapes } from '../../../../../../../com/azure/json/implementation/jackson/core/io/CharacterEscapes.d.ts'
@@ -47,6 +48,7 @@ export class JsonGeneratorDelegate extends JsonGenerator {
     getWriteCapabilities(): JacksonFeatureSet<StreamWriteCapability>;
     isClosed(): boolean;
     isEnabled(arg0: JsonGenerator$Feature): boolean;
+    isEnabled(arg0: StreamWriteFeature): boolean;
     overrideFormatFeatures(arg0: number, arg1: number): JsonGenerator;
     overrideStdFeatures(arg0: number, arg1: number): JsonGenerator;
     setCharacterEscapes(arg0: CharacterEscapes): JsonGenerator;
@@ -63,6 +65,9 @@ export class JsonGeneratorDelegate extends JsonGenerator {
     writeArray(arg0: number[], arg1: number, arg2: number): void;
     writeBinary(arg0: Base64Variant, arg1: InputStream, arg2: number): number;
     writeBinary(arg0: Base64Variant, arg1: number[], arg2: number, arg3: number): void;
+    writeBinary(arg0: InputStream, arg1: number): number;
+    writeBinary(arg0: number[]): void;
+    writeBinary(arg0: number[], arg1: number, arg2: number): void;
     writeBoolean(arg0: boolean): void;
     writeEmbeddedObject(arg0: Object): void;
     writeEndArray(): void;
@@ -90,6 +95,7 @@ export class JsonGeneratorDelegate extends JsonGenerator {
     writeRaw(arg0: string): void;
     writeRaw(arg0: string, arg1: number, arg2: number): void;
     writeRawUTF8String(arg0: number[], arg1: number, arg2: number): void;
+    writeRawValue(arg0: SerializableString): void;
     writeRawValue(arg0: string[], arg1: number, arg2: number): void;
     writeRawValue(arg0: string): void;
     writeRawValue(arg0: string, arg1: number, arg2: number): void;

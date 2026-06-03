@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ShortObjectPair } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class ShortObjectImmutablePair<V extends Object | number | string | boole
     left(arg0: number): ShortObjectPair<V>;
     leftShort(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

@@ -6,6 +6,7 @@ export class Float2FloatFunctions$UnmodifiableFunction extends AbstractFloat2Flo
     constructor(arg0: (param0: number) => kotlin.Float)
     // private function: (param0: number) => kotlin.Float;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

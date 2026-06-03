@@ -4,13 +4,13 @@ import type { ViewportProvider } from '../../../../../../net/caffeinemc/mods/sod
 import type { Frustum } from '../../../../../../net/caffeinemc/mods/sodium/client/render/viewport/frustum/Frustum.d.ts'
 import type { BoxCuller } from '../../../../../../net/irisshaders/iris/shadows/frustum/BoxCuller.d.ts'
 import type { BaseClippingPlanes } from '../../../../../../net/irisshaders/iris/shadows/frustum/advanced/BaseClippingPlanes.d.ts'
-import type { Frustum } from '../../../../../../net/minecraft/client/renderer/culling/Frustum.d.ts'
+import type { Frustum as Frustum_2 } from '../../../../../../net/minecraft/client/renderer/culling/Frustum.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Matrix4fc } from '../../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3d } from '../../../../../../org/joml/Vector3d.d.ts'
 import type { Vector3f } from '../../../../../../org/joml/Vector3f.d.ts'
 import type { Vector4f } from '../../../../../../org/joml/Vector4f.d.ts'
-export class AdvancedShadowCullingFrustum extends Frustum implements ViewportProvider, Frustum {
+export class AdvancedShadowCullingFrustum extends Frustum_2 implements ViewportProvider, Frustum {
     static CHUNK_SECTION_MARGIN: number;
     static CHUNK_SECTION_RADIUS: number;
     static OFFSET_STEP: number;

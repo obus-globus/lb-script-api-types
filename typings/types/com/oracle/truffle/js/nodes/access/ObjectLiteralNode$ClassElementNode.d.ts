@@ -16,5 +16,6 @@ export abstract class ObjectLiteralNode$ClassElementNode extends ObjectLiteralNo
     checkNoElementsAssumption(obj: JSObject, key: Object): void;
     defineClassElement(frame: VirtualFrame, homeObject: JSObject, classElement: ClassElementDefinitionRecord): void;
     evaluateClassElementDefinition(frame: VirtualFrame, homeObject: JSObject, realm: JSRealm, decorators: Object[]): ClassElementDefinitionRecord;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
 }

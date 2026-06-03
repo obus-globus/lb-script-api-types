@@ -14,6 +14,7 @@ export class ZombieVillagerRenderer extends HumanoidMobRenderer<ZombieVillager, 
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ZombieVillagerRenderState;
+    createRenderState(entity: ZombieVillager, partialTicks: number): ZombieVillagerRenderState;
     extractRenderState(entity: ZombieVillager, state: ZombieVillagerRenderState, partialTicks: number): void;
     getTextureLocation(state: ZombieVillagerRenderState): Identifier;
     isShaking(state: ZombieVillagerRenderState): boolean;

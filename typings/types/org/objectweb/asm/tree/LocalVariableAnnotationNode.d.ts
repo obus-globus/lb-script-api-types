@@ -1,3 +1,4 @@
+import type { AnnotationVisitor } from '../../../../org/objectweb/asm/AnnotationVisitor.d.ts'
 import type { MethodVisitor } from '../../../../org/objectweb/asm/MethodVisitor.d.ts'
 import type { TypePath } from '../../../../org/objectweb/asm/TypePath.d.ts'
 import type { LabelNode } from '../../../../org/objectweb/asm/tree/LabelNode.d.ts'
@@ -8,5 +9,6 @@ export class LocalVariableAnnotationNode extends TypeAnnotationNode {
     end: LabelNode[];
     index: number[];
     start: LabelNode[];
+    accept(arg0: AnnotationVisitor): void;
     accept(arg0: MethodVisitor, arg1: boolean): void;
 }

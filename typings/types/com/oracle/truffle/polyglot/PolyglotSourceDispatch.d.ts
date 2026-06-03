@@ -10,6 +10,7 @@ import type { ByteSequence } from '../../../../org/graalvm/polyglot/io/ByteSeque
 export class PolyglotSourceDispatch extends AbstractPolyglotImpl$AbstractSourceDispatch {
     constructor(polyglot: AbstractPolyglotImpl)
     equals(impl: Object, otherImpl: Object): boolean;
+    equals(other: Object | null): boolean;
     getByteArray(impl: Object): number[];
     getBytes(impl: Object): ByteSequence;
     getCharacters(impl: Object): CharSequence;
@@ -32,9 +33,11 @@ export class PolyglotSourceDispatch extends AbstractPolyglotImpl$AbstractSourceD
     getURL(impl: Object): URL;
     hasBytes(impl: Object): boolean;
     hasCharacters(impl: Object): boolean;
+    hashCode(): number;
     hashCode(impl: Object): number;
     isCached(impl: Object): boolean;
     isInteractive(impl: Object): boolean;
     isInternal(impl: Object): boolean;
+    toString(): string;
     toString(impl: Object): string;
 }

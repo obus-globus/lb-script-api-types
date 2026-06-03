@@ -34,6 +34,7 @@ export interface Vector3fc extends Object{
     div(arg0: Vector3fc, arg1: Vector3f): Vector3f;
     dot(arg0: number, arg1: number, arg2: number): number;
     dot(arg0: Vector3fc): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number): boolean;
     equals(arg0: Vector3fc, arg1: number): boolean;
     floor(arg0: Vector3f): Vector3f;

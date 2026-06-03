@@ -21,4 +21,5 @@ export class Wincon$SMALL_RECT extends Structure {
     Right: number;
     Top: number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

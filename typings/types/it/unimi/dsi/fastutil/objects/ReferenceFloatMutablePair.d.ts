@@ -11,6 +11,8 @@ export class ReferenceFloatMutablePair<K extends Object | number | string | bool
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceFloatMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceFloatPair<K>;
     right(arg0: number): ReferenceFloatMutablePair<K>;
     right(): number;
     right(arg0: number): ReferenceFloatPair<K>;

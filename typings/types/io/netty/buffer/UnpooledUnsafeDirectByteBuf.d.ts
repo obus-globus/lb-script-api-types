@@ -6,6 +6,9 @@ import type { CleanableDirectBuffer } from '../../../io/netty/util/internal/Clea
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
+import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
+import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 export class UnpooledUnsafeDirectByteBuf extends UnpooledDirectByteBuf {
     constructor(arg0: ByteBufAllocator, arg1: ByteBuffer, arg2: number)
     constructor(arg0: ByteBufAllocator, arg1: ByteBuffer, arg2: number, arg3: boolean)
@@ -32,11 +35,20 @@ export class UnpooledUnsafeDirectByteBuf extends UnpooledDirectByteBuf {
     _setShort(arg0: number, arg1: number): void;
     _setShortLE(arg0: number, arg1: number): void;
     addr(arg0: number): number;
+    copy(): ByteBuf;
     copy(arg0: number, arg1: number): ByteBuf;
     getByte(arg0: number): number;
+    getBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    getBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
+    getBytes(arg0: number, arg1: OutputStream, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: OutputStream, arg2: number, arg3: boolean): void;
+    getBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuffer, arg2: boolean): void;
+    getBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
+    getBytes(arg0: number, arg1: GatheringByteChannel, arg2: number): number;
+    getBytes(arg0: number, arg1: number[]): ByteBuf;
+    getBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     getBytes(arg0: number, arg1: number[], arg2: number, arg3: number, arg4: boolean): void;
     getInt(arg0: number): number;
     getLong(arg0: number): number;
@@ -48,9 +60,14 @@ export class UnpooledUnsafeDirectByteBuf extends UnpooledDirectByteBuf {
     setByte(arg0: number, arg1: number): ByteBuf;
     setByteBuffer(arg0: CleanableDirectBuffer, arg1: boolean): void;
     setByteBuffer(arg0: ByteBuffer, arg1: boolean): void;
+    setBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     setBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     setBytes(arg0: number, arg1: InputStream, arg2: number): number;
     setBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
+    setBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
+    setBytes(arg0: number, arg1: ScatteringByteChannel, arg2: number): number;
+    setBytes(arg0: number, arg1: number[]): ByteBuf;
     setBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     setInt(arg0: number, arg1: number): ByteBuf;
     setLong(arg0: number, arg1: number): ByteBuf;

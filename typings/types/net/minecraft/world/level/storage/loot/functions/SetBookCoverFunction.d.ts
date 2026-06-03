@@ -12,6 +12,7 @@ export class SetBookCoverFunction extends LootItemConditionalFunction {
     // private author: Optional<string>;
     // private generation: Optional<number>;
     // private title: Optional<Filterable<string>>;
+    apply(itemStack: ItemStack, context: LootContext): ItemStack;
     // private apply(original: WrittenBookContent): WrittenBookContent;
     codec(): MapCodec<SetBookCoverFunction>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;

@@ -3,6 +3,7 @@ import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { URLConnection } from '../../../../../java/net/URLConnection.d.ts'
+import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
 import type { Pattern } from '../../../../../java/util/regex/Pattern.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { BOMInputStream } from '../../../../../org/apache/commons/io/input/BOMInputStream.d.ts'
@@ -34,5 +35,8 @@ export class XmlStreamReader extends Reader {
     getEncoding(): string;
     // private processHttpStream(arg0: BOMInputStream, arg1: BOMInputStream, arg2: boolean): string;
     // private processHttpStream(arg0: BOMInputStream, arg1: BOMInputStream, arg2: boolean, arg3: string): string;
+    read(): number;
+    read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
 }

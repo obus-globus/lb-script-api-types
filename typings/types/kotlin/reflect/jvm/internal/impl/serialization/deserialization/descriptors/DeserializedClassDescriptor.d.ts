@@ -29,6 +29,7 @@ import type { NotNullLazyValue } from '../../../../../../../../kotlin/reflect/jv
 import type { NullableLazyValue } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/storage/NullableLazyValue.d.ts'
 import type { SimpleType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeConstructor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeConstructor.d.ts'
+import type { TypeSubstitution } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
 import type { KotlinTypeRefiner } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class DeserializedClassDescriptor extends AbstractClassDescriptor implements DeserializedDescriptor {
     static Companion: ModuleAwareClassDescriptor$Companion;
@@ -70,12 +71,15 @@ export class DeserializedClassDescriptor extends AbstractClassDescriptor impleme
     getDeclaredTypeParameters(): TypeParameterDescriptor[];
     getKind(): ClassKind;
     // private getMemberScope(): DeserializedClassDescriptor$DeserializedClassMemberScope;
+    getMemberScope(arg0: TypeSubstitution): MemberScope;
+    getMemberScope(arg0: TypeSubstitution, arg1: KotlinTypeRefiner): MemberScope;
     getMetadataVersion(): BinaryVersion;
     getModality(): Modality;
     getSource(): SourceElement;
     getStaticScope(): MemberScopeImpl;
     getThisAsProtoContainer$deserialization(): ProtoContainer$Class;
     getTypeConstructor(): TypeConstructor;
+    getUnsubstitutedMemberScope(): MemberScope;
     getUnsubstitutedMemberScope(arg0: KotlinTypeRefiner): MemberScope;
     getUnsubstitutedPrimaryConstructor(): ClassConstructorDescriptor;
     // private getValueClassPropertyType(arg0: Name): SimpleType;

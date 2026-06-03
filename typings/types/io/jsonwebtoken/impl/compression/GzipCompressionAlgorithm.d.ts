@@ -5,4 +5,5 @@ export class GzipCompressionAlgorithm extends AbstractCompressionAlgorithm {
     constructor()
     doCompress(arg0: OutputStream): OutputStream;
     doDecompress(arg0: InputStream): InputStream;
+    doDecompress(arg0: number[]): number[];
 }

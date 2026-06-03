@@ -10,5 +10,6 @@ export class TemporalAddZonedDateTimeNodeGen extends TemporalAddZonedDateTimeNod
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
+    execute(epochNanoseconds: BigInt, timeZone: TruffleString, calendar: TruffleString, years: number, months: number, weeks: number, days: number, norm: BigInt, precalculatedPlainDateTime: JSTemporalPlainDateTimeObject): BigInt;
     execute(arg0Value: BigInt, arg1Value: TruffleString, arg2Value: TruffleString, arg3Value: number, arg4Value: number, arg5Value: number, arg6Value: number, arg7Value: BigInt, arg8Value: JSTemporalPlainDateTimeObject, arg9Value: JSDynamicObject): BigInt;
 }

@@ -12,6 +12,7 @@ export class AppendableWriter extends Writer {
     // private checkNotClosed(): void;
     close(): void;
     flush(): void;
+    write(arg0: string[]): void;
     write(cbuf: string[], off: number, len: number): void;
     write(c: number): void;
     write(str: string): void;

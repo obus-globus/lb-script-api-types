@@ -11,6 +11,7 @@ export class FloatIterators$UnmodifiableIterator extends Object implements Float
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

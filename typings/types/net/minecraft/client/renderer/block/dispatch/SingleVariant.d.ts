@@ -16,5 +16,7 @@ export class SingleVariant extends Object implements BlockStateModel {
     emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Object) => kotlin.Boolean): void;
     hasMaterialFlag(flag: number): boolean;
     materialFlags(): number;
+    materialFlags(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): number;
     particleMaterial(): Material$Baked;
+    particleMaterial(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState): Material$Baked;
 }

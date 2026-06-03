@@ -13,6 +13,8 @@ export class ObjectIntMutablePair<K extends Object | number | string | boolean> 
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectIntMutablePair<K>;
+    right(): number;
+    right(arg0: number): ObjectIntPair<K>;
     right(arg0: number): ObjectIntMutablePair<K>;
     right(): number;
     right(arg0: number): ObjectIntPair<K>;

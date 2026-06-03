@@ -10,6 +10,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BadlandsSurfaceBuilder extends SurfaceBuilder {
     static generateBands(paramarg0: number): Pair<(Object | null)[], OctaveSimplexNoiseSampler>;
     constructor(arg0: SurfaceConfig)
+    applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: Block, arg10: Block): Block[];
     applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: Block, arg11: Block): Block[];
     getBandY(arg0: number, arg1: number, arg2: number, arg3: OctaveSimplexNoiseSampler): number;
     getBaseBlock(arg0: number, arg1: Block[], arg2: BiomeSource, arg3: Block): Block;

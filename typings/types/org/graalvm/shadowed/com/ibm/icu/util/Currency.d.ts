@@ -1,5 +1,5 @@
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
-import type { Currency } from '../../../../../../../java/util/Currency.d.ts'
+import type { Currency as Currency_2 } from '../../../../../../../java/util/Currency.d.ts'
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -212,7 +212,7 @@ export class Currency extends MeasureUnit {
     static YEAR_PERSON: MeasureUnit;
     static findBySubType(paramsubType: string): MeasureUnit;
     static forIdentifier(paramidentifier: string): MeasureUnit;
-    static fromJavaCurrency(paramcurrency: Currency): Currency;
+    static fromJavaCurrency(paramcurrency: Currency_2): Currency;
     static fromMeasureUnitImpl(parammeasureUnitImpl: MeasureUnitImpl): MeasureUnit;
     static getAvailable(paramtype: string): MeasureUnit[];
     static getAvailable(): MeasureUnit[];
@@ -250,7 +250,7 @@ export class Currency extends MeasureUnit {
     getSymbol(loc: Locale): string;
     getSymbol(uloc: ULocale): string;
     // private readResolve(): Object;
-    toJavaCurrency(): Currency;
+    toJavaCurrency(): Currency_2;
     toString(): string;
     // private writeReplace(): Object;
 }

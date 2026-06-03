@@ -62,7 +62,11 @@ export class CpioArchiveOutputStream extends ArchiveOutputStream<CpioArchiveEntr
     finish(): void;
     // private pad(arg0: number): void;
     putArchiveEntry(arg0: CpioArchiveEntry): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     // private writeAsciiLong(arg0: number, arg1: number, arg2: number): void;
     // private writeBinaryLong(arg0: number, arg1: number, arg2: boolean): void;
     // private writeCString(arg0: number[]): void;

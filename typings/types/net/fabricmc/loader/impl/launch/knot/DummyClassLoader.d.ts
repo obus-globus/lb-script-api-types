@@ -13,5 +13,6 @@ export class DummyClassLoader extends ClassLoader {
     constructor()
     getResource(arg0: string): URL;
     getResources(arg0: string): Enumeration<URL>;
+    loadClass(arg0: string): Class<Object>;
     loadClass(arg0: string, arg1: boolean): Class<Object>;
 }

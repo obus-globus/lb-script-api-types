@@ -19,11 +19,15 @@ export class IntDoubleMutablePair extends Object implements IntDoublePair, Seria
     key(arg0: number): IntDoublePair;
     key(arg0: number): IntDoublePair;
     keyInt(): number;
+    left(): number;
+    left(arg0: number): IntDoublePair;
     left(arg0: number): IntDoubleMutablePair;
     left(): number;
     left(arg0: number): IntDoublePair;
     left(arg0: number): IntDoublePair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntDoublePair;
     right(arg0: number): IntDoubleMutablePair;
     right(): number;
     right(arg0: number): IntDoublePair;

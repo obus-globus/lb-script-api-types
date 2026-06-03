@@ -15,6 +15,7 @@ export class ShulkerRenderer extends MobRenderer<Shulker, ShulkerRenderState, Sh
     static getTextureLocation(paramcolor: DyeColor): Identifier;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ShulkerRenderState;
+    createRenderState(entity: Shulker, partialTicks: number): ShulkerRenderState;
     extractRenderState(entity: Shulker, state: ShulkerRenderState, partialTicks: number): void;
     getRenderOffset(state: ShulkerRenderState): Vec3;
     getTextureLocation(state: ShulkerRenderState): Identifier;

@@ -36,10 +36,12 @@ export class IntBuffer extends Buffer implements Comparable<IntBuffer> {
     hashCode(): number;
     heapSegment(arg0: Object, arg1: number, arg2: number, arg3: boolean, arg4: MemorySessionImpl): AbstractMemorySegmentImpl;
     isDirect(): boolean;
+    limit(): number;
     limit(arg0: number): IntBuffer;
     mark(): IntBuffer;
     mismatch(arg0: IntBuffer): number;
     order(): ByteOrder;
+    position(): number;
     position(arg0: number): IntBuffer;
     put(arg0: IntBuffer): IntBuffer;
     put(arg0: number): IntBuffer;

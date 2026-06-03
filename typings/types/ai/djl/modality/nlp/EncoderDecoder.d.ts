@@ -15,8 +15,12 @@ export class EncoderDecoder extends AbstractBlock {
     // private encoder: Encoder;
     describeInput(): Pair<K, V>[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
+    getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     initialize(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
     loadParameters(arg0: NDManager, arg1: DataInputStream): void;
     saveParameters(arg0: DataOutputStream): void;

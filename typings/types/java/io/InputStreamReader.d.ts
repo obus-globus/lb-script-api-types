@@ -17,6 +17,7 @@ export class InputStreamReader extends Reader {
     getEncoding(): string;
     read(): number;
     read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(arg0: string[], arg1: number, arg2: number): number;
     ready(): boolean;
 }

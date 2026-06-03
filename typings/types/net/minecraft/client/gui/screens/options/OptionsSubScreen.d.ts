@@ -30,6 +30,7 @@ export abstract class OptionsSubScreen extends Screen {
     addOptions(): void;
     addTitle(): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     removed(): void;
     repositionElements(): void;

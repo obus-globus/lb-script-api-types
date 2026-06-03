@@ -19,6 +19,8 @@ export class IntObjectMutablePair<V extends Object | number | string | boolean> 
     key(arg0: number): IntObjectPair<V>;
     key(arg0: number): IntObjectPair<V>;
     keyInt(): number;
+    left(): number;
+    left(arg0: number): IntObjectPair<V>;
     left(arg0: number): IntObjectMutablePair<V>;
     left(): number;
     left(arg0: number): IntObjectPair<V>;

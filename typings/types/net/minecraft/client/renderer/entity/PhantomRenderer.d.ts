@@ -11,6 +11,7 @@ export class PhantomRenderer extends MobRenderer<Phantom, PhantomRenderState, Ph
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): PhantomRenderState;
+    createRenderState(entity: Phantom, partialTicks: number): PhantomRenderState;
     extractRenderState(entity: Phantom, state: PhantomRenderState, partialTicks: number): void;
     getTextureLocation(state: PhantomRenderState): Identifier;
     scale(state: PhantomRenderState, poseStack: PoseStack): void;

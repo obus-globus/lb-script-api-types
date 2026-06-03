@@ -14,4 +14,5 @@ export class ServerOpList extends StoredUserList<NameAndId, ServerOpListEntry> {
     getKeyForUser(user: NameAndId): string;
     getUserList(): string[];
     remove(user: NameAndId): boolean;
+    remove(infos: StoredUserEntry<NameAndId>): boolean;
 }

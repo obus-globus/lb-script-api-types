@@ -7,6 +7,7 @@ import type { LayerDefinition } from '../../../../../../net/minecraft/client/mod
 import type { MeshDefinition } from '../../../../../../net/minecraft/client/model/geom/builders/MeshDefinition.d.ts'
 import type { MeshTransformer } from '../../../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
+import type { HumanoidRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/HumanoidRenderState.d.ts'
 import type { SkeletonRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/SkeletonRenderState.d.ts'
 import type { HumanoidArm } from '../../../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
 export class SkeletonModel<S extends SkeletonRenderState> extends HumanoidModel<S> {
@@ -24,5 +25,6 @@ export class SkeletonModel<S extends SkeletonRenderState> extends HumanoidModel<
     static createSingleModelDualBodyLayer(): LayerDefinition;
     constructor(root: ModelPart)
     setupAnim(state: S): void;
+    translateToHand(state: HumanoidRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
     translateToHand(state: SkeletonRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
 }

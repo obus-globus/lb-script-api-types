@@ -17,6 +17,7 @@ export class PufferfishRenderer extends MobRenderer<Pufferfish, PufferfishRender
     // private mid: EntityModel<EntityRenderState>;
     // private small: EntityModel<EntityRenderState>;
     createRenderState(): PufferfishRenderState;
+    createRenderState(entity: Pufferfish, partialTicks: number): PufferfishRenderState;
     extractRenderState(entity: Pufferfish, state: PufferfishRenderState, partialTicks: number): void;
     getShadowRadius(state: PufferfishRenderState): number;
     getTextureLocation(state: PufferfishRenderState): Identifier;

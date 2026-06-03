@@ -17,4 +17,5 @@ export class MultiNoiseLayer17 extends IntBiomeLayer {
     // private temperature: DoublePerlinNoiseSampler;
     // private weirdness: DoublePerlinNoiseSampler;
     sample(arg0: number, arg1: number, arg2: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
 }

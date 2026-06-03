@@ -1,3 +1,4 @@
+import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Lock } from '../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
@@ -24,5 +25,8 @@ export abstract class AbstractWriterAppender<M extends WriterManager> extends Ab
     getManager(): M;
     getStringLayout(): StringLayout;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
+    stop(timeout: number, timeUnit: TimeUnit, changeLifeCycleState: boolean): boolean;
 }

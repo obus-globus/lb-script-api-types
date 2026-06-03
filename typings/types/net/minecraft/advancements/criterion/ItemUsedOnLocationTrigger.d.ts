@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { ItemUsedOnLocationTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/ItemUsedOnLocationTrigger$TriggerInstance.d.ts'
 import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/criterion/SimpleCriterionTrigger.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
@@ -7,5 +8,6 @@ import type { ItemInstance } from '../../../../net/minecraft/world/item/ItemInst
 export class ItemUsedOnLocationTrigger extends SimpleCriterionTrigger<ItemUsedOnLocationTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ItemUsedOnLocationTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: ItemUsedOnLocationTrigger$TriggerInstance) => kotlin.Boolean): void;
     trigger(player: ServerPlayer, pos: BlockPos, tool: ItemInstance): void;
 }

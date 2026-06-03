@@ -66,6 +66,8 @@ export class FunctionNode extends LexicalContextExpression implements Flags<Func
     readonly usesAncestorScope: boolean;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept(visitor: NodeVisitor<LexicalContext>): Node;
+    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     getEndParserState(): Object;
     getFirstToken(): number;
@@ -121,7 +123,9 @@ export class FunctionNode extends LexicalContextExpression implements Flags<Func
     setFlags(lc: LexicalContext, flags: number): FunctionNode;
     setName(lc: LexicalContext, name: TruffleString): FunctionNode;
     setUsesAncestorScope(usesAncestorScope: boolean): void;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
     toStringTail(sb: StringBuilder, printTypes: boolean): void;
     usesAncestorScope(): boolean;
     usesNewTarget(): boolean;

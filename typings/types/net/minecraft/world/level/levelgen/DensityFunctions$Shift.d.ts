@@ -15,6 +15,7 @@ export class DensityFunctions$Shift extends Record implements DensityFunctions$S
     constructor(offsetNoise: DensityFunction$NoiseHolder)
     // private offsetNoise: DensityFunction$NoiseHolder;
     codec(): KeyDispatchDataCodec<DensityFunction>;
+    compute(localX: number, localY: number, localZ: number): number;
     compute(context: DensityFunction$FunctionContext): number;
     compute(localX: number, localY: number, localZ: number): number;
     equals(o: Object | null): boolean;

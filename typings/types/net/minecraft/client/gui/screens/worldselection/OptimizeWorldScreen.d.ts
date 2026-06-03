@@ -28,6 +28,7 @@ export class OptimizeWorldScreen extends Screen {
     // private upgrader: WorldUpgrader;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     removed(): void;
     shouldCloseOnEsc(): boolean;

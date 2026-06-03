@@ -12,4 +12,5 @@ export class StackTraceResponse extends Response {
     getBody(): StackTraceResponse$ResponseBody;
     hashCode(): number;
     setBody(body: StackTraceResponse$ResponseBody): StackTraceResponse;
+    setBody(body: Object): Response;
 }

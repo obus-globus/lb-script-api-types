@@ -7,7 +7,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ExtLayoutStrategy extends LayoutStrategy {
     constructor()
     createLocationForValue(shape: ShapeImpl, value: Object, putFlags: number): Location;
+    defineProperty(shape: ShapeImpl, key: Object, value: Object, flags: number): ShapeImpl;
     defineProperty(oldShape: ShapeImpl, key: Object, value: Object, propertyFlags: number, existing: Property, putFlags: number): ShapeImpl;
+    defineProperty(shape: ShapeImpl, key: Object, value: Object, flags: number, putFlags: number): ShapeImpl;
     definePropertyGeneralize(oldShape: ShapeImpl, oldProperty: Property, value: Object, putFlags: number): ShapeImpl;
     ensureSameTypeOrMoreGeneral(generalProperty: Property, specificProperty: Property): void;
     getLocationOrdinal(location: Location): number;

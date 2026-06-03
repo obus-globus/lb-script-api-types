@@ -16,4 +16,5 @@ export class ZombieRenderer extends AbstractZombieRenderer<Zombie, ZombieRenderS
     constructor(context: EntityRendererProvider$Context)
     constructor(context: EntityRendererProvider$Context, body: ModelLayerLocation, babyBody: ModelLayerLocation, armorSet: ArmorModelSet<ModelLayerLocation>, babyArmorSet: ArmorModelSet<ModelLayerLocation>)
     createRenderState(): ZombieRenderState;
+    createRenderState(entity: Zombie, partialTicks: number): ZombieRenderState;
 }

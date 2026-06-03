@@ -19,11 +19,15 @@ export class CharCharMutablePair extends Object implements CharCharPair, Seriali
     key(arg0: string): CharCharPair;
     key(arg0: string): CharCharPair;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharCharPair;
     left(arg0: string): CharCharMutablePair;
     left(): string;
     left(arg0: string): CharCharPair;
     left(arg0: string): CharCharPair;
     leftChar(): string;
+    right(): string;
+    right(arg0: string): CharCharPair;
     right(arg0: string): CharCharMutablePair;
     right(): string;
     right(arg0: string): CharCharPair;

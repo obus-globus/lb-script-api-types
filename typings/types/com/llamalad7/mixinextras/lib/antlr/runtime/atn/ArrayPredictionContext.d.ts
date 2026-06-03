@@ -1,3 +1,4 @@
+import type { Recognizer } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/Recognizer.d.ts'
 import type { RuleContext } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/RuleContext.d.ts'
 import type { ATN } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATN.d.ts'
 import type { PredictionContext } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/PredictionContext.d.ts'
@@ -22,4 +23,5 @@ export class ArrayPredictionContext extends PredictionContext {
     isEmpty(): boolean;
     size(): number;
     toString(): string;
+    toString(arg0: Recognizer<Object, Object>): string;
 }

@@ -20,5 +20,6 @@ export class JSGuardDisconnectedArgumentWriteNodeGen extends JSGuardDisconnected
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(argumentsArrayNodeValue: Object, rhsNodeValue: Object): Object;
     executeVoid(frameValue: VirtualFrame): void;
+    executeWrite(frame: VirtualFrame, value: Object): void;
     executeWrite(frameValue: VirtualFrame, argumentsArrayNodeValue: Object, rhsNodeValue: Object): void;
 }

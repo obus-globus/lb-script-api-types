@@ -19,11 +19,15 @@ export class FloatCharMutablePair extends Object implements FloatCharPair, Seria
     key(arg0: number): FloatCharPair;
     key(arg0: number): FloatCharPair;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatCharPair;
     left(arg0: number): FloatCharMutablePair;
     left(): number;
     left(arg0: number): FloatCharPair;
     left(arg0: number): FloatCharPair;
     leftFloat(): number;
+    right(): string;
+    right(arg0: string): FloatCharPair;
     right(arg0: string): FloatCharMutablePair;
     right(): string;
     right(arg0: string): FloatCharPair;

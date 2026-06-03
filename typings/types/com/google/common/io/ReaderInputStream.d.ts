@@ -19,6 +19,7 @@ export class ReaderInputStream extends InputStream {
     close(): void;
     // private drain(b: number[], off: number, len: number): number;
     read(): number;
+    read(arg0: number[]): number;
     read(b: number[], off: number, len: number): number;
     // private readMoreChars(): void;
     // private startDraining(overflow: boolean): void;

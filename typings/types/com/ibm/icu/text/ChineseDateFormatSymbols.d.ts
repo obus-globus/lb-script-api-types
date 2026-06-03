@@ -34,5 +34,6 @@ export class ChineseDateFormatSymbols extends DateFormatSymbols {
     getLeapMonth(arg0: number): string;
     initializeData(arg0: DateFormatSymbols): void;
     initializeData(arg0: ULocale, arg1: ICUResourceBundle, arg2: string): void;
+    initializeData(arg0: ULocale, arg1: string): void;
     // private initializeIsLeapMonth(): void;
 }

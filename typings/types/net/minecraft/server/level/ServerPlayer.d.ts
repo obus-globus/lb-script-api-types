@@ -20,6 +20,7 @@ import type { OutgoingChatMessage } from '../../../../net/minecraft/network/chat
 import type { RemoteChatSession } from '../../../../net/minecraft/network/chat/RemoteChatSession.d.ts'
 import type { CommonPlayerSpawnInfo } from '../../../../net/minecraft/network/protocol/game/CommonPlayerSpawnInfo.d.ts'
 import type { ServerStatus } from '../../../../net/minecraft/network/protocol/status/ServerStatus.d.ts'
+import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { MinecraftServer } from '../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { PlayerAdvancements } from '../../../../net/minecraft/server/PlayerAdvancements.d.ts'
@@ -234,6 +235,9 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     awardKillScore(victim: Entity, killingBlow: DamageSource): void;
     awardRecipes(recipes: E[]): number;
     awardRecipesByKey(recipeIds: ResourceKey<Recipe<Object>>[]): void;
+    awardStat(location: Identifier): void;
+    awardStat(location: Identifier, count: number): void;
+    awardStat(stat: Stat<Object>): void;
     awardStat(stat: Stat<Object>, count: number): void;
     // private bedBlocked(pos: BlockPos, direction: Direction): boolean;
     // private bedInRange(pos: BlockPos, direction: Direction): boolean;
@@ -261,6 +265,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     doCloseContainer(): void;
     doTick(): void;
     drop(all: boolean): void;
+    drop(itemStack: ItemStack, thrownFromHand: boolean): ItemEntity;
     drop(itemStack: ItemStack, randomly: boolean, thrownFromHand: boolean): ItemEntity;
     findRespawnPositionAndUseSpawnBlock(consumeSpawnBlock: boolean, postTeleportTransition: (param0: Entity) => void): TeleportTransition;
     forceSetRotation(yRot: number, relativeY: boolean, xRot: number, relativeX: boolean): void;
@@ -356,6 +361,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     resetStat(stat: Stat<Object>): void;
     // private respawnEntityOnShoulder(tag: CompoundTag): void;
     restoreFrom(oldPlayer: ServerPlayer, restoreAll: boolean): void;
+    restoreFrom(oldEntity: Entity): void;
     rideTick(): void;
     // private saveEnderPearls(playerOutput: ValueOutput): void;
     // private saveParentVehicle(playerOutput: ValueOutput): void;
@@ -386,12 +392,18 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     shouldFilterMessageTo(serverPlayer: ServerPlayer): boolean;
     showEndCredits(): void;
     snapTo(x: number, y: number, z: number): void;
+    snapTo(x: number, y: number, z: number, yRot: number, xRot: number): void;
+    snapTo(spawnPos: BlockPos, yRot: number, xRot: number): void;
+    snapTo(pos: Vec3): void;
+    snapTo(spawnPos: Vec3, yRot: number, xRot: number): void;
+    startRiding(entity: Entity): boolean;
     startRiding(entityToRide: Entity, force: boolean, sendEventAndTriggers: boolean): boolean;
     startSleepInBed(pos: BlockPos): Either<Player$BedSleepingProblem, Unit>;
     startSleeping(bedPosition: BlockPos): void;
     stopSleepInBed(forcefulWakeUp: boolean, updateLevelList: boolean): void;
     // private storeGameTypes(playerOutput: ValueOutput): void;
     swing(hand: InteractionHand): void;
+    swing(hand: InteractionHand, sendToSwingingEntity: boolean): void;
     // private synchronizeSpecialItemUpdates(itemStack: ItemStack): void;
     take(entity: Entity, orgCount: number): void;
     teleport(transition: TeleportTransition): ServerPlayer;

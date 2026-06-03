@@ -9,6 +9,7 @@ import type { SignedXblPostRequest } from '../../../../../net/raphimc/minecrafta
 import type { XblResponseHandler } from '../../../../../net/raphimc/minecraftauth/xbl/responsehandler/XblResponseHandler.d.ts'
 export class XblDeviceAuthenticateRequest extends SignedXblPostRequest implements XblResponseHandler<XblDeviceToken> {
     constructor(arg0: string, arg1: UUID, arg2: KeyPair)
+    handle(arg0: HttpResponse): XblDeviceToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): XblDeviceToken;
     handle<R extends Object | number | string | boolean>(arg0: HttpResponse): R;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;

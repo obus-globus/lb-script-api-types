@@ -5,6 +5,7 @@ export class ReaderJsonLexerWithComments extends ReaderJsonLexer {
     constructor(reader: InternalJsonReader, buffer: string[])
     canConsumeValue(): boolean;
     consumeNextToken(): number;
+    consumeNextToken(expected: number): number;
     consumeNextToken(expected: string): void;
     // private handleComment(position: number): Pair<number, boolean>;
     peekNextToken(): number;

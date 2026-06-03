@@ -11,6 +11,7 @@ export class ReaderJsonLexer extends AbstractJsonLexer {
     canConsumeValue(): boolean;
     consumeKeyString(): string;
     consumeNextToken(): number;
+    consumeNextToken(expected: number): number;
     consumeNextToken(expected: string): void;
     ensureHaveChars(): void;
     indexOf(char: string, startPos: number): number;

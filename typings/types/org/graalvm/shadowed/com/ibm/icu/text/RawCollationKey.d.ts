@@ -5,4 +5,5 @@ export class RawCollationKey extends ByteArrayWrapper {
     constructor(bytesToAdopt: number[], size: number)
     constructor(capacity: number)
     compareTo(rhs: RawCollationKey): number;
+    compareTo(other: ByteArrayWrapper): number;
 }

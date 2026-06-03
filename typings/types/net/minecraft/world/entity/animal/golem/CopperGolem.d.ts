@@ -164,6 +164,7 @@ export class CopperGolem extends AbstractGolem implements ContainerUser, Shearab
     getInteractionGetItemAnimationState(): AnimationState;
     getInteractionGetNoItemAnimationState(): AnimationState;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getLivingEntity(): LivingEntity;
     // private getSpinHeadSound(): SoundEvent;
     getState(): CopperGolemState;

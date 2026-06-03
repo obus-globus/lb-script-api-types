@@ -12,5 +12,6 @@ export class ProxyUtil$DoubleDelegatingClassLoader extends ClassLoader {
     static getSystemResources(paramarg0: string): Enumeration<URL>;
     constructor(arg0: ClassLoader, arg1: ClassLoader[])
     // private delegates: ClassLoader[];
+    loadClass(arg0: string): Class<Object>;
     loadClass(arg0: string, arg1: boolean): Class<Object>;
 }

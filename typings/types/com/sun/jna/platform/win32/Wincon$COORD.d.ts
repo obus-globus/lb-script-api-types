@@ -19,4 +19,5 @@ export class Wincon$COORD extends Structure {
     X: number;
     Y: number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

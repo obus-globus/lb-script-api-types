@@ -15,6 +15,7 @@ export class Joiner extends Object {
     join(arg0: Object[]): string;
     join(arg0: (Object | null)[]): string;
     join(arg0: Iterator<Object>): string;
+    toString(): string;
     toString(arg0: Object): CharSequence;
     useForNull(arg0: string): Joiner;
     withKeyValueSeparator(arg0: string): Joiner$MapJoiner;

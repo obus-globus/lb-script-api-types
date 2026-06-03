@@ -21,6 +21,7 @@ export class EconomicMapWrap<K extends Object | number | string | boolean, V ext
     clear(): void;
     containsKey(key: K): boolean;
     get(key: K): V;
+    get(key: K, defaultValue: V): V;
     getEntries(): MapCursor<K, V>;
     getKeys(): K[];
     getValues(): V[];

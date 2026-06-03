@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2ShortMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortMap$Entry.d.ts'
 import type { ObjectShortPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectShortPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2ShortArrayMap$MapEntry extends Object implements Object2Shor
     getShortValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ObjectShortPair<K>;
     right(arg0: number): ObjectShortPair<K>;
     right(): number;
     right(arg0: number): ObjectShortPair<K>;

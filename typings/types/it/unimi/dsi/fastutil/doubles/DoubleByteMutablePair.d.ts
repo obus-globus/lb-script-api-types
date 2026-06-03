@@ -19,11 +19,15 @@ export class DoubleByteMutablePair extends Object implements DoubleBytePair, Ser
     key(arg0: number): DoubleBytePair;
     key(arg0: number): DoubleBytePair;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleBytePair;
     left(arg0: number): DoubleByteMutablePair;
     left(): number;
     left(arg0: number): DoubleBytePair;
     left(arg0: number): DoubleBytePair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleBytePair;
     right(arg0: number): DoubleByteMutablePair;
     right(): number;
     right(arg0: number): DoubleBytePair;

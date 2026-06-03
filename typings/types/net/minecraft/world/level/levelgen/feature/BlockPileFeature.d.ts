@@ -8,6 +8,7 @@ import type { LevelAccessor } from '../../../../../../net/minecraft/world/level/
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -118,5 +119,6 @@ export class BlockPileFeature extends Feature<BlockPileConfiguration> {
     constructor(codec: Codec<BlockPileConfiguration>)
     // private mayPlaceOn(level: LevelAccessor, blockPos: BlockPos, random: RandomSource): boolean;
     place(context: FeaturePlaceContext<BlockPileConfiguration>): boolean;
+    place(config: BlockPileConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     // private tryPlaceBlock(level: WorldGenLevel, blockPos: BlockPos, random: RandomSource, config: BlockPileConfiguration): void;
 }

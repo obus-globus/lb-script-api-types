@@ -3,6 +3,7 @@ import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/byte
 export abstract class ByteIterators$AbstractIndexBasedListIterator extends ByteIterators$AbstractIndexBasedIterator implements ByteListIterator {
     constructor(arg0: number, arg1: number)
     add(arg0: number): void;
+    add(arg0: number): void;
     add(arg0: number, arg1: number): void;
     add(arg0: number): void;
     add(arg0: number): void;
@@ -14,6 +15,7 @@ export abstract class ByteIterators$AbstractIndexBasedListIterator extends ByteI
     previousByte(): number;
     previousIndex(): number;
     remove(): void;
+    set(arg0: number): void;
     set(arg0: number): void;
     set(arg0: number, arg1: number): void;
     set(arg0: number): void;

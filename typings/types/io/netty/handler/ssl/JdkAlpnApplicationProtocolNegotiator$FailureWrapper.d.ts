@@ -5,4 +5,5 @@ import type { SSLEngine } from '../../../../javax/net/ssl/SSLEngine.d.ts'
 export class JdkAlpnApplicationProtocolNegotiator$FailureWrapper extends JdkApplicationProtocolNegotiator$AllocatorAwareSslEngineWrapperFactory {
     private constructor()
     wrapSslEngine(arg0: SSLEngine, arg1: ByteBufAllocator, arg2: JdkApplicationProtocolNegotiator, arg3: boolean): SSLEngine;
+    wrapSslEngine(arg0: SSLEngine, arg1: JdkApplicationProtocolNegotiator, arg2: boolean): SSLEngine;
 }

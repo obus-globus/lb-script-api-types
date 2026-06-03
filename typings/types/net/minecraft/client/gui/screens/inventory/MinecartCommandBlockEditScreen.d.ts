@@ -23,5 +23,6 @@ export class MinecartCommandBlockEditScreen extends AbstractCommandBlockEditScre
     getCommandBlock(): BaseCommandBlock;
     getPreviousY(): number;
     init(): void;
+    init(width: number, height: number): void;
     populateAndSendPacket(): void;
 }

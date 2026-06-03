@@ -11,6 +11,8 @@ export class ReferenceBooleanMutablePair<K extends Object | number | string | bo
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceBooleanMutablePair<K>;
+    right(): boolean;
+    right(arg0: boolean): ReferenceBooleanPair<K>;
     right(arg0: boolean): ReferenceBooleanMutablePair<K>;
     right(): boolean;
     right(arg0: boolean): ReferenceBooleanPair<K>;

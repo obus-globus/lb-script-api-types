@@ -1,3 +1,4 @@
+import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'
 import type { BlockLZ4CompressorOutputStream$Pair } from '../../../../../../org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorOutputStream$Pair.d.ts'
@@ -28,6 +29,9 @@ export class BlockLZ4CompressorOutputStream extends CompressorOutputStream<Outpu
     // private recordBackReference(arg0: LZ77Compressor$BackReference): void;
     // private recordLiteral(arg0: number[]): void;
     // private rewriteLastPairs(): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     // private writeBlocksAndReturnUnfinishedPair(arg0: number): BlockLZ4CompressorOutputStream$Pair;

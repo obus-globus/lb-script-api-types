@@ -174,6 +174,7 @@ export class Chicken extends Animal {
     isFood(itemStack: ItemStack): boolean;
     onFlap(): void;
     playStepSound(pos: BlockPos, blockState: BlockState): void;
+    positionRider(passenger: Entity): void;
     positionRider(passenger: Entity, moveFunction: (param0: Entity, param1: number, param2: number, param3: number) => void): void;
     readAdditionalSaveData(input: ValueInput): void;
     registerGoals(): void;

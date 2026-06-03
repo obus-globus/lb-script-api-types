@@ -1,4 +1,5 @@
 import type { AbstractReferenceCounted } from '../../../../io/netty/util/AbstractReferenceCounted.d.ts'
+import type { ReferenceCounted } from '../../../../io/netty/util/ReferenceCounted.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FastBinaryMinHeap$Entry } from '../../../../org/cloudburstmc/netty/util/FastBinaryMinHeap$Entry.d.ts'
 export class FastBinaryMinHeap<E extends Object | number | string | boolean> extends AbstractReferenceCounted {
@@ -17,5 +18,6 @@ export class FastBinaryMinHeap<E extends Object | number | string | boolean> ext
     remove(): void;
     // private resize(arg0: number): void;
     size(): number;
+    touch(): ReferenceCounted;
     touch(arg0: Object): FastBinaryMinHeap<E>;
 }

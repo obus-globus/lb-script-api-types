@@ -36,6 +36,7 @@ export class MutableClassDescriptor extends ClassDescriptorBase {
     getModality(): Modality;
     getStaticScope(): MemberScope;
     getTypeConstructor(): TypeConstructor;
+    getUnsubstitutedMemberScope(): MemberScope;
     getUnsubstitutedMemberScope(arg0: KotlinTypeRefiner): MemberScope;
     getUnsubstitutedPrimaryConstructor(): ClassConstructorDescriptor;
     getValueClassRepresentation(): ValueClassRepresentation<SimpleType>;

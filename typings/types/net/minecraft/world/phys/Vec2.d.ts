@@ -17,6 +17,7 @@ export class Vec2 extends Object {
     add(rhs: Vec2): Vec2;
     distanceToSqr(p: Vec2): number;
     dot(v: Vec2): number;
+    equals(other: Object | null): boolean;
     equals(rhs: Vec2): boolean;
     length(): number;
     lengthSquared(): number;

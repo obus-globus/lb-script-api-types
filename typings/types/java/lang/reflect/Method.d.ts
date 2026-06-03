@@ -16,6 +16,7 @@ export class Method extends Executable {
     constructor(arg0: Class<Object>, arg1: string, arg2: Class<Object>[], arg3: Class<Object>, arg4: Class<Object>[], arg5: number, arg6: number, arg7: string, arg8: number[], arg9: number[], arg10: number[])
     // private acquireMethodAccessor(): MethodAccessor;
     checkCanSetAccessible(arg0: Class<Object>): void;
+    checkCanSetAccessible(arg0: Class<Object>, arg1: Class<Object>): void;
     copy(): Method;
     equals(arg0: Object | null): boolean;
     getAnnotatedReturnType(): AnnotatedType;

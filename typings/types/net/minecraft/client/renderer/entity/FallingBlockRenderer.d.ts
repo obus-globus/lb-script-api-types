@@ -10,6 +10,7 @@ export class FallingBlockRenderer extends EntityRenderer<FallingBlockEntity, Fal
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): FallingBlockRenderState;
+    createRenderState(entity: FallingBlockEntity, partialTicks: number): FallingBlockRenderState;
     extractRenderState(entity: FallingBlockEntity, state: FallingBlockRenderState, partialTicks: number): void;
     shouldRender(entity: FallingBlockEntity, culler: Frustum, camX: number, camY: number, camZ: number): boolean;
     submit(state: FallingBlockRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

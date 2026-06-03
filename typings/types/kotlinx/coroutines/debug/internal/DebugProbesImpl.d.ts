@@ -3,8 +3,6 @@ import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { SimpleDateFormat } from '../../../../java/text/SimpleDateFormat.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { Pair } from '../../../../kotlin/Pair.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
@@ -22,7 +20,7 @@ export class DebugProbesImpl extends Object {
     dumpCoroutines(out: PrintStream): void;
     dumpCoroutinesInfo(): DebugCoroutineInfo[];
     dumpCoroutinesInfoAsJsonAndReferences(): Object[];
-    // private dumpCoroutinesInfoImpl(create: Function2<DebugProbesImpl$CoroutineOwner<Object>, CoroutineContext, R>): R[];
+    // private dumpCoroutinesInfoImpl(create: (param0: DebugProbesImpl$CoroutineOwner<Object>, param1: CoroutineContext) => R): R[];
     // private dumpCoroutinesSynchronized(out: PrintStream): void;
     dumpDebuggerInfo(): DebuggerInfo[];
     enhanceStackTraceWithThreadDump(info: DebugCoroutineInfo, coroutineTrace: StackTraceElement[]): StackTraceElement[];
@@ -30,7 +28,7 @@ export class DebugProbesImpl extends Object {
     // private enhanceStackTraceWithThreadDumpImpl(state: string, thread: Thread | null, coroutineTrace: StackTraceElement[]): StackTraceElement[];
     // private findContinuationStartIndex(indexOfResumeWith: number, actualTrace: StackTraceElement[], coroutineTrace: StackTraceElement[]): Pair<number, number>;
     // private findIndexOfFrame(frameIndex: number, actualTrace: StackTraceElement[], coroutineTrace: StackTraceElement[]): number;
-    // private getDynamicAttach(): Function1<boolean, void> | null;
+    // private getDynamicAttach(): (param0: boolean) => void | null;
     hierarchyToString(job: Job): string;
     install(): void;
     // private printStackTrace(out: PrintStream, frames: StackTraceElement[]): void;

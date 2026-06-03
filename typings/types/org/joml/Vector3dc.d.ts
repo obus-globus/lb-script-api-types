@@ -38,6 +38,7 @@ export interface Vector3dc extends Object{
     div(arg0: Vector3fc, arg1: Vector3d): Vector3d;
     dot(arg0: number, arg1: number, arg2: number): number;
     dot(arg0: Vector3dc): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number): boolean;
     equals(arg0: Vector3dc, arg1: number): boolean;
     floor(arg0: Vector3d): Vector3d;

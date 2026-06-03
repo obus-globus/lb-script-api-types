@@ -1,3 +1,4 @@
+import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'
 import type { LZ77Compressor } from '../../../../../../org/apache/commons/compress/compressors/lz77support/LZ77Compressor.d.ts'
@@ -17,6 +18,9 @@ export class SnappyCompressorOutputStream extends CompressorOutputStream<OutputS
     // private oneByte: number[];
     close(): void;
     finish(): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     // private writeBackReference(arg0: LZ77Compressor$BackReference): void;

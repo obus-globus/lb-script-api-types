@@ -6,6 +6,7 @@ import type { PlayFabEntityToken } from '../../../../../net/raphimc/minecraftaut
 import type { PlayFabResponseHandler } from '../../../../../net/raphimc/minecraftauth/playfab/responsehandler/PlayFabResponseHandler.d.ts'
 export class PlayFabGetEntityTokenRequest extends PostRequest implements PlayFabResponseHandler<PlayFabEntityToken> {
     constructor(arg0: PlayFabEntityToken, arg1: string, arg2: string, arg3: string)
+    handle(arg0: HttpResponse): PlayFabEntityToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): PlayFabEntityToken;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

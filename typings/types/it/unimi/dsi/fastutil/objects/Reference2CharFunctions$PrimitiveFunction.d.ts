@@ -68,6 +68,7 @@ export class Reference2CharFunctions$PrimitiveFunction<K extends Object | number
     put(arg0: K, arg1: string): string;
     put(arg0: K, arg1: string): string;
     put(arg0: K, arg1: string): string;
+    put(arg0: K, arg1: string): string;
     remove(arg0: Object): string;
     removeChar(arg0: Object): string;
 }

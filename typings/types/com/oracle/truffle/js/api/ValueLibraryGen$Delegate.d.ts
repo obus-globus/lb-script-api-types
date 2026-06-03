@@ -15,5 +15,6 @@ export class ValueLibraryGen$Delegate extends ValueLibrary {
     isProxy(receiver_: Object): boolean;
     toBoolean(receiver_: Object): boolean;
     toNumber(receiver_: Object): Number;
+    toString(): string;
     toString(receiver_: Object): TruffleString;
 }

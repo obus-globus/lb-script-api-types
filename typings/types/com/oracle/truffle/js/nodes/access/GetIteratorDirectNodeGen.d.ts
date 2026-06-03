@@ -16,6 +16,7 @@ export class GetIteratorDirectNodeGen extends GetIteratorDirectNode {
     // private getNextMethodNode: PropertyGetNode;
     // private state_0_: number;
     execute(arg0Value: Node, arg1Value: Object): IteratorRecord;
+    execute(iterator: Object): IteratorRecord;
     // private executeAndSpecialize(arg0Value: Node, arg1Value: Object): IteratorRecord;
     // private fallbackGuard_(state_0: number, arg0Value: Node, arg1Value: Object): boolean;
 }

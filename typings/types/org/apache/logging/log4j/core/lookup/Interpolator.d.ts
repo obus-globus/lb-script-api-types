@@ -17,10 +17,12 @@ export class Interpolator extends AbstractConfigurationAwareLookup implements Lo
     readonly defaultLookup: StrLookup;
     loggerContext: WeakReference<LoggerContext>;
     readonly strLookupMap: { [key: string]: StrLookup };
+    evaluate(key: string): LookupResult;
     evaluate(event: LogEvent, var_: string): LookupResult;
     getDefaultLookup(): StrLookup;
     getStrLookupMap(): { [key: string]: StrLookup };
     // private handleError(lookupKey: string, t: Throwable): void;
+    lookup(key: string): string;
     lookup(event: LogEvent, var_: string): string;
     setConfiguration(configuration: Configuration): void;
     setLoggerContext(loggerContext: LoggerContext): void;

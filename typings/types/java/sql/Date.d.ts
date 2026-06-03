@@ -1,9 +1,9 @@
 import type { Instant } from '../../java/time/Instant.d.ts'
 import type { LocalDate } from '../../java/time/LocalDate.d.ts'
-import type { Date } from '../../java/util/Date.d.ts'
-export class Date extends Date {
+import type { Date as Date_2 } from '../../java/util/Date.d.ts'
+export class Date extends Date_2 {
     static UTC(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
-    static from(paramarg0: Instant): Date;
+    static from(paramarg0: Instant): Date_2;
     static parse(paramarg0: string): number;
     static valueOf(paramarg0: string): Date;
     static valueOf(paramarg0: LocalDate): Date;

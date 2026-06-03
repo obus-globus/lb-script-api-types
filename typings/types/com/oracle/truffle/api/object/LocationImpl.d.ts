@@ -12,6 +12,8 @@ export abstract class LocationImpl extends Location {
     canStoreFinal(store: DynamicObject, value: Object): boolean;
     clear(store: DynamicObject): void;
     equals(obj: Object | null): boolean;
+    get(store: DynamicObject): Object;
+    get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     getBoolean(store: DynamicObject, guard: boolean): boolean;
     getDouble(store: DynamicObject, guard: boolean): number;

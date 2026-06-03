@@ -3,6 +3,7 @@ export class ULocale$RegionValidateMap extends Object {
     static BUILTIN: ULocale$RegionValidateMap;
     constructor()
     // private map: number[];
+    equals(other: Object | null): boolean;
     equals(that: ULocale$RegionValidateMap): boolean;
     isSet(region: string): boolean;
     value(region: string): number;

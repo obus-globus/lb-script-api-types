@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Lazy } from '../../../../../../../kotlin/Lazy.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -41,7 +40,7 @@ export class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements M
     getPackage(arg0: FqName): PackageViewDescriptor;
     getPackageFragmentProvider(): PackageFragmentProvider;
     // private getPackageFragmentProviderForWholeModuleWithDependencies(): CompositePackageFragmentProvider;
-    getSubPackagesOf(arg0: FqName, arg1: Function1<Name, boolean>): E[];
+    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): E[];
     initialize(arg0: PackageFragmentProvider): void;
     // private isInitialized(): boolean;
     isValid(): boolean;

@@ -1,7 +1,5 @@
 import type { CancellationException } from '../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineContext$Element } from '../../kotlin/coroutines/CoroutineContext$Element.d.ts'
@@ -22,13 +20,14 @@ export interface Job extends Object, CoroutineContext$Element{
     cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
-    fold<R extends Object | number | string | boolean>(initial: R, operation: Function2<R, CoroutineContext$Element, R>): R;
+    fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     getCancellationException(): CancellationException;
-    invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: Function1<Throwable, void>): DisposableHandle;
-    invokeOnCompletion(handler: Function1<Throwable, void>): DisposableHandle;
+    invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: (param0: Throwable | null) => void): DisposableHandle;
+    invokeOnCompletion(handler: (param0: Throwable | null) => void): DisposableHandle;
     join(): void;
     minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    plus(context: CoroutineContext): CoroutineContext;
     plus(other: Job): Job;
     start(): boolean;
 }

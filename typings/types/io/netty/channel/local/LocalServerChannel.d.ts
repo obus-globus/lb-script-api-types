@@ -22,6 +22,7 @@ export class LocalServerChannel extends AbstractServerChannel {
     doBind(arg0: SocketAddress): void;
     doClose(): void;
     doDeregister(): void;
+    doRegister(): void;
     doRegister(arg0: ChannelPromise): void;
     isActive(): boolean;
     isCompatible(arg0: (Object | null)[]): boolean;

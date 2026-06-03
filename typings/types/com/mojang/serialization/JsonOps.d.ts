@@ -39,6 +39,7 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     createLongList<T extends Object | number | string | boolean>(arg0: LongStream): T;
     createMap<T extends Object | number | string | boolean>(arg0: Map<T, T>): T;
     createMap(arg0: Stream<Pair<JsonElement, JsonElement>>): JsonElement;
+    createMap(arg0: Map<JsonElement, JsonElement>): JsonElement;
     createNumeric(arg0: Number): JsonElement;
     createShort<T extends Object | number | string | boolean>(arg0: number): T;
     createString(arg0: string): JsonElement;
@@ -63,6 +64,7 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     getMapValues(arg0: JsonElement): DataResult<Stream<Pair<JsonElement, JsonElement>>>;
     getNumberValue<T extends Object | number | string | boolean>(arg0: T, arg1: Number): Number;
     getNumberValue(arg0: JsonElement): DataResult<Number>;
+    getNumberValue(arg0: JsonElement, arg1: Number): Number;
     getStream(arg0: JsonElement): DataResult<Stream<JsonElement>>;
     getStringValue(arg0: JsonElement): DataResult<string>;
     listBuilder(): ListBuilder<T>;
@@ -76,6 +78,7 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     mergeToMap<T extends Object | number | string | boolean>(arg0: T, arg1: Map<T, T>): DataResult<T>;
     mergeToMap(arg0: JsonElement, arg1: JsonElement, arg2: JsonElement): DataResult<JsonElement>;
     mergeToMap(arg0: JsonElement, arg1: MapLike<JsonElement>): DataResult<JsonElement>;
+    mergeToMap(arg0: JsonElement, arg1: Map<JsonElement, JsonElement>): DataResult<JsonElement>;
     mergeToPrimitive<T extends Object | number | string | boolean>(arg0: T, arg1: T): DataResult<T>;
     remove(arg0: JsonElement, arg1: string): JsonElement;
     set<T extends Object | number | string | boolean>(arg0: T, arg1: string, arg2: T): T;

@@ -19,5 +19,7 @@ export class ReturnNode extends Statement {
     isTerminal(): boolean;
     setExpression(expression: Expression): ReturnNode;
     setInTerminalPosition(inTerminalPosition: boolean): void;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

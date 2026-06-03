@@ -17,6 +17,7 @@ export class ArmorStandRenderer extends LivingEntityRenderer<ArmorStand, ArmorSt
     // private bigModel: ArmorStandArmorModel;
     // private smallModel: ArmorStandArmorModel;
     createRenderState(): ArmorStandRenderState;
+    createRenderState(entity: ArmorStand, partialTicks: number): ArmorStandRenderState;
     extractRenderState(entity: ArmorStand, state: ArmorStandRenderState, partialTicks: number): void;
     getRenderType(state: ArmorStandRenderState, isBodyVisible: boolean, forceTransparent: boolean, appearGlowing: boolean): RenderType;
     getTextureLocation(state: ArmorStandRenderState): Identifier;

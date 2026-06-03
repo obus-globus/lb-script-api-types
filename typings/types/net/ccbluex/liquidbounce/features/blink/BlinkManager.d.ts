@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ModeValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -41,13 +40,13 @@ export class BlinkManager extends ValueGroup implements EventListener {
     cancel(): void;
     children(): EventListener[];
     // private fireEvent(packet: Packet<Object> | null, origin: TransferOrigin): BlinkManager$Action;
-    flush(flushWhen: Function1<PacketSnapshot, boolean>): void;
+    flush(flushWhen: (param0: PacketSnapshot) => boolean): void;
     flush(count: number): void;
     flush(origin: TransferOrigin): void;
     // private flushSnapshot(snapshot: PacketSnapshot): void;
     // private getEspData(): BlinkEspData | null;
     isAboveTime(delay: number): boolean;
     parent(): EventListener | null;
-    rewrite(action: Function1<T, void>): void;
+    rewrite(action: (param0: T) => void): void;
     unregister(): void;
 }

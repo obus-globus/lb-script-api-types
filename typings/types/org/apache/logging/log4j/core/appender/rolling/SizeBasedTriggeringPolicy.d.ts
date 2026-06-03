@@ -11,6 +11,7 @@ export class SizeBasedTriggeringPolicy extends AbstractTriggeringPolicy {
     // private manager: RollingFileManager;
     readonly maxFileSize: number;
     getMaxFileSize(): number;
+    initialize(): void;
     initialize(aManager: RollingFileManager): void;
     isTriggeringEvent(event: LogEvent): boolean;
     toString(): string;

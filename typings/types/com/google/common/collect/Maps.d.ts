@@ -9,7 +9,7 @@ import type { SortedMapDifference } from '../../../../com/google/common/collect/
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
-import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'

@@ -19,11 +19,15 @@ export class BooleanIntMutablePair extends Object implements BooleanIntPair, Ser
     key(arg0: boolean): BooleanIntPair;
     key(arg0: boolean): BooleanIntPair;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanIntPair;
     left(arg0: boolean): BooleanIntMutablePair;
     left(): boolean;
     left(arg0: boolean): BooleanIntPair;
     left(arg0: boolean): BooleanIntPair;
     leftBoolean(): boolean;
+    right(): number;
+    right(arg0: number): BooleanIntPair;
     right(arg0: number): BooleanIntMutablePair;
     right(): number;
     right(arg0: number): BooleanIntPair;

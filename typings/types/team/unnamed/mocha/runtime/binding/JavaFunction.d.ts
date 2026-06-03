@@ -11,6 +11,7 @@ export class JavaFunction<T extends Object | number | string | boolean> extends 
     // private object: Object;
     // private pure: boolean;
     // private evaluate(): void;
+    evaluate(arg0: ExecutionContext<T>): Value;
     evaluate(arg0: ExecutionContext<T>, arg1: Function$Arguments): Value;
     evaluate(arg0: ExecutionContext<T>): Value;
     method(): Method;

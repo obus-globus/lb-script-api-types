@@ -10,6 +10,7 @@ export class Multimaps$CustomSortedSetMultimap<K extends Object | number | strin
     // private valueComparator: (param0: V) => kotlin.Boolean;
     createAsMap(): Map<K, E[]>;
     createCollection(): V[];
+    createCollection(key: K): E[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
     valueComparator(): (param0: V) => kotlin.Boolean;

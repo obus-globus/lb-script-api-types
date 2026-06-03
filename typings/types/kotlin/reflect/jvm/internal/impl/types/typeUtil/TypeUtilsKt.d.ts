@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
@@ -10,7 +9,7 @@ import type { TypeProjection } from '../../../../../../../kotlin/reflect/jvm/int
 import type { Variance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/Variance.d.ts'
 export class TypeUtilsKt extends Object {
     static asTypeProjection(paramarg0: KotlinType): TypeProjection;
-    static contains(paramarg0: KotlinType, paramarg1: Function1<Object, boolean>): boolean;
+    static contains(paramarg0: KotlinType, paramarg1: (param0: Object | null) => boolean): boolean;
     static containsTypeAliasParameters(paramarg0: KotlinType): boolean;
     static containsTypeParameter(paramarg0: KotlinType): boolean;
     static createProjection(paramarg0: KotlinType, paramarg1: Variance, paramarg2: TypeParameterDescriptor): TypeProjection;

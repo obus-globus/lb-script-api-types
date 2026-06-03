@@ -1,6 +1,6 @@
-import type { Cookie } from '../../../../../io/netty/handler/codec/http/cookie/Cookie.d.ts'
+import type { Cookie as Cookie_2 } from '../../../../../io/netty/handler/codec/http/cookie/Cookie.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Cookie extends Cookie, Object{
+export interface Cookie extends Cookie_2, Object{
     comment(): string;
     commentUrl(): string;
     getComment(): string;

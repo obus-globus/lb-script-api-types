@@ -19,11 +19,15 @@ export class FloatBooleanMutablePair extends Object implements FloatBooleanPair,
     key(arg0: number): FloatBooleanPair;
     key(arg0: number): FloatBooleanPair;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatBooleanPair;
     left(arg0: number): FloatBooleanMutablePair;
     left(): number;
     left(arg0: number): FloatBooleanPair;
     left(arg0: number): FloatBooleanPair;
     leftFloat(): number;
+    right(): boolean;
+    right(arg0: boolean): FloatBooleanPair;
     right(arg0: boolean): FloatBooleanMutablePair;
     right(): boolean;
     right(arg0: boolean): FloatBooleanPair;

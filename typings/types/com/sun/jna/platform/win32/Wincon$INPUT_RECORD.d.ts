@@ -24,4 +24,5 @@ export class Wincon$INPUT_RECORD extends Structure {
     EventType: number;
     read(): void;
     toString(): string;
+    toString(arg0: boolean): string;
 }

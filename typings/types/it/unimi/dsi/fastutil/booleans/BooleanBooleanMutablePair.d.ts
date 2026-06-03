@@ -19,11 +19,15 @@ export class BooleanBooleanMutablePair extends Object implements BooleanBooleanP
     key(arg0: boolean): BooleanBooleanPair;
     key(arg0: boolean): BooleanBooleanPair;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanBooleanPair;
     left(arg0: boolean): BooleanBooleanMutablePair;
     left(): boolean;
     left(arg0: boolean): BooleanBooleanPair;
     left(arg0: boolean): BooleanBooleanPair;
     leftBoolean(): boolean;
+    right(): boolean;
+    right(arg0: boolean): BooleanBooleanPair;
     right(arg0: boolean): BooleanBooleanMutablePair;
     right(): boolean;
     right(arg0: boolean): BooleanBooleanPair;

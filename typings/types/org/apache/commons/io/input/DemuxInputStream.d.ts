@@ -7,4 +7,6 @@ export class DemuxInputStream extends InputStream {
     bindStream(arg0: InputStream): InputStream;
     close(): void;
     read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
 }

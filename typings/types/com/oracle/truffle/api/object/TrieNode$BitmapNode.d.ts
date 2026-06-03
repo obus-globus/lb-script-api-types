@@ -8,9 +8,12 @@ export class TrieNode$BitmapNode<K extends Object | number | string | boolean, V
     // private entries: Object[];
     // private collapseSingletonNode(node: TrieNode<K, V, E>): Object;
     entries(): Object[];
+    find(key: K, hash: number): E;
     find(key: K, hash: number, shift: number): E;
     // private index(bit: number): number;
+    put(key: K, hash: number, entry: E): TrieNode<K, V, E>;
     put(key: K, hash: number, entry: E, shift: number): TrieNode<K, V, E>;
+    remove(key: K, hash: number): TrieNode<K, V, E>;
     remove(key: K, hash: number, shift: number): TrieNode<K, V, E>;
     // private removeBitAndIndex(bit: number, index: number): TrieNode<K, V, E>;
 }

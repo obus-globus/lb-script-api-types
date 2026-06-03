@@ -1,4 +1,5 @@
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
+import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Converter<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Object implements Function<A, B> {
     static from(paramforwardFunction: (param0: Object | null) => Object | null, parambackwardFunction: (param0: Object | null) => Object | null): Converter<Object, Object>;
@@ -8,6 +9,7 @@ export abstract class Converter<A extends Object | number | string | boolean, B 
     // private handleNullAutomatically: boolean;
     // private reverse: Converter<B, A>;
     andThen(secondConverter: Converter<B, C>): Converter<A, C>;
+    andThen(arg0: (param0: B) => V): (param0: A) => V;
     apply(a: A): B;
     convert(a: A): B;
     convertAll(fromIterable: A[]): B[];

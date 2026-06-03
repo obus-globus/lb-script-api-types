@@ -19,11 +19,15 @@ export class LongDoubleMutablePair extends Object implements LongDoublePair, Ser
     key(arg0: number): LongDoublePair;
     key(arg0: number): LongDoublePair;
     keyLong(): number;
+    left(): number;
+    left(arg0: number): LongDoublePair;
     left(arg0: number): LongDoubleMutablePair;
     left(): number;
     left(arg0: number): LongDoublePair;
     left(arg0: number): LongDoublePair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongDoublePair;
     right(arg0: number): LongDoubleMutablePair;
     right(): number;
     right(arg0: number): LongDoublePair;

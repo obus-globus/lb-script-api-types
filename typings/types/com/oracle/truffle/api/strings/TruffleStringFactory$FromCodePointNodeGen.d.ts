@@ -6,5 +6,6 @@ export class TruffleStringFactory$FromCodePointNodeGen extends TruffleString$Fro
     static getUncached(): TruffleString$FromCodePointNode;
     private constructor()
     // private state_0_: number;
+    execute(codepoint: number, encoding: TruffleString$Encoding): TruffleString;
     execute(arg0Value: number, arg1Value: TruffleString$Encoding, arg2Value: boolean): TruffleString;
 }

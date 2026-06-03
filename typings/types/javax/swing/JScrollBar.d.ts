@@ -9,6 +9,7 @@ import type { AccessibleContext } from '../../javax/accessibility/AccessibleCont
 import type { BoundedRangeModel } from '../../javax/swing/BoundedRangeModel.d.ts'
 import type { JComponent } from '../../javax/swing/JComponent.d.ts'
 import type { ChangeListener } from '../../javax/swing/event/ChangeListener.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { ScrollBarUI } from '../../javax/swing/plaf/ScrollBarUI.d.ts'
 export class JScrollBar extends JComponent implements Adjustable, Accessible {
     static ABORT: number;
@@ -74,6 +75,7 @@ export class JScrollBar extends JComponent implements Adjustable, Accessible {
     setMinimumSize(arg0: Dimension): void;
     setModel(arg0: BoundedRangeModel): void;
     setOrientation(arg0: number): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: ScrollBarUI): void;
     setUnitIncrement(arg0: number): void;
     setValue(arg0: number): void;

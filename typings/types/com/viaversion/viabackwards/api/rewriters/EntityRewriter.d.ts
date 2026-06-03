@@ -5,6 +5,7 @@ import type { EntityDataType } from '../../../../../com/viaversion/viaversion/ap
 import type { ClientboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketHandler } from '../../../../../com/viaversion/viaversion/api/protocol/remapper/PacketHandler.d.ts'
+import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class EntityRewriter<C extends ClientboundPacketType, T extends BackwardsProtocol<C, Object, Object, Object>> extends EntityRewriterBase<C, T> {
     constructor(arg0: T)
@@ -12,6 +13,8 @@ export abstract class EntityRewriter<C extends ClientboundPacketType, T extends 
     getSpawnTrackerWithDataHandler(): (param0: PacketWrapper) => void;
     getSpawnTrackerWithDataHandler1_19(): (param0: PacketWrapper) => void;
     registerTracker(arg0: C): void;
+    registerTracker(arg0: C, arg1: EntityType): void;
+    registerTracker(arg0: C, arg1: EntityType, arg2: Type<number>): void;
     registerTrackerWithData(arg0: C): void;
     registerTrackerWithData1_19(arg0: C): void;
     trackAndMapEntity(arg0: PacketWrapper): EntityType;

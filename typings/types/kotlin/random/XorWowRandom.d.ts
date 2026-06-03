@@ -15,5 +15,7 @@ export class XorWowRandom extends Random implements Serializable {
     // private checkInvariants(): void;
     nextBits(bitCount: number): number;
     nextInt(): number;
+    nextInt(until: number): number;
+    nextInt(from: number, until: number): number;
     // private readResolve(): Object;
 }

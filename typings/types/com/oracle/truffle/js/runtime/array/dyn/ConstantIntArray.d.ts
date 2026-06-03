@@ -26,6 +26,7 @@ export class ConstantIntArray extends AbstractConstantArray {
     createWriteableObject(object: JSDynamicObject, index: number, value: Object, node: Node, profile: ScriptArray$CreateWritableProfileAccess): AbstractWritableArray;
     deleteElementImpl(object: JSDynamicObject, index: number, strict: boolean): ScriptArray;
     getElementInBounds(object: JSDynamicObject, index: number): Object;
+    getElementInBounds(object: JSDynamicObject, index: number): Object;
     hasElement(object: JSDynamicObject, index: number): boolean;
     length(object: JSDynamicObject): number;
     lengthInt(object: JSDynamicObject): number;

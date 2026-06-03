@@ -107,7 +107,11 @@ export class ZipArchiveOutputStream extends ArchiveOutputStream<ZipArchiveEntry>
     // private validateSizeInformation(arg0: Zip64Mode): void;
     // private versionNeededToExtract(arg0: number, arg1: boolean, arg2: boolean): number;
     // private versionNeededToExtractMethod(arg0: number): number;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     writeCentralDirectoryEnd(): void;
     // private writeCentralDirectoryInChunks(): void;
     writeCentralFileHeader(arg0: ZipArchiveEntry): void;

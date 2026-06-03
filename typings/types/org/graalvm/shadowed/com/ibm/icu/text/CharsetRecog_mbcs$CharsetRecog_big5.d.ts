@@ -7,5 +7,6 @@ export class CharsetRecog_mbcs$CharsetRecog_big5 extends CharsetRecog_mbcs {
     getLanguage(): string;
     getName(): string;
     match(det: CharsetDetector): CharsetMatch;
+    match(det: CharsetDetector, commonChars: number[]): number;
     nextChar(it: CharsetRecog_mbcs$iteratedChar, det: CharsetDetector): boolean;
 }

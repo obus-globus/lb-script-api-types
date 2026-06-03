@@ -21,6 +21,8 @@ export class RereadableInputStream extends InputStream {
     close(): void;
     // private closeStream(): void;
     read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
     rewind(): void;
     // private saveByte(arg0: number): void;
 }

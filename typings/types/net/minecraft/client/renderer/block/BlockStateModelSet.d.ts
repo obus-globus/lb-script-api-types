@@ -12,5 +12,6 @@ export class BlockStateModelSet extends Object implements FabricBlockStateModelS
     get(state: BlockState): BlockStateModel;
     getParticleMaterial(arg0: BlockState, arg1: BlockAndTintGetter, arg2: BlockPos): Material$Baked;
     getParticleMaterial(blockState: BlockState): Material$Baked;
+    getParticleMaterial(arg0: BlockState, arg1: BlockAndTintGetter, arg2: BlockPos): Material$Baked;
     missingModel(): BlockStateModel;
 }

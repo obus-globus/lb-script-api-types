@@ -11,6 +11,7 @@ import type { InsideBlockEffectApplier } from '../../../../../net/minecraft/worl
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { BlockPlaceContext } from '../../../../../net/minecraft/world/item/context/BlockPlaceContext.d.ts'
 import type { BlockGetter } from '../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
@@ -82,6 +83,7 @@ export class EndGatewayBlock extends BaseEntityBlock implements Portal {
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
     animateTick(state: BlockState, level: Level, pos: BlockPos, random: RandomSource): void;
+    canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     codec(): MapCodec<EndGatewayBlock>;
     entityInside(state: BlockState, level: Level, pos: BlockPos, entity: Entity, effectApplier: InsideBlockEffectApplier, isPrecise: boolean): void;

@@ -14,5 +14,6 @@ export class JSToBooleanNodeGen extends JSToBooleanNode {
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: Node, arg1Value: Object): boolean;
     executeBoolean(arg0Value: Node, arg1Value: Object): boolean;
+    executeBoolean(value: Object): boolean;
     // private foreignObject1Boundary(state_0: number, arg0Value: Node, arg1Value: Object): boolean;
 }

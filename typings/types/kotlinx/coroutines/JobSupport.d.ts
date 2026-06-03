@@ -1,7 +1,5 @@
 import type { CancellationException } from '../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { ChildHandle } from '../../kotlinx/coroutines/ChildHandle.d.ts'
 import type { ChildHandleNode } from '../../kotlinx/coroutines/ChildHandleNode.d.ts'
@@ -26,6 +24,7 @@ export class JobSupport extends Object implements ChildJob, Job, ParentJob {
     protected awaitInternal(): Object | null;
     // private awaitSuspend(): Object | null;
     cancel(): void;
+    cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
     cancelCoroutine(cause: Throwable | null): boolean;
@@ -49,19 +48,19 @@ export class JobSupport extends Object implements ChildJob, Job, ParentJob {
     protected handleJobException(exception: Throwable): boolean;
     handleOnCompletionException(exception: Throwable): void;
     protected initParentJob(parent: Job | null): void;
-    invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: Function1<Throwable, void>): DisposableHandle;
-    invokeOnCompletion(handler: Function1<Throwable, void>): DisposableHandle;
+    invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: (param0: Throwable | null) => void): DisposableHandle;
+    invokeOnCompletion(handler: (param0: Throwable | null) => void): DisposableHandle;
     invokeOnCompletionInternal(invokeImmediately: boolean, node: JobNode): DisposableHandle;
     join(): void;
     // private joinInternal(): boolean;
     // private joinSuspend(): void;
-    // private loopOnState(block: Function1<Object, void>): void;
+    // private loopOnState(block: (param0: Object | null) => void): void;
     // private makeCancelling(cause: Object | null): Object | null;
     makeCompleting(proposedUpdate: Object | null): boolean;
     makeCompletingOnce(proposedUpdate: Object | null): Object | null;
     nameString(): string;
     // private notifyCancelling(list: NodeList, cause: Throwable): void;
-    // private notifyHandlers(list: NodeList, cause: Throwable | null, predicate: Function1<JobNode, boolean>): void;
+    // private notifyHandlers(list: NodeList, cause: Throwable | null, predicate: (param0: JobNode) => boolean): void;
     // private onAwaitInternalProcessResFunc(ignoredParam: Object | null, result: Object | null): Object | null;
     // private onAwaitInternalRegFunc(select: SelectInstance<Object>, ignoredParam: Object | null): void;
     protected onCancelling(cause: Throwable | null): void;
@@ -82,6 +81,6 @@ export class JobSupport extends Object implements ChildJob, Job, ParentJob {
     // private tryMakeCancelling(state: Incomplete, rootCause: Throwable): boolean;
     // private tryMakeCompleting(state: Object | null, proposedUpdate: Object | null): Object | null;
     // private tryMakeCompletingSlowPath(state: Incomplete, proposedUpdate: Object | null): Object | null;
-    // private tryPutNodeIntoList(node: JobNode, tryAdd: Function2<Incomplete, NodeList, boolean>): boolean;
+    // private tryPutNodeIntoList(node: JobNode, tryAdd: (param0: Incomplete, param1: NodeList) => boolean): boolean;
     // private tryWaitForChild(state: JobSupport$Finishing, child: ChildHandleNode, proposedUpdate: Object | null): boolean;
 }

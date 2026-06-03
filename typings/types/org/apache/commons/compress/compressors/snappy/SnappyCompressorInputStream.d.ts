@@ -12,6 +12,8 @@ export class SnappyCompressorInputStream extends AbstractLZ77CompressorInputStre
     // private uncompressedBytesRemaining: number;
     // private fill(): void;
     getSize(): number;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readLiteralLength(arg0: number): number;
     // private readSize(): number;

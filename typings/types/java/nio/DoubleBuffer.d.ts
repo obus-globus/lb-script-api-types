@@ -36,10 +36,12 @@ export class DoubleBuffer extends Buffer implements Comparable<DoubleBuffer> {
     hashCode(): number;
     heapSegment(arg0: Object, arg1: number, arg2: number, arg3: boolean, arg4: MemorySessionImpl): AbstractMemorySegmentImpl;
     isDirect(): boolean;
+    limit(): number;
     limit(arg0: number): DoubleBuffer;
     mark(): DoubleBuffer;
     mismatch(arg0: DoubleBuffer): number;
     order(): ByteOrder;
+    position(): number;
     position(arg0: number): DoubleBuffer;
     put(arg0: DoubleBuffer): DoubleBuffer;
     put(arg0: number): DoubleBuffer;

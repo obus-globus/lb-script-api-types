@@ -7,6 +7,7 @@ import type { RealmsServer } from '../../../../../../net/raphimc/minecraftauth/e
 import type { RealmsResponseHandler } from '../../../../../../net/raphimc/minecraftauth/extra/realms/responsehandler/RealmsResponseHandler.d.ts'
 export class BedrockRealmsWorldJoinRequest extends GetRequest implements RealmsResponseHandler<RealmsJoinInformation> {
     constructor(arg0: RealmsServer)
+    handle(arg0: HttpResponse): RealmsJoinInformation;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): RealmsJoinInformation;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

@@ -12,5 +12,6 @@ export class AbstractShort2ByteMap$BasicEntry extends Object implements Short2By
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

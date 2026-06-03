@@ -8,7 +8,9 @@ export class SequentialMatchers$UTF16RawSequentialMatchers extends SequentialMat
     getAscii(): CharMatcher[];
     getBmp(): CharMatcher[];
     getLatin1(): CharMatcher[];
+    match(c: number): number;
     match(i: number, c: number): boolean;
     size(): number;
+    toString(): string;
     toString(i: number): string;
 }

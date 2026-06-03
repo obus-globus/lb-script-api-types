@@ -11,6 +11,7 @@ export class LlamaRenderer extends AgeableMobRenderer<Llama, LlamaRenderState, L
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, model: ModelLayerLocation, babyModel: ModelLayerLocation)
     createRenderState(): LlamaRenderState;
+    createRenderState(entity: Llama, partialTicks: number): LlamaRenderState;
     extractRenderState(entity: Llama, state: LlamaRenderState, partialTicks: number): void;
     getTextureLocation(state: LlamaRenderState): Identifier;
 }

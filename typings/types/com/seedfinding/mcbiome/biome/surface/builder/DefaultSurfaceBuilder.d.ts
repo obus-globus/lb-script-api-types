@@ -8,6 +8,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DefaultSurfaceBuilder extends SurfaceBuilder {
     constructor(arg0: SurfaceConfig)
     applyExtraConditions(arg0: number, arg1: Block, arg2: Object[]): Block;
+    applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: Block, arg10: Block): Block[];
     applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: Block, arg11: Block): Block[];
     generateExtras(arg0: ChunkRand, arg1: number): Object[];
     getBaseBlock(arg0: BiomeSource, arg1: number, arg2: Block[], arg3: ChunkRand, arg4: number): Block;

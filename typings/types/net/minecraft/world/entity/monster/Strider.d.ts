@@ -6,6 +6,7 @@ import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -168,10 +169,12 @@ export class Strider extends Animal implements ItemSteerable {
     getEquipSound(slot: EquipmentSlot, stack: ItemStack, equippable: Equippable): Holder<SoundEvent>;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getLiquidCollisionShape(): VoxelShape;
     getPassengerAttachmentPoint(passenger: Entity, dimensions: EntityDimensions, scale: number): Vec3;
     getRiddenInput(controller: Player, selfInput: Vec3): Vec3;
     getRiddenSpeed(controller: Player): number;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     // private isBeingTempted(): boolean;
     isFood(itemStack: ItemStack): boolean;
@@ -180,6 +183,7 @@ export class Strider extends Animal implements ItemSteerable {
     isSuffocating(): boolean;
     mobInteract(player: Player, hand: InteractionHand): InteractionResult;
     nextStep(): number;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playStepSound(pos: BlockPos, blockState: BlockState): void;
     registerGoals(): void;

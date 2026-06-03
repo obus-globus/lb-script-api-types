@@ -22,4 +22,5 @@ export class Wincon$MOUSE_EVENT_RECORD extends Structure {
     dwEventFlags: number;
     dwMousePosition: Wincon$COORD;
     toString(): string;
+    toString(arg0: boolean): string;
 }

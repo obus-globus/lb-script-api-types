@@ -12,6 +12,7 @@ export class RecordedEvent extends RecordedObject {
     // private endTimeTicks: number;
     // private startTimeTicks: number;
     getDuration(): Duration;
+    getDuration(arg0: string): Duration;
     getEndTime(): Instant;
     // private getEndTimeNanos(): number;
     getEventType(): EventType;
@@ -20,6 +21,7 @@ export class RecordedEvent extends RecordedObject {
     getStartTime(): Instant;
     // private getStartTimeNanos(): number;
     getThread(): RecordedThread;
+    getThread(arg0: string): RecordedThread;
     // private hasDuration(): boolean;
     objectAt(arg0: number): Object;
 }

@@ -8,6 +8,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter1_21 extends JsonNBTComponentRewriter<ClientboundPacket1_21> {
     constructor(arg0: Protocol1_21To1_20_5)
     // private convertAttributeModifiersComponent(arg0: Map$Entry<string, Tag>[]): void;
+    handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
     inputSerializerVersion(): SerializerVersion;
     outputSerializerVersion(): SerializerVersion;

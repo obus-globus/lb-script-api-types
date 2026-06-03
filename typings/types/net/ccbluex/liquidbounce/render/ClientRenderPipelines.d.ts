@@ -2,7 +2,6 @@ import type { BlendFunction } from '../../../../com/mojang/blaze3d/pipeline/Blen
 import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { RenderPipeline$Builder } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline$Builder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientRenderPipelines extends Object {
     static Blend: RenderPipeline;
@@ -56,7 +55,7 @@ export class ClientRenderPipelines extends Object {
     Triangles: RenderPipeline;
     // private renderPipelines: Map<Identifier, RenderPipeline>;
     gradientCircle(noDepthTest: boolean): RenderPipeline;
-    newPipeline(name: string, builderAction: Function1<RenderPipeline$Builder, void>): RenderPipeline;
+    newPipeline(name: string, builderAction: (param0: RenderPipeline$Builder) => void): RenderPipeline;
     outlineQuads(useColor: boolean): RenderPipeline;
     /**
      * Precompile

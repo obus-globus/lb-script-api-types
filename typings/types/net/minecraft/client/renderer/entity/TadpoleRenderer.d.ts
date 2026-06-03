@@ -9,5 +9,6 @@ export class TadpoleRenderer extends MobRenderer<Tadpole, LivingEntityRenderStat
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): LivingEntityRenderState;
+    createRenderState(entity: Tadpole, partialTicks: number): LivingEntityRenderState;
     getTextureLocation(state: LivingEntityRenderState): Identifier;
 }

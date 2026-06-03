@@ -5,6 +5,8 @@ import type { RecordBuilder$AbstractUniversalBuilder } from '../../../com/mojang
 export class HashOps$MapHashBuilder extends RecordBuilder$AbstractUniversalBuilder<HashCode, Pair<HashCode, HashCode>[]> {
     constructor(null_: HashOps$MapHashBuilder)
     append(key: HashCode, value: HashCode, builder: Pair<HashCode, HashCode>[]): Pair<HashCode, HashCode>[];
+    build(arg0: HashCode): DataResult<HashCode>;
+    build(arg0: DataResult<HashCode>): DataResult<HashCode>;
     build(builder: Pair<HashCode, HashCode>[], prefix: HashCode): DataResult<HashCode>;
     initBuilder(): Pair<HashCode, HashCode>[];
 }

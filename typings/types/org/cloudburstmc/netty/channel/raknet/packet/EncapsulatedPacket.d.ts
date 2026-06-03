@@ -1,5 +1,6 @@
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { AbstractReferenceCounted } from '../../../../../../io/netty/util/AbstractReferenceCounted.d.ts'
+import type { ReferenceCounted } from '../../../../../../io/netty/util/ReferenceCounted.d.ts'
 import type { ObjectPool$Handle } from '../../../../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RakReliability } from '../../../../../../org/cloudburstmc/netty/channel/raknet/RakReliability.d.ts'
@@ -36,6 +37,7 @@ export class EncapsulatedPacket extends AbstractReferenceCounted {
     isNeedsBAS(): boolean;
     isSplit(): boolean;
     retain(): EncapsulatedPacket;
+    retain(arg0: number): ReferenceCounted;
     setBuffer(arg0: ByteBuf): void;
     setNeedsBAS(arg0: boolean): void;
     setOrderingChannel(arg0: number): void;
@@ -49,5 +51,6 @@ export class EncapsulatedPacket extends AbstractReferenceCounted {
     setSplit(arg0: boolean): void;
     toMessage(): RakMessage;
     toString(): string;
+    touch(): ReferenceCounted;
     touch(arg0: Object): EncapsulatedPacket;
 }

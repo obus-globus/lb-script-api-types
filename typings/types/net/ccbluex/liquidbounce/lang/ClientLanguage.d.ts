@@ -22,8 +22,10 @@ export class ClientLanguage extends Language {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt:145}
      */
+    getOrDefault(elementId: string): string;
     getOrDefault(key: string, fallback: string): string;
     // private getTranslation(key: string): string | null;
+    getVisualOrder(lines: FormattedText[]): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
     getVisualOrder(text: FormattedText): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
     has(key: string): boolean;
     isDefaultRightToLeft(): boolean;

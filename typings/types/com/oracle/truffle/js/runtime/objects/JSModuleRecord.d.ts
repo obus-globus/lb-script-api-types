@@ -22,6 +22,7 @@ export class JSModuleRecord extends CyclicModuleRecord {
     readonly moduleLoader: JSModuleLoader;
     // private parsedModule: JSModuleData;
     executeModule(realm: JSRealm, capability: PromiseCapabilityRecord): Object;
+    getExportedNames(): E[];
     getExportedNames(exportStarSet: JSModuleRecord[]): E[];
     getFunctionData(): JSFunctionData;
     getImportMeta(createImportMeta: CreateImportMetaNode): JSObject;
@@ -35,6 +36,7 @@ export class JSModuleRecord extends CyclicModuleRecord {
     initializeEnvironment(realm: JSRealm): void;
     loadRequestedModules(realm: JSRealm, hostDefinedArg: Object): JSPromiseObject;
     rememberImportedModuleSource(moduleSpecifier: TruffleString, moduleSource: Source): void;
+    resolveExport(exportName: TruffleString): ExportResolution;
     resolveExport(exportName: TruffleString, resolveSet: Pair<AbstractModuleRecord, TruffleString>[]): ExportResolution;
     toString(): string;
 }

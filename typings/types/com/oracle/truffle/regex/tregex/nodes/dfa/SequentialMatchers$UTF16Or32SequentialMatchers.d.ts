@@ -10,7 +10,9 @@ export class SequentialMatchers$UTF16Or32SequentialMatchers extends SequentialMa
     getAstral(): CharMatcher[];
     getBmp(): CharMatcher[];
     getLatin1(): CharMatcher[];
+    match(c: number): number;
     match(i: number, c: number): boolean;
     size(): number;
+    toString(): string;
     toString(i: number): string;
 }

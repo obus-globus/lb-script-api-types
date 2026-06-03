@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharMap$Entry.d.ts'
 import type { ObjectCharPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectCharPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2CharOpenCustomHashMap$MapEntry extends Object implements Obj
     getCharValue(): string;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, string>;
+    right(): string;
+    right(arg0: string): ObjectCharPair<K>;
     right(arg0: string): ObjectCharPair<K>;
     right(): string;
     right(arg0: string): ObjectCharPair<K>;

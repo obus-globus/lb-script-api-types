@@ -11,6 +11,8 @@ export class CharIterators$PrimitiveIteratorWrapper extends Object implements Ch
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;
     nextChar(): string;

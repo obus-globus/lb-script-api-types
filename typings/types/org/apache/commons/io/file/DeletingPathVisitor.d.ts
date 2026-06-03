@@ -18,6 +18,7 @@ export class DeletingPathVisitor extends CountingPathVisitor {
     // private overrideReadOnly: boolean;
     // private skip: string[];
     // private accept(arg0: Path[]): boolean;
+    accept(arg0: Path[], arg1: BasicFileAttributes): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     postVisitDirectory(arg0: Path[], arg1: IOException): FileVisitResult;

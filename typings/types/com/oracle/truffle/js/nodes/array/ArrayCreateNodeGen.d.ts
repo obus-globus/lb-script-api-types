@@ -10,6 +10,7 @@ export class ArrayCreateNodeGen extends ArrayCreateNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
+    execute(length: number): JSArrayObject;
     execute(arg0Value: number, arg1Value: JSRealm, arg2Value: JSDynamicObject): JSArrayObject;
     // private executeAndSpecialize(arg0Value: number, arg1Value: JSRealm, arg2Value: JSDynamicObject): JSArrayObject;
 }

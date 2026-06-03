@@ -7,6 +7,7 @@ import type { AccessibleContext } from '../../javax/accessibility/AccessibleCont
 import type { Icon } from '../../javax/swing/Icon.d.ts'
 import type { JComponent } from '../../javax/swing/JComponent.d.ts'
 import type { SwingConstants } from '../../javax/swing/SwingConstants.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { LabelUI } from '../../javax/swing/plaf/LabelUI.d.ts'
 export class JLabel extends JComponent implements Accessible, SwingConstants {
     static ABORT: number;
@@ -95,6 +96,7 @@ export class JLabel extends JComponent implements Accessible, SwingConstants {
     setIconTextGap(arg0: number): void;
     setLabelFor(arg0: Component): void;
     setText(arg0: string): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: LabelUI): void;
     setVerticalAlignment(arg0: number): void;
     setVerticalTextPosition(arg0: number): void;

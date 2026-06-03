@@ -10,6 +10,7 @@ export class ObjectInputStream$PeekInputStream extends InputStream {
     getBytesRead(): number;
     peek(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     readFully(arg0: number[], arg1: number, arg2: number): void;
     skip(arg0: number): number;

@@ -28,7 +28,9 @@ export abstract class InstrumentationHandler$AbstractInstrumenter extends Instru
     attachErrConsumer<T extends OutputStream>(stream: T): EventBinding<T>;
     attachExecuteSourceListener<T extends ExecuteSourceListener>(filter: SourceFilter, listener: T, notifyLoaded: boolean): EventBinding<T>;
     attachExecutionEventFactory<T extends ExecutionEventNodeFactory>(nearestFilter: NearestSectionFilter, baseFilter: SourceSectionFilter, factory: T): EventBinding<T>;
+    attachExecutionEventFactory<T extends ExecutionEventNodeFactory>(eventFilter: SourceSectionFilter, factory: T): EventBinding<T>;
     attachExecutionEventFactory<T extends ExecutionEventNodeFactory>(filter: SourceSectionFilter, inputFilter: SourceSectionFilter, factory: T): EventBinding<T>;
+    attachExecutionEventListener<T extends ExecutionEventListener>(eventFilter: SourceSectionFilter, listener: T): EventBinding<T>;
     attachExecutionEventListener<T extends ExecutionEventListener>(filter: SourceSectionFilter, inputFilter: SourceSectionFilter, listener: T): EventBinding<T>;
     attachLoadSourceListener<T extends LoadSourceListener>(filter: SourceFilter, listener: T, notifyLoaded: boolean): EventBinding<T>;
     attachLoadSourceListener<T extends LoadSourceListener>(filter: SourceSectionFilter, listener: T, includeExistingSources: boolean): EventBinding<T>;

@@ -30,6 +30,7 @@ export class CLongBuffer extends CustomBuffer<CLongBuffer> implements Comparable
     put(arg0: number): CLongBuffer;
     put(arg0: number[]): CLongBuffer;
     put(arg0: number[], arg1: number, arg2: number): CLongBuffer;
+    put(arg0: CLongBuffer): CLongBuffer;
     // private put32(arg0: number[], arg1: number, arg2: number): void;
     self(): CLongBuffer;
     sizeof(): number;

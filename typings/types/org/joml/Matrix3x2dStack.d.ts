@@ -3,6 +3,7 @@ import type { ObjectOutput } from '../../java/io/ObjectOutput.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
 import type { Matrix3x2d } from '../../org/joml/Matrix3x2d.d.ts'
+import type { Matrix3x2dc } from '../../org/joml/Matrix3x2dc.d.ts'
 export class Matrix3x2dStack extends Matrix3x2d implements Cloneable {
     constructor()
     constructor(arg0: number)
@@ -12,6 +13,7 @@ export class Matrix3x2dStack extends Matrix3x2d implements Cloneable {
     protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    equals(arg0: Matrix3x2dc, arg1: number): boolean;
     hashCode(): number;
     popMatrix(): Matrix3x2dStack;
     pushMatrix(): Matrix3x2dStack;

@@ -32,6 +32,8 @@ export class Float2LongOpenCustomHashMap$MapEntry extends Object implements Floa
     left(arg0: number): FloatLongPair;
     left(arg0: number): FloatLongPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatLongPair;
     right(arg0: number): FloatLongPair;
     right(): number;
     right(arg0: number): FloatLongPair;

@@ -13,6 +13,8 @@ export class IteratorNextNodeGen extends IteratorNextNode {
     // private isObjectNode_: IsObjectNode;
     // private methodCallNode_: JSFunctionCallNode;
     // private state_0_: number;
+    execute(iteratorRecord: IteratorRecord): Object;
+    execute(iteratorRecord: IteratorRecord, value: Object): Object;
     execute(arg0Value: IteratorRecord, arg1Value: Object, arg2Value: boolean): Object;
     // private executeAndSpecialize(arg0Value: IteratorRecord, arg1Value: Object, arg2Value: boolean): Object;
 }

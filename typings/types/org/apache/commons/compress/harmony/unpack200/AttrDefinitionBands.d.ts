@@ -13,4 +13,5 @@ export class AttrDefinitionBands extends BandSet {
     read(arg0: InputStream): void;
     // private setupDefaultAttributeNames(): void;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

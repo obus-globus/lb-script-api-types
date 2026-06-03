@@ -1,7 +1,7 @@
-import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
+import type { ClassNode as ClassNode_2 } from '../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
 import type { ClassVisitor } from '../../../../../org/spongepowered/asm/lib/ClassVisitor.d.ts'
 export class ClassNode extends ClassVisitor {
-    constructor(arg0: ClassNode)
+    constructor(arg0: ClassNode_2)
     access: number;
     interfaces: string[];
     name: string;

@@ -3,8 +3,8 @@ import type { Log4jMarkerFactory } from '../../../../org/apache/logging/slf4j/Lo
 import type { ILoggerFactory } from '../../../../org/slf4j/ILoggerFactory.d.ts'
 import type { IMarkerFactory } from '../../../../org/slf4j/IMarkerFactory.d.ts'
 import type { MDCAdapter } from '../../../../org/slf4j/spi/MDCAdapter.d.ts'
-import type { SLF4JServiceProvider } from '../../../../org/slf4j/spi/SLF4JServiceProvider.d.ts'
-export class SLF4JServiceProvider extends Object implements SLF4JServiceProvider {
+import type { SLF4JServiceProvider as SLF4JServiceProvider_2 } from '../../../../org/slf4j/spi/SLF4JServiceProvider.d.ts'
+export class SLF4JServiceProvider extends Object implements SLF4JServiceProvider_2 {
     static REQUESTED_API_VERSION: string;
     constructor()
     readonly loggerFactory: ILoggerFactory;

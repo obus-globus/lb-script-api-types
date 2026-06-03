@@ -5,5 +5,6 @@ export class Log4jLookup extends AbstractConfigurationAwareLookup {
     static KEY_CONFIG_LOCATION: string;
     static KEY_CONFIG_PARENT_LOCATION: string;
     constructor()
+    lookup(key: string): string;
     lookup(ignored: LogEvent, key: string): string;
 }

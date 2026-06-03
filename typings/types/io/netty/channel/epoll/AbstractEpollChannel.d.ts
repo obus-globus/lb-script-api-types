@@ -41,6 +41,7 @@ export abstract class AbstractEpollChannel extends AbstractChannel implements Un
     doDeregister(): void;
     doDisconnect(): void;
     doReadBytes(arg0: ByteBuf): number;
+    doRegister(): void;
     doRegister(arg0: ChannelPromise): void;
     doWriteBytes(arg0: ChannelOutboundBuffer, arg1: ByteBuf): number;
     doWriteOrSendBytes(arg0: ByteBuf, arg1: InetSocketAddress, arg2: boolean): number;

@@ -72,6 +72,7 @@ export class Byte2IntFunctions$PrimitiveFunction extends Object implements Byte2
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
+    put(arg0: number, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: number): number;
 }

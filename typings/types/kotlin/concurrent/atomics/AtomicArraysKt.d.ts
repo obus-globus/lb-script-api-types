@@ -2,12 +2,11 @@ import type { AtomicIntegerArray } from '../../../java/util/concurrent/atomic/At
 import type { AtomicLongArray } from '../../../java/util/concurrent/atomic/AtomicLongArray.d.ts'
 import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { AtomicArraysKt__AtomicArrays_jvmKt } from '../../../kotlin/concurrent/atomics/AtomicArraysKt__AtomicArrays_jvmKt.d.ts'
 export class AtomicArraysKt extends AtomicArraysKt__AtomicArrays_jvmKt {
-    static AtomicArray(paramarg0: number, paramarg1: Function1<Object, Object>): AtomicReferenceArray<Object>;
-    static AtomicIntArray(paramarg0: number, paramarg1: Function1<Object, number>): AtomicIntegerArray;
-    static AtomicLongArray(paramarg0: number, paramarg1: Function1<Object, number>): AtomicLongArray;
+    static AtomicArray(paramarg0: number, paramarg1: (param0: Object | null) => Object | null): AtomicReferenceArray<Object>;
+    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicIntegerArray;
+    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicLongArray;
     static asJavaAtomicArray(paramarg0: AtomicReferenceArray<Object>): AtomicReferenceArray<Object>;
     static asJavaAtomicArray(paramarg0: AtomicIntegerArray): AtomicIntegerArray;
     static asJavaAtomicArray(paramarg0: AtomicLongArray): AtomicLongArray;

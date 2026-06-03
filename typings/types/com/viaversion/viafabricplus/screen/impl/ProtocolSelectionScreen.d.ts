@@ -23,4 +23,5 @@ export class ProtocolSelectionScreen extends VFPScreen {
     static showErrorScreen(paramarg0: Component, paramarg1: Throwable, paramarg2: Screen): void;
     private constructor()
     init(): void;
+    init(width: number, height: number): void;
 }

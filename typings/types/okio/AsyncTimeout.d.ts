@@ -1,6 +1,5 @@
 import type { IOException } from '../java/io/IOException.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-import type { Function0 } from '../kotlin/jvm/functions/Function0.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
@@ -22,5 +21,5 @@ export class AsyncTimeout extends Timeout {
     sink(sink: Sink): Sink;
     source(source: Source): Source;
     protected timedOut(): void;
-    withTimeout<T extends Object | number | string | boolean>(block: Function0<T>): T;
+    withTimeout<T extends Object | number | string | boolean>(block: () => T): T;
 }

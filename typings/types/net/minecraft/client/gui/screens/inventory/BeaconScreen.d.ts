@@ -31,5 +31,6 @@ export class BeaconScreen extends AbstractContainerScreen<BeaconMenu> {
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractLabels(graphics: GuiGraphicsExtractor, xm: number, ym: number): void;
     init(): void;
+    init(width: number, height: number): void;
     // private updateButtons(): void;
 }

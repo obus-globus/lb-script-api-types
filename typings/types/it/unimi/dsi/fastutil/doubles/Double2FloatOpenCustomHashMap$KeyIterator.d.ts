@@ -2,7 +2,7 @@ import type { Double2FloatOpenCustomHashMap$MapIterator } from '../../../../../i
 import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleConsumer.d.ts'
 import type { DoubleIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
+import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Double2FloatOpenCustomHashMap$KeyIterator extends Double2FloatOpenCustomHashMap$MapIterator<(param0: number) => void> implements DoubleIterator {
     constructor(null_: Double2FloatOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;

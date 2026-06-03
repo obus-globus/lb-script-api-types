@@ -8,6 +8,7 @@ export class ByteStreams$LimitedInputStream extends FilterInputStream {
     available(): number;
     mark(readLimit: number): void;
     read(): number;
+    read(arg0: number[]): number;
     read(b: number[], off: number, len: number): number;
     reset(): void;
     skip(n: number): number;

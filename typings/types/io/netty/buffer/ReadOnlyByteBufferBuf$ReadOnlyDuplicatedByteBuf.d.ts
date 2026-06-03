@@ -4,8 +4,10 @@ export class ReadOnlyByteBufferBuf$ReadOnlyDuplicatedByteBuf extends DuplicatedB
     constructor(arg0: ByteBuf)
     asReadOnly(): ByteBuf;
     duplicate(): ByteBuf;
+    ensureWritable(arg0: number): ByteBuf;
     ensureWritable(arg0: number, arg1: boolean): number;
     isWritable(): boolean;
     isWritable(arg0: number): boolean;
+    slice(): ByteBuf;
     slice(arg0: number, arg1: number): ByteBuf;
 }

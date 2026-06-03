@@ -10,6 +10,7 @@ export class BreezeRenderer extends MobRenderer<Breeze, BreezeRenderState, Breez
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): BreezeRenderState;
+    createRenderState(entity: Breeze, partialTicks: number): BreezeRenderState;
     extractRenderState(entity: Breeze, state: BreezeRenderState, partialTicks: number): void;
     getTextureLocation(state: BreezeRenderState): Identifier;
 }

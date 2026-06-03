@@ -15,5 +15,6 @@ export class Creaking$HomeNodeEvaluator extends WalkNodeEvaluator {
     static getPathTypeStatic(paramcontext: PathfindingContext, parampos: BlockPos$MutableBlockPos): PathType;
     static isBurningBlock(paramblockState: BlockState): boolean;
     private constructor(null_: Creaking$HomeNodeEvaluator)
+    getPathType(mob: Mob, pos: BlockPos): PathType;
     getPathType(context: PathfindingContext, x: number, y: number, z: number): PathType;
 }

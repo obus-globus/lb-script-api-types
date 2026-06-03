@@ -62,11 +62,13 @@ export class ByteBuffer extends Buffer implements Comparable<ByteBuffer> {
     hasArray(): boolean;
     hashCode(): number;
     isDirect(): boolean;
+    limit(): number;
     limit(arg0: number): ByteBuffer;
     mark(): ByteBuffer;
     mismatch(arg0: ByteBuffer): number;
     order(): ByteOrder;
     order(arg0: ByteOrder): ByteBuffer;
+    position(): number;
     position(arg0: number): ByteBuffer;
     put(arg0: ByteBuffer): ByteBuffer;
     put(arg0: number): ByteBuffer;

@@ -19,11 +19,15 @@ export class IntByteMutablePair extends Object implements IntBytePair, Serializa
     key(arg0: number): IntBytePair;
     key(arg0: number): IntBytePair;
     keyInt(): number;
+    left(): number;
+    left(arg0: number): IntBytePair;
     left(arg0: number): IntByteMutablePair;
     left(): number;
     left(arg0: number): IntBytePair;
     left(arg0: number): IntBytePair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntBytePair;
     right(arg0: number): IntByteMutablePair;
     right(): number;
     right(arg0: number): IntBytePair;

@@ -13,6 +13,7 @@ export class IllusionerRenderer extends IllagerRenderer<Illusioner, IllusionerRe
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): IllusionerRenderState;
+    createRenderState(entity: Illusioner, partialTicks: number): IllusionerRenderState;
     extractRenderState(entity: Illusioner, state: IllusionerRenderState, partialTicks: number): void;
     getBoundingBoxForCulling(entity: Illusioner): AABB;
     getTextureLocation(state: IllusionerRenderState): Identifier;

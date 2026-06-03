@@ -8,6 +8,7 @@ export class SpoofChecker$ScriptSet extends BitSet {
     static valueOf(paramarg0: LongBuffer): BitSet;
     static valueOf(paramarg0: number[]): BitSet;
     constructor()
+    and(arg0: BitSet): void;
     and(script: number): void;
     appendStringTo(sb: StringBuilder): void;
     isFull(): boolean;

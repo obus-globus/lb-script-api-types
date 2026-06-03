@@ -13,6 +13,7 @@ export class OminousItemSpawnerRenderer extends EntityRenderer<OminousItemSpawne
     // private itemModelResolver: ItemModelResolver;
     // private random: RandomSource;
     createRenderState(): ItemClusterRenderState;
+    createRenderState(entity: OminousItemSpawner, partialTicks: number): ItemClusterRenderState;
     extractRenderState(entity: OminousItemSpawner, state: ItemClusterRenderState, partialTicks: number): void;
     submit(state: ItemClusterRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

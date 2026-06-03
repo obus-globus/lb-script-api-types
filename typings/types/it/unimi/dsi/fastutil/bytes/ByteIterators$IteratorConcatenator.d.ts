@@ -15,6 +15,7 @@ export class ByteIterators$IteratorConcatenator extends Object implements ByteIt
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextByte(): number;

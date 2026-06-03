@@ -6,6 +6,14 @@ export class LoggedPrintStream extends PrintStream {
     constructor(name: string, out: OutputStream)
     // private name: string;
     logLine(out: string): void;
+    println(): void;
     println(object: Object): void;
+    println(arg0: boolean): void;
+    println(arg0: string): void;
+    println(arg0: string[]): void;
+    println(arg0: number): void;
+    println(arg0: number): void;
+    println(arg0: number): void;
+    println(arg0: number): void;
     println(string: string): void;
 }

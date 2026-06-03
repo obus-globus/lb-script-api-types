@@ -8,6 +8,7 @@ export class ProcessIdPatternConverter extends LogEventPatternConverter {
     static newInstance(paramoptions: (Object | null)[]): ProcessIdPatternConverter;
     private constructor(options: string[])
     // private pid: string;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     getProcessId(): string;
 }

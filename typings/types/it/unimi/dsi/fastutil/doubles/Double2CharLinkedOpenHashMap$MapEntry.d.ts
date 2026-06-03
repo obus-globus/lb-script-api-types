@@ -32,6 +32,8 @@ export class Double2CharLinkedOpenHashMap$MapEntry extends Object implements Dou
     left(arg0: number): DoubleCharPair;
     left(arg0: number): DoubleCharPair;
     leftDouble(): number;
+    right(): string;
+    right(arg0: string): DoubleCharPair;
     right(arg0: string): DoubleCharPair;
     right(): string;
     right(arg0: string): DoubleCharPair;

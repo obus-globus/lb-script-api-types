@@ -17,7 +17,7 @@ import type { CompletableFuture } from '../../../java/util/concurrent/Completabl
 import type { Executor } from '../../../java/util/concurrent/Executor.d.ts'
 import type { BiFunction } from '../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
-import type { Function } from '../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { ToIntFunction } from '../../../java/util/function/ToIntFunction.d.ts'

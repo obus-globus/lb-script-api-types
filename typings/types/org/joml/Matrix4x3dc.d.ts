@@ -25,6 +25,7 @@ export interface Matrix4x3dc extends Object{
     cofactor3x3(arg0: Matrix3d): Matrix3d;
     cofactor3x3(arg0: Matrix4x3d): Matrix4x3d;
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix4x3dc, arg1: number): boolean;
     fma(arg0: Matrix4x3dc, arg1: number, arg2: Matrix4x3d): Matrix4x3d;
     fma(arg0: Matrix4x3fc, arg1: number, arg2: Matrix4x3d): Matrix4x3d;

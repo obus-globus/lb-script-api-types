@@ -8,6 +8,7 @@ import type { MinecraftSession } from '../../../../../net/raphimc/minecraftauth/
 import type { MinecraftServicesResponseHandler } from '../../../../../net/raphimc/minecraftauth/bedrock/responsehandler/MinecraftServicesResponseHandler.d.ts'
 export class MinecraftMultiplayerSessionStartRequest extends PostRequest implements MinecraftServicesResponseHandler<MinecraftMultiplayerToken> {
     constructor(arg0: MinecraftSession, arg1: KeyPair)
+    handle(arg0: HttpResponse): MinecraftMultiplayerToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftMultiplayerToken;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

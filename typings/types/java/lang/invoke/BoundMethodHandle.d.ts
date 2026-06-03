@@ -20,6 +20,7 @@ export abstract class BoundMethodHandle extends MethodHandle {
     copyWithExtendL(arg0: MethodType, arg1: LambdaForm, arg2: Object): BoundMethodHandle;
     editor(): LambdaFormEditor;
     fieldCount(): number;
+    internalProperties(): Object;
     internalProperties(arg0: number): Object;
     internalValues(arg0: number): string;
     rebind(): BoundMethodHandle;

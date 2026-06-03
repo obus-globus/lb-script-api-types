@@ -19,11 +19,15 @@ export class IntLongMutablePair extends Object implements IntLongPair, Serializa
     key(arg0: number): IntLongPair;
     key(arg0: number): IntLongPair;
     keyInt(): number;
+    left(): number;
+    left(arg0: number): IntLongPair;
     left(arg0: number): IntLongMutablePair;
     left(): number;
     left(arg0: number): IntLongPair;
     left(arg0: number): IntLongPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntLongPair;
     right(arg0: number): IntLongMutablePair;
     right(): number;
     right(arg0: number): IntLongPair;

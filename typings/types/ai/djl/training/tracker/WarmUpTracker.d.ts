@@ -23,5 +23,6 @@ export class WarmUpTracker extends Object implements Tracker {
     checkValue(arg0: number): void;
     getNewValue(arg0: string, arg1: number): number;
     getNewValue(arg0: number): number;
+    getNewValue(arg0: string, arg1: number): number;
     getWarmUpValue(arg0: number): number;
 }

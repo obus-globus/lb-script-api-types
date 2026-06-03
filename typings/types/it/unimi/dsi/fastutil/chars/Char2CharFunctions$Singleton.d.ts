@@ -8,8 +8,11 @@ export class Char2CharFunctions$Singleton extends AbstractChar2CharFunction impl
     // private value: string;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
+    get(arg0: Object): string;
     get(arg0: string): string;
+    getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: string, arg1: string): string;
     size(): number;
 }

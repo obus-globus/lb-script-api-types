@@ -6,6 +6,7 @@ export class Double2LongFunctions$UnmodifiableFunction extends AbstractDouble2Lo
     constructor(arg0: (param0: number) => kotlin.Long)
     // private function: (param0: number) => kotlin.Long;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

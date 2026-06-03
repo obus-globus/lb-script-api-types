@@ -19,6 +19,7 @@ export abstract class EventLoop extends CoroutineDispatcher {
     // private delta(unconfined: boolean): number;
     dispatchUnconfined(task: DispatchedTask<Object>): void;
     incrementUseCount(unconfined: boolean): void;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     processNextEvent(): number;
     processUnconfinedEvent(): boolean;

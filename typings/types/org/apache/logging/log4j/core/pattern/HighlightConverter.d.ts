@@ -14,6 +14,7 @@ export class HighlightConverter extends LogEventPatternConverter implements Ansi
     // private levelStyles: { [key: string]: string };
     // private noAnsi: boolean;
     // private patternFormatters: PatternFormatter[];
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     getLevelStyle(level: Level): string;
     handlesThrowable(): boolean;

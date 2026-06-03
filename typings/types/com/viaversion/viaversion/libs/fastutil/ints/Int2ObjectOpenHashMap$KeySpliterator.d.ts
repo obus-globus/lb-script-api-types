@@ -3,7 +3,7 @@ import type { IntComparator } from '../../../../../../com/viaversion/viaversion/
 import type { IntConsumer } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntConsumer.d.ts'
 import type { IntSpliterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntSpliterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { IntConsumer } from '../../../../../../java/util/function/IntConsumer.d.ts'
+import type { IntConsumer as IntConsumer_2 } from '../../../../../../java/util/function/IntConsumer.d.ts'
 export class Int2ObjectOpenHashMap$KeySpliterator extends Int2ObjectOpenHashMap$MapSpliterator<Object, Object> implements IntSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;

@@ -8,6 +8,8 @@ export class AbstractChannel$CloseFuture extends DefaultChannelPromise {
     setClosed(): boolean;
     setFailure(arg0: Throwable): ChannelPromise;
     setSuccess(): ChannelPromise;
+    setSuccess(arg0: void): ChannelPromise;
     tryFailure(arg0: Throwable): boolean;
     trySuccess(): boolean;
+    trySuccess(arg0: void): boolean;
 }

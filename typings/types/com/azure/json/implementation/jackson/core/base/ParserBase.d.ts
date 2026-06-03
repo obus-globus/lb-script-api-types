@@ -77,6 +77,7 @@ export abstract class ParserBase extends ParserMinimalBase {
     disable(arg0: JsonParser$Feature): JsonParser;
     enable(arg0: JsonParser$Feature): JsonParser;
     getBigIntegerValue(): BigInteger;
+    getBinaryValue(): number[];
     getBinaryValue(arg0: Base64Variant): number[];
     getCurrentLocation(): JsonLocation;
     getCurrentName(): string;

@@ -68,6 +68,7 @@ export class Reference2LongFunctions$PrimitiveFunction<K extends Object | number
     put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
+    put(arg0: K, arg1: number): number;
     remove(arg0: Object): number;
     removeLong(arg0: Object): number;
 }

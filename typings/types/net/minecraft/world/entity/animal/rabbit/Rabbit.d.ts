@@ -178,8 +178,10 @@ export class Rabbit extends Animal {
     getHurtSound(source: DamageSource): SoundEvent;
     getJumpCompletion(a: number): number;
     getJumpPower(): number;
+    getJumpPower(multiplier: number): number;
     getJumpSound(): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getSoundSource(): SoundSource;
     getVariant(): Rabbit$Variant;
     handleEntityEvent(id: number): void;

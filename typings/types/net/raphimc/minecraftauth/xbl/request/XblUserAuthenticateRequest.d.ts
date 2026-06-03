@@ -9,6 +9,7 @@ import type { XblUserToken } from '../../../../../net/raphimc/minecraftauth/xbl/
 import type { XblResponseHandler } from '../../../../../net/raphimc/minecraftauth/xbl/responsehandler/XblResponseHandler.d.ts'
 export class XblUserAuthenticateRequest extends PostRequest implements XblResponseHandler<XblUserToken> {
     constructor(arg0: MsaApplicationConfig, arg1: MsaToken)
+    handle(arg0: HttpResponse): XblUserToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): XblUserToken;
     handle<R extends Object | number | string | boolean>(arg0: HttpResponse): R;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;

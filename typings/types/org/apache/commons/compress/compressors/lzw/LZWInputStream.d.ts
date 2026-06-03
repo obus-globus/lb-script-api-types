@@ -33,6 +33,7 @@ export abstract class LZWInputStream extends CompressorInputStream implements In
     initializeTables(arg0: number): void;
     initializeTables(arg0: number, arg1: number): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readFromStack(arg0: number[], arg1: number, arg2: number): number;
     readNextCode(): number;

@@ -19,4 +19,5 @@ export class Wincon$WINDOW_BUFFER_SIZE_RECORD extends Structure {
     constructor()
     dwSize: Wincon$COORD;
     toString(): string;
+    toString(arg0: boolean): string;
 }

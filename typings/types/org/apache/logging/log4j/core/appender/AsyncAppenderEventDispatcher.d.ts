@@ -42,5 +42,6 @@ export class AsyncAppenderEventDispatcher extends Log4jThread {
     // private dispatchRemaining(): void;
     getAppenders(): Appender[];
     run(): void;
+    stop(): void;
     stop(timeoutMillis: number): void;
 }

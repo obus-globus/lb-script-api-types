@@ -10,6 +10,7 @@ export class PolarBearRenderer extends AgeableMobRenderer<PolarBear, PolarBearRe
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): PolarBearRenderState;
+    createRenderState(entity: PolarBear, partialTicks: number): PolarBearRenderState;
     extractRenderState(entity: PolarBear, state: PolarBearRenderState, partialTicks: number): void;
     getTextureLocation(state: PolarBearRenderState): Identifier;
 }

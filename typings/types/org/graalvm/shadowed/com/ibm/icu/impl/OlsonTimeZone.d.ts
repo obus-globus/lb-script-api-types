@@ -84,11 +84,13 @@ export class OlsonTimeZone extends BasicTimeZone {
     getNextTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, milliseconds: number): number;
     getOffset(era: number, year: number, month: number, dom: number, dow: number, millis: number, monthLength: number): number;
+    getOffset(date: number): number;
     getOffset(date: number, local: boolean, offsets: number[]): void;
     getOffsetFromLocal(date: number, nonExistingTimeOpt: BasicTimeZone$LocalOption, duplicatedTimeOpt: BasicTimeZone$LocalOption, offsets: number[]): void;
     getPreviousTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getRawOffset(): number;
     getTimeZoneRules(): TimeZoneRule[];
+    getTimeZoneRules(start: number): TimeZoneRule[];
     hasSameRules(other: TimeZone): boolean;
     hashCode(): number;
     inDaylightTime(date: Date): boolean;

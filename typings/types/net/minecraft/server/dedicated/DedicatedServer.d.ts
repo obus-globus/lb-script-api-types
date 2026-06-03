@@ -129,6 +129,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     setAcceptsTransfers(acceptTransfers: boolean): void;
     setAllowFlight(allowed: boolean): void;
     setDifficulty(difficulty: Difficulty): void;
+    setDifficulty(difficulty: Difficulty, ignoreLock: boolean): void;
     setEnforceWhitelist(enforceWhitelist: boolean): void;
     setEntityBroadcastRangePercentage(range: number): void;
     setForceGameMode(forceGameMode: boolean): void;

@@ -22,6 +22,8 @@ export class ArArchiveInputStream extends ArchiveInputStream<ArArchiveEntry> {
     getNextArEntry(): ArArchiveEntry;
     getNextEntry(): ArArchiveEntry;
     // private isGNULongName(arg0: string): boolean;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readGNUStringTable(arg0: number[], arg1: number, arg2: number): ArArchiveEntry;
     // private trackReadBytes(arg0: number): void;

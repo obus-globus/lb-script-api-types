@@ -11,5 +11,6 @@ export class Reference2BooleanFunctions$Singleton<K extends Object | number | st
     containsKey(arg0: Object): boolean;
     getBoolean(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
+    getOrDefault(arg0: Object, arg1: boolean): boolean;
     size(): number;
 }

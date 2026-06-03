@@ -9,6 +9,7 @@ export class TruffleStringFactory$ByteIndexOfCodePointSetNodeGen extends Truffle
     // private indexOfSpecialized_cache: TruffleStringFactory$ByteIndexOfCodePointSetNodeGen$IndexOfSpecializedData;
     // private indexOfUncached_nextNode__field1_: number;
     // private state_0_: number;
+    execute(a: AbstractTruffleString, fromByteIndex: number, toByteIndex: number, codePointSet: TruffleString$CodePointSet): number;
     execute(arg0Value: AbstractTruffleString, arg1Value: number, arg2Value: number, arg3Value: TruffleString$CodePointSet, arg4Value: boolean): number;
     // private executeAndSpecialize(arg0Value: AbstractTruffleString, arg1Value: number, arg2Value: number, arg3Value: TruffleString$CodePointSet, arg4Value: boolean): number;
 }

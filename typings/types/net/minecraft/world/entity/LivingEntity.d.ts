@@ -17,6 +17,7 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ClientboundAddEntityPacket } from '../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
@@ -482,13 +483,16 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     // private onKineticHit(): void;
     onLeaveCombat(): void;
     onRemoval(reason: Entity$RemovalReason): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playAttackSound(): void;
     playBlockFallSound(): void;
     playHurtSound(source: DamageSource): void;
     // private playSecondaryHurtSound(source: DamageSource): void;
     postPiercingAttack(): void;
+    push(xa: number, ya: number, za: number): void;
     push(entity: Entity): void;
+    push(impulse: Vec3): void;
     pushEntities(): void;
     randomTeleport(xx: number, yy: number, zz: number, showParticles: boolean): boolean;
     readAdditionalSaveData(input: ValueInput): void;

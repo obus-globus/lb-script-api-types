@@ -46,12 +46,14 @@ export class WinScreen extends Screen {
     // private addPoemLines(line: string): void;
     // private calculateScrollSpeed(): number;
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
+    extractMenuBackground(graphics: GuiGraphicsExtractor): void;
     extractMenuBackground(graphics: GuiGraphicsExtractor, x: number, y: number, width: number, height: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private extractVignette(graphics: GuiGraphicsExtractor): void;
     getBackgroundMusic(): Music;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     isAllowedInPortal(): boolean;
     isPauseScreen(): boolean;
     keyPressed(event: KeyEvent): boolean;

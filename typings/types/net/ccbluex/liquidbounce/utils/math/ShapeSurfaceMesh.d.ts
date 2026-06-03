@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { DoubleFaceConsumer } from '../../../../../net/ccbluex/liquidbounce/utils/math/DoubleFaceConsumer.d.ts'
 import type { FaceComponent } from '../../../../../net/ccbluex/liquidbounce/utils/math/FaceComponent.d.ts'
 import type { PlaneMask } from '../../../../../net/ccbluex/liquidbounce/utils/math/PlaneMask.d.ts'
@@ -19,7 +18,7 @@ export class ShapeSurfaceMesh extends Object {
     // private zSize: number;
     // private zs: number[];
     // private buildFaceMask(direction: Direction, planeIndex: number): PlaneMask;
-    // private buildMask(width: number, height: number, predicate: Function2<number, number, boolean>): PlaneMask;
+    // private buildMask(width: number, height: number, predicate: (param0: number, param1: number) => boolean): PlaneMask;
     // private faceBounds(direction: Direction, planeIndex: number, startU: number, startV: number, endU: number, endV: number): AABB;
     // private faceContainsPoint(direction: Direction, planeIndex: number, u: number, v: number, hitPos: Vec3): boolean;
     // private facePlaneIndices(direction: Direction): { start: number; endInclusive: number; step: number };

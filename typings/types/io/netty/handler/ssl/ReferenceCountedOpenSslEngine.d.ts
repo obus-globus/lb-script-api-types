@@ -151,6 +151,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     unwrap(arg0: ByteBuffer[], arg1: ByteBuffer[]): SSLEngineResult;
     unwrap(arg0: ByteBuffer[], arg1: number, arg2: number, arg3: ByteBuffer[], arg4: number, arg5: number): SSLEngineResult;
     wrap(arg0: ByteBuffer, arg1: ByteBuffer): SSLEngineResult;
+    wrap(arg0: ByteBuffer[], arg1: ByteBuffer): SSLEngineResult;
     wrap(arg0: ByteBuffer[], arg1: number, arg2: number, arg3: ByteBuffer): SSLEngineResult;
     // private writeEncryptedData(arg0: ByteBuffer, arg1: number): ByteBuf;
     // private writePlaintextData(arg0: ByteBuffer, arg1: number): number;

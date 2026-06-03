@@ -33,5 +33,6 @@ export class GzipCompressorInputStream extends CompressorInputStream implements 
     getMetaData(): GzipParameters;
     // private init(arg0: boolean): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
 }

@@ -33,6 +33,7 @@ export class JToolTip extends JComponent implements Accessible {
     alwaysOnTop(): boolean;
     getAccessibleContext(): AccessibleContext;
     getComponent(): JComponent;
+    getComponent(arg0: number): Component;
     getTipText(): string;
     getUI(): ToolTipUI;
     getUIClassID(): string;

@@ -28,5 +28,6 @@ export abstract class TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeToSt
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(temporalTime: JSTemporalPlainTimeObject, optionsParam: Object, toFractionalSecondDigitsNode: ToFractionalSecondDigitsNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

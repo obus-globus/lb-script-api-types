@@ -4,7 +4,7 @@ import type { ToDoubleFunction } from '../../../../../../../java/util/function/T
 import type { ToIntFunction } from '../../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function } from '../../../../../../../org/spongepowered/include/com/google/common/base/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../../../org/spongepowered/include/com/google/common/base/Function.d.ts'
 export abstract class Ordering<T extends Object | number | string | boolean> extends Object implements Comparator<T> {
     static comparing(paramarg0: (param0: Object | null) => Object | null): (param0: Object | null) => kotlin.Boolean;
     static comparing(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;

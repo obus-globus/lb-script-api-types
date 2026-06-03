@@ -184,6 +184,7 @@ export class Allay extends PathfinderMob implements InventoryCarrier, VibrationS
     getHurtSound(source: DamageSource): SoundEvent;
     getInventory(): (Object | null)[];
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getPickupReach(): Vec3i;
     getSoundVolume(): number;
     getSpinningProgress(a: number): number;

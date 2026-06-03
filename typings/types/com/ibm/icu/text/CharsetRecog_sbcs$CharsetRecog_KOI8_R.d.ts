@@ -6,4 +6,6 @@ export class CharsetRecog_sbcs$CharsetRecog_KOI8_R extends CharsetRecog_sbcs {
     getLanguage(): string;
     getName(): string;
     match(arg0: CharsetDetector): CharsetMatch;
+    match(arg0: CharsetDetector, arg1: number[], arg2: number[]): number;
+    match(arg0: CharsetDetector, arg1: number[], arg2: number[], arg3: number): number;
 }

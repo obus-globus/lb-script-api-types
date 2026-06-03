@@ -12,12 +12,16 @@ export class ICULocaleService extends ICUService {
     createKey(id: string): ICUService$Key;
     createKey(id: string, kind: number): ICUService$Key;
     createKey(l: ULocale, kind: number): ICUService$Key;
+    get(descriptor: string): Object;
+    get(descriptor: string, actualReturn: string[]): Object;
     get(locale: ULocale): Object;
     get(locale: ULocale, actualReturn: ULocale[]): Object;
     get(locale: ULocale, kind: number): Object;
     get(locale: ULocale, kind: number, actualReturn: ULocale[]): Object;
     getAvailableLocales(): Locale[];
     getAvailableULocales(): ULocale[];
+    registerObject(obj: Object, id: string): ICUService$Factory;
+    registerObject(obj: Object, id: string, visible: boolean): ICUService$Factory;
     registerObject(obj: Object, locale: ULocale): ICUService$Factory;
     registerObject(obj: Object, locale: ULocale, visible: boolean): ICUService$Factory;
     registerObject(obj: Object, locale: ULocale, kind: number): ICUService$Factory;

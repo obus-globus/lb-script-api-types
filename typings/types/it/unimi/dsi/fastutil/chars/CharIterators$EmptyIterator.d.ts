@@ -2,6 +2,7 @@ import type { CharConsumer } from '../../../../../it/unimi/dsi/fastutil/chars/Ch
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
 export class CharIterators$EmptyIterator extends Object implements CharListIterator, Serializable, Cloneable {
@@ -13,6 +14,7 @@ export class CharIterators$EmptyIterator extends Object implements CharListItera
     protected clone(): Object;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): string;

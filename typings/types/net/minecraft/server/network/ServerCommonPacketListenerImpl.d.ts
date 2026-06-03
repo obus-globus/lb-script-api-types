@@ -6,7 +6,7 @@ import type { PacketContext } from '../../../../net/fabricmc/fabric/api/networki
 import type { PacketContextProvider } from '../../../../net/fabricmc/fabric/api/networking/v1/context/PacketContextProvider.d.ts'
 import type { PacketListenerExtensions } from '../../../../net/fabricmc/fabric/impl/networking/PacketListenerExtensions.d.ts'
 import type { ServerCommonPacketListenerImplAccessor } from '../../../../net/fabricmc/fabric/mixin/networking/accessor/ServerCommonPacketListenerImplAccessor.d.ts'
-import type { ServerCommonPacketListenerImplAccessor } from '../../../../net/fabricmc/fabric/mixin/recipe/sync/ServerCommonPacketListenerImplAccessor.d.ts'
+import type { ServerCommonPacketListenerImplAccessor as ServerCommonPacketListenerImplAccessor_2 } from '../../../../net/fabricmc/fabric/mixin/recipe/sync/ServerCommonPacketListenerImplAccessor.d.ts'
 import type { Connection } from '../../../../net/minecraft/network/Connection.d.ts'
 import type { DisconnectionDetails } from '../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { PacketListener } from '../../../../net/minecraft/network/PacketListener.d.ts'
@@ -23,7 +23,7 @@ import type { MinecraftServer } from '../../../../net/minecraft/server/Minecraft
 import type { ClientInformation } from '../../../../net/minecraft/server/level/ClientInformation.d.ts'
 import type { CommonListenerCookie } from '../../../../net/minecraft/server/network/CommonListenerCookie.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
-export abstract class ServerCommonPacketListenerImpl extends Object implements PacketContextProvider, PacketListenerExtensions, ServerCommonPacketListenerImplAccessor, ServerCommonPacketListenerImplAccessor, ServerCommonPacketListener {
+export abstract class ServerCommonPacketListenerImpl extends Object implements PacketContextProvider, PacketListenerExtensions, ServerCommonPacketListenerImplAccessor, ServerCommonPacketListenerImplAccessor_2, ServerCommonPacketListener {
     static LATENCY_CHECK_INTERVAL: number;
     static LOGGER: Logger;
     constructor(server: MinecraftServer, connection: Connection, cookie: CommonListenerCookie)

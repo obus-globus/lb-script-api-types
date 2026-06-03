@@ -16,6 +16,7 @@ export class NioDatagramChannelConfig extends DefaultDatagramChannelConfig {
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     // private getOption0<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getTimeToLive(): number;
     isLoopbackModeDisabled(): boolean;
     setAutoRead(arg0: boolean): DatagramChannelConfig;

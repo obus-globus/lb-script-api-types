@@ -43,6 +43,8 @@ export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     pattern(row: string): ShapedRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
+    save(output: RecipeOutput): void;
+    save(output: RecipeOutput, id: string): void;
     save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
     showNotification(showNotification: boolean): ShapedRecipeBuilder;
     unlockedBy(name: string, criterion: Criterion<Object>): ShapedRecipeBuilder;

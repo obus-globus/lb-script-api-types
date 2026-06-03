@@ -11,12 +11,15 @@ import type { ReCartesian } from '../../../../com/mojang/datafixers/optics/profu
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ReForget$Instance<R extends Object | number | string | boolean> extends Object implements App<ReForget$Instance$Mu<R>, ReForget$Mu<R>>, Cocartesian<ReForget$Mu<R>, ReForget$Instance$Mu<R>>, ReCartesian<ReForget$Mu<R>, ReForget$Instance$Mu<R>> {
     static unbox(paramarg0: App<Object, Object>): Cocartesian<Object, Object>;
     static unbox(paramarg0: App<Object, Object>): ReCartesian<Object, Object>;
     constructor()
+    dimap(arg0: App2<ReForget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ReForget$Mu<R>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<ReForget$Mu<R>, A, B>, App2<ReForget$Mu<R>, C, D>>;
+    dimap(arg0: () => App2<ReForget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ReForget$Mu<R>, C, D>;
     left(arg0: App2<ReForget$Mu<R>, A, B>): App2<ReForget$Mu<R>, Either<A, C>, Either<B, C>>;
     right(arg0: App2<ReForget$Mu<R>, A, B>): App2<ReForget$Mu<R>, Either<C, A>, Either<C, B>>;
     right(arg0: App2<P, A, B>): App2<P, Either<C, A>, Either<C, B>>;

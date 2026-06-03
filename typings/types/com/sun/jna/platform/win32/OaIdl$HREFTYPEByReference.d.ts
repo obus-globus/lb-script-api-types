@@ -6,4 +6,5 @@ export class OaIdl$HREFTYPEByReference extends WinDef$DWORDByReference {
     constructor(arg0: WinDef$DWORD)
     getValue(): OaIdl$HREFTYPE;
     setValue(arg0: OaIdl$HREFTYPE): void;
+    setValue(arg0: WinDef$DWORD): void;
 }

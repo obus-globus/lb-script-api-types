@@ -42,6 +42,8 @@ export class ShapelessRecipeBuilder extends Object implements RecipeBuilder {
     requires(item: ItemLike, count: number): ShapelessRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
+    save(output: RecipeOutput): void;
+    save(output: RecipeOutput, id: string): void;
     save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
     unlockedBy(name: string, criterion: Criterion<Object>): ShapelessRecipeBuilder;
 }

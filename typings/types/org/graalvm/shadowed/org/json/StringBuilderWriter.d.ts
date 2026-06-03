@@ -12,6 +12,7 @@ export class StringBuilderWriter extends Writer {
     close(): void;
     flush(): void;
     toString(): string;
+    write(arg0: string[]): void;
     write(cbuf: string[], offset: number, length: number): void;
     write(c: number): void;
     write(str: string): void;

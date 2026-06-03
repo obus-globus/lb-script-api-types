@@ -25,6 +25,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { StateDefinition$Builder } from '../../../../../net/minecraft/world/level/block/state/StateDefinition$Builder.d.ts'
 import type { EnumProperty } from '../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
 import type { IntegerProperty } from '../../../../../net/minecraft/world/level/block/state/properties/IntegerProperty.d.ts'
+import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class LeafLitterBlock extends VegetationBlock implements SegmentableBlock {
@@ -87,6 +88,8 @@ export class LeafLitterBlock extends VegetationBlock implements SegmentableBlock
     // private shapes: (param0: BlockState) => VoxelShape;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
+    canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;
     codec(): MapCodec<LeafLitterBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
@@ -95,6 +98,7 @@ export class LeafLitterBlock extends VegetationBlock implements SegmentableBlock
     getShapeCalculator(facing: EnumProperty<Direction>, amount: IntegerProperty): (param0: BlockState) => VoxelShape;
     getShapeHeight(): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
+    getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     // private makeShapes(): (param0: BlockState) => VoxelShape;
     mirror(state: BlockState, mirror: Mirror): BlockState;

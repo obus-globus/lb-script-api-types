@@ -14,6 +14,8 @@ export class RealmsSelectWorldTemplateScreen$WorldTemplateList extends ObjectSel
     constructor(null_: RealmsSelectWorldTemplateScreen$WorldTemplateList)
     constructor(null_: RealmsSelectWorldTemplateScreen$WorldTemplateList)
     addEntry(template: WorldTemplate): void;
+    addEntry(entry: RealmsSelectWorldTemplateScreen$Entry): number;
+    addEntry(entry: RealmsSelectWorldTemplateScreen$Entry, height: number): number;
     getRowWidth(): number;
     getTemplates(): WorldTemplate[];
     isEmpty(): boolean;

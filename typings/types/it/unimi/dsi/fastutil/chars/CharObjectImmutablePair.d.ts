@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { CharObjectPair } from '../../../../../it/unimi/dsi/fastutil/chars/CharObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class CharObjectImmutablePair<V extends Object | number | string | boolea
     left(arg0: string): CharObjectPair<V>;
     leftChar(): string;
     right(): V;
+    right(arg0: V): Pair<string, V>;
     toString(): string;
 }

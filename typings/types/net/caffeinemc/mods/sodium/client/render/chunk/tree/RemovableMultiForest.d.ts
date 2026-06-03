@@ -11,6 +11,7 @@ export class RemovableMultiForest extends Object implements RemovableForest {
     // private trees: Long2ReferenceLinkedOpenHashMap<RemovableTree>;
     // private treesAreReady: boolean;
     add(arg0: number, arg1: number, arg2: number): void;
+    add(arg0: RenderSection): void;
     ensureCapacity(arg0: number): void;
     getPresence(arg0: number, arg1: number, arg2: number): number;
     prepareForTraversal(): void;

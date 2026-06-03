@@ -4,6 +4,7 @@ import type { ChannelProgressivePromise } from '../../../io/netty/channel/Channe
 import type { DefaultProgressivePromise } from '../../../io/netty/util/concurrent/DefaultProgressivePromise.d.ts'
 import type { Future } from '../../../io/netty/util/concurrent/Future.d.ts'
 import type { GenericFutureListener } from '../../../io/netty/util/concurrent/GenericFutureListener.d.ts'
+import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DefaultChannelProgressivePromise extends DefaultProgressivePromise<void> implements ChannelFlushPromiseNotifier$FlushCheckpoint, ChannelProgressivePromise {
@@ -15,7 +16,11 @@ export class DefaultChannelProgressivePromise extends DefaultProgressivePromise<
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelProgressivePromise;
     addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
     await(): ChannelProgressivePromise;
+    await(arg0: number): boolean;
+    await(arg0: number, arg1: TimeUnit): boolean;
     awaitUninterruptibly(): ChannelProgressivePromise;
+    awaitUninterruptibly(arg0: number): boolean;
+    awaitUninterruptibly(arg0: number, arg1: TimeUnit): boolean;
     channel(): Channel;
     checkDeadLock(): void;
     executor(): (Object | null)[];
@@ -32,5 +37,6 @@ export class DefaultChannelProgressivePromise extends DefaultProgressivePromise<
     sync(): ChannelProgressivePromise;
     syncUninterruptibly(): ChannelProgressivePromise;
     trySuccess(): boolean;
+    trySuccess(arg0: void): boolean;
     unvoid(): ChannelProgressivePromise;
 }

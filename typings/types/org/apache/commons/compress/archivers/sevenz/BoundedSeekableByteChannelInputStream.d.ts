@@ -9,6 +9,7 @@ export class BoundedSeekableByteChannelInputStream extends InputStream {
     // private channel: SeekableByteChannel;
     close(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private read(arg0: number): number;
 }

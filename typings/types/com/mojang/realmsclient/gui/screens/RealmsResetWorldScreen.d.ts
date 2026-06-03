@@ -44,6 +44,7 @@ export class RealmsResetWorldScreen extends RealmsScreen {
     // private templates: WorldTemplatePaginatedList;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
     // private runResetTasks(resetTask: LongRunningTask): void;

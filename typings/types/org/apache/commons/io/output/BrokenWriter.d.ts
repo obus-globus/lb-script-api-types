@@ -14,5 +14,9 @@ export class BrokenWriter extends Writer {
     close(): void;
     flush(): void;
     // private rethrow(): RuntimeException;
+    write(arg0: string[]): void;
     write(arg0: string[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
+    write(arg0: string): void;
+    write(arg0: string, arg1: number, arg2: number): void;
 }

@@ -13,6 +13,7 @@ export class Reference2BooleanFunctions$EmptyFunction<K extends Object | number 
     equals(arg0: Object | null): boolean;
     getBoolean(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
+    getOrDefault(arg0: Object, arg1: boolean): boolean;
     hashCode(): number;
     // private readResolve(): Object;
     size(): number;

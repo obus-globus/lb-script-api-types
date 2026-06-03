@@ -5,4 +5,6 @@ export class CharsetRecog_sbcs$CharsetRecog_8859_7_el extends CharsetRecog_sbcs$
     constructor()
     getLanguage(): string;
     match(det: CharsetDetector): CharsetMatch;
+    match(det: CharsetDetector, ngrams: number[], byteMap: number[]): number;
+    match(det: CharsetDetector, ngrams: number[], byteMap: number[], spaceChar: number): number;
 }

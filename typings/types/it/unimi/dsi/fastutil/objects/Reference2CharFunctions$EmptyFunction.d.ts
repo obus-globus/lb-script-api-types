@@ -13,6 +13,7 @@ export class Reference2CharFunctions$EmptyFunction<K extends Object | number | s
     equals(arg0: Object | null): boolean;
     getChar(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
+    getOrDefault(arg0: Object, arg1: string): string;
     hashCode(): number;
     // private readResolve(): Object;
     size(): number;

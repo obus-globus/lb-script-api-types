@@ -11,6 +11,7 @@ export class ModifyArgsInjector extends InvokeInjector {
     constructor(arg0: InjectionInfo)
     // private argsClassGenerator: ArgsClassGenerator;
     checkTarget(arg0: AbstractInsnNode[]): void;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     injectAtInvoke(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private packArgs(arg0: AbstractInsnNode[], arg1: string, arg2: string): void;

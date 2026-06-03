@@ -18,6 +18,7 @@ export abstract class BooleanPrototypeBuiltins$JSBooleanToStringNode extends JSB
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(thisObj: JSBooleanObject): Object;
     toStringForeignObject(thisObj: Object, interop: InteropLibrary): Object;
     toStringOther(thisObj: Object): string;

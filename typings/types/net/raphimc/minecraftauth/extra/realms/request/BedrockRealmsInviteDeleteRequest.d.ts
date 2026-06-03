@@ -6,6 +6,7 @@ import type { RealmsServer } from '../../../../../../net/raphimc/minecraftauth/e
 import type { RealmsResponseHandler } from '../../../../../../net/raphimc/minecraftauth/extra/realms/responsehandler/RealmsResponseHandler.d.ts'
 export class BedrockRealmsInviteDeleteRequest extends DeleteRequest implements RealmsResponseHandler<void> {
     constructor(arg0: RealmsServer)
+    handle(arg0: HttpResponse): void;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

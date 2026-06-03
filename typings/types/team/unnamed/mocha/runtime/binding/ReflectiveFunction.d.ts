@@ -8,6 +8,7 @@ export class ReflectiveFunction<T extends Object | number | string | boolean> ex
     constructor(arg0: Object, arg1: Method)
     // private method: Method;
     // private object: Object;
+    evaluate(arg0: ExecutionContext<T>): Value;
     evaluate(arg0: ExecutionContext<T>, arg1: Function$Arguments): Value;
     evaluate(arg0: ExecutionContext<T>): Value;
     pure(): boolean;

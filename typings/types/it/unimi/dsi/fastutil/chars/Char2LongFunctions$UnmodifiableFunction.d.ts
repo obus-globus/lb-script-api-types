@@ -6,6 +6,7 @@ export class Char2LongFunctions$UnmodifiableFunction extends AbstractChar2LongFu
     constructor(arg0: (param0: string) => kotlin.Long)
     // private function: (param0: string) => kotlin.Long;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

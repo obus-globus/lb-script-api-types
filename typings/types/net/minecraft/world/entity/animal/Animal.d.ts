@@ -147,6 +147,7 @@ export abstract class Animal extends AgeableMob {
     getDismountLocationForPassenger(passenger: LivingEntity): Vec3;
     getInLoveTime(): number;
     getLoveCause(): ServerPlayer;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     handleEntityEvent(id: number): void;
     isFood(itemStack: ItemStack): boolean;

@@ -14,6 +14,7 @@ export class ResultSlot extends Slot {
     isFake(): boolean;
     mayPlace(itemStack: ItemStack): boolean;
     onQuickCraft(picked: ItemStack, count: number): void;
+    onQuickCraft(picked: ItemStack, original: ItemStack): void;
     onSwapCraft(count: number): void;
     onTake(player: Player, carried: ItemStack): void;
     remove(amount: number): ItemStack;

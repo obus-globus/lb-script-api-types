@@ -33,6 +33,8 @@ export class DumpArchiveInputStream extends ArchiveInputStream<DumpArchiveEntry>
     getNextEntry(): DumpArchiveEntry;
     // private getPath(arg0: DumpArchiveEntry): string;
     getSummary(): DumpArchiveSummary;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readBITS(): void;
     // private readCLRI(): void;

@@ -17,9 +17,9 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
-import type { BigDecimal } from '../../../../java/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../java/math/BigDecimal.d.ts'
 import type { BigInteger } from '../../../../java/math/BigInteger.d.ts'
-import type { MathContext } from '../../../../java/math/MathContext.d.ts'
+import type { MathContext as MathContext_2 } from '../../../../java/math/MathContext.d.ts'
 import type { AttributedCharacterIterator } from '../../../../java/text/AttributedCharacterIterator.d.ts'
 import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
@@ -91,11 +91,19 @@ export class DecimalFormat extends NumberFormat {
     areSignificantDigitsUsed(): boolean;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    format(arg0: BigDecimal): string;
     format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: CurrencyAmount): string;
     format(arg0: CurrencyAmount, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: BigDecimal_2): string;
+    format(arg0: BigDecimal_2, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: BigInteger): string;
     format(arg0: BigInteger, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     formatToCharacterIterator(arg0: Object): AttributedCharacterIterator;
     getCurrency(): Currency;
@@ -106,7 +114,7 @@ export class DecimalFormat extends NumberFormat {
     getFixedDecimal(arg0: number): PluralRules$IFixedDecimal;
     getFormatWidth(): number;
     getGroupingSize(): number;
-    getMathContext(): MathContext;
+    getMathContext(): MathContext_2;
     getMathContextICU(): MathContext;
     getMaximumFractionDigits(): number;
     getMaximumIntegerDigits(): number;
@@ -125,7 +133,7 @@ export class DecimalFormat extends NumberFormat {
     getParser(): NumberParserImpl;
     getPositivePrefix(): string;
     getPositiveSuffix(): string;
-    getRoundingIncrement(): BigDecimal;
+    getRoundingIncrement(): BigDecimal_2;
     getRoundingMode(): number;
     getSecondaryGroupingSize(): number;
     hashCode(): number;
@@ -140,11 +148,12 @@ export class DecimalFormat extends NumberFormat {
     isParseStrict(): boolean;
     isScientificNotation(): boolean;
     isSignAlwaysShown(): boolean;
+    parse(arg0: string): Number;
     parse(arg0: string, arg1: ParsePosition): Number;
     parseCurrency(arg0: CharSequence, arg1: ParsePosition): CurrencyAmount;
     // private readObject(arg0: ObjectInputStream): void;
     refreshFormatter(): void;
-    // private safeConvertBigDecimal(arg0: BigDecimal): Number;
+    // private safeConvertBigDecimal(arg0: BigDecimal_2): Number;
     setCurrency(arg0: Currency): void;
     setCurrencyPluralInfo(arg0: CurrencyPluralInfo): void;
     setCurrencyUsage(arg0: Currency$CurrencyUsage): void;
@@ -155,7 +164,7 @@ export class DecimalFormat extends NumberFormat {
     setFormatWidth(arg0: number): void;
     setGroupingSize(arg0: number): void;
     setGroupingUsed(arg0: boolean): void;
-    setMathContext(arg0: MathContext): void;
+    setMathContext(arg0: MathContext_2): void;
     setMathContextICU(arg0: MathContext): void;
     setMaximumFractionDigits(arg0: number): void;
     setMaximumIntegerDigits(arg0: number): void;
@@ -182,7 +191,7 @@ export class DecimalFormat extends NumberFormat {
     setProperties(arg0: DecimalFormat$PropertySetter): void;
     setPropertiesFromPattern(arg0: string, arg1: number): void;
     setRoundingIncrement(arg0: BigDecimal): void;
-    setRoundingIncrement(arg0: BigDecimal): void;
+    setRoundingIncrement(arg0: BigDecimal_2): void;
     setRoundingIncrement(arg0: number): void;
     setRoundingMode(arg0: number): void;
     setScientificNotation(arg0: boolean): void;

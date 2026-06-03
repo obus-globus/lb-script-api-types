@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -19,7 +18,7 @@ import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/
 import type { Sequence } from '../../../../../../../kotlin/sequences/Sequence.d.ts'
 export class DescriptorUtilsKt extends Object {
     static declaresOrInheritsDefaultValue(paramarg0: ValueParameterDescriptor): boolean;
-    static firstOverridden(paramarg0: CallableMemberDescriptor, paramarg1: boolean, paramarg2: Function1<Object, boolean>): CallableMemberDescriptor;
+    static firstOverridden(paramarg0: CallableMemberDescriptor, paramarg1: boolean, paramarg2: (param0: Object | null) => boolean): CallableMemberDescriptor;
     static fqNameOrNull(paramarg0: DeclarationDescriptor): FqName;
     static getAnnotationClass(paramarg0: AnnotationDescriptor): ClassDescriptor;
     static getBuiltIns(paramarg0: DeclarationDescriptor): KotlinBuiltIns;

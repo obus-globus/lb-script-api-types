@@ -10,5 +10,6 @@ export class ExecuteCommand$ExecuteIfFunctionCustomModifier extends Object imple
     private constructor(check: boolean)
     // private check: (param0: number) => kotlin.Boolean;
     apply(context: CommandContext<T>): E[];
+    apply(context: CommandContext<CommandSourceStack>): E[];
     apply(originalSource: CommandSourceStack, currentSources: CommandSourceStack[], currentStep: ContextChain<CommandSourceStack>, modifiers: ChainModifiers, output: ExecutionControl<CommandSourceStack>): void;
 }

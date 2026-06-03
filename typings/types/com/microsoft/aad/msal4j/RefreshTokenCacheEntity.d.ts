@@ -1,5 +1,7 @@
 import type { JsonWriter } from '../../../../com/azure/json/JsonWriter.d.ts'
 import type { Credential } from '../../../../com/microsoft/aad/msal4j/Credential.d.ts'
+import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
+import type { Writer } from '../../../../java/io/Writer.d.ts'
 export class RefreshTokenCacheEntity extends Credential {
     constructor()
     // private credentialType: string;
@@ -11,4 +13,6 @@ export class RefreshTokenCacheEntity extends Credential {
     getKey(): string;
     isFamilyRT(): boolean;
     toJson(arg0: JsonWriter): JsonWriter;
+    toJson(arg0: OutputStream): void;
+    toJson(arg0: Writer): void;
 }

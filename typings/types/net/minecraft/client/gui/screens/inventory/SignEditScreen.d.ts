@@ -27,4 +27,5 @@ export class SignEditScreen extends AbstractSignEditScreen {
     getSignTextScale(): Vector3f;
     getSignYOffset(): number;
     init(): void;
+    init(width: number, height: number): void;
 }

@@ -1,8 +1,6 @@
 import type { InterruptedException } from '../../../../../../java/lang/InterruptedException.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { CacheWithNotNullValues } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/CacheWithNotNullValues.d.ts'
 import type { CacheWithNullableValues } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/CacheWithNullableValues.d.ts'
 import type { LockBasedStorageManager$ExceptionHandlingStrategy } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/LockBasedStorageManager$ExceptionHandlingStrategy.d.ts'
@@ -16,22 +14,22 @@ import type { StorageManager } from '../../../../../../kotlin/reflect/jvm/intern
 export class LockBasedStorageManager extends Object implements StorageManager {
     static NO_LOCKS: StorageManager;
     constructor(arg0: string)
-    constructor(arg0: string, arg1: () => void, arg2: Function1<InterruptedException, void>)
+    constructor(arg0: string, arg1: () => void, arg2: (param0: InterruptedException) => void)
     private constructor(arg0: string, arg1: LockBasedStorageManager$ExceptionHandlingStrategy, arg2: SimpleLock)
     // private debugText: string;
     // private exceptionHandlingStrategy: LockBasedStorageManager$ExceptionHandlingStrategy;
     // private lock: SimpleLock;
-    compute<T extends Object | number | string | boolean>(arg0: Function0<T>): T;
+    compute<T extends Object | number | string | boolean>(arg0: () => T): T;
     createCacheWithNotNullValues(): CacheWithNotNullValues<K, V>;
     createCacheWithNullableValues(): CacheWithNullableValues<K, V>;
-    createLazyValue(arg0: Function0<T>): NotNullLazyValue<T>;
-    createLazyValueWithPostCompute(arg0: Function0<T>, arg1: Function1<boolean, T>, arg2: Function1<T, void>): NotNullLazyValue<T>;
-    createMemoizedFunction(arg0: Function1<K, V>): MemoizedFunctionToNotNull<K, V>;
-    createMemoizedFunction(arg0: Function1<K, V>, arg1: Map<K, Object>): MemoizedFunctionToNotNull<K, V>;
-    createMemoizedFunctionWithNullableValues(arg0: Function1<K, V>): MemoizedFunctionToNullable<K, V>;
-    createMemoizedFunctionWithNullableValues(arg0: Function1<K, V>, arg1: Map<K, Object>): MemoizedFunctionToNullable<K, V>;
-    createNullableLazyValue(arg0: Function0<T>): NullableLazyValue<T>;
-    createRecursionTolerantLazyValue<T extends Object | number | string | boolean>(arg0: Function0<T>, arg1: T): NotNullLazyValue<T>;
+    createLazyValue(arg0: () => T): NotNullLazyValue<T>;
+    createLazyValueWithPostCompute(arg0: () => T, arg1: (param0: boolean) => T, arg2: (param0: T) => void): NotNullLazyValue<T>;
+    createMemoizedFunction(arg0: (param0: K) => V): MemoizedFunctionToNotNull<K, V>;
+    createMemoizedFunction(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNotNull<K, V>;
+    createMemoizedFunctionWithNullableValues(arg0: (param0: K) => V): MemoizedFunctionToNullable<K, V>;
+    createMemoizedFunctionWithNullableValues(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNullable<K, V>;
+    createNullableLazyValue(arg0: () => T): NullableLazyValue<T>;
+    createRecursionTolerantLazyValue<T extends Object | number | string | boolean>(arg0: () => T, arg1: T): NotNullLazyValue<T>;
     recursionDetectedDefault<K extends Object | number | string | boolean>(arg0: string, arg1: K): LockBasedStorageManager$RecursionDetectedResult<V>;
     toString(): string;
 }

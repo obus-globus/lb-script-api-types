@@ -35,6 +35,7 @@ export class MerchantScreen extends AbstractContainerScreen<MerchantMenu> {
     // private extractProgressBar(graphics: GuiGraphicsExtractor, xo: number, yo: number, offer: MerchantOffer): void;
     // private extractScroller(graphics: GuiGraphicsExtractor, xo: number, yo: number, mouseX: number, mouseY: number, offers: (Object | null)[]): void;
     init(): void;
+    init(width: number, height: number): void;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseReleased(event: MouseButtonEvent): boolean;

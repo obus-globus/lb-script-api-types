@@ -5,5 +5,7 @@ export class TruffleStringBuilderFactory$AppendCodePointNodeGen extends TruffleS
     static getUncached(): TruffleStringBuilder$AppendCodePointNode;
     private constructor()
     // private state_0_: number;
+    execute(sb: TruffleStringBuilder, codepoint: number): void;
+    execute(sb: TruffleStringBuilder, codepoint: number, repeat: number): void;
     execute(arg0Value: TruffleStringBuilder, arg1Value: number, arg2Value: number, arg3Value: boolean): void;
 }

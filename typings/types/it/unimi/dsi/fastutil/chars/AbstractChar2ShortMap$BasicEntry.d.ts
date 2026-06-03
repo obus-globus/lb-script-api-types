@@ -12,5 +12,6 @@ export class AbstractChar2ShortMap$BasicEntry extends Object implements Char2Sho
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

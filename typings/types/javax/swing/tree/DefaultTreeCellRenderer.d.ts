@@ -99,6 +99,8 @@ export class DefaultTreeCellRenderer extends JLabel implements TreeCellRenderer 
     // private paintFocus(arg0: Graphics, arg1: number, arg2: number, arg3: number, arg4: number, arg5: Color): void;
     repaint(): void;
     repaint(arg0: Rectangle): void;
+    repaint(arg0: number, arg1: number, arg2: number, arg3: number): void;
+    repaint(arg0: number): void;
     repaint(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
     revalidate(): void;
     setBackground(arg0: Color): void;

@@ -42,6 +42,7 @@ export abstract class ArrayPrototypeBuiltins$JSArrayToStringNode extends ArrayPr
     // private getToStringProperty(target: Object): Object;
     // private importValue(value: Object): Object;
     // private shouldTryOwnJoin(arrayObj: Object): boolean;
+    toString(): string;
     toString(thisObj: Object, isJSObjectProfile: InlinedConditionProfile): Object;
     // private toStringForeign(arrayObj: Object): Object;
 }

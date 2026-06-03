@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../com/sun/jna/Pointer.d.ts'
+import type { WString } from '../../../com/sun/jna/WString.d.ts'
 import type { Cleaner$Cleanable } from '../../../com/sun/jna/internal/Cleaner$Cleanable.d.ts'
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
@@ -17,9 +18,11 @@ export class Memory extends Pointer implements Closeable {
     align(arg0: number): Memory;
     boundsCheck(arg0: number, arg1: number): void;
     clear(): void;
+    clear(arg0: number): void;
     close(): void;
     dispose(): void;
     dump(): string;
+    dump(arg0: number, arg1: number): string;
     getByte(arg0: number): number;
     getByteBuffer(arg0: number, arg1: number): ByteBuffer;
     getChar(arg0: number): string;
@@ -29,6 +32,7 @@ export class Memory extends Pointer implements Closeable {
     getLong(arg0: number): number;
     getPointer(arg0: number): Pointer;
     getShort(arg0: number): number;
+    getString(arg0: number): string;
     getString(arg0: number, arg1: string): string;
     getWideString(arg0: number): string;
     read(arg0: number, arg1: Pointer[], arg2: number, arg3: number): void;
@@ -47,6 +51,8 @@ export class Memory extends Pointer implements Closeable {
     setLong(arg0: number, arg1: number): void;
     setPointer(arg0: number, arg1: Pointer): void;
     setShort(arg0: number, arg1: number): void;
+    setString(arg0: number, arg1: WString): void;
+    setString(arg0: number, arg1: string): void;
     setString(arg0: number, arg1: string, arg2: string): void;
     setWideString(arg0: number, arg1: string): void;
     share(arg0: number): Pointer;

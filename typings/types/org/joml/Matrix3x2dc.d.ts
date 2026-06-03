@@ -10,6 +10,7 @@ import type { Vector3d } from '../../org/joml/Vector3d.d.ts'
 import type { Vector3dc } from '../../org/joml/Vector3dc.d.ts'
 export interface Matrix3x2dc extends Object{
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix3x2dc, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: DoubleBuffer): DoubleBuffer;

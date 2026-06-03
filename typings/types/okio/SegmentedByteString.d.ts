@@ -33,9 +33,11 @@ export class SegmentedByteString extends ByteString {
     hex(): string;
     hmac(algorithm: string, key: ByteString): ByteString;
     indexOf(other: number[], fromIndex: number): number;
+    indexOf(other: ByteString, fromIndex: number): number;
     internalArray(): number[];
     internalGet(pos: number): number;
     lastIndexOf(other: number[], fromIndex: number): number;
+    lastIndexOf(other: ByteString, fromIndex: number): number;
     rangeEquals(offset: number, other: number[], otherOffset: number, byteCount: number): boolean;
     rangeEquals(offset: number, other: ByteString, otherOffset: number, byteCount: number): boolean;
     string(charset: Charset): string;

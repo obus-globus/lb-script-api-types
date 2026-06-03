@@ -28,4 +28,5 @@ export abstract class TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDate
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     equals(thisZonedDateTime: JSTemporalZonedDateTimeObject, otherParam: Object, toTemporalZonedDateTime: ToTemporalZonedDateTimeNode, toTimeZoneIdentifier: ToTemporalTimeZoneIdentifierNode, toCalendarIdentifier: ToTemporalCalendarIdentifierNode): boolean;
+    equals(other: Object | null): boolean;
 }

@@ -58,6 +58,7 @@ export class CompactDecimalFormat extends DecimalFormat {
     static registerFactory(paramfactory: NumberFormat$NumberFormatFactory): Object;
     static unregister(paramregistryKey: Object): boolean;
     constructor(locale: ULocale, style: CompactDecimalFormat$CompactStyle)
+    parse(text: string): Number;
     parse(text: string, parsePosition: ParsePosition): Number;
     parseCurrency(text: CharSequence, parsePosition: ParsePosition): CurrencyAmount;
 }

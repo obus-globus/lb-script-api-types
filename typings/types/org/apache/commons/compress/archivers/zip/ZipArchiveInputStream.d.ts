@@ -58,6 +58,8 @@ export class ZipArchiveInputStream extends ArchiveInputStream<ZipArchiveEntry> i
     // private isFirstByteOfEocdSig(arg0: number): boolean;
     // private processZip64Extra(arg0: ZipLong, arg1: ZipLong): void;
     // private pushback(arg0: number[], arg1: number, arg2: number): void;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readDataDescriptor(): void;
     // private readDeflated(arg0: number[], arg1: number, arg2: number): number;

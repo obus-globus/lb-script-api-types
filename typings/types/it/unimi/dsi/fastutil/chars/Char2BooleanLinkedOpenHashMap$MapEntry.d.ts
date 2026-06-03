@@ -32,6 +32,8 @@ export class Char2BooleanLinkedOpenHashMap$MapEntry extends Object implements Ch
     left(arg0: string): CharBooleanPair;
     left(arg0: string): CharBooleanPair;
     leftChar(): string;
+    right(): boolean;
+    right(arg0: boolean): CharBooleanPair;
     right(arg0: boolean): CharBooleanPair;
     right(): boolean;
     right(arg0: boolean): CharBooleanPair;

@@ -6,6 +6,7 @@ export class BrewingStandMenu$PotionSlot extends Slot {
     static mayPlaceItem(paramitemStack: ItemStack): boolean;
     constructor(container: ItemStack[], slot: number, x: number, y: number)
     getMaxStackSize(): number;
+    getMaxStackSize(itemStack: ItemStack): number;
     getNoItemIcon(): Identifier;
     mayPlace(itemStack: ItemStack): boolean;
     onTake(player: Player, carried: ItemStack): void;

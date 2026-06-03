@@ -48,6 +48,7 @@ export abstract class AbstractParentWidget extends AbstractWidget implements Con
     preeditUpdated(event: PreeditEvent): boolean;
     removeChild(arg0: GuiEventListener): void;
     setDragging(arg0: boolean): void;
+    setFocused(arg0: boolean): void;
     setFocused(arg0: GuiEventListener): void;
     setFocused(focused: boolean): void;
 }

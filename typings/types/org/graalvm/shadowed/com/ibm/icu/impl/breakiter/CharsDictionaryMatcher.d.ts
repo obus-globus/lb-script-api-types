@@ -5,5 +5,6 @@ export class CharsDictionaryMatcher extends DictionaryMatcher {
     constructor(chars: CharSequence)
     // private characters: CharSequence;
     getType(): number;
+    matches(text: CharacterIterator, maxLength: number, lengths: number[], count: number[], limit: number): number;
     matches(text_: CharacterIterator, maxLength: number, lengths: number[], count_: number[], limit: number, values: number[]): number;
 }

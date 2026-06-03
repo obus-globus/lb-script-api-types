@@ -11,6 +11,7 @@ export class CatRenderer extends AgeableMobRenderer<Cat, CatRenderState, Abstrac
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): CatRenderState;
+    createRenderState(entity: Cat, partialTicks: number): CatRenderState;
     extractRenderState(entity: Cat, state: CatRenderState, partialTicks: number): void;
     getTextureLocation(state: CatRenderState): Identifier;
     setupRotations(state: CatRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;

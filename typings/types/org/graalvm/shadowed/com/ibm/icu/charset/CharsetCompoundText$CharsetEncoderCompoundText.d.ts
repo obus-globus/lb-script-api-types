@@ -9,6 +9,7 @@ export class CharsetCompoundText$CharsetEncoderCompoundText extends CharsetEncod
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
     constructor(null_: CharsetCompoundText$CharsetEncoderCompoundText, cs: CharsetICU)
     // private gbEncoder: CharsetMBCS$CharsetEncoderMBCS[];
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

@@ -8,4 +8,5 @@ export abstract class XCrossLayer extends IntBiomeLayer {
     constructor(arg0: MCVersion, arg1: number, arg2: number, arg3: IntBiomeLayer)
     sample(arg0: number, arg1: number, arg2: number): number;
     sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
 }

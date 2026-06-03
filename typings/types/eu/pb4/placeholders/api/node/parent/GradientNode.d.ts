@@ -4,9 +4,11 @@ import type { DynamicShadowNode$Transformer } from '../../../../../../eu/pb4/pla
 import type { GradientNode$GradientProvider } from '../../../../../../eu/pb4/placeholders/api/node/parent/GradientNode$GradientProvider.d.ts'
 import type { ParentNode } from '../../../../../../eu/pb4/placeholders/api/node/parent/ParentNode.d.ts'
 import type { ParentTextNode } from '../../../../../../eu/pb4/placeholders/api/node/parent/ParentTextNode.d.ts'
+import type { NodeParser } from '../../../../../../eu/pb4/placeholders/api/parsers/NodeParser.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
+import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d.ts'
 import type { TextColor } from '../../../../../../net/minecraft/network/chat/TextColor.d.ts'
 export class GradientNode extends ParentNode implements DynamicShadowNode$Transformer {
     static EMPTY: ParentNode;
@@ -24,8 +26,12 @@ export class GradientNode extends ParentNode implements DynamicShadowNode$Transf
     constructor(arg0: TextNode[], arg1: (param0: number, param1: number) => net.minecraft.network.chat.TextColor)
     // private gradientProvider: (param0: number, param1: number) => net.minecraft.network.chat.TextColor;
     applyFormatting(arg0: MutableComponent, arg1: ParserContext): Component;
+    applyFormatting(arg0: Style, arg1: ParserContext): Style;
     applyShadowColors(arg0: Component, arg1: number, arg2: number, arg3: ParserContext): Component;
     copyWith(arg0: TextNode[]): ParentTextNode;
+    copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
+    copyWith(arg0: E[]): ParentTextNode;
+    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     hasShadowColor(arg0: ParserContext): boolean;
     toString(): string;
 }

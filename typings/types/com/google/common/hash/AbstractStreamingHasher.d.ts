@@ -16,6 +16,7 @@ export abstract class AbstractStreamingHasher extends AbstractHasher {
     processRemaining(bb: ByteBuffer): void;
     putByte(b: number): Hasher;
     putBytes(readBuffer: ByteBuffer): Hasher;
+    putBytes(bytes: number[]): Hasher;
     putBytes(bytes: number[], off: number, len: number): Hasher;
     // private putBytesInternal(readBuffer: ByteBuffer): Hasher;
     putChar(c: string): Hasher;

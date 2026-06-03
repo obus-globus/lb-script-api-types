@@ -18,6 +18,7 @@ import type { ConnectionProtocol } from '../../../../net/minecraft/network/Conne
 import type { DisconnectionDetails } from '../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { TickablePacketListener } from '../../../../net/minecraft/network/TickablePacketListener.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
+import type { ClientboundCustomPayloadPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundCustomPayloadPacket.d.ts'
 import type { ClientboundUpdateTagsPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundUpdateTagsPacket.d.ts'
 import type { CustomPacketPayload } from '../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { ClientConfigurationPacketListener } from '../../../../net/minecraft/network/protocol/configuration/ClientConfigurationPacketListener.d.ts'
@@ -46,6 +47,7 @@ export class ClientConfigurationPacketListenerImpl extends ClientCommonPacketLis
     getAddon(): ClientConfigurationNetworkAddon;
     handleCodeOfConduct(packet: ClientboundCodeOfConductPacket): void;
     handleConfigurationFinished(packet: ClientboundFinishConfigurationPacket): void;
+    handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;
     handleCustomPayload(payload: CustomPacketPayload): void;
     handleEnabledFeatures(packet: ClientboundUpdateEnabledFeaturesPacket): void;
     handleRegistryData(packet: ClientboundRegistryDataPacket): void;

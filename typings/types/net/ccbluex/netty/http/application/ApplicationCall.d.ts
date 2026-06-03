@@ -7,7 +7,6 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class ApplicationCall extends Object {
     constructor(uri: string, path: string, remainingPath: string, method: HttpMethod, body: string, parameters: { [key: string]: string }, queryParameters: { [key: string]: string }, headers: Map$Entry<string, string>[])
@@ -34,7 +33,7 @@ export class ApplicationCall extends Object {
     respondFile(file: File): void;
     respondFileStream(stream: InputStream, contentType: string | null, contentLength: number): void;
     respondNoContent(): void;
-    respondOutputStream(contentType: string | null, status: HttpResponseStatus, contentLength: number, producer: Function1<OutputStream, void>): void;
+    respondOutputStream(contentType: string | null, status: HttpResponseStatus, contentLength: number, producer: (param0: OutputStream) => void): void;
     serviceUnavailable(reason: string): void;
     takeResponse(): FullHttpResponse;
     unauthorized(reason: string): void;

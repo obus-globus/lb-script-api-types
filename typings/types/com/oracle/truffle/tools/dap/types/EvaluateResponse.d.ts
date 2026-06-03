@@ -12,4 +12,5 @@ export class EvaluateResponse extends Response {
     getBody(): EvaluateResponse$ResponseBody;
     hashCode(): number;
     setBody(body: EvaluateResponse$ResponseBody): EvaluateResponse;
+    setBody(body: Object): Response;
 }

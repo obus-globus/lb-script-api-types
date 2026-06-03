@@ -11,6 +11,7 @@ export class VoronoiLayer extends IntBiomeLayer {
     getSeed(): number;
     is3D(): boolean;
     sample(arg0: number, arg1: number, arg2: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
     // private sample14minus(arg0: number, arg1: number): number;
     // private sample15plus(arg0: number, arg1: number, arg2: number): number;
 }

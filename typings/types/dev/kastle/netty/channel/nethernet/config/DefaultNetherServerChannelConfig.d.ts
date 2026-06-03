@@ -7,6 +7,7 @@ export class DefaultNetherServerChannelConfig extends DefaultNetherChannelConfig
     // private serverRtcHandshakeTimeoutSeconds: number;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
     setServerRtcHandshakeTimeoutSeconds(arg0: number): void;
 }

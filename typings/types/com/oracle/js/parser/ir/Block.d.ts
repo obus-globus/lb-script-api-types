@@ -56,5 +56,7 @@ export class Block extends Node implements BreakableNode, Flags<Block>, LexicalC
     setFlag(lc: LexicalContext, flag: number): Block;
     setFlags(lc: LexicalContext, flags: number): Block;
     setStatements(lc: LexicalContext, statements: Statement[]): Block;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

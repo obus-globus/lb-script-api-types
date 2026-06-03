@@ -32,5 +32,6 @@ export class BooleanSpliterators$SpliteratorConcatenator extends Object implemen
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
+    tryAdvance(arg0: (param0: boolean) => void): boolean;
     trySplit(): BooleanSpliterator;
 }

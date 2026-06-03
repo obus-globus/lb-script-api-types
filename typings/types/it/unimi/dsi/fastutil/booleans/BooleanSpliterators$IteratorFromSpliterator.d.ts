@@ -10,8 +10,10 @@ export class BooleanSpliterators$IteratorFromSpliterator extends Object implemen
     // private spliterator: BooleanSpliterator;
     accept(arg0: boolean): void;
     accept(arg0: boolean): void;
+    accept(arg0: boolean): void;
     andThen(arg0: (param0: boolean) => void): (param0: boolean) => void;
     andThen(arg0: (param0: boolean) => void): (param0: boolean) => void;
+    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;

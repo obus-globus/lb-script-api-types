@@ -7,7 +7,6 @@ import type { MessageDigest } from '../java/security/MessageDigest.d.ts'
 import type { Cipher } from '../javax/crypto/Cipher.d.ts'
 import type { Mac } from '../javax/crypto/Mac.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-import type { Function1 } from '../kotlin/jvm/functions/Function1.d.ts'
 import type { BufferedSink } from '../okio/BufferedSink.d.ts'
 import type { BufferedSource } from '../okio/BufferedSource.d.ts'
 import type { CipherSink } from '../okio/CipherSink.d.ts'
@@ -17,7 +16,7 @@ import type { HashingSink } from '../okio/HashingSink.d.ts'
 import type { HashingSource } from '../okio/HashingSource.d.ts'
 import type { Path } from '../okio/Path.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
-import type { Socket } from '../okio/Socket.d.ts'
+import type { Socket as Socket_2 } from '../okio/Socket.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 export class Okio extends Object {
     static appendingSink(paramarg0: File): Sink;
@@ -38,10 +37,10 @@ export class Okio extends Object {
     static sink(paramarg0: OutputStream): Sink;
     static sink(paramarg0: Socket): Sink;
     static sink(paramarg0: Path[][], paramarg1: (Object | null)[]): Sink;
-    static socket(paramarg0: Socket): Socket;
+    static socket(paramarg0: Socket): Socket_2;
     static source(paramarg0: File): Source;
     static source(paramarg0: InputStream): Source;
     static source(paramarg0: Socket): Source;
     static source(paramarg0: Path[][], paramarg1: (Object | null)[]): Source;
-    static use(paramarg0: Object | null, paramarg1: Function1<Object, Object>): Object | null;
+    static use(paramarg0: Object | null, paramarg1: (param0: Object | null) => Object | null): Object | null;
 }

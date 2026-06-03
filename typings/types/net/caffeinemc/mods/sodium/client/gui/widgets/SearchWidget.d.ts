@@ -6,6 +6,7 @@ import type { FlatButtonWidget } from '../../../../../../../net/caffeinemc/mods/
 import type { Dim2i } from '../../../../../../../net/caffeinemc/mods/sodium/client/util/Dim2i.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { EditBox } from '../../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { CharacterEvent } from '../../../../../../../net/minecraft/client/input/CharacterEvent.d.ts'
 import type { KeyEvent } from '../../../../../../../net/minecraft/client/input/KeyEvent.d.ts'
 export class SearchWidget extends AbstractParentWidget {
@@ -26,6 +27,7 @@ export class SearchWidget extends AbstractParentWidget {
     // private rebuildForWidth(arg0: number): void;
     // private search(): void;
     setFocused(arg0: boolean): void;
+    setFocused(arg0: GuiEventListener): void;
     // private triggerSearch(arg0: string): void;
     // private updateClearButtonVisibility(): void;
     updateWidgetWidth(arg0: number): void;

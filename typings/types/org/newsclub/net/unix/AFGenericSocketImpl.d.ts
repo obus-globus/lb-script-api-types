@@ -1,4 +1,5 @@
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
+import type { SocketOption } from '../../../../java/net/SocketOption.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFGenericSocketAddress } from '../../../../org/newsclub/net/unix/AFGenericSocketAddress.d.ts'
 import type { AFSocketImpl } from '../../../../org/newsclub/net/unix/AFSocketImpl.d.ts'
@@ -19,6 +20,8 @@ export class AFGenericSocketImpl extends AFSocketImpl<AFGenericSocketAddress> {
     static SO_TIMEOUT: number;
     static TCP_NODELAY: number;
     constructor(arg0: FileDescriptor)
+    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
     getOption(arg0: number): Object;
+    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
     setOption(arg0: number, arg1: Object): void;
 }

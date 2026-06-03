@@ -32,6 +32,8 @@ export class Long2BooleanArrayMap$MapEntry extends Object implements Long2Boolea
     left(arg0: number): LongBooleanPair;
     left(arg0: number): LongBooleanPair;
     leftLong(): number;
+    right(): boolean;
+    right(arg0: boolean): LongBooleanPair;
     right(arg0: boolean): LongBooleanPair;
     right(): boolean;
     right(arg0: boolean): LongBooleanPair;

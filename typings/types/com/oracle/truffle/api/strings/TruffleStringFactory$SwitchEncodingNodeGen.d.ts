@@ -17,5 +17,6 @@ export class TruffleStringFactory$SwitchEncodingNodeGen extends TruffleString$Sw
     // private state_5_: number;
     // private state_6_: number;
     // private state_7_: number;
+    execute(a: AbstractTruffleString, encoding: TruffleString$Encoding): TruffleString;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString): TruffleString;
 }

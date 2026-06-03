@@ -41,6 +41,7 @@ export abstract class AbstractKQueueChannel extends AbstractChannel implements U
     doDeregister(): void;
     doDisconnect(): void;
     doReadBytes(arg0: ByteBuf): number;
+    doRegister(): void;
     doRegister(arg0: ChannelPromise): void;
     doWriteBytes(arg0: ChannelOutboundBuffer, arg1: ByteBuf): number;
     fd(): FileDescriptor;

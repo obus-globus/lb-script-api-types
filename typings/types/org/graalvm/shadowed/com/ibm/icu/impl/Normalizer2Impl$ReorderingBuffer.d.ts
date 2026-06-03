@@ -19,6 +19,7 @@ export class Normalizer2Impl$ReorderingBuffer extends Object implements Appendab
     append(s: CharSequence, start: number, limit: number, isNFD: boolean, leadCC: number, trailCC: number): void;
     append(c: number, cc: number): void;
     appendZeroCC(c: number): void;
+    equals(other: Object | null): boolean;
     equals(s: CharSequence, start: number, limit: number): boolean;
     flush(): void;
     flushAndAppendZeroCC(s: CharSequence, start: number, limit: number): Normalizer2Impl$ReorderingBuffer;

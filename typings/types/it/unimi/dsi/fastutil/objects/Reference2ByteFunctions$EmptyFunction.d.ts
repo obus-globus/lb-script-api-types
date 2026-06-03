@@ -13,6 +13,7 @@ export class Reference2ByteFunctions$EmptyFunction<K extends Object | number | s
     equals(arg0: Object | null): boolean;
     getByte(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
+    getOrDefault(arg0: Object, arg1: number): number;
     hashCode(): number;
     // private readResolve(): Object;
     size(): number;

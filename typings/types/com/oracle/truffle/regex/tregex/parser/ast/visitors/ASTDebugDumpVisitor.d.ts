@@ -17,7 +17,11 @@ export class ASTDebugDumpVisitor extends DepthFirstTraversalRegexASTVisitor {
     // private dump: StringBuilder;
     // private append(node: RegexASTNode): void;
     // private checkDead(node: RegexASTNode): void;
+    leave(atomicGroup: AtomicGroup): void;
     leave(group: Group): void;
+    leave(assertion: LookAheadAssertion): void;
+    leave(assertion: LookBehindAssertion): void;
+    leave(sequence: Sequence): void;
     visit(atomicGroup: AtomicGroup): void;
     visit(backReference: BackReference): void;
     visit(characterClass: CharacterClass): void;

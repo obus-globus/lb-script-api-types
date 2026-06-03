@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { HttpMethod } from '../../../../../net/ccbluex/liquidbounce/api/core/HttpMethod.d.ts'
 import type { Headers$Builder } from '../../../../../okhttp3/Headers$Builder.d.ts'
@@ -16,16 +15,16 @@ export abstract class BaseApi extends Object {
     // private baseUrl: string;
     // private /*not mapped: */ getBaseUrl(): string;
     readonly defaultHeaders: Pair<string, string>[];
-    protected delete<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: Function1<Headers$Builder, void>): T;
-    protected get<T extends Object | number | string | boolean>(endpoint: string, headers: Function1<Headers$Builder, void>): T;
-    protected head<T extends Object | number | string | boolean>(endpoint: string, headers: Function1<Headers$Builder, void>): T;
-    protected patch<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: Function1<Headers$Builder, void>): T;
-    protected post<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: Function1<Headers$Builder, void>): T;
-    protected put<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: Function1<Headers$Builder, void>): T;
+    protected delete<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected get<T extends Object | number | string | boolean>(endpoint: string, headers: (param0: Headers$Builder) => void): T;
+    protected head<T extends Object | number | string | boolean>(endpoint: string, headers: (param0: Headers$Builder) => void): T;
+    protected patch<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected post<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected put<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
     /**
      * Makes a request and parses the response to the specified type
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:43}
      */
-    protected request<T extends Object | number | string | boolean>(endpoint: string, method: HttpMethod, headers: Function1<Headers$Builder, void>, body: RequestBody | null): T;
+    protected request<T extends Object | number | string | boolean>(endpoint: string, method: HttpMethod, headers: (param0: Headers$Builder) => void, body: RequestBody | null): T;
 }

@@ -43,12 +43,14 @@ export class LZMA2Options extends FilterOptions {
     getDictSize(): number;
     getEncoderMemoryUsage(): number;
     getFilterEncoder(): FilterEncoder;
+    getInputStream(in_: InputStream): InputStream;
     getInputStream(in_: InputStream, arrayCache: ArrayCache): InputStream;
     getLc(): number;
     getLp(): number;
     getMatchFinder(): number;
     getMode(): number;
     getNiceLen(): number;
+    getOutputStream(out: FinishableOutputStream): FinishableOutputStream;
     getOutputStream(out: FinishableOutputStream, arrayCache: ArrayCache): FinishableOutputStream;
     getPb(): number;
     getPresetDict(): number[];

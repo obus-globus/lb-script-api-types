@@ -32,6 +32,8 @@ export class Byte2ByteArrayMap$MapEntry extends Object implements Byte2ByteMap$E
     left(arg0: number): ByteBytePair;
     left(arg0: number): ByteBytePair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteBytePair;
     right(arg0: number): ByteBytePair;
     right(): number;
     right(arg0: number): ByteBytePair;

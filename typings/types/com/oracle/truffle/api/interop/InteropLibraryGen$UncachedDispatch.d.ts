@@ -64,6 +64,7 @@ export class InteropLibraryGen$UncachedDispatch extends InteropLibrary implement
     getIterator(receiver_: Object): Object;
     getIteratorNextElement(receiver_: Object): Object;
     getLanguage(receiver_: Object): Class<TruffleLanguage<Object>>;
+    getMembers(receiver: Object): Object;
     getMembers(receiver_: Object, includeInternal: boolean): Object;
     getMetaObject(receiver_: Object): Object;
     getMetaParents(receiver_: Object): Object;
@@ -143,6 +144,7 @@ export class InteropLibraryGen$UncachedDispatch extends InteropLibrary implement
     removeHashEntry(receiver_: Object, key: Object): void;
     removeMember(receiver_: Object, member: string): void;
     throwException(receiver_: Object): RuntimeException;
+    toDisplayString(receiver: Object): Object;
     toDisplayString(receiver_: Object, allowSideEffects: boolean): Object;
     toNative(receiver_: Object): void;
     writeArrayElement(receiver_: Object, index: number, value: Object): void;

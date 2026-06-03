@@ -42,6 +42,7 @@ export class ThreadedLevelLightEngine extends LevelLightEngine implements AutoCl
     setLightEnabled(pos: ChunkPos, enable: boolean): void;
     tryScheduleUpdate(): void;
     updateChunkStatus(pos: ChunkPos): void;
+    updateSectionStatus(pos: BlockPos, sectionEmpty: boolean): void;
     updateSectionStatus(pos: SectionPos, sectionEmpty: boolean): void;
     waitForPendingTasks(chunkX: number, chunkZ: number): CompletableFuture<Object>;
 }

@@ -32,6 +32,8 @@ export class Double2FloatOpenCustomHashMap$MapEntry extends Object implements Do
     left(arg0: number): DoubleFloatPair;
     left(arg0: number): DoubleFloatPair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleFloatPair;
     right(arg0: number): DoubleFloatPair;
     right(): number;
     right(arg0: number): DoubleFloatPair;

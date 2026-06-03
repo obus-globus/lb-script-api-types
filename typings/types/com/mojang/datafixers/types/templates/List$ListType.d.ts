@@ -23,6 +23,7 @@ export class List$ListType<A extends Object | number | string | boolean> extends
     buildTemplate(): TypeTemplate;
     // private capLeft(arg0: TypedOptic<A, B, FT, FR>): TypedOptic<A[], Object, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     findTypeInChildren(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A[], Object, FT, FR>, Type$FieldNotFoundException>;
     fix(arg0: RewriteResult<A, B>): RewriteResult<A[], Object>;
     getElement(): Type<A>;

@@ -10,5 +10,6 @@ export class Debug$GraphvizShapeVisitor extends Object implements Debug$DebugSha
     // private sb: StringBuilder;
     toString(): string;
     visitShape<R extends Object | number | string | boolean>(shape: ShapeImpl): R;
+    visitShape(shape: ShapeImpl): Debug$GraphvizShapeVisitor;
     visitShape(shape: ShapeImpl, transitions: Map<Transition, ShapeImpl>): Debug$GraphvizShapeVisitor;
 }

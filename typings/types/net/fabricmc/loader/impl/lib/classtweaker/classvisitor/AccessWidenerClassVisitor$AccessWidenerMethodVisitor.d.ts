@@ -5,5 +5,6 @@ export class AccessWidenerClassVisitor$AccessWidenerMethodVisitor extends Method
     constructor(null_: AccessWidenerClassVisitor$AccessWidenerMethodVisitor, arg1: MethodVisitor)
     // private isTargetMethod(arg0: string, arg1: string, arg2: string): boolean;
     visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
 }

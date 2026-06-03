@@ -13,5 +13,6 @@ export class EntityPacketRewriter1_14 extends LegacyEntityRewriter<ClientboundPa
     registerRewrites(): void;
     // private trackAndCacheEntityPosition(arg0: PacketWrapper, arg1: EntityType): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     villagerDataToProfession(arg0: VillagerData): number;
 }

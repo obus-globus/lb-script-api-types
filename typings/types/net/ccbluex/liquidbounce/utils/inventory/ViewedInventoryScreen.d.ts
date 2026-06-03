@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -21,7 +20,7 @@ export class ViewedInventoryScreen extends Screen {
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    constructor(player: Function0<Player>)
+    constructor(player: () => Player | null)
     // private backgroundHeight: number;
     // private backgroundWidth: number;
     readonly handler: InventoryMenu | null;
@@ -34,6 +33,7 @@ export class ViewedInventoryScreen extends Screen {
     extractBackground(context: GuiGraphicsExtractor, mouseX: number, mouseY: number, delta: number): void;
     extractRenderState(context: GuiGraphicsExtractor, mouseX: number, mouseY: number, delta: number): void;
     protected init(): void;
+    init(width: number, height: number): void;
     isPauseScreen(): boolean;
     // private isPointOverSlot(slot: Slot, pointX: number, pointY: number): boolean;
     keyPressed(input: KeyEvent): boolean;

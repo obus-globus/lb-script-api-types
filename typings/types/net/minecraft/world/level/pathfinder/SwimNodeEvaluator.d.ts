@@ -1,3 +1,4 @@
+import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Mob } from '../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { PathNavigationRegion } from '../../../../../net/minecraft/world/level/PathNavigationRegion.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
@@ -15,6 +16,7 @@ export class SwimNodeEvaluator extends NodeEvaluator {
     findAcceptedNode(x: number, y: number, z: number): Node;
     getCachedBlockType(x: number, y: number, z: number): PathType;
     getNeighbors(neighbors: Node[], pos: Node): number;
+    getPathType(mob: Mob, pos: BlockPos): PathType;
     getPathType(context: PathfindingContext, x: number, y: number, z: number): PathType;
     getPathTypeOfMob(context: PathfindingContext, x: number, y: number, z: number, mob: Mob): PathType;
     getStart(): Node;

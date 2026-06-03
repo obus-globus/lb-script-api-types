@@ -28,5 +28,6 @@ export class UnsupportedGraphicsWarningScreen extends Screen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     shouldCloseOnEsc(): boolean;
 }

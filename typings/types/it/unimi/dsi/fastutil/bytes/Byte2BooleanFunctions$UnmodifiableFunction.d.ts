@@ -6,6 +6,7 @@ export class Byte2BooleanFunctions$UnmodifiableFunction extends AbstractByte2Boo
     constructor(arg0: (param0: number) => kotlin.Boolean)
     // private function: (param0: number) => kotlin.Boolean;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;

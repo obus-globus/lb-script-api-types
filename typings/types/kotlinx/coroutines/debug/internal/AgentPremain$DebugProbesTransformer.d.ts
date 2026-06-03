@@ -9,4 +9,5 @@ export class AgentPremain$DebugProbesTransformer extends Object implements Class
     transform(arg0: ClassLoader, arg1: string, arg2: Class<Object>, arg3: ProtectionDomain, arg4: number[]): number[];
     transform(arg0: Module, arg1: ClassLoader, arg2: string, arg3: Class<Object>, arg4: ProtectionDomain, arg5: number[]): number[];
     transform(loader: ClassLoader | null, className: string, classBeingRedefined: Class<Object> | null, protectionDomain: ProtectionDomain, classfileBuffer: number[] | null): number[] | null;
+    transform(arg0: Module, arg1: ClassLoader, arg2: string, arg3: Class<Object>, arg4: ProtectionDomain, arg5: number[]): number[];
 }

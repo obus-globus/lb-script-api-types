@@ -234,6 +234,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     doWaterSplashEffect(): void;
     doesEmitEquipEvent(slot: EquipmentSlot): boolean;
     drop(itemStack: ItemStack, thrownFromHand: boolean): ItemEntity;
+    drop(itemStack: ItemStack, randomly: boolean, thrownFromHand: boolean): ItemEntity;
     dropEquipment(level: ServerLevel): void;
     entityInteractionRange(): number;
     freeAt(pos: BlockPos): boolean;
@@ -363,6 +364,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     openTextEdit(sign: SignBlockEntity, isFrontText: boolean): void;
     permissions(): PermissionSet;
     // private playServerSideSound(sound: SoundEvent): void;
+    playSound(sound: SoundEvent): void;
     playSound(sound: SoundEvent, volume: number, pitch: number): void;
     playStepSound(onPos: BlockPos, onState: BlockState): void;
     preventsBlockDrops(): boolean;

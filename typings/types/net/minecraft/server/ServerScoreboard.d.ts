@@ -30,6 +30,7 @@ export class ServerScoreboard extends Scoreboard {
     onTeamAdded(team: PlayerTeam): void;
     onTeamChanged(team: PlayerTeam): void;
     onTeamRemoved(team: PlayerTeam): void;
+    removePlayerFromTeam(player: string): boolean;
     removePlayerFromTeam(player: string, team: PlayerTeam): void;
     setDirty(): void;
     setDisplayObjective(slot: DisplaySlot, objective: Objective): void;

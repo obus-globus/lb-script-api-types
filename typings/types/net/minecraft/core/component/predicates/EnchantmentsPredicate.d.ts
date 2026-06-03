@@ -20,5 +20,6 @@ export abstract class EnchantmentsPredicate extends Object implements SingleComp
     // private enchantments: EnchantmentPredicate[];
     enchantments(): EnchantmentPredicate[];
     matches(components: DataComponentGetter): boolean;
+    matches(components: DataComponentGetter): boolean;
     matches(appliedEnchantments: ItemEnchantments): boolean;
 }

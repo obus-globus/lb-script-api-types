@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { LookupLocation } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
@@ -20,7 +19,7 @@ export class JvmPackageScope extends Object implements MemberScope {
     // private packageFragment: LazyJavaPackageFragment;
     getClassifierNames(): Name[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
     getFunctionNames(): Name[];

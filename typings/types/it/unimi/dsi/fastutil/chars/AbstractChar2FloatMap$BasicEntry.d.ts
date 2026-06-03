@@ -12,5 +12,6 @@ export class AbstractChar2FloatMap$BasicEntry extends Object implements Char2Flo
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

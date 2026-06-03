@@ -1,4 +1,6 @@
+import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractLifeCycle } from '../../../../../../org/apache/logging/log4j/core/AbstractLifeCycle.d.ts'
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -19,6 +21,8 @@ export abstract class AbstractFilterable extends AbstractLifeCycle implements Fi
     isFiltered(event: LogEvent): boolean;
     removeFilter(filter: Filter): void;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
     stop(timeout: number, timeUnit: TimeUnit, changeLifeCycleState: boolean): boolean;
 }

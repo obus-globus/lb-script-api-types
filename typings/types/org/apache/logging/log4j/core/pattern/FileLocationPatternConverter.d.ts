@@ -7,6 +7,7 @@ export class FileLocationPatternConverter extends LogEventPatternConverter imple
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): FileLocationPatternConverter;
     private constructor()
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;
     requiresLocation(): boolean;
 }

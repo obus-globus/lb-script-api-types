@@ -25,6 +25,7 @@ export class Double2CharAVLTreeMap$Entry extends AbstractDouble2CharMap$BasicEnt
     right(): Double2CharAVLTreeMap$Entry;
     right(arg0: Double2CharAVLTreeMap$Entry): void;
     setValue(arg0: string): string;
+    setValue(arg0: string): string;
     succ(): boolean;
     succ(arg0: Double2CharAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

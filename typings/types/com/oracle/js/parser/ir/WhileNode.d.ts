@@ -13,6 +13,8 @@ export class WhileNode extends LoopNode {
     // private isDoWhile: boolean;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept(visitor: NodeVisitor<LexicalContext>): Node;
+    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     hasGoto(): boolean;
     hasPerIterationScope(): boolean;
@@ -21,5 +23,7 @@ export class WhileNode extends LoopNode {
     setBody(lc: LexicalContext, body: Block): WhileNode;
     setControlFlowEscapes(lc: LexicalContext, controlFlowEscapes: boolean): WhileNode;
     setTest(lc: LexicalContext, test: JoinPredecessorExpression): WhileNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

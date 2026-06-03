@@ -32,6 +32,8 @@ export class Short2FloatOpenCustomHashMap$MapEntry extends Object implements Sho
     left(arg0: number): ShortFloatPair;
     left(arg0: number): ShortFloatPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortFloatPair;
     right(arg0: number): ShortFloatPair;
     right(): number;
     right(arg0: number): ShortFloatPair;

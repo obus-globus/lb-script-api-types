@@ -1,9 +1,13 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { AbstractMessageFactory } from '../../../../../org/apache/logging/log4j/message/AbstractMessageFactory.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 export class ParameterizedMessageFactory extends AbstractMessageFactory {
     static INSTANCE: ParameterizedMessageFactory;
     constructor()
+    newMessage(message: Object): Message;
+    newMessage(message: CharSequence): Message;
+    newMessage(message: string): Message;
     newMessage(message: string, p0: Object): Message;
     newMessage(message: string, p0: Object, p1: Object): Message;
     newMessage(message: string, p0: Object, p1: Object, p2: Object): Message;

@@ -21,6 +21,7 @@ export class PauseScreen$FeedbackSubScreen extends Screen {
     // private layout: HeaderAndFooterLayout;
     parent: Screen;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

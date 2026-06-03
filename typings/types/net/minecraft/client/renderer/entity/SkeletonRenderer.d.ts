@@ -13,5 +13,6 @@ export class SkeletonRenderer extends AbstractSkeletonRenderer<Skeleton, Skeleto
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SkeletonRenderState;
+    createRenderState(entity: Skeleton, partialTicks: number): SkeletonRenderState;
     getTextureLocation(state: SkeletonRenderState): Identifier;
 }

@@ -15,6 +15,7 @@ export class AbstractPooledDerivedByteBuf$PooledNonRetainedDuplicateByteBuf exte
     retainedDuplicate(): ByteBuf;
     retainedSlice(): ByteBuf;
     retainedSlice(arg0: number, arg1: number): ByteBuf;
+    slice(): ByteBuf;
     slice(arg0: number, arg1: number): ByteBuf;
     touch0(): ByteBuf;
     touch0(arg0: Object): ByteBuf;

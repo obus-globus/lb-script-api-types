@@ -74,6 +74,7 @@ export class Char2BooleanFunctions$PrimitiveFunction extends Object implements C
     put(arg0: string, arg1: boolean): boolean;
     put(arg0: string, arg1: boolean): boolean;
     put(arg0: string, arg1: boolean): boolean;
+    put(arg0: string, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: string): boolean;
     test(arg0: number): boolean;

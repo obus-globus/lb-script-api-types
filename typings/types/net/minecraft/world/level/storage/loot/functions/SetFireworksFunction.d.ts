@@ -13,6 +13,7 @@ export class SetFireworksFunction extends LootItemConditionalFunction {
     constructor(predicates: LootItemCondition[], explosions: Optional<ListOperation$StandAlone<FireworkExplosion>>, flightDuration: Optional<number>)
     // private explosions: Optional<ListOperation$StandAlone<FireworkExplosion>>;
     // private flightDuration: Optional<number>;
+    apply(itemStack: ItemStack, context: LootContext): ItemStack;
     // private apply(old: Fireworks): Fireworks;
     codec(): MapCodec<SetFireworksFunction>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;

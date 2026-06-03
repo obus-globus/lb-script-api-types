@@ -125,5 +125,6 @@ export class Giant extends Monster {
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Giant>, level: Level)
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
 }

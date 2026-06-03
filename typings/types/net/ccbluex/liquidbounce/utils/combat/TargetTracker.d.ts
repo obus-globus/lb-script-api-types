@@ -1,6 +1,5 @@
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { RangedValue } from '../../../../../net/ccbluex/liquidbounce/config/types/RangedValue.d.ts'
 import type { RangedValueProvider } from '../../../../../net/ccbluex/liquidbounce/utils/client/RangedValueProvider.d.ts'
 import type { TargetPriority } from '../../../../../net/ccbluex/liquidbounce/utils/combat/TargetPriority.d.ts'
@@ -16,7 +15,8 @@ export class TargetTracker extends TargetSelector {
     constructor(defaultPriority: TargetPriority, rangeValue: RangedValueProvider)
     target: LivingEntity | null;
     reset(): void;
-    select<R extends Object | number | string | boolean>(evaluator: Function1<LivingEntity, R>): R | null;
+    select<R extends Object | number | string | boolean>(evaluator: (param0: LivingEntity) => R): R | null;
     selectFirst(predicate: (param0: LivingEntity) => kotlin.Boolean | null): LivingEntity | null;
     validate(predicate: (param0: LivingEntity) => kotlin.Boolean | null): void;
+    validate(entity: LivingEntity): boolean;
 }

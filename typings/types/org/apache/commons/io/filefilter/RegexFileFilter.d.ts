@@ -16,6 +16,7 @@ export class RegexFileFilter extends AbstractFileFilter implements Serializable 
     constructor(arg0: string, arg1: IOCase)
     // private pathToString: (param0: Path[]) => string;
     // private pattern: Pattern;
+    accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
     toString(): string;

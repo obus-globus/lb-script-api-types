@@ -6,4 +6,5 @@ export class RuleBasedCollator$FCDUTF16NFDIterator extends RuleBasedCollator$UTF
     constructor()
     // private str: StringBuilder;
     setText(arg0: Normalizer2Impl, arg1: CharSequence, arg2: number): void;
+    setText(arg0: CharSequence, arg1: number): void;
 }

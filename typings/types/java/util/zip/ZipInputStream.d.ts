@@ -68,6 +68,7 @@ export class ZipInputStream extends InflaterInputStream implements ZipConstants 
     // private expect64BitDataDescriptor(arg0: number[], arg1: number, arg2: number, arg3: number): boolean;
     getNextEntry(): ZipEntry;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     readAllBytes(): number[];
     // private readEnd(arg0: ZipEntry): void;

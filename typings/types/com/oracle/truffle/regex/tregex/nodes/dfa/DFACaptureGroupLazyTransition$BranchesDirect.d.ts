@@ -6,6 +6,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DFACaptureGroupLazyTransition$BranchesDirect extends DFACaptureGroupLazyTransition$Branches {
     static create(paramtransitions: (Object | null)[]): DFACaptureGroupLazyTransition$BranchesDirect;
     constructor(transitions: DFACaptureGroupPartialTransition[])
+    apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode): void;
     apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode, preFinal: boolean): void;
     equals(obj: Object | null): boolean;
 }

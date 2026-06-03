@@ -55,12 +55,13 @@ import type { RecipeAccess } from '../../../../net/minecraft/world/item/crafting
 import type { BlockGetter } from '../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { ExplosionDamageCalculator } from '../../../../net/minecraft/world/level/ExplosionDamageCalculator.d.ts'
 import type { Level$ExplosionInteraction } from '../../../../net/minecraft/world/level/Level$ExplosionInteraction.d.ts'
-import type { LevelAccessor } from '../../../../net/minecraft/world/level/LevelAccessor.d.ts'
+import type { LevelAccessor as LevelAccessor_2 } from '../../../../net/minecraft/world/level/LevelAccessor.d.ts'
 import type { LevelHeightAccessor } from '../../../../net/minecraft/world/level/LevelHeightAccessor.d.ts'
 import type { Biome$Precipitation } from '../../../../net/minecraft/world/level/biome/Biome$Precipitation.d.ts'
 import type { BiomeManager } from '../../../../net/minecraft/world/level/biome/BiomeManager.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { FuelValues } from '../../../../net/minecraft/world/level/block/entity/FuelValues.d.ts'
 import type { TickingBlockEntity } from '../../../../net/minecraft/world/level/block/entity/TickingBlockEntity.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
@@ -91,7 +92,7 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { Scoreboard } from '../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
-export abstract class Level extends Object implements AutoCloseable, ChunkRandomSource, LithiumData, BlockEntityGetter, LevelAccessor, AttachmentTarget, GlobalAttachmentsProvider, AttachmentTargetImpl, LoadedChunksCache, LevelAccessor, LevelHeightAccessor {
+export abstract class Level extends Object implements AutoCloseable, ChunkRandomSource, LithiumData, BlockEntityGetter, LevelAccessor, AttachmentTarget, GlobalAttachmentsProvider, AttachmentTargetImpl, LoadedChunksCache, LevelAccessor_2, LevelHeightAccessor {
     static DIRECTIONS: (Object | null)[];
     static END: ResourceKey<Level>;
     static LONG_PARTICLE_CLIP_RANGE: number;
@@ -160,6 +161,8 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     createTick<T extends Object | number | string | boolean>(pos: BlockPos, type: T, tickDelay: number): ScheduledTick<T>;
     createTick<T extends Object | number | string | boolean>(pos: BlockPos, type: T, tickDelay: number, priority: TickPriority): ScheduledTick<T>;
     damageSources(): DamageSources;
+    destroyBlock(pos: BlockPos, dropResources: boolean): boolean;
+    destroyBlock(pos: BlockPos, dropResources: boolean, breaker: Entity): boolean;
     destroyBlock(pos: BlockPos, dropResources: boolean, breaker: Entity, updateLimit: number): boolean;
     destroyBlockProgress(id: number, blockPos: BlockPos, progress: number): void;
     dimension(): ResourceKey<Level>;
@@ -217,6 +220,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getAttachedOrThrow<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     getBiomeManager(): BiomeManager;
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockRandomPos(xo: number, yo: number, zo: number, yMask: number): BlockPos;
     getBlockState(arg0: BlockPos): BlockState;
     getChunk(arg0: number, arg1: number): LevelChunk;
@@ -230,6 +234,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getDefaultClockTime(): number;
     getDifficulty(): Difficulty;
     getEntities(): LevelEntityGetter<Entity>;
+    getEntities(except: Entity, bb: AABB): Entity[];
     getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
     getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
     getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[]): void;
@@ -241,6 +246,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getGameTime(): number;
     getHeight(): number;
     getHeight(type: Heightmap$Types, x: number, z: number): number;
+    getHeight(type: Heightmap$Types, pos: BlockPos): number;
     getLevelData(): LevelData;
     getLightEngine(): LevelLightEngine;
     getMapData(id: MapId): MapItemSavedData;
@@ -308,7 +314,10 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     neighborShapeChanged(direction: Direction, pos: BlockPos, neighborPos: BlockPos, neighborState: BlockState, updateFlags: number, updateLimit: number): void;
     neighborShapeChanged(direction: Direction, pos: BlockPos, neighborPos: BlockPos, neighborState: BlockState, updateFlags: number, updateLimit: number): void;
     nextSubTickCount(): number;
+    noCollision(source: Entity): boolean;
     noCollision(arg0: Entity, arg1: AABB): boolean;
+    noCollision(entity: Entity, aabb: AABB, alwaysCollideWithFluids: boolean): boolean;
+    noCollision(aabb: AABB): boolean;
     noSave(): boolean;
     onAttachedSet(arg0: AttachmentType<A>): Event<(param0: A, param1: Object | null) => void>;
     onAttachedSet(arg0: AttachmentType<Object>): Event<Object>;
@@ -324,6 +333,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     playSound(except: Entity, x: number, y: number, z: number, sound: Holder<SoundEvent>, source: SoundSource, volume: number, pitch: number): void;
     playSound(except: Entity, x: number, y: number, z: number, sound: SoundEvent, source: SoundSource): void;
     playSound(except: Entity, x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
+    playSound(except: Entity, pos: BlockPos, soundEvent: SoundEvent, source: SoundSource): void;
     playSound(except: Entity, pos: BlockPos, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
     playSound(except: Entity, sourceEntity: Entity, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
     playSound(except: Entity, pos: BlockPos, soundEvent: SoundEvent, source: SoundSource): void;
@@ -353,6 +363,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     shouldTickDeath(entity: Entity): boolean;
     tickBlockEntities(): void;
     tickRateManager(): TickRateManager;
+    updateNeighborsAt(pos: BlockPos, sourceBlock: Block): void;
     updateNeighborsAt(pos: BlockPos, sourceBlock: Block, orientation: Orientation): void;
     updateNeighborsAt(pos: BlockPos, sourceBlock: Block): void;
     updateNeighborsAtExceptFromFacing(pos: BlockPos, blockObject: Block, skipDirection: Direction, orientation: Orientation): void;

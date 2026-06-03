@@ -3,6 +3,8 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { SelectorProvider } from '../../../../java/nio/channels/spi/SelectorProvider.d.ts'
 import type { AFAddressFamily } from '../../../../org/newsclub/net/unix/AFAddressFamily.d.ts'
 import type { AFSelectorProvider } from '../../../../org/newsclub/net/unix/AFSelectorProvider.d.ts'
+import type { AFServerSocketChannel } from '../../../../org/newsclub/net/unix/AFServerSocketChannel.d.ts'
+import type { AFSocketChannel } from '../../../../org/newsclub/net/unix/AFSocketChannel.d.ts'
 import type { AFSocketPair } from '../../../../org/newsclub/net/unix/AFSocketPair.d.ts'
 import type { AFSocketType } from '../../../../org/newsclub/net/unix/AFSocketType.d.ts'
 import type { AFSomeSocket } from '../../../../org/newsclub/net/unix/AFSomeSocket.d.ts'
@@ -26,8 +28,10 @@ export class AFUNIXSelectorProvider extends AFSelectorProvider<AFUNIXSocketAddre
     openDatagramChannelPair(): AFUNIXSocketPair<AFUNIXDatagramChannel>;
     openDatagramChannelPair(arg0: AFSocketType): AFUNIXSocketPair<AFUNIXDatagramChannel>;
     openServerSocketChannel(): AFUNIXServerSocketChannel;
+    openServerSocketChannel(arg0: ProtocolFamily): AFServerSocketChannel<AFUNIXSocketAddress>;
     openServerSocketChannel(arg0: SocketAddress): AFUNIXServerSocketChannel;
     openSocketChannel(): AFUNIXSocketChannel;
+    openSocketChannel(arg0: ProtocolFamily): AFSocketChannel<AFUNIXSocketAddress>;
     openSocketChannel(arg0: SocketAddress): AFUNIXSocketChannel;
     openSocketChannelPair(): AFUNIXSocketPair<AFUNIXSocketChannel>;
     protocolFamily(): ProtocolFamily;

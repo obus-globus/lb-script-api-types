@@ -61,7 +61,11 @@ export class TarArchiveOutputStream extends ArchiveOutputStream<TarArchiveEntry>
     // private shouldBeReplaced(arg0: string): boolean;
     // private stripTo7Bits(arg0: string): string;
     // private transferModTime(arg0: TarArchiveEntry, arg1: TarArchiveEntry): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     // private writeEOFRecord(): void;
     writePaxHeaders(arg0: TarArchiveEntry, arg1: string, arg2: { [key: string]: string }): void;
     // private writeRecord(arg0: number[]): void;

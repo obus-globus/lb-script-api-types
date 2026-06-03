@@ -30,5 +30,6 @@ export abstract class TemporalInstantPrototypeBuiltins$JSTemporalInstantToString
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(instant: JSTemporalInstantObject, optionsParam: Object, toFractionalSecondDigits: ToFractionalSecondDigitsNode, toTimeZoneIdentifier: ToTemporalTimeZoneIdentifierNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitNode, getTimeZone: PropertyGetNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

@@ -8,6 +8,7 @@ export class Multimaps$CustomMultimap<K extends Object | number | string | boole
     // private factory: () => E[];
     createAsMap(): Map<K, E[]>;
     createCollection(): E[];
+    createCollection(key: K): E[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
     unmodifiableCollectionSubclass(collection: E[]): E[];

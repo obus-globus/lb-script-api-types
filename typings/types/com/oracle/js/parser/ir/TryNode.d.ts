@@ -27,5 +27,7 @@ export class TryNode extends Statement {
     setBody(body: Block): TryNode;
     setCatchBlocks(catchBlocks: Block[]): TryNode;
     setFinallyBody(finallyBody: Block): TryNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

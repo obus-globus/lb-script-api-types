@@ -102,8 +102,10 @@ export class DetectorRailBlock extends BaseRailBlock {
     hasAnalogOutputSignal(state: BlockState): boolean;
     isSignalSource(state: BlockState): boolean;
     mirror(state: BlockState, mirror: Mirror): BlockState;
+    mirror(shape: RailShape, mirror: Mirror): RailShape;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
     rotate(state: BlockState, rotation: Rotation): BlockState;
+    rotate(shape: RailShape, rotation: Rotation): RailShape;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     updatePowerToConnected(level: Level, pos: BlockPos, state: BlockState, powered: boolean): void;
 }

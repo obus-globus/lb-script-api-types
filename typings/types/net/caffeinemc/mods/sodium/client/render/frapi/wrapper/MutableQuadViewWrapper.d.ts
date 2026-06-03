@@ -1,5 +1,6 @@
 import type { QuadViewWrapper } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/frapi/wrapper/QuadViewWrapper.d.ts'
 import type { MutableQuadViewImpl } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/model/MutableQuadViewImpl.d.ts'
+import type { QuadViewImpl } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/model/QuadViewImpl.d.ts'
 import type { MutableQuadView } from '../../../../../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/MutableQuadView.d.ts'
 import type { QuadAtlas } from '../../../../../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/QuadAtlas.d.ts'
 import type { QuadEmitter } from '../../../../../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/QuadEmitter.d.ts'
@@ -32,47 +33,70 @@ export class MutableQuadViewWrapper extends QuadViewWrapper implements QuadEmitt
     // private mutableQuad: MutableQuadViewImpl;
     // private stackTransform: (param0: MutableQuadView) => kotlin.Boolean;
     // private transformStack: (param0: MutableQuadView) => kotlin.Boolean[];
+    ambientOcclusion(): TriState;
     ambientOcclusion(arg0: TriState): QuadEmitter;
+    animated(): boolean;
     animated(arg0: boolean): QuadEmitter;
     atlas(): QuadAtlas;
     atlas(arg0: QuadAtlas): QuadEmitter;
+    chunkLayer(): ChunkSectionLayer;
     chunkLayer(arg0: ChunkSectionLayer): QuadEmitter;
     clear(): QuadEmitter;
+    color(arg0: number): number;
     color(arg0: number, arg1: number): QuadEmitter;
     color(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
+    color(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     copyFrom(arg0: QuadView): QuadEmitter;
+    cullFace(): Direction;
     cullFace(arg0: Direction): QuadEmitter;
+    diffuseShade(): boolean;
     diffuseShade(arg0: boolean): QuadEmitter;
+    emissive(): boolean;
     emissive(arg0: boolean): QuadEmitter;
     emit(): QuadEmitter;
+    foilType(): ItemStackRenderState$FoilType;
     foilType(arg0: ItemStackRenderState$FoilType): QuadEmitter;
     fromBakedQuad(arg0: BakedQuad): QuadEmitter;
     getOriginal(): MutableQuadViewImpl;
+    itemRenderType(): RenderType;
     itemRenderType(arg0: RenderType): QuadEmitter;
+    lightmap(arg0: number): number;
     lightmap(arg0: number, arg1: number): QuadEmitter;
+    lightmap(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     lightmap(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     materialBake(arg0: Material$Baked, arg1: number): QuadEmitter;
     minLightmap(arg0: number): QuadEmitter;
     multiplyColor(arg0: number): QuadEmitter;
+    nominalFace(): Direction;
     nominalFace(arg0: Direction): QuadEmitter;
     normal(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
+    normal(arg0: number, arg1: Vector3f): QuadEmitter;
+    normal(arg0: number, arg1: Vector3fc): QuadEmitter;
     normal(arg0: number, arg1: Vector3f): QuadEmitter;
     normal(arg0: number, arg1: Vector3fc): QuadEmitter;
     popTransform(): void;
     pos(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     pos(arg0: number, arg1: Vector3f): QuadEmitter;
     pos(arg0: number, arg1: Vector3fc): QuadEmitter;
+    pos(arg0: number, arg1: Vector3f): QuadEmitter;
+    pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     postMaterialBake(arg0: Material$Baked): QuadEmitter;
     pushTransform(arg0: (param0: MutableQuadView) => kotlin.Boolean): void;
     setDelegate(arg0: MutableQuadViewImpl): void;
+    setDelegate(arg0: QuadViewImpl): void;
+    shadeMode(): ShadeMode;
     shadeMode(arg0: ShadeMode): QuadEmitter;
     square(arg0: Direction, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): QuadEmitter;
+    tag(): number;
     tag(arg0: number): QuadEmitter;
+    tintIndex(): number;
     tintIndex(arg0: number): QuadEmitter;
     transformAndEmit(): void;
     translate(arg0: number, arg1: number, arg2: number): QuadEmitter;
     translate(arg0: number, arg1: number, arg2: number): QuadEmitter;
     uv(arg0: number, arg1: number, arg2: number): QuadEmitter;
+    uv(arg0: number, arg1: Vector2f): QuadEmitter;
+    uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uv(arg0: number, arg1: Vector2f): QuadEmitter;
     uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uvUnitSquare(): MutableQuadView;

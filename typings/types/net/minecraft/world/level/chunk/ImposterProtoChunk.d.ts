@@ -1,3 +1,4 @@
+import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
@@ -19,6 +20,7 @@ import type { BiomeResolver } from '../../../../../net/minecraft/world/level/bio
 import type { Climate$Sampler } from '../../../../../net/minecraft/world/level/biome/Climate$Sampler.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { CarvingMask } from '../../../../../net/minecraft/world/level/chunk/CarvingMask.d.ts'
 import type { ChunkAccess$PackedTicks } from '../../../../../net/minecraft/world/level/chunk/ChunkAccess$PackedTicks.d.ts'
@@ -47,6 +49,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     constructor(wrapped: LevelChunk, allowWrites: boolean)
     // private allowWrites: boolean;
     readonly wrapped: LevelChunk;
+    addEntity(tag: CompoundTag): void;
     addEntity(entity: Entity): void;
     addReferenceForStructure(structure: Structure, reference: number): void;
     canBeSerialized(): boolean;
@@ -68,6 +71,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     getAttached(arg0: AttachmentType<Object>): Object;
     getBlendingData(): BlendingData;
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityNbt(blockPos: BlockPos): CompoundTag;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
     getBlockState(pos: BlockPos): BlockState;
@@ -75,6 +79,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     getCarvingMask(): CarvingMask;
     getFluidState(pos: BlockPos): FluidState;
     getFluidTicks(): TickContainerAccess<Fluid>;
+    getHeight(): number;
     getHeight(type: Heightmap$Types, x: number, z: number): number;
     getNoiseBiome(quartX: number, quartY: number, quartZ: number): Holder<Biome>;
     getOrCreateCarvingMask(): CarvingMask;
@@ -100,6 +105,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     setAttached(arg0: AttachmentType<Object>, arg1: Object): Object;
     setBlockEntity(blockEntity: BlockEntity): void;
     setBlockEntityNbt(entityTag: CompoundTag): void;
+    setBlockState(pos: BlockPos, state: BlockState): BlockState;
     setBlockState(pos: BlockPos, state: BlockState, flags: number): BlockState;
     setHeightmap(key: Heightmap$Types, data: number[]): void;
     setLightCorrect(isLightCorrect: boolean): void;

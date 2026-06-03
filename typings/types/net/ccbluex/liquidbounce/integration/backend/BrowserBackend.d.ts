@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { BrowserAccelerationFlags } from '../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.d.ts'
 import type { Browser } from '../../../../../net/ccbluex/liquidbounce/integration/backend/browser/Browser.d.ts'
 import type { BrowserSettings } from '../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.d.ts'
@@ -17,7 +16,7 @@ export interface BrowserBackend extends Object{
     readonly browsers: Browser[];
     /*not mapped: */ isInitialized(): boolean;
     createBrowser(url: string, position: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null): Browser;
-    makeDependenciesAvailable(taskManager: TaskManager, whenAvailable: Function0<void>): void;
+    makeDependenciesAvailable(taskManager: TaskManager, whenAvailable: () => void): void;
     /**
      * Starts the browser backend and initializes it.
      *

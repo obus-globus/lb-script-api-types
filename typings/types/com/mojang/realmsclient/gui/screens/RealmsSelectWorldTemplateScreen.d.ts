@@ -46,6 +46,7 @@ export class RealmsSelectWorldTemplateScreen extends RealmsScreen {
     // private fetchTemplatesAsync(startPage: WorldTemplatePaginatedList): void;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private onPublish(): void;
     // private onTrailer(): void;

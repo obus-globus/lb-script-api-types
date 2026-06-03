@@ -6,6 +6,7 @@ import type { LoggerAdapterAbstract } from '../../../../../../org/spongepowered/
 export class MixinLogger extends LoggerAdapterAbstract {
     constructor(arg0: string)
     // private logCategory: LogCategory;
+    catching(arg0: Throwable): void;
     catching(arg0: Level, arg1: Throwable): void;
     getType(): string;
     log(arg0: Level, arg1: string, arg2: Object[]): void;

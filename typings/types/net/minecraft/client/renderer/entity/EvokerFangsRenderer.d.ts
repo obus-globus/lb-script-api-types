@@ -11,6 +11,7 @@ export class EvokerFangsRenderer extends EntityRenderer<EvokerFangs, EvokerFangs
     constructor(context: EntityRendererProvider$Context)
     // private model: EvokerFangsModel;
     createRenderState(): EvokerFangsRenderState;
+    createRenderState(entity: EvokerFangs, partialTicks: number): EvokerFangsRenderState;
     extractRenderState(entity: EvokerFangs, state: EvokerFangsRenderState, partialTicks: number): void;
     submit(state: EvokerFangsRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

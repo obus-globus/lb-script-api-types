@@ -12,4 +12,6 @@ export class WindowsLineEndingInputStream extends InputStream {
     // private handleEos(): number;
     mark(arg0: number): void;
     read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
 }

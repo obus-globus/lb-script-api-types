@@ -7,12 +7,14 @@ export abstract class AbstractPolyglotImpl$AbstractInstrumentDispatch extends Ab
     constructor()
     constructor(engineImpl: AbstractPolyglotImpl)
     equals(impl: Object, otherImpl: Object): boolean;
+    equals(other: Object | null): boolean;
     getId(receiver: Object): string;
     getName(receiver: Object): string;
     getOptions(receiver: Object): OptionDescriptor[];
     getSourceOptions(receiver: Object): OptionDescriptor[];
     getVersion(receiver: Object): string;
     getWebsite(receiver: Object): string;
+    hashCode(): number;
     hashCode(impl: Object): number;
     lookup<T extends Object | number | string | boolean>(receiver: Object, type: Class<T>): T;
 }

@@ -17,5 +17,6 @@ export abstract class ValueLibraryGen$CachedDispatch extends ValueLibrary {
     // private specialize(receiver_: Object): void;
     toBoolean(receiver_: Object): boolean;
     toNumber(receiver_: Object): Number;
+    toString(): string;
     toString(receiver_: Object): TruffleString;
 }

@@ -39,6 +39,7 @@ export class XZOutputStream extends FinishableOutputStream {
     // private setFiltersForNextBlock(filterOptions: FilterOptions[]): void;
     updateFilters(filterOptions: FilterOptions[]): void;
     updateFilters(filterOptions: FilterOptions): void;
+    write(arg0: number[]): void;
     write(buf: number[], off: number, len: number): void;
     write(b: number): void;
 }

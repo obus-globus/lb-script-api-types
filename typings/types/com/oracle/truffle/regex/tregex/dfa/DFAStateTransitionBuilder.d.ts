@@ -20,6 +20,7 @@ export class DFAStateTransitionBuilder extends TransitionBuilder<NFA, NFAState, 
     getSource(): DFAStateNodeBuilder;
     getTarget<S extends AbstractState<S, T>>(forward: boolean): S;
     getTarget(): DFAStateNodeBuilder;
+    getTarget(forward: boolean): DFAStateNodeBuilder;
     setId(id: number): void;
     setSource(source: DFAStateNodeBuilder): void;
     setTarget(target: DFAStateNodeBuilder): void;

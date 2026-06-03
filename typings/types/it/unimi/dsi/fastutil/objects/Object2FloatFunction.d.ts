@@ -30,7 +30,7 @@ import type { Reference2FloatFunction } from '../../../../../it/unimi/dsi/fastut
 import type { Reference2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ObjectFunction.d.ts'
 import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2FloatFunction.d.ts'
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubleFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Object2FloatFunction<K extends Object | number | string | boolean> extends Function<K, number>, ToDoubleFunction<K>, Object{

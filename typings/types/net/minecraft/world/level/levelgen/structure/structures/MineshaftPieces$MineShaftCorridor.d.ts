@@ -7,6 +7,7 @@ import type { RandomSource } from '../../../../../../../net/minecraft/util/Rando
 import type { BlockGetter } from '../../../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { ChunkPos } from '../../../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
+import type { ServerLevelAccessor } from '../../../../../../../net/minecraft/world/level/ServerLevelAccessor.d.ts'
 import type { StructureManager } from '../../../../../../../net/minecraft/world/level/StructureManager.d.ts'
 import type { WorldGenLevel } from '../../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
@@ -33,6 +34,7 @@ export class MineshaftPieces$MineShaftCorridor extends MineshaftPieces$MineShaft
     addChildren(startPiece: StructurePiece, structurePieceAccessor: StructurePieceAccessor, random: RandomSource): void;
     // private canHangChainBelow(level: LevelReader, posAbove: BlockPos, stateAbove: BlockState): boolean;
     // private canPlaceColumnOnTopOf(level: LevelReader, posBelow: BlockPos, stateBelow: BlockState): boolean;
+    createChest(level: ServerLevelAccessor, chunkBB: BoundingBox, random: RandomSource, pos: BlockPos, lootTable: ResourceKey<LootTable>, blockState: BlockState): boolean;
     createChest(level: WorldGenLevel, chunkBB: BoundingBox, random: RandomSource, x: number, y: number, z: number, lootTable: ResourceKey<LootTable>): boolean;
     fillColumnDown(level: WorldGenLevel, columnState: BlockState, x: number, startY: number, z: number, chunkBB: BoundingBox): void;
     fillPillarDownOrChainUp(level: WorldGenLevel, pillarState: BlockState, x: number, y: number, z: number, chunkBB: BoundingBox): void;

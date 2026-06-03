@@ -12,5 +12,6 @@ export class AbstractFloat2DoubleMap$BasicEntry extends Object implements Float2
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

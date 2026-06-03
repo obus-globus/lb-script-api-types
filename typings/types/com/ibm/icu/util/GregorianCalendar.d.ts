@@ -104,6 +104,7 @@ export class GregorianCalendar extends Calendar {
     isEquivalentTo(arg0: Calendar): boolean;
     isEra0CountingBackward(): boolean;
     isLeapYear(arg0: number): boolean;
+    roll(arg0: number, arg1: boolean): void;
     roll(arg0: number, arg1: number): void;
     setGregorianChange(arg0: Date): void;
 }

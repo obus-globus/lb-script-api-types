@@ -26,4 +26,5 @@ export abstract class TemporalInstantPrototypeBuiltins$JSTemporalInstantEquals e
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     equals(instant: JSTemporalInstantObject, otherObj: Object, toTemporalInstantNode: ToTemporalInstantNode): boolean;
+    equals(other: Object | null): boolean;
 }

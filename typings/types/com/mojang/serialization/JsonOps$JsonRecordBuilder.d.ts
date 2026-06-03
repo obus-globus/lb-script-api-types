@@ -5,6 +5,8 @@ import type { RecordBuilder$AbstractStringBuilder } from '../../../com/mojang/se
 export class JsonOps$JsonRecordBuilder extends RecordBuilder$AbstractStringBuilder<JsonElement, JsonObject> {
     constructor(null_: JsonOps$JsonRecordBuilder)
     append(arg0: string, arg1: JsonElement, arg2: JsonObject): JsonObject;
+    build(arg0: JsonElement): DataResult<JsonElement>;
     build(arg0: JsonObject, arg1: JsonElement): DataResult<JsonElement>;
+    build(arg0: DataResult<JsonElement>): DataResult<JsonElement>;
     initBuilder(): JsonObject;
 }

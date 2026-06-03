@@ -13,6 +13,7 @@ export class BoggedRenderer extends AbstractSkeletonRenderer<Bogged, BoggedRende
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): BoggedRenderState;
+    createRenderState(entity: Bogged, partialTicks: number): BoggedRenderState;
     extractRenderState(entity: Bogged, state: BoggedRenderState, partialTicks: number): void;
     getTextureLocation(state: BoggedRenderState): Identifier;
 }

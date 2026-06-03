@@ -4,7 +4,9 @@ export class SequentialMatchers$SimpleSequentialMatchers extends SequentialMatch
     constructor(matchers: CharMatcher[], noMatchSuccessor: number)
     readonly matchers: CharMatcher[];
     getMatchers(): CharMatcher[];
+    match(c: number): number;
     match(i: number, c: number): boolean;
     size(): number;
+    toString(): string;
     toString(i: number): string;
 }

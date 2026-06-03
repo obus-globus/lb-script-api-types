@@ -24,5 +24,6 @@ export class ClassiCubeServerListScreen extends VFPScreen {
     constructor()
     extractRenderState(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: number): void;
     init(): void;
+    init(width: number, height: number): void;
     subtitleCentered(): boolean;
 }

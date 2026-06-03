@@ -5,4 +5,6 @@ export class CharsetRecog_sbcs$CharsetRecog_8859_9_tr extends CharsetRecog_sbcs$
     constructor()
     getLanguage(): string;
     match(arg0: CharsetDetector): CharsetMatch;
+    match(arg0: CharsetDetector, arg1: number[], arg2: number[]): number;
+    match(arg0: CharsetDetector, arg1: number[], arg2: number[], arg3: number): number;
 }

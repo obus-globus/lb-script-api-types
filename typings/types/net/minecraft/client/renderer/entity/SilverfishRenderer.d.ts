@@ -9,6 +9,7 @@ export class SilverfishRenderer extends MobRenderer<Silverfish, LivingEntityRend
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): LivingEntityRenderState;
+    createRenderState(entity: Silverfish, partialTicks: number): LivingEntityRenderState;
     getFlipDegrees(): number;
     getTextureLocation(state: LivingEntityRenderState): Identifier;
 }

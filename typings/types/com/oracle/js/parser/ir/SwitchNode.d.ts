@@ -17,6 +17,8 @@ export class SwitchNode extends BreakableStatement {
     readonly tag: Symbol;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept(visitor: NodeVisitor<LexicalContext>): Node;
+    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getCases(): CaseNode[];
     getDefaultCase(): CaseNode;
     getExpression(): Expression;
@@ -27,5 +29,7 @@ export class SwitchNode extends BreakableStatement {
     // private setCases(lc: LexicalContext, cases: CaseNode[], defaultCaseIndex: number): SwitchNode;
     setExpression(lc: LexicalContext, expression: Expression): SwitchNode;
     setTag(tag: Symbol): void;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

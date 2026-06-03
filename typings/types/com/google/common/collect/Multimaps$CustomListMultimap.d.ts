@@ -8,6 +8,7 @@ export class Multimaps$CustomListMultimap<K extends Object | number | string | b
     // private factory: () => V[];
     createAsMap(): Map<K, E[]>;
     createCollection(): V[];
+    createCollection(key: K): E[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
     // private writeObject(stream: ObjectOutputStream): void;

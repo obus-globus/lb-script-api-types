@@ -1,6 +1,8 @@
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { ComponentOrientation } from '../../java/awt/ComponentOrientation.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
+import type { PopupMenu } from '../../java/awt/PopupMenu.d.ts'
 import type { KeyEvent } from '../../java/awt/event/KeyEvent.d.ts'
 import type { PropertyChangeListener } from '../../java/beans/PropertyChangeListener.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
@@ -14,9 +16,11 @@ import type { JMenuItem } from '../../javax/swing/JMenuItem.d.ts'
 import type { JPopupMenu } from '../../javax/swing/JPopupMenu.d.ts'
 import type { KeyStroke } from '../../javax/swing/KeyStroke.d.ts'
 import type { MenuElement } from '../../javax/swing/MenuElement.d.ts'
+import type { MenuSelectionManager } from '../../javax/swing/MenuSelectionManager.d.ts'
 import type { ChangeListener } from '../../javax/swing/event/ChangeListener.d.ts'
 import type { MenuEvent } from '../../javax/swing/event/MenuEvent.d.ts'
 import type { MenuListener } from '../../javax/swing/event/MenuListener.d.ts'
+import type { Object } from '../../java/lang/Object.d.ts'
 export class JMenu extends JMenuItem implements Accessible, MenuElement {
     static ABORT: number;
     static ALLBITS: number;
@@ -88,10 +92,14 @@ export class JMenu extends JMenuItem implements Accessible, MenuElement {
     // private popupListener: JMenu$WinListener;
     readonly popupMenu: JPopupMenu;
     add(arg0: Component): Component;
+    add(arg0: Component, arg1: Object): void;
+    add(arg0: Component, arg1: Object, arg2: number): void;
     add(arg0: Component, arg1: number): Component;
+    add(arg0: PopupMenu): void;
     add(arg0: Action): JMenuItem;
     add(arg0: JMenuItem): JMenuItem;
     add(arg0: string): JMenuItem;
+    add(arg0: string, arg1: Component): Component;
     addMenuListener(arg0: MenuListener): void;
     addSeparator(): void;
     applyComponentOrientation(arg0: ComponentOrientation): void;
@@ -101,6 +109,7 @@ export class JMenu extends JMenuItem implements Accessible, MenuElement {
     createActionComponent(arg0: Action): JMenuItem;
     // private createMenuChangeListener(): ChangeListener;
     createWinListener(arg0: JPopupMenu): JMenu$WinListener;
+    doClick(): void;
     doClick(arg0: number): void;
     // private ensurePopupMenuCreated(): void;
     fireMenuCanceled(): void;
@@ -108,6 +117,7 @@ export class JMenu extends JMenuItem implements Accessible, MenuElement {
     fireMenuSelected(): void;
     getAccessibleContext(): AccessibleContext;
     getComponent(): Component;
+    getComponent(arg0: number): Component;
     // private getCustomMenuLocation(): Point;
     getDelay(): number;
     getItem(arg0: number): JMenuItem;
@@ -133,7 +143,9 @@ export class JMenu extends JMenuItem implements Accessible, MenuElement {
     menuSelectionChanged(arg0: boolean): void;
     paramString(): string;
     processKeyEvent(arg0: KeyEvent): void;
+    processKeyEvent(arg0: KeyEvent, arg1: MenuElement[], arg2: MenuSelectionManager): void;
     remove(arg0: Component): void;
+    remove(arg0: MenuComponent): void;
     remove(arg0: JMenuItem): void;
     remove(arg0: number): void;
     removeAll(): void;

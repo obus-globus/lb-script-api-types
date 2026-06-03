@@ -103,6 +103,7 @@ export class MethodWriter extends MethodVisitor {
     visitLocalVariableAnnotation(arg0: number, arg1: TypePath, arg2: Label[], arg3: Label[], arg4: number[], arg5: string, arg6: boolean): AnnotationVisitor;
     visitLookupSwitchInsn(arg0: Label, arg1: number[], arg2: Label[]): void;
     visitMaxs(arg0: number, arg1: number): void;
+    visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitParameter(arg0: string, arg1: number): void;

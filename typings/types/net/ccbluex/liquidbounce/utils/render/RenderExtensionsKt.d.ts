@@ -20,8 +20,6 @@ import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Color4b } from '../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { TextureSetup } from '../../../../../net/minecraft/client/gui/render/TextureSetup.d.ts'
 import type { AbstractTexture } from '../../../../../net/minecraft/client/renderer/texture/AbstractTexture.d.ts'
@@ -45,7 +43,7 @@ export class RenderExtensionsKt extends Object {
     static copyFully(paramarg0: GpuTexture, paramarg1: () => string): GpuTexture;
     static copyFully(gpuTexture: GpuTexture, labelGetter: () => string, usage: number): GpuTexture;
     static copyTo(gpuTexture: GpuTexture, destination: GpuBuffer, offset: number, mipLevel: number, x: number, y: number, width: number, height: number, callback: () => void): void;
-    static createUbo(gpuDevice: GpuDevice, labelGetter: () => string, std140Size: Function1<Object, void>): GpuBuffer;
+    static createUbo(gpuDevice: GpuDevice, labelGetter: () => string, std140Size: (param0: Object | null) => void): GpuBuffer;
     static getTextureSetup(paramarg0: AbstractTexture): TextureSetup;
     static mapBuffer(paramarg0: GpuBuffer, paramarg1: boolean, paramarg2: boolean): GpuBuffer$MappedView;
     static mapBuffer(paramarg0: GpuBufferSlice, paramarg1: boolean, paramarg2: boolean): GpuBuffer$MappedView;
@@ -66,7 +64,7 @@ export class RenderExtensionsKt extends Object {
     static registerTexture(nativeImage: NativeImage, identifier: Identifier): DynamicTexture;
     static reset(poseStack: PoseStack): void;
     static saveToFile(gpuTexture: GpuTexture, file: File): CompletableFuture<Object>;
-    static std140Size(block: Function1<Object, void>): number;
+    static std140Size(block: (param0: Object | null) => void): number;
     static toBufferedImage(nativeImage: NativeImage): BufferedImage;
     static toBufferedImage(nativeImage: GpuTexture): CompletableFuture<BufferedImage>;
     static toBufferedImage(gpuTexture: GpuTexture, mipLevel: number): CompletableFuture<BufferedImage>;
@@ -80,9 +78,9 @@ export class RenderExtensionsKt extends Object {
     static toNativeImage(bufferedImage: GpuTexture): CompletableFuture<NativeImage>;
     static toNativeImage(gpuTexture: GpuTexture, mipLevel: number): CompletableFuture<NativeImage>;
     static uploadRect(dynamicTexture: DynamicTexture, mipLevel: number, x: number, y: number, width: number, height: number): void;
-    static withOutputTextureOverride(color: GpuTextureView, depth: GpuTextureView, block: Function0<void>): void;
+    static withOutputTextureOverride(color: GpuTextureView, depth: GpuTextureView, block: () => void): void;
     static write(gpuBufferSlice: GpuBufferSlice, byteBuffer: ByteBuffer): void;
     static write(gpuTexture: GpuTexture, source: NativeImage, mipLevel: number, depthOrLayer: number, destX: number, destY: number, width: number, height: number, sourceX: number, sourceY: number): void;
-    static writeStd140(paramarg0: GpuBufferSlice, paramarg1: Function1<Object, void>): GpuBufferSlice;
-    static writeStd140(paramarg0: ByteBuffer, paramarg1: Function1<Object, void>): void;
+    static writeStd140(paramarg0: GpuBufferSlice, paramarg1: (param0: Object | null) => void): GpuBufferSlice;
+    static writeStd140(paramarg0: ByteBuffer, paramarg1: (param0: Object | null) => void): void;
 }

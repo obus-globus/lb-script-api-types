@@ -16,5 +16,7 @@ export class ExportSpecifierNode extends Node {
     getIdentifier(): PropertyKey;
     setExportIdentifier(exportIdentifier: PropertyKey): ExportSpecifierNode;
     setIdentifier(identifier: PropertyKey): ExportSpecifierNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

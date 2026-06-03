@@ -4,5 +4,6 @@ export class FixedRecvByteBufAllocator extends DefaultMaxMessagesRecvByteBufAllo
     constructor(arg0: number)
     // private bufferSize: number;
     newHandle(): RecvByteBufAllocator$Handle;
+    respectMaybeMoreData(): boolean;
     respectMaybeMoreData(arg0: boolean): FixedRecvByteBufAllocator;
 }

@@ -10,4 +10,5 @@ export class EntityPacketRewriter1_15 extends EntityRewriter<ClientboundPackets1
     registerRewrites(): void;
     // private sendEntityDataPacket(arg0: PacketWrapper, arg1: number): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

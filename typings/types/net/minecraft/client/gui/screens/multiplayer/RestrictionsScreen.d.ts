@@ -25,6 +25,7 @@ export class RestrictionsScreen extends Screen {
     // private layout: HeaderAndFooterLayout;
     // private previousScreen: Screen;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

@@ -23,6 +23,7 @@ export class EcdhKeyAlgorithm extends CryptoAlgorithm implements KeyAlgorithm<Pu
     getConcatKDFAlgorithmId(arg0: AeadAlgorithm): string;
     getDecryptionKey(arg0: DecryptionKeyRequest<PrivateKey>): SecretKey;
     getEncryptionKey(arg0: KeyRequest<PublicKey>): KeyResult;
+    getJcaName(): string;
     getJcaName(arg0: Request<Object>): string;
     // private getKeyBitLength(arg0: AeadAlgorithm): number;
 }

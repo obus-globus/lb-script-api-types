@@ -1,3 +1,4 @@
+import type { Ops } from '../../../../../../../com/viaversion/viaversion/api/minecraft/codec/Ops.d.ts'
 import type { StructuredData } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredData.d.ts'
 import type { DataComponentPredicate } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/predicate/DataComponentPredicate.d.ts'
 import type { AdventureModePredicate } from '../../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AdventureModePredicate.d.ts'
@@ -9,5 +10,6 @@ export class AdventureModePredicate$AdventureModePredicateType1_21_5 extends Typ
     constructor(arg0: Type<StructuredData<Object>[]>, arg1: Type<DataComponentPredicate[]>)
     // private blockPredicateType: Type<BlockPredicate[]>;
     read(arg0: ByteBuf): AdventureModePredicate;
+    write(arg0: Ops, arg1: AdventureModePredicate): void;
     write(arg0: ByteBuf, arg1: AdventureModePredicate): void;
 }

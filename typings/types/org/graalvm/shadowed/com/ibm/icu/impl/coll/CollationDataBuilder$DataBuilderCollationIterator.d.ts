@@ -10,6 +10,7 @@ export class CollationDataBuilder$DataBuilderCollationIterator extends Collation
     // private pos: number;
     // private s: CharSequence;
     backwardNumCodePoints(num: number): void;
+    fetchCEs(): number;
     fetchCEs(str: CharSequence, start: number, ces: number[], cesLength: number): number;
     forwardNumCodePoints(num: number): void;
     getCE32FromBuilderData(ce32: number): number;

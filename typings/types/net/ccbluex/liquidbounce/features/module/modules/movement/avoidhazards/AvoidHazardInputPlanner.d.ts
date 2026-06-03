@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { AvoidHazardInputPlanner$Candidate } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/AvoidHazardInputPlanner$Candidate.d.ts'
 import type { DirectionalInput } from '../../../../../../../../net/ccbluex/liquidbounce/utils/movement/DirectionalInput.d.ts'
 /**
@@ -14,5 +13,5 @@ export class AvoidHazardInputPlanner extends Object {
     // private angleOf(input: DirectionalInput): number | null;
     // private angularDifference(a: number, b: number): number;
     // private axis(positive: boolean, negative: boolean): number;
-    chooseSafeInput(originalInput: DirectionalInput, isSafe: Function1<DirectionalInput, boolean>): DirectionalInput;
+    chooseSafeInput(originalInput: DirectionalInput, isSafe: (param0: DirectionalInput) => boolean): DirectionalInput;
 }

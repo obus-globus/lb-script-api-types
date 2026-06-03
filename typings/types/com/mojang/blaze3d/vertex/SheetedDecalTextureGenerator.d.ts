@@ -27,7 +27,12 @@ export class SheetedDecalTextureGenerator extends Object implements VertexConsum
     // private x: number;
     // private y: number;
     // private z: number;
+    addVertex(pose: PoseStack$Pose, x: number, y: number, z: number): VertexConsumer;
+    addVertex(pose: PoseStack$Pose, position: Vector3fc): VertexConsumer;
     addVertex(x: number, y: number, z: number): VertexConsumer;
+    addVertex(x: number, y: number, z: number, color: number, u: number, v: number, overlayCoords: number, lightCoords: number, nx: number, ny: number, nz: number): void;
+    addVertex(arg0: Matrix4fc, arg1: number, arg2: number, arg3: number): VertexConsumer;
+    addVertex(position: Vector3fc): VertexConsumer;
     addVertex(pose: PoseStack$Pose, x: number, y: number, z: number): VertexConsumer;
     addVertex(pose: PoseStack$Pose, position: Vector3fc): VertexConsumer;
     addVertex(x: number, y: number, z: number, color: number, u: number, v: number, overlayCoords: number, lightCoords: number, nx: number, ny: number, nz: number): void;
@@ -39,11 +44,14 @@ export class SheetedDecalTextureGenerator extends Object implements VertexConsum
     push(arg0: MemoryStack, arg1: number, arg2: number, arg3: VertexFormat): void;
     putBakedQuad(pose: PoseStack$Pose, quad: BakedQuad, instance: QuadInstance): void;
     putBlockBakedQuad(x: number, y: number, z: number, quad: BakedQuad, instance: QuadInstance): void;
+    setColor(r: number, g: number, b: number, a: number): VertexConsumer;
     setColor(color: number): VertexConsumer;
     setColor(r: number, g: number, b: number, a: number): VertexConsumer;
     setColor(r: number, g: number, b: number, a: number): VertexConsumer;
     setLight(packedLightCoords: number): VertexConsumer;
     setLineWidth(width: number): VertexConsumer;
+    setNormal(arg0: PoseStack$Pose, arg1: number, arg2: number, arg3: number): VertexConsumer;
+    setNormal(pose: PoseStack$Pose, normal: Vector3fc): VertexConsumer;
     setNormal(x: number, y: number, z: number): VertexConsumer;
     setNormal(arg0: PoseStack$Pose, arg1: number, arg2: number, arg3: number): VertexConsumer;
     setNormal(pose: PoseStack$Pose, normal: Vector3fc): VertexConsumer;

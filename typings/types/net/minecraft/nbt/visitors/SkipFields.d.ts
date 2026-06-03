@@ -9,5 +9,6 @@ export class SkipFields extends CollectToTag {
     constructor(wantedFields: FieldSelector[])
     // private stack: FieldTree[];
     visitContainerEnd(): StreamTagVisitor$ValueResult;
+    visitEntry(type: TagType<Object>): StreamTagVisitor$EntryResult;
     visitEntry(type: TagType<Object>, id: string): StreamTagVisitor$EntryResult;
 }

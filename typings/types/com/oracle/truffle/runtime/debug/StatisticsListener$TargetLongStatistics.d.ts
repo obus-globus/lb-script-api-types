@@ -3,6 +3,7 @@ import type { LongSummaryStatistics } from '../../../../../java/util/LongSummary
 export class StatisticsListener$TargetLongStatistics extends LongSummaryStatistics {
     private constructor()
     readonly maxName: string;
+    accept(arg0: number): void;
     accept(value: number): void;
     accept(value: number, target: OptimizedCallTarget): void;
     combine(other: LongSummaryStatistics): void;

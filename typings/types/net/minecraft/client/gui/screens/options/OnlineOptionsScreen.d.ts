@@ -24,5 +24,6 @@ export class OnlineOptionsScreen extends OptionsSubScreen {
     // private difficultyDisplay: OptionInstance<Unit>;
     addOptions(): void;
     init(): void;
+    init(width: number, height: number): void;
     // private options(options: Options, minecraft: Minecraft): OptionInstance<Object>[];
 }

@@ -7,31 +7,31 @@ import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt:28}
  */
 export class ArmorPiece extends Object {
-//     static box-impl(paramarg0: ItemSlot): ArmorPiece;
- // ; invalid because of -//     static constructor-impl(paramarg0: ItemSlot): ItemSlot;
- // ; invalid because of -//     static equals-impl(paramarg0: ItemSlot, paramarg1: Object): boolean;
- // ; invalid because of -//     static equals-impl0(paramarg0: ItemSlot, paramarg1: ItemSlot): boolean;
- // ; invalid because of -//     static getDefensePoints-impl(paramarg0: ItemSlot): number;
- // ; invalid because of -//     static getEntitySlotId-impl(paramarg0: ItemSlot): number;
- // ; invalid because of -//     static getInventorySlot-impl(paramarg0: ItemSlot): number;
- // ; invalid because of -//     static getKnockbackResistance-impl(paramarg0: ItemSlot): number;
- // ; invalid because of -//     static getSlotType-impl(paramarg0: ItemSlot): EquipmentSlot;
- // ; invalid because of -//     static getToughness-impl(paramarg0: ItemSlot): number;
- // ; invalid because of -//     static hashCode-impl(paramarg0: ItemSlot): number;
- // ; invalid because of -//     static isAlreadyEquipped-impl(paramarg0: ItemSlot): boolean;
- // ; invalid because of -//     static isReachableByHand-impl(paramarg0: ItemSlot): boolean;
- // ; invalid because of -//     static toString-impl(paramarg0: ItemSlot): string;
- // ; invalid because of -    constructor(itemSlot: ItemSlot)
-//     /*not mapped: */ getDefensePoints-impl(): number;
- // ; invalid because of -//     /*not mapped: */ getEntitySlotId-impl(): number;
- // ; invalid because of -//     /*not mapped: */ getInventorySlot-impl(): number;
- // ; invalid because of -//     /*not mapped: */ isAlreadyEquipped-impl(): boolean;
- // ; invalid because of -//     /*not mapped: */ isReachableByHand-impl(): boolean;
- // ; invalid because of -    readonly itemSlot: ItemSlot;
-//     /*not mapped: */ getKnockbackResistance-impl(): number;
- // ; invalid because of -//     /*not mapped: */ getSlotType-impl(): EquipmentSlot;
- // ; invalid because of -//     /*not mapped: */ getToughness-impl(): number;
- // ; invalid because of -    equals(other: Object | null): boolean;
+// (invalid TS: name contains '-')     static box-impl(paramarg0: ItemSlot): ArmorPiece;
+// (invalid TS: name contains '-')     static constructor-impl(paramarg0: ItemSlot): ItemSlot;
+// (invalid TS: name contains '-')     static equals-impl(paramarg0: ItemSlot, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl0(paramarg0: ItemSlot, paramarg1: ItemSlot): boolean;
+// (invalid TS: name contains '-')     static getDefensePoints-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static getEntitySlotId-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static getInventorySlot-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static getKnockbackResistance-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static getSlotType-impl(paramarg0: ItemSlot): EquipmentSlot;
+// (invalid TS: name contains '-')     static getToughness-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static isAlreadyEquipped-impl(paramarg0: ItemSlot): boolean;
+// (invalid TS: name contains '-')     static isReachableByHand-impl(paramarg0: ItemSlot): boolean;
+// (invalid TS: name contains '-')     static toString-impl(paramarg0: ItemSlot): string;
+    constructor(itemSlot: ItemSlot)
+// (invalid TS: name contains '-')     /*not mapped: */ getDefensePoints-impl(): number;
+// (invalid TS: name contains '-')     /*not mapped: */ getEntitySlotId-impl(): number;
+// (invalid TS: name contains '-')     /*not mapped: */ getInventorySlot-impl(): number;
+// (invalid TS: name contains '-')     /*not mapped: */ isAlreadyEquipped-impl(): boolean;
+// (invalid TS: name contains '-')     /*not mapped: */ isReachableByHand-impl(): boolean;
+    readonly itemSlot: ItemSlot;
+// (invalid TS: name contains '-')     /*not mapped: */ getKnockbackResistance-impl(): number;
+// (invalid TS: name contains '-')     /*not mapped: */ getSlotType-impl(): EquipmentSlot;
+// (invalid TS: name contains '-')     /*not mapped: */ getToughness-impl(): number;
+    equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;
 }

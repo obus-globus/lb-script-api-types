@@ -4,6 +4,7 @@ import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Codec$ResultFunction } from '../../../../com/mojang/serialization/Codec$ResultFunction.d.ts'
 import type { DataResult } from '../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../../com/mojang/serialization/Decoder.d.ts'
+import type { Dynamic } from '../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Encoder } from '../../../../com/mojang/serialization/Encoder.d.ts'
 import type { Keyable } from '../../../../com/mojang/serialization/Keyable.d.ts'
@@ -72,7 +73,9 @@ export class UnboundedMapCodec<K extends Object | number | string | boolean, V e
     // private keyCodec: Codec<K>;
     comapFlatMap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;
     decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
+    decode(arg0: Dynamic<T>): DataResult<Pair<Map<K, V>, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Map<K, V>, T>>;
+    decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
     deprecated(arg0: number): Codec<A>;
     dispatch(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
     dispatch(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): Codec<E>;
@@ -82,6 +85,7 @@ export class UnboundedMapCodec<K extends Object | number | string | boolean, V e
     elementCodec(): Codec<V>;
     encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     encode<T extends Object | number | string | boolean>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
+    encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     equals(arg0: Object | null): boolean;
     fieldOf(arg0: string): MapCodec<A>;
     flatComapMap(arg0: (param0: A) => S, arg1: (param0: S) => DataResult<A>): Codec<S>;

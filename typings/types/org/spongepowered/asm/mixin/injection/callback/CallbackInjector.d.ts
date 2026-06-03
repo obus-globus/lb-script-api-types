@@ -5,6 +5,7 @@ import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/Method
 import type { InjectionPoint } from '../../../../../../org/spongepowered/asm/mixin/injection/InjectionPoint.d.ts'
 import type { LocalCapture } from '../../../../../../org/spongepowered/asm/mixin/injection/callback/LocalCapture.d.ts'
 import type { Injector } from '../../../../../../org/spongepowered/asm/mixin/injection/code/Injector.d.ts'
+import type { Injector$TargetNode } from '../../../../../../org/spongepowered/asm/mixin/injection/code/Injector$TargetNode.d.ts'
 import type { InjectorTarget } from '../../../../../../org/spongepowered/asm/mixin/injection/code/InjectorTarget.d.ts'
 import type { InjectionInfo } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionInfo.d.ts'
 import type { InjectionNodes$InjectionNode } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode.d.ts'
@@ -24,12 +25,14 @@ export class CallbackInjector extends Injector {
     // private localCapture: LocalCapture;
     // private totalInjections: number;
     addTargetNode(arg0: InjectorTarget, arg1: InjectionNodes$InjectionNode[], arg2: AbstractInsnNode, arg3: InjectionPoint[]): void;
+    addTargetNode(arg0: InjectorTarget, arg1: { [key: number]: Injector$TargetNode }, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
     // private createCallbackInfo(arg0: (Object | null)[], arg1: boolean): void;
     // private dupReturnValue(arg0: (Object | null)[]): void;
     // private generateBadLVTMessage(arg0: (Object | null)[]): string;
     // private generateErrorMethod(arg0: (Object | null)[], arg1: string, arg2: string): MethodNode;
     // private getIdentifier(arg0: (Object | null)[]): string;
     // private inject(arg0: (Object | null)[]): void;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     injectCancellationCode(arg0: (Object | null)[]): void;
     injectReturnCode(arg0: (Object | null)[]): void;
@@ -37,6 +40,7 @@ export class CallbackInjector extends Injector {
     // private invokeCallback(arg0: (Object | null)[], arg1: MethodNode): void;
     isStatic(): boolean;
     // private loadOrCreateCallbackInfo(arg0: (Object | null)[]): void;
+    preInject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     preInject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private printLocals(arg0: (Object | null)[]): void;
     sanityCheck(arg0: AbstractInsnNode[], arg1: InjectionPoint[]): void;

@@ -1,3 +1,4 @@
+import type { Reader } from '../../../../java/io/Reader.d.ts'
 import type { ANTLRInputStream } from '../../../../org/antlr/v4/runtime/ANTLRInputStream.d.ts'
 export class ANTLRFileStream extends ANTLRInputStream {
     static EOF: number;
@@ -8,5 +9,6 @@ export class ANTLRFileStream extends ANTLRInputStream {
     constructor(arg0: string, arg1: string)
     // private fileName: string;
     getSourceName(): string;
+    load(arg0: Reader, arg1: number, arg2: number): void;
     load(arg0: string, arg1: string): void;
 }

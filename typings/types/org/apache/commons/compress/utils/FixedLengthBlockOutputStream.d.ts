@@ -16,6 +16,7 @@ export class FixedLengthBlockOutputStream extends OutputStream implements Writab
     // private maybeFlush(): void;
     // private padBlock(): void;
     write(arg0: ByteBuffer): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     // private writeBlock(): void;

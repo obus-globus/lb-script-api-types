@@ -28,6 +28,7 @@ export class RealmsPendingInvitesScreen extends RealmsScreen {
     // private pendingInvites: CompletableFuture<PendingInvite[]>;
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

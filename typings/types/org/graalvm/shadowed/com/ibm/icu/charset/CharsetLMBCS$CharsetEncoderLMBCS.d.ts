@@ -10,6 +10,7 @@ export class CharsetLMBCS$CharsetEncoderLMBCS extends CharsetEncoderICU {
     constructor(null_: CharsetLMBCS$CharsetEncoderLMBCS, cs: CharsetICU)
     // private LMBCSConversionWorker(group: number, LMBCS: number[], pUniChar: string, lastConverterIndex: number[], groups_tried: (Object | null)[]): number;
     // private LMBCSConvertUni(LMBCS: number[], uniChar: string): number;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

@@ -9,6 +9,7 @@ export class EvokerRenderer<T extends SpellcasterIllager> extends IllagerRendere
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): EvokerRenderState;
+    createRenderState(entity: T, partialTicks: number): EvokerRenderState;
     extractRenderState(entity: T, state: EvokerRenderState, partialTicks: number): void;
     getTextureLocation(state: EvokerRenderState): Identifier;
 }

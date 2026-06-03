@@ -2,8 +2,6 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
-import type { Function3 } from '../../../../kotlin/jvm/functions/Function3.d.ts'
 import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineDispatcher } from '../../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
@@ -17,7 +15,7 @@ export class SuspendHandlersKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:38}
      */
-    static sequenceHandler(eventListener: EventListener, priority: number, dispatcher: CoroutineDispatcher, onCancellation: () => void, eventHandler: Function3<Object, Object, Object, Object>): EventHook<Object>;
+    static sequenceHandler(eventListener: EventListener, priority: number, dispatcher: CoroutineDispatcher, onCancellation: () => void, eventHandler: (param0: Object | null, param1: Object | null, param2: Object | null) => Object | null): EventHook<Object>;
     /**
      * Start a {@link Job} on event.
      *
@@ -29,13 +27,13 @@ export class SuspendHandlersKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:68}
      */
-    static suspendHandler(eventListener: EventListener, context: CoroutineContext, priority: number, behavior: SuspendHandlerBehavior, handler: Function3<Object, Object, Object, Object>): EventHook<Object>;
+    static suspendHandler(eventListener: EventListener, context: CoroutineContext, priority: number, behavior: SuspendHandlerBehavior, handler: (param0: Object | null, param1: Object | null, param2: Object | null) => Object | null): EventHook<Object>;
     /**
      * Registers a repeatable sequence which repeats the execution of code on {@link GameTickEvent}.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:54}
      */
-    static tickHandler(eventListener: EventListener, dispatcher: CoroutineDispatcher, onCancellation: () => void, eventHandler: Function2<Object, Object, Object>): EventHook<GameTickEvent>;
+    static tickHandler(eventListener: EventListener, dispatcher: CoroutineDispatcher, onCancellation: () => void, eventHandler: (param0: Object | null, param1: Object | null) => Object | null): EventHook<GameTickEvent>;
     /**
      * Wait an event of type {@link T} which matches given {@link predicate}.
      *

@@ -8,7 +8,7 @@ import type { ValueType } from '../../../../../../net/ccbluex/liquidbounce/confi
 import type { ChoiceListValue } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/ChoiceListValue.d.ts'
 import type { MultiChoiceListValue } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.d.ts'
 import type { Tagged } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
-import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
+import type { Value as Value_2 } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
 /**
  * Object used by the script API to provide an idiomatic way of creating module values.
  *
@@ -16,25 +16,6 @@ import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
  */
 export class ScriptSetting extends Object {
     static INSTANCE: ScriptSetting;
-    /**
-     * Creates a boolean setting (rendered as a toggle / checkbox in the
-     * ClickGUI). The value can be read via `.get()` at runtime.
-     *
-     * @param option.name Display name shown in the ClickGUI.
-     * @param option.default Initial value if the user hasn't changed it.
-     * @returns The setting handle. Call `.get()` to read the current value.
-     *
-     * @example
-     * ```ts
-     * const loud = mod.setting.boolean({ name: "Loud", default: false });
-     * if (loud.get()) print("loud!");
-     * ```
-     *
-     * Source: `ScriptSetting.kt:43` — `fun boolean(value: PolyglotValue)`,
-     * reads the `name` and `default` members. Class-level KDoc states
-     * "Object used by the script API to provide an idiomatic way of
-     * creating module values."
-     */
     boolean(option: { name: string; default: boolean }): Value<boolean>;
     choose<C extends readonly string[]>(option: { name: string; choices: C; default: C[number] }): ChoiceListValue<Tagged>;
     float(option: { name: string; default: number; range: [number, number]; suffix?: string }): RangedValue<number>;

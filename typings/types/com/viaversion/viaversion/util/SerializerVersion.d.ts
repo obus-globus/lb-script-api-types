@@ -37,6 +37,7 @@ export class SerializerVersion extends Enum<SerializerVersion> {
     toComponent(arg0: string): TextComponent;
     toJson(arg0: TextComponent): JsonElement;
     toSNBT(arg0: Tag): string;
+    toString(): string;
     toString(arg0: TextComponent): string;
     toTag(arg0: TextComponent): Tag;
     toTag(arg0: string): Tag;

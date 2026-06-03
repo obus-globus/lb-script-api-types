@@ -25,6 +25,7 @@ export class ModListWidget extends ObjectSelectionList<ModListEntry> implements 
     // private restoreScrollY: number;
     // private selectedModId: string;
     addEntry(arg0: ModListEntry): number;
+    addEntry(entry: ModListEntry, height: number): number;
     clearEntries(): void;
     close(): void;
     contentHeight(): number;

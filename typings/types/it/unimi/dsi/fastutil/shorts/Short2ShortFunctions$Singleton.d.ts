@@ -8,8 +8,11 @@ export class Short2ShortFunctions$Singleton extends AbstractShort2ShortFunction 
     // private value: number;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
+    get(arg0: Object): number;
     get(arg0: number): number;
+    getOrDefault(arg0: Object, arg1: number): number;
     getOrDefault(arg0: number, arg1: number): number;
     size(): number;
 }

@@ -22,6 +22,7 @@ export class ToTemporalDateNodeGen extends ToTemporalDateNode {
     // private isObjectNode_: IsObjectNode;
     // private state_0_: number;
     // private toJavaString_: TruffleString$ToJavaStringNode;
+    execute(value: Object): JSTemporalPlainDateObject;
     execute(arg0Value: Object, arg1Value: Object): JSTemporalPlainDateObject;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): JSTemporalPlainDateObject;
 }

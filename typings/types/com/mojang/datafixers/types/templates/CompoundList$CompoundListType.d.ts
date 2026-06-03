@@ -26,6 +26,7 @@ export class CompoundList$CompoundListType<K extends Object | number | string | 
     // private capLeft(arg0: TypedOptic<K, K2, FT, FR>): Either<TypedOptic<Pair<K, V>[], Object, FT, FR>, Type$FieldNotFoundException>;
     // private capRight(arg0: TypedOptic<V, V2, FT, FR>): TypedOptic<Pair<K, V>[], Object, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     findTypeInChildren(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Pair<K, V>[], Object, FT, FR>, Type$FieldNotFoundException>;
     getElement(): Type<V>;
     getKey(): Type<K>;

@@ -12,7 +12,7 @@ import type { InetAddress } from '../../../../../java/net/InetAddress.d.ts'
 import type { InetSocketAddress } from '../../../../../java/net/InetSocketAddress.d.ts'
 import type { NetworkInterface } from '../../../../../java/net/NetworkInterface.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
-import type { DatagramChannel } from '../../../../../java/nio/channels/DatagramChannel.d.ts'
+import type { DatagramChannel as DatagramChannel_2 } from '../../../../../java/nio/channels/DatagramChannel.d.ts'
 import type { MembershipKey } from '../../../../../java/nio/channels/MembershipKey.d.ts'
 import type { SelectorProvider } from '../../../../../java/nio/channels/spi/SelectorProvider.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -21,7 +21,7 @@ export class NioDatagramChannel extends AbstractNioMessageChannel implements Dat
     constructor()
     constructor(arg0: InternetProtocolFamily)
     constructor(arg0: SocketProtocolFamily)
-    constructor(arg0: DatagramChannel)
+    constructor(arg0: DatagramChannel_2)
     constructor(arg0: SelectorProvider)
     constructor(arg0: SelectorProvider, arg1: InternetProtocolFamily)
     constructor(arg0: SelectorProvider, arg1: SocketProtocolFamily)
@@ -47,7 +47,7 @@ export class NioDatagramChannel extends AbstractNioMessageChannel implements Dat
     filterOutboundMessage(arg0: Object): Object;
     isActive(): boolean;
     isConnected(): boolean;
-    javaChannel(): DatagramChannel;
+    javaChannel(): DatagramChannel_2;
     joinGroup(arg0: InetAddress): ChannelFuture;
     joinGroup(arg0: InetAddress, arg1: ChannelPromise): ChannelFuture;
     joinGroup(arg0: InetAddress, arg1: NetworkInterface, arg2: InetAddress): ChannelFuture;

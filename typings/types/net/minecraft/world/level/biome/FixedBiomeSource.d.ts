@@ -18,6 +18,7 @@ export class FixedBiomeSource extends BiomeSource implements BiomeManager$NoiseB
     // private biome: Holder<Biome>;
     codec(): MapCodec<BiomeSource>;
     collectPossibleBiomes(): Stream<Holder<Biome>>;
+    findBiomeHorizontal(x: number, y: number, z: number, searchRadius: number, allowed: (param0: Holder<Biome>) => kotlin.Boolean, random: RandomSource, sampler: Climate$Sampler): Pair<BlockPos, Holder<Biome>>;
     findBiomeHorizontal(originX: number, originY: number, originZ: number, r: number, skipStep: number, allowed: (param0: Holder<Biome>) => kotlin.Boolean, random: RandomSource, findClosest: boolean, sampler: Climate$Sampler): Pair<BlockPos, Holder<Biome>>;
     findClosestBiome3d(origin: BlockPos, searchRadius: number, sampleResolutionHorizontal: number, sampleResolutionVertical: number, allowed: (param0: Holder<Biome>) => kotlin.Boolean, sampler: Climate$Sampler, level: LevelReader): Pair<BlockPos, Holder<Biome>>;
     getBiomesWithin(x: number, y: number, z: number, r: number, sampler: Climate$Sampler): Holder<Biome>[];

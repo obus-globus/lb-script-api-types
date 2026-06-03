@@ -15,5 +15,6 @@ export class UndeadHorseRenderer extends AbstractHorseRenderer<AbstractHorse, Eq
     // private adultTexture: Identifier;
     // private babyTexture: Identifier;
     createRenderState(): EquineRenderState;
+    createRenderState(entity: AbstractHorse, partialTicks: number): EquineRenderState;
     getTextureLocation(state: EquineRenderState): Identifier;
 }

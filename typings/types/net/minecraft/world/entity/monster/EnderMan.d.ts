@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -26,6 +27,7 @@ import type { LevelAccessor } from '../../../../../net/minecraft/world/level/Lev
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { ServerLevelAccessor } from '../../../../../net/minecraft/world/level/ServerLevelAccessor.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { TeleportTransition } from '../../../../../net/minecraft/world/level/portal/TeleportTransition.d.ts'
 import type { ValueInput } from '../../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
@@ -157,6 +159,7 @@ export class EnderMan extends Monster implements NeutralMob {
     getHurtSound(source: DamageSource): SoundEvent;
     getPersistentAngerEndTime(): number;
     getPersistentAngerTarget(): EntityReference<LivingEntity>;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     hasBeenStaredAt(): boolean;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
@@ -167,6 +170,7 @@ export class EnderMan extends Monster implements NeutralMob {
     // private isBeingStaredBy(player: Player): boolean;
     isCreepy(): boolean;
     isSensitiveToWater(): boolean;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playStareSound(): void;
     playerDied(level: ServerLevel, player: Player): void;
@@ -184,6 +188,7 @@ export class EnderMan extends Monster implements NeutralMob {
     stopBeingAngry(): void;
     teleport(): boolean;
     // private teleport(x: number, y: number, z: number): boolean;
+    teleport(transition: TeleportTransition): Entity;
     // private teleportTowards(entity: Entity): boolean;
     updatePersistentAnger(level: ServerLevel, stayAngryIfTargetPresent: boolean): void;
 }

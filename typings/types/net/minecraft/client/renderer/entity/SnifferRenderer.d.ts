@@ -11,6 +11,7 @@ export class SnifferRenderer extends AgeableMobRenderer<Sniffer, SnifferRenderSt
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SnifferRenderState;
+    createRenderState(entity: Sniffer, partialTicks: number): SnifferRenderState;
     extractRenderState(entity: Sniffer, state: SnifferRenderState, partialTicks: number): void;
     getBoundingBoxForCulling(entity: Sniffer): AABB;
     getTextureLocation(state: SnifferRenderState): Identifier;

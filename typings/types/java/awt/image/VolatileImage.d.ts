@@ -25,6 +25,7 @@ export abstract class VolatileImage extends Image implements Transparency {
     contentsLost(): boolean;
     createGraphics(): Graphics2D;
     getCapabilities(): ImageCapabilities;
+    getCapabilities(arg0: GraphicsConfiguration): ImageCapabilities;
     getGraphics(): Graphics;
     getHeight(): number;
     getSnapshot(): BufferedImage;

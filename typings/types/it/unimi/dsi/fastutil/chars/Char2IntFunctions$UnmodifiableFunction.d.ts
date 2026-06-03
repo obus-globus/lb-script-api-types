@@ -6,6 +6,7 @@ export class Char2IntFunctions$UnmodifiableFunction extends AbstractChar2IntFunc
     constructor(arg0: (param0: string) => kotlin.Int)
     // private function: (param0: string) => kotlin.Int;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

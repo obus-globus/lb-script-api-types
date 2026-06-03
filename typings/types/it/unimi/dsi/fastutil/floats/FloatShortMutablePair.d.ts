@@ -19,11 +19,15 @@ export class FloatShortMutablePair extends Object implements FloatShortPair, Ser
     key(arg0: number): FloatShortPair;
     key(arg0: number): FloatShortPair;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatShortPair;
     left(arg0: number): FloatShortMutablePair;
     left(): number;
     left(arg0: number): FloatShortPair;
     left(arg0: number): FloatShortPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatShortPair;
     right(arg0: number): FloatShortMutablePair;
     right(): number;
     right(arg0: number): FloatShortPair;

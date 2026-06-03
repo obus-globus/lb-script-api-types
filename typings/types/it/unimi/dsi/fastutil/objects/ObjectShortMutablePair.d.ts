@@ -13,6 +13,8 @@ export class ObjectShortMutablePair<K extends Object | number | string | boolean
     hashCode(): number;
     left(): K;
     left(arg0: K): ObjectShortMutablePair<K>;
+    right(): number;
+    right(arg0: number): ObjectShortPair<K>;
     right(arg0: number): ObjectShortMutablePair<K>;
     right(): number;
     right(arg0: number): ObjectShortPair<K>;

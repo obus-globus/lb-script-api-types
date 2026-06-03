@@ -30,6 +30,7 @@ export class FramedSnappyCompressorInputStream extends CompressorInputStream imp
     close(): void;
     getCompressedCount(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readCrc(): number;
     // private readNextBlock(): void;

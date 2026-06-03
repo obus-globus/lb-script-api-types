@@ -14,5 +14,6 @@ export class StrMatcher$TrimMatcher extends StrMatcher {
     static tabMatcher(): StrMatcher;
     static trimMatcher(): StrMatcher;
     constructor()
+    isMatch(buffer: string[], pos: number): number;
     isMatch(buffer: string[], pos: number, bufferStart: number, bufferEnd: number): number;
 }

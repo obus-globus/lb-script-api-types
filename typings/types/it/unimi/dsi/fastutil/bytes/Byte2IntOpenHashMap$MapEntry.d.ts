@@ -32,6 +32,8 @@ export class Byte2IntOpenHashMap$MapEntry extends Object implements Byte2IntMap$
     left(arg0: number): ByteIntPair;
     left(arg0: number): ByteIntPair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteIntPair;
     right(arg0: number): ByteIntPair;
     right(): number;
     right(arg0: number): ByteIntPair;

@@ -25,6 +25,7 @@ export class FixedChannelPool extends SimpleChannelPool {
     // private pendingAcquireCount: number;
     // private pendingAcquireQueue: FixedChannelPool$AcquireTask[];
     // private timeoutTask: () => void;
+    acquire(): Future<Channel>;
     acquire(arg0: Promise<Channel>): Future<Channel>;
     // private acquire0(arg0: Promise<Channel>): void;
     acquiredChannelCount(): number;
@@ -32,6 +33,7 @@ export class FixedChannelPool extends SimpleChannelPool {
     // private close0(): Future<void>;
     closeAsync(): Future<void>;
     // private decrementAndRunTaskQueue(): void;
+    release(arg0: Channel): Future<void>;
     release(arg0: Channel, arg1: Promise<void>): Future<void>;
     // private runTaskQueue(): void;
     // private tooManyOutstanding(arg0: Promise<Object>): void;

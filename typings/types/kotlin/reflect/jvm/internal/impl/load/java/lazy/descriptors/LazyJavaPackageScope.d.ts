@@ -1,4 +1,3 @@
-import type { Function1 } from '../../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { LookupLocation } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
@@ -23,15 +22,15 @@ export class LazyJavaPackageScope extends LazyJavaStaticScope {
     // private jPackage: JavaPackage;
     // private knownClassNamesInPackage: NullableLazyValue<string[]>;
     readonly ownerDescriptor: LazyJavaPackageFragment;
-    computeClassNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
-    computeFunctionNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computeClassNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
+    computeFunctionNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeMemberIndex(): DeclaredMemberIndex;
     computeNonDeclaredFunctions(arg0: E[], arg1: Name): void;
-    computePropertyNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     // private findClassifier(arg0: Name, arg1: JavaClass): ClassDescriptor;
     findClassifierByJavaClass$descriptors_jvm(arg0: JavaClass): ClassDescriptor;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
     // private getMetadataVersion(): MetadataVersion;
     getOwnerDescriptor(): LazyJavaPackageFragment;

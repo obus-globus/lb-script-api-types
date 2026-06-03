@@ -5,4 +5,5 @@ import type { FieldRemapper } from '../../../../../../org/objectweb/asm/commons/
 export class AsmClassRemapper$AsmFieldRemapper extends FieldRemapper {
     constructor(arg0: FieldVisitor, arg1: AsmRemapper)
     createAnnotationRemapper(arg0: string, arg1: AnnotationVisitor): AnnotationVisitor;
+    createAnnotationRemapper(arg0: AnnotationVisitor): AnnotationVisitor;
 }

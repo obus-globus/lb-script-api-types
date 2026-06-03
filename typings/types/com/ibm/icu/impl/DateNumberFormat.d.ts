@@ -1,10 +1,11 @@
 import type { BigDecimal } from '../../../../com/ibm/icu/math/BigDecimal.d.ts'
 import type { NumberFormat } from '../../../../com/ibm/icu/text/NumberFormat.d.ts'
 import type { NumberFormat$NumberFormatFactory } from '../../../../com/ibm/icu/text/NumberFormat$NumberFormatFactory.d.ts'
+import type { CurrencyAmount } from '../../../../com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
-import type { BigDecimal } from '../../../../java/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../java/math/BigDecimal.d.ts'
 import type { BigInteger } from '../../../../java/math/BigInteger.d.ts'
 import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
@@ -62,10 +63,19 @@ export class DateNumberFormat extends NumberFormat {
     readonly zeroDigit: string;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    format(arg0: BigDecimal): string;
     format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: CurrencyAmount): string;
+    format(arg0: CurrencyAmount, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: BigDecimal_2): string;
+    format(arg0: BigDecimal_2, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: BigInteger): string;
     format(arg0: BigInteger, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     getDigits(): string[];
     getMaximumIntegerDigits(): number;
@@ -73,6 +83,7 @@ export class DateNumberFormat extends NumberFormat {
     getZeroDigit(): string;
     hashCode(): number;
     // private initialize(arg0: ULocale, arg1: string, arg2: string): void;
+    parse(arg0: string): Number;
     parse(arg0: string, arg1: ParsePosition): Number;
     // private readObject(arg0: ObjectInputStream): void;
     setMaximumIntegerDigits(arg0: number): void;

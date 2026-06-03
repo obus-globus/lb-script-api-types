@@ -20,5 +20,6 @@ export class ObjectLiteralNode$ObjectLiteralDataMemberNode extends ObjectLiteral
     defineClassElement(frame: VirtualFrame, homeObject: JSObject, classElement: ClassElementDefinitionRecord): void;
     evaluateClassElementDefinition(frame: VirtualFrame, homeObject: JSObject, realm: JSRealm, decorators: Object[]): ClassElementDefinitionRecord;
     // private execute(obj: JSObject, key: Object, value: Object): void;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
 }

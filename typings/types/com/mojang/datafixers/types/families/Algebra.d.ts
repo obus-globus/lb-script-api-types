@@ -2,5 +2,6 @@ import type { RewriteResult } from '../../../../../com/mojang/datafixers/Rewrite
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Algebra extends Object{
     apply(arg0: number): RewriteResult<Object, Object>;
+    toString(): string;
     toString(arg0: number): string;
 }

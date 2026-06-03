@@ -7,5 +7,6 @@ export class UuidPatternConverter extends LogEventPatternConverter {
     static newInstance(paramoptions: (Object | null)[]): UuidPatternConverter;
     private constructor(isRandom: boolean)
     // private isRandom: boolean;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

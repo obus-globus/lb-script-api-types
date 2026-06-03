@@ -70,7 +70,10 @@ export class BlockPos$MutableBlockPos extends BlockPos {
     move(direction: Direction, steps: number): BlockPos$MutableBlockPos;
     move(pos: Vec3i): BlockPos$MutableBlockPos;
     multiply(scale: number): BlockPos;
+    multiply(xScale: number, yScale: number, zScale: number): Vec3i;
     offset(x: number, y: number, z: number): BlockPos;
+    offset(vec: Vec3i): BlockPos;
+    relative(direction: Direction): BlockPos;
     relative(direction: Direction, steps: number): BlockPos;
     relative(axis: Direction$Axis, steps: number): BlockPos;
     rotate(rotation: Rotation): BlockPos;

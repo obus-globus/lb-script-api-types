@@ -26,5 +26,6 @@ export abstract class TemporalPlainYearMonthPrototypeBuiltins$JSTemporalPlainYea
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(yearMonth: JSTemporalPlainYearMonthObject, optParam: Object, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

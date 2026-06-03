@@ -19,11 +19,15 @@ export class LongFloatMutablePair extends Object implements LongFloatPair, Seria
     key(arg0: number): LongFloatPair;
     key(arg0: number): LongFloatPair;
     keyLong(): number;
+    left(): number;
+    left(arg0: number): LongFloatPair;
     left(arg0: number): LongFloatMutablePair;
     left(): number;
     left(arg0: number): LongFloatPair;
     left(arg0: number): LongFloatPair;
     leftLong(): number;
+    right(): number;
+    right(arg0: number): LongFloatPair;
     right(arg0: number): LongFloatMutablePair;
     right(): number;
     right(arg0: number): LongFloatPair;

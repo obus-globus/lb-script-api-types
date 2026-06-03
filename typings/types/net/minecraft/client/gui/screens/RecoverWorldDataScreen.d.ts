@@ -33,6 +33,7 @@ export class RecoverWorldDataScreen extends Screen {
     // private collectIssue(access: LevelStorageSource$LevelStorageAccess, useFallback: boolean): Exception;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

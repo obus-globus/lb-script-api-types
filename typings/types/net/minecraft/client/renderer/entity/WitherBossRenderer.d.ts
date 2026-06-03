@@ -12,6 +12,7 @@ export class WitherBossRenderer extends MobRenderer<WitherBoss, WitherRenderStat
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): WitherRenderState;
+    createRenderState(entity: WitherBoss, partialTicks: number): WitherRenderState;
     extractRenderState(entity: WitherBoss, state: WitherRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: WitherBoss, blockPos: BlockPos): number;
     getTextureLocation(state: WitherRenderState): Identifier;

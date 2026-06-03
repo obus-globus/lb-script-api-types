@@ -2,6 +2,7 @@ import type { CompilationBuffer } from '../../../../../../../com/oracle/truffle/
 import type { LookAroundAssertion } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookAroundAssertion.d.ts'
 import type { RegexAST } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
 import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
+import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class LookBehindAssertion extends LookAroundAssertion {
     private constructor(copy: LookBehindAssertion, ast: RegexAST)
@@ -12,4 +13,5 @@ export class LookBehindAssertion extends LookAroundAssertion {
     equalsSemantic(obj: RegexASTNode): boolean;
     getPrefix(): string;
     toJson(): JsonValue;
+    toJson(typeName: string): JsonObject;
 }

@@ -42,7 +42,7 @@ import type { WhileNode } from '../../../../../com/oracle/js/parser/ir/WhileNode
 import type { WithNode } from '../../../../../com/oracle/js/parser/ir/WithNode.d.ts'
 import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/ir/visitor/TranslatorNodeVisitor.d.ts'
 import type { FrameSlotKind } from '../../../../../com/oracle/truffle/api/frame/FrameSlotKind.d.ts'
-import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { Node as Node_2 } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -55,7 +55,7 @@ import type { NodeFactory$BinaryOperation } from '../../../../../com/oracle/truf
 import type { ObjectLiteralNode$ObjectLiteralMemberNode } from '../../../../../com/oracle/truffle/js/nodes/access/ObjectLiteralNode$ObjectLiteralMemberNode.d.ts'
 import type { AbstractBlockNode } from '../../../../../com/oracle/truffle/js/nodes/control/AbstractBlockNode.d.ts'
 import type { ContinueTarget } from '../../../../../com/oracle/truffle/js/nodes/control/ContinueTarget.d.ts'
-import type { ReturnNode } from '../../../../../com/oracle/truffle/js/nodes/control/ReturnNode.d.ts'
+import type { ReturnNode as ReturnNode_2 } from '../../../../../com/oracle/truffle/js/nodes/control/ReturnNode.d.ts'
 import type { FunctionRootNode } from '../../../../../com/oracle/truffle/js/nodes/function/FunctionRootNode.d.ts'
 import type { GraalJSTranslator$EnvironmentCloseable } from '../../../../../com/oracle/truffle/js/parser/GraalJSTranslator$EnvironmentCloseable.d.ts'
 import type { Environment } from '../../../../../com/oracle/truffle/js/parser/env/Environment.d.ts'
@@ -116,7 +116,7 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     // private createPrivateFieldSet(accessNode: AccessNode, base: JavaScriptNode, rhs: JavaScriptNode): JavaScriptNode;
     // private createReadProperty(accessNode: AccessNode, base: JavaScriptNode): JavaScriptNode;
     // private createResolveImports(functionNode: FunctionNode, declarations: JavaScriptNode[]): void;
-    // private createReturnNode(expression: JavaScriptNode): ReturnNode;
+    // private createReturnNode(expression: JavaScriptNode): ReturnNode_2;
     // private createSourceSection(functionNode: FunctionNode): SourceSection;
     // private createSwitchCaseExpr(isSwitchTypeofString: boolean, switchCase: CaseNode, readSwitchVarNode: JavaScriptNode): JavaScriptNode;
     // private createTemporalDeadZoneInit(blockScope: Scope, blockWithInit: JavaScriptNode[]): void;
@@ -192,8 +192,8 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     enterWhileNode(whileNode: WhileNode): JavaScriptNode;
     // private enterWithEnvironment(withVarName: Object): GraalJSTranslator$EnvironmentCloseable;
     enterWithNode(withNode: WithNode): JavaScriptNode;
-    // private extractChildTo(child: Node, parent: Node, extracted: JavaScriptNode[]): void;
-    // private extractChildrenTo(parent: Node, extracted: JavaScriptNode[]): void;
+    // private extractChildTo(child: Node_2, parent: Node_2, extracted: JavaScriptNode[]): void;
+    // private extractChildrenTo(parent: Node_2, extracted: JavaScriptNode[]): void;
     // private filterOptionalChainTarget(target: JavaScriptNode, optional: boolean): JavaScriptNode;
     // private findScopeVar(name: TruffleString, skipWith: boolean): Environment$VarRef;
     // private findScopeVarCheckTDZ(name: TruffleString, initializationAssignment: boolean): Environment$VarRef;
@@ -215,7 +215,7 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     // private initializeThis(thisValueNode: JavaScriptNode): JavaScriptNode;
     // private insertNewTargetArg(args: JavaScriptNode[]): JavaScriptNode[];
     // private insertPrivateBrandCheck(base: JavaScriptNode, privateNameVar: Environment$VarRef): JavaScriptNode;
-    // private instrumentSuspendHelper(parent: Node, grandparent: Node): Node;
+    // private instrumentSuspendHelper(parent: Node_2, grandparent: Node_2): Node_2;
     // private instrumentSuspendNodes(body: JavaScriptNode): JavaScriptNode;
     // private makeUniqueTempVarNameForStatement(prefix: string, lineNumber: number): InternalSlotId;
     // private needsPerIterationScope(forNode: ForNode): boolean;
@@ -262,7 +262,7 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     // private wrapClearAndGetCompletionValue(statement: JavaScriptNode): JavaScriptNode;
     // private wrapClearCompletionValue(statement: JavaScriptNode): JavaScriptNode;
     // private wrapGetCompletionValue(target: JavaScriptNode): JavaScriptNode;
-    // private wrapResumableNode(resumableNode: Node): JavaScriptNode;
+    // private wrapResumableNode(resumableNode: Node_2): JavaScriptNode;
     // private wrapSaveAndRestoreCompletionValue(statement: JavaScriptNode): JavaScriptNode;
     // private wrapSetCompletionValue(statement: JavaScriptNode): JavaScriptNode;
     // private wrapTemporalDeadZoneInit(scope: Scope, blockBody: JavaScriptNode): JavaScriptNode;

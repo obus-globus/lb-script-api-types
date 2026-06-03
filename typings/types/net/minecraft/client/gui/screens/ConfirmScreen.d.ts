@@ -35,6 +35,7 @@ export class ConfirmScreen extends Screen implements IConfirmScreen {
     addButtons(buttonLayout: LinearLayout): void;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     repositionElements(): void;
     setDelay(delay: number): void;

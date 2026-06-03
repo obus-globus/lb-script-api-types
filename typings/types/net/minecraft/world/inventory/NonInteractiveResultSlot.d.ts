@@ -9,6 +9,7 @@ export class NonInteractiveResultSlot extends Slot {
     isHighlightable(): boolean;
     mayPickup(player: Player): boolean;
     mayPlace(itemStack: ItemStack): boolean;
+    onQuickCraft(picked: ItemStack, count: number): void;
     onQuickCraft(picked: ItemStack, original: ItemStack): void;
     onTake(player: Player, carried: ItemStack): void;
     remove(amount: number): ItemStack;

@@ -26,7 +26,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { MinecraftAccessor } from '../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/client/MinecraftAccessor.d.ts'
-import type { MinecraftAccessor } from '../../../net/fabricmc/fabric/mixin/networking/client/accessor/MinecraftAccessor.d.ts'
+import type { MinecraftAccessor as MinecraftAccessor_2 } from '../../../net/fabricmc/fabric/mixin/networking/client/accessor/MinecraftAccessor.d.ts'
 import type { CrashReport } from '../../../net/minecraft/CrashReport.d.ts'
 import type { CrashReportCategory } from '../../../net/minecraft/CrashReportCategory.d.ts'
 import type { SystemReport } from '../../../net/minecraft/SystemReport.d.ts'
@@ -125,7 +125,7 @@ import type { LevelStorageSource } from '../../../net/minecraft/world/level/stor
 import type { LevelStorageSource$LevelStorageAccess } from '../../../net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess.d.ts'
 import type { DirectoryValidator } from '../../../net/minecraft/world/level/validation/DirectoryValidator.d.ts'
 import type { HitResult } from '../../../net/minecraft/world/phys/HitResult.d.ts'
-export class Minecraft extends ReentrantBlockableEventLoop<() => void> implements WindowEventHandler, MinecraftAccessor, MinecraftAccessor {
+export class Minecraft extends ReentrantBlockableEventLoop<() => void> implements WindowEventHandler, MinecraftAccessor, MinecraftAccessor_2 {
     static ALT_FONT: Identifier;
     static BLOCK_TIME_NANOS: number;
     static DEFAULT_FONT: Identifier;

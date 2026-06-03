@@ -72,6 +72,7 @@ export class Byte2CharFunctions$PrimitiveFunction extends Object implements Byte
     put(arg0: number, arg1: string): string;
     put(arg0: number, arg1: string): string;
     put(arg0: number, arg1: string): string;
+    put(arg0: number, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: number): string;
 }

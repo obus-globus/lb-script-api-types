@@ -25,6 +25,7 @@ export class Long2ByteAVLTreeMap$Entry extends AbstractLong2ByteMap$BasicEntry i
     right(): Long2ByteAVLTreeMap$Entry;
     right(arg0: Long2ByteAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Long2ByteAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

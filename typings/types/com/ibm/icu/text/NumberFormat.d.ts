@@ -9,7 +9,7 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
-import type { BigDecimal } from '../../../../java/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../java/math/BigDecimal.d.ts'
 import type { BigInteger } from '../../../../java/math/BigInteger.d.ts'
 import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
@@ -78,10 +78,11 @@ export abstract class NumberFormat extends UFormat {
     format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: CurrencyAmount): string;
     format(arg0: CurrencyAmount, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: BigDecimal): string;
-    format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: BigDecimal_2): string;
+    format(arg0: BigDecimal_2, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: BigInteger): string;
     format(arg0: BigInteger, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
@@ -102,6 +103,7 @@ export abstract class NumberFormat extends UFormat {
     parse(arg0: string): Number;
     parse(arg0: string, arg1: ParsePosition): Number;
     parseCurrency(arg0: CharSequence, arg1: ParsePosition): CurrencyAmount;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     // private readObject(arg0: ObjectInputStream): void;
     setContext(arg0: DisplayContext): void;

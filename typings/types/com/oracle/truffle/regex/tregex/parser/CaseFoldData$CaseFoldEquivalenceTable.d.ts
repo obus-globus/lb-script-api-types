@@ -73,6 +73,7 @@ export class CaseFoldData$CaseFoldEquivalenceTable extends Object implements Sor
     rightOf(ia: number, bLo: number, bHi: number): boolean;
     size(i: number): number;
     size(): number;
+    size(i: number): number;
     sizeOfInverse(encoding: Encodings$Encoding): number;
     valueCount(): number;
     valueCountEquals(cmp: number): boolean;

@@ -32,6 +32,7 @@ export class LZ4FrameInputStream extends FilterInputStream {
     markSupported(): boolean;
     // private nextFrameInfo(): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readBlock(): void;
     // private readHeader(): void;

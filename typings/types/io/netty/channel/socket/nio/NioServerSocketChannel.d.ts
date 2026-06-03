@@ -7,13 +7,13 @@ import type { ServerSocketChannelConfig } from '../../../../../io/netty/channel/
 import type { SocketProtocolFamily } from '../../../../../io/netty/channel/socket/SocketProtocolFamily.d.ts'
 import type { InetSocketAddress } from '../../../../../java/net/InetSocketAddress.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
-import type { ServerSocketChannel } from '../../../../../java/nio/channels/ServerSocketChannel.d.ts'
+import type { ServerSocketChannel as ServerSocketChannel_2 } from '../../../../../java/nio/channels/ServerSocketChannel.d.ts'
 import type { SelectorProvider } from '../../../../../java/nio/channels/spi/SelectorProvider.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class NioServerSocketChannel extends AbstractNioMessageChannel implements ServerSocketChannel {
     constructor()
-    constructor(arg0: ServerSocketChannel)
+    constructor(arg0: ServerSocketChannel_2)
     constructor(arg0: SelectorProvider)
     constructor(arg0: SelectorProvider, arg1: InternetProtocolFamily)
     constructor(arg0: SelectorProvider, arg1: SocketProtocolFamily)
@@ -29,7 +29,7 @@ export class NioServerSocketChannel extends AbstractNioMessageChannel implements
     doWriteMessage(arg0: Object, arg1: ChannelOutboundBuffer): boolean;
     filterOutboundMessage(arg0: Object): Object;
     isActive(): boolean;
-    javaChannel(): ServerSocketChannel;
+    javaChannel(): ServerSocketChannel_2;
     localAddress(): InetSocketAddress;
     localAddress0(): SocketAddress;
     metadata(): ChannelMetadata;

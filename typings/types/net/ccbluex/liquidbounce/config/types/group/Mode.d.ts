@@ -1,5 +1,5 @@
+import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { Tagged } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
@@ -26,7 +26,10 @@ export abstract class Mode extends ValueGroup implements Tagged, EventListener, 
     disable(): void;
     enable(): void;
     protected modes<T extends Mode>(name: string, active: T, choices: T[]): ModeValueGroup<T>;
-    protected modes(name: string, activeIndex: number, choicesCallback: Function1<ModeValueGroup<T>, T[]>): ModeValueGroup<T>;
+    protected modes(name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes<T extends Mode>(eventListener: EventListener, name: string, active: T, modes: T[]): ModeValueGroup<T>;
+    protected modes(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => kotlin.Int, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     parent(): EventListener;
     parent(): EventListener | null;
     unregister(): void;

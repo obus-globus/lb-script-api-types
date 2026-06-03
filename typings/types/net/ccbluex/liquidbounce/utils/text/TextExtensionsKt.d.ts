@@ -1,6 +1,5 @@
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Color4b } from '../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { ColoredChar } from '../../../../../net/ccbluex/liquidbounce/utils/text/ColoredChar.d.ts'
 import type { ChatFormatting } from '../../../../../net/minecraft/ChatFormatting.d.ts'
@@ -33,7 +32,7 @@ export class TextExtensionsKt extends Object {
     static asText(paramarg0: (Object | null)[]): Component;
     static asText(paramarg0: string): MutableComponent;
     static asTextContent(string: string): ComponentContents;
-    static buildText(builderAction: Function1<Object, void>): Component;
+    static buildText(builderAction: (param0: Object | null) => void): Component;
     static capitalize(string: string): string;
     static colored(char: string, color: ChatFormatting): ColoredChar;
     static dropPort(string: string): string;

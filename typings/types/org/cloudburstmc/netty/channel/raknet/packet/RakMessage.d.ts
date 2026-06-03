@@ -1,4 +1,5 @@
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
+import type { ByteBufHolder } from '../../../../../../io/netty/buffer/ByteBufHolder.d.ts'
 import type { DefaultByteBufHolder } from '../../../../../../io/netty/buffer/DefaultByteBufHolder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RakPriority } from '../../../../../../org/cloudburstmc/netty/channel/raknet/RakPriority.d.ts'
@@ -20,7 +21,9 @@ export class RakMessage extends DefaultByteBufHolder {
     reliability(): RakReliability;
     replace(arg0: ByteBuf): RakMessage;
     retain(): RakMessage;
+    retain(arg0: number): ByteBufHolder;
     retainedDuplicate(): RakMessage;
     toString(): string;
     touch(): RakMessage;
+    touch(arg0: Object): ByteBufHolder;
 }

@@ -7,6 +7,7 @@ export class BandwidthDebugChart extends AbstractDebugChart {
     extractAdditionalLinesAndLabels(graphics: GuiGraphicsExtractor, left: number, width: number, bottom: number): void;
     // private extractLabeledLineAtValue(graphics: GuiGraphicsExtractor, left: number, width: number, bottom: number, bytesPerSecond: number): void;
     // private extractLineWithLabel(graphics: GuiGraphicsExtractor, x: number, width: number, y: number, label: string): void;
+    getSampleColor(sample: number, min: number, minColor: number, mid: number, midColor: number, max: number, maxColor: number): number;
     getSampleColor(bytesPerTick: number): number;
     getSampleHeight(bytesPerTick: number): number;
     toDisplayString(bytesPerTick: number): string;

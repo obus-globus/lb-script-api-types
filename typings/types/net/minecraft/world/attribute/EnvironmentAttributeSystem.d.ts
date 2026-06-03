@@ -19,7 +19,10 @@ export class EnvironmentAttributeSystem extends Object implements EnvironmentAtt
     getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: BlockPos): Value;
     getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3): Value;
     getValue<Value extends Object | number | string | boolean>(context: LootContext, attribute: EnvironmentAttribute<Value>): Value;
+    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: BlockPos): Value;
+    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3): Value;
     getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator): Value;
+    getValue<Value extends Object | number | string | boolean>(context: LootContext, attribute: EnvironmentAttribute<Value>): Value;
     // private getValueSampler(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeSystem$ValueSampler<Value>;
     invalidateTickCache(): void;
     isAffectedByPosition(attribute: EnvironmentAttribute<Object>): boolean;

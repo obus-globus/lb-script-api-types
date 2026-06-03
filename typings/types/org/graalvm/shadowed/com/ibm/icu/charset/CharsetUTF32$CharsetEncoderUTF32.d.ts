@@ -9,6 +9,7 @@ export class CharsetUTF32$CharsetEncoderUTF32 extends CharsetEncoderICU {
     constructor(null_: CharsetUTF32$CharsetEncoderUTF32, cs: CharsetICU)
     // private temp: number[];
     // private encodeChar(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, ch: string): CoderResult;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

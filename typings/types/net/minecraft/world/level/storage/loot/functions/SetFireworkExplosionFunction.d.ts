@@ -16,6 +16,7 @@ export class SetFireworkExplosionFunction extends LootItemConditionalFunction {
     // private shape: Optional<FireworkExplosion$Shape>;
     // private trail: Optional<boolean>;
     // private twinkle: Optional<boolean>;
+    apply(itemStack: ItemStack, context: LootContext): ItemStack;
     // private apply(original: FireworkExplosion): FireworkExplosion;
     codec(): MapCodec<SetFireworkExplosionFunction>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;

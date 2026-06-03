@@ -31,4 +31,5 @@ export class NewAttributeBands extends BandSet {
     // private resolveCallsForElement(arg0: number, arg1: NewAttributeBands$Callable, arg2: NewAttributeBands$LayoutElement): number;
     setBackwardsCalls(arg0: number[]): void;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

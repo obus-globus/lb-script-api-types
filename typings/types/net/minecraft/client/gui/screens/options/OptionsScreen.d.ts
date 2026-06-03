@@ -40,6 +40,7 @@ export class OptionsScreen extends Screen implements HasDifficultyReaction, HasG
     // private createWorldOptionsButtonOrDifficultyButton(level: Level): LayoutElement;
     getLastScreen(): Screen;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     onDifficultyChanged(): void;
     onGamemasterPermissionChanged(hasGamemasterPermission: boolean): void;

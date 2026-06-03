@@ -12,5 +12,6 @@ export class AbstractChar2BooleanMap$BasicEntry extends Object implements Char2B
     hashCode(): number;
     setValue(arg0: boolean): boolean;
     setValue(arg0: boolean): boolean;
+    setValue(arg0: boolean): boolean;
     toString(): string;
 }

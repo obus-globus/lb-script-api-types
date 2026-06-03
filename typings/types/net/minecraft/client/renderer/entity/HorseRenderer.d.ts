@@ -10,6 +10,7 @@ export class HorseRenderer extends AbstractHorseRenderer<Horse, HorseRenderState
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): HorseRenderState;
+    createRenderState(entity: Horse, partialTicks: number): HorseRenderState;
     extractRenderState(entity: Horse, state: HorseRenderState, partialTicks: number): void;
     getTextureLocation(state: HorseRenderState): Identifier;
 }

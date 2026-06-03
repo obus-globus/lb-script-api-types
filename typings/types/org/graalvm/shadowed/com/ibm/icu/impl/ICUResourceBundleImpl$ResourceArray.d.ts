@@ -67,6 +67,7 @@ export class ICUResourceBundleImpl$ResourceArray extends ICUResourceBundleImpl$R
     static getParentLocaleID(paramname: string, paramorigName: string, paramopenType: ICUResourceBundle$OpenType): string;
     constructor(container: ICUResourceBundleImpl, key: string, resource: number)
     getStringArray(): string[];
+    getStringArray(arg0: string): string[];
     getType(): number;
     handleGet(index: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
     handleGet(indexStr: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;

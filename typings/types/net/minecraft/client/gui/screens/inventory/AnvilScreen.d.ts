@@ -2,6 +2,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
 import type { ItemCombinerScreen } from '../../../../../../net/minecraft/client/gui/screens/inventory/ItemCombinerScreen.d.ts'
@@ -33,6 +34,7 @@ export class AnvilScreen extends ItemCombinerScreen<AnvilMenu> {
     // private onNameChanged(name: string): void;
     resize(width: number, height: number): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     slotChanged(container: AbstractContainerMenu, slotIndex: number, itemStack: ItemStack): void;
     subInit(): void;
 }

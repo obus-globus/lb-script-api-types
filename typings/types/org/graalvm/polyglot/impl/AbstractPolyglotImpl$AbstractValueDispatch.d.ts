@@ -111,6 +111,7 @@ export abstract class AbstractPolyglotImpl$AbstractValueDispatch extends Abstrac
     removeMember(context: Object, receiver: Object, key: string): boolean;
     setArrayElement(context: Object, receiver: Object, index: number, value: Object): void;
     throwException(context: Object, receiver: Object): RuntimeException;
+    toString(): string;
     toString(context: Object, receiver: Object): string;
     writeBufferByte(context: Object, receiver: Object, byteOffset: number, value: number): void;
     writeBufferDouble(context: Object, receiver: Object, order: ByteOrder, byteOffset: number, value: number): void;

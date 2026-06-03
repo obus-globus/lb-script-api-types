@@ -26,5 +26,6 @@ export class BetaCraftScreen extends VFPScreen {
     private constructor()
     // private createView(): void;
     init(): void;
+    init(width: number, height: number): void;
     subtitleCentered(): boolean;
 }

@@ -28,7 +28,9 @@ export abstract class CharsetEncoderICU extends CharsetEncoder {
     // private useSubChar1: boolean;
     cbFromUWriteSub(encoder: CharsetEncoderICU, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): CoderResult;
     cbFromUWriteUChars(encoder: CharsetEncoderICU, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): CoderResult;
+    encode(arg0: CharBuffer): ByteBuffer;
     encode(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
+    encode(arg0: CharBuffer, arg1: ByteBuffer, arg2: boolean): CoderResult;
     encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     fromUCountPending(): number;

@@ -8,6 +8,7 @@ export class ExportValueNodeGen extends ExportValueNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
+    execute(value: Object): Object;
     execute(arg0Value: Object, arg1Value: Object, arg2Value: boolean): Object;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object, arg2Value: boolean): Object;
 }

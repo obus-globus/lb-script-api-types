@@ -7,6 +7,7 @@ export class URLHandler$FileURLHandler extends URLHandler {
     static get(paramurl: URL): URLHandler;
     constructor(url: URL)
     // private file: File;
+    guide(visitor: URLHandler$URLVisitor, recurse: boolean): void;
     guide(v: URLHandler$URLVisitor, recurse: boolean, strip: boolean): void;
     // private process(v: URLHandler$URLVisitor, recurse: boolean, strip: boolean, path: string, files: File[]): void;
 }

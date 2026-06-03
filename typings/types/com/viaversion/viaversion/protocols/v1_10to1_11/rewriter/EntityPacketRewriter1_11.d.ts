@@ -15,4 +15,5 @@ export class EntityPacketRewriter1_11 extends EntityRewriter<ClientboundPackets1
     rewriteEntityType(arg0: number, arg1: EntityData[]): EntityTypes1_11$EntityType;
     // private tryFixFishingHookVelocity(arg0: PacketWrapper): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

@@ -31,5 +31,6 @@ export class LZMA2InputStream extends InputStream {
     // private decodeProps(): void;
     // private putArraysToCache(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(buf: number[], off: number, len: number): number;
 }

@@ -35,6 +35,7 @@ export class GenericWaitingScreen extends Screen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     shouldCloseOnEsc(): boolean;
     tick(): void;

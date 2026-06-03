@@ -15,6 +15,7 @@ export class DefaultOioSocketChannelConfig extends DefaultSocketChannelConfig im
     autoReadCleared(): void;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSoTimeout(): number;
     setAllocator(arg0: ByteBufAllocator): OioSocketChannelConfig;
     setAllowHalfClosure(arg0: boolean): OioSocketChannelConfig;

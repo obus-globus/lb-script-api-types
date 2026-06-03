@@ -1,7 +1,7 @@
 import type { IntConsumer } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntConsumer.d.ts'
 import type { IntIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntIterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { IntConsumer } from '../../../../../../java/util/function/IntConsumer.d.ts'
+import type { IntConsumer as IntConsumer_2 } from '../../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IntOpenHashSet$SetIterator extends Object implements IntIterator {
     private constructor(null_: IntOpenHashSet$SetIterator)
@@ -10,6 +10,8 @@ export class IntOpenHashSet$SetIterator extends Object implements IntIterator {
     // private mustReturnNull: boolean;
     // private pos: number;
     // private wrapped: (Object | null)[];
+    forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;

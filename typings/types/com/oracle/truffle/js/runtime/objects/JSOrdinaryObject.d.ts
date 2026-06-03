@@ -107,6 +107,7 @@ export abstract class JSOrdinaryObject extends JSNonProxyObject implements JSCop
     constructor(shape: Shape, proto: JSDynamicObject)
     copy(): JSObject;
     getClassName(): TruffleString;
+    getValue(key: Object): Object;
     getValue(index: number): Object;
     hasOnlyShapeProperties(): boolean;
     toDisplayStringImpl(allowSideEffects: boolean, format: ToDisplayStringFormat, depth: number): TruffleString;

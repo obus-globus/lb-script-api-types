@@ -1,10 +1,10 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../kotlin/jvm/functions/Function2.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { Job$Key } from '../../../kotlinx/coroutines/Job$Key.d.ts'
 import type { ActorCoroutine } from '../../../kotlinx/coroutines/channels/ActorCoroutine.d.ts'
+import type { ActorScope } from '../../../kotlinx/coroutines/channels/ActorScope.d.ts'
 import type { Channel } from '../../../kotlinx/coroutines/channels/Channel.d.ts'
 import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Channel$Factory.d.ts'
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
@@ -20,7 +20,7 @@ export class LazyActorCoroutine<E extends Object | number | string | boolean> ex
     static OPTIONAL_CHANNEL: number;
     static RENDEZVOUS: number;
     static UNLIMITED: number;
-    constructor(parentContext: CoroutineContext, channel: Channel<E>, block: Function2<Object, Object, Object>)
+    constructor(parentContext: CoroutineContext, channel: Channel<E>, block: (param0: ActorScope<E>) => void)
     // private continuation: Continuation<void>;
     readonly onSend: SelectClause2<E, SendChannel<E>>;
     close(cause: Throwable | null): boolean;

@@ -54,6 +54,7 @@ export class BookViewScreen extends Screen {
     // private getPageNumberMessage(): Component;
     handleClickEvent(event: ClickEvent): boolean;
     init(): void;
+    init(width: number, height: number): void;
     isInGameUi(): boolean;
     keyPressed(event: KeyEvent): boolean;
     menuControlsTop(): number;

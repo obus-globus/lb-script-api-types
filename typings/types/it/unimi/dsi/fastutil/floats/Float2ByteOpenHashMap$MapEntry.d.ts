@@ -32,6 +32,8 @@ export class Float2ByteOpenHashMap$MapEntry extends Object implements Float2Byte
     left(arg0: number): FloatBytePair;
     left(arg0: number): FloatBytePair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatBytePair;
     right(arg0: number): FloatBytePair;
     right(): number;
     right(arg0: number): FloatBytePair;

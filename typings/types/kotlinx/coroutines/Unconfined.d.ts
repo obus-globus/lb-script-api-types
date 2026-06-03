@@ -9,6 +9,7 @@ export class Unconfined extends CoroutineDispatcher {
     static Key: CoroutineDispatcher$Key;
     dispatch(context: CoroutineContext, block: () => void): void;
     isDispatchNeeded(context: CoroutineContext): boolean;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     toString(): string;
 }

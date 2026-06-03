@@ -13,6 +13,7 @@ export class CopyComponentsFunction$DirectSource<T extends DataComponentGetter> 
     equals(o: Object | null): boolean;
     get<R extends Object | number | string | boolean>(context: LootContext): R;
     get(value: T): DataComponentGetter;
+    get(context: LootContext): DataComponentGetter;
     hashCode(): number;
     toString(): string;
 }

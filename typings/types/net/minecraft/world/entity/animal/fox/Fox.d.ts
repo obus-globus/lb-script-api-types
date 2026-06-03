@@ -183,6 +183,7 @@ export class Fox extends Animal {
     getHeadRollAngle(a: number): number;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     // private getTrustedEntities(): Stream<EntityReference<LivingEntity>>;
     getVariant(): Fox$Variant;
     handleEntityEvent(id: number): void;

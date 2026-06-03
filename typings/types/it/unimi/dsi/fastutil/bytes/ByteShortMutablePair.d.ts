@@ -19,11 +19,15 @@ export class ByteShortMutablePair extends Object implements ByteShortPair, Seria
     key(arg0: number): ByteShortPair;
     key(arg0: number): ByteShortPair;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteShortPair;
     left(arg0: number): ByteShortMutablePair;
     left(): number;
     left(arg0: number): ByteShortPair;
     left(arg0: number): ByteShortPair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteShortPair;
     right(arg0: number): ByteShortMutablePair;
     right(): number;
     right(arg0: number): ByteShortPair;

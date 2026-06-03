@@ -36,10 +36,12 @@ export class LongBuffer extends Buffer implements Comparable<LongBuffer> {
     hashCode(): number;
     heapSegment(arg0: Object, arg1: number, arg2: number, arg3: boolean, arg4: MemorySessionImpl): AbstractMemorySegmentImpl;
     isDirect(): boolean;
+    limit(): number;
     limit(arg0: number): LongBuffer;
     mark(): LongBuffer;
     mismatch(arg0: LongBuffer): number;
     order(): ByteOrder;
+    position(): number;
     position(arg0: number): LongBuffer;
     put(arg0: LongBuffer): LongBuffer;
     put(arg0: number, arg1: LongBuffer, arg2: number, arg3: number): LongBuffer;

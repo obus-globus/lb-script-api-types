@@ -3,5 +3,6 @@ import type { AbstractLookup } from '../../../../../../org/apache/logging/log4j/
 export class EventLookup extends AbstractLookup {
     static CATEGORY: string;
     constructor()
+    lookup(key: string): string;
     lookup(event: LogEvent, key: string): string;
 }

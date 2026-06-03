@@ -27,4 +27,5 @@ export class PerServerVersionScreen extends VFPScreen {
     // private selectionConsumer: (param0: ProtocolVersion) => void;
     // private selectionSupplier: () => ProtocolVersion;
     init(): void;
+    init(width: number, height: number): void;
 }

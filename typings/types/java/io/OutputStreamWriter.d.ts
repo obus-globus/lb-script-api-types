@@ -11,13 +11,16 @@ export class OutputStreamWriter extends Writer {
     constructor(arg0: OutputStream, arg1: CharsetEncoder)
     constructor(arg0: OutputStream, arg1: string)
     // private se: StreamEncoder;
+    append(arg0: string): Writer;
     append(arg0: CharSequence): Writer;
     append(arg0: CharSequence, arg1: number, arg2: number): Writer;
     close(): void;
     flush(): void;
     flushBuffer(): void;
     getEncoding(): string;
+    write(arg0: string[]): void;
     write(arg0: string[], arg1: number, arg2: number): void;
     write(arg0: number): void;
+    write(arg0: string): void;
     write(arg0: string, arg1: number, arg2: number): void;
 }

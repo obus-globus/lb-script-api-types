@@ -6,6 +6,7 @@ export class Float2BooleanFunctions$UnmodifiableFunction extends AbstractFloat2B
     constructor(arg0: (param0: number) => kotlin.Boolean)
     // private function: (param0: number) => kotlin.Boolean;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;

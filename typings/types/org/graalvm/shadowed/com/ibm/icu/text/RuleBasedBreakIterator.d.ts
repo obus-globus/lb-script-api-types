@@ -5,6 +5,7 @@ import type { ByteBuffer } from '../../../../../../../java/nio/ByteBuffer.d.ts'
 import type { CharacterIterator } from '../../../../../../../java/text/CharacterIterator.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 import type { RBBIDataWrapper } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/RBBIDataWrapper.d.ts'
 import type { LanguageBreakEngine } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/breakiter/LanguageBreakEngine.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
@@ -85,5 +86,7 @@ export class RuleBasedBreakIterator extends BreakIterator {
     preceding(offset: number): number;
     previous(): number;
     setText(newText: CharacterIterator): void;
+    setText(newText: CharSequence): void;
+    setText(newText: string): void;
     toString(): string;
 }

@@ -6,4 +6,5 @@ export class CharsetRecog_2022$CharsetRecog_2022KR extends CharsetRecog_2022 {
     // private escapeSequences: number[][];
     getName(): string;
     match(arg0: CharsetDetector): CharsetMatch;
+    match(arg0: number[], arg1: number, arg2: number[][]): number;
 }

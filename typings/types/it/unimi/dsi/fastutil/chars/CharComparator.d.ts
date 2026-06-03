@@ -11,6 +11,8 @@ export interface CharComparator extends Comparator<string>, Object{
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: string, param1: string) => kotlin.Int): (param0: string, param1: string) => kotlin.Int;
     thenComparing(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    thenComparing(arg0: (param0: string) => U): (param0: string) => kotlin.Boolean;
+    thenComparing(arg0: (param0: string) => U, arg1: (param0: U) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;

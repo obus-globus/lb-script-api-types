@@ -1,3 +1,4 @@
+import type { Ops } from '../../../../../../../com/viaversion/viaversion/api/minecraft/codec/Ops.d.ts'
 import type { StructuredData } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredData.d.ts'
 import type { StructuredDataKey } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataKey.d.ts'
 import type { Type } from '../../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
@@ -10,5 +11,6 @@ export class LengthPrefixedStructuredDataType extends Type<StructuredData<Object
     // private wrapped: StructuredDataType;
     key(arg0: number): StructuredDataKey<Object>;
     read(arg0: ByteBuf): StructuredData<Object>;
+    write(arg0: Ops, arg1: StructuredData<Object>): void;
     write(arg0: ByteBuf, arg1: StructuredData<Object>): void;
 }

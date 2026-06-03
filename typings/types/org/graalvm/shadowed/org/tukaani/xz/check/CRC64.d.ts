@@ -4,5 +4,6 @@ export class CRC64 extends Check {
     constructor()
     // private crc: number;
     finish(): number[];
+    update(buf: number[]): void;
     update(buf: number[], off: number, len: number): void;
 }

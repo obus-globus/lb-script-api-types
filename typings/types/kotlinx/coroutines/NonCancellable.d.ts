@@ -1,5 +1,4 @@
 import type { CancellationException } from '../../java/util/concurrent/CancellationException.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { AbstractCoroutineContextElement } from '../../kotlin/coroutines/AbstractCoroutineContextElement.d.ts'
 import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
@@ -21,11 +20,12 @@ export class NonCancellable extends AbstractCoroutineContextElement implements J
     readonly parent: Job | null;
     attachChild(child: ChildJob): ChildHandle;
     cancel(): void;
+    cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
     getCancellationException(): CancellationException;
-    invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: Function1<Throwable, void>): DisposableHandle;
-    invokeOnCompletion(handler: Function1<Throwable, void>): DisposableHandle;
+    invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: (param0: Throwable | null) => void): DisposableHandle;
+    invokeOnCompletion(handler: (param0: Throwable | null) => void): DisposableHandle;
     join(): void;
     plus(other: Job): Job;
     start(): boolean;

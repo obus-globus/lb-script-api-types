@@ -1,4 +1,5 @@
 import type { BigInteger } from '../../../../../java/math/BigInteger.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CodecPolicy } from '../../../../../org/apache/commons/codec/CodecPolicy.d.ts'
 import type { Base64$Builder } from '../../../../../org/apache/commons/codec/binary/Base64$Builder.d.ts'
 import type { BaseNCodec } from '../../../../../org/apache/commons/codec/binary/BaseNCodec.d.ts'
@@ -37,10 +38,18 @@ export class Base64 extends BaseNCodec {
     // private isUrlSafe: boolean;
     // private lineSeparator: number[];
     // private calculateDecodeTable(arg0: number[]): number[];
+    decode(arg0: Object): Object;
+    decode(arg0: number[]): number[];
     decode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;
+    decode(arg0: string): number[];
+    encode(arg0: Object): Object;
+    encode(arg0: number[]): number[];
+    encode(arg0: number[], arg1: number, arg2: number): number[];
     encode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;
     getLineSeparator(): number[];
     isInAlphabet(arg0: number): boolean;
+    isInAlphabet(arg0: number[], arg1: boolean): boolean;
+    isInAlphabet(arg0: string): boolean;
     isUrlSafe(): boolean;
     // private validateCharacter(arg0: number, arg1: BaseNCodec$Context): void;
     // private validateTrailingCharacter(): void;

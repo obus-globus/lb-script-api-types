@@ -8,4 +8,5 @@ export class EndBiomeLayer extends IntBiomeLayer {
     static getMidSalt(paramarg0: number): number;
     constructor(arg0: MCVersion, arg1: FloatBiomeLayer)
     sample(arg0: number, arg1: number, arg2: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
 }

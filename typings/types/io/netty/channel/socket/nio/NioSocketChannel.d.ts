@@ -13,12 +13,12 @@ import type { SocketChannelConfig } from '../../../../../io/netty/channel/socket
 import type { SocketProtocolFamily } from '../../../../../io/netty/channel/socket/SocketProtocolFamily.d.ts'
 import type { InetSocketAddress } from '../../../../../java/net/InetSocketAddress.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
-import type { SocketChannel } from '../../../../../java/nio/channels/SocketChannel.d.ts'
+import type { SocketChannel as SocketChannel_2 } from '../../../../../java/nio/channels/SocketChannel.d.ts'
 import type { SelectorProvider } from '../../../../../java/nio/channels/spi/SelectorProvider.d.ts'
 export class NioSocketChannel extends AbstractNioByteChannel implements SocketChannel {
     constructor()
-    constructor(arg0: Channel, arg1: SocketChannel)
-    constructor(arg0: SocketChannel)
+    constructor(arg0: Channel, arg1: SocketChannel_2)
+    constructor(arg0: SocketChannel_2)
     constructor(arg0: SelectorProvider)
     constructor(arg0: SelectorProvider, arg1: InternetProtocolFamily)
     constructor(arg0: SelectorProvider, arg1: SocketProtocolFamily)
@@ -41,7 +41,7 @@ export class NioSocketChannel extends AbstractNioByteChannel implements SocketCh
     isInputShutdown0(): boolean;
     isOutputShutdown(): boolean;
     isShutdown(): boolean;
-    javaChannel(): SocketChannel;
+    javaChannel(): SocketChannel_2;
     localAddress(): InetSocketAddress;
     localAddress0(): SocketAddress;
     newUnsafe(): AbstractNioChannel$AbstractNioUnsafe;

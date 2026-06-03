@@ -9,7 +9,7 @@ import type { ParsePosition } from '../../../../../../../java/text/ParsePosition
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
-import type { BigDecimal } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
 import type { DecimalFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DecimalFormat.d.ts'
 import type { DecimalFormatSymbols } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DecimalFormatSymbols.d.ts'
@@ -23,6 +23,7 @@ import type { PluralRules$PluralType } from '../../../../../../../org/graalvm/sh
 import type { RBNFPostProcessor } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RBNFPostProcessor.d.ts'
 import type { RbnfLenientScanner } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RbnfLenientScanner.d.ts'
 import type { RbnfLenientScannerProvider } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RbnfLenientScannerProvider.d.ts'
+import type { CurrencyAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class RuleBasedNumberFormat extends NumberFormat {
     static ACCOUNTINGCURRENCYSTYLE: number;
@@ -103,15 +104,24 @@ export class RuleBasedNumberFormat extends NumberFormat {
     equals(that: Object | null): boolean;
     // private extractSpecial(description: StringBuilder, specialName: string): string;
     findRuleSet(name: string): NFRuleSet;
+    format(number: BigDecimal): string;
     format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: BigInteger): string;
     format(number: BigInteger, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(number: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: number): string;
     format(number: number, toAppendTo: StringBuffer, ignore: FieldPosition): StringBuffer;
     format(number: number, ruleSet: string): string;
     // private format(number: number, ruleSet: NFRuleSet): string;
+    format(number: number): string;
     format(number: number, toAppendTo: StringBuffer, ignore: FieldPosition): StringBuffer;
     format(number: number, ruleSet: string): string;
     // private format(number: number, ruleSet: NFRuleSet): string;
-    format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: BigDecimal_2): string;
+    format(number: BigDecimal_2, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(currAmt: CurrencyAmount): string;
+    format(currAmt: CurrencyAmount, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     getDecimalFormat(): DecimalFormat;
     getDecimalFormatSymbols(): DecimalFormatSymbols;
     getDefaultInfinityRule(): NFRule;
@@ -133,6 +143,7 @@ export class RuleBasedNumberFormat extends NumberFormat {
     // private initCapitalizationContextInfo(theLocale: ULocale): void;
     // private initLocalizations(localizations: string[][]): void;
     lenientParseEnabled(): boolean;
+    parse(text: string): Number;
     parse(text: string, parsePosition: ParsePosition): Number;
     // private postProcess(result: StringBuilder, ruleSet: NFRuleSet): void;
     // private readObject(in_: ObjectInputStream): void;

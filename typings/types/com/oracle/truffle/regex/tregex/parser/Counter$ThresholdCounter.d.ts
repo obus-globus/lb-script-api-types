@@ -3,5 +3,6 @@ export class Counter$ThresholdCounter extends Counter {
     constructor(max: number, errorMsg: string)
     // private errorMsg: string;
     // private max: number;
+    inc(): number;
     inc(i: number): number;
 }

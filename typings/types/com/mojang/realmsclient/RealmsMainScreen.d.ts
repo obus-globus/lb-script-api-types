@@ -78,6 +78,7 @@ export class RealmsMainScreen extends RealmsScreen {
     // private getOwnedNonExpiredRealmIds(): number[];
     // private getSelectedServer(): RealmsServer;
     init(): void;
+    init(width: number, height: number): void;
     // private initDataFetcher(dataSource: RealmsDataFetcher): DataFetcher$Subscription;
     // private isSelfOwnedNonExpiredServer(serverData: RealmsServer): boolean;
     // private leaveClicked(selectedServer: RealmsServer): void;

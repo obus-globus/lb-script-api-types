@@ -4,7 +4,9 @@ import type { Frame } from '../../java/awt/Frame.d.ts'
 import type { Graphics } from '../../java/awt/Graphics.d.ts'
 import type { GraphicsConfiguration } from '../../java/awt/GraphicsConfiguration.d.ts'
 import type { Insets } from '../../java/awt/Insets.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
+import type { PopupMenu } from '../../java/awt/PopupMenu.d.ts'
 import type { Window } from '../../java/awt/Window.d.ts'
 import type { FocusEvent } from '../../java/awt/event/FocusEvent.d.ts'
 import type { KeyEvent } from '../../java/awt/event/KeyEvent.d.ts'
@@ -25,7 +27,9 @@ import type { SingleSelectionModel } from '../../javax/swing/SingleSelectionMode
 import type { MenuKeyEvent } from '../../javax/swing/event/MenuKeyEvent.d.ts'
 import type { MenuKeyListener } from '../../javax/swing/event/MenuKeyListener.d.ts'
 import type { PopupMenuListener } from '../../javax/swing/event/PopupMenuListener.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { PopupMenuUI } from '../../javax/swing/plaf/PopupMenuUI.d.ts'
+import type { Object } from '../../java/lang/Object.d.ts'
 export class JPopupMenu extends JComponent implements Accessible, MenuElement {
     static ABORT: number;
     static ALLBITS: number;
@@ -62,9 +66,15 @@ export class JPopupMenu extends JComponent implements Accessible, MenuElement {
     // private paintBorder: boolean;
     // private popup: Popup;
     readonly selectionModel: SingleSelectionModel;
+    add(arg0: Component): Component;
+    add(arg0: Component, arg1: Object): void;
+    add(arg0: Component, arg1: Object, arg2: number): void;
+    add(arg0: Component, arg1: number): Component;
+    add(arg0: PopupMenu): void;
     add(arg0: Action): JMenuItem;
     add(arg0: JMenuItem): JMenuItem;
     add(arg0: string): JMenuItem;
+    add(arg0: string, arg1: Component): Component;
     addMenuKeyListener(arg0: MenuKeyListener): void;
     addPopupMenuListener(arg0: PopupMenuListener): void;
     addSeparator(): void;
@@ -80,6 +90,7 @@ export class JPopupMenu extends JComponent implements Accessible, MenuElement {
     firePopupMenuWillBecomeVisible(): void;
     getAccessibleContext(): AccessibleContext;
     getComponent(): Component;
+    getComponent(arg0: number): Component;
     getComponentAtIndex(arg0: number): Component;
     getComponentIndex(arg0: Component): number;
     // private getCurrentGraphicsConfiguration(arg0: Point): GraphicsConfiguration;
@@ -110,8 +121,11 @@ export class JPopupMenu extends JComponent implements Accessible, MenuElement {
     processKeyEvent(arg0: KeyEvent): void;
     processKeyEvent(arg0: KeyEvent, arg1: MenuElement[], arg2: MenuSelectionManager): void;
     // private processMenuKeyEvent(arg0: MenuKeyEvent): void;
+    processMouseEvent(arg0: MouseEvent): void;
     processMouseEvent(arg0: MouseEvent, arg1: MenuElement[], arg2: MenuSelectionManager): void;
     // private readObject(arg0: ObjectInputStream): void;
+    remove(arg0: Component): void;
+    remove(arg0: MenuComponent): void;
     remove(arg0: number): void;
     removeMenuKeyListener(arg0: MenuKeyListener): void;
     removePopupMenuListener(arg0: PopupMenuListener): void;
@@ -119,14 +133,18 @@ export class JPopupMenu extends JComponent implements Accessible, MenuElement {
     setInvoker(arg0: Component): void;
     setLabel(arg0: string): void;
     setLightWeightPopupEnabled(arg0: boolean): void;
+    setLocation(arg0: Point): void;
     setLocation(arg0: number, arg1: number): void;
     setPopupSize(arg0: Dimension): void;
     setPopupSize(arg0: number, arg1: number): void;
     setSelected(arg0: Component): void;
     setSelectionModel(arg0: SingleSelectionModel): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: PopupMenuUI): void;
     setVisible(arg0: boolean): void;
+    show(): void;
     show(arg0: Component, arg1: number, arg2: number): void;
+    show(arg0: boolean): void;
     // private showPopup(): void;
     updateUI(): void;
     // private writeObject(arg0: ObjectOutputStream): void;

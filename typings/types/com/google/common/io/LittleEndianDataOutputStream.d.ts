@@ -5,7 +5,9 @@ export class LittleEndianDataOutputStream extends FilterOutputStream implements 
     static nullOutputStream(): OutputStream;
     constructor(out: OutputStream)
     close(): void;
+    write(arg0: number[]): void;
     write(b: number[], off: number, len: number): void;
+    write(arg0: number): void;
     writeBoolean(v: boolean): void;
     writeByte(v: number): void;
     writeBytes(s: string): void;

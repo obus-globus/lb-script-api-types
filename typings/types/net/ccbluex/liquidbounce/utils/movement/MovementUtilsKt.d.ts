@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { DirectionalInput } from '../../../../../net/ccbluex/liquidbounce/utils/movement/DirectionalInput.d.ts'
 import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -14,6 +13,6 @@ export class MovementUtilsKt extends Object {
      */
     static getDegreesRelativeToView(positionRelativeToPlayer: Vec3, yaw: number): number;
     static getDirectionalInputForDegrees(directionalInput: DirectionalInput, dgs: number, deadAngle: number): DirectionalInput;
-    static setDeltaMovement(localPlayer: LocalPlayer, block: Function1<Object, Object>): void;
+    static setDeltaMovement(localPlayer: LocalPlayer, block: (param0: Object | null) => Object | null): void;
     static stopXZVelocity(localPlayer: LocalPlayer): void;
 }

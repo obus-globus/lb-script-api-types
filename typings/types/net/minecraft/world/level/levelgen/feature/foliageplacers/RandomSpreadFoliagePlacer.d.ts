@@ -15,6 +15,7 @@ export class RandomSpreadFoliagePlacer extends FoliagePlacer {
     constructor(radius: IntProvider, offset: IntProvider, foliageHeight: IntProvider, leafPlacementAttempts: number)
     // private foliageHeight: IntProvider;
     // private leafPlacementAttempts: number;
+    createFoliage(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, treeHeight: number, foliageAttachment: FoliagePlacer$FoliageAttachment, foliageHeight: number, leafRadius: number): void;
     createFoliage(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, treeHeight: number, foliageAttachment: FoliagePlacer$FoliageAttachment, foliageHeight: number, leafRadius: number, offset: number): void;
     foliageHeight(random: RandomSource, treeHeight: number, config: TreeConfiguration): number;
     shouldSkipLocation(random: RandomSource, dx: number, y: number, dz: number, currentRadius: number, doubleTrunk: boolean): boolean;

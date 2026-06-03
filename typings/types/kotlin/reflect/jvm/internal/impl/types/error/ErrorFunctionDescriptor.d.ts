@@ -12,6 +12,7 @@ import type { SourceElement } from '../../../../../../../kotlin/reflect/jvm/inte
 import type { ValueParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { FunctionDescriptorImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/FunctionDescriptorImpl.d.ts'
+import type { FunctionDescriptorImpl$CopyConfiguration } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/FunctionDescriptorImpl$CopyConfiguration.d.ts'
 import type { SimpleFunctionDescriptorImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/SimpleFunctionDescriptorImpl.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
@@ -26,5 +27,6 @@ export class ErrorFunctionDescriptor extends SimpleFunctionDescriptorImpl {
     getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
     isSuspend(): boolean;
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<SimpleFunctionDescriptor>;
+    newCopyBuilder(arg0: TypeSubstitutor): FunctionDescriptorImpl$CopyConfiguration;
     setOverriddenDescriptors(arg0: E[]): void;
 }

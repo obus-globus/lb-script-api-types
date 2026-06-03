@@ -30,7 +30,7 @@ import type { Reference2DoubleFunction } from '../../../../../it/unimi/dsi/fastu
 import type { Reference2IntFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2IntFunction.d.ts'
 import type { Short2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2DoubleFunction.d.ts'
 import type { Short2IntFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2IntFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntToDoubleFunction } from '../../../../../java/util/function/IntToDoubleFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Int2DoubleFunction extends Function<number, number>, IntToDoubleFunction, Object{

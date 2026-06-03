@@ -1,5 +1,5 @@
-import type { Math } from '../../../org/joml/Math.d.ts'
-export class Math extends Math {
+import type { Math as Math_2 } from '../../../org/joml/Math.d.ts'
+export class Math extends Math_2 {
     static ONE_OVER_PI: number;
     static ONE_OVER_PI_f: number;
     static PI: number;

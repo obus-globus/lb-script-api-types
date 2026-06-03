@@ -5,6 +5,7 @@ export class LazyField extends LazyFieldLite {
     // private defaultInstance: MessageLite;
     equals(arg0: Object | null): boolean;
     getValue(): MessageLite;
+    getValue(arg0: MessageLite): MessageLite;
     hashCode(): number;
     toString(): string;
 }

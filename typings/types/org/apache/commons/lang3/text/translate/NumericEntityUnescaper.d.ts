@@ -7,5 +7,7 @@ export class NumericEntityUnescaper extends CharSequenceTranslator {
     constructor(arg0: NumericEntityUnescaper$OPTION[])
     // private options: NumericEntityUnescaper$OPTION[];
     isSet(arg0: NumericEntityUnescaper$OPTION): boolean;
+    translate(arg0: CharSequence): string;
+    translate(arg0: CharSequence, arg1: Writer): void;
     translate(arg0: CharSequence, arg1: number, arg2: Writer): number;
 }

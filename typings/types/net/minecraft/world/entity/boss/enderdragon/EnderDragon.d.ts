@@ -4,6 +4,7 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
 import type { ClientboundAddEntityPacket } from '../../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { SoundSource } from '../../../../../../net/minecraft/sounds/SoundSource.d.ts'
@@ -163,6 +164,7 @@ export class EnderDragon extends Mob implements Enemy {
     // private wing2: EnderDragonPart;
     yRotA: number;
     addAdditionalSaveData(output: ValueOutput): void;
+    addEffect(newEffect: MobEffectInstance): boolean;
     addEffect(newEffect: MobEffectInstance, source: Entity): boolean;
     aiStep(): void;
     canAttack(target: LivingEntity): boolean;
@@ -187,6 +189,7 @@ export class EnderDragon extends Mob implements Enemy {
     getSubEntities(): EnderDragonPart[];
     // private hurt(level: ServerLevel, entities: Entity[]): void;
     hurt(level: ServerLevel, part: EnderDragonPart, source: DamageSource, damage: number): boolean;
+    hurt(source: DamageSource, damage: number): void;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     isFlapping(): boolean;
     isPickable(): boolean;
@@ -195,6 +198,7 @@ export class EnderDragon extends Mob implements Enemy {
     knockback(power: number, xd: number, zd: number): void;
     onCrystalDestroyed(level: ServerLevel, crystal: EndCrystal, pos: BlockPos, source: DamageSource): void;
     onFlap(): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     reallyHurt(level: ServerLevel, source: DamageSource, damage: number): void;

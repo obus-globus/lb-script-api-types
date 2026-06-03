@@ -35,6 +35,7 @@ export class ReversedLinesFileReader extends Object implements Closeable, IOIter
     readLine(): string;
     readLines(arg0: number): string[];
     spliterator(): IOSpliterator<T>;
+    toString(): string;
     toString(arg0: number): string;
     unwrap(): string[];
 }

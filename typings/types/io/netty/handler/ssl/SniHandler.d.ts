@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelHandlerContext } from '../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { ByteToMessageDecoder$Cumulator } from '../../../../io/netty/handler/codec/ByteToMessageDecoder$Cumulator.d.ts'
@@ -23,8 +24,10 @@ export class SniHandler extends AbstractSniHandler<SslContext> {
     // private mapping: AsyncMapping<string, SslContext>;
     // private selection: SniHandler$Selection;
     hostname(): string;
+    lookup(arg0: ChannelHandlerContext, arg1: ByteBuf): Future<SslContext>;
     lookup(arg0: ChannelHandlerContext, arg1: string): Future<SslContext>;
     newSslHandler(arg0: SslContext, arg1: ByteBufAllocator): SslHandler;
+    onLookupComplete(arg0: ChannelHandlerContext, arg1: Future<SslContext>): void;
     onLookupComplete(arg0: ChannelHandlerContext, arg1: string, arg2: Future<SslContext>): void;
     replaceHandler(arg0: ChannelHandlerContext, arg1: string, arg2: SslContext): void;
     sslContext(): SslContext;

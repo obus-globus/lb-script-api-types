@@ -1,4 +1,5 @@
 import type { TruffleFile } from '../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
+import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { Source$LiteralBuilder } from '../../../../../com/oracle/truffle/api/source/Source$LiteralBuilder.d.ts'
 import type { Source$SourceBuilder } from '../../../../../com/oracle/truffle/api/source/Source$SourceBuilder.d.ts'
@@ -8,6 +9,7 @@ import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
+import type { OptionValues } from '../../../../../org/graalvm/options/OptionValues.d.ts'
 import type { ByteSequence } from '../../../../../org/graalvm/polyglot/io/ByteSequence.d.ts'
 export class SourceImpl extends Source {
     static CONTENT_NONE: CharSequence;
@@ -29,10 +31,12 @@ export class SourceImpl extends Source {
     copy(): Source;
     getBytes(): ByteSequence;
     getCharacters(): CharSequence;
+    getCharacters(lineNumber: number): CharSequence;
     getLanguage(): string;
     getMimeType(): string;
     getName(): string;
     getOptions(): { [key: string]: string };
+    getOptions(language: TruffleLanguage<Object>): OptionValues;
     getOriginalURI(): URI;
     getPath(): string;
     getSourceId(): Object;

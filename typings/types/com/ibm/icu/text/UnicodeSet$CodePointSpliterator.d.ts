@@ -21,5 +21,6 @@ export class UnicodeSet$CodePointSpliterator extends Object implements Spliterat
     forEachRemaining(arg0: (param0: number) => void): void;
     tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
+    tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): Spliterator$OfInt;
 }

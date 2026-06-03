@@ -16,6 +16,7 @@ export class CharHeapSemiIndirectPriorityQueue extends Object implements CharInd
     // private size: number;
     allChanged(): void;
     changed(): void;
+    changed(arg0: number): void;
     clear(): void;
     comparator(): (param0: string, param1: string) => kotlin.Int;
     dequeue(): number;

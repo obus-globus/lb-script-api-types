@@ -5,6 +5,7 @@ import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/clien
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
 import type { CycleButton } from '../../../../../../net/minecraft/client/gui/components/CycleButton.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -60,6 +61,7 @@ export class StructureBlockEditScreen extends Screen {
     // private toggleBoundingBox: CycleButton<boolean>;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     isInGameUi(): boolean;
     isPauseScreen(): boolean;
     keyPressed(event: KeyEvent): boolean;
@@ -72,6 +74,7 @@ export class StructureBlockEditScreen extends Screen {
     resize(width: number, height: number): void;
     // private sendToServer(updateType: StructureBlockEntity$UpdateType): boolean;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     // private updateDirectionButtons(): void;
     // private updateMode(mode: StructureMode): void;
 }

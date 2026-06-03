@@ -12,4 +12,5 @@ export class ProgressEndEvent extends Event {
     getBody(): ProgressEndEvent$EventBody;
     hashCode(): number;
     setBody(body: ProgressEndEvent$EventBody): ProgressEndEvent;
+    setBody(body: Object): Event;
 }

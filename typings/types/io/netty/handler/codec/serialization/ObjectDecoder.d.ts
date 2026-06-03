@@ -11,4 +11,5 @@ export class ObjectDecoder extends LengthFieldBasedFrameDecoder {
     constructor(arg0: number, arg1: ClassResolver)
     // private classResolver: ClassResolver;
     decode(arg0: ChannelHandlerContext, arg1: ByteBuf): Object;
+    decode(arg0: ChannelHandlerContext, arg1: ByteBuf, arg2: Object[]): void;
 }

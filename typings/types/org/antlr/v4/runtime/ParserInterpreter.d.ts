@@ -31,6 +31,7 @@ export class ParserInterpreter extends Parser {
     readonly vocabulary: Vocabulary;
     addDecisionOverride(arg0: number, arg1: number, arg2: number): void;
     createInterpreterRuleContext(arg0: ParserRuleContext, arg1: number, arg2: number): InterpreterRuleContext;
+    enterRecursionRule(arg0: ParserRuleContext, arg1: number): void;
     enterRecursionRule(arg0: ParserRuleContext, arg1: number, arg2: number, arg3: number): void;
     getATN(): ATN;
     getATNState(): ATNState;

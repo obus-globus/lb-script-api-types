@@ -1,6 +1,5 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { BroadcastChannel } from '../../../kotlinx/coroutines/channels/BroadcastChannel.d.ts'
 import type { BroadcastChannelImpl } from '../../../kotlinx/coroutines/channels/BroadcastChannelImpl.d.ts'
@@ -20,7 +19,7 @@ export class ConflatedBroadcastChannel<E extends Object | number | string | bool
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
     close(cause: Throwable | null): boolean;
-    invokeOnClose(handler: Function1<Throwable, void>): void;
+    invokeOnClose(handler: (param0: Throwable | null) => void): void;
     offer(element: E): boolean;
     openSubscription(): ReceiveChannel<E>;
     send(element: E): void;

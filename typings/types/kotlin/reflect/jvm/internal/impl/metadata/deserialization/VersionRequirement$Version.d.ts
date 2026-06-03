@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { VersionRequirement$Version$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/VersionRequirement$Version$Companion.d.ts'
 export class VersionRequirement$Version extends Object {
     static Companion: VersionRequirement$Version$Companion;
@@ -12,7 +11,7 @@ export class VersionRequirement$Version extends Object {
     component1(): number;
     component2(): number;
     component3(): number;
-    encode(arg0: Function1<number, void>, arg1: Function1<number, void>): void;
+    encode(arg0: (param0: number) => void, arg1: (param0: number) => void): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     toString(): string;

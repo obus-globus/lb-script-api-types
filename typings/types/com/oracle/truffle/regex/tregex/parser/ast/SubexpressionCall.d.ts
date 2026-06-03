@@ -4,6 +4,7 @@ import type { QuantifiableTerm } from '../../../../../../../com/oracle/truffle/r
 import type { RegexAST } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
 import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
 import type { Sequence } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Sequence.d.ts'
+import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class SubexpressionCall extends QuantifiableTerm {
     private constructor(copy: SubexpressionCall)
@@ -11,10 +12,12 @@ export class SubexpressionCall extends QuantifiableTerm {
     readonly groupNr: number;
     copy(ast: RegexAST): SubexpressionCall;
     copyRecursive(ast: RegexAST, compilationBuffer: CompilationBuffer): SubexpressionCall;
+    equalsSemantic(obj: RegexASTNode): boolean;
     equalsSemantic(obj: RegexASTNode, ignoreQuantifier: boolean): boolean;
     getGroupNr(): number;
     getParent(): Sequence;
     isUnrollingCandidate(options: RegexOptions): boolean;
     toJson(): JsonValue;
+    toJson(typeName: string): JsonObject;
     toString(): string;
 }

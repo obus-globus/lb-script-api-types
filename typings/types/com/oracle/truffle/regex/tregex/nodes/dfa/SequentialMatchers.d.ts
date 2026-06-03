@@ -6,5 +6,6 @@ export abstract class SequentialMatchers extends Matchers {
     match(c: number): number;
     match(i: number, c: number): boolean;
     size(): number;
+    toString(): string;
     toString(i: number): string;
 }

@@ -6,12 +6,12 @@ import type { Protocol } from '../../../../com/viaversion/viaversion/api/protoco
 import type { ClientboundPacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { ServerboundPacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
-import type { ItemRewriter } from '../../../../com/viaversion/viaversion/api/rewriter/ItemRewriter.d.ts'
+import type { ItemRewriter as ItemRewriter_2 } from '../../../../com/viaversion/viaversion/api/rewriter/ItemRewriter.d.ts'
 import type { RewriterBase } from '../../../../com/viaversion/viaversion/api/rewriter/RewriterBase.d.ts'
 import type { Type } from '../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class ItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends Protocol<C, Object, Object, S>> extends RewriterBase<T> implements ItemRewriter<T> {
+export class ItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends Protocol<C, Object, Object, S>> extends RewriterBase<T> implements ItemRewriter_2<T> {
     constructor(arg0: T)
     constructor(arg0: T, arg1: Type<Item>, arg2: Type<Item[]>)
     constructor(arg0: T, arg1: Type<Item>, arg2: Type<Item[]>, arg3: Type<Item>, arg4: Type<Item[]>)

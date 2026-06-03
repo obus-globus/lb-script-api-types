@@ -17,6 +17,7 @@ export class DrownedRenderer extends AbstractZombieRenderer<Drowned, ZombieRende
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ZombieRenderState;
+    createRenderState(entity: Drowned, partialTicks: number): ZombieRenderState;
     getArmPose(mob: Drowned, arm: HumanoidArm): HumanoidModel$ArmPose;
     getTextureLocation(state: ZombieRenderState): Identifier;
     setupRotations(state: ZombieRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;

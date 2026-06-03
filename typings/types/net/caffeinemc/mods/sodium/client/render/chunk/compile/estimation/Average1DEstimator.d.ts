@@ -10,4 +10,5 @@ export abstract class Average1DEstimator<C extends Object | number | string | bo
     createNewDataBatch(): Average1DEstimator$ValueBatch<C>;
     createNewModel(): Average1DEstimator$Average<C>;
     predict(arg0: C): number;
+    predict(arg0: C, arg1: void): number;
 }

@@ -57,6 +57,7 @@ export class NFAState extends BasicState<NFAState, NFAStateTransition> implement
     removeSuccessor(state: NFAState): void;
     setHasPrefixStates(value: boolean): void;
     setMustAdvance(value: boolean): void;
+    setSuccessors(successors: NFAStateTransition[]): void;
     setSuccessors(transitions: NFAStateTransition[], createReverseTransitions: boolean): void;
     // private sourceSectionsToJson(): JsonArray;
     toJson(): JsonObject;

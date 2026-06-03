@@ -11,5 +11,6 @@ export class CanWriteFileFilter extends AbstractFileFilter implements Serializab
     static EMPTY_STRING_ARRAY: (Object | null)[];
     constructor()
     accept(arg0: File): boolean;
+    accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
 }

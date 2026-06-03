@@ -24,6 +24,7 @@ export class ScrollableLayout$Container extends AbstractContainerWidget {
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getNarratables(): E[];
     // private scrollbarReserve(): number;
+    setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;
     setScrollAmount(scrollAmount: number): void;
     setX(x: number): void;

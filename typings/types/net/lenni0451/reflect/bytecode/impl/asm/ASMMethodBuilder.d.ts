@@ -75,6 +75,7 @@ export class ASMMethodBuilder extends Object implements MethodBuilder {
     putstatic(arg0: string, arg1: string, arg2: string): MethodBuilder;
     return_(arg0: Class<Object>): MethodBuilder;
     return_(): MethodBuilder;
+    return_(arg0: Class<Object>): MethodBuilder;
     sipush(arg0: number): MethodBuilder;
     store(arg0: Class<Object>, arg1: number): MethodBuilder;
     tryCatch(arg0: BytecodeLabel, arg1: BytecodeLabel, arg2: BytecodeLabel, arg3: string): MethodBuilder;

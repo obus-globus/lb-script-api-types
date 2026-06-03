@@ -16,6 +16,7 @@ export class ZombifiedPiglinRenderer extends HumanoidMobRenderer<ZombifiedPiglin
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, body: ModelLayerLocation, babyBody: ModelLayerLocation, armorSet: ArmorModelSet<ModelLayerLocation>, babyArmorSet: ArmorModelSet<ModelLayerLocation>)
     createRenderState(): ZombifiedPiglinRenderState;
+    createRenderState(entity: ZombifiedPiglin, partialTicks: number): ZombifiedPiglinRenderState;
     extractRenderState(entity: ZombifiedPiglin, state: ZombifiedPiglinRenderState, partialTicks: number): void;
     getTextureLocation(state: ZombifiedPiglinRenderState): Identifier;
 }

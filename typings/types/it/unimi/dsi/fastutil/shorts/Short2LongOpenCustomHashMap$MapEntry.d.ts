@@ -32,6 +32,8 @@ export class Short2LongOpenCustomHashMap$MapEntry extends Object implements Shor
     left(arg0: number): ShortLongPair;
     left(arg0: number): ShortLongPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortLongPair;
     right(arg0: number): ShortLongPair;
     right(): number;
     right(arg0: number): ShortLongPair;

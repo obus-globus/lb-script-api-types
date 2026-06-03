@@ -19,11 +19,15 @@ export class ShortDoubleMutablePair extends Object implements ShortDoublePair, S
     key(arg0: number): ShortDoublePair;
     key(arg0: number): ShortDoublePair;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortDoublePair;
     left(arg0: number): ShortDoubleMutablePair;
     left(): number;
     left(arg0: number): ShortDoublePair;
     left(arg0: number): ShortDoublePair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortDoublePair;
     right(arg0: number): ShortDoubleMutablePair;
     right(): number;
     right(arg0: number): ShortDoublePair;

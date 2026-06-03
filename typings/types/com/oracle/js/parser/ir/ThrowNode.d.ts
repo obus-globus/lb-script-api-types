@@ -18,5 +18,7 @@ export class ThrowNode extends Statement {
     isSyntheticRethrow(): boolean;
     isTerminal(): boolean;
     setExpression(expression: Expression): ThrowNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

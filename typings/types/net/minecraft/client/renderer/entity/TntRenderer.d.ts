@@ -13,6 +13,7 @@ export class TntRenderer extends EntityRenderer<PrimedTnt, TntRenderState> {
     constructor(context: EntityRendererProvider$Context)
     // private blockModelResolver: BlockModelResolver;
     createRenderState(): TntRenderState;
+    createRenderState(entity: PrimedTnt, partialTicks: number): TntRenderState;
     extractRenderState(entity: PrimedTnt, state: TntRenderState, partialTicks: number): void;
     submit(state: TntRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

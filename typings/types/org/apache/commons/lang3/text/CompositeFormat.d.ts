@@ -7,9 +7,11 @@ export class CompositeFormat extends Format {
     constructor(arg0: Format, arg1: Format)
     readonly formatter: Format;
     readonly parser: Format;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     getFormatter(): Format;
     getParser(): Format;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     reformat(arg0: string): string;
 }

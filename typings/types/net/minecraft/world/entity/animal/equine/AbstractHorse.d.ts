@@ -253,6 +253,7 @@ export abstract class AbstractHorse extends Animal implements HasCustomInventory
     playGallopSound(soundType: SoundType): void;
     playJumpSound(): void;
     playStepSound(pos: BlockPos, blockState: BlockState): void;
+    positionRider(passenger: Entity): void;
     positionRider(passenger: Entity, moveFunction: (param0: Entity, param1: number, param2: number, param3: number) => void): void;
     randomizeAttributes(random: RandomSource): void;
     readAdditionalSaveData(input: ValueInput): void;

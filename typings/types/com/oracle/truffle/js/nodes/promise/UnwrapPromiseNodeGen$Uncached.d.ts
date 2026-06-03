@@ -9,5 +9,6 @@ export class UnwrapPromiseNodeGen$Uncached extends UnwrapPromiseNode implements 
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
+    execute(promise: JSPromiseObject): Object;
     execute(arg0Value: JSPromiseObject, arg1Value: number, arg2Value: Object): Object;
 }

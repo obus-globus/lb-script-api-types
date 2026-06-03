@@ -24,6 +24,7 @@ export class Tag$TagType<A extends Object | number | string | boolean> extends T
     buildTemplate(): TypeTemplate;
     element(): Type<A>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
     findTypeInChildren(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
     hashCode(): number;

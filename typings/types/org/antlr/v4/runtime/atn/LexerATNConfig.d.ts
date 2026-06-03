@@ -1,3 +1,4 @@
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ATNConfig } from '../../../../../org/antlr/v4/runtime/atn/ATNConfig.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { LexerActionExecutor } from '../../../../../org/antlr/v4/runtime/atn/LexerActionExecutor.d.ts'
@@ -10,6 +11,7 @@ export class LexerATNConfig extends ATNConfig {
     constructor(arg0: LexerATNConfig, arg1: ATNState, arg2: PredictionContext)
     readonly lexerActionExecutor: LexerActionExecutor;
     // private passedThroughNonGreedyDecision: boolean;
+    equals(arg0: Object | null): boolean;
     equals(arg0: ATNConfig): boolean;
     getLexerActionExecutor(): LexerActionExecutor;
     hasPassedThroughNonGreedyDecision(): boolean;

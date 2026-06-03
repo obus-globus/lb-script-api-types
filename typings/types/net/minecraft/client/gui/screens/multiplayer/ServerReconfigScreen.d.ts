@@ -25,6 +25,7 @@ export class ServerReconfigScreen extends Screen {
     // private disconnectButton: Button;
     // private layout: LinearLayout;
     init(): void;
+    init(width: number, height: number): void;
     repositionElements(): void;
     shouldCloseOnEsc(): boolean;
     tick(): void;

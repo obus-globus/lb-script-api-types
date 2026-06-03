@@ -14,5 +14,7 @@ export class BlockExpression extends Expression {
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBlock(): Block;
     // private setBlock(block: Block): BlockExpression;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

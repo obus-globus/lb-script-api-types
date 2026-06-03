@@ -11,5 +11,6 @@ export class DustColorTransitionParticle extends DustParticleBase<DustColorTrans
     // private toColor: Vector3f;
     extract(particleTypeRenderState: QuadParticleRenderState, camera: Camera, partialTickTime: number): void;
     // private lerpColors(partialTickTime: number): void;
+    randomizeColor(color: number, baseFactor: number): number;
     // private randomizeColor(color: Vector3f, baseFactor: number): Vector3f;
 }

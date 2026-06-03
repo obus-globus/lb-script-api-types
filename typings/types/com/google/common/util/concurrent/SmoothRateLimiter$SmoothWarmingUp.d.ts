@@ -14,6 +14,7 @@ export class SmoothRateLimiter$SmoothWarmingUp extends SmoothRateLimiter {
     // private warmupPeriodMicros: number;
     coolDownIntervalMicros(): number;
     doSetRate(permitsPerSecond: number, stableIntervalMicros: number): void;
+    doSetRate(permitsPerSecond: number, nowMicros: number): void;
     // private permitsToTime(permits: number): number;
     storedPermitsToWaitTime(storedPermits: number, permitsToTake: number): number;
 }

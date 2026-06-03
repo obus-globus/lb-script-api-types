@@ -1,6 +1,8 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { ExecutableElement } from '../../../../../javax/lang/model/element/ExecutableElement.d.ts'
 import type { PackageElement } from '../../../../../javax/lang/model/element/PackageElement.d.ts'
 import type { TypeElement } from '../../../../../javax/lang/model/element/TypeElement.d.ts'
+import type { VariableElement } from '../../../../../javax/lang/model/element/VariableElement.d.ts'
 import type { TypeMirror } from '../../../../../javax/lang/model/type/TypeMirror.d.ts'
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { ITargetSelectorByName } from '../../../../../org/spongepowered/asm/mixin/injection/selectors/ITargetSelectorByName.d.ts'
@@ -15,7 +17,13 @@ export class TypeHandleSimulated extends TypeHandle {
     constructor(arg0: string, arg1: TypeMirror, arg2: ITypeHandleProvider)
     // private simulatedType: TypeElement;
     findDescriptor(arg0: ITargetSelectorByName): string;
+    findField(arg0: VariableElement): FieldHandle;
+    findField(arg0: VariableElement, arg1: boolean): FieldHandle;
+    findField(arg0: string, arg1: string): FieldHandle;
     findField(arg0: string, arg1: string, arg2: boolean): FieldHandle;
+    findMethod(arg0: ExecutableElement): MethodHandle;
+    findMethod(arg0: ExecutableElement, arg1: boolean): MethodHandle;
+    findMethod(arg0: string, arg1: string): MethodHandle;
     findMethod(arg0: string, arg1: string, arg2: boolean): MethodHandle;
     getAnnotation(arg0: Class<Annotation>): AnnotationHandle;
     getMappingMethod(arg0: string, arg1: string): MappingMethod;

@@ -44,10 +44,12 @@ export class PoiSection extends Object implements PointOfInterestSetExtended {
     lithium$collectMatchingPoints(arg0: (param0: Object) => kotlin.Boolean, arg1: PoiManager$Occupancy, arg2: (param0: Object) => void): void;
     lithium$collectMatchingPointsL2Limited(arg0: BlockPos, arg1: number, arg2: (param0: Holder<PoiType>) => kotlin.Boolean, arg3: PoiManager$Occupancy, arg4: (param0: PoiRecord) => void, arg5: number): void;
     lithium$collectMatchingPointsL2Limited(arg0: BlockPos, arg1: number, arg2: (param0: Object) => kotlin.Boolean, arg3: (param0: Object) => kotlin.Boolean, arg4: (param0: Object) => void, arg5: number): void;
+    lithium$collectMatchingPointsL2Limited(arg0: BlockPos, arg1: number, arg2: (param0: Holder<PoiType>) => kotlin.Boolean, arg3: PoiManager$Occupancy, arg4: (param0: PoiRecord) => void, arg5: number): void;
     lithium$getAt(arg0: BlockPos): PoiRecord;
     lithium$getFirstMatchingPoint(arg0: BlockPos, arg1: number, arg2: (param0: Object) => kotlin.Boolean, arg3: (param0: Object) => kotlin.Boolean, arg4: PoiManager$Occupancy): PoiRecord;
     lithium$getL2ClosestMatchingPoint(arg0: BlockPos, arg1: (param0: Holder<PoiType>) => kotlin.Boolean, arg2: PoiManager$Occupancy): PoiRecord;
     lithium$getL2ClosestMatchingPoint(arg0: BlockPos, arg1: (param0: Object) => kotlin.Boolean, arg2: (param0: Object) => kotlin.Boolean): PoiRecord;
+    lithium$getL2ClosestMatchingPoint(arg0: BlockPos, arg1: (param0: Holder<PoiType>) => kotlin.Boolean, arg2: PoiManager$Occupancy): PoiRecord;
     lithium$iterate(arg0: (param0: Object) => kotlin.Boolean): Iterator<Object>;
     pack(): PoiSection$Packed;
     refresh(updater: (param0: (param0: BlockPos, param1: Holder<PoiType>) => void) => void): void;

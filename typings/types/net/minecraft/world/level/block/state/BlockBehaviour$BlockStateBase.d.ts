@@ -149,7 +149,12 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     is(set: Holder<T>[]): boolean;
     is(type: ResourceKey<T>): boolean;
     is(tag: TagKey<T>): boolean;
+    is(type: Holder<Block>): boolean;
+    is(set: Holder<T>[]): boolean;
+    is(type: ResourceKey<Block>): boolean;
+    is(tag: TagKey<Block>): boolean;
     is(tag: TagKey<Block>, predicate: (param0: BlockBehaviour$BlockStateBase) => kotlin.Boolean): boolean;
+    is(rawType: Block): boolean;
     isAir(): boolean;
     isCollisionShapeFullBlock(level: BlockGetter, pos: BlockPos): boolean;
     isFaceSturdy(level: BlockGetter, pos: BlockPos, direction: Direction): boolean;

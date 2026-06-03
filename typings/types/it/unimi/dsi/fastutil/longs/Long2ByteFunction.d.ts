@@ -30,7 +30,7 @@ import type { Reference2ByteFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Reference2LongFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2LongFunction.d.ts'
 import type { Short2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ByteFunction.d.ts'
 import type { Short2LongFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2LongFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { LongToIntFunction } from '../../../../../java/util/function/LongToIntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Long2ByteFunction extends Function<number, number>, LongToIntFunction, Object{

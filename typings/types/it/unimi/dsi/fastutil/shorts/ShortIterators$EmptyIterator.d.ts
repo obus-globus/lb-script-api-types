@@ -2,6 +2,7 @@ import type { ShortConsumer } from '../../../../../it/unimi/dsi/fastutil/shorts/
 import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortListIterator.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
 export class ShortIterators$EmptyIterator extends Object implements ShortListIterator, Serializable, Cloneable {
@@ -11,6 +12,7 @@ export class ShortIterators$EmptyIterator extends Object implements ShortListIte
     back(arg0: number): number;
     clone(): Object;
     protected clone(): Object;
+    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;

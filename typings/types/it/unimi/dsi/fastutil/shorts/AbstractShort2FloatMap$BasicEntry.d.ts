@@ -12,5 +12,6 @@ export class AbstractShort2FloatMap$BasicEntry extends Object implements Short2F
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

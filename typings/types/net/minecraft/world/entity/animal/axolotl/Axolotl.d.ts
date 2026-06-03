@@ -201,6 +201,7 @@ export class Axolotl extends Animal implements Bucketable {
     getSwimSplashSound(): SoundEvent;
     getTarget(): LivingEntity;
     getVariant(): Axolotl$Variant;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     handleAirSupply(level: ServerLevel, preTickAirSupply: number): void;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;

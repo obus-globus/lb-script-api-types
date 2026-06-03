@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { AbstractAnnotationTypeQualifierResolver } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/AbstractAnnotationTypeQualifierResolver.d.ts'
 import type { AnnotationQualifierApplicabilityType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/AnnotationQualifierApplicabilityType.d.ts'
 import type { JavaDefaultQualifiers } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/JavaDefaultQualifiers.d.ts'
@@ -15,13 +14,13 @@ import type { TypeParameterMarker } from '../../../../../../../../kotlin/reflect
 import type { TypeSystemContext } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemContext.d.ts'
 export abstract class AbstractSignatureParts<TAnnotation extends Object | number | string | boolean> extends Object {
     constructor()
-    computeIndexedQualifiers(arg0: KotlinTypeMarker, arg1: KotlinTypeMarker[], arg2: TypeEnhancementInfo, arg3: boolean): Function1<number, JavaTypeQualifiers>;
+    computeIndexedQualifiers(arg0: KotlinTypeMarker, arg1: KotlinTypeMarker[], arg2: TypeEnhancementInfo, arg3: boolean): (param0: number) => JavaTypeQualifiers;
     // private extractAndMergeDefaultQualifiers(arg0: KotlinTypeMarker, arg1: JavaTypeQualifiersByElementType): JavaTypeQualifiersByElementType;
     // private extractDefaultQualifier(arg0: AbstractSignatureParts$TypeAndDefaultQualifiers): JavaDefaultQualifiers;
     // private extractQualifiers(arg0: KotlinTypeMarker): JavaTypeQualifiers;
     // private extractQualifiersFromAnnotations(arg0: AbstractSignatureParts$TypeAndDefaultQualifiers, arg1: JavaDefaultQualifiers): JavaTypeQualifiers;
-    // private flattenTree<T extends Object | number | string | boolean>(arg0: T, arg1: Function1<T, T[]>): T[];
-    // private flattenTree<T extends Object | number | string | boolean>(arg0: T, arg1: T[], arg2: Function1<T, T[]>): void;
+    // private flattenTree<T extends Object | number | string | boolean>(arg0: T, arg1: (param0: T) => T[]): T[];
+    // private flattenTree<T extends Object | number | string | boolean>(arg0: T, arg1: T[], arg2: (param0: T) => T[]): void;
     forceWarning(arg0: TAnnotation, arg1: KotlinTypeMarker): boolean;
     getAnnotationTypeQualifierResolver(): AbstractAnnotationTypeQualifierResolver<TAnnotation>;
     getAnnotations(arg0: KotlinTypeMarker): TAnnotation[];

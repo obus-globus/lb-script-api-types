@@ -22,6 +22,7 @@ export abstract class CreateObjectNode$CreateObjectWithPrototypeNode extends Cre
     doNotJSObjectOrNull(prototype: Object): JSObject;
     doOrdinaryInstancePrototype(prototype: JSDynamicObject, setProtoNode: DynamicObjectLibrary): JSObject;
     doPromiseInstancePrototype(prototype: JSDynamicObject, setProtoNode: DynamicObjectLibrary): JSObject;
+    execute(realm: JSRealm): JSObject;
     execute(prototype: Object): JSObject;
     executeWithPrototype(realm: JSRealm, proto: Object): JSObject;
     getProtoChildShape(prototype: JSDynamicObject): Shape;

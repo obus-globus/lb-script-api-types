@@ -19,11 +19,15 @@ export class CharBooleanMutablePair extends Object implements CharBooleanPair, S
     key(arg0: string): CharBooleanPair;
     key(arg0: string): CharBooleanPair;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharBooleanPair;
     left(arg0: string): CharBooleanMutablePair;
     left(): string;
     left(arg0: string): CharBooleanPair;
     left(arg0: string): CharBooleanPair;
     leftChar(): string;
+    right(): boolean;
+    right(arg0: boolean): CharBooleanPair;
     right(arg0: boolean): CharBooleanMutablePair;
     right(): boolean;
     right(arg0: boolean): CharBooleanPair;

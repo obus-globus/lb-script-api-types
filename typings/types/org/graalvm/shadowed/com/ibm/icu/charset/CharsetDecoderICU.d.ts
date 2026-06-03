@@ -31,7 +31,9 @@ export abstract class CharsetDecoderICU extends CharsetDecoder {
     // private toUnicodeStatus: number;
     // private unmappableCharacterCalled: boolean;
     // private copy(src: number[], srcOffset: number, dst: string[], dstOffset: number, length: number): void;
+    decode(arg0: ByteBuffer): CharBuffer;
     decode(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
+    decode(arg0: ByteBuffer, arg1: CharBuffer, arg2: boolean): CoderResult;
     decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(in_: ByteBuffer, out: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implFlush(out: CharBuffer): CoderResult;

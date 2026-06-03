@@ -11,5 +11,7 @@ export class ExpressionList extends Expression {
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExpressions(): Expression[];
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

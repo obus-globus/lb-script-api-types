@@ -41,6 +41,7 @@ export class RealmsSlotOptionsScreen extends RealmsScreen {
     // private worldType: RealmsServer$WorldType;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
     // private saveSettings(): void;

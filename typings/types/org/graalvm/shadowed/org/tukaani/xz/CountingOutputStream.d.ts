@@ -8,6 +8,7 @@ export class CountingOutputStream extends FinishableOutputStream {
     close(): void;
     flush(): void;
     getSize(): number;
+    write(arg0: number[]): void;
     write(b: number[], off: number, len: number): void;
     write(b: number): void;
 }

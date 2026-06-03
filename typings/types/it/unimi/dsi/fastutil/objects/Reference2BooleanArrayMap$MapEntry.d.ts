@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Reference2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2BooleanMap$Entry.d.ts'
 import type { ReferenceBooleanPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceBooleanPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -19,6 +20,9 @@ export class Reference2BooleanArrayMap$MapEntry extends Object implements Refere
     getBooleanValue(): boolean;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, boolean>;
+    right(): boolean;
+    right(arg0: boolean): ReferenceBooleanPair<K>;
     right(arg0: boolean): ReferenceBooleanPair<K>;
     right(): boolean;
     right(arg0: boolean): ReferenceBooleanPair<K>;

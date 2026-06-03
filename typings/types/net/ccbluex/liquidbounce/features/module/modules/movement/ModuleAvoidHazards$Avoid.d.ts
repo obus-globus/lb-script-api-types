@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
-import type { Function3 } from '../../../../../../../kotlin/jvm/functions/Function3.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -25,7 +24,7 @@ export class ModuleAvoidHazards$Avoid extends Enum<ModuleAvoidHazards$Avoid> imp
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAvoidHazards$Avoid;
     static values(): (Object | null)[];
-    private constructor(tag: string, fullCube: boolean, test: Function3<Block, FluidState, BlockPos, boolean>)
+    private constructor(tag: string, fullCube: boolean, test: (param0: Block, param1: FluidState, param2: BlockPos) => boolean)
     readonly fullCube: boolean;
     readonly tag: string;
     readonly test: (param0: Block, param1: FluidState, param2: BlockPos) => boolean;

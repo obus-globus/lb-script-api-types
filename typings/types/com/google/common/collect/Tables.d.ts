@@ -4,8 +4,8 @@ import type { RowSortedTable } from '../../../../com/google/common/collect/RowSo
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
-import type { Function } from '../../../../java/util/function/Function.d.ts'
-import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
+import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
+import type { Supplier as Supplier_2 } from '../../../../java/util/function/Supplier.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Tables extends Object {

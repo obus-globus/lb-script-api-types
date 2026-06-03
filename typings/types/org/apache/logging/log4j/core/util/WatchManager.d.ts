@@ -1,5 +1,6 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
+import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { ScheduledFuture } from '../../../../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -32,6 +33,8 @@ export class WatchManager extends AbstractLifeCycle {
     reset(source: Source): void;
     setIntervalSeconds(intervalSeconds: number): void;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
     toString(): string;
     unwatch(source: Source): void;

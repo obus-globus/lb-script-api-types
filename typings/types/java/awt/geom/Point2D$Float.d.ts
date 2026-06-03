@@ -9,6 +9,7 @@ export class Point2D$Float extends Point2D implements Serializable {
     y: number;
     getX(): number;
     getY(): number;
+    setLocation(arg0: Point2D): void;
     setLocation(arg0: number, arg1: number): void;
     setLocation(arg0: number, arg1: number): void;
     toString(): string;

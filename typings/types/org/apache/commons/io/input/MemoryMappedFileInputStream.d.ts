@@ -17,6 +17,7 @@ export class MemoryMappedFileInputStream extends AbstractInputStream {
     getBufferSize(): number;
     // private nextBuffer(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     skip(arg0: number): number;
 }

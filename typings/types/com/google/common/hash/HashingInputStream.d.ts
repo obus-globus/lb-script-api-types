@@ -11,6 +11,7 @@ export class HashingInputStream extends FilterInputStream {
     mark(readlimit: number): void;
     markSupported(): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(bytes: number[], off: number, len: number): number;
     reset(): void;
 }

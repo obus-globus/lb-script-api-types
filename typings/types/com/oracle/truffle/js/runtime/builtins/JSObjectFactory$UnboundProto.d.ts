@@ -12,5 +12,6 @@ export class JSObjectFactory$UnboundProto extends JSObjectFactory {
     constructor(context: JSContext, factory: Shape)
     // private factory: Shape;
     getPrototype(realm: JSRealm): JSDynamicObject;
+    getShape(realm: JSRealm): Shape;
     getShape(realm: JSRealm, proto: JSDynamicObject): Shape;
 }

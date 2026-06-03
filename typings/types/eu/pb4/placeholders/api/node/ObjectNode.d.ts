@@ -24,7 +24,10 @@ export class ObjectNode extends Record implements TextNode {
     fallback(): Optional<TextNode>;
     hashCode(): number;
     isDynamic(): boolean;
+    toComponent(): Component;
+    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
+    toComponent(arg0: PlaceholderContext): Component;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: PlaceholderContext): Component;

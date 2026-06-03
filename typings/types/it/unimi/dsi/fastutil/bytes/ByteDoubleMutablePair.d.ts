@@ -19,11 +19,15 @@ export class ByteDoubleMutablePair extends Object implements ByteDoublePair, Ser
     key(arg0: number): ByteDoublePair;
     key(arg0: number): ByteDoublePair;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteDoublePair;
     left(arg0: number): ByteDoubleMutablePair;
     left(): number;
     left(arg0: number): ByteDoublePair;
     left(arg0: number): ByteDoublePair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteDoublePair;
     right(arg0: number): ByteDoubleMutablePair;
     right(): number;
     right(arg0: number): ByteDoublePair;

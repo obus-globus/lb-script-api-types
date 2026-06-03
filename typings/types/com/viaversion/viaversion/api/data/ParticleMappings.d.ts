@@ -14,4 +14,5 @@ export class ParticleMappings extends FullMappingsBase {
     isBlockParticle(arg0: number): boolean;
     isItemParticle(arg0: number): boolean;
     mappedIdentifier(arg0: number): string;
+    mappedIdentifier(arg0: string): string;
 }

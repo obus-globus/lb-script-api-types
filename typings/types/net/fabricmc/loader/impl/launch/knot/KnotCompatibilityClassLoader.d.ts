@@ -25,12 +25,14 @@ export class KnotCompatibilityClassLoader extends URLClassLoader implements Knot
     defineClassFwd(arg0: string, arg1: number[], arg2: number, arg3: number, arg4: CodeSource): Class<Object>;
     definePackageFwd(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: URL): Package;
     findClass(arg0: string): Class<Object>;
+    findClass(arg0: string, arg1: string): Class<Object>;
     findLibrary(arg0: string): string;
     findLoadedClassFwd(arg0: string): Class<Object>;
     findResourceFwd(arg0: string): URL;
     getClassLoadingLockFwd(arg0: string): Object;
     getDelegate(): KnotClassDelegate<Object>;
     getPackageFwd(arg0: string): Package;
+    loadClass(arg0: string): Class<Object>;
     loadClass(arg0: string, arg1: boolean): Class<Object>;
     resolveClassFwd(arg0: Class<Object>): void;
 }

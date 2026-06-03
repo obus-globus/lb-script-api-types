@@ -23,6 +23,7 @@ export class Char2ShortRBTreeMap$Entry extends AbstractChar2ShortMap$BasicEntry 
     right(): Char2ShortRBTreeMap$Entry;
     right(arg0: Char2ShortRBTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Char2ShortRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

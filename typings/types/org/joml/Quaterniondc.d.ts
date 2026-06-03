@@ -25,6 +25,7 @@ export interface Quaterniondc extends Object{
     div(arg0: number, arg1: Quaterniond): Quaterniond;
     div(arg0: Quaterniondc, arg1: Quaterniond): Quaterniond;
     dot(arg0: Quaterniondc): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     equals(arg0: Quaterniondc, arg1: number): boolean;
     get(arg0: AxisAngle4d): AxisAngle4d;

@@ -9,6 +9,7 @@ export class HashingOutputStream extends FilterOutputStream {
     // private hasher: Hasher;
     close(): void;
     hash(): HashCode;
+    write(arg0: number[]): void;
     write(bytes: number[], off: number, len: number): void;
     write(b: number): void;
 }

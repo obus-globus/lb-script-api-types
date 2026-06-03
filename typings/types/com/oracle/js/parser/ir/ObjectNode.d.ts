@@ -14,5 +14,7 @@ export class ObjectNode extends Expression {
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getElements(): PropertyNode[];
     // private setElements(elements: PropertyNode[]): ObjectNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

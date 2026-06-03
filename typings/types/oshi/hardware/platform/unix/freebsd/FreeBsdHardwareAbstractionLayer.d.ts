@@ -19,6 +19,7 @@ export class FreeBsdHardwareAbstractionLayer extends AbstractHardwareAbstraction
     getDiskStores(): HWDiskStore[];
     getDisplays(): Display[];
     getGraphicsCards(): GraphicsCard[];
+    getNetworkIFs(): NetworkIF[];
     getNetworkIFs(arg0: boolean): NetworkIF[];
     getPowerSources(): PowerSource[];
     getSoundCards(): SoundCard[];

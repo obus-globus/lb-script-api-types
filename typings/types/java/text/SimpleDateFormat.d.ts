@@ -73,9 +73,13 @@ export class SimpleDateFormat extends DateFormat {
     clone(): Object;
     // private compile(arg0: string): string[];
     equals(arg0: Object | null): boolean;
+    format(arg0: Date): string;
     format(arg0: Date, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Date, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     // private format(arg0: Date, arg1: Format$StringBuf, arg2: Format$FieldDelegate): Format$StringBuf;
+    format(arg0: Object): string;
+    format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
+    format(arg0: Object, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     formatToCharacterIterator(arg0: Object): AttributedCharacterIterator;
     get2DigitYearStart(): Date;
     getDateFormatSymbols(): DateFormatSymbols;
@@ -90,6 +94,7 @@ export class SimpleDateFormat extends DateFormat {
     // private matchString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: CalendarBuilder): number;
     // private matchString(arg0: string, arg1: number, arg2: number, arg3: { [key: string]: number }, arg4: CalendarBuilder): number;
     // private matchZoneString(arg0: string, arg1: number, arg2: string[]): number;
+    parse(arg0: string): Date;
     parse(arg0: string, arg1: ParsePosition): Date;
     // private parseAmbiguousDatesAsAfter(arg0: Date): void;
     // private readObject(arg0: ObjectInputStream): void;

@@ -1,6 +1,7 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { Display } from '../../../../net/minecraft/world/entity/Display.d.ts'
 import type { Display$ItemDisplay$ItemRenderState } from '../../../../net/minecraft/world/entity/Display$ItemDisplay$ItemRenderState.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -76,6 +77,7 @@ export class Display$ItemDisplay extends Display {
     getItemTransform(): ItemDisplayContext;
     getSlot(slot: number): SlotAccess;
     itemRenderState(): Display$ItemDisplay$ItemRenderState;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     setItemStack(item: ItemStack): void;

@@ -1,5 +1,4 @@
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { Result } from '../../kotlin/Result.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
@@ -25,5 +24,6 @@ export abstract class AbstractCoroutine<T extends Object | number | string | boo
     protected onCompletionInternal(state: Object | null): void;
     plus(other: Job): Job;
     resumeWith(result: Result<T>): void;
-    start<R extends Object | number | string | boolean>(start: CoroutineStart, receiver: R, block: Function2<Object, Object, Object>): void;
+    start(): boolean;
+    start<R extends Object | number | string | boolean>(start: CoroutineStart, receiver: R, block: (param0: R) => T): void;
 }

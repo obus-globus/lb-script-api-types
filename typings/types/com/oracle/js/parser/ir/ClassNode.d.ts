@@ -28,6 +28,8 @@ export class ClassNode extends LexicalContextExpression implements LexicalContex
     readonly staticElementCount: number;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept(visitor: NodeVisitor<LexicalContext>): Node;
+    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getClassElements(): ClassElement[];
     getClassHeadScope(): Scope;
     getClassHeritage(): Expression;
@@ -49,5 +51,7 @@ export class ClassNode extends LexicalContextExpression implements LexicalContex
     setConstructor(constructor: ClassElement): ClassNode;
     setDecorators(decorators: Expression[]): ClassNode;
     // private setIdent(ident: IdentNode): ClassNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

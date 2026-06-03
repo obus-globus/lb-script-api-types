@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FogParameters } from '../../../../net/caffeinemc/mods/sodium/client/util/FogParameters.d.ts'
 import type { GameRendererStorage } from '../../../../net/caffeinemc/mods/sodium/client/util/GameRendererStorage.d.ts'
 import type { GameRendererAccessor } from '../../../../net/caffeinemc/mods/sodium/mixin/core/render/frustum/GameRendererAccessor.d.ts'
-import type { GameRendererAccessor } from '../../../../net/irisshaders/iris/mixin/GameRendererAccessor.d.ts'
+import type { GameRendererAccessor as GameRendererAccessor_2 } from '../../../../net/irisshaders/iris/mixin/GameRendererAccessor.d.ts'
 import type { Camera } from '../../../../net/minecraft/client/Camera.d.ts'
 import type { DeltaTracker } from '../../../../net/minecraft/client/DeltaTracker.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
@@ -41,7 +41,7 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { TrackedWaypoint$Projector } from '../../../../net/minecraft/world/waypoints/TrackedWaypoint$Projector.d.ts'
 import type { Matrix4f } from '../../../../org/joml/Matrix4f.d.ts'
 import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
-export class GameRenderer extends Object implements AutoCloseable, GameRendererStorage, GameRendererAccessor, GameRendererAccessor, TrackedWaypoint$Projector {
+export class GameRenderer extends Object implements AutoCloseable, GameRendererStorage, GameRendererAccessor, GameRendererAccessor_2, TrackedWaypoint$Projector {
     static MAX_BLUR_RADIUS: number;
     static PROJECTION_3D_HUD_Z_FAR: number;
     static getNightVisionScale(paramcamera: LivingEntity, parama: number): number;

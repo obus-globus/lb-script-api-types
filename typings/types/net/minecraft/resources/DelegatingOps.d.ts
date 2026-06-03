@@ -73,6 +73,7 @@ export abstract class DelegatingOps<T extends Object | number | string | boolean
     getMapValues(input: T): DataResult<Stream<Pair<T, T>>>;
     getNumberValue(arg0: T, arg1: Number): Number;
     getNumberValue(input: T): DataResult<Number>;
+    getNumberValue(arg0: T, arg1: Number): Number;
     getStream(input: T): DataResult<Stream<T>>;
     getStringValue(input: T): DataResult<string>;
     listBuilder(): ListBuilder<T>;

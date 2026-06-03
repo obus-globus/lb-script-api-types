@@ -72,6 +72,7 @@ export class Int2FloatFunctions$PrimitiveFunction extends Object implements Int2
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
+    put(arg0: number, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: number): number;
 }

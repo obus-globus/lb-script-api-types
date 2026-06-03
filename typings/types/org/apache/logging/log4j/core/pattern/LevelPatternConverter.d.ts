@@ -6,6 +6,7 @@ export class LevelPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): LevelPatternConverter;
     private constructor()
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;
     getStyleClass(e: Object): string;
 }

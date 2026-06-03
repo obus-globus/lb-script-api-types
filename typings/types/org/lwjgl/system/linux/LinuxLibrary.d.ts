@@ -1,4 +1,5 @@
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { SharedLibrary$Default } from '../../../../org/lwjgl/system/SharedLibrary$Default.d.ts'
 export class LinuxLibrary extends SharedLibrary$Default {
     static BITS32: boolean;
@@ -11,5 +12,6 @@ export class LinuxLibrary extends SharedLibrary$Default {
     constructor(arg0: string, arg1: number)
     free(): void;
     getFunctionAddress(arg0: ByteBuffer): number;
+    getFunctionAddress(arg0: CharSequence): number;
     getPath(): string;
 }

@@ -16,11 +16,15 @@ export class ICULocaleService extends ICUService {
     get(arg0: ULocale, arg1: ULocale[]): Object;
     get(arg0: ULocale, arg1: number): Object;
     get(arg0: ULocale, arg1: number, arg2: ULocale[]): Object;
+    get(arg0: string): Object;
+    get(arg0: string, arg1: string[]): Object;
     getAvailableLocales(): Locale[];
     getAvailableULocales(): ULocale[];
     registerObject(arg0: Object, arg1: ULocale): ICUService$Factory;
     registerObject(arg0: Object, arg1: ULocale, arg2: boolean): ICUService$Factory;
     registerObject(arg0: Object, arg1: ULocale, arg2: number): ICUService$Factory;
     registerObject(arg0: Object, arg1: ULocale, arg2: number, arg3: boolean): ICUService$Factory;
+    registerObject(arg0: Object, arg1: string): ICUService$Factory;
+    registerObject(arg0: Object, arg1: string, arg2: boolean): ICUService$Factory;
     validateFallbackLocale(): string;
 }

@@ -26,4 +26,5 @@ export class MultiNoiseLayer18 extends IntBiomeLayer {
     // private weirdness: DoublePerlinNoiseSampler;
     // private bruteforceFinder(arg0: MultiNoiseLayer18$TargetPoint, arg1: MultiNoiseLayer18$BiomePoint[]): Biome;
     sample(arg0: number, arg1: number, arg2: number): number;
+    sample(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number[];
 }

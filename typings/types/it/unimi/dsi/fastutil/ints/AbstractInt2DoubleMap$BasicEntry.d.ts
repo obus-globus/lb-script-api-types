@@ -12,5 +12,6 @@ export class AbstractInt2DoubleMap$BasicEntry extends Object implements Int2Doub
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

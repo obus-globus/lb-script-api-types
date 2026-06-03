@@ -44,6 +44,7 @@ import type { WrittenBook } from '../../../../../../com/viaversion/viaversion/ap
 import type { Protocol } from '../../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { ClientboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { StructuredDataType } from '../../../../../../com/viaversion/viaversion/api/type/types/item/StructuredDataType.d.ts'
+import type { JsonObject } from '../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { ComponentRewriter1_20_5$ConverterPair } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ComponentRewriter1_20_5$ConverterPair.d.ts'
 import type { ComponentRewriter1_20_5$DataConverter } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ComponentRewriter1_20_5$DataConverter.d.ts'
 import type { ComponentRewriter1_20_5$SimpleDataConverter } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ComponentRewriter1_20_5$SimpleDataConverter.d.ts'
@@ -145,6 +146,8 @@ export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends Js
     globalPosFromTag(arg0: Map$Entry<string, Tag>[]): GlobalBlockPosition;
     globalPosToTag(arg0: Map$Entry<string, Tag>[], arg1: GlobalBlockPosition): void;
     handleHoverEvent(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
+    handleHoverEvent(arg0: UserConnection, arg1: JsonObject): void;
+    handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
     hideAdditionalTooltipFromTag(arg0: Tag): Unit;
     hideAdditionalTooltipToTag(arg0: Unit): Map$Entry<string, Tag>[];

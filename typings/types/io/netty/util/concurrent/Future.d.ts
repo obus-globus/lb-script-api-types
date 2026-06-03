@@ -1,10 +1,10 @@
 import type { GenericFutureListener } from '../../../../io/netty/util/concurrent/GenericFutureListener.d.ts'
-import type { Future } from '../../../../java/util/concurrent/Future.d.ts'
+import type { Future as Future_2 } from '../../../../java/util/concurrent/Future.d.ts'
 import type { Future$State } from '../../../../java/util/concurrent/Future$State.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export interface Future<V extends Object | number | string | boolean> extends Future<V>, Object{
+export interface Future<V extends Object | number | string | boolean> extends Future_2<V>, Object{
     addListener(arg0: GenericFutureListener<Future<V>>): Future<V>;
     addListeners(arg0: GenericFutureListener<Future<V>>[]): Future<V>;
     await(): Future<V>;

@@ -14,6 +14,7 @@ export class MegaPineFoliagePlacer extends FoliagePlacer {
     static CODEC: MapCodec<MegaPineFoliagePlacer>;
     constructor(radius: IntProvider, offset: IntProvider, crownHeight: IntProvider)
     // private crownHeight: IntProvider;
+    createFoliage(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, treeHeight: number, foliageAttachment: FoliagePlacer$FoliageAttachment, foliageHeight: number, leafRadius: number): void;
     createFoliage(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, treeHeight: number, foliageAttachment: FoliagePlacer$FoliageAttachment, foliageHeight: number, leafRadius: number, offset: number): void;
     foliageHeight(random: RandomSource, treeHeight: number, config: TreeConfiguration): number;
     shouldSkipLocation(random: RandomSource, dx: number, y: number, dz: number, currentRadius: number, doubleTrunk: boolean): boolean;

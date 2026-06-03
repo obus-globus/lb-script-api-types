@@ -19,7 +19,9 @@ export class ProfunctorFunctorWrapper$Instance<P extends K2, F extends K1, G ext
     // private profunctor: Profunctor<P, Profunctor$Mu>;
     dimap(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     dimap(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
+    dimap(arg0: App2<ProfunctorFunctorWrapper$Mu<P, F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ProfunctorFunctorWrapper$Mu<P, F, G>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<ProfunctorFunctorWrapper$Mu<P, F, G>, A, B>, App2<ProfunctorFunctorWrapper$Mu<P, F, G>, C, D>>;
+    dimap(arg0: () => App2<ProfunctorFunctorWrapper$Mu<P, F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ProfunctorFunctorWrapper$Mu<P, F, G>, C, D>;
     lmap(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;
     rmap(arg0: App2<P, A, B>, arg1: (param0: B) => D): App2<P, A, D>;
 }

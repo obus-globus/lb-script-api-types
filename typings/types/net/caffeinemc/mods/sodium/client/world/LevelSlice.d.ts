@@ -1,3 +1,4 @@
+import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SodiumModelData } from '../../../../../../net/caffeinemc/mods/sodium/client/services/SodiumModelData.d.ts'
 import type { SodiumModelDataContainer } from '../../../../../../net/caffeinemc/mods/sodium/client/services/SodiumModelDataContainer.d.ts'
@@ -19,6 +20,7 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 import type { LightLayer } from '../../../../../../net/minecraft/world/level/LightLayer.d.ts'
 import type { Biome } from '../../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { DataLayer } from '../../../../../../net/minecraft/world/level/chunk/DataLayer.d.ts'
 import type { BoundingBox } from '../../../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
@@ -51,6 +53,7 @@ export class LevelSlice extends Object implements FabricBlockGetter, BlockAndTin
     getBiomeFabric(arg0: BlockPos): Holder<Biome>;
     getBlockEntity(arg0: number, arg1: number, arg2: number): BlockEntity;
     getBlockEntity(arg0: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockState(arg0: number, arg1: number, arg2: number): BlockState;

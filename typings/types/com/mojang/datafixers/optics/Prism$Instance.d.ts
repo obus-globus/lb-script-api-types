@@ -9,11 +9,14 @@ import type { FunctorProfunctor } from '../../../../com/mojang/datafixers/optics
 import type { FunctorProfunctor$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/FunctorProfunctor$Mu.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Prism$Instance<A2 extends Object | number | string | boolean, B2 extends Object | number | string | boolean> extends Object implements Cocartesian<Prism$Mu<A2, B2>, Cocartesian$Mu> {
     static unbox(paramarg0: App<Object, Object>): Cocartesian<Object, Object>;
     constructor()
+    dimap(arg0: App2<Prism$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Prism$Mu<A2, B2>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Prism$Mu<A2, B2>, A, B>, App2<Prism$Mu<A2, B2>, C, D>>;
+    dimap(arg0: () => App2<Prism$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Prism$Mu<A2, B2>, C, D>;
     left(arg0: App2<Prism$Mu<A2, B2>, A, B>): App2<Prism$Mu<A2, B2>, Either<A, C>, Either<B, C>>;
     right(arg0: App2<Prism$Mu<A2, B2>, A, B>): App2<Prism$Mu<A2, B2>, Either<C, A>, Either<C, B>>;
     right(arg0: App2<P, A, B>): App2<P, Either<C, A>, Either<C, B>>;

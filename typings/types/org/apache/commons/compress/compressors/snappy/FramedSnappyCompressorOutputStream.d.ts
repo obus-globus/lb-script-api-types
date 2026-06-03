@@ -1,3 +1,4 @@
+import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { PureJavaCrc32C } from '../../../../../../org/apache/commons/codec/digest/PureJavaCrc32C.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'
@@ -16,6 +17,9 @@ export class FramedSnappyCompressorOutputStream extends CompressorOutputStream<O
     close(): void;
     finish(): void;
     // private flushBuffer(): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     // private writeCrc(): void;

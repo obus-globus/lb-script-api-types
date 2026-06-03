@@ -32,6 +32,8 @@ export class Short2DoubleOpenHashMap$MapEntry extends Object implements Short2Do
     left(arg0: number): ShortDoublePair;
     left(arg0: number): ShortDoublePair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortDoublePair;
     right(arg0: number): ShortDoublePair;
     right(): number;
     right(arg0: number): ShortDoublePair;

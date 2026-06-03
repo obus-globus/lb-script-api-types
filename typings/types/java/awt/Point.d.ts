@@ -15,6 +15,7 @@ export class Point extends Point2D implements Serializable {
     getY(): number;
     move(arg0: number, arg1: number): void;
     setLocation(arg0: Point): void;
+    setLocation(arg0: Point2D): void;
     setLocation(arg0: number, arg1: number): void;
     setLocation(arg0: number, arg1: number): void;
     toString(): string;

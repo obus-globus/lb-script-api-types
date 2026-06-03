@@ -9,6 +9,7 @@ export class AFSocketImpl$AFOutputStreamImpl extends AFOutputStream {
     close(): void;
     // private forceCloseSocket(): void;
     getFileDescriptor(): FileDescriptor;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

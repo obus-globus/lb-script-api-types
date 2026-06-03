@@ -1,3 +1,4 @@
+import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -91,6 +92,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     getBlockEntities(): Map<BlockPos, BlockEntity>;
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos, creationType: LevelChunk$EntityCreationType): BlockEntity;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
     getBlockState(arg0: BlockPos): BlockState;
@@ -100,6 +102,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     getFluidTicks(): TickContainerAccess<Fluid>;
     getFullStatus(): FullChunkStatus;
     getHeight(): number;
+    getHeight(type: Heightmap$Types, x: number, z: number): number;
     getLevel(): Level;
     getListenerRegistry(section: number): GameEventListenerRegistry;
     getMaxSectionY(): number;
@@ -124,6 +127,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     isInsideBuildHeight(blockY: number): boolean;
     isInsideBuildHeight(pos: BlockPos): boolean;
     isInsideBuildHeight(arg0: number): boolean;
+    isInsideBuildHeight(pos: BlockPos): boolean;
     isOutsideBuildHeight(blockY: number): boolean;
     isOutsideBuildHeight(pos: BlockPos): boolean;
     isOutsideBuildHeight(arg0: number): boolean;
@@ -143,6 +147,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     replaceWithPacketData(buffer: FriendlyByteBuf, heightmaps: { [key in Heightmap$Types]: number[] }, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<Object>, param2: CompoundTag) => void) => void): void;
     runPostLoad(): void;
     setBlockEntity(blockEntity: BlockEntity): void;
+    setBlockState(pos: BlockPos, state: BlockState): BlockState;
     setBlockState(pos: BlockPos, state: BlockState, flags: number): BlockState;
     setFullStatus(fullStatus: () => FullChunkStatus): void;
     setGameEventListenerRegistrySections(arg0: Int2ObjectMap<Object>): void;

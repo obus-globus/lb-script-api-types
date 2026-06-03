@@ -10,6 +10,7 @@ export class BlazeRenderer extends MobRenderer<Blaze, LivingEntityRenderState, B
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): LivingEntityRenderState;
+    createRenderState(entity: Blaze, partialTicks: number): LivingEntityRenderState;
     getBlockLightLevel(entity: Blaze, blockPos: BlockPos): number;
     getTextureLocation(state: LivingEntityRenderState): Identifier;
 }

@@ -18,6 +18,7 @@ import type { Message } from '../../../../../org/apache/logging/log4j/message/Me
 import type { MessageFactory } from '../../../../../org/apache/logging/log4j/message/MessageFactory.d.ts'
 import type { AbstractLogger } from '../../../../../org/apache/logging/log4j/spi/AbstractLogger.d.ts'
 import type { ExtendedLogger } from '../../../../../org/apache/logging/log4j/spi/ExtendedLogger.d.ts'
+import type { MessageSupplier } from '../../../../../org/apache/logging/log4j/util/MessageSupplier.d.ts'
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     static CATCHING_MARKER: Marker;
@@ -47,6 +48,8 @@ export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     getParent(): Logger;
     hashCode(): number;
     isAdditive(): boolean;
+    isEnabled(level: Level): boolean;
+    isEnabled(level: Level, marker: Marker): boolean;
     isEnabled(level: Level, marker: Marker, message: Object, t: Throwable): boolean;
     isEnabled(level: Level, marker: Marker, message: CharSequence, t: Throwable): boolean;
     isEnabled(level: Level, marker: Marker, message: string): boolean;
@@ -63,8 +66,75 @@ export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     isEnabled(level: Level, marker: Marker, message: string, params: Object[]): boolean;
     isEnabled(level: Level, marker: Marker, message: string, t: Throwable): boolean;
     isEnabled(level: Level, marker: Marker, message: Message, t: Throwable): boolean;
+    log(level: Level, message: Object): void;
+    log(level: Level, message: Object, throwable: Throwable): void;
+    log(level: Level, message: CharSequence): void;
+    log(level: Level, message: CharSequence, throwable: Throwable): void;
+    log(level: Level, message: string): void;
+    log(level: Level, message: string, p0: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
+    log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
+    log(level: Level, message: string, params: Object[]): void;
+    log(level: Level, message: string, paramSuppliers: () => Object | null[]): void;
+    log(level: Level, message: string, throwable: Throwable): void;
+    log(level: Level, marker: Marker, message: Object): void;
+    log(level: Level, marker: Marker, message: Object, throwable: Throwable): void;
+    log(level: Level, marker: Marker, message: CharSequence): void;
+    log(level: Level, marker: Marker, message: CharSequence, throwable: Throwable): void;
+    log(level: Level, marker: Marker, message: string): void;
     log(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
+    log(level: Level, marker: Marker, message: string, p0: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
+    log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
+    log(level: Level, marker: Marker, message: string, params: Object[]): void;
+    log(level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
+    log(level: Level, marker: Marker, message: string, throwable: Throwable): void;
+    log(level: Level, marker: Marker, message: Message): void;
+    log(level: Level, marker: Marker, message: Message, throwable: Throwable): void;
+    log(level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
+    log(level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    log(level: Level, marker: Marker, messageSupplier: () => Object | null): void;
+    log(level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
+    log(level: Level, message: Message): void;
+    log(level: Level, message: Message, throwable: Throwable): void;
+    log(level: Level, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
+    log(level: Level, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    log(level: Level, messageSupplier: () => Object | null): void;
+    log(level: Level, messageSupplier: () => Object | null, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: Object, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: CharSequence, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, params: Object[]): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: Message, t: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
+    logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
     removeAppender(appender: Appender): void;
     requiresLocation(): boolean;
     setAdditive(additive: boolean): void;

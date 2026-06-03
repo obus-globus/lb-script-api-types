@@ -6,6 +6,7 @@ import type { RealmsServer } from '../../../../../../net/raphimc/minecraftauth/e
 import type { RealmsResponseHandler } from '../../../../../../net/raphimc/minecraftauth/extra/realms/responsehandler/RealmsResponseHandler.d.ts'
 export class BedrockRealmsInviteLinkAcceptRequest extends PostRequest implements RealmsResponseHandler<RealmsServer> {
     constructor(arg0: string)
+    handle(arg0: HttpResponse): RealmsServer;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): RealmsServer;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

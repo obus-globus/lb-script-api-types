@@ -14,6 +14,7 @@ export class ContextNbtProvider$BlockEntitySource extends Record implements Loot
     equals(o: Object | null): boolean;
     get<R extends Object | number | string | boolean>(context: LootContext): R;
     get(blockEntity: BlockEntity): Tag;
+    get(context: LootContext): Tag;
     hashCode(): number;
     toString(): string;
 }

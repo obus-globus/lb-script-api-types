@@ -1,6 +1,5 @@
 import type { File } from '../../../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { BrowserAccelerationFlags } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.d.ts'
 import type { BrowserBackend } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserBackend.d.ts'
@@ -10,7 +9,7 @@ import type { BrowserState } from '../../../../../../../net/ccbluex/liquidbounce
 import type { BrowserViewport } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.d.ts'
 import type { InputAcceptor } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputAcceptor.d.ts'
 import type { TaskManager } from '../../../../../../../net/ccbluex/liquidbounce/integration/task/TaskManager.d.ts'
-import type { CefBrowser } from '../../../../../../../org/cef/browser/CefBrowser.d.ts'
+import type { CefBrowser as CefBrowser_2 } from '../../../../../../../org/cef/browser/CefBrowser.d.ts'
 /**
  * Uses a modified fork of the JCEF library browser backend made for Minecraft.
  * This browser backend is based on Chromium and is the most advanced browser backend.
@@ -43,14 +42,14 @@ export class CefBrowserBackend extends Object implements EventListener, BrowserB
      */
     cleanup(): void;
     createBrowser(url: string, position: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null): CefBrowser;
-    getBrowserByApi(apiInstance: CefBrowser): CefBrowser | null;
-    makeDependenciesAvailable(taskManager: TaskManager, whenAvailable: Function0<void>): void;
-    // private markInitialized(apiInstance: CefBrowser): void;
+    getBrowserByApi(apiInstance: CefBrowser_2): CefBrowser | null;
+    makeDependenciesAvailable(taskManager: TaskManager, whenAvailable: () => void): void;
+    // private markInitialized(apiInstance: CefBrowser_2): void;
     parent(): EventListener | null;
     removeBrowser(browser: CefBrowser): void;
     start(): void;
     stop(): void;
     unregister(): void;
     update(): void;
-    // private updateStateForBrowser(apiInstance: CefBrowser, state: BrowserState): void;
+    // private updateStateForBrowser(apiInstance: CefBrowser_2, state: BrowserState): void;
 }

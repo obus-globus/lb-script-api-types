@@ -3,5 +3,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class BeaconMenu$PaymentSlot extends Slot {
     constructor(container: ItemStack[], slot: number, x: number, y: number)
     getMaxStackSize(): number;
+    getMaxStackSize(itemStack: ItemStack): number;
     mayPlace(itemStack: ItemStack): boolean;
 }

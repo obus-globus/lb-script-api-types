@@ -2,11 +2,10 @@ import type { AtomicIntegerArray } from '../../../java/util/concurrent/atomic/At
 import type { AtomicLongArray } from '../../../java/util/concurrent/atomic/AtomicLongArray.d.ts'
 import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 export class AtomicArraysKt__AtomicArrays_commonKt extends Object {
-    static AtomicArray(paramarg0: number, paramarg1: Function1<Object, Object>): AtomicReferenceArray<Object>;
-    static AtomicIntArray(paramarg0: number, paramarg1: Function1<Object, number>): AtomicIntegerArray;
-    static AtomicLongArray(paramarg0: number, paramarg1: Function1<Object, number>): AtomicLongArray;
+    static AtomicArray(paramarg0: number, paramarg1: (param0: Object | null) => Object | null): AtomicReferenceArray<Object>;
+    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicIntegerArray;
+    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicLongArray;
     static atomicArrayOfNulls(paramarg0: number): AtomicReferenceArray<Object>;
     static decrementAndFetchAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
     static decrementAndFetchAt(paramarg0: AtomicLongArray, paramarg1: number): number;

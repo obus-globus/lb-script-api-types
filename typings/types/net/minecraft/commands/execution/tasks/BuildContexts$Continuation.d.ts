@@ -12,5 +12,6 @@ export class BuildContexts$Continuation<T extends ExecutionCommandSource<T>> ext
     // private modifiers: ChainModifiers;
     // private originalSource: T;
     // private sources: T[];
+    execute(originalSource: T, initialSources: T[], context: ExecutionContext<T>, frame: Frame, initialModifiers: ChainModifiers): void;
     execute(context: ExecutionContext<T>, frame: Frame): void;
 }

@@ -15,6 +15,7 @@ export class DonkeyRenderer<T extends AbstractChestedHorse> extends AbstractHors
     // private adultTexture: Identifier;
     // private babyTexture: Identifier;
     createRenderState(): DonkeyRenderState;
+    createRenderState(entity: T, partialTicks: number): DonkeyRenderState;
     extractRenderState(entity: T, state: DonkeyRenderState, partialTicks: number): void;
     getTextureLocation(state: DonkeyRenderState): Identifier;
 }

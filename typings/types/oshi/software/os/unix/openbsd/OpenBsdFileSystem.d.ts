@@ -6,6 +6,7 @@ export class OpenBsdFileSystem extends AbstractFileSystem {
     static OSHI_OPENBSD_FS_VOLUME_EXCLUDES: string;
     static OSHI_OPENBSD_FS_VOLUME_INCLUDES: string;
     constructor()
+    getFileStores(): OSFileStore[];
     getFileStores(arg0: boolean): OSFileStore[];
     getMaxFileDescriptors(): number;
     getMaxFileDescriptorsPerProcess(): number;

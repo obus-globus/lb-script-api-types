@@ -54,9 +54,13 @@ export class CachedDateFormat extends DateFormat {
     // private previousTime: number;
     // private slotBegin: number;
     // private tmpDate: Date;
+    format(arg0: Date): string;
     format(date: Date, sbuf: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(now: number, buf: StringBuffer): StringBuffer;
     getNumberFormat(): NumberFormat;
+    parse(arg0: string): Date;
     parse(s: string, pos: ParsePosition): Date;
     setTimeZone(timeZone: TimeZone): void;
 }

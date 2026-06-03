@@ -21,9 +21,11 @@ export class MappedByteBuffer extends ByteBuffer {
     force(arg0: number, arg1: number): MappedByteBuffer;
     isLoaded(): boolean;
     isSync(): boolean;
+    limit(): number;
     limit(arg0: number): MappedByteBuffer;
     load(): MappedByteBuffer;
     mark(): MappedByteBuffer;
+    position(): number;
     position(arg0: number): MappedByteBuffer;
     reset(): MappedByteBuffer;
     rewind(): MappedByteBuffer;

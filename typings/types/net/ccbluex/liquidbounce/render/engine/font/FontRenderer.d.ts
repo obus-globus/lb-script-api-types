@@ -35,13 +35,18 @@ export class FontRenderer extends AbstractFontRenderer<MinecraftTextProcessor$Re
     // private strikethroughIdxStack: (Object | null)[];
     // private underlinesIdxStack: (Object | null)[];
     // private commonDraw(ctx: Object, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: AbstractFontRenderer$DrawParameters): number;
+    draw(ctx: WorldRenderEnvironment, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     draw(ctx: WorldRenderEnvironment, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: AbstractFontRenderer$DrawParameters): number;
+    draw(ctx: WorldRenderEnvironment, text: Component, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
+    draw(ctx: GuiGraphicsExtractor, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     draw(ctx: GuiGraphicsExtractor, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: AbstractFontRenderer$DrawParameters): number;
+    draw(ctx: GuiGraphicsExtractor, text: Component, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     // private drawChar(ctx: Object, glyph: GlyphDescriptor, x: number, y: number, z: number, scale: number, color: Color4b): void;
     // private drawInternal(ctx: Object, text: ProcessedText, posX: number, posY: number, posZ: number, scale: number, overrideColor: Color4b | null): number;
     // private drawLine(ctx: Object, x0: number, x1: number, y: number, z: number, color: Color4b, through: boolean): void;
     getStringWidth(text: ProcessedText, shadow: boolean): number;
     // private loadStrikethroughs(text: ProcessedText): IntStack;
     // private loadUnderlines(text: ProcessedText): IntStack;
+    process(text: string, defaultColor: Color4b): MinecraftTextProcessor$RecyclingProcessedText;
     process(text: Component, defaultColor: Color4b): MinecraftTextProcessor$RecyclingProcessedText;
 }

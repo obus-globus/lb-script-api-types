@@ -12,6 +12,7 @@ export class FastBufferedInputStream extends InputStream {
     close(): void;
     // private fill(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(output: number[], offset: number, length: number): number;
     skip(count: number): number;
 }

@@ -7,11 +7,14 @@ export class Char2CharFunctions$EmptyFunction extends AbstractChar2CharFunction 
     clear(): void;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
     equals(arg0: Object | null): boolean;
+    get(arg0: Object): string;
     get(arg0: string): string;
+    getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: string, arg1: string): string;
     hashCode(): number;
     // private readResolve(): Object;

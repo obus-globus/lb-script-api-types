@@ -1,7 +1,8 @@
 import type { DoubleBigListIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleBigListIterator.d.ts'
+import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleConsumer.d.ts'
 import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
+import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleBigListIterators$BigListIteratorListIterator extends Object implements DoubleBigListIterator {
     constructor(arg0: DoubleListIterator)
@@ -9,9 +10,11 @@ export class DoubleBigListIterators$BigListIteratorListIterator extends Object i
     add(arg0: number): void;
     add(arg0: number): void;
     add(arg0: number): void;
+    add(arg0: number): void;
     back(arg0: number): number;
     back(arg0: number): number;
     back(arg0: number): number;
+    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -22,6 +25,7 @@ export class DoubleBigListIterators$BigListIteratorListIterator extends Object i
     previousDouble(): number;
     previousIndex(): number;
     remove(): void;
+    set(arg0: number): void;
     set(arg0: number): void;
     set(arg0: number): void;
     set(arg0: number): void;

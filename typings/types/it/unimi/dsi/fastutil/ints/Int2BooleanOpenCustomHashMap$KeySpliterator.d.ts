@@ -3,7 +3,7 @@ import type { IntComparator } from '../../../../../it/unimi/dsi/fastutil/ints/In
 import type { IntConsumer } from '../../../../../it/unimi/dsi/fastutil/ints/IntConsumer.d.ts'
 import type { IntSpliterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
+import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Int2BooleanOpenCustomHashMap$KeySpliterator extends Int2BooleanOpenCustomHashMap$MapSpliterator<(param0: number) => void, Int2BooleanOpenCustomHashMap$KeySpliterator> implements IntSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;

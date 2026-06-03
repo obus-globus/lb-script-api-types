@@ -40,6 +40,9 @@ export class FileManager extends OutputStreamManager {
     isAttributeViewEnabled(): boolean;
     isCreateOnDemand(): boolean;
     isLocking(): boolean;
+    write(bytes: number[]): void;
+    write(bytes: number[], immediateFlush: boolean): void;
+    write(bytes: number[], offset: number, length: number): void;
     write(bytes: number[], offset: number, length: number, immediateFlush: boolean): void;
     writeToDestination(bytes: number[], offset: number, length: number): void;
 }

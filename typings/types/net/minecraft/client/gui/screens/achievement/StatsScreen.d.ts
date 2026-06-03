@@ -29,8 +29,10 @@ export class StatsScreen extends Screen {
     // private tabManager: TabManager;
     // private tabNavigationBar: TabNavigationBar;
     extractMenuBackground(graphics: GuiGraphicsExtractor): void;
+    extractMenuBackground(graphics: GuiGraphicsExtractor, x: number, y: number, width: number, height: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     onClose(): void;
     onStatsUpdated(): void;

@@ -24,4 +24,5 @@ export class AcceptInvitationCodeScreen extends VFPScreen {
     constructor(arg0: (param0: string) => void)
     // private serviceHandler: (param0: string) => void;
     init(): void;
+    init(width: number, height: number): void;
 }

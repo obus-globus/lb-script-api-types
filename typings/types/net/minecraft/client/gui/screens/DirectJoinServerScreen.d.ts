@@ -4,6 +4,7 @@ import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../net/minecraft/client/gui/components/Button.d.ts'
 import type { EditBox } from '../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -29,11 +30,13 @@ export class DirectJoinServerScreen extends Screen {
     // private serverData: ServerData;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     onClose(): void;
     // private onSelect(): void;
     removed(): void;
     resize(width: number, height: number): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     // private updateSelectButtonStatus(): void;
 }

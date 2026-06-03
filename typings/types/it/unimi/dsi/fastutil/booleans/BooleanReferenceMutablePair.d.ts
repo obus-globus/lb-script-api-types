@@ -17,6 +17,8 @@ export class BooleanReferenceMutablePair<V extends Object | number | string | bo
     key(arg0: boolean): BooleanReferencePair<V>;
     key(arg0: boolean): BooleanReferencePair<V>;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanReferencePair<V>;
     left(arg0: boolean): BooleanReferenceMutablePair<V>;
     left(): boolean;
     left(arg0: boolean): BooleanReferencePair<V>;

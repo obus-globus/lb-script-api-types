@@ -53,6 +53,7 @@ export class BZip2CompressorInputStream extends CompressorInputStream implements
     // private initBlock(): void;
     // private makeMaps(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private read0(): number;
     // private readNextByte(arg0: BitInputStream): number;

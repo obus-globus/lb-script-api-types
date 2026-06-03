@@ -11,5 +11,6 @@ export class ASTWalker<R extends Object | number | string | boolean> extends AST
     enterContext(arg0: ASTNode): void;
     enterNode(arg0: ASTListener, arg1: InnerASTNode): void;
     exitNode(arg0: ASTListener, arg1: InnerASTNode): void;
+    visit(arg0: R, arg1: ASTNode): R;
     visit(arg0: ASTNode): R;
 }

@@ -7,4 +7,5 @@ export class TranslatableRewriter1_16 extends JsonNBTComponentRewriter<Clientbou
     constructor(arg0: Protocol1_16To1_15_2)
     // private getClosestChatColor(arg0: number): string;
     processText(arg0: UserConnection, arg1: JsonElement): void;
+    processText(arg0: UserConnection, arg1: string): JsonElement;
 }

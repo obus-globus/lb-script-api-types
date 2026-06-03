@@ -15,11 +15,12 @@ import type { Long2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/lo
 import type { Object2LongFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2LongFunction.d.ts'
 import type { Reference2LongFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2LongFunction.d.ts'
 import type { Short2LongFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2LongFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { LongUnaryOperator } from '../../../../../java/util/function/LongUnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Long2LongFunction extends Function<number, number>, LongUnaryOperator, Object{
     andThen(arg0: (param0: number) => T): (param0: number) => T;
+    andThen(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
     andThen(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;
     andThenChar(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;
@@ -34,6 +35,7 @@ export interface Long2LongFunction extends Function<number, number>, LongUnaryOp
     applyAsLong(arg0: number): number;
     clear(): void;
     compose(arg0: (param0: T) => number): (param0: T) => number;
+    compose(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
     compose(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
     composeByte(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
     composeChar(arg0: (param0: string) => kotlin.Long): (param0: string) => kotlin.Long;

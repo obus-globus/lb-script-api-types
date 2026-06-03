@@ -6,6 +6,7 @@ import type { RegexAST } from '../../../../../../../com/oracle/truffle/regex/tre
 import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
 import type { Sequence } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Sequence.d.ts'
 import type { AbstractStringBuffer } from '../../../../../../../com/oracle/truffle/regex/tregex/string/AbstractStringBuffer.d.ts'
+import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CharacterClass extends QuantifiableTerm {
@@ -16,6 +17,7 @@ export class CharacterClass extends QuantifiableTerm {
     addLookBehindEntry(ast: RegexAST, lookBehindEntry: LookBehindAssertion): void;
     copy(ast: RegexAST): CharacterClass;
     copyRecursive(ast: RegexAST, compilationBuffer: CompilationBuffer): CharacterClass;
+    equalsSemantic(obj: RegexASTNode): boolean;
     equalsSemantic(obj: RegexASTNode, ignoreQuantifier: boolean): boolean;
     extractSingleChar(literal: AbstractStringBuffer, mask: AbstractStringBuffer): void;
     getCharSet(): (Object | null)[];
@@ -27,6 +29,7 @@ export class CharacterClass extends QuantifiableTerm {
     setWasSingleChar(): void;
     setWasSingleChar(value: boolean): void;
     toJson(): JsonValue;
+    toJson(typeName: string): JsonObject;
     toString(): string;
     wasSingleChar(): boolean;
 }

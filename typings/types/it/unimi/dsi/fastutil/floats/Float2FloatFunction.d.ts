@@ -16,9 +16,10 @@ import type { Object2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Reference2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2FloatFunction.d.ts'
 import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2FloatFunction.d.ts'
 import type { DoubleUnaryOperator } from '../../../../../java/util/function/DoubleUnaryOperator.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Float2FloatFunction extends Function<number, number>, DoubleUnaryOperator, Object{
+    andThen(arg0: (param0: number) => kotlin.Double): (param0: number) => kotlin.Double;
     andThen(arg0: (param0: number) => T): (param0: number) => T;
     andThen(arg0: (param0: number) => kotlin.Double): (param0: number) => kotlin.Double;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;
@@ -33,6 +34,7 @@ export interface Float2FloatFunction extends Function<number, number>, DoubleUna
     apply<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: K): V;
     applyAsDouble(arg0: number): number;
     clear(): void;
+    compose(arg0: (param0: number) => kotlin.Double): (param0: number) => kotlin.Double;
     compose(arg0: (param0: T) => number): (param0: T) => number;
     compose(arg0: (param0: number) => kotlin.Double): (param0: number) => kotlin.Double;
     composeByte(arg0: (param0: number) => kotlin.Float): (param0: number) => kotlin.Float;

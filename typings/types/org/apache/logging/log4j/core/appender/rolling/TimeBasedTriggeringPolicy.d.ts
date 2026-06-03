@@ -16,6 +16,7 @@ export class TimeBasedTriggeringPolicy extends AbstractTriggeringPolicy {
     readonly nextRolloverMillis: number;
     getInterval(): number;
     getNextRolloverMillis(): number;
+    initialize(): void;
     initialize(aManager: RollingFileManager): void;
     isTriggeringEvent(event: LogEvent): boolean;
     toString(): string;

@@ -7,6 +7,7 @@ import type { MinecraftServicesResponseHandler } from '../../../../../net/raphim
 import type { XblXstsToken } from '../../../../../net/raphimc/minecraftauth/xbl/model/XblXstsToken.d.ts'
 export class MinecraftLauncherLoginRequest extends PostRequest implements MinecraftServicesResponseHandler<MinecraftToken> {
     constructor(arg0: XblXstsToken)
+    handle(arg0: HttpResponse): MinecraftToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftToken;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

@@ -183,6 +183,8 @@ export class Bee extends Animal implements NeutralMob, FlyingAnimal {
     aiStep(): void;
     checkFallDamage(ya: number, onGround: boolean, onState: BlockState, pos: BlockPos): void;
     // private closerThan(targetPos: BlockPos, distance: number): boolean;
+    closerThan(other: Entity, distance: number): boolean;
+    closerThan(other: Entity, distanceXZ: number, distanceY: number): boolean;
     createNavigation(level: Level): PathNavigation;
     customServerAiStep(level: ServerLevel): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
@@ -203,12 +205,14 @@ export class Bee extends Animal implements NeutralMob, FlyingAnimal {
     getHivePos(): BlockPos;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getPersistentAngerEndTime(): number;
     getPersistentAngerTarget(): EntityReference<LivingEntity>;
     getRollAmount(a: number): number;
     getSavedFlowerPos(): BlockPos;
     getSoundVolume(): number;
     getTravellingTicks(): number;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     hasHive(): boolean;
     hasNectar(): boolean;

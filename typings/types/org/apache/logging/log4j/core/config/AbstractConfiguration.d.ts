@@ -1,4 +1,5 @@
 import type { WeakReference } from '../../../../../../java/lang/ref/WeakReference.d.ts'
+import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
@@ -126,6 +127,9 @@ export abstract class AbstractConfiguration extends AbstractFilterable implement
     setup(): void;
     // private setupAdvertisement(): void;
     start(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
+    stop(timeout: number, timeUnit: TimeUnit, changeLifeCycleState: boolean): boolean;
     // private watchMonitorResources(): void;
 }

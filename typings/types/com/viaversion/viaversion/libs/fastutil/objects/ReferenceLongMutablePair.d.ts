@@ -11,6 +11,8 @@ export class ReferenceLongMutablePair<K extends Object | number | string | boole
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceLongMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceLongPair<K>;
     right(arg0: number): ReferenceLongMutablePair<K>;
     right(): number;
     right(arg0: number): ReferenceLongPair<K>;

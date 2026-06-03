@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2DoubleMap$Entry.d.ts'
 import type { ObjectDoublePair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectDoublePair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2DoubleArrayMap$MapEntry extends Object implements Object2Dou
     getDoubleValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ObjectDoublePair<K>;
     right(arg0: number): ObjectDoublePair<K>;
     right(): number;
     right(arg0: number): ObjectDoublePair<K>;

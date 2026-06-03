@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../../kotlin/Pair.d.ts'
 import type { VisibilityPredicate } from '../../../../../../net/ccbluex/liquidbounce/utils/aiming/utils/VisibilityPredicate.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
@@ -39,6 +38,6 @@ export class PointFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:68}
      */
-    static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number, consumer: Function1<Object, void>): boolean;
+    static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number, consumer: (param0: Object | null) => void): boolean;
     static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number): Vec3[];
 }

@@ -11,6 +11,7 @@ import type { JScrollBar } from '../../javax/swing/JScrollBar.d.ts'
 import type { JViewport } from '../../javax/swing/JViewport.d.ts'
 import type { ScrollPaneConstants } from '../../javax/swing/ScrollPaneConstants.d.ts'
 import type { Border } from '../../javax/swing/border/Border.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { ScrollPaneUI } from '../../javax/swing/plaf/ScrollPaneUI.d.ts'
 export class JScrollPane extends JComponent implements Accessible, ScrollPaneConstants {
     static ABORT: number;
@@ -100,6 +101,7 @@ export class JScrollPane extends JComponent implements Accessible, ScrollPaneCon
     setLayout(arg0: LayoutManager): void;
     setRowHeader(arg0: JViewport): void;
     setRowHeaderView(arg0: Component): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: ScrollPaneUI): void;
     setVerticalScrollBar(arg0: JScrollBar): void;
     setVerticalScrollBarPolicy(arg0: number): void;

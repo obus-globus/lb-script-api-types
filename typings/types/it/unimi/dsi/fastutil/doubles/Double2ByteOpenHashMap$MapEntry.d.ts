@@ -32,6 +32,8 @@ export class Double2ByteOpenHashMap$MapEntry extends Object implements Double2By
     left(arg0: number): DoubleBytePair;
     left(arg0: number): DoubleBytePair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleBytePair;
     right(arg0: number): DoubleBytePair;
     right(): number;
     right(arg0: number): DoubleBytePair;

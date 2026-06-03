@@ -11,6 +11,7 @@ import type { Vector2dc } from '../../org/joml/Vector2dc.d.ts'
 export interface Matrix2dc extends Object{
     add(arg0: Matrix2dc, arg1: Matrix2d): Matrix2d;
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix2dc, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: DoubleBuffer): DoubleBuffer;

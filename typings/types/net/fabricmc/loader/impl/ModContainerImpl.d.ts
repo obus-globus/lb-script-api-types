@@ -1,6 +1,6 @@
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { ModContainer } from '../../../../net/fabricmc/loader/ModContainer.d.ts'
-import type { ModContainer } from '../../../../net/fabricmc/loader/api/ModContainer.d.ts'
+import type { ModContainer as ModContainer_2 } from '../../../../net/fabricmc/loader/api/ModContainer.d.ts'
 import type { ModOrigin } from '../../../../net/fabricmc/loader/api/metadata/ModOrigin.d.ts'
 import type { ModCandidateImpl } from '../../../../net/fabricmc/loader/impl/discovery/ModCandidateImpl.d.ts'
 import type { LoaderModMetadata } from '../../../../net/fabricmc/loader/impl/metadata/LoaderModMetadata.d.ts'
@@ -16,7 +16,7 @@ export class ModContainerImpl extends ModContainer {
     // private checkFsOpen(arg0: Path[][]): boolean;
     getCodeSourcePaths(): Path[][];
     getContainedMods(): E[];
-    getContainingMod(): Optional<ModContainer>;
+    getContainingMod(): Optional<ModContainer_2>;
     getInfo(): LoaderModMetadata;
     getMetadata(): LoaderModMetadata;
     getOrigin(): ModOrigin;

@@ -9,5 +9,7 @@ export class RandomAccessFileOutputStream extends OutputStream {
     close(): void;
     flush(): void;
     getRandomAccessFile(): RandomAccessFile;
+    write(arg0: number[]): void;
+    write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

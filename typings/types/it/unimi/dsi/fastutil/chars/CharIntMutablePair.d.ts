@@ -19,11 +19,15 @@ export class CharIntMutablePair extends Object implements CharIntPair, Serializa
     key(arg0: string): CharIntPair;
     key(arg0: string): CharIntPair;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharIntPair;
     left(arg0: string): CharIntMutablePair;
     left(): string;
     left(arg0: string): CharIntPair;
     left(arg0: string): CharIntPair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharIntPair;
     right(arg0: number): CharIntMutablePair;
     right(): number;
     right(arg0: number): CharIntPair;

@@ -38,6 +38,7 @@ export abstract class AbstractReportScreen<B extends Report$Builder<Object>> ext
     createHeader(): void;
     // private displayReportSendError(message: Component): void;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     onReportChanged(): void;
     // private onReportSendError(throwable: Throwable): void;

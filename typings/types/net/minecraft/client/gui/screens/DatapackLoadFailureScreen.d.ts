@@ -24,5 +24,6 @@ export class DatapackLoadFailureScreen extends Screen {
     // private safeModeCallback: () => void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     shouldCloseOnEsc(): boolean;
 }

@@ -9,7 +9,7 @@ import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
-import type { BigDecimal } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
+import type { BigDecimal as BigDecimal_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
 import type { DisplayContext } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DisplayContext.d.ts'
 import type { DisplayContext$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DisplayContext$Type.d.ts'
 import type { NumberFormat$NumberFormatFactory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberFormat$NumberFormatFactory.d.ts'
@@ -78,13 +78,14 @@ export abstract class NumberFormat extends UFormat {
     format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(number: BigInteger): string;
     format(number: BigInteger, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
     format(number: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(number: number): string;
     format(number: number, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(number: number): string;
     format(number: number, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
-    format(number: BigDecimal): string;
-    format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
+    format(number: BigDecimal_2): string;
+    format(number: BigDecimal_2, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(currAmt: CurrencyAmount): string;
     format(currAmt: CurrencyAmount, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     getContext(type: DisplayContext$Type): DisplayContext;
@@ -102,6 +103,7 @@ export abstract class NumberFormat extends UFormat {
     parse(text: string): Number;
     parse(text: string, parsePosition: ParsePosition): Number;
     parseCurrency(text: CharSequence, pos: ParsePosition): CurrencyAmount;
+    parseObject(arg0: string): Object;
     parseObject(source: string, parsePosition: ParsePosition): Object;
     // private readObject(stream: ObjectInputStream): void;
     setContext(context: DisplayContext): void;

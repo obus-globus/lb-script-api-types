@@ -3,7 +3,7 @@ import type { AccessibleObject } from '../../../../java/lang/reflect/AccessibleO
 import type { Field } from '../../../../java/lang/reflect/Field.d.ts'
 import type { Method } from '../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Field } from '../../../../org/apache/tika/config/Field.d.ts'
+import type { Field as Field_2 } from '../../../../org/apache/tika/config/Field.d.ts'
 export class ParamField extends Object {
     static DEFAULT: string;
     constructor(arg0: AccessibleObject)
@@ -18,7 +18,7 @@ export class ParamField extends Object {
     getSetter(): Method;
     getType(): Class<Object>;
     isRequired(): boolean;
-    // private retrieveParamName(arg0: Field): string;
+    // private retrieveParamName(arg0: Field_2): string;
     // private retrieveType(): Class<Object>;
     toString(): string;
 }

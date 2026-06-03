@@ -32,6 +32,8 @@ export class Int2LongArrayMap$MapEntry extends Object implements Int2LongMap$Ent
     left(arg0: number): IntLongPair;
     left(arg0: number): IntLongPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntLongPair;
     right(arg0: number): IntLongPair;
     right(): number;
     right(arg0: number): IntLongPair;

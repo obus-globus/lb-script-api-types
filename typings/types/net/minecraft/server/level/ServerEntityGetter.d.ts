@@ -23,6 +23,9 @@ export interface ServerEntityGetter extends Object, EntityGetter{
     getNearestEntity<T extends LivingEntity>(entities: T[], targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): T;
     getNearestEntity(tag: TagKey<EntityType<Object>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
+    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => kotlin.Boolean): Player;
+    getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
+    getNearestPlayer(source: Entity, maxDist: number): Player;
     getNearestPlayer(targetConditions: TargetingConditions, x: number, y: number, z: number): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): Player;

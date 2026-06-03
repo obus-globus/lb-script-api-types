@@ -12,5 +12,6 @@ export class AbstractReference2LongMap$BasicEntry<K extends Object | number | st
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

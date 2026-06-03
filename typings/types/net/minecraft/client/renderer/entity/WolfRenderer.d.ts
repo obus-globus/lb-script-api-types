@@ -10,6 +10,7 @@ export class WolfRenderer extends AgeableMobRenderer<Wolf, WolfRenderState, Wolf
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): WolfRenderState;
+    createRenderState(entity: Wolf, partialTicks: number): WolfRenderState;
     extractRenderState(entity: Wolf, state: WolfRenderState, partialTicks: number): void;
     getModelTint(state: WolfRenderState): number;
     getTextureLocation(state: WolfRenderState): Identifier;

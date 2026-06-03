@@ -27,6 +27,7 @@ export class Hook$HookType<A extends Object | number | string | boolean> extends
     buildCodec(): Codec<A>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;

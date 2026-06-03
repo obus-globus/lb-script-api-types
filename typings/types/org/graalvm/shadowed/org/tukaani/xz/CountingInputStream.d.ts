@@ -6,5 +6,6 @@ export class CountingInputStream extends CloseIgnoringInputStream {
     readonly size: number;
     getSize(): number;
     read(): number;
+    read(arg0: number[]): number;
     read(b: number[], off: number, len: number): number;
 }

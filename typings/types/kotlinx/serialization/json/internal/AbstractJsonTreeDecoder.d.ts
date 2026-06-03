@@ -1,5 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { DeserializationStrategy } from '../../../../kotlinx/serialization/DeserializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { CompositeDecoder } from '../../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
@@ -33,6 +32,7 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     decodeJsonElement(): JsonElement;
     decodeNotNullMark(): boolean;
     decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
+    protected decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     protected decodeTaggedBoolean(tag: string): boolean;
     protected decodeTaggedByte(tag: string): number;
     protected decodeTaggedChar(tag: string): string;
@@ -47,8 +47,9 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     protected decodeTaggedShort(tag: string): number;
     protected decodeTaggedString(tag: string): string;
     endStructure(descriptor: SerialDescriptor): void;
-    // private getPrimitiveValue<T extends Object | number | string | boolean>(tag: string, primitiveName: string, convert: Function1<JsonPrimitive, T>): T;
+    // private getPrimitiveValue<T extends Object | number | string | boolean>(tag: string, primitiveName: string, convert: (param0: JsonPrimitive) => T | null): T;
     protected getPrimitiveValue(tag: string, descriptor: SerialDescriptor): JsonPrimitive;
+    protected renderTagStack(): string;
     renderTagStack(currentTag: string): string;
     // private unparsedPrimitive(literal: JsonPrimitive, primitive: string, tag: string): void;
 }

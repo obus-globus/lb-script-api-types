@@ -20,6 +20,7 @@ export class Norm2AllModes$NoopNormalizer2 extends Normalizer2 {
     hasBoundaryBefore(arg0: number): boolean;
     isInert(arg0: number): boolean;
     isNormalized(arg0: CharSequence): boolean;
+    normalize(arg0: CharSequence): string;
     normalize(arg0: CharSequence, arg1: Appendable): Appendable;
     normalize(arg0: CharSequence, arg1: StringBuilder): StringBuilder;
     normalizeSecondAndAppend(arg0: StringBuilder, arg1: CharSequence): StringBuilder;

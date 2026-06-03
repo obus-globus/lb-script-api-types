@@ -16,6 +16,7 @@ export class FurnaceRecipeBookComponent extends RecipeBookComponent<AbstractFurn
     constructor(menu: AbstractFurnaceMenu, recipeFilterName: Component, tabInfos: RecipeBookComponent$TabInfo[])
     // private recipeFilterName: Component;
     fillGhostRecipe(ghostSlots: GhostSlots, recipe: RecipeDisplay, context: ContextMap): void;
+    fillGhostRecipe(recipe: RecipeDisplay): void;
     getFilterButtonTextures(): WidgetSprites;
     getRecipeFilterName(): Component;
     isCraftingSlot(slot: Slot): boolean;

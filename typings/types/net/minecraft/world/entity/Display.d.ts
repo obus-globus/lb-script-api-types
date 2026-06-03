@@ -2,6 +2,7 @@ import type { Transformation } from '../../../../com/mojang/math/Transformation.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { Brightness } from '../../../../net/minecraft/util/Brightness.d.ts'
 import type { DamageSource } from '../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
@@ -105,6 +106,7 @@ export abstract class Display extends Entity {
     getWidth(): number;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     isIgnoringBlockTriggers(): boolean;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     renderState(): Display$RenderState;
@@ -113,6 +115,7 @@ export abstract class Display extends Entity {
     setGlowColorOverride(value: number): void;
     setHeight(width: number): void;
     setPos(x: number, y: number, z: number): void;
+    setPos(pos: Vec3): void;
     setPosRotInterpolationDuration(duration: number): void;
     setShadowRadius(size: number): void;
     setShadowStrength(strength: number): void;

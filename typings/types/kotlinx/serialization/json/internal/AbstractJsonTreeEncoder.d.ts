@@ -1,7 +1,6 @@
 import type { AbstractJsonTreeEncoder$inlineUnquotedLiteralEncoder$1 } from '../../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
 import type { AbstractJsonTreeEncoder$inlineUnsignedNumberEncoder$1 } from '../../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { SerializationStrategy } from '../../../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { CompositeEncoder } from '../../../../kotlinx/serialization/encoding/CompositeEncoder.d.ts'
@@ -13,7 +12,7 @@ import type { JsonElement } from '../../../../kotlinx/serialization/json/JsonEle
 import type { JsonEncoder } from '../../../../kotlinx/serialization/json/JsonEncoder.d.ts'
 import type { SerializersModule } from '../../../../kotlinx/serialization/modules/SerializersModule.d.ts'
 export class AbstractJsonTreeEncoder extends NamedValueEncoder implements JsonEncoder {
-    protected constructor(json: Json, nodeConsumer: Function1<JsonElement, void>)
+    protected constructor(json: Json, nodeConsumer: (param0: JsonElement) => void)
     // private configuration: JsonConfiguration;
     readonly json: Json;
     // private nodeConsumer: (param0: JsonElement) => void;

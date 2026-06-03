@@ -10,5 +10,6 @@ export class FakePlayerPacketListener extends ServerGamePacketListenerImpl imple
     static LATENCY_CHECK_INTERVAL: number;
     static LOGGER: Logger;
     constructor(arg0: ServerPlayer)
+    send(packet: Packet<Object>): void;
     send(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
 }

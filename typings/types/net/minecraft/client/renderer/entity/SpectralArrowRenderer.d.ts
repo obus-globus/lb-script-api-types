@@ -8,5 +8,6 @@ export class SpectralArrowRenderer extends ArrowRenderer<SpectralArrow, ArrowRen
     static SPECTRAL_ARROW_LOCATION: Identifier;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ArrowRenderState;
+    createRenderState(entity: SpectralArrow, partialTicks: number): ArrowRenderState;
     getTextureLocation(state: ArrowRenderState): Identifier;
 }

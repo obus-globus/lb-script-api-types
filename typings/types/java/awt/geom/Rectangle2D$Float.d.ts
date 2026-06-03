@@ -1,3 +1,4 @@
+import type { Point2D } from '../../../java/awt/geom/Point2D.d.ts'
 import type { Rectangle2D } from '../../../java/awt/geom/Rectangle2D.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 export class Rectangle2D$Float extends Rectangle2D implements Serializable {
@@ -21,6 +22,7 @@ export class Rectangle2D$Float extends Rectangle2D implements Serializable {
     getX(): number;
     getY(): number;
     isEmpty(): boolean;
+    outcode(arg0: Point2D): number;
     outcode(arg0: number, arg1: number): number;
     setRect(arg0: Rectangle2D): void;
     setRect(arg0: number, arg1: number, arg2: number, arg3: number): void;

@@ -1,6 +1,8 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
+import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ClientWorldAccessor } from '../../../../net/caffeinemc/mods/lithium/common/client/ClientWorldAccessor.d.ts'
 import type { ChunkTracker } from '../../../../net/caffeinemc/mods/sodium/client/render/chunk/map/ChunkTracker.d.ts'
@@ -65,6 +67,7 @@ import type { LevelChunk } from '../../../../net/minecraft/world/level/chunk/Lev
 import type { DimensionType } from '../../../../net/minecraft/world/level/dimension/DimensionType.d.ts'
 import type { EntityAccess } from '../../../../net/minecraft/world/level/entity/EntityAccess.d.ts'
 import type { EntityTickList } from '../../../../net/minecraft/world/level/entity/EntityTickList.d.ts'
+import type { EntityTypeTest } from '../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
 import type { LevelEntityGetter } from '../../../../net/minecraft/world/level/entity/LevelEntityGetter.d.ts'
 import type { TransientEntitySectionManager } from '../../../../net/minecraft/world/level/entity/TransientEntitySectionManager.d.ts'
 import type { GameEvent } from '../../../../net/minecraft/world/level/gameevent/GameEvent.d.ts'
@@ -148,10 +151,18 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     endFlashState(): EndFlashState;
     entitiesForRendering(): Entity[];
     environmentAttributes(): EnvironmentAttributeSystem;
+    explode(source: Entity, x: number, y: number, z: number, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
+    explode(source: Entity, x: number, y: number, z: number, r: number, blockInteraction: Level$ExplosionInteraction): void;
+    explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, x: number, y: number, z: number, r: number, fire: boolean, interactionType: Level$ExplosionInteraction): void;
     explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, x: number, y: number, z: number, r: number, fire: boolean, interactionType: Level$ExplosionInteraction, smallExplosionParticles: ParticleOptions, largeExplosionParticles: ParticleOptions, secondaryParticles: WeightedList<ExplosionParticleInfo>, explosionSound: Holder<SoundEvent>): void;
+    explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, boomPos: Vec3, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
     fillReportDetails(report: CrashReport): CrashReportCategory;
     fuelValues(): FuelValues;
+    gameEvent(gameEvent: Holder<GameEvent>, pos: BlockPos, context: GameEvent$Context): void;
     gameEvent(gameEvent: Holder<GameEvent>, pos: Vec3, context: GameEvent$Context): void;
+    gameEvent(gameEvent: ResourceKey<GameEvent>, pos: BlockPos, context: GameEvent$Context): void;
+    gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: BlockPos): void;
+    gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: Vec3): void;
     gatherChunkSourceStats(): string;
     getAllMapData(): Map<MapId, MapItemSavedData>;
     getBlockStatePredictionHandler(): BlockStatePredictionHandler;
@@ -160,6 +171,12 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     getChunkSource(): ClientChunkCache;
     getClientLeafTintColor(pos: BlockPos): number;
     getEntities(): LevelEntityGetter<Entity>;
+    getEntities(except: Entity, bb: AABB): Entity[];
+    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
+    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
+    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[]): void;
+    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[], maxResults: number): void;
+    getEntity(uuid: UUID): Entity;
     getEntity(id: number): Entity;
     getEntityCount(): number;
     getFluidTicks(): LevelTickAccess<Fluid>;
@@ -180,6 +197,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     handleBlockChangedAck(sequence: number): void;
     hasChunk(chunkX: number, chunkZ: number): boolean;
     isTickingEntity(entity: Entity): boolean;
+    levelEvent(type: number, pos: BlockPos, data: number): void;
     levelEvent(source: Entity, type: number, pos: BlockPos, data: number): void;
     lithium$getEntityManager(): TransientEntitySectionManager<EntityAccess>;
     onBlockEntityAdded(blockEntity: BlockEntity): void;
@@ -187,11 +205,19 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     onSectionBecomingNonEmpty(sectionNode: number): void;
     overrideMapData(id: MapId, data: MapItemSavedData): void;
     playLocalSound(x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, distanceDelay: boolean): void;
+    playLocalSound(pos: BlockPos, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, distanceDelay: boolean): void;
     playLocalSound(sourceEntity: Entity, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
     playPlayerSound(sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
     playSeededSound(except: Entity, x: number, y: number, z: number, sound: Holder<SoundEvent>, source: SoundSource, volume: number, pitch: number, seed: number): void;
+    playSeededSound(except: Entity, x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, seed: number): void;
     playSeededSound(except: Entity, sourceEntity: Entity, sound: Holder<SoundEvent>, source: SoundSource, volume: number, pitch: number, seed: number): void;
     // private playSound(x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, distanceDelay: boolean, seed: number): void;
+    playSound(except: Entity, x: number, y: number, z: number, sound: Holder<SoundEvent>, source: SoundSource, volume: number, pitch: number): void;
+    playSound(except: Entity, x: number, y: number, z: number, sound: SoundEvent, source: SoundSource): void;
+    playSound(except: Entity, x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
+    playSound(except: Entity, pos: BlockPos, soundEvent: SoundEvent, source: SoundSource): void;
+    playSound(except: Entity, pos: BlockPos, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
+    playSound(except: Entity, sourceEntity: Entity, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
     players(): AbstractClientPlayer[];
     pollLightUpdates(): void;
     potionBrewing(): PotionBrewing;
@@ -201,6 +227,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     removeEntity(id: number, reason: Entity$RemovalReason): void;
     sendBlockUpdated(pos: BlockPos, old: BlockState, current: BlockState, updateFlags: number): void;
     sendPacketToServer(packet: Packet<Object>): void;
+    setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number): boolean;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number, updateLimit: number): boolean;
     setBlocksDirty(pos: BlockPos, oldState: BlockState, newState: BlockState): void;
     setRespawnData(respawnData: LevelData$RespawnData): void;

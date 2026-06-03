@@ -1,6 +1,5 @@
 import type { PrimitiveIterator$OfInt } from '../../../../../../../java/util/PrimitiveIterator$OfInt.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Filterable } from '../../../../../../../net/minecraft/server/network/Filterable.d.ts'
 export class ModuleBookBot$BookBuilder extends Object {
@@ -18,6 +17,6 @@ export class ModuleBookBot$BookBuilder extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt#L192 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt:192}
      */
-    buildBookContent(charGenerator: PrimitiveIterator$OfInt, charWidthProvider: Function1<number, number>): void;
+    buildBookContent(charGenerator: PrimitiveIterator$OfInt, charWidthProvider: (param0: number) => number): void;
     writeBook(): void;
 }

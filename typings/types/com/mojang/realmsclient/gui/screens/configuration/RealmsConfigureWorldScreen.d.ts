@@ -46,6 +46,7 @@ export class RealmsConfigureWorldScreen extends RealmsScreen {
     closeTheWorld(): void;
     createErrorScreen(exception: RealmsServiceException): Screen;
     extractMenuBackground(graphics: GuiGraphicsExtractor): void;
+    extractMenuBackground(graphics: GuiGraphicsExtractor, x: number, y: number, width: number, height: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     fetchRegionData(): void;
     fetchServerData(realmId: number): void;
@@ -55,6 +56,7 @@ export class RealmsConfigureWorldScreen extends RealmsScreen {
     getNewScreen(): RealmsConfigureWorldScreen;
     getNewScreenWithKnownData(serverData: RealmsServer): RealmsConfigureWorldScreen;
     init(): void;
+    init(width: number, height: number): void;
     invitePlayer(serverId: number, name: string): boolean;
     keyPressed(event: KeyEvent): boolean;
     onClose(): void;

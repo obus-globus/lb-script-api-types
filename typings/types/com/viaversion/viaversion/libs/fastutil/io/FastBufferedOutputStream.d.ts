@@ -22,6 +22,7 @@ export class FastBufferedOutputStream extends MeasurableOutputStream implements 
     length(): number;
     position(): number;
     position(arg0: number): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

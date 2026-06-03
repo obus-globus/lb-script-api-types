@@ -32,6 +32,8 @@ export class Double2CharArrayMap$MapEntry extends Object implements Double2CharM
     left(arg0: number): DoubleCharPair;
     left(arg0: number): DoubleCharPair;
     leftDouble(): number;
+    right(): string;
+    right(arg0: string): DoubleCharPair;
     right(arg0: string): DoubleCharPair;
     right(): string;
     right(arg0: string): DoubleCharPair;

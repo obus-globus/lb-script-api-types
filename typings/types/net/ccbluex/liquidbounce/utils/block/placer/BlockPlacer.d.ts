@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -24,7 +23,7 @@ import type { Direction } from '../../../../../../net/minecraft/core/Direction.d
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { BlockHitResult } from '../../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 export class BlockPlacer extends ValueGroup implements EventListener {
-    constructor(name: string, module: ClientModule, priority: Priority, slotFinder: Function1<BlockPos, HotbarItemSlot>, allowSupportPlacements: boolean)
+    constructor(name: string, module: ClientModule, priority: Priority, slotFinder: (param0: BlockPos | null) => HotbarItemSlot | null, allowSupportPlacements: boolean)
     // private blockPosCache: BlockPos$MutableBlockPos;
     /**
      * Stores all block positions where blocks should be placed paired with a boolean that is `true`

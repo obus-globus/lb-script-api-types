@@ -22,6 +22,7 @@ export abstract class RegExpPrototypeBuiltins$JSRegExpToStringNode extends JSBui
     constructor(context: JSContext, builtin: JSBuiltin)
     // private getFlagsNode: PropertyGetNode;
     // private getSourceNode: PropertyGetNode;
+    toString(): string;
     toString(thisObj: JSDynamicObject, isObjectNode: IsJSObjectNode, toString1Node: JSToStringNode, toString2Node: JSToStringNode): Object;
     toString(thisNonObj: Object): Object;
 }

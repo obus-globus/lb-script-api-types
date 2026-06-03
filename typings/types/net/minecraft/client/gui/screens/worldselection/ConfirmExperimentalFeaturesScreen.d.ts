@@ -24,6 +24,7 @@ export class ConfirmExperimentalFeaturesScreen extends Screen {
     // private layout: GridLayout;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

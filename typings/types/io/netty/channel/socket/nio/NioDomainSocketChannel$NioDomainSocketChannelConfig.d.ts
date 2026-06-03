@@ -18,6 +18,7 @@ export class NioDomainSocketChannel$NioDomainSocketChannelConfig extends Default
     getMaxBytesPerGatheringWrite(): number;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private getReceiveBufferSize(): number;
     // private getSendBufferSize(): number;
     isAllowHalfClosure(): boolean;

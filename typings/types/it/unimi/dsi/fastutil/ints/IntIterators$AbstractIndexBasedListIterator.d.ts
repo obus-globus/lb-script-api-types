@@ -3,6 +3,7 @@ import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/
 export abstract class IntIterators$AbstractIndexBasedListIterator extends IntIterators$AbstractIndexBasedIterator implements IntListIterator {
     constructor(arg0: number, arg1: number)
     add(arg0: number): void;
+    add(arg0: number): void;
     add(arg0: number, arg1: number): void;
     add(arg0: number): void;
     add(arg0: number): void;
@@ -14,6 +15,7 @@ export abstract class IntIterators$AbstractIndexBasedListIterator extends IntIte
     previousIndex(): number;
     previousInt(): number;
     remove(): void;
+    set(arg0: number): void;
     set(arg0: number): void;
     set(arg0: number, arg1: number): void;
     set(arg0: number): void;

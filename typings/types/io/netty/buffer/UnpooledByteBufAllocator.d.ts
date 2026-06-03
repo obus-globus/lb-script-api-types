@@ -13,7 +13,9 @@ export class UnpooledByteBufAllocator extends AbstractByteBufAllocator implement
     // private disableLeakDetector: boolean;
     // private metric: UnpooledByteBufAllocator$UnpooledByteBufAllocatorMetric;
     // private noCleaner: boolean;
+    compositeDirectBuffer(): ByteBuf[];
     compositeDirectBuffer(arg0: number): ByteBuf[];
+    compositeHeapBuffer(): ByteBuf[];
     compositeHeapBuffer(arg0: number): ByteBuf[];
     decrementDirect(arg0: number): void;
     decrementHeap(arg0: number): void;

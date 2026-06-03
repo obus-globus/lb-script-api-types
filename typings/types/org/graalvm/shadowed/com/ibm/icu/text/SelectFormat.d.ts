@@ -11,9 +11,11 @@ export class SelectFormat extends Format {
     // private pattern: string;
     applyPattern(pattern: string): void;
     equals(obj: Object | null): boolean;
+    format(arg0: Object): string;
     format(keyword: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(keyword: string): string;
     hashCode(): number;
+    parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): Object;
     // private readObject(in_: ObjectInputStream): void;
     // private reset(): void;

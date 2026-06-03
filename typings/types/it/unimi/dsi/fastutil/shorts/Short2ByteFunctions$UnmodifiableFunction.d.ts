@@ -6,6 +6,7 @@ export class Short2ByteFunctions$UnmodifiableFunction extends AbstractShort2Byte
     constructor(arg0: (param0: number) => kotlin.Byte)
     // private function: (param0: number) => kotlin.Byte;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

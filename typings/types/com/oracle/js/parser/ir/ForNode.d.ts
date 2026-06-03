@@ -23,6 +23,8 @@ export class ForNode extends LoopNode {
     readonly modify: JoinPredecessorExpression;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept(visitor: NodeVisitor<LexicalContext>): Node;
+    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     getInit(): Expression;
     getIterator(): Symbol;
@@ -41,5 +43,7 @@ export class ForNode extends LoopNode {
     setIterator(iterator: Symbol): void;
     setModify(lc: LexicalContext, modify: JoinPredecessorExpression): ForNode;
     setTest(lc: LexicalContext, test: JoinPredecessorExpression): ForNode;
+    toString(): string;
     toString(sb: StringBuilder, printTypes: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

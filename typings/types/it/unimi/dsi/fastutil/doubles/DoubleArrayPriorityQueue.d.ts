@@ -25,6 +25,7 @@ export class DoubleArrayPriorityQueue extends Object implements DoublePriorityQu
     dequeueDouble(): number;
     enqueue(arg0: number): void;
     enqueue(arg0: number): void;
+    enqueue(arg0: number): void;
     // private ensureNonEmpty(): void;
     // private findFirst(): number;
     first(): number;

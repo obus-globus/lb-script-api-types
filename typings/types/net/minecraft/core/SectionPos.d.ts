@@ -67,6 +67,7 @@ export class SectionPos extends Vec3i {
     minBlockY(): number;
     minBlockZ(): number;
     offset(x: number, y: number, z: number): SectionPos;
+    offset(vec: Vec3i): Vec3i;
     origin(): BlockPos;
     relativeToBlockPos(relative: number): BlockPos;
     relativeToBlockX(relative: number): number;

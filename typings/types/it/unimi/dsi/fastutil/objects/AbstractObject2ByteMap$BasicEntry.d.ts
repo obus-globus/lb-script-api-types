@@ -12,5 +12,6 @@ export class AbstractObject2ByteMap$BasicEntry<K extends Object | number | strin
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

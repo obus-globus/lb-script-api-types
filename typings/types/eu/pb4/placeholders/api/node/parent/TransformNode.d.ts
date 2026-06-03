@@ -2,6 +2,7 @@ import type { ParserContext } from '../../../../../../eu/pb4/placeholders/api/Pa
 import type { TextNode } from '../../../../../../eu/pb4/placeholders/api/node/TextNode.d.ts'
 import type { ParentNode } from '../../../../../../eu/pb4/placeholders/api/node/parent/ParentNode.d.ts'
 import type { ParentTextNode } from '../../../../../../eu/pb4/placeholders/api/node/parent/ParentTextNode.d.ts'
+import type { NodeParser } from '../../../../../../eu/pb4/placeholders/api/parsers/NodeParser.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
@@ -13,6 +14,10 @@ export class TransformNode extends ParentNode {
     constructor(arg0: TextNode[], arg1: (param0: MutableComponent) => Component)
     // private transform: (param0: MutableComponent) => Component;
     applyFormatting(arg0: MutableComponent, arg1: ParserContext): Component;
+    applyFormatting(arg0: Style, arg1: ParserContext): Style;
     copyWith(arg0: TextNode[]): ParentTextNode;
+    copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
+    copyWith(arg0: E[]): ParentTextNode;
+    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     toString(): string;
 }

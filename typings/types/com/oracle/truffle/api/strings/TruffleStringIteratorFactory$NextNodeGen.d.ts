@@ -7,5 +7,6 @@ export class TruffleStringIteratorFactory$NextNodeGen extends TruffleStringItera
     private constructor()
     // private nextNode__field1_: number;
     // private state_0_: number;
+    execute(it: TruffleStringIterator): number;
     execute(arg0Value: TruffleStringIterator, arg1Value: TruffleString$Encoding): number;
 }

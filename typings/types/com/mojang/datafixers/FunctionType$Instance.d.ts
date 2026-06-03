@@ -33,7 +33,9 @@ export class FunctionType$Instance extends Enum<FunctionType$Instance> implement
     private constructor()
     // private cap(arg0: Procompose<FunctionType$Mu, FunctionType$Mu, A, B, C>): App2<FunctionType$Mu, A, B>;
     compose(arg0: App2<P, B, C>, arg1: () => App2<P, A, B>): App2<P, A, C>;
+    dimap(arg0: App2<FunctionType$Mu, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<FunctionType$Mu, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<FunctionType$Mu, A, B>, App2<FunctionType$Mu, C, D>>;
+    dimap(arg0: () => App2<FunctionType$Mu, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<FunctionType$Mu, C, D>;
     empty(): App2<FunctionType$Mu, void, void>;
     first(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Pair<A, C>, Pair<B, C>>;
     first(arg0: App2<P, A, B>): App2<P, Pair<A, C>, Pair<B, C>>;

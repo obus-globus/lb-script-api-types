@@ -1,3 +1,4 @@
+import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Deflater } from '../../../../../../java/util/zip/Deflater.d.ts'
 import type { DeflaterOutputStream } from '../../../../../../java/util/zip/DeflaterOutputStream.d.ts'
@@ -11,5 +12,9 @@ export class DeflateCompressorOutputStream extends CompressorOutputStream<Deflat
     close(): void;
     finish(): void;
     flush(): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
 }

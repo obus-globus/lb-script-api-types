@@ -11,6 +11,7 @@ export class SizeFileFilter extends AbstractFileFilter implements Serializable {
     // private acceptLarger: boolean;
     // private size: number;
     accept(arg0: File): boolean;
+    accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
     // private accept(arg0: number): boolean;
     toString(): string;

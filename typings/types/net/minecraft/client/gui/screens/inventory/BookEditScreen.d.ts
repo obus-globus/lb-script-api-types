@@ -3,6 +3,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { ActiveTextCollector } from '../../../../../../net/minecraft/client/gui/ActiveTextCollector.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { MultiLineEditBox } from '../../../../../../net/minecraft/client/gui/components/MultiLineEditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -51,6 +52,7 @@ export class BookEditScreen extends Screen {
     // private getNumPages(): number;
     // private getPageNumberMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     isInGameUi(): boolean;
     keyPressed(event: KeyEvent): boolean;
     // private menuControlsTop(): number;
@@ -58,6 +60,7 @@ export class BookEditScreen extends Screen {
     // private pageForward(): void;
     // private saveChanges(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     // private updateButtonVisibility(): void;
     // private updateLocalCopy(): void;
     // private updatePageContent(): void;

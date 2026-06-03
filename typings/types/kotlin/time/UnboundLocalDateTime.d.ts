@@ -1,5 +1,4 @@
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { UnboundLocalDateTime$Companion } from '../../kotlin/time/UnboundLocalDateTime$Companion.d.ts'
 export class UnboundLocalDateTime extends Object {
     static Companion: UnboundLocalDateTime$Companion;
@@ -11,6 +10,6 @@ export class UnboundLocalDateTime extends Object {
     readonly nanosecond: number;
     readonly second: number;
     readonly year: number;
-    toInstant<T extends Object | number | string | boolean>(offsetSeconds: number, buildInstant: Function2<number, number, T>): T;
+    toInstant<T extends Object | number | string | boolean>(offsetSeconds: number, buildInstant: (param0: number, param1: number) => T): T;
     toString(): string;
 }

@@ -72,6 +72,7 @@ export class Int2ByteFunctions$PrimitiveFunction extends Object implements Int2B
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
+    put(arg0: number, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: number): number;
 }

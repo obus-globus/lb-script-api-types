@@ -13,7 +13,7 @@ import type { FileSystem } from '../okio/FileSystem.d.ts'
 import type { HashingSink } from '../okio/HashingSink.d.ts'
 import type { HashingSource } from '../okio/HashingSource.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
-import type { Socket } from '../okio/Socket.d.ts'
+import type { Socket as Socket_2 } from '../okio/Socket.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 export class Okio__JvmOkioKt extends Object {
     static appendingSink(paramarg0: File): Sink;
@@ -30,7 +30,7 @@ export class Okio__JvmOkioKt extends Object {
     static sink(paramarg0: OutputStream): Sink;
     static sink(paramarg0: Socket): Sink;
     static sink(paramarg0: Path[][], paramarg1: (Object | null)[]): Sink;
-    static socket(paramarg0: Socket): Socket;
+    static socket(paramarg0: Socket): Socket_2;
     static source(paramarg0: File): Source;
     static source(paramarg0: InputStream): Source;
     static source(paramarg0: Socket): Source;

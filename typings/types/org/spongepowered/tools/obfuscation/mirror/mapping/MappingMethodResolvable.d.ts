@@ -5,6 +5,7 @@ export class MappingMethodResolvable extends MappingMethod {
     // private ownerHandle: TypeHandle;
     copy(): MappingMethod;
     getSuper(): MappingMethod;
+    move(arg0: string): MappingMethod;
     move(arg0: TypeHandle): MappingMethod;
     remap(arg0: string): MappingMethod;
     transform(arg0: string): MappingMethod;

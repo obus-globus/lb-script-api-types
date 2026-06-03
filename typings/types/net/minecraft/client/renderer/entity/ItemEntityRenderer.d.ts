@@ -18,6 +18,7 @@ export class ItemEntityRenderer extends EntityRenderer<ItemEntity, ItemEntityRen
     // private itemModelResolver: ItemModelResolver;
     // private random: RandomSource;
     createRenderState(): ItemEntityRenderState;
+    createRenderState(entity: ItemEntity, partialTicks: number): ItemEntityRenderState;
     extractRenderState(entity: ItemEntity, state: ItemEntityRenderState, partialTicks: number): void;
     submit(state: ItemEntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

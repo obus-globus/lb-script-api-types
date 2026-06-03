@@ -3,7 +3,7 @@ import type { IntConsumer } from '../../../../../it/unimi/dsi/fastutil/ints/IntC
 import type { IntSpliterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntSpliterator.d.ts'
 import type { Reference2IntOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2IntOpenCustomHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
+import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Reference2IntOpenCustomHashMap$ValueSpliterator extends Reference2IntOpenCustomHashMap$MapSpliterator<Object, Object> implements IntSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;

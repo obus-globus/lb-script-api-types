@@ -11,5 +11,6 @@ export abstract class AbstractHoglinRenderer<T extends Mob & HoglinBase> extends
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, adultLayer: ModelLayerLocation, babyLayer: ModelLayerLocation, shadow: number)
     createRenderState(): HoglinRenderState;
+    createRenderState(entity: T, partialTicks: number): HoglinRenderState;
     extractRenderState(entity: T, state: HoglinRenderState, partialTicks: number): void;
 }

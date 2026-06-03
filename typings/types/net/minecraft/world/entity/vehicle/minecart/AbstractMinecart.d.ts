@@ -81,6 +81,7 @@ export abstract class AbstractMinecart extends VehicleEntity {
     addAdditionalSaveData(output: ValueOutput): void;
     animateHurt(yaw: number): void;
     applyEffectsFromBlocks(): void;
+    applyEffectsFromBlocks(from: Vec3, to: Vec3): void;
     applyGravity(): void;
     applyNaturalSlowdown(movement: Vec3): Vec3;
     canCollideWith(entity: Entity): boolean;
@@ -118,7 +119,9 @@ export abstract class AbstractMinecart extends VehicleEntity {
     makeStepAlongTrack(pos: BlockPos, shape: RailShape, movementLeft: number): number;
     move(moverType: MoverType, delta: Vec3): void;
     moveAlongTrack(level: ServerLevel): void;
+    push(xa: number, ya: number, za: number): void;
     push(entity: Entity): void;
+    push(impulse: Vec3): void;
     // private pushOtherMinecart(otherMinecart: AbstractMinecart, xa: number, za: number): void;
     readAdditionalSaveData(input: ValueInput): void;
     reapplyPosition(): void;

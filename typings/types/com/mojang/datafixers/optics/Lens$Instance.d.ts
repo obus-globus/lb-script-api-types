@@ -9,11 +9,14 @@ import type { FunctorProfunctor } from '../../../../com/mojang/datafixers/optics
 import type { FunctorProfunctor$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/FunctorProfunctor$Mu.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Lens$Instance<A2 extends Object | number | string | boolean, B2 extends Object | number | string | boolean> extends Object implements Cartesian<Lens$Mu<A2, B2>, Cartesian$Mu> {
     static unbox(paramarg0: App<Object, Object>): Cartesian<Object, Object>;
     constructor()
+    dimap(arg0: App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Lens$Mu<A2, B2>, A, B>, App2<Lens$Mu<A2, B2>, C, D>>;
+    dimap(arg0: () => App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
     first(arg0: App2<Lens$Mu<A2, B2>, A, B>): App2<Lens$Mu<A2, B2>, Pair<A, C>, Pair<B, C>>;
     second(arg0: App2<Lens$Mu<A2, B2>, A, B>): App2<Lens$Mu<A2, B2>, Pair<C, A>, Pair<C, B>>;
     second(arg0: App2<P, A, B>): App2<P, Pair<C, A>, Pair<C, B>>;

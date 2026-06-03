@@ -8,6 +8,7 @@ import type { ClientAvatarState } from '../../../../net/minecraft/client/entity/
 import type { PlayerSkinRenderCache } from '../../../../net/minecraft/client/renderer/PlayerSkinRenderCache.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { EquipmentSlot } from '../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
@@ -112,6 +113,7 @@ export class ClientMannequin extends Mannequin implements ClientAvatarEntity {
     belowNameDisplay(): Component;
     getParrotVariantOnShoulder(left: boolean): Parrot$Variant;
     getSkin(): PlayerSkin;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     // private setSkin(skin: PlayerSkin): void;
     showExtraEars(): boolean;

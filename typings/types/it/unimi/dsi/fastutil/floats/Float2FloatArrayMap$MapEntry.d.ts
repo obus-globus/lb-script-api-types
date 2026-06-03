@@ -32,6 +32,8 @@ export class Float2FloatArrayMap$MapEntry extends Object implements Float2FloatM
     left(arg0: number): FloatFloatPair;
     left(arg0: number): FloatFloatPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatFloatPair;
     right(arg0: number): FloatFloatPair;
     right(): number;
     right(arg0: number): FloatFloatPair;

@@ -21,5 +21,6 @@ export abstract class ClassSignature$SignatureParser$TokenElement extends ClassS
     visitClassType(arg0: string): void;
     visitInnerClassType(arg0: string): void;
     visitInterfaceBound(): SignatureVisitor;
+    visitTypeArgument(): void;
     visitTypeArgument(arg0: string): SignatureVisitor;
 }

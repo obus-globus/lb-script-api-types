@@ -19,6 +19,7 @@ export class AgeFileFilter extends AbstractFileFilter implements Serializable {
     // private acceptOlder: boolean;
     // private cutoffInstant: Instant;
     accept(arg0: File): boolean;
+    accept(arg0: File, arg1: string): boolean;
     accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
     toString(): string;
 }

@@ -9,4 +9,5 @@ export class EntityPacketRewriter1_20_3 extends EntityRewriter<ClientboundPacket
     registerRewrites(): void;
     // private sendChunksSentGameEvent(arg0: PacketWrapper): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

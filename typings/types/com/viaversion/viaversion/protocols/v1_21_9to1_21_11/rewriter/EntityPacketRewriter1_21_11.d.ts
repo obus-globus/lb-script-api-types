@@ -10,4 +10,5 @@ export class EntityPacketRewriter1_21_11 extends EntityRewriter<ClientboundPacke
     registerRewrites(): void;
     // private relativeToAbsoluteTicks(arg0: EntityDataHandlerEvent, arg1: EntityData): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

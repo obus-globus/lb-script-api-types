@@ -5,5 +5,6 @@ export class TruffleStringFactory$FromIntArrayUTF32NodeGen extends TruffleString
     static getUncached(): TruffleString$FromIntArrayUTF32Node;
     private constructor()
     // private state_0_: number;
+    execute(value: number[]): TruffleString;
     execute(arg0Value: number[], arg1Value: number, arg2Value: number): TruffleString;
 }

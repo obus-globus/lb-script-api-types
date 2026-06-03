@@ -19,11 +19,15 @@ export class ByteIntMutablePair extends Object implements ByteIntPair, Serializa
     key(arg0: number): ByteIntPair;
     key(arg0: number): ByteIntPair;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteIntPair;
     left(arg0: number): ByteIntMutablePair;
     left(): number;
     left(arg0: number): ByteIntPair;
     left(arg0: number): ByteIntPair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteIntPair;
     right(arg0: number): ByteIntMutablePair;
     right(): number;
     right(arg0: number): ByteIntPair;

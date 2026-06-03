@@ -8,8 +8,11 @@ export class Char2ReferenceFunctions$Singleton<V extends Object | number | strin
     // private value: V;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
+    get(arg0: Object): V;
     get(arg0: string): V;
+    getOrDefault(arg0: Object, arg1: V): V;
     getOrDefault(arg0: string, arg1: V): V;
     size(): number;
 }

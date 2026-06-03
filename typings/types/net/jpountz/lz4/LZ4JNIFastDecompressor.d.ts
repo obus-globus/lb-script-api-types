@@ -3,6 +3,11 @@ import type { LZ4FastDecompressor } from '../../../net/jpountz/lz4/LZ4FastDecomp
 export class LZ4JNIFastDecompressor extends LZ4FastDecompressor {
     static INSTANCE: LZ4JNIFastDecompressor;
     constructor()
+    decompress(arg0: ByteBuffer, arg1: ByteBuffer): void;
     decompress(arg0: ByteBuffer, arg1: number, arg2: ByteBuffer, arg3: number, arg4: number): number;
+    decompress(arg0: number[], arg1: number[]): number;
+    decompress(arg0: number[], arg1: number[], arg2: number): number;
+    decompress(arg0: number[], arg1: number): number[];
     decompress(arg0: number[], arg1: number, arg2: number[], arg3: number, arg4: number): number;
+    decompress(arg0: number[], arg1: number, arg2: number): number[];
 }

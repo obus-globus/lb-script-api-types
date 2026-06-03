@@ -34,6 +34,7 @@ export class ReadAheadInputStream extends FilterInputStream {
     // private closeUnderlyingInputStreamIfNecessary(): void;
     // private isEndOfStream(): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readAsync(): void;
     // private signalAsyncReadComplete(): void;

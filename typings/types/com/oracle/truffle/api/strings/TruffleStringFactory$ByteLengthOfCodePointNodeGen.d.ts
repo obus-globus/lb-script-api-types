@@ -7,5 +7,6 @@ export class TruffleStringFactory$ByteLengthOfCodePointNodeGen extends TruffleSt
     static getUncached(): TruffleString$ByteLengthOfCodePointNode;
     private constructor()
     // private state_0_: number;
+    execute(a: AbstractTruffleString, byteIndex: number, expectedEncoding: TruffleString$Encoding): number;
     execute(arg0Value: AbstractTruffleString, arg1Value: number, arg2Value: TruffleString$Encoding, arg3Value: TruffleString$ErrorHandling): number;
 }

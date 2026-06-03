@@ -13,6 +13,7 @@ export class DirectMethodHandle extends MethodHandle {
     copyWith(arg0: MethodType, arg1: LambdaForm): MethodHandle;
     // private ensureInitialized(): void;
     internalMemberName(): MemberName;
+    internalProperties(): Object;
     internalProperties(arg0: number): string;
     isCrackable(): boolean;
     rebind(): BoundMethodHandle;

@@ -15,6 +15,8 @@ import type { AttributeSupplier$Builder } from '../../../../../net/minecraft/wor
 import type { Raider } from '../../../../../net/minecraft/world/entity/raid/Raider.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { ClipContext$Block } from '../../../../../net/minecraft/world/level/ClipContext$Block.d.ts'
+import type { ClipContext$Fluid } from '../../../../../net/minecraft/world/level/ClipContext$Fluid.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
@@ -157,6 +159,7 @@ export class Ravager extends Raider {
     getStunnedTick(): number;
     handleEntityEvent(id: number): void;
     hasLineOfSight(target: Entity): boolean;
+    hasLineOfSight(target: Entity, blockCollidingContext: ClipContext$Block, fluidCollidingContext: ClipContext$Fluid, eyeHeight: number): boolean;
     isImmobile(): boolean;
     playStepSound(pos: BlockPos, blockState: BlockState): void;
     readAdditionalSaveData(input: ValueInput): void;

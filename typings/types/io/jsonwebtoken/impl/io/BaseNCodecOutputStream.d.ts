@@ -14,6 +14,7 @@ export class BaseNCodecOutputStream extends FilterOutputStream {
     flush(): void;
     // private flush(arg0: boolean): void;
     isStrictDecoding(): boolean;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

@@ -16,6 +16,7 @@ export class CreativeModeInventoryScreen$SlotWrapper extends Slot {
     onTake(player: Player, carried: ItemStack): void;
     remove(amount: number): ItemStack;
     set(itemStack: ItemStack): void;
+    setByPlayer(itemStack: ItemStack): void;
     setByPlayer(itemStack: ItemStack, previous: ItemStack): void;
     setChanged(): void;
 }

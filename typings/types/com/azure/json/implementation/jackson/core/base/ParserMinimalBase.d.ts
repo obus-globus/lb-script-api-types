@@ -4,6 +4,7 @@ import type { JsonParser } from '../../../../../../../com/azure/json/implementat
 import type { JsonStreamContext } from '../../../../../../../com/azure/json/implementation/jackson/core/JsonStreamContext.d.ts'
 import type { JsonToken } from '../../../../../../../com/azure/json/implementation/jackson/core/JsonToken.d.ts'
 import type { ByteArrayBuilder } from '../../../../../../../com/azure/json/implementation/jackson/core/util/ByteArrayBuilder.d.ts'
+import type { Writer } from '../../../../../../../java/io/Writer.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../../java/lang/Throwable.d.ts'
@@ -11,6 +12,7 @@ export abstract class ParserMinimalBase extends JsonParser {
     constructor(arg0: number)
     // private _currToken: JsonToken;
     // private _lastClearedToken: JsonToken;
+    _constructError(arg0: string): JsonParseException;
     _constructError(arg0: string, arg1: Throwable): JsonParseException;
     _decodeBase64(arg0: string, arg1: ByteArrayBuilder, arg2: Base64Variant): void;
     _handleEOF(): void;
@@ -35,6 +37,7 @@ export abstract class ParserMinimalBase extends JsonParser {
     close(): void;
     currentToken(): JsonToken;
     currentTokenId(): number;
+    getBinaryValue(): number[];
     getBinaryValue(arg0: Base64Variant): number[];
     getCurrentName(): string;
     getCurrentToken(): JsonToken;
@@ -42,10 +45,13 @@ export abstract class ParserMinimalBase extends JsonParser {
     getLastClearedToken(): JsonToken;
     getParsingContext(): JsonStreamContext;
     getText(): string;
+    getText(arg0: Writer): number;
     getTextCharacters(): string[];
     getTextLength(): number;
     getTextOffset(): number;
+    getValueAsBoolean(): boolean;
     getValueAsBoolean(arg0: boolean): boolean;
+    getValueAsDouble(): number;
     getValueAsDouble(arg0: number): number;
     getValueAsInt(): number;
     getValueAsInt(arg0: number): number;

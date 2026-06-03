@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/Pair.d.ts'
 import type { Object2IntMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2IntMap$Entry.d.ts'
 import type { ObjectIntPair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectIntPair.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2IntLinkedOpenHashMap$MapEntry extends Object implements Obje
     getIntValue(): number;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    right(): number;
+    right(arg0: number): ObjectIntPair<K>;
     right(arg0: number): ObjectIntPair<K>;
     right(): number;
     right(arg0: number): ObjectIntPair<K>;

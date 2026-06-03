@@ -16,7 +16,9 @@ export class BufferedWriter extends Writer {
     // private growIfNeeded(arg0: number): void;
     // private min(arg0: number, arg1: number): number;
     newLine(): void;
+    write(arg0: string[]): void;
     write(arg0: string[], arg1: number, arg2: number): void;
     write(arg0: number): void;
+    write(arg0: string): void;
     write(arg0: string, arg1: number, arg2: number): void;
 }

@@ -29,6 +29,7 @@ export class IsoChronology extends AbstractChronology implements Serializable {
     dateNow(arg0: ZoneId): LocalDate;
     dateYearDay(arg0: Era, arg1: number, arg2: number): LocalDate;
     dateYearDay(arg0: number, arg1: number): LocalDate;
+    epochSecond(arg0: Era, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: ZoneOffset): number;
     epochSecond(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: ZoneOffset): number;
     eraOf(arg0: number): IsoEra;
     eras(): Era[];

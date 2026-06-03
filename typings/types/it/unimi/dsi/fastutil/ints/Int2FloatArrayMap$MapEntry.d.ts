@@ -32,6 +32,8 @@ export class Int2FloatArrayMap$MapEntry extends Object implements Int2FloatMap$E
     left(arg0: number): IntFloatPair;
     left(arg0: number): IntFloatPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntFloatPair;
     right(arg0: number): IntFloatPair;
     right(): number;
     right(arg0: number): IntFloatPair;

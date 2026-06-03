@@ -4,5 +4,6 @@ export class Crc32cHashFunction extends AbstractHashFunction {
     constructor()
     bits(): number;
     newHasher(): Hasher;
+    newHasher(expectedInputSize: number): Hasher;
     toString(): string;
 }

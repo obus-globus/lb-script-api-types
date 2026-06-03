@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
@@ -17,7 +16,7 @@ import type { ItemSlot } from '../../../../../net/ccbluex/liquidbounce/utils/inv
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:27}
  */
 export class AnchoredHotbarSwapController extends Object implements EventListener {
-    constructor(owner: EventListener, inventoryConstraints: InventoryConstraints, swapDelayProvider: Function0<number>, anchorHotbarSlotResolver: Function0<HotbarItemSlot>)
+    constructor(owner: EventListener, inventoryConstraints: InventoryConstraints, swapDelayProvider: () => number, anchorHotbarSlotResolver: () => HotbarItemSlot)
     // private anchorHotbarSlot: HotbarItemSlot | null;
     // private anchorHotbarSlotResolver: () => HotbarItemSlot;
     // private anchorSwapAction: InventoryAction | null;

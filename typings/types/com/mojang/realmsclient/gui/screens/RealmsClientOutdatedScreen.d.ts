@@ -23,6 +23,7 @@ export class RealmsClientOutdatedScreen extends RealmsScreen {
     // private layout: HeaderAndFooterLayout;
     // private getErrorMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     repositionElements(): void;
 }

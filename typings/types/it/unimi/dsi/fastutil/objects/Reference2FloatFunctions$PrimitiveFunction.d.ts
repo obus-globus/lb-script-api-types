@@ -68,6 +68,7 @@ export class Reference2FloatFunctions$PrimitiveFunction<K extends Object | numbe
     put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
+    put(arg0: K, arg1: number): number;
     remove(arg0: Object): number;
     removeFloat(arg0: Object): number;
 }

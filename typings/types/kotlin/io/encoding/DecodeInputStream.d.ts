@@ -18,6 +18,7 @@ export class DecodeInputStream extends InputStream {
     // private decodeSymbolBufferInto(dst: number[], dstOffset: number, dstEndIndex: number, symbolBufferLength: number): number;
     // private handlePaddingSymbol(symbolBufferLength: number): number;
     read(): number;
+    read(arg0: number[]): number;
     read(destination: number[], offset: number, length: number): number;
     // private readNextSymbol(): number;
     // private resetByteBufferIfEmpty(): void;

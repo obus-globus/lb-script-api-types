@@ -5,6 +5,7 @@ import type { BSPResult } from '../../../../../../../../../net/caffeinemc/mods/s
 import type { BSPSortState } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/BSPSortState.d.ts'
 import type { InnerPartitionBSPNode } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/InnerPartitionBSPNode.d.ts'
 import type { InnerPartitionBSPNode$NodeReuseData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/InnerPartitionBSPNode$NodeReuseData.d.ts'
+import type { NativeBuffer } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/util/NativeBuffer.d.ts'
 import type { SectionPos } from '../../../../../../../../../net/minecraft/core/SectionPos.d.ts'
 import type { Vector3fc } from '../../../../../../../../../org/joml/Vector3fc.d.ts'
 export class InnerMultiPartitionBSPNode extends InnerPartitionBSPNode {
@@ -18,4 +19,5 @@ export class InnerMultiPartitionBSPNode extends InnerPartitionBSPNode {
     // private collectPartitionQuads(arg0: BSPSortState, arg1: number, arg2: Vector3fc): void;
     // private collectPlaneQuads(arg0: BSPSortState, arg1: number): void;
     collectSortedQuads(arg0: BSPSortState, arg1: Vector3fc): void;
+    collectSortedQuads(arg0: NativeBuffer, arg1: Vector3fc): void;
 }

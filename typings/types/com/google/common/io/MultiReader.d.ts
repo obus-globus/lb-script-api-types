@@ -1,5 +1,6 @@
 import type { CharSource } from '../../../../com/google/common/io/CharSource.d.ts'
 import type { Reader } from '../../../../java/io/Reader.d.ts'
+import type { CharBuffer } from '../../../../java/nio/CharBuffer.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class MultiReader extends Reader {
@@ -10,6 +11,9 @@ export class MultiReader extends Reader {
     // private it: Iterator<CharSource>;
     // private advance(): void;
     close(): void;
+    read(): number;
+    read(arg0: CharBuffer): number;
+    read(arg0: string[]): number;
     read(cbuf: string[], off: number, len: number): number;
     ready(): boolean;
     skip(n: number): number;

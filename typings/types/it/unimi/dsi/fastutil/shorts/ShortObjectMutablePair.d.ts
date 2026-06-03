@@ -19,6 +19,8 @@ export class ShortObjectMutablePair<V extends Object | number | string | boolean
     key(arg0: number): ShortObjectPair<V>;
     key(arg0: number): ShortObjectPair<V>;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortObjectPair<V>;
     left(arg0: number): ShortObjectMutablePair<V>;
     left(): number;
     left(arg0: number): ShortObjectPair<V>;

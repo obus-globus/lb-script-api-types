@@ -10,6 +10,7 @@ export class WanderingTraderRenderer extends MobRenderer<WanderingTrader, Villag
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): VillagerRenderState;
+    createRenderState(entity: WanderingTrader, partialTicks: number): VillagerRenderState;
     extractRenderState(entity: WanderingTrader, state: VillagerRenderState, partialTicks: number): void;
     getTextureLocation(state: VillagerRenderState): Identifier;
 }

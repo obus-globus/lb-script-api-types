@@ -3,12 +3,14 @@ import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { BlockAttachedEntity } from '../../../../../net/minecraft/world/entity/decoration/BlockAttachedEntity.d.ts'
 import type { ItemEntity } from '../../../../../net/minecraft/world/entity/item/ItemEntity.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Mirror } from '../../../../../net/minecraft/world/level/block/Mirror.d.ts'
 import type { Rotation } from '../../../../../net/minecraft/world/level/block/Rotation.d.ts'
@@ -65,12 +67,16 @@ export abstract class HangingEntity extends BlockAttachedEntity {
     getPopBox(): AABB;
     hasLevelCollision(popBox: AABB): boolean;
     mirror(mirror: Mirror): number;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playPlacementSound(): void;
     recalculateBoundingBox(): void;
     rotate(rotation: Rotation): number;
     setDirection(direction: Direction): void;
     setDirectionRaw(direction: Direction): void;
+    spawnAtLocation(level: ServerLevel, itemStack: ItemStack): ItemEntity;
     spawnAtLocation(level: ServerLevel, itemStack: ItemStack, yOffs: number): ItemEntity;
+    spawnAtLocation(level: ServerLevel, itemStack: ItemStack, offset: Vec3): ItemEntity;
+    spawnAtLocation(level: ServerLevel, resource: ItemLike): ItemEntity;
     survives(): boolean;
 }

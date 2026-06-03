@@ -35,8 +35,10 @@ export class DataResult$Success<R extends Object | number | string | boolean> ex
     equals(arg0: Object | null): boolean;
     error(): Optional<DataResult$Error<R>>;
     flatMap(arg0: (param0: R) => DataResult<R2>): DataResult<R2>;
+    getOrThrow(): R;
     getOrThrow(arg0: (param0: string) => E): R;
     getOrThrow(): R;
+    getPartialOrThrow(): R;
     getPartialOrThrow(arg0: (param0: string) => E): R;
     getPartialOrThrow(): R;
     hasResultOrPartial(): boolean;

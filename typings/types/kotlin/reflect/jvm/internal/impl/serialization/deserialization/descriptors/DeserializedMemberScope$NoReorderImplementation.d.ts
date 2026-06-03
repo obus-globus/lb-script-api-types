@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
 import type { SimpleFunctionDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SimpleFunctionDescriptor.d.ts'
 import type { TypeAliasDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeAliasDescriptor.d.ts'
@@ -26,7 +25,7 @@ export class DeserializedMemberScope$NoReorderImplementation extends Object impl
     // private typeAliasList: ProtoBuf$TypeAlias[];
     // private typeAliasesByName$delegate: NotNullLazyValue<Object>;
     // private variableNames$delegate: NotNullLazyValue<Object>;
-    addFunctionsAndPropertiesTo(arg0: E[], arg1: DescriptorKindFilter, arg2: Function1<Name, boolean>, arg3: LookupLocation): void;
+    addFunctionsAndPropertiesTo(arg0: E[], arg1: DescriptorKindFilter, arg2: (param0: Name) => boolean, arg3: LookupLocation): void;
     // private computeAllNonDeclaredFunctions(): SimpleFunctionDescriptor[];
     // private computeAllNonDeclaredProperties(): PropertyDescriptor[];
     // private computeFunctions(): SimpleFunctionDescriptor[];

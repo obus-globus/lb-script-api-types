@@ -8,6 +8,7 @@ import type { Vector3f } from '../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../org/joml/Vector3fc.d.ts'
 export interface Matrix3x2fc extends Object{
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix3x2fc, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: FloatBuffer): FloatBuffer;

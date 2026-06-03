@@ -6,6 +6,7 @@ export abstract class MainCoroutineDispatcher extends CoroutineDispatcher {
     static Key: CoroutineDispatcher$Key;
     constructor()
     readonly immediate: MainCoroutineDispatcher;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     toString(): string;
     protected toStringInternalImpl(): string | null;

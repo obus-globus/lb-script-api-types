@@ -125,6 +125,8 @@ export interface CallableStatement extends PreparedStatement, Object{
     setNString(arg0: string, arg1: string): void;
     setNull(arg0: string, arg1: number): void;
     setNull(arg0: string, arg1: number, arg2: string): void;
+    setObject(arg0: number, arg1: Object, arg2: SQLType): void;
+    setObject(arg0: number, arg1: Object, arg2: SQLType, arg3: number): void;
     setObject(arg0: string, arg1: Object): void;
     setObject(arg0: string, arg1: Object, arg2: SQLType): void;
     setObject(arg0: string, arg1: Object, arg2: SQLType, arg3: number): void;

@@ -1,7 +1,5 @@
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../../kotlin/jvm/functions/Function2.d.ts'
-import type { Function4 } from '../../../../../kotlin/jvm/functions/Function4.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { BedRule } from '../../../../../net/minecraft/world/attribute/BedRule.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -19,7 +17,7 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:77}
      */
-    static forEachBlock(levelChunkSection: LevelChunkSection, action: Function4<Object, Object, Object, Object, void>): void;
+    static forEachBlock(levelChunkSection: LevelChunkSection, action: (param0: Object | null, param1: Object | null, param2: Object | null, param3: Object | null) => void): void;
     /**
      * Iterates all blocks in a specific section index and exposes world-space block positions.
      *
@@ -29,7 +27,7 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:56}
      */
-    static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: Function2<Object, Object, void>): void;
+    static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: Object | null, param1: Object | null) => void): void;
     static getBedRule(paramarg0: Level): BedRule;
     static getEntitiesInCuboid(entityGetter: EntityGetter, midPos: Vec3, range: number, exclusion: Entity, predicate: (param0: Entity) => kotlin.Boolean): Entity[];
     /**

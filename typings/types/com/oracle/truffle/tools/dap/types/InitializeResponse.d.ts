@@ -12,4 +12,5 @@ export class InitializeResponse extends Response {
     getBody(): Capabilities;
     hashCode(): number;
     setBody(body: Capabilities): InitializeResponse;
+    setBody(body: Object): Response;
 }

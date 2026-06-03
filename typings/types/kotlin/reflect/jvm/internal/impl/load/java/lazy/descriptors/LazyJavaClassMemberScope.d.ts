@@ -1,4 +1,3 @@
-import type { Function1 } from '../../../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { CallableDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -45,35 +44,35 @@ export class LazyJavaClassMemberScope extends LazyJavaScope {
     // private skipRefinement: boolean;
     // private addAnnotationValueParameter(arg0: ValueParameterDescriptor[], arg1: ConstructorDescriptor, arg2: number, arg3: JavaMethod, arg4: KotlinType, arg5: KotlinType): void;
     // private addFunctionFromSupertypes(arg0: E[], arg1: Name, arg2: E[], arg3: boolean): void;
-    // private addOverriddenSpecialMethods(arg0: Name, arg1: E[], arg2: E[], arg3: E[], arg4: Function1<Name, E[]>): void;
-    // private addPropertyOverrideByMethod(arg0: PropertyDescriptor[], arg1: E[], arg2: PropertyDescriptor[], arg3: Function1<Name, E[]>): void;
+    // private addOverriddenSpecialMethods(arg0: Name, arg1: E[], arg2: E[], arg3: E[], arg4: (param0: Name) => E[]): void;
+    // private addPropertyOverrideByMethod(arg0: PropertyDescriptor[], arg1: E[], arg2: PropertyDescriptor[], arg3: (param0: Name) => E[]): void;
     // private computeAnnotationProperties(arg0: Name, arg1: E[]): void;
-    computeClassNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
-    computeFunctionNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computeClassNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
+    computeFunctionNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeImplicitlyDeclaredFunctions(arg0: E[], arg1: Name): void;
     computeMemberIndex(): ClassDeclaredMemberIndex;
     computeNonDeclaredFunctions(arg0: E[], arg1: Name): void;
     computeNonDeclaredProperties(arg0: Name, arg1: E[]): void;
-    computePropertyNames(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): Name[];
+    computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     // private computeSupertypes(): E[];
     // private createAnnotationConstructorParameters(arg0: ClassConstructorDescriptorImpl): ValueParameterDescriptor[];
     // private createDefaultConstructor(): ClassConstructorDescriptor;
     // private createDefaultRecordConstructor(): ClassConstructorDescriptor;
     // private createHiddenCopyIfBuiltinAlreadyAccidentallyOverridden(arg0: SimpleFunctionDescriptor, arg1: CallableDescriptor, arg2: E[]): SimpleFunctionDescriptor;
-    // private createOverrideForBuiltinFunctionWithErasedParameterIfNeeded(arg0: FunctionDescriptor, arg1: Function1<Name, E[]>): SimpleFunctionDescriptor;
-    // private createPropertyDescriptorByMethods(arg0: PropertyDescriptor, arg1: Function1<Name, E[]>): JavaPropertyDescriptor;
+    // private createOverrideForBuiltinFunctionWithErasedParameterIfNeeded(arg0: FunctionDescriptor, arg1: (param0: Name) => E[]): SimpleFunctionDescriptor;
+    // private createPropertyDescriptorByMethods(arg0: PropertyDescriptor, arg1: (param0: Name) => E[]): JavaPropertyDescriptor;
     // private createPropertyDescriptorWithDefaultGetter(arg0: JavaMethod, arg1: KotlinType, arg2: Modality): JavaPropertyDescriptor;
     // private createRecordConstructorParameters(arg0: ClassConstructorDescriptorImpl): ValueParameterDescriptor[];
     // private createRenamedCopy(arg0: SimpleFunctionDescriptor, arg1: Name): SimpleFunctionDescriptor;
     // private createSuspendView(arg0: SimpleFunctionDescriptor): SimpleFunctionDescriptor;
-    // private doesClassOverridesProperty(arg0: PropertyDescriptor, arg1: Function1<Name, E[]>): boolean;
+    // private doesClassOverridesProperty(arg0: PropertyDescriptor, arg1: (param0: Name) => E[]): boolean;
     // private doesOverride(arg0: CallableDescriptor, arg1: CallableDescriptor): boolean;
     // private doesOverrideRenamedBuiltins(arg0: SimpleFunctionDescriptor): boolean;
     // private doesOverrideRenamedDescriptor(arg0: SimpleFunctionDescriptor, arg1: FunctionDescriptor): boolean;
     // private doesOverrideSuspendFunction(arg0: SimpleFunctionDescriptor): boolean;
-    // private findGetterByName(arg0: PropertyDescriptor, arg1: string, arg2: Function1<Name, E[]>): SimpleFunctionDescriptor;
-    // private findGetterOverride(arg0: PropertyDescriptor, arg1: Function1<Name, E[]>): SimpleFunctionDescriptor;
-    // private findSetterOverride(arg0: PropertyDescriptor, arg1: Function1<Name, E[]>): SimpleFunctionDescriptor;
+    // private findGetterByName(arg0: PropertyDescriptor, arg1: string, arg2: (param0: Name) => E[]): SimpleFunctionDescriptor;
+    // private findGetterOverride(arg0: PropertyDescriptor, arg1: (param0: Name) => E[]): SimpleFunctionDescriptor;
+    // private findSetterOverride(arg0: PropertyDescriptor, arg1: (param0: Name) => E[]): SimpleFunctionDescriptor;
     // private getConstructorVisibility(arg0: ClassDescriptor): DescriptorVisibility;
     getConstructors$descriptors_jvm(): NotNullLazyValue<ClassConstructorDescriptor[]>;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
@@ -86,9 +85,9 @@ export class LazyJavaClassMemberScope extends LazyJavaScope {
     // private hasSameJvmDescriptorButDoesNotOverride(arg0: SimpleFunctionDescriptor, arg1: FunctionDescriptor): boolean;
     isVisibleAsFunction(arg0: JavaMethodDescriptor): boolean;
     // private isVisibleAsFunctionInCurrentClass(arg0: SimpleFunctionDescriptor): boolean;
-    // private obtainOverrideForBuiltInWithErasedValueParametersInJava(arg0: SimpleFunctionDescriptor, arg1: Function1<Name, E[]>, arg2: E[]): SimpleFunctionDescriptor;
-    // private obtainOverrideForBuiltinWithDifferentJvmName(arg0: SimpleFunctionDescriptor, arg1: Function1<Name, E[]>, arg2: Name, arg3: E[]): SimpleFunctionDescriptor;
-    // private obtainOverrideForSuspend(arg0: SimpleFunctionDescriptor, arg1: Function1<Name, E[]>): SimpleFunctionDescriptor;
+    // private obtainOverrideForBuiltInWithErasedValueParametersInJava(arg0: SimpleFunctionDescriptor, arg1: (param0: Name) => E[], arg2: E[]): SimpleFunctionDescriptor;
+    // private obtainOverrideForBuiltinWithDifferentJvmName(arg0: SimpleFunctionDescriptor, arg1: (param0: Name) => E[], arg2: Name, arg3: E[]): SimpleFunctionDescriptor;
+    // private obtainOverrideForSuspend(arg0: SimpleFunctionDescriptor, arg1: (param0: Name) => E[]): SimpleFunctionDescriptor;
     recordLookup(arg0: Name, arg1: LookupLocation): void;
     // private resolveConstructor(arg0: JavaConstructor): JavaClassConstructorDescriptor;
     resolveMethodSignature(arg0: JavaMethod, arg1: TypeParameterDescriptor[], arg2: KotlinType, arg3: ValueParameterDescriptor[]): LazyJavaScope$MethodSignatureData;

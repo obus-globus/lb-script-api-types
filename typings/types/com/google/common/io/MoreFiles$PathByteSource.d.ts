@@ -1,4 +1,5 @@
 import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
+import type { ByteProcessor } from '../../../../com/google/common/io/ByteProcessor.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
 import type { CharSource } from '../../../../com/google/common/io/CharSource.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
@@ -20,6 +21,7 @@ export class MoreFiles$PathByteSource extends ByteSource {
     asCharSource(charset: Charset): CharSource;
     openStream(): InputStream;
     read(): number[];
+    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
     // private readAttributes(): BasicFileAttributes;
     size(): number;
     sizeIfKnown(): Optional<number>;

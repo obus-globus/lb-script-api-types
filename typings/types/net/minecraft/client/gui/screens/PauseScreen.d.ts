@@ -35,6 +35,7 @@ export class PauseScreen extends Screen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private getCustomAdditions(): Optional<Holder<Dialog>>;
     init(): void;
+    init(width: number, height: number): void;
     // private openScreenButton(message: Component, newScreen: () => Screen): Button;
     rendersNowPlayingToast(): boolean;
     showsPauseMenu(): boolean;

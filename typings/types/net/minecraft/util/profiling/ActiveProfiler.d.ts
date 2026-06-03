@@ -28,7 +28,9 @@ export class ActiveProfiler extends Object implements ProfileCollector {
     // private getCurrentEntry(): ActiveProfiler$PathEntry;
     getEntry(path: string): ActiveProfiler$PathEntry;
     getResults(): ProfileResults;
+    incrementCounter(name: () => string): void;
     incrementCounter(name: () => string, amount: number): void;
+    incrementCounter(name: string): void;
     incrementCounter(name: string, amount: number): void;
     markForCharting(category: MetricCategory): void;
     pop(): void;

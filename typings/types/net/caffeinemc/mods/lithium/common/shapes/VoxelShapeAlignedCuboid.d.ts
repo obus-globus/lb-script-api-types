@@ -2,7 +2,9 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { VoxelShapeSimpleCube } from '../../../../../../net/caffeinemc/mods/lithium/common/shapes/VoxelShapeSimpleCube.d.ts'
 import type { AxisCycle } from '../../../../../../net/minecraft/core/AxisCycle.d.ts'
 import type { Direction$Axis } from '../../../../../../net/minecraft/core/Direction$Axis.d.ts'
+import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
+import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { DiscreteVoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/DiscreteVoxelShape.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class VoxelShapeAlignedCuboid extends VoxelShapeSimpleCube {
@@ -18,4 +20,6 @@ export class VoxelShapeAlignedCuboid extends VoxelShapeSimpleCube {
     getYSegments(): number;
     getZSegments(): number;
     move(arg0: number, arg1: number, arg2: number): VoxelShape;
+    move(delta: Vec3i): VoxelShape;
+    move(delta: Vec3): VoxelShape;
 }

@@ -32,5 +32,6 @@ export class ShortSpliterators$SpliteratorConcatenator extends Object implements
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
+    tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): ShortSpliterator;
 }

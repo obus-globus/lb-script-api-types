@@ -3,7 +3,7 @@ import type { IDispatch } from '../../../../../../../com/sun/jna/platform/win32/
 import type { IComEventCallbackCookie } from '../../../../../../../com/sun/jna/platform/win32/COM/util/IComEventCallbackCookie.d.ts'
 import type { IComEventCallbackListener } from '../../../../../../../com/sun/jna/platform/win32/COM/util/IComEventCallbackListener.d.ts'
 import type { IConnectionPoint } from '../../../../../../../com/sun/jna/platform/win32/COM/util/IConnectionPoint.d.ts'
-import type { IDispatch } from '../../../../../../../com/sun/jna/platform/win32/COM/util/IDispatch.d.ts'
+import type { IDispatch as IDispatch_2 } from '../../../../../../../com/sun/jna/platform/win32/COM/util/IDispatch.d.ts'
 import type { IRawDispatchHandle } from '../../../../../../../com/sun/jna/platform/win32/COM/util/IRawDispatchHandle.d.ts'
 import type { ObjectFactory } from '../../../../../../../com/sun/jna/platform/win32/COM/util/ObjectFactory.d.ts'
 import type { ComInterface } from '../../../../../../../com/sun/jna/platform/win32/COM/util/annotation/ComInterface.d.ts'
@@ -18,7 +18,7 @@ import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { InvocationHandler } from '../../../../../../../java/lang/reflect/InvocationHandler.d.ts'
 import type { Method } from '../../../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class ProxyObject extends Object implements IConnectionPoint, IDispatch, IRawDispatchHandle, InvocationHandler {
+export class ProxyObject extends Object implements IConnectionPoint, IDispatch_2, IRawDispatchHandle, InvocationHandler {
     static invokeDefault(paramarg0: Object, paramarg1: Method, paramarg2: (Object | null)[]): Object;
     constructor(arg0: Class<Object>, arg1: IDispatch, arg2: ObjectFactory)
     // private factory: ObjectFactory;

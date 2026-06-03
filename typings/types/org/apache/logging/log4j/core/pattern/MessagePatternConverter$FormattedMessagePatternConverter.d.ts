@@ -8,5 +8,6 @@ export class MessagePatternConverter$FormattedMessagePatternConverter extends Me
     static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): MessagePatternConverter;
     constructor(formats: string[])
     // private formats: string[];
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

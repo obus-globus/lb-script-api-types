@@ -8,5 +8,6 @@ export class ReaderInputStream$Builder extends AbstractStreamBuilder<ReaderInput
     get(): ReaderInputStream;
     getCharsetEncoder(): CharsetEncoder;
     setCharset(arg0: Charset): ReaderInputStream$Builder;
+    setCharset(arg0: string): ReaderInputStream$Builder;
     setCharsetEncoder(arg0: CharsetEncoder): ReaderInputStream$Builder;
 }

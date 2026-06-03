@@ -10,6 +10,7 @@ export class SheepRenderer extends AgeableMobRenderer<Sheep, SheepRenderState, S
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SheepRenderState;
+    createRenderState(entity: Sheep, partialTicks: number): SheepRenderState;
     extractRenderState(entity: Sheep, state: SheepRenderState, partialTicks: number): void;
     getTextureLocation(state: SheepRenderState): Identifier;
 }

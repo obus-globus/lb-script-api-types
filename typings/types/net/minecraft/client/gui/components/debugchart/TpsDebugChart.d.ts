@@ -8,6 +8,7 @@ export class TpsDebugChart extends AbstractDebugChart {
     // private msptSupplier: () => number;
     extractAdditionalLinesAndLabels(graphics: GuiGraphicsExtractor, left: number, width: number, bottom: number): void;
     extractAdditionalSampleBars(graphics: GuiGraphicsExtractor, bottom: number, currentX: number, sampleIndex: number): void;
+    getSampleColor(sample: number, min: number, minColor: number, mid: number, midColor: number, max: number, maxColor: number): number;
     getSampleColor(nanos: number): number;
     getSampleHeight(nanos: number): number;
     getValueForAggregation(sampleIndex: number): number;

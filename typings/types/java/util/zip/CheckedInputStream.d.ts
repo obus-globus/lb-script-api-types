@@ -7,6 +7,7 @@ export class CheckedInputStream extends FilterInputStream {
     // private cksum: Checksum;
     getChecksum(): Checksum;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     skip(arg0: number): number;
 }

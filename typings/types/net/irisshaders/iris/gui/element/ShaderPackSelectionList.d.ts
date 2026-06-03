@@ -38,6 +38,7 @@ export class ShaderPackSelectionList extends IrisObjectSelectionList<ShaderPackS
     getTopButtonRow(): ShaderPackSelectionList$TopButtonRowEntry;
     keyPressed(arg0: KeyEvent): boolean;
     refresh(): void;
+    select(arg0: number): void;
     select(arg0: string): void;
     setApplied(arg0: ShaderPackSelectionList$ShaderPackEntry): void;
 }

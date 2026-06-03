@@ -33,6 +33,7 @@ export class TaggedChoice$TaggedChoiceType<K extends Object | number | string | 
     buildTemplate(): TypeTemplate;
     // private cap(arg0: TaggedChoice$TaggedChoiceType<K>, arg1: K, arg2: TypedOptic<S, T, FT, FR>): TypedOptic<Pair<K, Object>, Pair<K, Object>, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     fabric$setFailSoft(arg0: boolean): void;
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;

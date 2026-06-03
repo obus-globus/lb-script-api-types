@@ -6,5 +6,6 @@ export class LoggerPatternConverter extends NamePatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): LoggerPatternConverter;
     private constructor(options: string[])
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

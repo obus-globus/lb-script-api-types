@@ -19,6 +19,7 @@ export class LayerLightEventListener$DummyLightLayerEventListener extends Enum<L
     propagateLightSources(pos: ChunkPos): void;
     runLightUpdates(): number;
     setLightEnabled(pos: ChunkPos, enable: boolean): void;
+    updateSectionStatus(pos: BlockPos, sectionEmpty: boolean): void;
     updateSectionStatus(pos: SectionPos, sectionEmpty: boolean): void;
     name(): "INSTANCE";
 }

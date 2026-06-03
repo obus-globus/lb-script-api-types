@@ -6,5 +6,6 @@ export class ThreadNamePatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): ThreadNamePatternConverter;
     private constructor()
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

@@ -8,6 +8,7 @@ export class ListOperation$ReplaceAll extends Object implements ListOperation {
     static UNLIMITED_CODEC: MapCodec<ListOperation>;
     static codec(parammaxSize: number): MapCodec<ListOperation>;
     private constructor()
+    apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
     apply(original: T[], replacement: T[]): T[];
     mode(): ListOperation$Type;

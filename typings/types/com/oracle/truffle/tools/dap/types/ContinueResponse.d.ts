@@ -12,4 +12,5 @@ export class ContinueResponse extends Response {
     getBody(): ContinueResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ContinueResponse$ResponseBody): ContinueResponse;
+    setBody(body: Object): Response;
 }

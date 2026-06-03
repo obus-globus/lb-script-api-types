@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { JvmBuiltInClassDescriptorFactory$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JvmBuiltInClassDescriptorFactory$Companion.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -13,7 +12,7 @@ import type { NotNullLazyValue } from '../../../../../../../kotlin/reflect/jvm/i
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 export class JvmBuiltInClassDescriptorFactory extends Object implements ClassDescriptorFactory {
     static Companion: JvmBuiltInClassDescriptorFactory$Companion;
-    constructor(arg0: StorageManager, arg1: ModuleDescriptor, arg2: Function1<ModuleDescriptor, DeclarationDescriptor>)
+    constructor(arg0: StorageManager, arg1: ModuleDescriptor, arg2: (param0: ModuleDescriptor) => DeclarationDescriptor)
     // private cloneable$delegate: NotNullLazyValue<Object>;
     // private computeContainingDeclaration: (param0: ModuleDescriptor) => DeclarationDescriptor;
     // private moduleDescriptor: ModuleDescriptor;

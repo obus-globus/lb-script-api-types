@@ -10,6 +10,7 @@ export class RabbitRenderer extends AgeableMobRenderer<Rabbit, RabbitRenderState
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): RabbitRenderState;
+    createRenderState(entity: Rabbit, partialTicks: number): RabbitRenderState;
     extractRenderState(entity: Rabbit, state: RabbitRenderState, partialTicks: number): void;
     getTextureLocation(state: RabbitRenderState): Identifier;
 }

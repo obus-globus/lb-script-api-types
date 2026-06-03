@@ -11,6 +11,8 @@ export class ReferenceDoubleMutablePair<K extends Object | number | string | boo
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceDoubleMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceDoublePair<K>;
     right(arg0: number): ReferenceDoubleMutablePair<K>;
     right(): number;
     right(arg0: number): ReferenceDoublePair<K>;

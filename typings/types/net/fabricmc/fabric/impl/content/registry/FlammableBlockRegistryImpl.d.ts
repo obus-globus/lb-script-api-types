@@ -14,7 +14,9 @@ export class FlammableBlockRegistryImpl extends Object implements FlammableBlock
     // private registeredEntriesTag: Map<TagKey<Block>, FlammableBlockRegistry$Entry>;
     add(arg0: TagKey<Block>, arg1: number, arg2: number): void;
     add(arg0: Block, arg1: number, arg2: number): void;
+    add(arg0: TagKey<Block>, arg1: number, arg2: number): void;
     add(arg0: TagKey<Block>, arg1: FlammableBlockRegistry$Entry): void;
+    add(arg0: Block, arg1: number, arg2: number): void;
     add(arg0: Block, arg1: FlammableBlockRegistry$Entry): void;
     clear(arg0: TagKey<Block>): void;
     clear(arg0: Block): void;

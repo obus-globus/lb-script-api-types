@@ -10,6 +10,7 @@ export class GiantMobRenderer extends MobRenderer<Giant, ZombieRenderState, Huma
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, scale: number)
     createRenderState(): ZombieRenderState;
+    createRenderState(entity: Giant, partialTicks: number): ZombieRenderState;
     extractRenderState(entity: Giant, state: ZombieRenderState, partialTicks: number): void;
     getTextureLocation(state: ZombieRenderState): Identifier;
 }

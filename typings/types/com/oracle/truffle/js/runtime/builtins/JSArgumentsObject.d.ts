@@ -107,6 +107,7 @@ export class JSArgumentsObject extends JSArrayBase {
     getArraySize(): number;
     getBuiltinToStringTag(): TruffleString;
     getClassName(): TruffleString;
+    getMembers(internal: boolean): Object;
     getMembers(includeInternal: boolean, self: InteropLibrary): Object;
     hasArrayElements(): boolean;
     isArrayElementInsertable(index: number, elements: ArrayElementInfoNode): boolean;

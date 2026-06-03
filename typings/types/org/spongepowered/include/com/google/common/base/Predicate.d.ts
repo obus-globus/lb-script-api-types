@@ -1,6 +1,6 @@
-import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
+import type { Predicate as Predicate_2 } from '../../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export interface Predicate<T extends Object | number | string | boolean> extends Predicate<T>, Object{
+export interface Predicate<T extends Object | number | string | boolean> extends Predicate_2<T>, Object{
     and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     apply(arg0: T): boolean;
     negate(): (param0: T) => kotlin.Boolean;

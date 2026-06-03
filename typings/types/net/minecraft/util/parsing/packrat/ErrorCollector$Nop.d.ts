@@ -4,6 +4,7 @@ import type { SuggestionSupplier } from '../../../../../net/minecraft/util/parsi
 export class ErrorCollector$Nop<S extends Object | number | string | boolean> extends Object implements ErrorCollector<S> {
     constructor()
     finish(finalCursor: number): void;
+    store(cursor: number, reason: Object): void;
     store(cursor: number, suggestions: SuggestionSupplier<S>, reason: Object): void;
     store(cursor: number, reason: Object): void;
 }

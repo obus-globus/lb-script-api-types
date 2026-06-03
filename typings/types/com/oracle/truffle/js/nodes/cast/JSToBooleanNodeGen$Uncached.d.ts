@@ -9,4 +9,5 @@ export class JSToBooleanNodeGen$Uncached extends JSToBooleanNode implements Unad
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeBoolean(arg0Value: Node, arg1Value: Object): boolean;
+    executeBoolean(value: Object): boolean;
 }

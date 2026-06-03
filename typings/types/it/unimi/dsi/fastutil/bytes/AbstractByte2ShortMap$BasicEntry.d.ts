@@ -12,5 +12,6 @@ export class AbstractByte2ShortMap$BasicEntry extends Object implements Byte2Sho
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

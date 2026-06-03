@@ -25,6 +25,7 @@ export class NFAStateTransition extends Object implements AbstractTransition<NFA
     getSource(forward: boolean): NFAState;
     getTarget<S extends AbstractState<S, T>>(forward: boolean): S;
     getTarget(): NFAState;
+    getTarget(forward: boolean): NFAState;
     hasConstraints(): boolean;
     hashCode(): number;
     setSource(source: NFAState): void;

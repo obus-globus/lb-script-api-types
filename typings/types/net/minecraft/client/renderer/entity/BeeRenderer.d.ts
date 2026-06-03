@@ -10,6 +10,7 @@ export class BeeRenderer extends AgeableMobRenderer<Bee, BeeRenderState, BeeMode
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): BeeRenderState;
+    createRenderState(entity: Bee, partialTicks: number): BeeRenderState;
     extractRenderState(entity: Bee, state: BeeRenderState, partialTicks: number): void;
     getTextureLocation(state: BeeRenderState): Identifier;
 }

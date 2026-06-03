@@ -8,5 +8,6 @@ export class CharSequenceInputStream$Builder extends AbstractStreamBuilder<CharS
     get(): CharSequenceInputStream;
     getCharsetEncoder(): CharsetEncoder;
     setCharset(arg0: Charset): CharSequenceInputStream$Builder;
+    setCharset(arg0: string): CharSequenceInputStream$Builder;
     setCharsetEncoder(arg0: CharsetEncoder): CharSequenceInputStream$Builder;
 }

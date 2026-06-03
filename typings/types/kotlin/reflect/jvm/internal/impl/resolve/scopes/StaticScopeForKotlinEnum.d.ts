@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -19,7 +18,7 @@ export class StaticScopeForKotlinEnum extends MemberScopeImpl {
     // private functions$delegate: NotNullLazyValue<Object>;
     // private properties$delegate: NotNullLazyValue<Object>;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): void;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): CallableMemberDescriptor[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): CallableMemberDescriptor[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
     // private getFunctions(): SimpleFunctionDescriptor[];

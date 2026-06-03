@@ -32,6 +32,8 @@ export class Char2FloatOpenCustomHashMap$MapEntry extends Object implements Char
     left(arg0: string): CharFloatPair;
     left(arg0: string): CharFloatPair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharFloatPair;
     right(arg0: number): CharFloatPair;
     right(): number;
     right(arg0: number): CharFloatPair;

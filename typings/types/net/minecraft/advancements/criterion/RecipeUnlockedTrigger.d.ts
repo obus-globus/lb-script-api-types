@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Criterion } from '../../../../net/minecraft/advancements/Criterion.d.ts'
 import type { RecipeUnlockedTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/RecipeUnlockedTrigger$TriggerInstance.d.ts'
@@ -10,5 +11,6 @@ export class RecipeUnlockedTrigger extends SimpleCriterionTrigger<RecipeUnlocked
     static unlocked(paramrecipe: ResourceKey<Object>): Criterion<RecipeUnlockedTrigger$TriggerInstance>;
     constructor()
     codec(): Codec<RecipeUnlockedTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: RecipeUnlockedTrigger$TriggerInstance) => kotlin.Boolean): void;
     trigger(player: ServerPlayer, recipe: RecipeHolder<Object>): void;
 }

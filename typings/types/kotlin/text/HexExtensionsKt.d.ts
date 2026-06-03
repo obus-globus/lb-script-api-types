@@ -1,5 +1,4 @@
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { HexFormat } from '../../kotlin/text/HexFormat.d.ts'
 export class HexExtensionsKt extends Object {
     static formattedStringLength(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): number;
@@ -11,8 +10,8 @@ export class HexExtensionsKt extends Object {
     static hexToLong(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: HexFormat): number;
     static hexToLong(paramarg0: string, paramarg1: HexFormat): number;
     static hexToShort(paramarg0: string, paramarg1: HexFormat): number;
-    static parseHexToInt(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: Function2<Object, Object, Object>): number;
-    static parseHexToLong(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: Function2<Object, Object, Object>): number;
+    static parseHexToInt(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): number;
+    static parseHexToLong(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): number;
     static parsedByteArrayMaxSize(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): number;
     static toHexString(paramarg0: number, paramarg1: HexFormat): string;
     static toHexString(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: HexFormat): string;

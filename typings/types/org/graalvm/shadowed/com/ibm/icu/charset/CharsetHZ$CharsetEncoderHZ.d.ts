@@ -12,6 +12,7 @@ export class CharsetHZ$CharsetEncoderHZ extends CharsetEncoderICU {
     // private isEscapeAppended: boolean;
     // private isTargetUCharDBCS: boolean;
     // private concatEscape(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, strToAppend: number[]): CoderResult;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

@@ -29,6 +29,7 @@ export class FileFixerAbortedScreen extends Screen {
     addButtons(buttonLayout: LinearLayout): void;
     getNarrationMessage(): Component;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     repositionElements(): void;
     shouldCloseOnEsc(): boolean;

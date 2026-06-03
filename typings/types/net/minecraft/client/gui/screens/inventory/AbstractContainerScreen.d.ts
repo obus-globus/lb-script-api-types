@@ -76,6 +76,7 @@ export abstract class AbstractContainerScreen<T extends AbstractContainerMenu> e
     handleSlotStateChanged(slotId: number, containerId: number, newState: boolean): void;
     hasClickedOutside(mx: number, my: number, xo: number, yo: number): boolean;
     init(): void;
+    init(width: number, height: number): void;
     isHovering(left: number, top: number, w: number, h: number, xm: number, ym: number): boolean;
     // private isHovering(slot: Slot, xm: number, ym: number): boolean;
     isInGameUi(): boolean;

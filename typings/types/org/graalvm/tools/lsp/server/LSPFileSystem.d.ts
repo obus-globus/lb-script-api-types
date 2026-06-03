@@ -10,17 +10,17 @@ import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
 import type { FileAttribute } from '../../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { FileSystemProvider } from '../../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { FileSystem } from '../../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
+import type { FileSystem as FileSystem_2 } from '../../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 import type { VirtualLanguageServerFileProvider } from '../../../../../org/graalvm/tools/lsp/server/VirtualLanguageServerFileProvider.d.ts'
-export class LSPFileSystem extends Object implements FileSystem {
-    static allowInternalResourceAccess(paramfileSystem: FileSystem): FileSystem;
-    static allowLanguageHomeAccess(paramfileSystem: FileSystem): FileSystem;
-    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem, paramdelegates: (Object | null)[]): FileSystem;
-    static newDefaultFileSystem(): FileSystem;
-    static newDenyIOFileSystem(): FileSystem;
-    static newFileSystem(paramfileSystem: FileSystem): FileSystem;
-    static newReadOnlyFileSystem(paramfileSystem: FileSystem): FileSystem;
-    static newReadOnlyFileSystem(paramfileProvider: VirtualLanguageServerFileProvider): FileSystem;
+export class LSPFileSystem extends Object implements FileSystem_2 {
+    static allowInternalResourceAccess(paramfileSystem: FileSystem_2): FileSystem_2;
+    static allowLanguageHomeAccess(paramfileSystem: FileSystem_2): FileSystem_2;
+    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, paramdelegates: (Object | null)[]): FileSystem_2;
+    static newDefaultFileSystem(): FileSystem_2;
+    static newDenyIOFileSystem(): FileSystem_2;
+    static newFileSystem(paramfileSystem: FileSystem): FileSystem_2;
+    static newReadOnlyFileSystem(paramfileSystem: FileSystem_2): FileSystem_2;
+    static newReadOnlyFileSystem(paramfileProvider: VirtualLanguageServerFileProvider): FileSystem_2;
     private constructor(fileSystemProvider: FileSystemProvider, fileProvider: VirtualLanguageServerFileProvider)
     // private delegate: FileSystemProvider;
     // private fileProvider: VirtualLanguageServerFileProvider;

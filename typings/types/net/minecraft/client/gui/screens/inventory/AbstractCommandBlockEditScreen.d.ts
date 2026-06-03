@@ -5,6 +5,7 @@ import type { Button } from '../../../../../../net/minecraft/client/gui/componen
 import type { CommandSuggestions } from '../../../../../../net/minecraft/client/gui/components/CommandSuggestions.d.ts'
 import type { CycleButton } from '../../../../../../net/minecraft/client/gui/components/CycleButton.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -36,6 +37,7 @@ export abstract class AbstractCommandBlockEditScreen extends Screen {
     getPreviousY(): number;
     getUsageNarration(): Component;
     init(): void;
+    init(width: number, height: number): void;
     isInGameUi(): boolean;
     keyPressed(event: KeyEvent): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
@@ -45,6 +47,7 @@ export abstract class AbstractCommandBlockEditScreen extends Screen {
     populateAndSendPacket(): void;
     resize(width: number, height: number): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     tick(): void;
     updatePreviousOutput(isTracking: boolean): void;
 }

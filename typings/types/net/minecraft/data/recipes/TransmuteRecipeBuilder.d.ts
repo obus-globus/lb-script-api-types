@@ -37,6 +37,8 @@ export class TransmuteRecipeBuilder extends Object implements RecipeBuilder {
     group(group: string): TransmuteRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
+    save(output: RecipeOutput): void;
+    save(output: RecipeOutput, id: string): void;
     save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
     setMaterialCount(materialCount: MinMaxBounds$Ints): TransmuteRecipeBuilder;
     unlockedBy(name: string, criterion: Criterion<Object>): TransmuteRecipeBuilder;

@@ -4,6 +4,7 @@ import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Process } from '../../../../java/lang/Process.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
+import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 export class ProcessHandlers$ProcessDecorator extends Process {
     private constructor(owner: PolyglotLanguageContext, command: string, delegate: Process, out: OutputStream, err: OutputStream)
@@ -23,6 +24,7 @@ export class ProcessHandlers$ProcessDecorator extends Process {
     isAlive(): boolean;
     // private removeFromActiveSubProcesses(): void;
     waitFor(): number;
+    waitFor(arg0: Duration): boolean;
     waitFor(timeout: number, unit: TimeUnit): boolean;
     // private waitForCopiers(): void;
 }

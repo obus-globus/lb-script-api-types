@@ -12,4 +12,5 @@ export class ModuleEvent extends Event {
     getBody(): ModuleEvent$EventBody;
     hashCode(): number;
     setBody(body: ModuleEvent$EventBody): ModuleEvent;
+    setBody(body: Object): Event;
 }

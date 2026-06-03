@@ -32,6 +32,8 @@ export class Int2BooleanLinkedOpenHashMap$MapEntry extends Object implements Int
     left(arg0: number): IntBooleanPair;
     left(arg0: number): IntBooleanPair;
     leftInt(): number;
+    right(): boolean;
+    right(arg0: boolean): IntBooleanPair;
     right(arg0: boolean): IntBooleanPair;
     right(): boolean;
     right(arg0: boolean): IntBooleanPair;

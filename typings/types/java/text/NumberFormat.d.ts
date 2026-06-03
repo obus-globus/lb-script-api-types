@@ -42,6 +42,7 @@ export abstract class NumberFormat extends Format {
     clone(): Object;
     equals(arg0: Object | null): boolean;
     fastFormat(arg0: number): string;
+    format(arg0: Object): string;
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: Object, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     format(arg0: number): string;
@@ -62,6 +63,7 @@ export abstract class NumberFormat extends Format {
     isStrict(): boolean;
     parse(arg0: string): Number;
     parse(arg0: string, arg1: ParsePosition): Number;
+    parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): Object;
     // private readObject(arg0: ObjectInputStream): void;
     setCurrency(arg0: Currency): void;

@@ -16,5 +16,6 @@ export class ObjectLiteralNode$DictionaryObjectDataMemberNode extends ObjectLite
     // private name: Object;
     // private valueNode: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
 }

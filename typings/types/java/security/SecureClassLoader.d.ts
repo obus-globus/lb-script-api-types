@@ -19,8 +19,12 @@ export class SecureClassLoader extends ClassLoader {
     constructor(arg0: ClassLoader)
     constructor(arg0: string, arg1: ClassLoader)
     // private pdcache: Map<SecureClassLoader$CodeSourceKey, ProtectionDomain>;
+    defineClass(arg0: number[], arg1: number, arg2: number): Class<Object>;
     defineClass(arg0: string, arg1: ByteBuffer, arg2: CodeSource): Class<Object>;
+    defineClass(arg0: string, arg1: ByteBuffer, arg2: ProtectionDomain): Class<Object>;
+    defineClass(arg0: string, arg1: number[], arg2: number, arg3: number): Class<Object>;
     defineClass(arg0: string, arg1: number[], arg2: number, arg3: number, arg4: CodeSource): Class<Object>;
+    defineClass(arg0: string, arg1: number[], arg2: number, arg3: number, arg4: ProtectionDomain): Class<Object>;
     getPermissions(arg0: CodeSource): PermissionCollection;
     // private getProtectionDomain(arg0: CodeSource): ProtectionDomain;
     // private resetArchivedStates(): void;

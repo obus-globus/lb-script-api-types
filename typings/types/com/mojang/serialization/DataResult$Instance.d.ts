@@ -31,6 +31,7 @@ export class DataResult$Instance extends Enum<DataResult$Instance> implements Ap
     ap(arg0: App<F, (param0: A) => R>, arg1: App<F, A>): App<F, R>;
     ap(arg0: (param0: A) => R, arg1: App<F, A>): App<F, R>;
     ap(arg0: App<DataResult$Mu, (param0: A) => R>, arg1: App<DataResult$Mu, A>): App<DataResult$Mu, R>;
+    ap(arg0: (param0: A) => R, arg1: App<DataResult$Mu, A>): App<DataResult$Mu, R>;
     ap10(arg0: App<F, Function10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, R>>, arg1: App<F, T1>, arg2: App<F, T2>, arg3: App<F, T3>, arg4: App<F, T4>, arg5: App<F, T5>, arg6: App<F, T6>, arg7: App<F, T7>, arg8: App<F, T8>, arg9: App<F, T9>, arg10: App<F, T10>): App<F, R>;
     ap11(arg0: App<F, Function11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, R>>, arg1: App<F, T1>, arg2: App<F, T2>, arg3: App<F, T3>, arg4: App<F, T4>, arg5: App<F, T5>, arg6: App<F, T6>, arg7: App<F, T7>, arg8: App<F, T8>, arg9: App<F, T9>, arg10: App<F, T10>, arg11: App<F, T11>): App<F, R>;
     ap12(arg0: App<F, Function12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, R>>, arg1: App<F, T1>, arg2: App<F, T2>, arg3: App<F, T3>, arg4: App<F, T4>, arg5: App<F, T5>, arg6: App<F, T6>, arg7: App<F, T7>, arg8: App<F, T8>, arg9: App<F, T9>, arg10: App<F, T10>, arg11: App<F, T11>, arg12: App<F, T12>): App<F, R>;

@@ -53,6 +53,7 @@ export class GlobalChannelTrafficShapingHandler extends AbstractTrafficShapingHa
     setReadChannelLimit(arg0: number): void;
     setWriteChannelLimit(arg0: number): void;
     slowDownFactor(): number;
+    submitWrite(arg0: ChannelHandlerContext, arg1: Object, arg2: number, arg3: ChannelPromise): void;
     submitWrite(arg0: ChannelHandlerContext, arg1: Object, arg2: number, arg3: number, arg4: number, arg5: ChannelPromise): void;
     toString(): string;
     userDefinedWritabilityIndex(): number;

@@ -108,4 +108,5 @@ export class CpBands extends BandSet {
     // private parseCpUtf8(arg0: InputStream): void;
     read(arg0: InputStream): void;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

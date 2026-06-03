@@ -8,6 +8,7 @@ import type { CharsetMBCS$CharsetDecoderMBCS } from '../../../../../../../org/gr
 export class CharsetCompoundText$CharsetDecoderCompoundText extends CharsetDecoderICU {
     constructor(null_: CharsetCompoundText$CharsetDecoderCompoundText, cs: CharsetICU)
     // private gbDecoder: CharsetMBCS$CharsetDecoderMBCS[];
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

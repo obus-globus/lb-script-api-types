@@ -32,6 +32,8 @@ export class Double2FloatArrayMap$MapEntry extends Object implements Double2Floa
     left(arg0: number): DoubleFloatPair;
     left(arg0: number): DoubleFloatPair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleFloatPair;
     right(arg0: number): DoubleFloatPair;
     right(): number;
     right(arg0: number): DoubleFloatPair;

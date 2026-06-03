@@ -14,4 +14,5 @@ export class IcBands extends BandSet {
     getRelevantIcTuples(arg0: string, arg1: ClassConstantPool): IcTuple[];
     read(arg0: InputStream): void;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

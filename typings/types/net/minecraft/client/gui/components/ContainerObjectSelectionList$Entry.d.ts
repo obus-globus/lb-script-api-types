@@ -44,6 +44,7 @@ export abstract class ContainerObjectSelectionList$Entry<E extends ContainerObje
     // private nextFocusPathVaguelyInDirection(focusedRectangle: ScreenRectangle, direction: ScreenDirection, excluded: GuiEventListener, navigationEvent: FocusNavigationEvent): ComponentPath;
     preeditUpdated(event: PreeditEvent): boolean;
     setDragging(dragging: boolean): void;
+    setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;
     setFocused(focused: boolean): void;
     updateNarration(output: NarrationElementOutput): void;

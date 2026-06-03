@@ -28,8 +28,10 @@ export class BackwardsStructuredItemRewriter<C extends ClientboundPacketType, S 
     holderSetToTag(arg0: HolderSet): Tag;
     holderToTag(arg0: Holder<V>, arg1: (param0: V, param1: Map$Entry<string, Tag>[]) => void): Tag;
     nbtTagName(): string;
+    nbtTagName(arg0: string): string;
     removeGenericTagList(arg0: Map$Entry<string, Tag>[], arg1: string): Tag[];
     removeListTag(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: Class<T>): T[];
+    restoreBackupData(arg0: Item): void;
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
     restoreEitherHolder(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: (param0: Map$Entry<string, Tag>[]) => V): EitherHolder<V>;
     restoreFloatData(arg0: StructuredDataKey<number>, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;

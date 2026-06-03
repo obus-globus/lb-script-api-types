@@ -16,6 +16,7 @@ export class Base64$OutputStream extends FilterOutputStream {
     // private suspendEncoding: boolean;
     close(): void;
     flushBase64(): void;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

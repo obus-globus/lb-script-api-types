@@ -32,6 +32,8 @@ export class Short2CharLinkedOpenHashMap$MapEntry extends Object implements Shor
     left(arg0: number): ShortCharPair;
     left(arg0: number): ShortCharPair;
     leftShort(): number;
+    right(): string;
+    right(arg0: string): ShortCharPair;
     right(arg0: string): ShortCharPair;
     right(): string;
     right(arg0: string): ShortCharPair;

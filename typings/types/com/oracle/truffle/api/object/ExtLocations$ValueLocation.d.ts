@@ -1,6 +1,7 @@
 import type { DynamicObject } from '../../../../../com/oracle/truffle/api/object/DynamicObject.d.ts'
 import type { ExtLocation } from '../../../../../com/oracle/truffle/api/object/ExtLocation.d.ts'
 import type { LocationImpl$LocationVisitor } from '../../../../../com/oracle/truffle/api/object/LocationImpl$LocationVisitor.d.ts'
+import type { Shape } from '../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ExtLocations$ValueLocation extends ExtLocation {
     constructor(value: Object)
@@ -8,9 +9,13 @@ export abstract class ExtLocations$ValueLocation extends ExtLocation {
     accept(locationVisitor: LocationImpl$LocationVisitor): void;
     canStore(val: Object): boolean;
     equals(obj: Object | null): boolean;
+    get(store: DynamicObject): Object;
+    get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     hashCode(): number;
     isValue(): boolean;
+    set(store: DynamicObject, value: Object, shape: Shape): void;
+    set(store: DynamicObject, value: Object, oldShape: Shape, newShape: Shape): void;
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
     toString(): string;
 }

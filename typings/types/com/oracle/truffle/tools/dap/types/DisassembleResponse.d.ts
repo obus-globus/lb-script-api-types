@@ -12,4 +12,5 @@ export class DisassembleResponse extends Response {
     getBody(): DisassembleResponse$ResponseBody;
     hashCode(): number;
     setBody(body: DisassembleResponse$ResponseBody): DisassembleResponse;
+    setBody(body: Object): Response;
 }

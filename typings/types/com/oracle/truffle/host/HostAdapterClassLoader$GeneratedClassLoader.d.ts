@@ -17,8 +17,10 @@ export class HostAdapterClassLoader$GeneratedClassLoader extends SecureClassLoad
     // private cache: HostClassCache;
     // private classOverrides: Object;
     findClass(name: string): Class<Object>;
+    findClass(arg0: string, arg1: string): Class<Object>;
     get(): Object;
     // private isGeneratedClassName(name: string): boolean;
+    loadClass(arg0: string): Class<Object>;
     loadClass(name: string, resolve: boolean): Class<Object>;
     // private loadGeneratedClass(name: string, resolve: boolean): Class<Object>;
 }

@@ -1,4 +1,7 @@
 import type { ListenerTransform } from '../../../../com/mojang/blaze3d/audio/ListenerTransform.d.ts'
+import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
+import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FabricResourceReloader } from '../../../../net/fabricmc/fabric/impl/resource/FabricResourceReloader.d.ts'
 import type { Camera } from '../../../../net/minecraft/client/Camera.d.ts'
 import type { Options } from '../../../../net/minecraft/client/Options.d.ts'
@@ -12,6 +15,8 @@ import type { SoundEventListener } from '../../../../net/minecraft/client/sounds
 import type { SoundManager$Preparations } from '../../../../net/minecraft/client/sounds/SoundManager$Preparations.d.ts'
 import type { WeighedSoundEvents } from '../../../../net/minecraft/client/sounds/WeighedSoundEvents.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { PreparableReloadListener$PreparationBarrier } from '../../../../net/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier.d.ts'
+import type { PreparableReloadListener$SharedState } from '../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 import type { Resource } from '../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceManager } from '../../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 import type { SimplePreparableReloadListener } from '../../../../net/minecraft/server/packs/resources/SimplePreparableReloadListener.d.ts'
@@ -48,6 +53,7 @@ export class SoundManager extends SimplePreparableReloadListener<SoundManager$Pr
     queueTickingSound(instance: TickableSoundInstance): void;
     refreshCategoryVolume(category: SoundSource): void;
     reload(): void;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
     removeListener(listener: SoundEventListener): void;
     resume(): void;
     stop(): void;

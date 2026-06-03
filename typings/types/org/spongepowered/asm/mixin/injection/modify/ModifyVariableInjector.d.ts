@@ -18,7 +18,9 @@ export class ModifyVariableInjector extends Injector {
     findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint, arg2: E[]): boolean;
     getTargetNodeKey(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): string;
     // private inject(arg0: ModifyVariableInjector$Context, arg1: Injector$InjectorData, arg2: Target$Extension, arg3: number): void;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
+    preInject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     preInject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private printLocals(arg0: AbstractInsnNode[], arg1: ModifyVariableInjector$Context): void;
     sanityCheck(arg0: AbstractInsnNode[], arg1: InjectionPoint[]): void;

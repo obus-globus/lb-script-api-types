@@ -19,6 +19,7 @@ export class FireworkExplosionPredicate extends Record implements SingleComponen
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
+    matches(components: DataComponentGetter): boolean;
     matches(value: FireworkExplosion): boolean;
     predicate(): FireworkExplosionPredicate$FireworkPredicate;
     toString(): string;

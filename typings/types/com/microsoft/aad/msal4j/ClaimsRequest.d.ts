@@ -28,6 +28,8 @@ export class ClaimsRequest extends Object implements JsonSerializable<ClaimsRequ
     toJson(arg0: OutputStream): void;
     toJson(arg0: Writer): void;
     toJson(arg0: JsonWriter): JsonWriter;
+    toJson(arg0: OutputStream): void;
+    toJson(arg0: Writer): void;
     toJsonBytes(): number[];
     toJsonString(): string;
     // private writeClaimsToJsonWriter(arg0: JsonWriter, arg1: string, arg2: RequestedClaim[]): void;

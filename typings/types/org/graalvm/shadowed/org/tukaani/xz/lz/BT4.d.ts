@@ -17,6 +17,7 @@ export class BT4 extends LZEncoder {
     // private tree: number[];
     getMatches(): Matches;
     // private movePos(): number;
+    movePos(requiredForFlushing: number, requiredForFinishing: number): number;
     putArraysToCache(arrayCache: ArrayCache): void;
     skip(len: number): void;
     // private skip(niceLenLimit: number, currentMatch: number): void;

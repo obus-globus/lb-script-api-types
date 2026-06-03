@@ -5,6 +5,7 @@ import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/g
 import type { ChatComponent$DisplayMode } from '../../../../../net/minecraft/client/gui/components/ChatComponent$DisplayMode.d.ts'
 import type { CommandSuggestions } from '../../../../../net/minecraft/client/gui/components/CommandSuggestions.d.ts'
 import type { EditBox } from '../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { NarrationElementOutput } from '../../../../../net/minecraft/client/gui/narration/NarrationElementOutput.d.ts'
 import type { ChatScreen$ExitReason } from '../../../../../net/minecraft/client/gui/screens/ChatScreen$ExitReason.d.ts'
@@ -47,6 +48,7 @@ export class ChatScreen extends Screen implements MixinChatScreenAccessor {
     handleChatInput(msg: string, addToRecent: boolean): void;
     // private handleComponentClicked(clicked: Style, allowInsertions: boolean): boolean;
     init(): void;
+    init(width: number, height: number): void;
     insertText(text: string, replace: boolean): void;
     // private insertionClickMode(): boolean;
     isAllowedInPortal(): boolean;
@@ -61,6 +63,7 @@ export class ChatScreen extends Screen implements MixinChatScreenAccessor {
     removed(): void;
     resize(width: number, height: number): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
     shouldDiscardDraft(): boolean;
     updateNarrationState(output: NarrationElementOutput): void;
     // private viaFabricPlus$keepTabComplete(): boolean;

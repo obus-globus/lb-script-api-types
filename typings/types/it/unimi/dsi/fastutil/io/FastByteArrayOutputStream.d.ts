@@ -19,6 +19,7 @@ export class FastByteArrayOutputStream extends MeasurableOutputStream implements
     position(arg0: number): void;
     reset(): void;
     toByteArray(): number[];
+    toString(): string;
     toString(arg0: Charset): string;
     trim(): void;
     write(arg0: number[]): void;

@@ -9,6 +9,7 @@ export class TippableArrowRenderer extends ArrowRenderer<Arrow, TippableArrowRen
     static TIPPED_ARROW_LOCATION: Identifier;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): TippableArrowRenderState;
+    createRenderState(entity: Arrow, partialTicks: number): TippableArrowRenderState;
     extractRenderState(entity: Arrow, state: TippableArrowRenderState, partialTicks: number): void;
     getTextureLocation(state: TippableArrowRenderState): Identifier;
 }

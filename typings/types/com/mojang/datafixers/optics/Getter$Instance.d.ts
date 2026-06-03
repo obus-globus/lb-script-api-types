@@ -11,6 +11,9 @@ export class Getter$Instance<A2 extends Object | number | string | boolean, B2 e
     static unbox(paramarg0: App<Object, Object>): GetterP<Object, Object>;
     constructor()
     cimap(arg0: (param0: C) => A, arg1: (param0: D) => B): FunctionType<() => App2<Getter$Mu<A2, B2>, A, B>, App2<Getter$Mu<A2, B2>, C, D>>;
+    cimap(arg0: () => App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: D) => B): App2<Getter$Mu<A2, B2>, C, D>;
+    dimap(arg0: App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Getter$Mu<A2, B2>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Getter$Mu<A2, B2>, A, B>, App2<Getter$Mu<A2, B2>, C, D>>;
+    dimap(arg0: () => App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Getter$Mu<A2, B2>, C, D>;
     secondPhantom(arg0: App2<P, C, B>): App2<P, C, A>;
 }

@@ -4,5 +4,6 @@ export class GLSLParser$FiniteExpressionContext extends ParserRuleContext {
     constructor()
     constructor(arg0: ParserRuleContext, arg1: number)
     copyFrom(arg0: GLSLParser$FiniteExpressionContext): void;
+    copyFrom(arg0: ParserRuleContext): void;
     getRuleIndex(): number;
 }

@@ -6,5 +6,8 @@ export class ZipFile$BoundedFileChannelInputStream extends BoundedArchiveInputSt
     static nullInputStream(): InputStream;
     constructor(arg0: number, arg1: number, arg2: FileChannel)
     // private archive: FileChannel;
+    read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
     read(arg0: number, arg1: ByteBuffer): number;
 }

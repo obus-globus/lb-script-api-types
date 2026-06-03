@@ -6,4 +6,6 @@ export class CharsetRecog_sbcs$CharsetRecog_windows_1256 extends CharsetRecog_sb
     getLanguage(): string;
     getName(): string;
     match(det: CharsetDetector): CharsetMatch;
+    match(det: CharsetDetector, ngrams: number[], byteMap: number[]): number;
+    match(det: CharsetDetector, ngrams: number[], byteMap: number[], spaceChar: number): number;
 }

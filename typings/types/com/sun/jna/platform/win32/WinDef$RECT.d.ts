@@ -23,4 +23,5 @@ export class WinDef$RECT extends Structure {
     top: number;
     toRectangle(): Rectangle;
     toString(): string;
+    toString(arg0: boolean): string;
 }

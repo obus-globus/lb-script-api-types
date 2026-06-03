@@ -37,6 +37,9 @@ export class TcpSocketManager extends AbstractSocketManager {
     getSocket(): Socket;
     getSocketOptions(): SocketOptions;
     toString(): string;
+    write(bytes: number[]): void;
+    write(bytes: number[], immediateFlush: boolean): void;
+    write(bytes: number[], offset: number, length: number): void;
     write(bytes: number[], offset: number, length: number, immediateFlush: boolean): void;
     // private writeAndFlush(bytes: number[], offset: number, length: number, immediateFlush: boolean): void;
 }

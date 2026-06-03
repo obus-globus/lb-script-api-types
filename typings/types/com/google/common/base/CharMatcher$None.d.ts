@@ -1,6 +1,7 @@
 import type { CharMatcher } from '../../../../com/google/common/base/CharMatcher.d.ts'
 import type { CharMatcher$NamedFastMatcher } from '../../../../com/google/common/base/CharMatcher$NamedFastMatcher.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
+import type { Predicate as Predicate_2 } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class CharMatcher$None extends CharMatcher$NamedFastMatcher {
@@ -26,6 +27,7 @@ export class CharMatcher$None extends CharMatcher$NamedFastMatcher {
     static whitespace(): CharMatcher;
     private constructor()
     and(other: CharMatcher): CharMatcher;
+    and(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     collapseFrom(sequence: CharSequence, replacement: string): string;
     countIn(sequence: CharSequence): number;
     indexIn(sequence: CharSequence): number;
@@ -36,6 +38,7 @@ export class CharMatcher$None extends CharMatcher$NamedFastMatcher {
     matchesNoneOf(sequence: CharSequence): boolean;
     negate(): CharMatcher;
     or(other: CharMatcher): CharMatcher;
+    or(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
     removeFrom(sequence: CharSequence): string;
     replaceFrom(sequence: CharSequence, replacement: string): string;
     replaceFrom(sequence: CharSequence, replacement: CharSequence): string;

@@ -23,6 +23,7 @@ export class ParallelBlock extends AbstractBlock {
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
+    getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
     loadMetadata(arg0: number, arg1: DataInputStream): void;
 }

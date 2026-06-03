@@ -55,4 +55,5 @@ export class BcBands extends BandSet {
     read(arg0: InputStream): void;
     // private startsWithIf(arg0: number): boolean;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

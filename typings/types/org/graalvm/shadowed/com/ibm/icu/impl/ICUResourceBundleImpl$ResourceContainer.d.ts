@@ -70,7 +70,10 @@ export abstract class ICUResourceBundleImpl$ResourceContainer extends ICUResourc
     constructor(container: ICUResourceBundleImpl, key: string, resource: number)
     // private value: ICUResourceBundleReader$Container;
     createBundleObject(index: number, resKey: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
+    createBundleObject(_key: string, _resource: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): ICUResourceBundle;
     getContainerResource(index: number): number;
     getSize(): number;
+    getString(): string;
     getString(index: number): string;
+    getString(arg0: string): string;
 }

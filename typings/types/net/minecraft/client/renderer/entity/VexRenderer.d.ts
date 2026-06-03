@@ -11,6 +11,7 @@ export class VexRenderer extends MobRenderer<Vex, VexRenderState, VexModel> {
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): VexRenderState;
+    createRenderState(entity: Vex, partialTicks: number): VexRenderState;
     extractRenderState(entity: Vex, state: VexRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: Vex, blockPos: BlockPos): number;
     getTextureLocation(state: VexRenderState): Identifier;

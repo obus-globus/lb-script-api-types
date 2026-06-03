@@ -46,6 +46,8 @@ export class PropertyNode extends Node {
     // private setKey(key: Expression): PropertyNode;
     setSetter(setter: FunctionNode): PropertyNode;
     setValue(value: Expression): PropertyNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
     // private toStringKey(sb: StringBuilder, printType: boolean): void;
 }

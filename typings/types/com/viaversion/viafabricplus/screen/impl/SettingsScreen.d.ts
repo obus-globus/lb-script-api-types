@@ -23,4 +23,5 @@ export class SettingsScreen extends VFPScreen {
     static showErrorScreen(paramarg0: Component, paramarg1: Throwable, paramarg2: Screen): void;
     constructor()
     init(): void;
+    init(width: number, height: number): void;
 }

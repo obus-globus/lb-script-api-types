@@ -26,6 +26,7 @@ export abstract class ItemCombinerScreen<T extends ItemCombinerMenu> extends Abs
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractErrorIcon(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
     init(): void;
+    init(width: number, height: number): void;
     removed(): void;
     slotChanged(container: AbstractContainerMenu, slotIndex: number, itemStack: ItemStack): void;
     subInit(): void;

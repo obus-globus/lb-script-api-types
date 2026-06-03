@@ -7,6 +7,7 @@ export class ZipArchiveInputStream$BoundCountInputStream extends BoundedInputStr
     constructor(null_: ZipArchiveInputStream$BoundCountInputStream, arg1: InputStream, arg2: number)
     // private atMaxLength(): boolean;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readCount(arg0: number): number;
 }

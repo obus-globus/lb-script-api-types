@@ -10,6 +10,7 @@ export class ArmadilloRenderer extends AgeableMobRenderer<Armadillo, ArmadilloRe
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): ArmadilloRenderState;
+    createRenderState(entity: Armadillo, partialTicks: number): ArmadilloRenderState;
     extractRenderState(entity: Armadillo, state: ArmadilloRenderState, partialTicks: number): void;
     getTextureLocation(state: ArmadilloRenderState): Identifier;
 }

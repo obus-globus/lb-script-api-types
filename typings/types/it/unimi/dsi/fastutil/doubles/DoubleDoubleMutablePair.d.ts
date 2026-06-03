@@ -19,11 +19,15 @@ export class DoubleDoubleMutablePair extends Object implements DoubleDoublePair,
     key(arg0: number): DoubleDoublePair;
     key(arg0: number): DoubleDoublePair;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleDoublePair;
     left(arg0: number): DoubleDoubleMutablePair;
     left(): number;
     left(arg0: number): DoubleDoublePair;
     left(arg0: number): DoubleDoublePair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleDoublePair;
     right(arg0: number): DoubleDoubleMutablePair;
     right(): number;
     right(arg0: number): DoubleDoublePair;

@@ -69,6 +69,7 @@ export class ShaderPackScreen extends Screen implements HudHideable {
     getBottomRowOption(): Button;
     importPackOptions(arg0: Path[]): void;
     init(): void;
+    init(width: number, height: number): void;
     isDisplayingComment(): boolean;
     keyPressed(arg0: KeyEvent): boolean;
     mouseClicked(arg0: MouseButtonEvent, arg1: boolean): boolean;

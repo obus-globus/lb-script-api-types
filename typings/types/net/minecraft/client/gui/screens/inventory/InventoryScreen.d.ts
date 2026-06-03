@@ -35,6 +35,7 @@ export class InventoryScreen extends AbstractRecipeBookScreen<InventoryMenu> {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getRecipeBookButtonPosition(): ScreenPosition;
     init(): void;
+    init(width: number, height: number): void;
     isBiggerResultSlot(): boolean;
     mouseReleased(event: MouseButtonEvent): boolean;
     onRecipeBookButtonClick(): void;

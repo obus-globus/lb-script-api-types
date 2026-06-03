@@ -8,6 +8,7 @@ import type { SolverDecorator } from '../../../../../../../net/fabricmc/loader/i
 export class PBSolverDecorator extends SolverDecorator<IPBSolver> implements IPBSolver {
     constructor(arg0: IPBSolver)
     addAtLeast(arg0: IVecInt, arg1: IVecInt, arg2: number): IConstr;
+    addAtMost(arg0: IVecInt, arg1: number): IConstr;
     addAtMost(arg0: IVecInt, arg1: IVecInt, arg2: number): IConstr;
     addPseudoBoolean(arg0: IVecInt, arg1: IVec<BigInteger>, arg2: boolean, arg3: BigInteger): IConstr;
     getObjectiveFunction(): ObjectiveFunction;

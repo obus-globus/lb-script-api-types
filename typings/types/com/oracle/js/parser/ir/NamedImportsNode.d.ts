@@ -13,5 +13,7 @@ export class NamedImportsNode extends Node {
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getImportSpecifiers(): ImportSpecifierNode[];
     setImportSpecifiers(importSpecifiers: ImportSpecifierNode[]): NamedImportsNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

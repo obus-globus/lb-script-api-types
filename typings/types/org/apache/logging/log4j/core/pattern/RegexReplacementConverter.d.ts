@@ -12,6 +12,7 @@ export class RegexReplacementConverter extends LogEventPatternConverter {
     // private formatters: PatternFormatter[];
     // private pattern: Pattern;
     // private substitution: string;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     handlesThrowable(): boolean;
 }

@@ -6,6 +6,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ClientboundAddEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { EntityDataAccessor } from '../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { ServerEntity } from '../../../../../net/minecraft/server/level/ServerEntity.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
@@ -100,9 +101,12 @@ export class ItemFrame extends HangingEntity {
     kill(level: ServerLevel): void;
     move(moverType: MoverType, delta: Vec3): void;
     // private onItemChanged(item: ItemStack): void;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     playPlacementSound(): void;
     push(xa: number, ya: number, za: number): void;
+    push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     recalculateBoundingBox(): void;
     recreateFromPacket(packet: ClientboundAddEntityPacket): void;

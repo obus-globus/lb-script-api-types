@@ -12,5 +12,6 @@ export abstract class ValueLibrary extends Library {
     isProxy(value: Object): boolean;
     toBoolean(value: Object): boolean;
     toNumber(value: Object): Number;
+    toString(): string;
     toString(value: Object): TruffleString;
 }

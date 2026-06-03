@@ -6,5 +6,6 @@ export interface JvmTypeFactory<T extends Object | number | string | boolean> ex
     createObjectType(arg0: string): T;
     createPrimitiveType(arg0: PrimitiveType): T;
     getJavaLangClassType(): T;
+    toString(): string;
     toString(arg0: T): string;
 }

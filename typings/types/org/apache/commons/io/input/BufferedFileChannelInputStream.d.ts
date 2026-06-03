@@ -18,6 +18,7 @@ export class BufferedFileChannelInputStream extends InputStream {
     // private cleanDirectBuffer(arg0: ByteBuffer): void;
     close(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private refill(): boolean;
     skip(arg0: number): number;

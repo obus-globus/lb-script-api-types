@@ -4,12 +4,12 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 import type { KeyMappingAccessor } from '../../../net/fabricmc/fabric/mixin/client/keymapping/KeyMappingAccessor.d.ts'
-import type { KeyMappingAccessor } from '../../../net/fabricmc/fabric/mixin/event/interaction/client/KeyMappingAccessor.d.ts'
+import type { KeyMappingAccessor as KeyMappingAccessor_2 } from '../../../net/fabricmc/fabric/mixin/event/interaction/client/KeyMappingAccessor.d.ts'
 import type { KeyMapping$Category } from '../../../net/minecraft/client/KeyMapping$Category.d.ts'
 import type { KeyEvent } from '../../../net/minecraft/client/input/KeyEvent.d.ts'
 import type { MouseButtonEvent } from '../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
-export class KeyMapping extends Object implements Comparable<KeyMapping>, KeyMappingAccessor, KeyMappingAccessor {
+export class KeyMapping extends Object implements Comparable<KeyMapping>, KeyMappingAccessor, KeyMappingAccessor_2 {
     static click(paramkey: InputConstants$Key): void;
     static createNameSupplier(paramkey: string): () => Component;
     static get(paramname: string): KeyMapping;

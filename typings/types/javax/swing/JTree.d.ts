@@ -22,6 +22,7 @@ import type { TreeModelListener } from '../../javax/swing/event/TreeModelListene
 import type { TreeSelectionEvent } from '../../javax/swing/event/TreeSelectionEvent.d.ts'
 import type { TreeSelectionListener } from '../../javax/swing/event/TreeSelectionListener.d.ts'
 import type { TreeWillExpandListener } from '../../javax/swing/event/TreeWillExpandListener.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { TreeUI } from '../../javax/swing/plaf/TreeUI.d.ts'
 import type { Position$Bias } from '../../javax/swing/text/Position$Bias.d.ts'
 import type { TreeCellEditor } from '../../javax/swing/tree/TreeCellEditor.d.ts'
@@ -180,6 +181,7 @@ export class JTree extends JComponent implements Accessible, Scrollable {
     getSelectionRows(): number[];
     getShowsRootHandles(): boolean;
     getToggleClickCount(): number;
+    getToolTipText(): string;
     getToolTipText(arg0: MouseEvent): string;
     getTreeExpansionListeners(): TreeExpansionListener[];
     getTreeSelectionListeners(): TreeSelectionListener[];
@@ -201,6 +203,7 @@ export class JTree extends JComponent implements Accessible, Scrollable {
     isRootVisible(): boolean;
     isRowSelected(arg0: number): boolean;
     isSelectionEmpty(): boolean;
+    isVisible(): boolean;
     isVisible(arg0: TreePath): boolean;
     makeVisible(arg0: TreePath): void;
     paramString(): string;
@@ -242,6 +245,7 @@ export class JTree extends JComponent implements Accessible, Scrollable {
     setSelectionRows(arg0: number[]): void;
     setShowsRootHandles(arg0: boolean): void;
     setToggleClickCount(arg0: number): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: TreeUI): void;
     setUIProperty(arg0: string, arg1: Object): void;
     setVisibleRowCount(arg0: number): void;

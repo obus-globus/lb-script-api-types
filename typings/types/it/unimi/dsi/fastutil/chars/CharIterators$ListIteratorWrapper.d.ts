@@ -1,6 +1,7 @@
 import type { CharConsumer } from '../../../../../it/unimi/dsi/fastutil/chars/CharConsumer.d.ts'
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class CharIterators$ListIteratorWrapper extends Object implements CharListIterator {
@@ -9,8 +10,10 @@ export class CharIterators$ListIteratorWrapper extends Object implements CharLis
     add(arg0: string): void;
     add(arg0: string): void;
     add(arg0: string): void;
+    add(arg0: string): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): string;
@@ -21,6 +24,7 @@ export class CharIterators$ListIteratorWrapper extends Object implements CharLis
     previousIndex(): number;
     remove(): void;
     remove(): void;
+    set(arg0: string): void;
     set(arg0: string): void;
     set(arg0: string): void;
     set(arg0: string): void;

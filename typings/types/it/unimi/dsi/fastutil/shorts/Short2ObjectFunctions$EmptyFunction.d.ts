@@ -7,11 +7,14 @@ export class Short2ObjectFunctions$EmptyFunction<V extends Object | number | str
     clear(): void;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;
     equals(arg0: Object | null): boolean;
+    get(arg0: Object): V;
     get(arg0: number): V;
+    getOrDefault(arg0: Object, arg1: V): V;
     getOrDefault(arg0: number, arg1: V): V;
     hashCode(): number;
     // private readResolve(): Object;

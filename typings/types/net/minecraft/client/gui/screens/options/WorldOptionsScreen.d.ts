@@ -30,6 +30,7 @@ export class WorldOptionsScreen extends Screen implements HasDifficultyReaction,
     // private createGameRulesButton(): Button;
     // private createRestrictionsButton(): Button;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     onDifficultyChanged(): void;
     onGamemasterPermissionChanged(hasGamemasterPermission: boolean): void;

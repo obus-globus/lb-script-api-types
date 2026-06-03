@@ -1,6 +1,6 @@
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
-import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
 import type { ToDoubleFunction } from '../../../../java/util/function/ToDoubleFunction.d.ts'
 import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../../../java/util/function/ToLongFunction.d.ts'

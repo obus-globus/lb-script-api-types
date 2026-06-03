@@ -8,5 +8,7 @@ export class LookupTranslator extends CharSequenceTranslator {
     // private lookupMap: { [key: string]: string };
     // private prefixSet: string[];
     // private shortest: number;
+    translate(arg0: CharSequence): string;
+    translate(arg0: CharSequence, arg1: Writer): void;
     translate(arg0: CharSequence, arg1: number, arg2: Writer): number;
 }

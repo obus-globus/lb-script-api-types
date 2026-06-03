@@ -9,6 +9,7 @@ export class ClassInfo$Field extends ClassInfo$Member {
     constructor(null_: ClassInfo$Field, arg1: FieldNode, arg2: boolean)
     constructor(null_: ClassInfo$Field, arg1: ClassInfo$Member)
     equals(arg0: Object | null): boolean;
+    equals(arg0: string, arg1: string): boolean;
     getDisplayFormat(): string;
     getOwner(): ClassInfo;
 }

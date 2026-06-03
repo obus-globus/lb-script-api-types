@@ -1,6 +1,5 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AbstractCoroutine } from '../../../kotlinx/coroutines/AbstractCoroutine.d.ts'
@@ -37,7 +36,7 @@ export class ChannelCoroutine<E extends Object | number | string | boolean> exte
     cancel(cause: CancellationException | null): void;
     cancelInternal(cause: Throwable): void;
     close(cause: Throwable | null): boolean;
-    invokeOnClose(handler: Function1<Throwable, void>): void;
+    invokeOnClose(handler: (param0: Throwable | null) => void): void;
     iterator(): ChannelIterator<E>;
     offer(element: E): boolean;
     poll(): E | null;

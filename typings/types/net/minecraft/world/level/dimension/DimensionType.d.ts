@@ -3,7 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DimensionTypeAccessor } from '../../../../../net/fabricmc/fabric/mixin/dimension/DimensionTypeAccessor.d.ts'
-import type { DimensionTypeAccessor } from '../../../../../net/irisshaders/iris/mixin/DimensionTypeAccessor.d.ts'
+import type { DimensionTypeAccessor as DimensionTypeAccessor_2 } from '../../../../../net/irisshaders/iris/mixin/DimensionTypeAccessor.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -17,7 +17,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { DimensionType$MonsterSettings } from '../../../../../net/minecraft/world/level/dimension/DimensionType$MonsterSettings.d.ts'
 import type { DimensionType$Skybox } from '../../../../../net/minecraft/world/level/dimension/DimensionType$Skybox.d.ts'
-export class DimensionType extends Record implements DimensionTypeAccessor, DimensionTypeAccessor {
+export class DimensionType extends Record implements DimensionTypeAccessor, DimensionTypeAccessor_2 {
     static BITS_FOR_Y: number;
     static CODEC: Codec<Object>;
     static DIRECT_CODEC: Codec<DimensionType>;

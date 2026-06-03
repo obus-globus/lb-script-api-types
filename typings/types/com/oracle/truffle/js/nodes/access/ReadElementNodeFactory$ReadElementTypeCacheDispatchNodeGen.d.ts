@@ -17,10 +17,16 @@ export class ReadElementNodeFactory$ReadElementTypeCacheDispatchNodeGen extends 
     // private state_0_: number;
     // private stringHandler: ReadElementNode$StringReadElementTypeCacheNode;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): Object;
+    executeTypeDispatch(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;
     executeTypeDispatch(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): Object;
+    executeTypeDispatch(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;
     executeTypeDispatch(arg0Value: Object, arg1Value: number, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): Object;
+    executeTypeDispatchAsDouble(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeTypeDispatchAsDouble(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
+    executeTypeDispatchAsDouble(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeTypeDispatchAsDouble(arg0Value: Object, arg1Value: number, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
+    executeTypeDispatchAsInt(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeTypeDispatchAsInt(arg0Value: Object, arg1Value: Object, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
+    executeTypeDispatchAsInt(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): number;
     executeTypeDispatchAsInt(arg0Value: Object, arg1Value: number, arg2Value: Object, arg3Value: Object, arg4Value: ReadElementNode, arg5Value: boolean): number;
 }

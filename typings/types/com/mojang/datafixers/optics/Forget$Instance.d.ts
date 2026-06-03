@@ -11,12 +11,15 @@ import type { ReCocartesian } from '../../../../com/mojang/datafixers/optics/pro
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
+import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Forget$Instance<R extends Object | number | string | boolean> extends Object implements App<Forget$Instance$Mu<R>, Forget$Mu<R>>, Cartesian<Forget$Mu<R>, Forget$Instance$Mu<R>>, ReCocartesian<Forget$Mu<R>, Forget$Instance$Mu<R>> {
     static unbox(paramarg0: App<Object, Object>): Cartesian<Object, Object>;
     static unbox(paramarg0: App<Object, Object>): ReCocartesian<Object, Object>;
     constructor()
+    dimap(arg0: App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Forget$Mu<R>, A, B>, App2<Forget$Mu<R>, C, D>>;
+    dimap(arg0: () => App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
     first(arg0: App2<Forget$Mu<R>, A, B>): App2<Forget$Mu<R>, Pair<A, C>, Pair<B, C>>;
     second(arg0: App2<Forget$Mu<R>, A, B>): App2<Forget$Mu<R>, Pair<C, A>, Pair<C, B>>;
     second(arg0: App2<P, A, B>): App2<P, Pair<C, A>, Pair<C, B>>;

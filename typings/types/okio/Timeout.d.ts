@@ -1,7 +1,6 @@
 import type { TimeUnit } from '../java/util/concurrent/TimeUnit.d.ts'
 import type { Condition } from '../java/util/concurrent/locks/Condition.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-import type { Function0 } from '../kotlin/jvm/functions/Function0.d.ts'
 import type { Timeout$Companion } from '../okio/Timeout$Companion.d.ts'
 export class Timeout extends Object {
     static Companion: Timeout$Companion;
@@ -19,7 +18,7 @@ export class Timeout extends Object {
     deadlineNanoTime(): number;
     deadlineNanoTime(deadlineNanoTime: number): Timeout;
     hasDeadline(): boolean;
-    intersectWith<T extends Object | number | string | boolean>(other: Timeout, block: Function0<T>): T;
+    intersectWith<T extends Object | number | string | boolean>(other: Timeout, block: () => T): T;
     throwIfReached(): void;
     timeout(timeout: number, unit: TimeUnit): Timeout;
     timeoutNanos(): number;

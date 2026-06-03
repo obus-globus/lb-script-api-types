@@ -7,6 +7,7 @@ import type { MsaDeviceCode } from '../../../../../net/raphimc/minecraftauth/msa
 import type { MsaResponseHandler } from '../../../../../net/raphimc/minecraftauth/msa/responsehandler/MsaResponseHandler.d.ts'
 export class MsaDeviceCodeRequest extends PostRequest implements MsaResponseHandler<MsaDeviceCode> {
     constructor(arg0: MsaApplicationConfig)
+    handle(arg0: HttpResponse): MsaDeviceCode;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MsaDeviceCode;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

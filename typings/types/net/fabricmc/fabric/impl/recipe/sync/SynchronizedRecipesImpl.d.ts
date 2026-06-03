@@ -18,11 +18,14 @@ export class SynchronizedRecipesImpl extends Record implements SynchronizedRecip
     equals(arg0: Object | null): boolean;
     get(arg0: RecipeType<T>, arg1: ResourceKey<Recipe<Object>>): RecipeHolder<T>;
     get(arg0: ResourceKey<Recipe<Object>>): RecipeHolder<Object>;
+    get(arg0: RecipeType<T>, arg1: ResourceKey<Recipe<Object>>): RecipeHolder<T>;
     getAllMatches<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Stream<RecipeHolder<T>>;
     getAllOfType(arg0: RecipeType<T>): E[];
     getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<T>>;
     getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: RecipeHolder<T>): Optional<RecipeHolder<T>>;
     getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
+    getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<T>>;
+    getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: RecipeHolder<T>): Optional<RecipeHolder<T>>;
     hashCode(): number;
     preparedRecipes(): RecipeMap;
     recipes(): E[];

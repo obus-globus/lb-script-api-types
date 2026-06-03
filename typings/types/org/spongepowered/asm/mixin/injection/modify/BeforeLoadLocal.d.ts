@@ -40,6 +40,7 @@ export class BeforeLoadLocal extends ModifyVariableInjector$LocalVariableInjecti
     // private ordinal: number;
     // private returnType: Type;
     addMessage(arg0: string, arg1: Object[]): void;
+    find(arg0: string, arg1: AbstractInsnNode[], arg2: E[]): boolean;
     find(arg0: InjectionInfo, arg1: AbstractInsnNode[], arg2: E[], arg3: AbstractInsnNode[]): boolean;
     toString(): string;
     toString(arg0: LocalVariableDiscriminator$Context): string;

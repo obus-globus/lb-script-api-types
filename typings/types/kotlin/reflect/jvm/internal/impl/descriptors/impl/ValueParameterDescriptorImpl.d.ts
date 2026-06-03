@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { CallableDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
@@ -14,7 +13,7 @@ import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/interna
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export class ValueParameterDescriptorImpl extends VariableDescriptorImpl implements ValueParameterDescriptor {
     static Companion: ValueParameterDescriptorImpl$Companion;
-    static createWithDestructuringDeclarations(paramarg0: CallableDescriptor, paramarg1: ValueParameterDescriptor, paramarg2: number, paramarg3: AnnotationDescriptor[], paramarg4: Name, paramarg5: KotlinType, paramarg6: boolean, paramarg7: boolean, paramarg8: boolean, paramarg9: KotlinType, paramarg10: SourceElement, paramarg11: Function0<Object>): ValueParameterDescriptorImpl;
+    static createWithDestructuringDeclarations(paramarg0: CallableDescriptor, paramarg1: ValueParameterDescriptor, paramarg2: number, paramarg3: AnnotationDescriptor[], paramarg4: Name, paramarg5: KotlinType, paramarg6: boolean, paramarg7: boolean, paramarg8: boolean, paramarg9: KotlinType, paramarg10: SourceElement, paramarg11: () => Object | null): ValueParameterDescriptorImpl;
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: CallableDescriptor, arg1: ValueParameterDescriptor, arg2: number, arg3: AnnotationDescriptor[], arg4: Name, arg5: KotlinType, arg6: boolean, arg7: boolean, arg8: boolean, arg9: KotlinType, arg10: SourceElement)
     // private declaresDefaultValue: boolean;

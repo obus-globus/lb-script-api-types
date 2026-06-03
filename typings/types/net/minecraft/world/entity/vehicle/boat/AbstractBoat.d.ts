@@ -149,6 +149,7 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     getLeashOffset(): Vec3;
     getLeashOffset(partialTicks: number): Vec3;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getMaxPassengers(): number;
     getMotionDirection(): Direction;
     getMovementEmission(): Entity$MovementEmission;
@@ -181,8 +182,11 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     onElasticLeashPull(): void;
     onLeashRemoved(): void;
     onPassengerTurned(passenger: Entity): void;
+    positionRider(passenger: Entity): void;
     positionRider(passenger: Entity, moveFunction: (param0: Entity, param1: number, param2: number, param3: number) => void): void;
+    push(xa: number, ya: number, za: number): void;
     push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     readLeashData(input: ValueInput): void;
     remove(reason: Entity$RemovalReason): void;

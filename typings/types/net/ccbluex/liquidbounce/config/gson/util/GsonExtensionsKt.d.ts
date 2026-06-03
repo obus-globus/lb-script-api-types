@@ -9,13 +9,12 @@ import type { Reader } from '../../../../../../java/io/Reader.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 export class GsonExtensionsKt extends Object {
     static deserialize(jsonDeserializationContext: JsonDeserializationContext, json: JsonElement): Object | null;
     static getOrNull(jsonArray: JsonElement[], index: number): JsonElement;
-    static jsonArray(initialCapacity: number, builderAction: Function1<Object, void>): JsonElement[];
+    static jsonArray(initialCapacity: number, builderAction: (param0: Object | null) => void): JsonElement[];
     static jsonArrayOf(elements: (Object | null)[]): JsonElement[];
-    static jsonObject(builderAction: Function1<Object, void>): JsonObject;
+    static jsonObject(builderAction: (param0: Object | null) => void): JsonObject;
     static parseTree(jsonReader: JsonReader): JsonElement;
     /**
      * Read JSON content

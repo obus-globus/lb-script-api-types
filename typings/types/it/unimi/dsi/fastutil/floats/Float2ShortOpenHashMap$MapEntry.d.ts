@@ -32,6 +32,8 @@ export class Float2ShortOpenHashMap$MapEntry extends Object implements Float2Sho
     left(arg0: number): FloatShortPair;
     left(arg0: number): FloatShortPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatShortPair;
     right(arg0: number): FloatShortPair;
     right(): number;
     right(arg0: number): FloatShortPair;

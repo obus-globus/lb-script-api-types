@@ -20,4 +20,5 @@ export class StringRepresentableArgument<T extends Enum<T> & StringRepresentable
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): T;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
 }

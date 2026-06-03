@@ -9,6 +9,7 @@ export class UnwrapPromiseNodeGen extends UnwrapPromiseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
+    execute(promise: JSPromiseObject): Object;
     execute(arg0Value: JSPromiseObject, arg1Value: number, arg2Value: Object): Object;
     // private executeAndSpecialize(arg0Value: JSPromiseObject, arg1Value: number, arg2Value: Object): Object;
 }

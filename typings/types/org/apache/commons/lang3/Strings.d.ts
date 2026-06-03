@@ -14,6 +14,7 @@ export abstract class Strings extends Object {
     containsAny(arg0: CharSequence, arg1: CharSequence[]): boolean;
     endsWith(arg0: CharSequence, arg1: CharSequence): boolean;
     endsWithAny(arg0: CharSequence, arg1: CharSequence[]): boolean;
+    equals(other: Object | null): boolean;
     equals(arg0: CharSequence, arg1: CharSequence): boolean;
     equals(arg0: string, arg1: string): boolean;
     equalsAny(arg0: CharSequence, arg1: CharSequence[]): boolean;

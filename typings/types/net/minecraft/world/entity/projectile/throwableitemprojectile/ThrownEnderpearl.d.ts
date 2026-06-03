@@ -2,6 +2,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Entity$RemovalReason } from '../../../../../../net/minecraft/world/entity/Entity$RemovalReason.d.ts'
 import type { EntityReference } from '../../../../../../net/minecraft/world/entity/EntityReference.d.ts'
@@ -77,8 +78,11 @@ export class ThrownEnderpearl extends ThrowableItemProjectile {
     onInsideBlock(state: BlockState): void;
     onInsideBubbleColumn(dragDown: boolean): void;
     onRemoval(reason: Entity$RemovalReason): void;
+    playSound(sound: SoundEvent): void;
+    playSound(sound: SoundEvent, volume: number, pitch: number): void;
     // private playSound(level: Level, position: Vec3): void;
     // private registerToCurrentOwner(): void;
+    setOwner(owner: Entity): void;
     setOwner(owner: EntityReference<Entity>): void;
     teleport(transition: TeleportTransition): Entity;
     tick(): void;

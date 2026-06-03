@@ -13,6 +13,7 @@ export class DisplayRenderer$ItemDisplayRenderer extends DisplayRenderer<Display
     constructor(context: EntityRendererProvider$Context)
     // private itemModelResolver: ItemModelResolver;
     createRenderState(): ItemDisplayEntityRenderState;
+    createRenderState(entity: Display$ItemDisplay, partialTicks: number): ItemDisplayEntityRenderState;
     extractRenderState(entity: Display$ItemDisplay, state: ItemDisplayEntityRenderState, partialTicks: number): void;
     submitInner(state: ItemDisplayEntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, interpolationProgress: number): void;
 }

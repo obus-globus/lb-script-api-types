@@ -25,10 +25,12 @@ export class BooleanSpliterators$SpliteratorFromIterator extends Object implemen
     estimateSize(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
+    forEachRemaining(arg0: (param0: boolean) => void): void;
     getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
     makeForSplit(arg0: (Object | null)[], arg1: number): BooleanSpliterator;
     skip(arg0: number): number;
     skip(arg0: number): number;
+    tryAdvance(arg0: (param0: boolean) => void): boolean;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
     trySplit(): BooleanSpliterator;

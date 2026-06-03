@@ -19,11 +19,15 @@ export class ShortIntMutablePair extends Object implements ShortIntPair, Seriali
     key(arg0: number): ShortIntPair;
     key(arg0: number): ShortIntPair;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortIntPair;
     left(arg0: number): ShortIntMutablePair;
     left(): number;
     left(arg0: number): ShortIntPair;
     left(arg0: number): ShortIntPair;
     leftShort(): number;
+    right(): number;
+    right(arg0: number): ShortIntPair;
     right(arg0: number): ShortIntMutablePair;
     right(): number;
     right(arg0: number): ShortIntPair;

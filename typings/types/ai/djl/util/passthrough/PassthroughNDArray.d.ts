@@ -13,5 +13,6 @@ export class PassthroughNDArray extends NDArrayAdapter {
     detach(): void;
     getObject(): Object;
     intern(arg0: NDArray): void;
+    toByteBuffer(): ByteBuffer;
     toByteBuffer(arg0: boolean): ByteBuffer;
 }

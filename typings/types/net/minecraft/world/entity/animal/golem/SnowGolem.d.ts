@@ -131,6 +131,7 @@ export class SnowGolem extends AbstractGolem implements Shearable, RangedAttackM
     getDeathSound(): SoundEvent;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     hasPumpkin(): boolean;
     isSensitiveToWater(): boolean;
     mobInteract(player: Player, hand: InteractionHand): InteractionResult;

@@ -12,5 +12,6 @@ export class WrapMethodInjector extends Injector {
     // private operationType: Type;
     // private shares: ShareInfo[];
     // private checkSignature(arg0: AbstractInsnNode[]): void;
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
 }

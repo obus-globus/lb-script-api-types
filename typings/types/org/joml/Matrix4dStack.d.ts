@@ -2,6 +2,7 @@ import type { ObjectInput } from '../../java/io/ObjectInput.d.ts'
 import type { ObjectOutput } from '../../java/io/ObjectOutput.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Matrix4d } from '../../org/joml/Matrix4d.d.ts'
+import type { Matrix4dc } from '../../org/joml/Matrix4dc.d.ts'
 import type { Vector3d } from '../../org/joml/Vector3d.d.ts'
 export class Matrix4dStack extends Matrix4d {
     static CORNER_NXNYNZ: number;
@@ -32,6 +33,7 @@ export class Matrix4dStack extends Matrix4d {
     clear(): Matrix4dStack;
     clone(): Object;
     equals(arg0: Object | null): boolean;
+    equals(arg0: Matrix4dc, arg1: number): boolean;
     hashCode(): number;
     popMatrix(): Matrix4dStack;
     pushMatrix(): Matrix4dStack;

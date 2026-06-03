@@ -266,6 +266,7 @@ export class CodeSizeEvaluator extends MethodVisitor implements Opcodes {
     visitJumpInsn(arg0: number, arg1: Label): void;
     visitLdcInsn(arg0: Object): void;
     visitLookupSwitchInsn(arg0: Label, arg1: number[], arg2: Label[]): void;
+    visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;

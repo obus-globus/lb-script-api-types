@@ -13,5 +13,6 @@ export class DeltaInputStream extends InputStream {
     available(): number;
     close(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(buf: number[], off: number, len: number): number;
 }

@@ -5,6 +5,7 @@ import type { Options } from '../../../../../net/minecraft/client/Options.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { FocusableTextWidget } from '../../../../../net/minecraft/client/gui/components/FocusableTextWidget.d.ts'
 import type { LogoRenderer } from '../../../../../net/minecraft/client/gui/components/LogoRenderer.d.ts'
+import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
@@ -38,9 +39,11 @@ export class AccessibilityOnboardingScreen extends Screen {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private handleInitialNarrationDelay(): void;
     init(): void;
+    init(width: number, height: number): void;
     // private initTitleYPos(): number;
     onClose(): void;
     panoramaShouldSpin(): boolean;
     repositionElements(): void;
     setInitialFocus(): void;
+    setInitialFocus(target: GuiEventListener): void;
 }

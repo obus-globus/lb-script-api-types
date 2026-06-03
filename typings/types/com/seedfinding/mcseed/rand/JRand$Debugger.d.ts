@@ -24,7 +24,9 @@ export class JRand$Debugger extends JRand {
     getNextIntSkip(): number;
     getSeed(): number;
     next(arg0: number): number;
+    nextInt(): number;
     nextInt(arg0: number): number;
     nextSeed(): number;
     setSeed(arg0: number): void;
+    setSeed(arg0: number, arg1: boolean): void;
 }

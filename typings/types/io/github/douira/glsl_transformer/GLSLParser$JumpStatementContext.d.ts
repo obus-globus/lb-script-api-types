@@ -4,5 +4,6 @@ export class GLSLParser$JumpStatementContext extends ParserRuleContext {
     constructor()
     constructor(arg0: ParserRuleContext, arg1: number)
     copyFrom(arg0: GLSLParser$JumpStatementContext): void;
+    copyFrom(arg0: ParserRuleContext): void;
     getRuleIndex(): number;
 }

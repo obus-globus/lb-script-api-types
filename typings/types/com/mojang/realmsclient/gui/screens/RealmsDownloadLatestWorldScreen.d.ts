@@ -55,6 +55,7 @@ export class RealmsDownloadLatestWorldScreen extends RealmsScreen {
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     // private getContentLength(downloadLink: string): number;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     tick(): void;
 }

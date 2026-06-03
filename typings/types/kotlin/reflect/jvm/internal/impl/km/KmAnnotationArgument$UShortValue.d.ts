@@ -5,6 +5,6 @@ export class KmAnnotationArgument$UShortValue extends KmAnnotationArgument$Liter
     private constructor(arg0: number)
     readonly value: number;
     equals(arg0: Object | null): boolean;
-//     getValue-Mh2AYeg(): number;
- // ; invalid because of -    hashCode(): number;
+// (invalid TS: name contains '-')     getValue-Mh2AYeg(): number;
+    hashCode(): number;
 }

@@ -17,6 +17,8 @@ export class DoubleReferenceMutablePair<V extends Object | number | string | boo
     key(arg0: number): DoubleReferencePair<V>;
     key(arg0: number): DoubleReferencePair<V>;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleReferencePair<V>;
     left(arg0: number): DoubleReferenceMutablePair<V>;
     left(): number;
     left(arg0: number): DoubleReferencePair<V>;

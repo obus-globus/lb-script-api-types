@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { LocalDateTime } from '../../../kotlinx/datetime/LocalDateTime.d.ts'
 import type { AbstractDateTimeFormatBuilder } from '../../../kotlinx/datetime/format/AbstractDateTimeFormatBuilder.d.ts'
 import type { AbstractWithDateTimeBuilder } from '../../../kotlinx/datetime/format/AbstractWithDateTimeBuilder.d.ts'
@@ -16,8 +15,8 @@ export class LocalDateTimeFormat$Builder extends Object implements AbstractDateT
     addFormatStructureForDate(structure: FormatStructure<DateFieldContainer>): void;
     addFormatStructureForDateTime(structure: FormatStructure<DateTimeFieldContainer>): void;
     addFormatStructureForTime(structure: FormatStructure<TimeFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: Function1<ActualSelf, void>[], mainFormat: Function1<ActualSelf, void>): void;
-    appendOptionalImpl(onZero: string, format: Function1<ActualSelf, void>): void;
+    appendAlternativeParsingImpl(otherFormats: (param0: ActualSelf) => void[], mainFormat: (param0: ActualSelf) => void): void;
+    appendOptionalImpl(onZero: string, format: (param0: ActualSelf) => void): void;
     build(): CachedFormatStructure<Target>;
     chars(value: string): void;
     createEmpty(): LocalDateTimeFormat$Builder;

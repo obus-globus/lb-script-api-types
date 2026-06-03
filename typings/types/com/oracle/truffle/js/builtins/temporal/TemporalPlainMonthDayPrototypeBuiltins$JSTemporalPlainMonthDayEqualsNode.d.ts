@@ -27,4 +27,5 @@ export abstract class TemporalPlainMonthDayPrototypeBuiltins$JSTemporalPlainMont
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     equals(md: JSTemporalPlainMonthDayObject, otherParam: Object, toCalendarIdentifier: ToTemporalCalendarIdentifierNode, toTemporalMonthDayNode: ToTemporalMonthDayNode): boolean;
+    equals(other: Object | null): boolean;
 }

@@ -7,4 +7,5 @@ export class TreeSectionCollector extends SectionCollector implements Coordinate
     // private sections: Long2ReferenceMap<RenderSection>;
     orderIsSorted(): boolean;
     visit(arg0: number, arg1: number, arg2: number): void;
+    visit(arg0: RenderSection): void;
 }

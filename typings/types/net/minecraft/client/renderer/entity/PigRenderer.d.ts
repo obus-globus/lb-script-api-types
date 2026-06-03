@@ -16,6 +16,7 @@ export class PigRenderer extends MobRenderer<Pig, PigRenderState, PigModel> {
     constructor(context: EntityRendererProvider$Context)
     // private models: { [key in PigVariant$ModelType]: AdultAndBabyModelPair<PigModel> };
     createRenderState(): PigRenderState;
+    createRenderState(entity: Pig, partialTicks: number): PigRenderState;
     extractRenderState(entity: Pig, state: PigRenderState, partialTicks: number): void;
     getTextureLocation(state: PigRenderState): Identifier;
     submit(state: PigRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

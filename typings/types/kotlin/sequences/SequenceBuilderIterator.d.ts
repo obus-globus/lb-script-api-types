@@ -5,6 +5,7 @@ import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
 import type { SequenceScope } from '../../kotlin/sequences/SequenceScope.d.ts'
 export class SequenceBuilderIterator<T extends Object | number | string | boolean> extends SequenceScope<T> implements Iterator<T>, Continuation<void> {
     constructor()
@@ -20,5 +21,7 @@ export class SequenceBuilderIterator<T extends Object | number | string | boolea
     // private nextNotReady(): T;
     resumeWith(result: Result<void>): void;
     yield(value: T): void;
+    yieldAll(elements: T[]): void;
     yieldAll(iterator: Iterator<T>): void;
+    yieldAll(sequence: Sequence<T>): void;
 }

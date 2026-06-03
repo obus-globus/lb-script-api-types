@@ -1,7 +1,9 @@
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLanguage$Env } from '../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
+import type { TruffleLanguage$InlineParsingRequest } from '../../../../com/oracle/truffle/api/TruffleLanguage$InlineParsingRequest.d.ts'
 import type { TruffleLanguage$ParsingRequest } from '../../../../com/oracle/truffle/api/TruffleLanguage$ParsingRequest.d.ts'
+import type { ExecutableNode } from '../../../../com/oracle/truffle/api/nodes/ExecutableNode.d.ts'
 import type { Node } from '../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { RegexLanguage$RegexContext } from '../../../../com/oracle/truffle/regex/RegexLanguage$RegexContext.d.ts'
 import type { RegexSource } from '../../../../com/oracle/truffle/regex/RegexSource.d.ts'
@@ -22,6 +24,7 @@ export class RegexLanguage extends TruffleLanguage<RegexLanguage$RegexContext> {
     getScope(context: RegexLanguage$RegexContext): Object;
     getSourceOptionDescriptors(): OptionDescriptor[];
     isThreadAccessAllowed(thread: Thread, singleThreaded: boolean): boolean;
+    parse(request: TruffleLanguage$InlineParsingRequest): ExecutableNode;
     parse(parsingRequest: TruffleLanguage$ParsingRequest): CallTarget;
     patchContext(context: RegexLanguage$RegexContext, newEnv: TruffleLanguage$Env): boolean;
 }

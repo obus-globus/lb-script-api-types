@@ -67,5 +67,7 @@ export class ICUResourceBundleImpl$ResourceString extends ICUResourceBundleImpl 
     constructor(container: ICUResourceBundleImpl, key: string, resource: number)
     // private value: string;
     getString(): string;
+    getString(index: number): string;
+    getString(arg0: string): string;
     getType(): number;
 }

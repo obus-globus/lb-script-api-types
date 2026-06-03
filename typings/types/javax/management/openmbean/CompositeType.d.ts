@@ -12,6 +12,7 @@ export class CompositeType extends OpenType<CompositeData> {
     // private nameToType: { [key: string]: OpenType<Object> };
     containsKey(arg0: string): boolean;
     equals(arg0: Object | null): boolean;
+    getDescription(): string;
     getDescription(arg0: string): string;
     getType(arg0: string): OpenType<Object>;
     hashCode(): number;

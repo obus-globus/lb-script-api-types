@@ -19,11 +19,15 @@ export class ByteFloatMutablePair extends Object implements ByteFloatPair, Seria
     key(arg0: number): ByteFloatPair;
     key(arg0: number): ByteFloatPair;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteFloatPair;
     left(arg0: number): ByteFloatMutablePair;
     left(): number;
     left(arg0: number): ByteFloatPair;
     left(arg0: number): ByteFloatPair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteFloatPair;
     right(arg0: number): ByteFloatMutablePair;
     right(): number;
     right(arg0: number): ByteFloatPair;

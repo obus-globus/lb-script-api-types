@@ -1,7 +1,6 @@
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { CompletionStage } from '../../../java/util/concurrent/CompletionStage.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../kotlin/jvm/functions/Function2.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineScope } from '../../../kotlinx/coroutines/CoroutineScope.d.ts'
@@ -13,5 +12,5 @@ export class FutureKt extends Object {
     static asCompletableFuture(paramarg0: Job): CompletableFuture<void>;
     static asDeferred(paramarg0: CompletionStage<Object>): Deferred<Object>;
     static await(paramarg0: CompletionStage<Object>, paramarg1: Continuation<Object>): Object;
-    static future(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: CoroutineStart, paramarg3: Function2<Object, Object, Object>): CompletableFuture<Object>;
+    static future(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: CoroutineStart, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): CompletableFuture<Object>;
 }

@@ -7,6 +7,7 @@ export interface FloatBigListIterator extends BigListIterator<number>, FloatBidi
     add(arg0: number): void;
     back(arg0: number): number;
     back(arg0: number): number;
+    back(arg0: number): number;
     previous(): number;
     set<K extends Object | number | string | boolean>(arg0: K): void;
     set(arg0: number): void;

@@ -5,6 +5,8 @@ import type { Normalizer$QuickCheckResult } from '../../../../com/ibm/icu/text/N
 import type { Normalizer2 } from '../../../../com/ibm/icu/text/Normalizer2.d.ts'
 import type { Normalizer2$Mode } from '../../../../com/ibm/icu/text/Normalizer2$Mode.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Appendable } from '../../../../java/lang/Appendable.d.ts'
+import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class Norm2AllModes$ComposeNormalizer2 extends Norm2AllModes$Normalizer2WithImpl {
     static getInstance(paramarg0: InputStream, paramarg1: string, paramarg2: Normalizer2$Mode): Normalizer2;
@@ -21,7 +23,10 @@ export class Norm2AllModes$ComposeNormalizer2 extends Norm2AllModes$Normalizer2W
     hasBoundaryBefore(arg0: number): boolean;
     isInert(arg0: number): boolean;
     isNormalized(arg0: CharSequence): boolean;
+    normalize(arg0: CharSequence): string;
     normalize(arg0: CharSequence, arg1: Normalizer2Impl$ReorderingBuffer): void;
+    normalize(arg0: CharSequence, arg1: Appendable): Appendable;
+    normalize(arg0: CharSequence, arg1: StringBuilder): StringBuilder;
     normalizeAndAppend(arg0: CharSequence, arg1: boolean, arg2: Normalizer2Impl$ReorderingBuffer): void;
     quickCheck(arg0: CharSequence): Normalizer$QuickCheckResult;
     spanQuickCheckYes(arg0: CharSequence): number;

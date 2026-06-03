@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { PrimitiveType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
 import type { JvmBuiltIns$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JvmBuiltIns$Kind.d.ts'
@@ -58,5 +57,5 @@ export class JvmBuiltIns extends KotlinBuiltIns {
     getCustomizer(): JvmBuiltInsCustomizer;
     getPlatformDependentDeclarationFilter(): PlatformDependentDeclarationFilter;
     initialize(arg0: ModuleDescriptor, arg1: boolean): void;
-    setPostponedSettingsComputation(arg0: Function0<JvmBuiltIns$Settings>): void;
+    setPostponedSettingsComputation(arg0: () => JvmBuiltIns$Settings): void;
 }

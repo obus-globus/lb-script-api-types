@@ -10,6 +10,7 @@ export class ModifyReceiverInjector extends Injector {
     constructor(arg0: InjectionInfo)
     // private checkTargetIsValid(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private getEffectiveArgTypes(arg0: AbstractInsnNode): Type[];
+    inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     // private injectReceiverModifier(arg0: AbstractInsnNode[], arg1: Type[], arg2: Type[], arg3: boolean, arg4: AbstractInsnNode[]): void;
     // private modifyReceiverOfTarget(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;

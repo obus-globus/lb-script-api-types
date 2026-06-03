@@ -6,6 +6,7 @@ import type { LoggerAdapterAbstract } from '../../../../org/spongepowered/asm/lo
 export class LoggerAdapterConsole extends LoggerAdapterAbstract {
     constructor(arg0: string)
     // private debug: PrintStream;
+    catching(arg0: Throwable): void;
     catching(arg0: Level, arg1: Throwable): void;
     // private getOutputStream(arg0: Level): PrintStream;
     getType(): string;

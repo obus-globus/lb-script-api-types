@@ -24,6 +24,7 @@ export abstract class AbstractBaseBlock extends Object implements Block {
     clear(): void;
     describeInput(): Pair<K, V>[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];

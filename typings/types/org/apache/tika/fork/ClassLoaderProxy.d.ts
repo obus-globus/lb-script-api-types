@@ -20,7 +20,9 @@ export class ClassLoaderProxy extends ClassLoader implements ForkProxy {
     // private resource: number;
     // private definePackageIfNecessary(arg0: string, arg1: Class<Object>): void;
     findClass(arg0: string): Class<Object>;
+    findClass(arg0: string, arg1: string): Class<Object>;
     findResource(arg0: string): URL;
+    findResource(arg0: string, arg1: string): URL;
     findResources(arg0: string): Enumeration<URL>;
     init(arg0: DataInputStream, arg1: DataOutputStream): void;
     // private readStream(): number[];

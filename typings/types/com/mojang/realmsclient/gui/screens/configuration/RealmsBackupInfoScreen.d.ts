@@ -29,6 +29,7 @@ export class RealmsBackupInfoScreen extends RealmsScreen {
     // private gameDifficultyMetadata(value: string): Component;
     // private gameModeMetadata(value: string): Component;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private parseWorldType(value: string): Component;
     repositionElements(): void;

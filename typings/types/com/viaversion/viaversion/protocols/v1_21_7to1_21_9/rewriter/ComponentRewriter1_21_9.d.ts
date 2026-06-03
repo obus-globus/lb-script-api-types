@@ -6,5 +6,6 @@ import type { NBTComponentRewriter } from '../../../../../../com/viaversion/viav
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter1_21_9 extends NBTComponentRewriter<ClientboundPacket1_21_6> {
     constructor(arg0: Protocol1_21_7To1_21_9)
+    handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
 }

@@ -10,6 +10,7 @@ import type { AnnotationDescriptor } from '../../../../../../kotlin/reflect/jvm/
 import type { ClassDescriptorBase } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/ClassDescriptorBase.d.ts'
 import type { ModuleAwareClassDescriptor$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/ModuleAwareClassDescriptor$Companion.d.ts'
 import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
+import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { MemberScope$Empty } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope$Empty.d.ts'
 import type { StorageManager } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 import type { ClassTypeConstructorImpl } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/ClassTypeConstructorImpl.d.ts'
@@ -29,6 +30,7 @@ export class NotFoundClasses$MockClassDescriptor extends ClassDescriptorBase {
     getModality(): Modality;
     getStaticScope(): MemberScope$Empty;
     getTypeConstructor(): ClassTypeConstructorImpl;
+    getUnsubstitutedMemberScope(): MemberScope;
     getUnsubstitutedMemberScope(arg0: KotlinTypeRefiner): MemberScope$Empty;
     getUnsubstitutedPrimaryConstructor(): ClassConstructorDescriptor;
     getValueClassRepresentation(): ValueClassRepresentation<SimpleType>;

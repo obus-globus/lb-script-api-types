@@ -9,6 +9,8 @@ import type { AFGenericSocketAddress } from '../../../../org/newsclub/net/unix/A
 import type { AFGenericSocketChannel } from '../../../../org/newsclub/net/unix/AFGenericSocketChannel.d.ts'
 import type { AFGenericSocketPair } from '../../../../org/newsclub/net/unix/AFGenericSocketPair.d.ts'
 import type { AFSelectorProvider } from '../../../../org/newsclub/net/unix/AFSelectorProvider.d.ts'
+import type { AFServerSocketChannel } from '../../../../org/newsclub/net/unix/AFServerSocketChannel.d.ts'
+import type { AFSocketChannel } from '../../../../org/newsclub/net/unix/AFSocketChannel.d.ts'
 import type { AFSocketPair } from '../../../../org/newsclub/net/unix/AFSocketPair.d.ts'
 import type { AFSocketType } from '../../../../org/newsclub/net/unix/AFSocketType.d.ts'
 import type { AFSomeSocket } from '../../../../org/newsclub/net/unix/AFSomeSocket.d.ts'
@@ -26,8 +28,10 @@ export class AFGenericSelectorProvider extends AFSelectorProvider<AFGenericSocke
     openDatagramChannelPair(): AFGenericSocketPair<AFGenericDatagramChannel>;
     openDatagramChannelPair(arg0: AFSocketType): AFGenericSocketPair<AFGenericDatagramChannel>;
     openServerSocketChannel(): AFGenericServerSocketChannel;
+    openServerSocketChannel(arg0: ProtocolFamily): AFServerSocketChannel<AFGenericSocketAddress>;
     openServerSocketChannel(arg0: SocketAddress): AFGenericServerSocketChannel;
     openSocketChannel(): AFGenericSocketChannel;
+    openSocketChannel(arg0: ProtocolFamily): AFSocketChannel<AFGenericSocketAddress>;
     openSocketChannel(arg0: SocketAddress): AFGenericSocketChannel;
     openSocketChannelPair(): AFGenericSocketPair<AFGenericSocketChannel>;
     protocolFamily(): ProtocolFamily;

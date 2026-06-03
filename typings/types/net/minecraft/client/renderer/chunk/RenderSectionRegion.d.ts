@@ -1,3 +1,4 @@
+import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RenderDataMapConsumer } from '../../../../../net/fabricmc/fabric/impl/blockgetter/client/RenderDataMapConsumer.d.ts'
 import type { ClientLevel } from '../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
@@ -9,6 +10,7 @@ import type { CardinalLighting } from '../../../../../net/minecraft/world/level/
 import type { ColorResolver } from '../../../../../net/minecraft/world/level/ColorResolver.d.ts'
 import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
+import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { LevelLightEngine } from '../../../../../net/minecraft/world/level/lighting/LevelLightEngine.d.ts'
 import type { FluidState } from '../../../../../net/minecraft/world/level/material/FluidState.d.ts'
@@ -30,6 +32,7 @@ export class RenderSectionRegion extends Object implements RenderDataMapConsumer
     fabric_acceptRenderDataMap(arg0: Long2ObjectMap<Object>): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockState(pos: BlockPos): BlockState;
     getBlockTint(pos: BlockPos, resolver: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;

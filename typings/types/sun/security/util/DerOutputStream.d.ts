@@ -46,6 +46,9 @@ export class DerOutputStream extends ByteArrayOutputStream implements DerEncoder
     putUnalignedBitString(arg0: BitArray): DerOutputStream;
     write(arg0: number, arg1: number[]): DerOutputStream;
     write(arg0: number, arg1: DerOutputStream): DerOutputStream;
+    write(arg0: number[]): void;
+    write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
     write(arg0: DerEncoder): DerOutputStream;
     writeImplicit(arg0: number, arg1: DerOutputStream): DerOutputStream;
     // private writeString(arg0: string, arg1: number, arg2: Charset): DerOutputStream;

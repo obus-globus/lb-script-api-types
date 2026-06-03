@@ -29,5 +29,6 @@ export abstract class TemporalDurationPrototypeBuiltins$JSTemporalDurationToStri
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
+    toString(): string;
     toString(duration: JSTemporalDurationObject, opt: Object, toFractionalSecondDigitsNode: ToFractionalSecondDigitsNode, toBigIntNode: JSNumberToBigIntNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

@@ -15,6 +15,7 @@ import type { ValueParameterDescriptor } from '../../../../../../../kotlin/refle
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { FunctionDescriptorImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/FunctionDescriptorImpl.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
+import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export class ClassConstructorDescriptorImpl extends FunctionDescriptorImpl implements ClassConstructorDescriptor {
     static create(paramarg0: ClassDescriptor, paramarg1: AnnotationDescriptor[], paramarg2: boolean, paramarg3: SourceElement): ClassConstructorDescriptorImpl;
@@ -34,6 +35,7 @@ export class ClassConstructorDescriptorImpl extends FunctionDescriptorImpl imple
     getOverriddenDescriptors(): E[];
     initialize(arg0: ValueParameterDescriptor[], arg1: DescriptorVisibility): ClassConstructorDescriptorImpl;
     initialize(arg0: ValueParameterDescriptor[], arg1: DescriptorVisibility, arg2: TypeParameterDescriptor[]): ClassConstructorDescriptorImpl;
+    initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility): FunctionDescriptorImpl;
     isPrimary(): boolean;
     setOverriddenDescriptors(arg0: E[]): void;
     substitute(arg0: TypeSubstitutor): ClassConstructorDescriptor;

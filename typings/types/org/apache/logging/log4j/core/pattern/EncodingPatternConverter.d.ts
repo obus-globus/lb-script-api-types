@@ -11,6 +11,7 @@ export class EncodingPatternConverter extends LogEventPatternConverter {
     private constructor(formatters: PatternFormatter[], escapeFormat: EncodingPatternConverter$EscapeFormat)
     // private escapeFormat: EncodingPatternConverter$EscapeFormat;
     // private formatters: PatternFormatter[];
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     handlesThrowable(): boolean;
 }

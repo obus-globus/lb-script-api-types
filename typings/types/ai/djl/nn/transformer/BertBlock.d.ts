@@ -27,9 +27,11 @@ export class BertBlock extends AbstractBlock {
     // private transformerEncoderBlocks: TransformerEncoderBlock[];
     readonly typeDictionarySize: number;
     // private typeEmbedding: IdEmbedding;
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     getEmbeddingSize(): number;
     getOutputShapes(arg0: Shape[]): Shape[];
+    getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getTokenDictionarySize(): number;
     getTokenEmbedding(): IdEmbedding;
     getTypeDictionarySize(): number;

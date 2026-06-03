@@ -1,3 +1,4 @@
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -42,6 +43,7 @@ export abstract class InstanceofNode extends JSBinaryNode {
     doNullOrUndefinedTarget(obj: Object, target: Object): boolean;
     doStringTarget(obj: Object, target: TruffleString): boolean;
     doSymbolTarget(obj: Object, target: Symbol): boolean;
+    executeBoolean(frame: VirtualFrame): boolean;
     executeBoolean(left: Object, right: Object): boolean;
     isResultAlwaysOfType(clazz: Class<Object>): boolean;
 }

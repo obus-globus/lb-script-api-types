@@ -6,6 +6,7 @@ export class Char2CharFunctions$UnmodifiableFunction extends AbstractChar2CharFu
     constructor(arg0: (param0: string) => kotlin.Char)
     // private function: (param0: string) => kotlin.Char;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;

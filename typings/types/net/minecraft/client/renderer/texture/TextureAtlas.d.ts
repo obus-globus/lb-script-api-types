@@ -5,7 +5,7 @@ import type { SodiumSpriteFinder } from '../../../../../net/caffeinemc/mods/sodi
 import type { TextureAtlasAccessor } from '../../../../../net/caffeinemc/mods/sodium/mixin/core/render/texture/TextureAtlasAccessor.d.ts'
 import type { FabricTextureAtlas } from '../../../../../net/fabricmc/fabric/api/client/renderer/v1/sprite/FabricTextureAtlas.d.ts'
 import type { SpriteFinder } from '../../../../../net/fabricmc/fabric/api/client/renderer/v1/sprite/SpriteFinder.d.ts'
-import type { TextureAtlasAccessor } from '../../../../../net/irisshaders/iris/mixin/texture/TextureAtlasAccessor.d.ts'
+import type { TextureAtlasAccessor as TextureAtlasAccessor_2 } from '../../../../../net/irisshaders/iris/mixin/texture/TextureAtlasAccessor.d.ts'
 import type { PBRAtlasHolder } from '../../../../../net/irisshaders/iris/pbr/texture/PBRAtlasHolder.d.ts'
 import type { TextureAtlasExtension } from '../../../../../net/irisshaders/iris/pbr/texture/TextureAtlasExtension.d.ts'
 import type { AbstractTexture } from '../../../../../net/minecraft/client/renderer/texture/AbstractTexture.d.ts'
@@ -15,7 +15,7 @@ import type { SpriteLoader$Preparations } from '../../../../../net/minecraft/cli
 import type { TextureAtlasSprite } from '../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
 import type { TickableTexture } from '../../../../../net/minecraft/client/renderer/texture/TickableTexture.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtlas, TextureAtlasAccessor, FabricTextureAtlas, TextureAtlasAccessor, TextureAtlasExtension, Dumpable, TickableTexture {
+export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtlas, TextureAtlasAccessor, FabricTextureAtlas, TextureAtlasAccessor_2, TextureAtlasExtension, Dumpable, TickableTexture {
     static LOCATION_BLOCKS: Identifier;
     static LOCATION_ITEMS: Identifier;
     static LOCATION_PARTICLES: Identifier;

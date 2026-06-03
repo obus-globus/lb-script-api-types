@@ -20,6 +20,7 @@ export interface Vector4Lc extends Object{
     div(arg0: Vector4ic, arg1: Vector4L): Vector4L;
     dot(arg0: Vector4Lc): number;
     dot(arg0: Vector4ic): number;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: LongBuffer): LongBuffer;

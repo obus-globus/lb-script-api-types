@@ -22,6 +22,7 @@ export class PureNFATransition extends Object implements AbstractTransition<Pure
     getSource(): PureNFAState;
     getTarget<S extends AbstractState<S, T>>(forward: boolean): S;
     getTarget(): PureNFAState;
+    getTarget(forward: boolean): PureNFAState;
     hasCaretGuard(): boolean;
     hasDollarGuard(): boolean;
     hasMatchBeginGuard(): boolean;

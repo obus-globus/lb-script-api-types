@@ -19,6 +19,8 @@ export class LongObjectMutablePair<V extends Object | number | string | boolean>
     key(arg0: number): LongObjectPair<V>;
     key(arg0: number): LongObjectPair<V>;
     keyLong(): number;
+    left(): number;
+    left(arg0: number): LongObjectPair<V>;
     left(arg0: number): LongObjectMutablePair<V>;
     left(): number;
     left(arg0: number): LongObjectPair<V>;

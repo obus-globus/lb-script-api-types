@@ -30,5 +30,6 @@ export class NoSqlDatabaseManager<W extends Object | number | string | boolean> 
     // private setFields(mapMessage: MapMessage<Object, Object>, noSqlObject: NoSqlObject<W>): void;
     shutdownInternal(): boolean;
     startupInternal(): void;
+    writeInternal(event: LogEvent): void;
     writeInternal(event: LogEvent, serializable: Serializable): void;
 }

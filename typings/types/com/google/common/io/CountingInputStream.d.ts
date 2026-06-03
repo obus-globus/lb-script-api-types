@@ -8,6 +8,7 @@ export class CountingInputStream extends FilterInputStream {
     getCount(): number;
     mark(readlimit: number): void;
     read(): number;
+    read(arg0: number[]): number;
     read(b: number[], off: number, len: number): number;
     reset(): void;
     skip(n: number): number;

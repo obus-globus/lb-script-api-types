@@ -7,7 +7,7 @@ import type { TranslucentGeometryCollector } from '../../../../../../net/caffein
 import type { LevelSlice } from '../../../../../../net/caffeinemc/mods/sodium/client/world/LevelSlice.d.ts'
 import type { FluidRendererImpl$DefaultRenderContext } from '../../../../../../net/caffeinemc/mods/sodium/fabric/render/FluidRendererImpl$DefaultRenderContext.d.ts'
 import type { VertexEncoderInterface } from '../../../../../../net/irisshaders/iris/vertices/sodium/terrain/VertexEncoderInterface.d.ts'
-import type { FluidRenderer } from '../../../../../../net/minecraft/client/renderer/block/FluidRenderer.d.ts'
+import type { FluidRenderer as FluidRenderer_2 } from '../../../../../../net/minecraft/client/renderer/block/FluidRenderer.d.ts'
 import type { FluidStateModelSet } from '../../../../../../net/minecraft/client/renderer/block/FluidStateModelSet.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
@@ -17,7 +17,7 @@ export class FluidRendererImpl extends FluidRenderer implements VertexEncoderInt
     // private colorProviderRegistry: ColorProviderRegistry;
     // private defaultContext: FluidRendererImpl$DefaultRenderContext;
     // private defaultRenderer: DefaultFluidRenderer;
-    // private fluidRenderer: FluidRenderer;
+    // private fluidRenderer: FluidRenderer_2;
     // private fluidStates: FluidStateModelSet;
     beginBlock(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     overrideBlock(arg0: number): void;

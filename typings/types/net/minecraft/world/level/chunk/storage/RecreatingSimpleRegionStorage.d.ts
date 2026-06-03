@@ -14,4 +14,5 @@ export class RecreatingSimpleRegionStorage extends SimpleRegionStorage {
     // private writeWorker: IOWorker;
     close(): void;
     write(pos: ChunkPos, supplier: () => CompoundTag): CompletableFuture<void>;
+    write(pos: ChunkPos, value: CompoundTag): CompletableFuture<void>;
 }

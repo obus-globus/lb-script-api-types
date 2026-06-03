@@ -12,4 +12,5 @@ export class RunInTerminalResponse extends Response {
     getBody(): RunInTerminalResponse$ResponseBody;
     hashCode(): number;
     setBody(body: RunInTerminalResponse$ResponseBody): RunInTerminalResponse;
+    setBody(body: Object): Response;
 }

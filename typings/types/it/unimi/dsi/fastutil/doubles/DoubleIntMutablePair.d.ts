@@ -19,11 +19,15 @@ export class DoubleIntMutablePair extends Object implements DoubleIntPair, Seria
     key(arg0: number): DoubleIntPair;
     key(arg0: number): DoubleIntPair;
     keyDouble(): number;
+    left(): number;
+    left(arg0: number): DoubleIntPair;
     left(arg0: number): DoubleIntMutablePair;
     left(): number;
     left(arg0: number): DoubleIntPair;
     left(arg0: number): DoubleIntPair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleIntPair;
     right(arg0: number): DoubleIntMutablePair;
     right(): number;
     right(arg0: number): DoubleIntPair;

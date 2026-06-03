@@ -19,5 +19,7 @@ export class ShadowDistanceOption<T extends Object | number | string | boolean> 
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => net.minecraft.client.gui.components.Tooltip, paramtoString: OptionInstance$CaptionBasedToString<boolean>, paraminitialValue: boolean, paramonValueUpdate: (param0: boolean) => void): OptionInstance<boolean>;
     static noTooltip(): (param0: Object | null) => net.minecraft.client.gui.components.Tooltip;
     constructor(arg0: string, arg1: (param0: T) => net.minecraft.client.gui.components.Tooltip, arg2: OptionInstance$CaptionBasedToString<T>, arg3: OptionInstance$ValueSet<T>, arg4: T, arg5: (param0: T) => void)
+    createButton(options: Options): AbstractWidget;
     createButton(arg0: Options, arg1: number, arg2: number, arg3: number): AbstractWidget;
+    createButton(options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): AbstractWidget;
 }

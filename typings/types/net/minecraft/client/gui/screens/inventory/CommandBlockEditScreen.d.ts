@@ -33,6 +33,7 @@ export class CommandBlockEditScreen extends AbstractCommandBlockEditScreen {
     getCommandBlock(): BaseCommandBlock;
     getPreviousY(): number;
     init(): void;
+    init(width: number, height: number): void;
     populateAndSendPacket(): void;
     resize(width: number, height: number): void;
     updateGui(): void;

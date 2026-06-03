@@ -14,7 +14,9 @@ export class InactiveProfiler extends Object implements ProfileCollector {
     getChartedPaths(): Pair<string, MetricCategory>[];
     getEntry(path: string): ActiveProfiler$PathEntry;
     getResults(): ProfileResults;
+    incrementCounter(name: () => string): void;
     incrementCounter(name: () => string, amount: number): void;
+    incrementCounter(name: string): void;
     incrementCounter(name: string, amount: number): void;
     markForCharting(category: MetricCategory): void;
     pop(): void;

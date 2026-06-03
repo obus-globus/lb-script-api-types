@@ -12,4 +12,5 @@ export class DataBreakpointInfoResponse extends Response {
     getBody(): DataBreakpointInfoResponse$ResponseBody;
     hashCode(): number;
     setBody(body: DataBreakpointInfoResponse$ResponseBody): DataBreakpointInfoResponse;
+    setBody(body: Object): Response;
 }

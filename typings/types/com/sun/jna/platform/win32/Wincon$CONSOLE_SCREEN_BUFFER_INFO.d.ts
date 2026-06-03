@@ -24,4 +24,5 @@ export class Wincon$CONSOLE_SCREEN_BUFFER_INFO extends Structure {
     srWindow: Wincon$SMALL_RECT;
     wAttributes: number;
     toString(): string;
+    toString(arg0: boolean): string;
 }

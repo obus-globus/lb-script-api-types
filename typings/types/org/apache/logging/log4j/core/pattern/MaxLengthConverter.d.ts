@@ -10,6 +10,7 @@ export class MaxLengthConverter extends LogEventPatternConverter {
     private constructor(formatters: PatternFormatter[], maxLength: number)
     // private formatters: PatternFormatter[];
     // private maxLength: number;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     handlesThrowable(): boolean;
 }

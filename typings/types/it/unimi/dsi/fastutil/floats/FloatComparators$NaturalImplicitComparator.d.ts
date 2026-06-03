@@ -15,6 +15,7 @@ export class FloatComparators$NaturalImplicitComparator extends Object implement
     constructor()
     compare(arg0: number, arg1: number): number;
     compare(arg0: number, arg1: number): number;
+    compare(arg0: number, arg1: number): number;
     // private readResolve(): Object;
     reversed(): (param0: number, param1: number) => kotlin.Int;
     reversed(): (param0: number, param1: number) => kotlin.Int;

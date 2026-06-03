@@ -15,6 +15,7 @@ export class ByteArrayOutputStream extends OutputStream {
     toString(arg0: Charset): string;
     toString(arg0: number): string;
     toString(arg0: string): string;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     writeBytes(arg0: number[]): void;

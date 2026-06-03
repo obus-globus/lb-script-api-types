@@ -6,4 +6,5 @@ import type { ClientboundPackets1_12 } from '../../../../../../com/viaversion/vi
 export class ComponentRewriter1_12 extends JsonNBTComponentRewriter<ClientboundPackets1_12> {
     constructor(arg0: Protocol1_12To1_11_1)
     processText(arg0: UserConnection, arg1: JsonElement): void;
+    processText(arg0: UserConnection, arg1: string): JsonElement;
 }

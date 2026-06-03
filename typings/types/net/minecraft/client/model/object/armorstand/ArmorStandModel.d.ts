@@ -8,6 +8,7 @@ import type { MeshTransformer } from '../../../../../../net/minecraft/client/mod
 import type { ArmorStandArmorModel } from '../../../../../../net/minecraft/client/model/object/armorstand/ArmorStandArmorModel.d.ts'
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { ArmorStandRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/ArmorStandRenderState.d.ts'
+import type { HumanoidRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/HumanoidRenderState.d.ts'
 import type { HumanoidArm } from '../../../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
 export class ArmorStandModel extends ArmorStandArmorModel {
     static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
@@ -29,4 +30,5 @@ export class ArmorStandModel extends ArmorStandArmorModel {
     // private shoulderStick: ModelPart;
     setupAnim(state: ArmorStandRenderState): void;
     translateToHand(state: ArmorStandRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
+    translateToHand(state: HumanoidRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
 }

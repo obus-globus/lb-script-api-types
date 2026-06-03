@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function2 } from '../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { CoroutineScope } from '../../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 import type { Task } from '../../../../../net/ccbluex/liquidbounce/integration/task/type/Task.d.ts'
 /**
@@ -42,5 +41,5 @@ export class TaskManager extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:56}
      */
-    launch(taskName: string, action: Function2<Object, Object, Object>): Task;
+    launch(taskName: string, action: (param0: Task) => T): Task;
 }

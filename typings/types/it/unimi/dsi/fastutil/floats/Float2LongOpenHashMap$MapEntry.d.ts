@@ -32,6 +32,8 @@ export class Float2LongOpenHashMap$MapEntry extends Object implements Float2Long
     left(arg0: number): FloatLongPair;
     left(arg0: number): FloatLongPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatLongPair;
     right(arg0: number): FloatLongPair;
     right(): number;
     right(arg0: number): FloatLongPair;

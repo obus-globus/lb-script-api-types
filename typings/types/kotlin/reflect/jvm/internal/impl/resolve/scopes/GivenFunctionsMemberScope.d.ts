@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { FunctionDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/FunctionDescriptor.d.ts'
@@ -19,7 +18,7 @@ export abstract class GivenFunctionsMemberScope extends MemberScopeImpl {
     // private createFakeOverrides(arg0: FunctionDescriptor[]): DeclarationDescriptor[];
     // private getAllDescriptors(): DeclarationDescriptor[];
     getContainingClass(): ClassDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
 }

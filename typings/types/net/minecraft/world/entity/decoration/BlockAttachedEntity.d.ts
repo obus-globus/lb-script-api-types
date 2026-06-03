@@ -66,11 +66,14 @@ export abstract class BlockAttachedEntity extends Entity {
     isPickable(): boolean;
     move(moverType: MoverType, delta: Vec3): void;
     push(xa: number, ya: number, za: number): void;
+    push(entity: Entity): void;
+    push(impulse: Vec3): void;
     readAdditionalSaveData(input: ValueInput): void;
     recalculateBoundingBox(): void;
     refreshDimensions(): void;
     repositionEntityAfterLoad(): boolean;
     setPos(x: number, y: number, z: number): void;
+    setPos(pos: Vec3): void;
     skipAttackInteraction(source: Entity): boolean;
     survives(): boolean;
     thunderHit(level: ServerLevel, lightningBolt: LightningBolt): void;

@@ -23,6 +23,7 @@ export class ContainerPredicate extends Record implements SingleComponentItemPre
     hashCode(): number;
     items(): Optional<CollectionPredicate<ItemInstance, ItemPredicate>>;
     matches(components: DataComponentGetter): boolean;
+    matches(components: DataComponentGetter): boolean;
     matches(value: ItemContainerContents): boolean;
     toString(): string;
 }

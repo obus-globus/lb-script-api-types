@@ -11,7 +11,10 @@ export class CreativeModeTab$ItemDisplayBuilder extends Object implements Creati
     searchTabContents: ItemStack[];
     // private tab: CreativeModeTab;
     tabContents: E[];
+    accept(stack: ItemStack): void;
     accept(stack: ItemStack, tabVisibility: CreativeModeTab$TabVisibility): void;
+    accept(item: ItemLike): void;
+    accept(item: ItemLike, tabVisibility: CreativeModeTab$TabVisibility): void;
     accept(stack: ItemStack): void;
     accept(item: ItemLike): void;
     accept(item: ItemLike, tabVisibility: CreativeModeTab$TabVisibility): void;

@@ -14,6 +14,7 @@ export class MushroomCowRenderer extends AgeableMobRenderer<MushroomCow, Mushroo
     constructor(context: EntityRendererProvider$Context)
     // private blockModelResolver: BlockModelResolver;
     createRenderState(): MushroomCowRenderState;
+    createRenderState(entity: MushroomCow, partialTicks: number): MushroomCowRenderState;
     extractRenderState(entity: MushroomCow, state: MushroomCowRenderState, partialTicks: number): void;
     getTextureLocation(state: MushroomCowRenderState): Identifier;
 }

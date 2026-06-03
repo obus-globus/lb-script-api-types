@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2BooleanMap$Entry.d.ts'
 import type { ObjectBooleanPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBooleanPair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
@@ -20,6 +21,9 @@ export class Object2BooleanLinkedOpenHashMap$MapEntry extends Object implements 
     getBooleanValue(): boolean;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, boolean>;
+    right(): boolean;
+    right(arg0: boolean): ObjectBooleanPair<K>;
     right(arg0: boolean): ObjectBooleanPair<K>;
     right(): boolean;
     right(arg0: boolean): ObjectBooleanPair<K>;

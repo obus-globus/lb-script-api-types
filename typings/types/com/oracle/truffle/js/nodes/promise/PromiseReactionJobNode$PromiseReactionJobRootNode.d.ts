@@ -45,6 +45,8 @@ export class PromiseReactionJobNode$PromiseReactionJobRootNode extends JavaScrip
     getNodeObject(): Object;
     hasTag(tag: Class<Tag>): boolean;
     hasTag(tag: Class<Tag>): boolean;
+    isCaptureFramesForTrace(): boolean;
+    isCaptureFramesForTrace(compiledFrame: Node): boolean;
     isCaptureFramesForTrace(compiledFrame: boolean): boolean;
     isInstrumentable(): boolean;
     materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;

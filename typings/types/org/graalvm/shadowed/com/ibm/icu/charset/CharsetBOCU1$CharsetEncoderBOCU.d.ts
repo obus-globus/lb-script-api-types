@@ -19,6 +19,7 @@ export class CharsetBOCU1$CharsetEncoderBOCU extends CharsetEncoderICU {
     // private sourceIndex: number;
     // private targetCapacity: number;
     // private NEGDIVMOD(n: number, d: number, m: number): number;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private fastSingle(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): number;
     // private getTrail(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): number;

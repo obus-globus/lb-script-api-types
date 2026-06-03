@@ -10,6 +10,7 @@ export class CreakingRenderer<T extends Creaking> extends MobRenderer<T, Creakin
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): CreakingRenderState;
+    createRenderState(entity: T, partialTicks: number): CreakingRenderState;
     extractRenderState(entity: T, state: CreakingRenderState, partialTicks: number): void;
     getTextureLocation(state: CreakingRenderState): Identifier;
 }

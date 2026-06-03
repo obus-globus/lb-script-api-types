@@ -13,6 +13,7 @@ export class MappingWriterTSrg extends MappingWriterSrg {
     // private provider: MappingProviderTSrg;
     formatFieldMapping(arg0: IMappingConsumer$MappingSet$Pair<MappingField>): string;
     formatMethodMapping(arg0: IMappingConsumer$MappingSet$Pair<MappingMethod>): string;
+    openFileWriter(arg0: string, arg1: string): PrintWriter;
     openFileWriter(arg0: string, arg1: ObfuscationType): PrintWriter;
     writeHeader(arg0: PrintWriter): void;
 }

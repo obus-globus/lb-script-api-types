@@ -1,5 +1,4 @@
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
@@ -16,10 +15,11 @@ export class LimitedDispatcher extends CoroutineDispatcher implements Delay {
     delay(time: number): void;
     delay(time: number): void;
     dispatch(context: CoroutineContext, block: () => void): void;
-    // private dispatchInternal(block: () => void, startWorker: Function1<LimitedDispatcher$Worker, void>): void;
+    // private dispatchInternal(block: () => void, startWorker: (param0: LimitedDispatcher$Worker) => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     // private obtainTaskOrDeallocateWorker(): () => void | null;
     scheduleResumeAfterDelay(timeMillis: number, continuation: CancellableContinuation<void>): void;

@@ -34,6 +34,7 @@ export class LocalChannel extends AbstractChannel {
     doClose(): void;
     doDeregister(): void;
     doDisconnect(): void;
+    doRegister(): void;
     doRegister(arg0: ChannelPromise): void;
     doWrite(arg0: ChannelOutboundBuffer): void;
     // private finishPeerRead(arg0: LocalChannel): void;

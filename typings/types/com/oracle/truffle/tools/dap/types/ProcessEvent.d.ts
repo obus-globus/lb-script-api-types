@@ -12,4 +12,5 @@ export class ProcessEvent extends Event {
     getBody(): ProcessEvent$EventBody;
     hashCode(): number;
     setBody(body: ProcessEvent$EventBody): ProcessEvent;
+    setBody(body: Object): Event;
 }

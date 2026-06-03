@@ -16,6 +16,7 @@ export class EmptyPartPassthrough extends Type<Dynamic<Object>> {
     buildCodec(): Codec<Dynamic<Object>>;
     buildTemplate(): TypeTemplate;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
+    equals(arg0: Object | null): boolean;
     point(arg0: DynamicOps<Object>): Optional<Dynamic<Object>>;
     toString(): string;
 }

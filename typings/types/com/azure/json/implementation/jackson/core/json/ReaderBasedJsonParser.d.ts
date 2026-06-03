@@ -6,6 +6,7 @@ import type { StreamReadCapability } from '../../../../../../../com/azure/json/i
 import type { ParserBase } from '../../../../../../../com/azure/json/implementation/jackson/core/base/ParserBase.d.ts'
 import type { IOContext } from '../../../../../../../com/azure/json/implementation/jackson/core/io/IOContext.d.ts'
 import type { CharsToNameCanonicalizer } from '../../../../../../../com/azure/json/implementation/jackson/core/sym/CharsToNameCanonicalizer.d.ts'
+import type { ByteArrayBuilder } from '../../../../../../../com/azure/json/implementation/jackson/core/util/ByteArrayBuilder.d.ts'
 import type { JacksonFeatureSet } from '../../../../../../../com/azure/json/implementation/jackson/core/util/JacksonFeatureSet.d.ts'
 import type { OutputStream } from '../../../../../../../java/io/OutputStream.d.ts'
 import type { Reader } from '../../../../../../../java/io/Reader.d.ts'
@@ -28,6 +29,7 @@ export class ReaderBasedJsonParser extends ParserBase {
     _closeInput(): void;
     // private _closeScope(arg0: number): void;
     _decodeBase64(arg0: Base64Variant): number[];
+    _decodeBase64(arg0: string, arg1: ByteArrayBuilder, arg2: Base64Variant): void;
     _decodeEscaped(): string;
     _finishString(): void;
     _finishString2(): void;
@@ -75,6 +77,7 @@ export class ReaderBasedJsonParser extends ParserBase {
     // private _verifyNoLeadingZeroes(): string;
     // private _verifyRootSpace(arg0: number): void;
     finishToken(): void;
+    getBinaryValue(): number[];
     getBinaryValue(arg0: Base64Variant): number[];
     getCodec(): ObjectCodec;
     getInputSource(): Object;

@@ -6,5 +6,7 @@ export class QueueOutputStream extends OutputStream {
     constructor(arg0: number[])
     // private blockingQueue: number[];
     newQueueInputStream(): QueueInputStream;
+    write(arg0: number[]): void;
+    write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

@@ -8,7 +8,6 @@ import type { Locale } from '../../java/util/Locale.d.ts'
 import type { Pattern } from '../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { StringCompanionObject } from '../../kotlin/jvm/internal/StringCompanionObject.d.ts'
 import type { CharIterator } from '../../kotlin/collections/CharIterator.d.ts'
@@ -18,7 +17,7 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static append(paramarg0: Object | null, paramarg1: (Object | null)[]): Object | null;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
-    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: Function1<Object, Object>): void;
+    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object | null) => Object | null): void;
     static appendRange(paramarg0: Object | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Object | null;
     static appendln(paramarg0: Appendable): Appendable;
     static appendln(paramarg0: StringBuilder): StringBuilder;
@@ -101,7 +100,7 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static replaceRange(paramarg0: CharSequence, paramarg1: number, paramarg2: number, paramarg3: CharSequence): CharSequence;
     static replaceRange(paramarg0: CharSequence, paramarg1: { start: number; endInclusive: number; step: number }, paramarg2: CharSequence): CharSequence;
     static requireNonNegativeLimit(paramarg0: number): void;
-    static skipWhile(paramarg0: string, paramarg1: number, paramarg2: Function1<Object, boolean>): number;
+    static skipWhile(paramarg0: string, paramarg1: number, paramarg2: (param0: Object | null) => boolean): number;
     static split(paramarg0: CharSequence, paramarg1: Pattern, paramarg2: number): string[];
     static split(paramarg0: CharSequence, paramarg1: string[], paramarg2: boolean, paramarg3: number): string[];
     static split(paramarg0: CharSequence, paramarg1: (Object | null)[], paramarg2: boolean, paramarg3: number): string[];
@@ -142,19 +141,19 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static toShortOrNull(paramarg0: string, paramarg1: number): number;
     static trim(paramarg0: CharSequence): CharSequence;
     static trim(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
-    static trim(paramarg0: CharSequence, paramarg1: Function1<Object, boolean>): CharSequence;
+    static trim(paramarg0: CharSequence, paramarg1: (param0: Object | null) => boolean): CharSequence;
     static trim(paramarg0: string, paramarg1: string[]): string;
-    static trim(paramarg0: string, paramarg1: Function1<Object, boolean>): string;
+    static trim(paramarg0: string, paramarg1: (param0: Object | null) => boolean): string;
     static trimEnd(paramarg0: CharSequence): CharSequence;
     static trimEnd(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
-    static trimEnd(paramarg0: CharSequence, paramarg1: Function1<Object, boolean>): CharSequence;
+    static trimEnd(paramarg0: CharSequence, paramarg1: (param0: Object | null) => boolean): CharSequence;
     static trimEnd(paramarg0: string, paramarg1: string[]): string;
-    static trimEnd(paramarg0: string, paramarg1: Function1<Object, boolean>): string;
+    static trimEnd(paramarg0: string, paramarg1: (param0: Object | null) => boolean): string;
     static trimIndent(paramarg0: string): string;
     static trimMargin(paramarg0: string, paramarg1: string): string;
     static trimStart(paramarg0: CharSequence): CharSequence;
     static trimStart(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
-    static trimStart(paramarg0: CharSequence, paramarg1: Function1<Object, boolean>): CharSequence;
+    static trimStart(paramarg0: CharSequence, paramarg1: (param0: Object | null) => boolean): CharSequence;
     static trimStart(paramarg0: string, paramarg1: string[]): string;
-    static trimStart(paramarg0: string, paramarg1: Function1<Object, boolean>): string;
+    static trimStart(paramarg0: string, paramarg1: (param0: Object | null) => boolean): string;
 }

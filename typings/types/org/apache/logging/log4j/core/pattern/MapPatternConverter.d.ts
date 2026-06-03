@@ -10,5 +10,6 @@ export class MapPatternConverter extends LogEventPatternConverter {
     private constructor(options: string[], format: string[])
     // private format: string[];
     // private key: string;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

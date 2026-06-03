@@ -11,6 +11,7 @@ export class LlamaSpitRenderer extends EntityRenderer<LlamaSpit, LlamaSpitRender
     constructor(context: EntityRendererProvider$Context)
     // private model: LlamaSpitModel;
     createRenderState(): LlamaSpitRenderState;
+    createRenderState(entity: LlamaSpit, partialTicks: number): LlamaSpitRenderState;
     extractRenderState(entity: LlamaSpit, state: LlamaSpitRenderState, partialTicks: number): void;
     submit(state: LlamaSpitRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

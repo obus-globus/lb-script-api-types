@@ -32,6 +32,8 @@ export class Float2FloatLinkedOpenHashMap$MapEntry extends Object implements Flo
     left(arg0: number): FloatFloatPair;
     left(arg0: number): FloatFloatPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatFloatPair;
     right(arg0: number): FloatFloatPair;
     right(): number;
     right(arg0: number): FloatFloatPair;

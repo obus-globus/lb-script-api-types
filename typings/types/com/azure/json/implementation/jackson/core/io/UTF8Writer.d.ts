@@ -1,6 +1,7 @@
 import type { IOContext } from '../../../../../../../com/azure/json/implementation/jackson/core/io/IOContext.d.ts'
 import type { OutputStream } from '../../../../../../../java/io/OutputStream.d.ts'
 import type { Writer } from '../../../../../../../java/io/Writer.d.ts'
+import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 export class UTF8Writer extends Writer {
     static nullWriter(): Writer;
     constructor(arg0: IOContext, arg1: OutputStream)
@@ -11,6 +12,8 @@ export class UTF8Writer extends Writer {
     // private _outPtr: number;
     // private _surrogate: number;
     append(arg0: string): Writer;
+    append(arg0: CharSequence): Writer;
+    append(arg0: CharSequence, arg1: number, arg2: number): Writer;
     close(): void;
     // private convertSurrogate(arg0: number): number;
     flush(): void;

@@ -21,6 +21,7 @@ export class AsmClassRemapper$AsmMethodRemapper extends MethodRemapper {
     // private skipLocalMapping: boolean;
     // private tr: TinyRemapper;
     createAnnotationRemapper(arg0: string, arg1: AnnotationVisitor): AnnotationVisitor;
+    createAnnotationRemapper(arg0: AnnotationVisitor): AnnotationVisitor;
     // private getLambdaImplementedMethod(arg0: string, arg1: string, arg2: Handle, arg3: string[], arg4: Object[]): Handle;
     // private getNameFromType(arg0: string, arg1: boolean): string;
     // private isValidLvName(arg0: string): boolean;
@@ -29,6 +30,7 @@ export class AsmClassRemapper$AsmMethodRemapper extends MethodRemapper {
     visitFieldInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
     visitLdcInsn(arg0: Object): void;
+    visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitTryCatchBlock(arg0: Label, arg1: Label, arg2: Label, arg3: string): void;

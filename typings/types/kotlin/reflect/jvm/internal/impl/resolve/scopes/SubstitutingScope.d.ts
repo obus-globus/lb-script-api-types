@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Lazy } from '../../../../../../../kotlin/Lazy.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -19,7 +18,7 @@ export class SubstitutingScope extends Object implements MemberScope {
     // private workerScope: MemberScope;
     getClassifierNames(): Name[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: Function1<Name, boolean>): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
     getFunctionNames(): Name[];

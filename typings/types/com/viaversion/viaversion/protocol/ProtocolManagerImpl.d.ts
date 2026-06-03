@@ -39,6 +39,7 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     addMappingLoaderFuture(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg2: () => void): void;
     addMappingLoaderFuture(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: () => void): void;
     checkForMappingCompletion(): boolean;
+    checkForMappingCompletion(): boolean;
     checkForMappingCompletion(arg0: boolean): boolean;
     completeMappingDataLoading(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): void;
     createPacketTransformer(arg0: ProtocolVersion, arg1: Class<C>, arg2: Class<S>): VersionedPacketTransformer<C, S>;
@@ -54,6 +55,7 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
     getProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
     // private getProtocolPath(arg0: Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ProtocolVersion, arg2: ProtocolVersion): Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>;
+    getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
     getProtocols(): E[];
     getServerProtocolVersion(): ServerProtocolVersion;
     getSupportedVersions(): ProtocolVersion[];

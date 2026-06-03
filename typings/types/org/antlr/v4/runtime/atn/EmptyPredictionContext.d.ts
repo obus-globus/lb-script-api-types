@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Recognizer } from '../../../../../org/antlr/v4/runtime/Recognizer.d.ts'
 import type { RuleContext } from '../../../../../org/antlr/v4/runtime/RuleContext.d.ts'
 import type { ATN } from '../../../../../org/antlr/v4/runtime/atn/ATN.d.ts'
 import type { ArrayPredictionContext } from '../../../../../org/antlr/v4/runtime/atn/ArrayPredictionContext.d.ts'
@@ -26,4 +27,5 @@ export class EmptyPredictionContext extends SingletonPredictionContext {
     isEmpty(): boolean;
     size(): number;
     toString(): string;
+    toString(arg0: Recognizer<Object, Object>): string;
 }

@@ -32,6 +32,8 @@ export class Int2ByteOpenCustomHashMap$MapEntry extends Object implements Int2By
     left(arg0: number): IntBytePair;
     left(arg0: number): IntBytePair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntBytePair;
     right(arg0: number): IntBytePair;
     right(): number;
     right(arg0: number): IntBytePair;

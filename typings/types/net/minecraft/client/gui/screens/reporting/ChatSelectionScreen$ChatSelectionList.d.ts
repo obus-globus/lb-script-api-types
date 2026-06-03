@@ -1,3 +1,4 @@
+import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
@@ -27,6 +28,8 @@ export class ChatSelectionScreen$ChatSelectionList extends ObjectSelectionList<C
     getRowWidth(): number;
     keyPressed(event: KeyEvent): boolean;
     nextEntry(dir: ScreenDirection): ChatSelectionScreen$ChatSelectionList$Entry;
+    nextEntry(dir: ScreenDirection, canSelect: (param0: ChatSelectionScreen$ChatSelectionList$Entry) => kotlin.Boolean): ChatSelectionScreen$ChatSelectionList$Entry;
+    nextEntry(dir: ScreenDirection, canSelect: (param0: ChatSelectionScreen$ChatSelectionList$Entry) => kotlin.Boolean, startEntry: ChatSelectionScreen$ChatSelectionList$Entry): ChatSelectionScreen$ChatSelectionList$Entry;
     setScrollAmount(scrollAmount: number): void;
     setSelected(selected: ChatSelectionScreen$ChatSelectionList$Entry): void;
     // private shouldHighlightEntry(entry: ChatSelectionScreen$ChatSelectionList$Entry): boolean;

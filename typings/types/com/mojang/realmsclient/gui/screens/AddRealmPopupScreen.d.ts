@@ -31,6 +31,7 @@ export class AddRealmPopupScreen extends RealmsScreen {
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     // private left(): number;
     onClose(): void;
     // private right(): number;

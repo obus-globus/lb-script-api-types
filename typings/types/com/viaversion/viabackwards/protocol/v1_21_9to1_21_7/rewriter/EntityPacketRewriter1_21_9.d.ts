@@ -23,5 +23,6 @@ export class EntityPacketRewriter1_21_9 extends EntityRewriter<ClientboundPacket
     // private storePlayerRotation(arg0: PacketWrapper): void;
     // private trackMannequinTeleport(arg0: PacketWrapper): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private writeMovementShorts(arg0: PacketWrapper, arg1: Vector3d): void;
 }

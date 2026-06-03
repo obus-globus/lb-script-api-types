@@ -15,6 +15,8 @@ export class BrokenInputStream extends InputStream {
     close(): void;
     getThrowable(): Throwable;
     read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
     reset(): void;
     // private rethrow(): RuntimeException;
     skip(arg0: number): number;

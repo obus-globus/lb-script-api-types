@@ -185,6 +185,7 @@ export class HappyGhast extends Animal {
     // private getHappyGhastRestrictionRadius(): number;
     getHurtSound(source: DamageSource): SoundEvent;
     getLeashOffset(): Vec3;
+    getLeashOffset(partialTicks: number): Vec3;
     getMaxSpawnClusterSize(): number;
     getQuadLeashHolderOffsets(): Vec3[];
     getRiddenInput(controller: Player, selfInput: Vec3): Vec3;
@@ -192,6 +193,7 @@ export class HappyGhast extends Animal {
     getSoundSource(): SoundSource;
     getSoundVolume(): number;
     getVoicePitch(): number;
+    getWalkTargetValue(pos: BlockPos): number;
     getWalkTargetValue(pos: BlockPos, level: LevelReader): number;
     isFlyingVehicle(): boolean;
     isFood(itemStack: ItemStack): boolean;

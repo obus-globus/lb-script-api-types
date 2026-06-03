@@ -5,6 +5,8 @@ import type { AbstractListBuilder } from '../../../net/minecraft/util/AbstractLi
 export class HashOps$ListHashBuilder extends AbstractListBuilder<HashCode, Hasher> {
     constructor(null_: HashOps$ListHashBuilder)
     append(hasher: Hasher, value: HashCode): Hasher;
+    build(prefix: HashCode): DataResult<HashCode>;
     build(hasher: Hasher, prefix: HashCode): DataResult<HashCode>;
+    build(arg0: DataResult<HashCode>): DataResult<HashCode>;
     initBuilder(): Hasher;
 }

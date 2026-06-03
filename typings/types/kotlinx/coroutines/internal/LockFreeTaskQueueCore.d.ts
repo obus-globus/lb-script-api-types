@@ -1,5 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../kotlin/jvm/functions/Function1.d.ts'
 import type { LockFreeTaskQueueCore$Companion } from '../../../kotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion.d.ts'
 import type { Symbol } from '../../../kotlinx/coroutines/internal/Symbol.d.ts'
 export class LockFreeTaskQueueCore<E extends Object | number | string | boolean> extends Object {
@@ -27,7 +26,7 @@ export class LockFreeTaskQueueCore<E extends Object | number | string | boolean>
     close(): boolean;
     // private fillPlaceholder(index: number, element: E): LockFreeTaskQueueCore<E> | null;
     isClosed(): boolean;
-    map(transform: Function1<E, R>): R[];
+    map(transform: (param0: E) => R): R[];
     // private markFrozen(): number;
     next(): LockFreeTaskQueueCore<E>;
     removeFirstOrNull(): Object | null;

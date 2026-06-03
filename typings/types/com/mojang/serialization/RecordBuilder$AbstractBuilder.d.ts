@@ -15,6 +15,7 @@ export abstract class RecordBuilder$AbstractBuilder<T extends Object | number | 
     build(arg0: R, arg1: T): DataResult<T>;
     build(arg0: T): DataResult<T>;
     build(arg0: DataResult<T>): DataResult<T>;
+    build(arg0: DataResult<T>): DataResult<T>;
     initBuilder(): R;
     mapError(arg0: (param0: string) => unknown): RecordBuilder<T>;
     ops(): DynamicOps<T>;

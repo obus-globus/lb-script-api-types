@@ -18,6 +18,7 @@ export class CharsetSCSU$CharsetDecoderSCSU extends CharsetDecoderICU {
     // private quoteWindow: number;
     // private sourceIndex: number;
     // private state: number;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private endLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer): void;
     // private fastSingle(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, modeType: number): number;

@@ -11,10 +11,12 @@ export class LocalizedNumberFormatterAsFormat extends Format {
     // private formatter: LocalizedNumberFormatter;
     // private locale: ULocale;
     equals(other: Object | null): boolean;
+    format(arg0: Object): string;
     format(obj: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     formatToCharacterIterator(obj: Object): AttributedCharacterIterator;
     getNumberFormatter(): LocalizedNumberFormatter;
     hashCode(): number;
+    parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): Object;
     // private writeReplace(): Object;
 }

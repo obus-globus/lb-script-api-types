@@ -10,6 +10,7 @@ export class MutableTruffleStringFactory$SwitchEncodingNodeGen extends MutableTr
     private constructor()
     // private state_0_: number;
     // private transcodeAndCopy_cache: MutableTruffleStringFactory$SwitchEncodingNodeGen$TranscodeAndCopyData;
+    execute(a: AbstractTruffleString, encoding: TruffleString$Encoding): MutableTruffleString;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString): MutableTruffleString;
     // private executeAndSpecialize(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString): MutableTruffleString;
 }

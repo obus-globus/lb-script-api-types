@@ -6,6 +6,7 @@ import type { CharsetDecoderICU } from '../../../../../../../org/graalvm/shadowe
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
 export class CharsetISO2022$CharsetDecoderISO2022CN extends CharsetDecoderICU {
     constructor(null_: CharsetISO2022$CharsetDecoderISO2022CN, cs: CharsetICU)
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

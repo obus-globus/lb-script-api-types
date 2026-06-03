@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/Pair.d.ts'
 import type { ReferenceLongPair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ReferenceLongPair.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -10,6 +11,7 @@ export class ReferenceLongImmutablePair<K extends Object | number | string | boo
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): K;
+    left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceLongPair<K>;
     right(arg0: number): ReferenceLongPair<K>;

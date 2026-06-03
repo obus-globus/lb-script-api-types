@@ -19,11 +19,15 @@ export class ShortCharMutablePair extends Object implements ShortCharPair, Seria
     key(arg0: number): ShortCharPair;
     key(arg0: number): ShortCharPair;
     keyShort(): number;
+    left(): number;
+    left(arg0: number): ShortCharPair;
     left(arg0: number): ShortCharMutablePair;
     left(): number;
     left(arg0: number): ShortCharPair;
     left(arg0: number): ShortCharPair;
     leftShort(): number;
+    right(): string;
+    right(arg0: string): ShortCharPair;
     right(arg0: string): ShortCharMutablePair;
     right(): string;
     right(arg0: string): ShortCharPair;

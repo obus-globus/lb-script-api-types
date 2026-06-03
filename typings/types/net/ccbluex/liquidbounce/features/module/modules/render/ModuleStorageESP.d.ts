@@ -1,5 +1,3 @@
-import type { Function1 } from '../../../../../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function3 } from '../../../../../../../kotlin/jvm/functions/Function3.d.ts'
 import type { Mode } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -33,8 +31,8 @@ export class ModuleStorageESP extends ClientModule {
     // private requiresChestStealer: boolean;
     // private /*not mapped: */ getRequiresChestStealer(): boolean;
     readonly running: boolean;
-    // private collectTrackedBlockShapes(skipWhen: Function1<BlockState, boolean>): PositionedVoxelShape<ModuleStorageESP$ChestType>[];
-    // private forEachTrackedBlockShapes(skipWhen: Function1<BlockState, boolean>, block: Function3<BlockPos, ModuleStorageESP$ChestType, VoxelShape, void>): void;
+    // private collectTrackedBlockShapes(skipWhen: (param0: BlockState) => boolean): PositionedVoxelShape<ModuleStorageESP$ChestType>[];
+    // private forEachTrackedBlockShapes(skipWhen: (param0: BlockState) => boolean, block: (param0: BlockPos, param1: ModuleStorageESP$ChestType, param2: VoxelShape) => void): void;
     // private markDirtyForModes(): void;
     onDisabled(): void;
     onEnabled(): void;

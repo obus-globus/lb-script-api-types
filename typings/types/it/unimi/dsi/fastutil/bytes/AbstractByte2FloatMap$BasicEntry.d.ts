@@ -12,5 +12,6 @@ export class AbstractByte2FloatMap$BasicEntry extends Object implements Byte2Flo
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

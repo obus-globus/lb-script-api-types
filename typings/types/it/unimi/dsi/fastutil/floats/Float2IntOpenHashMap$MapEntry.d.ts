@@ -32,6 +32,8 @@ export class Float2IntOpenHashMap$MapEntry extends Object implements Float2IntMa
     left(arg0: number): FloatIntPair;
     left(arg0: number): FloatIntPair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatIntPair;
     right(arg0: number): FloatIntPair;
     right(): number;
     right(arg0: number): FloatIntPair;

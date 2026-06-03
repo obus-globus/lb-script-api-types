@@ -32,6 +32,8 @@ export class Double2ByteOpenCustomHashMap$MapEntry extends Object implements Dou
     left(arg0: number): DoubleBytePair;
     left(arg0: number): DoubleBytePair;
     leftDouble(): number;
+    right(): number;
+    right(arg0: number): DoubleBytePair;
     right(arg0: number): DoubleBytePair;
     right(): number;
     right(arg0: number): DoubleBytePair;

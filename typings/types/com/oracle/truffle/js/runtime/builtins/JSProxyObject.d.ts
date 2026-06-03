@@ -111,6 +111,7 @@ export class JSProxyObject extends JSClassObject {
     execute(args: Object[], self: InteropLibrary, callNode: JSInteropExecuteNode, exportNode: ExportValueNode): Object;
     getBuiltinToStringTag(): TruffleString;
     getClassName(): TruffleString;
+    getMembers(internal: boolean): Object;
     getMembers(internal: boolean, self: InteropLibrary): Object;
     getMetaObject(): Object;
     getProxyHandler(): JSDynamicObject;
@@ -122,6 +123,7 @@ export class JSProxyObject extends JSClassObject {
     isInstantiable(): boolean;
     preventExtensions(doThrow: boolean): boolean;
     removeMember(key: string, self: InteropLibrary, fromJavaString: TruffleString$FromJavaStringNode): void;
+    removeMember(key: string, fromJavaString: TruffleString$FromJavaStringNode): void;
     revoke(isCallable: boolean, isConstructor: boolean): void;
     toDisplayStringImpl(allowSideEffects: boolean, format: ToDisplayStringFormat, depth: number): TruffleString;
 }

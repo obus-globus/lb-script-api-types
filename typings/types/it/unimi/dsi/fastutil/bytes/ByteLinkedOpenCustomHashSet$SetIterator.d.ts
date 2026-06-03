@@ -1,5 +1,7 @@
 import type { ByteConsumer } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteConsumer.d.ts'
 import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteListIterator.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteLinkedOpenCustomHashSet$SetIterator extends Object implements ByteListIterator {
     constructor(null_: ByteLinkedOpenCustomHashSet$SetIterator)
@@ -11,6 +13,8 @@ export class ByteLinkedOpenCustomHashSet$SetIterator extends Object implements B
     add(arg0: number): void;
     add(arg0: number): void;
     // private ensureIndexKnown(): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

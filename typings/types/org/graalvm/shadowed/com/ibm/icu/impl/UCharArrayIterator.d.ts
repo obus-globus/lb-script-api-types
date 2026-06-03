@@ -20,6 +20,8 @@ export class UCharArrayIterator extends UCharacterIterator {
     current(): number;
     getIndex(): number;
     getLength(): number;
+    getText(): string;
+    getText(fillIn: string[]): number;
     getText(fillIn: string[], offset: number): number;
     next(): number;
     previous(): number;

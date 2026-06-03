@@ -36,6 +36,7 @@ export class StringArgOps extends Object implements DynamicOps<Either<string, St
     createLongList<T extends Object | number | string | boolean>(arg0: LongStream): T;
     createMap<T extends Object | number | string | boolean>(arg0: Map<T, T>): T;
     createMap(arg0: Stream<Pair<Either<string, StringArgs>, Either<string, StringArgs>>>): Either<string, StringArgs>;
+    createMap(arg0: Map<Either<string, StringArgs>, Either<string, StringArgs>>): Either<string, StringArgs>;
     createNumeric(arg0: Number): Either<string, StringArgs>;
     createShort<T extends Object | number | string | boolean>(arg0: number): T;
     createString(arg0: string): Either<string, StringArgs>;
@@ -54,15 +55,19 @@ export class StringArgOps extends Object implements DynamicOps<Either<string, St
     getMapValues(arg0: Either<string, StringArgs>): DataResult<Stream<Pair<Either<string, StringArgs>, Either<string, StringArgs>>>>;
     getNumberValue<T extends Object | number | string | boolean>(arg0: T, arg1: Number): Number;
     getNumberValue(arg0: Either<string, StringArgs>): DataResult<Number>;
+    getNumberValue(arg0: Either<string, StringArgs>, arg1: Number): Number;
     getStream(arg0: Either<string, StringArgs>): DataResult<Stream<Either<string, StringArgs>>>;
     getStringValue(arg0: Either<string, StringArgs>): DataResult<string>;
     listBuilder(): ListBuilder<T>;
     mapBuilder(): RecordBuilder<T>;
     mergeToList<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): DataResult<T>;
     mergeToList(arg0: Either<string, StringArgs>, arg1: Either<string, StringArgs>): DataResult<Either<string, StringArgs>>;
+    mergeToList(arg0: Either<string, StringArgs>, arg1: Either<string, StringArgs>[]): DataResult<Either<string, StringArgs>>;
     mergeToMap<T extends Object | number | string | boolean>(arg0: T, arg1: MapLike<T>): DataResult<T>;
     mergeToMap<T extends Object | number | string | boolean>(arg0: T, arg1: Map<T, T>): DataResult<T>;
     mergeToMap(arg0: Either<string, StringArgs>, arg1: Either<string, StringArgs>, arg2: Either<string, StringArgs>): DataResult<Either<string, StringArgs>>;
+    mergeToMap(arg0: Either<string, StringArgs>, arg1: MapLike<Either<string, StringArgs>>): DataResult<Either<string, StringArgs>>;
+    mergeToMap(arg0: Either<string, StringArgs>, arg1: Map<Either<string, StringArgs>, Either<string, StringArgs>>): DataResult<Either<string, StringArgs>>;
     mergeToPrimitive<T extends Object | number | string | boolean>(arg0: T, arg1: T): DataResult<T>;
     remove(arg0: Either<string, StringArgs>, arg1: string): Either<string, StringArgs>;
     set<T extends Object | number | string | boolean>(arg0: T, arg1: string, arg2: T): T;

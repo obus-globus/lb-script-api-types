@@ -23,6 +23,7 @@ export class Long2FloatRBTreeMap$Entry extends AbstractLong2FloatMap$BasicEntry 
     right(): Long2FloatRBTreeMap$Entry;
     right(arg0: Long2FloatRBTreeMap$Entry): void;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Long2FloatRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -19,6 +19,7 @@ export class ThresholdFilter extends AbstractFilter {
     // private filter(testLevel: Level): Filter$Result;
     filter(event: LogEvent): Filter$Result;
     filter(logger: Logger, testLevel: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object): Filter$Result;

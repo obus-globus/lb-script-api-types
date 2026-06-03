@@ -9,7 +9,7 @@ import type { Protocol } from '../../../../com/viaversion/viaversion/api/protoco
 import type { ClientboundPacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketHandler } from '../../../../com/viaversion/viaversion/api/protocol/remapper/PacketHandler.d.ts'
-import type { EntityRewriter } from '../../../../com/viaversion/viaversion/api/rewriter/EntityRewriter.d.ts'
+import type { EntityRewriter as EntityRewriter_2 } from '../../../../com/viaversion/viaversion/api/rewriter/EntityRewriter.d.ts'
 import type { RewriterBase } from '../../../../com/viaversion/viaversion/api/rewriter/RewriterBase.d.ts'
 import type { Type } from '../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { EntityDataFilter } from '../../../../com/viaversion/viaversion/rewriter/entitydata/EntityDataFilter.d.ts'
@@ -18,7 +18,7 @@ import type { EntityDataFilter$DataTypeMapper } from '../../../../com/viaversion
 import type { Exception } from '../../../../java/lang/Exception.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class EntityRewriter<C extends ClientboundPacketType, T extends Protocol<C, Object, Object, Object>> extends RewriterBase<T> implements EntityRewriter<T> {
+export abstract class EntityRewriter<C extends ClientboundPacketType, T extends Protocol<C, Object, Object, Object>> extends RewriterBase<T> implements EntityRewriter_2<T> {
     constructor(arg0: T)
     constructor(arg0: T, arg1: boolean)
     // private entityDataFilters: EntityDataFilter[];

@@ -36,10 +36,12 @@ export class FloatBuffer extends Buffer implements Comparable<FloatBuffer> {
     hashCode(): number;
     heapSegment(arg0: Object, arg1: number, arg2: number, arg3: boolean, arg4: MemorySessionImpl): AbstractMemorySegmentImpl;
     isDirect(): boolean;
+    limit(): number;
     limit(arg0: number): FloatBuffer;
     mark(): FloatBuffer;
     mismatch(arg0: FloatBuffer): number;
     order(): ByteOrder;
+    position(): number;
     position(arg0: number): FloatBuffer;
     put(arg0: FloatBuffer): FloatBuffer;
     put(arg0: number): FloatBuffer;

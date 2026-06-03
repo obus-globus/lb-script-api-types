@@ -17,6 +17,7 @@ export class CharsetMBCS$CharsetEncoderMBCS extends CharsetEncoderICU {
     // private cnvMBCSSingleFromBMPWithOffsets(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private cnvMBCSSingleFromUnicodeWithOffsets(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private continueMatchFromU(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean, srcIndex: number): CoderResult;
+    encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;
     encodeLoop(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private fromU(cp: number, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, sourceIndex: number, length: number, flush: boolean, cr: CoderResult[]): number;
     fromUChar32(c: number, pValue: number[], isUseFallback: boolean): number;

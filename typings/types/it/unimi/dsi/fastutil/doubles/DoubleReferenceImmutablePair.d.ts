@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { DoubleReferencePair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -22,5 +23,6 @@ export class DoubleReferenceImmutablePair<V extends Object | number | string | b
     left(arg0: number): DoubleReferencePair<V>;
     leftDouble(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

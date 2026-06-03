@@ -1,8 +1,8 @@
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
-import type { SegmentedDatagramPacket } from '../../../../io/netty/channel/unix/SegmentedDatagramPacket.d.ts'
+import type { SegmentedDatagramPacket as SegmentedDatagramPacket_2 } from '../../../../io/netty/channel/unix/SegmentedDatagramPacket.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class SegmentedDatagramPacket extends SegmentedDatagramPacket {
+export class SegmentedDatagramPacket extends SegmentedDatagramPacket_2 {
     static isSupported(): boolean;
     constructor(arg0: ByteBuf, arg1: number, arg2: InetSocketAddress)
     constructor(arg0: ByteBuf, arg1: number, arg2: InetSocketAddress, arg3: InetSocketAddress)

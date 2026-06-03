@@ -4,6 +4,9 @@ import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPo
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
+import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
+import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 export class PooledDirectByteBuf extends PooledByteBuf<ByteBuffer> {
     private constructor(arg0: ObjectPool$Handle<PooledDirectByteBuf>, arg1: number)
     _getByte(arg0: number): number;
@@ -27,22 +30,40 @@ export class PooledDirectByteBuf extends PooledByteBuf<ByteBuffer> {
     _setShortLE(arg0: number, arg1: number): void;
     array(): number[];
     arrayOffset(): number;
+    copy(): ByteBuf;
     copy(arg0: number, arg1: number): ByteBuf;
+    getBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    getBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     getBytes(arg0: number, arg1: OutputStream, arg2: number): ByteBuf;
     // private getBytes(arg0: number, arg1: OutputStream, arg2: number, arg3: boolean): void;
     getBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
+    getBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
+    getBytes(arg0: number, arg1: GatheringByteChannel, arg2: number): number;
+    getBytes(arg0: number, arg1: number[]): ByteBuf;
     getBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     hasArray(): boolean;
     hasMemoryAddress(): boolean;
     isDirect(): boolean;
     memoryAddress(): number;
     newInternalNioBuffer(arg0: ByteBuffer): ByteBuffer;
+    readBytes(arg0: ByteBuf): ByteBuf;
+    readBytes(arg0: ByteBuf, arg1: number): ByteBuf;
+    readBytes(arg0: ByteBuf, arg1: number, arg2: number): ByteBuf;
     readBytes(arg0: OutputStream, arg1: number): ByteBuf;
     readBytes(arg0: ByteBuffer): ByteBuf;
+    readBytes(arg0: FileChannel, arg1: number, arg2: number): number;
+    readBytes(arg0: GatheringByteChannel, arg1: number): number;
+    readBytes(arg0: number[]): ByteBuf;
     readBytes(arg0: number[], arg1: number, arg2: number): ByteBuf;
+    readBytes(arg0: number): ByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     setBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     setBytes(arg0: number, arg1: InputStream, arg2: number): number;
     setBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
+    setBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
+    setBytes(arg0: number, arg1: ScatteringByteChannel, arg2: number): number;
+    setBytes(arg0: number, arg1: number[]): ByteBuf;
     setBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
 }

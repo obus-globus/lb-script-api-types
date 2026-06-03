@@ -19,11 +19,15 @@ export class FloatByteMutablePair extends Object implements FloatBytePair, Seria
     key(arg0: number): FloatBytePair;
     key(arg0: number): FloatBytePair;
     keyFloat(): number;
+    left(): number;
+    left(arg0: number): FloatBytePair;
     left(arg0: number): FloatByteMutablePair;
     left(): number;
     left(arg0: number): FloatBytePair;
     left(arg0: number): FloatBytePair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatBytePair;
     right(arg0: number): FloatByteMutablePair;
     right(): number;
     right(arg0: number): FloatBytePair;

@@ -22,6 +22,7 @@ export class InBedChatScreen extends ChatScreen {
     constructor(initial: string, isDraft: boolean)
     // private leaveBedButton: Button;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     onPlayerWokeUp(): void;
     // private sendWakeUp(): void;

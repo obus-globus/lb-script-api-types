@@ -1,7 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { CallableDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { CallableMemberDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -21,9 +18,9 @@ export class OverridingUtil extends Object {
     static DEFAULT: OverridingUtil;
     static create(paramarg0: KotlinTypeRefiner, paramarg1: KotlinTypeChecker$TypeConstructorEquality): OverridingUtil;
     static createWithTypeRefiner(paramarg0: KotlinTypeRefiner): OverridingUtil;
-    static extractMembersOverridableInBothWays(paramarg0: Object | null, paramarg1: E[], paramarg2: Function1<Object, CallableDescriptor>, paramarg3: Function1<Object, void>): E[];
+    static extractMembersOverridableInBothWays(paramarg0: Object | null, paramarg1: E[], paramarg2: (param0: Object | null) => CallableDescriptor, paramarg3: (param0: Object | null) => void): E[];
     static filterOutOverridden(paramarg0: (Object | null)[]): (Object | null)[];
-    static filterOverrides(paramarg0: (Object | null)[], paramarg1: boolean, paramarg2: Function0<Object>, paramarg3: Function2<Object, Object, Object>): (Object | null)[];
+    static filterOverrides(paramarg0: (Object | null)[], paramarg1: boolean, paramarg2: () => Object | null, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): (Object | null)[];
     static filterVisibleFakeOverrides(paramarg0: ClassDescriptor, paramarg1: E[]): E[];
     static findMaxVisibility(paramarg0: E[]): DescriptorVisibility;
     static getBasicOverridabilityProblem(paramarg0: CallableDescriptor, paramarg1: CallableDescriptor): OverridingUtil$OverrideCompatibilityInfo;
@@ -32,9 +29,9 @@ export class OverridingUtil extends Object {
     static isMoreSpecific(paramarg0: CallableDescriptor, paramarg1: CallableDescriptor): boolean;
     static isVisibleForOverride(paramarg0: MemberDescriptor, paramarg1: MemberDescriptor, paramarg2: boolean): boolean;
     static overrides(paramarg0: Object | null, paramarg1: Object | null, paramarg2: boolean, paramarg3: boolean): boolean;
-    static resolveUnknownVisibilityForMember(paramarg0: CallableMemberDescriptor, paramarg1: Function1<CallableMemberDescriptor, void>): void;
-    static selectMostSpecificMember(paramarg0: E[], paramarg1: Function1<Object, CallableDescriptor>): Object | null;
-    private constructor(arg0: KotlinTypeChecker$TypeConstructorEquality, arg1: KotlinTypeRefiner, arg2: KotlinTypePreparator, arg3: Function2<KotlinType, KotlinType, boolean>)
+    static resolveUnknownVisibilityForMember(paramarg0: CallableMemberDescriptor, paramarg1: (param0: CallableMemberDescriptor) => void): void;
+    static selectMostSpecificMember(paramarg0: E[], paramarg1: (param0: Object | null) => CallableDescriptor): Object | null;
+    private constructor(arg0: KotlinTypeChecker$TypeConstructorEquality, arg1: KotlinTypeRefiner, arg2: KotlinTypePreparator, arg3: (param0: KotlinType, param1: KotlinType) => boolean)
     // private customSubtype: (param0: KotlinType, param1: KotlinType) => boolean;
     // private equalityAxioms: KotlinTypeChecker$TypeConstructorEquality;
     // private kotlinTypePreparator: KotlinTypePreparator;

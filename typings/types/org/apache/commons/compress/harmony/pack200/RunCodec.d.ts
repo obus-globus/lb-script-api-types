@@ -19,8 +19,10 @@ export class RunCodec extends Codec {
     decode(arg0: InputStream): number;
     decode(arg0: InputStream, arg1: number): number;
     decodeInts(arg0: number, arg1: InputStream): number[];
+    decodeInts(arg0: number, arg1: InputStream, arg2: number): number[];
     encode(arg0: number): number[];
     encode(arg0: number, arg1: number): number[];
+    encode(arg0: number[]): number[];
     getACodec(): Codec;
     getBCodec(): Codec;
     getK(): number;

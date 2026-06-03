@@ -21,4 +21,5 @@ export class BrewingStandScreen extends AbstractContainerScreen<BrewingStandMenu
     constructor(menu: BrewingStandMenu, inventory: (Object | null)[], title: Component)
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
 }

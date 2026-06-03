@@ -20,6 +20,7 @@ export class AsmClassRemapper extends VisitTrackingClassRemapper {
     // private skipLocalMapping: boolean;
     // private sourceNameVisited: boolean;
     createAnnotationRemapper(arg0: string, arg1: AnnotationVisitor): AnnotationVisitor;
+    createAnnotationRemapper(arg0: AnnotationVisitor): AnnotationVisitor;
     createFieldRemapper(arg0: FieldVisitor): FieldVisitor;
     createMethodRemapper(arg0: MethodVisitor): MethodVisitor;
     createRecordComponentRemapper(arg0: RecordComponentVisitor): RecordComponentVisitor;

@@ -29,6 +29,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { StateDefinition$Builder } from '../../../../../net/minecraft/world/level/block/state/StateDefinition$Builder.d.ts'
 import type { EnumProperty } from '../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
 import type { IntegerProperty } from '../../../../../net/minecraft/world/level/block/state/properties/IntegerProperty.d.ts'
+import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class FlowerBedBlock extends VegetationBlock implements BonemealableBlock, SegmentableBlock {
@@ -94,6 +95,8 @@ export class FlowerBedBlock extends VegetationBlock implements BonemealableBlock
     // private shapes: (param0: BlockState) => VoxelShape;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
+    canBeReplaced(state: BlockState, fluid: Fluid): boolean;
+    canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     codec(): MapCodec<FlowerBedBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getParticlePos(blockPos: BlockPos): BlockPos;
@@ -104,6 +107,7 @@ export class FlowerBedBlock extends VegetationBlock implements BonemealableBlock
     getShapeHeight(): number;
     getShapeHeight(): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
+    getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;

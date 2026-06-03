@@ -12,6 +12,7 @@ export interface Vector2Lc extends Object{
     distanceSquared(arg0: Vector2Lc): number;
     div(arg0: number, arg1: Vector2L): Vector2L;
     div(arg0: number, arg1: Vector2L): Vector2L;
+    equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: LongBuffer): LongBuffer;

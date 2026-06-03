@@ -17,6 +17,7 @@ export abstract class AFServerSocketChannel<A extends AFSocketAddress> extends S
     constructor(arg0: AFServerSocket<A>, arg1: AFSelectorProvider<A>)
     // private afSocket: AFServerSocket<A>;
     accept(): AFSocketChannel<A>;
+    bind(arg0: SocketAddress): ServerSocketChannel;
     bind(arg0: SocketAddress, arg1: number): AFServerSocketChannel<A>;
     getAFCore(): AFSocketCore;
     getFileDescriptor(): FileDescriptor;

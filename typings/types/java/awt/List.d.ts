@@ -2,6 +2,8 @@ import type { AWTEvent } from '../../java/awt/AWTEvent.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Dimension } from '../../java/awt/Dimension.d.ts'
 import type { ItemSelectable } from '../../java/awt/ItemSelectable.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
+import type { PopupMenu } from '../../java/awt/PopupMenu.d.ts'
 import type { ActionEvent } from '../../java/awt/event/ActionEvent.d.ts'
 import type { ActionListener } from '../../java/awt/event/ActionListener.d.ts'
 import type { ItemEvent } from '../../java/awt/event/ItemEvent.d.ts'
@@ -37,6 +39,7 @@ export class List extends Component implements ItemSelectable, Accessible {
     rows: number;
     // private selected: number[];
     visibleIndex: number;
+    add(arg0: PopupMenu): void;
     add(arg0: string): void;
     add(arg0: string, arg1: number): void;
     addActionListener(arg0: ActionListener): void;
@@ -84,6 +87,7 @@ export class List extends Component implements ItemSelectable, Accessible {
     processEvent(arg0: AWTEvent): void;
     processItemEvent(arg0: ItemEvent): void;
     // private readObject(arg0: ObjectInputStream): void;
+    remove(arg0: MenuComponent): void;
     remove(arg0: number): void;
     remove(arg0: string): void;
     removeActionListener(arg0: ActionListener): void;

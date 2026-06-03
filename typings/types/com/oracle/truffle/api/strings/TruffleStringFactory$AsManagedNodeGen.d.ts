@@ -7,6 +7,7 @@ export class TruffleStringFactory$AsManagedNodeGen extends TruffleString$AsManag
     static getUncached(): TruffleString$AsManagedNode;
     private constructor()
     // private state_0_: number;
+    execute(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding): TruffleString;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: boolean): TruffleString;
     // private executeAndSpecialize(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: boolean): TruffleString;
 }

@@ -32,6 +32,8 @@ export class Char2DoubleArrayMap$MapEntry extends Object implements Char2DoubleM
     left(arg0: string): CharDoublePair;
     left(arg0: string): CharDoublePair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharDoublePair;
     right(arg0: number): CharDoublePair;
     right(): number;
     right(arg0: number): CharDoublePair;

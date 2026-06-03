@@ -5,6 +5,7 @@ import type { DatagramSocket } from '../../../../java/net/DatagramSocket.d.ts'
 import type { DatagramSocketImplFactory } from '../../../../java/net/DatagramSocketImplFactory.d.ts'
 import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
+import type { SocketOption } from '../../../../java/net/SocketOption.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFAddressFamily } from '../../../../org/newsclub/net/unix/AFAddressFamily.d.ts'
@@ -41,6 +42,7 @@ export abstract class AFDatagramSocket<A extends AFSocketAddress> extends Datagr
     getFileDescriptor(): FileDescriptor;
     getImplExtensions(): AFSocketImplExtensions<A>;
     getLocalSocketAddress(): A;
+    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
     getOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>): T;
     getRemoteSocketAddress(): A;
     internalDummyBind(): void;
@@ -57,6 +59,7 @@ export abstract class AFDatagramSocket<A extends AFSocketAddress> extends Datagr
     send(arg0: DatagramPacket): void;
     setAncillaryReceiveBufferSize(arg0: number): void;
     setDeleteOnClose(arg0: boolean): void;
+    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): DatagramSocket;
     setOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>, arg1: T): DatagramSocket;
     setShutdownOnClose(arg0: boolean): void;
     socketAddressClass(): Class<AFSocketAddress>;

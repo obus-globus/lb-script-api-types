@@ -11,6 +11,8 @@ export class ReferenceIntMutablePair<K extends Object | number | string | boolea
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceIntMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceIntPair<K>;
     right(arg0: number): ReferenceIntMutablePair<K>;
     right(): number;
     right(arg0: number): ReferenceIntPair<K>;

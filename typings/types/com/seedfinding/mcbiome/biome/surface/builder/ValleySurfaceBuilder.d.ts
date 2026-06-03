@@ -8,6 +8,7 @@ import type { Triplet } from '../../../../../../com/seedfinding/mccore/util/data
 import type { OctavePerlinNoiseSampler } from '../../../../../../com/seedfinding/mcnoise/perlin/OctavePerlinNoiseSampler.d.ts'
 export abstract class ValleySurfaceBuilder extends SurfaceBuilder {
     constructor(arg0: SurfaceConfig)
+    applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: Block, arg10: Block): Block[];
     applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: Block, arg11: Block): Block[];
     getCeilingBlockStates(): Block[];
     getFloorBlockStates(): Block[];

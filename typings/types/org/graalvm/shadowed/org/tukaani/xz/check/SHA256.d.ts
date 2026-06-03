@@ -5,5 +5,6 @@ export class SHA256 extends Check {
     constructor()
     // private sha256: MessageDigest;
     finish(): number[];
+    update(buf: number[]): void;
     update(buf: number[], off: number, len: number): void;
 }

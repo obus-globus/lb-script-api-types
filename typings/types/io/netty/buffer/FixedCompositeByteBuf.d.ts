@@ -9,6 +9,7 @@ import type { ByteOrder } from '../../../java/nio/ByteOrder.d.ts'
 import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
 import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
+import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 export class FixedCompositeByteBuf extends AbstractReferenceCountedByteBuf {
     constructor(arg0: ByteBufAllocator, arg1: ByteBuf[])
     // private allocator: ByteBufAllocator;
@@ -41,16 +42,20 @@ export class FixedCompositeByteBuf extends AbstractReferenceCountedByteBuf {
     // private buffer(arg0: number): ByteBuf;
     capacity(): number;
     capacity(arg0: number): ByteBuf;
+    copy(): ByteBuf;
     copy(arg0: number, arg1: number): ByteBuf;
     deallocate(): void;
     discardReadBytes(): ByteBuf;
     // private findComponent(arg0: number): FixedCompositeByteBuf$Component;
     getByte(arg0: number): number;
+    getBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    getBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     getBytes(arg0: number, arg1: OutputStream, arg2: number): ByteBuf;
     getBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
     getBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
     getBytes(arg0: number, arg1: GatheringByteChannel, arg2: number): number;
+    getBytes(arg0: number, arg1: number[]): ByteBuf;
     getBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     hasArray(): boolean;
     hasMemoryAddress(): boolean;
@@ -59,22 +64,31 @@ export class FixedCompositeByteBuf extends AbstractReferenceCountedByteBuf {
     isWritable(): boolean;
     isWritable(arg0: number): boolean;
     maxCapacity(): number;
+    maxCapacity(arg0: number): void;
     memoryAddress(): number;
+    nioBuffer(): ByteBuffer;
     nioBuffer(arg0: number, arg1: number): ByteBuffer;
     nioBufferCount(): number;
+    nioBuffers(): ByteBuffer[];
     nioBuffers(arg0: number, arg1: number): ByteBuffer[];
     order(): ByteOrder;
+    order(arg0: ByteOrder): ByteBuf;
     setByte(arg0: number, arg1: number): ByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf): ByteBuf;
+    setBytes(arg0: number, arg1: ByteBuf, arg2: number): ByteBuf;
     setBytes(arg0: number, arg1: ByteBuf, arg2: number, arg3: number): ByteBuf;
     setBytes(arg0: number, arg1: InputStream, arg2: number): number;
     setBytes(arg0: number, arg1: ByteBuffer): ByteBuf;
     setBytes(arg0: number, arg1: FileChannel, arg2: number, arg3: number): number;
     setBytes(arg0: number, arg1: ScatteringByteChannel, arg2: number): number;
+    setBytes(arg0: number, arg1: number[]): ByteBuf;
     setBytes(arg0: number, arg1: number[], arg2: number, arg3: number): ByteBuf;
     setInt(arg0: number, arg1: number): ByteBuf;
     setLong(arg0: number, arg1: number): ByteBuf;
     setMedium(arg0: number, arg1: number): ByteBuf;
     setShort(arg0: number, arg1: number): ByteBuf;
     toString(): string;
+    toString(arg0: Charset): string;
+    toString(arg0: number, arg1: number, arg2: Charset): string;
     unwrap(): ByteBuf;
 }

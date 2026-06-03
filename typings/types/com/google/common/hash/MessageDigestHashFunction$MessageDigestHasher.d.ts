@@ -11,5 +11,6 @@ export class MessageDigestHashFunction$MessageDigestHasher extends AbstractByteH
     hash(): HashCode;
     update(bytes: ByteBuffer): void;
     update(b: number): void;
+    update(b: number[]): void;
     update(b: number[], off: number, len: number): void;
 }

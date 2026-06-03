@@ -13,6 +13,8 @@ export class ALC$SharedLibraryAL extends SharedLibrary$Delegate implements Funct
     constructor(arg0: SharedLibrary)
     // private alcGetProcAddress: number;
     getFunctionAddress(arg0: ByteBuffer): number;
+    getFunctionAddress(arg0: CharSequence): number;
     getFunctionAddress(arg0: number, arg1: ByteBuffer): number;
+    getFunctionAddress(arg0: number, arg1: CharSequence): number;
     getFunctionAddress(arg0: number, arg1: CharSequence): number;
 }

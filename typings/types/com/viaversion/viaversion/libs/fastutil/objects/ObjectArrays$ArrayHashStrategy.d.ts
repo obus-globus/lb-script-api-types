@@ -3,6 +3,8 @@ import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectArrays$ArrayHashStrategy<K extends Object | number | string | boolean> extends Object implements Hash$Strategy<K[]>, Serializable {
     private constructor()
+    equals(other: Object | null): boolean;
     equals(arg0: K[], arg1: K[]): boolean;
+    hashCode(): number;
     hashCode(arg0: K[]): number;
 }

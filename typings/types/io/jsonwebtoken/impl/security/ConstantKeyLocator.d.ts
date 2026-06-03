@@ -6,6 +6,8 @@ export class ConstantKeyLocator extends LocatorAdapter<Key> implements Function<
     // private jweKey: Key;
     // private jwsKey: Key;
     apply(arg0: Header): Key;
+    locate(arg0: Header): Key;
     locate(arg0: JweHeader): Key;
     locate(arg0: JwsHeader): Key;
+    locate(arg0: ProtectedHeader): Key;
 }

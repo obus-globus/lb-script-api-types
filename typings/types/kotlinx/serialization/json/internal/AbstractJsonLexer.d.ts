@@ -1,9 +1,6 @@
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
-import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
-import type { Function2 } from '../../../../kotlin/jvm/functions/Function2.d.ts'
 import type { JsonPath } from '../../../../kotlinx/serialization/json/internal/JsonPath.d.ts'
 export abstract class AbstractJsonLexer extends Object {
     constructor()
@@ -30,14 +27,14 @@ export abstract class AbstractJsonLexer extends Object {
     consumeNumericLiteralFully(): number;
     consumeString(): string;
     protected consumeString(source: CharSequence, startPosition: number, current: number): string;
-    consumeStringChunked(isLenient: boolean, consumeChunk: Function1<string, void>): void;
+    consumeStringChunked(isLenient: boolean, consumeChunk: (param0: string) => void): void;
     consumeStringLenient(): string;
     consumeStringLenientNotNull(): string;
     // private decodedString(lastPosition: number, currentPosition: number): string;
     discardPeeked(): void;
     ensureHaveChars(): void;
     expectEof(): void;
-    fail(expectedToken: number, wasConsumed: boolean, message: Function2<string, string, string>): void;
+    fail(expectedToken: number, wasConsumed: boolean, message: (param0: string, param1: string) => string): void;
     fail(message: string, position: number, hint: string): void;
     failOnUnknownKey(key: string): void;
     // private fromHexChar(source: CharSequence, currentPosition: number): number;
@@ -49,7 +46,7 @@ export abstract class AbstractJsonLexer extends Object {
     peekNextToken(): number;
     peekString(isLenient: boolean): string | null;
     prefetchOrEof(position: number): number;
-    require(condition: boolean, position: number, message: Function0<string>): void;
+    require(condition: boolean, position: number, message: () => string): void;
     skipElement(allowLenientStrings: boolean): void;
     skipWhitespaces(): number;
     substring(startPos: number, endPos: number): string;
@@ -59,6 +56,6 @@ export abstract class AbstractJsonLexer extends Object {
     tryConsumeNull(doConsume: boolean): boolean;
     protected unexpectedToken(expected: string): void;
     // private wasUnquotedString(): boolean;
-    // private withPositionRollback<T extends Object | number | string | boolean>(action: Function0<T>): T;
-    // private writeRange(fromIndex: number, toIndex: number, currentChunkHasEscape: boolean, consumeChunk: Function1<string, void>): void;
+    // private withPositionRollback<T extends Object | number | string | boolean>(action: () => T): T;
+    // private writeRange(fromIndex: number, toIndex: number, currentChunkHasEscape: boolean, consumeChunk: (param0: string) => void): void;
 }

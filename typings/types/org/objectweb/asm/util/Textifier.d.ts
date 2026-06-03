@@ -95,6 +95,7 @@ export class Textifier extends Printer {
     visitMethodAnnotation(arg0: string, arg1: boolean): Textifier;
     visitMethodAttribute(arg0: Attribute): void;
     visitMethodEnd(): void;
+    visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
     visitMethodTypeAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     visitModule(arg0: string, arg1: number, arg2: string): Printer;

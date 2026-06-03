@@ -5,6 +5,7 @@ import type { DataComponentGetter } from '../../../../../../net/minecraft/core/c
 import type { DataComponentType } from '../../../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { EntityDataAccessor } from '../../../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
+import type { SynchedEntityData$DataValue } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { DifficultyInstance } from '../../../../../../net/minecraft/world/DifficultyInstance.d.ts'
@@ -143,6 +144,7 @@ export class Salmon extends AbstractSchoolingFish {
     getMaxSchoolSize(): number;
     getSalmonScale(): number;
     getVariant(): Salmon$Variant;
+    onSyncedDataUpdated(updatedItems: SynchedEntityData$DataValue<Object>[]): void;
     onSyncedDataUpdated(accessor: EntityDataAccessor<Object>): void;
     readAdditionalSaveData(input: ValueInput): void;
     saveToBucketTag(bucket: ItemStack): void;

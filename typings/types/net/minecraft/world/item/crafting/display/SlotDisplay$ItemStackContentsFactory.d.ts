@@ -8,5 +8,7 @@ export class SlotDisplay$ItemStackContentsFactory extends Object implements Disp
     constructor()
     forStack<T extends Object | number | string | boolean>(item: Holder<Item>): T;
     forStack<T extends Object | number | string | boolean>(item: Item): T;
+    forStack(item: Holder<Item>): ItemStack;
+    forStack(item: Item): ItemStack;
     forStack(stack: ItemStack): ItemStack;
 }

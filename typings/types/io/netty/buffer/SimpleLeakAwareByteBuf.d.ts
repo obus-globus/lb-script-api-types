@@ -14,6 +14,7 @@ export class SimpleLeakAwareByteBuf extends WrappedByteBuf {
     newLeakAwareByteBuf(arg0: ByteBuf, arg1: ByteBuf, arg2: ResourceLeakTracker<ByteBuf>): SimpleLeakAwareByteBuf;
     // private newLeakAwareByteBuf(arg0: ByteBuf, arg1: ResourceLeakTracker<ByteBuf>): SimpleLeakAwareByteBuf;
     // private newSharedLeakAwareByteBuf(arg0: ByteBuf): SimpleLeakAwareByteBuf;
+    order(): ByteOrder;
     order(arg0: ByteOrder): ByteBuf;
     readRetainedSlice(arg0: number): ByteBuf;
     readSlice(arg0: number): ByteBuf;

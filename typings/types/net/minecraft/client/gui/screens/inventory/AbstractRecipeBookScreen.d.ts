@@ -38,6 +38,7 @@ export abstract class AbstractRecipeBookScreen<T extends RecipeBookMenu> extends
     getRecipeBookButtonPosition(): ScreenPosition;
     hasClickedOutside(mx: number, my: number, xo: number, yo: number): boolean;
     init(): void;
+    init(width: number, height: number): void;
     // private initButton(): void;
     isBiggerResultSlot(): boolean;
     isHovering(left: number, top: number, w: number, h: number, xm: number, ym: number): boolean;

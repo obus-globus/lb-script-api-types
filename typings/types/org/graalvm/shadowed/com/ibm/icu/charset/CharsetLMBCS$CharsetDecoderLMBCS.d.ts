@@ -10,6 +10,7 @@ export class CharsetLMBCS$CharsetDecoderLMBCS extends CharsetDecoderICU {
     // private GetUniFromLMBCSUni(ppLMBCSin: ByteBuffer): string;
     // private LMBCSGetNextUCharWorker(source: ByteBuffer, err: CoderResult[]): number;
     // private LMBCS_SimpleGetNextUChar(cnv: UConverterSharedData, source: ByteBuffer, positionOffset: number, length: number): number;
+    decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     implReset(): void;
 }

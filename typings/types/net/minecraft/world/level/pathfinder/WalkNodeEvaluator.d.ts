@@ -34,6 +34,7 @@ export class WalkNodeEvaluator extends NodeEvaluator {
     // private getMobJumpHeight(): number;
     getNeighbors(neighbors: Node[], pos: Node): number;
     // private getNodeAndUpdateCostToMax(x: number, y: number, z: number, pathType: PathType, cost: number): Node;
+    getPathType(mob: Mob, pos: BlockPos): PathType;
     getPathType(context: PathfindingContext, x: number, y: number, z: number): PathType;
     getPathTypeOfMob(context: PathfindingContext, x: number, y: number, z: number, mob: Mob): PathType;
     getPathTypeWithinMobBB(context: PathfindingContext, x: number, y: number, z: number): PathType[];

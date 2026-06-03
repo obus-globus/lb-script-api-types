@@ -13,6 +13,7 @@ export class StyleConverter extends LogEventPatternConverter implements AnsiConv
     // private noAnsi: boolean;
     // private patternFormatters: PatternFormatter[];
     // private style: string;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     handlesThrowable(): boolean;
     toString(): string;

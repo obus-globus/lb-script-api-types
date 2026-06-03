@@ -12,4 +12,5 @@ export class ExceptionInfoResponse extends Response {
     getBody(): ExceptionInfoResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ExceptionInfoResponse$ResponseBody): ExceptionInfoResponse;
+    setBody(body: Object): Response;
 }

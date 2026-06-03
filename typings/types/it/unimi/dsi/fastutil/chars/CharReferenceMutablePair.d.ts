@@ -17,6 +17,8 @@ export class CharReferenceMutablePair<V extends Object | number | string | boole
     key(arg0: string): CharReferencePair<V>;
     key(arg0: string): CharReferencePair<V>;
     keyChar(): string;
+    left(): string;
+    left(arg0: string): CharReferencePair<V>;
     left(arg0: string): CharReferenceMutablePair<V>;
     left(): string;
     left(arg0: string): CharReferencePair<V>;

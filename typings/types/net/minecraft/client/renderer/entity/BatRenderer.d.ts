@@ -10,6 +10,7 @@ export class BatRenderer extends MobRenderer<Bat, BatRenderState, BatModel> {
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): BatRenderState;
+    createRenderState(entity: Bat, partialTicks: number): BatRenderState;
     extractRenderState(entity: Bat, state: BatRenderState, partialTicks: number): void;
     getTextureLocation(state: BatRenderState): Identifier;
 }

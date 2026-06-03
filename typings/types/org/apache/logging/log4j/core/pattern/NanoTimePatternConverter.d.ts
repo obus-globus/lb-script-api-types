@@ -6,5 +6,6 @@ export class NanoTimePatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): NanoTimePatternConverter;
     private constructor(options: string[])
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;
 }

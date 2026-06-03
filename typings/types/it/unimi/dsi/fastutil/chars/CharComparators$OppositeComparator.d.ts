@@ -16,6 +16,7 @@ export class CharComparators$OppositeComparator extends Object implements CharCo
     // private comparator: (param0: string, param1: string) => kotlin.Int;
     compare(arg0: string, arg1: string): number;
     compare(arg0: string, arg1: string): number;
+    compare(arg0: string, arg1: string): number;
     reversed(): (param0: string, param1: string) => kotlin.Int;
     reversed(): (param0: string, param1: string) => kotlin.Int;
     thenComparing(arg0: (param0: string, param1: string) => kotlin.Int): (param0: string, param1: string) => kotlin.Int;

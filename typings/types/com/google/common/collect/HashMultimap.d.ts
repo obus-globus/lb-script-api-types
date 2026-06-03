@@ -12,6 +12,7 @@ export class HashMultimap<K extends Object | number | string | boolean, V extend
     private constructor(expectedKeys: number, expectedValuesPerKey: number)
     // private expectedValuesPerKey: number;
     createCollection(): V[];
+    createCollection(key: K): E[];
     // private readObject(stream: ObjectInputStream): void;
     // private writeObject(stream: ObjectOutputStream): void;
 }

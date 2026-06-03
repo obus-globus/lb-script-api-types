@@ -17,6 +17,8 @@ export class ByteReferenceMutablePair<V extends Object | number | string | boole
     key(arg0: number): ByteReferencePair<V>;
     key(arg0: number): ByteReferencePair<V>;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteReferencePair<V>;
     left(arg0: number): ByteReferenceMutablePair<V>;
     left(): number;
     left(arg0: number): ByteReferencePair<V>;

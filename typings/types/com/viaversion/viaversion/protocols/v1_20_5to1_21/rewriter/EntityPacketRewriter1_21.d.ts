@@ -10,4 +10,5 @@ export class EntityPacketRewriter1_21 extends EntityRewriter<ClientboundPacket1_
     // private storeOnGround(arg0: PacketWrapper): void;
     // private storePosition(arg0: PacketWrapper): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

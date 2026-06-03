@@ -9,5 +9,6 @@ export class AbstractNonStreamingHashFunction$BufferingHasher extends AbstractHa
     hash(): HashCode;
     putByte(b: number): Hasher;
     putBytes(bytes: ByteBuffer): Hasher;
+    putBytes(bytes: number[]): Hasher;
     putBytes(bytes: number[], off: number, len: number): Hasher;
 }

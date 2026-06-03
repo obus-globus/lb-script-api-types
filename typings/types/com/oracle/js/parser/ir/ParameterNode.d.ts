@@ -14,5 +14,7 @@ export class ParameterNode extends Expression {
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getIndex(): number;
     isRestParameter(): boolean;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

@@ -4,6 +4,7 @@ import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ClientInformation } from '../../../../../net/minecraft/server/level/ClientInformation.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
@@ -119,6 +120,9 @@ export class FakePlayer extends ServerPlayer {
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(arg0: ServerLevel, arg1: GameProfile)
+    awardStat(location: Identifier): void;
+    awardStat(location: Identifier, count: number): void;
+    awardStat(stat: Stat<Object>): void;
     awardStat(arg0: Stat<Object>, arg1: number): void;
     getTeam(): PlayerTeam;
     isInvulnerableTo(arg0: ServerLevel, arg1: DamageSource): boolean;
@@ -126,6 +130,7 @@ export class FakePlayer extends ServerPlayer {
     openMenu(arg0: MenuProvider): OptionalInt;
     openTextEdit(arg0: SignBlockEntity, arg1: boolean): void;
     resetStat(arg0: Stat<Object>): void;
+    startRiding(entity: Entity): boolean;
     startRiding(arg0: Entity, arg1: boolean, arg2: boolean): boolean;
     startSleeping(arg0: BlockPos): void;
     tick(): void;

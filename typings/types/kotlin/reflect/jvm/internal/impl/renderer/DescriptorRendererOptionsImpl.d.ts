@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { ReadWriteProperty } from '../../../../../../kotlin/properties/ReadWriteProperty.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
@@ -72,12 +71,12 @@ export class DescriptorRendererOptionsImpl extends Object implements DescriptorR
     getActualPropertiesInPrimaryConstructor(): boolean;
     getAlwaysRenderModifiers(): boolean;
     getAnnotationArgumentsRenderingPolicy(): AnnotationArgumentsRenderingPolicy;
-    getAnnotationFilter(): Function1<AnnotationDescriptor, boolean>;
+    getAnnotationFilter(): (param0: AnnotationDescriptor) => boolean;
     getBoldOnlyForNamesInHtml(): boolean;
     getClassWithPrimaryConstructor(): boolean;
     getClassifierNamePolicy(): ClassifierNamePolicy;
     getDebugMode(): boolean;
-    getDefaultParameterValueRenderer(): Function1<ValueParameterDescriptor, string>;
+    getDefaultParameterValueRenderer(): (param0: ValueParameterDescriptor) => string;
     getEachAnnotationOnNewLine(): boolean;
     getEnhancedTypes(): boolean;
     getExcludedAnnotationClasses(): FqName[];
@@ -94,7 +93,7 @@ export class DescriptorRendererOptionsImpl extends Object implements DescriptorR
     getParameterNamesInFunctionalTypes(): boolean;
     getPresentableUnresolvedTypes(): boolean;
     getPropertyAccessorRenderingPolicy(): PropertyAccessorRenderingPolicy;
-    getPropertyConstantRenderer(): Function1<ConstantValue<Object>, string>;
+    getPropertyConstantRenderer(): (param0: ConstantValue<Object>) => string;
     getReceiverAfterName(): boolean;
     getRenderAbbreviatedTypeComments(): boolean;
     getRenderCompanionObjectName(): boolean;
@@ -110,7 +109,7 @@ export class DescriptorRendererOptionsImpl extends Object implements DescriptorR
     getStartFromDeclarationKeyword(): boolean;
     getStartFromName(): boolean;
     getTextFormat(): RenderingFormat;
-    getTypeNormalizer(): Function1<KotlinType, KotlinType>;
+    getTypeNormalizer(): (param0: KotlinType) => KotlinType;
     getUninferredTypeParameterAsName(): boolean;
     getUnitReturnType(): boolean;
     getValueParametersHandler(): DescriptorRenderer$ValueParametersHandler;

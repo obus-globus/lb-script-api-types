@@ -7,4 +7,7 @@ export class AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream exten
     byteArray(): number[];
     length(): number;
     write(input: ByteBuffer): void;
+    write(arg0: number[]): void;
+    write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
 }

@@ -13,6 +13,7 @@ export class ErrorCollector$LongestOnly<S extends Object | number | string | boo
     // private discardErrorsFromShorterParse(cursor: number): void;
     entries(): ErrorEntry<S>[];
     finish(finalCursor: number): void;
+    store(cursor: number, reason: Object): void;
     store(cursor: number, suggestions: SuggestionSupplier<S>, reason: Object): void;
     store(cursor: number, reason: Object): void;
 }

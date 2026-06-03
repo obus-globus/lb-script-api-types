@@ -5,8 +5,13 @@ export class PlatformThreadLocalRandom extends AbstractPlatformRandom {
     static Default: Random$Default;
     constructor()
     readonly impl: Random;
+    nextDouble(): number;
     nextDouble(until: number): number;
+    nextDouble(from: number, until: number): number;
+    nextInt(): number;
+    nextInt(until: number): number;
     nextInt(from: number, until: number): number;
+    nextLong(): number;
     nextLong(until: number): number;
     nextLong(from: number, until: number): number;
 }

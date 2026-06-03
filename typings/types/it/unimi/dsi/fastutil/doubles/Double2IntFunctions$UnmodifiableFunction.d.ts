@@ -6,6 +6,7 @@ export class Double2IntFunctions$UnmodifiableFunction extends AbstractDouble2Int
     constructor(arg0: (param0: number) => kotlin.Int)
     // private function: (param0: number) => kotlin.Int;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

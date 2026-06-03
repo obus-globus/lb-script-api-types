@@ -71,6 +71,7 @@ export class Char2ReferenceFunctions$PrimitiveFunction<V extends Object | number
     put(arg0: string, arg1: V): V;
     put(arg0: string, arg1: V): V;
     put(arg0: string, arg1: V): V;
+    put(arg0: string, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: string): V;
 }

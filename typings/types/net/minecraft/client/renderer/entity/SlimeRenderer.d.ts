@@ -12,6 +12,7 @@ export class SlimeRenderer extends MobRenderer<Slime, SlimeRenderState, SlimeMod
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): SlimeRenderState;
+    createRenderState(entity: Slime, partialTicks: number): SlimeRenderState;
     extractRenderState(entity: Slime, state: SlimeRenderState, partialTicks: number): void;
     getShadowRadius(state: SlimeRenderState): number;
     getTextureLocation(state: SlimeRenderState): Identifier;

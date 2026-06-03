@@ -2,7 +2,7 @@ import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/double
 import type { DoubleIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleIterator.d.ts'
 import type { Object2DoubleOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2DoubleOpenHashMap$MapIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
+import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Object2DoubleOpenHashMap$ValueIterator extends Object2DoubleOpenHashMap$MapIterator<Object> implements DoubleIterator {
     constructor(null_: Object2DoubleOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;

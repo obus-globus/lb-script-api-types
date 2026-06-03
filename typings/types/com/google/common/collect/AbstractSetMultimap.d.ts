@@ -6,6 +6,7 @@ export abstract class AbstractSetMultimap<K extends Object | number | string | b
     constructor(map: Map<K, E[]>)
     asMap(): Map<K, E[]>;
     createCollection(): V[];
+    createCollection(key: K): E[];
     createUnmodifiableEmptyCollection(): V[];
     entries(): Map$Entry<K, V>[];
     equals(object: Object | null): boolean;

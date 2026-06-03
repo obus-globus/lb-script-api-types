@@ -18,6 +18,7 @@ export class GuardianRenderer extends MobRenderer<Guardian, GuardianRenderState,
     constructor(context: EntityRendererProvider$Context)
     constructor(context: EntityRendererProvider$Context, shadow: number, modelId: ModelLayerLocation)
     createRenderState(): GuardianRenderState;
+    createRenderState(entity: Guardian, partialTicks: number): GuardianRenderState;
     extractRenderState(entity: Guardian, state: GuardianRenderState, partialTicks: number): void;
     // private getPosition(entity: LivingEntity, yOffset: number, partialTicks: number): Vec3;
     getTextureLocation(state: GuardianRenderState): Identifier;

@@ -19,6 +19,8 @@ export class ArjArchiveInputStream extends ArchiveInputStream<ArjArchiveEntry> {
     getArchiveComment(): string;
     getArchiveName(): string;
     getNextEntry(): ArjArchiveEntry;
+    read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private read16(arg0: DataInputStream): number;
     // private read32(arg0: DataInputStream): number;

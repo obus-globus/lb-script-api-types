@@ -10,5 +10,6 @@ export class MessagePatternConverter$RenderingPatternConverter extends MessagePa
     constructor(delegate: MessagePatternConverter, textRenderer: TextRenderer)
     // private delegate: MessagePatternConverter;
     // private textRenderer: TextRenderer;
+    format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

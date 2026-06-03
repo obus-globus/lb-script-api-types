@@ -4,4 +4,5 @@ export class CharSpreadBuilder extends PrimitiveSpreadBuilder<string[]> {
     // private values: string[];
     add(value: string): void;
     toArray(): string[];
+    protected toArray(values: string[], result: string[]): string[];
 }

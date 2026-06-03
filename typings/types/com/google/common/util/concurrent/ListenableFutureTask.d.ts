@@ -14,5 +14,6 @@ export class ListenableFutureTask<V extends Object | number | string | boolean> 
     // private executionList: ExecutionList;
     addListener(listener: () => void, exec: Executor): void;
     done(): void;
+    get(): V;
     get(timeout: number, unit: TimeUnit): V;
 }

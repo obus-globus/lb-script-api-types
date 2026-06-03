@@ -12,6 +12,7 @@ export class ShulkerBulletRenderer extends EntityRenderer<ShulkerBullet, Shulker
     constructor(context: EntityRendererProvider$Context)
     // private model: ShulkerBulletModel;
     createRenderState(): ShulkerBulletRenderState;
+    createRenderState(entity: ShulkerBullet, partialTicks: number): ShulkerBulletRenderState;
     extractRenderState(entity: ShulkerBullet, state: ShulkerBulletRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: ShulkerBullet, blockPos: BlockPos): number;
     submit(state: ShulkerBulletRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

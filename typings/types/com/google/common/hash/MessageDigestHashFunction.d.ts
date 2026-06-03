@@ -13,6 +13,7 @@ export class MessageDigestHashFunction extends AbstractHashFunction implements S
     // private toString: string;
     bits(): number;
     newHasher(): Hasher;
+    newHasher(expectedInputSize: number): Hasher;
     // private readObject(stream: ObjectInputStream): void;
     toString(): string;
     writeReplace(): Object;

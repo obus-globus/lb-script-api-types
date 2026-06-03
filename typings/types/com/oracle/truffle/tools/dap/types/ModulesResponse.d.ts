@@ -12,4 +12,5 @@ export class ModulesResponse extends Response {
     getBody(): ModulesResponse$ResponseBody;
     hashCode(): number;
     setBody(body: ModulesResponse$ResponseBody): ModulesResponse;
+    setBody(body: Object): Response;
 }

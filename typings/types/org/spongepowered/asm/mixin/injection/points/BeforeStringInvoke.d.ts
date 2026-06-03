@@ -8,6 +8,8 @@ import type { At$Shift } from '../../../../../../org/spongepowered/asm/mixin/inj
 import type { IInjectionPointContext } from '../../../../../../org/spongepowered/asm/mixin/injection/IInjectionPointContext.d.ts'
 import type { InjectionPoint } from '../../../../../../org/spongepowered/asm/mixin/injection/InjectionPoint.d.ts'
 import type { BeforeInvoke } from '../../../../../../org/spongepowered/asm/mixin/injection/points/BeforeInvoke.d.ts'
+import type { BeforeInvoke$SearchType } from '../../../../../../org/spongepowered/asm/mixin/injection/points/BeforeInvoke$SearchType.d.ts'
+import type { ITargetSelector } from '../../../../../../org/spongepowered/asm/mixin/injection/selectors/ITargetSelector.d.ts'
 import type { InjectionPointData } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionPointData.d.ts'
 import type { IMixinContext } from '../../../../../../org/spongepowered/asm/mixin/refmap/IMixinContext.d.ts'
 export class BeforeStringInvoke extends BeforeInvoke {
@@ -32,6 +34,7 @@ export class BeforeStringInvoke extends BeforeInvoke {
     // private foundLdc: boolean;
     // private ldcValue: string;
     find(arg0: string, arg1: AbstractInsnNode[], arg2: E[]): boolean;
+    find(arg0: string, arg1: AbstractInsnNode[], arg2: E[], arg3: ITargetSelector, arg4: BeforeInvoke$SearchType): boolean;
     inspectInsn(arg0: string, arg1: AbstractInsnNode[], arg2: AbstractInsnNode): void;
     matchesOrdinal(arg0: number): boolean;
 }

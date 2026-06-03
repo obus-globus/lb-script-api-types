@@ -6,6 +6,7 @@ export class Char2ReferenceFunctions$UnmodifiableFunction<V extends Object | num
     constructor(arg0: (param0: V) => unknown)
     // private function: (param0: V) => unknown;
     clear(): void;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;

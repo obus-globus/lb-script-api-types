@@ -156,6 +156,9 @@ export abstract class ASTVoidVisitor extends Object implements ASTVisitor<void> 
     visitBuiltinNumericTypeSpecifier<R extends Object | number | string | boolean>(arg0: BuiltinNumericTypeSpecifier): R;
     visitCaseLabelStatement<R extends Object | number | string | boolean>(arg0: CaseLabelStatement): R;
     visitCaseStatement<R extends Object | number | string | boolean>(arg0: CaseStatement): R;
+    visitChildren(arg0: ASTNode[]): void;
+    visitChildren(arg0: ListNode<ASTNode>): void;
+    visitChildren(arg0: void, arg1: ASTNode[]): void;
     visitChildren(arg0: void, arg1: ListNode<ASTNode>): void;
     visitCompoundStatement<R extends Object | number | string | boolean>(arg0: CompoundStatement): R;
     visitConditionExpression<R extends Object | number | string | boolean>(arg0: ConditionExpression): R;

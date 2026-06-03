@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../../../../kotlin/jvm/functions/Function0.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { SourceElement } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SourceElement.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
@@ -16,6 +15,6 @@ export abstract class VariableDescriptorWithInitializerImpl extends VariableDesc
     // private isVar: boolean;
     getCompileTimeInitializer(): ConstantValue<Object>;
     isVar(): boolean;
-    setCompileTimeInitializer(arg0: NullableLazyValue<ConstantValue<Object>>, arg1: Function0<NullableLazyValue<ConstantValue<Object>>>): void;
-    setCompileTimeInitializerFactory(arg0: Function0<NullableLazyValue<ConstantValue<Object>>>): void;
+    setCompileTimeInitializer(arg0: NullableLazyValue<ConstantValue<Object>>, arg1: () => NullableLazyValue<ConstantValue<Object>>): void;
+    setCompileTimeInitializerFactory(arg0: () => NullableLazyValue<ConstantValue<Object>>): void;
 }

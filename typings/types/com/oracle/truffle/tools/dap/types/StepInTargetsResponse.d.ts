@@ -12,4 +12,5 @@ export class StepInTargetsResponse extends Response {
     getBody(): StepInTargetsResponse$ResponseBody;
     hashCode(): number;
     setBody(body: StepInTargetsResponse$ResponseBody): StepInTargetsResponse;
+    setBody(body: Object): Response;
 }

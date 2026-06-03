@@ -9,7 +9,9 @@ export class DefaultScheduler extends SchedulerCoroutineDispatcher {
     static Key: CoroutineDispatcher$Key;
     static Key: ExecutorCoroutineDispatcher$Key;
     close(): void;
+    limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     shutdown(): void;
+    shutdown(timeout: number): void;
     toString(): string;
 }

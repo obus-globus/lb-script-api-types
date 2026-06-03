@@ -4,6 +4,7 @@ import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d
 import type { AttributedCharacterIterator } from '../../../../../../../java/text/AttributedCharacterIterator.d.ts'
 import type { FieldPosition } from '../../../../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
+import type { Temporal } from '../../../../../../../java/time/temporal/Temporal.d.ts'
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -22,6 +23,7 @@ import type { Calendar } from '../../../../../../../org/graalvm/shadowed/com/ibm
 import type { Calendar$FormatConfiguration } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar$FormatConfiguration.d.ts'
 import type { Output } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Output.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
+import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
 export class SimpleDateFormat extends DateFormat {
     static ABBR_GENERIC_TZ: string;
     static ABBR_MONTH: string;
@@ -201,6 +203,12 @@ export class SimpleDateFormat extends DateFormat {
     // private diffCalFieldValue(fromCalendar: Calendar, toCalendar: Calendar, items: Object[], i: number): boolean;
     equals(obj: Object | null): boolean;
     // private fastZeroPaddingNumber(buf: StringBuffer, value: number, minDigits: number, maxDigits: number): void;
+    format(date: Temporal): string;
+    format(date: Temporal, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
+    format(date: Date): string;
+    format(date: Date, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
+    format(arg0: Object): string;
+    format(obj: Object, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
     format(cal: Calendar, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(cal: Calendar, toAppendTo: StringBuffer, pos: FieldPosition, attributes: FieldPosition[]): StringBuffer;
     // private format(cal: Calendar, capitalizationContext: DisplayContext, toAppendTo: StringBuffer, pos: FieldPosition, attributes: FieldPosition[]): StringBuffer;
@@ -210,6 +218,8 @@ export class SimpleDateFormat extends DateFormat {
     // private getDefaultCenturyStart(): Date;
     // private getDefaultCenturyStartYear(): number;
     getLocale(): ULocale;
+    getLocale(type: ULocale$Type): ULocale;
+    getNumberFormat(): NumberFormat;
     getNumberFormat(field: string): NumberFormat;
     // private getPatternItems(): Object[];
     getSymbols(): DateFormatSymbols;
@@ -229,6 +239,8 @@ export class SimpleDateFormat extends DateFormat {
     matchQuarterString(text: string, start: number, field: number, data: string[], cal: Calendar): number;
     // private matchString(text: string, start: number, field: number, data: string[], monthPattern: string, cal: Calendar): number;
     matchString(text: string, start: number, field: number, data: string[], cal: Calendar): number;
+    parse(text: string): Date;
+    parse(text: string, pos: ParsePosition): Date;
     parse(text: string, cal: Calendar, parsePos: ParsePosition): void;
     // private parseAmbiguousDatesAsAfter(startDate: Date): void;
     // private parseInt(text: string, pos: ParsePosition, allowNegative: boolean, fmt: NumberFormat): Number;

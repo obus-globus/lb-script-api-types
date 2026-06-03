@@ -30,6 +30,7 @@ export class RealmsLongRunningMcoTaskScreen extends RealmsScreen {
     canInterruptWithAnotherScreen(): boolean;
     cancel(): void;
     init(): void;
+    init(width: number, height: number): void;
     keyPressed(event: KeyEvent): boolean;
     repositionElements(): void;
     setTitle(title: Component): void;

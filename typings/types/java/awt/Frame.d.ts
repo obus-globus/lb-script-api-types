@@ -1,4 +1,6 @@
 import type { Color } from '../../java/awt/Color.d.ts'
+import type { Component } from '../../java/awt/Component.d.ts'
+import type { Cursor } from '../../java/awt/Cursor.d.ts'
 import type { GraphicsConfiguration } from '../../java/awt/GraphicsConfiguration.d.ts'
 import type { Image } from '../../java/awt/Image.d.ts'
 import type { MenuBar } from '../../java/awt/MenuBar.d.ts'
@@ -78,9 +80,12 @@ export class Frame extends Window implements MenuContainer {
     paramString(): string;
     postProcessKeyEvent(arg0: KeyEvent): void;
     // private readObject(arg0: ObjectInputStream): void;
+    remove(arg0: Component): void;
     remove(arg0: MenuComponent): void;
+    remove(arg0: number): void;
     removeNotify(): void;
     setBackground(arg0: Color): void;
+    setCursor(arg0: Cursor): void;
     setCursor(arg0: number): void;
     setExtendedState(arg0: number): void;
     setIconImage(arg0: Image): void;

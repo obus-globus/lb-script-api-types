@@ -32,6 +32,8 @@ export class Char2ByteOpenCustomHashMap$MapEntry extends Object implements Char2
     left(arg0: string): CharBytePair;
     left(arg0: string): CharBytePair;
     leftChar(): string;
+    right(): number;
+    right(arg0: number): CharBytePair;
     right(arg0: number): CharBytePair;
     right(): number;
     right(arg0: number): CharBytePair;

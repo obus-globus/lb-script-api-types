@@ -19,11 +19,15 @@ export class BooleanLongMutablePair extends Object implements BooleanLongPair, S
     key(arg0: boolean): BooleanLongPair;
     key(arg0: boolean): BooleanLongPair;
     keyBoolean(): boolean;
+    left(): boolean;
+    left(arg0: boolean): BooleanLongPair;
     left(arg0: boolean): BooleanLongMutablePair;
     left(): boolean;
     left(arg0: boolean): BooleanLongPair;
     left(arg0: boolean): BooleanLongPair;
     leftBoolean(): boolean;
+    right(): number;
+    right(arg0: number): BooleanLongPair;
     right(arg0: number): BooleanLongMutablePair;
     right(): number;
     right(arg0: number): BooleanLongPair;

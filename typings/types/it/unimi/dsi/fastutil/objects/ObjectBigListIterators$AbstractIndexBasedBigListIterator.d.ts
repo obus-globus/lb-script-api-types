@@ -8,6 +8,7 @@ export abstract class ObjectBigListIterators$AbstractIndexBasedBigListIterator<K
     add(arg0: number, arg1: K): void;
     back(arg0: number): number;
     back(arg0: number): number;
+    back(arg0: number): number;
     hasPrevious(): boolean;
     nextIndex(): number;
     previous(): K;

@@ -32,6 +32,8 @@ export class Float2ByteArrayMap$MapEntry extends Object implements Float2ByteMap
     left(arg0: number): FloatBytePair;
     left(arg0: number): FloatBytePair;
     leftFloat(): number;
+    right(): number;
+    right(arg0: number): FloatBytePair;
     right(arg0: number): FloatBytePair;
     right(): number;
     right(arg0: number): FloatBytePair;

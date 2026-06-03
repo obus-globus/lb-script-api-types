@@ -9,6 +9,7 @@ import type { Vector2fc } from '../../org/joml/Vector2fc.d.ts'
 export interface Matrix2fc extends Object{
     add(arg0: Matrix2fc, arg1: Matrix2f): Matrix2f;
     determinant(): number;
+    equals(other: Object | null): boolean;
     equals(arg0: Matrix2fc, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;
     get(arg0: FloatBuffer): FloatBuffer;

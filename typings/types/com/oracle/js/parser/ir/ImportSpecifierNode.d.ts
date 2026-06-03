@@ -17,5 +17,7 @@ export class ImportSpecifierNode extends Node {
     getIdentifier(): PropertyKey;
     setBindingIdentifier(bindingIdentifier: IdentNode): ImportSpecifierNode;
     setIdentifier(identifier: PropertyKey): ImportSpecifierNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

@@ -21,6 +21,7 @@ export class ObjectLiteralNode$ObjectLiteralAccessorMemberNode extends ObjectLit
     defineClassElement(frame: VirtualFrame, homeObject: JSObject, classElement: ClassElementDefinitionRecord): void;
     evaluateClassElementDefinition(frame: VirtualFrame, homeObject: JSObject, realm: JSRealm, decorators: Object[]): ClassElementDefinitionRecord;
     // private execute(obj: JSObject, getterV: Object, setterV: Object): void;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
     hasGetter(): boolean;
     hasSetter(): boolean;

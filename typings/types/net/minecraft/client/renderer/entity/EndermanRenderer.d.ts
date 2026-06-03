@@ -17,6 +17,7 @@ export class EndermanRenderer extends MobRenderer<EnderMan, EndermanRenderState,
     // private blockModelResolver: BlockModelResolver;
     // private random: RandomSource;
     createRenderState(): EndermanRenderState;
+    createRenderState(entity: EnderMan, partialTicks: number): EndermanRenderState;
     extractRenderState(entity: EnderMan, state: EndermanRenderState, partialTicks: number): void;
     getRenderOffset(state: EndermanRenderState): Vec3;
     getTextureLocation(state: EndermanRenderState): Identifier;

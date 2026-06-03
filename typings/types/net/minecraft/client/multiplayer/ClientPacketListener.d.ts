@@ -57,6 +57,7 @@ import type { MessageSignatureCache } from '../../../../net/minecraft/network/ch
 import type { SignedMessageBody } from '../../../../net/minecraft/network/chat/SignedMessageBody.d.ts'
 import type { SignedMessageChain$Encoder } from '../../../../net/minecraft/network/chat/SignedMessageChain$Encoder.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
+import type { ClientboundCustomPayloadPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundCustomPayloadPacket.d.ts'
 import type { ClientboundUpdateTagsPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundUpdateTagsPacket.d.ts'
 import type { CustomPacketPayload } from '../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { ClientGamePacketListener } from '../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
@@ -313,6 +314,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     handleContainerSetData(packet: ClientboundContainerSetDataPacket): void;
     handleContainerSetSlot(packet: ClientboundContainerSetSlotPacket): void;
     handleCustomChatCompletions(packet: ClientboundCustomChatCompletionsPacket): void;
+    handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;
     handleCustomPayload(payload: CustomPacketPayload): void;
     handleDamageEvent(packet: ClientboundDamageEventPacket): void;
     handleDebugBlockValue(packet: ClientboundDebugBlockValuePacket): void;

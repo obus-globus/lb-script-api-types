@@ -16,6 +16,7 @@ export class ThrownItemRenderer<T extends Entity & ItemSupplier> extends EntityR
     // private itemModelResolver: ItemModelResolver;
     // private scale: number;
     createRenderState(): ThrownItemRenderState;
+    createRenderState(entity: T, partialTicks: number): ThrownItemRenderState;
     extractRenderState(entity: T, state: ThrownItemRenderState, partialTicks: number): void;
     getBlockLightLevel(entity: T, blockPos: BlockPos): number;
     submit(state: ThrownItemRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

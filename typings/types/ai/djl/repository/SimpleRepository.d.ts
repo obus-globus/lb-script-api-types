@@ -21,6 +21,7 @@ export class SimpleRepository extends AbstractRepository {
     getResources(): MRL[];
     isRemote(): boolean;
     locate(arg0: MRL): Metadata;
+    prepare(arg0: Artifact): void;
     prepare(arg0: Artifact, arg1: Progress): void;
     resolve(arg0: MRL, arg1: { [key: string]: string }): Artifact;
     resolvePath(arg0: Artifact$Item, arg1: string): URI;

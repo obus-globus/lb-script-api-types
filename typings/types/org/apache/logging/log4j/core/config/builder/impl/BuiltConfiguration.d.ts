@@ -26,6 +26,7 @@ export class BuiltConfiguration extends AbstractConfiguration {
     // private statusConfig: StatusConfiguration;
     convertToNode(parent: Node, component: Component): Node;
     createAdvertiser(advertiserString: string, configSource: ConfigurationSource): void;
+    createAdvertiser(advertiserString: string, configSource: ConfigurationSource, buffer: number[], contentType: string): void;
     getContentType(): string;
     getPluginManager(): PluginManager;
     getStatusConfiguration(): StatusConfiguration;

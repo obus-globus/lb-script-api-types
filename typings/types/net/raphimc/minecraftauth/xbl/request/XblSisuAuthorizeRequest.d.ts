@@ -11,6 +11,7 @@ import type { SignedXblPostRequest } from '../../../../../net/raphimc/minecrafta
 import type { XblResponseHandler } from '../../../../../net/raphimc/minecraftauth/xbl/responsehandler/XblResponseHandler.d.ts'
 export class XblSisuAuthorizeRequest extends SignedXblPostRequest implements XblResponseHandler<XblSisuTokens> {
     constructor(arg0: MsaApplicationConfig, arg1: MsaToken, arg2: XblDeviceToken, arg3: KeyPair, arg4: string)
+    handle(arg0: HttpResponse): XblSisuTokens;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): XblSisuTokens;
     handle<R extends Object | number | string | boolean>(arg0: HttpResponse): R;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;

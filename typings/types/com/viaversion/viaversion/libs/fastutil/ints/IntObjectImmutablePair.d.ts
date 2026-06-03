@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/Pair.d.ts'
 import type { IntObjectPair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntObjectPair.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
@@ -24,5 +25,6 @@ export class IntObjectImmutablePair<V extends Object | number | string | boolean
     left(arg0: number): IntObjectPair<V>;
     leftInt(): number;
     right(): V;
+    right(arg0: V): Pair<number, V>;
     toString(): string;
 }

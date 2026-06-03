@@ -16,6 +16,7 @@ export class BooleanComparators$OppositeComparator extends Object implements Boo
     // private comparator: (param0: boolean, param1: boolean) => kotlin.Int;
     compare(arg0: boolean, arg1: boolean): number;
     compare(arg0: boolean, arg1: boolean): number;
+    compare(arg0: boolean, arg1: boolean): number;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     thenComparing(arg0: (param0: boolean, param1: boolean) => kotlin.Int): (param0: boolean, param1: boolean) => kotlin.Int;

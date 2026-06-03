@@ -7,6 +7,7 @@ import type { AbstractOrigin } from '../../../../../org/apache/commons/io/build/
 export class AbstractOrigin$CharSequenceOrigin extends AbstractOrigin<CharSequence, AbstractOrigin$CharSequenceOrigin> {
     constructor(arg0: CharSequence)
     getByteArray(): number[];
+    getByteArray(arg0: number, arg1: number): number[];
     getCharSequence(arg0: Charset): CharSequence;
     getInputStream(arg0: OpenOption[]): InputStream;
     getReader(arg0: Charset): Reader;

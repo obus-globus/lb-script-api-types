@@ -12,4 +12,5 @@ export class SetExpressionResponse extends Response {
     getBody(): SetExpressionResponse$ResponseBody;
     hashCode(): number;
     setBody(body: SetExpressionResponse$ResponseBody): SetExpressionResponse;
+    setBody(body: Object): Response;
 }

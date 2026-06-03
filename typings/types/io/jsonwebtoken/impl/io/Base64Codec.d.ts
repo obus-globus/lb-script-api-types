@@ -14,9 +14,15 @@ export class Base64Codec extends BaseNCodec {
     // private encodeSize: number;
     // private encodeTable: number[];
     // private lineSeparator: number[];
+    decode(arg0: number[]): number[];
     decode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;
+    decode(arg0: string): number[];
+    encode(arg0: number[]): number[];
+    encode(arg0: number[], arg1: number, arg2: number): number[];
     encode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;
     isInAlphabet(arg0: number): boolean;
+    isInAlphabet(arg0: number[], arg1: boolean): boolean;
+    isInAlphabet(arg0: string): boolean;
     isUrlSafe(): boolean;
     // private validateCharacter(arg0: number, arg1: BaseNCodec$Context): void;
     // private validateTrailingCharacter(): void;

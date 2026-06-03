@@ -32,6 +32,8 @@ export class Int2DoubleArrayMap$MapEntry extends Object implements Int2DoubleMap
     left(arg0: number): IntDoublePair;
     left(arg0: number): IntDoublePair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntDoublePair;
     right(arg0: number): IntDoublePair;
     right(): number;
     right(arg0: number): IntDoublePair;

@@ -33,6 +33,7 @@ export class RealmsPreferredRegionSelectionScreen extends Screen {
     // private regionServiceQuality: { [key in RealmsRegion]: ServiceQuality };
     // private selection: RealmsSettingsTab$RegionSelection;
     init(): void;
+    init(width: number, height: number): void;
     onClose(): void;
     // private onDone(): void;
     repositionElements(): void;

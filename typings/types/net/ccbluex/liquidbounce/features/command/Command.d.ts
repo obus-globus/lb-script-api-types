@@ -1,6 +1,5 @@
 import type { SuggestionsBuilder } from '../../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Function1 } from '../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { Command$Handler } from '../../../../../net/ccbluex/liquidbounce/features/command/Command$Handler.d.ts'
 import type { Parameter } from '../../../../../net/ccbluex/liquidbounce/features/command/Parameter.d.ts'
@@ -40,7 +39,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:135}
      */
-    printStyledComponent(key: string, textComponent: Component | null, copyContent: string | null, formatting: Function1<MutableComponent, MutableComponent>, hover: HoverEvent | null): void;
+    printStyledComponent(key: string, textComponent: Component | null, copyContent: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null): void;
     /**
      * Sends a styled command result with copyable content
      *
@@ -52,7 +51,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:113}
      */
-    printStyledText(key: string, data: string | null, formatting: Function1<MutableComponent, MutableComponent>, hover: HoverEvent | null, click: ClickEvent | null): void;
+    printStyledText(key: string, data: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null, click: ClickEvent | null): void;
     result(key: string, args: Object[]): MutableComponent;
     resultWithTree(key: string, args: Object[]): MutableComponent;
     /**

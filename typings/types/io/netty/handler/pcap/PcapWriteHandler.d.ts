@@ -36,6 +36,7 @@ export class PcapWriteHandler extends ChannelDuplexHandler implements Closeable 
     channelActive(arg0: ChannelHandlerContext): void;
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;
     close(): void;
+    close(arg0: ChannelHandlerContext, arg1: ChannelPromise): void;
     // private completeTCPWrite(arg0: InetSocketAddress, arg1: InetSocketAddress, arg2: ByteBuf, arg3: ByteBufAllocator, arg4: ChannelHandlerContext): void;
     // private completeUDPWrite(arg0: InetSocketAddress, arg1: InetSocketAddress, arg2: ByteBuf, arg3: ByteBufAllocator, arg4: ChannelHandlerContext): void;
     exceptionCaught(arg0: ChannelHandlerContext, arg1: Throwable): void;

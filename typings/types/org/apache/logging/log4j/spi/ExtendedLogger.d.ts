@@ -55,4 +55,5 @@ export interface ExtendedLogger extends Object, Logger{
     logIfEnabled(fqcn: string, level: Level, marker: Marker, msgSupplier: () => Object | null, t: Throwable): void;
     logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: Message, t: Throwable): void;
+    logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
 }

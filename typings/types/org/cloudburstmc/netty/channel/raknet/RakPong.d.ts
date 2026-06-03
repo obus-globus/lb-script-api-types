@@ -1,5 +1,6 @@
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { AbstractReferenceCounted } from '../../../../../io/netty/util/AbstractReferenceCounted.d.ts'
+import type { ReferenceCounted } from '../../../../../io/netty/util/ReferenceCounted.d.ts'
 import type { InetSocketAddress } from '../../../../../java/net/InetSocketAddress.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RakPong extends AbstractReferenceCounted {
@@ -13,5 +14,6 @@ export class RakPong extends AbstractReferenceCounted {
     getPingTime(): number;
     getPongData(): ByteBuf;
     getSender(): InetSocketAddress;
+    touch(): ReferenceCounted;
     touch(arg0: Object): RakPong;
 }

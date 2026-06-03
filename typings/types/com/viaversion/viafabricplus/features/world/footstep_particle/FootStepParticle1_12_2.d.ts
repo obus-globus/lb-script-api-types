@@ -12,5 +12,6 @@ export class FootStepParticle1_12_2 extends SingleQuadParticle {
     static init(): void;
     private constructor(arg0: ClientLevel, arg1: number, arg2: number, arg3: number, arg4: TextureAtlasSprite)
     extractRotatedQuad(arg0: QuadParticleRenderState, arg1: Camera, arg2: Quaternionf, arg3: number): void;
+    extractRotatedQuad(particleTypeRenderState: QuadParticleRenderState, rotation: Quaternionf, x: number, y: number, z: number, partialTickTime: number): void;
     getLayer(): SingleQuadParticle$Layer;
 }

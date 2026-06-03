@@ -7,11 +7,14 @@ export class Short2CharFunctions$EmptyFunction extends AbstractShort2CharFunctio
     clear(): void;
     clone(): Object;
     protected clone(): Object;
+    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
     equals(arg0: Object | null): boolean;
+    get(arg0: Object): string;
     get(arg0: number): string;
+    getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: number, arg1: string): string;
     hashCode(): number;
     // private readResolve(): Object;

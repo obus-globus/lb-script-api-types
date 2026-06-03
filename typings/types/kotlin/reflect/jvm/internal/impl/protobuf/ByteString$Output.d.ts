@@ -13,6 +13,7 @@ export class ByteString$Output extends OutputStream {
     size(): number;
     toByteString(): number[];
     toString(): string;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
 }

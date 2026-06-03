@@ -16,4 +16,5 @@ export class EntityPacketRewriter1_21_2 extends EntityRewriter<ClientboundPacket
     registerRewrites(): void;
     // private storeEntityPositionRotation(arg0: PacketWrapper, arg1: boolean, arg2: boolean): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
 }

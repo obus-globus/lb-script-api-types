@@ -3,9 +3,12 @@ import type { Function } from '../../../../../../java/util/function/Function.d.t
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
+import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { LevelAccessor } from '../../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
+import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level/chunk/ChunkGenerator.d.ts'
 import type { BonusChestFeature } from '../../../../../../net/minecraft/world/level/levelgen/feature/BonusChestFeature.d.ts'
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeaturePlaceContext } from '../../../../../../net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.d.ts'
@@ -116,4 +119,5 @@ export class SculkPatchFeature extends Feature<SculkPatchConfiguration> {
     constructor(codec: Codec<SculkPatchConfiguration>)
     // private canSpreadFrom(level: LevelAccessor, origin: BlockPos): boolean;
     place(context: FeaturePlaceContext<SculkPatchConfiguration>): boolean;
+    place(config: SculkPatchConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
 }

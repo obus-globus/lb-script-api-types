@@ -18,6 +18,7 @@ import type { UFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/
 import type { Measure } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Measure.d.ts'
 import type { MeasureUnit } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/MeasureUnit.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
+import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
 export class MeasureFormat extends UFormat {
     static getCurrencyFormat(): MeasureFormat;
     static getCurrencyFormat(paramlocale: Locale): MeasureFormat;
@@ -40,6 +41,7 @@ export class MeasureFormat extends UFormat {
     // private rules: PluralRules;
     clearCache(): void;
     equals(other: Object | null): boolean;
+    format(arg0: Object): string;
     format(obj: Object, toAppendTo: StringBuffer, fpos: FieldPosition): StringBuffer;
     // private formatMeasure(measure: Measure): FormattedStringBuilder;
     // private formatMeasureInteger(measure: Measure): FormattedStringBuilder;
@@ -50,6 +52,7 @@ export class MeasureFormat extends UFormat {
     // private formatMeasuresSlowTrack(listFormatter: ListFormatter, appendTo: Appendable, fieldPosition: FieldPosition, measures: Measure[]): void;
     // private formatNumeric(hms: Number[], appendable: Appendable): void;
     getLocale(): ULocale;
+    getLocale(type: ULocale$Type): ULocale;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
     getNumberFormatter(): LocalizedNumberFormatter;
@@ -57,6 +60,7 @@ export class MeasureFormat extends UFormat {
     // private getUnitFormatterFromCache(type: number, unit: MeasureUnit, perUnit: MeasureUnit): LocalizedNumberFormatter;
     getWidth(): MeasureFormat$FormatWidth;
     hashCode(): number;
+    parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): Measure;
     toCurrencyProxy(): Object;
     toTimeUnitProxy(): Object;

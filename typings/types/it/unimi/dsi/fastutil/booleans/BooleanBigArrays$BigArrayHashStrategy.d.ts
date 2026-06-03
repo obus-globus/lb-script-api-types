@@ -3,6 +3,8 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanBigArrays$BigArrayHashStrategy extends Object implements Hash$Strategy<boolean[][]>, Serializable {
     private constructor()
+    equals(other: Object | null): boolean;
     equals(arg0: (Object | null)[][], arg1: (Object | null)[][]): boolean;
+    hashCode(): number;
     hashCode(arg0: (Object | null)[][]): number;
 }

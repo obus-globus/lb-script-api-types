@@ -17,7 +17,7 @@ import type { Long2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Object2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2BooleanFunction.d.ts'
 import type { Reference2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2BooleanFunction.d.ts'
 import type { Short2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2BooleanFunction.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Boolean2BooleanFunction extends Function<boolean, boolean>, Object{
     andThen(arg0: (param0: boolean) => T): (param0: boolean) => T;

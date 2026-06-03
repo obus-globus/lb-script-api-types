@@ -19,6 +19,7 @@ export class HoverRequestHandler extends AbstractRequestHandler {
     // private createDefaultHoverInfos(textAtHoverPosition: string, evalResultObject: Object, langInfo: LanguageInfo): Object[];
     // private evalHoverInfos(coverages: CoverageData[], hoverSection: SourceSection, langInfo: LanguageInfo): Hover;
     hoverWithEnteredContext(uri: URI, line: number, column: number): Hover;
+    toString(): string;
     // private toString(evalResultObject: Object, langInfo: LanguageInfo): string;
     // private tryCoverageDataEvaluation(hoverSection: SourceSection, langInfo: LanguageInfo, textAtHoverPosition: string, coverageData: CoverageData): Hover;
     // private tryFrameScope(frame: MaterializedFrame, node: CoverageEventNode, textAtHoverPosition: string, langInfo: LanguageInfo, hoverSection: SourceSection): Hover;

@@ -31,6 +31,7 @@ export class MCEFBrowser extends CefBrowserOsr {
     cancelDrag(): void;
     clear(): void;
     close(): void;
+    close(arg0: boolean): void;
     finalize(): void;
     finishDragging(arg0: number, arg1: number): void;
     getCursorChangeListener(): (param0: number) => void;

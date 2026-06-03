@@ -38,6 +38,7 @@ export class TestInstanceBlockEditScreen extends Screen {
     // private sizeZEdit: EditBox;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     init(): void;
+    init(width: number, height: number): void;
     isInGameUi(): boolean;
     // private onCancel(): void;
     // private onDone(): void;

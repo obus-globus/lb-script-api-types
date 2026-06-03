@@ -15,6 +15,7 @@ export class EntityPacketRewriter1_21_5 extends EntityRewriter<ClientboundPacket
     // private sendEntityVariants(arg0: UserConnection, arg1: string, arg2: string, arg3: boolean, arg4: string[]): void;
     // private sendSaddleEquipment(arg0: EntityDataHandlerEvent, arg1: boolean): void;
     typeFromId(arg0: number): EntityType;
+    typeFromId(arg0: string): EntityType;
     // private visibilityId(arg0: string): number;
     // private wolfSoundVariant(): RegistryEntry;
 }

@@ -2,8 +2,6 @@ import type { Closeable } from '../../java/io/Closeable.d.ts'
 import type { Exception } from '../../java/lang/Exception.d.ts'
 import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Function0 } from '../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../kotlin/jvm/functions/Function1.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { Buffer } from '../../okio/Buffer.d.ts'
 import type { BufferedSink } from '../../okio/BufferedSink.d.ts'
@@ -24,10 +22,10 @@ export class _UtilCommonKt extends Object {
     static deleteIfExists(paramarg0: FileSystem, paramarg1: Path): void;
     static delimiterOffset(paramarg0: string, paramarg1: string, paramarg2: number, paramarg3: number): number;
     static delimiterOffset(paramarg0: string, paramarg1: string, paramarg2: number, paramarg3: number): number;
-    static filterList(paramarg0: (Object | null)[], paramarg1: Function1<Object, boolean>): (Object | null)[];
+    static filterList(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => boolean): (Object | null)[];
     static getUNICODE_BOMS(): (Object | null)[];
     static hasIntersection(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: (param0: Object | null) => kotlin.Boolean): boolean;
-    static ignoreIoExceptions(paramarg0: Function0<void>): void;
+    static ignoreIoExceptions(paramarg0: () => void): void;
     static indexOf(paramarg0: (Object | null)[], paramarg1: string, paramarg2: (param0: string) => kotlin.Boolean): number;
     static indexOfControlOrNonAscii(paramarg0: string): number;
     static indexOfFirstNonAsciiWhitespace(paramarg0: string, paramarg1: number, paramarg2: number): number;

@@ -11,6 +11,8 @@ export class ReferenceByteMutablePair<K extends Object | number | string | boole
     hashCode(): number;
     left(): K;
     left(arg0: K): ReferenceByteMutablePair<K>;
+    right(): number;
+    right(arg0: number): ReferenceBytePair<K>;
     right(arg0: number): ReferenceByteMutablePair<K>;
     right(): number;
     right(arg0: number): ReferenceBytePair<K>;

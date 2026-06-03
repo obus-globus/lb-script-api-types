@@ -5,5 +5,6 @@ export class StructuredDataLookup extends AbstractLookup {
     static ID_KEY: string;
     static TYPE_KEY: string;
     constructor()
+    lookup(key: string): string;
     lookup(event: LogEvent, key: string): string;
 }

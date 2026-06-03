@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { BeeNestDestroyedTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/BeeNestDestroyedTrigger$TriggerInstance.d.ts'
 import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/criterion/SimpleCriterionTrigger.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
@@ -7,5 +8,6 @@ import type { BlockState } from '../../../../net/minecraft/world/level/block/sta
 export class BeeNestDestroyedTrigger extends SimpleCriterionTrigger<BeeNestDestroyedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<BeeNestDestroyedTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: BeeNestDestroyedTrigger$TriggerInstance) => kotlin.Boolean): void;
     trigger(player: ServerPlayer, state: BlockState, itemStack: ItemStack, numBeesInside: number): void;
 }

@@ -10,6 +10,7 @@ export class DragonFireballRenderer extends EntityRenderer<DragonFireball, Entit
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): EntityRenderState;
+    createRenderState(entity: DragonFireball, partialTicks: number): EntityRenderState;
     getBlockLightLevel(entity: DragonFireball, blockPos: BlockPos): number;
     submit(state: EntityRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

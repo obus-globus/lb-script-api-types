@@ -1,4 +1,5 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { NodeVisitor } from '../../../../../../com/oracle/truffle/api/nodes/NodeVisitor.d.ts'
 import type { ValueProfile } from '../../../../../../com/oracle/truffle/api/profiles/ValueProfile.d.ts'
 import type { JSFunctionCallNode$AbstractCacheNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode$AbstractCacheNode.d.ts'
 import type { ExportArgumentsNode } from '../../../../../../com/oracle/truffle/js/nodes/interop/ExportArgumentsNode.d.ts'
@@ -11,6 +12,7 @@ export abstract class JSFunctionCallNode$ForeignCallNode extends JSFunctionCallN
     // private exportArgumentsNode: ExportArgumentsNode;
     // private functionClassProfile: ValueProfile;
     // private typeConvertNode: ImportValueNode;
+    accept(nodeVisitor: NodeVisitor): void;
     accept(function_: Object): boolean;
     convertForeignReturn(returnValue: Object): Object;
     exportArguments(arguments: Object[]): Object[];

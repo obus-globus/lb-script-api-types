@@ -12,6 +12,7 @@ export abstract class Estimator<TCategory extends Object | number | string | boo
     createNewModel(): TModel;
     // private ensureModel(arg0: TCategory): TModel;
     predict(arg0: TCategory, arg1: TInput): TOutput;
+    toString(): string;
     toString(arg0: TCategory): string;
     updateModels(): void;
 }

@@ -45,5 +45,7 @@ export class VarNode extends Statement implements Assignment<IdentNode> {
     isLet(): boolean;
     setFlag(flag: number): VarNode;
     // private setFlags(flags: number): VarNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

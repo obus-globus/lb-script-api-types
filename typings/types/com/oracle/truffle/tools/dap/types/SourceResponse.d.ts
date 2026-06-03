@@ -12,4 +12,5 @@ export class SourceResponse extends Response {
     getBody(): SourceResponse$ResponseBody;
     hashCode(): number;
     setBody(body: SourceResponse$ResponseBody): SourceResponse;
+    setBody(body: Object): Response;
 }

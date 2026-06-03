@@ -1,4 +1,5 @@
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
+import type { Future } from '../../../../../../../java/util/concurrent/Future.d.ts'
 import type { ScheduledFuture } from '../../../../../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -19,10 +20,13 @@ export class IdlePurgePolicy extends AbstractLifeCycle implements Runnable, Purg
     // private routingAppender: RoutingAppender;
     // private scheduler: ConfigurationScheduler;
     // private timeToLive: number;
+    initialize(): void;
     initialize(routingAppender: RoutingAppender): void;
     purge(): void;
     run(): void;
     // private scheduleNext(): void;
+    stop(): void;
+    stop(future: Future<Object>): boolean;
     stop(timeout: number, timeUnit: TimeUnit): boolean;
     toString(): string;
     update(key: string, event: LogEvent): void;

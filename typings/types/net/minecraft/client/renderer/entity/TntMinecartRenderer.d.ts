@@ -12,6 +12,7 @@ export class TntMinecartRenderer extends AbstractMinecartRenderer<MinecartTNT, M
     static submitWhiteSolidBlock(paramblockModel: BlockModelRenderState, paramposeStack: PoseStack, paramsubmitNodeCollector: SubmitNodeCollector, paramlightCoords: number, paramwhite: boolean, paramoutlineColor: number): void;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): MinecartTntRenderState;
+    createRenderState(entity: MinecartTNT, partialTicks: number): MinecartTntRenderState;
     extractRenderState(entity: MinecartTNT, state: MinecartTntRenderState, partialTicks: number): void;
     submitMinecartContents(state: MinecartTntRenderState, blockModel: BlockModelRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number): void;
 }

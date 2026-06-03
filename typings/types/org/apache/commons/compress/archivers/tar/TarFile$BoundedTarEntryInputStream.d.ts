@@ -10,6 +10,9 @@ export class TarFile$BoundedTarEntryInputStream extends BoundedArchiveInputStrea
     // private currentSparseInputStreamIndex: number;
     // private entry: TarArchiveEntry;
     // private entryOffset: number;
+    read(): number;
+    read(arg0: number[]): number;
+    read(arg0: number[], arg1: number, arg2: number): number;
     read(arg0: number, arg1: ByteBuffer): number;
     // private readArchive(arg0: number, arg1: ByteBuffer): number;
     // private readSparse(arg0: number, arg1: ByteBuffer, arg2: number): number;

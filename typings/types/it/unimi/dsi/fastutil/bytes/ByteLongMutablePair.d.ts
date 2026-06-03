@@ -19,11 +19,15 @@ export class ByteLongMutablePair extends Object implements ByteLongPair, Seriali
     key(arg0: number): ByteLongPair;
     key(arg0: number): ByteLongPair;
     keyByte(): number;
+    left(): number;
+    left(arg0: number): ByteLongPair;
     left(arg0: number): ByteLongMutablePair;
     left(): number;
     left(arg0: number): ByteLongPair;
     left(arg0: number): ByteLongPair;
     leftByte(): number;
+    right(): number;
+    right(arg0: number): ByteLongPair;
     right(arg0: number): ByteLongMutablePair;
     right(): number;
     right(arg0: number): ByteLongPair;

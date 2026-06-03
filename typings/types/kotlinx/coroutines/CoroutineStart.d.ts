@@ -1,7 +1,6 @@
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
-import type { Function2 } from '../../kotlin/jvm/functions/Function2.d.ts'
 import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 export class CoroutineStart extends Enum<CoroutineStart> {
     static ATOMIC: CoroutineStart;
@@ -14,6 +13,6 @@ export class CoroutineStart extends Enum<CoroutineStart> {
     static values(): (Object | null)[];
     private constructor()
     /*not mapped: */ isLazy(): boolean;
-    invoke<R extends Object | number | string | boolean>(block: Function2<Object, Object, Object>, receiver: R, completion: Continuation<T>): void;
+    invoke<R extends Object | number | string | boolean>(block: (param0: R) => T, receiver: R, completion: Continuation<T>): void;
     name(): "DEFAULT" | "LAZY" | "ATOMIC" | "UNDISPATCHED";
 }

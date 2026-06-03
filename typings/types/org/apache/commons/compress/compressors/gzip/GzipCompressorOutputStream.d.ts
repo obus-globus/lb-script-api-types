@@ -1,3 +1,4 @@
+import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { CRC32 } from '../../../../../../java/util/zip/CRC32.d.ts'
@@ -14,6 +15,8 @@ export class GzipCompressorOutputStream extends CompressorOutputStream<OutputStr
     close(): void;
     // private deflate(): void;
     finish(): void;
+    write(arg0: File): number;
+    write(arg0: Path[]): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

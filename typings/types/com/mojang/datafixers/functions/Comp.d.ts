@@ -16,6 +16,7 @@ export class Comp<A extends Object | number | string | boolean, B extends Object
     eval(): (param0: DynamicOps<Object>) => (param0: A) => B;
     hashCode(): number;
     one(arg0: PointFreeRule): Optional<PointFree<(param0: A) => B>>;
+    toString(): string;
     toString(arg0: number): string;
     type(): Type<(param0: A) => B>;
 }

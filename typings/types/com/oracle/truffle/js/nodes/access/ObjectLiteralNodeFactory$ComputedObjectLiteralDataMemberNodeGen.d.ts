@@ -17,6 +17,7 @@ export class ObjectLiteralNodeFactory$ComputedObjectLiteralDataMemberNodeGen ext
     // private noFieldNoFunctionDef0_cache: ObjectLiteralNodeFactory$ComputedObjectLiteralDataMemberNodeGen$NoFieldNoFunctionDef0Data;
     // private state_0_: number;
     // private executeAndSpecialize(frameValue: VirtualFrame, arg0Value: JSObject, arg1Value: JSObject, arg2Value: JSRealm): void;
+    executeVoid(frame: VirtualFrame, obj: JSObject, realm: JSRealm): void;
     executeVoid(frameValue: VirtualFrame, arg0Value: JSObject, arg1Value: JSObject, arg2Value: JSRealm): void;
     // private noFieldNoFunctionDef1Boundary(state_0: number, frameValue: MaterializedFrame, arg0Value: JSObject, arg1Value: JSObject, arg2Value: JSRealm): void;
 }

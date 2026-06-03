@@ -75,6 +75,7 @@ export class ObjectInputStream extends InputStream implements ObjectInput, Objec
     getObjectInputFilter(): (param0: ObjectInputFilter$FilterInfo) => java.io.ObjectInputFilter.Status;
     // private handleReset(): void;
     read(): number;
+    read(arg0: number[]): number;
     read(arg0: number[], arg1: number, arg2: number): number;
     // private readArray(arg0: boolean): Object;
     readBoolean(): boolean;

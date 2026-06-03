@@ -11,6 +11,7 @@ export class LightningBoltRenderer extends EntityRenderer<LightningBolt, Lightni
     constructor(context: EntityRendererProvider$Context)
     affectedByCulling(entity: LightningBolt): boolean;
     createRenderState(): LightningBoltRenderState;
+    createRenderState(entity: LightningBolt, partialTicks: number): LightningBoltRenderState;
     extractRenderState(entity: LightningBolt, state: LightningBoltRenderState, partialTicks: number): void;
     // private iris$overrideTex(): RenderType;
     submit(state: LightningBoltRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

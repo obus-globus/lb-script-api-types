@@ -27,6 +27,7 @@ export class IntHeapPriorityQueue extends Object implements IntPriorityQueue, Se
     dequeueInt(): number;
     enqueue(arg0: number): void;
     enqueue(arg0: number): void;
+    enqueue(arg0: number): void;
     first(): number;
     firstInt(): number;
     last(): number;

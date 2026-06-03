@@ -29,8 +29,10 @@ import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { DamageSource } from '../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
@@ -178,6 +180,11 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     interactLivingEntity(player: Player, target: LivingEntity, hand: InteractionHand): InteractionResult;
     inventoryTick(level: Level, owner: Entity, slot: EquipmentSlot): void;
     is(item: (param0: Holder<Item>) => kotlin.Boolean): boolean;
+    is(type: Holder<Item>): boolean;
+    is(set: Holder<T>[]): boolean;
+    is(type: ResourceKey<Item>): boolean;
+    is(tag: TagKey<Item>): boolean;
+    is(rawType: Item): boolean;
     isBarVisible(): boolean;
     isBroken(): boolean;
     isCorrectToolForDrops(state: BlockState): boolean;

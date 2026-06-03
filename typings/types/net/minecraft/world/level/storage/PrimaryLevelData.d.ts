@@ -38,6 +38,7 @@ export class PrimaryLevelData extends Object implements ServerLevelData, WorldDa
     // private worldGenSettingsLifecycle: Lifecycle;
     createTag(singlePlayerUUID: UUID): CompoundTag;
     enabledFeatures(): FeatureFlagSet;
+    fillCrashReportCategory(category: CrashReportCategory): void;
     fillCrashReportCategory(category: CrashReportCategory, levelHeightAccessor: LevelHeightAccessor): void;
     fillCrashReportCategory(category: CrashReportCategory, levelHeightAccessor: LevelHeightAccessor): void;
     fillCrashReportCategory(category: CrashReportCategory): void;

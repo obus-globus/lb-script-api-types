@@ -12,5 +12,6 @@ export class AbstractFloat2LongMap$BasicEntry extends Object implements Float2Lo
     hashCode(): number;
     setValue(arg0: number): number;
     setValue(arg0: number): number;
+    setValue(arg0: number): number;
     toString(): string;
 }

@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/Pair.d.ts'
 import type { Reference2ObjectMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Reference2ObjectMap$Entry.d.ts'
 import type { ReferenceObjectPair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ReferenceObjectPair.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
@@ -18,6 +19,7 @@ export class Reference2ObjectArrayMap$MapEntry extends Object implements Referen
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left<K extends Object | number | string | boolean>(): K;
+    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
     right<V extends Object | number | string | boolean>(): V;
     right<V extends Object | number | string | boolean>(arg0: V): ReferenceObjectPair<K, V>;
     setValue<V extends Object | number | string | boolean>(arg0: V): V;

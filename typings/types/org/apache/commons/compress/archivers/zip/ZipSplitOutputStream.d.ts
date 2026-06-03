@@ -32,6 +32,7 @@ export class ZipSplitOutputStream extends RandomAccessOutputStream {
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     writeAll(arg0: number[], arg1: number, arg2: number, arg3: number): void;
+    writeAll(arg0: number[], arg1: number): void;
     // private writeToSegment(arg0: Path[], arg1: number, arg2: number[], arg3: number, arg4: number): void;
     // private writeZipSplitSignature(): void;
 }

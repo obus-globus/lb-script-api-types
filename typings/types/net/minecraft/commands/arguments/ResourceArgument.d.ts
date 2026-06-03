@@ -41,4 +41,5 @@ export class ResourceArgument<T extends Object | number | string | boolean> exte
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): Holder$Reference<T>;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder$Reference<T>;
 }

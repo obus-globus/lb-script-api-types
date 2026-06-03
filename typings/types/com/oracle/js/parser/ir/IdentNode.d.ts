@@ -56,5 +56,7 @@ export class IdentNode extends Expression implements FunctionCall, PropertyKey {
     setIsRestParameter(): IdentNode;
     setIsSuper(): IdentNode;
     setIsThis(): IdentNode;
+    toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
+    toString(includeTypeInfo: boolean): string;
 }

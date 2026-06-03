@@ -8,6 +8,7 @@ import type { JButton } from '../../javax/swing/JButton.d.ts'
 import type { JComponent } from '../../javax/swing/JComponent.d.ts'
 import type { JLayeredPane } from '../../javax/swing/JLayeredPane.d.ts'
 import type { JMenuBar } from '../../javax/swing/JMenuBar.d.ts'
+import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { RootPaneUI } from '../../javax/swing/plaf/RootPaneUI.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class JRootPane extends JComponent implements Accessible {
@@ -78,6 +79,7 @@ export class JRootPane extends JComponent implements Accessible {
     setJMenuBar(arg0: JMenuBar): void;
     setLayeredPane(arg0: JLayeredPane): void;
     setMenuBar(arg0: JMenuBar): void;
+    setUI(arg0: ComponentUI): void;
     setUI(arg0: RootPaneUI): void;
     setUseTrueDoubleBuffering(arg0: boolean): void;
     setWindowDecorationStyle(arg0: number): void;

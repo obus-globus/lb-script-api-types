@@ -1,5 +1,6 @@
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Graphics } from '../../java/awt/Graphics.d.ts'
+import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
@@ -58,6 +59,8 @@ export class JLayeredPane extends JComponent implements Accessible {
     moveToFront(arg0: Component): void;
     paint(arg0: Graphics): void;
     paramString(): string;
+    remove(arg0: Component): void;
+    remove(arg0: MenuComponent): void;
     remove(arg0: number): void;
     removeAll(): void;
     setLayer(arg0: Component, arg1: number): void;

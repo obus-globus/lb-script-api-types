@@ -9,5 +9,7 @@ export class ChunkedOutputStream extends FilterOutputStream {
     private constructor(arg0: ChunkedOutputStream$Builder)
     // private chunkSize: number;
     getChunkSize(): number;
+    write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
+    write(arg0: number): void;
 }

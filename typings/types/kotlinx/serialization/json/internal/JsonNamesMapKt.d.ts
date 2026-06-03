@@ -1,6 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Function0 } from '../../../../kotlin/jvm/functions/Function0.d.ts'
-import type { Function1 } from '../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
 import type { JsonNamingStrategy } from '../../../../kotlinx/serialization/json/JsonNamingStrategy.d.ts'
@@ -16,5 +14,5 @@ export class JsonNamesMapKt extends Object {
     static ignoreUnknownKeys(paramarg0: SerialDescriptor, paramarg1: Json): boolean;
     static namingStrategy(paramarg0: SerialDescriptor, paramarg1: Json): JsonNamingStrategy;
     static serializationNamesIndices(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: JsonNamingStrategy): (Object | null)[];
-    static tryCoerceValue(paramarg0: Json, paramarg1: SerialDescriptor, paramarg2: number, paramarg3: Function1<Object, boolean>, paramarg4: Function0<string>, paramarg5: Function0<void>): boolean;
+    static tryCoerceValue(paramarg0: Json, paramarg1: SerialDescriptor, paramarg2: number, paramarg3: (param0: Object | null) => boolean, paramarg4: () => string, paramarg5: () => void): boolean;
 }

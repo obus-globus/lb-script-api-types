@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { ItemDurabilityTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/ItemDurabilityTrigger$TriggerInstance.d.ts'
 import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/criterion/SimpleCriterionTrigger.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
@@ -6,5 +7,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class ItemDurabilityTrigger extends SimpleCriterionTrigger<ItemDurabilityTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ItemDurabilityTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: ItemDurabilityTrigger$TriggerInstance) => kotlin.Boolean): void;
     trigger(player: ServerPlayer, itemStack: ItemStack, newDurability: number): void;
 }

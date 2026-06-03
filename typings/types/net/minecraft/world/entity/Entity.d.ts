@@ -25,7 +25,7 @@ import type { AttachmentTargetImpl } from '../../../../net/fabricmc/fabric/impl/
 import type { AttachmentChange } from '../../../../net/fabricmc/fabric/impl/attachment/sync/AttachmentChange.d.ts'
 import type { AttachmentTargetInfo } from '../../../../net/fabricmc/fabric/impl/attachment/sync/AttachmentTargetInfo.d.ts'
 import type { EntityLoadDataSetter } from '../../../../net/fabricmc/fabric/impl/event/lifecycle/EntityLoadDataSetter.d.ts'
-import type { EntityAccessor } from '../../../../net/fabricmc/fabric/mixin/content/registry/fluid/EntityAccessor.d.ts'
+import type { EntityAccessor as EntityAccessor_2 } from '../../../../net/fabricmc/fabric/mixin/content/registry/fluid/EntityAccessor.d.ts'
 import type { CrashReportCategory } from '../../../../net/minecraft/CrashReportCategory.d.ts'
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { EntityAnchorArgument$Anchor } from '../../../../net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.d.ts'
@@ -127,7 +127,7 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { PlayerTeam } from '../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 import type { ScoreHolder } from '../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 import type { Team } from '../../../../net/minecraft/world/scores/Team.d.ts'
-export abstract class Entity extends Object implements IEntity, FeetBlockCachingEntity, MaybeInLevelObject, EntityAccessor, AttachmentTarget, EntityLoadData, PermissionContextOwner, AttachmentTargetImpl, EntityLoadDataSetter, EntityAccessor, TypedInstance<EntityType<Object>>, DataComponentGetter, SyncedDataHolder, DebugValueSource, Nameable, ItemOwner, SlotProvider, EntityAccess, ScoreHolder {
+export abstract class Entity extends Object implements IEntity, FeetBlockCachingEntity, MaybeInLevelObject, EntityAccessor, AttachmentTarget, EntityLoadData, PermissionContextOwner, AttachmentTargetImpl, EntityLoadDataSetter, EntityAccessor_2, TypedInstance<EntityType<Object>>, DataComponentGetter, SyncedDataHolder, DebugValueSource, Nameable, ItemOwner, SlotProvider, EntityAccess, ScoreHolder {
     static BASE_SAFE_FALL_DISTANCE: number;
     static BASE_TICKS_REQUIRED_TO_FREEZE: number;
     static BOARDING_COOLDOWN: number;
@@ -556,7 +556,12 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     is(set: Holder<T>[]): boolean;
     is(type: ResourceKey<T>): boolean;
     is(tag: TagKey<T>): boolean;
+    is(type: Holder<EntityType<Object>>): boolean;
+    is(set: Holder<T>[]): boolean;
+    is(type: ResourceKey<EntityType<Object>>): boolean;
+    is(tag: TagKey<EntityType<Object>>): boolean;
     is(other: Entity): boolean;
+    is(rawType: EntityType<Object>): boolean;
     isAffectedByBlocks(): boolean;
     isAlive(): boolean;
     isAlliedTo(other: Entity): boolean;

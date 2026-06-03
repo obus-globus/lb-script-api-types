@@ -11,8 +11,10 @@ export class IpBanList extends StoredUserList<string, IpBanListEntry> {
     clear(): void;
     createEntry(object: JsonObject): StoredUserEntry<string>;
     get(address: SocketAddress): IpBanListEntry;
+    get(user: string): IpBanListEntry;
     // private getIpFromAddress(address: SocketAddress): string;
     isBanned(address: SocketAddress): boolean;
     isBanned(ip: string): boolean;
     remove(ip: string): boolean;
+    remove(infos: StoredUserEntry<string>): boolean;
 }

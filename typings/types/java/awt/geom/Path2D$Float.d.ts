@@ -23,6 +23,7 @@ export class Path2D$Float extends Path2D implements Serializable {
     constructor(arg0: number)
     constructor(arg0: number, arg1: number)
     // private floatCoords: number[];
+    append(arg0: Shape, arg1: boolean): void;
     append(arg0: PathIterator, arg1: boolean): void;
     append(arg0: number, arg1: number): void;
     append(arg0: number, arg1: number): void;
@@ -33,6 +34,7 @@ export class Path2D$Float extends Path2D implements Serializable {
     curveTo(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     getBounds2D(): Rectangle2D;
     getPathIterator(arg0: AffineTransform): PathIterator;
+    getPathIterator(arg0: AffineTransform, arg1: number): PathIterator;
     getPoint(arg0: number): Point2D;
     lineTo(arg0: number, arg1: number): void;
     lineTo(arg0: number, arg1: number): void;
@@ -43,8 +45,10 @@ export class Path2D$Float extends Path2D implements Serializable {
     quadTo(arg0: number, arg1: number, arg2: number, arg3: number): void;
     quadTo(arg0: number, arg1: number, arg2: number, arg3: number): void;
     // private readObject(arg0: ObjectInputStream): void;
+    readObject(arg0: ObjectInputStream, arg1: boolean): void;
     rectCrossings(arg0: number, arg1: number, arg2: number, arg3: number): number;
     transform(arg0: AffineTransform): void;
     trimToSize(): void;
     // private writeObject(arg0: ObjectOutputStream): void;
+    writeObject(arg0: ObjectOutputStream, arg1: boolean): void;
 }

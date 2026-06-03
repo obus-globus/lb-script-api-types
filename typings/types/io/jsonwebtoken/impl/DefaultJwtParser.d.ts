@@ -49,10 +49,13 @@ export class DefaultJwtParser extends AbstractParser<Jwt<Object, Object>> implem
     decode(arg0: CharSequence, arg1: string): number[];
     deserialize(arg0: InputStream, arg1: string): { [key: string]: Object | null };
     isSigned(arg0: CharSequence): boolean;
+    parse(arg0: InputStream): Jwt<Object, Object>;
     parse(arg0: Reader): Jwt<Object, Object>;
     // private parse(arg0: Reader, arg1: Payload): Jwt<Object, Object>;
+    parse(arg0: CharSequence): Jwt<Object, Object>;
     parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: JwtHandler<T>): T;
     // private parse(arg0: CharSequence, arg1: Payload): Jwt<Object, Object>;
+    parse(arg0: CharSequence, arg1: number, arg2: number): Jwt<Object, Object>;
     parseClaimsJws(arg0: CharSequence): Jws<Claims>;
     parseClaimsJwt(arg0: CharSequence): Jwt<Header, Claims>;
     parseContentJws(arg0: CharSequence): Jws<number[]>;

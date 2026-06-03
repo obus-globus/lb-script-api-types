@@ -5,6 +5,7 @@ export class TruffleStringBuilderFactory$AppendJavaStringUTF16NodeGen extends Tr
     static getUncached(): TruffleStringBuilder$AppendJavaStringUTF16Node;
     private constructor()
     // private state_0_: number;
+    execute(sb: TruffleStringBuilder, a: string): void;
     execute(arg0Value: TruffleStringBuilder, arg1Value: string, arg2Value: number, arg3Value: number): void;
     // private executeAndSpecialize(arg0Value: TruffleStringBuilder, arg1Value: string, arg2Value: number, arg3Value: number): void;
 }

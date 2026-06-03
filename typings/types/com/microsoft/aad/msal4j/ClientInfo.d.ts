@@ -22,6 +22,8 @@ export class ClientInfo extends Object implements JsonSerializable<ClientInfo> {
     toJson(arg0: OutputStream): void;
     toJson(arg0: Writer): void;
     toJson(arg0: JsonWriter): JsonWriter;
+    toJson(arg0: OutputStream): void;
+    toJson(arg0: Writer): void;
     toJsonBytes(): number[];
     toJsonString(): string;
 }

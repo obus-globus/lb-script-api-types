@@ -11,6 +11,7 @@ export class FoxRenderer extends AgeableMobRenderer<Fox, FoxRenderState, FoxMode
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): FoxRenderState;
+    createRenderState(entity: Fox, partialTicks: number): FoxRenderState;
     extractRenderState(entity: Fox, state: FoxRenderState, partialTicks: number): void;
     getTextureLocation(state: FoxRenderState): Identifier;
     setupRotations(state: FoxRenderState, poseStack: PoseStack, bodyRot: number, entityScale: number): void;

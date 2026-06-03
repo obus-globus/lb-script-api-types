@@ -21,6 +21,7 @@ export class RecipeRewriter1_21_2 extends RecipeRewriter1_20_3<ClientboundPacket
     handleCraftingShaped(arg0: PacketWrapper): void;
     handleCraftingShapeless(arg0: PacketWrapper): void;
     handleSimpleRecipe(arg0: PacketWrapper): void;
+    handleSmelting(arg0: PacketWrapper): void;
     handleSmelting(arg0: string, arg1: PacketWrapper): void;
     handleSmithingTransform(arg0: PacketWrapper): void;
     handleSmithingTrim(arg0: PacketWrapper): void;

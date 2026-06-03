@@ -5,6 +5,7 @@ export abstract class Profile extends NodeCloneable {
     constructor()
     disable(): void;
     reset(): void;
+    toString(): string;
     toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;
     toStringDisabled(): string;
 }

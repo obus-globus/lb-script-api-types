@@ -1,5 +1,7 @@
+import type { ConsumerTracking } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/ConsumerTracking.d.ts'
 import type { Identifier } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/core/Identifier.d.ts'
 import type { TextComponent } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/TextComponent.d.ts'
+import type { TextComponent$ComponentConsumer } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/TextComponent$ComponentConsumer.d.ts'
 import type { NbtComponent } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/components/NbtComponent.d.ts'
 import type { ObjectComponent } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/components/ObjectComponent.d.ts'
 import type { ScoreComponent } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/components/ScoreComponent.d.ts'
@@ -36,6 +38,7 @@ export class KeybindComponent extends TextComponent {
     readonly keybind: string;
     // private translator: (param0: string) => kotlin.String;
     asSingleString(): string;
+    asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;
     getKeybind(): string;

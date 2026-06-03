@@ -26,9 +26,11 @@ export class KnotClassLoader extends AbstractSecureClassLoader implements KnotCl
     defineClassFwd(arg0: string, arg1: number[], arg2: number, arg3: number, arg4: CodeSource): Class<Object>;
     definePackageFwd(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: URL): Package;
     findClass(arg0: string): Class<Object>;
+    findClass(arg0: string, arg1: string): Class<Object>;
     findLibrary(arg0: string): string;
     findLoadedClassFwd(arg0: string): Class<Object>;
     findResource(arg0: string): URL;
+    findResource(arg0: string, arg1: string): URL;
     findResourceFwd(arg0: string): URL;
     findResources(arg0: string): Enumeration<URL>;
     getClassLoadingLockFwd(arg0: string): Object;
@@ -37,6 +39,7 @@ export class KnotClassLoader extends AbstractSecureClassLoader implements KnotCl
     getResource(arg0: string): URL;
     getResourceAsStream(arg0: string): InputStream;
     getResources(arg0: string): Enumeration<URL>;
+    loadClass(arg0: string): Class<Object>;
     loadClass(arg0: string, arg1: boolean): Class<Object>;
     resolveClassFwd(arg0: Class<Object>): void;
 }

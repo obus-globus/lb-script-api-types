@@ -11,6 +11,7 @@ import type { Insets } from '../../java/awt/Insets.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
 import type { Rectangle } from '../../java/awt/Rectangle.d.ts'
 import type { ActionListener } from '../../java/awt/event/ActionListener.d.ts'
+import type { FocusEvent$Cause } from '../../java/awt/event/FocusEvent$Cause.d.ts'
 import type { KeyEvent } from '../../java/awt/event/KeyEvent.d.ts'
 import type { MouseEvent } from '../../java/awt/event/MouseEvent.d.ts'
 import type { VetoableChangeListener } from '../../java/beans/VetoableChangeListener.d.ts'
@@ -95,6 +96,7 @@ export abstract class JComponent extends Container implements Serializable, Tran
     compWriteObjectNotify(): void;
     componentInputMapChanged(arg0: ComponentInputMap): void;
     computeVisibleRect(arg0: Rectangle): void;
+    contains(arg0: Point): boolean;
     contains(arg0: number, arg1: number): boolean;
     createToolTip(): JToolTip;
     // private deregisterNextFocusableComponent(): void;
@@ -102,8 +104,15 @@ export abstract class JComponent extends Container implements Serializable, Tran
     dndDone(): void;
     dropLocationForPoint(arg0: Point): TransferHandler$DropLocation;
     enable(): void;
+    enable(arg0: boolean): void;
+    firePropertyChange(arg0: string, arg1: Object, arg2: Object): void;
     firePropertyChange(arg0: string, arg1: boolean, arg2: boolean): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
     firePropertyChange(arg0: string, arg1: string, arg2: string): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
+    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
     firePropertyChange(arg0: string, arg1: number, arg2: number): void;
     fireVetoableChange(arg0: string, arg1: Object, arg2: Object): void;
     getActionForKeyStroke(arg0: KeyStroke): ActionListener;
@@ -117,6 +126,7 @@ export abstract class JComponent extends Container implements Serializable, Tran
     getBaseline(arg0: number, arg1: number): number;
     getBaselineResizeBehavior(): Component$BaselineResizeBehavior;
     getBorder(): Border;
+    getBounds(): Rectangle;
     getBounds(arg0: Rectangle): Rectangle;
     // private getClientProperties(): ArrayTable;
     getClientProperty(arg0: Object): Object;
@@ -137,6 +147,7 @@ export abstract class JComponent extends Container implements Serializable, Tran
     getInsets(): Insets;
     getInsets(arg0: Insets): Insets;
     getListeners(arg0: Class<T>): T[];
+    getLocation(): Point;
     getLocation(arg0: Point): Point;
     getMaximumSize(): Dimension;
     getMinimumSize(): Dimension;
@@ -146,6 +157,7 @@ export abstract class JComponent extends Container implements Serializable, Tran
     getPreferredSize(): Dimension;
     getRegisteredKeyStrokes(): KeyStroke[];
     getRootPane(): JRootPane;
+    getSize(): Dimension;
     getSize(arg0: Dimension): Dimension;
     getToolTipLocation(arg0: MouseEvent): Point;
     getToolTipText(): string;
@@ -204,12 +216,18 @@ export abstract class JComponent extends Container implements Serializable, Tran
     removeAncestorListener(arg0: AncestorListener): void;
     removeNotify(): void;
     removeVetoableChangeListener(arg0: VetoableChangeListener): void;
+    repaint(): void;
     repaint(arg0: Rectangle): void;
+    repaint(arg0: number, arg1: number, arg2: number, arg3: number): void;
+    repaint(arg0: number): void;
     repaint(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
     requestDefaultFocus(): boolean;
     requestFocus(): void;
+    requestFocus(arg0: FocusEvent$Cause): void;
     requestFocus(arg0: boolean): boolean;
+    requestFocus(arg0: boolean, arg1: FocusEvent$Cause): boolean;
     requestFocusInWindow(): boolean;
+    requestFocusInWindow(arg0: FocusEvent$Cause): boolean;
     requestFocusInWindow(arg0: boolean): boolean;
     resetKeyboardActions(): void;
     reshape(arg0: number, arg1: number, arg2: number, arg3: number): void;

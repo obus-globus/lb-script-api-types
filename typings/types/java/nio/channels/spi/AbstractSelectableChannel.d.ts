@@ -25,6 +25,7 @@ export abstract class AbstractSelectableChannel extends SelectableChannel {
     isRegistered(): boolean;
     keyFor(arg0: Selector): SelectionKey;
     provider(): SelectorProvider;
+    register(arg0: Selector, arg1: number): SelectionKey;
     register(arg0: Selector, arg1: number, arg2: Object): SelectionKey;
     removeKey(arg0: SelectionKey): void;
 }

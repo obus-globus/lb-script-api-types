@@ -17,6 +17,7 @@ export class EnumProperty<T extends Enum<T> & StringRepresentable> extends Prope
     equals(o: Object | null): boolean;
     generateHashCode(): number;
     getInternalIndex(value: T): number;
+    getName(): string;
     getName(value: T): string;
     getPossibleValues(): T[];
     getValue(name: string): Optional<T>;

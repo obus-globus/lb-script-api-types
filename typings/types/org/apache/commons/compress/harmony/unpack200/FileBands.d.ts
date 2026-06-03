@@ -18,4 +18,5 @@ export class FileBands extends BandSet {
     processFileBits(): void;
     read(arg0: InputStream): void;
     unpack(): void;
+    unpack(arg0: InputStream): void;
 }

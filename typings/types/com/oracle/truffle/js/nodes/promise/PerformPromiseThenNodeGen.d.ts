@@ -11,5 +11,6 @@ export class PerformPromiseThenNodeGen extends PerformPromiseThenNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
+    execute(promise: JSPromiseObject, onFulfilled: Object, onRejected: Object): JSDynamicObject;
     execute(arg0Value: JSPromiseObject, arg1Value: Object, arg2Value: Object, arg3Value: PromiseCapabilityRecord): JSDynamicObject;
 }

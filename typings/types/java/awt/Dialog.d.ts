@@ -86,6 +86,7 @@ export class Dialog extends Window {
     setVisible(arg0: boolean): void;
     shouldBlock(arg0: Window): boolean;
     show(): void;
+    show(arg0: boolean): void;
     toBack(): void;
     unblockWindow(arg0: Window): void;
 }

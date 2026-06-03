@@ -1,4 +1,3 @@
-import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 import type { Value } from '../../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { Mode } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
@@ -27,7 +26,7 @@ export abstract class ToggleableValueGroup extends ValueGroup implements EventLi
     readonly running: boolean;
     children(): EventListener[];
     protected choices<T extends Mode>(name: string, active: T, choices: T[]): ModeValueGroup<T>;
-    protected choices(name: string, activeIndex: number, choicesCallback: Function1<ModeValueGroup<T>, T[]>): ModeValueGroup<T>;
+    protected choices(name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     onDisabled(): void;
     onEnabled(): void;
     onEnabledValueRegistration(value: Value<boolean>): Value<boolean>;

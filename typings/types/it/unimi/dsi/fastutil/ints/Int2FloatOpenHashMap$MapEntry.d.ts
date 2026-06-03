@@ -32,6 +32,8 @@ export class Int2FloatOpenHashMap$MapEntry extends Object implements Int2FloatMa
     left(arg0: number): IntFloatPair;
     left(arg0: number): IntFloatPair;
     leftInt(): number;
+    right(): number;
+    right(arg0: number): IntFloatPair;
     right(arg0: number): IntFloatPair;
     right(): number;
     right(arg0: number): IntFloatPair;

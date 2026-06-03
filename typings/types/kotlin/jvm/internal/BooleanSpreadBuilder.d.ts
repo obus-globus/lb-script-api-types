@@ -5,4 +5,5 @@ export class BooleanSpreadBuilder extends PrimitiveSpreadBuilder<(Object | null)
     // private values: (Object | null)[];
     add(value: boolean): void;
     toArray(): (Object | null)[];
+    protected toArray(values: (Object | null)[], result: (Object | null)[]): (Object | null)[];
 }
