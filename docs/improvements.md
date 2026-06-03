@@ -11,6 +11,8 @@ Everything below is generated/applied **automatically on every regen** (see
 [`README`](../README.md) / [`run-regen.sh`](../run-regen.sh)) unless marked otherwise,
 so it stays in sync as LiquidBounce evolves.
 
+For what's **still on the table**, see [backlog.md](backlog.md).
+
 ## At a glance
 
 | Area | Improvement | Layer |
