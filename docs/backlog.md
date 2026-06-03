@@ -80,9 +80,19 @@ tree-sitter extractor can.
   source type is already captured in `signatures.json` - the remaining work is
   the Kotlin->TS type map + import resolution (the type-substitution item under
   #12b). _Layer: post-patch/generator._
-- **[ ] W7 - nullable over-promotion.** **69,718** `| null` unions (verified), many spurious.
-  Drive nullability from `KType.isMarkedNullable` in the generator (reflection is
-  available in LB's GraalVM context) rather than guessing. _Layer: generator._
+- **[x] W7 - nullable over-promotion - RESOLVED (not a standalone fix).**
+  Re-investigated 2026-06-04: the audit's premise is **stale**. The generator
+  *already* drives nullability from `KType.isMarkedNullable`, so LiquidBounce's
+  genuine Kotlin nullables (`Vec3 | null`, `Entity | null`, ~2,800 of them) are
+  **already correct** and must not be touched. Of the 69,718 `| null`, **66,881
+  (96%) are `Object | null`** - a *type-erasure* artifact (generics / `Any?`
+  collapsing to the `Object` root type), and `Object` itself is in **65,302**
+  third-party sites scripts never import. So there is no safe standalone W7
+  change: stripping real nullables is unsound, and blanket-collapsing
+  `Object | null` is unsafe in parameter position (it would reject valid `null`
+  args). The erasure is a **W6 symptom** - recovering the real type (W6 /
+  #12b substitution, and the W5a function-arrow work already shipped) removes
+  the `Object` *and* its spurious `| null` together. **Subsumed by W6.**
 - **[ ] W8 - sealed-class hierarchies.** 69 sealed Kotlin types flatten to plain
   classes -> **0** discriminated unions in the tree (verified). Detect `Modality.SEALED` and emit
   `type X = A | B | C` so `when`-style narrowing works. _Layer: generator._
