@@ -7,8 +7,8 @@ import type { ItemSlot } from '../../../../../net/ccbluex/liquidbounce/utils/inv
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class InventoryAction$Creative extends Record implements InventoryAction {
     static Companion: InventoryAction$Creative$Companion;
-    static performFillSlot(paramarg0: ItemStack, paramarg1: ItemSlot): InventoryAction$Creative;
-    static performThrow(paramarg0: ItemStack): InventoryAction$Creative;
+    static performFillSlot(itemStack: ItemStack, slot: ItemSlot): InventoryAction$Creative;
+    static performThrow(itemStack: ItemStack): InventoryAction$Creative;
     constructor(itemStack: ItemStack, slot: ItemSlot | null)
     // private itemStack: ItemStack;
     /*not mapped: */ itemStack(): ItemStack;

@@ -10,7 +10,7 @@ export class ModuleCategories extends Object {
     static PLAYER: ModuleCategory;
     static RENDER: ModuleCategory;
     static WORLD: ModuleCategory;
-    static byName(paramarg0: string): ModuleCategory;
+    static byName(name: string): ModuleCategory;
     static getEntries(): E[];
     COMBAT: ModuleCategory;
     EXPLOIT: ModuleCategory;

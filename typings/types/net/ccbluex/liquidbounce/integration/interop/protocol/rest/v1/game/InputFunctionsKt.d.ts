@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Node } from '../../../../../../../../../net/ccbluex/netty/http/rest/Node.d.ts'
 export class InputFunctionsKt extends Object {
-    static inputRoutes(paramarg0: Node): void;
+    static inputRoutes(routing: Node): void;
     /**
      * Keeps track if we are currently typing in a text field
      *

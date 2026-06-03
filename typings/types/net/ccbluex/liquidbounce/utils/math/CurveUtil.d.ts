@@ -22,7 +22,7 @@ export class CurveUtil extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:51}
      */
     static transform(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): number;
-    static transform(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: CurveUtil$OnOutOfBounds): number;
+    static transform(data: (Object | null)[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;
     static transformNormalized$liquidbounce(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: CurveUtil$OnOutOfBounds): number;
     // private calculateBezierY(t: number, p0: Vector2fc, p1: Vector2fc, p2: Vector2fc, p3: Vector2fc): number;
     // private calculateT(xPos: number, leftX: number, rightX: number): number;

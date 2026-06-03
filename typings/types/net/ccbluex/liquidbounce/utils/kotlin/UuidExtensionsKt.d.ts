@@ -6,7 +6,7 @@ export class UuidExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/UuidExtensions.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/UuidExtensions.kt:25}
      */
-    static toByteArray(paramarg0: UUID): number[];
+    static toByteArray(uUID: UUID): number[];
     /**
      * Convert UUID to 16 bytes array and then to MD5 hash
      *
@@ -14,5 +14,5 @@ export class UuidExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/UuidExtensions.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/UuidExtensions.kt:36}
      */
-    static toMD5(paramarg0: UUID): string;
+    static toMD5(uUID: UUID): string;
 }

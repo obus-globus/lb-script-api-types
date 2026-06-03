@@ -7,7 +7,7 @@ import type { BufferedSource } from '../../../../../okio/BufferedSource.d.ts'
 export class FileUtilsKt extends Object {
     static createFont(paramarg0: File, paramarg1: number, paramarg2: Continuation<Object>): Object;
     static createFont(paramarg0: InputStream, paramarg1: number, paramarg2: Continuation<Object>): Object;
-    static ensurePngOrConvertJpeg(paramarg0: BufferedSource): BufferedSource;
+    static ensurePngOrConvertJpeg(bufferedSource: BufferedSource): BufferedSource;
     /**
      * Skips the current line in the file.
      *
@@ -15,5 +15,5 @@ export class FileUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt:33}
      */
-    static skipLine(paramarg0: RandomAccessFile): number;
+    static skipLine(randomAccessFile: RandomAccessFile): number;
 }

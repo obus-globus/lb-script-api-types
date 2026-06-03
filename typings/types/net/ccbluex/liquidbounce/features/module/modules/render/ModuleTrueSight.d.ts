@@ -11,7 +11,7 @@ import type { LivingEntityRenderState } from '../../../../../../../net/minecraft
  */
 export class ModuleTrueSight extends ClientModule {
     static INSTANCE: ModuleTrueSight;
-    static canRenderEntities(paramarg0: LivingEntityRenderState): boolean;
+    static canRenderEntities(state: LivingEntityRenderState): boolean;
     readonly barriers: boolean;
     readonly entities: boolean;
     readonly entityColor: Color4b;

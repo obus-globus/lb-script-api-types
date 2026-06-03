@@ -3,5 +3,5 @@ import type { ItemCooldownsAddition$Entry } from '../../../../../net/ccbluex/liq
 import type { ItemCooldowns } from '../../../../../net/minecraft/world/item/ItemCooldowns.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class SpecialItemExtensionKt extends Object {
-    static getCooldown(paramarg0: ItemCooldowns, paramarg1: ItemStack): ItemCooldownsAddition$Entry;
+    static getCooldown(itemCooldowns: ItemCooldowns, stack: ItemStack): ItemCooldownsAddition$Entry;
 }

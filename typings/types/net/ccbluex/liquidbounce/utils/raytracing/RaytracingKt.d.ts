@@ -18,7 +18,7 @@ export class RaytracingKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt:90}
      */
     static hasLineOfSight(paramarg0: Vec3, paramarg1: Vec3): boolean;
-    static hasLineOfSight(paramarg0: Vec3, paramarg1: Vec3, paramarg2: Entity): boolean;
-    static traceFromPlayer(paramarg0: Rotation, paramarg1: number, paramarg2: ClipContext$Block, paramarg3: boolean, paramarg4: number): BlockHitResult;
-    static traceFromPoint(paramarg0: number, paramarg1: ClipContext$Block, paramarg2: boolean, paramarg3: Vec3, paramarg4: Vec3, paramarg5: Entity): BlockHitResult;
+    static hasLineOfSight(eyes: Vec3, vec3: Vec3, entity: Entity): boolean;
+    static traceFromPlayer(rotation: Rotation, range: number, block: ClipContext$Block, includeFluids: boolean, tickDelta: number): BlockHitResult;
+    static traceFromPoint(range: number, block: ClipContext$Block, includeFluids: boolean, start: Vec3, direction: Vec3, entity: Entity): BlockHitResult;
 }

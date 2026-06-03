@@ -15,6 +15,6 @@ export class LadderClimbStateKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/LadderClimbState.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/LadderClimbState.kt:26}
      */
-    static isLadderClimbState(paramarg0: boolean, paramarg1: boolean, paramarg2: boolean, paramarg3: Direction, paramarg4: boolean, paramarg5: Direction): boolean;
-    static isLadderClimbState(paramarg0: BlockState, paramarg1: BlockState): boolean;
+    static isLadderClimbState(isLadderBlock: boolean, isTrapDoorBlock: boolean, trapDoorOpen: boolean, trapDoorFacing: Direction, lowerIsLadderBlock: boolean, lowerLadderFacing: Direction): boolean;
+    static isLadderClimbState(currentState: BlockState, belowState: BlockState): boolean;
 }

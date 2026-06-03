@@ -12,7 +12,7 @@ export class Vec3f extends Record {
     static Y_AXIS: Vec3f;
     static ZERO: Vec3f;
     static Z_AXIS: Vec3f;
-    static eyeVector(paramarg0: Camera): Vec3f;
+    static eyeVector(camera: Camera): Vec3f;
     constructor(x: number, y: number, z: number)
     constructor(x: number, y: number, z: number)
     constructor(vec: Position)

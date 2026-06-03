@@ -14,7 +14,7 @@ export class PacketExtensionsKt extends Object {
     static getPosition(paramarg0: ServerboundMovePlayerPacket): Vec3;
     static isC2SContainerPacket(paramarg0: Packet<Object>): boolean;
     static isLocalPlayerDamage(paramarg0: Packet<Object>): boolean;
-    static isLocalPlayerVelocity(paramarg0: Packet<Object>): boolean;
+    static isLocalPlayerVelocity(considerExplosion: Packet<Object>): boolean;
     static isLocalPlayerVelocity(paramarg0: Packet<Object>, paramarg1: boolean): boolean;
-    static isMovementYFallDamage(paramarg0: ClientboundSetEntityMotionPacket): boolean;
+    static isMovementYFallDamage(clientboundSetEntityMotionPacket: ClientboundSetEntityMotionPacket): boolean;
 }

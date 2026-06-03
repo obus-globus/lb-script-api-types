@@ -32,7 +32,7 @@ export class InputUtilKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:25}
      */
-    static inputByName(paramarg0: string): InputConstants$Key;
+    static inputByName(name: string): InputConstants$Key;
     /**
      * Checks whether this key is currently pressed.
      *
@@ -53,7 +53,7 @@ export class InputUtilKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:66}
      */
-    static reduceInputName(paramarg0: string): string;
+    static reduceInputName(translationKey: string): string;
     /**
      * Try to parse the key into {@link InputBind.Modifier} instance.
      *
@@ -61,5 +61,5 @@ export class InputUtilKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:100}
      */
-    static toModifierOrNull(paramarg0: InputConstants$Key): InputBind$Modifier;
+    static toModifierOrNull(key: InputConstants$Key): InputBind$Modifier;
 }

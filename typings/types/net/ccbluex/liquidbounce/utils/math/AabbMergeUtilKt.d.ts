@@ -7,5 +7,5 @@ export class AabbMergeUtilKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt:38}
      */
-    static mergeIntersectingAabbsSweep(paramarg0: (Object | null)[]): (Object | null)[];
+    static mergeIntersectingAabbsSweep(items: (Object | null)[]): (Object | null)[];
 }

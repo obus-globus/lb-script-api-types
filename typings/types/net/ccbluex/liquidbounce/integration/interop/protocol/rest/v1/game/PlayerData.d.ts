@@ -11,7 +11,7 @@ import type { GameType } from '../../../../../../../../../net/minecraft/world/le
 import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PlayerData extends Record {
     static Companion: PlayerData$Companion;
-    static fromPlayer(paramarg0: Player): PlayerData;
+    static fromPlayer(player: Player): PlayerData;
     constructor(username: string, uuid: string, dimension: Identifier, position: Vec3, netherPosition: Vec3, blockPosition: BlockPos, velocity: Vec3, selectedSlot: number, gameMode: GameType, health: number, actualHealth: number, maxHealth: number, absorption: number, yaw: number, pitch: number, armor: number, food: number, air: number, maxAir: number, experienceLevel: number, experienceProgress: number, ping: number, effects: MobEffectInstance[], mainHandStack: ItemStack, offHandStack: ItemStack, armorItems: ItemStack[], scoreboard: ScoreboardData | null)
     // private absorption: number;
     /*not mapped: */ absorption(): number;

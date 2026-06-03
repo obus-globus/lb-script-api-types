@@ -774,6 +774,23 @@ else
 fi
 
 # -----------------------------------------------------------------------------
+# #12b — real parameter names. ts-generator emits JVM-erased placeholders
+# (`paramarg0`, `paramarg1`, ...). apply-signatures.py rewrites them to the
+# real source names from the committed signatures manifest, using
+# conservative arity-unique matching (a wrong name is worse than an obvious
+# placeholder, so ambiguous overloads are left untouched). Idempotent.
+# The signatures manifest is committed alongside the extractor so this step
+# is fully offline / reproducible.
+SIGNATURES="$REPO_ROOT/tools/kdoc-extractor/signatures.json"
+SIG_SCRIPT="$REPO_ROOT/tools/regen/apply-signatures.py"
+if [ -f "$SIGNATURES" ] && [ -f "$SIG_SCRIPT" ]; then
+    python3 "$SIG_SCRIPT" "$PKG_ROOT" "$SIGNATURES" || \
+        echo "post-patches: param-name rename failed (non-fatal, continuing)"
+else
+    echo "post-patches: param-name rename skipped (signatures or apply script missing)"
+fi
+
+# -----------------------------------------------------------------------------
 # T-9 — kotlin.Any? nullable-suffix bleed (Issue #10)
 # -----------------------------------------------------------------------------
 # ts-generator emits Kotlin's `Any?` (nullable Any) verbatim, including the

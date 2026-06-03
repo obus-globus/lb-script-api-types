@@ -15,8 +15,8 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
  */
 export class BlockPlacementTargetFindingOptions extends Object {
     static Companion: BlockPlacementTargetFindingOptions$Companion;
-    static leastBlockDistanceToLine(paramarg0: Line): (param0: BlockPos) => kotlin.Boolean;
-    static leastBlockDistanceToPos(paramarg0: Vec3): (param0: BlockPos) => kotlin.Boolean;
+    static leastBlockDistanceToLine(line: Line): (param0: BlockPos) => kotlin.Boolean;
+    static leastBlockDistanceToPos(pos: Vec3): (param0: BlockPos) => kotlin.Boolean;
     constructor(offsetOptions: BlockOffsetOptions, faceHandlingOptions: FaceHandlingOptions, stackToPlaceWith: ItemStack, playerLocationOnPlacement: PlayerLocationOnPlacement)
     readonly faceHandlingOptions: FaceHandlingOptions;
     readonly offsetOptions: BlockOffsetOptions;

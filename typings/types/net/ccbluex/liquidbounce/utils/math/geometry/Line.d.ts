@@ -11,7 +11,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class Line extends Object implements LinearGeometry3 {
     static Companion: Line$Companion;
-    static fromPoints(paramarg0: Vec3, paramarg1: Vec3): Line;
+    static fromPoints(begin: Vec3, end: Vec3): Line;
     constructor(position: Vec3, direction: Vec3)
     readonly anchor: Vec3;
     readonly direction: Vec3;

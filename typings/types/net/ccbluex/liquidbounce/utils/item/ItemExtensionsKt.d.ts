@@ -12,7 +12,7 @@ import type { Enchantment } from '../../../../../net/minecraft/world/item/enchan
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class ItemExtensionsKt extends Object {
-    static canMerge(paramarg0: ItemStack, paramarg1: ItemStack): boolean;
+    static canMerge(itemStack: ItemStack, other: ItemStack): boolean;
     /**
      * Create item with NBT tags
      *
@@ -22,7 +22,7 @@ export class ItemExtensionsKt extends Object {
      */
     static createItem(paramarg0: string, paramarg1: number): ItemStack;
     static createItem(paramarg0: ClientLevel, paramarg1: string): ItemStack;
-    static createSplashPotion(paramarg0: string, paramarg1: (Object | null)[]): ItemStack;
+    static createSplashPotion(name: string, effects: (Object | null)[]): ItemStack;
     static getAttackDamage(paramarg0: ItemStack): number;
     static getAttackSpeed(paramarg0: ItemStack): number;
     /**
@@ -34,13 +34,13 @@ export class ItemExtensionsKt extends Object {
      */
     static getAttributeValue(paramarg0: DataComponentGetter, paramarg1: Holder<Attribute>): number;
     static getAttributeValue(paramarg0: DataComponentGetter, paramarg1: Holder<Attribute>, paramarg2: EquipmentSlot): number;
-    static getAttributeValue(paramarg0: DataComponentGetter, paramarg1: Holder<Attribute>, paramarg2: EquipmentSlot, paramarg3: number): number;
+    static getAttributeValue(dataComponentGetter: DataComponentGetter, attribute: Holder<Attribute>, slot: EquipmentSlot, baseValue: number): number;
     /**
      * Get {@link Block} of inner item if it is {@link BlockItem}, or null if not
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L262 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:262}
      */
-    static getBlock(paramarg0: ItemStack): Block;
+    static getBlock(itemStack: ItemStack): Block;
     /**
      * @see net.minecraft.world.entity.player.Player.getDestroySpeed
      * @see net.minecraft.world.entity.ai.attributes.Attributes.MINING_EFFICIENCY
@@ -48,21 +48,21 @@ export class ItemExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L245 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:245}
      */
-    static getDestroySpeedWithEnchantment(paramarg0: ItemStack, paramarg1: BlockState): number;
+    static getDestroySpeedWithEnchantment(itemStack: ItemStack, state: BlockState): number;
     static getDurability(paramarg0: ItemStack): number;
-    static getOrNull(paramarg0: ResourceKey<Object>): (Object | null)[];
-    static getPotionEffects(paramarg0: ItemStack): MobEffectInstance[];
+    static getOrNull(resourceKey: ResourceKey<Object>): (Object | null)[];
+    static getPotionEffects(itemStack: ItemStack): MobEffectInstance[];
     static getSharpnessDamage(paramarg0: ItemStack): number;
-    static getSharpnessDamage(paramarg0: ItemStack, paramarg1: number): number;
-    static isFullBlock(paramarg0: ItemStack): boolean;
-    static isInteractable(paramarg0: ItemStack): boolean;
+    static getSharpnessDamage(itemStack: ItemStack, level: number): number;
+    static isFullBlock(itemStack: ItemStack): boolean;
+    static isInteractable(itemStack: ItemStack): boolean;
     /**
      * @returns if this item stack has same {@link Item} and {@link net.minecraft.core.component.DataComponentPatch}
 with the other item stack
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:151}
      */
-    static isMergeable(paramarg0: ItemStack, paramarg1: ItemStack): boolean;
+    static isMergeable(itemStack: ItemStack, other: ItemStack): boolean;
     /**
      * Set player inventory item (Creative mode only)
      *
@@ -70,6 +70,6 @@ with the other item stack
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L114 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:114}
      */
-    static setInventoryItemCreative(paramarg0: LocalPlayer, paramarg1: number, paramarg2: ItemStack, paramarg3: boolean): void;
-    static toRegistryEntryOrNull(paramarg0: ResourceKey<Enchantment>): Holder<Enchantment>;
+    static setInventoryItemCreative(localPlayer: LocalPlayer, slot: number, itemStack: ItemStack, animation: boolean): void;
+    static toRegistryEntryOrNull(resourceKey: ResourceKey<Enchantment>): Holder<Enchantment>;
 }

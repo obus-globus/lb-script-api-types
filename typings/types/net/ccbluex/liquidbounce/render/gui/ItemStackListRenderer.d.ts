@@ -14,7 +14,7 @@ export class ItemStackListRenderer extends Object implements EventListener {
     static INSTANCE: ItemStackListRenderer;
     static create(paramarg0: GuiGraphicsExtractor, paramarg1: ItemStack[]): ItemStackListRenderState;
     static create(paramarg0: GuiGraphicsExtractor, paramarg1: (Object | null)[]): ItemStackListRenderState;
-    static createItemStackForRendering(paramarg0: Block, paramarg1: number): ItemStack;
+    static createItemStackForRendering(block: Block, count: number): ItemStack;
     // private block2Item: Map<Block, Item>;
     // private overlapRearranger: GuiOverlapRearranger;
     // private overlayRenderHandler: EventHook<OverlayRenderEvent>;

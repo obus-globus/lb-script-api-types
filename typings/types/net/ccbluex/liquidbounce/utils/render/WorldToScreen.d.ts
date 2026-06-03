@@ -16,12 +16,12 @@ import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 export class WorldToScreen extends Object {
     static INSTANCE: WorldToScreen;
     static calculateMouseRay(paramarg0: Vec2): Line;
-    static calculateMouseRay(paramarg0: Vec2, paramarg1: Vec3): Line;
+    static calculateMouseRay(posOnScreen: Vec2, cameraPos: Vec3): Line;
     static calculateScreenPos(paramarg0: Vec3): Vec3f;
-    static calculateScreenPos(paramarg0: Vec3, paramarg1: Vec3): Vec3f;
+    static calculateScreenPos(pos: Vec3, cameraPos: Vec3): Vec3f;
     static calculateScreenRect(paramarg0: AABB): Rect;
-    static calculateScreenRect(paramarg0: AABB, paramarg1: Vec3): Rect;
-    static setMatrices(paramarg0: Matrix4fc, paramarg1: Matrix4fc, paramarg2: Vec3): void;
+    static calculateScreenRect(box: AABB, cameraPos: Vec3): Rect;
+    static setMatrices(projectionMatrix: Matrix4fc, modelViewMatrix: Matrix4fc, cameraPos: Vec3): void;
     // private cacheMat4f: Matrix4f;
     // private cacheVec3f: Vector3f;
     // private cachedCameraPos: Vec3;

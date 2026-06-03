@@ -13,7 +13,7 @@ export class ErrorHandler extends Object {
     static fatal(paramarg0: Throwable): void;
     static fatal(paramarg0: Throwable, paramarg1: QuickFix): void;
     static fatal(paramarg0: Throwable, paramarg1: QuickFix, paramarg2: boolean): void;
-    static fatal(paramarg0: Throwable, paramarg1: QuickFix, paramarg2: boolean, paramarg3: string): void;
+    static fatal(error: Throwable, quickFix: QuickFix, needToReport: boolean, additionalMessage: string): void;
     private constructor(error: Throwable, quickFix: QuickFix | null, additionalMessage: string | null, needToReport: boolean)
     // private additionalMessage: string | null;
     // private builder: StringBuilder;

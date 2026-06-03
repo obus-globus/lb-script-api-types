@@ -9,9 +9,9 @@ export class MathExtensionsKt extends Object {
     static fastSin(paramarg0: number): number;
     static floorToInt(paramarg0: number): number;
     static floorToInt(paramarg0: number): number;
-    static high32(paramarg0: number): number;
-    static longFrom32(paramarg0: number, paramarg1: number): number;
-    static low32(paramarg0: number): number;
+    static high32(long: number): number;
+    static longFrom32(high: number, low: number): number;
+    static low32(long: number): number;
     /**
      * Rounds the given number to the specified decimal place (the first by default).
      * For additional info see [RoundingMode#HALF_UP].
@@ -30,5 +30,5 @@ export class MathExtensionsKt extends Object {
     static toDegrees(paramarg0: number): number;
     static toRadians(paramarg0: number): number;
     static toRadians(paramarg0: number): number;
-    static vector2f(paramarg0: number, paramarg1: number): Vector2f;
+    static vector2f(float: number, other: number): Vector2f;
 }

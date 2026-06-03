@@ -14,12 +14,12 @@ export class InventoryAction$Click extends Record implements InventoryAction {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt:107}
      */
-    static performMergeStack(paramarg0: AbstractContainerScreen<Object>, paramarg1: ItemSlot): InventoryAction$Click[];
-    static performPickup(paramarg0: AbstractContainerScreen<Object>, paramarg1: ItemSlot): InventoryAction$Click;
-    static performPickupAll(paramarg0: AbstractContainerScreen<Object>, paramarg1: ItemSlot): InventoryAction$Click;
-    static performQuickMove(paramarg0: AbstractContainerScreen<Object>, paramarg1: ItemSlot): InventoryAction$Click;
-    static performSwap(paramarg0: AbstractContainerScreen<Object>, paramarg1: ItemSlot, paramarg2: HotbarItemSlot): InventoryAction$Click;
-    static performThrow(paramarg0: AbstractContainerScreen<Object>, paramarg1: ItemSlot): InventoryAction$Click;
+    static performMergeStack(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click[];
+    static performPickup(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
+    static performPickupAll(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
+    static performQuickMove(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
+    static performSwap(screen: AbstractContainerScreen<Object>, from: ItemSlot, to: HotbarItemSlot): InventoryAction$Click;
+    static performThrow(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
     constructor(screen: AbstractContainerScreen<Object> | null, slot: ItemSlot, button: number, actionType: ContainerInput)
     // private actionType: ContainerInput;
     /*not mapped: */ actionType(): ContainerInput;

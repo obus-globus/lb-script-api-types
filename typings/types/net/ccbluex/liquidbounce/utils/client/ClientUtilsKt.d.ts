@@ -6,19 +6,19 @@ export class ClientUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:40}
      */
-    static browseUrl(paramarg0: string): void;
+    static browseUrl(url: string): void;
     /**
      * Get a {@link Logger} with client name prefix
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:27}
      */
-    static clientLogger(paramarg0: string): Logger;
+    static clientLogger(name: string): Logger;
     /**
      * Get environment variable or system property.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:45}
      */
-    static env(paramarg0: string, paramarg1: string): string;
+    static env(name: string, property: string): string;
     static getClientStartDurationMs(): number;
     static getInGame(): boolean;
     static getLogger(): Logger;

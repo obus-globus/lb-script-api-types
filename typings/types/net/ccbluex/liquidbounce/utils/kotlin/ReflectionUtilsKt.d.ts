@@ -10,5 +10,5 @@ export class ReflectionUtilsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ReflectionUtils.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ReflectionUtils.kt:31}
      */
     static isNotRoot(paramarg0: Class<Object>): boolean;
-    static toFullString(paramarg0: Type): string;
+    static toFullString(type: Type): string;
 }

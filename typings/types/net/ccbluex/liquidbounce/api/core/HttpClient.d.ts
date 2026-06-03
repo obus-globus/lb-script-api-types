@@ -26,7 +26,7 @@ export class HttpClient extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:165}
      */
     static getClient(): OkHttpClient;
-    static sendAsync(paramarg0: Call): CompletableFuture<Response>;
+    static sendAsync(call: Call): CompletableFuture<Response>;
     DEFAULT_AGENT: string;
     EMPTY_HEADERS: Pair<string, string>[];
     // private client: OkHttpClient;

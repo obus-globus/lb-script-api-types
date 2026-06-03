@@ -11,12 +11,12 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
 import type { Function1 } from '../../../../../../kotlin/jvm/functions/Function1.d.ts'
 export class GsonExtensionsKt extends Object {
-    static deserialize(paramarg0: JsonDeserializationContext, paramarg1: JsonElement): Object | null;
-    static getOrNull(paramarg0: JsonElement[], paramarg1: number): JsonElement;
-    static jsonArray(paramarg0: number, paramarg1: Function1<Object, void>): JsonElement[];
-    static jsonArrayOf(paramarg0: (Object | null)[]): JsonElement[];
-    static jsonObject(paramarg0: Function1<Object, void>): JsonObject;
-    static parseTree(paramarg0: JsonReader): JsonElement;
+    static deserialize(jsonDeserializationContext: JsonDeserializationContext, json: JsonElement): Object | null;
+    static getOrNull(jsonArray: JsonElement[], index: number): JsonElement;
+    static jsonArray(initialCapacity: number, builderAction: Function1<Object, void>): JsonElement[];
+    static jsonArrayOf(elements: (Object | null)[]): JsonElement[];
+    static jsonObject(builderAction: Function1<Object, void>): JsonObject;
+    static parseTree(jsonReader: JsonReader): JsonElement;
     /**
      * Read JSON content
      *
@@ -25,5 +25,5 @@ export class GsonExtensionsKt extends Object {
     static readJson(paramarg0: File, paramarg1: Charset): Object | null;
     static readJson(paramarg0: InputStream, paramarg1: Charset): Object | null;
     static readJson(paramarg0: Reader, paramarg1: Gson): Object | null;
-    static readJson(paramarg0: CharSequence): Object | null;
+    static readJson(charSequence: CharSequence): Object | null;
 }

@@ -6,7 +6,7 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 import type { ChargedProjectiles } from '../../../../../../net/minecraft/world/item/component/ChargedProjectiles.d.ts'
 export class HeldItemTrajectoryResolver extends Object {
     static INSTANCE: HeldItemTrajectoryResolver;
-    static resolveHeldItemPrimaryShot(paramarg0: Player, paramarg1: ItemStack, paramarg2: boolean): TrajectoryDescriptor;
+    static resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor;
     /**
      * Resolves one or more rendered trajectory shots for held items.
      *
@@ -22,7 +22,7 @@ export class HeldItemTrajectoryResolver extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt:42}
      */
-    static resolveHeldItemShots(paramarg0: Player, paramarg1: ItemStack, paramarg2: boolean, paramarg3: boolean): TrajectoryShotDescriptor[];
+    static resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[];
     // private getShotYawOffsets(shotCount: number): number[];
     // private isCrossbowFirework(chargedProjectiles: ChargedProjectiles | null): boolean;
     resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor | null;

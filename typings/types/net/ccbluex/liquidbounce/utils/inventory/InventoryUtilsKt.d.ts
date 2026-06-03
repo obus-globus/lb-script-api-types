@@ -21,18 +21,18 @@ export class InventoryUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:89}
      */
-    static findBestToolToMineBlock(paramarg0: (Object | null)[], paramarg1: BlockState, paramarg2: boolean, paramarg3: (param0: ItemStack, param1: BlockState) => kotlin.Boolean): Object | null;
-    static findBlocksEndingWith(paramarg0: (Object | null)[]): Block[];
+    static findBestToolToMineBlock(iterable: (Object | null)[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => kotlin.Boolean): Object | null;
+    static findBlocksEndingWith(targets: (Object | null)[]): Block[];
     static findEmptyStorageSlotsInInventory(): ItemSlot[];
-    static findItemsInContainer(paramarg0: AbstractContainerScreen<Object>): ContainerItemSlot[];
+    static findItemsInContainer(abstractContainerScreen: AbstractContainerScreen<Object>): ContainerItemSlot[];
     static findNonEmptySlotsInInventory(): ItemSlot[];
     static findNonEmptyStorageSlotsInInventory(): ItemSlot[];
-    static getSlotsInContainer(paramarg0: AbstractContainerScreen<Object>): ContainerItemSlot[];
+    static getSlotsInContainer(abstractContainerScreen: AbstractContainerScreen<Object>): ContainerItemSlot[];
     static getTypeOrNull(paramarg0: AbstractContainerMenu): MenuType<Object>;
     static hasInventorySpace(): boolean;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number, paramarg3: number): InteractionResult;
-    static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number, paramarg3: number, paramarg4: number): InteractionResult;
+    static useHotbarSlotOrOffhand(slot: EventListener, ticksUntilReset: HotbarItemSlot, yRot: number, xRot: number, swingMode: number): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: SwingMode): InteractionResult;
 }

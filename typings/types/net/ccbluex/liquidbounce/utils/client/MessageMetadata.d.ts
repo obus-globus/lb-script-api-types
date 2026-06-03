@@ -17,8 +17,8 @@ import type { MessageMetadata$Companion } from '../../../../../net/ccbluex/liqui
  */
 export class MessageMetadata extends Record {
     static Companion: MessageMetadata$Companion;
-    static byCommand(paramarg0: Command): MessageMetadata;
-    static byModule(paramarg0: ClientModule): MessageMetadata;
+    static byCommand(command: Command): MessageMetadata;
+    static byModule(module: ClientModule): MessageMetadata;
     constructor(prefix: boolean, id: string | null, remove: boolean, count: number)
     // private count: number;
     /*not mapped: */ count(): number;

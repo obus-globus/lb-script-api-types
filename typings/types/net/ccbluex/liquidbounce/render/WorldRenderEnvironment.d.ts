@@ -31,8 +31,8 @@ export class WorldRenderEnvironment extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L344 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:344}
      */
-    static beginWorldFrame(paramarg0: RenderTarget, paramarg1: PoseStack, paramarg2: Camera): void;
-    static create(paramarg0: RenderTarget, paramarg1: PoseStack, paramarg2: Camera): WorldRenderEnvironment;
+    static beginWorldFrame(renderTarget: RenderTarget, eventPoseStack: PoseStack, camera: Camera): void;
+    static create(renderTarget: RenderTarget, poseStack: PoseStack, camera: Camera): WorldRenderEnvironment;
     /**
      * Flushes and clears world-frame scoped rendering context.
      *

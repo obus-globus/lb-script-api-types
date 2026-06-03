@@ -37,8 +37,8 @@ export class InputBind$BindAction extends Enum<InputBind$BindAction> implements 
     static TOGGLE: InputBind$BindAction;
     static getEntries(): InputBind$BindAction[];
     static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
-    static of(paramarg0: string): InputBind$BindAction;
-    static of(paramarg0: string): Tagged;
+    static of(string: string): InputBind$BindAction;
+    static of(string: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InputBind$BindAction;
     static values(): (Object | null)[];

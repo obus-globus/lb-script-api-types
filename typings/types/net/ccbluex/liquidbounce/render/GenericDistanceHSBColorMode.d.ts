@@ -12,7 +12,7 @@ export class GenericDistanceHSBColorMode<T extends Object | number | string | bo
     static Companion: Tagged$Companion;
     static Companion: GenericDistanceHSBColorMode$Companion;
     static entity(paramarg0: ModeValueGroup<Object>): GenericDistanceHSBColorMode<Entity>;
-    static entity(paramarg0: ModeValueGroup<Object>, paramarg1: number): GenericDistanceHSBColorMode<Entity>;
+    static entity(parent: ModeValueGroup<Object>, fixedAlpha: number): GenericDistanceHSBColorMode<Entity>;
     constructor(parent: ModeValueGroup<Object>, fixedAlpha: number | null, distanceGetter: (param0: T) => kotlin.Float)
     // private alphaValue: RangedValue<number> | null;
     // private brightness: number;

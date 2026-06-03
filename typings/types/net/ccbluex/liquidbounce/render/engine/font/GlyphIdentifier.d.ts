@@ -4,10 +4,10 @@ import type { FontGlyph } from '../../../../../../net/ccbluex/liquidbounce/rende
 import type { GlyphIdentifier$Companion } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier$Companion.d.ts'
 export class GlyphIdentifier extends Record {
     static Companion: GlyphIdentifier$Companion;
-    static asLong(paramarg0: string, paramarg1: number): number;
-    static asLong(paramarg0: FontGlyph): number;
-    static unpackCodepoint(paramarg0: number): string;
-    static unpackStyle(paramarg0: number): number;
+    static asLong(codepoint: string, style: number): number;
+    static asLong(fontGlyph: FontGlyph): number;
+    static unpackCodepoint(longValue: number): string;
+    static unpackStyle(longValue: number): number;
     constructor(codepoint: string, style: number)
     constructor(longValue: number)
     constructor(fontGlyph: FontGlyph)

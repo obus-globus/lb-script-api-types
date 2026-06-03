@@ -20,8 +20,8 @@ export class StaticGlyphPage extends GlyphPage {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.kt:60}
      */
-    static createGlyphPageWithFittingCharacters(paramarg0: FontGlyph[]): Pair<StaticGlyphPage, Object>;
-    static createGlyphPages(paramarg0: FontGlyph[]): StaticGlyphPage[];
+    static createGlyphPageWithFittingCharacters(chars: FontGlyph[]): Pair<StaticGlyphPage, Object>;
+    static createGlyphPages(chars: FontGlyph[]): StaticGlyphPage[];
     constructor(texture: DynamicTexture, glyphs: Pair<FontId, GlyphRenderInfo>[])
     readonly glyphs: Pair<FontId, GlyphRenderInfo>[];
     readonly texture: DynamicTexture;

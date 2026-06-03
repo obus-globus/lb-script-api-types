@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Node } from '../../../../../../../../../net/ccbluex/netty/http/rest/Node.d.ts'
 export class ScreenFunctionsKt extends Object {
-    static screenRoutes(paramarg0: Node): void;
+    static screenRoutes(routing: Node): void;
 }

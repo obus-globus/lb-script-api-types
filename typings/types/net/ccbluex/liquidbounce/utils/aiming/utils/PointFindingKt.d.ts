@@ -24,14 +24,14 @@ export class PointFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:149}
      */
-    static findVisiblePointFromVirtualEye(paramarg0: Vec3, paramarg1: AABB, paramarg2: number, paramarg3: VisibilityPredicate): Vec3;
+    static findVisiblePointFromVirtualEye(virtualEyes: Vec3, box: AABB, rangeToTest: number, visibilityPredicate: VisibilityPredicate): Vec3;
     /**
      * Creates rotation matrices: The first allows to turn the vec (1.0, 0.0, 0.0) into the given {@link vec}.
      * The second allows to turn the given vec into (1.0, 0.0, 0.0).
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:52}
      */
-    static getRotationMatricesForVec(paramarg0: Vec3): Pair<Matrix3f, Matrix3f>;
+    static getRotationMatricesForVec(vec: Vec3): Pair<Matrix3f, Matrix3f>;
     /**
      * Projects points onto the {@link targetBox}. The points are uniformly distributed from the perspective of {@link virtualEye}.
      *
@@ -39,6 +39,6 @@ export class PointFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:68}
      */
-    static projectPointsOnBox(paramarg0: Vec3, paramarg1: AABB, paramarg2: number, paramarg3: Function1<Object, void>): boolean;
-    static projectPointsOnBox(paramarg0: Vec3, paramarg1: AABB, paramarg2: number): Vec3[];
+    static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number, consumer: Function1<Object, void>): boolean;
+    static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number): Vec3[];
 }

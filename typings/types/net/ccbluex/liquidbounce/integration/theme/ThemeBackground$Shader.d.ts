@@ -19,7 +19,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
  */
 export class ThemeBackground$Shader extends Object implements ThemeBackground {
     static Companion: ThemeBackground$Shader$Companion;
-    static build(paramarg0: ThemeMetadata, paramarg1: Background, paramarg2: string): ThemeBackground$Shader;
+    static build(metadata: ThemeMetadata, background: Background, fragmentShader: string): ThemeBackground$Shader;
     private constructor(metadata: ThemeMetadata, pipeline: RenderPipeline, fshId: Identifier, fragmentShader: string)
     // private background: GpuTexture | null;
     // private backgroundView: GpuTextureView | null;

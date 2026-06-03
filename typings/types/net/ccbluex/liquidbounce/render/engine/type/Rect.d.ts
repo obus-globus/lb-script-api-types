@@ -4,7 +4,7 @@ import type { Rect$Companion } from '../../../../../../net/ccbluex/liquidbounce/
 import type { Vector2f } from '../../../../../../org/joml/Vector2f.d.ts'
 export class Rect extends Record {
     static Companion: Rect$Companion;
-    static of(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): Rect;
+    static of(cx: number, cy: number, w: number, h: number): Rect;
     constructor(x1: number, y1: number, x2: number, y2: number)
     /*not mapped: */ center(): Vector2f;
     /*not mapped: */ cx(): number;

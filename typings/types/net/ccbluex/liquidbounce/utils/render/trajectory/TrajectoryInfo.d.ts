@@ -48,7 +48,7 @@ export class TrajectoryInfo extends Record {
      */
     static WIND_CHARGE: TrajectoryInfo;
     static bowWithUsageDuration(): TrajectoryInfo;
-    static bowWithUsageDuration(paramarg0: number): TrajectoryInfo;
+    static bowWithUsageDuration(usageDurationTicks: number): TrajectoryInfo;
     constructor(gravity: number, hitboxRadius: number, initialVelocity: number, drag: number, dragInWater: number, roll: number, copiesPlayerVelocity: boolean)
     // private copiesPlayerVelocity: boolean;
     /*not mapped: */ copiesPlayerVelocity(): boolean;

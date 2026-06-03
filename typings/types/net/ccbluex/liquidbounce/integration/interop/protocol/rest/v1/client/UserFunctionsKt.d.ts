@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Node } from '../../../../../../../../../net/ccbluex/netty/http/rest/Node.d.ts'
 export class UserFunctionsKt extends Object {
-    static userRoutes(paramarg0: Node): Node;
+    static userRoutes(routing: Node): Node;
 }

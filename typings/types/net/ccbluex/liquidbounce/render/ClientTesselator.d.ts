@@ -6,8 +6,8 @@ import type { Pool } from '../../../../net/ccbluex/fastutil/Pool.d.ts'
 export class ClientTesselator extends Object {
     static INSTANCE: ClientTesselator;
     static Shared: ByteBufferBuilder;
-    static begin(paramarg0: RenderPipeline, paramarg1: E[]): BufferBuilder;
-    static recycleAll(paramarg0: (Object | null)[]): void;
+    static begin(pipeline: RenderPipeline, allocatorInUse: E[]): BufferBuilder;
+    static recycleAll(allocatorInUse: (Object | null)[]): void;
     // private BUFFER_SIZE: number;
     Shared: ByteBufferBuilder;
     // private bufferAllocatorPool: Pool<ByteBufferBuilder>;

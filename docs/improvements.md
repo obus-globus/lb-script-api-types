@@ -21,6 +21,7 @@ For what's **still on the table**, see [backlog.md](backlog.md).
 | | Real `private constructor(...)` (blocks invalid `new`) | generator |
 | | Enum `name()` returns a string-literal **union** of the constants | generator |
 | | Deterministic member/supertype ordering (stable diffs) | generator |
+| **Signatures** | **Real parameter names** - `paramarg0/1...` placeholders renamed to the source names (`formatAvatarUrl(uuid, username)`), recovered from LB source | extractor + post-patch |
 | **Events** | `ScriptModule.on()` gets **one typed overload per LB event (~122)** - autocomplete + typed payloads, instead of `on(string, () => void)` | ts-defgen + post-patch |
 | **API ergonomics** | `registerScript` / `registerModule` typed to the **real runtime contract** (callable / `ScriptModule` callback) | post-patch |
 | | `ScriptSetting` factories take typed **option objects** (`{ name, default, range, ... }`) | post-patch |
@@ -73,6 +74,32 @@ on(event: "playerMove", handler: (e: PlayerMoveEvent) => void): void;
 
 The generic `on(string, ...)` is stripped (`T-10`) so the narrowed overloads
 actually take effect - giving autocomplete of event names and typed payloads.
+
+## Real parameter names (signatures)
+
+ts-generator reflects the JVM class graph, but the JVM erases source parameter
+names, so vanilla surfaces every method as `foo(paramarg0: X, paramarg1: Y)` -
+call sites get no hint what an argument is. A tree-sitter pass over the
+LiquidBounce **source** (`tools/kdoc-extractor/ts-extract.py --signatures-out`)
+recovers the real names into a structured `signatures.json` (ordered params with
+name + type + nullability + vararg, the return type, and the extension receiver),
+and `apply-signatures.py` renames the placeholders in post-processing:
+
+```ts
+// vanilla
+static formatAvatarUrl(paramarg0: UUID, paramarg1: string): string;
+// here
+static formatAvatarUrl(uuid: UUID, username: string): string;
+```
+
+Matching is deliberately conservative - a *wrong* name is worse than an obvious
+placeholder - so a declaration is renamed only when exactly one source overload
+fits its arity; same-arity overloads are left untouched. Extension functions
+place their receiver at `paramarg0`, named after the receiver type
+(`drawBorder(guiGraphicsExtractor, x, y, width, height, color)`). Names are
+TS-reserved-word-safe and verified to add zero `tsc` errors. The captured
+per-param **types** are not yet substituted for bare `Object` reflections - see
+[backlog.md](backlog.md) #12b.
 
 ## API-contract narrowing (post-patch)
 

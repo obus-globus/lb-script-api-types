@@ -17,8 +17,8 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class SimulatedPlayer extends Object implements PlayerSimulation {
     static Companion: SimulatedPlayer$Companion;
-    static fromClientPlayer(paramarg0: SimulatedPlayer$SimulatedPlayerInput): SimulatedPlayer;
-    static fromOtherPlayer(paramarg0: Player, paramarg1: SimulatedPlayer$SimulatedPlayerInput): SimulatedPlayer;
+    static fromClientPlayer(input: SimulatedPlayer$SimulatedPlayerInput): SimulatedPlayer;
+    static fromOtherPlayer(player: Player, input: SimulatedPlayer$SimulatedPlayerInput): SimulatedPlayer;
     constructor(player: Player, input: SimulatedPlayer$SimulatedPlayerInput, pos: Vec3, deltaMovement: Vec3, boundingBox: AABB, yRot: number, xRot: number, isSprinting: boolean, fallDistance: number, jumpTriggerTime: number, jumping: boolean, fallFlying: boolean, onGround: boolean, horizontalCollision: boolean, verticalCollision: boolean, wasTouchingWater: boolean, isSwimming: boolean, wasUnderwater: boolean, fluidInteraction: EntityFluidInteraction)
     boundingBox: AABB;
     readonly clipLedged: boolean;

@@ -322,12 +322,38 @@ def _extract_package(root: Node) -> str:
     return ""
 
 
+def _record_signature(
+    child: Node,
+    member: str,
+    owner: str,
+    rel_file: str,
+    sigs: dict[str, list[dict[str, Any]]],
+    *,
+    params_node_type: str = "function_value_parameters",
+    receiver: Optional[str] = None,
+) -> None:
+    """Append a structured signature record for a function/constructor under
+    `<owner>.<member>` into `sigs`."""
+    params_node = _child_of_type(child, params_node_type)
+    params = _param_records(params_node) if params_node is not None else []
+    rec: dict[str, Any] = {
+        "params": params,
+        "returns": _return_type_str(child),
+        "source": {"file": rel_file, "line": child.start_point[0] + 1},
+    }
+    if receiver:
+        rec["isExtension"] = True
+        rec["receiver"] = receiver
+    sigs.setdefault(f"{owner}.{member}", []).append(rec)
+
+
 def _walk(
     node: Node,
     parent_parts: list[str],
     rel_file: str,
     package: str,
     out: dict[str, list[dict[str, Any]]],
+    sigs: dict[str, list[dict[str, Any]]],
 ) -> None:
     for child in node.children:
         if child.type in DECL_TYPES:
@@ -337,13 +363,25 @@ def _walk(
                 continue
             name = name.strip("`")
 
+            # Signature capture (#12b) — independent of KDoc, keyed by the
+            # FQN ts-generator emits the declaration onto.
+            if kind == "function":
+                recv = _is_function_receiver(child)
+                owner = _owner_fqn(parent_parts, package, rel_file)
+                _record_signature(child, name, owner, rel_file, sigs,
+                                   receiver=recv)
+            elif kind == "constructor":
+                # secondary_constructor — owner is the enclosing class.
+                owner = _owner_fqn(parent_parts, package, rel_file)
+                _record_signature(child, "constructor", owner, rel_file, sigs)
+
             # Companion-object flattening: members live on the parent class
             # namespace in the generated TS.
             if name == "Companion" and kind == "object":
                 # Don't emit "Foo.Companion"; just recurse with parent scope.
                 body = _child_of_type(child, "class_body")
                 if body is not None:
-                    _walk(body, parent_parts, rel_file, package, out)
+                    _walk(body, parent_parts, rel_file, package, out, sigs)
                 continue
 
             # Extension functions on type receivers: re-parent so the FQN
@@ -373,6 +411,12 @@ def _walk(
             if kind in ("class", "object", "interface"):
                 ctor = _child_of_type(child, "primary_constructor")
                 if ctor is not None:
+                    # Primary-constructor signature (#12b): owner is the class.
+                    if _child_of_type(ctor, "class_parameters") is not None:
+                        _record_signature(
+                            ctor, "constructor", fqn, rel_file, sigs,
+                            params_node_type="class_parameters",
+                        )
                     cparams = _child_of_type(ctor, "class_parameters")
                     if cparams is not None:
                         for cp in cparams.children:
@@ -410,15 +454,15 @@ def _walk(
                 if body is None:
                     body = _child_of_type(child, "enum_class_body")
                 if body is not None:
-                    _walk(body, parts, rel_file, package, out)
+                    _walk(body, parts, rel_file, package, out, sigs)
         elif child.type in CONTAINER_TYPES:
-            _walk(child, parent_parts, rel_file, package, out)
+            _walk(child, parent_parts, rel_file, package, out, sigs)
         elif child.type == "companion_object":
             # Companion-object members flatten into the enclosing class
             # namespace (TS generator emits them as statics).
             body = _child_of_type(child, "class_body")
             if body is not None:
-                _walk(body, parent_parts, rel_file, package, out)
+                _walk(body, parent_parts, rel_file, package, out, sigs)
 
 
 def _child_of_type(node: Node, type_name: str) -> Optional[Node]:
@@ -429,12 +473,147 @@ def _child_of_type(node: Node, type_name: str) -> Optional[Node]:
 
 
 # ------------------------------------------------------------------------
+# Signature extraction (T-Doc #12b — real parameter names + types)
+#
+# Independent of KDoc: we capture the structured value-parameter list for
+# *every* function / constructor so the post-patch can rename the generated
+# `paramargN` placeholders back to their real source names. The KDoc manifest
+# (above) is untouched; this is written to a separate signatures file.
+# ------------------------------------------------------------------------
+
+# Type-bearing child node kinds that can follow a `:` in a parameter.
+_TYPE_NODE_TYPES = {
+    "user_type",
+    "nullable_type",
+    "function_type",
+    "parenthesized_type",
+    "nullable_type",
+    "type_reference",
+    "dynamic_type",
+}
+
+
+def _has_vararg(node: Node) -> bool:
+    """True if a `vararg` modifier appears anywhere in this parameter's
+    own subtree (covers class_parameter, where the modifier is nested)."""
+    if node.type == "vararg":
+        return True
+    for c in node.children:
+        if _has_vararg(c):
+            return True
+    return False
+
+
+def _one_param(c: Node) -> dict[str, Any]:
+    """Extract {name, type, nullable, vararg} from a `parameter` /
+    `class_parameter` node. Name is the identifier before the `:`; type is
+    the first type node after it."""
+    name: Optional[str] = None
+    type_node: Optional[Node] = None
+    seen_colon = False
+    for cc in c.children:
+        if cc.type == ":":
+            seen_colon = True
+            continue
+        if not seen_colon:
+            if cc.type == "identifier" and name is None:
+                name = (cc.text.decode("utf-8", "replace") if cc.text else "").strip("`")
+        else:
+            if type_node is None and cc.type not in ("=",):
+                # First non-`=` node after the colon is the declared type.
+                if cc.type in _TYPE_NODE_TYPES or cc.type.endswith("_type"):
+                    type_node = cc
+    type_txt: Optional[str] = None
+    nullable = False
+    if type_node is not None:
+        type_txt = type_node.text.decode("utf-8", "replace") if type_node.text else None
+        nullable = type_node.type == "nullable_type"
+        if type_txt and type_txt.endswith("?"):
+            nullable = True
+    return {
+        "name": name,
+        "type": type_txt,
+        "nullable": nullable,
+        "vararg": _has_vararg(c),
+    }
+
+
+def _param_records(params_node: Node) -> list[dict[str, Any]]:
+    """Walk a `function_value_parameters` / `class_parameters` node and return
+    an ordered list of param dicts. Handles `vararg` emitted as a preceding
+    sibling `parameter_modifiers` node (function params) as well as nested
+    inside the parameter (class params)."""
+    out: list[dict[str, Any]] = []
+    pending_vararg = False
+    for c in params_node.children:
+        if c.type == "parameter_modifiers":
+            if _has_vararg(c) or "vararg" in (
+                c.text.decode("utf-8", "replace") if c.text else ""
+            ):
+                pending_vararg = True
+            continue
+        if c.type in ("parameter", "class_parameter"):
+            rec = _one_param(c)
+            if pending_vararg:
+                rec["vararg"] = True
+            out.append(rec)
+            pending_vararg = False
+    return out
+
+
+def _return_type_str(fn_node: Node) -> Optional[str]:
+    """The declared return type of a function, if any. It is the type node
+    that follows the `)` of the value parameters and a `:`."""
+    children = list(fn_node.children)
+    closed = False
+    seen_colon = False
+    for c in children:
+        if c.type == "function_value_parameters":
+            closed = True
+            continue
+        if not closed:
+            continue
+        if c.type == ":":
+            seen_colon = True
+            continue
+        if seen_colon and (c.type in _TYPE_NODE_TYPES or c.type.endswith("_type")):
+            return c.text.decode("utf-8", "replace") if c.text else None
+        # Once we hit the body / `=` without a type, there is no return type.
+        if c.type in ("function_body", "=", "block"):
+            break
+    return None
+
+
+def _owner_fqn(parent_parts: list[str], package: str, rel_file: str) -> str:
+    """The FQN of the class that ts-generator emits this declaration onto.
+
+    - Member of a class/object/interface -> the enclosing class FQN.
+    - Top-level (file-level) function -> `<package>.<FileBaseName>Kt`
+      (Kotlin compiles file-level functions into a `<File>Kt` class, exactly
+      what ts-generator reflects). `@file:JvmName` would change the class name;
+      in that case the owner simply won't resolve and no rename happens (safe).
+    """
+    if parent_parts:
+        base = ".".join(parent_parts)
+    else:
+        base = Path(rel_file).stem + "Kt"
+    return (package + "." if package else "") + base
+
+
+# ------------------------------------------------------------------------
 # Main
 # ------------------------------------------------------------------------
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--project", required=True, help="Path to LiquidBounce checkout")
-    ap.add_argument("--out", required=True, help="Output manifest.json path")
+    ap.add_argument("--out", default=None,
+                    help="Output KDoc manifest.json path (optional). NOTE: the "
+                         "committed manifest is produced by the Kotlin-PSI "
+                         "extractor; only pass --out if you intend to overwrite "
+                         "it with the tree-sitter variant.")
+    ap.add_argument("--signatures-out", default=None,
+                    help="Output signatures.json path (#12b — real parameter "
+                         "names + types for the paramargN rename post-patch).")
     ap.add_argument(
         "--source-roots",
         nargs="+",
@@ -443,6 +622,10 @@ def main() -> int:
     )
     ap.add_argument("--limit", type=int, default=0, help="Stop after N files (debug)")
     args = ap.parse_args()
+
+    if not args.out and not args.signatures_out:
+        print("FAIL: pass at least one of --out / --signatures-out", file=sys.stderr)
+        return 2
 
     project = Path(args.project).resolve()
     if not project.is_dir():
@@ -461,6 +644,7 @@ def main() -> int:
     print(f"[ts] scanning {len(files)} .kt files under {project}", file=sys.stderr)
 
     out: dict[str, list[dict[str, Any]]] = {}
+    sigs: dict[str, list[dict[str, Any]]] = {}
     files_with_kdoc = 0
     kdocs = 0
     t0 = time.time()
@@ -478,7 +662,7 @@ def main() -> int:
         package = _extract_package(root)
         rel_file = str(path.relative_to(project))
         before = sum(len(v) for v in out.values())
-        _walk(root, [], rel_file, package, out)
+        _walk(root, [], rel_file, package, out, sigs)
         after = sum(len(v) for v in out.values())
         added = after - before
         if added:
@@ -501,20 +685,39 @@ def main() -> int:
         file=sys.stderr,
     )
 
-    # Collapse single-entry lists to scalar dict (manifest historical shape).
-    final: dict[str, Any] = {}
-    for fqn, entries in sorted(out.items()):
-        if len(entries) == 1:
-            final[fqn] = entries[0]
-        else:
-            final[fqn] = entries
+    if args.out:
+        # Collapse single-entry lists to scalar dict (manifest historical shape).
+        final: dict[str, Any] = {}
+        for fqn, entries in sorted(out.items()):
+            if len(entries) == 1:
+                final[fqn] = entries[0]
+            else:
+                final[fqn] = entries
+        Path(args.out).write_text(json.dumps(final, indent=2, ensure_ascii=False) + "\n")
+        print(
+            f"[ts] wrote {len(final)} unique FQNs (from {kdocs} KDocs in "
+            f"{files_with_kdoc} files) → {args.out}",
+            file=sys.stderr,
+        )
 
-    Path(args.out).write_text(json.dumps(final, indent=2, ensure_ascii=False) + "\n")
-    print(
-        f"[ts] wrote {len(final)} unique FQNs (from {kdocs} KDocs in "
-        f"{files_with_kdoc} files) → {args.out}",
-        file=sys.stderr,
-    )
+    if args.signatures_out:
+        total_overloads = sum(len(v) for v in sigs.values())
+        total_params = sum(
+            len(rec.get("params", [])) for v in sigs.values() for rec in v
+        )
+        envelope = {
+            "schemaVersion": 1,
+            "signatures": {fqn: sigs[fqn] for fqn in sorted(sigs)},
+        }
+        Path(args.signatures_out).write_text(
+            json.dumps(envelope, indent=2, ensure_ascii=False) + "\n"
+        )
+        print(
+            f"[ts] wrote signatures for {len(sigs)} members "
+            f"({total_overloads} overloads, {total_params} params) "
+            f"→ {args.signatures_out}",
+            file=sys.stderr,
+        )
     return 0
 
 

@@ -11,7 +11,7 @@ import type { ModuleCustomAmbience$WeatherType } from '../../../../../../../net/
  */
 export class ModuleCustomAmbience extends ClientModule {
     static INSTANCE: ModuleCustomAmbience;
-    static getWorldClockTime(paramarg0: number): number;
+    static getWorldClockTime(original: number): number;
     // private time: ChoiceListValue<ModuleCustomAmbience$TimeType>;
     readonly weather: ChoiceListValue<ModuleCustomAmbience$WeatherType>;
     getWorldClockTime(original: number): number;

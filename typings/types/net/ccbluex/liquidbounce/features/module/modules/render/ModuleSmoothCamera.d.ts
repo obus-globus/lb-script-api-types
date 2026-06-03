@@ -10,7 +10,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  */
 export class ModuleSmoothCamera extends ClientModule {
     static INSTANCE: ModuleSmoothCamera;
-    static cameraUpdate(paramarg0: Vec3): void;
+    static cameraUpdate(pos: Vec3): void;
     static shouldApplyChanges(): boolean;
     // private enableFirstPOV: boolean;
     // private /*not mapped: */ getEnableFirstPOV(): boolean;

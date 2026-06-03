@@ -12,7 +12,7 @@ export class ParameterBuilder<T extends Object | number | string | boolean> exte
     static MODULE_VALIDATOR: Parameter$Verificator<ClientModule>;
     static POSITIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
     static STRING_VALIDATOR: Parameter$Verificator<string>;
-    static begin(paramarg0: string): ParameterBuilder<Object>;
+    static begin(name: string): ParameterBuilder<Object>;
     private constructor(name: string)
     // private autocompletionHandler: AutoCompletionProvider | null;
     // private default: T | null;

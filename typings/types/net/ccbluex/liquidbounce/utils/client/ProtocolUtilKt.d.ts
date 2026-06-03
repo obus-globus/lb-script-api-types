@@ -60,7 +60,7 @@ export class ProtocolUtilKt extends Object {
     static isOlderThanOrEquals1_21_11(): boolean;
     static isOlderThanOrEquals1_7_10(): boolean;
     static openVfpProtocolSelection(): void;
-    static selectProtocolVersion(paramarg0: number): void;
-    static send1_8PlayerInput(paramarg0: number, paramarg1: number, paramarg2: boolean, paramarg3: boolean): void;
-    static send1_8SignUpdate(paramarg0: BlockPos, paramarg1: (Object | null)[]): void;
+    static selectProtocolVersion(protocolId: number): void;
+    static send1_8PlayerInput(sideways: number, forward: number, jumping: boolean, sneaking: boolean): void;
+    static send1_8SignUpdate(blockPos: BlockPos, lines: (Object | null)[]): void;
 }

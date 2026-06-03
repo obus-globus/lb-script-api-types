@@ -19,7 +19,7 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:77}
      */
-    static forEachBlock(paramarg0: LevelChunkSection, paramarg1: Function4<Object, Object, Object, Object, void>): void;
+    static forEachBlock(levelChunkSection: LevelChunkSection, action: Function4<Object, Object, Object, Object, void>): void;
     /**
      * Iterates all blocks in a specific section index and exposes world-space block positions.
      *
@@ -29,9 +29,9 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:56}
      */
-    static forEachSectionBlock(paramarg0: LevelChunk, paramarg1: number, paramarg2: BlockPos$MutableBlockPos, paramarg3: Function2<Object, Object, void>): void;
+    static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: Function2<Object, Object, void>): void;
     static getBedRule(paramarg0: Level): BedRule;
-    static getEntitiesInCuboid(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: Entity, paramarg4: (param0: Entity) => kotlin.Boolean): Entity[];
+    static getEntitiesInCuboid(entityGetter: EntityGetter, midPos: Vec3, range: number, exclusion: Entity, predicate: (param0: Entity) => kotlin.Boolean): Entity[];
     /**
      * Returns the loaded section slice from section 0 through {@link ChunkAccess.highestFilledSectionIndex}.
      *
@@ -52,5 +52,5 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:93}
      */
-    static sectionBottomY(paramarg0: ChunkAccess, paramarg1: number): number;
+    static sectionBottomY(chunkAccess: ChunkAccess, index: number): number;
 }

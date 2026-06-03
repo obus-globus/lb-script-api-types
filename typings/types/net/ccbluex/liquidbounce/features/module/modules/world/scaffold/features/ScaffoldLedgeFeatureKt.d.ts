@@ -4,5 +4,5 @@ import type { ScaffoldLedgeExtension } from '../../../../../../../../../net/ccbl
 import type { Rotation } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { BlockPlacementTarget } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/BlockPlacementTarget.d.ts'
 export class ScaffoldLedgeFeatureKt extends Object {
-    static ledge(paramarg0: BlockPlacementTarget, paramarg1: Rotation, paramarg2: ScaffoldLedgeExtension): LedgeAction;
+    static ledge(target: BlockPlacementTarget, rotation: Rotation, extension: ScaffoldLedgeExtension): LedgeAction;
 }

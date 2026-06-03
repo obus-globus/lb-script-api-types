@@ -27,10 +27,10 @@ export class ClientRenderPipelines extends Object {
     static Quads: RenderPipeline;
     static TexQuads: RenderPipeline;
     static Triangles: RenderPipeline;
-    static outlineQuads(paramarg0: boolean): RenderPipeline;
-    static relativeLines(paramarg0: boolean): RenderPipeline;
-    static relativeQuads(paramarg0: boolean): RenderPipeline;
-    static triangleStrip(paramarg0: boolean): RenderPipeline;
+    static outlineQuads(useColor: boolean): RenderPipeline;
+    static relativeLines(useColor: boolean): RenderPipeline;
+    static relativeQuads(useColor: boolean): RenderPipeline;
+    static triangleStrip(noDepthTest: boolean): RenderPipeline;
     Blend: RenderPipeline;
     // private GradientCircle: RenderPipeline;
     // private GradientCircleNoDepthTest: RenderPipeline;

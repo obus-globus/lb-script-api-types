@@ -6,11 +6,11 @@ export class IdentifierExtensionKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt:26}
      */
-    static clientIdentifier(paramarg0: string): Identifier;
+    static clientIdentifier(path: string): Identifier;
     /**
      * Converts an {@link Identifier} to a human-readable name without localization.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt:32}
      */
-    static toName(paramarg0: Identifier): string;
+    static toName(identifier: Identifier): string;
 }

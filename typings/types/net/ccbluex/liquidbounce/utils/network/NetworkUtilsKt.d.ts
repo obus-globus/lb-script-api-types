@@ -11,28 +11,28 @@ import type { InteractionResult } from '../../../../../net/minecraft/world/Inter
 import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 export class NetworkUtilsKt extends Object {
-    static clickBlockWithSlot(paramarg0: LocalPlayer, paramarg1: BlockHitResult, paramarg2: number, paramarg3: SwingMode, paramarg4: SwitchMode, paramarg5: boolean): void;
-    static handlePacket(paramarg0: Packet<Object>): Object;
-    static releaseUsingItemInTickLoop(paramarg0: MultiPlayerGameMode): void;
+    static clickBlockWithSlot(localPlayer: LocalPlayer, rayTraceResult: BlockHitResult, slot: number, swingMode: SwingMode, switchMode: SwitchMode, sequenced: boolean): void;
+    static handlePacket(packet: Packet<Object>): Object;
+    static releaseUsingItemInTickLoop(multiPlayerGameMode: MultiPlayerGameMode): void;
     /**
      * Sends an open inventory packet with the help of ViaFabricPlus. This is only for older versions. (<= 1.11.2)
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:75}
      */
-    static send1_11_1OpenInventory(paramarg0: ClientCommonPacketListenerImpl): void;
-    static send1_21_5StartSneaking(paramarg0: ClientCommonPacketListenerImpl): void;
-    static send1_21_5StopSneaking(paramarg0: ClientCommonPacketListenerImpl): void;
-    static sendChatOrCommand(paramarg0: ClientPacketListener, paramarg1: string): void;
-    static sendCloseInventory(paramarg0: ClientCommonPacketListenerImpl): void;
-    static sendHeldItemChange(paramarg0: ClientCommonPacketListenerImpl, paramarg1: number): void;
-    static sendPacketSilently(paramarg0: Packet<Object>): void;
-    static sendStartSprinting(paramarg0: ClientCommonPacketListenerImpl): void;
-    static sendStopSprinting(paramarg0: ClientCommonPacketListenerImpl): void;
-    static sendSwapItemWithOffhand(paramarg0: ClientCommonPacketListenerImpl): void;
+    static send1_11_1OpenInventory(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
+    static send1_21_5StartSneaking(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
+    static send1_21_5StopSneaking(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
+    static sendChatOrCommand(clientPacketListener: ClientPacketListener, message: string): void;
+    static sendCloseInventory(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
+    static sendHeldItemChange(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl, slot: number): void;
+    static sendPacketSilently(packet: Packet<Object>): void;
+    static sendStartSprinting(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
+    static sendStopSprinting(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
+    static sendSwapItemWithOffhand(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
     /**
      * {@link MultiPlayerGameMode.useItem} but with custom rotations.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L187 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:187}
      */
-    static useItem(paramarg0: MultiPlayerGameMode, paramarg1: Player, paramarg2: InteractionHand, paramarg3: number, paramarg4: number): InteractionResult;
+    static useItem(multiPlayerGameMode: MultiPlayerGameMode, player: Player, hand: InteractionHand, yRot: number, xRot: number): InteractionResult;
 }

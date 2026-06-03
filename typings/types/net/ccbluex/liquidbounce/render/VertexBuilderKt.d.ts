@@ -14,12 +14,12 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 export class VertexBuilderKt extends Object {
-    static addBoxFaces(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: AABB, paramarg3: Color4b, paramarg4: number): void;
-    static addBoxOutlines(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: AABB, paramarg3: Color4b, paramarg4: number): void;
-    static addShapeFaces(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: VoxelShape, paramarg3: Color4b): void;
-    static addShapeOutlines(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: VoxelShape, paramarg3: Color4b): void;
-    static addShapeSideFaces(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: VoxelShape, paramarg3: Direction, paramarg4: Vec3, paramarg5: Color4b): void;
-    static addShapeSideOutlines(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: VoxelShape, paramarg3: Direction, paramarg4: Vec3, paramarg5: Color4b): void;
+    static addBoxFaces(vertexConsumer: VertexConsumer, pose: Matrix4fc, box: AABB, color: Color4b, verticesToUse: number): void;
+    static addBoxOutlines(vertexConsumer: VertexConsumer, pose: Matrix4fc, box: AABB, color: Color4b, verticesToUse: number): void;
+    static addShapeFaces(vertexConsumer: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, color: Color4b): void;
+    static addShapeOutlines(vertexConsumer: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, color: Color4b): void;
+    static addShapeSideFaces(vertexConsumer: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, side: Direction, hitPos: Vec3, color: Color4b): void;
+    static addShapeSideOutlines(vertexConsumer: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, side: Direction, hitPos: Vec3, color: Color4b): void;
     static addVertex(paramarg0: VertexConsumer, paramarg1: PoseStack$Pose, paramarg2: number, paramarg3: number, paramarg4: number): VertexConsumer;
     static addVertex(paramarg0: VertexConsumer, paramarg1: PoseStack$Pose, paramarg2: Vec3f): VertexConsumer;
     static addVertex(paramarg0: VertexConsumer, paramarg1: PoseStack$Pose, paramarg2: Vec3): VertexConsumer;
@@ -36,7 +36,7 @@ export class VertexBuilderKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
      */
-    static buildMesh(paramarg0: StaticMeshStorage, paramarg1: RenderPipeline, paramarg2: boolean, paramarg3: BlockPos, paramarg4: Function3<Object, Object, Object, void>): void;
-    static setColor(paramarg0: VertexConsumer, paramarg1: Color4b): VertexConsumer;
-    static setNormal(paramarg0: VertexConsumer, paramarg1: PoseStack$Pose, paramarg2: Vec3f): VertexConsumer;
+    static buildMesh(staticMeshStorage: StaticMeshStorage, pipeline: RenderPipeline, rotate: boolean, origin: BlockPos, block: Function3<Object, Object, Object, void>): void;
+    static setColor(vertexConsumer: VertexConsumer, color: Color4b): VertexConsumer;
+    static setNormal(vertexConsumer: VertexConsumer, pose: PoseStack$Pose, normalVector: Vec3f): VertexConsumer;
 }

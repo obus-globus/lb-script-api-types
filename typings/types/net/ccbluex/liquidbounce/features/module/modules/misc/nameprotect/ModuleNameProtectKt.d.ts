@@ -8,5 +8,5 @@ export class ModuleNameProtectKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/ModuleNameProtect.kt#L273 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/ModuleNameProtect.kt:273}
      */
-    static sanitizeForeignInput(paramarg0: Component): Component;
+    static sanitizeForeignInput(component: Component): Component;
 }

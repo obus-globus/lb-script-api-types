@@ -4,7 +4,7 @@ import type { PosteriorSnapshot } from '../../../../../../net/ccbluex/liquidboun
 import type { StrongholdHypothesis } from '../../../../../../net/ccbluex/liquidbounce/utils/world/stronghold/StrongholdHypothesis.d.ts'
 export class StrongholdBayesianEstimator extends Object {
     static INSTANCE: StrongholdBayesianEstimator;
-    static estimate(paramarg0: EyeMeasurement[], paramarg1: StrongholdHypothesis[], paramarg2: number, paramarg3: boolean, paramarg4: number): PosteriorSnapshot;
+    static estimate(measurements: EyeMeasurement[], hypotheses: StrongholdHypothesis[], sigmaDeg: number, requireSameStrongholdAcrossThrows: boolean, topCandidates: number): PosteriorSnapshot;
     // private angleToYaw(fromX: number, fromZ: number, toX: number, toZ: number): number;
     // private chunkCenter(coordinate: number): number;
     estimate(measurements: EyeMeasurement[], hypotheses: StrongholdHypothesis[], sigmaDeg: number, requireSameStrongholdAcrossThrows: boolean, topCandidates: number): PosteriorSnapshot | null;

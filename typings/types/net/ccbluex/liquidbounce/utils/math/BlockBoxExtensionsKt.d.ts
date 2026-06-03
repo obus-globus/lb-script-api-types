@@ -8,19 +8,19 @@ import type { BoundingBox } from '../../../../../net/minecraft/world/level/level
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class BlockBoxExtensionsKt extends Object {
-    static centerOnSide(paramarg0: BoundingBox, paramarg1: Direction): Vec3;
-    static contains(paramarg0: BoundingBox, paramarg1: BoundingBox): boolean;
-    static copy(paramarg0: BoundingBox, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): BoundingBox;
-    static expandToBoundingBox(paramarg0: BlockPos, paramarg1: number, paramarg2: number, paramarg3: number): BoundingBox;
+    static centerOnSide(boundingBox: BoundingBox, side: Direction): Vec3;
+    static contains(boundingBox: BoundingBox, other: BoundingBox): boolean;
+    static copy(boundingBox: BoundingBox, minX: number, minY: number, minZ: number, maxX: number, maxY: number, maxZ: number): BoundingBox;
+    static expandToBoundingBox(blockPos: BlockPos, offsetX: number, offsetY: number, offsetZ: number): BoundingBox;
     static getBoundingBox(paramarg0: BoundingBox): AABB;
     static getBox(paramarg0: BoundingBox): AABB;
     static getFrom(paramarg0: BoundingBox): BlockPos;
     static getSize(paramarg0: BoundingBox): number;
     static getTo(paramarg0: BoundingBox): BlockPos;
-    static iterate(paramarg0: BoundingBox): BlockPos[];
-    static iterator(paramarg0: BoundingBox): Iterator<BlockPos>;
-    static toBlockBox(paramarg0: ChunkPos): BoundingBox;
+    static iterate(boundingBox: BoundingBox): BlockPos[];
+    static iterator(boundingBox: BoundingBox): Iterator<BlockPos>;
+    static toBlockBox(chunkAccess: ChunkPos): BoundingBox;
     static toBlockBox(paramarg0: ChunkPos, paramarg1: number): BoundingBox;
-    static toBlockBox(paramarg0: ChunkPos, paramarg1: number, paramarg2: number): BoundingBox;
-    static toBlockBox(paramarg0: ChunkAccess): BoundingBox;
+    static toBlockBox(chunkPos: ChunkPos, minY: number, maxY: number): BoundingBox;
+    static toBlockBox(chunkAccess: ChunkAccess): BoundingBox;
 }

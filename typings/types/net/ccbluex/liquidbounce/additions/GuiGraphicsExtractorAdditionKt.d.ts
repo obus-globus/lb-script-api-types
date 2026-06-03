@@ -3,8 +3,8 @@ import type { Font } from '../../../../net/minecraft/client/gui/Font.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class GuiGraphicsExtractorAdditionKt extends Object {
-    static drawBorder(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): void;
-    static drawCooldownProgress(paramarg0: GuiGraphicsExtractor, paramarg1: ItemStack, paramarg2: number, paramarg3: number): void;
-    static drawItemBar(paramarg0: GuiGraphicsExtractor, paramarg1: ItemStack, paramarg2: number, paramarg3: number): void;
-    static drawStackCount(paramarg0: GuiGraphicsExtractor, paramarg1: Font, paramarg2: ItemStack, paramarg3: number, paramarg4: number, paramarg5: string): void;
+    static drawBorder(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, width: number, height: number, color: number): void;
+    static drawCooldownProgress(guiGraphicsExtractor: GuiGraphicsExtractor, stack: ItemStack, x: number, y: number): void;
+    static drawItemBar(guiGraphicsExtractor: GuiGraphicsExtractor, stack: ItemStack, x: number, y: number): void;
+    static drawStackCount(guiGraphicsExtractor: GuiGraphicsExtractor, textRenderer: Font, stack: ItemStack, x: number, y: number, stackCountText: string): void;
 }

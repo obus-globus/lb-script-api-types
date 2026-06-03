@@ -16,5 +16,5 @@ export class BuildPagedQueryCommandKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:119}
      */
-    static pagedQuery(paramarg0: CommandBuilder, paramarg1: number, paramarg2: Function1<Object, Object>, paramarg3: Function0<Object>, paramarg4: Function3<Object, Object, Object, Object>): Command;
+    static pagedQuery(commandBuilder: CommandBuilder, pageSize: number, header: Function1<Object, Object>, items: Function0<Object>, eachRow: Function3<Object, Object, Object, Object>): Command;
 }

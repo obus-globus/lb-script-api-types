@@ -19,7 +19,7 @@ export class ModuleBetterChat extends ClientModule {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt#L218 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt:218}
      */
-    static resolveMessageBounds(paramarg0: GuiMessage$Line[], paramarg1: number): { start: number; endInclusive: number; step: number };
+    static resolveMessageBounds(visibleMessages: GuiMessage$Line[], index: number): { start: number; endInclusive: number; step: number };
     antiChatClearPaused: boolean;
     readonly antiClear: boolean;
     // private autoTranslate: ChatReceiveEvent$ChatType[];

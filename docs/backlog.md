@@ -21,25 +21,41 @@ Legend: `[x]` done / `[~]` partial / `[ ]` not started.
 
 ## Keystone - #12b: parameter signature data
 
-> The single highest-ROI change. Do this first.
+> The single highest-ROI change. **Names landed; type substitution still open.**
 
-**[ ] #12b - emit real parameter names + types.** The reflection generator can't
-recover source parameter names (the JVM erases them to `paramarg0/1...`); the PSI
-extractor can. The `kdoc-extractor` manifest *already* has a `params` field - but
-it holds KDoc **`@param` doc text** (`{"x": "the x value"}`), **not** the
-structured parameter **names + types** needed here. Add that (a `signature.params`
-shape) and thread it through `apply-kdoc` / the generator. **Simultaneously
-unblocks W1 + W5 + W6** (>65% of all script-visible declarations) and lays the
-groundwork for W8. _Layer: extractor (+ post-patch / generator)._
+**[~] #12b - emit real parameter names + types.** The reflection generator can't
+recover source parameter names (the JVM erases them to `paramarg0/1...`); the
+tree-sitter extractor can.
+
+- **[x] Names (W1).** `tools/kdoc-extractor/ts-extract.py --signatures-out`
+  emits a structured signature manifest
+  (`tools/kdoc-extractor/signatures.json`: ordered `params[{name,type,nullable,
+  vararg}]`, `returns`, `receiver`/`isExtension`, keyed by the owner FQN
+  ts-generator emits onto). `tools/regen/apply-signatures.py` (wired into
+  `post-patches.sh`) renames `paramargN` -> real names with conservative
+  arity-unique matching (extension functions get their receiver at
+  `paramarg0`). First pass: **628 decls / 1,558 params across 189 files**;
+  verified zero new `tsc` errors. The structured **types** are already captured
+  in the manifest, ready for the substitution pass below.
+- **[ ] Type substitution (W5 + W6).** Use `signatures.json`'s `type` field to
+  replace bare `Object` / `Function*<Object>` params with the real declared
+  type. Needs a Kotlin->TS type map + import resolution (the risky part), so
+  it's deferred from the names pass. Doing this would also let
+  `apply-signatures` disambiguate the **same-arity overloads it currently skips**
+  (188 of them) by matching param types. _Layer: post-patch / generator._
 
 ---
 
 ## Tier 1 - UX-blocking
 
-- **[ ] W1 - `paramargN` parameter names.** **289,132 occurrences across 12,314
-  files** (verified). ~70% of files.
-  Params surface as `paramarg0`, `paramarg1`... instead of their real names, so
-  call sites get no hint what an argument is. _Unblocked by #12b. Layer: extractor -> generator/post-patch._
+- **[~] W1 - `paramargN` parameter names.** Originally **289,132 occurrences
+  across 12,314 files** (~70% of files). **Now landed for LiquidBounce's own
+  source** via `apply-signatures.py` (628 decls renamed; LB-source files with
+  `paramarg` dropped 506 -> 366). The remainder are (a) same-arity overloads
+  left untouched on purpose - see the type-substitution item under #12b - and
+  (b) third-party packages (`com.*`, `org.*`, `oshi.*`, ...) that have no source
+  in `references/`, so their names are unrecoverable. _Done for LB; bounded by
+  source availability. Layer: extractor -> post-patch._
 - **[ ] W2 - `@deprecated` not surfaced.** LB has ~16 `@Deprecated` members; only **1**
   reaches the types - verified (94% loss). Add deprecation to the extractor manifest and
   emit `@deprecated` TSDoc. _Layer: extractor + `apply-kdoc`._
@@ -52,9 +68,12 @@ groundwork for W8. _Layer: extractor (+ post-patch / generator)._
 
 ## Tier 2 - fidelity
 
-- **[ ] W5 - `Function*<Object>` lambda erasure.** **3,376** occurrences (verified). Lambda params/returns erase to `Object`. _Same fix path as W1 (#12b). Layer: generator/extractor._
+- **[ ] W5 - `Function*<Object>` lambda erasure.** **3,376** occurrences (verified). Lambda params/returns erase to `Object`. _Type data now lives in `signatures.json`; same substitution pass as W6 under #12b. Layer: post-patch/generator._
 - **[ ] W6 - bare `Object` returns/params.** **78,340** bare-`Object` occurrences (verified) where reflection
-  fell back to `Object`; prefer the raw declared class. _Layer: generator._
+  fell back to `Object`; prefer the raw declared class. The per-param Kotlin
+  source type is already captured in `signatures.json` - the remaining work is
+  the Kotlin->TS type map + import resolution (the type-substitution item under
+  #12b). _Layer: post-patch/generator._
 - **[ ] W7 - nullable over-promotion.** **69,718** `| null` unions (verified), many spurious.
   Drive nullability from `KType.isMarkedNullable` in the generator (reflection is
   available in LB's GraalVM context) rather than guessing. _Layer: generator._

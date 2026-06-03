@@ -37,13 +37,13 @@ export class Color4b extends Record {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:91}
      */
-    static fromHex(paramarg0: string): Color4b;
+    static fromHex(hex: string): Color4b;
     /**
      * Creates a color with full alpha (255).
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:141}
      */
-    static fullAlpha(paramarg0: number): Color4b;
+    static fullAlpha(rgb: number): Color4b;
     /**
      * Create a color from HSB values.
      *
@@ -56,7 +56,7 @@ export class Color4b extends Record {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:115}
      */
     static ofHSB(paramarg0: number, paramarg1: number, paramarg2: number): Color4b;
-    static ofHSB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): Color4b;
+    static ofHSB(hue: number, saturation: number, brightness: number, alpha: number): Color4b;
     constructor(color: Color)
     constructor(argb: number)
     constructor(r: number, g: number, b: number, a: number)

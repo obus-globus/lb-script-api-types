@@ -10,7 +10,7 @@ export class ResourceExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt:23}
      */
-    static resource(paramarg0: string): InputStream;
+    static resource(path: string): InputStream;
     /**
      * Converts resource to string
      *
@@ -20,5 +20,5 @@ export class ResourceExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt:34}
      */
-    static resourceToString(paramarg0: string): string;
+    static resourceToString(path: string): string;
 }

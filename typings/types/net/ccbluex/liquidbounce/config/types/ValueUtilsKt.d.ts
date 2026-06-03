@@ -8,5 +8,5 @@ export class ValueUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt:43}
      */
-    static toTextureProperty(paramarg0: FileValue, paramarg1: Object | null, paramarg2: boolean): ReadOnlyProperty<Object, DynamicTexture>;
+    static toTextureProperty(fileValue: FileValue, owner: Object | null, printErrorToChat: boolean): ReadOnlyProperty<Object, DynamicTexture>;
 }

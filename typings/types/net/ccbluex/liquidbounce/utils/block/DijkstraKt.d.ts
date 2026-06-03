@@ -10,5 +10,5 @@ export class DijkstraKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt:24}
      */
-    static dijkstraShortestPath(paramarg0: Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean, paramarg2: Function1<Object, Object>, paramarg3: number, paramarg4: number): ShortestPath<Object>;
+    static dijkstraShortestPath(start: Object | null, isGoal: (param0: Object | null) => kotlin.Boolean, neighbors: Function1<Object, Object>, maxIterations: number, maxCost: number): ShortestPath<Object>;
 }

@@ -13,44 +13,44 @@ import type { Vec2 } from '../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Matrix3x2f } from '../../../../org/joml/Matrix3x2f.d.ts'
 import type { Matrix3x2fStack } from '../../../../org/joml/Matrix3x2fStack.d.ts'
 export class Render2DKt extends Object {
-    static copyPose(paramarg0: GuiGraphicsExtractor): Matrix3x2f;
-    static copyPosePooled(paramarg0: GuiGraphicsExtractor): Matrix3x2f;
-    static drawBlitOnCurrentLayer(paramarg0: GuiGraphicsExtractor, paramarg1: TextureSetup, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: RenderPipeline): void;
-    static drawCircle(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: (param0: number) => kotlin.Int): void;
-    static drawCustomElement(paramarg0: GuiGraphicsExtractor, paramarg1: RenderPipeline, paramarg2: TextureSetup, paramarg3: ScreenRectangle, paramarg4: ScreenRectangle, paramarg5: VerticesSetupHandler): void;
-    static drawGlyphOnCurrentLayer(paramarg0: GuiGraphicsExtractor, paramarg1: TextureSetup, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: RenderPipeline): void;
+    static copyPose(guiGraphicsExtractor: GuiGraphicsExtractor): Matrix3x2f;
+    static copyPosePooled(guiGraphicsExtractor: GuiGraphicsExtractor): Matrix3x2f;
+    static drawBlitOnCurrentLayer(guiGraphicsExtractor: GuiGraphicsExtractor, textureSetup: TextureSetup, x0: number, y0: number, x1: number, y1: number, u1: number, v1: number, u2: number, v2: number, argb: number, pipeline: RenderPipeline): void;
+    static drawCircle(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, radius: number, innerRadius: number, colorGetter: (param0: number) => kotlin.Int): void;
+    static drawCustomElement(guiGraphicsExtractor: GuiGraphicsExtractor, pipeline: RenderPipeline, textureSetup: TextureSetup, scissorArea: ScreenRectangle, bounds: ScreenRectangle, verticesSetupHandler: VerticesSetupHandler): void;
+    static drawGlyphOnCurrentLayer(guiGraphicsExtractor: GuiGraphicsExtractor, textureSetup: TextureSetup, x0: number, y0: number, x1: number, y1: number, u1: number, v1: number, u2: number, v2: number, argb: number, pipeline: RenderPipeline): void;
     /**
      * Float version of {@link GuiGraphicsExtractor.drawHorizontalLine}
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L255 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:255}
      */
-    static drawHorizontalLine(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Color4b): void;
-    static drawLines(paramarg0: GuiGraphicsExtractor, paramarg1: number[], paramarg2: number, paramarg3: ScreenRectangle, paramarg4: boolean): void;
-    static drawQuad(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Color4b, paramarg6: Color4b): void;
-    static drawQuadXYWH(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Color4b, paramarg6: Color4b): void;
-    static drawRoundedRect(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: Color4b, paramarg7: Color4b, paramarg8: number): void;
-    static drawTexQuad(paramarg0: GuiGraphicsExtractor, paramarg1: TextureSetup, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: RenderPipeline): void;
-    static drawTriangle(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: Color4b, paramarg8: Color4b, paramarg9: boolean): void;
-    static drawTriangle(paramarg0: GuiGraphicsExtractor, paramarg1: Vec2, paramarg2: Vec2, paramarg3: Vec2, paramarg4: Color4b, paramarg5: Color4b): void;
+    static drawHorizontalLine(guiGraphicsExtractor: GuiGraphicsExtractor, x1: number, x2: number, y: number, thickness: number, color: Color4b): void;
+    static drawLines(guiGraphicsExtractor: GuiGraphicsExtractor, points: number[], argb: number, bounds: ScreenRectangle, cull: boolean): void;
+    static drawQuad(guiGraphicsExtractor: GuiGraphicsExtractor, x1: number, y1: number, x2: number, y2: number, fillColor: Color4b, outlineColor: Color4b): void;
+    static drawQuadXYWH(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, w: number, h: number, fillColor: Color4b, outlineColor: Color4b): void;
+    static drawRoundedRect(guiGraphicsExtractor: GuiGraphicsExtractor, x1: number, y1: number, x2: number, y2: number, radius: number, fillColor: Color4b, outlineColor: Color4b, outlineWidth: number): void;
+    static drawTexQuad(guiGraphicsExtractor: GuiGraphicsExtractor, textureSetup: TextureSetup, x0: number, y0: number, x1: number, y1: number, u1: number, v1: number, u2: number, v2: number, argb: number, pipeline: RenderPipeline): void;
+    static drawTriangle(guiGraphicsExtractor: GuiGraphicsExtractor, x0: number, y0: number, x1: number, y1: number, x2: number, y2: number, fillColor: Color4b, outlineColor: Color4b, cull: boolean): void;
+    static drawTriangle(guiGraphicsExtractor: GuiGraphicsExtractor, p1: Vec2, p2: Vec2, p3: Vec2, fillColor: Color4b, outlineColor: Color4b): void;
     /**
      * Float version of {@link GuiGraphicsExtractor.drawVerticalLine}
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L262 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:262}
      */
-    static drawVerticalLine(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Color4b): void;
+    static drawVerticalLine(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y1: number, y2: number, thickness: number, color: Color4b): void;
     /**
      * @see net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:81}
      */
-    static getBounds(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): ScreenRectangle;
-    static getBounds(paramarg0: GuiGraphicsExtractor, paramarg1: BoundingBox2f): ScreenRectangle;
+    static getBounds(guiGraphicsExtractor: GuiGraphicsExtractor, left: number, top: number, right: number, bottom: number): ScreenRectangle;
+    static getBounds(guiGraphicsExtractor: GuiGraphicsExtractor, box: BoundingBox2f): ScreenRectangle;
     /**
      * @see net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:89}
      */
-    static getBoundsXYWH(paramarg0: GuiGraphicsExtractor, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): ScreenRectangle;
-    static withPush(paramarg0: GuiGraphicsExtractor$ScissorStack, paramarg1: ScreenRectangle, paramarg2: Function1<Object, void>): void;
-    static withPush(paramarg0: Matrix3x2fStack, paramarg1: Function1<Object, void>): void;
+    static getBoundsXYWH(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, w: number, h: number): ScreenRectangle;
+    static withPush(scissorStack: GuiGraphicsExtractor$ScissorStack, rect: ScreenRectangle, block: Function1<Object, void>): void;
+    static withPush(matrix3x2fStack: Matrix3x2fStack, block: Function1<Object, void>): void;
 }

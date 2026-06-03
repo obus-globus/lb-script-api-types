@@ -3,6 +3,6 @@ import type { TrajectoryDescriptor } from '../../../../../../net/ccbluex/liquidb
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class EntityTrajectoryResolver extends Object {
     static INSTANCE: EntityTrajectoryResolver;
-    static resolveEntityTrajectory(paramarg0: Entity, paramarg1: boolean, paramarg2: boolean): TrajectoryDescriptor;
+    static resolveEntityTrajectory(entity: Entity, activeArrows: boolean, activeOthers: boolean): TrajectoryDescriptor;
     resolveEntityTrajectory(entity: Entity, activeArrows: boolean, activeOthers: boolean): TrajectoryDescriptor | null;
 }

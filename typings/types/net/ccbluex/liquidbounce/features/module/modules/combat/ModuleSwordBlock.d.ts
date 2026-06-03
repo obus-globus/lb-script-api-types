@@ -17,7 +17,7 @@ export class ModuleSwordBlock extends ClientModule {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt:61}
      */
     static shouldAnimateSwordBlock(paramarg0: LivingEntity): boolean;
-    static shouldAnimateSwordBlock(paramarg0: LivingEntity, paramarg1: ItemStack): boolean;
+    static shouldAnimateSwordBlock(entity: LivingEntity, mainHandItem: ItemStack): boolean;
     // private alwaysHideShield: boolean;
     // private /*not mapped: */ getAlwaysHideShield(): boolean;
     readonly applyToThirdPersonView: boolean;

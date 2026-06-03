@@ -7,7 +7,7 @@ import type { CommandBuilder$Companion } from '../../../../../../net/ccbluex/liq
 import type { MinecraftShortcuts } from '../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 export class CommandBuilder extends Object implements MinecraftShortcuts {
     static Companion: CommandBuilder$Companion;
-    static begin(paramarg0: string): CommandBuilder;
+    static begin(name: string): CommandBuilder;
     private constructor(name: string)
     // private aliases: string[] | null;
     // private executable: boolean;

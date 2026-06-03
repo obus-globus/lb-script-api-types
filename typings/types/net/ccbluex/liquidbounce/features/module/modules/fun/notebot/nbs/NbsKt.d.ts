@@ -7,5 +7,5 @@ export class NbsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/notebot/nbs/Nbs.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/notebot/nbs/Nbs.kt:24}
      */
-    static readNbsData(paramarg0: BufferedSource): NbsData;
+    static readNbsData(bufferedSource: BufferedSource): NbsData;
 }

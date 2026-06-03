@@ -23,9 +23,9 @@ export class CustomScreenType extends Enum<CustomScreenType> {
     static SINGLEPLAYER: CustomScreenType;
     static TITLE: CustomScreenType;
     static VIAFABRICPLUS_PROTOCOL_SELECTION: CustomScreenType;
-    static byName(paramarg0: string): CustomScreenType;
+    static byName(name: string): CustomScreenType;
     static getEntries(): CustomScreenType[];
-    static recognize(paramarg0: Screen): CustomScreenType;
+    static recognize(screen: Screen): CustomScreenType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomScreenType;
     static values(): (Object | null)[];

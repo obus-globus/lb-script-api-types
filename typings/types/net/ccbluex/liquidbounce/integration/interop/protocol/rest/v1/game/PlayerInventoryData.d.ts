@@ -5,7 +5,7 @@ import type { Player } from '../../../../../../../../../net/minecraft/world/enti
 import type { ItemStack } from '../../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class PlayerInventoryData extends Record {
     static Companion: PlayerInventoryData$Companion;
-    static fromPlayer(paramarg0: Player): PlayerInventoryData;
+    static fromPlayer(player: Player): PlayerInventoryData;
     constructor(armor: ItemStack[], main: ItemStack[], crafting: ItemStack[], enderChest: ItemStack[])
     // private armor: ItemStack[];
     /*not mapped: */ armor(): ItemStack[];

@@ -15,5 +15,5 @@ export class LegacyPacketKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:55}
      */
-    static sendPacket(paramarg0: ClientCommonPacketListenerImpl, paramarg1: LegacyPacket, paramarg2: Function0<void>, paramarg3: Function0<void>): void;
+    static sendPacket(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl, packet: LegacyPacket, onSuccess: Function0<void>, onFailure: Function0<void>): void;
 }

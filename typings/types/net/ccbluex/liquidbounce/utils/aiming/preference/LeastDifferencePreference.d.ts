@@ -7,7 +7,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LeastDifferencePreference extends Object implements RotationPreference {
     static Companion: LeastDifferencePreference$Companion;
     static leastDifferenceToCurrentRotation(): LeastDifferencePreference;
-    static leastDifferenceToLastPoint(paramarg0: Vec3, paramarg1: Vec3): LeastDifferencePreference;
+    static leastDifferenceToLastPoint(eyes: Vec3, point: Vec3): LeastDifferencePreference;
     constructor(baseRotation: Rotation, basePoint: Vec3 | null)
     // private basePoint: Vec3 | null;
     // private baseRotation: Rotation;

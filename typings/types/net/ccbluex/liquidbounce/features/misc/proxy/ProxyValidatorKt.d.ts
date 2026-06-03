@@ -8,5 +8,5 @@ export class ProxyValidatorKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt:79}
      */
-    static check(paramarg0: Proxy, paramarg1: Function1<Object, void>, paramarg2: Function1<Object, void>): Object;
+    static check(proxy: Proxy, success: Function1<Object, void>, failure: Function1<Object, void>): Object;
 }

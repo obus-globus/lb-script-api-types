@@ -7,7 +7,7 @@ import type { MobEffect } from '../../../../../net/minecraft/world/effect/MobEff
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class FallingPlayer extends Object {
     static Companion: FallingPlayer$Companion;
-    static fromPlayer(paramarg0: LocalPlayer): FallingPlayer;
+    static fromPlayer(player: LocalPlayer): FallingPlayer;
     constructor(player: LocalPlayer, x: number, y: number, z: number, motionX: number, motionY: number, motionZ: number, yRot: number)
     // private motionX: number;
     // private motionY: number;

@@ -8,8 +8,8 @@ import type { Item } from '../../../../../../../../net/minecraft/world/item/Item
 import type { ItemStack } from '../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class MobFoodOption extends Record {
     static Companion: MobFoodOption$Companion;
-    static foodNutritionHeal(paramarg0: ItemStack, paramarg1: number): number;
-    static ofBucket(paramarg0: Item): MobFoodOption;
+    static foodNutritionHeal(stack: ItemStack, multiplier: number): number;
+    static ofBucket(item: Item): MobFoodOption;
     constructor(test: (param0: ItemStack) => kotlin.Boolean, healAmount: (param0: ItemStack) => kotlin.Float, isBucket: boolean)
     constructor(tag: TagKey<Item>, healAmount: (param0: ItemStack) => kotlin.Float, isBucket: boolean)
     constructor(item: Item, healAmount: number, isBucket: boolean)

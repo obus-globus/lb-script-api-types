@@ -18,7 +18,7 @@ export class ModuleAntiBlind extends ClientModule {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAntiBlind.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAntiBlind.kt:35}
      */
     static TEXTURE_PUMPKIN_BLUR: Identifier;
-    static canRender(paramarg0: DoRender): boolean;
+    static canRender(choice: DoRender): boolean;
     TEXTURE_PUMPKIN_BLUR: Identifier;
     // private fireOpacity: number;
     // private /*not mapped: */ getFireOpacity(): number;

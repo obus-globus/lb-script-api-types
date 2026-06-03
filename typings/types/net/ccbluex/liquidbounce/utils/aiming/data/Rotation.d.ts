@@ -7,9 +7,9 @@ import type { Quaternionf } from '../../../../../../org/joml/Quaternionf.d.ts'
 export class Rotation extends Record {
     static Companion: Rotation$Companion;
     static ZERO: Rotation;
-    static fromRotationVec(paramarg0: number, paramarg1: number, paramarg2: number): Rotation;
-    static fromRotationVec(paramarg0: Vec3): Rotation;
-    static lookingAt(paramarg0: Vec3, paramarg1: Vec3): Rotation;
+    static fromRotationVec(diffX: number, diffY: number, diffZ: number): Rotation;
+    static fromRotationVec(lookVec: Vec3): Rotation;
+    static lookingAt(point: Vec3, from: Vec3): Rotation;
     constructor(yaw: number, pitch: number, isNormalized: boolean)
     /*not mapped: */ directionVector(): Vec3;
     // private isNormalized: boolean;

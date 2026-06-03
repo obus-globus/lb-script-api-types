@@ -4,9 +4,9 @@ export class ClientRenderPipelines$GUI extends Object {
     static INSTANCE: ClientRenderPipelines$GUI;
     static TexQuadNoCull: RenderPipeline;
     static circleLut(): RenderPipeline;
-    static lines(paramarg0: boolean): RenderPipeline;
+    static lines(cull: boolean): RenderPipeline;
     static roundedRect(): RenderPipeline;
-    static triangles(paramarg0: boolean): RenderPipeline;
+    static triangles(cull: boolean): RenderPipeline;
     // private CircleLut: RenderPipeline;
     // private Lines: RenderPipeline;
     // private LinesNoCull: RenderPipeline;

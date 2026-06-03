@@ -32,24 +32,24 @@ export class RenderExtensionsKt extends Object {
     static asTexture(paramarg0: NativeImage): DynamicTexture;
     static asTexture(paramarg0: NativeImage, paramarg1: string): DynamicTexture;
     static asTexture(paramarg0: NativeImage, paramarg1: () => string): DynamicTexture;
-    static asTextureSetup(paramarg0: GpuTextureView, paramarg1: GpuSampler): TextureSetup;
-    static asView(paramarg0: GpuTexture, paramarg1: number, paramarg2: number): GpuTextureView;
-    static asyncCopyTo(paramarg0: GpuTexture, paramarg1: GpuBuffer, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): CompletableFuture<Object>;
-    static begin(paramarg0: ByteBufferBuilder, paramarg1: RenderPipeline): BufferBuilder;
-    static clearColor(paramarg0: GpuTexture, paramarg1: number): void;
-    static clearColorAndDepth(paramarg0: RenderTarget, paramarg1: number, paramarg2: number): void;
-    static clearDepth(paramarg0: GpuTexture, paramarg1: number): void;
-    static copyFrom(paramarg0: GpuBufferSlice, paramarg1: GpuBufferSlice): void;
-    static copyFrom(paramarg0: GpuTexture, paramarg1: GpuTexture, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number): void;
+    static asTextureSetup(gpuTextureView: GpuTextureView, sampler: GpuSampler): TextureSetup;
+    static asView(gpuTexture: GpuTexture, baseMipLevel: number, mipLevels: number): GpuTextureView;
+    static asyncCopyTo(gpuTexture: GpuTexture, destination: GpuBuffer, offset: number, mipLevel: number, x: number, y: number, width: number, height: number): CompletableFuture<Object>;
+    static begin(byteBufferBuilder: ByteBufferBuilder, pipeline: RenderPipeline): BufferBuilder;
+    static clearColor(gpuTexture: GpuTexture, color: number): void;
+    static clearColorAndDepth(renderTarget: RenderTarget, color: number, depth: number): void;
+    static clearDepth(gpuTexture: GpuTexture, depth: number): void;
+    static copyFrom(gpuBufferSlice: GpuBufferSlice, source: GpuBufferSlice): void;
+    static copyFrom(gpuTexture: GpuTexture, source: GpuTexture, mipLevel: number, intoX: number, intoY: number, sourceX: number, sourceY: number, width: number, height: number): void;
     static copyFully(paramarg0: GpuTexture): GpuTexture;
     static copyFully(paramarg0: GpuTexture, paramarg1: () => string): GpuTexture;
-    static copyFully(paramarg0: GpuTexture, paramarg1: () => string, paramarg2: number): GpuTexture;
-    static copyTo(paramarg0: GpuTexture, paramarg1: GpuBuffer, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: () => void): void;
-    static createUbo(paramarg0: GpuDevice, paramarg1: () => string, paramarg2: Function1<Object, void>): GpuBuffer;
+    static copyFully(gpuTexture: GpuTexture, labelGetter: () => string, usage: number): GpuTexture;
+    static copyTo(gpuTexture: GpuTexture, destination: GpuBuffer, offset: number, mipLevel: number, x: number, y: number, width: number, height: number, callback: () => void): void;
+    static createUbo(gpuDevice: GpuDevice, labelGetter: () => string, std140Size: Function1<Object, void>): GpuBuffer;
     static getTextureSetup(paramarg0: AbstractTexture): TextureSetup;
     static mapBuffer(paramarg0: GpuBuffer, paramarg1: boolean, paramarg2: boolean): GpuBuffer$MappedView;
     static mapBuffer(paramarg0: GpuBufferSlice, paramarg1: boolean, paramarg2: boolean): GpuBuffer$MappedView;
-    static putVec4(paramarg0: Std140Builder, paramarg1: Color4b): Std140Builder;
+    static putVec4(std140Builder: Std140Builder, color: Color4b): Std140Builder;
     /**
      * Read and close source. Accepts JPEG and PNG.
      *
@@ -63,26 +63,26 @@ export class RenderExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L318 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:318}
      */
-    static registerTexture(paramarg0: NativeImage, paramarg1: Identifier): DynamicTexture;
-    static reset(paramarg0: PoseStack): void;
-    static saveToFile(paramarg0: GpuTexture, paramarg1: File): CompletableFuture<Object>;
-    static std140Size(paramarg0: Function1<Object, void>): number;
-    static toBufferedImage(paramarg0: NativeImage): BufferedImage;
-    static toBufferedImage(paramarg0: GpuTexture): CompletableFuture<BufferedImage>;
-    static toBufferedImage(paramarg0: GpuTexture, paramarg1: number): CompletableFuture<BufferedImage>;
-    static toGpuBuffer(paramarg0: ByteBuffer, paramarg1: () => string, paramarg2: number): GpuBuffer;
+    static registerTexture(nativeImage: NativeImage, identifier: Identifier): DynamicTexture;
+    static reset(poseStack: PoseStack): void;
+    static saveToFile(gpuTexture: GpuTexture, file: File): CompletableFuture<Object>;
+    static std140Size(block: Function1<Object, void>): number;
+    static toBufferedImage(nativeImage: NativeImage): BufferedImage;
+    static toBufferedImage(nativeImage: GpuTexture): CompletableFuture<BufferedImage>;
+    static toBufferedImage(gpuTexture: GpuTexture, mipLevel: number): CompletableFuture<BufferedImage>;
+    static toGpuBuffer(byteBuffer: ByteBuffer, labelGetter: () => string, usage: number): GpuBuffer;
     /**
      * @see net.minecraft.client.Screenshot.takeScreenshot
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L225 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:225}
      */
-    static toNativeImage(paramarg0: BufferedImage): NativeImage;
-    static toNativeImage(paramarg0: GpuTexture): CompletableFuture<NativeImage>;
-    static toNativeImage(paramarg0: GpuTexture, paramarg1: number): CompletableFuture<NativeImage>;
-    static uploadRect(paramarg0: DynamicTexture, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): void;
-    static withOutputTextureOverride(paramarg0: GpuTextureView, paramarg1: GpuTextureView, paramarg2: Function0<void>): void;
-    static write(paramarg0: GpuBufferSlice, paramarg1: ByteBuffer): void;
-    static write(paramarg0: GpuTexture, paramarg1: NativeImage, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number): void;
+    static toNativeImage(bufferedImage: BufferedImage): NativeImage;
+    static toNativeImage(bufferedImage: GpuTexture): CompletableFuture<NativeImage>;
+    static toNativeImage(gpuTexture: GpuTexture, mipLevel: number): CompletableFuture<NativeImage>;
+    static uploadRect(dynamicTexture: DynamicTexture, mipLevel: number, x: number, y: number, width: number, height: number): void;
+    static withOutputTextureOverride(color: GpuTextureView, depth: GpuTextureView, block: Function0<void>): void;
+    static write(gpuBufferSlice: GpuBufferSlice, byteBuffer: ByteBuffer): void;
+    static write(gpuTexture: GpuTexture, source: NativeImage, mipLevel: number, depthOrLayer: number, destX: number, destY: number, width: number, height: number, sourceX: number, sourceY: number): void;
     static writeStd140(paramarg0: GpuBufferSlice, paramarg1: Function1<Object, void>): GpuBufferSlice;
     static writeStd140(paramarg0: ByteBuffer, paramarg1: Function1<Object, void>): void;
 }

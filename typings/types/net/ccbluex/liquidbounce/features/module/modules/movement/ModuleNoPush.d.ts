@@ -12,7 +12,7 @@ import type { NoPushBy } from '../../../../../../../net/ccbluex/liquidbounce/fea
  */
 export class ModuleNoPush extends ClientModule {
     static INSTANCE: ModuleNoPush;
-    static canPush(paramarg0: NoPushBy): boolean;
+    static canPush(by: NoPushBy): boolean;
     // private noPushBy: MultiChoiceListValue<NoPushBy>;
     // private tickHandler: EventHook<GameTickEvent>;
     canPush(by: NoPushBy): boolean;

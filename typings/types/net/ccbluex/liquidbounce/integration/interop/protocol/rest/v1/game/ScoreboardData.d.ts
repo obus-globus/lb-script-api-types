@@ -16,7 +16,7 @@ export class ScoreboardData extends Record {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt:182}
      */
-    static fromScoreboard(paramarg0: Scoreboard): ScoreboardData;
+    static fromScoreboard(scoreboard: Scoreboard): ScoreboardData;
     constructor(header: Component, entries: (ScoreboardData$SidebarEntry | null)[])
     // private entries: (ScoreboardData$SidebarEntry | null)[];
     /*not mapped: */ entries(): (ScoreboardData$SidebarEntry | null)[];

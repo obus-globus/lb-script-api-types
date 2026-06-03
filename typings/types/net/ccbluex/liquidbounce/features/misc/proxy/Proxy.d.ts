@@ -12,7 +12,7 @@ import type { Proxy$Type } from '../../../../../../net/ccbluex/liquidbounce/feat
  */
 export class Proxy extends Object {
     static Companion: Proxy$Companion;
-    static credentials(paramarg0: string, paramarg1: string): Proxy$Credentials;
+    static credentials(username: string, password: string): Proxy$Credentials;
     constructor(host: string, port: number, credentials: Proxy$Credentials | null, type: Proxy$Type | null, forwardAuthentication: boolean, ipInfo: IpInfoApi$IpData | null, favorite: boolean)
     readonly address: InetSocketAddress;
     readonly credentials: Proxy$Credentials | null;

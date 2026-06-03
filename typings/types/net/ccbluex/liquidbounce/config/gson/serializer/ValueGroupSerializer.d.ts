@@ -34,7 +34,7 @@ export class ValueGroupSerializer extends Object implements JsonSerializer<Value
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:64}
      */
-    static serializeReadOnly(paramarg0: ValueGroup, paramarg1: JsonSerializationContext): JsonObject;
+    static serializeReadOnly(valueGroup: ValueGroup, context: JsonSerializationContext): JsonObject;
     constructor(withValueType: boolean, includePrivate: boolean, includeNotAnOption: boolean)
     // private includeNotAnOption: boolean;
     // private includePrivate: boolean;

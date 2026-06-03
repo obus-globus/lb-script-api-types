@@ -11,7 +11,7 @@ import type { Visibility } from '../../../../../../../net/ccbluex/liquidbounce/f
  */
 export class ModuleBetterTab extends ClientModule {
     static INSTANCE: ModuleBetterTab;
-    static isVisible(paramarg0: Visibility): boolean;
+    static isVisible(visibility: Visibility): boolean;
     readonly showGameMode: boolean;
     readonly sorting: Sorting;
     // private visibility: Visibility[];

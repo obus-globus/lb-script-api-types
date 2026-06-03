@@ -9,7 +9,7 @@ export class AutoFarmHelperKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmHelper.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmHelper.kt:45}
      */
-    static canUseBoneMeal(paramarg0: BlockPos, paramarg1: BlockState): boolean;
+    static canUseBoneMeal(blockPos: BlockPos, state: BlockState): boolean;
     /**
      * Get the harvest action for the block. The block itself might be not ready for harvest!
      * Call {@link BlockPos.readyForHarvest} before performing the harvest action.
@@ -25,5 +25,5 @@ export class AutoFarmHelperKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmHelper.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmHelper.kt:79}
      */
-    static readyForHarvest(paramarg0: BlockPos, paramarg1: BlockState): boolean;
+    static readyForHarvest(blockPos: BlockPos, state: BlockState): boolean;
 }
