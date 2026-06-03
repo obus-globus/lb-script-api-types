@@ -45,7 +45,7 @@
   },
   "sideEffects": false,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "liquidbounce": {
     "version": "0.38.1",
