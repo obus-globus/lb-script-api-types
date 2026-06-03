@@ -29,6 +29,7 @@ export class PlatformEventType extends Type {
     readonly hasLevel: boolean;
     readonly hasPeriod: boolean;
     readonly hasThrottle: boolean;
+    // private isBackToBackSensitive: boolean;
     // private isCPUTimeMethodSampling: boolean;
     // private isInstrumented: boolean;
     // private isJDK: boolean;
@@ -45,6 +46,7 @@ export class PlatformEventType extends Type {
     readonly thresholdTicks: number;
     readonly throttler: Throttler;
     add(arg0: SettingDescriptor): void;
+    // private determineBackToBackSensitive(): boolean;
     // private determineMethodSampling(): boolean;
     // private determineStackTraceOffset(): number;
     getAllSettings(): SettingDescriptor[];
@@ -64,6 +66,7 @@ export class PlatformEventType extends Type {
     hasStackTrace(): boolean;
     hasThreshold(): boolean;
     hasThrottle(): boolean;
+    isBackToBackSensitive(): boolean;
     isBeginChunk(): boolean;
     isCPUTimeMethodSampling(): boolean;
     isChunkTime(): boolean;

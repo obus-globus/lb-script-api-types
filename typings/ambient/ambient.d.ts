@@ -151,19 +151,20 @@ declare global {
 
     export const InteractionHand: typeof InteractionHand_;
 
-    /** Runtime global is `Hand` (InteractionHand is bound under that name). */
+    export const Axis: Axis_;
+
+    export const RenderSystem: typeof RenderSystem_;
+
+    export const Vec3d: typeof Vec3_;
+
+    export const MathHelper: typeof Mth_;
+
     export const Hand: typeof InteractionHand_;
 
     /** SilentHotbar.INSTANCE — silent hotbar slot selection. */
     export const SilentHotbar: typeof SilentHotbar_;
 
-    export const Axis: Axis_;
-
-    export const RenderSystem: typeof RenderSystem_;
-
-
-
-
+    export const RotationAxis: Axis_;
 
     export const Color4b: typeof Color4b_;
 
