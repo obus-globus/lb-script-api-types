@@ -68,7 +68,13 @@ tree-sitter extractor can.
 
 ## Tier 2 - fidelity
 
-- **[ ] W5 - `Function*<Object>` lambda erasure.** **3,376** occurrences (verified). Lambda params/returns erase to `Object`. _Type data now lives in `signatures.json`; same substitution pass as W6 under #12b. Layer: post-patch/generator._
+- **[~] W5 - `Function*<Object>` lambda erasure.** **3,376** occurrences (verified). Two parts:
+  (a) **Kotlin function types now render as TS arrows** (`(T) -> Unit` ->
+  `(param0: T) => void`; suspend types too) instead of nominal `FunctionN<...>`
+  / `UNKNOWN` - done in the generator (`kotlinFunctionArrow`, reflection-only,
+  recovers the type args reflection already has). (b) Genuinely-erased arg
+  *types* that surface as `Object` are the residual - those need the
+  type-substitution pass under #12b (`signatures.json`). _Layer: generator (a, done) / post-patch (b)._
 - **[ ] W6 - bare `Object` returns/params.** **78,340** bare-`Object` occurrences (verified) where reflection
   fell back to `Object`; prefer the raw declared class. The per-param Kotlin
   source type is already captured in `signatures.json` - the remaining work is
