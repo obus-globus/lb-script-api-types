@@ -41,10 +41,15 @@ OUT="$REPO_ROOT/tools/regen-output/$PACKAGE_NAME"
 if [[ "$PROMOTE" == "1" ]]; then
   echo "==> [3/3] promote → typings/ (diff vs current, package.json excluded):"
   diff -rq --exclude=package.json "$OUT/" "$REPO_ROOT/typings/" 2>/dev/null | head -40 || true
-  # rsync without --delete: updates ambient/augmentations/types from the regen
-  # tree; leaves the hand-maintained package.json, __smoke/, tsconfig.json alone.
-  rsync -a --exclude=package.json "$OUT/" "$REPO_ROOT/typings/"
-  echo "Promoted into typings/ ($(find "$REPO_ROOT/typings/types" -name '*.d.ts' | wc -l) .d.ts). package.json kept."
+  # Sync ambient/augmentations/types with --delete so stale files (e.g. old
+  # bundled-kotlin internals) are removed; leave the hand-maintained
+  # package.json, __smoke/, and tsconfig.json untouched.
+  for d in ambient augmentations types; do
+    rsync -a --delete "$OUT/$d/" "$REPO_ROOT/typings/$d/"
+  done
+  echo "Promoted into typings/ ($(find "$REPO_ROOT/typings/types" -name '*.d.ts' | wc -l) .d.ts)."
+  # Stamp the package version to the LiquidBounce build these types were made for.
+  node "$REPO_ROOT/scripts/stamp-version.mjs"
 else
   echo "==> [3/3] promote skipped (--no-promote). Output in $OUT"
 fi

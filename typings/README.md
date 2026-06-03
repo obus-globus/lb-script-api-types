@@ -38,9 +38,15 @@ The package is **one `.d.ts` per class** (mirroring the JVM package layout), so
 
 ## Versioning
 
-`version` tracks the LiquidBounce build the types were generated from:
-`<regen-date>+nextgen.git-<lb-sha>`. Regenerate with the pipeline in the
-[repository][repo] when LiquidBounce updates.
+The package **version is the LiquidBounce version** the types were generated for
+— e.g. `0.38.1` = types for LiquidBounce 0.38.1. The exact LB commit + Minecraft
+version are in the `package.json` `liquidbounce` block:
+
+```bash
+npm view @obus-globus/lb-script-api-types liquidbounce
+```
+
+Regenerate with the pipeline in the [repository][repo] when LiquidBounce updates.
 
 ## License & attribution
 

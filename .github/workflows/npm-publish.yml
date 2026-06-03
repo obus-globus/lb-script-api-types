@@ -1,12 +1,13 @@
 name: Publish to npm
 
-# Publishes the typings/ package (@obus-globus/lb-script-api-types). The package
-# is types-only — no build step. Access is controlled by publishConfig.access in
-# typings/package.json ("restricted" now; switch to "public" to go public).
+# Publishes the typings/ package (@obus-globus/lb-script-api-types). Types-only —
+# no build step. The version IS the LiquidBounce version it was generated for
+# (typings/package.json, stamped by scripts/stamp-version.mjs on each regen); the
+# exact LB commit is in the package.json `liquidbounce` block. See docs/versioning.md.
 #
-# Requires a repo/org secret NPM_TOKEN (an npm automation token with publish
-# rights for the @obus-globus scope). Scoped *restricted* (private) packages need
-# a paid npm plan; a public package does not.
+# Access is controlled by publishConfig.access ("restricted" now; flip to "public").
+# Needs a repo/org secret NPM_TOKEN (npm automation token with publish rights for
+# the @obus-globus scope). Scoped *restricted* (private) packages need a paid plan.
 on:
   release:
     types: [published]
@@ -32,12 +33,37 @@ jobs:
           registry-url: https://registry.npmjs.org
           scope: "@obus-globus"
 
+      - name: Resolve name + version
+        id: pkg
+        working-directory: typings
+        run: |
+          name="$(node -p "require('./package.json').name")"
+          version="$(node -p "require('./package.json').version")"
+          echo "name=$name"       >> "$GITHUB_OUTPUT"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Package: $name@$version (LB $(node -p "require('./package.json').liquidbounce.version"))"
+
       - name: Verify package contents
         working-directory: typings
         run: npm pack --dry-run
 
+      - name: Already published?
+        id: exists
+        working-directory: typings
+        run: |
+          if npm view "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }} already on npm — bump the LB pin / version to publish a new one."
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish
-        if: ${{ github.event_name == 'release' || inputs.dry_run == false }}
+        if: >-
+          steps.exists.outputs.published == 'false' &&
+          (github.event_name == 'release' || inputs.dry_run == false)
         working-directory: typings
         run: npm publish
         env:

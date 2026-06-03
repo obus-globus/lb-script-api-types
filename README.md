@@ -73,8 +73,11 @@ npm publish            # uses publishConfig.access in package.json
 - **CI** — `.github/workflows/npm-publish.yml` publishes on a GitHub Release (and
   a manual dry-run). It needs an `NPM_TOKEN` repo/org secret (an npm automation
   token with publish rights for the `@obus-globus` scope).
-- **Version** — bump `version` in `typings/package.json` (`<regen-date>+nextgen.git-<sha>`)
-  on each promote; npm won't accept a re-publish of an existing version.
+- **Version** — the npm version **is the LiquidBounce version** the types were made
+  for (`0.38.1`), stamped automatically from the LB checkout by
+  `scripts/stamp-version.mjs` during `run-regen.sh`. The exact LB commit + MC
+  version live in the `package.json` `liquidbounce` block. See
+  [docs/versioning.md](docs/versioning.md).
 
 ## Regenerating the types
 The `types/` tree is generated — not hand-edited. The **whole flow is one command**:
