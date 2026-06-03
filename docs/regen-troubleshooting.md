@@ -19,29 +19,29 @@ crash is at second ~1).
 **Cause.** A **double Kotlin runtime**. The `ts-generator` shadow jar bundled its
 own `kotlin-stdlib` + `kotlin-reflect` (pinned `2.0.0`, via `implementation`).
 LiquidBounce ships a **newer** Kotlin through `fabric-language-kotlin`
-(currently **2.3.10**), and LB's own code is compiled against it — referencing
+(currently **2.3.10**), and LB's own code is compiled against it - referencing
 reflect API added after 2.0, e.g. `KParameter.Kind.CONTEXT` (Kotlin 2.2+, for
 context parameters). Loaded as a Fabric mod under the Knot classloader, the
 generator's bundled `2.0.0` `KParameter$Kind` (which has no `CONTEXT`) wins, and
-the first reflective call into LB's Kotlin does `getstatic …CONTEXT` against it →
+the first reflective call into LB's Kotlin does `getstatic ...CONTEXT` against it ->
 `NoSuchFieldError`.
 
-This is **not** specific to this repo's split or the KDoc reconciliation — the
+This is **not** specific to this repo's split or the KDoc reconciliation - the
 original `liquidbounce-helper` generator jar fails identically; it only worked
 when LB's runtime Kotlin still matched the bundled `2.0.0`. LB has since moved to
 2.3.10.
 
-**Fix** (in the `generator/` submodule — `obus-globus/lb-ts-generator`): do **not**
+**Fix** (in the `generator/` submodule - `obus-globus/lb-ts-generator`): do **not**
 bundle Kotlin; use LB's runtime Kotlin, exactly like Guava/Gson are already
 handled.
 
-- `build.gradle`: `kotlin-stdlib` + `kotlin-reflect` → `compileOnly`
+- `build.gradle`: `kotlin-stdlib` + `kotlin-reflect` -> `compileOnly`
   (+ `testImplementation` so the out-of-LB unit tests still have them).
 - `gradle.properties`: `kotlin.stdlib.default.dependency=false` so the Kotlin
   Gradle plugin doesn't re-add a bundled stdlib.
 
-After the fix the shadow jar ships **no** Kotlin (≈4.9 MB → 84 KB, `0`
-`kotlin/reflect/` classes) and runs on LB's Kotlin 2.3.10 — `ts-defgen` clears the
+After the fix the shadow jar ships **no** Kotlin (~4.9 MB -> 84 KB, `0`
+`kotlin/reflect/` classes) and runs on LB's Kotlin 2.3.10 - `ts-defgen` clears the
 crash and introspects normally.
 
 **If LB bumps Kotlin again** this stays correct (the generator always uses LB's
@@ -51,7 +51,7 @@ language/stdlib features would you need to bump its compile `kotlin_version`
 
 ## `kdoc manifest load failed: NoSuchMethodException: KDocSource.fromJson(String)`
 
-Non-fatal — the generator logs it and **continues without inline TSDoc**. The
+Non-fatal - the generator logs it and **continues without inline TSDoc**. The
 real KDoc/TSDoc injection happens in post-processing (`tools/regen/apply-kdoc.py`,
 run by `post-patches.sh`) against the generated `.d.ts`, so the committed types
 still get their documentation. The in-generator `KDocSource` path is a secondary

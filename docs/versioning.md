@@ -3,12 +3,13 @@
 The package version **is the LiquidBounce version the types were generated for.**
 
 ```
-@obus-globus/lb-script-api-types@0.38.1      ← types for LiquidBounce 0.38.1
+@obus-globus/lb-script-api-types@0.38.1      (types for LiquidBounce 0.38.1)
 ```
 
-- **`version`** = LiquidBounce's `mod_version` (from `references/liquidbounce/gradle.properties`)
-  — a clean `MAJOR.MINOR.PATCH`, so one published npm version == one LB release
-  (no build-metadata, so `npm view` / install / dedup behave normally).
+- **`version`** is LiquidBounce's `mod_version` (from
+  `references/liquidbounce/gradle.properties`): a clean `MAJOR.MINOR.PATCH`, so one
+  published npm version equals one LB release (no build-metadata, so `npm view`,
+  install, and dedup behave normally).
 - **`liquidbounce` block** in `package.json` carries the exact provenance:
   ```jsonc
   "liquidbounce": {
@@ -35,10 +36,10 @@ node scripts/stamp-version.mjs --check   # print, don't write
 ## Release flow
 
 1. Bump the LB pin (`PINNED_SHA` in `tools/regen-types.sh`) to the target LB build,
-   `./fetch-references.sh`, then `./run-regen.sh` — this regenerates the types and
+   `./fetch-references.sh`, then `./run-regen.sh` - this regenerates the types and
    **stamps the version to that LB build**.
 2. Commit the regenerated `typings/` (incl. the bumped `package.json`).
-3. Cut a **GitHub Release** → `.github/workflows/npm-publish.yml` publishes it (the
+3. Cut a **GitHub Release** -> `.github/workflows/npm-publish.yml` publishes it (the
    workflow skips if that version is already on npm).
 
    Or locally: `cd typings && npm publish`.
@@ -47,7 +48,7 @@ node scripts/stamp-version.mjs --check   # print, don't write
 
 - **One publish per LB release.** You normally regenerate *because* LB changed, so
   `mod_version` advances and the npm version is naturally unique.
-- **LB didn't bump `mod_version` but the types need a fix** (rare — e.g. a
+- **LB didn't bump `mod_version` but the types need a fix** (rare - e.g. a
   generator/post-patch improvement against the same LB build): npm won't accept a
   re-publish of the same version. Either fold the fix into the next LB-version
   release, or temporarily hand-edit `version` to a patch beyond LB's (and note it

@@ -1,130 +1,177 @@
 # LiquidBounce Script-API types + generator
 
-TypeScript ambient/declaration types for the **LiquidBounce** (nextgen, MC 1.21+)
-script API — the Java/Kotlin/Minecraft type surface a LiquidBounce GraalJS script
-can reach at runtime — **and the pipeline that generates them**. Split out of the
-`liquidbounce-helper` monorepo so the types (and their generator) can be versioned
-and consumed on their own.
+TypeScript types for the **LiquidBounce** (nextgen, MC 1.21+) GraalJS **script
+API**: the Java/Kotlin/Minecraft surface a LiquidBounce script can reach at
+runtime (`mc`, `Client`, `RotationUtil`, `Setting`, every `@Tag` event, and so on).
+This repo holds both the published types (`typings/`) and the pipeline that
+generates them. It was split out of the `liquidbounce-helper` monorepo so the
+types and their generator can be versioned and consumed on their own.
 
-This is a heavily-refined fork of CCBlueX's published types — typed per-event
-`on()` overloads, KDoc→TSDoc hover docs, binding fixes, ambient globals, and more.
-See **[docs/improvements.md](docs/improvements.md)** for the full list of what we
-add over the official `@ccbluex/liquidbounce-script-api`, and
-**[docs/backlog.md](docs/backlog.md)** for the remaining type-quality enhancements.
+It is a refined fork of CCBlueX's published types, adding typed per-event `on()`
+overloads, KDoc-to-TSDoc hover docs, binding fixes, ambient globals, and more.
+[docs/improvements.md](docs/improvements.md) has the full list of what this adds
+over the official `@ccbluex/liquidbounce-script-api`; [docs/backlog.md](docs/backlog.md)
+lists what is still open.
 
-## Layout
+## Install
 
-```
-typings/      The @ccbluex/liquidbounce-script-api package — the consumable output.
-              ambient/ (the script globals: mc, Client, RotationUtil, Setting, …),
-              augmentations/ (hand-written overlays), types/ (~57k generated .d.ts),
-              __smoke/ (type smoke tests), package.json, tsconfig.json.
-
-generator/    git submodule → obus-globus/lb-ts-generator. The Kotlin/Gradle
-              generator (fork of ntrrgc/commandblock2 ts-generator) that walks
-              Kotlin reflection at runtime → one .d.ts per class, with KDoc
-              injection. Build JDK: 21. `git submodule update --init generator`.
-
-tools/        The regen pipeline (glue):
-                regen-types.sh        — entry point: builds the generator shadow
-                                        jar, launches LB headless, runs ts-defgen.js
-                                        → tools/regen-output/, then post-processes.
-                regen/                — fix-binding-types.py (the binding fixes),
-                                        apply-kdoc.py, events-doc-report.py,
-                                        drift checks, ts-defgen.js, post-patches.
-                kdoc-extractor/       — ts-extract.py + refresh-manifest.sh: parse
-                                        LB Kotlin → manifest.json (PSI/KDoc data the
-                                        generator's KDocSource consumes).
-                generate-java-types.sh, decompile-minecraft.sh, update-refs.sh, …
-
-references/   (gitignored) heavy inputs fetched on demand — the LiquidBounce
-              source checkout. See fetch-references.sh.
+```bash
+npm i -D @obus-globus/lb-script-api-types
 ```
 
-## Consuming the types
-As a local `file:` dependency (how `lb-nodeflow` uses it):
+## Usage
+
+Pull in the ambient script globals through `tsconfig.json`:
+
+```jsonc
+{
+  "compilerOptions": {
+    "types": ["@obus-globus/lb-script-api-types/ambient"]
+  }
+}
+```
+
+Now the runtime globals are typed:
+
+```ts
+const target = mc.player;
+RotationUtil.aimAt(/* ... */);
+```
+
+Event handlers are typed per event. `ScriptModule.on()` has one overload for each
+LiquidBounce event, so the event name autocompletes and the payload is typed:
+
+```ts
+module.on("attack", (e) => {
+  e.entity;          // typed as the AttackEntityEvent payload
+});
+```
+
+Import individual classes or events by their JVM path:
+
+```ts
+import { AttackEntityEvent } from "@obus-globus/lb-script-api-types/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent";
+```
+
+The package ships one `.d.ts` per class (mirroring the JVM package layout), so
+`tsc` only parses the types a script actually imports.
+
+### As a local dependency
+
+For a sibling checkout (the way `lb-nodeflow` consumes it), point a `file:`
+dependency at the `typings/` subfolder:
 
 ```jsonc
 // package.json
 "devDependencies": {
-  "@liquidbounce-helper/script-api-types": "file:../lb-script-api-types/typings"
+  "@obus-globus/lb-script-api-types": "file:../lb-script-api-types/typings"
 }
 ```
-```jsonc
-// tsconfig.json — pull in the ambient globals
-"compilerOptions": { "types": ["@liquidbounce-helper/script-api-types/ambient"] }
+
+## Layout
+
 ```
+typings/      The @obus-globus/lb-script-api-types package (the consumable output):
+              ambient/ (the script globals), augmentations/ (hand-written overlays),
+              types/ (~57k generated .d.ts), __smoke/ (type smoke tests),
+              package.json, tsconfig.json.
+
+generator/    git submodule (obus-globus/lb-ts-generator): the Kotlin/Gradle
+              generator that walks Kotlin reflection at runtime to emit one .d.ts
+              per class, with KDoc injection. Build JDK: 21.
+              `git submodule update --init generator`.
+
+tools/        The regen pipeline:
+                regen-types.sh    entry point. builds the generator jar, launches
+                                  LB headless, runs ts-defgen.js into
+                                  tools/regen-output/, then post-processes.
+                regen/            fix-binding-types.py, apply-kdoc.py, drift checks,
+                                  ts-defgen.js, post-patches.sh.
+                kdoc-extractor/   ts-extract.py + refresh-manifest.sh: parse LB
+                                  Kotlin into manifest.json (the KDoc data).
+
+references/   (gitignored) heavy inputs fetched on demand: the LiquidBounce source
+              checkout. See fetch-references.sh.
+```
+
+## Regenerating the types
+
+The `types/` tree is generated, not hand-edited. The whole flow is one command:
+
+```bash
+./run-regen.sh                # inputs, regen (apply-kdoc + fix-binding), promote
+./run-regen.sh --no-promote   # stop at tools/regen-output/ to review the diff
+```
+
+`run-regen.sh` runs end to end:
+
+1. **inputs**: `fetch-references.sh` (the LB source; reuses a sibling
+   `liquidbounce-helper` checkout via symlink if present, else clones) and inits
+   the `generator/` submodule.
+2. **regen**: `tools/regen-types.sh` builds the generator jar (JDK 21), launches
+   LiquidBounce headless (`xvfb-run` + Mesa llvmpipe, JDK 25) so `ts-defgen.js` can
+   introspect the live class graph into `tools/regen-output/`, then
+   `post-patches.sh` applies `apply-kdoc.py` (TSDoc) and `fix-binding-types.py`
+   (the F4/F5 binding fixes). This takes about 50 to 60 minutes on softpipe.
+3. **promote**: copies the result into `typings/` and stamps the version (see
+   Versioning), keeping the hand-maintained `package.json`, `__smoke/`, and
+   `tsconfig.json`.
+
+Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25, and JDK 21. Bump `PINNED_SHA`
+in `tools/regen-types.sh` to move to a newer LB build. If regen crashes, see
+[docs/regen-troubleshooting.md](docs/regen-troubleshooting.md) (notably the
+Kotlin-runtime-skew `KParameter$Kind CONTEXT` failure).
+
+Env knobs: `REGEN_TIMEOUT` (default `60m`, caps the headless run) and
+`SKIP_JAR_BUILD=1` (reuse the existing generator jar instead of rebuilding).
+
+### Container and CI
+
+- **Docker**: `docker/regen.sh` runs the whole flow in a pinned-toolchain image
+  with cached volumes (Gradle and Minecraft downloads persist across runs). See
+  [docker/README.md](docker/README.md).
+- **GitHub Actions**: `.github/workflows/regen-types.yml` runs the flow and opens a
+  PR with the regenerated types. `.github/workflows/docker-image.yml` publishes the
+  regen image to GHCR. The headless run is heavy, so a larger or self-hosted runner
+  is recommended.
+
+## Versioning
+
+The npm version is the LiquidBounce version the types were generated for. For
+example `0.38.1` means types for LiquidBounce 0.38.1. The exact LB commit and
+Minecraft version live in the `package.json` `liquidbounce` block:
+
+```bash
+npm view @obus-globus/lb-script-api-types liquidbounce
+```
+
+`scripts/stamp-version.mjs` derives this from the LB checkout and runs
+automatically during `run-regen.sh`. Details in [docs/versioning.md](docs/versioning.md).
 
 ## Publishing to npm
 
-The `typings/` package publishes as **`@obus-globus/lb-script-api-types`**
-(types-only, no build step). License: GPL-3.0-or-later (derived from LiquidBounce;
-not affiliated with CCBlueX).
+`@obus-globus/lb-script-api-types` is types-only (no build step). License is
+GPL-3.0-or-later, since the types derive from LiquidBounce. This is an independent
+redistribution and is not affiliated with or endorsed by CCBlueX.
 
 ```bash
 cd typings
-npm pack --dry-run     # verify contents (≈10.6 MB packed)
-npm publish            # uses publishConfig.access in package.json
+npm pack --dry-run     # verify contents (about 10.6 MB packed)
+npm publish            # uses publishConfig.access from package.json
 ```
 
-- **Access** — `publishConfig.access` is `"restricted"` (private). Scoped private
-  packages need a paid npm plan; to go **public**, change it to `"public"` (or
+- **Access**: `publishConfig.access` is `restricted` (private). Scoped private
+  packages need a paid npm plan; to go public, change it to `public` (or
   `npm publish --access public`).
-- **CI** — `.github/workflows/npm-publish.yml` publishes on a GitHub Release (and
-  a manual dry-run). It needs an `NPM_TOKEN` repo/org secret (an npm automation
-  token with publish rights for the `@obus-globus` scope).
-- **Version** — the npm version **is the LiquidBounce version** the types were made
-  for (`0.38.1`), stamped automatically from the LB checkout by
-  `scripts/stamp-version.mjs` during `run-regen.sh`. The exact LB commit + MC
-  version live in the `package.json` `liquidbounce` block. See
-  [docs/versioning.md](docs/versioning.md).
+- **CI**: `.github/workflows/npm-publish.yml` publishes on a GitHub Release and
+  skips if the version is already on npm. It needs an `NPM_TOKEN` repo or org
+  secret with publish rights for the `@obus-globus` scope.
 
-## Regenerating the types
-The `types/` tree is generated — not hand-edited. The **whole flow is one command**:
+## Notes
 
-```bash
-./run-regen.sh                  # inputs → regen (+ apply-kdoc + fix-binding) → promote
-./run-regen.sh --no-promote     # stop at tools/regen-output/ (review the diff first)
-```
-
-`run-regen.sh` does, end to end:
-1. **inputs** — `fetch-references.sh` (LB source; reuses a sibling
-   `liquidbounce-helper` checkout via symlink if present, else clones) + inits the
-   `generator/` submodule.
-2. **regen** — `tools/regen-types.sh`: builds the generator shadow jar (JDK 21),
-   launches LiquidBounce headless (`xvfb-run` + Mesa llvmpipe, JDK 25) so
-   `ts-defgen.js` introspects the live class graph → `tools/regen-output/`, then
-   `post-patches.sh` applies `apply-kdoc.py` (TSDoc) + `fix-binding-types.py`
-   (F4/F5 binding fixes). **~50–60 min** on softpipe.
-3. **promote** — copies the post-processed tree into `typings/`, keeping the
-   hand-curated `package.json` + `__smoke/` + `tsconfig.json`.
-
-Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25 + JDK 21. Bump `PINNED_SHA` in
-`tools/regen-types.sh` (and `version` in `typings/package.json`) when moving to a
-newer LB. Hit a crash during regen? See [docs/regen-troubleshooting.md](docs/regen-troubleshooting.md)
-(notably the Kotlin-runtime-skew `KParameter$Kind … CONTEXT` failure).
-
-Useful env knobs: `REGEN_TIMEOUT` (default `60m`, caps the headless run) and
-`SKIP_JAR_BUILD=1` (reuse the existing generator jar instead of rebuilding).
-
-### Containerised / CI
-- **Docker** — `docker/regen.sh` runs the whole flow in a pinned-toolchain image
-  with cached volumes (Gradle + Minecraft downloads persist across runs). See
-  [docker/README.md](docker/README.md).
-- **GitHub Actions** — `.github/workflows/regen-types.yml` runs the flow and opens
-  a PR with the regenerated types; `.github/workflows/docker-image.yml` publishes
-  the regen image to GHCR. (The headless-client run is heavy — a larger or
-  self-hosted runner is recommended.)
-
-## Provenance / notes
-- The generator lives in its own repo (`generator/` submodule) so it stays a clean
-  Kotlin project; the KDoc feature was reconciled into it (it had diverged inside
-  the old monorepo copy).
-- `tools/kdoc-extractor/manifest.json` is a checked-in convenience snapshot of the
-  KDoc data; `refresh-manifest.sh` regenerates it (needs the Kotlin compiler, which
-  is fetched into a gitignored `kotlinc/`).
-- `--verify` in `regen-types.sh` references a baseline that used to live in the
-  monorepo (`packages/script-helper`); adjust that path for standalone verification.
-
-Package name: `@ccbluex/liquidbounce-script-api` (the LiquidBounce script API;
-`version` tracks the upstream LB build).
+- The generator lives in its own repo (the `generator/` submodule) so it stays a
+  clean Kotlin project. The KDoc feature was reconciled into it after it had
+  diverged inside the old monorepo copy.
+- `tools/kdoc-extractor/manifest.json` is a checked-in snapshot of the KDoc data;
+  `refresh-manifest.sh` regenerates it (it needs the Kotlin compiler, fetched into
+  a gitignored `kotlinc/`).
