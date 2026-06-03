@@ -826,6 +826,21 @@ else
 fi
 
 # -----------------------------------------------------------------------------
+# W4 — document the ScriptModule.on() event overloads. apply-event-docs.py adds
+# `@see {@link <Event>}` (+ a one-line summary when the event class has KDoc) to
+# each generated overload. The @see target is read off the overload itself; the
+# summary comes from the KDoc manifest, so it's gated under the doc toggle.
+EVENTDOC_SCRIPT="$REPO_ROOT/tools/regen/apply-event-docs.py"
+if [ "$SKIP_KDOC_EFF" == "1" ]; then
+    echo "post-patches: on() event docs skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
+elif [ -f "$EVENTDOC_SCRIPT" ]; then
+    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" "$MANIFEST" || \
+        echo "post-patches: on() event docs failed (non-fatal, continuing)"
+else
+    echo "post-patches: on() event docs skipped (apply script missing)"
+fi
+
+# -----------------------------------------------------------------------------
 # T-9 — kotlin.Any? nullable-suffix bleed (Issue #10)
 # -----------------------------------------------------------------------------
 # ts-generator emits Kotlin's `Any?` (nullable Any) verbatim, including the

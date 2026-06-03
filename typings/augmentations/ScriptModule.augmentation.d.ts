@@ -136,126 +136,493 @@ declare module '../types/net/ccbluex/liquidbounce/script/bindings/features/Scrip
         // on events with specific event types
         
 // on events
+/**
+ * @see {@link AccountManagerAdditionResultEvent}
+ */
 on(eventName: "accountManagerAddition", handler: (accountManagerAdditionEvent: AccountManagerAdditionResultEvent) => void): void;
+/**
+ * @see {@link AccountManagerLoginResultEvent}
+ */
 on(eventName: "accountManagerLogin", handler: (accountManagerLoginEvent: AccountManagerLoginResultEvent) => void): void;
+/**
+ * @see {@link AccountManagerMessageEvent}
+ */
 on(eventName: "accountManagerMessage", handler: (accountManagerMessageEvent: AccountManagerMessageEvent) => void): void;
+/**
+ * @see {@link AccountManagerRemovalResultEvent}
+ */
 on(eventName: "accountManagerRemoval", handler: (accountManagerRemovalEvent: AccountManagerRemovalResultEvent) => void): void;
+/**
+ * @see {@link AllowAutoJumpEvent}
+ */
 on(eventName: "allowAutoJump", handler: (allowAutoJumpEvent: AllowAutoJumpEvent) => void): void;
+/**
+ * @see {@link AttackEntityEvent}
+ */
 on(eventName: "attack", handler: (attackEvent: AttackEntityEvent) => void): void;
+/**
+ * @see {@link BedStateChangeEvent}
+ */
 on(eventName: "bedStateChange", handler: (bedStateChangeEvent: BedStateChangeEvent) => void): void;
+/**
+ * @see {@link BlockAttackEvent}
+ */
 on(eventName: "blockAttack", handler: (blockAttackEvent: BlockAttackEvent) => void): void;
+/**
+ * @see {@link BlockBreakingProgressEvent}
+ */
 on(eventName: "blockBreakingProgress", handler: (blockBreakingProgressEvent: BlockBreakingProgressEvent) => void): void;
+/**
+ * @see {@link BlockChangeEvent}
+ */
 on(eventName: "blockChange", handler: (blockChangeEvent: BlockChangeEvent) => void): void;
+/**
+ * @see {@link BlockCountChangeEvent}
+ */
 on(eventName: "blockCountChange", handler: (blockCountChangeEvent: BlockCountChangeEvent) => void): void;
+/**
+ * @see {@link BlockShapeEvent}
+ */
 on(eventName: "blockShape", handler: (blockShapeEvent: BlockShapeEvent) => void): void;
+/**
+ * @see {@link BlockSlipperinessMultiplierEvent}
+ */
 on(eventName: "blockSlipperinessMultiplier", handler: (blockSlipperinessMultiplierEvent: BlockSlipperinessMultiplierEvent) => void): void;
+/**
+ * @see {@link BlockVelocityMultiplierEvent}
+ */
 on(eventName: "blockVelocityMultiplier", handler: (blockVelocityMultiplierEvent: BlockVelocityMultiplierEvent) => void): void;
+/**
+ * @see {@link BrowserReadyEvent}
+ */
 on(eventName: "browserReady", handler: (browserReadyEvent: BrowserReadyEvent) => void): void;
+/**
+ * @see {@link BrowserUrlChangeEvent}
+ */
 on(eventName: "browserUrlChange", handler: (browserUrlChangeEvent: BrowserUrlChangeEvent) => void): void;
+/**
+ * @see {@link CancelBlockBreakingEvent}
+ */
 on(eventName: "cancelBlockBreaking", handler: (cancelBlockBreakingEvent: CancelBlockBreakingEvent) => void): void;
+/**
+ * @see {@link ChatReceiveEvent}
+ */
 on(eventName: "chatReceive", handler: (chatReceiveEvent: ChatReceiveEvent) => void): void;
+/**
+ * @see {@link ChatSendEvent}
+ */
 on(eventName: "chatSend", handler: (chatSendEvent: ChatSendEvent) => void): void;
+/**
+ * @see {@link ChunkDeltaUpdateEvent}
+ */
 on(eventName: "chunkDeltaUpdate", handler: (chunkDeltaUpdateEvent: ChunkDeltaUpdateEvent) => void): void;
+/**
+ * @see {@link ChunkLoadEvent}
+ */
 on(eventName: "chunkLoad", handler: (chunkLoadEvent: ChunkLoadEvent) => void): void;
+/**
+ * @see {@link ChunkUnloadEvent}
+ */
 on(eventName: "chunkUnload", handler: (chunkUnloadEvent: ChunkUnloadEvent) => void): void;
+/**
+ * @see {@link Clear}
+ */
 on(eventName: "clearTitle", handler: (clearTitleEvent: Clear) => void): void;
+/**
+ * @see {@link ClickGuiScaleChangeEvent}
+ */
 on(eventName: "clickGuiScaleChange", handler: (clickGuiScaleChangeEvent: ClickGuiScaleChangeEvent) => void): void;
+/**
+ * @see {@link ClickGuiValueChangeEvent}
+ */
 on(eventName: "clickGuiValueChange", handler: (clickGuiValueChangeEvent: ClickGuiValueChangeEvent) => void): void;
+/**
+ * @see {@link ClientChatErrorEvent}
+ */
 on(eventName: "clientChatError", handler: (clientChatErrorEvent: ClientChatErrorEvent) => void): void;
+/**
+ * @see {@link ClientChatJwtTokenEvent}
+ */
 on(eventName: "clientChatJwtToken", handler: (clientChatJwtTokenEvent: ClientChatJwtTokenEvent) => void): void;
+/**
+ * @see {@link ClientChatMessageEvent}
+ */
 on(eventName: "clientChatMessage", handler: (clientChatMessageEvent: ClientChatMessageEvent) => void): void;
+/**
+ * @see {@link ClientChatStateChange}
+ */
 on(eventName: "clientChatStateChange", handler: (clientChatStateChangeEvent: ClientChatStateChange) => void): void;
+/**
+ * @see {@link ClientLanguageChangedEvent}
+ */
 on(eventName: "clientLanguageChanged", handler: (clientLanguageChangedEvent: ClientLanguageChangedEvent) => void): void;
+/**
+ * @see {@link ClientPlayerDataEvent}
+ */
 on(eventName: "clientPlayerData", handler: (clientPlayerDataEvent: ClientPlayerDataEvent) => void): void;
+/**
+ * @see {@link ClientPlayerEffectEvent}
+ */
 on(eventName: "clientPlayerEffect", handler: (clientPlayerEffectEvent: ClientPlayerEffectEvent) => void): void;
+/**
+ * @see {@link ClientPlayerInventoryEvent}
+ */
 on(eventName: "clientPlayerInventory", handler: (clientPlayerInventoryEvent: ClientPlayerInventoryEvent) => void): void;
+/**
+ * @see {@link ClientShutdownEvent}
+ */
 on(eventName: "clientShutdown", handler: (clientShutdownEvent: ClientShutdownEvent) => void): void;
+/**
+ * @see {@link ClientStartEvent}
+ */
 on(eventName: "clientStart", handler: (clientStartEvent: ClientStartEvent) => void): void;
+/**
+ * @see {@link ComponentsUpdateEvent}
+ */
 on(eventName: "componentsUpdate", handler: (componentsUpdateEvent: ComponentsUpdateEvent) => void): void;
+/**
+ * @see {@link DeathEvent}
+ */
 on(eventName: "death", handler: (deathEvent: DeathEvent) => void): void;
+/**
+ * @see {@link DisconnectEvent}
+ */
 on(eventName: "disconnect", handler: (disconnectEvent: DisconnectEvent) => void): void;
+/**
+ * Sometimes, modules might want to contribute something to the glow framebuffer. They can hook this event
+ * @see {@link DrawOutlinesEvent}
+ */
 on(eventName: "drawOutlines", handler: (drawOutlinesEvent: DrawOutlinesEvent) => void): void;
+/**
+ * @see {@link EntityEquipmentChangeEvent}
+ */
 on(eventName: "entityEquipmentChange", handler: (entityEquipmentChangeEvent: EntityEquipmentChangeEvent) => void): void;
+/**
+ * @see {@link EntityHealthUpdateEvent}
+ */
 on(eventName: "entityHealthUpdate", handler: (entityHealthUpdateEvent: EntityHealthUpdateEvent) => void): void;
+/**
+ * @see {@link EntityMarginEvent}
+ */
 on(eventName: "entityMargin", handler: (entityMarginEvent: EntityMarginEvent) => void): void;
+/**
+ * @see {@link FluidPushEvent}
+ */
 on(eventName: "fluidPush", handler: (fluidPushEvent: FluidPushEvent) => void): void;
+/**
+ * @see {@link FpsChangeEvent}
+ */
 on(eventName: "fps", handler: (fpsEvent: FpsChangeEvent) => void): void;
+/**
+ * @see {@link FpsLimitEvent}
+ */
 on(eventName: "fpsLimit", handler: (fpsLimitEvent: FpsLimitEvent) => void): void;
+/**
+ * @see {@link FramebufferResizeEvent}
+ */
 on(eventName: "frameBufferResize", handler: (frameBufferResizeEvent: FramebufferResizeEvent) => void): void;
+/**
+ * @see {@link GameModeChangeEvent}
+ */
 on(eventName: "gameModeChange", handler: (gameModeChangeEvent: GameModeChangeEvent) => void): void;
+/**
+ * @see {@link GameRenderEvent}
+ */
 on(eventName: "gameRender", handler: (gameRenderEvent: GameRenderEvent) => void): void;
+/**
+ * We can use this event to populate the render task queue with tasks that should be
+ * @see {@link GameRenderTaskQueueEvent}
+ */
 on(eventName: "gameRenderTaskQueue", handler: (gameRenderTaskQueueEvent: GameRenderTaskQueueEvent) => void): void;
+/**
+ * @see {@link GameTickEvent}
+ */
 on(eventName: "gameTick", handler: (gameTickEvent: GameTickEvent) => void): void;
+/**
+ * @see {@link HealthUpdateEvent}
+ */
 on(eventName: "healthUpdate", handler: (healthUpdateEvent: HealthUpdateEvent) => void): void;
+/**
+ * @see {@link InputHandleEvent}
+ */
 on(eventName: "inputHandle", handler: (inputHandleEvent: InputHandleEvent) => void): void;
+/**
+ * @see {@link ItemLoreQueryEvent}
+ */
 on(eventName: "itemLoreQuery", handler: (itemLoreQueryEvent: ItemLoreQueryEvent) => void): void;
+/**
+ * @see {@link KeyEvent}
+ */
 on(eventName: "key", handler: (keyEvent: KeyEvent) => void): void;
+/**
+ * @see {@link KeybindChangeEvent}
+ */
 on(eventName: "keybindChange", handler: (keybindChangeEvent: KeybindChangeEvent) => void): void;
+/**
+ * @see {@link KeybindIsPressedEvent}
+ */
 on(eventName: "keybindIsPressed", handler: (keybindIsPressedEvent: KeybindIsPressedEvent) => void): void;
+/**
+ * @see {@link KeyboardCharEvent}
+ */
 on(eventName: "keyboardChar", handler: (keyboardCharEvent: KeyboardCharEvent) => void): void;
+/**
+ * @see {@link KeyboardKeyEvent}
+ */
 on(eventName: "keyboardKey", handler: (keyboardKeyEvent: KeyboardKeyEvent) => void): void;
+/**
+ * @see {@link ModuleActivationEvent}
+ */
 on(eventName: "moduleActivation", handler: (moduleActivationEvent: ModuleActivationEvent) => void): void;
+/**
+ * @see {@link ModuleToggleEvent}
+ */
 on(eventName: "moduleToggle", handler: (moduleToggleEvent: ModuleToggleEvent) => void): void;
+/**
+ * @see {@link MouseButtonEvent}
+ */
 on(eventName: "mouseButton", handler: (mouseButtonEvent: MouseButtonEvent) => void): void;
+/**
+ * @see {@link MouseCursorEvent}
+ */
 on(eventName: "mouseCursor", handler: (mouseCursorEvent: MouseCursorEvent) => void): void;
+/**
+ * @see {@link MouseRotationEvent}
+ */
 on(eventName: "mouseRotation", handler: (mouseRotationEvent: MouseRotationEvent) => void): void;
+/**
+ * @see {@link MouseScrollEvent}
+ */
 on(eventName: "mouseScroll", handler: (mouseScrollEvent: MouseScrollEvent) => void): void;
+/**
+ * @see {@link MouseScrollInHotbarEvent}
+ */
 on(eventName: "mouseScrollInHotbar", handler: (mouseScrollInHotbarEvent: MouseScrollInHotbarEvent) => void): void;
+/**
+ * @see {@link MovementInputEvent}
+ */
 on(eventName: "movementInput", handler: (movementInputEvent: MovementInputEvent) => void): void;
+/**
+ * @see {@link NotificationEvent}
+ */
 on(eventName: "notification", handler: (notificationEvent: NotificationEvent) => void): void;
+/**
+ * @see {@link OverlayMessageEvent}
+ */
 on(eventName: "overlayMessage", handler: (overlayMessageEvent: OverlayMessageEvent) => void): void;
+/**
+ * @see {@link OverlayRenderEvent}
+ */
 on(eventName: "overlayRender", handler: (overlayRenderEvent: OverlayRenderEvent) => void): void;
+/**
+ * @see {@link PacketEvent}
+ */
 on(eventName: "packet", handler: (packetEvent: PacketEvent) => void): void;
+/**
+ * @see {@link PerspectiveEvent}
+ */
 on(eventName: "perspective", handler: (perspectiveEvent: PerspectiveEvent) => void): void;
+/**
+ * @see {@link PipelineEvent}
+ */
 on(eventName: "pipeline", handler: (pipelineEvent: PipelineEvent) => void): void;
+/**
+ * @see {@link PlayerAfterJumpEvent}
+ */
 on(eventName: "playerAfterJump", handler: (playerAfterJumpEvent: PlayerAfterJumpEvent) => void): void;
+/**
+ * @see {@link PlayerFluidCollisionCheckEvent}
+ */
 on(eventName: "playerFluidCollisionCheck", handler: (playerFluidCollisionCheckEvent: PlayerFluidCollisionCheckEvent) => void): void;
+/**
+ * @see {@link PlayerInteractedItemEvent}
+ */
 on(eventName: "playerInteractedItem", handler: (playerInteractedItemEvent: PlayerInteractedItemEvent) => void): void;
+/**
+ * Warning: UseHotbarSlotOrOffHand won't stimulate this event
+ * @see {@link PlayerInteractItemEvent}
+ */
 on(eventName: "playerInteractItem", handler: (playerInteractItemEvent: PlayerInteractItemEvent) => void): void;
+/**
+ * @see {@link PlayerJumpEvent}
+ */
 on(eventName: "playerJump", handler: (playerJumpEvent: PlayerJumpEvent) => void): void;
+/**
+ * @see {@link PlayerMoveEvent}
+ */
 on(eventName: "playerMove", handler: (playerMoveEvent: PlayerMoveEvent) => void): void;
+/**
+ * @see {@link PlayerMovementTickEvent}
+ */
 on(eventName: "playerMovementTick", handler: (playerMovementTickEvent: PlayerMovementTickEvent) => void): void;
+/**
+ * @see {@link PlayerNetworkMovementTickEvent}
+ */
 on(eventName: "playerNetworkMovementTick", handler: (playerNetworkMovementTickEvent: PlayerNetworkMovementTickEvent) => void): void;
+/**
+ * @see {@link PlayerPostTickEvent}
+ */
 on(eventName: "playerPostTick", handler: (playerPostTickEvent: PlayerPostTickEvent) => void): void;
+/**
+ * @see {@link PlayerPushOutEvent}
+ */
 on(eventName: "playerPushOut", handler: (playerPushOutEvent: PlayerPushOutEvent) => void): void;
+/**
+ * @see {@link PlayerSafeWalkEvent}
+ */
 on(eventName: "playerSafeWalk", handler: (playerSafeWalkEvent: PlayerSafeWalkEvent) => void): void;
+/**
+ * @see {@link PlayerSneakMultiplier}
+ */
 on(eventName: "playerSneakMultiplier", handler: (playerSneakMultiplierEvent: PlayerSneakMultiplier) => void): void;
+/**
+ * @see {@link PlayerStepEvent}
+ */
 on(eventName: "playerStep", handler: (playerStepEvent: PlayerStepEvent) => void): void;
+/**
+ * @see {@link PlayerStepSuccessEvent}
+ */
 on(eventName: "playerStepSuccess", handler: (playerStepSuccessEvent: PlayerStepSuccessEvent) => void): void;
+/**
+ * @see {@link PlayerVelocityStrafe}
+ */
 on(eventName: "playerStrafe", handler: (playerStrafeEvent: PlayerVelocityStrafe) => void): void;
+/**
+ * @see {@link PlayerStrideEvent}
+ */
 on(eventName: "playerStride", handler: (playerStrideEvent: PlayerStrideEvent) => void): void;
+/**
+ * @see {@link PlayerTickEvent}
+ */
 on(eventName: "playerTick", handler: (playerTickEvent: PlayerTickEvent) => void): void;
+/**
+ * @see {@link PlayerUseMultiplier}
+ */
 on(eventName: "playerUseMultiplier", handler: (playerUseMultiplierEvent: PlayerUseMultiplier) => void): void;
+/**
+ * @see {@link ProxyCheckResultEvent}
+ */
 on(eventName: "proxyCheckResult", handler: (proxyCheckResultEvent: ProxyCheckResultEvent) => void): void;
+/**
+ * @see {@link BlinkPacketEvent}
+ */
 on(eventName: "queuePacket", handler: (queuePacketEvent: BlinkPacketEvent) => void): void;
+/**
+ * @see {@link RefreshArrayListEvent}
+ */
 on(eventName: "refreshArrayList", handler: (refreshArrayListEvent: RefreshArrayListEvent) => void): void;
+/**
+ * @see {@link ResourceReloadEvent}
+ */
 on(eventName: "resourceReload", handler: (resourceReloadEvent: ResourceReloadEvent) => void): void;
+/**
+ * @see {@link RotationUpdateEvent}
+ */
 on(eventName: "rotationUpdate", handler: (rotationUpdateEvent: RotationUpdateEvent) => void): void;
+/**
+ * @see {@link ScaleFactorChangeEvent}
+ */
 on(eventName: "scaleFactorChange", handler: (scaleFactorChangeEvent: ScaleFactorChangeEvent) => void): void;
+/**
+ * @see {@link ScheduleInventoryActionEvent}
+ */
 on(eventName: "scheduleInventoryAction", handler: (scheduleInventoryActionEvent: ScheduleInventoryActionEvent) => void): void;
+/**
+ * @see {@link ScreenEvent}
+ */
 on(eventName: "screen", handler: (screenEvent: ScreenEvent) => void): void;
+/**
+ * @see {@link ScreenRenderEvent}
+ */
 on(eventName: "screenRender", handler: (screenRenderEvent: ScreenRenderEvent) => void): void;
+/**
+ * @see {@link SelectHotbarSlotSilentlyEvent}
+ */
 on(eventName: "selectHotbarSlotSilently", handler: (selectHotbarSlotSilentlyEvent: SelectHotbarSlotSilentlyEvent) => void): void;
+/**
+ * @see {@link ServerConnectEvent}
+ */
 on(eventName: "serverConnect", handler: (serverConnectEvent: ServerConnectEvent) => void): void;
+/**
+ * @see {@link ServerPingedEvent}
+ */
 on(eventName: "serverPinged", handler: (serverPingedEvent: ServerPingedEvent) => void): void;
+/**
+ * All events which are related to the minecraft client
+ * @see {@link SessionEvent}
+ */
 on(eventName: "session", handler: (sessionEvent: SessionEvent) => void): void;
+/**
+ * @see {@link SpaceSeperatedNamesChangeEvent}
+ */
 on(eventName: "spaceSeperatedNamesChange", handler: (spaceSeperatedNamesChangeEvent: SpaceSeperatedNamesChangeEvent) => void): void;
+/**
+ * @see {@link SprintEvent}
+ */
 on(eventName: "sprint", handler: (sprintEvent: SprintEvent) => void): void;
+/**
+ * @see {@link Subtitle}
+ */
 on(eventName: "subtitle", handler: (subtitleEvent: Subtitle) => void): void;
+/**
+ * @see {@link TagEntityEvent}
+ */
 on(eventName: "tagEntityEvent", handler: (tagEntityEventEvent: TagEntityEvent) => void): void;
+/**
+ * @see {@link TargetChangeEvent}
+ */
 on(eventName: "targetChange", handler: (targetChangeEvent: TargetChangeEvent) => void): void;
+/**
+ * @see {@link ThemeColorChangeEvent}
+ */
 on(eventName: "themeColorChange", handler: (themeColorChangeEvent: ThemeColorChangeEvent) => void): void;
+/**
+ * @see {@link TickPacketProcessEvent}
+ */
 on(eventName: "tickPacketProcess", handler: (tickPacketProcessEvent: TickPacketProcessEvent) => void): void;
+/**
+ * @see {@link Title}
+ */
 on(eventName: "title", handler: (titleEvent: Title) => void): void;
+/**
+ * @see {@link Fade}
+ */
 on(eventName: "titleFade", handler: (titleFadeEvent: Fade) => void): void;
+/**
+ * @see {@link UseCooldownEvent}
+ */
 on(eventName: "useCooldown", handler: (useCooldownEvent: UseCooldownEvent) => void): void;
+/**
+ * @see {@link UserLoggedInEvent}
+ */
 on(eventName: "userLoggedIn", handler: (userLoggedInEvent: UserLoggedInEvent) => void): void;
+/**
+ * @see {@link UserLoggedOutEvent}
+ */
 on(eventName: "userLoggedOut", handler: (userLoggedOutEvent: UserLoggedOutEvent) => void): void;
+/**
+ * @see {@link ValueChangedEvent}
+ */
 on(eventName: "valueChanged", handler: (valueChangedEvent: ValueChangedEvent) => void): void;
+/**
+ * @see {@link VirtualScreenEvent}
+ */
 on(eventName: "virtualScreen", handler: (virtualScreenEvent: VirtualScreenEvent) => void): void;
+/**
+ * @see {@link WindowResizeEvent}
+ */
 on(eventName: "windowResize", handler: (windowResizeEvent: WindowResizeEvent) => void): void;
+/**
+ * @see {@link WorldChangeEvent}
+ */
 on(eventName: "worldChange", handler: (worldChangeEvent: WorldChangeEvent) => void): void;
+/**
+ * @see {@link WorldEntityRemoveEvent}
+ */
 on(eventName: "worldEntityRemove", handler: (worldEntityRemoveEvent: WorldEntityRemoveEvent) => void): void;
+/**
+ * @see {@link WorldRenderEvent}
+ */
 on(eventName: "worldRender", handler: (worldRenderEvent: WorldRenderEvent) => void): void;
 
 
