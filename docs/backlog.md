@@ -93,9 +93,17 @@ tree-sitter extractor can.
   args). The erasure is a **W6 symptom** - recovering the real type (W6 /
   #12b substitution, and the W5a function-arrow work already shipped) removes
   the `Object` *and* its spurious `| null` together. **Subsumed by W6.**
-- **[ ] W8 - sealed-class hierarchies.** 69 sealed Kotlin types flatten to plain
-  classes -> **0** discriminated unions in the tree (verified). Detect `Modality.SEALED` and emit
-  `type X = A | B | C` so `when`-style narrowing works. _Layer: generator._
+- **[x] W8 - sealed-class hierarchies - RESOLVED (already works; union unsafe).**
+  Re-investigated 2026-06-04: the narrowing this aimed at **already works**. The
+  sealed parent is emitted as a class and the subclasses `extends` it
+  (`TextureMode$Custom extends TextureMode`), so Kotlin's
+  `when (x) { is Custom -> ... }` maps to TS `if (x instanceof TextureMode$Custom)`
+  and narrows correctly today (verified with `tsc`). Emitting `type X = A | B | C`
+  would **conflict** with the same-named class and **break the `extends` chains**
+  (subclasses extend the parent; other types reference it), for the sole marginal
+  gain of `switch` exhaustiveness - not worth the breakage. The audit's premise
+  ("0 discriminated unions" = a defect) misreads the class hierarchy, which
+  already provides instanceof narrowing. **Won't-do.**
 
 ## Tier 3 - noise / cosmetic
 
