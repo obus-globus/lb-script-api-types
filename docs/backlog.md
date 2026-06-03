@@ -107,9 +107,16 @@ tree-sitter extractor can.
 
 ## Tier 3 - noise / cosmetic
 
-- **[ ] W11 - `$Companion` exports leak.** **438** files expose `Foo$Companion` (verified). Merge
-  the companion's statics onto the parent. _Risk: breaks any `Foo$Companion`
-  imports. Layer: generator._
+- **[x] W11 - `$Companion` exports - RESOLVED (reflects the runtime; merge unsafe).**
+  Re-investigated 2026-06-04: the current split is **correct for the GraalJS
+  runtime**, not noise. Reflection already surfaces `@JvmStatic`/`@JvmField`
+  companion members directly on the parent (e.g. `ZipFileSystem` has
+  `static RESOURCES`, `static SYSTEM`), while non-static companion members live
+  on the `Companion` singleton and are genuinely accessed as `Foo.Companion.member`
+  (Kotlin companion functions are instance methods on the companion, not JVM
+  statics). Merging all `Foo$Companion` members onto `Foo` would make the types
+  claim `Foo.member` resolves when the runtime requires `Foo.Companion.member` -
+  a correctness regression. **Won't-do.**
 - **[ ] W12 - reflection-type leak (`Class<>`, `KProperty`).** *Partial:*
   `ScriptReflectionUtil` got typed generic overloads, but the original
   `Class<Object>` overloads remain - **4,980** `Class<Object>` sites (verified).
