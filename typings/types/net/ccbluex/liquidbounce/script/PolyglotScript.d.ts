@@ -8,6 +8,7 @@ import type { ModeValueGroup } from '../../../../net/ccbluex/liquidbounce/config
 import type { Command } from '../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { ClientModule } from '../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ScriptModule } from './bindings/features/ScriptModule.d.ts'
+import type { ScriptMode } from './bindings/features/ScriptMode.d.ts'
 import type { ScriptDebugOptions } from '../../../../net/ccbluex/liquidbounce/script/ScriptDebugOptions.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 import type { Value } from '../../../../org/graalvm/polyglot/Value.d.ts'
@@ -92,7 +93,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L259 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:259}
      * @deprecated Use registerMode instead
      */
-    registerChoice(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: Object }, callback: (param0: Mode) => void): void;
+    registerChoice(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: unknown }, callback: (mode: ScriptMode) => void): void;
     /**
      * Registers a new script command
      *
@@ -113,7 +114,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:236}
      */
-    registerMode(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: Object }, callback: (param0: Mode) => void): void;
+    registerMode(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: unknown }, callback: (mode: ScriptMode) => void): void;
     /**
      * Registers a new module backed by this script. The callback receives a
      * fully-constructed {@link ScriptModule} which you configure (settings,

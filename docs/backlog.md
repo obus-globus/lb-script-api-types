@@ -121,6 +121,14 @@ tree-sitter extractor can.
   `ScriptReflectionUtil` got typed generic overloads, but the original
   `Class<Object>` overloads remain - **4,980** `Class<Object>` sites (verified).
   _Layer: generator / augmentation._
+- **[ ] W12b - duplicate-name imports (`Duplicate identifier`).** *Discovered
+  2026-06-04 while narrowing registerMode.* **562 files** import two different
+  types under the **same simple name** (e.g. `ScriptMode.d.ts` imports both
+  `config/types/Value` and `org/graalvm/polyglot/Value` as `Value`), producing
+  `TS2300 Duplicate identifier` + a bare-generic `TS2314` at the use site. The
+  generator must **alias colliding simple names** on import and use the alias at
+  each reference. High impact (576 collisions); the right next generator fix.
+  _Layer: generator._
 - **[ ] W13 - `okhttp3.Response` leak.** `ScriptAsyncUtil.asyncHttp()` returns the
   raw okhttp type - **19** LB files reference `okhttp3` (verified). Add a `ScriptHttpResponse` facade. _Layer: augmentation._
 - **[ ] W17 - missing runtime helpers.** Some methods that exist at runtime are
@@ -143,9 +151,11 @@ tree-sitter extractor can.
   baselined by the typecheck gate (`syntax-baseline.json`). Fix in the
   generator's `commentIfInvalid()` path so the whole declaration is commented,
   not just truncated. _Layer: generator._
-- **[ ] `registerMode` / `registerChoice` callbacks.** Same `ScriptModule`-style
-  callback narrowing as `registerModule` (P-02) - currently typed with the raw
-  `{ [key: string]: Object }` descriptor. Rarely used, so deferred. _Layer: post-patch._
+- **[x] `registerMode` / `registerChoice` callbacks.** Narrowed like
+  `registerModule` (new P-02b post-patch): callback now `(mode: ScriptMode) => void`
+  (the runtime passes a `ScriptMode`, per `callback.accept(this)` in
+  `PolyglotScript.kt`), descriptor `Object` index relaxed to `unknown`. Gate
+  green. Surfaced a pre-existing systemic bug -> see the duplicate-import item.
 
 ---
 

@@ -189,6 +189,73 @@ if register_module_new not in path.read_text():
     sys.exit(2)
 PY
 
+# P-02b: refine PolyglotScript.registerMode() / registerChoice().
+#
+# Same shape as registerModule: the Kotlin signature is
+# `registerMode(ModeValueGroup<Mode>, Map<String, Any>, Consumer<Mode>)` but at
+# runtime the callback receives a ScriptMode — PolyglotScript.kt does
+# `ScriptMode(modeObject, modeValueGroup).apply { callback.accept(this) }` — so
+# the handler should see a ScriptMode (the polyglot proxy with the script-mode
+# helpers), not a bare Mode. registerChoice delegates to registerMode, so it
+# yields a ScriptMode too. We also relax the descriptor's Object index to
+# unknown. No static signal recovers this; it's an overlay.
+python3 - "$PKG_ROOT/types/net/ccbluex/liquidbounce/script/PolyglotScript.d.ts" <<'PY'
+import re, sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+if not path.exists():
+    print(f"post-patches: skipping P-02b — {path} not found", file=sys.stderr)
+    sys.exit(0)
+
+src = path.read_text()
+orig = src
+script_mode_import = (
+    "import type { ScriptMode } from './bindings/features/ScriptMode.d.ts'"
+)
+
+# (1) Ensure the ScriptMode import exists (grouped after the ScriptModule one).
+if script_mode_import not in src:
+    anchor = re.search(
+        r"^import type \{ ScriptModule \} from '[^']+';?$", src, re.MULTILINE,
+    )
+    if anchor:
+        end = anchor.end()
+        src = src[:end] + "\n" + script_mode_import + src[end:]
+
+# (2) Rewrite both registerMode and registerChoice signatures. Match the raw
+#     generator form (Mode callback, Object descriptor index); idempotent once
+#     refined.
+for fn in ("registerMode", "registerChoice"):
+    refined = (
+        f"    {fn}(modeValueGroup: ModeValueGroup<Mode>, "
+        f"modeObject: {{ [key: string]: unknown }}, "
+        f"callback: (mode: ScriptMode) => void): void;"
+    )
+    if refined in src:
+        continue
+    raw = re.compile(
+        rf"^[ \t]*{fn}\(\s*modeValueGroup:\s*ModeValueGroup<Mode>\s*,"
+        rf"\s*modeObject:\s*\{{\s*\[key:\s*string\]:\s*Object\s*\}}\s*,"
+        rf"\s*callback:\s*\(\s*param0:\s*Mode\s*\)\s*=>\s*void\s*\):\s*void;",
+        re.MULTILINE,
+    )
+    new, n = raw.subn(refined, src)
+    if n:
+        src = new
+    else:
+        loose = re.compile(rf"^[ \t]*{fn}\([^\n]*\):\s*void;", re.MULTILINE)
+        new, n = loose.subn(refined, src)
+        if n:
+            src = new
+
+if src == orig:
+    print(f"post-patches: P-02b no-op on {path.name} (already refined or pattern missing)")
+else:
+    path.write_text(src)
+    print(f"post-patches: refined {path.name} (P-02b: registerMode/registerChoice)")
+PY
+
 # T-3: rename TS reserved-word parameter names across all generated
 # .d.ts files under types/. These appear because ntrrgc/ts-generator copies
 # parameter names verbatim from the Java/Kotlin bytecode, where synthetic or
