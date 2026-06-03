@@ -66,15 +66,20 @@ tree-sitter extractor can.
   (b) third-party packages (`com.*`, `org.*`, `oshi.*`, ...) that have no source
   in `references/`, so their names are unrecoverable. _Done for LB; bounded by
   source availability. Layer: extractor -> post-patch._
-- **[ ] W2 - `@deprecated` not surfaced.** LB has ~16 `@Deprecated` members; only **1**
-  reaches the types - verified (94% loss). Add deprecation to the extractor manifest and
-  emit `@deprecated` TSDoc. _Layer: extractor + `apply-kdoc`._
+- **[x] W2 - `@deprecated` surfaced.** Done 2026-06-04: `ts-extract.py
+  --deprecations-out` captures the `@Deprecated(message, ReplaceWith)`
+  annotation (committed `deprecations.json`), and `apply-deprecations.py`
+  injects `@deprecated` TSDoc (merging into existing blocks). **12 of 16**
+  recovered (up from 1; the other 4 are on constructs outside the member
+  surface). _Layer: extractor + post-patch._
 - **[ ] W3 - event class docs.** 117 / 121 event classes are undocumented. Either
   hand-write TSDoc for the top ~30 highest-traffic events, or upstream KDoc PRs to
   LiquidBounce. _Layer: extractor + docs._
-- **[ ] W4 - `ScriptModule.on()` overloads undocumented.** The ~122 narrowed
-  event overloads carry no TSDoc. Generate a one-line `@see <Event>` (and ideally
-  a summary) per overload. _Layer: post-patch (the `on()` augmentation generator)._
+- **[x] W4 - `ScriptModule.on()` overloads documented.** Done 2026-06-04:
+  `apply-event-docs.py` adds `@see {@link <Event>}` (read off each overload) plus
+  a one-line summary for the 7 documented event classes. **121** overloads
+  documented (the event-less `enable|disable` lifecycle overload is skipped).
+  _Layer: post-patch._
 
 ## Tier 2 - fidelity
 
@@ -159,13 +164,12 @@ tree-sitter extractor can.
 
 ## Smaller, standalone
 
-- **[ ] Generator emits invalid TS for 2 coroutine/inline-class declarations.**
-  `RetryingKt.d.ts:8` (`retrying-NcHsxvU` - inline-class `@JvmName` mangling)
-  and `SuspendHandlersKt.d.ts:54` (`waitMatchesWithTimeout-WPwdCS8`) emit a
-  malformed `// ; invalid because of -}` line that breaks parsing. Currently
-  baselined by the typecheck gate (`syntax-baseline.json`). Fix in the
-  generator's `commentIfInvalid()` path so the whole declaration is commented,
-  not just truncated. _Layer: generator._
+- **[x] Generator emitted invalid TS for 2 coroutine/inline-class declarations.**
+  Fixed 2026-06-04: `commentIfInvalid()` now comments **every** line and keeps
+  the trailing newline, so a `@JvmName`-mangled member (`retrying-NcHsxvU`,
+  `waitMatchesWithTimeout-WPwdCS8`) no longer swallows the class's closing brace.
+  The 2 committed files were fixed and the typecheck-gate syntax baseline
+  tightened to **empty** (LB namespace has zero parse errors). _Layer: generator._
 - **[x] `registerMode` / `registerChoice` callbacks.** Narrowed like
   `registerModule` (new P-02b post-patch): callback now `(mode: ScriptMode) => void`
   (the runtime passes a `ScriptMode`, per `callback.accept(this)` in
