@@ -102,6 +102,13 @@ tree-sitter extractor can.
 
 ## Smaller, standalone
 
+- **[ ] Generator emits invalid TS for 2 coroutine/inline-class declarations.**
+  `RetryingKt.d.ts:8` (`retrying-NcHsxvU` - inline-class `@JvmName` mangling)
+  and `SuspendHandlersKt.d.ts:54` (`waitMatchesWithTimeout-WPwdCS8`) emit a
+  malformed `// ; invalid because of -}` line that breaks parsing. Currently
+  baselined by the typecheck gate (`syntax-baseline.json`). Fix in the
+  generator's `commentIfInvalid()` path so the whole declaration is commented,
+  not just truncated. _Layer: generator._
 - **[ ] `registerMode` / `registerChoice` callbacks.** Same `ScriptModule`-style
   callback narrowing as `registerModule` (P-02) - currently typed with the raw
   `{ [key: string]: Object }` descriptor. Rarely used, so deferred. _Layer: post-patch._

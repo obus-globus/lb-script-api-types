@@ -1,0 +1,13 @@
+{
+  "name": "lb-script-api-types-repo",
+  "private": true,
+  "description": "Tooling/CI workspace for @obus-globus/lb-script-api-types. The published package lives in typings/ — this root manifest only carries dev tooling (typecheck gate) and is never published.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "node tools/typecheck.mjs",
+    "typecheck:update-baseline": "node tools/typecheck.mjs --update-baseline"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}

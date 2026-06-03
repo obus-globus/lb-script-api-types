@@ -14,9 +14,6 @@
         "isolatedModules": false
     },
     "include": [
-        "event-narrowing.test.ts",
-        "setting-types.test.ts",
-        "singleton-types.test.ts",
-        "register-script-callable.test.ts"
+        "*.test.ts"
     ]
 }

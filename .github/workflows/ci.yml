@@ -1,0 +1,33 @@
+name: typecheck
+
+# Typecheck gate for the committed types tree. Runs the surface smoke tests
+# (typed on() overloads, ScriptSetting factories, DSL receivers, GraalVM
+# intrinsics, registerScript) and the LB-namespace syntactic ratchet. Fast:
+# the types are committed, so no regeneration / JVM / Xvfb is involved.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        # The generator submodule is not needed — the gate runs against the
+        # committed typings/ tree.
+        with:
+          submodules: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install tooling
+        run: npm ci
+
+      - name: Typecheck gate
+        run: npm run typecheck

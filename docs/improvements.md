@@ -182,3 +182,8 @@ Layered on top of the generated tree and barrel-indexed
 - **Reproducible end-to-end flow** - one command natively (`run-regen.sh`), a
   pinned-toolchain **Docker** image with cached volumes, and a **GitHub Action**
   that regenerates and opens a PR.
+- **Typecheck gate** - a fast CI check (`npm run typecheck`, no regen needed)
+  that compiles the surface smoke tests (typed `on()`, `ScriptSetting`, DSL
+  receivers, intrinsics, `registerScript`) and ratchets the LB namespace for
+  new parse errors against a baseline. Catches generator/post-patch
+  regressions before they ship. See [typecheck-gate.md](typecheck-gate.md).
