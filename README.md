@@ -16,7 +16,7 @@ lists what is still open.
 ## Install
 
 ```bash
-npm i -D @obus-globus/lb-script-api-types
+npm i -D @wunk/lb-script-api-types
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Pull in the ambient script globals through `tsconfig.json`:
 ```jsonc
 {
   "compilerOptions": {
-    "types": ["@obus-globus/lb-script-api-types/ambient"]
+    "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
 ```
@@ -50,7 +50,7 @@ module.on("attack", (e) => {
 Import individual classes or events by their JVM path:
 
 ```ts
-import { AttackEntityEvent } from "@obus-globus/lb-script-api-types/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent";
+import { AttackEntityEvent } from "@wunk/lb-script-api-types/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent";
 ```
 
 The package ships one `.d.ts` per class (mirroring the JVM package layout), so
@@ -64,14 +64,14 @@ dependency at the `typings/` subfolder:
 ```jsonc
 // package.json
 "devDependencies": {
-  "@obus-globus/lb-script-api-types": "file:../lb-script-api-types/typings"
+  "@wunk/lb-script-api-types": "file:../lb-script-api-types/typings"
 }
 ```
 
 ## Layout
 
 ```
-typings/      The @obus-globus/lb-script-api-types package (the consumable output):
+typings/      The @wunk/lb-script-api-types package (the consumable output):
               ambient/ (the script globals), augmentations/ (hand-written overlays),
               types/ (~57k generated .d.ts), __smoke/ (type smoke tests),
               package.json, tsconfig.json.
@@ -156,9 +156,9 @@ can ship type-only improvements between LB releases). `0.38.2` means "our 3rd
 type build for the LB 0.38 line".
 
 ```bash
-npm i @obus-globus/lb-script-api-types@^0.38.0    # newest types for LB 0.38.x
-npm i @obus-globus/lb-script-api-types@lb-0.38    # same, via the LB-line dist-tag
-npm view @obus-globus/lb-script-api-types liquidbounce   # exact LB build / commit / MC
+npm i @wunk/lb-script-api-types@^0.38.0    # newest types for LB 0.38.x
+npm i @wunk/lb-script-api-types@lb-0.38    # same, via the LB-line dist-tag
+npm view @wunk/lb-script-api-types liquidbounce   # exact LB build / commit / MC
 ```
 
 The exact LB build lives in the `package.json` `liquidbounce` block.
@@ -168,7 +168,7 @@ patch`) when you cut a release. Full flow in [docs/versioning.md](docs/versionin
 
 ## Publishing to npm
 
-`@obus-globus/lb-script-api-types` is types-only (no build step). License is
+`@wunk/lb-script-api-types` is types-only (no build step). License is
 GPL-3.0-or-later, since the types derive from LiquidBounce. This is an independent
 redistribution and is not affiliated with or endorsed by CCBlueX.
 
@@ -178,12 +178,11 @@ npm pack --dry-run     # verify contents (about 10.6 MB packed)
 npm publish            # uses publishConfig.access from package.json
 ```
 
-- **Access**: `publishConfig.access` is `restricted` (private). Scoped private
-  packages need a paid npm plan; to go public, change it to `public` (or
-  `npm publish --access public`).
+- **Access**: `publishConfig.access` is `public` (free for scoped packages). The
+  package is published under the **`@wunk`** npm org scope.
 - **CI**: `.github/workflows/npm-publish.yml` publishes on a GitHub Release and
   skips if the version is already on npm. It needs an `NPM_TOKEN` repo or org
-  secret with publish rights for the `@obus-globus` scope.
+  secret (a granular token with publish rights for the `@wunk` scope).
 
 ## Notes
 

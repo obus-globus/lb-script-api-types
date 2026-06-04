@@ -1,4 +1,4 @@
-// typecheck.mjs — the CI typecheck gate for @obus-globus/lb-script-api-types.
+// typecheck.mjs — the CI typecheck gate for @wunk/lb-script-api-types.
 //
 // Two independent checks, both run; the process fails if either fails.
 //

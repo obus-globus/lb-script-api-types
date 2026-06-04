@@ -1,6 +1,6 @@
 name: Publish to npm
 
-# Publishes the typings/ package (@obus-globus/lb-script-api-types). Types-only —
+# Publishes the typings/ package (@wunk/lb-script-api-types). Types-only —
 # no build step. Version is `<lb-major>.<lb-minor>.<iteration>`: major.minor track
 # the LiquidBounce release line, the patch is our own iteration (see
 # docs/versioning.md). The exact LB build is in the package.json `liquidbounce`
@@ -8,7 +8,7 @@ name: Publish to npm
 # pointed at this version so consumers can `npm i ...@lb-0.38`.
 #
 # Access is controlled by publishConfig.access ("public"). Needs a repo/org secret
-# NPM_TOKEN with publish rights for the @obus-globus scope.
+# NPM_TOKEN with publish rights for the @wunk scope.
 on:
   release:
     types: [published]
@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org
-          scope: "@obus-globus"
+          scope: "@wunk"
 
       - name: Resolve name + version
         id: pkg

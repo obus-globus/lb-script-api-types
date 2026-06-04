@@ -3,7 +3,7 @@
 The package version is **`<lb-major>.<lb-minor>.<iteration>`**:
 
 ```
-@obus-globus/lb-script-api-types@0.38.2
+@wunk/lb-script-api-types@0.38.2
                                  ^^^^  ^
                                  |     our 3rd iteration of types for the LB 0.38 line
                                  LiquidBounce release line (LB 0.38.x)
@@ -26,7 +26,7 @@ The package version is **`<lb-major>.<lb-minor>.<iteration>`**:
     "ref": "v0.38.0-1-gfac52d9c8"
   }
   ```
-  Surface it with `npm view @obus-globus/lb-script-api-types liquidbounce`.
+  Surface it with `npm view @wunk/lb-script-api-types liquidbounce`.
 
 > Note: our `0.38.1` (iteration 1) is **not** the same number as LB's `0.38.1`
 > (`mod_version`). Ours is "the LB 0.38 line, our 2nd type build"; the exact LB
@@ -38,9 +38,9 @@ The package version is **`<lb-major>.<lb-minor>.<iteration>`**:
 Every publish also points an **`lb-<major>.<minor>`** dist-tag at itself:
 
 ```bash
-npm i @obus-globus/lb-script-api-types@lb-0.38   # newest types for LB 0.38
-npm i @obus-globus/lb-script-api-types           # newest overall (latest)
-npm i @obus-globus/lb-script-api-types@^0.38.0   # same as lb-0.38, via semver range
+npm i @wunk/lb-script-api-types@lb-0.38   # newest types for LB 0.38
+npm i @wunk/lb-script-api-types           # newest overall (latest)
+npm i @wunk/lb-script-api-types@^0.38.0   # same as lb-0.38, via semver range
 ```
 
 ## How the version is maintained

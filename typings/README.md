@@ -1,4 +1,4 @@
-# @obus-globus/lb-script-api-types
+# @wunk/lb-script-api-types
 
 TypeScript types for the **LiquidBounce** (nextgen, MC 1.21+) GraalJS **script
 API**: the Java/Kotlin/Minecraft surface a LiquidBounce script can reach at runtime
@@ -11,7 +11,7 @@ globals, and more. See the [improvements list][improvements] for the full diff.
 ## Install
 
 ```bash
-npm i -D @obus-globus/lb-script-api-types
+npm i -D @wunk/lb-script-api-types
 ```
 
 ## Use
@@ -21,7 +21,7 @@ Pull in the ambient script globals through `tsconfig.json`:
 ```jsonc
 {
   "compilerOptions": {
-    "types": ["@obus-globus/lb-script-api-types/ambient"]
+    "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
 ```
@@ -39,7 +39,7 @@ module.on("attack", (e) => {
 Import individual classes or events by their JVM path:
 
 ```ts
-import { AttackEntityEvent } from "@obus-globus/lb-script-api-types/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent";
+import { AttackEntityEvent } from "@wunk/lb-script-api-types/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent";
 ```
 
 The package ships one `.d.ts` per class (mirroring the JVM package layout), so
@@ -52,7 +52,7 @@ example `0.38.1` means types for LiquidBounce 0.38.1. The exact LB commit and
 Minecraft version are in the `package.json` `liquidbounce` block:
 
 ```bash
-npm view @obus-globus/lb-script-api-types liquidbounce
+npm view @wunk/lb-script-api-types liquidbounce
 ```
 
 Regenerate with the pipeline in the [repository][repo] when LiquidBounce updates.
