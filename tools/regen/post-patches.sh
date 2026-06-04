@@ -25,6 +25,11 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PKG_ROOT="${1:-$REPO_ROOT/tools/regen-output/@ccbluex/liquidbounce-script-api}"
 
+# Set to 1 if any source-enrichment step actually CRASHES (vs. legitimately
+# applying nothing). Checked at the end so a crashed enrichment fails the regen
+# loudly instead of silently shipping a tree with missing names/docs.
+POSTPATCH_FAILED=0
+
 if [[ ! -d "$PKG_ROOT" ]]; then
   echo "FAIL: package root not found: $PKG_ROOT" >&2
   exit 1
@@ -864,7 +869,7 @@ if [ "$SKIP_KDOC_EFF" == "1" ]; then
     echo "post-patches: T-Doc-Phase-C skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$MANIFEST" ] && [ -f "$APPLY_SCRIPT" ]; then
     python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$MANIFEST" || \
-        echo "post-patches: T-Doc-Phase-C failed (non-fatal, continuing)"
+        { echo "post-patches: ERROR — apply-kdoc CRASHED (continuing; TSDoc missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: T-Doc-Phase-C skipped (manifest or apply script missing)"
 fi
@@ -883,7 +888,7 @@ if [ "$SKIP_PARAM_NAMES_EFF" == "1" ]; then
     echo "post-patches: param-name rename skipped (SKIP_PARAM_NAMES/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$SIGNATURES" ] && [ -f "$SIG_SCRIPT" ]; then
     python3 "$SIG_SCRIPT" "$PKG_ROOT" "$SIGNATURES" || \
-        echo "post-patches: param-name rename failed (non-fatal, continuing)"
+        { echo "post-patches: ERROR — apply-signatures CRASHED (continuing; param names missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: param-name rename skipped (signatures or apply script missing)"
 fi
@@ -900,22 +905,22 @@ if [ "$SKIP_KDOC_EFF" == "1" ]; then
     echo "post-patches: @deprecated skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$DEPRECATIONS" ] && [ -f "$DEP_SCRIPT" ]; then
     python3 "$DEP_SCRIPT" "$PKG_ROOT" "$DEPRECATIONS" || \
-        echo "post-patches: @deprecated failed (non-fatal, continuing)"
+        { echo "post-patches: ERROR — apply-deprecations CRASHED (continuing; @deprecated missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: @deprecated skipped (deprecations or apply script missing)"
 fi
 
 # -----------------------------------------------------------------------------
 # W4 — document the ScriptModule.on() event overloads. apply-event-docs.py adds
-# `@see {@link <Event>}` (+ a one-line summary when the event class has KDoc) to
-# each generated overload. The @see target is read off the overload itself; the
-# summary comes from the KDoc manifest, so it's gated under the doc toggle.
+# `@see {@link <Event>}` (read off the overload itself, so it's purely structural
+# and runs even under SKIP_KDOC) + a one-line summary from the KDoc manifest
+# (passed only when KDoc is enabled, so summaries drop but @see survives).
 EVENTDOC_SCRIPT="$REPO_ROOT/tools/regen/apply-event-docs.py"
-if [ "$SKIP_KDOC_EFF" == "1" ]; then
-    echo "post-patches: on() event docs skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
-elif [ -f "$EVENTDOC_SCRIPT" ]; then
-    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" "$MANIFEST" || \
-        echo "post-patches: on() event docs failed (non-fatal, continuing)"
+if [ -f "$EVENTDOC_SCRIPT" ]; then
+    EVENTDOC_MANIFEST=""
+    [ "$SKIP_KDOC_EFF" != "1" ] && EVENTDOC_MANIFEST="$MANIFEST"
+    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" $EVENTDOC_MANIFEST || \
+        { echo "post-patches: ERROR — apply-event-docs CRASHED (continuing; on() docs missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: on() event docs skipped (apply script missing)"
 fi
@@ -1168,6 +1173,11 @@ declare module '../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptRefl
 }
 AUG
     echo "post-patches: W-#12 wrote augmentations/ScriptReflectionUtil.augmentation.d.ts"
+fi
+
+if [[ "$POSTPATCH_FAILED" == "1" ]]; then
+  echo "post-patches: FAILED — one or more source-enrichment steps crashed (see ERROR lines above); the output is INCOMPLETE." >&2
+  exit 1
 fi
 
 echo "post-patches: done ($PKG_ROOT)"

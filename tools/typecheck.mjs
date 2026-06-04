@@ -82,11 +82,23 @@ function partA() {
         return { ok: false, ran: 0 };
     }
     const parsed = ts.parseJsonConfigFileContent(cfg.config, ts.sys, SMOKE_DIR);
+    if (parsed.errors && parsed.errors.length) {
+        console.error(`  FAIL — ${parsed.errors.length} tsconfig error(s) (gate cannot trust the result):`);
+        for (const d of parsed.errors) console.error(`      ${fmt(d)}`);
+        return { ok: false, ran: 0 };
+    }
 
     const tests = readdirSync(SMOKE_DIR)
         .filter((f) => f.endsWith(".test.ts"))
         .sort()
         .map((f) => path.join(SMOKE_DIR, f));
+
+    // A green no-op gate would be worse than a red one: if the tests ever stop
+    // matching, fail loudly rather than report "0 clean".
+    if (tests.length === 0) {
+        console.error(`  FAIL — no *.test.ts found in ${path.relative(REPO, SMOKE_DIR)}`);
+        return { ok: false, ran: 0 };
+    }
 
     // One program over all test files — they're independent modules, so a
     // diagnostic is attributed to whichever test file it lives in.
@@ -94,6 +106,17 @@ function partA() {
     const all = ts.getPreEmitDiagnostics(program);
 
     let ok = true;
+
+    // Fileless diagnostics (bad tsconfig option/lib, etc.) aren't attributable
+    // to a test file but mean the program never type-checked correctly — they'd
+    // otherwise be silently dropped and the gate would pass green.
+    const fileless = all.filter((d) => !d.file);
+    if (fileless.length) {
+        ok = false;
+        console.error(`  FAIL — ${fileless.length} project-level diagnostic(s) (gate cannot trust the result):`);
+        for (const d of fileless) console.error(`      ${fmt(d)}`);
+    }
+
     for (const test of tests) {
         const mine = all.filter((d) => d.file && path.resolve(d.file.fileName) === test);
         const rel = path.relative(REPO, test);

@@ -74,9 +74,12 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Point lb-<minor> dist-tag at this version
+        # Runs whenever this is a real (non-dry) release: after a fresh publish
+        # OR when the version was already published (so a missing/stale dist-tag
+        # can be repaired by re-running). `dist-tag add` is an idempotent upsert.
+        # The implicit success() means it's skipped if the Publish step failed.
         if: >-
-          steps.exists.outputs.published == 'false' &&
-          (github.event_name == 'release' || inputs.dry_run == false)
+          github.event_name == 'release' || inputs.dry_run == false
         working-directory: typings
         run: |
           npm dist-tag add "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" \

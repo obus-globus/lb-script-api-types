@@ -52,7 +52,8 @@ try { ref = execFileSync("git", ["-C", LB, "describe", "--tags", "--always"], { 
 // LB's mod_version is a git-describe core like `0.38.1` (= tag v0.38.0 + commits).
 // The meaningful LB *line* is its major.minor (0.38); LB's own patch is noise we
 // keep in the provenance block, not in our version.
-const m = /^(\d+)\.(\d+)\./.exec(modVersion);
+// Accept an optional `v` prefix and a 2-component (`0.38`) or longer version.
+const m = /^v?(\d+)\.(\d+)(?:\.|$)/.exec(modVersion);
 if (!m) {
     console.error(`LB mod_version "${modVersion}" has no MAJOR.MINOR prefix; adjust stamp-version.mjs.`);
     process.exit(1);
