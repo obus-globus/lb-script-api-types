@@ -322,6 +322,14 @@ def _extract_package(root: Node) -> str:
     return ""
 
 
+def _is_suspend(fn_node: Node) -> bool:
+    """True if the function declaration carries a `suspend` modifier."""
+    mods = _child_of_type(fn_node, "modifiers")
+    if mods is None:
+        return False
+    return "suspend" in (mods.text.decode("utf-8", "replace") if mods.text else "")
+
+
 def _record_signature(
     child: Node,
     member: str,
@@ -341,6 +349,11 @@ def _record_signature(
         "returns": _return_type_str(child),
         "source": {"file": rel_file, "line": child.start_point[0] + 1},
     }
+    # A `suspend fun` reflects with an extra trailing Continuation param, so its
+    # source arity does not match the reflected/.d.ts arity. Flag it so the
+    # rename post-patch never matches a source suspend overload to a .d.ts decl.
+    if _is_suspend(child):
+        rec["suspend"] = True
     if receiver:
         rec["isExtension"] = True
         rec["receiver"] = receiver
@@ -638,16 +651,18 @@ def _deprecation_of(child: Node) -> Optional[dict[str, str]]:
                     if message is None:
                         message = _string_content(sl)
                     continue
-                # ReplaceWith("...") — its string is nested one level deeper.
-                inner = _child_of_type(va, "constructor_invocation")
+                # ReplaceWith("...") — a `call_expression` (positional or
+                # `replaceWith = ReplaceWith(...)` named) whose name is an
+                # `identifier`; its string is nested one level deeper.
+                inner = _child_of_type(va, "call_expression")
                 if inner is not None:
-                    inner_ut = _child_of_type(inner, "user_type")
-                    inner_name = (inner_ut.text.decode("utf-8", "replace")
-                                  if inner_ut is not None and inner_ut.text else "")
+                    inner_id = _child_of_type(inner, "identifier")
+                    inner_name = (inner_id.text.decode("utf-8", "replace")
+                                  if inner_id is not None and inner_id.text else "")
                     if inner_name.split(".")[-1] == "ReplaceWith":
-                        inner_vargs = _child_of_type(inner, "value_arguments")
-                        if inner_vargs is not None:
-                            for iva in inner_vargs.children:
+                        inner_args = _child_of_type(inner, "value_arguments")
+                        if inner_args is not None:
+                            for iva in inner_args.children:
                                 if iva.type == "value_argument":
                                     isl = _child_of_type(iva, "string_literal")
                                     if isl is not None:

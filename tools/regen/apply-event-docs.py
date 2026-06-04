@@ -88,9 +88,14 @@ def main(argv: list[str]) -> int:
     for idx, ln in enumerate(lines):
         m = OVERLOAD_RE.match(ln)
         if m:
-            prev = out[-1].strip() if out else ""
+            # Already documented? Look back past blank lines for a closing `*/`.
+            prev = ""
+            for j in range(len(out) - 1, -1, -1):
+                if out[j].strip():
+                    prev = out[j].strip()
+                    break
             if prev.endswith("*/"):
-                out.append(ln)  # already documented
+                out.append(ln)
                 continue
             indent = m.group("indent")
             event = m.group("event")

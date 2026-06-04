@@ -19,6 +19,7 @@
     },
     "net.ccbluex.liquidbounce.features.module.ModuleCategory.readableName": {
       "message": "For script compatibility only. Use choiceName instead",
+      "replaceWith": "choiceName",
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleCategory.kt",
@@ -51,6 +52,7 @@
     },
     "net.ccbluex.liquidbounce.render.engine.type.Color4b.toARGB": {
       "message": "Replaced with Color4b.argb",
+      "replaceWith": "this.argb",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt",
@@ -59,6 +61,7 @@
     },
     "net.ccbluex.liquidbounce.script.PolyglotScript.registerChoice": {
       "message": "Use registerMode instead",
+      "replaceWith": "registerMode(modeValueGroup, modeObject, callback)",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
@@ -67,6 +70,7 @@
     },
     "net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.impl.SigmoidAngleSmooth": {
       "message": "Interpolation mode combines Sigmoid and Bezier interpolation",
+      "replaceWith": "InterpolationAngleSmooth",
       "kind": "class",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/SigmoidAngleSmooth.kt",
@@ -75,6 +79,7 @@
     },
     "net.ccbluex.liquidbounce.utils.math.Vec3.toVec3i": {
       "message": "use this.toBlockPos instead",
+      "replaceWith": "this.toBlockPos",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
@@ -83,6 +88,7 @@
     },
     "net.ccbluex.liquidbounce.utils.sorting.compareByCondition": {
       "message": "Use standard compareBy instead",
+      "replaceWith": "compareBy(cond)",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt",
@@ -91,6 +97,7 @@
     },
     "net.ccbluex.liquidbounce.utils.sorting.compareValueByCondition": {
       "message": "Use standard compareValuesBy instead",
+      "replaceWith": "compareValuesBy(a, b, cond)",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt",

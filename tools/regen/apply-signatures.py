@@ -176,6 +176,11 @@ def pick_overload(overloads: list[dict], dts_arity: int) -> Optional[dict]:
     `dts_arity - 1` (its receiver occupies paramarg0)."""
     pool = []
     for o in overloads:
+        # Suspend source overloads have an extra reflected Continuation param, so
+        # their source arity never matches the .d.ts arity space — never match
+        # one (it would assign wrong names to a coincidental same-arity decl).
+        if o.get("suspend"):
+            continue
         n = len(o.get("params", []))
         if o.get("isExtension"):
             if n + 1 == dts_arity:

@@ -108,6 +108,9 @@ def dep_line(entry: dict, indent: str) -> str:
     rep = (entry.get("replaceWith") or "").strip()
     if rep:
         msg = f"{msg} Use `{rep}`.".strip() if msg else f"Use `{rep}`."
+    # A `*/` in the message/ReplaceWith would close the TSDoc block early and
+    # emit live garbage; break the sequence so it stays inside the comment.
+    msg = msg.replace("*/", "* /")
     return f"{indent} * @deprecated {msg}".rstrip()
 
 
