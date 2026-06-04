@@ -1,13 +1,14 @@
 name: Publish to npm
 
 # Publishes the typings/ package (@obus-globus/lb-script-api-types). Types-only —
-# no build step. The version IS the LiquidBounce version it was generated for
-# (typings/package.json, stamped by scripts/stamp-version.mjs on each regen); the
-# exact LB commit is in the package.json `liquidbounce` block. See docs/versioning.md.
+# no build step. Version is `<lb-major>.<lb-minor>.<iteration>`: major.minor track
+# the LiquidBounce release line, the patch is our own iteration (see
+# docs/versioning.md). The exact LB build is in the package.json `liquidbounce`
+# block. After publishing, an `lb-<major>.<minor>` dist-tag (e.g. `lb-0.38`) is
+# pointed at this version so consumers can `npm i ...@lb-0.38`.
 #
-# Access is controlled by publishConfig.access ("restricted" now; flip to "public").
-# Needs a repo/org secret NPM_TOKEN (npm automation token with publish rights for
-# the @obus-globus scope). Scoped *restricted* (private) packages need a paid plan.
+# Access is controlled by publishConfig.access ("public"). Needs a repo/org secret
+# NPM_TOKEN with publish rights for the @obus-globus scope.
 on:
   release:
     types: [published]
@@ -39,9 +40,12 @@ jobs:
         run: |
           name="$(node -p "require('./package.json').name")"
           version="$(node -p "require('./package.json').version")"
+          # LB line dist-tag: lb-<major>.<minor> (e.g. lb-0.38).
+          lbtag="lb-$(node -p "require('./package.json').version.split('.').slice(0,2).join('.')")"
           echo "name=$name"       >> "$GITHUB_OUTPUT"
           echo "version=$version" >> "$GITHUB_OUTPUT"
-          echo "Package: $name@$version (LB $(node -p "require('./package.json').liquidbounce.version"))"
+          echo "lbtag=$lbtag"     >> "$GITHUB_OUTPUT"
+          echo "Package: $name@$version (LB $(node -p "require('./package.json').liquidbounce.version")) dist-tag $lbtag"
 
       - name: Verify package contents
         working-directory: typings
@@ -66,5 +70,17 @@ jobs:
           (github.event_name == 'release' || inputs.dry_run == false)
         working-directory: typings
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Point lb-<minor> dist-tag at this version
+        if: >-
+          steps.exists.outputs.published == 'false' &&
+          (github.event_name == 'release' || inputs.dry_run == false)
+        working-directory: typings
+        run: |
+          npm dist-tag add "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" \
+            "${{ steps.pkg.outputs.lbtag }}"
+          echo "::notice::${{ steps.pkg.outputs.lbtag }} -> ${{ steps.pkg.outputs.version }}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

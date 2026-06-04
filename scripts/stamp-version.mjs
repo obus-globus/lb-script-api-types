@@ -1,13 +1,23 @@
 // Stamp typings/package.json with a version that LINKS to the LiquidBounce build
 // the types were generated from. Derives everything from references/liquidbounce
-// (the LB source checkout at PINNED_SHA):
+// (the LB source checkout at PINNED_SHA).
 //
-//   version            = <lb mod_version>   (e.g. 0.38.1) — the npm version IS the
-//                        LiquidBounce version, so one published version == one LB
-//                        release (clean for `npm view`/resolution; no build-meta).
-//   liquidbounce { }   = { version, minecraft, commit, ref } provenance block —
-//                        the exact LB commit + MC version live here (npm-safe
-//                        custom metadata), surfaced via `npm view <pkg> liquidbounce`.
+// Versioning scheme (see docs/versioning.md):
+//
+//   version          = <lb-major>.<lb-minor>.<iteration>
+//                      major.minor track the LiquidBounce release line (LB
+//                      0.38.x  ->  0.38.*); the PATCH is OUR own iteration
+//                      counter, so we can ship type-only improvements between LB
+//                      releases. `^0.38.0` resolves to every type build for LB
+//                      0.38 and stops before 0.39.
+//   liquidbounce { } = { version, minecraft, commit, ref } provenance — the EXACT
+//                      LB build (incl. its own patch / git-describe) lives here,
+//                      surfaced via `npm view <pkg> liquidbounce`.
+//
+// This script only keeps major.minor synced to the LB line and refreshes the
+// provenance. The PATCH (iteration) is bumped by hand at release time
+// (`cd typings && npm version patch`) — stamping/regen never touches it, except
+// to reset it to 0 when LB advances to a new minor line.
 //
 // Usage: node scripts/stamp-version.mjs            (stamp from the checkout)
 //        node scripts/stamp-version.mjs --check     (print, don't write)
@@ -39,16 +49,29 @@ const sha7 = sha.slice(0, 9);
 let ref = sha7;
 try { ref = execFileSync("git", ["-C", LB, "describe", "--tags", "--always"], { encoding: "utf8" }).trim(); } catch { /* no tags */ }
 
-// The npm version is exactly LB's mod_version (one publish per LB release — see
-// docs/versioning.md). mod_version must be a clean semver core.
-if (!/^\d+\.\d+\.\d+$/.test(modVersion)) {
-    console.error(`LB mod_version "${modVersion}" is not a clean MAJOR.MINOR.PATCH; adjust the scheme in stamp-version.mjs.`);
+// LB's mod_version is a git-describe core like `0.38.1` (= tag v0.38.0 + commits).
+// The meaningful LB *line* is its major.minor (0.38); LB's own patch is noise we
+// keep in the provenance block, not in our version.
+const m = /^(\d+)\.(\d+)\./.exec(modVersion);
+if (!m) {
+    console.error(`LB mod_version "${modVersion}" has no MAJOR.MINOR prefix; adjust stamp-version.mjs.`);
     process.exit(1);
 }
-const version = modVersion;
+const lbLine = `${m[1]}.${m[2]}`; // e.g. "0.38"
 
 const pkgPath = resolve(root, "typings/package.json");
 const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
+
+// Keep our PATCH (iteration) if we're still on the same LB line; reset to 0 when
+// LB advances a minor. The patch is otherwise owned by `npm version patch`.
+let version;
+const cur = /^(\d+)\.(\d+)\.(\d+)/.exec(pkg.version || "");
+if (cur && `${cur[1]}.${cur[2]}` === lbLine) {
+    version = `${lbLine}.${cur[3]}`;        // same LB line — preserve iteration
+} else {
+    version = `${lbLine}.0`;                // new LB line — reset iteration
+}
+
 const next = {
     ...pkg,
     version,

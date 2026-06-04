@@ -150,16 +150,21 @@ The manifests stay committed; these only gate whether they are applied during
 
 ## Versioning
 
-The npm version is the LiquidBounce version the types were generated for. For
-example `0.38.1` means types for LiquidBounce 0.38.1. The exact LB commit and
-Minecraft version live in the `package.json` `liquidbounce` block:
+The version is `<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the
+LiquidBounce release line, and the `patch` is our own iteration counter (so we
+can ship type-only improvements between LB releases). `0.38.2` means "our 3rd
+type build for the LB 0.38 line".
 
 ```bash
-npm view @obus-globus/lb-script-api-types liquidbounce
+npm i @obus-globus/lb-script-api-types@^0.38.0    # newest types for LB 0.38.x
+npm i @obus-globus/lb-script-api-types@lb-0.38    # same, via the LB-line dist-tag
+npm view @obus-globus/lb-script-api-types liquidbounce   # exact LB build / commit / MC
 ```
 
-`scripts/stamp-version.mjs` derives this from the LB checkout and runs
-automatically during `run-regen.sh`. Details in [docs/versioning.md](docs/versioning.md).
+The exact LB build lives in the `package.json` `liquidbounce` block.
+`scripts/stamp-version.mjs` keeps `major.minor` synced to the LB line on every
+`run-regen.sh`; the iteration is bumped by hand (`cd typings && npm version
+patch`) when you cut a release. Full flow in [docs/versioning.md](docs/versioning.md).
 
 ## Publishing to npm
 
