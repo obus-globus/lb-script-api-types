@@ -15,14 +15,12 @@ export class DataItem extends Object implements Item {
     amount(): number;
     copy(): DataItem;
     data(): number;
-    data(): number;
     dataContainer(): StructuredDataContainer;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     identifier(): number;
     isTemplate(): boolean;
     setAmount(arg0: number): void;
-    setData(arg0: number): void;
     setData(arg0: number): void;
     setIdentifier(arg0: number): void;
     setTag(arg0: Map$Entry<string, Tag>[]): void;

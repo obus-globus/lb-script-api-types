@@ -44,7 +44,6 @@ export class ServerLoginPacketListenerImpl extends Object implements PacketConte
     // private finishLoginAndWaitForClient(gameProfile: GameProfile): void;
     getAddon(): ServerLoginNetworkAddon;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     getUserName(): string;
     handleCookieResponse(packet: ServerboundCookieResponsePacket): void;
     handleCustomQueryPacket(packet: ServerboundCustomQueryAnswerPacket): void;

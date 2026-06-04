@@ -7,7 +7,6 @@ export class Float2DoubleOpenCustomHashMap$ValueIterator extends Float2DoubleOpe
     constructor(null_: Float2DoubleOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextDouble(): number;
     skip(arg0: number): number;

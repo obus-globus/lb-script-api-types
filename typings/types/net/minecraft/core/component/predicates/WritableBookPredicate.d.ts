@@ -22,7 +22,6 @@ export class WritableBookPredicate extends Record implements SingleComponentItem
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
-    matches(components: DataComponentGetter): boolean;
     matches(value: WritableBookContent): boolean;
     pages(): Optional<CollectionPredicate<Filterable<string>, WritableBookPredicate$PagePredicate>>;
     toString(): string;

@@ -21,7 +21,6 @@ export class SculkCatalystBlockEntity$CatalystListener extends Object implements
     readonly sculkSpreader: SculkSpreader;
     // private bloom(level: ServerLevel, pos: BlockPos, state: BlockState, random: RandomSource): void;
     getDeliveryMode(): GameEventListener$DeliveryMode;
-    getDeliveryMode(): GameEventListener$DeliveryMode;
     getListenerRadius(): number;
     getListenerSource(): PositionSource;
     getSculkSpreader(): SculkSpreader;

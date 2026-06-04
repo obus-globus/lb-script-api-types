@@ -11,7 +11,5 @@ export class AbstractFloat2BooleanMap$BasicEntry extends Object implements Float
     getFloatKey(): number;
     hashCode(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     toString(): string;
 }

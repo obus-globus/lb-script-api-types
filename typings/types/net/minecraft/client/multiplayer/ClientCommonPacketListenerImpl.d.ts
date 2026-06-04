@@ -67,7 +67,6 @@ export abstract class ClientCommonPacketListenerImpl extends Object implements P
     createDisconnectionInfo(reason: Component, cause: Throwable): DisconnectionDetails;
     fillListenerSpecificCrashDetails(report: CrashReport, connectionDetails: CrashReportCategory): void;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     handleClearDialog(packet: ClientboundClearDialogPacket): void;
     handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;
     handleCustomPayload(payload: CustomPacketPayload): void;

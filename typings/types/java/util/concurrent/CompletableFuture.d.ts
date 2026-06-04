@@ -69,7 +69,6 @@ export class CompletableFuture<T extends Object | number | string | boolean> ext
     encodeOutcome(arg0: T, arg1: Throwable): Object;
     encodeValue(arg0: T): Object;
     exceptionNow(): Throwable;
-    exceptionNow(): Throwable;
     exceptionally(arg0: (param0: Throwable) => T): CompletableFuture<T>;
     exceptionallyAsync(arg0: (param0: Throwable) => T): CompletableFuture<T>;
     exceptionallyAsync(arg0: (param0: Throwable) => T, arg1: Executor): CompletableFuture<T>;
@@ -114,7 +113,6 @@ export class CompletableFuture<T extends Object | number | string | boolean> ext
     runAfterEither(arg0: CompletionStage<Object>, arg1: () => void): CompletableFuture<void>;
     runAfterEitherAsync(arg0: CompletionStage<Object>, arg1: () => void): CompletableFuture<void>;
     runAfterEitherAsync(arg0: CompletionStage<Object>, arg1: () => void, arg2: Executor): CompletableFuture<void>;
-    state(): Future$State;
     state(): Future$State;
     thenAccept(arg0: (param0: T) => void): CompletableFuture<void>;
     thenAcceptAsync(arg0: (param0: T) => void): CompletableFuture<void>;

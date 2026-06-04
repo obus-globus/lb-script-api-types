@@ -10,5 +10,4 @@ export class DownstreamExceptionContext extends Object implements CoroutineConte
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
     plus(context: CoroutineContext): CoroutineContext;
-    plus(context: CoroutineContext): CoroutineContext;
 }

@@ -21,7 +21,6 @@ export class BakedSheetGlyph$GlyphInstance extends Record implements TextRendera
     activeBottom(): number;
     activeLeft(): number;
     activeRight(): number;
-    activeRight(): number;
     activeTop(): number;
     boldOffset(): number;
     bottom(): number;

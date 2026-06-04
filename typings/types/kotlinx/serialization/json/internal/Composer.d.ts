@@ -10,12 +10,6 @@ export class Composer extends Object {
     print(v: boolean): void;
     print(v: number): void;
     print(v: string): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: string): void;
     printQuoted(value: string): void;
     space(): void;
     unIndent(): void;

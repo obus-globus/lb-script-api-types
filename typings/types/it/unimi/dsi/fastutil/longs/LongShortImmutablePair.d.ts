@@ -12,28 +12,22 @@ export class LongShortImmutablePair extends Object implements LongShortPair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongShortPair;
-    first(arg0: number): LongShortPair;
     firstLong(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongShortPair;
-    key(arg0: number): LongShortPair;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongShortPair;
     left(arg0: number): LongShortPair;
     leftLong(): number;
     right(): number;
     right(arg0: number): LongShortPair;
-    right(arg0: number): LongShortPair;
     rightShort(): number;
     second(): number;
-    second(arg0: number): LongShortPair;
     second(arg0: number): LongShortPair;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): LongShortPair;
     value(arg0: number): LongShortPair;
     valueShort(): number;
 }

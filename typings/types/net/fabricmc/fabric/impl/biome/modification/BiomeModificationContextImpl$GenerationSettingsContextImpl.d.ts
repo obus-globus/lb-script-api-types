@@ -20,7 +20,6 @@ export class BiomeModificationContextImpl$GenerationSettingsContextImpl extends 
     // private rebuildFlowerFeatures(): void;
     removeCarver(arg0: ResourceKey<ConfiguredWorldCarver<Object>>): boolean;
     removeFeature(arg0: ResourceKey<PlacedFeature>): boolean;
-    removeFeature(arg0: ResourceKey<PlacedFeature>): boolean;
     removeFeature(arg0: GenerationStep$Decoration, arg1: ResourceKey<PlacedFeature>): boolean;
     // private unfreezeFeatures(): void;
 }

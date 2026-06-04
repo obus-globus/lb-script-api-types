@@ -6,7 +6,6 @@ export abstract class CombinedIngredient extends Object implements CustomIngredi
     constructor(arg0: Ingredient[])
     // private ingredients: Ingredient[];
     display(): SlotDisplay;
-    display(): SlotDisplay;
     equals(arg0: Object | null): boolean;
     getIngredients(): Ingredient[];
     hashCode(): number;

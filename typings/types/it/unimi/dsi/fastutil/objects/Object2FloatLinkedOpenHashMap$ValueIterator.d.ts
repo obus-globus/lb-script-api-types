@@ -5,12 +5,10 @@ export class Object2FloatLinkedOpenHashMap$ValueIterator extends Object2FloatLin
     constructor(null_: Object2FloatLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

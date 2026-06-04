@@ -11,9 +11,7 @@ export class CharLinkedOpenCustomHashSet$SetIterator extends Object implements C
     // private next: number;
     // private prev: number;
     add(arg0: string): void;
-    add(arg0: string): void;
     // private ensureIndexKnown(): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -25,7 +23,5 @@ export class CharLinkedOpenCustomHashSet$SetIterator extends Object implements C
     previousChar(): string;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

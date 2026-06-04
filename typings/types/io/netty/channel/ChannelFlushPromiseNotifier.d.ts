@@ -9,7 +9,6 @@ export class ChannelFlushPromiseNotifier extends Object {
     // private tryNotify: boolean;
     // private writeCounter: number;
     add(arg0: ChannelPromise, arg1: number): ChannelFlushPromiseNotifier;
-    add(arg0: ChannelPromise, arg1: number): ChannelFlushPromiseNotifier;
     increaseWriteCounter(arg0: number): ChannelFlushPromiseNotifier;
     notifyFlushFutures(): ChannelFlushPromiseNotifier;
     notifyFlushFutures(arg0: Throwable): ChannelFlushPromiseNotifier;

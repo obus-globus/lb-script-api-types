@@ -6,8 +6,6 @@ export class BooleanIterators$UnmodifiableListIterator extends Object implements
     constructor(arg0: BooleanListIterator)
     // private i: BooleanListIterator;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -18,6 +16,5 @@ export class BooleanIterators$UnmodifiableListIterator extends Object implements
     previousBoolean(): boolean;
     previousIndex(): number;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
 }

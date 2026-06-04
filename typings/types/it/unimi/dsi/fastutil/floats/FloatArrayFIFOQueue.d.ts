@@ -19,14 +19,11 @@ export class FloatArrayFIFOQueue extends Object implements FloatPriorityQueue, S
     dequeueFloat(): number;
     dequeueLastFloat(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     enqueueFirst(arg0: number): void;
     // private expand(): void;
     first(): number;
     firstFloat(): number;
     last(): number;
-    lastFloat(): number;
     lastFloat(): number;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;

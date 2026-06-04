@@ -23,20 +23,16 @@ export class DynamicObjectFeature extends Object implements Feature {
     afterImageWrite(access: Feature$AfterImageWriteAccess): void;
     afterRegistration(access: Feature$AfterRegistrationAccess): void;
     beforeAnalysis(access: Feature$BeforeAnalysisAccess): void;
-    beforeAnalysis(access: Feature$BeforeAnalysisAccess): void;
     beforeCompilation(access: Feature$BeforeCompilationAccess): void;
     beforeHeapLayout(access: Feature$BeforeHeapLayoutAccess): void;
     beforeImageWrite(access: Feature$BeforeImageWriteAccess): void;
     beforeUniverseBuilding(access: Feature$BeforeUniverseBuildingAccess): void;
     cleanup(): void;
-    cleanup(): void;
     duringAnalysis(access: Feature$DuringAnalysisAccess): void;
     duringSetup(access: Feature$DuringSetupAccess): void;
     getDescription(): string;
-    getDescription(): string;
     getRequiredFeatures(): Class<Feature>[];
     getURL(): string;
-    isInConfiguration(access: Feature$IsInConfigurationAccess): boolean;
     isInConfiguration(access: Feature$IsInConfigurationAccess): boolean;
     onAnalysisExit(access: Feature$OnAnalysisExitAccess): void;
 }

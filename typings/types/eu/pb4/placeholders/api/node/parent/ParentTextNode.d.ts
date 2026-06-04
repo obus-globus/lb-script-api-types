@@ -11,7 +11,6 @@ export interface ParentTextNode extends TextNode, Object{
     copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     getChildren(): TextNode[];
     isDynamic(): boolean;
-    isDynamic(): boolean;
     isDynamicNoChildren(): boolean;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;

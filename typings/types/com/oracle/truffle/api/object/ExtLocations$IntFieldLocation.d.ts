@@ -18,8 +18,6 @@ export class ExtLocations$IntFieldLocation extends ExtLocations$AbstractPrimitiv
     getFinalInt(store: DynamicObject, condition: boolean): number;
     getInt(store: DynamicObject, shape: Shape): number;
     getInt(store: DynamicObject, guard: boolean): number;
-    getInt(store: DynamicObject, shape: Shape): number;
-    getType(): Class<number>;
     getType(): Class<number>;
     primitiveFieldCount(): number;
     set(store: DynamicObject, value: Object, shape: Shape): void;
@@ -27,6 +25,5 @@ export class ExtLocations$IntFieldLocation extends ExtLocations$AbstractPrimitiv
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
     setInt(store: DynamicObject, value: number, shape: Shape): void;
     setInt(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
-    setInt(store: DynamicObject, value: number, shape: Shape): void;
     setIntInternal(store: DynamicObject, value: number): void;
 }

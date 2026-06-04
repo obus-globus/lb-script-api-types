@@ -45,7 +45,6 @@ export interface Short2ReferenceFunction<V extends Object | number | string | bo
     andThenShort(arg0: (param0: V) => kotlin.Short): (param0: number) => kotlin.Short;
     apply<K extends Object | number | string | boolean>(arg0: K): V;
     apply(arg0: number): V;
-    apply(arg0: number): V;
     clear(): void;
     compose(arg0: (param0: T) => number): (param0: T) => V;
     composeByte(arg0: (param0: number) => kotlin.Short): (param0: V) => unknown;
@@ -58,19 +57,15 @@ export interface Short2ReferenceFunction<V extends Object | number | string | bo
     composeReference(arg0: (param0: T) => kotlin.Short): (param0: T) => V;
     composeShort(arg0: (param0: number) => kotlin.Short): (param0: V) => unknown;
     containsKey(arg0: Object): boolean;
-    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;
     get(arg0: Object): V;
     get(arg0: number): V;
     getOrDefault(arg0: Object, arg1: V): V;
-    getOrDefault(arg0: Object, arg1: V): V;
     getOrDefault(arg0: number, arg1: V): V;
     put<K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
     put(arg0: number, arg1: V): V;
-    put(arg0: number, arg1: V): V;
-    remove(arg0: Object): V;
     remove(arg0: Object): V;
     remove(arg0: number): V;
     size(): number;

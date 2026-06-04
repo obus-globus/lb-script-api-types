@@ -17,7 +17,6 @@ export class ResourceLeakDetector$DefaultResourceLeak<T extends Object | number 
     dispose(): boolean;
     // private generateReport(arg0: ResourceLeakDetector$TraceRecord): string;
     getCloseStackTraceIfAny(): Throwable;
-    getCloseStackTraceIfAny(): Throwable;
     getReportAndClearRecords(): string;
     record(): void;
     record(arg0: Object): void;

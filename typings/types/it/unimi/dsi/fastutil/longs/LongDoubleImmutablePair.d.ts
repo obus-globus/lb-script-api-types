@@ -12,28 +12,22 @@ export class LongDoubleImmutablePair extends Object implements LongDoublePair, S
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongDoublePair;
-    first(arg0: number): LongDoublePair;
     firstLong(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongDoublePair;
-    key(arg0: number): LongDoublePair;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongDoublePair;
     left(arg0: number): LongDoublePair;
     leftLong(): number;
     right(): number;
     right(arg0: number): LongDoublePair;
-    right(arg0: number): LongDoublePair;
     rightDouble(): number;
     second(): number;
-    second(arg0: number): LongDoublePair;
     second(arg0: number): LongDoublePair;
     secondDouble(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): LongDoublePair;
     value(arg0: number): LongDoublePair;
     valueDouble(): number;
 }

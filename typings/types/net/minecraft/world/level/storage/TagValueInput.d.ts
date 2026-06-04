@@ -23,7 +23,6 @@ export class TagValueInput extends Object implements FabricValueInput, ValueInpu
     childrenList(name: string): Optional<ValueInput[]>;
     childrenListOrEmpty(name: string): ValueInput[];
     contains(arg0: string): boolean;
-    contains(arg0: string): boolean;
     getBooleanOr(name: string, defaultValue: boolean): boolean;
     getByteOr(name: string, defaultValue: number): number;
     getDoubleOr(name: string, defaultValue: number): number;
@@ -42,7 +41,6 @@ export class TagValueInput extends Object implements FabricValueInput, ValueInpu
     getShortOr(name: string, defaultValue: number): number;
     getString(name: string): Optional<string>;
     getStringOr(name: string, defaultValue: string): string;
-    keySet(): E[];
     keySet(): E[];
     list(name: string, codec: Codec<T>): Optional<T[]>;
     listOrEmpty(name: string, codec: Codec<T>): T[];

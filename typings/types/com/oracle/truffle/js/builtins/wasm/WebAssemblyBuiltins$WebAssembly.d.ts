@@ -29,7 +29,6 @@ export class WebAssemblyBuiltins$WebAssembly extends Enum<WebAssemblyBuiltins$We
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isEnumerable(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

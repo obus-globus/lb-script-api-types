@@ -33,12 +33,10 @@ export abstract class ContainerObjectSelectionList$Entry<E extends ContainerObje
     keyPressed(event: KeyEvent): boolean;
     keyReleased(event: KeyEvent): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
-    mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseReleased(event: MouseButtonEvent): boolean;
     mouseScrolled(x: number, y: number, scrollX: number, scrollY: number): boolean;
     narratables(): NarratableEntry[];
-    nextFocusPath(navigationEvent: FocusNavigationEvent): ComponentPath;
     nextFocusPath(navigationEvent: FocusNavigationEvent): ComponentPath;
     // private nextFocusPathInDirection(focusedRectangle: ScreenRectangle, direction: ScreenDirection, excluded: GuiEventListener, navigationEvent: FocusNavigationEvent$ArrowNavigation): ComponentPath;
     // private nextFocusPathVaguelyInDirection(focusedRectangle: ScreenRectangle, direction: ScreenDirection, excluded: GuiEventListener, navigationEvent: FocusNavigationEvent): ComponentPath;
@@ -46,6 +44,5 @@ export abstract class ContainerObjectSelectionList$Entry<E extends ContainerObje
     setDragging(dragging: boolean): void;
     setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;
-    setFocused(focused: boolean): void;
     updateNarration(output: NarrationElementOutput): void;
 }

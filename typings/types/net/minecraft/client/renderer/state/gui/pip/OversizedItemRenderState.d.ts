@@ -17,7 +17,6 @@ export class OversizedItemRenderState extends Record implements PictureInPicture
     guiItemRenderState(): GuiItemRenderState;
     hashCode(): number;
     pose(): Matrix3x2f;
-    pose(): Matrix3x2f;
     scale(): number;
     scissorArea(): ScreenRectangle;
     toString(): string;

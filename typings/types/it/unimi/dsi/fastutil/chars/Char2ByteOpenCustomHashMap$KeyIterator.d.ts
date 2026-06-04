@@ -7,7 +7,6 @@ export class Char2ByteOpenCustomHashMap$KeyIterator extends Char2ByteOpenCustomH
     constructor(null_: Char2ByteOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     nextChar(): string;

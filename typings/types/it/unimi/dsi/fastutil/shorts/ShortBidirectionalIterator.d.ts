@@ -6,14 +6,9 @@ import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ShortBidirectionalIterator extends ObjectBidirectionalIterator<number>, ShortIterator, Object{
     back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     previous(): number;
     previousShort(): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

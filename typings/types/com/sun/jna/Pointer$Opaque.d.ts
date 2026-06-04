@@ -27,11 +27,6 @@ export class Pointer$Opaque extends Pointer {
     read(arg0: number, arg1: Pointer[], arg2: number, arg3: number): void;
     read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
     read(arg0: number, arg1: string[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
     setByte(arg0: number, arg1: number): void;
     setChar(arg0: number, arg1: string): void;
     setDouble(arg0: number, arg1: number): void;
@@ -51,9 +46,4 @@ export class Pointer$Opaque extends Pointer {
     write(arg0: number, arg1: Pointer[], arg2: number, arg3: number): void;
     write(arg0: number, arg1: number[], arg2: number, arg3: number): void;
     write(arg0: number, arg1: string[], arg2: number, arg3: number): void;
-    write(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    write(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    write(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    write(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    write(arg0: number, arg1: number[], arg2: number, arg3: number): void;
 }

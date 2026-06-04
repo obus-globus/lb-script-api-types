@@ -32,7 +32,6 @@ export class GuiRenderState extends Object implements FabricRenderState {
     addText(textState: GuiTextRenderState): void;
     blurBeforeThisStratum(): void;
     clearExtraData(): void;
-    clearExtraData(): void;
     // private findAppropriateNode(screenArea: ScreenArea): boolean;
     forEachElement(consumer: (param0: GuiElementRenderState) => void, range: GuiRenderState$TraverseRange): void;
     forEachItem(consumer: (param0: GuiItemRenderState) => void): void;

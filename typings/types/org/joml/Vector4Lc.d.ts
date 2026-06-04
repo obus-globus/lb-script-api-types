@@ -15,7 +15,6 @@ export interface Vector4Lc extends Object{
     distanceSquared(arg0: Vector4Lc): number;
     distanceSquared(arg0: Vector4ic): number;
     div(arg0: number, arg1: Vector4L): Vector4L;
-    div(arg0: number, arg1: Vector4L): Vector4L;
     div(arg0: Vector4Lc, arg1: Vector4L): Vector4L;
     div(arg0: Vector4ic, arg1: Vector4L): Vector4L;
     dot(arg0: Vector4Lc): number;

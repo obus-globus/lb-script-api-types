@@ -17,7 +17,6 @@ export class Char2ReferenceFunctions$UnmodifiableFunction<V extends Object | num
     getOrDefault(arg0: string, arg1: V): V;
     hashCode(): number;
     put(arg0: string, arg1: V): V;
-    put(arg0: string, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: string): V;
     size(): number;

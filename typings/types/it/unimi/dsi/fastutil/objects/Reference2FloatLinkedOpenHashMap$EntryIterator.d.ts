@@ -13,6 +13,5 @@ export class Reference2FloatLinkedOpenHashMap$EntryIterator extends Reference2Fl
     next(): Reference2FloatLinkedOpenHashMap$MapEntry;
     previous(): Reference2FloatLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

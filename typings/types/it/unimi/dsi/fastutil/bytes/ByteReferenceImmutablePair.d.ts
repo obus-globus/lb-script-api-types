@@ -11,15 +11,12 @@ export class ByteReferenceImmutablePair<V extends Object | number | string | boo
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteReferencePair<V>;
-    first(arg0: number): ByteReferencePair<V>;
     firstByte(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ByteReferencePair<V>;
-    key(arg0: number): ByteReferencePair<V>;
     keyByte(): number;
     left(): number;
-    left(arg0: number): ByteReferencePair<V>;
     left(arg0: number): ByteReferencePair<V>;
     leftByte(): number;
     right(): V;

@@ -30,7 +30,6 @@ export abstract class RandomAccessDataset extends Object implements Dataset {
     getData(arg0: NDManager): Batch[];
     getData(arg0: NDManager, arg1: Sampler): Batch[];
     getData(arg0: NDManager, arg1: Sampler, arg2: ExecutorService): Batch[];
-    getData(arg0: NDManager, arg1: ExecutorService): Batch[];
     matchingTranslatorOptions(): TranslatorOptions;
     newSubDataset(arg0: number[], arg1: number, arg2: number): RandomAccessDataset;
     newSubDataset(arg0: number[]): RandomAccessDataset;

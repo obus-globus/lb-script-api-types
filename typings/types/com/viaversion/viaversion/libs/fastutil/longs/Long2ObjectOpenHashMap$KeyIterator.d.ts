@@ -7,7 +7,6 @@ export class Long2ObjectOpenHashMap$KeyIterator extends Long2ObjectOpenHashMap$M
     constructor(null_: Long2ObjectOpenHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextLong(): number;
     skip(arg0: number): number;

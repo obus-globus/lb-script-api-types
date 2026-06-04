@@ -7,7 +7,6 @@ export class Reference2DoubleOpenHashMap$ValueIterator extends Reference2DoubleO
     constructor(null_: Reference2DoubleOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextDouble(): number;
     skip(arg0: number): number;

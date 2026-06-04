@@ -7,7 +7,6 @@ export abstract class BooleanIterators$AbstractIndexBasedIterator extends Abstra
     // private minPos: number;
     // private pos: number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     get(arg0: number): boolean;
     getMaxPos(): number;
     hasNext(): boolean;

@@ -23,7 +23,6 @@ export class TextureManager extends Object implements AutoCloseable, FabricResou
     dumpAllSheets(targetDir: Path[]): void;
     fabric$getId(): Identifier;
     getName(): string;
-    getName(): string;
     getTexture(location: Identifier): AbstractTexture;
     // private loadContentsSafe(textureId: Identifier, texture: ReloadableTexture): TextureContents;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

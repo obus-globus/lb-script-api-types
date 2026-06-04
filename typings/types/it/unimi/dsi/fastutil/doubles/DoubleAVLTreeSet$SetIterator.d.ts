@@ -9,7 +9,6 @@ export class DoubleAVLTreeSet$SetIterator extends Object implements DoubleListIt
     // private next: DoubleAVLTreeSet$Entry;
     // private prev: DoubleAVLTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class DoubleAVLTreeSet$SetIterator extends Object implements DoubleListIt
     previousEntry(): DoubleAVLTreeSet$Entry;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

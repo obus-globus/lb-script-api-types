@@ -22,8 +22,6 @@ export class PotionBrewing$Builder extends Object implements FabricPotionBrewing
     addStartMix(ingredient: Item, potion: Holder<Potion>): void;
     build(): PotionBrewing;
     getEnabledFeatures(): FeatureFlagSet;
-    getEnabledFeatures(): FeatureFlagSet;
-    registerItemRecipe(arg0: Item, arg1: Ingredient, arg2: Item): void;
     registerItemRecipe(arg0: Item, arg1: Ingredient, arg2: Item): void;
     registerPotionRecipe(arg0: Holder<Potion>, arg1: Ingredient, arg2: Holder<Potion>): void;
     registerPotionRecipe(arg0: Holder<Object>, arg1: Ingredient, arg2: Holder<Object>): void;

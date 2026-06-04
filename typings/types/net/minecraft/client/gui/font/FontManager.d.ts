@@ -50,7 +50,6 @@ export class FontManager extends Object implements AutoCloseable, FabricResource
     // private finalizeProviderLoading(list: GlyphProvider$Conditional[], fallback: GlyphProvider$Conditional): void;
     // private getFontSetRaw(id: Identifier): FontSet;
     getName(): string;
-    getName(): string;
     // private getSpriteFont(contents: FontDescription$AtlasSprite): GlyphSource;
     // private prepare(manager: ResourceManager, executor: Executor): CompletableFuture<FontManager$Preparation>;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

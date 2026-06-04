@@ -3,10 +3,7 @@ import type { ShortBigListIterator } from '../../../../../it/unimi/dsi/fastutil/
 export abstract class AbstractShortBigListIterator extends AbstractShortBidirectionalIterator implements ShortBigListIterator {
     constructor()
     add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
     set(arg0: number): void;
-    set(arg0: number): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

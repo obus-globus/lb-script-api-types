@@ -79,13 +79,10 @@ export class StrSubstitutor extends Object implements ConfigurationAware {
     setEnableSubstitutionInVariables(enableSubstitutionInVariables: boolean): void;
     setEscapeChar(escapeCharacter: string): void;
     setValueDelimiter(valueDelimiter: string): StrSubstitutor;
-    setValueDelimiter(valueDelimiter: string): StrSubstitutor;
     setValueDelimiterMatcher(valueDelimiterMatcher: StrMatcher): StrSubstitutor;
-    setVariablePrefix(prefix: string): StrSubstitutor;
     setVariablePrefix(prefix: string): StrSubstitutor;
     setVariablePrefixMatcher(prefixMatcher: StrMatcher): StrSubstitutor;
     setVariableResolver(variableResolver: StrLookup): void;
-    setVariableSuffix(suffix: string): StrSubstitutor;
     setVariableSuffix(suffix: string): StrSubstitutor;
     setVariableSuffixMatcher(suffixMatcher: StrMatcher): StrSubstitutor;
     substitute(event: LogEvent, buf: StringBuilder, offset: number, length: number): boolean;

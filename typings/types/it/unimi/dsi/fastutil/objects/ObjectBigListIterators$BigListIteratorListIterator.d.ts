@@ -6,9 +6,6 @@ export class ObjectBigListIterators$BigListIteratorListIterator<K extends Object
     constructor(arg0: ObjectListIterator<K>)
     // private i: ObjectListIterator<K>;
     add(arg0: K): void;
-    add(arg0: K): void;
-    back(arg0: number): number;
-    back(arg0: number): number;
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: K) => void): void;
     hasNext(): boolean;
@@ -20,9 +17,5 @@ export class ObjectBigListIterators$BigListIteratorListIterator<K extends Object
     previousIndex(): number;
     remove(): void;
     set(arg0: K): void;
-    set(arg0: K): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

@@ -6,12 +6,10 @@ export class Double2CharLinkedOpenHashMap$KeyIterator extends Double2CharLinkedO
     constructor(null_: Double2CharLinkedOpenHashMap$KeyIterator, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

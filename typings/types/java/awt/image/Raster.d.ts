@@ -49,10 +49,6 @@ export class Raster extends Object {
     getNumDataElements(): number;
     getParent(): Raster;
     getPixel(arg0: number, arg1: number, arg2: number[]): number[];
-    getPixel(arg0: number, arg1: number, arg2: number[]): number[];
-    getPixel(arg0: number, arg1: number, arg2: number[]): number[];
-    getPixels(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number[]): number[];
-    getPixels(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number[]): number[];
     getPixels(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number[]): number[];
     getSample(arg0: number, arg1: number, arg2: number): number;
     getSampleDouble(arg0: number, arg1: number, arg2: number): number;
@@ -60,8 +56,6 @@ export class Raster extends Object {
     getSampleModel(): SampleModel;
     getSampleModelTranslateX(): number;
     getSampleModelTranslateY(): number;
-    getSamples(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): number[];
-    getSamples(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): number[];
     getSamples(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): number[];
     getTransferType(): number;
     getWidth(): number;

@@ -7,7 +7,6 @@ export interface FloatPriorityQueue extends PriorityQueue<number>, Object{
     dequeue(): number;
     dequeueFloat(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstFloat(): number;
     isEmpty(): boolean;

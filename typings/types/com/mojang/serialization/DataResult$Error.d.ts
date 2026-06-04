@@ -37,10 +37,8 @@ export class DataResult$Error<R extends Object | number | string | boolean> exte
     flatMap(arg0: (param0: R) => DataResult<R2>): DataResult$Error<R2>;
     getOrThrow(): R;
     getOrThrow(arg0: (param0: string) => E): R;
-    getOrThrow(): R;
     getPartialOrThrow(): R;
     getPartialOrThrow(arg0: (param0: string) => E): R;
-    getPartialOrThrow(): R;
     hasResultOrPartial(): boolean;
     hashCode(): number;
     ifError(arg0: (param0: DataResult$Error<R>) => void): DataResult<R>;

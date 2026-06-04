@@ -14,17 +14,12 @@ export class ReferenceShortMutablePair<K extends Object | number | string | bool
     right(): number;
     right(arg0: number): ReferenceShortPair<K>;
     right(arg0: number): ReferenceShortMutablePair<K>;
-    right(): number;
-    right(arg0: number): ReferenceShortPair<K>;
-    right(arg0: number): ReferenceShortPair<K>;
     rightShort(): number;
     second(): number;
-    second(arg0: number): ReferenceShortPair<K>;
     second(arg0: number): ReferenceShortPair<K>;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceShortPair<K>;
     value(arg0: number): ReferenceShortPair<K>;
     valueShort(): number;
 }

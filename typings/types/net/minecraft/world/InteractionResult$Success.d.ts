@@ -18,7 +18,6 @@ export class InteractionResult$Success extends Record implements InteractionResu
     // private itemContext: InteractionResult$ItemContext;
     // private swingSource: InteractionResult$SwingSource;
     consumesAction(): boolean;
-    consumesAction(): boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
     heldItemTransformedTo(): ItemStack;

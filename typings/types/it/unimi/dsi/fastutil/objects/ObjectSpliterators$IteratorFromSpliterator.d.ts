@@ -13,5 +13,4 @@ export class ObjectSpliterators$IteratorFromSpliterator<K extends Object | numbe
     hasNext(): boolean;
     next(): K;
     skip(arg0: number): number;
-    skip(arg0: number): number;
 }

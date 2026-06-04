@@ -11,7 +11,5 @@ export class AbstractLong2DoubleMap$BasicEntry extends Object implements Long2Do
     getLongKey(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

@@ -7,7 +7,6 @@ export class Abstract64BitSet$Abstract64BitSetIterator extends Object implements
     // private bs: number;
     // private i: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

@@ -12,7 +12,6 @@ export class ListOperation$ReplaceSection extends Record implements ListOperatio
     // private size: Optional<number>;
     apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
-    apply(original: T[], replacement: T[]): T[];
     equals(o: Object | null): boolean;
     hashCode(): number;
     mode(): ListOperation$Type;

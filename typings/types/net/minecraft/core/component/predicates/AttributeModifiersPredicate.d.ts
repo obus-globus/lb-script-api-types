@@ -22,7 +22,6 @@ export class AttributeModifiersPredicate extends Record implements SingleCompone
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
-    matches(components: DataComponentGetter): boolean;
     matches(value: ItemAttributeModifiers): boolean;
     modifiers(): Optional<CollectionPredicate<ItemAttributeModifiers$Entry, AttributeModifiersPredicate$EntryPredicate>>;
     toString(): string;

@@ -22,7 +22,6 @@ export class ClientIntentionPacket extends Record implements Packet<ServerHandsh
     intention(): ClientIntent;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     port(): number;
     protocolVersion(): number;
     toString(): string;

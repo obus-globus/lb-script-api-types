@@ -94,10 +94,8 @@ export interface CallableStatement extends PreparedStatement, Object{
     registerOutParameter(arg0: string, arg1: number, arg2: string): void;
     setAsciiStream(arg0: string, arg1: InputStream): void;
     setAsciiStream(arg0: string, arg1: InputStream, arg2: number): void;
-    setAsciiStream(arg0: string, arg1: InputStream, arg2: number): void;
     setBigDecimal(arg0: string, arg1: BigDecimal): void;
     setBinaryStream(arg0: string, arg1: InputStream): void;
-    setBinaryStream(arg0: string, arg1: InputStream, arg2: number): void;
     setBinaryStream(arg0: string, arg1: InputStream, arg2: number): void;
     setBlob(arg0: string, arg1: InputStream): void;
     setBlob(arg0: string, arg1: InputStream, arg2: number): void;
@@ -106,7 +104,6 @@ export interface CallableStatement extends PreparedStatement, Object{
     setByte(arg0: string, arg1: number): void;
     setBytes(arg0: string, arg1: number[]): void;
     setCharacterStream(arg0: string, arg1: Reader): void;
-    setCharacterStream(arg0: string, arg1: Reader, arg2: number): void;
     setCharacterStream(arg0: string, arg1: Reader, arg2: number): void;
     setClob(arg0: string, arg1: Reader): void;
     setClob(arg0: string, arg1: Reader, arg2: number): void;
@@ -132,8 +129,6 @@ export interface CallableStatement extends PreparedStatement, Object{
     setObject(arg0: string, arg1: Object, arg2: SQLType, arg3: number): void;
     setObject(arg0: string, arg1: Object, arg2: number): void;
     setObject(arg0: string, arg1: Object, arg2: number, arg3: number): void;
-    setObject(arg0: number, arg1: Object, arg2: SQLType): void;
-    setObject(arg0: number, arg1: Object, arg2: SQLType, arg3: number): void;
     setRowId(arg0: string, arg1: RowId): void;
     setSQLXML(arg0: string, arg1: SQLXML): void;
     setShort(arg0: string, arg1: number): void;

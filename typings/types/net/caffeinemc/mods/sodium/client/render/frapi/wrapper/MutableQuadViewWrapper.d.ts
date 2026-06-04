@@ -45,7 +45,6 @@ export class MutableQuadViewWrapper extends QuadViewWrapper implements QuadEmitt
     color(arg0: number): number;
     color(arg0: number, arg1: number): QuadEmitter;
     color(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
-    color(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     copyFrom(arg0: QuadView): QuadEmitter;
     cullFace(): Direction;
     cullFace(arg0: Direction): QuadEmitter;
@@ -63,7 +62,6 @@ export class MutableQuadViewWrapper extends QuadViewWrapper implements QuadEmitt
     lightmap(arg0: number): number;
     lightmap(arg0: number, arg1: number): QuadEmitter;
     lightmap(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
-    lightmap(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     materialBake(arg0: Material$Baked, arg1: number): QuadEmitter;
     minLightmap(arg0: number): QuadEmitter;
     multiplyColor(arg0: number): QuadEmitter;
@@ -72,12 +70,8 @@ export class MutableQuadViewWrapper extends QuadViewWrapper implements QuadEmitt
     normal(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     normal(arg0: number, arg1: Vector3f): QuadEmitter;
     normal(arg0: number, arg1: Vector3fc): QuadEmitter;
-    normal(arg0: number, arg1: Vector3f): QuadEmitter;
-    normal(arg0: number, arg1: Vector3fc): QuadEmitter;
     popTransform(): void;
     pos(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
-    pos(arg0: number, arg1: Vector3f): QuadEmitter;
-    pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     pos(arg0: number, arg1: Vector3f): QuadEmitter;
     pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     postMaterialBake(arg0: Material$Baked): QuadEmitter;
@@ -93,10 +87,7 @@ export class MutableQuadViewWrapper extends QuadViewWrapper implements QuadEmitt
     tintIndex(arg0: number): QuadEmitter;
     transformAndEmit(): void;
     translate(arg0: number, arg1: number, arg2: number): QuadEmitter;
-    translate(arg0: number, arg1: number, arg2: number): QuadEmitter;
     uv(arg0: number, arg1: number, arg2: number): QuadEmitter;
-    uv(arg0: number, arg1: Vector2f): QuadEmitter;
-    uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uv(arg0: number, arg1: Vector2f): QuadEmitter;
     uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uvUnitSquare(): MutableQuadView;

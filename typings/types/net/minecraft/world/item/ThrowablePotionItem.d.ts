@@ -40,7 +40,6 @@ export abstract class ThrowablePotionItem extends PotionItem implements Projecti
     constructor(properties: Item$Properties)
     asProjectile(level: Level, position: Position, itemStack: ItemStack, direction: Direction): Projectile;
     createDispenseConfig(): ProjectileItem$DispenseConfig;
-    createDispenseConfig(): ProjectileItem$DispenseConfig;
     createPotion(level: ServerLevel, owner: LivingEntity, itemStack: ItemStack): AbstractThrownPotion;
     createPotion(level: Level, position: Position, itemStack: ItemStack): AbstractThrownPotion;
     shoot(projectile: Projectile, xd: number, yd: number, zd: number, pow: number, uncertainty: number): void;

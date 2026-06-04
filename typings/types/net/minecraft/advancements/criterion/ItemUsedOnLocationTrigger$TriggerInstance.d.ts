@@ -31,5 +31,4 @@ export class ItemUsedOnLocationTrigger$TriggerInstance extends Record implements
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

@@ -7,7 +7,6 @@ export class Char2LongOpenCustomHashMap$KeyIterator extends Char2LongOpenCustomH
     constructor(null_: Char2LongOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     nextChar(): string;

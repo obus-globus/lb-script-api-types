@@ -48,12 +48,9 @@ export abstract class AbstractBoolean2BooleanFunction extends Object implements 
     containsKey(arg0: boolean): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;
-    defaultReturnValue(): boolean;
-    defaultReturnValue(arg0: boolean): void;
     get(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
     getOrDefault(arg0: boolean, arg1: boolean): boolean;
-    put(arg0: boolean, arg1: boolean): boolean;
     put(arg0: boolean, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: boolean): boolean;

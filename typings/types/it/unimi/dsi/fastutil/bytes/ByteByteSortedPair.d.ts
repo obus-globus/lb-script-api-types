@@ -4,28 +4,21 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ByteByteSortedPair extends SortedPair<number>, ByteBytePair, Serializable, Object{
     contains(arg0: Object): boolean;
-    contains(arg0: Object): boolean;
     contains(arg0: number): boolean;
     first(): number;
-    first(arg0: number): ByteBytePair;
     first(arg0: number): ByteBytePair;
     firstByte(): number;
     key(): number;
     key(arg0: number): ByteBytePair;
-    key(arg0: number): ByteBytePair;
     keyByte(): number;
     left(): number;
     left(arg0: number): ByteBytePair;
-    left(arg0: number): ByteBytePair;
     right(): number;
-    right(arg0: number): ByteBytePair;
     right(arg0: number): ByteBytePair;
     second(): number;
     second(arg0: number): ByteBytePair;
-    second(arg0: number): ByteBytePair;
     secondByte(): number;
     value(): number;
-    value(arg0: number): ByteBytePair;
     value(arg0: number): ByteBytePair;
     valueByte(): number;
 }

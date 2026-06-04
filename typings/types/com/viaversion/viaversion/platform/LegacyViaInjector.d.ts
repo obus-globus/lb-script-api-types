@@ -23,6 +23,5 @@ export abstract class LegacyViaInjector extends Object implements ViaInjector {
     inject(): void;
     // private injectChannelFuture(arg0: ChannelFuture): void;
     lateProtocolVersionSetting(): boolean;
-    lateProtocolVersionSetting(): boolean;
     uninject(): void;
 }

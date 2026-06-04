@@ -9,7 +9,6 @@ export class CharAVLTreeSet$SetIterator extends Object implements CharListIterat
     // private next: CharAVLTreeSet$Entry;
     // private prev: CharAVLTreeSet$Entry;
     add(arg0: string): void;
-    add(arg0: string): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): string;
@@ -21,8 +20,6 @@ export class CharAVLTreeSet$SetIterator extends Object implements CharListIterat
     previousEntry(): CharAVLTreeSet$Entry;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
     updateNext(): void;
     updatePrevious(): void;

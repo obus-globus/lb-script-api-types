@@ -6,7 +6,6 @@ import type { ToLongFunction } from '../../../../../java/util/function/ToLongFun
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface BooleanComparator extends Comparator<boolean>, Object{
     compare(arg0: boolean, arg1: boolean): number;
-    compare(arg0: boolean, arg1: boolean): number;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: boolean, param1: boolean) => kotlin.Int): (param0: boolean, param1: boolean) => kotlin.Int;

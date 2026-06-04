@@ -18,7 +18,6 @@ export class QuadParticleRenderState extends Object implements SubmitNodeCollect
     // private particles: Map<SingleQuadParticle$Layer, QuadParticleRenderState$Storage>;
     add(layer: SingleQuadParticle$Layer, x: number, y: number, z: number, xRot: number, yRot: number, zRot: number, wRot: number, scale: number, u0: number, u1: number, v0: number, v1: number, color: number, lightCoords: number): void;
     clear(): void;
-    clear(): void;
     isEmpty(): boolean;
     prepare(cachedBuffer: ParticleFeatureRenderer$ParticleBufferCache, translucent: boolean): QuadParticleRenderState$PreparedBuffers;
     render(preparedBuffers: QuadParticleRenderState$PreparedBuffers, bufferCache: ParticleFeatureRenderer$ParticleBufferCache, renderPass: RenderPass, textureManager: TextureManager): void;

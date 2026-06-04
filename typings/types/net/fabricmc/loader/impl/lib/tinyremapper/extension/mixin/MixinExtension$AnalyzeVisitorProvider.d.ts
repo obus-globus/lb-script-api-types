@@ -6,7 +6,5 @@ export class MixinExtension$AnalyzeVisitorProvider extends Object implements Tin
     private constructor(null_: MixinExtension$AnalyzeVisitorProvider)
     insertAnalyzeVisitor(arg0: boolean, arg1: number, arg2: string, arg3: ClassVisitor, arg4: InputTag[]): ClassVisitor;
     insertAnalyzeVisitor(arg0: number, arg1: string, arg2: ClassVisitor, arg3: InputTag[]): ClassVisitor;
-    insertAnalyzeVisitor(arg0: boolean, arg1: number, arg2: string, arg3: ClassVisitor, arg4: InputTag[]): ClassVisitor;
     insertAnalyzeVisitor(arg0: number, arg1: string, arg2: ClassVisitor): ClassVisitor;
-    insertAnalyzeVisitor(arg0: number, arg1: string, arg2: ClassVisitor, arg3: InputTag[]): ClassVisitor;
 }

@@ -7,8 +7,6 @@ export class Byte2FloatOpenCustomHashMap$KeyIterator extends Byte2FloatOpenCusto
     constructor(null_: Byte2FloatOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextByte(): number;
     skip(arg0: number): number;

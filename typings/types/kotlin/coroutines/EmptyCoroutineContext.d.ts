@@ -11,7 +11,6 @@ export class EmptyCoroutineContext extends Object implements Serializable, Corou
     hashCode(): number;
     minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
     plus(context: CoroutineContext): CoroutineContext;
-    plus(context: CoroutineContext): CoroutineContext;
     // private readResolve(): Object;
     toString(): string;
 }

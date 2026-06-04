@@ -9,5 +9,4 @@ export class DebugEntryChunkRenderStats extends Object implements DebugScreenEnt
     category(): DebugEntryCategory;
     display(displayer: DebugScreenDisplayer, serverOrClientLevel: Level, clientChunk: LevelChunk, serverChunk: LevelChunk): void;
     isAllowed(reducedDebugInfo: boolean): boolean;
-    isAllowed(reducedDebugInfo: boolean): boolean;
 }

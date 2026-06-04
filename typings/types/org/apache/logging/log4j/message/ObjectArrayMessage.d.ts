@@ -10,7 +10,6 @@ export class ObjectArrayMessage extends Object implements Message {
     // private equalObjectsOrStrings(left: Object[], right: Object[]): boolean;
     equals(o: Object | null): boolean;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

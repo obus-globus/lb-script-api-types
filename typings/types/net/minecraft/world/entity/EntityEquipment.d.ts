@@ -25,8 +25,6 @@ export class EntityEquipment extends Object implements EquipmentInfo, ChangeSubs
     isEmpty(): boolean;
     lithium$forceUnsubscribe(arg0: ItemStack, arg1: number): void;
     lithium$handleAddedToLevel(arg0: Level): void;
-    lithium$handleAddedToLevel(arg0: Level): void;
-    lithium$handleRemovedFromLevel(arg0: Level): void;
     lithium$handleRemovedFromLevel(arg0: Level): void;
     lithium$hasUnsentEquipmentChanges(): boolean;
     lithium$isInLevel(): boolean;

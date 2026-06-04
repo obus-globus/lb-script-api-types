@@ -39,10 +39,8 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     getEntitiesOfClass(baseClass: Class<T>, bb: AABB): T[];
     getEntitiesOfClass(baseClass: Class<T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
     getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];
-    getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];
     getHeight(): number;
     getHeight(type: Heightmap$Types, pos: BlockPos): number;
-    getHeightmapPos(type: Heightmap$Types, pos: BlockPos): BlockPos;
     getHeightmapPos(type: Heightmap$Types, pos: BlockPos): BlockPos;
     getLightLevelDependentMagicValue(pos: BlockPos): number;
     getMaxLocalRawBrightness(pos: BlockPos): number;
@@ -66,7 +64,6 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     isUnobstructed(ignore: Entity): boolean;
     isUnobstructed(source: Entity, shape: VoxelShape): boolean;
     isUnobstructed(state: BlockState, pos: BlockPos, context: CollisionContext): boolean;
-    isUnobstructed(source: Entity, shape: VoxelShape): boolean;
     isWaterAt(pos: BlockPos): boolean;
     lithium$getLoadedChunk(arg0: number, arg1: number): ChunkAccess;
 }

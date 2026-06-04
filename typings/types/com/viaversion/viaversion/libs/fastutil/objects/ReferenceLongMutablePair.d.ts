@@ -14,17 +14,12 @@ export class ReferenceLongMutablePair<K extends Object | number | string | boole
     right(): number;
     right(arg0: number): ReferenceLongPair<K>;
     right(arg0: number): ReferenceLongMutablePair<K>;
-    right(): number;
-    right(arg0: number): ReferenceLongPair<K>;
-    right(arg0: number): ReferenceLongPair<K>;
     rightLong(): number;
     second(): number;
-    second(arg0: number): ReferenceLongPair<K>;
     second(arg0: number): ReferenceLongPair<K>;
     secondLong(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceLongPair<K>;
     value(arg0: number): ReferenceLongPair<K>;
     valueLong(): number;
 }

@@ -6,7 +6,6 @@ export class ParameterizedNoReferenceMessageFactory$StatusMessage extends Object
     readonly formattedMessage: string;
     readonly throwable: Throwable;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

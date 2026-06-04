@@ -81,7 +81,6 @@ export class Font extends Object implements Serializable {
     // private defaultLineMetrics(arg0: FontRenderContext): FontLineMetrics;
     deriveFont(arg0: AffineTransform): Font;
     deriveFont(arg0: number): Font;
-    deriveFont(arg0: number): Font;
     deriveFont(arg0: number, arg1: AffineTransform): Font;
     deriveFont(arg0: number, arg1: number): Font;
     deriveFont(arg0: Map<AttributedCharacterIterator$Attribute, Object | null>): Font;

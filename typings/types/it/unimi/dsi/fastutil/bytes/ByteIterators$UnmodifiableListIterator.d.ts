@@ -7,9 +7,6 @@ export class ByteIterators$UnmodifiableListIterator extends Object implements By
     constructor(arg0: ByteListIterator)
     // private i: ByteListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -20,6 +17,5 @@ export class ByteIterators$UnmodifiableListIterator extends Object implements By
     previousByte(): number;
     previousIndex(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

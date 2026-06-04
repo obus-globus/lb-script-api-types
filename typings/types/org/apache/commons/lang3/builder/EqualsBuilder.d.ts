@@ -22,16 +22,6 @@ export class EqualsBuilder extends Object implements Builder<boolean> {
     append(arg0: number[], arg1: number[]): EqualsBuilder;
     append(arg0: string, arg1: string): EqualsBuilder;
     append(arg0: string[], arg1: string[]): EqualsBuilder;
-    append(arg0: number, arg1: number): EqualsBuilder;
-    append(arg0: number[], arg1: number[]): EqualsBuilder;
-    append(arg0: number, arg1: number): EqualsBuilder;
-    append(arg0: number[], arg1: number[]): EqualsBuilder;
-    append(arg0: number, arg1: number): EqualsBuilder;
-    append(arg0: number[], arg1: number[]): EqualsBuilder;
-    append(arg0: number, arg1: number): EqualsBuilder;
-    append(arg0: number[], arg1: number[]): EqualsBuilder;
-    append(arg0: number, arg1: number): EqualsBuilder;
-    append(arg0: number[], arg1: number[]): EqualsBuilder;
     // private appendArray(arg0: Object, arg1: Object): void;
     appendSuper(arg0: boolean): EqualsBuilder;
     build(): boolean;

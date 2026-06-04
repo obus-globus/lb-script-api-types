@@ -3,10 +3,7 @@ import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/do
 export abstract class DoubleIterators$AbstractIndexBasedListIterator extends DoubleIterators$AbstractIndexBasedIterator implements DoubleListIterator {
     constructor(arg0: number, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     add(arg0: number, arg1: number): void;
-    add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
     hasPrevious(): boolean;
     next(): number;
@@ -16,8 +13,5 @@ export abstract class DoubleIterators$AbstractIndexBasedListIterator extends Dou
     previousIndex(): number;
     remove(): void;
     set(arg0: number): void;
-    set(arg0: number): void;
     set(arg0: number, arg1: number): void;
-    set(arg0: number): void;
-    set(arg0: number): void;
 }

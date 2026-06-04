@@ -35,9 +35,7 @@ export class FireChargeItem extends Item implements ProjectileItem {
     constructor(properties: Item$Properties)
     asProjectile(level: Level, position: Position, itemStack: ItemStack, direction: Direction): Projectile;
     createDispenseConfig(): ProjectileItem$DispenseConfig;
-    createDispenseConfig(): ProjectileItem$DispenseConfig;
     // private playSound(level: Level, pos: BlockPos): void;
-    shoot(projectile: Projectile, xd: number, yd: number, zd: number, pow: number, uncertainty: number): void;
     shoot(projectile: Projectile, xd: number, yd: number, zd: number, pow: number, uncertainty: number): void;
     useOn(context: UseOnContext): InteractionResult;
 }

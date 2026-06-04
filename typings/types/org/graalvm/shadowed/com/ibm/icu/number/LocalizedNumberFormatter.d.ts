@@ -18,7 +18,6 @@ export class LocalizedNumberFormatter extends NumberFormatterSettings<LocalizedN
     // private computeCompiled(): boolean;
     create(key: number, value: Object): LocalizedNumberFormatter;
     format(input: number): FormattedNumber;
-    format(input: number): FormattedNumber;
     format(input: Number): FormattedNumber;
     // private format(fq: DecimalQuantity): FormattedNumber;
     format(input: Measure): FormattedNumber;

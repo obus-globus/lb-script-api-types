@@ -7,10 +7,6 @@ export class LongIterators$UnmodifiableIterator extends Object implements LongIt
     constructor(arg0: LongIterator)
     // private i: LongIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextLong(): number;

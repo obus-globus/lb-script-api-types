@@ -25,7 +25,6 @@ export class Float2ShortAVLTreeMap$Entry extends AbstractFloat2ShortMap$BasicEnt
     right(): Float2ShortAVLTreeMap$Entry;
     right(arg0: Float2ShortAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Float2ShortAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -23,21 +23,13 @@ export class Reference2IntLinkedOpenHashMap$MapEntry extends Object implements R
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceIntPair<K>;
-    right(arg0: number): ReferenceIntPair<K>;
-    right(): number;
-    right(arg0: number): ReferenceIntPair<K>;
-    right(arg0: number): ReferenceIntPair<K>;
     rightInt(): number;
     second(): number;
     second(arg0: number): ReferenceIntPair<K>;
-    second(arg0: number): ReferenceIntPair<K>;
     secondInt(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceIntPair<K>;
     value(arg0: number): ReferenceIntPair<K>;
     valueInt(): number;
 }

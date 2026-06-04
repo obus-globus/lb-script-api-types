@@ -67,7 +67,6 @@ export class OptionParser extends Object implements OptionDeclarer {
     requiredUnless(arg0: string[], arg1: string): void;
     // private reset(): void;
     // private specFor(arg0: string): AbstractOptionSpec<Object>;
-    // private specFor(arg0: string): AbstractOptionSpec<Object>;
     // private unavailableOptions(arg0: OptionSet): AbstractOptionSpec<Object>[];
     // private validateOptionCharacters(arg0: string[]): void;
 }

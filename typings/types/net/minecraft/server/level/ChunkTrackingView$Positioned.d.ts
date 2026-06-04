@@ -15,8 +15,6 @@ export class ChunkTrackingView$Positioned extends Record implements ChunkTrackin
     contains(x: number, z: number): boolean;
     contains(chunkX: number, chunkZ: number, includeNeighbors: boolean): boolean;
     contains(pos: ChunkPos): boolean;
-    contains(x: number, z: number): boolean;
-    contains(pos: ChunkPos): boolean;
     equals(o: Object | null): boolean;
     forEach(consumer: (param0: ChunkPos) => void): void;
     hashCode(): number;

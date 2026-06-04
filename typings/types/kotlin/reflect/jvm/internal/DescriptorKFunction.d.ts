@@ -14,6 +14,20 @@ export class DescriptorKFunction extends DescriptorKCallable<Object> implements 
     constructor(container: KDeclarationContainerImpl, name: string, signature: string, boundReceiver: Object | null)
     private constructor(container: KDeclarationContainerImpl, name: string, signature: string, descriptorInitialValue: FunctionDescriptor | null, rawBoundReceiver: Object | null)
     constructor(container: KDeclarationContainerImpl, descriptor: FunctionDescriptor)
+    readonly arity: number;
+    // private /*not mapped: */ getBoundReceiver(): Object | null;
+    readonly caller: Caller<Object>;
+    readonly container: KDeclarationContainerImpl;
+    readonly defaultCaller: Caller<Object> | null;
+    readonly descriptor: FunctionDescriptor;
+    /*not mapped: */ isExternal(): boolean;
+    /*not mapped: */ isInfix(): boolean;
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isOperator(): boolean;
+    /*not mapped: */ isSuspend(): boolean;
+    readonly name: string;
+    readonly rawBoundReceiver: Object | null;
+    readonly signature: string;
     // private createConstructorCaller(member: Constructor<Object>, descriptor: FunctionDescriptor, isDefault: boolean): CallerImpl<Constructor<Object>>;
     // private createInstanceMethodCaller(member: Method): CallerImpl$Method;
     // private createJvmStaticInObjectCaller(member: Method): CallerImpl$Method;

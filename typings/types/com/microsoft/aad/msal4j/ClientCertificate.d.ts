@@ -13,5 +13,4 @@ export class ClientCertificate extends Object implements IClientCertificate {
     privateKey(): PrivateKey;
     publicCertificateHash(): string;
     publicCertificateHash256(): string;
-    publicCertificateHash256(): string;
 }

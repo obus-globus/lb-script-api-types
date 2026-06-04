@@ -13,7 +13,6 @@ export class SmithingRecipeInput extends Record implements RecipeInput {
     getItem(index: number): ItemStack;
     hashCode(): number;
     isEmpty(): boolean;
-    isEmpty(): boolean;
     size(): number;
     template(): ItemStack;
     toString(): string;

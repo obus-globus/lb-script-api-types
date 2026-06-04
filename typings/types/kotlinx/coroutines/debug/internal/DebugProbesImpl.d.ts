@@ -8,6 +8,7 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineStackFrame } from '../../../../kotlin/coroutines/jvm/internal/CoroutineStackFrame.d.ts'
+import type { AtomicInt } from '../../../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { Job } from '../../../../kotlinx/coroutines/Job.d.ts'
 import type { DebugCoroutineInfo } from '../../../../kotlinx/coroutines/debug/internal/DebugCoroutineInfo.d.ts'
 import type { DebugCoroutineInfoImpl } from '../../../../kotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl.d.ts'
@@ -28,7 +29,7 @@ export class DebugProbesImpl extends Object {
     // private enhanceStackTraceWithThreadDumpImpl(state: string, thread: Thread | null, coroutineTrace: StackTraceElement[]): StackTraceElement[];
     // private findContinuationStartIndex(indexOfResumeWith: number, actualTrace: StackTraceElement[], coroutineTrace: StackTraceElement[]): Pair<number, number>;
     // private findIndexOfFrame(frameIndex: number, actualTrace: StackTraceElement[], coroutineTrace: StackTraceElement[]): number;
-    // private getDynamicAttach(): (param0: boolean) => void | null;
+    // private getDynamicAttach(): ((param0: boolean) => void) | null;
     hierarchyToString(job: Job): string;
     install(): void;
     // private printStackTrace(out: PrintStream, frames: StackTraceElement[]): void;

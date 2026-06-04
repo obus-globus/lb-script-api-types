@@ -27,12 +27,10 @@ export class OptionValuesImpl extends Object implements OptionValues {
     getUsedDeprecatedDescriptors(): E[];
     hasBeenSet(optionKey: OptionKey<Object>): boolean;
     hasSetOptions(): boolean;
-    hasSetOptions(): boolean;
     hashCode(): number;
     // private initializeValidAssertKeys(): OptionKey<Object>[];
     put(key: string, value: string, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): OptionDescriptor;
     putAll(providedValues: { [key: string]: string }, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): void;
-    set<T extends Object | number | string | boolean>(optionKey: OptionKey<T>, value: T): void;
     set<T extends Object | number | string | boolean>(optionKey: OptionKey<T>, value: T): void;
     // private slowCompareKey(key: OptionKey<Object>, other: OptionValues): boolean;
     toString(): string;

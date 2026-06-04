@@ -11,7 +11,5 @@ export class AbstractDouble2CharMap$BasicEntry extends Object implements Double2
     getDoubleKey(): number;
     hashCode(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
-    setValue(arg0: string): string;
     toString(): string;
 }

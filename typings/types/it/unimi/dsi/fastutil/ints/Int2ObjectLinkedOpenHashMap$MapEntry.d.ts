@@ -19,16 +19,13 @@ export class Int2ObjectLinkedOpenHashMap$MapEntry extends Object implements Int2
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntObjectPair<V>;
-    first(arg0: number): IntObjectPair<V>;
     firstInt(): number;
     getIntKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): IntObjectPair<V>;
-    key(arg0: number): IntObjectPair<V>;
     keyInt(): number;
     left(): number;
-    left(arg0: number): IntObjectPair<V>;
     left(arg0: number): IntObjectPair<V>;
     leftInt(): number;
     right<V extends Object | number | string | boolean>(): V;

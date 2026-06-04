@@ -3,12 +3,10 @@ import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/do
 export class Byte2DoubleAVLTreeMap$ValueIterator extends Byte2DoubleAVLTreeMap$TreeIterator implements DoubleListIterator {
     private constructor(null_: Byte2DoubleAVLTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

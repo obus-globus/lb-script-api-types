@@ -7,12 +7,10 @@ export abstract class AbstractRangeSet<C extends Comparable<Object>> extends Obj
     add(range: Range<C>): void;
     addAll(other: RangeSet<C>): void;
     addAll(ranges: Range<C>[]): void;
-    addAll(ranges: Range<C>[]): void;
     clear(): void;
     contains(value: C): boolean;
     encloses(otherRange: Range<C>): boolean;
     enclosesAll(other: RangeSet<C>): boolean;
-    enclosesAll(other: Range<C>[]): boolean;
     enclosesAll(other: Range<C>[]): boolean;
     equals(obj: Object | null): boolean;
     hashCode(): number;
@@ -21,7 +19,6 @@ export abstract class AbstractRangeSet<C extends Comparable<Object>> extends Obj
     rangeContaining(value: C): Range<C>;
     remove(range: Range<C>): void;
     removeAll(other: RangeSet<C>): void;
-    removeAll(ranges: Range<C>[]): void;
     removeAll(ranges: Range<C>[]): void;
     toString(): string;
 }

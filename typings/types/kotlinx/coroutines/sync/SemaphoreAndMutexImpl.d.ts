@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { AtomicInt } from '../../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
 import type { Waiter } from '../../../kotlinx/coroutines/Waiter.d.ts'
 import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectInstance.d.ts'

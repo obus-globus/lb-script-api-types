@@ -5,7 +5,6 @@ export abstract class ObjectIterators$AbstractIndexBasedListIterator<K extends O
     constructor(arg0: number, arg1: number)
     add(arg0: K): void;
     add(arg0: number, arg1: K): void;
-    add(arg0: K): void;
     back(arg0: number): number;
     hasPrevious(): boolean;
     nextIndex(): number;
@@ -14,5 +13,4 @@ export abstract class ObjectIterators$AbstractIndexBasedListIterator<K extends O
     remove(): void;
     set(arg0: K): void;
     set(arg0: number, arg1: K): void;
-    set(arg0: K): void;
 }

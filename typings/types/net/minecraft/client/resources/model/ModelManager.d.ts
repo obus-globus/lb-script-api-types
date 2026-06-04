@@ -49,7 +49,6 @@ export class ModelManager extends Object implements FabricModelManager, FabricRe
     getModel<T extends Object | number | string | boolean>(arg0: ExtraModelKey<T>): T;
     getModel(arg0: ExtraModelKey<Object>): Object;
     getName(): string;
-    getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
     reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
     requiresRender(oldState: BlockState, newState: BlockState): boolean;

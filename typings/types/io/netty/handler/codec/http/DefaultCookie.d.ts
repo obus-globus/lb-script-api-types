@@ -26,7 +26,6 @@ export class DefaultCookie extends DefaultCookie_2 implements Cookie {
     setCommentUrl(arg0: string): void;
     setDiscard(arg0: boolean): void;
     setPorts(arg0: number[]): void;
-    setPorts(arg0: number[]): void;
     setVersion(arg0: number): void;
     version(): number;
 }

@@ -11,6 +11,4 @@ export abstract class LexicalContextExpression extends Expression implements Lex
     constructor(token: number, start: number, finish: number)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
-    accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
 }

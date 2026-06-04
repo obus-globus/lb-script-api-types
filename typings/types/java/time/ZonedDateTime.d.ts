@@ -49,15 +49,12 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     compareTo(arg0: ChronoZonedDateTime<Object>): number;
     equals(arg0: Object | null): boolean;
     format(arg0: DateTimeFormatter): string;
-    format(arg0: DateTimeFormatter): string;
-    get(arg0: TemporalField): number;
     get(arg0: TemporalField): number;
     getChronology(): Chronology;
     getDayOfMonth(): number;
     getDayOfWeek(): DayOfWeek;
     getDayOfYear(): number;
     getHour(): number;
-    getLong(arg0: TemporalField): number;
     getLong(arg0: TemporalField): number;
     getMinute(): number;
     getMonth(): Month;
@@ -72,7 +69,6 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     isBefore(arg0: ChronoZonedDateTime<Object>): boolean;
     isEqual(arg0: ChronoZonedDateTime<Object>): boolean;
     isSupported(arg0: TemporalField): boolean;
-    isSupported(arg0: TemporalUnit): boolean;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): ZonedDateTime;
     minus(arg0: number, arg1: TemporalUnit): ZonedDateTime;
@@ -101,8 +97,6 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     plusWeeks(arg0: number): ZonedDateTime;
     plusYears(arg0: number): ZonedDateTime;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    range(arg0: TemporalField): ValueRange;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     // private resolveInstant(arg0: LocalDateTime): ZonedDateTime;
@@ -113,7 +107,6 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     toLocalDate(): LocalDate;
     toLocalDate<D extends ChronoLocalDate>(): D;
     toLocalDateTime(): LocalDateTime;
-    toLocalTime(): LocalTime;
     toLocalTime(): LocalTime;
     toOffsetDateTime(): OffsetDateTime;
     toString(): string;

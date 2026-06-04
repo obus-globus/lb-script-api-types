@@ -77,7 +77,6 @@ export abstract class HttpURLConnection extends URLConnection {
     setAuthenticator(arg0: Authenticator): void;
     setChunkedStreamingMode(arg0: number): void;
     setFixedLengthStreamingMode(arg0: number): void;
-    setFixedLengthStreamingMode(arg0: number): void;
     setInstanceFollowRedirects(arg0: boolean): void;
     setRequestMethod(arg0: string): void;
     usingProxy(): boolean;

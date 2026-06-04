@@ -13,6 +13,5 @@ export class Float2ObjectLinkedOpenHashMap$EntryIterator extends Float2ObjectLin
     next(): Float2ObjectLinkedOpenHashMap$MapEntry;
     previous(): Float2ObjectLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

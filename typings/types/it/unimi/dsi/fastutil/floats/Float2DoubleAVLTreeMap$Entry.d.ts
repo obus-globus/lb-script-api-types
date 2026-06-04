@@ -25,7 +25,6 @@ export class Float2DoubleAVLTreeMap$Entry extends AbstractFloat2DoubleMap$BasicE
     right(): Float2DoubleAVLTreeMap$Entry;
     right(arg0: Float2DoubleAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Float2DoubleAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

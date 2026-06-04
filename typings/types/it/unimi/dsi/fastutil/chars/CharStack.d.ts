@@ -7,7 +7,6 @@ export interface CharStack extends Stack<string>, Object{
     pop(): string;
     popChar(): string;
     push(arg0: string): void;
-    push(arg0: string): void;
     top<K extends Object | number | string | boolean>(): K;
     top(): string;
     topChar(): string;

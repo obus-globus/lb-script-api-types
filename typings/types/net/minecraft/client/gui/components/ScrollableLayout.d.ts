@@ -16,7 +16,6 @@ export class ScrollableLayout extends Object implements Layout {
     // private reserveStrategy: ScrollableLayout$ReserveStrategy;
     // private scrollbarSpacing: number;
     arrangeElements(): void;
-    arrangeElements(): void;
     getHeight(): number;
     getWidth(): number;
     getX(): number;

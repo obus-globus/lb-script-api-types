@@ -33,7 +33,6 @@ export class IteratorPrototypeBuiltins$IteratorPrototype extends Enum<IteratorPr
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;
-    getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
     isAOTSupported(): boolean;
@@ -43,10 +42,8 @@ export class IteratorPrototypeBuiltins$IteratorPrototype extends Enum<IteratorPr
     isEnabled(): boolean;
     isEnumerable(): boolean;
     isGetter(): boolean;
-    isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
-    isSetter(): boolean;
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;

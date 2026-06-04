@@ -31,7 +31,6 @@ export class AtomicsBuiltins$Atomics extends Enum<AtomicsBuiltins$Atomics> imple
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
-    getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
@@ -43,7 +42,6 @@ export class AtomicsBuiltins$Atomics extends Enum<AtomicsBuiltins$Atomics> imple
     isEnumerable(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
-    isOptional(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;
     isWritable(): boolean;

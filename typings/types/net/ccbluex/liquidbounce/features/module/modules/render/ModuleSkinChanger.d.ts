@@ -1,3 +1,4 @@
+import type { Duration } from '../../../../../../../kotlin/time/Duration.d.ts'
 import type { PlayerSkinApi } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/PlayerSkinApi.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 export class ModuleSkinChanger extends ClientModule {

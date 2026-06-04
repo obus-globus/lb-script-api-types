@@ -33,7 +33,6 @@ export class ClientboundPlayerChatPacket extends Record implements Packet<Client
     hashCode(): number;
     index(): number;
     isSkippable(): boolean;
-    isSkippable(): boolean;
     isTerminal(): boolean;
     sender(): UUID;
     signature(): MessageSignature;

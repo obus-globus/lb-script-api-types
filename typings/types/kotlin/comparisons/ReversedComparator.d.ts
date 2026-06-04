@@ -18,7 +18,6 @@ export class ReversedComparator<T extends Object | number | string | boolean> ex
     readonly comparator: (param0: T) => kotlin.Boolean;
     compare(a: T, b: T): number;
     reversed(): (param0: T) => kotlin.Boolean;
-    reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;

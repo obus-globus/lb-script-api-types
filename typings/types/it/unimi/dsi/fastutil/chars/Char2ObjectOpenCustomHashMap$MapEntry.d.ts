@@ -19,16 +19,13 @@ export class Char2ObjectOpenCustomHashMap$MapEntry extends Object implements Cha
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharObjectPair<V>;
-    first(arg0: string): CharObjectPair<V>;
     firstChar(): string;
     getCharKey(): string;
     hashCode(): number;
     key(): string;
     key(arg0: string): CharObjectPair<V>;
-    key(arg0: string): CharObjectPair<V>;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharObjectPair<V>;
     left(arg0: string): CharObjectPair<V>;
     leftChar(): string;
     right<V extends Object | number | string | boolean>(): V;

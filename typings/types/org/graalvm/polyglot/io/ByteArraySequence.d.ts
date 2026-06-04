@@ -14,7 +14,5 @@ export class ByteArraySequence extends Object implements ByteSequence {
     hashCode(): number;
     length(): number;
     subSequence(startIndex: number, endIndex: number): ByteSequence;
-    subSequence(startIndex: number, endIndex: number): ByteSequence;
-    toByteArray(): number[];
     toByteArray(): number[];
 }

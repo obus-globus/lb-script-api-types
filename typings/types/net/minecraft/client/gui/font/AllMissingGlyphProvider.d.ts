@@ -6,6 +6,5 @@ export class AllMissingGlyphProvider extends Object implements GlyphProvider {
     constructor()
     close(): void;
     getGlyph(codepoint: number): UnbakedGlyph;
-    getGlyph(codepoint: number): UnbakedGlyph;
     getSupportedGlyphs(): (Object | null)[];
 }

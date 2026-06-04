@@ -28,7 +28,6 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     // private rtype: Class<Object>;
     // private wrapAlt: Object;
     appendParameterTypes(arg0: Class<Object>[]): MethodType;
-    appendParameterTypes(arg0: Class<Object>[]): MethodType;
     asCollectorType(arg0: Class<Object>, arg1: number, arg2: number): MethodType;
     asSpreaderType(arg0: Class<Object>, arg1: number, arg2: number): MethodType;
     basicType(): MethodType;
@@ -48,7 +47,6 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     hasPrimitives(): boolean;
     hasWrappers(): boolean;
     hashCode(): number;
-    insertParameterTypes(arg0: number, arg1: Class<Object>[]): MethodType;
     insertParameterTypes(arg0: number, arg1: Class<Object>[]): MethodType;
     invokerType(): MethodType;
     invokers(): Invokers;

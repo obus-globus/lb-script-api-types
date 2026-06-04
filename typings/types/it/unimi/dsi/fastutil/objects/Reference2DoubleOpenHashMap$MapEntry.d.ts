@@ -23,21 +23,13 @@ export class Reference2DoubleOpenHashMap$MapEntry extends Object implements Refe
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceDoublePair<K>;
-    right(arg0: number): ReferenceDoublePair<K>;
-    right(): number;
-    right(arg0: number): ReferenceDoublePair<K>;
-    right(arg0: number): ReferenceDoublePair<K>;
     rightDouble(): number;
     second(): number;
     second(arg0: number): ReferenceDoublePair<K>;
-    second(arg0: number): ReferenceDoublePair<K>;
     secondDouble(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceDoublePair<K>;
     value(arg0: number): ReferenceDoublePair<K>;
     valueDouble(): number;
 }

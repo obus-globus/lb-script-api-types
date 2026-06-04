@@ -3,12 +3,10 @@ import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/byte
 export class Byte2ByteRBTreeMap$ValueIterator extends Byte2ByteRBTreeMap$TreeIterator implements ByteListIterator {
     private constructor(null_: Byte2ByteRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextByte(): number;
     previous(): number;
     previousByte(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

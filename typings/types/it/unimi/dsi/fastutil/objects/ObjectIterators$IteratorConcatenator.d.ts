@@ -13,5 +13,4 @@ export class ObjectIterators$IteratorConcatenator<K extends Object | number | st
     next(): K;
     remove(): void;
     skip(arg0: number): number;
-    skip(arg0: number): number;
 }

@@ -14,10 +14,7 @@ export class CharComparators$OppositeImplicitComparator extends Object implement
     static comparingLong(paramarg0: (param0: string) => kotlin.Long): (param0: string, param1: string) => kotlin.Int;
     constructor()
     compare(arg0: string, arg1: string): number;
-    compare(arg0: string, arg1: string): number;
-    compare(arg0: string, arg1: string): number;
     // private readResolve(): Object;
-    reversed(): (param0: string, param1: string) => kotlin.Int;
     reversed(): (param0: string, param1: string) => kotlin.Int;
     thenComparing(arg0: (param0: string, param1: string) => kotlin.Int): (param0: string, param1: string) => kotlin.Int;
     thenComparing(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;

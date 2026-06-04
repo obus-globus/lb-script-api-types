@@ -5,6 +5,5 @@ export interface FunctionNameHolder$Delegate extends FunctionNameHolder, Object{
     getFunctionName(): TruffleString;
     getFunctionNameHolder(): FunctionNameHolder;
     isAnonymous(): boolean;
-    isAnonymous(): boolean;
     setFunctionName(name: TruffleString): void;
 }

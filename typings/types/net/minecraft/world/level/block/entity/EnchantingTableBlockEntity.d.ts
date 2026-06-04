@@ -35,7 +35,6 @@ export class EnchantingTableBlockEntity extends BlockEntity implements Nameable 
     applyImplicitComponents(components: DataComponentGetter): void;
     collectImplicitComponents(components: DataComponentMap$Builder): void;
     getCustomName(): Component;
-    getCustomName(): Component;
     getDisplayName(): Component;
     getName(): Component;
     getPlainTextName(): string;

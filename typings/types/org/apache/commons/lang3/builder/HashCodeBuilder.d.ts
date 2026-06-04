@@ -20,16 +20,6 @@ export class HashCodeBuilder extends Object implements Builder<number> {
     append(arg0: number[]): HashCodeBuilder;
     append(arg0: string): HashCodeBuilder;
     append(arg0: string[]): HashCodeBuilder;
-    append(arg0: number): HashCodeBuilder;
-    append(arg0: number[]): HashCodeBuilder;
-    append(arg0: number): HashCodeBuilder;
-    append(arg0: number[]): HashCodeBuilder;
-    append(arg0: number): HashCodeBuilder;
-    append(arg0: number[]): HashCodeBuilder;
-    append(arg0: number): HashCodeBuilder;
-    append(arg0: number[]): HashCodeBuilder;
-    append(arg0: number): HashCodeBuilder;
-    append(arg0: number[]): HashCodeBuilder;
     // private appendArray(arg0: Object): void;
     appendSuper(arg0: number): HashCodeBuilder;
     build(): number;

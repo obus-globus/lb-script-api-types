@@ -14,10 +14,7 @@ export class ShortComparators$NaturalImplicitComparator extends Object implement
     static comparingLong(paramarg0: (param0: number) => kotlin.Long): (param0: number, param1: number) => kotlin.Int;
     constructor()
     compare(arg0: number, arg1: number): number;
-    compare(arg0: number, arg1: number): number;
-    compare(arg0: number, arg1: number): number;
     // private readResolve(): Object;
-    reversed(): (param0: number, param1: number) => kotlin.Int;
     reversed(): (param0: number, param1: number) => kotlin.Int;
     thenComparing(arg0: (param0: number, param1: number) => kotlin.Int): (param0: number, param1: number) => kotlin.Int;
     thenComparing(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;

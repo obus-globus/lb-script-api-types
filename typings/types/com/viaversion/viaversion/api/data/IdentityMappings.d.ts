@@ -13,7 +13,6 @@ export class IdentityMappings extends Record implements Mappings {
     hashCode(): number;
     inverse(): Mappings;
     isIdentity(): boolean;
-    isIdentity(): boolean;
     mappedSize(): number;
     setNewId(arg0: number, arg1: number): void;
     size(): number;

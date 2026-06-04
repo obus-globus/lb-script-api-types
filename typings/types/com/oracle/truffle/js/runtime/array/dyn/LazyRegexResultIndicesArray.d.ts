@@ -26,6 +26,5 @@ export class LazyRegexResultIndicesArray extends AbstractConstantLazyArray {
     createWritable(context: JSContext, object: JSDynamicObject, index: number, value: Object, node: Node, getStartNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode, getEndNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode): ScriptArray;
     createWriteableObject(object: JSDynamicObject, index: number, value: Object, node: Node, profile: ScriptArray$CreateWritableProfileAccess): AbstractObjectArray;
     getElementInBounds(object: JSDynamicObject, index: number): Object;
-    getElementInBounds(object: JSDynamicObject, index: number): Object;
     withIntegrityLevel(newIntegrityLevel: number): DynamicArray;
 }

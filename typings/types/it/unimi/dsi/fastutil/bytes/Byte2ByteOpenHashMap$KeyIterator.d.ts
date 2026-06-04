@@ -7,8 +7,6 @@ export class Byte2ByteOpenHashMap$KeyIterator extends Byte2ByteOpenHashMap$MapIt
     constructor(null_: Byte2ByteOpenHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextByte(): number;
     skip(arg0: number): number;

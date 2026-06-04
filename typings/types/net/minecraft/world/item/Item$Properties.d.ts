@@ -67,7 +67,6 @@ export class Item$Properties extends Object implements FabricItem$Properties {
     itemIdOrThrow(): ResourceKey<Item>;
     jukeboxPlayable(song: ResourceKey<JukeboxSong>): Item$Properties;
     modelId(arg0: Identifier): Item$Properties;
-    modelId(arg0: Identifier): Item$Properties;
     nautilusArmor(material: ArmorMaterial): Item$Properties;
     overrideDescription(descriptionId: string): Item$Properties;
     pickaxe(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number): Item$Properties;

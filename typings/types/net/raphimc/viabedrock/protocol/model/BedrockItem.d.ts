@@ -27,7 +27,6 @@ export class BedrockItem extends Object implements Item {
     canPlace(): string[];
     copy(): BedrockItem;
     data(): number;
-    data(): number;
     dataContainer(): StructuredDataContainer;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
@@ -41,8 +40,6 @@ export class BedrockItem extends Object implements Item {
     setBlockingTicks(arg0: number): void;
     setCanBreak(arg0: string[]): void;
     setCanPlace(arg0: string[]): void;
-    setData(arg0: number): void;
-    setData(arg0: number): void;
     setData(arg0: number): void;
     setIdentifier(arg0: number): void;
     setNetId(arg0: number): void;

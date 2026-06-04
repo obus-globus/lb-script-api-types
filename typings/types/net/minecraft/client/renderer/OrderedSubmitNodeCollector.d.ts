@@ -35,12 +35,10 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Quaternionf } from '../../../../org/joml/Quaternionf.d.ts'
 export interface OrderedSubmitNodeCollector extends Object, FabricOrderedSubmitNodeCollector, OrderedSubmitNodeCollectorMixin{
     submitBlockModel(arg0: PoseStack, arg1: (param0: ChunkSectionLayer) => RenderType, arg2: boolean, arg3: BlockStateModelPart[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
-    submitBlockModel(arg0: PoseStack, arg1: (param0: ChunkSectionLayer) => RenderType, arg2: boolean, arg3: BlockStateModelPart[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
     submitBlockModel(poseStack: PoseStack, renderType: RenderType, parts: BlockStateModelPart[], tintLayers: number[], lightCoords: number, overlayCoords: number, outlineColor: number): void;
     submitBreakingBlockModel(poseStack: PoseStack, model: BlockStateModel, seed: number, progress: number): void;
     submitCustomGeometry(poseStack: PoseStack, renderType: RenderType, customGeometryRenderer: SubmitNodeCollector$CustomGeometryRenderer): void;
     submitFlame(poseStack: PoseStack, renderState: EntityRenderState, rotation: Quaternionf): void;
-    submitItem(arg0: PoseStack, arg1: ItemDisplayContext, arg2: number, arg3: number, arg4: number, arg5: number[], arg6: BakedQuad[], arg7: MeshView, arg8: ItemStackRenderState$FoilType): void;
     submitItem(arg0: PoseStack, arg1: ItemDisplayContext, arg2: number, arg3: number, arg4: number, arg5: number[], arg6: BakedQuad[], arg7: MeshView, arg8: ItemStackRenderState$FoilType): void;
     submitItem(poseStack: PoseStack, displayContext: ItemDisplayContext, lightCoords: number, overlayCoords: number, outlineColor: number, tintLayers: number[], quads: BakedQuad[], foilType: ItemStackRenderState$FoilType): void;
     submitLeash(poseStack: PoseStack, leashState: EntityRenderState$LeashState): void;

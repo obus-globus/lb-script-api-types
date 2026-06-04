@@ -7,7 +7,6 @@ export interface ShortPriorityQueue extends PriorityQueue<number>, Object{
     dequeue(): number;
     dequeueShort(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstShort(): number;
     isEmpty(): boolean;

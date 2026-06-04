@@ -13,5 +13,4 @@ export class RandomBooleanFeatureConfiguration extends Object implements Feature
     featureFalse: Holder<PlacedFeature>;
     featureTrue: Holder<PlacedFeature>;
     getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
 }

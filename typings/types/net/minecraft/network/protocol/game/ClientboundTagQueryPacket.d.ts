@@ -18,7 +18,6 @@ export class ClientboundTagQueryPacket extends Object implements Packet<ClientGa
     getTransactionId(): number;
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;
-    isSkippable(): boolean;
     isTerminal(): boolean;
     type(): PacketType<ClientboundTagQueryPacket>;
     // private write(output: FriendlyByteBuf): void;

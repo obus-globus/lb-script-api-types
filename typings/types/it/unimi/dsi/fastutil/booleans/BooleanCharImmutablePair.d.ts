@@ -12,28 +12,22 @@ export class BooleanCharImmutablePair extends Object implements BooleanCharPair,
     equals(arg0: Object | null): boolean;
     first(): boolean;
     first(arg0: boolean): BooleanCharPair;
-    first(arg0: boolean): BooleanCharPair;
     firstBoolean(): boolean;
     hashCode(): number;
     key(): boolean;
     key(arg0: boolean): BooleanCharPair;
-    key(arg0: boolean): BooleanCharPair;
     keyBoolean(): boolean;
     left(): boolean;
-    left(arg0: boolean): BooleanCharPair;
     left(arg0: boolean): BooleanCharPair;
     leftBoolean(): boolean;
     right(): string;
     right(arg0: string): BooleanCharPair;
-    right(arg0: string): BooleanCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): BooleanCharPair;
     second(arg0: string): BooleanCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): BooleanCharPair;
     value(arg0: string): BooleanCharPair;
     valueChar(): string;
 }

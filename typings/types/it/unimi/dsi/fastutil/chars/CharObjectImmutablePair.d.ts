@@ -13,15 +13,12 @@ export class CharObjectImmutablePair<V extends Object | number | string | boolea
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharObjectPair<V>;
-    first(arg0: string): CharObjectPair<V>;
     firstChar(): string;
     hashCode(): number;
     key(): string;
     key(arg0: string): CharObjectPair<V>;
-    key(arg0: string): CharObjectPair<V>;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharObjectPair<V>;
     left(arg0: string): CharObjectPair<V>;
     leftChar(): string;
     right(): V;

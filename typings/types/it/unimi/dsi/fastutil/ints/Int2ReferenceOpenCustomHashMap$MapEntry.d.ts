@@ -18,16 +18,13 @@ export class Int2ReferenceOpenCustomHashMap$MapEntry extends Object implements I
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntReferencePair<V>;
-    first(arg0: number): IntReferencePair<V>;
     firstInt(): number;
     getIntKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): IntReferencePair<V>;
-    key(arg0: number): IntReferencePair<V>;
     keyInt(): number;
     left(): number;
-    left(arg0: number): IntReferencePair<V>;
     left(arg0: number): IntReferencePair<V>;
     leftInt(): number;
     right<V extends Object | number | string | boolean>(): V;

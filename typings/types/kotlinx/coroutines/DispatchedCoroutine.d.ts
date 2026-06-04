@@ -1,6 +1,7 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { AtomicInt } from '../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { Job$Key } from '../../kotlinx/coroutines/Job$Key.d.ts'
 import type { ScopeCoroutine } from '../../kotlinx/coroutines/internal/ScopeCoroutine.d.ts'
 export class DispatchedCoroutine<T extends Object | number | string | boolean> extends ScopeCoroutine<T> {

@@ -13,6 +13,5 @@ export class Unstitcher$RegionInstance extends Object implements SpriteSource$Di
     // private xDivisor: number;
     // private yDivisor: number;
     discard(): void;
-    discard(): void;
     get(loader: (param0: Identifier, param1: Resource) => net.minecraft.client.renderer.texture.SpriteContents): SpriteContents;
 }

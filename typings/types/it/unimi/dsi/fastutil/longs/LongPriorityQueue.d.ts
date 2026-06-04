@@ -7,7 +7,6 @@ export interface LongPriorityQueue extends PriorityQueue<number>, Object{
     dequeue(): number;
     dequeueLong(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstLong(): number;
     isEmpty(): boolean;

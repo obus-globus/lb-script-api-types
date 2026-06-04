@@ -3,12 +3,10 @@ import type { Short2LongRBTreeMap$TreeIterator } from '../../../../../it/unimi/d
 export class Short2LongRBTreeMap$ValueIterator extends Short2LongRBTreeMap$TreeIterator implements LongListIterator {
     private constructor(null_: Short2LongRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

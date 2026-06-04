@@ -10,7 +10,6 @@ export class TextIO$DoubleReaderWrapper extends Object implements DoubleIterator
     // private s: string;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

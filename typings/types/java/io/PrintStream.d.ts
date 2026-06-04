@@ -48,10 +48,6 @@ export class PrintStream extends FilterOutputStream implements Closeable, Append
     print(arg0: string): void;
     print(arg0: string[]): void;
     print(arg0: number): void;
-    print(arg0: number): void;
-    print(arg0: number): void;
-    print(arg0: number): void;
-    print(arg0: string): void;
     printf(arg0: Locale, arg1: string, arg2: Object[]): PrintStream;
     printf(arg0: string, arg1: Object[]): PrintStream;
     println(): void;
@@ -60,10 +56,6 @@ export class PrintStream extends FilterOutputStream implements Closeable, Append
     println(arg0: string): void;
     println(arg0: string[]): void;
     println(arg0: number): void;
-    println(arg0: number): void;
-    println(arg0: number): void;
-    println(arg0: number): void;
-    println(arg0: string): void;
     setError(): void;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;

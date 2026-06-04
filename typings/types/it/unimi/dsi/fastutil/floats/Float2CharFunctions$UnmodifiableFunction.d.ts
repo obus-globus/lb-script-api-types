@@ -17,7 +17,6 @@ export class Float2CharFunctions$UnmodifiableFunction extends AbstractFloat2Char
     getOrDefault(arg0: number, arg1: string): string;
     hashCode(): number;
     put(arg0: number, arg1: string): string;
-    put(arg0: number, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: number): string;
     size(): number;

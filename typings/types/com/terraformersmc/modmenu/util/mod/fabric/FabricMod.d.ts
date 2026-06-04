@@ -42,10 +42,8 @@ export class FabricMod extends Object implements Mod {
     getParent(): string;
     getPrefixedVersion(): string;
     getSha512Hash(): string;
-    getSha512Hash(): string;
     getSource(): string;
     getSummary(): string;
-    getTranslatedDescription(): string;
     getTranslatedDescription(): string;
     getTranslatedName(): string;
     getTranslatedSummary(): string;

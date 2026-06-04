@@ -16,7 +16,6 @@ export interface PermissionContext extends Object, PermissionContextOwner{
     checkPermission(arg0: Identifier, arg1: PermissionLevel): boolean;
     get<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>): T;
     getPermissionContext(): PermissionContext;
-    getPermissionContext(): PermissionContext;
     keys(): PermissionContext$Key<Object>[];
     mutable(): MutablePermissionContext;
     orElse<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): T;

@@ -36,8 +36,6 @@ export class ServerConfigurationPacketListenerImpl extends ServerCommonPacketLis
     // private synchronizeRegistriesTask: SynchronizeRegistriesTask;
     // private addOptionalTasks(): void;
     addTask(arg0: ConfigurationTask): void;
-    addTask(arg0: ConfigurationTask): void;
-    completeTask(arg0: ConfigurationTask$Type): void;
     completeTask(arg0: ConfigurationTask$Type): void;
     // private finishCurrentTask(taskTypeToFinish: ConfigurationTask$Type): void;
     getAddon(): ServerConfigurationNetworkAddon;

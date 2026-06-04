@@ -7,7 +7,6 @@ export class Long2IntOpenHashMap$ValueIterator extends Long2IntOpenHashMap$MapIt
     constructor(null_: Long2IntOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextInt(): number;
     skip(arg0: number): number;

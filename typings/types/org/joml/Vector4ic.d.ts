@@ -11,7 +11,6 @@ export interface Vector4ic extends Object{
     distanceSquared(arg0: number, arg1: number, arg2: number, arg3: number): number;
     distanceSquared(arg0: Vector4ic): number;
     div(arg0: number, arg1: Vector4i): Vector4i;
-    div(arg0: number, arg1: Vector4i): Vector4i;
     div(arg0: Vector4ic, arg1: Vector4i): Vector4i;
     dot(arg0: Vector4ic): number;
     equals(other: Object | null): boolean;

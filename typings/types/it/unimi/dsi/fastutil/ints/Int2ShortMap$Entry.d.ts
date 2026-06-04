@@ -6,5 +6,4 @@ export interface Int2ShortMap$Entry extends Object, Map$Entry<number, number>{
     getIntKey(): number;
     getShortValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

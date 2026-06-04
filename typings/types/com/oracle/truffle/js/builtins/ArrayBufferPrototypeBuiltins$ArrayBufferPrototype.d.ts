@@ -25,7 +25,6 @@ export class ArrayBufferPrototypeBuiltins$ArrayBufferPrototype extends Enum<Arra
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
-    getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
@@ -35,7 +34,6 @@ export class ArrayBufferPrototypeBuiltins$ArrayBufferPrototype extends Enum<Arra
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isGetter(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

@@ -30,7 +30,6 @@ export class EconomicMapWrap<K extends Object | number | string | boolean, V ext
     putAll(other: EconomicMap<K, V>): void;
     putAll(other: UnmodifiableEconomicMap<K, V>): void;
     putIfAbsent(key: K, value: V): V;
-    putIfAbsent(key: K, value: V): V;
     removeKey(key: K): V;
     replaceAll(function_: (param0: K, param1: V) => V): void;
     size(): number;

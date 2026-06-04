@@ -34,7 +34,6 @@ export class ReadElementNode extends JSTargetableNode implements ReadNode {
     executeInt(frame: VirtualFrame): number;
     executeTypeDispatch(target: Object, index: Object, receiver: Object, defaultValue: Object): Object;
     executeTypeDispatch(target: Object, index: number, receiver: Object, defaultValue: Object): Object;
-    executeTypeDispatch(target: Object, index: number, receiver: Object, defaultValue: Object): Object;
     executeTypeDispatchDouble(target: Object, index: Object, receiver: Object, defaultValue: Object): number;
     executeTypeDispatchDouble(target: Object, index: number, receiver: Object, defaultValue: Object): number;
     executeTypeDispatchInt(target: Object, index: Object, receiver: Object, defaultValue: Object): number;
@@ -45,7 +44,6 @@ export class ReadElementNode extends JSTargetableNode implements ReadNode {
     executeWithTargetAndIndex(target: Object, index: Object, receiver: Object): Object;
     executeWithTargetAndIndex(target: Object, index: number): Object;
     executeWithTargetAndIndex(target: Object, index: number, receiver: Object): Object;
-    executeWithTargetAndIndex(target: Object, index: number): Object;
     executeWithTargetAndIndexDouble(target: Object, index: Object, receiver: Object): number;
     executeWithTargetAndIndexDouble(target: Object, index: number, receiver: Object): number;
     executeWithTargetAndIndexInt(target: Object, index: Object, receiver: Object): number;

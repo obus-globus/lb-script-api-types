@@ -120,8 +120,6 @@ export class Vector2f extends Object implements Externalizable, Cloneable, Vecto
     set(arg0: FloatBuffer): Vector2f;
     set(arg0: number): Vector2f;
     set(arg0: number, arg1: number): Vector2f;
-    set(arg0: number): Vector2f;
-    set(arg0: number, arg1: number): Vector2f;
     set(arg0: number[]): Vector2f;
     set(arg0: number, arg1: ByteBuffer): Vector2f;
     set(arg0: number, arg1: FloatBuffer): Vector2f;

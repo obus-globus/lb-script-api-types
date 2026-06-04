@@ -75,8 +75,6 @@ export class DateNumberFormat extends NumberFormat {
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: number): string;
-    format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     getDigits(): string[];
     getMaximumIntegerDigits(): number;
     getMinimumIntegerDigits(): number;

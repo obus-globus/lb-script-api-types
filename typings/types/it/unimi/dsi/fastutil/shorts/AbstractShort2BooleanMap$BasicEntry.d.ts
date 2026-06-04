@@ -11,7 +11,5 @@ export class AbstractShort2BooleanMap$BasicEntry extends Object implements Short
     getShortKey(): number;
     hashCode(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     toString(): string;
 }

@@ -19,10 +19,6 @@ export interface NDManager extends AutoCloseable, Object{
     arange(arg0: number, arg1: number, arg2: number): NDArray;
     arange(arg0: number, arg1: number, arg2: number, arg3: DataType): NDArray;
     arange(arg0: number, arg1: number, arg2: number, arg3: DataType, arg4: Device): NDArray;
-    arange(arg0: number): NDArray;
-    arange(arg0: number, arg1: number): NDArray;
-    arange(arg0: number, arg1: number, arg2: number): NDArray;
-    arange(arg0: number, arg1: number, arg2: number, arg3: DataType): NDArray;
     attachAll(arg0: NDResource[]): void;
     attachInternal(arg0: string, arg1: AutoCloseable[]): void;
     attachUncappedInternal(arg0: string, arg1: AutoCloseable): void;
@@ -35,10 +31,6 @@ export interface NDManager extends AutoCloseable, Object{
     create(arg0: Buffer, arg1: Shape, arg2: DataType): NDArray;
     create(arg0: (Object | null)[][]): NDArray;
     create(arg0: number[][]): NDArray;
-    create(arg0: number[][]): NDArray;
-    create(arg0: number[][]): NDArray;
-    create(arg0: number[][]): NDArray;
-    create(arg0: number[][]): NDArray;
     create(arg0: string[]): NDArray;
     create(arg0: string[], arg1: Shape): NDArray;
     create(arg0: string[], arg1: Charset): NDArray;
@@ -46,18 +38,6 @@ export interface NDManager extends AutoCloseable, Object{
     create(arg0: boolean): NDArray;
     create(arg0: (Object | null)[]): NDArray;
     create(arg0: (Object | null)[], arg1: Shape): NDArray;
-    create(arg0: number): NDArray;
-    create(arg0: number[]): NDArray;
-    create(arg0: number[], arg1: Shape): NDArray;
-    create(arg0: number): NDArray;
-    create(arg0: number[]): NDArray;
-    create(arg0: number[], arg1: Shape): NDArray;
-    create(arg0: number): NDArray;
-    create(arg0: number[]): NDArray;
-    create(arg0: number[], arg1: Shape): NDArray;
-    create(arg0: number): NDArray;
-    create(arg0: number[]): NDArray;
-    create(arg0: number[], arg1: Shape): NDArray;
     create(arg0: number): NDArray;
     create(arg0: number[]): NDArray;
     create(arg0: number[], arg1: Shape): NDArray;
@@ -82,7 +62,6 @@ export interface NDManager extends AutoCloseable, Object{
     full(arg0: Shape, arg1: number): NDArray;
     full(arg0: Shape, arg1: number, arg2: DataType): NDArray;
     full(arg0: Shape, arg1: number, arg2: DataType, arg3: Device): NDArray;
-    full(arg0: Shape, arg1: number): NDArray;
     getDevice(): Device;
     getEngine(): Engine;
     getManagedArrays(): NDArray[];
@@ -95,8 +74,6 @@ export interface NDManager extends AutoCloseable, Object{
     linspace(arg0: number, arg1: number, arg2: number): NDArray;
     linspace(arg0: number, arg1: number, arg2: number, arg3: boolean): NDArray;
     linspace(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: Device): NDArray;
-    linspace(arg0: number, arg1: number, arg2: number): NDArray;
-    linspace(arg0: number, arg1: number, arg2: number, arg3: boolean): NDArray;
     load(arg0: Path[]): (Object | null)[];
     load(arg0: Path[], arg1: Device): (Object | null)[];
     newSubManager(): NDManager;

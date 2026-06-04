@@ -22,17 +22,11 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     // private rolls: NumberProvider;
     add(arg0: E[]): LootPool$Builder;
     add(arg0: LootPoolEntryContainer): LootPool$Builder;
-    add(arg0: E[]): LootPool$Builder;
-    add(arg0: LootPoolEntryContainer): LootPool$Builder;
     add(entry: LootPoolEntryContainer$Builder<Object>): LootPool$Builder;
     apply(arg0: E[]): LootPool$Builder;
     apply(arg0: LootItemFunction): LootPool$Builder;
     apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;
-    apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;
-    apply(arg0: E[]): LootPool$Builder;
-    apply(arg0: LootItemFunction): LootPool$Builder;
     apply(function_: LootItemFunction$Builder): LootPool$Builder;
-    apply<T extends FunctionUserBuilder<T>>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     apply<T extends FunctionUserBuilder<T>>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     build(): LootPool;
     // private self(): LootPool$Builder;
@@ -42,8 +36,6 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     when(arg0: E[]): LootPool$Builder;
     when(arg0: LootItemCondition): LootPool$Builder;
     when(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): LootPool$Builder;
-    when(arg0: E[]): LootPool$Builder;
-    when(arg0: LootItemCondition): LootPool$Builder;
     when(condition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): LootPool$Builder;
     when<T extends ConditionUserBuilder<T>>(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
 }

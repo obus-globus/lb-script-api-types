@@ -33,7 +33,6 @@ export class GlobalBuiltins$Global extends Enum<GlobalBuiltins$Global> implement
     getName(): TruffleString;
     isAOTSupported(): boolean;
     isAnnexB(): boolean;
-    isAnnexB(): boolean;
     isConfigurable(): boolean;
     isConstructor(): boolean;
     isEnabled(): boolean;

@@ -11,7 +11,5 @@ export class AbstractObject2DoubleMap$BasicEntry<K extends Object | number | str
     getDoubleValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

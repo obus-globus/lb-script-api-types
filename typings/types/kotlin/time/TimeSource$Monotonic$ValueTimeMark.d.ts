@@ -20,7 +20,6 @@ export class TimeSource$Monotonic$ValueTimeMark extends Object implements Compar
     constructor(reading: number)
     // private reading: number;
     compareTo(other: ComparableTimeMark): number;
-    compareTo(other: ComparableTimeMark): number;
     compareTo(other: TimeSource$Monotonic$ValueTimeMark): number;
     elapsedNow(): Duration;
     equals(other: Object | null): boolean;

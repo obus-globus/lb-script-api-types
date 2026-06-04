@@ -7,8 +7,6 @@ export class Long2FloatOpenCustomHashMap$ValueIterator extends Long2FloatOpenCus
     constructor(null_: Long2FloatOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

@@ -35,8 +35,6 @@ export abstract class AbstractSelectionList$Entry<E extends AbstractSelectionLis
     getCurrentFocusPath(): ComponentPath;
     getHeight(): number;
     getRectangle(): ScreenRectangle;
-    getRectangle(): ScreenRectangle;
-    getRectangle(): ScreenRectangle;
     getWidth(): number;
     getX(): number;
     getY(): number;

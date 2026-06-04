@@ -6,7 +6,6 @@ export class Float2BooleanOpenHashMap$ValueIterator extends Float2BooleanOpenHas
     constructor(null_: Float2BooleanOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
     nextBoolean(): boolean;
     skip(arg0: number): number;

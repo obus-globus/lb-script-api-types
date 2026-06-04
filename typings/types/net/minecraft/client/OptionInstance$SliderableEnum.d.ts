@@ -20,8 +20,6 @@ export class OptionInstance$SliderableEnum<T extends Object | number | string | 
     fromSliderValue(slider: number): T;
     hashCode(): number;
     next(current: T): Optional<T>;
-    next(current: T): Optional<T>;
-    previous(current: T): Optional<T>;
     previous(current: T): Optional<T>;
     toSliderValue(value: T): number;
     toString(): string;

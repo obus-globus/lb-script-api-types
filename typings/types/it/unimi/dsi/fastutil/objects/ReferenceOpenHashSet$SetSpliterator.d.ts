@@ -21,7 +21,6 @@ export class ReferenceOpenHashSet$SetSpliterator extends Object implements Objec
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
     skip(arg0: number): number;
-    skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ReferenceOpenHashSet$SetSpliterator;
 }

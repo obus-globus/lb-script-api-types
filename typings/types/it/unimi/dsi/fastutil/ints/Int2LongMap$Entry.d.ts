@@ -6,5 +6,4 @@ export interface Int2LongMap$Entry extends Object, Map$Entry<number, number>{
     getIntKey(): number;
     getLongValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

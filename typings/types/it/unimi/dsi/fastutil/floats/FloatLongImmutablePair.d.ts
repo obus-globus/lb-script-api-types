@@ -12,28 +12,22 @@ export class FloatLongImmutablePair extends Object implements FloatLongPair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatLongPair;
-    first(arg0: number): FloatLongPair;
     firstFloat(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): FloatLongPair;
-    key(arg0: number): FloatLongPair;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatLongPair;
     left(arg0: number): FloatLongPair;
     leftFloat(): number;
     right(): number;
     right(arg0: number): FloatLongPair;
-    right(arg0: number): FloatLongPair;
     rightLong(): number;
     second(): number;
-    second(arg0: number): FloatLongPair;
     second(arg0: number): FloatLongPair;
     secondLong(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): FloatLongPair;
     value(arg0: number): FloatLongPair;
     valueLong(): number;
 }

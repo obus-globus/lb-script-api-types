@@ -19,16 +19,13 @@ export class Double2ObjectOpenCustomHashMap$MapEntry extends Object implements D
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleObjectPair<V>;
-    first(arg0: number): DoubleObjectPair<V>;
     firstDouble(): number;
     getDoubleKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleObjectPair<V>;
-    key(arg0: number): DoubleObjectPair<V>;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleObjectPair<V>;
     left(arg0: number): DoubleObjectPair<V>;
     leftDouble(): number;
     right<V extends Object | number | string | boolean>(): V;

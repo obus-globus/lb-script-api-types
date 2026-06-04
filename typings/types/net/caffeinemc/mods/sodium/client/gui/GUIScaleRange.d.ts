@@ -8,7 +8,6 @@ export class GUIScaleRange extends Record implements SteppedValidator {
     getValidatedValue(arg0: number, arg1: () => number): number;
     hashCode(): number;
     isValueValid(arg0: number): boolean;
-    isValueValid(arg0: number): boolean;
     max(): number;
     min(): number;
     step(): number;

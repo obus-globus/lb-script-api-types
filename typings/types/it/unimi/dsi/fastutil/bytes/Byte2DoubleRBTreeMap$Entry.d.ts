@@ -23,7 +23,6 @@ export class Byte2DoubleRBTreeMap$Entry extends AbstractByte2DoubleMap$BasicEntr
     right(): Byte2DoubleRBTreeMap$Entry;
     right(arg0: Byte2DoubleRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Byte2DoubleRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

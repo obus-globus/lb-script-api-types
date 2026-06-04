@@ -205,11 +205,6 @@ export abstract class Component extends Object implements MenuContainer, ImageOb
     firePropertyChange(arg0: string, arg1: boolean, arg2: boolean): void;
     firePropertyChange(arg0: string, arg1: number, arg2: number): void;
     firePropertyChange(arg0: string, arg1: string, arg2: string): void;
-    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
-    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
-    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
-    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
-    firePropertyChange(arg0: string, arg1: number, arg2: number): void;
     getAccessibleContext(): AccessibleContext;
     getAccessibleIndexInParent(): number;
     getAccessibleStateSet(): AccessibleStateSet;

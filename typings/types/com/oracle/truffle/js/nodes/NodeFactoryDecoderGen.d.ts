@@ -9,6 +9,5 @@ export class NodeFactoryDecoderGen extends Object implements NodeDecoder<NodeFac
     decodeNode(decoder: NodeDecoder$DecoderState, nodeFactory: NodeFactory): Object;
     getChecksum(): number;
     getClasses(): Class<Object>[];
-    getClasses(): Class<Object>[];
     getMethodIdFromSignature(signature: string): number;
 }

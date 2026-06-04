@@ -97,9 +97,6 @@ export class GeneratorAdapter extends LocalVariablesSorter {
     push(value: Type): void;
     push(value: boolean): void;
     push(value: number): void;
-    push(value: number): void;
-    push(value: number): void;
-    push(value: number): void;
     push(value: string): void;
     putField(owner: Type, name: string, type: Type): void;
     putStatic(owner: Type, name: string, type: Type): void;

@@ -20,12 +20,9 @@ export class SelectorContents extends Record implements ComponentContents {
     equals(o: Object | null): boolean;
     hashCode(): number;
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
-    resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
     selector(): CompilableString<EntitySelector>;
     separator(): Optional<Component>;
     toString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
     visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
     visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

@@ -8,14 +8,9 @@ export class PropertiesPropertySource extends Object implements PropertySource {
     readonly priority: number;
     // private properties: Properties;
     containsProperty(key: string): boolean;
-    containsProperty(key: string): boolean;
     forEach(action: (param0: string, param1: string) => void): void;
-    forEach(action: (param0: string, param1: string) => void): void;
-    getNormalForm(tokens: CharSequence[]): CharSequence;
     getNormalForm(tokens: CharSequence[]): CharSequence;
     getPriority(): number;
     getProperty(key: string): string;
-    getProperty(key: string): string;
-    getPropertyNames(): E[];
     getPropertyNames(): E[];
 }

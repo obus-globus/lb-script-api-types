@@ -17,7 +17,6 @@ export class Int2BooleanFunctions$UnmodifiableFunction extends AbstractInt2Boole
     getOrDefault(arg0: number, arg1: boolean): boolean;
     hashCode(): number;
     put(arg0: number, arg1: boolean): boolean;
-    put(arg0: number, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: number): boolean;
     size(): number;

@@ -18,7 +18,6 @@ export class Synchronized$SynchronizedMultimap<K extends Object | number | strin
     entries(): E[];
     equals(o: Object | null): boolean;
     forEach(action: (param0: K, param1: V) => void): void;
-    forEach(action: (param0: K, param1: V) => void): void;
     get(key: K): E[];
     hashCode(): number;
     isEmpty(): boolean;

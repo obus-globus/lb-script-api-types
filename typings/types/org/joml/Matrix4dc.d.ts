@@ -49,8 +49,6 @@ export interface Matrix4dc extends Object{
     get(arg0: FloatBuffer): FloatBuffer;
     get(arg0: number[]): number[];
     get(arg0: number[], arg1: number): number[];
-    get(arg0: number[]): number[];
-    get(arg0: number[], arg1: number): number[];
     get(arg0: number, arg1: ByteBuffer): ByteBuffer;
     get(arg0: number, arg1: DoubleBuffer): DoubleBuffer;
     get(arg0: number, arg1: FloatBuffer): FloatBuffer;

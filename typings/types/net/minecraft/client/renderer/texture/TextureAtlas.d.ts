@@ -50,7 +50,6 @@ export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtla
     missingSprite(): TextureAtlasSprite;
     sodium$getSpriteFinder(): SodiumSpriteFinder;
     spriteFinder(): SpriteFinder;
-    spriteFinder(): SpriteFinder;
     tick(): void;
     upload(preparations: SpriteLoader$Preparations): void;
     // private uploadAnimationFrames(): void;

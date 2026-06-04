@@ -17,13 +17,11 @@ export abstract class BooleanBigSpliterators$AbstractIndexBasedSpliterator exten
     computeSplitPoint(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     get(arg0: number): boolean;
     getMaxPos(): number;
     makeForSplit(arg0: number, arg1: number): BooleanSpliterator;
     skip(arg0: number): number;
     // private splitPointCheck(arg0: number, arg1: number): void;
-    tryAdvance(arg0: (param0: boolean) => void): boolean;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
     trySplit(): BooleanSpliterator;
 }

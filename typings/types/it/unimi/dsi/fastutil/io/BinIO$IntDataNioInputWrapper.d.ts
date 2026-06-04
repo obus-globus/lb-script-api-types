@@ -12,7 +12,6 @@ export class BinIO$IntDataNioInputWrapper extends Object implements IntIterator 
     // private byteBuffer: ByteBuffer;
     // private channel: ReadableByteChannel;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

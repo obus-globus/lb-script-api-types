@@ -17,7 +17,6 @@ export interface VertexConsumer extends Object{
     putBlockBakedQuad(x: number, y: number, z: number, quad: BakedQuad, instance: QuadInstance): void;
     setColor(r: number, g: number, b: number, a: number): VertexConsumer;
     setColor(color: number): VertexConsumer;
-    setColor(r: number, g: number, b: number, a: number): VertexConsumer;
     setLight(packedLightCoords: number): VertexConsumer;
     setLineWidth(width: number): VertexConsumer;
     setNormal(arg0: PoseStack$Pose, arg1: number, arg2: number, arg3: number): VertexConsumer;

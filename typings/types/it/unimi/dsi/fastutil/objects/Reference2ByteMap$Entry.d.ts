@@ -4,5 +4,4 @@ export interface Reference2ByteMap$Entry<K extends Object | number | string | bo
     readonly value: number;
     getByteValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

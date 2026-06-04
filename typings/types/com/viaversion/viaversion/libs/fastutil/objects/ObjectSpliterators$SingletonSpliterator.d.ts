@@ -21,7 +21,6 @@ export class ObjectSpliterators$SingletonSpliterator<K extends Object | number |
     forEachRemaining(arg0: (param0: K) => void): void;
     getComparator(): (param0: K) => kotlin.Boolean;
     skip(arg0: number): number;
-    skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;
 }

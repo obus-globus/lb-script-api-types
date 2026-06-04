@@ -7,8 +7,6 @@ export class Reference2ByteOpenCustomHashMap$ValueIterator extends Reference2Byt
     constructor(null_: Reference2ByteOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextByte(): number;
     skip(arg0: number): number;

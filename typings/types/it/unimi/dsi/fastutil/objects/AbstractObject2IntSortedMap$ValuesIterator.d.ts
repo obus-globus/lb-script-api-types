@@ -8,7 +8,6 @@ export class AbstractObject2IntSortedMap$ValuesIterator<K extends Object | numbe
     constructor(arg0: ObjectBidirectionalIterator<Object2IntMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Object2IntMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

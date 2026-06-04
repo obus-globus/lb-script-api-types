@@ -10,5 +10,4 @@ export class BasicTranslator extends Object implements Translator {
     removeTranslation(arg0: string): void;
     translate(arg0: string): string;
     translateOrKey(arg0: string): string;
-    translateOrKey(arg0: string): string;
 }

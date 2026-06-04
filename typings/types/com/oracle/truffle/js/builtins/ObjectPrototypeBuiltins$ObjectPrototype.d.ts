@@ -32,7 +32,6 @@ export class ObjectPrototypeBuiltins$ObjectPrototype extends Enum<ObjectPrototyp
     getName(): TruffleString;
     isAOTSupported(): boolean;
     isAnnexB(): boolean;
-    isAnnexB(): boolean;
     isConfigurable(): boolean;
     isConstructor(): boolean;
     isEnabled(): boolean;

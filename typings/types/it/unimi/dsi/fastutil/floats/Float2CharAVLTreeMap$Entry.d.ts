@@ -25,7 +25,6 @@ export class Float2CharAVLTreeMap$Entry extends AbstractFloat2CharMap$BasicEntry
     right(): Float2CharAVLTreeMap$Entry;
     right(arg0: Float2CharAVLTreeMap$Entry): void;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
     succ(): boolean;
     succ(arg0: Float2CharAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

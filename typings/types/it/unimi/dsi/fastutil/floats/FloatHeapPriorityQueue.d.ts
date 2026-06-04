@@ -26,8 +26,6 @@ export class FloatHeapPriorityQueue extends Object implements FloatPriorityQueue
     dequeue(): number;
     dequeueFloat(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstFloat(): number;
     last(): number;

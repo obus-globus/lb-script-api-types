@@ -13,13 +13,9 @@ export class SideChainPartBlock$SideChainNeighbor extends Record implements Side
     // private pos: BlockPos;
     block(): SideChainPartBlock;
     connectToTheLeft(): void;
-    connectToTheLeft(): void;
-    connectToTheRight(): void;
     connectToTheRight(): void;
     connectsTowards(endPart: SideChainPart): boolean;
     disconnectFromLeft(): void;
-    disconnectFromLeft(): void;
-    disconnectFromRight(): void;
     disconnectFromRight(): void;
     equals(o: Object | null): boolean;
     hashCode(): number;

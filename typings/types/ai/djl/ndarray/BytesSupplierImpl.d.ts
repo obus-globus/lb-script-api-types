@@ -12,10 +12,7 @@ export class BytesSupplierImpl extends Object implements BytesSupplier {
     // private obj: Object;
     // private value: string;
     getAsBytes(): number[];
-    getAsBytes(): number[];
     getAsObject(): Object;
-    getAsObject(): Object;
-    getAsString(): string;
     getAsString(): string;
     toByteBuffer(): ByteBuffer;
 }

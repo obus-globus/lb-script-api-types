@@ -6,14 +6,9 @@ import type { DoubleConsumer } from '../../../../../java/util/function/DoubleCon
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface FloatBidirectionalIterator extends FloatIterator, ObjectBidirectionalIterator<number>, Object{
     back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     previous(): number;
     previousFloat(): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

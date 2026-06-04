@@ -26,7 +26,6 @@ export class Path2D extends Object implements Shape, Cloneable {
     append(arg0: Shape, arg1: boolean): void;
     append(arg0: PathIterator, arg1: boolean): void;
     append(arg0: number, arg1: number): void;
-    append(arg0: number, arg1: number): void;
     clone(): Object;
     protected clone(): Object;
     cloneCoordsDouble(arg0: AffineTransform): number[];

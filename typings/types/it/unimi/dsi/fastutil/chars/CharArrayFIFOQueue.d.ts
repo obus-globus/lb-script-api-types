@@ -19,14 +19,11 @@ export class CharArrayFIFOQueue extends Object implements CharPriorityQueue, Ser
     dequeueChar(): string;
     dequeueLastChar(): string;
     enqueue(arg0: string): void;
-    enqueue(arg0: string): void;
-    enqueue(arg0: string): void;
     enqueueFirst(arg0: string): void;
     // private expand(): void;
     first(): string;
     firstChar(): string;
     last(): string;
-    lastChar(): string;
     lastChar(): string;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;

@@ -10,10 +10,8 @@ export class XoroshiroRandomSource$XoroshiroPositionalRandomFactory extends Obje
     // private seedLo: number;
     at(pos: BlockPos): RandomSource;
     at(x: number, y: number, z: number): RandomSource;
-    at(pos: BlockPos): RandomSource;
     fromHashOf(name: Identifier): RandomSource;
     fromHashOf(name: string): RandomSource;
-    fromHashOf(name: Identifier): RandomSource;
     fromSeed(seed: number): RandomSource;
     parityConfigString(sb: StringBuilder): void;
 }

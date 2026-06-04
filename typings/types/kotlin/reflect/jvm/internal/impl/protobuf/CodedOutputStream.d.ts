@@ -72,9 +72,6 @@ export class CodedOutputStream extends Object {
     writeMessageNoTag(arg0: MessageLite): void;
     writeMessageSetExtension(arg0: number, arg1: MessageLite): void;
     writeRawByte(arg0: number): void;
-    writeRawByte(arg0: number): void;
-    writeRawBytes(arg0: number[]): void;
-    writeRawBytes(arg0: number[], arg1: number, arg2: number): void;
     writeRawBytes(arg0: number[]): void;
     writeRawBytes(arg0: number[], arg1: number, arg2: number): void;
     writeRawLittleEndian32(arg0: number): void;

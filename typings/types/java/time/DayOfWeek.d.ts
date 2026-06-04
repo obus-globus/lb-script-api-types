@@ -25,7 +25,6 @@ export class DayOfWeek extends Enum<DayOfWeek> implements TemporalAccessor, Temp
     private constructor()
     adjustInto(arg0: Temporal): Temporal;
     get(arg0: TemporalField): number;
-    get(arg0: TemporalField): number;
     getDisplayName(arg0: TextStyle, arg1: Locale): string;
     getLong(arg0: TemporalField): number;
     getValue(): number;
@@ -33,8 +32,6 @@ export class DayOfWeek extends Enum<DayOfWeek> implements TemporalAccessor, Temp
     minus(arg0: number): DayOfWeek;
     plus(arg0: number): DayOfWeek;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    range(arg0: TemporalField): ValueRange;
     range(arg0: TemporalField): ValueRange;
     name(): "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY" | "SATURDAY" | "SUNDAY";
 }

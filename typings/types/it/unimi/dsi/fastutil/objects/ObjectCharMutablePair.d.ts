@@ -16,17 +16,12 @@ export class ObjectCharMutablePair<K extends Object | number | string | boolean>
     right(): string;
     right(arg0: string): ObjectCharPair<K>;
     right(arg0: string): ObjectCharMutablePair<K>;
-    right(): string;
-    right(arg0: string): ObjectCharPair<K>;
-    right(arg0: string): ObjectCharPair<K>;
     rightChar(): string;
     second(): string;
-    second(arg0: string): ObjectCharPair<K>;
     second(arg0: string): ObjectCharPair<K>;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): ObjectCharPair<K>;
     value(arg0: string): ObjectCharPair<K>;
     valueChar(): string;
 }

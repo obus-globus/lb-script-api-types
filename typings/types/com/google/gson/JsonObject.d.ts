@@ -10,7 +10,6 @@ export class JsonObject extends JsonElement {
     addProperty(arg0: string, arg1: boolean): void;
     addProperty(arg0: string, arg1: string): void;
     addProperty(arg0: string, arg1: Number): void;
-    addProperty(arg0: string, arg1: string): void;
     asMap(): { [key: string]: JsonElement };
     deepCopy(): JsonObject;
     entrySet(): Map$Entry<string, JsonElement>[];

@@ -7,8 +7,6 @@ export class ObjectBigListIterators$EmptyBigListIterator<K extends Object | numb
     constructor()
     add(arg0: K): void;
     back(arg0: number): number;
-    back(arg0: number): number;
-    back(arg0: number): number;
     clone(): Object;
     protected clone(): Object;
     forEachRemaining(arg0: (param0: K) => void): void;
@@ -20,8 +18,5 @@ export class ObjectBigListIterators$EmptyBigListIterator<K extends Object | numb
     previousIndex(): number;
     // private readResolve(): Object;
     set(arg0: K): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

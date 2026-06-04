@@ -23,21 +23,13 @@ export class Reference2ByteArrayMap$MapEntry extends Object implements Reference
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceBytePair<K>;
-    right(arg0: number): ReferenceBytePair<K>;
-    right(): number;
-    right(arg0: number): ReferenceBytePair<K>;
-    right(arg0: number): ReferenceBytePair<K>;
     rightByte(): number;
     second(): number;
     second(arg0: number): ReferenceBytePair<K>;
-    second(arg0: number): ReferenceBytePair<K>;
     secondByte(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceBytePair<K>;
     value(arg0: number): ReferenceBytePair<K>;
     valueByte(): number;
 }

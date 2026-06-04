@@ -9,8 +9,6 @@ export class AbstractReference2ShortSortedMap$ValuesIterator<K extends Object | 
     constructor(arg0: ObjectBidirectionalIterator<Reference2ShortMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2ShortMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;

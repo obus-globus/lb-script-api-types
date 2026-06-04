@@ -103,6 +103,5 @@ export class SculkVeinBlock extends MultifaceSpreadeableBlock implements SculkBe
     getSculkSpreadDelay(): number;
     getSpreader(): MultifaceSpreader;
     onDischarged(level: LevelAccessor, state: BlockState, pos: BlockPos, random: RandomSource): void;
-    onDischarged(level: LevelAccessor, state: BlockState, pos: BlockPos, random: RandomSource): void;
     updateDecayDelay(age: number): number;
 }

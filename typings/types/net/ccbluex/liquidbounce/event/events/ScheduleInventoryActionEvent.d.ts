@@ -7,6 +7,5 @@ export class ScheduleInventoryActionEvent extends Event {
     constructor(schedule: InventoryAction$Chain[])
     readonly schedule: InventoryAction$Chain[];
     schedule(constrains: InventoryConstraints, actions: InventoryAction[], priority: Priority): void;
-    schedule(constrains: InventoryConstraints, actions: InventoryAction[], priority: Priority): void;
     schedule(constrains: InventoryConstraints, action: InventoryAction, priority: Priority): void;
 }

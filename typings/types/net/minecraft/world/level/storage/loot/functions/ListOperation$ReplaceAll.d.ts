@@ -10,6 +10,5 @@ export class ListOperation$ReplaceAll extends Object implements ListOperation {
     private constructor()
     apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
-    apply(original: T[], replacement: T[]): T[];
     mode(): ListOperation$Type;
 }

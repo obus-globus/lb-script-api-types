@@ -10,7 +10,6 @@ export class BinIO$DoubleDataInputWrapper extends Object implements DoubleIterat
     // private next: number;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

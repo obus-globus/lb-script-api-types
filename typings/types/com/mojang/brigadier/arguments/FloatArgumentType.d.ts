@@ -15,7 +15,6 @@ export class FloatArgumentType extends Object implements ArgumentType<number> {
     readonly minimum: number;
     equals(arg0: Object | null): boolean;
     getExamples(): E[];
-    getExamples(): E[];
     getMaximum(): number;
     getMinimum(): number;
     hashCode(): number;

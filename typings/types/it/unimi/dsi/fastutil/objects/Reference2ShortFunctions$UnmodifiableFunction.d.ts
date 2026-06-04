@@ -12,10 +12,8 @@ export class Reference2ShortFunctions$UnmodifiableFunction<K extends Object | nu
     equals(arg0: Object | null): boolean;
     get(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     getShort(arg0: Object): number;
     hashCode(): number;
-    put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     remove(arg0: Object): number;
     removeShort(arg0: Object): number;

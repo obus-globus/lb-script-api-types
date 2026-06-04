@@ -4,7 +4,6 @@ export class PropertiesLookup$ContextPropertyResult extends Object implements Lo
     constructor(value: string)
     // private value: string;
     isLookupEvaluationAllowedInValue(): boolean;
-    isLookupEvaluationAllowedInValue(): boolean;
     toString(): string;
     value(): string;
 }

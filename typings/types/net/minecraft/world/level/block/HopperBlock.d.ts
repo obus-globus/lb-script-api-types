@@ -107,7 +107,6 @@ export class HopperBlock extends BaseEntityBlock implements ShapeUpdateHandlingB
     hasAnalogOutputSignal(state: BlockState): boolean;
     isPathfindable(state: BlockState, type: PathComputationType): boolean;
     lithium$handleShapeUpdate(arg0: LevelReader, arg1: BlockState, arg2: BlockPos, arg3: BlockPos, arg4: BlockState): void;
-    lithium$handleShapeUpdate(arg0: LevelReader, arg1: BlockState, arg2: BlockPos, arg3: BlockPos, arg4: BlockState): void;
     // private makeShapes(inside: VoxelShape): (param0: BlockState) => VoxelShape;
     mirror(state: BlockState, mirror: Mirror): BlockState;
     neighborChanged(state: BlockState, level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;

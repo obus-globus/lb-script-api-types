@@ -11,6 +11,4 @@ export class MethodDef extends Object implements SimpleMemberDefinition {
     matches(arg0: FlowValue): boolean;
     matches(arg0: Handle): boolean;
     matches(arg0: AbstractInsnNode): boolean;
-    matches(arg0: FlowValue): boolean;
-    matches(arg0: Handle): boolean;
 }

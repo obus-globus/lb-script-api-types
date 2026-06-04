@@ -13,7 +13,6 @@ export class ProcessBuilder extends Object {
     // private redirects: ProcessBuilder$Redirect[];
     command(): string[];
     command(arg0: string[]): ProcessBuilder;
-    command(arg0: string[]): ProcessBuilder;
     directory(): File;
     directory(arg0: File): ProcessBuilder;
     environment(): { [key: string]: string };

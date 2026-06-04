@@ -13,17 +13,13 @@ export class AccessibleObject extends Object implements AnnotatedElement {
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getAnnotations(): Annotation[];
     getAnnotationsByType(arg0: Class<T>): T[];
-    getAnnotationsByType(arg0: Class<T>): T[];
-    getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getDeclaredAnnotations(): Annotation[];
-    getDeclaredAnnotationsByType(arg0: Class<T>): T[];
     getDeclaredAnnotationsByType(arg0: Class<T>): T[];
     getRoot(): AccessibleObject;
     // private isAccessChecked(arg0: Class<Object>): boolean;
     // private isAccessChecked(arg0: Class<Object>, arg1: Class<Object>): boolean;
     isAccessible(): boolean;
-    isAnnotationPresent(arg0: Class<Annotation>): boolean;
     isAnnotationPresent(arg0: Class<Annotation>): boolean;
     // private isSubclassOf(arg0: Class<Object>, arg1: Class<Object>): boolean;
     setAccessible(arg0: boolean): void;

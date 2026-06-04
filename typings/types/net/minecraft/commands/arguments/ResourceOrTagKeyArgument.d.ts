@@ -15,7 +15,6 @@ export class ResourceOrTagKeyArgument<T extends Object | number | string | boole
     constructor(registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     getExamples(): E[];
-    getExamples(): E[];
     listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;

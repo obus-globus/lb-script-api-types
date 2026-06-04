@@ -10,5 +10,4 @@ export class ConcurrentHashMapCache<T extends Object | number | string | boolean
     // private compute: (param0: KClass<Object>) => KSerializer<T> | null;
     get(key: KClass<Object>): KSerializer<T> | null;
     isStored(key: KClass<Object>): boolean;
-    isStored(key: KClass<Object>): boolean;
 }

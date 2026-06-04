@@ -9,7 +9,6 @@ export class AbstractReference2CharSortedMap$ValuesIterator<K extends Object | n
     constructor(arg0: ObjectBidirectionalIterator<Reference2CharMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2CharMap$Entry<K>>;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;

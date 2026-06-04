@@ -26,6 +26,5 @@ export class SodiumConfigBuilder extends Object implements ConfigEntryPoint {
     // private buildQualityPage(arg0: ConfigBuilder): OptionPageBuilder;
     // private getMonitor(): Monitor;
     registerConfigEarly(arg0: ConfigBuilder): void;
-    registerConfigEarly(arg0: ConfigBuilder): void;
     registerConfigLate(arg0: ConfigBuilder): void;
 }

@@ -58,7 +58,6 @@ export interface Long2FloatFunction extends Function<number, number>, LongToDoub
     composeReference(arg0: (param0: T) => kotlin.Long): (param0: T) => kotlin.Float;
     composeShort(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Float;
     containsKey(arg0: Object): boolean;
-    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;
@@ -68,7 +67,6 @@ export interface Long2FloatFunction extends Function<number, number>, LongToDoub
     getOrDefault(arg0: Object, arg1: number): number;
     getOrDefault(arg0: number, arg1: number): number;
     put<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): number;

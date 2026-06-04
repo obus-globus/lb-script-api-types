@@ -6,5 +6,4 @@ export interface Float2ByteMap$Entry extends Object, Map$Entry<number, number>{
     getByteValue(): number;
     getFloatKey(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

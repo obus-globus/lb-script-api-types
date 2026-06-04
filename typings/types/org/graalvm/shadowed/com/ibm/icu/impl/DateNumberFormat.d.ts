@@ -71,7 +71,6 @@ export class DateNumberFormat extends NumberFormat {
     format(number: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(number: number): string;
     format(number: number, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
-    format(number: number): string;
     format(numberL: number, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(number: BigDecimal_2): string;
     format(number: BigDecimal_2, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;

@@ -8,7 +8,6 @@ export interface ResumableNode$WithObjectState extends ResumableNode, Object{
     getState(frame: VirtualFrame, stateSlot: number): Object;
     getStateAndReset(frame: VirtualFrame, stateSlot: number): Object;
     getStateSlotKind(): FrameSlotKind;
-    getStateSlotKind(): FrameSlotKind;
     resetState(frame: VirtualFrame, stateSlot: number): void;
     resume(frame: VirtualFrame, stateSlot: number): Object;
     setState(frame: VirtualFrame, stateSlot: number, state: Object): void;

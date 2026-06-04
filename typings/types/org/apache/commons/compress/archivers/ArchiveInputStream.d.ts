@@ -14,7 +14,6 @@ export abstract class ArchiveInputStream<E extends ArchiveEntry> extends FilterI
     // private single: number[];
     canReadEntryData(arg0: ArchiveEntry): boolean;
     count(arg0: number): void;
-    count(arg0: number): void;
     forEach(arg0: (param0: E) => void): void;
     getBytesRead(): number;
     getCharset(): Charset;

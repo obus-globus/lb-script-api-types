@@ -4,5 +4,4 @@ export interface Object2ShortMap$Entry<K extends Object | number | string | bool
     readonly value: number;
     getShortValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

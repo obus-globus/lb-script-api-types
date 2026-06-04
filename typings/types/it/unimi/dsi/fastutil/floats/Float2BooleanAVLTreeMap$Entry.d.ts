@@ -25,7 +25,6 @@ export class Float2BooleanAVLTreeMap$Entry extends AbstractFloat2BooleanMap$Basi
     right(): Float2BooleanAVLTreeMap$Entry;
     right(arg0: Float2BooleanAVLTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Float2BooleanAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

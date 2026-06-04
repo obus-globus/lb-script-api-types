@@ -17,7 +17,6 @@ export class LevelLoadTracker$WaitingForPlayerChunk extends Record implements Le
     loadingPacketsReceived(): LevelLoadTracker$ClientState;
     player(): LocalPlayer;
     tick(): LevelLoadTracker$ClientState;
-    tick(): LevelLoadTracker$ClientState;
     timeoutAfter(): number;
     toString(): string;
 }

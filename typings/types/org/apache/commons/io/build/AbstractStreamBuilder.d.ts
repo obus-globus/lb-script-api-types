@@ -35,7 +35,6 @@ export abstract class AbstractStreamBuilder<T extends Object | number | string |
     getReader(): Reader;
     getWriter(): Writer;
     setBufferSize(arg0: number): B;
-    setBufferSize(arg0: number): B;
     setBufferSizeChecker(arg0: (param0: number) => kotlin.Int): B;
     setBufferSizeDefault(arg0: number): B;
     setBufferSizeMax(arg0: number): B;

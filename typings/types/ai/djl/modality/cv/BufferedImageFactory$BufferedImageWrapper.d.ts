@@ -20,14 +20,12 @@ export class BufferedImageFactory$BufferedImageWrapper extends Object implements
     createStar(arg0: Point, arg1: number): number[][];
     drawBoundingBoxes(arg0: DetectedObjects): void;
     drawBoundingBoxes(arg0: DetectedObjects, arg1: number): void;
-    drawBoundingBoxes(arg0: DetectedObjects): void;
     drawImage(arg0: Image, arg1: boolean): void;
     drawJoints(arg0: Joints): void;
     // private drawLandmarks(arg0: BoundingBox): void;
     // private drawLine(arg0: Graphics2D, arg1: Joints$Joint, arg2: Joints$Joint, arg3: number, arg4: number): void;
     drawMarks(arg0: Point[]): void;
     drawMarks(arg0: Point[], arg1: number): void;
-    drawMarks(arg0: Point[]): void;
     // private drawMask(arg0: Mask, arg1: number): void;
     drawRectangle(arg0: Rectangle, arg1: number, arg2: number): void;
     // private drawText(arg0: Graphics2D, arg1: string, arg2: number, arg3: number, arg4: number, arg5: number): void;
@@ -42,5 +40,4 @@ export class BufferedImageFactory$BufferedImageWrapper extends Object implements
     save(arg0: OutputStream, arg1: string): void;
     toNDArray(arg0: NDManager): NDArray;
     toNDArray(arg0: NDManager, arg1: Image$Flag): NDArray;
-    toNDArray(arg0: NDManager): NDArray;
 }

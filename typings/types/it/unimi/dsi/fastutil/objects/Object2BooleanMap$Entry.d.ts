@@ -4,5 +4,4 @@ export interface Object2BooleanMap$Entry<K extends Object | number | string | bo
     readonly value: boolean;
     getBooleanValue(): boolean;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
 }

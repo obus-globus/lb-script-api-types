@@ -3,12 +3,10 @@ import type { Int2ByteAVLTreeMap$TreeIterator } from '../../../../../it/unimi/ds
 export class Int2ByteAVLTreeMap$ValueIterator extends Int2ByteAVLTreeMap$TreeIterator implements ByteListIterator {
     private constructor(null_: Int2ByteAVLTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextByte(): number;
     previous(): number;
     previousByte(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

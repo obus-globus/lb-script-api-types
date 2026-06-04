@@ -27,7 +27,6 @@ export class OptionsRenderState extends Object implements FabricRenderState {
     textBackgroundOpacity: number;
     textureFiltering: TextureFilteringMethod;
     clearExtraData(): void;
-    clearExtraData(): void;
     getBackgroundOpacity(defaultOpacity: number): number;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;

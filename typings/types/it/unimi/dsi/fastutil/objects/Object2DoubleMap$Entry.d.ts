@@ -4,5 +4,4 @@ export interface Object2DoubleMap$Entry<K extends Object | number | string | boo
     readonly value: number;
     getDoubleValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

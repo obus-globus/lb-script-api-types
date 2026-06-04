@@ -8,8 +8,6 @@ export class IntIterators$UnmodifiableBidirectionalIterator extends Object imple
     // private i: IntBidirectionalIterator;
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     nextInt(): number;

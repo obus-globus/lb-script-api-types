@@ -128,7 +128,6 @@ export class JList<E extends Object | number | string | boolean> extends JCompon
     setFixedCellWidth(arg0: number): void;
     setLayoutOrientation(arg0: number): void;
     setListData(arg0: E[]): void;
-    setListData(arg0: E[]): void;
     setModel(arg0: ListModel<E>): void;
     setPrototypeCellValue(arg0: E): void;
     setSelectedIndex(arg0: number): void;

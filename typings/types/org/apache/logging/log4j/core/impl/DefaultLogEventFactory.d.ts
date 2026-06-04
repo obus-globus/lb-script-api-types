@@ -13,5 +13,4 @@ export class DefaultLogEventFactory extends Object implements LocationAwareLogEv
     constructor()
     createEvent(loggerName: string, marker: Marker, fqcn: string, location: StackTraceElement, level: Level, data: Message, properties: Property[], t: Throwable): LogEvent;
     createEvent(loggerName: string, marker: Marker, fqcn: string, level: Level, data: Message, properties: Property[], t: Throwable): LogEvent;
-    createEvent(loggerName: string, marker: Marker, fqcn: string, location: StackTraceElement, level: Level, data: Message, properties: Property[], t: Throwable): LogEvent;
 }

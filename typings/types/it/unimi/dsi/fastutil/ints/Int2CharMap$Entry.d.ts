@@ -6,5 +6,4 @@ export interface Int2CharMap$Entry extends Object, Map$Entry<number, string>{
     getCharValue(): string;
     getIntKey(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

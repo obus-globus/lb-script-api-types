@@ -13,7 +13,6 @@ export class ObjectMessage extends Object implements Message, StringBuilderForma
     equals(o: Object | null): boolean;
     formatTo(buffer: StringBuilder): void;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameter(): Object;
     getParameters(): Object[];

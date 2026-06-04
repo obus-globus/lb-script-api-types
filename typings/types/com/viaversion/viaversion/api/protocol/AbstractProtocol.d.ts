@@ -82,10 +82,8 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     hasMappingDataToLoad(): boolean;
     hasRegisteredClientbound(arg0: CU): boolean;
     hasRegisteredClientbound(arg0: State, arg1: number): boolean;
-    hasRegisteredClientbound(arg0: CU): boolean;
     hasRegisteredServerbound(arg0: SU): boolean;
     hasRegisteredServerbound(arg0: State, arg1: number): boolean;
-    hasRegisteredServerbound(arg0: SU): boolean;
     init(arg0: UserConnection): void;
     initialize(): void;
     isBaseProtocol(): boolean;
@@ -96,7 +94,6 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     put(arg0: Object): void;
     register(arg0: ViaProviders): void;
     // private register(arg0: PacketMappings, arg1: PacketType, arg2: PacketType, arg3: Class<PacketType>, arg4: Class<PacketType>, arg5: (param0: PacketWrapper) => void, arg6: boolean): void;
-    register(arg0: ViaProviders): void;
     registerClientbound(arg0: CU, arg1: CM): void;
     registerClientbound(arg0: CU, arg1: CM, arg2: (param0: PacketWrapper) => void): void;
     registerClientbound(arg0: CU, arg1: CM, arg2: (param0: PacketWrapper) => void, arg3: boolean): void;
@@ -104,10 +101,6 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     registerClientbound(arg0: State, arg1: ClientboundPacketType, arg2: (param0: PacketWrapper) => void): void;
     registerClientbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void): void;
     registerClientbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void, arg4: boolean): void;
-    registerClientbound(arg0: CU, arg1: CM): void;
-    registerClientbound(arg0: CU, arg1: CM, arg2: (param0: PacketWrapper) => void): void;
-    registerClientbound(arg0: State, arg1: ClientboundPacketType, arg2: (param0: PacketWrapper) => void): void;
-    registerClientbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void): void;
     // private registerPacketIdChanges(arg0: { [key in State]: PacketTypeMap<U> }, arg1: { [key in State]: PacketTypeMap<M> }, arg2: (param0: U) => kotlin.Boolean, arg3: (param0: U, param1: M) => void): void;
     registerPackets(): void;
     registerServerbound(arg0: SU, arg1: SM): void;
@@ -117,10 +110,6 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     registerServerbound(arg0: State, arg1: ServerboundPacketType, arg2: (param0: PacketWrapper) => void): void;
     registerServerbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void): void;
     registerServerbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void, arg4: boolean): void;
-    registerServerbound(arg0: SU, arg1: SM): void;
-    registerServerbound(arg0: SU, arg1: SM, arg2: (param0: PacketWrapper) => void): void;
-    registerServerbound(arg0: State, arg1: ServerboundPacketType, arg2: (param0: PacketWrapper) => void): void;
-    registerServerbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void): void;
     replaceClientbound(arg0: CU, arg1: (param0: PacketWrapper) => void): void;
     replaceServerbound(arg0: SU, arg1: (param0: PacketWrapper) => void): void;
     setClientVersion(arg0: ProtocolVersion): void;

@@ -59,15 +59,8 @@ export class Reference2CharFunctions$PrimitiveFunction<K extends Object | number
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
     get(arg0: Object): string;
-    get(arg0: Object): string;
     getChar(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
-    getOrDefault(arg0: Object, arg1: string): string;
-    getOrDefault(arg0: Object, arg1: string): string;
-    getOrDefault(arg0: Object, arg1: string): string;
-    put(arg0: K, arg1: string): string;
-    put(arg0: K, arg1: string): string;
-    put(arg0: K, arg1: string): string;
     put(arg0: K, arg1: string): string;
     remove(arg0: Object): string;
     removeChar(arg0: Object): string;

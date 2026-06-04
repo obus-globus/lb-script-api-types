@@ -44,7 +44,6 @@ export abstract class MemUtil extends Object {
     copy(arg0: number[], arg1: number, arg2: Matrix3x2d): void;
     copy(arg0: number[], arg1: number, arg2: Matrix2f): void;
     copy(arg0: number[], arg1: number, arg2: Matrix3f): void;
-    copy(arg0: number[], arg1: number, arg2: Matrix3x2d): void;
     copy(arg0: number[], arg1: number, arg2: Matrix3x2f): void;
     copy(arg0: number[], arg1: number, arg2: Matrix4f): void;
     copy(arg0: number[], arg1: number, arg2: Matrix4x3f): void;
@@ -85,7 +84,6 @@ export abstract class MemUtil extends Object {
     copy4x3(arg0: Matrix4x3fc, arg1: Matrix4f): void;
     copy4x4(arg0: Matrix3x2dc, arg1: number[], arg2: number): void;
     copy4x4(arg0: Matrix3x2fc, arg1: number[], arg2: number): void;
-    copy4x4(arg0: Matrix4x3dc, arg1: number[], arg2: number): void;
     copy4x4(arg0: Matrix4x3dc, arg1: number[], arg2: number): void;
     copy4x4(arg0: Matrix4x3fc, arg1: number[], arg2: number): void;
     copyTransposed(arg0: number[], arg1: number, arg2: Matrix4f): void;

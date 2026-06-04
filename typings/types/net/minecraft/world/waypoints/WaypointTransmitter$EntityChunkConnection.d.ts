@@ -14,6 +14,5 @@ export class WaypointTransmitter$EntityChunkConnection extends Object implements
     disconnect(): void;
     distanceChessboard(): number;
     isBroken(): boolean;
-    isBroken(): boolean;
     update(): void;
 }

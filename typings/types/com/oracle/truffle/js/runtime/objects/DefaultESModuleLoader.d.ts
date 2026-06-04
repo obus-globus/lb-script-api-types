@@ -21,7 +21,6 @@ export class DefaultESModuleLoader extends Object implements JSModuleLoader {
     // private moduleMap: Map<DefaultESModuleLoader$CanonicalModuleKey, AbstractModuleRecord>;
     // private realm: JSRealm;
     addLoadedModule(moduleRequest: Module$ModuleRequest, moduleRecord: AbstractModuleRecord): AbstractModuleRecord;
-    addLoadedModule(moduleRequest: Module$ModuleRequest, moduleRecord: AbstractModuleRecord): AbstractModuleRecord;
     asURI(specifier: string): URI;
     // private bareSpecifierDirectLookup(specifier: string): boolean;
     // private createErrorFromFileSystemException(fsex: FileSystemException, refPath: string): JSException;

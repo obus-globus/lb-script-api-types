@@ -8,7 +8,6 @@ export interface Format$StringBuf extends Object{
     append(arg0: string[], arg1: number, arg2: number): Format$StringBuf;
     append(arg0: CharSequence, arg1: number, arg2: number): Format$StringBuf;
     append(arg0: number): Format$StringBuf;
-    append(arg0: string): Format$StringBuf;
     asStringBuffer(): StringBuffer;
     asStringBuilder(): StringBuilder;
     isProxyStringBuilder(): boolean;

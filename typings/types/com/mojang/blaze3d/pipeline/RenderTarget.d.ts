@@ -26,7 +26,6 @@ export abstract class RenderTarget extends Object implements RenderTargetInterfa
     getDepthTexture(): GpuTexture;
     getDepthTextureView(): GpuTextureView;
     iris$bindFramebuffer(): void;
-    iris$bindFramebuffer(): void;
     iris$getColorBufferVersion(): number;
     iris$getDepthBufferVersion(): number;
     // private iris$onBindFramebuffer(arg0: boolean, arg1: CallbackInfo): void;

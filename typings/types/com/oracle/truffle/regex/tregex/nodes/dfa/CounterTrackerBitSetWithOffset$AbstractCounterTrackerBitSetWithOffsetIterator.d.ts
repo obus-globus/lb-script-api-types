@@ -7,7 +7,6 @@ export class CounterTrackerBitSetWithOffset$AbstractCounterTrackerBitSetWithOffs
     // private bitSetIterator: PrimitiveIterator$OfInt;
     // private offset: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

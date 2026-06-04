@@ -4,12 +4,10 @@ export class Double2BooleanRBTreeMap$KeyIterator extends Double2BooleanRBTreeMap
     constructor(null_: Double2BooleanRBTreeMap$KeyIterator)
     constructor(null_: Double2BooleanRBTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

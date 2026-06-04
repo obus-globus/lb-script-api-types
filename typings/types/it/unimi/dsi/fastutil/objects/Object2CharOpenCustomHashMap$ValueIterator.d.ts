@@ -7,7 +7,6 @@ export class Object2CharOpenCustomHashMap$ValueIterator extends Object2CharOpenC
     constructor(null_: Object2CharOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     nextChar(): string;

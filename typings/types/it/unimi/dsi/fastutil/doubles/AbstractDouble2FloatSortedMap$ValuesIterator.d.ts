@@ -9,8 +9,6 @@ export class AbstractDouble2FloatSortedMap$ValuesIterator extends Object impleme
     constructor(arg0: ObjectBidirectionalIterator<Double2FloatMap$Entry>)
     // private i: ObjectBidirectionalIterator<Double2FloatMap$Entry>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

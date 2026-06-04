@@ -21,7 +21,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Char2CharFunction extends Function<string, string>, IntUnaryOperator, Object{
     andThen(arg0: (param0: string) => T): (param0: string) => T;
     andThen(arg0: (param0: number) => kotlin.Int): (param0: number) => kotlin.Int;
-    andThen(arg0: (param0: number) => kotlin.Int): (param0: number) => kotlin.Int;
     andThenByte(arg0: (param0: string) => kotlin.Byte): (param0: string) => kotlin.Byte;
     andThenChar(arg0: (param0: string) => kotlin.Char): (param0: string) => kotlin.Char;
     andThenDouble(arg0: (param0: string) => kotlin.Double): (param0: string) => kotlin.Double;
@@ -36,7 +35,6 @@ export interface Char2CharFunction extends Function<string, string>, IntUnaryOpe
     clear(): void;
     compose(arg0: (param0: T) => string): (param0: T) => string;
     compose(arg0: (param0: number) => kotlin.Int): (param0: number) => kotlin.Int;
-    compose(arg0: (param0: number) => kotlin.Int): (param0: number) => kotlin.Int;
     composeByte(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;
     composeChar(arg0: (param0: string) => kotlin.Char): (param0: string) => kotlin.Char;
     composeDouble(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;
@@ -47,7 +45,6 @@ export interface Char2CharFunction extends Function<string, string>, IntUnaryOpe
     composeReference(arg0: (param0: T) => kotlin.Char): (param0: T) => kotlin.Char;
     composeShort(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;
     containsKey(arg0: Object): boolean;
-    containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
@@ -57,7 +54,6 @@ export interface Char2CharFunction extends Function<string, string>, IntUnaryOpe
     getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: string, arg1: string): string;
     put<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: string, arg1: string): string;
     put(arg0: string, arg1: string): string;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): string;

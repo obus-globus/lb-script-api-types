@@ -23,6 +23,5 @@ export class PrepareSpawnTask extends Object implements ConfigurationTask {
     spawnPlayer(connection: Connection, cookie: CommonListenerCookie): ServerPlayer;
     start(connection: (param0: Packet<Object>) => void): void;
     tick(): boolean;
-    tick(): boolean;
     type(): ConfigurationTask$Type;
 }

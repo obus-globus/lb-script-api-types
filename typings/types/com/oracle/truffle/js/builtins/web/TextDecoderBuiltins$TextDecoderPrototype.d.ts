@@ -21,7 +21,6 @@ export class TextDecoderBuiltins$TextDecoderPrototype extends Enum<TextDecoderBu
     args(): BuiltinArgumentBuilder;
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
-    createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;
@@ -32,7 +31,6 @@ export class TextDecoderBuiltins$TextDecoderPrototype extends Enum<TextDecoderBu
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isGetter(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

@@ -29,6 +29,5 @@ export class OptionInstance$AltEnum<T extends Object | number | string | boolean
     validateValue(value: T): Optional<T>;
     valueListSupplier(): CycleButton$ValueListSupplier<T>;
     valueSetter(): OptionInstance$CycleableValueSet$ValueSetter<T>;
-    valueSetter(): OptionInstance$CycleableValueSet$ValueSetter<T>;
     values(): T[];
 }

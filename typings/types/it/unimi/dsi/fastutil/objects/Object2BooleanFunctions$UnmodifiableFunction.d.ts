@@ -13,9 +13,7 @@ export class Object2BooleanFunctions$UnmodifiableFunction<K extends Object | num
     get(arg0: Object): boolean;
     getBoolean(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
-    getOrDefault(arg0: Object, arg1: boolean): boolean;
     hashCode(): number;
-    put(arg0: K, arg1: boolean): boolean;
     put(arg0: K, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     removeBoolean(arg0: Object): boolean;

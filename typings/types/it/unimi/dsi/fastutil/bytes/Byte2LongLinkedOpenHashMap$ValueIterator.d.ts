@@ -5,12 +5,10 @@ export class Byte2LongLinkedOpenHashMap$ValueIterator extends Byte2LongLinkedOpe
     constructor(null_: Byte2LongLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

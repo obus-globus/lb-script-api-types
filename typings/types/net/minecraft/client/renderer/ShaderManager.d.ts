@@ -27,7 +27,6 @@ export class ShaderManager extends SimplePreparableReloadListener<ShaderManager$
     close(): void;
     fabric$getId(): Identifier;
     getName(): string;
-    getName(): string;
     getPostChain(id: Identifier, allowedTargets: Identifier[]): PostChain;
     getShader(id: Identifier, type: ShaderType): string;
     // private immediatelyFast$reloadFontStorages(): void;

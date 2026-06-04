@@ -14,6 +14,5 @@ export interface AbstractWithTimeBuilder extends Object, DateTimeFormatBuilder$W
     second(padding: Padding): void;
     secondFraction(fixedLength: number): void;
     secondFraction(minLength: number, maxLength: number): void;
-    secondFraction(fixedLength: number): void;
     time(format: DateTimeFormat<LocalTime>): void;
 }

@@ -8,9 +8,7 @@ export class DisplayLeaksSubCmd extends Object implements ViaSubCommand {
     execute(arg0: ViaCommandSender, arg1: string[]): boolean;
     name(): string;
     onTabComplete(arg0: ViaCommandSender, arg1: string[]): string[];
-    onTabComplete(arg0: ViaCommandSender, arg1: string[]): string[];
     permission(): string;
     sendMessage(arg0: ViaCommandSender, arg1: string, arg2: Object[]): void;
-    usage(): string;
     usage(): string;
 }

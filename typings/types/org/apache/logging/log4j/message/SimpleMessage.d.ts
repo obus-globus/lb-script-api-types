@@ -22,7 +22,6 @@ export class SimpleMessage extends Object implements CharSequence, Message, Stri
     get(index: number): string;
     getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

@@ -34,7 +34,6 @@ export class TutorialToast extends Object implements Toast {
     getToken(): Object;
     getWantedVisibility(): Toast$Visibility;
     height(): number;
-    height(): number;
     hide(): void;
     occcupiedSlotCount(): number;
     onFinishedRendering(): void;

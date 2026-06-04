@@ -24,21 +24,13 @@ export class Object2ShortOpenHashMap$MapEntry extends Object implements Object2S
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectShortPair<K>;
-    right(arg0: number): ObjectShortPair<K>;
-    right(): number;
-    right(arg0: number): ObjectShortPair<K>;
-    right(arg0: number): ObjectShortPair<K>;
     rightShort(): number;
     second(): number;
     second(arg0: number): ObjectShortPair<K>;
-    second(arg0: number): ObjectShortPair<K>;
     secondShort(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectShortPair<K>;
     value(arg0: number): ObjectShortPair<K>;
     valueShort(): number;
 }

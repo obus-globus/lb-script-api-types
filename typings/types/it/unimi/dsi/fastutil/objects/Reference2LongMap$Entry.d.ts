@@ -4,5 +4,4 @@ export interface Reference2LongMap$Entry<K extends Object | number | string | bo
     readonly value: number;
     getLongValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

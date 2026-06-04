@@ -7,9 +7,6 @@ export class IntIterators$UnmodifiableListIterator extends Object implements Int
     constructor(arg0: IntListIterator)
     // private i: IntListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -20,6 +17,5 @@ export class IntIterators$UnmodifiableListIterator extends Object implements Int
     previousIndex(): number;
     previousInt(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

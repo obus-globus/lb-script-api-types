@@ -14,7 +14,6 @@ export class DebugCommand$Tracer extends Object implements CommandSource, TraceC
     acceptsFailure(): boolean;
     acceptsSuccess(): boolean;
     alwaysAccepts(): boolean;
-    alwaysAccepts(): boolean;
     close(): void;
     // private indentAndSave(value: number): void;
     // private newLine(): void;

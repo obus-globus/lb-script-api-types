@@ -21,7 +21,6 @@ export class TruffleProcessBuilder extends Object {
     // private redirectErrorStream: boolean;
     clearEnvironment(clear: boolean): TruffleProcessBuilder;
     command(command: string[]): TruffleProcessBuilder;
-    command(command: string[]): TruffleProcessBuilder;
     createRedirectToStream(stream: OutputStream): ProcessHandler$Redirect;
     directory(currentWorkingDirectory: TruffleFile): TruffleProcessBuilder;
     environment(name: string, value: string): TruffleProcessBuilder;

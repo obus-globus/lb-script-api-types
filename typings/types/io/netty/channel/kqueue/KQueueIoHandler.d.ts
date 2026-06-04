@@ -32,7 +32,6 @@ export class KQueueIoHandler extends Object implements IoHandler {
     // private selectStrategy: SelectStrategy;
     // private wakenUp: number;
     destroy(): void;
-    destroy(): void;
     // private generateNextId(): number;
     initialize(): void;
     isCompatible(arg0: Class<IoHandle>): boolean;
@@ -40,7 +39,6 @@ export class KQueueIoHandler extends Object implements IoHandler {
     // private kqueueWait(arg0: number, arg1: number): number;
     // private kqueueWaitNow(): number;
     numRegisteredChannels(): number;
-    prepareToDestroy(): void;
     prepareToDestroy(): void;
     // private processCancelledRegistrations(): void;
     // private processReady(arg0: number): void;

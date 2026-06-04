@@ -16,15 +16,12 @@ export class ObjectCharImmutablePair<K extends Object | number | string | boolea
     left(arg0: K): Pair<K, string>;
     right(): string;
     right(arg0: string): ObjectCharPair<K>;
-    right(arg0: string): ObjectCharPair<K>;
     rightChar(): string;
     second(): string;
-    second(arg0: string): ObjectCharPair<K>;
     second(arg0: string): ObjectCharPair<K>;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): ObjectCharPair<K>;
     value(arg0: string): ObjectCharPair<K>;
     valueChar(): string;
 }

@@ -7,8 +7,6 @@ export class Float2ShortOpenCustomHashMap$ValueIterator extends Float2ShortOpenC
     constructor(null_: Float2ShortOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
     skip(arg0: number): number;

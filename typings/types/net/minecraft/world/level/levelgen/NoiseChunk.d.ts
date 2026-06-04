@@ -72,7 +72,6 @@ export class NoiseChunk extends Object implements DensityFunction$ContextProvide
     // private fillSlice(slice0: boolean, cellX: number): void;
     forIndex(cellIndex: number): NoiseChunk;
     getBlender(): Blender;
-    getBlender(): Blender;
     getInterpolatedDensity(): number;
     getInterpolatedState(): BlockState;
     // private getOrComputeBlendingOutput(blockX: number, blockZ: number): Blender$BlendingOutput;

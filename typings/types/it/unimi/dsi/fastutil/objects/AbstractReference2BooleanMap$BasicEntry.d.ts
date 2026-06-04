@@ -11,7 +11,5 @@ export class AbstractReference2BooleanMap$BasicEntry<K extends Object | number |
     getBooleanValue(): boolean;
     hashCode(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     toString(): string;
 }

@@ -17,12 +17,10 @@ export class RecipeRewriter1_21_2$ShapelessRecipe extends Record implements Reci
     category(): number;
     equals(arg0: Object | null): boolean;
     group(): number;
-    group(): number;
     hashCode(): number;
     identifier(): string;
     index(): number;
     ingredient(): Item[];
-    ingredients(): Item[][];
     ingredients(): Item[][];
     recipeDisplayId(): number;
     result(): Item;

@@ -9,5 +9,4 @@ export class DebugEntryVersion extends Object implements DebugScreenEntry {
     category(): DebugEntryCategory;
     display(displayer: DebugScreenDisplayer, level: Level, clientChunk: LevelChunk, serverChunk: LevelChunk): void;
     isAllowed(reducedDebugInfo: boolean): boolean;
-    isAllowed(reducedDebugInfo: boolean): boolean;
 }

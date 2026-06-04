@@ -21,7 +21,6 @@ export class PotionsPredicate extends Record implements SingleComponentItemPredi
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
-    matches(components: DataComponentGetter): boolean;
     matches(potionContents: PotionContents): boolean;
     potions(): Holder<T>[];
     toString(): string;

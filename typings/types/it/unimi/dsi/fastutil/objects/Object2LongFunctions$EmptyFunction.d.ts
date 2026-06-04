@@ -13,7 +13,6 @@ export class Object2LongFunctions$EmptyFunction<K extends Object | number | stri
     equals(arg0: Object | null): boolean;
     getLong(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     hashCode(): number;
     // private readResolve(): Object;
     size(): number;

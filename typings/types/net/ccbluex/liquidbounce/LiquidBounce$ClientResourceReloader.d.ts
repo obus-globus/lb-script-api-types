@@ -18,7 +18,6 @@ import type { PreparableReloadListener$SharedState } from '../../../net/minecraf
 export class LiquidBounce$ClientResourceReloader extends Object implements PreparableReloadListener {
     static INSTANCE: LiquidBounce$ClientResourceReloader;
     getName(): string;
-    getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
     reload(store: PreparableReloadListener$SharedState, prepareExecutor: Executor, synchronizer: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, applyExecutor: Executor): CompletableFuture<void>;
 }

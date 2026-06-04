@@ -4,5 +4,4 @@ export interface Reference2IntMap$Entry<K extends Object | number | string | boo
     readonly value: number;
     getIntValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

@@ -7,7 +7,6 @@ export interface IntPriorityQueue extends PriorityQueue<number>, Object{
     dequeue(): number;
     dequeueInt(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstInt(): number;
     isEmpty(): boolean;

@@ -8,14 +8,11 @@ export abstract class LongBigListIterators$AbstractIndexBasedBigIterator extends
     // private minPos: number;
     // private pos: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     get(arg0: number): number;
     getMaxPos(): number;
     hasNext(): boolean;
     nextLong(): number;
     remove(): void;
     remove(arg0: number): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

@@ -11,15 +11,12 @@ export class ShortReferenceImmutablePair<V extends Object | number | string | bo
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortReferencePair<V>;
-    first(arg0: number): ShortReferencePair<V>;
     firstShort(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortReferencePair<V>;
-    key(arg0: number): ShortReferencePair<V>;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortReferencePair<V>;
     left(arg0: number): ShortReferencePair<V>;
     leftShort(): number;
     right(): V;

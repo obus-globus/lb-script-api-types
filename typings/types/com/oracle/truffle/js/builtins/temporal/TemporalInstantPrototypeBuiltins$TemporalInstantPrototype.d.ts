@@ -40,7 +40,6 @@ export class TemporalInstantPrototypeBuiltins$TemporalInstantPrototype extends E
     isEnabled(): boolean;
     isEnumerable(): boolean;
     isGetter(): boolean;
-    isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;

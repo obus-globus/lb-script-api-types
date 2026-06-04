@@ -18,7 +18,6 @@ export class LevelChunk$BoundTickingBlockEntity<T extends BlockEntity> extends O
     // private isInsideWorldBorder(): boolean;
     isRemoved(): boolean;
     lithium$onWorldBorderShapeChange(arg0: WorldBorder): void;
-    lithium$onWorldBorderShapeChange(arg0: WorldBorder): void;
     onAreaReplaced(arg0: WorldBorder): void;
     onLerpSize(arg0: WorldBorder, arg1: number, arg2: number, arg3: number, arg4: number): void;
     onSetCenter(arg0: WorldBorder, arg1: number, arg2: number): void;

@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractBooleanIterator extends Object implements BooleanIterator {
     constructor()
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
     skip(arg0: number): number;
 }

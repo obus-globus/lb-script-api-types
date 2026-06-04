@@ -26,6 +26,5 @@ export class Rectangle2D$Float extends Rectangle2D implements Serializable {
     outcode(arg0: number, arg1: number): number;
     setRect(arg0: Rectangle2D): void;
     setRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
-    setRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
     toString(): string;
 }

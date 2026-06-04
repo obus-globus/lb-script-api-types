@@ -103,10 +103,6 @@ export class DecimalFormat extends NumberFormat {
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
     format(arg0: number, arg1: Format$StringBuf, arg2: Format$FieldDelegate): Format$StringBuf;
-    format(arg0: number): string;
-    format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: number, arg1: Format$StringBuf, arg2: FieldPosition): Format$StringBuf;
-    format(arg0: number, arg1: Format$StringBuf, arg2: Format$FieldDelegate): Format$StringBuf;
     formatToCharacterIterator(arg0: Object): AttributedCharacterIterator;
     // private getBigDecimalMultiplier(): BigDecimal;
     // private getBigIntegerMultiplier(): BigInteger;

@@ -7,9 +7,5 @@ export class InnerPartitionBSPNode$QuadIndexConsumerIntoArray extends Object imp
     // private index: number;
     // private indexes: number[];
     accept(arg0: number): void;
-    accept(arg0: number): void;
-    accept(arg0: number): void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
 }

@@ -19,11 +19,9 @@ export class BlockEntityWithBoundingBoxRenderer<T extends BlockEntity & Bounding
     extractRenderState<S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     extractRenderState(blockEntity: T, state: BlockEntityWithBoundingBoxRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;
-    getViewDistance(): number;
     // private renderInvisibleBlocks(state: BlockEntityWithBoundingBoxRenderState, localPos: BlockPos, size: Vec3i): void;
     // private renderStructureVoids(state: BlockEntityWithBoundingBoxRenderState, startingPosition: BlockPos, size: Vec3i): void;
     shouldRender(blockEntity: T, cameraPosition: Vec3): boolean;
-    shouldRenderOffScreen(): boolean;
     shouldRenderOffScreen(): boolean;
     submit(state: BlockEntityWithBoundingBoxRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

@@ -24,7 +24,6 @@ export class ConfigurationState extends Object implements StorableObject {
     clientInformationPacket(arg0: UserConnection): PacketWrapper;
     lastDimensionRegistry(): Map$Entry<string, Tag>[];
     onRemove(): void;
-    onRemove(): void;
     queuedOrSentJoinGame(): boolean;
     sendQueuedPackets(arg0: UserConnection): void;
     setBridgePhase(arg0: ConfigurationState$BridgePhase): void;

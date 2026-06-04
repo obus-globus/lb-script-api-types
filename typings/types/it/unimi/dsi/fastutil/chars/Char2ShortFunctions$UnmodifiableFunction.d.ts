@@ -17,7 +17,6 @@ export class Char2ShortFunctions$UnmodifiableFunction extends AbstractChar2Short
     getOrDefault(arg0: string, arg1: number): number;
     hashCode(): number;
     put(arg0: string, arg1: number): number;
-    put(arg0: string, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: string): number;
     size(): number;

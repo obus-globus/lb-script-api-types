@@ -28,5 +28,4 @@ export class PlayerInteractTrigger$TriggerInstance extends Record implements Sim
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

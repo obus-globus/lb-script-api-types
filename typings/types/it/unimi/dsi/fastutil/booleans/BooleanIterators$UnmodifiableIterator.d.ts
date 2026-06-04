@@ -6,9 +6,6 @@ export class BooleanIterators$UnmodifiableIterator extends Object implements Boo
     constructor(arg0: BooleanIterator)
     // private i: BooleanIterator;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

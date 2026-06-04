@@ -102,7 +102,6 @@ export class BlockEntityType<T extends BlockEntity> extends Object implements Ex
     // private sodium$renderPredicates: (param0: BlockEntity, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean[];
     // private validBlocks: Block[];
     addValidBlock(arg0: Block): void;
-    addValidBlock(arg0: Block): void;
     builtInRegistryHolder(): Holder$Reference<BlockEntityType<Object>>;
     create(worldPosition: BlockPos, blockState: BlockState): T;
     getBlockEntity(level: BlockGetter, pos: BlockPos): T;

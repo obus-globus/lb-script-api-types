@@ -6,5 +6,4 @@ export class TranslationComponent$TranslatableContentConsumer extends Object imp
     // private visited: number;
     accept(arg0: string): void;
     withConsumer(arg0: (param0: Object | null) => void): (param0: Object | null) => void;
-    withConsumer(arg0: (param0: Object | null) => void): (param0: Object | null) => void;
 }

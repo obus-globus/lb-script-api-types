@@ -20,10 +20,8 @@ export class TestInstanceRenderer extends Object implements BlockEntityRenderer<
     extractRenderState<T extends BlockEntity, S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     extractRenderState(blockEntity: TestInstanceBlockEntity, state: TestInstanceRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;
-    getViewDistance(): number;
     shouldRender<T extends BlockEntity>(blockEntity: T, cameraPosition: Vec3): boolean;
     shouldRender(blockEntity: TestInstanceBlockEntity, cameraPosition: Vec3): boolean;
-    shouldRenderOffScreen(): boolean;
     shouldRenderOffScreen(): boolean;
     submit(state: TestInstanceRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     // private submitErrorMarker(error: TestInstanceBlockEntity$ErrorMarker): void;

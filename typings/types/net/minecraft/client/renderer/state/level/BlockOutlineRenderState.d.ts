@@ -14,7 +14,6 @@ export class BlockOutlineRenderState extends Record implements FabricRenderState
     // private renderStateData: Map<Object | null, Object | null>;
     // private shape: VoxelShape;
     clearExtraData(): void;
-    clearExtraData(): void;
     collisionShape(): VoxelShape;
     equals(o: Object | null): boolean;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;

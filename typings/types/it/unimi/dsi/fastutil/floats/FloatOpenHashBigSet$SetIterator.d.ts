@@ -12,8 +12,6 @@ export class FloatOpenHashBigSet$SetIterator extends Object implements FloatIter
     // private mustReturnNull: boolean;
     // private wrapped: (Object | null)[];
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

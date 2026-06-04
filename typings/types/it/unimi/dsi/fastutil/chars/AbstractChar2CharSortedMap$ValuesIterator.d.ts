@@ -9,7 +9,6 @@ export class AbstractChar2CharSortedMap$ValuesIterator extends Object implements
     constructor(arg0: ObjectBidirectionalIterator<Char2CharMap$Entry>)
     // private i: ObjectBidirectionalIterator<Char2CharMap$Entry>;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;

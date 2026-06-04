@@ -11,7 +11,5 @@ export class AbstractLong2LongMap$BasicEntry extends Object implements Long2Long
     getLongValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

@@ -9,18 +9,15 @@ export interface ObjectBooleanPair<K extends Object | number | string | boolean>
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     right(): boolean;
     right(arg0: boolean): ObjectBooleanPair<K>;
-    right(arg0: boolean): ObjectBooleanPair<K>;
     rightBoolean(): boolean;
     second<R extends Object | number | string | boolean>(): R;
     second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     second(): boolean;
     second(arg0: boolean): ObjectBooleanPair<K>;
-    second(arg0: boolean): ObjectBooleanPair<K>;
     secondBoolean(): boolean;
     value<R extends Object | number | string | boolean>(): R;
     value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     value(): boolean;
-    value(arg0: boolean): ObjectBooleanPair<K>;
     value(arg0: boolean): ObjectBooleanPair<K>;
     valueBoolean(): boolean;
 }

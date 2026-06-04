@@ -24,7 +24,6 @@ export class ObjectSpliterators$SpliteratorFromIterator<K extends Object | numbe
     forEachRemaining(arg0: (param0: K) => void): void;
     makeForSplit(arg0: K[], arg1: number): ObjectSpliterator<K>;
     skip(arg0: number): number;
-    skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;
 }

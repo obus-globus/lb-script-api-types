@@ -19,7 +19,6 @@ export class IteratorFunctionBuiltins$IteratorFunction extends Enum<IteratorFunc
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
-    getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;

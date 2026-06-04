@@ -7,10 +7,7 @@ export class FloatBigListIterators$UnmodifiableBigListIterator extends Object im
     constructor(arg0: FloatBigListIterator)
     // private i: FloatBigListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -19,7 +16,5 @@ export class FloatBigListIterators$UnmodifiableBigListIterator extends Object im
     previousFloat(): number;
     previousIndex(): number;
     set(arg0: number): void;
-    set(arg0: number): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

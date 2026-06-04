@@ -15,6 +15,5 @@ export class Dimension extends Dimension2D implements Serializable {
     setSize(arg0: Dimension): void;
     setSize(arg0: Dimension2D): void;
     setSize(arg0: number, arg1: number): void;
-    setSize(arg0: number, arg1: number): void;
     toString(): string;
 }

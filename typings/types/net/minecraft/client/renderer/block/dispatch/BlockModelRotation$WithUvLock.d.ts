@@ -11,12 +11,9 @@ export class BlockModelRotation$WithUvLock extends Record implements ModelState 
     // private parent: BlockModelRotation;
     equals(o: Object | null): boolean;
     faceTransformation(face: Direction): Matrix4fc;
-    faceTransformation(face: Direction): Matrix4fc;
     hashCode(): number;
-    inverseFaceTransformation(face: Direction): Matrix4fc;
     inverseFaceTransformation(face: Direction): Matrix4fc;
     parent(): BlockModelRotation;
     toString(): string;
-    transformation(): Transformation;
     transformation(): Transformation;
 }

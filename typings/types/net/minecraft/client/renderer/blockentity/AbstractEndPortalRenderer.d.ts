@@ -21,7 +21,6 @@ export abstract class AbstractEndPortalRenderer<T extends TheEndPortalBlockEntit
     static submitSpecial(paramrenderType: RenderType, paramposeStack: PoseStack, paramsubmitNodeCollector: SubmitNodeCollector): void;
     constructor()
     extractRenderState(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
-    extractRenderState(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;
     // private quad(arg0: EndPortalRenderState, arg1: VertexConsumer, arg2: PoseStack$Pose, arg3: Matrix3f, arg4: Direction, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: number, arg14: number, arg15: number, arg16: number, arg17: number, arg18: number, arg19: number): void;
     shouldRender(blockEntity: T, cameraPosition: Vec3): boolean;

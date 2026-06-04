@@ -64,14 +64,11 @@ export class DatePrototypeBuiltins$DatePrototype extends Enum<DatePrototypeBuilt
     args(): BuiltinArgumentBuilder;
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
-    createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
-    getECMAScriptVersion(): number;
     getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
     isAOTSupported(): boolean;
-    isAnnexB(): boolean;
     isAnnexB(): boolean;
     isConfigurable(): boolean;
     isConstructor(): boolean;
@@ -79,7 +76,6 @@ export class DatePrototypeBuiltins$DatePrototype extends Enum<DatePrototypeBuilt
     isEnumerable(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
-    isOptional(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;
     isWritable(): boolean;

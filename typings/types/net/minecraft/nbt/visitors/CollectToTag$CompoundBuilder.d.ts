@@ -7,7 +7,6 @@ export class CollectToTag$CompoundBuilder extends Object implements CollectToTag
     // private compound: CompoundTag;
     // private lastId: string;
     acceptKey(id: string): void;
-    acceptKey(id: string): void;
     acceptValue(tag: Tag): void;
     build(): Tag;
 }

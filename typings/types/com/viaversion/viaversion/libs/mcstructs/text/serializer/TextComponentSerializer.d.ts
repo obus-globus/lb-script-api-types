@@ -38,7 +38,6 @@ export class TextComponentSerializer extends Object implements ConsumerTracking 
     readonly parentCodec: TextComponentCodec;
     // private stringConsumer: (param0: string) => void;
     currentConsumer(): (param0: string) => void;
-    currentConsumer(): (param0: string) => void;
     deserialize(arg0: JsonElement): TextComponent;
     deserialize(arg0: string): TextComponent;
     deserializeLenientReader(arg0: string): TextComponent;
@@ -52,6 +51,5 @@ export class TextComponentSerializer extends Object implements ConsumerTracking 
     isCodec(): boolean;
     serialize(arg0: TextComponent): string;
     serializeJson(arg0: TextComponent): JsonElement;
-    setCurrentConsumer(arg0: (param0: string) => void): void;
     setCurrentConsumer(arg0: (param0: string) => void): void;
 }

@@ -25,7 +25,6 @@ export class Byte2ShortAVLTreeMap$Entry extends AbstractByte2ShortMap$BasicEntry
     right(): Byte2ShortAVLTreeMap$Entry;
     right(arg0: Byte2ShortAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Byte2ShortAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

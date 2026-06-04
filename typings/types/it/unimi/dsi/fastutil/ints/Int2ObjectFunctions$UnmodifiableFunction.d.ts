@@ -17,7 +17,6 @@ export class Int2ObjectFunctions$UnmodifiableFunction<V extends Object | number 
     getOrDefault(arg0: number, arg1: V): V;
     hashCode(): number;
     put(arg0: number, arg1: V): V;
-    put(arg0: number, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: number): V;
     size(): number;

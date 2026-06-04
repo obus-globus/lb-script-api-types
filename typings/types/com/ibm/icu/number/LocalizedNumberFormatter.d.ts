@@ -20,7 +20,6 @@ export class LocalizedNumberFormatter extends NumberFormatterSettings<LocalizedN
     // private format(arg0: DecimalQuantity): FormattedNumber;
     format(arg0: Measure): FormattedNumber;
     format(arg0: number): FormattedNumber;
-    format(arg0: number): FormattedNumber;
     format(arg0: Number): FormattedNumber;
     formatImpl(arg0: DecimalQuantity, arg1: FormattedStringBuilder): MicroProps;
     formatImpl(arg0: DecimalQuantity, arg1: MeasureUnit, arg2: FormattedStringBuilder): MicroProps;

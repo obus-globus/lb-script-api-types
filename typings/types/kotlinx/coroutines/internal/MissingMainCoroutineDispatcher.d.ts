@@ -18,7 +18,6 @@ export class MissingMainCoroutineDispatcher extends MainCoroutineDispatcher impl
     delay(time: number): void;
     dispatch(context: CoroutineContext, block: () => void): void;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
-    invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     isDispatchNeeded(context: CoroutineContext): boolean;
     limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;

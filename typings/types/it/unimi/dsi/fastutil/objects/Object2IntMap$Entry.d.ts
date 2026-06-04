@@ -4,5 +4,4 @@ export interface Object2IntMap$Entry<K extends Object | number | string | boolea
     readonly value: number;
     getIntValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

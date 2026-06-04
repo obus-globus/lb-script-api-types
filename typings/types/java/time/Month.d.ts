@@ -32,7 +32,6 @@ export class Month extends Enum<Month> implements TemporalAccessor, TemporalAdju
     firstDayOfYear(arg0: boolean): number;
     firstMonthOfQuarter(): Month;
     get(arg0: TemporalField): number;
-    get(arg0: TemporalField): number;
     getDisplayName(arg0: TextStyle, arg1: Locale): string;
     getLong(arg0: TemporalField): number;
     getValue(): number;
@@ -43,8 +42,6 @@ export class Month extends Enum<Month> implements TemporalAccessor, TemporalAdju
     minus(arg0: number): Month;
     plus(arg0: number): Month;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    range(arg0: TemporalField): ValueRange;
     range(arg0: TemporalField): ValueRange;
     name(): "JANUARY" | "FEBRUARY" | "MARCH" | "APRIL" | "MAY" | "JUNE" | "JULY" | "AUGUST" | "SEPTEMBER" | "OCTOBER" | "NOVEMBER" | "DECEMBER";
 }

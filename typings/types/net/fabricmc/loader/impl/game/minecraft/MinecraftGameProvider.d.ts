@@ -24,7 +24,6 @@ export class MinecraftGameProvider extends Object implements GameProvider {
     // private validParentClassPath: E[];
     // private versionData: McVersion;
     canOpenErrorGui(): boolean;
-    canOpenErrorGui(): boolean;
     displayCrash(arg0: Throwable, arg1: string): boolean;
     getArguments(): Arguments;
     getBuiltinMods(): E[];
@@ -40,7 +39,6 @@ export class MinecraftGameProvider extends Object implements GameProvider {
     getNormalizedGameVersion(): string;
     getRawGameVersion(): string;
     getRuntimeNamespace(arg0: string): string;
-    hasAwtSupport(): boolean;
     hasAwtSupport(): boolean;
     initialize(arg0: FabricLauncher): void;
     isEnabled(): boolean;

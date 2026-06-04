@@ -452,14 +452,9 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     lerpHeadRotationStep(lerpHeadSteps: number, targetYHeadRot: number): void;
     lerpHeadTo(yRot: number, steps: number): void;
     lithium$OnFeetBlockCacheDeleted(): void;
-    lithium$OnFeetBlockCacheDeleted(): void;
-    lithium$OnFeetBlockCacheSet(arg0: BlockState): void;
     lithium$OnFeetBlockCacheSet(arg0: BlockState): void;
     lithium$SetClimbingMobCachingSectionUpdateBehavior(arg0: boolean): void;
-    lithium$SetClimbingMobCachingSectionUpdateBehavior(arg0: boolean): void;
     lithium$handleAddedToLevel(arg0: Level): void;
-    lithium$handleAddedToLevel(arg0: Level): void;
-    lithium$handleRemovedFromLevel(arg0: Level): void;
     lithium$handleRemovedFromLevel(arg0: Level): void;
     lookAt(anchor: EntityAnchorArgument$Anchor, pos: Vec3): void;
     makeBrain(packedBrain: Brain$Packed): Brain<LivingEntity>;

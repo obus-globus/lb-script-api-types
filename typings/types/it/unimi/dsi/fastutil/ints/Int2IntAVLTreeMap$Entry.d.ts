@@ -25,7 +25,6 @@ export class Int2IntAVLTreeMap$Entry extends AbstractInt2IntMap$BasicEntry imple
     right(): Int2IntAVLTreeMap$Entry;
     right(arg0: Int2IntAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Int2IntAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -17,7 +17,6 @@ export class SourceSectionFilter$TaggedNode extends Node implements Instrumentab
     findProbe(): ProbeNode;
     getNodeObject(): Object;
     hasTag(tag: Class<Tag>): boolean;
-    hasTag(tag: Class<Tag>): boolean;
     isInstrumentable(): boolean;
     materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;
 }

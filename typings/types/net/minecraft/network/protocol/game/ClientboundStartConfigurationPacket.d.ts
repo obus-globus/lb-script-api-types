@@ -14,6 +14,5 @@ export class ClientboundStartConfigurationPacket extends Object implements Packe
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     type(): PacketType<ClientboundStartConfigurationPacket>;
 }

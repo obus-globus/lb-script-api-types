@@ -13,8 +13,6 @@ export class TrueTypeGlyphProvider extends Object implements GlyphProvider {
     // private glyphs: CodepointMap<TrueTypeGlyphProvider$GlyphEntry>;
     // private oversample: number;
     close(): void;
-    close(): void;
-    getGlyph(codepoint: number): UnbakedGlyph;
     getGlyph(codepoint: number): UnbakedGlyph;
     // private getOrLoadGlyphInfo(codepoint: number, entry: TrueTypeGlyphProvider$GlyphEntry): UnbakedGlyph;
     getSupportedGlyphs(): (Object | null)[];

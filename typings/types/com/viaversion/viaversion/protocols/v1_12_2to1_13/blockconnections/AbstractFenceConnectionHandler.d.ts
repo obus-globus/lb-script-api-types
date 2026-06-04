@@ -13,7 +13,6 @@ export abstract class AbstractFenceConnectionHandler extends Object implements C
     connect(arg0: UserConnection, arg1: BlockPosition, arg2: number): number;
     connects(arg0: BlockFace, arg1: number, arg2: boolean): boolean;
     getBlockData(arg0: UserConnection, arg1: BlockPosition): number;
-    getBlockData(arg0: UserConnection, arg1: BlockPosition): number;
     getBlockStates(): (Object | null)[];
     getInitAction(arg0: string): (param0: WrappedBlockData) => void;
     getStates(arg0: UserConnection, arg1: BlockPosition): number;

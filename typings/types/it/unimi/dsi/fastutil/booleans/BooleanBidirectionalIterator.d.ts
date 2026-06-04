@@ -5,13 +5,9 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface BooleanBidirectionalIterator extends BooleanIterator, ObjectBidirectionalIterator<boolean>, Object{
     back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
     previous(): boolean;
     previousBoolean(): boolean;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

@@ -19,7 +19,6 @@ export class JavaObjectBinding extends Object implements ObjectValue {
     getProperty(arg0: string): ObjectProperty;
     names(): string[];
     set(arg0: string, arg1: Value): boolean;
-    set(arg0: string, arg1: Value): boolean;
     setFunction(arg0: string, arg1: ObjectValue$DoubleFunction1): void;
     setFunction(arg0: string, arg1: ObjectValue$DoubleFunction2): void;
     setFunction(arg0: string, arg1: ObjectValue$DoubleFunction3): void;

@@ -6,5 +6,4 @@ export interface Long2BooleanMap$Entry extends Object, Map$Entry<number, boolean
     getBooleanValue(): boolean;
     getLongKey(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
 }

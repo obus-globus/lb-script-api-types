@@ -17,7 +17,6 @@ export class Long2BooleanFunctions$UnmodifiableFunction extends AbstractLong2Boo
     getOrDefault(arg0: number, arg1: boolean): boolean;
     hashCode(): number;
     put(arg0: number, arg1: boolean): boolean;
-    put(arg0: number, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: number): boolean;
     size(): number;

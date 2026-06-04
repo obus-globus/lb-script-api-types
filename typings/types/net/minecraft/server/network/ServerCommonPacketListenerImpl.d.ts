@@ -44,7 +44,6 @@ export abstract class ServerCommonPacketListenerImpl extends Object implements P
     disconnect(reason: Component): void;
     getOwner(): GameProfile;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     handleCookieResponse(packet: ServerboundCookieResponsePacket): void;
     handleCustomClickAction(packet: ServerboundCustomClickActionPacket): void;
     handleCustomPayload(packet: ServerboundCustomPayloadPacket): void;

@@ -3,12 +3,10 @@ import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/char
 export class Byte2CharAVLTreeMap$ValueIterator extends Byte2CharAVLTreeMap$TreeIterator implements CharListIterator {
     private constructor(null_: Byte2CharAVLTreeMap$ValueIterator)
     add(arg0: string): void;
-    add(arg0: string): void;
     next(): string;
     nextChar(): string;
     previous(): string;
     previousChar(): string;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

@@ -41,7 +41,6 @@ export interface DataConverter<T extends Object | number | string | boolean> ext
     forkIfDefault(): ConsumerTracking;
     forkIfDefault(): DataConverter<T>;
     mergeList(arg0: T, arg1: T[]): Result<T>;
-    mergeList(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: T, arg2: T): Result<T>;
     mergeMap(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: Map<T, T>): Result<T>;

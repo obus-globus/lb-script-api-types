@@ -61,8 +61,6 @@ export class JsonGeneratorDelegate extends JsonGenerator {
     version(): Version;
     writeArray(arg0: string[], arg1: number, arg2: number): void;
     writeArray(arg0: number[], arg1: number, arg2: number): void;
-    writeArray(arg0: number[], arg1: number, arg2: number): void;
-    writeArray(arg0: number[], arg1: number, arg2: number): void;
     writeBinary(arg0: Base64Variant, arg1: InputStream, arg2: number): number;
     writeBinary(arg0: Base64Variant, arg1: number[], arg2: number, arg3: number): void;
     writeBinary(arg0: InputStream, arg1: number): number;
@@ -80,10 +78,6 @@ export class JsonGeneratorDelegate extends JsonGenerator {
     writeNumber(arg0: BigInteger): void;
     writeNumber(arg0: string[], arg1: number, arg2: number): void;
     writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
     writeNumber(arg0: string): void;
     writeObject(arg0: Object): void;
     writeObjectId(arg0: Object): void;
@@ -92,7 +86,6 @@ export class JsonGeneratorDelegate extends JsonGenerator {
     writeRaw(arg0: SerializableString): void;
     writeRaw(arg0: string): void;
     writeRaw(arg0: string[], arg1: number, arg2: number): void;
-    writeRaw(arg0: string): void;
     writeRaw(arg0: string, arg1: number, arg2: number): void;
     writeRawUTF8String(arg0: number[], arg1: number, arg2: number): void;
     writeRawValue(arg0: SerializableString): void;

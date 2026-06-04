@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { ULong } from '../../../kotlin/ULong.d.ts'
 export class CborTag extends Object {
     static BASE16: number;
     static BASE64: number;

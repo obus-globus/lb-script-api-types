@@ -19,7 +19,6 @@ export class Vec3Argument extends Object implements ArgumentType<Coordinates> {
     constructor(centerCorrect: boolean)
     // private centerCorrect: boolean;
     getExamples(): E[];
-    getExamples(): E[];
     listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;

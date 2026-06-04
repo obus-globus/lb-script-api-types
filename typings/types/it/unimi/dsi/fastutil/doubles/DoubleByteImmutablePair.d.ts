@@ -12,28 +12,22 @@ export class DoubleByteImmutablePair extends Object implements DoubleBytePair, S
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleBytePair;
-    first(arg0: number): DoubleBytePair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleBytePair;
-    key(arg0: number): DoubleBytePair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleBytePair;
     left(arg0: number): DoubleBytePair;
     leftDouble(): number;
     right(): number;
     right(arg0: number): DoubleBytePair;
-    right(arg0: number): DoubleBytePair;
     rightByte(): number;
     second(): number;
-    second(arg0: number): DoubleBytePair;
     second(arg0: number): DoubleBytePair;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): DoubleBytePair;
     value(arg0: number): DoubleBytePair;
     valueByte(): number;
 }

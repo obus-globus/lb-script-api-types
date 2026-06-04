@@ -36,7 +36,6 @@ export class EnchantmentAttributeEffect extends Record implements EnchantmentLoc
     // private makeAttributeMap(enchantmentLevel: number, slot: EquipmentSlot): HashMultimap<Holder<Attribute>, AttributeModifier>;
     onChangedBlock(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, entity: Entity, position: Vec3, becameActive: boolean): void;
     onDeactivated(item: EnchantedItemInUse, entity: Entity, position: Vec3, level: number): void;
-    onDeactivated(item: EnchantedItemInUse, entity: Entity, position: Vec3, level: number): void;
     operation(): AttributeModifier$Operation;
     toString(): string;
 }

@@ -3,6 +3,5 @@ import type { DoubleBinaryOperator } from '../../../../../java/util/function/Dou
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface FloatBinaryOperator extends BinaryOperator<number>, DoubleBinaryOperator, Object{
     apply(arg0: number, arg1: number): number;
-    apply(arg0: number, arg1: number): number;
     applyAsDouble(arg0: number, arg1: number): number;
 }

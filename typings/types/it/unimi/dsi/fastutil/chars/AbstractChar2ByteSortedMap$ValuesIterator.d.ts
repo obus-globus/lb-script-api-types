@@ -9,8 +9,6 @@ export class AbstractChar2ByteSortedMap$ValuesIterator extends Object implements
     constructor(arg0: ObjectBidirectionalIterator<Char2ByteMap$Entry>)
     // private i: ObjectBidirectionalIterator<Char2ByteMap$Entry>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextByte(): number;

@@ -17,7 +17,6 @@ export class ClientboundPlayerCombatKillPacket extends Record implements Packet<
     handle(listener: ClientGamePacketListener): void;
     hashCode(): number;
     isSkippable(): boolean;
-    isSkippable(): boolean;
     isTerminal(): boolean;
     message(): Component;
     playerId(): number;

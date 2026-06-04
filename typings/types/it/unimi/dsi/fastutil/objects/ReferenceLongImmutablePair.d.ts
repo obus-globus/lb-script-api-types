@@ -14,15 +14,12 @@ export class ReferenceLongImmutablePair<K extends Object | number | string | boo
     left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceLongPair<K>;
-    right(arg0: number): ReferenceLongPair<K>;
     rightLong(): number;
     second(): number;
-    second(arg0: number): ReferenceLongPair<K>;
     second(arg0: number): ReferenceLongPair<K>;
     secondLong(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceLongPair<K>;
     value(arg0: number): ReferenceLongPair<K>;
     valueLong(): number;
 }

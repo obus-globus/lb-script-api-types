@@ -8,5 +8,4 @@ export class NNTrainedModel extends TrainedModel {
     // private numOfOutputs: number;
     // private populateThetas(arg0: number[]): void;
     predict(arg0: number[]): number;
-    predict(arg0: number[]): number;
 }

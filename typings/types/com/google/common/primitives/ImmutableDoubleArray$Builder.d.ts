@@ -10,7 +10,6 @@ export class ImmutableDoubleArray$Builder extends Object {
     addAll(stream: DoubleStream): ImmutableDoubleArray$Builder;
     addAll(values: number[]): ImmutableDoubleArray$Builder;
     addAll(values: E[]): ImmutableDoubleArray$Builder;
-    addAll(values: number[]): ImmutableDoubleArray$Builder;
     build(): ImmutableDoubleArray;
     // private ensureRoomFor(numberToAdd: number): void;
 }

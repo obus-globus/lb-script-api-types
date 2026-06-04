@@ -10,7 +10,6 @@ export class State extends Object {
     addEmit(arg0: string): void;
     addEmit(arg0: E[]): void;
     addState(arg0: string): State;
-    addState(arg0: string): State;
     emit(): E[];
     failure(): State;
     getDepth(): number;

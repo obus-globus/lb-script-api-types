@@ -11,15 +11,10 @@ export class CharIterators$IteratorConcatenator extends Object implements CharIt
     // private offset: number;
     // private advance(): void;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;
     nextChar(): string;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

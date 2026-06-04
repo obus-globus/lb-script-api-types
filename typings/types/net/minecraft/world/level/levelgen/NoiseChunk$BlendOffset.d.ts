@@ -16,8 +16,6 @@ export class NoiseChunk$BlendOffset extends Object implements NoiseChunk$NoiseCh
     fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
-    maxValue(): number;
-    minValue(): number;
     minValue(): number;
     wrapped(): DensityFunction;
 }

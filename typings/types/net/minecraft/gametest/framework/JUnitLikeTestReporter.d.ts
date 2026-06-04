@@ -13,7 +13,6 @@ export class JUnitLikeTestReporter extends Object implements TestReporter {
     // private testSuite: Element;
     // private createTestCase(testInfo: GameTestInfo, name: string): Element;
     finish(): void;
-    finish(): void;
     onTestFailed(testInfo: GameTestInfo): void;
     onTestSuccess(testInfo: GameTestInfo): void;
     save(file: File): void;

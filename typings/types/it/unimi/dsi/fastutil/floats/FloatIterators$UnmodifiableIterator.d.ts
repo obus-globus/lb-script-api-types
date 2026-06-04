@@ -7,11 +7,6 @@ export class FloatIterators$UnmodifiableIterator extends Object implements Float
     constructor(arg0: FloatIterator)
     // private i: FloatIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

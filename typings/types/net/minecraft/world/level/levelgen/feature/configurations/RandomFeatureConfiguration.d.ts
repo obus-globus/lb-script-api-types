@@ -14,5 +14,4 @@ export class RandomFeatureConfiguration extends Object implements FeatureConfigu
     defaultFeature: Holder<PlacedFeature>;
     features: WeightedPlacedFeature[];
     getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
 }

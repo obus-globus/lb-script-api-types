@@ -19,7 +19,6 @@ export abstract class UserConnectionViaVersionPlatform extends Object implements
     couldBeReloading(): boolean;
     createConfig(): AbstractViaConfig;
     createLogger(arg0: string): Logger;
-    createLogger(arg0: string): Logger;
     getApi(): ViaAPI<UserConnection>;
     getConf(): ViaVersionConfig;
     getDataFolder(): File;
@@ -28,7 +27,6 @@ export abstract class UserConnectionViaVersionPlatform extends Object implements
     getPluginVersion(): string;
     getUnsupportedSoftwareClasses(): E[];
     hasPlugin(arg0: string): boolean;
-    isProxy(): boolean;
     isProxy(): boolean;
     kickPlayer(arg0: UserConnection, arg1: string): boolean;
     modifyPlayerDetails(arg0: UserConnection, arg1: JsonObject): void;

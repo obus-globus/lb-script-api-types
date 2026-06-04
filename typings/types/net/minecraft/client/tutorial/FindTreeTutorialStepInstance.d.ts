@@ -16,15 +16,11 @@ export class FindTreeTutorialStepInstance extends Object implements TutorialStep
     // private toast: TutorialToast;
     // private tutorial: Tutorial;
     clear(): void;
-    clear(): void;
     onDestroyBlock(level: ClientLevel, pos: BlockPos, state: BlockState, percent: number): void;
-    onGetItem(itemStack: ItemStack): void;
     onGetItem(itemStack: ItemStack): void;
     onInput(input: ClientInput): void;
     onLookAt(level: ClientLevel, hit: HitResult): void;
-    onLookAt(level: ClientLevel, hit: HitResult): void;
     onMouse(xd: number, yd: number): void;
     onOpenInventory(): void;
-    tick(): void;
     tick(): void;
 }

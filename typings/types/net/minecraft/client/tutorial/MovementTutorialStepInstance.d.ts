@@ -21,15 +21,11 @@ export class MovementTutorialStepInstance extends Object implements TutorialStep
     // private turned: boolean;
     // private tutorial: Tutorial;
     clear(): void;
-    clear(): void;
     onDestroyBlock(level: ClientLevel, pos: BlockPos, state: BlockState, percent: number): void;
     onGetItem(itemStack: ItemStack): void;
     onInput(input: ClientInput): void;
-    onInput(input: ClientInput): void;
     onLookAt(level: ClientLevel, hit: HitResult): void;
     onMouse(xd: number, yd: number): void;
-    onMouse(xd: number, yd: number): void;
     onOpenInventory(): void;
-    tick(): void;
     tick(): void;
 }

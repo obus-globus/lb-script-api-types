@@ -36,6 +36,5 @@ export class FluidRendererImpl$DefaultRenderContext extends Object implements Fl
     clear(): void;
     getColorProvider(arg0: Fluid, arg1: BlockTintSource): ColorProvider<FluidState>;
     render(arg0: FluidRenderer, arg1: FluidRenderHandler, arg2: BlockAndTintGetter, arg3: BlockPos, arg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, arg5: BlockState, arg6: FluidState): void;
-    render(arg0: FluidRenderer, arg1: FluidRenderHandler, arg2: BlockAndTintGetter, arg3: BlockPos, arg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, arg5: BlockState, arg6: FluidState): void;
     setUp(arg0: ColorProviderRegistry, arg1: DefaultFluidRenderer, arg2: LevelSlice, arg3: BlockState, arg4: FluidState, arg5: BlockPos, arg6: BlockPos, arg7: TranslucentGeometryCollector, arg8: ChunkModelBuilder, arg9: Material, arg10: FluidRenderHandler, arg11: boolean, arg12: FluidStateModelSet): void;
 }

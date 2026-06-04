@@ -9,6 +9,5 @@ export class NewAttributeBands$UnionCase extends NewAttributeBands$LayoutElement
     addToAttribute(arg0: number, arg1: NewAttribute): void;
     getBody(): NewAttributeBands$LayoutElement[];
     hasTag(arg0: number): boolean;
-    hasTag(arg0: number): boolean;
     readBands(arg0: InputStream, arg1: number): void;
 }

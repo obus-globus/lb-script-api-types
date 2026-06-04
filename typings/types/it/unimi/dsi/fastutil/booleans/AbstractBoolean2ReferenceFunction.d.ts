@@ -62,12 +62,9 @@ export abstract class AbstractBoolean2ReferenceFunction<V extends Object | numbe
     containsKey(arg0: boolean): boolean;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;
-    defaultReturnValue(): V;
-    defaultReturnValue(arg0: V): void;
     get(arg0: Object): V;
     getOrDefault(arg0: Object, arg1: V): V;
     getOrDefault(arg0: boolean, arg1: V): V;
-    put(arg0: boolean, arg1: V): V;
     put(arg0: boolean, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: boolean): V;

@@ -9,7 +9,6 @@ export interface DataComponentHolder extends Object, DataComponentGetter{
     getAllOfType(valueClass: Class<T>): Stream<T>;
     getComponents(): TypedDataComponent<Object>[];
     getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
-    getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
     getTyped(type: DataComponentType<T>): TypedDataComponent<T>;
     has(type: DataComponentType<Object>): boolean;
 }

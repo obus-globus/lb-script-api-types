@@ -7,5 +7,4 @@ export class MixinExtension$PreApplyVisitorProvider extends Object implements Ti
     private constructor(null_: MixinExtension$PreApplyVisitorProvider)
     insertApplyVisitor(arg0: TrClass, arg1: ClassVisitor, arg2: InputTag[]): ClassVisitor;
     insertApplyVisitor(arg0: TrClass, arg1: ClassVisitor): ClassVisitor;
-    insertApplyVisitor(arg0: TrClass, arg1: ClassVisitor, arg2: InputTag[]): ClassVisitor;
 }

@@ -23,8 +23,6 @@ export class GlTexture extends GpuTexture implements GpuTextureInterface {
     getFbo(dsa: DirectStateAccess, depth: GpuTexture): number;
     glId(): number;
     iris$getGlId(): number;
-    iris$getGlId(): number;
-    iris$markMipmapNonLinear(): void;
     iris$markMipmapNonLinear(): void;
     isClosed(): boolean;
     removeViews(): void;

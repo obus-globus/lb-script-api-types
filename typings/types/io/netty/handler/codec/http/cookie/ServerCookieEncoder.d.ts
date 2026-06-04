@@ -8,5 +8,4 @@ export class ServerCookieEncoder extends CookieEncoder {
     encode(arg0: Cookie): string;
     encode(arg0: Cookie[]): string[];
     encode(arg0: string, arg1: string): string;
-    encode(arg0: Cookie[]): string[];
 }

@@ -6,5 +6,4 @@ export class Rule$PhonemeList extends Object implements Rule$PhonemeExpr {
     // private phonemeList: Rule$Phoneme[];
     getPhonemes(): Rule$Phoneme[];
     size(): number;
-    size(): number;
 }

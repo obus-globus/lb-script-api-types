@@ -9,8 +9,6 @@ export class LongSummaryStatistics extends Object implements IntConsumer, LongCo
     readonly min: number;
     readonly sum: number;
     accept(arg0: number): void;
-    accept(arg0: number): void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
     combine(arg0: LongSummaryStatistics): void;
     getAverage(): number;

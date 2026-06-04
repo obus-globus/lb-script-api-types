@@ -20,7 +20,6 @@ export class ReferenceArrayList$Spliterator extends Object implements ObjectSpli
     forEachRemaining(arg0: (param0: K) => void): void;
     // private getWorkingMax(): number;
     skip(arg0: number): number;
-    skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;
 }

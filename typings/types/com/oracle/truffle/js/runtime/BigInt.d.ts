@@ -36,7 +36,6 @@ export class BigInt extends Object implements TruffleObject, Comparable<BigInt> 
     clearForeign(): BigInt;
     compareTo(b: BigInt): number;
     compareValueTo(b: number): number;
-    compareValueTo(b: number): number;
     divide(b: BigInt): BigInt;
     divideAndRemainder(b: BigInt): BigInt[];
     doubleValue(): number;

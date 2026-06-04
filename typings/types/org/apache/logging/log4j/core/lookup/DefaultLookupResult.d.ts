@@ -4,7 +4,6 @@ export class DefaultLookupResult extends Object implements LookupResult {
     constructor(value: string)
     // private value: string;
     isLookupEvaluationAllowedInValue(): boolean;
-    isLookupEvaluationAllowedInValue(): boolean;
     toString(): string;
     value(): string;
 }

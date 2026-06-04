@@ -7,7 +7,6 @@ export class Reference2IntOpenHashMap$ValueIterator extends Reference2IntOpenHas
     constructor(null_: Reference2IntOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextInt(): number;
     skip(arg0: number): number;

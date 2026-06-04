@@ -7,7 +7,6 @@ export interface CharPriorityQueue extends PriorityQueue<string>, Object{
     dequeue(): string;
     dequeueChar(): string;
     enqueue(arg0: string): void;
-    enqueue(arg0: string): void;
     first(): string;
     firstChar(): string;
     isEmpty(): boolean;

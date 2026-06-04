@@ -44,9 +44,6 @@ export abstract class AbstractChanneledNetworkAddon<H extends Object | number | 
     sendPacket(arg0: Packet<Object>): void;
     sendPacket(arg0: CustomPacketPayload): void;
     sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
-    sendPacket(arg0: Packet<Object>): void;
     sendPacket(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
-    sendPacket(arg0: CustomPacketPayload): void;
-    sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
     unregister(arg0: Identifier[]): void;
 }

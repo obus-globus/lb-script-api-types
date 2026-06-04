@@ -26,13 +26,11 @@ export class TagValueOutput extends Object implements FabricValueOutput, ValueOu
     putBoolean(name: string, value: boolean): void;
     putByte(name: string, value: number): void;
     putByteArray(arg0: string, arg1: number[]): void;
-    putByteArray(arg0: string, arg1: number[]): void;
     putDouble(name: string, value: number): void;
     putFloat(name: string, value: number): void;
     putInt(name: string, value: number): void;
     putIntArray(name: string, value: number[]): void;
     putLong(name: string, value: number): void;
-    putLongArray(arg0: string, arg1: number[]): void;
     putLongArray(arg0: string, arg1: number[]): void;
     putShort(name: string, value: number): void;
     putString(name: string, value: string): void;

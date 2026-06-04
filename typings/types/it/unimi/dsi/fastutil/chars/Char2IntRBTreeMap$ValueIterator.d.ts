@@ -3,12 +3,10 @@ import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/
 export class Char2IntRBTreeMap$ValueIterator extends Char2IntRBTreeMap$TreeIterator implements IntListIterator {
     private constructor(null_: Char2IntRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextInt(): number;
     previous(): number;
     previousInt(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

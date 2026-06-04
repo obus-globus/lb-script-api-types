@@ -76,7 +76,6 @@ export class FailSoftMapCodec<K extends Object | number | string | boolean, V ex
     decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
     decode(arg0: Dynamic<T>): DataResult<Pair<Map<K, V>, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Map<K, V>, T>>;
-    decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
     deprecated(arg0: number): Codec<A>;
     dispatch(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
     dispatch(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): Codec<E>;
@@ -86,7 +85,6 @@ export class FailSoftMapCodec<K extends Object | number | string | boolean, V ex
     elementCodec(): Codec<V>;
     encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     encode<T extends Object | number | string | boolean>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
-    encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     equals(arg0: Object | null): boolean;
     fieldOf(arg0: string): MapCodec<A>;
     flatComapMap(arg0: (param0: A) => S, arg1: (param0: S) => DataResult<A>): Codec<S>;

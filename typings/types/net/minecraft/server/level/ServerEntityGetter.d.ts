@@ -29,9 +29,6 @@ export interface ServerEntityGetter extends Object, EntityGetter{
     getNearestPlayer(targetConditions: TargetingConditions, x: number, y: number, z: number): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): Player;
-    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => kotlin.Boolean): Player;
-    getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
-    getNearestPlayer(source: Entity, maxDist: number): Player;
     getPlayerByUUID(uuid: UUID): Player;
     hasNearbyAlivePlayer(x: number, y: number, z: number, range: number): boolean;
     isUnobstructed(source: Entity, shape: VoxelShape): boolean;

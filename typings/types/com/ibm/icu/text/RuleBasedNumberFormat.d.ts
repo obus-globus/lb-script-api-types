@@ -117,10 +117,6 @@ export class RuleBasedNumberFormat extends NumberFormat {
     // private format(arg0: number, arg1: NFRuleSet): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number, arg1: string): string;
-    format(arg0: number): string;
-    // private format(arg0: number, arg1: NFRuleSet): string;
-    format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: number, arg1: string): string;
     getDecimalFormat(): DecimalFormat;
     getDecimalFormatSymbols(): DecimalFormatSymbols;
     getDefaultInfinityRule(): NFRule;

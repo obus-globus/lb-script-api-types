@@ -52,8 +52,6 @@ export class BeaconBlockEntity extends BlockEntity implements MenuProvider, Name
     createMenu(containerId: number, inventory: (Object | null)[], player: Player): AbstractContainerMenu;
     getBeamSections(): BeaconBeamOwner$Section[];
     getCustomName(): Component;
-    getCustomName(): Component;
-    getDisplayName(): Component;
     getDisplayName(): Component;
     getName(): Component;
     getPlainTextName(): string;

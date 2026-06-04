@@ -18,7 +18,6 @@ export class ObjectAVLTreeSet$SetIterator extends Object implements ObjectListIt
     previousEntry(): ObjectAVLTreeSet$Entry<K>;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
     updateNext(): void;
     updatePrevious(): void;

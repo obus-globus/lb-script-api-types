@@ -24,8 +24,6 @@ export class LongArrayPriorityQueue extends Object implements LongPriorityQueue,
     dequeue(): number;
     dequeueLong(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     // private ensureNonEmpty(): void;
     // private findFirst(): number;
     first(): number;

@@ -25,7 +25,6 @@ export class MovingBlockRenderState extends Object implements FabricRenderState,
     // private renderStateData: Map<Object | null, Object | null>;
     cardinalLighting(): CardinalLighting;
     clearExtraData(): void;
-    clearExtraData(): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;

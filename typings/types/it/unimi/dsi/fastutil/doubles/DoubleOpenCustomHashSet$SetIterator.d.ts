@@ -11,10 +11,6 @@ export class DoubleOpenCustomHashSet$SetIterator extends Object implements Doubl
     // private pos: number;
     // private wrapped: (Object | null)[];
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

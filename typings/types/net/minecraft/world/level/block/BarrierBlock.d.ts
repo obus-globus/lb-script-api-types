@@ -85,7 +85,6 @@ export class BarrierBlock extends Block implements SimpleWaterloggedBlock {
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
-    canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     codec(): MapCodec<BarrierBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getFluidState(state: BlockState): FluidState;
@@ -93,7 +92,6 @@ export class BarrierBlock extends Block implements SimpleWaterloggedBlock {
     getRenderShape(state: BlockState): RenderShape;
     getShadeBrightness(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
-    pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
     pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
     propagatesSkylightDown(state: BlockState): boolean;

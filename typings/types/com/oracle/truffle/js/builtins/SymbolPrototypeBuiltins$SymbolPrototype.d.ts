@@ -21,7 +21,6 @@ export class SymbolPrototypeBuiltins$SymbolPrototype extends Enum<SymbolPrototyp
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
-    getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
@@ -31,7 +30,6 @@ export class SymbolPrototypeBuiltins$SymbolPrototype extends Enum<SymbolPrototyp
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isGetter(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

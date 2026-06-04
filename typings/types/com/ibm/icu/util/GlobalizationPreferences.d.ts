@@ -85,7 +85,6 @@ export class GlobalizationPreferences extends Object implements Freezable<Global
     setLocale(arg0: ULocale): GlobalizationPreferences;
     setLocales(arg0: ULocale[]): GlobalizationPreferences;
     setLocales(arg0: string): GlobalizationPreferences;
-    setLocales(arg0: ULocale[]): GlobalizationPreferences;
     setNumberFormat(arg0: number, arg1: NumberFormat): GlobalizationPreferences;
     setTerritory(arg0: string): GlobalizationPreferences;
     setTimeZone(arg0: TimeZone): GlobalizationPreferences;

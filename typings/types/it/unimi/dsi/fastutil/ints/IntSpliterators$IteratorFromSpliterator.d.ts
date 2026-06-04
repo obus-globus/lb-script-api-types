@@ -10,19 +10,10 @@ export class IntSpliterators$IteratorFromSpliterator extends Object implements I
     // private holder: number;
     // private spliterator: IntSpliterator;
     accept(arg0: number): void;
-    accept(arg0: number): void;
-    accept(arg0: number): void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

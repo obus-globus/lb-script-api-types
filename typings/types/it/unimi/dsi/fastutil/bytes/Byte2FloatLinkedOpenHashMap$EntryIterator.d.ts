@@ -13,6 +13,5 @@ export class Byte2FloatLinkedOpenHashMap$EntryIterator extends Byte2FloatLinkedO
     next(): Byte2FloatLinkedOpenHashMap$MapEntry;
     previous(): Byte2FloatLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

@@ -13,15 +13,12 @@ export class FloatObjectImmutablePair<V extends Object | number | string | boole
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatObjectPair<V>;
-    first(arg0: number): FloatObjectPair<V>;
     firstFloat(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): FloatObjectPair<V>;
-    key(arg0: number): FloatObjectPair<V>;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatObjectPair<V>;
     left(arg0: number): FloatObjectPair<V>;
     leftFloat(): number;
     right(): V;

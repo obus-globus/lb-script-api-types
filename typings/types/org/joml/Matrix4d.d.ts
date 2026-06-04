@@ -142,8 +142,6 @@ export class Matrix4d extends Object implements Externalizable, Cloneable, Matri
     get(arg0: FloatBuffer): FloatBuffer;
     get(arg0: number[]): number[];
     get(arg0: number[], arg1: number): number[];
-    get(arg0: number[]): number[];
-    get(arg0: number[], arg1: number): number[];
     get(arg0: number, arg1: ByteBuffer): ByteBuffer;
     get(arg0: number, arg1: DoubleBuffer): DoubleBuffer;
     get(arg0: number, arg1: FloatBuffer): FloatBuffer;
@@ -629,8 +627,6 @@ export class Matrix4d extends Object implements Externalizable, Cloneable, Matri
     set(arg0: DoubleBuffer): Matrix4d;
     set(arg0: FloatBuffer): Matrix4d;
     set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: number, arg14: number, arg15: number): Matrix4d;
-    set(arg0: number[]): Matrix4d;
-    set(arg0: number[], arg1: number): Matrix4d;
     set(arg0: number[]): Matrix4d;
     set(arg0: number[], arg1: number): Matrix4d;
     set(arg0: number, arg1: ByteBuffer): Matrix4d;

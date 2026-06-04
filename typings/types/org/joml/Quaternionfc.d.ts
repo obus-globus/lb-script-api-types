@@ -90,7 +90,6 @@ export interface Quaternionfc extends Object{
     sub(arg0: Quaternionfc, arg1: Quaternionf): Quaternionf;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transform(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transform(arg0: Vector3d): Vector3d;
@@ -103,7 +102,6 @@ export interface Quaternionfc extends Object{
     transform(arg0: Vector4fc, arg1: Vector4f): Vector4f;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transformInverse(arg0: Vector3d): Vector3d;
@@ -116,7 +114,6 @@ export interface Quaternionfc extends Object{
     transformInverse(arg0: Vector4fc, arg1: Vector4f): Vector4f;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transformInverseUnit(arg0: Vector3dc, arg1: Vector3d): Vector3d;
@@ -140,7 +137,6 @@ export interface Quaternionfc extends Object{
     transformPositiveZ(arg0: Vector4f): Vector4f;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transformUnit(arg0: Vector3dc, arg1: Vector3d): Vector3d;

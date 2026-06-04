@@ -13,7 +13,6 @@ export class WeightedSortedList$WeightedListIterator extends Object implements O
     previous<E extends Object | number | string | boolean>(): E;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
     set<E extends Object | number | string | boolean>(e: E): void;
 }

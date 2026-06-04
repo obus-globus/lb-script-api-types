@@ -13,6 +13,5 @@ export class Short2DoubleLinkedOpenHashMap$EntryIterator extends Short2DoubleLin
     next(): Short2DoubleLinkedOpenHashMap$MapEntry;
     previous(): Short2DoubleLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

@@ -12,7 +12,6 @@ export class BlockChangeRecord1_16_2 extends Object implements BlockChangeRecord
     getSectionY(): number;
     getSectionZ(): number;
     getY(): number;
-    getY(): number;
     getY(arg0: number): number;
     setBlockId(arg0: number): void;
 }

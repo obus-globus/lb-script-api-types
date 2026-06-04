@@ -8,6 +8,7 @@ import type { AtomicIntegerFieldUpdater } from '../../../java/util/concurrent/at
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Ref$ObjectRef } from '../../../kotlin/jvm/internal/Ref$ObjectRef.d.ts'
+import type { AtomicInt } from '../../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { CoroutineScheduler } from '../../../kotlinx/coroutines/scheduling/CoroutineScheduler.d.ts'
 import type { CoroutineScheduler$WorkerState } from '../../../kotlinx/coroutines/scheduling/CoroutineScheduler$WorkerState.d.ts'
 import type { Task } from '../../../kotlinx/coroutines/scheduling/Task.d.ts'

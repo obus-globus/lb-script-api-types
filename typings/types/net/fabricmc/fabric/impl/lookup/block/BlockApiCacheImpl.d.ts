@@ -19,7 +19,6 @@ export class BlockApiCacheImpl<A extends Object | number | string | boolean, C e
     readonly lookup: BlockApiLookupImpl<A, C>;
     readonly pos: BlockPos;
     find(arg0: C): A;
-    find(arg0: C): A;
     find(arg0: BlockState, arg1: C): A;
     getBlockEntity(): BlockEntity;
     getLevel(): ServerLevel;

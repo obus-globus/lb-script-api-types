@@ -11,7 +11,5 @@ export class AbstractFloat2IntMap$BasicEntry extends Object implements Float2Int
     getIntValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

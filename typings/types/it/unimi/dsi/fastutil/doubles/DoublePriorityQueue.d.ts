@@ -7,7 +7,6 @@ export interface DoublePriorityQueue extends PriorityQueue<number>, Object{
     dequeue(): number;
     dequeueDouble(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstDouble(): number;
     isEmpty(): boolean;

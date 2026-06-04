@@ -6,6 +6,12 @@ import type { TypeTable } from '../../../../kotlin/reflect/jvm/internal/impl/met
 import type { JvmProtoBuf$JvmPropertySignature } from '../../../../kotlin/reflect/jvm/internal/impl/metadata/jvm/JvmProtoBuf$JvmPropertySignature.d.ts'
 export class JvmPropertySignature$KotlinProperty extends JvmPropertySignature {
     constructor(descriptor: PropertyDescriptor, proto: ProtoBuf$Property, signature: JvmProtoBuf$JvmPropertySignature, nameResolver: NameResolver, typeTable: TypeTable)
+    readonly descriptor: PropertyDescriptor;
+    readonly nameResolver: NameResolver;
+    readonly proto: ProtoBuf$Property;
+    readonly signature: JvmProtoBuf$JvmPropertySignature;
+    // private string: string;
+    readonly typeTable: TypeTable;
     asString(): string;
     // private getManglingSuffix(): string;
 }

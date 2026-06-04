@@ -5,12 +5,10 @@ export class Reference2BooleanLinkedOpenHashMap$ValueIterator extends Reference2
     constructor(null_: Reference2BooleanLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     next(): boolean;
     nextBoolean(): boolean;
     previous(): boolean;
     previousBoolean(): boolean;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
 }

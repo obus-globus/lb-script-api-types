@@ -5,11 +5,6 @@ import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/uti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface DoubleIterator extends PrimitiveIterator$OfDouble, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    next(): number;
     next(): number;
     nextDouble(): number;
     skip(arg0: number): number;

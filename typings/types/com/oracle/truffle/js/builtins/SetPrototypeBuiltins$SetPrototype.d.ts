@@ -35,7 +35,6 @@ export class SetPrototypeBuiltins$SetPrototype extends Enum<SetPrototypeBuiltins
     isEnabled(): boolean;
     isEnumerable(): boolean;
     isGetter(): boolean;
-    isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;

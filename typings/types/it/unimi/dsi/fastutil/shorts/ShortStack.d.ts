@@ -7,7 +7,6 @@ export interface ShortStack extends Stack<number>, Object{
     pop(): number;
     popShort(): number;
     push(arg0: number): void;
-    push(arg0: number): void;
     top<K extends Object | number | string | boolean>(): K;
     top(): number;
     topShort(): number;

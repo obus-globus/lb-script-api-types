@@ -7,8 +7,6 @@ export class Reference2ShortOpenHashMap$ValueIterator extends Reference2ShortOpe
     constructor(null_: Reference2ShortOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
     skip(arg0: number): number;

@@ -40,8 +40,6 @@ export class DefaultTruffleRuntime extends Object implements TruffleRuntime {
     isProfilingEnabled(): boolean;
     iterateFrames<T extends Object | number | string | boolean>(visitor: FrameInstanceVisitor<T>): T;
     iterateFrames<T extends Object | number | string | boolean>(visitor: FrameInstanceVisitor<T>, skipFrames: number): T;
-    iterateFrames<T extends Object | number | string | boolean>(visitor: FrameInstanceVisitor<T>): T;
-    iterateFrames<T extends Object | number | string | boolean>(visitor: FrameInstanceVisitor<T>, skipFrames: number): T;
     markFrameMaterializeCalled(descriptor: FrameDescriptor): void;
     notifyTransferToInterpreter(): void;
     popFrame(callerFrame: DefaultTruffleRuntime$DefaultFrameInstance): void;

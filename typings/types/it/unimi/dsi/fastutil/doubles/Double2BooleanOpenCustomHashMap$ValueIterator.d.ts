@@ -6,7 +6,6 @@ export class Double2BooleanOpenCustomHashMap$ValueIterator extends Double2Boolea
     constructor(null_: Double2BooleanOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
     nextBoolean(): boolean;
     skip(arg0: number): number;

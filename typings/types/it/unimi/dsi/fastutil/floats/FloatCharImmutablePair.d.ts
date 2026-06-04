@@ -12,28 +12,22 @@ export class FloatCharImmutablePair extends Object implements FloatCharPair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatCharPair;
-    first(arg0: number): FloatCharPair;
     firstFloat(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): FloatCharPair;
-    key(arg0: number): FloatCharPair;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatCharPair;
     left(arg0: number): FloatCharPair;
     leftFloat(): number;
     right(): string;
     right(arg0: string): FloatCharPair;
-    right(arg0: string): FloatCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): FloatCharPair;
     second(arg0: string): FloatCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): FloatCharPair;
     value(arg0: string): FloatCharPair;
     valueChar(): string;
 }

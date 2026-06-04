@@ -32,12 +32,9 @@ export class Log4jContextFactory extends Object implements ShutdownCallbackRegis
     getSelector(): ContextSelector;
     getShutdownCallbackRegistry(): ShutdownCallbackRegistry;
     hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
-    hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
     // private initializeShutdownCallbackRegistry(): void;
-    isClassLoaderDependent(): boolean;
     isClassLoaderDependent(): boolean;
     isShutdownHookEnabled(): boolean;
     removeContext(context: LoggerContext_2): void;
-    shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
     shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
 }

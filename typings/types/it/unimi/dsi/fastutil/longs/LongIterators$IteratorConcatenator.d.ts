@@ -11,14 +11,9 @@ export class LongIterators$IteratorConcatenator extends Object implements LongIt
     // private offset: number;
     // private advance(): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextLong(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

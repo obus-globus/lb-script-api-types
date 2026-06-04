@@ -12,28 +12,22 @@ export class IntLongImmutablePair extends Object implements IntLongPair, Seriali
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntLongPair;
-    first(arg0: number): IntLongPair;
     firstInt(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): IntLongPair;
-    key(arg0: number): IntLongPair;
     keyInt(): number;
     left(): number;
-    left(arg0: number): IntLongPair;
     left(arg0: number): IntLongPair;
     leftInt(): number;
     right(): number;
     right(arg0: number): IntLongPair;
-    right(arg0: number): IntLongPair;
     rightLong(): number;
     second(): number;
-    second(arg0: number): IntLongPair;
     second(arg0: number): IntLongPair;
     secondLong(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): IntLongPair;
     value(arg0: number): IntLongPair;
     valueLong(): number;
 }

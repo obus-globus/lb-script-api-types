@@ -24,7 +24,6 @@ export class BlockApiLookupImpl<A extends Object | number | string | boolean, C 
     apiClass(): Class<A>;
     contextClass(): Class<C>;
     find(arg0: Level, arg1: BlockPos, arg2: C): A;
-    find(arg0: Level, arg1: BlockPos, arg2: C): A;
     find(arg0: Level, arg1: BlockPos, arg2: BlockState, arg3: BlockEntity, arg4: C): A;
     getFallbackProviders(): (param0: A, param1: C, param2: Level, param3: BlockPos, param4: BlockState) => unknown[];
     getId(): Identifier;

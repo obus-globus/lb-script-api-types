@@ -17,7 +17,6 @@ export class ClientBundleTooltip extends Object implements ClientTooltipComponen
     // private backgroundHeight(): number;
     // private extractBundleWithItemsTooltip(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor, weight: Fraction): void;
     extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;
-    extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;
     // private extractSelectedItemTooltip(font: Font, graphics: GuiGraphicsExtractor, x: number, y: number, w: number): void;
     // private extractSlot(slotNumber: number, drawX: number, drawY: number, shownItems: ItemStackTemplate[], slotIndex: number, font: Font, graphics: GuiGraphicsExtractor): void;
     extractText(graphics: GuiGraphicsExtractor, font: Font, x: number, y: number): void;
@@ -27,7 +26,6 @@ export class ClientBundleTooltip extends Object implements ClientTooltipComponen
     getWidth(font: Font): number;
     // private gridSizeY(): number;
     // private itemGridHeight(): number;
-    showTooltipWithItemInHand(): boolean;
     showTooltipWithItemInHand(): boolean;
     // private slotCount(): number;
 }

@@ -2,6 +2,7 @@ import type { CancellationException } from '../../../java/util/concurrent/Cancel
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
 import type { Waiter } from '../../../kotlinx/coroutines/Waiter.d.ts'
 import type { Channel } from '../../../kotlinx/coroutines/channels/Channel.d.ts'
@@ -18,7 +19,7 @@ export class BufferedChannel<E extends Object | number | string | boolean> exten
     static OPTIONAL_CHANNEL: number;
     static RENDEZVOUS: number;
     static UNLIMITED: number;
-    constructor(capacity: number, onUndeliveredElement: (param0: E) => void | null)
+    constructor(capacity: number, onUndeliveredElement: ((param0: E) => void) | null)
     // private bufferOrRendezvousSend(curSenders: number): boolean;
     cancel(): void;
     cancel(cause: Throwable | null): boolean;

@@ -18,6 +18,5 @@ export class Rule$Phoneme extends Object implements Rule$PhonemeExpr {
     join(arg0: Rule$Phoneme): Rule$Phoneme;
     mergeWithLanguage(arg0: Languages$LanguageSet): Rule$Phoneme;
     size(): number;
-    size(): number;
     toString(): string;
 }

@@ -14,6 +14,5 @@ export class ClientboundFinishConfigurationPacket extends Object implements Pack
     handle(listener: ClientConfigurationPacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     type(): PacketType<ClientboundFinishConfigurationPacket>;
 }

@@ -8,15 +8,9 @@ export class LongIterators$CharIteratorWrapper extends Object implements LongIte
     constructor(arg0: CharIterator)
     // private iterator: CharIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextLong(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

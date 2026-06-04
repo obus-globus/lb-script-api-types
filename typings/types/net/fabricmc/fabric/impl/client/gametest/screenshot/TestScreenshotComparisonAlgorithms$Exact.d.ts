@@ -15,6 +15,5 @@ export class TestScreenshotComparisonAlgorithms$Exact extends Enum<TestScreensho
     private constructor()
     findColor(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
     findGrayscale(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
-    findGrayscale(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
     name(): "INSTANCE";
 }

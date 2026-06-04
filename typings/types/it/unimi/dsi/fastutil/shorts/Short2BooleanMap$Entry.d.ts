@@ -6,5 +6,4 @@ export interface Short2BooleanMap$Entry extends Object, Map$Entry<number, boolea
     getBooleanValue(): boolean;
     getShortKey(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
 }

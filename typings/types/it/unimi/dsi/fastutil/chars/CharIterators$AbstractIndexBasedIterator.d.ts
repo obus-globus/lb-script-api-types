@@ -8,7 +8,6 @@ export abstract class CharIterators$AbstractIndexBasedIterator extends AbstractC
     // private minPos: number;
     // private pos: number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     get(arg0: number): string;
     getMaxPos(): number;

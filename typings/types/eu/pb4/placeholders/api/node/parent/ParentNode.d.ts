@@ -18,9 +18,6 @@ export class ParentNode extends Object implements ParentTextNode {
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
     copyWith(arg0: E[]): ParentTextNode;
     copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     getChildren(): TextNode[];
     isDynamic(): boolean;
     isDynamicNoChildren(): boolean;

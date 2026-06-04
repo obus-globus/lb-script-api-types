@@ -6,5 +6,4 @@ export interface Float2BooleanMap$Entry extends Object, Map$Entry<number, boolea
     getBooleanValue(): boolean;
     getFloatKey(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
 }

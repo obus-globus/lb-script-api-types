@@ -5,5 +5,4 @@ export class CRC32C extends Object implements HashFunction {
     constructor()
     hashBytes(arg0: number[]): number;
     hashBytes(arg0: number[], arg1: number): number;
-    hashBytes(arg0: number[]): number;
 }

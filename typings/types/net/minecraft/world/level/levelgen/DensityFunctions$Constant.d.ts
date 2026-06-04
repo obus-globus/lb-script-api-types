@@ -16,7 +16,6 @@ export class DensityFunctions$Constant extends Record implements DensityFunction
     compute(context: DensityFunction$FunctionContext): number;
     equals(o: Object | null): boolean;
     fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
-    fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
     hashCode(): number;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;

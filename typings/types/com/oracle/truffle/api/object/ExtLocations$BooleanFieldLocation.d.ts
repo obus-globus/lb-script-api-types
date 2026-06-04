@@ -16,9 +16,7 @@ export class ExtLocations$BooleanFieldLocation extends ExtLocations$AbstractPrim
     get(store: DynamicObject, guard: boolean): Object;
     getBoolean(store: DynamicObject, shape: Shape): boolean;
     getBoolean(store: DynamicObject, guard: boolean): boolean;
-    getBoolean(store: DynamicObject, shape: Shape): boolean;
     getFinalBoolean(store: DynamicObject, condition: boolean): boolean;
-    getType(): Class<boolean>;
     getType(): Class<boolean>;
     primitiveFieldCount(): number;
     set(store: DynamicObject, value: Object, shape: Shape): void;
@@ -26,6 +24,5 @@ export class ExtLocations$BooleanFieldLocation extends ExtLocations$AbstractPrim
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
     setBoolean(store: DynamicObject, value: boolean, shape: Shape): void;
     setBoolean(store: DynamicObject, value: boolean, guard: boolean, init: boolean): void;
-    setBoolean(store: DynamicObject, value: boolean, shape: Shape): void;
     setBooleanInternal(store: DynamicObject, value: boolean): void;
 }

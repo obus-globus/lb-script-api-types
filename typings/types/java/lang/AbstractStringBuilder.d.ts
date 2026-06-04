@@ -24,19 +24,13 @@ export class AbstractStringBuilder extends Object implements Appendable, CharSeq
     append(arg0: CharSequence): AbstractStringBuilder;
     append(arg0: CharSequence, arg1: number, arg2: number): AbstractStringBuilder;
     append(arg0: number): AbstractStringBuilder;
-    append(arg0: number): AbstractStringBuilder;
-    append(arg0: number): AbstractStringBuilder;
-    append(arg0: number): AbstractStringBuilder;
-    append(arg0: string): AbstractStringBuilder;
     appendCodePoint(arg0: number): AbstractStringBuilder;
     // private appendNull(): AbstractStringBuilder;
     capacity(): number;
     chars(): IntStream;
-    chars(): IntStream;
     codePointAt(arg0: number): number;
     codePointBefore(arg0: number): number;
     codePointCount(arg0: number, arg1: number): number;
-    codePoints(): IntStream;
     codePoints(): IntStream;
     compareTo(arg0: AbstractStringBuilder): number;
     delete(arg0: number, arg1: number): AbstractStringBuilder;
@@ -44,7 +38,6 @@ export class AbstractStringBuilder extends Object implements Appendable, CharSeq
     ensureCapacity(arg0: number): void;
     get(arg0: number): string;
     getBytes(arg0: number[], arg1: number, arg2: number): void;
-    getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;
     getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;
     getCoder(): number;
     getValue(): number[];
@@ -59,10 +52,6 @@ export class AbstractStringBuilder extends Object implements Appendable, CharSeq
     insert(arg0: number, arg1: CharSequence): AbstractStringBuilder;
     insert(arg0: number, arg1: CharSequence, arg2: number, arg3: number): AbstractStringBuilder;
     insert(arg0: number, arg1: number): AbstractStringBuilder;
-    insert(arg0: number, arg1: number): AbstractStringBuilder;
-    insert(arg0: number, arg1: number): AbstractStringBuilder;
-    insert(arg0: number, arg1: number): AbstractStringBuilder;
-    insert(arg0: number, arg1: string): AbstractStringBuilder;
     isEmpty(): boolean;
     isLatin1(): boolean;
     lastIndexOf(arg0: string): number;

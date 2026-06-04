@@ -26,8 +26,6 @@ export class RenderType extends Object implements MixinRenderTypeAccessor, Rende
     format(): VertexFormat;
     hasBlending(): boolean;
     iris$getPipeline(): RenderPipeline;
-    iris$getPipeline(): RenderPipeline;
-    iris$getRenderTarget(): RenderTarget;
     iris$getRenderTarget(): RenderTarget;
     isOutline(): boolean;
     mode(): VertexFormat$Mode;

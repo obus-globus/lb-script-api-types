@@ -19,7 +19,6 @@ export abstract class IrisElementRow$Element extends Object implements GuiEventL
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getCurrentFocusPath(): ComponentPath;
     getRectangle(): ScreenRectangle;
-    getRectangle(): ScreenRectangle;
     isFocused(): boolean;
     isHovered(): boolean;
     isMouseOver(mouseX: number, mouseY: number): boolean;

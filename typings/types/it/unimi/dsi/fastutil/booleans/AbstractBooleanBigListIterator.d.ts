@@ -3,10 +3,7 @@ import type { BooleanBigListIterator } from '../../../../../it/unimi/dsi/fastuti
 export abstract class AbstractBooleanBigListIterator extends AbstractBooleanBidirectionalIterator implements BooleanBigListIterator {
     constructor()
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     back(arg0: number): number;
     set(arg0: boolean): void;
-    set(arg0: boolean): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

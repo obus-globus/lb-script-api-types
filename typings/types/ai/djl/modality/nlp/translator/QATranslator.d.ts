@@ -21,7 +21,6 @@ export abstract class QATranslator extends Object implements Translator<QAInput,
     batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
     batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
     getBatchifier(): Batchifier;
-    getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;
 }

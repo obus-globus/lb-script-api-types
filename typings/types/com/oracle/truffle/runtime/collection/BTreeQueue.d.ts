@@ -8,14 +8,12 @@ export class BTreeQueue<E extends Object | number | string | boolean> extends Ob
     // private root: BTreeQueue$Node<E>;
     add(x: E): void;
     addIndexOf(x: E): number;
-    addIndexOf(x: E): number;
     // private check(node: BTreeQueue$Node<E>, maxArg: Object): number;
     checkInvariants(): void;
     clear(): void;
     // private compare(a: Object, b: Object): number;
     // private compareUnique(a: Object, b: Object): number;
     indexBefore(x: E): number;
-    indexOf(x: E): number;
     indexOf(x: E): number;
     // private insert(node: BTreeQueue$Node<E>, x: E): Object;
     // private insertAll(node: BTreeQueue$Node<E>): void;

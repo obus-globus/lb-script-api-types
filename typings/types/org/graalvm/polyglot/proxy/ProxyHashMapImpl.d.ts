@@ -11,5 +11,4 @@ export class ProxyHashMapImpl extends Object implements ProxyHashMap {
     hasHashEntry(key: Value): boolean;
     putHashEntry(key: Value, value: Value): void;
     removeHashEntry(key: Value): boolean;
-    removeHashEntry(key: Value): boolean;
 }

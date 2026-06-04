@@ -11,5 +11,4 @@ export class PPSSubCmd extends Object implements ViaSubCommand {
     permission(): string;
     sendMessage(arg0: ViaCommandSender, arg1: string, arg2: Object[]): void;
     usage(): string;
-    usage(): string;
 }

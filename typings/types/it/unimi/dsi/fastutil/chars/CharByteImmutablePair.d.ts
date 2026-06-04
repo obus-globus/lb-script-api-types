@@ -12,28 +12,22 @@ export class CharByteImmutablePair extends Object implements CharBytePair, Seria
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharBytePair;
-    first(arg0: string): CharBytePair;
     firstChar(): string;
     hashCode(): number;
     key(): string;
     key(arg0: string): CharBytePair;
-    key(arg0: string): CharBytePair;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharBytePair;
     left(arg0: string): CharBytePair;
     leftChar(): string;
     right(): number;
     right(arg0: number): CharBytePair;
-    right(arg0: number): CharBytePair;
     rightByte(): number;
     second(): number;
-    second(arg0: number): CharBytePair;
     second(arg0: number): CharBytePair;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): CharBytePair;
     value(arg0: number): CharBytePair;
     valueByte(): number;
 }

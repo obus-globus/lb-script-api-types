@@ -7,11 +7,9 @@ import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
 export class BooleanIterators$EmptyIterator extends Object implements BooleanListIterator, Serializable, Cloneable {
     constructor()
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     back(arg0: number): number;
     clone(): Object;
     protected clone(): Object;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -23,7 +21,6 @@ export class BooleanIterators$EmptyIterator extends Object implements BooleanLis
     previousIndex(): number;
     // private readResolve(): Object;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
     skip(arg0: number): number;
 }

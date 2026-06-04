@@ -8,9 +8,7 @@ export class CharIterators$SingletonIterator extends Object implements CharListI
     // private curr: number;
     // private element: string;
     add(arg0: string): void;
-    add(arg0: string): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -22,7 +20,6 @@ export class CharIterators$SingletonIterator extends Object implements CharListI
     previousChar(): string;
     previousIndex(): number;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
     skip(arg0: number): number;
 }

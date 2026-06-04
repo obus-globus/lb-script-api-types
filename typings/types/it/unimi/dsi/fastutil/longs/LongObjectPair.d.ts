@@ -5,17 +5,14 @@ export interface LongObjectPair<V extends Object | number | string | boolean> ex
     first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     first(): number;
     first(arg0: number): LongObjectPair<V>;
-    first(arg0: number): LongObjectPair<V>;
     firstLong(): number;
     key<L extends Object | number | string | boolean>(): L;
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     key(): number;
     key(arg0: number): LongObjectPair<V>;
-    key(arg0: number): LongObjectPair<V>;
     keyLong(): number;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left(): number;
-    left(arg0: number): LongObjectPair<V>;
     left(arg0: number): LongObjectPair<V>;
     leftLong(): number;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;

@@ -24,21 +24,13 @@ export class Object2DoubleArrayMap$MapEntry extends Object implements Object2Dou
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectDoublePair<K>;
-    right(arg0: number): ObjectDoublePair<K>;
-    right(): number;
-    right(arg0: number): ObjectDoublePair<K>;
-    right(arg0: number): ObjectDoublePair<K>;
     rightDouble(): number;
     second(): number;
     second(arg0: number): ObjectDoublePair<K>;
-    second(arg0: number): ObjectDoublePair<K>;
     secondDouble(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectDoublePair<K>;
     value(arg0: number): ObjectDoublePair<K>;
     valueDouble(): number;
 }

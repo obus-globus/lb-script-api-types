@@ -7,13 +7,11 @@ export abstract class BooleanBigListIterators$AbstractIndexBasedBigIterator exte
     // private minPos: number;
     // private pos: number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     get(arg0: number): boolean;
     getMaxPos(): number;
     hasNext(): boolean;
     nextBoolean(): boolean;
     remove(): void;
     remove(arg0: number): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

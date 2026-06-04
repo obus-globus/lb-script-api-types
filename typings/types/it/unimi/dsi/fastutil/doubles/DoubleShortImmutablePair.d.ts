@@ -12,28 +12,22 @@ export class DoubleShortImmutablePair extends Object implements DoubleShortPair,
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleShortPair;
-    first(arg0: number): DoubleShortPair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleShortPair;
-    key(arg0: number): DoubleShortPair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleShortPair;
     left(arg0: number): DoubleShortPair;
     leftDouble(): number;
     right(): number;
     right(arg0: number): DoubleShortPair;
-    right(arg0: number): DoubleShortPair;
     rightShort(): number;
     second(): number;
-    second(arg0: number): DoubleShortPair;
     second(arg0: number): DoubleShortPair;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): DoubleShortPair;
     value(arg0: number): DoubleShortPair;
     valueShort(): number;
 }

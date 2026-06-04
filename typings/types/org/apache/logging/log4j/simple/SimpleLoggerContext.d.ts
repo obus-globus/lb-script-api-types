@@ -26,8 +26,6 @@ export class SimpleLoggerContext extends Object implements LoggerContext {
     getLogger(cls: Class<Object>, messageFactory: MessageFactory): ExtendedLogger;
     getLogger(name: string): ExtendedLogger;
     getLogger(name: string, messageFactory: MessageFactory): ExtendedLogger;
-    getLogger(cls: Class<Object>): ExtendedLogger;
-    getLogger(cls: Class<Object>, messageFactory: MessageFactory): ExtendedLogger;
     getLoggerRegistry(): LoggerRegistry<ExtendedLogger>;
     getLoggerRegistry(): LoggerRegistry<Logger>;
     getObject(key: string): Object;

@@ -8,7 +8,6 @@ export class AbstractReference2LongSortedMap$ValuesIterator<K extends Object | n
     constructor(arg0: ObjectBidirectionalIterator<Reference2LongMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2LongMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextLong(): number;

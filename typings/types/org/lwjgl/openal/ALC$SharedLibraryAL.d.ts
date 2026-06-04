@@ -16,5 +16,4 @@ export class ALC$SharedLibraryAL extends SharedLibrary$Delegate implements Funct
     getFunctionAddress(arg0: CharSequence): number;
     getFunctionAddress(arg0: number, arg1: ByteBuffer): number;
     getFunctionAddress(arg0: number, arg1: CharSequence): number;
-    getFunctionAddress(arg0: number, arg1: CharSequence): number;
 }

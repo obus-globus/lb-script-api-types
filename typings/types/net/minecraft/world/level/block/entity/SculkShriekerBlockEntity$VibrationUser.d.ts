@@ -15,13 +15,10 @@ export class SculkShriekerBlockEntity$VibrationUser extends Object implements Vi
     canReceiveVibration(level: ServerLevel, pos: BlockPos, event: Holder<GameEvent>, context: GameEvent$Context): boolean;
     canTriggerAvoidVibration(): boolean;
     getListenableEvents(): TagKey<GameEvent>;
-    getListenableEvents(): TagKey<GameEvent>;
     getListenerRadius(): number;
     getPositionSource(): PositionSource;
     isValidVibration(event: Holder<GameEvent>, context: GameEvent$Context): boolean;
     onDataChanged(): void;
-    onDataChanged(): void;
     onReceiveVibration(level: ServerLevel, pos: BlockPos, event: Holder<GameEvent>, sourceEntity: Entity, projectileOwner: Entity, receivingDistance: number): void;
-    requiresAdjacentChunksToBeTicking(): boolean;
     requiresAdjacentChunksToBeTicking(): boolean;
 }

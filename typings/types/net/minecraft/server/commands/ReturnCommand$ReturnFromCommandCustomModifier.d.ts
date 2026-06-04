@@ -9,5 +9,4 @@ export class ReturnCommand$ReturnFromCommandCustomModifier<T extends ExecutionCo
     private constructor()
     apply(context: CommandContext<T>): E[];
     apply(originalSource: T, currentSources: T[], currentStep: ContextChain<T>, modifiers: ChainModifiers, output: ExecutionControl<T>): void;
-    apply(context: CommandContext<T>): E[];
 }

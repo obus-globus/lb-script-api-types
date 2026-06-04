@@ -7,7 +7,5 @@ export abstract class AbstractLookup extends Object implements StrLookup {
     constructor()
     evaluate(key: string): LookupResult;
     evaluate(event: LogEvent, key: string): LookupResult;
-    evaluate(key: string): LookupResult;
-    evaluate(event: LogEvent, key: string): LookupResult;
     lookup(key: string): string;
 }

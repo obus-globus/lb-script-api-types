@@ -26,8 +26,6 @@ export class ShortHeapPriorityQueue extends Object implements ShortPriorityQueue
     dequeue(): number;
     dequeueShort(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstShort(): number;
     last(): number;

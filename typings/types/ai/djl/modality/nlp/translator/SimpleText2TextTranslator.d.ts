@@ -18,7 +18,6 @@ export class SimpleText2TextTranslator extends Object implements Translator<stri
     batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
     // private get(arg0: NDManager): NDArray;
     getBatchifier(): Batchifier;
-    getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;
     processInput(arg0: TranslatorContext, arg1: string): (Object | null)[];

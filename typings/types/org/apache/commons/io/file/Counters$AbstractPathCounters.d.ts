@@ -12,6 +12,5 @@ export class Counters$AbstractPathCounters extends Object implements Counters$Pa
     getFileCounter(): Counters$Counter;
     hashCode(): number;
     reset(): void;
-    reset(): void;
     toString(): string;
 }

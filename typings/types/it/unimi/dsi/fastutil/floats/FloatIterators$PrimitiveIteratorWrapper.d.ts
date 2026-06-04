@@ -8,11 +8,6 @@ export class FloatIterators$PrimitiveIteratorWrapper extends Object implements F
     constructor(arg0: PrimitiveIterator$OfDouble)
     // private i: PrimitiveIterator$OfDouble;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

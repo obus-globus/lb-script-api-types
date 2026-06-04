@@ -14,6 +14,5 @@ export class WaypointTransmitter$EntityBlockConnection extends Object implements
     disconnect(): void;
     distanceManhattan(): number;
     isBroken(): boolean;
-    isBroken(): boolean;
     update(): void;
 }

@@ -10,7 +10,6 @@ export class NoopTranslator extends Object implements Translator<(Object | null)
     batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
     batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
     getBatchifier(): Batchifier;
-    getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;
     processInput(arg0: TranslatorContext, arg1: (Object | null)[]): (Object | null)[];

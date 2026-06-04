@@ -17,9 +17,6 @@ export class ObjectArrayIndirectPriorityQueue<K extends Object | number | string
     // private refArray: K[];
     // private size: number;
     allChanged(): void;
-    allChanged(): void;
-    changed(): void;
-    changed(arg0: number): void;
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
@@ -33,11 +30,8 @@ export class ObjectArrayIndirectPriorityQueue<K extends Object | number | string
     // private findLast(): number;
     first(): number;
     front(arg0: number[]): number;
-    front(arg0: number[]): number;
     isEmpty(): boolean;
     last(): number;
-    last(): number;
-    remove(arg0: number): boolean;
     remove(arg0: number): boolean;
     size(): number;
     toString(): string;

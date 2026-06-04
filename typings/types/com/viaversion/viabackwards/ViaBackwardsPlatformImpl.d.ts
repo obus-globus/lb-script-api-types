@@ -14,5 +14,4 @@ export class ViaBackwardsPlatformImpl extends Object implements ViaBackwardsPlat
     init(arg0: ViaBackwardsConfig): void;
     init(arg0: File): void;
     isOutdated(): boolean;
-    isOutdated(): boolean;
 }

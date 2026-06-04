@@ -7,7 +7,6 @@ export class BooleanIterators$UnmodifiableBidirectionalIterator extends Object i
     // private i: BooleanBidirectionalIterator;
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     nextBoolean(): boolean;

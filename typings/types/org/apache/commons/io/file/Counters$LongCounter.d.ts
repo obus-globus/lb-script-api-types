@@ -12,6 +12,5 @@ export class Counters$LongCounter extends Object implements Counters$Counter {
     hashCode(): number;
     increment(): void;
     reset(): void;
-    reset(): void;
     toString(): string;
 }

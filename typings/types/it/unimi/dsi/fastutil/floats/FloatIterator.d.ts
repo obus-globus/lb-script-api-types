@@ -5,8 +5,6 @@ import type { DoubleConsumer } from '../../../../../java/util/function/DoubleCon
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface FloatIterator extends PrimitiveIterator<number, (param0: number) => void>, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

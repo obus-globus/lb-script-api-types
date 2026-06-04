@@ -13,6 +13,5 @@ export class Byte2ReferenceLinkedOpenHashMap$EntryIterator extends Byte2Referenc
     next(): Byte2ReferenceLinkedOpenHashMap$MapEntry;
     previous(): Byte2ReferenceLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

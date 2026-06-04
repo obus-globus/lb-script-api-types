@@ -10,13 +10,9 @@ export class BooleanIterators$IteratorConcatenator extends Object implements Boo
     // private offset: number;
     // private advance(): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

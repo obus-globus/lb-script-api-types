@@ -7,8 +7,6 @@ export class Object2ByteOpenCustomHashMap$ValueIterator extends Object2ByteOpenC
     constructor(null_: Object2ByteOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextByte(): number;
     skip(arg0: number): number;

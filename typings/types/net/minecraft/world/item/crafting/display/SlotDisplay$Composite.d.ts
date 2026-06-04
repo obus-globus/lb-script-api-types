@@ -23,7 +23,6 @@ export class SlotDisplay$Composite extends Record implements SlotDisplay {
     equals(o: Object | null): boolean;
     hashCode(): number;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     resolve(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];

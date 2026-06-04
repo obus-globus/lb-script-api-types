@@ -80,7 +80,6 @@ export class NetherrackBlock extends Block implements BonemealableBlock {
     codec(): MapCodec<NetherrackBlock>;
     getParticlePos(blockPos: BlockPos): BlockPos;
     getType(): BonemealableBlock$Type;
-    getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;
     isValidBonemealTarget(level: LevelReader, pos: BlockPos, state: BlockState): boolean;
     performBonemeal(level: ServerLevel, random: RandomSource, pos: BlockPos, state: BlockState): void;

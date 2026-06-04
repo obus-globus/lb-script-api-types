@@ -5,12 +5,10 @@ export class Byte2ShortLinkedOpenHashMap$ValueIterator extends Byte2ShortLinkedO
     constructor(null_: Byte2ShortLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextShort(): number;
     previous(): number;
     previousShort(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

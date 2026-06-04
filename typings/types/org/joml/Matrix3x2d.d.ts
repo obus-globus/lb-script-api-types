@@ -125,8 +125,6 @@ export class Matrix3x2d extends Object implements Externalizable, Cloneable, Mat
     set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): Matrix3x2d;
     set(arg0: number[]): Matrix3x2d;
     set(arg0: number[], arg1: number): Matrix3x2d;
-    set(arg0: number[]): Matrix3x2d;
-    set(arg0: number[], arg1: number): Matrix3x2d;
     set(arg0: number, arg1: ByteBuffer): Matrix3x2d;
     set(arg0: number, arg1: DoubleBuffer): Matrix3x2d;
     set(arg0: Matrix2dc): Matrix3x2d;

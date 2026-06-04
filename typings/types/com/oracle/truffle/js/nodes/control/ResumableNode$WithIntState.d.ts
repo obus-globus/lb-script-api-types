@@ -8,7 +8,6 @@ export interface ResumableNode$WithIntState extends ResumableNode, Object{
     getStateAsInt(frame: VirtualFrame, stateSlot: number): number;
     getStateAsIntAndReset(frame: VirtualFrame, stateSlot: number): number;
     getStateSlotKind(): FrameSlotKind;
-    getStateSlotKind(): FrameSlotKind;
     resetState(frame: VirtualFrame, stateSlot: number): void;
     resume(frame: VirtualFrame, stateSlot: number): Object;
     setStateAsInt(frame: VirtualFrame, stateSlot: number, state: number): void;

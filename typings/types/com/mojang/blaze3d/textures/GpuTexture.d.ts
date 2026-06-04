@@ -24,8 +24,6 @@ export abstract class GpuTexture extends Object implements AutoCloseable, GpuTex
     getMipLevels(): number;
     getWidth(mipLevel: number): number;
     iris$getGlId(): number;
-    iris$getGlId(): number;
-    iris$markMipmapNonLinear(): void;
     iris$markMipmapNonLinear(): void;
     isClosed(): boolean;
     usage(): number;

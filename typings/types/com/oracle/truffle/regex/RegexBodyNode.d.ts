@@ -29,7 +29,6 @@ export abstract class RegexBodyNode extends ExecutableNode implements Instrument
     getSource(): RegexSource;
     getSourceSection(): SourceSection;
     hasTag(tag: Class<Tag>): boolean;
-    hasTag(tag: Class<Tag>): boolean;
     isBooleanMatch(): boolean;
     isInstrumentable(): boolean;
     materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;

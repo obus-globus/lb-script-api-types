@@ -24,14 +24,9 @@ export class ShortSpliterators$SpliteratorFromIterator extends Object implements
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => kotlin.Int;
     makeForSplit(arg0: number[], arg1: number): ShortSpliterator;
     skip(arg0: number): number;
-    skip(arg0: number): number;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): ShortSpliterator;
 }

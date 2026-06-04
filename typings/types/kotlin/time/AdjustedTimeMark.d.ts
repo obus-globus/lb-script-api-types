@@ -11,5 +11,4 @@ export class AdjustedTimeMark extends Object implements TimeMark {
     hasPassedNow(): boolean;
     minus(duration: Duration): TimeMark;
     plus(duration: Duration): TimeMark;
-    plus(duration: Duration): TimeMark;
 }

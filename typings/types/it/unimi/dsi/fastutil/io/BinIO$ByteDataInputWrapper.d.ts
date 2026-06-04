@@ -11,8 +11,6 @@ export class BinIO$ByteDataInputWrapper extends Object implements ByteIterator {
     // private next: number;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextByte(): number;

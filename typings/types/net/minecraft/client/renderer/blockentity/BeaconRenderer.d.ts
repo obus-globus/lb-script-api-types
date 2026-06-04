@@ -22,10 +22,7 @@ export class BeaconRenderer<T extends BlockEntity & BeaconBeamOwner> extends Obj
     extractRenderState(blockEntity: T, state: BeaconRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     extractRenderState<S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;
-    getViewDistance(): number;
     shouldRender(blockEntity: T, cameraPosition: Vec3): boolean;
-    shouldRender(blockEntity: T, cameraPosition: Vec3): boolean;
-    shouldRenderOffScreen(): boolean;
     shouldRenderOffScreen(): boolean;
     submit(state: BeaconRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

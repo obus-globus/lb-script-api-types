@@ -19,6 +19,5 @@ export class PoseStack extends Object {
     scale(xScale: number, yScale: number, zScale: number): void;
     setIdentity(): void;
     translate(xo: number, yo: number, zo: number): void;
-    translate(xo: number, yo: number, zo: number): void;
     translate(offset: Vec3): void;
 }

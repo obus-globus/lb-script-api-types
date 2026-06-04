@@ -36,8 +36,6 @@ export class Period extends Object implements Serializable, ChronoPeriod {
     getYears(): number;
     hashCode(): number;
     isNegative(): boolean;
-    isNegative(): boolean;
-    isZero(): boolean;
     isZero(): boolean;
     minus(arg0: TemporalAmount): Period;
     minusDays(arg0: number): Period;

@@ -19,16 +19,13 @@ export class Byte2ObjectOpenCustomHashMap$MapEntry extends Object implements Byt
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteObjectPair<V>;
-    first(arg0: number): ByteObjectPair<V>;
     firstByte(): number;
     getByteKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ByteObjectPair<V>;
-    key(arg0: number): ByteObjectPair<V>;
     keyByte(): number;
     left(): number;
-    left(arg0: number): ByteObjectPair<V>;
     left(arg0: number): ByteObjectPair<V>;
     leftByte(): number;
     right<V extends Object | number | string | boolean>(): V;

@@ -16,15 +16,12 @@ export class ObjectDoubleImmutablePair<K extends Object | number | string | bool
     left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectDoublePair<K>;
-    right(arg0: number): ObjectDoublePair<K>;
     rightDouble(): number;
     second(): number;
-    second(arg0: number): ObjectDoublePair<K>;
     second(arg0: number): ObjectDoublePair<K>;
     secondDouble(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectDoublePair<K>;
     value(arg0: number): ObjectDoublePair<K>;
     valueDouble(): number;
 }

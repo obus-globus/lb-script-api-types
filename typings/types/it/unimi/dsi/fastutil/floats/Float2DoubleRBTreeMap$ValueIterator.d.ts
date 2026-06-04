@@ -3,12 +3,10 @@ import type { Float2DoubleRBTreeMap$TreeIterator } from '../../../../../it/unimi
 export class Float2DoubleRBTreeMap$ValueIterator extends Float2DoubleRBTreeMap$TreeIterator implements DoubleListIterator {
     private constructor(null_: Float2DoubleRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

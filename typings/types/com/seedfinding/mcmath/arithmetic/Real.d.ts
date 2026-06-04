@@ -22,7 +22,6 @@ export class Real extends Number implements Comparable<Real> {
     add(arg0: BigDecimal): Real;
     add(arg0: BigInteger): Real;
     add(arg0: number): Real;
-    add(arg0: number): Real;
     cbrt(): Real;
     ceil(): Real;
     compareTo(arg0: Real): number;
@@ -30,7 +29,6 @@ export class Real extends Number implements Comparable<Real> {
     divide(arg0: Real): Real;
     divide(arg0: BigDecimal): Real;
     divide(arg0: BigInteger): Real;
-    divide(arg0: number): Real;
     divide(arg0: number): Real;
     equals(arg0: Object | null): boolean;
     floor(): Real;
@@ -44,7 +42,6 @@ export class Real extends Number implements Comparable<Real> {
     multiply(arg0: Real): Real;
     multiply(arg0: BigDecimal): Real;
     multiply(arg0: BigInteger): Real;
-    multiply(arg0: number): Real;
     multiply(arg0: number): Real;
     negate(): Real;
     nthRoot(arg0: BigInteger): Real;
@@ -62,7 +59,6 @@ export class Real extends Number implements Comparable<Real> {
     subtract(arg0: Real): Real;
     subtract(arg0: BigDecimal): Real;
     subtract(arg0: BigInteger): Real;
-    subtract(arg0: number): Real;
     subtract(arg0: number): Real;
     toBigDecimal(): BigDecimal;
     toBigInteger(): BigInteger;

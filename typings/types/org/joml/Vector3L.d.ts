@@ -53,8 +53,6 @@ export class Vector3L extends Object implements Externalizable, Cloneable, Vecto
     distanceSquared(arg0: Vector3Lc): number;
     div(arg0: number): Vector3L;
     div(arg0: number, arg1: Vector3L): Vector3L;
-    div(arg0: number): Vector3L;
-    div(arg0: number, arg1: Vector3L): Vector3L;
     equals(arg0: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;

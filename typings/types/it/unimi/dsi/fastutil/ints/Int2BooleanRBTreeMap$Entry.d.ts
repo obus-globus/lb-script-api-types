@@ -23,7 +23,6 @@ export class Int2BooleanRBTreeMap$Entry extends AbstractInt2BooleanMap$BasicEntr
     right(): Int2BooleanRBTreeMap$Entry;
     right(arg0: Int2BooleanRBTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Int2BooleanRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

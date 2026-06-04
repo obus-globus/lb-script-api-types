@@ -4,5 +4,4 @@ export interface Reference2CharMap$Entry<K extends Object | number | string | bo
     readonly value: string;
     getCharValue(): string;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

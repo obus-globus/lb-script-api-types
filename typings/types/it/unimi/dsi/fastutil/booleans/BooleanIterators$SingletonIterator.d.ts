@@ -7,9 +7,7 @@ export class BooleanIterators$SingletonIterator extends Object implements Boolea
     // private curr: number;
     // private element: boolean;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -20,7 +18,6 @@ export class BooleanIterators$SingletonIterator extends Object implements Boolea
     previousBoolean(): boolean;
     previousIndex(): number;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
     skip(arg0: number): number;
 }

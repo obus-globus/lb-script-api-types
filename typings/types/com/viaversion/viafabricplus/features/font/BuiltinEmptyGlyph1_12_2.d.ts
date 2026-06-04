@@ -14,7 +14,6 @@ export class BuiltinEmptyGlyph1_12_2 extends Enum<BuiltinEmptyGlyph1_12_2> imple
     bake(arg0: GlyphStitcher): BakedSheetGlyph;
     getAdvance(bold: boolean): number;
     getAdvance(): number;
-    getAdvance(bold: boolean): number;
     getBoldOffset(): number;
     getShadowOffset(): number;
     name(): "INSTANCE";

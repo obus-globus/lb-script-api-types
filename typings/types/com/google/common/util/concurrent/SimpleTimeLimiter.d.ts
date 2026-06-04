@@ -12,18 +12,13 @@ export class SimpleTimeLimiter extends Object implements TimeLimiter {
     // private executor: ExecutorService;
     callUninterruptiblyWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeout: Duration): T;
     callUninterruptiblyWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeoutDuration: number, timeoutUnit: TimeUnit): T;
-    callUninterruptiblyWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeout: Duration): T;
     callWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeout: Duration): T;
     callWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeoutDuration: number, timeoutUnit: TimeUnit): T;
     // private callWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeoutDuration: number, timeoutUnit: TimeUnit, amInterruptible: boolean): T;
-    callWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeout: Duration): T;
     newProxy<T extends Object | number | string | boolean>(target: T, interfaceType: Class<T>, timeout: Duration): T;
     newProxy<T extends Object | number | string | boolean>(target: T, interfaceType: Class<T>, timeoutDuration: number, timeoutUnit: TimeUnit): T;
-    newProxy<T extends Object | number | string | boolean>(target: T, interfaceType: Class<T>, timeout: Duration): T;
     runUninterruptiblyWithTimeout(runnable: () => void, timeout: Duration): void;
     runUninterruptiblyWithTimeout(runnable: () => void, timeoutDuration: number, timeoutUnit: TimeUnit): void;
-    runUninterruptiblyWithTimeout(runnable: () => void, timeout: Duration): void;
     runWithTimeout(runnable: () => void, timeout: Duration): void;
     runWithTimeout(runnable: () => void, timeoutDuration: number, timeoutUnit: TimeUnit): void;
-    runWithTimeout(runnable: () => void, timeout: Duration): void;
 }

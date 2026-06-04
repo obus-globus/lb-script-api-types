@@ -6,5 +6,4 @@ export interface Long2CharMap$Entry extends Object, Map$Entry<number, string>{
     getCharValue(): string;
     getLongKey(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

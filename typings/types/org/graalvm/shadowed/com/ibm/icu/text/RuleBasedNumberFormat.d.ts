@@ -114,10 +114,6 @@ export class RuleBasedNumberFormat extends NumberFormat {
     format(number: number, toAppendTo: StringBuffer, ignore: FieldPosition): StringBuffer;
     format(number: number, ruleSet: string): string;
     // private format(number: number, ruleSet: NFRuleSet): string;
-    format(number: number): string;
-    format(number: number, toAppendTo: StringBuffer, ignore: FieldPosition): StringBuffer;
-    format(number: number, ruleSet: string): string;
-    // private format(number: number, ruleSet: NFRuleSet): string;
     format(number: BigDecimal_2): string;
     format(number: BigDecimal_2, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(currAmt: CurrencyAmount): string;

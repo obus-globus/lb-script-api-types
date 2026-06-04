@@ -23,7 +23,6 @@ export class Char2ByteRBTreeMap$Entry extends AbstractChar2ByteMap$BasicEntry im
     right(): Char2ByteRBTreeMap$Entry;
     right(arg0: Char2ByteRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Char2ByteRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -118,7 +118,6 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     // private getLookup(key: ResourceKey<(Object | null)[]>): Optional<HolderLookup<Object>>;
     getOnlinePlayerNames(): E[];
     getPermissionContext(): PermissionContext;
-    getPermissionContext(): PermissionContext;
     getPlayer(): ServerPlayer;
     getPlayerOrException(): ServerPlayer;
     getPosition(): Vec3;
@@ -129,7 +128,6 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     getSigningContext(): CommandSigningContext;
     getTextName(): string;
     handleError(type: CommandExceptionType, message: Message, forked: boolean, tracer: TraceCallbacks): void;
-    handleError(e: CommandSyntaxException, forked: boolean, tracer: TraceCallbacks): void;
     handleError(e: CommandSyntaxException, forked: boolean, tracer: TraceCallbacks): void;
     isPlayer(): boolean;
     isSilent(): boolean;
@@ -143,7 +141,6 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     shouldFilterMessageTo(receiver: ServerPlayer): boolean;
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;
-    suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     withAnchor(anchor: EntityAnchorArgument$Anchor): CommandSourceStack;
     withCallback(resultCallback: (param0: boolean, param1: number) => void): CommandSourceStack;
     withCallback(newCallback: (param0: boolean, param1: number) => void, combiner: (param0: (param0: boolean, param1: number) => void, param1: Object | null) => unknown): CommandSourceStack;

@@ -24,7 +24,6 @@ export class SpriteLoader$Preparations extends Record implements FabricPreparati
     readyForUpload(): CompletableFuture<void>;
     regions(): Map<Identifier, TextureAtlasSprite>;
     spriteFinder(): SpriteFinder;
-    spriteFinder(): SpriteFinder;
     toString(): string;
     width(): number;
 }

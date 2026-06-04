@@ -25,7 +25,6 @@ export class Float2ByteAVLTreeMap$Entry extends AbstractFloat2ByteMap$BasicEntry
     right(): Float2ByteAVLTreeMap$Entry;
     right(arg0: Float2ByteAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Float2ByteAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -18,7 +18,6 @@ export class ObjectRBTreeSet$SetIterator extends Object implements ObjectListIte
     previousEntry(): ObjectRBTreeSet$Entry<K>;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
     updateNext(): void;
     updatePrevious(): void;

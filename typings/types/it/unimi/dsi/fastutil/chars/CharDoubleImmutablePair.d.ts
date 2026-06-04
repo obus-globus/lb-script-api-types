@@ -12,28 +12,22 @@ export class CharDoubleImmutablePair extends Object implements CharDoublePair, S
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharDoublePair;
-    first(arg0: string): CharDoublePair;
     firstChar(): string;
     hashCode(): number;
     key(): string;
     key(arg0: string): CharDoublePair;
-    key(arg0: string): CharDoublePair;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharDoublePair;
     left(arg0: string): CharDoublePair;
     leftChar(): string;
     right(): number;
     right(arg0: number): CharDoublePair;
-    right(arg0: number): CharDoublePair;
     rightDouble(): number;
     second(): number;
-    second(arg0: number): CharDoublePair;
     second(arg0: number): CharDoublePair;
     secondDouble(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): CharDoublePair;
     value(arg0: number): CharDoublePair;
     valueDouble(): number;
 }

@@ -12,15 +12,5 @@ export class CompareToBuilder extends Object {
     append(arg0: number[], arg1: number[]): CompareToBuilder;
     append(arg0: string, arg1: string): CompareToBuilder;
     append(arg0: string[], arg1: string[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
     toComparison(): number;
 }

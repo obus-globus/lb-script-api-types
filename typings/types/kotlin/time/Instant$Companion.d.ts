@@ -10,7 +10,6 @@ export class Instant$Companion extends Object {
     /*not mapped: */ getMIN$kotlin_stdlib(): Instant;
     fromEpochMilliseconds(epochMilliseconds: number): Instant;
     fromEpochSeconds(epochSeconds: number, nanosecondAdjustment: number): Instant;
-    fromEpochSeconds(epochSeconds: number, nanosecondAdjustment: number): Instant;
     now(): Instant;
     parse(input: CharSequence): Instant;
     parseOrNull(input: CharSequence): Instant | null;

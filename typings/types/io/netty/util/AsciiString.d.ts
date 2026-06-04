@@ -80,7 +80,6 @@ export class AsciiString extends Object implements CharSequence, Comparable<Char
     indexOf(arg0: CharSequence): number;
     indexOf(arg0: CharSequence, arg1: number): number;
     isEmpty(): boolean;
-    isEmpty(): boolean;
     isEntireArrayUsed(): boolean;
     lastIndexOf(arg0: CharSequence): number;
     lastIndexOf(arg0: CharSequence, arg1: number): number;

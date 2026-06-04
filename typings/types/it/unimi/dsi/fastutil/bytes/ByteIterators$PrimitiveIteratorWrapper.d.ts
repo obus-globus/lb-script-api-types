@@ -8,11 +8,6 @@ export class ByteIterators$PrimitiveIteratorWrapper extends Object implements By
     constructor(arg0: PrimitiveIterator$OfInt)
     // private i: PrimitiveIterator$OfInt;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextByte(): number;

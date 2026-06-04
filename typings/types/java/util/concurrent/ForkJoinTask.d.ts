@@ -39,7 +39,6 @@ export abstract class ForkJoinTask<V extends Object | number | string | boolean>
     completeExceptionally(arg0: Throwable): void;
     doExec(): void;
     exceptionNow(): Throwable;
-    exceptionNow(): Throwable;
     exec(): boolean;
     fork(): ForkJoinTask<V>;
     get(): V;
@@ -68,14 +67,12 @@ export abstract class ForkJoinTask<V extends Object | number | string | boolean>
     reinitialize(): void;
     // private reportException(arg0: boolean): void;
     resultNow(): V;
-    resultNow(): V;
     // private setDone(): void;
     setForkJoinTaskStatusMarkerBit(): number;
     setForkJoinTaskTag(arg0: number): number;
     setNoUserHelp(): void;
     setRawResult(arg0: V): void;
     // private signalWaiters(): void;
-    state(): Future$State;
     state(): Future$State;
     trySetCancelled(): number;
     trySetException(arg0: Throwable): void;

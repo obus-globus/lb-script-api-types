@@ -6,5 +6,4 @@ export interface Char2BooleanMap$Entry extends Object, Map$Entry<string, boolean
     getBooleanValue(): boolean;
     getCharKey(): string;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
 }

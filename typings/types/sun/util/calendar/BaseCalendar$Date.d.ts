@@ -12,7 +12,6 @@ export class BaseCalendar$Date extends CalendarDate {
     getCachedYear(): number;
     getNormalizedYear(): number;
     hit(arg0: number): boolean;
-    hit(arg0: number): boolean;
     setCache(arg0: number, arg1: number, arg2: number): void;
     setNormalizedDate(arg0: number, arg1: number, arg2: number): BaseCalendar$Date;
     setNormalizedYear(arg0: number): void;

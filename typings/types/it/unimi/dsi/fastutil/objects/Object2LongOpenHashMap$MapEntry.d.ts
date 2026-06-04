@@ -24,21 +24,13 @@ export class Object2LongOpenHashMap$MapEntry extends Object implements Object2Lo
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectLongPair<K>;
-    right(arg0: number): ObjectLongPair<K>;
-    right(): number;
-    right(arg0: number): ObjectLongPair<K>;
-    right(arg0: number): ObjectLongPair<K>;
     rightLong(): number;
     second(): number;
     second(arg0: number): ObjectLongPair<K>;
-    second(arg0: number): ObjectLongPair<K>;
     secondLong(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectLongPair<K>;
     value(arg0: number): ObjectLongPair<K>;
     valueLong(): number;
 }

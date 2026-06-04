@@ -14,13 +14,6 @@ export class CollectToTag extends Object implements StreamTagVisitor {
     getResult(): Tag;
     visit(value: number): StreamTagVisitor$ValueResult;
     visit(value: number[]): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number[]): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number[]): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
     visit(value: string): StreamTagVisitor$ValueResult;
     visitContainerEnd(): StreamTagVisitor$ValueResult;
     visitElement(type: TagType<Object>, index: number): StreamTagVisitor$EntryResult;

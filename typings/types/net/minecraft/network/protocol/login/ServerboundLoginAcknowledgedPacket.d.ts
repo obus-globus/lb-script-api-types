@@ -14,6 +14,5 @@ export class ServerboundLoginAcknowledgedPacket extends Object implements Packet
     handle(listener: ServerLoginPacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     type(): PacketType<ServerboundLoginAcknowledgedPacket>;
 }

@@ -9,12 +9,8 @@ import type { IOSupplier } from '../../../../../org/apache/commons/io/function/I
 export interface IOUnaryOperator<T extends Object | number | string | boolean> extends Object, IOFunction<T, T>{
     andThen(arg0: (param0: R) => void): (param0: T) => void;
     andThen(arg0: (param0: R) => V): (param0: T) => V;
-    andThen(arg0: (param0: R) => void): (param0: T) => void;
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
     asFunction(): (param0: T) => R;
     asUnaryOperator(): (param0: T) => unknown;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
-    compose(arg0: () => T): () => R;
     compose(arg0: (param0: V) => T): (param0: V) => R;
     compose(arg0: () => T): () => R;
 }

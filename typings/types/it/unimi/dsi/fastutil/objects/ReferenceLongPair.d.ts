@@ -9,18 +9,15 @@ export interface ReferenceLongPair<K extends Object | number | string | boolean>
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     right(): number;
     right(arg0: number): ReferenceLongPair<K>;
-    right(arg0: number): ReferenceLongPair<K>;
     rightLong(): number;
     second<R extends Object | number | string | boolean>(): R;
     second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     second(): number;
     second(arg0: number): ReferenceLongPair<K>;
-    second(arg0: number): ReferenceLongPair<K>;
     secondLong(): number;
     value<R extends Object | number | string | boolean>(): R;
     value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     value(): number;
-    value(arg0: number): ReferenceLongPair<K>;
     value(arg0: number): ReferenceLongPair<K>;
     valueLong(): number;
 }

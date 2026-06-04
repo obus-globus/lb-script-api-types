@@ -66,13 +66,10 @@ export class StringPrototypeBuiltins$StringPrototype extends Enum<StringPrototyp
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
-    getECMAScriptVersion(): number;
-    getKey(): Object;
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
     isAOTSupported(): boolean;
-    isAnnexB(): boolean;
     isAnnexB(): boolean;
     isConfigurable(): boolean;
     isConstructor(): boolean;
@@ -80,7 +77,6 @@ export class StringPrototypeBuiltins$StringPrototype extends Enum<StringPrototyp
     isEnumerable(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
-    isOptional(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;
     isWritable(): boolean;

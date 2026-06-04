@@ -43,7 +43,6 @@ export abstract class TextComponent extends Object implements Copyable<TextCompo
     append(arg0: TextComponent): TextComponent;
     append(arg0: TextComponent[]): TextComponent;
     append(arg0: string[]): TextComponent;
-    append(arg0: TextComponent[]): TextComponent;
     asLegacyFormatString(): string;
     asSingleString(): string;
     asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;

@@ -23,5 +23,4 @@ export class LightningStrikeTrigger$TriggerInstance extends Record implements Si
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

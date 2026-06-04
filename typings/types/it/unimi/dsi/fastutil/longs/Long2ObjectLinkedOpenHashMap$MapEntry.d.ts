@@ -19,16 +19,13 @@ export class Long2ObjectLinkedOpenHashMap$MapEntry extends Object implements Lon
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongObjectPair<V>;
-    first(arg0: number): LongObjectPair<V>;
     firstLong(): number;
     getLongKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongObjectPair<V>;
-    key(arg0: number): LongObjectPair<V>;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongObjectPair<V>;
     left(arg0: number): LongObjectPair<V>;
     leftLong(): number;
     right<V extends Object | number | string | boolean>(): V;

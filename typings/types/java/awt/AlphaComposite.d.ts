@@ -35,7 +35,6 @@ export class AlphaComposite extends Object implements Composite {
     rule: number;
     createContext(arg0: ColorModel, arg1: ColorModel, arg2: RenderingHints): CompositeContext;
     derive(arg0: number): AlphaComposite;
-    derive(arg0: number): AlphaComposite;
     equals(arg0: Object | null): boolean;
     getAlpha(): number;
     getRule(): number;

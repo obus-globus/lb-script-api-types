@@ -21,7 +21,6 @@ export class NFRule extends Object {
     // private sub2: NFSubstitution;
     // private allIgnorable(str: string): boolean;
     doFormat(number: number, toInsertInto: StringBuilder, pos: number, recursionCount: number): void;
-    doFormat(number: number, toInsertInto: StringBuilder, pos: number, recursionCount: number): void;
     doParse(text: string, parsePosition: ParsePosition, isFractionRule: boolean, upperBound: number, nonNumericalExecutedRuleMask: number, recursionCount: number): Number;
     equals(that: Object | null): boolean;
     // private expectedExponent(): number;

@@ -289,7 +289,6 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     getSuggestionsProvider(): ClientSuggestionProvider;
     getWaypointManager(): ClientWaypointManager;
     globalAttachments(): GlobalAttachments;
-    globalAttachments(): GlobalAttachments;
     handleAddEntity(packet: ClientboundAddEntityPacket): void;
     handleAddObjective(packet: ClientboundSetObjectivePacket): void;
     handleAnimate(packet: ClientboundAnimatePacket): void;

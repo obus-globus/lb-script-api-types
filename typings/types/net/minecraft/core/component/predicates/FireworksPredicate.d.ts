@@ -26,7 +26,6 @@ export class FireworksPredicate extends Record implements SingleComponentItemPre
     flightDuration(): MinMaxBounds$Ints;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
-    matches(components: DataComponentGetter): boolean;
     matches(value: Fireworks): boolean;
     toString(): string;
 }

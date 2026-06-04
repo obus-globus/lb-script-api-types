@@ -17,7 +17,6 @@ export class WSInterceptorServer extends Object implements InspectorWSConnection
     closing(tokenToClose: Token): void;
     consoleAPICall(tokenToCall: Token, type: string, text: Object): void;
     dispose(): void;
-    dispose(): void;
     getPort(): number;
     newSession(newIss: InspectServerSession): void;
     opened(endpoint: MessageEndpoint): void;

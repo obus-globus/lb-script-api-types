@@ -38,7 +38,6 @@ export class LocalizedMessage extends Object implements LoggerNameAwareMessage, 
     // private stringArgs: string[];
     readonly throwable: Throwable;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getLoggerName(): string;
     getParameters(): Object[];

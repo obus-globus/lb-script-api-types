@@ -8,16 +8,9 @@ export class ShortIterators$ByteIteratorWrapper extends Object implements ShortI
     constructor(arg0: ByteIterator)
     // private iterator: ByteIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextShort(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

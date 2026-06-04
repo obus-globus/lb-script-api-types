@@ -5,7 +5,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface RandomGenerator$SplittableGenerator extends RandomGenerator$StreamableGenerator, Object{
     rngs(): Stream<RandomGenerator>;
     rngs(arg0: number): Stream<RandomGenerator>;
-    rngs(arg0: number): Stream<RandomGenerator>;
     split(): RandomGenerator$SplittableGenerator;
     split(arg0: RandomGenerator$SplittableGenerator): RandomGenerator$SplittableGenerator;
     splits(): Stream<RandomGenerator$SplittableGenerator>;

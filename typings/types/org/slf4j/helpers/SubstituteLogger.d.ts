@@ -19,16 +19,10 @@ export class SubstituteLogger extends Object implements Logger {
     // private logMethodCache: Method;
     readonly name: string;
     atDebug(): LoggingEventBuilder;
-    atDebug(): LoggingEventBuilder;
-    atError(): LoggingEventBuilder;
     atError(): LoggingEventBuilder;
     atInfo(): LoggingEventBuilder;
-    atInfo(): LoggingEventBuilder;
-    atLevel(arg0: Level): LoggingEventBuilder;
     atLevel(arg0: Level): LoggingEventBuilder;
     atTrace(): LoggingEventBuilder;
-    atTrace(): LoggingEventBuilder;
-    atWarn(): LoggingEventBuilder;
     atWarn(): LoggingEventBuilder;
     debug(arg0: string): void;
     debug(arg0: string, arg1: Object): void;
@@ -71,7 +65,6 @@ export class SubstituteLogger extends Object implements Logger {
     isDelegateNOP(): boolean;
     isDelegateNull(): boolean;
     isEnabledForLevel(arg0: Level): boolean;
-    isEnabledForLevel(arg0: Level): boolean;
     isErrorEnabled(): boolean;
     isErrorEnabled(arg0: Marker): boolean;
     isInfoEnabled(): boolean;
@@ -81,7 +74,6 @@ export class SubstituteLogger extends Object implements Logger {
     isWarnEnabled(): boolean;
     isWarnEnabled(arg0: Marker): boolean;
     log(arg0: LoggingEvent): void;
-    makeLoggingEventBuilder(arg0: Level): LoggingEventBuilder;
     makeLoggingEventBuilder(arg0: Level): LoggingEventBuilder;
     setDelegate(arg0: Logger): void;
     trace(arg0: string): void;

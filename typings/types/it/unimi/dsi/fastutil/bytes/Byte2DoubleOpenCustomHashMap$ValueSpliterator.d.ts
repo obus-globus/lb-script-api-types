@@ -18,10 +18,8 @@ export class Byte2DoubleOpenCustomHashMap$ValueSpliterator extends Byte2DoubleOp
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => kotlin.Int;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Byte2DoubleOpenCustomHashMap$ValueSpliterator;
     skip(arg0: number): number;
-    tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

@@ -27,8 +27,6 @@ export class WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype e
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isEnumerable(): boolean;
-    isGetter(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

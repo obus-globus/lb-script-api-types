@@ -15,7 +15,6 @@ export class EntityStorage extends Object implements EntityPersistentStorage<Ent
     // private level: ServerLevel;
     // private simpleRegionStorage: SimpleRegionStorage;
     close(): void;
-    close(): void;
     flush(flushStorage: boolean): void;
     loadEntities(pos: ChunkPos): CompletableFuture<ChunkEntities<Entity>>;
     // private reportLoadFailureIfPresent(operation: CompletableFuture<Object>, pos: ChunkPos): void;

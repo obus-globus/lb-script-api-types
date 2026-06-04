@@ -23,7 +23,6 @@ export class Byte2LongRBTreeMap$Entry extends AbstractByte2LongMap$BasicEntry im
     right(): Byte2LongRBTreeMap$Entry;
     right(arg0: Byte2LongRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Byte2LongRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

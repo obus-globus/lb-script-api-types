@@ -3,12 +3,10 @@ import type { Long2BooleanAVLTreeMap$TreeIterator } from '../../../../../it/unim
 export class Long2BooleanAVLTreeMap$ValueIterator extends Long2BooleanAVLTreeMap$TreeIterator implements BooleanListIterator {
     private constructor(null_: Long2BooleanAVLTreeMap$ValueIterator)
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     next(): boolean;
     nextBoolean(): boolean;
     previous(): boolean;
     previousBoolean(): boolean;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
 }

@@ -6,5 +6,4 @@ export interface Float2IntMap$Entry extends Object, Map$Entry<number, number>{
     getFloatKey(): number;
     getIntValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

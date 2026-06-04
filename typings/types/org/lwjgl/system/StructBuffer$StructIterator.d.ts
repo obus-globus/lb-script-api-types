@@ -11,7 +11,6 @@ export class StructBuffer$StructIterator<T extends Struct<T>> extends Object imp
     // private fence: number;
     // private index: number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next(): T;
 }

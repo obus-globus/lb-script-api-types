@@ -12,28 +12,22 @@ export class ShortBooleanImmutablePair extends Object implements ShortBooleanPai
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortBooleanPair;
-    first(arg0: number): ShortBooleanPair;
     firstShort(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortBooleanPair;
-    key(arg0: number): ShortBooleanPair;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortBooleanPair;
     left(arg0: number): ShortBooleanPair;
     leftShort(): number;
     right(): boolean;
     right(arg0: boolean): ShortBooleanPair;
-    right(arg0: boolean): ShortBooleanPair;
     rightBoolean(): boolean;
     second(): boolean;
-    second(arg0: boolean): ShortBooleanPair;
     second(arg0: boolean): ShortBooleanPair;
     secondBoolean(): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): ShortBooleanPair;
     value(arg0: boolean): ShortBooleanPair;
     valueBoolean(): boolean;
 }

@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PriorityQueues$EmptyPriorityQueue extends Object implements PriorityQueue<Object>, Serializable {
     constructor()
     changed(): void;
-    changed(): void;
     clear(): void;
     clone(): Object;
     comparator(): (param0: Object) => kotlin.Boolean;
@@ -14,7 +13,6 @@ export class PriorityQueues$EmptyPriorityQueue extends Object implements Priorit
     equals(arg0: Object | null): boolean;
     first(): Object;
     hashCode(): number;
-    isEmpty(): boolean;
     isEmpty(): boolean;
     last<K extends Object | number | string | boolean>(): K;
     last(): Object;

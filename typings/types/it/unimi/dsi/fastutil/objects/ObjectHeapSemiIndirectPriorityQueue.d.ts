@@ -15,9 +15,6 @@ export class ObjectHeapSemiIndirectPriorityQueue<K extends Object | number | str
     // private refArray: K[];
     // private size: number;
     allChanged(): void;
-    allChanged(): void;
-    changed(): void;
-    changed(arg0: number): void;
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
@@ -27,7 +24,6 @@ export class ObjectHeapSemiIndirectPriorityQueue<K extends Object | number | str
     enqueue(arg0: number): void;
     ensureElement(arg0: number): void;
     first(): number;
-    front(arg0: number[]): number;
     front(arg0: number[]): number;
     isEmpty(): boolean;
     last(): number;

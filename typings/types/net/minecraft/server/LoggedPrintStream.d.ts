@@ -12,8 +12,5 @@ export class LoggedPrintStream extends PrintStream {
     println(arg0: string): void;
     println(arg0: string[]): void;
     println(arg0: number): void;
-    println(arg0: number): void;
-    println(arg0: number): void;
-    println(arg0: number): void;
     println(string: string): void;
 }

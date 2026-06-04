@@ -8,7 +8,6 @@ export class URLWrapper$QueryParametersWrapper extends Object {
     addParameter(arg0: string, arg1: string): URLWrapper$QueryParametersWrapper;
     addParameter(arg0: URLWrapper$Parameter): URLWrapper$QueryParametersWrapper;
     addParameters(arg0: URLWrapper$Parameter[]): URLWrapper$QueryParametersWrapper;
-    addParameters(arg0: URLWrapper$Parameter[]): URLWrapper$QueryParametersWrapper;
     addParameters(arg0: { [key: string]: string }): URLWrapper$QueryParametersWrapper;
     apply(): URLWrapper;
     clearParameters(): URLWrapper$QueryParametersWrapper;

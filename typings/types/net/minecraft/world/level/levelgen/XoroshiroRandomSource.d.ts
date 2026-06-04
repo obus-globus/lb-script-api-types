@@ -20,7 +20,6 @@ export class XoroshiroRandomSource extends Object implements RandomSource {
     // private gaussianSource: MarsagliaPolarGaussian;
     // private randomNumberGenerator: Xoroshiro128PlusPlus;
     consumeCount(rounds: number): void;
-    consumeCount(rounds: number): void;
     fork(): RandomSource;
     forkPositional(): PositionalRandomFactory;
     // private nextBits(bits: number): number;
@@ -31,10 +30,8 @@ export class XoroshiroRandomSource extends Object implements RandomSource {
     nextInt(origin: number, bound: number): number;
     nextInt(): number;
     nextInt(bound: number): number;
-    nextInt(origin: number, bound: number): number;
     nextIntBetweenInclusive(min: number, maxInclusive: number): number;
     nextLong(): number;
     setSeed(seed: number): void;
-    triangle(mean: number, spread: number): number;
     triangle(mean: number, spread: number): number;
 }

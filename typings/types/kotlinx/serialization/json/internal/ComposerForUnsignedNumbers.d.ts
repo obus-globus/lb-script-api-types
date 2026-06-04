@@ -6,10 +6,4 @@ export class ComposerForUnsignedNumbers extends Composer {
     print(v: boolean): void;
     print(v: number): void;
     print(v: string): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: number): void;
-    print(v: string): void;
 }

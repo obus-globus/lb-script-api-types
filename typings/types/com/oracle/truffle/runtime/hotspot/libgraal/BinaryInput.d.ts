@@ -16,11 +16,6 @@ export abstract class BinaryInput extends Object {
     read(b: (Object | null)[], off: number, len: number): void;
     read(b: number[], off: number, len: number): void;
     read(b: string[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
     readBoolean(): boolean;
     readByte(): number;
     readChar(): string;

@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { LockFreeTaskQueueCore$Companion } from '../../../kotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion.d.ts'
 import type { Symbol } from '../../../kotlinx/coroutines/internal/Symbol.d.ts'
 export class LockFreeTaskQueueCore<E extends Object | number | string | boolean> extends Object {

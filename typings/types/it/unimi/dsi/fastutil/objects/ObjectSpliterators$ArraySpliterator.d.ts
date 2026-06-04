@@ -21,7 +21,6 @@ export class ObjectSpliterators$ArraySpliterator<K extends Object | number | str
     forEachRemaining(arg0: (param0: K) => void): void;
     makeForSplit(arg0: number, arg1: number): ObjectSpliterators$ArraySpliterator<K>;
     skip(arg0: number): number;
-    skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;
 }

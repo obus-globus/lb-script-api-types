@@ -69,5 +69,4 @@ export interface QuadEmitter extends Object, MutableQuadView{
     uv(arg0: number, arg1: Vector2f): QuadEmitter;
     uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uvUnitSquare(): MutableQuadView;
-    uvUnitSquare(): MutableQuadView;
 }

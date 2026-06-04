@@ -33,7 +33,6 @@ export class MonthDay extends Object implements Serializable, TemporalAccessor, 
     equals(arg0: Object | null): boolean;
     format(arg0: DateTimeFormatter): string;
     get(arg0: TemporalField): number;
-    get(arg0: TemporalField): number;
     getDayOfMonth(): number;
     getLong(arg0: TemporalField): number;
     getMonth(): Month;
@@ -44,8 +43,6 @@ export class MonthDay extends Object implements Serializable, TemporalAccessor, 
     isSupported(arg0: TemporalField): boolean;
     isValidYear(arg0: number): boolean;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    range(arg0: TemporalField): ValueRange;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toString(): string;

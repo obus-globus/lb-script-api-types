@@ -19,7 +19,6 @@ export class NFRuleSet extends Object {
     // private findNormalRule(arg0: number): NFRule;
     findRule(arg0: number): NFRule;
     format(arg0: number, arg1: StringBuilder, arg2: number, arg3: number): void;
-    format(arg0: number, arg1: StringBuilder, arg2: number, arg3: number): void;
     getName(): string;
     hashCode(): number;
     isFractionSet(): boolean;

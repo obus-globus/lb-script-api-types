@@ -12,28 +12,22 @@ export class LongLongImmutablePair extends Object implements LongLongPair, Seria
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongLongPair;
-    first(arg0: number): LongLongPair;
     firstLong(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongLongPair;
-    key(arg0: number): LongLongPair;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongLongPair;
     left(arg0: number): LongLongPair;
     leftLong(): number;
     right(): number;
     right(arg0: number): LongLongPair;
-    right(arg0: number): LongLongPair;
     rightLong(): number;
     second(): number;
-    second(arg0: number): LongLongPair;
     second(arg0: number): LongLongPair;
     secondLong(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): LongLongPair;
     value(arg0: number): LongLongPair;
     valueLong(): number;
 }

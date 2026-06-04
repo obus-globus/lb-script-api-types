@@ -30,8 +30,6 @@ export class WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype extends
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isEnumerable(): boolean;
-    isGetter(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

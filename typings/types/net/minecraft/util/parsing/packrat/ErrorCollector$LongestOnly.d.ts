@@ -15,5 +15,4 @@ export class ErrorCollector$LongestOnly<S extends Object | number | string | boo
     finish(finalCursor: number): void;
     store(cursor: number, reason: Object): void;
     store(cursor: number, suggestions: SuggestionSupplier<S>, reason: Object): void;
-    store(cursor: number, reason: Object): void;
 }

@@ -21,7 +21,6 @@ export class DensityFunctions$BlendOffset extends Enum<DensityFunctions$BlendOff
     codec(): KeyDispatchDataCodec<DensityFunction>;
     compute(context: DensityFunction$FunctionContext): number;
     fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
-    fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
     minValue(): number;

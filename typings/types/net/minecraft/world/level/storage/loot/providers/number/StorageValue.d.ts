@@ -15,7 +15,6 @@ export class StorageValue extends Record implements NumberProvider {
     equals(o: Object | null): boolean;
     getFloat(context: LootContext): number;
     getInt(context: LootContext): number;
-    getInt(context: LootContext): number;
     // private getNumericTag(context: LootContext, _default: Number): Number;
     hashCode(): number;
     path(): NbtPathArgument$NbtPath;

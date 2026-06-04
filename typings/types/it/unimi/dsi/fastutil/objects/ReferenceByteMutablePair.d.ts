@@ -14,17 +14,12 @@ export class ReferenceByteMutablePair<K extends Object | number | string | boole
     right(): number;
     right(arg0: number): ReferenceBytePair<K>;
     right(arg0: number): ReferenceByteMutablePair<K>;
-    right(): number;
-    right(arg0: number): ReferenceBytePair<K>;
-    right(arg0: number): ReferenceBytePair<K>;
     rightByte(): number;
     second(): number;
-    second(arg0: number): ReferenceBytePair<K>;
     second(arg0: number): ReferenceBytePair<K>;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceBytePair<K>;
     value(arg0: number): ReferenceBytePair<K>;
     valueByte(): number;
 }

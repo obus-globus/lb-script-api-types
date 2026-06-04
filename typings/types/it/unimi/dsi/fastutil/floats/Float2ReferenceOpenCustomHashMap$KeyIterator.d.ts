@@ -7,8 +7,6 @@ export class Float2ReferenceOpenCustomHashMap$KeyIterator extends Float2Referenc
     constructor(null_: Float2ReferenceOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

@@ -17,7 +17,6 @@ export class Char2BooleanFunctions$UnmodifiableFunction extends AbstractChar2Boo
     getOrDefault(arg0: string, arg1: boolean): boolean;
     hashCode(): number;
     put(arg0: string, arg1: boolean): boolean;
-    put(arg0: string, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: string): boolean;
     size(): number;

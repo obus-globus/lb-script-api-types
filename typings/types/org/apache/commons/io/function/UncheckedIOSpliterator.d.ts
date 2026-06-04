@@ -17,12 +17,8 @@ export class UncheckedIOSpliterator<T extends Object | number | string | boolean
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
     getComparator(): (param0: T) => kotlin.Boolean;
     getExactSizeIfKnown(): number;
-    getExactSizeIfKnown(): number;
-    hasCharacteristics(arg0: number): boolean;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: T) => void): boolean;
     trySplit(): Spliterator<T>;

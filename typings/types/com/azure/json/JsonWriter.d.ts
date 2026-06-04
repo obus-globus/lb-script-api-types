@@ -11,18 +11,12 @@ export abstract class JsonWriter extends Object implements Closeable {
     getWriteContext(): JsonWriteContext;
     writeArray(arg0: T[], arg1: (param0: JsonWriter, param1: T) => void): JsonWriter;
     writeArray(arg0: T[], arg1: (param0: JsonWriter, param1: T) => void, arg2: boolean): JsonWriter;
-    writeArray(arg0: T[], arg1: (param0: JsonWriter, param1: T) => void): JsonWriter;
-    writeArray(arg0: T[], arg1: (param0: JsonWriter, param1: T) => void, arg2: boolean): JsonWriter;
-    writeArrayField(arg0: string, arg1: T[], arg2: (param0: JsonWriter, param1: T) => void): JsonWriter;
-    writeArrayField(arg0: string, arg1: T[], arg2: (param0: JsonWriter, param1: T) => void, arg3: boolean): JsonWriter;
     writeArrayField(arg0: string, arg1: T[], arg2: (param0: JsonWriter, param1: T) => void): JsonWriter;
     writeArrayField(arg0: string, arg1: T[], arg2: (param0: JsonWriter, param1: T) => void, arg3: boolean): JsonWriter;
     // private writeArrayInternal(arg0: T[], arg1: (param0: JsonWriter, param1: T) => void, arg2: string, arg3: boolean): JsonWriter;
     writeBinary(arg0: number[]): JsonWriter;
     writeBinaryField(arg0: string, arg1: number[]): JsonWriter;
     writeBoolean(arg0: boolean): JsonWriter;
-    writeBoolean(arg0: boolean): JsonWriter;
-    writeBooleanField(arg0: string, arg1: boolean): JsonWriter;
     writeBooleanField(arg0: string, arg1: boolean): JsonWriter;
     writeDouble(arg0: number): JsonWriter;
     writeDoubleField(arg0: string, arg1: number): JsonWriter;

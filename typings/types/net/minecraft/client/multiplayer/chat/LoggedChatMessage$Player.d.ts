@@ -31,7 +31,6 @@ export class LoggedChatMessage$Player extends Record implements LoggedChatMessag
     toContentComponent(): Component;
     toHeadingComponent(): Component;
     toNarrationComponent(): Component;
-    toNarrationComponent(): Component;
     toString(): string;
     trustLevel(): ChatTrustLevel;
     type(): LoggedChatEvent$Type;

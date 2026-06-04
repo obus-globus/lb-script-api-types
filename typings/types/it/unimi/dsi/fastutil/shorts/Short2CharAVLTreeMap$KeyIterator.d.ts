@@ -4,12 +4,10 @@ export class Short2CharAVLTreeMap$KeyIterator extends Short2CharAVLTreeMap$TreeI
     constructor(null_: Short2CharAVLTreeMap$KeyIterator)
     constructor(null_: Short2CharAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextShort(): number;
     previous(): number;
     previousShort(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

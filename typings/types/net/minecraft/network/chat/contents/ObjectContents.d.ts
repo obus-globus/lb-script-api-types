@@ -21,10 +21,7 @@ export class ObjectContents extends Record implements ComponentContents {
     fallback(): Optional<Component>;
     hashCode(): number;
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
-    resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
     toString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
     visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
     visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

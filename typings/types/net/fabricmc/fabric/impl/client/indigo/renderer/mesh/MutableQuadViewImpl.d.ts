@@ -42,7 +42,6 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     color(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     color(arg0: number): number;
     color(arg0: number, arg1: number): MutableQuadViewImpl;
-    color(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     copyFrom(arg0: QuadView): MutableQuadViewImpl;
     cullFace(): Direction;
     cullFace(arg0: Direction): MutableQuadViewImpl;
@@ -60,7 +59,6 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     lightmap(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     lightmap(arg0: number): number;
     lightmap(arg0: number, arg1: number): MutableQuadViewImpl;
-    lightmap(arg0: number, arg1: number, arg2: number, arg3: number): QuadEmitter;
     materialBake(arg0: Material$Baked, arg1: number): QuadEmitter;
     minLightmap(arg0: number): QuadEmitter;
     multiplyColor(arg0: number): QuadEmitter;
@@ -69,8 +67,6 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     normal(arg0: number, arg1: Vector3f): QuadEmitter;
     normal(arg0: number, arg1: Vector3fc): QuadEmitter;
     normal(arg0: number, arg1: number, arg2: number, arg3: number): MutableQuadViewImpl;
-    normal(arg0: number, arg1: Vector3f): QuadEmitter;
-    normal(arg0: number, arg1: Vector3fc): QuadEmitter;
     normalFlags(): number;
     normalFlags(arg0: number): void;
     popTransform(): void;
@@ -78,8 +74,6 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     pos(arg0: number, arg1: Vector3f): QuadEmitter;
     pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     pos(arg0: number, arg1: number, arg2: number, arg3: number): MutableQuadViewImpl;
-    pos(arg0: number, arg1: Vector3f): QuadEmitter;
-    pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     postMaterialBake(arg0: Material$Baked): QuadEmitter;
     pushTransform(arg0: (param0: MutableQuadView) => kotlin.Boolean): void;
     shadeMode(): ShadeMode;
@@ -95,7 +89,5 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     uv(arg0: number, arg1: Vector2f): QuadEmitter;
     uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uv(arg0: number, arg1: number, arg2: number): MutableQuadViewImpl;
-    uv(arg0: number, arg1: Vector2f): QuadEmitter;
-    uv(arg0: number, arg1: Vector2fc): QuadEmitter;
     uvUnitSquare(): MutableQuadView;
 }

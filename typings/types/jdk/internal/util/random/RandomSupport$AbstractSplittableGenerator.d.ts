@@ -26,7 +26,6 @@ export abstract class RandomSupport$AbstractSplittableGenerator extends RandomSu
     rngs(arg0: number): Stream<RandomGenerator>;
     split(): RandomGenerator$SplittableGenerator;
     splits(): Stream<RandomGenerator$SplittableGenerator>;
-    splits(): Stream<RandomGenerator$SplittableGenerator>;
     splits(arg0: RandomGenerator$SplittableGenerator): Stream<RandomGenerator$SplittableGenerator>;
     splits(arg0: number): Stream<RandomGenerator$SplittableGenerator>;
     splits(arg0: number, arg1: RandomGenerator$SplittableGenerator): Stream<RandomGenerator$SplittableGenerator>;

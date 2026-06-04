@@ -12,7 +12,6 @@ export class BinIO$DoubleDataNioInputWrapper extends Object implements DoubleIte
     // private byteBuffer: ByteBuffer;
     // private channel: ReadableByteChannel;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

@@ -7,7 +7,7 @@ export class ModuleCategory extends Object implements Tagged {
     static of(paramarg0: string): Tagged;
     constructor(tag: string)
     /**
-     * @deprecated For script compatibility only. Use choiceName instead
+     * @deprecated For script compatibility only. Use choiceName instead Use `choiceName`.
      */
     readonly readableName: string;
     readonly tag: string;

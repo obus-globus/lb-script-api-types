@@ -7,7 +7,6 @@ export class Float2LongOpenHashMap$ValueIterator extends Float2LongOpenHashMap$M
     constructor(null_: Float2LongOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextLong(): number;
     skip(arg0: number): number;

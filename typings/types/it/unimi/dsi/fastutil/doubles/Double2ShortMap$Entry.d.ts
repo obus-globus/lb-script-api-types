@@ -6,5 +6,4 @@ export interface Double2ShortMap$Entry extends Object, Map$Entry<number, number>
     getDoubleKey(): number;
     getShortValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

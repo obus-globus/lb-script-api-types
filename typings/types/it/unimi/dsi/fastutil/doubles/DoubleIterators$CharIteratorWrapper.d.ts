@@ -8,15 +8,9 @@ export class DoubleIterators$CharIteratorWrapper extends Object implements Doubl
     constructor(arg0: CharIterator)
     // private iterator: CharIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextDouble(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

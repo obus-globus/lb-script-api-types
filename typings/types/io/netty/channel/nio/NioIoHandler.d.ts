@@ -30,12 +30,10 @@ export class NioIoHandler extends Object implements IoHandler {
     // private unwrappedSelector: Selector;
     // private wakenUp: AtomicBoolean;
     destroy(): void;
-    destroy(): void;
     initialize(): void;
     isCompatible(arg0: Class<IoHandle>): boolean;
     numRegistered(): number;
     // private openSelector(): NioIoHandler$SelectorTuple;
-    prepareToDestroy(): void;
     prepareToDestroy(): void;
     // private processSelectedKey(arg0: SelectionKey): void;
     // private processSelectedKeys(): number;

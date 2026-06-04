@@ -9,8 +9,6 @@ export class AbstractChar2FloatSortedMap$ValuesIterator extends Object implement
     constructor(arg0: ObjectBidirectionalIterator<Char2FloatMap$Entry>)
     // private i: ObjectBidirectionalIterator<Char2FloatMap$Entry>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

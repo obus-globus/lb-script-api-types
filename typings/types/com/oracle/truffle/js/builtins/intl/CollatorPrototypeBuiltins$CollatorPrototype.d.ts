@@ -29,7 +29,6 @@ export class CollatorPrototypeBuiltins$CollatorPrototype extends Enum<CollatorPr
     isEnabled(): boolean;
     isEnumerable(): boolean;
     isGetter(): boolean;
-    isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;

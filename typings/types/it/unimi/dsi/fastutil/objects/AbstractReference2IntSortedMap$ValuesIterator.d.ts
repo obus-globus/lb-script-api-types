@@ -8,7 +8,6 @@ export class AbstractReference2IntSortedMap$ValuesIterator<K extends Object | nu
     constructor(arg0: ObjectBidirectionalIterator<Reference2IntMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2IntMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

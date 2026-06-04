@@ -12,6 +12,5 @@ export class Counters$BigIntegerCounter extends Object implements Counters$Count
     hashCode(): number;
     increment(): void;
     reset(): void;
-    reset(): void;
     toString(): string;
 }

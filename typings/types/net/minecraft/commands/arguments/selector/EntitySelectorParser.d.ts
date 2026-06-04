@@ -82,7 +82,6 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     fillSuggestions(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private finalizePredicates(): void;
     getCustomFlag(arg0: Identifier): boolean;
-    getCustomFlag(arg0: Identifier): boolean;
     getDeltaX(): number;
     getDeltaY(): number;
     getDeltaZ(): number;
@@ -115,7 +114,6 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     parseNameOrUUID(): void;
     parseOptions(): void;
     parseSelector(): void;
-    setCustomFlag(arg0: Identifier, arg1: boolean): void;
     setCustomFlag(arg0: Identifier, arg1: boolean): void;
     setDeltaX(deltaX: number): void;
     setDeltaY(deltaY: number): void;

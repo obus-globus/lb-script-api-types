@@ -27,5 +27,4 @@ export class FishingRodHookedTrigger$TriggerInstance extends Record implements S
     rod(): Optional<ItemPredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

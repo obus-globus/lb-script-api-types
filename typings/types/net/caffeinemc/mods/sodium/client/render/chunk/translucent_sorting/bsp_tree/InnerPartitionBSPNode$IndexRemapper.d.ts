@@ -9,10 +9,6 @@ export class InnerPartitionBSPNode$IndexRemapper extends Object implements IntCo
     // private indexMap: number[];
     // private newIndexes: (Object | null)[];
     accept(arg0: number): void;
-    accept(arg0: number): void;
-    accept(arg0: number): void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
     hasFixedOffset(): boolean;
 }

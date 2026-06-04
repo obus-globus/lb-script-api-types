@@ -9,6 +9,5 @@ export class FilteringStorage$FilteringStorageView extends Object implements Sto
     getCapacity(): number;
     getResource<T extends Object | number | string | boolean>(): T;
     getUnderlyingView(): StorageView<T>;
-    getUnderlyingView(): StorageView<T>;
     isResourceBlank(): boolean;
 }

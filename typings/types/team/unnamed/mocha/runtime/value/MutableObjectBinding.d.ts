@@ -15,7 +15,6 @@ export class MutableObjectBinding extends Object implements ObjectValue {
     get(arg0: string): Value;
     getProperty(arg0: string): ObjectProperty;
     set(arg0: string, arg1: Value): boolean;
-    set(arg0: string, arg1: Value): boolean;
     setAllFrom(arg0: MutableObjectBinding): void;
     setFunction(arg0: string, arg1: ObjectValue$DoubleFunction1): void;
     setFunction(arg0: string, arg1: ObjectValue$DoubleFunction2): void;

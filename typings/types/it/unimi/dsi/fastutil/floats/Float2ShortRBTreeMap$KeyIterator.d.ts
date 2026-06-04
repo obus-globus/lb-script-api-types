@@ -4,12 +4,10 @@ export class Float2ShortRBTreeMap$KeyIterator extends Float2ShortRBTreeMap$TreeI
     constructor(null_: Float2ShortRBTreeMap$KeyIterator)
     constructor(null_: Float2ShortRBTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

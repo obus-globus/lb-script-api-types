@@ -5,17 +5,14 @@ export interface IntObjectPair<V extends Object | number | string | boolean> ext
     first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     first(): number;
     first(arg0: number): IntObjectPair<V>;
-    first(arg0: number): IntObjectPair<V>;
     firstInt(): number;
     key<L extends Object | number | string | boolean>(): L;
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     key(): number;
     key(arg0: number): IntObjectPair<V>;
-    key(arg0: number): IntObjectPair<V>;
     keyInt(): number;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left(): number;
-    left(arg0: number): IntObjectPair<V>;
     left(arg0: number): IntObjectPair<V>;
     leftInt(): number;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;

@@ -7,7 +7,6 @@ export interface BooleanStack extends Stack<boolean>, Object{
     pop(): boolean;
     popBoolean(): boolean;
     push(arg0: boolean): void;
-    push(arg0: boolean): void;
     top<K extends Object | number | string | boolean>(): K;
     top(): boolean;
     topBoolean(): boolean;

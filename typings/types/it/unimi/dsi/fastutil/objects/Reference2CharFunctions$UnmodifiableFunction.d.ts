@@ -13,9 +13,7 @@ export class Reference2CharFunctions$UnmodifiableFunction<K extends Object | num
     get(arg0: Object): string;
     getChar(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
-    getOrDefault(arg0: Object, arg1: string): string;
     hashCode(): number;
-    put(arg0: K, arg1: string): string;
     put(arg0: K, arg1: string): string;
     remove(arg0: Object): string;
     removeChar(arg0: Object): string;

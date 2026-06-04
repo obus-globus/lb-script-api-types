@@ -21,11 +21,9 @@ export class RecipeRewriter1_21_2$FurnaceRecipe extends Record implements Recipe
     equals(arg0: Object | null): boolean;
     experience(): number;
     group(): number;
-    group(): number;
     hashCode(): number;
     identifier(): string;
     index(): number;
-    ingredient(): Item[];
     ingredient(): Item[];
     ingredients(): Item[][];
     recipeDisplayId(): number;

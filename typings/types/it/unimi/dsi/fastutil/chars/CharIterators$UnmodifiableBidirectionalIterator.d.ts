@@ -8,7 +8,6 @@ export class CharIterators$UnmodifiableBidirectionalIterator extends Object impl
     // private i: CharBidirectionalIterator;
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

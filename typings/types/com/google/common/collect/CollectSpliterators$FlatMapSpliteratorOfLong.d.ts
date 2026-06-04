@@ -16,6 +16,5 @@ export class CollectSpliterators$FlatMapSpliteratorOfLong<InElementT extends Obj
     static SUBSIZED: number;
     constructor(prefix: Spliterator$OfLong, from: Spliterator<InElementT>, function_: (param0: InElementT) => Spliterator$OfLong, characteristics: number, estimatedSize: number)
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

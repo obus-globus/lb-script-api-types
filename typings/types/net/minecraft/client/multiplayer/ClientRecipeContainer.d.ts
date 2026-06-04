@@ -14,7 +14,6 @@ export class ClientRecipeContainer extends Object implements FabricRecipeAccess,
     // private synchronizedClientRecipes: SynchronizedRecipes;
     fabric_setSynchronizedClientRecipes(arg0: SynchronizedRecipes): void;
     getSynchronizedRecipes(): SynchronizedRecipes;
-    getSynchronizedRecipes(): SynchronizedRecipes;
     propertySet(id: ResourceKey<RecipePropertySet>): RecipePropertySet;
     stonecutterRecipes(): SelectableRecipe$SingleInputSet<StonecutterRecipe>;
 }

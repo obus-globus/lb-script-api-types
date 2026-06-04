@@ -27,8 +27,6 @@ export class TraceSplittingListener extends Object implements OptimizedTruffleRu
     onCompilationInvalidated(target: OptimizedCallTarget, source: Object, reason: CharSequence): void;
     onCompilationQueued(target: OptimizedCallTarget, tier: number): void;
     onCompilationSplit(callNode: OptimizedDirectCallNode): void;
-    onCompilationSplit(callNode: OptimizedDirectCallNode): void;
-    onCompilationSplitFailed(callNode: OptimizedDirectCallNode, reason: CharSequence): void;
     onCompilationSplitFailed(callNode: OptimizedDirectCallNode, reason: CharSequence): void;
     onCompilationStarted(target: OptimizedCallTarget, task: TruffleCompilationTask): void;
     onCompilationStarted(target: OptimizedCallTarget, task: AbstractCompilationTask): void;

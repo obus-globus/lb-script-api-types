@@ -10,6 +10,5 @@ export class ReflectiveFunction<T extends Object | number | string | boolean> ex
     // private object: Object;
     evaluate(arg0: ExecutionContext<T>): Value;
     evaluate(arg0: ExecutionContext<T>, arg1: Function$Arguments): Value;
-    evaluate(arg0: ExecutionContext<T>): Value;
     pure(): boolean;
 }

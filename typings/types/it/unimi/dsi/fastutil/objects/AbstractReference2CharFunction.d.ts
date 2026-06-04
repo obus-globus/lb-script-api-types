@@ -58,12 +58,8 @@ export abstract class AbstractReference2CharFunction<K extends Object | number |
     composeShort(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
-    defaultReturnValue(): string;
-    defaultReturnValue(arg0: string): void;
     get(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
-    getOrDefault(arg0: Object, arg1: string): string;
-    put(arg0: K, arg1: string): string;
     put(arg0: K, arg1: string): string;
     remove(arg0: Object): string;
     removeChar(arg0: Object): string;

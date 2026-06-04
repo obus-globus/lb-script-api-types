@@ -92,7 +92,6 @@ export abstract class AbstractChannel extends DefaultAttributeMap implements Cha
     unsafe(): Channel$Unsafe;
     validateFileRegion(arg0: DefaultFileRegion, arg1: number): void;
     voidPromise(): ChannelPromise;
-    voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;
     write(arg0: Object, arg1: ChannelPromise): ChannelFuture;
     writeAndFlush(arg0: Object): ChannelFuture;

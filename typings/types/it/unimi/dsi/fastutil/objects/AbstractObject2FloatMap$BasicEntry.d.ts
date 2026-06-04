@@ -11,7 +11,5 @@ export class AbstractObject2FloatMap$BasicEntry<K extends Object | number | stri
     getFloatValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

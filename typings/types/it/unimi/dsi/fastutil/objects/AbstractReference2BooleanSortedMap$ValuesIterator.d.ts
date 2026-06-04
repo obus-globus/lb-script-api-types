@@ -8,7 +8,6 @@ export class AbstractReference2BooleanSortedMap$ValuesIterator<K extends Object 
     constructor(arg0: ObjectBidirectionalIterator<Reference2BooleanMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2BooleanMap$Entry<K>>;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

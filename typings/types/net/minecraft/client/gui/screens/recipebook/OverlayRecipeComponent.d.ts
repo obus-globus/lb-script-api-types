@@ -36,11 +36,9 @@ export class OverlayRecipeComponent extends Object implements Renderable, GuiEve
     init(collection: RecipeCollection, context: ContextMap, isFiltering: boolean, buttonX: number, buttonY: number, centerX: number, centerY: number, buttonWidth: number): void;
     isFocused(): boolean;
     isMouseOver(mouseX: number, mouseY: number): boolean;
-    isMouseOver(mouseX: number, mouseY: number): boolean;
     isVisible(): boolean;
     keyPressed(event: KeyEvent): boolean;
     keyReleased(event: KeyEvent): boolean;
-    mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseMoved(x: number, y: number): void;

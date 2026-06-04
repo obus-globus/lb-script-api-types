@@ -13,9 +13,7 @@ export class JavaFunction<T extends Object | number | string | boolean> extends 
     // private evaluate(): void;
     evaluate(arg0: ExecutionContext<T>): Value;
     evaluate(arg0: ExecutionContext<T>, arg1: Function$Arguments): Value;
-    evaluate(arg0: ExecutionContext<T>): Value;
     method(): Method;
     object(): Object;
-    pure(): boolean;
     pure(): boolean;
 }

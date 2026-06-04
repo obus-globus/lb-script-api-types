@@ -6,7 +6,6 @@ export class Short2BooleanOpenHashMap$ValueIterator extends Short2BooleanOpenHas
     constructor(null_: Short2BooleanOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
     nextBoolean(): boolean;
     skip(arg0: number): number;

@@ -6,12 +6,10 @@ export class Float2FloatLinkedOpenHashMap$KeyIterator extends Float2FloatLinkedO
     constructor(null_: Float2FloatLinkedOpenHashMap$KeyIterator, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

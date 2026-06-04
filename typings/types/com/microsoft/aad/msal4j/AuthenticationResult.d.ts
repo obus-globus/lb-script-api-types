@@ -41,7 +41,6 @@ export class AuthenticationResult extends Object implements IAuthenticationResul
     idTokenObject(): IdToken;
     isPopAuthorization(): boolean;
     metadata(): AuthenticationResultMetadata;
-    metadata(): AuthenticationResultMetadata;
     refreshOn(): number;
     refreshToken(): string;
     scopes(): string;

@@ -9,7 +9,6 @@ export class ByteAVLTreeSet$SetIterator extends Object implements ByteListIterat
     // private next: ByteAVLTreeSet$Entry;
     // private prev: ByteAVLTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class ByteAVLTreeSet$SetIterator extends Object implements ByteListIterat
     previousEntry(): ByteAVLTreeSet$Entry;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

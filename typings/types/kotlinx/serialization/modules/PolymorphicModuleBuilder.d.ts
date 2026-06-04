@@ -9,8 +9,8 @@ export class PolymorphicModuleBuilder<Base extends Object | number | string | bo
     constructor(baseClass: KClass<Base>, baseSerializer: KSerializer<Base> | null)
     // private baseClass: KClass<Base>;
     // private baseSerializer: KSerializer<Base> | null;
-    // private defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null;
-    // private defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null;
+    // private defaultDeserializerProvider: ((param0: string | null) => DeserializationStrategy<Base> | null) | null;
+    // private defaultSerializerProvider: ((param0: Base) => SerializationStrategy<Base> | null) | null;
     // private subclasses: Pair<KClass<Base>, KSerializer<Base>>[];
     buildTo(builder: SerializersModuleBuilder): void;
     default(defaultSerializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;

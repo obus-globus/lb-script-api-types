@@ -11,7 +11,6 @@ export class BinIO$CharDataInputWrapper extends Object implements CharIterator {
     // private next: string;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;

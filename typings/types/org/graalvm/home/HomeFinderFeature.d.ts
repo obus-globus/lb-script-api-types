@@ -22,7 +22,6 @@ export class HomeFinderFeature extends Object implements Feature {
     afterHeapLayout(access: Feature$AfterHeapLayoutAccess): void;
     afterImageWrite(access: Feature$AfterImageWriteAccess): void;
     afterRegistration(access: Feature$AfterRegistrationAccess): void;
-    afterRegistration(access: Feature$AfterRegistrationAccess): void;
     beforeAnalysis(access: Feature$BeforeAnalysisAccess): void;
     beforeCompilation(access: Feature$BeforeCompilationAccess): void;
     beforeHeapLayout(access: Feature$BeforeHeapLayoutAccess): void;
@@ -32,9 +31,7 @@ export class HomeFinderFeature extends Object implements Feature {
     duringAnalysis(access: Feature$DuringAnalysisAccess): void;
     duringSetup(access: Feature$DuringSetupAccess): void;
     getDescription(): string;
-    getDescription(): string;
     getRequiredFeatures(): Class<Feature>[];
-    getURL(): string;
     getURL(): string;
     isInConfiguration(access: Feature$IsInConfigurationAccess): boolean;
     onAnalysisExit(access: Feature$OnAnalysisExitAccess): void;

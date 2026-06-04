@@ -8,15 +8,9 @@ export class LongIterators$IntIteratorWrapper extends Object implements LongIter
     constructor(arg0: IntIterator)
     // private iterator: IntIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextLong(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

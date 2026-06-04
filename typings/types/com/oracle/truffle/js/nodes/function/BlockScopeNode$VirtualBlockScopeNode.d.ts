@@ -38,6 +38,5 @@ export class BlockScopeNode$VirtualBlockScopeNode extends BlockScopeNode impleme
     isFunctionBlock(): boolean;
     resetState(frame: VirtualFrame, stateSlot: number): void;
     resume(frame: VirtualFrame, stateSlot: number): Object;
-    resume(frame: VirtualFrame, stateSlot: number): Object;
     setBlockScope(frame: VirtualFrame, state: Object): void;
 }

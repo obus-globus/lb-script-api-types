@@ -25,7 +25,6 @@ export class Int2BooleanAVLTreeMap$Entry extends AbstractInt2BooleanMap$BasicEnt
     right(): Int2BooleanAVLTreeMap$Entry;
     right(arg0: Int2BooleanAVLTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Int2BooleanAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

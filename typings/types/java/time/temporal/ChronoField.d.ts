@@ -54,7 +54,6 @@ export class ChronoField extends Enum<ChronoField> implements TemporalField {
     checkValidValue(arg0: number): number;
     getBaseUnit(): TemporalUnit;
     getDisplayName(arg0: Locale): string;
-    getDisplayName(arg0: Locale): string;
     getFrom(arg0: TemporalAccessor): number;
     getRangeUnit(): TemporalUnit;
     isDateBased(): boolean;

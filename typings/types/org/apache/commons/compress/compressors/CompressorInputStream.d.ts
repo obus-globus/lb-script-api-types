@@ -4,7 +4,6 @@ export abstract class CompressorInputStream extends InputStream {
     constructor()
     readonly bytesRead: number;
     count(arg0: number): void;
-    count(arg0: number): void;
     getBytesRead(): number;
     getCount(): number;
     getUncompressedCount(): number;

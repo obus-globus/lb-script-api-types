@@ -16,17 +16,12 @@ export class ObjectIntMutablePair<K extends Object | number | string | boolean> 
     right(): number;
     right(arg0: number): ObjectIntPair<K>;
     right(arg0: number): ObjectIntMutablePair<K>;
-    right(): number;
-    right(arg0: number): ObjectIntPair<K>;
-    right(arg0: number): ObjectIntPair<K>;
     rightInt(): number;
     second(): number;
-    second(arg0: number): ObjectIntPair<K>;
     second(arg0: number): ObjectIntPair<K>;
     secondInt(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectIntPair<K>;
     value(arg0: number): ObjectIntPair<K>;
     valueInt(): number;
 }

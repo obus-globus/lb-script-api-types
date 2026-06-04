@@ -12,28 +12,22 @@ export class BooleanFloatImmutablePair extends Object implements BooleanFloatPai
     equals(arg0: Object | null): boolean;
     first(): boolean;
     first(arg0: boolean): BooleanFloatPair;
-    first(arg0: boolean): BooleanFloatPair;
     firstBoolean(): boolean;
     hashCode(): number;
     key(): boolean;
     key(arg0: boolean): BooleanFloatPair;
-    key(arg0: boolean): BooleanFloatPair;
     keyBoolean(): boolean;
     left(): boolean;
-    left(arg0: boolean): BooleanFloatPair;
     left(arg0: boolean): BooleanFloatPair;
     leftBoolean(): boolean;
     right(): number;
     right(arg0: number): BooleanFloatPair;
-    right(arg0: number): BooleanFloatPair;
     rightFloat(): number;
     second(): number;
-    second(arg0: number): BooleanFloatPair;
     second(arg0: number): BooleanFloatPair;
     secondFloat(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): BooleanFloatPair;
     value(arg0: number): BooleanFloatPair;
     valueFloat(): number;
 }

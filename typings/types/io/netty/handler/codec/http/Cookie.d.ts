@@ -20,7 +20,6 @@ export interface Cookie extends Cookie_2, Object{
     setDiscard(arg0: boolean): void;
     setMaxAge(arg0: number): void;
     setPorts(arg0: number[]): void;
-    setPorts(arg0: number[]): void;
     setVersion(arg0: number): void;
     version(): number;
 }

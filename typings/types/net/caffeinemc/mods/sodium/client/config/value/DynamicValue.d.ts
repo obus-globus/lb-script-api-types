@@ -18,7 +18,6 @@ export class DynamicValue<V extends Object | number | string | boolean> extends 
     allowReadingParentOption(arg0: Identifier): void;
     get(arg0: Config): V;
     getDependencies(): E[];
-    getDependencies(): E[];
     // private getReadType(arg0: Identifier): boolean;
     invalidateCache(): void;
     readBooleanOption(arg0: Identifier): boolean;

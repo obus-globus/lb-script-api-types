@@ -23,11 +23,6 @@ export class PrimitiveValueProfile extends ValueProfile {
     profile(value: boolean): boolean;
     profile(value: number): number;
     profile(value: string): string;
-    profile(value: number): number;
-    profile(value: number): number;
-    profile(value: number): number;
-    profile(value: number): number;
-    profile(value: number): number;
     reset(): void;
     // private slowPath(value: Object): void;
     toString(): string;

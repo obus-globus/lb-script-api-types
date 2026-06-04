@@ -29,7 +29,6 @@ export class ICU4JFeature extends Object implements Feature {
     afterImageWrite(access: Feature$AfterImageWriteAccess): void;
     afterRegistration(access: Feature$AfterRegistrationAccess): void;
     beforeAnalysis(access: Feature$BeforeAnalysisAccess): void;
-    beforeAnalysis(access: Feature$BeforeAnalysisAccess): void;
     beforeCompilation(access: Feature$BeforeCompilationAccess): void;
     beforeHeapLayout(access: Feature$BeforeHeapLayoutAccess): void;
     beforeImageWrite(access: Feature$BeforeImageWriteAccess): void;

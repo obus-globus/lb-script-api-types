@@ -43,12 +43,10 @@ export class InsightPerSource extends Object implements ContextsListener, LoadSo
     onContextCreated(context: TruffleContext): void;
     onContextResetLimits(context: TruffleContext): void;
     onLanguageContextCreate(context: TruffleContext, language: LanguageInfo): void;
-    onLanguageContextCreate(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextCreateFailed(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextCreated(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextDisposed(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextFinalized(context: TruffleContext, language: LanguageInfo): void;
-    onLanguageContextInitialize(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextInitialize(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextInitializeFailed(context: TruffleContext, language: LanguageInfo): void;
     onLanguageContextInitialized(context: TruffleContext, language: LanguageInfo): void;

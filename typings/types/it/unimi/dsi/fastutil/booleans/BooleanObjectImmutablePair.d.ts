@@ -13,15 +13,12 @@ export class BooleanObjectImmutablePair<V extends Object | number | string | boo
     equals(arg0: Object | null): boolean;
     first(): boolean;
     first(arg0: boolean): BooleanObjectPair<V>;
-    first(arg0: boolean): BooleanObjectPair<V>;
     firstBoolean(): boolean;
     hashCode(): number;
     key(): boolean;
     key(arg0: boolean): BooleanObjectPair<V>;
-    key(arg0: boolean): BooleanObjectPair<V>;
     keyBoolean(): boolean;
     left(): boolean;
-    left(arg0: boolean): BooleanObjectPair<V>;
     left(arg0: boolean): BooleanObjectPair<V>;
     leftBoolean(): boolean;
     right(): V;

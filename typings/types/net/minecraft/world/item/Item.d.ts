@@ -91,7 +91,6 @@ export class Item extends Object implements FabricItem, ItemExtensions, ItemVari
     getBarWidth(stack: ItemStack): number;
     getCraftingRemainder(arg0: ItemStack): ItemStackTemplate;
     getCraftingRemainder(): ItemStackTemplate;
-    getCraftingRemainder(arg0: ItemStack): ItemStackTemplate;
     getCreatorNamespace(arg0: ItemStack): string;
     getDefaultInstance(): ItemStack;
     getDefaultMaxStackSize(): number;

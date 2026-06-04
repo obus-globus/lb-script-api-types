@@ -35,5 +35,4 @@ export class LevelLightEngine extends Object implements LightEventListener {
     setLightEnabled(pos: ChunkPos, enable: boolean): void;
     updateSectionStatus(pos: BlockPos, sectionEmpty: boolean): void;
     updateSectionStatus(pos: SectionPos, sectionEmpty: boolean): void;
-    updateSectionStatus(pos: BlockPos, sectionEmpty: boolean): void;
 }

@@ -5,12 +5,10 @@ export class Double2BooleanLinkedOpenHashMap$ValueIterator extends Double2Boolea
     constructor(null_: Double2BooleanLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     next(): boolean;
     nextBoolean(): boolean;
     previous(): boolean;
     previousBoolean(): boolean;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
 }

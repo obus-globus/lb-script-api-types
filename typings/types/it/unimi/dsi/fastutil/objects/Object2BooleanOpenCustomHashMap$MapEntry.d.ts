@@ -24,21 +24,13 @@ export class Object2BooleanOpenCustomHashMap$MapEntry extends Object implements 
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, boolean>;
     right(): boolean;
     right(arg0: boolean): ObjectBooleanPair<K>;
-    right(arg0: boolean): ObjectBooleanPair<K>;
-    right(): boolean;
-    right(arg0: boolean): ObjectBooleanPair<K>;
-    right(arg0: boolean): ObjectBooleanPair<K>;
     rightBoolean(): boolean;
     second(): boolean;
     second(arg0: boolean): ObjectBooleanPair<K>;
-    second(arg0: boolean): ObjectBooleanPair<K>;
     secondBoolean(): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     setValue(arg0: boolean): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): ObjectBooleanPair<K>;
     value(arg0: boolean): ObjectBooleanPair<K>;
     valueBoolean(): boolean;
 }

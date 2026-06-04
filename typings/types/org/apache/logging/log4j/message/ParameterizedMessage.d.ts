@@ -30,7 +30,6 @@ export class ParameterizedMessage extends Object implements Message, StringBuild
     equals(object: Object | null): boolean;
     formatTo(buffer: StringBuilder): void;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

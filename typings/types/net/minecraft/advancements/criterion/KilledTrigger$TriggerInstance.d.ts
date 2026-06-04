@@ -42,5 +42,4 @@ export class KilledTrigger$TriggerInstance extends Record implements SimpleCrite
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

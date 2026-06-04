@@ -14,15 +14,12 @@ export class ReferenceDoubleImmutablePair<K extends Object | number | string | b
     left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceDoublePair<K>;
-    right(arg0: number): ReferenceDoublePair<K>;
     rightDouble(): number;
     second(): number;
-    second(arg0: number): ReferenceDoublePair<K>;
     second(arg0: number): ReferenceDoublePair<K>;
     secondDouble(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceDoublePair<K>;
     value(arg0: number): ReferenceDoublePair<K>;
     valueDouble(): number;
 }

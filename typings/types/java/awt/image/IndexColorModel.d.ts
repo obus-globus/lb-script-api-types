@@ -45,10 +45,8 @@ export class IndexColorModel extends ColorModel {
     getComponents(arg0: Object, arg1: number[], arg2: number): number[];
     getComponents(arg0: number, arg1: number[], arg2: number): number[];
     getDataElement(arg0: number[], arg1: number): number;
-    getDataElement(arg0: number[], arg1: number): number;
     getDataElements(arg0: number[], arg1: number, arg2: Object): Object;
     getDataElements(arg0: number, arg1: Object): Object;
-    getDataElements(arg0: number[], arg1: number, arg2: Object): Object;
     getGreen(arg0: Object): number;
     getGreen(arg0: number): number;
     getGreens(arg0: number[]): void;

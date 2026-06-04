@@ -9,7 +9,6 @@ export class SemanticVersionImpl extends Object implements SemanticVersion {
     constructor(arg0: string, arg1: boolean)
     // private parent: SemanticVersion;
     compareTo(arg0: SemanticVersion): number;
-    compareTo(arg0: SemanticVersion): number;
     compareTo(arg0: Version): number;
     equals(arg0: Object | null): boolean;
     equalsComponentsExactly(arg0: SemanticVersionImpl): boolean;

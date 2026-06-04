@@ -8,7 +8,6 @@ export class AbstractDouble2BooleanSortedMap$ValuesIterator extends Object imple
     constructor(arg0: ObjectBidirectionalIterator<Double2BooleanMap$Entry>)
     // private i: ObjectBidirectionalIterator<Double2BooleanMap$Entry>;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

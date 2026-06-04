@@ -12,7 +12,6 @@ export class LocalDate$Companion extends Object {
     // private serialVersionUID: number;
     Format(block: (param0: DateTimeFormatBuilder$WithDate) => void): DateTimeFormat<LocalDate>;
     fromEpochDays(epochDays: number): LocalDate;
-    fromEpochDays(epochDays: number): LocalDate;
     parse(input: CharSequence, format: DateTimeFormat<LocalDate>): LocalDate;
     parse(isoString: string): LocalDate;
     serializer(): KSerializer<LocalDate>;

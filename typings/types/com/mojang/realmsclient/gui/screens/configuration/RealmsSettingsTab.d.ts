@@ -26,8 +26,6 @@ export class RealmsSettingsTab extends GridLayoutTab implements RealmsConfigurat
     // private applyRegionPreferenceSelection(preference: RegionSelectionPreference, region: RealmsRegion): void;
     // private isRealmNameValid(): boolean;
     onDeselected(serverData: RealmsServer): void;
-    onDeselected(serverData: RealmsServer): void;
-    onSelected(serverData: RealmsServer): void;
     onSelected(serverData: RealmsServer): void;
     // private openPreferenceSelector(): void;
     save(): void;

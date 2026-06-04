@@ -23,21 +23,13 @@ export class Reference2CharArrayMap$MapEntry extends Object implements Reference
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, string>;
     right(): string;
     right(arg0: string): ReferenceCharPair<K>;
-    right(arg0: string): ReferenceCharPair<K>;
-    right(): string;
-    right(arg0: string): ReferenceCharPair<K>;
-    right(arg0: string): ReferenceCharPair<K>;
     rightChar(): string;
     second(): string;
     second(arg0: string): ReferenceCharPair<K>;
-    second(arg0: string): ReferenceCharPair<K>;
     secondChar(): string;
-    setValue(arg0: string): string;
-    setValue(arg0: string): string;
     setValue(arg0: string): string;
     toString(): string;
     value(): string;
-    value(arg0: string): ReferenceCharPair<K>;
     value(arg0: string): ReferenceCharPair<K>;
     valueChar(): string;
 }

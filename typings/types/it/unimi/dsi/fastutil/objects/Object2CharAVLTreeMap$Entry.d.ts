@@ -25,7 +25,6 @@ export class Object2CharAVLTreeMap$Entry<K extends Object | number | string | bo
     right(): Object2CharAVLTreeMap$Entry<K>;
     right(arg0: Object2CharAVLTreeMap$Entry<K>): void;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
     succ(): boolean;
     succ(arg0: Object2CharAVLTreeMap$Entry<K>): void;
     succ(arg0: boolean): void;

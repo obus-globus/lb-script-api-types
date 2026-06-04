@@ -1,6 +1,7 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { AtomicArray } from '../../../kotlinx/atomicfu/AtomicArray.d.ts'
 import type { BufferedChannel } from '../../../kotlinx/coroutines/channels/BufferedChannel.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
 export class ChannelSegment<E extends Object | number | string | boolean> extends Segment<ChannelSegment<E>> {

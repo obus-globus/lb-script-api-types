@@ -7,7 +7,6 @@ export class Char2DoubleOpenHashMap$KeyIterator extends Char2DoubleOpenHashMap$M
     constructor(null_: Char2DoubleOpenHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     nextChar(): string;

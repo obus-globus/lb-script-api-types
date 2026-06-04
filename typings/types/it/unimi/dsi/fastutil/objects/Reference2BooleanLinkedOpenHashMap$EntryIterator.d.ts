@@ -13,6 +13,5 @@ export class Reference2BooleanLinkedOpenHashMap$EntryIterator extends Reference2
     next(): Reference2BooleanLinkedOpenHashMap$MapEntry;
     previous(): Reference2BooleanLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

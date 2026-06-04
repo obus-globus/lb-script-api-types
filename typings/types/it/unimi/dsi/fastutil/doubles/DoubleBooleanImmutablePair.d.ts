@@ -12,28 +12,22 @@ export class DoubleBooleanImmutablePair extends Object implements DoubleBooleanP
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleBooleanPair;
-    first(arg0: number): DoubleBooleanPair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleBooleanPair;
-    key(arg0: number): DoubleBooleanPair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleBooleanPair;
     left(arg0: number): DoubleBooleanPair;
     leftDouble(): number;
     right(): boolean;
     right(arg0: boolean): DoubleBooleanPair;
-    right(arg0: boolean): DoubleBooleanPair;
     rightBoolean(): boolean;
     second(): boolean;
-    second(arg0: boolean): DoubleBooleanPair;
     second(arg0: boolean): DoubleBooleanPair;
     secondBoolean(): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): DoubleBooleanPair;
     value(arg0: boolean): DoubleBooleanPair;
     valueBoolean(): boolean;
 }

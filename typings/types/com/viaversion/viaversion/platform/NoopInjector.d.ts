@@ -9,7 +9,6 @@ export class NoopInjector extends Object implements ViaInjector {
     getEncoderName(): string;
     getServerProtocolVersion(): ProtocolVersion;
     getServerProtocolVersions(): ProtocolVersion[];
-    getServerProtocolVersions(): ProtocolVersion[];
     inject(): void;
     lateProtocolVersionSetting(): boolean;
     uninject(): void;

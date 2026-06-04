@@ -20,7 +20,6 @@ export abstract class AbstractConstantArray extends DynamicArray {
     firstElementIndex(object: JSDynamicObject): number;
     getElement(object: JSDynamicObject, index: number): Object;
     getElementInBounds(object: JSDynamicObject, index: number): Object;
-    getElementInBounds(object: JSDynamicObject, index: number): Object;
     hasHoles(object: JSDynamicObject): boolean;
     isInBoundsFast(object: JSDynamicObject, index: number): boolean;
     lastElementIndex(object: JSDynamicObject): number;

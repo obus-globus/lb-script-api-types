@@ -12,14 +12,11 @@ export class CoreLocations$BooleanLocationDecorator extends CoreLocations$Primit
     get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     getBoolean(store: DynamicObject, shape: Shape): boolean;
-    getBoolean(store: DynamicObject, shape: Shape): boolean;
     getBoolean(store: DynamicObject, guard: boolean): boolean;
-    getType(): Class<boolean>;
     getType(): Class<boolean>;
     set(store: DynamicObject, value: Object, shape: Shape): void;
     set(store: DynamicObject, value: Object, oldShape: Shape, newShape: Shape): void;
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
-    setBoolean(store: DynamicObject, value: boolean, shape: Shape): void;
     setBoolean(store: DynamicObject, value: boolean, shape: Shape): void;
     setBoolean(store: DynamicObject, value: boolean, guard: boolean, init: boolean): void;
 }

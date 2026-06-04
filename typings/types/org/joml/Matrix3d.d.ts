@@ -67,8 +67,6 @@ export class Matrix3d extends Object implements Externalizable, Cloneable, Matri
     get(arg0: FloatBuffer): FloatBuffer;
     get(arg0: number[]): number[];
     get(arg0: number[], arg1: number): number[];
-    get(arg0: number[]): number[];
-    get(arg0: number[], arg1: number): number[];
     get(arg0: number, arg1: ByteBuffer): ByteBuffer;
     get(arg0: number, arg1: DoubleBuffer): DoubleBuffer;
     get(arg0: number, arg1: FloatBuffer): FloatBuffer;
@@ -325,8 +323,6 @@ export class Matrix3d extends Object implements Externalizable, Cloneable, Matri
     set(arg0: DoubleBuffer): Matrix3d;
     set(arg0: FloatBuffer): Matrix3d;
     set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): Matrix3d;
-    set(arg0: number[]): Matrix3d;
-    set(arg0: number[], arg1: number): Matrix3d;
     set(arg0: number[]): Matrix3d;
     set(arg0: number[], arg1: number): Matrix3d;
     set(arg0: number, arg1: ByteBuffer): Matrix3d;

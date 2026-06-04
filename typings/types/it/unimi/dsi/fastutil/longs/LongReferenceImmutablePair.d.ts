@@ -11,15 +11,12 @@ export class LongReferenceImmutablePair<V extends Object | number | string | boo
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongReferencePair<V>;
-    first(arg0: number): LongReferencePair<V>;
     firstLong(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongReferencePair<V>;
-    key(arg0: number): LongReferencePair<V>;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongReferencePair<V>;
     left(arg0: number): LongReferencePair<V>;
     leftLong(): number;
     right(): V;

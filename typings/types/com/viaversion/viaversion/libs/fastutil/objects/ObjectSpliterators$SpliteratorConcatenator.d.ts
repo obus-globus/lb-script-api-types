@@ -25,7 +25,6 @@ export class ObjectSpliterators$SpliteratorConcatenator<K extends Object | numbe
     getComparator(): (param0: K) => kotlin.Boolean;
     // private recomputeRemaining(): number;
     skip(arg0: number): number;
-    skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;
 }

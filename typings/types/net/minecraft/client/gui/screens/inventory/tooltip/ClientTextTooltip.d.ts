@@ -13,7 +13,6 @@ export class ClientTextTooltip extends Object implements ClientTooltipComponent 
     // private text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
     extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;
     extractText(graphics: GuiGraphicsExtractor, font: Font, x: number, y: number): void;
-    extractText(graphics: GuiGraphicsExtractor, font: Font, x: number, y: number): void;
     getHeight(font: Font): number;
     getWidth(font: Font): number;
     showTooltipWithItemInHand(): boolean;

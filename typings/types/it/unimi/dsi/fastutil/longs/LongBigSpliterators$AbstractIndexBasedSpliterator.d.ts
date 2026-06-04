@@ -18,15 +18,11 @@ export abstract class LongBigSpliterators$AbstractIndexBasedSpliterator extends 
     computeSplitPoint(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     get(arg0: number): number;
     getMaxPos(): number;
     makeForSplit(arg0: number, arg1: number): LongSpliterator;
     skip(arg0: number): number;
     // private splitPointCheck(arg0: number, arg1: number): void;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): LongSpliterator;
 }

@@ -86,8 +86,6 @@ export abstract class NumberFormat extends UFormat {
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: number): string;
-    format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     getContext(arg0: DisplayContext$Type): DisplayContext;
     getCurrency(): Currency;
     getEffectiveCurrency(): Currency;

@@ -33,7 +33,6 @@ export class ChronoUnit extends Enum<ChronoUnit> implements TemporalUnit {
     isDateBased(): boolean;
     isDurationEstimated(): boolean;
     isSupportedBy(arg0: Temporal): boolean;
-    isSupportedBy(arg0: Temporal): boolean;
     isTimeBased(): boolean;
     toString(): string;
     name(): "NANOS" | "MICROS" | "MILLIS" | "SECONDS" | "MINUTES" | "HOURS" | "HALF_DAYS" | "DAYS" | "WEEKS" | "MONTHS" | "YEARS" | "DECADES" | "CENTURIES" | "MILLENNIA" | "ERAS" | "FOREVER";

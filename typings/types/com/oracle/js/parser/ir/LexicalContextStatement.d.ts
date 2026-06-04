@@ -10,6 +10,4 @@ export abstract class LexicalContextStatement extends Statement implements Lexic
     constructor(lineNumber: number, token: number, finish: number)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
-    accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
 }

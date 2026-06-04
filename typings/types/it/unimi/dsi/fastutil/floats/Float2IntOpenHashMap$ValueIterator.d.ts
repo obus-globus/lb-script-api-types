@@ -7,7 +7,6 @@ export class Float2IntOpenHashMap$ValueIterator extends Float2IntOpenHashMap$Map
     constructor(null_: Float2IntOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextInt(): number;
     skip(arg0: number): number;

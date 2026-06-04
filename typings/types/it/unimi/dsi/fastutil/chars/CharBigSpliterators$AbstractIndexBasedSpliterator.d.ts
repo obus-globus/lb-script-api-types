@@ -17,13 +17,11 @@ export abstract class CharBigSpliterators$AbstractIndexBasedSpliterator extends 
     computeSplitPoint(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     get(arg0: number): string;
     getMaxPos(): number;
     makeForSplit(arg0: number, arg1: number): CharSpliterator;
     skip(arg0: number): number;
     // private splitPointCheck(arg0: number, arg1: number): void;
-    tryAdvance(arg0: (param0: string) => void): boolean;
     tryAdvance(arg0: (param0: string) => void): boolean;
     trySplit(): CharSpliterator;
 }

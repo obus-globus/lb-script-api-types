@@ -11,5 +11,4 @@ export class DebugEntryDetailedMemory extends Object implements DebugScreenEntry
     category(): DebugEntryCategory;
     display(displayer: DebugScreenDisplayer, serverOrClientLevel: Level, clientChunk: LevelChunk, serverChunk: LevelChunk): void;
     isAllowed(reducedDebugInfo: boolean): boolean;
-    isAllowed(reducedDebugInfo: boolean): boolean;
 }

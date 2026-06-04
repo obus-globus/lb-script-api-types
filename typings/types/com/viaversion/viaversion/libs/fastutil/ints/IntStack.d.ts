@@ -7,7 +7,6 @@ export interface IntStack extends Stack<number>, Object{
     pop(): number;
     popInt(): number;
     push(arg0: number): void;
-    push(arg0: number): void;
     top<K extends Object | number | string | boolean>(): K;
     top(): number;
     topInt(): number;

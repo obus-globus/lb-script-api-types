@@ -9,5 +9,4 @@ export class IntegralPartSubstitution extends NFSubstitution {
     composeRuleValue(arg0: number, arg1: number): number;
     tokenChar(): string;
     transformNumber(arg0: number): number;
-    transformNumber(arg0: number): number;
 }

@@ -25,16 +25,6 @@ export class DiffBuilder<T extends Object | number | string | boolean> extends O
     append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
     append(arg0: string, arg1: string, arg2: string): DiffBuilder<T>;
     append(arg0: string, arg1: string[], arg2: string[]): DiffBuilder<T>;
-    append(arg0: string, arg1: number, arg2: number): DiffBuilder<T>;
-    append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
-    append(arg0: string, arg1: number, arg2: number): DiffBuilder<T>;
-    append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
-    append(arg0: string, arg1: number, arg2: number): DiffBuilder<T>;
-    append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
-    append(arg0: string, arg1: number, arg2: number): DiffBuilder<T>;
-    append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
-    append(arg0: string, arg1: number, arg2: number): DiffBuilder<T>;
-    append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
     append(arg0: string, arg1: Diff<Object>[]): DiffBuilder<T>;
     build(): Diff<Object>[];
     getLeft(): T;

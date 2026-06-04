@@ -24,15 +24,11 @@ export class TranslatedNode extends Record implements TextNode {
     fallback(): string;
     hashCode(): number;
     isDynamic(): boolean;
-    isDynamic(): boolean;
     key(): string;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: PlaceholderContext): Component;
-    toComponent(): Component;
-    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
-    toComponent(arg0: PlaceholderContext): Component;
     toString(): string;
     transform(arg0: NodeParser): TextNode;
 }

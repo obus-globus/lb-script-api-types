@@ -19,7 +19,6 @@ export class ObjectArrayPriorityQueue<K extends Object | number | string | boole
     // private firstIndexValid: boolean;
     // private size: number;
     changed(): void;
-    changed(): void;
     clear(): void;
     comparator(): (param0: K) => kotlin.Boolean;
     dequeue(): K;

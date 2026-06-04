@@ -8,6 +8,5 @@ export class SpaceProvider extends Object implements GlyphProvider {
     // private glyphs: Int2ObjectMap<EmptyGlyph>;
     close(): void;
     getGlyph(codepoint: number): UnbakedGlyph;
-    getGlyph(codepoint: number): UnbakedGlyph;
     getSupportedGlyphs(): (Object | null)[];
 }

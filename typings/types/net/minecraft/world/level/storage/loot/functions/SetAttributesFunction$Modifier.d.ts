@@ -28,5 +28,4 @@ export class SetAttributesFunction$Modifier extends Record implements LootContex
     slots(): EquipmentSlot[][];
     toString(): string;
     validate(context: ValidationContext): void;
-    validate(context: ValidationContext): void;
 }

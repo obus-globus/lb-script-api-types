@@ -14,5 +14,4 @@ export abstract class ObjectBigListIterators$AbstractIndexBasedBigIterator<K ext
     remove(): void;
     remove(arg0: number): void;
     skip(arg0: number): number;
-    skip(arg0: number): number;
 }

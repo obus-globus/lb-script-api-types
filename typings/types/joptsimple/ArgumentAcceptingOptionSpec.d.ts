@@ -36,5 +36,4 @@ export abstract class ArgumentAcceptingOptionSpec<V extends Object | number | st
     requiresArgument(): boolean;
     withValuesConvertedBy(arg0: ValueConverter<T>): ArgumentAcceptingOptionSpec<T>;
     withValuesSeparatedBy(arg0: string): ArgumentAcceptingOptionSpec<V>;
-    withValuesSeparatedBy(arg0: string): ArgumentAcceptingOptionSpec<V>;
 }

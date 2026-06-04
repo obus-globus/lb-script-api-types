@@ -193,7 +193,6 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     // private burnUndead(): void;
     canAttack(target: LivingEntity): boolean;
     canBeLeashed(): boolean;
-    canBeLeashed(): boolean;
     canDispenserEquipIntoSlot(slot: EquipmentSlot): boolean;
     canHaveALeashAttachedTo(entity: Entity): boolean;
     canHoldItem(itemStack: ItemStack): boolean;
@@ -237,10 +236,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: { [key in EquipmentSlot]: number }): void;
     equip(equipment: EquipmentTable, lootParams: LootParams): void;
     equip(lootTable: ResourceKey<LootTable>, dropChances: { [key in EquipmentSlot]: number }): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: { [key in EquipmentSlot]: number }): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: { [key in EquipmentSlot]: number }): void;
     equip(equipment: EquipmentTable): void;
-    equip(equipment: EquipmentTable, lootParams: LootParams): void;
     equipItemIfPossible(level: ServerLevel, itemStack: ItemStack): ItemStack;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
     getAmbientSound(): SoundEvent;
@@ -301,7 +297,6 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     leashElasticDistance(): number;
     leashSnapDistance(): number;
     leashTooFarBehaviour(): void;
-    leashTooFarBehaviour(): void;
     lithium$getRegisteredNavigation(): PathNavigation;
     lithium$isRegisteredToWorld(): boolean;
     lithium$setRegisteredToWorld(arg0: PathNavigation): void;
@@ -312,7 +307,6 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     mobInteract(player: Player, hand: InteractionHand): InteractionResult;
     onAttributeUpdated(attribute: Holder<Attribute>): void;
     onElasticLeashPull(): void;
-    onLeashRemoved(): void;
     onLeashRemoved(): void;
     onOffspringSpawnedFromEgg(spawner: Player, offspring: Mob): void;
     onPathfindingDone(): void;

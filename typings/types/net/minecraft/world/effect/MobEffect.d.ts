@@ -60,10 +60,8 @@ export class MobEffect extends Object implements FabricMobEffect, FeatureElement
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     isInstantenous(): boolean;
     onEffectAdded(arg0: MobEffectInstance, arg1: LivingEntity): void;
-    onEffectAdded(arg0: MobEffectInstance, arg1: LivingEntity): void;
     onEffectAdded(mob: LivingEntity, amplifier: number): void;
     onEffectRemoved(arg0: MobEffectInstance, arg1: LivingEntity): void;
-    onEffectStarted(arg0: MobEffectInstance, arg1: LivingEntity): void;
     onEffectStarted(arg0: MobEffectInstance, arg1: LivingEntity): void;
     onEffectStarted(mob: LivingEntity, amplifier: number): void;
     onMobHurt(level: ServerLevel, mob: LivingEntity, amplifier: number, source: DamageSource, damage: number): void;

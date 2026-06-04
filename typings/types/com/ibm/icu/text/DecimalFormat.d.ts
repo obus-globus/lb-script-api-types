@@ -103,8 +103,6 @@ export class DecimalFormat extends NumberFormat {
     format(arg0: Object, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     format(arg0: number): string;
     format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
-    format(arg0: number): string;
-    format(arg0: number, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;
     formatToCharacterIterator(arg0: Object): AttributedCharacterIterator;
     getCurrency(): Currency;
     getCurrencyParser(): NumberParserImpl;

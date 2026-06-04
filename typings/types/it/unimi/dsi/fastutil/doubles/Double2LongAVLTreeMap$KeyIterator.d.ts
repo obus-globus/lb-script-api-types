@@ -4,12 +4,10 @@ export class Double2LongAVLTreeMap$KeyIterator extends Double2LongAVLTreeMap$Tre
     constructor(null_: Double2LongAVLTreeMap$KeyIterator)
     constructor(null_: Double2LongAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

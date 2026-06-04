@@ -44,7 +44,6 @@ export class PromiseReactionJobNode$PromiseReactionJobRootNode extends JavaScrip
     // private getErrorObject(): TryCatchNode$GetErrorObjectNode;
     getNodeObject(): Object;
     hasTag(tag: Class<Tag>): boolean;
-    hasTag(tag: Class<Tag>): boolean;
     isCaptureFramesForTrace(): boolean;
     isCaptureFramesForTrace(compiledFrame: Node): boolean;
     isCaptureFramesForTrace(compiledFrame: boolean): boolean;

@@ -20,9 +20,7 @@ export class ExtLocations$DoubleArrayLocation extends ExtLocations$AbstractPrimi
     getBytes(): number;
     getDouble(store: DynamicObject, shape: Shape): number;
     getDouble(store: DynamicObject, guard: boolean): number;
-    getDouble(store: DynamicObject, shape: Shape): number;
     getFinalDouble(store: DynamicObject, condition: boolean): number;
-    getType(): Class<number>;
     getType(): Class<number>;
     isImplicitCastIntToDouble(): boolean;
     primitiveArrayCount(): number;
@@ -31,6 +29,5 @@ export class ExtLocations$DoubleArrayLocation extends ExtLocations$AbstractPrimi
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
     setDouble(store: DynamicObject, value: number, shape: Shape): void;
     setDouble(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
-    setDouble(store: DynamicObject, value: number, shape: Shape): void;
     setDoubleInternal(store: DynamicObject, value: number, guard: boolean): void;
 }

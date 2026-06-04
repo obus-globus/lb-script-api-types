@@ -30,7 +30,6 @@ export class HttpClient extends HeaderStore<HttpClient> implements HttpRequestBu
     readonly readTimeout: number;
     // private retryConfig: RetryConfig;
     bind<T extends HttpRequest>(arg0: T): T;
-    bind<T extends HttpRequest>(arg0: T): T;
     contentRequest(arg0: string, arg1: URL): HttpContentRequest;
     contentRequest(arg0: string, arg1: string): HttpContentRequest;
     delete(arg0: URL): DeleteRequest;

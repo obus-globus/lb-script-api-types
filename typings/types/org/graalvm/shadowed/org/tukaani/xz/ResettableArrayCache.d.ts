@@ -10,6 +10,5 @@ export class ResettableArrayCache extends ArrayCache {
     getByteArray(size: number, fillWithZeros: boolean): number[];
     getIntArray(size: number, fillWithZeros: boolean): number[];
     putArray(array: number[]): void;
-    putArray(array: number[]): void;
     reset(): void;
 }

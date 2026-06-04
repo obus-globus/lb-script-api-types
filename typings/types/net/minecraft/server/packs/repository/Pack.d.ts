@@ -24,7 +24,6 @@ export class Pack extends Object implements FabricPack {
     // private selectionConfig: PackSelectionConfig;
     equals(o: Object | null): boolean;
     fabric$isHidden(): boolean;
-    fabric$isHidden(): boolean;
     fabric$parentsEnabled(arg0: string[]): boolean;
     fabric$parentsEnabled(arg0: (Object | null)[]): boolean;
     fabric$setParentsPredicate(arg0: (param0: string[]) => kotlin.Boolean): void;

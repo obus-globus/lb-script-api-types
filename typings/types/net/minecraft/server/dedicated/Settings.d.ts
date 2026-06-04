@@ -14,7 +14,6 @@ export abstract class Settings<T extends Settings<T>> extends Object {
     get(key: string, validator: (param0: number) => unknown, defaultValue: number): number;
     get(key: string, defaultValue: boolean): boolean;
     get(key: string, defaultValue: number): number;
-    get(key: string, defaultValue: number): number;
     get(key: string, defaultValue: string): string;
     getLegacy<V extends Object | number | string | boolean>(key: string, deserializer: (param0: string) => V): V;
     getLegacyBoolean(key: string): boolean;

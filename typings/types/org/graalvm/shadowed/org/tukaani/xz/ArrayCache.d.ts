@@ -7,5 +7,4 @@ export class ArrayCache extends Object {
     getByteArray(size: number, fillWithZeros: boolean): number[];
     getIntArray(size: number, fillWithZeros: boolean): number[];
     putArray(array: number[]): void;
-    putArray(array: number[]): void;
 }

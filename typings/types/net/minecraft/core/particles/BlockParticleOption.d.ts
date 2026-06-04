@@ -17,7 +17,6 @@ export class BlockParticleOption extends Object implements FabricBlockParticleOp
     readonly type: ParticleType<BlockParticleOption>;
     fabric_setBlockPos(arg0: BlockPos): void;
     getBlockPos(): BlockPos;
-    getBlockPos(): BlockPos;
     getState(): BlockState;
     getType(): ParticleType<BlockParticleOption>;
 }

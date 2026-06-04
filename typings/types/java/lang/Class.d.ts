@@ -156,13 +156,11 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     // private getSimpleName0(): string;
     getSuperclass(): Class<T>;
     getTypeName(): string;
-    getTypeName(): string;
     getTypeParameters(): TypeVariable<Class<T>>[];
     // private hasEnclosingMethodInfo(): boolean;
     // private hasSealedAncestor(arg0: Class<Object>): boolean;
     // private initClassName(): string;
     isAnnotation(): boolean;
-    isAnnotationPresent(arg0: Class<Annotation>): boolean;
     isAnnotationPresent(arg0: Class<Annotation>): boolean;
     isAnonymousClass(): boolean;
     isArray(): boolean;

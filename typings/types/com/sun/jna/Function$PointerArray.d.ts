@@ -15,9 +15,4 @@ export class Function$PointerArray extends Memory implements Function$PostCallRe
     read(arg0: number, arg1: Pointer[], arg2: number, arg3: number): void;
     read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
     read(arg0: number, arg1: string[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
-    read(arg0: number, arg1: number[], arg2: number, arg3: number): void;
 }

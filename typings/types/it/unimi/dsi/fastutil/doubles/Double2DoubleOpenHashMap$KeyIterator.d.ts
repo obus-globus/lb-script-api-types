@@ -7,7 +7,6 @@ export class Double2DoubleOpenHashMap$KeyIterator extends Double2DoubleOpenHashM
     constructor(null_: Double2DoubleOpenHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextDouble(): number;
     skip(arg0: number): number;

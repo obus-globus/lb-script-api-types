@@ -17,7 +17,6 @@ export class ToXMLContentHandler extends ToTextContentHandler {
     startElement(arg0: string, arg1: string, arg2: string, arg3: Attributes): void;
     startPrefixMapping(arg0: string, arg1: string): void;
     write(arg0: string): void;
-    write(arg0: string): void;
     // private writeCharsAndEntity(arg0: string[], arg1: number, arg2: number, arg3: string): number;
     // private writeEscaped(arg0: string[], arg1: number, arg2: number, arg3: boolean): void;
 }

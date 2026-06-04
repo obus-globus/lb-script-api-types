@@ -7,10 +7,6 @@ export class DoubleIterators$UnmodifiableIterator extends Object implements Doub
     constructor(arg0: DoubleIterator)
     // private i: DoubleIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

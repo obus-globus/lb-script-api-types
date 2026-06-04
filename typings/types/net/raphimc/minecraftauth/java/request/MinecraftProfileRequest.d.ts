@@ -10,5 +10,4 @@ export class MinecraftProfileRequest extends GetRequest implements MinecraftServ
     handle(arg0: HttpResponse): MinecraftProfile;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): MinecraftProfile;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
-    handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

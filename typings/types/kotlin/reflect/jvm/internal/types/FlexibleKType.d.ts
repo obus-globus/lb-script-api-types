@@ -9,7 +9,7 @@ import type { AbstractKType } from '../../../../../kotlin/reflect/jvm/internal/t
 import type { FlexibleKType$Companion } from '../../../../../kotlin/reflect/jvm/internal/types/FlexibleKType$Companion.d.ts'
 export class FlexibleKType extends AbstractKType {
     static Companion: FlexibleKType$Companion;
-    private constructor(lowerBound: AbstractKType, upperBound: AbstractKType, isRawType: boolean, computeJavaType: () => Type | null)
+    private constructor(lowerBound: AbstractKType, upperBound: AbstractKType, isRawType: boolean, computeJavaType: (() => Type) | null)
     readonly abbreviation: KType | null;
     readonly annotations: Annotation[];
     readonly arguments: KTypeProjection[];

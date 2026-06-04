@@ -24,21 +24,13 @@ export class Object2IntOpenHashMap$MapEntry extends Object implements Object2Int
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectIntPair<K>;
-    right(arg0: number): ObjectIntPair<K>;
-    right(): number;
-    right(arg0: number): ObjectIntPair<K>;
-    right(arg0: number): ObjectIntPair<K>;
     rightInt(): number;
     second(): number;
     second(arg0: number): ObjectIntPair<K>;
-    second(arg0: number): ObjectIntPair<K>;
     secondInt(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectIntPair<K>;
     value(arg0: number): ObjectIntPair<K>;
     valueInt(): number;
 }

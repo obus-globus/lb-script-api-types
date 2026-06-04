@@ -9,7 +9,6 @@ export class RenderTargetDescriptor extends Record implements ResourceDescriptor
     // private width: number;
     allocate(): RenderTarget;
     canUsePhysicalResource(other: ResourceDescriptor<Object>): boolean;
-    canUsePhysicalResource(other: ResourceDescriptor<Object>): boolean;
     clearColor(): number;
     equals(o: Object | null): boolean;
     free(resource: RenderTarget): void;

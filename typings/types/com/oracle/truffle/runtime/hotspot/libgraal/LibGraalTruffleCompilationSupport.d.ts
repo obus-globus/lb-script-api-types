@@ -13,11 +13,8 @@ export class LibGraalTruffleCompilationSupport extends Object implements Truffle
     createCompiler(runtime: TruffleCompilerRuntime): TruffleCompiler;
     getCompilerConfigurationName(runtime: TruffleCompilerRuntime): string;
     getCompilerVersion(): string;
-    getCompilerVersion(): string;
-    isSuppressedCompilationFailure(throwable: Throwable): boolean;
     isSuppressedCompilationFailure(throwable: Throwable): boolean;
     listCompilerOptions(): TruffleCompilerOptionDescriptor[];
-    openCompilerThreadScope(): AutoCloseable;
     openCompilerThreadScope(): AutoCloseable;
     registerRuntime(runtime: TruffleCompilerRuntime): void;
     validateCompilerOption(key: string, value: string): string;

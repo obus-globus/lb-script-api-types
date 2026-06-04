@@ -3,12 +3,10 @@ import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/long
 export class Char2LongAVLTreeMap$ValueIterator extends Char2LongAVLTreeMap$TreeIterator implements LongListIterator {
     private constructor(null_: Char2LongAVLTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

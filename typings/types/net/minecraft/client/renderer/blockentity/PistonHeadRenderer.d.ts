@@ -15,7 +15,6 @@ export class PistonHeadRenderer extends Object implements BlockEntityRenderer<Pi
     extractRenderState<T extends BlockEntity, S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     extractRenderState(blockEntity: PistonMovingBlockEntity, state: PistonHeadRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;
-    getViewDistance(): number;
     shouldRender<T extends BlockEntity>(blockEntity: T, cameraPosition: Vec3): boolean;
     shouldRenderOffScreen(): boolean;
     submit(state: PistonHeadRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

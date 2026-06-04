@@ -37,8 +37,6 @@ export class PolyglotByteSequence extends Object implements PolyglotWrapper, Byt
     hashCode(): number;
     length(): number;
     subSequence(startIndex: number, endIndex: number): ByteSequence;
-    subSequence(startIndex: number, endIndex: number): ByteSequence;
-    toByteArray(): number[];
     toByteArray(): number[];
     toString(): string;
 }

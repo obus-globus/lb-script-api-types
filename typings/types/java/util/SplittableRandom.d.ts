@@ -20,15 +20,7 @@ export class SplittableRandom extends Object implements RandomGenerator, RandomG
     doubles(arg0: number, arg1: number): DoubleStream;
     doubles(arg0: number): DoubleStream;
     doubles(arg0: number, arg1: number, arg2: number): DoubleStream;
-    doubles(): DoubleStream;
-    doubles(arg0: number, arg1: number): DoubleStream;
-    doubles(arg0: number): DoubleStream;
-    doubles(arg0: number, arg1: number, arg2: number): DoubleStream;
     equiDoubles(arg0: number, arg1: number, arg2: boolean, arg3: boolean): DoubleStream;
-    ints(): IntStream;
-    ints(arg0: number, arg1: number): IntStream;
-    ints(arg0: number): IntStream;
-    ints(arg0: number, arg1: number, arg2: number): IntStream;
     ints(): IntStream;
     ints(arg0: number, arg1: number): IntStream;
     ints(arg0: number): IntStream;
@@ -38,12 +30,7 @@ export class SplittableRandom extends Object implements RandomGenerator, RandomG
     longs(arg0: number): LongStream;
     longs(arg0: number, arg1: number): LongStream;
     longs(arg0: number, arg1: number, arg2: number): LongStream;
-    longs(): LongStream;
-    longs(arg0: number): LongStream;
-    longs(arg0: number, arg1: number): LongStream;
-    longs(arg0: number, arg1: number, arg2: number): LongStream;
     nextBoolean(): boolean;
-    nextBytes(arg0: number[]): void;
     nextBytes(arg0: number[]): void;
     nextDouble(): number;
     nextDouble(arg0: number): number;
@@ -57,12 +44,7 @@ export class SplittableRandom extends Object implements RandomGenerator, RandomG
     nextInt(): number;
     nextInt(arg0: number): number;
     nextInt(arg0: number, arg1: number): number;
-    nextInt(): number;
-    nextInt(arg0: number): number;
-    nextInt(arg0: number, arg1: number): number;
     nextLong(): number;
-    nextLong(arg0: number): number;
-    nextLong(arg0: number, arg1: number): number;
     nextLong(arg0: number): number;
     nextLong(arg0: number, arg1: number): number;
     // private nextSeed(): number;
@@ -74,5 +56,4 @@ export class SplittableRandom extends Object implements RandomGenerator, RandomG
     splits(arg0: RandomGenerator$SplittableGenerator): Stream<RandomGenerator$SplittableGenerator>;
     splits(arg0: number): Stream<RandomGenerator$SplittableGenerator>;
     splits(arg0: number, arg1: RandomGenerator$SplittableGenerator): Stream<RandomGenerator$SplittableGenerator>;
-    splits(): Stream<RandomGenerator$SplittableGenerator>;
 }

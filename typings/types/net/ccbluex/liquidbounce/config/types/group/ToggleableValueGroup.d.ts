@@ -32,8 +32,6 @@ export abstract class ToggleableValueGroup extends ValueGroup implements EventLi
     onEnabledValueRegistration(value: Value<boolean>): Value<boolean>;
     onToggled(state: boolean): boolean;
     onToggled(state: boolean, isParentUpdate: boolean): boolean;
-    onToggled(state: boolean): boolean;
-    parent(): EventListener | null;
     parent(): EventListener | null;
     unregister(): void;
 }

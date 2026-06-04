@@ -43,7 +43,6 @@ export interface Boolean2BooleanFunction extends Function<boolean, boolean>, Obj
     composeReference(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     composeShort(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
     containsKey(arg0: Object): boolean;
-    containsKey(arg0: Object): boolean;
     containsKey(arg0: boolean): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;
@@ -53,7 +52,6 @@ export interface Boolean2BooleanFunction extends Function<boolean, boolean>, Obj
     getOrDefault(arg0: Object, arg1: boolean): boolean;
     getOrDefault(arg0: boolean, arg1: boolean): boolean;
     put<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: boolean, arg1: boolean): boolean;
     put(arg0: boolean, arg1: boolean): boolean;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): boolean;

@@ -4,12 +4,10 @@ export class Long2ReferenceRBTreeMap$KeyIterator extends Long2ReferenceRBTreeMap
     constructor(null_: Long2ReferenceRBTreeMap$KeyIterator)
     constructor(null_: Long2ReferenceRBTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

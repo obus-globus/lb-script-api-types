@@ -23,7 +23,5 @@ export abstract class Clock extends Object implements InstantSource {
     hashCode(): number;
     instant(): Instant;
     millis(): number;
-    millis(): number;
-    withZone(arg0: ZoneId): Clock;
     withZone(arg0: ZoneId): Clock;
 }

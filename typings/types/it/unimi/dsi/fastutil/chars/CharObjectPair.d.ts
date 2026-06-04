@@ -5,17 +5,14 @@ export interface CharObjectPair<V extends Object | number | string | boolean> ex
     first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     first(): string;
     first(arg0: string): CharObjectPair<V>;
-    first(arg0: string): CharObjectPair<V>;
     firstChar(): string;
     key<L extends Object | number | string | boolean>(): L;
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     key(): string;
     key(arg0: string): CharObjectPair<V>;
-    key(arg0: string): CharObjectPair<V>;
     keyChar(): string;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left(): string;
-    left(arg0: string): CharObjectPair<V>;
     left(arg0: string): CharObjectPair<V>;
     leftChar(): string;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;

@@ -60,12 +60,8 @@ export abstract class AbstractReference2BooleanFunction<K extends Object | numbe
     composeShort(arg0: (param0: K) => unknown): (param0: number) => kotlin.Boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;
-    defaultReturnValue(): boolean;
-    defaultReturnValue(arg0: boolean): void;
     get(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
-    getOrDefault(arg0: Object, arg1: boolean): boolean;
-    put(arg0: K, arg1: boolean): boolean;
     put(arg0: K, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     removeBoolean(arg0: Object): boolean;

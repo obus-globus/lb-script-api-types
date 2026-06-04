@@ -4,5 +4,4 @@ export interface Object2FloatMap$Entry<K extends Object | number | string | bool
     readonly value: number;
     getFloatValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

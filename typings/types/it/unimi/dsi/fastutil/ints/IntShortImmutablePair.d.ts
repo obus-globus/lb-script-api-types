@@ -12,28 +12,22 @@ export class IntShortImmutablePair extends Object implements IntShortPair, Seria
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntShortPair;
-    first(arg0: number): IntShortPair;
     firstInt(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): IntShortPair;
-    key(arg0: number): IntShortPair;
     keyInt(): number;
     left(): number;
-    left(arg0: number): IntShortPair;
     left(arg0: number): IntShortPair;
     leftInt(): number;
     right(): number;
     right(arg0: number): IntShortPair;
-    right(arg0: number): IntShortPair;
     rightShort(): number;
     second(): number;
-    second(arg0: number): IntShortPair;
     second(arg0: number): IntShortPair;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): IntShortPair;
     value(arg0: number): IntShortPair;
     valueShort(): number;
 }

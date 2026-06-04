@@ -19,7 +19,6 @@ export abstract class DelegatingOps<T extends Object | number | string | boolean
     constructor(delegate: DynamicOps<T>)
     // private delegate: DynamicOps<T>;
     compressMaps(): boolean;
-    compressMaps(): boolean;
     convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
     convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
     convertTo<U extends Object | number | string | boolean>(outOps: DynamicOps<U>, input: T): U;
@@ -51,8 +50,6 @@ export abstract class DelegatingOps<T extends Object | number | string | boolean
     createString(value: string): T;
     empty(): T;
     emptyList(): T;
-    emptyList(): T;
-    emptyMap(): T;
     emptyMap(): T;
     get(arg0: T, arg1: string): DataResult<T>;
     getBooleanValue(arg0: T): DataResult<boolean>;
@@ -73,12 +70,9 @@ export abstract class DelegatingOps<T extends Object | number | string | boolean
     getMapValues(input: T): DataResult<Stream<Pair<T, T>>>;
     getNumberValue(arg0: T, arg1: Number): Number;
     getNumberValue(input: T): DataResult<Number>;
-    getNumberValue(arg0: T, arg1: Number): Number;
     getStream(input: T): DataResult<Stream<T>>;
     getStringValue(input: T): DataResult<string>;
     listBuilder(): ListBuilder<T>;
-    listBuilder(): ListBuilder<T>;
-    mapBuilder(): RecordBuilder<T>;
     mapBuilder(): RecordBuilder<T>;
     mergeToList(arg0: T, arg1: T[]): DataResult<T>;
     mergeToList(list: T, value: T): DataResult<T>;

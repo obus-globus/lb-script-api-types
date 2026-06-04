@@ -13,6 +13,5 @@ export class Short2BooleanLinkedOpenHashMap$EntryIterator extends Short2BooleanL
     next(): Short2BooleanLinkedOpenHashMap$MapEntry;
     previous(): Short2BooleanLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

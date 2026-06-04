@@ -23,7 +23,6 @@ export class Char2BooleanRBTreeMap$Entry extends AbstractChar2BooleanMap$BasicEn
     right(): Char2BooleanRBTreeMap$Entry;
     right(arg0: Char2BooleanRBTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Char2BooleanRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

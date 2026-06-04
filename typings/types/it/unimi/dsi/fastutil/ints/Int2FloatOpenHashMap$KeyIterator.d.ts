@@ -7,7 +7,6 @@ export class Int2FloatOpenHashMap$KeyIterator extends Int2FloatOpenHashMap$MapIt
     constructor(null_: Int2FloatOpenHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextInt(): number;
     skip(arg0: number): number;

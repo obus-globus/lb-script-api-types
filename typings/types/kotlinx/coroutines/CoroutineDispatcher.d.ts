@@ -23,6 +23,5 @@ export abstract class CoroutineDispatcher extends AbstractCoroutineContextElemen
     plus(context: CoroutineContext): CoroutineContext;
     plus(other: CoroutineDispatcher): CoroutineDispatcher;
     releaseInterceptedContinuation(continuation: Continuation<Object>): void;
-    releaseInterceptedContinuation(continuation: Continuation<Object>): void;
     toString(): string;
 }

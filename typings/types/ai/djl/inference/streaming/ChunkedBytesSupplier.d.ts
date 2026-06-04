@@ -13,7 +13,6 @@ export class ChunkedBytesSupplier extends Object implements BytesSupplier {
     appendContent(arg0: BytesSupplier, arg1: boolean): void;
     appendContent(arg0: number[], arg1: boolean): void;
     getAsBytes(): number[];
-    getAsBytes(): number[];
     getAsObject(): Object;
     getAsString(): string;
     hasNext(): boolean;

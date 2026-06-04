@@ -11,7 +11,6 @@ export class YggdrassilTelemetryEvent extends Object implements TelemetryEvent {
     addNullProperty(arg0: string): void;
     addProperty(arg0: string, arg1: boolean): void;
     addProperty(arg0: string, arg1: number): void;
-    addProperty(arg0: string, arg1: number): void;
     addProperty(arg0: string, arg1: string): void;
     // private data(): JsonObject;
     send(): void;

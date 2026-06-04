@@ -48,7 +48,6 @@ export class V0ModMetadata extends AbstractModMetadata implements LoaderModMetad
     getName(): string;
     getOldInitializers(): E[];
     getOldStyleLanguageAdapter(): string;
-    getOldStyleLanguageAdapter(): string;
     getProvides(): E[];
     getSchemaVersion(): number;
     getType(): string;

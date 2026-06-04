@@ -25,7 +25,6 @@ export class BlockModelRenderState extends Object implements FabricBlockModelRen
     // private transformation: Matrix4fc;
     clear(): void;
     clearExtraData(): void;
-    clearExtraData(): void;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;
     getDataOrDefault<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): T;
@@ -34,7 +33,6 @@ export class BlockModelRenderState extends Object implements FabricBlockModelRen
     scratchRandomSource(seed: number): RandomSource;
     setData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
-    setupMesh(arg0: Matrix4fc, arg1: boolean): QuadEmitter;
     setupMesh(arg0: Matrix4fc, arg1: boolean): QuadEmitter;
     setupModel(transformation: Matrix4fc, hasTranslucency: boolean): BlockStateModelPart[];
     setupSpecialModel(renderer: SpecialModelRenderer<T>, transformation: Matrix4fc): void;

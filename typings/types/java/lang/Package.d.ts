@@ -33,7 +33,6 @@ export class Package extends NamedPackage implements AnnotatedElement {
     getSpecificationVersion(): string;
     hashCode(): number;
     isAnnotationPresent(arg0: Class<Annotation>): boolean;
-    isAnnotationPresent(arg0: Class<Annotation>): boolean;
     isCompatibleWith(arg0: string): boolean;
     isSealed(): boolean;
     isSealed(arg0: URL): boolean;

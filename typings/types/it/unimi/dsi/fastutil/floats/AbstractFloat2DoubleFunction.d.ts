@@ -61,12 +61,9 @@ export abstract class AbstractFloat2DoubleFunction extends Object implements Flo
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;
-    defaultReturnValue(): number;
-    defaultReturnValue(arg0: number): void;
     get(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
     getOrDefault(arg0: number, arg1: number): number;
-    put(arg0: number, arg1: number): number;
     put(arg0: number, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: number): number;

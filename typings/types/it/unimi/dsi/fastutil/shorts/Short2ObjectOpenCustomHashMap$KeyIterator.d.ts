@@ -7,8 +7,6 @@ export class Short2ObjectOpenCustomHashMap$KeyIterator extends Short2ObjectOpenC
     constructor(null_: Short2ObjectOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
     skip(arg0: number): number;

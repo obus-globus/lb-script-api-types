@@ -20,13 +20,10 @@ export class ProgramBuilder extends ProgramUniforms$Builder implements ImageHold
     // private samplers: ProgramSamplers$Builder;
     addDefaultSampler(arg0: () => kotlin.Int, arg1: string[]): boolean;
     addDefaultSampler(arg0: TextureType, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier, arg3: () => GlSampler, arg4: string[]): boolean;
-    addDefaultSampler(arg0: () => kotlin.Int, arg1: string[]): boolean;
     addDynamicSampler(arg0: () => kotlin.Int, arg1: GlSampler, arg2: string[]): boolean;
     addDynamicSampler(arg0: () => kotlin.Int, arg1: GlSampler, arg2: ValueUpdateNotifier, arg3: string[]): boolean;
     addDynamicSampler(arg0: TextureType, arg1: () => kotlin.Int, arg2: () => GlSampler, arg3: string[]): boolean;
     addDynamicSampler(arg0: TextureType, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier, arg3: () => GlSampler, arg4: string[]): boolean;
-    addDynamicSampler(arg0: () => kotlin.Int, arg1: GlSampler, arg2: string[]): boolean;
-    addDynamicSampler(arg0: () => kotlin.Int, arg1: GlSampler, arg2: ValueUpdateNotifier, arg3: string[]): boolean;
     addExternalSampler(arg0: number, arg1: string[]): void;
     addTextureImage(arg0: () => kotlin.Int, arg1: InternalTextureFormat, arg2: string): void;
     bindAttributeLocation(arg0: number, arg1: string): void;

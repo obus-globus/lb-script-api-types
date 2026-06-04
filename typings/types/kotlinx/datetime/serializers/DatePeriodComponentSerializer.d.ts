@@ -10,5 +10,4 @@ export class DatePeriodComponentSerializer extends Object implements KSerializer
     deserialize(decoder: Decoder): DatePeriod;
     serialize(encoder: Encoder, value: DatePeriod): void;
     // private unexpectedNonzero(fieldName: string, value: number): void;
-    // private unexpectedNonzero(fieldName: string, value: number): void;
 }

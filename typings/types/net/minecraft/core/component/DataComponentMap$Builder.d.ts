@@ -12,7 +12,6 @@ export class DataComponentMap$Builder extends Object implements FabricComponentM
     addValidator(newValidator: (param0: TypedDataComponent<Object>[]) => void): DataComponentMap$Builder;
     build(): TypedDataComponent<Object>[];
     contains(arg0: DataComponentType<Object>): boolean;
-    contains(arg0: DataComponentType<Object>): boolean;
     getOrCreate<T extends Object | number | string | boolean>(arg0: DataComponentType<T>, arg1: () => T): T;
     getOrCreate(arg0: DataComponentType<Object>, arg1: () => Object): Object;
     getOrDefault<T extends Object | number | string | boolean>(arg0: DataComponentType<T>, arg1: T): T;

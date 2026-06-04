@@ -9,5 +9,4 @@ export class GenderInfo extends Object {
     constructor(arg0: GenderInfo$ListGenderStyle)
     // private style: GenderInfo$ListGenderStyle;
     getListGender(arg0: GenderInfo$Gender[]): GenderInfo$Gender;
-    getListGender(arg0: GenderInfo$Gender[]): GenderInfo$Gender;
 }

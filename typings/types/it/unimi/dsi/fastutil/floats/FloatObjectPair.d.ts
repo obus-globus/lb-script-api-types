@@ -5,17 +5,14 @@ export interface FloatObjectPair<V extends Object | number | string | boolean> e
     first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     first(): number;
     first(arg0: number): FloatObjectPair<V>;
-    first(arg0: number): FloatObjectPair<V>;
     firstFloat(): number;
     key<L extends Object | number | string | boolean>(): L;
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     key(): number;
     key(arg0: number): FloatObjectPair<V>;
-    key(arg0: number): FloatObjectPair<V>;
     keyFloat(): number;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left(): number;
-    left(arg0: number): FloatObjectPair<V>;
     left(arg0: number): FloatObjectPair<V>;
     leftFloat(): number;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;

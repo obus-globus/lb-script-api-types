@@ -19,9 +19,6 @@ export interface Arena extends AutoCloseable, SegmentAllocator, Object{
     allocate(arg0: MemoryLayout, arg1: number): MemorySegment;
     allocate(arg0: number): MemorySegment;
     allocate(arg0: number, arg1: number): MemorySegment;
-    allocate(arg0: MemoryLayout): MemorySegment;
-    allocate(arg0: MemoryLayout, arg1: number): MemorySegment;
-    allocate(arg0: number): MemorySegment;
     allocateFrom(arg0: AddressLayout, arg1: MemorySegment): MemorySegment;
     allocateFrom(arg0: ValueLayout, arg1: MemorySegment, arg2: ValueLayout, arg3: number, arg4: number): MemorySegment;
     allocateFrom(arg0: ValueLayout$OfByte, arg1: number): MemorySegment;

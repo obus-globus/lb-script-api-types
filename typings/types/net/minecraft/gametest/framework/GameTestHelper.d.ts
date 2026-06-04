@@ -172,7 +172,6 @@ export class GameTestHelper extends Object {
     setBlock(blockPos: BlockPos, blockState: BlockState, direction: Direction): void;
     setTime(ticks: number): void;
     spawn<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number): E;
-    spawn<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawn<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number, entitySpawnReason: EntitySpawnReason): E;
     spawn<E extends Entity>(entityType: EntityType<E>, pos: BlockPos): E;
     spawn(entityType: EntityType<E>, pos: BlockPos, amount: number): E[];
@@ -182,7 +181,6 @@ export class GameTestHelper extends Object {
     spawnItem(item: Item, x: number, y: number, z: number): ItemEntity;
     spawnItem(item: Item, pos: BlockPos): ItemEntity;
     spawnItem(item: Item, pos: Vec3): ItemEntity;
-    spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, pos: BlockPos): E;
     spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, pos: Vec3): E;

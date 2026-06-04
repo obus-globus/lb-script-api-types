@@ -19,5 +19,4 @@ export class SetStewEffectFunction$EffectEntry extends Record implements LootCon
     hashCode(): number;
     toString(): string;
     validate(context: ValidationContext): void;
-    validate(context: ValidationContext): void;
 }

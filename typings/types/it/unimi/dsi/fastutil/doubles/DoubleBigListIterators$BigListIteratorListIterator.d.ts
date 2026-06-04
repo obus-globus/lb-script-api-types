@@ -8,14 +8,7 @@ export class DoubleBigListIterators$BigListIteratorListIterator extends Object i
     constructor(arg0: DoubleListIterator)
     // private i: DoubleListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
-    add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
-    back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -26,11 +19,5 @@ export class DoubleBigListIterators$BigListIteratorListIterator extends Object i
     previousIndex(): number;
     remove(): void;
     set(arg0: number): void;
-    set(arg0: number): void;
-    set(arg0: number): void;
-    set(arg0: number): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

@@ -36,7 +36,6 @@ export class ZoneOffset extends ZoneId implements Serializable, TemporalAccessor
     compareTo(arg0: ZoneOffset): number;
     equals(arg0: Object | null): boolean;
     get(arg0: TemporalField): number;
-    get(arg0: TemporalField): number;
     getId(): string;
     getLong(arg0: TemporalField): number;
     getOffset(arg0: number): ZoneOffset;
@@ -46,8 +45,6 @@ export class ZoneOffset extends ZoneId implements Serializable, TemporalAccessor
     isSupported(arg0: TemporalField): boolean;
     normalized(): ZoneId;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    range(arg0: TemporalField): ValueRange;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toString(): string;

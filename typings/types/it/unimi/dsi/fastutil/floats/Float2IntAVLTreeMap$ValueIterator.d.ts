@@ -3,12 +3,10 @@ import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/
 export class Float2IntAVLTreeMap$ValueIterator extends Float2IntAVLTreeMap$TreeIterator implements IntListIterator {
     private constructor(null_: Float2IntAVLTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextInt(): number;
     previous(): number;
     previousInt(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

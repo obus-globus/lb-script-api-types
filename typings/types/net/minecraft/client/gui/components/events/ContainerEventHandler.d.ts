@@ -13,12 +13,9 @@ import type { MouseButtonEvent } from '../../../../../../net/minecraft/client/in
 import type { PreeditEvent } from '../../../../../../net/minecraft/client/input/PreeditEvent.d.ts'
 export interface ContainerEventHandler extends Object, GuiEventListener{
     charTyped(event: CharacterEvent): boolean;
-    charTyped(event: CharacterEvent): boolean;
     children(): GuiEventListener[];
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
-    getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getChildAt(x: number, y: number): Optional<GuiEventListener>;
-    getCurrentFocusPath(): ComponentPath;
     getCurrentFocusPath(): ComponentPath;
     getFocused(): GuiEventListener;
     getRectangle(): ScreenRectangle;
@@ -28,23 +25,15 @@ export interface ContainerEventHandler extends Object, GuiEventListener{
     isFocused(): boolean;
     isMouseOver(mouseX: number, mouseY: number): boolean;
     keyPressed(event: KeyEvent): boolean;
-    keyPressed(event: KeyEvent): boolean;
-    keyReleased(event: KeyEvent): boolean;
     keyReleased(event: KeyEvent): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
-    mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
-    mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseMoved(x: number, y: number): void;
     mouseReleased(event: MouseButtonEvent): boolean;
-    mouseReleased(event: MouseButtonEvent): boolean;
     mouseScrolled(x: number, y: number, scrollX: number, scrollY: number): boolean;
-    mouseScrolled(x: number, y: number, scrollX: number, scrollY: number): boolean;
-    nextFocusPath(navigationEvent: FocusNavigationEvent): ComponentPath;
     nextFocusPath(navigationEvent: FocusNavigationEvent): ComponentPath;
     // private nextFocusPathInDirection(focusedRectangle: ScreenRectangle, direction: ScreenDirection, excluded: GuiEventListener, navigationEvent: FocusNavigationEvent$ArrowNavigation): ComponentPath;
     // private nextFocusPathVaguelyInDirection(focusedRectangle: ScreenRectangle, direction: ScreenDirection, excluded: GuiEventListener, navigationEvent: FocusNavigationEvent): ComponentPath;
-    preeditUpdated(event: PreeditEvent): boolean;
     preeditUpdated(event: PreeditEvent): boolean;
     setDragging(dragging: boolean): void;
     setFocused(focused: boolean): void;

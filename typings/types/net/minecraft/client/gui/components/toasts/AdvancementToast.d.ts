@@ -18,7 +18,6 @@ export class AdvancementToast extends Object implements Toast {
     readonly wantedVisibility: Toast$Visibility;
     extractRenderState(graphics: GuiGraphicsExtractor, font: Font, fullyVisibleForMs: number): void;
     getSoundEvent(): SoundEvent;
-    getSoundEvent(): SoundEvent;
     getToken(): Object;
     getWantedVisibility(): Toast$Visibility;
     height(): number;

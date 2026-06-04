@@ -14,7 +14,6 @@ export class AxisCycle extends Enum<AxisCycle> {
     static values(): (Object | null)[];
     private constructor()
     cycle(x: number, y: number, z: number, axis: Direction$Axis): number;
-    cycle(x: number, y: number, z: number, axis: Direction$Axis): number;
     cycle(axis: Direction$Axis): Direction$Axis;
     inverse(): AxisCycle;
     name(): "NONE" | "FORWARD" | "BACKWARD";

@@ -4,6 +4,5 @@ export class DateTimeUnit extends Object {
     static Companion: DateTimeUnit$Companion;
     protected constructor()
     protected formatToString(value: number, unit: string): string;
-    protected formatToString(value: number, unit: string): string;
     times(scalar: number): DateTimeUnit;
 }

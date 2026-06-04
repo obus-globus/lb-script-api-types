@@ -3,12 +3,10 @@ import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/flo
 export class Char2FloatRBTreeMap$ValueIterator extends Char2FloatRBTreeMap$TreeIterator implements FloatListIterator {
     private constructor(null_: Char2FloatRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

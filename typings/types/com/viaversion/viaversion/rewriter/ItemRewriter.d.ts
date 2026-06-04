@@ -31,17 +31,11 @@ export class ItemRewriter<C extends ClientboundPacketType, S extends Serverbound
     handleItemToServer(arg0: UserConnection, arg1: Item): Item;
     handleTradeList(arg0: PacketWrapper): void;
     itemArrayType(): Type<Item[]>;
-    itemArrayType(): Type<Item[]>;
     itemHasher(arg0: UserConnection): T;
     itemTemplateType(): Type<Item>;
-    itemTemplateType(): Type<Item>;
-    itemType(): Type<Item>;
     itemType(): Type<Item>;
     mappedItemArrayType(): Type<Item[]>;
-    mappedItemArrayType(): Type<Item[]>;
     mappedItemTemplateType(): Type<Item>;
-    mappedItemTemplateType(): Type<Item>;
-    mappedItemType(): Type<Item>;
     mappedItemType(): Type<Item>;
     nbtTagName(): string;
     nbtTagName(arg0: string): string;

@@ -16,7 +16,6 @@ export class Resource extends Object implements FabricResource {
     // private source: PackResources;
     // private streamSupplier: () => InputStream;
     getFabricPackSource(): PackSource;
-    getFabricPackSource(): PackSource;
     knownPackInfo(): Optional<KnownPack>;
     metadata(): ResourceMetadata;
     open(): InputStream;

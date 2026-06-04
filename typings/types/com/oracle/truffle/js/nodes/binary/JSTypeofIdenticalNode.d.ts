@@ -36,8 +36,6 @@ export abstract class JSTypeofIdenticalNode extends JSUnaryNode {
     doForeignObject(value: Object, interop: InteropLibrary): boolean;
     doNumber(value: SafeInteger): boolean;
     doNumber(value: number): boolean;
-    doNumber(value: number): boolean;
-    doNumber(value: number): boolean;
     doString(value: TruffleString): boolean;
     doSymbol(value: Symbol): boolean;
     doTypeObjectOrFunctionJSFunction(value: Object): boolean;

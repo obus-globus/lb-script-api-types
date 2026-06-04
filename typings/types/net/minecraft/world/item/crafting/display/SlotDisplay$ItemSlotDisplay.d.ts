@@ -25,7 +25,6 @@ export class SlotDisplay$ItemSlotDisplay extends Record implements SlotDisplay {
     equals(o: Object | null): boolean;
     hashCode(): number;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     item(): Holder<Item>;
     resolve(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;

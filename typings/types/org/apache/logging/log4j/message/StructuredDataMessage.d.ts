@@ -45,11 +45,5 @@ export class StructuredDataMessage extends MapMessage<StructuredDataMessage, str
     validate(key: string, value: boolean): void;
     validate(key: string, value: number): void;
     validate(key: string, value: string): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: string): void;
     validateKey(key: string): void;
 }

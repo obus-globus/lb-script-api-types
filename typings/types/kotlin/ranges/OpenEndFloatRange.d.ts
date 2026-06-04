@@ -12,7 +12,6 @@ export class OpenEndFloatRange extends Object implements OpenEndRange<number> {
     equals(other: Object | null): boolean;
     hashCode(): number;
     isEmpty(): boolean;
-    isEmpty(): boolean;
     // private lessThanOrEquals(a: number, b: number): boolean;
     toString(): string;
 }

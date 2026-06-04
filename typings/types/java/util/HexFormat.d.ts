@@ -32,10 +32,7 @@ export class HexFormat extends Object {
     toHexDigits<A extends Appendable>(arg0: A, arg1: number): A;
     toHexDigits(arg0: number): string;
     toHexDigits(arg0: string): string;
-    toHexDigits(arg0: number): string;
-    toHexDigits(arg0: number): string;
     toHexDigits(arg0: number, arg1: number): string;
-    toHexDigits(arg0: number): string;
     toHighHexDigit(arg0: number): string;
     toLowHexDigit(arg0: number): string;
     toString(): string;

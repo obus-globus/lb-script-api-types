@@ -6,5 +6,4 @@ export interface Int2BooleanMap$Entry extends Object, Map$Entry<number, boolean>
     getBooleanValue(): boolean;
     getIntKey(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
 }

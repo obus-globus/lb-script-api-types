@@ -90,7 +90,6 @@ export class MangroveLeavesBlock extends TintedParticleLeavesBlock implements Bo
     constructor(leafParticleChance: number, properties: BlockBehaviour$Properties)
     codec(): MapCodec<MangroveLeavesBlock>;
     getParticlePos(blockPos: BlockPos): BlockPos;
-    getParticlePos(blockPos: BlockPos): BlockPos;
     getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;
     isValidBonemealTarget(level: LevelReader, pos: BlockPos, state: BlockState): boolean;

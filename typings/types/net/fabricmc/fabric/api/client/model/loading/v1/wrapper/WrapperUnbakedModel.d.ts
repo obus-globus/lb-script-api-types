@@ -15,15 +15,9 @@ export abstract class WrapperUnbakedModel extends Object implements UnbakedModel
     constructor(arg0: UnbakedModel)
     // private wrapped: UnbakedModel;
     ambientOcclusion(): boolean;
-    ambientOcclusion(): boolean;
-    geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
     geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
     guiLight(): UnbakedModel$GuiLight;
-    guiLight(): UnbakedModel$GuiLight;
-    parent(): Identifier;
     parent(): Identifier;
     textureSlots(): TextureSlots$Data;
-    textureSlots(): TextureSlots$Data;
-    transforms(): ItemTransforms;
     transforms(): ItemTransforms;
 }

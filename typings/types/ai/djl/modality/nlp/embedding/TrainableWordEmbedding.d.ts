@@ -23,8 +23,6 @@ export class TrainableWordEmbedding extends Embedding<string> implements WordEmb
     embedWord(arg0: NDArray): NDArray;
     embedWord(arg0: NDManager, arg1: number): NDArray;
     embedWord(arg0: NDManager, arg1: string): NDArray;
-    embedWord(arg0: NDManager, arg1: number): NDArray;
-    embedWord(arg0: NDManager, arg1: string): NDArray;
     encode(arg0: string): number[];
     hasItem(arg0: string): boolean;
     preprocessWordToEmbed(arg0: string): number;

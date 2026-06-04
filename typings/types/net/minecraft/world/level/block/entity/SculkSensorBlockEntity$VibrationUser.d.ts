@@ -16,14 +16,11 @@ export class SculkSensorBlockEntity$VibrationUser extends Object implements Vibr
     calculateTravelTimeInTicks(distanceToDestination: number): number;
     canReceiveVibration(level: ServerLevel, pos: BlockPos, event: Holder<GameEvent>, context: GameEvent$Context): boolean;
     canTriggerAvoidVibration(): boolean;
-    canTriggerAvoidVibration(): boolean;
     getListenableEvents(): TagKey<GameEvent>;
     getListenerRadius(): number;
     getPositionSource(): PositionSource;
     isValidVibration(event: Holder<GameEvent>, context: GameEvent$Context): boolean;
     onDataChanged(): void;
-    onDataChanged(): void;
     onReceiveVibration(level: ServerLevel, pos: BlockPos, event: Holder<GameEvent>, sourceEntity: Entity, projectileOwner: Entity, receivingDistance: number): void;
-    requiresAdjacentChunksToBeTicking(): boolean;
     requiresAdjacentChunksToBeTicking(): boolean;
 }

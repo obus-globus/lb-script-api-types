@@ -25,7 +25,6 @@ export class Short2DoubleAVLTreeMap$Entry extends AbstractShort2DoubleMap$BasicE
     right(): Short2DoubleAVLTreeMap$Entry;
     right(arg0: Short2DoubleAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Short2DoubleAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -12,28 +12,22 @@ export class DoubleFloatImmutablePair extends Object implements DoubleFloatPair,
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleFloatPair;
-    first(arg0: number): DoubleFloatPair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleFloatPair;
-    key(arg0: number): DoubleFloatPair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleFloatPair;
     left(arg0: number): DoubleFloatPair;
     leftDouble(): number;
     right(): number;
     right(arg0: number): DoubleFloatPair;
-    right(arg0: number): DoubleFloatPair;
     rightFloat(): number;
     second(): number;
-    second(arg0: number): DoubleFloatPair;
     second(arg0: number): DoubleFloatPair;
     secondFloat(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): DoubleFloatPair;
     value(arg0: number): DoubleFloatPair;
     valueFloat(): number;
 }

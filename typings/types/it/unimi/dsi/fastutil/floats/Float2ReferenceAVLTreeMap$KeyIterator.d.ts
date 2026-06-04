@@ -4,12 +4,10 @@ export class Float2ReferenceAVLTreeMap$KeyIterator extends Float2ReferenceAVLTre
     constructor(null_: Float2ReferenceAVLTreeMap$KeyIterator)
     constructor(null_: Float2ReferenceAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

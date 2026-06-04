@@ -15,7 +15,6 @@ export class CustomDataIngredient extends Object implements CustomIngredient {
     // private nbt: CompoundTag;
     // private createEntryDisplay(arg0: Holder<Item>): SlotDisplay;
     display(): SlotDisplay;
-    display(): SlotDisplay;
     equals(arg0: Object | null): boolean;
     // private getBase(): Ingredient;
     // private getNbt(): CompoundTag;

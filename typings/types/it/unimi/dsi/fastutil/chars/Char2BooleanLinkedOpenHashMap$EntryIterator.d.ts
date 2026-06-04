@@ -13,6 +13,5 @@ export class Char2BooleanLinkedOpenHashMap$EntryIterator extends Char2BooleanLin
     next(): Char2BooleanLinkedOpenHashMap$MapEntry;
     previous(): Char2BooleanLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

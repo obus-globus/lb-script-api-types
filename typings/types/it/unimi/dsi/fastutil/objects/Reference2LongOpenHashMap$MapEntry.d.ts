@@ -23,21 +23,13 @@ export class Reference2LongOpenHashMap$MapEntry extends Object implements Refere
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceLongPair<K>;
-    right(arg0: number): ReferenceLongPair<K>;
-    right(): number;
-    right(arg0: number): ReferenceLongPair<K>;
-    right(arg0: number): ReferenceLongPair<K>;
     rightLong(): number;
     second(): number;
     second(arg0: number): ReferenceLongPair<K>;
-    second(arg0: number): ReferenceLongPair<K>;
     secondLong(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceLongPair<K>;
     value(arg0: number): ReferenceLongPair<K>;
     valueLong(): number;
 }

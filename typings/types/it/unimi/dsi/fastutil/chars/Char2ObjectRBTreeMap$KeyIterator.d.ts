@@ -4,12 +4,10 @@ export class Char2ObjectRBTreeMap$KeyIterator extends Char2ObjectRBTreeMap$TreeI
     constructor(null_: Char2ObjectRBTreeMap$KeyIterator)
     constructor(null_: Char2ObjectRBTreeMap$KeyIterator, arg1: string)
     add(arg0: string): void;
-    add(arg0: string): void;
     next(): string;
     nextChar(): string;
     previous(): string;
     previousChar(): string;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

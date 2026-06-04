@@ -13,7 +13,6 @@ export class AbstractLongTimeSource$LongTimeMark extends Object implements Compa
     hashCode(): number;
     minus(other: ComparableTimeMark): Duration;
     minus(duration: Duration): ComparableTimeMark;
-    minus(duration: Duration): ComparableTimeMark;
     plus(duration: Duration): ComparableTimeMark;
     toString(): string;
 }

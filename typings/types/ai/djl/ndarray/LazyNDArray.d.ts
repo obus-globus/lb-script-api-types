@@ -67,10 +67,6 @@ export interface LazyNDArray extends NDArray, Object{
     set(arg0: NDIndex, arg1: (param0: NDArray) => NDArray): void;
     set(arg0: NDIndex, arg1: Number): void;
     set(arg0: number[]): void;
-    set(arg0: number[]): void;
-    set(arg0: number[]): void;
-    set(arg0: number[]): void;
-    set(arg0: number[]): void;
     setScalar(arg0: NDIndex, arg1: Number): void;
     shapeEquals(arg0: NDArray): boolean;
     size(): number;

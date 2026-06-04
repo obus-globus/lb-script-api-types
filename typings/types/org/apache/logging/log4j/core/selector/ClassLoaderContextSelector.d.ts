@@ -19,17 +19,12 @@ export class ClassLoaderContextSelector extends Object implements ContextSelecto
     getContext(fqcn: string, loader: ClassLoader, currentContext: boolean, configLocation: URI): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;
-    getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
-    getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;
     getDefault(): LoggerContext;
     getLoggerContexts(): LoggerContext[];
     hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
-    hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
-    isClassLoaderDependent(): boolean;
     isClassLoaderDependent(): boolean;
     // private locateContext(loaderOrNull: ClassLoader, entry: Map$Entry<string, Object>, configLocation: URI): LoggerContext;
     removeContext(context: LoggerContext): void;
-    shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
     shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
     toContextMapKey(loader: ClassLoader): string;
 }

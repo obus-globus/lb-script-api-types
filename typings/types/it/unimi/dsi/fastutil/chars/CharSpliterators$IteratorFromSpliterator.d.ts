@@ -11,21 +11,12 @@ export class CharSpliterators$IteratorFromSpliterator extends Object implements 
     // private spliterator: CharSpliterator;
     accept(arg0: string): void;
     accept(arg0: number): void;
-    accept(arg0: string): void;
-    accept(arg0: string): void;
-    accept(arg0: number): void;
-    andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: number) => void): (param0: string) => void;
-    forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;
     nextChar(): string;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

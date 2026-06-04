@@ -9,18 +9,15 @@ export interface ReferenceDoublePair<K extends Object | number | string | boolea
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     right(): number;
     right(arg0: number): ReferenceDoublePair<K>;
-    right(arg0: number): ReferenceDoublePair<K>;
     rightDouble(): number;
     second<R extends Object | number | string | boolean>(): R;
     second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     second(): number;
     second(arg0: number): ReferenceDoublePair<K>;
-    second(arg0: number): ReferenceDoublePair<K>;
     secondDouble(): number;
     value<R extends Object | number | string | boolean>(): R;
     value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     value(): number;
-    value(arg0: number): ReferenceDoublePair<K>;
     value(arg0: number): ReferenceDoublePair<K>;
     valueDouble(): number;
 }

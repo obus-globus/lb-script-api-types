@@ -12,8 +12,6 @@ import type { AbstractWidget } from '../../../net/minecraft/client/gui/component
 export interface OptionInstance$SliderableOrCyclableValueSet<T extends Object | number | string | boolean> extends Object, OptionInstance$CycleableValueSet<T>, OptionInstance$SliderableValueSet<T>{
     applyValueImmediately(): boolean;
     createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
-    createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
-    createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
     createCycleButton(): boolean;
     next(current: T): Optional<T>;
     previous(current: T): Optional<T>;

@@ -176,7 +176,6 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, x: number, y: number, z: number, r: number, fire: boolean, interactionType: Level$ExplosionInteraction, smallExplosionParticles: ParticleOptions, largeExplosionParticles: ParticleOptions, blockParticles: WeightedList<ExplosionParticleInfo>, explosionSound: Holder<SoundEvent>): void;
     explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, boomPos: Vec3, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
     fabric_clearDeferredSyncChanges(): void;
-    fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
     fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
@@ -185,21 +184,17 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;
-    fabric_hasPersistentAttachments(): boolean;
     fabric_markChanged(arg0: AttachmentType<Object>): void;
     fabric_markLoaded(arg0: LevelChunk): void;
     fabric_markUnloaded(arg0: LevelChunk): void;
-    fabric_readAttachmentsFromNbt(arg0: ValueInput): void;
     fabric_readAttachmentsFromNbt(arg0: ValueInput): void;
     fabric_sendAndClearDeferredSyncChanges(arg0: ServerPlayer[]): void;
     fabric_sendAndClearDeferredSyncChanges(arg0: (Object | null)[]): void;
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
-    fabric_shouldTryToSync(): boolean;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<Object>, arg1: AttachmentTargetInfo<Object>): void;
-    fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fillReportDetails(report: CrashReport): CrashReportCategory;
     findFreePosition(arg0: Entity, arg1: VoxelShape, arg2: Vec3, arg3: number, arg4: number, arg5: number): Optional<Object>;
@@ -251,10 +246,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getLightEngine(): LevelLightEngine;
     getMapData(id: MapId): MapItemSavedData;
     getMaxSectionY(): number;
-    getMaxSectionY(): number;
     getMaxY(): number;
-    getMaxY(): number;
-    getMinSectionY(): number;
     getMinSectionY(): number;
     getMinY(): number;
     getOverworldClockTime(): number;
@@ -271,7 +263,6 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getSectionYFromSectionIndex(arg0: number): number;
     getSectionYFromSectionIndex(sectionIndex: number): number;
     getSectionsCount(): number;
-    getSectionsCount(): number;
     getServer(): MinecraftServer;
     getSkyDarken(): number;
     getThunderLevel(a: number): number;
@@ -279,7 +270,6 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     globalAttachments(): GlobalAttachments;
     globalLevelEvent(type: number, pos: BlockPos, data: number): void;
     guardEntityTick<T extends Entity>(tick: (param0: T) => void, entity: T): void;
-    hasAttached(arg0: AttachmentType<Object>): boolean;
     hasAttached(arg0: AttachmentType<Object>): boolean;
     hasChunk(chunkX: number, chunkZ: number): boolean;
     hasEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): boolean;
@@ -312,7 +302,6 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     neighborChanged(pos: BlockPos, changedBlock: Block, orientation: Orientation): void;
     neighborChanged(state: BlockState, pos: BlockPos, changedBlock: Block, orientation: Orientation, movedByPiston: boolean): void;
     neighborShapeChanged(direction: Direction, pos: BlockPos, neighborPos: BlockPos, neighborState: BlockState, updateFlags: number, updateLimit: number): void;
-    neighborShapeChanged(direction: Direction, pos: BlockPos, neighborPos: BlockPos, neighborState: BlockState, updateFlags: number, updateLimit: number): void;
     nextSubTickCount(): number;
     noCollision(source: Entity): boolean;
     noCollision(arg0: Entity, arg1: AABB): boolean;
@@ -336,7 +325,6 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     playSound(except: Entity, pos: BlockPos, soundEvent: SoundEvent, source: SoundSource): void;
     playSound(except: Entity, pos: BlockPos, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
     playSound(except: Entity, sourceEntity: Entity, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
-    playSound(except: Entity, pos: BlockPos, soundEvent: SoundEvent, source: SoundSource): void;
     potionBrewing(): PotionBrewing;
     precipitationAt(pos: BlockPos): Biome$Precipitation;
     recipeAccess(): RecipeAccess;
@@ -365,7 +353,6 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     tickRateManager(): TickRateManager;
     updateNeighborsAt(pos: BlockPos, sourceBlock: Block): void;
     updateNeighborsAt(pos: BlockPos, sourceBlock: Block, orientation: Orientation): void;
-    updateNeighborsAt(pos: BlockPos, sourceBlock: Block): void;
     updateNeighborsAtExceptFromFacing(pos: BlockPos, blockObject: Block, skipDirection: Direction, orientation: Orientation): void;
     updateNeighbourForOutputSignal(pos: BlockPos, changedBlock: Block): void;
     updatePOIOnBlockStateChange(pos: BlockPos, oldState: BlockState, newState: BlockState): void;

@@ -11,15 +11,12 @@ export class CharReferenceImmutablePair<V extends Object | number | string | boo
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharReferencePair<V>;
-    first(arg0: string): CharReferencePair<V>;
     firstChar(): string;
     hashCode(): number;
     key(): string;
     key(arg0: string): CharReferencePair<V>;
-    key(arg0: string): CharReferencePair<V>;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharReferencePair<V>;
     left(arg0: string): CharReferencePair<V>;
     leftChar(): string;
     right(): V;

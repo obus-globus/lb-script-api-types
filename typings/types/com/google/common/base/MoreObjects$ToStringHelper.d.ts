@@ -12,9 +12,6 @@ export class MoreObjects$ToStringHelper extends Object {
     add(name: string, value: boolean): MoreObjects$ToStringHelper;
     add(name: string, value: string): MoreObjects$ToStringHelper;
     add(name: string, value: number): MoreObjects$ToStringHelper;
-    add(name: string, value: number): MoreObjects$ToStringHelper;
-    add(name: string, value: number): MoreObjects$ToStringHelper;
-    add(name: string, value: number): MoreObjects$ToStringHelper;
     // private addHolder(): MoreObjects$ToStringHelper$ValueHolder;
     // private addHolder(value: Object): MoreObjects$ToStringHelper;
     // private addHolder(name: string, value: Object): MoreObjects$ToStringHelper;
@@ -24,9 +21,6 @@ export class MoreObjects$ToStringHelper extends Object {
     addValue(value: Object): MoreObjects$ToStringHelper;
     addValue(value: boolean): MoreObjects$ToStringHelper;
     addValue(value: string): MoreObjects$ToStringHelper;
-    addValue(value: number): MoreObjects$ToStringHelper;
-    addValue(value: number): MoreObjects$ToStringHelper;
-    addValue(value: number): MoreObjects$ToStringHelper;
     addValue(value: number): MoreObjects$ToStringHelper;
     omitEmptyValues(): MoreObjects$ToStringHelper;
     omitNullValues(): MoreObjects$ToStringHelper;

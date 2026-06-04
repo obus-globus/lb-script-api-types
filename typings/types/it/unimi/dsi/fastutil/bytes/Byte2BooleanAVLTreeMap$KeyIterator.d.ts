@@ -4,12 +4,10 @@ export class Byte2BooleanAVLTreeMap$KeyIterator extends Byte2BooleanAVLTreeMap$T
     constructor(null_: Byte2BooleanAVLTreeMap$KeyIterator)
     constructor(null_: Byte2BooleanAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextByte(): number;
     previous(): number;
     previousByte(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

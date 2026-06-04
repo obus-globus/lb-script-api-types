@@ -4,4 +4,5 @@ import type { FqName } from '../../../../kotlin/reflect/jvm/internal/impl/name/F
 import type { TypeConstructorMarker } from '../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
 export class KTypeAliasImpl extends Object implements KClassifier, TypeConstructorMarker {
     constructor(fqName: FqName)
+    readonly fqName: FqName;
 }

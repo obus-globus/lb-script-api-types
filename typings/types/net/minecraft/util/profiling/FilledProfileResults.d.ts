@@ -27,7 +27,6 @@ export class FilledProfileResults extends Object implements ProfileResults {
     getStartTimeNano(): number;
     getStartTimeTicks(): number;
     getTickDuration(): number;
-    getTickDuration(): number;
     getTimes(path: string): ResultField[];
     saveResults(file: Path[]): boolean;
 }

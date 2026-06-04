@@ -89,7 +89,6 @@ export class Connection extends SimpleChannelInboundHandler<Packet<Object>> impl
     getDisconnectionDetails(): DisconnectionDetails;
     getLoggableAddress(logIPs: boolean): string;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     getPacketListener(): PacketListener;
     getReceiving(): PacketFlow;
     getRemoteAddress(): SocketAddress;

@@ -3,12 +3,10 @@ import type { Short2BooleanRBTreeMap$TreeIterator } from '../../../../../it/unim
 export class Short2BooleanRBTreeMap$ValueIterator extends Short2BooleanRBTreeMap$TreeIterator implements BooleanListIterator {
     private constructor(null_: Short2BooleanRBTreeMap$ValueIterator)
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     next(): boolean;
     nextBoolean(): boolean;
     previous(): boolean;
     previousBoolean(): boolean;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
 }

@@ -20,8 +20,6 @@ export class NetherNetServerChannel$ServerPeerConnectionObserver extends Object 
     // private checkDataChannels(): void;
     // private extractCandidateType(arg0: string): string;
     onConnectionChange(arg0: RTCPeerConnectionState): void;
-    onConnectionChange(arg0: RTCPeerConnectionState): void;
-    onDataChannel(arg0: RTCDataChannel): void;
     onDataChannel(arg0: RTCDataChannel): void;
     onIceCandidate(arg0: RTCIceCandidate): void;
     onIceCandidateError(arg0: RTCPeerConnectionIceErrorEvent): void;

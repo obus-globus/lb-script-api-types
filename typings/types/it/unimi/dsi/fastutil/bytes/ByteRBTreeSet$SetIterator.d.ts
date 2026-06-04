@@ -9,7 +9,6 @@ export class ByteRBTreeSet$SetIterator extends Object implements ByteListIterato
     // private next: ByteRBTreeSet$Entry;
     // private prev: ByteRBTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class ByteRBTreeSet$SetIterator extends Object implements ByteListIterato
     previousEntry(): ByteRBTreeSet$Entry;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

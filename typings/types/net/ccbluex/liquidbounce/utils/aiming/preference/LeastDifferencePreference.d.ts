@@ -14,5 +14,4 @@ export class LeastDifferencePreference extends Object implements RotationPrefere
     compare(o1: Rotation, o2: Rotation): number;
     getPreferredSpot(eyesPos: Vec3, range: number): Vec3;
     getPreferredSpotOnBox(box: AABB, eyesPos: Vec3, range: number): Vec3;
-    getPreferredSpotOnBox(box: AABB, eyesPos: Vec3, range: number): Vec3;
 }

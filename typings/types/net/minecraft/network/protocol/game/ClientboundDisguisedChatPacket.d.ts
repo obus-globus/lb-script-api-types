@@ -20,7 +20,6 @@ export class ClientboundDisguisedChatPacket extends Record implements Packet<Cli
     handle(listener: ClientGamePacketListener): void;
     hashCode(): number;
     isSkippable(): boolean;
-    isSkippable(): boolean;
     isTerminal(): boolean;
     message(): Component;
     toString(): string;

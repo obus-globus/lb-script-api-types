@@ -18,7 +18,6 @@ export class SlotCollection$Filtered extends Record implements SlotCollection {
     equals(o: Object | null): boolean;
     filter(): (param0: ItemStack) => kotlin.Boolean;
     filter(predicate: (param0: ItemStack) => kotlin.Boolean): SlotCollection;
-    filter(predicate: (param0: ItemStack) => kotlin.Boolean): SlotCollection;
     flatMap(mapper: (param0: ItemStack) => SlotCollection): SlotCollection;
     hashCode(): number;
     itemCopies(): Stream<ItemStack>;

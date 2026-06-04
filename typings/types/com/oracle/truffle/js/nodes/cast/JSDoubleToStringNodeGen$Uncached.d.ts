@@ -9,5 +9,4 @@ export class JSDoubleToStringNodeGen$Uncached extends JSDoubleToStringNode imple
     private constructor()
     executeString(arg0Value: Object): TruffleString;
     executeString(arg0Value: number): TruffleString;
-    executeString(arg0Value: number): TruffleString;
 }

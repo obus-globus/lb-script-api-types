@@ -61,7 +61,6 @@ export abstract class RecipeBookComponent<T extends RecipeBookMenu> extends Obje
     // private widthTooNarrow: boolean;
     // private xOffset: number;
     charTyped(event: CharacterEvent): boolean;
-    charTyped(event: CharacterEvent): boolean;
     // private checkSearchStringUpdate(): void;
     extractGhostRecipe(graphics: GuiGraphicsExtractor, isResultSlotBig: boolean): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
@@ -84,17 +83,12 @@ export abstract class RecipeBookComponent<T extends RecipeBookMenu> extends Obje
     // private isFiltering(): boolean;
     isFocused(): boolean;
     isMouseOver(mouseX: number, mouseY: number): boolean;
-    isMouseOver(mouseX: number, mouseY: number): boolean;
     // private isOffsetNextToMainGUI(): boolean;
     isVisible(): boolean;
     // private isVisibleAccordingToBookData(): boolean;
     keyPressed(event: KeyEvent): boolean;
-    keyPressed(event: KeyEvent): boolean;
-    keyReleased(event: KeyEvent): boolean;
     keyReleased(event: KeyEvent): boolean;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
-    mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
-    mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseDragged(event: MouseButtonEvent, dx: number, dy: number): boolean;
     mouseMoved(x: number, y: number): void;
     mouseReleased(event: MouseButtonEvent): boolean;
@@ -103,7 +97,6 @@ export abstract class RecipeBookComponent<T extends RecipeBookMenu> extends Obje
     nextFocusPath(navigationEvent: FocusNavigationEvent): ComponentPath;
     // private onTabButtonPress(button: Button): void;
     // private pirateSpeechForThePeople(searchTarget: string): void;
-    preeditUpdated(event: PreeditEvent): boolean;
     preeditUpdated(event: PreeditEvent): boolean;
     recipeShown(recipe: RecipeDisplayId): void;
     recipesUpdated(): void;

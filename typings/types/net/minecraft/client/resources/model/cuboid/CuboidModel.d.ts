@@ -25,18 +25,12 @@ export class CuboidModel extends Record implements CuboidModelAccessor, UnbakedM
     // private textureSlots: TextureSlots$Data;
     // private transforms: ItemTransforms;
     ambientOcclusion(): boolean;
-    ambientOcclusion(): boolean;
     equals(o: Object | null): boolean;
     geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
-    geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
-    guiLight(): UnbakedModel$GuiLight;
     guiLight(): UnbakedModel$GuiLight;
     hashCode(): number;
     parent(): Identifier;
-    parent(): Identifier;
-    textureSlots(): TextureSlots$Data;
     textureSlots(): TextureSlots$Data;
     toString(): string;
-    transforms(): ItemTransforms;
     transforms(): ItemTransforms;
 }

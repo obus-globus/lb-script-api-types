@@ -10,7 +10,6 @@ export class BinIO$BooleanDataInputWrapper extends Object implements BooleanIter
     // private next: boolean;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

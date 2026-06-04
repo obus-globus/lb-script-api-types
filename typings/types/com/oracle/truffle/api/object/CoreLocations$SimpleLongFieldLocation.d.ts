@@ -15,16 +15,13 @@ export class CoreLocations$SimpleLongFieldLocation extends CoreLocations$FieldLo
     get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     getLong(store: DynamicObject, shape: Shape): number;
-    getLong(store: DynamicObject, shape: Shape): number;
     getLong(store: DynamicObject, guard: boolean): number;
-    getType(): Class<number>;
     getType(): Class<number>;
     isImplicitCastIntToLong(): boolean;
     primitiveFieldCount(): number;
     set(store: DynamicObject, value: Object, shape: Shape): void;
     set(store: DynamicObject, value: Object, oldShape: Shape, newShape: Shape): void;
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
-    setLong(store: DynamicObject, value: number, shape: Shape): void;
     setLong(store: DynamicObject, value: number, shape: Shape): void;
     setLong(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
 }

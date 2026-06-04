@@ -8,15 +8,9 @@ export class DoubleIterators$FloatIteratorWrapper extends Object implements Doub
     constructor(arg0: FloatIterator)
     // private iterator: FloatIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextDouble(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

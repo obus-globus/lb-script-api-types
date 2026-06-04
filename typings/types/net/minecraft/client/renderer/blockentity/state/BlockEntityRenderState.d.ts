@@ -17,7 +17,6 @@ export class BlockEntityRenderState extends Object implements FabricRenderState 
     lightCoords: number;
     // private renderStateData: Map<Object | null, Object | null>;
     clearExtraData(): void;
-    clearExtraData(): void;
     fillCrashReportCategory(category: CrashReportCategory): void;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;

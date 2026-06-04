@@ -7,8 +7,6 @@ export class Char2FloatOpenHashMap$ValueIterator extends Char2FloatOpenHashMap$M
     constructor(null_: Char2FloatOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

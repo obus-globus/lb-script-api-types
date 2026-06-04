@@ -17,7 +17,6 @@ export abstract class NFSubstitution extends Object {
     composeRuleValue(newRuleValue: number, oldRuleValue: number): number;
     doParse(text: string, parsePosition: ParsePosition, baseValue: number, upperBound: number, lenientParse: boolean, nonNumericalExecutedRuleMask: number, recursionCount: number): Number;
     doSubstitution(number: number, toInsertInto: StringBuilder, position: number, recursionCount: number): void;
-    doSubstitution(number: number, toInsertInto: StringBuilder, position: number, recursionCount: number): void;
     equals(that: Object | null): boolean;
     getPos(): number;
     hashCode(): number;
@@ -26,6 +25,5 @@ export abstract class NFSubstitution extends Object {
     setDivisor(radix: number, exponent: number): void;
     toString(): string;
     tokenChar(): string;
-    transformNumber(number: number): number;
     transformNumber(number: number): number;
 }

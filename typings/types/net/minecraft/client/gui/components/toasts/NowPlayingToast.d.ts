@@ -23,17 +23,12 @@ export class NowPlayingToast extends Object implements Toast {
     getToken(): Object;
     getWantedVisibility(): Toast$Visibility;
     height(): number;
-    height(): number;
     occcupiedSlotCount(): number;
-    onFinishedRendering(): void;
     onFinishedRendering(): void;
     setWantedVisibility(visibility: Toast$Visibility): void;
     showToast(options: Options): void;
     update(manager: ToastManager, fullyVisibleForMs: number): void;
     width(): number;
-    width(): number;
     xPos(screenWidth: number, visiblePortion: number): number;
-    xPos(screenWidth: number, visiblePortion: number): number;
-    yPos(firstSlotIndex: number): number;
     yPos(firstSlotIndex: number): number;
 }

@@ -8,7 +8,6 @@ export class IntArrayBuffer$IntArrayBufferIterator extends Object implements Pri
     // private i: number;
     // private size: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

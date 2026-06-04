@@ -12,28 +12,22 @@ export class ShortShortImmutablePair extends Object implements ShortShortPair, S
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortShortPair;
-    first(arg0: number): ShortShortPair;
     firstShort(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortShortPair;
-    key(arg0: number): ShortShortPair;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortShortPair;
     left(arg0: number): ShortShortPair;
     leftShort(): number;
     right(): number;
     right(arg0: number): ShortShortPair;
-    right(arg0: number): ShortShortPair;
     rightShort(): number;
     second(): number;
-    second(arg0: number): ShortShortPair;
     second(arg0: number): ShortShortPair;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ShortShortPair;
     value(arg0: number): ShortShortPair;
     valueShort(): number;
 }

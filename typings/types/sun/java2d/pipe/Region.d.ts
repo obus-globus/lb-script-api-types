@@ -55,7 +55,6 @@ export class Region extends Object {
     getIntersection(arg0: Region): Region;
     getIntersectionXYWH(arg0: number, arg1: number, arg2: number, arg3: number): Region;
     getIntersectionXYXY(arg0: number, arg1: number, arg2: number, arg3: number): Region;
-    getIntersectionXYXY(arg0: number, arg1: number, arg2: number, arg3: number): Region;
     getIterator(): RegionIterator;
     getLoX(): number;
     getLoY(): number;

@@ -20,16 +20,6 @@ export class CompareToBuilder extends Object implements Builder<number> {
     append(arg0: number[], arg1: number[]): CompareToBuilder;
     append(arg0: string, arg1: string): CompareToBuilder;
     append(arg0: string[], arg1: string[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
-    append(arg0: number, arg1: number): CompareToBuilder;
-    append(arg0: number[], arg1: number[]): CompareToBuilder;
     // private appendArray(arg0: Object, arg1: Object, arg2: (param0: Object) => kotlin.Boolean): void;
     appendSuper(arg0: number): CompareToBuilder;
     build(): number;

@@ -11,7 +11,5 @@ export class AbstractByte2DoubleMap$BasicEntry extends Object implements Byte2Do
     getDoubleValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

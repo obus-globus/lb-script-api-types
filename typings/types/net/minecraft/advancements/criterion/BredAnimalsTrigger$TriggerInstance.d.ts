@@ -28,5 +28,4 @@ export class BredAnimalsTrigger$TriggerInstance extends Record implements Simple
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

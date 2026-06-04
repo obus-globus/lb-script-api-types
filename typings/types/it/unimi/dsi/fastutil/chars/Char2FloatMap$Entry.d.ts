@@ -6,5 +6,4 @@ export interface Char2FloatMap$Entry extends Object, Map$Entry<string, number>{
     getCharKey(): string;
     getFloatValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

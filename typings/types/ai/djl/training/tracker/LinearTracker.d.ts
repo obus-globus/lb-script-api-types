@@ -20,5 +20,4 @@ export class LinearTracker extends Object implements Tracker {
     // private slope: number;
     getNewValue(arg0: number): number;
     getNewValue(arg0: string, arg1: number): number;
-    getNewValue(arg0: string, arg1: number): number;
 }

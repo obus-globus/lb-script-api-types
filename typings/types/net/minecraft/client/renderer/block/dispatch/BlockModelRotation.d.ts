@@ -19,6 +19,5 @@ export class BlockModelRotation extends Object implements ModelState {
     inverseFaceTransformation(face: Direction): Matrix4fc;
     toString(): string;
     transformation(): Transformation;
-    transformation(): Transformation;
     withUvLock(): ModelState;
 }

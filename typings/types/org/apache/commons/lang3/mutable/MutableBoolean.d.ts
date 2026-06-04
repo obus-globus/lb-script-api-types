@@ -18,7 +18,6 @@ export class MutableBoolean extends Object implements Serializable, Comparable<M
     setFalse(): void;
     setTrue(): void;
     setValue(arg0: boolean): void;
-    setValue(arg0: boolean): void;
     toBoolean(): boolean;
     toString(): string;
 }

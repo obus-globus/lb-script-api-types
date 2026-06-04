@@ -19,9 +19,6 @@ export class JsonTreeWriter extends JsonWriter {
     // private peek(): JsonElement;
     // private put(arg0: JsonElement): void;
     value(arg0: boolean): JsonWriter;
-    value(arg0: boolean): JsonWriter;
-    value(arg0: number): JsonWriter;
-    value(arg0: number): JsonWriter;
     value(arg0: number): JsonWriter;
     value(arg0: Number): JsonWriter;
     value(arg0: string): JsonWriter;

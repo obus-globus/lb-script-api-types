@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { Removed } from '../../../kotlinx/coroutines/internal/Removed.d.ts'
 export class LockFreeLinkedListNode extends Object {
     constructor()

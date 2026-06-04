@@ -25,13 +25,11 @@ export class Rational extends Number implements Comparable<Rational> {
     add(arg0: BigDecimal): Rational;
     add(arg0: BigInteger): Rational;
     add(arg0: number): Rational;
-    add(arg0: number): Rational;
     ceil(): Rational;
     compareTo(arg0: Rational): number;
     divide(arg0: Rational): Rational;
     divide(arg0: BigDecimal): Rational;
     divide(arg0: BigInteger): Rational;
-    divide(arg0: number): Rational;
     divide(arg0: number): Rational;
     equals(arg0: Object | null): boolean;
     floor(): Rational;
@@ -45,7 +43,6 @@ export class Rational extends Number implements Comparable<Rational> {
     multiply(arg0: BigDecimal): Rational;
     multiply(arg0: BigInteger): Rational;
     multiply(arg0: number): Rational;
-    multiply(arg0: number): Rational;
     negate(): Rational;
     pow(arg0: BigInteger): Rational;
     pow(arg0: number): Rational;
@@ -58,7 +55,6 @@ export class Rational extends Number implements Comparable<Rational> {
     subtract(arg0: Rational): Rational;
     subtract(arg0: BigDecimal): Rational;
     subtract(arg0: BigInteger): Rational;
-    subtract(arg0: number): Rational;
     subtract(arg0: number): Rational;
     toBigDecimal(arg0: number, arg1: RoundingMode): BigDecimal;
     toBigInteger(): BigInteger;

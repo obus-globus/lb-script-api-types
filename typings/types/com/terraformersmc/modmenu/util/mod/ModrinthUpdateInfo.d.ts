@@ -13,7 +13,6 @@ export class ModrinthUpdateInfo extends Record implements UpdateInfo {
     getDownloadLink(): string;
     getUpdateChannel(): UpdateChannel;
     getUpdateMessage(): Component;
-    getUpdateMessage(): Component;
     hashCode(): number;
     isUpdateAvailable(): boolean;
     projectId(): string;

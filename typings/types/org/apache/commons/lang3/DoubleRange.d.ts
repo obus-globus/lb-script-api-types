@@ -13,5 +13,4 @@ export class DoubleRange extends NumberRange<number> {
     static of(paramarg0: number, paramarg1: number): DoubleRange;
     private constructor(arg0: number, arg1: number)
     fit(arg0: number): number;
-    fit(arg0: number): number;
 }

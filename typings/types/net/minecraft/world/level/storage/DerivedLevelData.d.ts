@@ -11,7 +11,6 @@ export class DerivedLevelData extends Object implements ServerLevelData {
     // private worldData: WorldData;
     // private wrapped: ServerLevelData;
     fillCrashReportCategory(category: CrashReportCategory, levelHeightAccessor: LevelHeightAccessor): void;
-    fillCrashReportCategory(category: CrashReportCategory, levelHeightAccessor: LevelHeightAccessor): void;
     getDifficulty(): Difficulty;
     getGameTime(): number;
     getGameType(): GameType;

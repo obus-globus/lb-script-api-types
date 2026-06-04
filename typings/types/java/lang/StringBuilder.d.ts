@@ -24,10 +24,6 @@ export class StringBuilder extends AbstractStringBuilder implements Serializable
     append(arg0: CharSequence): StringBuilder;
     append(arg0: CharSequence, arg1: number, arg2: number): StringBuilder;
     append(arg0: number): StringBuilder;
-    append(arg0: number): StringBuilder;
-    append(arg0: number): StringBuilder;
-    append(arg0: number): StringBuilder;
-    append(arg0: string): StringBuilder;
     appendCodePoint(arg0: number): StringBuilder;
     chars(): IntStream;
     codePoints(): IntStream;
@@ -46,10 +42,6 @@ export class StringBuilder extends AbstractStringBuilder implements Serializable
     insert(arg0: number, arg1: CharSequence): StringBuilder;
     insert(arg0: number, arg1: CharSequence, arg2: number, arg3: number): StringBuilder;
     insert(arg0: number, arg1: number): StringBuilder;
-    insert(arg0: number, arg1: number): StringBuilder;
-    insert(arg0: number, arg1: number): StringBuilder;
-    insert(arg0: number, arg1: number): StringBuilder;
-    insert(arg0: number, arg1: string): StringBuilder;
     isEmpty(): boolean;
     lastIndexOf(arg0: string): number;
     lastIndexOf(arg0: string, arg1: number): number;

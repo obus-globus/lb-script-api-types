@@ -10,7 +10,6 @@ export class BlobCache extends StoredObject {
     addBlob(arg0: number, arg1: number[]): void;
     getBlob(arg0: number[]): CompletableFuture<number[]>;
     getBlob(arg0: boolean, arg1: number[]): CompletableFuture<number[]>;
-    getBlob(arg0: number[]): CompletableFuture<number[]>;
     hasBlob(arg0: number[]): boolean;
     tick(): void;
 }

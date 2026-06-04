@@ -14,7 +14,6 @@ export class LocaleIDParser extends Object {
     keywords: { [key: string]: string };
     // private addSeparator(): void;
     // private append(arg0: string): void;
-    // private append(arg0: string): void;
     // private atTerminator(): boolean;
     defaultKeywordValue(arg0: string, arg1: string): void;
     getBaseName(): string;

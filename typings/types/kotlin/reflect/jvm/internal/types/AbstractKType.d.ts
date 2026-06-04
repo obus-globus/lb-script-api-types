@@ -9,7 +9,7 @@ import type { FlexibleTypeMarker } from '../../../../../kotlin/reflect/jvm/inter
 import type { SimpleTypeMarker } from '../../../../../kotlin/reflect/jvm/internal/impl/types/model/SimpleTypeMarker.d.ts'
 import type { TypeArgumentListMarker } from '../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeArgumentListMarker.d.ts'
 export abstract class AbstractKType extends Object implements KTypeBase, DefinitelyNotNullTypeMarker, FlexibleTypeMarker, SimpleTypeMarker, TypeArgumentListMarker {
-    constructor(computeJavaType: () => Type | null)
+    constructor(computeJavaType: (() => Type) | null)
     readonly abbreviation: KType | null;
     // private computeJavaType: ReflectProperties$LazySoftVal<Type> | null;
     // private /*not mapped: */ getComputeJavaType(): ReflectProperties$LazySoftVal<Type> | null;

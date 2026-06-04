@@ -26,8 +26,6 @@ export abstract class AbstractOperatingSystem extends Object implements Operatin
     getProcesses(): OSProcess[];
     getProcesses(arg0: (param0: OSProcess) => kotlin.Boolean, arg1: (param0: OSProcess) => kotlin.Boolean, arg2: number): OSProcess[];
     getProcesses(arg0: E[]): OSProcess[];
-    getProcesses(): OSProcess[];
-    getProcesses(arg0: E[]): OSProcess[];
     getServices(): OSService[];
     getSessions(): OSSession[];
     getVersionInfo(): OperatingSystem$OSVersionInfo;

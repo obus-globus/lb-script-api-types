@@ -16,5 +16,4 @@ export class ItemParser$SuggestionsVisitor extends Object implements ItemParser$
     visitItem(item: Holder<Item>): void;
     visitRemovedComponent(type: DataComponentType<T>): void;
     visitSuggestions(suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>): void;
-    visitSuggestions(suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>): void;
 }

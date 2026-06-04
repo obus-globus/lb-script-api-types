@@ -22,5 +22,4 @@ export class TameAnimalTrigger$TriggerInstance extends Record implements SimpleC
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

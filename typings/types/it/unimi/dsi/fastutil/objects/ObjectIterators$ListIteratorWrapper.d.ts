@@ -6,7 +6,6 @@ export class ObjectIterators$ListIteratorWrapper<K extends Object | number | str
     constructor(arg0: ListIterator<K>)
     // private i: ListIterator<K>;
     add(arg0: K): void;
-    add(arg0: K): void;
     forEachRemaining(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -15,7 +14,5 @@ export class ObjectIterators$ListIteratorWrapper<K extends Object | number | str
     previous(): K;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: K): void;
     set(arg0: K): void;
 }

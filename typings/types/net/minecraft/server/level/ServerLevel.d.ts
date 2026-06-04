@@ -214,7 +214,6 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
-    fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;
     fabric_invalidateCache(arg0: BlockPos): void;
     fabric_markChanged(arg0: AttachmentType<Object>): void;
@@ -223,7 +222,6 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     fabric_sendAndClearDeferredSyncChanges(arg0: ServerPlayer[]): void;
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
-    fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;

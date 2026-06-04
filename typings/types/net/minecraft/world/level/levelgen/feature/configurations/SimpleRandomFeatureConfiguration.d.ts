@@ -11,5 +11,4 @@ export class SimpleRandomFeatureConfiguration extends Object implements FeatureC
     constructor(features: Holder<T>[])
     features: Holder<T>[];
     getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
 }

@@ -8,11 +8,9 @@ import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
 export class CharIterators$EmptyIterator extends Object implements CharListIterator, Serializable, Cloneable {
     constructor()
     add(arg0: string): void;
-    add(arg0: string): void;
     back(arg0: number): number;
     clone(): Object;
     protected clone(): Object;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -25,7 +23,6 @@ export class CharIterators$EmptyIterator extends Object implements CharListItera
     previousIndex(): number;
     // private readResolve(): Object;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
     skip(arg0: number): number;
 }

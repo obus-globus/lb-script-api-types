@@ -46,13 +46,9 @@ export abstract class ArrayPrototypeBuiltins$JSArrayOperation extends ArrayProto
     nextElementIndex(target: Object, currentIndex: number, length: number): number;
     previousElementIndex(target: Object, currentIndex: number): number;
     read(target: Object, index: number): Object;
-    read(target: Object, index: number): Object;
-    setLength(thisObject: Object, length: number): void;
     setLength(thisObject: Object, length: number): void;
     // private setLengthIntl(thisObject: Object, length: Object): void;
     typedArrayCreateSameType(thisObj: JSTypedArrayObject, length: number): JSTypedArrayObject;
     write(target: Object, index: number, value: Object): void;
-    write(target: Object, index: number, value: Object): void;
-    writeOwn(target: Object, index: number, value: Object): void;
     writeOwn(target: Object, index: number, value: Object): void;
 }

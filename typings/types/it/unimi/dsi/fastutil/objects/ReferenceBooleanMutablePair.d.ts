@@ -14,17 +14,12 @@ export class ReferenceBooleanMutablePair<K extends Object | number | string | bo
     right(): boolean;
     right(arg0: boolean): ReferenceBooleanPair<K>;
     right(arg0: boolean): ReferenceBooleanMutablePair<K>;
-    right(): boolean;
-    right(arg0: boolean): ReferenceBooleanPair<K>;
-    right(arg0: boolean): ReferenceBooleanPair<K>;
     rightBoolean(): boolean;
     second(): boolean;
-    second(arg0: boolean): ReferenceBooleanPair<K>;
     second(arg0: boolean): ReferenceBooleanPair<K>;
     secondBoolean(): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): ReferenceBooleanPair<K>;
     value(arg0: boolean): ReferenceBooleanPair<K>;
     valueBoolean(): boolean;
 }

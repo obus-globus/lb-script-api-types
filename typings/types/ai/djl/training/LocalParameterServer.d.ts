@@ -9,5 +9,4 @@ export class LocalParameterServer extends Object implements ParameterServer {
     init(arg0: string, arg1: NDArray[]): void;
     update(arg0: string, arg1: NDArray[]): void;
     update(arg0: string, arg1: NDArray[], arg2: NDArray[]): void;
-    update(arg0: string, arg1: NDArray[]): void;
 }

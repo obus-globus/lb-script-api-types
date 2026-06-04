@@ -12,28 +12,22 @@ export class FloatByteImmutablePair extends Object implements FloatBytePair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatBytePair;
-    first(arg0: number): FloatBytePair;
     firstFloat(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): FloatBytePair;
-    key(arg0: number): FloatBytePair;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatBytePair;
     left(arg0: number): FloatBytePair;
     leftFloat(): number;
     right(): number;
     right(arg0: number): FloatBytePair;
-    right(arg0: number): FloatBytePair;
     rightByte(): number;
     second(): number;
-    second(arg0: number): FloatBytePair;
     second(arg0: number): FloatBytePair;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): FloatBytePair;
     value(arg0: number): FloatBytePair;
     valueByte(): number;
 }

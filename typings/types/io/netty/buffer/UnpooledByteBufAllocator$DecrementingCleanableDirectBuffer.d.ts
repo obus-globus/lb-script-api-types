@@ -11,7 +11,5 @@ export class UnpooledByteBufAllocator$DecrementingCleanableDirectBuffer extends 
     buffer(): ByteBuffer;
     clean(): void;
     hasMemoryAddress(): boolean;
-    hasMemoryAddress(): boolean;
-    memoryAddress(): number;
     memoryAddress(): number;
 }

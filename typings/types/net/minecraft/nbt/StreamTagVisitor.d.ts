@@ -5,13 +5,6 @@ import type { TagType } from '../../../net/minecraft/nbt/TagType.d.ts'
 export interface StreamTagVisitor extends Object{
     visit(value: number): StreamTagVisitor$ValueResult;
     visit(value: number[]): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number[]): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
-    visit(value: number[]): StreamTagVisitor$ValueResult;
-    visit(value: number): StreamTagVisitor$ValueResult;
     visit(value: string): StreamTagVisitor$ValueResult;
     visitContainerEnd(): StreamTagVisitor$ValueResult;
     visitElement(type: TagType<Object>, index: number): StreamTagVisitor$EntryResult;

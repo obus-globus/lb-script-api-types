@@ -148,8 +148,6 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     getLeashHolder(): Entity;
     getLeashOffset(): Vec3;
     getLeashOffset(partialTicks: number): Vec3;
-    getLeashOffset(): Vec3;
-    getLeashOffset(partialTicks: number): Vec3;
     getMaxPassengers(): number;
     getMotionDirection(): Direction;
     getMovementEmission(): Entity$MovementEmission;
@@ -157,7 +155,6 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     getPaddleState(side: number): boolean;
     getPassengerAttachmentPoint(passenger: Entity, dimensions: EntityDimensions, scale: number): Vec3;
     getPickResult(): ItemStack;
-    getQuadLeashOffsets(): Vec3[];
     getQuadLeashOffsets(): Vec3[];
     getRelativePortalPosition(axis: Direction$Axis, portalArea: BlockUtil$FoundRectangle): Vec3;
     getRowingTime(side: number, a: number): number;
@@ -199,7 +196,6 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     setLeashData(leashData: Leashable$LeashData): void;
     setLeashedTo(holder: Entity, synch: boolean): void;
     setPaddleState(left: boolean, right: boolean): void;
-    supportQuadLeash(): boolean;
     supportQuadLeash(): boolean;
     tick(): void;
     // private tickBubbleColumn(): void;

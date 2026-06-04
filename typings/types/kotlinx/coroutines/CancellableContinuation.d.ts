@@ -10,9 +10,9 @@ export interface CancellableContinuation<T extends Object | number | string | bo
     completeResume(token: Object): void;
     initCancellability(): void;
     invokeOnCancellation(handler: (param0: Throwable | null) => void): void;
-    resume<R extends T>(value: R, onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void | null): void;
-    resume(value: T, onCancellation: (param0: Throwable) => void | null): void;
-    tryResume<R extends T>(value: R, idempotent: Object | null, onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void | null): Object | null;
+    resume<R extends T>(value: R, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): void;
+    resume(value: T, onCancellation: ((param0: Throwable) => void) | null): void;
+    tryResume<R extends T>(value: R, idempotent: Object | null, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): Object | null;
     tryResume(value: T, idempotent: Object | null): Object | null;
     tryResumeWithException(exception: Throwable): Object | null;
 }

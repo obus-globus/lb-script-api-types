@@ -81,7 +81,6 @@ export class SculkBlock extends DropExperienceBlock implements SculkBehaviour {
     attemptSpreadVein(level: LevelAccessor, pos: BlockPos, state: BlockState, facings: E[], postProcess: boolean): boolean;
     attemptUseCharge(cursor: SculkSpreader$ChargeCursor, level: LevelAccessor, originPos: BlockPos, random: RandomSource, spreader: SculkSpreader, spreadVein: boolean): number;
     canChangeBlockStateOnSpread(): boolean;
-    canChangeBlockStateOnSpread(): boolean;
     codec(): MapCodec<SculkBlock>;
     depositCharge(level: LevelAccessor, pos: BlockPos, random: RandomSource): boolean;
     // private getRandomGrowthState(level: LevelAccessor, pos: BlockPos, random: RandomSource, isWorldGen: boolean): BlockState;

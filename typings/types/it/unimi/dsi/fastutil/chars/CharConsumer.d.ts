@@ -3,9 +3,7 @@ import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CharConsumer extends Consumer<string>, IntConsumer, Object{
     accept(arg0: string): void;
-    accept(arg0: string): void;
     accept(arg0: number): void;
-    andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: number) => void): (param0: string) => void;
     andThen(arg0: (param0: T) => void): (param0: T) => void;

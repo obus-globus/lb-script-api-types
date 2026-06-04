@@ -10,7 +10,6 @@ export class ASMClassBuilder extends Object implements ClassBuilder {
     readonly name: string;
     // private opcodeResolver: (param0: string) => kotlin.Int;
     field(arg0: number, arg1: string, arg2: string, arg3: string, arg4: Object): void;
-    field(arg0: number, arg1: string, arg2: string, arg3: string, arg4: Object): void;
     field(arg0: number, arg1: string, arg2: string, arg3: string, arg4: Object, arg5: (param0: FieldBuilder) => void): void;
     getClassWriter(): Object;
     getName(): string;

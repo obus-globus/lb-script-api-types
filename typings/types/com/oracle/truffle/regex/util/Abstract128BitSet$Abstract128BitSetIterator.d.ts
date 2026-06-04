@@ -8,7 +8,6 @@ export class Abstract128BitSet$Abstract128BitSetIterator extends Object implemen
     // private i: number;
     // private nextWord: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

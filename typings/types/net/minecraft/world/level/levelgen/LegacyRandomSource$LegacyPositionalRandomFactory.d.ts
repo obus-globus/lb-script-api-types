@@ -9,9 +9,7 @@ export class LegacyRandomSource$LegacyPositionalRandomFactory extends Object imp
     // private seed: number;
     at(x: number, y: number, z: number): RandomSource;
     at(pos: BlockPos): RandomSource;
-    at(pos: BlockPos): RandomSource;
     fromHashOf(name: string): RandomSource;
-    fromHashOf(name: Identifier): RandomSource;
     fromHashOf(name: Identifier): RandomSource;
     fromSeed(seed: number): RandomSource;
     parityConfigString(sb: StringBuilder): void;

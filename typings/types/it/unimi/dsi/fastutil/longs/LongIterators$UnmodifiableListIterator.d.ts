@@ -7,9 +7,6 @@ export class LongIterators$UnmodifiableListIterator extends Object implements Lo
     constructor(arg0: LongListIterator)
     // private i: LongListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -20,6 +17,5 @@ export class LongIterators$UnmodifiableListIterator extends Object implements Lo
     previousIndex(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

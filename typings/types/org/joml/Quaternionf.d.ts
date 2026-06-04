@@ -172,8 +172,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     set(arg0: Quaterniondc): Quaternionf;
     set(arg0: Quaternionfc): Quaternionf;
     setAngleAxis(arg0: number, arg1: number, arg2: number, arg3: number): Quaternionf;
-    setAngleAxis(arg0: number, arg1: number, arg2: number, arg3: number): Quaternionf;
-    // private setFromNormalized(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
     // private setFromNormalized(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
     setFromNormalized(arg0: Matrix3dc): Quaternionf;
     setFromNormalized(arg0: Matrix3fc): Quaternionf;
@@ -181,7 +179,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     setFromNormalized(arg0: Matrix4fc): Quaternionf;
     setFromNormalized(arg0: Matrix4x3dc): Quaternionf;
     setFromNormalized(arg0: Matrix4x3fc): Quaternionf;
-    // private setFromUnnormalized(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
     // private setFromUnnormalized(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
     setFromUnnormalized(arg0: Matrix3dc): Quaternionf;
     setFromUnnormalized(arg0: Matrix3fc): Quaternionf;
@@ -199,7 +196,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     toString(arg0: NumberFormat): string;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transform(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transform(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transform(arg0: Vector3d): Vector3d;
@@ -212,7 +208,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     transform(arg0: Vector4fc, arg1: Vector4f): Vector4f;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transformInverse(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transformInverse(arg0: Vector3d): Vector3d;
@@ -225,7 +220,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     transformInverse(arg0: Vector4fc, arg1: Vector4f): Vector4f;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transformInverseUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transformInverseUnit(arg0: Vector3dc, arg1: Vector3d): Vector3d;
@@ -249,7 +243,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     transformPositiveZ(arg0: Vector4f): Vector4f;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4d): Vector4d;
-    transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;
     transformUnit(arg0: number, arg1: number, arg2: number, arg3: Vector4f): Vector4f;
     transformUnit(arg0: Vector3dc, arg1: Vector3d): Vector3d;

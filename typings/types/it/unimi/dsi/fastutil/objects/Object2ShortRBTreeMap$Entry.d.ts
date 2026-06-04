@@ -23,7 +23,6 @@ export class Object2ShortRBTreeMap$Entry<K extends Object | number | string | bo
     right(): Object2ShortRBTreeMap$Entry<K>;
     right(arg0: Object2ShortRBTreeMap$Entry<K>): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Object2ShortRBTreeMap$Entry<K>): void;
     succ(arg0: boolean): void;

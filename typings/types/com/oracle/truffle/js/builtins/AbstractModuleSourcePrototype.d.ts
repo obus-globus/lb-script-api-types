@@ -20,7 +20,6 @@ export class AbstractModuleSourcePrototype extends Enum<AbstractModuleSourceProt
     args(): BuiltinArgumentBuilder;
     asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
-    createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;
     getLength(): number;

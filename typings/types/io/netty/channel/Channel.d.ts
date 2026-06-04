@@ -19,26 +19,20 @@ export interface Channel extends ChannelOutboundInvoker, AttributeMap, Object, C
     alloc(): ByteBufAllocator;
     bind(arg0: SocketAddress): ChannelFuture;
     bind(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
-    bind(arg0: SocketAddress): ChannelFuture;
     bytesBeforeUnwritable(): number;
     bytesBeforeWritable(): number;
     close(): ChannelFuture;
     close(arg0: ChannelPromise): ChannelFuture;
-    close(): ChannelFuture;
     closeFuture(): ChannelFuture;
     config(): ChannelConfig;
     connect(arg0: SocketAddress): ChannelFuture;
     connect(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     connect(arg0: SocketAddress, arg1: SocketAddress): ChannelFuture;
     connect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): ChannelFuture;
-    connect(arg0: SocketAddress): ChannelFuture;
-    connect(arg0: SocketAddress, arg1: SocketAddress): ChannelFuture;
     deregister(): ChannelFuture;
     deregister(arg0: ChannelPromise): ChannelFuture;
-    deregister(): ChannelFuture;
     disconnect(): ChannelFuture;
     disconnect(arg0: ChannelPromise): ChannelFuture;
-    disconnect(): ChannelFuture;
     eventLoop(): (Object | null)[];
     flush(): Channel;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
@@ -62,8 +56,6 @@ export interface Channel extends ChannelOutboundInvoker, AttributeMap, Object, C
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;
     write(arg0: Object, arg1: ChannelPromise): ChannelFuture;
-    write(arg0: Object): ChannelFuture;
     writeAndFlush(arg0: Object): ChannelFuture;
     writeAndFlush(arg0: Object, arg1: ChannelPromise): ChannelFuture;
-    writeAndFlush(arg0: Object): ChannelFuture;
 }

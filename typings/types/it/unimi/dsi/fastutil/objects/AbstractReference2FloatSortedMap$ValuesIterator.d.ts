@@ -9,8 +9,6 @@ export class AbstractReference2FloatSortedMap$ValuesIterator<K extends Object | 
     constructor(arg0: ObjectBidirectionalIterator<Reference2FloatMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2FloatMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;

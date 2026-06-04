@@ -14,15 +14,11 @@ export class TracyZoneFiller extends Object implements ProfilerFiller {
     // private plots: { [key: string]: TracyZoneFiller$PlotAndValue };
     // private activeZone(): Zone;
     addZoneText(text: string): void;
-    addZoneText(text: string): void;
-    addZoneValue(value: number): void;
     addZoneValue(value: number): void;
     endTick(): void;
     incrementCounter(name: () => string): void;
     incrementCounter(name: string): void;
-    incrementCounter(name: () => string): void;
     incrementCounter(name: () => string, amount: number): void;
-    incrementCounter(name: string): void;
     incrementCounter(name: string, amount: number): void;
     markForCharting(category: MetricCategory): void;
     pop(): void;
@@ -30,7 +26,6 @@ export class TracyZoneFiller extends Object implements ProfilerFiller {
     popPush(name: string): void;
     push(name: () => string): void;
     push(name: string): void;
-    setZoneColor(color: number): void;
     setZoneColor(color: number): void;
     startTick(): void;
     zone(name: () => string): Zone_2;

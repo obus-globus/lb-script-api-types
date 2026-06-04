@@ -18,16 +18,13 @@ export class Float2ReferenceOpenCustomHashMap$MapEntry extends Object implements
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatReferencePair<V>;
-    first(arg0: number): FloatReferencePair<V>;
     firstFloat(): number;
     getFloatKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): FloatReferencePair<V>;
-    key(arg0: number): FloatReferencePair<V>;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatReferencePair<V>;
     left(arg0: number): FloatReferencePair<V>;
     leftFloat(): number;
     right<V extends Object | number | string | boolean>(): V;

@@ -40,8 +40,6 @@ export class ItemStackRenderState$LayerRenderState extends Object implements Fab
     // private applyTransform(localPose: PoseStack$Pose): void;
     clear(): void;
     clearExtraData(): void;
-    clearExtraData(): void;
-    emitter(): QuadEmitter;
     emitter(): QuadEmitter;
     fabric_getMutableMesh(): MutableMesh;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;

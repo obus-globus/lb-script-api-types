@@ -14,9 +14,4 @@ export class BinaryInput$ByteArrayBinaryInput extends BinaryInput {
     read(b: (Object | null)[], off: number, len: number): void;
     read(b: number[], off: number, len: number): void;
     read(b: string[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
-    read(b: number[], off: number, len: number): void;
 }

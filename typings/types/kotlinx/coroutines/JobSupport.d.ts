@@ -1,6 +1,7 @@
 import type { CancellationException } from '../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
+import type { AtomicRef } from '../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { ChildHandle } from '../../kotlinx/coroutines/ChildHandle.d.ts'
 import type { ChildHandleNode } from '../../kotlinx/coroutines/ChildHandleNode.d.ts'
 import type { ChildJob } from '../../kotlinx/coroutines/ChildJob.d.ts'
@@ -23,7 +24,6 @@ export class JobSupport extends Object implements ChildJob, Job, ParentJob {
     attachChild(child: ChildJob): ChildHandle;
     protected awaitInternal(): Object | null;
     // private awaitSuspend(): Object | null;
-    cancel(): void;
     cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;

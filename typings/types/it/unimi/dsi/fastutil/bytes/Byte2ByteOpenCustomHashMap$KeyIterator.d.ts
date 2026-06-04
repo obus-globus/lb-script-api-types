@@ -7,8 +7,6 @@ export class Byte2ByteOpenCustomHashMap$KeyIterator extends Byte2ByteOpenCustomH
     constructor(null_: Byte2ByteOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextByte(): number;
     skip(arg0: number): number;

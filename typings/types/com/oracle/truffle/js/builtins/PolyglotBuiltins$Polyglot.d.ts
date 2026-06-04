@@ -33,7 +33,6 @@ export class PolyglotBuiltins$Polyglot extends Enum<PolyglotBuiltins$Polyglot> i
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
-    isOptional(): boolean;
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;

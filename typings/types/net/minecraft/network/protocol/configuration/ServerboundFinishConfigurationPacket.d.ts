@@ -14,6 +14,5 @@ export class ServerboundFinishConfigurationPacket extends Object implements Pack
     handle(listener: ServerConfigurationPacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     type(): PacketType<ServerboundFinishConfigurationPacket>;
 }

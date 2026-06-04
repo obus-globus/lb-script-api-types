@@ -1,5 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Ref$ObjectRef } from '../../../kotlin/jvm/internal/Ref$ObjectRef.d.ts'
+import type { AtomicInt } from '../../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { GlobalQueue } from '../../../kotlinx/coroutines/scheduling/GlobalQueue.d.ts'
 import type { Task } from '../../../kotlinx/coroutines/scheduling/Task.d.ts'
 export class WorkQueue extends Object {

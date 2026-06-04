@@ -41,7 +41,6 @@ export class JavaConverter_v1_20_3 extends Object implements DataConverter<Objec
     forkIfDefault(): DataConverter<T>;
     mergeList<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeList(arg0: Object, arg1: Object[]): Result<Object>;
-    mergeList(arg0: Object, arg1: Object[]): Result<Object>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T, arg2: T): Result<T>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: Object, arg1: Object, arg2: Object): Result<Object>;

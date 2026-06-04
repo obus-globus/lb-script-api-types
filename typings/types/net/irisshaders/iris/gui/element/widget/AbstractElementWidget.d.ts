@@ -26,7 +26,6 @@ export abstract class AbstractElementWidget<T extends OptionMenuElement> extends
     getCurrentFocusPath(): ComponentPath;
     getNarratables(): E[];
     getRectangle(): ScreenRectangle;
-    getRectangle(): ScreenRectangle;
     init(arg0: ShaderPackScreen, arg1: NavigationController): void;
     isActive(): boolean;
     isFocused(): boolean;

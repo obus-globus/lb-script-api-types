@@ -19,8 +19,6 @@ export class StatsAccumulator extends Object {
     addAll(values: IntStream): void;
     addAll(values: LongStream): void;
     addAll(values: number[]): void;
-    addAll(values: number[]): void;
-    addAll(values: number[]): void;
     addAll(values: Number[]): void;
     addAll(values: Iterator<Number>): void;
     count(): number;

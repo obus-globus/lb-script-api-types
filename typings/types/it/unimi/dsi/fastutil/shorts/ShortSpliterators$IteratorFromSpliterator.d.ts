@@ -10,22 +10,10 @@ export class ShortSpliterators$IteratorFromSpliterator extends Object implements
     // private holder: number;
     // private spliterator: ShortSpliterator;
     accept(arg0: number): void;
-    accept(arg0: number): void;
-    accept(arg0: number): void;
-    accept(arg0: number): void;
-    accept(arg0: number): void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
-    andThen(arg0: (param0: number) => void): (param0: number) => void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

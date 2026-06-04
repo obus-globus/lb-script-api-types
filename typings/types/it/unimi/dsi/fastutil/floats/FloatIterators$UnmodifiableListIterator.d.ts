@@ -7,9 +7,6 @@ export class FloatIterators$UnmodifiableListIterator extends Object implements F
     constructor(arg0: FloatListIterator)
     // private i: FloatListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -20,6 +17,5 @@ export class FloatIterators$UnmodifiableListIterator extends Object implements F
     previousFloat(): number;
     previousIndex(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

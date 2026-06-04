@@ -70,7 +70,6 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     dimensionType(): DimensionType;
     enabledFeatures(): FeatureFlagSet;
     ensureCanWrite(pos: BlockPos): boolean;
-    ensureCanWrite(pos: BlockPos): boolean;
     environmentAttributes(): EnvironmentAttributeReader;
     gameEvent(gameEvent: Holder<GameEvent>, pos: BlockPos, context: GameEvent$Context): void;
     gameEvent(gameEvent: Holder<GameEvent>, position: Vec3, context: GameEvent$Context): void;
@@ -127,6 +126,5 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     removeBlock(pos: BlockPos, movedByPiston: boolean): boolean;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number): boolean;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number, updateLimit: number): boolean;
-    setCurrentlyGenerating(currentlyGenerating: () => string): void;
     setCurrentlyGenerating(currentlyGenerating: () => string): void;
 }

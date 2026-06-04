@@ -6,14 +6,8 @@ import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/fu
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface LongSpliterator extends Spliterator$OfLong, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => kotlin.Int;
     skip(arg0: number): number;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): LongSpliterator;
 }

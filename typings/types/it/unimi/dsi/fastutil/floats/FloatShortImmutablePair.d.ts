@@ -12,28 +12,22 @@ export class FloatShortImmutablePair extends Object implements FloatShortPair, S
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatShortPair;
-    first(arg0: number): FloatShortPair;
     firstFloat(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): FloatShortPair;
-    key(arg0: number): FloatShortPair;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatShortPair;
     left(arg0: number): FloatShortPair;
     leftFloat(): number;
     right(): number;
     right(arg0: number): FloatShortPair;
-    right(arg0: number): FloatShortPair;
     rightShort(): number;
     second(): number;
-    second(arg0: number): FloatShortPair;
     second(arg0: number): FloatShortPair;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): FloatShortPair;
     value(arg0: number): FloatShortPair;
     valueShort(): number;
 }

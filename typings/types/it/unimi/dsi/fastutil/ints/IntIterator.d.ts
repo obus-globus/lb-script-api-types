@@ -5,11 +5,6 @@ import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/func
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface IntIterator extends PrimitiveIterator$OfInt, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    next(): number;
     next(): number;
     nextInt(): number;
     skip(arg0: number): number;

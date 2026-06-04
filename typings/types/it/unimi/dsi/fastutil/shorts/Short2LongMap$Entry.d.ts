@@ -6,5 +6,4 @@ export interface Short2LongMap$Entry extends Object, Map$Entry<number, number>{
     getLongValue(): number;
     getShortKey(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

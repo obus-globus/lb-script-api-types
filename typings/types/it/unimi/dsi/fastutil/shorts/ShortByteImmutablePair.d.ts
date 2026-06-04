@@ -12,28 +12,22 @@ export class ShortByteImmutablePair extends Object implements ShortBytePair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortBytePair;
-    first(arg0: number): ShortBytePair;
     firstShort(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortBytePair;
-    key(arg0: number): ShortBytePair;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortBytePair;
     left(arg0: number): ShortBytePair;
     leftShort(): number;
     right(): number;
     right(arg0: number): ShortBytePair;
-    right(arg0: number): ShortBytePair;
     rightByte(): number;
     second(): number;
-    second(arg0: number): ShortBytePair;
     second(arg0: number): ShortBytePair;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ShortBytePair;
     value(arg0: number): ShortBytePair;
     valueByte(): number;
 }

@@ -11,10 +11,7 @@ export class LongLinkedOpenCustomHashSet$SetIterator extends Object implements L
     // private next: number;
     // private prev: number;
     add(arg0: number): void;
-    add(arg0: number): void;
     // private ensureIndexKnown(): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -25,7 +22,5 @@ export class LongLinkedOpenCustomHashSet$SetIterator extends Object implements L
     previousIndex(): number;
     previousLong(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

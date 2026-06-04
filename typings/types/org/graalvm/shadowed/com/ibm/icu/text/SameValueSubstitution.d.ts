@@ -9,5 +9,4 @@ export class SameValueSubstitution extends NFSubstitution {
     composeRuleValue(newRuleValue: number, oldRuleValue: number): number;
     tokenChar(): string;
     transformNumber(number: number): number;
-    transformNumber(number: number): number;
 }

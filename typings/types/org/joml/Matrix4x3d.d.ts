@@ -100,8 +100,6 @@ export class Matrix4x3d extends Object implements Externalizable, Cloneable, Mat
     get(arg0: FloatBuffer): FloatBuffer;
     get(arg0: number[]): number[];
     get(arg0: number[], arg1: number): number[];
-    get(arg0: number[]): number[];
-    get(arg0: number[], arg1: number): number[];
     get(arg0: number, arg1: ByteBuffer): ByteBuffer;
     get(arg0: number, arg1: DoubleBuffer): DoubleBuffer;
     get(arg0: number, arg1: FloatBuffer): FloatBuffer;
@@ -109,8 +107,6 @@ export class Matrix4x3d extends Object implements Externalizable, Cloneable, Mat
     get(arg0: Matrix4x3d): Matrix4x3d;
     get4x4(arg0: ByteBuffer): ByteBuffer;
     get4x4(arg0: DoubleBuffer): DoubleBuffer;
-    get4x4(arg0: number[]): number[];
-    get4x4(arg0: number[], arg1: number): number[];
     get4x4(arg0: number[]): number[];
     get4x4(arg0: number[], arg1: number): number[];
     get4x4(arg0: number, arg1: ByteBuffer): ByteBuffer;
@@ -454,8 +450,6 @@ export class Matrix4x3d extends Object implements Externalizable, Cloneable, Mat
     set(arg0: DoubleBuffer): Matrix4x3d;
     set(arg0: FloatBuffer): Matrix4x3d;
     set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number): Matrix4x3d;
-    set(arg0: number[]): Matrix4x3d;
-    set(arg0: number[], arg1: number): Matrix4x3d;
     set(arg0: number[]): Matrix4x3d;
     set(arg0: number[], arg1: number): Matrix4x3d;
     set(arg0: number, arg1: ByteBuffer): Matrix4x3d;

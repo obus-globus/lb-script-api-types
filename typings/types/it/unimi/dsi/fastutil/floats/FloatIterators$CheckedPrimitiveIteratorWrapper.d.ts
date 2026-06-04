@@ -6,7 +6,5 @@ import type { DoubleConsumer } from '../../../../../java/util/function/DoubleCon
 export class FloatIterators$CheckedPrimitiveIteratorWrapper extends FloatIterators$PrimitiveIteratorWrapper {
     constructor(arg0: PrimitiveIterator$OfDouble)
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     nextFloat(): number;
 }

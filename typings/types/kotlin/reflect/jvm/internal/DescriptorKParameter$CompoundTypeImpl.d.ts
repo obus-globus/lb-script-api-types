@@ -6,7 +6,6 @@ export class DescriptorKParameter$CompoundTypeImpl extends Object implements Typ
     // private types: Type[];
     equals(other: Object | null): boolean;
     getTypeName(): string;
-    getTypeName(): string;
     hashCode(): number;
     toString(): string;
 }

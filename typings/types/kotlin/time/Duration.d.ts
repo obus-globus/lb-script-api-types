@@ -66,7 +66,6 @@ export class Duration extends Object implements Comparable<Duration> {
     // private addValuesMixedRanges(thisMillis: number, otherNanos: number): Duration;
     compareTo(other: Duration): number;
     div(scale: number): Duration;
-    div(scale: number): Duration;
     div(other: Duration): number;
     equals(other: Object | null): boolean;
     hashCode(): number;
@@ -78,7 +77,6 @@ export class Duration extends Object implements Comparable<Duration> {
     isPositive(): boolean;
     minus(other: Duration): Duration;
     plus(other: Duration): Duration;
-    times(scale: number): Duration;
     times(scale: number): Duration;
     toComponents<T extends Object | number | string | boolean>(action: (param0: number, param1: number) => T): T;
     toComponents<T extends Object | number | string | boolean>(action: (param0: number, param1: number, param2: number) => T): T;

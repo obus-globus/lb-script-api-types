@@ -6,7 +6,6 @@ export class PanoramaRenderState extends Record implements FabricRenderState {
     // private renderStateData: Map<Object | null, Object | null>;
     // private spin: number;
     clearExtraData(): void;
-    clearExtraData(): void;
     equals(o: Object | null): boolean;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;

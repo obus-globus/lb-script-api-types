@@ -25,10 +25,6 @@ export class StringBuffer extends AbstractStringBuilder implements Serializable,
     append(arg0: CharSequence): StringBuffer;
     append(arg0: CharSequence, arg1: number, arg2: number): StringBuffer;
     append(arg0: number): StringBuffer;
-    append(arg0: number): StringBuffer;
-    append(arg0: number): StringBuffer;
-    append(arg0: number): StringBuffer;
-    append(arg0: string): StringBuffer;
     appendCodePoint(arg0: number): StringBuffer;
     capacity(): number;
     chars(): IntStream;
@@ -44,7 +40,6 @@ export class StringBuffer extends AbstractStringBuilder implements Serializable,
     get(arg0: number): string;
     getBytes(arg0: number[], arg1: number, arg2: number): void;
     getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;
-    getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;
     indexOf(arg0: string): number;
     indexOf(arg0: string, arg1: number): number;
     insert(arg0: number, arg1: Object): StringBuffer;
@@ -55,10 +50,6 @@ export class StringBuffer extends AbstractStringBuilder implements Serializable,
     insert(arg0: number, arg1: CharSequence): StringBuffer;
     insert(arg0: number, arg1: CharSequence, arg2: number, arg3: number): StringBuffer;
     insert(arg0: number, arg1: number): StringBuffer;
-    insert(arg0: number, arg1: number): StringBuffer;
-    insert(arg0: number, arg1: number): StringBuffer;
-    insert(arg0: number, arg1: number): StringBuffer;
-    insert(arg0: number, arg1: string): StringBuffer;
     isEmpty(): boolean;
     lastIndexOf(arg0: string): number;
     lastIndexOf(arg0: string, arg1: number): number;

@@ -10,6 +10,5 @@ export class ListOperation$Append extends Object implements ListOperation {
     private constructor()
     apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
-    apply(original: T[], replacement: T[]): T[];
     mode(): ListOperation$Type;
 }

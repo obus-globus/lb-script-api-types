@@ -23,7 +23,6 @@ export class Int2ShortRBTreeMap$Entry extends AbstractInt2ShortMap$BasicEntry im
     right(): Int2ShortRBTreeMap$Entry;
     right(arg0: Int2ShortRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Int2ShortRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

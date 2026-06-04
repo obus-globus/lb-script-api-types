@@ -29,7 +29,6 @@ export class WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype exten
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isEnumerable(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

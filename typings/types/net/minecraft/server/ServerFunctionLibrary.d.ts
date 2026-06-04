@@ -27,7 +27,6 @@ export class ServerFunctionLibrary extends Object implements FabricResourceReloa
     getFunction(id: Identifier): Optional<CommandFunction<CommandSourceStack>>;
     getFunctions(): Map<Identifier, CommandFunction<CommandSourceStack>>;
     getName(): string;
-    getName(): string;
     getTag(tag: Identifier): CommandFunction<CommandSourceStack>[];
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
     reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;

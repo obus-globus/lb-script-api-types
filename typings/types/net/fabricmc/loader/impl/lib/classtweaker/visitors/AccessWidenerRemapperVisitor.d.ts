@@ -8,9 +8,6 @@ export class AccessWidenerRemapperVisitor extends Object implements AccessWidene
     // private owner: string;
     // private remapper: Remapper;
     visitClass(arg0: AccessWidenerVisitor$AccessType, arg1: boolean): void;
-    visitClass(arg0: AccessWidenerVisitor$AccessType, arg1: boolean): void;
     visitField(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
-    visitField(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
-    visitMethod(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
     visitMethod(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
 }

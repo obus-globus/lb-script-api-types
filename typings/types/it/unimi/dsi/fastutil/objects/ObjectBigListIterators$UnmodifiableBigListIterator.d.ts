@@ -15,5 +15,4 @@ export class ObjectBigListIterators$UnmodifiableBigListIterator<K extends Object
     previousIndex(): number;
     set(arg0: K): void;
     skip(arg0: number): number;
-    skip(arg0: number): number;
 }

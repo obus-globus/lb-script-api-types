@@ -61,7 +61,6 @@ export interface Short2BooleanFunction extends Function<number, boolean>, IntPre
     composeReference(arg0: (param0: T) => kotlin.Short): (param0: T) => kotlin.Boolean;
     composeShort(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Boolean;
     containsKey(arg0: Object): boolean;
-    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;
@@ -73,7 +72,6 @@ export interface Short2BooleanFunction extends Function<number, boolean>, IntPre
     negate(): (param0: number) => kotlin.Boolean;
     or(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
     put<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: number, arg1: boolean): boolean;
     put(arg0: number, arg1: boolean): boolean;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): boolean;

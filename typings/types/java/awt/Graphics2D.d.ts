@@ -30,8 +30,6 @@ export abstract class Graphics2D extends Graphics {
     drawRenderableImage(arg0: RenderableImage, arg1: AffineTransform): void;
     drawRenderedImage(arg0: RenderedImage, arg1: AffineTransform): void;
     drawString(arg0: AttributedCharacterIterator, arg1: number, arg2: number): void;
-    drawString(arg0: AttributedCharacterIterator, arg1: number, arg2: number): void;
-    drawString(arg0: string, arg1: number, arg2: number): void;
     drawString(arg0: string, arg1: number, arg2: number): void;
     fill(arg0: Shape): void;
     fill3DRect(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
@@ -57,6 +55,5 @@ export abstract class Graphics2D extends Graphics {
     setTransform(arg0: AffineTransform): void;
     shear(arg0: number, arg1: number): void;
     transform(arg0: AffineTransform): void;
-    translate(arg0: number, arg1: number): void;
     translate(arg0: number, arg1: number): void;
 }

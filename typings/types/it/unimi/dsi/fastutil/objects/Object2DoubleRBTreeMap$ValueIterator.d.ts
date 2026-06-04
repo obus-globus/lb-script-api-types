@@ -3,12 +3,10 @@ import type { Object2DoubleRBTreeMap$TreeIterator } from '../../../../../it/unim
 export class Object2DoubleRBTreeMap$ValueIterator extends Object2DoubleRBTreeMap$TreeIterator implements DoubleListIterator {
     private constructor(null_: Object2DoubleRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -11,7 +11,5 @@ export class AbstractObject2CharMap$BasicEntry<K extends Object | number | strin
     getCharValue(): string;
     hashCode(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
-    setValue(arg0: string): string;
     toString(): string;
 }

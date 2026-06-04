@@ -63,12 +63,9 @@ export abstract class AbstractBoolean2CharFunction extends Object implements Boo
     containsKey(arg0: boolean): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
-    defaultReturnValue(): string;
-    defaultReturnValue(arg0: string): void;
     get(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: boolean, arg1: string): string;
-    put(arg0: boolean, arg1: string): string;
     put(arg0: boolean, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: boolean): string;

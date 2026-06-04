@@ -15,9 +15,7 @@ export abstract class Model<S extends Object | number | string | boolean> extend
     // private root: ModelPart;
     allParts(): ModelPart[];
     copyTransforms(arg0: Model<Object>): void;
-    copyTransforms(arg0: Model<Object>): void;
     fabric$calculateChildParts(arg0: ModelPart): void;
-    getChildPart(arg0: string): ModelPart;
     getChildPart(arg0: string): ModelPart;
     renderToBuffer(poseStack: PoseStack, buffer: VertexConsumer, lightCoords: number, overlayCoords: number): void;
     renderToBuffer(poseStack: PoseStack, buffer: VertexConsumer, lightCoords: number, overlayCoords: number, color: number): void;

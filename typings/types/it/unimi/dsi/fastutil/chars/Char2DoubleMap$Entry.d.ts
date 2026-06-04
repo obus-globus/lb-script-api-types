@@ -6,5 +6,4 @@ export interface Char2DoubleMap$Entry extends Object, Map$Entry<string, number>{
     getCharKey(): string;
     getDoubleValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

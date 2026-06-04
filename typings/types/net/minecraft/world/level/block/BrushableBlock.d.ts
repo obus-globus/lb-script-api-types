@@ -92,7 +92,6 @@ export class BrushableBlock extends BaseEntityBlock implements Fallable {
     getTurnsInto(): Block;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
     onBrokenAfterFall(level: Level, pos: BlockPos, entity: FallingBlockEntity): void;
-    onBrokenAfterFall(level: Level, pos: BlockPos, entity: FallingBlockEntity): void;
     onLand(level: Level, pos: BlockPos, state: BlockState, replacedBlock: BlockState, entity: FallingBlockEntity): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

@@ -12,28 +12,22 @@ export class LongBooleanImmutablePair extends Object implements LongBooleanPair,
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongBooleanPair;
-    first(arg0: number): LongBooleanPair;
     firstLong(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongBooleanPair;
-    key(arg0: number): LongBooleanPair;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongBooleanPair;
     left(arg0: number): LongBooleanPair;
     leftLong(): number;
     right(): boolean;
     right(arg0: boolean): LongBooleanPair;
-    right(arg0: boolean): LongBooleanPair;
     rightBoolean(): boolean;
     second(): boolean;
-    second(arg0: boolean): LongBooleanPair;
     second(arg0: boolean): LongBooleanPair;
     secondBoolean(): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): LongBooleanPair;
     value(arg0: boolean): LongBooleanPair;
     valueBoolean(): boolean;
 }

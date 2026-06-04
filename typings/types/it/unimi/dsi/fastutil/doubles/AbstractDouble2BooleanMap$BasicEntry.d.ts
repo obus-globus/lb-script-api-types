@@ -11,7 +11,5 @@ export class AbstractDouble2BooleanMap$BasicEntry extends Object implements Doub
     getDoubleKey(): number;
     hashCode(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     toString(): string;
 }

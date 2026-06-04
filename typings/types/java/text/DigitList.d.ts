@@ -38,7 +38,6 @@ export class DigitList extends Object implements Cloneable {
     set(arg0: boolean, arg1: number, arg2: number): void;
     set(arg0: boolean, arg1: number, arg2: number, arg3: boolean): void;
     set(arg0: boolean, arg1: number): void;
-    set(arg0: boolean, arg1: number, arg2: number): void;
     // private set(arg0: boolean, arg1: string, arg2: boolean, arg3: boolean, arg4: number, arg5: boolean): void;
     setRoundingMode(arg0: RoundingMode): void;
     // private shouldRoundUp(arg0: number, arg1: boolean, arg2: boolean): boolean;

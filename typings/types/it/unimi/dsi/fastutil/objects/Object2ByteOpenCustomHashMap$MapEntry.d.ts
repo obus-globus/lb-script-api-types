@@ -24,21 +24,13 @@ export class Object2ByteOpenCustomHashMap$MapEntry extends Object implements Obj
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectBytePair<K>;
-    right(arg0: number): ObjectBytePair<K>;
-    right(): number;
-    right(arg0: number): ObjectBytePair<K>;
-    right(arg0: number): ObjectBytePair<K>;
     rightByte(): number;
     second(): number;
     second(arg0: number): ObjectBytePair<K>;
-    second(arg0: number): ObjectBytePair<K>;
     secondByte(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectBytePair<K>;
     value(arg0: number): ObjectBytePair<K>;
     valueByte(): number;
 }

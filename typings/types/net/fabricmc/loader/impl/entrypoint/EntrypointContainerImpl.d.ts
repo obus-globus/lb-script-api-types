@@ -11,7 +11,6 @@ export class EntrypointContainerImpl<T extends Object | number | string | boolea
     // private key: string;
     // private type: Class<T>;
     getDefinition(): string;
-    getDefinition(): string;
     getEntrypoint(): T;
     getProvider(): ModContainer;
 }

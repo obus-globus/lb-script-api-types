@@ -7,10 +7,10 @@ import type { FileVisitorBuilder } from '../../../kotlin/io/path/FileVisitorBuil
 export class FileVisitorBuilderImpl extends Object implements FileVisitorBuilder {
     constructor()
     // private isBuilt: boolean;
-    // private onPostVisitDirectory: (param0: Path[][], param1: IOException | null) => FileVisitResult;
-    // private onPreVisitDirectory: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
-    // private onVisitFile: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
-    // private onVisitFileFailed: (param0: Path[][], param1: IOException) => FileVisitResult;
+    // private onPostVisitDirectory: ((param0: Path[][], param1: IOException | null) => FileVisitResult) | null;
+    // private onPreVisitDirectory: ((param0: Path[][], param1: BasicFileAttributes) => FileVisitResult) | null;
+    // private onVisitFile: ((param0: Path[][], param1: BasicFileAttributes) => FileVisitResult) | null;
+    // private onVisitFileFailed: ((param0: Path[][], param1: IOException) => FileVisitResult) | null;
     build(): FileVisitor<Path[][]>;
     // private checkIsNotBuilt(): void;
     // private checkNotDefined(function_: Object | null, name: string): void;

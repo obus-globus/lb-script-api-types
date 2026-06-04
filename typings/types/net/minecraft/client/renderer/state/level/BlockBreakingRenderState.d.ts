@@ -12,7 +12,6 @@ export class BlockBreakingRenderState extends Record implements FabricRenderStat
     blockPos(): BlockPos;
     blockState(): BlockState;
     clearExtraData(): void;
-    clearExtraData(): void;
     equals(o: Object | null): boolean;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;

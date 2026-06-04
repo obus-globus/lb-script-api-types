@@ -13,6 +13,5 @@ export class Byte2BooleanLinkedOpenHashMap$EntryIterator extends Byte2BooleanLin
     next(): Byte2BooleanLinkedOpenHashMap$MapEntry;
     previous(): Byte2BooleanLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

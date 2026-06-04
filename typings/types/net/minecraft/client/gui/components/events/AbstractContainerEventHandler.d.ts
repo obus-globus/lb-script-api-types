@@ -38,5 +38,4 @@ export abstract class AbstractContainerEventHandler extends Object implements Co
     setDragging(dragging: boolean): void;
     setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;
-    setFocused(focused: boolean): void;
 }

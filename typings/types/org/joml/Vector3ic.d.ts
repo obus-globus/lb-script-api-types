@@ -11,7 +11,6 @@ export interface Vector3ic extends Object{
     distanceSquared(arg0: number, arg1: number, arg2: number): number;
     distanceSquared(arg0: Vector3ic): number;
     div(arg0: number, arg1: Vector3i): Vector3i;
-    div(arg0: number, arg1: Vector3i): Vector3i;
     equals(other: Object | null): boolean;
     equals(arg0: number, arg1: number, arg2: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;

@@ -6,12 +6,10 @@ export class Long2ObjectLinkedOpenHashMap$KeyIterator extends Long2ObjectLinkedO
     constructor(null_: Long2ObjectLinkedOpenHashMap$KeyIterator, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

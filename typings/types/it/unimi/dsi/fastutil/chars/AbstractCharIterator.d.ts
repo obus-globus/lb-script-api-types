@@ -6,7 +6,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractCharIterator extends Object implements CharIterator {
     constructor()
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     skip(arg0: number): number;

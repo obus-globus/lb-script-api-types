@@ -26,5 +26,4 @@ export class IntRange extends Object implements LootContextUser {
     test(context: LootContext, value: number): boolean;
     // private unpackExact(): OptionalInt;
     validate(context: ValidationContext): void;
-    validate(context: ValidationContext): void;
 }

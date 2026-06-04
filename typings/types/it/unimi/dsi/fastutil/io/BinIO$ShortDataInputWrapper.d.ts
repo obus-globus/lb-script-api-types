@@ -11,8 +11,6 @@ export class BinIO$ShortDataInputWrapper extends Object implements ShortIterator
     // private next: number;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;

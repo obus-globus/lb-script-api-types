@@ -26,11 +26,9 @@ export class AsyncContextBuiltins$AsyncContext extends Enum<AsyncContextBuiltins
     isAnnexB(): boolean;
     isConfigurable(): boolean;
     isConstructor(): boolean;
-    isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
     isGetter(): boolean;
-    isNewTargetConstructor(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;

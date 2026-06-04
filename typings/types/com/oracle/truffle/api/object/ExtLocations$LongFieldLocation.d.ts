@@ -21,8 +21,6 @@ export class ExtLocations$LongFieldLocation extends ExtLocations$AbstractPrimiti
     getFinalLong(store: DynamicObject, condition: boolean): number;
     getLong(store: DynamicObject, shape: Shape): number;
     getLong(store: DynamicObject, guard: boolean): number;
-    getLong(store: DynamicObject, shape: Shape): number;
-    getType(): Class<number>;
     getType(): Class<number>;
     isImplicitCastIntToLong(): boolean;
     longValue(value: Object): number;
@@ -32,6 +30,5 @@ export class ExtLocations$LongFieldLocation extends ExtLocations$AbstractPrimiti
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
     setLong(store: DynamicObject, value: number, shape: Shape): void;
     setLong(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
-    setLong(store: DynamicObject, value: number, shape: Shape): void;
     setLongInternal(store: DynamicObject, value: number): void;
 }

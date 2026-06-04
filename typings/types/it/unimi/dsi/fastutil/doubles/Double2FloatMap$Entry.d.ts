@@ -6,5 +6,4 @@ export interface Double2FloatMap$Entry extends Object, Map$Entry<number, number>
     getDoubleKey(): number;
     getFloatValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

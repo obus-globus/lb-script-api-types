@@ -75,7 +75,6 @@ export class DateTimeFormatter extends Object {
     withDecimalStyle(arg0: DecimalStyle): DateTimeFormatter;
     withLocale(arg0: Locale): DateTimeFormatter;
     withResolverFields(arg0: TemporalField[]): DateTimeFormatter;
-    withResolverFields(arg0: TemporalField[]): DateTimeFormatter;
     withResolverStyle(arg0: ResolverStyle): DateTimeFormatter;
     withZone(arg0: ZoneId): DateTimeFormatter;
 }

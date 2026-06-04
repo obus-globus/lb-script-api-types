@@ -13,6 +13,5 @@ export class Reference2LongLinkedOpenHashMap$EntryIterator extends Reference2Lon
     next(): Reference2LongLinkedOpenHashMap$MapEntry;
     previous(): Reference2LongLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

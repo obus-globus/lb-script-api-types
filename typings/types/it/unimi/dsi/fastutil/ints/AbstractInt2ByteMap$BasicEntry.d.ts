@@ -11,7 +11,5 @@ export class AbstractInt2ByteMap$BasicEntry extends Object implements Int2ByteMa
     getIntKey(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

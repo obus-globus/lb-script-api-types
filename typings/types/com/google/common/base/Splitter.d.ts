@@ -29,5 +29,4 @@ export class Splitter extends Object {
     trimResults(trimmer: CharMatcher): Splitter;
     withKeyValueSeparator(keyValueSplitter: Splitter): Splitter$MapSplitter;
     withKeyValueSeparator(separator: string): Splitter$MapSplitter;
-    withKeyValueSeparator(separator: string): Splitter$MapSplitter;
 }

@@ -16,7 +16,6 @@ export class ModelProvider$ItemInfoCollector extends Object implements FabricIte
     // private itemInfos: Map<Item, ClientItem>;
     // private processedBlocks: (Object | null)[];
     accept(item: Item, generator: ItemModel$Unbaked): void;
-    accept(item: Item, generator: ItemModel$Unbaked): void;
     accept(item: Item, model: ItemModel$Unbaked, properties: ClientItem$Properties): void;
     copy(donor: Item, acceptor: Item): void;
     fabric_setProcessedBlocks(arg0: (Object | null)[]): void;

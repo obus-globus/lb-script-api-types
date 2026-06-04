@@ -13,10 +13,8 @@ export class NamedDispatcher extends CoroutineDispatcher implements Delay {
     // private dispatcher: CoroutineDispatcher;
     // private name: string;
     delay(time: number): void;
-    delay(time: number): void;
     dispatch(context: CoroutineContext, block: () => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;
-    invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     isDispatchNeeded(context: CoroutineContext): boolean;
     scheduleResumeAfterDelay(timeMillis: number, continuation: CancellableContinuation<void>): void;

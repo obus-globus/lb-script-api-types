@@ -10,7 +10,6 @@ export class ListOperation$Insert extends Record implements ListOperation {
     // private offset: number;
     apply(original: T[], replacement: T[]): T[];
     apply(original: T[], replacement: T[], maxSize: number): T[];
-    apply(original: T[], replacement: T[]): T[];
     equals(o: Object | null): boolean;
     hashCode(): number;
     mode(): ListOperation$Type;

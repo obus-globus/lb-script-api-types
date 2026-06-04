@@ -5,8 +5,6 @@ import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ShortIterator extends PrimitiveIterator<number, (param0: number) => void>, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
     skip(arg0: number): number;

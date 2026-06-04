@@ -9,5 +9,4 @@ export class DebugEntryEntityRenderStats extends Object implements DebugScreenEn
     category(): DebugEntryCategory;
     display(displayer: DebugScreenDisplayer, serverOrClientLevel: Level, clientChunk: LevelChunk, serverChunk: LevelChunk): void;
     isAllowed(reducedDebugInfo: boolean): boolean;
-    isAllowed(reducedDebugInfo: boolean): boolean;
 }

@@ -61,13 +61,10 @@ export class StrSubstitutor extends Object {
     setEscapeChar(arg0: string): void;
     setPreserveEscapes(arg0: boolean): void;
     setValueDelimiter(arg0: string): StrSubstitutor;
-    setValueDelimiter(arg0: string): StrSubstitutor;
     setValueDelimiterMatcher(arg0: StrMatcher): StrSubstitutor;
-    setVariablePrefix(arg0: string): StrSubstitutor;
     setVariablePrefix(arg0: string): StrSubstitutor;
     setVariablePrefixMatcher(arg0: StrMatcher): StrSubstitutor;
     setVariableResolver(arg0: StrLookup<Object>): void;
-    setVariableSuffix(arg0: string): StrSubstitutor;
     setVariableSuffix(arg0: string): StrSubstitutor;
     setVariableSuffixMatcher(arg0: StrMatcher): StrSubstitutor;
     substitute(arg0: StrBuilder, arg1: number, arg2: number): boolean;

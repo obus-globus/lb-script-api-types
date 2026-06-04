@@ -13,6 +13,5 @@ export class Object2CharLinkedOpenHashMap$EntryIterator extends Object2CharLinke
     next(): Object2CharLinkedOpenHashMap$MapEntry;
     previous(): Object2CharLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

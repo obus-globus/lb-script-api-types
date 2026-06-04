@@ -12,28 +12,22 @@ export class DoubleDoubleImmutablePair extends Object implements DoubleDoublePai
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleDoublePair;
-    first(arg0: number): DoubleDoublePair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleDoublePair;
-    key(arg0: number): DoubleDoublePair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleDoublePair;
     left(arg0: number): DoubleDoublePair;
     leftDouble(): number;
     right(): number;
     right(arg0: number): DoubleDoublePair;
-    right(arg0: number): DoubleDoublePair;
     rightDouble(): number;
     second(): number;
-    second(arg0: number): DoubleDoublePair;
     second(arg0: number): DoubleDoublePair;
     secondDouble(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): DoubleDoublePair;
     value(arg0: number): DoubleDoublePair;
     valueDouble(): number;
 }

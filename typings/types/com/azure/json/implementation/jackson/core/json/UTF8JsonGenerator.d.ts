@@ -84,15 +84,10 @@ export class UTF8JsonGenerator extends JsonGeneratorImpl {
     writeNumber(arg0: BigInteger): void;
     writeNumber(arg0: string[], arg1: number, arg2: number): void;
     writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
-    writeNumber(arg0: number): void;
     writeNumber(arg0: string): void;
     writeRaw(arg0: SerializableString): void;
     writeRaw(arg0: string): void;
     writeRaw(arg0: string[], arg1: number, arg2: number): void;
-    writeRaw(arg0: string): void;
     writeRaw(arg0: string, arg1: number, arg2: number): void;
     writeRawUTF8String(arg0: number[], arg1: number, arg2: number): void;
     writeRawValue(arg0: SerializableString): void;

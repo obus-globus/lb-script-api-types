@@ -23,7 +23,6 @@ export class ShapelessCraftingRecipeDisplay extends Record implements RecipeDisp
     hashCode(): number;
     ingredients(): SlotDisplay[];
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     result(): SlotDisplay;
     toString(): string;
     type(): RecipeDisplay$Type<ShapelessCraftingRecipeDisplay>;

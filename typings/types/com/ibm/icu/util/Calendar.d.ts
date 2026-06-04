@@ -126,7 +126,6 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     computeTime(): void;
     // private computeWeekFields(): void;
     computeZoneOffset(arg0: number, arg1: number): number;
-    computeZoneOffset(arg0: number, arg1: number): number;
     equals(arg0: Object | null): boolean;
     fieldDifference(arg0: Date, arg1: number): number;
     fieldName(arg0: number): string;

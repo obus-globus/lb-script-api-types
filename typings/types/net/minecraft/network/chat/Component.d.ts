@@ -16,7 +16,6 @@ export interface Component extends Message, Object, FormattedText{
     getSiblings(): Component[];
     getString(): string;
     getString(limit: number): string;
-    getString(): string;
     getStyle(): Style;
     getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
     plainCopy(): MutableComponent;

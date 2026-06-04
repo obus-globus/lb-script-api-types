@@ -9,6 +9,5 @@ export class ShaderDefines$Builder extends Object {
     build(): ShaderDefines;
     define(key: string): ShaderDefines$Builder;
     define(key: string, value: number): ShaderDefines$Builder;
-    define(key: string, value: number): ShaderDefines$Builder;
     define(key: string, value: string): ShaderDefines$Builder;
 }

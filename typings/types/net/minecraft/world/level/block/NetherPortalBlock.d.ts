@@ -91,9 +91,7 @@ export class NetherPortalBlock extends Block implements Portal {
     getCloneItemStack(level: LevelReader, pos: BlockPos, state: BlockState, includeData: boolean): ItemStack;
     // private getExitPortal(newLevel: ServerLevel, entity: Entity, portalEntryPos: BlockPos, approximateExitPos: BlockPos, toNether: boolean, worldBorder: WorldBorder): TeleportTransition;
     getLocalTransition(): Portal$Transition;
-    getLocalTransition(): Portal$Transition;
     getPortalDestination(currentLevel: ServerLevel, entity: Entity, portalEntryPos: BlockPos): TeleportTransition;
-    getPortalTransitionTime(level: ServerLevel, entity: Entity): number;
     getPortalTransitionTime(level: ServerLevel, entity: Entity): number;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     randomTick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

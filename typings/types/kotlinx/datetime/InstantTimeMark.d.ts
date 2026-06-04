@@ -13,7 +13,6 @@ export class InstantTimeMark extends Object implements ComparableTimeMark {
     hashCode(): number;
     minus(duration: Duration): ComparableTimeMark;
     minus(other: ComparableTimeMark): Duration;
-    minus(duration: Duration): ComparableTimeMark;
     plus(duration: Duration): ComparableTimeMark;
     // private saturatingDiff(instant1: Instant, instant2: Instant): Duration;
     toString(): string;

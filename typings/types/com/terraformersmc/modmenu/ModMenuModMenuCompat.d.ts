@@ -11,10 +11,7 @@ export class ModMenuModMenuCompat extends Object implements ModMenuApi {
     constructor()
     attachModpackBadges(arg0: (param0: string) => void): void;
     getModConfigScreenFactory(): (param0: Screen) => unknown;
-    getModConfigScreenFactory(): (param0: Screen) => unknown;
     getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => unknown };
-    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => unknown };
-    getProvidedUpdateCheckers(): { [key: string]: UpdateChecker };
     getProvidedUpdateCheckers(): { [key: string]: UpdateChecker };
     getUpdateChecker(): UpdateChecker;
 }

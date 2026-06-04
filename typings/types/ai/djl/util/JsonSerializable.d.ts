@@ -7,7 +7,6 @@ export interface JsonSerializable extends BytesSupplier, Serializable, Object{
     getAsBytes(): number[];
     getAsObject(): Object;
     getAsString(): string;
-    getAsString(): string;
     serialize(): JsonElement;
     toByteBuffer(): ByteBuffer;
     toJson(): string;

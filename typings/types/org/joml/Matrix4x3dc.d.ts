@@ -35,8 +35,6 @@ export interface Matrix4x3dc extends Object{
     get(arg0: FloatBuffer): FloatBuffer;
     get(arg0: number[]): number[];
     get(arg0: number[], arg1: number): number[];
-    get(arg0: number[]): number[];
-    get(arg0: number[], arg1: number): number[];
     get(arg0: number, arg1: ByteBuffer): ByteBuffer;
     get(arg0: number, arg1: DoubleBuffer): DoubleBuffer;
     get(arg0: number, arg1: FloatBuffer): FloatBuffer;
@@ -44,8 +42,6 @@ export interface Matrix4x3dc extends Object{
     get(arg0: Matrix4x3d): Matrix4x3d;
     get4x4(arg0: ByteBuffer): ByteBuffer;
     get4x4(arg0: DoubleBuffer): DoubleBuffer;
-    get4x4(arg0: number[]): number[];
-    get4x4(arg0: number[], arg1: number): number[];
     get4x4(arg0: number[]): number[];
     get4x4(arg0: number[], arg1: number): number[];
     get4x4(arg0: number, arg1: ByteBuffer): ByteBuffer;

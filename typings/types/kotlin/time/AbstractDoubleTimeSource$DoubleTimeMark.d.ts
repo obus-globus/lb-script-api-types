@@ -13,7 +13,6 @@ export class AbstractDoubleTimeSource$DoubleTimeMark extends Object implements C
     hashCode(): number;
     minus(other: ComparableTimeMark): Duration;
     minus(duration: Duration): ComparableTimeMark;
-    minus(duration: Duration): ComparableTimeMark;
     plus(duration: Duration): ComparableTimeMark;
     toString(): string;
 }

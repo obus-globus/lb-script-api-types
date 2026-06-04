@@ -48,9 +48,6 @@ export class JsonWriter extends Object implements Closeable, Flushable {
     setStrictness(arg0: Strictness): void;
     // private string(arg0: string): void;
     value(arg0: boolean): JsonWriter;
-    value(arg0: boolean): JsonWriter;
-    value(arg0: number): JsonWriter;
-    value(arg0: number): JsonWriter;
     value(arg0: number): JsonWriter;
     value(arg0: Number): JsonWriter;
     value(arg0: string): JsonWriter;

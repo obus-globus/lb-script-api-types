@@ -23,17 +23,8 @@ export class IntOpenHashSet$SetSpliterator extends Object implements IntSplitera
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => kotlin.Int;
     skip(arg0: number): number;
-    skip(arg0: number): number;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): IntOpenHashSet$SetSpliterator;
 }

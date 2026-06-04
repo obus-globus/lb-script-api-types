@@ -29,8 +29,5 @@ export class ScoreNode extends Record implements TextNode {
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
     toComponent(arg0: PlaceholderContext): Component;
-    toComponent(): Component;
-    toComponent(arg0: ParserContext): Component;
-    toComponent(arg0: PlaceholderContext): Component;
     toString(): string;
 }

@@ -6,6 +6,7 @@ import type { KDeclarationContainerImpl$Companion } from '../../../../kotlin/ref
 import type { KPackageImpl$Data } from '../../../../kotlin/reflect/jvm/internal/KPackageImpl$Data.d.ts'
 import type { PropertyDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
 import type { Name } from '../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
+import type { MemberScope } from '../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 export class KPackageImpl extends KDeclarationContainerImpl {
     static Companion: KDeclarationContainerImpl$Companion;
     constructor(jClass: Class<Object>)

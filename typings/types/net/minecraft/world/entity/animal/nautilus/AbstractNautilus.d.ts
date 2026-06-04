@@ -178,7 +178,6 @@ export abstract class AbstractNautilus extends TamableAnimal implements HasCusto
     getInventoryColumns(): number;
     getInventorySize(): number;
     getJumpCooldown(): number;
-    getJumpCooldown(): number;
     // private getNautilusRestrictionRadius(): number;
     getPlayerJumpPendingScale(jumpAmount: number): number;
     getRiddenInput(controller: Player, selfInput: Vec3): Vec3;

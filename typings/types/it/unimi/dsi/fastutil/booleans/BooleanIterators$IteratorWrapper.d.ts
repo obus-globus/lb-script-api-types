@@ -7,9 +7,6 @@ export class BooleanIterators$IteratorWrapper extends Object implements BooleanI
     constructor(arg0: Iterator<boolean>)
     // private i: Iterator<boolean>;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

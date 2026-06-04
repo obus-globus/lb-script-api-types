@@ -6,7 +6,6 @@ import type { ToLongFunction } from '../../../../../java/util/function/ToLongFun
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CharComparator extends Comparator<string>, Object{
     compare(arg0: string, arg1: string): number;
-    compare(arg0: string, arg1: string): number;
     reversed(): (param0: string, param1: string) => kotlin.Int;
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: string, param1: string) => kotlin.Int): (param0: string, param1: string) => kotlin.Int;

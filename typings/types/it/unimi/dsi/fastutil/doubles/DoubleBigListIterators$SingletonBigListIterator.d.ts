@@ -8,12 +8,7 @@ export class DoubleBigListIterators$SingletonBigListIterator extends Object impl
     // private curr: number;
     // private element: number;
     add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
-    back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -22,9 +17,5 @@ export class DoubleBigListIterators$SingletonBigListIterator extends Object impl
     previousDouble(): number;
     previousIndex(): number;
     set(arg0: number): void;
-    set(arg0: number): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

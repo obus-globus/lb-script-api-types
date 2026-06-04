@@ -10,7 +10,6 @@ export interface MappingWriter extends Closeable, Object, MappingVisitor{
     visitDstDesc(arg0: MappedElementKind, arg1: number, arg2: string): void;
     visitElementContent(arg0: MappedElementKind): boolean;
     visitEnd(): boolean;
-    visitEnd(): boolean;
     visitHeader(): boolean;
     visitMetadata(arg0: string, arg1: string): void;
 }

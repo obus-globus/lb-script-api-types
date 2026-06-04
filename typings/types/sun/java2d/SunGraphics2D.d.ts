@@ -161,8 +161,6 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     drawRenderedImage(arg0: RenderedImage, arg1: AffineTransform): void;
     drawRoundRect(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     drawString(arg0: AttributedCharacterIterator, arg1: number, arg2: number): void;
-    drawString(arg0: AttributedCharacterIterator, arg1: number, arg2: number): void;
-    drawString(arg0: string, arg1: number, arg2: number): void;
     drawString(arg0: string, arg1: number, arg2: number): void;
     // private drawTranslatedRenderedImage(arg0: RenderedImage, arg1: Rectangle, arg2: number, arg3: number): void;
     fill(arg0: Shape): void;
@@ -231,7 +229,6 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     transformBounds(arg0: Rectangle, arg1: AffineTransform): Rectangle;
     // private transformImage(arg0: Image, arg1: AffineTransform, arg2: ImageObserver): boolean;
     transformShape(arg0: Shape): Shape;
-    translate(arg0: number, arg1: number): void;
     translate(arg0: number, arg1: number): void;
     untransformShape(arg0: Shape): Shape;
     // private validateBasicStroke(arg0: BasicStroke): void;

@@ -10,7 +10,6 @@ export class TextIO$BooleanReaderWrapper extends Object implements BooleanIterat
     // private s: string;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

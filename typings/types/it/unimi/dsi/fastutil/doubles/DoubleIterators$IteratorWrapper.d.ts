@@ -8,10 +8,6 @@ export class DoubleIterators$IteratorWrapper extends Object implements DoubleIte
     constructor(arg0: Iterator<number>)
     // private i: Iterator<number>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

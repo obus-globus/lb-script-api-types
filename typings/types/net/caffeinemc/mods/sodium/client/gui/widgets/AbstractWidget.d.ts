@@ -40,7 +40,6 @@ export abstract class AbstractWidget extends Object implements Dimensioned, Rend
     getLimitY(): number;
     getNarratables(): E[];
     getRectangle(): ScreenRectangle;
-    getRectangle(): ScreenRectangle;
     getStringWidth(arg0: FormattedText): number;
     getWidth(): number;
     getX(): number;

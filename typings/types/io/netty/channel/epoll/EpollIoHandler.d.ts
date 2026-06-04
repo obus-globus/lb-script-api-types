@@ -36,7 +36,6 @@ export class EpollIoHandler extends Object implements IoHandler {
     // private timerFd: FileDescriptor;
     closeFileDescriptors(): void;
     destroy(): void;
-    destroy(): void;
     // private epollBusyWait(): number;
     // private epollWait(arg0: IoHandlerContext, arg1: number): number;
     // private epollWaitNoTimerChange(): number;
@@ -47,7 +46,6 @@ export class EpollIoHandler extends Object implements IoHandler {
     isCompatible(arg0: Class<IoHandle>): boolean;
     numRegisteredChannels(): number;
     openFileDescriptors(): void;
-    prepareToDestroy(): void;
     prepareToDestroy(): void;
     // private processReady(arg0: EpollEventArray, arg1: number): boolean;
     register(arg0: IoHandle): IoRegistration;

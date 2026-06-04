@@ -11,7 +11,5 @@ export class AbstractByte2BooleanMap$BasicEntry extends Object implements Byte2B
     getByteKey(): number;
     hashCode(): number;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     toString(): string;
 }

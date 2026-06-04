@@ -12,28 +12,22 @@ export class ShortCharImmutablePair extends Object implements ShortCharPair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortCharPair;
-    first(arg0: number): ShortCharPair;
     firstShort(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortCharPair;
-    key(arg0: number): ShortCharPair;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortCharPair;
     left(arg0: number): ShortCharPair;
     leftShort(): number;
     right(): string;
     right(arg0: string): ShortCharPair;
-    right(arg0: string): ShortCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): ShortCharPair;
     second(arg0: string): ShortCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): ShortCharPair;
     value(arg0: string): ShortCharPair;
     valueChar(): string;
 }

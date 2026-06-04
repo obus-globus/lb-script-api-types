@@ -4,11 +4,8 @@ import type { NodeInterface } from '../../../../../com/oracle/truffle/api/nodes/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface BytecodeOSRNode extends NodeInterface, Object{
     copyIntoOSRFrame(osrFrame: VirtualFrame, parentFrame: VirtualFrame, target: number, targetMetadata: Object): void;
-    copyIntoOSRFrame(osrFrame: VirtualFrame, parentFrame: VirtualFrame, target: number, targetMetadata: Object): void;
-    executeOSR(osrFrame: VirtualFrame, target: number, interpreterState: Object): Object;
     executeOSR(osrFrame: VirtualFrame, target: number, interpreterState: Object): Object;
     getOSRMetadata(): Object;
-    prepareOSR(target: number): void;
     prepareOSR(target: number): void;
     restoreParentFrame(osrFrame: VirtualFrame, parentFrame: VirtualFrame): void;
     restoreParentFrameFromArguments(arguments: Object[]): Frame;

@@ -8,5 +8,4 @@ export class WildcardFileFilter$Builder extends AbstractSupplier<WildcardFileFil
     get(): WildcardFileFilter;
     setIoCase(arg0: IOCase): WildcardFileFilter$Builder;
     setWildcards(arg0: string[]): WildcardFileFilter$Builder;
-    setWildcards(arg0: string[]): WildcardFileFilter$Builder;
 }

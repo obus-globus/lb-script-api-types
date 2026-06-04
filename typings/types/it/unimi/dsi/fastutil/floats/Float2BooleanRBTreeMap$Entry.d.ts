@@ -23,7 +23,6 @@ export class Float2BooleanRBTreeMap$Entry extends AbstractFloat2BooleanMap$Basic
     right(): Float2BooleanRBTreeMap$Entry;
     right(arg0: Float2BooleanRBTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Float2BooleanRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

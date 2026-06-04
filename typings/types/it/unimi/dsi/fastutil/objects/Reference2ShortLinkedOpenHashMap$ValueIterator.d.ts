@@ -5,12 +5,10 @@ export class Reference2ShortLinkedOpenHashMap$ValueIterator extends Reference2Sh
     constructor(null_: Reference2ShortLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextShort(): number;
     previous(): number;
     previousShort(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

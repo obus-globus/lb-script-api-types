@@ -31,13 +31,10 @@ export class LiteralNode$ArrayLiteralNode extends LiteralNode<Expression[]> impl
     accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
-    accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getElementExpressions(): Expression[];
     hasSpread(): boolean;
     hasTrailingComma(): boolean;
     isArray(): boolean;
-    // private setValue(lc: LexicalContext, value: Expression[]): LiteralNode$ArrayLiteralNode;
     // private setValue(lc: LexicalContext, value: Expression[]): LiteralNode$ArrayLiteralNode;
     toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;

@@ -14,5 +14,4 @@ export class MultiplierSubstitution extends NFSubstitution {
     setDivisor(arg0: number, arg1: number): void;
     tokenChar(): string;
     transformNumber(arg0: number): number;
-    transformNumber(arg0: number): number;
 }

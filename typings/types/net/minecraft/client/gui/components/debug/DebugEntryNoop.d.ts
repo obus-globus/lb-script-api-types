@@ -9,8 +9,6 @@ export class DebugEntryNoop extends Object implements DebugScreenEntry {
     constructor(isAllowedWithReducedDebugInfo: boolean)
     // private isAllowedWithReducedDebugInfo: boolean;
     category(): DebugEntryCategory;
-    category(): DebugEntryCategory;
     display(displayer: DebugScreenDisplayer, serverOrClientLevel: Level, clientChunk: LevelChunk, serverChunk: LevelChunk): void;
-    isAllowed(reducedDebugInfo: boolean): boolean;
     isAllowed(reducedDebugInfo: boolean): boolean;
 }

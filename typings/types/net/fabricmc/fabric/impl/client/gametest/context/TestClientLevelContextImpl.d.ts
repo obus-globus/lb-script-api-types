@@ -6,13 +6,9 @@ export class TestClientLevelContextImpl extends Object implements TestClientLeve
     constructor(arg0: ClientGameTestContext)
     // private context: ClientGameTestContext;
     waitForChunksDownload(): number;
-    waitForChunksDownload(): number;
     waitForChunksDownload(arg0: number): number;
     waitForChunksRender(): number;
     waitForChunksRender(arg0: boolean): number;
     waitForChunksRender(arg0: number): number;
-    waitForChunksRender(): number;
-    waitForChunksRender(arg0: boolean): number;
     waitForChunksRender(arg0: boolean, arg1: number): number;
-    waitForChunksRender(arg0: number): number;
 }

@@ -27,5 +27,4 @@ export class Joiner extends Object {
     toString(part: Object): CharSequence;
     useForNull(nullText: string): Joiner;
     withKeyValueSeparator(keyValueSeparator: string): Joiner$MapJoiner;
-    withKeyValueSeparator(keyValueSeparator: string): Joiner$MapJoiner;
 }

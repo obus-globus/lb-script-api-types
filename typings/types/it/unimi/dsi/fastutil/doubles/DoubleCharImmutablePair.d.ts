@@ -12,28 +12,22 @@ export class DoubleCharImmutablePair extends Object implements DoubleCharPair, S
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleCharPair;
-    first(arg0: number): DoubleCharPair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleCharPair;
-    key(arg0: number): DoubleCharPair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleCharPair;
     left(arg0: number): DoubleCharPair;
     leftDouble(): number;
     right(): string;
     right(arg0: string): DoubleCharPair;
-    right(arg0: string): DoubleCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): DoubleCharPair;
     second(arg0: string): DoubleCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): DoubleCharPair;
     value(arg0: string): DoubleCharPair;
     valueChar(): string;
 }

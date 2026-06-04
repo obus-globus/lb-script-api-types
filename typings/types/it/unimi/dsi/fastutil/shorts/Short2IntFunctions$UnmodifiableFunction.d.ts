@@ -17,7 +17,6 @@ export class Short2IntFunctions$UnmodifiableFunction extends AbstractShort2IntFu
     getOrDefault(arg0: number, arg1: number): number;
     hashCode(): number;
     put(arg0: number, arg1: number): number;
-    put(arg0: number, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: number): number;
     size(): number;

@@ -12,7 +12,7 @@ export class ConflatedBufferedChannel<E extends Object | number | string | boole
     static OPTIONAL_CHANNEL: number;
     static RENDEZVOUS: number;
     static UNLIMITED: number;
-    constructor(capacity: number, onBufferOverflow: BufferOverflow, onUndeliveredElement: (param0: E) => void | null)
+    constructor(capacity: number, onBufferOverflow: BufferOverflow, onUndeliveredElement: ((param0: E) => void) | null)
     // private capacity: number;
     // private /*not mapped: */ isConflatedDropOldest(): boolean;
     // private onBufferOverflow: BufferOverflow;

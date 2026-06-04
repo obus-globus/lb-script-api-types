@@ -37,7 +37,6 @@ export abstract class AbstractNetherNetXboxSignaling extends SimpleChannelInboun
     dispatchSignalToPipeline(arg0: string, arg1: string): void;
     exceptionCaught(arg0: ChannelHandlerContext, arg1: Throwable): void;
     getIceServers(): NetherNetSignaling$IceServerInfo[];
-    getIceServers(): NetherNetSignaling$IceServerInfo[];
     getLocalNetworkId(): string;
     onConnected(arg0: ChannelHandlerContext): void;
     parseTurnServers(arg0: JsonObject): NetherNetSignaling$IceServerInfo[];

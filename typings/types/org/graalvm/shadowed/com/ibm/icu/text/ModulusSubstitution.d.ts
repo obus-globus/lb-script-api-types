@@ -15,11 +15,9 @@ export class ModulusSubstitution extends NFSubstitution {
     composeRuleValue(newRuleValue: number, oldRuleValue: number): number;
     doParse(text: string, parsePosition: ParsePosition, baseValue: number, upperBound: number, lenientParse: boolean, nonNumericalExecutedRuleMask: number, recursionCount: number): Number;
     doSubstitution(number: number, toInsertInto: StringBuilder, position: number, recursionCount: number): void;
-    doSubstitution(number: number, toInsertInto: StringBuilder, position: number, recursionCount: number): void;
     equals(that: Object | null): boolean;
     isModulusSubstitution(): boolean;
     setDivisor(radix: number, exponent: number): void;
     tokenChar(): string;
-    transformNumber(number: number): number;
     transformNumber(number: number): number;
 }

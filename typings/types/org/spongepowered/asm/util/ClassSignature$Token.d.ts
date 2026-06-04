@@ -21,7 +21,6 @@ export class ClassSignature$Token extends Object implements ClassSignature$IToke
     addInnerClass(arg0: string): ClassSignature$Token;
     addInterfaceBound(arg0: string): ClassSignature$Token;
     addTypeArgument(arg0: string): ClassSignature$IToken;
-    addTypeArgument(arg0: string): ClassSignature$IToken;
     addTypeArgument(arg0: ClassSignature$TokenHandle): ClassSignature$IToken;
     asBound(): string;
     asToken(): ClassSignature$Token;

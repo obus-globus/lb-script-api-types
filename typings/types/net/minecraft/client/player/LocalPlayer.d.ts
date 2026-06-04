@@ -207,7 +207,6 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     getJumpRidingScale(): number;
     getLastSentInput(): Input;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     getRecipeBook(): ClientRecipeBook;
     getRopeHoldPosition(partialTickTime: number): Vec3;
     getStats(): StatsCounter;

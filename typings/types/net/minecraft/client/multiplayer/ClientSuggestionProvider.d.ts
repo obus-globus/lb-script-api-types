@@ -57,11 +57,9 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     customSuggestion(context: CommandContext<Object>): CompletableFuture<Suggestions>;
     enabledFeatures(): FeatureFlagSet;
     getAbsoluteCoordinates(): E[];
-    getAbsoluteCoordinates(): E[];
     getAllTeams(): E[];
     getAvailableSounds(): Stream<Identifier>;
     getClient(): Minecraft;
-    getCustomTabSuggestions(): E[];
     getCustomTabSuggestions(): E[];
     getEntity(): Entity;
     getLevel(): ClientLevel;
@@ -70,9 +68,7 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     getPlayer(): LocalPlayer;
     getPosition(): Vec3;
     getRelevantCoordinates(): E[];
-    getRelevantCoordinates(): E[];
     getRotation(): Vec2;
-    getSelectedEntities(): E[];
     getSelectedEntities(): E[];
     levels(): ResourceKey<Level>[];
     modifyCustomCompletions(action: ClientboundCustomChatCompletionsPacket$Action, entries: string[]): void;
@@ -82,5 +78,4 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     sendFeedback(arg0: Component): void;
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;
-    suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
 }

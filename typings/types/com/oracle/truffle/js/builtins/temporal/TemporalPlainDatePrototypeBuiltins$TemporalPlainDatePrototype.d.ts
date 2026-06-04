@@ -58,7 +58,6 @@ export class TemporalPlainDatePrototypeBuiltins$TemporalPlainDatePrototype exten
     isEnabled(): boolean;
     isEnumerable(): boolean;
     isGetter(): boolean;
-    isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;
     isSetter(): boolean;

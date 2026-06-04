@@ -7,7 +7,6 @@ export class Byte2CharOpenHashMap$ValueIterator extends Byte2CharOpenHashMap$Map
     constructor(null_: Byte2CharOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     nextChar(): string;

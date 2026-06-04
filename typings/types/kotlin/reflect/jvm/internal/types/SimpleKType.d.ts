@@ -8,7 +8,7 @@ import type { KType } from '../../../../../kotlin/reflect/KType.d.ts'
 import type { KTypeProjection } from '../../../../../kotlin/reflect/KTypeProjection.d.ts'
 import type { AbstractKType } from '../../../../../kotlin/reflect/jvm/internal/types/AbstractKType.d.ts'
 export class SimpleKType extends AbstractKType implements KTypeBase {
-    constructor(classifier: KClassifier, arguments: KTypeProjection[], isMarkedNullable: boolean, annotations: Annotation[], abbreviation: KType | null, isDefinitelyNotNullType: boolean, isNothingType: boolean, isSuspendFunctionType: boolean, mutableCollectionClass: KClass<Object> | null, computeJavaType: () => Type | null)
+    constructor(classifier: KClassifier, arguments: KTypeProjection[], isMarkedNullable: boolean, annotations: Annotation[], abbreviation: KType | null, isDefinitelyNotNullType: boolean, isNothingType: boolean, isSuspendFunctionType: boolean, mutableCollectionClass: KClass<Object> | null, computeJavaType: (() => Type) | null)
     readonly abbreviation: KType | null;
     readonly annotations: Annotation[];
     readonly arguments: KTypeProjection[];

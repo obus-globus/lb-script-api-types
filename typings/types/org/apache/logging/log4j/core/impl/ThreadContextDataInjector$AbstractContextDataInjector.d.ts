@@ -5,5 +5,4 @@ export abstract class ThreadContextDataInjector$AbstractContextDataInjector exte
     constructor()
     // private providers: ContextDataProvider[];
     getValue(key: string): Object;
-    getValue(key: string): Object;
 }

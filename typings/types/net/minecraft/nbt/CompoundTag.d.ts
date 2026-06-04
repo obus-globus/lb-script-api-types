@@ -43,7 +43,6 @@ export class CompoundTag extends Object implements Tag {
     asByte(): Optional<number>;
     asByteArray(): Optional<number[]>;
     asCompound(): Optional<CompoundTag>;
-    asCompound(): Optional<CompoundTag>;
     asDouble(): Optional<number>;
     asFloat(): Optional<number>;
     asInt(): Optional<number>;

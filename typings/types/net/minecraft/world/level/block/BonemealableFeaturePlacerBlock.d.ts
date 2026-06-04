@@ -83,7 +83,6 @@ export class BonemealableFeaturePlacerBlock extends Block implements Bonemealabl
     codec(): MapCodec<BonemealableFeaturePlacerBlock>;
     getParticlePos(blockPos: BlockPos): BlockPos;
     getType(): BonemealableBlock$Type;
-    getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;
     isValidBonemealTarget(level: LevelReader, pos: BlockPos, state: BlockState): boolean;
     performBonemeal(level: ServerLevel, random: RandomSource, pos: BlockPos, state: BlockState): void;

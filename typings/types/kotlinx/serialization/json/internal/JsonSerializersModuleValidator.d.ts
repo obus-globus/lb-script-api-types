@@ -13,7 +13,6 @@ export class JsonSerializersModuleValidator extends Object implements Serializer
     // private checkKind(descriptor: SerialDescriptor, actualClass: KClass<Object>): void;
     contextual(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
     contextual(kClass: KClass<T>, serializer: KSerializer<T>): void;
-    contextual(kClass: KClass<T>, serializer: KSerializer<T>): void;
     polymorphic(baseClass: KClass<Base>, actualClass: KClass<Sub>, actualSerializer: KSerializer<Sub>): void;
     polymorphicDefault(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
     polymorphicDefaultDeserializer(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;

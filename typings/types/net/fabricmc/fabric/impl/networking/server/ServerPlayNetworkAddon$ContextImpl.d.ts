@@ -15,7 +15,6 @@ export class ServerPlayNetworkAddon$ContextImpl extends Record implements Server
     hashCode(): number;
     listener(): ServerGamePacketListenerImpl;
     packetContext(): PacketContext;
-    packetContext(): PacketContext;
     player(): ServerPlayer;
     responseSender(): PacketSender;
     server(): MinecraftServer;

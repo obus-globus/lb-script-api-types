@@ -6,5 +6,4 @@ export interface Byte2CharMap$Entry extends Object, Map$Entry<number, string>{
     getByteKey(): number;
     getCharValue(): string;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

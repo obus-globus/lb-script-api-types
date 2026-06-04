@@ -9,7 +9,6 @@ export class PacketArrayMappings extends Object implements PacketMappings {
     // private packets: PacketMapping[][];
     addMapping(arg0: PacketType, arg1: PacketMapping): void;
     addMapping(arg0: State, arg1: number, arg2: PacketMapping): void;
-    addMapping(arg0: PacketType, arg1: PacketMapping): void;
     hasMapping(arg0: PacketType): boolean;
     hasMapping(arg0: State, arg1: number): boolean;
     mappedPacket(arg0: State, arg1: number): PacketMapping;

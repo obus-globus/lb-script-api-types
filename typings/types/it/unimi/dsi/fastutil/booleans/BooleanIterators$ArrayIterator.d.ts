@@ -9,9 +9,7 @@ export class BooleanIterators$ArrayIterator extends Object implements BooleanLis
     // private length: number;
     // private offset: number;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -22,7 +20,6 @@ export class BooleanIterators$ArrayIterator extends Object implements BooleanLis
     previousBoolean(): boolean;
     previousIndex(): number;
     remove(): void;
-    set(arg0: boolean): void;
     set(arg0: boolean): void;
     skip(arg0: number): number;
 }

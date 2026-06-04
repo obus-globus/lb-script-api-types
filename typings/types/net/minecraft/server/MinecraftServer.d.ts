@@ -312,7 +312,6 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getWorldPath(resource: LevelResource): Path[];
     getWorldScreenshotFile(): Optional<Path[]>;
     globalAttachments(): GlobalAttachments;
-    globalAttachments(): GlobalAttachments;
     halt(wait: boolean): void;
     handleCustomClickAction(id: Identifier, payload: Optional<Tag>): void;
     // private haveTime(): boolean;

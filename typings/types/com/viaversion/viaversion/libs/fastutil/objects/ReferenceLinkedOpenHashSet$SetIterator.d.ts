@@ -18,6 +18,5 @@ export class ReferenceLinkedOpenHashSet$SetIterator extends Object implements Ob
     previous<K extends Object | number | string | boolean>(): K;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

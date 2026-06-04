@@ -12,7 +12,6 @@ export class BuiltinPromiseRejectionTracker extends Object implements PromiseRej
     // private mode: JSContextOptions$UnhandledRejectionsTrackingMode;
     // private pendingUnhandledRejections: JSDynamicObject[];
     promiseReactionJobsProcessed(): void;
-    promiseReactionJobsProcessed(): void;
     promiseRejected(promise: JSDynamicObject, reason: Object): void;
     promiseRejectedAfterResolved(promise: JSDynamicObject, value: Object): void;
     promiseRejectionHandled(promise: JSDynamicObject): void;

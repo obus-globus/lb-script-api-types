@@ -20,7 +20,6 @@ export class CraftingInput extends Object implements RecipeInput {
     height(): number;
     ingredientCount(): number;
     isEmpty(): boolean;
-    isEmpty(): boolean;
     items(): ItemStack[];
     size(): number;
     stackedContents(): StackedItemContents;

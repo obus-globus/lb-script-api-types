@@ -26,8 +26,6 @@ export class DoubleHeapPriorityQueue extends Object implements DoublePriorityQue
     dequeue(): number;
     dequeueDouble(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstDouble(): number;
     last(): number;

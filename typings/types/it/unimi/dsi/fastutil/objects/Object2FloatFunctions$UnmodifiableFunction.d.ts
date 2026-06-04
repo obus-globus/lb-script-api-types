@@ -13,9 +13,7 @@ export class Object2FloatFunctions$UnmodifiableFunction<K extends Object | numbe
     get(arg0: Object): number;
     getFloat(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     hashCode(): number;
-    put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     remove(arg0: Object): number;
     removeFloat(arg0: Object): number;

@@ -21,9 +21,7 @@ export class ExtLocations$DoubleFieldLocation extends ExtLocations$AbstractPrimi
     get(store: DynamicObject, guard: boolean): Object;
     getDouble(store: DynamicObject, shape: Shape): number;
     getDouble(store: DynamicObject, guard: boolean): number;
-    getDouble(store: DynamicObject, shape: Shape): number;
     getFinalDouble(store: DynamicObject, condition: boolean): number;
-    getType(): Class<number>;
     getType(): Class<number>;
     isImplicitCastIntToDouble(): boolean;
     primitiveFieldCount(): number;
@@ -32,6 +30,5 @@ export class ExtLocations$DoubleFieldLocation extends ExtLocations$AbstractPrimi
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
     setDouble(store: DynamicObject, value: number, shape: Shape): void;
     setDouble(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
-    setDouble(store: DynamicObject, value: number, shape: Shape): void;
     setDoubleInternal(store: DynamicObject, value: number): void;
 }

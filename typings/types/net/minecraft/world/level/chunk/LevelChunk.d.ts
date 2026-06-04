@@ -85,8 +85,6 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     fabric_sendAndClearDeferredSyncChanges(arg0: ServerPlayer[]): void;
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
-    fabric_shouldTryToSync(): boolean;
-    fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
@@ -106,10 +104,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     getLevel(): Level;
     getListenerRegistry(section: number): GameEventListenerRegistry;
     getMaxSectionY(): number;
-    getMaxSectionY(): number;
     getMaxY(): number;
-    getMaxY(): number;
-    getMinSectionY(): number;
     getMinSectionY(): number;
     getMinY(): number;
     getPersistedStatus(): ChunkStatus;
@@ -120,14 +115,12 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     getSectionYFromSectionIndex(sectionIndex: number): number;
     getSectionYFromSectionIndex(arg0: number): number;
     getSectionsCount(): number;
-    getSectionsCount(): number;
     getTicksForSerialization(currentTick: number): ChunkAccess$PackedTicks;
     isEmpty(): boolean;
     // private isInLevel(): boolean;
     isInsideBuildHeight(blockY: number): boolean;
     isInsideBuildHeight(pos: BlockPos): boolean;
     isInsideBuildHeight(arg0: number): boolean;
-    isInsideBuildHeight(pos: BlockPos): boolean;
     isOutsideBuildHeight(blockY: number): boolean;
     isOutsideBuildHeight(pos: BlockPos): boolean;
     isOutsideBuildHeight(arg0: number): boolean;

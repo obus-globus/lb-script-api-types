@@ -7,8 +7,6 @@ export class Int2FloatOpenCustomHashMap$ValueIterator extends Int2FloatOpenCusto
     constructor(null_: Int2FloatOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

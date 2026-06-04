@@ -4,6 +4,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HotSpotTruffleRuntimeAccess extends Object implements TruffleRuntimeAccess {
     constructor()
     getPriority(): number;
-    getPriority(): number;
     getRuntime(): TruffleRuntime;
 }

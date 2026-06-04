@@ -5,5 +5,4 @@ export class GL$ICDStatic extends Object implements GL$ICD {
     private constructor()
     get(): GLCapabilities;
     set(arg0: GLCapabilities): void;
-    set(arg0: GLCapabilities): void;
 }

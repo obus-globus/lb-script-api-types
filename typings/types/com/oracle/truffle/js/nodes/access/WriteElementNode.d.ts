@@ -45,8 +45,6 @@ export class WriteElementNode extends JSTargetableNode {
     executeWithTargetAndIndexAndValue(target: Object, index: Object, value: Object, receiver: Object): void;
     executeWithTargetAndIndexAndValue(target: Object, index: number, value: Object): void;
     executeWithTargetAndIndexAndValue(target: Object, index: number, value: Object, receiver: Object): void;
-    executeWithTargetAndIndexAndValue(target: Object, index: number, value: Object): void;
-    executeWithTargetAndIndexAndValue(target: Object, index: number, value: Object, receiver: Object): void;
     executeWithTargetAndIndexDouble(frame: VirtualFrame, target: Object, index: Object, receiver: Object): number;
     executeWithTargetAndIndexDouble(frame: VirtualFrame, target: Object, index: number, receiver: Object): number;
     executeWithTargetAndIndexInt(frame: VirtualFrame, target: Object, index: Object, receiver: Object): number;

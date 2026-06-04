@@ -23,7 +23,6 @@ export class ExecutorCoroutineDispatcherImpl extends ExecutorCoroutineDispatcher
     equals(other: Object | null): boolean;
     hashCode(): number;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
-    invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     scheduleResumeAfterDelay(timeMillis: number, continuation: CancellableContinuation<void>): void;
     toString(): string;
 }

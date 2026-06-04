@@ -17,8 +17,6 @@ export class XXHash32 extends Object implements Checksum {
     reset(): void;
     update(arg0: ByteBuffer): void;
     update(arg0: number[]): void;
-    update(arg0: ByteBuffer): void;
-    update(arg0: number[]): void;
     update(arg0: number[], arg1: number, arg2: number): void;
     update(arg0: number): void;
 }

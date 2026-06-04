@@ -14,8 +14,6 @@ export class Warden$VibrationUser extends Object implements VibrationSystem$User
     calculateTravelTimeInTicks(distanceToDestination: number): number;
     canReceiveVibration(level: ServerLevel, pos: BlockPos, event: Holder<GameEvent>, context: GameEvent$Context): boolean;
     canTriggerAvoidVibration(): boolean;
-    canTriggerAvoidVibration(): boolean;
-    getListenableEvents(): TagKey<GameEvent>;
     getListenableEvents(): TagKey<GameEvent>;
     getListenerRadius(): number;
     getPositionSource(): PositionSource;

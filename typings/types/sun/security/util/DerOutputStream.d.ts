@@ -25,7 +25,6 @@ export class DerOutputStream extends ByteArrayOutputStream implements DerEncoder
     putInteger(arg0: BigInteger): DerOutputStream;
     putInteger(arg0: number[]): DerOutputStream;
     putInteger(arg0: number): DerOutputStream;
-    putInteger(arg0: number): DerOutputStream;
     // private putIntegerContents(arg0: number): void;
     putLength(arg0: number): void;
     putNull(): DerOutputStream;

@@ -13,6 +13,5 @@ export class ZLibCompression extends Object implements CompressionAlgorithm {
     compress(arg0: ByteBuf, arg1: ByteBuf): void;
     decompress(arg0: ByteBuf, arg1: ByteBuf): void;
     end(): void;
-    end(): void;
     getAlgorithm(): PacketCompressionAlgorithm;
 }

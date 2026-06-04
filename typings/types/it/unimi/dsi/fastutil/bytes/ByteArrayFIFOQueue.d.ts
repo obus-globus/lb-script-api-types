@@ -19,14 +19,11 @@ export class ByteArrayFIFOQueue extends Object implements BytePriorityQueue, Ser
     dequeueByte(): number;
     dequeueLastByte(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     enqueueFirst(arg0: number): void;
     // private expand(): void;
     first(): number;
     firstByte(): number;
     last(): number;
-    lastByte(): number;
     lastByte(): number;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;

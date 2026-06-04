@@ -15,7 +15,6 @@ export class ComponentsIngredient extends Object implements CustomIngredient {
     // private components: DataComponentPatch;
     // private createEntryDisplay(arg0: Holder<Item>): SlotDisplay;
     display(): SlotDisplay;
-    display(): SlotDisplay;
     equals(arg0: Object | null): boolean;
     // private getBase(): Ingredient;
     // private getComponents(): DataComponentPatch;

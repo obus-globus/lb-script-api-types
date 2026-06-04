@@ -10,7 +10,6 @@ export class TextIO$IntReaderWrapper extends Object implements IntIterator {
     // private s: string;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

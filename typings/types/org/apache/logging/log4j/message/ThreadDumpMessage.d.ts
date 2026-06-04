@@ -14,7 +14,6 @@ export class ThreadDumpMessage extends Object implements Message, StringBuilderF
     // private title: string;
     formatTo(sb: StringBuilder): void;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

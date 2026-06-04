@@ -43,10 +43,6 @@ export class GlRenderPass extends Object implements RenderPassBackend, RenderPas
     getScissorY(): number;
     hasDepthTexture(): boolean;
     iris$getCustomPass(): CustomPass;
-    iris$getCustomPass(): CustomPass;
-    iris$getCustomPass(): CustomPass;
-    iris$setCustomPass(arg0: CustomPass): void;
-    iris$setCustomPass(arg0: CustomPass): void;
     iris$setCustomPass(arg0: CustomPass): void;
     isClosed(): boolean;
     isScissorEnabled(): boolean;

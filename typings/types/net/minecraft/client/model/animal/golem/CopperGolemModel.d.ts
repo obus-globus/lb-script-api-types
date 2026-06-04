@@ -32,5 +32,4 @@ export class CopperGolemModel extends EntityModel<CopperGolemRenderState> implem
     setupAnim(state: CopperGolemRenderState): void;
     translateToHand(state: CopperGolemRenderState, arm: HumanoidArm, poseStack: PoseStack): void;
     translateToHead(poseStack: PoseStack): void;
-    translateToHead(poseStack: PoseStack): void;
 }

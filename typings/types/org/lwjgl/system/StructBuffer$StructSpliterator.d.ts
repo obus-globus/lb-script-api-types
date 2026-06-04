@@ -22,8 +22,6 @@ export class StructBuffer$StructSpliterator<T extends Struct<T>> extends Object 
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
     getComparator(): (param0: T) => kotlin.Boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;

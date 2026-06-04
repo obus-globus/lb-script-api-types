@@ -14,7 +14,6 @@ export class LevelLoadTracker$WaitingForServer extends Record implements LevelLo
     level(): ClientLevel;
     levelRenderer(): LevelRenderer;
     loadingPacketsReceived(): LevelLoadTracker$ClientState;
-    loadingPacketsReceived(): LevelLoadTracker$ClientState;
     player(): LocalPlayer;
     tick(): LevelLoadTracker$ClientState;
     timeoutAfter(): number;

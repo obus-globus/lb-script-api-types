@@ -14,8 +14,6 @@ export class TrainableTextEmbedding extends AbstractBlock implements TextEmbeddi
     embedText(arg0: NDManager, arg1: number[]): NDArray;
     embedText(arg0: NDManager, arg1: string[]): NDArray;
     embedText(arg0: NDArray): NDArray;
-    embedText(arg0: NDManager, arg1: number[]): NDArray;
-    embedText(arg0: NDManager, arg1: string[]): NDArray;
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];

@@ -14,15 +14,12 @@ export class ReferenceByteImmutablePair<K extends Object | number | string | boo
     left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceBytePair<K>;
-    right(arg0: number): ReferenceBytePair<K>;
     rightByte(): number;
     second(): number;
-    second(arg0: number): ReferenceBytePair<K>;
     second(arg0: number): ReferenceBytePair<K>;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceBytePair<K>;
     value(arg0: number): ReferenceBytePair<K>;
     valueByte(): number;
 }

@@ -28,7 +28,6 @@ export class HeaderAndFooterLayout extends Object implements Layout {
     addToHeader<T extends LayoutElement>(child: T): T;
     addToHeader<T extends LayoutElement>(child: T, layoutSettingsAdjustments: (param0: LayoutSettings) => void): T;
     arrangeElements(): void;
-    arrangeElements(): void;
     getContentHeight(): number;
     getFooterHeight(): number;
     getHeaderHeight(): number;

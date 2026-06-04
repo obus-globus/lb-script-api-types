@@ -20,9 +20,6 @@ export class AccessWidenerImpl extends Object implements AccessWidener, AccessWi
     // private makeClassAccessible(arg0: EntryTriple): void;
     // private makeClassExtendable(arg0: EntryTriple): void;
     visitClass(arg0: AccessWidenerVisitor$AccessType, arg1: boolean): void;
-    visitClass(arg0: AccessWidenerVisitor$AccessType, arg1: boolean): void;
     visitField(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
-    visitField(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
-    visitMethod(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
     visitMethod(arg0: string, arg1: string, arg2: AccessWidenerVisitor$AccessType, arg3: boolean): void;
 }

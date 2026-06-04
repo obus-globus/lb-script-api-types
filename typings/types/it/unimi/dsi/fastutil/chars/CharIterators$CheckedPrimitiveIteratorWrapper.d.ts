@@ -6,7 +6,6 @@ import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.
 export class CharIterators$CheckedPrimitiveIteratorWrapper extends CharIterators$PrimitiveIteratorWrapper {
     constructor(arg0: PrimitiveIterator$OfInt)
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     nextChar(): string;
 }

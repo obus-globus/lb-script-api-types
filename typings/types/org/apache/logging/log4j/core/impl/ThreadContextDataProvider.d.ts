@@ -6,5 +6,4 @@ export class ThreadContextDataProvider extends Object implements ContextDataProv
     getValue(key: string): Object;
     supplyContextData(): { [key: string]: string };
     supplyStringMap(): StringMap;
-    supplyStringMap(): StringMap;
 }

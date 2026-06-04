@@ -5,12 +5,10 @@ export class Object2LongLinkedOpenCustomHashMap$ValueIterator extends Object2Lon
     constructor(null_: Object2LongLinkedOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

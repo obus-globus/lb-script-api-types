@@ -8,13 +8,7 @@ export class CharBigListIterators$BigListIteratorListIterator extends Object imp
     constructor(arg0: CharListIterator)
     // private i: CharListIterator;
     add(arg0: string): void;
-    add(arg0: string): void;
-    add(arg0: string): void;
-    add(arg0: string): void;
     back(arg0: number): number;
-    back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -26,11 +20,5 @@ export class CharBigListIterators$BigListIteratorListIterator extends Object imp
     previousIndex(): number;
     remove(): void;
     set(arg0: string): void;
-    set(arg0: string): void;
-    set(arg0: string): void;
-    set(arg0: string): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

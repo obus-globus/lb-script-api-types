@@ -9,7 +9,6 @@ export class LongRBTreeSet$SetIterator extends Object implements LongListIterato
     // private next: LongRBTreeSet$Entry;
     // private prev: LongRBTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class LongRBTreeSet$SetIterator extends Object implements LongListIterato
     previousIndex(): number;
     previousLong(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

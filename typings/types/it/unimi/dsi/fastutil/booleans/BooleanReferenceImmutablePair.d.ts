@@ -11,15 +11,12 @@ export class BooleanReferenceImmutablePair<V extends Object | number | string | 
     equals(arg0: Object | null): boolean;
     first(): boolean;
     first(arg0: boolean): BooleanReferencePair<V>;
-    first(arg0: boolean): BooleanReferencePair<V>;
     firstBoolean(): boolean;
     hashCode(): number;
     key(): boolean;
     key(arg0: boolean): BooleanReferencePair<V>;
-    key(arg0: boolean): BooleanReferencePair<V>;
     keyBoolean(): boolean;
     left(): boolean;
-    left(arg0: boolean): BooleanReferencePair<V>;
     left(arg0: boolean): BooleanReferencePair<V>;
     leftBoolean(): boolean;
     right(): V;

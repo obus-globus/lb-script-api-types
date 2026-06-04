@@ -229,8 +229,6 @@ export class Vector3f extends Object implements Externalizable, Cloneable, Vecto
     set(arg0: FloatBuffer): Vector3f;
     set(arg0: number): Vector3f;
     set(arg0: number, arg1: number, arg2: number): Vector3f;
-    set(arg0: number): Vector3f;
-    set(arg0: number, arg1: number, arg2: number): Vector3f;
     set(arg0: number[]): Vector3f;
     set(arg0: number, arg1: ByteBuffer): Vector3f;
     set(arg0: number, arg1: FloatBuffer): Vector3f;

@@ -12,28 +12,22 @@ export class ByteIntImmutablePair extends Object implements ByteIntPair, Seriali
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteIntPair;
-    first(arg0: number): ByteIntPair;
     firstByte(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ByteIntPair;
-    key(arg0: number): ByteIntPair;
     keyByte(): number;
     left(): number;
-    left(arg0: number): ByteIntPair;
     left(arg0: number): ByteIntPair;
     leftByte(): number;
     right(): number;
     right(arg0: number): ByteIntPair;
-    right(arg0: number): ByteIntPair;
     rightInt(): number;
     second(): number;
-    second(arg0: number): ByteIntPair;
     second(arg0: number): ByteIntPair;
     secondInt(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ByteIntPair;
     value(arg0: number): ByteIntPair;
     valueInt(): number;
 }

@@ -7,8 +7,6 @@ export class Double2ShortOpenCustomHashMap$ValueIterator extends Double2ShortOpe
     constructor(null_: Double2ShortOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
     skip(arg0: number): number;

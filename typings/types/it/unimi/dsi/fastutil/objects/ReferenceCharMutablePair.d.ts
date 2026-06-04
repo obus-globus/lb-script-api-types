@@ -14,17 +14,12 @@ export class ReferenceCharMutablePair<K extends Object | number | string | boole
     right(): string;
     right(arg0: string): ReferenceCharPair<K>;
     right(arg0: string): ReferenceCharMutablePair<K>;
-    right(): string;
-    right(arg0: string): ReferenceCharPair<K>;
-    right(arg0: string): ReferenceCharPair<K>;
     rightChar(): string;
     second(): string;
-    second(arg0: string): ReferenceCharPair<K>;
     second(arg0: string): ReferenceCharPair<K>;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): ReferenceCharPair<K>;
     value(arg0: string): ReferenceCharPair<K>;
     valueChar(): string;
 }

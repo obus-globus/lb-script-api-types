@@ -63,12 +63,9 @@ export abstract class AbstractFloat2BooleanFunction extends Object implements Fl
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;
-    defaultReturnValue(): boolean;
-    defaultReturnValue(arg0: boolean): void;
     get(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
     getOrDefault(arg0: number, arg1: boolean): boolean;
-    put(arg0: number, arg1: boolean): boolean;
     put(arg0: number, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     remove(arg0: number): boolean;

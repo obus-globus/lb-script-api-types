@@ -12,7 +12,5 @@ export class AppendableJoiner<T extends Object | number | string | boolean> exte
     // private prefix: CharSequence;
     // private suffix: CharSequence;
     join(arg0: StringBuilder, arg1: T[]): StringBuilder;
-    join(arg0: StringBuilder, arg1: T[]): StringBuilder;
-    joinA<A extends Appendable>(arg0: A, arg1: T[]): A;
     joinA<A extends Appendable>(arg0: A, arg1: T[]): A;
 }

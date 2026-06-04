@@ -15,7 +15,6 @@ export class ObjectiveCriteriaArgument extends Object implements ArgumentType<Ob
     static getCriteria(paramcontext: CommandContext<CommandSourceStack>, paramname: string): ObjectiveCriteria;
     private constructor()
     getExamples(): E[];
-    getExamples(): E[];
     getName(type: Stat<T>[], value: Object): string;
     listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;

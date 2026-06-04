@@ -9,7 +9,6 @@ export class DoubleRBTreeSet$SetIterator extends Object implements DoubleListIte
     // private next: DoubleRBTreeSet$Entry;
     // private prev: DoubleRBTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class DoubleRBTreeSet$SetIterator extends Object implements DoubleListIte
     previousEntry(): DoubleRBTreeSet$Entry;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

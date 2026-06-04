@@ -78,7 +78,6 @@ export class BlockPos$MutableBlockPos extends BlockPos {
     relative(axis: Direction$Axis, steps: number): BlockPos;
     rotate(rotation: Rotation): BlockPos;
     set(x: number, y: number, z: number): BlockPos$MutableBlockPos;
-    set(x: number, y: number, z: number): BlockPos$MutableBlockPos;
     set(pos: number): BlockPos$MutableBlockPos;
     set(transform: AxisCycle, x: number, y: number, z: number): BlockPos$MutableBlockPos;
     set(vec: Vec3i): BlockPos$MutableBlockPos;

@@ -11,7 +11,6 @@ export class NamedChoiceFinder<FT extends Object | number | string | boolean> ex
     equals(arg0: Object | null): boolean;
     findType(arg0: Type<A>, arg1: Type<FR>, arg2: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
     findType(arg0: Type<A>, arg1: boolean): Either<TypedOptic<A, Object, FT, FT>, Type$FieldNotFoundException>;
-    findType(arg0: Type<A>, arg1: boolean): Either<TypedOptic<A, Object, FT, FT>, Type$FieldNotFoundException>;
     hashCode(): number;
     inField(arg0: string, arg1: Type<GT>): OpticFinder<FT>;
     type(): Type<FT>;

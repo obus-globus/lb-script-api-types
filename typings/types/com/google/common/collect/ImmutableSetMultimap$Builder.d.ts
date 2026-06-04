@@ -18,7 +18,6 @@ export class ImmutableSetMultimap$Builder<K extends Object | number | string | b
     put(entry: Map$Entry<K, V>): ImmutableSetMultimap$Builder<K, V>;
     put(key: K, value: V): ImmutableSetMultimap$Builder<K, V>;
     putAll(key: K, values: V[]): ImmutableSetMultimap$Builder<K, V>;
-    putAll(key: K, values: V[]): ImmutableSetMultimap$Builder<K, V>;
     putAll(multimap: Multimap<K, V>): ImmutableSetMultimap$Builder<K, V>;
     putAll(entries: Map$Entry<K, V>[]): ImmutableSetMultimap$Builder<K, V>;
 }

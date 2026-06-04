@@ -8,10 +8,6 @@ export class IntIterators$IteratorWrapper extends Object implements IntIterator 
     constructor(arg0: Iterator<number>)
     // private i: Iterator<number>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

@@ -5,17 +5,14 @@ export interface ByteReferencePair<V extends Object | number | string | boolean>
     first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     first(): number;
     first(arg0: number): ByteReferencePair<V>;
-    first(arg0: number): ByteReferencePair<V>;
     firstByte(): number;
     key<L extends Object | number | string | boolean>(): L;
     key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     key(): number;
     key(arg0: number): ByteReferencePair<V>;
-    key(arg0: number): ByteReferencePair<V>;
     keyByte(): number;
     left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     left(): number;
-    left(arg0: number): ByteReferencePair<V>;
     left(arg0: number): ByteReferencePair<V>;
     leftByte(): number;
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;

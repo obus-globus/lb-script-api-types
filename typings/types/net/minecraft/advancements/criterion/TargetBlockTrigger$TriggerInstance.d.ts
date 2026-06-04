@@ -24,5 +24,4 @@ export class TargetBlockTrigger$TriggerInstance extends Record implements Simple
     signalStrength(): MinMaxBounds$Ints;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

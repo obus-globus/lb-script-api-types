@@ -35,7 +35,6 @@ export class ExperienceBottleItem extends Item implements ProjectileItem {
     constructor(properties: Item$Properties)
     asProjectile(level: Level, position: Position, itemStack: ItemStack, direction: Direction): Projectile;
     createDispenseConfig(): ProjectileItem$DispenseConfig;
-    createDispenseConfig(): ProjectileItem$DispenseConfig;
     shoot(projectile: Projectile, xd: number, yd: number, zd: number, pow: number, uncertainty: number): void;
     use(level: Level, player: Player, hand: InteractionHand): InteractionResult;
 }

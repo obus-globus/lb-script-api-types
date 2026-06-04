@@ -19,14 +19,11 @@ export class DoubleArrayFIFOQueue extends Object implements DoublePriorityQueue,
     dequeueDouble(): number;
     dequeueLastDouble(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     enqueueFirst(arg0: number): void;
     // private expand(): void;
     first(): number;
     firstDouble(): number;
     last(): number;
-    lastDouble(): number;
     lastDouble(): number;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;

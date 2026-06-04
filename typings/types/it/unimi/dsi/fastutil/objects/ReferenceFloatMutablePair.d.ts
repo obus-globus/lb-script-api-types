@@ -14,17 +14,12 @@ export class ReferenceFloatMutablePair<K extends Object | number | string | bool
     right(): number;
     right(arg0: number): ReferenceFloatPair<K>;
     right(arg0: number): ReferenceFloatMutablePair<K>;
-    right(): number;
-    right(arg0: number): ReferenceFloatPair<K>;
-    right(arg0: number): ReferenceFloatPair<K>;
     rightFloat(): number;
     second(): number;
-    second(arg0: number): ReferenceFloatPair<K>;
     second(arg0: number): ReferenceFloatPair<K>;
     secondFloat(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceFloatPair<K>;
     value(arg0: number): ReferenceFloatPair<K>;
     valueFloat(): number;
 }

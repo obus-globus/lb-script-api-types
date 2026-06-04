@@ -29,7 +29,6 @@ export class NbtContents extends Record implements ComponentContents {
     nbtPath(): CompilableString<NbtPathArgument$NbtPath>;
     plain(): boolean;
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
-    resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
     separator(): Optional<Component>;
     toString(): string;
     visit(output: FormattedText$ContentConsumer<T>): Optional<T>;

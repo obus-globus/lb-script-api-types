@@ -32,7 +32,6 @@ export abstract class AbstractRepository extends Object implements Repository {
     openStream(arg0: Artifact$Item, arg1: string): InputStream;
     prepare(arg0: Artifact): void;
     prepare(arg0: Artifact, arg1: Progress): void;
-    prepare(arg0: Artifact): void;
     resolvePath(arg0: Artifact$Item, arg1: string): URI;
     save(arg0: InputStream, arg1: Path[], arg2: Artifact$Item, arg3: Progress): void;
 }

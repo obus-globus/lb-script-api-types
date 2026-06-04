@@ -63,7 +63,6 @@ export class SpdyFrameCodec extends ByteToMessageDecoder implements ChannelOutbo
     readSynReplyFrame(arg0: number, arg1: boolean): void;
     readSynStreamFrame(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: boolean): void;
     readUnknownFrame(arg0: number, arg1: number, arg2: ByteBuf): void;
-    readUnknownFrame(arg0: number, arg1: number, arg2: ByteBuf): void;
     readWindowUpdateFrame(arg0: number, arg1: number): void;
     write(arg0: ChannelHandlerContext, arg1: Object, arg2: ChannelPromise): void;
 }

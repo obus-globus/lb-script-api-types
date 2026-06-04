@@ -21,7 +21,6 @@ export class SlotCollection$Limited extends Record implements SlotCollection {
     itemCopies(): Stream<ItemStack>;
     limit(): number;
     limit(limit: number): SlotCollection;
-    limit(limit: number): SlotCollection;
     slots(): SlotCollection;
     toString(): string;
 }

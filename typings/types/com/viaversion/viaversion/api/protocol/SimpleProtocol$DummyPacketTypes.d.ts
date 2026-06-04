@@ -10,8 +10,6 @@ export class SimpleProtocol$DummyPacketTypes extends Enum<SimpleProtocol$DummyPa
     static values(): (Object | null)[];
     private constructor()
     direction(): Direction;
-    direction(): Direction;
-    direction(): Direction;
     getId(): number;
     getName(): string;
 }

@@ -22,18 +22,12 @@ export class LootTable$Builder extends Object implements FabricLootTableBuilder,
     apply(arg0: E[]): LootTable$Builder;
     apply(arg0: LootItemFunction): LootTable$Builder;
     apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootTable$Builder;
-    apply(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootTable$Builder;
-    apply(arg0: E[]): LootTable$Builder;
-    apply(arg0: LootItemFunction): LootTable$Builder;
     apply(function_: LootItemFunction$Builder): LootTable$Builder;
-    apply<T extends FunctionUserBuilder<T>>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     apply<T extends FunctionUserBuilder<T>>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     build(): LootTable;
     modifyPools(arg0: (param0: LootPool$Builder) => void): LootTable$Builder;
     modifyPools(arg0: (param0: Object) => void): LootTable$Builder;
     pool(arg0: LootPool): LootTable$Builder;
-    pool(arg0: LootPool): LootTable$Builder;
-    pools(arg0: E[]): LootTable$Builder;
     pools(arg0: E[]): LootTable$Builder;
     // private self(): LootTable$Builder;
     setParamSet(paramSet: ContextKeySet): LootTable$Builder;

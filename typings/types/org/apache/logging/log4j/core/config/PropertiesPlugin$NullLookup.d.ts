@@ -13,8 +13,6 @@ export class PropertiesPlugin$NullLookup extends Enum<PropertiesPlugin$NullLooku
     private constructor()
     evaluate(key: string): LookupResult;
     evaluate(event: LogEvent, key: string): LookupResult;
-    evaluate(key: string): LookupResult;
-    evaluate(event: LogEvent, key: string): LookupResult;
     lookup(key: string): string;
     lookup(event: LogEvent, key: string): string;
     name(): "INSTANCE";

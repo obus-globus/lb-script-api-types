@@ -19,7 +19,6 @@ export class ForeignIterablePrototypeBuiltins$ForeignIterablePrototype extends E
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;
-    getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
     isAOTSupported(): boolean;

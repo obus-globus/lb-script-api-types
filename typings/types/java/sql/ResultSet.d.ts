@@ -130,17 +130,13 @@ export interface ResultSet extends AutoCloseable, Wrapper, Object{
     updateArray(arg0: string, arg1: Array): void;
     updateAsciiStream(arg0: number, arg1: InputStream): void;
     updateAsciiStream(arg0: number, arg1: InputStream, arg2: number): void;
-    updateAsciiStream(arg0: number, arg1: InputStream, arg2: number): void;
     updateAsciiStream(arg0: string, arg1: InputStream): void;
-    updateAsciiStream(arg0: string, arg1: InputStream, arg2: number): void;
     updateAsciiStream(arg0: string, arg1: InputStream, arg2: number): void;
     updateBigDecimal(arg0: number, arg1: BigDecimal): void;
     updateBigDecimal(arg0: string, arg1: BigDecimal): void;
     updateBinaryStream(arg0: number, arg1: InputStream): void;
     updateBinaryStream(arg0: number, arg1: InputStream, arg2: number): void;
-    updateBinaryStream(arg0: number, arg1: InputStream, arg2: number): void;
     updateBinaryStream(arg0: string, arg1: InputStream): void;
-    updateBinaryStream(arg0: string, arg1: InputStream, arg2: number): void;
     updateBinaryStream(arg0: string, arg1: InputStream, arg2: number): void;
     updateBlob(arg0: number, arg1: InputStream): void;
     updateBlob(arg0: number, arg1: InputStream, arg2: number): void;
@@ -156,9 +152,7 @@ export interface ResultSet extends AutoCloseable, Wrapper, Object{
     updateBytes(arg0: string, arg1: number[]): void;
     updateCharacterStream(arg0: number, arg1: Reader): void;
     updateCharacterStream(arg0: number, arg1: Reader, arg2: number): void;
-    updateCharacterStream(arg0: number, arg1: Reader, arg2: number): void;
     updateCharacterStream(arg0: string, arg1: Reader): void;
-    updateCharacterStream(arg0: string, arg1: Reader, arg2: number): void;
     updateCharacterStream(arg0: string, arg1: Reader, arg2: number): void;
     updateClob(arg0: number, arg1: Reader): void;
     updateClob(arg0: number, arg1: Reader, arg2: number): void;

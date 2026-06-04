@@ -3,12 +3,10 @@ import type { Char2ByteRBTreeMap$TreeIterator } from '../../../../../it/unimi/ds
 export class Char2ByteRBTreeMap$ValueIterator extends Char2ByteRBTreeMap$TreeIterator implements ByteListIterator {
     private constructor(null_: Char2ByteRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextByte(): number;
     previous(): number;
     previousByte(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -11,5 +11,4 @@ export class CallExpression extends Object implements Expression {
     // private isConstant(): boolean;
     listVariables(arg0: E[]): void;
     partialEval(arg0: FunctionContext, arg1: FunctionReturn): Expression;
-    partialEval(arg0: FunctionContext, arg1: FunctionReturn): Expression;
 }

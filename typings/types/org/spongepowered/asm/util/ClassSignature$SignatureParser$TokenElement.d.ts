@@ -11,7 +11,6 @@ export abstract class ClassSignature$SignatureParser$TokenElement extends ClassS
     // private array: boolean;
     token: ClassSignature$Token;
     addTypeArgument(arg0: string): ClassSignature$IToken;
-    addTypeArgument(arg0: string): ClassSignature$IToken;
     addTypeArgument(arg0: ClassSignature$TokenHandle): ClassSignature$IToken;
     // private getArray(): boolean;
     getToken(): ClassSignature$Token;

@@ -34,17 +34,11 @@ export abstract class LegacyItemRewriter<C extends ClientboundPacketType, S exte
     handleItemToServer(arg0: UserConnection, arg1: Item): Item;
     // private handleServerboundItem(arg0: PacketWrapper): void;
     itemArrayType(): Type<Item[]>;
-    itemArrayType(): Type<Item[]>;
     itemTemplateType(): Type<Item>;
     itemType(): Type<Item>;
-    itemType(): Type<Item>;
-    mappedItemArrayType(): Type<Item[]>;
     mappedItemArrayType(): Type<Item[]>;
     mappedItemTemplateType(): Type<Item>;
     mappedItemType(): Type<Item>;
-    mappedItemType(): Type<Item>;
-    nbtTagName(): string;
-    nbtTagName(arg0: string): string;
     nbtTagName(): string;
     nbtTagName(arg0: string): string;
     registerCreativeInventoryAction(arg0: S): void;

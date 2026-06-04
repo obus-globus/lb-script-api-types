@@ -15,10 +15,8 @@ export class LocalIoHandler extends Object implements IoHandler {
     // private executor: ThreadAwareExecutor;
     // private registeredChannels: LocalIoHandle[];
     destroy(): void;
-    destroy(): void;
     initialize(): void;
     isCompatible(arg0: Class<IoHandle>): boolean;
-    prepareToDestroy(): void;
     prepareToDestroy(): void;
     register(arg0: IoHandle): IoRegistration;
     run(arg0: IoHandlerContext): number;

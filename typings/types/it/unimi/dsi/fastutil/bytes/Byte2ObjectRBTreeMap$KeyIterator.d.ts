@@ -4,12 +4,10 @@ export class Byte2ObjectRBTreeMap$KeyIterator extends Byte2ObjectRBTreeMap$TreeI
     constructor(null_: Byte2ObjectRBTreeMap$KeyIterator)
     constructor(null_: Byte2ObjectRBTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextByte(): number;
     previous(): number;
     previousByte(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

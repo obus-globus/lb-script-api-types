@@ -19,10 +19,10 @@ export class MutexImpl$CancellableContinuationWithOwner extends Object implement
     initCancellability(): void;
     invokeOnCancellation(handler: (param0: Throwable | null) => void): void;
     invokeOnCancellation(segment: Segment<Object>, index: number): void;
-    resume<R extends void>(value: R, onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void | null): void;
-    resume(value: void, onCancellation: (param0: Throwable) => void | null): void;
+    resume<R extends void>(value: R, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): void;
+    resume(value: void, onCancellation: ((param0: Throwable) => void) | null): void;
     resumeWith(result: Result<void>): void;
-    tryResume<R extends void>(value: R, idempotent: Object | null, onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void | null): Object | null;
+    tryResume<R extends void>(value: R, idempotent: Object | null, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): Object | null;
     tryResume(value: void, idempotent: Object | null): Object | null;
     tryResumeWithException(exception: Throwable): Object | null;
 }

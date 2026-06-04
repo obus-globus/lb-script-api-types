@@ -12,7 +12,6 @@ export class ClosedDoubleRange extends Object implements ClosedFloatingPointRang
     equals(other: Object | null): boolean;
     hashCode(): number;
     isEmpty(): boolean;
-    isEmpty(): boolean;
     lessThanOrEquals(a: number, b: number): boolean;
     toString(): string;
 }

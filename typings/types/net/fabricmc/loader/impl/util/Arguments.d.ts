@@ -12,7 +12,6 @@ export class Arguments extends Object {
     getOrDefault(arg0: string, arg1: string): string;
     keys(): E[];
     parse(arg0: string[]): void;
-    parse(arg0: string[]): void;
     put(arg0: string, arg1: string): void;
     remove(arg0: string): string;
     toArray(): string[];

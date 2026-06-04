@@ -9,7 +9,6 @@ export class AbstractObject2CharSortedMap$ValuesIterator<K extends Object | numb
     constructor(arg0: ObjectBidirectionalIterator<Object2CharMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Object2CharMap$Entry<K>>;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;

@@ -3,10 +3,8 @@ import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/char
 export abstract class AbstractCharListIterator extends AbstractCharBidirectionalIterator implements CharListIterator {
     constructor()
     add(arg0: string): void;
-    add(arg0: string): void;
     next(): string;
     previous(): string;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

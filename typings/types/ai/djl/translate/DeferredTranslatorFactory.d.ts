@@ -9,7 +9,6 @@ export class DeferredTranslatorFactory extends Object implements TranslatorFacto
     constructor()
     getSupportedTypes(): Pair<Type, Type>[];
     isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;
-    isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;
     // private loadTranslatorFactory(arg0: string): TranslatorFactory;
     newInstance(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: { [key: string]: Object | null }): Translator<I, O>;
 }

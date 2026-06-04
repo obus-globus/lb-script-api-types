@@ -16,7 +16,6 @@ export class StringFormattedMessage extends Object implements Message {
     equals(o: Object | null): boolean;
     formatMessage(msgPattern: string, args: Object[]): string;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

@@ -60,7 +60,6 @@ export class HashConverter_v1_21_5 extends Object implements DataConverter<HashC
     forkIfDefault(): DataConverter<T>;
     mergeList<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeList(arg0: HashCode, arg1: HashCode[]): Result<HashCode>;
-    mergeList(arg0: HashCode, arg1: HashCode[]): Result<HashCode>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T, arg2: T): Result<T>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: HashCode, arg1: HashCode, arg2: HashCode): Result<HashCode>;

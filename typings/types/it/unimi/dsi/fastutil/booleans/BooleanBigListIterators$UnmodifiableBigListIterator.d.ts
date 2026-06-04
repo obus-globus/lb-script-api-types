@@ -6,9 +6,7 @@ export class BooleanBigListIterators$UnmodifiableBigListIterator extends Object 
     constructor(arg0: BooleanBigListIterator)
     // private i: BooleanBigListIterator;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -17,7 +15,5 @@ export class BooleanBigListIterators$UnmodifiableBigListIterator extends Object 
     previousBoolean(): boolean;
     previousIndex(): number;
     set(arg0: boolean): void;
-    set(arg0: boolean): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

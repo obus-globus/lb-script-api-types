@@ -1,5 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
+import type { AtomicInt } from '../../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { ThreadSafeHeapNode } from '../../../kotlinx/coroutines/internal/ThreadSafeHeapNode.d.ts'
 export class ThreadSafeHeap<T extends ThreadSafeHeapNode & Comparable<T>> extends Object {
     constructor()

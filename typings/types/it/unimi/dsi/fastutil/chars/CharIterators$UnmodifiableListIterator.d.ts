@@ -7,8 +7,6 @@ export class CharIterators$UnmodifiableListIterator extends Object implements Ch
     constructor(arg0: CharListIterator)
     // private i: CharListIterator;
     add(arg0: string): void;
-    add(arg0: string): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -20,6 +18,5 @@ export class CharIterators$UnmodifiableListIterator extends Object implements Ch
     previousChar(): string;
     previousIndex(): number;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

@@ -9,7 +9,6 @@ export abstract class AbstractListBuilder<T extends Object | number | string | b
     // private builder: DataResult<B>;
     // private ops: DynamicOps<T>;
     add<E extends Object | number | string | boolean>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
-    add<E extends Object | number | string | boolean>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
     add(value: T): ListBuilder<T>;
     add(value: DataResult<T>): ListBuilder<T>;
     addAll(arg0: E[], arg1: Encoder<E>): ListBuilder<T>;
@@ -17,7 +16,6 @@ export abstract class AbstractListBuilder<T extends Object | number | string | b
     build(arg0: DataResult<T>): DataResult<T>;
     build(builder: B, prefix: T): DataResult<T>;
     build(prefix: T): DataResult<T>;
-    build(arg0: DataResult<T>): DataResult<T>;
     initBuilder(): B;
     mapError(onError: (param0: string) => unknown): ListBuilder<T>;
     ops(): DynamicOps<T>;

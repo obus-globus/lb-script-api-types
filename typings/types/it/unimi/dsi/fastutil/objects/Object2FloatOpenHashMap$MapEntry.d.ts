@@ -24,21 +24,13 @@ export class Object2FloatOpenHashMap$MapEntry extends Object implements Object2F
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectFloatPair<K>;
-    right(arg0: number): ObjectFloatPair<K>;
-    right(): number;
-    right(arg0: number): ObjectFloatPair<K>;
-    right(arg0: number): ObjectFloatPair<K>;
     rightFloat(): number;
     second(): number;
     second(arg0: number): ObjectFloatPair<K>;
-    second(arg0: number): ObjectFloatPair<K>;
     secondFloat(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectFloatPair<K>;
     value(arg0: number): ObjectFloatPair<K>;
     valueFloat(): number;
 }

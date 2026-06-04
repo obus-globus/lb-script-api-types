@@ -8,7 +8,7 @@ export class SafePublicationLazyImpl<T extends Object | number | string | boolea
     constructor(initializer: () => T)
     // private _value: Object | null;
     // private final: Object;
-    // private initializer: () => T;
+    // private initializer: (() => T) | null;
     readonly value: T;
     isInitialized(): boolean;
     // private readObject(input: ObjectInputStream): void;

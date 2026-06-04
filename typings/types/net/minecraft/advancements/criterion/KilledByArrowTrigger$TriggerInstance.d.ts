@@ -28,6 +28,5 @@ export class KilledByArrowTrigger$TriggerInstance extends Record implements Simp
     toString(): string;
     uniqueEntityTypes(): MinMaxBounds$Ints;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
     victims(): ContextAwarePredicate[];
 }

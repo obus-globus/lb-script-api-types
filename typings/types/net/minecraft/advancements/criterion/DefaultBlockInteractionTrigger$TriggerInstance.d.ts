@@ -18,5 +18,4 @@ export class DefaultBlockInteractionTrigger$TriggerInstance extends Record imple
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

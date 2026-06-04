@@ -29,7 +29,6 @@ export class JSBuiltin extends Object implements Builtin, JSFunctionData$CallTar
     createNode(context: JSContext, construct: boolean, newTarget: boolean): JSBuiltinNode;
     // private createNodeImpl(context: JSContext, construct: boolean, newTarget: boolean): JSBuiltinNode;
     getAttributeFlags(): number;
-    getAttributeFlags(): number;
     getECMAScriptVersion(): number;
     getFullName(): TruffleString;
     getKey(): Object;
@@ -39,7 +38,6 @@ export class JSBuiltin extends Object implements Builtin, JSFunctionData$CallTar
     hasSeparateConstructor(): boolean;
     initializeCallTarget(functionData: JSFunctionData, target: JSFunctionData$Target, callTarget: CallTarget): void;
     initializeCallTargets(functionData: JSFunctionData): void;
-    initializeRoot(functionData: JSFunctionData): void;
     initializeRoot(functionData: JSFunctionData): void;
     isAnnexB(): boolean;
     isConfigurable(): boolean;

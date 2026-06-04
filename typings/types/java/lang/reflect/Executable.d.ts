@@ -20,7 +20,6 @@ export class Executable extends AccessibleObject implements GenericDeclaration, 
     readonly declaredAnnotations: Map<Class<Annotation>, Annotation>;
     // private parameterData: Executable$ParameterData;
     accessFlags(): AccessFlag[];
-    accessFlags(): AccessFlag[];
     // private declaredAnnotations(): Map<Class<Annotation>, Annotation>;
     equalParamTypes(arg0: Class<Object>[], arg1: Class<Object>[]): boolean;
     getAllGenericParameterTypes(): Type[];

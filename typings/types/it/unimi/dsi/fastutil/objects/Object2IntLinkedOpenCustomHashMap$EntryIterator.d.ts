@@ -13,6 +13,5 @@ export class Object2IntLinkedOpenCustomHashMap$EntryIterator extends Object2IntL
     next(): Object2IntLinkedOpenCustomHashMap$MapEntry;
     previous(): Object2IntLinkedOpenCustomHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

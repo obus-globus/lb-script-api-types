@@ -7,8 +7,6 @@ export class Float2DoubleOpenCustomHashMap$KeyIterator extends Float2DoubleOpenC
     constructor(null_: Float2DoubleOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

@@ -15,9 +15,6 @@ export class LongComparators$OppositeComparator extends Object implements LongCo
     constructor(arg0: (param0: number, param1: number) => kotlin.Int)
     // private comparator: (param0: number, param1: number) => kotlin.Int;
     compare(arg0: number, arg1: number): number;
-    compare(arg0: number, arg1: number): number;
-    compare(arg0: number, arg1: number): number;
-    reversed(): (param0: number, param1: number) => kotlin.Int;
     reversed(): (param0: number, param1: number) => kotlin.Int;
     thenComparing(arg0: (param0: number, param1: number) => kotlin.Int): (param0: number, param1: number) => kotlin.Int;
     thenComparing(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;

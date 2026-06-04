@@ -13,15 +13,12 @@ export class ShortObjectImmutablePair<V extends Object | number | string | boole
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortObjectPair<V>;
-    first(arg0: number): ShortObjectPair<V>;
     firstShort(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortObjectPair<V>;
-    key(arg0: number): ShortObjectPair<V>;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortObjectPair<V>;
     left(arg0: number): ShortObjectPair<V>;
     leftShort(): number;
     right(): V;

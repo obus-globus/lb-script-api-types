@@ -28,8 +28,6 @@ export class WebAssemblyMemoryPrototypeBuiltins$WebAssemblyMemoryPrototype exten
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isEnumerable(): boolean;
-    isGetter(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

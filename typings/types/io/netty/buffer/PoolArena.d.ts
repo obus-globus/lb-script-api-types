@@ -59,15 +59,12 @@ export abstract class PoolArena<T extends Object | number | string | boolean> ex
     numActiveAllocations(): number;
     numActiveBytes(): number;
     numActiveChunks(): number;
-    numActiveChunks(): number;
     numActiveHugeAllocations(): number;
     numActiveNormalAllocations(): number;
     numActiveSmallAllocations(): number;
     numActiveTinyAllocations(): number;
     numAllocations(): number;
     numChunkAllocations(): number;
-    numChunkAllocations(): number;
-    numChunkDeallocations(): number;
     numChunkDeallocations(): number;
     numChunkLists(): number;
     numDeallocations(): number;

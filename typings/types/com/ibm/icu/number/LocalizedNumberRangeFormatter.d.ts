@@ -11,7 +11,6 @@ export class LocalizedNumberRangeFormatter extends NumberRangeFormatterSettings<
     create(arg0: number, arg1: Object): LocalizedNumberRangeFormatter;
     formatImpl(arg0: DecimalQuantity, arg1: DecimalQuantity, arg2: boolean): FormattedNumberRange;
     formatRange(arg0: number, arg1: number): FormattedNumberRange;
-    formatRange(arg0: number, arg1: number): FormattedNumberRange;
     formatRange(arg0: Number, arg1: Number): FormattedNumberRange;
     withoutLocale(): UnlocalizedNumberRangeFormatter;
 }

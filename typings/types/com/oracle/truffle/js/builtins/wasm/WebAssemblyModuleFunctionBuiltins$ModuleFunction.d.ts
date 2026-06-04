@@ -29,7 +29,6 @@ export class WebAssemblyModuleFunctionBuiltins$ModuleFunction extends Enum<WebAs
     isConstructor(): boolean;
     isEnabled(): boolean;
     isEnumerable(): boolean;
-    isEnumerable(): boolean;
     isGetter(): boolean;
     isNewTargetConstructor(): boolean;
     isOptional(): boolean;

@@ -1,5 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
+import type { AtomicArray } from '../../../../kotlinx/atomicfu/AtomicArray.d.ts'
 import type { HashedWeakRef } from '../../../../kotlinx/coroutines/debug/internal/HashedWeakRef.d.ts'
 export class ConcurrentWeakMap$Core extends Object {
     constructor(null_: ConcurrentWeakMap$Core, allocated: number)

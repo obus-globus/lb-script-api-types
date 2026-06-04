@@ -5,11 +5,6 @@ import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/fu
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface LongIterator extends PrimitiveIterator$OfLong, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    next(): number;
     next(): number;
     nextLong(): number;
     skip(arg0: number): number;

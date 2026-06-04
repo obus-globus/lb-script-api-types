@@ -43,8 +43,6 @@ export class Vector2i extends Object implements Externalizable, Cloneable, Vecto
     distanceSquared(arg0: Vector2ic): number;
     div(arg0: number): Vector2i;
     div(arg0: number, arg1: Vector2i): Vector2i;
-    div(arg0: number): Vector2i;
-    div(arg0: number, arg1: Vector2i): Vector2i;
     equals(arg0: Object | null): boolean;
     equals(arg0: number, arg1: number): boolean;
     get(arg0: ByteBuffer): ByteBuffer;

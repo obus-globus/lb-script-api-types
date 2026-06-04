@@ -40,8 +40,6 @@ export abstract class AbstractObject2ObjectFunction<K extends Object | number | 
     composeShort(arg0: (param0: K) => unknown): (param0: V) => unknown;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;
-    defaultReturnValue(): V;
-    defaultReturnValue(arg0: V): void;
     getOrDefault(arg0: Object, arg1: V): V;
     put(arg0: K, arg1: V): V;
     remove(arg0: Object): V;

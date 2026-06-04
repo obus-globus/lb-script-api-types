@@ -4,5 +4,4 @@ export interface Object2LongMap$Entry<K extends Object | number | string | boole
     readonly value: number;
     getLongValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

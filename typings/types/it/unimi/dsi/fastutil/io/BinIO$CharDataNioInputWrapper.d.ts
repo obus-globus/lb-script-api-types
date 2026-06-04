@@ -13,7 +13,6 @@ export class BinIO$CharDataNioInputWrapper extends Object implements CharIterato
     // private byteBuffer: ByteBuffer;
     // private channel: ReadableByteChannel;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): string;

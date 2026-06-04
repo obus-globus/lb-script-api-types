@@ -8,16 +8,9 @@ export class FloatIterators$CharIteratorWrapper extends Object implements FloatI
     constructor(arg0: CharIterator)
     // private iterator: CharIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextFloat(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

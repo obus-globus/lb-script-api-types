@@ -63,12 +63,9 @@ export abstract class AbstractBoolean2IntFunction extends Object implements Bool
     containsKey(arg0: boolean): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;
-    defaultReturnValue(): number;
-    defaultReturnValue(arg0: number): void;
     get(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
     getOrDefault(arg0: boolean, arg1: number): number;
-    put(arg0: boolean, arg1: number): number;
     put(arg0: boolean, arg1: number): number;
     remove(arg0: Object): number;
     remove(arg0: boolean): number;

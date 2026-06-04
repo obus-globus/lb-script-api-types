@@ -8,15 +8,9 @@ export class LongIterators$ShortIteratorWrapper extends Object implements LongIt
     constructor(arg0: ShortIterator)
     // private iterator: ShortIterator;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
-    next(): number;
     next(): number;
     nextLong(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

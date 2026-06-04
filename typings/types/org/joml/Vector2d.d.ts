@@ -130,7 +130,6 @@ export class Vector2d extends Object implements Externalizable, Cloneable, Vecto
     set(arg0: number): Vector2d;
     set(arg0: number, arg1: number): Vector2d;
     set(arg0: number[]): Vector2d;
-    set(arg0: number[]): Vector2d;
     set(arg0: number, arg1: ByteBuffer): Vector2d;
     set(arg0: number, arg1: DoubleBuffer): Vector2d;
     set(arg0: Vector2dc): Vector2d;

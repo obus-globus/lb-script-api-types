@@ -6,12 +6,10 @@ export class Int2ShortLinkedOpenHashMap$KeyIterator extends Int2ShortLinkedOpenH
     constructor(null_: Int2ShortLinkedOpenHashMap$KeyIterator, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextInt(): number;
     previous(): number;
     previousInt(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

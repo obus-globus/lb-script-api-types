@@ -16,17 +16,12 @@ export class ObjectShortMutablePair<K extends Object | number | string | boolean
     right(): number;
     right(arg0: number): ObjectShortPair<K>;
     right(arg0: number): ObjectShortMutablePair<K>;
-    right(): number;
-    right(arg0: number): ObjectShortPair<K>;
-    right(arg0: number): ObjectShortPair<K>;
     rightShort(): number;
     second(): number;
-    second(arg0: number): ObjectShortPair<K>;
     second(arg0: number): ObjectShortPair<K>;
     secondShort(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectShortPair<K>;
     value(arg0: number): ObjectShortPair<K>;
     valueShort(): number;
 }

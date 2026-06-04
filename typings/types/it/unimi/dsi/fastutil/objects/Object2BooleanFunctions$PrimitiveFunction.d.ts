@@ -61,15 +61,8 @@ export class Object2BooleanFunctions$PrimitiveFunction<K extends Object | number
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;
     get(arg0: Object): boolean;
-    get(arg0: Object): boolean;
     getBoolean(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
-    getOrDefault(arg0: Object, arg1: boolean): boolean;
-    getOrDefault(arg0: Object, arg1: boolean): boolean;
-    getOrDefault(arg0: Object, arg1: boolean): boolean;
-    put(arg0: K, arg1: boolean): boolean;
-    put(arg0: K, arg1: boolean): boolean;
-    put(arg0: K, arg1: boolean): boolean;
     put(arg0: K, arg1: boolean): boolean;
     remove(arg0: Object): boolean;
     removeBoolean(arg0: Object): boolean;

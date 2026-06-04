@@ -31,7 +31,6 @@ export class EmptyBlockGetter extends Enum<EmptyBlockGetter> implements BlockGet
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
     getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
     getBlockState(pos: BlockPos): BlockState;

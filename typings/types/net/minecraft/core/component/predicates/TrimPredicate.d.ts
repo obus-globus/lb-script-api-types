@@ -21,7 +21,6 @@ export class TrimPredicate extends Record implements SingleComponentItemPredicat
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
-    matches(components: DataComponentGetter): boolean;
     matches(value: ArmorTrim): boolean;
     material(): Optional<Holder<T>[]>;
     pattern(): Optional<Holder<T>[]>;

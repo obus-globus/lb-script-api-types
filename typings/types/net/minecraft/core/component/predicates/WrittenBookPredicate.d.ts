@@ -30,7 +30,6 @@ export class WrittenBookPredicate extends Record implements SingleComponentItemP
     generation(): MinMaxBounds$Ints;
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
-    matches(components: DataComponentGetter): boolean;
     matches(value: WrittenBookContent): boolean;
     pages(): Optional<CollectionPredicate<Filterable<Component>, WrittenBookPredicate$PagePredicate>>;
     resolved(): Optional<boolean>;

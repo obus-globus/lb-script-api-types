@@ -4,7 +4,6 @@ export class PropertiesLookup$ConfigurationPropertyResult extends Object impleme
     constructor(value: string)
     // private value: string;
     isLookupEvaluationAllowedInValue(): boolean;
-    isLookupEvaluationAllowedInValue(): boolean;
     toString(): string;
     value(): string;
 }

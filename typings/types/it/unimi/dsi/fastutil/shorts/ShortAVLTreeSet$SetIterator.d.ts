@@ -9,7 +9,6 @@ export class ShortAVLTreeSet$SetIterator extends Object implements ShortListIter
     // private next: ShortAVLTreeSet$Entry;
     // private prev: ShortAVLTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class ShortAVLTreeSet$SetIterator extends Object implements ShortListIter
     previousIndex(): number;
     previousShort(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

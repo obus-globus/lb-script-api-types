@@ -9,6 +9,5 @@ export class FabricLoaderUpdateChecker$FabricLoaderUpdateInfo extends Object imp
     getDownloadLink(): string;
     getUpdateChannel(): UpdateChannel;
     getUpdateMessage(): Component;
-    getUpdateMessage(): Component;
     isUpdateAvailable(): boolean;
 }

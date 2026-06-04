@@ -9,7 +9,6 @@ export class IntRBTreeSet$SetIterator extends Object implements IntListIterator 
     // private next: IntRBTreeSet$Entry;
     // private prev: IntRBTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class IntRBTreeSet$SetIterator extends Object implements IntListIterator 
     previousIndex(): number;
     previousInt(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

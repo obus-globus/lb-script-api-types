@@ -4,7 +4,6 @@ import type { DoubleConsumer } from '../../java/util/function/DoubleConsumer.d.t
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface PrimitiveIterator$OfDouble extends PrimitiveIterator<number, (param0: number) => void>, Object{
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextDouble(): number;
 }

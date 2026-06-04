@@ -253,7 +253,6 @@ export class Vector3d extends Object implements Externalizable, Cloneable, Vecto
     set(arg0: number): Vector3d;
     set(arg0: number, arg1: number, arg2: number): Vector3d;
     set(arg0: number[]): Vector3d;
-    set(arg0: number[]): Vector3d;
     set(arg0: number, arg1: ByteBuffer): Vector3d;
     set(arg0: number, arg1: DoubleBuffer): Vector3d;
     set(arg0: Vector2dc, arg1: number): Vector3d;

@@ -9,8 +9,6 @@ export class AbstractReference2ByteSortedMap$ValuesIterator<K extends Object | n
     constructor(arg0: ObjectBidirectionalIterator<Reference2ByteMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2ByteMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextByte(): number;

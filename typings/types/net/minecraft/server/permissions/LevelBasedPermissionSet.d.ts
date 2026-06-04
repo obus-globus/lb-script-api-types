@@ -6,5 +6,4 @@ export interface LevelBasedPermissionSet extends Object, PermissionSet{
     hasPermission(permission: Permission): boolean;
     level(): PermissionLevel;
     union(other: PermissionSet): PermissionSet;
-    union(other: PermissionSet): PermissionSet;
 }

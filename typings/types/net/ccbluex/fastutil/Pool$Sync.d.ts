@@ -16,5 +16,4 @@ export class Pool$Sync<E extends Object | number | string | boolean> extends Obj
     recycle(value: E): void;
     recycleAll(values: E[]): void;
     synchronized(): Pool<E>;
-    synchronized(): Pool<E>;
 }

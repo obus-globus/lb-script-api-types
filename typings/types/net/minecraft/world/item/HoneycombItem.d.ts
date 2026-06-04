@@ -39,7 +39,6 @@ export class HoneycombItem extends Item implements SignApplicator {
     static getWaxed(paramoldState: BlockState): Optional<BlockState>;
     constructor(properties: Item$Properties)
     canApplyToSign(text: SignText, item: ItemStack, player: Player): boolean;
-    canApplyToSign(text: SignText, item: ItemStack, player: Player): boolean;
     tryApplyToSign(level: Level, sign: SignBlockEntity, isFrontText: boolean, item: ItemStack, player: Player): boolean;
     useOn(context: UseOnContext): InteractionResult;
 }

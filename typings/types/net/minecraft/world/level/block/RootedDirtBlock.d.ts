@@ -79,7 +79,6 @@ export class RootedDirtBlock extends Block implements BonemealableBlock {
     constructor(properties: BlockBehaviour$Properties)
     codec(): MapCodec<RootedDirtBlock>;
     getParticlePos(blockPos: BlockPos): BlockPos;
-    getParticlePos(blockPos: BlockPos): BlockPos;
     getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;
     isValidBonemealTarget(level: LevelReader, pos: BlockPos, state: BlockState): boolean;

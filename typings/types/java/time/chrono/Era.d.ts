@@ -10,13 +10,10 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Era extends TemporalAccessor, TemporalAdjuster, Object{
     adjustInto(arg0: Temporal): Temporal;
     get(arg0: TemporalField): number;
-    get(arg0: TemporalField): number;
     getDisplayName(arg0: TextStyle, arg1: Locale): string;
     getLong(arg0: TemporalField): number;
     getValue(): number;
     isSupported(arg0: TemporalField): boolean;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
-    range(arg0: TemporalField): ValueRange;
     range(arg0: TemporalField): ValueRange;
 }

@@ -28,13 +28,10 @@ export class Rectangle extends Rectangle2D implements Shape, Serializable {
     add(arg0: Point2D): void;
     add(arg0: Rectangle2D): void;
     add(arg0: number, arg1: number): void;
-    add(arg0: number, arg1: number): void;
     contains(arg0: Point): boolean;
     contains(arg0: Rectangle): boolean;
     contains(arg0: Point2D): boolean;
     contains(arg0: Rectangle2D): boolean;
-    contains(arg0: number, arg1: number): boolean;
-    contains(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     contains(arg0: number, arg1: number): boolean;
     contains(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     createIntersection(arg0: Rectangle2D): Rectangle2D;

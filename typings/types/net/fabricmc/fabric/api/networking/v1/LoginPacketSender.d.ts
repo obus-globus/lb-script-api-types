@@ -12,7 +12,4 @@ export interface LoginPacketSender extends Object, PacketSender{
     sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
     sendPacket(arg0: Identifier, arg1: FriendlyByteBuf): void;
     sendPacket(arg0: Identifier, arg1: FriendlyByteBuf, arg2: ChannelFutureListener): void;
-    sendPacket(arg0: Packet<Object>): void;
-    sendPacket(arg0: CustomPacketPayload): void;
-    sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
 }

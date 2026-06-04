@@ -6,5 +6,4 @@ export interface Int2DoubleMap$Entry extends Object, Map$Entry<number, number>{
     getDoubleValue(): number;
     getIntKey(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

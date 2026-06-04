@@ -75,7 +75,6 @@ export class CaseFoldData$CaseFoldTable extends Object implements SortedListOfRa
     rightOf(ia: number, bLo: number, bHi: number): boolean;
     size(i: number): number;
     size(): number;
-    size(i: number): number;
     sizeOfInverse(encoding: Encodings$Encoding): number;
     valueCount(): number;
     valueCountEquals(cmp: number): boolean;

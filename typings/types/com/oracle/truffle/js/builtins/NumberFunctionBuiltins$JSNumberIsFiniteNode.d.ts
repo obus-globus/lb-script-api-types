@@ -18,6 +18,4 @@ export abstract class NumberFunctionBuiltins$JSNumberIsFiniteNode extends JSBuil
     constructor(context: JSContext, builtin: JSBuiltin)
     isFinite(arg: Object): boolean;
     isFinite(arg: number): boolean;
-    isFinite(arg: number): boolean;
-    isFinite(arg: number): boolean;
 }

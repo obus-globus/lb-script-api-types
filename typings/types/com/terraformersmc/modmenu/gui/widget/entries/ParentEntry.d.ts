@@ -13,7 +13,6 @@ export class ParentEntry extends ModListEntry {
     // private hoveringIcon: boolean;
     // private list: ModListWidget;
     addChildren(arg0: Mod[]): void;
-    addChildren(arg0: Mod[]): void;
     extractContent(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: boolean, arg4: number): void;
     getChildren(): Mod[];
     isMouseOver(arg0: number, arg1: number): boolean;

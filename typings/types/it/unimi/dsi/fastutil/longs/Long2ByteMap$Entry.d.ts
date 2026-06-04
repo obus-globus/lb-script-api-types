@@ -6,5 +6,4 @@ export interface Long2ByteMap$Entry extends Object, Map$Entry<number, number>{
     getByteValue(): number;
     getLongKey(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

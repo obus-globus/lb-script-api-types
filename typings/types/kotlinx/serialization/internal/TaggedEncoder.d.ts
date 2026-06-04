@@ -31,7 +31,6 @@ export abstract class TaggedEncoder<Tag extends Object | number | string | boole
     encodeLong(value: number): void;
     encodeLongElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeNotNullMark(): void;
-    encodeNotNullMark(): void;
     encodeNull(): void;
     encodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
     encodeNullableSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T | null): void;

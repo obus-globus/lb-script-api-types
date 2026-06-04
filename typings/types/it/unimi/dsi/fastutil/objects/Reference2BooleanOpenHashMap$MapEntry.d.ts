@@ -23,21 +23,13 @@ export class Reference2BooleanOpenHashMap$MapEntry extends Object implements Ref
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, boolean>;
     right(): boolean;
     right(arg0: boolean): ReferenceBooleanPair<K>;
-    right(arg0: boolean): ReferenceBooleanPair<K>;
-    right(): boolean;
-    right(arg0: boolean): ReferenceBooleanPair<K>;
-    right(arg0: boolean): ReferenceBooleanPair<K>;
     rightBoolean(): boolean;
     second(): boolean;
     second(arg0: boolean): ReferenceBooleanPair<K>;
-    second(arg0: boolean): ReferenceBooleanPair<K>;
     secondBoolean(): boolean;
-    setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     setValue(arg0: boolean): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): ReferenceBooleanPair<K>;
     value(arg0: boolean): ReferenceBooleanPair<K>;
     valueBoolean(): boolean;
 }

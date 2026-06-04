@@ -3,10 +3,8 @@ import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/long
 export abstract class AbstractLongListIterator extends AbstractLongBidirectionalIterator implements LongListIterator {
     constructor()
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     previous(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

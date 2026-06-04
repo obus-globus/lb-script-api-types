@@ -5,6 +5,5 @@ import type { PreparableReloadListener$SharedState } from '../../../../../net/mi
 export interface FabricResourceReloader extends Object, PreparableReloadListener{
     fabric$getId(): Identifier;
     getName(): string;
-    getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
 }

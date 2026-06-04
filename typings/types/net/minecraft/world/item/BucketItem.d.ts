@@ -38,7 +38,6 @@ export class BucketItem extends Item implements BucketItemAccessor, DispensibleC
     constructor(content: Fluid, properties: Item$Properties)
     readonly content: Fluid;
     checkExtraContent(user: LivingEntity, level: Level, itemStack: ItemStack, pos: BlockPos): void;
-    checkExtraContent(user: LivingEntity, level: Level, itemStack: ItemStack, pos: BlockPos): void;
     emptyContents(user: LivingEntity, level: Level, pos: BlockPos, hitResult: BlockHitResult): boolean;
     getContent(): Fluid;
     playEmptySound(user: LivingEntity, level: LevelAccessor, pos: BlockPos): void;

@@ -21,7 +21,6 @@ export class ParticleResources extends Object implements FabricResourceReloader,
     spriteSets: Map<Identifier, ParticleResources$MutableSpriteSet>;
     fabric$getId(): Identifier;
     getName(): string;
-    getName(): string;
     getProviders(): Int2ObjectMap<ParticleProvider<Object>>;
     // private loadParticleDescription(id: Identifier, resource: Resource): Optional<Identifier[]>;
     onReload(onReload: () => void): void;

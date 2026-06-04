@@ -8,10 +8,6 @@ export class LongIterators$PrimitiveIteratorWrapper extends Object implements Lo
     constructor(arg0: PrimitiveIterator$OfLong)
     // private i: PrimitiveIterator$OfLong;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextLong(): number;

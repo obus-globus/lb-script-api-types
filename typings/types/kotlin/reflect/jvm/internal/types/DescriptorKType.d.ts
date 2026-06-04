@@ -8,8 +8,20 @@ import type { KTypeProjection } from '../../../../../kotlin/reflect/KTypeProject
 import type { KotlinType } from '../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { AbstractKType } from '../../../../../kotlin/reflect/jvm/internal/types/AbstractKType.d.ts'
 export class DescriptorKType extends AbstractKType {
-    constructor(type: KotlinType, computeJavaType: () => Type | null)
-    constructor(type: KotlinType, computeJavaType: () => Type | null, isAbbreviation: boolean)
+    constructor(type: KotlinType, computeJavaType: (() => Type) | null)
+    constructor(type: KotlinType, computeJavaType: (() => Type) | null, isAbbreviation: boolean)
+    readonly abbreviation: KType | null;
+    readonly annotations: Annotation[];
+    readonly arguments: KTypeProjection[];
+    readonly classifier: KClassifier | null;
+    // private isAbbreviation: boolean;
+    /*not mapped: */ isDefinitelyNotNullType(): boolean;
+    /*not mapped: */ isMarkedNullable(): boolean;
+    /*not mapped: */ isNothingType(): boolean;
+    /*not mapped: */ isRawType(): boolean;
+    /*not mapped: */ isSuspendFunctionType(): boolean;
+    readonly mutableCollectionClass: KClass<Object> | null;
+    readonly type: KotlinType;
     // private convert(type: KotlinType): KClassifier | null;
     equals(other: Object | null): boolean;
     hashCode(): number;

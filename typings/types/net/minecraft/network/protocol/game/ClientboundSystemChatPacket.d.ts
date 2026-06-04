@@ -18,7 +18,6 @@ export class ClientboundSystemChatPacket extends Record implements Packet<Client
     handle(listener: ClientGamePacketListener): void;
     hashCode(): number;
     isSkippable(): boolean;
-    isSkippable(): boolean;
     isTerminal(): boolean;
     overlay(): boolean;
     toString(): string;

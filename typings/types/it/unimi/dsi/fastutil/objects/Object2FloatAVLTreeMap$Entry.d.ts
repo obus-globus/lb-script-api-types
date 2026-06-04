@@ -25,7 +25,6 @@ export class Object2FloatAVLTreeMap$Entry<K extends Object | number | string | b
     right(): Object2FloatAVLTreeMap$Entry<K>;
     right(arg0: Object2FloatAVLTreeMap$Entry<K>): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Object2FloatAVLTreeMap$Entry<K>): void;
     succ(arg0: boolean): void;

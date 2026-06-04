@@ -12,28 +12,22 @@ export class CharCharImmutablePair extends Object implements CharCharPair, Seria
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharCharPair;
-    first(arg0: string): CharCharPair;
     firstChar(): string;
     hashCode(): number;
     key(): string;
     key(arg0: string): CharCharPair;
-    key(arg0: string): CharCharPair;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharCharPair;
     left(arg0: string): CharCharPair;
     leftChar(): string;
     right(): string;
     right(arg0: string): CharCharPair;
-    right(arg0: string): CharCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): CharCharPair;
     second(arg0: string): CharCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): CharCharPair;
     value(arg0: string): CharCharPair;
     valueChar(): string;
 }

@@ -29,5 +29,4 @@ export class FallAfterExplosionTrigger$TriggerInstance extends Record implements
     startPosition(): Optional<LocationPredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
 }

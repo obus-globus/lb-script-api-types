@@ -27,7 +27,6 @@ export class ScoreContents extends Record implements ComponentContents {
     name(): Either<CompilableString<EntitySelector>, string>;
     objective(): string;
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
-    resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
     toString(): string;
     visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
     visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;

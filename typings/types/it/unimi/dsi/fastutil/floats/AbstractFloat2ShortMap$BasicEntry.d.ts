@@ -11,7 +11,5 @@ export class AbstractFloat2ShortMap$BasicEntry extends Object implements Float2S
     getShortValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

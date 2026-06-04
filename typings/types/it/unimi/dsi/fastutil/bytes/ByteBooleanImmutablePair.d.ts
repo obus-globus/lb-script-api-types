@@ -12,28 +12,22 @@ export class ByteBooleanImmutablePair extends Object implements ByteBooleanPair,
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteBooleanPair;
-    first(arg0: number): ByteBooleanPair;
     firstByte(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ByteBooleanPair;
-    key(arg0: number): ByteBooleanPair;
     keyByte(): number;
     left(): number;
-    left(arg0: number): ByteBooleanPair;
     left(arg0: number): ByteBooleanPair;
     leftByte(): number;
     right(): boolean;
     right(arg0: boolean): ByteBooleanPair;
-    right(arg0: boolean): ByteBooleanPair;
     rightBoolean(): boolean;
     second(): boolean;
-    second(arg0: boolean): ByteBooleanPair;
     second(arg0: boolean): ByteBooleanPair;
     secondBoolean(): boolean;
     toString(): string;
     value(): boolean;
-    value(arg0: boolean): ByteBooleanPair;
     value(arg0: boolean): ByteBooleanPair;
     valueBoolean(): boolean;
 }

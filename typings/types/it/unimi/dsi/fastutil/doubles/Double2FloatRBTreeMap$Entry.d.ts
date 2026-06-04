@@ -23,7 +23,6 @@ export class Double2FloatRBTreeMap$Entry extends AbstractDouble2FloatMap$BasicEn
     right(): Double2FloatRBTreeMap$Entry;
     right(arg0: Double2FloatRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Double2FloatRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -12,5 +12,4 @@ export class PermissionSetUnion extends Object implements PermissionSet {
     getPermissions(): PermissionSet[];
     hasPermission(permission: Permission): boolean;
     union(other: PermissionSet): PermissionSet;
-    union(other: PermissionSet): PermissionSet;
 }

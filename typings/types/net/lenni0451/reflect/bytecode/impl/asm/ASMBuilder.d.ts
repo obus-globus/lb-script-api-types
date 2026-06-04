@@ -17,6 +17,5 @@ export class ASMBuilder extends Object implements BytecodeBuilder {
     class_(arg0: number, arg1: string, arg2: string, arg3: string, arg4: string[], arg5: (param0: ClassBuilder) => void): BuiltClass;
     opcode(arg0: string, arg1: string[]): number;
     opcode(arg0: string): number;
-    opcode(arg0: string, arg1: string[]): number;
     type(arg0: string): BytecodeType;
 }

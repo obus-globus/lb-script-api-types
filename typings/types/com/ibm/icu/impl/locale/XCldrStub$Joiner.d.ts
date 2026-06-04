@@ -4,5 +4,4 @@ export class XCldrStub$Joiner extends Object {
     private constructor(arg0: string)
     // private separator: string;
     join(arg0: T[]): string;
-    join(arg0: T[]): string;
 }

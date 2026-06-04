@@ -7,7 +7,6 @@ export class Short2LongOpenCustomHashMap$ValueIterator extends Short2LongOpenCus
     constructor(null_: Short2LongOpenCustomHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextLong(): number;
     skip(arg0: number): number;

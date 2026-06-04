@@ -22,7 +22,6 @@ export class FormattedMessage extends Object implements Message {
     readonly throwable: Throwable;
     equals(o: Object | null): boolean;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getMessage(msgPattern: string, args: Object[], aThrowable: Throwable): Message;
     getParameters(): Object[];

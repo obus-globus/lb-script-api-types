@@ -7,7 +7,6 @@ export interface BytePriorityQueue extends PriorityQueue<number>, Object{
     dequeue(): number;
     dequeueByte(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     first(): number;
     firstByte(): number;
     isEmpty(): boolean;

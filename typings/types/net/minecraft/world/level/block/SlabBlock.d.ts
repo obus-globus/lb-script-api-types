@@ -91,7 +91,6 @@ export class SlabBlock extends Block implements SimpleWaterloggedBlock {
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
-    canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     codec(): MapCodec<SlabBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getFluidState(state: BlockState): FluidState;
@@ -100,7 +99,6 @@ export class SlabBlock extends Block implements SimpleWaterloggedBlock {
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     isPathfindable(state: BlockState, type: PathComputationType): boolean;
     pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
-    placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
     updateShape(state: BlockState, level: LevelReader, ticks: ScheduledTickAccess, pos: BlockPos, directionToNeighbour: Direction, neighbourPos: BlockPos, neighbourState: BlockState, random: RandomSource): BlockState;
     useShapeForLightOcclusion(state: BlockState): boolean;

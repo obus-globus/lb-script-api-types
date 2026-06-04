@@ -8,11 +8,6 @@ export class DoubleIterators$ListIteratorWrapper extends Object implements Doubl
     constructor(arg0: ListIterator<number>)
     // private i: ListIterator<number>;
     add(arg0: number): void;
-    add(arg0: number): void;
-    add(arg0: number): void;
-    add(arg0: number): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -23,9 +18,5 @@ export class DoubleIterators$ListIteratorWrapper extends Object implements Doubl
     previousDouble(): number;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
-    set(arg0: number): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

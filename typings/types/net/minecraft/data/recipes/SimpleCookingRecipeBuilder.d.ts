@@ -43,8 +43,6 @@ export class SimpleCookingRecipeBuilder extends Object implements RecipeBuilder 
     group(group: string): SimpleCookingRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput): void;
-    save(output: RecipeOutput, id: string): void;
     save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
     unlockedBy(name: string, criterion: Criterion<Object>): SimpleCookingRecipeBuilder;
 }

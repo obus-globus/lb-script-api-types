@@ -9,8 +9,6 @@ export class AbstractDouble2ShortSortedMap$ValuesIterator extends Object impleme
     constructor(arg0: ObjectBidirectionalIterator<Double2ShortMap$Entry>)
     // private i: ObjectBidirectionalIterator<Double2ShortMap$Entry>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;

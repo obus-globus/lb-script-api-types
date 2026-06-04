@@ -62,7 +62,6 @@ export class SevenZArchiveEntry extends Object implements ArchiveEntry {
     setCompressedCrcValue(arg0: number): void;
     setCompressedSize(arg0: number): void;
     setContentMethods(arg0: SevenZMethodConfiguration[]): void;
-    setContentMethods(arg0: SevenZMethodConfiguration[]): void;
     setCrc(arg0: number): void;
     setCrcValue(arg0: number): void;
     setCreationDate(arg0: Date): void;

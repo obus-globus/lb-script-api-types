@@ -25,7 +25,6 @@ export class Char2LongAVLTreeMap$Entry extends AbstractChar2LongMap$BasicEntry i
     right(): Char2LongAVLTreeMap$Entry;
     right(arg0: Char2LongAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Char2LongAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

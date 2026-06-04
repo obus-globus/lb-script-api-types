@@ -93,9 +93,6 @@ export class AffineTransform extends Object implements Serializable, Cloneable {
     transform(arg0: Point2D, arg1: Point2D): Point2D;
     transform(arg0: Point2D[], arg1: number, arg2: Point2D[], arg3: number, arg4: number): void;
     transform(arg0: number[], arg1: number, arg2: number[], arg3: number, arg4: number): void;
-    transform(arg0: number[], arg1: number, arg2: number[], arg3: number, arg4: number): void;
-    transform(arg0: number[], arg1: number, arg2: number[], arg3: number, arg4: number): void;
-    transform(arg0: number[], arg1: number, arg2: number[], arg3: number, arg4: number): void;
     translate(arg0: number, arg1: number): void;
     updateState(): void;
     // private writeObject(arg0: ObjectOutputStream): void;

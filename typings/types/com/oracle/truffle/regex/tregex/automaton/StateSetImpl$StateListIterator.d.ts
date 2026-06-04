@@ -6,7 +6,6 @@ export class StateSetImpl$StateListIterator extends Object implements PrimitiveI
     private constructor(null_: StateSetImpl$StateListIterator)
     // private i: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

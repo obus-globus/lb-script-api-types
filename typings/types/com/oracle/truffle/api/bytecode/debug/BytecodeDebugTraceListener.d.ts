@@ -10,9 +10,7 @@ export interface BytecodeDebugTraceListener extends BytecodeDebugListener, Objec
     onBytecodeStackTransition(source: Instruction, target: Instruction): void;
     onInvalidateInstruction(before: Instruction, after: Instruction): void;
     onQuicken(before: Instruction, after: Instruction): void;
-    onQuicken(before: Instruction, after: Instruction): void;
     onQuickenOperand(baseInstruction: Instruction, operandIndex: number, operandBefore: Instruction, operandAfter: Instruction): void;
     onQuickenOperand(base: Instruction, operandIndex: number, operandBefore: Instruction, operandAfter: Instruction): void;
-    onSpecialize(instruction: Instruction, specialization: string): void;
     onSpecialize(instruction: Instruction, specialization: string): void;
 }

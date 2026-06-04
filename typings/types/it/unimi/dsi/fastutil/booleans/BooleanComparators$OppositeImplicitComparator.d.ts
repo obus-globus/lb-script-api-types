@@ -14,10 +14,7 @@ export class BooleanComparators$OppositeImplicitComparator extends Object implem
     static comparingLong(paramarg0: (param0: boolean) => kotlin.Long): (param0: boolean, param1: boolean) => kotlin.Int;
     constructor()
     compare(arg0: boolean, arg1: boolean): number;
-    compare(arg0: boolean, arg1: boolean): number;
-    compare(arg0: boolean, arg1: boolean): number;
     // private readResolve(): Object;
-    reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     thenComparing(arg0: (param0: boolean, param1: boolean) => kotlin.Int): (param0: boolean, param1: boolean) => kotlin.Int;
     thenComparing(arg0: (param0: boolean) => kotlin.Boolean): (param0: boolean) => kotlin.Boolean;

@@ -34,5 +34,4 @@ export class EntityCollisionContext extends Object implements CollisionContext {
     isDescending(): boolean;
     isHoldingItem(item: Item): boolean;
     isPlacement(): boolean;
-    isPlacement(): boolean;
 }

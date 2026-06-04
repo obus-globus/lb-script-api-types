@@ -5,7 +5,6 @@ import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CharIterator extends PrimitiveIterator<string, (param0: string) => void>, Object{
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     nextChar(): string;

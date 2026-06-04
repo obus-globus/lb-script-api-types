@@ -27,5 +27,4 @@ export class CollectingNeighborUpdater extends Object implements NeighborUpdater
     setDebugListener(debugListener: (param0: BlockPos) => void): void;
     shapeUpdate(direction: Direction, neighborState: BlockState, pos: BlockPos, neighborPos: BlockPos, updateFlags: number, updateLimit: number): void;
     updateNeighborsAtExceptFromFacing(pos: BlockPos, block: Block, skipDirection: Direction, orientation: Orientation): void;
-    updateNeighborsAtExceptFromFacing(pos: BlockPos, block: Block, skipDirection: Direction, orientation: Orientation): void;
 }

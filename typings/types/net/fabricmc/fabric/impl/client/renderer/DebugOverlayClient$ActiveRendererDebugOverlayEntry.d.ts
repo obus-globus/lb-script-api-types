@@ -7,7 +7,6 @@ import type { LevelChunk } from '../../../../../../net/minecraft/world/level/chu
 export class DebugOverlayClient$ActiveRendererDebugOverlayEntry extends Object implements DebugScreenEntry {
     private constructor()
     category(): DebugEntryCategory;
-    category(): DebugEntryCategory;
     display(arg0: DebugScreenDisplayer, arg1: Level, arg2: LevelChunk, arg3: LevelChunk): void;
     isAllowed(arg0: boolean): boolean;
     isAllowed(reducedDebugInfo: boolean): boolean;

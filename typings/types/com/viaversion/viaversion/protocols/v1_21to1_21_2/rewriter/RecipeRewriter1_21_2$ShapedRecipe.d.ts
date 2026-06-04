@@ -20,17 +20,14 @@ export class RecipeRewriter1_21_2$ShapedRecipe extends Record implements RecipeR
     category(): number;
     equals(arg0: Object | null): boolean;
     group(): number;
-    group(): number;
     hashCode(): number;
     height(): number;
     identifier(): string;
     index(): number;
     ingredient(): Item[];
     ingredients(): Item[][];
-    ingredients(): Item[][];
     recipeDisplayId(): number;
     result(): Item;
-    showNotification(): boolean;
     showNotification(): boolean;
     toString(): string;
     width(): number;

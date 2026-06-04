@@ -25,6 +25,5 @@ export class TradeTrigger$TriggerInstance extends Record implements SimpleCriter
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
     villager(): Optional<ContextAwarePredicate>;
 }

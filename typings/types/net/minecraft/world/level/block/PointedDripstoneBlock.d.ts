@@ -107,7 +107,6 @@ export class PointedDripstoneBlock extends Block implements Fallable, SimpleWate
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     fallOn(level: Level, state: BlockState, pos: BlockPos, entity: Entity, fallDistance: number): void;
     getFallDamageSource(entity: Entity): DamageSource;
-    getFallDamageSource(entity: Entity): DamageSource;
     getFluidState(state: BlockState): FluidState;
     getMaxHorizontalOffset(): number;
     getPickupSound(): Optional<SoundEvent>;
@@ -115,7 +114,6 @@ export class PointedDripstoneBlock extends Block implements Fallable, SimpleWate
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     isCollisionShapeFullBlock(state: BlockState, level: BlockGetter, pos: BlockPos): boolean;
     isPathfindable(state: BlockState, type: PathComputationType): boolean;
-    onBrokenAfterFall(level: Level, pos: BlockPos, entity: FallingBlockEntity): void;
     onBrokenAfterFall(level: Level, pos: BlockPos, entity: FallingBlockEntity): void;
     onLand(level: Level, pos: BlockPos, state: BlockState, replacedBlock: BlockState, entity: FallingBlockEntity): void;
     onProjectileHit(level: Level, state: BlockState, blockHit: BlockHitResult, projectile: Projectile): void;

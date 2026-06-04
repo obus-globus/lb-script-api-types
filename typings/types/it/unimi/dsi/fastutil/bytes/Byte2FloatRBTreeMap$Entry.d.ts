@@ -23,7 +23,6 @@ export class Byte2FloatRBTreeMap$Entry extends AbstractByte2FloatMap$BasicEntry 
     right(): Byte2FloatRBTreeMap$Entry;
     right(arg0: Byte2FloatRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Byte2FloatRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

@@ -11,7 +11,5 @@ export class AbstractByte2LongMap$BasicEntry extends Object implements Byte2Long
     getLongValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

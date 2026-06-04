@@ -86,7 +86,6 @@ export class ExtraCodecs$StrictUnboundedMapCodec<K extends Object | number | str
     elementCodec(): Codec<V>;
     encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     encode<T extends Object | number | string | boolean>(input: Map<K, V>, ops: DynamicOps<T>, prefix: T): DataResult<T>;
-    encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     equals(o: Object | null): boolean;
     fieldOf(arg0: string): MapCodec<A>;
     flatComapMap(arg0: (param0: A) => S, arg1: (param0: S) => DataResult<A>): Codec<S>;

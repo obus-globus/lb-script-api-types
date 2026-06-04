@@ -6,5 +6,4 @@ export interface Float2ShortMap$Entry extends Object, Map$Entry<number, number>{
     getFloatKey(): number;
     getShortValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

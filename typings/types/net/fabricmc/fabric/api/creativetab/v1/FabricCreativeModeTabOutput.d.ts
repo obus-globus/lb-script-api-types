@@ -15,9 +15,6 @@ export class FabricCreativeModeTabOutput extends Object implements CreativeModeT
     accept(arg0: ItemStack, arg1: CreativeModeTab$TabVisibility): void;
     accept(item: ItemLike): void;
     accept(item: ItemLike, tabVisibility: CreativeModeTab$TabVisibility): void;
-    accept(stack: ItemStack): void;
-    accept(item: ItemLike): void;
-    accept(item: ItemLike, tabVisibility: CreativeModeTab$TabVisibility): void;
     acceptAll(stacks: E[]): void;
     acceptAll(stacks: E[], tabVisibility: CreativeModeTab$TabVisibility): void;
     getContext(): CreativeModeTab$ItemDisplayParameters;

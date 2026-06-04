@@ -4,12 +4,10 @@ export class Float2DoubleAVLTreeMap$KeyIterator extends Float2DoubleAVLTreeMap$T
     constructor(null_: Float2DoubleAVLTreeMap$KeyIterator)
     constructor(null_: Float2DoubleAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

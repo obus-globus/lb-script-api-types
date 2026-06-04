@@ -57,7 +57,6 @@ export abstract class JavaScriptNode extends JavaScriptBaseNode implements Instr
     hasScope(frame: Frame): boolean;
     hasSourceSection(): boolean;
     hasTag(tag: Class<Tag>): boolean;
-    hasTag(tag: Class<Tag>): boolean;
     isInstrumentable(): boolean;
     isResultAlwaysOfType(clazz: Class<Object>): boolean;
     materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;

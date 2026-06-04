@@ -8,7 +8,6 @@ export abstract class CharBigListIterators$AbstractIndexBasedBigIterator extends
     // private minPos: number;
     // private pos: number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     get(arg0: number): string;
     getMaxPos(): number;
@@ -16,6 +15,5 @@ export abstract class CharBigListIterators$AbstractIndexBasedBigIterator extends
     nextChar(): string;
     remove(): void;
     remove(arg0: number): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

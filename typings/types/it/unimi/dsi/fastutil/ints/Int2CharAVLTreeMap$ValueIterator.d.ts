@@ -3,12 +3,10 @@ import type { Int2CharAVLTreeMap$TreeIterator } from '../../../../../it/unimi/ds
 export class Int2CharAVLTreeMap$ValueIterator extends Int2CharAVLTreeMap$TreeIterator implements CharListIterator {
     private constructor(null_: Int2CharAVLTreeMap$ValueIterator)
     add(arg0: string): void;
-    add(arg0: string): void;
     next(): string;
     nextChar(): string;
     previous(): string;
     previousChar(): string;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

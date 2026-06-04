@@ -10,7 +10,6 @@ export class ItemOwner$OffsetFromOwner extends Record implements ItemOwner {
     // private offset: Vec3;
     // private owner: ItemOwner;
     asLivingEntity(): LivingEntity;
-    asLivingEntity(): LivingEntity;
     equals(o: Object | null): boolean;
     getVisualRotationYInDegrees(): number;
     hashCode(): number;

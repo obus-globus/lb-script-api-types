@@ -8,7 +8,6 @@ export class ShortArrayBuffer$ShortArrayBufferIterator extends Object implements
     // private i: number;
     // private size: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

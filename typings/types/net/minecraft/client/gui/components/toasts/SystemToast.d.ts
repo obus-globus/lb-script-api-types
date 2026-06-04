@@ -44,12 +44,10 @@ export class SystemToast extends Object implements Toast {
     getToken(): Object;
     getWantedVisibility(): Toast$Visibility;
     height(): number;
-    height(): number;
     occcupiedSlotCount(): number;
     onFinishedRendering(): void;
     reset(title: Component, message: Component): void;
     update(manager: ToastManager, fullyVisibleForMs: number): void;
-    width(): number;
     width(): number;
     xPos(screenWidth: number, visiblePortion: number): number;
     yPos(firstSlotIndex: number): number;

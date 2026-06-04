@@ -5,6 +5,5 @@ import type { AlgorithmParameterSpec } from '../../../java/security/spec/Algorit
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface RSAPublicKey extends PublicKey, RSAKey, Object{
     getParams(): AlgorithmParameterSpec;
-    getParams(): AlgorithmParameterSpec;
     getPublicExponent(): BigInteger;
 }

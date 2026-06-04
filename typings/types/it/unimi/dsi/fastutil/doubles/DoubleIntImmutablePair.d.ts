@@ -12,28 +12,22 @@ export class DoubleIntImmutablePair extends Object implements DoubleIntPair, Ser
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleIntPair;
-    first(arg0: number): DoubleIntPair;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleIntPair;
-    key(arg0: number): DoubleIntPair;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleIntPair;
     left(arg0: number): DoubleIntPair;
     leftDouble(): number;
     right(): number;
     right(arg0: number): DoubleIntPair;
-    right(arg0: number): DoubleIntPair;
     rightInt(): number;
     second(): number;
-    second(arg0: number): DoubleIntPair;
     second(arg0: number): DoubleIntPair;
     secondInt(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): DoubleIntPair;
     value(arg0: number): DoubleIntPair;
     valueInt(): number;
 }

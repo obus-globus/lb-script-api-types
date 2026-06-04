@@ -38,7 +38,6 @@ export class EntityRenderState extends Object implements EntityRenderStateAdditi
     z: number;
     appearsGlowing(): boolean;
     clearExtraData(): void;
-    clearExtraData(): void;
     fillCrashReportCategory(category: CrashReportCategory): void;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;

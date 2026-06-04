@@ -12,7 +12,6 @@ export class TestScreenshotComparisonAlgorithms$MeanSquaredDifference extends Re
     equals(arg0: Object | null): boolean;
     findColor(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
     findGrayscale(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
-    findGrayscale(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
     hashCode(): number;
     maxMeanSquaredDifference(): number;
     toString(): string;

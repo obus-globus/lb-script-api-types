@@ -11,15 +11,9 @@ export class FloatIterators$IteratorConcatenator extends Object implements Float
     // private offset: number;
     // private advance(): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextFloat(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

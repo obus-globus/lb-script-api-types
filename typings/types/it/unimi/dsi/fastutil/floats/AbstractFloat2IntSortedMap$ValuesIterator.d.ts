@@ -8,7 +8,6 @@ export class AbstractFloat2IntSortedMap$ValuesIterator extends Object implements
     constructor(arg0: ObjectBidirectionalIterator<Float2IntMap$Entry>)
     // private i: ObjectBidirectionalIterator<Float2IntMap$Entry>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextInt(): number;

@@ -18,7 +18,6 @@ export class LinearLayout extends Object implements Layout {
     addChild<T extends LayoutElement>(child: T, layoutSettingsAdjustments: (param0: LayoutSettings) => void): T;
     addChild<T extends LayoutElement>(child: T, cellSettings: LayoutSettings): T;
     arrangeElements(): void;
-    arrangeElements(): void;
     defaultCellSetting(): LayoutSettings;
     getHeight(): number;
     getWidth(): number;

@@ -23,21 +23,13 @@ export class Reference2ShortOpenCustomHashMap$MapEntry extends Object implements
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceShortPair<K>;
-    right(arg0: number): ReferenceShortPair<K>;
-    right(): number;
-    right(arg0: number): ReferenceShortPair<K>;
-    right(arg0: number): ReferenceShortPair<K>;
     rightShort(): number;
     second(): number;
     second(arg0: number): ReferenceShortPair<K>;
-    second(arg0: number): ReferenceShortPair<K>;
     secondShort(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceShortPair<K>;
     value(arg0: number): ReferenceShortPair<K>;
     valueShort(): number;
 }

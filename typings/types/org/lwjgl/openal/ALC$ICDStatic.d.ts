@@ -5,5 +5,4 @@ export class ALC$ICDStatic extends Object implements ALC$ICD {
     private constructor()
     get(): ALCCapabilities;
     set(arg0: ALCCapabilities): void;
-    set(arg0: ALCCapabilities): void;
 }

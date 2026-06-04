@@ -22,7 +22,6 @@ export class Polygon extends Object implements Shape, Serializable {
     contains(arg0: Rectangle2D): boolean;
     contains(arg0: number, arg1: number): boolean;
     contains(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
-    contains(arg0: number, arg1: number): boolean;
     getBoundingBox(): Rectangle;
     getBounds(): Rectangle;
     getBounds2D(): Rectangle2D;

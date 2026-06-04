@@ -7,8 +7,6 @@ export class Short2LongOpenHashMap$KeyIterator extends Short2LongOpenHashMap$Map
     constructor(null_: Short2LongOpenHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
     skip(arg0: number): number;

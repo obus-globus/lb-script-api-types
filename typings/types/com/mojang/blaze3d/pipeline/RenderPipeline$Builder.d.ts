@@ -42,15 +42,12 @@ export class RenderPipeline$Builder extends Object implements FabricRenderPipeli
     withSampler(sampler: string): RenderPipeline$Builder;
     withShaderDefine(key: string): RenderPipeline$Builder;
     withShaderDefine(key: string, value: number): RenderPipeline$Builder;
-    withShaderDefine(key: string, value: number): RenderPipeline$Builder;
     withSnippet(snippet: RenderPipeline$Snippet): void;
     withUniform(name: string, type: UniformType): RenderPipeline$Builder;
     withUniform(name: string, type: UniformType, format: TextureFormat): RenderPipeline$Builder;
     withUsePipelineDrawModeForGui(arg0: boolean): RenderPipeline$Builder;
-    withUsePipelineDrawModeForGui(arg0: boolean): RenderPipeline$Builder;
     withVertexFormat(vertexFormat: VertexFormat, vertexFormatMode: VertexFormat$Mode): RenderPipeline$Builder;
     withVertexShader(vertexShader: string): RenderPipeline$Builder;
     withVertexShader(vertexShader: Identifier): RenderPipeline$Builder;
-    withoutUsePipelineDrawModeForGui(): RenderPipeline$Builder;
     withoutUsePipelineDrawModeForGui(): RenderPipeline$Builder;
 }

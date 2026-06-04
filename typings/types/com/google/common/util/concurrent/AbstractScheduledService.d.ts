@@ -16,11 +16,9 @@ export abstract class AbstractScheduledService extends Object implements Service
     awaitRunning(): void;
     awaitRunning(timeout: Duration): void;
     awaitRunning(timeout: number, unit: TimeUnit): void;
-    awaitRunning(timeout: Duration): void;
     awaitTerminated(): void;
     awaitTerminated(timeout: Duration): void;
     awaitTerminated(timeout: number, unit: TimeUnit): void;
-    awaitTerminated(timeout: Duration): void;
     executor(): ScheduledExecutorService;
     failureCause(): Throwable;
     isRunning(): boolean;

@@ -35,10 +35,7 @@ export class ItemInHandRenderer extends Object implements ItemInHandInterface {
     // private applyItemArmTransform(poseStack: PoseStack, arm: HumanoidArm, inverseArmHeight: number): void;
     // private calculateMapTilt(xRot: number): number;
     iris$isAnyHandSolid(): boolean;
-    iris$isAnyHandSolid(): boolean;
     iris$isAnyHandTranslucent(): boolean;
-    iris$isAnyHandTranslucent(): boolean;
-    iris$renderHandsWithCustomRenderer(arg0: HandRenderer, arg1: number, arg2: PoseStack, arg3: SubmitNodeStorage, arg4: LocalPlayer, arg5: number): void;
     iris$renderHandsWithCustomRenderer(arg0: HandRenderer, arg1: number, arg2: PoseStack, arg3: SubmitNodeStorage, arg4: LocalPlayer, arg5: number): void;
     itemUsed(hand: InteractionHand): void;
     // private renderArmWithItem(player: AbstractClientPlayer, frameInterp: number, xRot: number, hand: InteractionHand, attack: number, itemStack: ItemStack, inverseArmHeight: number, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number): void;

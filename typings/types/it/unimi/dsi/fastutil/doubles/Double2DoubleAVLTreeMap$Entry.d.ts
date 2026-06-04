@@ -25,7 +25,6 @@ export class Double2DoubleAVLTreeMap$Entry extends AbstractDouble2DoubleMap$Basi
     right(): Double2DoubleAVLTreeMap$Entry;
     right(arg0: Double2DoubleAVLTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Double2DoubleAVLTreeMap$Entry): void;
     succ(arg0: boolean): void;

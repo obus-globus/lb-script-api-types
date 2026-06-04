@@ -12,28 +12,22 @@ export class IntCharImmutablePair extends Object implements IntCharPair, Seriali
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntCharPair;
-    first(arg0: number): IntCharPair;
     firstInt(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): IntCharPair;
-    key(arg0: number): IntCharPair;
     keyInt(): number;
     left(): number;
-    left(arg0: number): IntCharPair;
     left(arg0: number): IntCharPair;
     leftInt(): number;
     right(): string;
     right(arg0: string): IntCharPair;
-    right(arg0: string): IntCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): IntCharPair;
     second(arg0: string): IntCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): IntCharPair;
     value(arg0: string): IntCharPair;
     valueChar(): string;
 }

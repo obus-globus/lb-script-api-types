@@ -17,7 +17,6 @@ export class DensityFunctions$ShiftB extends Record implements DensityFunctions$
     codec(): KeyDispatchDataCodec<DensityFunction>;
     compute(localX: number, localY: number, localZ: number): number;
     compute(context: DensityFunction$FunctionContext): number;
-    compute(localX: number, localY: number, localZ: number): number;
     equals(o: Object | null): boolean;
     fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
     hashCode(): number;

@@ -17,7 +17,6 @@ export class OutgoingRpcMethod$Notification<Params extends Object | number | str
     attributes(): OutgoingRpcMethod$Attributes;
     decodeResult<Result extends Object | number | string | boolean>(result: JsonElement): Result;
     encodeParams(params: Params): JsonElement;
-    encodeParams(params: Params): JsonElement;
     equals(o: Object | null): boolean;
     hashCode(): number;
     info(): MethodInfo<Params, void>;

@@ -24,7 +24,6 @@ export class AbuseReportSender$Services extends Record implements AbuseReportSen
     hashCode(): number;
     isEnabled(): boolean;
     reportLimits(): AbuseReportLimits;
-    reportLimits(): AbuseReportLimits;
     send(id: UUID, reportType: ReportType, report: AbuseReport): CompletableFuture<Unit>;
     toString(): string;
     userApiService(): UserApiService;

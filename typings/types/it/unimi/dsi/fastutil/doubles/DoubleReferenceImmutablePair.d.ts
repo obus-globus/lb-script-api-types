@@ -11,15 +11,12 @@ export class DoubleReferenceImmutablePair<V extends Object | number | string | b
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleReferencePair<V>;
-    first(arg0: number): DoubleReferencePair<V>;
     firstDouble(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): DoubleReferencePair<V>;
-    key(arg0: number): DoubleReferencePair<V>;
     keyDouble(): number;
     left(): number;
-    left(arg0: number): DoubleReferencePair<V>;
     left(arg0: number): DoubleReferencePair<V>;
     leftDouble(): number;
     right(): V;

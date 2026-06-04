@@ -10,8 +10,6 @@ export class BitmapProvider extends Object implements GlyphProvider {
     // private glyphs: CodepointMap<BitmapProvider$Glyph>;
     // private image: NativeImage;
     close(): void;
-    close(): void;
-    getGlyph(codepoint: number): UnbakedGlyph;
     getGlyph(codepoint: number): UnbakedGlyph;
     getSupportedGlyphs(): (Object | null)[];
 }

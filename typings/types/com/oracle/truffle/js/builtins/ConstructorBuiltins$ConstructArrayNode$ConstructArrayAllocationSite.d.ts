@@ -7,8 +7,6 @@ export class ConstructorBuiltins$ConstructArrayNode$ConstructArrayAllocationSite
     // private assumption: Assumption;
     // private concreteArrayType: DynamicArray;
     getInitialArrayType(): DynamicArray;
-    getInitialArrayType(): DynamicArray;
     isTyped(): boolean;
-    notifyArrayTransition(arrayType: DynamicArray, length: number): void;
     notifyArrayTransition(arrayType: DynamicArray, length: number): void;
 }

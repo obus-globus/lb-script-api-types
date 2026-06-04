@@ -24,21 +24,13 @@ export class Object2CharLinkedOpenHashMap$MapEntry extends Object implements Obj
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, string>;
     right(): string;
     right(arg0: string): ObjectCharPair<K>;
-    right(arg0: string): ObjectCharPair<K>;
-    right(): string;
-    right(arg0: string): ObjectCharPair<K>;
-    right(arg0: string): ObjectCharPair<K>;
     rightChar(): string;
     second(): string;
     second(arg0: string): ObjectCharPair<K>;
-    second(arg0: string): ObjectCharPair<K>;
     secondChar(): string;
-    setValue(arg0: string): string;
-    setValue(arg0: string): string;
     setValue(arg0: string): string;
     toString(): string;
     value(): string;
-    value(arg0: string): ObjectCharPair<K>;
     value(arg0: string): ObjectCharPair<K>;
     valueChar(): string;
 }

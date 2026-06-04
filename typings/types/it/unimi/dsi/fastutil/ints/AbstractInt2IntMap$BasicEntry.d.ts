@@ -11,7 +11,5 @@ export class AbstractInt2IntMap$BasicEntry extends Object implements Int2IntMap$
     getIntValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

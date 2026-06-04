@@ -32,10 +32,6 @@ export interface PreparedStatement extends Statement, Object{
     executeLargeUpdate(arg0: string, arg1: string[]): number;
     executeLargeUpdate(arg0: string, arg1: number): number;
     executeLargeUpdate(arg0: string, arg1: number[]): number;
-    executeLargeUpdate(arg0: string): number;
-    executeLargeUpdate(arg0: string, arg1: string[]): number;
-    executeLargeUpdate(arg0: string, arg1: number): number;
-    executeLargeUpdate(arg0: string, arg1: number[]): number;
     executeQuery(): ResultSet;
     executeUpdate(): number;
     getLargeMaxRows(): number;
@@ -46,10 +42,8 @@ export interface PreparedStatement extends Statement, Object{
     setArray(arg0: number, arg1: Array): void;
     setAsciiStream(arg0: number, arg1: InputStream): void;
     setAsciiStream(arg0: number, arg1: InputStream, arg2: number): void;
-    setAsciiStream(arg0: number, arg1: InputStream, arg2: number): void;
     setBigDecimal(arg0: number, arg1: BigDecimal): void;
     setBinaryStream(arg0: number, arg1: InputStream): void;
-    setBinaryStream(arg0: number, arg1: InputStream, arg2: number): void;
     setBinaryStream(arg0: number, arg1: InputStream, arg2: number): void;
     setBlob(arg0: number, arg1: InputStream): void;
     setBlob(arg0: number, arg1: InputStream, arg2: number): void;
@@ -58,7 +52,6 @@ export interface PreparedStatement extends Statement, Object{
     setByte(arg0: number, arg1: number): void;
     setBytes(arg0: number, arg1: number[]): void;
     setCharacterStream(arg0: number, arg1: Reader): void;
-    setCharacterStream(arg0: number, arg1: Reader, arg2: number): void;
     setCharacterStream(arg0: number, arg1: Reader, arg2: number): void;
     setClob(arg0: number, arg1: Reader): void;
     setClob(arg0: number, arg1: Reader, arg2: number): void;

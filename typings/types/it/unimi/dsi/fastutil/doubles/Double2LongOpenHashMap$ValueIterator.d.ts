@@ -7,7 +7,6 @@ export class Double2LongOpenHashMap$ValueIterator extends Double2LongOpenHashMap
     constructor(null_: Double2LongOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextLong(): number;
     skip(arg0: number): number;

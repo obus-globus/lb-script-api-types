@@ -9,7 +9,6 @@ export class FloatRBTreeSet$SetIterator extends Object implements FloatListItera
     // private next: FloatRBTreeSet$Entry;
     // private prev: FloatRBTreeSet$Entry;
     add(arg0: number): void;
-    add(arg0: number): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): number;
@@ -21,8 +20,6 @@ export class FloatRBTreeSet$SetIterator extends Object implements FloatListItera
     previousFloat(): number;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     updateNext(): void;
     updatePrevious(): void;

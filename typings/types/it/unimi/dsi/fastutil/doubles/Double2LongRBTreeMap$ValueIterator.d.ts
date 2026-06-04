@@ -3,12 +3,10 @@ import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/long
 export class Double2LongRBTreeMap$ValueIterator extends Double2LongRBTreeMap$TreeIterator implements LongListIterator {
     private constructor(null_: Double2LongRBTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -31,5 +31,4 @@ export abstract class ASTTransformer<J extends JobParameters, V extends Object |
     transform(arg0: V): V;
     transform(arg0: V, arg1: J): V;
     transform(arg0: RootSupplier, arg1: V): V;
-    transform(arg0: V, arg1: J): V;
 }

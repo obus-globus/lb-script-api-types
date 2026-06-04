@@ -42,10 +42,7 @@ export interface Object2ObjectFunction<K extends Object | number | string | bool
     defaultReturnValue(arg0: V): void;
     get(arg0: Object): V;
     getOrDefault(arg0: Object, arg1: V): V;
-    getOrDefault(arg0: Object, arg1: V): V;
     put(arg0: K, arg1: V): V;
-    put(arg0: K, arg1: V): V;
-    remove(arg0: Object): V;
     remove(arg0: Object): V;
     size(): number;
 }

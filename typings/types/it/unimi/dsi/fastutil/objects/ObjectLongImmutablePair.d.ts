@@ -16,15 +16,12 @@ export class ObjectLongImmutablePair<K extends Object | number | string | boolea
     left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectLongPair<K>;
-    right(arg0: number): ObjectLongPair<K>;
     rightLong(): number;
     second(): number;
-    second(arg0: number): ObjectLongPair<K>;
     second(arg0: number): ObjectLongPair<K>;
     secondLong(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectLongPair<K>;
     value(arg0: number): ObjectLongPair<K>;
     valueLong(): number;
 }

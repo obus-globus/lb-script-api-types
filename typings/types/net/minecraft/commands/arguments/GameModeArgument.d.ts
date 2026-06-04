@@ -12,7 +12,6 @@ export class GameModeArgument extends Object implements ArgumentType<GameType> {
     static getGameMode(paramcontext: CommandContext<CommandSourceStack>, paramname: string): GameType;
     constructor()
     getExamples(): E[];
-    getExamples(): E[];
     listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;

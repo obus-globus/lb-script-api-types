@@ -5,7 +5,6 @@ export class FullscreenResolutionRange extends Object implements SteppedValidato
     constructor()
     getValidatedValue(arg0: number, arg1: () => number): number;
     isValueValid(arg0: number): boolean;
-    isValueValid(arg0: number): boolean;
     max(): number;
     min(): number;
     step(): number;

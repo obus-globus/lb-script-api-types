@@ -6,5 +6,4 @@ export interface Short2CharMap$Entry extends Object, Map$Entry<number, string>{
     getCharValue(): string;
     getShortKey(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

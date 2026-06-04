@@ -16,5 +16,4 @@ export class JSDoubleToStringNodeGen extends JSDoubleToStringNode {
     // private executeAndSpecialize(arg0Value: Object): TruffleString;
     executeString(arg0Value: Object): TruffleString;
     executeString(arg0Value: number): TruffleString;
-    executeString(arg0Value: number): TruffleString;
 }

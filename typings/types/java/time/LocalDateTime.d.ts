@@ -49,14 +49,11 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     // private date: LocalDate;
     // private time: LocalTime;
     adjustInto(arg0: Temporal): Temporal;
-    adjustInto(arg0: Temporal): Temporal;
     atOffset(arg0: ZoneOffset): OffsetDateTime;
     atZone(arg0: ZoneId): ZonedDateTime;
     compareTo(arg0: ChronoLocalDateTime<Object>): number;
-    compareTo(arg0: ChronoLocalDateTime<Object>): number;
     // private compareTo0(arg0: LocalDateTime): number;
     equals(arg0: Object | null): boolean;
-    format(arg0: DateTimeFormatter): string;
     format(arg0: DateTimeFormatter): string;
     get(arg0: TemporalField): number;
     getChronology(): Chronology;
@@ -73,13 +70,9 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     getYear(): number;
     hashCode(): number;
     isAfter(arg0: ChronoLocalDateTime<Object>): boolean;
-    isAfter(arg0: ChronoLocalDateTime<Object>): boolean;
     isBefore(arg0: ChronoLocalDateTime<Object>): boolean;
-    isBefore(arg0: ChronoLocalDateTime<Object>): boolean;
-    isEqual(arg0: ChronoLocalDateTime<Object>): boolean;
     isEqual(arg0: ChronoLocalDateTime<Object>): boolean;
     isSupported(arg0: TemporalField): boolean;
-    isSupported(arg0: TemporalUnit): boolean;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): LocalDateTime;
     minus(arg0: number, arg1: TemporalUnit): LocalDateTime;
@@ -108,7 +101,6 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     plusWeeks(arg0: number): LocalDateTime;
     // private plusWithOverflow(arg0: LocalDate, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): LocalDateTime;
     plusYears(arg0: number): LocalDateTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
     query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;

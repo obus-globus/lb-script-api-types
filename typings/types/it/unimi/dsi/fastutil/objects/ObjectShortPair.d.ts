@@ -9,18 +9,15 @@ export interface ObjectShortPair<K extends Object | number | string | boolean> e
     right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     right(): number;
     right(arg0: number): ObjectShortPair<K>;
-    right(arg0: number): ObjectShortPair<K>;
     rightShort(): number;
     second<R extends Object | number | string | boolean>(): R;
     second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     second(): number;
     second(arg0: number): ObjectShortPair<K>;
-    second(arg0: number): ObjectShortPair<K>;
     secondShort(): number;
     value<R extends Object | number | string | boolean>(): R;
     value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     value(): number;
-    value(arg0: number): ObjectShortPair<K>;
     value(arg0: number): ObjectShortPair<K>;
     valueShort(): number;
 }

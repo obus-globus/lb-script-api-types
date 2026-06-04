@@ -28,17 +28,9 @@ export class WritableRaster extends Raster {
     setDataElements(arg0: number, arg1: number, arg2: Object): void;
     setDataElements(arg0: number, arg1: number, arg2: number, arg3: number, arg4: Object): void;
     setPixel(arg0: number, arg1: number, arg2: number[]): void;
-    setPixel(arg0: number, arg1: number, arg2: number[]): void;
-    setPixel(arg0: number, arg1: number, arg2: number[]): void;
-    setPixels(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number[]): void;
-    setPixels(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number[]): void;
     setPixels(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number[]): void;
     setRect(arg0: Raster): void;
     setRect(arg0: number, arg1: number, arg2: Raster): void;
     setSample(arg0: number, arg1: number, arg2: number, arg3: number): void;
-    setSample(arg0: number, arg1: number, arg2: number, arg3: number): void;
-    setSample(arg0: number, arg1: number, arg2: number, arg3: number): void;
-    setSamples(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): void;
-    setSamples(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): void;
     setSamples(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number[]): void;
 }

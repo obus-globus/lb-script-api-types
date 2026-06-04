@@ -24,8 +24,6 @@ export class RenderPass extends Object implements AutoCloseable, RenderPassInter
     drawMultipleIndexed<T extends Object | number | string | boolean>(draws: E[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: E[], uniformArgument: T): void;
     enableScissor(x: number, y: number, width: number, height: number): void;
     iris$getCustomPass(): CustomPass;
-    iris$getCustomPass(): CustomPass;
-    iris$setCustomPass(arg0: CustomPass): void;
     iris$setCustomPass(arg0: CustomPass): void;
     popDebugGroup(): void;
     pushDebugGroup(label: () => string): void;

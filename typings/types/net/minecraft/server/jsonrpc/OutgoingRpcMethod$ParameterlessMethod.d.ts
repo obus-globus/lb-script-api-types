@@ -16,7 +16,6 @@ export class OutgoingRpcMethod$ParameterlessMethod<Result extends Object | numbe
     // private info: MethodInfo<void, Result>;
     attributes(): OutgoingRpcMethod$Attributes;
     decodeResult(result: JsonElement): Result;
-    decodeResult(result: JsonElement): Result;
     encodeParams<Params extends Object | number | string | boolean>(params: Params): JsonElement;
     equals(o: Object | null): boolean;
     hashCode(): number;

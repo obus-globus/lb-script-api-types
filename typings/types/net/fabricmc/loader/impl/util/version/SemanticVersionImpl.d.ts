@@ -14,7 +14,6 @@ export class SemanticVersionImpl extends SemanticVersionImpl_2 implements Semant
     // private prerelease: string;
     // private buildFriendlyName(): void;
     compareTo(arg0: SemanticVersion): number;
-    compareTo(arg0: SemanticVersion): number;
     compareTo(arg0: Version): number;
     equals(arg0: Object | null): boolean;
     equalsComponentsExactly(arg0: SemanticVersionImpl): boolean;

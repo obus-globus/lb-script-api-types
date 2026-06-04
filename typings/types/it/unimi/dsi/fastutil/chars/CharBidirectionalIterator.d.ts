@@ -6,14 +6,10 @@ import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CharBidirectionalIterator extends CharIterator, ObjectBidirectionalIterator<string>, Object{
     back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
     previous(): string;
     previousChar(): string;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

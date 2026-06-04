@@ -24,7 +24,6 @@ export class ObjectArrayFIFOQueue<K extends Object | number | string | boolean> 
     first(): K;
     isEmpty(): boolean;
     last(): K;
-    last(): K;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;
     // private resize(arg0: number, arg1: number): void;

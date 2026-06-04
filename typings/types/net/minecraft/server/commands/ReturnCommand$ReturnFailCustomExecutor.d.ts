@@ -10,5 +10,4 @@ export class ReturnCommand$ReturnFailCustomExecutor<T extends ExecutionCommandSo
     private constructor()
     run(context: CommandContext<T>): number;
     run(sender: T, currentStep: ContextChain<T>, modifiers: ChainModifiers, output: ExecutionControl<T>): void;
-    run(context: CommandContext<T>): number;
 }

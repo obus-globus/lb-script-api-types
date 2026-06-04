@@ -16,7 +16,6 @@ export class BedrockBlockArray extends Object implements DataPalette, Cloneable 
     getData(): NibbleArray;
     idAt(arg0: number, arg1: number, arg2: number): number;
     idAt(arg0: number): number;
-    idAt(arg0: number, arg1: number, arg2: number): number;
     idByIndex(arg0: number): number;
     index(arg0: number, arg1: number, arg2: number): number;
     paletteIndexAt(arg0: number): number;
@@ -24,7 +23,6 @@ export class BedrockBlockArray extends Object implements DataPalette, Cloneable 
     replaceIds(arg0: (param0: number) => kotlin.Int): void;
     setIdAt(arg0: number, arg1: number, arg2: number, arg3: number): void;
     setIdAt(arg0: number, arg1: number): void;
-    setIdAt(arg0: number, arg1: number, arg2: number, arg3: number): void;
     setIdByIndex(arg0: number, arg1: number): void;
     setPaletteIndexAt(arg0: number, arg1: number): void;
     size(): number;

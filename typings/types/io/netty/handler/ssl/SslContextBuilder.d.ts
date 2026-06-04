@@ -64,13 +64,10 @@ export class SslContextBuilder extends Object {
     keyManager(arg0: InputStream, arg1: InputStream, arg2: string): SslContextBuilder;
     keyManager(arg0: PrivateKey, arg1: X509Certificate[]): SslContextBuilder;
     keyManager(arg0: PrivateKey, arg1: string, arg2: X509Certificate[]): SslContextBuilder;
-    keyManager(arg0: PrivateKey, arg1: string, arg2: X509Certificate[]): SslContextBuilder;
-    keyManager(arg0: PrivateKey, arg1: X509Certificate[]): SslContextBuilder;
     keyManager(arg0: KeyManager): SslContextBuilder;
     keyManager(arg0: KeyManagerFactory): SslContextBuilder;
     keyStoreType(arg0: string): SslContextBuilder;
     option<T extends Object | number | string | boolean>(arg0: SslContextOption<T>, arg1: T): SslContextBuilder;
-    protocols(arg0: string[]): SslContextBuilder;
     protocols(arg0: string[]): SslContextBuilder;
     secureRandom(arg0: SecureRandom): SslContextBuilder;
     serverName(arg0: SNIServerName): SslContextBuilder;
@@ -83,6 +80,5 @@ export class SslContextBuilder extends Object {
     trustManager(arg0: InputStream): SslContextBuilder;
     trustManager(arg0: TrustManager): SslContextBuilder;
     trustManager(arg0: TrustManagerFactory): SslContextBuilder;
-    trustManager(arg0: X509Certificate[]): SslContextBuilder;
     trustManager(arg0: X509Certificate[]): SslContextBuilder;
 }

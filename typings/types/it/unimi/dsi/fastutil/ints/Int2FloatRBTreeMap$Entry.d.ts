@@ -23,7 +23,6 @@ export class Int2FloatRBTreeMap$Entry extends AbstractInt2FloatMap$BasicEntry im
     right(): Int2FloatRBTreeMap$Entry;
     right(arg0: Int2FloatRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Int2FloatRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

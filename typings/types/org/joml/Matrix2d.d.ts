@@ -118,8 +118,6 @@ export class Matrix2d extends Object implements Externalizable, Cloneable, Matri
     set(arg0: number, arg1: number, arg2: number, arg3: number): Matrix2d;
     set(arg0: number[]): Matrix2d;
     set(arg0: number[], arg1: number): Matrix2d;
-    set(arg0: number[]): Matrix2d;
-    set(arg0: number[], arg1: number): Matrix2d;
     set(arg0: number, arg1: ByteBuffer): Matrix2d;
     set(arg0: number, arg1: DoubleBuffer): Matrix2d;
     set(arg0: number, arg1: number, arg2: number): Matrix2d;

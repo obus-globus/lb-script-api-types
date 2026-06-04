@@ -96,18 +96,14 @@ export class FlowerBedBlock extends VegetationBlock implements BonemealableBlock
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     canBeReplaced(state: BlockState, fluid: Fluid): boolean;
-    canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     codec(): MapCodec<FlowerBedBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getParticlePos(blockPos: BlockPos): BlockPos;
     getSegmentAmountProperty(): IntegerProperty;
-    getSegmentAmountProperty(): IntegerProperty;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     getShapeCalculator(facing: EnumProperty<Direction>, amount: IntegerProperty): (param0: BlockState) => VoxelShape;
     getShapeHeight(): number;
-    getShapeHeight(): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
-    getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     getType(): BonemealableBlock$Type;
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;

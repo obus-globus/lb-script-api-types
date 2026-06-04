@@ -14,6 +14,5 @@ export class ServerboundConfigurationAcknowledgedPacket extends Object implement
     handle(listener: ServerGamePacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     type(): PacketType<ServerboundConfigurationAcknowledgedPacket>;
 }

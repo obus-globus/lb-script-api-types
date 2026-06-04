@@ -3,12 +3,10 @@ import type { Short2FloatAVLTreeMap$TreeIterator } from '../../../../../it/unimi
 export class Short2FloatAVLTreeMap$ValueIterator extends Short2FloatAVLTreeMap$TreeIterator implements FloatListIterator {
     private constructor(null_: Short2FloatAVLTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

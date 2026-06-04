@@ -8,7 +8,5 @@ export class CleanerJava24Linker$CleanableDirectBufferImpl extends Object implem
     buffer(): ByteBuffer;
     clean(): void;
     hasMemoryAddress(): boolean;
-    hasMemoryAddress(): boolean;
-    memoryAddress(): number;
     memoryAddress(): number;
 }

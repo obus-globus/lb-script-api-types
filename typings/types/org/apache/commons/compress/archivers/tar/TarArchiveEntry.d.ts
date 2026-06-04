@@ -138,7 +138,6 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     equals(arg0: TarArchiveEntry): boolean;
     // private evaluateType(arg0: { [key: string]: string }, arg1: number[]): number;
     // private fill(arg0: number, arg1: number, arg2: number[], arg3: number): number;
-    // private fill(arg0: number, arg1: number, arg2: number[], arg3: number): number;
     fillGNUSparse0xData(arg0: { [key: string]: string }): void;
     fillGNUSparse1xData(arg0: { [key: string]: string }): void;
     fillStarSparseData(arg0: { [key: string]: string }): void;
@@ -213,7 +212,6 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     setDevMajor(arg0: number): void;
     setDevMinor(arg0: number): void;
     setGroupId(arg0: number): void;
-    setGroupId(arg0: number): void;
     setGroupName(arg0: string): void;
     setIds(arg0: number, arg1: number): void;
     setLastAccessTime(arg0: FileTime): void;
@@ -228,7 +226,6 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     setSize(arg0: number): void;
     setSparseHeaders(arg0: TarArchiveStructSparse[]): void;
     setStatusChangeTime(arg0: FileTime): void;
-    setUserId(arg0: number): void;
     setUserId(arg0: number): void;
     setUserName(arg0: string): void;
     toString(): string;

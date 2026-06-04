@@ -7,8 +7,6 @@ export class Float2FloatOpenCustomHashMap$KeyIterator extends Float2FloatOpenCus
     constructor(null_: Float2FloatOpenCustomHashMap$KeyIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextFloat(): number;
     skip(arg0: number): number;

@@ -47,12 +47,9 @@ export abstract class AbstractChar2CharFunction extends Object implements Char2C
     containsKey(arg0: string): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
-    defaultReturnValue(): string;
-    defaultReturnValue(arg0: string): void;
     get(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: string, arg1: string): string;
-    put(arg0: string, arg1: string): string;
     put(arg0: string, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: string): string;

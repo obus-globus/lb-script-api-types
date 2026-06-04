@@ -27,7 +27,6 @@ export class Complex extends Object {
     divide(arg0: BigDecimal): Complex;
     divide(arg0: BigInteger): Complex;
     divide(arg0: number): Complex;
-    divide(arg0: number): Complex;
     equals(arg0: Object | null): boolean;
     getImaginary(): Real;
     getReal(): Real;
@@ -40,7 +39,6 @@ export class Complex extends Object {
     multiply(arg0: Real): Complex;
     multiply(arg0: BigDecimal): Complex;
     multiply(arg0: BigInteger): Complex;
-    multiply(arg0: number): Complex;
     multiply(arg0: number): Complex;
     negate(): Complex;
     subtract(arg0: Complex): Complex;

@@ -18,14 +18,10 @@ export class NonTransformableNode extends Record implements TextNode {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     isDynamic(): boolean;
-    isDynamic(): boolean;
     node(): TextNode;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
     toComponent(arg0: ParserContext, arg1: boolean): Component;
-    toComponent(arg0: PlaceholderContext): Component;
-    toComponent(): Component;
-    toComponent(arg0: ParserContext): Component;
     toComponent(arg0: PlaceholderContext): Component;
     toString(): string;
 }

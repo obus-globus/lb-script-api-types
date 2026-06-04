@@ -26,6 +26,4 @@ export class KeybindContents extends Object implements ComponentMarker, Componen
     toString(): string;
     visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
     visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

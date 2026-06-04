@@ -14,7 +14,6 @@ export class BinomialDistributionGenerator extends Record implements NumberProvi
     equals(o: Object | null): boolean;
     getFloat(context: LootContext): number;
     getInt(context: LootContext): number;
-    getInt(context: LootContext): number;
     hashCode(): number;
     n(): NumberProvider;
     p(): NumberProvider;

@@ -5,7 +5,5 @@ export class Quantiles$ScaleAndIndexes extends Object {
     // private scale: number;
     compute(dataset: E[]): { [key: number]: number };
     compute(dataset: number[]): { [key: number]: number };
-    compute(dataset: number[]): { [key: number]: number };
-    compute(dataset: number[]): { [key: number]: number };
     computeInPlace(dataset: number[]): { [key: number]: number };
 }

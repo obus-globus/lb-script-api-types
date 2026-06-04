@@ -50,7 +50,6 @@ export class LevelChunkSection extends Object implements BlockCountingSection, B
     lithium$addToCallback(arg0: SectionedBlockChangeTracker, arg1: number, arg2: Level): void;
     lithium$getCount(arg0: TrackedBlockStatePredicate): number;
     lithium$getCount(arg0: number): number;
-    lithium$getCount(arg0: TrackedBlockStatePredicate): number;
     lithium$getSectionData(): LithiumSectionData$SectionData;
     lithium$getSectionDataDirect(): LithiumSectionData$SectionData;
     lithium$mayContainAny(arg0: TrackedBlockStatePredicate): boolean;

@@ -4,12 +4,10 @@ export class Int2ByteAVLTreeMap$KeyIterator extends Int2ByteAVLTreeMap$TreeItera
     constructor(null_: Int2ByteAVLTreeMap$KeyIterator)
     constructor(null_: Int2ByteAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextInt(): number;
     previous(): number;
     previousInt(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

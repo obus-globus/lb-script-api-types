@@ -15,7 +15,6 @@ export class PalettedPermutations$PalettedSpriteSupplier extends Record implemen
     // private permutationLocation: Identifier;
     baseImage(): LazyLoadedImage;
     discard(): void;
-    discard(): void;
     equals(o: Object | null): boolean;
     get(loader: (param0: Identifier, param1: Resource) => net.minecraft.client.renderer.texture.SpriteContents): SpriteContents;
     hashCode(): number;

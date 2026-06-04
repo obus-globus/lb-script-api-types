@@ -34,7 +34,6 @@ export class BloomFilter<T extends Object | number | string | boolean> extends O
     putAll(that: BloomFilter<T>): void;
     // private readObject(stream: ObjectInputStream): void;
     test(input: T): boolean;
-    test(input: T): boolean;
     // private writeReplace(): Object;
     writeTo(out: OutputStream): void;
 }

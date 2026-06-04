@@ -9,15 +9,11 @@ export class LongIterators$IntervalIterator extends Object implements LongBidire
     // private from: number;
     // private to: number;
     back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

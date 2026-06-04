@@ -25,9 +25,7 @@ export class ClientGameTestContextImpl extends Object implements ClientGameTestC
     constructor()
     readonly input: TestInputImpl;
     assertScreenshotContains(arg0: string): Vector2i;
-    assertScreenshotContains(arg0: string): Vector2i;
     assertScreenshotContains(arg0: TestScreenshotComparisonOptions): Vector2i;
-    assertScreenshotEquals(arg0: string): void;
     assertScreenshotEquals(arg0: string): void;
     assertScreenshotEquals(arg0: TestScreenshotComparisonOptions): void;
     clickScreenButton(arg0: string): void;
@@ -38,7 +36,6 @@ export class ClientGameTestContextImpl extends Object implements ClientGameTestC
     restoreDefaultGameOptions(): void;
     runOnClient(arg0: (param0: Minecraft) => void): void;
     setScreen(arg0: () => Screen): void;
-    takeScreenshot(arg0: string): Path[];
     takeScreenshot(arg0: string): Path[];
     takeScreenshot(arg0: TestScreenshotOptions): Path[];
     tryClickScreenButton(arg0: string): boolean;

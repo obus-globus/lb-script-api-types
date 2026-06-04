@@ -19,14 +19,11 @@ export class ShortArrayFIFOQueue extends Object implements ShortPriorityQueue, S
     dequeueLastShort(): number;
     dequeueShort(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     enqueueFirst(arg0: number): void;
     // private expand(): void;
     first(): number;
     firstShort(): number;
     last(): number;
-    lastShort(): number;
     lastShort(): number;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;

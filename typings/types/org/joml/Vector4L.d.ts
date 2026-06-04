@@ -65,8 +65,6 @@ export class Vector4L extends Object implements Externalizable, Cloneable, Vecto
     distanceSquared(arg0: Vector4ic): number;
     div(arg0: number): Vector4L;
     div(arg0: number, arg1: Vector4L): Vector4L;
-    div(arg0: number): Vector4L;
-    div(arg0: number, arg1: Vector4L): Vector4L;
     div(arg0: Vector4Lc): Vector4L;
     div(arg0: Vector4Lc, arg1: Vector4L): Vector4L;
     div(arg0: Vector4ic): Vector4L;

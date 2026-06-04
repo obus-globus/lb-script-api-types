@@ -8,8 +8,6 @@ export class LongIterators$UnmodifiableBidirectionalIterator extends Object impl
     // private i: LongBidirectionalIterator;
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     nextLong(): number;

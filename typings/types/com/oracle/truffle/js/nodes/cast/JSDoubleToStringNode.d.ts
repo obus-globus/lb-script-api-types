@@ -12,5 +12,4 @@ export abstract class JSDoubleToStringNode extends JavaScriptBaseNode {
     doDouble(d: number, fromLongNode: TruffleString$FromLongNode, isInt: InlinedConditionProfile, isNaN: InlinedConditionProfile, isPositiveInfinity: InlinedConditionProfile, isNegativeInfinity: InlinedConditionProfile, isZero: InlinedConditionProfile, fromJavaStringNode: TruffleString$FromJavaStringNode): TruffleString;
     executeString(operand: Object): TruffleString;
     executeString(operand: number): TruffleString;
-    executeString(operand: number): TruffleString;
 }

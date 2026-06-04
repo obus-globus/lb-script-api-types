@@ -7,11 +7,7 @@ export class DoubleMetaphone$DoubleMetaphoneResult extends Object {
     readonly primary: StringBuilder;
     append(arg0: string): void;
     append(arg0: string, arg1: string): void;
-    append(arg0: string): void;
-    append(arg0: string, arg1: string): void;
     appendAlternate(arg0: string): void;
-    appendAlternate(arg0: string): void;
-    appendPrimary(arg0: string): void;
     appendPrimary(arg0: string): void;
     getAlternate(): string;
     getPrimary(): string;

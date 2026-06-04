@@ -6,5 +6,4 @@ export interface Short2ByteMap$Entry extends Object, Map$Entry<number, number>{
     getByteValue(): number;
     getShortKey(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

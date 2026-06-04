@@ -12,28 +12,22 @@ export class ByteDoubleImmutablePair extends Object implements ByteDoublePair, S
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteDoublePair;
-    first(arg0: number): ByteDoublePair;
     firstByte(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ByteDoublePair;
-    key(arg0: number): ByteDoublePair;
     keyByte(): number;
     left(): number;
-    left(arg0: number): ByteDoublePair;
     left(arg0: number): ByteDoublePair;
     leftByte(): number;
     right(): number;
     right(arg0: number): ByteDoublePair;
-    right(arg0: number): ByteDoublePair;
     rightDouble(): number;
     second(): number;
-    second(arg0: number): ByteDoublePair;
     second(arg0: number): ByteDoublePair;
     secondDouble(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ByteDoublePair;
     value(arg0: number): ByteDoublePair;
     valueDouble(): number;
 }

@@ -12,28 +12,22 @@ export class LongCharImmutablePair extends Object implements LongCharPair, Seria
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongCharPair;
-    first(arg0: number): LongCharPair;
     firstLong(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): LongCharPair;
-    key(arg0: number): LongCharPair;
     keyLong(): number;
     left(): number;
-    left(arg0: number): LongCharPair;
     left(arg0: number): LongCharPair;
     leftLong(): number;
     right(): string;
     right(arg0: string): LongCharPair;
-    right(arg0: string): LongCharPair;
     rightChar(): string;
     second(): string;
-    second(arg0: string): LongCharPair;
     second(arg0: string): LongCharPair;
     secondChar(): string;
     toString(): string;
     value(): string;
-    value(arg0: string): LongCharPair;
     value(arg0: string): LongCharPair;
     valueChar(): string;
 }

@@ -23,15 +23,9 @@ export class ByteSpliterators$SpliteratorConcatenator extends Object implements 
     // private computeCharacteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
     getComparator(): (param0: number, param1: number) => kotlin.Int;
     // private recomputeRemaining(): number;
     skip(arg0: number): number;
-    skip(arg0: number): number;
-    tryAdvance(arg0: (param0: number) => void): boolean;
-    tryAdvance(arg0: (param0: number) => void): boolean;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): ByteSpliterator;
 }

@@ -27,7 +27,6 @@ export class ItemStackRenderState extends Object implements FabricRenderState, I
     appendModelIdentityElement(element: Object): void;
     clear(): void;
     clearExtraData(): void;
-    clearExtraData(): void;
     ensureCapacity(requestedCount: number): void;
     // private firstLayer(): ItemStackRenderState$LayerRenderState;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;

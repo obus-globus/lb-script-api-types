@@ -3,12 +3,10 @@ import type { Short2ByteAVLTreeMap$TreeIterator } from '../../../../../it/unimi/
 export class Short2ByteAVLTreeMap$ValueIterator extends Short2ByteAVLTreeMap$TreeIterator implements ByteListIterator {
     private constructor(null_: Short2ByteAVLTreeMap$ValueIterator)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextByte(): number;
     previous(): number;
     previousByte(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -94,9 +94,6 @@ export class GeneratorAdapter extends LocalVariablesSorter {
     pop2(): void;
     push(arg0: boolean): void;
     push(arg0: number): void;
-    push(arg0: number): void;
-    push(arg0: number): void;
-    push(arg0: number): void;
     push(arg0: string): void;
     push(arg0: ConstantDynamic): void;
     push(arg0: Handle): void;

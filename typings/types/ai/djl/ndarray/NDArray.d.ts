@@ -223,10 +223,6 @@ export interface NDArray extends BytesSupplier, NDResource, Object{
     set(arg0: NDIndex, arg1: Number): void;
     set(arg0: Buffer): void;
     set(arg0: number[]): void;
-    set(arg0: number[]): void;
-    set(arg0: number[]): void;
-    set(arg0: number[]): void;
-    set(arg0: number[]): void;
     setName(arg0: string): void;
     setRequiresGradient(arg0: boolean): void;
     setScalar(arg0: NDIndex, arg1: Number): void;

@@ -23,7 +23,6 @@ export class Short2BooleanRBTreeMap$Entry extends AbstractShort2BooleanMap$Basic
     right(): Short2BooleanRBTreeMap$Entry;
     right(arg0: Short2BooleanRBTreeMap$Entry): void;
     setValue(arg0: boolean): boolean;
-    setValue(arg0: boolean): boolean;
     succ(): boolean;
     succ(arg0: Short2BooleanRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

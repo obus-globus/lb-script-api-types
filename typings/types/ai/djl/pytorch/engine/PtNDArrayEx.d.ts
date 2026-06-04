@@ -18,7 +18,6 @@ export class PtNDArrayEx extends Object implements NDArrayEx {
     batchNorm(arg0: NDArray, arg1: NDArray, arg2: NDArray, arg3: NDArray, arg4: NDArray, arg5: number, arg6: number, arg7: number, arg8: boolean): (Object | null)[];
     // private calculateOverlap(arg0: number[], arg1: number[]): number;
     concat(arg0: (Object | null)[]): NDArray;
-    concat(arg0: (Object | null)[]): NDArray;
     concat(arg0: (Object | null)[], arg1: number): PtNDArray;
     convolution(arg0: NDArray, arg1: NDArray, arg2: NDArray, arg3: Shape, arg4: Shape, arg5: Shape, arg6: number): (Object | null)[];
     crop(arg0: number, arg1: number, arg2: number, arg3: number): NDArray;
@@ -58,14 +57,12 @@ export class PtNDArrayEx extends Object implements NDArrayEx {
     rdiv(arg0: Number): NDArray;
     rdivi(arg0: Number): NDArray;
     rdivi(arg0: NDArray): PtNDArray;
-    rdivi(arg0: Number): NDArray;
     relu(): PtNDArray;
     resize(arg0: number, arg1: number, arg2: number): PtNDArray;
     rmod(arg0: NDArray): NDArray;
     rmod(arg0: Number): NDArray;
     rmodi(arg0: Number): NDArray;
     rmodi(arg0: NDArray): PtNDArray;
-    rmodi(arg0: Number): NDArray;
     rmspropUpdate(arg0: (Object | null)[], arg1: (Object | null)[], arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: boolean): void;
     rnn(arg0: NDArray, arg1: NDArray, arg2: (Object | null)[], arg3: boolean, arg4: number, arg5: RNN$Activation, arg6: number, arg7: boolean, arg8: boolean, arg9: boolean): (Object | null)[];
     rpow(arg0: Number): NDArray;
@@ -79,7 +76,6 @@ export class PtNDArrayEx extends Object implements NDArrayEx {
     sigmoid(): PtNDArray;
     softPlus(): PtNDArray;
     softSign(): PtNDArray;
-    stack(arg0: (Object | null)[]): NDArray;
     stack(arg0: (Object | null)[]): NDArray;
     stack(arg0: (Object | null)[], arg1: number): PtNDArray;
     swish(arg0: number): NDArray;

@@ -15,7 +15,6 @@ export class TextEmbeddingServingTranslator extends Object implements Translator
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;
-    prepare(arg0: TranslatorContext): void;
     processInput(arg0: TranslatorContext, arg1: Input): (Object | null)[];
     processOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output;
 }

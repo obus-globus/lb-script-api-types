@@ -17,7 +17,6 @@ export class Char2CharFunctions$UnmodifiableFunction extends AbstractChar2CharFu
     getOrDefault(arg0: string, arg1: string): string;
     hashCode(): number;
     put(arg0: string, arg1: string): string;
-    put(arg0: string, arg1: string): string;
     remove(arg0: Object): string;
     remove(arg0: string): string;
     size(): number;

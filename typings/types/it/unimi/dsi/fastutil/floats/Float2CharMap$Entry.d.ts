@@ -6,5 +6,4 @@ export interface Float2CharMap$Entry extends Object, Map$Entry<number, string>{
     getCharValue(): string;
     getFloatKey(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

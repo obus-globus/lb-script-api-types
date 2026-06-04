@@ -22,7 +22,6 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     constructor(arg0: boolean)
     // private compressed: boolean;
     compressMaps(): boolean;
-    compressMaps(): boolean;
     convertList<U extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
     convertMap<U extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
     convertTo<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: JsonElement): U;

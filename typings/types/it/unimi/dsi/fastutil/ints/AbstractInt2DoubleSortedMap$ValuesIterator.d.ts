@@ -8,7 +8,6 @@ export class AbstractInt2DoubleSortedMap$ValuesIterator extends Object implement
     constructor(arg0: ObjectBidirectionalIterator<Int2DoubleMap$Entry>)
     // private i: ObjectBidirectionalIterator<Int2DoubleMap$Entry>;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextDouble(): number;

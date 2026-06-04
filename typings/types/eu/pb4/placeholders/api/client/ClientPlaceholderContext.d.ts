@@ -6,8 +6,6 @@ import type { ClientLevel } from '../../../../../net/minecraft/client/multiplaye
 import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 export interface ClientPlaceholderContext extends PlaceholderContext, Object{
     addToContext(arg0: ParserContext): void;
-    addToContext(arg0: ParserContext): void;
-    asParserContext(): ParserContext;
     asParserContext(): ParserContext;
     hasBlockPosition(): boolean;
     hasEntity(): boolean;

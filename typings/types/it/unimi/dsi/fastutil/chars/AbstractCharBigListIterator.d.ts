@@ -3,10 +3,7 @@ import type { CharBigListIterator } from '../../../../../it/unimi/dsi/fastutil/c
 export abstract class AbstractCharBigListIterator extends AbstractCharBidirectionalIterator implements CharBigListIterator {
     constructor()
     add(arg0: string): void;
-    add(arg0: string): void;
     back(arg0: number): number;
     set(arg0: string): void;
-    set(arg0: string): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

@@ -15,5 +15,4 @@ export interface RandomSource extends Object{
     nextLong(): number;
     setSeed(seed: number): void;
     triangle(mean: number, spread: number): number;
-    triangle(mean: number, spread: number): number;
 }

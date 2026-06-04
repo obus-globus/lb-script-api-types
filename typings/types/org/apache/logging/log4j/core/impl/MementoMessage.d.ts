@@ -10,7 +10,6 @@ export class MementoMessage extends Object implements Message, StringBuilderForm
     readonly parameters: Object[];
     formatTo(buffer: StringBuilder): void;
     getFormat(): string;
-    getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];
     getThrowable(): Throwable;

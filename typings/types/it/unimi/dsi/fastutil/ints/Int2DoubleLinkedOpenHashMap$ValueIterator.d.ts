@@ -5,12 +5,10 @@ export class Int2DoubleLinkedOpenHashMap$ValueIterator extends Int2DoubleLinkedO
     constructor(null_: Int2DoubleLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -23,21 +23,13 @@ export class Reference2FloatOpenHashMap$MapEntry extends Object implements Refer
     left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceFloatPair<K>;
-    right(arg0: number): ReferenceFloatPair<K>;
-    right(): number;
-    right(arg0: number): ReferenceFloatPair<K>;
-    right(arg0: number): ReferenceFloatPair<K>;
     rightFloat(): number;
     second(): number;
     second(arg0: number): ReferenceFloatPair<K>;
-    second(arg0: number): ReferenceFloatPair<K>;
     secondFloat(): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ReferenceFloatPair<K>;
     value(arg0: number): ReferenceFloatPair<K>;
     valueFloat(): number;
 }

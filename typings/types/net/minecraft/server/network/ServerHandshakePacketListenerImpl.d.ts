@@ -15,7 +15,6 @@ export class ServerHandshakePacketListenerImpl extends Object implements PacketC
     // private server: MinecraftServer;
     // private beginLogin(packet: ClientIntentionPacket, transfer: boolean): void;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     handleIntention(packet: ClientIntentionPacket): void;
     isAcceptingMessages(): boolean;
     onDisconnect(details: DisconnectionDetails): void;

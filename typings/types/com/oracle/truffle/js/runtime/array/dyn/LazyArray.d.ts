@@ -20,6 +20,5 @@ export class LazyArray extends AbstractConstantLazyArray {
     createWriteableObject(object: JSDynamicObject, index: number, value: Object, node: Node, profile: ScriptArray$CreateWritableProfileAccess): AbstractWritableArray;
     getElementInBounds(object: JSDynamicObject, index: number): Object;
     getElementInBounds(object: JSDynamicObject, index: number, listGetNode: ListGetNode): Object;
-    getElementInBounds(object: JSDynamicObject, index: number): Object;
     withIntegrityLevel(newIntegrityLevel: number): DynamicArray;
 }

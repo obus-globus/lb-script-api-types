@@ -285,7 +285,6 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     getLastClientMoveIntent(): Vec3;
     getLastSectionPos(): SectionPos;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     getRaidOmenPosition(): BlockPos;
     getRecipeBook(): ServerRecipeBook;
     getRespawnConfig(): ServerPlayer$RespawnConfig;

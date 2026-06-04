@@ -4,5 +4,4 @@ export interface Object2CharMap$Entry<K extends Object | number | string | boole
     readonly value: string;
     getCharValue(): string;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
 }

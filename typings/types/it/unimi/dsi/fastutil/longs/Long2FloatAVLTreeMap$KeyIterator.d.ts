@@ -4,12 +4,10 @@ export class Long2FloatAVLTreeMap$KeyIterator extends Long2FloatAVLTreeMap$TreeI
     constructor(null_: Long2FloatAVLTreeMap$KeyIterator)
     constructor(null_: Long2FloatAVLTreeMap$KeyIterator, arg1: number)
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

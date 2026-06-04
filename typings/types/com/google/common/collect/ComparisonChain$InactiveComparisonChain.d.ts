@@ -10,9 +10,6 @@ export class ComparisonChain$InactiveComparisonChain extends ComparisonChain {
     compare(left: boolean, right: boolean): ComparisonChain;
     compare(left: Comparable<Object>, right: Comparable<Object>): ComparisonChain;
     compare(left: number, right: number): ComparisonChain;
-    compare(left: number, right: number): ComparisonChain;
-    compare(left: number, right: number): ComparisonChain;
-    compare(left: number, right: number): ComparisonChain;
     compareFalseFirst(left: boolean, right: boolean): ComparisonChain;
     compareTrueFirst(left: boolean, right: boolean): ComparisonChain;
     result(): number;

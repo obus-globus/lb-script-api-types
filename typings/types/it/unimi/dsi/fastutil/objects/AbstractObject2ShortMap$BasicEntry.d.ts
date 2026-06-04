@@ -11,7 +11,5 @@ export class AbstractObject2ShortMap$BasicEntry<K extends Object | number | stri
     getShortValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

@@ -4,5 +4,4 @@ export interface Reference2FloatMap$Entry<K extends Object | number | string | b
     readonly value: number;
     getFloatValue(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
 }

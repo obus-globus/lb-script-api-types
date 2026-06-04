@@ -7,13 +7,7 @@ export class BooleanBigListIterators$BigListIteratorListIterator extends Object 
     constructor(arg0: BooleanListIterator)
     // private i: BooleanListIterator;
     add(arg0: boolean): void;
-    add(arg0: boolean): void;
-    add(arg0: boolean): void;
-    add(arg0: boolean): void;
     back(arg0: number): number;
-    back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -24,11 +18,5 @@ export class BooleanBigListIterators$BigListIteratorListIterator extends Object 
     previousIndex(): number;
     remove(): void;
     set(arg0: boolean): void;
-    set(arg0: boolean): void;
-    set(arg0: boolean): void;
-    set(arg0: boolean): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

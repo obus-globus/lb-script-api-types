@@ -45,7 +45,6 @@ export class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements M
     // private isInitialized(): boolean;
     isValid(): boolean;
     setDependencies(arg0: ModuleDescriptorImpl[]): void;
-    setDependencies(arg0: ModuleDescriptorImpl[]): void;
     setDependencies(arg0: ModuleDescriptorImpl[], arg1: ModuleDescriptorImpl[]): void;
     setDependencies(arg0: ModuleDependencies): void;
     shouldSeeInternalsOf(arg0: ModuleDescriptor): boolean;

@@ -23,7 +23,6 @@ export class Double2CharRBTreeMap$Entry extends AbstractDouble2CharMap$BasicEntr
     right(): Double2CharRBTreeMap$Entry;
     right(arg0: Double2CharRBTreeMap$Entry): void;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
     succ(): boolean;
     succ(arg0: Double2CharRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

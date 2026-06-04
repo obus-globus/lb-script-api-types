@@ -56,7 +56,6 @@ export class DefaultConfigurationBuilder<T extends BuiltConfiguration> extends O
     add(builder: ScriptComponentBuilder): ConfigurationBuilder<T>;
     add(builder: ScriptFileComponentBuilder): ConfigurationBuilder<T>;
     addComponent(builder: ComponentBuilder<Object>): ConfigurationBuilder<T>;
-    addComponent(builder: ComponentBuilder<Object>): ConfigurationBuilder<T>;
     addProperty(key: string, value: string): ConfigurationBuilder<T>;
     addRootProperty(key: string, value: string): ConfigurationBuilder<T>;
     build(): T;

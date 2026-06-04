@@ -12,7 +12,6 @@ export class WorldBorderRenderState extends Object implements FabricRenderState 
     // private renderStateData: Map<Object | null, Object | null>;
     tint: number;
     clearExtraData(): void;
-    clearExtraData(): void;
     closestBorder(x: number, z: number): WorldBorderRenderState$DistancePerDirection[];
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;

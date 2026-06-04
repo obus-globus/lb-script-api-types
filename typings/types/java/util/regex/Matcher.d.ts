@@ -42,7 +42,6 @@ export class Matcher extends Object implements MatchResult {
     end(arg0: string): number;
     end(): number;
     end(arg0: number): number;
-    end(arg0: string): number;
     find(): boolean;
     find(arg0: number): boolean;
     getMatchedGroupIndex(arg0: string): number;
@@ -51,11 +50,9 @@ export class Matcher extends Object implements MatchResult {
     group(arg0: string): string;
     group(): string;
     group(arg0: number): string;
-    group(arg0: string): string;
     groupCount(): number;
     // private groupNumber(arg0: string): number;
     hasAnchoringBounds(): boolean;
-    hasMatch(): boolean;
     hasMatch(): boolean;
     hasTransparentBounds(): boolean;
     hitEnd(): boolean;
@@ -64,7 +61,6 @@ export class Matcher extends Object implements MatchResult {
     matches(): boolean;
     // private maxEnd(): number;
     // private minStart(): number;
-    namedGroups(): { [key: string]: number };
     namedGroups(): { [key: string]: number };
     pattern(): Pattern;
     region(arg0: number, arg1: number): Matcher;
@@ -82,7 +78,6 @@ export class Matcher extends Object implements MatchResult {
     start(arg0: string): number;
     start(): number;
     start(arg0: number): number;
-    start(arg0: string): number;
     toMatchResult(): MatchResult;
     toString(): string;
     useAnchoringBounds(arg0: boolean): Matcher;

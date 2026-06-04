@@ -17,7 +17,6 @@ export class Long2ReferenceFunctions$UnmodifiableFunction<V extends Object | num
     getOrDefault(arg0: number, arg1: V): V;
     hashCode(): number;
     put(arg0: number, arg1: V): V;
-    put(arg0: number, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: number): V;
     size(): number;

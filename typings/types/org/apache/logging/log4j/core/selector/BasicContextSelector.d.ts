@@ -13,15 +13,10 @@ export class BasicContextSelector extends Object implements ContextSelector {
     getContext(fqcn: string, loader: ClassLoader, currentContext: boolean, configLocation: URI): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;
-    getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
-    getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;
     getLoggerContexts(): LoggerContext[];
     hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
-    hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
-    isClassLoaderDependent(): boolean;
     isClassLoaderDependent(): boolean;
     locateContext(name: string, configLocation: string): LoggerContext;
     removeContext(context: LoggerContext): void;
-    shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
     shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
 }

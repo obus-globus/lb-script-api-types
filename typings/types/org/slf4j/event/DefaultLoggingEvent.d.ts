@@ -24,7 +24,6 @@ export class DefaultLoggingEvent extends Object implements LoggingEvent {
     getArgumentArray(): Object[];
     getArguments(): Object[];
     getCallerBoundary(): string;
-    getCallerBoundary(): string;
     getKeyValuePairs(): KeyValuePair[];
     getLevel(): Level;
     getLoggerName(): string;

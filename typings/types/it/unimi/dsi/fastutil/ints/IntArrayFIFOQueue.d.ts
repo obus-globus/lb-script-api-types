@@ -19,14 +19,11 @@ export class IntArrayFIFOQueue extends Object implements IntPriorityQueue, Seria
     dequeueInt(): number;
     dequeueLastInt(): number;
     enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
-    enqueue(arg0: number): void;
     enqueueFirst(arg0: number): void;
     // private expand(): void;
     first(): number;
     firstInt(): number;
     last(): number;
-    lastInt(): number;
     lastInt(): number;
     // private readObject(arg0: ObjectInputStream): void;
     // private reduce(): void;

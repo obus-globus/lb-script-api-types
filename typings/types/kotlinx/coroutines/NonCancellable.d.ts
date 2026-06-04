@@ -20,7 +20,6 @@ export class NonCancellable extends AbstractCoroutineContextElement implements J
     readonly parent: Job | null;
     attachChild(child: ChildJob): ChildHandle;
     cancel(): void;
-    cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
     getCancellationException(): CancellationException;

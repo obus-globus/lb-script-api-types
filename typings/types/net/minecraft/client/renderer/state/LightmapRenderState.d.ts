@@ -17,7 +17,6 @@ export class LightmapRenderState extends Object implements FabricRenderState {
     skyFactor: number;
     skyLightColor: Vector3fc;
     clearExtraData(): void;
-    clearExtraData(): void;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;
     getDataOrDefault<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): T;

@@ -13,7 +13,6 @@ export class TestWorldBuilderImpl extends Object implements TestWorldBuilder {
     adjustSettings(arg0: (param0: WorldCreationUiState) => void): TestWorldBuilder;
     create(): TestSingleplayerContext;
     createServer(): TestDedicatedServerContext;
-    createServer(): TestDedicatedServerContext;
     createServer(arg0: Properties): TestDedicatedServerContext;
     // private navigateCreateWorldScreen(): Path[];
     setUseConsistentSettings(arg0: boolean): TestWorldBuilder;

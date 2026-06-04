@@ -44,6 +44,5 @@ export class RenderPipeline extends Object implements FabricRenderPipeline, Fabr
     isCull(): boolean;
     toString(): string;
     usePipelineDrawModeForGui(): boolean;
-    usePipelineDrawModeForGui(): boolean;
     wantsDepthTexture(): boolean;
 }

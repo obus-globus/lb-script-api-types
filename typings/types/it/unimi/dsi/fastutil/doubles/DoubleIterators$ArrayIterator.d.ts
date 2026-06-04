@@ -10,10 +10,7 @@ export class DoubleIterators$ArrayIterator extends Object implements DoubleListI
     // private length: number;
     // private offset: number;
     add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -24,7 +21,6 @@ export class DoubleIterators$ArrayIterator extends Object implements DoubleListI
     previousDouble(): number;
     previousIndex(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
     skip(arg0: number): number;
 }

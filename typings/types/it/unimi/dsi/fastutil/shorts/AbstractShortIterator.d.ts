@@ -6,8 +6,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractShortIterator extends Object implements ShortIterator {
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     skip(arg0: number): number;
 }

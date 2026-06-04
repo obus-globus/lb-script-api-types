@@ -9,7 +9,6 @@ export class CharRBTreeSet$SetIterator extends Object implements CharListIterato
     // private next: CharRBTreeSet$Entry;
     // private prev: CharRBTreeSet$Entry;
     add(arg0: string): void;
-    add(arg0: string): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next(): string;
@@ -21,8 +20,6 @@ export class CharRBTreeSet$SetIterator extends Object implements CharListIterato
     previousEntry(): CharRBTreeSet$Entry;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
     updateNext(): void;
     updatePrevious(): void;

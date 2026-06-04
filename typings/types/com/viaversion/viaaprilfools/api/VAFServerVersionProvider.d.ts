@@ -6,7 +6,6 @@ export class VAFServerVersionProvider extends Object implements VersionProvider 
     constructor(arg0: (param0: UserConnection) => com.viaversion.viaversion.api.protocol.version.ProtocolVersion)
     // private delegate: (param0: UserConnection) => com.viaversion.viaversion.api.protocol.version.ProtocolVersion;
     getClientProtocol(arg0: UserConnection): ProtocolVersion;
-    getClientProtocol(arg0: UserConnection): ProtocolVersion;
     getClosestServerProtocol(arg0: UserConnection): ProtocolVersion;
     getServerProtocol(arg0: UserConnection): ProtocolVersion;
 }

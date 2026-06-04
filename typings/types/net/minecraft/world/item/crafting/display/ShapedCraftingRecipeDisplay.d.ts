@@ -25,7 +25,6 @@ export class ShapedCraftingRecipeDisplay extends Record implements RecipeDisplay
     height(): number;
     ingredients(): SlotDisplay[];
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     result(): SlotDisplay;
     toString(): string;
     type(): RecipeDisplay$Type<ShapedCraftingRecipeDisplay>;

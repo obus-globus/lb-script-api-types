@@ -14,7 +14,6 @@ export class ClientActivePlayersTooltip extends Object implements ClientTooltipC
     constructor(activePlayersTooltip: ClientActivePlayersTooltip$ActivePlayersTooltip)
     // private activePlayers: PlayerSkinRenderCache$RenderInfo[];
     extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;
-    extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;
     extractText(graphics: GuiGraphicsExtractor, font: Font, x: number, y: number): void;
     getHeight(font: Font): number;
     getWidth(font: Font): number;

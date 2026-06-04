@@ -13,6 +13,5 @@ export class Double2LongLinkedOpenHashMap$EntryIterator extends Double2LongLinke
     next(): Double2LongLinkedOpenHashMap$MapEntry;
     previous(): Double2LongLinkedOpenHashMap$MapEntry;
     remove(): void;
-    remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;
 }

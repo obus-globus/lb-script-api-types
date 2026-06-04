@@ -23,11 +23,9 @@ export abstract class AbstractService extends Object implements Service {
     awaitRunning(): void;
     awaitRunning(timeout: Duration): void;
     awaitRunning(timeout: number, unit: TimeUnit): void;
-    awaitRunning(timeout: Duration): void;
     awaitTerminated(): void;
     awaitTerminated(timeout: Duration): void;
     awaitTerminated(timeout: number, unit: TimeUnit): void;
-    awaitTerminated(timeout: Duration): void;
     // private checkCurrentState(expected: Service$State): void;
     // private dispatchListenerEvents(): void;
     doCancelStart(): void;

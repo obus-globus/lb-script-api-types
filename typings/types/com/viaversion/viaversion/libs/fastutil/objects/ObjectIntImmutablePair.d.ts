@@ -16,15 +16,12 @@ export class ObjectIntImmutablePair<K extends Object | number | string | boolean
     left(arg0: K): Pair<K, number>;
     right(): number;
     right(arg0: number): ObjectIntPair<K>;
-    right(arg0: number): ObjectIntPair<K>;
     rightInt(): number;
     second(): number;
-    second(arg0: number): ObjectIntPair<K>;
     second(arg0: number): ObjectIntPair<K>;
     secondInt(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectIntPair<K>;
     value(arg0: number): ObjectIntPair<K>;
     valueInt(): number;
 }

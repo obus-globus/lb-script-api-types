@@ -26,9 +26,7 @@ export class SimpleMapCodec<K extends Object | number | string | boolean, V exte
     // private keyCodec: Codec<K>;
     // private keys: Keyable;
     decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
-    decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
     elementCodec(): Codec<V>;
-    encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

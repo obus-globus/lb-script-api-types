@@ -62,10 +62,8 @@ export interface Object2ShortFunction<K extends Object | number | string | boole
     get(arg0: Object): number;
     getOrDefault<V extends Object | number | string | boolean>(arg0: Object, arg1: V): V;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     getShort(arg0: Object): number;
     put<V extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): number;

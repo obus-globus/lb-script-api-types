@@ -20,7 +20,6 @@ export class CuredZombieVillagerTrigger$TriggerInstance extends Record implement
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
-    validate(validator: ValidationContextSource): void;
     villager(): Optional<ContextAwarePredicate>;
     zombie(): Optional<ContextAwarePredicate>;
 }

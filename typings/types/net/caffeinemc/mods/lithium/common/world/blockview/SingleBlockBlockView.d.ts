@@ -46,7 +46,6 @@ export class SingleBlockBlockView extends Record implements BlockGetter, Collisi
     // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
     getBlockEntity(arg0: BlockPos): BlockEntity;
     getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
     getBlockState(arg0: BlockPos): BlockState;
@@ -77,10 +76,7 @@ export class SingleBlockBlockView extends Record implements BlockGetter, Collisi
     noCollision(arg0: Entity, arg1: AABB): boolean;
     noCollision(entity: Entity, aabb: AABB, alwaysCollideWithFluids: boolean): boolean;
     noCollision(aabb: AABB): boolean;
-    noCollision(source: Entity): boolean;
     noCollision(entity: Entity, aabb: AABB): boolean;
-    noCollision(entity: Entity, aabb: AABB, alwaysCollideWithFluids: boolean): boolean;
-    noCollision(aabb: AABB): boolean;
     noEntityCollision(entity: Entity, aabb: AABB): boolean;
     state(): BlockState;
     toString(): string;

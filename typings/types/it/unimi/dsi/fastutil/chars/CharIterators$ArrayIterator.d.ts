@@ -10,9 +10,7 @@ export class CharIterators$ArrayIterator extends Object implements CharListItera
     // private length: number;
     // private offset: number;
     add(arg0: string): void;
-    add(arg0: string): void;
     back(arg0: number): number;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -24,7 +22,6 @@ export class CharIterators$ArrayIterator extends Object implements CharListItera
     previousChar(): string;
     previousIndex(): number;
     remove(): void;
-    set(arg0: string): void;
     set(arg0: string): void;
     skip(arg0: number): number;
 }

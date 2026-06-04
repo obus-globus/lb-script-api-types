@@ -32,7 +32,6 @@ export class BannerBlockEntity extends BlockEntity implements Nameable {
     collectImplicitComponents(components: DataComponentMap$Builder): void;
     getBaseColor(): DyeColor;
     getCustomName(): Component;
-    getCustomName(): Component;
     getDisplayName(): Component;
     getItem(): ItemStack;
     getName(): Component;

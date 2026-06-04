@@ -6,7 +6,6 @@ export class Byte2BooleanOpenHashMap$ValueIterator extends Byte2BooleanOpenHashM
     constructor(null_: Byte2BooleanOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
     nextBoolean(): boolean;
     skip(arg0: number): number;

@@ -55,7 +55,6 @@ export class LevelSlice extends Object implements FabricBlockGetter, BlockAndTin
     getBlockEntity(arg0: BlockPos): BlockEntity;
     getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityRenderData(arg0: BlockPos): Object;
-    getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockState(arg0: number, arg1: number, arg2: number): BlockState;
     getBlockState(arg0: BlockPos): BlockState;
     getBlockTint(arg0: BlockPos, arg1: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
@@ -67,7 +66,6 @@ export class LevelSlice extends Object implements FabricBlockGetter, BlockAndTin
     getPlatformModelData(arg0: BlockPos): SodiumModelData;
     getRawBrightness(arg0: BlockPos, arg1: number): number;
     hasBiomeBlend(): boolean;
-    hasBiomes(): boolean;
     hasBiomes(): boolean;
     reset(): void;
     // private unpackBlockData(arg0: BlockState[], arg1: ChunkRenderContext, arg2: ClonedChunkSection): void;

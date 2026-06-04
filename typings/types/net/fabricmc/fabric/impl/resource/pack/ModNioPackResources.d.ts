@@ -42,5 +42,4 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     location(): PackLocationInfo;
     // private openFile(arg0: string): () => InputStream;
     packId(): string;
-    packId(): string;
 }

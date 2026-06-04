@@ -14,9 +14,6 @@ export class FilteredClassTransformer extends Object implements ClassTransformer
     transformFunctionParameterType(type: KType, parameter: KParameter, function_: KFunction<Object>, klass: KClass<Object>): KType;
     transformFunctionReturnType(type: KType, function_: KFunction<Object>, klass: KClass<Object>): KType;
     transformPropertyList(properties: KProperty<Object>[], klass: KClass<Object>): KProperty<Object>[];
-    transformPropertyList(properties: KProperty<Object>[], klass: KClass<Object>): KProperty<Object>[];
     transformPropertyName(propertyName: string, property: KProperty<Object>, klass: KClass<Object>): string;
-    transformPropertyName(propertyName: string, property: KProperty<Object>, klass: KClass<Object>): string;
-    transformPropertyType(type: KType, property: KProperty<Object>, klass: KClass<Object>): KType;
     transformPropertyType(type: KType, property: KProperty<Object>, klass: KClass<Object>): KType;
 }

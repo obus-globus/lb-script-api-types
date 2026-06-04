@@ -13,5 +13,4 @@ export class LayeredRegistryAccess<T extends Object | number | string | boolean>
     getLayer(layer: T): RegistryAccess$Frozen;
     // private getLayerIndexOrThrow(layer: T): number;
     replaceFrom(fromLayer: T, layers: RegistryAccess$Frozen[]): LayeredRegistryAccess<T>;
-    replaceFrom(fromLayer: T, layers: RegistryAccess$Frozen[]): LayeredRegistryAccess<T>;
 }

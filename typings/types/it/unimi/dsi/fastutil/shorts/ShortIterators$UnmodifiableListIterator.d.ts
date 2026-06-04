@@ -7,9 +7,6 @@ export class ShortIterators$UnmodifiableListIterator extends Object implements S
     constructor(arg0: ShortListIterator)
     // private i: ShortListIterator;
     add(arg0: number): void;
-    add(arg0: number): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -20,6 +17,5 @@ export class ShortIterators$UnmodifiableListIterator extends Object implements S
     previousIndex(): number;
     previousShort(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -52,7 +52,6 @@ export class ClientHandshakePacketListenerImpl extends Object implements PacketC
     fillListenerSpecificCrashDetails(report: CrashReport, connectionDetails: CrashReportCategory): void;
     getAddon(): ClientLoginNetworkAddon;
     getPacketContext(): PacketContext;
-    getPacketContext(): PacketContext;
     handleCompression(packet: ClientboundLoginCompressionPacket): void;
     handleCustomQuery(packet: ClientboundCustomQueryPacket): void;
     handleDisconnect(packet: ClientboundLoginDisconnectPacket): void;

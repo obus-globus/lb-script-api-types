@@ -25,5 +25,4 @@ export class CyclicalTracker extends Object implements Tracker {
     // private totalSize: number;
     getNewValue(arg0: number): number;
     getNewValue(arg0: string, arg1: number): number;
-    getNewValue(arg0: string, arg1: number): number;
 }

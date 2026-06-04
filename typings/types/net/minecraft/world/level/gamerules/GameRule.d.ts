@@ -39,7 +39,6 @@ export class GameRule<T extends Object | number | string | boolean> extends Obje
     fabric_getSupportedEnumValues(): (Object | null)[];
     fabric_getType(): FabricGameRuleType;
     fabric_setSupportedEnumValues(arg0: E[]): void;
-    fabric_setSupportedEnumValues(arg0: E[]): void;
     fabric_setSupportedEnumValues(arg0: Enum<Object>[]): void;
     fabric_setType(arg0: FabricGameRuleType): void;
     gameRuleType(): GameRuleType;

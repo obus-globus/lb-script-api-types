@@ -13,7 +13,6 @@ export class Sum extends Record implements NumberProvider {
     equals(o: Object | null): boolean;
     getFloat(context: LootContext): number;
     getInt(context: LootContext): number;
-    getInt(context: LootContext): number;
     hashCode(): number;
     summands(): NumberProvider[];
     toString(): string;

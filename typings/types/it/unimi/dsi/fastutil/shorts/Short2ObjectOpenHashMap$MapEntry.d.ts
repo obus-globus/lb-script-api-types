@@ -19,16 +19,13 @@ export class Short2ObjectOpenHashMap$MapEntry extends Object implements Short2Ob
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortObjectPair<V>;
-    first(arg0: number): ShortObjectPair<V>;
     firstShort(): number;
     getShortKey(): number;
     hashCode(): number;
     key(): number;
     key(arg0: number): ShortObjectPair<V>;
-    key(arg0: number): ShortObjectPair<V>;
     keyShort(): number;
     left(): number;
-    left(arg0: number): ShortObjectPair<V>;
     left(arg0: number): ShortObjectPair<V>;
     leftShort(): number;
     right<V extends Object | number | string | boolean>(): V;

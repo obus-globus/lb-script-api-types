@@ -59,15 +59,8 @@ export class Reference2LongFunctions$PrimitiveFunction<K extends Object | number
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;
     get(arg0: Object): number;
-    get(arg0: Object): number;
     getLong(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
-    put(arg0: K, arg1: number): number;
-    put(arg0: K, arg1: number): number;
-    put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     remove(arg0: Object): number;
     removeLong(arg0: Object): number;

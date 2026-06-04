@@ -8,11 +8,7 @@ export class CharBigListIterators$SingletonBigListIterator extends Object implem
     // private curr: number;
     // private element: string;
     add(arg0: string): void;
-    add(arg0: string): void;
     back(arg0: number): number;
-    back(arg0: number): number;
-    back(arg0: number): number;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -22,9 +18,5 @@ export class CharBigListIterators$SingletonBigListIterator extends Object implem
     previousChar(): string;
     previousIndex(): number;
     set(arg0: string): void;
-    set(arg0: string): void;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

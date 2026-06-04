@@ -11,15 +11,9 @@ export class ShortIterators$IteratorConcatenator extends Object implements Short
     // private offset: number;
     // private advance(): void;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextShort(): number;
     remove(): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

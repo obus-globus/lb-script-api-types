@@ -56,7 +56,6 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     forkIfDefault(): DataConverter<Tag>;
     mergeList<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeList(arg0: Tag, arg1: Tag[]): Result<Tag>;
-    mergeList(arg0: Tag, arg1: Tag[]): Result<Tag>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T, arg2: T): Result<T>;
     mergeMap<T extends Object | number | string | boolean>(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: Tag, arg1: Tag, arg2: Tag): Result<Tag>;

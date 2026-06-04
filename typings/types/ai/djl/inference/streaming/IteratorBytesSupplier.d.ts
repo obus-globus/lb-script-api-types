@@ -11,7 +11,6 @@ export class IteratorBytesSupplier extends Object implements BytesSupplier, Iter
     // private sources: Iterator<BytesSupplier>;
     forEachRemaining(arg0: (param0: T) => void): void;
     getAsBytes(): number[];
-    getAsBytes(): number[];
     getAsObject(): Object;
     getAsString(): string;
     hasNext(): boolean;

@@ -19,7 +19,6 @@ export class ClientboundLoginFinishedPacket extends Record implements Packet<Cli
     hashCode(): number;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    isTerminal(): boolean;
     toString(): string;
     type(): PacketType<ClientboundLoginFinishedPacket>;
 }

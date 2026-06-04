@@ -8,7 +8,6 @@ export class LongArrayBuffer$LongArrayBufferIterator extends Object implements P
     // private i: number;
     // private size: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextLong(): number;

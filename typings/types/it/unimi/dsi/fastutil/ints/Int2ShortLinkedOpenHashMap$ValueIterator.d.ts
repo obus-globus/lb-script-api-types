@@ -5,12 +5,10 @@ export class Int2ShortLinkedOpenHashMap$ValueIterator extends Int2ShortLinkedOpe
     constructor(null_: Int2ShortLinkedOpenHashMap$ValueIterator)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextShort(): number;
     previous(): number;
     previousShort(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

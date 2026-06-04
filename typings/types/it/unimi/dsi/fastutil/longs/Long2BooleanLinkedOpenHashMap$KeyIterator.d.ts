@@ -6,12 +6,10 @@ export class Long2BooleanLinkedOpenHashMap$KeyIterator extends Long2BooleanLinke
     constructor(null_: Long2BooleanLinkedOpenHashMap$KeyIterator, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
-    add(arg0: number): void;
     next(): number;
     nextLong(): number;
     previous(): number;
     previousLong(): number;
     remove(): void;
-    set(arg0: number): void;
     set(arg0: number): void;
 }

@@ -19,6 +19,5 @@ export class AllOf$LocationBasedEffects extends Record implements EnchantmentLoc
     hashCode(): number;
     onChangedBlock(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, entity: Entity, position: Vec3, becameActive: boolean): void;
     onDeactivated(item: EnchantedItemInUse, entity: Entity, position: Vec3, level: number): void;
-    onDeactivated(item: EnchantedItemInUse, entity: Entity, position: Vec3, level: number): void;
     toString(): string;
 }

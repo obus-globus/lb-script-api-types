@@ -105,7 +105,6 @@ export class DriedGhastBlock extends HorizontalDirectionalBlock implements Simpl
     // private isReadyToSpawn(state: BlockState): boolean;
     pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
-    placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
     randomTick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     setPlacedBy(level: Level, pos: BlockPos, state: BlockState, by: LivingEntity, itemStack: ItemStack): void;
     // private spawnGhastling(level: ServerLevel, position: BlockPos, state: BlockState): void;

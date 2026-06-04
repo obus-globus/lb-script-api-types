@@ -14,9 +14,7 @@ export class BasicTranslator<I extends Object | number | string | boolean, O ext
     batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
     batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
     getBatchifier(): Batchifier;
-    getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
-    prepare(arg0: TranslatorContext): void;
     prepare(arg0: TranslatorContext): void;
     processInput(arg0: TranslatorContext, arg1: I): (Object | null)[];
     processOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O;

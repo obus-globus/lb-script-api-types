@@ -10,7 +10,5 @@ export class CleanerJava25$CleanableDirectBufferImpl extends Object implements C
     buffer(): ByteBuffer;
     clean(): void;
     hasMemoryAddress(): boolean;
-    hasMemoryAddress(): boolean;
-    memoryAddress(): number;
     memoryAddress(): number;
 }

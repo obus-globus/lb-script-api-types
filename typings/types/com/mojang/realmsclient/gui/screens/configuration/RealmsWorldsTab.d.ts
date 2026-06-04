@@ -19,7 +19,6 @@ export class RealmsWorldsTab extends GridLayoutTab implements RealmsConfiguratio
     // private isMinigame(): boolean;
     onDeselected(serverData: RealmsServer): void;
     onSelected(serverData: RealmsServer): void;
-    onSelected(serverData: RealmsServer): void;
     // private resetButtonPressed(): void;
     // private switchToEmptySlot(selectedSlot: number, serverData: RealmsServer): void;
     // private switchToFullSlot(selectedSlot: number, serverData: RealmsServer): void;

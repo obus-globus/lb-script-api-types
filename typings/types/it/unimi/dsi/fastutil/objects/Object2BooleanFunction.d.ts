@@ -66,11 +66,9 @@ export interface Object2BooleanFunction<K extends Object | number | string | boo
     getBoolean(arg0: Object): boolean;
     getOrDefault<V extends Object | number | string | boolean>(arg0: Object, arg1: V): V;
     getOrDefault(arg0: Object, arg1: boolean): boolean;
-    getOrDefault(arg0: Object, arg1: boolean): boolean;
     negate(): (param0: T) => kotlin.Boolean;
     or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     put<V extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: K, arg1: boolean): boolean;
     put(arg0: K, arg1: boolean): boolean;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): boolean;

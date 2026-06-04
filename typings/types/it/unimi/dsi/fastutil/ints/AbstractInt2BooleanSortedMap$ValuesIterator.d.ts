@@ -8,7 +8,6 @@ export class AbstractInt2BooleanSortedMap$ValuesIterator extends Object implemen
     constructor(arg0: ObjectBidirectionalIterator<Int2BooleanMap$Entry>)
     // private i: ObjectBidirectionalIterator<Int2BooleanMap$Entry>;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     next(): boolean;
     nextBoolean(): boolean;

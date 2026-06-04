@@ -20,5 +20,4 @@ export abstract class LootPoolEntryContainer$Builder<T extends LootPoolEntryCont
     unwrap(): T;
     when(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
     when(condition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
-    when(collection: E[], conditionProvider: (param0: E) => () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): T;
 }

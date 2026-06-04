@@ -18,7 +18,6 @@ export abstract class AbstractConsecutiveExecutor<T extends Runnable> extends Ob
     // private status: AtomicReference<AbstractConsecutiveExecutor$Status>;
     // private canBeScheduled(): boolean;
     close(): void;
-    close(): void;
     hasWork(): boolean;
     // private isClosed(): boolean;
     // private isRunning(): boolean;

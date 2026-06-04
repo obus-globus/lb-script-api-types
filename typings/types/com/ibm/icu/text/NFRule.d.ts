@@ -21,7 +21,6 @@ export class NFRule extends Object {
     // private sub2: NFSubstitution;
     // private allIgnorable(arg0: string): boolean;
     doFormat(arg0: number, arg1: StringBuilder, arg2: number, arg3: number): void;
-    doFormat(arg0: number, arg1: StringBuilder, arg2: number, arg3: number): void;
     doParse(arg0: string, arg1: ParsePosition, arg2: boolean, arg3: number, arg4: number, arg5: number): Number;
     equals(arg0: Object | null): boolean;
     // private expectedExponent(): number;

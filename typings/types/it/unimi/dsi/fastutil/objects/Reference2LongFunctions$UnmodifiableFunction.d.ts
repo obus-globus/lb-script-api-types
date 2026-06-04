@@ -13,9 +13,7 @@ export class Reference2LongFunctions$UnmodifiableFunction<K extends Object | num
     get(arg0: Object): number;
     getLong(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     hashCode(): number;
-    put(arg0: K, arg1: number): number;
     put(arg0: K, arg1: number): number;
     remove(arg0: Object): number;
     removeLong(arg0: Object): number;

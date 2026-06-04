@@ -12,7 +12,6 @@ export class SwizzleArgument extends Object implements ArgumentType<Direction$Ax
     static swizzle(): SwizzleArgument;
     constructor()
     getExamples(): E[];
-    getExamples(): E[];
     listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): Direction$Axis[];

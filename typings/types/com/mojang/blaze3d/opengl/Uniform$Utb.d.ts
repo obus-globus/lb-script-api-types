@@ -8,7 +8,6 @@ export class Uniform$Utb extends Record implements Uniform {
     // private samplerIndex: number;
     // private texture: number;
     close(): void;
-    close(): void;
     equals(o: Object | null): boolean;
     format(): TextureFormat;
     hashCode(): number;

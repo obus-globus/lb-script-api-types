@@ -9,6 +9,5 @@ export class UnihexProvider extends Object implements GlyphProvider {
     // private glyphs: CodepointMap<UnihexProvider$Glyph>;
     close(): void;
     getGlyph(codepoint: number): UnbakedGlyph;
-    getGlyph(codepoint: number): UnbakedGlyph;
     getSupportedGlyphs(): (Object | null)[];
 }

@@ -15,15 +15,12 @@ export class CoreLocations$DoubleLocationDecorator extends CoreLocations$Primiti
     get(store: DynamicObject, shape: Shape): Object;
     get(store: DynamicObject, guard: boolean): Object;
     getDouble(store: DynamicObject, shape: Shape): number;
-    getDouble(store: DynamicObject, shape: Shape): number;
     getDouble(store: DynamicObject, guard: boolean): number;
-    getType(): Class<number>;
     getType(): Class<number>;
     isImplicitCastIntToDouble(): boolean;
     set(store: DynamicObject, value: Object, shape: Shape): void;
     set(store: DynamicObject, value: Object, oldShape: Shape, newShape: Shape): void;
     set(store: DynamicObject, value: Object, guard: boolean, init: boolean): void;
-    setDouble(store: DynamicObject, value: number, shape: Shape): void;
     setDouble(store: DynamicObject, value: number, shape: Shape): void;
     setDouble(store: DynamicObject, value: number, guard: boolean, init: boolean): void;
 }

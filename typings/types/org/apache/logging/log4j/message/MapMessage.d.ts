@@ -49,20 +49,8 @@ export class MapMessage<M extends MapMessage<M, V>, V extends Object | number | 
     validate(key: string, value: boolean): void;
     validate(key: string, value: number): void;
     validate(key: string, value: string): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: number): void;
-    validate(key: string, value: string): void;
     with(candidateKey: string, value: Object): M;
     with(candidateKey: string, value: boolean): M;
-    with(candidateKey: string, value: number): M;
-    with(candidateKey: string, value: string): M;
-    with(candidateKey: string, value: number): M;
-    with(candidateKey: string, value: number): M;
-    with(candidateKey: string, value: number): M;
-    with(candidateKey: string, value: number): M;
     with(candidateKey: string, value: number): M;
     with(candidateKey: string, value: string): M;
 }

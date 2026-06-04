@@ -23,7 +23,6 @@ export class Byte2ShortRBTreeMap$Entry extends AbstractByte2ShortMap$BasicEntry 
     right(): Byte2ShortRBTreeMap$Entry;
     right(arg0: Byte2ShortRBTreeMap$Entry): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Byte2ShortRBTreeMap$Entry): void;
     succ(arg0: boolean): void;

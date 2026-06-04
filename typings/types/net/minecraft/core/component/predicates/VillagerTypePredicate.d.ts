@@ -21,7 +21,6 @@ export class VillagerTypePredicate extends Record implements SingleComponentItem
     hashCode(): number;
     matches(components: DataComponentGetter): boolean;
     matches(villagerType: Holder<VillagerType>): boolean;
-    matches(components: DataComponentGetter): boolean;
     toString(): string;
     villagerTypes(): Holder<T>[];
 }

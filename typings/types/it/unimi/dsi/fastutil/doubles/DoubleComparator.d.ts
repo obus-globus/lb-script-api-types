@@ -6,7 +6,6 @@ import type { ToLongFunction } from '../../../../../java/util/function/ToLongFun
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface DoubleComparator extends Comparator<number>, Object{
     compare(arg0: number, arg1: number): number;
-    compare(arg0: number, arg1: number): number;
     reversed(): (param0: number, param1: number) => kotlin.Int;
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: number, param1: number) => kotlin.Int): (param0: number, param1: number) => kotlin.Int;

@@ -15,8 +15,6 @@ export abstract class AbstractTypedFunction extends Object implements TypedFunct
     getReturnType(): Type;
     hashCode(): number;
     isPure(): boolean;
-    isPure(): boolean;
-    priority(): number;
     priority(): number;
     toString(): string;
 }

@@ -89,7 +89,6 @@ export class LeafLitterBlock extends VegetationBlock implements SegmentableBlock
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     canBeReplaced(state: BlockState, fluid: Fluid): boolean;
-    canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;
     codec(): MapCodec<LeafLitterBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
@@ -98,7 +97,6 @@ export class LeafLitterBlock extends VegetationBlock implements SegmentableBlock
     getShapeCalculator(facing: EnumProperty<Direction>, amount: IntegerProperty): (param0: BlockState) => VoxelShape;
     getShapeHeight(): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
-    getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     getStateForPlacement(context: BlockPlaceContext, block: Block, segment: IntegerProperty, facing: EnumProperty<Direction>): BlockState;
     // private makeShapes(): (param0: BlockState) => VoxelShape;
     mirror(state: BlockState, mirror: Mirror): BlockState;

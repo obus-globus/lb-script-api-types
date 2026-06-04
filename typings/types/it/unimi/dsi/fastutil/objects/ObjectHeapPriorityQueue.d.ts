@@ -19,7 +19,6 @@ export class ObjectHeapPriorityQueue<K extends Object | number | string | boolea
     // private heap: K[];
     // private size: number;
     changed(): void;
-    changed(): void;
     clear(): void;
     comparator(): (param0: K) => kotlin.Boolean;
     dequeue(): K;

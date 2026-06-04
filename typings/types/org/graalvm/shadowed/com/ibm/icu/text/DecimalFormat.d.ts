@@ -99,8 +99,6 @@ export class DecimalFormat extends NumberFormat {
     format(number: Object, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;
     format(number: number): string;
     format(number: number, result: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
-    format(number: number): string;
-    format(number: number, result: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
     format(number: BigDecimal_2): string;
     format(number: BigDecimal_2, result: StringBuffer, fieldPosition: FieldPosition): StringBuffer;
     format(currAmt: CurrencyAmount): string;

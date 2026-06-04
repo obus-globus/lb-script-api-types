@@ -21,11 +21,8 @@ export class ItemModelGenerator extends Object implements UnbakedModel {
     constructor()
     ambientOcclusion(): boolean;
     geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
-    geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
-    guiLight(): UnbakedModel$GuiLight;
     guiLight(): UnbakedModel$GuiLight;
     parent(): Identifier;
-    textureSlots(): TextureSlots$Data;
     textureSlots(): TextureSlots$Data;
     transforms(): ItemTransforms;
 }

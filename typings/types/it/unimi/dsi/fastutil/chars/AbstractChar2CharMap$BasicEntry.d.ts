@@ -11,7 +11,5 @@ export class AbstractChar2CharMap$BasicEntry extends Object implements Char2Char
     getCharValue(): string;
     hashCode(): number;
     setValue(arg0: string): string;
-    setValue(arg0: string): string;
-    setValue(arg0: string): string;
     toString(): string;
 }

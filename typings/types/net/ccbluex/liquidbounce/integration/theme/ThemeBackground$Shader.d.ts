@@ -32,6 +32,5 @@ export class ThemeBackground$Shader extends Object implements ThemeBackground {
     close(): void;
     draw(context: GuiGraphicsExtractor, width: number, height: number, mouseX: number, mouseY: number, delta: number): boolean;
     onResourceReload(): void;
-    onResourceReload(): void;
     // private resizeIfNeeded(framebufferWidth: number, framebufferHeight: number): void;
 }

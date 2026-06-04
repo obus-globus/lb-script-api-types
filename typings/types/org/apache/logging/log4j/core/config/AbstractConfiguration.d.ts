@@ -84,7 +84,6 @@ export abstract class AbstractConfiguration extends AbstractFilterable implement
     getComponent<T extends Object | number | string | boolean>(componentName: string): T;
     getConfigurationSource(): ConfigurationSource;
     getConfigurationStrSubstitutor(): StrSubstitutor;
-    getConfigurationStrSubstitutor(): StrSubstitutor;
     getCustomLevels(): CustomLevelConfig[];
     getDefaultStatus(): Level;
     getLogger(loggerName: string): LoggerConfig;

@@ -10,7 +10,6 @@ export class TextIO$LongReaderWrapper extends Object implements LongIterator {
     // private s: string;
     // private toAdvance: boolean;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     nextLong(): number;

@@ -16,17 +16,12 @@ export class ObjectByteMutablePair<K extends Object | number | string | boolean>
     right(): number;
     right(arg0: number): ObjectBytePair<K>;
     right(arg0: number): ObjectByteMutablePair<K>;
-    right(): number;
-    right(arg0: number): ObjectBytePair<K>;
-    right(arg0: number): ObjectBytePair<K>;
     rightByte(): number;
     second(): number;
-    second(arg0: number): ObjectBytePair<K>;
     second(arg0: number): ObjectBytePair<K>;
     secondByte(): number;
     toString(): string;
     value(): number;
-    value(arg0: number): ObjectBytePair<K>;
     value(arg0: number): ObjectBytePair<K>;
     valueByte(): number;
 }

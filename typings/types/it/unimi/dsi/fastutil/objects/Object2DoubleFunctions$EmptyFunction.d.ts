@@ -13,7 +13,6 @@ export class Object2DoubleFunctions$EmptyFunction<K extends Object | number | st
     equals(arg0: Object | null): boolean;
     getDouble(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     hashCode(): number;
     // private readResolve(): Object;
     size(): number;

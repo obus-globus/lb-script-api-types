@@ -28,7 +28,6 @@ export class FurnaceRecipeDisplay extends Record implements RecipeDisplay {
     hashCode(): number;
     ingredient(): SlotDisplay;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     result(): SlotDisplay;
     toString(): string;
     type(): RecipeDisplay$Type<FurnaceRecipeDisplay>;

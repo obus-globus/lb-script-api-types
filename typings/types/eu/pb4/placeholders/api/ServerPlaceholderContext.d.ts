@@ -8,8 +8,6 @@ import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerL
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export interface ServerPlaceholderContext extends PlaceholderContext, Object{
     addToContext(arg0: ParserContext): void;
-    addToContext(arg0: ParserContext): void;
-    asParserContext(): ParserContext;
     asParserContext(): ParserContext;
     commandSourceStack(): CommandSourceStack;
     hasBlockPosition(): boolean;

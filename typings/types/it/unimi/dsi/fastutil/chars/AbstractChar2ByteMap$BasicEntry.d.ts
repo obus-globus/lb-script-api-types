@@ -11,7 +11,5 @@ export class AbstractChar2ByteMap$BasicEntry extends Object implements Char2Byte
     getCharKey(): string;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }

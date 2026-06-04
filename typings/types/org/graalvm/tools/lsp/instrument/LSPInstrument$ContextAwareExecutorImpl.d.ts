@@ -18,7 +18,6 @@ export class LSPInstrument$ContextAwareExecutorImpl extends Object implements Co
     executeWithNestedContext(taskWithResult: () => T): Future<T>;
     executeWithNestedContext(taskWithResult: () => T, cached: boolean): Future<T>;
     executeWithNestedContext(taskWithResult: () => T, timeoutMillis: number, onTimeoutTask: () => T): Future<T>;
-    executeWithNestedContext(taskWithResult: () => T): Future<T>;
     resetContextCache(): void;
     shutdown(): void;
     // private wrapWithNewContext(taskWithResult: () => T, cached: boolean): () => T;

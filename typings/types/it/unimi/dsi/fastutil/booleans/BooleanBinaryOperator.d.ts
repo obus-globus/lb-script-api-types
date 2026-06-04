@@ -2,5 +2,4 @@ import type { BinaryOperator } from '../../../../../java/util/function/BinaryOpe
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface BooleanBinaryOperator extends BinaryOperator<boolean>, Object{
     apply(arg0: boolean, arg1: boolean): boolean;
-    apply(arg0: boolean, arg1: boolean): boolean;
 }

@@ -58,7 +58,6 @@ export interface Float2CharFunction extends Function<number, string>, DoubleToIn
     composeReference(arg0: (param0: T) => kotlin.Float): (param0: T) => kotlin.Char;
     composeShort(arg0: (param0: number) => kotlin.Float): (param0: number) => kotlin.Char;
     containsKey(arg0: Object): boolean;
-    containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;
@@ -68,7 +67,6 @@ export interface Float2CharFunction extends Function<number, string>, DoubleToIn
     getOrDefault(arg0: Object, arg1: string): string;
     getOrDefault(arg0: number, arg1: string): string;
     put<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
-    put(arg0: number, arg1: string): string;
     put(arg0: number, arg1: string): string;
     remove<V extends Object | number | string | boolean>(arg0: Object): V;
     remove(arg0: Object): string;

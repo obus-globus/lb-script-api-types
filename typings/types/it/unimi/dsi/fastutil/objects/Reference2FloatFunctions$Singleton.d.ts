@@ -11,6 +11,5 @@ export class Reference2FloatFunctions$Singleton<K extends Object | number | stri
     containsKey(arg0: Object): boolean;
     getFloat(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;
-    getOrDefault(arg0: Object, arg1: number): number;
     size(): number;
 }

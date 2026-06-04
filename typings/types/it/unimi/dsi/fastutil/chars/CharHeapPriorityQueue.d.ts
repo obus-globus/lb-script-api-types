@@ -26,8 +26,6 @@ export class CharHeapPriorityQueue extends Object implements CharPriorityQueue, 
     dequeue(): string;
     dequeueChar(): string;
     enqueue(arg0: string): void;
-    enqueue(arg0: string): void;
-    enqueue(arg0: string): void;
     first(): string;
     firstChar(): string;
     last(): string;

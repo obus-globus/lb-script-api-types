@@ -3,10 +3,7 @@ import type { ByteBigListIterator } from '../../../../../it/unimi/dsi/fastutil/b
 export abstract class AbstractByteBigListIterator extends AbstractByteBidirectionalIterator implements ByteBigListIterator {
     constructor()
     add(arg0: number): void;
-    add(arg0: number): void;
     back(arg0: number): number;
     set(arg0: number): void;
-    set(arg0: number): void;
-    skip(arg0: number): number;
     skip(arg0: number): number;
 }

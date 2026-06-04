@@ -6,7 +6,6 @@ export abstract class AbstractStringIterator extends Object implements Primitive
     constructor()
     // private i: number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    forEachRemaining(arg0: (param0: number) => void): void;
     getIndex(): number;
     next(): number;
 }

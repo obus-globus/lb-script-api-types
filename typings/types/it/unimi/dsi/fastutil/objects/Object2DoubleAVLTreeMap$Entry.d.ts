@@ -25,7 +25,6 @@ export class Object2DoubleAVLTreeMap$Entry<K extends Object | number | string | 
     right(): Object2DoubleAVLTreeMap$Entry<K>;
     right(arg0: Object2DoubleAVLTreeMap$Entry<K>): void;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
     succ(): boolean;
     succ(arg0: Object2DoubleAVLTreeMap$Entry<K>): void;
     succ(arg0: boolean): void;

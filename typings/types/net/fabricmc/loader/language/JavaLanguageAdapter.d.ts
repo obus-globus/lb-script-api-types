@@ -7,5 +7,4 @@ export class JavaLanguageAdapter extends Object implements LanguageAdapter {
     constructor()
     createInstance(arg0: Class<Object>, arg1: LanguageAdapter$Options): Object;
     createInstance(arg0: string, arg1: LanguageAdapter$Options): Object;
-    createInstance(arg0: string, arg1: LanguageAdapter$Options): Object;
 }

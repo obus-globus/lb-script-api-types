@@ -10,7 +10,6 @@ export class SimpleLoggerContextFactory extends Object implements LoggerContextF
     getContext(fqcn: string, loader: ClassLoader, externalContext: Object, currentContext: boolean, configLocation: URI, name: string): LoggerContext;
     hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;
     isClassLoaderDependent(): boolean;
-    isClassLoaderDependent(): boolean;
     removeContext(removeContext: LoggerContext): void;
     shutdown(fqcn: string, loader: ClassLoader, currentContext: boolean, allContexts: boolean): void;
 }

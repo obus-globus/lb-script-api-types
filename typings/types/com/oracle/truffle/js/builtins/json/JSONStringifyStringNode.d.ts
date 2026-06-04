@@ -28,7 +28,6 @@ export abstract class JSONStringifyStringNode extends JavaScriptBaseNode {
     // private append(sb: TruffleStringBuilderUTF16, s: TruffleString): void;
     // private append(sb: TruffleStringBuilderUTF16, value: string): void;
     // private append(sb: TruffleStringBuilderUTF16, value: number): void;
-    // private append(sb: TruffleStringBuilderUTF16, value: number): void;
     // private appendBoolean(builder: TruffleStringBuilderUTF16, value: boolean): void;
     // private appendColon(sb: TruffleStringBuilderUTF16, data: JSONData): void;
     // private appendNumber(builder: TruffleStringBuilderUTF16, number: Object): void;

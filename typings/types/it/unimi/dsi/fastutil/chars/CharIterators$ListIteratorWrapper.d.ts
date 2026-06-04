@@ -8,10 +8,6 @@ export class CharIterators$ListIteratorWrapper extends Object implements CharLis
     constructor(arg0: ListIterator<string>)
     // private i: ListIterator<string>;
     add(arg0: string): void;
-    add(arg0: string): void;
-    add(arg0: string): void;
-    add(arg0: string): void;
-    forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
@@ -23,9 +19,5 @@ export class CharIterators$ListIteratorWrapper extends Object implements CharLis
     previousChar(): string;
     previousIndex(): number;
     remove(): void;
-    remove(): void;
-    set(arg0: string): void;
-    set(arg0: string): void;
-    set(arg0: string): void;
     set(arg0: string): void;
 }

@@ -11,7 +11,5 @@ export class AbstractReference2IntMap$BasicEntry<K extends Object | number | str
     getIntValue(): number;
     hashCode(): number;
     setValue(arg0: number): number;
-    setValue(arg0: number): number;
-    setValue(arg0: number): number;
     toString(): string;
 }
