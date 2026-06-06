@@ -17,13 +17,13 @@ export class RotationFindingKt extends Object {
      *
      * Will return `true` if the player is inside the {@link box}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:451}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:451}
      */
     static canSeeBox(eyes: Vec3, box: AABB, range: number, wallsRange: number, expectedTarget: BlockPos): boolean;
     /**
      * Find the best spot of the upper side of the block
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:93}
      */
     static canSeeUpperBlockSide(eyes: Vec3, pos: BlockPos, range: number, wallsRange: number): boolean;
     /**
@@ -36,7 +36,7 @@ export class RotationFindingKt extends Object {
      * Those rotations will be skipped, except if the current rotation equals one of them, then the list is simply ignored,
      * and the current list is returned.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L561 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:561}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L561 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:561}
      */
     static findClosestPointOnBlockInLineWithCrystal(eyes: Vec3, range: number, wallsRange: number, expectedTarget: BlockPos, notFacingAway: boolean, rotationsNotToMatch: Rotation[]): Pair<RotationWithVector, Direction>;
     static raytraceBlockRotation(eyes: Vec3, pos: BlockPos, state: BlockState, range: number, wallsRange: number): RotationWithVector;
@@ -47,25 +47,25 @@ export class RotationFindingKt extends Object {
      * Visible hits are constrained by {@link rangeSquared}; non-visible hits may still be accepted within
      * {@link wallsRangeSquared}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L267 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:267}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L267 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:267}
      */
     static raytraceBlockSideBoxes(side: Direction, boxes: (Object | null)[], offset: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, rotationPreference: (param0: Rotation) => kotlin.Boolean, visibilityPredicate: VisibilityPredicate): RotationWithVector;
     /**
      * Find the best spot of a box to aim at.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L369 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:369}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L369 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:369}
      */
     static raytraceBox(eyes: Vec3, box: AABB, range: number, wallsRange: number, visibilityPredicate: VisibilityPredicate, rotationPreference: RotationPreference, futureTarget: AABB, prioritizeVisible: boolean): RotationWithVector;
     /**
      * Samples all boxes that make up a shape and returns the globally best rotation across them.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L310 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:310}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L310 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:310}
      */
     static raytraceBoxes(eyes: Vec3, boxes: (Object | null)[], range: number, wallsRange: number, visibilityPredicate: VisibilityPredicate, rotationPreference: RotationPreference, futureTarget: AABB, prioritizeVisible: boolean): RotationWithVector;
     /**
      * Find the best spot of the upper block side
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L510 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:510}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L510 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:510}
      */
     static raytraceUpperBlockSide(eyes: Vec3, range: number, wallsRange: number, expectedTarget: BlockPos, rotationPreference: RotationPreference, rotationsNotToMatch: E[]): RotationWithVector;
 }

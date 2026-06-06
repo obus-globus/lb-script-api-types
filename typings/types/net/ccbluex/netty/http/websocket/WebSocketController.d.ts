@@ -13,7 +13,7 @@ export class WebSocketController extends Object {
     // private scope: CoroutineScope;
     // private serverChannel: Channel;
     addContext(context: ChannelHandlerContext): void;
-    broadcast(text: CharSequence, charset: Charset, onFailure: (param0: ChannelHandlerContext, param1: Throwable) => void | null): Job;
+    broadcast(text: CharSequence, charset: Charset, onFailure: ((param0: ChannelHandlerContext, param1: Throwable) => void) | null): Job;
     disconnect(): void;
     removeContext(context: ChannelHandlerContext): void;
 }

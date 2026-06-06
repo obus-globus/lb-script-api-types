@@ -12,7 +12,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
  * @see net.minecraft.network.protocol.game.ClientboundEntityPositionSyncPacket
  * @see net.minecraft.network.protocol.game.VecDeltaCodec
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/blink/TrackedEntityPosition.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/blink/TrackedEntityPosition.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/blink/TrackedEntityPosition.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/blink/TrackedEntityPosition.kt:31}
  */
 export class TrackedEntityPosition extends Object {
     constructor(entity: Entity)

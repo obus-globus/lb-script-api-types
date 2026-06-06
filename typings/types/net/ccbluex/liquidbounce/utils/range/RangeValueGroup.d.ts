@@ -6,12 +6,17 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Allows adjusting your attack range and scan range.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/range/RangeValueGroup.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/range/RangeValueGroup.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/range/RangeValueGroup.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/range/RangeValueGroup.kt:32}
  */
 export class RangeValueGroup extends ValueGroup implements MinecraftShortcuts {
     constructor(name: string, maxRangeIncrease: number, throughWallsRange: number)
-    /*not mapped: */ getInteractionRange$liquidbounce(): number;
-    /*not mapped: */ getInteractionThroughWallsRange$liquidbounce(): number;
+    /**
+     * @see net.minecraft.world.entity.player.Player.entityInteractionRange
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/range/RangeValueGroup.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/utils/range/RangeValueGroup.kt:41}
+     */
+    readonly interactionRange: number;
+    readonly interactionThroughWallsRange: number;
     // private maxRangeIncrease: number;
     // private /*not mapped: */ getMaxRangeIncrease(): number;
     // private throughWallsRange: number;

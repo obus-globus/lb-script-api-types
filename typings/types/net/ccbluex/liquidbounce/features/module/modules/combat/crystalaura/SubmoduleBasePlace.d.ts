@@ -9,7 +9,7 @@ import type { BlockState } from '../../../../../../../../net/minecraft/world/lev
 /**
  * Tries to build improved placement spots.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:45}
  */
 export class SubmoduleBasePlace extends ToggleableValueGroup {
     static INSTANCE: SubmoduleBasePlace;
@@ -29,7 +29,7 @@ export class SubmoduleBasePlace extends ToggleableValueGroup {
      *
      * Only has an effect if {@link CrystalAuraDamageOptions.terrain} is enabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:71}
      */
     readonly terrain: boolean;
     // private tickHandler: EventHook<GameTickEvent>;
@@ -39,7 +39,7 @@ export class SubmoduleBasePlace extends ToggleableValueGroup {
     /**
      * Returns `true` if we can place a crystal base at the {@link pos} currently.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:196}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:196}
      */
     canBasePlace(running: boolean, pos: BlockPos, layers: { start: number; endInclusive: number; step: number }, state: BlockState): boolean;
     // private canEscapeThroughFloorOrCeiling(ceiling: BlockPos[], floor: BlockPos[]): boolean;
@@ -47,7 +47,7 @@ export class SubmoduleBasePlace extends ToggleableValueGroup {
     /**
      * Returns a set of y levels the  base place can be placed in.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L176 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:176}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L176 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:176}
      */
     getBasePlaceLayers(targetY: number): { start: number; endInclusive: number; step: number };
     onDisabled(): void;
@@ -55,7 +55,7 @@ export class SubmoduleBasePlace extends ToggleableValueGroup {
     /**
      * Returns whether base place should be calculated.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L160 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:160}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt#L160 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleBasePlace.kt:160}
      */
     shouldBasePlaceRun(): boolean;
     // private willNotTrap(pos: BlockPos): boolean;

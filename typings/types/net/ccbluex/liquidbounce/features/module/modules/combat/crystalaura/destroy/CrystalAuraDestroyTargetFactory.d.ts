@@ -13,7 +13,7 @@ export class CrystalAuraDestroyTargetFactory extends Object implements Minecraft
      *
      * Updates the current target.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt:36}
      */
     updateTarget(): void;
     /**
@@ -21,7 +21,7 @@ export class CrystalAuraDestroyTargetFactory extends Object implements Minecraft
      *
      * Updates the current target.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt:56}
      */
     validateAndUpdateTarget(crystal: EndCrystal): void;
 }

@@ -14,7 +14,7 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
  * The idea behind this module originates from the video
  * "2b2t's WAR Against Chicken Lag" https://www.youtube.com/watch?v=Qqmz76Z5az0
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCombineMobs.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCombineMobs.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCombineMobs.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCombineMobs.kt:36}
  */
 export class ModuleCombineMobs extends ClientModule {
     static INSTANCE: ModuleCombineMobs;

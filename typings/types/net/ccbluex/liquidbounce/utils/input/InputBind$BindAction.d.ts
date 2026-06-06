@@ -9,7 +9,7 @@ import type { InputBind$BindAction$Companion } from '../../../../../net/ccbluex/
  *
  * @param tag display name used in config/ui
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L200 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:200}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L200 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:200}
  */
 export class InputBind$BindAction extends Enum<InputBind$BindAction> implements Tagged {
     static Companion: Tagged$Companion;
@@ -17,7 +17,7 @@ export class InputBind$BindAction extends Enum<InputBind$BindAction> implements 
     /**
      * Stay enabled while key is held and disable on release.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L211 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:211}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L211 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:211}
      */
     static HOLD: InputBind$BindAction;
     /**
@@ -26,13 +26,13 @@ export class InputBind$BindAction extends Enum<InputBind$BindAction> implements 
      * - toggle if release is received first
      * - toggle on unexpected fallback paths
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L216 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:216}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L216 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:216}
      */
     static SMART: InputBind$BindAction;
     /**
      * Flip state when pressed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L206 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:206}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L206 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:206}
      */
     static TOGGLE: InputBind$BindAction;
     static getEntries(): InputBind$BindAction[];

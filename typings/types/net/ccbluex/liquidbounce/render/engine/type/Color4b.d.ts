@@ -35,13 +35,13 @@ export class Color4b extends Record {
      * @param hex The hex string. Can be in the format of "#RRGGBB" or "#AARRGGBB". (Prefix '#' is optional)
      * @returns The color.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:91}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:91}
      */
     static fromHex(hex: string): Color4b;
     /**
      * Creates a color with full alpha (255).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:141}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:141}
      */
     static fullAlpha(rgb: number): Color4b;
     /**
@@ -53,7 +53,7 @@ export class Color4b extends Record {
      * @param alpha The alpha value (0.0 to 1.0)
      * @returns The color
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:115}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:115}
      */
     static ofHSB(paramarg0: number, paramarg1: number, paramarg2: number): Color4b;
     static ofHSB(hue: number, saturation: number, brightness: number, alpha: number): Color4b;
@@ -82,7 +82,7 @@ export class Color4b extends Record {
      * @param percentage The percentage of interpolation (0.0 to 1.0)
      * @returns The interpolated color
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:182}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:182}
      */
     interpolateTo(other: Color4b, percentage: number): Color4b;
     interpolateTo(other: Color4b, tR: number, tG: number, tB: number, tA: number): Color4b;
@@ -95,19 +95,19 @@ export class Color4b extends Record {
      *
      * @returns The Color object representation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L215 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:215}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L215 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:215}
      */
     toAwtColor(): Color;
     /**
      * Get closest {@link DyeColor} entry with RGB 3D distance (ignoring alpha)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:231}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:231}
      */
     toClosestDyeColor(toRgb: (param0: DyeColor) => kotlin.Int): DyeColor;
     /**
      * @returns the ARGB value in hex string with {@link format}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L224 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:224}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L224 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:224}
      */
     toHexString(format: HexFormat): string;
     toRgbVector3f(dest: Vector3f): Vector3f;

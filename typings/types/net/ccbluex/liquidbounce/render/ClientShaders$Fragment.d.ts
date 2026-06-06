@@ -12,6 +12,7 @@ export class ClientShaders$Fragment extends ClientShaders {
     static GuiBlur: Identifier;
     static GuiCircleLut: Identifier;
     static GuiRoundedRect: Identifier;
+    static HeartSDF: Identifier;
     static INSTANCE: ClientShaders$Fragment;
     static PosRelativeToCamera: Identifier;
     static RoundedRect: Identifier;
@@ -24,6 +25,7 @@ export class ClientShaders$Fragment extends ClientShaders {
     GuiBlur: Identifier;
     GuiCircleLut: Identifier;
     GuiRoundedRect: Identifier;
+    HeartSDF: Identifier;
     PosRelativeToCamera: Identifier;
     RoundedRect: Identifier;
 }

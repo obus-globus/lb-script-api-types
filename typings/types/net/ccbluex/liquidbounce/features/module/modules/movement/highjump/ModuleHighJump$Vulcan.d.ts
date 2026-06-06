@@ -10,7 +10,7 @@ import type { PlayerJumpEvent } from '../../../../../../../../net/ccbluex/liquid
  * - **Tested on:** eu.loyisa.cn; eu.anticheat-test.com
  * - this still flags a bit
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/highjump/ModuleHighJump.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/highjump/ModuleHighJump.kt:55}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/highjump/ModuleHighJump.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/highjump/ModuleHighJump.kt:55}
  */
 export class ModuleHighJump$Vulcan extends Mode {
     static Companion: Tagged$Companion;

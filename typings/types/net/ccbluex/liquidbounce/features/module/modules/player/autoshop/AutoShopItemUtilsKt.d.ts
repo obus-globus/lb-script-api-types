@@ -9,7 +9,7 @@ export class AutoShopItemUtilsKt extends Object {
      *
      * A server will take them from the player if the latter wants to buy something.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopItemUtils.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopItemUtils.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopItemUtils.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopItemUtils.kt:36}
      */
     static LIMITED_ITEMS: string[];
     static POTION_PREFIX: string;
@@ -20,7 +20,5 @@ export class AutoShopItemUtilsKt extends Object {
     static isArmorItem(string: string): boolean;
     static isConcrete(item: Item): boolean;
     static isStainedGlass(item: Item): boolean;
-    static isTerracotta(item: Item): boolean;
-    static isWool(item: Item): boolean;
     static stacks(containerScreen: ContainerScreen): string[];
 }

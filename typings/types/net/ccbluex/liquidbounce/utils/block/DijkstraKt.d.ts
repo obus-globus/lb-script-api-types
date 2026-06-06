@@ -7,7 +7,7 @@ export class DijkstraKt extends Object {
      *
      * All edge costs must be non-negative.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt:24}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt:24}
      */
     static dijkstraShortestPath(start: Object | null, isGoal: (param0: Object | null) => kotlin.Boolean, neighbors: (param0: Object | null) => Object | null, maxIterations: number, maxCost: number): ShortestPath<Object>;
 }

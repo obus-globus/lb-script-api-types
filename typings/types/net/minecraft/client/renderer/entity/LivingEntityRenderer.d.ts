@@ -1,5 +1,6 @@
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { ModuleRotations$BodyPart } from '../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations$BodyPart.d.ts'
 import type { LivingEntityRendererAccessor } from '../../../../../net/fabricmc/fabric/mixin/client/rendering/LivingEntityRendererAccessor.d.ts'
 import type { EntityModel } from '../../../../../net/minecraft/client/model/EntityModel.d.ts'
@@ -13,7 +14,6 @@ import type { ItemModelResolver } from '../../../../../net/minecraft/client/rend
 import type { RenderType } from '../../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-import type { Tuple } from '../../../../../net/minecraft/util/Tuple.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 export abstract class LivingEntityRenderer<T extends LivingEntity, S extends LivingEntityRenderState, M extends EntityModel<S>> extends EntityRenderer<T, S> implements LivingEntityRendererAccessor<LivingEntityRenderState, EntityModel<Object>>, RenderLayerParent<S, M> {
@@ -29,7 +29,7 @@ export abstract class LivingEntityRenderer<T extends LivingEntity, S extends Liv
     getFlipDegrees(): number;
     getModel(): M;
     getModelTint(state: S): number;
-    // private getOverwriteRotation(arg0: ModuleRotations$BodyPart): Tuple<Object, Object>;
+    // private getOverwriteRotation(arg0: ModuleRotations$BodyPart): Pair<Object, Object>;
     getRenderType(state: S, isBodyVisible: boolean, forceTransparent: boolean, appearGlowing: boolean): RenderType;
     getShadowRadius(state: S): number;
     getTextureLocation(state: S): Identifier;

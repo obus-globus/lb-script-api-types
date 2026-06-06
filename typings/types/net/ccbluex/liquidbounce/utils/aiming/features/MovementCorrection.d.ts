@@ -6,13 +6,13 @@ import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounc
 /**
  * Corrects movement when aiming away from client-side view direction.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:23}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:23}
  */
 export class MovementCorrection extends Enum<MovementCorrection> implements Tagged {
     /**
      * Corrects movement by changing the actual look direction of the player.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:47}
      */
     static CHANGE_LOOK: MovementCorrection;
     static Companion: Tagged$Companion;
@@ -21,7 +21,7 @@ export class MovementCorrection extends Enum<MovementCorrection> implements Tagg
      * change the movement of the player and also not affects Sprinting.
      * However, this can be detected by anti-cheats.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:28}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:28}
      */
     static OFF: MovementCorrection;
     /**
@@ -29,13 +29,13 @@ export class MovementCorrection extends Enum<MovementCorrection> implements Tagg
      * but also tweaks the keyboard input to not aggressively change the
      * players walk direction.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:40}
      */
     static SILENT: MovementCorrection;
     /**
      * Corrects movement by changing the yaw when updating the movement.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:35}
      */
     static STRICT: MovementCorrection;
     static getEntries(): MovementCorrection[];

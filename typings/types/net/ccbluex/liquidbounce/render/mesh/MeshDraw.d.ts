@@ -14,14 +14,14 @@ import type { MeshDraw$Companion } from '../../../../../net/ccbluex/liquidbounce
  *
  * It stores uploaded vertex/index slices plus the draw parameters needed by {@link RenderPass.bindAndDraw}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:38}
  */
 export class MeshDraw extends Record {
     static Companion: MeshDraw$Companion;
     /**
      * Bind mesh buffers and issue one indexed draw call.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:136}
      */
     static bindAndDraw(renderPass: RenderPass, meshDraw: MeshDraw): void;
     static create(paramarg0: MeshData, paramarg1: RenderPipeline, paramarg2: (param0: VertexFormat) => GrowableMappableRingBuffer, paramarg3: (param0: VertexFormat$IndexType) => GrowableMappableRingBuffer): MeshDraw;

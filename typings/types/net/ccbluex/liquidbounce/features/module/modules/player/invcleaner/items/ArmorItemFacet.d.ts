@@ -7,7 +7,7 @@ import type { ArmorPiece } from '../../../../../../../../../net/ccbluex/liquidbo
 /**
  * @param stacksToKeep armor items which should be kept since they might be strong in future situations
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ArmorItemFacet.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ArmorItemFacet.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ArmorItemFacet.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ArmorItemFacet.kt:27}
  */
 export class ArmorItemFacet extends ItemFacet {
     static Companion: ItemFacet$Companion;

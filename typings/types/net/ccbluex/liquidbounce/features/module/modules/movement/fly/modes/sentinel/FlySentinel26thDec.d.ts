@@ -12,7 +12,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  * - **Tested on:** cubecraft.net
  * - Tested in Egg Wars, ticks higher than 25 seems silent flags  Thanks to the_bi11iona1re for making me aware that Sentinal folds to Verus Damage exploit. Unpatched by @hax0r31337
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt:43}
  */
 export class FlySentinel26thDec extends Mode {
     static Companion: Tagged$Companion;

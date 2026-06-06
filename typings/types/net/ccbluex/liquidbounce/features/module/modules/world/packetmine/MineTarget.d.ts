@@ -4,7 +4,7 @@ import type { Direction } from '../../../../../../../../net/minecraft/core/Direc
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class MineTarget extends Object {
     constructor(targetPos: BlockPos)
-    blockState: BlockState;
+    readonly blockState: BlockState;
     direction: Direction | null;
     finishReadyTick: number | null;
     finished: boolean;
@@ -18,5 +18,6 @@ export class MineTarget extends Object {
     hashCode(): number;
     init(): void;
     isInvalidOrOutOfRange(): boolean;
+    // private isOutOfRange(pos: BlockPos, state: BlockState): boolean;
     updateBlockState(): void;
 }

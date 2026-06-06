@@ -13,38 +13,38 @@ export class TargetPriority extends Enum<TargetPriority> implements Comparator<L
     /**
      * Oldest entity first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L241 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:241}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L241 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:241}
      */
     static AGE: TargetPriority;
     static Companion: Tagged$Companion;
     /**
      * Closest to your crosshair first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L225 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:225}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L225 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:225}
      */
     static DIRECTION: TargetPriority;
     /**
      * Closest to you first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:217}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:217}
      */
     static DISTANCE: TargetPriority;
     /**
      * Lowest health first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L209 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:209}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L209 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:209}
      */
     static HEALTH: TargetPriority;
     /**
      * With the lowest hurt time first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L233 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:233}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L233 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:233}
      */
     static HURT_TIME: TargetPriority;
     /**
      * Player first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L193 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:193}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L193 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:193}
      */
     static TYPE: TargetPriority;
     static comparing(paramarg0: (param0: Object | null) => Object | null): (param0: Object | null) => kotlin.Boolean;

@@ -1,4 +1,3 @@
-import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PlayerMovementTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMovementTickEvent.d.ts'
@@ -16,7 +15,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
  *
  * Builds blocks to cover yourself.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt:45}
  */
 export class ModuleBlockIn extends ClientModule {
     static INSTANCE: ModuleBlockIn;
@@ -29,7 +28,8 @@ export class ModuleBlockIn extends ClientModule {
     // private filter: Filter;
     // private /*not mapped: */ getFilter(): Filter;
     // private movementHandler: EventHook<PlayerMovementTickEvent>;
-    // private placeOrder: ModeValueGroup<ModuleBlockIn$Order>;
+    // private placeOrder: ModuleBlockIn$Order;
+    // private /*not mapped: */ getPlaceOrder(): ModuleBlockIn$Order;
     // private rotateClockwise: boolean;
     // private startPos: BlockPos$MutableBlockPos;
     // private tickHandler: EventHook<GameTickEvent>;

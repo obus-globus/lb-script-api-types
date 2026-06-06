@@ -6,9 +6,9 @@ import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbou
  *
  * Allows you to step up blocks.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt:48}
  */
 export class ModuleStep extends ClientModule {
     static INSTANCE: ModuleStep;
-    modes: ModeValueGroup<Mode>;
+    // private modes: ModeValueGroup<Mode>;
 }

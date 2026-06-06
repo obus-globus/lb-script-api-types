@@ -239,6 +239,7 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     jumpableVehicle(): PlayerRideableJumping;
     liquid_bounce$getAirTicks(): number;
     liquid_bounce$getOnGroundTicks(): number;
+    // private liquid_bounce$shouldForceStopSprinting(): boolean;
     magicCrit(entity: Entity): void;
     // private modifyInput(input: Vec2): Vec2;
     move(moverType: MoverType, delta: Vec3): void;

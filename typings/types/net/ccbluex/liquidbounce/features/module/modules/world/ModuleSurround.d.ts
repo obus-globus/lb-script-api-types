@@ -22,7 +22,7 @@ import type { Vector2d } from '../../../../../../../org/joml/Vector2d.d.ts'
  *
  * @author ccetl
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt:58}
  */
 export class ModuleSurround extends ClientModule {
     static INSTANCE: ModuleSurround;
@@ -33,7 +33,7 @@ export class ModuleSurround extends ClientModule {
     // private blockUpdateHandler: EventHook<PacketEvent>;
     // private blocks: Block[];
     // private /*not mapped: */ getBlocks(): Block[];
-    // private centerPos: Vector2d | null;
+    // private centerPos: Vector2d;
     // private disableOn: ModuleSurround$DisableOn[];
     // private /*not mapped: */ getDisableOn(): ModuleSurround$DisableOn[];
     // private features: ModuleSurround$Features[];

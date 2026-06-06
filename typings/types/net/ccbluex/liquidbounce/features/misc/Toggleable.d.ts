@@ -4,20 +4,20 @@ export interface Toggleable extends Object{
     /**
      * Will be called when the state is toggled off.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt:45}
      */
     onDisabled(): void;
     /**
      * Will be called when the state is toggled on.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt:40}
      */
     onEnabled(): void;
     /**
      * The listener that will be called when the state is toggled. By default, it will
      * simply call {@link onEnabled} or {@link onDisabled} depending on the state.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt:26}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/Toggleable.kt:26}
      */
     onToggled(state: boolean): boolean;
 }

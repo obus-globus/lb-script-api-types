@@ -13,7 +13,7 @@ import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types
  * @param dialogMode Specifies the type of file dialog to show (e.g., open file, save file, choose folder).
  * @param supportedExtensions A set of allowed file extensions (without the dot), e.g., `setOf("txt", "json")`.        Use `null` to allow any file type. This is ignored if {@link dialogMode} is set to select directories.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:31}
  */
 export class FileValue extends Value<File> {
     static Companion: FileValue$Companion;
@@ -23,7 +23,7 @@ export class FileValue extends Value<File> {
      *
      * If the file is not absolute, it is resolved relative to the {@link ConfigSystem.rootFolder}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:62}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:62}
      */
     readonly absoluteFile: File;
     readonly dialogMode: FileDialogMode;

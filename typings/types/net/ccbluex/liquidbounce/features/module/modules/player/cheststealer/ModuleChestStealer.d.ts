@@ -17,7 +17,7 @@ import type { AbstractContainerScreen } from '../../../../../../../../net/minecr
  *
  * Automatically steals all items from a chest.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt:51}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt:51}
  */
 export class ModuleChestStealer extends ClientModule {
     static INSTANCE: ModuleChestStealer;
@@ -28,7 +28,6 @@ export class ModuleChestStealer extends ClientModule {
     // private inventoryConstrains: InventoryConstraints;
     // private itemMoveMode: ModuleChestStealer$ItemMoveMode;
     // private /*not mapped: */ getItemMoveMode(): ModuleChestStealer$ItemMoveMode;
-    // private mainInventory: ItemSlot[];
     // private onFull: ModuleChestStealer$OnFull;
     // private /*not mapped: */ getOnFull(): ModuleChestStealer$OnFull;
     // private quickSwaps: boolean;

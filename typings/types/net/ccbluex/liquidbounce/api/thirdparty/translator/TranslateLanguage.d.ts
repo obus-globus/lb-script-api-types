@@ -15,7 +15,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
  * By using an interface, we can define both special language cases (like `Auto`) and general language
  * codes (represented by `Literal`) in a type-safe and scalable manner.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.kt#L22 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.kt:22}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.kt#L22 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.kt:22}
  */
 export interface TranslateLanguage extends Object{
     readonly literal: string;

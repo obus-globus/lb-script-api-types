@@ -17,10 +17,10 @@ export class ModuleOffhand$Mode extends Enum<ModuleOffhand$Mode> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleOffhand$Mode;
     static values(): (Object | null)[];
-    private constructor(modeName: string, item: (param0: ItemStack) => kotlin.Boolean | null, fallBackItem: (param0: ItemStack) => kotlin.Boolean | null)
+    private constructor(modeName: string, item: ((param0: ItemStack) => kotlin.Boolean) | null, fallBackItem: ((param0: ItemStack) => kotlin.Boolean) | null)
     private constructor(modeName: string, item: Item, fallBackItem: Item | null)
-    // private fallBackItem: (param0: ItemStack) => kotlin.Boolean | null;
-    // private item: (param0: ItemStack) => kotlin.Boolean | null;
+    // private fallBackItem: ((param0: ItemStack) => kotlin.Boolean) | null;
+    // private item: ((param0: ItemStack) => kotlin.Boolean) | null;
     // private modeBeforeDirectSwitch: ModuleOffhand$Mode | null;
     readonly modeName: string;
     canCycleTo(): boolean;
@@ -29,7 +29,7 @@ export class ModuleOffhand$Mode extends Enum<ModuleOffhand$Mode> {
      * 0 = Main inventory
      * 1 = Hotbar
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand.kt:330}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand.kt:330}
      */
     getPrioritizedInventoryPart(): number;
     getSlot(): ItemSlot | null;

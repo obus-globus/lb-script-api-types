@@ -8,7 +8,7 @@ import type { NoFallSpoofGround$DistanceMode } from '../../../../../../../../../
  * SpoofGround mode for the NoFall module.
  * This mode spoofs the 'onGround' flag in PlayerMoveC2SPacket to prevent fall damage.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofGround.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofGround.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofGround.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofGround.kt:27}
  */
 export class NoFallSpoofGround extends NoFallMode {
     static Companion: Tagged$Companion;

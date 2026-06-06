@@ -11,7 +11,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  * - **Anticheat:** Sentinel (30.06.2024)
  * - **Tested on:** cubecraft.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt:39}
  */
 export class SpeedSentinelDamage extends Mode {
     static Companion: Tagged$Companion;

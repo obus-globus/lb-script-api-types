@@ -10,16 +10,16 @@ import type { RotationsValueGroup } from '../../../../../../../net/ccbluex/liqui
  *
  * Makes it look as if you were derping around.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleDerp.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleDerp.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleDerp.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleDerp.kt:33}
  */
 export class ModuleDerp extends ClientModule {
     static INSTANCE: ModuleDerp;
     // private notDuringSprint: boolean;
     // private /*not mapped: */ getNotDuringSprint(): boolean;
     // private pitchMode: ModeValueGroup<ModuleDerp$PitchMode>;
-    readonly repeatable: EventHook<GameTickEvent>;
     // private rotations: RotationsValueGroup;
     // private safePitch: boolean;
     // private /*not mapped: */ getSafePitch(): boolean;
+    // private tickHandler: EventHook<GameTickEvent>;
     // private yawMode: ModeValueGroup<ModuleDerp$YawMode>;
 }

@@ -9,7 +9,7 @@ import type { ListValue } from '../../../../../../net/ccbluex/liquidbounce/confi
  *
  * TODO: Implement support for input validation in the UI.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:91}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:91}
  */
 export class MutableListValue<T extends E[], E extends Object | number | string | boolean> extends ListValue<T, E> {
     constructor(name: string, value: T, innerValueType: ValueType, innerType: Class<E>)

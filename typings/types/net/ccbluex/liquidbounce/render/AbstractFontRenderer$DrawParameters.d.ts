@@ -10,7 +10,7 @@ import type { VerticalAnchor } from '../../../../net/ccbluex/liquidbounce/render
  * @param scale Render scale applied to width and height
  * @param shadow Draw shadow of text
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/AbstractFontRenderer.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/render/AbstractFontRenderer.kt:105}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/AbstractFontRenderer.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/render/AbstractFontRenderer.kt:105}
  */
 export class AbstractFontRenderer$DrawParameters extends Object {
     static INSTANCE: AbstractFontRenderer$DrawParameters;

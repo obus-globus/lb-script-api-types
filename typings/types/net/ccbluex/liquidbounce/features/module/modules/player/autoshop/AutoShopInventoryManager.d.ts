@@ -18,6 +18,6 @@ export class AutoShopInventoryManager extends Object implements EventListener {
     parent(): EventListener | null;
     parent(): ModuleAutoShop;
     unregister(): void;
-    // private update(newItems: { [key: string]: number }): void;
+    // private update(newItems: Object2IntMap<string>): void;
     // private updatePendingItems(): void;
 }

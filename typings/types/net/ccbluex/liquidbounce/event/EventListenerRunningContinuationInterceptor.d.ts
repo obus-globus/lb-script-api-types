@@ -17,7 +17,7 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
  * @param original The original {@link ContinuationInterceptor} such as a {@link CoroutineDispatcher}, because one {@link CoroutineContext} can only contain one value for a same key.
  * @author MukjepScarlet
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:94}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:94}
  */
 export class EventListenerRunningContinuationInterceptor extends AbstractCoroutineContextElement implements ContinuationInterceptor {
     static Key: ContinuationInterceptor$Key;

@@ -14,7 +14,7 @@ import type { LivingEntity } from '../../../../../../../../net/minecraft/world/e
  *
  * Allows you to spawn a client side player for testing purposes.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:55}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:55}
  */
 export class CommandFakePlayer extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandFakePlayer;
@@ -27,7 +27,7 @@ export class CommandFakePlayer extends Object implements EventListener, Command$
     /**
      * Recordings are made in the tick event handler.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L347 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:347}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L347 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:347}
      */
     readonly tickHandler: EventHook<GameTickEvent>;
     // private calculateAttackDamage(fakePlayer: LivingEntity): number;

@@ -12,7 +12,7 @@ import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
  *
  * @author MukjepScarlet
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:41}
  */
 export class ScriptAsyncUtil extends Object {
     static TickScheduler: ScriptAsyncUtil$TickScheduler;
@@ -24,7 +24,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * @returns `Promise<number>`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:151}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:151}
      */
     conditional(ticks: number, breakLoop: () => kotlin.Boolean): Value;
     /**
@@ -34,7 +34,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * @returns `Promise<T>`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:185}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:185}
      */
     launch(executor: Executor, block: () => T): Value;
     launch(block: () => T): Value;
@@ -46,7 +46,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * @returns `Promise<okhttp3.Response>`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L169 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:169}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L169 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:169}
      */
     request(block: (param0: Request$Builder) => void): Value;
     /**
@@ -54,7 +54,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * @returns `Promise<number>`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:106}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:106}
      */
     ticks(n: number): Value;
     /**
@@ -62,7 +62,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * @returns `Promise<number>`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:121}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:121}
      */
     until(condition: () => kotlin.Boolean): Value;
 }

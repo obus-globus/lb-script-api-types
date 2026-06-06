@@ -6,6 +6,7 @@ import type { Position } from '../../../../../net/minecraft/core/Position.d.ts'
 import type { Vec3i } from '../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { BoundingBox } from '../../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
+import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec2 } from '../../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
@@ -13,6 +14,7 @@ import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class MinecraftVectorExtensionsKt extends Object {
     static add(vector3f: Vector3f, vec3d: Vec3): Vector3f;
     static average(iterable: (Object | null)[]): Vec3;
+    static bottomCenter(paramarg0: Vec3i, paramarg1: number): Vec3;
     static component1(paramarg0: Vec3): number;
     static component1(paramarg0: Vec2): number;
     static component1(paramarg0: Vec3i): number;
@@ -25,16 +27,24 @@ export class MinecraftVectorExtensionsKt extends Object {
     static copy(paramarg0: BlockPos, paramarg1: number, paramarg2: number, paramarg3: number): BlockPos;
     static copy(vec2: Vec2, x: number, y: number): Vec2;
     static copy(paramarg0: Vec3, paramarg1: number, paramarg2: number, paramarg3: number): Vec3;
+    static distanceToCenterSqr(paramarg0: Position, paramarg1: number): number;
     static dot(vec3: Vec3, x: number, y: number, z: number): number;
     static equals(vec3: Vec3, other: Vec3, tolerance: number): boolean;
+    static expandToCube(paramarg0: Vec3, paramarg1: number): AABB;
     /**
      * @returns {@link this} + {@link scale} * {@link other}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:100}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:100}
      */
     static fma(vec3: Vec3, scale: number, other: Vec3): Vec3;
-    static getAbsoluteValue(paramarg0: Vec3): Vec3;
+    static getBottomCenter(paramarg0: Vec3i): Vec3;
+    static getCenter(paramarg0: Vec3i): Vec3;
+    static getTopCenter(paramarg0: Vec3i): Vec3;
+    static getYaw(paramarg0: Vec3): number;
+    static horizontalDistanceTo(paramarg0: Vec3, paramarg1: number, paramarg2: number): number;
     static horizontalDistanceTo(vec3: Vec3, other: Vec3): number;
+    static horizontalDistanceToSqr(paramarg0: Vec3, paramarg1: number, paramarg2: number): number;
+    static horizontalDistanceToSqr(paramarg0: Vec3, paramarg1: Vec3): number;
     static isLikelyZero(paramarg0: Vec2): boolean;
     static isLikelyZero(paramarg0: Vec3): boolean;
     static isNormalized(paramarg0: Vec3): boolean;
@@ -80,7 +90,7 @@ export class MinecraftVectorExtensionsKt extends Object {
      *
      * @returns a {@link Vec3} with same direction as the receiver and length of {@link newLength}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:120}
      */
     static withLength(vec3: Vec3, newLength: number): Vec3;
 }

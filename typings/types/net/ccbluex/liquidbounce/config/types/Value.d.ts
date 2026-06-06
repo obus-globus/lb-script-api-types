@@ -1,8 +1,9 @@
 import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
+import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
+import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Result } from '../../../../../kotlin/Result.d.ts'
 import type { KProperty } from '../../../../../kotlin/reflect/KProperty.d.ts'
@@ -13,7 +14,7 @@ import type { Value as Value_2 } from '../../../../../org/graalvm/polyglot/Value
 /**
  * Value based on generics and support for readable names and descriptions.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:59}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:59}
  */
 export class Value<T extends Object | number | string | boolean> extends Object {
     constructor(name: string, aliases: string[], defaultValue: T, valueType: ValueType, independentDescription: boolean)
@@ -27,13 +28,13 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      *
      * @see 
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:95}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:95}
      */
-    readonly doNotInclude: () => boolean;
+    readonly doNotInclude: () => kotlin.Boolean;
     /**
      * If true, the description won't be bound to any {@link net.ccbluex.liquidbounce.config.types.group.ValueGroup}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:69}
      */
     independentDescription: boolean;
     // private inner: T;
@@ -42,17 +43,17 @@ export class Value<T extends Object | number | string | boolean> extends Object 
     /**
      * If true, value will always keep {@link inner} equals {@link defaultValue}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:113}
      */
     /*not mapped: */ isImmutable(): boolean;
     key: string | null;
-    // private listeners: (param0: T) => T[];
+    // private listeners: (param0: T) => unknown[];
     /*not mapped: */ getLoweredName$liquidbounce(): string;
     readonly name: string;
     /**
      * If true, value will not be included in generated RestAPI config
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:105}
      */
     readonly notAnOption: boolean;
     // private stateFlow: MutableStateFlow<T>;
@@ -61,11 +62,11 @@ export class Value<T extends Object | number | string | boolean> extends Object 
     /**
      * Deserialize value from JSON
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L288 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:288}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L288 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:288}
      */
     deserializeFrom(gson: Gson, element: JsonElement): void;
     doNotIncludeAlways(): Value<T>;
-    doNotIncludeWhen(condition: () => boolean): Value<T>;
+    doNotIncludeWhen(condition: () => kotlin.Boolean): Value<T>;
     get(): T;
     getTagValue(): Object;
     /**
@@ -79,19 +80,19 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      *
      * @docs https://kotlinlang.org/docs/reference/delegated-properties.html
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L144 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:144}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L144 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:144}
      */
     getValue(): Object;
     getValue(u: Object | null, property: KProperty<Object>): T;
     immutable(): Value<T>;
     independentDescription(): Value<T>;
     notAnOption(): Value<T>;
-    onChange(listener: (param0: T) => T): Value<T>;
+    onChange(listener: (param0: T) => unknown): Value<T>;
     onChanged(listener: (param0: T) => void): Value<T>;
     /**
      * Restore value to default value
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:251}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:251}
      */
     restore(): void;
     set(t: T): void;

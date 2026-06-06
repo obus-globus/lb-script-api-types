@@ -13,14 +13,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:198}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:198}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L360 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:360}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L360 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:360}
      */
     static Outline: RenderPipeline;
     static Quads: RenderPipeline;
@@ -34,6 +34,8 @@ export class ClientRenderPipelines extends Object {
     // private GradientCircle: RenderPipeline;
     // private GradientCircleNoDepthTest: RenderPipeline;
     GuiBlur: RenderPipeline;
+    // private Heart: RenderPipeline;
+    // private HeartNoDepthTest: RenderPipeline;
     ItemChams: RenderPipeline;
     // private JCEF_COMPATIBLE_BLEND: BlendFunction;
     LineStrip: RenderPipeline;
@@ -55,12 +57,13 @@ export class ClientRenderPipelines extends Object {
     Triangles: RenderPipeline;
     // private renderPipelines: Map<Identifier, RenderPipeline>;
     gradientCircle(noDepthTest: boolean): RenderPipeline;
+    heart(noDepthTest: boolean): RenderPipeline;
     newPipeline(name: string, builderAction: (param0: RenderPipeline$Builder) => void): RenderPipeline;
     outlineQuads(useColor: boolean): RenderPipeline;
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:411}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:411}
      */
     precompile(): void;
     relativeLines(useColor: boolean): RenderPipeline;

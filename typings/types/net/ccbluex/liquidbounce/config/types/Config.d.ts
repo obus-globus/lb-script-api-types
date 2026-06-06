@@ -7,7 +7,7 @@ export class Config extends ValueGroup {
      * We write to this temp file, we can safely rename {@link jsonTmpFile} to {@link jsonFile},
      * to eliminate any chances of data loss.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Config.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Config.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Config.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Config.kt:35}
      */
     readonly jsonTmpFile: File;
 }

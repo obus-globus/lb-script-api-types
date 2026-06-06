@@ -4,7 +4,6 @@ import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/l
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PlayerTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerTickEvent.d.ts'
-import type { Entity } from '../../../../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class SpeedGrimCollide extends Mode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<Object>)
@@ -14,5 +13,4 @@ export class SpeedGrimCollide extends Mode {
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;
     // private tickHandler: EventHook<PlayerTickEvent>;
-    // private canCauseSpeed(entity: Entity): boolean;
 }

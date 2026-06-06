@@ -3,12 +3,14 @@ import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounc
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { SoundEvent } from '../../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
+import type { InteractionHand } from '../../../../../../../net/minecraft/world/InteractionHand.d.ts'
+import type { FishingHook } from '../../../../../../../net/minecraft/world/entity/projectile/FishingHook.d.ts'
 /**
  * AutoFish module
  *
  * Automatically catches fish when using a rod.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt:39}
  */
 export class ModuleAutoFish extends ClientModule {
     static INSTANCE: ModuleAutoFish;
@@ -19,5 +21,7 @@ export class ModuleAutoFish extends ClientModule {
     // private sounds: SoundEvent[];
     // private /*not mapped: */ getSounds(): SoundEvent[];
     // private tickHandler: EventHook<GameTickEvent>;
+    // private activeFishingHook(): FishingHook | null;
+    // private findFishingRodHand(): InteractionHand | null;
     onDisabled(): void;
 }

@@ -8,6 +8,8 @@ import type { BlockPlacer } from '../../../../../../../net/ccbluex/liquidbounce/
 import type { HotbarItemSlot } from '../../../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot.d.ts'
 export class ModuleBedDefender extends ClientModule {
     static INSTANCE: ModuleBedDefender;
+    // private allowChests: boolean;
+    // private /*not mapped: */ getAllowChests(): boolean;
     // private blockSlotComparator: (param0: HotbarItemSlot) => kotlin.Boolean;
     // private isSelfBedMode: ModeValueGroup<IsSelfBedMode>;
     // private maxLayers: number;

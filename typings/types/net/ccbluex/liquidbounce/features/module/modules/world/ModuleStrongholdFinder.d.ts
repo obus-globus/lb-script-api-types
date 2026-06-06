@@ -24,7 +24,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
  *
  * {@link Article}(https://github.com/Ninjabrain1/Ninjabrain-Bot/blob/main/triangulation.pdf)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt:72}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt:72}
  */
 export class ModuleStrongholdFinder extends ClientModule {
     static INSTANCE: ModuleStrongholdFinder;
@@ -77,5 +77,4 @@ export class ModuleStrongholdFinder extends ClientModule {
     // private scanChunkForPortalBlocks(chunkX: number, chunkZ: number): void;
     // private trackPortalBlock(pos: BlockPos, block: Block): void;
     // private trimPendingThrows(nowTick: number): void;
-    // private vectorToYaw(dx: number, dz: number): number;
 }

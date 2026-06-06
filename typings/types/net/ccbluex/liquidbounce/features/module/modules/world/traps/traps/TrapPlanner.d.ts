@@ -22,7 +22,7 @@ export abstract class TrapPlanner<T extends Object | number | string | boolean> 
     /**
      * Called during simulated tick event
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt:56}
      */
     plan(enemies: LivingEntity[]): BlockChangeIntent<T> | null;
     protected targetOverlapComparator(origin: BlockPos, orderedOffsets: BlockPos[], eyePos: Vec3): (param0: BlockPos) => kotlin.Boolean;

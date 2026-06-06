@@ -7,7 +7,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
  * @param position the player's position (on placement)
  * @param pose the player's pose (on placement)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt:142}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt:142}
  */
 export class PlayerLocationOnPlacement extends Object {
     constructor(position: Vec3, pose: Pose)

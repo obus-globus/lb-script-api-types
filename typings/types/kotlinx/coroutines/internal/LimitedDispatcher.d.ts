@@ -20,7 +20,7 @@ export class LimitedDispatcher extends CoroutineDispatcher implements Delay {
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
-    // private obtainTaskOrDeallocateWorker(): () => void | null;
+    // private obtainTaskOrDeallocateWorker(): (() => void) | null;
     scheduleResumeAfterDelay(timeMillis: number, continuation: CancellableContinuation<void>): void;
     toString(): string;
     // private tryAllocateWorker(): boolean;

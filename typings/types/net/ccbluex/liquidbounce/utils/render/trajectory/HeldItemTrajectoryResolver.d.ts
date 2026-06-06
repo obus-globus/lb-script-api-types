@@ -20,7 +20,7 @@ export class HeldItemTrajectoryResolver extends Object {
      * @see net.minecraft.world.item.enchantment.EnchantmentHelper.processProjectileSpread
      * @see net.minecraft.world.item.CrossbowItem.createProjectile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt:42}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt:42}
      */
     static resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[];
     // private getShotYawOffsets(shotCount: number): number[];

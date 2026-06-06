@@ -12,7 +12,7 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
  *
  * Shows the direction of rendered entities on GUI.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRadar.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRadar.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRadar.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRadar.kt:60}
  */
 export class ModuleRadar extends ClientModule {
     static INSTANCE: ModuleRadar;

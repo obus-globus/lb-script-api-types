@@ -8,7 +8,7 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 /**
  * A target tracker to choose the best enemy to attack
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:46}
  */
 export class TargetTracker extends TargetSelector {
     constructor(defaultPriority: TargetPriority, range: RangedValue<Object>)
@@ -16,7 +16,7 @@ export class TargetTracker extends TargetSelector {
     target: LivingEntity | null;
     reset(): void;
     select<R extends Object | number | string | boolean>(evaluator: (param0: LivingEntity) => R): R | null;
-    selectFirst(predicate: (param0: LivingEntity) => kotlin.Boolean | null): LivingEntity | null;
-    validate(predicate: (param0: LivingEntity) => kotlin.Boolean | null): void;
+    selectFirst(predicate: ((param0: LivingEntity) => kotlin.Boolean) | null): LivingEntity | null;
+    validate(predicate: ((param0: LivingEntity) => kotlin.Boolean) | null): void;
     validate(entity: LivingEntity): boolean;
 }

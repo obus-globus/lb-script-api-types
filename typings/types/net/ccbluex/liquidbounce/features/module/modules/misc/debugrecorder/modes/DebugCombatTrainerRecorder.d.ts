@@ -8,7 +8,7 @@ import type { LivingEntity } from '../../../../../../../../../net/minecraft/worl
 /**
  * Simulates scenarios where the player is training to hit a target.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt:47}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt:47}
  */
 export class DebugCombatTrainerRecorder extends ModuleDebugRecorder$DebugRecorderMode<CombatSample> {
     static Companion: Tagged$Companion;
@@ -23,7 +23,7 @@ export class DebugCombatTrainerRecorder extends ModuleDebugRecorder$DebugRecorde
      * Spawns a slime entity about 2.0 - 3.0 blocks away from the player,
      * in a random direction and at a different height.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt:126}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt:126}
      */
     spawn(): LivingEntity;
 }

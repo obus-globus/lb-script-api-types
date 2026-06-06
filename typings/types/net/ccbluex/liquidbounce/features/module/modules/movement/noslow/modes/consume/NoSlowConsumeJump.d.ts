@@ -7,7 +7,7 @@ import type { MovementInputEvent } from '../../../../../../../../../../net/ccblu
 /**
  * jumps while consuming, useful for incorrect anticheat configurations
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeJump.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeJump.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeJump.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeJump.kt:27}
  */
 export class NoSlowConsumeJump extends Mode {
     static Companion: Tagged$Companion;

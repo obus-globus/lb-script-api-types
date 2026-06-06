@@ -9,7 +9,7 @@ import type { CameraRenderState } from '../../../../../net/minecraft/client/rend
  *
  * Note: After writing to the outline framebuffer {@link markDirty} must be called.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:39}
  */
 export class DrawOutlinesEvent extends Event {
     constructor(renderTarget: RenderTarget, pose: PoseStack, cameraState: CameraRenderState, partialTicks: number, type: DrawOutlinesEvent$OutlineType)
@@ -22,7 +22,7 @@ export class DrawOutlinesEvent extends Event {
     /**
      * Called when the framebuffer was edited.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:56}
      */
     markDirty(): void;
 }

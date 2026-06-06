@@ -10,7 +10,7 @@ export class BlockChangeIntent<T extends Object | number | string | boolean> ext
     /**
      * Info for the planner.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/BlockChangeIntent.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/BlockChangeIntent.kt:32}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/BlockChangeIntent.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/BlockChangeIntent.kt:32}
      */
     readonly planningInfo: T;
     readonly provider: BlockIntentProvider<T>;

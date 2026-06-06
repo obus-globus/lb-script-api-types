@@ -27,7 +27,7 @@ export class PointTracker extends ValueGroup implements EventListener {
      *
      * @param entity The entity we want to track.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/PointTracker.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/PointTracker.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/PointTracker.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/PointTracker.kt:66}
      */
     findPoint(eyes: Vec3, entity: Entity, ticks: number): PointInsideBox;
     parent(): EventListener | null;

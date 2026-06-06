@@ -8,7 +8,7 @@ export class InventoryMoveSneakControlFeature$SneakMode extends Enum<InventoryMo
     /**
      * This can be used to not change the sprint state.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt:35}
      */
     static DO_NOT_CHANGE: InventoryMoveSneakControlFeature$SneakMode;
     /**
@@ -16,7 +16,7 @@ export class InventoryMoveSneakControlFeature$SneakMode extends Enum<InventoryMo
      * while still allowing to sprint omnidirectional
      * when Scaffold is not active.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt:47}
      */
     static FORCE_NO_SNEAK: InventoryMoveSneakControlFeature$SneakMode;
     /**
@@ -24,7 +24,7 @@ export class InventoryMoveSneakControlFeature$SneakMode extends Enum<InventoryMo
      * while not allowing to sprint omnidirectional
      * when Scaffold is not active.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/features/InventoryMoveSneakControlFeature.kt:40}
      */
     static FORCE_SNEAK: InventoryMoveSneakControlFeature$SneakMode;
     static getEntries(): InventoryMoveSneakControlFeature$SneakMode[];

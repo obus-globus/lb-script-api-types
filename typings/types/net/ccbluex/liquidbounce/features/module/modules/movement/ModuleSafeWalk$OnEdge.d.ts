@@ -1,6 +1,7 @@
 import type { Mode } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { RefreshableFloatState } from '../../../../../../../net/ccbluex/liquidbounce/config/utils/RefreshableFloatState.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { MovementInputEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
 import type { ModuleSafeWalk$OnEdge$OnEdgeMode } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk$OnEdge$OnEdgeMode.d.ts'
@@ -9,12 +10,11 @@ export class ModuleSafeWalk$OnEdge extends Mode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<Mode>)
     // private center: Vec3 | null;
-    // private edgeDistance: number;
-    // private /*not mapped: */ getEdgeDistance(): number;
+    // private edgeDistance: RefreshableFloatState;
     /**
      * The input handler tracks the movement of the player and calculates the predicted future position.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk.kt:94}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk.kt:94}
      */
     readonly inputHandler: EventHook<MovementInputEvent>;
     // private jump: boolean;

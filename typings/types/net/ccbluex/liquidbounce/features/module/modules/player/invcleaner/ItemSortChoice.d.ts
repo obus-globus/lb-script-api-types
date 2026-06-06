@@ -37,16 +37,16 @@ export class ItemSortChoice extends Enum<ItemSortChoice> implements Tagged {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemSortChoice;
     static values(): (Object | null)[];
-    private constructor(tag: string, category: ItemCategory, satisfactionCheck: (param0: ItemStack) => kotlin.Boolean | null)
+    private constructor(tag: string, category: ItemCategory, satisfactionCheck: ((param0: ItemStack) => kotlin.Boolean) | null)
     readonly category: ItemCategory;
     /**
      * This is the function that is used for the greedy check.
      *
      * IF IT WAS IMPLEMENTED
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt:136}
      */
-    readonly satisfactionCheck: (param0: ItemStack) => kotlin.Boolean | null;
+    readonly satisfactionCheck: ((param0: ItemStack) => kotlin.Boolean) | null;
     readonly tag: string;
     name(): "SWORD" | "WEAPON" | "SPEAR" | "MACE" | "BOW" | "CROSSBOW" | "AXE" | "PICKAXE" | "SHOVEL" | "HOE" | "ROD" | "SHIELD" | "WATER" | "LAVA" | "MILK" | "PEARL" | "GAPPLE" | "FOOD" | "POTION" | "BLOCK" | "THROWABLES" | "IGNORE" | "NONE";
 }

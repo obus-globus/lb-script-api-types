@@ -8,6 +8,6 @@ export class ModuleSkinChanger$Mode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<Object>;
-    readonly skinTextures: () => PlayerSkin | null;
+    readonly skinTextures: (() => PlayerSkin) | null;
     uploadSkin(): void;
 }

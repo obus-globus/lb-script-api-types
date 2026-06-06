@@ -4,7 +4,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 /**
  * Submission strategy for geometry started in {@link WorldRenderEnvironment}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:92}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:92}
  */
 export class DrawMode extends Enum<DrawMode> {
     static BATCH: DrawMode;

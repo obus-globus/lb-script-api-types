@@ -11,7 +11,7 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
  *
  * Shoots back incoming projectiles around you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt:45}
  */
 export class ModuleProjectilePuncher extends ClientModule {
     static INSTANCE: ModuleProjectilePuncher;
@@ -23,7 +23,7 @@ export class ModuleProjectilePuncher extends ClientModule {
     /**
      * Tries to punch the current projectile target when it is in range and the server-side rotation already faces it.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt:80}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt:80}
      */
     readonly repeatable: EventHook<GameTickEvent>;
     // private rotations: RotationsValueGroup;

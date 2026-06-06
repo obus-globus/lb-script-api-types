@@ -7,6 +7,7 @@ import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liqui
 export class KillAuraRequirements extends Enum<KillAuraRequirements> implements BooleanSupplier, Tagged {
     static CLICK: KillAuraRequirements;
     static Companion: Tagged$Companion;
+    static EMPTY_HAND: KillAuraRequirements;
     static NOT_BREAKING: KillAuraRequirements;
     static VANILLA_NAME: KillAuraRequirements;
     static WEAPON: KillAuraRequirements;
@@ -19,5 +20,5 @@ export class KillAuraRequirements extends Enum<KillAuraRequirements> implements 
     private constructor(tag: string)
     readonly tag: string;
     getAsBoolean(): boolean;
-    name(): "CLICK" | "WEAPON" | "VANILLA_NAME" | "NOT_BREAKING";
+    name(): "CLICK" | "WEAPON" | "EMPTY_HAND" | "VANILLA_NAME" | "NOT_BREAKING";
 }

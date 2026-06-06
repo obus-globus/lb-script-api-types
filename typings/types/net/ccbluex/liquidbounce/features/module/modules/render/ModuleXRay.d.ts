@@ -11,7 +11,7 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
  *
  * Command: {@link CommandXRay}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:128}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:128}
  */
 export class ModuleXRay extends ClientModule {
     static INSTANCE: ModuleXRay;
@@ -23,7 +23,7 @@ export class ModuleXRay extends ClientModule {
     /**
      * Resets the block list to the default values
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L305 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:305}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L305 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:305}
      */
     applyDefaults(): void;
     onDisabled(): void;
@@ -33,7 +33,7 @@ export class ModuleXRay extends ClientModule {
      * This can be used to exclude blocks that should not be rendered.
      * Also features an option to only render blocks that are exposed to air.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L280 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:280}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L280 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:280}
      */
     shouldRender(blockState: BlockState, blockPos: BlockPos): boolean;
     shouldRender(state: BlockState, otherState: BlockState, side: Direction): boolean;

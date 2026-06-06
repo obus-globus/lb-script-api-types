@@ -6,5 +6,6 @@ import type { ModuleDebugRecorder$DebugRecorderMode } from '../../../../../../..
 export class AimDebugRecorder extends ModuleDebugRecorder$DebugRecorderMode<JsonObject> {
     static Companion: Tagged$Companion;
     static INSTANCE: AimDebugRecorder;
+    // private RANGE: number;
     readonly repeatable: EventHook<GameTickEvent>;
 }

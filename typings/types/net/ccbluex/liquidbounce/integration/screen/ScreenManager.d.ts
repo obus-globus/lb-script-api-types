@@ -20,7 +20,7 @@ export class ScreenManager extends Object implements EventListener {
     /**
      * Checks if the given screen is an active client screen.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L372 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:372}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L372 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:372}
      */
     static isClientScreen(paramarg0: Screen): boolean;
     readonly browserSettings: IntegrationBrowserSettings;
@@ -35,7 +35,7 @@ export class ScreenManager extends Object implements EventListener {
      * May be null if the browser backend is not initialized. This can happen when
      * {@link BrowserBackendManager.isSkipping} is true.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:66}
      */
     readonly mainBrowser: Browser | null;
     /*not mapped: */ getParent$liquidbounce(): Screen;
@@ -47,7 +47,7 @@ export class ScreenManager extends Object implements EventListener {
      *
      * If the acknowledgement is not confirmed after 500ms, the integration browser will be reloaded.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:81}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:81}
      */
     readonly screenAcknowledgement: ScreenAcknowledgement;
     // private screenHandler: EventHook<ScreenEvent>;

@@ -24,7 +24,7 @@ import type { ScoreHolder } from '../../../../../../../../net/minecraft/world/sc
  * attackability and assured totem pops instead of death
  * into {@link RemotePlayer}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:33}
  */
 export class FakePlayer extends RemotePlayer implements MinecraftShortcuts {
     static ARMOR_SLOT_OFFSET: number;
@@ -108,18 +108,18 @@ export class FakePlayer extends RemotePlayer implements MinecraftShortcuts {
     static getViewScale(): number;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    constructor(level: ClientLevel, gameProfile: GameProfile, onRemoval: (param0: FakePlayer) => void | null)
-    onRemoval: (param0: FakePlayer) => void | null;
+    constructor(level: ClientLevel, gameProfile: GameProfile, onRemoval: ((param0: FakePlayer) => void) | null)
+    onRemoval: ((param0: FakePlayer) => void) | null;
     /**
      * The fake player takes no knockback.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:104}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:104}
      */
     knockback(strength: number, x: number, z: number): void;
     /**
      * Loads the attributes from the player into the fake player.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:44}
      */
     loadAttributes(snapshot: PosPoseSnapshot): void;
     remove(reason: Entity$RemovalReason): void;
@@ -127,7 +127,7 @@ export class FakePlayer extends RemotePlayer implements MinecraftShortcuts {
     /**
      * The fake player constantly checks for removal.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt:89}
      */
     tick(): void;
 }

@@ -14,7 +14,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  *
  * @author Nullable
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:37}
  */
 export class FlyVulcan286Teleport extends Mode {
     static Companion: Tagged$Companion;
@@ -33,7 +33,7 @@ export class FlyVulcan286Teleport extends Mode {
      * After taking damage, vulcan gives leniency to all sorts of stuff like
      * motion, and teleporting.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:57}
      */
     readonly repeatable: EventHook<GameTickEvent>;
     disable(): void;

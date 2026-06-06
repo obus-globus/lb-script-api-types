@@ -13,6 +13,7 @@ import type { LithiumData } from '../../../../net/caffeinemc/mods/lithium/common
 import type { LithiumData$Data } from '../../../../net/caffeinemc/mods/lithium/common/world/LithiumData$Data.d.ts'
 import type { BlockEntityGetter } from '../../../../net/caffeinemc/mods/lithium/common/world/blockentity/BlockEntityGetter.d.ts'
 import type { LevelAccessor } from '../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/LevelAccessor.d.ts'
+import type { MixinLevelInvoker } from '../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/client/MixinLevelInvoker.d.ts'
 import type { AttachmentTarget } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentTarget$OnAttachedSet } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget$OnAttachedSet.d.ts'
 import type { AttachmentType } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
@@ -92,7 +93,7 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { Scoreboard } from '../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
-export abstract class Level extends Object implements AutoCloseable, ChunkRandomSource, LithiumData, BlockEntityGetter, LevelAccessor, AttachmentTarget, GlobalAttachmentsProvider, AttachmentTargetImpl, LoadedChunksCache, LevelAccessor_2, LevelHeightAccessor {
+export abstract class Level extends Object implements AutoCloseable, ChunkRandomSource, LithiumData, BlockEntityGetter, LevelAccessor, MixinLevelInvoker, AttachmentTarget, GlobalAttachmentsProvider, AttachmentTargetImpl, LoadedChunksCache, LevelAccessor_2, LevelHeightAccessor {
     static DIRECTIONS: (Object | null)[];
     static END: ResourceKey<Level>;
     static LONG_PARTICLE_CLIP_RANGE: number;

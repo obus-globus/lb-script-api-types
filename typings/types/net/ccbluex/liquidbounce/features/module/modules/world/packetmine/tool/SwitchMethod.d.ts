@@ -12,7 +12,7 @@ export class SwitchMethod extends Enum<SwitchMethod> implements Tagged, Minecraf
     /**
      * Only works before 1.21.3.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/SwitchMethod.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/SwitchMethod.kt:85}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/SwitchMethod.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/SwitchMethod.kt:85}
      */
     static PICK: SwitchMethod;
     static SWAP: SwitchMethod;

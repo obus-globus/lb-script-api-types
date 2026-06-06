@@ -20,8 +20,8 @@ export class Sorting extends Enum<Sorting> implements Tagged {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Sorting;
     static values(): (Object | null)[];
-    private constructor(tag: string, comparator: (param0: PlayerInfo) => kotlin.Boolean | null)
-    readonly comparator: (param0: PlayerInfo) => kotlin.Boolean | null;
+    private constructor(tag: string, comparator: ((param0: PlayerInfo) => kotlin.Boolean) | null)
+    readonly comparator: ((param0: PlayerInfo) => kotlin.Boolean) | null;
     readonly tag: string;
     name(): "VANILLA" | "PING" | "LENGTH" | "SCORE_LENGTH" | "ALPHABETICAL" | "REVERSE_ALPHABETICAL" | "NONE";
 }

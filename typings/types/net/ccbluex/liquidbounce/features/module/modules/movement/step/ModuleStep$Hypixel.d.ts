@@ -7,16 +7,18 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../../net
 /**
  * does not seem to work above a certain y level for some reason
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt#L275 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt:275}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt#L275 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt:275}
  */
 export class ModuleStep$Hypixel extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleStep$Hypixel;
-    readonly alternateBypass: boolean;
+    // private alternateBypass: boolean;
+    // private /*not mapped: */ getAlternateBypass(): boolean;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     // private networkTickHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
-    readonly spoof: boolean;
+    // private spoof: boolean;
+    // private /*not mapped: */ getSpoof(): boolean;
     // private /*not mapped: */ getStepHeight(): number;
     // private stepping: boolean;
     disable(): void;

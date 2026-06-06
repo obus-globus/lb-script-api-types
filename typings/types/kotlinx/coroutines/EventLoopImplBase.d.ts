@@ -15,7 +15,7 @@ export abstract class EventLoopImplBase extends EventLoopImplPlatform implements
     constructor()
     // private closeQueue(): void;
     delay(time: number): void;
-    // private dequeue(): () => void | null;
+    // private dequeue(): (() => void) | null;
     dispatch(context: CoroutineContext, block: () => void): void;
     enqueue(task: () => void): void;
     // private enqueueDelayedTasks(): void;

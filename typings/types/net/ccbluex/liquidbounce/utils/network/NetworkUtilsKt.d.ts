@@ -17,7 +17,7 @@ export class NetworkUtilsKt extends Object {
     /**
      * Sends an open inventory packet with the help of ViaFabricPlus. This is only for older versions. (<= 1.11.2)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:75}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:75}
      */
     static send1_11_1OpenInventory(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
     static send1_21_5StartSneaking(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
@@ -32,7 +32,7 @@ export class NetworkUtilsKt extends Object {
     /**
      * {@link MultiPlayerGameMode.useItem} but with custom rotations.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L187 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:187}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L187 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:187}
      */
     static useItem(multiPlayerGameMode: MultiPlayerGameMode, player: Player, hand: InteractionHand, yRot: number, xRot: number): InteractionResult;
 }

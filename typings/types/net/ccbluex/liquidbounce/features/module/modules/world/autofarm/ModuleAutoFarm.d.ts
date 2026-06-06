@@ -1,6 +1,7 @@
 import type { Pair } from '../../../../../../../../kotlin/Pair.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
+import type { RotationUpdateEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/RotationUpdateEvent.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { RotationsValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -11,7 +12,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
  *
  * Automatically farms stuff for you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt:66}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt:66}
  */
 export class ModuleAutoFarm extends ClientModule {
     static INSTANCE: ModuleAutoFarm;
@@ -24,6 +25,7 @@ export class ModuleAutoFarm extends ClientModule {
     // private /*not mapped: */ getInteractDelay(): { start: number; endInclusive: number; step: number };
     // private range: number;
     // private /*not mapped: */ getRange(): number;
+    // private rotationUpdateHandler: EventHook<RotationUpdateEvent>;
     // private rotations: RotationsValueGroup;
     /*not mapped: */ getRotations$liquidbounce(): RotationsValueGroup;
     // private tickHandler: EventHook<GameTickEvent>;

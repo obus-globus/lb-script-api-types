@@ -8,7 +8,7 @@ export class InputUtilKt extends Object {
      *
      * @returns A set of simplified mouse input names.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:78}
      */
     static getAvailableKeyboardKeys(): string[];
     /**
@@ -16,7 +16,7 @@ export class InputUtilKt extends Object {
      *
      * @returns A set of simplified keyboard input names.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:88}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:88}
      */
     static getAvailableMouseKeys(): string[];
     /**
@@ -30,7 +30,7 @@ export class InputUtilKt extends Object {
      * @param name The key name as a string.
      * @returns The corresponding InputUtil.Key object.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:25}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:25}
      */
     static inputByName(name: string): InputConstants$Key;
     /**
@@ -41,7 +41,7 @@ export class InputUtilKt extends Object {
      *
      * @returns `true` if the key is pressed; otherwise, `false`.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:55}
      */
     static isPressed(paramarg0: InputConstants$Key): boolean;
     /**
@@ -51,7 +51,7 @@ export class InputUtilKt extends Object {
      * @param translationKey The full key name as a string.
      * @returns The reduced key name as a string.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:66}
      */
     static reduceInputName(translationKey: string): string;
     /**
@@ -59,7 +59,7 @@ export class InputUtilKt extends Object {
      *
      * @returns null if it's not a valid modifier.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:100}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:100}
      */
     static toModifierOrNull(key: InputConstants$Key): InputBind$Modifier;
 }

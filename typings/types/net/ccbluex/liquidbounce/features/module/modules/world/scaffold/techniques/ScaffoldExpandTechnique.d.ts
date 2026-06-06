@@ -11,7 +11,7 @@ import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/V
 /**
  * Normal technique, which is basically just normal scaffold.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldExpandTechnique.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldExpandTechnique.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldExpandTechnique.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldExpandTechnique.kt:40}
  */
 export class ScaffoldExpandTechnique extends ScaffoldTechnique {
     static Companion: Tagged$Companion;

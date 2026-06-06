@@ -9,7 +9,7 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
  *
  * Shows you from which player a tamable entity or projectile belongs to.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt:36}
  */
 export class ModuleMobOwners extends ClientModule {
     static INSTANCE: ModuleMobOwners;
@@ -20,5 +20,5 @@ export class ModuleMobOwners extends ClientModule {
     // private /*not mapped: */ getProjectiles(): boolean;
     // private uuidNameCache: Map<UUID, (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean>;
     // private getFromMojangApi(ownerId: UUID): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    getOwnerInfoText(entity: Entity | null): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean | null;
+    getOwnerInfoText(entity: Entity | null): ((param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean) | null;
 }

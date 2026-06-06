@@ -6,7 +6,7 @@ import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquid
 /**
  * Jump Reset mode. A technique most players use to minimize the amount of knockback they get.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt:29}
  */
 export class VelocityJumpReset extends VelocityMode {
     static Companion: Tagged$Companion;

@@ -15,13 +15,14 @@ export class ItemCategorizationsKt extends Object {
     /**
      * @see Items.SHIELD
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:108}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:108}
      */
     static getBlocksAttacksComponent(paramarg0: DataComponentGetter): BlocksAttacks;
     static getEquipmentSlot(paramarg0: DataComponentGetter): EquipmentSlot;
     static getEquippableComponent(paramarg0: DataComponentGetter): Equippable;
     static getFoodComponent(paramarg0: DataComponentGetter): FoodProperties;
     static getToolComponent(paramarg0: DataComponentGetter): Tool;
+    static isAnyChest(paramarg0: TypedInstance<Item>): boolean;
     static isAxe(paramarg0: TypedInstance<Item>): boolean;
     static isBundle(paramarg0: TypedInstance<Item>): boolean;
     static isChestArmor(paramarg0: TypedInstance<Item>): boolean;
@@ -34,7 +35,7 @@ export class ItemCategorizationsKt extends Object {
     /**
      * Replacement of 1.21.4 `MiningToolItem`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:68}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:68}
      */
     static isMiningTool(paramarg0: TypedInstance<Item>): boolean;
     static isPickaxe(paramarg0: TypedInstance<Item>): boolean;

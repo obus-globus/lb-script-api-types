@@ -12,7 +12,7 @@ export class ModuleParticles$BuiltinParticle extends Enum<ModuleParticles$Builti
      * Original: https://www.svgrepo.com/svg/487288/dollar?edit=true
      * Modified: @sqlerrorthing
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L154 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:154}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L154 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:154}
      */
     static DOLLAR: ModuleParticles$BuiltinParticle;
     static HEART: ModuleParticles$BuiltinParticle;
@@ -21,7 +21,7 @@ export class ModuleParticles$BuiltinParticle extends Enum<ModuleParticles$Builti
     /**
      * Original: IDK (first: https://github.com/CCBlueX/LiquidBounce/pull/4976)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L143 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:143}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L143 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:143}
      */
     static ORBIZ: ModuleParticles$BuiltinParticle;
     static POINT: ModuleParticles$BuiltinParticle;
@@ -32,7 +32,7 @@ export class ModuleParticles$BuiltinParticle extends Enum<ModuleParticles$Builti
      * Original: https://www.svgrepo.com/svg/528677/stars-minimalistic
      * Modified: @sqlerrorthing
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L148 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:148}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L148 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:148}
      */
     static STAR: ModuleParticles$BuiltinParticle;
     static getEntries(): ModuleParticles$BuiltinParticle[];

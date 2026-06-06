@@ -33,7 +33,7 @@ export class VertexBuilderKt extends Object {
      *
      * @param origin a preferred origin; the lambda receives the resolved origin that must be used for relative vertex positions.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
      */
     static buildMesh(staticMeshStorage: StaticMeshStorage, pipeline: RenderPipeline, rotate: boolean, origin: BlockPos, block: (param0: Object | null, param1: Object | null, param2: Object | null) => void): void;
     static setColor(vertexConsumer: VertexConsumer, color: Color4b): VertexConsumer;

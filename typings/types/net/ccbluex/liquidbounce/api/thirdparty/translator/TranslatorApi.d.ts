@@ -11,7 +11,7 @@ import type { TranslationResult } from '../../../../../../net/ccbluex/liquidboun
  *
  * The API ensures that the provided text is not empty before attempting to perform the translation.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:24}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:24}
  */
 export interface TranslatorApi extends Object{
     /**
@@ -26,7 +26,7 @@ export interface TranslatorApi extends Object{
      * @param text The text to translate.
      * @returns A {@link TranslationResult} object containing the translation result.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:35}
      */
     translate(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
     /**
@@ -38,7 +38,7 @@ export interface TranslatorApi extends Object{
      * @param text The text to translate.
      * @returns A {@link TranslationResult} object containing the translation result.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:61}
      */
     translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
 }

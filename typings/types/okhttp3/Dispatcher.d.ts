@@ -9,7 +9,7 @@ export class Dispatcher extends Object {
     constructor(executorService: ExecutorService | null)
     executorService(): ExecutorService;
     // private executorServiceOrNull: ExecutorService | null;
-    idleCallback: () => void | null;
+    idleCallback: (() => void) | null;
     maxRequests: number;
     maxRequestsPerHost: number;
     // private readyAsyncCalls: RealCall$AsyncCall[];

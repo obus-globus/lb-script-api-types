@@ -10,7 +10,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  * - **Tested on:** minecraft.vagdedes.com
  * - it will flag randomly, that's just spartan for you. Could flag anywhere from 0-20vl if you do 180's with it on
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/spartan/SpeedSpartan524.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/spartan/SpeedSpartan524.kt:67}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/spartan/SpeedSpartan524.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/spartan/SpeedSpartan524.kt:67}
  */
 export class SpeedSpartanV4043FastFall extends Mode {
     static Companion: Tagged$Companion;

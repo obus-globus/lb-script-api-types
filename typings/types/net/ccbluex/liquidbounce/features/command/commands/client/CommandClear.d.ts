@@ -6,7 +6,7 @@ import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbou
  *
  * Allow clears the chat history in the game.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandClear.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandClear.kt:26}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandClear.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandClear.kt:26}
  */
 export class CommandClear extends Object implements Command$Factory {
     static INSTANCE: CommandClear;

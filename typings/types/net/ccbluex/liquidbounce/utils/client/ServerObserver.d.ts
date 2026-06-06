@@ -45,7 +45,7 @@ export class ServerObserver extends Object implements EventListener {
      * @see {@link ServerboundCommandSuggestionPacket}
      * @see {@link ModulePlugins}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:142}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:142}
      */
     captureCommandSuggestions(timeout: Duration): boolean;
     children(): EventListener[];
@@ -54,7 +54,7 @@ export class ServerObserver extends Object implements EventListener {
      *
      * @author RtxOP
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L301 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:301}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L301 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:301}
      */
     guessAntiCheat(address: string | null): string | null;
     parent(): EventListener | null;
@@ -62,7 +62,7 @@ export class ServerObserver extends Object implements EventListener {
      * Reconnects to the last server. This is safe to call from every thread since it records a render call and
      * therefore runs in the Minecraft thread
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:122}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:122}
      */
     reconnect(): void;
     requestHostingInformation(): void;

@@ -8,7 +8,7 @@ export class ItemSlot$Companion extends Object {
      * Distance order:
      * current hand -> offhand -> other hotbar slots -> other slots
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:59}
      */
     PREFER_NEARBY: (param0: ItemSlot) => kotlin.Boolean;
 }

@@ -37,14 +37,14 @@ export class ThemeManager extends Config {
      * Open {@link Browser} with the given {@link CustomScreenType} and mark as static if {@link markAsStatic} is true.
      * This tab will be locked to 60 FPS since it is not input-aware.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt#L168 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt:168}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt#L168 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt:168}
      */
     openImmediate(customScreenType: CustomScreenType | null, markAsStatic: boolean, settings: BrowserSettings): Browser;
     /**
      * Open {@link Browser} with the given {@link CustomScreenType} and mark as static if {@link markAsStatic} is true.
      * This tab will be locked to the highest refresh rate since it is input-aware.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt:185}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeManager.kt:185}
      */
     openInputAwareImmediate(customScreenType: CustomScreenType | null, markAsStatic: boolean, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor): Browser;
     updateImmediate(browser: Browser | null, customScreenType: CustomScreenType | null, markAsStatic: boolean): void;

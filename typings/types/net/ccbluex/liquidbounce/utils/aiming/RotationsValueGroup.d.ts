@@ -12,7 +12,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 /**
  * Configurable to configure the dynamic rotation engine
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt:36}
  */
 export class RotationsValueGroup extends ValueGroup {
     constructor(owner: EventListener, movementCorrection: MovementCorrection, combatSpecific: boolean)
@@ -34,7 +34,7 @@ export class RotationsValueGroup extends ValueGroup {
      * @param rotation The rotation to rotate to
      * @returns The amount of ticks it takes to rotate to the rotation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt:85}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.kt:85}
      */
     calculateTicks(rotation: Rotation): number;
     toRotationTarget(rotation: Rotation, entity: Entity | null, considerInventory: boolean, whenReached: RestrictedSingleUseAction | null): RotationTarget;

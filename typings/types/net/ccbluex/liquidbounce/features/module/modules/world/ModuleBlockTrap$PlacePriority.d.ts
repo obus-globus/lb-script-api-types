@@ -8,7 +8,7 @@ import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.
 /**
  * Determines how the blocks are added to the placement queue.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt:165}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt:165}
  */
 export class ModuleBlockTrap$PlacePriority extends Enum<ModuleBlockTrap$PlacePriority> implements Tagged {
     static CLOSEST: ModuleBlockTrap$PlacePriority;

@@ -34,6 +34,7 @@ export class ValueType extends Enum<ValueType> {
     static NAMED_ITEM_LIST: ValueType;
     static PROXY: ValueType;
     static REGISTRY_LIST: ValueType;
+    static REGISTRY_MUTABLE_LIST: ValueType;
     static S2C_PACKET: ValueType;
     static SOUND_EVENT: ValueType;
     static SUBSCRIBED_ITEM: ValueType;
@@ -49,5 +50,5 @@ export class ValueType extends Enum<ValueType> {
     private constructor(deserializer: HumanInputDeserializer$StringDeserializer<Object> | null, completer: AutoCompletionProvider)
     readonly completer: AutoCompletionProvider;
     readonly deserializer: HumanInputDeserializer$StringDeserializer<Object> | null;
-    name(): "BOOLEAN" | "FLOAT" | "FLOAT_RANGE" | "INT" | "INT_RANGE" | "TEXT" | "COLOR" | "BLOCK" | "ITEM" | "ENCHANTMENT" | "SOUND_EVENT" | "MOB_EFFECT" | "MENU" | "ENTITY_TYPE" | "C2S_PACKET" | "S2C_PACKET" | "CLIENT_MODULE" | "KEY" | "FILE" | "BIND" | "VECTOR3_I" | "VECTOR3_D" | "VECTOR2_F" | "LIST" | "CHOOSE" | "MULTI_CHOOSE" | "MUTABLE_LIST" | "NAMED_ITEM_LIST" | "REGISTRY_LIST" | "CURVE" | "CONFIGURABLE" | "TOGGLEABLE" | "CHOICE" | "FRIEND" | "PROXY" | "ACCOUNT" | "SUBSCRIBED_ITEM" | "INVALID";
+    name(): "BOOLEAN" | "FLOAT" | "FLOAT_RANGE" | "INT" | "INT_RANGE" | "TEXT" | "COLOR" | "BLOCK" | "ITEM" | "ENCHANTMENT" | "SOUND_EVENT" | "MOB_EFFECT" | "MENU" | "ENTITY_TYPE" | "C2S_PACKET" | "S2C_PACKET" | "CLIENT_MODULE" | "KEY" | "FILE" | "BIND" | "VECTOR3_I" | "VECTOR3_D" | "VECTOR2_F" | "LIST" | "CHOOSE" | "MULTI_CHOOSE" | "MUTABLE_LIST" | "NAMED_ITEM_LIST" | "REGISTRY_LIST" | "REGISTRY_MUTABLE_LIST" | "CURVE" | "CONFIGURABLE" | "TOGGLEABLE" | "CHOICE" | "FRIEND" | "PROXY" | "ACCOUNT" | "SUBSCRIBED_ITEM" | "INVALID";
 }

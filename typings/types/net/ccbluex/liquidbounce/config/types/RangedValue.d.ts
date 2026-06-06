@@ -7,7 +7,7 @@ import type { ValueType } from '../../../../../net/ccbluex/liquidbounce/config/t
 /**
  * Ranged value adds support for closed ranges
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt:26}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt:26}
  */
 export class RangedValue<T extends Object | number | string | boolean> extends Value<T> {
     static Companion: RangedValue$Companion;

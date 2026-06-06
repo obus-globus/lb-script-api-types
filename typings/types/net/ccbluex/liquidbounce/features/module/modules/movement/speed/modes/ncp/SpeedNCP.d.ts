@@ -11,7 +11,7 @@ import type { SpeedNCP$Companion } from '../../../../../../../../../../net/ccblu
  * tested on anticheat.test.com and eu.loyisa.cn
  * made for ncp, works on uncp and other anticheats by changing some options
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/ncp/SpeedNCP.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/ncp/SpeedNCP.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/ncp/SpeedNCP.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/ncp/SpeedNCP.kt:37}
  */
 export class SpeedNCP extends SpeedBHopBase {
     static Companion: Tagged$Companion;

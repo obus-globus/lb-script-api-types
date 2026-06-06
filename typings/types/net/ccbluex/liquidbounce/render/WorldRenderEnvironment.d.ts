@@ -21,21 +21,21 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
  *
  * @param renderTarget The render target framebuffer.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:194}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:194}
  */
 export class WorldRenderEnvironment extends Object {
     static Companion: WorldRenderEnvironment$Companion;
     /**
      * Starts world-frame scoped rendering context.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L344 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:344}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L344 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:344}
      */
     static beginWorldFrame(renderTarget: RenderTarget, eventPoseStack: PoseStack, camera: Camera): void;
     static create(renderTarget: RenderTarget, poseStack: PoseStack, camera: Camera): WorldRenderEnvironment;
     /**
      * Flushes and clears world-frame scoped rendering context.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L361 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:361}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L361 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:361}
      */
     static endWorldFrame(): void;
     constructor(renderTarget: RenderTarget, poseStack: PoseStack, camera: Camera, batchCollector: BatchCollector, frameBoundCollector: boolean)
@@ -49,7 +49,7 @@ export class WorldRenderEnvironment extends Object {
     /**
      * Temporarily switches the environment to batch mode.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L226 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:226}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L226 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:226}
      */
     batch(block: (param0: WorldRenderEnvironment) => void): void;
     // private drawImmediate(key: RenderBufferKey, meshData: MeshData): void;
@@ -58,20 +58,20 @@ export class WorldRenderEnvironment extends Object {
      *
      * Prefer {@link net.ccbluex.liquidbounce.render.drawCustomMesh} for regular use.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L261 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:261}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L261 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:261}
      */
     finish(consumer: VertexConsumer, submit: boolean): void;
     flushBatchIfLocalEnvironment(): void;
     /**
      * Temporarily switches the environment to immediate mode.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:231}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:231}
      */
     immediate(block: (param0: WorldRenderEnvironment) => void): void;
     /**
      * Converts a world-space position to the camera-relative coordinate system.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L211 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:211}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L211 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:211}
      */
     relativeToCamera(pos: Vec3f): Vec3;
     relativeToCamera(pos: Position): Vec3;
@@ -81,7 +81,7 @@ export class WorldRenderEnvironment extends Object {
      *
      * Prefer {@link net.ccbluex.liquidbounce.render.drawCustomMesh} for regular use.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:236}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:236}
      */
     start(pipeline: RenderPipeline, textures: { [key: string]: AbstractTexture }, uniforms: { [key: string]: GpuBufferSlice }): VertexConsumer;
     withMode(mode: DrawMode, block: (param0: WorldRenderEnvironment) => void): void;

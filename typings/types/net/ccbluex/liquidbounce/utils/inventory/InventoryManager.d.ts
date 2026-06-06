@@ -14,7 +14,7 @@ import type { InventoryAction$Chain } from '../../../../../net/ccbluex/liquidbou
  *  - Progress Bar
  *  - Off-screen actions
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:54}
  */
 export class InventoryManager extends Object implements EventListener {
     static INSTANCE: InventoryManager;
@@ -23,13 +23,13 @@ export class InventoryManager extends Object implements EventListener {
      *
      * @see net.ccbluex.liquidbounce.injection.mixins.viaversion.MixinPacketWrapper
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L225 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:225}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L225 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:225}
      */
     static onClickOccurs(): void;
     /**
      * Called when the inventory was opened. Can be tracked by listening for {@link ClientboundOpenScreenPacket}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:236}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:236}
      */
     static onInventoryOpened(): void;
     // private COMPARATOR_ACTION_CHAIN: (param0: InventoryAction$Chain) => kotlin.Boolean;

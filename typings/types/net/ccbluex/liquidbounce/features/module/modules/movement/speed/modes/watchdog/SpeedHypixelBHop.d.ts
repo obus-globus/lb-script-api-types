@@ -12,7 +12,7 @@ import type { SpeedHypixelBHop$Companion } from '../../../../../../../../../../n
  * - **Anticheat:** Watchdog (NCP) (12.12.2023)
  * - **Tested on:** hypixel.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:37}
  */
 export class SpeedHypixelBHop extends SpeedBHopBase {
     static Companion: Tagged$Companion;
@@ -24,7 +24,7 @@ export class SpeedHypixelBHop extends SpeedBHopBase {
     /**
      * Damage Boost
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:105}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     readonly repeatable: EventHook<GameTickEvent>;

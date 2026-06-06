@@ -11,7 +11,7 @@ export class PolyglotScript$RegisterScript extends Object implements Function<{ 
      * @param scriptObject JavaScript object containing information about the script.
      * @returns The instance of this script.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:189}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:189}
      */
     apply(scriptObject: { [key: string]: Object }): PolyglotScript;
     compose(arg0: (param0: V) => T): (param0: V) => R;

@@ -3,6 +3,7 @@ import type { ComponentMarker } from '../../../../../com/nikoverflow/exploitprev
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ClientLanguage } from '../../../../../net/minecraft/client/resources/language/ClientLanguage.d.ts'
 import type { Language } from '../../../../../net/minecraft/locale/Language.d.ts'
 import type { ComponentContents } from '../../../../../net/minecraft/network/chat/ComponentContents.d.ts'
 import type { FormattedText } from '../../../../../net/minecraft/network/chat/FormattedText.d.ts'
@@ -25,6 +26,7 @@ export class TranslatableContents extends Object implements ComponentMarker, Com
     codec(): MapCodec<TranslatableContents>;
     // private decompose(): void;
     // private decomposeTemplate(template: string, decomposedParts: (param0: FormattedText) => void): void;
+    // private ep$getLanguage(): ClientLanguage;
     ep$mark(): void;
     equals(o: Object | null): boolean;
     getArgs(): Object[];

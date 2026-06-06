@@ -18,7 +18,7 @@ export class RenderPassExtensionsKt extends Object {
      *
      * This function assumes the {@link GpuBufferSlice}s are correctly aligned with corresponding vertex/index byte count.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:89}
      */
     static bindAndDraw(renderPass: RenderPass, vertexSlice: GpuBufferSlice, indexSlice: GpuBufferSlice, vertexFormat: VertexFormat, indexType: VertexFormat$IndexType, indexCount: number): void;
     static bindDefaultUniforms(renderPass: RenderPass): void;
@@ -32,7 +32,7 @@ export class RenderPassExtensionsKt extends Object {
     /**
      * Color-only RenderPass.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:152}
      */
     static createRenderPass(paramarg0: RenderTarget): RenderPass;
     static createRenderPass(paramarg0: RenderTarget, paramarg1: () => string): RenderPass;

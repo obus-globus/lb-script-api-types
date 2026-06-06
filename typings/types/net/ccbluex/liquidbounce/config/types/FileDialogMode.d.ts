@@ -13,7 +13,7 @@ import type { FileDialogMode$Companion } from '../../../../../net/ccbluex/liquid
  * - {@link SAVE_FILE}: Opens a dialog to choose a file path for saving.
  * - {@link OPEN_DIRECTORY}: Opens a dialog to select an existing directory. File extension filters are ignored in this mode.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fac52d9c85c85141cb327e00599cdf8e0a7afc66/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:81}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:81}
  */
 export class FileDialogMode extends Enum<FileDialogMode> {
     static Companion: FileDialogMode$Companion;
@@ -24,8 +24,10 @@ export class FileDialogMode extends Enum<FileDialogMode> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileDialogMode;
     static values(): (Object | null)[];
-    private constructor(title: string)
+    private constructor(translationKey: string, fallbackTitle: string)
+    // private fallbackTitle: string;
     readonly title: string;
+    // private translationKey: string;
     selectFiles(extensions: string[] | null): string[];
     protected selectFilesRaw(extensions: string[] | null): string | null;
     name(): "OPEN_FILE" | "SAVE_FILE" | "OPEN_DIRECTORY";
