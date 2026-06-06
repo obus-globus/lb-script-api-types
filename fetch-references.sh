@@ -29,7 +29,7 @@ mkdir -p "$REPO_ROOT/references"
 # Disk-friendly reuse: if a sibling liquidbounce-helper checkout already has the
 # LB source (commonly already built with MC deps), symlink to it instead of
 # re-cloning gigabytes. Override with FRESH_CLONE=1.
-SIBLING="$REPO_ROOT/../liquidbounce-helper/references/liquidbounce"
+SIBLING="$REPO_ROOT/../../older-stuff/liquidbounce-helper/references/liquidbounce"
 if [[ "${FRESH_CLONE:-0}" != "1" && ! -e "$LB_DIR" && -d "$SIBLING/.git" ]]; then
   echo "Reusing sibling LB checkout via symlink: $SIBLING"
   ln -s "$(cd "$SIBLING" && pwd)" "$LB_DIR"
