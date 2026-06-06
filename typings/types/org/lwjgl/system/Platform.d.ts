@@ -14,7 +14,6 @@ export class Platform extends Enum<Platform> {
     static valueOf(paramarg0: string): Platform;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: string)
-    readonly name: string;
     // private nativePath: string;
     getName(): string;
     mapLibraryName(arg0: string): string;

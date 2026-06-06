@@ -42,7 +42,6 @@ export class EquipmentSlot extends Enum<EquipmentSlot> implements StringRepresen
     // private countLimit: number;
     readonly id: number;
     readonly index: number;
-    readonly name: string;
     readonly type: EquipmentSlot$Type;
     canIncreaseExperience(): boolean;
     getFilterBit(offset: number): number;

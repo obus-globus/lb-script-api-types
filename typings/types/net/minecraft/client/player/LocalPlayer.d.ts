@@ -164,7 +164,6 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     // private minecraft: Minecraft;
     oPortalEffectIntensity: number;
     // private onGroundTicks: number;
-    readonly permissions: PermissionSet;
     portalEffectIntensity: number;
     // private positionReminder: number;
     readonly recipeBook: ClientRecipeBook;

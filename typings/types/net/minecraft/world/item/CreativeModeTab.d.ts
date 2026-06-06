@@ -19,7 +19,6 @@ export class CreativeModeTab extends Object implements FabricCreativeModeTabImpl
     readonly alignedRight: boolean;
     readonly backgroundTexture: Identifier;
     // private canScroll: boolean;
-    readonly column: number;
     readonly displayItems: E[];
     // private displayItemsGenerator: (param0: CreativeModeTab$ItemDisplayParameters, param1: CreativeModeTab$Output) => void;
     // private displayItemsSearchTab: ItemStack[];
@@ -27,7 +26,6 @@ export class CreativeModeTab extends Object implements FabricCreativeModeTabImpl
     // private iconGenerator: () => ItemStack;
     // private iconItemStack: ItemStack;
     // private page: number;
-    readonly row: CreativeModeTab$Row;
     // private showTitle: boolean;
     readonly type: CreativeModeTab$Type;
     buildContents(parameters: CreativeModeTab$ItemDisplayParameters): void;

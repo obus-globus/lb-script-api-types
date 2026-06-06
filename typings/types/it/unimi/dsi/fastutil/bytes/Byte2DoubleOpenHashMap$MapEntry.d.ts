@@ -14,8 +14,6 @@ export class Byte2DoubleOpenHashMap$MapEntry extends Object implements Byte2Doub
     constructor(null_: Byte2DoubleOpenHashMap$MapEntry)
     constructor(null_: Byte2DoubleOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteDoublePair;

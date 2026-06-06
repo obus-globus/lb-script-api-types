@@ -16,7 +16,6 @@ export class Object2FloatLinkedOpenCustomHashMap$MapEntry extends Object impleme
     constructor(null_: Object2FloatLinkedOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getFloatValue(): number;
     hashCode(): number;

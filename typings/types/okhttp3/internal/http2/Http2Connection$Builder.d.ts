@@ -19,7 +19,6 @@ export class Http2Connection$Builder extends Object {
     /*not mapped: */ getPingIntervalMillis$okhttp(): number;
     // private pushObserver: PushObserver;
     /*not mapped: */ getPushObserver$okhttp(): PushObserver;
-    socket: BufferedSocket;
     /*not mapped: */ getSocket$okhttp(): BufferedSocket;
     // private taskRunner: TaskRunner;
     /*not mapped: */ getTaskRunner$okhttp(): TaskRunner;

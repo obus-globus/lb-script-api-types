@@ -36,7 +36,6 @@ export class Axolotl$Variant extends Enum<Axolotl$Variant> implements StringRepr
     private constructor(id: number, name: string, common: boolean)
     // private common: boolean;
     readonly id: number;
-    readonly name: string;
     getId(): number;
     getName(): string;
     getSerializedName(): string;

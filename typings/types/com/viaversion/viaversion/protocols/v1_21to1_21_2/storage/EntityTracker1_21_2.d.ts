@@ -6,7 +6,6 @@ import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 export class EntityTracker1_21_2 extends EntityTrackerBase {
     constructor(arg0: UserConnection)
     // private boats: Int2ObjectMap<EntityTracker1_21_2$BoatEntity>;
-    readonly playerMaxHealthAttributeValue: number;
     playerMaxHealthAttributeValue(): number;
     removeEntity(arg0: number): void;
     setPlayerMaxHealthAttributeValue(arg0: number): void;

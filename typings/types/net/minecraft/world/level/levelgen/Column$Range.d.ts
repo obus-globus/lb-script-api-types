@@ -16,8 +16,6 @@ export class Column$Range extends Column {
     static line(): Column;
     static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => kotlin.Boolean, paramvalidEdge: (param0: BlockState) => kotlin.Boolean): Optional<Column>;
     constructor(floor: number, ceiling: number)
-    readonly ceiling: number;
-    readonly floor: number;
     ceiling(): number;
     floor(): number;
     getCeiling(): OptionalInt;

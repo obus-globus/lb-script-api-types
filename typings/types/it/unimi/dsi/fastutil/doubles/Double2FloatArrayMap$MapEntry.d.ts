@@ -14,8 +14,6 @@ export class Double2FloatArrayMap$MapEntry extends Object implements Double2Floa
     constructor(null_: Double2FloatArrayMap$MapEntry)
     constructor(null_: Double2FloatArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleFloatPair;

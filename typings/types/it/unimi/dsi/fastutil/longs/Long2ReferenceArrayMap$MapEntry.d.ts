@@ -13,7 +13,6 @@ export class Long2ReferenceArrayMap$MapEntry extends Object implements Long2Refe
     constructor(null_: Long2ReferenceArrayMap$MapEntry)
     constructor(null_: Long2ReferenceArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

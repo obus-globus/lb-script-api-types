@@ -26,7 +26,6 @@ export class MineshaftStructure$Type extends Enum<MineshaftStructure$Type> imple
     static values(): (Object | null)[];
     private constructor(name: string, wood: Block, plank: Block, fence: Block)
     readonly fenceState: BlockState;
-    readonly name: string;
     readonly planksState: BlockState;
     readonly woodState: BlockState;
     getFenceState(): BlockState;

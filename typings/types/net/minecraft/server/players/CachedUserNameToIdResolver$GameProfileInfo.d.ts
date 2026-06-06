@@ -4,7 +4,6 @@ import type { NameAndId } from '../../../../net/minecraft/server/players/NameAnd
 export class CachedUserNameToIdResolver$GameProfileInfo extends Object {
     private constructor(nameAndId: NameAndId, expirationDate: Date)
     // private expirationDate: Date;
-    readonly lastAccess: number;
     // private nameAndId: NameAndId;
     expirationDate(): Date;
     lastAccess(): number;

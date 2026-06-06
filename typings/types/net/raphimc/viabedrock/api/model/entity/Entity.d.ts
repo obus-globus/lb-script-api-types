@@ -28,17 +28,13 @@ export class Entity extends Object {
     entityFlags(): ActorFlags[];
     eyeOffset(): number;
     getJavaEntityDataIndex(arg0: string): number;
-    hasBossBar(): boolean;
     isOnGround(): boolean;
     javaId(): number;
     javaType(): EntityTypes1_21_11;
     javaUuid(): UUID;
-    name(): string;
     onEntityDataChanged(): void;
     playSound(arg0: SharedTypes_Legacy_LevelSoundEvent): void;
-    position(): Position3f;
     remove(): void;
-    rotation(): Position3f;
     runtimeId(): number;
     setHasBossBar(arg0: boolean): void;
     setName(arg0: string): void;

@@ -14,8 +14,6 @@ export class Long2BooleanArrayMap$MapEntry extends Object implements Long2Boolea
     constructor(null_: Long2BooleanArrayMap$MapEntry)
     constructor(null_: Long2BooleanArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongBooleanPair;

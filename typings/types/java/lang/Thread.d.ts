@@ -65,7 +65,6 @@ export class Thread extends Object implements Runnable {
     // private threadLocalRandomSeed: number;
     // private threadLocals: ThreadLocal$ThreadLocalMap;
     // private tid: number;
-    readonly uncaughtExceptionHandler: (param0: Thread, param1: Throwable) => void;
     alive(): boolean;
     asyncGetStackTrace(): StackTraceElement[];
     blockedOn(arg0: Interruptible): void;

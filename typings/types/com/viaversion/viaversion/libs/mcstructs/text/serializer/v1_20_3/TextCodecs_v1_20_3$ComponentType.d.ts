@@ -17,7 +17,6 @@ export class TextCodecs_v1_20_3$ComponentType extends Enum<TextCodecs_v1_20_3$Co
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: MapCodec<TextComponent>)
     readonly codec: MapCodec<TextComponent>;
-    readonly name: string;
     getCodec(): MapCodec<TextComponent>;
     getName(): string;
     name(): "STRING" | "TRANSLATION" | "KEYBIND" | "SCORE" | "SELECTOR" | "NBT";

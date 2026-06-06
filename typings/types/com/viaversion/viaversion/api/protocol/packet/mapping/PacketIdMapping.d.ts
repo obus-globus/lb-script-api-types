@@ -7,7 +7,6 @@ export class PacketIdMapping extends Object implements PacketMapping {
     static of(paramarg0: PacketType, paramarg1: (param0: PacketWrapper) => void): PacketMapping;
     static of(paramarg0: number, paramarg1: (param0: PacketWrapper) => void): PacketMapping;
     constructor(arg0: number, arg1: (param0: PacketWrapper) => void)
-    readonly handler: (param0: PacketWrapper) => void;
     // private mappedPacketId: number;
     appendHandler(arg0: (param0: PacketWrapper) => void): void;
     applyType(arg0: PacketWrapper): void;

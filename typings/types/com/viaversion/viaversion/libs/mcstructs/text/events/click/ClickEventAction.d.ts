@@ -20,7 +20,6 @@ export class ClickEventAction extends Enum<ClickEventAction> implements NamedTyp
     static valueOf(paramarg0: string): ClickEventAction;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: boolean)
-    readonly name: string;
     readonly userDefinable: boolean;
     getName(): string;
     isUserDefinable(): boolean;

@@ -14,8 +14,6 @@ export class Char2BooleanOpenCustomHashMap$MapEntry extends Object implements Ch
     constructor(null_: Char2BooleanOpenCustomHashMap$MapEntry)
     constructor(null_: Char2BooleanOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharBooleanPair;

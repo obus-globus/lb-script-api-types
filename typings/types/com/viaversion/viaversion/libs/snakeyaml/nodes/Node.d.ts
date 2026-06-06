@@ -37,5 +37,4 @@ export abstract class Node extends Object {
     setTwoStepsConstruction(arg0: boolean): void;
     setType(arg0: Class<Object>): void;
     setUseClassConstructor(arg0: boolean): void;
-    useClassConstructor(): boolean;
 }

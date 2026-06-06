@@ -16,7 +16,6 @@ export class Object2LongArrayMap$MapEntry extends Object implements Object2LongM
     constructor(null_: Object2LongArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getLongValue(): number;
     hashCode(): number;

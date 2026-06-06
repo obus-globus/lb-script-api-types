@@ -32,7 +32,6 @@ export class MobCategory extends Enum<MobCategory> implements StringRepresentabl
     // private isFriendly: boolean;
     // private isPersistent: boolean;
     // private max: number;
-    readonly name: string;
     readonly noDespawnDistance: number;
     getDespawnDistance(): number;
     getMaxInstancesPerChunk(): number;

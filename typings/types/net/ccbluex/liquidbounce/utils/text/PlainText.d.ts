@@ -80,7 +80,6 @@ export class PlainText extends Record implements CharSequence, Component, Format
     constructor(content: PlainTextContents, style: Style)
     // private content: PlainTextContents;
     /*not mapped: */ length(): number;
-    readonly style: Style;
     accept(arg0: (param0: number, param1: Style, param2: number) => kotlin.Boolean): boolean;
     chars(): IntStream;
     codePoints(): IntStream;

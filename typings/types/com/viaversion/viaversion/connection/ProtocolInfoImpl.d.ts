@@ -8,10 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ProtocolInfoImpl extends Object implements ProtocolInfo {
     constructor()
     readonly clientState: State;
-    readonly compressionEnabled: boolean;
     readonly pipeline: ProtocolPipeline;
-    readonly protocolVersion: ProtocolVersion;
-    readonly serverProtocolVersion: ProtocolVersion;
     readonly serverState: State;
     readonly username: string;
     readonly uuid: UUID;

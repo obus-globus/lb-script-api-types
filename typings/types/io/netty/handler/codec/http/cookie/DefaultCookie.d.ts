@@ -4,16 +4,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DefaultCookie extends Object implements Cookie {
     static UNDEFINED_MAX_AGE: number;
     constructor(arg0: string, arg1: string)
-    readonly domain: string;
     readonly httpOnly: boolean;
-    readonly maxAge: number;
     // private name: string;
     readonly partitioned: boolean;
-    readonly path: string;
-    readonly sameSite: CookieHeaderNames$SameSite;
     readonly secure: boolean;
-    readonly value: string;
-    readonly wrap: boolean;
     compareTo(arg0: Cookie): number;
     domain(): string;
     equals(arg0: Object | null): boolean;

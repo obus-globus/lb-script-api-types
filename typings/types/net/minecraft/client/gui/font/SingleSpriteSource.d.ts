@@ -5,7 +5,6 @@ import type { BakedGlyph } from '../../../../../net/minecraft/client/gui/font/gl
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 export class SingleSpriteSource extends Record implements GlyphSource {
     constructor(glyph: BakedGlyph)
-    readonly glyph: BakedGlyph;
     equals(o: Object | null): boolean;
     getGlyph(codepoint: number): BakedGlyph;
     getRandomGlyph(random: RandomSource, width: number): BakedGlyph;

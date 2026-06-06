@@ -1221,3 +1221,14 @@ fi
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/fix-binding-types.py" "$PKG_ROOT" || \
   echo "post-patches: WARNING fix-binding-types.py failed" >&2
+
+# ---------------------------------------------------------------------------
+# F7 — field/method name collisions. Java lets a field and a method share a
+# name (Mojang `onGround` + `onGround()`, records, JOML math, Map.Entry); TS
+# forbids it and the field declaration silently shadows the method. Drop one
+# declaration per class so the survivor is usable (mutable field + pure getter
+# -> keep field; otherwise keep the method). Idempotent. See
+# fix-member-collisions.py. (To be folded into the Kotlin generator next regen.)
+# ---------------------------------------------------------------------------
+python3 "$(dirname "$0")/fix-member-collisions.py" "$PKG_ROOT" || \
+  { echo "post-patches: ERROR — fix-member-collisions.py CRASHED" >&2; POSTPATCH_FAILED=1; }

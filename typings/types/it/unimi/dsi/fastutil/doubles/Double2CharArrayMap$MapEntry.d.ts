@@ -14,8 +14,6 @@ export class Double2CharArrayMap$MapEntry extends Object implements Double2CharM
     constructor(null_: Double2CharArrayMap$MapEntry)
     constructor(null_: Double2CharArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleCharPair;

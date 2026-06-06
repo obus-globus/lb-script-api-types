@@ -13,7 +13,6 @@ export class Int2ReferenceArrayMap$MapEntry extends Object implements Int2Refere
     constructor(null_: Int2ReferenceArrayMap$MapEntry)
     constructor(null_: Int2ReferenceArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

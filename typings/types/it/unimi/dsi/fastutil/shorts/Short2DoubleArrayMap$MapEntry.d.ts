@@ -14,8 +14,6 @@ export class Short2DoubleArrayMap$MapEntry extends Object implements Short2Doubl
     constructor(null_: Short2DoubleArrayMap$MapEntry)
     constructor(null_: Short2DoubleArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortDoublePair;

@@ -14,8 +14,6 @@ export class Int2DoubleOpenCustomHashMap$MapEntry extends Object implements Int2
     constructor(null_: Int2DoubleOpenCustomHashMap$MapEntry)
     constructor(null_: Int2DoubleOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntDoublePair;

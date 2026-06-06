@@ -15,7 +15,6 @@ export class Reference2ShortArrayMap$MapEntry extends Object implements Referenc
     constructor(null_: Reference2ShortArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getShortValue(): number;
     hashCode(): number;

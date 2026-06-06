@@ -14,8 +14,6 @@ export class Byte2FloatOpenHashMap$MapEntry extends Object implements Byte2Float
     constructor(null_: Byte2FloatOpenHashMap$MapEntry)
     constructor(null_: Byte2FloatOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteFloatPair;

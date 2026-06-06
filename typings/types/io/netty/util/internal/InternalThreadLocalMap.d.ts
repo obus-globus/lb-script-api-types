@@ -23,10 +23,8 @@ export class InternalThreadLocalMap extends UnpaddedInternalThreadLocalMap {
     // private charsetDecoderCache: Map<Charset, CharsetDecoder>;
     // private charsetEncoderCache: Map<Charset, CharsetEncoder>;
     // private cleanerFlags: BitSet;
-    readonly futureListenerStackDepth: number;
     // private handlerSharableCache: Map<Class<Object>, boolean>;
     // private indexedVariables: Object[];
-    readonly localChannelReaderStackDepth: number;
     rp1: number;
     rp2: number;
     rp3: number;

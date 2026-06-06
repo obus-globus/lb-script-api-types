@@ -14,8 +14,6 @@ export class Char2DoubleArrayMap$MapEntry extends Object implements Char2DoubleM
     constructor(null_: Char2DoubleArrayMap$MapEntry)
     constructor(null_: Char2DoubleArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharDoublePair;

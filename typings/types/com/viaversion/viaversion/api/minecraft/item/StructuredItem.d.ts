@@ -9,9 +9,6 @@ export class StructuredItem extends Object implements Item {
     static isEmpty(paramarg0: Item): boolean;
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: StructuredDataContainer)
-    readonly amount: number;
-    readonly data: StructuredDataContainer;
-    readonly identifier: number;
     amount(): number;
     copy(): StructuredItem;
     data(): number;

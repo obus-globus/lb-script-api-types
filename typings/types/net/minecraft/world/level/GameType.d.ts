@@ -39,7 +39,6 @@ export class GameType extends Enum<GameType> implements StringRepresentable {
     private constructor(id: number, name: string)
     readonly id: number;
     // private longName: Component;
-    readonly name: string;
     // private shortName: Component;
     getId(): number;
     getLongDisplayName(): Component;

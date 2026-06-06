@@ -32,5 +32,4 @@ export class Team$Visibility extends Enum<Team$Visibility> implements StringRepr
     name: string;
     getDisplayName(): Component;
     getSerializedName(): string;
-    name(): "ALWAYS" | "NEVER" | "HIDE_FOR_OTHER_TEAMS" | "HIDE_FOR_OWN_TEAM";
 }

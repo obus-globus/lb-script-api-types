@@ -14,8 +14,6 @@ export class Byte2ByteArrayMap$MapEntry extends Object implements Byte2ByteMap$E
     constructor(null_: Byte2ByteArrayMap$MapEntry)
     constructor(null_: Byte2ByteArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteBytePair;

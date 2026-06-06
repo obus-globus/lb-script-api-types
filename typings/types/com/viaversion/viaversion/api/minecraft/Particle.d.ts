@@ -7,7 +7,6 @@ export class Particle extends Object implements Copyable, IdHolder {
     static copy(paramarg0: Object | null): Object | null;
     constructor(arg0: number)
     readonly arguments: Particle$ParticleData<Object>[];
-    readonly id: number;
     add<T extends Object | number | string | boolean>(arg0: Type<T>, arg1: T): void;
     add<T extends Object | number | string | boolean>(arg0: number, arg1: Type<T>, arg2: T): void;
     copy(): Particle;

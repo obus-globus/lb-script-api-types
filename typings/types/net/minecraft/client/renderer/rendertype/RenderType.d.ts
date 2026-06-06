@@ -17,7 +17,6 @@ export class RenderType extends Object implements MixinRenderTypeAccessor, Rende
     static create(paramname: string, paramstate: RenderSetup): RenderType;
     constructor(name: string, state: RenderSetup)
     readonly name: string;
-    readonly outline: Optional<RenderType>;
     readonly state: RenderSetup;
     affectsCrumbling(): boolean;
     bufferSize(): number;

@@ -14,8 +14,6 @@ export class Short2ByteArrayMap$MapEntry extends Object implements Short2ByteMap
     constructor(null_: Short2ByteArrayMap$MapEntry)
     constructor(null_: Short2ByteArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortBytePair;

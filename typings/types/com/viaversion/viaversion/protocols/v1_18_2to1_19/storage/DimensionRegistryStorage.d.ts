@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class DimensionRegistryStorage extends Object implements StorableObject {
     constructor()
-    readonly dimensions: Map<Map$Entry<string, Tag>[], string>;
     dimensionKey(arg0: Map$Entry<string, Tag>[]): string;
     dimensions(): Map<Map$Entry<string, Tag>[], string>;
     onRemove(): void;

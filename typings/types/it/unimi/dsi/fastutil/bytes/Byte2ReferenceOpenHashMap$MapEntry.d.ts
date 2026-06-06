@@ -13,7 +13,6 @@ export class Byte2ReferenceOpenHashMap$MapEntry extends Object implements Byte2R
     constructor(null_: Byte2ReferenceOpenHashMap$MapEntry)
     constructor(null_: Byte2ReferenceOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

@@ -2,7 +2,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TRegexDFAExecutorProperties extends Object {
     constructor(forward: boolean, searching: boolean, genericCG: boolean, allowSimpleCG: boolean, trackLastGroup: boolean, minResultLength: number)
     readonly allowSimpleCG: boolean;
-    readonly canFindStart: boolean;
     readonly forward: boolean;
     readonly genericCG: boolean;
     readonly minResultLength: number;

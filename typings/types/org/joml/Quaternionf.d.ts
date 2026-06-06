@@ -264,9 +264,5 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     transformUnitPositiveZ(arg0: Vector3f): Vector3f;
     transformUnitPositiveZ(arg0: Vector4d): Vector4d;
     transformUnitPositiveZ(arg0: Vector4f): Vector4f;
-    w(): number;
     writeExternal(arg0: ObjectOutput): void;
-    x(): number;
-    y(): number;
-    z(): number;
 }

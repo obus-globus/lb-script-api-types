@@ -7,7 +7,6 @@ export class Period extends Object {
     private constructor(arg0: number, arg1: boolean, arg2: number, arg3: TimeUnit)
     constructor(arg0: number, arg1: boolean, arg2: number[])
     // private counts: number[];
-    readonly inFuture: boolean;
     // private timeLimit: number;
     and(arg0: number, arg1: TimeUnit): Period;
     at(): Period;

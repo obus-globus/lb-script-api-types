@@ -12,7 +12,6 @@ export class HmacAlgorithms extends Enum<HmacAlgorithms> {
     static valueOf(paramarg0: string): HmacAlgorithms;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     toString(): string;
     name(): "HMAC_MD5" | "HMAC_SHA_1" | "HMAC_SHA_224" | "HMAC_SHA_256" | "HMAC_SHA_384" | "HMAC_SHA_512";

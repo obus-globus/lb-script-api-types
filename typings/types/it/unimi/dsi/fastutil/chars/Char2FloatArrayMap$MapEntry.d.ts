@@ -14,8 +14,6 @@ export class Char2FloatArrayMap$MapEntry extends Object implements Char2FloatMap
     constructor(null_: Char2FloatArrayMap$MapEntry)
     constructor(null_: Char2FloatArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharFloatPair;

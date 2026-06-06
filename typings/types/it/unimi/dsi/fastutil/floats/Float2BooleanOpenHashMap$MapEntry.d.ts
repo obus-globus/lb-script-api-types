@@ -14,8 +14,6 @@ export class Float2BooleanOpenHashMap$MapEntry extends Object implements Float2B
     constructor(null_: Float2BooleanOpenHashMap$MapEntry)
     constructor(null_: Float2BooleanOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatBooleanPair;

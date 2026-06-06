@@ -13,7 +13,6 @@ export class Byte2ReferenceArrayMap$MapEntry extends Object implements Byte2Refe
     constructor(null_: Byte2ReferenceArrayMap$MapEntry)
     constructor(null_: Byte2ReferenceArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

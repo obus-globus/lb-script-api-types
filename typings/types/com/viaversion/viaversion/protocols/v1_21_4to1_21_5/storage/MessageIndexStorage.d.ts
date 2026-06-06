@@ -2,7 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class MessageIndexStorage extends Object implements StorableObject {
     constructor()
-    readonly index: number;
     getAndIncrease(): number;
     index(): number;
     onRemove(): void;

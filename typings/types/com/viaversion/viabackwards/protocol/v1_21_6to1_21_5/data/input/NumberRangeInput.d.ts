@@ -11,7 +11,6 @@ export class NumberRangeInput extends Object implements Input {
     // private labelFormat: string;
     // private start: number;
     // private step: number;
-    readonly value: number;
     asCommandSubstitution(): string;
     asTag(): Tag;
     displayName(): Tag;

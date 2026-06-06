@@ -32,7 +32,6 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     static Y_SIZE: number;
     static getStorageFolder(paramname: ResourceKey<Level>, parambaseFolder: Path[][]): Path[][];
     static getTeleportationScale(paramlastDimensionType: DimensionType, paramnewDimensionType: DimensionType): number;
-    readonly ambientLight: number;
     // private attributes: EnvironmentAttributeMap;
     // private cardinalLightType: CardinalLighting$Type;
     // private coordinateScale: number;

@@ -15,8 +15,6 @@ export class AffixTokenMatcherFactory extends Object {
     locale: ULocale;
     parseFlags: number;
     symbols: DecimalFormatSymbols;
-    currency(): CombinedCurrencyMatcher;
-    ignorables(): IgnorablesMatcher;
     minusSign(): MinusSignMatcher;
     percent(): PercentMatcher;
     permille(): PermilleMatcher;

@@ -9,7 +9,6 @@ import type { PlayerAbilities } from '../../../../../../net/raphimc/viabedrock/p
 export class PlayerEntity extends LivingEntity {
     constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: UUID, arg4: PlayerAbilities)
     abilities: PlayerAbilities;
-    abilities(): PlayerAbilities;
     createTeam(): void;
     eyeOffset(): number;
     remove(): void;

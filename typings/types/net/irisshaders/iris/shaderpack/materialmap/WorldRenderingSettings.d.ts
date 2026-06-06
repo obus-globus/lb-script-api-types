@@ -11,7 +11,6 @@ export class WorldRenderingSettings extends Object {
     readonly ambientOcclusionLevel: number;
     readonly blockStateIds: Object2IntMap<BlockState>;
     readonly blockTypeIds: Map<Block, BlockRenderType>;
-    readonly breaksAnisotropy: boolean;
     // private chunkVertexFormat: ChunkVertexType;
     readonly disableDirectionalShading: boolean;
     readonly entityIds: (param0: NamespacedId) => kotlin.Int;

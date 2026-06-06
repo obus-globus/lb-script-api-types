@@ -14,8 +14,6 @@ export class Object2ObjectOpenCustomHashMap$MapEntry extends Object implements P
     constructor(null_: Object2ObjectOpenCustomHashMap$MapEntry)
     constructor(null_: Object2ObjectOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: K;
-    readonly value: V;
     equals(arg0: Object | null): boolean;
     first<L extends Object | number | string | boolean>(): L;
     first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;

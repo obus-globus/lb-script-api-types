@@ -15,7 +15,6 @@ export class ClientboundLevelEventPacket extends Object implements Packet<Client
     readonly data: number;
     readonly globalEvent: boolean;
     readonly pos: BlockPos;
-    readonly type: number;
     getData(): number;
     getPos(): BlockPos;
     getType(): number;

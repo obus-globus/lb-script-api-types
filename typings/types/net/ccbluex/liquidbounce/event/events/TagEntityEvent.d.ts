@@ -6,7 +6,6 @@ import type { PriorityField } from '../../../../../net/ccbluex/liquidbounce/util
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class TagEntityEvent extends Event {
     constructor(entity: Entity, targetingInfo: EntityTargetingInfo)
-    readonly color: PriorityField<Color4b>;
     readonly entity: Entity;
     targetingInfo: EntityTargetingInfo;
     assumeFriend(): void;

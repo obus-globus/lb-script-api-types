@@ -16,7 +16,6 @@ export class Object2DoubleLinkedOpenCustomHashMap$MapEntry extends Object implem
     constructor(null_: Object2DoubleLinkedOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getDoubleValue(): number;
     hashCode(): number;

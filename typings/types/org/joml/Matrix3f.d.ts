@@ -27,15 +27,6 @@ export class Matrix3f extends Object implements Externalizable, Cloneable, Matri
     constructor(arg0: Matrix3fc)
     constructor(arg0: Matrix4fc)
     constructor(arg0: Vector3fc, arg1: Vector3fc, arg2: Vector3fc)
-    m00: number;
-    m01: number;
-    m02: number;
-    m10: number;
-    m11: number;
-    m12: number;
-    m20: number;
-    m21: number;
-    m22: number;
     _m00(arg0: number): Matrix3f;
     _m01(arg0: number): Matrix3f;
     _m02(arg0: number): Matrix3f;

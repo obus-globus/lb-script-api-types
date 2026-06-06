@@ -14,8 +14,6 @@ export class Double2LongArrayMap$MapEntry extends Object implements Double2LongM
     constructor(null_: Double2LongArrayMap$MapEntry)
     constructor(null_: Double2LongArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleLongPair;

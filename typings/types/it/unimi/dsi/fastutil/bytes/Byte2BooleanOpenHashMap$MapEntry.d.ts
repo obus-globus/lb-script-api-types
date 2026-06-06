@@ -14,8 +14,6 @@ export class Byte2BooleanOpenHashMap$MapEntry extends Object implements Byte2Boo
     constructor(null_: Byte2BooleanOpenHashMap$MapEntry)
     constructor(null_: Byte2BooleanOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteBooleanPair;

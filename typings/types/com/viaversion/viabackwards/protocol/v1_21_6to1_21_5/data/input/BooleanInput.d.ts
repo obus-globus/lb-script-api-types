@@ -9,7 +9,6 @@ export class BooleanInput extends Object implements Input {
     // private label: Tag;
     // private onFalse: string;
     // private onTrue: string;
-    readonly value: boolean;
     asCommandSubstitution(): string;
     asTag(): Tag;
     initial(): boolean;

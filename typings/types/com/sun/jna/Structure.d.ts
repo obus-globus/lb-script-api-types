@@ -31,8 +31,6 @@ export abstract class Structure extends Object {
     // private actualAlignType: number;
     // private alignType: number;
     // private array: Structure[];
-    readonly autoRead: boolean;
-    readonly autoWrite: boolean;
     // private encoding: string;
     // private memory: Pointer;
     // private nativeStrings: { [key: string]: Structure$NativeStringTracking };

@@ -3,7 +3,6 @@ import type { SocksMessage } from '../../../../../io/netty/handler/codec/socksx/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractSocksMessage extends Object implements SocksMessage {
     constructor()
-    readonly decoderResult: DecoderResult;
     decoderResult(): DecoderResult;
     setDecoderResult(arg0: DecoderResult): void;
 }

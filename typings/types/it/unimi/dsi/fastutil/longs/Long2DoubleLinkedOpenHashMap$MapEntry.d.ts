@@ -14,8 +14,6 @@ export class Long2DoubleLinkedOpenHashMap$MapEntry extends Object implements Lon
     constructor(null_: Long2DoubleLinkedOpenHashMap$MapEntry)
     constructor(null_: Long2DoubleLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongDoublePair;

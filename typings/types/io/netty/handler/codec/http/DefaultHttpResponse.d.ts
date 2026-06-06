@@ -11,7 +11,6 @@ export class DefaultHttpResponse extends DefaultHttpMessage implements HttpRespo
     constructor(arg0: HttpVersion, arg1: HttpResponseStatus, arg2: HttpHeadersFactory)
     constructor(arg0: HttpVersion, arg1: HttpResponseStatus, arg2: boolean)
     constructor(arg0: HttpVersion, arg1: HttpResponseStatus, arg2: boolean, arg3: boolean)
-    readonly status: HttpResponseStatus;
     equals(arg0: Object | null): boolean;
     getStatus(): HttpResponseStatus;
     hashCode(): number;

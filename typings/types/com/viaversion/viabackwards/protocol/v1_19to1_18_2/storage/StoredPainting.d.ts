@@ -8,7 +8,6 @@ export class StoredPainting extends Object implements StorableObject {
     // private direction: number;
     // private entityId: number;
     // private position: BlockPosition;
-    readonly type: number;
     // private uuid: UUID;
     direction(): number;
     entityId(): number;

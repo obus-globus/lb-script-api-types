@@ -148,7 +148,6 @@ export class Zombie extends Monster {
     constructor(type: EntityType<Zombie>, level: Level)
     constructor(level: Level)
     // private breakDoorGoal: BreakDoorGoal;
-    readonly canBreakDoors: boolean;
     readonly conversionTime: number;
     readonly inWaterTime: number;
     addAdditionalSaveData(output: ValueOutput): void;

@@ -210,14 +210,10 @@ export class Vector4d extends Object implements Externalizable, Cloneable, Vecto
     sub(arg0: Vector4fc, arg1: Vector4d): Vector4d;
     toString(): string;
     toString(arg0: NumberFormat): string;
-    w(): number;
     writeExternal(arg0: ObjectOutput): void;
-    x(): number;
     xy(arg0: Vector2d): Vector2d;
     xy(arg0: Vector2f): Vector2f;
     xyz(arg0: Vector3d): Vector3d;
     xyz(arg0: Vector3f): Vector3f;
-    y(): number;
-    z(): number;
     zero(): Vector4d;
 }

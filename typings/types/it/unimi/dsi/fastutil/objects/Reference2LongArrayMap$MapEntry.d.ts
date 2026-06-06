@@ -15,7 +15,6 @@ export class Reference2LongArrayMap$MapEntry extends Object implements Reference
     constructor(null_: Reference2LongArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getLongValue(): number;
     hashCode(): number;

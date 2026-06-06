@@ -29,6 +29,4 @@ export class Tlhelp32$MODULEENTRY32W extends Structure {
     szModule: string[];
     th32ModuleID: WinDef$DWORD;
     th32ProcessID: WinDef$DWORD;
-    szExePath(): string;
-    szModule(): string;
 }

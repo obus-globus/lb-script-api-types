@@ -13,7 +13,6 @@ export class Double2ReferenceOpenCustomHashMap$MapEntry extends Object implement
     constructor(null_: Double2ReferenceOpenCustomHashMap$MapEntry)
     constructor(null_: Double2ReferenceOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

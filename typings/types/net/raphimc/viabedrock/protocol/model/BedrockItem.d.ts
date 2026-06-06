@@ -11,15 +11,7 @@ export class BedrockItem extends Object implements Item {
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: Map$Entry<string, Tag>[])
     constructor(arg0: number, arg1: number, arg2: number, arg3: Map$Entry<string, Tag>[], arg4: string[], arg5: string[], arg6: number, arg7: number, arg8: number)
-    readonly amount: number;
-    readonly blockRuntimeId: number;
-    readonly blockingTicks: number;
-    readonly canBreak: string[];
-    readonly canPlace: string[];
-    readonly data: number;
     // private id: number;
-    readonly netId: number;
-    readonly tag: Map$Entry<string, Tag>[];
     amount(): number;
     blockRuntimeId(): number;
     blockingTicks(): number;

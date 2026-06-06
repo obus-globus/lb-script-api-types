@@ -70,7 +70,6 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     readonly axisDirection: Direction$AxisDirection;
     // private data2d: number;
     // private data3d: number;
-    readonly name: string;
     // private normal: Vec3i;
     // private normalVec3: Vec3;
     // private normalVec3f: Vector3fc;

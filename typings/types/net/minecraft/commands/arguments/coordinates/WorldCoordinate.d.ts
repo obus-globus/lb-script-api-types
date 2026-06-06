@@ -8,7 +8,6 @@ export class WorldCoordinate extends Record {
     static isRelative(paramreader: StringReader): boolean;
     static parseDouble(paramreader: StringReader, paramcenter: boolean): WorldCoordinate;
     static parseInt(paramreader: StringReader): WorldCoordinate;
-    readonly relative: boolean;
     // private value: number;
     equals(o: Object | null): boolean;
     get(original: number): number;

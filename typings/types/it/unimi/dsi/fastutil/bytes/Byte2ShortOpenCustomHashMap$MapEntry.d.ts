@@ -14,8 +14,6 @@ export class Byte2ShortOpenCustomHashMap$MapEntry extends Object implements Byte
     constructor(null_: Byte2ShortOpenCustomHashMap$MapEntry)
     constructor(null_: Byte2ShortOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteShortPair;

@@ -10,7 +10,6 @@ export class JSSegmenter$Granularity extends Enum<JSSegmenter$Granularity> imple
     static valueOf(paramname: string): JSSegmenter$Granularity;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     name(): "GRAPHEME" | "WORD" | "SENTENCE";
 }

@@ -20,7 +20,6 @@ export class ClientboundBlockEntityDataPacket extends Object implements Packet<C
     private constructor(pos: BlockPos, type: BlockEntityType<Object>, tag: CompoundTag)
     readonly pos: BlockPos;
     readonly tag: CompoundTag;
-    readonly type: BlockEntityType<Object>;
     getPos(): BlockPos;
     getTag(): CompoundTag;
     getType(): BlockEntityType<Object>;

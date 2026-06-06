@@ -12,7 +12,6 @@ export class ShaderType extends Enum<ShaderType> {
     static values(): (Object | null)[];
     private constructor(name: string, extension: string)
     // private extension: string;
-    readonly name: string;
     getName(): string;
     idConverter(): FileToIdConverter;
     name(): "VERTEX" | "FRAGMENT";

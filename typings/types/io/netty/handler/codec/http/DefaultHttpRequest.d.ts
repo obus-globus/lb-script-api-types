@@ -10,8 +10,6 @@ export class DefaultHttpRequest extends DefaultHttpMessage implements HttpReques
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: Map$Entry<string, string>[])
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: HttpHeadersFactory)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: boolean)
-    readonly method: HttpMethod;
-    readonly uri: string;
     equals(arg0: Object | null): boolean;
     getMethod(): HttpMethod;
     getUri(): string;

@@ -14,8 +14,6 @@ export class Long2FloatArrayMap$MapEntry extends Object implements Long2FloatMap
     constructor(null_: Long2FloatArrayMap$MapEntry)
     constructor(null_: Long2FloatArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongFloatPair;

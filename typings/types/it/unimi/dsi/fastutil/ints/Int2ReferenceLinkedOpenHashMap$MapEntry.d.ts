@@ -13,7 +13,6 @@ export class Int2ReferenceLinkedOpenHashMap$MapEntry extends Object implements I
     constructor(null_: Int2ReferenceLinkedOpenHashMap$MapEntry)
     constructor(null_: Int2ReferenceLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

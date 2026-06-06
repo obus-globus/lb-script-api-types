@@ -10,18 +10,15 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChestDialogStorage extends Object implements StorableObject {
     constructor(arg0: ChestDialogViewProvider, arg1: Dialog)
     // private actionIndex: number;
-    readonly allowClosing: boolean;
     // private closeButtonEnabled: boolean;
     // private closeButtonLabel: Tag;
     // private confirmationNoIndex: number;
     // private confirmationYesIndex: number;
     // private containerId: number;
-    readonly currentTextInput: TextInput;
     // private dialog: Dialog;
     // private items: Item[];
     page: number;
     // private phase: ChestDialogStorage$Phase;
-    readonly previousDialog: Dialog;
     // private provider: ChestDialogViewProvider;
     // private ticksWaitingForResponse: number;
     actionIndex(): number;

@@ -62,7 +62,6 @@ export class Options extends Object implements OptionsAccessor {
     // private chatWidth: OptionInstance<number>;
     // private chunkSectionFadeInTime: OptionInstance<number>;
     // private cloudRange: OptionInstance<number>;
-    readonly cloudStatus: OptionInstance<CloudStatus>;
     // private cutoutLeaves: OptionInstance<boolean>;
     // private damageTiltStrength: OptionInstance<number>;
     // private darkMojangStudiosBackground: OptionInstance<boolean>;
@@ -159,7 +158,6 @@ export class Options extends Object implements OptionsAccessor {
     lastMpIp: string;
     // private mainHand: OptionInstance<HumanoidArm>;
     // private maxAnisotropyBit: OptionInstance<number>;
-    readonly menuBackgroundBlurriness: OptionInstance<number>;
     // private minecraft: Minecraft;
     // private mipmapLevels: OptionInstance<number>;
     modelParts: PlayerModelPart[];

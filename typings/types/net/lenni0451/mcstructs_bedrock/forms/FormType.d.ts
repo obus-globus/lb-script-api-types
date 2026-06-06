@@ -11,7 +11,6 @@ export class FormType extends Enum<FormType> {
     static valueOf(paramarg0: string): FormType;
     static values(): (Object | null)[];
     private constructor(arg2: Class<Form>, arg3: string)
-    readonly name: string;
     readonly type: Class<Form>;
     getName(): string;
     getType(): Class<Form>;

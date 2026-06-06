@@ -11,7 +11,6 @@ export abstract class AbstractScrollArea extends AbstractWidget {
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
     constructor(x: number, y: number, width: number, height: number, message: Component, scrollbarSettings: AbstractScrollArea$ScrollbarSettings)
-    readonly scrollAmount: number;
     // private scrollbarSettings: AbstractScrollArea$ScrollbarSettings;
     // private scrolling: boolean;
     contentHeight(): number;

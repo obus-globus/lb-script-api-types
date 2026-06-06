@@ -12,7 +12,6 @@ export abstract class JSAgent extends Object {
     static get(paramnode: Node): JSAgent;
     constructor(canBlock: boolean)
     readonly asyncContextMapping: AsyncContext;
-    readonly canBlock: boolean;
     // private childAgents: JSAgent[];
     // private finalizationRegistryQueue: WeakReference<JSFinalizationRegistryObject>[];
     // private interopCallStackDepth: number;

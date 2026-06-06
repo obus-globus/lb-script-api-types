@@ -50,7 +50,6 @@ export class DyeColor extends Enum<DyeColor> implements StringRepresentable {
     readonly fireworkColor: number;
     readonly id: number;
     readonly mapColor: MapColor;
-    readonly name: string;
     readonly textColor: number;
     readonly textureDiffuseColor: number;
     getFireworkColor(): number;

@@ -5,7 +5,6 @@ export class EntityTracker1_21_2$BoatEntity extends Object {
     constructor(arg0: UUID, arg1: number)
     // private data: number;
     // private entityData: EntityData[];
-    readonly passengers: number[];
     // private pitch: number;
     // private uuid: UUID;
     // private x: number;

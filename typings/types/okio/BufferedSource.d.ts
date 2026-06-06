@@ -7,7 +7,6 @@ import type { ByteString } from '../okio/ByteString.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 export interface BufferedSource extends ReadableByteChannel, Object, Source{
-    readonly buffer: Buffer;
     buffer(): Buffer;
     exhausted(): boolean;
     indexOf(b: number): number;

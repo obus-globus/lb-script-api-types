@@ -29,7 +29,6 @@ export class RailShape extends Enum<RailShape> implements StringRepresentable {
     static valueOf(paramname: string): RailShape;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     isSlope(): boolean;

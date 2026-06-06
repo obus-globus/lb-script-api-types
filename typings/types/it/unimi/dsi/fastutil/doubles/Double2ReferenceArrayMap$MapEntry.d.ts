@@ -13,7 +13,6 @@ export class Double2ReferenceArrayMap$MapEntry extends Object implements Double2
     constructor(null_: Double2ReferenceArrayMap$MapEntry)
     constructor(null_: Double2ReferenceArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

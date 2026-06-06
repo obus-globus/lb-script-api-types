@@ -19,7 +19,6 @@ export class SoundSource1_12_2 extends Enum<SoundSource1_12_2> {
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: number)
     readonly id: number;
-    readonly name: string;
     getId(): number;
     getName(): string;
     name(): "MASTER" | "MUSIC" | "RECORD" | "WEATHER" | "BLOCK" | "HOSTILE" | "NEUTRAL" | "PLAYER" | "AMBIENT" | "VOICE";

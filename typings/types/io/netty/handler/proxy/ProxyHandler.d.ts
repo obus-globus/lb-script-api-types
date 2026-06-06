@@ -13,7 +13,6 @@ export abstract class ProxyHandler extends ChannelDuplexHandler {
     constructor(arg0: SocketAddress)
     // private connectPromise: ProxyHandler$LazyChannelPromise;
     // private connectTimeoutFuture: Future<Object>;
-    readonly connectTimeoutMillis: number;
     // private ctx: ChannelHandlerContext;
     // private destinationAddress: SocketAddress;
     // private finished: boolean;

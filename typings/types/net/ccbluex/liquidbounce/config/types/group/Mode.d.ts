@@ -12,7 +12,6 @@ export abstract class Mode extends ValueGroup implements Tagged, EventListener, 
     static of(paramarg0: string): Tagged;
     constructor(name: string, aliases: string[])
     /*not mapped: */ isSelected$liquidbounce(): boolean;
-    readonly parent: ModeValueGroup<Object>;
     /**
      * We check if the parent is active and if the mode is active, if so
      * we handle the events.

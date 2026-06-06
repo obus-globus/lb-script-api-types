@@ -23,7 +23,6 @@ export class BiomeSpecialEffects$GrassColorModifier extends Enum<BiomeSpecialEff
     static valueOf(paramname: string): BiomeSpecialEffects$GrassColorModifier;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     modifyColor(x: number, z: number, baseColor: number): number;

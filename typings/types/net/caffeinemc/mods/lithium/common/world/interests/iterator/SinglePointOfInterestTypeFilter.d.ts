@@ -7,7 +7,6 @@ export class SinglePointOfInterestTypeFilter extends Record implements Predicate
     static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
     static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
     constructor(type: Holder<PoiType>)
-    readonly type: Holder<PoiType>;
     and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     equals(arg0: Object | null): boolean;
     getType(): Holder<PoiType>;

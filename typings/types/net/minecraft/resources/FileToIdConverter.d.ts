@@ -11,7 +11,6 @@ export class FileToIdConverter extends Record implements FileToIdConverterAccess
     static registry(paramregistry: ResourceKey<Object>): FileToIdConverter;
     constructor(prefix: string, extension: string)
     // private extension: string;
-    readonly prefix: string;
     equals(o: Object | null): boolean;
     extension(): string;
     extensionMatches(id: Identifier): boolean;

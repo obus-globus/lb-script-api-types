@@ -8,10 +8,6 @@ export class DataItem extends Object implements Item {
     constructor()
     constructor(arg0: number, arg1: number, arg2: Map$Entry<string, Tag>[])
     constructor(arg0: number, arg1: number, arg2: number, arg3: Map$Entry<string, Tag>[])
-    readonly amount: number;
-    readonly data: number;
-    readonly identifier: number;
-    readonly tag: Map$Entry<string, Tag>[];
     amount(): number;
     copy(): DataItem;
     data(): number;

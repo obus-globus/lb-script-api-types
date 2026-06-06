@@ -46,7 +46,6 @@ export class RealConnection extends Http2Connection$Listener implements Connecti
     // private protocol: Protocol;
     // private rawSocket: Socket;
     // private refusedStreamCount: number;
-    readonly route: Route;
     // private routeFailureCount: number;
     /*not mapped: */ getRouteFailureCount$okhttp(): number;
     // private socket: BufferedSocket;
@@ -61,7 +60,6 @@ export class RealConnection extends Http2Connection$Listener implements Connecti
     isHealthy(doExtensiveChecks: boolean): boolean;
     newCodec(client: OkHttpClient, chain: RealInterceptorChain): ExchangeCodec;
     noCoalescedConnections(): void;
-    noNewExchanges(): void;
     onSettings(connection: Http2Connection, settings: Settings): void;
     onStream(stream: Http2Stream): void;
     protocol(): Protocol;

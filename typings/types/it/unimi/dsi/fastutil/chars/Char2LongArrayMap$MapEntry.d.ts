@@ -14,8 +14,6 @@ export class Char2LongArrayMap$MapEntry extends Object implements Char2LongMap$E
     constructor(null_: Char2LongArrayMap$MapEntry)
     constructor(null_: Char2LongArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharLongPair;

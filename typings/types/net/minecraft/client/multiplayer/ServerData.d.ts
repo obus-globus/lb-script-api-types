@@ -21,7 +21,6 @@ export class ServerData extends Object implements IServerData {
     playerList: Component[];
     players: ServerStatus$Players;
     protocol: number;
-    readonly state: ServerData$State;
     status: Component;
     // private type: ServerData$Type;
     version: Component;

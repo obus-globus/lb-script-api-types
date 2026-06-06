@@ -75,7 +75,6 @@ export class Bidi extends Object {
     // private logicalToVisualRunsMap: number[];
     // private mayAllocateRuns: boolean;
     // private mayAllocateText: boolean;
-    orderParagraphsLTR: boolean;
     // private originalLength: number;
     // private paraBidi: Bidi;
     // private paraCount: number;

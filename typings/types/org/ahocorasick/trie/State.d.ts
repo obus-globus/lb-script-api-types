@@ -4,7 +4,6 @@ export class State extends Object {
     constructor(arg0: number)
     readonly depth: number;
     // private emits: string[];
-    readonly failure: State;
     // private rootState: State;
     // private success: { [key: string]: State };
     addEmit(arg0: string): void;

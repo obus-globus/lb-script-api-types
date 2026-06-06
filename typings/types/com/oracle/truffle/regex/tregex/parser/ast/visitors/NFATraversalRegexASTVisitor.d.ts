@@ -18,7 +18,6 @@ export abstract class NFATraversalRegexASTVisitor extends Object {
     // private bqExited: number[];
     // private bqLastCounterReset: number[];
     // private bqLastZeroWidthEnter: number[];
-    readonly canTraverseCaret: boolean;
     // private captureGroupClears: number[];
     // private captureGroupUpdates: number[];
     // private caretsOnPath: number;

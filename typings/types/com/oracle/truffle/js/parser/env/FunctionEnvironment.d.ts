@@ -32,7 +32,6 @@ export class FunctionEnvironment extends Environment {
     // private isAsyncFunction: boolean;
     // private isDerivedConstructor: boolean;
     // private isDirectEval: boolean;
-    readonly isDynamicallyScoped: boolean;
     // private isEval: boolean;
     // private isGeneratorFunction: boolean;
     // private isGlobal: boolean;
@@ -40,7 +39,6 @@ export class FunctionEnvironment extends Environment {
     // private isStrictMode: boolean;
     // private jumpTargetStack: BreakTarget[];
     readonly needsNewTarget: boolean;
-    readonly needsParentFrame: boolean;
     readonly parentFunction: FunctionEnvironment;
     readonly returnSlot: JSFrameSlot;
     readonly scope: Scope;

@@ -14,8 +14,6 @@ export class Short2ShortOpenHashMap$MapEntry extends Object implements Short2Sho
     constructor(null_: Short2ShortOpenHashMap$MapEntry)
     constructor(null_: Short2ShortOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortShortPair;

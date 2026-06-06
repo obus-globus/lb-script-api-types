@@ -3,7 +3,6 @@ import type { Position3V } from '../../../../../org/cube/converter/util/element/
 import type { UVMap } from '../../../../../org/cube/converter/util/element/UVMap.d.ts'
 export class Cube extends Object {
     constructor(arg0: Position3V, arg1: Position3V, arg2: Position3V, arg3: Position3V, arg4: boolean, arg5: UVMap)
-    readonly inflate: number;
     readonly mirror: boolean;
     readonly parent: string;
     readonly pivot: Position3V;

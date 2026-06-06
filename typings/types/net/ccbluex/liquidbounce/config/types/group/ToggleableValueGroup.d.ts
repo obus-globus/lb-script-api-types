@@ -16,7 +16,6 @@ export abstract class ToggleableValueGroup extends ValueGroup implements EventLi
     constructor(parent: EventListener | null, name: string, enabled: boolean, aliases: string[])
     enabled: boolean;
     readonly enabledValue: Value<boolean>;
-    readonly parent: EventListener | null;
     /**
      * Because we pass the parent to the Listenable, we can simply
      * call the super.handleEvents() and it will return false if the upper-listenable is disabled.

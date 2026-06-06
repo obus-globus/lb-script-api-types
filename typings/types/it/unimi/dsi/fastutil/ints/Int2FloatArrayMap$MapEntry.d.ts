@@ -14,8 +14,6 @@ export class Int2FloatArrayMap$MapEntry extends Object implements Int2FloatMap$E
     constructor(null_: Int2FloatArrayMap$MapEntry)
     constructor(null_: Int2FloatArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntFloatPair;

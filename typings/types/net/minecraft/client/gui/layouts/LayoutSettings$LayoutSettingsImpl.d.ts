@@ -4,10 +4,6 @@ export class LayoutSettings$LayoutSettingsImpl extends Object implements LayoutS
     static defaults(): LayoutSettings;
     constructor()
     constructor(copy: LayoutSettings$LayoutSettingsImpl)
-    paddingBottom: number;
-    paddingLeft: number;
-    paddingRight: number;
-    paddingTop: number;
     xAlignment: number;
     yAlignment: number;
     align(xAlignment: number, yAlignment: number): LayoutSettings$LayoutSettingsImpl;

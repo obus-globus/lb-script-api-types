@@ -38,7 +38,6 @@ export class TypedArrayFactory extends Enum<TypedArrayFactory> implements Protot
     // private interopArrayTypeAutoLength: TypedArray;
     // private interopArrayTypeWithOffset: TypedArray;
     // private interopArrayTypeWithOffsetAutoLength: TypedArray;
-    readonly name: TruffleString;
     // private sharedArrayType: TypedArray;
     // private sharedArrayTypeAutoLength: TypedArray;
     // private sharedArrayTypeWithOffset: TypedArray;

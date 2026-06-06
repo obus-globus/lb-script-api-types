@@ -257,7 +257,6 @@ export class SoundEffectMappings1_9 extends Enum<SoundEffectMappings1_9> {
     private constructor(arg2: string, arg3: string, arg4: SoundCategories1_8, arg5: boolean)
     readonly breakSound: boolean;
     readonly category: SoundCategories1_8;
-    readonly name: string;
     readonly newName: string;
     getCategory(): SoundCategories1_8;
     getName(): string;

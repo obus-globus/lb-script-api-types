@@ -16,7 +16,6 @@ export class Object2IntLinkedOpenHashMap$MapEntry extends Object implements Obje
     constructor(null_: Object2IntLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getIntValue(): number;
     hashCode(): number;

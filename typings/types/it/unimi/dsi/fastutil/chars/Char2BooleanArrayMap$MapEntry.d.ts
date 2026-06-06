@@ -14,8 +14,6 @@ export class Char2BooleanArrayMap$MapEntry extends Object implements Char2Boolea
     constructor(null_: Char2BooleanArrayMap$MapEntry)
     constructor(null_: Char2BooleanArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharBooleanPair;

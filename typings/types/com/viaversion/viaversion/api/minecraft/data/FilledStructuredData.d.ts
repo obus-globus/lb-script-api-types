@@ -6,9 +6,7 @@ export class FilledStructuredData<T extends Object | number | string | boolean> 
     static empty(paramarg0: StructuredDataKey<Object>, paramarg1: number): StructuredData<Object>;
     static of(paramarg0: StructuredDataKey<Object>, paramarg1: Object | null, paramarg2: number): StructuredData<Object>;
     constructor(arg0: StructuredDataKey<T>, arg1: T, arg2: number)
-    readonly id: number;
     // private key: StructuredDataKey<T>;
-    readonly value: T;
     copy(): StructuredData<T>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

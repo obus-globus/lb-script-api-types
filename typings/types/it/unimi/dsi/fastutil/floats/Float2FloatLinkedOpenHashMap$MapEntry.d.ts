@@ -14,8 +14,6 @@ export class Float2FloatLinkedOpenHashMap$MapEntry extends Object implements Flo
     constructor(null_: Float2FloatLinkedOpenHashMap$MapEntry)
     constructor(null_: Float2FloatLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatFloatPair;

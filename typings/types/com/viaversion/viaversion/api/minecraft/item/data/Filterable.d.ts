@@ -1,7 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class Filterable<T extends Object | number | string | boolean> extends Object {
     constructor(arg0: T, arg1: T)
-    readonly filtered: T;
     // private raw: T;
     filtered(): T;
     get(): T;

@@ -13,7 +13,6 @@ export class Short2ReferenceOpenHashMap$MapEntry extends Object implements Short
     constructor(null_: Short2ReferenceOpenHashMap$MapEntry)
     constructor(null_: Short2ReferenceOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

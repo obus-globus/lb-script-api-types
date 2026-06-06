@@ -12,5 +12,4 @@ export class Native$OS extends Enum<Native$OS> {
     private constructor(arg2: string, arg3: string)
     libExtension: string;
     name: string;
-    name(): "WINDOWS" | "LINUX" | "MAC" | "SOLARIS";
 }

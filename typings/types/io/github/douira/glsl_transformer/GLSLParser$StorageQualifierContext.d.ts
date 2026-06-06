@@ -7,7 +7,6 @@ import type { TerminalNode } from '../../../../org/antlr/v4/runtime/tree/Termina
 export class GLSLParser$StorageQualifierContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
-    IDENTIFIER: Token;
     typeNames: Token[];
     ATTRIBUTE(): TerminalNode;
     BUFFER(): TerminalNode;

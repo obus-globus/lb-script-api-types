@@ -14,8 +14,6 @@ export class Char2LongOpenCustomHashMap$MapEntry extends Object implements Char2
     constructor(null_: Char2LongOpenCustomHashMap$MapEntry)
     constructor(null_: Char2LongOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharLongPair;

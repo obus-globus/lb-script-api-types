@@ -29,7 +29,6 @@ export class BossEvent$BossBarColor extends Enum<BossEvent$BossBarColor> impleme
     static values(): (Object | null)[];
     private constructor(name: string, formatting: ChatFormatting)
     readonly formatting: ChatFormatting;
-    readonly name: string;
     getFormatting(): ChatFormatting;
     getName(): string;
     getSerializedName(): string;

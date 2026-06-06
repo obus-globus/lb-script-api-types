@@ -15,7 +15,6 @@ export class NarratorStatus extends Enum<NarratorStatus> {
     static values(): (Object | null)[];
     private constructor(id: number, key: string)
     readonly id: number;
-    readonly name: Component;
     getId(): number;
     getName(): Component;
     shouldNarrateChat(): boolean;

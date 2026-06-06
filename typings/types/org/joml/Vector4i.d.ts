@@ -107,9 +107,7 @@ export class Vector4i extends Object implements Externalizable, Cloneable, Vecto
     sub(arg0: Vector4ic, arg1: Vector4i): Vector4i;
     toString(): string;
     toString(arg0: NumberFormat): string;
-    w(): number;
     writeExternal(arg0: ObjectOutput): void;
-    x(): number;
     xy(arg0: Vector2L): Vector2L;
     xy(arg0: Vector2d): Vector2d;
     xy(arg0: Vector2f): Vector2f;
@@ -118,7 +116,5 @@ export class Vector4i extends Object implements Externalizable, Cloneable, Vecto
     xyz(arg0: Vector3d): Vector3d;
     xyz(arg0: Vector3f): Vector3f;
     xyz(arg0: Vector3i): Vector3i;
-    y(): number;
-    z(): number;
     zero(): Vector4i;
 }

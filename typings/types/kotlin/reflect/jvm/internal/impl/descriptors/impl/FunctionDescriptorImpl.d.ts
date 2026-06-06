@@ -25,8 +25,6 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     readonly contextReceiverParameters: ReceiverParameterDescriptor[];
     readonly dispatchReceiverParameter: ReceiverParameterDescriptor;
     readonly extensionReceiverParameter: ReceiverParameterDescriptor;
-    readonly hasStableParameterNames: boolean;
-    readonly hasSynthesizedParameterNames: boolean;
     readonly initialSignatureDescriptor: FunctionDescriptor;
     // private isActual: boolean;
     // private isExpect: boolean;

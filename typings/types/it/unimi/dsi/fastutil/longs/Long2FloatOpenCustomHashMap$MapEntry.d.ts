@@ -14,8 +14,6 @@ export class Long2FloatOpenCustomHashMap$MapEntry extends Object implements Long
     constructor(null_: Long2FloatOpenCustomHashMap$MapEntry)
     constructor(null_: Long2FloatOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongFloatPair;

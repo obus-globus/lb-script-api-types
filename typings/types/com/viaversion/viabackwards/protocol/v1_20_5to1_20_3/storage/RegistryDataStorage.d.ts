@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class RegistryDataStorage extends Object implements StorableObject {
     constructor()
-    readonly dimensionKeys: string[];
     // private registryData: Map$Entry<string, Tag>[];
     // private sentRegistryData: boolean;
     clear(): void;

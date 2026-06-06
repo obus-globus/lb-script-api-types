@@ -14,8 +14,6 @@ export class Byte2LongOpenHashMap$MapEntry extends Object implements Byte2LongMa
     constructor(null_: Byte2LongOpenHashMap$MapEntry)
     constructor(null_: Byte2LongOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteLongPair;

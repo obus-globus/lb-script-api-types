@@ -16,7 +16,6 @@ export class Object2ByteArrayMap$MapEntry extends Object implements Object2ByteM
     constructor(null_: Object2ByteArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getByteValue(): number;
     hashCode(): number;

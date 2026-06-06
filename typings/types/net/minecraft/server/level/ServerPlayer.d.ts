@@ -269,7 +269,6 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     drop(itemStack: ItemStack, randomly: boolean, thrownFromHand: boolean): ItemEntity;
     findRespawnPositionAndUseSpawnBlock(consumeSpawnBlock: boolean, postTeleportTransition: (param0: Entity) => void): TeleportTransition;
     forceSetRotation(yRot: number, relativeY: boolean, xRot: number, relativeX: boolean): void;
-    gameMode(): GameType;
     getAdvancements(): PlayerAdvancements;
     getCamera(): Entity;
     getChatSession(): RemoteChatSession;

@@ -12,7 +12,6 @@ export class IOCase extends Enum<IOCase> {
     static valueOf(paramarg0: string): IOCase;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: boolean)
-    readonly name: string;
     // private sensitive: boolean;
     checkCompareTo(arg0: string, arg1: string): number;
     checkEndsWith(arg0: string, arg1: string): boolean;

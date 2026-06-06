@@ -14,8 +14,6 @@ export class Char2CharOpenHashMap$MapEntry extends Object implements Char2CharMa
     constructor(null_: Char2CharOpenHashMap$MapEntry)
     constructor(null_: Char2CharOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharCharPair;

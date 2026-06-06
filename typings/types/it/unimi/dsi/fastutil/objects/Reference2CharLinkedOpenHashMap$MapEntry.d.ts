@@ -15,7 +15,6 @@ export class Reference2CharLinkedOpenHashMap$MapEntry extends Object implements 
     constructor(null_: Reference2CharLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     getCharValue(): string;
     hashCode(): number;

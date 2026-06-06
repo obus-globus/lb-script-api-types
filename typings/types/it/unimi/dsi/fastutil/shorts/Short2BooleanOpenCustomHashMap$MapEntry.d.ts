@@ -14,8 +14,6 @@ export class Short2BooleanOpenCustomHashMap$MapEntry extends Object implements S
     constructor(null_: Short2BooleanOpenCustomHashMap$MapEntry)
     constructor(null_: Short2BooleanOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortBooleanPair;

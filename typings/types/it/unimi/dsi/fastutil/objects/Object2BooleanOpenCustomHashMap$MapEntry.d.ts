@@ -16,7 +16,6 @@ export class Object2BooleanOpenCustomHashMap$MapEntry extends Object implements 
     constructor(null_: Object2BooleanOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     getBooleanValue(): boolean;
     hashCode(): number;

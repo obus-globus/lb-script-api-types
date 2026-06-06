@@ -23,7 +23,6 @@ export class ClientboundAddEntityPacket extends Object implements Packet<ClientG
     readonly data: number;
     readonly id: number;
     readonly movement: Vec3;
-    readonly type: EntityType<Object>;
     // private uuid: UUID;
     readonly x: number;
     // private xRot: number;

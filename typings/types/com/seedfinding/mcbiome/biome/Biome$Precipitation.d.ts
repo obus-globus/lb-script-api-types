@@ -9,7 +9,6 @@ export class Biome$Precipitation extends Enum<Biome$Precipitation> {
     static valueOf(paramarg0: string): Biome$Precipitation;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     name(): "NONE" | "RAIN" | "SNOW";
 }

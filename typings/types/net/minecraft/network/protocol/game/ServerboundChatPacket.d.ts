@@ -24,7 +24,6 @@ export class ServerboundChatPacket extends Record implements Packet<ServerGamePa
     isSkippable(): boolean;
     isTerminal(): boolean;
     lastSeenMessages(): LastSeenMessages$Update;
-    message(): string;
     salt(): number;
     signature(): MessageSignature;
     timeStamp(): Instant;

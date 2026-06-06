@@ -14,8 +14,6 @@ export class Char2DoubleLinkedOpenHashMap$MapEntry extends Object implements Cha
     constructor(null_: Char2DoubleLinkedOpenHashMap$MapEntry)
     constructor(null_: Char2DoubleLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharDoublePair;

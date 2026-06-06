@@ -24,7 +24,6 @@ export class PlayerEntry extends ContainerObjectSelectionList$Entry<PlayerEntry>
     readonly chatReportable: boolean;
     // private children: AbstractWidget[];
     // private hasDraftReport: boolean;
-    readonly hasRecentMessages: boolean;
     // private hideButton: Button;
     // private id: UUID;
     // private isRemoved: boolean;

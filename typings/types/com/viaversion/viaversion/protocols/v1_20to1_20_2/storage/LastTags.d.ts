@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LastTags extends Object implements StorableObject {
     constructor(arg0: PacketWrapper)
     // private registryTags: LastTags$RegistryTags[];
-    readonly sentDuringConfigPhase: boolean;
     onRemove(): void;
     sendLastTags(arg0: UserConnection): boolean;
     sentDuringConfigPhase(): boolean;

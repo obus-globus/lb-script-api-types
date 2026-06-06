@@ -138,7 +138,5 @@ export class Vector2f extends Object implements Externalizable, Cloneable, Vecto
     toString(): string;
     toString(arg0: NumberFormat): string;
     writeExternal(arg0: ObjectOutput): void;
-    x(): number;
-    y(): number;
     zero(): Vector2f;
 }

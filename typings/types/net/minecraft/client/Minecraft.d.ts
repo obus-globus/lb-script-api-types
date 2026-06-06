@@ -407,7 +407,6 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     // private runTick(advanceGameTime: boolean): void;
     // private selfTest(): void;
     sendLowDiskSpaceWarning(): void;
-    services(): Services;
     setCameraEntity(cameraEntity: Entity): void;
     setLastInputType(lastInputType: InputType): void;
     setLevel(level: ClientLevel): void;

@@ -30,7 +30,6 @@ export class SectionRenderDispatcher$RenderSection extends Object {
     readonly sectionMesh: AtomicReference<SectionMesh>;
     readonly sectionNode: number;
     // private uploadedTime: number;
-    readonly wasPreviouslyEmpty: boolean;
     // private addSectionBuffersToUberBuffer(layer: ChunkSectionLayer, key: CompiledSectionMesh, vertexBuffer: ByteBuffer, indexBuffer: ByteBuffer): boolean;
     cancelTasks(): void;
     // private checkSectionMesh(compiledSectionMesh: CompiledSectionMesh): void;

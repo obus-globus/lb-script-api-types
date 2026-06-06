@@ -5,7 +5,6 @@ import type { Vector2f } from '../../../../../org/joml/Vector2f.d.ts'
 export class CurveValue$Builder extends Object {
     constructor()
     name: string | null;
-    points: Vector2f[] | null;
     tension: number;
     xAxis: CurveValue$Axis | null;
     yAxis: CurveValue$Axis | null;

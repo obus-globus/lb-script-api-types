@@ -7,7 +7,6 @@ export class DirectExecutorService extends AbstractListeningExecutorService {
     constructor()
     // private lock: Object;
     // private runningTasks: number;
-    readonly shutdown: boolean;
     awaitTermination(timeout: Duration): boolean;
     awaitTermination(timeout: number, unit: TimeUnit): boolean;
     // private endTask(): void;

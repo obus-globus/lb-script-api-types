@@ -11,9 +11,6 @@ export class SpawnData extends Record {
     static LIST_CODEC: Codec<Object>;
     constructor()
     constructor(entityToSpawn: CompoundTag, customSpawnRules: Optional<SpawnData$CustomSpawnRules>, equipment: Optional<EquipmentTable>)
-    readonly customSpawnRules: Optional<SpawnData$CustomSpawnRules>;
-    readonly entityToSpawn: CompoundTag;
-    readonly equipment: Optional<EquipmentTable>;
     customSpawnRules(): Optional<SpawnData$CustomSpawnRules>;
     entityToSpawn(): CompoundTag;
     equals(o: Object | null): boolean;

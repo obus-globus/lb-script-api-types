@@ -10,7 +10,6 @@ export class Biome$Temperature extends Enum<Biome$Temperature> {
     static valueOf(paramarg0: string): Biome$Temperature;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     name(): "OCEAN" | "COLD" | "MEDIUM" | "WARM";
 }

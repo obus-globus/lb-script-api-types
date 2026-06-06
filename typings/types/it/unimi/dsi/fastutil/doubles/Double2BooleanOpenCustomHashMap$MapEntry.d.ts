@@ -14,8 +14,6 @@ export class Double2BooleanOpenCustomHashMap$MapEntry extends Object implements 
     constructor(null_: Double2BooleanOpenCustomHashMap$MapEntry)
     constructor(null_: Double2BooleanOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleBooleanPair;

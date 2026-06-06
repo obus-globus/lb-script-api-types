@@ -12,8 +12,6 @@ export class CommandLine$Range extends Object implements Comparable<CommandLine$
     constructor(min: number, max: number, variable: boolean, unspecified: boolean, originalValue: string)
     // private isUnspecified: boolean;
     isVariable: boolean;
-    max: number;
-    min: number;
     // private originalValue: string;
     compareTo(other: CommandLine$Range): number;
     contains(value: number): boolean;

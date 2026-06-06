@@ -14,7 +14,6 @@ export class ClientboundOpenScreenPacket extends Object implements Packet<Client
     constructor(containerId: number, type: MenuType<Object>, title: Component)
     readonly containerId: number;
     readonly title: Component;
-    readonly type: MenuType<Object>;
     getContainerId(): number;
     getTitle(): Component;
     getType(): MenuType<Object>;

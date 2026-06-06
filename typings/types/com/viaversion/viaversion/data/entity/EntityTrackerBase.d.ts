@@ -8,13 +8,7 @@ import type { EntityType } from '../../../../../com/viaversion/viaversion/api/mi
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityTrackerBase extends Object implements ClientEntityIdChangeListener, EntityTracker {
     constructor(arg0: UserConnection, arg1: EntityType)
-    readonly biomesSent: number;
-    readonly clientEntityId: number;
     // private connection: UserConnection;
-    readonly currentDimensionId: number;
-    readonly currentMinY: number;
-    readonly currentWorld: string;
-    readonly currentWorldSectionHeight: number;
     readonly dimensions: { [key: string]: DimensionData };
     // private entities: Int2ObjectMap<TrackedEntity>;
     readonly instaBuild: boolean;

@@ -16,7 +16,6 @@ export class FastMultiByteArrayInputStream extends MeasurableInputStream impleme
     // private position: number;
     available(): number;
     close(): void;
-    length(): number;
     mark(arg0: number): void;
     markSupported(): boolean;
     position(): number;

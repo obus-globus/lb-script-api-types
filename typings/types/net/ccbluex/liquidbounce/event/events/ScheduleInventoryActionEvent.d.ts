@@ -5,7 +5,6 @@ import type { InventoryConstraints } from '../../../../../net/ccbluex/liquidboun
 import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kotlin/Priority.d.ts'
 export class ScheduleInventoryActionEvent extends Event {
     constructor(schedule: InventoryAction$Chain[])
-    readonly schedule: InventoryAction$Chain[];
     schedule(constrains: InventoryConstraints, actions: InventoryAction[], priority: Priority): void;
     schedule(constrains: InventoryConstraints, action: InventoryAction, priority: Priority): void;
 }

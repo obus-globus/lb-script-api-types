@@ -7,7 +7,6 @@ export class CCAuthenticationResponse extends Object {
     errors: string[];
     token: string;
     username: string;
-    errors(): CCError[];
     getErrorDisplay(): string;
     mfaRequired(): boolean;
     shouldError(): boolean;

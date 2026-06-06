@@ -23,7 +23,6 @@ export class HumanoidRenderState extends ArmedEntityRenderState {
     maxCrossbowChargeDuration: number;
     speedValue: number;
     swimAmount: number;
-    ticksUsingItem: number;
     useItemHand: InteractionHand;
     ticksUsingItem(arm: HumanoidArm): number;
 }

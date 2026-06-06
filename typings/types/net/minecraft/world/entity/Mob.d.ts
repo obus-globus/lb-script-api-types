@@ -166,7 +166,6 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     constructor(type: EntityType<Mob>, level: Level)
     ambientSoundTime: number;
     // private bodyRotationControl: BodyRotationControl;
-    readonly canPickUpLoot: boolean;
     readonly dropChances: DropChances;
     // private goalSelector: GoalSelector;
     readonly homePosition: BlockPos;

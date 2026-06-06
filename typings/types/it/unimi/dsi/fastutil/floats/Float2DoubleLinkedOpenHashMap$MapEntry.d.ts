@@ -14,8 +14,6 @@ export class Float2DoubleLinkedOpenHashMap$MapEntry extends Object implements Fl
     constructor(null_: Float2DoubleLinkedOpenHashMap$MapEntry)
     constructor(null_: Float2DoubleLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): FloatDoublePair;

@@ -12,7 +12,6 @@ export class BaseChunk extends Object implements Chunk {
     constructor(arg0: number, arg1: number, arg2: boolean, arg3: boolean, arg4: number, arg5: ChunkSection[], arg6: number[], arg7: Map$Entry<string, Tag>[][])
     biomeData: number[];
     bitmask: number;
-    readonly blockEntities: Map$Entry<string, Tag>[][];
     // private chunkSectionBitSet: BitSet;
     readonly fullChunk: boolean;
     heightMap: Map$Entry<string, Tag>[];

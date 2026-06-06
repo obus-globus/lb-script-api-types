@@ -2,7 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GameModeStorage extends Object implements StorableObject {
     constructor()
-    readonly gameMode: number;
     gameMode(): number;
     onRemove(): void;
     setGameMode(arg0: number): void;

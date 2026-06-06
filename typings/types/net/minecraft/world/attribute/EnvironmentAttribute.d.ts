@@ -15,7 +15,6 @@ export class EnvironmentAttribute<Value extends Object | number | string | boole
     defaultValue(): Value;
     isPositional(): boolean;
     isSpatiallyInterpolated(): boolean;
-    isSyncable(): boolean;
     sanitizeValue(value: Value): Value;
     toString(): string;
     type(): AttributeType<Value>;

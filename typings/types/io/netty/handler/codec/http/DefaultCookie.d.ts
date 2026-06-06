@@ -3,12 +3,8 @@ import type { DefaultCookie as DefaultCookie_2 } from '../../../../../io/netty/h
 export class DefaultCookie extends DefaultCookie_2 implements Cookie {
     static UNDEFINED_MAX_AGE: number;
     constructor(arg0: string, arg1: string)
-    readonly comment: string;
-    readonly commentUrl: string;
     readonly discard: boolean;
-    readonly ports: number[];
     // private unmodifiablePorts: number[];
-    readonly version: number;
     comment(): string;
     commentUrl(): string;
     getComment(): string;

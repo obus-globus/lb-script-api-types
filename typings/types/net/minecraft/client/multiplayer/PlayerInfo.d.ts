@@ -20,7 +20,6 @@ export class PlayerInfo extends Object implements IPlayerInfo {
     readonly latency: number;
     readonly messageValidator: (param0: PlayerChatMessage) => net.minecraft.network.chat.PlayerChatMessage;
     readonly profile: GameProfile;
-    readonly showHat: boolean;
     // private skinLookup: () => PlayerSkin;
     readonly tabListDisplayName: Component;
     readonly tabListOrder: number;

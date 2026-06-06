@@ -17,7 +17,6 @@ export class TutorialSteps extends Enum<TutorialSteps> {
     static values(): (Object | null)[];
     private constructor(name: string, constructor: (param0: Tutorial) => T)
     // private constructor: (param0: Tutorial) => TutorialStepInstance;
-    readonly name: string;
     create(tutorial: Tutorial): TutorialStepInstance;
     getName(): string;
     name(): "MOVEMENT" | "FIND_TREE" | "PUNCH_TREE" | "OPEN_INVENTORY" | "CRAFT_PLANKS" | "NONE";

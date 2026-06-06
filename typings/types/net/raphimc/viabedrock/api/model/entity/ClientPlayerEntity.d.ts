@@ -23,14 +23,9 @@ export class ClientPlayerEntity extends PlayerEntity {
     // private TELEPORT_ID: AtomicInteger;
     // private authInputBlockActions: ClientPlayerEntity$AuthInputBlockAction[];
     // private authInputData: PlayerAuthInputPacket_InputData[];
-    readonly blockBreakingInfo: ClientPlayerEntity$BlockBreakingInfo;
     // private cancelNextSwingPacket: boolean;
-    readonly dimensionChangeInfo: ClientPlayerEntity$DimensionChangeInfo;
     // private gameSession: GameSessionStorage;
-    readonly gameType: GameType;
-    readonly horizontalCollision: boolean;
     readonly initiallySpawned: boolean;
-    readonly inputFlags: InputFlag[];
     // private javaGameMode: GameMode;
     // private pendingTeleportId: number;
     // private prevInputFlags: InputFlag[];

@@ -15,7 +15,6 @@ export class Reference2IntArrayMap$MapEntry extends Object implements Reference2
     constructor(null_: Reference2IntArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getIntValue(): number;
     hashCode(): number;

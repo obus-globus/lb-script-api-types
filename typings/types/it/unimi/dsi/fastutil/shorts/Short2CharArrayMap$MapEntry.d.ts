@@ -14,8 +14,6 @@ export class Short2CharArrayMap$MapEntry extends Object implements Short2CharMap
     constructor(null_: Short2CharArrayMap$MapEntry)
     constructor(null_: Short2CharArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortCharPair;

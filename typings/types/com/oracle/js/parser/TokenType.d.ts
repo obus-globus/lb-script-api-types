@@ -158,7 +158,6 @@ export class TokenType extends Enum<TokenType> {
     // private ecmaScriptVersion: number;
     // private isLeftAssociative: boolean;
     readonly kind: TokenKind;
-    readonly name: string;
     readonly nameTS: TruffleString;
     readonly next: TokenType;
     readonly precedence: number;

@@ -13,7 +13,6 @@ export class Long2ReferenceOpenHashMap$MapEntry extends Object implements Long2R
     constructor(null_: Long2ReferenceOpenHashMap$MapEntry)
     constructor(null_: Long2ReferenceOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

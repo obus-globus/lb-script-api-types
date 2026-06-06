@@ -14,8 +14,6 @@ export class Double2BooleanArrayMap$MapEntry extends Object implements Double2Bo
     constructor(null_: Double2BooleanArrayMap$MapEntry)
     constructor(null_: Double2BooleanArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleBooleanPair;

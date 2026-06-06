@@ -31,7 +31,6 @@ export class GenerationStep$Decoration extends Enum<GenerationStep$Decoration> i
     static valueOf(paramname: string): GenerationStep$Decoration;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     name(): "RAW_GENERATION" | "LAKES" | "LOCAL_MODIFICATIONS" | "UNDERGROUND_STRUCTURES" | "SURFACE_STRUCTURES" | "STRONGHOLDS" | "UNDERGROUND_ORES" | "UNDERGROUND_DECORATION" | "FLUID_SPRINGS" | "VEGETAL_DECORATION" | "TOP_LAYER_MODIFICATION";

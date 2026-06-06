@@ -14,7 +14,6 @@ export class Int2ObjectOpenHashMap$MapEntry extends Object implements Int2Object
     constructor(null_: Int2ObjectOpenHashMap$MapEntry)
     constructor(null_: Int2ObjectOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

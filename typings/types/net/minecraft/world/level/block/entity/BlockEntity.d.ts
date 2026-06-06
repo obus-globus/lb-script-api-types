@@ -54,7 +54,6 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     constructor(type: BlockEntityType<Object>, worldPosition: BlockPos, blockState: BlockState)
     // private attachedChangedListeners: Map<Object, Object>;
     readonly blockState: BlockState;
-    readonly components: TypedDataComponent<Object>[];
     // private dataAttachments: Map<Object, Object>;
     // private deferredSyncedAttachments: (Object | null)[];
     // private hasComparators: number;

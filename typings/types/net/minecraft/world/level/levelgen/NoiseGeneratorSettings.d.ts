@@ -21,7 +21,6 @@ export class NoiseGeneratorSettings extends Record {
     static OVERWORLD: ResourceKey<NoiseGeneratorSettings>;
     static bootstrap(paramcontext: BootstrapContext<NoiseGeneratorSettings>): void;
     static dummy(): NoiseGeneratorSettings;
-    readonly aquifersEnabled: boolean;
     // private defaultBlock: BlockState;
     // private defaultFluid: BlockState;
     // private disableMobGeneration: boolean;

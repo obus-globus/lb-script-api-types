@@ -10,9 +10,7 @@ export class CustomBossEvent extends ServerBossEvent {
     constructor(id: UUID, customId: Identifier, name: Component, dirtyCallback: () => void)
     // private customId: Identifier;
     // private dirtyCallback: () => void;
-    readonly max: number;
     readonly players: UUID[];
-    readonly value: number;
     addPlayer(player: ServerPlayer): void;
     customId(): Identifier;
     getDisplayName(): Component;

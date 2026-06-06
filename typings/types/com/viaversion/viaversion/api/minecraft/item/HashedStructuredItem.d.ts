@@ -4,9 +4,7 @@ export class HashedStructuredItem extends Object implements HashedItem {
     static empty(): HashedStructuredItem;
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: Int2IntMap, arg3: (Object | null)[])
-    readonly amount: number;
     // private dataHashes: Int2IntMap;
-    readonly identifier: number;
     // private removedData: (Object | null)[];
     amount(): number;
     copy(): HashedItem;

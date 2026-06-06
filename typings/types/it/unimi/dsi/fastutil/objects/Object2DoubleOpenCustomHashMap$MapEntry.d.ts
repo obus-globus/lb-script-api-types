@@ -16,7 +16,6 @@ export class Object2DoubleOpenCustomHashMap$MapEntry extends Object implements O
     constructor(null_: Object2DoubleOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getDoubleValue(): number;
     hashCode(): number;

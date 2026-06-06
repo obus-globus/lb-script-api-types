@@ -35,15 +35,6 @@ export class Matrix3d extends Object implements Externalizable, Cloneable, Matri
     constructor(arg0: Matrix4dc)
     constructor(arg0: Matrix4fc)
     constructor(arg0: Vector3dc, arg1: Vector3dc, arg2: Vector3dc)
-    m00: number;
-    m01: number;
-    m02: number;
-    m10: number;
-    m11: number;
-    m12: number;
-    m20: number;
-    m21: number;
-    m22: number;
     _m00(arg0: number): Matrix3d;
     _m01(arg0: number): Matrix3d;
     _m02(arg0: number): Matrix3d;

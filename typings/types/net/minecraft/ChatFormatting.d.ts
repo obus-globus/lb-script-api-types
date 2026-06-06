@@ -55,7 +55,6 @@ export class ChatFormatting extends Enum<ChatFormatting> implements StringRepres
     readonly color: number;
     readonly id: number;
     // private isFormat: boolean;
-    readonly name: string;
     // private toString: string;
     getChar(): string;
     getColor(): number;

@@ -16,7 +16,6 @@ export class LevelRenderContextImpl extends Object implements AbstractLevelRende
     // private levelRenderState: LevelRenderState;
     // private levelRenderer: LevelRenderer;
     // private nodeCollector: SubmitNodeCollector;
-    readonly poseStack: PoseStack;
     // private sectionsToRender: ChunkSectionsToRender;
     bufferSource(): MultiBufferSource$BufferSource;
     gameRenderer(): GameRenderer;

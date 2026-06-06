@@ -3,7 +3,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 export class LinkedEntityStorage extends EntityPositionStorage implements StorableObject {
     constructor()
-    readonly entities: number[];
     entities(): number[];
     onRemove(): void;
     remove(arg0: UserConnection): void;

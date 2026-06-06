@@ -6,5 +6,4 @@ export class BlockDigStorage extends StoredObject {
     // private facing: number;
     // private position: BlockPosition;
     tick: number;
-    tick(): void;
 }

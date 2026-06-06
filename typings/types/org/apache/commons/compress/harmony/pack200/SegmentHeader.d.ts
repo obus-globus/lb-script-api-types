@@ -26,14 +26,9 @@ export class SegmentHeader extends BandSet {
     readonly cp_Utf8_count: number;
     readonly deflate_hint: boolean;
     readonly file_count: number;
-    readonly have_all_code_flags: boolean;
-    readonly have_class_flags_hi: boolean;
-    readonly have_code_flags_hi: boolean;
-    readonly have_field_flags_hi: boolean;
     // private have_file_modtime: boolean;
     // private have_file_options: boolean;
     // private have_file_size_hi: boolean;
-    readonly have_method_flags_hi: boolean;
     readonly ic_count: number;
     // private majverCounter: SegmentHeader$Counter;
     addMajorVersion(arg0: number): void;

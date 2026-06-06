@@ -16,7 +16,6 @@ export class ServerboundResourcePackPacket extends Record implements Packet<Serv
     private constructor(input: FriendlyByteBuf)
     action: ServerboundResourcePackPacket$Action;
     // private id: UUID;
-    action(): ServerboundResourcePackPacket$Action;
     equals(o: Object | null): boolean;
     handle(listener: ServerCommonPacketListener): void;
     hashCode(): number;

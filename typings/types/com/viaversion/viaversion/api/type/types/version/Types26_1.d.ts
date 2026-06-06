@@ -10,7 +10,4 @@ export class Types26_1<K extends VersionedStructuredDataKeys, E extends Abstract
     itemTemplate: Type<Item>;
     itemTemplateArray: Type<Item[]>;
     optionalItemTemplate: Type<Item>;
-    itemTemplate(): Type<Item>;
-    itemTemplateArray(): Type<Item[]>;
-    optionalItemTemplate(): Type<Item>;
 }

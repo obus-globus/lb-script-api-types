@@ -2,7 +2,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TextStringReader extends Object {
     constructor(arg0: string)
     readonly index: number;
-    readonly mark: number;
     // private s: string;
     canRead(): boolean;
     canRead(arg0: number): boolean;

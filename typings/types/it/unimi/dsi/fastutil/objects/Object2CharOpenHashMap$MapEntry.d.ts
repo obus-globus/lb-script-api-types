@@ -16,7 +16,6 @@ export class Object2CharOpenHashMap$MapEntry extends Object implements Object2Ch
     constructor(null_: Object2CharOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     getCharValue(): string;
     hashCode(): number;

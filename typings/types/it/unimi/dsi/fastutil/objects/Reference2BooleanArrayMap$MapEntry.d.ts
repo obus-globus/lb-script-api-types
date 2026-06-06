@@ -15,7 +15,6 @@ export class Reference2BooleanArrayMap$MapEntry extends Object implements Refere
     constructor(null_: Reference2BooleanArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     getBooleanValue(): boolean;
     hashCode(): number;

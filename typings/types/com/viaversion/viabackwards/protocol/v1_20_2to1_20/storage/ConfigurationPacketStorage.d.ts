@@ -8,10 +8,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ConfigurationPacketStorage extends Object implements StorableObject {
     constructor()
-    readonly enabledFeatures: string[];
     readonly finished: boolean;
     // private rawPackets: ConfigurationPacketStorage$QueuedPacket[];
-    readonly registry: Map$Entry<string, Tag>[];
     readonly resourcePack: ConfigurationPacketStorage$QueuedPacket;
     addRawPacket(arg0: PacketWrapper, arg1: PacketType): void;
     enabledFeatures(): string[];

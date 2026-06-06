@@ -49,7 +49,6 @@ export class BedrockTextFormatting extends Enum<BedrockTextFormatting> {
     private constructor(arg2: string, arg3: string)
     private constructor(arg2: string, arg3: string, arg4: number)
     readonly code: string;
-    readonly name: string;
     readonly rgbValue: number;
     // private type: BedrockTextFormatting$Type;
     asString(): string;

@@ -4,8 +4,6 @@ import type { TooltipFlag } from '../../../../net/minecraft/world/item/TooltipFl
 export class TooltipFlag$Default extends Record implements TooltipFlag {
     static ADVANCED: TooltipFlag$Default;
     static NORMAL: TooltipFlag$Default;
-    readonly advanced: boolean;
-    readonly creative: boolean;
     advanced(): boolean;
     asCreative(): TooltipFlag$Default;
     creative(): boolean;

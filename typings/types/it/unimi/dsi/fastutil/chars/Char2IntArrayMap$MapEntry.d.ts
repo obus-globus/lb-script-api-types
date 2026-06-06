@@ -14,8 +14,6 @@ export class Char2IntArrayMap$MapEntry extends Object implements Char2IntMap$Ent
     constructor(null_: Char2IntArrayMap$MapEntry)
     constructor(null_: Char2IntArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharIntPair;

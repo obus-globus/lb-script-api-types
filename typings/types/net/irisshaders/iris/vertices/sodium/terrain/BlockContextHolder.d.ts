@@ -3,7 +3,6 @@ export class BlockContextHolder extends Object {
     constructor()
     readonly blockEmission: number;
     readonly blockId: number;
-    readonly ignoreMidBlock: boolean;
     readonly localPosX: number;
     readonly localPosY: number;
     readonly localPosZ: number;

@@ -20,10 +20,6 @@ export abstract class NodeEvaluator extends Object {
     // private entityWidth: number;
     // private mob: Mob;
     // private nodes: Int2ObjectMap<Node>;
-    canFloat(): boolean;
-    canOpenDoors(): boolean;
-    canPassDoors(): boolean;
-    canWalkOverFences(): boolean;
     done(): void;
     getNeighbors(neighbors: Node[], pos: Node): number;
     getNode(x: number, y: number, z: number): Node;

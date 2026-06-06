@@ -42,7 +42,6 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     // private cachedConstructor: Constructor<T>;
     // private classRedefinedCount: number;
     // private classValueMap: ClassValue$ClassValueMap;
-    readonly componentType: Class<Object>;
     // private enumConstantDirectory: { [key: string]: T };
     readonly enumConstants: T[];
     // private genericInfo: ClassRepository;

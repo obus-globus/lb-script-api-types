@@ -215,7 +215,6 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     needsSync: boolean;
     // private nextStep: number;
     noPhysics: boolean;
-    readonly onGround: boolean;
     // private onGroundNoBlocks: boolean;
     // private packetPositionCodec: VecDeltaCodec;
     readonly passengers: Entity[];

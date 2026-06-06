@@ -13,7 +13,6 @@ export class Short2ReferenceArrayMap$MapEntry extends Object implements Short2Re
     constructor(null_: Short2ReferenceArrayMap$MapEntry)
     constructor(null_: Short2ReferenceArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

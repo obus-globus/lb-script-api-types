@@ -13,7 +13,6 @@ export class BiomeGenerationSettings extends Object {
     carvers: Holder<T>[];
     featureSet: () => PlacedFeature[];
     features: Holder<T>[][];
-    features(): Holder<T>[][];
     getBoneMealFeatures(): ConfiguredFeature<Object, Object>[];
     getCarvers(): Holder<ConfiguredWorldCarver<Object>>[];
     hasFeature(feature: PlacedFeature): boolean;

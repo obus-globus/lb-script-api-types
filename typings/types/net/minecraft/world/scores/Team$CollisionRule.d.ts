@@ -32,5 +32,4 @@ export class Team$CollisionRule extends Enum<Team$CollisionRule> implements Stri
     name: string;
     getDisplayName(): Component;
     getSerializedName(): string;
-    name(): "ALWAYS" | "NEVER" | "PUSH_OTHER_TEAMS" | "PUSH_OWN_TEAM";
 }

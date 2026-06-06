@@ -14,8 +14,6 @@ export class Int2ByteOpenCustomHashMap$MapEntry extends Object implements Int2By
     constructor(null_: Int2ByteOpenCustomHashMap$MapEntry)
     constructor(null_: Int2ByteOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntBytePair;

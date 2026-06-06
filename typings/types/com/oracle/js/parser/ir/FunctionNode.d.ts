@@ -63,7 +63,6 @@ export class FunctionNode extends LexicalContextExpression implements Flags<Func
     readonly numOfParams: number;
     readonly parameters: IdentNode[];
     readonly source: Source;
-    readonly usesAncestorScope: boolean;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(visitor: NodeVisitor<LexicalContext>): Node;

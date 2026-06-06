@@ -15,7 +15,6 @@ export class HoverEventAction extends Enum<HoverEventAction> implements NamedTyp
     static valueOf(paramarg0: string): HoverEventAction;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: boolean)
-    readonly name: string;
     readonly userDefinable: boolean;
     getName(): string;
     isUserDefinable(): boolean;

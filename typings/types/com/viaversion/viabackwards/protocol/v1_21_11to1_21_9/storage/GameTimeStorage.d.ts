@@ -2,7 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GameTimeStorage extends Object implements StorableObject {
     constructor()
-    readonly gameTime: number;
     gameTime(): number;
     incrementGameTime(): void;
     onRemove(): void;

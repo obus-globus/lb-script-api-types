@@ -16,7 +16,6 @@ export class Object2ShortArrayMap$MapEntry extends Object implements Object2Shor
     constructor(null_: Object2ShortArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getShortValue(): number;
     hashCode(): number;

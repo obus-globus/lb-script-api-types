@@ -31,7 +31,6 @@ export class FireworkExplosion$Shape extends Enum<FireworkExplosion$Shape> imple
     static values(): (Object | null)[];
     private constructor(id: number, name: string)
     readonly id: number;
-    readonly name: string;
     getId(): number;
     getName(): MutableComponent;
     getSerializedName(): string;

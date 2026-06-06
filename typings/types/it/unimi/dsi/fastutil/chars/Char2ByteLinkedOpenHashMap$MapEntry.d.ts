@@ -14,8 +14,6 @@ export class Char2ByteLinkedOpenHashMap$MapEntry extends Object implements Char2
     constructor(null_: Char2ByteLinkedOpenHashMap$MapEntry)
     constructor(null_: Char2ByteLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharBytePair;

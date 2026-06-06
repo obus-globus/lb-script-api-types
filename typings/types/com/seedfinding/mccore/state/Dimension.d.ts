@@ -12,7 +12,6 @@ export class Dimension extends Enum<Dimension> {
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: number)
     readonly id: number;
-    readonly name: string;
     getId(): number;
     getName(): string;
     toString(): string;

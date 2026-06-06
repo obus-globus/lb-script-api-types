@@ -14,8 +14,6 @@ export class Double2FloatOpenHashMap$MapEntry extends Object implements Double2F
     constructor(null_: Double2FloatOpenHashMap$MapEntry)
     constructor(null_: Double2FloatOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleFloatPair;

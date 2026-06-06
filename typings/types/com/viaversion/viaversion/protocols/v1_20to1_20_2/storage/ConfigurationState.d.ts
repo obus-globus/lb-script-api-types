@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ConfigurationState extends Object implements StorableObject {
     constructor()
-    readonly bridgePhase: ConfigurationState$BridgePhase;
     readonly clientInformation: ConfigurationState$ClientInformation;
     readonly joinGamePacket: ConfigurationState$QueuedPacket;
     // private lastDimensionRegistry: Map$Entry<string, Tag>[];

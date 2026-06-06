@@ -5,7 +5,6 @@ export class PayloadState<T extends Object | number | string | boolean> extends 
     constructor(arg0: number)
     readonly depth: number;
     // private emits: Payload<T>[];
-    readonly failure: PayloadState<T>;
     // private rootState: PayloadState<T>;
     // private success: { [key: string]: PayloadState<T> };
     addEmit(arg0: E[]): void;

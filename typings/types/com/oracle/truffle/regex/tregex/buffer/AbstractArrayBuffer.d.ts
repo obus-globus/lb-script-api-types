@@ -7,6 +7,5 @@ export abstract class AbstractArrayBuffer extends Object {
     getBufferLength(): number;
     grow(newLength: number): void;
     isEmpty(): boolean;
-    length(): number;
     setLength(size: number): void;
 }

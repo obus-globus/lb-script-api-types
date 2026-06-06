@@ -116,7 +116,6 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     textpipe: TextPipe;
     transX: number;
     transY: number;
-    transform: AffineTransform;
     transformState: number;
     usrClip: Shape;
     // private validFontInfo: boolean;

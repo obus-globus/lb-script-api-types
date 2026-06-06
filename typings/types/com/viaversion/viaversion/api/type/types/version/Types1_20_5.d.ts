@@ -28,20 +28,9 @@ export class Types1_20_5<K extends VersionedStructuredDataKeys, E extends Abstra
     structuredData: StructuredDataType;
     structuredDataArray: Type<StructuredData<Object>[]>;
     // private structuredDataKeys: K;
-    entityDataList(): Type<EntityData[]>;
-    entityDataTypes(): E;
     initKeys(arg0: (param0: VersionedTypesHolder) => K): void;
-    item(): Type<Item>;
-    itemArray(): Type<Item[]>;
-    itemCost(): Type<Item>;
     itemTemplate(): Type<Item>;
     itemTemplateArray(): Type<Item[]>;
-    lengthPrefixedItem(): Type<Item>;
-    optionalItemCost(): Type<Item>;
     optionalItemTemplate(): Type<Item>;
-    particle(): ParticleType;
-    particles(): ArrayType<Particle>;
-    structuredData(): StructuredDataType;
-    structuredDataArray(): Type<StructuredData<Object>[]>;
     structuredDataKeys(): K;
 }

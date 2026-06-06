@@ -3,7 +3,6 @@ import type { HttpObject } from '../../../../../io/netty/handler/codec/http/Http
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultHttpObject extends Object implements HttpObject {
     constructor()
-    readonly decoderResult: DecoderResult;
     decoderResult(): DecoderResult;
     equals(arg0: Object | null): boolean;
     getDecoderResult(): DecoderResult;

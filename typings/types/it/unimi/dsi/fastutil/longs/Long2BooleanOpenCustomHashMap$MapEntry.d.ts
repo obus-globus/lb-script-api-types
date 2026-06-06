@@ -14,8 +14,6 @@ export class Long2BooleanOpenCustomHashMap$MapEntry extends Object implements Lo
     constructor(null_: Long2BooleanOpenCustomHashMap$MapEntry)
     constructor(null_: Long2BooleanOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongBooleanPair;

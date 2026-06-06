@@ -16,7 +16,6 @@ export class Object2BooleanLinkedOpenCustomHashMap$MapEntry extends Object imple
     constructor(null_: Object2BooleanLinkedOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     getBooleanValue(): boolean;
     hashCode(): number;

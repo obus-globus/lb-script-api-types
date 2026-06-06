@@ -4,8 +4,6 @@ export class EitherImpl<X extends Object | number | string | boolean, Y extends 
     static left(paramarg0: Object | null): Either<Object, Object>;
     static right(paramarg0: Object | null): Either<Object, Object>;
     constructor(arg0: X, arg1: Y)
-    readonly left: X;
-    readonly right: Y;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     isLeft(): boolean;

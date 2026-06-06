@@ -14,7 +14,6 @@ export class FastByteArrayInputStream extends MeasurableInputStream implements R
     // private position: number;
     available(): number;
     close(): void;
-    length(): number;
     mark(arg0: number): void;
     markSupported(): boolean;
     peek(): number;

@@ -10,7 +10,6 @@ export class ChunkResult$Fail<T extends Object | number | string | boolean> exte
     static of(paramvalue: Object | null): ChunkResult<Object>;
     static orElse(paramchunkResult: ChunkResult<Object>, paramorElse: Object | null): Object | null;
     constructor(error: () => string)
-    readonly error: () => string;
     equals(o: Object | null): boolean;
     error(): () => string;
     getError(): string;

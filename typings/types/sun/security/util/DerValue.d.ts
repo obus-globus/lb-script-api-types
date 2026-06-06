@@ -49,7 +49,6 @@ export class DerValue extends Object {
     constructor(arg0: string)
     // private allowBER: boolean;
     // private buffer: number[];
-    readonly data: DerInputStream;
     // private end: number;
     // private start: number;
     tag: number;

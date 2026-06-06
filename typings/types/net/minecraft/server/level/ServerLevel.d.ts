@@ -168,7 +168,6 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     // private serverLevelData: ServerLevelData;
     // private sleepStatus: SleepStatus;
     // private structureCheck: StructureCheck;
-    readonly structureManager: StructureManager;
     // private tickTime: boolean;
     readonly waypointManager: ServerWaypointManager;
     addDuringTeleport(entity: Entity): void;
@@ -317,7 +316,6 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     mayInteract(entity: Entity, pos: BlockPos): boolean;
     neighborChanged(pos: BlockPos, changedBlock: Block, orientation: Orientation): void;
     neighborChanged(state: BlockState, pos: BlockPos, changedBlock: Block, orientation: Orientation, movedByPiston: boolean): void;
-    noSave(): boolean;
     onBlockEntityAdded(blockEntity: BlockEntity): void;
     onReputationEvent(type: ReputationEventType, source: Entity, target: ReputationEventHandler): void;
     onStructureStartsAvailable(chunk: ChunkAccess): void;

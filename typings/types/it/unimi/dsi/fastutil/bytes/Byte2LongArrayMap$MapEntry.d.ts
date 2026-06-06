@@ -14,8 +14,6 @@ export class Byte2LongArrayMap$MapEntry extends Object implements Byte2LongMap$E
     constructor(null_: Byte2LongArrayMap$MapEntry)
     constructor(null_: Byte2LongArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteLongPair;

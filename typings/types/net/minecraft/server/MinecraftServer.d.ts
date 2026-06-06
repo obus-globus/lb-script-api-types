@@ -164,7 +164,6 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     readonly packRepository: PackRepository;
     // private packetProcessor: PacketProcessor;
     // private playerDataStorage: PlayerDataStorage;
-    readonly playerIdleTimeout: number;
     readonly playerList: PlayerList;
     readonly port: number;
     // private potionBrewing: PotionBrewing;

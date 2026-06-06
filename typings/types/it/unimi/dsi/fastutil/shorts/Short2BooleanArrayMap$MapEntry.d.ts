@@ -14,8 +14,6 @@ export class Short2BooleanArrayMap$MapEntry extends Object implements Short2Bool
     constructor(null_: Short2BooleanArrayMap$MapEntry)
     constructor(null_: Short2BooleanArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortBooleanPair;

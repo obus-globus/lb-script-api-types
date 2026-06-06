@@ -9,7 +9,6 @@ export class FormImage$Type extends Enum<FormImage$Type> {
     static valueOf(paramarg0: string): FormImage$Type;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     name(): "PATH" | "URL";
 }

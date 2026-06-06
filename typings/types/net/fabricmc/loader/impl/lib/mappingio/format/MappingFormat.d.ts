@@ -33,5 +33,4 @@ export class MappingFormat extends Enum<MappingFormat> {
     supportsLocals: boolean;
     features(): FeatureSet;
     hasSingleFile(): boolean;
-    name(): "TINY_FILE" | "TINY_2_FILE" | "ENIGMA_FILE" | "ENIGMA_DIR" | "SRG_FILE" | "XSRG_FILE" | "JAM_FILE" | "CSRG_FILE" | "TSRG_FILE" | "TSRG_2_FILE" | "PROGUARD_FILE" | "INTELLIJ_MIGRATION_MAP_FILE" | "RECAF_SIMPLE_FILE" | "JOBF_FILE";
 }

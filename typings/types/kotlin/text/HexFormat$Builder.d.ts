@@ -6,8 +6,6 @@ export class HexFormat$Builder extends Object {
     constructor()
     // private _bytes: HexFormat$BytesHexFormat$Builder | null;
     // private _number: HexFormat$NumberHexFormat$Builder | null;
-    readonly bytes: HexFormat$BytesHexFormat$Builder;
-    readonly number: HexFormat$NumberHexFormat$Builder;
     upperCase: boolean;
     build(): HexFormat;
     bytes(builderAction: (param0: HexFormat$BytesHexFormat$Builder) => void): void;

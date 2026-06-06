@@ -2,8 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LastExplosionPowerStorage extends Object implements StorableObject {
     constructor()
-    readonly affectedBlocks: number;
-    readonly power: number;
     affectedBlocks(): number;
     onRemove(): void;
     power(): number;

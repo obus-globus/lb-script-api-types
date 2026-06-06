@@ -17,7 +17,6 @@ export abstract class MessageAggregator<I extends Object | number | string | boo
     // private handleIncompleteAggregateDuringClose: boolean;
     readonly handlingOversizedMessage: boolean;
     // private maxContentLength: number;
-    readonly maxCumulationBufferComponents: number;
     acceptInboundMessage(arg0: Object): boolean;
     aggregate(arg0: O, arg1: C): void;
     beginAggregation(arg0: S, arg1: ByteBuf): O;

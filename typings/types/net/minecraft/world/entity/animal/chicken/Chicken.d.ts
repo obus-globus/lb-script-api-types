@@ -169,7 +169,6 @@ export class Chicken extends Animal {
     // private getSoundSet(): ChickenSoundVariant$ChickenSoundSet;
     // private getSoundVariant(): Holder<ChickenSoundVariant>;
     getVariant(): Holder<ChickenVariant>;
-    isChickenJockey(): boolean;
     isFlapping(): boolean;
     isFood(itemStack: ItemStack): boolean;
     onFlap(): void;

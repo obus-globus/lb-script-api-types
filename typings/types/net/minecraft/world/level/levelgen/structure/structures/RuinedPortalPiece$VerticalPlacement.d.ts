@@ -26,7 +26,6 @@ export class RuinedPortalPiece$VerticalPlacement extends Enum<RuinedPortalPiece$
     static valueOf(paramname: string): RuinedPortalPiece$VerticalPlacement;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     name(): "ON_LAND_SURFACE" | "PARTLY_BURIED" | "ON_OCEAN_FLOOR" | "IN_MOUNTAIN" | "UNDERGROUND" | "IN_NETHER";

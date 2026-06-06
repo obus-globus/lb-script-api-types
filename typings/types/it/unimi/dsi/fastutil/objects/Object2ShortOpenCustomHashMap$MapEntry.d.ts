@@ -16,7 +16,6 @@ export class Object2ShortOpenCustomHashMap$MapEntry extends Object implements Ob
     constructor(null_: Object2ShortOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getShortValue(): number;
     hashCode(): number;

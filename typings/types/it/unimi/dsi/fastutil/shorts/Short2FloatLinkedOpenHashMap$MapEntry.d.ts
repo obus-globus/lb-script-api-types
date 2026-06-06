@@ -14,8 +14,6 @@ export class Short2FloatLinkedOpenHashMap$MapEntry extends Object implements Sho
     constructor(null_: Short2FloatLinkedOpenHashMap$MapEntry)
     constructor(null_: Short2FloatLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortFloatPair;

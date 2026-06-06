@@ -14,8 +14,6 @@ export class Long2DoubleOpenHashMap$MapEntry extends Object implements Long2Doub
     constructor(null_: Long2DoubleOpenHashMap$MapEntry)
     constructor(null_: Long2DoubleOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongDoublePair;

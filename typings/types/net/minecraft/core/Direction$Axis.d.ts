@@ -31,7 +31,6 @@ export class Direction$Axis extends Enum<Direction$Axis> implements Predicate<Di
     static valueOf(paramname: string): Direction$Axis;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     choose(x: boolean, y: boolean, z: boolean): boolean;
     choose(x: number, y: number, z: number): number;

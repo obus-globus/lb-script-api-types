@@ -14,8 +14,6 @@ export class Byte2CharOpenHashMap$MapEntry extends Object implements Byte2CharMa
     constructor(null_: Byte2CharOpenHashMap$MapEntry)
     constructor(null_: Byte2CharOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ByteCharPair;

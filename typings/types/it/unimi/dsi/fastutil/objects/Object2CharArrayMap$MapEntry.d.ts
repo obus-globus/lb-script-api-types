@@ -16,7 +16,6 @@ export class Object2CharArrayMap$MapEntry extends Object implements Object2CharM
     constructor(null_: Object2CharArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     getCharValue(): string;
     hashCode(): number;

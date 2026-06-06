@@ -10,7 +10,6 @@ export class AcknowledgedMessagesStorage extends Object implements StorableObjec
     // private chatSession: AcknowledgedMessagesStorage$ChatSession;
     // private delayedAckCount: number;
     // private lastSeenMessages: BitSet;
-    readonly secureChatEnforced: boolean;
     accumulateAckCount(arg0: number): number;
     clear(): void;
     createSpoofedAck(): BitSet;

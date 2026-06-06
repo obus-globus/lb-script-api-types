@@ -8,7 +8,6 @@ export class SingleOptionInput extends Object implements Input {
     // private key: string;
     // private label: Tag;
     // private options: SingleOptionInput$Entry[];
-    readonly value: number;
     asCommandSubstitution(): string;
     asTag(): Tag;
     key(): string;

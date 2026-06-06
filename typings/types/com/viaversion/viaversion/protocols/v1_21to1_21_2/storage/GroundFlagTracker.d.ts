@@ -2,7 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GroundFlagTracker extends Object implements StorableObject {
     constructor()
-    readonly horizontalCollision: boolean;
     // private onGround: boolean;
     horizontalCollision(): boolean;
     onGround(): boolean;

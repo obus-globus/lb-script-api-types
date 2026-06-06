@@ -12,7 +12,6 @@ export class ColorSpace extends Enum<ColorSpace> {
     static valueOf(paramarg0: string): ColorSpace;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): Component;
     name(): "SRGB" | "DCI_P3" | "DISPLAY_P3" | "REC2020" | "ADOBE_RGB";
 }

@@ -15,7 +15,6 @@ import type { Source } from '../okio/Source.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
 export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSink, BufferedSource {
     constructor()
-    readonly buffer: Buffer;
     head: Segment | null;
     // private size: number;
     size(): number;

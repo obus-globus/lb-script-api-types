@@ -14,7 +14,6 @@ export class Long2ObjectOpenCustomHashMap$MapEntry extends Object implements Lon
     constructor(null_: Long2ObjectOpenCustomHashMap$MapEntry)
     constructor(null_: Long2ObjectOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

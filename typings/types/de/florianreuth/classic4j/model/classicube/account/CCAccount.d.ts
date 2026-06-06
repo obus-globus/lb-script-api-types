@@ -14,6 +14,5 @@ export class CCAccount extends Object {
     hashCode(): number;
     password(): string;
     toString(): string;
-    token(): string;
     username(): string;
 }

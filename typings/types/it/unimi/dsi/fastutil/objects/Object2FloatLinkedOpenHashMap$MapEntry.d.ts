@@ -16,7 +16,6 @@ export class Object2FloatLinkedOpenHashMap$MapEntry extends Object implements Ob
     constructor(null_: Object2FloatLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getFloatValue(): number;
     hashCode(): number;

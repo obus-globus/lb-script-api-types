@@ -7,7 +7,6 @@ import type { TerminalNode } from '../../../../org/antlr/v4/runtime/tree/Termina
 export class GLSLParser$LayoutQualifierContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
-    layoutQualifierId: GLSLParser$LayoutQualifierIdContext;
     layoutQualifiers: GLSLParser$LayoutQualifierIdContext[];
     COMMA(): TerminalNode[];
     COMMA(arg0: number): TerminalNode;

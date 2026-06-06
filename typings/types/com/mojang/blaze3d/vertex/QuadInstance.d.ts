@@ -9,7 +9,6 @@ export class QuadInstance extends Object {
     // private lightCoords1: number;
     // private lightCoords2: number;
     // private lightCoords3: number;
-    readonly overlayCoords: number;
     getColor(vertex: number): number;
     getLightCoords(vertex: number): number;
     getLightCoordsWithEmission(vertex: number, lightEmission: number): number;

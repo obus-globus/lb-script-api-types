@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class Chunk1_18 extends Object implements Chunk {
     constructor(arg0: number, arg1: number, arg2: ChunkSection[], arg3: Map$Entry<string, Tag>[], arg4: BlockEntity[])
-    readonly blockEntities: BlockEntity[];
     heightMap: Map$Entry<string, Tag>[];
     sections: ChunkSection[];
     readonly x: number;

@@ -8,7 +8,6 @@ import type { KeyEvent } from '../../../../../net/minecraft/client/input/KeyEven
 export class MultilineTextField extends Object {
     static NO_LIMIT: number;
     constructor(font: Font, width: number)
-    readonly characterLimit: number;
     // private cursor: number;
     readonly cursorListener: () => void;
     // private displayLines: MultilineTextField$StringView[];
@@ -16,7 +15,6 @@ export class MultilineTextField extends Object {
     readonly lineLimit: number;
     // private selectCursor: number;
     readonly selecting: boolean;
-    readonly value: string;
     readonly valueListener: (param0: string) => void;
     // private width: number;
     characterLimit(): number;

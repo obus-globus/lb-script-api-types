@@ -25,7 +25,6 @@ export class BossEvent$BossBarOverlay extends Enum<BossEvent$BossBarOverlay> imp
     static valueOf(paramname: string): BossEvent$BossBarOverlay;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     name(): "PROGRESS" | "NOTCHED_6" | "NOTCHED_10" | "NOTCHED_12" | "NOTCHED_20";

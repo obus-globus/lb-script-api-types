@@ -14,8 +14,6 @@ export class Short2LongOpenCustomHashMap$MapEntry extends Object implements Shor
     constructor(null_: Short2LongOpenCustomHashMap$MapEntry)
     constructor(null_: Short2LongOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortLongPair;

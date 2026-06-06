@@ -7,7 +7,6 @@ export class InformativeException extends RuntimeException {
     constructor(arg0: Throwable)
     // private dataEntries: InformativeException$DataEntry[];
     readonly message: string | null;
-    readonly shouldBePrinted: boolean;
     // private sources: number;
     addSource(arg0: Class<Object>): InformativeException;
     fillInStackTrace(): Throwable;

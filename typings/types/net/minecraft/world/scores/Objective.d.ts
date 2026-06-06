@@ -8,11 +8,9 @@ import type { ObjectiveCriteria$RenderType } from '../../../../net/minecraft/wor
 export class Objective extends Object {
     constructor(scoreboard: Scoreboard, name: string, criteria: ObjectiveCriteria, displayName: Component, renderType: ObjectiveCriteria$RenderType, displayAutoUpdate: boolean, numberFormat: NumberFormat)
     readonly criteria: ObjectiveCriteria;
-    readonly displayAutoUpdate: boolean;
     readonly displayName: Component;
     readonly formattedDisplayName: Component;
     readonly name: string;
-    readonly numberFormat: NumberFormat;
     readonly renderType: ObjectiveCriteria$RenderType;
     readonly scoreboard: Scoreboard;
     // private createFormattedDisplayName(): Component;

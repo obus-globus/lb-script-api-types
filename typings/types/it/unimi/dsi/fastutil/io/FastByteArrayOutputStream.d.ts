@@ -14,7 +14,6 @@ export class FastByteArrayOutputStream extends MeasurableOutputStream implements
     length: number;
     // private position: number;
     close(): void;
-    length(): number;
     position(): number;
     position(arg0: number): void;
     reset(): void;

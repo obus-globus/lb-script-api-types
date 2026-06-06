@@ -25,11 +25,7 @@ export class PlatformEventType extends Type {
     // private dynamicSettings: boolean;
     readonly enabled: boolean;
     readonly endChunk: boolean;
-    readonly hasCutoff: boolean;
     // private hasHook: boolean;
-    readonly hasLevel: boolean;
-    readonly hasPeriod: boolean;
-    readonly hasThrottle: boolean;
     // private isBackToBackSensitive: boolean;
     // private isCPUTimeMethodSampling: boolean;
     // private isInstrumented: boolean;

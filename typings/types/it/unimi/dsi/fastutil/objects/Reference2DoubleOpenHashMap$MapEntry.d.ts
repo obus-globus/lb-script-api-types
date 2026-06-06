@@ -15,7 +15,6 @@ export class Reference2DoubleOpenHashMap$MapEntry extends Object implements Refe
     constructor(null_: Reference2DoubleOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getDoubleValue(): number;
     hashCode(): number;

@@ -29,9 +29,7 @@ export class MerchantMenu extends AbstractContainerMenu {
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
     constructor(containerId: number, inventory: (Object | null)[])
     constructor(containerId: number, inventory: (Object | null)[], merchant: Merchant)
-    readonly canRestock: boolean;
     readonly merchantLevel: number;
-    readonly showProgressBar: boolean;
     // private tradeContainer: (Object | null)[];
     // private trader: Merchant;
     canRestock(): boolean;

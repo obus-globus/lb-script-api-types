@@ -15,7 +15,6 @@ export class Reference2IntOpenHashMap$MapEntry extends Object implements Referen
     constructor(null_: Reference2IntOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getIntValue(): number;
     hashCode(): number;

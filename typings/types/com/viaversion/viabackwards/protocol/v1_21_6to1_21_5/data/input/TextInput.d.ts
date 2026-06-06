@@ -10,7 +10,6 @@ export class TextInput extends Object implements Input {
     // private label: Tag;
     // private maxLength: number;
     // private options: TextInput$MultilineOptions[];
-    readonly value: string;
     asCommandSubstitution(): string;
     asTag(): Tag;
     initial(): string;

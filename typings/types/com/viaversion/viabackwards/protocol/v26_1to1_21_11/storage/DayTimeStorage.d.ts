@@ -2,9 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DayTimeStorage extends Object implements StorableObject {
     constructor()
-    readonly advanceTime: boolean;
-    readonly dayTime: number;
-    readonly gameTime: number;
     advanceTime(): boolean;
     dayTime(): number;
     gameTime(): number;

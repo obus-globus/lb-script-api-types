@@ -23,7 +23,6 @@ export class OceanRuinStructure$Type extends Enum<OceanRuinStructure$Type> imple
     static valueOf(paramname: string): OceanRuinStructure$Type;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     name(): "WARM" | "COLD";

@@ -14,7 +14,6 @@ export class Double2ObjectLinkedOpenHashMap$MapEntry extends Object implements D
     constructor(null_: Double2ObjectLinkedOpenHashMap$MapEntry)
     constructor(null_: Double2ObjectLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

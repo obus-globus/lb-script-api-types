@@ -14,8 +14,6 @@ export class Long2ByteArrayMap$MapEntry extends Object implements Long2ByteMap$E
     constructor(null_: Long2ByteArrayMap$MapEntry)
     constructor(null_: Long2ByteArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongBytePair;

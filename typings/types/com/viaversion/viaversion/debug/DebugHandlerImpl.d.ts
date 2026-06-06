@@ -7,9 +7,6 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class DebugHandlerImpl extends Object implements DebugHandler {
     constructor()
     // private clientboundPacketsToLog: PacketType[];
-    readonly enabled: boolean;
-    readonly logPostPacketTransform: boolean;
-    readonly logPrePacketTransform: boolean;
     // private packetTypesToLog: string[];
     // private serverboundPacketsToLog: PacketType[];
     addPacketTypeNameToLog(arg0: string): void;

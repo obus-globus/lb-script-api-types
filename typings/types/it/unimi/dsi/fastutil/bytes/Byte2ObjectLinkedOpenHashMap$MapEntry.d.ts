@@ -14,7 +14,6 @@ export class Byte2ObjectLinkedOpenHashMap$MapEntry extends Object implements Byt
     constructor(null_: Byte2ObjectLinkedOpenHashMap$MapEntry)
     constructor(null_: Byte2ObjectLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

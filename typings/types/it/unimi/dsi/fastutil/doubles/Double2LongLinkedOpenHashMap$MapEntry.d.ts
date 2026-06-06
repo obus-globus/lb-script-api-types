@@ -14,8 +14,6 @@ export class Double2LongLinkedOpenHashMap$MapEntry extends Object implements Dou
     constructor(null_: Double2LongLinkedOpenHashMap$MapEntry)
     constructor(null_: Double2LongLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleLongPair;

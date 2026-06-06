@@ -72,10 +72,7 @@ export class Vec3 extends Object implements Position {
     toVector3f(): Vector3f;
     vectorTo(vec: Vec3): Vec3;
     with(axis: Direction$Axis, value: number): Vec3;
-    x(): number;
     xRot(radians: number): Vec3;
-    y(): number;
     yRot(radians: number): Vec3;
-    z(): number;
     zRot(radians: number): Vec3;
 }

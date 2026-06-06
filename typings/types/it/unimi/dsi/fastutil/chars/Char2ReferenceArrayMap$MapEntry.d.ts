@@ -13,7 +13,6 @@ export class Char2ReferenceArrayMap$MapEntry extends Object implements Char2Refe
     constructor(null_: Char2ReferenceArrayMap$MapEntry)
     constructor(null_: Char2ReferenceArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): string;

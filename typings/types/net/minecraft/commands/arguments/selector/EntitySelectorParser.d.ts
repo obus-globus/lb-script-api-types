@@ -48,14 +48,6 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     readonly distance: MinMaxBounds$Doubles;
     // private entityUUID: UUID;
     // private flags: (Object | null)[];
-    readonly hasAdvancements: boolean;
-    readonly hasGamemodeEquals: boolean;
-    readonly hasGamemodeNotEquals: boolean;
-    readonly hasNameEquals: boolean;
-    readonly hasNameNotEquals: boolean;
-    readonly hasScores: boolean;
-    readonly hasTeamEquals: boolean;
-    readonly hasTeamNotEquals: boolean;
     readonly includesEntities: boolean;
     // private isLimited: boolean;
     // private isSorted: boolean;

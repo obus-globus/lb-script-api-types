@@ -31,7 +31,6 @@ export class PlayerModelPart extends Enum<PlayerModelPart> implements StringRepr
     readonly bit: number;
     readonly id: string;
     readonly mask: number;
-    readonly name: Component;
     getBit(): number;
     getId(): string;
     getMask(): number;

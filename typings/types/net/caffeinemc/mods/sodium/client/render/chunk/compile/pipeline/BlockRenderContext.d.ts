@@ -16,7 +16,6 @@ export class BlockRenderContext extends Object {
     // private seed: number;
     // private slice: LevelSlice;
     // private state: BlockState;
-    collector(): TranslucentGeometryCollector;
     model(): BlockStateModel;
     origin(): Vector3fc;
     pos(): BlockPos;

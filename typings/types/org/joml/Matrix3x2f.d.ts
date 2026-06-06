@@ -61,12 +61,6 @@ export class Matrix3x2f extends Object implements Externalizable, Cloneable, Mat
     invert(): Matrix3x2f;
     invert(arg0: Matrix3x2f): Matrix3x2f;
     isFinite(): boolean;
-    m00(): number;
-    m01(): number;
-    m10(): number;
-    m11(): number;
-    m20(): number;
-    m21(): number;
     mul(arg0: Matrix3x2fc): Matrix3x2f;
     mul(arg0: Matrix3x2fc, arg1: Matrix3x2f): Matrix3x2f;
     mulLocal(arg0: Matrix3x2fc): Matrix3x2f;

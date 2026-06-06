@@ -20,7 +20,6 @@ export class PluralRules$FixedDecimal extends Number implements PluralRules$IFix
     readonly decimalDigits: number;
     readonly decimalDigitsWithoutTrailingZeros: number;
     // private exponent: number;
-    readonly hasIntegerValue: boolean;
     readonly integerValue: number;
     // private isNegative: boolean;
     readonly source: number;

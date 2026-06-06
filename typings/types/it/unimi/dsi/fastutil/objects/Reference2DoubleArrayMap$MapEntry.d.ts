@@ -15,7 +15,6 @@ export class Reference2DoubleArrayMap$MapEntry extends Object implements Referen
     constructor(null_: Reference2DoubleArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getDoubleValue(): number;
     hashCode(): number;

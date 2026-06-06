@@ -5,13 +5,9 @@ import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class MannequinData extends Object {
     constructor(arg0: UUID, arg1: string)
-    readonly displayName: Tag;
     // private entityData: EntityData[];
-    readonly hasTeam: boolean;
-    readonly headYaw: number;
     // private itemMap: { [key: number]: Item };
     // private name: string;
-    readonly passengers: number[];
     // private pitch: number;
     // private uuid: UUID;
     // private x: number;

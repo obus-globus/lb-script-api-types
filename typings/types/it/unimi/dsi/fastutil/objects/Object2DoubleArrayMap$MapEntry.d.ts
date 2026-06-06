@@ -16,7 +16,6 @@ export class Object2DoubleArrayMap$MapEntry extends Object implements Object2Dou
     constructor(null_: Object2DoubleArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getDoubleValue(): number;
     hashCode(): number;

@@ -16,7 +16,6 @@ export class Object2ByteOpenCustomHashMap$MapEntry extends Object implements Obj
     constructor(null_: Object2ByteOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getByteValue(): number;
     hashCode(): number;

@@ -23,7 +23,6 @@ export class Biome$TemperatureModifier extends Enum<Biome$TemperatureModifier> i
     static valueOf(paramname: string): Biome$TemperatureModifier;
     static values(): (Object | null)[];
     private constructor(name: string)
-    readonly name: string;
     getName(): string;
     getSerializedName(): string;
     modifyTemperature(pos: BlockPos, baseTemperature: number): number;

@@ -14,8 +14,6 @@ export class Long2LongArrayMap$MapEntry extends Object implements Long2LongMap$E
     constructor(null_: Long2LongArrayMap$MapEntry)
     constructor(null_: Long2LongArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): LongLongPair;

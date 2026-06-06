@@ -14,7 +14,6 @@ export class TextCodecs_v1_21_5$NbtDataSourceType extends Enum<TextCodecs_v1_21_
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: MapCodec<NbtDataSource>)
     readonly codec: MapCodec<NbtDataSource>;
-    readonly name: string;
     getCodec(): MapCodec<NbtDataSource>;
     getName(): string;
     name(): "ENTITY" | "BLOCK" | "STORAGE";

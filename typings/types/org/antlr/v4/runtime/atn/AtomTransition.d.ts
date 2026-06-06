@@ -18,7 +18,6 @@ export class AtomTransition extends Transition {
     constructor(arg0: ATNState, arg1: number)
     label: number;
     getSerializationType(): number;
-    label(): IntervalSet;
     matches(arg0: number, arg1: number, arg2: number): boolean;
     toString(): string;
 }

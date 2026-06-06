@@ -24,7 +24,6 @@ export class StructureTemplatePool$Projection extends Enum<StructureTemplatePool
     static valueOf(paramname: string): StructureTemplatePool$Projection;
     static values(): (Object | null)[];
     private constructor(name: string, processors: StructureProcessor[])
-    readonly name: string;
     readonly processors: StructureProcessor[];
     getName(): string;
     getProcessors(): StructureProcessor[];

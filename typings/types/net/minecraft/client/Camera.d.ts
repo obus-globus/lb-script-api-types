@@ -32,7 +32,6 @@ export class Camera extends Object implements TrackedWaypoint$Camera {
     readonly cullFrustum: Frustum;
     // private depthFar: number;
     readonly detached: boolean;
-    readonly entity: Entity;
     // private eyeHeight: number;
     // private eyeHeightOld: number;
     // private forwards: Vector3f;
@@ -48,7 +47,6 @@ export class Camera extends Object implements TrackedWaypoint$Camera {
     // private minecraft: Minecraft;
     // private oldFovModifier: number;
     // private panoramicForwards: Vector3f;
-    readonly position: Vec3;
     // private projection: Projection;
     // private rotation: Quaternionf;
     // private up: Vector3f;

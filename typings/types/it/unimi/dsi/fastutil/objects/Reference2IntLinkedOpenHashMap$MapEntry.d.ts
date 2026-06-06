@@ -15,7 +15,6 @@ export class Reference2IntLinkedOpenHashMap$MapEntry extends Object implements R
     constructor(null_: Reference2IntLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getIntValue(): number;
     hashCode(): number;

@@ -105,7 +105,6 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     constructor(item: ItemLike)
     constructor(item: ItemLike, count: number)
     readonly components: (Object | null)[];
-    readonly count: number;
     readonly item: Holder<Item>;
     readonly popTime: number;
     // private subscriber: ChangeSubscriber<Object>;

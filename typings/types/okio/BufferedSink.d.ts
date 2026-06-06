@@ -7,7 +7,6 @@ import type { ByteString } from '../okio/ByteString.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 export interface BufferedSink extends WritableByteChannel, Object, Sink{
-    readonly buffer: Buffer;
     buffer(): Buffer;
     emit(): BufferedSink;
     emitCompleteSegments(): BufferedSink;

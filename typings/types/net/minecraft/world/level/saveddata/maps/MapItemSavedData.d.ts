@@ -58,7 +58,6 @@ export class MapItemSavedData extends SavedData {
     getUpdatePacket(id: MapId, player: Player): Packet<Object>;
     isExplorationMap(): boolean;
     isTrackedCountOverLimit(limit: number): boolean;
-    locked(): MapItemSavedData;
     // private playerDecorationTypeAndRotation(type: Holder<MapDecorationType>, level: LevelAccessor, yRot: number, xDeltaFromCenter: number, yDeltaFromCenter: number): Pair<Holder<MapDecorationType>, number>;
     // private removeDecoration(string: string): void;
     removedFromFrame(pos: BlockPos, entityID: number): void;

@@ -17,7 +17,6 @@ export class QuadViewImpl extends Object implements ModelQuadView, ExtendedQuadV
     constructor()
     baseIndex: number;
     data: number[];
-    readonly faceNormal: Vector3f;
     // private isGeometryInvalid: boolean;
     nominalFace: Direction;
     readonly wrapper: QuadViewWrapper;

@@ -6,7 +6,6 @@ export class SynchedEntityData$DataItem<T extends Object | number | string | boo
     readonly accessor: EntityDataAccessor<T>;
     readonly dirty: boolean;
     // private initialValue: T;
-    readonly value: T;
     getAccessor(): EntityDataAccessor<T>;
     getValue(): T;
     isDirty(): boolean;

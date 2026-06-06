@@ -20,10 +20,6 @@ export class Matrix2f extends Object implements Externalizable, Cloneable, Matri
     constructor(arg0: Matrix2fc)
     constructor(arg0: Matrix3fc)
     constructor(arg0: Vector2fc, arg1: Vector2fc)
-    m00: number;
-    m01: number;
-    m10: number;
-    m11: number;
     _m00(arg0: number): Matrix2f;
     _m01(arg0: number): Matrix2f;
     _m10(arg0: number): Matrix2f;

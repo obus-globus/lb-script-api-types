@@ -103,12 +103,9 @@ export class Vector3i extends Object implements Externalizable, Cloneable, Vecto
     toString(): string;
     toString(arg0: NumberFormat): string;
     writeExternal(arg0: ObjectOutput): void;
-    x(): number;
     xy(arg0: Vector2L): Vector2L;
     xy(arg0: Vector2d): Vector2d;
     xy(arg0: Vector2f): Vector2f;
     xy(arg0: Vector2i): Vector2i;
-    y(): number;
-    z(): number;
     zero(): Vector3i;
 }

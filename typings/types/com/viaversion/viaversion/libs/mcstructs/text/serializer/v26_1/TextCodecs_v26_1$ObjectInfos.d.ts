@@ -13,7 +13,6 @@ export class TextCodecs_v26_1$ObjectInfos extends Enum<TextCodecs_v26_1$ObjectIn
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: MapCodec<ObjectComponent$ObjectInfo>)
     readonly codec: MapCodec<ObjectComponent$ObjectInfo>;
-    readonly name: string;
     getCodec(): MapCodec<ObjectComponent$ObjectInfo>;
     getName(): string;
     name(): "ATLAS_SPRITE" | "PLAYER_SPRITE";

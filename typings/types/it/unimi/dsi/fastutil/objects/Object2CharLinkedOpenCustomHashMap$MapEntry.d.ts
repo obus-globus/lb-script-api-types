@@ -16,7 +16,6 @@ export class Object2CharLinkedOpenCustomHashMap$MapEntry extends Object implemen
     constructor(null_: Object2CharLinkedOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     getCharValue(): string;
     hashCode(): number;

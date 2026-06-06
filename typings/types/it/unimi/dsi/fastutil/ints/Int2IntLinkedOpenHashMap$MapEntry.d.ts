@@ -14,8 +14,6 @@ export class Int2IntLinkedOpenHashMap$MapEntry extends Object implements Int2Int
     constructor(null_: Int2IntLinkedOpenHashMap$MapEntry)
     constructor(null_: Int2IntLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntIntPair;

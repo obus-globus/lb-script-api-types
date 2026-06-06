@@ -3,7 +3,6 @@ import type { KeyMappings } from '../../../../../../com/viaversion/viaversion/ut
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BannerPatternStorage extends Object implements StorableObject {
     constructor()
-    readonly bannerPatterns: KeyMappings;
     bannerPatterns(): KeyMappings;
     onRemove(): void;
     pattern(arg0: number): string;

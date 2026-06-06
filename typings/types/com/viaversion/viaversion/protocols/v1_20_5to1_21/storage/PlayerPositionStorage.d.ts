@@ -2,7 +2,6 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PlayerPositionStorage extends Object implements StorableObject {
     constructor()
-    readonly onGround: boolean;
     // private x: number;
     // private y: number;
     // private z: number;

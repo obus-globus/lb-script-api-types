@@ -15,7 +15,6 @@ export class Reference2ByteOpenHashMap$MapEntry extends Object implements Refere
     constructor(null_: Reference2ByteOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getByteValue(): number;
     hashCode(): number;

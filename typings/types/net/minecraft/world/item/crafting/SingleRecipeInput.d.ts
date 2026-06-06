@@ -4,7 +4,6 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 import type { RecipeInput } from '../../../../../net/minecraft/world/item/crafting/RecipeInput.d.ts'
 export class SingleRecipeInput extends Record implements RecipeInput {
     constructor(item: ItemStack)
-    readonly item: ItemStack;
     equals(o: Object | null): boolean;
     getItem(index: number): ItemStack;
     hashCode(): number;

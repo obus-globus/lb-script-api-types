@@ -15,7 +15,6 @@ export class Reference2BooleanLinkedOpenHashMap$MapEntry extends Object implemen
     constructor(null_: Reference2BooleanLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     getBooleanValue(): boolean;
     hashCode(): number;

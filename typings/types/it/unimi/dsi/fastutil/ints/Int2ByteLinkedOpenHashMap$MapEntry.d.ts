@@ -14,8 +14,6 @@ export class Int2ByteLinkedOpenHashMap$MapEntry extends Object implements Int2By
     constructor(null_: Int2ByteLinkedOpenHashMap$MapEntry)
     constructor(null_: Int2ByteLinkedOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntBytePair;

@@ -5,8 +5,6 @@ export class TabCompleteStorage extends Object implements StorableObject {
     constructor()
     // private commands: string[];
     readonly lastAssumeCommand: boolean;
-    readonly lastId: number;
-    readonly lastRequest: string;
     // private usernames: Map<UUID, string>;
     commands(): string[];
     isLastAssumeCommand(): boolean;

@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class Chunk1_21_5 extends Object implements Chunk {
     constructor(arg0: number, arg1: number, arg2: ChunkSection[], arg3: Heightmap[], arg4: BlockEntity[])
-    readonly blockEntities: BlockEntity[];
     heightmaps: Heightmap[];
     sections: ChunkSection[];
     readonly x: number;
@@ -22,7 +21,6 @@ export class Chunk1_21_5 extends Object implements Chunk {
     getSections(): ChunkSection[];
     getX(): number;
     getZ(): number;
-    heightmaps(): Heightmap[];
     isBiomeData(): boolean;
     isFullChunk(): boolean;
     isIgnoreOldLightData(): boolean;

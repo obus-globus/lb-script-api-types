@@ -16,5 +16,4 @@ export class ExperienceCommand$Type extends Enum<ExperienceCommand$Type> {
     name: string;
     // private query: (param0: ServerPlayer) => kotlin.Int;
     set: (param0: ServerPlayer, param1: number) => kotlin.Boolean;
-    name(): "POINTS" | "LEVELS";
 }

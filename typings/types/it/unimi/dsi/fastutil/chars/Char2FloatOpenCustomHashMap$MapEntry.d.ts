@@ -14,8 +14,6 @@ export class Char2FloatOpenCustomHashMap$MapEntry extends Object implements Char
     constructor(null_: Char2FloatOpenCustomHashMap$MapEntry)
     constructor(null_: Char2FloatOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: string;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): string;
     first(arg0: string): CharFloatPair;

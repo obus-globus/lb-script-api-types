@@ -8,7 +8,6 @@ export class TickRateManager extends Object {
     // private nanosecondsPerTick: number;
     // private runGameElements: boolean;
     // private tickrate: number;
-    frozenTicksToRun(): number;
     isEntityFrozen(entity: Entity): boolean;
     isFrozen(): boolean;
     isSteppingForward(): boolean;

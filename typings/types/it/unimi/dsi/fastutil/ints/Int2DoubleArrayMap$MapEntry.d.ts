@@ -14,8 +14,6 @@ export class Int2DoubleArrayMap$MapEntry extends Object implements Int2DoubleMap
     constructor(null_: Int2DoubleArrayMap$MapEntry)
     constructor(null_: Int2DoubleArrayMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): IntDoublePair;

@@ -13,7 +13,6 @@ export class Classifications extends Object implements Ensembleable<Classificati
     constructor(arg0: string[], arg1: number[])
     classNames: string[];
     probabilities: number[];
-    topK: number;
     best<T extends Classifications$Classification>(): T;
     ensembleWith(arg0: Iterator<Classifications>): Classifications;
     get<T extends Classifications$Classification>(arg0: string): T;

@@ -9,7 +9,6 @@ export abstract class AbstractOptionSpec<V extends Object | number | string | bo
     constructor(arg0: string)
     constructor(arg0: string[], arg1: string)
     // private description: string;
-    readonly forHelp: boolean;
     // private options: string[];
     argumentTypeIndicatorFrom(arg0: ValueConverter<V>): string;
     // private arrangeOptions(arg0: string[]): void;

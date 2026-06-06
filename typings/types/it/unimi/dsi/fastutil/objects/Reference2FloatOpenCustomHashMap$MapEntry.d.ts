@@ -15,7 +15,6 @@ export class Reference2FloatOpenCustomHashMap$MapEntry extends Object implements
     constructor(null_: Reference2FloatOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getFloatValue(): number;
     hashCode(): number;

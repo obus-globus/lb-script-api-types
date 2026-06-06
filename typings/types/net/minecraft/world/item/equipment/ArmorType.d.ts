@@ -26,7 +26,6 @@ export class ArmorType extends Enum<ArmorType> implements StringRepresentable {
     static valueOf(paramname: string): ArmorType;
     static values(): (Object | null)[];
     private constructor(slot: EquipmentSlot, unitDurability: number, name: string)
-    readonly name: string;
     readonly slot: EquipmentSlot;
     // private unitDurability: number;
     getDurability(multiplier: number): number;

@@ -21,7 +21,6 @@ export class PlatformEnum extends Enum<PlatformEnum> {
     static valueOf(paramarg0: string): PlatformEnum;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     name(): "MACOS" | "LINUX" | "WINDOWS" | "SOLARIS" | "FREEBSD" | "OPENBSD" | "WINDOWSCE" | "AIX" | "ANDROID" | "GNU" | "KFREEBSD" | "NETBSD" | "UNKNOWN";
 }

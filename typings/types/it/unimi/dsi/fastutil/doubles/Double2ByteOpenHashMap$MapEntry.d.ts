@@ -14,8 +14,6 @@ export class Double2ByteOpenHashMap$MapEntry extends Object implements Double2By
     constructor(null_: Double2ByteOpenHashMap$MapEntry)
     constructor(null_: Double2ByteOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): DoubleBytePair;

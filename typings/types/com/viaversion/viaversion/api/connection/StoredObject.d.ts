@@ -3,7 +3,6 @@ import type { UserConnection } from '../../../../../com/viaversion/viaversion/ap
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class StoredObject extends Object implements StorableObject {
     constructor(arg0: UserConnection)
-    readonly user: UserConnection;
     getUser(): UserConnection;
     onRemove(): void;
     user(): UserConnection;

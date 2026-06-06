@@ -10,12 +10,7 @@ export class BiomeSpecialEffects extends Record {
     grassColorModifier: BiomeSpecialEffects$GrassColorModifier;
     grassColorOverride: Optional<number>;
     waterColor: number;
-    dryFoliageColorOverride(): Optional<number>;
     equals(o: Object | null): boolean;
-    foliageColorOverride(): Optional<number>;
-    grassColorModifier(): BiomeSpecialEffects$GrassColorModifier;
-    grassColorOverride(): Optional<number>;
     hashCode(): number;
     toString(): string;
-    waterColor(): number;
 }

@@ -10,8 +10,6 @@ export class AnimationMetadataSection extends Record implements AnimationMetadat
     static CODEC: Codec<AnimationMetadataSection>;
     static TYPE: MetadataSectionType<AnimationMetadataSection>;
     // private defaultFrameTime: number;
-    readonly frameHeight: Optional<number>;
-    readonly frameWidth: Optional<number>;
     // private frames: Optional<AnimationFrame[]>;
     // private interpolatedFrames: boolean;
     calculateFrameSize(spriteWidth: number, spriteHeight: number): FrameSize;

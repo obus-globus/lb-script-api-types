@@ -20,8 +20,6 @@ export class JavaClassConstructorDescriptor extends ClassConstructorDescriptorIm
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: (Object | null)[]): ValueParameterDescriptor[];
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: ClassDescriptor, arg1: JavaClassConstructorDescriptor, arg2: AnnotationDescriptor[], arg3: boolean, arg4: CallableMemberDescriptor$Kind, arg5: SourceElement)
-    readonly hasStableParameterNames: boolean;
-    readonly hasSynthesizedParameterNames: boolean;
     createDescriptor(arg0: ClassDescriptor, arg1: JavaClassConstructorDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: SourceElement, arg4: AnnotationDescriptor[]): JavaClassConstructorDescriptor;
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: FunctionDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: Name, arg4: AnnotationDescriptor[], arg5: SourceElement): JavaClassConstructorDescriptor;
     enhance(arg0: KotlinType, arg1: KotlinType[], arg2: KotlinType, arg3: Pair<CallableDescriptor$UserDataKey<Object>, Object>): JavaClassConstructorDescriptor;

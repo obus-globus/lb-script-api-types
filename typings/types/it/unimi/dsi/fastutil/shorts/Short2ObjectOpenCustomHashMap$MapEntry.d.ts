@@ -14,7 +14,6 @@ export class Short2ObjectOpenCustomHashMap$MapEntry extends Object implements Sh
     constructor(null_: Short2ObjectOpenCustomHashMap$MapEntry)
     constructor(null_: Short2ObjectOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;

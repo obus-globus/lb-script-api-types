@@ -134,7 +134,6 @@ export abstract class Raider extends PatrollingMonster {
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Raider>, level: Level)
-    readonly canJoinRaid: boolean;
     // private raid: Raid;
     readonly ticksOutsideRaid: number;
     readonly wave: number;

@@ -13,7 +13,6 @@ export class TimedSemaphore extends Object {
     // private ownExecutor: boolean;
     readonly period: number;
     // private periodCount: number;
-    readonly shutdown: boolean;
     // private task: ScheduledFuture<Object>;
     // private totalAcquireCount: number;
     readonly unit: TimeUnit;

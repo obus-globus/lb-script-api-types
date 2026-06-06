@@ -6,7 +6,6 @@ export class JSFrameSlot extends Object {
     static isAllowedIdentifierType(paramidentifier: Object): boolean;
     constructor(index: number, identifier: Object, flags: number, kind: FrameSlotKind)
     readonly flags: number;
-    readonly hasBeenDeclared: boolean;
     readonly identifier: Object;
     readonly index: number;
     readonly info: Object;

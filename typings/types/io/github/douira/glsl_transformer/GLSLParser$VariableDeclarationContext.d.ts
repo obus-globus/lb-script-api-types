@@ -9,7 +9,6 @@ import type { TerminalNode } from '../../../../org/antlr/v4/runtime/tree/Termina
 export class GLSLParser$VariableDeclarationContext extends GLSLParser$DeclarationContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: GLSLParser$DeclarationContext)
-    IDENTIFIER: Token;
     variableNames: Token[];
     COMMA(): TerminalNode[];
     COMMA(arg0: number): TerminalNode;

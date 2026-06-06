@@ -6,7 +6,6 @@ export class TimespanRate extends Record {
     static selectHigherResolution(paramarg0: TimespanRate, paramarg1: TimespanRate): TimespanRate;
     // private isRate: boolean;
     // private periodNanos: number;
-    readonly rate: number;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     isRate(): boolean;

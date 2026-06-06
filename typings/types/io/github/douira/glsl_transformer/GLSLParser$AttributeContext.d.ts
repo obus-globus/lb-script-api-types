@@ -8,7 +8,6 @@ export class GLSLParser$AttributeContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
     attributes: GLSLParser$SingleAttributeContext[];
-    singleAttribute: GLSLParser$SingleAttributeContext;
     COMMA(): TerminalNode[];
     COMMA(arg0: number): TerminalNode;
     LBRACKET(): TerminalNode[];

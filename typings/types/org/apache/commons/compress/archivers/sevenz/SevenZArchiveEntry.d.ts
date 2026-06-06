@@ -18,7 +18,6 @@ export class SevenZArchiveEntry extends Object implements ArchiveEntry {
     readonly hasCrc: boolean;
     readonly hasCreationDate: boolean;
     readonly hasLastModifiedDate: boolean;
-    readonly hasStream: boolean;
     readonly hasWindowsAttributes: boolean;
     // private isAntiItem: boolean;
     // private isDirectory: boolean;

@@ -10,7 +10,6 @@ export class AfterAction extends Enum<AfterAction> implements NamedType {
     static valueOf(paramarg0: string): AfterAction;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     name(): "CLOSE" | "NONE" | "WAIT_FOR_RESPONSE";
 }

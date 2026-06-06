@@ -6,8 +6,6 @@ export class WanderingTraderData extends SavedData {
     static TYPE: SavedDataType<WanderingTraderData>;
     constructor()
     constructor(spawnDelay: number, spawnChance: number)
-    readonly spawnChance: number;
-    readonly spawnDelay: number;
     setSpawnChance(spawnChance: number): void;
     setSpawnDelay(spawnDelay: number): void;
     spawnChance(): number;

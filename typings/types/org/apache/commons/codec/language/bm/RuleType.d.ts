@@ -9,7 +9,6 @@ export class RuleType extends Enum<RuleType> {
     static valueOf(paramarg0: string): RuleType;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    readonly name: string;
     getName(): string;
     name(): "APPROX" | "EXACT" | "RULES";
 }

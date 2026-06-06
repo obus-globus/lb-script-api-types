@@ -4,7 +4,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PacketWrapperImpl$PacketValue<T extends Object | number | string | boolean> extends Object {
     private constructor(arg0: Type<T>, arg1: T)
     // private type: Type<T>;
-    readonly value: T;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     setValue(arg0: T): void;

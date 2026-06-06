@@ -6,7 +6,6 @@ export class ScoreboardEntry extends Object {
     // private entityUniqueId: number;
     // private fakePlayerName: string;
     // private javaName: string;
-    readonly score: number;
     // private type: IdentityDefinition_Type;
     entityUniqueId(): number;
     fakePlayerName(): string;

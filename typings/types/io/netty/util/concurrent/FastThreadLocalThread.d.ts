@@ -42,7 +42,6 @@ export class FastThreadLocalThread extends Thread {
     constructor(arg0: ThreadGroup, arg1: string)
     constructor(arg0: string)
     // private cleanupFastThreadLocals: boolean;
-    readonly threadLocalMap: InternalThreadLocalMap;
     permitBlockingCalls(): boolean;
     setThreadLocalMap(arg0: InternalThreadLocalMap): void;
     threadLocalMap(): InternalThreadLocalMap;

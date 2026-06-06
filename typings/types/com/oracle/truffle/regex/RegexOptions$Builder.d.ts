@@ -9,9 +9,7 @@ import type { OptionKey } from '../../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 export class RegexOptions$Builder extends Object {
     private constructor(source: Source, sourceString: string, optionValues: OptionValues)
-    readonly encoding: Encodings$Encoding;
     // private flags: number;
-    readonly flavor: RegexFlavor;
     // private i: number;
     // private javaJDKVersion: number;
     // private matchingMode: MatchingMode;

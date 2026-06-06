@@ -16,7 +16,6 @@ export class Object2BooleanArrayMap$MapEntry extends Object implements Object2Bo
     constructor(null_: Object2BooleanArrayMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: boolean;
     equals(arg0: Object | null): boolean;
     getBooleanValue(): boolean;
     hashCode(): number;

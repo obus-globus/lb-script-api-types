@@ -14,8 +14,6 @@ export class Short2CharOpenHashMap$MapEntry extends Object implements Short2Char
     constructor(null_: Short2CharOpenHashMap$MapEntry)
     constructor(null_: Short2CharOpenHashMap$MapEntry, arg1: number)
     // private index: number;
-    readonly key: number;
-    readonly value: string;
     equals(arg0: Object | null): boolean;
     first(): number;
     first(arg0: number): ShortCharPair;

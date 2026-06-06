@@ -15,7 +15,6 @@ export class Reference2ShortOpenHashMap$MapEntry extends Object implements Refer
     constructor(null_: Reference2ShortOpenHashMap$MapEntry, arg1: number)
     // private index: number;
     readonly key: K;
-    readonly value: number;
     equals(arg0: Object | null): boolean;
     getShortValue(): number;
     hashCode(): number;
