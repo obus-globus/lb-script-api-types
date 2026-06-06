@@ -27,7 +27,7 @@ For what's **still on the table**, see [backlog.md](backlog.md).
 | | `ScriptSetting` factories take typed **option objects** (`{ name, default, range, ... }`) | post-patch |
 | | `PolyglotScript.on()` narrowed to the 3 real lifecycle literals (`load`/`enable`/`disable`) | post-patch |
 | | DSL receiver lambdas (e.g. `ValueGroup.curve { ... }`) typed correctly | post-patch |
-| **Bindings** | F1-F6 runtime-name fixes: dedup ambient block, drop the phantom `Client` category, `SilentHotbar`/`Hand` globals, `attackEntity` `@JvmName` | post-patch |
+| **Bindings** | F1-F7 fixes: dedup ambient block, drop the phantom `Client` category, `SilentHotbar`/`Hand` globals, `attackEntity` `@JvmName`, **field/method name collisions** (`onGround()` un-shadowed) | post-patch |
 | **Globals** | Auto-detected `ambient.d.ts` (`mc`, `Client`, `RotationUtil`, `Setting`, ...) + GraalVM JS intrinsics declared in `declare global` | ts-defgen + post-patch |
 | **Docs** | **KDoc -> TSDoc injection** - LiquidBounce's Kotlin doc comments become hover docs on classes/members | post-patch (`apply-kdoc`) |
 | **Augmentations** | Hand-written overlays for `ScriptModule`, `ClientLevel`, `ScriptReflectionUtil` + a barrel index | augmentation |
@@ -119,7 +119,7 @@ per-param **types** are not yet substituted for bare `Object` reflections - see
 - **TS reserved-word parameter renames** - params named `this`/`function`/etc.
   in the JVM signature are renamed so the `.d.ts` parses.
 
-## Binding fixes (F1-F6)
+## Binding fixes (F1-F7)
 
 Idempotent corrections for runtime-vs-reflection name mismatches:
 
@@ -131,6 +131,21 @@ Idempotent corrections for runtime-vs-reflection name mismatches:
   the runtime member is `attackEntity`, so we rename it (reflection can't recover
   the `@JvmName`).
 - **F6** - `InteractionHand` is bound at runtime as `Hand`; add a `Hand` alias.
+- **F7** - resolve Java **field/method name collisions** (`fix-member-collisions.py`).
+  Java lets a field and a method share a name (`onGround` + `onGround()`; records,
+  JOML math types, `Map.Entry`, enums); TypeScript forbids it, so the field
+  declaration silently shadows the method and `x.onGround()` becomes "not
+  callable". Drop one declaration per class so the survivor is usable, by a
+  heuristic that never loses functionality:
+    - *mutable field + a method whose every overload is zero-arg* → keep the
+      **field** (`Vec3.x`, matrix `.m00`, callable T-1 bindings);
+    - *otherwise* (readonly field, **or** any parameterized overload) → keep the
+      **method** (`Entity.onGround()`, record `.value()`, enum `.name()`).
+  Either form is reachable at runtime regardless (GraalJS resolves field-read vs
+  method-invoke by usage); the choice only decides which form is *typed*. The
+  v0.38.2 run resolved **1,125 collisions across 687 files** (1,000 fields, 125
+  methods dropped). *To be folded into the Kotlin generator next regen and
+  demoted to a safety net (the F1/F2/F6 pattern).*
 
 ## Ambient globals & GraalVM intrinsics
 

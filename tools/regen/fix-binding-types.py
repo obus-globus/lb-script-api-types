@@ -23,6 +23,10 @@ Found while building NodeFlow (obus-globus/lb-nodeflow, docs/09-type-gen-fixes):
   F6  InteractionHand is bound under the runtime global name `Hand`; the type
       only exports `InteractionHand` -> add a `Hand` alias (keep InteractionHand).
 
+  F7  field/method name collisions (Java allows a field + method to share a name;
+      TS forbids it, so the field shadows the method). Lives in the sibling
+      `fix-member-collisions.py` (runs right after this in post-patches.sh).
+
 Usage: fix-binding-types.py [path/to/typings]
 """
 import re
