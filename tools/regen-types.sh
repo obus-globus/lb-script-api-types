@@ -25,7 +25,16 @@ cd "$REPO_ROOT"
 
 # Pin the LB SHA the generator was run against. Bumping is a deliberate
 # action tied to regenerating the types package.
-PINNED_SHA="fac52d9c85c85141cb327e00599cdf8e0a7afc66"
+#
+# b759cac57 = "fix: resolve GraalVM caller-sensitive method detection failure"
+# (PR #8437). It adds a mixin that forces
+# com.oracle.truffle.host.HostMethodDesc$SingleMethod.isCallerSensitive=true,
+# which makes JDK caller-sensitive methods (URLClassLoader ctor,
+# Thread.getContextClassLoader, ...) work again under GraalVM host interop on
+# Java 25. That's the root-cause fix for the regression we used to work around
+# by wrapping ts-generator.jar as a Fabric mod — so as of this pin the mod
+# wrapper is gone and ts-defgen.js loads the generator via stock URLClassLoader.
+PINNED_SHA="b759cac57b26e54694d8c4d48af024a8fb598f62"
 
 LB_DIR="$REPO_ROOT/references/liquidbounce"
 TS_GEN_DIR="$REPO_ROOT/generator"
@@ -103,8 +112,14 @@ if [[ "$REGEN" == "1" ]]; then
 
   # 3. Stage the in-client scripts dir exactly as CCBlueX's workflow does.
   STAGE="$LB_DIR/run/LiquidBounce/scripts"
-  MODS="$LB_DIR/run/mods"
-  mkdir -p "$MODS" "$STAGE"
+  mkdir -p "$STAGE"
+
+  # Purge any stale ts-generator Fabric mod left in run/mods/ by a pre-fix regen.
+  # Knot auto-loads everything in run/mods/, so a leftover ts-generator-mod.jar
+  # would put our generator's own classes back on the runtime classpath and they
+  # would leak into the type tree as types/me/commandblock2 + types/me/ntrrgc.
+  # The mod wrapper is no longer used (see note at 3b), so always remove it.
+  rm -f "$LB_DIR/run/mods/ts-generator-mod.jar"
 
   # File copy (not symlink — gradle holds file locks during runClient and
   # symlinks across filesystems can race).
@@ -121,30 +136,17 @@ if [[ "$REGEN" == "1" ]]; then
     cp -f "$REPO_ROOT/tools/kdoc-extractor/manifest.json" "$STAGE/manifest.json"
   fi
 
-  # 3b. Drop a Fabric-mod-wrapped copy of ts-generator.jar into run/mods/ so
-  #     Knot loads its classes onto the runtime classpath. ts-defgen.js then
-  #     resolves them via ReflectionUtil.classByName instead of
-  #     `new URLClassLoader(...)` — the latter fails under Java 25 with
-  #     `IllegalAccessException: Attempt to lookup caller-sensitive method
-  #     using restricted lookup object` when called via GraalVM polyglot host
-  #     interop (same regression upstream CCBlueX's CI hits on v0.38.0).
-  MOD_JAR="$MODS/ts-generator-mod.jar"
-  rm -f "$MOD_JAR"
-  cp -f "$TS_GEN_JAR" "$MOD_JAR"
-  FMJ_TMP="$(mktemp -d)"
-  cat > "$FMJ_TMP/fabric.mod.json" <<'EOF'
-{
-  "schemaVersion": 1,
-  "id": "ts_generator",
-  "version": "1.1.4",
-  "name": "TS Generator (typegen helper)",
-  "description": "Wraps the commandblock2 ts-generator + ntrrgc tsGenerator classes as a runtime Fabric mod so LiquidBounce's script Knot classloader can resolve them for ts-defgen.js.",
-  "environment": "*",
-  "license": "Apache-2.0"
-}
-EOF
-  (cd "$FMJ_TMP" && jar uf "$MOD_JAR" fabric.mod.json)
-  rm -rf "$FMJ_TMP"
+  # 3b. (Removed.) We used to drop a Fabric-mod-wrapped copy of ts-generator.jar
+  #     into run/mods/ so Knot put its classes on the runtime classpath, because
+  #     `new URLClassLoader(...)` in ts-defgen.js threw
+  #     `IllegalAccessException: Attempt to lookup caller-sensitive method using
+  #     restricted lookup object` under Java 25's GraalVM polyglot host interop.
+  #     Upstream fixed the root cause in LiquidBounce b759cac57 (PR #8437) with a
+  #     mixin forcing HostMethodDesc$SingleMethod.isCallerSensitive=true, so the
+  #     stock URLClassLoader path works again. ts-defgen.js now loads the
+  #     generator via URLClassLoader (matching upstream) and enumerates classes
+  #     via ClassPath.from(getContextClassLoader()) — no mod, and our generator's
+  #     own me/* classes no longer leak into the output.
 
   # 4. Wipe any previous output to guarantee clean regen.
   rm -rf "$STAGE/@ccbluex"

@@ -99,15 +99,20 @@ function loadClassFromJar(classLoader, className) {
 }
 // @ts-expect-error
 function findAllClassInfos() {
-    // ScriptHelper is added via our forked ts-generator-mod.jar (Fabric mod
-    // wrapping ts-generator-1.1.4-all.jar). Going through a Kotlin static
-    // avoids GraalVM polyglot's Java-25 caller-sensitive lookup restriction
-    // that would otherwise blow up on Thread.getContextClassLoader().
-    // @ts-expect-error
-    const ScriptHelper = Java.type("me.commandblock2.tsGenerator.ScriptHelper");
-    // @ts-expect-error
-    const names = Java.from(ScriptHelper.listAllTopLevelClassNames());
-    return names.map(n => ({ getName: () => n }));
+    // Enumerate every top-level class on the script context classloader. This is
+    // the stock upstream approach. `Thread.getContextClassLoader()` is a JDK
+    // @CallerSensitive method that used to throw under Java 25's GraalVM host
+    // interop, which is why we previously routed around it via a Fabric-mod
+    // ScriptHelper static; LiquidBounce b759cac57 (PR #8437) fixed that at the
+    // Truffle layer, so the direct call works again — and because the generator
+    // classes are now loaded via a child URLClassLoader (see generate()), they
+    // are NOT on this classloader and so no longer leak into the output as
+    // types/me/commandblock2 / types/me/ntrrgc.
+    return Java.from(ClassPath_1.ClassPath.from(Thread_1.Thread.currentThread()
+        .getContextClassLoader())
+        .getTopLevelClasses()
+        // @ts-expect-error
+        .asList());
 }
 function getName(javaClass) {
     const fullName = javaClass.name;
@@ -128,15 +133,17 @@ const script = registerScript.apply({
 });
 function generate(path, packageName) {
     try {
-        // ts-generator classes are loaded via Fabric mod (ts-generator-mod.jar
-        // in run/mods/) so they're on the Knot classloader. Using
-        // ReflectionUtil.classByName instead of `new URLClassLoader(...)`
-        // (which fails under Java 25 with `IllegalAccessException: Attempt to
-        // lookup caller-sensitive method using restricted lookup object` when
-        // called via GraalVM polyglot host interop).
-        const NPMGen = ReflectionUtil.classByName("me.commandblock2.tsGenerator.NPMPackageGenerator");
-        const TsGen = ReflectionUtil.classByName("me.ntrrgc.tsGenerator.TypeScriptGenerator");
-        const VoidType = ReflectionUtil.classByName("me.ntrrgc.tsGenerator.VoidType");
+        // Load the ts-generator classes from the shadow jar staged at
+        // <scripts>/ts-generator.jar via a child URLClassLoader (stock upstream
+        // mechanism). This used to fail under Java 25 with
+        // `IllegalAccessException: Attempt to lookup caller-sensitive method
+        // using restricted lookup object`; LiquidBounce b759cac57 (PR #8437)
+        // fixed it at the Truffle layer, so the URLClassLoader ctor works again
+        // and we no longer need the Fabric-mod wrapper / ReflectionUtil.classByName.
+        const loader = createClassLoaderFromJar(path + "/ts-generator.jar");
+        const NPMGen = loadClassFromJar(loader, "me.commandblock2.tsGenerator.NPMPackageGenerator");
+        const TsGen = loadClassFromJar(loader, "me.ntrrgc.tsGenerator.TypeScriptGenerator");
+        const VoidType = loadClassFromJar(loader, "me.ntrrgc.tsGenerator.VoidType");
         const NULL = VoidType.getEnumConstants()[0];
         const javaClasses = [...new Map(globalEntries
             .filter((entry) => entry[1] != undefined)
@@ -199,7 +206,10 @@ function generate(path, packageName) {
         // manifest), gracefully no-op so the generator behaves exactly as before.
         let kdocSource = null;
         try {
-            const KdocSourceCls = ReflectionUtil.classByName("me.ntrrgc.tsGenerator.KDocSource");
+            // KDocSource lives in our ts-generator shadow jar, so resolve it via
+            // the same child URLClassLoader as the generator classes above (it is
+            // not on the Knot classloader now that the mod wrapper is gone).
+            const KdocSourceCls = loadClassFromJar(loader, "me.ntrrgc.tsGenerator.KDocSource");
             const manifestPath = Paths_1.Paths.get("LiquidBounce", "scripts", "manifest.json");
             const Files = Java.type("java.nio.file.Files");
             if (Files.exists(manifestPath)) {

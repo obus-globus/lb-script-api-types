@@ -172,9 +172,14 @@ Layered on top of the generated tree and barrel-indexed
 
 - **JDK 25 / GraalVM compatibility** - newer LB requires JVM 25, where
   `ts-defgen.js`'s `new URLClassLoader(...)` / `Class.forName(...)` hit
-  `IllegalAccessException` (caller-sensitive under Truffle host interop). The
-  generator is wrapped as a **Fabric mod** so Knot resolves its classes via
-  `ScriptReflectionUtil.classByName` instead.
+  `IllegalAccessException` (caller-sensitive under Truffle host interop).
+  **Resolved upstream** in LiquidBounce `b759cac57` (PR #8437): a mixin forces
+  `HostMethodDesc$SingleMethod.isCallerSensitive=true`, so those caller-sensitive
+  methods work from guest JS again. As of pin `b759cac57` we **dropped the
+  Fabric-mod wrapper** and `ts-defgen.js` loads the generator via the stock
+  `new URLClassLoader(...)` + `ClassPath.from(getContextClassLoader())` path
+  (which also stops the generator's own `me/*` classes leaking into the output).
+  On an older LB (`< b759cac57`) the mod-wrapping workaround is still required.
 - **Uses LiquidBounce's runtime Kotlin.** The generator no longer bundles its own
   `kotlin-stdlib`/`kotlin-reflect`; bundling an older copy crashed `ts-defgen`
   with `NoSuchFieldError: KParameter$Kind ... CONTEXT` against LB's Kotlin 2.3.10.
