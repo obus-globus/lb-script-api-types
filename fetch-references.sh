@@ -18,10 +18,15 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Keep in sync with PINNED_SHA in tools/regen-types.sh — the LB commit the
-# currently-shipped types/ were generated against.
+# Single source of truth: PINNED_SHA in tools/regen-types.sh — the LB commit
+# the currently-shipped types/ were generated against. No silent fallback: a
+# stale hard-coded default here once disagreed with the real pin, which is
+# exactly the wrong-source failure mode this script must not have.
 PINNED_SHA="$(grep -oE 'PINNED_SHA="[0-9a-f]+"' "$REPO_ROOT/tools/regen-types.sh" | head -1 | sed -E 's/.*"([0-9a-f]+)".*/\1/')"
-PINNED_SHA="${PINNED_SHA:-fac52d9c85c85141cb327e00599cdf8e0a7afc66}"
+if [[ -z "$PINNED_SHA" ]]; then
+  echo "FAIL: could not extract PINNED_SHA from tools/regen-types.sh (pin line reformatted?)" >&2
+  exit 1
+fi
 
 LB_DIR="$REPO_ROOT/references/liquidbounce"
 mkdir -p "$REPO_ROOT/references"
@@ -30,9 +35,11 @@ mkdir -p "$REPO_ROOT/references"
 # LB source (commonly already built with MC deps), symlink to it instead of
 # re-cloning gigabytes. Override with FRESH_CLONE=1.
 SIBLING="$REPO_ROOT/../../older-stuff/liquidbounce-helper/references/liquidbounce"
+# `! -e` is also true for a BROKEN symlink (e.g. the sibling moved), where a
+# plain `ln -s` fails "File exists" — use -sfn to (re)point it.
 if [[ "${FRESH_CLONE:-0}" != "1" && ! -e "$LB_DIR" && -d "$SIBLING/.git" ]]; then
   echo "Reusing sibling LB checkout via symlink: $SIBLING"
-  ln -s "$(cd "$SIBLING" && pwd)" "$LB_DIR"
+  ln -sfn "$(cd "$SIBLING" && pwd)" "$LB_DIR"
 fi
 
 if [[ ! -d "$LB_DIR/.git" ]]; then

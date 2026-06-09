@@ -45,8 +45,8 @@ const minecraft = prop("gradle/libs.versions.toml", "minecraft");
 if (!modVersion) { console.error("could not read mod_version from LB gradle.properties"); process.exit(1); }
 
 const sha = execFileSync("git", ["-C", LB, "rev-parse", "HEAD"], { encoding: "utf8" }).trim();
-const sha7 = sha.slice(0, 9);
-let ref = sha7;
+const shortSha = sha.slice(0, 9);
+let ref = shortSha;
 try { ref = execFileSync("git", ["-C", LB, "describe", "--tags", "--always"], { encoding: "utf8" }).trim(); } catch { /* no tags */ }
 
 // LB's mod_version is a git-describe core like `0.38.1` (= tag v0.38.0 + commits).

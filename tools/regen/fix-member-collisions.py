@@ -38,10 +38,18 @@ import re
 import sys
 
 # A member line is indented exactly 4 spaces (one class per file; E-01 layout).
+# Generic parameter lists may nest (`<T extends Map<string, T>>`): `[^()]*`
+# tolerates nested angle brackets (constraints never contain parens before the
+# parameter list opens).
 FIELD_RE  = re.compile(r"^    (readonly )?([A-Za-z_$][\w$]*)\??:\s")
-METHOD_RE = re.compile(r"^    ([A-Za-z_$][\w$]*)\s*(?:<[^>]*>)?\(")
-ZEROARG_RE = re.compile(r"^    [A-Za-z_$][\w$]*\s*(?:<[^>]*>)?\(\s*\)")
+METHOD_RE = re.compile(r"^    ([A-Za-z_$][\w$]*)\s*(?:<[^()]*>)?\(")
+ZEROARG_RE = re.compile(r"^    [A-Za-z_$][\w$]*\s*(?:<[^()]*>)?\(\s*\)")
 STATIC_RE = re.compile(r"^    static\b")
+# `    /*not mapped: */ member...` — the generator prefixes some members with
+# an INLINE comment; the member after it is live TS and must be treated as a
+# real declaration (previously these lines were skipped wholesale, hiding
+# overloads from the keep-field heuristic and leaving live collisions behind).
+INLINE_COMMENT_RE = re.compile(r"^    /\*[^*]*?\*/\s*(\S.*)$")
 
 
 def doc_start(lines, i):
@@ -61,13 +69,29 @@ def doc_start(lines, i):
     return i  # not a clean attached block — leave it alone
 
 
+def member_line(ln):
+    """Normalize a member line for matching: an inline `/*...*/` prefix
+    (generator's `/*not mapped: */`) is stripped — the member after it is
+    live TS. Returns the line to match against, or None to skip."""
+    s = ln.strip()
+    if s.startswith("//") or s.startswith("*"):
+        return None
+    m = INLINE_COMMENT_RE.match(ln)
+    if m:
+        return "    " + m.group(1)
+    if s.startswith("/*"):
+        return None
+    return ln
+
+
 def process(path):
     lines = open(path, encoding="utf-8").read().split("\n")
     fields = {}   # name -> {"lines":[idx...], "readonly":bool}
     methods = {}  # name -> {"lines":[idx...], "all_zeroarg":bool}
-    for i, ln in enumerate(lines):
-        s = ln.strip()
-        if s.startswith("//") or s.startswith("*") or s.startswith("/*"):
+    unparsed = set()  # member names seen with a `(` we could NOT parse
+    for i, raw in enumerate(lines):
+        ln = member_line(raw)
+        if ln is None:
             continue
         if STATIC_RE.match(ln):           # statics share no namespace with instances
             continue
@@ -84,28 +108,55 @@ def process(path):
             rec["lines"].append(i)
             if f.group(1):
                 rec["readonly"] = True
+            continue
+        # A member-looking line with a paren that neither regex understood
+        # (e.g. an exotic generic clause): note the leading identifier so the
+        # heuristic stays conservative for that name.
+        u = re.match(r"^    ([A-Za-z_$][\w$]*)", ln)
+        if u and "(" in ln:
+            unparsed.add(u.group(1))
 
     collisions = sorted(set(fields) & set(methods))
     if not collisions:
         return None
 
     drop = set()
+    insert_before = {}  # line idx -> doc lines to re-attach above it
     dropped_fields = dropped_methods = 0
     for name in collisions:
         fld, mth = fields[name], methods[name]
-        keep_field = (not fld["readonly"]) and mth["all_zeroarg"]
-        target = mth if keep_field else fld
+        # An unparseable sibling declaration we couldn't classify (or couldn't
+        # drop) means dropping the method might leave a live overload behind —
+        # keep the method side in that case (conservative).
+        keep_field = (not fld["readonly"]) and mth["all_zeroarg"] \
+            and name not in unparsed
+        target, survivor = (mth, fld) if keep_field else (fld, mth)
         if keep_field:
             dropped_methods += 1
         else:
             dropped_fields += 1
+        salvaged_doc = None
         for idx in target["lines"]:
             drop.add(idx)
             ds = doc_start(lines, idx)
             for k in range(ds, idx):
                 drop.add(k)
+            if ds != idx and salvaged_doc is None:
+                salvaged_doc = lines[ds:idx]
+        # The doc documents the member NAME; if the survivor has none,
+        # re-attach the dropped declaration's doc to it (H2: previously the
+        # doc — possibly just injected by apply-kdoc — was destroyed).
+        if salvaged_doc:
+            sv = min(survivor["lines"])
+            if doc_start(lines, sv) == sv:
+                insert_before[sv] = salvaged_doc
 
-    out = [ln for i, ln in enumerate(lines) if i not in drop]
+    out = []
+    for i, ln in enumerate(lines):
+        if i in insert_before:
+            out.extend(insert_before[i])
+        if i not in drop:
+            out.append(ln)
     open(path, "w", encoding="utf-8").write("\n".join(out))
     return (collisions, dropped_fields, dropped_methods)
 
@@ -131,9 +182,9 @@ def main():
                 # report-only: re-detect without writing
                 txt = open(p, encoding="utf-8").read().split("\n")
                 fset, mset = set(), set()
-                for ln in txt:
-                    s = ln.strip()
-                    if s.startswith(("//", "*", "/*")) or STATIC_RE.match(ln):
+                for raw in txt:
+                    ln = member_line(raw)
+                    if ln is None or STATIC_RE.match(ln):
                         continue
                     mm = METHOD_RE.match(ln)
                     if mm and mm.group(1) not in ("constructor", "new"):

@@ -259,6 +259,23 @@ if src == orig:
 else:
     path.write_text(src)
     print(f"post-patches: refined {path.name} (P-02b: registerMode/registerChoice)")
+
+# Sanity (same post-hoc assertion as P-01/P-02): the refined forms must be
+# present afterwards — if upstream reshaped/renamed the methods, fail loudly
+# instead of silently shipping un-narrowed callbacks.
+final = path.read_text()
+for fn in ("registerMode", "registerChoice"):
+    refined = (
+        f"    {fn}(modeValueGroup: ModeValueGroup<Mode>, "
+        f"modeObject: {{ [key: string]: unknown }}, "
+        f"callback: (mode: ScriptMode) => void): void;"
+    )
+    if refined not in final:
+        print(
+            f"FAIL: P-02b did not produce the expected {fn} signature in {path}",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 PY
 
 # T-3: rename TS reserved-word parameter names across all generated
@@ -919,7 +936,7 @@ EVENTDOC_SCRIPT="$REPO_ROOT/tools/regen/apply-event-docs.py"
 if [ -f "$EVENTDOC_SCRIPT" ]; then
     EVENTDOC_MANIFEST=""
     [ "$SKIP_KDOC_EFF" != "1" ] && EVENTDOC_MANIFEST="$MANIFEST"
-    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" $EVENTDOC_MANIFEST || \
+    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" ${EVENTDOC_MANIFEST:+"$EVENTDOC_MANIFEST"} || \
         { echo "post-patches: ERROR — apply-event-docs CRASHED (continuing; on() docs missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: on() event docs skipped (apply script missing)"
@@ -1105,10 +1122,10 @@ import type { LocalPlayer } from '../types/net/minecraft/client/player/LocalPlay
 
 declare module '../types/net/minecraft/client/multiplayer/ClientLevel' {
     interface ClientLevel {
-        getEntities(except: Entity | LocalPlayer | null, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => kotlin.Boolean, output: Entity[]): void;
-        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => kotlin.Boolean, output: Entity[], maxResults: number): void;
+        getEntities(except: Entity | LocalPlayer | null, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => boolean, output: Entity[]): void;
+        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => boolean, output: Entity[], maxResults: number): void;
     }
 }
 AUG
@@ -1175,13 +1192,6 @@ AUG
     echo "post-patches: W-#12 wrote augmentations/ScriptReflectionUtil.augmentation.d.ts"
 fi
 
-if [[ "$POSTPATCH_FAILED" == "1" ]]; then
-  echo "post-patches: FAILED — one or more source-enrichment steps crashed (see ERROR lines above); the output is INCOMPLETE." >&2
-  exit 1
-fi
-
-echo "post-patches: done ($PKG_ROOT)"
-
 # ----------------------------------------------------------------------
 # T-#JS-1 fix typesVersions wildcard so `types/foo` resolves to
 # `./types/foo` instead of the doubled `./types/types/foo`. The upstream
@@ -1216,11 +1226,11 @@ PY
 fi
 
 # ---------------------------------------------------------------------------
-# Binding-type corrections (F1/F2/F4/F5/F6) — see fix-binding-types.py.
-# Idempotent; runs last so it also cleans anything re-emitted above.
+# Binding-type corrections (F1/F2/F4/F5/F6/F8/F9) — see fix-binding-types.py.
+# Idempotent; runs late so it also cleans anything re-emitted above.
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/fix-binding-types.py" "$PKG_ROOT" || \
-  echo "post-patches: WARNING fix-binding-types.py failed" >&2
+  { echo "post-patches: ERROR — fix-binding-types.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
 # F7 — field/method name collisions. Java lets a field and a method share a
@@ -1232,3 +1242,24 @@ python3 "$(dirname "$0")/fix-binding-types.py" "$PKG_ROOT" || \
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/fix-member-collisions.py" "$PKG_ROOT" || \
   { echo "post-patches: ERROR — fix-member-collisions.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+
+# ---------------------------------------------------------------------------
+# S1-S3 — delete/repair generated files that are not valid TypeScript:
+# package-info descriptors, unimportable `-Name` Kotlin file-facades, and
+# Kotlin function supertypes leaking into implements/extends clauses. See
+# sanitize-invalid-dts.py. Idempotent.
+# ---------------------------------------------------------------------------
+python3 "$(dirname "$0")/sanitize-invalid-dts.py" "$PKG_ROOT" || \
+  { echo "post-patches: ERROR — sanitize-invalid-dts.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+
+# ---------------------------------------------------------------------------
+# Failure gate — LAST, after every patch step. A crashed step above only sets
+# POSTPATCH_FAILED so the remaining steps still run; the regen then fails
+# once, loudly, with every error visible.
+# ---------------------------------------------------------------------------
+if [[ "$POSTPATCH_FAILED" == "1" ]]; then
+  echo "post-patches: FAILED — one or more patch steps crashed (see ERROR lines above); the output is INCOMPLETE." >&2
+  exit 1
+fi
+
+echo "post-patches: done ($PKG_ROOT)"

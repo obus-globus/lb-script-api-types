@@ -65,7 +65,12 @@ fi
 tmp_diff="$(mktemp)"
 trap 'rm -f "$tmp_diff"' EXIT
 
-diff -rq --exclude=package.json --exclude=__smoke "$BASE_PKG" "$OUT_PKG" > "$tmp_diff" 2>&1 || true
+# Excluded: package.json (hand-curated), __smoke (hand-maintained tests),
+# tsconfig.json/README.md/LICENSE (hand-maintained, never emitted by the
+# generator — without these excludes the gate fails even right after a
+# clean promote).
+diff -rq --exclude=package.json --exclude=__smoke --exclude=tsconfig.json \
+  --exclude=README.md --exclude=LICENSE "$BASE_PKG" "$OUT_PKG" > "$tmp_diff" 2>&1 || true
 
 unexpected=0
 if [[ -s "$tmp_diff" ]]; then
@@ -85,13 +90,16 @@ fi
 
 echo "FAIL: unexpected diffs between self-baseline and regen:" >&2
 
-only_base="$(awk '/^Only in/ && $3 ~ /script-api-types/' "$tmp_diff" | wc -l)"
+# Baseline-side = NOT under tools/regen-output (the repo dir name
+# `lb-script-api-types` appears in every absolute path, so matching on it
+# selects nothing usefully).
+only_base="$(awk '/^Only in/ && $3 !~ /regen-output/' "$tmp_diff" | wc -l)"
 only_regen="$(awk '/^Only in/ && $3 ~ /regen-output/' "$tmp_diff" | wc -l)"
 content_diff="$(awk '/^Files/' "$tmp_diff" | wc -l)"
 echo "  totals: only-baseline=$only_base  only-regen=$only_regen  content-diffs=$content_diff" >&2
 echo "  --- only-in-baseline by top-level (max 10) ---" >&2
-awk '/^Only in/ && $3 ~ /script-api-types/ { sub(/:$/, "", $3); print $3"/"$4 }' "$tmp_diff" \
-  | sed -E 's#.*/script-api-types/##' \
+awk '/^Only in/ && $3 !~ /regen-output/ { sub(/:$/, "", $3); print $3"/"$4 }' "$tmp_diff" \
+  | sed -E 's#.*/typings/##' \
   | awk -F/ '{print $1"/"$2}' \
   | sort | uniq -c | sort -rn | head -n 10 >&2 || true
 echo "  --- only-in-regen by top-level (max 10) ---" >&2
@@ -109,5 +117,5 @@ head -n 40 "$tmp_diff" >&2
 echo "" >&2
 echo "  To refresh: run  bash tools/regen-types.sh" >&2
 echo "  Then inspect the diff above, and if intentional," >&2
-echo "  promote with: cp -r $OUT_PKG/. $BASE_PKG/" >&2
+echo "  promote with: ./run-regen.sh --no-regen  (gated promote + stamp)" >&2
 exit 1

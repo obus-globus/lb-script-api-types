@@ -49,6 +49,19 @@ jobs:
           key: regen-gradle-${{ hashFiles('generator/**/*.gradle', 'tools/regen-types.sh') }}
           restore-keys: regen-gradle-
 
+      - name: Guard skip_regen (needs a populated tools/regen-output/)
+        if: ${{ inputs.skip_regen }}
+        run: |
+          # tools/regen-output/ is gitignored and this workflow restores no
+          # artifact into it, so on a fresh hosted runner skip_regen can only
+          # fail — catch it here, before the image build + LB clone burn
+          # minutes. To use skip_regen, run on a self-hosted runner with the
+          # output present (or add an artifact-restore step).
+          if [ ! -d "tools/regen-output/@ccbluex/liquidbounce-script-api" ]; then
+            echo "::error::skip_regen=true but tools/regen-output/ is empty — nothing to re-promote on this runner." >&2
+            exit 1
+          fi
+
       - name: Build the regen image
         run: docker build -f docker/Dockerfile -t lb-regen:ci .
 

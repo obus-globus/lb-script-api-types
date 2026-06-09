@@ -137,11 +137,35 @@ def inject(text: str, pattern: re.Pattern[str], entry: dict) -> tuple[str, bool]
         if s.endswith("*/"):
             close_idx = i
         break
+    if close_idx is not None and "/**" in lines[close_idx]:
+        # One-line `/** doc */` — expand it; inserting above the line would
+        # land the @deprecated outside the comment.
+        if "@deprecated" in lines[close_idx]:
+            return text, False
+        m1 = re.match(r"([ \t]*)/\*\*\s*(.*?)\s*\*/\s*$", lines[close_idx])
+        if m1:
+            ind, content = m1.group(1), m1.group(2)
+            repl = [f"{ind}/**"]
+            if content:
+                repl.append(f"{ind} * {content}")
+            repl.append(dep_line(entry, ind))
+            repl.append(f"{ind} */")
+            lines[close_idx:close_idx + 1] = repl
+            return "\n".join(lines) + text[decl_start:], True
+        close_idx = None  # malformed one-liner — fall through to a new block
     if close_idx is not None:
-        # Existing block — bail if already deprecated, else insert before */.
+        # Existing block — find its `/**` opener; a plain `/* ... */` comment
+        # is NOT a doc block (inserting into it would emit a parse error).
         j = close_idx
         while j >= 0 and "/**" not in lines[j]:
+            if "/*" in lines[j]:
+                close_idx = None
+                break
             j -= 1
+        else:
+            if j < 0:
+                close_idx = None
+    if close_idx is not None:
         block = "\n".join(lines[max(j, 0):close_idx + 1])
         if "@deprecated" in block:
             return text, False

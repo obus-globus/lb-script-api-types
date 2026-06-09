@@ -39,10 +39,10 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-TYPES_PKG = REPO_ROOT / "packages" / "script-api-types"
+TYPES_PKG = REPO_ROOT / "typings"
 AUGMENTATION = TYPES_PKG / "augmentations" / "ScriptModule.augmentation.d.ts"
 TYPES_ROOT = TYPES_PKG / "types"
-REPORT_PATH = REPO_ROOT / "docs" / "upstream-type-issues" / "notes" / "events-doc-report.md"
+REPORT_PATH = REPO_ROOT / "docs" / "notes" / "events-doc-report.md"
 
 # Each augmentation entry looks like:
 #   on(eventName: "chatReceive", handler: (chatReceiveEvent: ChatReceiveEvent) => void): void;

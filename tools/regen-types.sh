@@ -203,6 +203,14 @@ if [[ "$REGEN" == "1" ]]; then
   #     contract `{ name; version; authors }` for autocomplete).
   bash "$REPO_ROOT/tools/regen/post-patches.sh" "$OUTPUT_DIR/$PACKAGE_NAME"
 
+  # 7c. Provenance: record the LB SHA this output was generated from, so a
+  #     later promote (incl. --no-regen re-promotes) can verify the output
+  #     matches the checkout stamp-version.mjs will read.
+  {
+    git -C "$LB_DIR" rev-parse HEAD
+    git -C "$LB_DIR" describe --tags --always 2>/dev/null || true
+  } > "$OUTPUT_DIR/.generated-from"
+
   # 8. Summary.
   pkg_dir="$OUTPUT_DIR/$PACKAGE_NAME"
   size="$(du -sh "$pkg_dir" | cut -f1)"

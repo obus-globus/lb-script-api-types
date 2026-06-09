@@ -33,8 +33,7 @@ EVENT_MANAGER = LB_SRC / "net" / "ccbluex" / "liquidbounce" / "event" / "EventMa
 EVENTS_DIR = LB_SRC / "net" / "ccbluex" / "liquidbounce" / "event" / "events"
 AUGMENTATION = (
     REPO
-    / "packages"
-    / "script-api-types"
+    / "typings"
     / "augmentations"
     / "ScriptModule.augmentation.d.ts"
 )
@@ -51,8 +50,10 @@ def read_all_event_classes() -> set[str]:
     if not m:
         sys.exit(f"could not locate ALL_EVENT_CLASSES in {EVENT_MANAGER}")
     body = m.group(1)
-    names = re.findall(r"([A-Za-z_$][A-Za-z0-9_$]*)::class\.java", body)
-    return set(names)
+    # Nested event classes appear as `TitleEvent.Clear::class.java`; the
+    # generated import uses the JVM binary simple name `TitleEvent$Clear`.
+    names = re.findall(r"([A-Za-z_$][A-Za-z0-9_$.]*)::class\.java", body)
+    return {n.replace(".", "$") for n in names}
 
 
 def read_tag_names() -> set[str]:

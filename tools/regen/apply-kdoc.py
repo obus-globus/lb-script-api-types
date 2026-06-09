@@ -149,20 +149,33 @@ def kdoc_links_to_tsdoc(text: str) -> str:
     return RE_KDOC_LINK.sub(r"{@link \1}", text)
 
 
+def _esc(value):
+    """Break `*/` sequences so KDoc content can never close the TSDoc block
+    early and spill live garbage into the .d.ts (same guard as
+    apply-deprecations)."""
+    if isinstance(value, str):
+        return value.replace("*/", "* /")
+    if isinstance(value, list):
+        return [_esc(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _esc(v) for k, v in value.items()}
+    return value
+
+
 def render_tsdoc(entry: dict, indent: str, lb_sha: str | None = None,
                  lb_url: str = DEFAULT_LB_URL) -> str:
     """Render a single KDoc entry as a TSDoc block with the given indent."""
-    doc = kdoc_links_to_tsdoc(entry.get("doc") or "").rstrip()
-    params: dict[str, str] = entry.get("params") or {}
-    returns = entry.get("returns")
-    deprecated = entry.get("deprecated")
-    since = entry.get("since")
-    sees: list[str] = entry.get("see") or []
-    sample = entry.get("sample")
-    authors: list[str] = entry.get("authors") or []
-    anticheat = entry.get("anticheat")
-    anticheat_version = entry.get("anticheatVersion")
-    tested_on = entry.get("testedOn")
+    doc = _esc(kdoc_links_to_tsdoc(entry.get("doc") or "").rstrip())
+    params: dict[str, str] = _esc(entry.get("params") or {})
+    returns = _esc(entry.get("returns"))
+    deprecated = _esc(entry.get("deprecated"))
+    since = _esc(entry.get("since"))
+    sees: list[str] = _esc(entry.get("see") or [])
+    sample = _esc(entry.get("sample"))
+    authors: list[str] = _esc(entry.get("authors") or [])
+    anticheat = _esc(entry.get("anticheat"))
+    anticheat_version = _esc(entry.get("anticheatVersion"))
+    tested_on = _esc(entry.get("testedOn"))
     notes: list[str] = entry.get("notes") or []
     src = entry.get("source") or {}
 

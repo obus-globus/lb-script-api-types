@@ -40,6 +40,37 @@ OUT="$REPO_ROOT/tools/regen-output/$PACKAGE_NAME"
 
 if [[ "$PROMOTE" == "1" ]]; then
   echo "==> [3/3] promote → typings/ (diff vs current, package.json excluded):"
+  # Provenance gate: the output tree must have been generated from the SHA
+  # references/liquidbounce is checked out at NOW — stamp-version.mjs derives
+  # the package's `liquidbounce` block from the live checkout, so a stale
+  # output (regen'd before a pin bump) would otherwise ship with a lying
+  # provenance stamp.
+  GEN_FROM_FILE="$REPO_ROOT/tools/regen-output/.generated-from"
+  REF_SHA="$(git -C "$REPO_ROOT/references/liquidbounce" rev-parse HEAD)"
+  if [[ -f "$GEN_FROM_FILE" ]]; then
+    GEN_SHA="$(head -n1 "$GEN_FROM_FILE")"
+    if [[ "$GEN_SHA" != "$REF_SHA" ]]; then
+      echo "FAIL: tools/regen-output was generated from LB $GEN_SHA but references/liquidbounce is at $REF_SHA — stale output. Re-run a full regen (or check out the matching LB SHA)." >&2
+      exit 1
+    fi
+  else
+    echo "WARN: $GEN_FROM_FILE missing (output predates provenance stamping); stamping from the live checkout." >&2
+  fi
+  # All three synced dirs must exist up front — discovering one missing
+  # mid-loop would abort after --delete already ran on the earlier dirs,
+  # leaving typings/ a mixed old/new tree.
+  for d in ambient augmentations types; do
+    [[ -d "$OUT/$d" ]] || { echo "FAIL: $OUT/$d missing — refusing a partial promote" >&2; exit 1; }
+  done
+  # Surface anything the generator emits that the promote list would skip.
+  for entry in "$OUT"/* "$OUT"/.[!.]*; do
+    [[ -e "$entry" ]] || continue
+    base="$(basename "$entry")"
+    case "$base" in
+      ambient|augmentations|types|package.json|tsconfig.json) ;;
+      *) echo "WARN: regen output has unexpected top-level '$base' — NOT promoted (extend the promote list if intentional)" >&2 ;;
+    esac
+  done
   diff -rq --exclude=package.json "$OUT/" "$REPO_ROOT/typings/" 2>/dev/null | head -40 || true
   # Sync ambient/augmentations/types with --delete so stale files (e.g. old
   # bundled-kotlin internals) are removed; leave the hand-maintained
@@ -50,6 +81,10 @@ if [[ "$PROMOTE" == "1" ]]; then
   echo "Promoted into typings/ ($(find "$REPO_ROOT/typings/types" -name '*.d.ts' | wc -l) .d.ts)."
   # Stamp the package version to the LiquidBounce build these types were made for.
   node "$REPO_ROOT/scripts/stamp-version.mjs"
+  echo "==> post-promote drift gates"
+  python3 "$REPO_ROOT/tools/regen/check-augmentation-drift.py"
+  python3 "$REPO_ROOT/tools/regen/events-doc-report.py" || \
+    echo "WARN: events-doc-report failed (informational only)" >&2
 else
   echo "==> [3/3] promote skipped (--no-promote). Output in $OUT"
 fi
