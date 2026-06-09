@@ -136,8 +136,25 @@ The `types/` tree is generated, not hand-edited. The whole flow is one command:
    Versioning), keeping the hand-maintained `package.json`, `__smoke/`, and
    `tsconfig.json`.
 
-Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25, and JDK 21. Bump `PINNED_SHA`
-in `tools/regen-types.sh` to move to a newer LB build. If regen crashes, see
+Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25, and JDK 21.
+
+**Bumping to a newer LiquidBounce build** — the checklist:
+
+1. Set `PINNED_SHA` in `tools/regen-types.sh` (the single source of truth;
+   `fetch-references.sh` derives from it and fails loudly if it can't).
+2. Refresh the committed source-enrichment manifests against the new source:
+   `tools/kdoc-extractor/refresh-manifest.sh` (KDoc) and
+   `refresh-signatures.sh` (parameter names). Skipping this degrades
+   gracefully for most changes (conservative matching just skips what no
+   longer fits) but a same-arity parameter rename upstream would keep a stale
+   name until refreshed.
+3. `./run-regen.sh` — the promote step verifies the output was generated from
+   the checked-out SHA, then runs the augmentation drift gate (every `on()`
+   overload cross-checked against LB's `ALL_EVENT_CLASSES`/`@Tag` source).
+4. `npm run typecheck` — if the semantic ratchets shrank (they should never
+   grow), tighten with `npm run typecheck:update-baseline` and commit.
+
+If regen crashes, see
 [docs/regen-troubleshooting.md](docs/regen-troubleshooting.md) (notably the
 Kotlin-runtime-skew `KParameter$Kind CONTEXT` failure).
 
