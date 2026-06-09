@@ -3,7 +3,7 @@ import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
-export interface IVec<T extends Object | number | string | boolean> extends Serializable, Object, Cloneable{
+export interface IVec<T extends Object | number | string | boolean> extends Serializable, Object, Cloneable {
     clear(): void;
     protected clone(): Object;
     copyTo(arg0: E[]): void;

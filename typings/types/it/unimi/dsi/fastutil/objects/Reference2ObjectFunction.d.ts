@@ -31,7 +31,7 @@ import type { Reference2ShortFunction } from '../../../../../it/unimi/dsi/fastut
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
 import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Reference2ObjectFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Function<K, V>, Object{
+export interface Reference2ObjectFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Function<K, V>, Object {
     andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: K) => kotlin.Byte;
     andThenChar(arg0: (param0: V) => kotlin.Char): (param0: K) => kotlin.Char;
     andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: K) => kotlin.Double;

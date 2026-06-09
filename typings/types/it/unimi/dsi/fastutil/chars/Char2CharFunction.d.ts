@@ -18,7 +18,7 @@ import type { Short2CharFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntUnaryOperator } from '../../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Char2CharFunction extends Function<string, string>, IntUnaryOperator, Object{
+export interface Char2CharFunction extends Function<string, string>, IntUnaryOperator, Object {
     andThen(arg0: (param0: string) => T): (param0: string) => T;
     andThen(arg0: (param0: number) => kotlin.Int): (param0: number) => kotlin.Int;
     andThenByte(arg0: (param0: string) => kotlin.Byte): (param0: string) => kotlin.Byte;

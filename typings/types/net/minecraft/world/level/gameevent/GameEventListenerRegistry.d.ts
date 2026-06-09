@@ -5,7 +5,7 @@ import type { GameEvent$Context } from '../../../../../net/minecraft/world/level
 import type { GameEventListener } from '../../../../../net/minecraft/world/level/gameevent/GameEventListener.d.ts'
 import type { GameEventListenerRegistry$ListenerVisitor } from '../../../../../net/minecraft/world/level/gameevent/GameEventListenerRegistry$ListenerVisitor.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export interface GameEventListenerRegistry extends Object{
+export interface GameEventListenerRegistry extends Object {
     isEmpty(): boolean;
     register(listener: GameEventListener): void;
     unregister(listener: GameEventListener): void;

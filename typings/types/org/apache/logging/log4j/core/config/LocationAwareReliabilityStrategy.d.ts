@@ -6,6 +6,6 @@ import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d
 import type { LoggerConfig } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig.d.ts'
 import type { Message } from '../../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { Supplier } from '../../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
-export interface LocationAwareReliabilityStrategy extends Object{
+export interface LocationAwareReliabilityStrategy extends Object {
     log(reconfigured: () => LoggerConfig, loggerName: string, fqcn: string, location: StackTraceElement, marker: Marker, level: Level, data: Message, t: Throwable): void;
 }

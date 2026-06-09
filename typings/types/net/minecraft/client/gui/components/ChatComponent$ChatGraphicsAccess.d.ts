@@ -6,7 +6,7 @@ import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts
 import type { FormattedCharSequence } from '../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 import type { Matrix3x2f } from '../../../../../org/joml/Matrix3x2f.d.ts'
-export interface ChatComponent$ChatGraphicsAccess extends Object{
+export interface ChatComponent$ChatGraphicsAccess extends Object {
     fill(x0: number, y0: number, x1: number, y1: number, color: number): void;
     handleMessage(textTop: number, opacity: number, message: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): boolean;
     handleTag(x0: number, y0: number, x1: number, y1: number, opacity: number, tag: GuiMessageTag): void;

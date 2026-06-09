@@ -10,7 +10,7 @@ import type { SpawnPlacements$SpawnPredicate } from '../../../../../../../../net
 import type { AttributeSupplier$Builder } from '../../../../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
 import type { ServerLevelAccessor } from '../../../../../../../../net/minecraft/world/level/ServerLevelAccessor.d.ts'
 import type { Heightmap$Types } from '../../../../../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
-export interface FabricEntityType$Builder$Mob<T extends Mob> extends Object, FabricEntityType$Builder$Living<T>{
+export interface FabricEntityType$Builder$Mob<T extends Mob> extends Object, FabricEntityType$Builder$Living<T> {
     defaultAttributes(arg0: () => AttributeSupplier$Builder): FabricEntityType$Builder$Mob<T>;
     spawnPlacement(arg0: SpawnPlacementType, arg1: Heightmap$Types, arg2: (param0: T, param1: EntityType<Object>, param2: ServerLevelAccessor, param3: EntitySpawnReason, param4: BlockPos) => kotlin.Boolean): FabricEntityType$Builder$Mob<T>;
 }

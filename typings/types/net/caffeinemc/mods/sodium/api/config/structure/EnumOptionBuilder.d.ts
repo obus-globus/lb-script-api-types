@@ -11,7 +11,7 @@ import type { OptionImpact } from '../../../../../../../net/caffeinemc/mods/sodi
 import type { StatefulOptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/StatefulOptionBuilder.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface EnumOptionBuilder<E extends Enum<E>> extends Object, StatefulOptionBuilder<E>{
+export interface EnumOptionBuilder<E extends Enum<E>> extends Object, StatefulOptionBuilder<E> {
     setAllowedValues(arg0: E[]): EnumOptionBuilder<E>;
     setAllowedValuesProvider(arg0: (param0: ConfigState) => E[], arg1: Identifier[]): EnumOptionBuilder<E>;
     setApplyHook(arg0: (param0: ConfigState) => void): EnumOptionBuilder<E>;

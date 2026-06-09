@@ -4,7 +4,7 @@ import type { NetherNetSignaling } from '../../../../../../dev/kastle/netty/chan
 import type { NetherNetSignaling$IceServerInfo } from '../../../../../../dev/kastle/netty/channel/nethernet/signaling/NetherNetSignaling$IceServerInfo.d.ts'
 import type { SocketAddress } from '../../../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface NetherNetServerSignaling extends NetherNetSignaling, Object{
+export interface NetherNetServerSignaling extends NetherNetSignaling, Object {
     bind(arg0: SocketAddress): void;
     getIceServers(): NetherNetSignaling$IceServerInfo[];
     setAdvertisementData(arg0: NetherNetServerSignaling$PongData): void;

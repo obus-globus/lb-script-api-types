@@ -8,7 +8,7 @@ import type { MappingResolver } from '../../../../net/fabricmc/loader/api/Mappin
 import type { ModContainer } from '../../../../net/fabricmc/loader/api/ModContainer.d.ts'
 import type { ObjectShare } from '../../../../net/fabricmc/loader/api/ObjectShare.d.ts'
 import type { EntrypointContainer } from '../../../../net/fabricmc/loader/api/entrypoint/EntrypointContainer.d.ts'
-export interface FabricLoader extends Object{
+export interface FabricLoader extends Object {
     getAllMods(): E[];
     getConfigDir(): Path[];
     getConfigDirectory(): File;

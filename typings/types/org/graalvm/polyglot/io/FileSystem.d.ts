@@ -8,7 +8,7 @@ import type { LinkOption } from '../../../../java/nio/file/LinkOption.d.ts'
 import type { OpenOption } from '../../../../java/nio/file/OpenOption.d.ts'
 import type { FileAttribute } from '../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface FileSystem extends Object{
+export interface FileSystem extends Object {
     checkAccess(path: Path[], modes: AccessMode[], linkOptions: LinkOption[]): void;
     copy(source: Path[], target: Path[], options: CopyOption[]): void;
     createDirectory(dir: Path[], attrs: FileAttribute<Object>[]): void;

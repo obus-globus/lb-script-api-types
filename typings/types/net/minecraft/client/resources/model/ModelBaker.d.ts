@@ -5,7 +5,7 @@ import type { ModelBaker$SharedOperationKey } from '../../../../../net/minecraft
 import type { ResolvedModel } from '../../../../../net/minecraft/client/resources/model/ResolvedModel.d.ts'
 import type { MaterialBaker } from '../../../../../net/minecraft/client/resources/model/sprite/MaterialBaker.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface ModelBaker extends Object{
+export interface ModelBaker extends Object {
     compute<T extends Object | number | string | boolean>(key: (param0: T) => unknown): T;
     getModel(location: Identifier): ResolvedModel;
     interner(): ModelBaker$Interner;

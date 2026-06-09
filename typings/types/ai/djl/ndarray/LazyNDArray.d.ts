@@ -6,7 +6,7 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export interface LazyNDArray extends NDArray, Object{
+export interface LazyNDArray extends NDArray, Object {
     all(): NDArray;
     allClose(arg0: NDArray): boolean;
     allClose(arg0: NDArray, arg1: number, arg2: number, arg3: boolean): boolean;

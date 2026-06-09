@@ -6,7 +6,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CommandResultCallback } from '../../../net/minecraft/commands/CommandResultCallback.d.ts'
 import type { TraceCallbacks } from '../../../net/minecraft/commands/execution/TraceCallbacks.d.ts'
 import type { PermissionSetSupplier } from '../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
-export interface ExecutionCommandSource<T extends ExecutionCommandSource<T>> extends Object, PermissionSetSupplier{
+export interface ExecutionCommandSource<T extends ExecutionCommandSource<T>> extends Object, PermissionSetSupplier {
     callback(): (param0: boolean, param1: number) => void;
     clearCallbacks(): T;
     dispatcher(): CommandDispatcher<T>;

@@ -33,7 +33,7 @@ import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/s
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntToDoubleFunction } from '../../../../../java/util/function/IntToDoubleFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Char2FloatFunction extends Function<string, number>, IntToDoubleFunction, Object{
+export interface Char2FloatFunction extends Function<string, number>, IntToDoubleFunction, Object {
     andThen(arg0: (param0: number) => T): (param0: string) => T;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: string) => kotlin.Byte;
     andThenChar(arg0: (param0: number) => kotlin.Char): (param0: string) => kotlin.Char;

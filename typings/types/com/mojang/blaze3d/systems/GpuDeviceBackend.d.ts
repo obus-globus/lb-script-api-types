@@ -15,7 +15,7 @@ import type { OptionalDouble } from '../../../../java/util/OptionalDouble.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export interface GpuDeviceBackend extends Object{
+export interface GpuDeviceBackend extends Object {
     clearPipelineCache(): void;
     close(): void;
     createBuffer(label: () => string, usage: number, data: ByteBuffer): GpuBuffer;

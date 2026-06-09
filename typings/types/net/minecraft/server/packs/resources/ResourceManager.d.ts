@@ -7,7 +7,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { PackResources } from '../../../../../net/minecraft/server/packs/PackResources.d.ts'
 import type { Resource } from '../../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
-export interface ResourceManager extends Object, ResourceProvider{
+export interface ResourceManager extends Object, ResourceProvider {
     getNamespaces(): string[];
     getResourceOrThrow(location: Identifier): Resource;
     getResourceStack(location: Identifier): Resource[];

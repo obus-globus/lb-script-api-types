@@ -1,7 +1,7 @@
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PolyglotScript } from '../../../../net/ccbluex/liquidbounce/script/PolyglotScript.d.ts'
-export class PolyglotScript$RegisterScript extends Object implements Function<{ [key: string]: Object }, PolyglotScript> {
+export class PolyglotScript$RegisterScript extends Object implements Function< { [key: string]: Object }, PolyglotScript> {
     static identity(): (param0: Object | null) => Object | null;
     constructor(null_: PolyglotScript$RegisterScript)
     andThen(arg0: (param0: R) => V): (param0: T) => V;

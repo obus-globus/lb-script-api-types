@@ -26,16 +26,35 @@ Pull in the ambient script globals through `tsconfig.json`:
 ```jsonc
 {
   "compilerOptions": {
+    "lib": ["es2023"],            // no DOM — see below
     "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
 ```
+
+Set `"lib"` to a DOM-less library (`es2022`/`es2023`): the GraalJS runtime has
+no DOM, and if `lib.dom` is loaded its `localStorage: Storage` declaration
+silently overrides the script API's `localStorage` (a Java
+`ConcurrentHashMap<String, Any>` with `get`/`put`, not
+`getItem`/`setItem`) and DOM globals show up in autocomplete that don't exist
+at runtime.
 
 Now the runtime globals are typed:
 
 ```ts
 const target = mc.player;
 RotationUtil.aimAt(/* ... */);
+```
+
+Internals that have a generated type but are **not** runtime globals (e.g.
+`SilentHotbar`) are reached via `Java.type`, which you can type with the
+import:
+
+```ts
+import type { SilentHotbar } from "@wunk/lb-script-api-types/types/net/ccbluex/liquidbounce/utils/client/SilentHotbar";
+const SilentHotbar: typeof SilentHotbar =
+    Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
+SilentHotbar.INSTANCE.selectSlotSilently(/* ... */);
 ```
 
 Event handlers are typed per event. `ScriptModule.on()` has one overload for each

@@ -6,7 +6,7 @@ import type { TemporalQuery } from '../../../java/time/temporal/TemporalQuery.d.
 import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts'
 import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Temporal extends TemporalAccessor, Object{
+export interface Temporal extends TemporalAccessor, Object {
     get(arg0: TemporalField): number;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): Temporal;

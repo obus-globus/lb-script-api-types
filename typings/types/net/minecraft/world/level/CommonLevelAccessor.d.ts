@@ -23,7 +23,7 @@ import type { Heightmap$Types } from '../../../../net/minecraft/world/level/leve
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { CollisionContext } from '../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, LevelSimulatedRW{
+export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, LevelSimulatedRW {
     canSeeSkyFromBelowWater(pos: BlockPos): boolean;
     containsAnyLiquid(box: AABB): boolean;
     getBiome(pos: BlockPos): Holder<Biome>;

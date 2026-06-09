@@ -18,7 +18,7 @@ import type { Spliterator } from '../../../java/util/Spliterator.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface MemorySegment extends Object{
+export interface MemorySegment extends Object {
     address(): number;
     asByteBuffer(): ByteBuffer;
     asOverlappingSlice(arg0: MemorySegment): Optional<MemorySegment>;

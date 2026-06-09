@@ -6,7 +6,7 @@ import type { ExecutorService } from '../../../../../java/util/concurrent/Execut
 import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ListeningExecutorService extends ExecutorService, Object{
+export interface ListeningExecutorService extends ExecutorService, Object {
     awaitTermination(timeout: Duration): boolean;
     close(): void;
     invokeAll(tasks: E[]): Future<T>[];

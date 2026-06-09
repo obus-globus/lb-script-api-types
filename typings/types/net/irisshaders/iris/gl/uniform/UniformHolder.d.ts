@@ -13,7 +13,7 @@ import type { Vector3d } from '../../../../../org/joml/Vector3d.d.ts'
 import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
-export interface UniformHolder extends Object{
+export interface UniformHolder extends Object {
     externallyManagedUniform(arg0: string, arg1: UniformType): UniformHolder;
     uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): UniformHolder;
     uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Double): UniformHolder;

@@ -5,7 +5,7 @@ import type { TimeUnit } from '../../../../../../../../java/util/concurrent/Time
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ListenableScheduledFuture } from '../../../../../../../../org/spongepowered/include/com/google/common/util/concurrent/ListenableScheduledFuture.d.ts'
 import type { ListeningExecutorService } from '../../../../../../../../org/spongepowered/include/com/google/common/util/concurrent/ListeningExecutorService.d.ts'
-export interface ListeningScheduledExecutorService extends ScheduledExecutorService, Object, ListeningExecutorService{
+export interface ListeningScheduledExecutorService extends ScheduledExecutorService, Object, ListeningExecutorService {
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<Object>;
     schedule(arg0: () => V, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ListenableScheduledFuture<Object>;

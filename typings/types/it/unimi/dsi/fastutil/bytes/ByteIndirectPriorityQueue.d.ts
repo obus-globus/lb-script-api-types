@@ -1,7 +1,7 @@
 import type { IndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/IndirectPriorityQueue.d.ts'
 import type { ByteComparator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteComparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ByteIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object{
+export interface ByteIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object {
     allChanged(): void;
     changed(): void;
     changed(arg0: number): void;

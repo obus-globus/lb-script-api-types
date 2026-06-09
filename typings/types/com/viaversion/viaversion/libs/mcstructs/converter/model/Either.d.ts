@@ -1,6 +1,6 @@
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export interface Either<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object{
+export interface Either<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object {
     getLeft(): L;
     getRight(): R;
     isLeft(): boolean;

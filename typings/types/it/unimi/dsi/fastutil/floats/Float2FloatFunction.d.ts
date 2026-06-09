@@ -18,7 +18,7 @@ import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/s
 import type { DoubleUnaryOperator } from '../../../../../java/util/function/DoubleUnaryOperator.d.ts'
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Float2FloatFunction extends Function<number, number>, DoubleUnaryOperator, Object{
+export interface Float2FloatFunction extends Function<number, number>, DoubleUnaryOperator, Object {
     andThen(arg0: (param0: number) => kotlin.Double): (param0: number) => kotlin.Double;
     andThen(arg0: (param0: number) => T): (param0: number) => T;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;

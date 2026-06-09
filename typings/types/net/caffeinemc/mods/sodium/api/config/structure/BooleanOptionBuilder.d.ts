@@ -10,7 +10,7 @@ import type { OptionImpact } from '../../../../../../../net/caffeinemc/mods/sodi
 import type { StatefulOptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/StatefulOptionBuilder.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface BooleanOptionBuilder extends Object, StatefulOptionBuilder<boolean>{
+export interface BooleanOptionBuilder extends Object, StatefulOptionBuilder<boolean> {
     setApplyHook(arg0: (param0: ConfigState) => void): BooleanOptionBuilder;
     setBinding(arg0: (param0: boolean) => void, arg1: () => boolean): BooleanOptionBuilder;
     setBinding(arg0: OptionBinding<boolean>): BooleanOptionBuilder;

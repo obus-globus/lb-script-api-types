@@ -20,7 +20,7 @@ import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Kind1 } from '../../../../com/mojang/datafixers/kinds/Kind1.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Functor<F extends K1, Mu extends Functor$Mu> extends Kind1<F, Mu>, Object{
+export interface Functor<F extends K1, Mu extends Functor$Mu> extends Kind1<F, Mu>, Object {
     group(arg0: App<F, T1>): Products$P1<F, T1>;
     group(arg0: App<F, T1>, arg1: App<F, T2>): Products$P2<F, T1, T2>;
     group(arg0: App<F, T1>, arg1: App<F, T2>, arg2: App<F, T3>): Products$P3<F, T1, T2, T3>;

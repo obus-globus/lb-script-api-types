@@ -4,7 +4,7 @@ import type { Thread$UncaughtExceptionHandler } from '../../java/lang/Thread$Unc
 import type { ThreadFactory } from '../../java/util/concurrent/ThreadFactory.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
-export interface Thread$Builder extends Object{
+export interface Thread$Builder extends Object {
     factory(): ThreadFactory;
     inheritInheritableThreadLocals(arg0: boolean): Thread$Builder;
     name(arg0: string): Thread$Builder;

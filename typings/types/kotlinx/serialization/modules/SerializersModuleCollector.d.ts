@@ -3,7 +3,7 @@ import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { DeserializationStrategy } from '../../../kotlinx/serialization/DeserializationStrategy.d.ts'
 import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.ts'
 import type { SerializationStrategy } from '../../../kotlinx/serialization/SerializationStrategy.d.ts'
-export interface SerializersModuleCollector extends Object{
+export interface SerializersModuleCollector extends Object {
     contextual(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
     contextual(kClass: KClass<T>, serializer: KSerializer<T>): void;
     polymorphic(baseClass: KClass<Base>, actualClass: KClass<Sub>, actualSerializer: KSerializer<Sub>): void;

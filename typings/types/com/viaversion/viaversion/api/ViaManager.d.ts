@@ -10,7 +10,7 @@ import type { ProtocolManager } from '../../../../com/viaversion/viaversion/api/
 import type { Scheduler } from '../../../../com/viaversion/viaversion/api/scheduler/Scheduler.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ViaManager extends Object{
+export interface ViaManager extends Object {
     addEnableListener(arg0: () => void): void;
     addPostEnableListener(arg0: () => void): void;
     debugHandler(): DebugHandler;

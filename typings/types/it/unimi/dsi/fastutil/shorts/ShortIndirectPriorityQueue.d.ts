@@ -1,7 +1,7 @@
 import type { IndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/IndirectPriorityQueue.d.ts'
 import type { ShortComparator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortComparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ShortIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object{
+export interface ShortIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object {
     allChanged(): void;
     changed(): void;
     changed(arg0: number): void;

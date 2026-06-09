@@ -4,7 +4,7 @@ import type { PacketWrapper } from '../../../../../../com/viaversion/viaversion/
 import type { ServerboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface VersionedPacketTransformer<C extends ClientboundPacketType, S extends ServerboundPacketType> extends Object{
+export interface VersionedPacketTransformer<C extends ClientboundPacketType, S extends ServerboundPacketType> extends Object {
     scheduleSend(arg0: UserConnection, arg1: C, arg2: (param0: PacketWrapper) => void): boolean;
     scheduleSend(arg0: UserConnection, arg1: S, arg2: (param0: PacketWrapper) => void): boolean;
     scheduleSend(arg0: PacketWrapper): boolean;

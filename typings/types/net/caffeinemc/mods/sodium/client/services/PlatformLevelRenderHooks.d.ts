@@ -10,7 +10,7 @@ import type { RenderType } from '../../../../../../net/minecraft/client/renderer
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Matrix4f } from '../../../../../../org/joml/Matrix4f.d.ts'
-export interface PlatformLevelRenderHooks extends Object{
+export interface PlatformLevelRenderHooks extends Object {
     retrieveChunkMeshAppenders(arg0: Level, arg1: BlockPos): (Object | null)[];
     runChunkLayerEvents(arg0: RenderType, arg1: Level, arg2: LevelRenderer, arg3: Matrix4f, arg4: Matrix4f, arg5: number, arg6: Camera, arg7: Frustum): void;
     runChunkMeshAppenders(arg0: (Object | null)[], arg1: (param0: ChunkSectionLayer) => VertexConsumer, arg2: LevelSlice, arg3: BlockPos): void;

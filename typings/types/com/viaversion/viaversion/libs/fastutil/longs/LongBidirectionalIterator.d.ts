@@ -3,7 +3,7 @@ import type { LongIterator } from '../../../../../../com/viaversion/viaversion/l
 import type { ObjectBidirectionalIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface LongBidirectionalIterator extends LongIterator, ObjectBidirectionalIterator<number>, Object{
+export interface LongBidirectionalIterator extends LongIterator, ObjectBidirectionalIterator<number>, Object {
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

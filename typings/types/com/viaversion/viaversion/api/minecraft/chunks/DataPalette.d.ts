@@ -1,6 +1,6 @@
 import type { IntUnaryOperator } from '../../../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface DataPalette extends Object{
+export interface DataPalette extends Object {
     addId(arg0: number): void;
     clear(): void;
     idAt(arg0: number): number;

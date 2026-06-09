@@ -5,7 +5,7 @@ import type { ModuleCapability } from '../../../../../../kotlin/reflect/jvm/inte
 import type { PackageViewDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PackageViewDescriptor.d.ts'
 import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
-export interface ModuleDescriptor extends Object, DeclarationDescriptor{
+export interface ModuleDescriptor extends Object, DeclarationDescriptor {
     getBuiltIns(): KotlinBuiltIns;
     getCapability<T extends Object | number | string | boolean>(arg0: ModuleCapability<T>): T;
     getExpectedByModules(): ModuleDescriptor[];

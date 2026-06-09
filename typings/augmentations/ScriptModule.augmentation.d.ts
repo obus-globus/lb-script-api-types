@@ -25,7 +25,7 @@ import type { ChatSendEvent } from '../types/net/ccbluex/liquidbounce/event/even
 import type { ChunkDeltaUpdateEvent } from '../types/net/ccbluex/liquidbounce/event/events/ChunkDeltaUpdateEvent.d.ts'
 import type { ChunkLoadEvent } from '../types/net/ccbluex/liquidbounce/event/events/ChunkLoadEvent.d.ts'
 import type { ChunkUnloadEvent } from '../types/net/ccbluex/liquidbounce/event/events/ChunkUnloadEvent.d.ts'
-import type { Clear } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent/Clear.d.ts'
+import type { TitleEvent$Clear } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent$Clear.d.ts'
 import type { ClickGuiScaleChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClickGuiScaleChangeEvent.d.ts'
 import type { ClickGuiValueChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClickGuiValueChangeEvent.d.ts'
 import type { ClientChatErrorEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClientChatErrorEvent.d.ts'
@@ -108,13 +108,13 @@ import type { ServerPingedEvent } from '../types/net/ccbluex/liquidbounce/event/
 import type { SessionEvent } from '../types/net/ccbluex/liquidbounce/event/events/SessionEvent.d.ts'
 import type { SpaceSeperatedNamesChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/SpaceSeperatedNamesChangeEvent.d.ts'
 import type { SprintEvent } from '../types/net/ccbluex/liquidbounce/event/events/SprintEvent.d.ts'
-import type { Subtitle } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent/Subtitle.d.ts'
+import type { TitleEvent$Subtitle } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent$Subtitle.d.ts'
 import type { TagEntityEvent } from '../types/net/ccbluex/liquidbounce/event/events/TagEntityEvent.d.ts'
 import type { TargetChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/TargetChangeEvent.d.ts'
 import type { ThemeColorChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/ThemeColorChangeEvent.d.ts'
 import type { TickPacketProcessEvent } from '../types/net/ccbluex/liquidbounce/event/events/TickPacketProcessEvent.d.ts'
-import type { Title } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent/Title.d.ts'
-import type { Fade } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent/Fade.d.ts'
+import type { TitleEvent$Title } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent$Title.d.ts'
+import type { TitleEvent$Fade } from '../types/net/ccbluex/liquidbounce/event/events/TitleEvent$Fade.d.ts'
 import type { UseCooldownEvent } from '../types/net/ccbluex/liquidbounce/event/events/UseCooldownEvent.d.ts'
 import type { UserLoggedInEvent } from '../types/net/ccbluex/liquidbounce/event/events/UserLoggedInEvent.d.ts'
 import type { UserLoggedOutEvent } from '../types/net/ccbluex/liquidbounce/event/events/UserLoggedOutEvent.d.ts'
@@ -225,9 +225,9 @@ on(eventName: "chunkLoad", handler: (chunkLoadEvent: ChunkLoadEvent) => void): v
  */
 on(eventName: "chunkUnload", handler: (chunkUnloadEvent: ChunkUnloadEvent) => void): void;
 /**
- * @see {@link Clear}
+ * @see {@link TitleEvent$Clear}
  */
-on(eventName: "clearTitle", handler: (clearTitleEvent: Clear) => void): void;
+on(eventName: "clearTitle", handler: (clearTitleEvent: TitleEvent$Clear) => void): void;
 /**
  * @see {@link ClickGuiScaleChangeEvent}
  */
@@ -561,9 +561,9 @@ on(eventName: "spaceSeperatedNamesChange", handler: (spaceSeperatedNamesChangeEv
  */
 on(eventName: "sprint", handler: (sprintEvent: SprintEvent) => void): void;
 /**
- * @see {@link Subtitle}
+ * @see {@link TitleEvent$Subtitle}
  */
-on(eventName: "subtitle", handler: (subtitleEvent: Subtitle) => void): void;
+on(eventName: "subtitle", handler: (subtitleEvent: TitleEvent$Subtitle) => void): void;
 /**
  * @see {@link TagEntityEvent}
  */
@@ -581,13 +581,13 @@ on(eventName: "themeColorChange", handler: (themeColorChangeEvent: ThemeColorCha
  */
 on(eventName: "tickPacketProcess", handler: (tickPacketProcessEvent: TickPacketProcessEvent) => void): void;
 /**
- * @see {@link Title}
+ * @see {@link TitleEvent$Title}
  */
-on(eventName: "title", handler: (titleEvent: Title) => void): void;
+on(eventName: "title", handler: (titleEvent: TitleEvent$Title) => void): void;
 /**
- * @see {@link Fade}
+ * @see {@link TitleEvent$Fade}
  */
-on(eventName: "titleFade", handler: (titleFadeEvent: Fade) => void): void;
+on(eventName: "titleFade", handler: (titleFadeEvent: TitleEvent$Fade) => void): void;
 /**
  * @see {@link UseCooldownEvent}
  */

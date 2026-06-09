@@ -17,7 +17,7 @@ import type { TagRewriter } from '../../../../../com/viaversion/viaversion/api/r
 import type { VersionedTypesHolder } from '../../../../../com/viaversion/viaversion/api/type/types/version/VersionedTypesHolder.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface SimpleProtocol extends Protocol<SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes>, Object{
+export interface SimpleProtocol extends Protocol<SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes>, Object {
     dependsOn(): Class<Protocol<Object, Object, Object, Object>>;
     getComponentRewriter(): ComponentRewriter;
     getEntityRewriter(): EntityRewriter<Object>;

@@ -1,7 +1,7 @@
 import type { IndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/IndirectPriorityQueue.d.ts'
 import type { DoubleComparator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleComparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface DoubleIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object{
+export interface DoubleIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object {
     allChanged(): void;
     changed(): void;
     changed(arg0: number): void;

@@ -33,7 +33,7 @@ import type { Short2LongFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntToLongFunction } from '../../../../../java/util/function/IntToLongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Byte2LongFunction extends Function<number, number>, IntToLongFunction, Object{
+export interface Byte2LongFunction extends Function<number, number>, IntToLongFunction, Object {
     andThen(arg0: (param0: number) => T): (param0: number) => T;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;
     andThenChar(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;

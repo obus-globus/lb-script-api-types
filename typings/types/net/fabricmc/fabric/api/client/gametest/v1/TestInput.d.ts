@@ -3,7 +3,7 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KeyMapping } from '../../../../../../../net/minecraft/client/KeyMapping.d.ts'
 import type { Options } from '../../../../../../../net/minecraft/client/Options.d.ts'
-export interface TestInput extends Object{
+export interface TestInput extends Object {
     holdAlt(): void;
     holdControl(): void;
     holdKey(arg0: InputConstants$Key): void;

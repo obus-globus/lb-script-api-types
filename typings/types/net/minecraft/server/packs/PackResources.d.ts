@@ -9,7 +9,7 @@ import type { PackType } from '../../../../net/minecraft/server/packs/PackType.d
 import type { MetadataSectionType } from '../../../../net/minecraft/server/packs/metadata/MetadataSectionType.d.ts'
 import type { KnownPack } from '../../../../net/minecraft/server/packs/repository/KnownPack.d.ts'
 import type { IoSupplier } from '../../../../net/minecraft/server/packs/resources/IoSupplier.d.ts'
-export interface PackResources extends AutoCloseable, Object{
+export interface PackResources extends AutoCloseable, Object {
     close(): void;
     getMetadataSection<T extends Object | number | string | boolean>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];

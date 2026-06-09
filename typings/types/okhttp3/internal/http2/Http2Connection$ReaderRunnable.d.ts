@@ -6,7 +6,7 @@ import type { Http2Reader$Handler } from '../../../okhttp3/internal/http2/Http2R
 import type { Settings } from '../../../okhttp3/internal/http2/Settings.d.ts'
 import type { BufferedSource } from '../../../okio/BufferedSource.d.ts'
 import type { ByteString } from '../../../okio/ByteString.d.ts'
-export class Http2Connection$ReaderRunnable extends Object implements () => void, Http2Reader$Handler {
+export class Http2Connection$ReaderRunnable extends Object implements Http2Reader$Handler {
     constructor(null_: Http2Connection$ReaderRunnable, reader: Http2Reader)
     // private reader: Http2Reader;
     /*not mapped: */ getReader$okhttp(): Http2Reader;

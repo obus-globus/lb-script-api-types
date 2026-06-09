@@ -6,7 +6,7 @@ import type { JsonObject } from '../../../../../com/viaversion/viaversion/libs/g
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ViaServerProxyPlatform<T extends Object | number | string | boolean> extends ViaPlatform<T>, Object{
+export interface ViaServerProxyPlatform<T extends Object | number | string | boolean> extends ViaPlatform<T>, Object {
     couldBeReloading(): boolean;
     createLogger(arg0: string): Logger;
     getDump(): JsonObject;

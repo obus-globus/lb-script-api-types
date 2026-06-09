@@ -4,7 +4,7 @@ import type { Duration } from '../../../../../java/time/Duration.d.ts'
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface TimeLimiter extends Object{
+export interface TimeLimiter extends Object {
     callUninterruptiblyWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeout: Duration): T;
     callUninterruptiblyWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeoutDuration: number, timeoutUnit: TimeUnit): T;
     callWithTimeout<T extends Object | number | string | boolean>(callable: () => T, timeout: Duration): T;

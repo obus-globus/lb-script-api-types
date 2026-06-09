@@ -6,6 +6,6 @@ import type { TextureMapping } from '../../../../../net/minecraft/client/data/mo
 import type { Variant } from '../../../../../net/minecraft/client/renderer/block/dispatch/Variant.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
-export interface BlockModelGenerators$BlockStateGeneratorSupplier extends Object{
+export interface BlockModelGenerators$BlockStateGeneratorSupplier extends Object {
     create(block: Block, normal: Variant, mapping: TextureMapping, modelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
 }

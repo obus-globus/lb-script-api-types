@@ -7,7 +7,7 @@ import type { TemporalQuery } from '../../../java/time/temporal/TemporalQuery.d.
 import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Locale } from '../../../java/util/Locale.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Era extends TemporalAccessor, TemporalAdjuster, Object{
+export interface Era extends TemporalAccessor, TemporalAdjuster, Object {
     adjustInto(arg0: Temporal): Temporal;
     get(arg0: TemporalField): number;
     getDisplayName(arg0: TextStyle, arg1: Locale): string;

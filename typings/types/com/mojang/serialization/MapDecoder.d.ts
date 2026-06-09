@@ -7,7 +7,7 @@ import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts
 import type { MapLike } from '../../../com/mojang/serialization/MapLike.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface MapDecoder<A extends Object | number | string | boolean> extends Keyable, Object{
+export interface MapDecoder<A extends Object | number | string | boolean> extends Keyable, Object {
     ap(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
     compressedDecode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
     compressor(arg0: DynamicOps<T>): KeyCompressor<T>;

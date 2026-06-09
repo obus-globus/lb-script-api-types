@@ -13,7 +13,7 @@ import type { SteppedValidator } from '../../../../../../../net/caffeinemc/mods/
 import type { StatefulOptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/StatefulOptionBuilder.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface IntegerOptionBuilder extends Object, StatefulOptionBuilder<number>{
+export interface IntegerOptionBuilder extends Object, StatefulOptionBuilder<number> {
     setApplyHook(arg0: (param0: ConfigState) => void): IntegerOptionBuilder;
     setBinding(arg0: (param0: number) => void, arg1: () => number): IntegerOptionBuilder;
     setBinding(arg0: OptionBinding<number>): IntegerOptionBuilder;

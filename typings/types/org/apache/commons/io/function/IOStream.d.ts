@@ -24,7 +24,7 @@ import type { IOPredicate } from '../../../../../org/apache/commons/io/function/
 import type { IORunnable } from '../../../../../org/apache/commons/io/function/IORunnable.d.ts'
 import type { IOSpliterator } from '../../../../../org/apache/commons/io/function/IOSpliterator.d.ts'
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
-export interface IOStream<T extends Object | number | string | boolean> extends Object, IOBaseStream<T, IOStream<T>, Stream<T>>{
+export interface IOStream<T extends Object | number | string | boolean> extends Object, IOBaseStream<T, IOStream<T>, Stream<T>> {
     allMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
     anyMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
     asBaseStream(): BaseStream<T, B>;

@@ -7,7 +7,7 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { LootContextUser } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContextUser.d.ts'
 import type { ValidationContext } from '../../../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'
-export interface LootItemFunction extends BiFunction<ItemStack, LootContext, ItemStack>, Object, LootContextUser{
+export interface LootItemFunction extends BiFunction<ItemStack, LootContext, ItemStack>, Object, LootContextUser {
     andThen(arg0: (param0: R) => V): (param0: T, param1: U) => V;
     codec(): MapCodec<LootItemFunction>;
     getReferencedContextParams(): ContextKey<Object>[];

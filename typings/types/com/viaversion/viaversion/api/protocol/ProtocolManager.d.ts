@@ -15,7 +15,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ProtocolManager extends Object{
+export interface ProtocolManager extends Object {
     addMappingLoaderFuture(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg2: () => void): void;
     addMappingLoaderFuture(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: () => void): void;
     checkForMappingCompletion(): boolean;

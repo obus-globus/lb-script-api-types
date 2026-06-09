@@ -16,7 +16,7 @@ import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export interface UserConnection extends Object{
+export interface UserConnection extends Object {
     addClientWorld(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ClientWorld): void;
     addEntityTracker(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: EntityTracker): void;
     addItemHasher(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ItemHasher): void;

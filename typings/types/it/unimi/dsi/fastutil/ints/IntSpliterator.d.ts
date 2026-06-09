@@ -4,7 +4,7 @@ import type { Spliterator$OfInt } from '../../../../../java/util/Spliterator$OfI
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface IntSpliterator extends Spliterator$OfInt, Object{
+export interface IntSpliterator extends Spliterator$OfInt, Object {
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => kotlin.Int;
     skip(arg0: number): number;

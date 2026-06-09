@@ -31,9 +31,9 @@ import type { LocalPlayer } from '../types/net/minecraft/client/player/LocalPlay
 
 declare module '../types/net/minecraft/client/multiplayer/ClientLevel' {
     interface ClientLevel {
-        getEntities(except: Entity | LocalPlayer | null, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => kotlin.Boolean, output: Entity[]): void;
-        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => kotlin.Boolean, output: Entity[], maxResults: number): void;
+        getEntities(except: Entity | LocalPlayer | null, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => boolean, output: Entity[]): void;
+        getEntities(type: EntityTypeTest<Entity, Entity>, bb: AABB, selector: (param0: Entity) => boolean, output: Entity[], maxResults: number): void;
     }
 }

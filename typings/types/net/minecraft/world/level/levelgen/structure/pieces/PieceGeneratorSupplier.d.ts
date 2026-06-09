@@ -4,6 +4,6 @@ import type { FeatureConfiguration } from '../../../../../../../net/minecraft/wo
 import type { PieceGenerator } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/PieceGenerator.d.ts'
 import type { PieceGeneratorSupplier$Context } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/PieceGeneratorSupplier$Context.d.ts'
 import type { StructurePiecesBuilder } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder.d.ts'
-export interface PieceGeneratorSupplier<C extends FeatureConfiguration> extends Object{
+export interface PieceGeneratorSupplier<C extends FeatureConfiguration> extends Object {
     createGenerator(context: PieceGeneratorSupplier$Context<C>): Optional<(param0: C, param1: StructurePiecesBuilder) => void>;
 }

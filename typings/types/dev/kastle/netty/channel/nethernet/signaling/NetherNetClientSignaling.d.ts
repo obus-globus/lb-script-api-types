@@ -4,7 +4,7 @@ import type { NetherNetSignaling$IceServerInfo } from '../../../../../../dev/kas
 import type { SocketAddress } from '../../../../../../java/net/SocketAddress.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface NetherNetClientSignaling extends NetherNetSignaling, Object{
+export interface NetherNetClientSignaling extends NetherNetSignaling, Object {
     connect(arg0: SocketAddress): CompletableFuture<NetherNetSignaling$IceServerInfo[]>;
     setNotFoundHandler(arg0: (param0: string) => void): void;
 }

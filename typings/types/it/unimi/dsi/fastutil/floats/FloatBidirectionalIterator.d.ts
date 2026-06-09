@@ -4,7 +4,7 @@ import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface FloatBidirectionalIterator extends FloatIterator, ObjectBidirectionalIterator<number>, Object{
+export interface FloatBidirectionalIterator extends FloatIterator, ObjectBidirectionalIterator<number>, Object {
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

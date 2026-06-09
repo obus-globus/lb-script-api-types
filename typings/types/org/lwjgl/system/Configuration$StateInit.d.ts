@@ -1,6 +1,6 @@
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Configuration$StateInit<T extends Object | number | string | boolean> extends Function<string, T>, Object{
+export interface Configuration$StateInit<T extends Object | number | string | boolean> extends Function<string, T>, Object {
     andThen(arg0: (param0: R) => V): (param0: T) => V;
     compose(arg0: (param0: V) => T): (param0: V) => R;
 }

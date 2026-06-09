@@ -4,7 +4,7 @@ import type { ExecutorService } from '../../../java/util/concurrent/ExecutorServ
 import type { ScheduledFuture } from '../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface ScheduledExecutorService extends ExecutorService, Object{
+export interface ScheduledExecutorService extends ExecutorService, Object {
     close(): void;
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ScheduledFuture<Object>;
     schedule(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;

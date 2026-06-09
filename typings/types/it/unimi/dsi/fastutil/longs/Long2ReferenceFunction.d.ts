@@ -33,7 +33,7 @@ import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastut
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { LongFunction } from '../../../../../java/util/function/LongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Long2ReferenceFunction<V extends Object | number | string | boolean> extends Function<number, V>, LongFunction<V>, Object{
+export interface Long2ReferenceFunction<V extends Object | number | string | boolean> extends Function<number, V>, LongFunction<V>, Object {
     andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: number) => kotlin.Byte;
     andThenChar(arg0: (param0: V) => kotlin.Char): (param0: number) => kotlin.Char;
     andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: number) => kotlin.Double;

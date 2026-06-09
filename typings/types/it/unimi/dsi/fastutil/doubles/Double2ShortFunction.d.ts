@@ -33,7 +33,7 @@ import type { Short2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/s
 import type { DoubleToIntFunction } from '../../../../../java/util/function/DoubleToIntFunction.d.ts'
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Double2ShortFunction extends Function<number, number>, DoubleToIntFunction, Object{
+export interface Double2ShortFunction extends Function<number, number>, DoubleToIntFunction, Object {
     andThen(arg0: (param0: number) => T): (param0: number) => T;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;
     andThenChar(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;

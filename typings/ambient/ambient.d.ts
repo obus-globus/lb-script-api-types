@@ -2,7 +2,6 @@
 // ambient.ts
 // imports
 import "../augmentations/index.d.ts"
-import { SilentHotbar as SilentHotbar_ } from "../types/net/ccbluex/liquidbounce/utils/client/SilentHotbar";
 import { ScriptSetting as ScriptSetting_ } from "../types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting";
 import { Vec3i as Vec3i_ } from "../types/net/minecraft/core/Vec3i";
 import { Vec3 as Vec3_ } from "../types/net/minecraft/world/phys/Vec3";
@@ -10,6 +9,7 @@ import { Mth as Mth_ } from "../types/net/minecraft/util/Mth";
 import { BlockPos as BlockPos_ } from "../types/net/minecraft/core/BlockPos";
 import { InteractionHand as InteractionHand_ } from "../types/net/minecraft/world/InteractionHand";
 import { Axis as Axis_ } from "../types/com/mojang/math/Axis";
+import { Vector3f as Vector3f_ } from "../types/org/joml/Vector3f";
 import { RenderSystem as RenderSystem_ } from "../types/com/mojang/blaze3d/systems/RenderSystem";
 import { Color4b as Color4b_ } from "../types/net/ccbluex/liquidbounce/render/engine/type/Color4b";
 import { Minecraft as Minecraft_ } from "../types/net/minecraft/client/Minecraft";
@@ -24,7 +24,6 @@ import { ScriptReflectionUtil as ScriptReflectionUtil_ } from "../types/net/ccbl
 import { ScriptParameterValidator as ScriptParameterValidator_ } from "../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptParameterValidator";
 import { ScriptUnsafeThread as ScriptUnsafeThread_ } from "../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptUnsafeThread";
 import { ScriptPrimitives as ScriptPrimitives_ } from "../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptPrimitives";
-import { ConcurrentHashMap as ConcurrentHashMap_ } from "../types/java/util/concurrent/ConcurrentHashMap";
 import { ScriptAsyncUtil as ScriptAsyncUtil_ } from "../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil";
 import { PolyglotScript as PolyglotScript_ } from "../types/net/ccbluex/liquidbounce/script/PolyglotScript";
 declare global {
@@ -83,6 +82,49 @@ declare global {
     const Workers: any;
     // T-4: GraalVM intrinsics end
 
+    // F9: Axis class-handle facade begin
+    /**
+     * The host class handle for `com.mojang.math.Axis` (bound via
+     * `Axis::class.java`). Use the static unit-axis constants — e.g.
+     * `RotationAxis.YP.rotationDegrees(90)`.
+     */
+    interface AxisClassHandle {
+        /** Negative X axis. */ readonly XN: Axis_;
+        /** Positive X axis. */ readonly XP: Axis_;
+        /** Negative Y axis. */ readonly YN: Axis_;
+        /** Positive Y axis. */ readonly YP: Axis_;
+        /** Negative Z axis. */ readonly ZN: Axis_;
+        /** Positive Z axis. */ readonly ZP: Axis_;
+        /** Axis along an arbitrary (normalised) vector. */
+        of(axis: Vector3f_): Axis_;
+    }
+    // F9: Axis class-handle facade end
+
+    // F8: ScriptLocalStorage facade begin
+    /**
+     * The shared script storage — at runtime a Java
+     * `ConcurrentHashMap<String, Any>` bound by `ScriptContextProvider`
+     * (NOT the DOM `localStorage` / Web Storage API). Java `Map` member
+     * access: `get`/`put`/`remove`/..., values are arbitrary host or guest
+     * objects. In-memory only; cleared when scripts reload.
+     */
+    interface ScriptLocalStorage {
+        /** Value for `key`, or `null` if absent. */
+        get(key: string): any;
+        /** Stores `value`; returns the previous value or `null`. */
+        put(key: string, value: any): any;
+        /** Stores only if absent; returns the existing value or `null`. */
+        putIfAbsent(key: string, value: any): any;
+        getOrDefault(key: string, defaultValue: any): any;
+        /** Removes `key`; returns the removed value or `null`. */
+        remove(key: string): any;
+        containsKey(key: string): boolean;
+        clear(): void;
+        size(): number;
+        isEmpty(): boolean;
+    }
+    // F8: ScriptLocalStorage facade end
+
 
 // exports
     export const Setting: ScriptSetting_;
@@ -111,7 +153,7 @@ declare global {
 
     export const Primitives: ScriptPrimitives_;
 
-    export const localStorage: ConcurrentHashMap_;
+    export const localStorage: ScriptLocalStorage;
 
     export const AsyncUtil: ScriptAsyncUtil_;
 
@@ -151,7 +193,7 @@ declare global {
 
     export const InteractionHand: typeof InteractionHand_;
 
-    export const Axis: Axis_;
+    export const Axis: AxisClassHandle;
 
     export const RenderSystem: typeof RenderSystem_;
 
@@ -161,10 +203,7 @@ declare global {
 
     export const Hand: typeof InteractionHand_;
 
-    /** SilentHotbar.INSTANCE — silent hotbar slot selection. */
-    export const SilentHotbar: typeof SilentHotbar_;
-
-    export const RotationAxis: Axis_;
+    export const RotationAxis: AxisClassHandle;
 
     export const Color4b: typeof Color4b_;
 

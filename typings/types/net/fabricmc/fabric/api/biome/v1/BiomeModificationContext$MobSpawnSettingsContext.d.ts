@@ -4,7 +4,7 @@ import type { Weighted } from '../../../../../../net/minecraft/util/random/Weigh
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { MobCategory } from '../../../../../../net/minecraft/world/entity/MobCategory.d.ts'
 import type { MobSpawnSettings$SpawnerData } from '../../../../../../net/minecraft/world/level/biome/MobSpawnSettings$SpawnerData.d.ts'
-export interface BiomeModificationContext$MobSpawnSettingsContext extends Object{
+export interface BiomeModificationContext$MobSpawnSettingsContext extends Object {
     addMobCharge(arg0: EntityType<Object>, arg1: number, arg2: number): void;
     addSpawn(arg0: MobCategory, arg1: MobSpawnSettings$SpawnerData, arg2: number): void;
     clearMobCharge(arg0: EntityType<Object>): void;

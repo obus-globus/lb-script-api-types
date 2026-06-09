@@ -7,7 +7,7 @@ import type { Traversable } from '../../../../com/mojang/datafixers/kinds/Traver
 import type { Pair$Mu } from '../../../../com/mojang/datafixers/util/Pair$Mu.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface CartesianLike<T extends K1, C extends Object | number | string | boolean, Mu extends CartesianLike$Mu> extends Functor<T, Mu>, Traversable<T, Mu>, Object{
+export interface CartesianLike<T extends K1, C extends Object | number | string | boolean, Mu extends CartesianLike$Mu> extends Functor<T, Mu>, Traversable<T, Mu>, Object {
     flip(arg0: Applicative<F, Object>, arg1: App<T, App<F, A>>): App<F, App<T, A>>;
     from(arg0: App<Pair$Mu<C>, A>): App<T, A>;
     to(arg0: App<T, A>): App<Pair$Mu<C>, A>;

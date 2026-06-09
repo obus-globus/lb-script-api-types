@@ -18,7 +18,7 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Codec<A extends Object | number | string | boolean> extends Decoder<A>, Encoder<A>, Object{
+export interface Codec<A extends Object | number | string | boolean> extends Decoder<A>, Encoder<A>, Object {
     boxed(): Decoder$Boxed<A>;
     comap(arg0: (param0: B) => A): Encoder<B>;
     comapFlatMap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;

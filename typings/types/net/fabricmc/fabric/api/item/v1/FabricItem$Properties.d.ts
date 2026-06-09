@@ -9,7 +9,7 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Item$Properties } from '../../../../../../net/minecraft/world/item/Item$Properties.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export interface FabricItem$Properties extends Object{
+export interface FabricItem$Properties extends Object {
     customDamage(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int): Item$Properties;
     equipmentSlot(arg0: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot): Item$Properties;
     itemId(): ResourceKey<Item>;

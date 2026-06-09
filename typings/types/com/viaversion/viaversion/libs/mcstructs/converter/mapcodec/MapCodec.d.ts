@@ -8,7 +8,7 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export interface MapCodec<T extends Object | number | string | boolean> extends MapDeserializer<T>, MapSerializer<T>, Object{
+export interface MapCodec<T extends Object | number | string | boolean> extends MapDeserializer<T>, MapSerializer<T>, Object {
     asCodec(): Codec<T>;
     defaulted(arg0: T): MapCodec<T>;
     defaulted(arg0: (param0: T) => kotlin.Boolean, arg1: () => T): MapCodec<T>;

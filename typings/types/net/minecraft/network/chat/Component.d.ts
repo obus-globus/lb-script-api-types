@@ -9,7 +9,7 @@ import type { MutableComponent } from '../../../../net/minecraft/network/chat/Mu
 import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSequence } from '../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../net/minecraft/util/FormattedCharSink.d.ts'
-export interface Component extends Message, Object, FormattedText{
+export interface Component extends Message, Object, FormattedText {
     contains(other: Component): boolean;
     copy(): MutableComponent;
     getContents(): ComponentContents;

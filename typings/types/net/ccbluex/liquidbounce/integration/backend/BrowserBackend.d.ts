@@ -11,7 +11,7 @@ import type { TaskManager } from '../../../../../net/ccbluex/liquidbounce/integr
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:29}
  */
-export interface BrowserBackend extends Object{
+export interface BrowserBackend extends Object {
     accelerationFlags: BrowserAccelerationFlags;
     readonly browsers: Browser[];
     /*not mapped: */ isInitialized(): boolean;

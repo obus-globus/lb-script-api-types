@@ -10,7 +10,7 @@ import type { ItemStackRenderState$FoilType } from '../../../../../../../net/min
 import type { RenderType } from '../../../../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { BakedQuad } from '../../../../../../../net/minecraft/client/resources/model/geometry/BakedQuad.d.ts'
 import type { ItemDisplayContext } from '../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
-export interface OrderedSubmitNodeCollectorMixin extends Object, FabricOrderedSubmitNodeCollector{
+export interface OrderedSubmitNodeCollectorMixin extends Object, FabricOrderedSubmitNodeCollector {
     submitBlockModel(arg0: PoseStack, arg1: (param0: ChunkSectionLayer) => RenderType, arg2: boolean, arg3: BlockStateModelPart[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
     submitItem(arg0: PoseStack, arg1: ItemDisplayContext, arg2: number, arg3: number, arg4: number, arg5: number[], arg6: BakedQuad[], arg7: MeshView, arg8: ItemStackRenderState$FoilType): void;
 }

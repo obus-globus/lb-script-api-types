@@ -5,7 +5,7 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
 import type { Player } from '../../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { EntityTypeTest } from '../../../../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
 import type { AABB } from '../../../../../../../net/minecraft/world/phys/AABB.d.ts'
-export interface PlayerDetector$EntitySelector extends Object{
+export interface PlayerDetector$EntitySelector extends Object {
     getEntities(level: ServerLevel, type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
     getPlayers(level: ServerLevel, selector: (param0: Player) => kotlin.Boolean): Player[];
 }

@@ -15,7 +15,7 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export interface LightChunk extends Object, BlockGetter{
+export interface LightChunk extends Object, BlockGetter {
     clip(arg0: ClipContext): BlockHitResult;
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
     findBlockLightSources(consumer: (param0: BlockPos, param1: BlockState) => void): void;

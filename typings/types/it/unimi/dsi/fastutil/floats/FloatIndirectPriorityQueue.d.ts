@@ -1,7 +1,7 @@
 import type { IndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/IndirectPriorityQueue.d.ts'
 import type { FloatComparator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatComparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface FloatIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object{
+export interface FloatIndirectPriorityQueue extends IndirectPriorityQueue<number>, Object {
     allChanged(): void;
     changed(): void;
     changed(arg0: number): void;

@@ -8,7 +8,7 @@ import type { UnbakedGeometry } from '../../../../../net/minecraft/client/resour
 import type { TextureSlots } from '../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
 import type { TextureSlots$Data } from '../../../../../net/minecraft/client/resources/model/sprite/TextureSlots$Data.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface UnbakedModel extends Object{
+export interface UnbakedModel extends Object {
     ambientOcclusion(): boolean;
     geometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
     guiLight(): UnbakedModel$GuiLight;

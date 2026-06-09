@@ -5,7 +5,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { OptionDescriptor } from '../../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
-export interface EngineCacheSupport extends OptimizedRuntimeServiceProvider, Object{
+export interface EngineCacheSupport extends OptimizedRuntimeServiceProvider, Object {
     getEngineOptions(): OptionDescriptor[];
     getPriority(): number;
     isStoreEnabled(options: OptionValues): boolean;

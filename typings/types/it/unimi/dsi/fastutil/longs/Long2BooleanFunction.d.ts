@@ -36,7 +36,7 @@ import type { Short2LongFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { LongPredicate } from '../../../../../java/util/function/LongPredicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Long2BooleanFunction extends Function<number, boolean>, LongPredicate, Object{
+export interface Long2BooleanFunction extends Function<number, boolean>, LongPredicate, Object {
     and(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
     andThen(arg0: (param0: boolean) => T): (param0: number) => T;
     andThenByte(arg0: (param0: boolean) => kotlin.Byte): (param0: number) => kotlin.Byte;

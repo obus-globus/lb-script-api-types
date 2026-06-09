@@ -6,7 +6,7 @@ import type { InjectedInterface } from '../../../../../../../net/fabricmc/loader
 import type { AccessWidenerVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/visitor/AccessWidenerVisitor.d.ts'
 import type { ClassTweakerVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/visitor/ClassTweakerVisitor.d.ts'
 import type { ClassVisitor } from '../../../../../../../org/objectweb/asm/ClassVisitor.d.ts'
-export interface ClassTweaker extends Object, ClassTweakerVisitor{
+export interface ClassTweaker extends Object, ClassTweakerVisitor {
     createClassVisitor(arg0: number, arg1: ClassVisitor, arg2: (param0: string, param1: number[]) => void): ClassVisitor;
     getAccessWidener(arg0: string): AccessWidener;
     getEnumExtensions(arg0: string): EnumExtension[];

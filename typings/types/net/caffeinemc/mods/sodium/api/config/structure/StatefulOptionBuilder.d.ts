@@ -10,7 +10,7 @@ import type { OptionImpact } from '../../../../../../../net/caffeinemc/mods/sodi
 import type { OptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/OptionBuilder.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface StatefulOptionBuilder<V extends Object | number | string | boolean> extends Object, OptionBuilder{
+export interface StatefulOptionBuilder<V extends Object | number | string | boolean> extends Object, OptionBuilder {
     setApplyHook(arg0: (param0: ConfigState) => void): StatefulOptionBuilder<V>;
     setBinding(arg0: (param0: V) => void, arg1: () => V): StatefulOptionBuilder<V>;
     setBinding(arg0: OptionBinding<V>): StatefulOptionBuilder<V>;

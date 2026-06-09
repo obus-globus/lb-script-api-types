@@ -6,7 +6,7 @@ import type { DefaultItemComponentEvents$ModifyConsumer } from '../../../../../.
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { DataComponentMap$Builder } from '../../../../../../net/minecraft/core/component/DataComponentMap$Builder.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
-export interface DefaultItemComponentEvents$ModifyContext extends Object{
+export interface DefaultItemComponentEvents$ModifyContext extends Object {
     modify(arg0: (param0: Item) => kotlin.Boolean, arg1: (param0: DataComponentMap$Builder, param1: Item) => void): void;
     modify(arg0: (param0: Item) => kotlin.Boolean, arg1: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: Item) => void): void;
     modify(arg0: E[], arg1: (param0: DataComponentMap$Builder, param1: Item) => void): void;

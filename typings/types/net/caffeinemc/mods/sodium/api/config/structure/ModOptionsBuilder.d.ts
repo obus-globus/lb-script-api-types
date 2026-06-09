@@ -7,7 +7,7 @@ import type { ColorThemeBuilder } from '../../../../../../../net/caffeinemc/mods
 import type { OptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/OptionBuilder.d.ts'
 import type { PageBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/PageBuilder.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface ModOptionsBuilder extends Object{
+export interface ModOptionsBuilder extends Object {
     addPage(arg0: PageBuilder): ModOptionsBuilder;
     formatVersion(arg0: (param0: string) => string): ModOptionsBuilder;
     registerFlagHook(arg0: (param0: E[], param1: ConfigState) => void, arg1: Identifier[]): ModOptionsBuilder;

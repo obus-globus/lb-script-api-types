@@ -1,7 +1,7 @@
 import type { PriorityQueue } from '../../../../../it/unimi/dsi/fastutil/PriorityQueue.d.ts'
 import type { LongComparator } from '../../../../../it/unimi/dsi/fastutil/longs/LongComparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface LongPriorityQueue extends PriorityQueue<number>, Object{
+export interface LongPriorityQueue extends PriorityQueue<number>, Object {
     changed(): void;
     comparator(): (param0: number, param1: number) => kotlin.Int;
     dequeue(): number;

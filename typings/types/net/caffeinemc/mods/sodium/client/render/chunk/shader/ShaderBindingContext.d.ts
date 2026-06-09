@@ -2,7 +2,7 @@ import type { IntFunction } from '../../../../../../../../java/util/function/Int
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { GlUniform } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gl/shader/uniform/GlUniform.d.ts'
 import type { GlUniformBlock } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gl/shader/uniform/GlUniformBlock.d.ts'
-export interface ShaderBindingContext extends Object{
+export interface ShaderBindingContext extends Object {
     bindUniform<U extends GlUniform<Object>>(arg0: string, arg1: (param0: U) => unknown): U;
     bindUniformBlock(arg0: string, arg1: number): GlUniformBlock;
     bindUniformBlockOptional(arg0: string, arg1: number): GlUniformBlock;

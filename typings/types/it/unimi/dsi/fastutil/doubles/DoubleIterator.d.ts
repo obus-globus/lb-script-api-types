@@ -3,7 +3,7 @@ import type { PrimitiveIterator$OfDouble } from '../../../../../java/util/Primit
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface DoubleIterator extends PrimitiveIterator$OfDouble, Object{
+export interface DoubleIterator extends PrimitiveIterator$OfDouble, Object {
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextDouble(): number;

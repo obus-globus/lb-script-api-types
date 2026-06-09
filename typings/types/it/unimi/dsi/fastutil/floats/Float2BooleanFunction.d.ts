@@ -36,7 +36,7 @@ import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/s
 import type { DoublePredicate } from '../../../../../java/util/function/DoublePredicate.d.ts'
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Float2BooleanFunction extends Function<number, boolean>, DoublePredicate, Object{
+export interface Float2BooleanFunction extends Function<number, boolean>, DoublePredicate, Object {
     and(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
     andThen(arg0: (param0: boolean) => T): (param0: number) => T;
     andThenByte(arg0: (param0: boolean) => kotlin.Byte): (param0: number) => kotlin.Byte;

@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
-export interface ResourceOrTagKeyArgument$Result<T extends Object | number | string | boolean> extends Predicate<Holder<T>>, Object{
+export interface ResourceOrTagKeyArgument$Result<T extends Object | number | string | boolean> extends Predicate<Holder<T>>, Object {
     and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     asPrintable(): string;
     cast(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagKeyArgument$Result<E>>;

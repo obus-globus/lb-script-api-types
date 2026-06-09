@@ -11,7 +11,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { RegionFileVersion } from '../../../../../net/minecraft/world/level/chunk/storage/RegionFileVersion.d.ts'
 import type { RegionStorageInfo } from '../../../../../net/minecraft/world/level/chunk/storage/RegionStorageInfo.d.ts'
 import type { Structure } from '../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
-export interface JvmProfiler extends Object{
+export interface JvmProfiler extends Object {
     isAvailable(): boolean;
     isRunning(): boolean;
     onChunkGenerate(pos: ChunkPos, dimension: ResourceKey<Level>, name: string): (param0: boolean) => void;

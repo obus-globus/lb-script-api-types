@@ -2,7 +2,7 @@ import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../net/minecraft/nbt/Tag.d.ts'
-export interface NbtPathArgument$Node extends Object{
+export interface NbtPathArgument$Node extends Object {
     collect(tags: Tag[], collector: (param0: Tag, param1: Tag[]) => void): Tag[];
     createPreferredParentTag(): Tag;
     get(tags: Tag[]): Tag[];

@@ -6,7 +6,7 @@ import type { Callback } from '../okhttp3/Callback.d.ts'
 import type { Request } from '../okhttp3/Request.d.ts'
 import type { Response } from '../okhttp3/Response.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
-export interface Call extends Object, Cloneable{
+export interface Call extends Object, Cloneable {
     cancel(): void;
     protected clone(): Object;
     clone(): Call;

@@ -8,7 +8,7 @@ import type { Material } from '../../../../../../net/minecraft/client/resources/
 import type { Material$Baked } from '../../../../../../net/minecraft/client/resources/model/sprite/Material$Baked.d.ts'
 import type { TextureSlots } from '../../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface MaterialBaker extends Object, FabricMaterialBaker, MaterialBakerMixin{
+export interface MaterialBaker extends Object, FabricMaterialBaker, MaterialBakerMixin {
     get(material: Material, name: () => kotlin.String): Material$Baked;
     reportMissingReference(reference: string, name: () => kotlin.String): Material$Baked;
     resolveSlot(slots: TextureSlots, id: string, name: () => kotlin.String): Material$Baked;

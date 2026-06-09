@@ -8,7 +8,7 @@ import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockP
 import type { Direction } from '../../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { RandomSource } from '../../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
-export interface BlockStateModelMixin extends Object, FabricBlockStateModel{
+export interface BlockStateModelMixin extends Object, FabricBlockStateModel {
     createGeometryKey(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): Object;
     emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Direction) => kotlin.Boolean): void;
     hasMaterialFlag(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource, arg4: number): boolean;

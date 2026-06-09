@@ -2,7 +2,7 @@ import type { Ops$ListSerializer } from '../../../../../../com/viaversion/viaver
 import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface Ops$MapSerializer extends Object{
+export interface Ops$MapSerializer extends Object {
     write<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Type<K>, arg1: K, arg2: Type<V>, arg3: V): Ops$MapSerializer;
     write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
     write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;

@@ -1,6 +1,6 @@
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Multimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
+export interface Multimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
     asMap(): Map<K, E[]>;
     clear(): void;
     containsEntry(key: Object, value: Object): boolean;

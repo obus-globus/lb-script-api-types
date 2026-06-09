@@ -8,7 +8,7 @@ import type { SideChainPartBlock$Neighbor } from '../../../../../net/minecraft/w
 import type { SideChainPartBlock$Neighbors } from '../../../../../net/minecraft/world/level/block/SideChainPartBlock$Neighbors.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { SideChainPart } from '../../../../../net/minecraft/world/level/block/state/properties/SideChainPart.d.ts'
-export interface SideChainPartBlock extends Object{
+export interface SideChainPartBlock extends Object {
     // private addBlocksConnectingTowards(getNeighbor: (param0: SideChainPartBlock$Neighbor) => unknown, endPart: SideChainPart, accumulator: (param0: BlockPos) => void): void;
     // private canConnect(newBlocksToConnectTo: number, currentChainLength: number): boolean;
     getAllBlocksConnectedTo(level: LevelAccessor, pos: BlockPos): BlockPos[];

@@ -10,7 +10,7 @@ import type { TruffleInlining } from '../../../../com/oracle/truffle/runtime/Tru
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
-export interface OptimizedTruffleRuntimeListener extends Object{
+export interface OptimizedTruffleRuntimeListener extends Object {
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean): void;

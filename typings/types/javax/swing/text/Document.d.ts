@@ -6,7 +6,7 @@ import type { Element } from '../../../javax/swing/text/Element.d.ts'
 import type { Position } from '../../../javax/swing/text/Position.d.ts'
 import type { Segment } from '../../../javax/swing/text/Segment.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Document extends Object{
+export interface Document extends Object {
     addDocumentListener(arg0: DocumentListener): void;
     addUndoableEditListener(arg0: UndoableEditListener): void;
     createPosition(arg0: number): Position;

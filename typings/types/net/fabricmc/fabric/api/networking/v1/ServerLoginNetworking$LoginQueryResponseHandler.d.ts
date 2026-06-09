@@ -5,6 +5,6 @@ import type { ServerLoginNetworking$LoginSynchronizer } from '../../../../../../
 import type { FriendlyByteBuf } from '../../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerLoginPacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerLoginPacketListenerImpl.d.ts'
-export interface ServerLoginNetworking$LoginQueryResponseHandler extends Object{
+export interface ServerLoginNetworking$LoginQueryResponseHandler extends Object {
     receive(arg0: MinecraftServer, arg1: ServerLoginPacketListenerImpl, arg2: boolean, arg3: FriendlyByteBuf, arg4: (param0: Future<Object>) => void, arg5: PacketSender): void;
 }

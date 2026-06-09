@@ -33,7 +33,7 @@ import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastut
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubleFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Reference2DoubleFunction<K extends Object | number | string | boolean> extends Function<K, number>, ToDoubleFunction<K>, Object{
+export interface Reference2DoubleFunction<K extends Object | number | string | boolean> extends Function<K, number>, ToDoubleFunction<K>, Object {
     andThen(arg0: (param0: number) => T): (param0: K) => T;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: K) => kotlin.Byte;
     andThenChar(arg0: (param0: number) => kotlin.Char): (param0: K) => kotlin.Char;

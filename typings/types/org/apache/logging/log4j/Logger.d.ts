@@ -11,7 +11,7 @@ import type { Message } from '../../../../org/apache/logging/log4j/message/Messa
 import type { MessageFactory } from '../../../../org/apache/logging/log4j/message/MessageFactory.d.ts'
 import type { MessageSupplier } from '../../../../org/apache/logging/log4j/util/MessageSupplier.d.ts'
 import type { Supplier } from '../../../../org/apache/logging/log4j/util/Supplier.d.ts'
-export interface Logger extends Object{
+export interface Logger extends Object {
     always(): LogBuilder;
     atDebug(): LogBuilder;
     atError(): LogBuilder;

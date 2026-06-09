@@ -19,7 +19,7 @@ import type { Function9 } from '../../../../com/mojang/datafixers/util/Function9
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Applicative<F extends K1, Mu extends Applicative$Mu> extends Functor<F, Mu>, Object{
+export interface Applicative<F extends K1, Mu extends Applicative$Mu> extends Functor<F, Mu>, Object {
     ap(arg0: App<F, (param0: A) => R>, arg1: App<F, A>): App<F, R>;
     ap(arg0: (param0: A) => R, arg1: App<F, A>): App<F, R>;
     ap10(arg0: App<F, Function10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, R>>, arg1: App<F, T1>, arg2: App<F, T2>, arg3: App<F, T3>, arg4: App<F, T4>, arg5: App<F, T5>, arg6: App<F, T6>, arg7: App<F, T7>, arg8: App<F, T8>, arg9: App<F, T9>, arg10: App<F, T10>): App<F, R>;

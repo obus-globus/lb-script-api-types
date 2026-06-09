@@ -18,7 +18,7 @@ import type { VersionedTypesHolder } from '../../../../../com/viaversion/viavers
 import type { ProtocolLogger } from '../../../../../com/viaversion/viaversion/util/ProtocolLogger.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Protocol<CU extends ClientboundPacketType, CM extends ClientboundPacketType, SM extends ServerboundPacketType, SU extends ServerboundPacketType> extends Object{
+export interface Protocol<CU extends ClientboundPacketType, CM extends ClientboundPacketType, SM extends ServerboundPacketType, SU extends ServerboundPacketType> extends Object {
     appendClientbound(arg0: CU, arg1: (param0: PacketWrapper) => void): void;
     appendServerbound(arg0: SU, arg1: (param0: PacketWrapper) => void): void;
     cancelClientbound(arg0: CU): void;

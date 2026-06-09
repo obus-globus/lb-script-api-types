@@ -5,7 +5,7 @@ import type { ToIntFunction } from '../../../../../../../../java/util/function/T
 import type { ToLongFunction } from '../../../../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PathWithAttributes } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathWithAttributes.d.ts'
-export interface PathSorter extends Comparator<PathWithAttributes>, Object{
+export interface PathSorter extends Comparator<PathWithAttributes>, Object {
     reversed(): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
     thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;

@@ -12,7 +12,7 @@ import type { Vector2i } from '../../../../../org/joml/Vector2i.d.ts'
 import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../../org/joml/Vector4i.d.ts'
-export interface DynamicUniformHolder extends Object, UniformHolder{
+export interface DynamicUniformHolder extends Object, UniformHolder {
     uniform1f(arg0: string, arg1: () => kotlin.Double, arg2: ValueUpdateNotifier): DynamicUniformHolder;
     uniform1f(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicUniformHolder;
     uniform1f(arg0: string, arg1: () => kotlin.Float, arg2: ValueUpdateNotifier): DynamicUniformHolder;

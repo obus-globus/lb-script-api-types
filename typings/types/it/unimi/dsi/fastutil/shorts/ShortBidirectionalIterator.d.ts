@@ -4,7 +4,7 @@ import type { ShortIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ShortBidirectionalIterator extends ObjectBidirectionalIterator<number>, ShortIterator, Object{
+export interface ShortBidirectionalIterator extends ObjectBidirectionalIterator<number>, ShortIterator, Object {
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

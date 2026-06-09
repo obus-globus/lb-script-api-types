@@ -7,7 +7,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Rotation } from '../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export interface RotationPreference extends Comparator<Rotation>, Object{
+export interface RotationPreference extends Comparator<Rotation>, Object {
     getPreferredSpot(eyesPos: Vec3, range: number): Vec3;
     getPreferredSpotOnBox(box: AABB, eyesPos: Vec3, range: number): Vec3;
     reversed(): (param0: T) => kotlin.Boolean;

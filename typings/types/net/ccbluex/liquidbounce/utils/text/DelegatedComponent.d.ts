@@ -9,7 +9,7 @@ import type { MutableComponent } from '../../../../../net/minecraft/network/chat
 import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSequence } from '../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
-export interface DelegatedComponent extends Supplier<Component>, Object, Component{
+export interface DelegatedComponent extends Supplier<Component>, Object, Component {
     contains(arg0: Component): boolean;
     contains(other: Component): boolean;
     copy(): MutableComponent;

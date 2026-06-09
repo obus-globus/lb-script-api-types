@@ -16,7 +16,7 @@ import type { BlockHitResult } from '../../../../net/minecraft/world/phys/BlockH
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { CollisionContext } from '../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export interface CollisionGetter extends Object, BlockGetter{
+export interface CollisionGetter extends Object, BlockGetter {
     // private borderCollision(source: Entity, box: AABB): VoxelShape;
     clip(arg0: ClipContext): BlockHitResult;
     clipIncludingBorder(c: ClipContext): BlockHitResult;

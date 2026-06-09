@@ -5,6 +5,6 @@ import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d
 import type { FormattedCharSequence } from '../../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 import type { GameRule } from '../../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
-export interface AbstractGameRulesScreen$EntryFactory<T extends Object | number | string | boolean> extends Object{
+export interface AbstractGameRulesScreen$EntryFactory<T extends Object | number | string | boolean> extends Object {
     create(name: Component, tooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], narration: string, gameRule: GameRule<T>): AbstractGameRulesScreen$RuleEntry;
 }

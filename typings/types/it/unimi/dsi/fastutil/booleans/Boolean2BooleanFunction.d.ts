@@ -19,7 +19,7 @@ import type { Reference2BooleanFunction } from '../../../../../it/unimi/dsi/fast
 import type { Short2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2BooleanFunction.d.ts'
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Boolean2BooleanFunction extends Function<boolean, boolean>, Object{
+export interface Boolean2BooleanFunction extends Function<boolean, boolean>, Object {
     andThen(arg0: (param0: boolean) => T): (param0: boolean) => T;
     andThenByte(arg0: (param0: boolean) => kotlin.Byte): (param0: boolean) => kotlin.Byte;
     andThenChar(arg0: (param0: boolean) => kotlin.Char): (param0: boolean) => kotlin.Char;

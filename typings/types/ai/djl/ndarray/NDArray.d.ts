@@ -13,7 +13,7 @@ import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export interface NDArray extends BytesSupplier, NDResource, Object{
+export interface NDArray extends BytesSupplier, NDResource, Object {
     abs(): NDArray;
     acos(): NDArray;
     acosh(): NDArray;

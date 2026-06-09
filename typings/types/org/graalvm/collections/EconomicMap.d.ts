@@ -3,7 +3,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Equivalence } from '../../../org/graalvm/collections/Equivalence.d.ts'
 import type { MapCursor } from '../../../org/graalvm/collections/MapCursor.d.ts'
 import type { UnmodifiableEconomicMap } from '../../../org/graalvm/collections/UnmodifiableEconomicMap.d.ts'
-export interface EconomicMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object, UnmodifiableEconomicMap<K, V>{
+export interface EconomicMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object, UnmodifiableEconomicMap<K, V> {
     clear(): void;
     get(key: K, defaultValue: V): V;
     getEntries(): MapCursor<K, V>;

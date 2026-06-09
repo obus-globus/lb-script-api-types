@@ -8,7 +8,7 @@ import type { Result } from '../../../../../../../com/viaversion/viaversion/libs
 import type { BiFunction } from '../../../../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export interface Codec<T extends Object | number | string | boolean> extends DataDeserializer<T>, DataSerializer<T>, Object{
+export interface Codec<T extends Object | number | string | boolean> extends DataDeserializer<T>, DataSerializer<T>, Object {
     compactListOf(): Codec<T[]>;
     converterFlatMap(arg0: (param0: DataConverter<Object>, param1: N) => Result<T>, arg1: (param0: DataConverter<Object>, param1: T) => Result<N>): Codec<N>;
     converterVerified(arg0: (param0: DataConverter<Object>, param1: T) => Result<void>): Codec<T>;

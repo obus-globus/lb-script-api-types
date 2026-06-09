@@ -7,7 +7,7 @@ import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { ToFloatFunction } from '../../../../../../net/minecraft/util/ToFloatFunction.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Fluid } from '../../../../../../net/minecraft/world/level/material/Fluid.d.ts'
-export interface FluidBehavior$Builder extends Object{
+export interface FluidBehavior$Builder extends Object {
     allowBoats(arg0: boolean): FluidBehavior$Builder;
     allowMovingDown(arg0: boolean): FluidBehavior$Builder;
     allowSprinting(arg0: (param0: TagKey<Fluid>, param1: LivingEntity) => kotlin.Boolean): FluidBehavior$Builder;

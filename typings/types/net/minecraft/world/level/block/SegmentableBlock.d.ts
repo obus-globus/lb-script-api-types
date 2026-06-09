@@ -7,7 +7,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { EnumProperty } from '../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
 import type { IntegerProperty } from '../../../../../net/minecraft/world/level/block/state/properties/IntegerProperty.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export interface SegmentableBlock extends Object{
+export interface SegmentableBlock extends Object {
     canBeReplaced(state: BlockState, context: BlockPlaceContext, segment: IntegerProperty): boolean;
     getSegmentAmountProperty(): IntegerProperty;
     getShapeCalculator(facing: EnumProperty<Direction>, amount: IntegerProperty): (param0: BlockState) => VoxelShape;

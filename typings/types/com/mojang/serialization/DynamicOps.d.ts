@@ -14,7 +14,7 @@ import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export interface DynamicOps<T extends Object | number | string | boolean> extends Object{
+export interface DynamicOps<T extends Object | number | string | boolean> extends Object {
     compressMaps(): boolean;
     convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
     convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;

@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractWidget } from '../../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layouts/LayoutElement.d.ts'
 import type { ScreenRectangle } from '../../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
-export interface Layout extends Object, LayoutElement{
+export interface Layout extends Object, LayoutElement {
     arrangeElements(): void;
     getRectangle(): ScreenRectangle;
     setPosition(x: number, y: number): void;

@@ -6,7 +6,7 @@ import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ReCocartesian<P extends K2, Mu extends ReCocartesian$Mu> extends Profunctor<P, Mu>, Object{
+export interface ReCocartesian<P extends K2, Mu extends ReCocartesian$Mu> extends Profunctor<P, Mu>, Object {
     dimap(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     dimap(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     lmap(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;

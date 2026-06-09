@@ -7,7 +7,7 @@ import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts
 import type { PoiManager$Occupancy } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiManager$Occupancy.d.ts'
 import type { PoiRecord } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiRecord.d.ts'
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
-export interface PointOfInterestSetExtended extends Object{
+export interface PointOfInterestSetExtended extends Object {
     lithium$collectMatchingPoints(arg0: (param0: Holder<PoiType>) => kotlin.Boolean, arg1: PoiManager$Occupancy, arg2: (param0: PoiRecord) => void): void;
     lithium$collectMatchingPointsL2Limited(arg0: BlockPos, arg1: number, arg2: (param0: Holder<PoiType>) => kotlin.Boolean, arg3: (param0: PoiRecord) => kotlin.Boolean, arg4: (param0: PoiRecord) => void, arg5: number): void;
     lithium$collectMatchingPointsL2Limited(arg0: BlockPos, arg1: number, arg2: (param0: Holder<PoiType>) => kotlin.Boolean, arg3: PoiManager$Occupancy, arg4: (param0: PoiRecord) => void, arg5: number): void;

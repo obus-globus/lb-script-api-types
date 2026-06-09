@@ -29,7 +29,7 @@ import type { AbstractWidget } from '../../../../../../net/minecraft/client/gui/
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { KeyEvent } from '../../../../../../net/minecraft/client/input/KeyEvent.d.ts'
 import type { MouseButtonEvent } from '../../../../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
-export interface ScreenExtensions extends Object{
+export interface ScreenExtensions extends Object {
     fabric_getAfterBackgroundEvent(): Event<(param0: Screen, param1: GuiGraphicsExtractor, param2: number, param3: number, param4: number) => void>;
     fabric_getAfterKeyPressEvent(): Event<(param0: Screen, param1: KeyEvent) => void>;
     fabric_getAfterKeyReleaseEvent(): Event<(param0: Screen, param1: KeyEvent) => void>;

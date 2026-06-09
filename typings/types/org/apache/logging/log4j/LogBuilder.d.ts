@@ -5,7 +5,7 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { Marker } from '../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { Message } from '../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { Supplier } from '../../../../org/apache/logging/log4j/util/Supplier.d.ts'
-export interface LogBuilder extends Object{
+export interface LogBuilder extends Object {
     log(): void;
     log(message: Object): void;
     log(message: CharSequence): void;

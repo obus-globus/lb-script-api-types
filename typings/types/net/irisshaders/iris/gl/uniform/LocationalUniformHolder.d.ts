@@ -16,7 +16,7 @@ import type { Vector3d } from '../../../../../org/joml/Vector3d.d.ts'
 import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
-export interface LocationalUniformHolder extends Object, UniformHolder{
+export interface LocationalUniformHolder extends Object, UniformHolder {
     addUniform(arg0: UniformUpdateFrequency, arg1: Uniform): LocationalUniformHolder;
     location(arg0: string, arg1: UniformType): OptionalInt;
     uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): LocationalUniformHolder;

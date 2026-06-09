@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Vector2f } from '../../../../../org/joml/Vector2f.d.ts'
 import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
-export interface DirectiveHolder extends Object{
+export interface DirectiveHolder extends Object {
     acceptCommentFloatDirective(arg0: string, arg1: (param0: number) => void): void;
     acceptCommentIntDirective(arg0: string, arg1: (param0: number) => void): void;
     acceptCommentStringDirective(arg0: string, arg1: (param0: string) => void): void;

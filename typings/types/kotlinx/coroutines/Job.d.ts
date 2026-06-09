@@ -9,7 +9,7 @@ import type { ChildHandle } from '../../kotlinx/coroutines/ChildHandle.d.ts'
 import type { ChildJob } from '../../kotlinx/coroutines/ChildJob.d.ts'
 import type { DisposableHandle } from '../../kotlinx/coroutines/DisposableHandle.d.ts'
 import type { SelectClause0 } from '../../kotlinx/coroutines/selects/SelectClause0.d.ts'
-export interface Job extends Object, CoroutineContext$Element{
+export interface Job extends Object, CoroutineContext$Element {
     readonly children: Sequence<Job>;
     /*not mapped: */ isActive(): boolean;
     /*not mapped: */ isCancelled(): boolean;

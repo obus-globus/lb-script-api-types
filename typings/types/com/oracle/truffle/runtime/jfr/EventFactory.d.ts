@@ -7,7 +7,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface EventFactory extends Object{
+export interface EventFactory extends Object {
     addInitializationListener(listener: () => void): void;
     addPeriodicEvent(event: Class<Event>, producer: () => void): void;
     createCompilationEvent(): CompilationEvent;

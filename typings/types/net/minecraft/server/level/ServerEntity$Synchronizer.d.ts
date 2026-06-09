@@ -3,7 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ClientGamePacketListener } from '../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
-export interface ServerEntity$Synchronizer extends Object{
+export interface ServerEntity$Synchronizer extends Object {
     sendToTrackingPlayers(packet: Packet<ClientGamePacketListener>): void;
     sendToTrackingPlayersAndSelf(packet: Packet<ClientGamePacketListener>): void;
     sendToTrackingPlayersFiltered(packet: Packet<ClientGamePacketListener>, predicate: (param0: ServerPlayer) => kotlin.Boolean): void;

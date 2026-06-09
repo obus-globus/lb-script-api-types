@@ -9,7 +9,7 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CustomPass } from '../../../../net/irisshaders/iris/mixinterface/CustomPass.d.ts'
 import type { RenderPassInterface } from '../../../../net/irisshaders/iris/mixinterface/RenderPassInterface.d.ts'
-export interface RenderPassBackend extends AutoCloseable, Object, RenderPassInterface{
+export interface RenderPassBackend extends AutoCloseable, Object, RenderPassInterface {
     bindTexture(name: string, textureView: GpuTextureView, sampler: GpuSampler): void;
     close(): void;
     disableScissor(): void;

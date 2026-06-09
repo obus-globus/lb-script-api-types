@@ -6,7 +6,7 @@ import type { OptionBuilder } from '../../../../../../../net/caffeinemc/mods/sod
 import type { Screen } from '../../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface ExternalButtonOptionBuilder extends Object, OptionBuilder{
+export interface ExternalButtonOptionBuilder extends Object, OptionBuilder {
     setEnabled(arg0: boolean): ExternalButtonOptionBuilder;
     setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): ExternalButtonOptionBuilder;
     setName(arg0: Component): ExternalButtonOptionBuilder;

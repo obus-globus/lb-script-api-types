@@ -9,7 +9,7 @@ import type { Marker } from '../../../../../org/apache/logging/log4j/Marker.d.ts
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { MessageSupplier } from '../../../../../org/apache/logging/log4j/util/MessageSupplier.d.ts'
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
-export interface ExtendedLogger extends Object, Logger{
+export interface ExtendedLogger extends Object, Logger {
     always(): LogBuilder;
     atDebug(): LogBuilder;
     atError(): LogBuilder;

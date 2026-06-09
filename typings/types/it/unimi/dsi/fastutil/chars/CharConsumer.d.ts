@@ -1,7 +1,7 @@
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface CharConsumer extends Consumer<string>, IntConsumer, Object{
+export interface CharConsumer extends Consumer<string>, IntConsumer, Object {
     accept(arg0: string): void;
     accept(arg0: number): void;
     andThen(arg0: (param0: string) => void): (param0: string) => void;

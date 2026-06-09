@@ -12,7 +12,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface PrimitiveCodec<A extends Object | number | string | boolean> extends Codec<A>, Object{
+export interface PrimitiveCodec<A extends Object | number | string | boolean> extends Codec<A>, Object {
     comapFlatMap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;
     decode(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<A, T>>;

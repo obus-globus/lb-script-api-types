@@ -6,7 +6,7 @@ import type { TypeFamily } from '../../../../../com/mojang/datafixers/types/fami
 import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface TypeTemplate extends Object{
+export interface TypeTemplate extends Object {
     apply(arg0: TypeFamily): TypeFamily;
     applyO(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
     findFieldOrType(arg0: number, arg1: string, arg2: Type<A>, arg3: Type<B>): Either<TypeTemplate, Type$FieldNotFoundException>;

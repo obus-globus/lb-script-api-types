@@ -4,7 +4,7 @@ import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubl
 import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface CharComparator extends Comparator<string>, Object{
+export interface CharComparator extends Comparator<string>, Object {
     compare(arg0: string, arg1: string): number;
     reversed(): (param0: string, param1: string) => kotlin.Int;
     reversed(): (param0: T) => kotlin.Boolean;

@@ -1,7 +1,7 @@
 import type { PriorityQueue } from '../../../../../it/unimi/dsi/fastutil/PriorityQueue.d.ts'
 import type { CharComparator } from '../../../../../it/unimi/dsi/fastutil/chars/CharComparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface CharPriorityQueue extends PriorityQueue<string>, Object{
+export interface CharPriorityQueue extends PriorityQueue<string>, Object {
     changed(): void;
     comparator(): (param0: string, param1: string) => kotlin.Int;
     dequeue(): string;

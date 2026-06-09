@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FunLongAnd5 } from '../../../../../../../net/caffeinemc/mods/lithium/common/util/functions/FunLongAnd5.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
-export interface RegionBasedStorageSectionExtended<R extends Object | number | string | boolean> extends Object{
+export interface RegionBasedStorageSectionExtended<R extends Object | number | string | boolean> extends Object {
     lithium$getChunkYMaxInclusive(): number;
     lithium$getChunkYMin(): number;
     lithium$getElementAt(arg0: number): Optional<R>;

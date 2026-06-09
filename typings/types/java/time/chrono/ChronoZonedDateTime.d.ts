@@ -15,7 +15,7 @@ import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts
 import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
-export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal, Object, Comparable<ChronoZonedDateTime<Object>>{
+export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal, Object, Comparable<ChronoZonedDateTime<Object>> {
     compareTo(arg0: ChronoZonedDateTime<Object>): number;
     format(arg0: DateTimeFormatter): string;
     get(arg0: TemporalField): number;

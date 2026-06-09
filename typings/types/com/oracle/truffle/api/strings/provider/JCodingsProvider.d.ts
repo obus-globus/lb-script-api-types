@@ -5,7 +5,7 @@ import type { JCodingsProvider$Encoding } from '../../../../../../com/oracle/tru
 import type { JCodingsProvider$TranscodeResult } from '../../../../../../com/oracle/truffle/api/strings/provider/JCodingsProvider$TranscodeResult.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface JCodingsProvider extends Object{
+export interface JCodingsProvider extends Object {
     get(encodingName: string): JCodingsProvider$Encoding;
     transcode(a: AbstractTruffleString, codePointLengthA: number, byteArrayOffset: number, byteLength: number, targetEncoding: TruffleString$Encoding, jCodingSrc: JCodingsProvider$Encoding, jCodingDst: JCodingsProvider$Encoding, builtinReplacement: number[], errorHandler: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString, asBytesMaterializeNative: (param0: AbstractTruffleString) => number[], getBytesEncoding: (param0: AbstractTruffleString) => JCodingsProvider$Encoding): JCodingsProvider$TranscodeResult;
 }

@@ -12,7 +12,7 @@ import type { ChannelFuture } from '../../../../../../io/netty/channel/ChannelFu
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface PacketWrapper extends Object{
+export interface PacketWrapper extends Object {
     apply(arg0: Direction, arg1: State, arg2: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>[]): void;
     cancel(): void;
     clearInputBuffer(): void;

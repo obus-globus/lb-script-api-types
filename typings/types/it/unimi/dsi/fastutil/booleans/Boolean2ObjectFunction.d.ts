@@ -35,7 +35,7 @@ import type { Short2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Boolean2ObjectFunction<V extends Object | number | string | boolean> extends Function<boolean, V>, Object{
+export interface Boolean2ObjectFunction<V extends Object | number | string | boolean> extends Function<boolean, V>, Object {
     andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: boolean) => kotlin.Byte;
     andThenChar(arg0: (param0: V) => kotlin.Char): (param0: boolean) => kotlin.Char;
     andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: boolean) => kotlin.Double;

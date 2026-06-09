@@ -1,7 +1,7 @@
 import type { IntConsumer } from '../../../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { IslamicCalendar$CalculationType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/IslamicCalendar$CalculationType.d.ts'
-export interface IslamicCalendar$Algorithm extends Object{
+export interface IslamicCalendar$Algorithm extends Object {
     compute(julianDays: number, current: number, yearConsumer: (param0: number) => void, monthConsumer: (param0: number) => void, dayOfMonthConsumer: (param0: number) => void, dayOfYearConsumer: (param0: number) => void): void;
     epoch(): number;
     getType(): IslamicCalendar$CalculationType;

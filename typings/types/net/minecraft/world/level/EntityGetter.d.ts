@@ -7,7 +7,7 @@ import type { Player } from '../../../../net/minecraft/world/entity/player/Playe
 import type { EntityTypeTest } from '../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export interface EntityGetter extends Object{
+export interface EntityGetter extends Object {
     getEntities(except: Entity, bb: AABB): Entity[];
     getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
     getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];

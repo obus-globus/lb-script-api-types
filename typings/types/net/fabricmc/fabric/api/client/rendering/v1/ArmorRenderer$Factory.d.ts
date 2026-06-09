@@ -7,6 +7,6 @@ import type { EntityRendererProvider$Context } from '../../../../../../../net/mi
 import type { HumanoidRenderState } from '../../../../../../../net/minecraft/client/renderer/entity/state/HumanoidRenderState.d.ts'
 import type { EquipmentSlot } from '../../../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export interface ArmorRenderer$Factory extends Object{
+export interface ArmorRenderer$Factory extends Object {
     createArmorRenderer(arg0: EntityRendererProvider$Context): (param0: PoseStack, param1: SubmitNodeCollector, param2: ItemStack, param3: HumanoidRenderState, param4: EquipmentSlot, param5: number, param6: HumanoidModel<HumanoidRenderState>) => void;
 }

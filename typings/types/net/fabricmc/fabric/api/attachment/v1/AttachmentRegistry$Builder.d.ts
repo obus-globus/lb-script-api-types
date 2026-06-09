@@ -6,7 +6,7 @@ import type { AttachmentType } from '../../../../../../net/fabricmc/fabric/api/a
 import type { RegistryFriendlyByteBuf } from '../../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface AttachmentRegistry$Builder<A extends Object | number | string | boolean> extends Object{
+export interface AttachmentRegistry$Builder<A extends Object | number | string | boolean> extends Object {
     buildAndRegister(arg0: Identifier): AttachmentType<A>;
     copyOnDeath(): AttachmentRegistry$Builder<A>;
     initializer(arg0: () => A): AttachmentRegistry$Builder<A>;

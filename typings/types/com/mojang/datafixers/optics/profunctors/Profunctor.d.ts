@@ -6,7 +6,7 @@ import type { Profunctor$Mu } from '../../../../../com/mojang/datafixers/optics/
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Profunctor<P extends K2, Mu extends Profunctor$Mu> extends Kind2<P, Mu>, Object{
+export interface Profunctor<P extends K2, Mu extends Profunctor$Mu> extends Kind2<P, Mu>, Object {
     dimap(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
     dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<P, A, B>, App2<P, C, D>>;
     dimap(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;

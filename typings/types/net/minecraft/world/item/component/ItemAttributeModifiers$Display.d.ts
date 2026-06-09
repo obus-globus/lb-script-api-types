@@ -6,7 +6,7 @@ import type { Attribute } from '../../../../../net/minecraft/world/entity/ai/att
 import type { AttributeModifier } from '../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { ItemAttributeModifiers$Display$Type } from '../../../../../net/minecraft/world/item/component/ItemAttributeModifiers$Display$Type.d.ts'
-export interface ItemAttributeModifiers$Display extends Object{
+export interface ItemAttributeModifiers$Display extends Object {
     apply(consumer: (param0: Component) => void, player: Player, attribute: Holder<Attribute>, modifier: AttributeModifier): void;
     type(): ItemAttributeModifiers$Display$Type;
 }

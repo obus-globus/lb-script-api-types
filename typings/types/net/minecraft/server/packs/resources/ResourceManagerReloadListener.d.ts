@@ -5,7 +5,7 @@ import type { PreparableReloadListener } from '../../../../../net/minecraft/serv
 import type { PreparableReloadListener$PreparationBarrier } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 import type { ResourceManager } from '../../../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
-export interface ResourceManagerReloadListener extends Object, PreparableReloadListener{
+export interface ResourceManagerReloadListener extends Object, PreparableReloadListener {
     getName(): string;
     onResourceManagerReload(resourceManager: ResourceManager): void;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

@@ -5,7 +5,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { ItemLike } from '../../../../../../../net/minecraft/world/level/ItemLike.d.ts'
-export interface ItemApiLookup<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object{
+export interface ItemApiLookup<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object {
     apiClass(): Class<A>;
     contextClass(): Class<C>;
     find(arg0: ItemStack, arg1: C): A;

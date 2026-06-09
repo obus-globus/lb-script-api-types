@@ -15,7 +15,7 @@ import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shap
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/LinearGeometry3.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/LinearGeometry3.kt:42}
  */
-export interface LinearGeometry3 extends Object{
+export interface LinearGeometry3 extends Object {
     /**
      * Parameter-zero point of this geometry.
      *

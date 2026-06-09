@@ -15,7 +15,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class NBTCompound extends NBTTag<{ [key: string]: NBTTag<Object> }> {
+export class NBTCompound extends NBTTag< { [key: string]: NBTTag<Object> }> {
     static NULL: NBTCompound;
     static create(paramarg0: ByteBuffer): NBTTag<Object>;
     constructor()

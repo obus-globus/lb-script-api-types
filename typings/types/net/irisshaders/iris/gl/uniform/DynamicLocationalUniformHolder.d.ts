@@ -18,7 +18,7 @@ import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../../org/joml/Vector4i.d.ts'
-export interface DynamicLocationalUniformHolder extends Object, DynamicUniformHolder, LocationalUniformHolder{
+export interface DynamicLocationalUniformHolder extends Object, DynamicUniformHolder, LocationalUniformHolder {
     addDynamicUniform(arg0: Uniform, arg1: ValueUpdateNotifier): DynamicLocationalUniformHolder;
     uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): LocationalUniformHolder;
     uniform1f(arg0: string, arg1: () => kotlin.Double, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;

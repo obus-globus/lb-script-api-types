@@ -19,7 +19,7 @@ import type { IntStream } from '../../../java/util/stream/IntStream.d.ts'
 import type { LongStream$LongMapMultiConsumer } from '../../../java/util/stream/LongStream$LongMapMultiConsumer.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface LongStream extends BaseStream<number, LongStream>, Object{
+export interface LongStream extends BaseStream<number, LongStream>, Object {
     allMatch(arg0: (param0: number) => kotlin.Boolean): boolean;
     anyMatch(arg0: (param0: number) => kotlin.Boolean): boolean;
     asDoubleStream(): DoubleStream;

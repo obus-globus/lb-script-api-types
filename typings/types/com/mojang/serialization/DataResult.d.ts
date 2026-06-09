@@ -10,7 +10,7 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface DataResult<R extends Object | number | string | boolean> extends App<DataResult$Mu, R>, Object{
+export interface DataResult<R extends Object | number | string | boolean> extends App<DataResult$Mu, R>, Object {
     addLifecycle(arg0: Lifecycle): DataResult<R>;
     ap(arg0: DataResult<(param0: R) => R2>): DataResult<R2>;
     apply2(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;

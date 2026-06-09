@@ -11,7 +11,7 @@ import type { Screen } from '../../../../../../../../net/minecraft/client/gui/sc
 import type { FailableConsumer } from '../../../../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableFunction } from '../../../../../../../../org/apache/commons/lang3/function/FailableFunction.d.ts'
 import type { Vector2i } from '../../../../../../../../org/joml/Vector2i.d.ts'
-export interface ClientGameTestContext extends Object{
+export interface ClientGameTestContext extends Object {
     assertScreenshotContains(arg0: string): Vector2i;
     assertScreenshotContains(arg0: TestScreenshotComparisonOptions): Vector2i;
     assertScreenshotEquals(arg0: string): void;

@@ -4,7 +4,7 @@ import type { Thread$UncaughtExceptionHandler } from '../../java/lang/Thread$Unc
 import type { ThreadGroup } from '../../java/lang/ThreadGroup.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
-export interface Thread$Builder$OfPlatform extends Thread$Builder, Object{
+export interface Thread$Builder$OfPlatform extends Thread$Builder, Object {
     daemon(): Thread$Builder$OfPlatform;
     daemon(arg0: boolean): Thread$Builder$OfPlatform;
     group(arg0: ThreadGroup): Thread$Builder$OfPlatform;

@@ -22,7 +22,7 @@ import type { ItemModel } from '../../../../../../../../net/minecraft/client/ren
 import type { ItemModel$Unbaked } from '../../../../../../../../net/minecraft/client/renderer/item/ItemModel$Unbaked.d.ts'
 import type { UnbakedModel } from '../../../../../../../../net/minecraft/client/resources/model/UnbakedModel.d.ts'
 import type { Block } from '../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
-export interface ModelLoadingPlugin$Context extends Object{
+export interface ModelLoadingPlugin$Context extends Object {
     addModel(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
     modifyBlockModelAfterBake(): Event<(param0: BlockStateModel, param1: ModelModifier$AfterBakeBlock$Context) => net.minecraft.client.renderer.block.dispatch.BlockStateModel>;
     modifyBlockModelBeforeBake(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$BeforeBakeBlock$Context) => net.minecraft.client.renderer.block.dispatch.BlockStateModel.UnbakedRoot>;

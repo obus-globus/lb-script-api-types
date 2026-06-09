@@ -5,7 +5,7 @@ import type { AttachmentTarget } from '../../../../../../net/fabricmc/fabric/api
 import type { AttachmentTarget$OnAttachedSet } from '../../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget$OnAttachedSet.d.ts'
 import type { AttachmentType } from '../../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { Event } from '../../../../../../net/fabricmc/fabric/api/event/Event.d.ts'
-export interface GlobalAttachments extends Object, AttachmentTarget{
+export interface GlobalAttachments extends Object, AttachmentTarget {
     getAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     getAttachedOrCreate<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     getAttachedOrCreate<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: () => A): A;

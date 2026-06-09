@@ -6,7 +6,7 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/api/strings/TruffleString$Encoding.d.ts'
 import type { TruffleString$ErrorHandling } from '../../../../../com/oracle/truffle/api/strings/TruffleString$ErrorHandling.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface JCodings extends Object{
+export interface JCodings extends Object {
     calcStringAttributes(location: Node, a: AbstractTruffleString, arrayA: number[], offsetA: number, lengthA: number, encodingA: TruffleString$Encoding, fromIndexA: number): number;
     codePointIndexToRaw(location: Node, a: AbstractTruffleString, arrayA: number[], extraOffsetRaw: number, index: number, isLength: boolean, encoding: TruffleString$Encoding): number;
     decode(a: AbstractTruffleString, arrayA: number[], rawIndex: number, encoding: TruffleString$Encoding, errorHandling: TruffleString$ErrorHandling): number;

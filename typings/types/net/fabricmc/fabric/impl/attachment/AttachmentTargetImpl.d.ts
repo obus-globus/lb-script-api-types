@@ -12,7 +12,7 @@ import type { RegistryAccess } from '../../../../../net/minecraft/core/RegistryA
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { ValueInput } from '../../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
-export interface AttachmentTargetImpl extends Object, AttachmentTarget{
+export interface AttachmentTargetImpl extends Object, AttachmentTarget {
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;

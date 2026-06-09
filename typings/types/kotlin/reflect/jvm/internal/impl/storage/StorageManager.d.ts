@@ -5,7 +5,7 @@ import type { MemoizedFunctionToNotNull } from '../../../../../../kotlin/reflect
 import type { MemoizedFunctionToNullable } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/MemoizedFunctionToNullable.d.ts'
 import type { NotNullLazyValue } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/NotNullLazyValue.d.ts'
 import type { NullableLazyValue } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/NullableLazyValue.d.ts'
-export interface StorageManager extends Object{
+export interface StorageManager extends Object {
     compute<T extends Object | number | string | boolean>(arg0: () => T): T;
     createCacheWithNotNullValues(): CacheWithNotNullValues<K, V>;
     createCacheWithNullableValues(): CacheWithNullableValues<K, V>;

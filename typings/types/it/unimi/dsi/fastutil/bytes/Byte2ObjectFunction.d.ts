@@ -33,7 +33,7 @@ import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Byte2ObjectFunction<V extends Object | number | string | boolean> extends Function<number, V>, IntFunction<V>, Object{
+export interface Byte2ObjectFunction<V extends Object | number | string | boolean> extends Function<number, V>, IntFunction<V>, Object {
     andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: number) => kotlin.Byte;
     andThenChar(arg0: (param0: V) => kotlin.Char): (param0: number) => kotlin.Char;
     andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: number) => kotlin.Double;

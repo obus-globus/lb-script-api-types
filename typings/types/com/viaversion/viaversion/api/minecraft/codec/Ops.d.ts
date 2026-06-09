@@ -5,7 +5,7 @@ import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
-export interface Ops extends Object{
+export interface Ops extends Object {
     context(): CodecContext;
     write<V extends Object | number | string | boolean>(arg0: Type<V>, arg1: V): void;
     writeBoolean(arg0: boolean): void;

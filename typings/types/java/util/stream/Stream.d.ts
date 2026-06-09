@@ -21,7 +21,7 @@ import type { Gatherer } from '../../../java/util/stream/Gatherer.d.ts'
 import type { IntStream } from '../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Stream<T extends Object | number | string | boolean> extends BaseStream<T, Stream<T>>, Object{
+export interface Stream<T extends Object | number | string | boolean> extends BaseStream<T, Stream<T>>, Object {
     allMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
     anyMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
     collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;

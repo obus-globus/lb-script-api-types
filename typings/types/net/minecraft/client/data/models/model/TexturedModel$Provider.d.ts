@@ -6,7 +6,7 @@ import type { TextureMapping } from '../../../../../../net/minecraft/client/data
 import type { TexturedModel } from '../../../../../../net/minecraft/client/data/models/model/TexturedModel.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
-export interface TexturedModel$Provider extends Object{
+export interface TexturedModel$Provider extends Object {
     create(block: Block, modelOutput: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     createWithSuffix(block: Block, suffix: string, modelOutput: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     get(block: Block): TexturedModel;

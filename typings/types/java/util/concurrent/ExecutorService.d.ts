@@ -5,7 +5,7 @@ import type { Executor } from '../../../java/util/concurrent/Executor.d.ts'
 import type { Future } from '../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface ExecutorService extends AutoCloseable, Executor, Object{
+export interface ExecutorService extends AutoCloseable, Executor, Object {
     awaitTermination(arg0: number, arg1: TimeUnit): boolean;
     close(): void;
     invokeAll(arg0: E[]): Future<T>[];

@@ -11,7 +11,7 @@ import type { OSService } from '../../../oshi/software/os/OSService.d.ts'
 import type { OSSession } from '../../../oshi/software/os/OSSession.d.ts'
 import type { OSThread } from '../../../oshi/software/os/OSThread.d.ts'
 import type { OperatingSystem$OSVersionInfo } from '../../../oshi/software/os/OperatingSystem$OSVersionInfo.d.ts'
-export interface OperatingSystem extends Object{
+export interface OperatingSystem extends Object {
     getBitness(): number;
     getChildProcesses(arg0: number, arg1: (param0: OSProcess) => kotlin.Boolean, arg2: (param0: OSProcess) => kotlin.Boolean, arg3: number): OSProcess[];
     getCurrentProcess(): OSProcess;

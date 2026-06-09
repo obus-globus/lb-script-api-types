@@ -5,7 +5,7 @@ import type { ShaderType } from '../../../../com/mojang/blaze3d/shaders/ShaderTy
 import type { GpuDevice } from '../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export interface GpuBackend extends Object{
+export interface GpuBackend extends Object {
     createDevice(window: number, defaultShaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String, debugOptions: GpuDebugOptions): GpuDevice;
     getName(): string;
     handleWindowCreationErrors(error: GLFWErrorCapture$Error): void;

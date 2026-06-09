@@ -15,7 +15,7 @@ import type { Vector2f } from '../../../../../../../../org/joml/Vector2f.d.ts'
 import type { Vector2fc } from '../../../../../../../../org/joml/Vector2fc.d.ts'
 import type { Vector3f } from '../../../../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../../../../../../org/joml/Vector3fc.d.ts'
-export interface QuadEmitter extends Object, MutableQuadView{
+export interface QuadEmitter extends Object, MutableQuadView {
     ambientOcclusion(arg0: TriState): QuadEmitter;
     animated(arg0: boolean): QuadEmitter;
     atlas(arg0: QuadAtlas): QuadEmitter;

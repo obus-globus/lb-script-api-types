@@ -7,6 +7,6 @@ import type { ChunkSectionLayer } from '../../../../../../../../net/minecraft/cl
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { FluidState } from '../../../../../../../../net/minecraft/world/level/material/FluidState.d.ts'
-export interface FluidRendering$DefaultRenderer extends Object{
+export interface FluidRendering$DefaultRenderer extends Object {
     render(arg0: FluidRenderer, arg1: FluidRenderHandler, arg2: BlockAndTintGetter, arg3: BlockPos, arg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, arg5: BlockState, arg6: FluidState): void;
 }

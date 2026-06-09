@@ -5,7 +5,7 @@ import type { CardinalLighting } from '../../../../../net/minecraft/world/level/
 import type { ColorResolver } from '../../../../../net/minecraft/world/level/ColorResolver.d.ts'
 import type { LightLayer } from '../../../../../net/minecraft/world/level/LightLayer.d.ts'
 import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
-export interface BlockAndTintGetter extends Object, BlockAndLightGetter{
+export interface BlockAndTintGetter extends Object, BlockAndLightGetter {
     canSeeSky(pos: BlockPos): boolean;
     cardinalLighting(): CardinalLighting;
     getBlockTint(pos: BlockPos, color: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;

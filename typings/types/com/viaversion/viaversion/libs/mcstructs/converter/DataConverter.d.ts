@@ -4,7 +4,7 @@ import type { Result } from '../../../../../../com/viaversion/viaversion/libs/mc
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../java/lang/Number.d.ts'
-export interface DataConverter<T extends Object | number | string | boolean> extends ConsumerTracking, Object{
+export interface DataConverter<T extends Object | number | string | boolean> extends ConsumerTracking, Object {
     asBoolean(arg0: T): Result<boolean>;
     asByteArray(arg0: T): Result<number[]>;
     asIntArray(arg0: T): Result<number[]>;

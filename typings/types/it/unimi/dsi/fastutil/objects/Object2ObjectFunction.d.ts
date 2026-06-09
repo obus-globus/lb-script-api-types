@@ -16,7 +16,7 @@ import type { Object2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Reference2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ObjectFunction.d.ts'
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Object2ObjectFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Function<K, V>, Object{
+export interface Object2ObjectFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Function<K, V>, Object {
     andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: K) => kotlin.Byte;
     andThenChar(arg0: (param0: V) => kotlin.Char): (param0: K) => kotlin.Char;
     andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: K) => kotlin.Double;

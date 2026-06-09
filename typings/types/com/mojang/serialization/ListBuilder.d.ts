@@ -3,7 +3,7 @@ import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.
 import type { Encoder } from '../../../com/mojang/serialization/Encoder.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface ListBuilder<T extends Object | number | string | boolean> extends Object{
+export interface ListBuilder<T extends Object | number | string | boolean> extends Object {
     add<E extends Object | number | string | boolean>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
     add(arg0: T): ListBuilder<T>;
     add(arg0: DataResult<T>): ListBuilder<T>;

@@ -36,7 +36,7 @@ import type { Short2CharFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { IntPredicate } from '../../../../../java/util/function/IntPredicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Char2BooleanFunction extends Function<string, boolean>, IntPredicate, Object{
+export interface Char2BooleanFunction extends Function<string, boolean>, IntPredicate, Object {
     and(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
     andThen(arg0: (param0: boolean) => T): (param0: string) => T;
     andThenByte(arg0: (param0: boolean) => kotlin.Byte): (param0: string) => kotlin.Byte;

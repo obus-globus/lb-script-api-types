@@ -9,7 +9,7 @@ import type { QuadCollection } from '../../../../../net/minecraft/client/resourc
 import type { UnbakedGeometry } from '../../../../../net/minecraft/client/resources/model/geometry/UnbakedGeometry.d.ts'
 import type { Material$Baked } from '../../../../../net/minecraft/client/resources/model/sprite/Material$Baked.d.ts'
 import type { TextureSlots } from '../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
-export interface ResolvedModel extends Object, ModelDebugName{
+export interface ResolvedModel extends Object, ModelDebugName {
     bakeTopGeometry(textureSlots: TextureSlots, baker: ModelBaker, state: ModelState): QuadCollection;
     getTopAmbientOcclusion(): boolean;
     getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;

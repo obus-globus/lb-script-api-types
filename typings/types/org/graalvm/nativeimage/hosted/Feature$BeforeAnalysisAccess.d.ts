@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Feature$DuringAnalysisAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$DuringAnalysisAccess.d.ts'
 import type { Feature$FeatureAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$FeatureAccess.d.ts'
 import type { FieldValueTransformer } from '../../../../org/graalvm/nativeimage/hosted/FieldValueTransformer.d.ts'
-export interface Feature$BeforeAnalysisAccess extends Object, Feature$FeatureAccess{
+export interface Feature$BeforeAnalysisAccess extends Object, Feature$FeatureAccess {
     registerAsAccessed(field: Field): void;
     registerAsInHeap(type: Class<Object>): void;
     registerAsUnsafeAccessed(field: Field): void;

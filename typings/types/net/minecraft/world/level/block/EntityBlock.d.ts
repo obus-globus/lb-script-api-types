@@ -7,7 +7,7 @@ import type { BlockEntityTicker } from '../../../../../net/minecraft/world/level
 import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { GameEventListener } from '../../../../../net/minecraft/world/level/gameevent/GameEventListener.d.ts'
-export interface EntityBlock extends Object{
+export interface EntityBlock extends Object {
     getListener<T extends BlockEntity>(level: ServerLevel, blockEntity: T): GameEventListener;
     getTicker(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: T, param1: Level, param2: BlockPos, param3: BlockState) => void;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;

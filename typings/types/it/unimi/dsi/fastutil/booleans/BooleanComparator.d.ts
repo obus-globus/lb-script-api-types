@@ -4,7 +4,7 @@ import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubl
 import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface BooleanComparator extends Comparator<boolean>, Object{
+export interface BooleanComparator extends Comparator<boolean>, Object {
     compare(arg0: boolean, arg1: boolean): number;
     reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
     reversed(): (param0: T) => kotlin.Boolean;

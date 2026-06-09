@@ -7,7 +7,7 @@ import type { Configuration } from '../../../../../../org/apache/logging/log4j/c
 import type { LoggerConfig } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig.d.ts'
 import type { Message } from '../../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { Supplier } from '../../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
-export interface ReliabilityStrategy extends Object{
+export interface ReliabilityStrategy extends Object {
     afterLogEvent(): void;
     beforeStopAppenders(): void;
     beforeStopConfiguration(configuration: Configuration): void;

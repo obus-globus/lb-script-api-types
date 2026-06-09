@@ -7,7 +7,7 @@ import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts
 import type { RecordBuilder } from '../../../com/mojang/serialization/RecordBuilder.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface MapEncoder<A extends Object | number | string | boolean> extends Keyable, Object{
+export interface MapEncoder<A extends Object | number | string | boolean> extends Keyable, Object {
     comap(arg0: (param0: B) => A): MapEncoder<B>;
     compressedBuilder(arg0: DynamicOps<T>): RecordBuilder<T>;
     compressor(arg0: DynamicOps<T>): KeyCompressor<T>;

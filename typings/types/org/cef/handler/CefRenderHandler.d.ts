@@ -9,7 +9,7 @@ import type { CefPaintEvent } from '../../../org/cef/browser/CefPaintEvent.d.ts'
 import type { CefDragData } from '../../../org/cef/callback/CefDragData.d.ts'
 import type { CefAcceleratedPaintInfo } from '../../../org/cef/handler/CefAcceleratedPaintInfo.d.ts'
 import type { CefScreenInfo } from '../../../org/cef/handler/CefScreenInfo.d.ts'
-export interface CefRenderHandler extends Object{
+export interface CefRenderHandler extends Object {
     addOnAcceleratedPaintListener(arg0: (param0: CefAcceleratedPaintEvent) => void): void;
     addOnPaintListener(arg0: (param0: CefPaintEvent) => void): void;
     getScreenInfo(arg0: CefBrowser, arg1: CefScreenInfo): boolean;

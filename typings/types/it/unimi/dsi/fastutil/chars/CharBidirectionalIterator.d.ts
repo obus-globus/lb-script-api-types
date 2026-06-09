@@ -4,7 +4,7 @@ import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface CharBidirectionalIterator extends CharIterator, ObjectBidirectionalIterator<string>, Object{
+export interface CharBidirectionalIterator extends CharIterator, ObjectBidirectionalIterator<string>, Object {
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;

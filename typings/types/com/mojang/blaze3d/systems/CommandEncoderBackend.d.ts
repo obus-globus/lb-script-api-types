@@ -14,7 +14,7 @@ import type { OptionalDouble } from '../../../../java/util/OptionalDouble.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface CommandEncoderBackend extends Object{
+export interface CommandEncoderBackend extends Object {
     clearColorAndDepthTextures(colorTexture: GpuTexture, clearColor: number, depthTexture: GpuTexture, clearDepth: number): void;
     clearColorAndDepthTextures(colorTexture: GpuTexture, clearColor: number, depthTexture: GpuTexture, clearDepth: number, regionX: number, regionY: number, regionWidth: number, regionHeight: number): void;
     clearColorTexture(colorTexture: GpuTexture, clearColor: number): void;

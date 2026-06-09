@@ -7,7 +7,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export interface CompletionStage<T extends Object | number | string | boolean> extends Object{
+export interface CompletionStage<T extends Object | number | string | boolean> extends Object {
     acceptEither(arg0: CompletionStage<T>, arg1: (param0: T) => void): CompletionStage<void>;
     acceptEitherAsync(arg0: CompletionStage<T>, arg1: (param0: T) => void): CompletionStage<void>;
     acceptEitherAsync(arg0: CompletionStage<T>, arg1: (param0: T) => void, arg2: Executor): CompletionStage<void>;

@@ -7,7 +7,7 @@ import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { ScheduledExecutorService } from '../../../../../java/util/concurrent/ScheduledExecutorService.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ListeningScheduledExecutorService extends ListeningExecutorService, ScheduledExecutorService, Object{
+export interface ListeningScheduledExecutorService extends ListeningExecutorService, ScheduledExecutorService, Object {
     awaitTermination(timeout: Duration): boolean;
     invokeAll(tasks: E[], timeout: Duration): Future<T>[];
     invokeAny<T extends Object | number | string | boolean>(tasks: E[], timeout: Duration): T;

@@ -79,6 +79,11 @@ export class Value<T extends Object | number | string | boolean> extends Object 
     getValue(): Object;
     getValue(u: Object | null, property: KProperty<Object>): T;
     immutable(): Value<T>;
+    /**
+     * If true, value will not be included in generated RestAPI config
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:105}
+     */
     notAnOption(): Value<T>;
     onChange(listener: (param0: T) => unknown): Value<T>;
     onChanged(listener: (param0: T) => void): Value<T>;

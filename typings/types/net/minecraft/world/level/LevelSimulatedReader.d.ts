@@ -6,7 +6,7 @@ import type { BlockEntityType } from '../../../../net/minecraft/world/level/bloc
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Heightmap$Types } from '../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
 import type { FluidState } from '../../../../net/minecraft/world/level/material/FluidState.d.ts'
-export interface LevelSimulatedReader extends Object{
+export interface LevelSimulatedReader extends Object {
     getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getHeightmapPos(type: Heightmap$Types, pos: BlockPos): BlockPos;
     isFluidAtPosition(pos: BlockPos, predicate: (param0: FluidState) => kotlin.Boolean): boolean;

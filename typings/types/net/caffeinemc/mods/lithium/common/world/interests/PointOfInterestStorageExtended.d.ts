@@ -8,7 +8,7 @@ import type { PoiManager$Occupancy } from '../../../../../../../net/minecraft/wo
 import type { PoiRecord } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiRecord.d.ts'
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 import type { WorldBorder } from '../../../../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
-export interface PointOfInterestStorageExtended extends Object{
+export interface PointOfInterestStorageExtended extends Object {
     lithium$findNearestForPortalLogic(arg0: BlockPos, arg1: number, arg2: Holder<PoiType>, arg3: PoiManager$Occupancy, arg4: (param0: PoiRecord) => kotlin.Boolean, arg5: WorldBorder): Optional<PoiRecord>;
     lithium$getNClosestFirstWithType(arg0: (param0: Holder<PoiType>) => kotlin.Boolean, arg1: (param0: BlockPos) => kotlin.Boolean, arg2: BlockPos, arg3: number, arg4: PoiManager$Occupancy, arg5: number): E[];
     lithium$takeAt(arg0: (param0: Holder<PoiType>) => kotlin.Boolean, arg1: (param0: Holder<PoiType>, param1: BlockPos) => kotlin.Boolean, arg2: BlockPos): Optional<BlockPos>;

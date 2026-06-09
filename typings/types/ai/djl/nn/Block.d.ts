@@ -10,7 +10,7 @@ import type { DataInputStream } from '../../../java/io/DataInputStream.d.ts'
 import type { DataOutputStream } from '../../../java/io/DataOutputStream.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Block extends Object{
+export interface Block extends Object {
     cast(arg0: DataType): void;
     clear(): void;
     describeInput(): Pair<K, V>[];

@@ -1,6 +1,6 @@
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface IndirectPriorityQueue<K extends Object | number | string | boolean> extends Object{
+export interface IndirectPriorityQueue<K extends Object | number | string | boolean> extends Object {
     allChanged(): void;
     changed(): void;
     changed(arg0: number): void;

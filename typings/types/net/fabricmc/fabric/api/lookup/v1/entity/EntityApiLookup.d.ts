@@ -5,7 +5,7 @@ import type { EntityApiLookup$EntityApiProvider } from '../../../../../../../net
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../../../../net/minecraft/world/entity/EntityType.d.ts'
-export interface EntityApiLookup<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object{
+export interface EntityApiLookup<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object {
     apiClass(): Class<A>;
     contextClass(): Class<C>;
     find(arg0: Entity, arg1: C): A;

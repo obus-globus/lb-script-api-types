@@ -12,7 +12,7 @@ import type { TemporalQuery } from '../../../java/time/temporal/TemporalQuery.d.
 import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
-export interface ChronoLocalDate extends Temporal, TemporalAdjuster, Object, Comparable<ChronoLocalDate>{
+export interface ChronoLocalDate extends Temporal, TemporalAdjuster, Object, Comparable<ChronoLocalDate> {
     adjustInto(arg0: Temporal): Temporal;
     atTime(arg0: LocalTime): ChronoLocalDateTime<Object>;
     compareTo(arg0: ChronoLocalDate): number;

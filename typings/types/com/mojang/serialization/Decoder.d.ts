@@ -10,7 +10,7 @@ import type { MapDecoder } from '../../../com/mojang/serialization/MapDecoder.d.
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Decoder<A extends Object | number | string | boolean> extends Object{
+export interface Decoder<A extends Object | number | string | boolean> extends Object {
     boxed(): Decoder$Boxed<A>;
     decode(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<A, T>>;

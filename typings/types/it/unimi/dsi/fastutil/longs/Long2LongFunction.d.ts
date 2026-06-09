@@ -18,7 +18,7 @@ import type { Short2LongFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { LongUnaryOperator } from '../../../../../java/util/function/LongUnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Long2LongFunction extends Function<number, number>, LongUnaryOperator, Object{
+export interface Long2LongFunction extends Function<number, number>, LongUnaryOperator, Object {
     andThen(arg0: (param0: number) => T): (param0: number) => T;
     andThen(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
     andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;

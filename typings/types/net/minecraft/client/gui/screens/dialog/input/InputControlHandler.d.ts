@@ -4,6 +4,6 @@ import type { Screen } from '../../../../../../../net/minecraft/client/gui/scree
 import type { InputControlHandler$Output } from '../../../../../../../net/minecraft/client/gui/screens/dialog/input/InputControlHandler$Output.d.ts'
 import type { Action$ValueGetter } from '../../../../../../../net/minecraft/server/dialog/action/Action$ValueGetter.d.ts'
 import type { InputControl } from '../../../../../../../net/minecraft/server/dialog/input/InputControl.d.ts'
-export interface InputControlHandler<T extends InputControl> extends Object{
+export interface InputControlHandler<T extends InputControl> extends Object {
     addControl(input: T, screen: Screen, output: (param0: LayoutElement, param1: Action$ValueGetter) => void): void;
 }

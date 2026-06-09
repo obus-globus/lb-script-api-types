@@ -12,7 +12,7 @@ import type { AutoCloseable } from '../../java/lang/AutoCloseable.d.ts'
 import type { URL } from '../../java/net/URL.d.ts'
 import type { Function } from '../../java/util/function/Function.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export interface Model extends AutoCloseable, Object{
+export interface Model extends AutoCloseable, Object {
     cast(arg0: DataType): void;
     close(): void;
     describeInput(): Pair<K, V>[];

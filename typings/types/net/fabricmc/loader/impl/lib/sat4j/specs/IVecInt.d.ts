@@ -3,7 +3,7 @@ import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { IteratorInt } from '../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IteratorInt.d.ts'
-export interface IVecInt extends Serializable, Object, Cloneable{
+export interface IVecInt extends Serializable, Object, Cloneable {
     clear(): void;
     protected clone(): Object;
     contains(arg0: number): boolean;
