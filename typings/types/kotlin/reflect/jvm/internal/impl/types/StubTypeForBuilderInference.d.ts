@@ -7,7 +7,7 @@ import type { StubTypeMarker } from '../../../../../../kotlin/reflect/jvm/intern
 export class StubTypeForBuilderInference extends AbstractStubType implements StubTypeMarker {
     static Companion: AbstractStubType$Companion;
     constructor(arg0: NewTypeVariableConstructor, arg1: boolean, arg2: TypeConstructor)
-    readonly constructor: TypeConstructor;
+    // inaccessible (TS-reserved member name): readonly constructor: TypeConstructor;
     readonly memberScope: MemberScope;
     getConstructor(): TypeConstructor;
     getMemberScope(): MemberScope;

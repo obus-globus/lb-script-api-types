@@ -1,6 +1,6 @@
 // typecheck.mjs — the CI typecheck gate for @wunk/lb-script-api-types.
 //
-// Two independent checks, both run; the process fails if either fails.
+// Four independent checks, all run; the process fails if any fails.
 //
 //   Part A — surface smoke tests.
 //     Compiles every typings/__smoke/*.test.ts and asserts ZERO diagnostics
@@ -10,20 +10,30 @@
 //     positive type assertions hold AND every negative assertion still errors.
 //     This is the high-value check: it exercises the real script-author
 //     surface (typed on() overloads, ScriptSetting factories, DSL receivers,
-//     GraalVM intrinsics, registerScript) end to end.
+//     GraalVM intrinsics, registerScript, registerMode) end to end.
 //
-//   Part B — LiquidBounce-namespace syntactic ratchet.
-//     Parses every types/net/ccbluex/liquidbounce/**.d.ts and collects
-//     *syntactic* diagnostics (parse errors — fast, no type-checking). The
-//     current known set is frozen in __smoke/syntax-baseline.json; the gate
-//     fails only on NEW parse errors. This catches the class of generator bug
-//     where ts-generator emits invalid TS for a declaration (e.g. the
-//     inline-class-mangled suspend handlers) without blocking on the
-//     already-known ones. `package-info.d.ts` is excluded — it is a Java
-//     package descriptor ts-generator can't represent and no script imports.
+//   Part B — whole-package syntactic ratchet.
+//     Parses EVERY shipped .d.ts (types/ + ambient/ + augmentations/) and
+//     collects *syntactic* diagnostics (parse errors — no type checking).
+//     Frozen in __smoke/syntax-baseline.json (currently EMPTY — the
+//     sanitize-invalid-dts post-patch keeps the tree parse-clean); the gate
+//     fails on NEW parse errors anywhere in the package.
+//
+//   Part C — relative-import resolution. Zero tolerance.
+//     Every `from './…'` specifier in the package must resolve to a real
+//     file. A broken relative import is invisible under consumers'
+//     skipLibCheck and silently degrades the imported type to `any` (this is
+//     how the TitleEvent payloads and localStorage shipped untyped).
+//
+//   Part D — semantic surface check (skipLibCheck:false).
+//     Type-checks the script-author surface (ambient, augmentations, script
+//     bindings, event payloads) with full semantics. Errors IN those files
+//     are ratcheted as exact entries; errors in transitively-loaded generated
+//     files (the kotlin.*-leak long tail) are ratcheted as per-TS-code counts
+//     in __smoke/semantic-baseline.json — the debt can only shrink.
 //
 // Run:  npm run typecheck                  (from repo root)
-//       npm run typecheck:update-baseline  (re-freeze Part B baseline)
+//       npm run typecheck:update-baseline  (re-freeze the B + D baselines)
 
 import { createRequire } from "node:module";
 import { readdirSync, statSync, existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -132,69 +142,191 @@ function partA() {
 }
 
 // ---------------------------------------------------------------------------
-// Part B — LB-namespace syntactic ratchet
+// Parts B + C — whole-package syntactic ratchet + import-resolution scan.
+// One pass: every shipped .d.ts (types/ + ambient/ + augmentations/) is read
+// once, parsed for syntax errors (B) and its relative import specifiers
+// resolved against the filesystem (C). Part B is baselined (ratchet); Part C
+// is zero-tolerance — a broken relative import silently degrades the imported
+// type to `any` for every skipLibCheck consumer, which is how the TitleEvent
+// payloads and localStorage shipped untyped.
 // ---------------------------------------------------------------------------
-function partB() {
-    if (!existsSync(LB_ROOT)) {
-        console.error(`  (skip — ${path.relative(REPO, LB_ROOT)} not present)`);
-        return { ok: true };
-    }
-    const files = walk(
-        LB_ROOT,
-        (p) => p.endsWith(".d.ts") && path.basename(p) !== "package-info.d.ts",
-    );
-    const program = ts.createProgram({
-        rootNames: files,
-        options: { noEmit: true, skipLibCheck: true },
-    });
+const IMPORT_SPEC = /from\s+['"]([^'"]+)['"]/g;
 
-    const current = new Set();
-    for (const sf of program.getSourceFiles()) {
-        if (!sf.fileName.startsWith(LB_ROOT)) continue;
-        for (const d of program.getSyntacticDiagnostics(sf)) {
-            const lc = d.file.getLineAndCharacterOfPosition(d.start);
-            const rel = path.relative(TYPES_ROOT, d.file.fileName).split(path.sep).join("/");
+function partBC() {
+    const roots = [TYPES_ROOT, path.join(TYPINGS, "ambient"), path.join(TYPINGS, "augmentations")]
+        .filter((d) => existsSync(d));
+    const files = roots.flatMap((d) => walk(d, (p) => p.endsWith(".d.ts")));
+
+    const current = new Set();   // syntax errors, "rel:line:TScode"
+    const brokenImports = [];    // { file, spec }
+    for (const file of files) {
+        const text = readFileSync(file, "utf8");
+
+        // C: resolve every relative specifier.
+        for (const m of text.matchAll(IMPORT_SPEC)) {
+            const spec = m[1];
+            if (!spec.startsWith(".")) continue;
+            const base = path.resolve(path.dirname(file), spec);
+            const hit = [base, `${base}.d.ts`, `${base}.ts`, path.join(base, "index.d.ts")]
+                .some((p) => existsSync(p) && statSync(p).isFile());
+            if (!hit) brokenImports.push({ file: path.relative(TYPINGS, file), spec });
+        }
+
+        // B: parse-only diagnostics (no module resolution, no type checking).
+        const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, false, ts.ScriptKind.TS);
+        for (const d of sf.parseDiagnostics) {
+            const lc = sf.getLineAndCharacterOfPosition(d.start);
+            const rel = path.relative(TYPINGS, file).split(path.sep).join("/");
             current.add(`${rel}:${lc.line + 1}:TS${d.code}`);
         }
     }
+
     const sorted = [...current].sort();
+    let ok = true;
 
     if (UPDATE_BASELINE) {
         writeFileSync(BASELINE, JSON.stringify(sorted, null, 2) + "\n");
         console.error(`  baseline updated: ${sorted.length} known parse error(s) -> ${path.relative(REPO, BASELINE)}`);
+    } else {
+        const baseline = existsSync(BASELINE)
+            ? new Set(JSON.parse(readFileSync(BASELINE, "utf8")))
+            : new Set();
+        const novel = sorted.filter((e) => !baseline.has(e));
+        const fixed = [...baseline].filter((e) => !current.has(e));
+        if (novel.length) {
+            ok = false;
+            console.error(`  FAIL — ${novel.length} NEW parse error(s) in the package (${files.length} files):`);
+            for (const e of novel.slice(0, 40)) console.error(`      ${e}`);
+            console.error(`  (if intentional, re-freeze with: npm run typecheck:update-baseline)`);
+        } else {
+            console.error(`  ok   syntax: ${files.length} files, ${current.size} known parse error(s), 0 new`);
+        }
+        if (fixed.length) {
+            console.error(`  note — ${fixed.length} baselined error(s) no longer present; ` +
+                `tighten with: npm run typecheck:update-baseline`);
+        }
+    }
+
+    if (brokenImports.length) {
+        ok = false;
+        console.error(`  FAIL — ${brokenImports.length} unresolvable relative import(s):`);
+        for (const b of brokenImports.slice(0, 40)) console.error(`      ${b.file} -> ${b.spec}`);
+    } else {
+        console.error(`  ok   imports: all relative specifiers resolve`);
+    }
+    return { ok };
+}
+
+// ---------------------------------------------------------------------------
+// Part D — semantic check (skipLibCheck:false) of the script-author surface.
+// Roots: ambient + augmentations + script bindings + event payloads. Errors
+// located IN those surface files are ratcheted as exact entries (target:
+// empty); errors in transitively-loaded files (the long tail of generated MC/
+// third-party types — kotlin.* leaks etc.) are ratcheted as per-TS-code
+// counts so the debt can only shrink. Both live in semantic-baseline.json.
+// ---------------------------------------------------------------------------
+const SEMANTIC_BASELINE = path.join(SMOKE_DIR, "semantic-baseline.json");
+const SURFACE_DIRS = [
+    path.join(TYPINGS, "ambient"),
+    path.join(TYPINGS, "augmentations"),
+    path.join(LB_ROOT, "script"),
+    path.join(LB_ROOT, "event", "events"),
+];
+
+function partD() {
+    const rootNames = SURFACE_DIRS.filter((d) => existsSync(d))
+        .flatMap((d) => walk(d, (p) => p.endsWith(".d.ts")));
+    if (rootNames.length === 0) {
+        console.error("  (skip — no surface files found)");
+        return { ok: true };
+    }
+    const program = ts.createProgram({
+        rootNames,
+        options: {
+            noEmit: true,
+            skipLibCheck: false,
+            strict: true,
+            target: ts.ScriptTarget.ES2020,
+            lib: ["lib.es2023.d.ts"],
+            forceConsistentCasingInFileNames: true,
+        },
+    });
+    const all = ts.getPreEmitDiagnostics(program)
+        .filter((d) => d.category === ts.DiagnosticCategory.Error);
+
+    const surface = [];                 // exact entries in surface files
+    const transitive = new Map();       // TS code -> count elsewhere
+    const isSurface = (f) => SURFACE_DIRS.some((d) => f.startsWith(d + path.sep));
+    for (const d of all) {
+        if (!d.file) { surface.push(`(project):TS${d.code}: ${ts.flattenDiagnosticMessageText(d.messageText, " ")}`); continue; }
+        const file = path.resolve(d.file.fileName);
+        if (isSurface(file)) {
+            const lc = d.file.getLineAndCharacterOfPosition(d.start);
+            const rel = path.relative(TYPINGS, file).split(path.sep).join("/");
+            surface.push(`${rel}:${lc.line + 1}:TS${d.code}`);
+        } else {
+            const key = `TS${d.code}`;
+            transitive.set(key, (transitive.get(key) || 0) + 1);
+        }
+    }
+    surface.sort();
+    const transObj = Object.fromEntries([...transitive.entries()].sort());
+
+    if (UPDATE_BASELINE) {
+        writeFileSync(SEMANTIC_BASELINE,
+            JSON.stringify({ surface, transitive: transObj }, null, 2) + "\n");
+        console.error(`  baseline updated: ${surface.length} surface entr(ies), ` +
+            `${Object.keys(transObj).length} transitive code(s) -> ${path.relative(REPO, SEMANTIC_BASELINE)}`);
         return { ok: true };
     }
 
-    const baseline = existsSync(BASELINE)
-        ? new Set(JSON.parse(readFileSync(BASELINE, "utf8")))
-        : new Set();
+    const baseline = existsSync(SEMANTIC_BASELINE)
+        ? JSON.parse(readFileSync(SEMANTIC_BASELINE, "utf8"))
+        : { surface: [], transitive: {} };
+    const baseSurface = new Set(baseline.surface || []);
+    let ok = true;
 
-    const novel = sorted.filter((e) => !baseline.has(e));
-    const fixed = [...baseline].filter((e) => !current.has(e));
-
+    const novel = surface.filter((e) => !baseSurface.has(e));
     if (novel.length) {
-        console.error(`  FAIL — ${novel.length} NEW parse error(s) in the LB namespace:`);
-        for (const e of novel) console.error(`      ${e}`);
+        ok = false;
+        console.error(`  FAIL — ${novel.length} NEW semantic error(s) in surface files:`);
+        for (const e of novel.slice(0, 40)) console.error(`      ${e}`);
+    } else {
+        console.error(`  ok   surface: ${surface.length} known error(s), 0 new (roots: ${rootNames.length} files)`);
+    }
+
+    const regressions = [];
+    for (const [code, n] of Object.entries(transObj)) {
+        const allowed = (baseline.transitive || {})[code] || 0;
+        if (n > allowed) regressions.push(`${code}: ${n} > baseline ${allowed}`);
+    }
+    if (regressions.length) {
+        ok = false;
+        console.error(`  FAIL — transitive semantic debt grew:`);
+        for (const r of regressions) console.error(`      ${r}`);
         console.error(`  (if intentional, re-freeze with: npm run typecheck:update-baseline)`);
     } else {
-        console.error(`  ok   ${current.size} known parse error(s), 0 new`);
+        const total = Object.values(transObj).reduce((a, b) => a + b, 0);
+        const allowedTotal = Object.values(baseline.transitive || {}).reduce((a, b) => a + b, 0);
+        console.error(`  ok   transitive: ${total} error(s) within baseline (${allowedTotal} allowed)`);
+        if (total < allowedTotal) {
+            console.error(`  note — debt shrank; tighten with: npm run typecheck:update-baseline`);
+        }
     }
-    if (fixed.length) {
-        console.error(`  note — ${fixed.length} baselined error(s) no longer present; ` +
-            `tighten with: npm run typecheck:update-baseline`);
-    }
-    return { ok: novel.length === 0 };
+    return { ok };
 }
 
 // ---------------------------------------------------------------------------
 console.error("== Part A: surface smoke tests ==");
 const a = partA();
-console.error("\n== Part B: LB-namespace syntactic ratchet ==");
-const b = partB();
+console.error("\n== Parts B+C: whole-package syntax ratchet + import resolution ==");
+const bc = partBC();
+console.error("\n== Part D: semantic surface check (skipLibCheck:false) ==");
+const d = partD();
 
 console.error("");
-if (a.ok && b.ok) {
-    console.error(`PASS — ${a.ran} smoke test(s) clean, no new parse errors.`);
+if (a.ok && bc.ok && d.ok) {
+    console.error(`PASS — ${a.ran} smoke test(s) clean, syntax/imports/semantics green.`);
     process.exit(0);
 }
 console.error("FAIL — typecheck gate did not pass (see above).");

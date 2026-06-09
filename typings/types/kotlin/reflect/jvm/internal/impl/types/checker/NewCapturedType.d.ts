@@ -14,7 +14,7 @@ export class NewCapturedType extends SimpleType implements CapturedTypeMarker {
     constructor(arg0: CaptureStatus, arg1: NewCapturedTypeConstructor, arg2: UnwrappedType, arg3: TypeAttribute<Object>[], arg4: boolean, arg5: boolean)
     readonly attributes: TypeAttribute<Object>[];
     readonly captureStatus: CaptureStatus;
-    readonly constructor: NewCapturedTypeConstructor;
+    // inaccessible (TS-reserved member name): readonly constructor: NewCapturedTypeConstructor;
     // private isMarkedNullable: boolean;
     // private isProjectionNotNull: boolean;
     readonly lowerType: UnwrappedType;

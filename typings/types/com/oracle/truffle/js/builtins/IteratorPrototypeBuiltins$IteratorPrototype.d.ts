@@ -7,7 +7,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class IteratorPrototypeBuiltins$IteratorPrototype extends Enum<IteratorPrototypeBuiltins$IteratorPrototype> implements BuiltinEnum<IteratorPrototypeBuiltins$IteratorPrototype> {
-    static constructor: IteratorPrototypeBuiltins$IteratorPrototype;
+    // inaccessible (TS-reserved member name): static constructor: IteratorPrototypeBuiltins$IteratorPrototype;
     static drop: IteratorPrototypeBuiltins$IteratorPrototype;
     static every: IteratorPrototypeBuiltins$IteratorPrototype;
     static filter: IteratorPrototypeBuiltins$IteratorPrototype;

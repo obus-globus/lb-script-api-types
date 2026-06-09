@@ -8,7 +8,7 @@ import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/int
 export class SimpleTypeImpl extends SimpleType {
     constructor(arg0: TypeConstructor, arg1: TypeProjection[], arg2: boolean, arg3: MemberScope, arg4: (param0: KotlinTypeRefiner) => SimpleType)
     readonly arguments: TypeProjection[];
-    readonly constructor: TypeConstructor;
+    // inaccessible (TS-reserved member name): readonly constructor: TypeConstructor;
     // private isMarkedNullable: boolean;
     readonly memberScope: MemberScope;
     // private refinedTypeFactory: (param0: KotlinTypeRefiner) => SimpleType;

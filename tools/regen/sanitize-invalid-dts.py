@@ -21,6 +21,10 @@ Three repairs, all idempotent:
       `class X extends Object implements () => void, Handler` is a parse
       error (Kotlin function supertypes); arrows nested inside generic args
       (`implements JsonSerializer<() => T>`) are valid and left alone.
+  S4  comment out FIELD declarations named `constructor` —
+      `readonly constructor: X;` is a Java field name TS cannot represent
+      in a class (parse error); the member is shadowed by the JS builtin at
+      runtime anyway. Real `constructor(...)` declarations are untouched.
 
 Usage: sanitize-invalid-dts.py [path/to/typings]
 """
@@ -153,19 +157,27 @@ def main():
         p.unlink()
         deleted.append((p, reason))
 
-    # --- pass 3: heritage repair -------------------------------------------
+    # --- pass 3: heritage repair + `constructor` field (S3 + S4) -----------
+    ctor_field = re.compile(r"^(    )((?:static |readonly )*)constructor\??:\s", re.M)
+    ctor_fixed = []
     for p in TYPES.rglob("*.d.ts"):
         try:
             text = p.read_text(encoding="utf-8")
         except Exception:
             continue
-        if "=>" not in text:
-            continue
+        new = text
 
-        def sub(m):
-            return repair_heritage(m.group(1)) + "{"
+        if "=>" in new:
+            def sub(m):
+                return repair_heritage(m.group(1)) + "{"
+            new = DECL_LINE.sub(sub, new)
 
-        new = DECL_LINE.sub(sub, text)
+        if "constructor" in new:
+            new2 = ctor_field.sub(r"\1// inaccessible (TS-reserved member name): \2constructor: ", new)
+            if new2 != new:
+                ctor_fixed.append(p)
+                new = new2
+
         if new != text:
             p.write_text(new, encoding="utf-8")
             repaired.append(p)

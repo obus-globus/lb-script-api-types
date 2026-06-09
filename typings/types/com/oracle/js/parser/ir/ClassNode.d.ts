@@ -18,7 +18,7 @@ export class ClassNode extends LexicalContextExpression implements LexicalContex
     // private classDecorators: Expression[];
     readonly classElements: ClassElement[];
     readonly classHeritage: Expression;
-    readonly constructor: ClassElement;
+    // inaccessible (TS-reserved member name): readonly constructor: ClassElement;
     // private hasClassElementDecorators: boolean;
     // private hasInstanceFieldsOrAccessors: boolean;
     // private hasPrivateInstanceMethods: boolean;

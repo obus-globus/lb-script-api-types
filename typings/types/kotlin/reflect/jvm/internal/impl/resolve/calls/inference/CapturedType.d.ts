@@ -9,7 +9,7 @@ import type { CapturedTypeMarker } from '../../../../../../../../kotlin/reflect/
 export class CapturedType extends SimpleType implements CapturedTypeMarker {
     constructor(arg0: TypeProjection, arg1: CapturedTypeConstructor, arg2: boolean, arg3: TypeAttribute<Object>[])
     readonly attributes: TypeAttribute<Object>[];
-    readonly constructor: CapturedTypeConstructor;
+    // inaccessible (TS-reserved member name): readonly constructor: CapturedTypeConstructor;
     // private isMarkedNullable: boolean;
     // private typeProjection: TypeProjection;
     getArguments(): TypeProjection[];

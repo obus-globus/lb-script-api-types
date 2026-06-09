@@ -9,7 +9,7 @@ import type { ErrorTypeKind } from '../../../../../../../kotlin/reflect/jvm/inte
 export class ErrorType extends SimpleType {
     constructor(arg0: TypeConstructor, arg1: MemberScope, arg2: ErrorTypeKind, arg3: TypeProjection[], arg4: boolean, arg5: string[])
     readonly arguments: TypeProjection[];
-    readonly constructor: TypeConstructor;
+    // inaccessible (TS-reserved member name): readonly constructor: TypeConstructor;
     readonly debugMessage: string;
     // private formatParams: string[];
     // private isMarkedNullable: boolean;
