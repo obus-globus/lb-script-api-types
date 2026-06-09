@@ -162,6 +162,26 @@ tree-sitter extractor can.
   `tsc` that the bug was a hard `TS2416` (child non-assignable to parent) and
   that the fix resolves it; generator unit test added. _Layer: generator._
 
+## 2026-06-09 review wave (W20-W21: generator-layer fidelity)
+
+Found by an adversarially-verified full review; the consumer-visible symptoms
+were fixed the same day at the post-patch layer (sanitize, F8/F9, F4 reversal,
+gate v2 ratchets) — these track the *generator-root* fixes.
+
+- **[~] W20 - qualified-name leak in arrow/SAM rendering.** The Java
+  functional-interface → arrow conversion emits raw qualified names instead of
+  mapped primitives / imported simple names: `(param0: string) =>
+  kotlin.Boolean` (9,925× tree-wide), `=> java.util.Optional<net.minecraft...>`
+  (hundreds). None resolve — under consumers' `skipLibCheck` the arrow types
+  silently degrade. Tracked by the gate's Part D transitive ratchet
+  (TS2503/TS2304 counts). _Layer: generator (formatFunctionalInterfaceType)._
+- **[~] W21 - free/undeclared type variables.** Re-emitted inherited members
+  keep the parent's type params unsubstituted (`DataComponentMatchers.and(arg0:
+  (param0: T) => ...)` on a non-generic class; `Filter.invoke(..., collection:
+  E[])`); ~77 LB files + more tree-wide. Fix: substitute from supertype
+  arguments, else fall back to the bound/Object — never emit an undeclared
+  identifier. _Layer: generator._
+
 ## Smaller, standalone
 
 - **[x] Generator emitted invalid TS for 2 coroutine/inline-class declarations.**

@@ -27,7 +27,8 @@ For what's **still on the table**, see [backlog.md](backlog.md).
 | | `ScriptSetting` factories take typed **option objects** (`{ name, default, range, ... }`) | post-patch |
 | | `PolyglotScript.on()` narrowed to the 3 real lifecycle literals (`load`/`enable`/`disable`) | post-patch |
 | | DSL receiver lambdas (e.g. `ValueGroup.curve { ... }`) typed correctly | post-patch |
-| **Bindings** | F1-F7 fixes: dedup ambient block, drop the phantom `Client` category, `SilentHotbar`/`Hand` globals, `attackEntity` `@JvmName`, **field/method name collisions** (`onGround()` un-shadowed) | post-patch |
+| **Bindings** | F1-F9 fixes: dedup ambient block, drop the phantom `Client` category, `Hand` alias, `attackEntity` `@JvmName`, **field/method name collisions** (`onGround()` un-shadowed), honest `localStorage` facade, `Axis`/`RotationAxis` class-handle facade, fictional `SilentHotbar` global removed | post-patch |
+| | **S1-S4 sanitize**: invalid generated files deleted/repaired (1,026 `package-info` descriptors, 20 unimportable `-Name` file-facades, 872 Kotlin-function-supertype heritage clauses, `constructor`-named members) — whole package parses clean | post-patch |
 | **Globals** | Auto-detected `ambient.d.ts` (`mc`, `Client`, `RotationUtil`, `Setting`, ...) + GraalVM JS intrinsics declared in `declare global` | ts-defgen + post-patch |
 | **Docs** | **KDoc -> TSDoc injection** - LiquidBounce's Kotlin doc comments become hover docs on classes/members | post-patch (`apply-kdoc`) |
 | **Augmentations** | Hand-written overlays for `ScriptModule`, `ClientLevel`, `ScriptReflectionUtil` + a barrel index | augmentation |
@@ -119,18 +120,31 @@ per-param **types** are not yet substituted for bare `Object` reflections - see
 - **TS reserved-word parameter renames** - params named `this`/`function`/etc.
   in the JVM signature are renamed so the `.d.ts` parses.
 
-## Binding fixes (F1-F7)
+## Binding fixes (F1-F9)
 
 Idempotent corrections for runtime-vs-reflection name mismatches:
 
 - **F1** - dedup the duplicated import + `export const` block in `ambient.d.ts`.
 - **F2** - drop the phantom `"Client"` module category the JSDoc lists (only 8
   exist; using it NPEs at runtime).
-- **F4** - add `SilentHotbar` as an ambient global (has a type but wasn't exposed).
+- **F4 (reversed 2026-06-09)** - the original F4 *added* `SilentHotbar` as an
+  ambient global, but LiquidBounce never `putMember`s it (verified at the pin
+  and at HEAD) — the export typechecked code that ReferenceErrors at runtime.
+  F4 now **removes** the export; the README documents the `Java.type` recipe
+  (the generated type stays importable).
 - **F5** - `ScriptInteractionUtil.attackEntityJs` is `@JvmName("attackEntity")`;
   the runtime member is `attackEntity`, so we rename it (reflection can't recover
   the `@JvmName`).
 - **F6** - `InteractionHand` is bound at runtime as `Hand`; add a `Hand` alias.
+- **F8** - `localStorage` is a Java `ConcurrentHashMap<String, Any>` at runtime,
+  but the generator never emits the JDK class file, so ambient imported a
+  nonexistent module and the global silently typed as `any` (or DOM `Storage`
+  with `lib.dom` loaded). Replaced with an inline `ScriptLocalStorage` facade
+  matching the Java `Map` surface.
+- **F9** - `Axis` / `RotationAxis` are bound as `Axis::class.java` (a host
+  *class handle*), but were typed as the instance interface — so the real
+  surface (`XP/XN/YP/YN/ZP/ZN`, `of()`) didn't typecheck while nonexistent
+  instance calls did. Retyped via an `AxisClassHandle` facade.
 - **F7** - resolve Java **field/method name collisions** (`fix-member-collisions.py`).
   Java lets a field and a method share a name (`onGround` + `onGround()`; records,
   JOML math types, `Map.Entry`, enums); TypeScript forbids it, so the field
@@ -202,8 +216,12 @@ Layered on top of the generated tree and barrel-indexed
 - **Reproducible end-to-end flow** - one command natively (`run-regen.sh`), a
   pinned-toolchain **Docker** image with cached volumes, and a **GitHub Action**
   that regenerates and opens a PR.
-- **Typecheck gate** - a fast CI check (`npm run typecheck`, no regen needed)
-  that compiles the surface smoke tests (typed `on()`, `ScriptSetting`, DSL
-  receivers, intrinsics, `registerScript`) and ratchets the LB namespace for
-  new parse errors against a baseline. Catches generator/post-patch
-  regressions before they ship. See [typecheck-gate.md](typecheck-gate.md).
+- **Typecheck gate (v2)** - a fast CI check (`npm run typecheck`, ~20s, no
+  regen needed) with four parts: surface smoke tests (typed `on()`,
+  `ScriptSetting`, DSL receivers, intrinsics, `registerScript`,
+  `registerMode`); a whole-package syntax ratchet (all ~57k files, baseline
+  currently **empty**); zero-tolerance relative-import resolution (broken
+  imports silently mean `any` under consumers' `skipLibCheck`); and a
+  semantic check of the script-author surface with `skipLibCheck:false`,
+  ratcheting the transitive generated-type debt so it can only shrink. See
+  [typecheck-gate.md](typecheck-gate.md).
