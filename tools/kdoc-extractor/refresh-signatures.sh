@@ -38,3 +38,6 @@ fi
 echo "Extracting signatures + deprecations from $LB_DIR ..." >&2
 "$PY" "$EXTRACT" --project "$LB_DIR" --signatures-out "$OUT" --deprecations-out "$DEPS_OUT"
 echo "Signatures written to $OUT; deprecations to $DEPS_OUT" >&2
+
+# Record which LB SHA these manifests reflect (see refresh-manifest.sh).
+git -C "$LB_DIR" rev-parse HEAD > "$(dirname "$OUT")/.manifest-sha" 2>/dev/null || true

@@ -46,4 +46,9 @@ fi
 echo "Extracting KDocs from $LB_DIR..." >&2
 "$EXTRACTOR_BIN" --project "$LB_DIR" --out "$OUT"
 
+# Record which LB SHA this manifest reflects — run-regen.sh compares it to the
+# checkout and auto-refreshes after a pin bump (the .manifest-sha is shared
+# with refresh-signatures.sh; whichever runs last wins, both read $LB_DIR).
+git -C "$LB_DIR" rev-parse HEAD > "$(dirname "$OUT")/.manifest-sha" 2>/dev/null || true
+
 echo "Manifest written to $OUT" >&2

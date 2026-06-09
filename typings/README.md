@@ -21,10 +21,17 @@ Pull in the ambient script globals through `tsconfig.json`:
 ```jsonc
 {
   "compilerOptions": {
+    "lib": ["es2023"],            // no DOM — see below
     "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
 ```
+
+Use a DOM-less `"lib"` (`es2022`/`es2023`): the GraalJS runtime has no DOM,
+and if `lib.dom` is loaded its `localStorage: Storage` silently overrides the
+script API's `localStorage` (a Java `ConcurrentHashMap` with `get`/`put`, not
+`getItem`/`setItem`), plus DOM globals pollute autocomplete with APIs that
+don't exist at runtime.
 
 Now `mc`, `Client`, `RotationUtil`, `Setting`, `Java.type`, and the rest are
 globally typed. Event handlers are typed per event, since `ScriptModule.on()` has
@@ -45,11 +52,23 @@ import { AttackEntityEvent } from "@wunk/lb-script-api-types/types/net/ccbluex/l
 The package ships one `.d.ts` per class (mirroring the JVM package layout), so
 `tsc` only parses the types a script actually imports.
 
+LiquidBounce internals that have a generated type but are **not** runtime
+globals (e.g. `SilentHotbar`) are reached via `Java.type`, typed with the
+matching import:
+
+```ts
+import type { SilentHotbar } from "@wunk/lb-script-api-types/types/net/ccbluex/liquidbounce/utils/client/SilentHotbar";
+const silentHotbar = Java.type<{ INSTANCE: SilentHotbar }>(
+    "net.ccbluex.liquidbounce.utils.client.SilentHotbar").INSTANCE;
+```
+
 ## Versioning
 
-The package version is the LiquidBounce version the types were generated for. For
-example `0.38.1` means types for LiquidBounce 0.38.1. The exact LB commit and
-Minecraft version are in the `package.json` `liquidbounce` block:
+`<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the LiquidBounce
+release line; the patch is this package's own iteration counter (so type-only
+improvements can ship between LB releases). `0.38.2` = "3rd type build for the
+LB 0.38 line". The exact LB commit and Minecraft version are in the
+`package.json` `liquidbounce` block:
 
 ```bash
 npm view @wunk/lb-script-api-types liquidbounce

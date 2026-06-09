@@ -1,11 +1,15 @@
 {
   "name": "lb-script-api-types-repo",
   "private": true,
-  "description": "Tooling/CI workspace for @wunk/lb-script-api-types. The published package lives in typings/ — this root manifest only carries dev tooling (typecheck gate) and is never published.",
+  "description": "Tooling/CI workspace for @wunk/lb-script-api-types. The published package lives in typings/ \u2014 this root manifest only carries dev tooling (typecheck gate) and is never published.",
   "type": "module",
   "scripts": {
     "typecheck": "node tools/typecheck.mjs",
-    "typecheck:update-baseline": "node tools/typecheck.mjs --update-baseline"
+    "typecheck:update-baseline": "node tools/typecheck.mjs --update-baseline",
+    "typecheck:tighten": "node tools/typecheck.mjs --tighten",
+    "canary": "tools/package-canary.sh",
+    "release": "scripts/cut-release.sh",
+    "release:dry": "scripts/cut-release.sh --dry-run"
   },
   "devDependencies": {
     "typescript": "^5.9.0"

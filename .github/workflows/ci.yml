@@ -1,9 +1,12 @@
 name: typecheck
 
-# Typecheck gate for the committed types tree. Runs the surface smoke tests
-# (typed on() overloads, ScriptSetting factories, DSL receivers, GraalVM
-# intrinsics, registerScript) and the LB-namespace syntactic ratchet. Fast:
-# the types are committed, so no regeneration / JVM / Xvfb is involved.
+# Gates for the committed types tree — no regeneration / JVM / Xvfb involved.
+#   typecheck: surface smoke tests + whole-package syntax ratchet +
+#              import-resolution + semantic surface check (see
+#              docs/typecheck-gate.md).
+#   package-canary: npm-packs typings/ and compiles a probe consumer against
+#              the installed tarball with a stock tsconfig — catches
+#              files-glob / typesVersions / silent-any packaging breakage.
 
 on:
   push:
@@ -31,3 +34,21 @@ jobs:
 
       - name: Typecheck gate
         run: npm run typecheck
+
+  package-canary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install tooling
+        run: npm ci
+
+      - name: Packaging canary (pack → install → consumer tsc)
+        run: npm run canary

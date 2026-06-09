@@ -1253,6 +1253,15 @@ python3 "$(dirname "$0")/sanitize-invalid-dts.py" "$PKG_ROOT" || \
   { echo "post-patches: ERROR — sanitize-invalid-dts.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
+# Ambient runtime contract — ambient.d.ts exports must match the runtime
+# bindings ts-defgen dumped from the live client (runtime-bindings.json), and
+# the hand-written facades (Axis, ScriptLocalStorage) must only promise
+# members the runtime classes actually have. SKIPs when the sidecar is absent.
+# ---------------------------------------------------------------------------
+python3 "$(dirname "$0")/check-ambient-contract.py" "$PKG_ROOT" || \
+  { echo "post-patches: ERROR — ambient/runtime contract mismatch" >&2; POSTPATCH_FAILED=1; }
+
+# ---------------------------------------------------------------------------
 # Failure gate — LAST, after every patch step. A crashed step above only sets
 # POSTPATCH_FAILED so the remaining steps still run; the regen then fails
 # once, loudly, with every error visible.

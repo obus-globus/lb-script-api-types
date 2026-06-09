@@ -61,6 +61,11 @@ const LB_ROOT = path.join(TYPES_ROOT, "net", "ccbluex", "liquidbounce");
 const BASELINE = path.join(SMOKE_DIR, "syntax-baseline.json");
 
 const UPDATE_BASELINE = process.argv.includes("--update-baseline");
+// --tighten: like a normal check (growth still FAILS), but when debt shrank,
+// rewrite the baselines to the smaller current set. Safe to run
+// unconditionally after a regen — unlike --update-baseline, it can never
+// freeze a regression in.
+const TIGHTEN = process.argv.includes("--tighten");
 
 function fmt(d) {
     const msg = ts.flattenDiagnosticMessageText(d.messageText, "\n");
@@ -202,8 +207,13 @@ function partBC() {
             console.error(`  ok   syntax: ${files.length} files, ${current.size} known parse error(s), 0 new`);
         }
         if (fixed.length) {
-            console.error(`  note — ${fixed.length} baselined error(s) no longer present; ` +
-                `tighten with: npm run typecheck:update-baseline`);
+            if (TIGHTEN && !novel.length) {
+                writeFileSync(BASELINE, JSON.stringify(sorted, null, 2) + "\n");
+                console.error(`  tightened — ${fixed.length} fixed entr(ies) removed from the syntax baseline`);
+            } else {
+                console.error(`  note — ${fixed.length} baselined error(s) no longer present; ` +
+                    `tighten with: npm run typecheck:update-baseline`);
+            }
         }
     }
 
@@ -311,6 +321,16 @@ function partD() {
         console.error(`  ok   transitive: ${total} error(s) within baseline (${allowedTotal} allowed)`);
         if (total < allowedTotal) {
             console.error(`  note — debt shrank; tighten with: npm run typecheck:update-baseline`);
+        }
+    }
+
+    // Shrink-only rewrite: only when NOTHING grew in this part.
+    if (TIGHTEN && ok) {
+        const next = JSON.stringify({ surface, transitive: transObj }, null, 2) + "\n";
+        const prev = existsSync(SEMANTIC_BASELINE) ? readFileSync(SEMANTIC_BASELINE, "utf8") : "";
+        if (next !== prev) {
+            writeFileSync(SEMANTIC_BASELINE, next);
+            console.error(`  tightened — semantic baseline rewritten to the smaller current set`);
         }
     }
     return { ok };

@@ -324,6 +324,47 @@ ${eventEntries.map((entry) => `on(eventName: "${entry[0]}", handler: (${entry[0]
         Files.writeString(filePath, embeddedDefinition,
             // @ts-expect-error
             Java.type("java.nio.charset.StandardCharsets").UTF_8);
+        // Runtime-bindings sidecar: dump every real script-context binding
+        // (name, backing Java class, member names) so post-patch can verify
+        // ambient.d.ts against RUNTIME truth (check-ambient-contract.py) —
+        // an ambient export with no runtime binding is a typing that
+        // ReferenceErrors in real scripts (the F4/SilentHotbar bug class).
+        try {
+            const Modifier = Java.type("java.lang.reflect.Modifier");
+            const bindingsDump = {};
+            for (const entry of globalEntries) {
+                const name = entry[0], value = entry[1];
+                if (value === undefined || value === null) continue;
+                try {
+                    const isClassHandle = value instanceof Class_1.Class;
+                    const javaClass = isClassHandle ? value : (value.class ?? null);
+                    if (!javaClass) continue; // script-local JS junk, not a host binding
+                    const statics = [], instanceMembers = [];
+                    try {
+                        for (const m of Java.from(javaClass.getMethods())) {
+                            (Modifier.isStatic(m.getModifiers()) ? statics : instanceMembers).push(m.getName());
+                        }
+                        for (const f of Java.from(javaClass.getFields())) {
+                            (Modifier.isStatic(f.getModifiers()) ? statics : instanceMembers).push(f.getName());
+                        }
+                    } catch (e) { /* keep the binding entry even if members fail */ }
+                    bindingsDump[name] = {
+                        javaClass: javaClass.getName(),
+                        kind: isClassHandle ? "class-handle" : "instance",
+                        statics: [...new Set(statics)].sort(),
+                        members: [...new Set(instanceMembers)].sort(),
+                    };
+                } catch (e) { /* skip unreadable binding */ }
+            }
+            const bindingsPath = Paths_1.Paths.get(`${path}/${packageName}/ambient/runtime-bindings.json`);
+            Files.writeString(bindingsPath, JSON.stringify(bindingsDump, null, 2) + "\n",
+                // @ts-expect-error
+                Java.type("java.nio.charset.StandardCharsets").UTF_8);
+            Client.displayChatMessage(`wrote runtime-bindings.json (${Object.keys(bindingsDump).length} bindings)`);
+        } catch (e) {
+            Client.displayChatMessage("WARN: runtime-bindings dump failed: " + e);
+        }
+
         // Write the ScriptModule augmentation file
         const augmentationContent = `// ScriptModule augmentation - adds event handler interfaces
 
