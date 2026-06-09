@@ -52,9 +52,9 @@ import:
 
 ```ts
 import type { SilentHotbar } from "@wunk/lb-script-api-types/types/net/ccbluex/liquidbounce/utils/client/SilentHotbar";
-const SilentHotbar: typeof SilentHotbar =
-    Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
-SilentHotbar.INSTANCE.selectSlotSilently(/* ... */);
+const silentHotbar = Java.type<{ INSTANCE: SilentHotbar }>(
+    "net.ccbluex.liquidbounce.utils.client.SilentHotbar").INSTANCE;
+silentHotbar.selectSlotSilently(/* ... */);
 ```
 
 Event handlers are typed per event. `ScriptModule.on()` has one overload for each
