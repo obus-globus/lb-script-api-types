@@ -44,8 +44,14 @@ if [[ "$DRY" == "1" ]]; then
 fi
 
 echo "==> bump iteration + tag"
-(cd typings && npm version patch)
+# npm version's git integration is unreliable from a subdirectory (it bumped
+# package.json without committing once, and gh release create then auto-made
+# the tag at a stale HEAD) — do the git half explicitly.
+(cd typings && npm version --no-git-tag-version patch)
 VER="$(node -p "require('./typings/package.json').version")"
+git add typings/package.json
+git commit -m "v$VER"
+git tag "v$VER" HEAD
 git push --follow-tags
 
 echo "==> GitHub release v$VER (triggers npm-publish.yml)"
