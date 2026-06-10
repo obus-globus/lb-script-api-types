@@ -155,10 +155,13 @@ function partA() {
 // type to `any` for every skipLibCheck consumer, which is how the TitleEvent
 // payloads and localStorage shipped untyped.
 // ---------------------------------------------------------------------------
-const IMPORT_SPEC = /from\s+['"]([^'"]+)['"]/g;
+// Both static `from "..."` and dynamic-import TYPE specifiers
+// (`typeof import("...")` — the Java.type registries are built from these).
+const IMPORT_SPEC = /(?:from\s+|import\()\s*['"]([^'"]+)['"]/g;
 
 function partBC() {
-    const roots = [TYPES_ROOT, path.join(TYPINGS, "ambient"), path.join(TYPINGS, "augmentations")]
+    const roots = [TYPES_ROOT, path.join(TYPINGS, "ambient"), path.join(TYPINGS, "augmentations"),
+        path.join(TYPINGS, "registry-lb"), path.join(TYPINGS, "registry-full")]
         .filter((d) => existsSync(d));
     const files = roots.flatMap((d) => walk(d, (p) => p.endsWith(".d.ts")));
 

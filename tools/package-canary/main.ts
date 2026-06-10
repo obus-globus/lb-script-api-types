@@ -57,6 +57,17 @@ InteractionUtil.useItem(Hand.static.MAIN_HAND);
 // @ts-expect-error SilentHotbar must not be an ambient global
 SilentHotbar.INSTANCE;
 
+// Typed Java.type via the opt-in registry (registry-lb in tsconfig types):
+// fully inferred from the string literal — no generic, no import.
+const shClass = Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
+const slot: number = shClass.INSTANCE.serversideSlot;
+void slot;
+// @ts-expect-error wrong member on a registry-typed handle must error (not any)
+shClass.INSTANCE.notAMember;
+// Unknown class names fall back to the generic any overload.
+const unknownHandle = Java.type("com.example.NotARealClass");
+void unknownHandle;
+
 // Deep import by JVM path must resolve through typesVersions.
 import type { AttackEntityEvent } from "@wunk/lb-script-api-types/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent";
 declare const ev: AttackEntityEvent;

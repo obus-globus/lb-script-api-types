@@ -60,6 +60,30 @@ import { AttackEntityEvent } from "@wunk/lb-script-api-types/types/net/ccbluex/l
 The package ships one `.d.ts` per class (mirroring the JVM package layout), so
 `tsc` only parses the types a script actually imports.
 
+### Typed `Java.type` (opt-in registry)
+
+By default `Java.type(...)` returns `any` (or takes an explicit generic).
+Opt into the string-literal registry and it is fully typed from the class
+name alone — autocomplete on the string, typed statics/constructors on the
+result. Works in plain JS too (the editor language service picks it up from
+jsconfig):
+
+```jsonc
+"types": [
+  "@wunk/lb-script-api-types/ambient",
+  "@wunk/lb-script-api-types/registry-lb"   // net.ccbluex.* (~2.6k classes, ~+1s tsc)
+]
+```
+
+```ts
+const SilentHotbar = Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
+SilentHotbar.INSTANCE.serversideSlot;   // typed — no generic, no import
+```
+
+`registry-full` covers every generated class (~49k) — great for editor use,
+but it adds tens of seconds to batch `tsc` runs, so prefer `registry-lb` in
+CI. Unknown class names fall back to the generic `any` overload either way.
+
 LiquidBounce internals that have a generated type but are **not** runtime
 globals (e.g. `SilentHotbar`) are reached via `Java.type`, typed with the
 matching import:

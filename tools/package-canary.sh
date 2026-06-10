@@ -40,7 +40,7 @@ cat > tsconfig.json <<'EOF'
     "noEmit": true,
     "skipLibCheck": true,
     "lib": ["es2023"],
-    "types": ["@wunk/lb-script-api-types/ambient"],
+    "types": ["@wunk/lb-script-api-types/ambient", "@wunk/lb-script-api-types/registry-lb"],
     "forceConsistentCasingInFileNames": true
   },
   "include": ["main.ts"]

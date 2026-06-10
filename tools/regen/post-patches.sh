@@ -1214,6 +1214,8 @@ wanted = {
         "types/*": ["./types/*"],
         "augmentations/*": ["./augmentations/*"],
         "ambient": ["./ambient/ambient.d.ts"],
+        "registry-lb": ["./registry-lb/index.d.ts"],
+        "registry-full": ["./registry-full/index.d.ts"],
     }
 }
 if data.get("typesVersions") != wanted:
@@ -1251,6 +1253,14 @@ python3 "$(dirname "$0")/fix-member-collisions.py" "$PKG_ROOT" || \
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/sanitize-invalid-dts.py" "$PKG_ROOT" || \
   { echo "post-patches: ERROR — sanitize-invalid-dts.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+
+# ---------------------------------------------------------------------------
+# Java.type string-literal registries (opt-in typed Java.type) — generated
+# from the sanitized tree so deleted/repaired files never get entries. See
+# generate-java-type-registry.py; the ambient overload is F11.
+# ---------------------------------------------------------------------------
+python3 "$(dirname "$0")/generate-java-type-registry.py" "$PKG_ROOT" || \
+  { echo "post-patches: ERROR — generate-java-type-registry.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
 # Ambient runtime contract — ambient.d.ts exports must match the runtime

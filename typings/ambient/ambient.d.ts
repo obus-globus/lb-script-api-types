@@ -32,9 +32,16 @@ declare global {
     // script but invisible to `Object.entries(globalThis)`. See:
     //   https://www.graalvm.org/jdk25/reference-manual/js/JavaInteroperability/
     //   https://www.graalvm.org/jdk25/reference-manual/polyglot-programming/
+    /** Merge target for the optional Java.type string-literal registry —
+     *  add "@wunk/lb-script-api-types/registry-lb" (or registry-full) to your
+     *  tsconfig "types" to populate it. Empty by default: zero compile cost,
+     *  Java.type falls back to the generic overload. */
+    interface JavaTypeRegistry {}
+
     interface JavaIntrinsic {
         /** Resolve a Java class by FQN. Returns a "type" handle: callable as
          *  a constructor and indexable for static members. */
+        type<K extends keyof JavaTypeRegistry>(className: K): JavaTypeRegistry[K];
         type<T = any>(className: string): T;
         /** Convert a Java array (or Iterable) to a JS array. */
         from<T = unknown>(javaArray: any): T[];

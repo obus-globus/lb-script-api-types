@@ -257,6 +257,32 @@ if bindings_sidecar.exists():
 else:
     print("fix-binding-types: F10 skipped — no runtime-bindings.json yet", file=sys.stderr)
 
+# --- F11: typed Java.type — string-literal registry overload ----------------
+# Ambient declares an EMPTY JavaTypeRegistry merge target + an overload that
+# maps class-name literals through it. Zero cost / no behavior change by
+# default (keyof {} = never, calls fall through to the generic overload);
+# the generated registry-lb / registry-full packages populate it when a
+# consumer opts in via tsconfig "types". Works for plain-JS users through
+# the editor language service.
+F11_IFACE = """    /** Merge target for the optional Java.type string-literal registry —
+     *  add "@wunk/lb-script-api-types/registry-lb" (or registry-full) to your
+     *  tsconfig/jsconfig "types" to populate it. Empty by default: zero
+     *  compile cost; Java.type falls back to the generic overload. */
+    interface JavaTypeRegistry {}
+
+"""
+_before = amb_text
+if "interface JavaTypeRegistry" not in amb_text:
+    amb_text = amb_text.replace("    interface JavaIntrinsic {",
+                                F11_IFACE + "    interface JavaIntrinsic {", 1)
+if "type<K extends keyof JavaTypeRegistry>" not in amb_text:
+    amb_text = amb_text.replace(
+        "        type<T = any>(className: string): T;",
+        "        type<K extends keyof JavaTypeRegistry>(className: K): JavaTypeRegistry[K];\n"
+        "        type<T = any>(className: string): T;", 1)
+if amb_text != _before:
+    changed.append("F11 Java.type registry overload")
+
 amb.write_text(amb_text)
 
 # --- F2: drop the bogus "Client" category from PolyglotScript JSDoc ---
