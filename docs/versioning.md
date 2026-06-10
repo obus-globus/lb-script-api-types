@@ -60,6 +60,17 @@ node scripts/stamp-version.mjs --check    # print, don't write
 
 ## Release flows
 
+> **CI publish caveat (2026-06-10):** the repo's `NPM_TOKEN` secret currently
+> holds the VM's granular token, which appears to be **IP-allowlisted** — CI
+> runners get `E404` on `PUT` (npm hides the package from unauthorized
+> callers) while the same token publishes fine from the VM. Until a
+> CI-suitable token is minted in the npm web UI (granular, publish rights on
+> @wunk, **no IP allowlist**) and stored as `NPM_TOKEN`, releases publish
+> from the VM: `cd typings && npm publish && npm dist-tag add
+> @wunk/lb-script-api-types@<ver> lb-<major>.<minor>` (what
+> `scripts/cut-release.sh` prepares is unaffected — tag + GitHub Release
+> still drive the changelog).
+
 **A. Type-only improvement (LB unchanged).** Bump the iteration by hand and cut a
 release:
 ```bash
