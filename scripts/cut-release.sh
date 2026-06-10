@@ -51,8 +51,8 @@ echo "==> bump iteration + tag"
 VER="$(node -p "require('./typings/package.json').version")"
 git add typings/package.json
 git commit -m "v$VER"
-git tag "v$VER" HEAD
-git push --follow-tags
+git tag -a "v$VER" -m "v$VER" HEAD
+git push origin main "v$VER"
 
 echo "==> GitHub release v$VER (triggers npm-publish.yml)"
 LB_BLOCK="$(node -p "JSON.stringify(require('./typings/package.json').liquidbounce, null, 2)")"
