@@ -1,0 +1,15 @@
+{
+  "name": "lb-typing-verify",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Runtime verification script for @wunk/lb-script-api-types — typechecks against the local typings and proves the typed surfaces work in a live LiquidBounce client.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc && mv dist/main.js dist/TypingVerify.mjs"
+  },
+  "devDependencies": {
+    "@wunk/lb-script-api-types": "file:../../typings",
+    "typescript": "^5.9"
+  }
+}

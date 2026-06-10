@@ -33,6 +33,14 @@ script API's `localStorage` (a Java `ConcurrentHashMap` with `get`/`put`, not
 `getItem`/`setItem`), plus DOM globals pollute autocomplete with APIs that
 don't exist at runtime.
 
+Class-value bindings (`Vec3i`, `BlockPos`, `Hand`, `MathHelper`,
+`RotationAxis`, ...) are raw `java.lang.Class` values at runtime: construct
+directly (`new Vec3i(1, 2, 3)`), but **statics — including enum constants —
+live behind `.static`** (`Hand.static.MAIN_HAND`,
+`RotationAxis.static.YP.rotationDegrees(90)`). Direct static access compiles
+against older typings but is `undefined` at runtime; these types model the
+real reachable surface (verified in a live client).
+
 Now `mc`, `Client`, `RotationUtil`, `Setting`, `Java.type`, and the rest are
 globally typed. Event handlers are typed per event, since `ScriptModule.on()` has
 one overload for each LiquidBounce event:

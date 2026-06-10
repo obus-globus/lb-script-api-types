@@ -35,14 +35,21 @@ void n;
 // @ts-expect-error DOM Storage API must not exist here
 localStorage.getItem("k");
 
-// Axis/RotationAxis are class handles: statics exist, instance calls don't.
-const q = RotationAxis.YP.rotationDegrees(90);
+// Class-value bindings: construct directly, statics ONLY via .static
+// (verified in a live client — direct static access is undefined at runtime).
+const q = RotationAxis.static.YP.rotationDegrees(90);
 void q;
+const bp = new BlockPos(1, 2, 3);
+void bp;
+const clamped: number = MathHelper.static.clamp(5, 0, 3);
+void clamped;
+// @ts-expect-error statics are NOT directly on the binding (undefined at runtime)
+Hand.MAIN_HAND;
 // @ts-expect-error the handle has no instance rotation()
 Axis.rotationDegrees(1);
 
-// Hand alias exists; SilentHotbar is NOT a runtime global.
-InteractionUtil.useItem(Hand.MAIN_HAND);
+// Hand alias exists (via .static); SilentHotbar is NOT a runtime global.
+InteractionUtil.useItem(Hand.static.MAIN_HAND);
 // @ts-expect-error SilentHotbar must not be an ambient global
 SilentHotbar.INSTANCE;
 

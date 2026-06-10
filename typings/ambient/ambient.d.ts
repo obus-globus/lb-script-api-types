@@ -82,13 +82,22 @@ declare global {
     const Workers: any;
     // T-4: GraalVM intrinsics end
 
-    // F9: Axis class-handle facade begin
+    // F10: JavaClassBinding helper begin
     /**
-     * The host class handle for `com.mojang.math.Axis` (bound via
-     * `Axis::class.java`). Use the static unit-axis constants — e.g.
-     * `RotationAxis.YP.rotationDegrees(90)`.
+     * A raw `java.lang.Class` value bound into the script context. Under
+     * GraalJS nashorn-compat it constructs directly (`new BlockPos(1, 2, 3)`),
+     * but STATIC members — including enum constants — are only reachable via
+     * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
+     * Direct static access returns `undefined` at runtime. `.static` also
+     * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
      */
-    interface AxisClassHandle {
+    type JavaClassBinding<T> = (T extends abstract new (...args: infer A) => infer R
+        ? { new (...args: A): R }
+        : unknown) & { readonly static: T };
+    // F10: JavaClassBinding helper end
+
+    // F9: Axis class-handle facade begin
+    interface AxisClassStatics {
         /** Negative X axis. */ readonly XN: Axis_;
         /** Positive X axis. */ readonly XP: Axis_;
         /** Negative Y axis. */ readonly YN: Axis_;
@@ -97,6 +106,14 @@ declare global {
         /** Positive Z axis. */ readonly ZP: Axis_;
         /** Axis along an arbitrary (normalised) vector. */
         of(axis: Vector3f_): Axis_;
+    }
+    /**
+     * The `com.mojang.math.Axis` binding is a raw `java.lang.Class` value;
+     * its statics are reachable ONLY via `.static` (GraalJS nashorn-compat,
+     * verified live): `RotationAxis.static.YP.rotationDegrees(90)`.
+     */
+    interface AxisClassHandle {
+        readonly static: AxisClassStatics;
     }
     // F9: Axis class-handle facade end
 
@@ -183,28 +200,28 @@ declare global {
      */
     export const registerScript: (scriptObject: { name: string; version: string; authors: string[] }) => PolyglotScript_;
 
-    export const Vec3i: typeof Vec3i_;
+    export const Vec3i: JavaClassBinding<typeof Vec3i_>;
 
-    export const Vec3: typeof Vec3_;
+    export const Vec3: JavaClassBinding<typeof Vec3_>;
 
-    export const Mth: typeof Mth_;
+    export const Mth: JavaClassBinding<typeof Mth_>;
 
-    export const BlockPos: typeof BlockPos_;
+    export const BlockPos: JavaClassBinding<typeof BlockPos_>;
 
-    export const InteractionHand: typeof InteractionHand_;
+    export const InteractionHand: JavaClassBinding<typeof InteractionHand_>;
 
     export const Axis: AxisClassHandle;
 
-    export const RenderSystem: typeof RenderSystem_;
+    export const RenderSystem: JavaClassBinding<typeof RenderSystem_>;
 
-    export const Vec3d: typeof Vec3_;
+    export const Vec3d: JavaClassBinding<typeof Vec3_>;
 
-    export const MathHelper: typeof Mth_;
+    export const MathHelper: JavaClassBinding<typeof Mth_>;
 
-    export const Hand: typeof InteractionHand_;
+    export const Hand: JavaClassBinding<typeof InteractionHand_>;
 
     export const RotationAxis: AxisClassHandle;
 
-    export const Color4b: typeof Color4b_;
+    export const Color4b: JavaClassBinding<typeof Color4b_>;
 
 }

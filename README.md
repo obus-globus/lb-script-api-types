@@ -46,6 +46,15 @@ const target = mc.player;
 RotationUtil.aimAt(/* ... */);
 ```
 
+Class-value bindings (`Vec3i`, `BlockPos`, `Hand`, `MathHelper`,
+`RotationAxis`, ...) are raw `java.lang.Class` values at runtime: construct
+directly (`new Vec3i(1, 2, 3)`), but **statics — including enum constants —
+live behind `.static`** (`Hand.static.MAIN_HAND`,
+`RotationAxis.static.YP.rotationDegrees(90)`,
+`MathHelper.static.clamp(...)`). Direct static access compiles against older
+typings but is `undefined` at runtime; these types model the real reachable
+surface (verified in a live client).
+
 Internals that have a generated type but are **not** runtime globals (e.g.
 `SilentHotbar`) are reached via `Java.type`, which you can type with the
 import:

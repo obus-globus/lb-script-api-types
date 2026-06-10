@@ -168,16 +168,8 @@ if ("Vector3f as Vector3f_" not in amb_text
         'import { Vector3f as Vector3f_ } from "../types/org/joml/Vector3f";',
         1,
     )
-if F9_BEGIN not in amb_text and (
-        "export const Axis: Axis_;" in amb_text
-        or "export const RotationAxis: Axis_;" in amb_text):
-    facade = f"""    {F9_BEGIN}
-    /**
-     * The host class handle for `com.mojang.math.Axis` (bound via
-     * `Axis::class.java`). Use the static unit-axis constants — e.g.
-     * `RotationAxis.YP.rotationDegrees(90)`.
-     */
-    interface AxisClassHandle {{
+F9_FACADE = f"""    {F9_BEGIN}
+    interface AxisClassStatics {{
         /** Negative X axis. */ readonly XN: Axis_;
         /** Positive X axis. */ readonly XP: Axis_;
         /** Negative Y axis. */ readonly YN: Axis_;
@@ -187,13 +179,29 @@ if F9_BEGIN not in amb_text and (
         /** Axis along an arbitrary (normalised) vector. */
         of(axis: Vector3f_): Axis_;
     }}
+    /**
+     * The `com.mojang.math.Axis` binding is a raw `java.lang.Class` value;
+     * its statics are reachable ONLY via `.static` (GraalJS nashorn-compat,
+     * verified live): `RotationAxis.static.YP.rotationDegrees(90)`.
+     */
+    interface AxisClassHandle {{
+        readonly static: AxisClassStatics;
+    }}
     {F9_END}
 """
+if F9_BEGIN in amb_text and "AxisClassStatics" not in amb_text:
+    # migrate the old flat facade (statics claimed directly on the handle)
+    amb_text = re.sub(
+        r"    " + re.escape(F9_BEGIN) + r".*?" + re.escape(F9_END) + r"\n",
+        F9_FACADE, amb_text, count=1, flags=re.S)
+elif F9_BEGIN not in amb_text and (
+        "export const Axis: Axis_;" in amb_text
+        or "export const RotationAxis: Axis_;" in amb_text):
     intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
     if intrinsics_end in amb_text:
-        amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + facade, 1)
+        amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + F9_FACADE, 1)
     else:
-        amb_text = amb_text.replace("declare global {\n", "declare global {\n" + facade, 1)
+        amb_text = amb_text.replace("declare global {\n", "declare global {\n" + F9_FACADE, 1)
 amb_text = amb_text.replace(
     "export const Axis: Axis_;", "export const Axis: AxisClassHandle;", 1)
 amb_text = amb_text.replace(
@@ -201,6 +209,53 @@ amb_text = amb_text.replace(
     "export const RotationAxis: AxisClassHandle;", 1)
 if amb_text != _before:
     changed.append("F9 Axis/RotationAxis class-handle facade")
+
+# --- F10: class-value bindings — statics live behind `.static` ---------------
+# `putMember(name, X::class.java)` hands scripts a raw java.lang.Class VALUE.
+# Verified in a live client (GraalJS nashorn-compat): `new X(...)` constructs
+# directly, but `X.MAIN_HAND` / `X.clamp(...)` are UNDEFINED — statics (incl.
+# enum constants) are only reachable via `X.static.<member>`. The plain
+# `typeof X_` typing claimed direct statics, so e.g. `Hand.MAIN_HAND`
+# typechecked and silently passed undefined at runtime. Rewrite every
+# class-handle binding (kind per ambient/runtime-bindings.json) to
+# JavaClassBinding<typeof X_>. Skips when the sidecar is absent.
+F10_HELPER_MARK = "type JavaClassBinding"
+bindings_sidecar = PKG / "ambient/runtime-bindings.json"
+if bindings_sidecar.exists():
+    import json as _json
+    _before = amb_text
+    _bindings = _json.loads(bindings_sidecar.read_text())
+    class_binding_names = sorted(
+        n for n, b in _bindings.items() if b.get("kind") == "class-handle")
+    if F10_HELPER_MARK not in amb_text and class_binding_names:
+        helper = """    // F10: JavaClassBinding helper begin
+    /**
+     * A raw `java.lang.Class` value bound into the script context. Under
+     * GraalJS nashorn-compat it constructs directly (`new BlockPos(1, 2, 3)`),
+     * but STATIC members — including enum constants — are only reachable via
+     * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
+     * Direct static access returns `undefined` at runtime. `.static` also
+     * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
+     */
+    type JavaClassBinding<T> = (T extends abstract new (...args: infer A) => infer R
+        ? { new (...args: A): R }
+        : unknown) & { readonly static: T };
+    // F10: JavaClassBinding helper end
+"""
+        intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
+        if intrinsics_end in amb_text:
+            amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + helper, 1)
+        else:
+            amb_text = amb_text.replace("declare global {\n", "declare global {\n" + helper, 1)
+    for name in class_binding_names:
+        amb_text = re.sub(
+            rf"export const {re.escape(name)}: typeof (\w+)_;",
+            rf"export const {name}: JavaClassBinding<typeof \1_>;",
+            amb_text, count=1)
+    if amb_text != _before:
+        changed.append(f"F10 .static class bindings ({len(class_binding_names)})")
+else:
+    print("fix-binding-types: F10 skipped — no runtime-bindings.json yet", file=sys.stderr)
 
 amb.write_text(amb_text)
 

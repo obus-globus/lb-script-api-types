@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["es2023"],
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["@wunk/lb-script-api-types/ambient"],
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/main.ts"]
+}
