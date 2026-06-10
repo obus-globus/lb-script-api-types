@@ -14,7 +14,7 @@ import type { EquipmentAsset } from '../../../../../net/minecraft/world/item/equ
 export class EquipmentAssetManager extends SimpleJsonResourceReloadListener<EquipmentClientInfo> implements FabricResourceReloader {
     static MISSING: EquipmentClientInfo;
     static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
-    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<Object>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
+    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     constructor()
     // private equipmentAssets: Map<ResourceKey<EquipmentAsset>, EquipmentClientInfo>;
     // private fabric$id: Identifier;

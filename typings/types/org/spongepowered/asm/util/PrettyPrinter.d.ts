@@ -35,7 +35,7 @@ export class PrettyPrinter extends Object {
     add(arg0: PrettyPrinter$IPrettyPrintable): PrettyPrinter;
     addIndexed(arg0: Object[]): PrettyPrinter;
     // private addLine(arg0: Object): void;
-    addWithIndices(arg0: E[]): PrettyPrinter;
+    addWithIndices(arg0: (Object | null)[]): PrettyPrinter;
     addWrapped(arg0: number, arg1: string, arg2: Object[]): PrettyPrinter;
     addWrapped(arg0: string, arg1: Object[]): PrettyPrinter;
     // private append(arg0: Object, arg1: number, arg2: string): PrettyPrinter;

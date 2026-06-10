@@ -5,11 +5,11 @@ import type { SignedMessageValidator } from '../../../../net/minecraft/network/c
 import type { SignatureValidator } from '../../../../net/minecraft/util/SignatureValidator.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class SignedMessageValidator$KeyBased extends Object implements SignedMessageValidator {
-    static ACCEPT_UNSIGNED: (param0: PlayerChatMessage) => net.minecraft.network.chat.PlayerChatMessage;
+    static ACCEPT_UNSIGNED: (param0: PlayerChatMessage) => PlayerChatMessage;
     static LOGGER: Logger;
-    static REJECT_ALL: (param0: PlayerChatMessage) => net.minecraft.network.chat.PlayerChatMessage;
-    constructor(validator: SignatureValidator, expired: () => kotlin.Boolean)
-    // private expired: () => kotlin.Boolean;
+    static REJECT_ALL: (param0: PlayerChatMessage) => PlayerChatMessage;
+    constructor(validator: SignatureValidator, expired: () => boolean)
+    // private expired: () => boolean;
     // private isChainValid: boolean;
     // private lastMessage: PlayerChatMessage;
     // private validator: SignatureValidator;

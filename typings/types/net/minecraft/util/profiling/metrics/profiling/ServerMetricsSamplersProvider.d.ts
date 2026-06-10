@@ -7,8 +7,8 @@ import type { MetricsSamplerProvider } from '../../../../../../net/minecraft/uti
 import type { ProfilerSamplerAdapter } from '../../../../../../net/minecraft/util/profiling/metrics/profiling/ProfilerSamplerAdapter.d.ts'
 export class ServerMetricsSamplersProvider extends Object implements MetricsSamplerProvider {
     static runtimeIndependentSamplers(): MetricSampler[];
-    static tickTimeSampler(paramtimeSource: () => kotlin.Long): MetricSampler;
-    constructor(wallTimeSource: () => kotlin.Long, isDedicatedServer: boolean)
+    static tickTimeSampler(paramtimeSource: () => number): MetricSampler;
+    constructor(wallTimeSource: () => number, isDedicatedServer: boolean)
     // private samplerFactory: ProfilerSamplerAdapter;
     // private samplers: MetricSampler[];
     samplers(profiler: () => ProfileCollector): MetricSampler[];

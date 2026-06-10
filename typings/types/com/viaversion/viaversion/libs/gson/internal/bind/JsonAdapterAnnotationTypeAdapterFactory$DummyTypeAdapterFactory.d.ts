@@ -5,5 +5,5 @@ import type { TypeToken } from '../../../../../../../com/viaversion/viaversion/l
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class JsonAdapterAnnotationTypeAdapterFactory$DummyTypeAdapterFactory extends Object implements TypeAdapterFactory {
     private constructor()
-    create(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
 }

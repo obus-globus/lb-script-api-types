@@ -7,7 +7,7 @@ export abstract class Estimator<TCategory extends Object | number | string | boo
     // private batches: Map<TCategory, TBatch>;
     // private models: Map<TCategory, TModel>;
     addData(arg0: TPoint): void;
-    createMap(): Map<TCategory, T>;
+    createMap<T extends Object | number | string | boolean>(): Map<TCategory, T>;
     createNewDataBatch(): TBatch;
     createNewModel(): TModel;
     // private ensureModel(arg0: TCategory): TModel;

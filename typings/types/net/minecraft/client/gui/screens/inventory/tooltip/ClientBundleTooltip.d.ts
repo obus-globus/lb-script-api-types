@@ -10,7 +10,7 @@ import type { ItemStackTemplate } from '../../../../../../../net/minecraft/world
 import type { BundleContents } from '../../../../../../../net/minecraft/world/item/component/BundleContents.d.ts'
 import type { Fraction } from '../../../../../../../org/apache/commons/lang3/math/Fraction.d.ts'
 export class ClientBundleTooltip extends Object implements ClientTooltipComponent {
-    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): ClientTooltipComponent;
+    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): ClientTooltipComponent;
     static create(paramcomponent: TooltipComponent): ClientTooltipComponent;
     constructor(contents: BundleContents)
     // private contents: BundleContents;

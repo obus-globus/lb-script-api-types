@@ -8,9 +8,9 @@ export abstract class AbstractConcurrentInitializer$AbstractBuilder<I extends Ab
     static NUL: () => Object | null;
     constructor()
     readonly closer: (param0: T) => void;
-    readonly initializer: () => Exception;
+    readonly initializer: () => T;
     getCloser(): (param0: T) => void;
-    getInitializer(): () => Exception;
+    getInitializer(): () => T;
     setCloser(arg0: (param0: T) => void): B;
-    setInitializer(arg0: () => Exception): B;
+    setInitializer(arg0: () => T): B;
 }

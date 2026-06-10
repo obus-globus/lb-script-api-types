@@ -16,5 +16,5 @@ export class RecipeCollection extends Object {
     hasAnySelected(): boolean;
     hasCraftable(): boolean;
     isCraftable(recipe: RecipeDisplayId): boolean;
-    selectRecipes(stackedContents: StackedItemContents, selector: (param0: RecipeDisplay) => kotlin.Boolean): void;
+    selectRecipes(stackedContents: StackedItemContents, selector: (param0: RecipeDisplay) => boolean): void;
 }

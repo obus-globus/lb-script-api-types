@@ -6,25 +6,25 @@ import type { Pack } from '../../../../../net/minecraft/server/packs/repository/
 import type { RepositorySource } from '../../../../../net/minecraft/server/packs/repository/RepositorySource.d.ts'
 import type { FeatureFlagSet } from '../../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class PackRepository extends Object {
-    static displayPackList(parampacks: E[]): string;
+    static displayPackList(parampacks: Pack[]): string;
     constructor(sources: (param0: (param0: Pack) => void) => void[])
     // private available: { [key: string]: Pack };
     readonly selected: Pack[];
     sources: (param0: (param0: Pack) => void) => void[];
     addPack(packId: string): boolean;
     // private discoverAvailable(): { [key: string]: Pack };
-    getAvailableIds(): E[];
-    getAvailablePacks(): E[];
-    // private getAvailablePacks(ids: E[]): Stream<Pack>;
+    getAvailableIds(): string[];
+    getAvailablePacks(): Pack[];
+    // private getAvailablePacks(ids: string[]): Stream<Pack>;
     getPack(id: string): Pack;
     getRequestedFeatureFlags(): FeatureFlagSet;
-    getSelectedIds(): E[];
-    getSelectedPacks(): E[];
+    getSelectedIds(): string[];
+    getSelectedPacks(): Pack[];
     isAbleToClearAnyPack(): boolean;
     isAvailable(id: string): boolean;
     openAllSelected(): PackResources[];
-    // private rebuildSelected(selectedNames: E[]): Pack[];
+    // private rebuildSelected(selectedNames: string[]): Pack[];
     reload(): void;
     removePack(packId: string): boolean;
-    setSelected(packs: E[]): void;
+    setSelected(packs: string[]): void;
 }

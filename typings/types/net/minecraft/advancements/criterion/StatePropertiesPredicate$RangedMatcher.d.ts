@@ -3,6 +3,7 @@ import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { StatePropertiesPredicate$ValueMatcher } from '../../../../net/minecraft/advancements/criterion/StatePropertiesPredicate$ValueMatcher.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { StateHolder } from '../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
@@ -17,7 +18,7 @@ export class StatePropertiesPredicate$RangedMatcher extends Record implements St
     // private minValue: Optional<string>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    match(state: StateHolder<Object, Object>, property: Property<T>): boolean;
+    match<T extends Comparable<T>>(state: StateHolder<Object, Object>, property: Property<T>): boolean;
     maxValue(): Optional<string>;
     minValue(): Optional<string>;
     toString(): string;

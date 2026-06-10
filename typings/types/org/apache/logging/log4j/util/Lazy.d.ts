@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Lazy<T extends Object | number | string | boolean> extends Supplier<T>, Object {
     get(): T;
     isInitialized(): boolean;
-    map(function_: (param0: T) => R): Lazy<R>;
+    map<R extends Object | number | string | boolean>(function_: (param0: T) => R): Lazy<R>;
     set(newValue: T): void;
     value(): T;
 }

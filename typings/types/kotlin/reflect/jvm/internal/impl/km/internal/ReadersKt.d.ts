@@ -13,8 +13,8 @@ export class ReadersKt extends Object {
     static getDefaultPropertyAccessorFlags(paramarg0: number): number;
     static getPropertyGetterFlags(paramarg0: ProtoBuf$Property): number;
     static getPropertySetterFlags(paramarg0: ProtoBuf$Property): number;
-    static toKmClass(paramarg0: ProtoBuf$Class, paramarg1: NameResolver, paramarg2: boolean, paramarg3: (Object | null)[]): KmClass;
+    static toKmClass(paramarg0: ProtoBuf$Class, paramarg1: NameResolver, paramarg2: boolean, paramarg3: Object[]): KmClass;
     static toKmLambda(paramarg0: ProtoBuf$Function, paramarg1: NameResolver, paramarg2: boolean): KmLambda;
-    static toKmPackage(paramarg0: ProtoBuf$Package, paramarg1: NameResolver, paramarg2: boolean, paramarg3: (Object | null)[]): KmPackage;
+    static toKmPackage(paramarg0: ProtoBuf$Package, paramarg1: NameResolver, paramarg2: boolean, paramarg3: Object[]): KmPackage;
     static toKmProperty(paramarg0: ProtoBuf$Property, paramarg1: ReadContext): KmProperty;
 }

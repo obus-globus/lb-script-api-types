@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
+import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DescriptorVisibility } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DescriptorVisibility.d.ts'
@@ -35,7 +36,7 @@ export abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     getKind(): CallableMemberDescriptor$Kind;
     getModality(): Modality;
     getOriginal(): PropertyAccessorDescriptor;
-    getOverriddenDescriptors(arg0: boolean): E[];
+    getOverriddenDescriptors(arg0: boolean): PropertyAccessorDescriptor[];
     getTypeParameters(): TypeParameterDescriptor[];
     getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getVisibility(): DescriptorVisibility;
@@ -54,7 +55,7 @@ export abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<FunctionDescriptor>;
     setDefault(arg0: boolean): void;
     setInitialSignatureDescriptor(arg0: FunctionDescriptor): void;
-    setOverriddenDescriptors(arg0: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
     setVisibility(arg0: DescriptorVisibility): void;
     substitute(arg0: TypeSubstitutor): FunctionDescriptor;
 }

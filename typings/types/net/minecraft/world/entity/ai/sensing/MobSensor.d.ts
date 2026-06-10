@@ -9,11 +9,11 @@ export class MobSensor<T extends LivingEntity> extends Sensor<T> {
     static isEntityAttackable(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityAttackableIgnoringLineOfSight(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityTargetable(paramlevel: ServerLevel, parambody: LivingEntity, paramentity: LivingEntity): boolean;
-    static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => kotlin.Boolean;
-    constructor(scanRate: number, mobTest: (param0: T, param1: LivingEntity) => kotlin.Boolean, readyTest: (param0: T) => kotlin.Boolean, toSet: MemoryModuleType<boolean>, memoryTimeToLive: number)
+    static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
+    constructor(scanRate: number, mobTest: (param0: T, param1: LivingEntity) => boolean, readyTest: (param0: T) => boolean, toSet: MemoryModuleType<boolean>, memoryTimeToLive: number)
     // private memoryTimeToLive: number;
-    // private mobTest: (param0: T, param1: LivingEntity) => kotlin.Boolean;
-    // private readyTest: (param0: T) => kotlin.Boolean;
+    // private mobTest: (param0: T, param1: LivingEntity) => boolean;
+    // private readyTest: (param0: T) => boolean;
     // private toSet: MemoryModuleType<boolean>;
     checkForMobsNearby(body: T): void;
     clearMemory(body: T): void;

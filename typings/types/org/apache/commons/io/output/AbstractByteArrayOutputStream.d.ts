@@ -21,7 +21,7 @@ export abstract class AbstractByteArrayOutputStream<T extends AbstractByteArrayO
     toByteArray(): number[];
     toByteArrayImpl(): number[];
     toInputStream(): InputStream;
-    toInputStream(arg0: (param0: T, param1: number[], param2: number) => unknown): InputStream;
+    toInputStream(arg0: (param0: number[], param1: number, param2: number) => T): InputStream;
     toString(): string;
     toString(arg0: Charset): string;
     toString(arg0: string): string;

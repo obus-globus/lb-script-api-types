@@ -7,5 +7,5 @@ export class DataGenerator$PackGenerator extends Object {
     // private output: PackOutput;
     // private providerPrefix: string;
     // private toRun: boolean;
-    addProvider<T extends DataProvider>(factory: (param0: T) => unknown): T;
+    addProvider<T extends DataProvider>(factory: (param0: PackOutput) => T): T;
 }

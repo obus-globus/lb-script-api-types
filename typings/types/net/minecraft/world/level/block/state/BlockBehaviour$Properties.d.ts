@@ -25,6 +25,7 @@ import type { NoteBlockInstrument } from '../../../../../../net/minecraft/world/
 import type { MapColor } from '../../../../../../net/minecraft/world/level/material/MapColor.d.ts'
 import type { PushReaction } from '../../../../../../net/minecraft/world/level/material/PushReaction.d.ts'
 import type { LootTable } from '../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
+import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class BlockBehaviour$Properties extends Object implements FabricBlock$FabricProperties {
     static CODEC: Codec<BlockBehaviour$Properties>;
     static of(): BlockBehaviour$Properties;
@@ -32,11 +33,11 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     static ofLegacyCopy(paramblock: BlockBehaviour): BlockBehaviour$Properties;
     constructor()
     // private canOcclude: boolean;
-    // private descriptionId: (param0: Block) => string;
+    // private descriptionId: (param0: ResourceKey<Block>) => string;
     // private destroyTime: number;
-    // private drops: (param0: Block) => Optional<ResourceKey<LootTable>>;
+    // private drops: (param0: ResourceKey<Block>) => Optional<ResourceKey<LootTable>>;
     // private dynamicShape: boolean;
-    // private emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
+    // private emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
     // private explosionResistance: number;
     // private forceSolidOff: boolean;
     // private forceSolidOn: boolean;
@@ -47,16 +48,16 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     // private instrument: NoteBlockInstrument;
     // private isAir: boolean;
     // private isRandomlyTicking: boolean;
-    // private isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
-    // private isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
-    // private isValidSpawn: (param0: EntityType<Object>, param1: BlockState, param2: BlockGetter, param3: BlockPos) => kotlin.Boolean;
-    // private isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
+    // private isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
+    // private isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
+    // private isValidSpawn: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: EntityType<Object>) => boolean;
+    // private isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
     // private jumpFactor: number;
-    // private lightEmission: (param0: BlockState) => kotlin.Int;
+    // private lightEmission: (param0: BlockState) => number;
     // private liquid: boolean;
     // private mapColor: (param0: BlockState) => MapColor;
-    // private offsetFunction: (param0: BlockState, param1: BlockPos) => net.minecraft.world.phys.Vec3;
-    // private postProcess: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => net.minecraft.core.BlockPos;
+    // private offsetFunction: (param0: BlockState, param1: BlockPos) => Vec3;
+    // private postProcess: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => BlockPos;
     // private pushReaction: PushReaction;
     // private replaceable: boolean;
     // private requiredFeatures: FeatureFlagSet;
@@ -72,7 +73,7 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     dynamicShape(): BlockBehaviour$Properties;
     effectiveDescriptionId(): string;
     effectiveDrops(): Optional<ResourceKey<LootTable>>;
-    emissiveRendering(emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): BlockBehaviour$Properties;
+    emissiveRendering(emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
     explosionResistance(explosionResistance: number): BlockBehaviour$Properties;
     forceSolidOff(): BlockBehaviour$Properties;
     forceSolidOn(): BlockBehaviour$Properties;
@@ -80,12 +81,12 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     ignitedByLava(): BlockBehaviour$Properties;
     instabreak(): BlockBehaviour$Properties;
     instrument(instrument: NoteBlockInstrument): BlockBehaviour$Properties;
-    isRedstoneConductor(isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): BlockBehaviour$Properties;
-    isSuffocating(isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): BlockBehaviour$Properties;
-    isValidSpawn(isValidSpawn: (param0: EntityType<Object>, param1: BlockState, param2: BlockGetter, param3: BlockPos) => kotlin.Boolean): BlockBehaviour$Properties;
-    isViewBlocking(isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): BlockBehaviour$Properties;
+    isRedstoneConductor(isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
+    isSuffocating(isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
+    isValidSpawn(isValidSpawn: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: EntityType<Object>) => boolean): BlockBehaviour$Properties;
+    isViewBlocking(isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
     jumpFactor(jumpFactor: number): BlockBehaviour$Properties;
-    lightLevel(lightEmission: (param0: BlockState) => kotlin.Int): BlockBehaviour$Properties;
+    lightLevel(lightEmission: (param0: BlockState) => number): BlockBehaviour$Properties;
     liquid(): BlockBehaviour$Properties;
     mapColor(mapColor: (param0: BlockState) => MapColor): BlockBehaviour$Properties;
     mapColor(dyeColor: DyeColor): BlockBehaviour$Properties;
@@ -97,7 +98,7 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     offsetType(offsetType: BlockBehaviour$OffsetType): BlockBehaviour$Properties;
     overrideDescription(descriptionId: string): BlockBehaviour$Properties;
     overrideLootTable(table: Optional<ResourceKey<LootTable>>): BlockBehaviour$Properties;
-    postProcess(postProcess: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => net.minecraft.core.BlockPos): BlockBehaviour$Properties;
+    postProcess(postProcess: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => BlockPos): BlockBehaviour$Properties;
     pushReaction(pushReaction: PushReaction): BlockBehaviour$Properties;
     randomTicks(): BlockBehaviour$Properties;
     replaceable(): BlockBehaviour$Properties;

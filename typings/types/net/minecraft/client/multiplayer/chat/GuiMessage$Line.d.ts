@@ -8,12 +8,12 @@ import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts
 import type { FormattedCharSequence } from '../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class GuiMessage$Line extends Record implements GuiMessageLineAddition {
-    // private content: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private content: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private endOfEntry: boolean;
     // private liquid_bounce$id: string;
     // private parent: GuiMessage;
     addedTime(): number;
-    content(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    content(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     endOfEntry(): boolean;
     equals(o: Object | null): boolean;
     getTagIconLeft(font: Font): number;

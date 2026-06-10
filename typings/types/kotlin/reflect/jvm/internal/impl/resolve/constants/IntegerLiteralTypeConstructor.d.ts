@@ -21,7 +21,7 @@ export class IntegerLiteralTypeConstructor extends Object implements TypeConstru
     getDeclarationDescriptor(): ClassifierDescriptor;
     getParameters(): TypeParameterDescriptor[];
     getPossibleTypes(): KotlinType[];
-    getSupertypes(): E[];
+    getSupertypes(): KotlinType[];
     // private getSupertypes(): KotlinType[];
     // private isContainsOnlyUnsignedTypes(): boolean;
     isDenotable(): boolean;

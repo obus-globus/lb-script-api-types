@@ -63,7 +63,7 @@ export class Instant extends Object implements Serializable, Temporal, TemporalA
     plusMillis(arg0: number): Instant;
     plusNanos(arg0: number): Instant;
     plusSeconds(arg0: number): Instant;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     // private secondsUntil(arg0: Instant): number;
@@ -72,9 +72,9 @@ export class Instant extends Object implements Serializable, Temporal, TemporalA
     truncatedTo(arg0: TemporalUnit): Instant;
     until(arg0: Instant): Duration;
     until(arg0: Temporal, arg1: TemporalUnit): number;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Instant;
+    with(arg0: (param0: Temporal) => Temporal): Instant;
     with(arg0: TemporalField, arg1: number): Instant;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     writeExternal(arg0: DataOutput): void;
     // private writeReplace(): Object;
 }

@@ -8,7 +8,7 @@ export class UIntProgressionIterator extends Object implements Iterator<UInt> {
     // private hasNext: boolean;
     // private next: UInt;
     // private step: UInt;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: UInt) => void): void;
     hasNext(): boolean;
     next(): UInt;
 }

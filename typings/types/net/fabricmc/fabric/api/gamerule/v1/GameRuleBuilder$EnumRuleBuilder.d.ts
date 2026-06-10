@@ -21,7 +21,7 @@ export class GameRuleBuilder$EnumRuleBuilder<E extends Enum<E>> extends GameRule
     build(): GameRule<E>;
     category(arg0: GameRuleCategory): GameRuleBuilder$EnumRuleBuilder<E>;
     codec(arg0: Codec<E>): GameRuleBuilder$EnumRuleBuilder<E>;
-    commandResultSupplier(arg0: (param0: E) => kotlin.Int): GameRuleBuilder$EnumRuleBuilder<E>;
+    commandResultSupplier(arg0: (param0: E) => number): GameRuleBuilder$EnumRuleBuilder<E>;
     requiredFeatures(arg0: FeatureFlagSet): GameRuleBuilder$EnumRuleBuilder<E>;
     supportedValues(arg0: E[]): GameRuleBuilder$EnumRuleBuilder<E>;
 }

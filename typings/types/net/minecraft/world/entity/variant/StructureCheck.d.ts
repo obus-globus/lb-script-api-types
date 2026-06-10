@@ -5,15 +5,16 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { SpawnCondition } from '../../../../../net/minecraft/world/entity/variant/SpawnCondition.d.ts'
 import type { SpawnContext } from '../../../../../net/minecraft/world/entity/variant/SpawnContext.d.ts'
+import type { Structure } from '../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 export class StructureCheck extends Record implements SpawnCondition {
     static CODEC: Codec<SpawnCondition>;
     static MAP_CODEC: MapCodec<StructureCheck>;
-    constructor(requiredStructures: Holder<T>[])
-    // private requiredStructures: Holder<T>[];
+    constructor(requiredStructures: Holder<Structure>[])
+    // private requiredStructures: Holder<Structure>[];
     codec(): MapCodec<StructureCheck>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    requiredStructures(): Holder<T>[];
+    requiredStructures(): Holder<Structure>[];
     test(context: SpawnContext): boolean;
     toString(): string;
 }

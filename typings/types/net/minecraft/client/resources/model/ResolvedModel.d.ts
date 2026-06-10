@@ -12,7 +12,7 @@ import type { TextureSlots } from '../../../../../net/minecraft/client/resources
 export interface ResolvedModel extends Object, ModelDebugName {
     bakeTopGeometry(textureSlots: TextureSlots, baker: ModelBaker, state: ModelState): QuadCollection;
     getTopAmbientOcclusion(): boolean;
-    getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
+    getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
     getTopGuiLight(): UnbakedModel$GuiLight;
     getTopTextureSlots(): TextureSlots;
     getTopTransforms(): ItemTransforms;

@@ -15,7 +15,7 @@ export abstract class X509Certificate extends Certificate implements DEREncodabl
     checkValidity(arg0: Date): void;
     getBasicConstraints(): number;
     getExtendedKeyUsage(): string[];
-    getIssuerAlternativeNames(): E[];
+    getIssuerAlternativeNames(): (Object | null)[][];
     getIssuerDN(): Principal;
     getIssuerUniqueID(): (Object | null)[];
     getIssuerX500Principal(): X500Principal;
@@ -27,7 +27,7 @@ export abstract class X509Certificate extends Certificate implements DEREncodabl
     getSigAlgOID(): string;
     getSigAlgParams(): number[];
     getSignature(): number[];
-    getSubjectAlternativeNames(): E[];
+    getSubjectAlternativeNames(): (Object | null)[][];
     getSubjectDN(): Principal;
     getSubjectUniqueID(): (Object | null)[];
     getSubjectX500Principal(): X500Principal;

@@ -15,7 +15,7 @@ export abstract class OptionBuilderImpl<O extends Option> extends Object impleme
     // private name: Component;
     build(): O;
     buildWithBaseOption(arg0: Option): O;
-    getDependencies(): E[];
+    getDependencies(): Identifier[];
     getEnabled(): DependentValue<boolean>;
     getFirstNotNull<V extends Object | number | string | boolean>(arg0: V, arg1: (param0: O) => V): V;
     getName(): Component;

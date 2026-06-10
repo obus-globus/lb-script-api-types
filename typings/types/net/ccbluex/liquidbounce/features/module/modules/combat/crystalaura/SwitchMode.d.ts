@@ -9,7 +9,7 @@ export class SwitchMode extends Enum<SwitchMode> implements Tagged {
     static NORMAL: SwitchMode;
     static SILENT: SwitchMode;
     static getEntries(): SwitchMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SwitchMode;

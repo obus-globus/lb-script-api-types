@@ -8,9 +8,9 @@ export class CompositePackageFragmentProvider extends Object implements PackageF
     constructor(arg0: PackageFragmentProvider[], arg1: string)
     // private debugName: string;
     // private providers: PackageFragmentProvider[];
-    collectPackageFragments(arg0: FqName, arg1: E[]): void;
+    collectPackageFragments(arg0: FqName, arg1: PackageFragmentDescriptor[]): void;
     getPackageFragments(arg0: FqName): PackageFragmentDescriptor[];
-    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): E[];
+    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];
     isEmpty(arg0: FqName): boolean;
     toString(): string;
 }

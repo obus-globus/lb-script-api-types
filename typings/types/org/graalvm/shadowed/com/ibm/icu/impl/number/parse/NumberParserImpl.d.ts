@@ -19,7 +19,7 @@ export class NumberParserImpl extends Object {
     // private matchers: NumberParseMatcher[];
     readonly parseFlags: number;
     addMatcher(matcher: NumberParseMatcher): void;
-    addMatchers(matchers: E[]): void;
+    addMatchers(matchers: NumberParseMatcher[]): void;
     freeze(): void;
     getParseFlags(): number;
     parse(input: string, greedy: boolean, result: ParsedNumber): void;

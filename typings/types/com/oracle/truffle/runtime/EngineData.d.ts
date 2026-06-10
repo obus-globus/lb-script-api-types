@@ -25,7 +25,7 @@ export class EngineData extends Object {
     callTargetStatistics: boolean;
     callThresholdInFirstTier: number;
     callThresholdInInterpreter: number;
-    cancelledPredicate: () => kotlin.Boolean;
+    cancelledPredicate: () => boolean;
     readonly closed: boolean;
     compilation: boolean;
     compilationFailureAction: OptimizedRuntimeOptions$ExceptionAction;
@@ -81,7 +81,7 @@ export class EngineData extends Object {
     ensureClosed(): void;
     enterLanguage(language: TruffleLanguage<Object>): Object;
     finalizeStore(): Object;
-    getCallTargets(): E[];
+    getCallTargets(): OptimizedCallTarget[];
     // private getCompileOnly(): Pair<string[], string[]>;
     getCompilerOptions(): { [key: string]: string };
     getEngineLocal<T extends Object | number | string | boolean>(symbol: Class<T>): T;

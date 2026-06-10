@@ -2,6 +2,7 @@ import type { Char2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil/
 import type { Char2ObjectOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2ObjectOpenCustomHashMap$MapSpliterator.d.ts'
 import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ObjectOpenCustomHashMap$EntrySpliterator extends Char2ObjectOpenCustomHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Char2ObjectMap$Entry<V>> {
     static CONCURRENT: number;
     static DISTINCT: number;
@@ -13,8 +14,8 @@ export class Char2ObjectOpenCustomHashMap$EntrySpliterator extends Char2ObjectOp
     static SUBSIZED: number;
     constructor(null_: Char2ObjectOpenCustomHashMap$EntrySpliterator)
     constructor(null_: Char2ObjectOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex(arg0: (param0: Char2ObjectMap$Entry<V>) => void, arg1: number): void;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Char2ObjectMap$Entry<V>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit(arg0: number, arg1: number, arg2: boolean): Char2ObjectOpenCustomHashMap$EntrySpliterator;
+    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Char2ObjectOpenCustomHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

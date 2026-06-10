@@ -102,10 +102,10 @@ export class JSFunctionObject$Bound extends JSFunctionObject$BoundOrWrapped {
     static setPrototype(paramobj: JSDynamicObject, paramnewPrototype: JSDynamicObject, paramjsclassProfile: JSClassProfile): boolean;
     static setWithReceiver(paramobj: JSDynamicObject, paramkey: Object, paramvalue: Object, paramreceiver: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile, paramencapsulatingNode: Node): boolean;
     static setWithReceiver(paramobj: JSDynamicObject, paramindex: number, paramvalue: Object, paramreceiver: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile, paramencapsulatingNode: Node): boolean;
-    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => kotlin.Boolean): boolean;
+    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => boolean): boolean;
     static toPrimitive(paramobj: JSDynamicObject): Object;
     static toPrimitive(paramobj: JSDynamicObject, paramhint: JSToPrimitiveNode$Hint): Object;
-    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => kotlin.Int): boolean;
+    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
     constructor(shape: Shape, proto: JSDynamicObject, functionData: JSFunctionData, realm: JSRealm, classPrototype: Object, boundTargetFunction: Object, boundThis: Object, boundArguments: Object[])
     readonly boundArguments: Object[];
     readonly boundTargetFunction: Object;

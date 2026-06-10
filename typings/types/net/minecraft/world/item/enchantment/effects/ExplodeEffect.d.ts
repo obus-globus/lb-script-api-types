@@ -17,18 +17,19 @@ import type { LevelBasedValue } from '../../../../../../net/minecraft/world/item
 import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentEntityEffect.d.ts'
 import type { EnchantmentLocationBasedEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentLocationBasedEffect.d.ts'
 import type { Level$ExplosionInteraction } from '../../../../../../net/minecraft/world/level/Level$ExplosionInteraction.d.ts'
+import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ExplodeEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<ExplodeEffect>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     // private attributeToUser: boolean;
     // private blockInteraction: Level$ExplosionInteraction;
     // private blockParticles: WeightedList<ExplosionParticleInfo>;
     // private createFire: boolean;
     // private damageType: Optional<Holder<DamageType>>;
-    // private immuneBlocks: Optional<Holder<T>[]>;
+    // private immuneBlocks: Optional<Holder<Block>[]>;
     // private knockbackMultiplier: Optional<LevelBasedValue>;
     // private largeParticle: ParticleOptions;
     // private offset: Vec3;
@@ -45,7 +46,7 @@ export class ExplodeEffect extends Record implements EnchantmentEntityEffect {
     equals(o: Object | null): boolean;
     // private getDamageSource(entity: Entity, position: Vec3): DamageSource;
     hashCode(): number;
-    immuneBlocks(): Optional<Holder<T>[]>;
+    immuneBlocks(): Optional<Holder<Block>[]>;
     knockbackMultiplier(): Optional<LevelBasedValue>;
     largeParticle(): ParticleOptions;
     offset(): Vec3;

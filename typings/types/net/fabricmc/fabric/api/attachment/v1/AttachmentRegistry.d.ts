@@ -8,7 +8,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export class AttachmentRegistry extends Object {
     static builder(): AttachmentRegistry$Builder<Object>;
     static create(paramarg0: Identifier): AttachmentType<Object>;
-    static create(paramarg0: Identifier, paramarg1: (param0: Object | null) => void): AttachmentType<Object>;
+    static create(paramarg0: Identifier, paramarg1: (param0: AttachmentRegistry$Builder<Object>) => void): AttachmentType<Object>;
     static createDefaulted(paramarg0: Identifier, paramarg1: () => Object | null): AttachmentType<Object>;
     static createPersistent(paramarg0: Identifier, paramarg1: Codec<Object>): AttachmentType<Object>;
     private constructor()

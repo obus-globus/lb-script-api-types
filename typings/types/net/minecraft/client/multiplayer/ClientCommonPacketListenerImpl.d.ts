@@ -85,7 +85,7 @@ export abstract class ClientCommonPacketListenerImpl extends Object implements P
     onPacketError(packet: Packet<PacketListener>, cause: Exception): void;
     send(packet: Packet<Object>): void;
     sendDeferredPackets(): void;
-    // private sendWhen(packet: Packet<ServerboundPacketListener>, condition: () => kotlin.Boolean, expireAfterDuration: Duration): void;
+    // private sendWhen(packet: Packet<ServerboundPacketListener>, condition: () => boolean, expireAfterDuration: Duration): void;
     serverBrand(): string;
     serverLinks(): ServerLinks;
     shouldHandleMessage(packet: Packet<Object>): boolean;

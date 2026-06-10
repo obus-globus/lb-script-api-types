@@ -55,7 +55,7 @@ export class TruffleAdapter extends Object implements VirtualLanguageServerFileP
     documentHighlight(uri: URI, line: number, character: number): Future<DocumentHighlight[]>;
     // private findLanguageInfo(langId: string, truffleFile: TruffleFile): LanguageInfo;
     getCoverage(uri: URI): Future<Coverage>;
-    getExtensionCommandNames(): E[];
+    getExtensionCommandNames(): string[];
     // private getExternalCommands(): LSPCommand[];
     getLanguageId(uri: URI): string;
     getLogger(): TruffleLogger;

@@ -17,12 +17,12 @@ export class EmptyLevelChunk extends LevelChunk {
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
-    static problemPath(parampos: ChunkPos): () => kotlin.String;
+    static problemPath(parampos: ChunkPos): () => string;
     constructor(level: Level, pos: ChunkPos, biome: Holder<Biome>)
     // private biome: Holder<Biome>;
     addAndRegisterBlockEntity(blockEntity: BlockEntity): void;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos, creationType: LevelChunk$EntityCreationType): BlockEntity;
     getBlockState(pos: BlockPos): BlockState;
     getFluidState(arg0: number, arg1: number, arg2: number): FluidState;

@@ -1,3 +1,4 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { ServiceLoader } from '../../../../org/apache/tika/config/ServiceLoader.d.ts'
 import type { EncodingDetector } from '../../../../org/apache/tika/detect/EncodingDetector.d.ts'
@@ -13,8 +14,8 @@ export class DefaultParser extends CompositeParser {
     constructor(arg0: MediaTypeRegistry)
     constructor(arg0: MediaTypeRegistry, arg1: ClassLoader)
     constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader)
-    constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: E[])
-    constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: E[], arg3: EncodingDetector, arg4: Renderer)
+    constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: Class<Parser>[])
+    constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: Class<Parser>[], arg3: EncodingDetector, arg4: Renderer)
     constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: EncodingDetector, arg3: Renderer)
     // private loader: ServiceLoader;
     getAllComponentParsers(): Parser[];

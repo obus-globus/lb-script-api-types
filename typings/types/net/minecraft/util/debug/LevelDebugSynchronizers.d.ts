@@ -27,13 +27,13 @@ export class LevelDebugSynchronizers extends Object {
     broadcastEventToTracking<T extends Object | number | string | boolean>(blockPos: BlockPos, subscription: DebugSubscription<T>, value: T): void;
     // private broadcastToTracking(trackedEntity: Entity, subscription: DebugSubscription<Object>, packet: Packet<ClientGamePacketListener>): void;
     // private broadcastToTracking(trackedChunk: ChunkPos, subscription: DebugSubscription<Object>, packet: Packet<ClientGamePacketListener>): void;
-    clearBlockValue(blockPos: BlockPos, subscription: DebugSubscription<T>): void;
-    clearEntityValue(entity: Entity, subscription: DebugSubscription<T>): void;
+    clearBlockValue<T extends Object | number | string | boolean>(blockPos: BlockPos, subscription: DebugSubscription<T>): void;
+    clearEntityValue<T extends Object | number | string | boolean>(entity: Entity, subscription: DebugSubscription<T>): void;
     dropBlockEntity(blockPos: BlockPos): void;
     dropChunk(chunkPos: ChunkPos): void;
     dropEntity(entity: Entity): void;
     dropPoi(pos: BlockPos): void;
-    // private getSourceSynchronizer(subscription: DebugSubscription<T>): TrackingDebugSynchronizer$SourceSynchronizer<T>;
+    // private getSourceSynchronizer<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>): TrackingDebugSynchronizer$SourceSynchronizer<T>;
     hasAnySubscriberFor(subscription: DebugSubscription<Object>): boolean;
     registerBlockEntity(blockEntity: BlockEntity): void;
     registerChunk(chunk: LevelChunk): void;

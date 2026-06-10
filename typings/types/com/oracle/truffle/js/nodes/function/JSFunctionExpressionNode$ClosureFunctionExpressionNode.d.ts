@@ -9,8 +9,8 @@ import type { JSFunctionData } from '../../../../../../com/oracle/truffle/js/run
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionExpressionNode$ClosureFunctionExpressionNode extends JSFunctionExpressionNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramfunction: JSFunctionData): JSFunctionExpressionNode;
     static create(paramfunction: JSFunctionData, paramblockScopeSlot: JSFrameSlot): JSFunctionExpressionNode;
     static createLexicalThis(paramfunction: JSFunctionData, paramblockScopeSlot: JSFrameSlot, paramthisNode: JavaScriptNode): JSFunctionExpressionNode;

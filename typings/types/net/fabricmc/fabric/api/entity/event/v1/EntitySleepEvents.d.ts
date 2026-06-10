@@ -10,21 +10,23 @@ import type { EntitySleepEvents$SetBedOccupationState } from '../../../../../../
 import type { EntitySleepEvents$StartSleeping } from '../../../../../../../net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents$StartSleeping.d.ts'
 import type { EntitySleepEvents$StopSleeping } from '../../../../../../../net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents$StopSleeping.d.ts'
 import type { Event } from '../../../../../../../net/fabricmc/fabric/api/event/Event.d.ts'
+import type { EventResult } from '../../../../../../../net/fabricmc/fabric/api/util/EventResult.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Player } from '../../../../../../../net/minecraft/world/entity/player/Player.d.ts'
+import type { Player$BedSleepingProblem } from '../../../../../../../net/minecraft/world/entity/player/Player$BedSleepingProblem.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EntitySleepEvents extends Object {
-    static ALLOW_BED: Event<(param0: LivingEntity, param1: BlockPos, param2: BlockState, param3: boolean) => net.fabricmc.fabric.api.util.EventResult>;
-    static ALLOW_NEARBY_MONSTERS: Event<(param0: Player, param1: BlockPos, param2: boolean) => net.fabricmc.fabric.api.util.EventResult>;
-    static ALLOW_RESETTING_TIME: Event<(param0: Player) => kotlin.Boolean>;
-    static ALLOW_SETTING_SPAWN: Event<(param0: Player, param1: BlockPos) => kotlin.Boolean>;
-    static ALLOW_SLEEPING: Event<(param0: Player, param1: BlockPos) => net.minecraft.world.entity.player.Player.BedSleepingProblem>;
-    static MODIFY_SLEEPING_DIRECTION: Event<(param0: LivingEntity, param1: BlockPos, param2: Direction) => net.minecraft.core.Direction>;
-    static MODIFY_WAKE_UP_POSITION: Event<(param0: LivingEntity, param1: BlockPos, param2: BlockState, param3: Vec3) => net.minecraft.world.phys.Vec3>;
-    static SET_BED_OCCUPATION_STATE: Event<(param0: LivingEntity, param1: BlockPos, param2: BlockState, param3: boolean) => kotlin.Boolean>;
+    static ALLOW_BED: Event<(param0: LivingEntity, param1: BlockPos, param2: BlockState, param3: boolean) => EventResult>;
+    static ALLOW_NEARBY_MONSTERS: Event<(param0: Player, param1: BlockPos, param2: boolean) => EventResult>;
+    static ALLOW_RESETTING_TIME: Event<(param0: Player) => boolean>;
+    static ALLOW_SETTING_SPAWN: Event<(param0: Player, param1: BlockPos) => boolean>;
+    static ALLOW_SLEEPING: Event<(param0: Player, param1: BlockPos) => Player$BedSleepingProblem>;
+    static MODIFY_SLEEPING_DIRECTION: Event<(param0: LivingEntity, param1: BlockPos, param2: Direction) => Direction>;
+    static MODIFY_WAKE_UP_POSITION: Event<(param0: LivingEntity, param1: BlockPos, param2: BlockState, param3: Vec3) => Vec3>;
+    static SET_BED_OCCUPATION_STATE: Event<(param0: LivingEntity, param1: BlockPos, param2: BlockState, param3: boolean) => boolean>;
     static START_SLEEPING: Event<(param0: LivingEntity, param1: BlockPos) => void>;
     static STOP_SLEEPING: Event<(param0: LivingEntity, param1: BlockPos) => void>;
     private constructor()

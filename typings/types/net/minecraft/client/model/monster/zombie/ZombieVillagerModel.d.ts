@@ -10,7 +10,7 @@ import type { MeshTransformer } from '../../../../../../net/minecraft/client/mod
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { ZombieVillagerRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/ZombieVillagerRenderState.d.ts'
 export class ZombieVillagerModel<S extends ZombieVillagerRenderState> extends HumanoidModel<S> implements VillagerLikeModel<S> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

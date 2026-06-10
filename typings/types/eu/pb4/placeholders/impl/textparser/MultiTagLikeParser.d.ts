@@ -24,8 +24,8 @@ export class MultiTagLikeParser extends TagLikeParser {
     static of(paramarg0: Object | null): TagLikeParser;
     static placeholder(paramarg0: TagLikeParser$Format, paramarg1: ParserContext$Key<Object>, paramarg2: Placeholders$PlaceholderGetter<Object>): TagLikeParser;
     static placeholder(paramarg0: TagLikeParser$Format, paramarg1: (param0: string) => TextNode): TagLikeParser;
-    static placeholderText(paramarg0: TagLikeParser$Format, paramarg1: ParserContext$Key<Object>): TagLikeParser;
-    static placeholderText(paramarg0: TagLikeParser$Format, paramarg1: string[], paramarg2: ParserContext$Key<Object>): TagLikeParser;
+    static placeholderText(paramarg0: TagLikeParser$Format, paramarg1: ParserContext$Key<(param0: string) => Component>): TagLikeParser;
+    static placeholderText(paramarg0: TagLikeParser$Format, paramarg1: string[], paramarg2: ParserContext$Key<(param0: string) => Component>): TagLikeParser;
     static placeholderText(paramarg0: TagLikeParser$Format, paramarg1: (param0: string) => Component): TagLikeParser;
     constructor(arg0: Pair<TagLikeParser$Format, TagLikeParser$Provider>[])
     // private pairs: Pair<TagLikeParser$Format, TagLikeParser$Provider>[];

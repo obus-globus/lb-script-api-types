@@ -29,6 +29,6 @@ export class BTreeQueue<E extends Object | number | string | boolean> extends Ob
     // private removeFirstRoot(): E;
     size(): number;
     toArray(): Object[];
-    toArray(a: T[]): T[];
+    toArray<T extends Object | number | string | boolean>(a: T[]): T[];
     // private toArray(result: Object[], from: number, node: BTreeQueue$Node<E>): void;
 }

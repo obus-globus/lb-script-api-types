@@ -12,7 +12,7 @@ export class SwingMode extends Enum<SwingMode> implements Consumer<InteractionHa
     static HIDE_CLIENT: SwingMode;
     static HIDE_SERVER: SwingMode;
     static getEntries(): SwingMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SwingMode;
@@ -21,7 +21,7 @@ export class SwingMode extends Enum<SwingMode> implements Consumer<InteractionHa
     readonly serverSwing: boolean;
     readonly tag: string;
     accept(hand: InteractionHand): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: InteractionHand) => void): (param0: InteractionHand) => void;
     swing(hand: InteractionHand): void;
     name(): "DO_NOT_HIDE" | "HIDE_BOTH" | "HIDE_CLIENT" | "HIDE_SERVER";
 }

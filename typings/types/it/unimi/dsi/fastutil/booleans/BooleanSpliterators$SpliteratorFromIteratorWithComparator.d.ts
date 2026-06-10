@@ -12,9 +12,9 @@ export class BooleanSpliterators$SpliteratorFromIteratorWithComparator extends B
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: BooleanIterator, arg1: number, arg2: (param0: boolean, param1: boolean) => kotlin.Int)
-    constructor(arg0: BooleanIterator, arg1: number, arg2: number, arg3: (param0: boolean, param1: boolean) => kotlin.Int)
-    readonly comparator: (param0: boolean, param1: boolean) => kotlin.Int;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    constructor(arg0: BooleanIterator, arg1: number, arg2: (param0: boolean, param1: boolean) => number)
+    constructor(arg0: BooleanIterator, arg1: number, arg2: number, arg3: (param0: boolean, param1: boolean) => number)
+    readonly comparator: (param0: boolean, param1: boolean) => number;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     makeForSplit(arg0: (Object | null)[], arg1: number): BooleanSpliterator;
 }

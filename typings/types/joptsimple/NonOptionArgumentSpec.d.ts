@@ -18,8 +18,8 @@ export class NonOptionArgumentSpec<V extends Object | number | string | boolean>
     describedAs(arg0: string): NonOptionArgumentSpec<V>;
     handleOption(arg0: OptionParser, arg1: ArgumentList, arg2: OptionSet, arg3: string): void;
     isRequired(): boolean;
-    ofType(arg0: Class<T>): NonOptionArgumentSpec<T>;
+    ofType<T extends Object | number | string | boolean>(arg0: Class<T>): NonOptionArgumentSpec<T>;
     representsNonOptions(): boolean;
     requiresArgument(): boolean;
-    withValuesConvertedBy(arg0: ValueConverter<T>): NonOptionArgumentSpec<T>;
+    withValuesConvertedBy<T extends Object | number | string | boolean>(arg0: ValueConverter<T>): NonOptionArgumentSpec<T>;
 }

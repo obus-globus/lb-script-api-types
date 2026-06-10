@@ -17,20 +17,20 @@ import type { ServerTextFilter$MessageEncoder } from '../../../../net/minecraft/
 import type { TextFilter } from '../../../../net/minecraft/server/network/TextFilter.d.ts'
 export abstract class ServerTextFilter extends Object implements AutoCloseable {
     static createFromConfig(paramconfig: DedicatedServerProperties): ServerTextFilter;
-    constructor(chatEndpoint: URL, chatEncoder: (param0: GameProfile, param1: string) => com.google.gson.JsonObject, chatIgnoreStrategy: (param0: string, param1: number) => kotlin.Boolean, workerPool: ExecutorService)
-    // private chatEncoder: (param0: GameProfile, param1: string) => com.google.gson.JsonObject;
+    constructor(chatEndpoint: URL, chatEncoder: (param0: GameProfile, param1: string) => JsonObject, chatIgnoreStrategy: (param0: string, param1: number) => boolean, workerPool: ExecutorService)
+    // private chatEncoder: (param0: GameProfile, param1: string) => JsonObject;
     // private chatEndpoint: URL;
-    // private chatIgnoreStrategy: (param0: string, param1: number) => kotlin.Boolean;
+    // private chatIgnoreStrategy: (param0: string, param1: number) => boolean;
     // private workerPool: ExecutorService;
     close(): void;
     connectionReadTimeout(): number;
     createContext(gameProfile: GameProfile): TextFilter;
     drainStream(input: InputStream): void;
-    filterText(message: string, ignoreStrategy: (param0: string, param1: number) => kotlin.Boolean, result: JsonObject): FilteredText;
+    filterText(message: string, ignoreStrategy: (param0: string, param1: number) => boolean, result: JsonObject): FilteredText;
     getURLConnection(url: URL): HttpURLConnection;
     makeRequest(payload: JsonObject, url: URL): HttpURLConnection;
-    parseMask(message: string, removedChars: JsonElement[], ignoreStrategy: (param0: string, param1: number) => kotlin.Boolean): FilterMask;
+    parseMask(message: string, removedChars: JsonElement[], ignoreStrategy: (param0: string, param1: number) => boolean): FilterMask;
     // private processRequestResponse(payload: JsonObject, url: URL): JsonObject;
-    requestMessageProcessing(sender: GameProfile, message: string, ignoreStrategy: (param0: string, param1: number) => kotlin.Boolean, executor: Executor): CompletableFuture<FilteredText>;
+    requestMessageProcessing(sender: GameProfile, message: string, ignoreStrategy: (param0: string, param1: number) => boolean, executor: Executor): CompletableFuture<FilteredText>;
     setAuthorizationProperty(connection: HttpURLConnection): void;
 }

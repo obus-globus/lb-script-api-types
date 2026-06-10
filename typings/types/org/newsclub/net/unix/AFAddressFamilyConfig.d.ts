@@ -11,15 +11,16 @@ import type { AFSocket } from '../../../../org/newsclub/net/unix/AFSocket.d.ts'
 import type { AFSocket$Constructor } from '../../../../org/newsclub/net/unix/AFSocket$Constructor.d.ts'
 import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
 import type { AFSocketChannel } from '../../../../org/newsclub/net/unix/AFSocketChannel.d.ts'
+import type { AFSocketFactory } from '../../../../org/newsclub/net/unix/AFSocketFactory.d.ts'
 export abstract class AFAddressFamilyConfig<A extends AFSocketAddress> extends Object {
     constructor()
     datagramChannelClass(): Class<AFDatagramChannel<A>>;
     datagramSocketClass(): Class<AFDatagramSocket<A>>;
-    datagramSocketConstructor(): (param0: A) => org.newsclub.net.unix.AFDatagramSocket<unknown>;
+    datagramSocketConstructor(): (param0: FileDescriptor) => AFDatagramSocket<A>;
     serverSocketChannelClass(): Class<AFServerSocketChannel<A>>;
     serverSocketClass(): Class<AFServerSocket<A>>;
     serverSocketConstructor(): AFServerSocket$Constructor<A>;
     socketChannelClass(): Class<AFSocketChannel<A>>;
     socketClass(): Class<AFSocket<A>>;
-    socketConstructor(): (param0: A, param1: FileDescriptor) => org.newsclub.net.unix.AFSocket<unknown>;
+    socketConstructor(): (param0: FileDescriptor, param1: AFSocketFactory<A>) => AFSocket<A>;
 }

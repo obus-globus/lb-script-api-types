@@ -6,7 +6,7 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 import type { Node } from '../../../../../../net/minecraft/world/level/pathfinder/Node.d.ts'
 export class InteractWithDoor extends Object {
-    static closeDoorsThatIHaveOpenedOrPassedThrough(paramlevel: ServerLevel, parambody: LivingEntity, parammovingFromNode: Node, parammovingToNode: Node, paramdoors: GlobalPos[], paramnearestEntities: Optional<Object>): void;
+    static closeDoorsThatIHaveOpenedOrPassedThrough(paramlevel: ServerLevel, parambody: LivingEntity, parammovingFromNode: Node, parammovingToNode: Node, paramdoors: GlobalPos[], paramnearestEntities: Optional<LivingEntity[]>): void;
     static create(): BehaviorControl<LivingEntity>;
     constructor()
 }

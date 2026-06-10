@@ -9,5 +9,5 @@ export interface SerialQueue<E extends Object | number | string | boolean> exten
     poll(): E;
     size(): number;
     toArray(): Object[];
-    toArray(a: T[]): T[];
+    toArray<T extends Object | number | string | boolean>(a: T[]): T[];
 }

@@ -1,3 +1,4 @@
+import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 export class EncodingKt extends Object {
@@ -28,7 +29,7 @@ export class EncodingKt extends Object {
     static SINGLE_PRECISION_MAX_EXPONENT: number;
     static SINGLE_PRECISION_NORMALIZE_BASE: number;
     static TRUE: number;
-    static findAnnotation(paramarg0: SerialDescriptor, paramarg1: number): Object | null;
+    static findAnnotation(paramarg0: SerialDescriptor, paramarg1: number): Annotation | null;
     static getCborLabel(paramarg0: SerialDescriptor, paramarg1: number): number;
     static getKeyTags(paramarg0: SerialDescriptor, paramarg1: number): number[];
     static getObjectTags(paramarg0: SerialDescriptor): number[];

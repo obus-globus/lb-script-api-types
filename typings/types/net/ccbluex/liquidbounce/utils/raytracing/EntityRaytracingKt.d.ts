@@ -4,8 +4,8 @@ import type { Rotation } from '../../../../../net/ccbluex/liquidbounce/utils/aim
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityHitResult } from '../../../../../net/minecraft/world/phys/EntityHitResult.d.ts'
 export class EntityRaytracingKt extends Object {
-    static findEntityInCrosshair(range: number, rotation: Rotation, predicate: (param0: Entity) => kotlin.Boolean): EntityHitResult;
-    static findEntityInCrosshair(entity: Entity, range: number, rotation: Rotation, predicate: (param0: Entity) => kotlin.Boolean): EntityHitResult;
+    static findEntityInCrosshair(range: number, rotation: Rotation, predicate: (param0: Entity) => boolean): EntityHitResult;
+    static findEntityInCrosshair(entity: Entity, range: number, rotation: Rotation, predicate: (param0: Entity) => boolean): EntityHitResult;
     /**
      * Ray-traces from the current camera entity and returns a hit result when the traced entity equals {@link toEntity}.
      *

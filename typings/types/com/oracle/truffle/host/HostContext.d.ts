@@ -21,7 +21,7 @@ export class HostContext extends Object {
     // private access: AbstractPolyglotImpl$AbstractHostAccess;
     // private adapterCache: ClassValue<Map<Class<Object>[], HostAdapterFactory$AdapterResult>>;
     // private classCache: { [key: string]: Class<Object> };
-    // private classFilter: (param0: string) => kotlin.Boolean;
+    // private classFilter: (param0: string) => boolean;
     // private classloader: HostClassLoader;
     // private contextClassLoader: ClassLoader;
     // private env: TruffleLanguage$Env;
@@ -45,7 +45,7 @@ export class HostContext extends Object {
     getMutableTargetMappings(): HostAccess$MutableTargetMapping[];
     hostToGuestException<T extends Throwable>(e: T): RuntimeException;
     hostToGuestException<T extends Throwable>(e: T, location: Node): RuntimeException;
-    initialize(internalContext: Object, cl: ClassLoader, clFilter: (param0: string) => kotlin.Boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean, mutableTargetMappings: HostAccess$MutableTargetMapping[]): void;
+    initialize(internalContext: Object, cl: ClassLoader, clFilter: (param0: string) => boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean, mutableTargetMappings: HostAccess$MutableTargetMapping[]): void;
     // private loadClassViaClassLoader(className: string): Class<Object>;
     toGuestValue(node: Node, hostValue: Object): Object;
     toGuestValue(receiver: Class<Object>): Object;

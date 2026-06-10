@@ -16,7 +16,7 @@ export abstract class MixinValidator extends Object implements IMixinValidator {
     // private pass: IMixinValidator$ValidationPass;
     // private processingEnv: ProcessingEnvironment;
     // private typeHandleProvider: ITypeHandleProvider;
-    getMixinsTargeting(arg0: TypeHandle): E[];
-    validate(arg0: TypeElement, arg1: IAnnotationHandle, arg2: E[]): boolean;
-    validate(arg0: IMixinValidator$ValidationPass, arg1: TypeElement, arg2: IAnnotationHandle, arg3: E[]): boolean;
+    getMixinsTargeting(arg0: TypeHandle): TypeHandle[];
+    validate(arg0: TypeElement, arg1: IAnnotationHandle, arg2: TypeHandle[]): boolean;
+    validate(arg0: IMixinValidator$ValidationPass, arg1: TypeElement, arg2: IAnnotationHandle, arg3: TypeHandle[]): boolean;
 }

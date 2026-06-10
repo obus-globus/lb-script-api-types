@@ -9,7 +9,7 @@ import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/le
 import type { VerticalAnchor } from '../../../../../net/minecraft/world/level/levelgen/VerticalAnchor.d.ts'
 export class SurfaceRules$YConditionSource extends Record implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     // private addStoneDepth: boolean;
     // private anchor: VerticalAnchor;
     // private surfaceDepthMultiplier: number;

@@ -7,7 +7,7 @@ export class MixinOption extends Object {
     readonly userDefined: boolean;
     addModOverride(arg0: boolean, arg1: string): void;
     clearModsDefiningValue(): void;
-    getDefiningMods(): E[];
+    getDefiningMods(): string[];
     getName(): string;
     isEnabled(): boolean;
     isModDefined(): boolean;

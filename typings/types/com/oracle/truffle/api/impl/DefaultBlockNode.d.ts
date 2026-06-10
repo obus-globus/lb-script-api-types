@@ -5,7 +5,7 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultBlockNode<T extends Node> extends BlockNode<T> {
     static NO_ARGUMENT: number;
-    static create(paramelements: Object | null, paramexecutor: BlockNode$ElementExecutor<Object>): BlockNode<Object>;
+    static create(paramelements: Object | null, paramexecutor: BlockNode$ElementExecutor<Node>): BlockNode<Node>;
     constructor(elements: T[], executor: BlockNode$ElementExecutor<T>)
     // private executor: BlockNode$ElementExecutor<T>;
     executeBoolean(frame: VirtualFrame, arg: number): boolean;

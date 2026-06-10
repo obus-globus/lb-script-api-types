@@ -12,20 +12,20 @@ import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts
 export interface TransferVariant<O extends Object | number | string | boolean> extends Object, TypedInstance<O>, DataComponentHolder{
     componentsMatch(arg0: DataComponentPatch): boolean;
     get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
-    getAllOfType(valueClass: Class<T>): Stream<T>;
+    getAllOfType<T extends Object | number | string | boolean>(valueClass: Class<T>): Stream<T>;
     getComponents(): TypedDataComponent<Object>[];
     getComponentsPatch(): DataComponentPatch;
     getObject(): O;
     getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
     has(type: DataComponentType<Object>): boolean;
     hasComponents(): boolean;
-    is<T extends Object | number | string | boolean>(rawType: T): boolean;
-    is(type: Holder<T>): boolean;
-    is(set: Holder<T>[]): boolean;
-    is(type: ResourceKey<T>): boolean;
-    is(tag: TagKey<T>): boolean;
+    is(rawType: O): boolean;
+    is(type: Holder<O>): boolean;
+    is(set: Holder<O>[]): boolean;
+    is(type: ResourceKey<O>): boolean;
+    is(tag: TagKey<O>): boolean;
     isBlank(): boolean;
     isOf(arg0: O): boolean;
-    tags(): Stream<TagKey<T>>;
+    tags(): Stream<TagKey<O>>;
     withComponents(arg0: DataComponentPatch): TransferVariant<O>;
 }

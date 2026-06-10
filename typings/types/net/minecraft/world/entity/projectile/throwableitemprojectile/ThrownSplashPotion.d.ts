@@ -5,6 +5,7 @@ import type { ServerLevel } from '../../../../../../net/minecraft/server/level/S
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Projectile } from '../../../../../../net/minecraft/world/entity/projectile/Projectile.d.ts'
 import type { Projectile$ProjectileFactory } from '../../../../../../net/minecraft/world/entity/projectile/Projectile$ProjectileFactory.d.ts'
 import type { AbstractThrownPotion } from '../../../../../../net/minecraft/world/entity/projectile/throwableitemprojectile/AbstractThrownPotion.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
@@ -48,7 +49,7 @@ export class ThrownSplashPotion extends AbstractThrownPotion {
     static TAG_SILENT: string;
     static TAG_UUID: string;
     static TOTAL_AIR_SUPPLY: number;
-    static WATER_SENSITIVE_OR_ON_FIRE: (param0: LivingEntity) => kotlin.Boolean;
+    static WATER_SENSITIVE_OR_ON_FIRE: (param0: LivingEntity) => boolean;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
@@ -56,11 +57,11 @@ export class ThrownSplashPotion extends AbstractThrownPotion {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    static spawnProjectile(paramprojectile: Object | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack): Object | null;
-    static spawnProjectile(paramprojectile: Object | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramshootFunction: (param0: Object | null) => void): Object | null;
-    static spawnProjectileFromRotation(paramcreator: (param0: Object | null, param1: ServerLevel, param2: LivingEntity) => unknown, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramyOffset: number, parampow: number, paramuncertainty: number): Object | null;
-    static spawnProjectileUsingShoot(paramprojectile: Object | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Object | null;
-    static spawnProjectileUsingShoot(paramcreator: (param0: Object | null, param1: ServerLevel, param2: LivingEntity) => unknown, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Object | null;
+    static spawnProjectile(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack): Projectile | null;
+    static spawnProjectile(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramshootFunction: (param0: Projectile | null) => void): Projectile | null;
+    static spawnProjectileFromRotation(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramyOffset: number, parampow: number, paramuncertainty: number): Projectile | null;
+    static spawnProjectileUsingShoot(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Projectile | null;
+    static spawnProjectileUsingShoot(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Projectile | null;
     constructor(type: EntityType<ThrownSplashPotion>, level: Level)
     constructor(level: Level, x: number, y: number, z: number, itemStack: ItemStack)
     constructor(level: Level, owner: LivingEntity, itemStack: ItemStack)

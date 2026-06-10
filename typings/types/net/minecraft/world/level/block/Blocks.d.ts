@@ -1164,7 +1164,7 @@ export class Blocks extends Object {
     static buttonProperties(): BlockBehaviour$Properties;
     static flowerPotProperties(): BlockBehaviour$Properties;
     static leavesProperties(paramsoundType: SoundType): BlockBehaviour$Properties;
-    static litBlockEmission(paramlightEmission: number): (param0: BlockState) => kotlin.Int;
+    static litBlockEmission(paramlightEmission: number): (param0: BlockState) => number;
     static logProperties(paramtopColor: MapColor, paramsideColor: MapColor, paramsoundType: SoundType): BlockBehaviour$Properties;
     static netherStemProperties(parammapColor: MapColor): BlockBehaviour$Properties;
     static never(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos): boolean;

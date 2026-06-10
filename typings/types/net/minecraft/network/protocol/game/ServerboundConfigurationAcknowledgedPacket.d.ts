@@ -9,7 +9,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundConfigurationAcknowledgedPacket extends Object implements Packet<ServerGamePacketListener> {
     static INSTANCE: ServerboundConfigurationAcknowledgedPacket;
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundConfigurationAcknowledgedPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor()
     handle(listener: ServerGamePacketListener): void;
     isSkippable(): boolean;

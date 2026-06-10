@@ -10,7 +10,7 @@ export class ReferenceLinkedOpenHashSet$SetIterator extends Object implements Ob
     // private prev: number;
     add<K extends Object | number | string | boolean>(arg0: K): void;
     // private ensureIndexKnown(): void;
-    forEachRemaining(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
     next<K extends Object | number | string | boolean>(): K;

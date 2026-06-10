@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -11,7 +12,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { JigsawBlockEntity$JointType } from '../../../../../net/minecraft/world/level/block/entity/JigsawBlockEntity$JointType.d.ts'
 export class ServerboundSetJigsawBlockPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetJigsawBlockPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(blockPos: BlockPos, name: Identifier, target: Identifier, pool: Identifier, finalState: string, joint: JigsawBlockEntity$JointType, selectionPriority: number, placementPriority: number)
     private constructor(input: FriendlyByteBuf)
     readonly finalState: string;

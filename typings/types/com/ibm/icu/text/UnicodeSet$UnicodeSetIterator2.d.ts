@@ -11,7 +11,7 @@ export class UnicodeSet$UnicodeSetIterator2 extends Object implements Iterator<s
     // private sourceList: number[];
     // private sourceStrings: string[];
     // private stringIterator: Iterator<string>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
     remove(): void;

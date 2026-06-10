@@ -14,13 +14,12 @@ export class IntegerArgumentType extends Object implements ArgumentType<number> 
     readonly maximum: number;
     readonly minimum: number;
     equals(arg0: Object | null): boolean;
-    getExamples(): E[];
+    getExamples(): string[];
     getMaximum(): number;
     getMinimum(): number;
     hashCode(): number;
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(arg0: StringReader): number;
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): number;
+    parse(arg0: StringReader): number;
     toString(): string;
 }

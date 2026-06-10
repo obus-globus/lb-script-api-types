@@ -33,5 +33,5 @@ export class HttpClientKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:251}
      */
     static utf8Lines(bufferedSource: BufferedSource): Iterator<string>;
-    static withScope(block: (param0: Object | null, param1: Object | null) => Object | null): Job;
+    static withScope(block: (param0: Object, param1: Object) => Object): Job;
 }

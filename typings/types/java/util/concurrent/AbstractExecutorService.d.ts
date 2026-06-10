@@ -8,14 +8,14 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractExecutorService extends Object implements ExecutorService {
     constructor()
     close(): void;
-    // private doInvokeAny<T extends Object | number | string | boolean>(arg0: E[], arg1: boolean, arg2: number): T;
-    invokeAll(arg0: E[]): Future<T>[];
-    invokeAll(arg0: E[], arg1: number, arg2: TimeUnit): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(arg0: E[]): T;
-    invokeAny<T extends Object | number | string | boolean>(arg0: E[], arg1: number, arg2: TimeUnit): T;
+    // private doInvokeAny<T extends Object | number | string | boolean>(arg0: () => T[], arg1: boolean, arg2: number): T;
+    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[]): Future<T>[];
+    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[]): T;
+    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): T;
     newTaskFor<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): RunnableFuture<T>;
-    newTaskFor(arg0: () => T): RunnableFuture<T>;
+    newTaskFor<T extends Object | number | string | boolean>(arg0: () => T): RunnableFuture<T>;
     submit(arg0: () => void): Future<Object>;
     submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
-    submit(arg0: () => T): Future<T>;
+    submit<T extends Object | number | string | boolean>(arg0: () => T): Future<T>;
 }

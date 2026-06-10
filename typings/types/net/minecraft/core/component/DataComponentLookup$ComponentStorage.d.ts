@@ -8,8 +8,8 @@ export class DataComponentLookup$ComponentStorage<C extends Object | number | st
     private constructor(valueToComponent: Multimap<C, Holder<T>>)
     // private valueToComponent: Multimap<C, Holder<T>>;
     equals(o: Object | null): boolean;
-    findAll(value: C): E[];
-    findMatching(predicate: (param0: C) => kotlin.Boolean): Stream<Holder<T>>;
+    findAll(value: C): Holder<T>[];
+    findMatching(predicate: (param0: C) => boolean): Stream<Holder<T>>;
     hashCode(): number;
     toString(): string;
     valueToComponent(): Multimap<C, Holder<T>>;

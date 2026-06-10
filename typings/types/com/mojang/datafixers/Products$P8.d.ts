@@ -13,8 +13,8 @@ export class Products$P8<F extends K1, T1 extends Object | number | string | boo
     // private t6: App<F, T6>;
     // private t7: App<F, T7>;
     // private t8: App<F, T8>;
-    apply(arg0: Applicative<F, Object>, arg1: App<F, Function8<T1, T2, T3, T4, T5, T6, T7, T8, R>>): App<F, R>;
-    apply(arg0: Applicative<F, Object>, arg1: Function8<T1, T2, T3, T4, T5, T6, T7, T8, R>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: App<F, Function8<T1, T2, T3, T4, T5, T6, T7, T8, R>>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: Function8<T1, T2, T3, T4, T5, T6, T7, T8, R>): App<F, R>;
     t1(): App<F, T1>;
     t2(): App<F, T2>;
     t3(): App<F, T3>;

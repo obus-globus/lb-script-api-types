@@ -22,7 +22,6 @@ export class MultilineRecursiveToStringStyle extends RecursiveToStringStyle {
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number, arg3: Object): void;
-    appendDetail(arg0: StringBuffer, arg1: string, arg2: E[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Map<Object | null, Object | null>): void;
     reflectionAppendArrayDetail(arg0: StringBuffer, arg1: string, arg2: Object): void;
     // private resetIndent(): void;

@@ -22,7 +22,7 @@ export class MaterialAssetGroup extends Record {
     static SEPARATOR: string;
     static STREAM_CODEC: StreamCodec<ByteBuf, MaterialAssetGroup>;
     static create(parambase: string): MaterialAssetGroup;
-    static create(parambase: string, paramoverrides: Map<Object | null, string>): MaterialAssetGroup;
+    static create(parambase: string, paramoverrides: Map<ResourceKey<EquipmentAsset>, string>): MaterialAssetGroup;
     constructor(base: MaterialAssetGroup$AssetInfo, overrides: Map<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>)
     // private base: MaterialAssetGroup$AssetInfo;
     // private overrides: Map<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>;

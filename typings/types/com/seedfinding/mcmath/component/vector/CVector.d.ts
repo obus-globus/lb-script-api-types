@@ -14,7 +14,7 @@ export class CVector extends Object {
     static zero(paramarg0: number): CVector;
     constructor(arg0: Complex[])
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: number) => com.seedfinding.mcmath.arithmetic.Complex)
+    constructor(arg0: number, arg1: (param0: number) => Complex)
     readonly elements: Complex[];
     add(arg0: CVector): CVector;
     addAndSet(arg0: CVector): CVector;
@@ -31,8 +31,8 @@ export class CVector extends Object {
     getDimension(): number;
     getElements(): Complex[];
     hashCode(): number;
-    map(arg0: (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CVector;
-    mapAndSet(arg0: (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CVector;
+    map(arg0: (param0: number, param1: Complex) => Complex): CVector;
+    mapAndSet(arg0: (param0: number, param1: Complex) => Complex): CVector;
     multiply(arg0: CMatrix): CVector;
     multiplyAndSet(arg0: CMatrix): CVector;
     norm(arg0: (param0: CVector) => Complex): Complex;
@@ -49,8 +49,8 @@ export class CVector extends Object {
     swap(arg0: number, arg1: number): CVector;
     swapAndSet(arg0: number, arg1: number): CVector;
     tensor(arg0: CVector): CVector;
-    toGenerator(): (param0: number) => com.seedfinding.mcmath.arithmetic.Complex;
-    toMapper(): (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex;
+    toGenerator(): (param0: number) => Complex;
+    toMapper(): (param0: number, param1: Complex) => Complex;
     toMatrixColumn(): CMatrix;
     toMatrixRow(): CMatrix;
     toString(): string;

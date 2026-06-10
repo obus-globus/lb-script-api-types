@@ -8,10 +8,10 @@ export class Object2ObjectLinkedOpenCustomHashMap$EntryIterator extends Object2O
     constructor(null_: Object2ObjectLinkedOpenCustomHashMap$EntryIterator)
     constructor(null_: Object2ObjectLinkedOpenCustomHashMap$EntryIterator)
     // private entry: Object2ObjectLinkedOpenCustomHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Object2ObjectMap$Entry<K, V>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Object2ObjectLinkedOpenCustomHashMap$MapEntry;
-    previous(): Object2ObjectLinkedOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Object2ObjectMap$Entry<K, V>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Object2ObjectMap$Entry<K, V>): void;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Object2ObjectLinkedOpenCustomHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Object2ObjectLinkedOpenCustomHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Object2ObjectMap$Entry<K, V>): void;
 }

@@ -8,6 +8,7 @@ import type { ModelState } from '../../../../../../net/minecraft/client/renderer
 import type { ModelBaker } from '../../../../../../net/minecraft/client/resources/model/ModelBaker.d.ts'
 import type { ModelDebugName } from '../../../../../../net/minecraft/client/resources/model/ModelDebugName.d.ts'
 import type { CuboidModel } from '../../../../../../net/minecraft/client/resources/model/cuboid/CuboidModel.d.ts'
+import type { QuadCollection } from '../../../../../../net/minecraft/client/resources/model/geometry/QuadCollection.d.ts'
 import type { UnbakedGeometry } from '../../../../../../net/minecraft/client/resources/model/geometry/UnbakedGeometry.d.ts'
 import type { TextureSlots } from '../../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
 import type { TextureSlots$Data } from '../../../../../../net/minecraft/client/resources/model/sprite/TextureSlots$Data.d.ts'
@@ -15,7 +16,7 @@ export class CuboidModel$Deserializer extends Object implements JsonDeserializer
     constructor()
     deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext): CuboidModel;
     getAmbientOcclusion(object: JsonObject): boolean;
-    getElements(context: JsonDeserializationContext, object: JsonObject): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
+    getElements(context: JsonDeserializationContext, object: JsonObject): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
     // private getParentName(object: JsonObject): string;
     // private getTextureMap(object: JsonObject): TextureSlots$Data;
 }

@@ -21,7 +21,7 @@ export class AsyncLoadingText extends Record implements DelegatedComponent {
     static DEFAULT_ON_LOADING: () => Component;
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
-    static lazy(paramarg0: () => Component): () => unknown;
+    static lazy(paramarg0: () => Component): () => Object | null;
     constructor(arg0: Deferred<Component>)
     constructor(delegate: Deferred<Component>, onLoading: () => Component, onException: (param0: Throwable) => Component)
     // private delegate: Deferred<Component>;
@@ -37,7 +37,7 @@ export class AsyncLoadingText extends Record implements DelegatedComponent {
     getString(): string;
     getString(arg0: number): string;
     getStyle(): Style;
-    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     hashCode(): number;
     onException(): (param0: Throwable) => Component;
     onLoading(): () => Component;
@@ -46,6 +46,6 @@ export class AsyncLoadingText extends Record implements DelegatedComponent {
     toFlatList(arg0: Style): Component[];
     toString(): string;
     tryCollapseToString(): string;
-    visit(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
 }

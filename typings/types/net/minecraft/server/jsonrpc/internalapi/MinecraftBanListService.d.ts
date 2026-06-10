@@ -8,8 +8,8 @@ export interface MinecraftBanListService extends Object{
     addUserBan(ban: UserBanListEntry, clientInfo: ClientInfo): void;
     clearIpBans(clientInfo: ClientInfo): void;
     clearUserBans(clientInfo: ClientInfo): void;
-    getIpBanEntries(): E[];
-    getUserBanEntries(): E[];
+    getIpBanEntries(): IpBanListEntry[];
+    getUserBanEntries(): UserBanListEntry[];
     removeIpBan(ip: string, clientInfo: ClientInfo): void;
     removeUserBan(nameAndId: NameAndId, clientInfo: ClientInfo): void;
 }

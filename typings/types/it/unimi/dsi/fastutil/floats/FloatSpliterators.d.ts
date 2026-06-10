@@ -20,19 +20,19 @@ export class FloatSpliterators extends Object {
     static SET_SPLITERATOR_CHARACTERISTICS: number;
     static SORTED_SET_SPLITERATOR_CHARACTERISTICS: number;
     static asFloatSpliterator(paramarg0: Spliterator<Object>): FloatSpliterator;
-    static asFloatSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
+    static asFloatSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: number, param1: number) => number): FloatSpliterator;
     static asIterator(paramarg0: FloatSpliterator): FloatIterator;
     static asSpliterator(paramarg0: FloatIterator, paramarg1: number, paramarg2: number): FloatSpliterator;
-    static asSpliteratorFromSorted(paramarg0: FloatIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
-    static asSpliteratorFromSortedUnknownSize(paramarg0: FloatIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
+    static asSpliteratorFromSorted(paramarg0: FloatIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): FloatSpliterator;
+    static asSpliteratorFromSortedUnknownSize(paramarg0: FloatIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): FloatSpliterator;
     static asSpliteratorUnknownSize(paramarg0: FloatIterator, paramarg1: number): FloatSpliterator;
     static concat(paramarg0: (Object | null)[]): FloatSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): FloatSpliterator;
     static narrow(paramarg0: Spliterator$OfDouble): FloatSpliterator;
-    static onEachMatching(paramarg0: FloatSpliterator, paramarg1: (param0: number) => kotlin.Boolean, paramarg2: (param0: number) => void): void;
-    static onEachMatching(paramarg0: FloatSpliterator, paramarg1: (param0: number) => kotlin.Boolean, paramarg2: (param0: number) => void): void;
+    static onEachMatching(paramarg0: FloatSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
+    static onEachMatching(paramarg0: FloatSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): FloatSpliterator;
-    static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
+    static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => number): FloatSpliterator;
     static widen(paramarg0: FloatSpliterator): DoubleSpliterator;
     static wrap(paramarg0: number[]): FloatSpliterator;
     static wrap(paramarg0: number[], paramarg1: number, paramarg2: number): FloatSpliterator;
@@ -40,8 +40,8 @@ export class FloatSpliterators extends Object {
     static wrap(paramarg0: ByteSpliterator): FloatSpliterator;
     static wrap(paramarg0: CharSpliterator): FloatSpliterator;
     static wrap(paramarg0: ShortSpliterator): FloatSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): FloatSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => number): FloatSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): FloatSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): FloatSpliterator;
     private constructor()
 }

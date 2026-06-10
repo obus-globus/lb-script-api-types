@@ -11,7 +11,7 @@ import type { LootContext } from '../../../../../../../net/minecraft/world/level
 import type { LootItemBlockStatePropertyCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition$Builder.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class LootItemBlockStatePropertyCondition extends Record implements LootItemCondition {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<LootItemBlockStatePropertyCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;

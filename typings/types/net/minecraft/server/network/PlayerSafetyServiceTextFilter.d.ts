@@ -14,13 +14,13 @@ import type { ServerTextFilter$MessageEncoder } from '../../../../net/minecraft/
 export class PlayerSafetyServiceTextFilter extends ServerTextFilter {
     static createFromConfig(paramconfig: DedicatedServerProperties): ServerTextFilter;
     static createTextFilterFromConfig(paramtextFilteringConfig: string): ServerTextFilter;
-    private constructor(chatEndpoint: URL, chatEncoder: (param0: GameProfile, param1: string) => com.google.gson.JsonObject, chatIgnoreStrategy: (param0: string, param1: number) => kotlin.Boolean, workerPool: ExecutorService, client: ConfidentialClientApplication, clientParameters: ClientCredentialParameters, fullyFilteredEvents: string[], connectionReadTimeoutMs: number)
+    private constructor(chatEndpoint: URL, chatEncoder: (param0: GameProfile, param1: string) => JsonObject, chatIgnoreStrategy: (param0: string, param1: number) => boolean, workerPool: ExecutorService, client: ConfidentialClientApplication, clientParameters: ClientCredentialParameters, fullyFilteredEvents: string[], connectionReadTimeoutMs: number)
     // private client: ConfidentialClientApplication;
     // private clientParameters: ClientCredentialParameters;
     // private connectionReadTimeoutMs: number;
     // private fullyFilteredEvents: string[];
     // private aquireIAuthenticationResult(): IAuthenticationResult;
     connectionReadTimeout(): number;
-    filterText(message: string, ignoreStrategy: (param0: string, param1: number) => kotlin.Boolean, response: JsonObject): FilteredText;
+    filterText(message: string, ignoreStrategy: (param0: string, param1: number) => boolean, response: JsonObject): FilteredText;
     setAuthorizationProperty(connection: HttpURLConnection): void;
 }

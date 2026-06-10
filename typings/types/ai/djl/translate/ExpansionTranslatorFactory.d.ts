@@ -15,12 +15,12 @@ export abstract class ExpansionTranslatorFactory<IbaseT extends Object | number 
     buildBaseTranslator(arg0: Model, arg1: { [key: string]: Object | null }): Translator<IbaseT, ObaseT>;
     getBaseInputType(): Class<IbaseT>;
     getBaseOutputType(): Class<ObaseT>;
-    getExpansions(): Map<Pair<Type, Type>, (param0: IbaseT) => ObaseT>;
+    getExpansions(): Map<Pair<Type, Type>, (param0: Object | null) => Object | null>;
     getPostprocessorExpansions(): Map<Type, (param0: PostProcessor<ObaseT>) => PostProcessor<Object>>;
     getPreprocessorExpansions(): Map<Type, (param0: PreProcessor<IbaseT>) => PreProcessor<Object>>;
     getSupportedTypes(): Pair<Type, Type>[];
     isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;
-    newInstance(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: { [key: string]: Object | null }): Translator<I, O>;
-    newInstance(arg0: Class<I>, arg1: Class<O>, arg2: Translator<IbaseT, ObaseT>): Translator<I, O>;
+    newInstance<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: { [key: string]: Object | null }): Translator<I, O>;
+    newInstance<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Class<I>, arg1: Class<O>, arg2: Translator<IbaseT, ObaseT>): Translator<I, O>;
     withTranslator(arg0: Translator<IbaseT, ObaseT>): ExpansionTranslatorFactory$ExpandedTranslatorOptions;
 }

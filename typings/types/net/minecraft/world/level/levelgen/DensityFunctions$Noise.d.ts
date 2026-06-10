@@ -2,6 +2,7 @@ import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { DensityFunction } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
 import type { DensityFunction$ContextProvider } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$ContextProvider.d.ts'
@@ -9,7 +10,7 @@ import type { DensityFunction$FunctionContext } from '../../../../../net/minecra
 import type { DensityFunction$NoiseHolder } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$NoiseHolder.d.ts'
 import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 export class DensityFunctions$Noise extends Record implements DensityFunction {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<DensityFunction>>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$Noise>;
     static DATA_CODEC: MapCodec<DensityFunctions$Noise>;
     static DIRECT_CODEC: Codec<DensityFunction>;

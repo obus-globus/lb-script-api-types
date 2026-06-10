@@ -3,8 +3,8 @@ import type { Reference2BooleanFunction } from '../../../../../it/unimi/dsi/fast
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2BooleanFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2BooleanFunction<K> implements Serializable {
-    constructor(arg0: (param0: K) => kotlin.Boolean)
-    // private function: (param0: K) => kotlin.Boolean;
+    constructor(arg0: (param0: Object) => boolean)
+    // private function: (param0: Object) => boolean;
     clear(): void;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): boolean;

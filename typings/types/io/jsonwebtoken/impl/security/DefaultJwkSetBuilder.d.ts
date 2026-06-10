@@ -10,13 +10,13 @@ export class DefaultJwkSetBuilder extends AbstractSecurityBuilder<Jwk<Object>[],
     // private operationPolicy: KeyOperationPolicy;
     add(arg0: Jwk<Object>): JwkSetBuilder;
     add(arg0: string, arg1: Object): JwkSetBuilder;
-    add(arg0: E[]): JwkSetBuilder;
+    add(arg0: Jwk<Object>[]): JwkSetBuilder;
     add(arg0: { [key: string]: Object | null }): JwkSetBuilder;
     build(): Jwk<Object>[];
     delete(arg0: string): JwkSetBuilder;
     empty(): JwkSetBuilder;
-    ensureKeys(): E[];
-    keys(arg0: E[]): JwkSetBuilder;
+    ensureKeys(): Jwk<Object>[];
+    keys(arg0: Jwk<Object>[]): JwkSetBuilder;
     operationPolicy(arg0: KeyOperationPolicy): JwkSetBuilder;
     provider(arg0: Provider): JwkSetBuilder;
     // private refresh(): JwkSetBuilder;

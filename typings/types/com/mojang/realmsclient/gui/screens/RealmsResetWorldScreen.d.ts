@@ -4,7 +4,6 @@ import type { WorldTemplatePaginatedList } from '../../../../../com/mojang/realm
 import type { LongRunningTask } from '../../../../../com/mojang/realmsclient/util/task/LongRunningTask.d.ts'
 import type { RealmCreationTask } from '../../../../../com/mojang/realmsclient/util/task/RealmCreationTask.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
@@ -23,7 +22,7 @@ export class RealmsResetWorldScreen extends RealmsScreen {
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static forEmptySlot(paramlastScreen: Screen, paramslot: number, paramserverData: RealmsServer, paramresetWorldRunnable: () => void): RealmsResetWorldScreen;
     static forNewRealm(paramlastScreen: Screen, paramserverData: RealmsServer, paramrealmCreationTask: RealmCreationTask, paramresetWorldRunnable: () => void): RealmsResetWorldScreen;
     static forResetSlot(paramlastScreen: Screen, paramserverData: RealmsServer, paramresetWorldRunnable: () => void): RealmsResetWorldScreen;

@@ -23,6 +23,6 @@ export class Jwts$KEY extends Object {
     static RSA1_5: KeyAlgorithm<PublicKey, PrivateKey>;
     static RSA_OAEP: KeyAlgorithm<PublicKey, PrivateKey>;
     static RSA_OAEP_256: KeyAlgorithm<PublicKey, PrivateKey>;
-    static get(): { [key: string]: Object | null };
+    static get(): { [key: string]: KeyAlgorithm<Object, Object> };
     private constructor()
 }

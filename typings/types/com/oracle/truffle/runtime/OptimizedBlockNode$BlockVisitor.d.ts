@@ -10,6 +10,6 @@ export class OptimizedBlockNode$BlockVisitor extends Object implements NodeVisit
     // private count: number;
     // private maxBlockSize: number;
     // private rootCompilation: OptimizedCallTarget;
-    // private computeBlock(blockNode: OptimizedBlockNode<T>): void;
+    // private computeBlock<T extends Node>(blockNode: OptimizedBlockNode<T>): void;
     visit(node: Node): boolean;
 }

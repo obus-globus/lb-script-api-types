@@ -28,7 +28,7 @@ export class GlobalChannelTrafficShapingHandler extends AbstractTrafficShapingHa
     // private writeDeviationActive: boolean;
     accelerationFactor(): number;
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;
-    channelTrafficCounters(): E[];
+    channelTrafficCounters(): TrafficCounter[];
     checkWaitReadTime(arg0: ChannelHandlerContext, arg1: number, arg2: number): number;
     // private computeBalancedWait(arg0: number, arg1: number, arg2: number): number;
     // private computeDeviationCumulativeBytes(): void;

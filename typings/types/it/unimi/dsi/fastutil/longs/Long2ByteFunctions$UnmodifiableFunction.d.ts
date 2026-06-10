@@ -3,8 +3,8 @@ import type { Long2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/lon
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2ByteFunctions$UnmodifiableFunction extends AbstractLong2ByteFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Byte)
-    // private function: (param0: number) => kotlin.Byte;
+    constructor(arg0: (param0: number) => number)
+    // private function: (param0: number) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

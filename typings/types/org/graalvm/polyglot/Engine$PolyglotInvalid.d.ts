@@ -29,7 +29,7 @@ export class Engine$PolyglotInvalid extends AbstractPolyglotImpl {
     asByteSequence(object: Object): ByteSequence;
     asValue(o: Object): Object;
     buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, arguments: { [key: string]: string }, allowExperimentalOptions: boolean, boundEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object): Engine;
-    buildLimits(statementLimit: number, statementLimitSourceFilter: (param0: Object) => kotlin.Boolean, onLimit: (param0: Object) => void): Object;
+    buildLimits(statementLimit: number, statementLimitSourceFilter: (param0: Object) => boolean, onLimit: (param0: Object) => void): Object;
     buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: { [key: string]: string }): Source;
     copyResources(targetFolder: Path[], components: string[]): boolean;
     createHostAccess(): AbstractPolyglotImpl$AbstractHostAccess;
@@ -54,7 +54,7 @@ export class Engine$PolyglotInvalid extends AbstractPolyglotImpl {
     newDenyIOFileSystem(): FileSystem_2;
     newNIOFileSystem(fileSystem: FileSystem): FileSystem_2;
     newReadOnlyFileSystem(fileSystem: FileSystem_2): FileSystem_2;
-    newTargetTypeMapping(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => kotlin.Boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
+    newTargetTypeMapping<S extends Object | number | string | boolean, T extends Object | number | string | boolean>(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
     onEngineCreated(polyglotEngine: Object): void;
     preInitializeEngine(): void;
     resetPreInitializedEngine(): void;

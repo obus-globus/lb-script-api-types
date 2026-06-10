@@ -10,9 +10,8 @@ export class CompoundTagArgument extends Object implements ArgumentType<Compound
     static compoundTag(): CompoundTagArgument;
     static getCompoundTag(paramcontext: CommandContext<Object>, paramname: string): CompoundTag;
     private constructor()
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): CompoundTag;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): CompoundTag;
+    parse(reader: StringReader): CompoundTag;
 }

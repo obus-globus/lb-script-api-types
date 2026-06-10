@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -9,7 +10,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { WorldBorder } from '../../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 export class ClientboundSetBorderLerpSizePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetBorderLerpSizePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor(input: FriendlyByteBuf)
     constructor(border: WorldBorder)
     readonly lerpTime: number;

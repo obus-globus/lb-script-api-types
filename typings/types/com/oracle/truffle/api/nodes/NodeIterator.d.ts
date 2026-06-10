@@ -14,7 +14,7 @@ export class NodeIterator extends Object implements Iterator<Node> {
     // private nodeClass: NodeClass;
     // private advance(): void;
     // private advanceChildren(): boolean;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Node) => void): void;
     hasNext(): boolean;
     next(): Node;
     remove(): void;

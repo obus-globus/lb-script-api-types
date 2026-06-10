@@ -4,8 +4,8 @@ import type { PathfinderMob } from '../../../../../../net/minecraft/world/entity
 import type { Goal } from '../../../../../../net/minecraft/world/entity/ai/goal/Goal.d.ts'
 import type { Path } from '../../../../../../net/minecraft/world/level/pathfinder/Path.d.ts'
 export class MoveThroughVillageGoal extends Goal {
-    constructor(mob: PathfinderMob, speedModifier: number, onlyAtNight: boolean, distanceToPoi: number, canDealWithDoors: () => kotlin.Boolean)
-    // private canDealWithDoors: () => kotlin.Boolean;
+    constructor(mob: PathfinderMob, speedModifier: number, onlyAtNight: boolean, distanceToPoi: number, canDealWithDoors: () => boolean)
+    // private canDealWithDoors: () => boolean;
     // private distanceToPoi: number;
     // private mob: PathfinderMob;
     // private onlyAtNight: boolean;

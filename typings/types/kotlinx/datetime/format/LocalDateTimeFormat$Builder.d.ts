@@ -15,9 +15,9 @@ export class LocalDateTimeFormat$Builder extends Object implements AbstractDateT
     addFormatStructureForDate(structure: FormatStructure<DateFieldContainer>): void;
     addFormatStructureForDateTime(structure: FormatStructure<DateTimeFieldContainer>): void;
     addFormatStructureForTime(structure: FormatStructure<TimeFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: (param0: ActualSelf) => void[], mainFormat: (param0: ActualSelf) => void): void;
-    appendOptionalImpl(onZero: string, format: (param0: ActualSelf) => void): void;
-    build(): CachedFormatStructure<Target>;
+    appendAlternativeParsingImpl(otherFormats: (param0: LocalDateTimeFormat$Builder) => void[], mainFormat: (param0: LocalDateTimeFormat$Builder) => void): void;
+    appendOptionalImpl(onZero: string, format: (param0: LocalDateTimeFormat$Builder) => void): void;
+    build(): CachedFormatStructure<DateTimeFieldContainer>;
     chars(value: string): void;
     createEmpty(): LocalDateTimeFormat$Builder;
     dateTime(format: DateTimeFormat<LocalDateTime>): void;

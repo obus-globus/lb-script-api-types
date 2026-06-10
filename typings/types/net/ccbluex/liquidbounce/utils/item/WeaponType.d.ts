@@ -18,19 +18,19 @@ export class WeaponType extends Enum<WeaponType> implements Predicate<ItemStack>
     static SPEAR: WeaponType;
     static SWORD: WeaponType;
     static getEntries(): WeaponType[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WeaponType;
     static values(): (Object | null)[];
-    private constructor(tag: string, predicate: (param0: ItemStack) => kotlin.Boolean)
-    // private predicate: (param0: ItemStack) => kotlin.Boolean;
+    private constructor(tag: string, predicate: (param0: ItemStack) => boolean)
+    // private predicate: (param0: ItemStack) => boolean;
     readonly tag: string;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: ItemStack) => boolean): (param0: ItemStack) => boolean;
+    negate(): (param0: ItemStack) => boolean;
+    or(arg0: (param0: ItemStack) => boolean): (param0: ItemStack) => boolean;
     test(p0: ItemStack): boolean;
     name(): "ANY" | "SWORD" | "AXE" | "MACE" | "SPEAR" | "PICKAXE" | "SHOVEL" | "HOE" | "KNOCKBACK" | "FIRE_ASPECT";
 }

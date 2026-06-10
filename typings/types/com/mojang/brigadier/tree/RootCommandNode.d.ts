@@ -11,7 +11,7 @@ export class RootCommandNode<S extends Object | number | string | boolean> exten
     constructor()
     createBuilder(): ArgumentBuilder<S, Object>;
     equals(arg0: Object | null): boolean;
-    getExamples(): E[];
+    getExamples(): string[];
     getName(): string;
     getSortedKey(): string;
     getUsageText(): string;

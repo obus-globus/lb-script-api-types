@@ -39,9 +39,9 @@ export class FT_Incremental_Funcs extends Struct<FT_Incremental_Funcs> implement
     static nfree_glyph_data(paramarg0: number): FT_Incremental_FreeGlyphDataFunc;
     static nfree_glyph_data(paramarg0: number, paramarg1: (param0: number, param1: number) => void): void;
     static nget_glyph_data(paramarg0: number): FT_Incremental_GetGlyphDataFunc;
-    static nget_glyph_data(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => kotlin.Int): void;
+    static nget_glyph_data(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => number): void;
     static nget_glyph_metrics(paramarg0: number): FT_Incremental_GetGlyphMetricsFunc;
-    static nget_glyph_metrics(paramarg0: number, paramarg1: (param0: number, param1: number, param2: boolean, param3: number) => kotlin.Int): void;
+    static nget_glyph_metrics(paramarg0: number, paramarg1: (param0: number, param1: number, param2: boolean, param3: number) => number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
@@ -52,10 +52,10 @@ export class FT_Incremental_Funcs extends Struct<FT_Incremental_Funcs> implement
     free_glyph_data(): FT_Incremental_FreeGlyphDataFunc;
     free_glyph_data(arg0: (param0: number, param1: number) => void): FT_Incremental_Funcs;
     get_glyph_data(): FT_Incremental_GetGlyphDataFunc;
-    get_glyph_data(arg0: (param0: number, param1: number, param2: number) => kotlin.Int): FT_Incremental_Funcs;
+    get_glyph_data(arg0: (param0: number, param1: number, param2: number) => number): FT_Incremental_Funcs;
     get_glyph_metrics(): FT_Incremental_GetGlyphMetricsFunc;
-    get_glyph_metrics(arg0: (param0: number, param1: number, param2: boolean, param3: number) => kotlin.Int): FT_Incremental_Funcs;
+    get_glyph_metrics(arg0: (param0: number, param1: number, param2: boolean, param3: number) => number): FT_Incremental_Funcs;
     set(arg0: FT_Incremental_Funcs): FT_Incremental_Funcs;
-    set(arg0: (param0: number, param1: number, param2: number) => kotlin.Int, arg1: (param0: number, param1: number) => void, arg2: (param0: number, param1: number, param2: boolean, param3: number) => kotlin.Int): FT_Incremental_Funcs;
+    set(arg0: (param0: number, param1: number, param2: number) => number, arg1: (param0: number, param1: number) => void, arg2: (param0: number, param1: number, param2: boolean, param3: number) => number): FT_Incremental_Funcs;
     sizeof(): number;
 }

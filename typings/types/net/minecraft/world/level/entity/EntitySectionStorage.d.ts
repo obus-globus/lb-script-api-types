@@ -14,20 +14,20 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 export class EntitySectionStorage<T extends EntityAccess> extends Object implements ChunkAwareEntityIterable<EntityAccess> {
     static CHONKY_ENTITY_SEARCH_GRACE: number;
     static MAX_NON_CHONKY_ENTITY_SIZE: number;
-    constructor(entityClass: Class<T>, intialSectionVisibility: (param0: Visibility) => unknown)
+    constructor(entityClass: Class<T>, intialSectionVisibility: (param0: number) => Visibility)
     // private entityClass: Class<T>;
-    // private intialSectionVisibility: (param0: Visibility) => unknown;
+    // private intialSectionVisibility: (param0: number) => Visibility;
     // private sectionIds: (Object | null)[];
     // private sections: Long2ObjectMap<EntitySection<T>>;
-    // private consumeSection(arg0: number, arg1: (param0: Object) => net.minecraft.util.AbortableIterationConsumer.Continuation): AbortableIterationConsumer$Continuation;
+    // private consumeSection(arg0: number, arg1: (param0: Object) => AbortableIterationConsumer$Continuation): AbortableIterationConsumer$Continuation;
     count(): number;
     // private createSection(sectionPos: number): EntitySection<T>;
-    forEachAccessibleNonEmptySection(bb: AABB, output: (param0: EntitySection<T>) => net.minecraft.util.AbortableIterationConsumer.Continuation): void;
-    // private forEachInColumn(arg0: number, arg1: number, arg2: number, arg3: number, arg4: (param0: Object) => net.minecraft.util.AbortableIterationConsumer.Continuation): AbortableIterationConsumer$Continuation;
+    forEachAccessibleNonEmptySection(bb: AABB, output: (param0: EntitySection<T>) => AbortableIterationConsumer$Continuation): void;
+    // private forEachInColumn(arg0: number, arg1: number, arg2: number, arg3: number, arg4: (param0: Object) => AbortableIterationConsumer$Continuation): AbortableIterationConsumer$Continuation;
     getAllChunksWithExistingSections(): (Object | null)[];
     // private getChunkSections(x: number, z: number): (Object | null)[];
-    getEntities(type: EntityTypeTest<T, U>, bb: AABB, consumer: (param0: U) => net.minecraft.util.AbortableIterationConsumer.Continuation): void;
-    getEntities(bb: AABB, output: (param0: T) => net.minecraft.util.AbortableIterationConsumer.Continuation): void;
+    getEntities<U extends T>(type: EntityTypeTest<T, U>, bb: AABB, consumer: (param0: U) => AbortableIterationConsumer$Continuation): void;
+    getEntities(bb: AABB, output: (param0: T) => AbortableIterationConsumer$Continuation): void;
     getExistingSectionPositionsInChunk(chunkKey: number): LongStream;
     getExistingSectionsInChunk(chunkKey: number): Stream<EntitySection<T>>;
     getOrCreateSection(key: number): EntitySection<T>;

@@ -12,7 +12,7 @@ import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d
 import type { TextColor } from '../../../../../../net/minecraft/network/chat/TextColor.d.ts'
 export class GradientNode extends ParentNode implements DynamicShadowNode$Transformer {
     static EMPTY: ParentNode;
-    static apply(paramarg0: Component, paramarg1: (param0: number, param1: number) => net.minecraft.network.chat.TextColor): Component;
+    static apply(paramarg0: Component, paramarg1: (param0: number, param1: number) => TextColor): Component;
     static colors(paramarg0: TextColor[], paramarg1: (Object | null)[]): GradientNode;
     static colors(paramarg0: TextColor, paramarg1: TextColor, paramarg2: (Object | null)[]): GradientNode;
     static colorsHard(paramarg0: TextColor[], paramarg1: (Object | null)[]): GradientNode;
@@ -23,15 +23,13 @@ export class GradientNode extends ParentNode implements DynamicShadowNode$Transf
     static rainbow(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (Object | null)[]): GradientNode;
     static rainbow(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (Object | null)[]): GradientNode;
     static rainbow(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: (Object | null)[]): GradientNode;
-    constructor(arg0: TextNode[], arg1: (param0: number, param1: number) => net.minecraft.network.chat.TextColor)
-    // private gradientProvider: (param0: number, param1: number) => net.minecraft.network.chat.TextColor;
+    constructor(arg0: TextNode[], arg1: (param0: number, param1: number) => TextColor)
+    // private gradientProvider: (param0: number, param1: number) => TextColor;
     applyFormatting(arg0: MutableComponent, arg1: ParserContext): Component;
     applyFormatting(arg0: Style, arg1: ParserContext): Style;
     applyShadowColors(arg0: Component, arg1: number, arg2: number, arg3: ParserContext): Component;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     hasShadowColor(arg0: ParserContext): boolean;
     toString(): string;
 }

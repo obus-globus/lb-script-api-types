@@ -7,17 +7,17 @@ export abstract class Equivalence<T extends Object | number | string | boolean> 
     static equals(): Equivalence<Object>;
     static identity(): Equivalence<Object>;
     constructor()
-    and(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
+    and(arg0: (param0: T, param1: T) => boolean): (param0: T, param1: T) => boolean;
     doEquivalent(a: T, b: T): boolean;
     doHash(t: T): number;
     equals(object: Object | null): boolean;
     equivalent(a: T, b: T): boolean;
-    equivalentTo(target: T): (param0: T) => kotlin.Boolean;
+    equivalentTo(target: T): (param0: Object) => boolean;
     hash(t: T): number;
-    negate(): (param0: T, param1: U) => kotlin.Boolean;
-    onResultOf(function_: (param0: F) => T): Equivalence<F>;
-    or(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
-    pairwise(): Equivalence<S[]>;
+    negate(): (param0: T, param1: T) => boolean;
+    onResultOf<F extends Object | number | string | boolean>(function_: (param0: Object) => boolean): Equivalence<F>;
+    or(arg0: (param0: T, param1: T) => boolean): (param0: T, param1: T) => boolean;
+    pairwise<S extends T>(): Equivalence<S[]>;
     test(t: T, u: T): boolean;
     wrap<S extends T>(reference: S): Equivalence$Wrapper<S>;
 }

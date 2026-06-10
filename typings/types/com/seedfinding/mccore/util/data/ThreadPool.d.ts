@@ -13,8 +13,8 @@ export class ThreadPool extends Object {
     awaitFreeThread(): void;
     getExecutor(): ThreadPoolExecutor;
     getThreadCount(): number;
-    iterate(arg0: T[], arg1: (param0: T) => void): void;
-    iterate(arg0: Iterator<T>, arg1: (param0: T) => void): void;
+    iterate<T extends Object | number | string | boolean>(arg0: T[], arg1: (param0: T) => void): void;
+    iterate<T extends Object | number | string | boolean>(arg0: Iterator<T>, arg1: (param0: T) => void): void;
     restart(): void;
     run(arg0: () => void): void;
     shutdown(): void;

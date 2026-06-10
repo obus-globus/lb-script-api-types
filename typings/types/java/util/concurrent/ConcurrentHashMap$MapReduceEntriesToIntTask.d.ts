@@ -20,16 +20,16 @@ export class ConcurrentHashMap$MapReduceEntriesToIntTask<K extends Object | numb
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: E[]): E[];
+    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
-    constructor(arg0: ConcurrentHashMap$BulkTask<K, V, Object>, arg1: number, arg2: number, arg3: number, arg4: ConcurrentHashMap$Node<K, V>[], arg5: ConcurrentHashMap$MapReduceEntriesToIntTask<K, V>, arg6: (param0: Map$Entry<K, V>) => kotlin.Int, arg7: number, arg8: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: ConcurrentHashMap$BulkTask<K, V, Object>, arg1: number, arg2: number, arg3: number, arg4: ConcurrentHashMap$Node<K, V>[], arg5: ConcurrentHashMap$MapReduceEntriesToIntTask<K, V>, arg6: (param0: Map$Entry<K, V>) => number, arg7: number, arg8: (param0: number, param1: number) => number)
     // private basis: number;
     // private nextRight: ConcurrentHashMap$MapReduceEntriesToIntTask<K, V>;
-    // private reducer: (param0: number, param1: number) => kotlin.Int;
+    // private reducer: (param0: number, param1: number) => number;
     // private result: number;
     // private rights: ConcurrentHashMap$MapReduceEntriesToIntTask<K, V>;
-    // private transformer: (param0: Map$Entry<K, V>) => kotlin.Int;
+    // private transformer: (param0: Map$Entry<K, V>) => number;
     compute(): void;
     getRawResult(): number;
 }

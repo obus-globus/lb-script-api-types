@@ -10,6 +10,6 @@ export class Files$FilePredicate extends Enum<Files$FilePredicate> implements Pr
     static valueOf(paramname: string): Files$FilePredicate;
     static values(): (Object | null)[];
     private constructor()
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test(input: File): boolean;
     name(): "IS_DIRECTORY" | "IS_FILE";
 }

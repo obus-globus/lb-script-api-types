@@ -17,8 +17,8 @@ export abstract class TimeZoneNamesBundle extends OpenListResourceBundle {
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: ClassLoader, paramarg3: ResourceBundle$Control): ResourceBundle;
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: Module): ResourceBundle;
     constructor()
-    createMap(arg0: number): Map<K, V>;
-    createSet(): E[];
+    createMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: number): Map<K, V>;
+    createSet<E extends Object | number | string | boolean>(): E[];
     getContents(): Object[][];
     handleGetObject(arg0: string): Object;
 }

@@ -3,11 +3,12 @@ import type { Char2ReferenceOpenHashMap$MapEntry } from '../../../../../it/unimi
 import type { Char2ReferenceOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2ReferenceOpenHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ReferenceOpenHashMap$EntryIterator extends Char2ReferenceOpenHashMap$MapIterator<Object> implements ObjectIterator<Char2ReferenceMap$Entry<V>> {
     private constructor(null_: Char2ReferenceOpenHashMap$EntryIterator)
     // private entry: Char2ReferenceOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Char2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    next(): Char2ReferenceOpenHashMap$MapEntry;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Char2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    next<V extends Object | number | string | boolean>(): Char2ReferenceOpenHashMap$MapEntry;
     remove(): void;
     skip(arg0: number): number;
 }

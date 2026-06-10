@@ -200,8 +200,8 @@ export class SystemProperties extends Object {
     static USER_VARIANT: string;
     static getAppleAwtEnableTemplateImages(): string;
     static getAwtToolkit(): string;
-    static getBoolean(paramarg0: Class<Object>, paramarg1: string, paramarg2: () => kotlin.Boolean): boolean;
-    static getBoolean(paramarg0: string, paramarg1: () => kotlin.Boolean): boolean;
+    static getBoolean(paramarg0: Class<Object>, paramarg1: string, paramarg2: () => boolean): boolean;
+    static getBoolean(paramarg0: string, paramarg1: () => boolean): boolean;
     static getComSunJndiLdapObjectTrustSerialData(): string;
     static getComSunNetHttpServerHttpServerProvider(): string;
     static getFileEncoding(): string;
@@ -225,8 +225,8 @@ export class SystemProperties extends Object {
     static getHttpProxyPort(): string;
     static getHttpsProxyHost(): string;
     static getHttpsProxyPort(): string;
-    static getInt(paramarg0: Class<Object>, paramarg1: string, paramarg2: () => kotlin.Int): number;
-    static getInt(paramarg0: string, paramarg1: () => kotlin.Int): number;
+    static getInt(paramarg0: Class<Object>, paramarg1: string, paramarg2: () => number): number;
+    static getInt(paramarg0: string, paramarg1: () => number): number;
     static getJavaAwtFonts(): string;
     static getJavaAwtGraphicsenv(): string;
     static getJavaAwtHeadless(): string;
@@ -360,8 +360,8 @@ export class SystemProperties extends Object {
     static getJdkXmlXsltcIsStandalone(): string;
     static getLineSeparator(): string;
     static getLineSeparator(paramarg0: () => string): string;
-    static getLong(paramarg0: Class<Object>, paramarg1: string, paramarg2: () => kotlin.Long): number;
-    static getLong(paramarg0: string, paramarg1: () => kotlin.Long): number;
+    static getLong(paramarg0: Class<Object>, paramarg1: string, paramarg2: () => number): number;
+    static getLong(paramarg0: string, paramarg1: () => number): number;
     static getNativeEncoding(): string;
     static getNetworkAddressCacheNegativeTtl(): string;
     static getNetworkAddressCacheStaleTtl(): string;

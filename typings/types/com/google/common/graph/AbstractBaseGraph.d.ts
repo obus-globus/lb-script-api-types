@@ -11,9 +11,9 @@ export abstract class AbstractBaseGraph<N extends Object | number | string | boo
     inDegree(node: N): number;
     incidentEdgeOrder(): ElementOrder<N>;
     incidentEdges(node: N): N[][];
-    isOrderingCompatible(endpoints: N[]): boolean;
-    nodeInvalidatableSet(set: T[], node: N): T[];
-    nodePairInvalidatableSet(set: T[], nodeU: N, nodeV: N): T[];
+    isOrderingCompatible(endpoints: Object[]): boolean;
+    nodeInvalidatableSet<T extends Object | number | string | boolean>(set: T[], node: N): T[];
+    nodePairInvalidatableSet<T extends Object | number | string | boolean>(set: T[], nodeU: N, nodeV: N): T[];
     outDegree(node: N): number;
-    validateEndpoints(endpoints: N[]): void;
+    validateEndpoints(endpoints: Object[]): void;
 }

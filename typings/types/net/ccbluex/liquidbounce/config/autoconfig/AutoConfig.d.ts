@@ -6,20 +6,21 @@ import type { AutoSettings } from '../../../../../net/ccbluex/liquidbounce/api/m
 import type { AutoSettingsStatusType } from '../../../../../net/ccbluex/liquidbounce/api/types/enums/AutoSettingsStatusType.d.ts'
 import type { AutoSettingsType } from '../../../../../net/ccbluex/liquidbounce/api/types/enums/AutoSettingsType.d.ts'
 import type { IncludeConfiguration } from '../../../../../net/ccbluex/liquidbounce/config/autoconfig/IncludeConfiguration.d.ts'
+import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 export class AutoConfig extends Object {
     static INSTANCE: AutoConfig;
     readonly configs: AutoSettings[] | null;
     includeConfiguration: IncludeConfiguration;
     loadingNow: boolean;
-    // private deserializeModuleValueGroup(jsonObject: JsonObject, modules: E[]): void;
+    // private deserializeModuleValueGroup(jsonObject: JsonObject, modules: ValueGroup[]): void;
     // private formatAutoConfigProtocolInfo(pVersion: number, pName: string): void;
     /**
      * Deserialize module configurable from a reader
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:106}
      */
-    loadAutoConfig(jsonObject: JsonObject, modules: E[]): void;
-    loadAutoConfig(reader: Reader, modules: E[]): void;
+    loadAutoConfig(jsonObject: JsonObject, modules: ValueGroup[]): void;
+    loadAutoConfig(reader: Reader, modules: ValueGroup[]): void;
     loadAutoConfig(autoConfig: AutoSettings): void;
     // private printOutMetadata(jsonObject: JsonObject): void;
     /**

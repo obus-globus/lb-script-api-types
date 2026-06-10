@@ -13,7 +13,7 @@ export class ApplyExhaustion extends Record implements EnchantmentEntityEffect {
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<ApplyExhaustion>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(amount: LevelBasedValue)
     // private amount: LevelBasedValue;
     amount(): LevelBasedValue;

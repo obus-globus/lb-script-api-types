@@ -9,9 +9,9 @@ import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class DynamicType<T extends IdHolder> extends Type<T> {
-    constructor(arg0: Int2ObjectMap<(param0: T, param1: ByteBuf) => void>, arg1: Class<T>)
+    constructor(arg0: Int2ObjectMap<(param0: ByteBuf, param1: T) => void>, arg1: Class<T>)
     constructor(arg0: Class<T>)
-    // private readers: Int2ObjectMap<(param0: T, param1: ByteBuf) => void>;
+    // private readers: Int2ObjectMap<(param0: ByteBuf, param1: T) => void>;
     filler(arg0: Protocol<Object, Object, Object, Object>): DynamicType$DataFiller;
     filler(arg0: Protocol<Object, Object, Object, Object>, arg1: boolean): DynamicType$DataFiller;
     mappings(arg0: Protocol<Object, Object, Object, Object>): FullMappings;

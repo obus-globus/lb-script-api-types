@@ -12,7 +12,7 @@ export class PolyglotLimits$EngineLimits extends Object {
     // private sameStatementLimit: Assumption;
     // private statementLimit: number;
     // private statementLimitBinding: EventBinding<Object>;
-    // private statementLimitSourcePredicate: (param0: Object) => kotlin.Boolean;
+    // private statementLimitSourcePredicate: (param0: Object) => boolean;
     getStatementLimit(): number;
     initialize(limits: PolyglotLimits, context: PolyglotContextImpl): void;
     notifyEvent(context: PolyglotContextImpl): RuntimeException;

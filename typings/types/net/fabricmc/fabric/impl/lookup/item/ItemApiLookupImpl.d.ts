@@ -13,15 +13,15 @@ export class ItemApiLookupImpl<A extends Object | number | string | boolean, C e
     private constructor(arg0: Identifier, arg1: Class<Object>, arg2: Class<Object>)
     // private apiClass: Class<A>;
     // private contextClass: Class<C>;
-    // private fallbackProviders: (param0: A, param1: C) => unknown[];
+    // private fallbackProviders: (param0: ItemStack, param1: C) => A[];
     // private identifier: Identifier;
-    // private providerMap: ApiProviderMap<Item, (param0: A, param1: C) => unknown>;
+    // private providerMap: ApiProviderMap<Item, (param0: ItemStack, param1: C) => A>;
     apiClass(): Class<A>;
     contextClass(): Class<C>;
     find(arg0: ItemStack, arg1: C): A;
     getId(): Identifier;
-    getProvider(arg0: Item): (param0: A, param1: C) => unknown;
-    registerFallback(arg0: (param0: A, param1: C) => unknown): void;
-    registerForItems(arg0: (param0: A, param1: C) => unknown, arg1: ItemLike[]): void;
+    getProvider(arg0: Item): (param0: ItemStack, param1: C) => A;
+    registerFallback(arg0: (param0: ItemStack, param1: C) => A): void;
+    registerForItems(arg0: (param0: ItemStack, param1: C) => A, arg1: ItemLike[]): void;
     registerSelf(arg0: ItemLike[]): void;
 }

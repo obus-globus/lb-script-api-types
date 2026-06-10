@@ -1,6 +1,8 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 import type { Cube } from '../../../../../../org/cube/converter/model/element/Cube.d.ts'
 import type { Triple } from '../../../../../../org/cube/converter/util/Triple.d.ts'
+import type { Position3V } from '../../../../../../org/cube/converter/util/element/Position3V.d.ts'
 import type { Transformation } from '../../../../../../org/cube/converter/util/minecraft/Transformation.d.ts'
 import type { Matrix3f } from '../../../../../../org/joml/Matrix3f.d.ts'
 import type { Matrix4f } from '../../../../../../org/joml/Matrix4f.d.ts'
@@ -9,7 +11,7 @@ import type { Vector3f } from '../../../../../../org/joml/Vector3f.d.ts'
 export class MatrixUtil extends Object {
     static applyJacobiIterations(paramarg0: Matrix3f, paramarg1: number): Quaternionf;
     static fromMatrix(paramarg0: Matrix4f): Transformation;
-    static getTransformation(paramarg0: (Object | null)[], paramarg1: Cube, paramarg2: number): Transformation;
+    static getTransformation(paramarg0: Map$Entry<Position3V, Position3V>[], paramarg1: Cube, paramarg2: number): Transformation;
     static isIdentity(paramarg0: Matrix4f): boolean;
     static isOrthonormal(paramarg0: Matrix4f): boolean;
     static isTranslation(paramarg0: Matrix4f): boolean;

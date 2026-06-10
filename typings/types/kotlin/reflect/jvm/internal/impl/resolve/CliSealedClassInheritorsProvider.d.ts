@@ -3,5 +3,5 @@ import type { SealedClassInheritorsProvider } from '../../../../../../kotlin/ref
 export class CliSealedClassInheritorsProvider extends SealedClassInheritorsProvider {
     static INSTANCE: CliSealedClassInheritorsProvider;
     private constructor()
-    computeSealedSubclasses(arg0: ClassDescriptor, arg1: boolean): E[];
+    computeSealedSubclasses(arg0: ClassDescriptor, arg1: boolean): ClassDescriptor[];
 }

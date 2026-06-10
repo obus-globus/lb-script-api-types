@@ -8,13 +8,13 @@ import type { Enchantment } from '../../../../net/minecraft/world/item/enchantme
 import type { ItemEnchantments } from '../../../../net/minecraft/world/item/enchantment/ItemEnchantments.d.ts'
 export class EnchantmentPredicate extends Record {
     static CODEC: Codec<EnchantmentPredicate>;
-    constructor(enchantments: Optional<Holder<T>[]>, level: MinMaxBounds$Ints)
+    constructor(enchantments: Optional<Holder<Enchantment>[]>, level: MinMaxBounds$Ints)
     constructor(enchantment: Holder<Enchantment>, level: MinMaxBounds$Ints)
-    constructor(enchantments: Holder<T>[], level: MinMaxBounds$Ints)
-    // private enchantments: Optional<Holder<T>[]>;
+    constructor(enchantments: Holder<Enchantment>[], level: MinMaxBounds$Ints)
+    // private enchantments: Optional<Holder<Enchantment>[]>;
     // private level: MinMaxBounds$Ints;
     containedIn(itemEnchantments: ItemEnchantments): boolean;
-    enchantments(): Optional<Holder<T>[]>;
+    enchantments(): Optional<Holder<Enchantment>[]>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     level(): MinMaxBounds$Ints;

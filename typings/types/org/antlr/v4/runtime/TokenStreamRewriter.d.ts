@@ -21,7 +21,7 @@ export class TokenStreamRewriter extends Object {
     delete(arg0: Token, arg1: Token): void;
     deleteProgram(): void;
     deleteProgram(arg0: string): void;
-    getKindOfOps(arg0: TokenStreamRewriter$RewriteOperation[], arg1: Class<T>, arg2: number): T[];
+    getKindOfOps<T extends TokenStreamRewriter$RewriteOperation>(arg0: TokenStreamRewriter$RewriteOperation[], arg1: Class<T>, arg2: number): T[];
     getLastRewriteTokenIndex(): number;
     getLastRewriteTokenIndex(arg0: string): number;
     getProgram(arg0: string): TokenStreamRewriter$RewriteOperation[];

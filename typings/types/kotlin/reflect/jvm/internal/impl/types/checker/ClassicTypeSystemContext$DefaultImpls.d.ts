@@ -57,7 +57,7 @@ export class ClassicTypeSystemContext$DefaultImpls extends Object {
     static hasAnnotation(paramarg0: ClassicTypeSystemContext, paramarg1: KotlinTypeMarker, paramarg2: FqName): boolean;
     static hasRecursiveBounds(paramarg0: ClassicTypeSystemContext, paramarg1: TypeParameterMarker, paramarg2: TypeConstructorMarker): boolean;
     static identicalArguments(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker, paramarg2: RigidTypeMarker): boolean;
-    static intersectTypes(paramarg0: ClassicTypeSystemContext, paramarg1: E[]): KotlinTypeMarker;
+    static intersectTypes(paramarg0: ClassicTypeSystemContext, paramarg1: KotlinTypeMarker[]): KotlinTypeMarker;
     static isAnyConstructor(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): boolean;
     static isArrayOrNullableArray(paramarg0: ClassicTypeSystemContext, paramarg1: KotlinTypeMarker): boolean;
     static isClassTypeConstructor(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): boolean;
@@ -89,14 +89,14 @@ export class ClassicTypeSystemContext$DefaultImpls extends Object {
     static nullableAnyType(paramarg0: ClassicTypeSystemContext): SimpleTypeMarker;
     static original(paramarg0: ClassicTypeSystemContext, paramarg1: DefinitelyNotNullTypeMarker): SimpleTypeMarker;
     static parametersCount(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): number;
-    static possibleIntegerTypes(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker): E[];
+    static possibleIntegerTypes(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker): KotlinTypeMarker[];
     static projection(paramarg0: ClassicTypeSystemContext, paramarg1: CapturedTypeConstructorMarker): TypeArgumentMarker;
     static safeSubstitute(paramarg0: ClassicTypeSystemContext, paramarg1: TypeSubstitutorMarker, paramarg2: KotlinTypeMarker): KotlinTypeMarker;
     static substitutionSupertypePolicy(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker): TypeCheckerState$SupertypesPolicy;
-    static supertypes(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): E[];
+    static supertypes(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): KotlinTypeMarker[];
     static typeConstructor(paramarg0: ClassicTypeSystemContext, paramarg1: CapturedTypeMarker): CapturedTypeConstructorMarker;
     static typeConstructor(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker): TypeConstructorMarker;
-    static typeSubstitutorForUnderlyingType(paramarg0: ClassicTypeSystemContext, paramarg1: Map<TypeConstructorMarker, Object | null>): TypeSubstitutorMarker;
+    static typeSubstitutorForUnderlyingType(paramarg0: ClassicTypeSystemContext, paramarg1: Map<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
     static upperBound(paramarg0: ClassicTypeSystemContext, paramarg1: FlexibleTypeMarker): SimpleTypeMarker;
     static withNullability(paramarg0: ClassicTypeSystemContext, paramarg1: KotlinTypeMarker, paramarg2: boolean): KotlinTypeMarker;
     static withNullability(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker, paramarg2: boolean): SimpleTypeMarker;

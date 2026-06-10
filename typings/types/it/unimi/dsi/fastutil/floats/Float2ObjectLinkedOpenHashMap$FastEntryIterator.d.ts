@@ -8,10 +8,10 @@ export class Float2ObjectLinkedOpenHashMap$FastEntryIterator extends Float2Objec
     constructor(null_: Float2ObjectLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Float2ObjectLinkedOpenHashMap$FastEntryIterator, arg1: number)
     // private entry: Float2ObjectLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Float2ObjectMap$Entry<V>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Float2ObjectLinkedOpenHashMap$MapEntry;
-    previous(): Float2ObjectLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Float2ObjectMap$Entry<V>) => void, arg1: number): void;
+    add<V extends Object | number | string | boolean>(arg0: Float2ObjectMap$Entry<V>): void;
+    next<V extends Object | number | string | boolean>(): Float2ObjectLinkedOpenHashMap$MapEntry;
+    previous<V extends Object | number | string | boolean>(): Float2ObjectLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<V extends Object | number | string | boolean>(arg0: Float2ObjectMap$Entry<V>): void;
 }

@@ -10,7 +10,7 @@ export class CompletableFutureCoroutine<T extends Object | number | string | boo
     static Key: Job$Key;
     constructor(context: CoroutineContext, future: CompletableFuture<T>)
     // private future: CompletableFuture<T>;
-    andThen(arg0: (param0: R) => V): (param0: T, param1: U) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: void) => V): (param0: T | null, param1: Throwable | null) => V;
     apply(value: T | null, exception: Throwable | null): void;
     protected onCancelled(cause: Throwable, handled: boolean): void;
     protected onCompleted(value: T): void;

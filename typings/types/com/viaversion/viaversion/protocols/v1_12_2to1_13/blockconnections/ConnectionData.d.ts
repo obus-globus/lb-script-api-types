@@ -10,7 +10,7 @@ export class ConnectionData extends Object {
     static connect(paramarg0: UserConnection, paramarg1: BlockPosition, paramarg2: number): number;
     static connectBlocks(paramarg0: UserConnection, paramarg1: Chunk): void;
     static connects(paramarg0: number): boolean;
-    static getConnectionHandler(paramarg0: number): (param0: UserConnection, param1: BlockPosition, param2: number) => kotlin.Int;
+    static getConnectionHandler(paramarg0: number): (param0: UserConnection, param1: BlockPosition, param2: number) => number;
     static getId(paramarg0: string): number;
     static getKeyToId(): Object2IntMap<string>;
     static init(): void;

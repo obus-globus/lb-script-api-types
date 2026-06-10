@@ -7,7 +7,7 @@ import type { MapBuilder$EntryRef } from '../../../kotlin/collections/builders/M
 import type { MapBuilder$Itr } from '../../../kotlin/collections/builders/MapBuilder$Itr.d.ts'
 export class MapBuilder$EntriesItr<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends MapBuilder$Itr<K, V> implements Iterator<Map$Entry<K, V>> {
     constructor(map: Map<K, V>)
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Map$Entry<K, V>) => void): void;
     next(): MapBuilder$EntryRef<K, V>;
     nextAppendString(sb: StringBuilder): void;
     nextHashCode(): number;

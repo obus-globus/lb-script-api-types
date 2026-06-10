@@ -13,7 +13,7 @@ export class PreviousInjectorInsns extends Enum<PreviousInjectorInsns> {
     private constructor(arg2: string)
     // private description: string;
     getLast(arg0: AbstractInsnNode): AbstractInsnNode;
-    getPredicates(): (param0: AbstractInsnNode) => kotlin.Boolean[];
+    getPredicates(): (param0: AbstractInsnNode) => boolean[];
     moveNodes(arg0: AbstractInsnNode[], arg1: AbstractInsnNode[], arg2: AbstractInsnNode): void;
     name(): "DYNAMIC_INSTANCEOF_REDIRECT" | "DUPED_FACTORY_REDIRECT" | "COMPARISON_WRAPPER";
 }

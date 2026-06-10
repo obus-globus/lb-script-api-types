@@ -13,7 +13,7 @@ export class ProgramImages$Builder extends Object implements ImageHolder {
     // private maxImageUnits: number;
     // private nextImageUnit: number;
     // private program: number;
-    addTextureImage(arg0: () => kotlin.Int, arg1: InternalTextureFormat, arg2: string): void;
+    addTextureImage(arg0: () => number, arg1: InternalTextureFormat, arg2: string): void;
     build(): ProgramImages;
     hasImage(arg0: string): boolean;
 }

@@ -5,6 +5,7 @@ import type { HttpClient } from '../../../../net/lenni0451/commons/httpclient/Ht
 import type { JavaAuthManager } from '../../../../net/raphimc/minecraftauth/java/JavaAuthManager.d.ts'
 import type { MsaApplicationConfig } from '../../../../net/raphimc/minecraftauth/msa/model/MsaApplicationConfig.d.ts'
 import type { MsaToken } from '../../../../net/raphimc/minecraftauth/msa/model/MsaToken.d.ts'
+import type { MsaAuthService } from '../../../../net/raphimc/minecraftauth/msa/service/MsaAuthService.d.ts'
 import type { MsaAuthServiceSupplier } from '../../../../net/raphimc/minecraftauth/msa/service/util/MsaAuthServiceSupplier.d.ts'
 import type { ParamMsaAuthServiceSupplier } from '../../../../net/raphimc/minecraftauth/msa/service/util/ParamMsaAuthServiceSupplier.d.ts'
 export class JavaAuthManager$Builder extends Object {
@@ -19,7 +20,7 @@ export class JavaAuthManager$Builder extends Object {
     deviceType(arg0: string): JavaAuthManager$Builder;
     login(arg0: string): JavaAuthManager;
     login(arg0: MsaToken): JavaAuthManager;
-    login(arg0: (param0: HttpClient, param1: MsaApplicationConfig) => net.raphimc.minecraftauth.msa.service.MsaAuthService): JavaAuthManager;
-    login<T extends Object | number | string | boolean>(arg0: (param0: T, param1: HttpClient, param2: MsaApplicationConfig) => net.raphimc.minecraftauth.msa.service.MsaAuthService, arg1: T): JavaAuthManager;
+    login(arg0: (param0: HttpClient, param1: MsaApplicationConfig) => MsaAuthService): JavaAuthManager;
+    login<T extends Object | number | string | boolean>(arg0: (param0: HttpClient, param1: MsaApplicationConfig, param2: T) => MsaAuthService, arg1: T): JavaAuthManager;
     msaApplicationConfig(arg0: MsaApplicationConfig): JavaAuthManager$Builder;
 }

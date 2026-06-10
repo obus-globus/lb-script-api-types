@@ -14,10 +14,10 @@ export class RegionStorageUpgrader$Builder extends Object {
     // private defaultVersion: number;
     // private folderName: string;
     // private recreateRegionFiles: boolean;
-    // private tagModifiers: Int2ObjectAVLTreeMap<(param0: ChunkPos, param1: CompoundTag) => kotlin.Boolean>;
+    // private tagModifiers: Int2ObjectAVLTreeMap<(param0: ChunkPos, param1: CompoundTag) => boolean>;
     // private type: string;
     // private upgradeProgress: UpgradeProgress;
-    addTagModifier(version: number, tagModifier: (param0: ChunkPos, param1: CompoundTag) => kotlin.Boolean): RegionStorageUpgrader$Builder;
+    addTagModifier(version: number, tagModifier: (param0: ChunkPos, param1: CompoundTag) => boolean): RegionStorageUpgrader$Builder;
     build(previousCopiesFileAmounts: number): RegionStorageUpgrader;
     copy(): RegionStorageUpgrader$Builder;
     setDataFixContextTag(dataFixContextTag: CompoundTag): RegionStorageUpgrader$Builder;
@@ -25,7 +25,7 @@ export class RegionStorageUpgrader$Builder extends Object {
     setDefaultVersion(defaultVersion: number): RegionStorageUpgrader$Builder;
     setFolderName(folderName: string): RegionStorageUpgrader$Builder;
     setRecreateRegionFiles(recreateRegionFiles: boolean): RegionStorageUpgrader$Builder;
-    // private setTagModifiers(tagModifiers: Int2ObjectAVLTreeMap<(param0: ChunkPos, param1: CompoundTag) => kotlin.Boolean>): RegionStorageUpgrader$Builder;
+    // private setTagModifiers(tagModifiers: Int2ObjectAVLTreeMap<(param0: ChunkPos, param1: CompoundTag) => boolean>): RegionStorageUpgrader$Builder;
     setType(type: string): RegionStorageUpgrader$Builder;
     setTypeAndFolderName(name: string): RegionStorageUpgrader$Builder;
     trackProgress(upgradeProgress: UpgradeProgress): RegionStorageUpgrader$Builder;

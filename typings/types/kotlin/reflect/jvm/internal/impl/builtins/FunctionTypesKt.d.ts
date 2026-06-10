@@ -11,11 +11,11 @@ import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/i
 import type { TypeProjection } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeProjection.d.ts'
 export class FunctionTypesKt extends Object {
     static contextFunctionTypeParamsCount(paramarg0: KotlinType): number;
-    static createFunctionType(paramarg0: KotlinBuiltIns, paramarg1: AnnotationDescriptor[], paramarg2: KotlinType, paramarg3: (Object | null)[], paramarg4: (Object | null)[], paramarg5: Name[], paramarg6: KotlinType, paramarg7: boolean): SimpleType;
+    static createFunctionType(paramarg0: KotlinBuiltIns, paramarg1: AnnotationDescriptor[], paramarg2: KotlinType, paramarg3: KotlinType[], paramarg4: KotlinType[], paramarg5: Name[], paramarg6: KotlinType, paramarg7: boolean): SimpleType;
     static extractParameterNameFromFunctionTypeArgument(paramarg0: KotlinType): Name;
     static getContextReceiverTypesFromFunctionType(paramarg0: KotlinType): KotlinType[];
     static getFunctionDescriptor(paramarg0: KotlinBuiltIns, paramarg1: number, paramarg2: boolean): ClassDescriptor;
-    static getFunctionTypeArgumentProjections(paramarg0: KotlinType, paramarg1: (Object | null)[], paramarg2: (Object | null)[], paramarg3: Name[], paramarg4: KotlinType, paramarg5: KotlinBuiltIns): TypeProjection[];
+    static getFunctionTypeArgumentProjections(paramarg0: KotlinType, paramarg1: KotlinType[], paramarg2: KotlinType[], paramarg3: Name[], paramarg4: KotlinType, paramarg5: KotlinBuiltIns): TypeProjection[];
     static getFunctionTypeKind(paramarg0: DeclarationDescriptor): FunctionTypeKind;
     static getFunctionTypeKind(paramarg0: KotlinType): FunctionTypeKind;
     static getReceiverTypeFromFunctionType(paramarg0: KotlinType): KotlinType;

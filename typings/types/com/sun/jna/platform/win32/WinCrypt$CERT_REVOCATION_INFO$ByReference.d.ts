@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Structure$ByReference } from '../../../../../com/sun/jna/Structure$ByReference.d.ts'
 import type { WinCrypt$CERT_REVOCATION_INFO } from '../../../../../com/sun/jna/platform/win32/WinCrypt$CERT_REVOCATION_INFO.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -14,7 +15,7 @@ export class WinCrypt$CERT_REVOCATION_INFO$ByReference extends WinCrypt$CERT_REV
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
 }

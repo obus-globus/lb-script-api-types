@@ -47,9 +47,9 @@ export interface ConfigurationBuilder<T extends Configuration> extends Object, B
     newAsyncRootLogger(level: string, includeLocation: boolean): RootLoggerComponentBuilder;
     newAsyncRootLogger(level: Level): RootLoggerComponentBuilder;
     newAsyncRootLogger(level: Level, includeLocation: boolean): RootLoggerComponentBuilder;
-    newComponent(pluginName: string): ComponentBuilder<B>;
-    newComponent(name: string, pluginName: string): ComponentBuilder<B>;
-    newComponent(name: string, pluginName: string, value: string): ComponentBuilder<B>;
+    newComponent<B extends ComponentBuilder<B>>(pluginName: string): ComponentBuilder<B>;
+    newComponent<B extends ComponentBuilder<B>>(name: string, pluginName: string): ComponentBuilder<B>;
+    newComponent<B extends ComponentBuilder<B>>(name: string, pluginName: string, value: string): ComponentBuilder<B>;
     newCustomLevel(name: string, level: number): CustomLevelComponentBuilder;
     newFilter(pluginName: string, onMatch: string, onMismatch: string): FilterComponentBuilder;
     newFilter(pluginName: string, onMatch: Filter$Result, onMismatch: Filter$Result): FilterComponentBuilder;

@@ -47,6 +47,6 @@ export class BlinkManager extends ValueGroup implements EventListener {
     // private getEspData(): BlinkEspData | null;
     isAboveTime(delay: number): boolean;
     parent(): EventListener | null;
-    rewrite(action: (param0: T) => void): void;
+    rewrite<T extends Object | number | string | boolean>(action: (param0: T) => void): void;
     unregister(): void;
 }

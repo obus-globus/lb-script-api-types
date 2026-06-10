@@ -17,7 +17,7 @@ export class MapMaker extends Object {
     getValueStrength(): MapMakerInternalMap$Strength;
     initialCapacity(initialCapacity: number): MapMaker;
     keyEquivalence(equivalence: Equivalence<Object>): MapMaker;
-    makeMap(): Map<K, V>;
+    makeMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Map<K, V>;
     setKeyStrength(strength: MapMakerInternalMap$Strength): MapMaker;
     setValueStrength(strength: MapMakerInternalMap$Strength): MapMaker;
     toString(): string;

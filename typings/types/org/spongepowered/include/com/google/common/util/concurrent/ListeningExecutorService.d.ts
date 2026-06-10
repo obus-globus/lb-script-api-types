@@ -7,5 +7,5 @@ export interface ListeningExecutorService extends ExecutorService, Object {
     close(): void;
     submit(arg0: () => void): ListenableFuture<Object>;
     submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): ListenableFuture<T>;
-    submit(arg0: () => T): ListenableFuture<T>;
+    submit<T extends Object | number | string | boolean>(arg0: () => T): ListenableFuture<T>;
 }

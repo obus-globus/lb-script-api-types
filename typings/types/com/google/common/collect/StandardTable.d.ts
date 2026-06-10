@@ -37,5 +37,5 @@ export class StandardTable<R extends Object | number | string | boolean, C exten
     rowKeySet(): R[];
     rowMap(): Map<R, Map<C, V>>;
     size(): number;
-    values(): E[];
+    values(): V[];
 }

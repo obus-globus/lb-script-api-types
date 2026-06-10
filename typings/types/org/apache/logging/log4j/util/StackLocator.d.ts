@@ -7,7 +7,7 @@ export class StackLocator extends Object {
     private constructor()
     calcLocation(fqcnOfLogger: string): StackTraceElement;
     getCallerClass(anchor: Class<Object>): Class<Object>;
-    getCallerClass(sentinelClass: Class<Object>, callerPredicate: (param0: Class<Object>) => kotlin.Boolean): Class<Object>;
+    getCallerClass(sentinelClass: Class<Object>, callerPredicate: (param0: Class<Object>) => boolean): Class<Object>;
     getCallerClass(depth: number): Class<Object>;
     getCallerClass(fqcn: string, pkg: string): Class<Object>;
     getCurrentStackTrace(): Class<Object>[];

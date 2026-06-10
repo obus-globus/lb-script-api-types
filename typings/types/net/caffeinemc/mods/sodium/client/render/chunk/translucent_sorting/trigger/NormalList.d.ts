@@ -9,7 +9,7 @@ export class NormalList extends Object {
     static queryRange(paramarg0: number[], paramarg1: number, paramarg2: number): boolean;
     constructor(arg0: Vector3fc, arg1: number)
     readonly alignedDirection: number;
-    // private groupsByInterval: Map<DoubleInterval, E[]>;
+    // private groupsByInterval: Map<DoubleInterval, Group[]>;
     // private groupsBySection: Long2ReferenceOpenHashMap<Group>;
     // private intervalTree: number[];
     readonly normal: Vector3fc;

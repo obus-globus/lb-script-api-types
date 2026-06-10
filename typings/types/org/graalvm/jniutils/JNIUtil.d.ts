@@ -77,7 +77,7 @@ export class JNIUtil extends Object {
     static NewCharArray(paramenv: JNI$JNIEnv, paramlen: number): JNI$JCharArray;
     static NewDoubleArray(paramenv: JNI$JNIEnv, paramlen: number): JNI$JDoubleArray;
     static NewFloatArray(paramenv: JNI$JNIEnv, paramlen: number): JNI$JFloatArray;
-    static NewGlobalRef(paramenv: JNI$JNIEnv, paramref: Object | null, paramtype: string): Object | null;
+    static NewGlobalRef(paramenv: JNI$JNIEnv, paramref: JNI$JObject | null, paramtype: string): JNI$JObject | null;
     static NewIntArray(paramenv: JNI$JNIEnv, paramlen: number): JNI$JIntArray;
     static NewLocalRef(paramenv: JNI$JNIEnv, paramref: JNI$JObject): JNI$JObject;
     static NewLongArray(paramenv: JNI$JNIEnv, paramlen: number): JNI$JLongArray;

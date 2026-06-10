@@ -27,7 +27,7 @@ export class Field extends AccessibleObject implements Member {
     get(arg0: Object): Object;
     getAnnotatedType(): AnnotatedType;
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getBoolean(arg0: Object): boolean;
     getByte(arg0: Object): number;
     getChar(arg0: Object): string;

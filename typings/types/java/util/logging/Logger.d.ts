@@ -61,7 +61,7 @@ export class Logger extends Object {
     finest(arg0: string): void;
     // private getCallerModule(): Module;
     // private getEffectiveLoggerBundle(): Logger$LoggerBundle;
-    getFilter(): (param0: LogRecord) => kotlin.Boolean;
+    getFilter(): (param0: LogRecord) => boolean;
     getHandlers(): Handler[];
     getLevel(): Level;
     getName(): string;
@@ -98,7 +98,7 @@ export class Logger extends Object {
     removeChildLogger(arg0: LogManager$LoggerWeakRef): void;
     removeHandler(arg0: Handler): void;
     // private setCallerModuleRef(arg0: Module): void;
-    setFilter(arg0: (param0: LogRecord) => kotlin.Boolean): void;
+    setFilter(arg0: (param0: LogRecord) => boolean): void;
     setLevel(arg0: Level): void;
     setLogManager(arg0: LogManager): void;
     setParent(arg0: Logger): void;

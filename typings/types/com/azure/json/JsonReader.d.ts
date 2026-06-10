@@ -25,11 +25,11 @@ export abstract class JsonReader extends Object implements Closeable {
     isResetSupported(): boolean;
     isStartArrayOrObject(): boolean;
     nextToken(): JsonToken;
-    readArray(arg0: (param0: JsonReader) => T): T[];
+    readArray<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): T[];
     readChildren(): string;
     readChildren(arg0: StringBuilder): void;
     // private readInternal(arg0: StringBuilder, arg1: boolean, arg2: boolean): StringBuilder;
-    readMap(arg0: (param0: JsonReader) => T): { [key: string]: T };
+    readMap<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): { [key: string]: T };
     // private readMapOrObject<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T, arg1: boolean): T;
     readObject<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): T;
     readRemainingFieldsAsJsonObject(): string;

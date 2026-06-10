@@ -10,12 +10,12 @@ import type { MaterialBaker } from '../../../../../net/minecraft/client/resource
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ModelBakery$ModelBakerImpl extends Object implements ModelBaker {
     private constructor(null_: ModelBakery$ModelBakerImpl, materials: MaterialBaker, interner: ModelBaker$Interner, missingModels: ModelBakery$MissingModels)
-    // private cacheComputeFunction: (param0: (param0: Object) => unknown) => Object;
+    // private cacheComputeFunction: (param0: (param0: ModelBaker) => Object) => Object;
     // private interner: ModelBaker$Interner;
     // private materials: MaterialBaker;
     // private missingModels: ModelBakery$MissingModels;
-    // private operationCache: Map<(param0: Object) => unknown, Object>;
-    compute<T extends Object | number | string | boolean>(key: (param0: T) => unknown): T;
+    // private operationCache: Map<(param0: ModelBaker) => Object, Object>;
+    compute<T extends Object | number | string | boolean>(key: (param0: ModelBaker) => T): T;
     getModel(location: Identifier): ResolvedModel;
     interner(): ModelBaker$Interner;
     materials(): MaterialBaker;

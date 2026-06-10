@@ -59,6 +59,6 @@ export class WorldCreationUiState extends Object {
     setSettings(settings: WorldCreationContext): void;
     setWorldType(worldType: WorldCreationUiState$WorldTypeEntry): void;
     tryUpdateDataConfiguration(newConfig: WorldDataConfiguration): boolean;
-    updateDimensions(modifier: (param0: Object | null, param1: Object | null) => unknown): void;
+    updateDimensions(modifier: (param0: Object | null, param1: Object | null) => Object | null): void;
     // private updatePresetLists(): void;
 }

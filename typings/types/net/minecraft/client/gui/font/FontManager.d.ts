@@ -53,7 +53,7 @@ export class FontManager extends Object implements AutoCloseable, FabricResource
     // private getSpriteFont(contents: FontDescription$AtlasSprite): GlyphSource;
     // private prepare(manager: ResourceManager, executor: Executor): CompletableFuture<FontManager$Preparation>;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     // private resolveProviders(unresolvedProviders: FontManager$UnresolvedBuilderBundle[]): Map<Identifier, GlyphProvider$Conditional[]>;
     // private safeLoad(id: FontManager$BuilderId, provider: GlyphProviderDefinition$Loader, manager: ResourceManager, executor: Executor): CompletableFuture<Optional<GlyphProvider>>;
     updateOptions(options: Options): void;

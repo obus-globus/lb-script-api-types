@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DoubledDigraphAdapter<V extends Object | number | string | boolean> extends DigraphAdapter<V> implements DoubledDigraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
-    static getAdapterFactory(paramarg0: DigraphFactory<Object>): DigraphFactory<Object>;
+    static getAdapterFactory(paramarg0: DigraphFactory<Digraph<Object>>): DigraphFactory<DoubledDigraphAdapter<Object>>;
     constructor()
     constructor(arg0: DigraphFactory<Digraph<V>>)
     constructor(arg0: DigraphFactory<Digraph<V>>, arg1: DoubledDigraphAdapter<V>)
@@ -26,8 +26,8 @@ export class DoubledDigraphAdapter<V extends Object | number | string | boolean>
     remove(arg0: V, arg1: V): OptionalInt;
     remove0(arg0: V): boolean;
     remove0(arg0: V, arg1: V): OptionalInt;
-    removeAll(arg0: E[]): void;
-    removeAll0(arg0: E[]): void;
+    removeAll(arg0: V[]): void;
+    removeAll0(arg0: V[]): void;
     reverse(): DoubledDigraphAdapter<V>;
     sources(arg0: V): V[];
     targets(arg0: V): V[];

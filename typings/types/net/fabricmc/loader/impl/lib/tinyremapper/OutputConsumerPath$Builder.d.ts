@@ -4,7 +4,7 @@ import type { OutputConsumerPath } from '../../../../../../net/fabricmc/loader/i
 export class OutputConsumerPath$Builder extends Object {
     constructor(arg0: Path[])
     // private assumeArchive: boolean;
-    // private classNameFilter: (param0: string) => kotlin.Boolean;
+    // private classNameFilter: (param0: string) => boolean;
     // private destination: Path[];
     // private threadSyncWrites: boolean;
     assumeArchive(arg0: boolean): OutputConsumerPath$Builder;

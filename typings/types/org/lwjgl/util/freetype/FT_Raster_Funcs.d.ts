@@ -48,13 +48,13 @@ export class FT_Raster_Funcs extends Struct<FT_Raster_Funcs> implements NativeRe
     static nraster_done(paramarg0: number): FT_Raster_DoneFunc;
     static nraster_done(paramarg0: number, paramarg1: (param0: number) => void): void;
     static nraster_new(paramarg0: number): FT_Raster_NewFunc;
-    static nraster_new(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static nraster_new(paramarg0: number, paramarg1: (param0: number, param1: number) => number): void;
     static nraster_render(paramarg0: number): FT_Raster_RenderFunc;
-    static nraster_render(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static nraster_render(paramarg0: number, paramarg1: (param0: number, param1: number) => number): void;
     static nraster_reset(paramarg0: number): FT_Raster_ResetFunc;
     static nraster_reset(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => void): void;
     static nraster_set_mode(paramarg0: number): FT_Raster_SetModeFunc;
-    static nraster_set_mode(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => kotlin.Int): void;
+    static nraster_set_mode(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
@@ -66,14 +66,14 @@ export class FT_Raster_Funcs extends Struct<FT_Raster_Funcs> implements NativeRe
     raster_done(): FT_Raster_DoneFunc;
     raster_done(arg0: (param0: number) => void): FT_Raster_Funcs;
     raster_new(): FT_Raster_NewFunc;
-    raster_new(arg0: (param0: number, param1: number) => kotlin.Int): FT_Raster_Funcs;
+    raster_new(arg0: (param0: number, param1: number) => number): FT_Raster_Funcs;
     raster_render(): FT_Raster_RenderFunc;
-    raster_render(arg0: (param0: number, param1: number) => kotlin.Int): FT_Raster_Funcs;
+    raster_render(arg0: (param0: number, param1: number) => number): FT_Raster_Funcs;
     raster_reset(): FT_Raster_ResetFunc;
     raster_reset(arg0: (param0: number, param1: number, param2: number) => void): FT_Raster_Funcs;
     raster_set_mode(): FT_Raster_SetModeFunc;
-    raster_set_mode(arg0: (param0: number, param1: number, param2: number) => kotlin.Int): FT_Raster_Funcs;
-    set(arg0: number, arg1: (param0: number, param1: number) => kotlin.Int, arg2: (param0: number, param1: number, param2: number) => void, arg3: (param0: number, param1: number, param2: number) => kotlin.Int, arg4: (param0: number, param1: number) => kotlin.Int, arg5: (param0: number) => void): FT_Raster_Funcs;
+    raster_set_mode(arg0: (param0: number, param1: number, param2: number) => number): FT_Raster_Funcs;
+    set(arg0: number, arg1: (param0: number, param1: number) => number, arg2: (param0: number, param1: number, param2: number) => void, arg3: (param0: number, param1: number, param2: number) => number, arg4: (param0: number, param1: number) => number, arg5: (param0: number) => void): FT_Raster_Funcs;
     set(arg0: FT_Raster_Funcs): FT_Raster_Funcs;
     sizeof(): number;
 }

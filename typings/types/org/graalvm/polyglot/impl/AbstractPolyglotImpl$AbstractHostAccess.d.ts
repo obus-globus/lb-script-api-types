@@ -21,11 +21,11 @@ export abstract class AbstractPolyglotImpl$AbstractHostAccess extends AbstractPo
     toFunction(internalContext: Object, function_: Object, returnClass: Class<Object>, returnType: Type, paramClass: Class<Object>, paramType: Type): (param0: Object | null) => Object | null;
     toFunctionProxy<T extends Object | number | string | boolean>(internalContext: Object, functionalType: Class<T>, genericType: Type, function_: Object): T;
     toGuestValue(internalContext: Object, hostValue: Object): Object;
-    toIterable(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
-    toIterator(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): Iterator<T>;
-    toList(internalContext: Object, guestValue: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
-    toMap(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map<K, V>;
-    toMapEntry(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map$Entry<K, V>;
+    toIterable<T extends Object | number | string | boolean>(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
+    toIterator<T extends Object | number | string | boolean>(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): Iterator<T>;
+    toList<T extends Object | number | string | boolean>(internalContext: Object, guestValue: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
+    toMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map<K, V>;
+    toMapEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map$Entry<K, V>;
     toObjectProxy(internalContext: Object, clazz: Class<Object>, genericType: Type, obj: Object): Object;
     toPolyglotException(internalContext: Object, e: Throwable): RuntimeException;
     toValue(internalContext: Object, receiver: Object): Object;

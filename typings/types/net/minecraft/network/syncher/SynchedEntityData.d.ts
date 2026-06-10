@@ -6,15 +6,15 @@ import type { SyncedDataHolder } from '../../../../net/minecraft/network/syncher
 import type { SynchedEntityData$DataItem } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataItem.d.ts'
 import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 export class SynchedEntityData extends Object {
-    static defineId(paramclazz: Class<Object>, paramtype: EntityDataSerializer<Object>): EntityDataAccessor<Object>;
+    static defineId(paramclazz: Class<SyncedDataHolder>, paramtype: EntityDataSerializer<Object>): EntityDataAccessor<Object>;
     private constructor(entity: SyncedDataHolder, itemsById: SynchedEntityData$DataItem<Object>[])
     // private entity: SyncedDataHolder;
     // private isDirty: boolean;
     // private itemsById: SynchedEntityData$DataItem<Object>[];
-    // private assignValue(dataItem: SynchedEntityData$DataItem<T>, item: SynchedEntityData$DataValue<Object>): void;
+    // private assignValue<T extends Object | number | string | boolean>(dataItem: SynchedEntityData$DataItem<T>, item: SynchedEntityData$DataValue<Object>): void;
     assignValues(items: SynchedEntityData$DataValue<Object>[]): void;
     get<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>): T;
-    // private getItem(accessor: EntityDataAccessor<T>): SynchedEntityData$DataItem<T>;
+    // private getItem<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>): SynchedEntityData$DataItem<T>;
     getNonDefaultValues(): SynchedEntityData$DataValue<Object>[];
     isDirty(): boolean;
     packDirty(): SynchedEntityData$DataValue<Object>[];

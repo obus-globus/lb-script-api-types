@@ -17,7 +17,7 @@ export abstract class WatchPbLong extends Object implements Serializable, Undoab
     // private coefs: number[];
     // private degree: number;
     // private learnt: boolean;
-    // private levelBased: (param0: number) => kotlin.Boolean;
+    // private levelBased: (param0: Object) => boolean;
     // private lits: number[];
     // private sumcoefs: number;
     // private voc: ILits;

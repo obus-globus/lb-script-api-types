@@ -6,7 +6,7 @@ export class Array2DHashSet$SetIterator extends Object implements Iterator<T> {
     // private data: T[];
     // private nextIndex: number;
     // private removed: boolean;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<T extends Object | number | string | boolean>(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next<T extends Object | number | string | boolean>(): T;
     remove(): void;

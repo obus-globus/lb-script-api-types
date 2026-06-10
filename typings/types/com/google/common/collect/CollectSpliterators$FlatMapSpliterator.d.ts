@@ -23,8 +23,8 @@ export abstract class CollectSpliterators$FlatMapSpliterator<InElementT extends 
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(action: (param0: OutElementT) => void): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
+    forEachRemaining(arg0: (param0: OutElementT) => void): void;
+    getComparator(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(action: (param0: OutElementT) => void): boolean;

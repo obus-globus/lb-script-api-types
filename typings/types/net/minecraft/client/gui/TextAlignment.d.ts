@@ -14,6 +14,6 @@ export class TextAlignment extends Enum<TextAlignment> {
     static values(): (Object | null)[];
     private constructor()
     calculateLeft(anchor: number, width: number): number;
-    calculateLeft(anchor: number, font: Font, text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): number;
+    calculateLeft(anchor: number, font: Font, text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): number;
     name(): "LEFT" | "CENTER" | "RIGHT";
 }

@@ -4,8 +4,8 @@ import type { SOFTCallbackBufferTypeI } from '../../../org/lwjgl/openal/SOFTCall
 export class SOFTCallbackBuffer extends Object {
     static AL_BUFFER_CALLBACK_FUNCTION_SOFT: number;
     static AL_BUFFER_CALLBACK_USER_PARAM_SOFT: number;
-    static alBufferCallbackDirectSOFT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number, param2: number) => kotlin.Int, paramarg5: number): void;
-    static alBufferCallbackSOFT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number, param2: number) => kotlin.Int, paramarg4: number): void;
+    static alBufferCallbackDirectSOFT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number, param2: number) => number, paramarg5: number): void;
+    static alBufferCallbackSOFT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number, param2: number) => number, paramarg4: number): void;
     static alGetBuffer3PtrDirectSOFT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: PointerBuffer, paramarg4: PointerBuffer, paramarg5: PointerBuffer): void;
     static alGetBuffer3PtrSOFT(paramarg0: number, paramarg1: number, paramarg2: PointerBuffer, paramarg3: PointerBuffer, paramarg4: PointerBuffer): void;
     static alGetBufferPtrDirectSOFT(paramarg0: number, paramarg1: number, paramarg2: number): number;

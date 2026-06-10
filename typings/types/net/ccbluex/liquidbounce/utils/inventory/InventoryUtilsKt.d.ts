@@ -21,7 +21,7 @@ export class InventoryUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:89}
      */
-    static findBestToolToMineBlock(iterable: (Object | null)[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => kotlin.Boolean): Object | null;
+    static findBestToolToMineBlock(iterable: (ItemSlot | null)[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): ItemSlot | null;
     static findBlocksEndingWith(targets: (Object | null)[]): Block[];
     static findEmptyStorageSlotsInInventory(): ItemSlot[];
     static findItemsInContainer(abstractContainerScreen: AbstractContainerScreen<Object>): ContainerItemSlot[];
@@ -30,7 +30,7 @@ export class InventoryUtilsKt extends Object {
     static getSlotsInContainer(abstractContainerScreen: AbstractContainerScreen<Object>): ContainerItemSlot[];
     static getTypeOrNull(paramarg0: AbstractContainerMenu): MenuType<Object>;
     static hasInventorySpace(): boolean;
-    static mergeableCapacityFor(paramarg0: (Object | null)[], paramarg1: ItemStack, paramarg2: E[]): number;
+    static mergeableCapacityFor(paramarg0: ItemSlot[], paramarg1: ItemStack, paramarg2: ItemSlot[]): number;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number, paramarg3: number): InteractionResult;

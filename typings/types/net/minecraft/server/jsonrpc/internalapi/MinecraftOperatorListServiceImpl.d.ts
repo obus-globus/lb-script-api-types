@@ -6,13 +6,14 @@ import type { MinecraftOperatorListService } from '../../../../../net/minecraft/
 import type { ClientInfo } from '../../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
 import type { PermissionLevel } from '../../../../../net/minecraft/server/permissions/PermissionLevel.d.ts'
 import type { NameAndId } from '../../../../../net/minecraft/server/players/NameAndId.d.ts'
+import type { ServerOpListEntry } from '../../../../../net/minecraft/server/players/ServerOpListEntry.d.ts'
 export class MinecraftOperatorListServiceImpl extends Object implements MinecraftOperatorListService {
     constructor(minecraftServer: MinecraftServer, jsonrpcLogger: JsonRpcLogger)
     // private jsonrpcLogger: JsonRpcLogger;
     // private minecraftServer: MinecraftServer;
     clear(clientInfo: ClientInfo): void;
     deop(nameAndId: NameAndId, clientInfo: ClientInfo): void;
-    getEntries(): E[];
+    getEntries(): ServerOpListEntry[];
     op(nameAndId: NameAndId, permissionLevel: Optional<PermissionLevel>, canBypassPlayerLimit: Optional<boolean>, clientInfo: ClientInfo): void;
     op(nameAndId: NameAndId, clientInfo: ClientInfo): void;
 }

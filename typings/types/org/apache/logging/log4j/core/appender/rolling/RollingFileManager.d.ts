@@ -10,6 +10,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Layout } from '../../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
+import type { AbstractManager } from '../../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { FileManager } from '../../../../../../../org/apache/logging/log4j/core/appender/FileManager.d.ts'
 import type { ManagerFactory } from '../../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { OutputStreamManager } from '../../../../../../../org/apache/logging/log4j/core/appender/OutputStreamManager.d.ts'
@@ -21,10 +22,10 @@ import type { TriggeringPolicy } from '../../../../../../../org/apache/logging/l
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { Log4jThreadFactory } from '../../../../../../../org/apache/logging/log4j/core/util/Log4jThreadFactory.d.ts'
 export class RollingFileManager extends FileManager {
-    static getFileManager(paramfileName: string, paramappend: boolean, paramlocking: boolean, parambufferedIo: boolean, paramcreateOnDemand: boolean, paramadvertiseUri: string, paramlayout: Layout<Object>, parambufferSize: number, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): FileManager;
-    static getFileManager(paramfileName: string, parampattern: string, paramappend: boolean, parambufferedIO: boolean, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramadvertiseURI: string, paramlayout: Layout<Object>, parambufferSize: number, paramimmediateFlush: boolean, paramcreateOnDemand: boolean, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): RollingFileManager;
-    static getManager(paramname: string, paramfactory: ManagerFactory<Object, Object>, paramdata: Object | null): Object | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<Object, Object>): OutputStreamManager;
+    static getFileManager(paramfileName: string, paramappend: boolean, paramlocking: boolean, parambufferedIo: boolean, paramcreateOnDemand: boolean, paramadvertiseUri: string, paramlayout: Layout<Serializable>, parambufferSize: number, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): FileManager;
+    static getFileManager(paramfileName: string, parampattern: string, paramappend: boolean, parambufferedIO: boolean, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramadvertiseURI: string, paramlayout: Layout<Serializable>, parambufferSize: number, paramimmediateFlush: boolean, paramcreateOnDemand: boolean, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): RollingFileManager;
+    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
     static hasManager(paramname: string): boolean;
     constructor(fileName: string, pattern: string, os: OutputStream, append: boolean, size: number, initialTime: number, triggeringPolicy: TriggeringPolicy, rolloverStrategy: RolloverStrategy, advertiseURI: string, layout: Layout<Serializable>, writeHeader: boolean, buffer: ByteBuffer)
     constructor(fileName: string, pattern: string, os: OutputStream, append: boolean, size: number, initialTime: number, triggeringPolicy: TriggeringPolicy, rolloverStrategy: RolloverStrategy, advertiseURI: string, layout: Layout<Serializable>, bufferSize: number, writeHeader: boolean)

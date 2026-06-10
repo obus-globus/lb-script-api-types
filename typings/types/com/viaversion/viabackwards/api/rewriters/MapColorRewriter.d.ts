@@ -3,7 +3,7 @@ import type { PacketHandler } from '../../../../../com/viaversion/viaversion/api
 import type { IdRewriteFunction } from '../../../../../com/viaversion/viaversion/rewriter/IdRewriteFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class MapColorRewriter extends Object {
-    static getRewriteHandler(paramarg0: (param0: number) => kotlin.Int): (param0: PacketWrapper) => void;
-    static rewriteMapColors(paramarg0: PacketWrapper, paramarg1: (param0: number) => kotlin.Int, paramarg2: number): void;
+    static getRewriteHandler(paramarg0: (param0: number) => number): (param0: PacketWrapper) => void;
+    static rewriteMapColors(paramarg0: PacketWrapper, paramarg1: (param0: number) => number, paramarg2: number): void;
     constructor()
 }

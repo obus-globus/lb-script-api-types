@@ -14,11 +14,10 @@ export class StringArgumentType extends Object implements ArgumentType<string> {
     static word(): StringArgumentType;
     private constructor(arg0: StringArgumentType$StringType)
     readonly type: StringArgumentType$StringType;
-    getExamples(): E[];
+    getExamples(): string[];
     getType(): StringArgumentType$StringType;
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(arg0: StringReader): string;
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): string;
+    parse(arg0: StringReader): string;
     toString(): string;
 }

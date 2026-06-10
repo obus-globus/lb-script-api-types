@@ -10,7 +10,7 @@ import type { EquipmentAsset } from '../../../../../net/minecraft/world/item/equ
 import type { Equippable } from '../../../../../net/minecraft/world/item/equipment/Equippable.d.ts'
 export class Equippable$Builder extends Object {
     private constructor(slot: EquipmentSlot)
-    // private allowedEntities: Optional<Holder<T>[]>;
+    // private allowedEntities: Optional<Holder<EntityType<Object>>[]>;
     // private assetId: Optional<ResourceKey<EquipmentAsset>>;
     // private cameraOverlay: Optional<Identifier>;
     // private canBeSheared: boolean;
@@ -23,7 +23,7 @@ export class Equippable$Builder extends Object {
     // private swappable: boolean;
     build(): Equippable;
     setAllowedEntities(allowedEntities: EntityType<Object>[]): Equippable$Builder;
-    setAllowedEntities(allowedEntities: Holder<T>[]): Equippable$Builder;
+    setAllowedEntities(allowedEntities: Holder<EntityType<Object>>[]): Equippable$Builder;
     setAsset(assetId: ResourceKey<EquipmentAsset>): Equippable$Builder;
     setCameraOverlay(cameraOverlay: Identifier): Equippable$Builder;
     setCanBeSheared(canBeSheared: boolean): Equippable$Builder;

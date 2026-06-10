@@ -12,14 +12,14 @@ import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class LongIterators extends Object {
     static EMPTY_ITERATOR: LongIterators$EmptyIterator;
-    static all(paramarg0: LongIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static any(paramarg0: LongIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
+    static all(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): boolean;
+    static any(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): boolean;
     static asLongIterator(paramarg0: Iterator<Object>): LongIterator;
     static asLongIterator(paramarg0: ListIterator<Object>): LongListIterator;
     static concat(paramarg0: (Object | null)[]): LongIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): LongIterator;
     static fromTo(paramarg0: number, paramarg1: number): LongBidirectionalIterator;
-    static indexOf(paramarg0: LongIterator, paramarg1: (param0: number) => kotlin.Boolean): number;
+    static indexOf(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): number;
     static pour(paramarg0: LongIterator, paramarg1: (Object | null)[]): number;
     static pour(paramarg0: LongIterator, paramarg1: (Object | null)[], paramarg2: number): number;
     static pour(paramarg0: LongIterator): (Object | null)[];

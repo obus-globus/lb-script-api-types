@@ -12,9 +12,9 @@ import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts
 export class GsonExtensionsKt extends Object {
     static deserialize(jsonDeserializationContext: JsonDeserializationContext, json: JsonElement): Object | null;
     static getOrNull(jsonArray: JsonElement[], index: number): JsonElement;
-    static jsonArray(initialCapacity: number, builderAction: (param0: Object | null) => void): JsonElement[];
+    static jsonArray(initialCapacity: number, builderAction: (param0: Object) => void): JsonElement[];
     static jsonArrayOf(elements: (Object | null)[]): JsonElement[];
-    static jsonObject(builderAction: (param0: Object | null) => void): JsonObject;
+    static jsonObject(builderAction: (param0: Object) => void): JsonObject;
     static parseTree(jsonReader: JsonReader): JsonElement;
     /**
      * Read JSON content

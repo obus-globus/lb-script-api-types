@@ -10,9 +10,9 @@ import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeatureConfiguration } from '../../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 export class ConfiguredFeature<FC extends FeatureConfiguration, F extends Feature<FC>> extends Record {
-    static CODEC: Codec<Object>;
-    static DIRECT_CODEC: Codec<Object>;
-    static LIST_CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<ConfiguredFeature<Object, Object>>>;
+    static DIRECT_CODEC: Codec<ConfiguredFeature<Object, Object>>;
+    static LIST_CODEC: Codec<Holder<ConfiguredFeature<Object, Object>>[]>;
     constructor(feature: F, config: FC)
     // private config: FC;
     // private feature: F;

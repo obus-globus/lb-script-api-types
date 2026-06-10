@@ -12,5 +12,5 @@ export class PropertiesPropertySource extends Object implements PropertySource {
     getNormalForm(tokens: CharSequence[]): CharSequence;
     getPriority(): number;
     getProperty(key: string): string;
-    getPropertyNames(): E[];
+    getPropertyNames(): string[];
 }

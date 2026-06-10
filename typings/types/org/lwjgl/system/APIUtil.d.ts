@@ -22,7 +22,7 @@ export class APIUtil extends Object {
     static apiArrayp(paramarg0: MemoryStack, paramarg1: (Object | null)[]): number;
     static apiArrayp(paramarg0: MemoryStack, paramarg1: APIUtil$Encoder, paramarg2: (Object | null)[]): number;
     static apiCheckAllocation(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static apiClassTokens(paramarg0: (param0: Field, param1: number) => kotlin.Boolean, paramarg1: { [key: number]: string }, paramarg2: Object | null): { [key: number]: string };
+    static apiClassTokens(paramarg0: (param0: Field, param1: number) => boolean, paramarg1: { [key: number]: string }, paramarg2: Object | null): { [key: number]: string };
     static apiClosureRet(paramarg0: number, paramarg1: boolean): void;
     static apiClosureRet(paramarg0: number, paramarg1: number): void;
     static apiClosureRet(paramarg0: number, paramarg1: number): void;
@@ -42,7 +42,7 @@ export class APIUtil extends Object {
     static apiFilterExtensions(paramarg0: string[], paramarg1: Configuration<Object>): void;
     static apiFindLibrary(paramarg0: string, paramarg1: string): string;
     static apiGetBytes(paramarg0: number, paramarg1: number): number;
-    static apiGetFunctionAddress(paramarg0: (param0: ByteBuffer) => kotlin.Long, paramarg1: string): number;
+    static apiGetFunctionAddress(paramarg0: (param0: ByteBuffer) => number, paramarg1: string): number;
     static apiGetFunctionAddressOptional(paramarg0: SharedLibrary, paramarg1: string): number;
     static apiGetMappedBuffer(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number): ByteBuffer;
     static apiLog(paramarg0: CharSequence): void;

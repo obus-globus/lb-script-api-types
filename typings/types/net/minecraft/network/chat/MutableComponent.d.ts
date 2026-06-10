@@ -53,7 +53,7 @@ export class MutableComponent extends Object implements Component {
     // private decomposedWith: Language;
     readonly siblings: Component[];
     readonly style: Style;
-    readonly visualOrderText: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    readonly visualOrderText: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     append(arg0: string): MutableComponent;
     append(component: Component): MutableComponent;
     contains(other: Component): boolean;
@@ -64,7 +64,7 @@ export class MutableComponent extends Object implements Component {
     getString(): string;
     getString(limit: number): string;
     getStyle(): Style;
-    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     hashCode(): number;
     plainCopy(): MutableComponent;
     setStyle(style: Style): MutableComponent;
@@ -72,10 +72,10 @@ export class MutableComponent extends Object implements Component {
     toFlatList(rootStyle: Style): Component[];
     toString(): string;
     tryCollapseToString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
     withColor(color: number): MutableComponent;
-    withStyle(updater: (param0: Style) => unknown): MutableComponent;
+    withStyle(updater: (param0: Style) => Object | null): MutableComponent;
     withStyle(formats: ChatFormatting[]): MutableComponent;
     withStyle(format: ChatFormatting): MutableComponent;
     withStyle(patch: Style): MutableComponent;

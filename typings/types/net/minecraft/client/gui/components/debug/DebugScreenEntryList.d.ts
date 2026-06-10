@@ -15,7 +15,7 @@ export class DebugScreenEntryList extends Object {
     // private debugProfileFile: File;
     // private isOverlayVisible: boolean;
     // private profile: DebugScreenProfile;
-    getCurrentlyEnabled(): E[];
+    getCurrentlyEnabled(): Identifier[];
     getCurrentlyEnabledVersion(): number;
     getStatus(location: Identifier): DebugScreenEntryStatus;
     isCurrentlyEnabled(location: Identifier): boolean;

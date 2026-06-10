@@ -18,6 +18,6 @@ export class RealmsUtil extends Object {
     static openScreenAndLogOnFailure(paramerrorScreen: (param0: RealmsServiceException) => Screen, paramerrorMessage: string): (param0: RealmsServiceException) => void;
     static openScreenOnFailure(paramerrorScreen: (param0: RealmsServiceException) => Screen): (param0: RealmsServiceException) => void;
     static runAsync(paramfunction: (param0: RealmsClient) => void, paramonFailure: (param0: RealmsServiceException) => void): CompletableFuture<void>;
-    static supplyAsync(paramfunction: (param0: Object | null) => unknown, paramonFailure: (param0: RealmsServiceException) => void): CompletableFuture<Object>;
+    static supplyAsync(paramfunction: (param0: RealmsClient) => Object | null, paramonFailure: (param0: RealmsServiceException) => void): CompletableFuture<Object>;
     constructor()
 }

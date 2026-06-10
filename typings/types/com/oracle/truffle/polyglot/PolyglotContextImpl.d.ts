@@ -60,7 +60,7 @@ export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject
     // private cleanupExecutorService: ExecutorService;
     // private cleanupFuture: Future<Object>;
     // private closeExitedTriggerThread: Thread;
-    // private closeables: E[];
+    // private closeables: Closeable[];
     // private closingLock: ReentrantLock;
     // private closingThread: Thread;
     // private config: PolyglotContextConfig;

@@ -10,7 +10,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundClientTickEndPacket extends Record implements Packet<ServerGamePacketListener> {
     static INSTANCE: ServerboundClientTickEndPacket;
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundClientTickEndPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor()
     equals(o: Object | null): boolean;
     handle(listener: ServerGamePacketListener): void;

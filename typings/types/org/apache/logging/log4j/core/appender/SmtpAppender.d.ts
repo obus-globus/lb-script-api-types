@@ -14,7 +14,7 @@ export class SmtpAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramconfig: Configuration, paramname: string, paramto: string, paramcc: string, parambcc: string, paramfrom: string, paramreplyTo: string, paramsubject: string, paramsmtpProtocol: string, paramsmtpHost: string, paramsmtpPortStr: string, paramsmtpUsername: string, paramsmtpPassword: string, paramsmtpDebug: string, parambufferSizeStr: string, paramlayout: Layout<Object>, paramfilter: Filter, paramignore: string): SmtpAppender;
+    static createAppender(paramconfig: Configuration, paramname: string, paramto: string, paramcc: string, parambcc: string, paramfrom: string, paramreplyTo: string, paramsubject: string, paramsmtpProtocol: string, paramsmtpHost: string, paramsmtpPortStr: string, paramsmtpUsername: string, paramsmtpPassword: string, paramsmtpDebug: string, parambufferSizeStr: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignore: string): SmtpAppender;
     static newBuilder(): SmtpAppender$Builder;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, filter: Filter, layout: Layout<Serializable>, manager: MailManager, ignoreExceptions: boolean, properties: Property[])

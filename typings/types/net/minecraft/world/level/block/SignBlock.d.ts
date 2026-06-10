@@ -5,6 +5,7 @@ import type { IntFunction } from '../../../../../java/util/function/IntFunction.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
+import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -13,6 +14,7 @@ import type { InteractionResult } from '../../../../../net/minecraft/world/Inter
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
+import type { FeatureElement } from '../../../../../net/minecraft/world/flag/FeatureElement.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -41,7 +43,7 @@ import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/
 export abstract class SignBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
     static CODEC: MapCodec<Block>;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static UPDATE_ALL: number;
@@ -64,7 +66,7 @@ export abstract class SignBlock extends BaseEntityBlock implements SimpleWaterlo
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: VoxelShape) => unknown): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;
@@ -86,7 +88,7 @@ export abstract class SignBlock extends BaseEntityBlock implements SimpleWaterlo
     static popResourceFromFace(paramlevel: Level, parampos: BlockPos, paramface: Direction, paramitemStack: ItemStack): void;
     static pushEntitiesUp(paramstate: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static shouldRenderFace(paramstate: BlockState, paramneighborState: BlockState, paramdirection: Direction): boolean;
-    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Object | null): MapCodec<Object>;
+    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
     static stateById(paramidWithData: number): BlockState;
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
@@ -99,7 +101,7 @@ export abstract class SignBlock extends BaseEntityBlock implements SimpleWaterlo
     getPickupSound(): Optional<SoundEvent>;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     getSignHitboxCenterPosition(state: BlockState): Vec3;
-    getTicker(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: T, param1: Level, param2: BlockPos, param3: BlockState) => void;
+    getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     getYRotationDegrees(state: BlockState): number;
     // private hasEditableText(player: Player, sign: SignBlockEntity, isFrontText: boolean): boolean;
     isPossibleToRespawnInThis(state: BlockState): boolean;

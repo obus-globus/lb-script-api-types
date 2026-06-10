@@ -1,6 +1,7 @@
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ShortestPath } from '../../../../../net/ccbluex/liquidbounce/utils/block/ShortestPath.d.ts'
+import type { WeightedEdge } from '../../../../../net/ccbluex/liquidbounce/utils/block/WeightedEdge.d.ts'
 export class DijkstraKt extends Object {
     /**
      * Returns the shortest path from {@link start} to the first node where {@link isGoal} returns true.
@@ -9,5 +10,5 @@ export class DijkstraKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt:24}
      */
-    static dijkstraShortestPath(start: Object | null, isGoal: (param0: Object | null) => kotlin.Boolean, neighbors: (param0: Object | null) => Object | null, maxIterations: number, maxCost: number): ShortestPath<Object>;
+    static dijkstraShortestPath(start: Object | null, isGoal: (param0: Object | null) => boolean, neighbors: (param0: Object) => WeightedEdge<Object>[], maxIterations: number, maxCost: number): ShortestPath<Object>;
 }

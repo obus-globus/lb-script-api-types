@@ -7,10 +7,10 @@ export class ShortObjectHashMap$PrimitiveIterator extends Object implements Shor
     // private entryIndex: number;
     // private nextIndex: number;
     // private prevIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: ShortObjectMap$PrimitiveEntry<V>) => void): void;
     hasNext(): boolean;
     key(): number;
-    next(): ShortObjectMap$PrimitiveEntry<V>;
+    next<V extends Object | number | string | boolean>(): ShortObjectMap$PrimitiveEntry<V>;
     remove(): void;
     // private scanNext(): void;
     setValue<V extends Object | number | string | boolean>(arg0: V): void;

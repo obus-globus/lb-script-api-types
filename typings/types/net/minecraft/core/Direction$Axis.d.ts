@@ -18,20 +18,20 @@ export class Direction$Axis extends Enum<Direction$Axis> implements Predicate<Di
     static Y: Direction$Axis;
     static Z: Direction$Axis;
     static byName(paramname: string): Direction$Axis;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getRandom(paramrandom: RandomSource): Direction$Axis;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
     static keys(paramvalues: (Object | null)[]): Keyable;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Direction$Axis;
     static values(): (Object | null)[];
     private constructor(name: string)
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: Direction) => boolean): (param0: Direction) => boolean;
     choose(x: boolean, y: boolean, z: boolean): boolean;
     choose(x: number, y: number, z: number): number;
     getDirections(): Direction[];
@@ -42,8 +42,8 @@ export class Direction$Axis extends Enum<Direction$Axis> implements Predicate<Di
     getSerializedName(): string;
     isHorizontal(): boolean;
     isVertical(): boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: Direction) => boolean;
+    or(arg0: (param0: Direction) => boolean): (param0: Direction) => boolean;
     test(input: Direction): boolean;
     toString(): string;
     name(): "X" | "Y" | "Z";

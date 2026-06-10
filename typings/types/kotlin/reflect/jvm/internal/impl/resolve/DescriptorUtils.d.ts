@@ -1,7 +1,10 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { CallableDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
+import type { CallableMemberDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
+import type { DeclarationDescriptorWithVisibility } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorWithVisibility.d.ts'
 import type { DescriptorVisibility } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DescriptorVisibility.d.ts'
 import type { ModuleDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
 import type { ReceiverParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ReceiverParameterDescriptor.d.ts'
@@ -14,7 +17,7 @@ import type { TypeConstructor } from '../../../../../../kotlin/reflect/jvm/inter
 export class DescriptorUtils extends Object {
     static JVM_NAME: FqName;
     static areInSameModule(paramarg0: DeclarationDescriptor, paramarg1: DeclarationDescriptor): boolean;
-    static getAllOverriddenDescriptors(paramarg0: Object | null): (Object | null)[];
+    static getAllOverriddenDescriptors(paramarg0: CallableDescriptor | null): (CallableDescriptor | null)[];
     static getClassDescriptorForType(paramarg0: KotlinType): ClassDescriptor;
     static getClassDescriptorForTypeConstructor(paramarg0: TypeConstructor): ClassDescriptor;
     static getContainingModule(paramarg0: DeclarationDescriptor): ModuleDescriptor;
@@ -25,8 +28,8 @@ export class DescriptorUtils extends Object {
     static getDispatchReceiverParameterIfNeeded(paramarg0: DeclarationDescriptor): ReceiverParameterDescriptor;
     static getFqName(paramarg0: DeclarationDescriptor): FqNameUnsafe;
     static getFqNameSafe(paramarg0: DeclarationDescriptor): FqName;
-    static getParentOfType(paramarg0: DeclarationDescriptor, paramarg1: Class<Object>): Object | null;
-    static getParentOfType(paramarg0: DeclarationDescriptor, paramarg1: Class<Object>, paramarg2: boolean): Object | null;
+    static getParentOfType(paramarg0: DeclarationDescriptor, paramarg1: Class<DeclarationDescriptor>): DeclarationDescriptor | null;
+    static getParentOfType(paramarg0: DeclarationDescriptor, paramarg1: Class<DeclarationDescriptor>, paramarg2: boolean): DeclarationDescriptor | null;
     static getSuperClassDescriptor(paramarg0: ClassDescriptor): ClassDescriptor;
     static isAnnotationClass(paramarg0: DeclarationDescriptor): boolean;
     static isAnonymousObject(paramarg0: DeclarationDescriptor): boolean;
@@ -44,7 +47,7 @@ export class DescriptorUtils extends Object {
     static isSubtypeOfClass(paramarg0: KotlinType, paramarg1: DeclarationDescriptor): boolean;
     static isTopLevelDeclaration(paramarg0: DeclarationDescriptor): boolean;
     static shouldRecordInitializerForProperty(paramarg0: VariableDescriptor, paramarg1: KotlinType): boolean;
-    static unwrapFakeOverride(paramarg0: Object | null): Object | null;
-    static unwrapFakeOverrideToAnyDeclaration(paramarg0: Object | null): Object | null;
+    static unwrapFakeOverride(paramarg0: CallableMemberDescriptor | null): CallableMemberDescriptor | null;
+    static unwrapFakeOverrideToAnyDeclaration(paramarg0: DeclarationDescriptorWithVisibility | null): DeclarationDescriptorWithVisibility | null;
     private constructor()
 }

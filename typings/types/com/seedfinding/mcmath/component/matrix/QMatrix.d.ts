@@ -12,9 +12,9 @@ export class QMatrix extends Object {
     static zero(paramarg0: number, paramarg1: number): QMatrix;
     constructor(arg0: QVector[])
     constructor(arg0: Rational[][])
-    constructor(arg0: number, arg1: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Rational)
+    constructor(arg0: number, arg1: (param0: number, param1: number) => Rational)
     constructor(arg0: number, arg1: number)
-    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Rational)
+    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Rational)
     // private elements: Rational[][];
     add(arg0: QMatrix): QMatrix;
     addAndSet(arg0: QMatrix): QMatrix;
@@ -39,12 +39,12 @@ export class QMatrix extends Object {
     invertAndSet(): QMatrix;
     isSquare(): boolean;
     luDecompose(): LUDecomposition$Q;
-    map(arg0: (param0: number, param1: number, param2: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QMatrix;
-    mapAndSet(arg0: (param0: number, param1: number, param2: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QMatrix;
-    mapColumn(arg0: number, arg1: (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QMatrix;
-    mapColumnAndSet(arg0: number, arg1: (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QMatrix;
-    mapRow(arg0: number, arg1: (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QMatrix;
-    mapRowAndSet(arg0: number, arg1: (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QMatrix;
+    map(arg0: (param0: number, param1: number, param2: Rational) => Rational): QMatrix;
+    mapAndSet(arg0: (param0: number, param1: number, param2: Rational) => Rational): QMatrix;
+    mapColumn(arg0: number, arg1: (param0: number, param1: Rational) => Rational): QMatrix;
+    mapColumnAndSet(arg0: number, arg1: (param0: number, param1: Rational) => Rational): QMatrix;
+    mapRow(arg0: number, arg1: (param0: number, param1: Rational) => Rational): QMatrix;
+    mapRowAndSet(arg0: number, arg1: (param0: number, param1: Rational) => Rational): QMatrix;
     mergeToAugmented(arg0: QMatrix): QMatrix$Augmented;
     multiply(arg0: Rational): QMatrix;
     multiply(arg0: QMatrix): QMatrix;
@@ -66,8 +66,8 @@ export class QMatrix extends Object {
     swapColumnsAndSet(arg0: number, arg1: number): QMatrix;
     swapRows(arg0: number, arg1: number): QMatrix;
     swapRowsAndSet(arg0: number, arg1: number): QMatrix;
-    toGenerator(): (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Rational;
-    toMapper(): (param0: number, param1: number, param2: Rational) => com.seedfinding.mcmath.arithmetic.Rational;
+    toGenerator(): (param0: number, param1: number) => Rational;
+    toMapper(): (param0: number, param1: number, param2: Rational) => Rational;
     toString(): string;
     transpose(): QMatrix;
     transposeAndSet(): QMatrix;

@@ -42,6 +42,6 @@ export class KnotClassDelegate<T extends ClassLoader & KnotClassDelegate$ClassLo
     loadClass(arg0: string, arg1: boolean): Class<Object>;
     loadIntoTarget(arg0: string): Class<Object>;
     setAllowedPrefixes(arg0: Path[], arg1: string[]): void;
-    setValidParentClassPath(arg0: E[]): void;
+    setValidParentClassPath(arg0: Path[][]): void;
     tryLoadClass(arg0: string, arg1: boolean): Class<Object>;
 }

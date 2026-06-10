@@ -17,7 +17,7 @@ export class ModuleAutoShoot$GravityType extends Enum<ModuleAutoShoot$GravityTyp
     static from(paramarg0: HotbarItemSlot): ModuleAutoShoot$GravityType;
     static from(paramarg0: Item): ModuleAutoShoot$GravityType;
     static getEntries(): ModuleAutoShoot$GravityType[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoShoot$GravityType;

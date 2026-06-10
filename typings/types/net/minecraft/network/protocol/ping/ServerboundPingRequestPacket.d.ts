@@ -8,7 +8,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ServerPingPacketListener } from '../../../../../net/minecraft/network/protocol/ping/ServerPingPacketListener.d.ts'
 export class ServerboundPingRequestPacket extends Object implements Packet<ServerPingPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundPingRequestPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor(input: ByteBuf)
     constructor(time: number)
     readonly time: number;

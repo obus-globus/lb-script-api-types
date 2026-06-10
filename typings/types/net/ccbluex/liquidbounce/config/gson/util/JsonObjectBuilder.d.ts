@@ -15,7 +15,7 @@ export class JsonObjectBuilder extends Object {
 // (invalid TS: name contains '-')     static invoke-impl(paramarg0: JsonObject, paramarg1: string, paramarg2: Number): void;
 // (invalid TS: name contains '-')     static invoke-impl(paramarg0: JsonObject, paramarg1: string, paramarg2: Object): void;
 // (invalid TS: name contains '-')     static invoke-impl(paramarg0: JsonObject, paramarg1: string, paramarg2: string): void;
-// (invalid TS: name contains '-')     static invoke-impl(paramarg0: JsonObject, paramarg1: string, paramarg2: (param0: Object | null) => void): void;
+// (invalid TS: name contains '-')     static invoke-impl(paramarg0: JsonObject, paramarg1: string, paramarg2: (param0: Object) => void): void;
 // (invalid TS: name contains '-')     static toString-impl(paramarg0: JsonObject): string;
     constructor(backend: JsonObject)
     // private backend: JsonObject;

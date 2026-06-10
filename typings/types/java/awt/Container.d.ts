@@ -27,6 +27,7 @@ import type { PrintStream } from '../../java/io/PrintStream.d.ts'
 import type { PrintWriter } from '../../java/io/PrintWriter.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Thread } from '../../java/lang/Thread.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { AppContext } from '../../sun/awt/AppContext.d.ts'
@@ -125,7 +126,7 @@ export class Container extends Component {
     getHeavyweightContainer(): Container;
     getInsets(): Insets;
     getLayout(): LayoutManager;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     // private getListenersCount(arg0: number, arg1: boolean): number;
     getMaximumSize(): Dimension;
     getMinimumSize(): Dimension;

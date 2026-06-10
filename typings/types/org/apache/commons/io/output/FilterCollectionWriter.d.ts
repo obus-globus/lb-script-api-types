@@ -5,9 +5,9 @@ import type { IOConsumer } from '../../../../../org/apache/commons/io/function/I
 export class FilterCollectionWriter extends Writer {
     static nullWriter(): Writer;
     constructor(arg0: Writer[])
-    constructor(arg0: E[])
-    // private EMPTY_WRITERS: E[];
-    // private writers: E[];
+    constructor(arg0: Writer[])
+    // private EMPTY_WRITERS: Writer[];
+    // private writers: Writer[];
     append(arg0: string): Writer;
     append(arg0: CharSequence): Writer;
     append(arg0: CharSequence, arg1: number, arg2: number): Writer;

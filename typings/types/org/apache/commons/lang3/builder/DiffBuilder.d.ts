@@ -16,7 +16,7 @@ export class DiffBuilder<T extends Object | number | string | boolean> extends O
     // private right: T;
     // private style: ToStringStyle;
     // private toStringFormat: string;
-    // private add(arg0: string, arg1: DiffBuilder$SerializableSupplier<F>, arg2: DiffBuilder$SerializableSupplier<F>, arg3: Class<F>): DiffBuilder<T>;
+    // private add<F extends Object | number | string | boolean>(arg0: string, arg1: DiffBuilder$SerializableSupplier<F>, arg2: DiffBuilder$SerializableSupplier<F>, arg3: Class<F>): DiffBuilder<T>;
     append(arg0: string, arg1: Object, arg2: Object): DiffBuilder<T>;
     append(arg0: string, arg1: Object[], arg2: Object[]): DiffBuilder<T>;
     append(arg0: string, arg1: boolean, arg2: boolean): DiffBuilder<T>;

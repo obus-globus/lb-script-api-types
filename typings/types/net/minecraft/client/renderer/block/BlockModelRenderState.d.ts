@@ -35,7 +35,7 @@ export class BlockModelRenderState extends Object implements FabricBlockModelRen
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
     setupMesh(arg0: Matrix4fc, arg1: boolean): QuadEmitter;
     setupModel(transformation: Matrix4fc, hasTranslucency: boolean): BlockStateModelPart[];
-    setupSpecialModel(renderer: SpecialModelRenderer<T>, transformation: Matrix4fc): void;
+    setupSpecialModel<T extends Object | number | string | boolean>(renderer: SpecialModelRenderer<T>, transformation: Matrix4fc): void;
     submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
     // private submitModel(renderType: RenderType, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
     submitOnlyOutline(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;

@@ -3,8 +3,8 @@ import type { Char2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil/c
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2DoubleFunctions$UnmodifiableFunction extends AbstractChar2DoubleFunction implements Serializable {
-    constructor(arg0: (param0: string) => kotlin.Double)
-    // private function: (param0: string) => kotlin.Double;
+    constructor(arg0: (param0: string) => number)
+    // private function: (param0: string) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

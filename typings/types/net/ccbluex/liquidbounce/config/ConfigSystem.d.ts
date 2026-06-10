@@ -68,7 +68,7 @@ export class ConfigSystem extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:122}
      */
-    root(name: string, tree: E[]): Config;
+    root(name: string, tree: ValueGroup[]): Config;
     root(config: Config): Config;
     /**
      * Serialize a config to a writer and close it

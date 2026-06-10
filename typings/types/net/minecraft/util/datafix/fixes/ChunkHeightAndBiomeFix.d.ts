@@ -1,6 +1,7 @@
 import type { DataFix } from '../../../../../com/mojang/datafixers/DataFix.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { TypeRewriteRule } from '../../../../../com/mojang/datafixers/TypeRewriteRule.d.ts'
+import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
@@ -12,7 +13,7 @@ export class ChunkHeightAndBiomeFix extends DataFix {
     static DATAFIXER_CONTEXT_TAG: string;
     static DEFAULT_BIOME: string;
     static ceillog2(paraminput: number): number;
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
     // private predictChunkStatusBeforeSurface(chunkTag: Dynamic<Object>, blocksInChunk: string[]): Dynamic<Object>;

@@ -24,22 +24,24 @@ import type { ReForgetEP } from '../../../../com/mojang/datafixers/optics/ReForg
 import type { ReForgetP } from '../../../../com/mojang/datafixers/optics/ReForgetP.d.ts'
 import type { Traversal } from '../../../../com/mojang/datafixers/optics/Traversal.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
+import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
+import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Optics extends Object {
     static adapter(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null) => Object | null): Adapter<Object, Object, Object, Object>;
-    static affine(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): Affine<Object, Object, Object, Object>;
-    static eitherAffine(paramarg0: Affine<Object, Object, Object, Object>, paramarg1: Affine<Object, Object, Object, Object>): Affine<Object, Object, Object, Object>;
-    static eitherLens(paramarg0: Lens<Object, Object, Object, Object>, paramarg1: Lens<Object, Object, Object, Object>): Lens<Object, Object, Object, Object>;
-    static eitherTraversal(paramarg0: Traversal<Object, Object, Object, Object>, paramarg1: Traversal<Object, Object, Object, Object>): Traversal<Object, Object, Object, Object>;
+    static affine(paramarg0: (param0: Object | null) => Either<Object, Object>, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): Affine<Object, Object, Object, Object>;
+    static eitherAffine(paramarg0: Affine<Object, Object, Object, Object>, paramarg1: Affine<Object, Object, Object, Object>): Affine<Either<Object, Object>, Either<Object, Object>, Object, Object>;
+    static eitherLens(paramarg0: Lens<Object, Object, Object, Object>, paramarg1: Lens<Object, Object, Object, Object>): Lens<Either<Object, Object>, Either<Object, Object>, Object, Object>;
+    static eitherTraversal(paramarg0: Traversal<Object, Object, Object, Object>, paramarg1: Traversal<Object, Object, Object, Object>): Traversal<Either<Object, Object>, Either<Object, Object>, Object, Object>;
     static forget(paramarg0: (param0: Object | null) => Object | null): Forget<Object, Object, Object>;
-    static forgetE(paramarg0: (param0: Object | null) => Object | null): ForgetE<Object, Object, Object>;
-    static forgetOpt(paramarg0: (param0: Object | null) => Object | null): ForgetOpt<Object, Object, Object>;
+    static forgetE(paramarg0: (param0: Object | null) => Either<Object, Object>): ForgetE<Object, Object, Object>;
+    static forgetOpt(paramarg0: (param0: Object | null) => Optional<Object>): ForgetOpt<Object, Object, Object>;
     static getFunc(paramarg0: App2<FunctionType$Mu, Object, Object>): (param0: Object | null) => Object | null;
     static getter(paramarg0: (param0: Object | null) => Object | null): Getter<Object, Object, Object, Object>;
-    static grate(paramarg0: FunctionType<Object, Object>): Grate<Object, Object, Object, Object>;
+    static grate(paramarg0: FunctionType<FunctionType<FunctionType<Object, Object>, Object>, Object>): Grate<Object, Object, Object, Object>;
     static id(): Adapter<Object, Object, Object, Object>;
     static inj1(): Inj1<Object, Object, Object>;
     static inj2(): Inj2<Object, Object, Object>;
@@ -51,13 +53,13 @@ export abstract class Optics extends Object {
     static lens(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): Lens<Object, Object, Object, Object>;
     static listTraversal(): ListTraversal<Object, Object>;
     static pStore(paramarg0: (param0: Object | null) => Object | null, paramarg1: () => Object | null): PStore<Object, Object, Object>;
-    static prism(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null) => Object | null): Prism<Object, Object, Object, Object>;
+    static prism(paramarg0: (param0: Object | null) => Either<Object, Object>, paramarg1: (param0: Object | null) => Object | null): Prism<Object, Object, Object, Object>;
     static proj1(): Proj1<Object, Object, Object>;
     static proj2(): Proj2<Object, Object, Object>;
     static reForget(paramarg0: (param0: Object | null) => Object | null): ReForget<Object, Object, Object>;
-    static reForgetC(paramarg0: string, paramarg1: Either<Object, Object>): ReForgetC<Object, Object, Object>;
-    static reForgetE(paramarg0: string, paramarg1: (param0: Object | null) => Object | null): ReForgetE<Object, Object, Object>;
-    static reForgetEP(paramarg0: string, paramarg1: (param0: Object | null) => Object | null): ReForgetEP<Object, Object, Object>;
+    static reForgetC(paramarg0: string, paramarg1: Either<(param0: Object | null) => Object | null, (param0: Object | null, param1: Object | null) => Object | null>): ReForgetC<Object, Object, Object>;
+    static reForgetE(paramarg0: string, paramarg1: (param0: Either<Object, Object>) => Object | null): ReForgetE<Object, Object, Object>;
+    static reForgetEP(paramarg0: string, paramarg1: (param0: Either<Object, Pair<Object, Object>>) => Object | null): ReForgetEP<Object, Object, Object>;
     static reForgetP(paramarg0: string, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): ReForgetP<Object, Object, Object>;
     static toAdapter(paramarg0: Optic<Object, Object, Object, Object, Object>): Adapter<Object, Object, Object, Object>;
     static toAffine(paramarg0: Optic<Object, Object, Object, Object, Object>): Affine<Object, Object, Object, Object>;

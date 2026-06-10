@@ -23,11 +23,11 @@ export class GameTestInfo extends Object {
     readonly error: GameTestException;
     // private extraRotation: Rotation;
     readonly level: ServerLevel;
-    readonly listeners: E[];
+    readonly listeners: GameTestListener[];
     // private placedStructure: boolean;
     // private retryOptions: RetryOptions;
     // private runAtTickTimeMap: Object2LongMap<() => void>;
-    // private sequences: E[];
+    // private sequences: GameTestSequence[];
     // private started: boolean;
     readonly test: Holder$Reference<GameTestInstance>;
     readonly testBlockPos: BlockPos;

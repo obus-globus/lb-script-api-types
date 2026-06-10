@@ -11,7 +11,7 @@ export class TelemetryManager extends Object implements ITelemetry, ITelemetryMa
     // private eventsInProgress: Map<EventKey, Event>;
     // private onlySendFailureTelemetry: boolean;
     // private telemetryConsumer: (param0: { [key: string]: string }[]) => void;
-    // private collateOrphanedEvents(arg0: string): E[];
+    // private collateOrphanedEvents(arg0: string): Event[];
     createTelemetryHelper(arg0: string, arg1: string, arg2: Event, arg3: boolean): TelemetryHelper;
     flush(arg0: string, arg1: string): void;
     generateRequestId(): string;

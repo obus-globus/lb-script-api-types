@@ -10,19 +10,19 @@ import type { MetricCategory } from '../../../../net/minecraft/util/profiling/me
 import type { Pair } from '../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class ActiveProfiler extends Object implements ProfileCollector {
     static ROOT: string;
-    constructor(getRealTime: () => kotlin.Long, getTickTime: () => kotlin.Int, suppressWarnings: () => kotlin.Boolean)
+    constructor(getRealTime: () => number, getTickTime: () => number, suppressWarnings: () => boolean)
     readonly chartedPaths: Pair<string, MetricCategory>[];
     // private currentEntry: ActiveProfiler$PathEntry;
     // private entries: { [key: string]: ActiveProfiler$PathEntry };
-    // private getRealTime: () => kotlin.Long;
-    // private getTickTime: () => kotlin.Int;
+    // private getRealTime: () => number;
+    // private getTickTime: () => number;
     // private path: string;
     // private paths: string[];
     // private startTimeNano: number;
     // private startTimeTicks: number;
     // private startTimes: (Object | null)[];
     // private started: boolean;
-    // private suppressWarnings: () => kotlin.Boolean;
+    // private suppressWarnings: () => boolean;
     endTick(): void;
     getChartedPaths(): Pair<string, MetricCategory>[];
     // private getCurrentEntry(): ActiveProfiler$PathEntry;

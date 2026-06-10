@@ -10,10 +10,10 @@ import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class EntityRenameFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(name: string, outputSchema: Schema, changesType: boolean)
     // private name: string;
     fix(name: string, entity: Typed<Object>): Pair<string, Typed<Object>>;
-    // private getEntity(input: Object, ops: DynamicOps<Object>, oldEntityType: Type<A>): Typed<A>;
+    // private getEntity<A extends Object | number | string | boolean>(input: Object, ops: DynamicOps<Object>, oldEntityType: Type<A>): Typed<A>;
     makeRule(): TypeRewriteRule;
 }

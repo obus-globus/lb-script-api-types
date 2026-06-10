@@ -7,7 +7,7 @@ export class BatchSampler$Iterate extends Object implements Iterator<number[]> {
     // private current: number;
     // private size: number;
     // private subSample: Iterator<number>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number[]) => void): void;
     hasNext(): boolean;
     next(): number[];
 }

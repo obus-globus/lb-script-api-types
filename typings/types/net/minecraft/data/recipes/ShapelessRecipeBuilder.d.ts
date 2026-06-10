@@ -22,7 +22,7 @@ export class ShapelessRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Object>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
     static shapeless(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramresult: ItemStackTemplate): ShapelessRecipeBuilder;
     static shapeless(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike): ShapelessRecipeBuilder;
     static shapeless(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike, paramcount: number): ShapelessRecipeBuilder;

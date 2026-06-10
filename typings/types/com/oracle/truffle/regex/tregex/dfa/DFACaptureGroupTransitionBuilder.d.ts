@@ -11,13 +11,13 @@ import type { DFACaptureGroupPartialTransition } from '../../../../../../com/ora
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DFACaptureGroupTransitionBuilder extends DFAStateTransitionBuilder {
     constructor(transitions: TransitionSet<NFA, NFAState, NFAStateTransition>, matcherBuilder: (Object | null)[], constraints: number[], operations: number[], dfaGen: DFAGenerator)
-    constructor(transitions: NFAStateTransition[], targetStateSet: S[], matcherBuilder: (Object | null)[], constraints: number[], operations: number[], dfaGen: DFAGenerator)
+    constructor(transitions: NFAStateTransition[], targetStateSet: NFAState[], matcherBuilder: (Object | null)[], constraints: number[], operations: number[], dfaGen: DFAGenerator)
     // private dfaGen: DFAGenerator;
     // private lazyTransitionBuilder: DFACaptureGroupLazyTransitionBuilder;
-    // private requiredStates: S[];
+    // private requiredStates: NFAState[];
     // private requiredStatesIndexMap: StateSetToIntMap<NFAState, NFAStateTransition>;
-    // private createPartialTransition(targetStates: S[], targetStatesIndexMap: StateSetToIntMap<NFAState, NFAStateTransition>, compilationBuffer: CompilationBuffer): DFACaptureGroupPartialTransition;
-    // private getRequiredStates(): S[];
+    // private createPartialTransition(targetStates: NFAState[], targetStatesIndexMap: StateSetToIntMap<NFAState, NFAStateTransition>, compilationBuffer: CompilationBuffer): DFACaptureGroupPartialTransition;
+    // private getRequiredStates(): NFAState[];
     // private getRequiredStatesIndexMap(): StateSetToIntMap<NFAState, NFAStateTransition>;
     setLazyTransition(lazyTransition: DFACaptureGroupLazyTransitionBuilder): void;
     // private skipReorder(): boolean;

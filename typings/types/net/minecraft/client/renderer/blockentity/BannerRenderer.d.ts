@@ -11,7 +11,6 @@ import type { BlockEntityRenderer } from '../../../../../net/minecraft/client/re
 import type { BlockEntityRendererProvider$Context } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context.d.ts'
 import type { WallAndGroundTransformations } from '../../../../../net/minecraft/client/renderer/blockentity/WallAndGroundTransformations.d.ts'
 import type { BannerRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/BannerRenderState.d.ts'
-import type { BlockEntityRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/BlockEntityRenderState.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { SpecialModelRenderer$BakingContext } from '../../../../../net/minecraft/client/renderer/special/SpecialModelRenderer$BakingContext.d.ts'
 import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
@@ -20,7 +19,6 @@ import type { DyeColor } from '../../../../../net/minecraft/world/item/DyeColor.
 import type { BannerBlock$AttachmentType } from '../../../../../net/minecraft/world/level/block/BannerBlock$AttachmentType.d.ts'
 import type { BannerBlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BannerBlockEntity.d.ts'
 import type { BannerPatternLayers } from '../../../../../net/minecraft/world/level/block/entity/BannerPatternLayers.d.ts'
-import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class BannerRenderer extends Object implements BlockEntityRenderer<BannerBlockEntity, BannerRenderState> {
@@ -37,11 +35,10 @@ export class BannerRenderer extends Object implements BlockEntityRenderer<Banner
     // private bannerModel(type: BannerBlock$AttachmentType): BannerModel;
     createRenderState(): BannerRenderState;
     extractRenderState(blockEntity: BannerBlockEntity, state: BannerRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
-    extractRenderState<T extends BlockEntity, S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     // private flagModel(type: BannerBlock$AttachmentType): BannerFlagModel;
     getExtents(output: (param0: Vector3fc) => void): void;
     getViewDistance(): number;
-    shouldRender<T extends BlockEntity>(blockEntity: T, cameraPosition: Vec3): boolean;
+    shouldRender(blockEntity: BannerBlockEntity, cameraPosition: Vec3): boolean;
     shouldRenderOffScreen(): boolean;
     submit(state: BannerRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     submitSpecial(type: BannerBlock$AttachmentType, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, baseColor: DyeColor, patterns: BannerPatternLayers, outlineColor: number): void;

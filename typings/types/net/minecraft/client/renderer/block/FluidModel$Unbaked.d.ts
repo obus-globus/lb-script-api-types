@@ -11,7 +11,7 @@ export class FluidModel$Unbaked extends Record {
     // private overlayMaterial: Material;
     // private stillMaterial: Material;
     // private tintSource: BlockTintSource;
-    bake(materials: MaterialBaker, modelName: () => kotlin.String): FluidModel;
+    bake(materials: MaterialBaker, modelName: () => string): FluidModel;
     equals(o: Object | null): boolean;
     flowingMaterial(): Material;
     hashCode(): number;

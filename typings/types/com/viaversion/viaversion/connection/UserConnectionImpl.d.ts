@@ -53,7 +53,7 @@ export class UserConnectionImpl extends Object implements UserConnection {
     getChannel(): Channel;
     getClientWorld<T extends ClientWorld>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
     getEntityTracker<T extends EntityTracker>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
-    getEntityTrackers(): E[];
+    getEntityTrackers(): EntityTracker[];
     getId(): number;
     getItemHasher<T extends ItemHasher>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
     getPacketTracker(): PacketTracker;

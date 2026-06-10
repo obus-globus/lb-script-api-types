@@ -19,40 +19,40 @@ import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface DoubleStream extends BaseStream<number, DoubleStream>, Object {
-    allMatch(arg0: (param0: number) => kotlin.Boolean): boolean;
-    anyMatch(arg0: (param0: number) => kotlin.Boolean): boolean;
+    allMatch(arg0: (param0: number) => boolean): boolean;
+    anyMatch(arg0: (param0: number) => boolean): boolean;
     average(): OptionalDouble;
     boxed(): Stream<number>;
-    collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: Object | null) => void, arg2: (param0: R, param1: R) => void): R;
+    collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: number) => void, arg2: (param0: R, param1: R) => void): R;
     count(): number;
     distinct(): DoubleStream;
-    dropWhile(arg0: (param0: number) => kotlin.Boolean): DoubleStream;
-    filter(arg0: (param0: number) => kotlin.Boolean): DoubleStream;
+    dropWhile(arg0: (param0: number) => boolean): DoubleStream;
+    filter(arg0: (param0: number) => boolean): DoubleStream;
     findAny(): OptionalDouble;
     findFirst(): OptionalDouble;
-    flatMap(arg0: (param0: DoubleStream) => unknown): DoubleStream;
+    flatMap(arg0: (param0: number) => DoubleStream): DoubleStream;
     forEach(arg0: (param0: number) => void): void;
     forEachOrdered(arg0: (param0: number) => void): void;
     iterator(): PrimitiveIterator$OfDouble;
     limit(arg0: number): DoubleStream;
-    map(arg0: (param0: number) => kotlin.Double): DoubleStream;
+    map(arg0: (param0: number) => number): DoubleStream;
     mapMulti(arg0: (param0: number, param1: (param0: number) => void) => void): DoubleStream;
-    mapToInt(arg0: (param0: number) => kotlin.Int): IntStream;
-    mapToLong(arg0: (param0: number) => kotlin.Long): LongStream;
-    mapToObj(arg0: (param0: U) => unknown): Stream<U>;
+    mapToInt(arg0: (param0: number) => number): IntStream;
+    mapToLong(arg0: (param0: number) => number): LongStream;
+    mapToObj<U extends Object | number | string | boolean>(arg0: (param0: number) => U): Stream<U>;
     max(): OptionalDouble;
     min(): OptionalDouble;
-    noneMatch(arg0: (param0: number) => kotlin.Boolean): boolean;
+    noneMatch(arg0: (param0: number) => boolean): boolean;
     parallel(): DoubleStream;
     peek(arg0: (param0: number) => void): DoubleStream;
-    reduce(arg0: (param0: number, param1: number) => kotlin.Double): OptionalDouble;
-    reduce(arg0: number, arg1: (param0: number, param1: number) => kotlin.Double): number;
+    reduce(arg0: (param0: number, param1: number) => number): OptionalDouble;
+    reduce(arg0: number, arg1: (param0: number, param1: number) => number): number;
     sequential(): DoubleStream;
     skip(arg0: number): DoubleStream;
     sorted(): DoubleStream;
     spliterator(): Spliterator$OfDouble;
     sum(): number;
     summaryStatistics(): DoubleSummaryStatistics;
-    takeWhile(arg0: (param0: number) => kotlin.Boolean): DoubleStream;
+    takeWhile(arg0: (param0: number) => boolean): DoubleStream;
     toArray(): number[];
 }

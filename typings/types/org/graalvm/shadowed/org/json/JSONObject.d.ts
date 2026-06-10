@@ -104,7 +104,7 @@ export class JSONObject extends Object {
     put(key: string, value: Object): JSONObject;
     put(key: string, value: boolean): JSONObject;
     put(key: string, value: number): JSONObject;
-    put(key: string, value: E[]): JSONObject;
+    put(key: string, value: (Object | null)[]): JSONObject;
     put(key: string, value: Map<Object | null, Object | null>): JSONObject;
     putOnce(key: string, value: Object): JSONObject;
     putOpt(key: string, value: Object): JSONObject;

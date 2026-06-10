@@ -13,6 +13,6 @@ export class MovementUtilsKt extends Object {
      */
     static getDegreesRelativeToView(positionRelativeToPlayer: Vec3, yaw: number): number;
     static getDirectionalInputForDegrees(directionalInput: DirectionalInput, dgs: number, deadAngle: number): DirectionalInput;
-    static setDeltaMovement(localPlayer: LocalPlayer, block: (param0: Object | null) => Object | null): void;
+    static setDeltaMovement(localPlayer: LocalPlayer, block: (param0: Object) => Vec3): void;
     static stopXZVelocity(localPlayer: LocalPlayer): void;
 }

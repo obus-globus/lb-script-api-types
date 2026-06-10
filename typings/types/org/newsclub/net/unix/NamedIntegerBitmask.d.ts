@@ -6,7 +6,7 @@ export abstract class NamedIntegerBitmask<T extends NamedIntegerBitmask<T>> exte
     // private flags: number;
     // private name: string;
     combineWith(arg0: T): T;
-    combineWith(arg0: T[], arg1: T, arg2: (param0: T, param1: string) => unknown, arg3: T): T;
+    combineWith(arg0: T[], arg1: T, arg2: (param0: string, param1: number) => T, arg3: T): T;
     hasFlag(arg0: T): boolean;
     name(): string;
     toString(): string;

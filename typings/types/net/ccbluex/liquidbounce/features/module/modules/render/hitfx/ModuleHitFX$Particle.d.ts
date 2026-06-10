@@ -13,7 +13,7 @@ export class ModuleHitFX$Particle extends Enum<ModuleHitFX$Particle> implements 
     static SMOKE: ModuleHitFX$Particle;
     static WATER: ModuleHitFX$Particle;
     static getEntries(): ModuleHitFX$Particle[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleHitFX$Particle;

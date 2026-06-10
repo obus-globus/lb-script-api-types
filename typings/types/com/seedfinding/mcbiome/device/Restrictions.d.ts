@@ -4,18 +4,18 @@ import type { Restriction$Factory } from '../../../../com/seedfinding/mcbiome/de
 import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVersion.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Restrictions extends Object {
-    static BAMBOO_JUNGLE: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static COLD_FOREST: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static COLD_MOUNTAIN: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static COLD_PLAINS: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static CONTINENT: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static HILLS_PLATEAU: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static ISLAND: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static MUSHROOM: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static MUTATED: (param0: ModRestriction, param1: MCVersion, param2: number) => unknown;
-    static MUTATED_SECOND: (param0: ModRestriction, param1: MCVersion, param2: number) => unknown;
-    static SAVANNAH_BIOME: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static SPECIAL: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
-    static SUNFLOWER_PLAINS: (param0: BoundRestriction, param1: MCVersion, param2: number) => unknown;
+    static BAMBOO_JUNGLE: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static COLD_FOREST: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static COLD_MOUNTAIN: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static COLD_PLAINS: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static CONTINENT: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static HILLS_PLATEAU: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static ISLAND: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static MUSHROOM: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static MUTATED: (param0: MCVersion, param1: number, param2: number) => ModRestriction;
+    static MUTATED_SECOND: (param0: MCVersion, param1: number, param2: number) => ModRestriction;
+    static SAVANNAH_BIOME: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static SPECIAL: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
+    static SUNFLOWER_PLAINS: (param0: MCVersion, param1: number, param2: number) => BoundRestriction;
     constructor()
 }

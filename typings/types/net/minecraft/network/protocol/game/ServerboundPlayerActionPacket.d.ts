@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -11,7 +12,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ServerboundPlayerActionPacket$Action } from '../../../../../net/minecraft/network/protocol/game/ServerboundPlayerActionPacket$Action.d.ts'
 export class ServerboundPlayerActionPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundPlayerActionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor(input: FriendlyByteBuf)
     constructor(action: ServerboundPlayerActionPacket$Action, pos: BlockPos, direction: Direction)
     constructor(action: ServerboundPlayerActionPacket$Action, pos: BlockPos, direction: Direction, sequence: number)

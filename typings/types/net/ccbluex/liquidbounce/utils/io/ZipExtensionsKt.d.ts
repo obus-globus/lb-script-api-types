@@ -7,7 +7,7 @@ export class ZipExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ZipExtensions.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ZipExtensions.kt:74}
      */
-    static createZipArchive(collection: E[], file: File): void;
+    static createZipArchive(collection: File[], file: File): void;
     /**
      * Extracts a ZIP archive from an {@link InputStream} to a specified {@link folder} and close it
      *

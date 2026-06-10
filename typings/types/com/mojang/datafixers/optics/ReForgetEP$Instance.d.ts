@@ -11,11 +11,11 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ReForgetEP$Instance<R extends Object | number | string | boolean> extends Object implements App<ReForgetEP$Instance$Mu<R>, ReForgetEP$Mu<R>>, AffineP<ReForgetEP$Mu<R>, ReForgetEP$Instance$Mu<R>> {
     constructor()
-    dimap(arg0: App2<ReForgetEP$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ReForgetEP$Mu<R>, C, D>;
-    dimap(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<ReForgetEP$Mu<R>, A, B>, App2<ReForgetEP$Mu<R>, C, D>>;
-    dimap(arg0: () => App2<ReForgetEP$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ReForgetEP$Mu<R>, C, D>;
-    first(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Pair<A, C>, Pair<B, C>>;
-    left(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Either<A, C>, Either<B, C>>;
-    right(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Either<C, A>, Either<C, B>>;
-    second(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Pair<C, A>, Pair<C, B>>;
+    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<ReForgetEP$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ReForgetEP$Mu<R>, C, D>;
+    dimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<ReForgetEP$Mu<R>, A, B>, App2<ReForgetEP$Mu<R>, C, D>>;
+    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<ReForgetEP$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ReForgetEP$Mu<R>, C, D>;
+    first<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Pair<A, C>, Pair<B, C>>;
+    left<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Either<A, C>, Either<B, C>>;
+    right<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Either<C, A>, Either<C, B>>;
+    second<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<ReForgetEP$Mu<R>, A, B>): App2<ReForgetEP$Mu<R>, Pair<C, A>, Pair<C, B>>;
 }

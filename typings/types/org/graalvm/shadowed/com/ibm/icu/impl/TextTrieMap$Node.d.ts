@@ -12,10 +12,10 @@ export class TextTrieMap$Node extends Object {
     add<V extends Object | number | string | boolean>(chitr: TextTrieMap$CharIterator, value: V): void;
     // private addValue<V extends Object | number | string | boolean>(list: V[], value: V): V[];
     charCount(): number;
-    findMatch(chitr: TextTrieMap$CharIterator, output: TextTrieMap$Output): TextTrieMap$Node;
+    findMatch<V extends Object | number | string | boolean>(chitr: TextTrieMap$CharIterator, output: TextTrieMap$Output): TextTrieMap$Node;
     // private lenMatches(text: string[], offset: number): number;
     // private matchFollowing(chitr: TextTrieMap$CharIterator, output: TextTrieMap$Output): boolean;
     putLeadCodePoints(output: string[]): void;
     // private split(offset: number): void;
-    values(): Iterator<V>;
+    values<V extends Object | number | string | boolean>(): Iterator<V>;
 }

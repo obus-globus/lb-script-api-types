@@ -4,7 +4,7 @@ export class WeightedSortedList$WeightedListIterator extends Object implements O
     constructor(null_: WeightedSortedList$WeightedListIterator, startIndex: number)
     // private cursor: number;
     // private lastRet: number;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add<E extends Object | number | string | boolean>(arg0: E): void;
     add<E extends Object | number | string | boolean>(e: E): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
@@ -13,6 +13,6 @@ export class WeightedSortedList$WeightedListIterator extends Object implements O
     previous<E extends Object | number | string | boolean>(): E;
     previousIndex(): number;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<E extends Object | number | string | boolean>(arg0: E): void;
     set<E extends Object | number | string | boolean>(e: E): void;
 }

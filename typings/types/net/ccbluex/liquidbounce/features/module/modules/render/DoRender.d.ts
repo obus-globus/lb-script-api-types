@@ -34,7 +34,7 @@ export class DoRender extends Enum<DoRender> implements Tagged {
     static WALL_OVERLAY: DoRender;
     static WORLD_BORDER: DoRender;
     static getEntries(): DoRender[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DoRender;

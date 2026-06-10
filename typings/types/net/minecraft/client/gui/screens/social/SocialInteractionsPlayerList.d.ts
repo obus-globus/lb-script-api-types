@@ -19,7 +19,7 @@ export class SocialInteractionsPlayerList extends ContainerObjectSelectionList<P
     readonly filter: string;
     // private players: PlayerEntry[];
     // private socialInteractionsScreen: SocialInteractionsScreen;
-    // private addOnlinePlayers(playersToAdd: E[], output: Map<UUID, PlayerEntry>): void;
+    // private addOnlinePlayers(playersToAdd: UUID[], output: Map<UUID, PlayerEntry>): void;
     addPlayer(player: PlayerInfo, page: SocialInteractionsScreen$Page): void;
     // private addSeenPlayers(newEntries: Map<UUID, PlayerEntry>): void;
     enableScissor(graphics: GuiGraphicsExtractor): void;
@@ -32,7 +32,7 @@ export class SocialInteractionsPlayerList extends ContainerObjectSelectionList<P
     setFilter(filter: string): void;
     // private sortPlayerEntries(): void;
     // private updateFilteredPlayers(): void;
-    // private updateFiltersAndScroll(newEntries: E[], scrollAmount: number): void;
-    updatePlayerList(playersToAdd: E[], scrollAmount: number, addOfflineEntries: boolean): void;
+    // private updateFiltersAndScroll(newEntries: PlayerEntry[], scrollAmount: number): void;
+    updatePlayerList(playersToAdd: UUID[], scrollAmount: number, addOfflineEntries: boolean): void;
     // private updatePlayersFromChatLog(entries: Map<UUID, PlayerEntry>, addOfflineEntries: boolean): void;
 }

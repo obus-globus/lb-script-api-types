@@ -2,6 +2,7 @@ import type { ProtocolVersion } from '../../../../com/viaversion/viaversion/api/
 import type { SubVersionRange } from '../../../../com/viaversion/viaversion/api/protocol/version/SubVersionRange.d.ts'
 import type { VersionType } from '../../../../com/viaversion/viaversion/api/protocol/version/VersionType.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
 export class SpecialProtocolVersion extends ProtocolVersion {
     static unknown: ProtocolVersion;
     static v1_10: ProtocolVersion;
@@ -70,7 +71,7 @@ export class SpecialProtocolVersion extends ProtocolVersion {
     constructor(arg0: number, arg1: number, arg2: string, arg3: SubVersionRange, arg4: ProtocolVersion)
     constructor(arg0: number, arg1: string, arg2: ProtocolVersion)
     readonly delegate: ProtocolVersion;
-    customComparator(): (param0: ProtocolVersion) => kotlin.Boolean;
+    customComparator(): (param0: Object) => boolean;
     getBaseProtocolVersion(): ProtocolVersion;
     getDelegate(): ProtocolVersion;
 }

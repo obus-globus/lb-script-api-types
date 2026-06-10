@@ -4,9 +4,9 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 export class Version extends Object implements Serializable, Comparable<Version> {
-    static BUILD_AWARE_ORDER: (param0: Version) => kotlin.Boolean;
-    static INCREMENT_ORDER: (param0: Version) => kotlin.Boolean;
-    static PRECEDENCE_ORDER: (param0: Version) => kotlin.Boolean;
+    static BUILD_AWARE_ORDER: (param0: Object) => boolean;
+    static INCREMENT_ORDER: (param0: Object) => boolean;
+    static PRECEDENCE_ORDER: (param0: Object) => boolean;
     static parse(paramarg0: string): Version;
     static parse(paramarg0: string, paramarg1: boolean): Version;
     static tryParse(paramarg0: string): Optional<Version>;

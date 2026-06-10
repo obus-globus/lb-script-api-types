@@ -20,12 +20,12 @@ export class ModelDiscovery$ModelWrapper extends Object implements ResolvedModel
     static DEFAULT_AMBIENT_OCCLUSION: boolean;
     static DEFAULT_GUI_LIGHT: UnbakedModel$GuiLight;
     static findTopAmbientOcclusion(paramcurrent: ResolvedModel): boolean;
-    static findTopGeometry(paramcurrent: ResolvedModel): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
+    static findTopGeometry(paramcurrent: ResolvedModel): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
     static findTopGuiLight(paramcurrent: ResolvedModel): UnbakedModel$GuiLight;
     static findTopTextureSlots(paramtop: ResolvedModel): TextureSlots;
     static findTopTransform(paramcurrent: ResolvedModel, paramtype: ItemDisplayContext): ItemTransform;
     static findTopTransforms(paramtop: ResolvedModel): ItemTransforms;
-    static resolveParticleMaterial(paramtextureSlots: TextureSlots, parambaker: ModelBaker, paramresolvedModel: () => kotlin.String): Material$Baked;
+    static resolveParticleMaterial(paramtextureSlots: TextureSlots, parambaker: ModelBaker, paramresolvedModel: () => string): Material$Baked;
     private constructor(id: Identifier, wrapped: UnbakedModel, valid: boolean)
     // private fixedSlots: AtomicReferenceArray<Object>;
     // private id: Identifier;
@@ -39,7 +39,7 @@ export class ModelDiscovery$ModelWrapper extends Object implements ResolvedModel
     // private getSimpleProperty<T extends Object | number | string | boolean>(key: ModelDiscovery$Slot<T>, getter: (param0: ResolvedModel) => T): T;
     // private getSlot<T extends Object | number | string | boolean>(key: ModelDiscovery$Slot<T>): T;
     getTopAmbientOcclusion(): boolean;
-    getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
+    getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
     getTopGuiLight(): UnbakedModel$GuiLight;
     getTopTextureSlots(): TextureSlots;
     getTopTransforms(): ItemTransforms;

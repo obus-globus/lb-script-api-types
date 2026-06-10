@@ -17,7 +17,7 @@ export class SetBlockProperties extends Record implements EnchantmentEntityEffec
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<SetBlockProperties>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(properties: BlockItemStateProperties)
     constructor(properties: BlockItemStateProperties, offset: Vec3i, triggerGameEvent: Optional<Holder<GameEvent>>)
     // private offset: Vec3i;

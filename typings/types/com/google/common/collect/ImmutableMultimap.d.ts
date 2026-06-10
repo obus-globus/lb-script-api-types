@@ -11,7 +11,7 @@ export abstract class ImmutableMultimap<K extends Object | number | string | boo
     static builder(): ImmutableMultimap$Builder<Object, Object>;
     static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableMultimap$Builder<Object, Object>;
     static copyOf(parammultimap: Multimap<Object, Object>): ImmutableMultimap<Object, Object>;
-    static copyOf(paramentries: (Object | null)[]): ImmutableMultimap<Object, Object>;
+    static copyOf(paramentries: Map$Entry<Object, Object>[]): ImmutableMultimap<Object, Object>;
     static of(): ImmutableMultimap<Object, Object>;
     static of(paramk1: Object | null, paramv1: Object | null): ImmutableMultimap<Object, Object>;
     static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null): ImmutableMultimap<Object, Object>;
@@ -21,11 +21,11 @@ export abstract class ImmutableMultimap<K extends Object | number | string | boo
     constructor(map: Map<K, V[]>, size: number)
     // private map: Map<K, V[]>;
     // private size: number;
-    asMap(): Map<K, E[]>;
+    asMap(): Map<K, V[]>;
     clear(): void;
     containsKey(key: Object): boolean;
     containsValue(value: Object): boolean;
-    createAsMap(): Map<K, E[]>;
+    createAsMap(): Map<K, V[]>;
     createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];

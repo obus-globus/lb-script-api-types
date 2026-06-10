@@ -56,7 +56,7 @@ export abstract class ChunkGenerator extends Object {
     createState(structureSets: HolderLookup<StructureSet>, randomState: RandomState, legacyLevelSeed: number): ChunkGeneratorStructureState;
     createStructures(registryAccess: RegistryAccess, state: ChunkGeneratorStructureState, structureManager: StructureManager, centerChunk: ChunkAccess, structureTemplateManager: StructureTemplateManager, level: ResourceKey<Level>): void;
     fillFromNoise(blender: Blender, randomState: RandomState, structureManager: StructureManager, centerChunk: ChunkAccess): CompletableFuture<ChunkAccess>;
-    findNearestMapStructure(level: ServerLevel, wantedStructures: Holder<T>[], pos: BlockPos, maxSearchRadius: number, createReference: boolean): Pair<BlockPos, Holder<Structure>>;
+    findNearestMapStructure(level: ServerLevel, wantedStructures: Holder<Structure>[], pos: BlockPos, maxSearchRadius: number, createReference: boolean): Pair<BlockPos, Holder<Structure>>;
     getBaseColumn(x: number, z: number, heightAccessor: LevelHeightAccessor, randomState: RandomState): NoiseColumn;
     getBaseHeight(x: number, z: number, type: Heightmap$Types, heightAccessor: LevelHeightAccessor, randomState: RandomState): number;
     getBiomeGenerationSettings(biome: Holder<Biome>): BiomeGenerationSettings;

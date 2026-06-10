@@ -12,9 +12,9 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt:29}
  */
 export class TimedPickupTracker extends Object {
-    constructor(capacity: number, nowProvider: () => kotlin.Long)
+    constructor(capacity: number, nowProvider: () => number)
     // private capacity: number;
-    // private nowProvider: () => kotlin.Long;
+    // private nowProvider: () => number;
     // private trackedPositions: TimedPickupTracker$TrackedPos[];
     /**
      * Removes all tracked entries.
@@ -28,13 +28,13 @@ export class TimedPickupTracker extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt:84}
      */
-    firstEligible(minDelayMs: number, predicate: (param0: BlockPos) => kotlin.Boolean): BlockPos | null;
+    firstEligible(minDelayMs: number, predicate: (param0: BlockPos) => boolean): BlockPos | null;
     /**
      * Removes entries that are older than {@link maxDelayMs} or fail {@link isPickupable}.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt:74}
      */
-    prune(maxDelayMs: number, isPickupable: (param0: BlockPos) => kotlin.Boolean): void;
+    prune(maxDelayMs: number, isPickupable: (param0: BlockPos) => boolean): void;
     /**
      * Records a position at current time.
      * If the tracker is full, the oldest entry is removed.

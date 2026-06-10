@@ -1,4 +1,5 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSLeftShiftNode } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSLeftShiftNode.d.ts'
@@ -6,10 +7,11 @@ import type { JSOverloadedBinaryNode } from '../../../../../../com/oracle/truffl
 import type { JSRightShiftNode } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSRightShiftNode.d.ts'
 import type { JSRightShiftNodeGen$DoubleData } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSRightShiftNodeGen$DoubleData.d.ts'
 import type { JSRightShiftNodeGen$GenericData } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSRightShiftNodeGen$GenericData.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSRightShiftNodeGen extends JSRightShiftNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JavaScriptNode;
     static create(): JSRightShiftNode;
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JSRightShiftNode;

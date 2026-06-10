@@ -1,5 +1,8 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
+import type { DeclarationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
+import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
+import type { SimpleFunctionDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SimpleFunctionDescriptor.d.ts'
 import type { LookupLocation } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
 import type { LazyJavaPackageFragment } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaPackageFragment.d.ts'
@@ -19,9 +22,9 @@ export class JvmPackageScope extends Object implements MemberScope {
     // private packageFragment: LazyJavaPackageFragment;
     getClassifierNames(): Name[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
-    getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
-    getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];
+    getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];
+    getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];
     getFunctionNames(): Name[];
     getJavaScope$descriptors_jvm(): LazyJavaPackageScope;
     // private getKotlinScopes(): MemberScope[];

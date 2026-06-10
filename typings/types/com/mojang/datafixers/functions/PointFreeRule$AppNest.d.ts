@@ -20,9 +20,9 @@ export class PointFreeRule$AppNest extends Enum<PointFreeRule$AppNest> implement
     static valueOf(paramarg0: string): PointFreeRule$AppNest;
     static values(): (Object | null)[];
     private constructor()
-    // private cap<R extends Object | number | string | boolean>(arg0: ProfunctorTransformer<X, Y, Object, Object>, arg1: ProfunctorTransformer<S, T, A, B>): R;
-    // private compose(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): PointFree<(param0: A) => C>;
-    rewrite(arg0: PointFree<A>): Optional<PointFree<A>>;
-    rewriteOrNop(arg0: PointFree<A>): PointFree<A>;
+    // private cap<R extends Object | number | string | boolean, X extends Object | number | string | boolean, Y extends Object | number | string | boolean, S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: ProfunctorTransformer<X, Y, Object, Object>, arg1: ProfunctorTransformer<S, T, A, B>): R;
+    // private compose<A extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): PointFree<(param0: A) => C>;
+    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewriteOrNop<A extends Object | number | string | boolean>(arg0: PointFree<A>): PointFree<A>;
     name(): "INSTANCE";
 }

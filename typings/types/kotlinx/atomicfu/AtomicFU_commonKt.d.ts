@@ -6,20 +6,20 @@ import type { AtomicLong } from '../../kotlinx/atomicfu/AtomicLong.d.ts'
 import type { AtomicRef } from '../../kotlinx/atomicfu/AtomicRef.d.ts'
 export class AtomicFU_commonKt extends Object {
     static atomicArrayOfNulls(paramarg0: number): AtomicArray<Object>;
-    static getAndUpdate(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object | null) => Object | null): Object | null;
-    static getAndUpdate(paramarg0: AtomicBoolean, paramarg1: (param0: Object | null) => boolean): boolean;
-    static getAndUpdate(paramarg0: AtomicInt, paramarg1: (param0: Object | null) => number): number;
-    static getAndUpdate(paramarg0: AtomicLong, paramarg1: (param0: Object | null) => number): number;
-    static loop(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object | null) => void): void;
-    static loop(paramarg0: AtomicBoolean, paramarg1: (param0: Object | null) => void): void;
-    static loop(paramarg0: AtomicInt, paramarg1: (param0: Object | null) => void): void;
-    static loop(paramarg0: AtomicLong, paramarg1: (param0: Object | null) => void): void;
-    static update(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object | null) => Object | null): void;
-    static update(paramarg0: AtomicBoolean, paramarg1: (param0: Object | null) => boolean): void;
-    static update(paramarg0: AtomicInt, paramarg1: (param0: Object | null) => number): void;
-    static update(paramarg0: AtomicLong, paramarg1: (param0: Object | null) => number): void;
-    static updateAndGet(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object | null) => Object | null): Object | null;
-    static updateAndGet(paramarg0: AtomicBoolean, paramarg1: (param0: Object | null) => boolean): boolean;
-    static updateAndGet(paramarg0: AtomicInt, paramarg1: (param0: Object | null) => number): number;
-    static updateAndGet(paramarg0: AtomicLong, paramarg1: (param0: Object | null) => number): number;
+    static getAndUpdate(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
+    static getAndUpdate(paramarg0: AtomicBoolean, paramarg1: (param0: Object) => boolean): boolean;
+    static getAndUpdate(paramarg0: AtomicInt, paramarg1: (param0: Object) => number): number;
+    static getAndUpdate(paramarg0: AtomicLong, paramarg1: (param0: Object) => number): number;
+    static loop(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object) => void): void;
+    static loop(paramarg0: AtomicBoolean, paramarg1: (param0: Object) => void): void;
+    static loop(paramarg0: AtomicInt, paramarg1: (param0: Object) => void): void;
+    static loop(paramarg0: AtomicLong, paramarg1: (param0: Object) => void): void;
+    static update(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object) => Object | null): void;
+    static update(paramarg0: AtomicBoolean, paramarg1: (param0: Object) => boolean): void;
+    static update(paramarg0: AtomicInt, paramarg1: (param0: Object) => number): void;
+    static update(paramarg0: AtomicLong, paramarg1: (param0: Object) => number): void;
+    static updateAndGet(paramarg0: AtomicRef<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
+    static updateAndGet(paramarg0: AtomicBoolean, paramarg1: (param0: Object) => boolean): boolean;
+    static updateAndGet(paramarg0: AtomicInt, paramarg1: (param0: Object) => number): number;
+    static updateAndGet(paramarg0: AtomicLong, paramarg1: (param0: Object) => number): number;
 }

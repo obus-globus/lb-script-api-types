@@ -17,9 +17,9 @@ export class ObjectArrayList$Spliterator extends Object implements ObjectSpliter
     // private pos: number;
     characteristics(): number;
     estimateSize(): number;
-    forEachRemaining(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
     // private getWorkingMax(): number;
     skip(arg0: number): number;
-    tryAdvance(arg0: (param0: K) => void): boolean;
-    trySplit(): ObjectSpliterator<K>;
+    tryAdvance<K extends Object | number | string | boolean>(arg0: (param0: K) => void): boolean;
+    trySplit<K extends Object | number | string | boolean>(): ObjectSpliterator<K>;
 }

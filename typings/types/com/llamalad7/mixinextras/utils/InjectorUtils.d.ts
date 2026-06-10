@@ -7,8 +7,8 @@ import type { LocalVariableDiscriminator$Context } from '../../../../org/spongep
 import type { InjectionInfo } from '../../../../org/spongepowered/asm/mixin/injection/struct/InjectionInfo.d.ts'
 import type { InjectionNodes$InjectionNode } from '../../../../org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode.d.ts'
 export class InjectorUtils extends Object {
-    static checkForDupedNews(paramarg0: Map<AbstractInsnNode[], Object | null>): void;
-    static checkForImmediatePops(paramarg0: Map<AbstractInsnNode[], Object | null>): void;
+    static checkForDupedNews(paramarg0: Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>): void;
+    static checkForImmediatePops(paramarg0: Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>): void;
     static coerceReturnType(paramarg0: Injector$InjectorData, paramarg1: AbstractInsnNode[], paramarg2: Type): void;
     static decorateInjectorSpecific(paramarg0: InjectionNodes$InjectionNode, paramarg1: InjectionInfo, paramarg2: string, paramarg3: Object): void;
     static findCoerce(paramarg0: InjectionNodes$InjectionNode, paramarg1: Type): AbstractInsnNode;

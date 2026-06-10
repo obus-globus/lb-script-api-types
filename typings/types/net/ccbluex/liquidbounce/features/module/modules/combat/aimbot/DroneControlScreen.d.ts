@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { DroneControlScreen$EntityFocusData } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/DroneControlScreen$EntityFocusData.d.ts'
 import type { Rotation } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { Minecraft } from '../../../../../../../../net/minecraft/client/Minecraft.d.ts'
@@ -20,7 +19,7 @@ export class DroneControlScreen extends Screen {
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor()
     cameraPos: Vec3;

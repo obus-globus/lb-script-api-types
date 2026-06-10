@@ -4,5 +4,5 @@ import type { TypedDataComponent } from '../../../../net/minecraft/core/componen
 export interface DataComponentGetter extends Object{
     get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
     getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
-    getTyped(type: DataComponentType<T>): TypedDataComponent<T>;
+    getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
 }

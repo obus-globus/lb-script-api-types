@@ -1,5 +1,4 @@
 import type { ILevelLoadingScreen } from '../../../../../com/viaversion/viafabricplus/injection/access/networking/downloading_terrain/ILevelLoadingScreen.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -21,7 +20,7 @@ export class LevelLoadingScreen extends Screen implements ILevelLoadingScreen {
     static MENU_BACKGROUND: Identifier;
     static extractChunksForRendering(paramgraphics: GuiGraphicsExtractor, paramxCenter: number, paramyCenter: number, paramsize: number, parammargin: number, paramstatusView: ChunkLoadStatusView): void;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(loadTracker: LevelLoadTracker, reason: LevelLoadingScreen$Reason)
     // private cachedNetherPortalSprite: TextureAtlasSprite;

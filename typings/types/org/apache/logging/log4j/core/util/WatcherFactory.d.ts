@@ -8,7 +8,7 @@ import type { Source } from '../../../../../../org/apache/logging/log4j/core/uti
 import type { Watcher } from '../../../../../../org/apache/logging/log4j/core/util/Watcher.d.ts'
 export class WatcherFactory extends Object {
     static getInstance(parampackages: string[]): WatcherFactory;
-    static instantiate(paramname: string, paramclazz: Class<Object>, paramconfiguration: Configuration, paramreconfigurable: Reconfigurable, paramlisteners: ConfigurationListener[], paramlastModifiedMillis: number): Object | null;
+    static instantiate(paramname: string, paramclazz: Class<Watcher>, paramconfiguration: Configuration, paramreconfigurable: Reconfigurable, paramlisteners: ConfigurationListener[], paramlastModifiedMillis: number): Watcher | null;
     private constructor(packages: string[])
     // private plugins: { [key: string]: PluginType<Object> };
     newWatcher(source: Source, configuration: Configuration, reconfigurable: Reconfigurable, configurationListeners: ConfigurationListener[], lastModifiedMillis: number): Watcher;

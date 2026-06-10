@@ -10,6 +10,6 @@ export class ProtocolCodecBuilder<B extends ByteBuf, L extends PacketListener> e
     constructor(flow: PacketFlow)
     // private dispatchBuilder: IdDispatchCodec$Builder<B, Packet<L>, PacketType<Packet<L>>>;
     // private flow: PacketFlow;
-    add(type: PacketType<T>, serializer: StreamCodec<B, T>): ProtocolCodecBuilder<B, L>;
+    add<T extends Packet<L>>(type: PacketType<T>, serializer: StreamCodec<B, T>): ProtocolCodecBuilder<B, L>;
     build(): StreamCodec<B, Packet<L>>;
 }

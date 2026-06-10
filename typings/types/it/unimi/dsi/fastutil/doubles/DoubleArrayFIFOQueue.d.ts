@@ -14,7 +14,7 @@ export class DoubleArrayFIFOQueue extends Object implements DoublePriorityQueue,
     // private start: number;
     capacity(): number;
     clear(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueDouble(): number;
     dequeueLastDouble(): number;

@@ -13,7 +13,7 @@ export abstract class StoredUserList<K extends Object | number | string | boolea
     contains(user: K): boolean;
     createEntry(object: JsonObject): StoredUserEntry<K>;
     get(user: K): V;
-    getEntries(): E[];
+    getEntries(): V[];
     getFile(): File;
     getKeyForUser(user: K): string;
     getUserList(): string[];

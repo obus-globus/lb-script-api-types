@@ -10,7 +10,7 @@ import type { TestEnvironmentDefinition$Activation } from '../../../../net/minec
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 export class GameTestRunner extends Object {
     static DEFAULT_TESTS_PER_ROW: number;
-    constructor(batcher: GameTestRunner$GameTestBatcher, batches: E[], level: ServerLevel, testTicker: GameTestTicker, existingStructureSpawner: GameTestRunner$StructureSpawner, newStructureSpawner: GameTestRunner$StructureSpawner, haltOnError: boolean, clearBetweenBatches: boolean)
+    constructor(batcher: GameTestRunner$GameTestBatcher, batches: GameTestBatch[], level: ServerLevel, testTicker: GameTestTicker, existingStructureSpawner: GameTestRunner$StructureSpawner, newStructureSpawner: GameTestRunner$StructureSpawner, haltOnError: boolean, clearBetweenBatches: boolean)
     // private allTestInfos: GameTestInfo[];
     // private batchListeners: GameTestBatchListener[];
     // private batches: GameTestBatch[];
@@ -25,7 +25,7 @@ export class GameTestRunner extends Object {
     // private testBatcher: GameTestRunner$GameTestBatcher;
     // private testTicker: GameTestTicker;
     addListener(listener: GameTestBatchListener): void;
-    // private createStructuresForBatch(batch: E[]): E[];
+    // private createStructuresForBatch(batch: GameTestInfo[]): GameTestInfo[];
     // private endCurrentEnvironment(): void;
     getTestInfos(): GameTestInfo[];
     rerunTest(info: GameTestInfo): void;

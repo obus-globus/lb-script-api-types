@@ -1,4 +1,5 @@
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
+import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { AbstractQueuedLongSynchronizer } from '../../../../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.d.ts'
@@ -18,7 +19,7 @@ export class AbstractQueuedLongSynchronizer$ConditionObject extends Object imple
     // private doSignal(arg0: AbstractQueuedLongSynchronizer$ConditionNode, arg1: boolean): void;
     // private enableWait(arg0: AbstractQueuedLongSynchronizer$ConditionNode): number;
     getWaitQueueLength(): number;
-    getWaitingThreads(): E[];
+    getWaitingThreads(): Thread[];
     hasWaiters(): boolean;
     isOwnedBy(arg0: AbstractQueuedLongSynchronizer): boolean;
     // private newConditionNode(): AbstractQueuedLongSynchronizer$ConditionNode;

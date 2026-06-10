@@ -1,4 +1,5 @@
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
+import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PacketListenerExtensions } from '../../../../net/fabricmc/fabric/impl/networking/PacketListenerExtensions.d.ts'
@@ -29,6 +30,7 @@ import type { ClientboundResetChatPacket } from '../../../../net/minecraft/netwo
 import type { ClientboundSelectKnownPacks } from '../../../../net/minecraft/network/protocol/configuration/ClientboundSelectKnownPacks.d.ts'
 import type { ClientboundUpdateEnabledFeaturesPacket } from '../../../../net/minecraft/network/protocol/configuration/ClientboundUpdateEnabledFeaturesPacket.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { Resource } from '../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class ClientConfigurationPacketListenerImpl extends ClientCommonPacketListenerImpl implements PacketListenerExtensions, ClientConfigurationPacketListenerImplAccessor, TickablePacketListener, ClientConfigurationPacketListener {
@@ -58,6 +60,6 @@ export class ClientConfigurationPacketListenerImpl extends ClientCommonPacketLis
     isAcceptingMessages(): boolean;
     onDisconnect(reason: DisconnectionDetails): void;
     protocol(): ConnectionProtocol;
-    // private runWithResources<T extends Object | number | string | boolean>(operation: (param0: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>) => T): T;
+    // private runWithResources<T extends Object | number | string | boolean>(operation: (param0: (param0: Identifier) => Optional<Resource>) => T): T;
     tick(): void;
 }

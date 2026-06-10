@@ -1,7 +1,6 @@
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
@@ -13,8 +12,8 @@ import type { LongJumpToRandomPos$PossibleJump } from '../../../../../../net/min
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class LongJumpToPreferredBlock<E extends Mob> extends LongJumpToRandomPos<E> {
     static DEFAULT_DURATION: number;
-    static defaultAcceptableLandingSpot(parambody: Object | null, paramtargetPos: BlockPos): boolean;
-    constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocity: number, getJumpSound: (param0: E) => SoundEvent, preferredBlockTag: TagKey<Block>, preferredBlocksChance: number, acceptableLandingSpot: (param0: E, param1: BlockPos) => kotlin.Boolean)
+    static defaultAcceptableLandingSpot(parambody: Mob | null, paramtargetPos: BlockPos): boolean;
+    constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocity: number, getJumpSound: (param0: E) => SoundEvent, preferredBlockTag: TagKey<Block>, preferredBlocksChance: number, acceptableLandingSpot: (param0: E, param1: BlockPos) => boolean)
     // private currentlyWantingPreferredOnes: boolean;
     // private notPrefferedJumpCandidates: LongJumpToRandomPos$PossibleJump[];
     // private preferredBlockTag: TagKey<Block>;

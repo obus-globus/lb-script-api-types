@@ -46,10 +46,10 @@ export class LanguageCache extends Object implements Comparable<LanguageCache> {
     getPolicy(): TruffleLanguage$ContextPolicy;
     getProvidedTags(): Class<Tag>[];
     getResourceCache(resourceId: string): InternalResourceCache;
-    getResourceIds(): E[];
-    getResources(): E[];
+    getResourceIds(): string[];
+    getResources(): InternalResourceCache[];
     getSandboxPolicy(): SandboxPolicy;
-    getServices(): E[];
+    getServices(): string[];
     getStaticIndex(): number;
     getVersion(): string;
     getWebsite(): string;

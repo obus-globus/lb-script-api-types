@@ -17,7 +17,5 @@ export class DynamicShadowNode extends ParentNode {
     applyFormatting(arg0: Style, arg1: ParserContext): Style;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     toString(): string;
 }

@@ -11,5 +11,5 @@ import type { Direction } from '../../../../../../net/minecraft/core/Direction.d
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export interface PlatformModelEmitter extends Object {
-    emitModel(arg0: BlockStateModel, arg1: (param0: Direction) => kotlin.Boolean, arg2: MutableQuadViewImpl, arg3: RandomSource, arg4: BlockAndTintGetter, arg5: BlockPos, arg6: BlockState, arg7: (param0: BlockStateModelPart, param1: (param0: Direction) => kotlin.Boolean, param2: (param0: MutableQuadViewImpl) => void) => void): void;
+    emitModel(arg0: BlockStateModel, arg1: (param0: Direction) => boolean, arg2: MutableQuadViewImpl, arg3: RandomSource, arg4: BlockAndTintGetter, arg5: BlockPos, arg6: BlockState, arg7: (param0: BlockStateModelPart, param1: (param0: Direction) => boolean, param2: (param0: MutableQuadViewImpl) => void) => void): void;
 }

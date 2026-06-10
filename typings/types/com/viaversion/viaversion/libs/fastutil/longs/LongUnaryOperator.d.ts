@@ -2,8 +2,8 @@ import type { LongUnaryOperator as LongUnaryOperator_2 } from '../../../../../..
 import type { UnaryOperator } from '../../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface LongUnaryOperator extends LongUnaryOperator_2, UnaryOperator<number>, Object {
-    andThen(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
+    andThen(arg0: (param0: number) => number): (param0: number) => number;
     apply(arg0: number): number;
     applyAsLong(arg0: number): number;
-    compose(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
+    compose(arg0: (param0: number) => number): (param0: number) => number;
 }

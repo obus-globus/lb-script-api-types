@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Structure$ByReference } from '../../../../../com/sun/jna/Structure$ByReference.d.ts'
 import type { Variant$VARIANT } from '../../../../../com/sun/jna/platform/win32/Variant$VARIANT.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -15,8 +16,8 @@ export class Variant$VARIANT$ByReference extends Variant$VARIANT implements Stru
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     constructor(arg0: Pointer)
     constructor(arg0: Variant$VARIANT)

@@ -16,7 +16,7 @@ export class GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad extends Enum<GlobalBui
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

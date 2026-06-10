@@ -17,7 +17,7 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:77}
      */
-    static forEachBlock(levelChunkSection: LevelChunkSection, action: (param0: Object | null, param1: Object | null, param2: Object | null, param3: Object | null) => void): void;
+    static forEachBlock(levelChunkSection: LevelChunkSection, action: (param0: Object, param1: Object, param2: Object, param3: Object) => void): void;
     /**
      * Iterates all blocks in a specific section index and exposes world-space block positions.
      *
@@ -27,10 +27,10 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:56}
      */
-    static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: Object | null, param1: Object | null) => void): void;
+    static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: Object, param1: Object) => void): void;
     static getBedRule(paramarg0: Level): BedRule;
-    static getEntitiesInCube(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean): (Object | null)[];
-    static getEntitiesInCube(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: Entity, paramarg4: (param0: Entity) => kotlin.Boolean): Entity[];
+    static getEntitiesInCube(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: (param0: Entity | null) => boolean): (Entity | null)[];
+    static getEntitiesInCube(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: Entity, paramarg4: (param0: Entity) => boolean): Entity[];
     /**
      * Returns the loaded section slice from section 0 through {@link ChunkAccess.highestFilledSectionIndex}.
      *

@@ -12,6 +12,7 @@ import type { Rectangle2D } from '../../../java/awt/geom/Rectangle2D.d.ts'
 import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
+import type { EventListener } from '../../../java/util/EventListener.d.ts'
 import type { Timer } from '../../../javax/swing/Timer.d.ts'
 import type { ChangeEvent } from '../../../javax/swing/event/ChangeEvent.d.ts'
 import type { ChangeListener } from '../../../javax/swing/event/ChangeListener.d.ts'
@@ -84,7 +85,7 @@ export class DefaultCaret extends Rectangle implements FocusListener, MouseListe
     getDot(): number;
     getDotBias(): Position$Bias;
     // private getFilterBypass(): NavigationFilter$FilterBypass;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getMagicCaretPosition(): Point;
     getMark(): number;
     getMarkBias(): Position$Bias;

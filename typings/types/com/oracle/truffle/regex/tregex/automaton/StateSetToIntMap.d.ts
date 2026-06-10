@@ -3,7 +3,7 @@ import type { AbstractTransition } from '../../../../../../com/oracle/truffle/re
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class StateSetToIntMap<S extends AbstractState<S, T>, T extends AbstractTransition<S, T>> extends Object {
     static create(paramsingleState: Object | null): StateSetToIntMap<Object, Object>;
-    static create(paramstateSet: S[]): StateSetToIntMap<Object, Object>;
+    static create(paramstateSet: (Object | null)[]): StateSetToIntMap<Object, Object>;
     private constructor(keys: number[])
     // private keys: number[];
     // private usedValues: number[];

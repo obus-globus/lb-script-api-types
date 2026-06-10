@@ -6,5 +6,5 @@ export class NbtTagArgument extends ParserBasedArgument<Tag> {
     static getNbtTag(paramcontext: CommandContext<Object>, paramname: string): Tag;
     static nbtTag(): NbtTagArgument;
     private constructor()
-    getExamples(): E[];
+    getExamples(): string[];
 }

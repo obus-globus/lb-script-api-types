@@ -5,9 +5,9 @@ import type { BytecodeBuilder } from '../../../../../../net/lenni0451/reflect/by
 import type { MethodBuilder } from '../../../../../../net/lenni0451/reflect/bytecode/builder/MethodBuilder.d.ts'
 import type { BytecodeLabel } from '../../../../../../net/lenni0451/reflect/bytecode/wrapper/BytecodeLabel.d.ts'
 export class ASMMethodBuilder extends Object implements MethodBuilder {
-    constructor(arg0: (param0: string) => kotlin.Int, arg1: Object)
+    constructor(arg0: (param0: string) => number, arg1: Object)
     readonly methodVisitor: Object;
-    // private opcodeResolver: (param0: string) => kotlin.Int;
+    // private opcodeResolver: (param0: string) => number;
     aaload(): MethodBuilder;
     aastore(): MethodBuilder;
     aconstNull(): MethodBuilder;

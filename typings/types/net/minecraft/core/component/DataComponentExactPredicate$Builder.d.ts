@@ -7,5 +7,5 @@ export class DataComponentExactPredicate$Builder extends Object {
     // private expectedComponents: TypedDataComponent<Object>[];
     build(): DataComponentExactPredicate;
     expect<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): DataComponentExactPredicate$Builder;
-    expect(value: TypedDataComponent<T>): DataComponentExactPredicate$Builder;
+    expect<T extends Object | number | string | boolean>(value: TypedDataComponent<T>): DataComponentExactPredicate$Builder;
 }

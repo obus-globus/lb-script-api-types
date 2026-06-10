@@ -15,5 +15,5 @@ export class ArrayQueue<E extends Object | number | string | boolean> extends Ob
     poll(): E;
     size(): number;
     toArray(): Object[];
-    toArray(a: T[]): T[];
+    toArray<T extends Object | number | string | boolean>(a: T[]): T[];
 }

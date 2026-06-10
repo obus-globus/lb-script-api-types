@@ -9,7 +9,7 @@ export class AnyModsLoadedResourceCondition extends Record implements ResourceCo
     static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<AnyModsLoadedResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<ResourceCondition[]>;
     constructor(modIds: string[])
     // private modIds: string[];
     equals(arg0: Object | null): boolean;

@@ -11,5 +11,5 @@ export class ChunkNbt extends Object implements AutoCloseable {
     // private storage: SimpleRegionStorage;
     // private targetVersion: number;
     close(): void;
-    updateChunk(pos: ChunkPos, dataFixContext: CompoundTag, fixer: (param0: CompoundTag) => unknown): void;
+    updateChunk(pos: ChunkPos, dataFixContext: CompoundTag, fixer: (param0: CompoundTag) => Object | null): void;
 }

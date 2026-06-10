@@ -6,11 +6,11 @@ import type { TargetingConditions$Selector } from '../../../../../net/minecraft/
 import type { EnderMan } from '../../../../../net/minecraft/world/entity/monster/EnderMan.d.ts'
 import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
 export class EnderMan$EndermanLookForPlayerGoal extends NearestAttackableTargetGoal<Player> {
-    constructor(enderman: EnderMan, isAngryAt: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean)
+    constructor(enderman: EnderMan, isAngryAt: (param0: LivingEntity, param1: ServerLevel) => boolean)
     // private aggroTime: number;
     // private continueAggroTargetConditions: TargetingConditions;
     // private enderman: EnderMan;
-    // private isAngerInducing: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean;
+    // private isAngerInducing: (param0: LivingEntity, param1: ServerLevel) => boolean;
     // private pendingTarget: Player;
     // private startAggroTargetConditions: TargetingConditions;
     // private teleportTime: number;

@@ -6,8 +6,8 @@ import type { DFA } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/
 import type { BitSet } from '../../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ProxyErrorListener extends Object implements ANTLRErrorListener {
-    constructor(arg0: E[])
-    // private delegates: E[];
+    constructor(arg0: ANTLRErrorListener[])
+    // private delegates: ANTLRErrorListener[];
     reportAmbiguity(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: boolean, arg5: BitSet, arg6: (Object | null)[]): void;
     reportAttemptingFullContext(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: BitSet, arg5: (Object | null)[]): void;
     reportContextSensitivity(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: number, arg5: (Object | null)[]): void;

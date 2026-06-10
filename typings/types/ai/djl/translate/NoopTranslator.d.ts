@@ -7,8 +7,8 @@ export class NoopTranslator extends Object implements Translator<(Object | null)
     constructor()
     constructor(arg0: Batchifier)
     readonly batchifier: Batchifier;
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    batchProcessInput(arg0: TranslatorContext, arg1: (Object | null)[][]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): (Object | null)[][];
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;

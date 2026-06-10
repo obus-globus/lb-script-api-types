@@ -4,7 +4,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CriterionTrigger } from '../../../net/minecraft/advancements/CriterionTrigger.d.ts'
 import type { CriterionTriggerInstance } from '../../../net/minecraft/advancements/CriterionTriggerInstance.d.ts'
 export class Criterion<T extends CriterionTriggerInstance> extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Criterion<Object>>;
     constructor(trigger: CriterionTrigger<T>, triggerInstance: T)
     // private trigger: CriterionTrigger<T>;
     // private triggerInstance: T;

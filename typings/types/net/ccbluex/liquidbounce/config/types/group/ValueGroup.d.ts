@@ -42,8 +42,8 @@ import type { Block } from '../../../../../../net/minecraft/world/level/block/Bl
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector2f } from '../../../../../../org/joml/Vector2f.d.ts'
 import type { Vector2fc } from '../../../../../../org/joml/Vector2fc.d.ts'
-export class ValueGroup extends Value<E[]> {
-    constructor(name: string, value: E[], valueType: ValueType, independentDescription: boolean, aliases: string[])
+export class ValueGroup extends Value<Value<Object>[]> {
+    constructor(name: string, value: Value<Object>[], valueType: ValueType, independentDescription: boolean, aliases: string[])
     /**
      * Stores the {@link ValueGroup} in which
      * the {@link ValueGroup} is included, can be null.
@@ -110,7 +110,7 @@ export class ValueGroup extends Value<E[]> {
     intRange(name: string, default_: { start: number; endInclusive: number; step: number }, range: { start: number; endInclusive: number; step: number }, suffix: string, aliases: string[]): RangedValue<{ start: number; endInclusive: number; step: number }>;
     item(name: string, default_: Item): Value<Item>;
     itemList<C extends Item[]>(name: string, default_: C): RegistryMutableListValue<C, Item>;
-    itemList<T extends E[]>(name: string, defaultValue: T, items: ItemListValue$NamedItem<E>[], valueType: ValueType): ItemListValue<T, E>;
+    itemList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, items: ItemListValue$NamedItem<E>[], valueType: ValueType): ItemListValue<T, E>;
     items<C extends Item[]>(name: string, default_: C): RegistryListValue<C, Item>;
     /**
      * Assigns the value of the settings to the component
@@ -139,20 +139,20 @@ export class ValueGroup extends Value<E[]> {
     json(valueObject: JsonObject): void;
     key(name: string, default_: InputConstants$Key): Value<InputConstants$Key>;
     key(name: string, default_: number): Value<InputConstants$Key>;
-    list<T extends E[]>(name: string, defaultValue: T, valueType: ValueType): ListValue<T, E>;
+    list<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): ListValue<T, E>;
     mobEffects<C extends MobEffect[]>(name: string, default_: C): RegistryListValue<C, MobEffect>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, active: T, modes: T[]): ModeValueGroup<T>;
-    protected modes(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => kotlin.Int, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
-    protected modes(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
-    multiEnumChoice(name: string, default_: T[], choices: T[], canBeNone: boolean): MultiChoiceListValue<T>;
-    multiEnumChoice(name: string, default_: T[], canBeNone: boolean): MultiChoiceListValue<T>;
-    multiEnumChoice(name: string, default_: T[], choices: T[], canBeNone: boolean, isOrderSensitive: boolean): MultiChoiceListValue<T>;
-    mutableList<T extends E[]>(name: string, defaultValue: T, valueType: ValueType): MutableListValue<T, E>;
+    protected modes<T extends Mode>(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => number, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes<T extends Mode>(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    multiEnumChoice<T extends Enum<T> & Tagged>(name: string, default_: T[], choices: T[], canBeNone: boolean): MultiChoiceListValue<T>;
+    multiEnumChoice<T extends Enum<T> & Tagged>(name: string, default_: T[], canBeNone: boolean): MultiChoiceListValue<T>;
+    multiEnumChoice<T extends Tagged>(name: string, default_: T[], choices: T[], canBeNone: boolean, isOrderSensitive: boolean): MultiChoiceListValue<T>;
+    mutableList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): MutableListValue<T, E>;
     // private rangedValue<T extends Object | number | string | boolean>(name: string, defaultValue: T, range: ClosedRange<Object>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
     regex(name: string, default_: Regex): Value<Regex>;
-    regexList<C extends E[]>(name: string, default_: C): MutableListValue<C, Regex>;
-    registryList<T extends E[]>(name: string, defaultValue: T, valueType: ValueType): RegistryListValue<T, E>;
-    registryMutableList<T extends E[]>(name: string, defaultValue: T, valueType: ValueType): RegistryMutableListValue<T, E>;
+    regexList<C extends Regex[]>(name: string, default_: C): MutableListValue<C, Regex>;
+    registryList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): RegistryListValue<T, E>;
+    registryMutableList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): RegistryMutableListValue<T, E>;
     /**
      * Restore all values to their default values
      *
@@ -163,9 +163,9 @@ export class ValueGroup extends Value<E[]> {
     // private shouldWalkKey(currentKey: string | null, prefix: string): boolean;
     sounds<C extends SoundEvent[]>(name: string, default_: C): RegistryListValue<C, SoundEvent>;
     text(name: string, default_: string): Value<string>;
-    textList<C extends E[]>(name: string, default_: C): MutableListValue<C, string>;
+    textList<C extends string[]>(name: string, default_: C): MutableListValue<C, string>;
     tree<T extends ValueGroup>(valueGroup: T): T;
-    treeAll(valueGroups: T[]): void;
+    treeAll<T extends ValueGroup>(valueGroups: T[]): void;
     value<V extends Value<Object>>(value: V): V;
     value<T extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType, aliases: string[]): Value<T>;
     vec2f(name: string, default_: Vector2fc): Value<Vector2fc>;

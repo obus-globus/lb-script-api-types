@@ -8,7 +8,7 @@ export class KeyStoreConfiguration extends AbstractKeyStoreConfiguration {
     static createKeyStoreConfiguration(paramlocation: string, parampassword: string, paramkeyStoreType: string, paramkeyManagerFactoryAlgorithm: string): KeyStoreConfiguration;
     constructor(location: string, password: string[], keyStoreType: string, keyManagerFactoryAlgorithm: string)
     constructor(location: string, password: string, keyStoreType: string, keyManagerFactoryAlgorithm: string)
-    constructor(location: string, passwordProvider: () => kotlin.CharArray, keyStoreType: string, keyManagerFactoryAlgorithm: string)
+    constructor(location: string, passwordProvider: () => string[], keyStoreType: string, keyManagerFactoryAlgorithm: string)
     readonly keyManagerFactoryAlgorithm: string;
     equals(obj: Object | null): boolean;
     getKeyManagerFactoryAlgorithm(): string;

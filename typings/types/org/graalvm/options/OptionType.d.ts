@@ -11,8 +11,8 @@ export class OptionType<T extends Object | number | string | boolean> extends Ob
     constructor(name: string, stringConverter: (param0: string) => T)
     constructor(name: string, stringConverter: (param0: string) => T, validator: (param0: T) => void)
     private constructor(name: string, stringConverter: (param0: string) => T, isDefaultType: boolean)
-    private constructor(name: string, converter: (param0: T, param1: Object | null, param2: string) => unknown, validator: (param0: T) => void, isOptionMap: boolean, isDefaultType: boolean)
-    // private converter: (param0: T, param1: Object | null, param2: string) => unknown;
+    private constructor(name: string, converter: (param0: T, param1: string, param2: string) => T, validator: (param0: T) => void, isOptionMap: boolean, isDefaultType: boolean)
+    // private converter: (param0: T, param1: string, param2: string) => T;
     // private isDefaultType: boolean;
     // private isOptionMap: boolean;
     readonly name: string;

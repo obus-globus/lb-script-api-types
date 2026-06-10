@@ -9,7 +9,6 @@ import type { SubmitNodeCollector } from '../../../../../net/minecraft/client/re
 import type { BlockEntityRenderer } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRenderer.d.ts'
 import type { BlockEntityRendererProvider$Context } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context.d.ts'
 import type { BedRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/BedRenderState.d.ts'
-import type { BlockEntityRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/BlockEntityRenderState.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { SpecialModelRenderer$BakingContext } from '../../../../../net/minecraft/client/renderer/special/SpecialModelRenderer$BakingContext.d.ts'
 import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
@@ -17,7 +16,6 @@ import type { SpriteGetter } from '../../../../../net/minecraft/client/resources
 import type { SpriteId } from '../../../../../net/minecraft/client/resources/model/sprite/SpriteId.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { BedBlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BedBlockEntity.d.ts'
-import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BedPart } from '../../../../../net/minecraft/world/level/block/state/properties/BedPart.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
@@ -33,11 +31,10 @@ export class BedRenderer extends Object implements BlockEntityRenderer<BedBlockE
     // private sprites: SpriteGetter;
     createRenderState(): BedRenderState;
     extractRenderState(blockEntity: BedBlockEntity, state: BedRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
-    extractRenderState<T extends BlockEntity, S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getExtents(part: BedPart, output: (param0: Vector3fc) => void): void;
     // private getPieceModel(part: BedPart): Model$Simple;
     getViewDistance(): number;
-    shouldRender<T extends BlockEntity>(blockEntity: T, cameraPosition: Vec3): boolean;
+    shouldRender(blockEntity: BedBlockEntity, cameraPosition: Vec3): boolean;
     shouldRenderOffScreen(): boolean;
     submit(state: BedRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     submitPiece(part: BedPart, sprite: SpriteId, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, breakProgress: ModelFeatureRenderer$CrumblingOverlay, outlineColor: number): void;

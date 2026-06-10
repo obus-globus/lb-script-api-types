@@ -19,6 +19,6 @@ export class FluidRenderer extends Object {
     // private getHeight(level: BlockAndTintGetter, fluidType: Fluid, pos: BlockPos): number;
     // private getHeight(level: BlockAndTintGetter, fluidType: Fluid, pos: BlockPos, state: BlockState, fluidState: FluidState): number;
     // private getLightCoords(level: BlockAndTintGetter, pos: BlockPos): number;
-    tesselate(level: BlockAndTintGetter, pos: BlockPos, output: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, blockState: BlockState, fluidState: FluidState): void;
+    tesselate(level: BlockAndTintGetter, pos: BlockPos, output: (param0: ChunkSectionLayer) => VertexConsumer, blockState: BlockState, fluidState: FluidState): void;
     // private vertex(builder: VertexConsumer, x: number, y: number, z: number, color: number, u: number, v: number, lightCoords: number): void;
 }

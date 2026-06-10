@@ -12,12 +12,12 @@ import type { TestInstanceFinder } from '../../../../net/minecraft/gametest/fram
 import type { TestPosFinder } from '../../../../net/minecraft/gametest/framework/TestPosFinder.d.ts'
 export class TestFinder$Builder extends Object {
     constructor()
-    private constructor(testFinderWrapper: (param0: () => Stream<Holder$Reference<GameTestInstance>>) => unknown, structureBlockPosFinderWrapper: (param0: () => Stream<BlockPos>) => unknown)
-    // private structureBlockPosFinderWrapper: (param0: () => Stream<BlockPos>) => unknown;
-    // private testFinderWrapper: (param0: () => Stream<Holder$Reference<GameTestInstance>>) => unknown;
+    private constructor(testFinderWrapper: (param0: () => Stream<Holder$Reference<GameTestInstance>>) => Object | null, structureBlockPosFinderWrapper: (param0: () => Stream<BlockPos>) => Object | null)
+    // private structureBlockPosFinderWrapper: (param0: () => Stream<BlockPos>) => Object | null;
+    // private testFinderWrapper: (param0: () => Stream<Holder$Reference<GameTestInstance>>) => Object | null;
     allNearby(sourceStack: CommandContext<CommandSourceStack>): TestFinder;
-    // private build(source: CommandSourceStack, testInstanceFinder: () => java.util.stream.Stream<unknown>, testPosFinder: () => java.util.stream.Stream<net.minecraft.core.BlockPos>): TestFinder;
-    byResourceSelection(sourceStack: CommandContext<CommandSourceStack>, holders: E[]): TestFinder;
+    // private build(source: CommandSourceStack, testInstanceFinder: () => Stream<Holder$Reference<GameTestInstance>>, testPosFinder: () => Stream<BlockPos>): TestFinder;
+    byResourceSelection(sourceStack: CommandContext<CommandSourceStack>, holders: Holder$Reference<GameTestInstance>[]): TestFinder;
     createMultipleCopies(amount: number): TestFinder$Builder;
     failedTests(sourceStack: CommandContext<CommandSourceStack>): TestFinder;
     failedTests(sourceStack: CommandContext<CommandSourceStack>, onlyRequiredTests: boolean): TestFinder;

@@ -12,13 +12,13 @@ export class ModuleSpeed$NotCondition extends Enum<ModuleSpeed$NotCondition> imp
     static SNEAKING: ModuleSpeed$NotCondition;
     static USING_ITEM: ModuleSpeed$NotCondition;
     static getEntries(): ModuleSpeed$NotCondition[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSpeed$NotCondition;
     static values(): (Object | null)[];
-    private constructor(tag: string, condition: () => kotlin.Boolean)
-    readonly condition: () => kotlin.Boolean;
+    private constructor(tag: string, condition: () => boolean)
+    readonly condition: () => boolean;
     readonly tag: string;
     name(): "USING_ITEM" | "SCAFFOLD" | "SNEAKING" | "FALL_FLYING" | "IN_LIQUID";
 }

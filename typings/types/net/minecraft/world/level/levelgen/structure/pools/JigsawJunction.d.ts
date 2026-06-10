@@ -17,6 +17,6 @@ export class JigsawJunction extends Object {
     getSourceX(): number;
     getSourceZ(): number;
     hashCode(): number;
-    serialize(ops: DynamicOps<T>): Dynamic<T>;
+    serialize<T extends Object | number | string | boolean>(ops: DynamicOps<T>): Dynamic<T>;
     toString(): string;
 }

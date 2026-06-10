@@ -29,8 +29,8 @@ export class StructureManager extends Object {
     getAllStructuresAt(pos: BlockPos): Map<Structure, (Object | null)[]>;
     getStartForStructure(pos: SectionPos, structure: Structure, chunk: StructureAccess): StructureStart;
     getStructureAt(blockPos: BlockPos, structure: Structure): StructureStart;
-    getStructureWithPieceAt(blockPos: BlockPos, predicate: (param0: Holder<Structure>) => kotlin.Boolean): StructureStart;
-    getStructureWithPieceAt(blockPos: BlockPos, structures: Holder<T>[]): StructureStart;
+    getStructureWithPieceAt(blockPos: BlockPos, predicate: (param0: Holder<Structure>) => boolean): StructureStart;
+    getStructureWithPieceAt(blockPos: BlockPos, structures: Holder<Structure>[]): StructureStart;
     getStructureWithPieceAt(blockPos: BlockPos, structureTag: TagKey<Structure>): StructureStart;
     getStructureWithPieceAt(blockPos: BlockPos, structure: Structure): StructureStart;
     hasAnyStructureAt(pos: BlockPos): boolean;
@@ -38,6 +38,6 @@ export class StructureManager extends Object {
     setStartForStructure(pos: SectionPos, structure: Structure, start: StructureStart, chunk: StructureAccess): void;
     shouldGenerateStructures(): boolean;
     startsForStructure(pos: SectionPos, structure: Structure): StructureStart[];
-    startsForStructure(pos: ChunkPos, matcher: (param0: Structure) => kotlin.Boolean): StructureStart[];
+    startsForStructure(pos: ChunkPos, matcher: (param0: Structure) => boolean): StructureStart[];
     structureHasPieceAt(blockPos: BlockPos, structureStart: StructureStart): boolean;
 }

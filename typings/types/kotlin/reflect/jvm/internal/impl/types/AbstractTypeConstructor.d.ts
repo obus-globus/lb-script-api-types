@@ -10,10 +10,10 @@ export abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
     constructor(arg0: StorageManager)
     // private shouldReportCyclicScopeWithCompanionWarning: boolean;
     readonly supertypes: NotNullLazyValue<AbstractTypeConstructor$Supertypes>;
-    // private computeNeighbours(arg0: TypeConstructor, arg1: boolean): E[];
-    computeSupertypes(): E[];
+    // private computeNeighbours(arg0: TypeConstructor, arg1: boolean): KotlinType[];
+    computeSupertypes(): KotlinType[];
     defaultSupertypeIfEmpty(): KotlinType;
-    getAdditionalNeighboursInSupertypeGraph(arg0: boolean): E[];
+    getAdditionalNeighboursInSupertypeGraph(arg0: boolean): KotlinType[];
     getShouldReportCyclicScopeWithCompanionWarning(): boolean;
     getSupertypeLoopChecker(): SupertypeLoopChecker;
     getSupertypes(): KotlinType[];

@@ -16,7 +16,7 @@ export class EnumUtils extends Object {
     static getEnumMap(paramarg0: Class<Object>, paramarg1: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
     static getEnumMap(paramarg0: Class<Object>): { [key: string]: Object | null };
     static getEnumSystemProperty(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Object | null;
-    static getFirstEnum(paramarg0: Class<Object>, paramarg1: number, paramarg2: (param0: Object | null) => kotlin.Int, paramarg3: Object | null): Object | null;
+    static getFirstEnum(paramarg0: Class<Object>, paramarg1: number, paramarg2: (param0: Object | null) => number, paramarg3: Object | null): Object | null;
     static getFirstEnumIgnoreCase(paramarg0: Class<Object>, paramarg1: string, paramarg2: (param0: Object | null) => string, paramarg3: Object | null): Object | null;
     static isValidEnum(paramarg0: Class<Object>, paramarg1: string): boolean;
     static isValidEnumIgnoreCase(paramarg0: Class<Object>, paramarg1: string): boolean;

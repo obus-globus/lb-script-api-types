@@ -3,8 +3,8 @@ import type { Char2ReferenceFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ReferenceFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractChar2ReferenceFunction<V> implements Serializable {
-    constructor(arg0: (param0: V) => unknown)
-    // private function: (param0: V) => unknown;
+    constructor(arg0: (param0: string) => V)
+    // private function: (param0: string) => V;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

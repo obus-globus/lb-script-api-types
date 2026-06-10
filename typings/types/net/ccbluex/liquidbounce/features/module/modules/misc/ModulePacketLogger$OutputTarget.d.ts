@@ -11,7 +11,7 @@ export class ModulePacketLogger$OutputTarget extends Enum<ModulePacketLogger$Out
     static Companion: Tagged$Companion;
     static FILE: ModulePacketLogger$OutputTarget;
     static getEntries(): ModulePacketLogger$OutputTarget[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModulePacketLogger$OutputTarget;

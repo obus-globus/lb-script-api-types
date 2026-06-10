@@ -31,8 +31,8 @@ export class EntitySection<T extends EntityAccess> extends Object implements Pos
     // private storage: T[];
     add(entity: T): void;
     getEntities(): Stream<T>;
-    getEntities(type: EntityTypeTest<T, U>, bb: AABB, consumer: (param0: U) => net.minecraft.util.AbortableIterationConsumer.Continuation): AbortableIterationConsumer$Continuation;
-    getEntities(bb: AABB, entities: (param0: T) => net.minecraft.util.AbortableIterationConsumer.Continuation): AbortableIterationConsumer$Continuation;
+    getEntities<U extends T>(type: EntityTypeTest<T, U>, bb: AABB, consumer: (param0: U) => AbortableIterationConsumer$Continuation): AbortableIterationConsumer$Continuation;
+    getEntities(bb: AABB, entities: (param0: T) => AbortableIterationConsumer$Continuation): AbortableIterationConsumer$Continuation;
     getStatus(): Visibility;
     isEmpty(): boolean;
     lithium$addListener(arg0: SectionedEntityMovementTracker<EntityAccess>): void;

@@ -7,7 +7,7 @@ export class InputStringGenerator$LotteryBox extends Object implements Iterator<
     // private choices: number[];
     // private nChoices: number;
     // private rng: Random;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
 }

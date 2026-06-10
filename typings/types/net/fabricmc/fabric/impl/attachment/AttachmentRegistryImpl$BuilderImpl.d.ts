@@ -14,11 +14,11 @@ export class AttachmentRegistryImpl$BuilderImpl<A extends Object | number | stri
     // private maxSyncSize: number;
     // private persistenceCodec: Codec<A>;
     // private streamCodec: StreamCodec<RegistryFriendlyByteBuf, A>;
-    // private syncPredicate: (param0: Object | null, param1: Object | null) => kotlin.Boolean;
+    // private syncPredicate: (param0: Object | null, param1: Object | null) => boolean;
     buildAndRegister(arg0: Identifier): AttachmentType<A>;
     copyOnDeath(): AttachmentRegistry$Builder<A>;
     initializer(arg0: () => A): AttachmentRegistry$Builder<A>;
     persistent(arg0: Codec<A>): AttachmentRegistry$Builder<A>;
-    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => kotlin.Boolean): AttachmentRegistry$Builder<A>;
-    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => kotlin.Boolean, arg2: number): AttachmentRegistry$Builder<A>;
+    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => boolean): AttachmentRegistry$Builder<A>;
+    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => boolean, arg2: number): AttachmentRegistry$Builder<A>;
 }

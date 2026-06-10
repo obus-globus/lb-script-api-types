@@ -13,5 +13,5 @@ export class ComponentArgument extends ParserBasedArgument<Component> {
     static getResolvedComponent(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramcontentEntity: Entity): Component;
     static textComponent(paramcontext: CommandBuildContext): ComponentArgument;
     private constructor(registries: HolderLookup$Provider)
-    getExamples(): E[];
+    getExamples(): string[];
 }

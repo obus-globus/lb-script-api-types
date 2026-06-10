@@ -11,7 +11,7 @@ export class TypedOptic$Element<S extends Object | number | string | boolean, T 
     // private tType: Type<T>;
     aType(): Type<A>;
     bType(): Type<B>;
-    castOuterUnchecked(arg0: Type<S2>, arg1: Type<T2>): TypedOptic$Element<S2, T2, A, B>;
+    castOuterUnchecked<S2 extends Object | number | string | boolean, T2 extends Object | number | string | boolean>(arg0: Type<S2>, arg1: Type<T2>): TypedOptic$Element<S2, T2, A, B>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     optic(): Optic<Object, S, T, A, B>;

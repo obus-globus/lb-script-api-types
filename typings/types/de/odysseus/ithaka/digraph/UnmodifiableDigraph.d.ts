@@ -11,5 +11,5 @@ export class UnmodifiableDigraph<V extends Object | number | string | boolean> e
     put(arg0: V, arg1: V, arg2: number): OptionalInt;
     remove(arg0: V): boolean;
     remove(arg0: V, arg1: V): OptionalInt;
-    removeAll(arg0: E[]): void;
+    removeAll(arg0: V[]): void;
 }

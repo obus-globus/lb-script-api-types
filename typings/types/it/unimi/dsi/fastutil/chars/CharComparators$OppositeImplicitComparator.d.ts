@@ -7,15 +7,15 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharComparators$OppositeImplicitComparator extends Object implements CharComparator, Serializable {
-    static comparing(paramarg0: (param0: Object | null) => unknown): (param0: string, param1: string) => kotlin.Int;
-    static comparing(paramarg0: (param0: Object | null) => unknown, paramarg1: (param0: Object | null) => kotlin.Boolean): (param0: string, param1: string) => kotlin.Int;
-    static comparingDouble(paramarg0: (param0: string) => kotlin.Double): (param0: string, param1: string) => kotlin.Int;
-    static comparingInt(paramarg0: (param0: string) => kotlin.Int): (param0: string, param1: string) => kotlin.Int;
-    static comparingLong(paramarg0: (param0: string) => kotlin.Long): (param0: string, param1: string) => kotlin.Int;
+    static comparing(paramarg0: (param0: string) => Object | null): (param0: string, param1: string) => number;
+    static comparing(paramarg0: (param0: string) => Object | null, paramarg1: (param0: Object) => boolean): (param0: string, param1: string) => number;
+    static comparingDouble(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
+    static comparingInt(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
+    static comparingLong(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
     constructor()
     compare(arg0: string, arg1: string): number;
     // private readResolve(): Object;
-    reversed(): (param0: string, param1: string) => kotlin.Int;
-    thenComparing(arg0: (param0: string, param1: string) => kotlin.Int): (param0: string, param1: string) => kotlin.Int;
-    thenComparing(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    reversed(): (param0: string, param1: string) => number;
+    thenComparing(arg0: (param0: string, param1: string) => number): (param0: string, param1: string) => number;
+    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
 }

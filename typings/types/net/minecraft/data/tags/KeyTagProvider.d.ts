@@ -10,8 +10,8 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export abstract class KeyTagProvider<T extends Object | number | string | boolean> extends TagsProvider<T> {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     constructor(output: PackOutput, registryKey: ResourceKey<T[]>, lookupProvider: CompletableFuture<HolderLookup$Provider>)
     tag(tag: TagKey<T>): TagAppender<ResourceKey<T>, T>;

@@ -5,6 +5,7 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
+import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { BlockPredicate } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicate.d.ts'
 import type { BlockPredicateType } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicateType.d.ts'
@@ -14,8 +15,8 @@ export class MatchingBlocksPredicate extends StateTestingPredicate {
     static CODEC: MapCodec<MatchingBlocksPredicate>;
     static ONLY_IN_AIR_OR_WATER_PREDICATE: BlockPredicate;
     static ONLY_IN_AIR_PREDICATE: BlockPredicate;
-    constructor(offset: Vec3i, blocks: Holder<T>[])
-    // private blocks: Holder<T>[];
+    constructor(offset: Vec3i, blocks: Holder<Block>[])
+    // private blocks: Holder<Block>[];
     test(level: WorldGenLevel, origin: BlockPos): boolean;
     test(state: BlockState): boolean;
     type(): BlockPredicateType<Object>;

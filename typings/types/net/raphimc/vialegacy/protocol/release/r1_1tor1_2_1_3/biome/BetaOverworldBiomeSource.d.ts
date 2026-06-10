@@ -7,7 +7,7 @@ import type { MCVersion } from '../../../../../../../com/seedfinding/mccore/vers
 import type { BetaBiome } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_1tor1_2_1_3/biome/BetaBiome.d.ts'
 import type { BetaOctaveSimplexNoiseSampler } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_1tor1_2_1_3/biome/BetaOctaveSimplexNoiseSampler.d.ts'
 export class BetaOverworldBiomeSource extends BiomeSource {
-    static factory(paramarg0: Dimension): (param0: MCVersion, param1: number) => com.seedfinding.mcbiome.source.BiomeSource;
+    static factory(paramarg0: Dimension): (param0: MCVersion, param1: number) => BiomeSource;
     static of(paramarg0: Dimension, paramarg1: MCVersion, paramarg2: number): BiomeSource;
     constructor(arg0: number)
     // private biomeNoise: BetaOctaveSimplexNoiseSampler;

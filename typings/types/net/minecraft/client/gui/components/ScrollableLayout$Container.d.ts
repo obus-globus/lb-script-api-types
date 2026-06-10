@@ -4,6 +4,7 @@ import type { AbstractContainerWidget } from '../../../../../net/minecraft/clien
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { AbstractWidget } from '../../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
+import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { NarrationElementOutput } from '../../../../../net/minecraft/client/gui/narration/NarrationElementOutput.d.ts'
 import type { ScreenDirection } from '../../../../../net/minecraft/client/gui/navigation/ScreenDirection.d.ts'
 import type { ScreenRectangle } from '../../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
@@ -22,7 +23,7 @@ export class ScrollableLayout$Container extends AbstractContainerWidget {
     contentHeight(): number;
     extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
-    getNarratables(): E[];
+    getNarratables(): NarratableEntry[];
     // private scrollbarReserve(): number;
     setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;

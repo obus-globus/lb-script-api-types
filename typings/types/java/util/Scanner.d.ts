@@ -84,7 +84,7 @@ export class Scanner extends Object implements Closeable, Iterator<string> {
     findWithinHorizon(arg0: Pattern, arg1: number): string;
     findWithinHorizon(arg0: string, arg1: number): string;
     // private floatPattern(): Pattern;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     // private getCachedResult(): string;
     // private getCompleteTokenInBuffer(arg0: Pattern): string;
     hasNext(): boolean;

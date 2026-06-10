@@ -40,7 +40,7 @@ export class TestV8Builtins$TestV8 extends Enum<TestV8Builtins$TestV8> implement
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): TestV8Builtins$TestV8;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

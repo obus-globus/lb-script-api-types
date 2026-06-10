@@ -5,7 +5,7 @@ export class CustomUniformFixedInputUniformsHolder extends Object {
     constructor(arg0: { [key: string]: CachedUniform })
     // private inputVariables: { [key: string]: CachedUniform };
     containsKey(arg0: string): boolean;
-    getAll(): E[];
+    getAll(): CachedUniform[];
     getType(arg0: string): Type;
     getUniform(arg0: string): CachedUniform;
     updateAll(): void;

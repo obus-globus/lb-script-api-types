@@ -14,14 +14,14 @@ export class DoubleSpliterators$SingletonSpliterator extends Object implements D
     static SORTED: number;
     static SUBSIZED: number;
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: number, param1: number) => kotlin.Int)
-    readonly comparator: (param0: number, param1: number) => kotlin.Int;
+    constructor(arg0: number, arg1: (param0: number, param1: number) => number)
+    readonly comparator: (param0: number, param1: number) => number;
     // private consumed: boolean;
     // private element: number;
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
+    getComparator(): (param0: number, param1: number) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): DoubleSpliterator;

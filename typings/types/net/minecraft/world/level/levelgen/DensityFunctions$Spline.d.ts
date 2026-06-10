@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { CubicSpline } from '../../../../../net/minecraft/util/CubicSpline.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { DensityFunction } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
@@ -10,7 +11,7 @@ import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world
 import type { DensityFunctions$Spline$Coordinate } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Spline$Coordinate.d.ts'
 import type { DensityFunctions$Spline$Point } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Spline$Point.d.ts'
 export class DensityFunctions$Spline extends Record implements DensityFunction {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<DensityFunction>>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$Spline>;
     static DIRECT_CODEC: Codec<DensityFunction>;
     static HOLDER_HELPER_CODEC: Codec<DensityFunction>;

@@ -11,8 +11,8 @@ export class TextUtils extends Object {
     static replace(paramarg0: TextComponent, paramarg1: string, paramarg2: (param0: TextComponent) => TextComponent): TextComponent;
     static replace(paramarg0: TextComponent, paramarg1: (param0: TextComponent) => TextComponent): TextComponent;
     static replaceRGBColors(paramarg0: TextComponent): TextComponent;
-    static setTranslator(paramarg0: TextComponent, paramarg1: (param0: string) => kotlin.String): void;
-    static setTranslator(paramarg0: TextComponent, paramarg1: (param0: string) => kotlin.String, paramarg2: (param0: string) => kotlin.String): void;
+    static setTranslator(paramarg0: TextComponent, paramarg1: (param0: string) => string): void;
+    static setTranslator(paramarg0: TextComponent, paramarg1: (param0: string) => string, paramarg2: (param0: string) => string): void;
     static split(paramarg0: TextComponent, paramarg1: string, paramarg2: boolean): (Object | null)[];
     constructor()
 }

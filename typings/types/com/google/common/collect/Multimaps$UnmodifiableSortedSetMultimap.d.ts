@@ -8,5 +8,5 @@ export class Multimaps$UnmodifiableSortedSetMultimap<K extends Object | number |
     get(key: K): V[];
     removeAll(key: Object): V[];
     replaceValues(key: K, values: V[]): V[];
-    valueComparator(): (param0: V) => kotlin.Boolean;
+    valueComparator(): (param0: Object) => boolean;
 }

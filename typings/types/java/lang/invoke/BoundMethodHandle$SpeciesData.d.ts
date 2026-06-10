@@ -11,7 +11,7 @@ export class BoundMethodHandle$SpeciesData extends ClassSpecializer$SpeciesData 
     deriveClassName(): string;
     deriveFieldTypes(arg0: string): Class<Object>[];
     deriveTransformHelper(arg0: MemberName, arg1: number): MethodHandle;
-    deriveTransformHelperArguments(arg0: MemberName, arg1: number, arg2: X[], arg3: X[]): X[];
+    deriveTransformHelperArguments<X extends Object | number | string | boolean>(arg0: MemberName, arg1: number, arg2: X[], arg3: X[]): X[];
     deriveTypeString(): string;
     extendWith(arg0: LambdaForm$BasicType): BoundMethodHandle$SpeciesData;
     // private verifyTHAargs(arg0: MemberName, arg1: number, arg2: (Object | null)[], arg3: (Object | null)[]): boolean;

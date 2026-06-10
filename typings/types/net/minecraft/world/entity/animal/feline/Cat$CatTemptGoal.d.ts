@@ -4,7 +4,7 @@ import type { Cat } from '../../../../../../net/minecraft/world/entity/animal/fe
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class Cat$CatTemptGoal extends TemptGoal {
-    constructor(mob: Cat, speedModifier: number, items: (param0: ItemStack) => kotlin.Boolean, canScare: boolean)
+    constructor(mob: Cat, speedModifier: number, items: (param0: ItemStack) => boolean, canScare: boolean)
     // private cat: Cat;
     // private selectedPlayer: Player;
     canScare(): boolean;

@@ -7,6 +7,6 @@ import type { BlockState } from '../../../../net/minecraft/world/level/block/sta
 export class EnterBlockTrigger extends SimpleCriterionTrigger<EnterBlockTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<EnterBlockTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: EnterBlockTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: EnterBlockTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, state: BlockState): void;
 }

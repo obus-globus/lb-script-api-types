@@ -26,7 +26,7 @@ export class ThreadContext extends Object {
     static remove(paramkey: string): void;
     static removeAll(paramkeys: string[]): void;
     static removeStack(): void;
-    static setStack(paramstack: E[]): void;
+    static setStack(paramstack: string[]): void;
     static trim(paramdepth: number): void;
     private constructor()
 }

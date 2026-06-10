@@ -9,7 +9,7 @@ export class Constructor extends SafeConstructor {
     static undefinedConstructor: SafeConstructor$ConstructUndefined;
     constructor(arg0: LoaderOptions)
     constructor(arg0: TypeDescription, arg1: LoaderOptions)
-    constructor(arg0: TypeDescription, arg1: E[], arg2: LoaderOptions)
+    constructor(arg0: TypeDescription, arg1: TypeDescription[], arg2: LoaderOptions)
     constructor(arg0: Class<Object>, arg1: LoaderOptions)
     constructor(arg0: string, arg1: LoaderOptions)
     getClassForName(arg0: string): Class<Object>;

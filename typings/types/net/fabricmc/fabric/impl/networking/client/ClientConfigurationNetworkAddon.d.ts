@@ -10,7 +10,7 @@ import type { ClientConfigurationPacketListenerImpl } from '../../../../../../ne
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { CustomPacketPayload } from '../../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class ClientConfigurationNetworkAddon extends ClientCommonNetworkAddon<(param0: Object, param1: Object | null) => void, ClientConfigurationPacketListenerImpl> {
+export class ClientConfigurationNetworkAddon extends ClientCommonNetworkAddon<(param0: Object, param1: ClientConfigurationNetworking$Context) => void, ClientConfigurationPacketListenerImpl> {
     constructor(arg0: ClientConfigurationPacketListenerImpl, arg1: Minecraft)
     // private context: ClientConfigurationNetworkAddon$ContextImpl;
     // private hasStarted: boolean;
@@ -26,6 +26,6 @@ export class ClientConfigurationNetworkAddon extends ClientCommonNetworkAddon<(p
     invokeUnregisterEvent(arg0: Identifier[]): void;
     isOnReceiveThread(): boolean;
     onServerReady(): void;
-    receive(arg0: (param0: Object | null, param1: ClientConfigurationNetworking$Context) => void, arg1: CustomPacketPayload): void;
+    receive(arg0: (param0: CustomPacketPayload | null, param1: ClientConfigurationNetworking$Context) => void, arg1: CustomPacketPayload): void;
     receiveRegistration(arg0: boolean, arg1: RegistrationPayload): void;
 }

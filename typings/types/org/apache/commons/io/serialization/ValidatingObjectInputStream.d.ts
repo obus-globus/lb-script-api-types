@@ -48,13 +48,13 @@ export class ValidatingObjectInputStream extends ObjectInputStream {
     accept(arg0: Pattern): ValidatingObjectInputStream;
     accept(arg0: Class<Object>[]): ValidatingObjectInputStream;
     accept(arg0: string[]): ValidatingObjectInputStream;
-    accept(arg0: (param0: string) => kotlin.Boolean): ValidatingObjectInputStream;
+    accept(arg0: (param0: string) => boolean): ValidatingObjectInputStream;
     // private checkClassName(arg0: string): void;
     invalidClassNameFound(arg0: string): void;
     readObjectCast<T extends Object | number | string | boolean>(): T;
     reject(arg0: Pattern): ValidatingObjectInputStream;
     reject(arg0: Class<Object>[]): ValidatingObjectInputStream;
     reject(arg0: string[]): ValidatingObjectInputStream;
-    reject(arg0: (param0: string) => kotlin.Boolean): ValidatingObjectInputStream;
+    reject(arg0: (param0: string) => boolean): ValidatingObjectInputStream;
     resolveClass(arg0: ObjectStreamClass): Class<Object>;
 }

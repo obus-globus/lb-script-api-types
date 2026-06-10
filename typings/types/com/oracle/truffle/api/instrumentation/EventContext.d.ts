@@ -27,7 +27,7 @@ export class EventContext extends Object {
     // private isValidNodeObject(obj: Object): boolean;
     // private isValidTaggedNodeObject(obj: Object): boolean;
     lookupExecutionEventNode(binding: EventBinding<ExecutionEventNodeFactory>): ExecutionEventNode;
-    lookupExecutionEventNodes(bindings: E[]): Iterator<ExecutionEventNode>;
+    lookupExecutionEventNodes(bindings: EventBinding<ExecutionEventNodeFactory>[]): Iterator<ExecutionEventNode>;
     toString(): string;
     validEventContextOnLazyUpdate(): boolean;
     validEventContextOnWrapperInsert(): boolean;

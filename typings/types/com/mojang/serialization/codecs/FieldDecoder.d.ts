@@ -9,9 +9,9 @@ export class FieldDecoder<A extends Object | number | string | boolean> extends 
     constructor(arg0: string, arg1: Decoder<A>)
     // private elementCodec: Decoder<A>;
     // private name: string;
-    decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<A>;
+    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<A>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    keys(arg0: DynamicOps<T>): Stream<T>;
+    keys<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): Stream<T>;
     toString(): string;
 }

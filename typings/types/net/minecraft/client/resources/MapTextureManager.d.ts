@@ -15,7 +15,7 @@ export class MapTextureManager extends Object implements AutoCloseable, IMapText
     // private textureManager: TextureManager;
     close(): void;
     // private getOrCreateMapInstance(id: MapId, data: MapItemSavedData): MapTextureManager$MapInstance;
-    immediatelyFast$getAllMapAtlasTextures(): E[];
+    immediatelyFast$getAllMapAtlasTextures(): (Object | null)[];
     immediatelyFast$getAtlasMapping(arg0: number): number;
     immediatelyFast$getMapAtlasTexture(arg0: number): MapAtlasTexture;
     prepareMapTexture(id: MapId, data: MapItemSavedData): Identifier;

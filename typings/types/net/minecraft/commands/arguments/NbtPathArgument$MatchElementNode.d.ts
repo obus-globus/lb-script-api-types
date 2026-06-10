@@ -8,7 +8,7 @@ import type { Tag } from '../../../../net/minecraft/nbt/Tag.d.ts'
 export class NbtPathArgument$MatchElementNode extends Object implements NbtPathArgument$Node {
     constructor(pattern: CompoundTag)
     // private pattern: CompoundTag;
-    // private predicate: (param0: Tag) => kotlin.Boolean;
+    // private predicate: (param0: Tag) => boolean;
     collect(tags: Tag[], collector: (param0: Tag, param1: Tag[]) => void): Tag[];
     createPreferredParentTag(): Tag;
     get(tags: Tag[]): Tag[];

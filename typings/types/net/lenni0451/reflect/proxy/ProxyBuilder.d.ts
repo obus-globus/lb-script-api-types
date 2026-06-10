@@ -15,7 +15,7 @@ export class ProxyBuilder extends Object {
     readonly classDefiner: ProxyClassDefiner;
     readonly interfaces: Class<Object>[];
     readonly invocationHandler: InvocationHandler;
-    readonly methodFilter: (param0: Method) => kotlin.Boolean;
+    readonly methodFilter: (param0: Method) => boolean;
     readonly methodMapper: (param0: Method) => Method;
     // private proxyClass: Class<Object>;
     readonly superClass: Class<Object>;
@@ -30,14 +30,14 @@ export class ProxyBuilder extends Object {
     getClassDefiner(): ProxyClassDefiner;
     getInterfaces(): Class<Object>[];
     getInvocationHandler(): InvocationHandler;
-    getMethodFilter(): (param0: Method) => kotlin.Boolean;
+    getMethodFilter(): (param0: Method) => boolean;
     getMethodMapper(): (param0: Method) => Method;
     getSuperClass(): Class<Object>;
     // private reset(): void;
     setClassDefiner(arg0: ProxyClassDefiner): ProxyBuilder;
     setInterfaces(arg0: Class<Object>[]): ProxyBuilder;
     setInvocationHandler(arg0: InvocationHandler): ProxyBuilder;
-    setMethodFilter(arg0: (param0: Method) => kotlin.Boolean): ProxyBuilder;
+    setMethodFilter(arg0: (param0: Method) => boolean): ProxyBuilder;
     setMethodMapper(arg0: (param0: Method) => Method): ProxyBuilder;
     setSuperClass(arg0: Class<Object>): ProxyBuilder;
 }

@@ -5,7 +5,7 @@ import type { MeshDefinition } from '../../../../../../net/minecraft/client/mode
 import type { MeshTransformer } from '../../../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 import type { CatRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/CatRenderState.d.ts'
 export class AdultCatModel extends AdultFelineModel<CatRenderState> {
-    static CAT_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static CAT_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static COLLAR_DEFORMATION: CubeDeformation;
     static MODEL_Y_OFFSET: number;
     static createBodyMesh(paramg: CubeDeformation): MeshDefinition;

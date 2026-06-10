@@ -12,8 +12,8 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotFastThreadLocals extends Object {
     static cleanup(paramthreadLocals: (Object | null)[]): void;
-    static createContextReference(paramlanguage: Class<Object>): TruffleLanguage$ContextReference<Object>;
-    static createLanguageReference(paramlanguage: Class<Object>): TruffleLanguage$LanguageReference<Object>;
+    static createContextReference(paramlanguage: Class<TruffleLanguage<Object>>): TruffleLanguage$ContextReference<Object>;
+    static createLanguageReference(paramlanguage: Class<TruffleLanguage<Object>>): TruffleLanguage$LanguageReference<Object>;
     static enter(paramthreadInfo: PolyglotThreadInfo): (Object | null)[];
     static enterLanguage(paramlanguage: PolyglotLanguageInstance): Object;
     static enterLayer(paramroot: RootNode): Object;

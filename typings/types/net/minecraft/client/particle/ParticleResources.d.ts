@@ -7,6 +7,8 @@ import type { FabricResourceReloader } from '../../../../net/fabricmc/fabric/imp
 import type { ParticleProvider } from '../../../../net/minecraft/client/particle/ParticleProvider.d.ts'
 import type { ParticleResources$MutableSpriteSet } from '../../../../net/minecraft/client/particle/ParticleResources$MutableSpriteSet.d.ts'
 import type { ParticleResources$SpriteParticleRegistration } from '../../../../net/minecraft/client/particle/ParticleResources$SpriteParticleRegistration.d.ts'
+import type { SpriteSet } from '../../../../net/minecraft/client/particle/SpriteSet.d.ts'
+import type { ParticleOptions } from '../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
 import type { ParticleType } from '../../../../net/minecraft/core/particles/ParticleType.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { PreparableReloadListener } from '../../../../net/minecraft/server/packs/resources/PreparableReloadListener.d.ts'
@@ -25,8 +27,8 @@ export class ParticleResources extends Object implements FabricResourceReloader,
     // private loadParticleDescription(id: Identifier, resource: Resource): Optional<Identifier[]>;
     onReload(onReload: () => void): void;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    // private register(type: ParticleType<T>, provider: ParticleProvider<T>): void;
-    // private register(type: ParticleType<T>, provider: (param0: T) => net.minecraft.client.particle.ParticleProvider<unknown>): void;
+    // private register<T extends ParticleOptions>(type: ParticleType<T>, provider: ParticleProvider<T>): void;
+    // private register<T extends ParticleOptions>(type: ParticleType<T>, provider: (param0: SpriteSet) => ParticleProvider<T>): void;
     // private registerProviders(): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
 }

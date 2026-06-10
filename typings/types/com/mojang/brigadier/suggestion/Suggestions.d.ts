@@ -3,9 +3,9 @@ import type { Suggestion } from '../../../../com/mojang/brigadier/suggestion/Sug
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Suggestions extends Object {
-    static create(paramarg0: string, paramarg1: E[]): Suggestions;
+    static create(paramarg0: string, paramarg1: Suggestion[]): Suggestions;
     static empty(): CompletableFuture<Suggestions>;
-    static merge(paramarg0: string, paramarg1: E[]): Suggestions;
+    static merge(paramarg0: string, paramarg1: Suggestions[]): Suggestions;
     constructor(arg0: StringRange, arg1: Suggestion[])
     readonly range: StringRange;
     // private suggestions: Suggestion[];

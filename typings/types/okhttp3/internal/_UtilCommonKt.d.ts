@@ -22,17 +22,17 @@ export class _UtilCommonKt extends Object {
     static deleteIfExists(paramarg0: FileSystem, paramarg1: Path): void;
     static delimiterOffset(paramarg0: string, paramarg1: string, paramarg2: number, paramarg3: number): number;
     static delimiterOffset(paramarg0: string, paramarg1: string, paramarg2: number, paramarg3: number): number;
-    static filterList(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => boolean): (Object | null)[];
+    static filterList(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): (Object | null)[];
     static getUNICODE_BOMS(): (Object | null)[];
-    static hasIntersection(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: (param0: Object | null) => kotlin.Boolean): boolean;
+    static hasIntersection(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: (param0: Object) => boolean): boolean;
     static ignoreIoExceptions(paramarg0: () => void): void;
-    static indexOf(paramarg0: (Object | null)[], paramarg1: string, paramarg2: (param0: string) => kotlin.Boolean): number;
+    static indexOf(paramarg0: (Object | null)[], paramarg1: string, paramarg2: (param0: Object) => boolean): number;
     static indexOfControlOrNonAscii(paramarg0: string): number;
     static indexOfFirstNonAsciiWhitespace(paramarg0: string, paramarg1: number, paramarg2: number): number;
     static indexOfLastNonAsciiWhitespace(paramarg0: string, paramarg1: number, paramarg2: number): number;
     static indexOfNonWhitespace(paramarg0: string, paramarg1: number): number;
     static interleave(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): (Object | null)[];
-    static intersect(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: (param0: Object | null) => kotlin.Boolean): (Object | null)[];
+    static intersect(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: (param0: Object) => boolean): (Object | null)[];
     static isCivilized(paramarg0: FileSystem, paramarg1: Path): boolean;
     static isSensitiveHeader(paramarg0: string): boolean;
     static parseHexDigit(paramarg0: string): number;
@@ -41,6 +41,6 @@ export class _UtilCommonKt extends Object {
     static toLongOrDefault(paramarg0: string, paramarg1: number): number;
     static toNonNegativeInt(paramarg0: string, paramarg1: number): number;
     static trimSubstring(paramarg0: string, paramarg1: number, paramarg2: number): string;
-    static withSuppressed(paramarg0: Exception, paramarg1: (Object | null)[]): Throwable;
+    static withSuppressed(paramarg0: Exception, paramarg1: Exception[]): Throwable;
     static writeMedium(paramarg0: BufferedSink, paramarg1: number): void;
 }

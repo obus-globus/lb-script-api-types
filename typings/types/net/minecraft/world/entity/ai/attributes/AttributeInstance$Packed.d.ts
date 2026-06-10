@@ -6,7 +6,7 @@ import type { Attribute } from '../../../../../../net/minecraft/world/entity/ai/
 import type { AttributeModifier } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 export class AttributeInstance$Packed extends Record {
     static CODEC: Codec<AttributeInstance$Packed>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<AttributeInstance$Packed[]>;
     // private attribute: Holder<Attribute>;
     // private baseValue: number;
     // private modifiers: AttributeModifier[];

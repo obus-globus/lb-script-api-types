@@ -1,5 +1,6 @@
 import type { PrintStream } from '../../../../../../../java/io/PrintStream.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CommandLine$Help$Ansi } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$Ansi.d.ts'
 import type { CommandLine$Help$ColorScheme } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$ColorScheme.d.ts'
@@ -14,8 +15,8 @@ export class CommandLine extends Object {
     static call(paramcallable: Object | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, paramargs: (Object | null)[]): Object | null;
     static populateCommand(paramcommand: Object | null, paramargs: (Object | null)[]): Object | null;
     static printHelpIfRequested(paramparsedCommands: CommandLine[], paramout: PrintStream, paramansi: CommandLine$Help$Ansi): boolean;
-    static run(paramrunnable: Object | null, paramout: PrintStream, paramargs: (Object | null)[]): void;
-    static run(paramrunnable: Object | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, paramargs: (Object | null)[]): void;
+    static run(paramrunnable: (() => void) | null, paramout: PrintStream, paramargs: (Object | null)[]): void;
+    static run(paramrunnable: (() => void) | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, paramargs: (Object | null)[]): void;
     static usage(paramcommand: Object, paramout: PrintStream): void;
     static usage(paramcommand: Object, paramout: PrintStream, paramansi: CommandLine$Help$Ansi): void;
     static usage(paramcommand: Object, paramout: PrintStream, paramcolorScheme: CommandLine$Help$ColorScheme): void;
@@ -47,7 +48,7 @@ export class CommandLine extends Object {
     printVersionHelp(out: PrintStream): void;
     printVersionHelp(out: PrintStream, ansi: CommandLine$Help$Ansi): void;
     printVersionHelp(out: PrintStream, ansi: CommandLine$Help$Ansi, params: Object[]): void;
-    registerConverter(cls: Class<K>, converter: CommandLine$ITypeConverter<K>): CommandLine;
+    registerConverter<K extends Object | number | string | boolean>(cls: Class<K>, converter: CommandLine$ITypeConverter<K>): CommandLine;
     setCommandName(commandName: string): CommandLine;
     setOverwrittenOptionsAllowed(newValue: boolean): CommandLine;
     setSeparator(separator: string): CommandLine;

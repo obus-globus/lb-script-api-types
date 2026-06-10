@@ -4,7 +4,7 @@ import type { Registry } from '../../../../../../com/viaversion/viaversion/libs/
 import type { TagKey } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/TagKey.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TypedTagEntryList<T extends Object | number | string | boolean> extends Object {
-    static codec(paramarg0: Registry, paramarg1: Codec<Object>, paramarg2: boolean): Codec<Object>;
+    static codec(paramarg0: Registry, paramarg1: Codec<Object>, paramarg2: boolean): Codec<TypedTagEntryList<Object>>;
     constructor(arg0: TagKey)
     constructor(arg0: Holder<T>[])
     readonly entries: Holder<T>[];

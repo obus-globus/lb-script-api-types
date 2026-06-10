@@ -9,6 +9,7 @@ import type { ServerLevel } from '../../../../../net/minecraft/server/level/Serv
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { InteractionHand } from '../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { DamageSource } from '../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { DamageType } from '../../../../../net/minecraft/world/damagesource/DamageType.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { BlocksAttacks$DamageReduction } from '../../../../../net/minecraft/world/item/component/BlocksAttacks$DamageReduction.d.ts'
@@ -19,7 +20,7 @@ export class BlocksAttacks extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BlocksAttacks>;
     // private blockDelaySeconds: number;
     // private blockSound: Optional<Holder<SoundEvent>>;
-    // private bypassedBy: Optional<Holder<T>[]>;
+    // private bypassedBy: Optional<Holder<DamageType>[]>;
     // private damageReductions: BlocksAttacks$DamageReduction[];
     // private disableCooldownScale: number;
     // private disableSound: Optional<Holder<SoundEvent>>;
@@ -27,7 +28,7 @@ export class BlocksAttacks extends Record {
     blockDelaySeconds(): number;
     blockDelayTicks(): number;
     blockSound(): Optional<Holder<SoundEvent>>;
-    bypassedBy(): Optional<Holder<T>[]>;
+    bypassedBy(): Optional<Holder<DamageType>[]>;
     damageReductions(): BlocksAttacks$DamageReduction[];
     disable(level: ServerLevel, user: LivingEntity, baseSeconds: number, blockingWith: ItemStack): void;
     // private disableBlockingForTicks(baseSeconds: number): number;

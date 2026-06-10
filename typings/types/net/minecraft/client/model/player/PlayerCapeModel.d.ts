@@ -8,7 +8,7 @@ import type { PlayerModel } from '../../../../../net/minecraft/client/model/play
 import type { ArmorModelSet } from '../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { AvatarRenderState } from '../../../../../net/minecraft/client/renderer/entity/state/AvatarRenderState.d.ts'
 export class PlayerCapeModel extends PlayerModel {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

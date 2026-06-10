@@ -4,9 +4,9 @@ import type { Diagnostic } from '../../../../../org/graalvm/tools/lsp/server/typ
 import type { PublishDiagnosticsParams } from '../../../../../org/graalvm/tools/lsp/server/types/PublishDiagnosticsParams.d.ts'
 export class DiagnosticsNotification extends Exception {
     static create(paramuri: URI, paramdiagnostic: Diagnostic): DiagnosticsNotification;
-    constructor(paramsCollection: E[])
+    constructor(paramsCollection: PublishDiagnosticsParams[])
     constructor(paramsMap: Map<URI, Diagnostic[]>)
     constructor(diagnosticParams: PublishDiagnosticsParams)
-    // private paramsCollection: E[];
-    getDiagnosticParamsCollection(): E[];
+    // private paramsCollection: PublishDiagnosticsParams[];
+    getDiagnosticParamsCollection(): PublishDiagnosticsParams[];
 }

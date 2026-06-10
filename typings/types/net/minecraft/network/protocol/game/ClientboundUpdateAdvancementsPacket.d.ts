@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementProgress } from '../../../../../net/minecraft/advancements/AdvancementProgress.d.ts'
@@ -11,8 +12,8 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientboundUpdateAdvancementsPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAdvancementsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
-    constructor(reset: boolean, newAdvancements: E[], removedAdvancements: Identifier[], progress: Map<Identifier, AdvancementProgress>, showAdvancements: boolean)
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(reset: boolean, newAdvancements: AdvancementHolder[], removedAdvancements: Identifier[], progress: Map<Identifier, AdvancementProgress>, showAdvancements: boolean)
     private constructor(input: RegistryFriendlyByteBuf)
     readonly added: AdvancementHolder[];
     readonly progress: Map<Identifier, AdvancementProgress>;

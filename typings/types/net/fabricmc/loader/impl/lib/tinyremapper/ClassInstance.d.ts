@@ -38,13 +38,13 @@ export class ClassInstance extends Object implements TrClass {
     getClassVersion(): number;
     getContext(): TinyRemapper$MrjState;
     getEnvironment(): TrEnvironment;
-    getFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => kotlin.Boolean, arg4: E[]): E[];
+    getFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => boolean, arg4: TrField[]): TrField[];
     getInputTags(): InputTag[];
     getInterfaceNames0(): string[];
     getMember(arg0: TrMember$MemberType, arg1: string): MemberInstance;
-    getMembers(): E[];
-    getMethods(): E[];
-    getMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => kotlin.Boolean, arg4: E[]): E[];
+    getMembers(): MemberInstance[];
+    getMethods(): TrMethod[];
+    getMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => boolean, arg4: TrMethod[]): TrMethod[];
     getMrjOrigin(): ClassInstance;
     getMrjVersion(): number;
     getName(): string;
@@ -62,9 +62,9 @@ export class ClassInstance extends Object implements TrClass {
     propagate(arg0: TrMember$MemberType, arg1: string, arg2: string, arg3: string, arg4: TinyRemapper$Direction, arg5: boolean, arg6: boolean, arg7: boolean, arg8: ClassInstance[], arg9: ClassInstance[]): void;
     resolve(arg0: TrMember$MemberType, arg1: string): MemberInstance;
     // private resolveField(arg0: string): MemberInstance;
-    resolveFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => kotlin.Boolean, arg4: E[]): E[];
+    resolveFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => boolean, arg4: TrField[]): TrField[];
     // private resolveMethod(arg0: string): MemberInstance;
-    resolveMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => kotlin.Boolean, arg4: E[]): E[];
+    resolveMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => boolean, arg4: TrMethod[]): TrMethod[];
     setContext(arg0: TinyRemapper$MrjState): void;
     toString(): string;
 }

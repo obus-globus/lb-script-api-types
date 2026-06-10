@@ -5,5 +5,5 @@ export class ArrayListMultimap<K extends Object | number | string | boolean, V e
     private constructor()
     // private expectedValuesPerKey: number;
     createCollection(): V[];
-    createCollection(arg0: K): E[];
+    createCollection(arg0: K): V[];
 }

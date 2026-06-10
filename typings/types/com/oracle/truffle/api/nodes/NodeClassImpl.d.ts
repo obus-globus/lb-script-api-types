@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 export class NodeClassImpl extends NodeClass {
     static get(paramnode: Node): NodeClass;
-    static get(paramclazz: Class<Object>): NodeClass;
+    static get(paramclazz: Class<Node>): NodeClass;
     constructor(clazz: Class<Node>)
     // private clazz: Class<Node>;
     // private fields: NodeClassImpl$NodeFieldData[];

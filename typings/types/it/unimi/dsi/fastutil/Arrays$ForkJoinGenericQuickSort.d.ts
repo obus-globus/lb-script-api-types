@@ -18,11 +18,11 @@ export class Arrays$ForkJoinGenericQuickSort extends RecursiveAction {
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: E[]): E[];
+    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
-    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => kotlin.Int, arg3: (param0: number, param1: number) => void)
-    // private comp: (param0: number, param1: number) => kotlin.Int;
+    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => number, arg3: (param0: number, param1: number) => void)
+    // private comp: (param0: number, param1: number) => number;
     // private from: number;
     // private swapper: (param0: number, param1: number) => void;
     // private to: number;

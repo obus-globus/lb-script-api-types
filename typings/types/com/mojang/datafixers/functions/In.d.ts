@@ -9,7 +9,7 @@ export class In<A extends Object | number | string | boolean> extends PointFree<
     constructor(arg0: RecursivePoint$RecursivePointType<A>)
     // private type: RecursivePoint$RecursivePointType<A>;
     equals(arg0: Object | null): boolean;
-    eval(): (param0: DynamicOps<Object>) => (param0: A) => A;
+    eval(): (param0: DynamicOps<Object>) => Function<A, A>;
     hashCode(): number;
     toString(): string;
     toString(arg0: number): string;

@@ -62,7 +62,7 @@ export class DatePrototypeBuiltins$DatePrototype extends Enum<DatePrototypeBuilt
     // private isUTC: boolean;
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): DatePrototypeBuiltins$DatePrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

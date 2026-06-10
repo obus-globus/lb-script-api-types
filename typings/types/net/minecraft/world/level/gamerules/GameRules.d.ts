@@ -66,7 +66,7 @@ export class GameRules extends Object {
     static TNT_EXPLOSION_DROP_DECAY: GameRule<boolean>;
     static UNIVERSAL_ANGER: GameRule<boolean>;
     static WATER_SOURCE_CONVERSION: GameRule<boolean>;
-    static bootstrap(paramregistry: (Object | null)[]): GameRule<Object>;
+    static bootstrap(paramregistry: GameRule<Object>[]): GameRule<Object>;
     static codec(paramenabledFeatures: FeatureFlagSet): Codec<GameRules>;
     constructor(rules: GameRule<Object>[])
     constructor(enabledFeatures: FeatureFlagSet)
@@ -75,10 +75,10 @@ export class GameRules extends Object {
     availableRules(): Stream<GameRule<Object>>;
     copy(enabledFeatures: FeatureFlagSet): GameRules;
     get<T extends Object | number | string | boolean>(gameRule: GameRule<T>): T;
-    getAsString(gameRule: GameRule<T>): string;
+    getAsString<T extends Object | number | string | boolean>(gameRule: GameRule<T>): string;
     set<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T, server: MinecraftServer): void;
     setAll(gameRulesMap: GameRuleMap, server: MinecraftServer): void;
     setAll(other: GameRules, server: MinecraftServer): void;
-    // private setFromOther(gameRulesMap: GameRuleMap, gameRule: GameRule<T>, server: MinecraftServer): void;
+    // private setFromOther<T extends Object | number | string | boolean>(gameRulesMap: GameRuleMap, gameRule: GameRule<T>, server: MinecraftServer): void;
     visitGameRuleTypes(visitor: GameRuleTypeVisitor): void;
 }

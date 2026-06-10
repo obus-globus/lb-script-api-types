@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Union } from '../../../../../com/sun/jna/Union.d.ts'
 import type { Wincon$KEY_EVENT_RECORD } from '../../../../../com/sun/jna/platform/win32/Wincon$KEY_EVENT_RECORD.d.ts'
 import type { Wincon$MOUSE_EVENT_RECORD } from '../../../../../com/sun/jna/platform/win32/Wincon$MOUSE_EVENT_RECORD.d.ts'
@@ -16,8 +17,8 @@ export class Wincon$INPUT_RECORD$Event extends Union {
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     KeyEvent: Wincon$KEY_EVENT_RECORD;
     MouseEvent: Wincon$MOUSE_EVENT_RECORD;

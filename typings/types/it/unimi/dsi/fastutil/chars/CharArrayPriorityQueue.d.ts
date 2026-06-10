@@ -6,21 +6,21 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharArrayPriorityQueue extends Object implements CharPriorityQueue, Serializable {
     constructor()
-    constructor(arg0: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: (param0: string, param1: string) => number)
     constructor(arg0: string[])
-    constructor(arg0: string[], arg1: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: string[], arg1: (param0: string, param1: string) => number)
     constructor(arg0: string[], arg1: number)
-    constructor(arg0: string[], arg1: number, arg2: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: string[], arg1: number, arg2: (param0: string, param1: string) => number)
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: number, arg1: (param0: string, param1: string) => number)
     // private array: string[];
-    // private c: (param0: string, param1: string) => kotlin.Int;
+    // private c: (param0: string, param1: string) => number;
     // private firstIndex: number;
     // private firstIndexValid: boolean;
     // private size: number;
     changed(): void;
     clear(): void;
-    comparator(): (param0: string, param1: string) => kotlin.Int;
+    comparator(): (param0: string, param1: string) => number;
     dequeue(): string;
     dequeueChar(): string;
     enqueue(arg0: string): void;

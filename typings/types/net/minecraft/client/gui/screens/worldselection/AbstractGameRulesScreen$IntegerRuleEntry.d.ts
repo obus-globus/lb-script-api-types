@@ -7,7 +7,7 @@ import type { FormattedCharSink } from '../../../../../../net/minecraft/util/For
 import type { GameRule } from '../../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class AbstractGameRulesScreen$IntegerRuleEntry extends AbstractGameRulesScreen$GameRuleEntry {
     static CONTENT_PADDING: number;
-    constructor(null_: AbstractGameRulesScreen$IntegerRuleEntry, tooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], narration: string, gameRule: GameRule<number>)
+    constructor(null_: AbstractGameRulesScreen$IntegerRuleEntry, tooltip: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], narration: string, gameRule: GameRule<number>)
     // private input: EditBox;
     extractContent(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, hovered: boolean, a: number): void;
 }

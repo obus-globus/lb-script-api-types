@@ -14,30 +14,30 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export abstract class CommandNode<S extends Object | number | string | boolean> extends Object implements Comparable<CommandNode<S>> {
-    constructor(arg0: (param0: S) => kotlin.Int, arg1: (param0: S) => kotlin.Boolean, arg2: CommandNode<S>, arg3: (param0: S) => kotlin.collections.Collection<unknown>, arg4: boolean)
+    constructor(arg0: (param0: CommandContext<S>) => number, arg1: (param0: S) => boolean, arg2: CommandNode<S>, arg3: (param0: CommandContext<S>) => S[], arg4: boolean)
     // private arguments: { [key: string]: ArgumentCommandNode<S, Object> };
     readonly children: { [key: string]: CommandNode<S> };
-    readonly command: (param0: S) => kotlin.Int;
+    readonly command: (param0: CommandContext<S>) => number;
     // private forks: boolean;
     // private literals: { [key: string]: LiteralCommandNode<S> };
-    // private modifier: (param0: S) => kotlin.collections.Collection<unknown>;
+    // private modifier: (param0: CommandContext<S>) => S[];
     readonly redirect: CommandNode<S>;
-    readonly requirement: (param0: S) => kotlin.Boolean;
+    readonly requirement: (param0: S) => boolean;
     addChild(arg0: CommandNode<S>): void;
     canUse(arg0: S): boolean;
     compareTo(arg0: CommandNode<S>): number;
     createBuilder(): ArgumentBuilder<S, Object>;
     equals(arg0: Object | null): boolean;
-    findAmbiguities(arg0: (param0: S, param1: CommandNode<Object>, param2: CommandNode<Object>, param3: CommandNode<Object>) => void): void;
+    findAmbiguities(arg0: (param0: CommandNode<S>, param1: CommandNode<S>, param2: CommandNode<S>, param3: string[]) => void): void;
     getChild(arg0: string): CommandNode<S>;
-    getChildren(): E[];
-    getCommand(): (param0: S) => kotlin.Int;
-    getExamples(): E[];
+    getChildren(): CommandNode<S>[];
+    getCommand(): (param0: CommandContext<S>) => number;
+    getExamples(): string[];
     getName(): string;
     getRedirect(): CommandNode<S>;
-    getRedirectModifier(): (param0: S) => kotlin.collections.Collection<unknown>;
-    getRelevantNodes(arg0: StringReader): E[];
-    getRequirement(): (param0: S) => kotlin.Boolean;
+    getRedirectModifier(): (param0: CommandContext<S>) => S[];
+    getRelevantNodes(arg0: StringReader): CommandNode<S>[];
+    getRequirement(): (param0: S) => boolean;
     getSortedKey(): string;
     getUsageText(): string;
     hashCode(): number;

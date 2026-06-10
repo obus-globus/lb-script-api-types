@@ -16,7 +16,7 @@ export class QVector extends Object {
     constructor(arg0: Rational[])
     constructor(arg0: BigInteger[])
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: number) => com.seedfinding.mcmath.arithmetic.Rational)
+    constructor(arg0: number, arg1: (param0: number) => Rational)
     constructor(arg0: number[])
     readonly elements: Rational[];
     add(arg0: QVector): QVector;
@@ -36,8 +36,8 @@ export class QVector extends Object {
     gramSchmidtCoefficient(arg0: QVector): Rational;
     hashCode(): number;
     magnitudeSq(): Rational;
-    map(arg0: (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QVector;
-    mapAndSet(arg0: (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational): QVector;
+    map(arg0: (param0: number, param1: Rational) => Rational): QVector;
+    mapAndSet(arg0: (param0: number, param1: Rational) => Rational): QVector;
     multiply(arg0: QMatrix): QVector;
     multiplyAndSet(arg0: QMatrix): QVector;
     norm(arg0: (param0: QVector) => Rational): Rational;
@@ -59,8 +59,8 @@ export class QVector extends Object {
     swap(arg0: number, arg1: number): QVector;
     swapAndSet(arg0: number, arg1: number): QVector;
     tensor(arg0: QVector): QVector;
-    toGenerator(): (param0: number) => com.seedfinding.mcmath.arithmetic.Rational;
-    toMapper(): (param0: number, param1: Rational) => com.seedfinding.mcmath.arithmetic.Rational;
+    toGenerator(): (param0: number) => Rational;
+    toMapper(): (param0: number, param1: Rational) => Rational;
     toMatrixColumn(): QMatrix;
     toMatrixRow(): QMatrix;
     toString(): string;

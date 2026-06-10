@@ -4,13 +4,13 @@ import type { FileRelation } from '../../../../../net/minecraft/util/filefix/acc
 import type { FileFixOperation } from '../../../../../net/minecraft/util/filefix/operations/FileFixOperation.d.ts'
 import type { UpgradeProgress } from '../../../../../net/minecraft/util/worldupdate/UpgradeProgress.d.ts'
 export class ApplyInFolders extends Record implements FileFixOperation {
-    constructor(folders: (param0: Path[][]) => kotlin.collections.List<java.nio.file.Path>, fileFixOperations: FileFixOperation[])
+    constructor(folders: (param0: Path[][]) => Path[][][], fileFixOperations: FileFixOperation[])
     // private fileFixOperations: FileFixOperation[];
-    // private folders: (param0: Path[][]) => kotlin.collections.List<java.nio.file.Path>;
+    // private folders: (param0: Path[][]) => Path[][][];
     equals(o: Object | null): boolean;
     fileFixOperations(): FileFixOperation[];
     fix(baseDirectory: Path[], upgradeProgress: UpgradeProgress): void;
-    folders(): (param0: Path[][]) => kotlin.collections.List<java.nio.file.Path>;
+    folders(): (param0: Path[][]) => Path[][][];
     hashCode(): number;
     toString(): string;
 }

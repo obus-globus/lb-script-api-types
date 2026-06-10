@@ -8,6 +8,6 @@ import type { ItemInstance } from '../../../../net/minecraft/world/item/ItemInst
 export class AnyBlockInteractionTrigger extends SimpleCriterionTrigger<AnyBlockInteractionTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<AnyBlockInteractionTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: AnyBlockInteractionTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: AnyBlockInteractionTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, pos: BlockPos, tool: ItemInstance): void;
 }

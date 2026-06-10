@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Option$OptionNameSource } from '../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Option$OptionNameSource.d.ts'
 import type { OptionPage } from '../../../../../../net/caffeinemc/mods/sodium/client/config/structure/OptionPage.d.ts'
 import type { Page } from '../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Page.d.ts'
@@ -34,7 +33,7 @@ export class VideoSettingsScreen extends Screen implements ScreenPromptable, Scr
     static createScreen(paramarg0: Screen): Screen;
     static createScreen(paramarg0: Screen, paramarg1: OptionPage): Screen;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     static renderIconWithSpacing(paramarg0: GuiGraphicsExtractor, paramarg1: Identifier, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): number;
     private constructor(arg0: Screen)

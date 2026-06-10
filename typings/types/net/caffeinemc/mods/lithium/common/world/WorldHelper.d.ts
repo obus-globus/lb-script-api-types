@@ -14,10 +14,10 @@ export class WorldHelper extends Object {
     static areNeighborsWithinSameChunkSection(paramarg0: number, paramarg1: number, paramarg2: number): boolean;
     static arePosWithinSameChunk(paramarg0: BlockPos, paramarg1: BlockPos): boolean;
     static getEntitiesForCollision(paramarg0: EntityGetter, paramarg1: AABB, paramarg2: Entity): Entity[];
-    static getEntitiesOfEntityGroupPlusDragonPieces(paramarg0: Level, paramarg1: EntitySectionStorage<Entity>, paramarg2: Entity, paramarg3: EntityClassGroup, paramarg4: AABB, paramarg5: (param0: Object | null) => kotlin.Boolean): Entity[];
-    static getEntitiesOfEntityGroupWithoutDragonPieces(paramarg0: EntitySectionStorage<Entity>, paramarg1: Entity, paramarg2: EntityClassGroup, paramarg3: AABB, paramarg4: (param0: Object | null) => kotlin.Boolean): Entity[];
+    static getEntitiesOfEntityGroupPlusDragonPieces(paramarg0: Level, paramarg1: EntitySectionStorage<Entity>, paramarg2: Entity, paramarg3: EntityClassGroup, paramarg4: AABB, paramarg5: (param0: Object) => boolean): Entity[];
+    static getEntitiesOfEntityGroupWithoutDragonPieces(paramarg0: EntitySectionStorage<Entity>, paramarg1: Entity, paramarg2: EntityClassGroup, paramarg3: AABB, paramarg4: (param0: Object) => boolean): Entity[];
     static getEntityCacheOrNull(paramarg0: Level): EntitySectionStorage<Entity>;
-    static getOtherEntitiesForCollision(paramarg0: EntityGetter, paramarg1: AABB, paramarg2: Entity, paramarg3: (param0: Object | null) => kotlin.Boolean): Entity[];
+    static getOtherEntitiesForCollision(paramarg0: EntityGetter, paramarg1: AABB, paramarg2: Entity, paramarg3: (param0: Object) => boolean): Entity[];
     static getPushableEntities(paramarg0: Level, paramarg1: EntitySectionStorage<Entity>, paramarg2: Entity, paramarg3: AABB, paramarg4: EntityPushablePredicate<Object>): Entity[];
     constructor()
 }

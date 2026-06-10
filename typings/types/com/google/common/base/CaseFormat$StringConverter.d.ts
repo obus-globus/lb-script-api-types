@@ -4,7 +4,7 @@ import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CaseFormat$StringConverter extends Converter<string, string> implements Serializable {
-    static from(paramforwardFunction: (param0: Object | null) => Object | null, parambackwardFunction: (param0: Object | null) => Object | null): Converter<Object, Object>;
+    static from(paramforwardFunction: (param0: Object) => boolean, parambackwardFunction: (param0: Object) => boolean): Converter<Object, Object>;
     static identity(): Converter<Object, Object>;
     constructor(sourceFormat: CaseFormat, targetFormat: CaseFormat)
     // private sourceFormat: CaseFormat;

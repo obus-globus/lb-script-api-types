@@ -6,7 +6,7 @@ export class CharRange$CharacterIterator extends Object implements Iterator<stri
     // private current: string;
     // private hasNext: boolean;
     // private range: string[];
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
     // private prepareNext(): void;

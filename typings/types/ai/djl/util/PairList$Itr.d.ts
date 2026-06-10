@@ -6,7 +6,7 @@ export class PairList$Itr extends Object implements Iterator<Pair<K, V>> {
     constructor(null_: PairList$Itr)
     // private cursor: number;
     // private size: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Pair<K, V>) => void): void;
     hasNext(): boolean;
-    next(): Pair<K, V>;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Pair<K, V>;
 }

@@ -10,7 +10,7 @@ export class ModuleSprint$StopOn extends Enum<ModuleSprint$StopOn> implements Ta
     static SNEAKING: ModuleSprint$StopOn;
     static USING_ITEM: ModuleSprint$StopOn;
     static getEntries(): ModuleSprint$StopOn[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSprint$StopOn;

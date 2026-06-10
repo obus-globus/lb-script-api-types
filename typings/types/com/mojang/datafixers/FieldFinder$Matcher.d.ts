@@ -10,8 +10,8 @@ export class FieldFinder$Matcher<FT extends Object | number | string | boolean, 
     // private name: string;
     // private resultType: Type<FR>;
     // private type: Type<FT>;
-    // private capChoice(arg0: Type<Object>): TypedOptic<Pair<FT, V>, Object, FT, FT>;
+    // private capChoice<V extends Object | number | string | boolean>(arg0: Type<Object>): TypedOptic<Pair<FT, V>, Object, FT, FT>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    match(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
+    match<S extends Object | number | string | boolean>(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
 }

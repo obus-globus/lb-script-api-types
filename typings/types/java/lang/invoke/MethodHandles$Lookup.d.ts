@@ -26,7 +26,7 @@ export class MethodHandles$Lookup extends Object {
     private constructor(arg0: Class<Object>, arg1: Class<Object>, arg2: number)
     // private cachedProtectionDomain: ProtectionDomain;
     // private prevLookupClass: Class<Object>;
-    accessClass(arg0: Class<T>): Class<T>;
+    accessClass<T extends Object | number | string | boolean>(arg0: Class<T>): Class<T>;
     accessFailedMessage(arg0: Class<Object>, arg1: MemberName): string;
     bind(arg0: Object, arg1: string, arg2: MethodType): MethodHandle;
     // private canBeCached(arg0: number, arg1: Class<Object>, arg2: MemberName): boolean;
@@ -40,7 +40,7 @@ export class MethodHandles$Lookup extends Object {
     defineHiddenClass(arg0: number[], arg1: boolean, arg2: MethodHandles$Lookup$ClassOption[]): MethodHandles$Lookup;
     defineHiddenClassWithClassData(arg0: number[], arg1: Object, arg2: boolean, arg3: MethodHandles$Lookup$ClassOption[]): MethodHandles$Lookup;
     dropLookupMode(arg0: number): MethodHandles$Lookup;
-    ensureInitialized(arg0: Class<T>): Class<T>;
+    ensureInitialized<T extends Object | number | string | boolean>(arg0: Class<T>): Class<T>;
     findBoundCallerLookup(arg0: MemberName): MethodHandles$Lookup;
     findClass(arg0: string): Class<Object>;
     findConstructor(arg0: Class<Object>, arg1: MethodType): MethodHandle;

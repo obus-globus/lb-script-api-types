@@ -1,11 +1,14 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { Stat } from '../../../net/minecraft/stats/Stat.d.ts'
+import type { EntityType } from '../../../net/minecraft/world/entity/EntityType.d.ts'
+import type { Item } from '../../../net/minecraft/world/item/Item.d.ts'
+import type { Block } from '../../../net/minecraft/world/level/block/Block.d.ts'
 export class Stats extends Object {
     static ANIMALS_BRED: Identifier;
     static AVIATE_ONE_CM: Identifier;
     static BELL_RING: Identifier;
-    static BLOCK_MINED: Stat<T>[];
+    static BLOCK_MINED: Stat<Block>[];
     static BOAT_ONE_CM: Identifier;
     static CLEAN_ARMOR: Identifier;
     static CLEAN_BANNER: Identifier;
@@ -13,7 +16,7 @@ export class Stats extends Object {
     static CLIMB_ONE_CM: Identifier;
     static CROUCH_ONE_CM: Identifier;
     static CROUCH_TIME: Identifier;
-    static CUSTOM: Stat<T>[];
+    static CUSTOM: Stat<Identifier>[];
     static DAMAGE_ABSORBED: Identifier;
     static DAMAGE_BLOCKED_BY_SHIELD: Identifier;
     static DAMAGE_DEALT: Identifier;
@@ -25,8 +28,8 @@ export class Stats extends Object {
     static DROP: Identifier;
     static EAT_CAKE_SLICE: Identifier;
     static ENCHANT_ITEM: Identifier;
-    static ENTITY_KILLED: Stat<T>[];
-    static ENTITY_KILLED_BY: Stat<T>[];
+    static ENTITY_KILLED: Stat<EntityType<Object>>[];
+    static ENTITY_KILLED_BY: Stat<EntityType<Object>>[];
     static FALL_ONE_CM: Identifier;
     static FILL_CAULDRON: Identifier;
     static FISH_CAUGHT: Identifier;
@@ -50,11 +53,11 @@ export class Stats extends Object {
     static INTERACT_WITH_SMITHING_TABLE: Identifier;
     static INTERACT_WITH_SMOKER: Identifier;
     static INTERACT_WITH_STONECUTTER: Identifier;
-    static ITEM_BROKEN: Stat<T>[];
-    static ITEM_CRAFTED: Stat<T>[];
-    static ITEM_DROPPED: Stat<T>[];
-    static ITEM_PICKED_UP: Stat<T>[];
-    static ITEM_USED: Stat<T>[];
+    static ITEM_BROKEN: Stat<Item>[];
+    static ITEM_CRAFTED: Stat<Item>[];
+    static ITEM_DROPPED: Stat<Item>[];
+    static ITEM_PICKED_UP: Stat<Item>[];
+    static ITEM_USED: Stat<Item>[];
     static JUMP: Identifier;
     static LEAVE_GAME: Identifier;
     static MINECART_ONE_CM: Identifier;

@@ -5,7 +5,7 @@ import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 export class Instruction$InstructionIterator extends Object implements Iterator<Instruction> {
     constructor(start: Instruction)
     // private current: Instruction;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Instruction) => void): void;
     hasNext(): boolean;
     next(): Instruction;
 }

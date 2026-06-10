@@ -1,10 +1,11 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
+import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LoaderUtil extends Object {
     static IGNORE_TCCL_PROPERTY: string;
-    static findResources(paramresource: string): E[];
+    static findResources(paramresource: string): URL[];
     static getClassLoader(): ClassLoader;
     static getClassLoader(paramclass1: Class<Object>, paramclass2: Class<Object>): ClassLoader;
     static getThreadContextClassLoader(): ClassLoader;

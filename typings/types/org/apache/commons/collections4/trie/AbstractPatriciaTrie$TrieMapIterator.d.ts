@@ -9,8 +9,8 @@ export class AbstractPatriciaTrie$TrieMapIterator extends AbstractPatriciaTrie$T
     getValue<V extends Object | number | string | boolean>(): V;
     hasPrevious(): boolean;
     next<K extends Object | number | string | boolean>(): K;
-    nextEntry(): AbstractPatriciaTrie$TrieEntry<K, V>;
+    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): AbstractPatriciaTrie$TrieEntry<K, V>;
     previous<K extends Object | number | string | boolean>(): K;
-    previousEntry(): AbstractPatriciaTrie$TrieEntry<K, V>;
+    previousEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): AbstractPatriciaTrie$TrieEntry<K, V>;
     setValue<V extends Object | number | string | boolean>(arg0: V): V;
 }

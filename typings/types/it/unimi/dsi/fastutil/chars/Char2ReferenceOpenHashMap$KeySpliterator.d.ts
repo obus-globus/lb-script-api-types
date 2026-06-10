@@ -3,6 +3,7 @@ import type { CharComparator } from '../../../../../it/unimi/dsi/fastutil/chars/
 import type { CharConsumer } from '../../../../../it/unimi/dsi/fastutil/chars/CharConsumer.d.ts'
 import type { CharSpliterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ReferenceOpenHashMap$KeySpliterator extends Char2ReferenceOpenHashMap$MapSpliterator<Object, Object> implements CharSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
@@ -17,8 +18,8 @@ export class Char2ReferenceOpenHashMap$KeySpliterator extends Char2ReferenceOpen
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    getComparator(): (param0: string, param1: string) => kotlin.Int;
-    makeForSplit(arg0: number, arg1: number, arg2: boolean): Char2ReferenceOpenHashMap$KeySpliterator;
+    getComparator(): (param0: string, param1: string) => number;
+    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Char2ReferenceOpenHashMap$KeySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;
 }

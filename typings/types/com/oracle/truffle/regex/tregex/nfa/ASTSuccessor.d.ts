@@ -16,9 +16,9 @@ export class ASTSuccessor extends Object implements JsonConvertible {
     // private lookAroundsMerged: boolean;
     readonly lookBehinds: ASTStep[];
     // private mergedStates: TransitionBuilder<RegexAST, Term, ASTTransition>[];
-    // private mergedTransitions: T[];
+    // private mergedTransitions: ASTTransition[];
     // private addAllIntersecting(canonicalizer: ASTTransitionCanonicalizer, state: TransitionBuilder<RegexAST, Term, ASTTransition>, lookAround: ASTStep, result: TransitionBuilder<RegexAST, Term, ASTTransition>[], compilationBuffer: CompilationBuffer): void;
-    addLookBehinds(addLookBehinds: E[]): void;
+    addLookBehinds(addLookBehinds: ASTStep[]): void;
     getInitialTransition(): ASTTransition;
     getInitialTransitionCharSet(compilationBuffer: CompilationBuffer): (Object | null)[];
     getMergedStates(canonicalizer: ASTTransitionCanonicalizer, compilationBuffer: CompilationBuffer): TransitionBuilder<RegexAST, Term, ASTTransition>[];

@@ -17,7 +17,7 @@ export class InternalLoggerRegistry extends Object {
     computeIfAbsent(name: string, messageFactory: MessageFactory, loggerSupplier: (param0: string, param1: MessageFactory) => Logger): Logger;
     // private expungeStaleEntries(): void;
     getLogger(name: string, messageFactory: MessageFactory): Logger;
-    getLoggers(): E[];
+    getLoggers(): Logger[];
     hasLogger(name: string, messageFactoryClass: Class<MessageFactory>): boolean;
     hasLogger(name: string, messageFactory: MessageFactory): boolean;
 }

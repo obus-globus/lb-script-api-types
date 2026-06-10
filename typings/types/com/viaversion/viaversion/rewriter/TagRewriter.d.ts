@@ -24,9 +24,9 @@ export class TagRewriter<C extends ClientboundPacketType> extends Object impleme
     getHandler(arg0: RegistryType): (param0: PacketWrapper) => void;
     getNewTags(arg0: RegistryType): TagData[];
     getOrComputeNewTags(arg0: RegistryType): TagData[];
-    getRewriter(arg0: RegistryType): (param0: number) => kotlin.Int;
+    getRewriter(arg0: RegistryType): (param0: number) => number;
     handle(arg0: PacketWrapper, arg1: RegistryType): void;
-    handle(arg0: PacketWrapper, arg1: (param0: number) => kotlin.Int, arg2: TagData[], arg3: { [key: string]: string }, arg4: string[]): void;
+    handle(arg0: PacketWrapper, arg1: (param0: number) => number, arg2: TagData[], arg3: { [key: string]: string }, arg4: string[]): void;
     handle(arg0: PacketWrapper, arg1: string): void;
     handleGeneric(arg0: PacketWrapper): void;
     onMappingDataLoaded(): void;

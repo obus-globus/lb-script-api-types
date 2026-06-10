@@ -7,6 +7,6 @@ export abstract class HashMap$HashIterator extends Object {
     // private index: number;
     // private next: HashMap$Node<K, V>;
     hasNext(): boolean;
-    nextNode(): HashMap$Node<K, V>;
+    nextNode<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): HashMap$Node<K, V>;
     remove(): void;
 }

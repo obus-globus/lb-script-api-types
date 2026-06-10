@@ -5,5 +5,5 @@ import type { TypeConstructor } from '../../../../../../kotlin/reflect/jvm/inter
 export class SupertypeLoopChecker$EMPTY extends Object implements SupertypeLoopChecker {
     static INSTANCE: SupertypeLoopChecker$EMPTY;
     private constructor()
-    findLoopsInSupertypesAndDisconnect(arg0: TypeConstructor, arg1: E[], arg2: (param0: TypeConstructor) => KotlinType[], arg3: (param0: KotlinType) => void): E[];
+    findLoopsInSupertypesAndDisconnect(arg0: TypeConstructor, arg1: KotlinType[], arg2: (param0: TypeConstructor) => KotlinType[], arg3: (param0: KotlinType) => void): KotlinType[];
 }

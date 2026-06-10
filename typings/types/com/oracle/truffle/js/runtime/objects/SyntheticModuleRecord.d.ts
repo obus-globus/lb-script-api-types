@@ -19,8 +19,8 @@ export class SyntheticModuleRecord extends AbstractModuleRecord {
     readonly status: CyclicModuleRecord$Status;
     evaluate(realm: JSRealm): JSPromiseObject;
     evaluateSync(realm: JSRealm): void;
-    getExportedNames(): E[];
-    getExportedNames(exportStarSet: JSModuleRecord[]): E[];
+    getExportedNames(): TruffleString[];
+    getExportedNames(exportStarSet: JSModuleRecord[]): TruffleString[];
     getModuleSource(): Object;
     getStatus(): CyclicModuleRecord$Status;
     // private initializeEnvironment(): void;

@@ -8,7 +8,7 @@ export class ECCurve extends AbstractCurve {
     static P256: ECCurve;
     static P384: ECCurve;
     static P521: ECCurve;
-    static VALUES: E[];
+    static VALUES: ECCurve[];
     constructor(arg0: string, arg1: string)
     // private spec: ECParameterSpec;
     // private add(arg0: ECPoint, arg1: ECPoint): ECPoint;

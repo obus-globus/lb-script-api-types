@@ -10,8 +10,8 @@ import type { Recipe$BookInfo$Constructor } from '../../../../../net/minecraft/w
 export class AbstractCookingRecipe$CookingBookInfo extends Record implements Recipe$BookInfo<CookingBookCategory> {
     static MAP_CODEC: MapCodec<AbstractCookingRecipe$CookingBookInfo>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, AbstractCookingRecipe$CookingBookInfo>;
-    static mapCodec(paramcategoryCodec: Codec<Object>, paramdefaultCategory: Object | null, paramconstructor: (param0: Object | null, param1: Object | null) => unknown): MapCodec<Object>;
-    static streamCodec(paramcategoryCodec: StreamCodec<Object, Object>, paramconstructor: (param0: Object | null, param1: Object | null) => unknown): StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static mapCodec(paramcategoryCodec: Codec<Object>, paramdefaultCategory: Object | null, paramconstructor: (param0: Object | null, param1: Object | null) => Object | null): MapCodec<Object>;
+    static streamCodec(paramcategoryCodec: StreamCodec<Object, Object>, paramconstructor: (param0: Object | null, param1: Object | null) => Object | null): StreamCodec<RegistryFriendlyByteBuf, Object>;
     constructor(category: CookingBookCategory, group: string)
     // private category: CookingBookCategory;
     // private group: string;

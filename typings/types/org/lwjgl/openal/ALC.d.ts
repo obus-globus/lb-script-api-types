@@ -8,7 +8,7 @@ export class ALC extends Object {
     static create(paramarg0: string): void;
     static create(paramarg0: FunctionProviderLocal): void;
     static createCapabilities(paramarg0: number): ALCCapabilities;
-    static createCapabilities(paramarg0: number, paramarg1: (param0: PointerBuffer) => unknown): ALCCapabilities;
+    static createCapabilities(paramarg0: number, paramarg1: (param0: number) => PointerBuffer): ALCCapabilities;
     static destroy(): void;
     static getCapabilities(): ALCCapabilities;
     static getFunctionProvider(): FunctionProviderLocal;

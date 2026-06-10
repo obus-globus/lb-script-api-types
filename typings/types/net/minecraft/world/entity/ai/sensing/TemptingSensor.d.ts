@@ -13,10 +13,10 @@ export class TemptingSensor extends Sensor<PathfinderMob> {
     static isEntityAttackable(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityAttackableIgnoringLineOfSight(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityTargetable(paramlevel: ServerLevel, parambody: LivingEntity, paramentity: LivingEntity): boolean;
-    static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => kotlin.Boolean;
-    private constructor(temptations: (param0: PathfinderMob, param1: ItemStack) => kotlin.Boolean)
-    constructor(tt: (param0: ItemStack) => kotlin.Boolean)
-    // private temptations: (param0: PathfinderMob, param1: ItemStack) => kotlin.Boolean;
+    static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
+    private constructor(temptations: (param0: PathfinderMob, param1: ItemStack) => boolean)
+    constructor(tt: (param0: ItemStack) => boolean)
+    // private temptations: (param0: PathfinderMob, param1: ItemStack) => boolean;
     doTick(arg0: ServerLevel, arg1: PathfinderMob): void;
     // private isTemptation(mob: PathfinderMob, itemStack: ItemStack): boolean;
     // private playerHoldingTemptation(mob: PathfinderMob, player: Player): boolean;

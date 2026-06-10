@@ -9,8 +9,8 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNode extends JSTargetableNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramtargetNode: JavaScriptNode, paramindexNode: JavaScriptNode, paramvalueNode: JavaScriptNode, paramcontext: JSContext, paramisStrict: boolean): WriteElementNode;
     static create(paramcontext: JSContext, paramisStrict: boolean): WriteElementNode;
     static create(paramcontext: JSContext, paramisStrict: boolean, paramwriteOwn: boolean): WriteElementNode;

@@ -13,7 +13,7 @@ export interface Digraph<V extends Object | number | string | boolean> extends E
     put(arg0: V, arg1: V, arg2: number): OptionalInt;
     remove(arg0: V): boolean;
     remove(arg0: V, arg1: V): OptionalInt;
-    removeAll(arg0: E[]): void;
+    removeAll(arg0: V[]): void;
     reverse(): Digraph<V>;
     subgraph(arg0: V[]): Digraph<V>;
     targets(arg0: V): V[];

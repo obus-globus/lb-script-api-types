@@ -9,10 +9,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NamedEntityFix } from '../../../../../net/minecraft/util/datafix/fixes/NamedEntityFix.d.ts'
 export class EntityAttributeBaseValueFix extends NamedEntityFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
-    constructor(outputSchema: Schema, name: string, entityName: string, attributeId: string, valueFixer: (param0: number) => kotlin.Double)
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    constructor(outputSchema: Schema, name: string, entityName: string, attributeId: string, valueFixer: (param0: number) => number)
     // private attributeId: string;
-    // private valueFixer: (param0: number) => kotlin.Double;
+    // private valueFixer: (param0: number) => number;
     fix(entity: Typed<Object>): Typed<Object>;
     // private fixValue(tag: Dynamic<Object>): Dynamic<Object>;
 }

@@ -16,9 +16,9 @@ export class Fold<A extends Object | number | string | boolean, B extends Object
     // private bType: RecursivePoint$RecursivePointType<B>;
     // private index: number;
     all(arg0: PointFreeRule): Optional<PointFree<(param0: A) => B>>;
-    // private cap(arg0: RewriteResult<Object, FB>): PointFree<(param0: A) => B>;
+    // private cap<FB extends Object | number | string | boolean>(arg0: RewriteResult<Object, FB>): PointFree<(param0: A) => B>;
     equals(arg0: Object | null): boolean;
-    eval(): (param0: DynamicOps<Object>) => (param0: A) => B;
+    eval(): (param0: DynamicOps<Object>) => Function<A, B>;
     hashCode(): number;
     toString(): string;
     toString(arg0: number): string;

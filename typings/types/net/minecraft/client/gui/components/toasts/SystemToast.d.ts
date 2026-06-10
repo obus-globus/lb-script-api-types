@@ -27,13 +27,13 @@ export class SystemToast extends Object implements Toast {
     static onPackCopyFailure(paramminecraft: Minecraft, paramextraInfo: string): void;
     static onWorldAccessFailure(paramminecraft: Minecraft, paramlevelId: string): void;
     static onWorldDeleteFailure(paramminecraft: Minecraft, paramlevelId: string): void;
-    private constructor(id: SystemToast$SystemToastId, title: Component, messageLines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], width: number)
+    private constructor(id: SystemToast$SystemToastId, title: Component, messageLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], width: number)
     constructor(id: SystemToast$SystemToastId, title: Component, message: Component)
     // private changed: boolean;
     // private forceHide: boolean;
     // private id: SystemToast$SystemToastId;
     // private lastChanged: number;
-    // private messageLines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private messageLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private title: Component;
     readonly wantedVisibility: Toast$Visibility;
     // private width: number;

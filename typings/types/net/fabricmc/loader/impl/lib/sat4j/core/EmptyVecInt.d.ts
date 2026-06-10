@@ -28,7 +28,7 @@ export class EmptyVecInt extends Object implements IVecInt {
     shrink(arg0: number): void;
     size(): number;
     sort(): void;
-    sort(arg0: (param0: number) => kotlin.Boolean): void;
+    sort(arg0: (param0: Object) => boolean): void;
     sortUnique(): void;
     toArray(): number[];
     toString(): string;

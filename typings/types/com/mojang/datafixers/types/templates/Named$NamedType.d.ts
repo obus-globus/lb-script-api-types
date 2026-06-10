@@ -16,7 +16,7 @@ import type { DynamicOps } from '../../../../../com/mojang/serialization/Dynamic
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Named$NamedType<A extends Object | number | string | boolean> extends Type<Pair<string, A>> {
-    static fix(paramarg0: Named$NamedType<Object>, paramarg1: RewriteResult<Object, Object>): RewriteResult<Object, Object>;
+    static fix(paramarg0: Named$NamedType<Object>, paramarg1: RewriteResult<Object, Object>): RewriteResult<Pair<string, Object>, Object>;
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor(arg0: string, arg1: Type<A>)
@@ -31,7 +31,7 @@ export class Named$NamedType<A extends Object | number | string | boolean> exten
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
-    findTypeInChildren(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Pair<string, A>, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Pair<string, A>, Object, FT, FR>, Type$FieldNotFoundException>;
     hashCode(): number;
     name(): string;
     one(arg0: TypeRewriteRule): Optional<RewriteResult<Pair<string, A>, Object>>;

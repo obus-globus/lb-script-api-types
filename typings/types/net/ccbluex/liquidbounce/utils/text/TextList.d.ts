@@ -51,7 +51,7 @@ export class TextList extends Object implements Component {
     static translationArg(paramchunkPos: ChunkPos): Component;
     constructor(arg0: Component[])
     // private language: Language;
-    // private ordered: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private ordered: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     readonly siblings: Component[];
     contains(other: Component): boolean;
     copy(): MutableComponent;
@@ -60,11 +60,11 @@ export class TextList extends Object implements Component {
     getString(): string;
     getString(limit: number): string;
     getStyle(): Style;
-    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     plainCopy(): MutableComponent;
     toFlatList(): Component[];
     toFlatList(rootStyle: Style): Component[];
     tryCollapseToString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

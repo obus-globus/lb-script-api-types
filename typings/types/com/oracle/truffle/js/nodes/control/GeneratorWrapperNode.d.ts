@@ -9,8 +9,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GeneratorWrapperNode extends JavaScriptNode implements RepeatingNode, GeneratorNode {
     static BREAK_LOOP_STATUS: Object;
     static CONTINUE_LOOP_STATUS: Object;
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static createWrapper(paramchild: JavaScriptNode, paramstateSlot: number): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

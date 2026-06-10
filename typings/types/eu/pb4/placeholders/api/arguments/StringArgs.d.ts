@@ -8,9 +8,9 @@ export class StringArgs extends Object {
     static empty(): StringArgs;
     static emptyNew(): StringArgs;
     static full(paramarg0: string, paramarg1: string, paramarg2: string): StringArgs;
-    static full(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: boolean, paramarg4: (param0: string) => kotlin.Boolean): StringArgs;
+    static full(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: boolean, paramarg4: (param0: string) => boolean): StringArgs;
     static keyed(paramarg0: string, paramarg1: string, paramarg2: string): StringArgs;
-    static keyed(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: boolean, paramarg4: (param0: string) => kotlin.Boolean): StringArgs;
+    static keyed(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: boolean, paramarg4: (param0: string) => boolean): StringArgs;
     static ordered(paramarg0: string, paramarg1: string): StringArgs;
     private constructor(arg0: string)
     // private currentOrdered: number;
@@ -20,8 +20,8 @@ export class StringArgs extends Object {
     // private ordered: string[];
     contains(arg0: string): boolean;
     get(arg0: string): string;
-    get(arg0: string, arg1: Codec<T>): DataResult<T>;
-    get(arg0: string, arg1: Codec<T>, arg2: HolderLookup$Provider): DataResult<T>;
+    get<T extends Object | number | string | boolean>(arg0: string, arg1: Codec<T>): DataResult<T>;
+    get<T extends Object | number | string | boolean>(arg0: string, arg1: Codec<T>, arg2: HolderLookup$Provider): DataResult<T>;
     get(arg0: string, arg1: number): string;
     get(arg0: string, arg1: number, arg2: string): string;
     get(arg0: string, arg1: string): string;

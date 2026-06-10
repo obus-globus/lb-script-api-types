@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ChannelStorage extends Object implements StorableObject {
     constructor()
     // private channels: string[];
-    addChannels(arg0: E[]): void;
+    addChannels(arg0: string[]): void;
     hasChannel(arg0: string): boolean;
     onRemove(): void;
 }

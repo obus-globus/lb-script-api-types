@@ -14,7 +14,7 @@ import type { MouseButtonEvent } from '../../../../../../net/minecraft/client/in
 import type { RecipeDisplayId } from '../../../../../../net/minecraft/world/item/crafting/display/RecipeDisplayId.d.ts'
 export class RecipeBookPage extends Object {
     static ITEMS_PER_PAGE: number;
-    constructor(parent: RecipeBookComponent<Object>, slotSelectTime: () => kotlin.Int, isFurnaceMenu: boolean)
+    constructor(parent: RecipeBookComponent<Object>, slotSelectTime: () => number, isFurnaceMenu: boolean)
     // private backButton: ImageButton;
     // private buttons: RecipeButton[];
     // private currentPage: number;

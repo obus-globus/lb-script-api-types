@@ -4,6 +4,7 @@ import type { TimeZoneNamesImpl$NameInfo } from '../../../../com/ibm/icu/impl/Ti
 import type { TimeZoneNamesImpl$NameSearchHandler } from '../../../../com/ibm/icu/impl/TimeZoneNamesImpl$NameSearchHandler.d.ts'
 import type { TimeZoneNamesImpl$ZNames } from '../../../../com/ibm/icu/impl/TimeZoneNamesImpl$ZNames.d.ts'
 import type { TimeZoneNames } from '../../../../com/ibm/icu/text/TimeZoneNames.d.ts'
+import type { TimeZoneNames$MatchInfo } from '../../../../com/ibm/icu/text/TimeZoneNames$MatchInfo.d.ts'
 import type { TimeZoneNames$NameType } from '../../../../com/ibm/icu/text/TimeZoneNames$NameType.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
@@ -23,8 +24,8 @@ export class TimeZoneNamesImpl extends TimeZoneNames {
     // private _tzNamesMap: { [key: string]: TimeZoneNamesImpl$ZNames };
     // private _zoneStrings: ICUResourceBundle;
     // private addAllNamesIntoTrie(): void;
-    // private doFind(arg0: TimeZoneNamesImpl$NameSearchHandler, arg1: CharSequence, arg2: number): E[];
-    find(arg0: CharSequence, arg1: number, arg2: TimeZoneNames$NameType[]): E[];
+    // private doFind(arg0: TimeZoneNamesImpl$NameSearchHandler, arg1: CharSequence, arg2: number): TimeZoneNames$MatchInfo[];
+    find(arg0: CharSequence, arg1: number, arg2: TimeZoneNames$NameType[]): TimeZoneNames$MatchInfo[];
     getAvailableMetaZoneIDs(): string[];
     getAvailableMetaZoneIDs(arg0: string): string[];
     getDisplayNames(arg0: string, arg1: TimeZoneNames$NameType[], arg2: number, arg3: string[], arg4: number): void;

@@ -15,18 +15,18 @@ export class ModuleEagle$Conditional$Condition extends Enum<ModuleEagle$Conditio
     static RIGHT: ModuleEagle$Conditional$Condition;
     static SNEAK: ModuleEagle$Conditional$Condition;
     static getEntries(): ModuleEagle$Conditional$Condition[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleEagle$Conditional$Condition;
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: MovementInputEvent) => boolean): (param0: MovementInputEvent) => boolean;
+    negate(): (param0: MovementInputEvent) => boolean;
+    or(arg0: (param0: MovementInputEvent) => boolean): (param0: MovementInputEvent) => boolean;
     test(event: MovementInputEvent): boolean;
     name(): "LEFT" | "RIGHT" | "FORWARDS" | "BACKWARDS" | "HOLDING_BLOCKS" | "ON_GROUND" | "SNEAK";
 }

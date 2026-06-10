@@ -14,6 +14,7 @@ import type { NFAState } from '../../../../../../com/oracle/truffle/regex/tregex
 import type { NFAStateTransition } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFAStateTransition.d.ts'
 import type { AllTransitionsInOneTreeMatcher } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/AllTransitionsInOneTreeMatcher.d.ts'
 import type { CGTrackingDFAStateNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/CGTrackingDFAStateNode.d.ts'
+import type { DFAAbstractNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/DFAAbstractNode.d.ts'
 import type { DFAAbstractStateNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/DFAAbstractStateNode.d.ts'
 import type { DFAAbstractTransitionNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/DFAAbstractTransitionNode.d.ts'
 import type { DFACaptureGroupLazyTransition } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/DFACaptureGroupLazyTransition.d.ts'
@@ -56,27 +57,27 @@ export class DFAGenerator extends Object implements JsonConvertible {
     // private maxNumberOfNfaStates: number;
     // private nextID: number;
     readonly nfa: NFA;
-    // private nfaFirstStates: S[];
+    // private nfaFirstStates: NFAState[];
     // private pruneUnambiguousPaths: boolean;
     // private simpleCGMustCopy: boolean;
     // private stateIndexMap: DFAStateNodeBuilder[];
     readonly stateMap: Map<DFAStateNodeBuilder, DFAStateNodeBuilder>;
     // private stateReplacements: EconomicMap<number, DFAAbstractStateNode>;
     // private transitionIDCounter: Counter;
-    // private addSuccessors(stateSet: S[], state: NFAState): void;
+    // private addSuccessors(stateSet: NFAState[], state: NFAState): void;
     // private bfsExpand(s: DFAStateNodeBuilder): void;
     // private bfsSwapLists(): void;
     // private calcCGLoopToSelfDependency(cgLoopToSelf: DFACaptureGroupPartialTransition): boolean;
     calcDFA(): void;
     // private checkTrivialQuantifiers(): void;
     // private createAllTransitionsInOneTreeMatcher(state: DFAStateNodeBuilder, coversCharSpace: boolean): AllTransitionsInOneTreeMatcher;
-    // private createAndDedupSimpleCGTransition(nodes: T[], successor: number, nfaTransition: NFAStateTransition): number;
-    // private createBQTransitions(nodes: T[]): void;
+    // private createAndDedupSimpleCGTransition(nodes: DFAAbstractNode[], successor: number, nfaTransition: NFAStateTransition): number;
+    // private createBQTransitions(nodes: DFAAbstractNode[]): void;
     // private createBranchesDirect(s: DFAStateNodeBuilder, maps: EconomicMap<DFACaptureGroupPartialTransition, number[]>[], i: number): DFACaptureGroupLazyTransition$BranchesDirect;
     // private createCGFinalTransition(transition: NFAStateTransition): DFACaptureGroupPartialTransition;
-    // private createCGTrackingDFAState(nodes: T[], s: DFAStateNodeBuilder, id: number, matchers: Matchers, successors: number[], indexOfNodeId: number, indexOfIsFast: number, loopToSelf: number, flags: number): CGTrackingDFAStateNode;
+    // private createCGTrackingDFAState(nodes: DFAAbstractNode[], s: DFAStateNodeBuilder, id: number, matchers: Matchers, successors: number[], indexOfNodeId: number, indexOfIsFast: number, loopToSelf: number, flags: number): CGTrackingDFAStateNode;
     createDFAExecutor(): TRegexDFAExecutorNode;
-    // private createDFAExecutorStates(): T[];
+    // private createDFAExecutorStates(): DFAAbstractNode[];
     // private createInitialCGTransition(target: DFAStateNodeBuilder): DFACaptureGroupTransitionBuilder;
     // private createInitialState(transition: DFAStateTransitionBuilder): DFAStateNodeBuilder;
     // private createInitialStateBackward(entries: NFAStateTransition[]): DFAStateNodeBuilder;
@@ -90,7 +91,7 @@ export class DFAGenerator extends Object implements JsonConvertible {
     // private createTransitionBuilder(transitionSet: TransitionSet<NFA, NFAState, NFAStateTransition>): DFAStateTransitionBuilder;
     // private createWithLookup(s: DFAStateNodeBuilder, maps: EconomicMap<DFACaptureGroupPartialTransition, number[]>[], i: number): DFACaptureGroupLazyTransition;
     // private debugMode(): boolean;
-    // private dedupDFATransition(nodes: T[], successor: number, t: DFAAbstractTransitionNode): number;
+    // private dedupDFATransition(nodes: DFAAbstractNode[], successor: number, t: DFAAbstractTransitionNode): number;
     // private expandState(state: DFAStateNodeBuilder): void;
     // private getAnchoredInitialState(): DFAStateNodeBuilder;
     getCgPartialTransitionIDCounter(): Counter;
@@ -110,8 +111,8 @@ export class DFAGenerator extends Object implements JsonConvertible {
     getStateMap(): Map<DFAStateNodeBuilder, DFAStateNodeBuilder>;
     // private getUnanchoredInitialState(): DFAStateNodeBuilder;
     // private innerLiteralCanFindMatchStart(unanchoredInitialState: DFAStateNodeBuilder, literalLastDFAState: DFAStateNodeBuilder): boolean;
-    // private innerLiteralMatchesPrefix(prefixNFAStates: S[]): boolean;
-    // private innerLiteralTryMatchPrefix(prefixNFAStates: S[], start: S[]): boolean;
+    // private innerLiteralMatchesPrefix(prefixNFAStates: NFAState[]): boolean;
+    // private innerLiteralTryMatchPrefix(prefixNFAStates: NFAState[], start: NFAState[]): boolean;
     // private isBooleanMatch(): boolean;
     isForward(): boolean;
     isGenericCG(): boolean;

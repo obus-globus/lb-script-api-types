@@ -14,10 +14,10 @@ export class EnchantRandomlyFunction extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<EnchantRandomlyFunction>;
     static randomApplicableEnchantment(paramregistries: HolderLookup$Provider): EnchantRandomlyFunction$Builder;
     static randomEnchantment(): EnchantRandomlyFunction$Builder;
-    private constructor(predicates: LootItemCondition[], options: Optional<Holder<T>[]>, onlyCompatible: boolean, includeAdditionalCostComponent: boolean)
+    private constructor(predicates: LootItemCondition[], options: Optional<Holder<Enchantment>[]>, onlyCompatible: boolean, includeAdditionalCostComponent: boolean)
     // private includeAdditionalCostComponent: boolean;
     // private onlyCompatible: boolean;
-    // private options: Optional<Holder<T>[]>;
+    // private options: Optional<Holder<Enchantment>[]>;
     codec(): MapCodec<EnchantRandomlyFunction>;
     // private enchantItem(itemStack: ItemStack, enchantment: Holder<Enchantment>, context: LootContext): ItemStack;
     getReferencedContextParams(): ContextKey<Object>[];

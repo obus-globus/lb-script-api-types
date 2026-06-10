@@ -10,5 +10,5 @@ export interface TexturedModel$Provider extends Object {
     create(block: Block, modelOutput: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     createWithSuffix(block: Block, suffix: string, modelOutput: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     get(block: Block): TexturedModel;
-    updateTexture(mutator: (param0: TextureMapping) => void): (param0: Block) => net.minecraft.client.data.models.model.TexturedModel;
+    updateTexture(mutator: (param0: TextureMapping) => void): (param0: Block) => TexturedModel;
 }

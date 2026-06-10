@@ -15,7 +15,7 @@ export class DensityFunctions extends Object {
     static blendAlpha(): DensityFunction;
     static blendDensity(paraminput: DensityFunction): DensityFunction;
     static blendOffset(): DensityFunction;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<DensityFunction>[]): MapCodec<DensityFunction>;
     static cache2d(paramfunction: DensityFunction): DensityFunction;
     static cacheAllInCell(paramfunction: DensityFunction): DensityFunction;
     static cacheOnce(paramfunction: DensityFunction): DensityFunction;

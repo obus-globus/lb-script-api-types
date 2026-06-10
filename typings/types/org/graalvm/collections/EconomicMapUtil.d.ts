@@ -6,6 +6,6 @@ export class EconomicMapUtil extends Object {
     static equals(paramlhs: UnmodifiableEconomicMap<Object, Object>, paramrhs: UnmodifiableEconomicMap<Object, Object>): boolean;
     static hashCode(parammap: UnmodifiableEconomicMap<Object, Object>): number;
     static keySet(parammap: EconomicMap<Object, Object>): (Object | null)[];
-    static lexicographicalComparator(paramkeyComparator: (param0: Object | null) => kotlin.Boolean, paramvalueComparator: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static lexicographicalComparator(paramkeyComparator: (param0: Object) => boolean, paramvalueComparator: (param0: Object) => boolean): (param0: Object) => boolean;
     private constructor()
 }

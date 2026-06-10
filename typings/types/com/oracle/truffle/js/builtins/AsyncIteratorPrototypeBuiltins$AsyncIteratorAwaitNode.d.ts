@@ -19,10 +19,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<T extends AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs> extends JavaScriptBaseNode {
     static ARGS_ID: HiddenKey;
     static THIS_ID: HiddenKey;
-    static create(paramcontext: JSContext, paramkey: JSContext$BuiltinFunctionKey, paramcreate: (param0: JSContext) => JSFunctionData, paramcloseOnAbrupt: boolean): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<Object>;
-    static create(paramcontext: JSContext, paramthenKey: JSContext$BuiltinFunctionKey, paramthenCreate: (param0: JSContext) => JSFunctionData, paramcatchKey: JSContext$BuiltinFunctionKey, paramcatchCreate: (param0: JSContext) => JSFunctionData): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<Object>;
-    static createGen(paramcontext: JSContext, paramkey: JSContext$BuiltinFunctionKey, paramcreate: (param0: JSContext) => JSFunctionData, paramcloseOnAbrupt: boolean): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<Object>;
-    static createGeneratorYield(paramcontext: JSContext): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<Object>;
+    static create(paramcontext: JSContext, paramkey: JSContext$BuiltinFunctionKey, paramcreate: (param0: JSContext) => JSFunctionData, paramcloseOnAbrupt: boolean): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs>;
+    static create(paramcontext: JSContext, paramthenKey: JSContext$BuiltinFunctionKey, paramthenCreate: (param0: JSContext) => JSFunctionData, paramcatchKey: JSContext$BuiltinFunctionKey, paramcatchCreate: (param0: JSContext) => JSFunctionData): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs>;
+    static createGen(paramcontext: JSContext, paramkey: JSContext$BuiltinFunctionKey, paramcreate: (param0: JSContext) => JSFunctionData, paramcloseOnAbrupt: boolean): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs>;
+    static createGeneratorYield(paramcontext: JSContext): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs>;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, thenKey: JSContext$BuiltinFunctionKey, thenCreate: (param0: JSContext) => JSFunctionData, catchKey: JSContext$BuiltinFunctionKey, catchCreate: (param0: JSContext) => JSFunctionData)

@@ -14,8 +14,8 @@ export class FileFilterUtils extends Object {
     static ageFileFilter(paramarg0: number, paramarg1: boolean): IOFileFilter;
     static and(paramarg0: (Object | null)[]): IOFileFilter;
     static andFileFilter(paramarg0: IOFileFilter, paramarg1: IOFileFilter): IOFileFilter;
-    static asFileFilter(paramarg0: (param0: File) => kotlin.Boolean): IOFileFilter;
-    static asFileFilter(paramarg0: (param0: File, param1: string) => kotlin.Boolean): IOFileFilter;
+    static asFileFilter(paramarg0: (param0: File) => boolean): IOFileFilter;
+    static asFileFilter(paramarg0: (param0: File, param1: string) => boolean): IOFileFilter;
     static directoryFileFilter(): IOFileFilter;
     static falseFileFilter(): IOFileFilter;
     static fileFileFilter(): IOFileFilter;

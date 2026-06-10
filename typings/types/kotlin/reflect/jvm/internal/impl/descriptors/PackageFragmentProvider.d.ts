@@ -4,5 +4,5 @@ import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/
 import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export interface PackageFragmentProvider extends Object {
     getPackageFragments(arg0: FqName): PackageFragmentDescriptor[];
-    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): E[];
+    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];
 }

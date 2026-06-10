@@ -19,7 +19,7 @@ export class AccessorInfo extends SpecialMethodInfo {
     static getDynamicInfo(paramarg0: IAnnotatedElement): string;
     static inflectTarget(paramarg0: string, paramarg1: AccessorInfo$AccessorType, paramarg2: string, paramarg3: ISelectorContext, paramarg4: boolean): string;
     static inflectTarget(paramarg0: AccessorInfo$AccessorName, paramarg1: AccessorInfo$AccessorType, paramarg2: string, paramarg3: ISelectorContext, paramarg4: boolean): string;
-    static of(paramarg0: MixinTargetContext, paramarg1: MethodNode, paramarg2: Class<Object>): AccessorInfo;
+    static of(paramarg0: MixinTargetContext, paramarg1: MethodNode, paramarg2: Class<Annotation>): AccessorInfo;
     constructor(arg0: MixinTargetContext, arg1: MethodNode)
     constructor(arg0: MixinTargetContext, arg1: MethodNode, arg2: Class<Annotation>)
     // private annotationClass: Class<Annotation>;

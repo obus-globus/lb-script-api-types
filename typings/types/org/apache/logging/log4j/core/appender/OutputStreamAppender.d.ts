@@ -12,7 +12,7 @@ export class OutputStreamAppender extends AbstractOutputStreamAppender<OutputStr
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramlayout: Layout<Object>, paramfilter: Filter, paramtarget: OutputStream, paramname: string, paramfollow: boolean, paramignore: boolean): OutputStreamAppender;
+    static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramtarget: OutputStream, paramname: string, paramfollow: boolean, paramignore: boolean): OutputStreamAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: OutputStreamManager, ignoreExceptions: boolean, properties: Property[])

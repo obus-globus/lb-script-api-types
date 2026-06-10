@@ -1,8 +1,8 @@
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricEntityType$Builder$Mob } from '../../../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityType$Builder$Mob.d.ts'
 import type { FabricEntityTypeImpl$Builder$Living } from '../../../../../../net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder$Living.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/entity/EntitySpawnReason.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
@@ -15,8 +15,8 @@ export class FabricEntityTypeImpl$Builder$Mob<T extends Mob> extends FabricEntit
     constructor()
     // private placementHeightmap: Heightmap$Types;
     // private placementType: SpawnPlacementType;
-    // private spawnPredicate: (param0: T, param1: EntityType<Object>, param2: ServerLevelAccessor, param3: EntitySpawnReason, param4: BlockPos) => kotlin.Boolean;
+    // private spawnPredicate: (param0: EntityType<T>, param1: ServerLevelAccessor, param2: EntitySpawnReason, param3: BlockPos, param4: RandomSource) => boolean;
     defaultAttributes(arg0: () => AttributeSupplier$Builder): FabricEntityType$Builder$Mob<T>;
     onBuild(arg0: EntityType<T>): void;
-    spawnPlacement(arg0: SpawnPlacementType, arg1: Heightmap$Types, arg2: (param0: T, param1: EntityType<Object>, param2: ServerLevelAccessor, param3: EntitySpawnReason, param4: BlockPos) => kotlin.Boolean): FabricEntityType$Builder$Mob<T>;
+    spawnPlacement(arg0: SpawnPlacementType, arg1: Heightmap$Types, arg2: (param0: EntityType<T>, param1: ServerLevelAccessor, param2: EntitySpawnReason, param3: BlockPos, param4: RandomSource) => boolean): FabricEntityType$Builder$Mob<T>;
 }

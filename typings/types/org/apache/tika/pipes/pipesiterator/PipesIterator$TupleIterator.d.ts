@@ -6,7 +6,7 @@ export class PipesIterator$TupleIterator extends Object implements Iterator<Fetc
     private constructor(null_: PipesIterator$TupleIterator)
     // private next: FetchEmitTuple;
     // private checkThreadOk(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: FetchEmitTuple) => void): void;
     hasNext(): boolean;
     next(): FetchEmitTuple;
     // private pollNext(): FetchEmitTuple;

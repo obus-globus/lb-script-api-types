@@ -10,7 +10,7 @@ export class SinksKt extends Object {
     static writeIntLe(paramarg0: Sink, paramarg1: number): void;
     static writeLongLe(paramarg0: Sink, paramarg1: number): void;
     static writeShortLe(paramarg0: Sink, paramarg1: number): void;
-    static writeToInternalBuffer(paramarg0: Sink, paramarg1: (param0: Object | null) => void): void;
+    static writeToInternalBuffer(paramarg0: Sink, paramarg1: (param0: Object) => void): void;
 // (invalid TS: name contains '-')     static writeUByte-EK-6454(paramarg0: Sink, paramarg1: number): void;
 // (invalid TS: name contains '-')     static writeUInt-Qn1smSk(paramarg0: Sink, paramarg1: number): void;
 // (invalid TS: name contains '-')     static writeUIntLe-Qn1smSk(paramarg0: Sink, paramarg1: number): void;

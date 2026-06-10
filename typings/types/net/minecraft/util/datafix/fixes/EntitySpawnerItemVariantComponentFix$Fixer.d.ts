@@ -3,9 +3,9 @@ import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface EntitySpawnerItemVariantComponentFix$Fixer extends Function<Typed<Object>, Typed<Object>>, Object {
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: Typed<Object>) => V): (param0: Typed<Object>) => V;
     apply(components: Typed<Object>): Typed<Object>;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
-    fixRemainder(remainder: Dynamic<T>): Dynamic<T>;
-    fixRemainder(remainder: Dynamic<T>, bucketData: Dynamic<T>): Dynamic<T>;
+    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => Typed<Object>): (param0: V) => Typed<Object>;
+    fixRemainder<T extends Object | number | string | boolean>(remainder: Dynamic<T>): Dynamic<T>;
+    fixRemainder<T extends Object | number | string | boolean>(remainder: Dynamic<T>, bucketData: Dynamic<T>): Dynamic<T>;
 }

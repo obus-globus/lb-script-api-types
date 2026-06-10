@@ -23,7 +23,7 @@ export class ModuleNameProtect extends ClientModule {
     // private colorMode: ModeValueGroup<GenericColorMode<void>>;
     // private coloringInfo: NameProtectMappings$ColoringInfo;
     // private mappedCharListPool: Pool<ModuleNameProtect$MappedCharacter[]>;
-    // private orderedTextMappingCache: Map<(param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, ModuleNameProtect$WrappedOrderedText>;
+    // private orderedTextMappingCache: Map<(param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, ModuleNameProtect$WrappedOrderedText>;
     // private renderHandler: EventHook<GameTickEvent>;
     // private replacement: string;
     // private /*not mapped: */ getReplacement(): string;
@@ -31,6 +31,6 @@ export class ModuleNameProtect extends ClientModule {
     // private stringMappingCache: { [key: string]: string };
     replace(original: string): string;
     // private uncachedReplace(original: string): string;
-    // private uncachedWrap(original: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): ModuleNameProtect$WrappedOrderedText;
-    wrap(original: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private uncachedWrap(original: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): ModuleNameProtect$WrappedOrderedText;
+    wrap(original: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
 }

@@ -16,17 +16,17 @@ export class DefaultTrainingConfig extends Object implements TrainingConfig {
     readonly devices: Device[];
     readonly evaluators: Evaluator[];
     readonly executorService: ExecutorService;
-    readonly initializers: Pair<K, V>[];
+    readonly initializers: Pair<Initializer, (param0: Parameter) => boolean>[];
     // private listeners: TrainingListener[];
     // private loss: Loss;
     readonly optimizer: Optimizer;
     addEvaluator(arg0: Evaluator): DefaultTrainingConfig;
-    addEvaluators(arg0: E[]): DefaultTrainingConfig;
+    addEvaluators<T extends Evaluator>(arg0: T[]): DefaultTrainingConfig;
     addTrainingListeners(arg0: TrainingListener[]): DefaultTrainingConfig;
     getDevices(): Device[];
     getEvaluators(): Evaluator[];
     getExecutorService(): ExecutorService;
-    getInitializers(): Pair<K, V>[];
+    getInitializers(): Pair<Initializer, (param0: Parameter) => boolean>[];
     getLossFunction(): Loss;
     getOptimizer(): Optimizer;
     getTrainingListeners(): TrainingListener[];
@@ -34,7 +34,7 @@ export class DefaultTrainingConfig extends Object implements TrainingConfig {
     optExecutorService(): DefaultTrainingConfig;
     optExecutorService(arg0: ExecutorService): DefaultTrainingConfig;
     optInitializer(arg0: Initializer, arg1: Parameter$Type): DefaultTrainingConfig;
-    optInitializer(arg0: Initializer, arg1: (param0: Parameter) => kotlin.Boolean): DefaultTrainingConfig;
+    optInitializer(arg0: Initializer, arg1: (param0: Parameter) => boolean): DefaultTrainingConfig;
     optInitializer(arg0: Initializer, arg1: string): DefaultTrainingConfig;
     optOptimizer(arg0: Optimizer): DefaultTrainingConfig;
 }

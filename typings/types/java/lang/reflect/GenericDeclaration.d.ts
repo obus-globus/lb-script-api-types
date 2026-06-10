@@ -4,9 +4,9 @@ import type { TypeVariable } from '../../../java/lang/reflect/TypeVariable.d.ts'
 import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface GenericDeclaration extends AnnotatedElement, Object{
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
-    getDeclaredAnnotationsByType(arg0: Class<T>): T[];
+    getDeclaredAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getTypeParameters(): TypeVariable<Object>[];
     isAnnotationPresent(arg0: Class<Annotation>): boolean;
 }

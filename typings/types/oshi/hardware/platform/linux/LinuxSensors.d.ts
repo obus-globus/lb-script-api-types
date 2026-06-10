@@ -7,8 +7,8 @@ export class LinuxSensors extends AbstractSensors {
     static OSHI_THERMAL_ZONE_TYPE_PRIORITY: string;
     constructor()
     // private sensorsMap: { [key: string]: string };
-    // private getSensorFilesFromPath(arg0: string, arg1: string, arg2: (param0: File) => kotlin.Boolean): void;
-    // private getSensorFilesFromPath(arg0: string, arg1: string, arg2: (param0: File) => kotlin.Boolean, arg3: (param0: File[]) => kotlin.Int): void;
+    // private getSensorFilesFromPath(arg0: string, arg1: string, arg2: (param0: File) => boolean): void;
+    // private getSensorFilesFromPath(arg0: string, arg1: string, arg2: (param0: File) => boolean, arg3: (param0: File[]) => number): void;
     // private populateSensorsMapFromHwmon(): void;
     // private populateSensorsMapFromThermalZone(): void;
     queryCpuTemperature(): number;

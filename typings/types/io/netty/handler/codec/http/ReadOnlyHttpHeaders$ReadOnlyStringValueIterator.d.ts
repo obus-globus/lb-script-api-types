@@ -8,7 +8,7 @@ export class ReadOnlyHttpHeaders$ReadOnlyStringValueIterator extends Object impl
     // private nameHash: number;
     // private nextNameIndex: number;
     // private findNextValue(): number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
     remove(): void;

@@ -23,6 +23,6 @@ export class SelectorContents extends Record implements ComponentContents {
     selector(): CompilableString<EntitySelector>;
     separator(): Optional<Component>;
     toString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

@@ -51,7 +51,7 @@ export class MemberInfo extends Object implements ITargetSelectorConstructor, IT
     isField(): boolean;
     isFullyQualified(): boolean;
     isInitialiser(): boolean;
-    match(arg0: ElementNode<TNode>): MatchResult;
+    match<TNode extends Object | number | string | boolean>(arg0: ElementNode<TNode>): MatchResult;
     matches(arg0: string, arg1: string, arg2: string): MatchResult;
     move(arg0: string): ITargetSelectorRemappable;
     next(): ITargetSelector;

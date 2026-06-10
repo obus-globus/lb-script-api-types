@@ -31,7 +31,7 @@ export class AtlasManager extends Object implements AutoCloseable, FabricResourc
     getAtlasOrThrow(atlasId: Identifier): TextureAtlas;
     getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     updateMaxMipLevel(maxMipmapLevels: number): void;
     // private updateSpriteMaps(pendingStitches: AtlasManager$PendingStitchResults): void;
 }

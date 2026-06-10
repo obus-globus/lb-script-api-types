@@ -12,8 +12,8 @@ export class SparseImmutableTable<R extends Object | number | string | boolean, 
     static copyOf(paramtable: Table<Object, Object, Object>): ImmutableTable<Object, Object, Object>;
     static of(): ImmutableTable<Object, Object, Object>;
     static of(paramrowKey: Object | null, paramcolumnKey: Object | null, paramvalue: Object | null): ImmutableTable<Object, Object, Object>;
-    static toImmutableTable(paramrowFunction: (param0: Object | null) => Object | null, paramcolumnFunction: (param0: Object | null) => Object | null, paramvalueFunction: (param0: Object | null) => Object | null): Collector<Object, Object, Object>;
-    static toImmutableTable(paramrowFunction: (param0: Object | null) => Object | null, paramcolumnFunction: (param0: Object | null) => Object | null, paramvalueFunction: (param0: Object | null) => Object | null, parammergeFunction: (param0: Object | null, param1: Object | null) => unknown): Collector<Object, Object, Object>;
+    static toImmutableTable(paramrowFunction: (param0: Object) => Object | null, paramcolumnFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableTable<Object, Object, Object>>;
+    static toImmutableTable(paramrowFunction: (param0: Object) => Object | null, paramcolumnFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null, parammergeFunction: (param0: Object | null, param1: Object | null) => Object | null): Collector<Object, Object, ImmutableTable<Object, Object, Object>>;
     constructor(cellList: Table$Cell<R, C, V>[], rowSpace: R[], columnSpace: C[])
     // private cellColumnInRowIndices: number[];
     // private cellRowIndices: number[];

@@ -2,6 +2,7 @@ import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Era } from '../../../java/time/chrono/Era.d.ts'
 import type { TextStyle } from '../../../java/time/format/TextStyle.d.ts'
 import type { Temporal } from '../../../java/time/temporal/Temporal.d.ts'
+import type { TemporalAccessor } from '../../../java/time/temporal/TemporalAccessor.d.ts'
 import type { TemporalField } from '../../../java/time/temporal/TemporalField.d.ts'
 import type { TemporalQuery } from '../../../java/time/temporal/TemporalQuery.d.ts'
 import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
@@ -22,7 +23,7 @@ export class IsoEra extends Enum<IsoEra> implements Era {
     getLong(arg0: TemporalField): number;
     getValue(): number;
     isSupported(arg0: TemporalField): boolean;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     name(): "BCE" | "CE";
 }

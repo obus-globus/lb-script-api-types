@@ -4,10 +4,12 @@ import type { IntFunction } from '../../../../../../java/util/function/IntFuncti
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
+import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { InteractionResult } from '../../../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
+import type { FeatureElement } from '../../../../../../net/minecraft/world/flag/FeatureElement.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -39,7 +41,7 @@ export class MovingPistonBlock extends BaseEntityBlock {
     static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<MovingPistonBlock>;
     static FACING: EnumProperty<Direction>;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static TYPE: EnumProperty<PistonType>;
@@ -62,7 +64,7 @@ export class MovingPistonBlock extends BaseEntityBlock {
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: VoxelShape) => unknown): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;
@@ -84,7 +86,7 @@ export class MovingPistonBlock extends BaseEntityBlock {
     static popResourceFromFace(paramlevel: Level, parampos: BlockPos, paramface: Direction, paramitemStack: ItemStack): void;
     static pushEntitiesUp(paramstate: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static shouldRenderFace(paramstate: BlockState, paramneighborState: BlockState, paramdirection: Direction): boolean;
-    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Object | null): MapCodec<Object>;
+    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
     static stateById(paramidWithData: number): BlockState;
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
@@ -99,7 +101,7 @@ export class MovingPistonBlock extends BaseEntityBlock {
     getDrops(state: BlockState, params: LootParams$Builder): ItemStack[];
     getRenderShape(state: BlockState): RenderShape;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getTicker(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: T, param1: Level, param2: BlockPos, param3: BlockState) => void;
+    getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     isPathfindable(state: BlockState, type: PathComputationType): boolean;
     mirror(state: BlockState, mirror: Mirror): BlockState;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;

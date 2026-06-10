@@ -56,7 +56,7 @@ export class JSRuntime extends Object {
     static collectionToConsoleString(paramobj: JSDynamicObject, paramallowSideEffects: boolean, paramformat: ToDisplayStringFormat, paramname: TruffleString, parammap: JSHashMap, paramdepth: number): TruffleString;
     static comparePropertyKeys(paramkey1: Object, paramkey2: Object): number;
     static construct(paramfnObj: Object, paramarguments: (Object | null)[]): Object;
-    static createArrayFromList(paramcontext: JSContext, paramrealm: JSRealm, paramlist: (Object | null)[]): JSDynamicObject;
+    static createArrayFromList(paramcontext: JSContext, paramrealm: JSRealm, paramlist: Object[]): JSDynamicObject;
     static createDataProperty(paramo: JSDynamicObject, paramp: Object, paramv: Object): boolean;
     static createDataProperty(paramo: JSDynamicObject, paramp: Object, paramv: Object, paramdoThrow: boolean): boolean;
     static createDataPropertyOrThrow(paramo: JSDynamicObject, paramp: Object, paramv: Object): boolean;

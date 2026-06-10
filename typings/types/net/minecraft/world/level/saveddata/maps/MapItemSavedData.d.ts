@@ -52,7 +52,7 @@ export class MapItemSavedData extends SavedData {
     // private calculateRotation(level: LevelAccessor, yRot: number): number;
     checkBanners(level: BlockGetter, x: number, z: number): void;
     // private decorationTypeForPlayerOutsideMap(xDeltaFromCenter: number, yDeltaFromCenter: number): Holder<MapDecorationType>;
-    getBanners(): E[];
+    getBanners(): MapBanner[];
     getDecorations(): MapDecoration[];
     getHoldingPlayer(player: Player): MapItemSavedData$HoldingPlayer;
     getUpdatePacket(id: MapId, player: Player): Packet<Object>;

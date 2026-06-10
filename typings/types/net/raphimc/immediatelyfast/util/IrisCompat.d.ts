@@ -4,7 +4,7 @@ import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupp
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IrisCompat extends Object {
     static IRIS_LOADED: boolean;
-    static isRenderingLevel: () => kotlin.Boolean;
+    static isRenderingLevel: () => boolean;
     static renderWithExtendedVertexFormat: (param0: boolean) => void;
     static skipExtension: ThreadLocal<boolean>;
     static init(): void;

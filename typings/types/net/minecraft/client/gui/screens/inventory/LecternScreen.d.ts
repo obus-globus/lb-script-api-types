@@ -23,7 +23,7 @@ export class LecternScreen extends BookViewScreen implements MenuAccess<LecternM
     static PAGE_TEXT_X_OFFSET: number;
     static PAGE_TEXT_Y_OFFSET: number;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(menu: LecternMenu, inventory: (Object | null)[], title: Component)
     // private listener: ContainerListener;

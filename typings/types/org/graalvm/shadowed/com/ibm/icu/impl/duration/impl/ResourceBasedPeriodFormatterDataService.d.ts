@@ -3,10 +3,10 @@ import type { PeriodFormatterDataService } from '../../../../../../../../../org/
 export class ResourceBasedPeriodFormatterDataService extends PeriodFormatterDataService {
     static getInstance(): ResourceBasedPeriodFormatterDataService;
     private constructor()
-    readonly availableLocales: E[];
+    readonly availableLocales: string[];
     // private cache: { [key: string]: PeriodFormatterData };
     // private lastData: PeriodFormatterData;
     // private lastLocale: string;
     get(localeName: string): PeriodFormatterData;
-    getAvailableLocales(): E[];
+    getAvailableLocales(): string[];
 }

@@ -6,8 +6,8 @@ import type { EquipmentSlot } from '../../../../../net/minecraft/world/entity/Eq
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export interface ItemExtensions extends Object {
-    fabric_getCustomDamageHandler(): (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int;
-    fabric_getEquipmentSlotProvider(): (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot;
-    fabric_setCustomDamageHandler(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int): void;
-    fabric_setEquipmentSlotProvider(arg0: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot): void;
+    fabric_getCustomDamageHandler(): (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number;
+    fabric_getEquipmentSlotProvider(): (param0: LivingEntity, param1: ItemStack) => EquipmentSlot;
+    fabric_setCustomDamageHandler(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number): void;
+    fabric_setEquipmentSlotProvider(arg0: (param0: LivingEntity, param1: ItemStack) => EquipmentSlot): void;
 }

@@ -8,9 +8,9 @@ export interface Result<T extends Object | number | string | boolean> extends Ob
     getOrThrow(arg0: (param0: Throwable) => Throwable): T;
     isError(): boolean;
     isSuccessful(): boolean;
-    map(arg0: (param0: T) => N): Result<N>;
-    mapError(): Result<N>;
-    mapResult(arg0: (param0: T) => Result<N>): Result<N>;
+    map<N extends Object | number | string | boolean>(arg0: (param0: T) => N): Result<N>;
+    mapError<N extends Object | number | string | boolean>(): Result<N>;
+    mapResult<N extends Object | number | string | boolean>(arg0: (param0: T) => Result<N>): Result<N>;
     orElse(arg0: T): T;
     orElseThrow(arg0: (param0: Throwable) => Throwable): T;
 }

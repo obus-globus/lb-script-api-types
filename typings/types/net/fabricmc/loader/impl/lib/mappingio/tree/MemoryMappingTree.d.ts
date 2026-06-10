@@ -17,7 +17,7 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     constructor(arg0: boolean)
     // private classesByDstNames: { [key: string]: MemoryMappingTree$ClassEntry }[];
     // private classesBySrcName: { [key: string]: MemoryMappingTree$ClassEntry };
-    // private classesView: E[];
+    // private classesView: MemoryMappingTree$ClassEntry[];
     // private currentClass: MemoryMappingTree$ClassEntry;
     // private currentEntry: MemoryMappingTree$Entry<Object>;
     // private currentMethod: MemoryMappingTree$MethodEntry;
@@ -38,12 +38,12 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     assertNotInVisitPass(): void;
     getClass(arg0: string): MappingTree$ClassMapping;
     getClass(arg0: string, arg1: number): MappingTree$ClassMapping;
-    getClasses(): E[];
+    getClasses(): MappingTree$ClassMapping[];
     getDstNamespaces(): string[];
     getSrcNamespace(): string;
     // private getSrcNsEquivalent(arg0: MappingTree$ElementMapping): number;
     // private initClassesByDstNames(): void;
-    // private propagateNames(arg0: HierarchyInfoProvider<T>): void;
+    // private propagateNames<T extends Object | number | string | boolean>(arg0: HierarchyInfoProvider<T>): void;
     // private queuePendingClass(arg0: string): MemoryMappingTree$ClassEntry;
     // private queuePendingMember(arg0: string, arg1: string, arg2: boolean): MemoryMappingTree$MemberEntry<Object>;
     reset(): void;

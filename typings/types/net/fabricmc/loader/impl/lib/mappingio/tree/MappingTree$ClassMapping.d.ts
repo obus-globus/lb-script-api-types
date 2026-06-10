@@ -9,9 +9,9 @@ export interface MappingTree$ClassMapping extends Object, MappingTree$ElementMap
     getField(arg0: string, arg1: string): MappingTree$FieldMapping;
     getField(arg0: string, arg1: string, arg2: number): MappingTree$FieldMapping;
     getField(arg0: string, arg1: string, arg2: number): MappingTreeView$FieldMappingView;
-    getFields(): E[];
+    getFields(): MappingTree$FieldMapping[];
     getMethod(arg0: string, arg1: string): MappingTree$MethodMapping;
     getMethod(arg0: string, arg1: string, arg2: number): MappingTree$MethodMapping;
     getMethod(arg0: string, arg1: string, arg2: number): MappingTreeView$MethodMappingView;
-    getMethods(): E[];
+    getMethods(): MappingTree$MethodMapping[];
 }

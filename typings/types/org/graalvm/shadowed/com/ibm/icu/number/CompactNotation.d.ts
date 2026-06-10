@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CompactData$CompactType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/CompactData$CompactType.d.ts'
 import type { MicroPropsGenerator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/MicroPropsGenerator.d.ts'
 import type { MutablePatternModifier } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/MutablePatternModifier.d.ts'
@@ -12,7 +11,7 @@ export class CompactNotation extends Notation {
     static compactLong(): CompactNotation;
     static compactShort(): CompactNotation;
     static engineering(): ScientificNotation;
-    static forCustomData(paramcompactCustomData: { [key: string]: Object | null }): CompactNotation;
+    static forCustomData(paramcompactCustomData: { [key: string]: { [key: string]: string } }): CompactNotation;
     static scientific(): ScientificNotation;
     static simple(): SimpleNotation;
     constructor(compactCustomData: { [key: string]: { [key: string]: string } })

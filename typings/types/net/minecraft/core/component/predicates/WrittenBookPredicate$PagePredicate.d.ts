@@ -6,16 +6,16 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { Filterable } from '../../../../../net/minecraft/server/network/Filterable.d.ts'
 export class WrittenBookPredicate$PagePredicate extends Record implements Predicate<Filterable<Component>> {
     static CODEC: Codec<WrittenBookPredicate$PagePredicate>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(contents: Component)
     // private contents: Component;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: Filterable<Component>) => boolean): (param0: Filterable<Component>) => boolean;
     contents(): Component;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: Filterable<Component>) => boolean;
+    or(arg0: (param0: Filterable<Component>) => boolean): (param0: Filterable<Component>) => boolean;
     test(value: Filterable<Component>): boolean;
     toString(): string;
 }

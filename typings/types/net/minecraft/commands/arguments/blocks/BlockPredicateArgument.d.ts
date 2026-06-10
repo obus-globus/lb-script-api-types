@@ -14,14 +14,13 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
 import type { BlockInWorld } from '../../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 export class BlockPredicateArgument extends Object implements ArgumentType<BlockPredicateArgument$Result> {
     static blockPredicate(paramcontext: CommandBuildContext): BlockPredicateArgument;
-    static getBlockPredicate(paramcontext: CommandContext<CommandSourceStack>, paramname: string): (param0: BlockInWorld) => kotlin.Boolean;
+    static getBlockPredicate(paramcontext: CommandContext<CommandSourceStack>, paramname: string): (param0: BlockInWorld) => boolean;
     static parse(paramblocks: HolderLookup<Block>, paramreader: StringReader): BlockPredicateArgument$Result;
     constructor(context: CommandBuildContext)
     // private blocks: HolderLookup<Block>;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): BlockPredicateArgument$Result;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): BlockPredicateArgument$Result;
+    parse(reader: StringReader): BlockPredicateArgument$Result;
 }

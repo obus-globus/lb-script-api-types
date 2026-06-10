@@ -4,6 +4,7 @@ import type { LongSupplier } from '../../java/util/function/LongSupplier.d.ts'
 import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { LongStream } from '../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Throwable } from '../../java/lang/Throwable.d.ts'
 export class OptionalLong extends Object {
     static empty(): OptionalLong;
     static of(paramarg0: number): OptionalLong;
@@ -19,9 +20,9 @@ export class OptionalLong extends Object {
     isEmpty(): boolean;
     isPresent(): boolean;
     orElse(arg0: number): number;
-    orElseGet(arg0: () => kotlin.Long): number;
+    orElseGet(arg0: () => number): number;
     orElseThrow(): number;
-    orElseThrow(arg0: () => X): number;
+    orElseThrow<X extends Throwable>(arg0: () => X): number;
     stream(): LongStream;
     toString(): string;
 }

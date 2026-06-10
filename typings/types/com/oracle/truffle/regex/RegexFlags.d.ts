@@ -9,8 +9,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegexFlags extends AbstractConstantKeysObject implements JsonConvertible {
     static DEFAULT: RegexFlags;
     static builder(): RegexFlags$Builder;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     static isValidFlagChar(paramcandidateChar: string): boolean;
     static isValidLocalFlagChar(paramcandidateChar: string): boolean;
     static parseFlags(paramsource: RegexSource): RegexFlags;

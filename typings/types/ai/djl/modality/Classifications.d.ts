@@ -20,12 +20,12 @@ export class Classifications extends Object implements Ensembleable<Classificati
     getClassNames(): string[];
     getProbabilities(): number[];
     item<T extends Classifications$Classification>(arg0: number): T;
-    items(): T[];
+    items<T extends Classifications$Classification>(): T[];
     serialize(): JsonElement;
     setTopK(arg0: number): void;
     toByteBuffer(): ByteBuffer;
     toJson(): string;
     toString(): string;
-    topK(): T[];
-    topK(arg0: number): T[];
+    topK<T extends Classifications$Classification>(): T[];
+    topK<T extends Classifications$Classification>(arg0: number): T[];
 }

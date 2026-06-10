@@ -3,13 +3,13 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class TopKSelector<T extends Object | number | string | boolean> extends Object {
     static greatest(paramk: number): TopKSelector<Object>;
-    static greatest(paramk: number, paramcomparator: (param0: Object | null) => kotlin.Boolean): TopKSelector<Object>;
+    static greatest(paramk: number, paramcomparator: (param0: Object) => boolean): TopKSelector<Object>;
     static least(paramk: number): TopKSelector<Object>;
-    static least(paramk: number, paramcomparator: (param0: Object | null) => kotlin.Boolean): TopKSelector<Object>;
-    private constructor(comparator: (param0: T) => kotlin.Boolean, k: number)
+    static least(paramk: number, paramcomparator: (param0: Object) => boolean): TopKSelector<Object>;
+    private constructor(comparator: (param0: Object) => boolean, k: number)
     // private buffer: T[];
     // private bufferSize: number;
-    // private comparator: (param0: T) => kotlin.Boolean;
+    // private comparator: (param0: Object) => boolean;
     // private k: number;
     // private threshold: T;
     combine(other: TopKSelector<T>): TopKSelector<T>;

@@ -20,8 +20,8 @@ export class InstrumentCache extends Object {
     getId(): string;
     getName(): string;
     getResourceCache(resourceId: string): InternalResourceCache;
-    getResourceIds(): E[];
-    getResources(): E[];
+    getResourceIds(): string[];
+    getResources(): InternalResourceCache[];
     getSandboxPolicy(): SandboxPolicy;
     getVersion(): string;
     getWebsite(): string;

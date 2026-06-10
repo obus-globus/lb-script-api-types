@@ -8,6 +8,6 @@ export class UnsignedBytes$ArraysCompareUnsignedComparatorMaker extends Enum<Uns
     static valueOf(paramname: string): UnsignedBytes$ArraysCompareUnsignedComparatorMaker;
     static values(): (Object | null)[];
     private constructor()
-    tryMakeArraysCompareUnsignedComparator(): (param0: number[]) => kotlin.Boolean;
+    tryMakeArraysCompareUnsignedComparator(): (param0: Object) => boolean;
     name(): "INSTANCE";
 }

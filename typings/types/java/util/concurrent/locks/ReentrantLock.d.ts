@@ -12,9 +12,9 @@ export class ReentrantLock extends Object implements Serializable, Lock {
     getHoldCount(): number;
     getOwner(): Thread;
     getQueueLength(): number;
-    getQueuedThreads(): E[];
+    getQueuedThreads(): Thread[];
     getWaitQueueLength(arg0: Condition): number;
-    getWaitingThreads(arg0: Condition): E[];
+    getWaitingThreads(arg0: Condition): Thread[];
     hasQueuedThread(arg0: Thread): boolean;
     hasQueuedThreads(): boolean;
     hasWaiters(arg0: Condition): boolean;

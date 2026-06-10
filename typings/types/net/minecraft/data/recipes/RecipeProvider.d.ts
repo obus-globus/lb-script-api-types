@@ -18,6 +18,7 @@ import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStackTemplate } from '../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
+import type { AbstractCookingRecipe } from '../../../../net/minecraft/world/item/crafting/AbstractCookingRecipe.d.ts'
 import type { AbstractCookingRecipe$CookingBookInfo } from '../../../../net/minecraft/world/item/crafting/AbstractCookingRecipe$CookingBookInfo.d.ts'
 import type { AbstractCookingRecipe$Factory } from '../../../../net/minecraft/world/item/crafting/AbstractCookingRecipe$Factory.d.ts'
 import type { CookingBookCategory } from '../../../../net/minecraft/world/item/crafting/CookingBookCategory.d.ts'
@@ -57,7 +58,7 @@ export abstract class RecipeProvider extends Object {
     colorWithDye(dyes: Item[], dyedItems: Item[], uncoloredItem: Item, groupName: string, category: RecipeCategory): void;
     coloredTerracottaFromTerracottaAndDye(result: ItemLike, dye: ItemLike): void;
     concretePowder(result: ItemLike, dye: ItemLike): void;
-    cookRecipes(source: string, factory: (param0: T, param1: Recipe$CommonInfo, param2: AbstractCookingRecipe$CookingBookInfo, param3: Ingredient, param4: ItemStackTemplate, param5: number) => unknown, cookingTime: number): void;
+    cookRecipes<T extends AbstractCookingRecipe>(source: string, factory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T, cookingTime: number): void;
     copperBulb(copperBulb: Block, copperMaterial: Block): void;
     copySmithingTemplate(smithingTemplate: ItemLike, baseMaterials: Ingredient): void;
     copySmithingTemplate(smithingTemplate: ItemLike, baseMaterial: ItemLike): void;
@@ -90,7 +91,7 @@ export abstract class RecipeProvider extends Object {
     oneToOneConversionRecipe(product: ItemLike, resource: ItemLike, group: string): void;
     oneToOneConversionRecipe(product: ItemLike, resource: ItemLike, group: string, productCount: number): void;
     oreBlasting(smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string): void;
-    oreCooking(factory: (param0: T, param1: Recipe$CommonInfo, param2: AbstractCookingRecipe$CookingBookInfo, param3: Ingredient, param4: ItemStackTemplate, param5: number) => unknown, smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string, fromDesc: string): void;
+    oreCooking<T extends AbstractCookingRecipe>(factory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T, smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string, fromDesc: string): void;
     oreSmelting(smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string): void;
     planksFromLog(result: ItemLike, logs: TagKey<Item>, count: number): void;
     planksFromLogs(result: ItemLike, logs: TagKey<Item>, count: number): void;
@@ -105,7 +106,7 @@ export abstract class RecipeProvider extends Object {
     shapeless(category: RecipeCategory, item: ItemLike, count: number): ShapelessRecipeBuilder;
     shelf(result: ItemLike, strippedLogs: ItemLike): void;
     signBuilder(result: ItemLike, planks: Ingredient): RecipeBuilder;
-    simpleCookingRecipe(source: string, factory: (param0: T, param1: Recipe$CommonInfo, param2: AbstractCookingRecipe$CookingBookInfo, param3: Ingredient, param4: ItemStackTemplate, param5: number) => unknown, cookingTime: number, base: ItemLike, result: ItemLike, experience: number): void;
+    simpleCookingRecipe<T extends AbstractCookingRecipe>(source: string, factory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T, cookingTime: number, base: ItemLike, result: ItemLike, experience: number): void;
     slab(category: RecipeCategory, result: ItemLike, base: ItemLike): void;
     slabBuilder(category: RecipeCategory, result: ItemLike, base: Ingredient): RecipeBuilder;
     smeltingResultFromBase(result: ItemLike, base: ItemLike): void;

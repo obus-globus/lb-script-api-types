@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -10,7 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ClientboundCustomChatCompletionsPacket$Action } from '../../../../../net/minecraft/network/protocol/game/ClientboundCustomChatCompletionsPacket$Action.d.ts'
 export class ClientboundCustomChatCompletionsPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomChatCompletionsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor(input: FriendlyByteBuf)
     constructor(action: ClientboundCustomChatCompletionsPacket$Action, entries: string[])
     // private action: ClientboundCustomChatCompletionsPacket$Action;

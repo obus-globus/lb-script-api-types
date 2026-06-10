@@ -6,7 +6,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { DialogBody } from '../../../../../net/minecraft/server/dialog/body/DialogBody.d.ts'
 export class PlainMessage extends Record implements DialogBody {
     static CODEC: Codec<PlainMessage>;
-    static COMPACT_LIST_CODEC: Codec<Object>;
+    static COMPACT_LIST_CODEC: Codec<DialogBody[]>;
     static DEFAULT_WIDTH: number;
     static DIALOG_BODY_CODEC: Codec<DialogBody>;
     static MAP_CODEC: MapCodec<PlainMessage>;

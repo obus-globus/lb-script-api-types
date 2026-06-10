@@ -7,10 +7,10 @@ export class IntObjectHashMap$PrimitiveIterator extends Object implements IntObj
     // private entryIndex: number;
     // private nextIndex: number;
     // private prevIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: IntObjectMap$PrimitiveEntry<V>) => void): void;
     hasNext(): boolean;
     key(): number;
-    next(): IntObjectMap$PrimitiveEntry<V>;
+    next<V extends Object | number | string | boolean>(): IntObjectMap$PrimitiveEntry<V>;
     remove(): void;
     // private scanNext(): void;
     setValue<V extends Object | number | string | boolean>(arg0: V): void;

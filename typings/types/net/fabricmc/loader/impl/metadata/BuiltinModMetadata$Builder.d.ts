@@ -4,17 +4,18 @@ import type { ContactInformation } from '../../../../../net/fabricmc/loader/api/
 import type { ModDependency } from '../../../../../net/fabricmc/loader/api/metadata/ModDependency.d.ts'
 import type { ModEnvironment } from '../../../../../net/fabricmc/loader/api/metadata/ModEnvironment.d.ts'
 import type { ModMetadata } from '../../../../../net/fabricmc/loader/api/metadata/ModMetadata.d.ts'
+import type { Person } from '../../../../../net/fabricmc/loader/api/metadata/Person.d.ts'
 export class BuiltinModMetadata$Builder extends Object {
     constructor(arg0: string, arg1: string)
-    // private authors: E[];
+    // private authors: Person[];
     // private contact: ContactInformation;
-    // private contributors: E[];
-    // private dependencies: E[];
+    // private contributors: Person[];
+    // private dependencies: ModDependency[];
     // private description: string;
     // private environment: ModEnvironment;
     // private icons: { [key: number]: string };
     // private id: string;
-    // private license: E[];
+    // private license: string[];
     // private name: string;
     // private version: Version;
     addAuthor(arg0: string, arg1: { [key: string]: string }): BuiltinModMetadata$Builder;

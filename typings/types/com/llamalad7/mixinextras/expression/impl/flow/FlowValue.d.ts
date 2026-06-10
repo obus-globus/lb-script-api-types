@@ -19,7 +19,7 @@ export class FlowValue extends Object implements Value {
     getDecorations(): { [key: string]: Object };
     getInput(arg0: number): FlowValue;
     getInsn(): AbstractInsnNode;
-    getNext(): E[];
+    getNext(): Pair<FlowValue, number>[];
     getSize(): number;
     getType(): Type;
     hasDecoration(arg0: string): boolean;

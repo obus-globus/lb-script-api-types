@@ -11,13 +11,13 @@ import type { LootPoolEntryContainer } from '../../../../../../../net/minecraft/
 import type { SequentialEntry$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/entries/SequentialEntry$Builder.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class SequentialEntry extends CompositeEntryBase {
-    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
-    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
+    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static MAP_CODEC: MapCodec<SequentialEntry>;
     static NO_CHILDREN_PROBLEM: ProblemReporter$Problem;
-    static createCodec(paramconstructor: (param0: Object | null, param1: LootPoolEntryContainer[]) => unknown): MapCodec<Object>;
+    static createCodec(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => CompositeEntryBase | null): MapCodec<CompositeEntryBase>;
     static sequential(paramentries: Object | null): SequentialEntry$Builder;
     constructor(children: LootPoolEntryContainer[], conditions: LootItemCondition[])
     codec(): MapCodec<SequentialEntry>;
-    compose(entries: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean[]): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    compose(entries: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean[]): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
 }

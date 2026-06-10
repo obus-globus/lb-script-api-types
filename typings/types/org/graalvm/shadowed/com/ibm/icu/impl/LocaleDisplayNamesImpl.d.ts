@@ -44,7 +44,7 @@ export class LocaleDisplayNamesImpl extends LocaleDisplayNames {
     getContext(type: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiListCompareWholeItems(localeSet: ULocale[], comparator: (param0: LocaleDisplayNames$UiListItem) => kotlin.Boolean): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(localeSet: ULocale[], comparator: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
     keyDisplayName(key: string): string;
     // private keyDisplayName(key: string, skipAdjust: boolean): string;
     keyValueDisplayName(key: string, value: string): string;

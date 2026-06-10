@@ -9,7 +9,7 @@ import type { FormattedCharSequence } from '../../../../../../../net/minecraft/u
 import type { FormattedCharSink } from '../../../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 import type { TooltipComponent } from '../../../../../../../net/minecraft/world/inventory/tooltip/TooltipComponent.d.ts'
 export class ClientActivePlayersTooltip extends Object implements ClientTooltipComponent {
-    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): ClientTooltipComponent;
+    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): ClientTooltipComponent;
     static create(paramcomponent: TooltipComponent): ClientTooltipComponent;
     constructor(activePlayersTooltip: ClientActivePlayersTooltip$ActivePlayersTooltip)
     // private activePlayers: PlayerSkinRenderCache$RenderInfo[];

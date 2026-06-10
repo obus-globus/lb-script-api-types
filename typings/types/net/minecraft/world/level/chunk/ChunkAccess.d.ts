@@ -5,6 +5,7 @@ import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { AttachmentTarget } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentTarget$OnAttachedSet } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget$OnAttachedSet.d.ts'
 import type { AttachmentType } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
@@ -54,7 +55,7 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
-    static problemPath(parampos: ChunkPos): () => kotlin.String;
+    static problemPath(parampos: ChunkPos): () => string;
     static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, inhabitedTime: number, sections: LevelChunkSection[], blendingData: BlendingData)
     // private attachedChangedListeners: Map<Object, Object>;
@@ -100,12 +101,12 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
-    fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
+    fabric_updateSyncTarget<T extends Object | number | string | boolean>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<Object>, arg1: AttachmentTargetInfo<Object>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fillBiomesFromNoise(biomeResolver: BiomeResolver, sampler: Climate$Sampler): void;
     findBlockLightSources(consumer: (param0: BlockPos, param1: BlockState) => void): void;
-    findBlocks(predicate: (param0: BlockState) => kotlin.Boolean, consumer: (param0: BlockPos, param1: BlockState) => void): void;
+    findBlocks(predicate: (param0: BlockState) => boolean, consumer: (param0: BlockPos, param1: BlockState) => void): void;
     getAllReferences(): Map<Structure, (Object | null)[]>;
     getAllStarts(): Map<Structure, StructureStart>;
     getAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
@@ -126,7 +127,7 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     getHeight(): number;
     getHeight(type: Heightmap$Types, x: number, z: number): number;
     getHeightAccessorForGeneration(): LevelHeightAccessor;
-    getHeightmaps(): E[];
+    getHeightmaps(): Map$Entry<Heightmap$Types, Heightmap>[];
     getHighestFilledSectionIndex(): number;
     getHighestGeneratedStatus(): ChunkStatus;
     getHighestSectionPosition(): number;
@@ -158,10 +159,10 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     isYSpaceEmpty(yStartInclusive: number, yEndInclusive: number): boolean;
     markPosForPostprocessing(blockPos: BlockPos): void;
     markUnsaved(): void;
-    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => unknown): A;
-    onAttachedSet(arg0: AttachmentType<A>): Event<(param0: A, param1: Object | null) => void>;
+    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
+    onAttachedSet<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;
     onAttachedSet(arg0: AttachmentType<Object>): Event<Object>;
-    problemPath(): () => kotlin.String;
+    problemPath(): () => string;
     removeAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     removeBlockEntity(pos: BlockPos): void;
     setAllReferences(data: Map<Structure, (Object | null)[]>): void;

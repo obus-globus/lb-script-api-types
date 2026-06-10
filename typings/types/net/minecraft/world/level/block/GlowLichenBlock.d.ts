@@ -6,9 +6,11 @@ import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunct
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
+import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { FeatureElement } from '../../../../../net/minecraft/world/flag/FeatureElement.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -32,7 +34,7 @@ export class GlowLichenBlock extends MultifaceSpreadeableBlock implements Boneme
     static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<GlowLichenBlock>;
     static CODEC: MapCodec<MultifaceBlock>;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static UPDATE_ALL: number;
@@ -56,7 +58,7 @@ export class GlowLichenBlock extends MultifaceSpreadeableBlock implements Boneme
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: VoxelShape) => unknown): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
     static byItem(paramitem: Item): Block;
     static canAttachTo(paramlevel: BlockGetter, parampos: BlockPos, paramdirectionTowardsNeighbour: Direction): boolean;
     static canAttachTo(paramlevel: BlockGetter, paramdirectionTowardsNeighbour: Direction, paramneighbourPos: BlockPos, paramneighbourState: BlockState): boolean;
@@ -69,7 +71,7 @@ export class GlowLichenBlock extends MultifaceSpreadeableBlock implements Boneme
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos): void;
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemStack): void;
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
-    static emission(paramlightEmission: number): (param0: BlockState) => kotlin.Int;
+    static emission(paramlightEmission: number): (param0: BlockState) => number;
     static findSpreadableNeighbourPos(paramlevel: Level, parampos: BlockPos, paramblockToPlace: BlockState): Optional<BlockPos>;
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
@@ -80,12 +82,12 @@ export class GlowLichenBlock extends MultifaceSpreadeableBlock implements Boneme
     static isExceptionForConnection(paramstate: BlockState): boolean;
     static isFaceFull(paramshape: VoxelShape, paramdirection: Direction): boolean;
     static isShapeFullBlock(paramarg0: VoxelShape): boolean;
-    static pack(paramdirections: E[]): number;
+    static pack(paramdirections: Direction[]): number;
     static popResource(paramlevel: Level, parampos: BlockPos, paramitemStack: ItemStack): void;
     static popResourceFromFace(paramlevel: Level, parampos: BlockPos, paramface: Direction, paramitemStack: ItemStack): void;
     static pushEntitiesUp(paramstate: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static shouldRenderFace(paramstate: BlockState, paramneighborState: BlockState, paramdirection: Direction): boolean;
-    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Object | null): MapCodec<Object>;
+    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
     static stateById(paramidWithData: number): BlockState;
     static unpack(paramdata: number): Direction[];
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;

@@ -11,11 +11,11 @@ export class ClientboundUpdateAttributesPacket$AttributeSnapshot extends Record 
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAttributesPacket$AttributeSnapshot>;
     // private attribute: Holder<Attribute>;
     // private base: number;
-    // private modifiers: E[];
+    // private modifiers: AttributeModifier[];
     attribute(): Holder<Attribute>;
     base(): number;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    modifiers(): E[];
+    modifiers(): AttributeModifier[];
     toString(): string;
 }

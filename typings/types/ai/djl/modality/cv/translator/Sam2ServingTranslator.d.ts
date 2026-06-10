@@ -9,8 +9,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Sam2ServingTranslator extends Object implements Translator<Input, Output> {
     constructor(arg0: Sam2Translator)
     // private translator: Sam2Translator;
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    batchProcessInput(arg0: TranslatorContext, arg1: Input[]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output[];
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;

@@ -12,8 +12,8 @@ export class StackedItemContents extends Object {
     accountSimpleStack(itemStack: ItemStack): void;
     accountStack(itemStack: ItemStack): void;
     accountStack(itemStack: ItemStack, maxCount: number): void;
-    // private canCraft(contents: (param0: Holder<Item>) => kotlin.Boolean[], amount: number, output: (param0: Holder<Item>) => void): boolean;
-    canCraft(contents: (param0: Holder<Item>) => kotlin.Boolean[], output: (param0: Holder<Item>) => void): boolean;
+    // private canCraft(contents: (param0: Holder<Item>) => boolean[], amount: number, output: (param0: Holder<Item>) => void): boolean;
+    canCraft(contents: (param0: Holder<Item>) => boolean[], output: (param0: Holder<Item>) => void): boolean;
     canCraft(recipe: Recipe<Object>, amount: number, output: (param0: Holder<Item>) => void): boolean;
     canCraft(recipe: Recipe<Object>, output: (param0: Holder<Item>) => void): boolean;
     clear(): void;

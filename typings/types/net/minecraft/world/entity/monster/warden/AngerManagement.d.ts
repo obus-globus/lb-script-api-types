@@ -9,12 +9,12 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { AngerManagement$Sorter } from '../../../../../../net/minecraft/world/entity/monster/warden/AngerManagement$Sorter.d.ts'
 export class AngerManagement extends Object {
-    static codec(paramfilter: (param0: Entity) => kotlin.Boolean): Codec<AngerManagement>;
-    constructor(filter: (param0: Entity) => kotlin.Boolean, angerByUuid: Pair<UUID, number>[])
+    static codec(paramfilter: (param0: Entity) => boolean): Codec<AngerManagement>;
+    constructor(filter: (param0: Entity) => boolean, angerByUuid: Pair<UUID, number>[])
     // private angerBySuspect: Object2IntMap<Entity>;
     // private angerByUuid: Object2IntMap<UUID>;
     // private conversionDelay: number;
-    // private filter: (param0: Entity) => kotlin.Boolean;
+    // private filter: (param0: Entity) => boolean;
     // private highestAnger: number;
     // private suspectSorter: AngerManagement$Sorter;
     // private suspects: Entity[];
@@ -26,5 +26,5 @@ export class AngerManagement extends Object {
     // private getTopSuspect(): Entity;
     increaseAnger(entity: Entity, increment: number): number;
     // private sortAndUpdateHighestAnger(): void;
-    tick(level: ServerLevel, validEntity: (param0: Entity) => kotlin.Boolean): void;
+    tick(level: ServerLevel, validEntity: (param0: Entity) => boolean): void;
 }

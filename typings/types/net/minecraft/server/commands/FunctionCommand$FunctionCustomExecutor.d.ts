@@ -10,6 +10,6 @@ export abstract class FunctionCommand$FunctionCustomExecutor extends CustomComma
     static SINGLE_SUCCESS: number;
     private constructor()
     arguments(context: CommandContext<CommandSourceStack>): CompoundTag;
-    run(context: CommandContext<T>): number;
+    run(context: CommandContext<CommandSourceStack>): number;
     runGuarded(sender: CommandSourceStack, currentStep: ContextChain<CommandSourceStack>, modifiers: ChainModifiers, output: ExecutionControl<CommandSourceStack>): void;
 }

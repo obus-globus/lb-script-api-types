@@ -1,3 +1,4 @@
+import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
@@ -18,6 +19,7 @@ import type { DifficultyInstance } from '../../../../../../net/minecraft/world/D
 import type { InteractionHand } from '../../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { DamageSource } from '../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { AgeableMob } from '../../../../../../net/minecraft/world/entity/AgeableMob.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityDimensions } from '../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
@@ -37,6 +39,7 @@ import type { AttributeSupplier$Builder } from '../../../../../../net/minecraft/
 import type { GossipContainer } from '../../../../../../net/minecraft/world/entity/ai/gossip/GossipContainer.d.ts'
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 import type { ReputationEventType } from '../../../../../../net/minecraft/world/entity/ai/village/ReputationEventType.d.ts'
+import type { PoiType } from '../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 import type { ItemEntity } from '../../../../../../net/minecraft/world/entity/item/ItemEntity.d.ts'
 import type { AbstractVillager } from '../../../../../../net/minecraft/world/entity/npc/villager/AbstractVillager.d.ts'
 import type { VillagerData } from '../../../../../../net/minecraft/world/entity/npc/villager/VillagerData.d.ts'
@@ -96,8 +99,8 @@ export class Villager extends AbstractVillager implements VillagerAccessor, Repu
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
-    static POI_MEMORIES: Map<Object | null, Object | null>;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
+    static POI_MEMORIES: Map<MemoryModuleType<GlobalPos>, (param0: Villager, param1: Holder<PoiType>) => boolean>;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
@@ -143,10 +146,10 @@ export class Villager extends AbstractVillager implements VillagerAccessor, Repu
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static canUseGoldenDandelion(paramitemInHand: ItemStack, paramisBaby: boolean, paramcooldown: number, parammob: Mob): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static createAttributes(): AttributeSupplier$Builder;

@@ -7,6 +7,6 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export abstract class FieldMapCodec$Builder$OptionalStage<T extends Object | number | string | boolean> extends FieldMapCodec$Builder<T> {
     constructor(arg0: Codec<T>, arg1: string)
     defaulted(arg0: T): MapCodec<T>;
-    defaulted(arg0: (param0: T) => kotlin.Boolean, arg1: () => T): MapCodec<T>;
+    defaulted(arg0: (param0: T) => boolean, arg1: () => T): MapCodec<T>;
     elseGet(arg0: () => T): MapCodec<T>;
 }

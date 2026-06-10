@@ -14,11 +14,11 @@ export class NBTType extends Object {
     static LIST: number;
     static LONG: number;
     static LONG_ARRAY: number;
-    static REGISTRY: { [key: number]: Object | null };
+    static REGISTRY: { [key: number]: () => NBTTag<Object> };
     static SHORT: number;
     static STRING: number;
     static createEmpty(paramarg0: number): NBTTag<Object>;
-    static getTypeOf(paramarg0: Class<Object>): number;
+    static getTypeOf(paramarg0: Class<NBTTag<Object>>): number;
     static register(paramarg0: Class<Object>, paramarg1: number, paramarg2: () => Object | null): void;
     constructor()
 }

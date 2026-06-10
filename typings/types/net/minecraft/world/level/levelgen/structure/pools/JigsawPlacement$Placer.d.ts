@@ -22,5 +22,5 @@ export class JigsawPlacement$Placer extends Object {
     // private pools: StructureTemplatePool[];
     // private random: RandomSource;
     // private structureTemplateManager: StructureTemplateManager;
-    // private tryPlacingChildren(sourcePiece: PoolElementStructurePiece, contextFree: MutableObject<VoxelShape>, depth: number, doExpansionHack: boolean, heightAccessor: LevelHeightAccessor, randomState: RandomState, poolAliasLookup: (param0: ResourceKey<StructureTemplatePool>) => net.minecraft.resources.ResourceKey<net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool>, liquidSettings: LiquidSettings): void;
+    // private tryPlacingChildren(sourcePiece: PoolElementStructurePiece, contextFree: MutableObject<VoxelShape>, depth: number, doExpansionHack: boolean, heightAccessor: LevelHeightAccessor, randomState: RandomState, poolAliasLookup: (param0: ResourceKey<StructureTemplatePool>) => ResourceKey<StructureTemplatePool>, liquidSettings: LiquidSettings): void;
 }

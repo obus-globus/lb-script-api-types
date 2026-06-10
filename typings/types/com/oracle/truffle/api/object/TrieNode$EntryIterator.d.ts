@@ -8,7 +8,7 @@ export class TrieNode$EntryIterator<E extends Object | number | string | boolean
     // private nextEntry: E;
     // private nextIndex: number;
     // private advance(): E;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
 }

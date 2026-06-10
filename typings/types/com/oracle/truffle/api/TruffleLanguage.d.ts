@@ -24,8 +24,8 @@ export abstract class TruffleLanguage<C extends Object | number | string | boole
     // private polyglotLanguageInstance: Object;
     areOptionsCompatible(firstOptions: OptionValues, newOptions: OptionValues): boolean;
     createContext(env: TruffleLanguage$Env): C;
-    createContextLocal(factory: (param0: C) => T): ContextLocal<T>;
-    createContextThreadLocal(factory: (param0: C, param1: T) => unknown): ContextThreadLocal<T>;
+    createContextLocal<T extends Object | number | string | boolean>(factory: (param0: C) => T): ContextLocal<T>;
+    createContextThreadLocal<T extends Object | number | string | boolean>(factory: (param0: C, param1: Thread) => T): ContextThreadLocal<T>;
     disposeContext(context: C): void;
     disposeThread(context: C, thread: Thread): void;
     exitContext(context: C, exitMode: TruffleLanguage$ExitMode, exitCode: number): void;

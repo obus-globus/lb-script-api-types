@@ -10,8 +10,8 @@ import type { JSArrayObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ArrayLiteralNode$DefaultObjectArrayWithEmptyLiteralNode extends ArrayLiteralNode$DefaultArrayLiteralNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramelements: (Object | null)[]): ArrayLiteralNode;
     static createByteArray(paramvalues: (Object | null)[]): number[];
     static createDoubleArray(paramvalues: (Object | null)[]): number[];

@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -28,7 +29,7 @@ export class ClientboundGameEventPacket extends Object implements Packet<ClientG
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundGameEventPacket>;
     static THUNDER_LEVEL_CHANGE: ClientboundGameEventPacket$Type;
     static WIN_GAME: ClientboundGameEventPacket$Type;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor(input: FriendlyByteBuf)
     constructor(event: ClientboundGameEventPacket$Type, param: number)
     readonly event: ClientboundGameEventPacket$Type;

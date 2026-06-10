@@ -5,11 +5,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2IntAVLTreeMap$EntryIterator extends Object2IntAVLTreeMap$TreeIterator implements ObjectListIterator<Object2IntMap$Entry<K>> {
     constructor(null_: Object2IntAVLTreeMap$EntryIterator)
     constructor(null_: Object2IntAVLTreeMap$EntryIterator)
-    add(arg0: Object2IntMap$Entry<K>): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Object2IntMap$Entry<K>;
-    previous(): Object2IntMap$Entry<K>;
+    add<K extends Object | number | string | boolean>(arg0: Object2IntMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Object2IntMap$Entry<K>;
+    previous<K extends Object | number | string | boolean>(): Object2IntMap$Entry<K>;
     remove(): void;
-    set(arg0: Object2IntMap$Entry<K>): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Object2IntMap$Entry<K>): void;
 }

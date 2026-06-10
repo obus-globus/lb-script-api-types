@@ -11,7 +11,7 @@ export class ItemStackComponentizationFix$ItemStackData extends Object {
     // private item: string;
     // private remainder: Dynamic<Object>;
     // private tag: Dynamic<Object>;
-    fixSubTag(key: string, dontFixWhenFieldIsMissing: boolean, function_: (param0: Dynamic<Object>) => unknown): void;
+    fixSubTag(key: string, dontFixWhenFieldIsMissing: boolean, function_: (param0: Dynamic<Object>) => Object | null): void;
     hasComponent(id: string): boolean;
     is(id: string): boolean;
     is(ids: string[]): boolean;

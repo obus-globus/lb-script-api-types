@@ -16,7 +16,7 @@ export class TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFuncti
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

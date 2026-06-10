@@ -30,7 +30,7 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:95}
      */
-    readonly doNotInclude: () => kotlin.Boolean;
+    readonly doNotInclude: () => boolean;
     /**
      * If true, the description won't be bound to any {@link net.ccbluex.liquidbounce.config.types.group.ValueGroup}.
      *
@@ -47,7 +47,7 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      */
     /*not mapped: */ isImmutable(): boolean;
     key: string | null;
-    // private listeners: (param0: T) => unknown[];
+    // private listeners: (param0: T) => Object | null[];
     /*not mapped: */ getLoweredName$liquidbounce(): string;
     readonly name: string;
     // private stateFlow: MutableStateFlow<T>;
@@ -60,7 +60,7 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      */
     deserializeFrom(gson: Gson, element: JsonElement): void;
     doNotIncludeAlways(): Value<T>;
-    doNotIncludeWhen(condition: () => kotlin.Boolean): Value<T>;
+    doNotIncludeWhen(condition: () => boolean): Value<T>;
     get(): T;
     getTagValue(): Object;
     /**
@@ -85,7 +85,7 @@ export class Value<T extends Object | number | string | boolean> extends Object 
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:105}
      */
     notAnOption(): Value<T>;
-    onChange(listener: (param0: T) => unknown): Value<T>;
+    onChange(listener: (param0: T) => Object | null): Value<T>;
     onChanged(listener: (param0: T) => void): Value<T>;
     /**
      * Restore value to default value

@@ -9,20 +9,20 @@ export class AtomicDoubleArray extends Object implements Serializable {
     constructor(array: number[])
     constructor(length: number)
     // private longs: AtomicLongArray;
-    accumulateAndGet(i: number, x: number, accumulatorFunction: (param0: number, param1: number) => kotlin.Double): number;
+    accumulateAndGet(i: number, x: number, accumulatorFunction: (param0: number, param1: number) => number): number;
     addAndGet(i: number, delta: number): number;
     compareAndSet(i: number, expect: number, update: number): boolean;
     get(i: number): number;
-    getAndAccumulate(i: number, x: number, accumulatorFunction: (param0: number, param1: number) => kotlin.Double): number;
+    getAndAccumulate(i: number, x: number, accumulatorFunction: (param0: number, param1: number) => number): number;
     getAndAdd(i: number, delta: number): number;
     getAndSet(i: number, newValue: number): number;
-    getAndUpdate(i: number, updaterFunction: (param0: number) => kotlin.Double): number;
+    getAndUpdate(i: number, updaterFunction: (param0: number) => number): number;
     lazySet(i: number, newValue: number): void;
     length(): number;
     // private readObject(s: ObjectInputStream): void;
     set(i: number, newValue: number): void;
     toString(): string;
-    updateAndGet(i: number, updaterFunction: (param0: number) => kotlin.Double): number;
+    updateAndGet(i: number, updaterFunction: (param0: number) => number): number;
     weakCompareAndSet(i: number, expect: number, update: number): boolean;
     // private writeObject(s: ObjectOutputStream): void;
 }

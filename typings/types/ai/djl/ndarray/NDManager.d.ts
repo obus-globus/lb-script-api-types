@@ -68,8 +68,8 @@ export interface NDManager extends AutoCloseable, Object{
     getName(): string;
     getParentManager(): NDManager;
     hanningWindow(arg0: number): NDArray;
-    invoke(arg0: string, arg1: (Object | null)[], arg2: Pair<K, V>[]): (Object | null)[];
-    invoke(arg0: string, arg1: NDArray[], arg2: NDArray[], arg3: Pair<K, V>[]): void;
+    invoke(arg0: string, arg1: (Object | null)[], arg2: Pair<string, Object>[]): (Object | null)[];
+    invoke(arg0: string, arg1: NDArray[], arg2: NDArray[], arg3: Pair<string, Object>[]): void;
     isOpen(): boolean;
     linspace(arg0: number, arg1: number, arg2: number): NDArray;
     linspace(arg0: number, arg1: number, arg2: number, arg3: boolean): NDArray;

@@ -10,5 +10,5 @@ export abstract class SimpleReloadListener<T extends Object | number | string | 
     getName(): string;
     prepare(arg0: PreparableReloadListener$SharedState): T;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    reload(arg0: PreparableReloadListener$SharedState, arg1: Executor, arg2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, arg3: Executor): CompletableFuture<void>;
+    reload(arg0: PreparableReloadListener$SharedState, arg1: Executor, arg2: (param0: Object | null) => CompletableFuture<Object>, arg3: Executor): CompletableFuture<void>;
 }

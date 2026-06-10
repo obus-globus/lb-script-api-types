@@ -4,10 +4,10 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { DensityFunction$FunctionContext } from '../../../../../../net/minecraft/world/level/levelgen/DensityFunction$FunctionContext.d.ts'
 import type { NoiseChunk$BlockStateFiller } from '../../../../../../net/minecraft/world/level/levelgen/NoiseChunk$BlockStateFiller.d.ts'
 export class MaterialRuleList extends Record implements NoiseChunk$BlockStateFiller {
-    // private materialRuleList: (param0: DensityFunction$FunctionContext) => net.minecraft.world.level.block.state.BlockState[];
+    // private materialRuleList: (param0: DensityFunction$FunctionContext) => BlockState[];
     calculate(context: DensityFunction$FunctionContext): BlockState;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    materialRuleList(): (param0: DensityFunction$FunctionContext) => net.minecraft.world.level.block.state.BlockState[];
+    materialRuleList(): (param0: DensityFunction$FunctionContext) => BlockState[];
     toString(): string;
 }

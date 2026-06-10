@@ -68,6 +68,6 @@ export class SVGSamplerOutput$GraphOwner extends Object implements SVGSamplerOut
     script(): string;
     searchColor(): string;
     searchFunction(argName: string): string;
-    // private threadSampleData(thread: Thread, samples: E[], tasks: SVGSamplerOutput$GraphOwner$Task[], siblings: Object[], x: number): number;
+    // private threadSampleData(thread: Thread, samples: ProfilerNode<CPUSampler$Payload>[], tasks: SVGSamplerOutput$GraphOwner$Task[], siblings: Object[], x: number): number;
     width(): number;
 }

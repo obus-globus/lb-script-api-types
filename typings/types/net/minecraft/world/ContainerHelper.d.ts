@@ -5,8 +5,8 @@ import type { ValueInput } from '../../../net/minecraft/world/level/storage/Valu
 import type { ValueOutput } from '../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class ContainerHelper extends Object {
     static TAG_ITEMS: string;
-    static clearOrCountMatchingItems(paramcontainer: ItemStack[], parampredicate: (param0: ItemStack) => kotlin.Boolean, paramamountToRemove: number, paramcountingOnly: boolean): number;
-    static clearOrCountMatchingItems(paramitemStack: ItemStack, parampredicate: (param0: ItemStack) => kotlin.Boolean, paramamountToRemove: number, paramcountingOnly: boolean): number;
+    static clearOrCountMatchingItems(paramcontainer: ItemStack[], parampredicate: (param0: ItemStack) => boolean, paramamountToRemove: number, paramcountingOnly: boolean): number;
+    static clearOrCountMatchingItems(paramitemStack: ItemStack, parampredicate: (param0: ItemStack) => boolean, paramamountToRemove: number, paramcountingOnly: boolean): number;
     static loadAllItems(paraminput: ValueInput, paramitemStacks: ItemStack[]): void;
     static removeItem(paramitemStacks: ItemStack[], paramslot: number, paramcount: number): ItemStack;
     static saveAllItems(paramoutput: ValueOutput, paramitemStacks: ItemStack[]): void;

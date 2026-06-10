@@ -34,19 +34,19 @@ import type { TerrainAdjustment } from '../../../../../../net/minecraft/world/le
 import type { PiecesContainer } from '../../../../../../net/minecraft/world/level/levelgen/structure/pieces/PiecesContainer.d.ts'
 import type { StructureTemplateManager } from '../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager.d.ts'
 export abstract class Structure extends Object {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Structure>>;
     static DIRECT_CODEC: Codec<Structure>;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;
-    static settingsCodec(parami: RecordCodecBuilder$Instance<Object>): RecordCodecBuilder<Object, Structure$StructureSettings>;
-    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Object | null): MapCodec<Object>;
+    static settingsCodec(parami: RecordCodecBuilder$Instance<Structure>): RecordCodecBuilder<Structure, Structure$StructureSettings>;
+    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Structure | null): MapCodec<Structure>;
     constructor(settings: Structure$StructureSettings)
     // private settings: Structure$StructureSettings;
     adjustBoundingBox(boundingBox: BoundingBox): BoundingBox;
     afterPlace(level: WorldGenLevel, structureManager: StructureManager, generator: ChunkGenerator, random: RandomSource, chunkBB: BoundingBox, chunkPos: ChunkPos, pieces: PiecesContainer): void;
-    biomes(): Holder<T>[];
+    biomes(): Holder<Biome>[];
     findGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
     findValidGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
-    generate(selected: Holder<Structure>, dimension: ResourceKey<Level>, registryAccess: RegistryAccess, chunkGenerator: ChunkGenerator, biomeSource: BiomeSource, randomState: RandomState, structureTemplateManager: StructureTemplateManager, seed: number, sourceChunkPos: ChunkPos, references: number, heightAccessor: LevelHeightAccessor, validBiome: (param0: Holder<Biome>) => kotlin.Boolean): StructureStart;
+    generate(selected: Holder<Structure>, dimension: ResourceKey<Level>, registryAccess: RegistryAccess, chunkGenerator: ChunkGenerator, biomeSource: BiomeSource, randomState: RandomState, structureTemplateManager: StructureTemplateManager, seed: number, sourceChunkPos: ChunkPos, references: number, heightAccessor: LevelHeightAccessor, validBiome: (param0: Holder<Biome>) => boolean): StructureStart;
     getLowestYIn5by5BoxOffset7Blocks(context: Structure$GenerationContext, rotation: Rotation): BlockPos;
     spawnOverrides(): { [key in MobCategory]: StructureSpawnOverride };
     step(): GenerationStep$Decoration;

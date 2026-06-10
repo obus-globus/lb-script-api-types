@@ -7,5 +7,5 @@ import type { EntityType } from '../../../../../../net/minecraft/world/entity/En
 export class EntityClassGroup$NoDragonClassGroup extends EntityClassGroup {
     static BOAT_SHULKER_LIKE_COLLISION: EntityClassGroup$NoDragonClassGroup;
     static CUSTOM_COLLIDE_LIKE_MINECART_BOAT_WINDCHARGE: EntityClassGroup;
-    constructor(arg0: (param0: Class<Object>, param1: () => EntityType<Object>) => kotlin.Boolean)
+    constructor(arg0: (param0: Class<Object>, param1: () => EntityType<Object>) => boolean)
 }

@@ -1,9 +1,11 @@
 import type { Comparator } from '../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Pair } from '../../../kotlin/Pair.d.ts'
 import type { UByte } from '../../../kotlin/UByte.d.ts'
 import type { UInt } from '../../../kotlin/UInt.d.ts'
 import type { ULong } from '../../../kotlin/ULong.d.ts'
 import type { UShort } from '../../../kotlin/UShort.d.ts'
+import type { IndexedValue } from '../../../kotlin/collections/IndexedValue.d.ts'
 import type { UArraysKt___UArraysJvmKt } from '../../../kotlin/collections/unsigned/UArraysKt___UArraysJvmKt.d.ts'
 import type { Random } from '../../../kotlin/random/Random.d.ts'
 export class UArraysKt___UArraysKt extends UArraysKt___UArraysJvmKt {
@@ -71,18 +73,18 @@ export class UArraysKt___UArraysKt extends UArraysKt___UArraysJvmKt {
 // (invalid TS: name contains '-')     static maxOrThrow-U(paramarg0: number[]): number;
 // (invalid TS: name contains '-')     static maxOrThrow-U(paramarg0: number[]): number;
 // (invalid TS: name contains '-')     static maxOrThrow-U(paramarg0: number[]): number;
-// (invalid TS: name contains '-')     static maxWith-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UByte;
-// (invalid TS: name contains '-')     static maxWith-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UInt;
-// (invalid TS: name contains '-')     static maxWith-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UShort;
-// (invalid TS: name contains '-')     static maxWith-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): ULong;
-// (invalid TS: name contains '-')     static maxWithOrNull-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UByte;
-// (invalid TS: name contains '-')     static maxWithOrNull-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UInt;
-// (invalid TS: name contains '-')     static maxWithOrNull-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UShort;
-// (invalid TS: name contains '-')     static maxWithOrNull-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): ULong;
-// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
+// (invalid TS: name contains '-')     static maxWith-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object) => boolean): UByte;
+// (invalid TS: name contains '-')     static maxWith-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object) => boolean): UInt;
+// (invalid TS: name contains '-')     static maxWith-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object) => boolean): UShort;
+// (invalid TS: name contains '-')     static maxWith-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object) => boolean): ULong;
+// (invalid TS: name contains '-')     static maxWithOrNull-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object) => boolean): UByte;
+// (invalid TS: name contains '-')     static maxWithOrNull-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object) => boolean): UInt;
+// (invalid TS: name contains '-')     static maxWithOrNull-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object) => boolean): UShort;
+// (invalid TS: name contains '-')     static maxWithOrNull-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object) => boolean): ULong;
+// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static maxWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
 // (invalid TS: name contains '-')     static min--ajY-9A(paramarg0: number[]): UInt;
 // (invalid TS: name contains '-')     static min-GBYM_sE(paramarg0: number[]): UByte;
 // (invalid TS: name contains '-')     static min-QwZRm1k(paramarg0: number[]): ULong;
@@ -95,22 +97,22 @@ export class UArraysKt___UArraysKt extends UArraysKt___UArraysJvmKt {
 // (invalid TS: name contains '-')     static minOrThrow-U(paramarg0: number[]): number;
 // (invalid TS: name contains '-')     static minOrThrow-U(paramarg0: number[]): number;
 // (invalid TS: name contains '-')     static minOrThrow-U(paramarg0: number[]): number;
-// (invalid TS: name contains '-')     static minWith-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UByte;
-// (invalid TS: name contains '-')     static minWith-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UInt;
-// (invalid TS: name contains '-')     static minWith-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UShort;
-// (invalid TS: name contains '-')     static minWith-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): ULong;
-// (invalid TS: name contains '-')     static minWithOrNull-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UByte;
-// (invalid TS: name contains '-')     static minWithOrNull-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UInt;
-// (invalid TS: name contains '-')     static minWithOrNull-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): UShort;
-// (invalid TS: name contains '-')     static minWithOrNull-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): ULong;
-// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object | null) => kotlin.Boolean): number;
-// (invalid TS: name contains '-')     static plus-CFIt9YE(paramarg0: number[], paramarg1: E[]): number[];
-// (invalid TS: name contains '-')     static plus-kzHmqpY(paramarg0: number[], paramarg1: E[]): number[];
-// (invalid TS: name contains '-')     static plus-ojwP5H8(paramarg0: number[], paramarg1: E[]): number[];
-// (invalid TS: name contains '-')     static plus-xo_DsdI(paramarg0: number[], paramarg1: E[]): number[];
+// (invalid TS: name contains '-')     static minWith-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object) => boolean): UByte;
+// (invalid TS: name contains '-')     static minWith-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object) => boolean): UInt;
+// (invalid TS: name contains '-')     static minWith-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object) => boolean): UShort;
+// (invalid TS: name contains '-')     static minWith-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object) => boolean): ULong;
+// (invalid TS: name contains '-')     static minWithOrNull-XMRcp5o(paramarg0: number[], paramarg1: (param0: Object) => boolean): UByte;
+// (invalid TS: name contains '-')     static minWithOrNull-YmdZ_VM(paramarg0: number[], paramarg1: (param0: Object) => boolean): UInt;
+// (invalid TS: name contains '-')     static minWithOrNull-eOHTfZs(paramarg0: number[], paramarg1: (param0: Object) => boolean): UShort;
+// (invalid TS: name contains '-')     static minWithOrNull-zrEWJaI(paramarg0: number[], paramarg1: (param0: Object) => boolean): ULong;
+// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static minWithOrThrow-U(paramarg0: number[], paramarg1: (param0: Object) => boolean): number;
+// (invalid TS: name contains '-')     static plus-CFIt9YE(paramarg0: number[], paramarg1: UInt[]): number[];
+// (invalid TS: name contains '-')     static plus-kzHmqpY(paramarg0: number[], paramarg1: ULong[]): number[];
+// (invalid TS: name contains '-')     static plus-ojwP5H8(paramarg0: number[], paramarg1: UShort[]): number[];
+// (invalid TS: name contains '-')     static plus-xo_DsdI(paramarg0: number[], paramarg1: UByte[]): number[];
 // (invalid TS: name contains '-')     static random-2D5oskM(paramarg0: number[], paramarg1: Random): number;
 // (invalid TS: name contains '-')     static random-JzugnMA(paramarg0: number[], paramarg1: Random): number;
 // (invalid TS: name contains '-')     static random-oSF2wD8(paramarg0: number[], paramarg1: Random): number;
@@ -143,14 +145,14 @@ export class UArraysKt___UArraysKt extends UArraysKt___UArraysJvmKt {
 // (invalid TS: name contains '-')     static slice-ZRhS8yI(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): ULong[];
 // (invalid TS: name contains '-')     static slice-c0bezYM(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): UByte[];
 // (invalid TS: name contains '-')     static slice-tAntMlw(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): UInt[];
-// (invalid TS: name contains '-')     static sliceArray-CFIt9YE(paramarg0: number[], paramarg1: E[]): number[];
+// (invalid TS: name contains '-')     static sliceArray-CFIt9YE(paramarg0: number[], paramarg1: number[]): number[];
 // (invalid TS: name contains '-')     static sliceArray-Q6IL4kU(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): number[];
 // (invalid TS: name contains '-')     static sliceArray-ZRhS8yI(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): number[];
 // (invalid TS: name contains '-')     static sliceArray-c0bezYM(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): number[];
-// (invalid TS: name contains '-')     static sliceArray-kzHmqpY(paramarg0: number[], paramarg1: E[]): number[];
-// (invalid TS: name contains '-')     static sliceArray-ojwP5H8(paramarg0: number[], paramarg1: E[]): number[];
+// (invalid TS: name contains '-')     static sliceArray-kzHmqpY(paramarg0: number[], paramarg1: number[]): number[];
+// (invalid TS: name contains '-')     static sliceArray-ojwP5H8(paramarg0: number[], paramarg1: number[]): number[];
 // (invalid TS: name contains '-')     static sliceArray-tAntMlw(paramarg0: number[], paramarg1: { start: number; endInclusive: number; step: number }): number[];
-// (invalid TS: name contains '-')     static sliceArray-xo_DsdI(paramarg0: number[], paramarg1: E[]): number[];
+// (invalid TS: name contains '-')     static sliceArray-xo_DsdI(paramarg0: number[], paramarg1: number[]): number[];
 // (invalid TS: name contains '-')     static sort--ajY-9A(paramarg0: number[]): void;
 // (invalid TS: name contains '-')     static sort--nroSd4(paramarg0: number[], paramarg1: number, paramarg2: number): void;
 // (invalid TS: name contains '-')     static sort-4UcCI2c(paramarg0: number[], paramarg1: number, paramarg2: number): void;
@@ -203,20 +205,20 @@ export class UArraysKt___UArraysKt extends UArraysKt___UArraysJvmKt {
     static toUIntArray(paramarg0: (Object | null)[]): number[];
     static toULongArray(paramarg0: (Object | null)[]): number[];
     static toUShortArray(paramarg0: (Object | null)[]): number[];
-// (invalid TS: name contains '-')     static withIndex--ajY-9A(paramarg0: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static withIndex-GBYM_sE(paramarg0: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static withIndex-QwZRm1k(paramarg0: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static withIndex-rL5Bavg(paramarg0: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-C-E_24M(paramarg0: number[], paramarg1: Object | null): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-F7u83W8(paramarg0: number[], paramarg1: (Object | null)[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-HwE9HBo(paramarg0: number[], paramarg1: (Object | null)[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-JGPC0-M(paramarg0: number[], paramarg1: (Object | null)[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-JQknh5Q(paramarg0: number[], paramarg1: (Object | null)[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-ctEhBpI(paramarg0: number[], paramarg1: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-f7H3mmw(paramarg0: number[], paramarg1: Object | null): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-kdPth3s(paramarg0: number[], paramarg1: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-mazbYpA(paramarg0: number[], paramarg1: number[]): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-nl983wc(paramarg0: number[], paramarg1: Object | null): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-uaTIQ5s(paramarg0: number[], paramarg1: Object | null): (Object | null)[];
-// (invalid TS: name contains '-')     static zip-us8wMrg(paramarg0: number[], paramarg1: number[]): (Object | null)[];
+// (invalid TS: name contains '-')     static withIndex--ajY-9A(paramarg0: number[]): IndexedValue<UInt>[];
+// (invalid TS: name contains '-')     static withIndex-GBYM_sE(paramarg0: number[]): IndexedValue<UByte>[];
+// (invalid TS: name contains '-')     static withIndex-QwZRm1k(paramarg0: number[]): IndexedValue<ULong>[];
+// (invalid TS: name contains '-')     static withIndex-rL5Bavg(paramarg0: number[]): IndexedValue<UShort>[];
+// (invalid TS: name contains '-')     static zip-C-E_24M(paramarg0: number[], paramarg1: Object | null): Pair<UInt, Object>[];
+// (invalid TS: name contains '-')     static zip-F7u83W8(paramarg0: number[], paramarg1: (Object | null)[]): Pair<ULong, Object>[];
+// (invalid TS: name contains '-')     static zip-HwE9HBo(paramarg0: number[], paramarg1: (Object | null)[]): Pair<UInt, Object>[];
+// (invalid TS: name contains '-')     static zip-JGPC0-M(paramarg0: number[], paramarg1: (Object | null)[]): Pair<UShort, Object>[];
+// (invalid TS: name contains '-')     static zip-JQknh5Q(paramarg0: number[], paramarg1: (Object | null)[]): Pair<UByte, Object>[];
+// (invalid TS: name contains '-')     static zip-ctEhBpI(paramarg0: number[], paramarg1: number[]): Pair<UInt, UInt>[];
+// (invalid TS: name contains '-')     static zip-f7H3mmw(paramarg0: number[], paramarg1: Object | null): Pair<ULong, Object>[];
+// (invalid TS: name contains '-')     static zip-kdPth3s(paramarg0: number[], paramarg1: number[]): Pair<UByte, UByte>[];
+// (invalid TS: name contains '-')     static zip-mazbYpA(paramarg0: number[], paramarg1: number[]): Pair<UShort, UShort>[];
+// (invalid TS: name contains '-')     static zip-nl983wc(paramarg0: number[], paramarg1: Object | null): Pair<UByte, Object>[];
+// (invalid TS: name contains '-')     static zip-uaTIQ5s(paramarg0: number[], paramarg1: Object | null): Pair<UShort, Object>[];
+// (invalid TS: name contains '-')     static zip-us8wMrg(paramarg0: number[], paramarg1: number[]): Pair<ULong, ULong>[];
 }

@@ -9,6 +9,6 @@ export interface TypeMirror extends AnnotatedConstruct, Object{
     accept<R extends Object | number | string | boolean, P extends Object | number | string | boolean>(arg0: TypeVisitor<R, P>, arg1: P): R;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotationMirrors(): AnnotationMirror[];
-    getAnnotationsByType(arg0: Class<A>): A[];
+    getAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
     getKind(): TypeKind;
 }

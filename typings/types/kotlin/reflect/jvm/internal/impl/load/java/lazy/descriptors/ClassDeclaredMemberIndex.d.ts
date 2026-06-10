@@ -15,7 +15,7 @@ export class ClassDeclaredMemberIndex extends Object implements DeclaredMemberIn
     // private methodFilter: (param0: JavaMethod) => boolean;
     // private methods: Map<Name, JavaMethod[]>;
     findFieldByName(arg0: Name): JavaField;
-    findMethodsByName(arg0: Name): E[];
+    findMethodsByName(arg0: Name): JavaMethod[];
     findRecordComponentByName(arg0: Name): JavaRecordComponent;
     getFieldNames(): Name[];
     getMethodNames(): Name[];

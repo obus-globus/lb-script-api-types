@@ -32,7 +32,7 @@ export class ShaderPackScreen extends Screen implements HudHideable {
     static MENU_BACKGROUND: Identifier;
     static TOP_LAYER_RENDER_QUEUE: () => void[];
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(arg0: Screen)
     // private backgroundInit: number;
@@ -43,7 +43,7 @@ export class ShaderPackScreen extends Screen implements HudHideable {
     // private guiButtonHoverTimer: number;
     // private guiHidden: boolean;
     // private hoveredElement: AbstractElementWidget<Object>;
-    // private hoveredElementCommentBody: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private hoveredElementCommentBody: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private hoveredElementCommentTimer: number;
     // private hoveredElementCommentTitle: Optional<Component>;
     // private irisTextComponent: MutableComponent;

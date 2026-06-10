@@ -1,4 +1,5 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { InitializeInstanceElementsNode } from '../../../../../../com/oracle/truffle/js/nodes/access/InitializeInstanceElementsNode.d.ts'
@@ -7,10 +8,11 @@ import type { InitializeInstanceElementsNodeGen$PrivateBrandAddNodeSharedWrapper
 import type { ClassElementDefinitionRecord } from '../../../../../../com/oracle/truffle/js/nodes/function/ClassElementDefinitionRecord.d.ts'
 import type { JSFunctionCallNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InitializeInstanceElementsNodeGen extends InitializeInstanceElementsNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramtargetNode: JavaScriptNode, paramconstructorNode: JavaScriptNode): JavaScriptNode;
     static create(paramcontext: JSContext): InitializeInstanceElementsNode;
     static create(paramcontext: JSContext, paramtargetNode: JavaScriptNode, paramconstructorNode: JavaScriptNode): InitializeInstanceElementsNode;

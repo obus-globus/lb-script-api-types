@@ -1,3 +1,4 @@
+import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
@@ -10,6 +11,7 @@ import type { SchemaComponent } from '../../../../../net/minecraft/server/jsonrp
 import type { BanlistService$UserBanDto } from '../../../../../net/minecraft/server/jsonrpc/methods/BanlistService$UserBanDto.d.ts'
 import type { DiscoveryService$DiscoverInfo } from '../../../../../net/minecraft/server/jsonrpc/methods/DiscoveryService$DiscoverInfo.d.ts'
 import type { DiscoveryService$DiscoverResponse } from '../../../../../net/minecraft/server/jsonrpc/methods/DiscoveryService$DiscoverResponse.d.ts'
+import type { GameRulesService$GameRuleUpdate } from '../../../../../net/minecraft/server/jsonrpc/methods/GameRulesService$GameRuleUpdate.d.ts'
 import type { IpBanlistService$IncomingIpBanDto } from '../../../../../net/minecraft/server/jsonrpc/methods/IpBanlistService$IncomingIpBanDto.d.ts'
 import type { IpBanlistService$IpBanDto } from '../../../../../net/minecraft/server/jsonrpc/methods/IpBanlistService$IpBanDto.d.ts'
 import type { Message } from '../../../../../net/minecraft/server/jsonrpc/methods/Message.d.ts'
@@ -22,9 +24,9 @@ import type { Difficulty } from '../../../../../net/minecraft/world/Difficulty.d
 import type { GameType } from '../../../../../net/minecraft/world/level/GameType.d.ts'
 import type { GameRuleType } from '../../../../../net/minecraft/world/level/gamerules/GameRuleType.d.ts'
 export class Schema<T extends Object | number | string | boolean> extends Record {
-    static BOOL_OR_INT_SCHEMA: Schema<Object>;
+    static BOOL_OR_INT_SCHEMA: Schema<Either<boolean, number>>;
     static BOOL_SCHEMA: Schema<boolean>;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Schema<Object>>;
     static DIFFICULTY_SCHEMA: SchemaComponent<Difficulty>;
     static DISCOVERY_SCHEMA: Schema<DiscoveryService$DiscoverResponse>;
     static GAME_TYPE_SCHEMA: SchemaComponent<GameType>;
@@ -42,12 +44,12 @@ export class Schema<T extends Object | number | string | boolean> extends Record
     static SERVER_STATE_SCHEMA: SchemaComponent<ServerStateService$ServerState>;
     static STRING_SCHEMA: Schema<string>;
     static SYSTEM_MESSAGE_SCHEMA: SchemaComponent<ServerStateService$SystemMessage>;
-    static TYPED_GAME_RULE_SCHEMA: SchemaComponent<Object>;
-    static UNTYPED_GAME_RULE_SCHEMA: SchemaComponent<Object>;
+    static TYPED_GAME_RULE_SCHEMA: SchemaComponent<GameRulesService$GameRuleUpdate<Object>>;
+    static UNTYPED_GAME_RULE_SCHEMA: SchemaComponent<GameRulesService$GameRuleUpdate<Object>>;
     static UUID_SCHEMA: Schema<UUID>;
     static VERSION_SCHEMA: SchemaComponent<DiscoveryService$DiscoverInfo>;
-    static arrayOf(paramitem: Schema<Object>, paramcodec: Codec<Object>): Schema<Object>;
-    static getSchemaRegistry(): (Object | null)[];
+    static arrayOf(paramitem: Schema<Object>, paramcodec: Codec<Object>): Schema<(Object | null)[]>;
+    static getSchemaRegistry(): SchemaComponent<Object>[];
     static ofEnum(paramvalues: () => Object | null): Schema<Object>;
     static ofEnum(paramvalues: () => Object | null, paramcodec: Codec<Object>): Schema<Object>;
     static ofEnum(paramenumValues: string[], paramcodec: Codec<Object>): Schema<Object>;
@@ -55,7 +57,7 @@ export class Schema<T extends Object | number | string | boolean> extends Record
     static ofType(paramtype: string, paramcodec: Codec<Object>): Schema<Object>;
     static ofTypes(paramtypes: string[], paramcodec: Codec<Object>): Schema<Object>;
     static record(paramcodec: Codec<Object>): Schema<Object>;
-    static typedCodec(): Codec<Object>;
+    static typedCodec(): Codec<Schema<Object>>;
     constructor(reference: Optional<URI>, type: string[], items: Optional<Schema<Object>>, properties: { [key: string]: Schema<Object> }, enumValues: string[], codec: Codec<T>)
     // private codec: Codec<T>;
     // private enumValues: string[];

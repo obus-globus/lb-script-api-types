@@ -51,7 +51,7 @@ export class NoiseBasedChunkGenerator extends ChunkGenerator {
     getInterpolatedNoiseValue(randomState: RandomState, context: DensityFunction$FunctionContext): number;
     getMinY(): number;
     getSeaLevel(): number;
-    // private iterateNoiseColumn(heightAccessor: LevelHeightAccessor, randomState: RandomState, blockX: number, blockZ: number, columnReference: MutableObject<NoiseColumn>, tester: (param0: BlockState) => kotlin.Boolean): OptionalInt;
+    // private iterateNoiseColumn(heightAccessor: LevelHeightAccessor, randomState: RandomState, blockX: number, blockZ: number, columnReference: MutableObject<NoiseColumn>, tester: (param0: BlockState) => boolean): OptionalInt;
     spawnOriginalMobs(worldGenRegion: WorldGenRegion): void;
     stable(expectedPreset: ResourceKey<NoiseGeneratorSettings>): boolean;
 }

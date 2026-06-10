@@ -3,5 +3,5 @@ import type { TypeAdapter } from '../../../../../com/viaversion/viaversion/libs/
 import type { TypeToken } from '../../../../../com/viaversion/viaversion/libs/gson/reflect/TypeToken.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface TypeAdapterFactory extends Object{
-    create(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
 }

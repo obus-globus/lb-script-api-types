@@ -38,7 +38,7 @@ export class TranslationComponent extends TextComponent {
     readonly args: Object[];
     readonly fallback: string;
     readonly key: string;
-    // private translator: (param0: string) => kotlin.String;
+    // private translator: (param0: string) => string;
     asLegacyFormatString(): string;
     asSingleString(): string;
     asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
@@ -52,7 +52,7 @@ export class TranslationComponent extends TextComponent {
     setArgs(arg0: Object[]): TranslationComponent;
     setFallback(arg0: string): TranslationComponent;
     setKey(arg0: string): TranslationComponent;
-    setTranslator(arg0: (param0: string) => kotlin.String): TranslationComponent;
+    setTranslator(arg0: (param0: string) => string): TranslationComponent;
     shallowCopy(): TextComponent;
     toString(): string;
 }

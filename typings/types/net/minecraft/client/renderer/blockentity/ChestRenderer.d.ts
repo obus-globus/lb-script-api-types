@@ -7,7 +7,6 @@ import type { MultiblockChestResources } from '../../../../../net/minecraft/clie
 import type { SubmitNodeCollector } from '../../../../../net/minecraft/client/renderer/SubmitNodeCollector.d.ts'
 import type { BlockEntityRenderer } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRenderer.d.ts'
 import type { BlockEntityRendererProvider$Context } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context.d.ts'
-import type { BlockEntityRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/BlockEntityRenderState.d.ts'
 import type { ChestRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/ChestRenderState.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
@@ -25,7 +24,6 @@ export class ChestRenderer<T extends BlockEntity & LidBlockEntity> extends Objec
     // private sprites: SpriteGetter;
     // private xmasTextures: boolean;
     createRenderState(): ChestRenderState;
-    extractRenderState<S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     extractRenderState(blockEntity: T, state: ChestRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;
     shouldRender(blockEntity: T, cameraPosition: Vec3): boolean;

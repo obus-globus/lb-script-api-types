@@ -3,7 +3,7 @@ import type { Interner } from '../../../../com/google/common/collect/Interner.d.
 import type { Interners$InternerBuilder } from '../../../../com/google/common/collect/Interners$InternerBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Interners extends Object {
-    static asFunction(paraminterner: Interner<Object>): (param0: Object | null) => Object | null;
+    static asFunction(paraminterner: Interner<Object>): (param0: Object) => boolean;
     static newBuilder(): Interners$InternerBuilder;
     static newStrongInterner(): Interner<Object>;
     static newWeakInterner(): Interner<Object>;

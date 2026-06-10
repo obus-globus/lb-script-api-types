@@ -13,7 +13,7 @@ export class EffectsInInventory extends Object {
     // private screen: AbstractContainerScreen<Object>;
     canSeeEffects(): boolean;
     // private extractBackground(graphics: GuiGraphicsExtractor, font: Font, effectName: Component, duration: Component, x0: number, y0: number, isAmbient: boolean, maxTextureWidth: number): number;
-    // private extractEffects(graphics: GuiGraphicsExtractor, activeEffects: E[], x0: number, yStep: number, mouseX: number, mouseY: number, maxWidth: number): void;
+    // private extractEffects(graphics: GuiGraphicsExtractor, activeEffects: MobEffectInstance[], x0: number, yStep: number, mouseX: number, mouseY: number, maxWidth: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     // private extractText(graphics: GuiGraphicsExtractor, effectText: Component, duration: Component, font: Font, x0: number, y0: number, textureWidth: number, yStep: number, mouseX: number, mouseY: number): void;
     // private getEffectName(effect: MobEffectInstance): Component;

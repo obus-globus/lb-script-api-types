@@ -11,7 +11,7 @@ import type { HumanoidRenderState } from '../../../../../../net/minecraft/client
 import type { SkeletonRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/SkeletonRenderState.d.ts'
 import type { HumanoidArm } from '../../../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
 export class SkeletonModel<S extends SkeletonRenderState> extends HumanoidModel<S> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

@@ -10,12 +10,12 @@ export class TargetingConditions extends Object {
     // private checkLineOfSight: boolean;
     // private isCombat: boolean;
     // private range: number;
-    // private selector: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean;
+    // private selector: (param0: LivingEntity, param1: ServerLevel) => boolean;
     // private testInvisible: boolean;
     copy(): TargetingConditions;
     ignoreInvisibilityTesting(): TargetingConditions;
     ignoreLineOfSight(): TargetingConditions;
     range(range: number): TargetingConditions;
-    selector(selector: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean): TargetingConditions;
+    selector(selector: (param0: LivingEntity, param1: ServerLevel) => boolean): TargetingConditions;
     test(level: ServerLevel, targeter: LivingEntity, target: LivingEntity): boolean;
 }

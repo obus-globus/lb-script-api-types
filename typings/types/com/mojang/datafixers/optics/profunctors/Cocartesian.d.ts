@@ -10,11 +10,11 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Cocartesian<P extends K2, Mu extends Cocartesian$Mu> extends Profunctor<P, Mu>, Object {
-    dimap(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
-    dimap(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
-    left(arg0: App2<P, A, B>): App2<P, Either<A, C>, Either<B, C>>;
-    lmap(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;
-    right(arg0: App2<P, A, B>): App2<P, Either<C, A>, Either<C, B>>;
-    rmap(arg0: App2<P, A, B>, arg1: (param0: B) => D): App2<P, A, D>;
+    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
+    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
+    left<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>): App2<P, Either<A, C>, Either<B, C>>;
+    lmap<C extends Object | number | string | boolean, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;
+    right<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>): App2<P, Either<C, A>, Either<C, B>>;
+    rmap<A extends Object | number | string | boolean, D extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>, arg1: (param0: B) => D): App2<P, A, D>;
     toFP(): FunctorProfunctor<CocartesianLike$Mu, P, FunctorProfunctor$Mu<CocartesianLike$Mu>>;
 }

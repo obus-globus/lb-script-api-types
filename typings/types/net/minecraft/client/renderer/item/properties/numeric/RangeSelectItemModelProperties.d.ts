@@ -4,7 +4,7 @@ import type { RangeSelectItemModelProperty } from '../../../../../../../net/mine
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ExtraCodecs$LateBoundIdMapper } from '../../../../../../../net/minecraft/util/ExtraCodecs$LateBoundIdMapper.d.ts'
 export class RangeSelectItemModelProperties extends Object {
-    static ID_MAPPER: ExtraCodecs$LateBoundIdMapper<Identifier, Object>;
+    static ID_MAPPER: ExtraCodecs$LateBoundIdMapper<Identifier, MapCodec<RangeSelectItemModelProperty>>;
     static MAP_CODEC: MapCodec<RangeSelectItemModelProperty>;
     static bootstrap(): void;
     constructor()

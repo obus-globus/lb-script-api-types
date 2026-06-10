@@ -7,8 +7,8 @@ export interface FluidVariant extends Object, TransferVariant<Fluid>{
     componentsMatch(arg0: DataComponentPatch): boolean;
     getFluid(): Fluid;
     hasComponents(): boolean;
-    isOf<O extends Object | number | string | boolean>(arg0: O): boolean;
+    isOf(arg0: Fluid): boolean;
     typeHolder(): Holder<Fluid>;
     withComponents(arg0: DataComponentPatch): FluidVariant;
-    withComponents(arg0: DataComponentPatch): TransferVariant<O>;
+    withComponents(arg0: DataComponentPatch): TransferVariant<Fluid>;
 }

@@ -8,11 +8,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntegerRangeArgumentType extends Object implements ArgumentType<Object> {
     static integerRange(): IntegerRangeArgumentType;
     constructor()
-    getExamples(): E[];
+    getExamples(): string[];
     // private isAllowedNumber(arg0: string): boolean;
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(arg0: StringReader): Object;
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Object;
+    parse(arg0: StringReader): Object;
     // private readInt(arg0: StringReader): number;
 }

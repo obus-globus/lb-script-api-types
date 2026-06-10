@@ -22,7 +22,7 @@ export class TutorialToast extends Object implements Toast {
     constructor(font: Font, icon: TutorialToast$Icons, title: Component, message: Component, progressable: boolean, timeToDisplayMs: number)
     // private icon: TutorialToast$Icons;
     // private lastSmoothingTime: number;
-    // private lines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private progress: number;
     // private progressable: boolean;
     // private smoothedProgress: number;

@@ -29,10 +29,10 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     static ERROR_MISSING_SELECTOR_TYPE: SimpleCommandExceptionType;
     static ERROR_SELECTORS_NOT_ALLOWED: SimpleCommandExceptionType;
     static ERROR_UNKNOWN_SELECTOR_TYPE: DynamicCommandExceptionType;
-    static ORDER_FURTHEST: (param0: Vec3, param1: Object | null) => void;
-    static ORDER_NEAREST: (param0: Vec3, param1: Object | null) => void;
-    static ORDER_RANDOM: (param0: Vec3, param1: Object | null) => void;
-    static SUGGEST_NOTHING: (param0: SuggestionsBuilder, param1: Object | null) => Object | null;
+    static ORDER_FURTHEST: (param0: Vec3, param1: Entity[]) => void;
+    static ORDER_NEAREST: (param0: Vec3, param1: Entity[]) => void;
+    static ORDER_RANDOM: (param0: Vec3, param1: Entity[]) => void;
+    static SUGGEST_NOTHING: (param0: SuggestionsBuilder, param1: (param0: SuggestionsBuilder) => void) => CompletableFuture<Suggestions>;
     static SYNTAX_NOT: string;
     static SYNTAX_OPTIONS_KEY_VALUE_SEPARATOR: string;
     static SYNTAX_SELECTOR_START: string;
@@ -55,7 +55,7 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     readonly maxResults: number;
     readonly order: (param0: Vec3, param1: Entity[]) => void;
     // private playerName: string;
-    // private predicates: (param0: Entity) => kotlin.Boolean[];
+    // private predicates: (param0: Entity) => boolean[];
     readonly reader: StringReader;
     readonly rotX: MinMaxBounds$FloatDegrees;
     readonly rotY: MinMaxBounds$FloatDegrees;
@@ -68,9 +68,9 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     readonly x: number;
     readonly y: number;
     readonly z: number;
-    addPredicate(predicate: (param0: Entity) => kotlin.Boolean): void;
+    addPredicate(predicate: (param0: Entity) => boolean): void;
     // private createAabb(x: number, y: number, z: number): AABB;
-    // private createRotationPredicate(range: MinMaxBounds$FloatDegrees, function_: (param0: Entity) => kotlin.Float): (param0: Entity) => kotlin.Boolean;
+    // private createRotationPredicate(range: MinMaxBounds$FloatDegrees, function_: (param0: Entity) => number): (param0: Entity) => boolean;
     fillSuggestions(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private finalizePredicates(): void;
     getCustomFlag(arg0: Identifier): boolean;

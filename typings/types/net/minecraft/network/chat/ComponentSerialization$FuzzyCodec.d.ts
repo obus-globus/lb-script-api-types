@@ -14,16 +14,16 @@ export class ComponentSerialization$FuzzyCodec<T extends Object | number | strin
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
-    static recursive(paramarg0: string, paramarg1: (param0: Object | null) => Object | null): MapCodec<Object>;
+    static recursive(paramarg0: string, paramarg1: (param0: Codec<Object>) => MapCodec<Object>): MapCodec<Object>;
     static unit(paramarg0: Object | null): MapCodec<Object>;
     static unit(paramarg0: () => Object | null): MapCodec<Object>;
     static unitCodec(paramarg0: Object | null): Codec<Object>;
     static unitCodec(paramarg0: () => Object | null): Codec<Object>;
-    constructor(codecs: E[], encoderGetter: (param0: T) => MapEncoder<T>)
-    // private codecs: E[];
+    constructor(codecs: MapCodec<T>[], encoderGetter: (param0: T) => MapEncoder<T>)
+    // private codecs: MapCodec<T>[];
     // private encoderGetter: (param0: T) => MapEncoder<T>;
-    decode(ops: DynamicOps<S>, input: MapLike<S>): DataResult<T>;
-    encode(input: T, ops: DynamicOps<S>, prefix: RecordBuilder<S>): RecordBuilder<S>;
-    keys(ops: DynamicOps<S>): Stream<S>;
+    decode<S extends Object | number | string | boolean>(ops: DynamicOps<S>, input: MapLike<S>): DataResult<T>;
+    encode<S extends Object | number | string | boolean>(input: T, ops: DynamicOps<S>, prefix: RecordBuilder<S>): RecordBuilder<S>;
+    keys<S extends Object | number | string | boolean>(ops: DynamicOps<S>): Stream<S>;
     toString(): string;
 }

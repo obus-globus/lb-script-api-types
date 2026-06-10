@@ -14,8 +14,8 @@ export class MinecraftBanListServiceImpl extends Object implements MinecraftBanL
     addUserBan(ban: UserBanListEntry, clientInfo: ClientInfo): void;
     clearIpBans(clientInfo: ClientInfo): void;
     clearUserBans(clientInfo: ClientInfo): void;
-    getIpBanEntries(): E[];
-    getUserBanEntries(): E[];
+    getIpBanEntries(): IpBanListEntry[];
+    getUserBanEntries(): UserBanListEntry[];
     removeIpBan(ip: string, clientInfo: ClientInfo): void;
     removeUserBan(nameAndId: NameAndId, clientInfo: ClientInfo): void;
 }

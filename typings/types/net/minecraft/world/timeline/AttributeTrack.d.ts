@@ -11,8 +11,8 @@ import type { ClockManager } from '../../../../net/minecraft/world/clock/ClockMa
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 import type { AttributeTrackSampler } from '../../../../net/minecraft/world/timeline/AttributeTrackSampler.d.ts'
 export class AttributeTrack<Value extends Object | number | string | boolean, Argument extends Object | number | string | boolean> extends Record {
-    static createCodec(paramattribute: EnvironmentAttribute<Object>): Codec<Object>;
-    static validatePeriod(paramtrack: AttributeTrack<Object, Object>, paramperiodTicks: number): DataResult<Object>;
+    static createCodec(paramattribute: EnvironmentAttribute<Object>): Codec<AttributeTrack<Object, Object>>;
+    static validatePeriod(paramtrack: AttributeTrack<Object, Object>, paramperiodTicks: number): DataResult<AttributeTrack<Object, Object>>;
     constructor(modifier: AttributeModifier<Value, Argument>, argumentTrack: KeyframeTrack<Argument>)
     // private argumentTrack: KeyframeTrack<Argument>;
     // private modifier: AttributeModifier<Value, Argument>;

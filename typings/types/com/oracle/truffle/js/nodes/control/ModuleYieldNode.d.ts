@@ -9,8 +9,8 @@ import type { YieldResultNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ModuleYieldNode extends JavaScriptNode implements ResumableNode, SuspendNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(): ModuleYieldNode;
     static createResumableNode(paramnode: ResumableNode, paramstateSlot: number): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;

@@ -13,19 +13,19 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface PrimitiveCodec<A extends Object | number | string | boolean> extends Codec<A>, Object {
-    comapFlatMap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;
-    decode(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
+    comapFlatMap<S extends Object | number | string | boolean>(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;
+    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<A, T>>;
     deprecated(arg0: number): Codec<A>;
-    dispatch(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
-    dispatch(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): Codec<E>;
-    dispatchMap(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): MapCodec<E>;
-    dispatchMap(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): MapCodec<E>;
-    dispatchStable(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
+    dispatch<E extends Object | number | string | boolean>(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
+    dispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): Codec<E>;
+    dispatchMap<E extends Object | number | string | boolean>(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): MapCodec<E>;
+    dispatchMap<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): MapCodec<E>;
+    dispatchStable<E extends Object | number | string | boolean>(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
     encode<T extends Object | number | string | boolean>(arg0: A, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
     fieldOf(arg0: string): MapCodec<A>;
-    flatComapMap(arg0: (param0: A) => S, arg1: (param0: S) => DataResult<A>): Codec<S>;
-    flatXmap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => DataResult<A>): Codec<S>;
+    flatComapMap<S extends Object | number | string | boolean>(arg0: (param0: A) => S, arg1: (param0: S) => DataResult<A>): Codec<S>;
+    flatXmap<S extends Object | number | string | boolean>(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => DataResult<A>): Codec<S>;
     lenientOptionalFieldOf(arg0: string): MapCodec<Optional<A>>;
     lenientOptionalFieldOf(arg0: string, arg1: A): MapCodec<A>;
     lenientOptionalFieldOf(arg0: string, arg1: A, arg2: Lifecycle): MapCodec<A>;
@@ -41,19 +41,19 @@ export interface PrimitiveCodec<A extends Object | number | string | boolean> ex
     // private optionalFieldOf(arg0: string, arg1: Lifecycle, arg2: A, arg3: Lifecycle, arg4: boolean): MapCodec<A>;
     orElse(arg0: A): Codec<A>;
     orElse(arg0: (param0: string) => void, arg1: A): Codec<A>;
-    orElse(arg0: (param0: string) => unknown, arg1: A): Codec<A>;
+    orElse(arg0: (param0: string) => Object | null, arg1: A): Codec<A>;
     orElseGet(arg0: (param0: string) => void, arg1: () => A): Codec<A>;
     orElseGet(arg0: () => A): Codec<A>;
-    orElseGet(arg0: (param0: string) => unknown, arg1: () => A): Codec<A>;
-    partialDispatch(arg0: string, arg1: (param0: E) => DataResult<A>, arg2: (param0: A) => DataResult<MapCodec<E>>): Codec<E>;
+    orElseGet(arg0: (param0: string) => Object | null, arg1: () => A): Codec<A>;
+    partialDispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => DataResult<A>, arg2: (param0: A) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<A>;
     read<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
     sizeLimitedListOf(arg0: number): Codec<A[]>;
     stable(): Codec<A>;
     validate(arg0: (param0: A) => DataResult<A>): Codec<A>;
-    withAlternative(arg0: Codec<U>, arg1: (param0: U) => A): Codec<A>;
+    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => A): Codec<A>;
     withAlternative(arg0: Codec<A>): Codec<A>;
     withLifecycle(arg0: Lifecycle): Codec<A>;
     write<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: A): T;
-    xmap(arg0: (param0: A) => S, arg1: (param0: S) => A): Codec<S>;
+    xmap<S extends Object | number | string | boolean>(arg0: (param0: A) => S, arg1: (param0: S) => A): Codec<S>;
 }

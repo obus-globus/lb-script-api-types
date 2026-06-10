@@ -117,7 +117,7 @@ export class ServerChunkCache extends ChunkSource {
     setSpawnSettings(spawnEnemies: boolean): void;
     setViewDistance(newDistance: number): void;
     // private storeInCache(pos: number, chunk: ChunkAccess, status: ChunkStatus): void;
-    tick(haveTime: () => kotlin.Boolean, tickChunks: boolean): void;
+    tick(haveTime: () => boolean, tickChunks: boolean): void;
     // private tickChunks(): void;
     // private tickChunks(profiler: ProfilerFiller, timeDiff: number): void;
     // private tickSpawningChunk(chunk: LevelChunk, timeDiff: number, spawningCategories: MobCategory[], spawnCookie: NaturalSpawner$SpawnState): void;

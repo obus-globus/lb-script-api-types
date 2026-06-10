@@ -12,7 +12,7 @@ export interface PropertyDescriptor extends Object, CallableMemberDescriptor, Va
     getDelegateField(): FieldDescriptor;
     getGetter(): PropertyGetterDescriptor;
     getOriginal(): PropertyDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): PropertyDescriptor[];
     getSetter(): PropertySetterDescriptor;
     substitute(arg0: TypeSubstitutor): PropertyDescriptor;
 }

@@ -8,12 +8,12 @@ export class EnvironmentStrippingData extends ClassVisitor {
     constructor(arg0: number, arg1: string)
     // private envType: string;
     // private stripEntireClass: boolean;
-    readonly stripFields: E[];
-    readonly stripInterfaces: E[];
-    readonly stripMethods: E[];
-    getStripFields(): E[];
-    getStripInterfaces(): E[];
-    getStripMethods(): E[];
+    readonly stripFields: string[];
+    readonly stripInterfaces: string[];
+    readonly stripMethods: string[];
+    getStripFields(): string[];
+    getStripInterfaces(): string[];
+    getStripMethods(): string[];
     isEmpty(): boolean;
     stripEntireClass(): boolean;
     visitAnnotation(arg0: string, arg1: boolean): AnnotationVisitor;

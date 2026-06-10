@@ -12,9 +12,9 @@ export class FilesKt__FileTreeWalkKt extends FilesKt__FileReadWriteKt {
     static appendBytes(paramarg0: File, paramarg1: number[]): void;
     static appendText(paramarg0: File, paramarg1: string, paramarg2: Charset): void;
     static byteBufferForEncoding(paramarg0: number, paramarg1: CharsetEncoder): ByteBuffer;
-    static forEachBlock(paramarg0: File, paramarg1: number, paramarg2: (param0: Object | null, param1: Object | null) => void): void;
-    static forEachBlock(paramarg0: File, paramarg1: (param0: Object | null, param1: Object | null) => void): void;
-    static forEachLine(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object | null) => void): void;
+    static forEachBlock(paramarg0: File, paramarg1: number, paramarg2: (param0: Object, param1: Object) => void): void;
+    static forEachBlock(paramarg0: File, paramarg1: (param0: Object, param1: Object) => void): void;
+    static forEachLine(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object) => void): void;
     static getRoot(paramarg0: File): File;
     static getRootName(paramarg0: File): string;
     static isRooted(paramarg0: File): boolean;
@@ -24,7 +24,7 @@ export class FilesKt__FileTreeWalkKt extends FilesKt__FileReadWriteKt {
     static readText(paramarg0: File, paramarg1: Charset): string;
     static subPath(paramarg0: File, paramarg1: number, paramarg2: number): File;
     static toComponents(paramarg0: File): FilePathComponents;
-    static useLines(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object | null) => Object | null): Object | null;
+    static useLines(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object) => Object | null): Object | null;
     static walk(paramarg0: File, paramarg1: FileWalkDirection): FileTreeWalk;
     static walkBottomUp(paramarg0: File): FileTreeWalk;
     static walkTopDown(paramarg0: File): FileTreeWalk;

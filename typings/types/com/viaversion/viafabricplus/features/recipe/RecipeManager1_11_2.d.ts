@@ -13,7 +13,7 @@ export class RecipeManager1_11_2 extends Object {
     // private recipesById: Map<ResourceKey<Recipe<Object>>, RecipeHolder<Object>>;
     // private recipesByType: Multimap<RecipeType<Object>, RecipeHolder<Object>>;
     get(arg0: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<Object>>;
-    getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
+    getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
     keys(): Stream<ResourceKey<Recipe<Object>>>;
-    values(): E[];
+    values(): RecipeHolder<Object>[];
 }

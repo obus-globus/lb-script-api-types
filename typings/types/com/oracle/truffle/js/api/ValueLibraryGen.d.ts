@@ -8,7 +8,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ValueLibraryGen extends LibraryFactory<ValueLibrary> {
-    static resolve(paramlibrary: Class<Object>): LibraryFactory<Object>;
+    static resolve(paramlibrary: Class<Library>): LibraryFactory<Library>;
     private constructor()
     createDelegate(delegateLibrary: ValueLibrary): ValueLibrary;
     createDispatchImpl(limit: number): ValueLibrary;

@@ -15,7 +15,7 @@ export abstract class MixinVersion extends Object {
     getDecoration<T extends Object | number | string | boolean>(arg0: IMixinConfig, arg1: string, arg2: T): T;
     getMixin(arg0: InjectionInfo): IMixinContext;
     getOrder(arg0: InjectionInfo): number;
-    getTargets(arg0: InjectionInfo): E[];
+    getTargets(arg0: InjectionInfo): AbstractInsnNode[][];
     makeInvalidInjectionException(arg0: InjectionInfo, arg1: string): RuntimeException;
     makeLvtContext(arg0: InjectionInfo, arg1: Type, arg2: boolean, arg3: AbstractInsnNode[], arg4: AbstractInsnNode): LocalVariableDiscriminator$Context;
     parseMemberInfo(arg0: string, arg1: InjectionInfo): MemberInfo;

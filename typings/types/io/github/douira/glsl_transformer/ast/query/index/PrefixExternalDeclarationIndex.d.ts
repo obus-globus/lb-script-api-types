@@ -5,17 +5,17 @@ import type { Supplier } from '../../../../../../../java/util/function/Supplier.
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PrefixExternalDeclarationIndex<S extends ExternalDeclarationIndex$DeclarationEntry[], I extends PatriciaTrie<S>> extends ExternalDeclarationIndex<S, I> implements PrefixQueryable<S, ExternalDeclarationIndex$DeclarationEntry> {
-    static withOnlyExact(paramarg0: () => Object | null): ExternalDeclarationIndex<Object, Object>;
-    static withOnlyExact(): ExternalDeclarationIndex<Object, Object>;
-    static withOnlyExactOrdered(): ExternalDeclarationIndex<Object, Object>;
-    static withPermuterm(paramarg0: () => Object | null): PrefixExternalDeclarationIndex<Object, Object>;
-    static withPermuterm(): PrefixExternalDeclarationIndex<Object, Object>;
-    static withPrefix(paramarg0: () => Object | null): PrefixExternalDeclarationIndex<Object, Object>;
-    static withPrefix(): PrefixExternalDeclarationIndex<Object, Object>;
-    static withPrefixSuffix(paramarg0: () => Object | null): PrefixExternalDeclarationIndex<Object, Object>;
-    static withPrefixSuffix(): PrefixExternalDeclarationIndex<Object, Object>;
+    static withOnlyExact(paramarg0: () => Object | null): ExternalDeclarationIndex<Object, { [key: string]: Object | null }>;
+    static withOnlyExact(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
+    static withOnlyExactOrdered(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
+    static withPermuterm(paramarg0: () => Object | null): PrefixExternalDeclarationIndex<Object, Map<Object | null, ExternalDeclarationIndex$DeclarationEntry>>;
+    static withPermuterm(): PrefixExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], Map<ExternalDeclarationIndex$DeclarationEntry[], ExternalDeclarationIndex$DeclarationEntry>>;
+    static withPrefix(paramarg0: () => Object | null): PrefixExternalDeclarationIndex<Object, Map<Object | null, ExternalDeclarationIndex$DeclarationEntry>>;
+    static withPrefix(): PrefixExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], Map<ExternalDeclarationIndex$DeclarationEntry[], ExternalDeclarationIndex$DeclarationEntry>>;
+    static withPrefixSuffix(paramarg0: () => Object | null): PrefixExternalDeclarationIndex<Object, Map<Object | null, ExternalDeclarationIndex$DeclarationEntry>>;
+    static withPrefixSuffix(): PrefixExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], Map<ExternalDeclarationIndex$DeclarationEntry[], ExternalDeclarationIndex$DeclarationEntry>>;
     constructor(arg0: I, arg1: () => S)
     prefixMap(arg0: string): { [key: string]: S };
     prefixQuery(arg0: string): Stream<S>;
-    prefixQueryFlat(arg0: string): Stream<E>;
+    prefixQueryFlat(arg0: string): Stream<ExternalDeclarationIndex$DeclarationEntry>;
 }

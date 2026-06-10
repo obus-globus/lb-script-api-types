@@ -13,7 +13,7 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 export class FunctionGameTestInstance extends GameTestInstance {
     static CODEC: MapCodec<FunctionGameTestInstance>;
     static DIRECT_CODEC: Codec<GameTestInstance>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<GameTestInstance>[]): MapCodec<GameTestInstance>;
     constructor(function_: ResourceKey<(param0: GameTestHelper) => void>, info: TestData<Holder<TestEnvironmentDefinition<Object>>>)
     // private function: ResourceKey<(param0: GameTestHelper) => void>;
     codec(): MapCodec<FunctionGameTestInstance>;

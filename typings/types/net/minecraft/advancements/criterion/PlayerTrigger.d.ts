@@ -7,5 +7,5 @@ export class PlayerTrigger extends SimpleCriterionTrigger<PlayerTrigger$TriggerI
     constructor()
     codec(): Codec<PlayerTrigger$TriggerInstance>;
     trigger(player: ServerPlayer): void;
-    trigger(player: ServerPlayer, matcher: (param0: PlayerTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: PlayerTrigger$TriggerInstance) => boolean): void;
 }

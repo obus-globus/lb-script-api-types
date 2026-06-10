@@ -8,10 +8,10 @@ export class Reference2ShortLinkedOpenHashMap$FastEntryIterator extends Referenc
     constructor(null_: Reference2ShortLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Reference2ShortLinkedOpenHashMap$FastEntryIterator)
     // private entry: Reference2ShortLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2ShortMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Reference2ShortLinkedOpenHashMap$MapEntry;
-    previous(): Reference2ShortLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2ShortMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Reference2ShortMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Reference2ShortLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Reference2ShortLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Reference2ShortMap$Entry<K>): void;
 }

@@ -60,7 +60,7 @@ export abstract class DebugValue extends Object {
     getMetaSimpleName(): string;
     getName(): string;
     getOriginalLanguage(): LanguageInfo;
-    getProperties(): E[];
+    getProperties(): DebugValue[];
     getProperty(name: string): DebugValue;
     getRawValue(languageClass: Class<TruffleLanguage<Object>>): Object;
     getRootInstanceBreakpoints(): Breakpoint[];

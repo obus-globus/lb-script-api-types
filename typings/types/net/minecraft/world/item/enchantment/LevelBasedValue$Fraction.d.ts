@@ -10,7 +10,7 @@ export class LevelBasedValue$Fraction extends Record implements LevelBasedValue 
     static CODEC: Codec<LevelBasedValue>;
     static CODEC: MapCodec<LevelBasedValue$Fraction>;
     static DISPATCH_CODEC: Codec<LevelBasedValue>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<LevelBasedValue>[]): MapCodec<LevelBasedValue>;
     static constant(paramvalue: number): LevelBasedValue$Constant;
     static lookup(paramvalues: number[], paramfallback: LevelBasedValue): LevelBasedValue$Lookup;
     static perLevel(paramperLevel: number): LevelBasedValue$Linear;

@@ -54,5 +54,5 @@ export interface OrderedSubmitNodeCollector extends Object, FabricOrderedSubmitN
     submitNameTag(poseStack: PoseStack, nameTagAttachment: Vec3, offset: number, name: Component, seeThrough: boolean, lightCoords: number, distanceToCameraSq: number, camera: CameraRenderState): void;
     submitParticleGroup(particleGroupRenderer: SubmitNodeCollector$ParticleGroupRenderer): void;
     submitShadow(poseStack: PoseStack, radius: number, pieces: EntityRenderState$ShadowPiece[]): void;
-    submitText(poseStack: PoseStack, x: number, y: number, string: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, dropShadow: boolean, displayMode: Font$DisplayMode, lightCoords: number, color: number, backgroundColor: number, outlineColor: number): void;
+    submitText(poseStack: PoseStack, x: number, y: number, string: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, dropShadow: boolean, displayMode: Font$DisplayMode, lightCoords: number, color: number, backgroundColor: number, outlineColor: number): void;
 }

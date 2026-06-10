@@ -11,5 +11,5 @@ export class DFATransitionCanonicalizer extends StateTransitionCanonicalizer<NFA
     canMerge(a: DFAStateTransitionBuilder, b: DFAStateTransitionBuilder): boolean;
     createResultArray(size: number): DFAStateTransitionBuilder[];
     createTransitionArray(size: number): NFAStateTransition[];
-    createTransitionBuilder(transitions: NFAStateTransition[], targetStateSet: S[], matcherBuilder: (Object | null)[], constraints: number[], operations: number[]): DFAStateTransitionBuilder;
+    createTransitionBuilder(transitions: NFAStateTransition[], targetStateSet: NFAState[], matcherBuilder: (Object | null)[], constraints: number[], operations: number[]): DFAStateTransitionBuilder;
 }

@@ -16,7 +16,7 @@ export class MutableInt extends Number implements Comparable<MutableInt>, Mutabl
     decrement(): void;
     decrementAndGet(): number;
     equals(arg0: Object | null): boolean;
-    get<T extends Object | number | string | boolean>(): T;
+    get(): Number;
     getAndAdd(arg0: number): number;
     getAndAdd(arg0: Number): number;
     getAndDecrement(): number;

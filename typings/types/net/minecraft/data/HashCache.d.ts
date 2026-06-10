@@ -6,7 +6,7 @@ import type { HashCache$ProviderCache } from '../../../net/minecraft/data/HashCa
 import type { HashCache$UpdateFunction } from '../../../net/minecraft/data/HashCache$UpdateFunction.d.ts'
 import type { HashCache$UpdateResult } from '../../../net/minecraft/data/HashCache$UpdateResult.d.ts'
 export class HashCache extends Object {
-    constructor(rootDir: Path[], providerIds: E[], version: WorldVersion)
+    constructor(rootDir: Path[], providerIds: string[], version: WorldVersion)
     // private cacheDir: Path[];
     // private cachePaths: Path[][];
     // private caches: { [key: string]: HashCache$ProviderCache };
@@ -16,7 +16,7 @@ export class HashCache extends Object {
     // private versionId: string;
     // private writes: number;
     applyUpdate(result: HashCache$UpdateResult): void;
-    generateUpdate(providerId: string, function_: (param0: CachedOutput) => java.util.concurrent.CompletableFuture<unknown>): CompletableFuture<HashCache$UpdateResult>;
+    generateUpdate(providerId: string, function_: (param0: CachedOutput) => CompletableFuture<Object>): CompletableFuture<HashCache$UpdateResult>;
     // private getProviderCachePath(provider: string): Path[];
     purgeStaleAndWrite(): void;
     shouldRunInThisVersion(providerId: string): boolean;

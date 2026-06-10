@@ -38,11 +38,11 @@ export class BlockEntityRenderDispatcher extends Object implements FabricResourc
     // private sprites: SpriteGetter;
     fabric$getId(): Identifier;
     getName(): string;
-    getRenderer<E extends BlockEntity>(blockEntity: E): BlockEntityRenderer<E, S>;
-    getRenderer<S extends BlockEntityRenderState>(state: S): BlockEntityRenderer<E, S>;
+    getRenderer<E extends BlockEntity, S extends BlockEntityRenderState>(blockEntity: E): BlockEntityRenderer<E, S>;
+    getRenderer<E extends BlockEntity, S extends BlockEntityRenderState>(state: S): BlockEntityRenderer<E, S>;
     onResourceManagerReload(resourceManager: ResourceManager): void;
     prepare(cameraPos: Vec3): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     submit<S extends BlockEntityRenderState>(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     tryExtractRenderState<S extends BlockEntityRenderState, E extends BlockEntity>(blockEntity: E, partialTicks: number, breakProgress: ModelFeatureRenderer$CrumblingOverlay): S;
 }

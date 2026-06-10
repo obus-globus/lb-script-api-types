@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -22,7 +21,7 @@ export class InventoryScreen extends AbstractRecipeBookScreen<InventoryMenu> {
     static MENU_BACKGROUND: Identifier;
     static extractEntityInInventoryFollowsMouse(paramgraphics: GuiGraphicsExtractor, paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramsize: number, paramoffsetY: number, parammouseX: number, parammouseY: number, paramentity: LivingEntity): void;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(player: Player)
     // private buttonClicked: boolean;

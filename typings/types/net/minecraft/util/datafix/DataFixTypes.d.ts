@@ -44,10 +44,10 @@ export class DataFixTypes extends Enum<DataFixTypes> {
     static values(): (Object | null)[];
     private constructor(type: DSL$TypeReference)
     // private type: DSL$TypeReference;
-    update(fixerUpper: DataFixer, input: Dynamic<T>, fromVersion: number, toVersion: number): Dynamic<T>;
+    update<T extends Object | number | string | boolean>(fixerUpper: DataFixer, input: Dynamic<T>, fromVersion: number, toVersion: number): Dynamic<T>;
     update(fixer: DataFixer, tag: CompoundTag, fromVersion: number, toVersion: number): CompoundTag;
-    updateToCurrentVersion(fixerUpper: DataFixer, input: Dynamic<T>, dataVersion: number): Dynamic<T>;
+    updateToCurrentVersion<T extends Object | number | string | boolean>(fixerUpper: DataFixer, input: Dynamic<T>, dataVersion: number): Dynamic<T>;
     updateToCurrentVersion(fixer: DataFixer, tag: CompoundTag, fromVersion: number): CompoundTag;
-    wrapCodec(codec: Codec<A>, dataFixer: DataFixer, defaultVersion: number): Codec<A>;
+    wrapCodec<A extends Object | number | string | boolean>(codec: Codec<A>, dataFixer: DataFixer, defaultVersion: number): Codec<A>;
     name(): "LEVEL" | "LEVEL_SUMMARY" | "PLAYER" | "CHUNK" | "HOTBAR" | "OPTIONS" | "STRUCTURE" | "STATS" | "SAVED_DATA_COMMAND_STORAGE" | "SAVED_DATA_CUSTOM_BOSS_EVENTS" | "SAVED_DATA_ENDER_DRAGON_FIGHT" | "SAVED_DATA_GAME_RULES" | "SAVED_DATA_FORCED_CHUNKS" | "SAVED_DATA_MAP_DATA" | "SAVED_DATA_MAP_INDEX" | "SAVED_DATA_RAIDS" | "SAVED_DATA_RANDOM_SEQUENCES" | "SAVED_DATA_SCHEDULED_EVENTS" | "SAVED_DATA_SCOREBOARD" | "SAVED_DATA_STOPWATCHES" | "SAVED_DATA_STRUCTURE_FEATURE_INDICES" | "SAVED_DATA_WANDERING_TRADER" | "SAVED_DATA_WEATHER" | "SAVED_DATA_WORLD_BORDER" | "SAVED_DATA_WORLD_CLOCKS" | "SAVED_DATA_WORLD_GEN_SETTINGS" | "ADVANCEMENTS" | "POI_CHUNK" | "WORLD_GEN_SETTINGS" | "ENTITY_CHUNK" | "DEBUG_PROFILE";
 }

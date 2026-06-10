@@ -9,7 +9,7 @@ export class ModuleAutoDodge$Ignore extends Enum<ModuleAutoDodge$Ignore> impleme
     static USING_ITEM: ModuleAutoDodge$Ignore;
     static USING_SCAFFOLD: ModuleAutoDodge$Ignore;
     static getEntries(): ModuleAutoDodge$Ignore[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoDodge$Ignore;

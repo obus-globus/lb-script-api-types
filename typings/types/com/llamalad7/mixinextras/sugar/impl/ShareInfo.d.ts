@@ -9,7 +9,7 @@ import type { IMixinInfo } from '../../../../../org/spongepowered/asm/mixin/exte
 export class ShareInfo extends Object {
     static getOrCreate(paramarg0: AbstractInsnNode[], paramarg1: AnnotationNode, paramarg2: Type, paramarg3: IMixinInfo, paramarg4: StackExtension): ShareInfo;
     private constructor(arg0: number, arg1: Type)
-    // private initialization: E[];
+    // private initialization: AbstractInsnNode[];
     readonly lvtIndex: number;
     readonly shareType: ShareType;
     addToLvt(arg0: AbstractInsnNode[]): void;

@@ -7,12 +7,12 @@ export class ValueInputContextHelper extends Object {
     constructor(lookup: HolderLookup$Provider, ops: DynamicOps<Tag>)
     // private empty: ValueInput;
     // private emptyChildList: ValueInput[];
-    // private emptyTypedList: T[];
+    // private emptyTypedList: Object[];
     // private lookup: HolderLookup$Provider;
     // private ops: DynamicOps<Tag>;
     empty(): ValueInput;
     emptyList(): ValueInput[];
-    emptyTypedList(): T[];
+    emptyTypedList<T extends Object | number | string | boolean>(): T[];
     lookup(): HolderLookup$Provider;
     ops(): DynamicOps<Tag>;
 }

@@ -32,11 +32,11 @@ export class OptimizedRuntimeSupport extends Accessor$RuntimeSupport {
     callProfiled(target: CallTarget, arguments: Object[]): Object;
     castArrayFixedLength(args: Object[], length: number): Object[];
     createAlwaysValidAssumption(): Assumption;
-    createBlockNode(elements: T[], executor: BlockNode$ElementExecutor<T>): BlockNode<T>;
+    createBlockNode<T extends Node>(elements: T[], executor: BlockNode$ElementExecutor<T>): BlockNode<T>;
     createDirectCallNode(target: CallTarget): DirectCallNode;
     createIndirectCallNode(): IndirectCallNode;
     createRuntimeData(engine: Object, engineOptions: OptionValues, loggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): Object;
-    createTerminatingThreadLocal(initialValue: () => T, onThreadTermination: (param0: T) => void): ThreadLocal<T>;
+    createTerminatingThreadLocal<T extends Object | number | string | boolean>(initialValue: () => T, onThreadTermination: (param0: T) => void): ThreadLocal<T>;
     getArrayBaseOffset(componentType: Class<Object>): number;
     getArrayIndexScale(componentType: Class<Object>): number;
     getBaseInstanceSize(type: Class<Object>): number;

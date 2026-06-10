@@ -23,7 +23,7 @@ import type { Vector3f } from '../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../org/joml/Vector3fc.d.ts'
 export class Direction extends Enum<Direction> implements StringRepresentable {
     static BY_2D_DATA: (Object | null)[];
-    static BY_ID: (param0: Direction) => unknown;
+    static BY_ID: (param0: number) => Direction;
     static CODEC: StringRepresentable$EnumCodec<Direction>;
     static DOWN: Direction;
     static EAST: Direction;
@@ -37,17 +37,17 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     static VERTICAL_CODEC: Codec<Direction>;
     static WEST: Direction;
     static YXZ_AXIS_ORDER: Direction$Axis[];
-    static allShuffled(paramrandom: RandomSource): E[];
+    static allShuffled(paramrandom: RandomSource): Direction[];
     static axisStepOrder(parammovement: Vec3): Direction$Axis[];
     static byName(paramname: string): Direction;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static from2DDataValue(paramdata: number): Direction;
     static from3DDataValue(paramdata: number): Direction;
     static fromAxisAndDirection(paramaxis: Direction$Axis, paramdirection: Direction$AxisDirection): Direction;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static fromYRot(paramyRot: number): Direction;
     static get(paramaxisDirection: Direction$AxisDirection, paramaxis: Direction$Axis): Direction;
     static getApproximateNearest(paramdx: number, paramdy: number, paramdz: number): Direction;

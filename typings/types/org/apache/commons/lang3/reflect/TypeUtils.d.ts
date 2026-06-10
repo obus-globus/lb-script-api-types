@@ -10,7 +10,7 @@ import type { Typed } from '../../../../../org/apache/commons/lang3/reflect/Type
 export class TypeUtils extends Object {
     static WILDCARD_ALL: WildcardType;
     static containsTypeVariables(paramarg0: Type): boolean;
-    static determineTypeArguments(paramarg0: Class<Object>, paramarg1: ParameterizedType): Map<Object | null, Type>;
+    static determineTypeArguments(paramarg0: Class<Object>, paramarg1: ParameterizedType): Map<TypeVariable<Object>, Type>;
     static equals(paramarg0: Type, paramarg1: Type): boolean;
     static genericArrayType(paramarg0: Type): GenericArrayType;
     static getArrayComponentType(paramarg0: Type): Type;
@@ -18,22 +18,22 @@ export class TypeUtils extends Object {
     static getImplicitLowerBounds(paramarg0: WildcardType): (Object | null)[];
     static getImplicitUpperBounds(paramarg0: WildcardType): (Object | null)[];
     static getRawType(paramarg0: Type, paramarg1: Type): Class<Object>;
-    static getTypeArguments(paramarg0: ParameterizedType): Map<Object | null, Type>;
-    static getTypeArguments(paramarg0: Type, paramarg1: Class<Object>): Map<Object | null, Type>;
+    static getTypeArguments(paramarg0: ParameterizedType): Map<TypeVariable<Object>, Type>;
+    static getTypeArguments(paramarg0: Type, paramarg1: Class<Object>): Map<TypeVariable<Object>, Type>;
     static isArrayType(paramarg0: Type): boolean;
     static isAssignable(paramarg0: Type, paramarg1: Type): boolean;
     static isInstance(paramarg0: Object, paramarg1: Type): boolean;
     static normalizeUpperBounds(paramarg0: (Object | null)[]): (Object | null)[];
     static parameterize(paramarg0: Class<Object>, paramarg1: (Object | null)[]): ParameterizedType;
-    static parameterize(paramarg0: Class<Object>, paramarg1: Map<Object | null, Type>): ParameterizedType;
+    static parameterize(paramarg0: Class<Object>, paramarg1: Map<TypeVariable<Object>, Type>): ParameterizedType;
     static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: (Object | null)[]): ParameterizedType;
-    static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: Map<Object | null, Type>): ParameterizedType;
+    static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: Map<TypeVariable<Object>, Type>): ParameterizedType;
     static toLongString(paramarg0: TypeVariable<Object>): string;
     static toString(paramarg0: Type): string;
-    static typesSatisfyVariables(paramarg0: Map<Object | null, Type>): boolean;
-    static unrollVariables(paramarg0: Map<Object | null, Type>, paramarg1: Type): Type;
+    static typesSatisfyVariables(paramarg0: Map<TypeVariable<Object>, Type>): boolean;
+    static unrollVariables(paramarg0: Map<TypeVariable<Object>, Type>, paramarg1: Type): Type;
     static wildcardType(): TypeUtils$WildcardTypeBuilder;
-    static wrap(paramarg0: Class<Object>): () => Object | null;
-    static wrap(paramarg0: Type): () => Object | null;
+    static wrap(paramarg0: Class<Object>): () => Type;
+    static wrap(paramarg0: Type): () => Type;
     constructor()
 }

@@ -12,7 +12,7 @@ export class Option extends Object {
     addModOverride(arg0: boolean, arg1: string): void;
     clearModsDefiningValue(): void;
     disableIfDependenciesNotMet(arg0: Logger, arg1: LithiumConfig): boolean;
-    getDefiningMods(): E[];
+    getDefiningMods(): string[];
     getName(): string;
     isEnabled(): boolean;
     isEnabledRecursive(arg0: LithiumConfig): boolean;

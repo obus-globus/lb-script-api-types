@@ -15,5 +15,5 @@ export class SetsKt__SetsKt extends SetsKt__SetsJVMKt {
     static setOfNotNull(paramarg0: Object | null): (Object | null)[];
     static setOfNotNull(paramarg0: Object | null): (Object | null)[];
     static sortedSetOf(paramarg0: Object | null): (Object | null)[];
-    static sortedSetOf(paramarg0: (param0: Object | null) => kotlin.Boolean, paramarg1: Object | null): (Object | null)[];
+    static sortedSetOf(paramarg0: (param0: Object) => boolean, paramarg1: Object | null): (Object | null)[];
 }

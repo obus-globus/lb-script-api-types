@@ -20,7 +20,7 @@ export class TruffleString extends AbstractTruffleString {
     private constructor(data: Object, offset: number, length: number, stride: number, encoding: TruffleString$Encoding, codePointLength: number, codeRange: number, hashCode: number, isCacheHead: boolean)
     private constructor(data: Object, offset: number, length: number, stride: number, encoding: TruffleString$Encoding, codePointLength: number, codeRange: number, hashCode: number, isCacheHead: boolean, cacheEntry: TruffleString)
     // private next: TruffleString;
-    asNativeUncached(allocator: (param0: number) => kotlin.Any, expectedEncoding: TruffleString$Encoding, useCompaction: boolean, cacheResult: boolean): TruffleString;
+    asNativeUncached(allocator: (param0: number) => Object, expectedEncoding: TruffleString$Encoding, useCompaction: boolean, cacheResult: boolean): TruffleString;
     cacheInsert(entry: TruffleString): void;
     // private cacheRingIsValid(): boolean;
     getCacheHead(): TruffleString;

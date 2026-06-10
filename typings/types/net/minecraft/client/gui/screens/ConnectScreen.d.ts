@@ -1,5 +1,4 @@
 import type { ChannelFuture } from '../../../../../io/netty/channel/ChannelFuture.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ConnectScreenAccessor } from '../../../../../net/fabricmc/fabric/mixin/networking/client/accessor/ConnectScreenAccessor.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -22,7 +21,7 @@ export class ConnectScreen extends Screen implements ConnectScreenAccessor {
     static MENU_BACKGROUND: Identifier;
     static UNKNOWN_HOST_MESSAGE: Component;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     static startConnecting(paramparent: Screen, paramminecraft: Minecraft, paramhostAndPort: ServerAddress, paramdata: ServerData, paramisQuickPlay: boolean, paramtransferState: TransferState): void;
     private constructor(parent: Screen, connectFailedTitle: Component)

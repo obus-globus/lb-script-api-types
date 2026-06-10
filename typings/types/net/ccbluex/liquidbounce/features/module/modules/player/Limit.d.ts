@@ -9,7 +9,7 @@ export class Limit extends Enum<Limit> implements Tagged {
     static PARTICLES_AMOUNT: Limit;
     static PARTICLES_SPEED: Limit;
     static getEntries(): Limit[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Limit;

@@ -3,8 +3,8 @@ import type { Float2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/f
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2FloatFunctions$UnmodifiableFunction extends AbstractFloat2FloatFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Float)
-    // private function: (param0: number) => kotlin.Float;
+    constructor(arg0: (param0: number) => number)
+    // private function: (param0: number) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

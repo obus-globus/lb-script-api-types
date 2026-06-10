@@ -10,8 +10,8 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WritePropertyNode extends JSTargetableWriteNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramtarget: JavaScriptNode, parampropertyKey: Object, paramrhs: JavaScriptNode, paramctx: JSContext, paramisStrict: boolean): WritePropertyNode;
     static create(paramtarget: JavaScriptNode, parampropertyKey: Object, paramrhs: JavaScriptNode, paramctx: JSContext, paramisStrict: boolean, paramisGlobal: boolean, paramverifyHasProperty: boolean): WritePropertyNode;
     static evaluateReceiver(paramtargetNode: JavaScriptNode, paramframe: VirtualFrame, paramtargetValue: Object): Object;

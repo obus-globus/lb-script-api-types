@@ -6,6 +6,7 @@ import type { ActionListener } from '../../java/awt/event/ActionListener.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 export class TextField extends TextComponent {
     static ABORT: number;
@@ -38,7 +39,7 @@ export class TextField extends TextComponent {
     getActionListeners(): ActionListener[];
     getColumns(): number;
     getEchoChar(): string;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getMinimumSize(): Dimension;
     getMinimumSize(arg0: number): Dimension;
     getPreferredSize(): Dimension;

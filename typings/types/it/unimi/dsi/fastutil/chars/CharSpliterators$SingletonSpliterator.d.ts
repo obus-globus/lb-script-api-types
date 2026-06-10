@@ -13,14 +13,14 @@ export class CharSpliterators$SingletonSpliterator extends Object implements Cha
     static SORTED: number;
     static SUBSIZED: number;
     constructor(arg0: string)
-    constructor(arg0: string, arg1: (param0: string, param1: string) => kotlin.Int)
-    readonly comparator: (param0: string, param1: string) => kotlin.Int;
+    constructor(arg0: string, arg1: (param0: string, param1: string) => number)
+    readonly comparator: (param0: string, param1: string) => number;
     // private consumed: boolean;
     // private element: string;
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    getComparator(): (param0: string, param1: string) => kotlin.Int;
+    getComparator(): (param0: string, param1: string) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;
     trySplit(): CharSpliterator;

@@ -12,10 +12,9 @@ export class DimensionArgument extends Object implements ArgumentType<Identifier
     static dimension(): DimensionArgument;
     static getDimension(paramcontext: CommandContext<CommandSourceStack>, paramname: string): ServerLevel;
     constructor()
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): Identifier;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Identifier;
+    parse(reader: StringReader): Identifier;
 }

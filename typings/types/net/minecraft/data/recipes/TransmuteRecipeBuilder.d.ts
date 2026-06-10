@@ -20,7 +20,7 @@ export class TransmuteRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Object>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
     static transmute(paramcategory: RecipeCategory, paraminput: Ingredient, parammaterial: Ingredient, paramresult: Item): TransmuteRecipeBuilder;
     static transmute(paramcategory: RecipeCategory, paraminput: Ingredient, parammaterial: Ingredient, paramresult: ItemStackTemplate): TransmuteRecipeBuilder;
     private constructor(category: RecipeCategory, result: ItemStackTemplate, input: Ingredient, material: Ingredient)

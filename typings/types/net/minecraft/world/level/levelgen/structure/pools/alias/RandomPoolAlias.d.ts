@@ -16,8 +16,8 @@ export class RandomPoolAlias extends Record implements PoolAliasBinding {
     static direct(paramid: string, paramtarget: string): DirectPoolAlias;
     static direct(paramalias: ResourceKey<StructureTemplatePool>, paramtarget: ResourceKey<StructureTemplatePool>): DirectPoolAlias;
     static random(paramid: string, paramtargets: WeightedList<string>): RandomPoolAlias;
-    static random(paramid: ResourceKey<StructureTemplatePool>, paramtargets: WeightedList<Object>): RandomPoolAlias;
-    static randomGroup(paramcombinations: WeightedList<Object>): RandomGroupPoolAlias;
+    static random(paramid: ResourceKey<StructureTemplatePool>, paramtargets: WeightedList<ResourceKey<StructureTemplatePool>>): RandomPoolAlias;
+    static randomGroup(paramcombinations: WeightedList<PoolAliasBinding[]>): RandomGroupPoolAlias;
     constructor(alias: ResourceKey<StructureTemplatePool>, targets: WeightedList<ResourceKey<StructureTemplatePool>>)
     // private alias: ResourceKey<StructureTemplatePool>;
     // private targets: WeightedList<ResourceKey<StructureTemplatePool>>;

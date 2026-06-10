@@ -25,7 +25,7 @@ export class ChatListener extends Object {
     // private guessChatUUID(message: Component): UUID;
     handleChatMessageError(senderId: UUID, invalidSignature: MessageSignature, boundChatType: ChatType$Bound): void;
     handleDisguisedChatMessage(message: Component, boundChatType: ChatType$Bound): void;
-    // private handleMessage(signature: MessageSignature, handler: () => kotlin.Boolean): void;
+    // private handleMessage(signature: MessageSignature, handler: () => boolean): void;
     handleOverlay(message: Component): void;
     handlePlayerChatMessage(message: PlayerChatMessage, sender: GameProfile, boundChatType: ChatType$Bound): void;
     handleSystemMessage(message: Component, remote: boolean): void;

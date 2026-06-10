@@ -3,6 +3,7 @@ import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ExtendedBiome } from '../../../../../net/irisshaders/iris/mixinterface/ExtendedBiome.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { EnvironmentAttributeMap } from '../../../../../net/minecraft/world/attribute/EnvironmentAttributeMap.d.ts'
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { Biome$ClimateSettings } from '../../../../../net/minecraft/world/level/biome/Biome$ClimateSettings.d.ts'
@@ -13,9 +14,9 @@ import type { MobSpawnSettings } from '../../../../../net/minecraft/world/level/
 import type { PerlinSimplexNoise } from '../../../../../net/minecraft/world/level/levelgen/synth/PerlinSimplexNoise.d.ts'
 export class Biome extends Object implements ExtendedBiome {
     static BIOME_INFO_NOISE: PerlinSimplexNoise;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Biome>>;
     static DIRECT_CODEC: Codec<Biome>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<Holder<Biome>[]>;
     static NETWORK_CODEC: Codec<Biome>;
     private constructor(climateSettings: Biome$ClimateSettings, attributes: EnvironmentAttributeMap, specialEffects: BiomeSpecialEffects, generationSettings: BiomeGenerationSettings, mobSettings: MobSpawnSettings)
     attributes: EnvironmentAttributeMap;

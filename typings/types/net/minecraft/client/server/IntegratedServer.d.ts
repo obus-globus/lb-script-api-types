@@ -4,7 +4,6 @@ import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { CrashReport } from '../../../../net/minecraft/CrashReport.d.ts'
 import type { SystemReport } from '../../../../net/minecraft/SystemReport.d.ts'
@@ -43,7 +42,7 @@ export class IntegratedServer extends MinecraftServer {
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => Object | null): Object | null;
+    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
     constructor(serverThread: Thread, minecraft: Minecraft, levelStorageAccess: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, services: Services, levelLoadListener: LevelLoadListener)
     // private gizmoCollector: SimpleGizmoCollector;
     // private lanPinger: LanServerPinger;
@@ -60,7 +59,7 @@ export class IntegratedServer extends MinecraftServer {
     getFunctionCompilationPermissions(): LevelBasedPermissionSet;
     getMaxPlayers(): number;
     getModdedStatus(): ModCheck;
-    getPerTickGizmos(): E[];
+    getPerTickGizmos(): SimpleGizmoCollector$GizmoInstance[];
     getPort(): number;
     getRateLimitPacketsPerSecond(): number;
     getScaledTrackingDistance(baseRange: number): number;
@@ -87,6 +86,6 @@ export class IntegratedServer extends MinecraftServer {
     shouldRconBroadcast(): boolean;
     stopServer(): void;
     // private tickPaused(): void;
-    tickServer(haveTime: () => kotlin.Boolean): void;
+    tickServer(haveTime: () => boolean): void;
     useNativeTransport(): boolean;
 }

@@ -5,5 +5,5 @@ import type { Feature$FeatureAccess } from '../../../../org/graalvm/nativeimage/
 export interface Feature$CompilationAccess extends Object, Feature$FeatureAccess {
     objectFieldOffset(field: Field): number;
     registerAsImmutable(object: Object): void;
-    registerAsImmutable(root: Object, includeObject: (param0: Object) => kotlin.Boolean): void;
+    registerAsImmutable(root: Object, includeObject: (param0: Object) => boolean): void;
 }

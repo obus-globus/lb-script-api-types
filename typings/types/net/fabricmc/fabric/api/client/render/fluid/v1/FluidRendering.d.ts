@@ -1,3 +1,4 @@
+import type { VertexConsumer } from '../../../../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { FluidRenderHandler } from '../../../../../../../../net/fabricmc/fabric/api/client/render/fluid/v1/FluidRenderHandler.d.ts'
 import type { FluidRendering$DefaultRenderer } from '../../../../../../../../net/fabricmc/fabric/api/client/render/fluid/v1/FluidRendering$DefaultRenderer.d.ts'
@@ -9,6 +10,6 @@ import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockP
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { FluidState } from '../../../../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 export class FluidRendering extends Object {
-    static render(paramarg0: FluidRenderer, paramarg1: FluidRenderHandler, paramarg2: BlockAndTintGetter, paramarg3: BlockPos, paramarg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, paramarg5: BlockState, paramarg6: FluidState, paramarg7: FluidRendering$DefaultRenderer): void;
+    static render(paramarg0: FluidRenderer, paramarg1: FluidRenderHandler, paramarg2: BlockAndTintGetter, paramarg3: BlockPos, paramarg4: (param0: ChunkSectionLayer) => VertexConsumer, paramarg5: BlockState, paramarg6: FluidState, paramarg7: FluidRendering$DefaultRenderer): void;
     private constructor()
 }

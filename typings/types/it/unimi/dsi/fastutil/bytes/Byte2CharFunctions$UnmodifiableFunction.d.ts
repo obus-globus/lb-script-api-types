@@ -3,8 +3,8 @@ import type { Byte2CharFunction } from '../../../../../it/unimi/dsi/fastutil/byt
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2CharFunctions$UnmodifiableFunction extends AbstractByte2CharFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Char)
-    // private function: (param0: number) => kotlin.Char;
+    constructor(arg0: (param0: number) => string)
+    // private function: (param0: number) => string;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

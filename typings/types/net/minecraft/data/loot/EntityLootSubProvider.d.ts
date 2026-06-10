@@ -15,9 +15,10 @@ import type { LootPool$Builder } from '../../../../net/minecraft/world/level/sto
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { LootTable$Builder } from '../../../../net/minecraft/world/level/storage/loot/LootTable$Builder.d.ts'
 import type { AnyOfCondition$Builder } from '../../../../net/minecraft/world/level/storage/loot/predicates/AnyOfCondition$Builder.d.ts'
+import type { LootItemCondition } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export abstract class EntityLootSubProvider extends Object implements FabricEntityLootSubProvider, EntityLootSubProviderAccessor, LootTableSubProvider {
-    static createSheepDispatchPool(paramtableNames: { [key in DyeColor]: Object | null }): LootPool$Builder;
+    static createSheepDispatchPool(paramtableNames: { [key in DyeColor]: ResourceKey<LootTable> }): LootPool$Builder;
     constructor(enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     constructor(allowed: FeatureFlagSet, required: FeatureFlagSet, registries: HolderLookup$Provider)
     // private allowed: FeatureFlagSet;
@@ -28,8 +29,8 @@ export abstract class EntityLootSubProvider extends Object implements FabricEnti
     add(type: EntityType<Object>, builder: LootTable$Builder): void;
     generate(): void;
     generate(output: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void): void;
-    killedByFrog(entityTypes: HolderGetter<EntityType<Object>>): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    killedByFrogVariant(entityTypes: HolderGetter<EntityType<Object>>, frogVariants: HolderGetter<FrogVariant>, variant: ResourceKey<FrogVariant>): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+    killedByFrog(entityTypes: HolderGetter<EntityType<Object>>): () => LootItemCondition;
+    killedByFrogVariant(entityTypes: HolderGetter<EntityType<Object>>, frogVariants: HolderGetter<FrogVariant>, variant: ResourceKey<FrogVariant>): () => LootItemCondition;
     shouldSmeltLoot(): AnyOfCondition$Builder;
     withConditions(arg0: ResourceCondition[]): EntityLootSubProvider;
 }

@@ -7,6 +7,6 @@ import type { CustomModifierExecutor$ModifierAdapter } from '../../../../net/min
 import type { ExecutionControl } from '../../../../net/minecraft/commands/execution/ExecutionControl.d.ts'
 export class ReturnCommand$ReturnFromCommandCustomModifier<T extends ExecutionCommandSource<T>> extends Object implements CustomModifierExecutor$ModifierAdapter<T> {
     private constructor()
-    apply(context: CommandContext<T>): E[];
+    apply(context: CommandContext<T>): T[];
     apply(originalSource: T, currentSources: T[], currentStep: ContextChain<T>, modifiers: ChainModifiers, output: ExecutionControl<T>): void;
 }

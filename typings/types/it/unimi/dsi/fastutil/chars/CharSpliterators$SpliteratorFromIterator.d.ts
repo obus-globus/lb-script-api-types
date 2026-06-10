@@ -24,7 +24,7 @@ export class CharSpliterators$SpliteratorFromIterator extends Object implements 
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    getComparator(): (param0: string, param1: string) => kotlin.Int;
+    getComparator(): (param0: string, param1: string) => number;
     makeForSplit(arg0: string[], arg1: number): CharSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;

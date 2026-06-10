@@ -8,15 +8,15 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface ExecutorService extends AutoCloseable, Executor, Object {
     awaitTermination(arg0: number, arg1: TimeUnit): boolean;
     close(): void;
-    invokeAll(arg0: E[]): Future<T>[];
-    invokeAll(arg0: E[], arg1: number, arg2: TimeUnit): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(arg0: E[]): T;
-    invokeAny<T extends Object | number | string | boolean>(arg0: E[], arg1: number, arg2: TimeUnit): T;
+    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[]): Future<T>[];
+    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[]): T;
+    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): T;
     isShutdown(): boolean;
     isTerminated(): boolean;
     shutdown(): void;
     shutdownNow(): () => void[];
     submit(arg0: () => void): Future<Object>;
     submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
-    submit(arg0: () => T): Future<T>;
+    submit<T extends Object | number | string | boolean>(arg0: () => T): Future<T>;
 }

@@ -8,7 +8,7 @@ export class ObjectSpliterators$IteratorFromSpliterator<K extends Object | numbe
     // private holder: K;
     // private spliterator: ObjectSpliterator<K>;
     accept(arg0: K): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: K) => void): (param0: K) => void;
     forEachRemaining(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     next(): K;

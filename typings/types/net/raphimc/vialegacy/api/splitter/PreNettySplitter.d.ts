@@ -5,8 +5,8 @@ import type { IntFunction } from '../../../../../java/util/function/IntFunction.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PreNettyPacketType } from '../../../../../net/raphimc/vialegacy/api/splitter/PreNettyPacketType.d.ts'
 export class PreNettySplitter extends Object implements StorableObject {
-    constructor(arg0: Class<Protocol<Object, Object, Object, Object>>, arg1: (param0: PreNettyPacketType) => unknown)
-    // private packetTypeSupplier: (param0: PreNettyPacketType) => unknown;
+    constructor(arg0: Class<Protocol<Object, Object, Object, Object>>, arg1: (param0: number) => PreNettyPacketType)
+    // private packetTypeSupplier: (param0: number) => PreNettyPacketType;
     // private protocolClass: Class<Protocol<Object, Object, Object, Object>>;
     getPacketType(arg0: number): PreNettyPacketType;
     getProtocolName(): string;

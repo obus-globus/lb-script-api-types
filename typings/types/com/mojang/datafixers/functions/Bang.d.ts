@@ -9,7 +9,7 @@ export class Bang<A extends Object | number | string | boolean> extends PointFre
     constructor(arg0: Type<A>)
     // private type: Type<A>;
     equals(arg0: Object | null): boolean;
-    eval(): (param0: DynamicOps<Object>) => (param0: A) => Unit;
+    eval(): (param0: DynamicOps<Object>) => Function<A, Unit>;
     hashCode(): number;
     toString(): string;
     toString(arg0: number): string;

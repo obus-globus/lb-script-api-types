@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DoubleFaceConsumer } from '../../../../../net/ccbluex/liquidbounce/utils/math/DoubleFaceConsumer.d.ts'
+import type { PositionedVoxelShape } from '../../../../../net/ccbluex/liquidbounce/utils/math/PositionedVoxelShape.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
@@ -7,8 +8,8 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Shapes$DoubleLineConsumer } from '../../../../../net/minecraft/world/phys/shapes/Shapes$DoubleLineConsumer.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class ShapeExtensionsKt extends Object {
-    static allEmpty(iterable: (Object | null)[]): boolean;
-    static anyNotEmpty(iterable: (Object | null)[]): boolean;
+    static allEmpty(iterable: VoxelShape[]): boolean;
+    static anyNotEmpty(iterable: VoxelShape[]): boolean;
     /**
      * @returns null if shape is empty
      *
@@ -20,8 +21,8 @@ export class ShapeExtensionsKt extends Object {
     static forAllFaces(voxelShape: VoxelShape, action: DoubleFaceConsumer): void;
     static forAllSideFaces(voxelShape: VoxelShape, side: Direction, hitPos: Vec3, action: DoubleFaceConsumer): void;
     static forAllSideOutlineEdges(voxelShape: VoxelShape, side: Direction, hitPos: Vec3, action: Shapes$DoubleLineConsumer): void;
-    static ifEmpty(voxelShape: VoxelShape, defaultValue: () => Object | null): VoxelShape;
-    static mergeAdjacentVoxelShapes(collection: E[]): (Object | null)[];
+    static ifEmpty(voxelShape: VoxelShape, defaultValue: () => VoxelShape): VoxelShape;
+    static mergeAdjacentVoxelShapes(collection: PositionedVoxelShape<Object>[]): PositionedVoxelShape<Object>[];
     static orEmpty(paramarg0: VoxelShape): VoxelShape;
     /**
      * Shrinks a VoxelShape by the specified amounts on selected axes.
@@ -29,7 +30,7 @@ export class ShapeExtensionsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:165}
      */
     static shrink(voxelShape: VoxelShape, x: number, y: number, z: number): VoxelShape;
-    static toAabbs(voxelShape: VoxelShape, destination: E[]): void;
+    static toAabbs(voxelShape: VoxelShape, destination: Object[]): void;
     /**
      * Order: bigger first
      *

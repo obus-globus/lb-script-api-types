@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotMapEntryAndFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends PolyglotMapEntry<K, V> implements Function<Object, Object> {
     static identity(): (param0: Object | null) => Object | null;
     constructor(languageContext: PolyglotLanguageContext, obj: Object, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type)
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen(arg0: (param0: Object) => V): (param0: Object) => V;
     apply(t: Object): Object;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
+    compose(arg0: (param0: V) => Object): (param0: V) => Object;
 }

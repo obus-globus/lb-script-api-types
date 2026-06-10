@@ -35,7 +35,7 @@ export class CreativeModeInventoryScreen extends AbstractContainerScreen<Creativ
     static MENU_BACKGROUND: Identifier;
     static selectedTab: CreativeModeTab;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     static handleHotbarLoadOrSave(paramminecraft: Minecraft, paramindex: number, paramisLoadPressed: boolean, paramisSavePressed: boolean): void;
     constructor(player: LocalPlayer, enabledFeatures: FeatureFlagSet, displayOperatorCreativeTab: boolean)
@@ -85,7 +85,7 @@ export class CreativeModeInventoryScreen extends AbstractContainerScreen<Creativ
     mouseReleased(event: MouseButtonEvent): boolean;
     mouseScrolled(x: number, y: number, scrollX: number, scrollY: number): boolean;
     preeditUpdated(event: PreeditEvent): boolean;
-    // private refreshCurrentTabContents(displayList: E[]): void;
+    // private refreshCurrentTabContents(displayList: ItemStack[]): void;
     // private refreshSearchResults(): void;
     removed(): void;
     resize(width: number, height: number): void;

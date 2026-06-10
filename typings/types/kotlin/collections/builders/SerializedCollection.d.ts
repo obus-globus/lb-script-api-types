@@ -9,8 +9,8 @@ export class SerializedCollection extends Object implements Externalizable, Seri
     static tagList: number;
     static tagSet: number;
     constructor()
-    constructor(collection: E[], tag: number)
-    // private collection: E[];
+    constructor(collection: (Object | null)[], tag: number)
+    // private collection: (Object | null)[];
     // private tag: number;
     readExternal(input: ObjectInput): void;
     // private readResolve(): Object;

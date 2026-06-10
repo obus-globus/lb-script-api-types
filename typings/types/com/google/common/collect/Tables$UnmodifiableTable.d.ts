@@ -18,5 +18,5 @@ export class Tables$UnmodifiableTable<R extends Object | number | string | boole
     row(rowKey: R): Map<C, V>;
     rowKeySet(): R[];
     rowMap(): Map<R, Map<C, V>>;
-    values(): E[];
+    values(): V[];
 }

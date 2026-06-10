@@ -4,6 +4,6 @@ import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvide
 export class GLFWNativeWGL extends Object {
     static glfwGetWGLContext(paramarg0: number): number;
     static setPath(paramarg0: string): void;
-    static setPath(paramarg0: (param0: ByteBuffer) => kotlin.Long): void;
+    static setPath(paramarg0: (param0: ByteBuffer) => number): void;
     constructor()
 }

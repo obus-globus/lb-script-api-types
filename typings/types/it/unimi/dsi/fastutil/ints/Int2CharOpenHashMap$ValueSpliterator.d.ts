@@ -17,7 +17,7 @@ export class Int2CharOpenHashMap$ValueSpliterator extends Int2CharOpenHashMap$Ma
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    getComparator(): (param0: string, param1: string) => kotlin.Int;
+    getComparator(): (param0: string, param1: string) => number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Int2CharOpenHashMap$ValueSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;

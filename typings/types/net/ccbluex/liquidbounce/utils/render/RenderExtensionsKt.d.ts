@@ -43,7 +43,7 @@ export class RenderExtensionsKt extends Object {
     static copyFully(paramarg0: GpuTexture, paramarg1: () => string): GpuTexture;
     static copyFully(gpuTexture: GpuTexture, labelGetter: () => string, usage: number): GpuTexture;
     static copyTo(gpuTexture: GpuTexture, destination: GpuBuffer, offset: number, mipLevel: number, x: number, y: number, width: number, height: number, callback: () => void): void;
-    static createUbo(gpuDevice: GpuDevice, labelGetter: () => string, std140Size: (param0: Object | null) => void): GpuBuffer;
+    static createUbo(gpuDevice: GpuDevice, labelGetter: () => string, std140Size: (param0: Object) => void): GpuBuffer;
     static getTextureSetup(paramarg0: AbstractTexture): TextureSetup;
     static mapBuffer(paramarg0: GpuBuffer, paramarg1: boolean, paramarg2: boolean): GpuBuffer$MappedView;
     static mapBuffer(paramarg0: GpuBufferSlice, paramarg1: boolean, paramarg2: boolean): GpuBuffer$MappedView;
@@ -64,7 +64,7 @@ export class RenderExtensionsKt extends Object {
     static registerTexture(nativeImage: NativeImage, identifier: Identifier): DynamicTexture;
     static reset(poseStack: PoseStack): void;
     static saveToFile(gpuTexture: GpuTexture, file: File): CompletableFuture<Object>;
-    static std140Size(block: (param0: Object | null) => void): number;
+    static std140Size(block: (param0: Object) => void): number;
     static toBufferedImage(nativeImage: NativeImage): BufferedImage;
     static toBufferedImage(nativeImage: GpuTexture): CompletableFuture<BufferedImage>;
     static toBufferedImage(gpuTexture: GpuTexture, mipLevel: number): CompletableFuture<BufferedImage>;
@@ -81,6 +81,6 @@ export class RenderExtensionsKt extends Object {
     static withOutputTextureOverride(color: GpuTextureView, depth: GpuTextureView, block: () => void): void;
     static write(gpuBufferSlice: GpuBufferSlice, byteBuffer: ByteBuffer): void;
     static write(gpuTexture: GpuTexture, source: NativeImage, mipLevel: number, depthOrLayer: number, destX: number, destY: number, width: number, height: number, sourceX: number, sourceY: number): void;
-    static writeStd140(paramarg0: GpuBufferSlice, paramarg1: (param0: Object | null) => void): GpuBufferSlice;
-    static writeStd140(paramarg0: ByteBuffer, paramarg1: (param0: Object | null) => void): void;
+    static writeStd140(paramarg0: GpuBufferSlice, paramarg1: (param0: Object) => void): GpuBufferSlice;
+    static writeStd140(paramarg0: ByteBuffer, paramarg1: (param0: Object) => void): void;
 }

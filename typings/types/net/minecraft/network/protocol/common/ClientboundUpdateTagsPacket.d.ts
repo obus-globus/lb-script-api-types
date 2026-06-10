@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -10,7 +11,7 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { TagNetworkSerialization$NetworkPayload } from '../../../../../net/minecraft/tags/TagNetworkSerialization$NetworkPayload.d.ts'
 export class ClientboundUpdateTagsPacket extends Object implements Packet<ClientCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundUpdateTagsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(tags: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>)
     private constructor(input: FriendlyByteBuf)
     readonly tags: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;

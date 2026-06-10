@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CustomValue } from '../../../../../net/fabricmc/loader/api/metadata/CustomValue.d.ts'
+import type { ModDependency } from '../../../../../net/fabricmc/loader/api/metadata/ModDependency.d.ts'
 import type { ModMetadata } from '../../../../../net/fabricmc/loader/api/metadata/ModMetadata.d.ts'
 export abstract class AbstractModMetadata extends Object implements ModMetadata {
     static TYPE_BUILTIN: string;
@@ -7,10 +8,10 @@ export abstract class AbstractModMetadata extends Object implements ModMetadata 
     constructor()
     containsCustomElement(arg0: string): boolean;
     containsCustomValue(arg0: string): boolean;
-    getBreaks(): E[];
-    getConflicts(): E[];
+    getBreaks(): ModDependency[];
+    getConflicts(): ModDependency[];
     getCustomValue(arg0: string): CustomValue;
-    getDepends(): E[];
-    getRecommends(): E[];
-    getSuggests(): E[];
+    getDepends(): ModDependency[];
+    getRecommends(): ModDependency[];
+    getSuggests(): ModDependency[];
 }

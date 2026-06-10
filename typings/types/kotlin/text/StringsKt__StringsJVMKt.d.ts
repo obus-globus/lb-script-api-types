@@ -11,11 +11,11 @@ import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { StringCompanionObject } from '../../kotlin/jvm/internal/StringCompanionObject.d.ts'
 import type { StringsKt__StringNumberConversionsKt } from '../../kotlin/text/StringsKt__StringNumberConversionsKt.d.ts'
 export class StringsKt__StringsJVMKt extends StringsKt__StringNumberConversionsKt {
-    static append(paramarg0: Object | null, paramarg1: (Object | null)[]): Object | null;
+    static append(paramarg0: Appendable | null, paramarg1: (Object | null)[]): Appendable | null;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
-    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object | null) => Object | null): void;
-    static appendRange(paramarg0: Object | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Object | null;
+    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
+    static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
     static appendln(paramarg0: Appendable): Appendable;
     static appendln(paramarg0: StringBuilder): StringBuilder;
     static capitalize(paramarg0: string): string;
@@ -34,7 +34,7 @@ export class StringsKt__StringsJVMKt extends StringsKt__StringNumberConversionsK
     static encodeToByteArray(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: boolean): number[];
     static endsWith(paramarg0: string, paramarg1: string, paramarg2: boolean): boolean;
     static equals(paramarg0: string, paramarg1: string, paramarg2: boolean): boolean;
-    static getCASE_INSENSITIVE_ORDER(paramarg0: StringCompanionObject): (param0: string) => kotlin.Boolean;
+    static getCASE_INSENSITIVE_ORDER(paramarg0: StringCompanionObject): (param0: Object) => boolean;
     static numberFormatError(paramarg0: string): void;
     static prependIndent(paramarg0: string, paramarg1: string): string;
     static regionMatches(paramarg0: CharSequence, paramarg1: number, paramarg2: CharSequence, paramarg3: number, paramarg4: number, paramarg5: boolean): boolean;

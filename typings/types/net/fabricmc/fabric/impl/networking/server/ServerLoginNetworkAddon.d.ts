@@ -25,7 +25,7 @@ export class ServerLoginNetworkAddon extends AbstractNetworkAddon<(param0: Minec
     // private listener: ServerLoginPacketListenerImpl;
     // private queryIdFactory: QueryIdFactory;
     // private server: MinecraftServer;
-    // private waits: E[];
+    // private waits: Future<Object>[];
     createPacket(arg0: CustomPacketPayload): Packet<Object>;
     createPacket(arg0: Identifier, arg1: FriendlyByteBuf): Packet<Object>;
     disconnect(arg0: Component): void;

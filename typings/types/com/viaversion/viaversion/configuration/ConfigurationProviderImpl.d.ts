@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ConfigurationProviderImpl extends Object implements ConfigurationProvider {
     constructor()
     // private configs: Config[];
-    configs(): E[];
+    configs(): Config[];
     register(arg0: Config): void;
     reloadConfigs(): void;
 }

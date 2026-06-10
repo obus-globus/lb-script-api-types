@@ -23,7 +23,7 @@ export class ConfigurationScheduler extends AbstractLifeCycle {
     isExecutorServiceSet(): boolean;
     nextFireInterval(fireDate: Date): number;
     schedule(command: () => void, delay: number, unit: TimeUnit): ScheduledFuture<Object>;
-    schedule(callable: () => V, delay: number, unit: TimeUnit): ScheduledFuture<V>;
+    schedule<V extends Object | number | string | boolean>(callable: () => V, delay: number, unit: TimeUnit): ScheduledFuture<V>;
     scheduleAtFixedRate(command: () => void, initialDelay: number, period: number, unit: TimeUnit): ScheduledFuture<Object>;
     scheduleWithCron(cronExpression: CronExpression, command: () => void): CronScheduledFuture<Object>;
     scheduleWithCron(cronExpression: CronExpression, startDate: Date, command: () => void): CronScheduledFuture<Object>;

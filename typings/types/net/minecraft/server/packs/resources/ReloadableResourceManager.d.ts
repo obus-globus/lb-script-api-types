@@ -18,9 +18,9 @@ import type { ResourceManager } from '../../../../../net/minecraft/server/packs/
 import type { ResourceProvider } from '../../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 import type { Unit } from '../../../../../net/minecraft/util/Unit.d.ts'
 export class ReloadableResourceManager extends Object implements AutoCloseable, ResourceManager {
-    static EMPTY: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>;
+    static EMPTY: (param0: Identifier) => Optional<Resource>;
     constructor(type: PackType)
-    // private listeners: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, param3: Executor) => java.util.concurrent.CompletableFuture<java.lang.Void>[];
+    // private listeners: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[];
     // private resources: CloseableResourceManager;
     // private type: PackType;
     close(): void;
@@ -29,7 +29,7 @@ export class ReloadableResourceManager extends Object implements AutoCloseable, 
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filenameFilter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource>;
-    registerReloadListener(listener: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, param3: Executor) => java.util.concurrent.CompletableFuture<java.lang.Void>): void;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
+    listResources(directory: string, filenameFilter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
+    registerReloadListener(listener: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>): void;
 }

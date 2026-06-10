@@ -7,7 +7,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class Logger$ConfigurationData extends Object {
     constructor()
     // private delegate: Logger$ConfigurationData;
-    // private filter: (param0: LogRecord) => kotlin.Boolean;
+    // private filter: (param0: LogRecord) => boolean;
     // private handlers: Handler[];
     // private levelObject: Level;
     // private levelValue: number;
@@ -15,7 +15,7 @@ export class Logger$ConfigurationData extends Object {
     addHandler(arg0: Handler): void;
     merge(arg0: Logger): Logger$ConfigurationData;
     removeHandler(arg0: Handler): void;
-    setFilter(arg0: (param0: LogRecord) => kotlin.Boolean): void;
+    setFilter(arg0: (param0: LogRecord) => boolean): void;
     setLevelObject(arg0: Level): void;
     setLevelValue(arg0: number): void;
     setUseParentHandlers(arg0: boolean): void;

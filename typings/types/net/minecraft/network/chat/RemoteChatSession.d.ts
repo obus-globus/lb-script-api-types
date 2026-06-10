@@ -14,8 +14,8 @@ export class RemoteChatSession extends Record {
     // private profilePublicKey: ProfilePublicKey;
     // private sessionId: UUID;
     asData(): RemoteChatSession$Data;
-    createMessageDecoder(profileId: UUID): (param0: MessageSignature, param1: SignedMessageBody) => net.minecraft.network.chat.PlayerChatMessage;
-    createMessageValidator(gracePeriod: Duration): (param0: PlayerChatMessage) => net.minecraft.network.chat.PlayerChatMessage;
+    createMessageDecoder(profileId: UUID): (param0: MessageSignature, param1: SignedMessageBody) => PlayerChatMessage;
+    createMessageValidator(gracePeriod: Duration): (param0: PlayerChatMessage) => PlayerChatMessage;
     equals(o: Object | null): boolean;
     hasExpired(): boolean;
     hashCode(): number;

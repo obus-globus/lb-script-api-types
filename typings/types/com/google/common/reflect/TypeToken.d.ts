@@ -61,8 +61,8 @@ export abstract class TypeToken<T extends Object | number | string | boolean> ex
     // private someRawTypeIsSubclassOf(superclass: Class<Object>): boolean;
     toString(): string;
     unwrap(): TypeToken<T>;
-    where(typeParam: TypeParameter<X>, typeArg: TypeToken<X>): TypeToken<T>;
-    where(typeParam: TypeParameter<X>, typeArg: Class<X>): TypeToken<T>;
+    where<X extends Object | number | string | boolean>(typeParam: TypeParameter<X>, typeArg: TypeToken<X>): TypeToken<T>;
+    where<X extends Object | number | string | boolean>(typeParam: TypeParameter<X>, typeArg: Class<X>): TypeToken<T>;
     wrap(): TypeToken<T>;
     writeReplace(): Object;
 }

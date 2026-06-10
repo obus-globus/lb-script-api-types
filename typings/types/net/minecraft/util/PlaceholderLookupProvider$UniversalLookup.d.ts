@@ -9,16 +9,14 @@ import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../net/minecraft/util/RandomSource.d.ts'
 export class PlaceholderLookupProvider$UniversalLookup extends Object implements HolderGetter<Object>, HolderOwner<Object> {
     private constructor(null_: PlaceholderLookupProvider$UniversalLookup)
-    canSerializeIn(context: HolderOwner<T>): boolean;
-    castAsLookup(): HolderGetter<T>;
-    castAsOwner(): HolderOwner<T>;
+    canSerializeIn(context: HolderOwner<Object>): boolean;
+    castAsLookup<T extends Object | number | string | boolean>(): HolderGetter<T>;
+    castAsOwner<T extends Object | number | string | boolean>(): HolderOwner<T>;
     get(id: ResourceKey<Object>): Optional<Holder$Reference<Object>>;
     get(id: TagKey<Object>): Optional<Object[]>;
     // private getOrCreate(id: ResourceKey<Object>): Holder$Reference<Object>;
     // private getOrCreate(id: TagKey<Object>): Object[];
-    getOrThrow(id: ResourceKey<T>): Holder$Reference<T>;
-    getOrThrow(id: TagKey<T>): T[];
     getOrThrow(id: ResourceKey<Object>): Holder$Reference<Object>;
     getOrThrow(id: TagKey<Object>): Object[];
-    getRandomElementOf(tag: TagKey<T>, random: RandomSource): Optional<Holder<T>>;
+    getRandomElementOf(tag: TagKey<Object>, random: RandomSource): Optional<Holder<Object>>;
 }

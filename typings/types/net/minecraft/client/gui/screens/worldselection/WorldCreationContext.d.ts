@@ -33,7 +33,7 @@ export class WorldCreationContext extends Record {
     selectedDimensions(): WorldDimensions;
     toString(): string;
     validate(): void;
-    withDimensions(modifier: (param0: Object | null, param1: Object | null) => unknown): WorldCreationContext;
+    withDimensions(modifier: (param0: Object | null, param1: Object | null) => Object | null): WorldCreationContext;
     withOptions(modifier: WorldCreationContext$OptionsModifier): WorldCreationContext;
     withSettings(options: WorldOptions, dimensions: WorldDimensions): WorldCreationContext;
     worldgenLoadContext(): RegistryAccess$Frozen;

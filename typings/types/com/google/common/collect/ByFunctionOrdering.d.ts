@@ -6,15 +6,15 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ByFunctionOrdering<F extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Ordering<F> implements Serializable {
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
-    static compound(paramcomparators: (Object | null)[]): Ordering<Object>;
+    static compound(paramcomparators: (param0: Object) => boolean[]): Ordering<Object>;
     static explicit(paramleastValue: Object | null, paramremainingValuesInOrder: Object | null): Ordering<Object>;
     static explicit(paramvaluesInOrder: (Object | null)[]): Ordering<Object>;
     static from(paramordering: Ordering<Object>): Ordering<Object>;
-    static from(paramcomparator: (param0: Object | null) => kotlin.Boolean): Ordering<Object>;
+    static from(paramcomparator: (param0: Object) => boolean): Ordering<Object>;
     static natural(): Ordering<Object>;
     static usingToString(): Ordering<Object>;
-    constructor(function_: (param0: F) => T, ordering: Ordering<T>)
-    // private function: (param0: F) => T;
+    constructor(function_: (param0: Object) => boolean, ordering: Ordering<T>)
+    // private function: (param0: Object) => boolean;
     // private ordering: Ordering<T>;
     compare(left: F, right: F): number;
     equals(object: Object | null): boolean;

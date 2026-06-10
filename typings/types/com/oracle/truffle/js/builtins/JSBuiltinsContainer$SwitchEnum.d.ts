@@ -12,7 +12,7 @@ export class JSBuiltinsContainer$SwitchEnum<E extends Enum<E> & BuiltinEnum<E>> 
     constructor(name: TruffleString, enumType: Class<E>)
     constructor(enumType: Class<E>)
     readonly enumType: Class<E>;
-    // private createBuiltin(builtinEnum: E, functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any, constructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any, newTargetConstructorFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any): JSBuiltin;
+    // private createBuiltin(builtinEnum: E, functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object, constructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object, newTargetConstructorFactory: (param0: JSContext, param1: JSBuiltin) => Object): JSBuiltin;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean, builtinEnum: E): Object;
     getEnumType(): Class<E>;
     // private loadBuiltin(builtinEnum: E): void;

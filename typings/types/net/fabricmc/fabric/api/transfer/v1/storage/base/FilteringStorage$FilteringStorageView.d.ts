@@ -8,6 +8,6 @@ export class FilteringStorage$FilteringStorageView extends Object implements Sto
     getAmount(): number;
     getCapacity(): number;
     getResource<T extends Object | number | string | boolean>(): T;
-    getUnderlyingView(): StorageView<T>;
+    getUnderlyingView<T extends Object | number | string | boolean>(): StorageView<T>;
     isResourceBlank(): boolean;
 }

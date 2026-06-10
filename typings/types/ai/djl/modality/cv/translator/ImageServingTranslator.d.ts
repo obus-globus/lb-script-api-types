@@ -11,8 +11,8 @@ export class ImageServingTranslator extends Object implements Translator<Input, 
     constructor(arg0: Translator<Image, Object>)
     // private factory: ImageFactory;
     // private translator: Translator<Image, Object>;
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    batchProcessInput(arg0: TranslatorContext, arg1: Input[]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output[];
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;

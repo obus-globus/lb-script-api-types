@@ -5,8 +5,8 @@ export class Arrays extends Object {
     static MAX_ARRAY_SIZE: number;
     static ensureFromTo(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static ensureOffsetLength(paramarg0: number, paramarg1: number, paramarg2: number): void;
-    static mergeSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int, paramarg3: (param0: number, param1: number) => void): void;
-    static parallelQuickSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int, paramarg3: (param0: number, param1: number) => void): void;
-    static quickSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int, paramarg3: (param0: number, param1: number) => void): void;
+    static mergeSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number, paramarg3: (param0: number, param1: number) => void): void;
+    static parallelQuickSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number, paramarg3: (param0: number, param1: number) => void): void;
+    static quickSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number, paramarg3: (param0: number, param1: number) => void): void;
     private constructor()
 }

@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -12,7 +13,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 export class ServerboundSeenAdvancementsPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSeenAdvancementsPacket>;
     static closedScreen(): ServerboundSeenAdvancementsPacket;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static openedTab(paramtab: AdvancementHolder): ServerboundSeenAdvancementsPacket;
     private constructor(input: FriendlyByteBuf)
     constructor(action: ServerboundSeenAdvancementsPacket$Action, tab: Identifier)

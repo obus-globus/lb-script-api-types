@@ -3,7 +3,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ExpirableValue<T extends Object | number | string | boolean> extends Record {
-    static codec(paramvalueCodec: Codec<Object>): Codec<Object>;
+    static codec(paramvalueCodec: Codec<Object>): Codec<ExpirableValue<Object>>;
     static of(paramvalue: Object | null): ExpirableValue<Object>;
     static of(paramvalue: Object | null, paramticksUntilExpiry: number): ExpirableValue<Object>;
     constructor(value: T, timeToLive: Optional<number>)

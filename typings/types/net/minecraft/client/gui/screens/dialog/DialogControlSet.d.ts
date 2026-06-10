@@ -11,7 +11,7 @@ import type { Input } from '../../../../../../net/minecraft/server/dialog/Input.
 import type { Action } from '../../../../../../net/minecraft/server/dialog/action/Action.d.ts'
 import type { Action$ValueGetter } from '../../../../../../net/minecraft/server/dialog/action/Action$ValueGetter.d.ts'
 export class DialogControlSet extends Object {
-    static EMPTY_ACTION: () => Object | null;
+    static EMPTY_ACTION: () => Optional<ClickEvent>;
     constructor(screen: DialogScreen<Object>)
     // private screen: DialogScreen<Object>;
     // private valueGetters: { [key: string]: Action$ValueGetter };

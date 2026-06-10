@@ -2,6 +2,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ReadWriteProperty } from '../../../../kotlin/properties/ReadWriteProperty.d.ts'
+import type { Event } from '../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { EventHook } from '../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 export class EventListenerKt extends Object {
@@ -22,11 +23,11 @@ export class EventListenerKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:136}
      */
-    static computedOn(eventListener: EventListener, initialValue: Object | null, priority: number, accumulator: (param0: Object | null, param1: Object | null) => Object | null): ReadWriteProperty<EventListener, Object>;
-    static handler(eventListener: EventListener, eventClass: Class<Object>, priority: number, handler: (param0: Object | null) => void): EventHook<Object>;
-    static handler(eventListener: EventListener, priority: number, handler: (param0: Object | null) => void): EventHook<Object>;
-    static newEventHook(eventListener: EventListener, priority: number, handler: (param0: Object | null) => void): EventHook<Object>;
-    static once(eventListener: EventListener, priority: number, handler: (param0: Object | null) => void): EventHook<Object>;
-    static repeated(eventListener: EventListener, times: number, priority: number, handler: (param0: Object | null) => void): EventHook<Object>;
-    static until(eventListener: EventListener, priority: number, handler: (param0: Object | null) => boolean): EventHook<Object>;
+    static computedOn(eventListener: EventListener, initialValue: Object | null, priority: number, accumulator: (param0: Object, param1: Object) => Object | null): ReadWriteProperty<EventListener, Object>;
+    static handler(eventListener: EventListener, eventClass: Class<Event>, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;
+    static handler(eventListener: EventListener, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;
+    static newEventHook(eventListener: EventListener, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;
+    static once(eventListener: EventListener, priority: number, handler: (param0: Object) => void): EventHook<Event>;
+    static repeated(eventListener: EventListener, times: number, priority: number, handler: (param0: Object) => void): EventHook<Event>;
+    static until(eventListener: EventListener, priority: number, handler: (param0: Object) => boolean): EventHook<Event>;
 }

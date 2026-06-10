@@ -10,7 +10,7 @@ import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/le
 export class SurfaceRules$Steep extends Enum<SurfaceRules$Steep> implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
     static INSTANCE: SurfaceRules$Steep;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$Steep;
     static values(): (Object | null)[];

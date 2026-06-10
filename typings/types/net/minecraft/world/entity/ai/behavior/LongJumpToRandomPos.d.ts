@@ -1,7 +1,6 @@
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
@@ -12,10 +11,10 @@ import type { LongJumpToRandomPos$PossibleJump } from '../../../../../../net/min
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LongJumpToRandomPos<E extends Mob> extends Behavior<E> {
     static DEFAULT_DURATION: number;
-    static defaultAcceptableLandingSpot(parambody: Object | null, paramtargetPos: BlockPos): boolean;
+    static defaultAcceptableLandingSpot(parambody: Mob | null, paramtargetPos: BlockPos): boolean;
     constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocityMultiplier: number, getJumpSound: (param0: E) => SoundEvent)
-    constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocityMultiplier: number, getJumpSound: (param0: E) => SoundEvent, acceptableLandingSpot: (param0: E, param1: BlockPos) => kotlin.Boolean)
-    // private acceptableLandingSpot: (param0: E, param1: BlockPos) => kotlin.Boolean;
+    constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocityMultiplier: number, getJumpSound: (param0: E) => SoundEvent, acceptableLandingSpot: (param0: E, param1: BlockPos) => boolean)
+    // private acceptableLandingSpot: (param0: E, param1: BlockPos) => boolean;
     // private chosenJump: Vec3;
     // private findJumpTries: number;
     // private getJumpSound: (param0: E) => SoundEvent;

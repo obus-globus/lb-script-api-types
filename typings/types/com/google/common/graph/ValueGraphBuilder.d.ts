@@ -10,11 +10,11 @@ export class ValueGraphBuilder<N extends Object | number | string | boolean, V e
     static undirected(): ValueGraphBuilder<Object, Object>;
     private constructor(directed: boolean)
     allowsSelfLoops(allowsSelfLoops: boolean): ValueGraphBuilder<N, V>;
-    build(): MutableValueGraph<N1, V1>;
-    // private cast(): ValueGraphBuilder<N1, V1>;
+    build<N1 extends N, V1 extends V>(): MutableValueGraph<N1, V1>;
+    // private cast<N1 extends N, V1 extends V>(): ValueGraphBuilder<N1, V1>;
     copy(): ValueGraphBuilder<N, V>;
     expectedNodeCount(expectedNodeCount: number): ValueGraphBuilder<N, V>;
-    immutable(): ImmutableValueGraph$Builder<N1, V1>;
-    incidentEdgeOrder(incidentEdgeOrder: ElementOrder<N1>): ValueGraphBuilder<N1, V>;
-    nodeOrder(nodeOrder: ElementOrder<N1>): ValueGraphBuilder<N1, V>;
+    immutable<N1 extends N, V1 extends V>(): ImmutableValueGraph$Builder<N1, V1>;
+    incidentEdgeOrder<N1 extends N>(incidentEdgeOrder: ElementOrder<N1>): ValueGraphBuilder<N1, V>;
+    nodeOrder<N1 extends N>(nodeOrder: ElementOrder<N1>): ValueGraphBuilder<N1, V>;
 }

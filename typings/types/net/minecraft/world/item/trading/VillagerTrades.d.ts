@@ -400,14 +400,14 @@ export class VillagerTrades extends Object {
     static WEAPONSMITH_4_EMERALD_ENCHANTED_DIAMOND_AXE: ResourceKey<VillagerTrade>;
     static WEAPONSMITH_5_EMERALD_ENCHANTED_DIAMOND_SWORD: ResourceKey<VillagerTrade>;
     static bootstrap(paramcontext: BootstrapContext<VillagerTrade>): Holder<VillagerTrade>;
-    static enchantedBook(paramitems: HolderGetter<Item>, paramoptions: Optional<Object>): LootItemFunction[];
+    static enchantedBook(paramitems: HolderGetter<Item>, paramoptions: Optional<Holder<Enchantment>[]>): LootItemFunction[];
     static enchantedBook(paramitems: HolderGetter<Item>, paramenchantment: Holder<Enchantment>, paramlevel: number): LootItemFunction[];
-    static enchantedItem(paramitems: HolderGetter<Item>, paramoptions: Optional<Object>, paramexpectedItem: Item): LootItemFunction[];
+    static enchantedItem(paramitems: HolderGetter<Item>, paramoptions: Optional<Holder<Enchantment>[]>, paramexpectedItem: Item): LootItemFunction[];
     static enchantedItem(paramitems: HolderGetter<Item>, paramenchantment: Holder<Enchantment>, paramlevel: number, paramexpectedItem: Item): LootItemFunction[];
     static register(paramcontext: BootstrapContext<VillagerTrade>, paramresourceKey: ResourceKey<VillagerTrade>, paramvillagerTrade: VillagerTrade): Holder$Reference<VillagerTrade>;
     static resourceKey(parampath: string): ResourceKey<VillagerTrade>;
-    static villagerTypeHolderSet(paramvillagerVariants: HolderGetter<VillagerType>, paramresourceKeys: (Object | null)[]): Holder<T>[];
-    static villagerTypeHolderSet(paramvillagerVariants: HolderGetter<VillagerType>, paramresourceKey: ResourceKey<VillagerType>): Holder<T>[];
-    static villagerTypeRestriction(paramvillagerTypes: Holder<T>[]): Optional<LootItemCondition>;
+    static villagerTypeHolderSet(paramvillagerVariants: HolderGetter<VillagerType>, paramresourceKeys: ResourceKey<VillagerType>[]): Holder<VillagerType>[];
+    static villagerTypeHolderSet(paramvillagerVariants: HolderGetter<VillagerType>, paramresourceKey: ResourceKey<VillagerType>): Holder<VillagerType>[];
+    static villagerTypeRestriction(paramvillagerTypes: Holder<VillagerType>[]): Optional<LootItemCondition>;
     constructor()
 }

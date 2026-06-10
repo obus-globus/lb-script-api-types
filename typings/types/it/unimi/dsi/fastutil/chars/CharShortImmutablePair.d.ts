@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharShortImmutablePair extends Object implements CharShortPair, Serializable {
-    static lexComparator(): (param0: CharShortPair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: number): CharShortImmutablePair;
     static of(paramarg0: string, paramarg1: number): CharShortPair;
     constructor(arg0: string, arg1: number)

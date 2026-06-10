@@ -9,7 +9,7 @@ export class JndiManager extends AbstractManager {
     static getDefaultManager(paramname: string): JndiManager;
     static getJndiManager(paraminitialContextFactoryName: string, paramproviderURL: string, paramurlPkgPrefixes: string, paramsecurityPrincipal: string, paramsecurityCredentials: string, paramadditionalProperties: Properties): JndiManager;
     static getJndiManager(paramproperties: Properties): JndiManager;
-    static getManager(paramname: string, paramfactory: ManagerFactory<Object, Object>, paramdata: Object | null): Object | null;
+    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static hasManager(paramname: string): boolean;
     static isJndiContextSelectorEnabled(): boolean;
     static isJndiEnabled(): boolean;

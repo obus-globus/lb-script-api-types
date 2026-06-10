@@ -16,8 +16,8 @@ export abstract class LocaleDisplayNames extends Object {
     getContext(arg0: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiList(arg0: ULocale[], arg1: boolean, arg2: (param0: Object) => kotlin.Boolean): LocaleDisplayNames$UiListItem[];
-    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: LocaleDisplayNames$UiListItem) => kotlin.Boolean): LocaleDisplayNames$UiListItem[];
+    getUiList(arg0: ULocale[], arg1: boolean, arg2: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
     keyDisplayName(arg0: string): string;
     keyValueDisplayName(arg0: string, arg1: string): string;
     languageDisplayName(arg0: string): string;

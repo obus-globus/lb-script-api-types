@@ -17,7 +17,7 @@ export class RVector extends Object {
     constructor(arg0: Real[])
     constructor(arg0: BigInteger[])
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: number) => com.seedfinding.mcmath.arithmetic.Real)
+    constructor(arg0: number, arg1: (param0: number) => Real)
     constructor(arg0: number[])
     readonly elements: Real[];
     add(arg0: RVector): RVector;
@@ -38,8 +38,8 @@ export class RVector extends Object {
     hashCode(): number;
     magnitude(): Real;
     magnitudeSq(): Real;
-    map(arg0: (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real): RVector;
-    mapAndSet(arg0: (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real): RVector;
+    map(arg0: (param0: number, param1: Real) => Real): RVector;
+    mapAndSet(arg0: (param0: number, param1: Real) => Real): RVector;
     multiply(arg0: RMatrix): RVector;
     multiplyAndSet(arg0: RMatrix): RVector;
     norm(arg0: (param0: RVector) => Real): Real;
@@ -60,8 +60,8 @@ export class RVector extends Object {
     swap(arg0: number, arg1: number): RVector;
     swapAndSet(arg0: number, arg1: number): RVector;
     tensor(arg0: RVector): RVector;
-    toGenerator(): (param0: number) => com.seedfinding.mcmath.arithmetic.Real;
-    toMapper(): (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real;
+    toGenerator(): (param0: number) => Real;
+    toMapper(): (param0: number, param1: Real) => Real;
     toMatrixColumn(): RMatrix;
     toMatrixRow(): RMatrix;
     toString(): string;

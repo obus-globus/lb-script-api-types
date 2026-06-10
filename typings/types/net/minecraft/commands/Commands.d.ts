@@ -13,11 +13,13 @@ import type { CommandBuildContext } from '../../../net/minecraft/commands/Comman
 import type { CommandSourceStack } from '../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { Commands$CommandSelection } from '../../../net/minecraft/commands/Commands$CommandSelection.d.ts'
 import type { Commands$ParseFunction } from '../../../net/minecraft/commands/Commands$ParseFunction.d.ts'
+import type { ExecutionContext } from '../../../net/minecraft/commands/execution/ExecutionContext.d.ts'
 import type { HolderLookup$Provider } from '../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { ServerPlayer } from '../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { PermissionCheck } from '../../../net/minecraft/server/permissions/PermissionCheck.d.ts'
 import type { PermissionProviderCheck } from '../../../net/minecraft/server/permissions/PermissionProviderCheck.d.ts'
 import type { PermissionSet } from '../../../net/minecraft/server/permissions/PermissionSet.d.ts'
+import type { PermissionSetSupplier } from '../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
 export class Commands extends Object {
     static COMMAND_PREFIX: string;
     static LEVEL_ADMINS: PermissionCheck;
@@ -28,12 +30,12 @@ export class Commands extends Object {
     static argument(paramname: string, paramtype: ArgumentType<Object>): RequiredArgumentBuilder<CommandSourceStack, Object>;
     static createCompilationContext(paramcompilationPermissions: PermissionSet): CommandSourceStack;
     static createValidationContext(paramregistries: HolderLookup$Provider): CommandBuildContext;
-    static createValidator(paramparser: (param0: StringReader) => void): (param0: string) => kotlin.Boolean;
-    static executeCommandInContext(paramcontext: CommandSourceStack, paramconfig: (param0: Object | null) => void): void;
+    static createValidator(paramparser: (param0: StringReader) => void): (param0: string) => boolean;
+    static executeCommandInContext(paramcontext: CommandSourceStack, paramconfig: (param0: ExecutionContext<CommandSourceStack>) => void): void;
     static getParseException(paramparse: ParseResults<Object>): CommandSyntaxException;
-    static hasPermission(parampermission: PermissionCheck): PermissionProviderCheck<Object>;
+    static hasPermission(parampermission: PermissionCheck): PermissionProviderCheck<PermissionSetSupplier>;
     static literal(paramliteral: string): LiteralArgumentBuilder<CommandSourceStack>;
-    static mapSource(paramparse: ParseResults<Object>, paramsourceOperator: (param0: Object | null) => unknown): ParseResults<Object>;
+    static mapSource(paramparse: ParseResults<Object>, paramsourceOperator: (param0: Object | null) => Object | null): ParseResults<Object>;
     static trimOptionalPrefix(paramcommand: string): string;
     static validate(): void;
     static validateParseResults(paramcommand: ParseResults<Object>): void;

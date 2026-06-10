@@ -17,7 +17,7 @@ export class Short2BooleanOpenCustomHashMap$ValueSpliterator extends Short2Boole
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Short2BooleanOpenCustomHashMap$ValueSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;

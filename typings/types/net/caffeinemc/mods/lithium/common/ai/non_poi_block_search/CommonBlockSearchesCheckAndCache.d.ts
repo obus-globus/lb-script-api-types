@@ -6,6 +6,6 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class CommonBlockSearchesCheckAndCache extends Object {
-    static blockPosFindClosestMatch(paramarg0: LevelReader, paramarg1: LivingEntity, paramarg2: number, paramarg3: number, paramarg4: (param0: BlockState) => kotlin.Boolean, paramarg5: boolean): Optional<BlockPos>;
+    static blockPosFindClosestMatch(paramarg0: LevelReader, paramarg1: LivingEntity, paramarg2: number, paramarg3: number, paramarg4: (param0: BlockState) => boolean, paramarg5: boolean): Optional<BlockPos>;
     constructor()
 }

@@ -6,7 +6,7 @@ export class UIntArray$Iterator extends Object implements Iterator<UInt> {
     constructor(array: number[])
     // private array: number[];
     // private index: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: UInt) => void): void;
     hasNext(): boolean;
     next(): UInt;
 }

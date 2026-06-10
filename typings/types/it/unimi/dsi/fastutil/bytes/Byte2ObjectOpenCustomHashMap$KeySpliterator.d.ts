@@ -3,6 +3,7 @@ import type { ByteComparator } from '../../../../../it/unimi/dsi/fastutil/bytes/
 import type { ByteConsumer } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteConsumer.d.ts'
 import type { ByteSpliterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2ObjectOpenCustomHashMap$KeySpliterator extends Byte2ObjectOpenCustomHashMap$MapSpliterator<Object, Object> implements ByteSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
@@ -17,8 +18,8 @@ export class Byte2ObjectOpenCustomHashMap$KeySpliterator extends Byte2ObjectOpen
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
-    makeForSplit(arg0: number, arg1: number, arg2: boolean): Byte2ObjectOpenCustomHashMap$KeySpliterator;
+    getComparator(): (param0: number, param1: number) => number;
+    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Byte2ObjectOpenCustomHashMap$KeySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

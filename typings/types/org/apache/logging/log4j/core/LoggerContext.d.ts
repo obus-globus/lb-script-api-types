@@ -60,7 +60,7 @@ export class LoggerContext extends AbstractLifeCycle implements AutoCloseable, C
     getLogger(name: string, messageFactory: MessageFactory): Logger_2;
     getLoggerRegistry(): LoggerRegistry<Logger_2>;
     getLoggerRegistry(): LoggerRegistry<Logger>;
-    getLoggers(): E[];
+    getLoggers(): Logger_2[];
     getName(): string;
     getObject(key: string): Object;
     getRootLogger(): Logger_2;

@@ -19,5 +19,5 @@ export interface Table<R extends Object | number | string | boolean, C extends O
     rowKeySet(): R[];
     rowMap(): Map<R, Map<C, V>>;
     size(): number;
-    values(): E[];
+    values(): V[];
 }

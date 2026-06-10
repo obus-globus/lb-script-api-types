@@ -17,14 +17,14 @@ export class AdvancementWidget extends Object implements AdvancementWidgetAccess
     constructor(tab: AdvancementTab, minecraft: Minecraft, advancementNode: AdvancementNode, display: DisplayInfo)
     // private advancementNode: AdvancementNode;
     // private children: AdvancementWidget[];
-    // private description: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private description: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private display: DisplayInfo;
     // private icon: ItemStack;
     // private minecraft: Minecraft;
     // private parent: AdvancementWidget;
     readonly progress: AdvancementProgress;
     // private tab: AdvancementTab;
-    // private titleLines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private titleLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     readonly width: number;
     readonly x: number;
     readonly y: number;
@@ -34,7 +34,7 @@ export class AdvancementWidget extends Object implements AdvancementWidgetAccess
     // private extractAdvancementIcon(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: boolean, arg4: () => void): void;
     extractConnectivity(graphics: GuiGraphicsExtractor, xo: number, yo: number, background: boolean): void;
     extractHover(graphics: GuiGraphicsExtractor, xo: number, yo: number, fade: number, screenxo: number, screenyo: number): void;
-    // private extractMultilineText(graphics: GuiGraphicsExtractor, lines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], x: number, y: number, color: number): void;
+    // private extractMultilineText(graphics: GuiGraphicsExtractor, lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], x: number, y: number, color: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
     // private findOptimalLines(input: Component, preferredWidth: number): FormattedText[];
     // private getFirstVisibleParent(node: AdvancementNode): AdvancementWidget;

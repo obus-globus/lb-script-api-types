@@ -10,9 +10,7 @@ export class CrossEncoderServingTranslator extends Object implements Translator<
     constructor(arg0: Translator<StringPair, number[]>)
     // private translator: Translator<StringPair, number[]>;
     batchProcessInput(arg0: TranslatorContext, arg1: Input[]): (Object | null)[];
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
     batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;

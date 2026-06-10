@@ -20,7 +20,7 @@ export class BedrockBlockArray extends Object implements DataPalette, Cloneable 
     index(arg0: number, arg1: number, arg2: number): number;
     paletteIndexAt(arg0: number): number;
     replaceId(arg0: number, arg1: number): void;
-    replaceIds(arg0: (param0: number) => kotlin.Int): void;
+    replaceIds(arg0: (param0: number) => number): void;
     setIdAt(arg0: number, arg1: number, arg2: number, arg3: number): void;
     setIdAt(arg0: number, arg1: number): void;
     setIdByIndex(arg0: number, arg1: number): void;

@@ -8,7 +8,7 @@ import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/wor
 export class SetValue extends Record implements EnchantmentValueEffect {
     static CODEC: Codec<EnchantmentValueEffect>;
     static CODEC: MapCodec<SetValue>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(value: LevelBasedValue)
     // private value: LevelBasedValue;
     codec(): MapCodec<SetValue>;

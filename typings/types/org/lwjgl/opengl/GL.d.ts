@@ -9,11 +9,11 @@ import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvide
 export class GL extends Object {
     static create(): void;
     static create(paramarg0: string): void;
-    static create(paramarg0: (param0: ByteBuffer) => kotlin.Long): void;
+    static create(paramarg0: (param0: ByteBuffer) => number): void;
     static createCapabilities(): GLCapabilities;
     static createCapabilities(paramarg0: boolean): GLCapabilities;
-    static createCapabilities(paramarg0: boolean, paramarg1: (param0: PointerBuffer) => unknown): GLCapabilities;
-    static createCapabilities(paramarg0: (param0: PointerBuffer) => unknown): GLCapabilities;
+    static createCapabilities(paramarg0: boolean, paramarg1: (param0: number) => PointerBuffer): GLCapabilities;
+    static createCapabilities(paramarg0: (param0: number) => PointerBuffer): GLCapabilities;
     static createCapabilitiesGLX(paramarg0: number): GLXCapabilities;
     static createCapabilitiesGLX(paramarg0: number, paramarg1: number): GLXCapabilities;
     static createCapabilitiesWGL(): WGLCapabilities;
@@ -21,7 +21,7 @@ export class GL extends Object {
     static getCapabilities(): GLCapabilities;
     static getCapabilitiesGLX(): GLXCapabilities;
     static getCapabilitiesWGL(): WGLCapabilities;
-    static getFunctionProvider(): (param0: ByteBuffer) => kotlin.Long;
+    static getFunctionProvider(): (param0: ByteBuffer) => number;
     static setCapabilities(paramarg0: GLCapabilities): void;
     private constructor()
 }

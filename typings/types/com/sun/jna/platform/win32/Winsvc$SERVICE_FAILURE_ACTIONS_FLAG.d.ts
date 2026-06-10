@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Winsvc$ChangeServiceConfig2Info } from '../../../../../com/sun/jna/platform/win32/Winsvc$ChangeServiceConfig2Info.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -13,8 +14,8 @@ export class Winsvc$SERVICE_FAILURE_ACTIONS_FLAG extends Winsvc$ChangeServiceCon
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     constructor(arg0: Pointer)
     fFailureActionsOnNonCrashFailures: number;

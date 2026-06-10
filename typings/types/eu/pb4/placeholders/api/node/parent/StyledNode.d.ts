@@ -18,8 +18,6 @@ export class StyledNode extends SimpleStylingNode {
     clickValue(): TextNode;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     hover(): StyledNode$HoverData<Object>;
     insertion(): TextNode;
     isDynamicNoChildren(): boolean;

@@ -15,7 +15,7 @@ export abstract class Column extends Object {
     static fromLowest(paramlowest: number): Column;
     static inside(paramfloor: number, paramceiling: number): Column$Range;
     static line(): Column;
-    static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => kotlin.Boolean, paramvalidEdge: (param0: BlockState) => kotlin.Boolean): Optional<Column>;
+    static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => boolean, paramvalidEdge: (param0: BlockState) => boolean): Optional<Column>;
     constructor()
     getCeiling(): OptionalInt;
     getFloor(): OptionalInt;

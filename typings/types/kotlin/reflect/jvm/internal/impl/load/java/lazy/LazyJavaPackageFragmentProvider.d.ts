@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { PackageFragmentDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PackageFragmentDescriptor.d.ts'
 import type { PackageFragmentProviderOptimized } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PackageFragmentProviderOptimized.d.ts'
 import type { JavaResolverComponents } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/JavaResolverComponents.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
@@ -10,7 +11,7 @@ export class LazyJavaPackageFragmentProvider extends Object implements PackageFr
     constructor(arg0: JavaResolverComponents)
     // private c: LazyJavaResolverContext;
     // private packageFragments: CacheWithNotNullValues<FqName, LazyJavaPackageFragment>;
-    collectPackageFragments(arg0: FqName, arg1: E[]): void;
+    collectPackageFragments(arg0: FqName, arg1: PackageFragmentDescriptor[]): void;
     // private getPackageFragment(arg0: FqName): LazyJavaPackageFragment;
     getPackageFragments(arg0: FqName): LazyJavaPackageFragment[];
     getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];

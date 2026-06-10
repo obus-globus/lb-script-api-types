@@ -61,15 +61,15 @@ export class YearMonth extends Object implements Serializable, Temporal, Tempora
     plus(arg0: TemporalAmount): Temporal;
     plusMonths(arg0: number): YearMonth;
     plusYears(arg0: number): YearMonth;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toString(): string;
     until(arg0: Temporal, arg1: TemporalUnit): number;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): YearMonth;
+    with(arg0: (param0: Temporal) => Temporal): YearMonth;
     with(arg0: TemporalField, arg1: number): YearMonth;
     // private with(arg0: number, arg1: number): YearMonth;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withMonth(arg0: number): YearMonth;
     withYear(arg0: number): YearMonth;
     writeExternal(arg0: DataOutput): void;

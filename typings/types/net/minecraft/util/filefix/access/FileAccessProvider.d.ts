@@ -14,5 +14,5 @@ export class FileAccessProvider extends Object implements AutoCloseable {
     close(): void;
     dataVersion(): number;
     freeze(): void;
-    getFileAccess(type: FileResourceType<T>, fileRelation: (param0: Path[][]) => kotlin.collections.List<java.nio.file.Path>): FileAccess<T>;
+    getFileAccess<T extends AutoCloseable>(type: FileResourceType<T>, fileRelation: (param0: Path[][]) => Path[][][]): FileAccess<T>;
 }

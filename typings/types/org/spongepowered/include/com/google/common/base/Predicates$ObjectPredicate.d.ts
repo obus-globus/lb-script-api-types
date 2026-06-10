@@ -11,7 +11,7 @@ export class Predicates$ObjectPredicate extends Enum<Predicates$ObjectPredicate>
     static valueOf(paramarg0: string): Predicates$ObjectPredicate;
     static values(): (Object | null)[];
     private constructor()
-    test<T extends Object | number | string | boolean>(arg0: T): boolean;
-    withNarrowedType(): (param0: T) => kotlin.Boolean;
+    test(arg0: Object): boolean;
+    withNarrowedType<T extends Object | number | string | boolean>(): (param0: T) => boolean;
     name(): "ALWAYS_TRUE" | "ALWAYS_FALSE" | "IS_NULL" | "NOT_NULL";
 }

@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
+import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -28,5 +29,5 @@ export class ErrorFunctionDescriptor extends SimpleFunctionDescriptorImpl {
     isSuspend(): boolean;
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<SimpleFunctionDescriptor>;
     newCopyBuilder(arg0: TypeSubstitutor): FunctionDescriptorImpl$CopyConfiguration;
-    setOverriddenDescriptors(arg0: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
 }

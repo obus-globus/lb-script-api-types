@@ -10,12 +10,12 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class ImmutableRangeSet<C extends Comparable<Object>> extends AbstractRangeSet<C> implements Serializable {
     static builder(): ImmutableRangeSet$Builder<Object>;
-    static copyOf(paramranges: (Object | null)[]): ImmutableRangeSet<Object>;
+    static copyOf(paramranges: Range<Object>[]): ImmutableRangeSet<Object>;
     static copyOf(paramrangeSet: RangeSet<Object>): ImmutableRangeSet<Object>;
     static of(): ImmutableRangeSet<Object>;
     static of(paramrange: Range<Object>): ImmutableRangeSet<Object>;
-    static toImmutableRangeSet(): Collector<Object, Object, Object>;
-    static unionOf(paramranges: (Object | null)[]): ImmutableRangeSet<Object>;
+    static toImmutableRangeSet(): Collector<Range<Object>, Object, ImmutableRangeSet<Object>>;
+    static unionOf(paramranges: Range<Object>[]): ImmutableRangeSet<Object>;
     constructor(ranges: Range<C>[])
     private constructor(ranges: Range<C>[], complement: ImmutableRangeSet<C>)
     // private complement: ImmutableRangeSet<C>;

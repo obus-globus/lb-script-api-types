@@ -9,6 +9,6 @@ export class Predicates$ContainsPatternPredicate extends Object implements Predi
     apply(t: CharSequence): boolean;
     equals(obj: Object | null): boolean;
     hashCode(): number;
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test(input: CharSequence): boolean;
     toString(): string;
 }

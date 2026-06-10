@@ -7,17 +7,17 @@ import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/
 import type { FireworkExplosion$Shape } from '../../../../../net/minecraft/world/item/component/FireworkExplosion$Shape.d.ts'
 export class FireworkExplosionPredicate$FireworkPredicate extends Record implements Predicate<FireworkExplosion> {
     static CODEC: Codec<FireworkExplosionPredicate$FireworkPredicate>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(shape: Optional<FireworkExplosion$Shape>, twinkle: Optional<boolean>, trail: Optional<boolean>)
     // private shape: Optional<FireworkExplosion$Shape>;
     // private trail: Optional<boolean>;
     // private twinkle: Optional<boolean>;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: FireworkExplosion) => boolean): (param0: FireworkExplosion) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: FireworkExplosion) => boolean;
+    or(arg0: (param0: FireworkExplosion) => boolean): (param0: FireworkExplosion) => boolean;
     shape(): Optional<FireworkExplosion$Shape>;
     test(fireworkExplosion: FireworkExplosion): boolean;
     toString(): string;

@@ -11,6 +11,8 @@ import type { ReflectJavaMethod } from '../../../../../../../../kotlin/reflect/j
 import type { ReflectJavaModifierListOwner } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/ReflectJavaModifierListOwner.d.ts'
 import type { ReflectJavaTypeParameter } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/ReflectJavaTypeParameter.d.ts'
 import type { JavaClass } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaClass.d.ts'
+import type { JavaClassifierType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaClassifierType.d.ts'
+import type { JavaRecordComponent } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaRecordComponent.d.ts'
 import type { LightClassOriginKind } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/LightClassOriginKind.d.ts'
 import type { FqName } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { Name } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
@@ -30,8 +32,8 @@ export class ReflectJavaClass extends ReflectJavaElement implements ReflectJavaA
     getModifiers(): number;
     getName(): Name;
     getOuterClass(): ReflectJavaClass;
-    getRecordComponents(): E[];
-    getSupertypes(): E[];
+    getRecordComponents(): JavaRecordComponent[];
+    getSupertypes(): JavaClassifierType[];
     getTypeParameters(): ReflectJavaTypeParameter[];
     getVisibility(): Visibility;
     hasDefaultConstructor(): boolean;

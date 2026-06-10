@@ -8,7 +8,7 @@ export class TrustStoreConfiguration extends AbstractKeyStoreConfiguration {
     static createKeyStoreConfiguration(paramlocation: string, parampassword: string, paramkeyStoreType: string, paramtrustManagerFactoryAlgorithm: string): TrustStoreConfiguration;
     constructor(location: string, password: string[], keyStoreType: string, trustManagerFactoryAlgorithm: string)
     constructor(location: string, password: string, keyStoreType: string, trustManagerFactoryAlgorithm: string)
-    constructor(location: string, passwordProvider: () => kotlin.CharArray, keyStoreType: string, trustManagerFactoryAlgorithm: string)
+    constructor(location: string, passwordProvider: () => string[], keyStoreType: string, trustManagerFactoryAlgorithm: string)
     readonly trustManagerFactoryAlgorithm: string;
     equals(obj: Object | null): boolean;
     getTrustManagerFactoryAlgorithm(): string;

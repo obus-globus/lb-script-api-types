@@ -3,7 +3,7 @@ import type { Predicate } from '../../../../../../../java/util/function/Predicat
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Event } from '../../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 export class ModuleFreeCam$CancelTrigger<E extends Event> extends Object {
-    constructor(eventType: Class<E>, predicate: (param0: E) => kotlin.Boolean)
+    constructor(eventType: Class<E>, predicate: (param0: E) => boolean)
     readonly eventType: Class<E>;
-    readonly predicate: (param0: E) => kotlin.Boolean;
+    readonly predicate: (param0: E) => boolean;
 }

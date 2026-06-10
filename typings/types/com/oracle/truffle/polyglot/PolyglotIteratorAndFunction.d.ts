@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotIteratorAndFunction<T extends Object | number | string | boolean> extends PolyglotIterator<T> implements Function<Object, Object> {
     static identity(): (param0: Object | null) => Object | null;
     constructor(elementClass: Class<T>, elementType: Type, iterable: Object, languageContext: PolyglotLanguageContext)
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: Object) => V): (param0: Object) => V;
     apply(t: Object): Object;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
+    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => Object): (param0: V) => Object;
 }

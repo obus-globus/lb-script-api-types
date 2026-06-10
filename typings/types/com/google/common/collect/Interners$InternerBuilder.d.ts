@@ -5,7 +5,7 @@ export class Interners$InternerBuilder extends Object {
     private constructor()
     // private mapMaker: MapMaker;
     // private strong: boolean;
-    build(): Interner<E>;
+    build<E extends Object | number | string | boolean>(): Interner<E>;
     concurrencyLevel(concurrencyLevel: number): Interners$InternerBuilder;
     strong(): Interners$InternerBuilder;
     weak(): Interners$InternerBuilder;

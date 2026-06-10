@@ -8,7 +8,7 @@ export abstract class Reference2DoubleLinkedOpenHashMap$MapIterator<ConsumerType
     // private next: number;
     // private prev: number;
     acceptOnIndex(arg0: ConsumerType, arg1: number): void;
-    add(arg0: Reference2DoubleMap$Entry<K>): void;
+    add<K extends Object | number | string | boolean>(arg0: Reference2DoubleMap$Entry<K>): void;
     back(arg0: number): number;
     // private ensureIndexKnown(): void;
     forEachRemaining(arg0: ConsumerType): void;
@@ -19,6 +19,6 @@ export abstract class Reference2DoubleLinkedOpenHashMap$MapIterator<ConsumerType
     previousEntry(): number;
     previousIndex(): number;
     remove(): void;
-    set(arg0: Reference2DoubleMap$Entry<K>): void;
+    set<K extends Object | number | string | boolean>(arg0: Reference2DoubleMap$Entry<K>): void;
     skip(arg0: number): number;
 }

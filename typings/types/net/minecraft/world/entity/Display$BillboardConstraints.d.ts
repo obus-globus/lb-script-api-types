@@ -9,18 +9,18 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { StringRepresentable } from '../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { StringRepresentable$EnumCodec } from '../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 export class Display$BillboardConstraints extends Enum<Display$BillboardConstraints> implements StringRepresentable {
-    static BY_ID: (param0: Display$BillboardConstraints) => unknown;
+    static BY_ID: (param0: number) => Display$BillboardConstraints;
     static CENTER: Display$BillboardConstraints;
     static CODEC: Codec<Display$BillboardConstraints>;
     static FIXED: Display$BillboardConstraints;
     static HORIZONTAL: Display$BillboardConstraints;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static VERTICAL: Display$BillboardConstraints;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Display$BillboardConstraints;

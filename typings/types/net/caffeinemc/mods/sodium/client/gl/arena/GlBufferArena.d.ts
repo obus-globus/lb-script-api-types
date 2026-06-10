@@ -35,7 +35,7 @@ export class GlBufferArena extends Object {
     // private getUsedSegments(): GlBufferSegment[];
     isEmpty(): boolean;
     // private resize(arg0: CommandList, arg1: number): void;
-    // private transferSegments(arg0: CommandList, arg1: E[], arg2: number): void;
+    // private transferSegments(arg0: CommandList, arg1: PendingBufferCopyCommand[], arg2: number): void;
     // private tryUpload(arg0: CommandList, arg1: PendingUpload): boolean;
     // private tryUploads(arg0: CommandList, arg1: PendingUpload[]): void;
     // private updateUsed(arg0: number): void;

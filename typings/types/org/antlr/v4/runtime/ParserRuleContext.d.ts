@@ -31,7 +31,7 @@ export class ParserRuleContext extends RuleContext {
     getParent(): ParserRuleContext;
     getRuleContext(): RuleContext;
     getRuleContext<T extends ParserRuleContext>(arg0: Class<T>, arg1: number): T;
-    getRuleContexts(arg0: Class<T>): T[];
+    getRuleContexts<T extends ParserRuleContext>(arg0: Class<T>): T[];
     getSourceInterval(): Interval;
     getStart(): Token;
     getStop(): Token;

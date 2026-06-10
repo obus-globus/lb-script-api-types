@@ -5,8 +5,8 @@ import type { TruffleReadOnlyKeysArray } from '../../../../../../com/oracle/truf
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class OracleDBFlags extends AbstractConstantKeysObject {
     static EMPTY_INSTANCE: OracleDBFlags;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     static parseFlags(paramsource: RegexSource): OracleDBFlags;
     private constructor(value: number)
     // private value: number;

@@ -9,7 +9,7 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export interface HolderLookup$RegistryLookup$Delegate<T extends Object | number | string | boolean> extends Object, HolderLookup$RegistryLookup<T> {
-    filterElements(filter: (param0: T) => kotlin.Boolean): HolderLookup$RegistryLookup<T>;
+    filterElements(filter: (param0: T) => boolean): HolderLookup$RegistryLookup<T>;
     filterFeatures(enabledFeatures: FeatureFlagSet): HolderLookup$RegistryLookup<T>;
     get(id: ResourceKey<T>): Optional<Holder$Reference<T>>;
     get(id: TagKey<T>): Optional<T[]>;

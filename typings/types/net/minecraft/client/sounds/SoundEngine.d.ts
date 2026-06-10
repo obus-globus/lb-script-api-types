@@ -4,6 +4,7 @@ import type { DeviceTracker } from '../../../../com/mojang/blaze3d/audio/DeviceT
 import type { Library } from '../../../../com/mojang/blaze3d/audio/Library.d.ts'
 import type { Listener } from '../../../../com/mojang/blaze3d/audio/Listener.d.ts'
 import type { ListenerTransform } from '../../../../com/mojang/blaze3d/audio/ListenerTransform.d.ts'
+import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Camera } from '../../../../net/minecraft/client/Camera.d.ts'
 import type { Options } from '../../../../net/minecraft/client/Options.d.ts'
@@ -19,13 +20,14 @@ import type { SoundEngineExecutor } from '../../../../net/minecraft/client/sound
 import type { SoundEventListener } from '../../../../net/minecraft/client/sounds/SoundEventListener.d.ts'
 import type { SoundManager } from '../../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { Resource } from '../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 import type { SoundSource } from '../../../../net/minecraft/sounds/SoundSource.d.ts'
 export class SoundEngine extends Object {
     static MISSING_SOUND: string;
     static OPEN_AL_SOFT_PREFIX: string;
     static OPEN_AL_SOFT_PREFIX_LENGTH: number;
-    constructor(soundManager: SoundManager, options: Options, resourceProvider: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>)
+    constructor(soundManager: SoundManager, options: Options, resourceProvider: (param0: Identifier) => Optional<Resource>)
     // private channelAccess: ChannelAccess;
     // private deviceTracker: DeviceTracker;
     // private executor: SoundEngineExecutor;

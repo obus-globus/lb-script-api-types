@@ -58,7 +58,7 @@ export class WNDCLASSEX extends Struct<WNDCLASSEX> implements NativeResource {
     static nhbrBackground(paramarg0: number): number;
     static nhbrBackground(paramarg0: number, paramarg1: number): void;
     static nlpfnWndProc(paramarg0: number): WindowProc;
-    static nlpfnWndProc(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number, param3: number) => kotlin.Long): void;
+    static nlpfnWndProc(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number, param3: number) => number): void;
     static nlpszClassName(paramarg0: number): ByteBuffer;
     static nlpszClassName(paramarg0: number, paramarg1: ByteBuffer): void;
     static nlpszClassNameString(paramarg0: number): string;
@@ -91,14 +91,14 @@ export class WNDCLASSEX extends Struct<WNDCLASSEX> implements NativeResource {
     hbrBackground(): number;
     hbrBackground(arg0: number): WNDCLASSEX;
     lpfnWndProc(): WindowProc;
-    lpfnWndProc(arg0: (param0: number, param1: number, param2: number, param3: number) => kotlin.Long): WNDCLASSEX;
+    lpfnWndProc(arg0: (param0: number, param1: number, param2: number, param3: number) => number): WNDCLASSEX;
     lpszClassName(): ByteBuffer;
     lpszClassName(arg0: ByteBuffer): WNDCLASSEX;
     lpszClassNameString(): string;
     lpszMenuName(): ByteBuffer;
     lpszMenuName(arg0: ByteBuffer): WNDCLASSEX;
     lpszMenuNameString(): string;
-    set(arg0: number, arg1: number, arg2: (param0: number, param1: number, param2: number, param3: number) => kotlin.Long, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: ByteBuffer, arg10: ByteBuffer, arg11: number): WNDCLASSEX;
+    set(arg0: number, arg1: number, arg2: (param0: number, param1: number, param2: number, param3: number) => number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: ByteBuffer, arg10: ByteBuffer, arg11: number): WNDCLASSEX;
     set(arg0: WNDCLASSEX): WNDCLASSEX;
     sizeof(): number;
     style(): number;

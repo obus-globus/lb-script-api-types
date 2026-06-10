@@ -4,7 +4,7 @@ import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 export abstract class IntegerType extends Number implements NativeMapped {
-    static compare(paramarg0: Object | null, paramarg1: Object | null): number;
+    static compare(paramarg0: IntegerType | null, paramarg1: IntegerType | null): number;
     static compare(paramarg0: number, paramarg1: number): number;
     static compare(paramarg0: IntegerType, paramarg1: number): number;
     constructor(arg0: number)

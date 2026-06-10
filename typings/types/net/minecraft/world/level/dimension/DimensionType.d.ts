@@ -17,16 +17,17 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { DimensionType$MonsterSettings } from '../../../../../net/minecraft/world/level/dimension/DimensionType$MonsterSettings.d.ts'
 import type { DimensionType$Skybox } from '../../../../../net/minecraft/world/level/dimension/DimensionType$Skybox.d.ts'
+import type { Timeline } from '../../../../../net/minecraft/world/timeline/Timeline.d.ts'
 export class DimensionType extends Record implements DimensionTypeAccessor, DimensionTypeAccessor_2 {
     static BITS_FOR_Y: number;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<DimensionType>>;
     static DIRECT_CODEC: Codec<DimensionType>;
     static MAX_Y: number;
     static MIN_HEIGHT: number;
     static MIN_Y: number;
     static MOON_BRIGHTNESS_PER_PHASE: number[];
     static NETWORK_CODEC: Codec<DimensionType>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<DimensionType>>;
     static WAY_ABOVE_MAX_Y: number;
     static WAY_BELOW_MIN_Y: number;
     static Y_SIZE: number;
@@ -46,7 +47,7 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     // private minY: number;
     // private monsterSettings: DimensionType$MonsterSettings;
     // private skybox: DimensionType$Skybox;
-    // private timelines: Holder<T>[];
+    // private timelines: Holder<Timeline>[];
     ambientLight(): number;
     attributes(): EnvironmentAttributeMap;
     cardinalLightType(): CardinalLighting$Type;
@@ -67,6 +68,6 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     monsterSpawnBlockLightLimit(): number;
     monsterSpawnLightTest(): IntProvider;
     skybox(): DimensionType$Skybox;
-    timelines(): Holder<T>[];
+    timelines(): Holder<Timeline>[];
     toString(): string;
 }

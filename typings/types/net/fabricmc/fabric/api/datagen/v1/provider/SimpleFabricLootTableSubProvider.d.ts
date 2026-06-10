@@ -14,8 +14,8 @@ import type { LootTable } from '../../../../../../../net/minecraft/world/level/s
 import type { LootTable$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/LootTable$Builder.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class SimpleFabricLootTableSubProvider extends Object implements FabricLootTableSubProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>, arg2: ContextKeySet)
     // private contextParamSet: ContextKeySet;

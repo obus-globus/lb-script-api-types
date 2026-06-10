@@ -124,7 +124,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SLEEP_DURATION: number;
@@ -161,7 +161,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
@@ -233,7 +233,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     adjustSpawnLocation(level: ServerLevel, spawnSuggestion: BlockPos): BlockPos;
     allowsListing(): boolean;
     awardKillScore(victim: Entity, killingBlow: DamageSource): void;
-    awardRecipes(recipes: E[]): number;
+    awardRecipes(recipes: RecipeHolder<Object>[]): number;
     awardRecipesByKey(recipeIds: ResourceKey<Recipe<Object>>[]): void;
     awardStat(location: Identifier): void;
     awardStat(location: Identifier, count: number): void;
@@ -325,7 +325,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     onChangedBlock(level: ServerLevel, pos: BlockPos): void;
     onEffectAdded(effect: MobEffectInstance, source: Entity): void;
     onEffectUpdated(effect: MobEffectInstance, doRefreshAttributes: boolean, source: Entity): void;
-    onEffectsRemoved(effects: E[]): void;
+    onEffectsRemoved(effects: MobEffectInstance[]): void;
     onEnchantmentPerformed(itemStack: ItemStack, enchantmentCost: number): void;
     onEnterCombat(): void;
     onEquippedItemBroken(brokenItem: Item, inSlot: EquipmentSlot): void;
@@ -354,7 +354,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     requestedViewDistance(): number;
     resetFallDistance(): void;
     resetLastActionTime(): void;
-    resetRecipes(recipe: E[]): number;
+    resetRecipes(recipe: RecipeHolder<Object>[]): number;
     resetSentInfo(): void;
     resetStat(stat: Stat<Object>): void;
     // private respawnEntityOnShoulder(tag: CompoundTag): void;

@@ -28,7 +28,7 @@ export class GuiMessage extends Record implements GuiMessageAddition, GuiMessage
     liquid_bounce$setId(arg0: string): void;
     signature(): MessageSignature;
     source(): GuiMessageSource;
-    splitLines(font: Font, maxWidth: number): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    splitLines(font: Font, maxWidth: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     tag(): GuiMessageTag;
     toString(): string;
 }

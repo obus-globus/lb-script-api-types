@@ -18,6 +18,6 @@ export class Jwts$SIG extends Object {
     static RS256: SignatureAlgorithm;
     static RS384: SignatureAlgorithm;
     static RS512: SignatureAlgorithm;
-    static get(): { [key: string]: Object | null };
+    static get(): { [key: string]: SecureDigestAlgorithm<Object, Object> };
     private constructor()
 }

@@ -6,6 +6,8 @@ import type { Pattern } from '../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ClassInstance } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/ClassInstance.d.ts'
 import type { FileSystemReference } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/FileSystemReference.d.ts'
+import type { IMappingProvider } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/IMappingProvider.d.ts'
+import type { IMappingProvider$MappingAcceptor } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/IMappingProvider$MappingAcceptor.d.ts'
 import type { InputTag } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/InputTag.d.ts'
 import type { MemberInstance } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/MemberInstance.d.ts'
 import type { TinyRemapper$AnalyzeVisitorProvider } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/TinyRemapper$AnalyzeVisitorProvider.d.ts'
@@ -19,7 +21,7 @@ import type { TrLogger } from '../../../../../../net/fabricmc/loader/impl/lib/ti
 import type { Remapper } from '../../../../../../org/objectweb/asm/commons/Remapper.d.ts'
 export class TinyRemapper extends Object {
     static newRemapper(paramarg0: TrLogger): TinyRemapper$Builder;
-    private constructor(arg0: E[], arg1: boolean, arg2: number, arg3: boolean, arg4: string[], arg5: string[], arg6: boolean, arg7: TinyRemapper$LinkedMethodPropagation, arg8: TinyRemapper$LinkedMethodPropagation, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean, arg14: boolean, arg15: boolean, arg16: boolean, arg17: Pattern, arg18: boolean, arg19: boolean, arg20: TinyRemapper$AnalyzeVisitorProvider[], arg21: TinyRemapper$StateProcessor[], arg22: TinyRemapper$ApplyVisitorProvider[], arg23: TinyRemapper$ApplyVisitorProvider[], arg24: Remapper, arg25: TrLogger)
+    private constructor(arg0: (param0: IMappingProvider$MappingAcceptor) => void[], arg1: boolean, arg2: number, arg3: boolean, arg4: string[], arg5: string[], arg6: boolean, arg7: TinyRemapper$LinkedMethodPropagation, arg8: TinyRemapper$LinkedMethodPropagation, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean, arg14: boolean, arg15: boolean, arg16: boolean, arg17: Pattern, arg18: boolean, arg19: boolean, arg20: TinyRemapper$AnalyzeVisitorProvider[], arg21: TinyRemapper$StateProcessor[], arg22: TinyRemapper$ApplyVisitorProvider[], arg23: TinyRemapper$ApplyVisitorProvider[], arg24: Remapper, arg25: TrLogger)
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private check: boolean;
     // private checkPackageAccess: boolean;
@@ -40,7 +42,7 @@ export class TinyRemapper extends Object {
     // private keepInputData: boolean;
     // private knownIndyBsm: string[];
     readonly logger: TrLogger;
-    // private mappingProviders: E[];
+    // private mappingProviders: (param0: IMappingProvider$MappingAcceptor) => void[];
     // private membersToMakePublic: MemberInstance[];
     // private methodArgMap: { [key: string]: string };
     // private methodMap: { [key: string]: string };

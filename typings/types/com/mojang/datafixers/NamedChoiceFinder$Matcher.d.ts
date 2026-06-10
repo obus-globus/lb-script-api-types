@@ -11,5 +11,5 @@ export class NamedChoiceFinder$Matcher<FT extends Object | number | string | boo
     // private type: Type<FT>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    match(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
+    match<S extends Object | number | string | boolean>(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
 }

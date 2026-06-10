@@ -12,8 +12,8 @@ import type { RegexSource } from '../../../../com/oracle/truffle/regex/RegexSour
 import type { TruffleReadOnlyKeysArray } from '../../../../com/oracle/truffle/regex/util/TruffleReadOnlyKeysArray.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegexObject extends AbstractConstantKeysObject {
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     constructor(execNode: RegexExecNode, source: RegexSource, flags: AbstractRegexObject, numberOfCaptureGroups: number, namedCaptureGroups: AbstractRegexObject)
     readonly backtracking: boolean;
     // private execBooleanRootCallTarget: RootCallTarget;

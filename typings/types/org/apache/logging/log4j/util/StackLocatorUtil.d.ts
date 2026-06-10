@@ -7,11 +7,11 @@ export class StackLocatorUtil extends Object {
     static calcLocation(paramfqcnOfLogger: string): StackTraceElement;
     static getCallerClass(paramdepth: number): Class<Object>;
     static getCallerClass(paramanchor: Class<Object>): Class<Object>;
-    static getCallerClass(paramsentinelClass: Class<Object>, paramcallerPredicate: (param0: Object | null) => kotlin.Boolean): Class<Object>;
+    static getCallerClass(paramsentinelClass: Class<Object>, paramcallerPredicate: (param0: Class<Object>) => boolean): Class<Object>;
     static getCallerClass(paramfqcn: string): Class<Object>;
     static getCallerClass(paramfqcn: string, parampkg: string): Class<Object>;
     static getCallerClassLoader(paramdepth: number): ClassLoader;
-    static getCurrentStackTrace(): (Object | null)[];
+    static getCurrentStackTrace(): Class<Object>[];
     static getStackTraceElement(paramdepth: number): StackTraceElement;
     private constructor()
 }

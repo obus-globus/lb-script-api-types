@@ -14,7 +14,7 @@ export class FieldInitializer<T extends Object | number | string | boolean> exte
     ensure(arg0: () => Throwable): FieldInitializer<T>;
     get(): T;
     handleException(arg0: (param0: Throwable) => Throwable): FieldInitializer<T>;
-    map(arg0: (param0: T) => R): FieldInitializer<R>;
+    map<R extends Object | number | string | boolean>(arg0: (param0: T) => R): FieldInitializer<R>;
     onlyIf(arg0: boolean): FieldInitializer<T>;
     onlyIf(arg0: () => boolean): FieldInitializer<T>;
     or(arg0: () => T): FieldInitializer<T>;
@@ -22,5 +22,5 @@ export class FieldInitializer<T extends Object | number | string | boolean> exte
     peek(arg0: (param0: T) => void): FieldInitializer<T>;
     require(arg0: () => Throwable): T;
     silent(): FieldInitializer<T>;
-    uncheckedCast(): FieldInitializer<R>;
+    uncheckedCast<R extends Object | number | string | boolean>(): FieldInitializer<R>;
 }

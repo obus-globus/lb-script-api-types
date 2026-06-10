@@ -1,5 +1,5 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Callback$Descriptor } from '../../../../org/lwjgl/system/Callback$Descriptor.d.ts'
+import type { CallbackI } from '../../../../org/lwjgl/system/CallbackI.d.ts'
 import type { ExtentAlloc } from '../../../../org/lwjgl/system/jemalloc/ExtentAlloc.d.ts'
 import type { ExtentAllocI } from '../../../../org/lwjgl/system/jemalloc/ExtentAllocI.d.ts'
 export class ExtentAlloc$Container extends ExtentAlloc {
@@ -11,12 +11,12 @@ export class ExtentAlloc$Container extends ExtentAlloc {
     static POINTER_SHIFT: number;
     static POINTER_SIZE: number;
     static create(paramarg0: number): ExtentAlloc;
-    static create(paramarg0: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number) => kotlin.Long): ExtentAlloc;
+    static create(paramarg0: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number) => number): ExtentAlloc;
     static createSafe(paramarg0: number): ExtentAlloc;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): Object | null;
-    static getSafe(paramarg0: number): Object | null;
-    constructor(arg0: number, arg1: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number) => kotlin.Long)
-    // private delegate: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number) => kotlin.Long;
+    static get(paramarg0: number): CallbackI | null;
+    static getSafe(paramarg0: number): CallbackI | null;
+    constructor(arg0: number, arg1: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number) => number)
+    // private delegate: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number) => number;
     invoke(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): number;
 }

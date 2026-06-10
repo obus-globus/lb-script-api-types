@@ -14,8 +14,8 @@ export class BloomFilter<T extends Object | number | string | boolean> extends O
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<Object>;
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): BloomFilter<Object>;
     static readFrom(paramin: InputStream, paramfunnel: Funnel<Object>): BloomFilter<Object>;
-    static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<Object, Object, Object>;
-    static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<Object, Object, Object>;
+    static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<Object, Object, BloomFilter<Object>>;
+    static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<Object, Object, BloomFilter<Object>>;
     private constructor(bits: BloomFilterStrategies$LockFreeBitArray, numHashFunctions: number, funnel: Funnel<T>, strategy: BloomFilter$Strategy)
     // private bits: BloomFilterStrategies$LockFreeBitArray;
     // private funnel: Funnel<T>;

@@ -7,6 +7,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class ShotCrossbowTrigger extends SimpleCriterionTrigger<ShotCrossbowTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ShotCrossbowTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: ShotCrossbowTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: ShotCrossbowTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, itemStack: ItemStack): void;
 }

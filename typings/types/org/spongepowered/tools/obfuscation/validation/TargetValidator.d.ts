@@ -7,9 +7,9 @@ import type { TypeHandle } from '../../../../../org/spongepowered/tools/obfuscat
 export class TargetValidator extends MixinValidator {
     constructor(arg0: IMixinAnnotationProcessor)
     // private checkMixinsFor(arg0: TypeHandle, arg1: TypeHandle): boolean;
-    validate(arg0: TypeElement, arg1: IAnnotationHandle, arg2: E[]): boolean;
-    validate(arg0: IMixinValidator$ValidationPass, arg1: TypeElement, arg2: IAnnotationHandle, arg3: E[]): boolean;
-    // private validateClassMixin(arg0: TypeElement, arg1: E[]): void;
-    // private validateInterfaceMixin(arg0: TypeElement, arg1: E[]): void;
+    validate(arg0: TypeElement, arg1: IAnnotationHandle, arg2: TypeHandle[]): boolean;
+    validate(arg0: IMixinValidator$ValidationPass, arg1: TypeElement, arg2: IAnnotationHandle, arg3: TypeHandle[]): boolean;
+    // private validateClassMixin(arg0: TypeElement, arg1: TypeHandle[]): void;
+    // private validateInterfaceMixin(arg0: TypeElement, arg1: TypeHandle[]): void;
     // private validateSuperClass(arg0: TypeHandle, arg1: TypeHandle): boolean;
 }

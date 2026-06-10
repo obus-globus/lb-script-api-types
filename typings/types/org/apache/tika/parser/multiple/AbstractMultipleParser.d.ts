@@ -11,11 +11,11 @@ import type { AbstractMultipleParser$MetadataPolicy } from '../../../../../org/a
 import type { ContentHandlerFactory } from '../../../../../org/apache/tika/sax/ContentHandlerFactory.d.ts'
 import type { ContentHandler } from '../../../../../org/xml/sax/ContentHandler.d.ts'
 export abstract class AbstractMultipleParser extends Object implements Parser {
-    constructor(arg0: MediaTypeRegistry, arg1: E[], arg2: { [key: string]: Param<Object> })
-    constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: E[])
+    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: { [key: string]: Param<Object> })
+    constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: Parser[])
     // private offeredTypes: MediaType[];
-    // private parsers: E[];
+    // private parsers: Parser[];
     // private policy: AbstractMultipleParser$MetadataPolicy;
     // private registry: MediaTypeRegistry;
     getAllParsers(): Parser[];

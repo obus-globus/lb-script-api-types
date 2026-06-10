@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
+import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
@@ -37,10 +38,10 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     // private isSuspend: boolean;
     // private isTailrec: boolean;
     readonly kind: CallableMemberDescriptor$Kind;
-    // private lazyOverriddenFunctionsTask: () => E[];
+    // private lazyOverriddenFunctionsTask: () => FunctionDescriptor[];
     readonly modality: Modality;
     readonly original: FunctionDescriptor;
-    // private overriddenFunctions: E[];
+    // private overriddenFunctions: FunctionDescriptor[];
     readonly typeParameters: TypeParameterDescriptor[];
     // private unsubstitutedReturnType: KotlinType;
     // private unsubstitutedValueParameters: ValueParameterDescriptor[];
@@ -57,7 +58,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     getKind(): CallableMemberDescriptor$Kind;
     getModality(): Modality;
     getOriginal(): FunctionDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): FunctionDescriptor[];
     getReturnType(): KotlinType;
     // private getSourceToUseForCopy(arg0: boolean, arg1: FunctionDescriptor): SourceElement;
     getTypeParameters(): TypeParameterDescriptor[];
@@ -80,7 +81,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<FunctionDescriptor>;
     newCopyBuilder(arg0: TypeSubstitutor): FunctionDescriptorImpl$CopyConfiguration;
     // private performOverriddenLazyCalculationIfNeeded(): void;
-    putInUserDataMap(arg0: CallableDescriptor$UserDataKey<V>, arg1: Object): void;
+    putInUserDataMap<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>, arg1: Object): void;
     setActual(arg0: boolean): void;
     setExpect(arg0: boolean): void;
     setExternal(arg0: boolean): void;
@@ -92,7 +93,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     // private setInitialSignatureDescriptor(arg0: FunctionDescriptor): void;
     setInline(arg0: boolean): void;
     setOperator(arg0: boolean): void;
-    setOverriddenDescriptors(arg0: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
     setReturnType(arg0: KotlinType): void;
     setSuspend(arg0: boolean): void;
     setTailrec(arg0: boolean): void;

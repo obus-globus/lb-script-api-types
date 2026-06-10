@@ -61,7 +61,7 @@ export class EntityRenderDispatcher extends Object implements FabricResourceRelo
     distanceToSqr(entity: Entity): number;
     extractEntity<E extends Entity>(entity: E, partialTicks: number): EntityRenderState;
     fabric$getId(): Identifier;
-    // private fillRendererDetails(renderer: EntityRenderer<Object, S>, report: CrashReport): CrashReportCategory;
+    // private fillRendererDetails<S extends EntityRenderState>(renderer: EntityRenderer<Object, S>, report: CrashReport): CrashReportCategory;
     // private getAvatarRenderer<T extends Avatar & ClientAvatarEntity>(renderers: { [key in PlayerModelType]: AvatarRenderer<T> }, entity: T): AvatarRenderer<T>;
     getItemInHandRenderer(): ItemInHandRenderer;
     getName(): string;
@@ -71,7 +71,7 @@ export class EntityRenderDispatcher extends Object implements FabricResourceRelo
     getRenderer<T extends Entity>(entity: T): EntityRenderer<T, Object>;
     onResourceManagerReload(resourceManager: ResourceManager): void;
     prepare(camera: Camera, crosshairPickEntity: Entity): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     resetCamera(): void;
     shouldRender<E extends Entity>(entity: E, culler: Frustum, camX: number, camY: number, camZ: number): boolean;
     submit<S extends EntityRenderState>(renderState: S, camera: CameraRenderState, x: number, y: number, z: number, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector): void;

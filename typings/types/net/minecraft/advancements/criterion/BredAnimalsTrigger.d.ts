@@ -8,6 +8,6 @@ import type { Animal } from '../../../../net/minecraft/world/entity/animal/Anima
 export class BredAnimalsTrigger extends SimpleCriterionTrigger<BredAnimalsTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<BredAnimalsTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: BredAnimalsTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: BredAnimalsTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, parent: Animal, partner: Animal, child: AgeableMob): void;
 }

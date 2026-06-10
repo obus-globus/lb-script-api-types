@@ -27,7 +27,7 @@ export class CommandLine$Interpreter extends Object {
     // private consumeMapArguments(field: Field, arity: CommandLine$Range, args: string[], classes: Class<Object>[], keyConverter: CommandLine$ITypeConverter<Object>, valueConverter: CommandLine$ITypeConverter<Object>, result: Map<Object, Object>, argDescription: string): void;
     // private consumeOneArgument(field: Field, arity: CommandLine$Range, args: string[], type: Class<Object>, result: Object[], index: number, originalSize: number, argDescription: string): number;
     // private consumeOneMapArgument(field: Field, arity: CommandLine$Range, args: string[], classes: Class<Object>[], keyConverter: CommandLine$ITypeConverter<Object>, valueConverter: CommandLine$ITypeConverter<Object>, result: Map<Object, Object>, index: number, argDescription: string): void;
-    // private createCollection(collectionClass: Class<Object>): E[];
+    // private createCollection(collectionClass: Class<Object>): Object[];
     // private createMap(mapClass: Class<Object>): Map<Object, Object>;
     // private getTypeConverter(type: Class<Object>, field: Field): CommandLine$ITypeConverter<Object>;
     // private handleUnmatchedArguments(args: string[]): void;
@@ -38,11 +38,11 @@ export class CommandLine$Interpreter extends Object {
     // private optionDescription(prefix: string, field: Field, index: number): string;
     parse(args: string[]): CommandLine[];
     // private parse(parsedCommands: CommandLine[], argumentStack: string[], originalArgs: string[]): void;
-    // private processArguments(parsedCommands: CommandLine[], args: string[], required: E[], initialized: Field[], originalArgs: string[]): void;
-    // private processClusteredShortOptions(required: E[], initialized: Field[], arg: string, args: string[]): void;
-    // private processPositionalParameter(required: E[], initialized: Field[], args: string[]): void;
-    // private processRemainderAsPositionalParameters(required: E[], initialized: Field[], args: string[]): void;
-    // private processStandaloneOption(required: E[], initialized: Field[], arg: string, args: string[], paramAttachedToKey: boolean): void;
+    // private processArguments(parsedCommands: CommandLine[], args: string[], required: Field[], initialized: Field[], originalArgs: string[]): void;
+    // private processClusteredShortOptions(required: Field[], initialized: Field[], arg: string, args: string[]): void;
+    // private processPositionalParameter(required: Field[], initialized: Field[], args: string[]): void;
+    // private processRemainderAsPositionalParameters(required: Field[], initialized: Field[], args: string[]): void;
+    // private processStandaloneOption(required: Field[], initialized: Field[], arg: string, args: string[], paramAttachedToKey: boolean): void;
     // private resemblesOption(arg: string): boolean;
     // private split(value: string, field: Field): string[];
     // private splitRegex(field: Field): string;

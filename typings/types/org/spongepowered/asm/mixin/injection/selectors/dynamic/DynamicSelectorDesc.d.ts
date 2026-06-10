@@ -42,7 +42,7 @@ export class DynamicSelectorDesc extends Object implements ITargetSelectorByName
     getName(): string;
     getOwner(): string;
     getReturnType(): Type;
-    match(arg0: ElementNode<TNode>): MatchResult;
+    match<TNode extends Object | number | string | boolean>(arg0: ElementNode<TNode>): MatchResult;
     matches(arg0: string, arg1: string, arg2: string): MatchResult;
     // private matches(arg0: string, arg1: string, arg2: string, arg3: string): MatchResult;
     next(): ITargetSelector;

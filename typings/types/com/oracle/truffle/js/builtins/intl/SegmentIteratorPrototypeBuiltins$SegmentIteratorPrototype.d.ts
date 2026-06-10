@@ -15,7 +15,7 @@ export class SegmentIteratorPrototypeBuiltins$SegmentIteratorPrototype extends E
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): SegmentIteratorPrototypeBuiltins$SegmentIteratorPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

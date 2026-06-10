@@ -27,7 +27,7 @@ export class JSShape extends Object {
     static getJSClass(paramshape: Shape): JSClass;
     static getJSClassNoCast(paramshape: Shape): Object;
     static getJSContext(paramshape: Shape): JSContext;
-    static getLayout(paramjsclass: JSClass): Class<Object>;
+    static getLayout(paramjsclass: JSClass): Class<JSDynamicObject>;
     static getPropertiesIfHasEnumerablePropertyNames(paramshape: Shape): Property[];
     static getPropertyAssumption(paramshape: Shape, paramkey: Object): Assumption;
     static getPropertyAssumption(paramshape: Shape, paramkey: Object, paramprototype: boolean): Assumption;

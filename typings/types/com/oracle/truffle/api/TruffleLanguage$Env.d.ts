@@ -104,9 +104,9 @@ export class TruffleLanguage$Env extends Object {
     getScopePublic(language: LanguageInfo): Object;
     getSpi(): TruffleLanguage<Object>;
     getTimeZone(): ZoneId;
-    getTruffleFileInternal(uri: URI, filter: (param0: TruffleFile) => kotlin.Boolean): TruffleFile;
-    getTruffleFileInternal(path: string, filter: (param0: TruffleFile) => kotlin.Boolean): TruffleFile;
-    // private getTruffleFileInternalImpl<P extends Object | number | string | boolean>(path: P, isStdLibFile: (param0: TruffleFile) => kotlin.Boolean, truffleFileFactory: TruffleLanguage$Env$TruffleFileFactory<P>): TruffleFile;
+    getTruffleFileInternal(uri: URI, filter: (param0: TruffleFile) => boolean): TruffleFile;
+    getTruffleFileInternal(path: string, filter: (param0: TruffleFile) => boolean): TruffleFile;
+    // private getTruffleFileInternalImpl<P extends Object | number | string | boolean>(path: P, isStdLibFile: (param0: TruffleFile) => boolean, truffleFileFactory: TruffleLanguage$Env$TruffleFileFactory<P>): TruffleFile;
     importSymbol(symbolName: string): Object;
     in(): InputStream;
     initializeLanguage(targetLanguage: LanguageInfo): boolean;

@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ClientboundRemoveEntitiesPacketAddition } from '../../../../../net/ccbluex/liquidbounce/interfaces/ClientboundRemoveEntitiesPacketAddition.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -9,7 +10,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 export class ClientboundRemoveEntitiesPacket extends Object implements ClientboundRemoveEntitiesPacketAddition, Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundRemoveEntitiesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(ids: (Object | null)[])
     constructor(ids: number[])
     private constructor(input: FriendlyByteBuf)

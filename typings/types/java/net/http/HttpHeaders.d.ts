@@ -3,7 +3,7 @@ import type { OptionalLong } from '../../../java/util/OptionalLong.d.ts'
 import type { BiPredicate } from '../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class HttpHeaders extends Object {
-    static of(paramarg0: { [key: string]: Object | null }, paramarg1: (param0: string, param1: string) => kotlin.Boolean): HttpHeaders;
+    static of(paramarg0: { [key: string]: string[] }, paramarg1: (param0: string, param1: string) => boolean): HttpHeaders;
     private constructor(arg0: { [key: string]: string[] })
     // private headers: { [key: string]: string[] };
     allValues(arg0: string): string[];

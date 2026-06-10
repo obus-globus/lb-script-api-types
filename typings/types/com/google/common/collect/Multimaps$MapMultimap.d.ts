@@ -12,11 +12,11 @@ export class Multimaps$MapMultimap<K extends Object | number | string | boolean,
     containsEntry(key: Object, value: Object): boolean;
     containsKey(key: Object): boolean;
     containsValue(value: Object): boolean;
-    createAsMap(): Map<K, E[]>;
-    createEntries(): E[];
+    createAsMap(): Map<K, V[]>;
+    createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];
-    createValues(): E[];
+    createValues(): V[];
     entries(): Map$Entry<K, V>[];
     entryIterator(): Iterator<Map$Entry<K, V>>;
     get(key: K): V[];

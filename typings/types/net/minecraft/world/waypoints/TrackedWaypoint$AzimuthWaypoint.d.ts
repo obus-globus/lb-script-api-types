@@ -26,8 +26,8 @@ export class TrackedWaypoint$AzimuthWaypoint extends TrackedWaypoint {
     constructor(identifier: UUID, icon: Waypoint$Icon, angle: number)
     // private angle: number;
     distanceSquared(fromEntity: Entity): number;
-    pitchDirectionToCamera(level: Level, projector: TrackedWaypoint$Projector, partialTickSupplier: (param0: Entity) => kotlin.Float): TrackedWaypoint$PitchDirection;
+    pitchDirectionToCamera(level: Level, projector: TrackedWaypoint$Projector, partialTickSupplier: (param0: Entity) => number): TrackedWaypoint$PitchDirection;
     update(other: TrackedWaypoint): void;
     writeContents(buf: ByteBuf): void;
-    yawAngleToCamera(level: Level, camera: TrackedWaypoint$Camera, partialTickSupplier: (param0: Entity) => kotlin.Float): number;
+    yawAngleToCamera(level: Level, camera: TrackedWaypoint$Camera, partialTickSupplier: (param0: Entity) => number): number;
 }

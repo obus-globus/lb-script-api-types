@@ -8,6 +8,7 @@ import type { TimeZoneNamesImpl$NameInfo } from '../../../../../../../org/graalv
 import type { TimeZoneNamesImpl$NameSearchHandler } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TimeZoneNamesImpl$NameSearchHandler.d.ts'
 import type { TimeZoneNamesImpl$ZNames } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TimeZoneNamesImpl$ZNames.d.ts'
 import type { TimeZoneNames } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/TimeZoneNames.d.ts'
+import type { TimeZoneNames$MatchInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/TimeZoneNames$MatchInfo.d.ts'
 import type { TimeZoneNames$NameType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/TimeZoneNames$NameType.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class TimeZoneNamesImpl extends TimeZoneNames {
@@ -23,8 +24,8 @@ export class TimeZoneNamesImpl extends TimeZoneNames {
     // private _tzNamesMap: { [key: string]: TimeZoneNamesImpl$ZNames };
     // private _zoneStrings: ICUResourceBundle;
     // private addAllNamesIntoTrie(): void;
-    // private doFind(handler: TimeZoneNamesImpl$NameSearchHandler, text: CharSequence, start: number): E[];
-    find(text: CharSequence, start: number, nameTypes: TimeZoneNames$NameType[]): E[];
+    // private doFind(handler: TimeZoneNamesImpl$NameSearchHandler, text: CharSequence, start: number): TimeZoneNames$MatchInfo[];
+    find(text: CharSequence, start: number, nameTypes: TimeZoneNames$NameType[]): TimeZoneNames$MatchInfo[];
     getAvailableMetaZoneIDs(): string[];
     getAvailableMetaZoneIDs(tzID: string): string[];
     getDisplayNames(tzID: string, types: TimeZoneNames$NameType[], date: number, dest: string[], destOffset: number): void;

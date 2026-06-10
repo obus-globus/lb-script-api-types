@@ -5,24 +5,24 @@ import type { ObjectOutputStream } from '../../../../../java/io/ObjectOutputStre
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleHeapPriorityQueue extends Object implements DoublePriorityQueue, Serializable {
-    constructor(arg0: E[])
-    constructor(arg0: E[], arg1: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[])
+    constructor(arg0: number[], arg1: (param0: number, param1: number) => number)
     constructor()
     constructor(arg0: (Object | null)[])
-    constructor(arg0: (Object | null)[], arg1: (param0: number, param1: number) => kotlin.Int)
-    constructor(arg0: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: (Object | null)[], arg1: (param0: number, param1: number) => number)
+    constructor(arg0: (param0: number, param1: number) => number)
     constructor(arg0: number[])
-    constructor(arg0: number[], arg1: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number)
-    constructor(arg0: number[], arg1: number, arg2: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number, arg2: (param0: number, param1: number) => number)
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: number, param1: number) => kotlin.Int)
-    // private c: (param0: number, param1: number) => kotlin.Int;
+    constructor(arg0: number, arg1: (param0: number, param1: number) => number)
+    // private c: (param0: number, param1: number) => number;
     // private heap: number[];
     // private size: number;
     changed(): void;
     clear(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueDouble(): number;
     enqueue(arg0: number): void;

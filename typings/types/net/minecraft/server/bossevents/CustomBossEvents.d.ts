@@ -11,8 +11,8 @@ export class CustomBossEvents extends SavedData {
     readonly events: Map<Identifier, CustomBossEvent>;
     create(random: RandomSource, id: Identifier, name: Component): CustomBossEvent;
     get(id: Identifier): CustomBossEvent;
-    getEvents(): E[];
-    getIds(): E[];
+    getEvents(): CustomBossEvent[];
+    getIds(): Identifier[];
     onPlayerConnect(player: ServerPlayer): void;
     onPlayerDisconnect(player: ServerPlayer): void;
     remove(event: CustomBossEvent): void;

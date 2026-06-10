@@ -6,7 +6,7 @@ import type { Throwable } from '../../../../../../../java/lang/Throwable.d.ts'
 export class Result$Error<T extends Object | number | string | boolean> extends Object implements Result<T> {
     static error(paramarg0: string): Result<Object>;
     static error(paramarg0: Throwable): Result<Object>;
-    static mergeErrors(paramarg0: string, paramarg1: E[]): Result<Object>;
+    static mergeErrors(paramarg0: string, paramarg1: Result<Object>[]): Result<Object>;
     static success(paramarg0: Object | null): Result<Object>;
     static unexpected(paramarg0: Object, paramarg1: Object | null): Result<Object>;
     static unexpected(paramarg0: Object, paramarg1: (Object | null)[]): Result<Object>;
@@ -20,9 +20,9 @@ export class Result$Error<T extends Object | number | string | boolean> extends 
     hashCode(): number;
     isError(): boolean;
     isSuccessful(): boolean;
-    map(arg0: (param0: T) => N): Result<N>;
-    mapError(): Result<N>;
-    mapResult(arg0: (param0: T) => Result<N>): Result<N>;
+    map<N extends Object | number | string | boolean>(arg0: (param0: T) => N): Result<N>;
+    mapError<N extends Object | number | string | boolean>(): Result<N>;
+    mapResult<N extends Object | number | string | boolean>(arg0: (param0: T) => Result<N>): Result<N>;
     orElse(arg0: T): T;
     orElseThrow(arg0: (param0: Throwable) => Throwable): T;
     toString(): string;

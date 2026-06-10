@@ -11,9 +11,9 @@ import type { Control } from '../../../../../../../net/caffeinemc/mods/sodium/cl
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export abstract class Option extends Object {
-    constructor(arg0: Identifier, arg1: E[], arg2: Component, arg3: DependentValue<boolean>)
+    constructor(arg0: Identifier, arg1: Identifier[], arg2: Component, arg3: DependentValue<boolean>)
     control: Control;
-    // private dependencies: E[];
+    // private dependencies: Identifier[];
     readonly enabled: DependentValue<boolean>;
     // private id: Identifier;
     readonly name: Component;

@@ -11,9 +11,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RegistrationBuilder$TypedRangesBuilder<CU extends ClientboundPacketType, SU extends ServerboundPacketType, R extends Object | number | string | boolean> extends RegistrationBuilder$RangesBuilder<CU, SU> {
     private constructor(null_: RegistrationBuilder$TypedRangesBuilder<CU, SU, R>, arg2: ProtocolVersion)
     // private adapter: (param0: RegistrationContext<CU, SU>) => R;
-    since(arg0: (param0: CU, param1: SU) => void): RegistrationBuilder$TypedRangesBuilder<CU, SU, R>;
-    since(arg0: (param0: CU) => void): RegistrationBuilder;
-    to(arg0: ProtocolVersion, arg1: (param0: CU, param1: SU) => void): RegistrationBuilder$TypedRangesBuilder<CU, SU, R>;
-    to(arg0: ProtocolVersion, arg1: (param0: CU) => void): RegistrationBuilder$RangesBuilder<CU, SU>;
-    // private wrapAction(arg0: (param0: CU, param1: SU) => void): (param0: CU) => void;
+    since(arg0: (param0: RegistrationContext<CU, SU>, param1: R) => void): RegistrationBuilder$TypedRangesBuilder<CU, SU, R>;
+    since(arg0: (param0: RegistrationContext<CU, SU>) => void): RegistrationBuilder;
+    to(arg0: ProtocolVersion, arg1: (param0: RegistrationContext<CU, SU>, param1: R) => void): RegistrationBuilder$TypedRangesBuilder<CU, SU, R>;
+    to(arg0: ProtocolVersion, arg1: (param0: RegistrationContext<CU, SU>) => void): RegistrationBuilder$RangesBuilder<CU, SU>;
+    // private wrapAction(arg0: (param0: RegistrationContext<CU, SU>, param1: R) => void): (param0: RegistrationContext<CU, SU>) => void;
 }

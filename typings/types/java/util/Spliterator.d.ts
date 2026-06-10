@@ -5,7 +5,7 @@ export interface Spliterator<T extends Object | number | string | boolean> exten
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: T) => void): boolean;

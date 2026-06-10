@@ -6,6 +6,6 @@ export interface TemporalAccessor extends Object {
     get(arg0: TemporalField): number;
     getLong(arg0: TemporalField): number;
     isSupported(arg0: TemporalField): boolean;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
 }

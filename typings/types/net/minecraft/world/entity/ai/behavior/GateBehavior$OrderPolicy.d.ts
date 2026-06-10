@@ -8,8 +8,8 @@ export class GateBehavior$OrderPolicy extends Enum<GateBehavior$OrderPolicy> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GateBehavior$OrderPolicy;
     static values(): (Object | null)[];
-    private constructor(consumer: (param0: U[]) => void)
-    // private consumer: (param0: U[]) => void;
-    apply(list: U[]): void;
+    private constructor(consumer: (param0: Object[]) => void)
+    // private consumer: (param0: Object[]) => void;
+    apply(list: Object[]): void;
     name(): "ORDERED" | "SHUFFLED";
 }

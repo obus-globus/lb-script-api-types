@@ -6,7 +6,7 @@ export class RpcTranslatorFactory$ChunkIterator extends Object implements Iterat
     constructor(arg0: ChunkedBytesSupplier)
     // private cbs: ChunkedBytesSupplier;
     // private error: boolean;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
 }

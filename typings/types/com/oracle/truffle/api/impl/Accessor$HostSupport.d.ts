@@ -28,7 +28,7 @@ export abstract class Accessor$HostSupport extends Accessor$Support {
     isHostBoundaryValue(value: Object): boolean;
     isHostLanguage(languageClass: Class<Object>): boolean;
     isPrimitiveTarget(c: Class<Object>): boolean;
-    newTargetTypeMapping(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => kotlin.Boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
+    newTargetTypeMapping<S extends Object | number | string | boolean, T extends Object | number | string | boolean>(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
     toDisconnectedHostObject(hostValue: Object): Object;
     toDisconnectedHostProxy(hostValue: Object): Object;
     unboxDisconnectedHostObject(hostValue: Object): Object;

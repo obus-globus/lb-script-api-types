@@ -7,13 +7,13 @@ export abstract class AbstractNetwork<N extends Object | number | string | boole
     constructor()
     adjacentEdges(edge: E): E[];
     asGraph(): Graph<N>;
-    // private connectedPredicate(nodePresent: N, nodeToCheck: N): (param0: E) => kotlin.Boolean;
+    // private connectedPredicate(nodePresent: N, nodeToCheck: N): (param0: Object) => boolean;
     degree(node: N): number;
     edgeConnecting(nodeU: N, nodeV: N): Optional<E>;
     edgeConnecting(endpoints: N[]): Optional<E>;
     edgeConnectingOrNull(nodeU: N, nodeV: N): E;
     edgeConnectingOrNull(endpoints: N[]): E;
-    edgeInvalidatableSet(set: T[], edge: E): T[];
+    edgeInvalidatableSet<T extends Object | number | string | boolean>(set: T[], edge: E): T[];
     edgesConnecting(nodeU: N, nodeV: N): E[];
     edgesConnecting(endpoints: N[]): E[];
     equals(obj: Object | null): boolean;
@@ -21,10 +21,10 @@ export abstract class AbstractNetwork<N extends Object | number | string | boole
     hasEdgeConnecting(endpoints: N[]): boolean;
     hashCode(): number;
     inDegree(node: N): number;
-    isOrderingCompatible(endpoints: N[]): boolean;
-    nodeInvalidatableSet(set: T[], node: N): T[];
-    nodePairInvalidatableSet(set: T[], nodeU: N, nodeV: N): T[];
+    isOrderingCompatible(endpoints: Object[]): boolean;
+    nodeInvalidatableSet<T extends Object | number | string | boolean>(set: T[], node: N): T[];
+    nodePairInvalidatableSet<T extends Object | number | string | boolean>(set: T[], nodeU: N, nodeV: N): T[];
     outDegree(node: N): number;
     toString(): string;
-    validateEndpoints(endpoints: N[]): void;
+    validateEndpoints(endpoints: Object[]): void;
 }

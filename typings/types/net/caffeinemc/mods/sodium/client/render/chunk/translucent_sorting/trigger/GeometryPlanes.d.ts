@@ -20,7 +20,7 @@ export class GeometryPlanes extends Object {
     getAligned(): NormalPlanes[];
     getAlignedOrCreate(): NormalPlanes[];
     getPlanesForNormal(arg0: NormalList): NormalPlanes;
-    getUnaligned(): E[];
+    getUnaligned(): NormalPlanes[];
     getUnalignedOrCreate(): Map<Vector3fc, NormalPlanes>;
     prepareAndGetDistances(): Map<Vector3fc, number[]>;
     // private prepareAndInsert(arg0: Map<Vector3fc, number[]>): void;

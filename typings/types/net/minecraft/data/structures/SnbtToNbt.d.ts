@@ -16,8 +16,8 @@ import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class SnbtToNbt extends Object implements DataProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
@@ -27,10 +27,10 @@ export class SnbtToNbt extends Object implements DataProvider {
     static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
     constructor(output: PackOutput, inputFolder: Path[])
     constructor(output: PackOutput, inputFolders: Path[][])
-    // private filters: (param0: string, param1: CompoundTag) => net.minecraft.nbt.CompoundTag[];
+    // private filters: (param0: string, param1: CompoundTag) => CompoundTag[];
     // private inputFolders: Path[][];
     // private output: PackOutput;
-    addFilter(filter: (param0: string, param1: CompoundTag) => net.minecraft.nbt.CompoundTag): SnbtToNbt;
+    addFilter(filter: (param0: string, param1: CompoundTag) => CompoundTag): SnbtToNbt;
     // private applyFilters(name: string, input: CompoundTag): CompoundTag;
     getName(): string;
     // private getName(root: Path[], path: Path[]): string;

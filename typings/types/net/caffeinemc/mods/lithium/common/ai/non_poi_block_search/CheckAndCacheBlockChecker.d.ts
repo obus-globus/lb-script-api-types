@@ -7,8 +7,8 @@ import type { LevelReader } from '../../../../../../../net/minecraft/world/level
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ChunkAccess } from '../../../../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
 export class CheckAndCacheBlockChecker extends Object {
-    constructor(arg0: BlockPos, arg1: number, arg2: number, arg3: LevelReader, arg4: (param0: BlockState) => kotlin.Boolean, arg5: boolean)
-    blockStatePredicate: (param0: BlockState) => kotlin.Boolean;
+    constructor(arg0: BlockPos, arg1: number, arg2: number, arg3: LevelReader, arg4: (param0: BlockState) => boolean, arg5: boolean)
+    blockStatePredicate: (param0: BlockState) => boolean;
     // private chunkSections2MaybeContainsMatchingBlock: FixedChunkAccessSectionBitBuffer;
     // private levelReader: LevelReader;
     minSectionY: number;

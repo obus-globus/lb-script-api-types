@@ -13,9 +13,9 @@ export class RVector$View extends RVector {
     static basis(paramarg0: number, paramarg1: number, paramarg2: BigInteger): RVector;
     static basis(paramarg0: number, paramarg1: number, paramarg2: number): RVector;
     static zero(paramarg0: number): RVector;
-    constructor(arg0: number, arg1: (param0: number) => com.seedfinding.mcmath.arithmetic.Real, arg2: (param0: number, param1: Real) => void)
+    constructor(arg0: number, arg1: (param0: number) => Real, arg2: (param0: number, param1: Real) => void)
     readonly dimension: number;
-    // private getter: (param0: number) => com.seedfinding.mcmath.arithmetic.Real;
+    // private getter: (param0: number) => Real;
     // private setter: (param0: number, param1: Real) => void;
     get(arg0: number): Real;
     getDimension(): number;

@@ -28,8 +28,8 @@ export class ChatSelectionScreen$ChatSelectionList extends ObjectSelectionList<C
     getRowWidth(): number;
     keyPressed(event: KeyEvent): boolean;
     nextEntry(dir: ScreenDirection): ChatSelectionScreen$ChatSelectionList$Entry;
-    nextEntry(dir: ScreenDirection, canSelect: (param0: ChatSelectionScreen$ChatSelectionList$Entry) => kotlin.Boolean): ChatSelectionScreen$ChatSelectionList$Entry;
-    nextEntry(dir: ScreenDirection, canSelect: (param0: ChatSelectionScreen$ChatSelectionList$Entry) => kotlin.Boolean, startEntry: ChatSelectionScreen$ChatSelectionList$Entry): ChatSelectionScreen$ChatSelectionList$Entry;
+    nextEntry(dir: ScreenDirection, canSelect: (param0: ChatSelectionScreen$ChatSelectionList$Entry) => boolean): ChatSelectionScreen$ChatSelectionList$Entry;
+    nextEntry(dir: ScreenDirection, canSelect: (param0: ChatSelectionScreen$ChatSelectionList$Entry) => boolean, startEntry: ChatSelectionScreen$ChatSelectionList$Entry): ChatSelectionScreen$ChatSelectionList$Entry;
     setScrollAmount(scrollAmount: number): void;
     setSelected(selected: ChatSelectionScreen$ChatSelectionList$Entry): void;
     // private shouldHighlightEntry(entry: ChatSelectionScreen$ChatSelectionList$Entry): boolean;

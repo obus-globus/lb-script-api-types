@@ -71,11 +71,11 @@ export abstract class AbstractArrow extends Projectile {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    static spawnProjectile(paramprojectile: Object | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack): Object | null;
-    static spawnProjectile(paramprojectile: Object | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramshootFunction: (param0: Object | null) => void): Object | null;
-    static spawnProjectileFromRotation(paramcreator: (param0: Object | null, param1: ServerLevel, param2: LivingEntity) => unknown, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramyOffset: number, parampow: number, paramuncertainty: number): Object | null;
-    static spawnProjectileUsingShoot(paramprojectile: Object | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Object | null;
-    static spawnProjectileUsingShoot(paramcreator: (param0: Object | null, param1: ServerLevel, param2: LivingEntity) => unknown, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Object | null;
+    static spawnProjectile(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack): Projectile | null;
+    static spawnProjectile(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramshootFunction: (param0: Projectile | null) => void): Projectile | null;
+    static spawnProjectileFromRotation(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramyOffset: number, parampow: number, paramuncertainty: number): Projectile | null;
+    static spawnProjectileUsingShoot(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Projectile | null;
+    static spawnProjectileUsingShoot(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Projectile | null;
     constructor(type: EntityType<AbstractArrow>, x: number, y: number, z: number, level: Level, pickupItemStack: ItemStack, firedFromWeapon: ItemStack)
     constructor(type: EntityType<AbstractArrow>, mob: LivingEntity, level: Level, pickupItemStack: ItemStack, firedFromWeapon: ItemStack)
     constructor(type: EntityType<AbstractArrow>, level: Level)
@@ -97,7 +97,7 @@ export abstract class AbstractArrow extends Projectile {
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     doKnockback(mob: LivingEntity, damageSource: DamageSource): void;
     doPostHurtEffects(mob: LivingEntity): void;
-    findHitEntities(from: Vec3, to: Vec3): E[];
+    findHitEntities(from: Vec3, to: Vec3): EntityHitResult[];
     findHitEntity(from: Vec3, to: Vec3): EntityHitResult;
     getDefaultGravity(): number;
     getDefaultHitGroundSoundEvent(): SoundEvent;
@@ -111,7 +111,7 @@ export abstract class AbstractArrow extends Projectile {
     getWaterInertia(): number;
     getWeaponItem(): ItemStack;
     hitBlockEnchantmentEffects(serverLevel: ServerLevel, hitResult: BlockHitResult, weapon: ItemStack): void;
-    // private hitTargetsOrDeflectSelf(entityHitResults: E[]): (param0: Projectile, param1: Entity, param2: RandomSource) => void;
+    // private hitTargetsOrDeflectSelf(entityHitResults: EntityHitResult[]): (param0: Projectile, param1: Entity, param2: RandomSource) => void;
     isAttackable(): boolean;
     isCritArrow(): boolean;
     isInGround(): boolean;

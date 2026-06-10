@@ -38,10 +38,10 @@ export class Locale extends Object implements Serializable, Cloneable {
     static US: Locale;
     static availableLocales(): Stream<Locale>;
     static caseFoldLanguageTag(paramarg0: string): string;
-    static filter(paramarg0: Locale$LanguageRange[], paramarg1: E[]): Locale[];
-    static filter(paramarg0: Locale$LanguageRange[], paramarg1: E[], paramarg2: Locale$FilteringMode): Locale[];
-    static filterTags(paramarg0: Locale$LanguageRange[], paramarg1: E[]): string[];
-    static filterTags(paramarg0: Locale$LanguageRange[], paramarg1: E[], paramarg2: Locale$FilteringMode): string[];
+    static filter(paramarg0: Locale$LanguageRange[], paramarg1: Locale[]): Locale[];
+    static filter(paramarg0: Locale$LanguageRange[], paramarg1: Locale[], paramarg2: Locale$FilteringMode): Locale[];
+    static filterTags(paramarg0: Locale$LanguageRange[], paramarg1: string[]): string[];
+    static filterTags(paramarg0: Locale$LanguageRange[], paramarg1: string[], paramarg2: Locale$FilteringMode): string[];
     static forLanguageTag(paramarg0: string): Locale;
     static getAvailableLocales(): (Object | null)[];
     static getDefault(): Locale;
@@ -49,8 +49,8 @@ export class Locale extends Object implements Serializable, Cloneable {
     static getISOCountries(): (Object | null)[];
     static getISOCountries(paramarg0: Locale$IsoCountryCode): string[];
     static getISOLanguages(): (Object | null)[];
-    static lookup(paramarg0: Locale$LanguageRange[], paramarg1: E[]): Locale;
-    static lookupTag(paramarg0: Locale$LanguageRange[], paramarg1: E[]): string;
+    static lookup(paramarg0: Locale$LanguageRange[], paramarg1: Locale[]): Locale;
+    static lookupTag(paramarg0: Locale$LanguageRange[], paramarg1: string[]): string;
     static of(paramarg0: string): Locale;
     static of(paramarg0: string, paramarg1: string): Locale;
     static of(paramarg0: string, paramarg1: string, paramarg2: string): Locale;

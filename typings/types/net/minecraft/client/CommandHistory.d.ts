@@ -4,6 +4,6 @@ export class CommandHistory extends Object {
     // private commandsPath: Path[];
     // private lastCommands: string[];
     addCommand(command: string): void;
-    history(): E[];
+    history(): string[];
     // private save(): void;
 }

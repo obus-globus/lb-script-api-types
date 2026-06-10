@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Structure$ByReference } from '../../../../../com/sun/jna/Structure$ByReference.d.ts'
 import type { OaIdl$SAFEARRAY } from '../../../../../com/sun/jna/platform/win32/OaIdl$SAFEARRAY.d.ts'
 import type { WTypes$VARTYPE } from '../../../../../com/sun/jna/platform/win32/WTypes$VARTYPE.d.ts'
@@ -17,7 +18,7 @@ export class OaIdl$SAFEARRAY$ByReference extends OaIdl$SAFEARRAY implements Stru
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static createSafeArray(paramarg0: WTypes$VARTYPE, paramarg1: number[]): OaIdl$SAFEARRAY$ByReference;
     static createSafeArray(paramarg0: number[]): OaIdl$SAFEARRAY$ByReference;
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
 }

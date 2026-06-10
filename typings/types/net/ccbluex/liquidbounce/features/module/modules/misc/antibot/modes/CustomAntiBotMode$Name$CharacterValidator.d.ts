@@ -20,16 +20,16 @@ export class CustomAntiBotMode$Name$CharacterValidator extends Enum<CustomAntiBo
     static Companion: Tagged$Companion;
     static VANILLA: CustomAntiBotMode$Name$CharacterValidator;
     static getEntries(): CustomAntiBotMode$Name$CharacterValidator[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomAntiBotMode$Name$CharacterValidator;
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    and(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
-    negate(): (param0: number) => kotlin.Boolean;
-    or(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
+    and(arg0: (param0: number) => boolean): (param0: number) => boolean;
+    negate(): (param0: number) => boolean;
+    or(arg0: (param0: number) => boolean): (param0: number) => boolean;
     test(string: string): boolean;
     name(): "VANILLA" | "CYRILLIC" | "CJK_UNIFIED_IDEOGRAPHS";
 }

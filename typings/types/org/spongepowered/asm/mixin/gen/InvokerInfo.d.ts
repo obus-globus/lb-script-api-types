@@ -1,4 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../org/objectweb/asm/Type.d.ts'
 import type { MethodNode } from '../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
@@ -15,7 +16,7 @@ export class InvokerInfo extends AccessorInfo {
     static getDynamicInfo(paramarg0: IAnnotatedElement): string;
     static inflectTarget(paramarg0: string, paramarg1: AccessorInfo$AccessorType, paramarg2: string, paramarg3: ISelectorContext, paramarg4: boolean): string;
     static inflectTarget(paramarg0: AccessorInfo$AccessorName, paramarg1: AccessorInfo$AccessorType, paramarg2: string, paramarg3: ISelectorContext, paramarg4: boolean): string;
-    static of(paramarg0: MixinTargetContext, paramarg1: MethodNode, paramarg2: Class<Object>): AccessorInfo;
+    static of(paramarg0: MixinTargetContext, paramarg1: MethodNode, paramarg2: Class<Annotation>): AccessorInfo;
     constructor(arg0: MixinTargetContext, arg1: MethodNode)
     // private findTargetMethod(): MethodNode;
     initTarget(): ITargetSelector;

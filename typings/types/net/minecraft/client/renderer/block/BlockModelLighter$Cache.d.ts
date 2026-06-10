@@ -7,7 +7,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 export class BlockModelLighter$Cache extends Object {
     constructor()
     // private brightnessCache: Long2FloatLinkedOpenHashMap;
-    // private cachedBrightnessGetter: (param0: BlockAndLightGetter, param1: BlockPos) => kotlin.Int;
+    // private cachedBrightnessGetter: (param0: BlockAndLightGetter, param1: BlockPos) => number;
     // private colorCache: Long2IntLinkedOpenHashMap;
     // private enabled: boolean;
     disable(): void;

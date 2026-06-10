@@ -18,9 +18,9 @@ export class Strings extends Object {
     static clean(paramarg0: CharSequence): CharSequence;
     static clean(paramarg0: string): string;
     static cleanPath(paramarg0: string): string;
-    static collectionToCommaDelimitedString(paramarg0: E[]): string;
-    static collectionToDelimitedString(paramarg0: E[], paramarg1: string): string;
-    static collectionToDelimitedString(paramarg0: E[], paramarg1: string, paramarg2: string, paramarg3: string): string;
+    static collectionToCommaDelimitedString(paramarg0: Object[]): string;
+    static collectionToDelimitedString(paramarg0: Object[], paramarg1: string): string;
+    static collectionToDelimitedString(paramarg0: Object[], paramarg1: string, paramarg2: string, paramarg3: string): string;
     static commaDelimitedListToSet(paramarg0: string): string[];
     static commaDelimitedListToStringArray(paramarg0: string): (Object | null)[];
     static concatenateStringArrays(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): (Object | null)[];
@@ -57,7 +57,7 @@ export class Strings extends Object {
     static toBinary(paramarg0: number[]): string;
     static toHex(paramarg0: number[]): string;
     static toLanguageTag(paramarg0: Locale): string;
-    static toStringArray(paramarg0: E[]): (Object | null)[];
+    static toStringArray(paramarg0: string[]): (Object | null)[];
     static toStringArray(paramarg0: Enumeration<string>): (Object | null)[];
     static tokenizeToStringArray(paramarg0: string, paramarg1: string): (Object | null)[];
     static tokenizeToStringArray(paramarg0: string, paramarg1: string, paramarg2: boolean, paramarg3: boolean): (Object | null)[];

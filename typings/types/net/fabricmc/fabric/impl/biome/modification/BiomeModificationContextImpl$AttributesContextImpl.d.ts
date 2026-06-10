@@ -9,5 +9,5 @@ export class BiomeModificationContextImpl$AttributesContextImpl extends Object i
     addAll(arg0: EnvironmentAttributeMap$Builder): void;
     addAll(arg0: EnvironmentAttributeMap): void;
     set<T extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: T): void;
-    setModifier<M extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: AttributeModifier<T, M>, arg2: M): void;
+    setModifier<T extends Object | number | string | boolean, M extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: AttributeModifier<T, M>, arg2: M): void;
 }

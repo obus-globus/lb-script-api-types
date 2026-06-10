@@ -4,14 +4,15 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { RegistrySetBuilder$BuildState } from '../../../net/minecraft/core/RegistrySetBuilder$BuildState.d.ts'
 import type { RegistrySetBuilder$RegistryBootstrap } from '../../../net/minecraft/core/RegistrySetBuilder$RegistryBootstrap.d.ts'
 import type { RegistrySetBuilder$RegistryContents } from '../../../net/minecraft/core/RegistrySetBuilder$RegistryContents.d.ts'
+import type { BootstrapContext } from '../../../net/minecraft/data/worldgen/BootstrapContext.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export class RegistrySetBuilder$RegistryStub<T extends Object | number | string | boolean> extends Record {
-    constructor(key: ResourceKey<T[]>, lifecycle: Lifecycle, bootstrap: (param0: T) => void)
-    // private bootstrap: (param0: T) => void;
+    constructor(key: ResourceKey<T[]>, lifecycle: Lifecycle, bootstrap: (param0: BootstrapContext<T>) => void)
+    // private bootstrap: (param0: BootstrapContext<T>) => void;
     // private key: ResourceKey<T[]>;
     // private lifecycle: Lifecycle;
     // private apply(state: RegistrySetBuilder$BuildState): void;
-    bootstrap(): (param0: T) => void;
+    bootstrap(): (param0: BootstrapContext<T>) => void;
     collectRegisteredValues(state: RegistrySetBuilder$BuildState): RegistrySetBuilder$RegistryContents<T>;
     equals(o: Object | null): boolean;
     hashCode(): number;

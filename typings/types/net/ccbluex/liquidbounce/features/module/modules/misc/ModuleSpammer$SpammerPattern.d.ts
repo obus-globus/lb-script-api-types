@@ -8,7 +8,7 @@ export class ModuleSpammer$SpammerPattern extends Enum<ModuleSpammer$SpammerPatt
     static LINEAR: ModuleSpammer$SpammerPattern;
     static RANDOM: ModuleSpammer$SpammerPattern;
     static getEntries(): ModuleSpammer$SpammerPattern[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSpammer$SpammerPattern;

@@ -10,12 +10,12 @@ export class ResolutionContext$Builder extends Object {
     // private defaultScoreboardEntity: Entity;
     // private depthLimit: number;
     // private depthLimitBehavior: ResolutionContext$LimitBehavior;
-    // private objectInfoValidator: (param0: ObjectInfo) => kotlin.Boolean;
+    // private objectInfoValidator: (param0: ObjectInfo) => boolean;
     // private source: CommandSourceStack;
     build(): ResolutionContext;
     setDepthLimit(depthLimit: number): ResolutionContext$Builder;
     setDepthLimitBehavior(behavior: ResolutionContext$LimitBehavior): ResolutionContext$Builder;
     withEntityOverride(defaultScoreboardEntity: Entity): ResolutionContext$Builder;
-    withObjectInfoValidator(objectInfoValidator: (param0: ObjectInfo) => kotlin.Boolean): ResolutionContext$Builder;
+    withObjectInfoValidator(objectInfoValidator: (param0: ObjectInfo) => boolean): ResolutionContext$Builder;
     withSource(source: CommandSourceStack): ResolutionContext$Builder;
 }

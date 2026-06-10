@@ -34,15 +34,15 @@ export class ChatFormatting extends Enum<ChatFormatting> implements StringRepres
     static UNDERLINE: ChatFormatting;
     static WHITE: ChatFormatting;
     static YELLOW: ChatFormatting;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getByCode(paramcode: string): ChatFormatting;
     static getById(paramid: number): ChatFormatting;
     static getByName(paramname: string): ChatFormatting;
-    static getNames(paramgetColors: boolean, paramgetFormats: boolean): E[];
+    static getNames(paramgetColors: boolean, paramgetFormats: boolean): string[];
     static keys(paramvalues: (Object | null)[]): Keyable;
     static stripFormatting(paraminput: string): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

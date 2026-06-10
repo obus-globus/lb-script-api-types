@@ -16,7 +16,7 @@ export class ProtocolPipelineImpl extends Object implements ProtocolPipeline {
     // private reversedProtocolList: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>[];
     // private userConnection: UserConnection;
     add(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>): void;
-    add(arg0: E[]): void;
+    add(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>[]): void;
     baseProtocolCount(): number;
     cleanPipes(): void;
     contains(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): boolean;

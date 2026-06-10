@@ -10,9 +10,9 @@ export class EntityHasScoreCondition$Builder extends Object implements LootItemC
     constructor(entityTarget: LootContext$EntityTarget)
     // private entityTarget: LootContext$EntityTarget;
     // private scores: ImmutableMap$Builder<string, IntRange>;
-    and(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AllOfCondition$Builder;
+    and(other: () => LootItemCondition): AllOfCondition$Builder;
     build(): LootItemCondition;
-    invert(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    or(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AnyOfCondition$Builder;
+    invert(): () => LootItemCondition;
+    or(other: () => LootItemCondition): AnyOfCondition$Builder;
     withScore(score: string, bounds: IntRange): EntityHasScoreCondition$Builder;
 }

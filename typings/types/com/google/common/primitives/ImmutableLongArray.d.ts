@@ -8,7 +8,7 @@ export class ImmutableLongArray extends Object implements Serializable {
     static builder(): ImmutableLongArray$Builder;
     static builder(paraminitialCapacity: number): ImmutableLongArray$Builder;
     static copyOf(paramvalues: number[]): ImmutableLongArray;
-    static copyOf(paramvalues: E[]): ImmutableLongArray;
+    static copyOf(paramvalues: number[]): ImmutableLongArray;
     static copyOf(paramstream: LongStream): ImmutableLongArray;
     static copyOf(paramvalues: number[]): ImmutableLongArray;
     static of(): ImmutableLongArray;

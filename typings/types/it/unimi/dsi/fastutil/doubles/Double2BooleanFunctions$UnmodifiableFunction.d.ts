@@ -3,8 +3,8 @@ import type { Double2BooleanFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2BooleanFunctions$UnmodifiableFunction extends AbstractDouble2BooleanFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Boolean)
-    // private function: (param0: number) => kotlin.Boolean;
+    constructor(arg0: (param0: number) => boolean)
+    // private function: (param0: number) => boolean;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

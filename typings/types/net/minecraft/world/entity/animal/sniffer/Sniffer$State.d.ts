@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class Sniffer$State extends Enum<Sniffer$State> {
-    static BY_ID: (param0: Sniffer$State) => unknown;
+    static BY_ID: (param0: number) => Sniffer$State;
     static DIGGING: Sniffer$State;
     static FEELING_HAPPY: Sniffer$State;
     static IDLING: Sniffer$State;

@@ -5,8 +5,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Screen } from '../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 export interface ModMenuApi extends Object {
     attachModpackBadges(arg0: (param0: string) => void): void;
-    getModConfigScreenFactory(): (param0: Screen) => unknown;
-    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => unknown };
+    getModConfigScreenFactory(): (param0: Screen) => Screen | null;
+    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => Screen | null };
     getProvidedUpdateCheckers(): { [key: string]: UpdateChecker };
     getUpdateChecker(): UpdateChecker;
 }

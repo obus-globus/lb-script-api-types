@@ -4,7 +4,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
 import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvider.d.ts'
 export class ALCapabilities extends Object {
-    constructor(arg0: (param0: ByteBuffer) => kotlin.Long, arg1: string[], arg2: (param0: PointerBuffer) => unknown)
+    constructor(arg0: (param0: ByteBuffer) => number, arg1: string[], arg2: (param0: number) => PointerBuffer)
     ALC_EXT_EFX: boolean;
     AL_EXT_ALAW: boolean;
     AL_EXT_BFORMAT: boolean;

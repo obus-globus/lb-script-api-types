@@ -198,7 +198,7 @@ export class EntityType<T extends Entity> extends Object implements FabricEntity
     static CHEST_MINECART: EntityType<(Object | null)[]>;
     static CHICKEN: EntityType<Chicken>;
     static COD: EntityType<Cod>;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<EntityType<Object>>;
     static COMMAND_BLOCK_MINECART: EntityType<MinecartCommandBlock>;
     static COPPER_GOLEM: EntityType<CopperGolem>;
     static COW: EntityType<Cow>;
@@ -223,7 +223,7 @@ export class EntityType<T extends Entity> extends Object implements FabricEntity
     static EXPERIENCE_ORB: EntityType<ExperienceOrb>;
     static EYE_OF_ENDER: EntityType<EyeOfEnder>;
     static FALLING_BLOCK: EntityType<FallingBlockEntity>;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static FIREBALL: EntityType<LargeFireball>;
     static FIREWORK_ROCKET: EntityType<FireworkRocketEntity>;
     static FISHING_BOBBER: EntityType<FishingHook>;
@@ -303,7 +303,7 @@ export class EntityType<T extends Entity> extends Object implements FabricEntity
     static SPRUCE_CHEST_BOAT: EntityType<(Object | null)[]>;
     static SQUID: EntityType<Squid>;
     static STRAY: EntityType<Stray>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, EntityType<Object>>;
     static STRIDER: EntityType<Strider>;
     static TADPOLE: EntityType<Tadpole>;
     static TEXT_DISPLAY: EntityType<Display$TextDisplay>;
@@ -330,24 +330,24 @@ export class EntityType<T extends Entity> extends Object implements FabricEntity
     static ZOMBIE_NAUTILUS: EntityType<ZombieNautilus>;
     static ZOMBIE_VILLAGER: EntityType<ZombieVillager>;
     static ZOMBIFIED_PIGLIN: EntityType<ZombifiedPiglin>;
-    static appendComponentsConfig(paraminitialConfig: (param0: Object | null) => void, paramitemStack: ItemStack): (param0: Object | null) => void;
-    static appendCustomEntityStackConfig(paraminitialConfig: (param0: Object | null) => void, paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): (param0: Object | null) => void;
-    static appendDefaultStackConfig(paraminitialConfig: (param0: Object | null) => void, paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): (param0: Object | null) => void;
-    static by(paraminput: ValueInput): Optional<Object>;
-    static byString(paramid: string): Optional<Object>;
+    static appendComponentsConfig(paraminitialConfig: (param0: Entity | null) => void, paramitemStack: ItemStack): (param0: Entity | null) => void;
+    static appendCustomEntityStackConfig(paraminitialConfig: (param0: Entity | null) => void, paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): (param0: Entity | null) => void;
+    static appendDefaultStackConfig(paraminitialConfig: (param0: Entity | null) => void, paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): (param0: Entity | null) => void;
+    static by(paraminput: ValueInput): Optional<EntityType<Object>>;
+    static byString(paramid: string): Optional<EntityType<Object>>;
     static create(paramtype: EntityType<Object>, paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason): Optional<Entity>;
     static create(paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason): Optional<Entity>;
-    static createDefaultStackConfig(paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): (param0: Object | null) => void;
+    static createDefaultStackConfig(paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): (param0: Entity | null) => void;
     static forClass(paramcls: Class<Object>): EntityTypeTest<Object, Object>;
     static forExactClass(paramcls: Class<Object>): EntityTypeTest<Object, Object>;
     static getKey(paramtype: EntityType<Object>): Identifier;
     static loadEntitiesRecursive(paramentities: ValueInput[], paramlevel: Level, paramreason: EntitySpawnReason): Stream<Entity>;
-    static loadEntityRecursive(paramtag: CompoundTag, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => net.minecraft.world.entity.Entity): Entity;
-    static loadEntityRecursive(paramtype: EntityType<Object>, paramtag: CompoundTag, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => net.minecraft.world.entity.Entity): Entity;
-    static loadEntityRecursive(paramtype: EntityType<Object>, paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => net.minecraft.world.entity.Entity): Entity;
-    static loadEntityRecursive(paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => net.minecraft.world.entity.Entity): Entity;
-    static updateCustomEntityTag(paramlevel: Level, paramuser: LivingEntity, paramentity: Entity, paramentityData: TypedEntityData<Object>): void;
-    constructor(factory: (param0: T, param1: EntityType<Object>) => unknown, category: MobCategory, serialize: boolean, summon: boolean, fireImmune: boolean, canSpawnFarFromPlayer: boolean, immuneTo: Block[], dimensions: EntityDimensions, spawnDimensionsScale: number, clientTrackingRange: number, updateInterval: number, descriptionId: string, lootTable: Optional<ResourceKey<LootTable>>, requiredFeatures: FeatureFlagSet, allowedInPeaceful: boolean)
+    static loadEntityRecursive(paramtag: CompoundTag, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => Entity): Entity;
+    static loadEntityRecursive(paramtype: EntityType<Object>, paramtag: CompoundTag, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => Entity): Entity;
+    static loadEntityRecursive(paramtype: EntityType<Object>, paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => Entity): Entity;
+    static loadEntityRecursive(paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason, parampostLoad: (param0: Entity) => Entity): Entity;
+    static updateCustomEntityTag(paramlevel: Level, paramuser: LivingEntity, paramentity: Entity, paramentityData: TypedEntityData<EntityType<Object>>): void;
+    constructor(factory: (param0: EntityType<T>, param1: Level) => T, category: MobCategory, serialize: boolean, summon: boolean, fireImmune: boolean, canSpawnFarFromPlayer: boolean, immuneTo: Block[], dimensions: EntityDimensions, spawnDimensionsScale: number, clientTrackingRange: number, updateInterval: number, descriptionId: string, lootTable: Optional<ResourceKey<LootTable>>, requiredFeatures: FeatureFlagSet, allowedInPeaceful: boolean)
     readonly allowedInPeaceful: boolean;
     // private alwaysUpdateVelocity: boolean;
     // private builtInRegistryHolder: Holder$Reference<EntityType<Object>>;
@@ -358,7 +358,7 @@ export class EntityType<T extends Entity> extends Object implements FabricEntity
     readonly description: Component;
     readonly descriptionId: string;
     dimensions: EntityDimensions;
-    // private factory: (param0: T, param1: EntityType<Object>) => unknown;
+    // private factory: (param0: EntityType<T>, param1: Level) => T;
     // private fireImmune: boolean;
     // private immuneTo: Block[];
     // private lootTable: Optional<ResourceKey<LootTable>>;

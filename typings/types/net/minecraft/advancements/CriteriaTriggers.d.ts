@@ -54,7 +54,7 @@ export class CriteriaTriggers extends Object {
     static BREWED_POTION: BrewedPotionTrigger;
     static CHANGED_DIMENSION: ChangeDimensionTrigger;
     static CHANNELED_LIGHTNING: ChanneledLightningTrigger;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<CriterionTrigger<Object>>;
     static CONSTRUCT_BEACON: ConstructBeaconTrigger;
     static CONSUME_ITEM: ConsumeItemTrigger;
     static CRAFTER_RECIPE_CRAFTED: RecipeCraftedTrigger;
@@ -105,7 +105,7 @@ export class CriteriaTriggers extends Object {
     static USED_ENDER_EYE: UsedEnderEyeTrigger;
     static USED_TOTEM: UsedTotemTrigger;
     static USING_ITEM: UsingItemTrigger;
-    static bootstrap(paramregistry: (Object | null)[]): CriterionTrigger<Object>;
+    static bootstrap(paramregistry: CriterionTrigger<Object>[]): CriterionTrigger<Object>;
     static register(paramname: string, paramcriterion: Object | null): Object | null;
     constructor()
 }

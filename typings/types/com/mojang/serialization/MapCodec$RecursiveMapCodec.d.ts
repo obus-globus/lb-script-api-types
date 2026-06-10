@@ -14,7 +14,7 @@ export class MapCodec$RecursiveMapCodec<A extends Object | number | string | boo
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
-    static recursive(paramarg0: string, paramarg1: (param0: Object | null) => Object | null): MapCodec<Object>;
+    static recursive(paramarg0: string, paramarg1: (param0: Codec<Object>) => MapCodec<Object>): MapCodec<Object>;
     static unit(paramarg0: Object | null): MapCodec<Object>;
     static unit(paramarg0: () => Object | null): MapCodec<Object>;
     static unitCodec(paramarg0: Object | null): Codec<Object>;
@@ -22,8 +22,8 @@ export class MapCodec$RecursiveMapCodec<A extends Object | number | string | boo
     private constructor(arg0: string, arg1: (param0: Codec<A>) => MapCodec<A>)
     // private name: string;
     // private wrapped: () => MapCodec<A>;
-    decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<A>;
-    encode(arg0: A, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
-    keys(arg0: DynamicOps<T>): Stream<T>;
+    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<A>;
+    encode<T extends Object | number | string | boolean>(arg0: A, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
+    keys<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): Stream<T>;
     toString(): string;
 }

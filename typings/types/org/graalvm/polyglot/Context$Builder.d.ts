@@ -39,7 +39,7 @@ export class Context$Builder extends Object {
     // private environmentAccess: EnvironmentAccess;
     // private err: OutputStream;
     // private hostAccess: HostAccess;
-    // private hostClassFilter: (param0: string) => kotlin.Boolean;
+    // private hostClassFilter: (param0: string) => boolean;
     // private hostClassLoader: ClassLoader;
     // private in: InputStream;
     // private ioAccess: IOAccess;
@@ -62,7 +62,7 @@ export class Context$Builder extends Object {
     allowHostAccess(enabled: boolean): Context$Builder;
     allowHostAccess(config: HostAccess): Context$Builder;
     allowHostClassLoading(enabled: boolean): Context$Builder;
-    allowHostClassLookup(classFilter: (param0: string) => kotlin.Boolean): Context$Builder;
+    allowHostClassLookup(classFilter: (param0: string) => boolean): Context$Builder;
     allowIO(enabled: boolean): Context$Builder;
     allowIO(ioAccess: IOAccess): Context$Builder;
     allowInnerContextOptions(enabled: boolean): Context$Builder;
@@ -80,7 +80,7 @@ export class Context$Builder extends Object {
     extendHostAccess(defaultInitialValue: HostAccess, setup: (param0: HostAccess$Builder) => void): Context$Builder;
     extendIO(defaultInitialValue: IOAccess, setup: (param0: IOAccess$Builder) => void): Context$Builder;
     fileSystem(fileSystem: FileSystem): Context$Builder;
-    hostClassFilter(classFilter: (param0: string) => kotlin.Boolean): Context$Builder;
+    hostClassFilter(classFilter: (param0: string) => boolean): Context$Builder;
     hostClassLoader(classLoader: ClassLoader): Context$Builder;
     in(in_: InputStream): Context$Builder;
     logHandler(logOut: OutputStream): Context$Builder;

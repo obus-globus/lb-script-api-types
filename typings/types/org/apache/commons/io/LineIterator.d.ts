@@ -11,7 +11,7 @@ export class LineIterator extends Object implements Closeable, Iterator<string> 
     // private cachedLine: string;
     // private finished: boolean;
     close(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     isValidLine(arg0: string): boolean;
     next(): string;

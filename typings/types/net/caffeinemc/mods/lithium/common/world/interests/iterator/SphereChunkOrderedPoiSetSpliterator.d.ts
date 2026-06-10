@@ -19,7 +19,7 @@ export class SphereChunkOrderedPoiSetSpliterator extends Spliterators$AbstractSp
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: number, arg1: BlockPos, arg2: RegionBasedStorageSectionExtended<PoiSection>, arg3: (param0: Holder<PoiType>) => kotlin.Boolean, arg4: PoiManager$Occupancy)
+    constructor(arg0: number, arg1: BlockPos, arg2: RegionBasedStorageSectionExtended<PoiSection>, arg3: (param0: Holder<PoiType>) => boolean, arg4: PoiManager$Occupancy)
     // private chunkLimit: number;
     // private chunkPoiSections: BitSet;
     // private chunkX: number;
@@ -34,7 +34,7 @@ export class SphereChunkOrderedPoiSetSpliterator extends Spliterators$AbstractSp
     // private sectionIterator: Iterator<PoiRecord>;
     // private status: PoiManager$Occupancy;
     // private storage: RegionBasedStorageSectionExtended<PoiSection>;
-    // private typeFilter: (param0: Holder<PoiType>) => kotlin.Boolean;
+    // private typeFilter: (param0: Holder<PoiType>) => boolean;
     // private getSectionIterator(arg0: number, arg1: number, arg2: number): Iterator<PoiRecord>;
     // private nextChunk(): boolean;
     // private nextSection(): boolean;

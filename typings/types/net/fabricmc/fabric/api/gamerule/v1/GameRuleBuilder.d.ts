@@ -23,7 +23,7 @@ export class GameRuleBuilder<T extends Object | number | string | boolean> exten
     // private argumentType: ArgumentType<T>;
     // private category: GameRuleCategory;
     // private codec: Codec<T>;
-    // private commandResultSupplier: (param0: T) => kotlin.Int;
+    // private commandResultSupplier: (param0: T) => number;
     // private defaultValue: T;
     // private fabricType: FabricGameRuleType;
     // private requiredFeatures: FeatureFlagSet;
@@ -33,6 +33,6 @@ export class GameRuleBuilder<T extends Object | number | string | boolean> exten
     buildAndRegister(arg0: Identifier): GameRule<T>;
     category(arg0: GameRuleCategory): GameRuleBuilder<T>;
     codec(arg0: Codec<T>): GameRuleBuilder<T>;
-    commandResultSupplier(arg0: (param0: T) => kotlin.Int): GameRuleBuilder<T>;
+    commandResultSupplier(arg0: (param0: T) => number): GameRuleBuilder<T>;
     requiredFeatures(arg0: FeatureFlagSet): GameRuleBuilder<T>;
 }

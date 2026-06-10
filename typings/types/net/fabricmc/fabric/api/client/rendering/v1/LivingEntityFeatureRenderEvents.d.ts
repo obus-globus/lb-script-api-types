@@ -3,6 +3,6 @@ import type { LivingEntityFeatureRenderEvents$AllowCapeRender } from '../../../.
 import type { Event } from '../../../../../../../net/fabricmc/fabric/api/event/Event.d.ts'
 import type { AvatarRenderState } from '../../../../../../../net/minecraft/client/renderer/entity/state/AvatarRenderState.d.ts'
 export class LivingEntityFeatureRenderEvents extends Object {
-    static ALLOW_CAPE_RENDER: Event<(param0: AvatarRenderState) => kotlin.Boolean>;
+    static ALLOW_CAPE_RENDER: Event<(param0: AvatarRenderState) => boolean>;
     private constructor()
 }

@@ -1,5 +1,3 @@
-import type { ClientboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
-import type { ServerboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { PacketTypeMap } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypeMap.d.ts'
 import type { PacketTypesProvider } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypesProvider.d.ts'
@@ -12,12 +10,12 @@ export class BasePacketTypesProvider extends Object implements PacketTypesProvid
     // private clientboundPacketTypes: { [key in State]: PacketTypeMap<BaseClientboundPacket> };
     // private serverboundPacketTypes: { [key in State]: PacketTypeMap<BaseServerboundPacket> };
     mappedClientboundPacketTypes(): { [key in State]: PacketTypeMap<BaseClientboundPacket> };
-    mappedClientboundType<CM extends ClientboundPacketType>(arg0: State, arg1: string): CM;
+    mappedClientboundType(arg0: State, arg1: string): BaseClientboundPacket;
     mappedServerboundPacketTypes(): { [key in State]: PacketTypeMap<BaseServerboundPacket> };
     unmappedClientboundPacketTypes(): { [key in State]: PacketTypeMap<BaseClientboundPacket> };
-    unmappedClientboundType<CU extends ClientboundPacketType>(arg0: State, arg1: number): CU;
-    unmappedClientboundType<CU extends ClientboundPacketType>(arg0: State, arg1: string): CU;
+    unmappedClientboundType(arg0: State, arg1: number): BaseClientboundPacket;
+    unmappedClientboundType(arg0: State, arg1: string): BaseClientboundPacket;
     unmappedServerboundPacketTypes(): { [key in State]: PacketTypeMap<BaseServerboundPacket> };
-    unmappedServerboundType<SU extends ServerboundPacketType>(arg0: State, arg1: number): SU;
-    unmappedServerboundType<SU extends ServerboundPacketType>(arg0: State, arg1: string): SU;
+    unmappedServerboundType(arg0: State, arg1: number): BaseServerboundPacket;
+    unmappedServerboundType(arg0: State, arg1: string): BaseServerboundPacket;
 }

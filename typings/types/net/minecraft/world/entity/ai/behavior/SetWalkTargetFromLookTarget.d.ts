@@ -5,6 +5,6 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 import type { OneShot } from '../../../../../../net/minecraft/world/entity/ai/behavior/OneShot.d.ts'
 export class SetWalkTargetFromLookTarget extends Object {
     static create(paramspeedModifier: number, paramcloseEnoughDistance: number): OneShot<LivingEntity>;
-    static create(paramcanSetWalkTargetPredicate: (param0: LivingEntity) => kotlin.Boolean, paramspeedModifier: (param0: LivingEntity) => number, paramcloseEnoughDistance: number): OneShot<LivingEntity>;
+    static create(paramcanSetWalkTargetPredicate: (param0: LivingEntity) => boolean, paramspeedModifier: (param0: LivingEntity) => number, paramcloseEnoughDistance: number): OneShot<LivingEntity>;
     constructor()
 }

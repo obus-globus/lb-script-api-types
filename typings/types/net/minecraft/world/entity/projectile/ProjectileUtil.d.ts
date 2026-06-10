@@ -19,15 +19,15 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ProjectileUtil extends Object {
     static DEFAULT_ENTITY_HIT_RESULT_MARGIN: number;
     static computeMargin(paramsource: Entity): number;
-    static getEntityHitResult(paramexcept: Entity, paramfrom: Vec3, paramto: Vec3, parambox: AABB, parammatching: (param0: Entity) => kotlin.Boolean, parammaxValue: number): EntityHitResult;
-    static getEntityHitResult(paramlevel: Level, paramsource: Entity, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => kotlin.Boolean, paramentityMargin: number): EntityHitResult;
-    static getEntityHitResult(paramlevel: Level, paramsource: Projectile, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => kotlin.Boolean): EntityHitResult;
-    static getHitEntitiesAlong(paramattacker: Entity, paramattackRange: AttackRange, parammatching: (param0: Entity) => kotlin.Boolean, paramblockClipType: ClipContext$Block): Either<BlockHitResult, Object>;
-    static getHitResultOnMoveVector(paramsource: Entity, parammatching: (param0: Entity) => kotlin.Boolean): HitResult;
-    static getHitResultOnMoveVector(paramsource: Entity, parammatching: (param0: Entity) => kotlin.Boolean, paramclipType: ClipContext$Block): HitResult;
-    static getHitResultOnViewVector(paramsource: Entity, parammatching: (param0: Entity) => kotlin.Boolean, paramdistance: number): HitResult;
-    static getManyEntityHitResult(paramlevel: Level, paramsource: Entity, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => kotlin.Boolean, paramincludeFromEntity: boolean): E[];
-    static getManyEntityHitResult(paramlevel: Level, paramsource: Entity, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => kotlin.Boolean, paramentityMargin: number, paramclipType: ClipContext$Block, paramincludeFromEntity: boolean): E[];
+    static getEntityHitResult(paramexcept: Entity, paramfrom: Vec3, paramto: Vec3, parambox: AABB, parammatching: (param0: Entity) => boolean, parammaxValue: number): EntityHitResult;
+    static getEntityHitResult(paramlevel: Level, paramsource: Entity, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => boolean, paramentityMargin: number): EntityHitResult;
+    static getEntityHitResult(paramlevel: Level, paramsource: Projectile, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => boolean): EntityHitResult;
+    static getHitEntitiesAlong(paramattacker: Entity, paramattackRange: AttackRange, parammatching: (param0: Entity) => boolean, paramblockClipType: ClipContext$Block): Either<BlockHitResult, EntityHitResult[]>;
+    static getHitResultOnMoveVector(paramsource: Entity, parammatching: (param0: Entity) => boolean): HitResult;
+    static getHitResultOnMoveVector(paramsource: Entity, parammatching: (param0: Entity) => boolean, paramclipType: ClipContext$Block): HitResult;
+    static getHitResultOnViewVector(paramsource: Entity, parammatching: (param0: Entity) => boolean, paramdistance: number): HitResult;
+    static getManyEntityHitResult(paramlevel: Level, paramsource: Entity, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => boolean, paramincludeFromEntity: boolean): EntityHitResult[];
+    static getManyEntityHitResult(paramlevel: Level, paramsource: Entity, paramfrom: Vec3, paramto: Vec3, paramtargetSearchArea: AABB, parammatching: (param0: Entity) => boolean, paramentityMargin: number, paramclipType: ClipContext$Block, paramincludeFromEntity: boolean): EntityHitResult[];
     static getMobArrow(parammob: LivingEntity, paramprojectile: ItemStack, parampower: number, paramfiredFromWeapon: ItemStack): AbstractArrow;
     static getWeaponHoldingHand(parammob: LivingEntity, paramweaponItem: Item): InteractionHand;
     static rotateTowardsMovement(paramprojectile: Entity, paramrotationSpeed: number): void;

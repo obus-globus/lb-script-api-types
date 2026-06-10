@@ -14,6 +14,6 @@ export class ItemParser$SuggestionsVisitor extends Object implements ItemParser$
     resolveSuggestions(builder: SuggestionsBuilder, reader: StringReader): CompletableFuture<Suggestions>;
     visitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): void;
     visitItem(item: Holder<Item>): void;
-    visitRemovedComponent(type: DataComponentType<T>): void;
+    visitRemovedComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>): void;
     visitSuggestions(suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>): void;
 }

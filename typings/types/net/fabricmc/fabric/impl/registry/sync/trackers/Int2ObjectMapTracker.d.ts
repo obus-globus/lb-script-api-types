@@ -4,11 +4,12 @@ import type { Event } from '../../../../../../../net/fabricmc/fabric/api/event/E
 import type { RegistryEntryAddedCallback } from '../../../../../../../net/fabricmc/fabric/api/event/registry/RegistryEntryAddedCallback.d.ts'
 import type { RegistryIdRemapCallback } from '../../../../../../../net/fabricmc/fabric/api/event/registry/RegistryIdRemapCallback.d.ts'
 import type { RegistryIdRemapCallback$RemapState } from '../../../../../../../net/fabricmc/fabric/api/event/registry/RegistryIdRemapCallback$RemapState.d.ts'
+import type { Holder$Reference } from '../../../../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class Int2ObjectMapTracker<V extends Object | number | string | boolean, OV extends Object | number | string | boolean> extends Object implements RegistryEntryAddedCallback<V>, RegistryIdRemapCallback<V> {
-    static allEntries(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => void): void;
-    static event(paramarg0: (Object | null)[]): Event<Object>;
-    static event(paramarg0: (Object | null)[]): Event<Object>;
+    static allEntries(paramarg0: (Object | null)[], paramarg1: (param0: Holder$Reference<Object>) => void): void;
+    static event(paramarg0: (Object | null)[]): Event<(param0: number, param1: Identifier, param2: Object | null) => void>;
+    static event(paramarg0: (Object | null)[]): Event<(param0: RegistryIdRemapCallback$RemapState<Object>) => void>;
     static register(paramarg0: (Object | null)[], paramarg1: string, paramarg2: Int2ObjectMap<Object>): void;
     private constructor(arg0: string, arg1: Int2ObjectMap<OV>)
     // private mappers: Int2ObjectMap<OV>;

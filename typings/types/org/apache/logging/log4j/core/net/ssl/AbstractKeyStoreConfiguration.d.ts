@@ -5,7 +5,7 @@ import type { StoreConfiguration } from '../../../../../../../org/apache/logging
 export class AbstractKeyStoreConfiguration extends StoreConfiguration<KeyStore> {
     constructor(location: string, password: string[], keyStoreType: string)
     constructor(location: string, password: string, keyStoreType: string)
-    constructor(location: string, passwordProvider: () => kotlin.CharArray, keyStoreType: string)
+    constructor(location: string, passwordProvider: () => string[], keyStoreType: string)
     readonly keyStore: KeyStore;
     readonly keyStoreType: string;
     equals(obj: Object | null): boolean;

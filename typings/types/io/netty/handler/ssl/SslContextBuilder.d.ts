@@ -21,8 +21,8 @@ export class SslContextBuilder extends Object {
     static forServer(paramarg0: File, paramarg1: File, paramarg2: string): SslContextBuilder;
     static forServer(paramarg0: InputStream, paramarg1: InputStream): SslContextBuilder;
     static forServer(paramarg0: InputStream, paramarg1: InputStream, paramarg2: string): SslContextBuilder;
-    static forServer(paramarg0: PrivateKey, paramarg1: (Object | null)[]): SslContextBuilder;
-    static forServer(paramarg0: PrivateKey, paramarg1: string, paramarg2: (Object | null)[]): SslContextBuilder;
+    static forServer(paramarg0: PrivateKey, paramarg1: X509Certificate[]): SslContextBuilder;
+    static forServer(paramarg0: PrivateKey, paramarg1: string, paramarg2: X509Certificate[]): SslContextBuilder;
     static forServer(paramarg0: PrivateKey, paramarg1: string, paramarg2: (Object | null)[]): SslContextBuilder;
     static forServer(paramarg0: PrivateKey, paramarg1: (Object | null)[]): SslContextBuilder;
     static forServer(paramarg0: KeyManager): SslContextBuilder;

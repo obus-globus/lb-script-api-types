@@ -6,7 +6,7 @@ import type { IContainerHandle } from '../../../../../org/spongepowered/asm/laun
 export class MixinPlatformAgentMinecraftForge extends MixinPlatformAgentAbstract implements IMixinPlatformServiceAgent {
     constructor()
     accept(arg0: MixinPlatformManager, arg1: IContainerHandle): IMixinPlatformAgent$AcceptResult;
-    getMixinContainers(): E[];
+    getMixinContainers(): IContainerHandle[];
     getSideName(): string;
     init(): void;
 }

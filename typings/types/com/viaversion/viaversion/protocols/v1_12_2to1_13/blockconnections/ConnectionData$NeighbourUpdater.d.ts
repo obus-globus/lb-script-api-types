@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ConnectionData$NeighbourUpdater extends Object {
     constructor(arg0: UserConnection)
     // private user: UserConnection;
-    // private userBlockData: (param0: number, param1: number, param2: number) => kotlin.Int;
+    // private userBlockData: (param0: number, param1: number, param2: number) => number;
     // private updateBlock(arg0: number, arg1: number, arg2: number, arg3: BlockChangeRecord1_8[]): void;
     updateChunkSectionNeighbours(arg0: number, arg1: number, arg2: number): void;
 }

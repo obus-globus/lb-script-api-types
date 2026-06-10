@@ -10,7 +10,7 @@ import type { MemoryModuleType } from '../../../../../../net/minecraft/world/ent
 import type { MemoryStatus } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryStatus.d.ts'
 export class GateBehavior<E extends LivingEntity> extends Object implements BehaviorControl<E> {
     constructor(entryCondition: Map<MemoryModuleType<Object>, MemoryStatus>, exitErasedMemories: MemoryModuleType<Object>[], orderPolicy: GateBehavior$OrderPolicy, runningPolicy: GateBehavior$RunningPolicy, behaviors: Pair<BehaviorControl<E>, number>[])
-    // private behaviors: U[];
+    // private behaviors: BehaviorControl<E>[];
     // private entryCondition: Map<MemoryModuleType<Object>, MemoryStatus>;
     // private exitErasedMemories: MemoryModuleType<Object>[];
     // private orderPolicy: GateBehavior$OrderPolicy;

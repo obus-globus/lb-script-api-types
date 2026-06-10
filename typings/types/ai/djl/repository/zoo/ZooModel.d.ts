@@ -3,6 +3,7 @@ import type { Model } from '../../../../ai/djl/Model.d.ts'
 import type { Predictor } from '../../../../ai/djl/inference/Predictor.d.ts'
 import type { NDManager } from '../../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../../ai/djl/ndarray/types/DataType.d.ts'
+import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
 import type { Block } from '../../../../ai/djl/nn/Block.d.ts'
 import type { Trainer } from '../../../../ai/djl/training/Trainer.d.ts'
 import type { TrainingConfig } from '../../../../ai/djl/training/TrainingConfig.d.ts'
@@ -22,8 +23,8 @@ export class ZooModel<I extends Object | number | string | boolean, O extends Ob
     readonly translator: Translator<I, O>;
     cast(arg0: DataType): void;
     close(): void;
-    describeInput(): Pair<K, V>[];
-    describeOutput(): Pair<K, V>[];
+    describeInput(): Pair<string, Shape>[];
+    describeOutput(): Pair<string, Shape>[];
     getArtifact(arg0: string): URL;
     getArtifact<T extends Object | number | string | boolean>(arg0: string, arg1: (param0: InputStream) => T): T;
     getArtifactAsStream(arg0: string): InputStream;
@@ -48,7 +49,7 @@ export class ZooModel<I extends Object | number | string | boolean, O extends Ob
     newPredictor(arg0: Translator<I, O>): Predictor<I, O>;
     newPredictor(): Predictor<I, O>;
     newPredictor(arg0: Device): Predictor<I, O>;
-    newPredictor(arg0: Translator<P, Q>, arg1: Device): Predictor<P, Q>;
+    newPredictor<P extends Object | number | string | boolean, Q extends Object | number | string | boolean>(arg0: Translator<P, Q>, arg1: Device): Predictor<P, Q>;
     newTrainer(arg0: TrainingConfig): Trainer;
     quantize(): void;
     save(arg0: Path[], arg1: string): void;

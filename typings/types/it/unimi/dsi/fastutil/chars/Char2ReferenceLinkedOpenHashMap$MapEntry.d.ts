@@ -4,10 +4,10 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Char2ReferenceLinkedOpenHashMap$MapEntry extends Object implements Char2ReferenceMap$Entry<V>, CharReferencePair<V>, Map$Entry<string, V> {
-    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(): (param0: Object) => boolean;
+    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByValue(): (param0: Object) => boolean;
+    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: string, paramarg1: Object | null): CharReferencePair<Object>;
     constructor(null_: Char2ReferenceLinkedOpenHashMap$MapEntry)
@@ -16,15 +16,15 @@ export class Char2ReferenceLinkedOpenHashMap$MapEntry extends Object implements 
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): string;
-    first(arg0: string): CharReferencePair<V>;
+    first<V extends Object | number | string | boolean>(arg0: string): CharReferencePair<V>;
     firstChar(): string;
     getCharKey(): string;
     hashCode(): number;
     key(): string;
-    key(arg0: string): CharReferencePair<V>;
+    key<V extends Object | number | string | boolean>(arg0: string): CharReferencePair<V>;
     keyChar(): string;
     left(): string;
-    left(arg0: string): CharReferencePair<V>;
+    left<V extends Object | number | string | boolean>(arg0: string): CharReferencePair<V>;
     leftChar(): string;
     right<V extends Object | number | string | boolean>(): V;
     right<V extends Object | number | string | boolean>(arg0: V): CharReferencePair<V>;

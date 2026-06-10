@@ -40,7 +40,7 @@ export class ThreadLocalHandshake$Handshake<T extends Consumer<Node>> extends Ob
     isDone(): boolean;
     // private isTerminated(): boolean;
     perform(node: Node): void;
-    resultNow<V extends Object | number | string | boolean>(): V;
+    resultNow(): void;
     state(): Future$State;
     toString(): string;
 }

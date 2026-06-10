@@ -1,3 +1,4 @@
+import type { StringTag } from '../../../../../../com/viaversion/nbt/tag/StringTag.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { JsonObject } from '../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
@@ -20,8 +21,8 @@ export class ComponentRewriter1_21_5 extends JsonNBTComponentRewriter<Clientboun
     uglyJsonToTag(arg0: UserConnection, arg1: string): Tag;
     uglyJsonToTagUncaught(arg0: UserConnection, arg1: string): Tag;
     // private updateClickEvent(arg0: Map$Entry<string, Tag>[]): void;
-    updateComponentList(arg0: UserConnection, arg1: T[], arg2: boolean): T[];
-    // private updateHiddenComponents(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: T[]): void;
+    updateComponentList(arg0: UserConnection, arg1: StringTag[], arg2: boolean): Map$Entry<string, Tag>[][];
+    // private updateHiddenComponents(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: StringTag[]): void;
     // private updateShowEntityHover(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     // private updateShowItemHover(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     // private updateShowTextHover(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;

@@ -21,7 +21,7 @@ export abstract class DynamicGraphMinFixedPoint extends Object {
     hasWork(): boolean;
     isSource(node: number): boolean;
     removeFromQueue(node: number): void;
-    removeIf(pred: (param0: number) => kotlin.Boolean): void;
+    removeIf(pred: (param0: number) => boolean): void;
     runUpdates(count: number): number;
     setLevel(node: number, level: number): void;
 }

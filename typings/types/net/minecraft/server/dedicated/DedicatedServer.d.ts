@@ -5,7 +5,6 @@ import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { CrashReport } from '../../../../net/minecraft/CrashReport.d.ts'
 import type { SystemReport } from '../../../../net/minecraft/SystemReport.d.ts'
@@ -56,7 +55,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => Object | null): Object | null;
+    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
     constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, settings: DedicatedServerSettings, fixerUpper: DataFixer, services: Services)
     // private codeOfConductTexts: { [key: string]: string };
     // private consoleInput: ConsoleInput[];
@@ -154,7 +153,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     statusHeartbeatInterval(): number;
     stopServer(): void;
     tickConnection(): void;
-    tickServer(haveTime: () => kotlin.Boolean): void;
+    tickServer(haveTime: () => boolean): void;
     useNativeTransport(): boolean;
     viewDistance(): number;
     // private waitForRetry(): void;

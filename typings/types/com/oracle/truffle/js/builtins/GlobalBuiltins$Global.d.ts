@@ -25,7 +25,7 @@ export class GlobalBuiltins$Global extends Enum<GlobalBuiltins$Global> implement
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): GlobalBuiltins$Global;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

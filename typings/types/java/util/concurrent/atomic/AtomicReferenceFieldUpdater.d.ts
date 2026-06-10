@@ -5,14 +5,14 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AtomicReferenceFieldUpdater<T extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
     static newUpdater(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: string): AtomicReferenceFieldUpdater<Object, Object>;
     constructor()
-    accumulateAndGet(arg0: T, arg1: V, arg2: (param0: V, param1: Object | null) => unknown): V;
+    accumulateAndGet(arg0: T, arg1: V, arg2: (param0: V, param1: Object | null) => Object | null): V;
     compareAndSet(arg0: T, arg1: V, arg2: V): boolean;
     get(arg0: T): V;
-    getAndAccumulate(arg0: T, arg1: V, arg2: (param0: V, param1: Object | null) => unknown): V;
+    getAndAccumulate(arg0: T, arg1: V, arg2: (param0: V, param1: Object | null) => Object | null): V;
     getAndSet(arg0: T, arg1: V): V;
-    getAndUpdate(arg0: T, arg1: (param0: V) => unknown): V;
+    getAndUpdate(arg0: T, arg1: (param0: V) => Object | null): V;
     lazySet(arg0: T, arg1: V): void;
     set(arg0: T, arg1: V): void;
-    updateAndGet(arg0: T, arg1: (param0: V) => unknown): V;
+    updateAndGet(arg0: T, arg1: (param0: V) => Object | null): V;
     weakCompareAndSet(arg0: T, arg1: V, arg2: V): boolean;
 }

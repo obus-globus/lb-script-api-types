@@ -115,9 +115,9 @@ export abstract class AbstractHugeMushroomFeature extends Feature<HugeMushroomFe
     static VOID_START_PLATFORM: Feature<NoneFeatureConfiguration>;
     static WATERLOGGED_VEGETATION_PATCH: Feature<VegetationPatchConfiguration>;
     static WEEPING_VINES: Feature<NoneFeatureConfiguration>;
-    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => boolean): boolean;
     static isAdjacentToAir(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos): boolean;
-    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => kotlin.Boolean;
+    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => boolean;
     constructor(codec: Codec<HugeMushroomFeatureConfiguration>)
     getTreeHeight(random: RandomSource): number;
     getTreeRadiusForHeight(trunkHeight: number, treeHeight: number, leafRadius: number, yo: number): number;

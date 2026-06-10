@@ -20,16 +20,16 @@ export class LockBasedStorageManager extends Object implements StorageManager {
     // private exceptionHandlingStrategy: LockBasedStorageManager$ExceptionHandlingStrategy;
     // private lock: SimpleLock;
     compute<T extends Object | number | string | boolean>(arg0: () => T): T;
-    createCacheWithNotNullValues(): CacheWithNotNullValues<K, V>;
-    createCacheWithNullableValues(): CacheWithNullableValues<K, V>;
-    createLazyValue(arg0: () => T): NotNullLazyValue<T>;
-    createLazyValueWithPostCompute(arg0: () => T, arg1: (param0: boolean) => T, arg2: (param0: T) => void): NotNullLazyValue<T>;
-    createMemoizedFunction(arg0: (param0: K) => V): MemoizedFunctionToNotNull<K, V>;
-    createMemoizedFunction(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNotNull<K, V>;
-    createMemoizedFunctionWithNullableValues(arg0: (param0: K) => V): MemoizedFunctionToNullable<K, V>;
-    createMemoizedFunctionWithNullableValues(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNullable<K, V>;
-    createNullableLazyValue(arg0: () => T): NullableLazyValue<T>;
+    createCacheWithNotNullValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): CacheWithNotNullValues<K, V>;
+    createCacheWithNullableValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): CacheWithNullableValues<K, V>;
+    createLazyValue<T extends Object | number | string | boolean>(arg0: () => T): NotNullLazyValue<T>;
+    createLazyValueWithPostCompute<T extends Object | number | string | boolean>(arg0: () => T, arg1: (param0: boolean) => T, arg2: (param0: T) => void): NotNullLazyValue<T>;
+    createMemoizedFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: K) => V): MemoizedFunctionToNotNull<K, V>;
+    createMemoizedFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNotNull<K, V>;
+    createMemoizedFunctionWithNullableValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: K) => V): MemoizedFunctionToNullable<K, V>;
+    createMemoizedFunctionWithNullableValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNullable<K, V>;
+    createNullableLazyValue<T extends Object | number | string | boolean>(arg0: () => T): NullableLazyValue<T>;
     createRecursionTolerantLazyValue<T extends Object | number | string | boolean>(arg0: () => T, arg1: T): NotNullLazyValue<T>;
-    recursionDetectedDefault<K extends Object | number | string | boolean>(arg0: string, arg1: K): LockBasedStorageManager$RecursionDetectedResult<V>;
+    recursionDetectedDefault<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(arg0: string, arg1: K): LockBasedStorageManager$RecursionDetectedResult<V>;
     toString(): string;
 }

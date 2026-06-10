@@ -9,8 +9,8 @@ import type { TypeConstructor } from '../../../../../../kotlin/reflect/jvm/inter
 import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 import type { IntersectionTypeConstructorMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/IntersectionTypeConstructorMarker.d.ts'
 export class IntersectionTypeConstructor extends Object implements TypeConstructor, IntersectionTypeConstructorMarker {
-    constructor(arg0: E[])
-    private constructor(arg0: E[], arg1: KotlinType)
+    constructor(arg0: KotlinType[])
+    private constructor(arg0: KotlinType[], arg1: KotlinType)
     // private alternative: KotlinType;
     // private hashCode: number;
     // private intersectedTypes: KotlinType[];
@@ -21,7 +21,7 @@ export class IntersectionTypeConstructor extends Object implements TypeConstruct
     getBuiltIns(): KotlinBuiltIns;
     getDeclarationDescriptor(): ClassifierDescriptor;
     getParameters(): TypeParameterDescriptor[];
-    getSupertypes(): E[];
+    getSupertypes(): KotlinType[];
     hashCode(): number;
     isDenotable(): boolean;
     makeDebugNameForIntersectionType(arg0: (param0: KotlinType) => any): string;

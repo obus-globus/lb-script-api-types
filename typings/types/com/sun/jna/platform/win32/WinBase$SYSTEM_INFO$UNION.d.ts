@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Union } from '../../../../../com/sun/jna/Union.d.ts'
 import type { WinBase$SYSTEM_INFO$PI } from '../../../../../com/sun/jna/platform/win32/WinBase$SYSTEM_INFO$PI.d.ts'
 import type { WinDef$DWORD } from '../../../../../com/sun/jna/platform/win32/WinDef$DWORD.d.ts'
@@ -15,8 +16,8 @@ export class WinBase$SYSTEM_INFO$UNION extends Union {
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     dwOemID: WinDef$DWORD;
     pi: WinBase$SYSTEM_INFO$PI;

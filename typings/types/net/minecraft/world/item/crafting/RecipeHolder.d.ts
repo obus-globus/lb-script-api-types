@@ -5,7 +5,7 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export class RecipeHolder<T extends Recipe<Object>> extends Record {
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeHolder<Object>>;
     constructor(id: ResourceKey<Recipe<Object>>, value: T)
     // private id: ResourceKey<Recipe<Object>>;
     // private value: T;

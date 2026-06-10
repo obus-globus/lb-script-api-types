@@ -9,6 +9,6 @@ export class ModelProvider$SimpleModelCollector extends Object implements BiCons
     private constructor()
     // private models: Map<Identifier, ModelInstance>;
     accept(id: Identifier, contents: ModelInstance): void;
-    andThen(arg0: (param0: T, param1: U) => void): (param0: T, param1: U) => void;
+    andThen(arg0: (param0: Identifier, param1: ModelInstance) => void): (param0: Identifier, param1: ModelInstance) => void;
     save(cache: CachedOutput, pathProvider: PackOutput$PathProvider): CompletableFuture<Object>;
 }

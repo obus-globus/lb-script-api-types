@@ -23,9 +23,9 @@ export class FeatureFlags extends Enum<FeatureFlags> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FeatureFlags;
     static values(): (Object | null)[];
-    private constructor(arg2: () => kotlin.Boolean, arg3: () => kotlin.Boolean)
-    // private hardwareRequirement: () => kotlin.Boolean;
-    // private irisRequirement: () => kotlin.Boolean;
+    private constructor(arg2: () => boolean, arg3: () => boolean)
+    // private hardwareRequirement: () => boolean;
+    // private irisRequirement: () => boolean;
     getHumanReadableName(): string;
     isUsable(): boolean;
     name(): "SEPARATE_HARDWARE_SAMPLERS" | "HIGHER_SHADOWCOLOR" | "CUSTOM_IMAGES" | "PER_BUFFER_BLENDING" | "COMPUTE_SHADERS" | "TESSELLATION_SHADERS" | "ENTITY_TRANSLUCENT" | "REVERSED_CULLING" | "BLOCK_EMISSION_ATTRIBUTE" | "CAN_DISABLE_WEATHER" | "SSBO" | "FADE_VARIABLE" | "TEXTURE_FILTERING" | "UNKNOWN";

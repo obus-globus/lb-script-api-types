@@ -12,10 +12,10 @@ export class ListBuilder$Builder<T extends Object | number | string | boolean> e
     add<E extends Object | number | string | boolean>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
     add(arg0: T): ListBuilder<T>;
     add(arg0: DataResult<T>): ListBuilder<T>;
-    addAll(arg0: E[], arg1: Encoder<E>): ListBuilder<T>;
+    addAll<E extends Object | number | string | boolean>(arg0: E[], arg1: Encoder<E>): ListBuilder<T>;
     build(arg0: T): DataResult<T>;
     build(arg0: DataResult<T>): DataResult<T>;
-    mapError(arg0: (param0: string) => unknown): ListBuilder<T>;
+    mapError(arg0: (param0: string) => Object | null): ListBuilder<T>;
     ops(): DynamicOps<T>;
     withErrorsFrom(arg0: DataResult<Object>): ListBuilder<T>;
 }

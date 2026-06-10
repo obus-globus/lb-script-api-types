@@ -6,7 +6,7 @@ import type { MeshDefinition } from '../../../../../../net/minecraft/client/mode
 import type { MeshTransformer } from '../../../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 import type { LivingEntityRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/LivingEntityRenderState.d.ts'
 export class PigModel extends QuadrupedModel<LivingEntityRenderState> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static MODEL_Y_OFFSET: number;
     static createBodyLayer(paramg: CubeDeformation): LayerDefinition;
     static createBodyMesh(paramlegSize: number, parammirrorLeftLeg: boolean, parammirrorRightLeg: boolean, paramg: CubeDeformation): MeshDefinition;

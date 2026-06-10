@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -32,11 +33,11 @@ export class ClassConstructorDescriptorImpl extends FunctionDescriptorImpl imple
     getConstructedClass(): ClassDescriptor;
     getContainingDeclaration(): ClassDescriptor;
     getOriginal(): ClassConstructorDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): FunctionDescriptor[];
     initialize(arg0: ValueParameterDescriptor[], arg1: DescriptorVisibility): ClassConstructorDescriptorImpl;
     initialize(arg0: ValueParameterDescriptor[], arg1: DescriptorVisibility, arg2: TypeParameterDescriptor[]): ClassConstructorDescriptorImpl;
     initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility): FunctionDescriptorImpl;
     isPrimary(): boolean;
-    setOverriddenDescriptors(arg0: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
     substitute(arg0: TypeSubstitutor): ClassConstructorDescriptor;
 }

@@ -7,7 +7,7 @@ export class FieldAttributes extends Object {
     constructor(arg0: Field)
     // private field: Field;
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;
-    getAnnotations(): E[];
+    getAnnotations(): Annotation[];
     getDeclaredClass(): Class<Object>;
     getDeclaredType(): Type;
     getDeclaringClass(): Class<Object>;

@@ -7,6 +7,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class PolyglotSourceCache$Cache extends Object {
     private constructor()
     isEmpty(): boolean;
-    listSources(polyglot: PolyglotImpl, source: E[]): void;
+    listSources(polyglot: PolyglotImpl, source: Object[]): void;
     lookup(origin: PolyglotSourceCache$ParseOrigin, context: PolyglotLanguageContext, source: Source, argumentNames: string[], parse: boolean): CallTarget;
 }

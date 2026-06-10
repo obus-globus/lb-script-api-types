@@ -13,12 +13,12 @@ import type { AbstractOriginSupplier } from '../../../../../org/apache/commons/i
 export abstract class AbstractStreamBuilder<T extends Object | number | string | boolean, B extends AbstractStreamBuilder<T, B>> extends AbstractOriginSupplier<T, B> {
     constructor()
     readonly bufferSize: number;
-    // private bufferSizeChecker: (param0: number) => kotlin.Int;
+    // private bufferSizeChecker: (param0: number) => number;
     readonly bufferSizeDefault: number;
     // private bufferSizeMax: number;
     readonly charset: Charset;
     readonly charsetDefault: Charset;
-    // private defaultSizeChecker: (param0: number) => kotlin.Int;
+    // private defaultSizeChecker: (param0: number) => number;
     readonly openOptions: OpenOption[];
     // private checkBufferSize(arg0: number): number;
     getBufferSize(): number;
@@ -35,7 +35,7 @@ export abstract class AbstractStreamBuilder<T extends Object | number | string |
     getReader(): Reader;
     getWriter(): Writer;
     setBufferSize(arg0: number): B;
-    setBufferSizeChecker(arg0: (param0: number) => kotlin.Int): B;
+    setBufferSizeChecker(arg0: (param0: number) => number): B;
     setBufferSizeDefault(arg0: number): B;
     setBufferSizeMax(arg0: number): B;
     setCharset(arg0: Charset): B;

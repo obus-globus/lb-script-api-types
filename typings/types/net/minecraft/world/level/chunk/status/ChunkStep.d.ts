@@ -14,7 +14,7 @@ export class ChunkStep extends Record {
     // private blockStateWriteRadius: number;
     // private directDependencies: ChunkDependencies;
     // private targetStatus: ChunkStatus;
-    // private task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => java.util.concurrent.CompletableFuture<net.minecraft.world.level.chunk.ChunkAccess>;
+    // private task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => CompletableFuture<ChunkAccess>;
     accumulatedDependencies(): ChunkDependencies;
     apply(context: WorldGenContext, cache: StaticCache2D<GenerationChunkHolder>, chunk: ChunkAccess): CompletableFuture<ChunkAccess>;
     blockStateWriteRadius(): number;
@@ -24,6 +24,6 @@ export class ChunkStep extends Record {
     getAccumulatedRadiusOf(status: ChunkStatus): number;
     hashCode(): number;
     targetStatus(): ChunkStatus;
-    task(): (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => java.util.concurrent.CompletableFuture<net.minecraft.world.level.chunk.ChunkAccess>;
+    task(): (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => CompletableFuture<ChunkAccess>;
     toString(): string;
 }

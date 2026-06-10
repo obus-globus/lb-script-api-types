@@ -6,7 +6,7 @@ import type { EquipmentSlot } from '../../../../net/minecraft/world/entity/Equip
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class EquipmentTable extends Record {
     static CODEC: Codec<EquipmentTable>;
-    static DROP_CHANCES_CODEC: Codec<Object>;
+    static DROP_CHANCES_CODEC: Codec<{ [key in EquipmentSlot]: number }>;
     constructor(lootTable: ResourceKey<LootTable>, dropChance: number)
     constructor(lootTable: ResourceKey<LootTable>, slotDropChances: { [key in EquipmentSlot]: number })
     // private lootTable: ResourceKey<LootTable>;

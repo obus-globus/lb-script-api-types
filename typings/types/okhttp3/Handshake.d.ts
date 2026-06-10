@@ -8,7 +8,7 @@ import type { TlsVersion } from '../okhttp3/TlsVersion.d.ts'
 export class Handshake extends Object {
     static Companion: Handshake$Companion;
     static get(paramarg0: SSLSession): Handshake;
-    static get(paramarg0: TlsVersion, paramarg1: CipherSuite, paramarg2: (Object | null)[], paramarg3: (Object | null)[]): Handshake;
+    static get(paramarg0: TlsVersion, paramarg1: CipherSuite, paramarg2: Certificate[], paramarg3: Certificate[]): Handshake;
     constructor(tlsVersion: TlsVersion, cipherSuite: CipherSuite, localCertificates: Certificate[], peerCertificatesFn: () => Certificate[])
     // private cipherSuite: CipherSuite;
     cipherSuite(): CipherSuite;

@@ -14,7 +14,7 @@ export class Column$Range extends Column {
     static fromLowest(paramlowest: number): Column;
     static inside(paramfloor: number, paramceiling: number): Column$Range;
     static line(): Column;
-    static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => kotlin.Boolean, paramvalidEdge: (param0: BlockState) => kotlin.Boolean): Optional<Column>;
+    static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => boolean, paramvalidEdge: (param0: BlockState) => boolean): Optional<Column>;
     constructor(floor: number, ceiling: number)
     ceiling(): number;
     floor(): number;

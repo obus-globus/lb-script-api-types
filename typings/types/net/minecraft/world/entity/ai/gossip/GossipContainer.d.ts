@@ -18,16 +18,16 @@ export class GossipContainer extends Object {
     clear(): void;
     copy(): GossipContainer;
     decay(): void;
-    getCountForType(type: GossipType, valueTest: (param0: number) => kotlin.Boolean): number;
+    getCountForType(type: GossipType, valueTest: (param0: number) => boolean): number;
     getGossipEntries(): Map<UUID, Object2IntMap<GossipType>>;
     // private getOrCreate(target: UUID): GossipContainer$EntityGossips;
-    getReputation(entity: UUID, types: (param0: GossipType) => kotlin.Boolean): number;
+    getReputation(entity: UUID, types: (param0: GossipType) => boolean): number;
     // private mergeValuesForAddition(type: GossipType, oldValue: number, newValue: number): number;
     putAll(container: GossipContainer): void;
     remove(target: UUID, type: GossipType): void;
     remove(target: UUID, type: GossipType, amountToRemove: number): void;
     remove(type: GossipType): void;
-    // private selectGossipsForTransfer(random: RandomSource, maxCount: number): E[];
+    // private selectGossipsForTransfer(random: RandomSource, maxCount: number): GossipContainer$GossipEntry[];
     transferFrom(source: GossipContainer, random: RandomSource, maxCount: number): void;
     // private unpack(): Stream<GossipContainer$GossipEntry>;
 }

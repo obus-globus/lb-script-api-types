@@ -11,8 +11,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GlobalDeclarationInstantiationNode extends StatementNode {
     static EMPTY: Object;
     static EMPTY_DECLARATION_ARRAY: (Object | null)[];
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramglobalDeclarations: (Object | null)[]): JavaScriptNode;
     static create(paramcontext: JSContext, paramglobalDeclarations: DeclareGlobalNode[]): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;

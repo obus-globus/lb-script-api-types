@@ -6,8 +6,8 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class DefaultHeaders$HeaderIterator extends Object implements Iterator<Map$Entry<K, V>> {
     private constructor(null_: DefaultHeaders$HeaderIterator)
     // private current: DefaultHeaders$HeaderEntry<K, V>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Map$Entry<K, V>) => void): void;
     hasNext(): boolean;
-    next(): Map$Entry<K, V>;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Map$Entry<K, V>;
     remove(): void;
 }

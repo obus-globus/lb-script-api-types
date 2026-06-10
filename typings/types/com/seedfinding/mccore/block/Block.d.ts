@@ -3,8 +3,8 @@ import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVer
 import type { BiPredicate } from '../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Block extends Object {
-    static IS_AIR: (param0: MCVersion, param1: Block) => kotlin.Boolean;
-    static IS_RANDOM_TICKING: (param0: MCVersion, param1: Block) => kotlin.Boolean;
+    static IS_AIR: (param0: MCVersion, param1: Block) => boolean;
+    static IS_RANDOM_TICKING: (param0: MCVersion, param1: Block) => boolean;
     static RANDOM_TICKING: VersionMap<Block>;
     constructor(arg0: MCVersion, arg1: number, arg2: string, arg3: MCVersion)
     constructor(arg0: MCVersion, arg1: number, arg2: string, arg3: MCVersion, arg4: number)

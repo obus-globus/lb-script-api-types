@@ -5,6 +5,7 @@ import type { Predicate } from '../../../../../../../java/util/function/Predicat
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { KeyValueCondition$Term } from '../../../../../../../net/minecraft/client/renderer/block/dispatch/multipart/KeyValueCondition$Term.d.ts'
+import type { StateHolder } from '../../../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 import type { Property } from '../../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class KeyValueCondition$Terms extends Record {
     static CODEC: Codec<KeyValueCondition$Terms>;
@@ -15,7 +16,7 @@ export class KeyValueCondition$Terms extends Record {
     equals(o: Object | null): boolean;
     // private getValueOrThrow<T extends Comparable<T>>(owner: Object, property: Property<T>, input: string): T;
     hashCode(): number;
-    instantiate<O extends Object | number | string | boolean>(owner: O, property: Property<T>): (param0: S) => kotlin.Boolean;
-    // private instantiate(owner: Object, property: Property<T>, term: KeyValueCondition$Term): (param0: T) => kotlin.Boolean;
+    instantiate<S extends StateHolder<O, S>, O extends Object | number | string | boolean, T extends Comparable<T>>(owner: O, property: Property<T>): (param0: S) => boolean;
+    // private instantiate<T extends Comparable<T>>(owner: Object, property: Property<T>, term: KeyValueCondition$Term): (param0: T) => boolean;
     toString(): string;
 }

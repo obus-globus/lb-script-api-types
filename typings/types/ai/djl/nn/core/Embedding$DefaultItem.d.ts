@@ -8,8 +8,8 @@ export class Embedding$DefaultItem extends Object implements AbstractIndexedEmbe
     // private defaultItem: T;
     decode<T extends Object | number | string | boolean>(arg0: number[]): T;
     embed<T extends Object | number | string | boolean>(arg0: T): number;
-    embed(arg0: NDManager, arg1: T[]): NDArray;
+    embed<T extends Object | number | string | boolean>(arg0: NDManager, arg1: T[]): NDArray;
     encode<T extends Object | number | string | boolean>(arg0: T): number[];
     hasItem<T extends Object | number | string | boolean>(arg0: T): boolean;
-    unembed(arg0: number): Optional<T>;
+    unembed<T extends Object | number | string | boolean>(arg0: number): Optional<T>;
 }

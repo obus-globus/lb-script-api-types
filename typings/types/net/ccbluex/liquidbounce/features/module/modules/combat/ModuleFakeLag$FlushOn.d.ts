@@ -11,19 +11,19 @@ export class ModuleFakeLag$FlushOn extends Enum<ModuleFakeLag$FlushOn> implement
     static Companion: Tagged$Companion;
     static ENTITY_INTERACT: ModuleFakeLag$FlushOn;
     static getEntries(): ModuleFakeLag$FlushOn[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFakeLag$FlushOn;
     static values(): (Object | null)[];
-    private constructor(tag: string, testPacket: (param0: Packet<Object> | null) => kotlin.Boolean)
+    private constructor(tag: string, testPacket: (param0: Packet<Object> | null) => boolean)
     readonly tag: string;
-    // private testPacket: (param0: Packet<Object> | null) => kotlin.Boolean;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    // private testPacket: (param0: Packet<Object> | null) => boolean;
+    and(arg0: (param0: Packet<Object> | null) => boolean): (param0: Packet<Object> | null) => boolean;
+    negate(): (param0: Packet<Object> | null) => boolean;
+    or(arg0: (param0: Packet<Object> | null) => boolean): (param0: Packet<Object> | null) => boolean;
     test(p0: Packet<Object> | null): boolean;
     name(): "ENTITY_INTERACT" | "BLOCK_INTERACT" | "ACTION";
 }

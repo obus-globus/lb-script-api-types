@@ -3,8 +3,8 @@ import type { Object2IntFunction } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2IntFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractObject2IntFunction<K> implements Serializable {
-    constructor(arg0: (param0: K) => kotlin.Int)
-    // private function: (param0: K) => kotlin.Int;
+    constructor(arg0: (param0: Object) => number)
+    // private function: (param0: Object) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;

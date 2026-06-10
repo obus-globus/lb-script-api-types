@@ -2,6 +2,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ClassVisitor } from '../../../../org/objectweb/asm/ClassVisitor.d.ts'
 import type { FieldVisitor } from '../../../../org/objectweb/asm/FieldVisitor.d.ts'
 import type { MethodVisitor } from '../../../../org/objectweb/asm/MethodVisitor.d.ts'
+import type { SerialVersionUIDAdder$Item } from '../../../../org/objectweb/asm/commons/SerialVersionUIDAdder$Item.d.ts'
 export class SerialVersionUIDAdder extends ClassVisitor {
     constructor(arg0: number, arg1: ClassVisitor)
     constructor(arg0: ClassVisitor)
@@ -11,9 +12,9 @@ export class SerialVersionUIDAdder extends ClassVisitor {
     // private hasSvuid: boolean;
     // private interfaces: string[];
     // private name: string;
-    // private svuidConstructors: E[];
-    // private svuidFields: E[];
-    // private svuidMethods: E[];
+    // private svuidConstructors: SerialVersionUIDAdder$Item[];
+    // private svuidFields: SerialVersionUIDAdder$Item[];
+    // private svuidMethods: SerialVersionUIDAdder$Item[];
     addSVUID(arg0: number): void;
     computeSHAdigest(arg0: number[]): number[];
     computeSVUID(): number;

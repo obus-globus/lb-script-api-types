@@ -20,6 +20,6 @@ export abstract class BackwardsItemRewriterBase<C extends ClientboundPacketType,
     restoreDisplayTag(arg0: Item): void;
     restoreListTag(arg0: Map$Entry<string, Tag>[], arg1: string): void;
     restoreStringTag(arg0: Map$Entry<string, Tag>[], arg1: string): void;
-    saveListTag(arg0: Map$Entry<string, Tag>[], arg1: T[], arg2: string): void;
+    saveListTag(arg0: Map$Entry<string, Tag>[], arg1: Tag[], arg2: string): void;
     saveStringTag(arg0: Map$Entry<string, Tag>[], arg1: StringTag, arg2: string): void;
 }

@@ -50,7 +50,7 @@ export class ItemExtensionsKt extends Object {
      */
     static getDestroySpeedWithEnchantment(itemStack: ItemStack, state: BlockState): number;
     static getDurability(paramarg0: ItemStack): number;
-    static getOrNull(resourceKey: ResourceKey<Object>): (Object | null)[];
+    static getOrNull(resourceKey: ResourceKey<(Object | null)[]>): (Object | null)[];
     static getPotionEffects(itemStack: ItemStack): MobEffectInstance[];
     static getSharpnessDamage(paramarg0: ItemStack): number;
     static getSharpnessDamage(itemStack: ItemStack, level: number): number;

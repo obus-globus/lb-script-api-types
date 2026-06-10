@@ -12,7 +12,7 @@ export class MessageArgument extends Object implements SignedArgument<MessageArg
     static message(): MessageArgument;
     static resolveChatMessage(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramtask: (param0: PlayerChatMessage) => void): void;
     constructor()
-    getExamples(): E[];
+    getExamples(): string[];
     parse(reader: StringReader): MessageArgument$Message;
     parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): MessageArgument$Message;
 }

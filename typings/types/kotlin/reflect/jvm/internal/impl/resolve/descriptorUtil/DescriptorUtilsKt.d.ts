@@ -18,7 +18,7 @@ import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/
 import type { Sequence } from '../../../../../../../kotlin/sequences/Sequence.d.ts'
 export class DescriptorUtilsKt extends Object {
     static declaresOrInheritsDefaultValue(paramarg0: ValueParameterDescriptor): boolean;
-    static firstOverridden(paramarg0: CallableMemberDescriptor, paramarg1: boolean, paramarg2: (param0: Object | null) => boolean): CallableMemberDescriptor;
+    static firstOverridden(paramarg0: CallableMemberDescriptor, paramarg1: boolean, paramarg2: (param0: Object) => boolean): CallableMemberDescriptor;
     static fqNameOrNull(paramarg0: DeclarationDescriptor): FqName;
     static getAnnotationClass(paramarg0: AnnotationDescriptor): ClassDescriptor;
     static getBuiltIns(paramarg0: DeclarationDescriptor): KotlinBuiltIns;

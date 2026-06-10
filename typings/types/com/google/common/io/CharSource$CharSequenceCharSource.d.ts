@@ -8,8 +8,8 @@ import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class CharSource$CharSequenceCharSource extends CharSource {
     static concat(paramsources: (Object | null)[]): CharSource;
-    static concat(paramsources: (Object | null)[]): CharSource;
-    static concat(paramsources: Iterator<Object>): CharSource;
+    static concat(paramsources: CharSource[]): CharSource;
+    static concat(paramsources: Iterator<CharSource>): CharSource;
     static empty(): CharSource;
     static wrap(paramcharSequence: CharSequence): CharSource;
     constructor(seq: CharSequence)

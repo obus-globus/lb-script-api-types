@@ -6,5 +6,5 @@ export class DebuggerInstrumentProvider extends TruffleInstrumentProvider {
     createInternalResource(resourceId: string): Object;
     getInstrumentClassName(): string;
     getInternalResourceIds(): string[];
-    getServicesClassNames(): E[];
+    getServicesClassNames(): string[];
 }

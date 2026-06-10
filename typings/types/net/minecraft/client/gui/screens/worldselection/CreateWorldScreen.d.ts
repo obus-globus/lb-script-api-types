@@ -3,7 +3,6 @@ import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { OptionalLong } from '../../../../../../java/util/OptionalLong.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { GuiEventListener } from '../../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
@@ -40,13 +39,13 @@ export class CreateWorldScreen extends Screen {
     static createFromExisting(paramminecraft: Minecraft, paramonClose: () => void, paramlevelSettings: LevelSettings, paramworldCreationContext: WorldCreationContext, paramnewDataPackDir: Path[][]): CreateWorldScreen;
     static createTempDataPackDirFromExistingWorld(paramsourcePackDir: Path[][], paramminecraft: Minecraft): Path[][];
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     static openFresh(paramminecraft: Minecraft, paramonClose: () => void): void;
-    static openFresh(paramminecraft: Minecraft, paramonClose: () => void, paramcreateWorld: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => kotlin.Boolean): void;
+    static openFresh(paramminecraft: Minecraft, paramonClose: () => void, paramcreateWorld: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => boolean): void;
     static testWorld(paramminecraft: Minecraft, paramonClose: () => void): void;
-    private constructor(minecraft: Minecraft, onClose: () => void, settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong, createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => kotlin.Boolean)
-    // private createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => kotlin.Boolean;
+    private constructor(minecraft: Minecraft, onClose: () => void, settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong, createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => boolean)
+    // private createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => boolean;
     // private layout: HeaderAndFooterLayout;
     // private onClose: () => void;
     // private packValidator: DirectoryValidator;

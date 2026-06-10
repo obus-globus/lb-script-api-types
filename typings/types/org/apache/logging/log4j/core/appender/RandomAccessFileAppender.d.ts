@@ -14,7 +14,7 @@ export class RandomAccessFileAppender extends AbstractOutputStreamAppender<Rando
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramfileName: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, paramignore: string, paramlayout: Layout<Object>, paramfilter: Filter, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RandomAccessFileAppender;
+    static createAppender(paramfileName: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, paramignore: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RandomAccessFileAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: RandomAccessFileManager, filename: string, ignoreExceptions: boolean, immediateFlush: boolean, advertiser: Advertiser, properties: Property[])

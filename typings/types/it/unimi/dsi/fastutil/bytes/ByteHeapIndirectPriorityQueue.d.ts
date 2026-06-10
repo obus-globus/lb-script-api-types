@@ -2,13 +2,13 @@ import type { ByteComparator } from '../../../../../it/unimi/dsi/fastutil/bytes/
 import type { ByteHeapSemiIndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteHeapSemiIndirectPriorityQueue.d.ts'
 export class ByteHeapIndirectPriorityQueue extends ByteHeapSemiIndirectPriorityQueue {
     constructor(arg0: number[])
-    constructor(arg0: number[], arg1: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number)
-    constructor(arg0: number[], arg1: number, arg2: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number, arg2: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number[])
-    constructor(arg0: number[], arg1: number[], arg2: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number[], arg2: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number[], arg2: number)
-    constructor(arg0: number[], arg1: number[], arg2: number, arg3: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number[], arg2: number, arg3: (param0: number, param1: number) => number)
     // private inv: number[];
     allChanged(): void;
     changed(): void;

@@ -1,3 +1,4 @@
+import type { VertexConsumer } from '../../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ColorProvider } from '../../../../../../net/caffeinemc/mods/sodium/client/model/color/ColorProvider.d.ts'
 import type { ColorProviderRegistry } from '../../../../../../net/caffeinemc/mods/sodium/client/model/color/ColorProviderRegistry.d.ts'
@@ -35,6 +36,6 @@ export class FluidRendererImpl$DefaultRenderContext extends Object implements Fl
     // private renderer: DefaultFluidRenderer;
     clear(): void;
     getColorProvider(arg0: Fluid, arg1: BlockTintSource): ColorProvider<FluidState>;
-    render(arg0: FluidRenderer, arg1: FluidRenderHandler, arg2: BlockAndTintGetter, arg3: BlockPos, arg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, arg5: BlockState, arg6: FluidState): void;
+    render(arg0: FluidRenderer, arg1: FluidRenderHandler, arg2: BlockAndTintGetter, arg3: BlockPos, arg4: (param0: ChunkSectionLayer) => VertexConsumer, arg5: BlockState, arg6: FluidState): void;
     setUp(arg0: ColorProviderRegistry, arg1: DefaultFluidRenderer, arg2: LevelSlice, arg3: BlockState, arg4: FluidState, arg5: BlockPos, arg6: BlockPos, arg7: TranslucentGeometryCollector, arg8: ChunkModelBuilder, arg9: Material, arg10: FluidRenderHandler, arg11: boolean, arg12: FluidStateModelSet): void;
 }

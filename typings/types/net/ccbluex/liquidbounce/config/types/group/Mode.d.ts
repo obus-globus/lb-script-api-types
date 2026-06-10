@@ -8,7 +8,7 @@ import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/e
 import type { MinecraftShortcuts } from '../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 export abstract class Mode extends ValueGroup implements Tagged, EventListener, MinecraftShortcuts {
     static Companion: Tagged$Companion;
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     constructor(name: string, aliases: string[])
     /*not mapped: */ isSelected$liquidbounce(): boolean;
@@ -25,10 +25,10 @@ export abstract class Mode extends ValueGroup implements Tagged, EventListener, 
     disable(): void;
     enable(): void;
     protected modes<T extends Mode>(name: string, active: T, choices: T[]): ModeValueGroup<T>;
-    protected modes(name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes<T extends Mode>(name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, active: T, modes: T[]): ModeValueGroup<T>;
-    protected modes(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => kotlin.Int, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
-    protected modes(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes<T extends Mode>(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => number, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected modes<T extends Mode>(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     parent(): EventListener;
     parent(): EventListener | null;
     unregister(): void;

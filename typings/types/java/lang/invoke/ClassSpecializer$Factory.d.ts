@@ -17,17 +17,17 @@ export class ClassSpecializer$Factory extends Object {
     // private TRANSFORM_NAMES: string[];
     // private TRANSFORM_TYPES: MethodType[];
     chooseFieldName(arg0: Class<Object>, arg1: number): string;
-    // private findFactories(arg0: Class<T>, arg1: Class<Object>[]): MethodHandle[];
-    findFactory(arg0: Class<T>, arg1: Class<Object>[]): MethodHandle;
+    // private findFactories<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: Class<Object>[]): MethodHandle[];
+    findFactory<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: Class<Object>[]): MethodHandle;
     // private findGetter(arg0: Class<Object>, arg1: Class<Object>[], arg2: number): MethodHandle;
     // private findGetters(arg0: Class<Object>, arg1: Class<Object>[]): MethodHandle[];
-    generateConcreteSpeciesCode(arg0: string, arg1: ClassSpecializer$SpeciesData): Class<T>;
-    generateConcreteSpeciesCodeFile(arg0: string, arg1: ClassSpecializer$SpeciesData): number[];
-    linkCodeToSpeciesData(arg0: Class<T>, arg1: ClassSpecializer$SpeciesData, arg2: boolean): void;
-    linkSpeciesDataToCode(arg0: ClassSpecializer$SpeciesData, arg1: Class<T>): void;
+    generateConcreteSpeciesCode<T extends Object | number | string | boolean, K extends Object | number | string | boolean, S extends ClassSpecializer$SpeciesData>(arg0: string, arg1: ClassSpecializer$SpeciesData): Class<T>;
+    generateConcreteSpeciesCodeFile<T extends Object | number | string | boolean, K extends Object | number | string | boolean, S extends ClassSpecializer$SpeciesData>(arg0: string, arg1: ClassSpecializer$SpeciesData): number[];
+    linkCodeToSpeciesData<T extends Object | number | string | boolean, K extends Object | number | string | boolean, S extends ClassSpecializer$SpeciesData>(arg0: Class<T>, arg1: ClassSpecializer$SpeciesData, arg2: boolean): void;
+    linkSpeciesDataToCode<T extends Object | number | string | boolean, K extends Object | number | string | boolean, S extends ClassSpecializer$SpeciesData>(arg0: ClassSpecializer$SpeciesData, arg1: Class<T>): void;
     loadSpecies<S extends ClassSpecializer$SpeciesData>(arg0: S): S;
-    loadSpeciesDataFromCode<S extends ClassSpecializer$SpeciesData>(arg0: Class<T>): S;
+    loadSpeciesDataFromCode<S extends ClassSpecializer$SpeciesData, T extends Object | number | string | boolean>(arg0: Class<T>): S;
     makeNominalGetters(arg0: Class<Object>[], arg1: MethodHandle[]): LambdaForm$NamedFunction[];
-    // private readSpeciesDataFromCode<S extends ClassSpecializer$SpeciesData>(arg0: Class<T>): S;
-    // private reflectSDField(arg0: Class<T>): Field;
+    // private readSpeciesDataFromCode<S extends ClassSpecializer$SpeciesData, T extends Object | number | string | boolean>(arg0: Class<T>): S;
+    // private reflectSDField<T extends Object | number | string | boolean>(arg0: Class<T>): Field;
 }

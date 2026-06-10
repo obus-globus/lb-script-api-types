@@ -19,11 +19,11 @@ export class Panda$Gene extends Enum<Panda$Gene> implements StringRepresentable 
     static WEAK: Panda$Gene;
     static WORRIED: Panda$Gene;
     static byId(paramid: number): Panda$Gene;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getRandom(paramrandom: RandomSource): Panda$Gene;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

@@ -8,7 +8,7 @@ export class Id<A extends Object | number | string | boolean> extends PointFree<
     constructor(arg0: Type<(param0: A) => A>)
     // private type: Type<(param0: A) => A>;
     equals(arg0: Object | null): boolean;
-    eval(): (param0: DynamicOps<Object>) => (param0: A) => A;
+    eval(): (param0: DynamicOps<Object>) => Function<A, A>;
     hashCode(): number;
     toString(): string;
     toString(arg0: number): string;

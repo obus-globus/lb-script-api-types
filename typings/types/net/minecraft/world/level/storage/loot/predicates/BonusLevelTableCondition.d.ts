@@ -9,11 +9,11 @@ import type { LootContext } from '../../../../../../../net/minecraft/world/level
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export class BonusLevelTableCondition extends Record implements LootItemCondition {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<BonusLevelTableCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
-    static bonusLevelFlatChance(paramenchantment: Holder<Enchantment>, paramchances: number[]): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+    static bonusLevelFlatChance(paramenchantment: Holder<Enchantment>, paramchances: number[]): () => LootItemCondition;
     constructor(enchantment: Holder<Enchantment>, values: number[])
     // private enchantment: Holder<Enchantment>;
     // private values: number[];

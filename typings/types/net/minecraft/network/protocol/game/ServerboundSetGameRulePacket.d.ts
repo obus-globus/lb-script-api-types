@@ -10,7 +10,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ServerboundSetGameRulePacket$Entry } from '../../../../../net/minecraft/network/protocol/game/ServerboundSetGameRulePacket$Entry.d.ts'
 export class ServerboundSetGameRulePacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundSetGameRulePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(entries: ServerboundSetGameRulePacket$Entry[])
     // private entries: ServerboundSetGameRulePacket$Entry[];
     entries(): ServerboundSetGameRulePacket$Entry[];

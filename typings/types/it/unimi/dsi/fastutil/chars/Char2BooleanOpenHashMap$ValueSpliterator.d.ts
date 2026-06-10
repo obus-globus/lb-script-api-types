@@ -17,7 +17,7 @@ export class Char2BooleanOpenHashMap$ValueSpliterator extends Char2BooleanOpenHa
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Char2BooleanOpenHashMap$ValueSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;

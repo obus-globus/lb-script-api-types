@@ -6,6 +6,6 @@ export class AbstractList$Companion extends Object {
     checkPositionIndex(index: number, size: number): void;
     checkRangeIndexes(fromIndex: number, toIndex: number, size: number): void;
     newCapacity(oldCapacity: number, minCapacity: number): number;
-    orderedEquals(c: E[], other: E[]): boolean;
-    orderedHashCode(c: E[]): number;
+    orderedEquals(c: (Object | null)[], other: (Object | null)[]): boolean;
+    orderedHashCode(c: (Object | null)[]): number;
 }

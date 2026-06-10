@@ -10,7 +10,7 @@ import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/le
 import type { NormalNoise$NoiseParameters } from '../../../../../net/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters.d.ts'
 export class SurfaceRules$NoiseThresholdConditionSource extends Record implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     // private maxThreshold: number;
     // private minThreshold: number;
     // private noise: ResourceKey<NormalNoise$NoiseParameters>;

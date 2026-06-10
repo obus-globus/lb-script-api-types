@@ -18,8 +18,8 @@ export class JSMetaType extends Object implements TruffleObject {
     static NUMBER: JSMetaType;
     static OBJECT: JSMetaType;
     static STRING: JSMetaType;
-    constructor(typeName: string, isInstance: (param0: InteropLibrary, param1: Object) => kotlin.Boolean)
-    // private isInstance: (param0: InteropLibrary, param1: Object) => kotlin.Boolean;
+    constructor(typeName: string, isInstance: (param0: InteropLibrary, param1: Object) => boolean)
+    // private isInstance: (param0: InteropLibrary, param1: Object) => boolean;
     readonly typeName: string;
     getLanguage(): Class<TruffleLanguage<Object>>;
     getTypeName(): string;

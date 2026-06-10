@@ -18,7 +18,7 @@ export abstract class Spliterators$AbstractSpliterator<T extends Object | number
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     trySplit(): Spliterator<T>;

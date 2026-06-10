@@ -1,5 +1,6 @@
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { Interval } from '../../../../../../../net/caffeinemc/mods/sodium/client/util/interval_tree/Interval.d.ts'
 export class TreeNode$TreeNodeIterator extends Object implements Iterator<Interval<T>> {
@@ -9,8 +10,8 @@ export class TreeNode$TreeNodeIterator extends Object implements Iterator<Interv
     // private iterator: Iterator<Interval<T>>;
     // private stack: Interval<T>[][];
     // private subtreeRoot: Interval<T>[];
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<T extends Comparable<T>>(arg0: (param0: Interval<T>) => void): void;
     hasNext(): boolean;
-    next(): Interval<T>;
+    next<T extends Comparable<T>>(): Interval<T>;
     remove(): void;
 }

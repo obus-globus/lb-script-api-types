@@ -10,9 +10,9 @@ import type { Sequence } from '../../../../../../../../com/oracle/truffle/regex/
 import type { SubexpressionCall } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/SubexpressionCall.d.ts'
 import type { DepthFirstTraversalRegexASTVisitor } from '../../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/visitors/DepthFirstTraversalRegexASTVisitor.d.ts'
 export class AddToSetVisitor extends DepthFirstTraversalRegexASTVisitor {
-    static addCharacterClasses(paramset: S[], paramrunRoot: RegexASTNode): void;
-    private constructor(set: S[])
-    // private set: S[];
+    static addCharacterClasses(paramset: RegexASTNode[], paramrunRoot: RegexASTNode): void;
+    private constructor(set: RegexASTNode[])
+    // private set: RegexASTNode[];
     visit(atomicGroup: AtomicGroup): void;
     visit(backReference: BackReference): void;
     visit(characterClass: CharacterClass): void;

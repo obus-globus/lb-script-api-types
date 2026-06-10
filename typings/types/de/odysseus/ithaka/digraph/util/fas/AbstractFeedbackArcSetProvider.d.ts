@@ -10,10 +10,10 @@ export abstract class AbstractFeedbackArcSetProvider extends Object implements F
     constructor()
     constructor(arg0: number)
     // private executor: ExecutorService;
-    // private executeAll(arg0: AbstractFeedbackArcSetProvider$FeedbackTask<V>[]): FeedbackArcSet<V>[];
-    // private fas(arg0: Digraph<V>, arg1: EdgeWeights<V>, arg2: FeedbackArcSetPolicy): FeedbackArcSet<V>;
-    getFeedbackArcSet(arg0: Digraph<V>, arg1: EdgeWeights<V>, arg2: FeedbackArcSetPolicy): FeedbackArcSet<V>;
-    lfas(arg0: Digraph<V>, arg1: EdgeWeights<V>): Digraph<V>;
-    mfas(arg0: Digraph<V>, arg1: EdgeWeights<V>): Digraph<V>;
-    totalWeight(arg0: Digraph<V>, arg1: EdgeWeights<V>): number;
+    // private executeAll<V extends Object | number | string | boolean>(arg0: AbstractFeedbackArcSetProvider$FeedbackTask<V>[]): FeedbackArcSet<V>[];
+    // private fas<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>, arg2: FeedbackArcSetPolicy): FeedbackArcSet<V>;
+    getFeedbackArcSet<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>, arg2: FeedbackArcSetPolicy): FeedbackArcSet<V>;
+    lfas<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>): Digraph<V>;
+    mfas<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>): Digraph<V>;
+    totalWeight<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>): number;
 }

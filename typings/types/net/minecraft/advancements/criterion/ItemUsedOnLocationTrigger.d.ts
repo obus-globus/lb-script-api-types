@@ -8,6 +8,6 @@ import type { ItemInstance } from '../../../../net/minecraft/world/item/ItemInst
 export class ItemUsedOnLocationTrigger extends SimpleCriterionTrigger<ItemUsedOnLocationTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ItemUsedOnLocationTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: ItemUsedOnLocationTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: ItemUsedOnLocationTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, pos: BlockPos, tool: ItemInstance): void;
 }

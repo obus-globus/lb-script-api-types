@@ -8,10 +8,10 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class MapDecoder$Implementation<A extends Object | number | string | boolean> extends CompressorHolder implements MapDecoder<A> {
     constructor()
-    ap(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
+    ap<E extends Object | number | string | boolean>(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
     compressedDecode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
     decoder(): Decoder<A>;
-    flatMap(arg0: (param0: A) => DataResult<B>): MapDecoder<B>;
-    map(arg0: (param0: A) => B): MapDecoder<B>;
+    flatMap<B extends Object | number | string | boolean>(arg0: (param0: A) => DataResult<B>): MapDecoder<B>;
+    map<B extends Object | number | string | boolean>(arg0: (param0: A) => B): MapDecoder<B>;
     withLifecycle(arg0: Lifecycle): MapDecoder<A>;
 }

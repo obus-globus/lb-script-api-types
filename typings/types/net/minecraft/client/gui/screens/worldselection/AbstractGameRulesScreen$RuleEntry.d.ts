@@ -4,6 +4,6 @@ import type { FormattedCharSequence } from '../../../../../../net/minecraft/util
 import type { FormattedCharSink } from '../../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export abstract class AbstractGameRulesScreen$RuleEntry extends ContainerObjectSelectionList$Entry<AbstractGameRulesScreen$RuleEntry> {
     static CONTENT_PADDING: number;
-    constructor(tooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[])
-    // private tooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    constructor(tooltip: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[])
+    // private tooltip: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
 }

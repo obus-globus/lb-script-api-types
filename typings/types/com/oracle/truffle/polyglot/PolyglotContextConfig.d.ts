@@ -20,13 +20,13 @@ import type { AbstractPolyglotImpl$LogHandler } from '../../../../org/graalvm/po
 import type { ProcessHandler } from '../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
 export class PolyglotContextConfig extends Object {
     constructor(engine: PolyglotEngineImpl, fileSystemConfig: PolyglotContextConfig$FileSystemConfig, sharableConfig: PolyglotContextConfig$PreinitConfig)
-    constructor(engine: PolyglotEngineImpl, sandboxPolicy: SandboxPolicy, forceSharing: boolean, out: OutputStream, err: OutputStream, in_: InputStream, hostLookupAllowed: boolean, polyglotAccess: Object, nativeAccessAllowed: boolean, createThreadAllowed: boolean, threadAccessDeniedHandler: (param0: string) => void, hostClassLoadingAllowed: boolean, contextOptionsAllowed: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => kotlin.Boolean, applicationArguments: { [key: string]: string[] }, onlyLanguages: string[], options: { [key: string]: string }, fileSystemConfig: PolyglotContextConfig$FileSystemConfig, logHandler: AbstractPolyglotImpl$LogHandler, createProcessAllowed: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: { [key: string]: string }, timeZone: ZoneId, limits: PolyglotLimits, hostClassLoader: ClassLoader, hostAccess: Object, allowValueSharing: boolean, useSystemExit: boolean, creatorArguments: { [key: string]: Object }, onCancelled: () => void, onExited: (param0: number) => void, onClosed: () => void)
+    constructor(engine: PolyglotEngineImpl, sandboxPolicy: SandboxPolicy, forceSharing: boolean, out: OutputStream, err: OutputStream, in_: InputStream, hostLookupAllowed: boolean, polyglotAccess: Object, nativeAccessAllowed: boolean, createThreadAllowed: boolean, threadAccessDeniedHandler: (param0: string) => void, hostClassLoadingAllowed: boolean, contextOptionsAllowed: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, applicationArguments: { [key: string]: string[] }, onlyLanguages: string[], options: { [key: string]: string }, fileSystemConfig: PolyglotContextConfig$FileSystemConfig, logHandler: AbstractPolyglotImpl$LogHandler, createProcessAllowed: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: { [key: string]: string }, timeZone: ZoneId, limits: PolyglotLimits, hostClassLoader: ClassLoader, hostAccess: Object, allowValueSharing: boolean, useSystemExit: boolean, creatorArguments: { [key: string]: Object }, onCancelled: () => void, onExited: (param0: number) => void, onClosed: () => void)
     // private allowExperimentalOptions: boolean;
     // private allowValueSharing: boolean;
     // private allowedPublicLanguages: string[];
     // private api: AbstractPolyglotImpl$APIAccess;
     // private applicationArguments: { [key: string]: string[] };
-    // private classFilter: (param0: string) => kotlin.Boolean;
+    // private classFilter: (param0: string) => boolean;
     // private configuredInstruments: PolyglotInstrument[];
     // private configuredLanguages: PolyglotLanguage[];
     // private createProcessAllowed: boolean;
@@ -62,9 +62,9 @@ export class PolyglotContextConfig extends Object {
     // private timeZone: ZoneId;
     // private useSystemExit: boolean;
     addConfiguredLanguage(engine: PolyglotEngineImpl, languages: PolyglotLanguage[], language: PolyglotLanguage): void;
-    // private collectDependentLanguages(engine: PolyglotEngineImpl, languageIds: E[], foundLanguages: E[]): void;
+    // private collectDependentLanguages(engine: PolyglotEngineImpl, languageIds: string[], foundLanguages: PolyglotLanguage[]): void;
     getApplicationArguments(lang: PolyglotLanguage): string[];
-    getConfiguredInstruments(): E[];
+    getConfiguredInstruments(): PolyglotInstrument[];
     getConfiguredLanguages(): PolyglotLanguage[];
     getEnvironment(): { [key: string]: string };
     getInstrumentOptionValues(instrument: PolyglotInstrument): OptionValuesImpl;

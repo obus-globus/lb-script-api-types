@@ -4,7 +4,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class HeadersUtils$StringIterator<T extends Object | number | string | boolean> extends Object implements Iterator<string> {
     constructor(arg0: Iterator<T>)
     // private iter: Iterator<T>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
     remove(): void;

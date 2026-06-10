@@ -185,7 +185,7 @@ export class DescriptorRendererImpl extends DescriptorRenderer implements Descri
     renderTypeProjection(arg0: TypeProjection): string;
     // private renderValVarPrefix(arg0: VariableDescriptor, arg1: StringBuilder, arg2: boolean): void;
     // private renderValueParameter(arg0: ValueParameterDescriptor, arg1: boolean, arg2: StringBuilder, arg3: boolean): void;
-    // private renderValueParameters(arg0: E[], arg1: boolean, arg2: StringBuilder): void;
+    // private renderValueParameters(arg0: ValueParameterDescriptor[], arg1: boolean, arg2: StringBuilder): void;
     // private renderVariable(arg0: VariableDescriptor, arg1: boolean, arg2: StringBuilder, arg3: boolean, arg4: boolean): void;
     // private renderVisibility(arg0: DescriptorVisibility, arg1: StringBuilder): boolean;
     // private renderWhereSuffix(arg0: TypeParameterDescriptor[], arg1: StringBuilder): void;

@@ -7,9 +7,9 @@ import type { UniformUpdateFrequency } from '../../../../../../net/irisshaders/i
 import type { CachedUniform } from '../../../../../../net/irisshaders/iris/uniforms/custom/cached/CachedUniform.d.ts'
 export class IntCachedUniform extends CachedUniform {
     static forExpression(paramarg0: string, paramarg1: Type, paramarg2: Expression, paramarg3: FunctionContext): CachedUniform;
-    constructor(arg0: string, arg1: UniformUpdateFrequency, arg2: () => kotlin.Int)
+    constructor(arg0: string, arg1: UniformUpdateFrequency, arg2: () => number)
     // private cached: number;
-    // private supplier: () => kotlin.Int;
+    // private supplier: () => number;
     doUpdate(): boolean;
     getType(): Type;
     push(arg0: number): void;

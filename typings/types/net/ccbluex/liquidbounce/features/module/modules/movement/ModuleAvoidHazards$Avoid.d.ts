@@ -19,7 +19,7 @@ export class ModuleAvoidHazards$Avoid extends Enum<ModuleAvoidHazards$Avoid> imp
     static PRESSURE_PLATES: ModuleAvoidHazards$Avoid;
     static WITHER_ROSE: ModuleAvoidHazards$Avoid;
     static getEntries(): ModuleAvoidHazards$Avoid[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAvoidHazards$Avoid;

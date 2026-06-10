@@ -8,13 +8,13 @@ import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class BooleanIterators extends Object {
     static EMPTY_ITERATOR: BooleanIterators$EmptyIterator;
-    static all(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => kotlin.Boolean): boolean;
-    static any(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => kotlin.Boolean): boolean;
+    static all(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): boolean;
+    static any(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): boolean;
     static asBooleanIterator(paramarg0: Iterator<Object>): BooleanIterator;
     static asBooleanIterator(paramarg0: ListIterator<Object>): BooleanListIterator;
     static concat(paramarg0: (Object | null)[]): BooleanIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): BooleanIterator;
-    static indexOf(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => kotlin.Boolean): number;
+    static indexOf(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): number;
     static pour(paramarg0: BooleanIterator, paramarg1: (Object | null)[]): number;
     static pour(paramarg0: BooleanIterator, paramarg1: (Object | null)[], paramarg2: number): number;
     static pour(paramarg0: BooleanIterator): (Object | null)[];

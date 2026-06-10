@@ -10,5 +10,5 @@ export class JavaToKotlinClassMapper extends Object {
     isMutable(arg0: ClassDescriptor): boolean;
     isReadOnly(arg0: ClassDescriptor): boolean;
     mapJavaToKotlin(arg0: FqName, arg1: KotlinBuiltIns, arg2: number): ClassDescriptor;
-    mapPlatformClass(arg0: FqName, arg1: KotlinBuiltIns): E[];
+    mapPlatformClass(arg0: FqName, arg1: KotlinBuiltIns): ClassDescriptor[];
 }

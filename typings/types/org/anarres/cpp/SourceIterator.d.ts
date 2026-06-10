@@ -7,7 +7,7 @@ export class SourceIterator extends Object implements Iterator<Token> {
     // private source: Token[];
     // private tok: Token;
     // private advance(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Token) => void): void;
     hasNext(): boolean;
     next(): Token;
     remove(): void;

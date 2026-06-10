@@ -14,22 +14,22 @@ export class ObjectSpliterators extends Object {
     static SORTED_SET_SPLITERATOR_CHARACTERISTICS: number;
     static asIterator(paramarg0: ObjectSpliterator<Object>): ObjectIterator<Object>;
     static asObjectSpliterator(paramarg0: Spliterator<Object>): ObjectSpliterator<Object>;
-    static asObjectSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
+    static asObjectSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: Object) => boolean): ObjectSpliterator<Object>;
     static asSpliterator(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: number): ObjectSpliterator<Object>;
-    static asSpliteratorFromSorted(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
-    static asSpliteratorFromSortedUnknownSize(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
+    static asSpliteratorFromSorted(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: number, paramarg3: (param0: Object) => boolean): ObjectSpliterator<Object>;
+    static asSpliteratorFromSortedUnknownSize(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: (param0: Object) => boolean): ObjectSpliterator<Object>;
     static asSpliteratorUnknownSize(paramarg0: ObjectIterator<Object>, paramarg1: number): ObjectSpliterator<Object>;
     static concat(paramarg0: Object | null): ObjectSpliterator<Object>;
     static concat(paramarg0: Object | null, paramarg1: number, paramarg2: number): ObjectSpliterator<Object>;
     static emptySpliterator(): ObjectSpliterator<Object>;
-    static onEachMatching(paramarg0: Spliterator<Object>, paramarg1: (param0: Object | null) => kotlin.Boolean, paramarg2: (param0: Object | null) => void): void;
+    static onEachMatching(paramarg0: Spliterator<Object>, paramarg1: (param0: Object) => boolean, paramarg2: (param0: Object) => void): void;
     static singleton(paramarg0: Object | null): ObjectSpliterator<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
+    static singleton(paramarg0: Object | null, paramarg1: (param0: Object) => boolean): ObjectSpliterator<Object>;
     static wrap(paramarg0: Object | null): ObjectSpliterator<Object>;
     static wrap(paramarg0: Object | null, paramarg1: number, paramarg2: number): ObjectSpliterator<Object>;
     static wrap(paramarg0: Object | null, paramarg1: number, paramarg2: number, paramarg3: number): ObjectSpliterator<Object>;
-    static wrapPreSorted(paramarg0: Object | null, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
-    static wrapPreSorted(paramarg0: Object | null, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
-    static wrapPreSorted(paramarg0: Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): ObjectSpliterator<Object>;
+    static wrapPreSorted(paramarg0: Object | null, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: Object) => boolean): ObjectSpliterator<Object>;
+    static wrapPreSorted(paramarg0: Object | null, paramarg1: number, paramarg2: number, paramarg3: (param0: Object) => boolean): ObjectSpliterator<Object>;
+    static wrapPreSorted(paramarg0: Object | null, paramarg1: (param0: Object) => boolean): ObjectSpliterator<Object>;
     private constructor()
 }

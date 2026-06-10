@@ -37,7 +37,7 @@ export class RBBITableBuilder extends Object {
     printPosSets(n: RBBINode): void;
     printReverseTable(): void;
     printRuleStatusTable(): void;
-    printSet(s: E[]): void;
+    printSet(s: RBBINode[]): void;
     printStates(): void;
     removeColumn(column: number): void;
     removeDuplicateStates(): number;

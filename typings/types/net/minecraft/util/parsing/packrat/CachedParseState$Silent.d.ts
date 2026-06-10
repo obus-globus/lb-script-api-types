@@ -9,13 +9,13 @@ export class CachedParseState$Silent extends Object implements ParseState<S> {
     private constructor(null_: CachedParseState$Silent)
     // private silentCollector: ErrorCollector<S>;
     acquireControl(): Control;
-    errorCollector(): ErrorCollector<S>;
+    errorCollector<S extends Object | number | string | boolean>(): ErrorCollector<S>;
     input<S extends Object | number | string | boolean>(): S;
     mark(): number;
-    parse<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): T;
-    parseTopRule(rule: NamedRule<S, T>): Optional<T>;
+    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(rule: NamedRule<S, T>): T;
+    parseTopRule<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(rule: NamedRule<S, T>): Optional<T>;
     releaseControl(): void;
     restore(mark: number): void;
     scope(): Scope;
-    silent(): ParseState<S>;
+    silent<S extends Object | number | string | boolean>(): ParseState<S>;
 }

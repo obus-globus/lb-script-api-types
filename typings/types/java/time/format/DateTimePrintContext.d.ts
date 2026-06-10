@@ -15,7 +15,7 @@ export class DateTimePrintContext extends Object {
     getLocale(): Locale;
     getTemporal(): TemporalAccessor;
     getValue(arg0: TemporalField): number;
-    getValue<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    getValue<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     startOptional(): void;
     toString(): string;
 }

@@ -14,7 +14,7 @@ export class ByteArrayOutputStream extends AbstractByteArrayOutputStream<ByteArr
     size(): number;
     toByteArray(): number[];
     toInputStream(): InputStream;
-    toInputStream(arg0: (param0: T, param1: number[], param2: number) => unknown): InputStream;
+    toInputStream<T extends InputStream>(arg0: (param0: number[], param1: number, param2: number) => T): InputStream;
     write(arg0: InputStream): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;

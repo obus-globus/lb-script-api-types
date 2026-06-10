@@ -5,16 +5,16 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Filterable } from '../../../../../net/minecraft/server/network/Filterable.d.ts'
 export class WritableBookPredicate$PagePredicate extends Record implements Predicate<Filterable<string>> {
     static CODEC: Codec<WritableBookPredicate$PagePredicate>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(contents: string)
     // private contents: string;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: Filterable<string>) => boolean): (param0: Filterable<string>) => boolean;
     contents(): string;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: Filterable<string>) => boolean;
+    or(arg0: (param0: Filterable<string>) => boolean): (param0: Filterable<string>) => boolean;
     test(value: Filterable<string>): boolean;
     toString(): string;
 }

@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectIntMutablePair<K extends Object | number | string | boolean> extends Object implements ObjectIntPair<K>, Serializable {
-    static lexComparator(): (param0: Object | null) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: number): ObjectIntMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectIntPair<Object>;
     constructor(arg0: K, arg1: number)

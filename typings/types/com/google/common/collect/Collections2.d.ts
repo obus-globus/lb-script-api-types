@@ -3,10 +3,10 @@ import type { Predicate } from '../../../../com/google/common/base/Predicate.d.t
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Collections2 extends Object {
-    static filter(paramunfiltered: E[], parampredicate: (param0: Object | null) => kotlin.Boolean): E[];
-    static orderedPermutations(paramelements: (Object | null)[]): E[];
-    static orderedPermutations(paramelements: (Object | null)[], paramcomparator: (param0: Object | null) => kotlin.Boolean): E[];
-    static permutations(paramelements: E[]): E[];
-    static transform(paramfromCollection: E[], paramfunction: (param0: Object | null) => Object | null): E[];
+    static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object) => boolean): (Object | null)[];
+    static orderedPermutations(paramelements: (Object | null)[]): (Object | null)[][];
+    static orderedPermutations(paramelements: (Object | null)[], paramcomparator: (param0: Object) => boolean): (Object | null)[][];
+    static permutations(paramelements: (Object | null)[]): (Object | null)[][];
+    static transform(paramfromCollection: (Object | null)[], paramfunction: (param0: Object) => boolean): (Object | null)[];
     private constructor()
 }

@@ -38,7 +38,7 @@ export class ErrorPropertyDescriptor extends Object implements PropertyDescripto
     getModality(): Modality;
     getName(): Name;
     getOriginal(): PropertyDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): PropertyDescriptor[];
     getReturnType(): KotlinType;
     getSetter(): PropertySetterDescriptor;
     getSource(): SourceElement;
@@ -55,6 +55,6 @@ export class ErrorPropertyDescriptor extends Object implements PropertyDescripto
     isExternal(): boolean;
     isLateInit(): boolean;
     isVar(): boolean;
-    setOverriddenDescriptors(arg0: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
     substitute(arg0: TypeSubstitutor): PropertyDescriptor;
 }

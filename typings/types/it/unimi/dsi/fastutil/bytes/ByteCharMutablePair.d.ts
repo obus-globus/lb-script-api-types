@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteCharMutablePair extends Object implements ByteCharPair, Serializable {
-    static lexComparator(): (param0: ByteCharPair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: string): ByteCharMutablePair;
     static of(paramarg0: number, paramarg1: string): ByteCharPair;
     constructor(arg0: number, arg1: string)

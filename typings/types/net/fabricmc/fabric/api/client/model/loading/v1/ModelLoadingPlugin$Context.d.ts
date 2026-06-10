@@ -23,12 +23,12 @@ import type { ItemModel$Unbaked } from '../../../../../../../../net/minecraft/cl
 import type { UnbakedModel } from '../../../../../../../../net/minecraft/client/resources/model/UnbakedModel.d.ts'
 import type { Block } from '../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export interface ModelLoadingPlugin$Context extends Object {
-    addModel(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
-    modifyBlockModelAfterBake(): Event<(param0: BlockStateModel, param1: ModelModifier$AfterBakeBlock$Context) => net.minecraft.client.renderer.block.dispatch.BlockStateModel>;
-    modifyBlockModelBeforeBake(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$BeforeBakeBlock$Context) => net.minecraft.client.renderer.block.dispatch.BlockStateModel.UnbakedRoot>;
-    modifyBlockModelOnLoad(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$OnLoadBlock$Context) => net.minecraft.client.renderer.block.dispatch.BlockStateModel.UnbakedRoot>;
-    modifyItemModelAfterBake(): Event<(param0: ItemModel, param1: ModelModifier$AfterBakeItem$Context) => net.minecraft.client.renderer.item.ItemModel>;
-    modifyItemModelBeforeBake(): Event<(param0: ItemModel$Unbaked, param1: ModelModifier$BeforeBakeItem$Context) => net.minecraft.client.renderer.item.ItemModel.Unbaked>;
-    modifyModelOnLoad(): Event<(param0: UnbakedModel, param1: ModelModifier$OnLoad$Context) => net.minecraft.client.resources.model.UnbakedModel>;
+    addModel<T extends Object | number | string | boolean>(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
+    modifyBlockModelAfterBake(): Event<(param0: BlockStateModel, param1: ModelModifier$AfterBakeBlock$Context) => BlockStateModel>;
+    modifyBlockModelBeforeBake(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$BeforeBakeBlock$Context) => BlockStateModel$UnbakedRoot>;
+    modifyBlockModelOnLoad(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$OnLoadBlock$Context) => BlockStateModel$UnbakedRoot>;
+    modifyItemModelAfterBake(): Event<(param0: ItemModel, param1: ModelModifier$AfterBakeItem$Context) => ItemModel>;
+    modifyItemModelBeforeBake(): Event<(param0: ItemModel$Unbaked, param1: ModelModifier$BeforeBakeItem$Context) => ItemModel$Unbaked>;
+    modifyModelOnLoad(): Event<(param0: UnbakedModel, param1: ModelModifier$OnLoad$Context) => UnbakedModel>;
     registerBlockStateResolver(arg0: Block, arg1: (param0: BlockStateResolver$Context) => void): void;
 }

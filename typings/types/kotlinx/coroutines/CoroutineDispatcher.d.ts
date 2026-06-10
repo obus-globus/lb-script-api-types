@@ -15,7 +15,7 @@ export abstract class CoroutineDispatcher extends AbstractCoroutineContextElemen
     dispatch(context: CoroutineContext, block: () => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
-    interceptContinuation(continuation: Continuation<T>): Continuation<T>;
+    interceptContinuation<T extends Object | number | string | boolean>(continuation: Continuation<T>): Continuation<T>;
     isDispatchNeeded(context: CoroutineContext): boolean;
     limitedParallelism(parallelism: number): CoroutineDispatcher;
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;

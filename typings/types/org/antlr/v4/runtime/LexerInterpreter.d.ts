@@ -13,9 +13,9 @@ export class LexerInterpreter extends Lexer {
     static MIN_CHAR_VALUE: number;
     static MORE: number;
     static SKIP: number;
-    constructor(arg0: string, arg1: E[], arg2: E[], arg3: E[], arg4: ATN, arg5: CharStream)
-    constructor(arg0: string, arg1: Vocabulary, arg2: E[], arg3: E[], arg4: E[], arg5: ATN, arg6: CharStream)
-    constructor(arg0: string, arg1: Vocabulary, arg2: E[], arg3: E[], arg4: ATN, arg5: CharStream)
+    constructor(arg0: string, arg1: string[], arg2: string[], arg3: string[], arg4: ATN, arg5: CharStream)
+    constructor(arg0: string, arg1: Vocabulary, arg2: string[], arg3: string[], arg4: string[], arg5: ATN, arg6: CharStream)
+    constructor(arg0: string, arg1: Vocabulary, arg2: string[], arg3: string[], arg4: ATN, arg5: CharStream)
     // private _decisionToDFA: DFA[];
     // private _sharedContextCache: PredictionContextCache;
     // private atn: ATN;

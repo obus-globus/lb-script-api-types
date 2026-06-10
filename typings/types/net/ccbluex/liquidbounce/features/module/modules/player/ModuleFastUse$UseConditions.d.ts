@@ -9,7 +9,7 @@ export class ModuleFastUse$UseConditions extends Enum<ModuleFastUse$UseCondition
     static NOT_DURING_REGENERATION: ModuleFastUse$UseConditions;
     static NOT_IN_THE_AIR: ModuleFastUse$UseConditions;
     static getEntries(): ModuleFastUse$UseConditions[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFastUse$UseConditions;

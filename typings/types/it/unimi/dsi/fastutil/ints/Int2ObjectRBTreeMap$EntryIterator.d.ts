@@ -5,9 +5,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Int2ObjectRBTreeMap$EntryIterator extends Int2ObjectRBTreeMap$TreeIterator implements ObjectListIterator<Int2ObjectMap$Entry<V>> {
     constructor(null_: Int2ObjectRBTreeMap$EntryIterator)
     constructor(null_: Int2ObjectRBTreeMap$EntryIterator, arg1: number)
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Int2ObjectMap$Entry<V>;
-    previous(): Int2ObjectMap$Entry<V>;
+    add<V extends Object | number | string | boolean>(arg0: Int2ObjectMap$Entry<V>): void;
+    next<V extends Object | number | string | boolean>(): Int2ObjectMap$Entry<V>;
+    previous<V extends Object | number | string | boolean>(): Int2ObjectMap$Entry<V>;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<V extends Object | number | string | boolean>(arg0: Int2ObjectMap$Entry<V>): void;
 }

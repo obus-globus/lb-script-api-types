@@ -14,16 +14,16 @@ import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export interface ServerEntityGetter extends Object, EntityGetter {
     getEntities(except: Entity, bb: AABB): Entity[];
-    getEntitiesOfClass(baseClass: Class<T>, bb: AABB): T[];
-    getEntitiesOfClass(baseClass: Class<T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
+    getEntitiesOfClass<T extends Entity>(baseClass: Class<T>, bb: AABB): T[];
+    getEntitiesOfClass<T extends Entity>(baseClass: Class<T>, bb: AABB, selector: (param0: T) => boolean): T[];
     getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];
     getLevel(): ServerLevel;
-    getNearbyEntities(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): T[];
+    getNearbyEntities<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): T[];
     getNearbyPlayers(targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): Player[];
     getNearestEntity<T extends LivingEntity>(entities: T[], targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): T;
     getNearestEntity(tag: TagKey<EntityType<Object>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
-    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => kotlin.Boolean): Player;
+    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => boolean): Player;
     getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
     getNearestPlayer(source: Entity, maxDist: number): Player;
     getNearestPlayer(targetConditions: TargetingConditions, x: number, y: number, z: number): Player;

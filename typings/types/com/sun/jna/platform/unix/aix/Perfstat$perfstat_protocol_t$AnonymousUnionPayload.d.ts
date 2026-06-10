@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../../com/sun/jna/Structure.d.ts'
 import type { Union } from '../../../../../../com/sun/jna/Union.d.ts'
 import type { Perfstat$perfstat_protocol_t$AnonymousStructICMP } from '../../../../../../com/sun/jna/platform/unix/aix/Perfstat$perfstat_protocol_t$AnonymousStructICMP.d.ts'
 import type { Perfstat$perfstat_protocol_t$AnonymousStructICMPv6 } from '../../../../../../com/sun/jna/platform/unix/aix/Perfstat$perfstat_protocol_t$AnonymousStructICMPv6.d.ts'
@@ -24,8 +25,8 @@ export class Perfstat$perfstat_protocol_t$AnonymousUnionPayload extends Union {
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     icmp: Perfstat$perfstat_protocol_t$AnonymousStructICMP;
     icmpv6: Perfstat$perfstat_protocol_t$AnonymousStructICMPv6;

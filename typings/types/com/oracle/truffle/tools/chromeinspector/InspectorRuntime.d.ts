@@ -41,7 +41,7 @@ export class InspectorRuntime extends RuntimeDomain {
     notifyConsoleAPICalled(type: string, text: Object): void;
     // private putMapEntries(json: JSONObject, value: DebugValue, indexRange: RemoteObject$IndexRange, generatePreview: boolean, objectGroup: string): void;
     // private putMapEntry(json: JSONObject, entry: DebugValue, generatePreview: boolean, objectGroup: string): void;
-    // private putResultProperties(json: JSONObject, value: DebugValue, properties: E[], arrayElements: E[], generatePreview: boolean, objectGroup: string): void;
+    // private putResultProperties(json: JSONObject, value: DebugValue, properties: DebugValue[], arrayElements: DebugValue[], generatePreview: boolean, objectGroup: string): void;
     releaseObject(objectId: string): void;
     releaseObjectGroup(objectGroup: string): void;
     runIfWaitingForDebugger(postProcessor: InspectServerSession$CommandPostProcessor): void;

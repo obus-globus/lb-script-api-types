@@ -3,6 +3,7 @@ import type { ShortComparator } from '../../../../../it/unimi/dsi/fastutil/short
 import type { ShortConsumer } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortConsumer.d.ts'
 import type { ShortSpliterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ShortOpenHashMap$ValueSpliterator extends Object2ShortOpenHashMap$MapSpliterator<Object, Object> implements ShortSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
@@ -17,8 +18,8 @@ export class Object2ShortOpenHashMap$ValueSpliterator extends Object2ShortOpenHa
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
-    makeForSplit(arg0: number, arg1: number, arg2: boolean): Object2ShortOpenHashMap$ValueSpliterator;
+    getComparator(): (param0: number, param1: number) => number;
+    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Object2ShortOpenHashMap$ValueSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

@@ -7,7 +7,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface ScheduledExecutorService extends ExecutorService, Object {
     close(): void;
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ScheduledFuture<Object>;
-    schedule(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
+    schedule<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
     scheduleWithFixedDelay(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
 }

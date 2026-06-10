@@ -8,7 +8,7 @@ export interface ContainerComponentManipulator<T extends Object | number | strin
     empty(): T;
     getContents(component: T): Stream<ItemStack>;
     getSlots(itemStack: ItemStack): SlotCollection;
-    modifyItems(itemStack: ItemStack, modifier: (param0: ItemStack) => unknown): void;
+    modifyItems(itemStack: ItemStack, modifier: (param0: ItemStack) => Object | null): void;
     setContents(component: T, newContents: Stream<ItemStack>): T;
     setContents(itemStack: ItemStack, defaultValue: T, newContents: Stream<ItemStack>): void;
     setContents(itemStack: ItemStack, newContents: Stream<ItemStack>): void;

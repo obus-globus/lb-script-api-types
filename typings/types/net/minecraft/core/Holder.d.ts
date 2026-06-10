@@ -14,7 +14,7 @@ export interface Holder<T extends Object | number | string | boolean> extends Ob
     canSerializeIn(registry: HolderOwner<T>): boolean;
     components(): TypedDataComponent<Object>[];
     getRegisteredName(): string;
-    is(predicate: (param0: ResourceKey<T>) => kotlin.Boolean): boolean;
+    is(predicate: (param0: ResourceKey<T>) => boolean): boolean;
     is(holder: Holder<T>): boolean;
     is(key: Identifier): boolean;
     is(key: ResourceKey<T>): boolean;

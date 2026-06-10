@@ -8,7 +8,7 @@ export class ModuleElytraFly$Instant extends Enum<ModuleElytraFly$Instant> imple
     static START: ModuleElytraFly$Instant;
     static STOP: ModuleElytraFly$Instant;
     static getEntries(): ModuleElytraFly$Instant[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleElytraFly$Instant;

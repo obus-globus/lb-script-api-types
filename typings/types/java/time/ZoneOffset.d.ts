@@ -44,7 +44,7 @@ export class ZoneOffset extends ZoneId implements Serializable, TemporalAccessor
     hashCode(): number;
     isSupported(arg0: TemporalField): boolean;
     normalized(): ZoneId;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toString(): string;

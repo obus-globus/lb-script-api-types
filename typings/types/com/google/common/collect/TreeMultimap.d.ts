@@ -7,19 +7,19 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TreeMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractSortedKeySortedSetMultimap<K, V> {
     static create(): TreeMultimap<Object, Object>;
     static create(parammultimap: Multimap<Object, Object>): TreeMultimap<Object, Object>;
-    static create(paramkeyComparator: (param0: Object | null) => kotlin.Boolean, paramvalueComparator: (param0: Object | null) => kotlin.Boolean): TreeMultimap<Object, Object>;
-    constructor(keyComparator: (param0: K) => kotlin.Boolean, valueComparator: (param0: V) => kotlin.Boolean)
-    private constructor(keyComparator: (param0: K) => kotlin.Boolean, valueComparator: (param0: V) => kotlin.Boolean, multimap: Multimap<K, V>)
-    // private keyComparator: (param0: K) => kotlin.Boolean;
-    // private valueComparator: (param0: V) => kotlin.Boolean;
-    asMap(): Map<K, E[]>;
-    createAsMap(): Map<K, E[]>;
+    static create(paramkeyComparator: (param0: Object) => boolean, paramvalueComparator: (param0: Object) => boolean): TreeMultimap<Object, Object>;
+    constructor(keyComparator: (param0: Object) => boolean, valueComparator: (param0: Object) => boolean)
+    private constructor(keyComparator: (param0: Object) => boolean, valueComparator: (param0: Object) => boolean, multimap: Multimap<K, V>)
+    // private keyComparator: (param0: Object) => boolean;
+    // private valueComparator: (param0: Object) => boolean;
+    asMap(): Map<K, V[]>;
+    createAsMap(): Map<K, V[]>;
     createCollection(): V[];
-    createCollection(key: K): E[];
+    createCollection(key: K): V[];
     get(key: K): V[];
-    keyComparator(): (param0: K) => kotlin.Boolean;
+    keyComparator(): (param0: Object) => boolean;
     keySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
-    valueComparator(): (param0: V) => kotlin.Boolean;
+    valueComparator(): (param0: Object) => boolean;
     // private writeObject(stream: ObjectOutputStream): void;
 }

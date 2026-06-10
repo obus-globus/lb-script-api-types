@@ -9,7 +9,7 @@ export class BiomeDevice extends Object {
     // private restrictions: Restriction[];
     // private version: MCVersion;
     add(arg0: Restriction): BiomeDevice;
-    add(arg0: (param0: MCVersion, param1: number, param2: number) => unknown, arg1: number, arg2: number): BiomeDevice;
+    add(arg0: (param0: MCVersion, param1: number, param2: number) => Restriction | null, arg1: number, arg2: number): BiomeDevice;
     findSeeds(arg0: (param0: number) => void): void;
     // private groupRestrictions(): BiomeDevice$BitGroup[];
     search(arg0: BiomeDevice$BitGroup, arg1: number, arg2: number, arg3: (param0: number) => void): void;

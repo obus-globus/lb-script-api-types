@@ -11,7 +11,7 @@ export class ReflectionHelper$RecordSupportedHelper extends ReflectionHelper$Rec
     // private getType: Method;
     // private isRecord: Method;
     getAccessor(arg0: Class<Object>, arg1: Field): Method;
-    getCanonicalRecordConstructor(arg0: Class<T>): Constructor<T>;
+    getCanonicalRecordConstructor<T extends Object | number | string | boolean>(arg0: Class<T>): Constructor<T>;
     getRecordComponentNames(arg0: Class<Object>): string[];
     isRecord(arg0: Class<Object>): boolean;
 }

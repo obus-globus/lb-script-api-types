@@ -9,7 +9,7 @@ export class ServiceLoaderIterator<E extends Object | number | string | boolean>
     // private nextServiceLoader: E;
     // private service: Class<E>;
     // private serviceLoaderIterator: Iterator<E>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
     remove(): void;

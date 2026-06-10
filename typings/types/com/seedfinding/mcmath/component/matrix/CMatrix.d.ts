@@ -11,9 +11,9 @@ export class CMatrix extends Object {
     static zero(paramarg0: number, paramarg1: number): CMatrix;
     constructor(arg0: CVector[])
     constructor(arg0: Complex[][])
-    constructor(arg0: number, arg1: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Complex)
+    constructor(arg0: number, arg1: (param0: number, param1: number) => Complex)
     constructor(arg0: number, arg1: number)
-    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Complex)
+    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Complex)
     // private elements: Complex[][];
     add(arg0: CMatrix): CMatrix;
     addAndSet(arg0: CMatrix): CMatrix;
@@ -34,12 +34,12 @@ export class CMatrix extends Object {
     getRowsCopy(): CVector[];
     hashCode(): number;
     isSquare(): boolean;
-    map(arg0: (param0: number, param1: number, param2: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CMatrix;
-    mapAndSet(arg0: (param0: number, param1: number, param2: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CMatrix;
-    mapColumn(arg0: number, arg1: (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CMatrix;
-    mapColumnAndSet(arg0: number, arg1: (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CMatrix;
-    mapRow(arg0: number, arg1: (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CMatrix;
-    mapRowAndSet(arg0: number, arg1: (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex): CMatrix;
+    map(arg0: (param0: number, param1: number, param2: Complex) => Complex): CMatrix;
+    mapAndSet(arg0: (param0: number, param1: number, param2: Complex) => Complex): CMatrix;
+    mapColumn(arg0: number, arg1: (param0: number, param1: Complex) => Complex): CMatrix;
+    mapColumnAndSet(arg0: number, arg1: (param0: number, param1: Complex) => Complex): CMatrix;
+    mapRow(arg0: number, arg1: (param0: number, param1: Complex) => Complex): CMatrix;
+    mapRowAndSet(arg0: number, arg1: (param0: number, param1: Complex) => Complex): CMatrix;
     mergeToAugmented(arg0: CMatrix): CMatrix$Augmented;
     multiply(arg0: Complex): CMatrix;
     multiply(arg0: CMatrix): CMatrix;
@@ -61,8 +61,8 @@ export class CMatrix extends Object {
     swapColumnsAndSet(arg0: number, arg1: number): CMatrix;
     swapRows(arg0: number, arg1: number): CMatrix;
     swapRowsAndSet(arg0: number, arg1: number): CMatrix;
-    toGenerator(): (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Complex;
-    toMapper(): (param0: number, param1: number, param2: Complex) => com.seedfinding.mcmath.arithmetic.Complex;
+    toGenerator(): (param0: number, param1: number) => Complex;
+    toMapper(): (param0: number, param1: number, param2: Complex) => Complex;
     toString(): string;
     transpose(): CMatrix;
     transposeAndSet(): CMatrix;

@@ -5,8 +5,8 @@ import type { LevelChunkSection } from '../../../../../../../net/minecraft/world
 import type { Palette } from '../../../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
 import type { PalettedContainer$CountConsumer } from '../../../../../../../net/minecraft/world/level/chunk/PalettedContainer$CountConsumer.d.ts'
 export class RandomTickingSectionDataHelper$LithiumBlockCounter extends Object implements PalettedContainer$CountConsumer<BlockState> {
-    constructor(arg0: number[], arg1: (param0: BlockState, param1: Object | null) => void)
-    // private delegate: (param0: BlockState, param1: Object | null) => void;
+    constructor(arg0: number[], arg1: (param0: BlockState, param1: number) => void)
+    // private delegate: (param0: BlockState, param1: number) => void;
     // private lastRandomTickableBlockCountTotal: number;
     // private minisectionIndex: number;
     // private randomTickData: number[];

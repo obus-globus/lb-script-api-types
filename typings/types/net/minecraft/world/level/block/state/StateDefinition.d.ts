@@ -13,7 +13,7 @@ export class StateDefinition<O extends Object | number | string | boolean, S ext
     any(): S;
     getOwner(): O;
     getPossibleStates(): S[];
-    getProperties(): E[];
+    getProperties(): Property<Object>[];
     getProperty(name: string): Property<Object>;
     isSingletonState(): boolean;
     propertiesCodec(): MapCodec<S>;

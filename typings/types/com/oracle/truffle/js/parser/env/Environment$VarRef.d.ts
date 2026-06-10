@@ -8,7 +8,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class Environment$VarRef extends Object {
     constructor(name: Object)
     readonly name: Object;
-    createCompoundAssignNode(): Pair<() => JavaScriptNode, (param0: JavaScriptNode) => unknown>;
+    createCompoundAssignNode(): Pair<() => JavaScriptNode, (param0: JavaScriptNode) => Object | null>;
     createDeleteNode(): JavaScriptNode;
     createReadNode(): JavaScriptNode;
     createWriteNode(rhs: JavaScriptNode): JavaScriptNode;

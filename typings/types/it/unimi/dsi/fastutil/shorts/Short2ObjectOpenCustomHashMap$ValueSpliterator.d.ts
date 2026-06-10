@@ -1,6 +1,7 @@
 import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Short2ObjectOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectOpenCustomHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ObjectOpenCustomHashMap$ValueSpliterator extends Short2ObjectOpenCustomHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<V> {
     static CONCURRENT: number;
     static DISTINCT: number;
@@ -12,8 +13,8 @@ export class Short2ObjectOpenCustomHashMap$ValueSpliterator extends Short2Object
     static SUBSIZED: number;
     constructor(null_: Short2ObjectOpenCustomHashMap$ValueSpliterator)
     constructor(null_: Short2ObjectOpenCustomHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex(arg0: (param0: V) => void, arg1: number): void;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: V) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit(arg0: number, arg1: number, arg2: boolean): Short2ObjectOpenCustomHashMap$ValueSpliterator;
+    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Short2ObjectOpenCustomHashMap$ValueSpliterator;
     skip(arg0: number): number;
 }

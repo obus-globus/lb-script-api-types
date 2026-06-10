@@ -22,7 +22,7 @@ export class ObjectSpliterators$SpliteratorConcatenator<K extends Object | numbe
     // private computeCharacteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: K) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     // private recomputeRemaining(): number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;

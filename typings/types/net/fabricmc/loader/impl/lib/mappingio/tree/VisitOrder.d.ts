@@ -8,18 +8,18 @@ import type { MappingTreeView$MethodVarMappingView } from '../../../../../../../
 export class VisitOrder extends Object {
     static createByInputOrder(): VisitOrder;
     private constructor()
-    // private classComparator: (param0: MappingTreeView$ClassMappingView) => kotlin.Boolean;
-    // private fieldComparator: (param0: MappingTreeView$FieldMappingView) => kotlin.Boolean;
-    // private methodArgComparator: (param0: MappingTreeView$MethodArgMappingView) => kotlin.Boolean;
-    // private methodComparator: (param0: MappingTreeView$MethodMappingView) => kotlin.Boolean;
-    // private methodVarComparator: (param0: MappingTreeView$MethodVarMappingView) => kotlin.Boolean;
+    // private classComparator: (param0: Object) => boolean;
+    // private fieldComparator: (param0: Object) => boolean;
+    // private methodArgComparator: (param0: Object) => boolean;
+    // private methodComparator: (param0: Object) => boolean;
+    // private methodVarComparator: (param0: Object) => boolean;
     readonly methodVarsFirst: boolean;
     readonly methodsFirst: boolean;
     isMethodVarsFirst(): boolean;
     isMethodsFirst(): boolean;
-    sortClasses(arg0: E[]): E[];
-    sortFields(arg0: E[]): E[];
-    sortMethodArgs(arg0: E[]): E[];
-    sortMethodVars(arg0: E[]): E[];
-    sortMethods(arg0: E[]): E[];
+    sortClasses<T extends MappingTreeView$ClassMappingView>(arg0: T[]): T[];
+    sortFields<T extends MappingTreeView$FieldMappingView>(arg0: T[]): T[];
+    sortMethodArgs<T extends MappingTreeView$MethodArgMappingView>(arg0: T[]): T[];
+    sortMethodVars<T extends MappingTreeView$MethodVarMappingView>(arg0: T[]): T[];
+    sortMethods<T extends MappingTreeView$MethodMappingView>(arg0: T[]): T[];
 }

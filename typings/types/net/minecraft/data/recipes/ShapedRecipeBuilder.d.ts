@@ -22,7 +22,7 @@ export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Object>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
     static shaped(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike): ShapedRecipeBuilder;
     static shaped(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike, paramcount: number): ShapedRecipeBuilder;
     private constructor(items: HolderGetter<Item>, category: RecipeCategory, result: ItemStackTemplate)

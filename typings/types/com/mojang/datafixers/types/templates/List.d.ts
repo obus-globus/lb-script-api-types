@@ -13,14 +13,14 @@ export class List extends Record implements TypeTemplate {
     constructor(element: TypeTemplate)
     // private element: TypeTemplate;
     apply(arg0: TypeFamily): TypeFamily;
-    applyO(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
-    // private cap(arg0: TypedOptic<S, T, A, B>): TypedOptic<Object, Object, A, B>;
-    // private cap(arg0: Type<Object>, arg1: RewriteResult<E, Object>): RewriteResult<Object, Object>;
+    applyO<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
+    // private cap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, S extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: TypedOptic<S, T, A, B>): TypedOptic<Object, Object, A, B>;
+    // private cap<E extends Object | number | string | boolean>(arg0: Type<Object>, arg1: RewriteResult<E, Object>): RewriteResult<Object, Object>;
     element(): TypeTemplate;
     equals(arg0: Object | null): boolean;
-    findFieldOrType(arg0: number, arg1: string, arg2: Type<FT>, arg3: Type<FR>): Either<TypeTemplate, Type$FieldNotFoundException>;
+    findFieldOrType<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: number, arg1: string, arg2: Type<FT>, arg3: Type<FR>): Either<TypeTemplate, Type$FieldNotFoundException>;
     hashCode(): number;
-    hmap(arg0: TypeFamily, arg1: (param0: RewriteResult<Object, Object>) => unknown): (param0: RewriteResult<Object, Object>) => unknown;
+    hmap(arg0: TypeFamily, arg1: (param0: number) => RewriteResult<Object, Object>): (param0: number) => RewriteResult<Object, Object>;
     size(): number;
     toSimpleType(): Type<Object>;
     toString(): string;

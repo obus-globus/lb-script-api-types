@@ -1,5 +1,5 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Callback$Descriptor } from '../../../../org/lwjgl/system/Callback$Descriptor.d.ts'
+import type { CallbackI } from '../../../../org/lwjgl/system/CallbackI.d.ts'
 import type { FT_DebugHook_Func } from '../../../../org/lwjgl/util/freetype/FT_DebugHook_Func.d.ts'
 import type { FT_DebugHook_FuncI } from '../../../../org/lwjgl/util/freetype/FT_DebugHook_FuncI.d.ts'
 export class FT_DebugHook_Func$Container extends FT_DebugHook_Func {
@@ -11,12 +11,12 @@ export class FT_DebugHook_Func$Container extends FT_DebugHook_Func {
     static POINTER_SHIFT: number;
     static POINTER_SIZE: number;
     static create(paramarg0: number): FT_DebugHook_Func;
-    static create(paramarg0: (param0: number) => kotlin.Int): FT_DebugHook_Func;
+    static create(paramarg0: (param0: number) => number): FT_DebugHook_Func;
     static createSafe(paramarg0: number): FT_DebugHook_Func;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): Object | null;
-    static getSafe(paramarg0: number): Object | null;
-    constructor(arg0: number, arg1: (param0: number) => kotlin.Int)
-    // private delegate: (param0: number) => kotlin.Int;
+    static get(paramarg0: number): CallbackI | null;
+    static getSafe(paramarg0: number): CallbackI | null;
+    constructor(arg0: number, arg1: (param0: number) => number)
+    // private delegate: (param0: number) => number;
     invoke(arg0: number): number;
 }

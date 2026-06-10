@@ -9,7 +9,7 @@ export class JsonStreamParser extends Object implements Iterator<JsonElement> {
     constructor(arg0: string)
     // private lock: Object;
     // private parser: JsonReader;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: JsonElement) => void): void;
     hasNext(): boolean;
     next(): JsonElement;
     remove(): void;

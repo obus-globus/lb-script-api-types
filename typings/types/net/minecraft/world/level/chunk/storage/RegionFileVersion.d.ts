@@ -13,11 +13,11 @@ export class RegionFileVersion extends Object {
     static fromId(paramid: number): RegionFileVersion;
     static getSelected(): RegionFileVersion;
     static isValidVersion(paramversion: number): boolean;
-    private constructor(id: number, optionName: string, inputWrapper: (param0: InputStream) => unknown, outputWrapper: (param0: OutputStream) => unknown)
+    private constructor(id: number, optionName: string, inputWrapper: (param0: InputStream) => InputStream, outputWrapper: (param0: OutputStream) => OutputStream)
     readonly id: number;
-    // private inputWrapper: (param0: InputStream) => unknown;
+    // private inputWrapper: (param0: InputStream) => InputStream;
     // private optionName: string;
-    // private outputWrapper: (param0: OutputStream) => unknown;
+    // private outputWrapper: (param0: OutputStream) => OutputStream;
     getId(): number;
     wrap(is: InputStream): InputStream;
     wrap(is: OutputStream): OutputStream;

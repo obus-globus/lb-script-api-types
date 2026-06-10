@@ -11,6 +11,6 @@ export class TextureUtil extends Object {
     static getDebugTexturePath(paramroot: Path[][]): Path[][];
     static readResource(paraminputStream: InputStream): ByteBuffer;
     static solidify(paramimage: NativeImage): void;
-    static writeAsPNG(paramdir: Path[][], paramprefix: string, paramtexture: GpuTexture, parammaxMipLevel: number, parampixelModifier: (param0: number) => kotlin.Int): void;
+    static writeAsPNG(paramdir: Path[][], paramprefix: string, paramtexture: GpuTexture, parammaxMipLevel: number, parampixelModifier: (param0: number) => number): void;
     constructor()
 }

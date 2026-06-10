@@ -6,7 +6,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SemanticSegmentationTranslator extends BaseImageTranslator<CategoryMask> {
     static builder(): SemanticSegmentationTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): SemanticSegmentationTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): SemanticSegmentationTranslator$Builder;
     constructor(arg0: SemanticSegmentationTranslator$Builder)
     // private classes: string[];
     // private synsetLoader: BaseImageTranslator$SynsetLoader;

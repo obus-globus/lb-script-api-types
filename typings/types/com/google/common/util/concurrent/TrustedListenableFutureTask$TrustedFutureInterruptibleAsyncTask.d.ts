@@ -1,13 +1,14 @@
 import type { AsyncCallable } from '../../../../../com/google/common/util/concurrent/AsyncCallable.d.ts'
 import type { InterruptibleTask } from '../../../../../com/google/common/util/concurrent/InterruptibleTask.d.ts'
 import type { ListenableFuture } from '../../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask extends InterruptibleTask<ListenableFuture<V>> {
     constructor(null_: TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask)
-    // private callable: () => V;
+    // private callable: () => ListenableFuture<V>;
     afterRanInterruptiblyFailure(error: Throwable): void;
-    afterRanInterruptiblySuccess(result: ListenableFuture<V>): void;
+    afterRanInterruptiblySuccess<V extends Object | number | string | boolean>(result: ListenableFuture<V>): void;
     isDone(): boolean;
-    runInterruptibly(): ListenableFuture<V>;
+    runInterruptibly<V extends Object | number | string | boolean>(): ListenableFuture<V>;
     toPendingString(): string;
 }

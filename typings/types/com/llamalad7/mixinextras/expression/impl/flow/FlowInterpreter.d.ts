@@ -9,7 +9,7 @@ import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/Method
 import type { VarInsnNode } from '../../../../../../org/objectweb/asm/tree/VarInsnNode.d.ts'
 import type { Interpreter } from '../../../../../../org/objectweb/asm/tree/analysis/Interpreter.d.ts'
 export class FlowInterpreter extends Interpreter<FlowValue> {
-    static analyze(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: FlowContext): E[];
+    static analyze(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: FlowContext): FlowValue[];
     constructor(arg0: ClassNode, arg1: MethodNode, arg2: FlowContext)
     // private cache: Map<AbstractInsnNode, FlowValue>;
     // private context: FlowContext;
@@ -17,7 +17,7 @@ export class FlowInterpreter extends Interpreter<FlowValue> {
     // private postProcessors: FlowPostProcessor[];
     binaryOperation(arg0: AbstractInsnNode, arg1: FlowValue, arg2: FlowValue): FlowValue;
     copyOperation(arg0: AbstractInsnNode, arg1: FlowValue): FlowValue;
-    finish(): E[];
+    finish(): FlowValue[];
     merge(arg0: FlowValue, arg1: FlowValue): FlowValue;
     naryOperation(arg0: AbstractInsnNode, arg1: FlowValue[]): FlowValue;
     newOperation(arg0: AbstractInsnNode): FlowValue;

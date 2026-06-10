@@ -26,15 +26,15 @@ export class PayloadTypeRegistryImpl<B extends FriendlyByteBuf> extends Object i
     // private maxPacketSizes: Object2IntMap<Identifier>;
     // private minimalSplittableSize: number;
     // private packetTypes: Map<Identifier, CustomPacketPayload$TypeAndCodec<B, CustomPacketPayload>>;
-    // private pendingMaxPacketSizes: Map<Identifier, () => kotlin.Int>;
+    // private pendingMaxPacketSizes: Map<Identifier, () => number>;
     readonly protocol: ConnectionProtocol;
-    get(arg0: CustomPacketPayload$Type<T>): CustomPacketPayload$TypeAndCodec<B, T>;
+    get<T extends CustomPacketPayload>(arg0: CustomPacketPayload$Type<T>): CustomPacketPayload$TypeAndCodec<B, T>;
     get(arg0: Identifier): CustomPacketPayload$TypeAndCodec<B, CustomPacketPayload>;
     getFlow(): PacketFlow;
     getMaxPacketSizeForSplitting(arg0: Identifier): number;
     getProtocol(): ConnectionProtocol;
     // private padAndSetMaxPacketSize(arg0: Identifier, arg1: number): void;
-    register(arg0: CustomPacketPayload$Type<T>, arg1: StreamCodec<B, T>): CustomPacketPayload$TypeAndCodec<B, T>;
-    registerLarge(arg0: CustomPacketPayload$Type<T>, arg1: StreamCodec<B, T>, arg2: () => kotlin.Int): CustomPacketPayload$TypeAndCodec<B, T>;
-    registerLarge(arg0: CustomPacketPayload$Type<T>, arg1: StreamCodec<B, T>, arg2: number): CustomPacketPayload$TypeAndCodec<B, T>;
+    register<T extends CustomPacketPayload>(arg0: CustomPacketPayload$Type<T>, arg1: StreamCodec<B, T>): CustomPacketPayload$TypeAndCodec<B, T>;
+    registerLarge<T extends CustomPacketPayload>(arg0: CustomPacketPayload$Type<T>, arg1: StreamCodec<B, T>, arg2: () => number): CustomPacketPayload$TypeAndCodec<B, T>;
+    registerLarge<T extends CustomPacketPayload>(arg0: CustomPacketPayload$Type<T>, arg1: StreamCodec<B, T>, arg2: number): CustomPacketPayload$TypeAndCodec<B, T>;
 }

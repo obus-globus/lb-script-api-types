@@ -13,7 +13,7 @@ export class PointFreeRule$CataFuseDifferent extends Enum<PointFreeRule$CataFuse
     static values(): (Object | null)[];
     private constructor()
     doRewrite(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): Optional<PointFree<(param0: Object | null) => Object | null>>;
-    rewrite(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
     // private rewrite(arg0: PointFree<(param0: Object | null) => Object | null>[]): Optional<PointFree<(param0: Object | null) => Object | null>[]>;
     name(): "INSTANCE";
 }

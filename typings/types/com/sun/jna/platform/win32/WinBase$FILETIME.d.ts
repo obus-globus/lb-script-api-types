@@ -18,8 +18,8 @@ export class WinBase$FILETIME extends Structure {
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static dateToFileTime(paramarg0: Date): number;
     static filetimeToDate(paramarg0: number, paramarg1: number): Date;
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     constructor(arg0: Pointer)
     constructor(arg0: WinNT$LARGE_INTEGER)

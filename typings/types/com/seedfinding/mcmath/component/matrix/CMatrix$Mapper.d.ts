@@ -3,8 +3,8 @@ import type { CMatrix$Generator } from '../../../../../com/seedfinding/mcmath/co
 import type { CVector$Mapper } from '../../../../../com/seedfinding/mcmath/component/vector/CVector$Mapper.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CMatrix$Mapper extends Object {
-    asGenerator(): (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Complex;
-    forColumn(arg0: number): (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex;
-    forRow(arg0: number): (param0: number, param1: Complex) => com.seedfinding.mcmath.arithmetic.Complex;
+    asGenerator(): (param0: number, param1: number) => Complex;
+    forColumn(arg0: number): (param0: number, param1: Complex) => Complex;
+    forRow(arg0: number): (param0: number, param1: Complex) => Complex;
     getNewValue(arg0: number, arg1: number, arg2: Complex): Complex;
 }

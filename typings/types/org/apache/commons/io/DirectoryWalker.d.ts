@@ -5,21 +5,21 @@ import type { DirectoryWalker$CancelException } from '../../../../org/apache/com
 import type { IOFileFilter } from '../../../../org/apache/commons/io/filefilter/IOFileFilter.d.ts'
 export abstract class DirectoryWalker<T extends Object | number | string | boolean> extends Object {
     constructor()
-    constructor(arg0: (param0: File) => kotlin.Boolean, arg1: number)
+    constructor(arg0: (param0: File) => boolean, arg1: number)
     constructor(arg0: IOFileFilter, arg1: IOFileFilter, arg2: number)
     // private depthLimit: number;
-    // private filter: (param0: File) => kotlin.Boolean;
-    checkIfCancelled(arg0: File, arg1: number, arg2: E[]): void;
+    // private filter: (param0: File) => boolean;
+    checkIfCancelled(arg0: File, arg1: number, arg2: T[]): void;
     filterDirectoryContents(arg0: File, arg1: number, arg2: File[]): File[];
-    handleCancelled(arg0: File, arg1: E[], arg2: DirectoryWalker$CancelException): void;
-    handleDirectory(arg0: File, arg1: number, arg2: E[]): boolean;
-    handleDirectoryEnd(arg0: File, arg1: number, arg2: E[]): void;
-    handleDirectoryStart(arg0: File, arg1: number, arg2: E[]): void;
-    handleEnd(arg0: E[]): void;
-    handleFile(arg0: File, arg1: number, arg2: E[]): void;
-    handleIsCancelled(arg0: File, arg1: number, arg2: E[]): boolean;
-    handleRestricted(arg0: File, arg1: number, arg2: E[]): void;
-    handleStart(arg0: File, arg1: E[]): void;
-    // private walk(arg0: File, arg1: number, arg2: E[]): void;
-    walk(arg0: File, arg1: E[]): void;
+    handleCancelled(arg0: File, arg1: T[], arg2: DirectoryWalker$CancelException): void;
+    handleDirectory(arg0: File, arg1: number, arg2: T[]): boolean;
+    handleDirectoryEnd(arg0: File, arg1: number, arg2: T[]): void;
+    handleDirectoryStart(arg0: File, arg1: number, arg2: T[]): void;
+    handleEnd(arg0: T[]): void;
+    handleFile(arg0: File, arg1: number, arg2: T[]): void;
+    handleIsCancelled(arg0: File, arg1: number, arg2: T[]): boolean;
+    handleRestricted(arg0: File, arg1: number, arg2: T[]): void;
+    handleStart(arg0: File, arg1: T[]): void;
+    // private walk(arg0: File, arg1: number, arg2: T[]): void;
+    walk(arg0: File, arg1: T[]): void;
 }

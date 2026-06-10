@@ -2,10 +2,10 @@ import type { ValueUpdateNotifier } from '../../../../../net/irisshaders/iris/gl
 import type { FloatSupplier } from '../../../../../net/irisshaders/iris/gl/uniform/FloatSupplier.d.ts'
 import type { Uniform } from '../../../../../net/irisshaders/iris/gl/uniform/Uniform.d.ts'
 export class FloatUniform extends Uniform {
-    constructor(arg0: number, arg1: () => kotlin.Float)
-    constructor(arg0: number, arg1: () => kotlin.Float, arg2: ValueUpdateNotifier)
+    constructor(arg0: number, arg1: () => number)
+    constructor(arg0: number, arg1: () => number, arg2: ValueUpdateNotifier)
     // private cachedValue: number;
-    // private value: () => kotlin.Float;
+    // private value: () => number;
     update(): void;
     // private updateValue(): void;
 }

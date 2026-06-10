@@ -31,7 +31,7 @@ export class SourceSectionFilter$Builder extends Object {
     lineNotIn(ranges: SourceSectionFilter$IndexRange[]): SourceSectionFilter$Builder;
     lineStartsIn(ranges: SourceSectionFilter$IndexRange[]): SourceSectionFilter$Builder;
     mimeTypeIs(mimeTypes: string[]): SourceSectionFilter$Builder;
-    rootNameIs(predicate: (param0: string) => kotlin.Boolean): SourceSectionFilter$Builder;
+    rootNameIs(predicate: (param0: string) => boolean): SourceSectionFilter$Builder;
     rootSourceSectionEquals(section: SourceSection[]): SourceSectionFilter$Builder;
     sourceFilter(sourceFilter: SourceFilter): SourceSectionFilter$Builder;
     sourceIs(predicate: SourceSectionFilter$SourcePredicate): SourceSectionFilter$Builder;

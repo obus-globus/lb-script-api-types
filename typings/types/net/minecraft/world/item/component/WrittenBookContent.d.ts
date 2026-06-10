@@ -19,12 +19,12 @@ export class WrittenBookContent extends Record implements BookContent<Component,
     static CONTENT_CODEC: Codec<Component>;
     static EMPTY: WrittenBookContent;
     static MAX_GENERATION: number;
-    static PAGES_CODEC: Codec<Object>;
+    static PAGES_CODEC: Codec<Filterable<Component>[]>;
     static PAGE_LENGTH: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, WrittenBookContent>;
     static TITLE_LENGTH: number;
     static TITLE_MAX_LENGTH: number;
-    static pagesCodec(paramcontentCodec: Codec<Component>): Codec<Object>;
+    static pagesCodec(paramcontentCodec: Codec<Component>): Codec<Filterable<Component>[]>;
     static resolveForItem(paramitemStack: ItemStack, paramcontext: ResolutionContext, paramregistries: HolderLookup$Provider): boolean;
     // private author: string;
     // private generation: number;

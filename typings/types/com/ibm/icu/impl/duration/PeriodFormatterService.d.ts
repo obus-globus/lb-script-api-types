@@ -3,7 +3,7 @@ import type { PeriodBuilderFactory } from '../../../../../com/ibm/icu/impl/durat
 import type { PeriodFormatterFactory } from '../../../../../com/ibm/icu/impl/duration/PeriodFormatterFactory.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface PeriodFormatterService extends Object{
-    getAvailableLocaleNames(): E[];
+    getAvailableLocaleNames(): string[];
     newDurationFormatterFactory(): DurationFormatterFactory;
     newPeriodBuilderFactory(): PeriodBuilderFactory;
     newPeriodFormatterFactory(): PeriodFormatterFactory;

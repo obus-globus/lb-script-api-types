@@ -15,15 +15,15 @@ import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/cra
 import type { ItemLike } from '../../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class CustomIngredientImpl extends Ingredient {
     static CODEC: Codec<Ingredient>;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<CustomIngredientSerializer<Object>>;
     static CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Ingredient>;
-    static NON_AIR_HOLDER_SET_CODEC: Codec<Object>;
-    static OPTIONAL_CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static NON_AIR_HOLDER_SET_CODEC: Codec<Holder<Item>[]>;
+    static OPTIONAL_CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>;
     static TYPE_KEY: string;
     static displayForSingleItem(paramitem: Holder<Item>): SlotDisplay;
     static getSerializer(paramarg0: Identifier): CustomIngredientSerializer<Object>;
-    static of(paramstream: Stream<Object>): Ingredient;
-    static of(paramtag: Holder<T>[]): Ingredient;
+    static of(paramstream: Stream<ItemLike>): Ingredient;
+    static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;
     static of(paramitems: (Object | null)[]): Ingredient;
     static optionalIngredientToDisplay(paramingredient: Optional<Ingredient>): SlotDisplay;

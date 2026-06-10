@@ -7,14 +7,14 @@ import type { RegistryFriendlyByteBuf } from '../../../net/minecraft/network/Reg
 import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class HashedPatchMap extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, HashedPatchMap>;
-    static create(parampatch: DataComponentPatch, paramhasher: (param0: Object | null) => unknown): HashedPatchMap;
+    static create(parampatch: DataComponentPatch, paramhasher: (param0: Object | null) => Object | null): HashedPatchMap;
     constructor(addedComponents: Map<DataComponentType<Object>, number>, removedComponents: DataComponentType<Object>[])
     // private addedComponents: Map<DataComponentType<Object>, number>;
     // private removedComponents: DataComponentType<Object>[];
     addedComponents(): Map<DataComponentType<Object>, number>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    matches(patch: DataComponentPatch, hasher: (param0: Object | null) => unknown): boolean;
+    matches(patch: DataComponentPatch, hasher: (param0: Object | null) => Object | null): boolean;
     removedComponents(): DataComponentType<Object>[];
     toString(): string;
 }

@@ -5,5 +5,5 @@ export class ByteStringBuilderKt extends Object {
     static append(paramarg0: ByteStringBuilder, paramarg1: number[]): void;
     static append(paramarg0: ByteStringBuilder, paramarg1: ByteString): void;
 // (invalid TS: name contains '-')     static append-EK-6454(paramarg0: ByteStringBuilder, paramarg1: number): void;
-    static buildByteString(paramarg0: number, paramarg1: (param0: Object | null) => void): ByteString;
+    static buildByteString(paramarg0: number, paramarg1: (param0: Object) => void): ByteString;
 }

@@ -11,6 +11,6 @@ export class BuiltInFictitiousFunctionClassFactory extends Object implements Cla
     // private module: ModuleDescriptor;
     // private storageManager: StorageManager;
     createClass(arg0: ClassId): ClassDescriptor;
-    getAllContributedClassesIfPossible(arg0: FqName): E[];
+    getAllContributedClassesIfPossible(arg0: FqName): ClassDescriptor[];
     shouldCreateClass(arg0: FqName, arg1: Name): boolean;
 }

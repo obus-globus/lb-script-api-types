@@ -8,6 +8,7 @@ import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEve
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { InteractionHand } from '../../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../../../net/minecraft/world/InteractionResult.d.ts'
+import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/entity/EntitySpawnReason.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
@@ -68,7 +69,7 @@ export abstract class AbstractFish extends WaterAnimal implements Bucketable {
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
@@ -112,11 +113,11 @@ export abstract class AbstractFish extends WaterAnimal implements Bucketable {
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
-    static bucketMobPickup(paramplayer: Player, paramhand: InteractionHand, parampickupEntity: Object | null): Optional<InteractionResult>;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
+    static bucketMobPickup(paramplayer: Player, paramhand: InteractionHand, parampickupEntity: LivingEntity | null): Optional<InteractionResult>;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkSurfaceWaterAnimalSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkSurfaceWaterAnimalSpawnRules(paramtype: EntityType<WaterAnimal>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static createAttributes(): AttributeSupplier$Builder;

@@ -9,7 +9,7 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class TypeRewriteRule$CheckOnce extends Record implements TypeRewriteRule {
     static all(paramarg0: TypeRewriteRule, paramarg1: boolean, paramarg2: boolean): TypeRewriteRule;
-    static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Object | null) => void): TypeRewriteRule;
+    static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Type<Object>) => void): TypeRewriteRule;
     static everywhere(paramarg0: TypeRewriteRule, paramarg1: PointFreeRule, paramarg2: boolean, paramarg3: boolean): TypeRewriteRule;
     static ifSame(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>): TypeRewriteRule;
     static nop(): TypeRewriteRule;
@@ -26,7 +26,7 @@ export class TypeRewriteRule$CheckOnce extends Record implements TypeRewriteRule
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     onFail(): (param0: Type<Object>) => void;
-    rewrite(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
+    rewrite<A extends Object | number | string | boolean>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
     rule(): TypeRewriteRule;
     toString(): string;
 }

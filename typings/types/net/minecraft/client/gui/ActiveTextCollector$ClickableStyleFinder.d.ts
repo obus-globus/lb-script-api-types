@@ -23,11 +23,11 @@ export class ActiveTextCollector$ClickableStyleFinder extends Object implements 
     // private testX: number;
     // private testY: number;
     accept(x: number, y: number, text: Component): void;
-    accept(x: number, y: number, text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): void;
+    accept(x: number, y: number, text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): void;
     accept(alignment: TextAlignment, anchorX: number, y: number, parameters: ActiveTextCollector$Parameters, text: Component): void;
-    accept(alignment: TextAlignment, anchorX: number, y: number, parameters: ActiveTextCollector$Parameters, text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): void;
+    accept(alignment: TextAlignment, anchorX: number, y: number, parameters: ActiveTextCollector$Parameters, text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): void;
     accept(alignment: TextAlignment, anchorX: number, y: number, text: Component): void;
-    accept(alignment: TextAlignment, anchorX: number, y: number, text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): void;
+    accept(alignment: TextAlignment, anchorX: number, y: number, text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): void;
     acceptScrolling(message: Component, centerX: number, left: number, right: number, top: number, bottom: number): void;
     acceptScrolling(message: Component, centerX: number, left: number, right: number, top: number, bottom: number, parameters: ActiveTextCollector$Parameters): void;
     acceptScrollingWithDefaultCenter(message: Component, left: number, right: number, top: number, bottom: number): void;

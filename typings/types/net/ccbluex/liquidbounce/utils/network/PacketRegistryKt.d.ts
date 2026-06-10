@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PacketFlow } from '../../../../../net/minecraft/network/protocol/PacketFlow.d.ts'
+import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class PacketRegistryKt extends Object {
     /**
      * A registry for packet types, allowing registration of packet identifiers
@@ -11,5 +12,5 @@ export class PacketRegistryKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt:27}
      */
-    static getPacketRegistry(): { [key in PacketFlow]: Object | null };
+    static getPacketRegistry(): { [key in PacketFlow]: Identifier[] };
 }

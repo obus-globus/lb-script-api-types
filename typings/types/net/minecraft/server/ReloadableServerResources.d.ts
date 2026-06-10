@@ -22,7 +22,7 @@ import type { PermissionSet } from '../../../net/minecraft/server/permissions/Pe
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { RecipeManager } from '../../../net/minecraft/world/item/crafting/RecipeManager.d.ts'
 export class ReloadableServerResources extends Object implements FabricDataResourceStoreHolder {
-    static loadResources(paramresourceManager: ResourceManager, paramcontextLayers: LayeredRegistryAccess<RegistryLayer>, paramupdatedContextTags: (Object | null)[], paramenabledFeatures: FeatureFlagSet, paramcommandSelection: Commands$CommandSelection, paramfunctionCompilationPermissions: PermissionSet, parambackgroundExecutor: Executor, parammainThreadExecutor: Executor): CompletableFuture<ReloadableServerResources>;
+    static loadResources(paramresourceManager: ResourceManager, paramcontextLayers: LayeredRegistryAccess<RegistryLayer>, paramupdatedContextTags: Registry$PendingTags<Object>[], paramenabledFeatures: FeatureFlagSet, paramcommandSelection: Commands$CommandSelection, paramfunctionCompilationPermissions: PermissionSet, parambackgroundExecutor: Executor, parammainThreadExecutor: Executor): CompletableFuture<ReloadableServerResources>;
     private constructor(fullLayers: LayeredRegistryAccess<RegistryLayer>, loadingContext: HolderLookup$Provider, enabledFeatures: FeatureFlagSet, commandSelection: Commands$CommandSelection, postponedTags: Registry$PendingTags<Object>[], functionCompilationPermissions: PermissionSet, newComponents: DataComponentInitializers$PendingComponents<Object>[])
     readonly advancements: ServerAdvancementManager;
     readonly commands: Commands;
@@ -40,6 +40,6 @@ export class ReloadableServerResources extends Object implements FabricDataResou
     getCommands(): Commands;
     getFunctionLibrary(): ServerFunctionLibrary;
     getRecipeManager(): RecipeManager;
-    listeners(): (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, param3: Executor) => java.util.concurrent.CompletableFuture<java.lang.Void>[];
+    listeners(): (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[];
     updateComponentsAndStaticRegistryTags(): void;
 }

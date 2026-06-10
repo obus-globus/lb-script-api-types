@@ -17,7 +17,7 @@ export class Char2ShortOpenHashMap$KeySpliterator extends Char2ShortOpenHashMap$
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
-    getComparator(): (param0: string, param1: string) => kotlin.Int;
+    getComparator(): (param0: string, param1: string) => number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Char2ShortOpenHashMap$KeySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;

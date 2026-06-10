@@ -8,7 +8,7 @@ export class PolyglotAccess extends Object {
     constructor(allAccess: boolean, access: EconomicMap<string, string[]>, bindingsAccess: string[])
     // private allAccess: boolean;
     // private bindingsAccess: string[];
-    // private evalAccess: EconomicMap<string, E[]>;
+    // private evalAccess: EconomicMap<string, string[]>;
     getBindingsAccess(): string[];
     getEvalAccess(): { [key: string]: string[] };
     getEvalAccess(language: string): string[];

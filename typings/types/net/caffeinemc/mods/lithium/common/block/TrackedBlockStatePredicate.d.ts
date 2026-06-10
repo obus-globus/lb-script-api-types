@@ -4,12 +4,12 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export abstract class TrackedBlockStatePredicate extends Object implements Predicate<BlockState> {
     static FULLY_INITIALIZED: AtomicBoolean;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(arg0: number)
     readonly index: number;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: BlockState) => boolean): (param0: BlockState) => boolean;
     getIndex(): number;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: BlockState) => boolean;
+    or(arg0: (param0: BlockState) => boolean): (param0: BlockState) => boolean;
 }

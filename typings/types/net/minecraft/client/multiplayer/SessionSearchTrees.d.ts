@@ -10,14 +10,14 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 export class SessionSearchTrees extends Object {
     constructor()
-    // private creativeByNameSearch: CompletableFuture<(param0: ItemStack) => kotlin.collections.List<unknown>>;
-    // private creativeByTagSearch: CompletableFuture<(param0: ItemStack) => kotlin.collections.List<unknown>>;
-    // private recipeSearch: CompletableFuture<(param0: RecipeCollection) => kotlin.collections.List<unknown>>;
+    // private creativeByNameSearch: CompletableFuture<(param0: string) => ItemStack[]>;
+    // private creativeByTagSearch: CompletableFuture<(param0: string) => ItemStack[]>;
+    // private recipeSearch: CompletableFuture<(param0: string) => RecipeCollection[]>;
     // private reloaders: Map<SessionSearchTrees$Key, () => void>;
-    creativeNameSearch(): (param0: ItemStack) => kotlin.collections.List<unknown>;
-    creativeTagSearch(): (param0: ItemStack) => kotlin.collections.List<unknown>;
+    creativeNameSearch(): (param0: string) => ItemStack[];
+    creativeTagSearch(): (param0: string) => ItemStack[];
     rebuildAfterLanguageChange(): void;
-    recipes(): (param0: RecipeCollection) => kotlin.collections.List<unknown>;
+    recipes(): (param0: string) => RecipeCollection[];
     // private register(location: SessionSearchTrees$Key, updater: () => void): void;
     updateCreativeTags(items: ItemStack[]): void;
     updateCreativeTooltips(registries: HolderLookup$Provider, itemStacks: ItemStack[]): void;

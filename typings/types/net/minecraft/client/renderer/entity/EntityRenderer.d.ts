@@ -43,7 +43,7 @@ export abstract class EntityRenderer<T extends Entity, S extends EntityRenderSta
     getShadowRadius(state: S): number;
     getShadowStrength(state: S): number;
     getSkyLightLevel(entity: T, blockPos: BlockPos): number;
-    // private renderLabel(arg0: Entity, arg1: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, arg2: PoseStack, arg3: SubmitNodeCollector, arg4: number): void;
+    // private renderLabel(arg0: Entity, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, arg2: PoseStack, arg3: SubmitNodeCollector, arg4: number): void;
     shouldRender(entity: T, culler: Frustum, camX: number, camY: number, camZ: number): boolean;
     shouldShowName(entity: T, distanceToCameraSq: number): boolean;
     submit(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;

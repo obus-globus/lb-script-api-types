@@ -9,7 +9,7 @@ export class Iterators$EmptyModifiableIterator extends Enum<Iterators$EmptyModif
     static valueOf(paramname: string): Iterators$EmptyModifiableIterator;
     static values(): (Object | null)[];
     private constructor()
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Object) => void): void;
     hasNext(): boolean;
     next(): Object;
     remove(): void;

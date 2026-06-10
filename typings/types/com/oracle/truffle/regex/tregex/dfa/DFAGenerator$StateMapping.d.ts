@@ -3,9 +3,9 @@ import type { NFAState } from '../../../../../../com/oracle/truffle/regex/tregex
 import type { NFAStateTransition } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFAStateTransition.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DFAGenerator$StateMapping extends Object {
-    private constructor(states: S[])
+    private constructor(states: NFAState[])
     readonly mapping: StateSetToIntMap<NFAState, NFAStateTransition>;
-    // private states: S[];
+    // private states: NFAState[];
     // private createMapping(): StateSetToIntMap<NFAState, NFAStateTransition>;
     getMapping(): StateSetToIntMap<NFAState, NFAStateTransition>;
     // private getMappingOrDefault(): StateSetToIntMap<NFAState, NFAStateTransition>;

@@ -11,7 +11,7 @@ import type { ValidationContext } from '../../../../../../../net/minecraft/world
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { TimeCheck$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/TimeCheck$Builder.d.ts'
 export class TimeCheck extends Record implements LootItemCondition {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<TimeCheck>;
     static TYPED_CODEC: Codec<LootItemCondition>;

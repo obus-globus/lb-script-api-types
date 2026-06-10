@@ -10,8 +10,8 @@ import type { Predicate } from '../../../../../../../java/util/function/Predicat
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class ASTNode extends Object {
-    static clone(paramarg0: Object | null): Object | null;
-    static clone(paramarg0: (Object | null)[]): Stream<Object>;
+    static clone(paramarg0: ASTNode | null): ASTNode | null;
+    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor()
     readonly lastParent: ASTNode;
@@ -30,13 +30,13 @@ export abstract class ASTNode extends Object {
     detachAndDelete(): boolean;
     detachParent(): void;
     getAncestor<N extends ASTNode>(arg0: Class<N>): N;
-    getAncestor(arg0: (param0: ASTNode) => kotlin.Boolean): ASTNode;
-    getAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode) => kotlin.Boolean): ASTNode;
+    getAncestor(arg0: (param0: ASTNode) => boolean): ASTNode;
+    getAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode) => boolean): ASTNode;
     getAncestors(): Stream<ASTNode>;
     getBranchAncestor<N extends ASTNode>(arg0: Class<N>, arg1: (param0: N) => ASTNode): N;
     getBranchAncestor<N extends ASTNode>(arg0: number, arg1: number, arg2: Class<N>, arg3: (param0: N) => ASTNode): N;
-    getBranchAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode, param1: ASTNode) => kotlin.Boolean): ASTNode;
-    getBranchAncestorContinue<R extends ASTNode>(arg0: Class<N>, arg1: (param0: N) => ASTNode, arg2: Class<R>): R;
+    getBranchAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode, param1: ASTNode) => boolean): ASTNode;
+    getBranchAncestorContinue<R extends ASTNode, N extends ASTNode>(arg0: Class<N>, arg1: (param0: N) => ASTNode, arg2: Class<R>): R;
     getLastParent(): ASTNode;
     getNthParent(arg0: number): ASTNode;
     getParent(): ASTNode;
@@ -45,8 +45,8 @@ export abstract class ASTNode extends Object {
     getSourceLocation(): SourceLocation;
     hasAncestor(arg0: ASTNode): boolean;
     hasAncestor(arg0: Class<ASTNode>): boolean;
-    hasAncestor(arg0: (param0: ASTNode) => kotlin.Boolean): boolean;
-    hasAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode) => kotlin.Boolean): boolean;
+    hasAncestor(arg0: (param0: ASTNode) => boolean): boolean;
+    hasAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode) => boolean): boolean;
     hasParent(): boolean;
     markTemplate(arg0: Template<Object>): void;
     // private register(arg0: boolean): void;

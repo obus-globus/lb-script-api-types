@@ -12,8 +12,8 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WithVarWrapperNode extends JSTargetableNode implements ReadNode, WriteNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramvarName: TruffleString, paramisStrict: boolean, paramwithTarget: JavaScriptNode, paramwithAccessNode: JSTargetableNode, paramglobalDelegate: JavaScriptNode): JavaScriptNode;
     static evaluateReceiver(paramtargetNode: JavaScriptNode, paramframe: VirtualFrame, paramtargetValue: Object): Object;
     static findBlockScopeNode(paramnode: Node): Node;

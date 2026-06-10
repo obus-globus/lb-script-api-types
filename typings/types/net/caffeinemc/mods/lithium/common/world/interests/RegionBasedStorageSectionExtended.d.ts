@@ -9,7 +9,7 @@ export interface RegionBasedStorageSectionExtended<R extends Object | number | s
     lithium$getChunkYMaxInclusive(): number;
     lithium$getChunkYMin(): number;
     lithium$getElementAt(arg0: number): Optional<R>;
-    lithium$getFirstInRangeInChunkColumn<U extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: number, arg3: BlockPos, arg4: number, arg5: (param0: R, param1: BlockPos, param2: (param0: Holder<S>) => kotlin.Boolean, param3: (param0: BlockPos) => kotlin.Boolean, param4: T, param5: U) => unknown, arg6: (param0: Holder<S>) => kotlin.Boolean, arg7: (param0: BlockPos) => kotlin.Boolean, arg8: T): U;
+    lithium$getFirstInRangeInChunkColumn<U extends Object | number | string | boolean, S extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: number, arg3: BlockPos, arg4: number, arg5: (param0: R, param1: BlockPos, param2: (param0: Holder<S>) => boolean, param3: (param0: BlockPos) => boolean, param4: T, param5: number) => U, arg6: (param0: Holder<S>) => boolean, arg7: (param0: BlockPos) => boolean, arg8: T): U;
     lithium$getInChunkColumn(arg0: number, arg1: number): R[];
     lithium$getNonEmptyPOISections(arg0: number, arg1: number): BitSet;
 }

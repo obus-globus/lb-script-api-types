@@ -31,5 +31,5 @@ export class RotationMode extends Mode implements MinecraftShortcuts {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt:37}
      */
     readonly postMove: boolean;
-    rotate(rotation: Rotation, isFinished: () => kotlin.Boolean, onFinished: () => void): void;
+    rotate(rotation: Rotation, isFinished: () => boolean, onFinished: () => void): void;
 }

@@ -4,6 +4,6 @@ import type { UnwrappedType } from '../../../../../../kotlin/reflect/jvm/interna
 export class TypeWithEnhancementKt extends Object {
     static getEnhancement(paramarg0: KotlinType): KotlinType;
     static inheritEnhancement(paramarg0: UnwrappedType, paramarg1: KotlinType): UnwrappedType;
-    static inheritEnhancement(paramarg0: UnwrappedType, paramarg1: KotlinType, paramarg2: (param0: Object | null) => Object | null): UnwrappedType;
+    static inheritEnhancement(paramarg0: UnwrappedType, paramarg1: KotlinType, paramarg2: (param0: Object) => KotlinType): UnwrappedType;
     static wrapEnhancement(paramarg0: UnwrappedType, paramarg1: KotlinType): UnwrappedType;
 }

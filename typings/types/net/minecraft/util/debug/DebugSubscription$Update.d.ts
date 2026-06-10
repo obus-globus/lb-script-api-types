@@ -5,7 +5,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { DebugSubscription } from '../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 export class DebugSubscription$Update<T extends Object | number | string | boolean> extends Record {
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DebugSubscription$Update<Object>>;
     constructor(subscription: DebugSubscription<T>, value: Optional<T>)
     // private subscription: DebugSubscription<T>;
     // private value: Optional<T>;

@@ -12,10 +12,10 @@ export class GlProgram<T extends Object | number | string | boolean> extends GlO
     constructor(arg0: number, arg1: (param0: ShaderBindingContext) => T)
     // private shaderInterface: T;
     bind(): void;
-    bindUniform<U extends GlUniform<Object>>(arg0: string, arg1: (param0: U) => unknown): U;
+    bindUniform<U extends GlUniform<Object>>(arg0: string, arg1: (param0: number) => U): U;
     bindUniformBlock(arg0: string, arg1: number): GlUniformBlock;
     bindUniformBlockOptional(arg0: string, arg1: number): GlUniformBlock;
-    bindUniformOptional<U extends GlUniform<Object>>(arg0: string, arg1: (param0: U) => unknown): U;
+    bindUniformOptional<U extends GlUniform<Object>>(arg0: string, arg1: (param0: number) => U): U;
     delete(): void;
     getInterface(): T;
     unbind(): void;

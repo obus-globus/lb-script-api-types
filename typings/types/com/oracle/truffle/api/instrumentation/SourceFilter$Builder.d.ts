@@ -10,6 +10,6 @@ export class SourceFilter$Builder extends Object {
     build(): SourceFilter;
     includeInternal(internal: boolean): SourceFilter$Builder;
     languageIs(languageIds: string[]): SourceFilter$Builder;
-    sourceIs(predicate: (param0: Source) => kotlin.Boolean): SourceFilter$Builder;
+    sourceIs(predicate: (param0: Source) => boolean): SourceFilter$Builder;
     sourceIs(source: Source[]): SourceFilter$Builder;
 }

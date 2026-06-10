@@ -7,16 +7,19 @@ import type { MinMaxBounds$Ints } from '../../../../../net/minecraft/advancement
 import type { SingleComponentItemPredicate } from '../../../../../net/minecraft/advancements/criterion/SingleComponentItemPredicate.d.ts'
 import type { DataComponentGetter } from '../../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
 import type { DataComponentType } from '../../../../../net/minecraft/core/component/DataComponentType.d.ts'
+import type { DataComponentPredicate } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate.d.ts'
+import type { DataComponentPredicate$Single } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Single.d.ts'
+import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Type.d.ts'
 import type { FireworkExplosionPredicate$FireworkPredicate } from '../../../../../net/minecraft/core/component/predicates/FireworkExplosionPredicate$FireworkPredicate.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/component/FireworkExplosion.d.ts'
 import type { Fireworks } from '../../../../../net/minecraft/world/item/component/Fireworks.d.ts'
 export class FireworksPredicate extends Record implements SingleComponentItemPredicate<Fireworks> {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
     static CODEC: Codec<FireworksPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
     constructor(explosions: Optional<CollectionPredicate<FireworkExplosion, FireworkExplosionPredicate$FireworkPredicate>>, flightDuration: MinMaxBounds$Ints)
     // private explosions: Optional<CollectionPredicate<FireworkExplosion, FireworkExplosionPredicate$FireworkPredicate>>;
     // private flightDuration: MinMaxBounds$Ints;

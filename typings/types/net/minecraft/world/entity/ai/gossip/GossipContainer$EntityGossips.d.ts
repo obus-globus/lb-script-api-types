@@ -12,5 +12,5 @@ export class GossipContainer$EntityGossips extends Object {
     makeSureValueIsntTooLowOrTooHigh(type: GossipType): void;
     remove(type: GossipType): void;
     unpack(target: UUID): Stream<GossipContainer$GossipEntry>;
-    weightedValue(types: (param0: GossipType) => kotlin.Boolean): number;
+    weightedValue(types: (param0: GossipType) => boolean): number;
 }

@@ -8,8 +8,8 @@ export class ResourceLimits$Builder extends Object {
     constructor(null_: ResourceLimits$Builder)
     // private onLimit: (param0: Object | null) => void;
     // private statementLimit: number;
-    // private statementLimitSourceFilter: (param0: Object | null) => kotlin.Boolean;
+    // private statementLimitSourceFilter: (param0: Object | null) => boolean;
     build(): ResourceLimits;
     onLimit(onLimit: (param0: ResourceLimitEvent) => void): ResourceLimits$Builder;
-    statementLimit(limit: number, sourceFilter: (param0: Source) => kotlin.Boolean): ResourceLimits$Builder;
+    statementLimit(limit: number, sourceFilter: (param0: Source) => boolean): ResourceLimits$Builder;
 }

@@ -13,6 +13,7 @@ import type { CraftingRecipe$CraftingBookInfo } from '../../../../net/minecraft/
 import type { Ingredient } from '../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { Recipe$CommonInfo } from '../../../../net/minecraft/world/item/crafting/Recipe$CommonInfo.d.ts'
+import type { SingleItemRecipe } from '../../../../net/minecraft/world/item/crafting/SingleItemRecipe.d.ts'
 import type { SingleItemRecipe$Factory } from '../../../../net/minecraft/world/item/crafting/SingleItemRecipe$Factory.d.ts'
 import type { ItemLike } from '../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class SingleItemRecipeBuilder extends Object implements RecipeBuilder {
@@ -20,13 +21,13 @@ export class SingleItemRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Object>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
     static stonecutting(paramingredient: Ingredient, paramcategory: RecipeCategory, paramresult: ItemLike, paramcount: number): SingleItemRecipeBuilder;
-    private constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => unknown, ingredient: Ingredient, result: ItemStackTemplate)
-    constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => unknown, ingredient: Ingredient, result: ItemLike, count: number)
+    private constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemStackTemplate)
+    constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemLike, count: number)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;
     // private category: RecipeCategory;
-    // private factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => unknown;
+    // private factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null;
     // private ingredient: Ingredient;
     // private result: ItemStackTemplate;
     defaultId(): ResourceKey<Recipe<Object>>;

@@ -122,5 +122,5 @@ export class BlockPlacer extends ValueGroup implements EventListener {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L382 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:382}
      */
-    update(positions: E[]): void;
+    update(positions: BlockPos[]): void;
 }

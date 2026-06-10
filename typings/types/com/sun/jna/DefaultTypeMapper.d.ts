@@ -15,5 +15,5 @@ export class DefaultTypeMapper extends Object implements TypeMapper {
     // private getAltClass(arg0: Class<Object>): Class<Object>;
     getFromNativeConverter(arg0: Class<Object>): FromNativeConverter;
     getToNativeConverter(arg0: Class<Object>): ToNativeConverter;
-    // private lookupConverter(arg0: Class<Object>, arg1: E[]): Object;
+    // private lookupConverter(arg0: Class<Object>, arg1: DefaultTypeMapper$Entry[]): Object;
 }

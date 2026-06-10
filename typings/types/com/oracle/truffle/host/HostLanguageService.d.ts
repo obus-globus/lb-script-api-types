@@ -25,7 +25,7 @@ export class HostLanguageService extends AbstractPolyglotImpl$AbstractHostLangua
     findNextGuestToHostStackTraceElement(firstElement: StackTraceElement, hostStack: StackTraceElement[], nextElementIndex: number): number;
     findStaticClass(receiver: Object, classValue: string): Object;
     hostExit(exitCode: number): void;
-    initializeHostContext(internalContext: Object, receiver: Object, hostAccess: Object, cl: ClassLoader, clFilter: (param0: string) => kotlin.Boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean): void;
+    initializeHostContext(internalContext: Object, receiver: Object, hostAccess: Object, cl: ClassLoader, clFilter: (param0: string) => boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean): void;
     isHostException(exception: Object): boolean;
     isHostFunction(value: Object): boolean;
     isHostObject(value: Object): boolean;

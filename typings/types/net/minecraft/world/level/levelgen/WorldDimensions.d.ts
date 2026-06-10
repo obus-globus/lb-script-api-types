@@ -14,9 +14,9 @@ import type { LevelStem } from '../../../../../net/minecraft/world/level/dimensi
 import type { WorldDimensions$Complete } from '../../../../../net/minecraft/world/level/levelgen/WorldDimensions$Complete.d.ts'
 export class WorldDimensions extends Record {
     static CODEC: MapCodec<WorldDimensions>;
-    static keysInOrder(paramknownKeys: (Object | null)[]): Stream<Object>;
-    static withOverworld(paramdimensions: Map<Object | null, LevelStem>, paramtype: Holder<DimensionType>, paramgenerator: ChunkGenerator): Map<Object | null, LevelStem>;
-    static withOverworld(paramdimensionTypes: HolderLookup<DimensionType>, paramdimensions: Map<Object | null, LevelStem>, paramgenerator: ChunkGenerator): Map<Object | null, LevelStem>;
+    static keysInOrder(paramknownKeys: ResourceKey<LevelStem>[]): Stream<ResourceKey<LevelStem>>;
+    static withOverworld(paramdimensions: Map<ResourceKey<LevelStem>, LevelStem>, paramtype: Holder<DimensionType>, paramgenerator: ChunkGenerator): Map<ResourceKey<LevelStem>, LevelStem>;
+    static withOverworld(paramdimensionTypes: HolderLookup<DimensionType>, paramdimensions: Map<ResourceKey<LevelStem>, LevelStem>, paramgenerator: ChunkGenerator): Map<ResourceKey<LevelStem>, LevelStem>;
     constructor(dimensions: Map<ResourceKey<LevelStem>, LevelStem>)
     constructor(registry: LevelStem[])
     // private dimensions: Map<ResourceKey<LevelStem>, LevelStem>;

@@ -6,5 +6,5 @@ export class SetsKt__SetsJVMKt extends Object {
     static createSetBuilder(paramarg0: number): (Object | null)[];
     static setOf(paramarg0: Object | null): (Object | null)[];
     static sortedSetOf(paramarg0: Object | null): (Object | null)[];
-    static sortedSetOf(paramarg0: (param0: Object | null) => kotlin.Boolean, paramarg1: Object | null): (Object | null)[];
+    static sortedSetOf(paramarg0: (param0: Object) => boolean, paramarg1: Object | null): (Object | null)[];
 }

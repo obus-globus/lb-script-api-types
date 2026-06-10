@@ -5,6 +5,7 @@ import type { ActionListener } from '../../java/awt/event/ActionListener.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 export class Button extends Component implements Accessible {
@@ -35,7 +36,7 @@ export class Button extends Component implements Accessible {
     getActionCommand(): string;
     getActionListeners(): ActionListener[];
     getLabel(): string;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     paramString(): string;
     processActionEvent(arg0: ActionEvent): void;
     processEvent(arg0: AWTEvent): void;

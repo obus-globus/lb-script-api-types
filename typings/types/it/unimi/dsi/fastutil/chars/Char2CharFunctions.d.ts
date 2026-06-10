@@ -4,11 +4,11 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2CharFunctions extends Object {
     static EMPTY_FUNCTION: Char2CharFunctions$EmptyFunction;
-    static primitive(paramarg0: (param0: Object | null) => Object | null): (param0: string) => kotlin.Char;
-    static singleton(paramarg0: string, paramarg1: string): (param0: string) => kotlin.Char;
-    static singleton(paramarg0: string, paramarg1: string): (param0: string) => kotlin.Char;
-    static synchronize(paramarg0: (param0: string) => kotlin.Char): (param0: string) => kotlin.Char;
-    static synchronize(paramarg0: (param0: string) => kotlin.Char, paramarg1: Object): (param0: string) => kotlin.Char;
-    static unmodifiable(paramarg0: (param0: string) => kotlin.Char): (param0: string) => kotlin.Char;
+    static primitive(paramarg0: (param0: Object) => string): (param0: string) => string;
+    static singleton(paramarg0: string, paramarg1: string): (param0: string) => string;
+    static singleton(paramarg0: string, paramarg1: string): (param0: string) => string;
+    static synchronize(paramarg0: (param0: string) => string): (param0: string) => string;
+    static synchronize(paramarg0: (param0: string) => string, paramarg1: Object): (param0: string) => string;
+    static unmodifiable(paramarg0: (param0: string) => string): (param0: string) => string;
     private constructor()
 }

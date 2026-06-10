@@ -10,7 +10,7 @@ export abstract class CharMatcher extends Object implements Predicate<string> {
     static ascii(): CharMatcher;
     static breakingWhitespace(): CharMatcher;
     static digit(): CharMatcher;
-    static forPredicate(parampredicate: (param0: Object | null) => kotlin.Boolean): CharMatcher;
+    static forPredicate(parampredicate: (param0: Object) => boolean): CharMatcher;
     static inRange(paramstartInclusive: string, paramendInclusive: string): CharMatcher;
     static invisible(): CharMatcher;
     static is(parammatch: string): CharMatcher;
@@ -27,7 +27,7 @@ export abstract class CharMatcher extends Object implements Predicate<string> {
     static whitespace(): CharMatcher;
     constructor()
     and(other: CharMatcher): CharMatcher;
-    and(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    and(arg0: (param0: string) => boolean): (param0: string) => boolean;
     apply(character: string): boolean;
     collapseFrom(sequence: CharSequence, replacement: string): string;
     countIn(sequence: CharSequence): number;
@@ -41,7 +41,7 @@ export abstract class CharMatcher extends Object implements Predicate<string> {
     matchesNoneOf(sequence: CharSequence): boolean;
     negate(): CharMatcher;
     or(other: CharMatcher): CharMatcher;
-    or(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    or(arg0: (param0: string) => boolean): (param0: string) => boolean;
     precomputed(): CharMatcher;
     precomputedInternal(): CharMatcher;
     removeFrom(sequence: CharSequence): string;
@@ -50,7 +50,7 @@ export abstract class CharMatcher extends Object implements Predicate<string> {
     retainFrom(sequence: CharSequence): string;
     setBits(table: BitSet): void;
     test(character: string): boolean;
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test(input: string): boolean;
     toString(): string;
     trimAndCollapseFrom(sequence: CharSequence, replacement: string): string;
     trimFrom(sequence: CharSequence): string;

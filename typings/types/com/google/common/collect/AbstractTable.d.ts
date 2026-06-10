@@ -6,7 +6,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export abstract class AbstractTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Table<R, C, V> {
     constructor()
     // private cellSet: Table$Cell<R, C, V>[];
-    // private values: E[];
+    // private values: V[];
     cellIterator(): Iterator<Table$Cell<R, C, V>>;
     cellSet(): Table$Cell<R, C, V>[];
     cellSpliterator(): Spliterator<Table$Cell<R, C, V>>;
@@ -17,7 +17,7 @@ export abstract class AbstractTable<R extends Object | number | string | boolean
     containsRow(rowKey: Object): boolean;
     containsValue(value: Object): boolean;
     createCellSet(): Table$Cell<R, C, V>[];
-    createValues(): E[];
+    createValues(): V[];
     equals(obj: Object | null): boolean;
     get(rowKey: Object, columnKey: Object): V;
     hashCode(): number;
@@ -27,7 +27,7 @@ export abstract class AbstractTable<R extends Object | number | string | boolean
     remove(rowKey: Object, columnKey: Object): V;
     rowKeySet(): R[];
     toString(): string;
-    values(): E[];
+    values(): V[];
     valuesIterator(): Iterator<V>;
     valuesSpliterator(): Spliterator<V>;
 }

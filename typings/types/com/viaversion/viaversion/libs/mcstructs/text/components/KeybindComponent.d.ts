@@ -34,9 +34,9 @@ export class KeybindComponent extends TextComponent {
     static translation(paramarg0: string, paramarg1: (Object | null)[]): TranslationComponent;
     static translation(paramarg0: string, paramarg1: Object[]): TranslationComponent;
     constructor(arg0: string)
-    constructor(arg0: string, arg1: (param0: string) => kotlin.String)
+    constructor(arg0: string, arg1: (param0: string) => string)
     readonly keybind: string;
-    // private translator: (param0: string) => kotlin.String;
+    // private translator: (param0: string) => string;
     asSingleString(): string;
     asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
     canEqual(arg0: Object): boolean;
@@ -44,7 +44,7 @@ export class KeybindComponent extends TextComponent {
     getKeybind(): string;
     hashCode(): number;
     setKeybind(arg0: string): KeybindComponent;
-    setTranslator(arg0: (param0: string) => kotlin.String): KeybindComponent;
+    setTranslator(arg0: (param0: string) => string): KeybindComponent;
     shallowCopy(): TextComponent;
     toString(): string;
 }

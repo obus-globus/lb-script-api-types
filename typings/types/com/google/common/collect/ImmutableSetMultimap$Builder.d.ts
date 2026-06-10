@@ -13,8 +13,8 @@ export class ImmutableSetMultimap$Builder<K extends Object | number | string | b
     expectedValueCollectionSize(defaultExpectedValues: number, values: (Object | null)[]): number;
     expectedValuesPerKey(expectedValuesPerKey: number): ImmutableSetMultimap$Builder<K, V>;
     newValueCollectionBuilderWithExpectedSize(expectedSize: number): ImmutableCollection$Builder<V>;
-    orderKeysBy(keyComparator: (param0: K) => kotlin.Boolean): ImmutableSetMultimap$Builder<K, V>;
-    orderValuesBy(valueComparator: (param0: V) => kotlin.Boolean): ImmutableSetMultimap$Builder<K, V>;
+    orderKeysBy(keyComparator: (param0: Object) => boolean): ImmutableSetMultimap$Builder<K, V>;
+    orderValuesBy(valueComparator: (param0: Object) => boolean): ImmutableSetMultimap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableSetMultimap$Builder<K, V>;
     put(key: K, value: V): ImmutableSetMultimap$Builder<K, V>;
     putAll(key: K, values: V[]): ImmutableSetMultimap$Builder<K, V>;

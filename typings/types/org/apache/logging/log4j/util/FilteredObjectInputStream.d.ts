@@ -38,9 +38,9 @@ export class FilteredObjectInputStream extends ObjectInputStream {
     static nullInputStream(): InputStream;
     constructor()
     constructor(inputStream: InputStream)
-    constructor(inputStream: InputStream, allowedExtraClasses: E[])
-    constructor(allowedExtraClasses: E[])
-    // private allowedExtraClasses: E[];
-    getAllowedClasses(): E[];
+    constructor(inputStream: InputStream, allowedExtraClasses: string[])
+    constructor(allowedExtraClasses: string[])
+    // private allowedExtraClasses: string[];
+    getAllowedClasses(): string[];
     resolveClass(desc: ObjectStreamClass): Class<Object>;
 }

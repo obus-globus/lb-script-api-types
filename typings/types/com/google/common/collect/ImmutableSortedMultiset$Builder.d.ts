@@ -3,7 +3,7 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class ImmutableSortedMultiset$Builder<E extends Object | number | string | boolean> extends ImmutableMultiset$Builder<E> {
-    constructor(comparator: (param0: E) => kotlin.Boolean)
+    constructor(comparator: (param0: Object) => boolean)
     add(element: E): ImmutableSortedMultiset$Builder<E>;
     add(elements: E[]): ImmutableSortedMultiset$Builder<E>;
     addAll(elements: E[]): ImmutableSortedMultiset$Builder<E>;

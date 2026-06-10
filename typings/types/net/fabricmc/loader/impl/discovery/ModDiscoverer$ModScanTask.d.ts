@@ -21,7 +21,7 @@ export class ModDiscoverer$ModScanTask extends RecursiveTask<ModCandidateImpl> {
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: E[]): E[];
+    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
     constructor(null_: ModDiscoverer$ModScanTask, arg2: boolean)

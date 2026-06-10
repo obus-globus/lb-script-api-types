@@ -6,7 +6,7 @@ import type { YearMonth } from '../../kotlinx/datetime/YearMonth.d.ts'
 export class YearMonthProgressionIterator extends Object implements Iterator<YearMonth> {
     constructor(iterator: LongIterator)
     // private iterator: LongIterator;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: YearMonth) => void): void;
     hasNext(): boolean;
     next(): YearMonth;
 }

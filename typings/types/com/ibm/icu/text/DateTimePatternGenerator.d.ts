@@ -94,7 +94,7 @@ export class DateTimePatternGenerator extends Object implements Freezable<DateTi
     getDefaultHourFormatChar(): string;
     getFieldDisplayName(arg0: number, arg1: DateTimePatternGenerator$DisplayWidth): string;
     getFields(arg0: string): string;
-    getRedundants(arg0: E[]): E[];
+    getRedundants(arg0: string[]): string[];
     // private getSet(arg0: string): string[];
     getSkeleton(arg0: string): string;
     getSkeletonAllowingDuplicates(arg0: string): string;

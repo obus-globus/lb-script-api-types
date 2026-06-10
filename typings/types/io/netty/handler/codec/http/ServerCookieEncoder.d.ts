@@ -5,6 +5,6 @@ export class ServerCookieEncoder extends Object {
     static encode(paramarg0: string, paramarg1: string): string;
     static encode(paramarg0: (Object | null)[]): string[];
     static encode(paramarg0: Cookie[]): string[];
-    static encode(paramarg0: E[]): string[];
+    static encode(paramarg0: Cookie[]): string[];
     private constructor()
 }

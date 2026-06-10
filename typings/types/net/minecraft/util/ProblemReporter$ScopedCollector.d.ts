@@ -5,8 +5,8 @@ import type { ProblemReporter$PathElement } from '../../../net/minecraft/util/Pr
 import type { Logger } from '../../../org/slf4j/Logger.d.ts'
 export class ProblemReporter$ScopedCollector extends ProblemReporter$Collector implements AutoCloseable {
     static DISCARDING: ProblemReporter;
-    static EMPTY_ROOT: () => kotlin.String;
-    constructor(root: () => kotlin.String, logger: Logger)
+    static EMPTY_ROOT: () => string;
+    constructor(root: () => string, logger: Logger)
     constructor(logger: Logger)
     // private logger: Logger;
     close(): void;

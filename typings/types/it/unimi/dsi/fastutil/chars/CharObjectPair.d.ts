@@ -1,23 +1,21 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CharObjectPair<V extends Object | number | string | boolean> extends Pair<string, V>, Object{
-    first<L extends Object | number | string | boolean>(): L;
-    first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     first(): string;
+    first(arg0: string): Pair<string, V>;
     first(arg0: string): CharObjectPair<V>;
     firstChar(): string;
-    key<L extends Object | number | string | boolean>(): L;
-    key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
     key(): string;
+    key(arg0: string): Pair<string, V>;
     key(arg0: string): CharObjectPair<V>;
     keyChar(): string;
-    left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
+    left(arg0: string): Pair<string, V>;
     left(): string;
     left(arg0: string): CharObjectPair<V>;
     leftChar(): string;
-    right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
-    second<R extends Object | number | string | boolean>(): R;
-    second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
-    value<R extends Object | number | string | boolean>(): R;
-    value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    right(arg0: V): Pair<string, V>;
+    second(): V;
+    second(arg0: V): Pair<string, V>;
+    value(): V;
+    value(arg0: V): Pair<string, V>;
 }

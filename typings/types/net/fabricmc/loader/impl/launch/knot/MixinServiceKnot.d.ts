@@ -15,6 +15,7 @@ import type { IFeatureValidator } from '../../../../../../org/spongepowered/asm/
 import type { IMixinAuditTrail } from '../../../../../../org/spongepowered/asm/service/IMixinAuditTrail.d.ts'
 import type { IMixinInternal } from '../../../../../../org/spongepowered/asm/service/IMixinInternal.d.ts'
 import type { IMixinService } from '../../../../../../org/spongepowered/asm/service/IMixinService.d.ts'
+import type { ITransformer } from '../../../../../../org/spongepowered/asm/service/ITransformer.d.ts'
 import type { ITransformerProvider } from '../../../../../../org/spongepowered/asm/service/ITransformerProvider.d.ts'
 import type { ReEntranceLock } from '../../../../../../org/spongepowered/asm/util/ReEntranceLock.d.ts'
 export class MixinServiceKnot extends Object implements IClassBytecodeProvider, IClassProvider, IClassTracker, IMixinService, ITransformerProvider {
@@ -38,21 +39,21 @@ export class MixinServiceKnot extends Object implements IClassBytecodeProvider, 
     getClassProvider(): IClassProvider;
     getClassRestrictions(arg0: string): string;
     getClassTracker(): IClassTracker;
-    getDelegatedTransformers(): E[];
+    getDelegatedTransformers(): ITransformer[];
     getFeatureValidator(): IFeatureValidator;
     getInitialPhase(): MixinEnvironment$Phase;
     getLogger(arg0: string): ILogger;
     getMaxCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
     getMinCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
-    getMixinContainers(): E[];
+    getMixinContainers(): IContainerHandle[];
     getName(): string;
-    getPlatformAgents(): E[];
+    getPlatformAgents(): string[];
     getPrimaryContainer(): IContainerHandle;
     getReEntranceLock(): ReEntranceLock;
     getResourceAsStream(arg0: string): InputStream;
     getSideName(): string;
     getTransformerProvider(): ITransformerProvider;
-    getTransformers(): E[];
+    getTransformers(): ITransformer[];
     init(): void;
     isClassLoaded(arg0: string): boolean;
     isValid(): boolean;

@@ -10,7 +10,7 @@ export class LevelBasedValue$Constant extends Record implements LevelBasedValue 
     static CODEC: Codec<LevelBasedValue>;
     static DISPATCH_CODEC: Codec<LevelBasedValue>;
     static TYPED_CODEC: MapCodec<LevelBasedValue$Constant>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<LevelBasedValue>[]): MapCodec<LevelBasedValue>;
     static constant(paramvalue: number): LevelBasedValue$Constant;
     static lookup(paramvalues: number[], paramfallback: LevelBasedValue): LevelBasedValue$Lookup;
     static perLevel(paramperLevel: number): LevelBasedValue$Linear;

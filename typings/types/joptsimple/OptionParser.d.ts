@@ -51,7 +51,7 @@ export class OptionParser extends Object implements OptionDeclarer {
     noMoreOptions(): void;
     nonOptions(): NonOptionArgumentSpec<string>;
     nonOptions(arg0: string): NonOptionArgumentSpec<string>;
-    // private optionsHasAnyOf(arg0: OptionSet, arg1: E[]): boolean;
+    // private optionsHasAnyOf(arg0: OptionSet, arg1: OptionSpec<Object>[]): boolean;
     parse(arg0: string[]): OptionSet;
     posixlyCorrect(): boolean;
     posixlyCorrect(arg0: boolean): void;

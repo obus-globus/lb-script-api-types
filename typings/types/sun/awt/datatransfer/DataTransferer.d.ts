@@ -15,7 +15,7 @@ export abstract class DataTransferer extends Object {
     static javaTextEncodingFlavor: DataFlavor;
     static adaptFlavorMap(paramarg0: FlavorMap): FlavorTable;
     static getInstance(): DataTransferer;
-    static keysToLongArray(paramarg0: { [key: number]: Object | null }): number[];
+    static keysToLongArray(paramarg0: { [key: number]: Object }): number[];
     static setToSortedDataFlavorArray(paramarg0: DataFlavor[]): (Object | null)[];
     constructor()
     // private castToFile(arg0: Object): File;

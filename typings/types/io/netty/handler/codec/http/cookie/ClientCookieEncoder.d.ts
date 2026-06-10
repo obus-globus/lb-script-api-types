@@ -5,9 +5,8 @@ export class ClientCookieEncoder extends CookieEncoder {
     static LAX: ClientCookieEncoder;
     static STRICT: ClientCookieEncoder;
     private constructor(arg0: boolean)
-    encode(arg0: E[]): string;
+    encode(arg0: Cookie[]): string;
     encode(arg0: Cookie): string;
     // private encode(arg0: StringBuilder, arg1: Cookie): void;
-    encode(arg0: Cookie[]): string;
     encode(arg0: string, arg1: string): string;
 }

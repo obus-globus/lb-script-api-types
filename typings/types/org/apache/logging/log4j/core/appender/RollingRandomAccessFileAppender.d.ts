@@ -17,7 +17,7 @@ export class RollingRandomAccessFileAppender extends AbstractOutputStreamAppende
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Object>, paramfilter: Filter, paramignoreExceptions: string, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RollingRandomAccessFileAppender;
+    static createAppender(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignoreExceptions: string, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RollingRandomAccessFileAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: RollingRandomAccessFileManager, fileName: string, filePattern: string, ignoreExceptions: boolean, immediateFlush: boolean, bufferSize: number, advertiser: Advertiser, properties: Property[])

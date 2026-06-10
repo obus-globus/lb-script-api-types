@@ -9,9 +9,9 @@ export class FastServiceLoader extends Object {
     // private PREFIX: string;
     // private createInstanceOf(baseClass: Class<MainDispatcherFactory>, serviceClass: string): MainDispatcherFactory | null;
     // private getProviderInstance<S extends Object | number | string | boolean>(name: string, loader: ClassLoader, service: Class<S>): S;
-    // private load(service: Class<S>, loader: ClassLoader): S[];
+    // private load<S extends Object | number | string | boolean>(service: Class<S>, loader: ClassLoader): S[];
     loadMainDispatcherFactory(): MainDispatcherFactory[];
-    loadProviders(service: Class<S>, loader: ClassLoader): S[];
+    loadProviders<S extends Object | number | string | boolean>(service: Class<S>, loader: ClassLoader): S[];
     // private parse(url: URL): string[];
     // private parseFile(r: BufferedReader): string[];
 }

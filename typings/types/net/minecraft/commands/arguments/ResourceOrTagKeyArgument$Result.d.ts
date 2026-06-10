@@ -6,10 +6,10 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 export interface ResourceOrTagKeyArgument$Result<T extends Object | number | string | boolean> extends Predicate<Holder<T>>, Object {
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: Holder<T>) => boolean): (param0: Holder<T>) => boolean;
     asPrintable(): string;
-    cast(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagKeyArgument$Result<E>>;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    cast<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagKeyArgument$Result<E>>;
+    negate(): (param0: Holder<T>) => boolean;
+    or(arg0: (param0: Holder<T>) => boolean): (param0: Holder<T>) => boolean;
     unwrap(): Either<ResourceKey<T>, TagKey<T>>;
 }

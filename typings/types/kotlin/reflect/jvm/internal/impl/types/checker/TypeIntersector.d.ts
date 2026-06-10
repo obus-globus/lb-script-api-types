@@ -4,7 +4,7 @@ import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/interna
 export class TypeIntersector extends Object {
     static INSTANCE: TypeIntersector;
     private constructor()
-    // private filterTypes(arg0: E[], arg1: (param0: SimpleType, param1: SimpleType) => boolean): E[];
+    // private filterTypes(arg0: SimpleType[], arg1: (param0: SimpleType, param1: SimpleType) => boolean): SimpleType[];
     intersectTypes$descriptors(arg0: SimpleType[]): SimpleType;
     // private intersectTypesWithoutIntersectionType(arg0: SimpleType[]): SimpleType;
     // private isStrictSupertype(arg0: KotlinType, arg1: KotlinType): boolean;

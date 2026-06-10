@@ -6,6 +6,7 @@ import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEve
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { DifficultyInstance } from '../../../../../../net/minecraft/world/DifficultyInstance.d.ts'
 import type { DamageSource } from '../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityDimensions } from '../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
 import type { EntityReference } from '../../../../../../net/minecraft/world/entity/EntityReference.d.ts'
@@ -13,10 +14,12 @@ import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/en
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { NeutralMob } from '../../../../../../net/minecraft/world/entity/NeutralMob.d.ts'
 import type { Pose } from '../../../../../../net/minecraft/world/entity/Pose.d.ts'
 import type { AttributeModifier } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { AttributeSupplier$Builder } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
+import type { Monster } from '../../../../../../net/minecraft/world/entity/monster/Monster.d.ts'
 import type { Zombie } from '../../../../../../net/minecraft/world/entity/monster/zombie/Zombie.d.ts'
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
@@ -68,7 +71,7 @@ export class ZombifiedPiglin extends Zombie implements NeutralMob {
     static NBT_ATTACHMENT_KEY: string;
     static NO_ANGER_END_TIME: number;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static REINFORCEMENT_ATTEMPTS: number;
     static REINFORCEMENT_RANGE_MAX: number;
@@ -124,12 +127,12 @@ export class ZombifiedPiglin extends Zombie implements NeutralMob {
     static XP_REWARD_NONE: number;
     static XP_REWARD_SMALL: number;
     static ZOMBIE_LEADER_CHANCE: number;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
-    static checkAnyLightMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkSurfaceMonstersSpawnRules(paramtype: EntityType<Object>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkAnyLightMonsterSpawnRules(paramtype: EntityType<Monster>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMonsterSpawnRules(paramtype: EntityType<Mob>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkSurfaceMonstersSpawnRules(paramtype: EntityType<Mob>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static checkZombifiedPiglinSpawnRules(paramtype: EntityType<ZombifiedPiglin>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;

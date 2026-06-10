@@ -11,13 +11,13 @@ import type { LootPoolEntry } from '../../../../../../../net/minecraft/world/lev
 import type { LootPoolEntryContainer } from '../../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class EntryGroup extends CompositeEntryBase {
-    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
-    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
+    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static MAP_CODEC: MapCodec<EntryGroup>;
     static NO_CHILDREN_PROBLEM: ProblemReporter$Problem;
-    static createCodec(paramconstructor: (param0: Object | null, param1: LootPoolEntryContainer[]) => unknown): MapCodec<Object>;
+    static createCodec(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => CompositeEntryBase | null): MapCodec<CompositeEntryBase>;
     static list(paramentries: Object | null): EntryGroup$Builder;
     constructor(children: LootPoolEntryContainer[], conditions: LootItemCondition[])
     codec(): MapCodec<EntryGroup>;
-    compose(entries: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean[]): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    compose(entries: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean[]): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
 }

@@ -9,7 +9,7 @@ export class CubicSpline$Multipoint<C extends Object | number | string | boolean
     static IDENTITY: BoundedFloatFunction<number>;
     static builder(paramcoordinate: Object | null): CubicSpline$Builder<Object, Object>;
     static builder(paramcoordinate: Object | null, paramvalueTransformer: BoundedFloatFunction<number>): CubicSpline$Builder<Object, Object>;
-    static codec(paramcoordinateCodec: Codec<Object>): Codec<Object>;
+    static codec(paramcoordinateCodec: Codec<Object>): Codec<CubicSpline<Object, Object>>;
     static constant(paramvalue: number): CubicSpline<Object, Object>;
     // private coordinate: I;
     // private derivatives: number[];

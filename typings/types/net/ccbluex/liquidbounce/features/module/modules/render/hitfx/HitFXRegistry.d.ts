@@ -25,7 +25,7 @@ export class HitFXRegistry extends Enum<HitFXRegistry> implements Tagged {
     static TUNG: HitFXRegistry;
     static UWU: HitFXRegistry;
     static getEntries(): HitFXRegistry[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static registerAll(): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

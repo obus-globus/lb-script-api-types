@@ -31,9 +31,9 @@ export class JcaTemplate extends Object {
     // private provider: Provider;
     // private secureRandom: SecureRandom;
     // private execute<T extends Object | number | string | boolean>(arg0: Class<Object>, arg1: CheckedSupplier<T>): T;
-    // private execute<R extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
-    // private execute<R extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>, arg2: Provider): R;
-    fallback<R extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
+    // private execute<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
+    // private execute<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>, arg2: Provider): R;
+    fallback<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
     findBouncyCastle(): Provider;
     generateKeyPair(): KeyPair;
     generateKeyPair(arg0: AlgorithmParameterSpec): KeyPair;

@@ -5,8 +5,8 @@ import type { HolderGetter } from '../../../../../net/minecraft/core/HolderGette
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 export class TheEndBiomeData extends Object {
-    static ADDED_BIOMES: (Object | null)[];
-    static biomeRegistry: ThreadLocal<Object>;
+    static ADDED_BIOMES: ResourceKey<Biome>[];
+    static biomeRegistry: ThreadLocal<HolderGetter<Biome>>;
     static addEndBarrensReplacement(paramarg0: ResourceKey<Biome>, paramarg1: ResourceKey<Biome>, paramarg2: number): void;
     static addEndBiomeReplacement(paramarg0: ResourceKey<Biome>, paramarg1: ResourceKey<Biome>, paramarg2: number): void;
     static addEndMidlandsReplacement(paramarg0: ResourceKey<Biome>, paramarg1: ResourceKey<Biome>, paramarg2: number): void;

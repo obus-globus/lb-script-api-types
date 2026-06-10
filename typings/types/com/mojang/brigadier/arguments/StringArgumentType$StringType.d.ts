@@ -9,7 +9,7 @@ export class StringArgumentType$StringType extends Enum<StringArgumentType$Strin
     static valueOf(paramarg0: string): StringArgumentType$StringType;
     static values(): (Object | null)[];
     private constructor(arg2: string[])
-    readonly examples: E[];
-    getExamples(): E[];
+    readonly examples: string[];
+    getExamples(): string[];
     name(): "SINGLE_WORD" | "QUOTABLE_PHRASE" | "GREEDY_PHRASE";
 }

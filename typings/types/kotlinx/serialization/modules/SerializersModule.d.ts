@@ -8,8 +8,8 @@ export class SerializersModule extends Object {
     protected constructor()
     /*not mapped: */ getHasInterfaceContextualSerializers$kotlinx_serialization_core(): boolean;
     dumpTo(collector: SerializersModuleCollector): void;
-    getContextual(kclass: KClass<T>): KSerializer<T> | null;
-    getContextual(kClass: KClass<T>, typeArgumentsSerializers: KSerializer<Object>[]): KSerializer<T> | null;
+    getContextual<T extends Object | number | string | boolean>(kclass: KClass<T>): KSerializer<T> | null;
+    getContextual<T extends Object | number | string | boolean>(kClass: KClass<T>, typeArgumentsSerializers: KSerializer<Object>[]): KSerializer<T> | null;
     getPolymorphic<T extends Object | number | string | boolean>(baseClass: KClass<T>, value: T): SerializationStrategy<T> | null;
-    getPolymorphic(baseClass: KClass<T>, serializedClassName: string | null): DeserializationStrategy<T> | null;
+    getPolymorphic<T extends Object | number | string | boolean>(baseClass: KClass<T>, serializedClassName: string | null): DeserializationStrategy<T> | null;
 }

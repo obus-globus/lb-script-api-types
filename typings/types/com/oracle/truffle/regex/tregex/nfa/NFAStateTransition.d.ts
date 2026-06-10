@@ -1,4 +1,3 @@
-import type { AbstractState } from '../../../../../../com/oracle/truffle/regex/tregex/automaton/AbstractState.d.ts'
 import type { AbstractTransition } from '../../../../../../com/oracle/truffle/regex/tregex/automaton/AbstractTransition.d.ts'
 import type { NFAState } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFAState.d.ts'
 import type { GroupBoundaries } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/GroupBoundaries.d.ts'
@@ -23,9 +22,8 @@ export class NFAStateTransition extends Object implements AbstractTransition<NFA
     getOperations(): number[];
     getSource(): NFAState;
     getSource(forward: boolean): NFAState;
-    getTarget<S extends AbstractState<S, T>>(forward: boolean): S;
-    getTarget(): NFAState;
     getTarget(forward: boolean): NFAState;
+    getTarget(): NFAState;
     hasConstraints(): boolean;
     hashCode(): number;
     setSource(source: NFAState): void;

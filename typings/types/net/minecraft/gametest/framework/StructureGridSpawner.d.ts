@@ -16,7 +16,7 @@ export class StructureGridSpawner extends Object implements GameTestRunner$Struc
     // private maxX: number;
     // private nextTestNorthWestCorner: BlockPos$MutableBlockPos;
     // private rowBounds: AABB;
-    // private testInLastBatch: E[];
+    // private testInLastBatch: GameTestInfo[];
     // private testsPerRow: number;
     onBatchStart(level: ServerLevel): void;
     spawnStructure(testInfo: GameTestInfo): Optional<GameTestInfo>;

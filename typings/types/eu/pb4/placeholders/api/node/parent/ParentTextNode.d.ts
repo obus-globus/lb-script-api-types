@@ -7,8 +7,6 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 export interface ParentTextNode extends TextNode, Object{
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     getChildren(): TextNode[];
     isDynamic(): boolean;
     isDynamicNoChildren(): boolean;

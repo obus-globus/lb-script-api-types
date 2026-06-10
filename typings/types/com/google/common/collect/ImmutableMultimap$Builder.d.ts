@@ -9,16 +9,16 @@ export class ImmutableMultimap$Builder<K extends Object | number | string | bool
     constructor(expectedKeys: number)
     // private builderMap: Map<K, ImmutableCollection$Builder<V>>;
     // private expectedValuesPerKey: number;
-    // private keyComparator: (param0: K) => kotlin.Boolean;
-    // private valueComparator: (param0: V) => kotlin.Boolean;
+    // private keyComparator: (param0: Object) => boolean;
+    // private valueComparator: (param0: Object) => boolean;
     build(): ImmutableMultimap<K, V>;
     combine(other: ImmutableMultimap$Builder<K, V>): ImmutableMultimap$Builder<K, V>;
     ensureBuilderMapNonNull(): Map<K, ImmutableCollection$Builder<V>>;
     expectedValueCollectionSize(defaultExpectedValues: number, values: (Object | null)[]): number;
     expectedValuesPerKey(expectedValuesPerKey: number): ImmutableMultimap$Builder<K, V>;
     newValueCollectionBuilderWithExpectedSize(expectedSize: number): ImmutableCollection$Builder<V>;
-    orderKeysBy(keyComparator: (param0: K) => kotlin.Boolean): ImmutableMultimap$Builder<K, V>;
-    orderValuesBy(valueComparator: (param0: V) => kotlin.Boolean): ImmutableMultimap$Builder<K, V>;
+    orderKeysBy(keyComparator: (param0: Object) => boolean): ImmutableMultimap$Builder<K, V>;
+    orderValuesBy(valueComparator: (param0: Object) => boolean): ImmutableMultimap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableMultimap$Builder<K, V>;
     put(key: K, value: V): ImmutableMultimap$Builder<K, V>;
     putAll(key: K, values: V[]): ImmutableMultimap$Builder<K, V>;

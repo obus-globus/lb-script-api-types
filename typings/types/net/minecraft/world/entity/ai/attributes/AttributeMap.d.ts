@@ -23,7 +23,7 @@ export class AttributeMap extends Object {
     getBaseValue(attribute: Holder<Attribute>): number;
     getInstance(attribute: Holder<Attribute>): AttributeInstance;
     getModifierValue(attribute: Holder<Attribute>, id: Identifier): number;
-    getSyncableAttributes(): E[];
+    getSyncableAttributes(): AttributeInstance[];
     getValue(attribute: Holder<Attribute>): number;
     hasAttribute(attribute: Holder<Attribute>): boolean;
     hasModifier(attribute: Holder<Attribute>, id: Identifier): boolean;

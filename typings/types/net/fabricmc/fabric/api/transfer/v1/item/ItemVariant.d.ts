@@ -8,11 +8,11 @@ export interface ItemVariant extends Object, TransferVariant<Item>{
     componentsMatch(arg0: DataComponentPatch): boolean;
     getItem(): Item;
     hasComponents(): boolean;
-    isOf<O extends Object | number | string | boolean>(arg0: O): boolean;
+    isOf(arg0: Item): boolean;
     matches(arg0: ItemStack): boolean;
     toStack(): ItemStack;
     toStack(arg0: number): ItemStack;
     typeHolder(): Holder<Item>;
     withComponents(arg0: DataComponentPatch): ItemVariant;
-    withComponents(arg0: DataComponentPatch): TransferVariant<O>;
+    withComponents(arg0: DataComponentPatch): TransferVariant<Item>;
 }

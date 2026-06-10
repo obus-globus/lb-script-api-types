@@ -4,7 +4,7 @@ export class DelegateAudienceCollection<P extends Object | number | string | boo
     constructor(arg0: P, arg1: ClaimsMutator$AudienceCollection<Object>)
     // private delegate: ClaimsMutator$AudienceCollection<Object>;
     // private parent: P;
-    add(arg0: E[]): ClaimsMutator$AudienceCollection<P>;
+    add(arg0: string[]): ClaimsMutator$AudienceCollection<P>;
     add(arg0: string): ClaimsMutator$AudienceCollection<P>;
     and(): P;
     clear(): ClaimsMutator$AudienceCollection<P>;

@@ -13,6 +13,6 @@ import type { ItemUseAnimation } from '../../../../../../../../../../net/minecra
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowNoBlockInteract.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowNoBlockInteract.kt:31}
  */
 export class NoSlowNoBlockInteract extends ToggleableValueGroup {
-    constructor(parent: EventListener | null, actionFilter: (param0: ItemUseAnimation) => kotlin.Boolean)
+    constructor(parent: EventListener | null, actionFilter: (param0: ItemUseAnimation) => boolean)
     readonly packetHandler: EventHook<PacketEvent>;
 }

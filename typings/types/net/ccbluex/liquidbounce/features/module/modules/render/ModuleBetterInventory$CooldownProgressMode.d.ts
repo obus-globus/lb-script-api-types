@@ -9,7 +9,7 @@ export class ModuleBetterInventory$CooldownProgressMode extends Enum<ModuleBette
     static DURATION_TICKS: ModuleBetterInventory$CooldownProgressMode;
     static PERCENTAGE: ModuleBetterInventory$CooldownProgressMode;
     static getEntries(): ModuleBetterInventory$CooldownProgressMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBetterInventory$CooldownProgressMode;

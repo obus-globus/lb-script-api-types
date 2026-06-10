@@ -10,8 +10,8 @@ export class Rule extends Object {
     static ALL_STRINGS_RMATCHER: Rule$RPattern;
     static getInstance(paramarg0: NameType, paramarg1: RuleType, paramarg2: string): Rule[];
     static getInstance(paramarg0: NameType, paramarg1: RuleType, paramarg2: Languages$LanguageSet): Rule[];
-    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: string): { [key: string]: Object | null };
-    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: Languages$LanguageSet): { [key: string]: Object | null };
+    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: string): { [key: string]: Rule[] };
+    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: Languages$LanguageSet): { [key: string]: Rule[] };
     constructor(arg0: string, arg1: string, arg2: string, arg3: Rule$PhonemeExpr)
     // private lContext: Rule$RPattern;
     readonly pattern: string;

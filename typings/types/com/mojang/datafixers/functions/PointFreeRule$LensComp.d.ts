@@ -13,10 +13,10 @@ export class PointFreeRule$LensComp extends Enum<PointFreeRule$LensComp> impleme
     static valueOf(paramarg0: string): PointFreeRule$LensComp;
     static values(): (Object | null)[];
     private constructor()
-    // private capApp(arg0: TypedOptic<S, T, A, B>, arg1: PointFree<Object>): PointFree<R>;
-    // private capComp(arg0: PointFree<Object>, arg1: PointFree<Object>): PointFree<(param0: A) => C>;
+    // private capApp<R extends Object | number | string | boolean, S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: TypedOptic<S, T, A, B>, arg1: PointFree<Object>): PointFree<R>;
+    // private capComp<A extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: PointFree<Object>, arg1: PointFree<Object>): PointFree<(param0: A) => C>;
     doRewrite(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): Optional<PointFree<(param0: Object | null) => Object | null>>;
-    rewrite(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
     // private rewrite(arg0: PointFree<(param0: Object | null) => Object | null>[]): Optional<PointFree<(param0: Object | null) => Object | null>[]>;
     name(): "INSTANCE";
 }

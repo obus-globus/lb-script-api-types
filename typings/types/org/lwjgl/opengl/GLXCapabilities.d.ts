@@ -2,7 +2,7 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvider.d.ts'
 export class GLXCapabilities extends Object {
-    constructor(arg0: (param0: ByteBuffer) => kotlin.Long, arg1: string[])
+    constructor(arg0: (param0: ByteBuffer) => number, arg1: string[])
     GLX11: boolean;
     GLX12: boolean;
     GLX13: boolean;

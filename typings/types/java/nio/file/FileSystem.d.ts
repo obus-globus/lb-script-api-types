@@ -10,7 +10,7 @@ export abstract class FileSystem extends Object implements Closeable {
     close(): void;
     getFileStores(): FileStore[];
     getPath(arg0: string, arg1: string[]): Path[];
-    getPathMatcher(arg0: string): (param0: Path[][]) => kotlin.Boolean;
+    getPathMatcher(arg0: string): (param0: Path[][]) => boolean;
     getRootDirectories(): Path[][];
     getSeparator(): string;
     getUserPrincipalLookupService(): UserPrincipalLookupService;

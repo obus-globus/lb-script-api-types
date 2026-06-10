@@ -22,7 +22,7 @@ export class ConditionalItemModel$Unbaked extends Record implements ItemModel$Un
     // private onTrue: ItemModel$Unbaked;
     // private property: ConditionalItemModelProperty;
     // private transformation: Optional<Transformation>;
-    // private adaptProperty(originalProperty: ConditionalItemModelProperty, contextSwapper: RegistryContextSwapper): (param0: ItemStack, param1: ClientLevel, param2: LivingEntity, param3: number, param4: ItemDisplayContext) => kotlin.Boolean;
+    // private adaptProperty(originalProperty: ConditionalItemModelProperty, contextSwapper: RegistryContextSwapper): (param0: ItemStack, param1: ClientLevel, param2: LivingEntity, param3: number, param4: ItemDisplayContext) => boolean;
     bake(context: ItemModel$BakingContext, transformation: Matrix4fc): ItemModel;
     equals(o: Object | null): boolean;
     hashCode(): number;

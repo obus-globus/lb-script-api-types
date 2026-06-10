@@ -6,7 +6,7 @@ export class UnsignedLongs extends Object {
     static decode(paramstringValue: string): number;
     static divide(paramdividend: number, paramdivisor: number): number;
     static join(paramseparator: string, paramarray: number[]): string;
-    static lexicographicalComparator(): (param0: number[]) => kotlin.Boolean;
+    static lexicographicalComparator(): (param0: Object) => boolean;
     static max(paramarray: number[]): number;
     static min(paramarray: number[]): number;
     static parseUnsignedLong(paramstring: string): number;

@@ -13,9 +13,9 @@ import type { MetricsPersister } from '../../../../../../net/minecraft/util/prof
 import type { RecordedDeviation } from '../../../../../../net/minecraft/util/profiling/metrics/storage/RecordedDeviation.d.ts'
 export class ActiveMetricsRecorder extends Object implements MetricsRecorder {
     static PROFILING_MAX_DURATION_SECONDS: number;
-    static createStarted(parammetricsSamplerProvider: MetricsSamplerProvider, paramtimeSource: () => kotlin.Long, paramioExecutor: Executor, parammetricsPersister: MetricsPersister, paramonProfilingEnd: (param0: ProfileResults) => void, paramonReportFinished: (param0: Path[][]) => void): ActiveMetricsRecorder;
+    static createStarted(parammetricsSamplerProvider: MetricsSamplerProvider, paramtimeSource: () => number, paramioExecutor: Executor, parammetricsPersister: MetricsPersister, paramonProfilingEnd: (param0: ProfileResults) => void, paramonReportFinished: (param0: Path[][]) => void): ActiveMetricsRecorder;
     static registerGlobalCompletionCallback(paramonFinished: (param0: Path[][]) => void): void;
-    private constructor(metricsSamplerProvider: MetricsSamplerProvider, timeSource: () => kotlin.Long, ioExecutor: Executor, metricsPersister: MetricsPersister, onProfilingEnd: (param0: ProfileResults) => void, onReportFinished: (param0: Path[]) => void)
+    private constructor(metricsSamplerProvider: MetricsSamplerProvider, timeSource: () => number, ioExecutor: Executor, metricsPersister: MetricsPersister, onProfilingEnd: (param0: ProfileResults) => void, onReportFinished: (param0: Path[]) => void)
     // private currentTick: number;
     // private deadlineNano: number;
     // private deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>;
@@ -28,9 +28,9 @@ export class ActiveMetricsRecorder extends Object implements MetricsRecorder {
     // private singleTickProfiler: ProfileCollector;
     // private taskProfiler: ContinuousProfiler;
     // private thisTickSamplers: MetricSampler[];
-    // private wallTimeSource: () => kotlin.Long;
+    // private wallTimeSource: () => number;
     cancel(): void;
-    // private cleanup(metricSamplers: E[]): void;
+    // private cleanup(metricSamplers: MetricSampler[]): void;
     end(): void;
     endTick(): void;
     getProfiler(): ProfilerFiller;

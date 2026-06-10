@@ -13,8 +13,8 @@ import type { PackOutput$PathProvider } from '../../../../net/minecraft/data/Pac
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class NbtToSnbt extends Object implements DataProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static convertStructure(paramcache: CachedOutput, parampath: Path[][], paramname: string, paramoutput: Path[][]): Path[][];
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
@@ -24,7 +24,7 @@ export class NbtToSnbt extends Object implements DataProvider {
     static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
     static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
     static writeSnbt(paramcache: CachedOutput, paramdestination: Path[][], paramtext: string): void;
-    constructor(output: PackOutput, inputFolders: E[])
+    constructor(output: PackOutput, inputFolders: Path[][])
     // private inputFolders: Path[][];
     // private output: PackOutput;
     getName(): string;

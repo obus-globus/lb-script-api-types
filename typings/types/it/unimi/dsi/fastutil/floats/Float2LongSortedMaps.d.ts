@@ -5,13 +5,13 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2LongSortedMaps extends Object {
     static EMPTY_MAP: Float2LongSortedMaps$EmptySortedMap;
-    static entryComparator(paramarg0: (param0: number, param1: number) => kotlin.Int): (param0: Object | null) => kotlin.Boolean;
+    static entryComparator(paramarg0: (param0: number, param1: number) => number): (param0: Object) => boolean;
     static fastIterable(paramarg0: Float2LongSortedMap): Float2LongMap$Entry[];
     static fastIterator(paramarg0: Float2LongSortedMap): ObjectBidirectionalIterator<Float2LongMap$Entry>;
     static singleton(paramarg0: number, paramarg1: number): Float2LongSortedMap;
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): Float2LongSortedMap;
+    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): Float2LongSortedMap;
     static singleton(paramarg0: number, paramarg1: number): Float2LongSortedMap;
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): Float2LongSortedMap;
+    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): Float2LongSortedMap;
     static synchronize(paramarg0: Float2LongSortedMap): Float2LongSortedMap;
     static synchronize(paramarg0: Float2LongSortedMap, paramarg1: Object): Float2LongSortedMap;
     static unmodifiable(paramarg0: Float2LongSortedMap): Float2LongSortedMap;

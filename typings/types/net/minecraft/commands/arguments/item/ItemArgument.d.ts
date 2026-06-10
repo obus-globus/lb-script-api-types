@@ -13,10 +13,9 @@ export class ItemArgument extends Object implements ArgumentType<ItemInput> {
     static item(paramcontext: CommandBuildContext): ItemArgument;
     constructor(context: CommandBuildContext)
     // private parser: ItemParser;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): ItemInput;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ItemInput;
+    parse(reader: StringReader): ItemInput;
 }

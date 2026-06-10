@@ -7,7 +7,7 @@ import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OctavePerlinNoiseSampler extends Object implements NoiseSampler {
     static SKIP_262: LCG;
-    static makeAmplitudes(paramarg0: number[]): Pair<number, Object>;
+    static makeAmplitudes(paramarg0: number[]): Pair<number, number[]>;
     constructor(arg0: JRand, arg1: Pair<number, number[]>)
     constructor(arg0: JRand, arg1: IntStream)
     constructor(arg0: JRand, arg1: number)

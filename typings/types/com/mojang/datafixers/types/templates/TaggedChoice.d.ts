@@ -18,12 +18,12 @@ export class TaggedChoice<K extends Object | number | string | boolean> extends 
     // private templates: Map<K, TypeTemplate>;
     // private types: Map<Pair<TypeFamily, number>, Type<Object>>;
     apply(arg0: TypeFamily): TypeFamily;
-    applyO(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
+    applyO<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
     equals(arg0: Object | null): boolean;
     fabric$setFailSoft(arg0: boolean): void;
-    findFieldOrType(arg0: number, arg1: string, arg2: Type<A>, arg3: Type<B>): Either<TypeTemplate, Type$FieldNotFoundException>;
+    findFieldOrType<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: number, arg1: string, arg2: Type<A>, arg3: Type<B>): Either<TypeTemplate, Type$FieldNotFoundException>;
     hashCode(): number;
-    hmap(arg0: TypeFamily, arg1: (param0: RewriteResult<Object, Object>) => unknown): (param0: RewriteResult<Object, Object>) => unknown;
+    hmap(arg0: TypeFamily, arg1: (param0: number) => RewriteResult<Object, Object>): (param0: number) => RewriteResult<Object, Object>;
     size(): number;
     toSimpleType(): Type<Object>;
     toString(): string;

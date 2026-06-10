@@ -8,7 +8,7 @@ export class ObjectOpenHashSet$SetIterator extends Object implements ObjectItera
     // private mustReturnNull: boolean;
     // private pos: number;
     // private wrapped: K[];
-    forEachRemaining(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     next<K extends Object | number | string | boolean>(): K;
     remove(): void;

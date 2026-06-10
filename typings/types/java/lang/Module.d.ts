@@ -21,12 +21,12 @@ export class Module extends Object implements AnnotatedElement {
     ensureNativeAccess(arg0: Class<Object>, arg1: string, arg2: Class<Object>, arg3: boolean): void;
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getAnnotations(): Annotation[];
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     // private getCallerModule(arg0: Class<Object>): Module;
     getClassLoader(): ClassLoader;
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getDeclaredAnnotations(): Annotation[];
-    getDeclaredAnnotationsByType(arg0: Class<T>): T[];
+    getDeclaredAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDescriptor(): ModuleDescriptor;
     getLayer(): ModuleLayer;
     getName(): string;

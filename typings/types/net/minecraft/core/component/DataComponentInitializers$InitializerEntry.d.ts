@@ -5,12 +5,12 @@ import type { DataComponentInitializers$Initializer } from '../../../../net/mine
 import type { DataComponentMap$Builder } from '../../../../net/minecraft/core/component/DataComponentMap$Builder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class DataComponentInitializers$InitializerEntry<T extends Object | number | string | boolean> extends Record {
-    private constructor(key: ResourceKey<T>, initializer: (param0: T, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void)
-    // private initializer: (param0: T, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void;
+    private constructor(key: ResourceKey<T>, initializer: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void)
+    // private initializer: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void;
     // private key: ResourceKey<T>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    initializer(): (param0: T, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void;
+    initializer(): (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void;
     key(): ResourceKey<T>;
     run(components: DataComponentMap$Builder, context: HolderLookup$Provider): void;
     toString(): string;

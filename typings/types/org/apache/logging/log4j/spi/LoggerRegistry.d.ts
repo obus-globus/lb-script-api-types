@@ -15,8 +15,8 @@ export class LoggerRegistry<T extends ExtendedLogger> extends Object {
     // private createLoggerRefByMessageFactoryMap(ignored: string): Map<MessageFactory, T>;
     getLogger(name: string): T;
     getLogger(name: string, messageFactory: MessageFactory): T;
-    getLoggers(): E[];
-    getLoggers(destination: E[]): E[];
+    getLoggers(): T[];
+    getLoggers(destination: T[]): T[];
     hasLogger(name: string): boolean;
     hasLogger(name: string, messageFactoryClass: Class<MessageFactory>): boolean;
     hasLogger(name: string, messageFactory: MessageFactory): boolean;

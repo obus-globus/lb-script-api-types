@@ -4,18 +4,16 @@ import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubl
 import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 export interface ByteComparator extends Comparator<number>, Object {
     compare(arg0: number, arg1: number): number;
-    reversed(): (param0: number, param1: number) => kotlin.Int;
-    reversed(): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: number, param1: number) => kotlin.Int): (param0: number, param1: number) => kotlin.Int;
-    thenComparing(arg0: (param0: number) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
-    thenComparing(arg0: (param0: number) => U): (param0: number) => kotlin.Boolean;
-    thenComparing(arg0: (param0: number) => U, arg1: (param0: U) => kotlin.Boolean): (param0: number) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    thenComparingDouble(arg0: (param0: T) => kotlin.Double): (param0: T) => kotlin.Boolean;
-    thenComparingInt(arg0: (param0: T) => kotlin.Int): (param0: T) => kotlin.Boolean;
-    thenComparingLong(arg0: (param0: T) => kotlin.Long): (param0: T) => kotlin.Boolean;
+    reversed(): (param0: number, param1: number) => number;
+    reversed(): (param0: Object) => boolean;
+    thenComparing(arg0: (param0: number, param1: number) => number): (param0: number, param1: number) => number;
+    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: number) => U): (param0: Object) => boolean;
+    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: number) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparingDouble(arg0: (param0: number) => number): (param0: Object) => boolean;
+    thenComparingInt(arg0: (param0: number) => number): (param0: Object) => boolean;
+    thenComparingLong(arg0: (param0: number) => number): (param0: Object) => boolean;
 }

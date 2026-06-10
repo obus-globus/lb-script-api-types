@@ -3,8 +3,8 @@ import type { Short2ShortFunction } from '../../../../../it/unimi/dsi/fastutil/s
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ShortFunctions$UnmodifiableFunction extends AbstractShort2ShortFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Short)
-    // private function: (param0: number) => kotlin.Short;
+    constructor(arg0: (param0: number) => number)
+    // private function: (param0: number) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

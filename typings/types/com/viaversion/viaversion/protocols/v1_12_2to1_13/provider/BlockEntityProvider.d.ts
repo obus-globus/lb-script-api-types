@@ -7,7 +7,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BlockEntityProvider extends Object implements Provider {
     constructor()
-    // private handlers: { [key: string]: (param0: UserConnection, param1: Map$Entry<string, Tag>[]) => kotlin.Int };
+    // private handlers: { [key: string]: (param0: UserConnection, param1: Map$Entry<string, Tag>[]) => number };
     // private sendBlockChange(arg0: UserConnection, arg1: BlockPosition, arg2: number): void;
     transform(arg0: UserConnection, arg1: BlockPosition, arg2: Map$Entry<string, Tag>[], arg3: boolean): number;
 }

@@ -1,3 +1,4 @@
+import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { ServiceLoader } from '../../../../org/apache/tika/config/ServiceLoader.d.ts'
 import type { CompositeDetector } from '../../../../org/apache/tika/detect/CompositeDetector.d.ts'
@@ -9,7 +10,7 @@ export class DefaultDetector extends CompositeDetector {
     constructor(arg0: MimeTypes)
     constructor(arg0: MimeTypes, arg1: ClassLoader)
     constructor(arg0: MimeTypes, arg1: ServiceLoader)
-    constructor(arg0: MimeTypes, arg1: ServiceLoader, arg2: E[])
+    constructor(arg0: MimeTypes, arg1: ServiceLoader, arg2: Class<Detector>[])
     // private loader: ServiceLoader;
     getDetectors(): Detector[];
 }

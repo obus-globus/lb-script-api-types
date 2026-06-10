@@ -7,10 +7,11 @@ import type { ParseState } from '../../../../../../net/minecraft/util/parsing/pa
 import type { Rule } from '../../../../../../net/minecraft/util/parsing/packrat/Rule.d.ts'
 import type { Rule$RuleAction } from '../../../../../../net/minecraft/util/parsing/packrat/Rule$RuleAction.d.ts'
 import type { Rule$SimpleRuleAction } from '../../../../../../net/minecraft/util/parsing/packrat/Rule$SimpleRuleAction.d.ts'
+import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export class TagParseRule<T extends Object | number | string | boolean> extends Object implements Rule<StringReader, Dynamic<Object>> {
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Object | null) => Object | null): Rule<Object, Object>;
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Object | null) => Object | null): Rule<Object, Object>;
+    static fromTerm(paramchild: Term<Object>, paramaction: (param0: ParseState<Object>) => Object | null): Rule<Object, Object>;
+    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Scope) => Object | null): Rule<Object, Object>;
     constructor(ops: DynamicOps<T>)
     // private parser: TagParser<T>;
     parse(state: ParseState<StringReader>): Dynamic<T>;

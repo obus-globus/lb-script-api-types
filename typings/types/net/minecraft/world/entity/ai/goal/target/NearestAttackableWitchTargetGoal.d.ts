@@ -5,7 +5,7 @@ import type { NearestAttackableTargetGoal } from '../../../../../../../net/minec
 import type { TargetingConditions$Selector } from '../../../../../../../net/minecraft/world/entity/ai/targeting/TargetingConditions$Selector.d.ts'
 import type { Raider } from '../../../../../../../net/minecraft/world/entity/raid/Raider.d.ts'
 export class NearestAttackableWitchTargetGoal<T extends LivingEntity> extends NearestAttackableTargetGoal<T> {
-    constructor(raider: Raider, targetType: Class<T>, randomInterval: number, mustSee: boolean, mustReach: boolean, subselector: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean)
+    constructor(raider: Raider, targetType: Class<T>, randomInterval: number, mustSee: boolean, mustReach: boolean, subselector: (param0: LivingEntity, param1: ServerLevel) => boolean)
     readonly canAttack: boolean;
     canUse(): boolean;
     setCanAttack(canAttack: boolean): void;

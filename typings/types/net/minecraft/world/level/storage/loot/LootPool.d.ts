@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
+import type { DataResult } from '../../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiFunction } from '../../../../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
@@ -19,17 +20,17 @@ import type { LootItemCondition } from '../../../../../../net/minecraft/world/le
 import type { NumberProvider } from '../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class LootPool extends Object implements LootPoolAccessor, Validatable {
     static CODEC: Codec<LootPool>;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
     static lootPool(): LootPool$Builder;
-    static validate(paramcontext: ValidationContext, paramname: string, paramlist: (Object | null)[]): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Object>): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
-    static validate(paramcontext: ValidationContext, paramlist: (Object | null)[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Object>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
+    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
+    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
     private constructor(entries: LootPoolEntryContainer[], conditions: LootItemCondition[], functions: LootItemFunction[], rolls: NumberProvider, bonusRolls: NumberProvider)
     bonusRolls: NumberProvider;
-    // private compositeCondition: (param0: LootContext) => kotlin.Boolean;
+    // private compositeCondition: (param0: LootContext) => boolean;
     // private compositeFunction: (param0: ItemStack, param1: LootContext) => ItemStack;
     conditions: LootItemCondition[];
     entries: LootPoolEntryContainer[];

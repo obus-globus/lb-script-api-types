@@ -6,7 +6,7 @@ export class CombinedIterator<E extends Object | number | string | boolean> exte
     // private currentIterator: Iterator<E>;
     // private i1: Iterator<E>;
     // private i2: Iterator<E>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
     remove(): void;

@@ -7,8 +7,8 @@ export class ConcurrentWeakMap$Core extends Object {
     cleanWeakRef(weakRef: HashedWeakRef<Object>): void;
     getImpl<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(key: K): V | null;
     // private index(hash: number): number;
-    keyValueIterator(factory: (param0: K, param1: V) => E): Iterator<E>;
+    keyValueIterator<E extends Object | number | string | boolean, K extends Object | number | string | boolean, V extends Object | number | string | boolean>(factory: (param0: K, param1: V) => E): Iterator<E>;
     putImpl<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(key: K, value: V | null, weakKey0: HashedWeakRef<K> | null): Object | null;
-    rehash(): ConcurrentWeakMap$Core;
+    rehash<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): ConcurrentWeakMap$Core;
     // private removeCleanedAt(index: number): void;
 }

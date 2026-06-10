@@ -1,6 +1,5 @@
 import type { KeyPair } from '../../../../../java/security/KeyPair.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { GsonElement } from '../../../../../net/lenni0451/commons/gson/elements/GsonElement.d.ts'
 import type { HttpResponse } from '../../../../../net/lenni0451/commons/httpclient/HttpResponse.d.ts'
@@ -11,6 +10,5 @@ export class XblDeviceAuthenticateRequest extends SignedXblPostRequest implement
     constructor(arg0: string, arg1: UUID, arg2: KeyPair)
     handle(arg0: HttpResponse): XblDeviceToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): XblDeviceToken;
-    handle<R extends Object | number | string | boolean>(arg0: HttpResponse): R;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

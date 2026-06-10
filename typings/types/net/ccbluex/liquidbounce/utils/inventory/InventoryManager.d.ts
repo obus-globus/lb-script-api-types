@@ -6,7 +6,6 @@ import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/even
 import type { PacketEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { ScreenEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/ScreenEvent.d.ts'
 import type { WorldChangeEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
-import type { InventoryAction$Chain } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/InventoryAction$Chain.d.ts'
 /**
  * Manages the inventory state and timings and schedules inventory actions
  *
@@ -32,7 +31,7 @@ export class InventoryManager extends Object implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryManager.kt:236}
      */
     static onInventoryOpened(): void;
-    // private COMPARATOR_ACTION_CHAIN: (param0: InventoryAction$Chain) => kotlin.Boolean;
+    // private COMPARATOR_ACTION_CHAIN: (param0: Object) => boolean;
     // private handleWorldChange: EventHook<WorldChangeEvent>;
     /*not mapped: */ isHandledScreenOpen(): boolean;
     /*not mapped: */ isInventoryOpen(): boolean;

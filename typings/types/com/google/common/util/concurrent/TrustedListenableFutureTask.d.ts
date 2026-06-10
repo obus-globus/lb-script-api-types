@@ -9,7 +9,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TrustedListenableFutureTask<V extends Object | number | string | boolean> extends FluentFuture$TrustedFuture<V> implements RunnableFuture<V> {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
-    constructor(callable: () => V)
+    constructor(callable: () => ListenableFuture<V>)
     constructor(callable: () => V)
     // private task: InterruptibleTask<Object>;
     afterDone(): void;

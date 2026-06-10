@@ -3,8 +3,8 @@ import type { Object2ReferenceFunction } from '../../../../../it/unimi/dsi/fastu
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ReferenceFunctions$UnmodifiableFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractObject2ReferenceFunction<K, V> implements Serializable {
-    constructor(arg0: (param0: K) => V)
-    // private function: (param0: K) => V;
+    constructor(arg0: (param0: Object) => V)
+    // private function: (param0: Object) => V;
     clear(): void;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): V;

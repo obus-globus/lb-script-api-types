@@ -14,11 +14,10 @@ export class ObjectiveCriteriaArgument extends Object implements ArgumentType<Ob
     static criteria(): ObjectiveCriteriaArgument;
     static getCriteria(paramcontext: CommandContext<CommandSourceStack>, paramname: string): ObjectiveCriteria;
     private constructor()
-    getExamples(): E[];
-    getName(type: Stat<T>[], value: Object): string;
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): ObjectiveCriteria;
+    getExamples(): string[];
+    getName<T extends Object | number | string | boolean>(type: Stat<T>[], value: Object): string;
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ObjectiveCriteria;
+    parse(reader: StringReader): ObjectiveCriteria;
 }

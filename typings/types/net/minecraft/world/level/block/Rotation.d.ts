@@ -14,7 +14,7 @@ import type { RandomSource } from '../../../../../net/minecraft/util/RandomSourc
 import type { StringRepresentable } from '../../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { StringRepresentable$EnumCodec } from '../../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 export class Rotation extends Enum<Rotation> implements StringRepresentable {
-    static BY_ID: (param0: Rotation) => unknown;
+    static BY_ID: (param0: number) => Rotation;
     static CLOCKWISE_180: Rotation;
     static CLOCKWISE_90: Rotation;
     static CODEC: Codec<Rotation>;
@@ -23,11 +23,11 @@ export class Rotation extends Enum<Rotation> implements StringRepresentable {
     static NONE: Rotation;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, Rotation>;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getRandom(paramrandom: RandomSource): Rotation;
     static getShuffled(paramrandom: RandomSource): Rotation[];
     static keys(paramvalues: (Object | null)[]): Keyable;

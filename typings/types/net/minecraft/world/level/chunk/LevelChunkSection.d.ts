@@ -55,7 +55,7 @@ export class LevelChunkSection extends Object implements BlockCountingSection, B
     lithium$mayContainAny(arg0: TrackedBlockStatePredicate): boolean;
     lithium$removeFromCallback(arg0: SectionedBlockChangeTracker): void;
     lithium$trackBlockStateChange(arg0: BlockState, arg1: BlockState): void;
-    maybeHas(predicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    maybeHas(predicate: (param0: BlockState) => boolean): boolean;
     read(buffer: FriendlyByteBuf): void;
     readBiomes(buffer: FriendlyByteBuf): void;
     recalcBlockCounts(): void;

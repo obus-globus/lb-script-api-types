@@ -13,12 +13,12 @@ import type { ChatType$Bound } from '../../../../../../../net/minecraft/network/
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { PlayerChatMessage } from '../../../../../../../net/minecraft/network/chat/PlayerChatMessage.d.ts'
 export class ClientReceiveMessageEvents extends Object {
-    static ALLOW_CHAT: Event<(param0: Component, param1: PlayerChatMessage, param2: GameProfile, param3: ChatType$Bound, param4: Instant) => kotlin.Boolean>;
-    static ALLOW_GAME: Event<(param0: Component, param1: boolean) => kotlin.Boolean>;
+    static ALLOW_CHAT: Event<(param0: Component, param1: PlayerChatMessage, param2: GameProfile, param3: ChatType$Bound, param4: Instant) => boolean>;
+    static ALLOW_GAME: Event<(param0: Component, param1: boolean) => boolean>;
     static CHAT: Event<(param0: Component, param1: PlayerChatMessage, param2: GameProfile, param3: ChatType$Bound, param4: Instant) => void>;
     static CHAT_CANCELED: Event<(param0: Component, param1: PlayerChatMessage, param2: GameProfile, param3: ChatType$Bound, param4: Instant) => void>;
     static GAME: Event<(param0: Component, param1: boolean) => void>;
     static GAME_CANCELED: Event<(param0: Component, param1: boolean) => void>;
-    static MODIFY_GAME: Event<(param0: Component, param1: boolean) => net.minecraft.network.chat.Component>;
+    static MODIFY_GAME: Event<(param0: Component, param1: boolean) => Component>;
     private constructor()
 }

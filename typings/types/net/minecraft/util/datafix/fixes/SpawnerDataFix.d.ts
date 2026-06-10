@@ -8,9 +8,9 @@ import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SpawnerDataFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
-    // private wrapEntityToSpawnData(newType: Type<T>, spawnData: Typed<Object>): Typed<T>;
-    // private wrapSpawnPotentialsToWeightedEntries(newType: Type<T>, spawnPotentials: Typed<Object>): Typed<T>;
+    // private wrapEntityToSpawnData<T extends Object | number | string | boolean>(newType: Type<T>, spawnData: Typed<Object>): Typed<T>;
+    // private wrapSpawnPotentialsToWeightedEntries<T extends Object | number | string | boolean>(newType: Type<T>, spawnPotentials: Typed<Object>): Typed<T>;
 }

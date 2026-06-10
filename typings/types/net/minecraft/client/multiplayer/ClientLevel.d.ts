@@ -94,7 +94,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     static NBT_ATTACHMENT_KEY: string;
     static NETHER: ResourceKey<Level>;
     static OVERWORLD: ResourceKey<Level>;
-    static RESOURCE_KEY_CODEC: Codec<Object>;
+    static RESOURCE_KEY_CODEC: Codec<ResourceKey<Level>>;
     static SHORT_PARTICLE_CLIP_RANGE: number;
     static get(paramarg0: ClientLevel): ChunkTracker;
     static getBiomeZoomSeed(paramarg0: ClientLevel): number;
@@ -124,7 +124,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     readonly skyFlashTime: number;
     // private tickRateManager: TickRateManager;
     // private tickingEntities: EntityTickList;
-    // private tintCaches: Map<(param0: Biome, param1: number, param2: number) => kotlin.Int, BlockTintCache>;
+    // private tintCaches: Map<(param0: Biome, param1: number, param2: number) => number, BlockTintCache>;
     readonly worldBorder: WorldBorder;
     addAlwaysVisibleParticle(particle: ParticleOptions, overrideLimiter: boolean, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     addAlwaysVisibleParticle(particle: ParticleOptions, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
@@ -136,7 +136,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     addParticle(particle: ParticleOptions, overrideLimiter: boolean, alwaysShow: boolean, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     addParticle(particle: ParticleOptions, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     animateTick(xt: number, yt: number, zt: number): void;
-    calculateBlockTint(pos: BlockPos, colorResolver: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
+    calculateBlockTint(pos: BlockPos, colorResolver: (param0: Biome, param1: number, param2: number) => number): number;
     // private calculateParticleLevel(alwaysShowParticles: boolean): ParticleStatus;
     cardinalLighting(): CardinalLighting;
     clearTintCaches(): void;
@@ -167,15 +167,15 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     getAllMapData(): Map<MapId, MapItemSavedData>;
     getBlockStatePredictionHandler(): BlockStatePredictionHandler;
     getBlockTicks(): LevelTickAccess<Block>;
-    getBlockTint(pos: BlockPos, resolver: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
+    getBlockTint(pos: BlockPos, resolver: (param0: Biome, param1: number, param2: number) => number): number;
     getChunkSource(): ClientChunkCache;
     getClientLeafTintColor(pos: BlockPos): number;
     getEntities(): LevelEntityGetter<Entity>;
     getEntities(except: Entity, bb: AABB): Entity[];
-    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[]): void;
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[], maxResults: number): void;
+    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean): T[];
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean, output: T[]): void;
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean, output: T[], maxResults: number): void;
     getEntity(uuid: UUID): Entity;
     getEntity(id: number): Entity;
     getEntityCount(): number;
@@ -243,7 +243,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     // private spawnFluidParticle(x1: number, x2: number, z1: number, z2: number, y: number, dripParticle: ParticleOptions): void;
     // private spawnParticle(pos: BlockPos, dripParticle: ParticleOptions, dripShape: VoxelShape, height: number): void;
     syncBlockState(pos: BlockPos, state: BlockState, playerPos: Vec3): void;
-    tick(haveTime: () => kotlin.Boolean): void;
+    tick(haveTime: () => boolean): void;
     tickEntities(): void;
     tickNonPassenger(entity: Entity): void;
     // private tickPassenger(vehicle: Entity, entity: Entity): void;

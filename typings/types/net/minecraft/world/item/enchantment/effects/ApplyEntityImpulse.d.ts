@@ -13,7 +13,7 @@ export class ApplyEntityImpulse extends Record implements EnchantmentEntityEffec
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<ApplyEntityImpulse>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(direction: Vec3, coordinateScale: Vec3, magnitude: LevelBasedValue)
     // private coordinateScale: Vec3;
     // private direction: Vec3;

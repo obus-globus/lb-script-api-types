@@ -12,10 +12,9 @@ export class OperationArgument extends Object implements ArgumentType<(param0: S
     static getOperation(paramcontext: CommandContext<CommandSourceStack>, paramname: string): (param0: ScoreAccess, param1: ScoreAccess) => void;
     static operation(): OperationArgument;
     constructor()
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): (param0: ScoreAccess, param1: ScoreAccess) => void;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): (param0: ScoreAccess, param1: ScoreAccess) => void;
+    parse(reader: StringReader): (param0: ScoreAccess, param1: ScoreAccess) => void;
 }

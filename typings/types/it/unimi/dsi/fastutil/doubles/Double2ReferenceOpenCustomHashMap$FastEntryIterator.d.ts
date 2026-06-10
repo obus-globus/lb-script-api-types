@@ -3,10 +3,11 @@ import type { Double2ReferenceOpenCustomHashMap$MapEntry } from '../../../../../
 import type { Double2ReferenceOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ReferenceOpenCustomHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2ReferenceOpenCustomHashMap$FastEntryIterator extends Double2ReferenceOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Double2ReferenceMap$Entry<V>> {
     private constructor(null_: Double2ReferenceOpenCustomHashMap$FastEntryIterator)
     // private entry: Double2ReferenceOpenCustomHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Double2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    next(): Double2ReferenceOpenCustomHashMap$MapEntry;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Double2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    next<V extends Object | number | string | boolean>(): Double2ReferenceOpenCustomHashMap$MapEntry;
     skip(arg0: number): number;
 }

@@ -1,15 +1,16 @@
 import type { Type } from '../../../../../../../../java/lang/reflect/Type.d.ts'
 import type { ReflectJavaType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/ReflectJavaType.d.ts'
 import type { ReflectJavaType$Factory } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/runtime/structure/ReflectJavaType$Factory.d.ts'
+import type { JavaAnnotation } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaAnnotation.d.ts'
 import type { JavaArrayType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/structure/JavaArrayType.d.ts'
 export class ReflectJavaArrayType extends ReflectJavaType implements JavaArrayType {
     static Factory: ReflectJavaType$Factory;
     constructor(arg0: Type)
-    readonly annotations: E[];
+    readonly annotations: JavaAnnotation[];
     readonly componentType: ReflectJavaType;
     // private isDeprecatedInJavaDoc: boolean;
     // private reflectType: Type;
-    getAnnotations(): E[];
+    getAnnotations(): JavaAnnotation[];
     getComponentType(): ReflectJavaType;
     getReflectType(): Type;
     isDeprecatedInJavaDoc(): boolean;

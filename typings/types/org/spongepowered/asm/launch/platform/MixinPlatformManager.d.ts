@@ -18,7 +18,7 @@ export class MixinPlatformManager extends Object {
     addTokenProvider(arg0: string): void;
     // private createContainerFor(arg0: IContainerHandle): MixinContainer;
     getLaunchTarget(): string;
-    getPhaseProviderClasses(): E[];
+    getPhaseProviderClasses(): string[];
     init(): void;
     inject(): void;
     prepare(arg0: CommandLineOptions): void;

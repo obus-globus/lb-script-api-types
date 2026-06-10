@@ -12,5 +12,5 @@ export class ListCodec$DecoderState<T extends Object | number | string | boolean
     // private result: DataResult<Unit>;
     // private totalCount: number;
     accept(arg0: T): void;
-    build(): DataResult<Pair<E[], T>>;
+    build<E extends Object | number | string | boolean>(): DataResult<Pair<E[], T>>;
 }

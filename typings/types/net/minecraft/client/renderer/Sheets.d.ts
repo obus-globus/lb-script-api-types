@@ -36,7 +36,7 @@ export class Sheets extends Object {
     static DECORATED_POT_MAPPER: SpriteMapper;
     static DECORATED_POT_SHEET: Identifier;
     static DECORATED_POT_SIDE: SpriteId;
-    static DECORATED_POT_SPRITES: Map<Object | null, SpriteId>;
+    static DECORATED_POT_SPRITES: Map<ResourceKey<DecoratedPotPattern>, SpriteId>;
     static DEFAULT_SHULKER_TEXTURE_LOCATION: SpriteId;
     static ENDER_CHEST_LOCATION: SpriteId;
     static GUI_SHEET: Identifier;

@@ -115,9 +115,9 @@ export class OreFeature extends Feature<OreConfiguration> {
     static WATERLOGGED_VEGETATION_PATCH: Feature<VegetationPatchConfiguration>;
     static WEEPING_VINES: Feature<NoneFeatureConfiguration>;
     static canPlaceOre(paramorePosState: BlockState, paramblockGetter: (param0: BlockPos) => BlockState, paramrandom: RandomSource, paramconfig: OreConfiguration, paramtargetState: OreConfiguration$TargetBlockState, paramorePos: BlockPos$MutableBlockPos): boolean;
-    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => boolean): boolean;
     static isAdjacentToAir(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos): boolean;
-    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => kotlin.Boolean;
+    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => boolean;
     constructor(codec: Codec<OreConfiguration>)
     doPlace(level: WorldGenLevel, random: RandomSource, config: OreConfiguration, x0: number, x1: number, z0: number, z1: number, y0: number, y1: number, xStart: number, yStart: number, zStart: number, sizeXZ: number, sizeY: number): boolean;
     place(context: FeaturePlaceContext<OreConfiguration>): boolean;

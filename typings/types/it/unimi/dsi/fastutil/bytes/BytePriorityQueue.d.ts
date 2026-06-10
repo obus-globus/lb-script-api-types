@@ -3,14 +3,13 @@ import type { ByteComparator } from '../../../../../it/unimi/dsi/fastutil/bytes/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface BytePriorityQueue extends PriorityQueue<number>, Object {
     changed(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueByte(): number;
     enqueue(arg0: number): void;
     first(): number;
     firstByte(): number;
     isEmpty(): boolean;
-    last<K extends Object | number | string | boolean>(): K;
     last(): number;
     lastByte(): number;
 }

@@ -6,7 +6,7 @@ export class IntRangesBuffer$IntRangesBufferRangesIterator extends Object implem
     private constructor(buf: (Object | null)[])
     // private buf: (Object | null)[];
     // private i: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Range) => void): void;
     hasNext(): boolean;
     next(): Range;
 }

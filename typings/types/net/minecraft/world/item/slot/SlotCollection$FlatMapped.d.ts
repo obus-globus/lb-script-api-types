@@ -8,15 +8,15 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 import type { SlotCollection } from '../../../../../net/minecraft/world/item/slot/SlotCollection.d.ts'
 export class SlotCollection$FlatMapped extends Record implements SlotCollection {
     static EMPTY: SlotCollection;
-    static concat(paramterms: (Object | null)[]): SlotCollection;
+    static concat(paramterms: SlotCollection[]): SlotCollection;
     static concat(paramfirst: SlotCollection, paramsecond: SlotCollection): SlotCollection;
-    static of(paramslots: E[]): SlotCollection;
+    static of(paramslots: SlotAccess[]): SlotCollection;
     static of(paramslotAccess: SlotAccess): SlotCollection;
     constructor(slots: SlotCollection, mapper: (param0: ItemStack) => SlotCollection)
     // private mapper: (param0: ItemStack) => SlotCollection;
     // private slots: SlotCollection;
     equals(o: Object | null): boolean;
-    filter(predicate: (param0: ItemStack) => kotlin.Boolean): SlotCollection;
+    filter(predicate: (param0: ItemStack) => boolean): SlotCollection;
     flatMap(mapper: (param0: ItemStack) => SlotCollection): SlotCollection;
     hashCode(): number;
     itemCopies(): Stream<ItemStack>;

@@ -11,7 +11,7 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
 export class MultiPartModel$Unbaked extends Object implements BlockStateModel$UnbakedRoot {
     constructor(selectors: MultiPartModel$Selector<BlockStateModel$Unbaked>[])
     // private selectors: MultiPartModel$Selector<BlockStateModel$Unbaked>[];
-    // private sharedStateKey: (param0: MultiPartModel$SharedBakedState) => unknown;
+    // private sharedStateKey: (param0: ModelBaker) => MultiPartModel$SharedBakedState;
     bake(blockState: BlockState, modelBakery: ModelBaker): BlockStateModel;
     resolveDependencies(resolver: ResolvableModel$Resolver): void;
     visualEqualityGroup(blockState: BlockState): Object;

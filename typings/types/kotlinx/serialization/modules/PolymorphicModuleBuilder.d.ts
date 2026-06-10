@@ -15,7 +15,7 @@ export class PolymorphicModuleBuilder<Base extends Object | number | string | bo
     buildTo(builder: SerializersModuleBuilder): void;
     default(defaultSerializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
     defaultDeserializer(defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
-    subclass(subclass: KClass<T>, serializer: KSerializer<T>): void;
+    subclass<T extends Base>(subclass: KClass<T>, serializer: KSerializer<T>): void;
     subclassesOfSealed(): void;
-    subclassesOfSealed(serializer: KSerializer<T>): void;
+    subclassesOfSealed<T extends Base>(serializer: KSerializer<T>): void;
 }

@@ -10,6 +10,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { DamageSource } from '../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
@@ -27,9 +28,9 @@ import type { FeatureElement } from '../../../../net/minecraft/world/flag/Featur
 import type { FeatureFlag } from '../../../../net/minecraft/world/flag/FeatureFlag.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class MobEffect extends Object implements FabricMobEffect, FeatureElement {
-    static CODEC: Codec<Object>;
-    static FILTERED_REGISTRIES: (Object | null)[];
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static CODEC: Codec<Holder<MobEffect>>;
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<MobEffect>>;
     constructor(category: MobEffectCategory, color: number)
     constructor(category: MobEffectCategory, color: number, particleOptions: ParticleOptions)
     // private attributeModifiers: Map<Holder<Attribute>, MobEffect$AttributeTemplate>;

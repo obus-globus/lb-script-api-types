@@ -1,6 +1,8 @@
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { KCallable } from '../../../../../kotlin/reflect/KCallable.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
+import type { KFunction } from '../../../../../kotlin/reflect/KFunction.d.ts'
 import type { KType } from '../../../../../kotlin/reflect/KType.d.ts'
 import type { KTypeParameter } from '../../../../../kotlin/reflect/KTypeParameter.d.ts'
 import type { KVisibility } from '../../../../../kotlin/reflect/KVisibility.d.ts'
@@ -9,7 +11,7 @@ import type { TypeConstructorMarker } from '../../../../../kotlin/reflect/jvm/in
 export class NothingKClass extends Object implements KClass<void>, KTypeParameterOwnerImpl, TypeConstructorMarker {
     static INSTANCE: NothingKClass;
     readonly annotations: Annotation[];
-    readonly constructors: E[];
+    readonly constructors: KFunction<void>[];
     /*not mapped: */ isAbstract(): boolean;
     /*not mapped: */ isCompanion(): boolean;
     /*not mapped: */ isData(): boolean;
@@ -19,8 +21,8 @@ export class NothingKClass extends Object implements KClass<void>, KTypeParamete
     /*not mapped: */ isOpen(): boolean;
     /*not mapped: */ isSealed(): boolean;
     /*not mapped: */ isValue(): boolean;
-    readonly members: E[];
-    readonly nestedClasses: E[];
+    readonly members: KCallable<Object>[];
+    readonly nestedClasses: KClass<Object>[];
     readonly objectInstance: void | null;
     readonly qualifiedName: string;
     readonly sealedSubclasses: KClass<void>[];

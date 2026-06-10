@@ -7,10 +7,10 @@ import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface TypeVariable<D extends GenericDeclaration> extends AnnotatedElement, Type, Object{
     getAnnotatedBounds(): AnnotatedType[];
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getBounds(): Type[];
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
-    getDeclaredAnnotationsByType(arg0: Class<T>): T[];
+    getDeclaredAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getGenericDeclaration(): D;
     getName(): string;
     getTypeName(): string;

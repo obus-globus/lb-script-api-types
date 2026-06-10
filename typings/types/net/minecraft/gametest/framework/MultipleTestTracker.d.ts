@@ -4,16 +4,16 @@ import type { GameTestInfo } from '../../../../net/minecraft/gametest/framework/
 import type { GameTestListener } from '../../../../net/minecraft/gametest/framework/GameTestListener.d.ts'
 export class MultipleTestTracker extends Object {
     constructor()
-    constructor(tests: E[])
-    // private listeners: E[];
-    // private tests: E[];
+    constructor(tests: GameTestInfo[])
+    // private listeners: GameTestListener[];
+    // private tests: GameTestInfo[];
     addFailureListener(listener: (param0: GameTestInfo) => void): void;
     addListener(listener: GameTestListener): void;
     addTestToTrack(testInfo: GameTestInfo): void;
     getDoneCount(): number;
-    getFailedOptional(): E[];
+    getFailedOptional(): GameTestInfo[];
     getFailedOptionalCount(): number;
-    getFailedRequired(): E[];
+    getFailedRequired(): GameTestInfo[];
     getFailedRequiredCount(): number;
     getProgressBar(): string;
     getTotalCount(): number;

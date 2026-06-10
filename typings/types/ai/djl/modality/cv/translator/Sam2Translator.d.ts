@@ -9,7 +9,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Sam2Translator extends Object implements NoBatchifyTranslator<Sam2Translator$Sam2Input, DetectedObjects> {
     static builder(): Sam2Translator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): Sam2Translator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): Sam2Translator$Builder;
     constructor(arg0: Sam2Translator$Builder)
     // private encodeMethod: string;
     // private encoderPath: string;

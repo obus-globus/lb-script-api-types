@@ -7,12 +7,12 @@ import type { MetricCategory } from '../../../../../net/minecraft/util/profiling
 import type { MetricSampler } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler.d.ts'
 import type { MetricSampler$ThresholdTest } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$ThresholdTest.d.ts'
 export class MetricSampler$MetricSamplerBuilder<T extends Object | number | string | boolean> extends Object {
-    constructor(name: string, category: MetricCategory, sampler: (param0: T) => kotlin.Double, context: T)
+    constructor(name: string, category: MetricCategory, sampler: (param0: T) => number, context: T)
     // private beforeTick: () => void;
     // private category: MetricCategory;
     // private context: T;
     // private name: string;
-    // private sampler: () => kotlin.Double;
+    // private sampler: () => number;
     // private thresholdTest: MetricSampler$ThresholdTest;
     build(): MetricSampler;
     withBeforeTick(beforeTick: (param0: T) => void): MetricSampler$MetricSamplerBuilder<T>;

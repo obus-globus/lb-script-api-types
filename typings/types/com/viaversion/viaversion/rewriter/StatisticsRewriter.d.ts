@@ -7,6 +7,6 @@ export class StatisticsRewriter<C extends ClientboundPacketType> extends Object 
     constructor(arg0: Protocol<C, Object, Object, Object>)
     // private protocol: Protocol<C, Object, Object, Object>;
     getRegistryTypeForStatistic(arg0: number): RegistryType;
-    getRewriter(arg0: RegistryType): (param0: number) => kotlin.Int;
+    getRewriter(arg0: RegistryType): (param0: number) => number;
     register(arg0: C): void;
 }

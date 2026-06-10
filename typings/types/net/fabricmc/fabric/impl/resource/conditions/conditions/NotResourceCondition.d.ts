@@ -9,7 +9,7 @@ export class NotResourceCondition extends Record implements ResourceCondition {
     static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<NotResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<ResourceCondition[]>;
     constructor(condition: ResourceCondition)
     // private condition: ResourceCondition;
     condition(): ResourceCondition;

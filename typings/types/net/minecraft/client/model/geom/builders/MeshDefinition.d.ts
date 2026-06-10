@@ -7,7 +7,7 @@ export class MeshDefinition extends Object {
     constructor()
     private constructor(root: PartDefinition)
     readonly root: PartDefinition;
-    apply(transformer: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition): MeshDefinition;
+    apply(transformer: (param0: MeshDefinition) => MeshDefinition): MeshDefinition;
     getRoot(): PartDefinition;
-    transformed(function_: (param0: PartPose) => unknown): MeshDefinition;
+    transformed(function_: (param0: PartPose) => Object | null): MeshDefinition;
 }

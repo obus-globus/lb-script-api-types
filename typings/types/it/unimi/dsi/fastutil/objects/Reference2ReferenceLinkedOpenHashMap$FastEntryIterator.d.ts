@@ -8,10 +8,10 @@ export class Reference2ReferenceLinkedOpenHashMap$FastEntryIterator extends Refe
     constructor(null_: Reference2ReferenceLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Reference2ReferenceLinkedOpenHashMap$FastEntryIterator)
     // private entry: Reference2ReferenceLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Reference2ReferenceLinkedOpenHashMap$MapEntry;
-    previous(): Reference2ReferenceLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Reference2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Reference2ReferenceMap$Entry<K, V>): void;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Reference2ReferenceLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Reference2ReferenceLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Reference2ReferenceMap$Entry<K, V>): void;
 }

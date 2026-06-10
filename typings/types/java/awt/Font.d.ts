@@ -44,7 +44,7 @@ export class Font extends Object implements Serializable {
     static decode(paramarg0: string): Font;
     static getFont(paramarg0: string): Font;
     static getFont(paramarg0: string, paramarg1: Font): Font;
-    static getFont(paramarg0: Map<Object | null, Object | null>): Font;
+    static getFont(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>): Font;
     static textRequiresLayout(paramarg0: string[], paramarg1: number, paramarg2: number): boolean;
     constructor(arg0: Font)
     private constructor(arg0: File, arg1: number, arg2: boolean)

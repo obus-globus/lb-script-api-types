@@ -6,17 +6,17 @@ import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Multisets extends Object {
-    static containsOccurrences(paramsuperMultiset: (Object | null)[], paramsubMultiset: (Object | null)[]): boolean;
+    static containsOccurrences(paramsuperMultiset: Object[], paramsubMultiset: Object[]): boolean;
     static copyHighestCountFirst(parammultiset: (Object | null)[]): (Object | null)[];
-    static difference(parammultiset1: (Object | null)[], parammultiset2: (Object | null)[]): (Object | null)[];
-    static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object | null) => kotlin.Boolean): (Object | null)[];
+    static difference(parammultiset1: (Object | null)[], parammultiset2: Object[]): (Object | null)[];
+    static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object) => boolean): (Object | null)[];
     static immutableEntry(parame: Object | null, paramn: number): Multiset$Entry<Object>;
-    static intersection(parammultiset1: (Object | null)[], parammultiset2: (Object | null)[]): (Object | null)[];
-    static removeOccurrences(parammultisetToModify: (Object | null)[], paramoccurrencesToRemove: (Object | null)[]): boolean;
-    static removeOccurrences(parammultisetToModify: (Object | null)[], paramoccurrencesToRemove: (Object | null)[]): boolean;
-    static retainOccurrences(parammultisetToModify: (Object | null)[], parammultisetToRetain: (Object | null)[]): boolean;
+    static intersection(parammultiset1: (Object | null)[], parammultiset2: Object[]): (Object | null)[];
+    static removeOccurrences(parammultisetToModify: Object[], paramoccurrencesToRemove: Object[]): boolean;
+    static removeOccurrences(parammultisetToModify: Object[], paramoccurrencesToRemove: Object[]): boolean;
+    static retainOccurrences(parammultisetToModify: Object[], parammultisetToRetain: Object[]): boolean;
     static sum(parammultiset1: (Object | null)[], parammultiset2: (Object | null)[]): (Object | null)[];
-    static toMultiset(paramelementFunction: (param0: Object | null) => Object | null, paramcountFunction: (param0: Object | null) => kotlin.Int, parammultisetSupplier: () => Object | null): Collector<Object, Object, Object>;
+    static toMultiset(paramelementFunction: (param0: Object) => Object | null, paramcountFunction: (param0: Object) => number, parammultisetSupplier: () => Object | null): Collector<Object, Object, Object>;
     static union(parammultiset1: (Object | null)[], parammultiset2: (Object | null)[]): (Object | null)[];
     static unmodifiableMultiset(parammultiset: (Object | null)[]): (Object | null)[];
     static unmodifiableMultiset(parammultiset: (Object | null)[]): (Object | null)[];

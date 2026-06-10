@@ -5,14 +5,14 @@ export class EfficiencyAttributeStorage$EnchantAttributeModifier extends Record 
     // private attributeId: number;
     // private baseValue: number;
     // private key: string;
-    // private modifierFunction: (param0: number) => kotlin.Double;
+    // private modifierFunction: (param0: number) => number;
     // private operation: number;
     attributeId(): number;
     baseValue(): number;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     key(): string;
-    modifierFunction(): (param0: number) => kotlin.Double;
+    modifierFunction(): (param0: number) => number;
     operation(): number;
     toString(): string;
 }

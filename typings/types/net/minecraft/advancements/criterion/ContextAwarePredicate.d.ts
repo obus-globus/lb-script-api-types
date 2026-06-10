@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { DataResult } from '../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
@@ -12,15 +13,15 @@ import type { LootItemCondition } from '../../../../net/minecraft/world/level/st
 export class ContextAwarePredicate extends Object implements Validatable {
     static CODEC: Codec<ContextAwarePredicate>;
     static create(paramconditions: (Object | null)[]): ContextAwarePredicate;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
-    static validate(paramcontext: ValidationContext, paramname: string, paramlist: (Object | null)[]): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Object>): void;
+    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
-    static validate(paramcontext: ValidationContext, paramlist: (Object | null)[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Object>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
+    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
+    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
     constructor(conditions: LootItemCondition[])
-    // private compositePredicates: (param0: LootContext) => kotlin.Boolean;
+    // private compositePredicates: (param0: LootContext) => boolean;
     // private conditions: LootItemCondition[];
     matches(context: LootContext): boolean;
     validate(context: ValidationContext): void;

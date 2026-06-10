@@ -6,11 +6,11 @@ import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d
 export class ClientCommonPacketListenerImpl$DeferredPacket extends Record {
     // private expirationTime: number;
     // private packet: Packet<ServerboundPacketListener>;
-    // private sendCondition: () => kotlin.Boolean;
+    // private sendCondition: () => boolean;
     equals(o: Object | null): boolean;
     expirationTime(): number;
     hashCode(): number;
     packet(): Packet<ServerboundPacketListener>;
-    sendCondition(): () => kotlin.Boolean;
+    sendCondition(): () => boolean;
     toString(): string;
 }

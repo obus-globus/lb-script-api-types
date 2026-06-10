@@ -3,8 +3,8 @@ import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/r
 import type { TruffleReadOnlyKeysArray } from '../../../../../../com/oracle/truffle/regex/util/TruffleReadOnlyKeysArray.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JavaFlags extends AbstractConstantKeysObject {
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     static isValidFlagChar(paramcandidateChar: number): boolean;
     static parseFlags(paramsource: string): JavaFlags;
     constructor(bits: number)

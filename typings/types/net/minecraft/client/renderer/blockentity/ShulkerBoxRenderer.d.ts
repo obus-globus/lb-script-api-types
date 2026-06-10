@@ -7,7 +7,6 @@ import type { SubmitNodeCollector } from '../../../../../net/minecraft/client/re
 import type { BlockEntityRenderer } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRenderer.d.ts'
 import type { BlockEntityRendererProvider$Context } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context.d.ts'
 import type { ShulkerBoxRenderer$ShulkerBoxModel } from '../../../../../net/minecraft/client/renderer/blockentity/ShulkerBoxRenderer$ShulkerBoxModel.d.ts'
-import type { BlockEntityRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/BlockEntityRenderState.d.ts'
 import type { ShulkerBoxRenderState } from '../../../../../net/minecraft/client/renderer/blockentity/state/ShulkerBoxRenderState.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { SpecialModelRenderer$BakingContext } from '../../../../../net/minecraft/client/renderer/special/SpecialModelRenderer$BakingContext.d.ts'
@@ -15,7 +14,6 @@ import type { CameraRenderState } from '../../../../../net/minecraft/client/rend
 import type { SpriteGetter } from '../../../../../net/minecraft/client/resources/model/sprite/SpriteGetter.d.ts'
 import type { SpriteId } from '../../../../../net/minecraft/client/resources/model/sprite/SpriteId.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
-import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class ShulkerBoxRenderer extends Object implements BlockEntityRenderer<(Object | null)[], ShulkerBoxRenderState> {
@@ -26,11 +24,10 @@ export class ShulkerBoxRenderer extends Object implements BlockEntityRenderer<(O
     // private model: ShulkerBoxRenderer$ShulkerBoxModel;
     // private sprites: SpriteGetter;
     createRenderState(): ShulkerBoxRenderState;
-    extractRenderState<T extends BlockEntity, S extends BlockEntityRenderState>(blockEntity: T, state: S, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     extractRenderState(blockEntity: (Object | null)[], state: ShulkerBoxRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getExtents(progress: number, output: (param0: Vector3fc) => void): void;
     getViewDistance(): number;
-    shouldRender<T extends BlockEntity>(blockEntity: T, cameraPosition: Vec3): boolean;
+    shouldRender(blockEntity: (Object | null)[], cameraPosition: Vec3): boolean;
     shouldRenderOffScreen(): boolean;
     submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, progress: number, breakProgress: ModelFeatureRenderer$CrumblingOverlay, sprite: SpriteId, outlineColor: number): void;
     // private submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, direction: Direction, progress: number, breakProgress: ModelFeatureRenderer$CrumblingOverlay, sprite: SpriteId, outlineColor: number): void;

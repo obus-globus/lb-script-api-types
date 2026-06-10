@@ -11,8 +11,8 @@ export class FloatSpliterators$SpliteratorWrapperWithComparator extends FloatSpl
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Spliterator<number>, arg1: (param0: number, param1: number) => kotlin.Int)
-    readonly comparator: (param0: number, param1: number) => kotlin.Int;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
+    constructor(arg0: Spliterator<number>, arg1: (param0: number, param1: number) => number)
+    readonly comparator: (param0: number, param1: number) => number;
+    getComparator(): (param0: number, param1: number) => number;
     trySplit(): FloatSpliterator;
 }

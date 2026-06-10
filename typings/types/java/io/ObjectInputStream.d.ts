@@ -4,6 +4,7 @@ import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { ObjectInput } from '../../java/io/ObjectInput.d.ts'
 import type { ObjectInputFilter } from '../../java/io/ObjectInputFilter.d.ts'
 import type { ObjectInputFilter$FilterInfo } from '../../java/io/ObjectInputFilter$FilterInfo.d.ts'
+import type { ObjectInputFilter$Status } from '../../java/io/ObjectInputFilter$Status.d.ts'
 import type { ObjectInputStream$BlockDataInputStream } from '../../java/io/ObjectInputStream$BlockDataInputStream.d.ts'
 import type { ObjectInputStream$GetField } from '../../java/io/ObjectInputStream$GetField.d.ts'
 import type { ObjectInputStream$HandleTable } from '../../java/io/ObjectInputStream$HandleTable.d.ts'
@@ -59,7 +60,7 @@ export class ObjectInputStream extends InputStream implements ObjectInput, Objec
     // private enableResolve: boolean;
     // private handles: ObjectInputStream$HandleTable;
     // private passHandle: number;
-    // private serialFilter: (param0: ObjectInputFilter$FilterInfo) => java.io.ObjectInputFilter.Status;
+    // private serialFilter: (param0: ObjectInputFilter$FilterInfo) => ObjectInputFilter$Status;
     // private streamFilterSet: boolean;
     // private totalObjectRefs: number;
     // private vlist: ObjectInputStream$ValidationList;
@@ -72,7 +73,7 @@ export class ObjectInputStream extends InputStream implements ObjectInput, Objec
     enableResolveObject(arg0: boolean): boolean;
     // private filterCheck(arg0: Class<Object>, arg1: number): void;
     // private freeze(): void;
-    getObjectInputFilter(): (param0: ObjectInputFilter$FilterInfo) => java.io.ObjectInputFilter.Status;
+    getObjectInputFilter(): (param0: ObjectInputFilter$FilterInfo) => ObjectInputFilter$Status;
     // private handleReset(): void;
     read(): number;
     read(arg0: number[]): number;
@@ -119,7 +120,7 @@ export class ObjectInputStream extends InputStream implements ObjectInput, Objec
     resolveClass(arg0: ObjectStreamClass): Class<Object>;
     resolveObject(arg0: Object): Object;
     resolveProxyClass(arg0: string[]): Class<Object>;
-    setObjectInputFilter(arg0: (param0: ObjectInputFilter$FilterInfo) => java.io.ObjectInputFilter.Status): void;
+    setObjectInputFilter(arg0: (param0: ObjectInputFilter$FilterInfo) => ObjectInputFilter$Status): void;
     skipBytes(arg0: number): number;
     // private skipCustomData(): void;
 }

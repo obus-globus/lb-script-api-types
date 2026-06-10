@@ -4,6 +4,6 @@ import type { BehaviorControl } from '../../../../../../net/minecraft/world/enti
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 import type { Villager } from '../../../../../../net/minecraft/world/entity/npc/villager/Villager.d.ts'
 export class StrollToPoiList extends Object {
-    static create(paramstrollToMemoryType: MemoryModuleType<Object>, paramspeedModifier: number, paramcloseEnoughDist: number, parammaxDistanceFromPoi: number, parammustBeCloseToMemoryType: MemoryModuleType<GlobalPos>): BehaviorControl<Villager>;
+    static create(paramstrollToMemoryType: MemoryModuleType<GlobalPos[]>, paramspeedModifier: number, paramcloseEnoughDist: number, parammaxDistanceFromPoi: number, parammustBeCloseToMemoryType: MemoryModuleType<GlobalPos>): BehaviorControl<Villager>;
     constructor()
 }

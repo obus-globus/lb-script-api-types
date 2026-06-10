@@ -4,15 +4,15 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PermissionCheck } from '../../../../net/minecraft/server/permissions/PermissionCheck.d.ts'
 import type { PermissionSetSupplier } from '../../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
 export class PermissionProviderCheck<T extends PermissionSetSupplier> extends Record implements Predicate<T> {
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(test: PermissionCheck)
     // private test: PermissionCheck;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: T) => boolean): (param0: T) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: T) => boolean;
+    or(arg0: (param0: T) => boolean): (param0: T) => boolean;
     test(): PermissionCheck;
     test(t: T): boolean;
     toString(): string;

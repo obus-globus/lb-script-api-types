@@ -27,7 +27,7 @@ export class LockFreeTaskQueueCore<E extends Object | number | string | boolean>
     close(): boolean;
     // private fillPlaceholder(index: number, element: E): LockFreeTaskQueueCore<E> | null;
     isClosed(): boolean;
-    map(transform: (param0: E) => R): R[];
+    map<R extends Object | number | string | boolean>(transform: (param0: E) => R): R[];
     // private markFrozen(): number;
     next(): LockFreeTaskQueueCore<E>;
     removeFirstOrNull(): Object | null;

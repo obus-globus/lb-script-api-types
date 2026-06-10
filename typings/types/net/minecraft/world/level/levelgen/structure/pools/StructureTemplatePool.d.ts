@@ -8,7 +8,7 @@ import type { StructurePoolElement } from '../../../../../../../net/minecraft/wo
 import type { StructureTemplatePool$Projection } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection.d.ts'
 import type { StructureTemplateManager } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager.d.ts'
 export class StructureTemplatePool extends Object {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<StructureTemplatePool>>;
     static DIRECT_CODEC: Codec<StructureTemplatePool>;
     constructor(fallback: Holder<StructureTemplatePool>, templates: Pair<(param0: StructureTemplatePool$Projection) => StructurePoolElement, number>[], projection: StructureTemplatePool$Projection)
     constructor(fallback: Holder<StructureTemplatePool>, templates: Pair<StructurePoolElement, number>[])

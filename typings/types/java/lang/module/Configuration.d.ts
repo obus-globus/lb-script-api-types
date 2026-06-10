@@ -7,8 +7,8 @@ import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Configuration extends Object {
     static empty(): Configuration;
-    static resolve(paramarg0: ModuleFinder, paramarg1: Configuration[], paramarg2: ModuleFinder, paramarg3: E[]): Configuration;
-    static resolveAndBind(paramarg0: ModuleFinder, paramarg1: Configuration[], paramarg2: ModuleFinder, paramarg3: E[]): Configuration;
+    static resolve(paramarg0: ModuleFinder, paramarg1: Configuration[], paramarg2: ModuleFinder, paramarg3: string[]): Configuration;
+    static resolveAndBind(paramarg0: ModuleFinder, paramarg1: Configuration[], paramarg2: ModuleFinder, paramarg3: string[]): Configuration;
     private constructor()
     constructor(arg0: ModuleFinder, arg1: { [key: string]: string[] })
     private constructor(arg0: Configuration[], arg1: Resolver)
@@ -24,8 +24,8 @@ export class Configuration extends Object {
     modules(): ResolvedModule[];
     parents(): Configuration[];
     reads(arg0: ResolvedModule): ResolvedModule[];
-    resolve(arg0: ModuleFinder, arg1: ModuleFinder, arg2: E[]): Configuration;
-    resolveAndBind(arg0: ModuleFinder, arg1: ModuleFinder, arg2: E[]): Configuration;
+    resolve(arg0: ModuleFinder, arg1: ModuleFinder, arg2: string[]): Configuration;
+    resolveAndBind(arg0: ModuleFinder, arg1: ModuleFinder, arg2: string[]): Configuration;
     targetPlatform(): string;
     toString(): string;
 }

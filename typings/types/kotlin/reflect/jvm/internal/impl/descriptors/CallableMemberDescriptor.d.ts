@@ -9,6 +9,6 @@ export interface CallableMemberDescriptor extends Object, CallableDescriptor, Me
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): CallableMemberDescriptor;
     getKind(): CallableMemberDescriptor$Kind;
     getOriginal(): CallableMemberDescriptor;
-    getOverriddenDescriptors(): E[];
-    setOverriddenDescriptors(arg0: E[]): void;
+    getOverriddenDescriptors(): CallableMemberDescriptor[];
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
 }

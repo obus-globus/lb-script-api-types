@@ -3,6 +3,7 @@ import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
 import type { JavaToKotlinClassMapper } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JavaToKotlinClassMapper.d.ts'
 import type { JvmBuiltIns$Settings } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JvmBuiltIns$Settings.d.ts'
 import type { JvmBuiltInsCustomizer$JDKMemberStatus } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/jvm/JvmBuiltInsCustomizer$JDKMemberStatus.d.ts'
+import type { ClassConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ConstructorDescriptor.d.ts'
 import type { FunctionDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/FunctionDescriptor.d.ts'
@@ -34,16 +35,16 @@ export class JvmBuiltInsCustomizer extends Object implements AdditionalClassPart
     // private settings$delegate: NotNullLazyValue<Object>;
     // private createCloneForArray(arg0: DeserializedClassDescriptor, arg1: SimpleFunctionDescriptor): SimpleFunctionDescriptor;
     // private createMockJavaIoSerializableType(arg0: StorageManager): KotlinType;
-    // private getAdditionalFunctions(arg0: ClassDescriptor, arg1: (param0: MemberScope) => E[]): E[];
+    // private getAdditionalFunctions(arg0: ClassDescriptor, arg1: (param0: MemberScope) => SimpleFunctionDescriptor[]): SimpleFunctionDescriptor[];
     // private getCloneableType(): SimpleType;
-    getConstructors(arg0: ClassDescriptor): E[];
-    getFunctions(arg0: Name, arg1: ClassDescriptor): E[];
+    getConstructors(arg0: ClassDescriptor): ClassConstructorDescriptor[];
+    getFunctions(arg0: Name, arg1: ClassDescriptor): SimpleFunctionDescriptor[];
     getFunctionsNames(arg0: ClassDescriptor): Name[];
     // private getJavaAnalogue(arg0: ClassDescriptor): LazyJavaClassDescriptor;
     // private getJdkMethodStatus(arg0: FunctionDescriptor): JvmBuiltInsCustomizer$JDKMemberStatus;
     // private getNotConsideredDeprecation(): AnnotationDescriptor[];
     // private getSettings(): JvmBuiltIns$Settings;
-    getSupertypes(arg0: ClassDescriptor): E[];
+    getSupertypes(arg0: ClassDescriptor): KotlinType[];
     isFunctionAvailable(arg0: ClassDescriptor, arg1: SimpleFunctionDescriptor): boolean;
     // private isMutabilityViolation(arg0: SimpleFunctionDescriptor, arg1: boolean): boolean;
     // private isTrivialCopyConstructorFor(arg0: ConstructorDescriptor, arg1: ClassDescriptor): boolean;

@@ -2,6 +2,7 @@ import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.t
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { FloatProvider } from '../../../../../../net/minecraft/util/valueproviders/FloatProvider.d.ts'
+import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { VerticalAnchor } from '../../../../../../net/minecraft/world/level/levelgen/VerticalAnchor.d.ts'
 import type { CanyonCarverConfiguration$CanyonShapeConfiguration } from '../../../../../../net/minecraft/world/level/levelgen/carver/CanyonCarverConfiguration$CanyonShapeConfiguration.d.ts'
 import type { CarverConfiguration } from '../../../../../../net/minecraft/world/level/levelgen/carver/CarverConfiguration.d.ts'
@@ -14,7 +15,7 @@ export class CanyonCarverConfiguration extends CarverConfiguration {
     static CODEC: Codec<ProbabilityFeatureConfiguration>;
     static CODEC: MapCodec<CarverConfiguration>;
     static NONE: NoneFeatureConfiguration;
-    constructor(probability: number, y: HeightProvider, yScale: FloatProvider, lavaLevel: VerticalAnchor, debugSettings: CarverDebugSettings, replaceable: Holder<T>[], verticalRotation: FloatProvider, shape: CanyonCarverConfiguration$CanyonShapeConfiguration)
+    constructor(probability: number, y: HeightProvider, yScale: FloatProvider, lavaLevel: VerticalAnchor, debugSettings: CarverDebugSettings, replaceable: Holder<Block>[], verticalRotation: FloatProvider, shape: CanyonCarverConfiguration$CanyonShapeConfiguration)
     constructor(carver: CarverConfiguration, distanceFactor: FloatProvider, shape: CanyonCarverConfiguration$CanyonShapeConfiguration)
     shape: CanyonCarverConfiguration$CanyonShapeConfiguration;
     verticalRotation: FloatProvider;

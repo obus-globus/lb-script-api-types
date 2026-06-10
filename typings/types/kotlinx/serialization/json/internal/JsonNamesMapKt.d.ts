@@ -5,7 +5,7 @@ import type { JsonNamingStrategy } from '../../../../kotlinx/serialization/json/
 import type { DescriptorSchemaCache$Key } from '../../../../kotlinx/serialization/json/internal/DescriptorSchemaCache$Key.d.ts'
 export class JsonNamesMapKt extends Object {
     static deserializationNamesMap(paramarg0: Json, paramarg1: SerialDescriptor): { [key: string]: number };
-    static getJsonDeserializationNamesKey(): DescriptorSchemaCache$Key<Object>;
+    static getJsonDeserializationNamesKey(): DescriptorSchemaCache$Key<{ [key: string]: number }>;
     static getJsonElementName(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: number): string;
     static getJsonEncodedNames(paramarg0: SerialDescriptor, paramarg1: Json): string[];
     static getJsonNameIndex(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: string): number;
@@ -14,5 +14,5 @@ export class JsonNamesMapKt extends Object {
     static ignoreUnknownKeys(paramarg0: SerialDescriptor, paramarg1: Json): boolean;
     static namingStrategy(paramarg0: SerialDescriptor, paramarg1: Json): JsonNamingStrategy;
     static serializationNamesIndices(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: JsonNamingStrategy): (Object | null)[];
-    static tryCoerceValue(paramarg0: Json, paramarg1: SerialDescriptor, paramarg2: number, paramarg3: (param0: Object | null) => boolean, paramarg4: () => string, paramarg5: () => void): boolean;
+    static tryCoerceValue(paramarg0: Json, paramarg1: SerialDescriptor, paramarg2: number, paramarg3: (param0: Object) => boolean, paramarg4: () => string, paramarg5: () => void): boolean;
 }

@@ -10,7 +10,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class AllOf$LocationBasedEffects extends Record implements EnchantmentLocationBasedEffect {
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<AllOf$LocationBasedEffects>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentLocationBasedEffect>[]): MapCodec<EnchantmentLocationBasedEffect>;
     constructor(effects: EnchantmentLocationBasedEffect[])
     // private effects: EnchantmentLocationBasedEffect[];
     codec(): MapCodec<AllOf$LocationBasedEffects>;

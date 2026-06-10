@@ -11,8 +11,8 @@ import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Json extends Object {
     static array(paramvalues: (Object | null)[]): JsonArray;
-    static array(paramvalues: (Object | null)[]): JsonArray;
-    static array(paramvalues: Stream<Object>): JsonArray;
+    static array(paramvalues: JsonConvertible[]): JsonArray;
+    static array(paramvalues: Stream<JsonConvertible>): JsonArray;
     static array(paramarray: string[]): JsonValue;
     static array(paramarray: number[]): JsonValue;
     static array(paramarray: number[]): JsonValue;
@@ -22,9 +22,9 @@ export class Json extends Object {
     static prop(paramname: string, paramvalue: boolean): JsonObject$JsonObjectProperty;
     static prop(paramname: string, paramvalue: JsonConvertible): JsonObject$JsonObjectProperty;
     static prop(paramname: string, paramvalue: number): JsonObject$JsonObjectProperty;
-    static prop(paramname: string, paramvalue: (Object | null)[]): JsonObject$JsonObjectProperty;
+    static prop(paramname: string, paramvalue: JsonConvertible[]): JsonObject$JsonObjectProperty;
     static prop(paramname: string, paramvalue: string): JsonObject$JsonObjectProperty;
-    static prop(paramname: string, paramvalue: Stream<Object>): JsonObject$JsonObjectProperty;
+    static prop(paramname: string, paramvalue: Stream<JsonConvertible>): JsonObject$JsonObjectProperty;
     static prop(paramname: string, paramvalue: number): JsonObject$JsonObjectProperty;
     static val(paramval: boolean): JsonBool;
     static val(paramval: number): JsonInt;

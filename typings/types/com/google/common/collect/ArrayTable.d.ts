@@ -48,7 +48,7 @@ export class ArrayTable<R extends Object | number | string | boolean, C extends 
     set(rowIndex: number, columnIndex: number, value: V): V;
     size(): number;
     toArray(valueClass: Class<V>): V[][];
-    values(): E[];
+    values(): V[];
     valuesIterator(): Iterator<V>;
     valuesSpliterator(): Spliterator<V>;
 }

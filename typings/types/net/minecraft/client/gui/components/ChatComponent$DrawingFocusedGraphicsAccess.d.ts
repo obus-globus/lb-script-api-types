@@ -24,9 +24,9 @@ export class ChatComponent$DrawingFocusedGraphicsAccess extends Object implement
     // private parameters: ActiveTextCollector$Parameters;
     // private textRenderer: ActiveTextCollector;
     accept(style: Style): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: Style) => void): (param0: Style) => void;
     fill(x0: number, y0: number, x1: number, y1: number, color: number): void;
-    handleMessage(textTop: number, opacity: number, message: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): boolean;
+    handleMessage(textTop: number, opacity: number, message: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): boolean;
     handleTag(x0: number, y0: number, x1: number, y1: number, opacity: number, tag: GuiMessageTag): void;
     handleTagIcon(left: number, bottom: number, forceVisible: boolean, tag: GuiMessageTag, icon: GuiMessageTag$Icon): void;
     // private isMouseOver(left: number, top: number, right: number, bottom: number): boolean;

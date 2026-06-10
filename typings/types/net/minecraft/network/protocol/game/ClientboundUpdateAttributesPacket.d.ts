@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -7,10 +8,11 @@ import type { Packet } from '../../../../../net/minecraft/network/protocol/Packe
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 import type { ClientboundUpdateAttributesPacket$AttributeSnapshot } from '../../../../../net/minecraft/network/protocol/game/ClientboundUpdateAttributesPacket$AttributeSnapshot.d.ts'
+import type { AttributeInstance } from '../../../../../net/minecraft/world/entity/ai/attributes/AttributeInstance.d.ts'
 export class ClientboundUpdateAttributesPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAttributesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
-    constructor(entityId: number, values: E[])
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(entityId: number, values: AttributeInstance[])
     private constructor(entityId: number, attributes: ClientboundUpdateAttributesPacket$AttributeSnapshot[])
     // private attributes: ClientboundUpdateAttributesPacket$AttributeSnapshot[];
     readonly entityId: number;

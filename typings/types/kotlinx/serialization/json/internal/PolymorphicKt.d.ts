@@ -11,6 +11,6 @@ export class PolymorphicKt extends Object {
     static checkKind(paramarg0: SerialKind): void;
     static classDiscriminator(paramarg0: SerialDescriptor, paramarg1: Json): string;
     static decodeSerializableValuePolymorphic(paramarg0: JsonDecoder, paramarg1: DeserializationStrategy<Object>, paramarg2: () => string): Object | null;
-    static encodePolymorphically(paramarg0: JsonEncoder, paramarg1: SerializationStrategy<Object>, paramarg2: Object | null, paramarg3: (param0: Object | null, param1: Object | null) => void): void;
+    static encodePolymorphically(paramarg0: JsonEncoder, paramarg1: SerializationStrategy<Object>, paramarg2: Object | null, paramarg3: (param0: Object, param1: Object) => void): void;
     static throwJsonElementPolymorphicException(paramarg0: string, paramarg1: JsonElement): void;
 }

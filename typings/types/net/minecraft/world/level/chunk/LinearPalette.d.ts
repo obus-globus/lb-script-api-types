@@ -14,7 +14,7 @@ export class LinearPalette<T extends Object | number | string | boolean> extends
     getSerializedSize(globalMap: T[]): number;
     getSize(): number;
     idFor(value: T, resizeHandler: PaletteResize<T>): number;
-    maybeHas(predicate: (param0: T) => kotlin.Boolean): boolean;
+    maybeHas(predicate: (param0: T) => boolean): boolean;
     read(buffer: FriendlyByteBuf, globalMap: T[]): void;
     valueFor(index: number): T;
     write(buffer: FriendlyByteBuf, globalMap: T[]): void;

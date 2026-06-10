@@ -1,4 +1,5 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { ConstructorBuiltins$ConstructSetNode } from '../../../../../com/oracle/truffle/js/builtins/ConstructorBuiltins$ConstructSetNode.d.ts'
 import type { ConstructorBuiltinsFactory$ConstructSetNodeGen$ConstructSetFromIterableData } from '../../../../../com/oracle/truffle/js/builtins/ConstructorBuiltinsFactory$ConstructSetNodeGen$ConstructSetFromIterableData.d.ts'
@@ -7,11 +8,12 @@ import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/funct
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$ConstructSetNodeGen extends ConstructorBuiltins$ConstructSetNode {
     static ARGUMENTS: string;
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramisNewTargetCase: boolean, paramarguments: (Object | null)[]): ConstructorBuiltins$ConstructSetNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;

@@ -3,7 +3,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 export abstract class ShortIterator extends Object implements Iterator<number> {
     constructor()
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextShort(): number;
 }

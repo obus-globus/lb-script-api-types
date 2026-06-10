@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TypeHandler$SectionTypeProfile extends Object {
     private constructor(sourceSection: SourceSection)
     readonly sourceSection: SourceSection;
-    readonly types: E[];
+    readonly types: string[];
     getSourceSection(): SourceSection;
-    getTypes(): E[];
+    getTypes(): string[];
 }

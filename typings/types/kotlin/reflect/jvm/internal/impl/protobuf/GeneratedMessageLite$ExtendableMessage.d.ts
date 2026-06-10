@@ -14,8 +14,8 @@ import type { Internal$EnumLiteMap } from '../../../../../../kotlin/reflect/jvm/
 import type { MessageLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/MessageLite.d.ts'
 import type { WireFormat$FieldType } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/WireFormat$FieldType.d.ts'
 export abstract class GeneratedMessageLite$ExtendableMessage<MessageType extends GeneratedMessageLite$ExtendableMessage<MessageType>> extends GeneratedMessageLite implements GeneratedMessageLite$ExtendableMessageOrBuilder<MessageType> {
-    static newRepeatedGeneratedExtension(paramarg0: Object | null, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<Object>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<Object, Object>;
-    static newSingularGeneratedExtension(paramarg0: Object | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<Object>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<Object, Object>;
+    static newRepeatedGeneratedExtension(paramarg0: MessageLite | null, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<Object>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
+    static newSingularGeneratedExtension(paramarg0: MessageLite | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<Object>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
     constructor()
     constructor(arg0: GeneratedMessageLite$ExtendableBuilder<MessageType, Object>)
     // private extensions: FieldSet<GeneratedMessageLite$ExtensionDescriptor>;
@@ -23,8 +23,8 @@ export abstract class GeneratedMessageLite$ExtendableMessage<MessageType extends
     extensionsSerializedSize(): number;
     getExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): Type;
     getExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>, arg1: number): Type;
-    getExtensionCount(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>): number;
-    hasExtension(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): boolean;
+    getExtensionCount<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>): number;
+    hasExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): boolean;
     makeExtensionsImmutable(): void;
     newExtensionWriter(): GeneratedMessageLite$ExtendableMessage$ExtensionWriter;
     parseUnknownField(arg0: CodedInputStream, arg1: CodedOutputStream, arg2: ExtensionRegistryLite, arg3: number): boolean;

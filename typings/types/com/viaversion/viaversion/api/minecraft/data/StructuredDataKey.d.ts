@@ -1,12 +1,17 @@
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
+import type { EitherHolder } from '../../../../../../com/viaversion/viaversion/api/minecraft/EitherHolder.d.ts'
 import type { GameProfile } from '../../../../../../com/viaversion/viaversion/api/minecraft/GameProfile.d.ts'
+import type { Holder } from '../../../../../../com/viaversion/viaversion/api/minecraft/Holder.d.ts'
+import type { PaintingVariant } from '../../../../../../com/viaversion/viaversion/api/minecraft/PaintingVariant.d.ts'
 import type { ResolvableProfile } from '../../../../../../com/viaversion/viaversion/api/minecraft/ResolvableProfile.d.ts'
+import type { SoundEvent } from '../../../../../../com/viaversion/viaversion/api/minecraft/SoundEvent.d.ts'
 import type { StructuredDataKeys1_20_5 } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/version/StructuredDataKeys1_20_5.d.ts'
 import type { StructuredDataKeys1_21_11 } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/version/StructuredDataKeys1_21_11.d.ts'
 import type { StructuredDataKeys1_21_2 } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/version/StructuredDataKeys1_21_2.d.ts'
 import type { StructuredDataKeys1_21_5 } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/version/StructuredDataKeys1_21_5.d.ts'
 import type { AdventureModePredicate } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AdventureModePredicate.d.ts'
 import type { ArmorTrim } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/ArmorTrim.d.ts'
+import type { ArmorTrimMaterial } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/ArmorTrimMaterial.d.ts'
 import type { AttackRange } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AttackRange.d.ts'
 import type { AttributeModifiers1_20_5 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AttributeModifiers1_20_5.d.ts'
 import type { AttributeModifiers1_21 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AttributeModifiers1_21.d.ts'
@@ -29,8 +34,11 @@ import type { FireworkExplosion } from '../../../../../../com/viaversion/viavers
 import type { Fireworks } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/Fireworks.d.ts'
 import type { FoodProperties1_20_5 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/FoodProperties1_20_5.d.ts'
 import type { FoodProperties1_21_2 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/FoodProperties1_21_2.d.ts'
+import type { Instrument1_20_5 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/Instrument1_20_5.d.ts'
+import type { Instrument1_21_2 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/Instrument1_21_2.d.ts'
 import type { ItemModel } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/ItemModel.d.ts'
 import type { JukeboxPlayable } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/JukeboxPlayable.d.ts'
+import type { JukeboxPlayable$JukeboxSong } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/JukeboxPlayable$JukeboxSong.d.ts'
 import type { KineticWeapon } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/KineticWeapon.d.ts'
 import type { LockCode } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/LockCode.d.ts'
 import type { LodestoneTracker } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/LodestoneTracker.d.ts'
@@ -51,6 +59,7 @@ import type { Weapon } from '../../../../../../com/viaversion/viaversion/api/min
 import type { WritableBook } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/WritableBook.d.ts'
 import type { WrittenBook } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/WrittenBook.d.ts'
 import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
+import type { Either } from '../../../../../../com/viaversion/viaversion/util/Either.d.ts'
 import type { Key } from '../../../../../../com/viaversion/viaversion/util/Key.d.ts'
 import type { Unit } from '../../../../../../com/viaversion/viaversion/util/Unit.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
@@ -73,7 +82,7 @@ export class StructuredDataKey<T extends Object | number | string | boolean> ext
     static BLOCK_ENTITY_DATA1_20_5: StructuredDataKey<Map$Entry<string, Tag>[]>;
     static BLOCK_ENTITY_DATA1_21_9: StructuredDataKey<BlockEntityData>;
     static BLOCK_STATE: StructuredDataKey<BlockStateProperties>;
-    static BREAK_SOUND: StructuredDataKey<Object>;
+    static BREAK_SOUND: StructuredDataKey<Holder<SoundEvent>>;
     static BUCKET_ENTITY_DATA: StructuredDataKey<Map$Entry<string, Tag>[]>;
     static CAN_BREAK1_20_5: StructuredDataKey<AdventureModePredicate>;
     static CAN_PLACE_ON1_20_5: StructuredDataKey<AdventureModePredicate>;
@@ -81,7 +90,7 @@ export class StructuredDataKey<T extends Object | number | string | boolean> ext
     static CAT_SOUND_VARIANT: StructuredDataKey<number>;
     static CAT_VARIANT: StructuredDataKey<number>;
     static CHICKEN_SOUND_VARIANT: StructuredDataKey<number>;
-    static CHICKEN_VARIANT1_21_5: StructuredDataKey<Object>;
+    static CHICKEN_VARIANT1_21_5: StructuredDataKey<Either<number, string>>;
     static CHICKEN_VARIANT26_1: StructuredDataKey<number>;
     static CONSUMABLE1_21_2: StructuredDataKey<Consumable1_21_2>;
     static CONTAINER_LOOT: StructuredDataKey<Map$Entry<string, Tag>[]>;
@@ -123,16 +132,16 @@ export class StructuredDataKey<T extends Object | number | string | boolean> ext
     static HIDE_ADDITIONAL_TOOLTIP: StructuredDataKey<Unit>;
     static HIDE_TOOLTIP: StructuredDataKey<Unit>;
     static HORSE_VARIANT: StructuredDataKey<number>;
-    static INSTRUMENT1_20_5: StructuredDataKey<Object>;
-    static INSTRUMENT1_21_2: StructuredDataKey<Object>;
-    static INSTRUMENT1_21_5: StructuredDataKey<Object>;
-    static INSTRUMENT26_1: StructuredDataKey<Object>;
+    static INSTRUMENT1_20_5: StructuredDataKey<Holder<Instrument1_20_5>>;
+    static INSTRUMENT1_21_2: StructuredDataKey<Holder<Instrument1_21_2>>;
+    static INSTRUMENT1_21_5: StructuredDataKey<EitherHolder<Instrument1_21_2>>;
+    static INSTRUMENT26_1: StructuredDataKey<Holder<Instrument1_21_2>>;
     static INTANGIBLE_PROJECTILE: StructuredDataKey<Tag>;
     static ITEM_MODEL: StructuredDataKey<ItemModel>;
     static ITEM_NAME: StructuredDataKey<Tag>;
     static JUKEBOX_PLAYABLE1_21: StructuredDataKey<JukeboxPlayable>;
     static JUKEBOX_PLAYABLE1_21_5: StructuredDataKey<JukeboxPlayable>;
-    static JUKEBOX_PLAYABLE26_1: StructuredDataKey<Object>;
+    static JUKEBOX_PLAYABLE26_1: StructuredDataKey<Holder<JukeboxPlayable$JukeboxSong>>;
     static KINETIC_WEAPON: StructuredDataKey<KineticWeapon>;
     static LLAMA_VARIANT: StructuredDataKey<number>;
     static LOCK1_20_5: StructuredDataKey<Tag>;
@@ -149,7 +158,7 @@ export class StructuredDataKey<T extends Object | number | string | boolean> ext
     static MOOSHROOM_VARIANT: StructuredDataKey<number>;
     static NOTE_BLOCK_SOUND: StructuredDataKey<Key>;
     static OMINOUS_BOTTLE_AMPLIFIER: StructuredDataKey<number>;
-    static PAINTING_VARIANT: StructuredDataKey<Object>;
+    static PAINTING_VARIANT: StructuredDataKey<Holder<PaintingVariant>>;
     static PARROT_VARIANT: StructuredDataKey<number>;
     static PIERCING_WEAPON: StructuredDataKey<PiercingWeapon>;
     static PIG_SOUND_VARIANT: StructuredDataKey<number>;
@@ -163,7 +172,7 @@ export class StructuredDataKey<T extends Object | number | string | boolean> ext
     static PROVIDES_BANNER_PATTERNS1_21_5: StructuredDataKey<Key>;
     static PROVIDES_BANNER_PATTERNS26_1: StructuredDataKey<ProvidesBannerPatterns>;
     static PROVIDES_TRIM_MATERIAL1_21_5: StructuredDataKey<ProvidesTrimMaterial>;
-    static PROVIDES_TRIM_MATERIAL26_1: StructuredDataKey<Object>;
+    static PROVIDES_TRIM_MATERIAL26_1: StructuredDataKey<Holder<ArmorTrimMaterial>>;
     static RABBIT_VARIANT: StructuredDataKey<number>;
     static RARITY: StructuredDataKey<number>;
     static RECIPES: StructuredDataKey<Tag>;
@@ -206,7 +215,7 @@ export class StructuredDataKey<T extends Object | number | string | boolean> ext
     static WOLF_VARIANT: StructuredDataKey<number>;
     static WRITABLE_BOOK_CONTENT: StructuredDataKey<WritableBook>;
     static WRITTEN_BOOK_CONTENT: StructuredDataKey<WrittenBook>;
-    static ZOMBIE_NAUTILUS_VARIANT1_21_11: StructuredDataKey<Object>;
+    static ZOMBIE_NAUTILUS_VARIANT1_21_11: StructuredDataKey<Either<number, string>>;
     static ZOMBIE_NAUTILUS_VARIANT26_1: StructuredDataKey<number>;
     constructor(identifier: string, type: Type<T>)
     // private identifier: string;

@@ -20,7 +20,7 @@ export class ReflectiveTypeAdapterFactory extends Object implements TypeAdapterF
     // private fieldNamingPolicy: FieldNamingStrategy;
     // private jsonAdapterFactory: JsonAdapterAnnotationTypeAdapterFactory;
     // private reflectionFilters: ReflectionAccessFilter[];
-    create(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
     // private createBoundField(arg0: Gson, arg1: Field, arg2: Method, arg3: string, arg4: TypeToken<Object>, arg5: boolean, arg6: boolean): ReflectiveTypeAdapterFactory$BoundField;
     // private getBoundFields(arg0: Gson, arg1: TypeToken<Object>, arg2: Class<Object>, arg3: boolean, arg4: boolean): ReflectiveTypeAdapterFactory$FieldsData;
     // private getFieldNames(arg0: Field): string[];

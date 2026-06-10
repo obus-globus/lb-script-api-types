@@ -6,9 +6,9 @@ import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/f
 export abstract class AbstractConcurrentInitializer<T extends Object | number | string | boolean, E extends Exception> extends Object implements ConcurrentInitializer<T> {
     static NUL: () => Object | null;
     constructor()
-    constructor(arg0: () => Exception, arg1: (param0: T) => void)
+    constructor(arg0: () => T, arg1: (param0: T) => void)
     // private closer: (param0: T) => void;
-    // private initializer: () => Exception;
+    // private initializer: () => T;
     close(): void;
     getTypedException(arg0: Exception): E;
     initialize(): T;

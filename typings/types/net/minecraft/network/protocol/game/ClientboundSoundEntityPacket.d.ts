@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -12,7 +13,7 @@ import type { SoundSource } from '../../../../../net/minecraft/sounds/SoundSourc
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ClientboundSoundEntityPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSoundEntityPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(sound: Holder<SoundEvent>, source: SoundSource, sourceEntity: Entity, volume: number, pitch: number, seed: number)
     private constructor(input: RegistryFriendlyByteBuf)
     readonly id: number;

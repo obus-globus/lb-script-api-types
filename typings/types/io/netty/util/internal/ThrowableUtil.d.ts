@@ -8,6 +8,6 @@ export class ThrowableUtil extends Object {
     static getSuppressed(paramarg0: Throwable): (Object | null)[];
     static haveSuppressed(): boolean;
     static stackTraceToString(paramarg0: Throwable): string;
-    static unknownStackTrace(paramarg0: Object | null, paramarg1: Class<Object>, paramarg2: string): Object | null;
+    static unknownStackTrace(paramarg0: Throwable | null, paramarg1: Class<Object>, paramarg2: string): Throwable | null;
     private constructor()
 }

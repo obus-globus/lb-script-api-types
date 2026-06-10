@@ -6,7 +6,7 @@ import type { ModCandidateImpl } from '../../../../net/fabricmc/loader/impl/disc
 import type { LoaderModMetadata } from '../../../../net/fabricmc/loader/impl/metadata/LoaderModMetadata.d.ts'
 export class ModContainerImpl extends ModContainer {
     constructor(arg0: ModCandidateImpl)
-    // private childModIds: E[];
+    // private childModIds: string[];
     readonly codeSourcePaths: Path[][];
     readonly info: LoaderModMetadata;
     readonly origin: ModOrigin;
@@ -15,7 +15,7 @@ export class ModContainerImpl extends ModContainer {
     // private warnedClose: boolean;
     // private checkFsOpen(arg0: Path[][]): boolean;
     getCodeSourcePaths(): Path[][];
-    getContainedMods(): E[];
+    getContainedMods(): ModContainer_2[];
     getContainingMod(): Optional<ModContainer_2>;
     getInfo(): LoaderModMetadata;
     getMetadata(): LoaderModMetadata;

@@ -11,5 +11,5 @@ export class SystemPropertiesPropertySource extends Object implements PropertySo
     getNormalForm(tokens: CharSequence[]): CharSequence;
     getPriority(): number;
     getProperty(key: string): string;
-    getPropertyNames(): E[];
+    getPropertyNames(): string[];
 }

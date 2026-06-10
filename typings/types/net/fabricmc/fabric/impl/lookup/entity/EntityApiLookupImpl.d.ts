@@ -24,7 +24,7 @@ export class EntityApiLookupImpl<A extends Object | number | string | boolean, C
     getId(): Identifier;
     getProvider(arg0: EntityType<Object>): EntityApiLookup$EntityApiProvider<A, C>;
     registerFallback(arg0: EntityApiLookup$EntityApiProvider<A, C>): void;
-    registerForType(arg0: (param0: T, param1: C) => A, arg1: EntityType<T>): void;
+    registerForType<T extends Entity>(arg0: (param0: T, param1: C) => A, arg1: EntityType<T>): void;
     registerForTypes(arg0: EntityApiLookup$EntityApiProvider<A, C>, arg1: EntityType<Object>[]): void;
     registerSelf(arg0: EntityType<Object>[]): void;
 }

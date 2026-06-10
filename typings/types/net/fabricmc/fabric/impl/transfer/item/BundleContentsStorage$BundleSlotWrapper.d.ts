@@ -11,6 +11,6 @@ export class BundleContentsStorage$BundleSlotWrapper extends Object implements S
     getCapacity(): number;
     getResource(): ItemVariant;
     // private getStack(): ItemStack;
-    getUnderlyingView(): StorageView<T>;
+    getUnderlyingView(): StorageView<ItemVariant>;
     isResourceBlank(): boolean;
 }

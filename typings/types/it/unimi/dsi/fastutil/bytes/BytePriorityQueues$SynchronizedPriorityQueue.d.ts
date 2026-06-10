@@ -9,7 +9,7 @@ export class BytePriorityQueues$SynchronizedPriorityQueue extends Object impleme
     // private sync: Object;
     changed(): void;
     clear(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueByte(): number;
     enqueue(arg0: number): void;

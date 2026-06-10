@@ -5,7 +5,7 @@ import type { MeshDefinition } from '../../../../../../net/minecraft/client/mode
 import type { MeshTransformer } from '../../../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 import type { GuardianRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/GuardianRenderState.d.ts'
 export class GuardianModel extends EntityModel<GuardianRenderState> {
-    static ELDER_GUARDIAN_SCALE: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static ELDER_GUARDIAN_SCALE: (param0: MeshDefinition) => MeshDefinition;
     static MODEL_Y_OFFSET: number;
     static createBodyLayer(): LayerDefinition;
     static createElderGuardianLayer(): LayerDefinition;

@@ -5,10 +5,10 @@ import type { GlSampler } from '../../../../../net/irisshaders/iris/gl/sampler/G
 import type { ValueUpdateNotifier } from '../../../../../net/irisshaders/iris/gl/state/ValueUpdateNotifier.d.ts'
 import type { TextureType } from '../../../../../net/irisshaders/iris/gl/texture/TextureType.d.ts'
 export class SamplerBinding extends Object {
-    constructor(arg0: TextureType, arg1: number, arg2: () => kotlin.Int, arg3: () => GlSampler, arg4: ValueUpdateNotifier)
+    constructor(arg0: TextureType, arg1: number, arg2: () => number, arg3: () => GlSampler, arg4: ValueUpdateNotifier)
     // private notifier: ValueUpdateNotifier;
     // private sampler: () => GlSampler;
-    // private texture: () => kotlin.Int;
+    // private texture: () => number;
     // private textureType: TextureType;
     // private textureUnit: number;
     update(): void;

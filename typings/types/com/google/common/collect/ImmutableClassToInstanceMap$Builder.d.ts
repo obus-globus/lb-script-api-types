@@ -6,5 +6,5 @@ export class ImmutableClassToInstanceMap$Builder<B extends Object | number | str
     // private mapBuilder: ImmutableMap$Builder<Class<B>, B>;
     build(): ImmutableClassToInstanceMap<B>;
     put<T extends B>(key: Class<T>, value: T): ImmutableClassToInstanceMap$Builder<B>;
-    putAll(map: Map<Class<T>, T>): ImmutableClassToInstanceMap$Builder<B>;
+    putAll<T extends B>(map: Map<Class<T>, T>): ImmutableClassToInstanceMap$Builder<B>;
 }

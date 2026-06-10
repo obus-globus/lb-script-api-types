@@ -4,5 +4,5 @@ import type { Networking$OpenScreenPayload } from '../../../../../../net/fabricm
 export class ClientNetworking extends Object implements ClientModInitializer {
     constructor()
     onInitializeClient(): void;
-    // private openScreen(arg0: Networking$OpenScreenPayload<D>): void;
+    // private openScreen<D extends Object | number | string | boolean>(arg0: Networking$OpenScreenPayload<D>): void;
 }

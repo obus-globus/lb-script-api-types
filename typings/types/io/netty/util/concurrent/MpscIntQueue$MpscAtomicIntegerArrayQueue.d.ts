@@ -11,7 +11,7 @@ export class MpscIntQueue$MpscAtomicIntegerArrayQueue extends AtomicIntegerArray
     // private producerIndex: number;
     // private producerLimit: number;
     drain(arg0: number, arg1: (param0: number) => void): number;
-    fill(arg0: number, arg1: () => kotlin.Int): number;
+    fill(arg0: number, arg1: () => number): number;
     isEmpty(): boolean;
     offer(arg0: number): boolean;
     poll(): number;

@@ -24,7 +24,7 @@ export class NotFoundClasses$MockClassDescriptor extends ClassDescriptorBase {
     readonly typeConstructor: ClassTypeConstructorImpl;
     getAnnotations(): AnnotationDescriptor[];
     getCompanionObjectDescriptor(): ClassDescriptor;
-    getConstructors(): E[];
+    getConstructors(): ClassConstructorDescriptor[];
     getDeclaredTypeParameters(): TypeParameterDescriptor[];
     getKind(): ClassKind;
     getModality(): Modality;

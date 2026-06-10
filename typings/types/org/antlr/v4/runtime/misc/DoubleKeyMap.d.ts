@@ -7,5 +7,5 @@ export class DoubleKeyMap<Key1 extends Object | number | string | boolean, Key2 
     keySet(): Key1[];
     keySet(arg0: Key1): Key2[];
     put(arg0: Key1, arg1: Key2, arg2: Value): Value;
-    values(arg0: Key1): E[];
+    values(arg0: Key1): Value[];
 }

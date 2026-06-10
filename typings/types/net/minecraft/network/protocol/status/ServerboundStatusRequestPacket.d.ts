@@ -9,7 +9,7 @@ import type { ServerStatusPacketListener } from '../../../../../net/minecraft/ne
 export class ServerboundStatusRequestPacket extends Object implements Packet<ServerStatusPacketListener> {
     static INSTANCE: ServerboundStatusRequestPacket;
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundStatusRequestPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor()
     handle(listener: ServerStatusPacketListener): void;
     isSkippable(): boolean;

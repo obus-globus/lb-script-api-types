@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -10,7 +11,7 @@ import type { ClientConfigurationPacketListener } from '../../../../../net/minec
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientboundUpdateEnabledFeaturesPacket extends Record implements Packet<ClientConfigurationPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundUpdateEnabledFeaturesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(features: Identifier[])
     private constructor(input: FriendlyByteBuf)
     // private features: Identifier[];

@@ -30,7 +30,7 @@ export class Executable extends AccessibleObject implements GenericDeclaration, 
     getAnnotatedReturnType0(arg0: Type): AnnotatedType;
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getAnnotationBytes(): number[];
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDeclaredAnnotations(): Annotation[];
     getDeclaringClass(): Class<Object>;
     getExceptionTypes(): Class<Object>[];

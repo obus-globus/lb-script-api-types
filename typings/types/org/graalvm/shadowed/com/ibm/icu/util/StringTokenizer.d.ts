@@ -20,7 +20,7 @@ export class StringTokenizer extends Object implements Enumeration<Object> {
     // private m_tokenOffset_: number;
     // private m_tokenSize_: number;
     // private m_tokenStart_: number[];
-    asIterator(): Iterator<E>;
+    asIterator(): Iterator<Object>;
     checkDelimiters(): void;
     countTokens(): number;
     // private getNextDelimiter(offset: number): number;

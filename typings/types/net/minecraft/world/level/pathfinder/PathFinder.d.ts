@@ -10,7 +10,7 @@ import type { Path } from '../../../../../net/minecraft/world/level/pathfinder/P
 import type { Target } from '../../../../../net/minecraft/world/level/pathfinder/Target.d.ts'
 export class PathFinder extends Object {
     constructor(nodeEvaluator: NodeEvaluator, maxVisitedNodes: number)
-    readonly captureDebug: () => kotlin.Boolean;
+    readonly captureDebug: () => boolean;
     readonly maxVisitedNodes: number;
     // private neighbors: Node[];
     // private nodeEvaluator: NodeEvaluator;
@@ -20,6 +20,6 @@ export class PathFinder extends Object {
     // private findPath(from: Node, targetMap: Map<Target, BlockPos>, maxPathLength: number, reachRange: number, maxVisitedNodesMultiplier: number): Path;
     // private getBestH(from: Node, targets: Target[]): number;
     // private reconstructPath(closest: Node, target: BlockPos, reached: boolean): Path;
-    setCaptureDebug(captureDebug: () => kotlin.Boolean): void;
+    setCaptureDebug(captureDebug: () => boolean): void;
     setMaxVisitedNodes(maxVisitedNodes: number): void;
 }

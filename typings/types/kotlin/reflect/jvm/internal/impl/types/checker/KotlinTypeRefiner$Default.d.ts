@@ -15,6 +15,6 @@ export class KotlinTypeRefiner$Default extends KotlinTypeRefiner {
     isRefinementNeededForModule(arg0: ModuleDescriptor): boolean;
     isRefinementNeededForTypeConstructor(arg0: TypeConstructor): boolean;
     refineDescriptor(arg0: DeclarationDescriptor): ClassDescriptor;
-    refineSupertypes(arg0: ClassDescriptor): E[];
+    refineSupertypes(arg0: ClassDescriptor): KotlinType[];
     refineType(arg0: KotlinTypeMarker): KotlinType;
 }

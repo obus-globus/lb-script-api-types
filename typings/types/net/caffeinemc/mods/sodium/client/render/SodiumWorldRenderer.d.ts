@@ -12,6 +12,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { ClientLevel } from '../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
 import type { ChunkSectionLayerGroup } from '../../../../../../net/minecraft/client/renderer/chunk/ChunkSectionLayerGroup.d.ts'
 import type { EntityRenderer } from '../../../../../../net/minecraft/client/renderer/entity/EntityRenderer.d.ts'
+import type { EntityRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
 import type { LevelRenderState } from '../../../../../../net/minecraft/client/renderer/state/level/LevelRenderState.d.ts'
 import type { BlockDestructionProgress } from '../../../../../../net/minecraft/server/level/BlockDestructionProgress.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -38,11 +39,11 @@ export class SodiumWorldRenderer extends Object {
     extractBlockEntities(arg0: Camera, arg1: number, arg2: Long2ObjectMap<BlockDestructionProgress[]>, arg3: LevelRenderState): void;
     // private extractBlockEntity(arg0: BlockEntity, arg1: PoseStack, arg2: Camera, arg3: number, arg4: Long2ObjectMap<BlockDestructionProgress[]>, arg5: LevelRenderState): void;
     getChunksDebugString(): string;
-    getDebugStrings(arg0: boolean): E[];
+    getDebugStrings(arg0: boolean): string[];
     getVisibleChunkCount(): number;
     // private initRenderer(arg0: CommandList): void;
     isBoxVisible(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): boolean;
-    isEntityVisible<T extends Entity>(arg0: EntityRenderer<T, S>, arg1: T): boolean;
+    isEntityVisible<T extends Entity, S extends EntityRenderState>(arg0: EntityRenderer<T, S>, arg1: T): boolean;
     isSectionReady(arg0: number, arg1: number, arg2: number): boolean;
     isTerrainRenderComplete(): boolean;
     iterateVisibleBlockEntities(arg0: (param0: BlockEntity) => void): void;

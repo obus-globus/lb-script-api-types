@@ -25,7 +25,7 @@ export abstract class ToggleableValueGroup extends ValueGroup implements EventLi
     readonly running: boolean;
     children(): EventListener[];
     protected choices<T extends Mode>(name: string, active: T, choices: T[]): ModeValueGroup<T>;
-    protected choices(name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
+    protected choices<T extends Mode>(name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     onDisabled(): void;
     onEnabled(): void;
     onEnabledValueRegistration(value: Value<boolean>): Value<boolean>;

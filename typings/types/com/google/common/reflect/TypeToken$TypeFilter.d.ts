@@ -10,6 +10,6 @@ export class TypeToken$TypeFilter extends Enum<TypeToken$TypeFilter> implements 
     static valueOf(paramname: string): TypeToken$TypeFilter;
     static values(): (Object | null)[];
     private constructor()
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test(input: TypeToken<Object>): boolean;
     name(): "IGNORE_TYPE_VARIABLE_OR_WILDCARD" | "INTERFACE_ONLY";
 }

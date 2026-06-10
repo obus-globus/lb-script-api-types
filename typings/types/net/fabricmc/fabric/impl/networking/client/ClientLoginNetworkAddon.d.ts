@@ -1,4 +1,5 @@
 import type { ChannelFutureListener } from '../../../../../../io/netty/channel/ChannelFutureListener.d.ts'
+import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { ClientLoginNetworking$LoginQueryRequestHandler } from '../../../../../../net/fabricmc/fabric/api/client/networking/v1/ClientLoginNetworking$LoginQueryRequestHandler.d.ts'
 import type { AbstractNetworkAddon } from '../../../../../../net/fabricmc/fabric/impl/networking/AbstractNetworkAddon.d.ts'
@@ -7,7 +8,7 @@ import type { ClientHandshakePacketListenerImpl } from '../../../../../../net/mi
 import type { FriendlyByteBuf } from '../../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { ClientboundCustomQueryPacket } from '../../../../../../net/minecraft/network/protocol/login/ClientboundCustomQueryPacket.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class ClientLoginNetworkAddon extends AbstractNetworkAddon<(param0: Minecraft, param1: ClientHandshakePacketListenerImpl, param2: FriendlyByteBuf, param3: (param0: ChannelFutureListener) => void) => java.util.concurrent.CompletableFuture<net.minecraft.network.FriendlyByteBuf>> {
+export class ClientLoginNetworkAddon extends AbstractNetworkAddon<(param0: Minecraft, param1: ClientHandshakePacketListenerImpl, param2: FriendlyByteBuf, param3: (param0: ChannelFutureListener) => void) => CompletableFuture<FriendlyByteBuf>> {
     constructor(arg0: ClientHandshakePacketListenerImpl, arg1: Minecraft)
     // private client: Minecraft;
     // private firstResponse: boolean;

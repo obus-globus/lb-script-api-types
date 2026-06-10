@@ -10,7 +10,7 @@ export class MutableBoolean extends Object implements Serializable, Comparable<M
     booleanValue(): boolean;
     compareTo(arg0: MutableBoolean): number;
     equals(arg0: Object | null): boolean;
-    get<T extends Object | number | string | boolean>(): T;
+    get(): boolean;
     getValue(): boolean;
     hashCode(): number;
     isFalse(): boolean;

@@ -7,7 +7,7 @@ export class ReadOnlyVec<T extends Object | number | string | boolean> extends O
     // private vec: IVec<T>;
     clear(): void;
     clone(): IVec<T>;
-    copyTo(arg0: E[]): void;
+    copyTo<E extends Object | number | string | boolean>(arg0: E[]): void;
     copyTo(arg0: IVec<T>): void;
     delete(arg0: number): T;
     ensure(arg0: number): void;
@@ -26,6 +26,6 @@ export class ReadOnlyVec<T extends Object | number | string | boolean> extends O
     set(arg0: number, arg1: T): void;
     shrinkTo(arg0: number): void;
     size(): number;
-    sort(arg0: (param0: T) => kotlin.Boolean): void;
+    sort(arg0: (param0: Object) => boolean): void;
     toString(): string;
 }

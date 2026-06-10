@@ -8,6 +8,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class TradeTrigger extends SimpleCriterionTrigger<TradeTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<TradeTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: TradeTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: TradeTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, villager: AbstractVillager, itemStack: ItemStack): void;
 }

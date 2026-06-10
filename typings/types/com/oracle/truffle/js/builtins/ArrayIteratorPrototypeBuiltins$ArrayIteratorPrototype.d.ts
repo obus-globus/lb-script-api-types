@@ -15,7 +15,7 @@ export class ArrayIteratorPrototypeBuiltins$ArrayIteratorPrototype extends Enum<
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): ArrayIteratorPrototypeBuiltins$ArrayIteratorPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

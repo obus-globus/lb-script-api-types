@@ -5,7 +5,7 @@ import type { UserWhiteListEntry } from '../../../../../net/minecraft/server/pla
 export interface MinecraftAllowListService extends Object{
     add(infos: UserWhiteListEntry, clientInfo: ClientInfo): boolean;
     clear(clientInfo: ClientInfo): void;
-    getEntries(): E[];
+    getEntries(): UserWhiteListEntry[];
     kickUnlistedPlayers(clientInfo: ClientInfo): void;
     remove(nameAndId: NameAndId, clientInfo: ClientInfo): void;
 }

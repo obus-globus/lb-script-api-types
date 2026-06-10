@@ -14,5 +14,5 @@ export class NormalRotationMode extends RotationMode {
     readonly ignoreOpenInventory: boolean;
     readonly priority: Priority;
     readonly rotations: RotationsValueGroup;
-    rotate(rotation: Rotation, isFinished: () => kotlin.Boolean, onFinished: () => void): void;
+    rotate(rotation: Rotation, isFinished: () => boolean, onFinished: () => void): void;
 }

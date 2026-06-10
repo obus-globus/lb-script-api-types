@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class Boundaries extends Object {
-    static arraySort(paramarray: Object | null, paramcomparator: (param0: Object | null) => kotlin.Boolean): void;
+    static arraySort(paramarray: Object | null, paramcomparator: (param0: Object) => boolean): void;
     static arraySort(paramarray: number[]): void;
     static arraySort(paramarray: number[]): void;
     static arraySort(paramarray: number[]): void;
@@ -27,7 +27,7 @@ export class Boundaries extends Object {
     static listAdd(paramlist: (Object | null)[], paramelement: Object | null): void;
     static listAddAll(paramlist: (Object | null)[], paramaddList: (Object | null)[]): void;
     static listContains(paramlist: (Object | null)[], paramelement: Object | null): boolean;
-    static listContainsUnchecked(paramlist: (Object | null)[], paramelement: Object): boolean;
+    static listContainsUnchecked(paramlist: Object[], paramelement: Object): boolean;
     static listEditableCopy(paramlist: (Object | null)[]): (Object | null)[];
     static listGet(paramlist: (Object | null)[], paramindex: number): Object | null;
     static listSize(paramlist: (Object | null)[]): number;
@@ -40,8 +40,8 @@ export class Boundaries extends Object {
     static mapPut(parammap: Map<Object | null, Object | null>, paramkey: Object | null, paramvalue: Object | null): Object | null;
     static mapPutIfAbsent(parammap: Map<Object | null, Object | null>, paramkey: Object | null, paramvalue: Object | null): Object | null;
     static mapRemove(parammap: Map<Object | null, Object | null>, paramkey: Object | null): Object | null;
-    static queueAdd(paramqueue: (Object | null)[], paramrequest: Object | null): void;
-    static setContains(paramset: (Object | null)[], paramelement: Object): boolean;
+    static queueAdd(paramqueue: Object[], paramrequest: Object | null): void;
+    static setContains(paramset: Object[], paramelement: Object): boolean;
     static stringFormat(paramformat: string, paramparams: (Object | null)[]): string;
     private constructor()
 }

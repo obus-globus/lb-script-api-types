@@ -20,7 +20,7 @@ export class LocaleDisplayNames$LastResortLocaleDisplayNames extends LocaleDispl
     getContext(arg0: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: LocaleDisplayNames$UiListItem) => kotlin.Boolean): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
     keyDisplayName(arg0: string): string;
     keyValueDisplayName(arg0: string, arg1: string): string;
     languageDisplayName(arg0: string): string;

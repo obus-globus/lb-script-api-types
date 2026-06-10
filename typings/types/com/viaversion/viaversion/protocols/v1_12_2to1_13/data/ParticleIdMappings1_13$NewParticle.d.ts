@@ -3,11 +3,11 @@ import type { ParticleIdMappings1_13$ParticleDataHandler } from '../../../../../
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ParticleIdMappings1_13$NewParticle extends Record {
-    // private handler: (param0: Particle, param1: (Object | null)[]) => com.viaversion.viaversion.api.minecraft.Particle;
+    // private handler: (param0: Particle, param1: (Object | null)[]) => Particle;
     // private id: number;
     equals(arg0: Object | null): boolean;
     handle(arg0: Particle, arg1: number[]): Particle;
-    handler(): (param0: Particle, param1: (Object | null)[]) => com.viaversion.viaversion.api.minecraft.Particle;
+    handler(): (param0: Particle, param1: (Object | null)[]) => Particle;
     hashCode(): number;
     id(): number;
     toString(): string;

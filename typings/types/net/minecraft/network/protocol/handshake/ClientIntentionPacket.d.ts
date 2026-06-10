@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -10,7 +11,7 @@ import type { ClientIntent } from '../../../../../net/minecraft/network/protocol
 import type { ServerHandshakePacketListener } from '../../../../../net/minecraft/network/protocol/handshake/ServerHandshakePacketListener.d.ts'
 export class ClientIntentionPacket extends Record implements Packet<ServerHandshakePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientIntentionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     // private hostName: string;
     // private intention: ClientIntent;
     // private port: number;

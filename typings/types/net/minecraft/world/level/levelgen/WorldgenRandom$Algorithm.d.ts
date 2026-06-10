@@ -9,8 +9,8 @@ export class WorldgenRandom$Algorithm extends Enum<WorldgenRandom$Algorithm> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WorldgenRandom$Algorithm;
     static values(): (Object | null)[];
-    private constructor(constructor: (param0: RandomSource) => unknown)
-    // private constructor: (param0: RandomSource) => unknown;
+    private constructor(constructor: (param0: number) => RandomSource)
+    // private constructor: (param0: number) => RandomSource;
     newInstance(seed: number): RandomSource;
     name(): "LEGACY" | "XOROSHIRO";
 }

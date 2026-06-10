@@ -13,8 +13,8 @@ import type { OptionMenuElementScreen } from '../../../../../../net/irisshaders/
 export class OptionMenuConstructor extends Object {
     static constructAndApplyToScreen(paramarg0: OptionMenuContainer, paramarg1: ShaderPackScreen, paramarg2: ShaderPackOptionList, paramarg3: NavigationController): void;
     static createScreenData(paramarg0: OptionMenuElementScreen): ElementWidgetScreenData;
-    static createWidget(paramarg0: OptionMenuElement): AbstractElementWidget<Object>;
-    static registerScreen(paramarg0: Class<Object>, paramarg1: OptionMenuConstructor$ScreenDataProvider<Object>): void;
-    static registerWidget(paramarg0: Class<Object>, paramarg1: OptionMenuConstructor$WidgetProvider<Object>): void;
+    static createWidget(paramarg0: OptionMenuElement): AbstractElementWidget<OptionMenuElement>;
+    static registerScreen(paramarg0: Class<OptionMenuElementScreen>, paramarg1: OptionMenuConstructor$ScreenDataProvider<OptionMenuElementScreen>): void;
+    static registerWidget(paramarg0: Class<OptionMenuElement>, paramarg1: OptionMenuConstructor$WidgetProvider<OptionMenuElement>): void;
     private constructor()
 }

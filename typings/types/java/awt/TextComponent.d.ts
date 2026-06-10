@@ -7,6 +7,7 @@ import type { InputMethodRequests } from '../../java/awt/im/InputMethodRequests.
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 export class TextComponent extends Component implements Accessible {
@@ -42,7 +43,7 @@ export class TextComponent extends Component implements Accessible {
     getBackground(): Color;
     getCaretPosition(): number;
     getInputMethodRequests(): InputMethodRequests;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getSelectedText(): string;
     getSelectionEnd(): number;
     getSelectionStart(): number;

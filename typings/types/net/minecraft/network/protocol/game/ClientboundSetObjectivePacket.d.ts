@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -16,7 +17,7 @@ export class ClientboundSetObjectivePacket extends Object implements Packet<Clie
     static METHOD_CHANGE: number;
     static METHOD_REMOVE: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetObjectivePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor(input: RegistryFriendlyByteBuf)
     constructor(objective: Objective, method: number)
     readonly displayName: Component;

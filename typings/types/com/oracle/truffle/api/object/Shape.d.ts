@@ -12,7 +12,7 @@ export class Shape extends Object {
     static newBuilder(parambaseShape: Shape): Shape$DerivedBuilder;
     constructor()
     addProperty(property: Property): Shape;
-    allPropertiesMatch(predicate: (param0: Property) => kotlin.Boolean): boolean;
+    allPropertiesMatch(predicate: (param0: Property) => boolean): boolean;
     check(subject: DynamicObject): boolean;
     defineConstantProperty(key: Object, value: Object, propertyFlags: number): Shape;
     defineProperty(key: Object, value: Object, propertyFlags: number): Shape;

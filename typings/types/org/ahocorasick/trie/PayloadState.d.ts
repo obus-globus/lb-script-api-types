@@ -7,14 +7,14 @@ export class PayloadState<T extends Object | number | string | boolean> extends 
     // private emits: Payload<T>[];
     // private rootState: PayloadState<T>;
     // private success: { [key: string]: PayloadState<T> };
-    addEmit(arg0: E[]): void;
+    addEmit(arg0: Payload<T>[]): void;
     addEmit(arg0: Payload<T>): void;
     addState(arg0: string): PayloadState<T>;
-    emit(): E[];
+    emit(): Payload<T>[];
     failure(): PayloadState<T>;
     getDepth(): number;
-    getStates(): E[];
-    getTransitions(): E[];
+    getStates(): PayloadState<T>[];
+    getTransitions(): string[];
     nextState(arg0: string): PayloadState<T>;
     // private nextState(arg0: string, arg1: boolean): PayloadState<T>;
     nextStateIgnoreRootState(arg0: string): PayloadState<T>;

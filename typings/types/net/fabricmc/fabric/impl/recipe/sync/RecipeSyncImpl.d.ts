@@ -5,7 +5,7 @@ import type { RecipeSerializer } from '../../../../../../net/minecraft/world/ite
 export class RecipeSyncImpl extends Object implements ModInitializer {
     static RECIPE_SYNC_EVENT_PHASE: Identifier;
     static addSynchronizedSerializer(paramarg0: RecipeSerializer<Object>): void;
-    static getSyncedSerializers(): (Object | null)[];
+    static getSyncedSerializers(): RecipeSerializer<Object>[];
     static isSynced(paramarg0: RecipeSerializer<Object>): boolean;
     constructor()
     onInitialize(): void;

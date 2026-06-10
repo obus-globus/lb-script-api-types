@@ -1,5 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
+import type { Payload } from '../../../org/ahocorasick/trie/Payload.d.ts'
 import type { PayloadEmit } from '../../../org/ahocorasick/trie/PayloadEmit.d.ts'
 import type { PayloadState } from '../../../org/ahocorasick/trie/PayloadState.d.ts'
 import type { PayloadToken } from '../../../org/ahocorasick/trie/PayloadToken.d.ts'
@@ -25,9 +26,9 @@ export class PayloadTrie<T extends Object | number | string | boolean> extends O
     // private isCaseInsensitive(): boolean;
     // private isPartialMatch(arg0: CharSequence, arg1: PayloadEmit<T>): boolean;
     // private isPartialMatchWhiteSpaceSeparated(arg0: CharSequence, arg1: PayloadEmit<T>): boolean;
-    parseText(arg0: CharSequence): E[];
+    parseText(arg0: CharSequence): PayloadEmit<T>[];
     parseText(arg0: CharSequence, arg1: PayloadEmitHandler<T>): void;
-    parseText(arg0: CharSequence, arg1: StatefulPayloadEmitHandler<T>): E[];
-    // private processEmits(arg0: CharSequence, arg1: number, arg2: E[], arg3: PayloadEmitHandler<T>): boolean;
-    tokenize(arg0: string): E[];
+    parseText(arg0: CharSequence, arg1: StatefulPayloadEmitHandler<T>): PayloadEmit<T>[];
+    // private processEmits(arg0: CharSequence, arg1: number, arg2: Payload<T>[], arg3: PayloadEmitHandler<T>): boolean;
+    tokenize(arg0: string): PayloadToken<T>[];
 }

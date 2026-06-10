@@ -9,7 +9,7 @@ import type { CustomPacketPayload } from '../../../../../../net/minecraft/networ
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerGamePacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerGamePacketListenerImpl.d.ts'
-export class ServerPlayNetworkAddon extends AbstractChanneledNetworkAddon<(param0: Object, param1: Object | null) => void> {
+export class ServerPlayNetworkAddon extends AbstractChanneledNetworkAddon<(param0: Object, param1: ServerPlayNetworking$Context) => void> {
     constructor(arg0: ServerGamePacketListenerImpl, arg1: Connection, arg2: MinecraftServer)
     // private context: ServerPlayNetworking$Context;
     // private listener: ServerGamePacketListenerImpl;
@@ -26,7 +26,7 @@ export class ServerPlayNetworkAddon extends AbstractChanneledNetworkAddon<(param
     isOnReceiveThread(): boolean;
     isReservedChannel(arg0: Identifier): boolean;
     onClientReady(): void;
-    receive(arg0: (param0: Object | null, param1: ServerPlayNetworking$Context) => void, arg1: CustomPacketPayload): void;
+    receive(arg0: (param0: CustomPacketPayload | null, param1: ServerPlayNetworking$Context) => void, arg1: CustomPacketPayload): void;
     reconfigure(): void;
     requestedReconfigure(): boolean;
     schedule(arg0: () => void): void;

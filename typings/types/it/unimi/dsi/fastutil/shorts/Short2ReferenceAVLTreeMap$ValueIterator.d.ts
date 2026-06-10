@@ -3,9 +3,9 @@ import type { Short2ReferenceAVLTreeMap$TreeIterator } from '../../../../../it/u
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ReferenceAVLTreeMap$ValueIterator extends Short2ReferenceAVLTreeMap$TreeIterator implements ObjectListIterator<V> {
     private constructor(null_: Short2ReferenceAVLTreeMap$ValueIterator)
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add<V extends Object | number | string | boolean>(arg0: V): void;
     next<V extends Object | number | string | boolean>(): V;
     previous<V extends Object | number | string | boolean>(): V;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<V extends Object | number | string | boolean>(arg0: V): void;
 }

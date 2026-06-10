@@ -7,10 +7,10 @@ import type { Component } from '../../../../net/minecraft/network/chat/Component
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.ts'
 export class Instrument extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Instrument>>;
     static DIRECT_CODEC: Codec<Instrument>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Instrument>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Instrument>>;
     // private description: Component;
     // private range: number;
     // private soundEvent: Holder<SoundEvent>;

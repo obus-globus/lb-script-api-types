@@ -13,8 +13,8 @@ import type { DFA } from '../../../../org/antlr/v4/runtime/dfa/DFA.d.ts'
 import type { Pair } from '../../../../org/antlr/v4/runtime/misc/Pair.d.ts'
 export class ParserInterpreter extends Parser {
     static EOF: number;
-    constructor(arg0: string, arg1: E[], arg2: E[], arg3: ATN, arg4: TokenStream)
-    constructor(arg0: string, arg1: Vocabulary, arg2: E[], arg3: ATN, arg4: TokenStream)
+    constructor(arg0: string, arg1: string[], arg2: string[], arg3: ATN, arg4: TokenStream)
+    constructor(arg0: string, arg1: Vocabulary, arg2: string[], arg3: ATN, arg4: TokenStream)
     // private _parentContextStack: Pair<ParserRuleContext, number>[];
     // private atn: ATN;
     // private decisionToDFA: DFA[];

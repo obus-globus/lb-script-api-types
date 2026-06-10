@@ -18,7 +18,7 @@ export class PlayerInfo extends Object implements IPlayerInfo {
     readonly chatSession: RemoteChatSession;
     readonly gameMode: GameType;
     readonly latency: number;
-    readonly messageValidator: (param0: PlayerChatMessage) => net.minecraft.network.chat.PlayerChatMessage;
+    readonly messageValidator: (param0: PlayerChatMessage) => PlayerChatMessage;
     readonly profile: GameProfile;
     // private skinLookup: () => PlayerSkin;
     readonly tabListDisplayName: Component;
@@ -28,7 +28,7 @@ export class PlayerInfo extends Object implements IPlayerInfo {
     getChatSession(): RemoteChatSession;
     getGameMode(): GameType;
     getLatency(): number;
-    getMessageValidator(): (param0: PlayerChatMessage) => net.minecraft.network.chat.PlayerChatMessage;
+    getMessageValidator(): (param0: PlayerChatMessage) => PlayerChatMessage;
     getProfile(): GameProfile;
     getSkin(): PlayerSkin;
     getTabListDisplayName(): Component;

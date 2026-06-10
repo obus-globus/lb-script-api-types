@@ -9,7 +9,7 @@ import type { StaticGlyphPage } from '../../../../../../net/ccbluex/liquidbounce
 import type { DynamicFontCacheManager } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.d.ts'
 import type { DynamicGlyphPage } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.d.ts'
 export class FontGlyphPageManager extends Object implements EventListener {
-    constructor(baseFonts: E[], additionalFonts: E[])
+    constructor(baseFonts: FontFace[], additionalFonts: FontFace[])
     // private availableFonts: Map<FontFace, FontGlyphPageManager$FontGlyphRegistry>;
     // private dynamicFontManager: DynamicFontCacheManager;
     // private dynamicPage: DynamicGlyphPage;
@@ -17,7 +17,7 @@ export class FontGlyphPageManager extends Object implements EventListener {
     // private renderHandler: EventHook<GameRenderEvent>;
     // private staticPage: StaticGlyphPage[];
     children(): EventListener[];
-    // private createGlyphRegistries(baseFonts: E[], glyphPages: StaticGlyphPage[]): Map<FontFace, FontGlyphPageManager$FontGlyphRegistry>;
+    // private createGlyphRegistries(baseFonts: FontFace[], glyphPages: StaticGlyphPage[]): Map<FontFace, FontGlyphPageManager$FontGlyphRegistry>;
     getFallbackGlyph(font: FontFace): GlyphDescriptor;
     // private getFont(font: FontFace): FontGlyphPageManager$FontGlyphRegistry;
     parent(): EventListener | null;

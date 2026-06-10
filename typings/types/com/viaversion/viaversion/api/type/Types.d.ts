@@ -74,9 +74,9 @@ export class Types extends Object {
     static ENTITY_DATA1_12: Type<EntityData>;
     static ENTITY_DATA1_8: Type<EntityData>;
     static ENTITY_DATA1_9: Type<EntityData>;
-    static ENTITY_DATA_LIST1_12: Type<Object>;
-    static ENTITY_DATA_LIST1_8: Type<Object>;
-    static ENTITY_DATA_LIST1_9: Type<Object>;
+    static ENTITY_DATA_LIST1_12: Type<EntityData[]>;
+    static ENTITY_DATA_LIST1_8: Type<EntityData[]>;
+    static ENTITY_DATA_LIST1_9: Type<EntityData[]>;
     static FLOAT: FloatType;
     static FLOAT_ARRAY_PRIMITIVE: Type<number[]>;
     static GAME_PROFILE: Type<GameProfile>;

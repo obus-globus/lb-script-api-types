@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ModCandidateImpl } from '../../../../../net/fabricmc/loader/impl/discovery/ModCandidateImpl.d.ts'
 export class RuntimeModRemapper extends Object {
-    static remap(paramarg0: E[], paramarg1: Path[][], paramarg2: Path[][]): void;
+    static remap(paramarg0: ModCandidateImpl[], paramarg1: Path[][], paramarg2: Path[][]): void;
     constructor()
 }

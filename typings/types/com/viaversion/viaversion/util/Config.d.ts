@@ -18,7 +18,7 @@ export abstract class Config extends ConfigSection {
     getUnsupportedOptions(): string[];
     handleConfig(arg0: { [key: string]: Object }): void;
     loadConfig(arg0: File): { [key: string]: Object };
-    // private loadConfig(arg0: File, arg1: () => java.io.InputStream): { [key: string]: Object };
+    // private loadConfig(arg0: File, arg1: () => InputStream): { [key: string]: Object };
     loadConfig(arg0: File, arg1: URL): { [key: string]: Object };
     logger(): Logger;
     // private merge(arg0: string, arg1: { [key: string]: Object }, arg2: { [key: string]: Object }): void;

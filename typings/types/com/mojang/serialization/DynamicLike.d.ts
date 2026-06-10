@@ -25,14 +25,14 @@ export abstract class DynamicLike<T extends Object | number | string | boolean> 
     asInt(arg0: number): number;
     asIntStream(): IntStream;
     asIntStreamOpt(): DataResult<IntStream>;
-    asList(arg0: (param0: Dynamic<T>) => U): U[];
-    asListOpt(arg0: (param0: Dynamic<T>) => U): DataResult<U[]>;
+    asList<U extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => U): U[];
+    asListOpt<U extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => U): DataResult<U[]>;
     asLong(arg0: number): number;
     asLongStream(): LongStream;
     asLongStreamOpt(): DataResult<LongStream>;
-    asMap(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): Map<K, V>;
+    asMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): Map<K, V>;
     asMapOpt(): DataResult<Stream<Pair<Dynamic<T>, Dynamic<T>>>>;
-    asMapOpt(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
+    asMapOpt<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
     asNumber(): DataResult<Number>;
     asNumber(arg0: Number): Number;
     asShort(arg0: number): number;
@@ -54,7 +54,7 @@ export abstract class DynamicLike<T extends Object | number | string | boolean> 
     createNumeric(arg0: Number): Dynamic<T>;
     createShort(arg0: number): Dynamic<T>;
     createString(arg0: string): Dynamic<T>;
-    decode(arg0: Decoder<A>): DataResult<Pair<A, T>>;
+    decode<A extends Object | number | string | boolean>(arg0: Decoder<A>): DataResult<Pair<A, T>>;
     emptyList(): Dynamic<T>;
     emptyMap(): Dynamic<T>;
     get(arg0: string): OptionalDynamic<T>;
@@ -64,10 +64,10 @@ export abstract class DynamicLike<T extends Object | number | string | boolean> 
     getElementGeneric(arg0: T, arg1: T): T;
     getGeneric(arg0: T): DataResult<T>;
     getOps(): DynamicOps<T>;
-    read(arg0: Decoder<A>): DataResult<A>;
-    readList(arg0: Decoder<E>): DataResult<E[]>;
-    readList(arg0: (param0: Dynamic<Object>) => DataResult<E>): DataResult<E[]>;
-    readMap(arg0: DataResult<R>, arg1: Function3<R, Dynamic<T>, Dynamic<T>, DataResult<R>>): DataResult<R>;
-    readMap(arg0: Decoder<K>, arg1: Decoder<V>): DataResult<Pair<K, V>[]>;
-    readMap(arg0: Decoder<K>, arg1: (param0: K) => Decoder<V>): DataResult<Pair<K, V>[]>;
+    read<A extends Object | number | string | boolean>(arg0: Decoder<A>): DataResult<A>;
+    readList<E extends Object | number | string | boolean>(arg0: Decoder<E>): DataResult<E[]>;
+    readList<E extends Object | number | string | boolean>(arg0: (param0: Dynamic<Object>) => DataResult<E>): DataResult<E[]>;
+    readMap<R extends Object | number | string | boolean>(arg0: DataResult<R>, arg1: Function3<R, Dynamic<T>, Dynamic<T>, DataResult<R>>): DataResult<R>;
+    readMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Decoder<K>, arg1: Decoder<V>): DataResult<Pair<K, V>[]>;
+    readMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Decoder<K>, arg1: (param0: K) => Decoder<V>): DataResult<Pair<K, V>[]>;
 }

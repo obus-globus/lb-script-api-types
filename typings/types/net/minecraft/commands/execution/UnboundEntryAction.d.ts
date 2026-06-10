@@ -3,6 +3,6 @@ import type { EntryAction } from '../../../../net/minecraft/commands/execution/E
 import type { ExecutionContext } from '../../../../net/minecraft/commands/execution/ExecutionContext.d.ts'
 import type { Frame } from '../../../../net/minecraft/commands/execution/Frame.d.ts'
 export interface UnboundEntryAction<T extends Object | number | string | boolean> extends Object {
-    bind(sender: T): (param0: T, param1: ExecutionContext<Object>) => void;
+    bind(sender: T): (param0: ExecutionContext<T>, param1: Frame) => void;
     execute(sender: T, context: ExecutionContext<T>, frame: Frame): void;
 }

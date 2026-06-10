@@ -15,10 +15,9 @@ export class BlockStateArgument extends Object implements ArgumentType<BlockInpu
     static getBlock(paramcontext: CommandContext<CommandSourceStack>, paramname: string): BlockInput;
     constructor(context: CommandBuildContext)
     // private blocks: HolderLookup<Block>;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): BlockInput;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): BlockInput;
+    parse(reader: StringReader): BlockInput;
 }

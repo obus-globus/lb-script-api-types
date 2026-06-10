@@ -11,7 +11,7 @@ export class ModuleCategories extends Object {
     static RENDER: ModuleCategory;
     static WORLD: ModuleCategory;
     static byName(name: string): ModuleCategory;
-    static getEntries(): E[];
+    static getEntries(): ModuleCategory[];
     COMBAT: ModuleCategory;
     EXPLOIT: ModuleCategory;
     FUN: ModuleCategory;
@@ -20,7 +20,7 @@ export class ModuleCategories extends Object {
     PLAYER: ModuleCategory;
     RENDER: ModuleCategory;
     WORLD: ModuleCategory;
-    /*not mapped: */ getEntries(): E[];
+    /*not mapped: */ getEntries(): ModuleCategory[];
     // private registry: { [key: string]: ModuleCategory };
     byName(name: string): ModuleCategory | null;
     // private register(category: ModuleCategory): ModuleCategory;

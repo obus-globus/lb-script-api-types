@@ -5,6 +5,6 @@ import type { FormattedCharSequence } from '../../../../../net/minecraft/util/Fo
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class DescriptionListWidget$MojangCreditsEntry extends DescriptionListWidget$DescriptionEntry {
     static CONTENT_PADDING: number;
-    constructor(null_: DescriptionListWidget$MojangCreditsEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean)
+    constructor(null_: DescriptionListWidget$MojangCreditsEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean)
     mouseClicked(arg0: MouseButtonEvent, arg1: boolean): boolean;
 }

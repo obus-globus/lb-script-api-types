@@ -28,6 +28,7 @@ import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 import type { CharPredicate } from '../../../net/minecraft/CharPredicate.d.ts'
 import type { TracingExecutor } from '../../../net/minecraft/TracingExecutor.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
@@ -43,38 +44,38 @@ export class Util extends Object {
     static TICKER: Ticker;
     static ZIP_FILE_SYSTEM_PROVIDER: FileSystemProvider;
     static timeSource: TimeSource$NanoTimeSource;
-    static allOf(): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramconditions: (Object | null)[]): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramcondition: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean, paramcondition3: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean, paramcondition3: (param0: Object | null) => kotlin.Boolean, paramcondition4: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean, paramcondition3: (param0: Object | null) => kotlin.Boolean, paramcondition4: (param0: Object | null) => kotlin.Boolean, paramcondition5: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static allOf(paramconditions: Object | null): (param0: Object | null) => kotlin.Boolean;
+    static allOf(): (param0: Object | null) => boolean;
+    static allOf(paramconditions: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
+    static allOf(paramcondition: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean, paramcondition5: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static allOf(paramconditions: Object | null): (param0: Object | null) => boolean;
     static allOfEnumExcept(paramvalue: Object | null): (Object | null)[];
-    static anyOf(): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramconditions: (Object | null)[]): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramcondition1: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean, paramcondition3: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean, paramcondition3: (param0: Object | null) => kotlin.Boolean, paramcondition4: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramcondition1: (param0: Object | null) => kotlin.Boolean, paramcondition2: (param0: Object | null) => kotlin.Boolean, paramcondition3: (param0: Object | null) => kotlin.Boolean, paramcondition4: (param0: Object | null) => kotlin.Boolean, paramcondition5: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static anyOf(paramconditions: Object | null): (param0: Object | null) => kotlin.Boolean;
+    static anyOf(): (param0: Object | null) => boolean;
+    static anyOf(paramconditions: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
+    static anyOf(paramcondition1: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean, paramcondition5: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static anyOf(paramconditions: Object | null): (param0: Object | null) => boolean;
     static backgroundExecutor(): TracingExecutor;
-    static blockUntilDone(paramtask: (param0: Executor) => Object | null, paramcompletionCheck: (param0: Object | null) => kotlin.Boolean): Object | null;
-    static blockUntilDone(paramtask: (param0: Executor) => Object | null): CompletableFuture<Object>;
+    static blockUntilDone(paramtask: (param0: Executor) => Object | null, paramcompletionCheck: (param0: Object | null) => boolean): Object | null;
+    static blockUntilDone(paramtask: (param0: Executor) => CompletableFuture<Object>): CompletableFuture<Object>;
     static copyAndAdd(paramelement: Object | null, paramlist: (Object | null)[]): (Object | null)[];
     static copyAndAdd(paramlist: (Object | null)[], paramelement: Object | null): (Object | null)[];
     static copyAndAdd(paramlist: (Object | null)[], paramelements: Object | null): (Object | null)[];
     static copyAndPut(parammap: Map<Object | null, Object | null>, paramkey: Object | null, paramvalue: Object | null): Map<Object | null, Object | null>;
     static copyBetweenDirs(paramsourceDir: Path[][], paramtargetDir: Path[][], paramsourcePath: Path[][]): void;
-    static createIndexIdentityLookup(paramvalues: (Object | null)[]): (param0: Object | null) => kotlin.Int;
-    static createIndexLookup(paramvalues: (Object | null)[]): (param0: Object | null) => kotlin.Int;
+    static createIndexIdentityLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
+    static createIndexLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static describeError(paramerr: Throwable): string;
     static fetchChoiceType(paramreference: DSL$TypeReference, paramname: string): Type<Object>;
     static findNextInIterable(paramcollection: (Object | null)[], paramcurrent: Object | null): Object | null;
     static findPreviousInIterable(paramcollection: (Object | null)[], paramcurrent: Object | null): Object | null;
-    static fixedSize(paramlist: (Object | null)[], paramsize: number): DataResult<Object>;
+    static fixedSize(paramlist: (Object | null)[], paramsize: number): DataResult<(Object | null)[]>;
     static fixedSize(paramstream: IntStream, paramsize: number): DataResult<number[]>;
     static fixedSize(paramstream: LongStream, paramsize: number): DataResult<number[]>;
     static getEpochMillis(): number;
@@ -96,12 +97,12 @@ export class Util extends Object {
     static localizedDateFormatter(paramformatStyle: FormatStyle): DateTimeFormatter;
     static logAndPauseIfInIde(parammessage: string): void;
     static logAndPauseIfInIde(parammessage: string, paramthrowable: Throwable): void;
-    static make(paramt: Object | null, paramconsumer: (param0: Object | null) => void): Object | null;
+    static make(paramt: Object | null, paramconsumer: (param0: Object) => void): Object | null;
     static make(paramfactory: () => Object | null): Object | null;
     static makeDescriptionId(paramprefix: string, paramlocation: Identifier): string;
     static makeEnumMap(paramkeyType: Class<Object>, paramfunction: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
-    static mapValues(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
-    static mapValuesLazy(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
+    static mapValues(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object) => Object | null): Map<Object | null, Object | null>;
+    static mapValuesLazy(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object) => boolean): Map<Object | null, Object | null>;
     static maxAllowedExecutorThreads(): number;
     static memoize(paramfunction: (param0: Object | null) => Object | null): (param0: Object | null) => Object | null;
     static memoize(paramfunction: (param0: Object | null, param1: Object | null) => Object | null): (param0: Object | null, param1: Object | null) => Object | null;
@@ -110,7 +111,7 @@ export class Util extends Object {
     static nonCriticalIoPool(): TracingExecutor;
     static offsetByCodepoints(paraminput: string, parampos: number, paramoffset: number): number;
     static parseAndValidateUntrustedUri(paramuri: string): URI;
-    static pauseInIde(paramt: Object | null): Object | null;
+    static pauseInIde(paramt: Throwable | null): Throwable | null;
     static prefix(paramprefix: string, paramconsumer: (param0: string) => void): (param0: string) => void;
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>): Typed<Object>;
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>, paramacceptPartial: boolean): Typed<Object>;
@@ -118,10 +119,10 @@ export class Util extends Object {
     static safeMoveFile(paramfromPath: Path[][], paramtoPath: Path[][], paramoptions: (Object | null)[]): boolean;
     static safeReplaceFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][]): void;
     static safeReplaceOrMoveFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][], paramnoRollback: boolean): boolean;
-    static sanitizeName(paramvalue: string, paramisAllowedChar: (param0: string) => kotlin.Boolean): string;
-    static sequence(paramfutures: (Object | null)[]): CompletableFuture<Object>;
-    static sequenceFailFast(paramfutures: (Object | null)[]): CompletableFuture<Object>;
-    static sequenceFailFastAndCancel(paramfutures: (Object | null)[]): CompletableFuture<Object>;
+    static sanitizeName(paramvalue: string, paramisAllowedChar: (param0: string) => boolean): string;
+    static sequence(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;
+    static sequenceFailFast(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;
+    static sequenceFailFastAndCancel(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;
     static setPause(parampauseFunction: (param0: string) => void): void;
     static shuffle(paramlist: (Object | null)[], paramrandom: RandomSource): void;
     static shuffledCopy(paramarray: Object | null, paramrandom: RandomSource): (Object | null)[];
@@ -130,10 +131,10 @@ export class Util extends Object {
     static singleKeyCache(paramcomputeValueFunction: (param0: Object | null) => Object | null): SingleKeyCache<Object, Object>;
     static startTimerHackThread(): void;
     static throwAsRuntime(paramthrowable: Throwable): void;
-    static toMap(): Collector<Object, Object, Object>;
-    static toMutableList(): Collector<Object, Object, Object>;
+    static toMap(): Collector<Map$Entry<Object, Object>, Object, Map<Object | null, Object | null>>;
+    static toMutableList(): Collector<Object, Object, (Object | null)[]>;
     static toShuffledList(paramstream: Stream<Object>, paramrandom: RandomSource): (Object | null)[];
     static toShuffledList(paramstream: IntStream, paramrandom: RandomSource): (Object | null)[];
-    static writeAndReadTypedOrThrow(paramtyped: Typed<Object>, paramnewType: Type<Object>, paramfunction: (param0: Object | null) => unknown): Typed<Object>;
+    static writeAndReadTypedOrThrow(paramtyped: Typed<Object>, paramnewType: Type<Object>, paramfunction: (param0: Dynamic<Object>) => Object | null): Typed<Object>;
     constructor()
 }

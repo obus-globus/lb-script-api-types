@@ -1,5 +1,4 @@
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../net/minecraft/client/gui/components/Button.d.ts'
@@ -20,7 +19,7 @@ export class GenericWaitingScreen extends Screen {
     static createWaiting(paramtitle: Component, parambuttonLabel: Component, parambuttonCallback: () => void): GenericWaitingScreen;
     static createWaitingWithoutButton(paramtitle: Component, parammessageText: Component): GenericWaitingScreen;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(title: Component, showLoadingDots: boolean, messageText: Component, buttonLabel: Component, buttonCallback: () => void, disableButtonTicks: number, showButton: boolean, closeOnEscape: boolean)
     // private button: Button;

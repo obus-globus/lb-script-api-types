@@ -2,7 +2,7 @@ import type { CompositeLootItemCondition$Builder } from '../../../../../../../ne
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export class AnyOfCondition$Builder extends CompositeLootItemCondition$Builder {
-    constructor(terms: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition[])
+    constructor(terms: () => LootItemCondition[])
     create(terms: LootItemCondition[]): LootItemCondition;
-    or(term: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AnyOfCondition$Builder;
+    or(term: () => LootItemCondition): AnyOfCondition$Builder;
 }

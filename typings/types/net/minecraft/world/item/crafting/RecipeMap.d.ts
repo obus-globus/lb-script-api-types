@@ -11,14 +11,14 @@ import type { RecipeType } from '../../../../../net/minecraft/world/item/craftin
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeMap extends Object implements SyncedSerializerAwarePreparedRecipe {
     static EMPTY: RecipeMap;
-    static create(paramrecipes: (Object | null)[]): RecipeMap;
+    static create(paramrecipes: RecipeHolder<Object>[]): RecipeMap;
     private constructor(byType: Multimap<RecipeType<Object>, RecipeHolder<Object>>, byKey: Map<ResourceKey<Recipe<Object>>, RecipeHolder<Object>>)
     // private byKey: Map<ResourceKey<Recipe<Object>>, RecipeHolder<Object>>;
     // private bySyncedSerializer: Map<Object | null, Object | null>;
     // private byType: Multimap<RecipeType<Object>, RecipeHolder<Object>>;
     byKey(recipeId: ResourceKey<Recipe<Object>>): RecipeHolder<Object>;
-    byType(type: RecipeType<T>): E[];
+    byType<T extends Recipe<I>>(type: RecipeType<T>): RecipeHolder<T>[];
     fabric_getRecipesBySyncedSerializer(arg0: RecipeSerializer<Recipe<Object>>): (Object | null)[];
-    getRecipesFor<I extends RecipeInput>(type: RecipeType<T>, container: I, level: Level): Stream<RecipeHolder<T>>;
-    values(): E[];
+    getRecipesFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, container: I, level: Level): Stream<RecipeHolder<T>>;
+    values(): RecipeHolder<Object>[];
 }

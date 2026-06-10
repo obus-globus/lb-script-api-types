@@ -38,9 +38,9 @@ export class Gson extends Object {
     // private floatAdapter(arg0: boolean): TypeAdapter<Number>;
     fromJson<T extends Object | number | string | boolean>(arg0: Reader, arg1: Class<T>): T;
     fromJson<T extends Object | number | string | boolean>(arg0: JsonReader, arg1: Type): T;
-    getAdapter(arg0: Class<T>): TypeAdapter<T>;
-    getAdapter(arg0: TypeToken<T>): TypeAdapter<T>;
-    getDelegateAdapter(arg0: TypeAdapterFactory, arg1: TypeToken<T>): TypeAdapter<T>;
+    getAdapter<T extends Object | number | string | boolean>(arg0: Class<T>): TypeAdapter<T>;
+    getAdapter<T extends Object | number | string | boolean>(arg0: TypeToken<T>): TypeAdapter<T>;
+    getDelegateAdapter<T extends Object | number | string | boolean>(arg0: TypeAdapterFactory, arg1: TypeToken<T>): TypeAdapter<T>;
     // private longAdapter(arg0: LongSerializationPolicy): TypeAdapter<Number>;
     // private newJsonWriter(arg0: Writer): JsonWriter;
     toJson(arg0: Object, arg1: Appendable): void;

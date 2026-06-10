@@ -4,5 +4,5 @@ import type { FeedbackArcSet } from '../../../../../../de/odysseus/ithaka/digrap
 import type { FeedbackArcSetPolicy } from '../../../../../../de/odysseus/ithaka/digraph/util/fas/FeedbackArcSetPolicy.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface FeedbackArcSetProvider extends Object{
-    getFeedbackArcSet(arg0: Digraph<V>, arg1: EdgeWeights<V>, arg2: FeedbackArcSetPolicy): FeedbackArcSet<V>;
+    getFeedbackArcSet<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>, arg2: FeedbackArcSetPolicy): FeedbackArcSet<V>;
 }

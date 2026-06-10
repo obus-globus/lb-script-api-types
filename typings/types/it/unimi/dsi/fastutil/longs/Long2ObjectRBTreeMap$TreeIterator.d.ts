@@ -10,9 +10,9 @@ export class Long2ObjectRBTreeMap$TreeIterator extends Object {
     back(arg0: number): number;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    nextEntry(): Long2ObjectRBTreeMap$Entry<V>;
+    nextEntry<V extends Object | number | string | boolean>(): Long2ObjectRBTreeMap$Entry<V>;
     nextIndex(): number;
-    previousEntry(): Long2ObjectRBTreeMap$Entry<V>;
+    previousEntry<V extends Object | number | string | boolean>(): Long2ObjectRBTreeMap$Entry<V>;
     previousIndex(): number;
     remove(): void;
     skip(arg0: number): number;

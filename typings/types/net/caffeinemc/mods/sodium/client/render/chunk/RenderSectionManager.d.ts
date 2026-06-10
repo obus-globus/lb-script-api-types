@@ -82,13 +82,13 @@ export class RenderSectionManager extends Object {
     // private disconnectNeighborNodes(arg0: RenderSection): void;
     finalizeRenderLists(arg0: Viewport): void;
     getBuilder(): ChunkBuilder;
-    getDebugStrings(arg0: boolean): E[];
+    getDebugStrings(arg0: boolean): string[];
     // private getEffectiveRenderDistance(arg0: FogParameters): number;
     // private getRenderDistance(): number;
     getRenderLists(): SortedRenderLists;
     // private getRenderSection(arg0: number, arg1: number, arg2: number): RenderSection;
     // private getSearchDistance(arg0: FogParameters): number;
-    getSectionsWithGlobalEntities(): E[];
+    getSectionsWithGlobalEntities(): RenderSection[];
     getTotalSections(): number;
     getVisibleChunkCount(): number;
     // private isOutOfGraph(arg0: SectionPos): boolean;

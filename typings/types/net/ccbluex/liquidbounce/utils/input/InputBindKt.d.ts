@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { InputBind } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind.d.ts'
 import type { InputBind$BindAction } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind$BindAction.d.ts'
+import type { InputBind$Modifier } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind$Modifier.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 export class InputBindKt extends Object {
     /**
@@ -10,7 +11,7 @@ export class InputBindKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L304 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:304}
      */
-    static bind(value: Value<InputBind>, key: InputConstants$Key, action: InputBind$BindAction, modifiers: (Object | null)[]): void;
+    static bind(value: Value<InputBind>, key: InputConstants$Key, action: InputBind$BindAction, modifiers: InputBind$Modifier[]): void;
     static bind(value: Value<InputBind>, name: string): void;
     static renderText(inputBind: InputBind): Component;
     /**

@@ -4,12 +4,12 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockPredicate extends Object implements Predicate<BlockState> {
     static forBlock(paramblock: Block): BlockPredicate;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(block: Block)
     // private block: Block;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: BlockState) => boolean): (param0: BlockState) => boolean;
+    negate(): (param0: BlockState) => boolean;
+    or(arg0: (param0: BlockState) => boolean): (param0: BlockState) => boolean;
     test(input: BlockState): boolean;
 }

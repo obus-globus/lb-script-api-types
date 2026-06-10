@@ -1,9 +1,9 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class TierItemUtilsKt extends Object {
-    static actualTierItem(item: string, itemsWithTiers: { [key: string]: Object | null }): string;
+    static actualTierItem(item: string, itemsWithTiers: { [key: string]: string[] }): string;
     static autoShopItemTier(string: string): number;
     static generalTiersName(string: string): string;
-    static getAllTierItems(item: string, itemsWithTiers: { [key: string]: Object | null }): string[];
+    static getAllTierItems(item: string, itemsWithTiers: { [key: string]: string[] }): string[];
     /**
      * Checks if there is a better item so that it's not necessary to buy the current item
      *

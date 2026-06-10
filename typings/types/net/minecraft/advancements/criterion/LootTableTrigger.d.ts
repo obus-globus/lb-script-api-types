@@ -8,6 +8,6 @@ import type { LootTable } from '../../../../net/minecraft/world/level/storage/lo
 export class LootTableTrigger extends SimpleCriterionTrigger<LootTableTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<LootTableTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: LootTableTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: LootTableTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, lootTable: ResourceKey<LootTable>): void;
 }

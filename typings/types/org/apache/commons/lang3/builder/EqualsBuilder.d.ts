@@ -6,7 +6,7 @@ export class EqualsBuilder extends Object implements Builder<boolean> {
     static reflectionEquals(paramarg0: Object, paramarg1: Object, paramarg2: boolean, paramarg3: Class<Object>, paramarg4: boolean, paramarg5: (Object | null)[]): boolean;
     static reflectionEquals(paramarg0: Object, paramarg1: Object, paramarg2: boolean, paramarg3: Class<Object>, paramarg4: (Object | null)[]): boolean;
     static reflectionEquals(paramarg0: Object, paramarg1: Object, paramarg2: (Object | null)[]): boolean;
-    static reflectionEquals(paramarg0: Object, paramarg1: Object, paramarg2: E[]): boolean;
+    static reflectionEquals(paramarg0: Object, paramarg1: Object, paramarg2: string[]): boolean;
     constructor()
     // private bypassReflectionClasses: Class<Object>[];
     // private excludeFields: string[];

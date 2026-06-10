@@ -7,7 +7,7 @@ export class Container$ContainerIterator extends Object implements Iterator<Item
     // private container: ItemStack[];
     // private index: number;
     // private size: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: ItemStack) => void): void;
     hasNext(): boolean;
     next(): ItemStack;
 }

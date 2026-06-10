@@ -97,7 +97,7 @@ export class MixinTargetContext extends ClassContext implements IMixinContext {
     getPriority(): number;
     getReferenceMapper(): IReferenceMapper;
     getShadowFields(): Map$Entry<FieldNode, ClassInfo$Field>[];
-    getShadowMethods(): E[];
+    getShadowMethods(): MethodNode[];
     getSignature(): ClassSignature;
     getSourceFile(): string;
     getStratum(): SourceMap$File;

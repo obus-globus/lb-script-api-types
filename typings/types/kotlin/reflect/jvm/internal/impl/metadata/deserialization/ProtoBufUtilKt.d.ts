@@ -3,5 +3,5 @@ import type { GeneratedMessageLite$ExtendableMessage } from '../../../../../../.
 import type { GeneratedMessageLite$GeneratedExtension } from '../../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/GeneratedMessageLite$GeneratedExtension.d.ts'
 export class ProtoBufUtilKt extends Object {
     static getExtensionOrNull(paramarg0: GeneratedMessageLite$ExtendableMessage<Object>, paramarg1: GeneratedMessageLite$GeneratedExtension<Object, Object>): Object | null;
-    static getExtensionOrNull(paramarg0: GeneratedMessageLite$ExtendableMessage<Object>, paramarg1: GeneratedMessageLite$GeneratedExtension<Object, Object>, paramarg2: number): Object | null;
+    static getExtensionOrNull(paramarg0: GeneratedMessageLite$ExtendableMessage<Object>, paramarg1: GeneratedMessageLite$GeneratedExtension<Object, (Object | null)[]>, paramarg2: number): Object | null;
 }

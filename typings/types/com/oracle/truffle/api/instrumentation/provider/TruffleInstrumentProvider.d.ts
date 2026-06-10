@@ -5,5 +5,5 @@ export abstract class TruffleInstrumentProvider extends Object {
     createInternalResource(resourceId: string): Object;
     getInstrumentClassName(): string;
     getInternalResourceIds(): string[];
-    getServicesClassNames(): E[];
+    getServicesClassNames(): string[];
 }

@@ -12,7 +12,7 @@ import type { Resource } from '../../../../../net/minecraft/server/packs/resourc
 import type { ResourceFilterSection } from '../../../../../net/minecraft/server/packs/resources/ResourceFilterSection.d.ts'
 import type { ResourceProvider } from '../../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class MultiPackResourceManager extends Object implements FabricMultiPackResourceManager, CloseableResourceManager {
-    static EMPTY: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>;
+    static EMPTY: (param0: Identifier) => Optional<Resource>;
     constructor(type: PackType, packs: PackResources[])
     // private namespacedManagers: { [key: string]: FallbackResourceManager };
     // private packType: PackType;
@@ -24,6 +24,6 @@ export class MultiPackResourceManager extends Object implements FabricMultiPackR
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
 }

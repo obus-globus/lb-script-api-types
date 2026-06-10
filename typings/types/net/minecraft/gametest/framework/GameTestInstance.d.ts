@@ -11,7 +11,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { Rotation } from '../../../../net/minecraft/world/level/block/Rotation.d.ts'
 export abstract class GameTestInstance extends Object {
     static DIRECT_CODEC: Codec<GameTestInstance>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<GameTestInstance>[]): MapCodec<GameTestInstance>;
     constructor(info: TestData<Holder<TestEnvironmentDefinition<Object>>>)
     // private info: TestData<Holder<TestEnvironmentDefinition<Object>>>;
     batch(): Holder<TestEnvironmentDefinition<Object>>;

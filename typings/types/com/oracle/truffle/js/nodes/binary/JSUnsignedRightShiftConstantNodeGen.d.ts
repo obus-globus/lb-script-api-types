@@ -1,14 +1,16 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSOverloadedBinaryNode } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSOverloadedBinaryNode.d.ts'
 import type { JSUnsignedRightShiftConstantNode } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSUnsignedRightShiftConstantNode.d.ts'
 import type { JSUnsignedRightShiftConstantNodeGen$GenericData } from '../../../../../../com/oracle/truffle/js/nodes/binary/JSUnsignedRightShiftConstantNodeGen$GenericData.d.ts'
 import type { JSToUInt32Node } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToUInt32Node.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSUnsignedRightShiftConstantNodeGen extends JSUnsignedRightShiftConstantNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JavaScriptNode;
     static create(paramoperand: JavaScriptNode, paramshiftValue: number, paramrightValue: number): JSUnsignedRightShiftConstantNode;
     static findBlockScopeNode(paramnode: Node): Node;

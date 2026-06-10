@@ -8,8 +8,8 @@ import type { CompletableFuture } from '../../../../../../java/util/concurrent/C
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface CommandArgumentParser<T extends Object | number | string | boolean> extends Object {
-    mapResult(mapper: (param0: T) => S): CommandArgumentParser<S>;
+    mapResult<S extends Object | number | string | boolean>(mapper: (param0: T) => S): CommandArgumentParser<S>;
     parseForCommands(reader: StringReader): T;
     parseForSuggestions(suggestionsBuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    withCodec(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
+    withCodec<O extends Object | number | string | boolean>(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
 }

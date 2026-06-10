@@ -3,6 +3,7 @@ import type { CrossFrameResourcePool } from '../../../../com/mojang/blaze3d/reso
 import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
+import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FogParameters } from '../../../../net/caffeinemc/mods/sodium/client/util/FogParameters.d.ts'
 import type { GameRendererStorage } from '../../../../net/caffeinemc/mods/sodium/client/util/GameRendererStorage.d.ts'
@@ -32,6 +33,7 @@ import type { OverlayTexture } from '../../../../net/minecraft/client/renderer/t
 import type { TextureManager } from '../../../../net/minecraft/client/renderer/texture/TextureManager.d.ts'
 import type { ModelManager } from '../../../../net/minecraft/client/resources/model/ModelManager.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { Resource } from '../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 import type { RandomSource } from '../../../../net/minecraft/util/RandomSource.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -107,7 +109,7 @@ export class GameRenderer extends Object implements AutoCloseable, GameRendererS
     levelLightmap(): GpuTextureView;
     lightmap(): GpuTextureView;
     overlayTexture(): OverlayTexture;
-    preloadUiShader(resourceProvider: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>): void;
+    preloadUiShader(resourceProvider: (param0: Identifier) => Optional<Resource>): void;
     processBlurEffect(): void;
     projectHorizonToScreen(): number;
     projectPointToScreen(point: Vec3): Vec3;

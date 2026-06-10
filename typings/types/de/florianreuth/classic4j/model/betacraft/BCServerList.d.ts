@@ -8,7 +8,7 @@ import type { HttpClient } from '../../../../../java/net/http/HttpClient.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BCServerList extends Record {
-    static get(paramarg0: HttpClient, paramarg1: Gson, paramarg2: URI, paramarg3: Class<Object>): CompletableFuture<BCServerList>;
+    static get(paramarg0: HttpClient, paramarg1: Gson, paramarg2: URI, paramarg3: Class<BCServerInfo>): CompletableFuture<BCServerList>;
     constructor(servers: BCServerInfo[])
     // private servers: BCServerInfo[];
     equals(arg0: Object | null): boolean;

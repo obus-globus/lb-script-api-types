@@ -6,14 +6,14 @@ import type { TrMethod } from '../../../../../../../net/fabricmc/loader/impl/lib
 export interface TrClass extends Object {
     getAccess(): number;
     getEnvironment(): TrEnvironment;
-    getFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => kotlin.Boolean, arg4: E[]): E[];
-    getMethods(): E[];
-    getMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => kotlin.Boolean, arg4: E[]): E[];
+    getFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => boolean, arg4: TrField[]): TrField[];
+    getMethods(): TrMethod[];
+    getMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => boolean, arg4: TrMethod[]): TrMethod[];
     getName(): string;
     isAssignableFrom(arg0: TrClass): boolean;
     isInput(): boolean;
     isInterface(): boolean;
     isRecord(): boolean;
-    resolveFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => kotlin.Boolean, arg4: E[]): E[];
-    resolveMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => kotlin.Boolean, arg4: E[]): E[];
+    resolveFields(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrField) => boolean, arg4: TrField[]): TrField[];
+    resolveMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => boolean, arg4: TrMethod[]): TrMethod[];
 }

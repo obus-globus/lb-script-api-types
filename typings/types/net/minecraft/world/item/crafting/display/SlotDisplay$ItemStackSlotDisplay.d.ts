@@ -23,7 +23,7 @@ export class SlotDisplay$ItemStackSlotDisplay extends Record implements SlotDisp
     equals(o: Object | null): boolean;
     hashCode(): number;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    resolve(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
+    resolve<T extends Object | number | string | boolean>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];
     stack(): ItemStackTemplate;

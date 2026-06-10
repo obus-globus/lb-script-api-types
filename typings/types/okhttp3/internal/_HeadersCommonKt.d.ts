@@ -12,7 +12,7 @@ export class _HeadersCommonKt extends Object {
     static commonHashCode(paramarg0: Pair<string, string>[]): number;
     static commonHeadersGet(paramarg0: (Object | null)[], paramarg1: string): string;
     static commonHeadersOf(paramarg0: (Object | null)[]): Pair<string, string>[];
-    static commonIterator(paramarg0: Pair<string, string>[]): Iterator<Object>;
+    static commonIterator(paramarg0: Pair<string, string>[]): Iterator<Pair<string, string>>;
     static commonName(paramarg0: Pair<string, string>[], paramarg1: number): string;
     static commonNewBuilder(paramarg0: Pair<string, string>[]): Headers$Builder;
     static commonRemoveAll(paramarg0: Headers$Builder, paramarg1: string): Headers$Builder;

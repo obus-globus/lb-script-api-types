@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementNode } from '../../../../../../net/minecraft/advancements/AdvancementNode.d.ts'
 import type { AdvancementProgress } from '../../../../../../net/minecraft/advancements/AdvancementProgress.d.ts'
@@ -32,7 +31,7 @@ export class AdvancementsScreen extends Screen implements ClientAdvancements$Lis
     static WINDOW_INSIDE_WIDTH: number;
     static WINDOW_WIDTH: number;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(advancements: ClientAdvancements)
     constructor(advancements: ClientAdvancements, lastScreen: Screen)

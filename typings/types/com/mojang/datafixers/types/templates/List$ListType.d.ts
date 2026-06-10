@@ -21,11 +21,11 @@ export class List$ListType<A extends Object | number | string | boolean> extends
     all(arg0: TypeRewriteRule, arg1: boolean, arg2: boolean): RewriteResult<A[], Object>;
     buildCodec(): Codec<A[]>;
     buildTemplate(): TypeTemplate;
-    // private capLeft(arg0: TypedOptic<A, B, FT, FR>): TypedOptic<A[], Object, FT, FR>;
+    // private capLeft<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: TypedOptic<A, B, FT, FR>): TypedOptic<A[], Object, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
     equals(arg0: Object | null): boolean;
-    findTypeInChildren(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A[], Object, FT, FR>, Type$FieldNotFoundException>;
-    fix(arg0: RewriteResult<A, B>): RewriteResult<A[], Object>;
+    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A[], Object, FT, FR>, Type$FieldNotFoundException>;
+    fix<B extends Object | number | string | boolean>(arg0: RewriteResult<A, B>): RewriteResult<A[], Object>;
     getElement(): Type<A>;
     hashCode(): number;
     one(arg0: TypeRewriteRule): Optional<RewriteResult<A[], Object>>;

@@ -10,13 +10,13 @@ export class ModuleFastPlace$ApplyTo extends Enum<ModuleFastPlace$ApplyTo> imple
     static Companion: Tagged$Companion;
     static PROJECTILES: ModuleFastPlace$ApplyTo;
     static getEntries(): ModuleFastPlace$ApplyTo[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFastPlace$ApplyTo;
     static values(): (Object | null)[];
-    private constructor(tag: string, condition: (param0: Item) => kotlin.Boolean)
-    readonly condition: (param0: Item) => kotlin.Boolean;
+    private constructor(tag: string, condition: (param0: Item) => boolean)
+    readonly condition: (param0: Item) => boolean;
     readonly tag: string;
     name(): "PROJECTILES" | "BLOCKS";
 }

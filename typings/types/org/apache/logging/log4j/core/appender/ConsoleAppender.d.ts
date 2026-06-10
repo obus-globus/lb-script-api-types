@@ -13,9 +13,9 @@ export class ConsoleAppender extends AbstractOutputStreamAppender<OutputStreamMa
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
     static PLUGIN_NAME: string;
-    static createAppender(paramlayout: Layout<Object>, paramfilter: Filter, paramtarget: string, paramname: string, paramfollow: string, paramignoreExceptions: string): ConsoleAppender;
-    static createAppender(paramlayout: Layout<Object>, paramfilter: Filter, paramtarget: ConsoleAppender$Target, paramname: string, paramfollow: boolean, paramdirect: boolean, paramignoreExceptions: boolean): ConsoleAppender;
-    static createDefaultAppenderForLayout(paramlayout: Layout<Object>): ConsoleAppender;
+    static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramtarget: string, paramname: string, paramfollow: string, paramignoreExceptions: string): ConsoleAppender;
+    static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramtarget: ConsoleAppender$Target, paramname: string, paramfollow: boolean, paramdirect: boolean, paramignoreExceptions: boolean): ConsoleAppender;
+    static createDefaultAppenderForLayout(paramlayout: Layout<Serializable>): ConsoleAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: OutputStreamManager, ignoreExceptions: boolean, target: ConsoleAppender$Target, properties: Property[])

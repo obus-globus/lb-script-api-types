@@ -16,7 +16,7 @@ export class Uint8ArrayBuiltins$Uint8ArrayConstructor extends Enum<Uint8ArrayBui
     private constructor(length: number)
     // private functionLength: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): Uint8ArrayBuiltins$Uint8ArrayConstructor;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

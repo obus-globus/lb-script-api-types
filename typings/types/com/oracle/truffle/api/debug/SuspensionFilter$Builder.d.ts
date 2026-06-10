@@ -7,10 +7,10 @@ export class SuspensionFilter$Builder extends Object {
     // private ignoreLanguageContextInitialization: boolean;
     // private includeAvailableSourceSectionsOnly: boolean;
     // private includeInternal: boolean;
-    // private sourcePredicate: (param0: Source) => kotlin.Boolean;
+    // private sourcePredicate: (param0: Source) => boolean;
     build(): SuspensionFilter;
     ignoreLanguageContextInitialization(ignore: boolean): SuspensionFilter$Builder;
     includeInternal(internal: boolean): SuspensionFilter$Builder;
-    sourceIs(filter: (param0: Source) => kotlin.Boolean): SuspensionFilter$Builder;
+    sourceIs(filter: (param0: Source) => boolean): SuspensionFilter$Builder;
     sourceSectionAvailableOnly(availableOnly: boolean): SuspensionFilter$Builder;
 }

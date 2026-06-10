@@ -13,7 +13,7 @@ import type { ProfilerFiller } from '../../../../net/minecraft/util/profiling/Pr
 import type { WaypointStyleAsset } from '../../../../net/minecraft/world/waypoints/WaypointStyleAsset.d.ts'
 export class WaypointStyleManager extends SimpleJsonResourceReloadListener<WaypointStyle> implements FabricResourceReloader {
     static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
-    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<Object>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
+    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     constructor()
     // private fabric$id: Identifier;
     // private waypointStyles: Map<ResourceKey<WaypointStyleAsset>, WaypointStyle>;

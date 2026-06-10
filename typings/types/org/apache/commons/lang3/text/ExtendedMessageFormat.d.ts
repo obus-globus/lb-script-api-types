@@ -15,7 +15,7 @@ export class ExtendedMessageFormat extends MessageFormat {
     // private toPattern: string;
     // private appendQuotedString(arg0: string, arg1: ParsePosition, arg2: StringBuilder): StringBuilder;
     applyPattern(arg0: string): void;
-    // private containsElements(arg0: E[]): boolean;
+    // private containsElements(arg0: (Object | null)[]): boolean;
     equals(arg0: Object | null): boolean;
     // private getFormat(arg0: string): Format;
     // private getQuotedString(arg0: string, arg1: ParsePosition): void;

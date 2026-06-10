@@ -4,7 +4,7 @@ import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class ArrayListDeque$DescendingIterator extends Object implements Iterator<T> {
     constructor(null_: ArrayListDeque$DescendingIterator)
     // private index: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<T extends Object | number | string | boolean>(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next<T extends Object | number | string | boolean>(): T;
     remove(): void;

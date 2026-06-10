@@ -6,7 +6,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export class CustomIngredientSync extends Object implements ModInitializer {
     static PACKET_ID: Identifier;
     static PROTOCOL_VERSION_1: number;
-    static SUPPORTED_CUSTOM_INGREDIENTS: PacketContext$Key<Object>;
+    static SUPPORTED_CUSTOM_INGREDIENTS: PacketContext$Key<Identifier[]>;
     static createResponsePayload(paramarg0: number): ServerboundCustomIngredientPayload;
     static decodeResponsePayload(paramarg0: ServerboundCustomIngredientPayload): Identifier[];
     constructor()

@@ -9,9 +9,9 @@ import type { CommandArgumentParser } from '../../../../../../net/minecraft/util
 export abstract class ParserBasedArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<T> {
     constructor(parser: CommandArgumentParser<T>)
     // private parser: CommandArgumentParser<T>;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
     parse(reader: StringReader): T;
 }

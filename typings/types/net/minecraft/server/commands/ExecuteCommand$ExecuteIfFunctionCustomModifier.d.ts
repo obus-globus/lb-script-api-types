@@ -8,8 +8,7 @@ import type { CustomModifierExecutor$ModifierAdapter } from '../../../../net/min
 import type { ExecutionControl } from '../../../../net/minecraft/commands/execution/ExecutionControl.d.ts'
 export class ExecuteCommand$ExecuteIfFunctionCustomModifier extends Object implements CustomModifierExecutor$ModifierAdapter<CommandSourceStack> {
     private constructor(check: boolean)
-    // private check: (param0: number) => kotlin.Boolean;
-    apply(context: CommandContext<T>): E[];
-    apply(context: CommandContext<CommandSourceStack>): E[];
+    // private check: (param0: number) => boolean;
+    apply(context: CommandContext<CommandSourceStack>): CommandSourceStack[];
     apply(originalSource: CommandSourceStack, currentSources: CommandSourceStack[], currentStep: ContextChain<CommandSourceStack>, modifiers: ChainModifiers, output: ExecutionControl<CommandSourceStack>): void;
 }

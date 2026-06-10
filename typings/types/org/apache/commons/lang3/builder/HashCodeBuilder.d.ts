@@ -7,7 +7,7 @@ export class HashCodeBuilder extends Object implements Builder<number> {
     static reflectionHashCode(paramarg0: number, paramarg1: number, paramarg2: Object, paramarg3: boolean): number;
     static reflectionHashCode(paramarg0: Object, paramarg1: boolean): number;
     static reflectionHashCode(paramarg0: Object, paramarg1: (Object | null)[]): number;
-    static reflectionHashCode(paramarg0: Object, paramarg1: E[]): number;
+    static reflectionHashCode(paramarg0: Object, paramarg1: string[]): number;
     constructor()
     constructor(arg0: number, arg1: number)
     // private iConstant: number;

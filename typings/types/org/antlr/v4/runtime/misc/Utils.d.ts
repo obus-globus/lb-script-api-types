@@ -13,7 +13,7 @@ export class Utils extends Object {
     static numNonnull(paramarg0: (Object | null)[]): number;
     static readFile(paramarg0: string): string[];
     static readFile(paramarg0: string, paramarg1: string): string[];
-    static removeAllElements(paramarg0: E[], paramarg1: Object | null): void;
+    static removeAllElements(paramarg0: (Object | null)[], paramarg1: Object | null): void;
     static sequence(paramarg0: number, paramarg1: string): string;
     static spaces(paramarg0: number): string;
     static toCharArray(paramarg0: IntegerList): string[];

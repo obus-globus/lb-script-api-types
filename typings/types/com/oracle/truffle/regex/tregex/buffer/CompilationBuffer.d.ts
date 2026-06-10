@@ -17,9 +17,9 @@ export class CompilationBuffer extends Object {
     readonly intRangesBuffer3: (Object | null)[];
     readonly lazyTransitionDeduplicationMap: EconomicMap<DFACaptureGroupPartialTransition, DFACaptureGroupPartialTransition>;
     readonly matcherDeduplicationMap: EconomicMap<(Object | null)[], CharMatcher>;
-    readonly objectBuffer1: T[];
-    readonly objectBuffer2: T[];
-    readonly objectBuffer3: T[];
+    readonly objectBuffer1: Object[];
+    readonly objectBuffer2: Object[];
+    readonly objectBuffer3: Object[];
     readonly shortArrayBuffer1: number[];
     readonly shortArrayBuffer2: number[];
     getByteArrayBuffer(): ByteArrayBuffer;
@@ -32,9 +32,9 @@ export class CompilationBuffer extends Object {
     getIntRangesBuffer3(): (Object | null)[];
     getLazyTransitionDeduplicationMap(): EconomicMap<DFACaptureGroupPartialTransition, DFACaptureGroupPartialTransition>;
     getMatcherDeduplicationMap(): EconomicMap<(Object | null)[], CharMatcher>;
-    getObjectBuffer1(): T[];
-    getObjectBuffer2(): T[];
-    getObjectBuffer3(): T[];
+    getObjectBuffer1<T extends Object | number | string | boolean>(): T[];
+    getObjectBuffer2<T extends Object | number | string | boolean>(): T[];
+    getObjectBuffer3<T extends Object | number | string | boolean>(): T[];
     getShortArrayBuffer1(): number[];
     getShortArrayBuffer2(): number[];
 }

@@ -8,7 +8,7 @@ export class ModuleBlink$ResetAction extends Enum<ModuleBlink$ResetAction> imple
     static Companion: Tagged$Companion;
     static RESET: ModuleBlink$ResetAction;
     static getEntries(): ModuleBlink$ResetAction[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBlink$ResetAction;

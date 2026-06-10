@@ -1,5 +1,6 @@
 import type { Unit } from '../../../com/mojang/datafixers/util/Unit.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
+import type { Dynamic } from '../../../com/mojang/serialization/Dynamic.d.ts'
 import type { MapCodec } from '../../../com/mojang/serialization/MapCodec.d.ts'
 import type { PrimitiveCodec } from '../../../com/mojang/serialization/codecs/PrimitiveCodec.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
@@ -22,7 +23,7 @@ export class StringRepresentable$EnumCodec<E extends Enum<E> & StringRepresentab
     static INT_STREAM: PrimitiveCodec<IntStream>;
     static LONG: PrimitiveCodec<number>;
     static LONG_STREAM: PrimitiveCodec<LongStream>;
-    static PASSTHROUGH: Codec<Object>;
+    static PASSTHROUGH: Codec<Dynamic<Object>>;
     static SHORT: PrimitiveCodec<number>;
     static STRING: PrimitiveCodec<string>;
     constructor(valueArray: E[], nameResolver: (param0: string) => E)

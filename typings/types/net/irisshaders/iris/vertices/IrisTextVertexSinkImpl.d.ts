@@ -6,7 +6,7 @@ import type { IrisTextVertexSink } from '../../../../net/irisshaders/iris/api/v0
 import type { IrisTextVertexSinkImpl$TextQuadView } from '../../../../net/irisshaders/iris/vertices/IrisTextVertexSinkImpl$TextQuadView.d.ts'
 import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
 export class IrisTextVertexSinkImpl extends Object implements IrisTextVertexSink {
-    constructor(arg0: number, arg1: (param0: ByteBuffer) => unknown)
+    constructor(arg0: number, arg1: (param0: number) => ByteBuffer)
     // private buffer: ByteBuffer;
     // private elementOffset: number;
     // private quad: IrisTextVertexSinkImpl$TextQuadView;

@@ -4,8 +4,8 @@ import type { ReachabilityMetadata$Method } from '../../../../../../../../../org
 import type { ReachabilityMetadata$MinimalJsonWriter } from '../../../../../../../../../org/apache/logging/log4j/core/config/plugins/processor/internal/ReachabilityMetadata$MinimalJsonWriter.d.ts'
 export class ReachabilityMetadata$Type extends Object {
     constructor(type: string)
-    // private fields: E[];
-    // private methods: E[];
+    // private fields: ReachabilityMetadata$Field[];
+    // private methods: ReachabilityMetadata$Method[];
     readonly type: string;
     addField(field: ReachabilityMetadata$Field): void;
     addMethod(method: ReachabilityMetadata$Method): void;

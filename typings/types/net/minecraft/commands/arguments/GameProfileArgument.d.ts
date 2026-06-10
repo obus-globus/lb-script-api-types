@@ -8,15 +8,16 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { GameProfileArgument$Result } from '../../../../net/minecraft/commands/arguments/GameProfileArgument$Result.d.ts'
-export class GameProfileArgument extends Object implements ArgumentType<(param0: CommandSourceStack) => kotlin.collections.Collection<net.minecraft.server.players.NameAndId>> {
+import type { NameAndId } from '../../../../net/minecraft/server/players/NameAndId.d.ts'
+export class GameProfileArgument extends Object implements ArgumentType<(param0: CommandSourceStack) => NameAndId[]> {
     static ERROR_UNKNOWN_PLAYER: SimpleCommandExceptionType;
     static gameProfile(): GameProfileArgument;
-    static getGameProfiles(paramsource: CommandContext<CommandSourceStack>, paramname: string): E[];
+    static getGameProfiles(paramsource: CommandContext<CommandSourceStack>, paramname: string): NameAndId[];
     constructor()
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(contextBuilder: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): (param0: CommandSourceStack) => kotlin.collections.Collection<net.minecraft.server.players.NameAndId>;
-    parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): (param0: CommandSourceStack) => kotlin.collections.Collection<net.minecraft.server.players.NameAndId>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(contextBuilder: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): (param0: CommandSourceStack) => NameAndId[];
+    parse(reader: StringReader): (param0: CommandSourceStack) => NameAndId[];
+    parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): (param0: CommandSourceStack) => NameAndId[];
 }

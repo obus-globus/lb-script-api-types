@@ -19,7 +19,7 @@ export interface FabricLanguageProvider$TranslationBuilder extends Object{
     add(arg0: Identifier, arg1: string): void;
     add(arg0: ResourceKey<CreativeModeTab>, arg1: string): void;
     add(arg0: SoundEvent, arg1: string): void;
-    add(arg0: Stat<T>[], arg1: string): void;
+    add(arg0: Stat<Object>[], arg1: string): void;
     add(arg0: TagKey<Object>, arg1: string): void;
     add(arg0: MobEffect, arg1: string): void;
     add(arg0: EntityType<Object>, arg1: string): void;

@@ -9,7 +9,7 @@ export class KillAuraAutoBlock$BlockMode extends Enum<KillAuraAutoBlock$BlockMod
     static FAKE: KillAuraAutoBlock$BlockMode;
     static INTERACT: KillAuraAutoBlock$BlockMode;
     static getEntries(): KillAuraAutoBlock$BlockMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraAutoBlock$BlockMode;

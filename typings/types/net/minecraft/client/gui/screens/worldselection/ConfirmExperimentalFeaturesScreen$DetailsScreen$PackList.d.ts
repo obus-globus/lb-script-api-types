@@ -4,11 +4,12 @@ import type { ConfirmExperimentalFeaturesScreen$DetailsScreen$PackListEntry } fr
 import type { SoundManager } from '../../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
+import type { Pack } from '../../../../../../net/minecraft/server/packs/repository/Pack.d.ts'
 export class ConfirmExperimentalFeaturesScreen$DetailsScreen$PackList extends ObjectSelectionList<ConfirmExperimentalFeaturesScreen$DetailsScreen$PackListEntry> {
     static SCROLLBAR_WIDTH: number;
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: ConfirmExperimentalFeaturesScreen$DetailsScreen$PackList, selectedPacks: E[])
+    constructor(null_: ConfirmExperimentalFeaturesScreen$DetailsScreen$PackList, selectedPacks: Pack[])
     getRowWidth(): number;
 }

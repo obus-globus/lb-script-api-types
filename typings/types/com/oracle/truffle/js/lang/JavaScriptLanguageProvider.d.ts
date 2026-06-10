@@ -7,5 +7,5 @@ export class JavaScriptLanguageProvider extends TruffleLanguageProvider {
     createInternalResource(resourceId: string): Object;
     getInternalResourceIds(): string[];
     getLanguageClassName(): string;
-    getServicesClassNames(): E[];
+    getServicesClassNames(): string[];
 }

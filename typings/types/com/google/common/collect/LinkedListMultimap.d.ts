@@ -25,7 +25,7 @@ export class LinkedListMultimap<K extends Object | number | string | boolean, V 
     clear(): void;
     containsKey(key: Object): boolean;
     containsValue(value: Object): boolean;
-    createAsMap(): Map<K, E[]>;
+    createAsMap(): Map<K, V[]>;
     createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];

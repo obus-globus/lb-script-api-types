@@ -7,7 +7,7 @@ export interface IOSpliterator<T extends Object | number | string | boolean> ext
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T, param1: Object | null) => kotlin.Int;
+    getComparator(): (param0: T, param1: T) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: T) => void): boolean;

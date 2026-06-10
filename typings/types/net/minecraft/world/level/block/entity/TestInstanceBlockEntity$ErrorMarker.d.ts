@@ -5,7 +5,7 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class TestInstanceBlockEntity$ErrorMarker extends Record {
     static CODEC: Codec<TestInstanceBlockEntity$ErrorMarker>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<TestInstanceBlockEntity$ErrorMarker[]>;
     constructor(pos: BlockPos, text: Component)
     // private pos: BlockPos;
     // private text: Component;

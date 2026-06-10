@@ -8,9 +8,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.kt:23}
  */
 export class RestrictedSingleUseAction extends Object {
-    constructor(canExecute: () => kotlin.Boolean, action: () => void)
+    constructor(canExecute: () => boolean, action: () => void)
     // private action: () => void;
-    // private canExecute: () => kotlin.Boolean;
+    // private canExecute: () => boolean;
     // private isExecuted: boolean;
     invoke(): void;
 }

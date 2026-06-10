@@ -9,7 +9,7 @@ export class ModuleReplenish$Features extends Enum<ModuleReplenish$Features> imp
     static USE_PICKUP_ALL: ModuleReplenish$Features;
     static USE_SWAP: ModuleReplenish$Features;
     static getEntries(): ModuleReplenish$Features[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleReplenish$Features;

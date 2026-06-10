@@ -14,8 +14,8 @@ export class SimpleText2TextTranslator extends Object implements Translator<stri
     // private targetEmbedding: TrainableTextEmbedding;
     // private textProcessors: TextProcessor[];
     // private tokenizer: SimpleTokenizer;
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    batchProcessInput(arg0: TranslatorContext, arg1: string[]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): string[];
     // private get(arg0: NDManager): NDArray;
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;

@@ -1,4 +1,5 @@
 import type { StructuredDataContainer } from '../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataContainer.d.ts'
+import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { ProtocolVersion } from '../../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
 import type { TextComponentCodec } from '../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/TextComponentCodec.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -14,7 +15,7 @@ export class ProtocolConstants extends Object {
     static BLOCK_FRICTION: number;
     static JAVA_AIR_ID: number;
     static JAVA_PACK_VERSION: number;
-    static JAVA_PROTOCOL_CLASS: Class<Object>;
+    static JAVA_PROTOCOL_CLASS: Class<Protocol<Object, Object, Object, Object>>;
     static JAVA_TEXT_COMPONENT_SERIALIZER: TextComponentCodec;
     static JAVA_VERSION: ProtocolVersion;
     static LAST_BLOCK_ITEM_ID: number;

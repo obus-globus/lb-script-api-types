@@ -8,9 +8,9 @@ import type { IntFunction } from '../../../../../java/util/function/IntFunction.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface TypeTemplate extends Object {
     apply(arg0: TypeFamily): TypeFamily;
-    applyO(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
-    findFieldOrType(arg0: number, arg1: string, arg2: Type<A>, arg3: Type<B>): Either<TypeTemplate, Type$FieldNotFoundException>;
-    hmap(arg0: TypeFamily, arg1: (param0: RewriteResult<Object, Object>) => unknown): (param0: RewriteResult<Object, Object>) => unknown;
+    applyO<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
+    findFieldOrType<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: number, arg1: string, arg2: Type<A>, arg3: Type<B>): Either<TypeTemplate, Type$FieldNotFoundException>;
+    hmap(arg0: TypeFamily, arg1: (param0: number) => RewriteResult<Object, Object>): (param0: number) => RewriteResult<Object, Object>;
     size(): number;
     toSimpleType(): Type<Object>;
 }

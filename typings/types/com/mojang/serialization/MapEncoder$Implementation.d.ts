@@ -11,9 +11,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class MapEncoder$Implementation<A extends Object | number | string | boolean> extends CompressorHolder implements MapEncoder<A> {
     static makeCompressedBuilder(paramarg0: DynamicOps<Object>, paramarg1: KeyCompressor<Object>): RecordBuilder<Object>;
     constructor()
-    comap(arg0: (param0: B) => A): MapEncoder<B>;
-    compressedBuilder(arg0: DynamicOps<T>): RecordBuilder<T>;
+    comap<B extends Object | number | string | boolean>(arg0: (param0: B) => A): MapEncoder<B>;
+    compressedBuilder<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): RecordBuilder<T>;
     encoder(): Encoder<A>;
-    flatComap(arg0: (param0: B) => DataResult<A>): MapEncoder<B>;
+    flatComap<B extends Object | number | string | boolean>(arg0: (param0: B) => DataResult<A>): MapEncoder<B>;
     withLifecycle(arg0: Lifecycle): MapEncoder<A>;
 }

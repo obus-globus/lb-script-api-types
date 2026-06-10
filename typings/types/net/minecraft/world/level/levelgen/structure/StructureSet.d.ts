@@ -6,7 +6,7 @@ import type { Structure } from '../../../../../../net/minecraft/world/level/leve
 import type { StructureSet$StructureSelectionEntry } from '../../../../../../net/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry.d.ts'
 import type { StructurePlacement } from '../../../../../../net/minecraft/world/level/levelgen/structure/placement/StructurePlacement.d.ts'
 export class StructureSet extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<StructureSet>>;
     static DIRECT_CODEC: Codec<StructureSet>;
     static entry(paramstructure: Holder<Structure>): StructureSet$StructureSelectionEntry;
     static entry(paramstructure: Holder<Structure>, paramweight: number): StructureSet$StructureSelectionEntry;

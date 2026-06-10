@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -11,7 +12,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { TestBlockMode } from '../../../../../net/minecraft/world/level/block/state/properties/TestBlockMode.d.ts'
 export class ServerboundSetTestBlockPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetTestBlockPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(position: BlockPos, mode: TestBlockMode, message: string)
     // private message: string;
     // private mode: TestBlockMode;

@@ -5,6 +5,6 @@ import type { FormattedText$StyledContentConsumer } from '../../../../net/minecr
 import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 export interface FormattedText extends Object{
     getString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

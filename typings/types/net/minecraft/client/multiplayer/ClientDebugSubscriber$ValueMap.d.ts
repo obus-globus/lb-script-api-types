@@ -10,6 +10,6 @@ export class ClientDebugSubscriber$ValueMap<K extends Object | number | string |
     forEach(output: (param0: K, param1: V) => void): void;
     getValue(key: K): V;
     removeKey(key: K): void;
-    removeKeys(predicate: (param0: K) => kotlin.Boolean): void;
-    removeValues(predicate: (param0: ClientDebugSubscriber$ValueWrapper<V>) => kotlin.Boolean): void;
+    removeKeys(predicate: (param0: K) => boolean): void;
+    removeValues(predicate: (param0: ClientDebugSubscriber$ValueWrapper<V>) => boolean): void;
 }

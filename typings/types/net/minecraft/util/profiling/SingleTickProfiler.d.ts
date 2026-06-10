@@ -6,10 +6,10 @@ import type { ProfilerFiller } from '../../../../net/minecraft/util/profiling/Pr
 export class SingleTickProfiler extends Object {
     static createTickProfiler(paramname: string): SingleTickProfiler;
     static decorateFiller(paramfiller: ProfilerFiller, paramtickProfiler: SingleTickProfiler): ProfilerFiller;
-    constructor(realTime: () => kotlin.Long, location: string, saveThresholdNs: number)
+    constructor(realTime: () => number, location: string, saveThresholdNs: number)
     // private location: File;
     // private profiler: ProfileCollector;
-    // private realTime: () => kotlin.Long;
+    // private realTime: () => number;
     // private saveThreshold: number;
     // private tick: number;
     endTick(): void;

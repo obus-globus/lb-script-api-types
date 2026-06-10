@@ -11,8 +11,8 @@ import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupp
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class InternalResource$Env extends Object {
-    constructor(resource: InternalResource, contextPreinitializationCheck: () => kotlin.Boolean)
-    // private contextPreinitializationCheck: () => kotlin.Boolean;
+    constructor(resource: InternalResource, contextPreinitializationCheck: () => boolean)
+    // private contextPreinitializationCheck: () => boolean;
     // private owner: Module;
     // private resourceClass: Class<InternalResource>;
     // private copyResource(source: Path[], target: Path[], attrs: PosixFilePermission[]): void;
@@ -25,5 +25,5 @@ export class InternalResource$Env extends Object {
     // private preferredResource(candidates: Enumeration<URL>): URL;
     readResourceLines(location: Path[]): string[];
     unpackResourceFiles(source: Path[], target: Path[], relativizeTo: Path[]): void;
-    unpackResourceFiles(source: Path[], target: Path[], relativizeTo: Path[], filter: (param0: Path[]) => kotlin.Boolean): void;
+    unpackResourceFiles(source: Path[], target: Path[], relativizeTo: Path[], filter: (param0: Path[]) => boolean): void;
 }

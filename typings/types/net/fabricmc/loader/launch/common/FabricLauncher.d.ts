@@ -6,7 +6,7 @@ import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
 export interface FabricLauncher extends Object{
     getClassByteArray(arg0: string, arg1: boolean): number[];
     getEnvironmentType(): EnvType;
-    getLoadTimeDependencies(): E[];
+    getLoadTimeDependencies(): URL[];
     getResourceAsStream(arg0: string): InputStream;
     getTargetClassLoader(): ClassLoader;
     isClassLoaded(arg0: string): boolean;

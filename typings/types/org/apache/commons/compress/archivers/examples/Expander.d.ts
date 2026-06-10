@@ -1,7 +1,9 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
+import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { SeekableByteChannel } from '../../../../../../java/nio/channels/SeekableByteChannel.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { ArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'
 import type { ArchiveInputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveInputStream.d.ts'
 import type { CloseableConsumer } from '../../../../../../org/apache/commons/compress/archivers/examples/CloseableConsumer.d.ts'
 import type { Expander$ArchiveEntryBiConsumer } from '../../../../../../org/apache/commons/compress/archivers/examples/Expander$ArchiveEntryBiConsumer.d.ts'
@@ -25,7 +27,7 @@ export class Expander extends Object {
     expand(arg0: string, arg1: Path[], arg2: Path[]): void;
     expand(arg0: ArchiveInputStream<Object>, arg1: File): void;
     expand(arg0: ArchiveInputStream<Object>, arg1: Path[]): void;
-    // private expand(arg0: () => T, arg1: (param0: T, param1: Object | null) => void, arg2: Path[]): void;
+    // private expand<T extends ArchiveEntry>(arg0: () => T, arg1: (param0: T, param1: OutputStream) => void, arg2: Path[]): void;
     expand(arg0: SevenZFile, arg1: File): void;
     expand(arg0: SevenZFile, arg1: Path[]): void;
     expand(arg0: TarFile, arg1: File): void;

@@ -4,6 +4,7 @@ import type { Instant } from '../../../../../java/time/Instant.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { FailableRunnable } from '../../../../../org/apache/commons/lang3/function/FailableRunnable.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 import type { StopWatch$SplitState } from '../../../../../org/apache/commons/lang3/time/StopWatch$SplitState.d.ts'
@@ -33,7 +34,7 @@ export class StopWatch extends Object {
     getStartTime(): number;
     getStopInstant(): Instant;
     getStopTime(): number;
-    getT<T extends Object | number | string | boolean>(arg0: () => E): T;
+    getT<T extends Object | number | string | boolean, E extends Throwable>(arg0: () => T): T;
     getTime(): number;
     getTime(arg0: TimeUnit): number;
     isStarted(): boolean;
@@ -43,7 +44,7 @@ export class StopWatch extends Object {
     reset(): void;
     resume(): void;
     run(arg0: () => void): void;
-    runT(arg0: () => void): void;
+    runT<E extends Throwable>(arg0: () => void): void;
     split(): void;
     start(): void;
     // private startResume(): void;

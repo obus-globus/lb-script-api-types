@@ -8,8 +8,8 @@ import type { ReportingContext } from '../../../../../../net/minecraft/client/mu
 import type { PlayerChatMessage } from '../../../../../../net/minecraft/network/chat/PlayerChatMessage.d.ts'
 import type { SignedMessageLink } from '../../../../../../net/minecraft/network/chat/SignedMessageLink.d.ts'
 export class ChatSelectionLogFiller extends Object {
-    constructor(reportingContext: ReportingContext, canReport: (param0: LoggedChatMessage$Player) => kotlin.Boolean)
-    // private canReport: (param0: LoggedChatMessage$Player) => kotlin.Boolean;
+    constructor(reportingContext: ReportingContext, canReport: (param0: LoggedChatMessage$Player) => boolean)
+    // private canReport: (param0: LoggedChatMessage$Player) => boolean;
     // private contextBuilder: ChatReportContextBuilder;
     // private eventId: number;
     // private lastMessage: PlayerChatMessage;

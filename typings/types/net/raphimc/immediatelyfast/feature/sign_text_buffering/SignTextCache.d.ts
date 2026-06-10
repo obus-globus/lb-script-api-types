@@ -21,5 +21,5 @@ export class SignTextCache extends Object implements ResourceManagerReloadListen
     slotCache: Cache<SignText, SignAtlasRenderTarget$Slot>;
     clearCache(): void;
     onResourceManagerReload(arg0: ResourceManager): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
 }

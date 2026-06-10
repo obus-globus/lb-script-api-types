@@ -3,9 +3,10 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class ClockTimeMarker extends Record {
-    static KEY_CODEC: Codec<Object>;
+    static KEY_CODEC: Codec<ResourceKey<ClockTimeMarker>>;
     // private clock: Holder<WorldClock>;
     // private periodTicks: Optional<number>;
     // private showInCommands: boolean;

@@ -6,6 +6,6 @@ import type { ServerPlayer } from '../../../../net/minecraft/server/level/Server
 export class ConstructBeaconTrigger extends SimpleCriterionTrigger<ConstructBeaconTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ConstructBeaconTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: ConstructBeaconTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: ConstructBeaconTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, levels: number): void;
 }

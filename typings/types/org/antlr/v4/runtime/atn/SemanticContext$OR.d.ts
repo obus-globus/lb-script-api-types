@@ -11,7 +11,7 @@ export class SemanticContext$OR extends SemanticContext$Operator {
     equals(arg0: Object | null): boolean;
     eval(arg0: Recognizer<Object, Object>, arg1: RuleContext): boolean;
     evalPrecedence(arg0: Recognizer<Object, Object>, arg1: RuleContext): SemanticContext;
-    getOperands(): E[];
+    getOperands(): SemanticContext[];
     hashCode(): number;
     toString(): string;
 }

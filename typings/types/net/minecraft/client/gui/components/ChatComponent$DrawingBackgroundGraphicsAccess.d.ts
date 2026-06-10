@@ -16,7 +16,7 @@ export class ChatComponent$DrawingBackgroundGraphicsAccess extends Object implem
     // private parameters: ActiveTextCollector$Parameters;
     // private textRenderer: ActiveTextCollector;
     fill(x0: number, y0: number, x1: number, y1: number, color: number): void;
-    handleMessage(textTop: number, opacity: number, message: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): boolean;
+    handleMessage(textTop: number, opacity: number, message: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): boolean;
     handleTag(x0: number, y0: number, x1: number, y1: number, opacity: number, tag: GuiMessageTag): void;
     handleTagIcon(left: number, bottom: number, forceVisible: boolean, tag: GuiMessageTag, icon: GuiMessageTag$Icon): void;
     updatePose(updater: (param0: Matrix3x2f) => void): void;

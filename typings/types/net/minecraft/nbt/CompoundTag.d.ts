@@ -101,10 +101,10 @@ export class CompoundTag extends Object implements Tag {
     putLongArray(name: string, value: number[]): void;
     putShort(name: string, value: number): void;
     putString(name: string, value: string): void;
-    read(codec: MapCodec<T>): Optional<T>;
-    read(codec: MapCodec<T>, ops: DynamicOps<Tag>): Optional<T>;
-    read(name: string, codec: Codec<T>): Optional<T>;
-    read(name: string, codec: Codec<T>, ops: DynamicOps<Tag>): Optional<T>;
+    read<T extends Object | number | string | boolean>(codec: MapCodec<T>): Optional<T>;
+    read<T extends Object | number | string | boolean>(codec: MapCodec<T>, ops: DynamicOps<Tag>): Optional<T>;
+    read<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): Optional<T>;
+    read<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, ops: DynamicOps<Tag>): Optional<T>;
     remove(name: string): Tag;
     shallowCopy(): CompoundTag;
     size(): number;
@@ -116,6 +116,6 @@ export class CompoundTag extends Object implements Tag {
     storeNullable<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, value: T): void;
     storeNullable<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, ops: DynamicOps<Tag>, value: T): void;
     toString(): string;
-    values(): E[];
+    values(): Tag[];
     write(output: DataOutput): void;
 }

@@ -7,7 +7,7 @@ export class StatisticsListener$IdentityStatistics<T extends Object | number | s
     private constructor()
     // private elementCount: number;
     // private types: Map<T, StatisticsListener$TargetIntStatistics>;
-    accept(elements: E[], target: OptimizedCallTarget): void;
+    accept(elements: T[], target: OptimizedCallTarget): void;
     // private normalize(): void;
     printStatistics(out: PrintWriter, toStringFunction: (param0: T) => string, onlyCount: boolean, normalize: boolean): void;
 }

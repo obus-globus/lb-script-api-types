@@ -26,6 +26,7 @@ import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.t
 import type { StatsCounter } from '../../../../net/minecraft/stats/StatsCounter.d.ts'
 import type { TickThrottler } from '../../../../net/minecraft/util/TickThrottler.d.ts'
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
+import type { MobEffectInstance } from '../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EquipmentSlot } from '../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { HumanoidArm } from '../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
@@ -93,7 +94,7 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SLEEP_DURATION: number;
@@ -129,7 +130,7 @@ export class LocalPlayer extends AbstractClientPlayer implements LocalPlayerAddi
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;

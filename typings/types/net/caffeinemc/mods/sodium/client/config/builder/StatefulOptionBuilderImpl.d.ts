@@ -27,7 +27,7 @@ export abstract class StatefulOptionBuilderImpl<O extends StatefulOption<V>, V e
     getBinding(): OptionBinding<V>;
     getControlHiddenWhenDisabled(): boolean;
     getDefaultValue(): DependentValue<V>;
-    getDependencies(): E[];
+    getDependencies(): Identifier[];
     getFlags(): Identifier[];
     getImpact(): OptionImpact;
     getStorage(): () => void;

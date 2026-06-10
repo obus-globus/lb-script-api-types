@@ -7,8 +7,8 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class FabricItemInternals$ExtraData extends Object {
     constructor()
-    // private customDamageHandler: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int;
-    // private equipmentSlotProvider: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot;
-    customDamage(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int): void;
-    equipmentSlot(arg0: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot): void;
+    // private customDamageHandler: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number;
+    // private equipmentSlotProvider: (param0: LivingEntity, param1: ItemStack) => EquipmentSlot;
+    customDamage(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number): void;
+    equipmentSlot(arg0: (param0: LivingEntity, param1: ItemStack) => EquipmentSlot): void;
 }

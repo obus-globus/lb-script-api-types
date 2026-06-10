@@ -10,7 +10,7 @@ export class Heightmap extends Object implements HeightmapAccessor {
     constructor(chunk: ChunkAccess, heightmapType: Heightmap$Types)
     // private chunk: ChunkAccess;
     // private data: BitStorage;
-    // private isOpaque: (param0: BlockState) => kotlin.Boolean;
+    // private isOpaque: (param0: BlockState) => boolean;
     // private getFirstAvailable(index: number): number;
     getFirstAvailable(x: number, z: number): number;
     getHighestTaken(x: number, z: number): number;

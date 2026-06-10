@@ -3,6 +3,6 @@ import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StringUnhasher extends Object {
     static newConfig(): StringUnhasher$Config;
-    static unhash(paramarg0: number, paramarg1: StringUnhasher$Config, paramarg2: (param0: string) => kotlin.Boolean): void;
+    static unhash(paramarg0: number, paramarg1: StringUnhasher$Config, paramarg2: (param0: string) => boolean): void;
     constructor()
 }

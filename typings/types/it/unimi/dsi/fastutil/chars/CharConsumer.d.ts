@@ -6,6 +6,5 @@ export interface CharConsumer extends Consumer<string>, IntConsumer, Object {
     accept(arg0: number): void;
     andThen(arg0: (param0: string) => void): (param0: string) => void;
     andThen(arg0: (param0: number) => void): (param0: string) => void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
     andThen(arg0: (param0: number) => void): (param0: number) => void;
 }

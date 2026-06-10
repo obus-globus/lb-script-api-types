@@ -9,7 +9,7 @@ export class ModuleFreeLook$PerspectiveChoice extends Enum<ModuleFreeLook$Perspe
     static Companion: Tagged$Companion;
     static FRONT: ModuleFreeLook$PerspectiveChoice;
     static getEntries(): ModuleFreeLook$PerspectiveChoice[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFreeLook$PerspectiveChoice;

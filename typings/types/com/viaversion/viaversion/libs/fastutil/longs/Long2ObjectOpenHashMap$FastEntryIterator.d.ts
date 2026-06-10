@@ -3,10 +3,11 @@ import type { Long2ObjectOpenHashMap$MapEntry } from '../../../../../../com/viav
 import type { Long2ObjectOpenHashMap$MapIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/longs/Long2ObjectOpenHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Long2ObjectOpenHashMap$FastEntryIterator extends Long2ObjectOpenHashMap$MapIterator<Object> implements ObjectIterator<Long2ObjectMap$Entry<V>> {
     private constructor(null_: Long2ObjectOpenHashMap$FastEntryIterator)
     // private entry: Long2ObjectOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Long2ObjectMap$Entry<V>) => void, arg1: number): void;
-    next(): Long2ObjectOpenHashMap$MapEntry;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Long2ObjectMap$Entry<V>) => void, arg1: number): void;
+    next<V extends Object | number | string | boolean>(): Long2ObjectOpenHashMap$MapEntry;
     skip(arg0: number): number;
 }

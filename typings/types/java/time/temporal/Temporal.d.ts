@@ -13,9 +13,9 @@ export interface Temporal extends TemporalAccessor, Object {
     minus(arg0: number, arg1: TemporalUnit): Temporal;
     plus(arg0: TemporalAmount): Temporal;
     plus(arg0: number, arg1: TemporalUnit): Temporal;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     until(arg0: Temporal, arg1: TemporalUnit): number;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     with(arg0: TemporalField, arg1: number): Temporal;
 }

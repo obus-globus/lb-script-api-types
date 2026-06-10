@@ -59,5 +59,5 @@ export class SignBlockEntity extends BlockEntity {
     setText(text: SignText, isFrontText: boolean): boolean;
     setWaxed(isWaxed: boolean): boolean;
     updateSignText(player: Player, frontText: boolean, lines: FilteredText[]): void;
-    updateText(function_: (param0: SignText) => unknown, isFrontText: boolean): boolean;
+    updateText(function_: (param0: SignText) => Object | null, isFrontText: boolean): boolean;
 }

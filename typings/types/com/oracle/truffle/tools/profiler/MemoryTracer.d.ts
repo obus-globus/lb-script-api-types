@@ -29,9 +29,9 @@ export class MemoryTracer extends Object implements Closeable {
     // private stacksBinding: EventBinding<Object>;
     clearData(): void;
     close(): void;
-    getRootNodes(): E[];
+    getRootNodes(): ProfilerNode<MemoryTracer$Payload>[];
     getStackLimit(): number;
-    getThreadToNodesMap(): Map<Thread, E[]>;
+    getThreadToNodesMap(): Map<Thread, ProfilerNode<MemoryTracer$Payload>[]>;
     hasData(): boolean;
     hasStackOverflowed(): boolean;
     isCollecting(): boolean;

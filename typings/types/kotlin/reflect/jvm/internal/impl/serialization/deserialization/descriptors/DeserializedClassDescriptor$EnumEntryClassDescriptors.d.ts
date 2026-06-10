@@ -9,7 +9,7 @@ export class DeserializedClassDescriptor$EnumEntryClassDescriptors extends Objec
     // private enumEntryByName: MemoizedFunctionToNullable<Name, ClassDescriptor>;
     // private enumEntryProtos: Map<Name, ProtoBuf$EnumEntry>;
     // private enumMemberNames: NotNullLazyValue<Name[]>;
-    all(): E[];
+    all(): ClassDescriptor[];
     // private computeEnumMemberNames(): Name[];
     findEnumEntry(arg0: Name): ClassDescriptor;
 }

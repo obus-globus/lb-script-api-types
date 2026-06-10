@@ -41,7 +41,7 @@ export class EnderDragonFight extends SavedData {
     // private ticksSinceCrystalsScanned: number;
     // private ticksSinceDragonSeen: number;
     // private ticksSinceLastPlayerScan: number;
-    // private validPlayer: (param0: Entity) => kotlin.Boolean;
+    // private validPlayer: (param0: Entity) => boolean;
     // private abortRespawnSequence(): void;
     aliveCrystals(): number;
     // private createNewDragon(): EnderDragon;

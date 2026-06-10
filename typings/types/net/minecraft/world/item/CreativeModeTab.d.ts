@@ -19,7 +19,7 @@ export class CreativeModeTab extends Object implements FabricCreativeModeTabImpl
     readonly alignedRight: boolean;
     readonly backgroundTexture: Identifier;
     // private canScroll: boolean;
-    readonly displayItems: E[];
+    readonly displayItems: ItemStack[];
     // private displayItemsGenerator: (param0: CreativeModeTab$ItemDisplayParameters, param1: CreativeModeTab$Output) => void;
     // private displayItemsSearchTab: ItemStack[];
     readonly displayName: Component;
@@ -35,10 +35,10 @@ export class CreativeModeTab extends Object implements FabricCreativeModeTabImpl
     fabric_getPage(): number;
     fabric_setPage(arg0: number): void;
     getBackgroundTexture(): Identifier;
-    getDisplayItems(): E[];
+    getDisplayItems(): ItemStack[];
     getDisplayName(): Component;
     getIconItem(): ItemStack;
-    getSearchTabDisplayItems(): E[];
+    getSearchTabDisplayItems(): ItemStack[];
     getType(): CreativeModeTab$Type;
     hasAnyItems(): boolean;
     isAlignedRight(): boolean;

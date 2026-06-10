@@ -12,8 +12,8 @@ export class ObjectSpliterators$SpliteratorWrapperWithComparator<K extends Objec
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Spliterator<K>, arg1: (param0: K) => kotlin.Boolean)
-    readonly comparator: (param0: K) => kotlin.Boolean;
-    getComparator(): (param0: K) => kotlin.Boolean;
+    constructor(arg0: Spliterator<K>, arg1: (param0: Object) => boolean)
+    readonly comparator: (param0: Object) => boolean;
+    getComparator(): (param0: Object) => boolean;
     trySplit(): ObjectSpliterator<K>;
 }

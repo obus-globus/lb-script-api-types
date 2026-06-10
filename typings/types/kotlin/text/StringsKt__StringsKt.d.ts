@@ -14,11 +14,11 @@ import type { CharIterator } from '../../kotlin/collections/CharIterator.d.ts'
 import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
 import type { StringsKt__StringsJVMKt } from '../../kotlin/text/StringsKt__StringsJVMKt.d.ts'
 export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
-    static append(paramarg0: Object | null, paramarg1: (Object | null)[]): Object | null;
+    static append(paramarg0: Appendable | null, paramarg1: (Object | null)[]): Appendable | null;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
     static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
-    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object | null) => Object | null): void;
-    static appendRange(paramarg0: Object | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Object | null;
+    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
+    static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
     static appendln(paramarg0: Appendable): Appendable;
     static appendln(paramarg0: StringBuilder): StringBuilder;
     static capitalize(paramarg0: string): string;
@@ -45,22 +45,22 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static endsWith(paramarg0: CharSequence, paramarg1: string, paramarg2: boolean): boolean;
     static endsWith(paramarg0: CharSequence, paramarg1: CharSequence, paramarg2: boolean): boolean;
     static equals(paramarg0: string, paramarg1: string, paramarg2: boolean): boolean;
-    static findAnyOf(paramarg0: CharSequence, paramarg1: E[], paramarg2: number, paramarg3: boolean): Pair<number, string>;
-    static findLastAnyOf(paramarg0: CharSequence, paramarg1: E[], paramarg2: number, paramarg3: boolean): Pair<number, string>;
-    static getCASE_INSENSITIVE_ORDER(paramarg0: StringCompanionObject): (param0: string) => kotlin.Boolean;
+    static findAnyOf(paramarg0: CharSequence, paramarg1: string[], paramarg2: number, paramarg3: boolean): Pair<number, string>;
+    static findLastAnyOf(paramarg0: CharSequence, paramarg1: string[], paramarg2: number, paramarg3: boolean): Pair<number, string>;
+    static getCASE_INSENSITIVE_ORDER(paramarg0: StringCompanionObject): (param0: Object) => boolean;
     static getIndices(paramarg0: CharSequence): { start: number; endInclusive: number; step: number };
     static getLastIndex(paramarg0: CharSequence): number;
     static hasSurrogatePairAt(paramarg0: CharSequence, paramarg1: number): boolean;
     static indexOf(paramarg0: CharSequence, paramarg1: string, paramarg2: number, paramarg3: boolean): number;
     static indexOf(paramarg0: CharSequence, paramarg1: string, paramarg2: number, paramarg3: boolean): number;
     static indexOfAny(paramarg0: CharSequence, paramarg1: string[], paramarg2: number, paramarg3: boolean): number;
-    static indexOfAny(paramarg0: CharSequence, paramarg1: E[], paramarg2: number, paramarg3: boolean): number;
+    static indexOfAny(paramarg0: CharSequence, paramarg1: string[], paramarg2: number, paramarg3: boolean): number;
     static isBlank(paramarg0: CharSequence): boolean;
     static iterator(paramarg0: CharSequence): CharIterator;
     static lastIndexOf(paramarg0: CharSequence, paramarg1: string, paramarg2: number, paramarg3: boolean): number;
     static lastIndexOf(paramarg0: CharSequence, paramarg1: string, paramarg2: number, paramarg3: boolean): number;
     static lastIndexOfAny(paramarg0: CharSequence, paramarg1: string[], paramarg2: number, paramarg3: boolean): number;
-    static lastIndexOfAny(paramarg0: CharSequence, paramarg1: E[], paramarg2: number, paramarg3: boolean): number;
+    static lastIndexOfAny(paramarg0: CharSequence, paramarg1: string[], paramarg2: number, paramarg3: boolean): number;
     static lineSequence(paramarg0: CharSequence): Sequence<string>;
     static lines(paramarg0: CharSequence): string[];
     static numberFormatError(paramarg0: string): void;
@@ -100,7 +100,7 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static replaceRange(paramarg0: CharSequence, paramarg1: number, paramarg2: number, paramarg3: CharSequence): CharSequence;
     static replaceRange(paramarg0: CharSequence, paramarg1: { start: number; endInclusive: number; step: number }, paramarg2: CharSequence): CharSequence;
     static requireNonNegativeLimit(paramarg0: number): void;
-    static skipWhile(paramarg0: string, paramarg1: number, paramarg2: (param0: Object | null) => boolean): number;
+    static skipWhile(paramarg0: string, paramarg1: number, paramarg2: (param0: Object) => boolean): number;
     static split(paramarg0: CharSequence, paramarg1: Pattern, paramarg2: number): string[];
     static split(paramarg0: CharSequence, paramarg1: string[], paramarg2: boolean, paramarg3: number): string[];
     static split(paramarg0: CharSequence, paramarg1: (Object | null)[], paramarg2: boolean, paramarg3: number): string[];
@@ -141,19 +141,19 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static toShortOrNull(paramarg0: string, paramarg1: number): number;
     static trim(paramarg0: CharSequence): CharSequence;
     static trim(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
-    static trim(paramarg0: CharSequence, paramarg1: (param0: Object | null) => boolean): CharSequence;
+    static trim(paramarg0: CharSequence, paramarg1: (param0: Object) => boolean): CharSequence;
     static trim(paramarg0: string, paramarg1: string[]): string;
-    static trim(paramarg0: string, paramarg1: (param0: Object | null) => boolean): string;
+    static trim(paramarg0: string, paramarg1: (param0: Object) => boolean): string;
     static trimEnd(paramarg0: CharSequence): CharSequence;
     static trimEnd(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
-    static trimEnd(paramarg0: CharSequence, paramarg1: (param0: Object | null) => boolean): CharSequence;
+    static trimEnd(paramarg0: CharSequence, paramarg1: (param0: Object) => boolean): CharSequence;
     static trimEnd(paramarg0: string, paramarg1: string[]): string;
-    static trimEnd(paramarg0: string, paramarg1: (param0: Object | null) => boolean): string;
+    static trimEnd(paramarg0: string, paramarg1: (param0: Object) => boolean): string;
     static trimIndent(paramarg0: string): string;
     static trimMargin(paramarg0: string, paramarg1: string): string;
     static trimStart(paramarg0: CharSequence): CharSequence;
     static trimStart(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
-    static trimStart(paramarg0: CharSequence, paramarg1: (param0: Object | null) => boolean): CharSequence;
+    static trimStart(paramarg0: CharSequence, paramarg1: (param0: Object) => boolean): CharSequence;
     static trimStart(paramarg0: string, paramarg1: string[]): string;
-    static trimStart(paramarg0: string, paramarg1: (param0: Object | null) => boolean): string;
+    static trimStart(paramarg0: string, paramarg1: (param0: Object) => boolean): string;
 }

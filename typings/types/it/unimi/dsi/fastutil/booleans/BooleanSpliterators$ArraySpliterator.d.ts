@@ -21,7 +21,7 @@ export class BooleanSpliterators$ArraySpliterator extends Object implements Bool
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     makeForSplit(arg0: number, arg1: number): BooleanSpliterators$ArraySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;

@@ -40,7 +40,7 @@ export class FileSystems$PreInitializeContextFileSystem extends Object implement
     isSameFile(path1: Path[], path2: Path[], options: LinkOption[]): boolean;
     move(source: Path[], target: Path[], options: CopyOption[]): void;
     newByteChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
-    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => kotlin.Boolean): T[];
+    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     onLoadPreinitializedContext(newDelegate: FileSystem): void;
     onPreInitializeContextEnd(internalResourceRoots: InternalResourceRoots, languageHomes: { [key: string]: Path[] }): void;
     parsePath(path: URI): Path[];

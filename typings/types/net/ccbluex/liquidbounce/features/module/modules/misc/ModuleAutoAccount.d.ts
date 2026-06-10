@@ -1,4 +1,5 @@
 import type { Regex } from '../../../../../../../kotlin/text/Regex.d.ts'
+import type { Event } from '../../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ModuleAutoAccount$MessageSource } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount$MessageSource.d.ts'
 /**
@@ -29,7 +30,7 @@ export class ModuleAutoAccount extends ClientModule {
     readonly running: boolean;
     // private sending: boolean;
     // private action(operation: () => void): void;
-    // private createMessageHandler(messageSource: ModuleAutoAccount$MessageSource, textProvider: (param0: T) => string | null): void;
+    // private createMessageHandler<T extends Event>(messageSource: ModuleAutoAccount$MessageSource, textProvider: (param0: T) => string | null): void;
     login(): void;
     onDisabled(): void;
     register(): void;

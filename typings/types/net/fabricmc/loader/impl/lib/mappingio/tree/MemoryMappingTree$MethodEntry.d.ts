@@ -20,10 +20,10 @@ export class MemoryMappingTree$MethodEntry extends MemoryMappingTree$MemberEntry
     addVarInternal(arg0: MappingTree$MethodVarMapping): MemoryMappingTree$MethodVarEntry;
     copyFrom(arg0: MemoryMappingTree$MethodEntry, arg1: boolean): void;
     getArg(arg0: number, arg1: number, arg2: string): MemoryMappingTree$MethodArgEntry;
-    getArgs(): E[];
+    getArgs(): MemoryMappingTree$MethodArgEntry[];
     getKind(): MappedElementKind;
     getVar(arg0: number, arg1: number, arg2: number, arg3: number, arg4: string): MemoryMappingTree$MethodVarEntry;
-    getVars(): E[];
+    getVars(): MemoryMappingTree$MethodVarEntry[];
     setSrcDescInternal(arg0: string): void;
     toString(): string;
 }

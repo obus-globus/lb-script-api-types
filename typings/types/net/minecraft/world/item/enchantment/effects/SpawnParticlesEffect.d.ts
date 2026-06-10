@@ -16,7 +16,7 @@ export class SpawnParticlesEffect extends Record implements EnchantmentEntityEff
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<SpawnParticlesEffect>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     static fixedVelocity(paramprovider: FloatProvider): SpawnParticlesEffect$VelocitySource;
     static inBoundingBox(): SpawnParticlesEffect$PositionSource;
     static movementScaled(paramscale: number): SpawnParticlesEffect$VelocitySource;

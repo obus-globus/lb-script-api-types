@@ -33,14 +33,14 @@ export class FileDialog extends Dialog {
     // private dir: string;
     file: string;
     readonly files: File[];
-    // private filter: (param0: File, param1: string) => kotlin.Boolean;
+    // private filter: (param0: File, param1: string) => boolean;
     mode: number;
     readonly multipleMode: boolean;
     addNotify(): void;
     constructComponentName(): string;
     getDirectory(): string;
     getFile(): string;
-    getFilenameFilter(): (param0: File, param1: string) => kotlin.Boolean;
+    getFilenameFilter(): (param0: File, param1: string) => boolean;
     getFiles(): File[];
     getMode(): number;
     isMultipleMode(): boolean;
@@ -49,7 +49,7 @@ export class FileDialog extends Dialog {
     // private readObject(arg0: ObjectInputStream): void;
     setDirectory(arg0: string): void;
     setFile(arg0: string): void;
-    setFilenameFilter(arg0: (param0: File, param1: string) => kotlin.Boolean): void;
+    setFilenameFilter(arg0: (param0: File, param1: string) => boolean): void;
     // private setFiles(arg0: File[]): void;
     setMode(arg0: number): void;
     setMultipleMode(arg0: boolean): void;

@@ -6,5 +6,4 @@ export class StructuredDataType$DataFiller extends Object {
     // private mappings: FullMappings;
     add(arg0: StructuredDataKey<Object>): StructuredDataType$DataFiller;
     add(arg0: StructuredDataKey<Object>[]): StructuredDataType$DataFiller;
-    add(arg0: E[]): StructuredDataType$DataFiller;
 }

@@ -18,6 +18,6 @@ export class SimpleArrayList<E extends Object | number | string | boolean> exten
     set(index: number, elem: E): void;
     size(): number;
     toArray(): Object[];
-    toArray(a: T[]): T[];
+    toArray<T extends Object | number | string | boolean>(a: T[]): T[];
     toString(): string;
 }

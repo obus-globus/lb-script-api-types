@@ -7,13 +7,13 @@ export class State extends Object {
     // private rootState: State;
     // private success: { [key: string]: State };
     addEmit(arg0: string): void;
-    addEmit(arg0: E[]): void;
+    addEmit(arg0: string[]): void;
     addState(arg0: string): State;
-    emit(): E[];
+    emit(): string[];
     failure(): State;
     getDepth(): number;
-    getStates(): E[];
-    getTransitions(): E[];
+    getStates(): State[];
+    getTransitions(): string[];
     nextState(arg0: string): State;
     // private nextState(arg0: string, arg1: boolean): State;
     nextStateIgnoreRootState(arg0: string): State;

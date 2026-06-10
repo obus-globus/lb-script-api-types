@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2CharMaps extends Object {
     static EMPTY_MAP: Short2CharMaps$EmptyMap;
-    static fastForEach(paramarg0: Short2CharMap, paramarg1: (param0: Object | null) => void): void;
-    static fastIterable(paramarg0: Short2CharMap): K[];
+    static fastForEach(paramarg0: Short2CharMap, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: Short2CharMap): Short2CharMap$Entry[];
     static fastIterator(paramarg0: Short2CharMap): ObjectIterator<Short2CharMap$Entry>;
     static singleton(paramarg0: number, paramarg1: string): Short2CharMap;
     static singleton(paramarg0: number, paramarg1: string): Short2CharMap;

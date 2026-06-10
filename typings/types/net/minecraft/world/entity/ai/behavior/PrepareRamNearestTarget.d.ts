@@ -13,8 +13,8 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PrepareRamNearestTarget<E extends PathfinderMob> extends Behavior<E> {
     static DEFAULT_DURATION: number;
     static TIME_OUT_DURATION: number;
-    constructor(getCooldownOnFail: (param0: E) => kotlin.Int, minRamDistance: number, maxRamDistance: number, walkSpeed: number, ramTargeting: TargetingConditions, ramPrepareTime: number, getPrepareRamSound: (param0: E) => SoundEvent)
-    // private getCooldownOnFail: (param0: E) => kotlin.Int;
+    constructor(getCooldownOnFail: (param0: E) => number, minRamDistance: number, maxRamDistance: number, walkSpeed: number, ramTargeting: TargetingConditions, ramPrepareTime: number, getPrepareRamSound: (param0: E) => SoundEvent)
+    // private getCooldownOnFail: (param0: E) => number;
     // private getPrepareRamSound: (param0: E) => SoundEvent;
     // private maxRamDistance: number;
     // private minRamDistance: number;

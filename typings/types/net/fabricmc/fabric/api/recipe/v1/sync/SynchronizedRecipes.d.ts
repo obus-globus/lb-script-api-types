@@ -9,11 +9,11 @@ import type { RecipeType } from '../../../../../../../net/minecraft/world/item/c
 import type { Level } from '../../../../../../../net/minecraft/world/level/Level.d.ts'
 export interface SynchronizedRecipes extends Object{
     get(arg0: ResourceKey<Recipe<Object>>): RecipeHolder<Object>;
-    get(arg0: RecipeType<T>, arg1: ResourceKey<Recipe<Object>>): RecipeHolder<T>;
-    getAllMatches<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Stream<RecipeHolder<T>>;
-    getAllOfType(arg0: RecipeType<T>): E[];
-    getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
-    getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<T>>;
-    getFirstMatch<I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: RecipeHolder<T>): Optional<RecipeHolder<T>>;
-    recipes(): E[];
+    get<T extends Recipe<Object>>(arg0: RecipeType<T>, arg1: ResourceKey<Recipe<Object>>): RecipeHolder<T>;
+    getAllMatches<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Stream<RecipeHolder<T>>;
+    getAllOfType<T extends Recipe<I>>(arg0: RecipeType<T>): RecipeHolder<T>[];
+    getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
+    getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<T>>;
+    getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: RecipeHolder<T>): Optional<RecipeHolder<T>>;
+    recipes(): RecipeHolder<Object>[];
 }

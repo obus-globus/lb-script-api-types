@@ -3,10 +3,10 @@ import type { SetMultimap } from '../../../../com/google/common/collect/SetMulti
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export abstract class AbstractSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMapBasedMultimap<K, V> implements SetMultimap<K, V> {
-    constructor(map: Map<K, E[]>)
-    asMap(): Map<K, E[]>;
+    constructor(map: Map<K, V[]>)
+    asMap(): Map<K, V[]>;
     createCollection(): V[];
-    createCollection(key: K): E[];
+    createCollection(key: K): V[];
     createUnmodifiableEmptyCollection(): V[];
     entries(): Map$Entry<K, V>[];
     equals(object: Object | null): boolean;
@@ -14,6 +14,6 @@ export abstract class AbstractSetMultimap<K extends Object | number | string | b
     put(key: K, value: V): boolean;
     removeAll(key: Object): V[];
     replaceValues(key: K, values: V[]): V[];
-    unmodifiableCollectionSubclass(collection: E[]): E[];
-    wrapCollection(key: K, collection: E[]): E[];
+    unmodifiableCollectionSubclass<E extends Object | number | string | boolean>(collection: E[]): E[];
+    wrapCollection(key: K, collection: V[]): V[];
 }

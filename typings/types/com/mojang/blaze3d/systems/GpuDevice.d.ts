@@ -44,7 +44,7 @@ export class GpuDevice extends Object implements GpuDeviceAccessor, GpuDeviceAcc
     isDebuggingEnabled(): boolean;
     isZZeroToOne(): boolean;
     precompilePipeline(pipeline: RenderPipeline): CompiledRenderPipeline;
-    precompilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): CompiledRenderPipeline;
+    precompilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => string): CompiledRenderPipeline;
     presentFrame(): void;
     setVsync(enabled: boolean): void;
     // private verifyTextureCreationArgs(usage: number, width: number, height: number, depthOrLayers: number, mipLevels: number): void;

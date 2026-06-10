@@ -6,6 +6,6 @@ import type { ServerPlayer } from '../../../../net/minecraft/server/level/Server
 export class SpearMobsTrigger extends SimpleCriterionTrigger<SpearMobsTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<SpearMobsTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: SpearMobsTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: SpearMobsTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, number: number): void;
 }

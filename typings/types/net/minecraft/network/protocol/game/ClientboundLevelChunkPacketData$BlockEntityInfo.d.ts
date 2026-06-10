@@ -4,7 +4,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/netwo
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 export class ClientboundLevelChunkPacketData$BlockEntityInfo extends Object {
-    static LIST_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static LIST_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundLevelChunkPacketData$BlockEntityInfo[]>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundLevelChunkPacketData$BlockEntityInfo>;
     private constructor(packedXZ: number, y: number, type: BlockEntityType<Object>, tag: CompoundTag)
     private constructor(input: RegistryFriendlyByteBuf)

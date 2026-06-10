@@ -3,8 +3,8 @@ import type { Char2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/ch
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2FloatFunctions$UnmodifiableFunction extends AbstractChar2FloatFunction implements Serializable {
-    constructor(arg0: (param0: string) => kotlin.Float)
-    // private function: (param0: string) => kotlin.Float;
+    constructor(arg0: (param0: string) => number)
+    // private function: (param0: string) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

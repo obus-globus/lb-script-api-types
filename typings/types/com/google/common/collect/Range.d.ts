@@ -41,7 +41,6 @@ export class Range<C extends Comparable<Object>> extends Object implements Predi
     lowerEndpoint(): C;
     readResolve(): Object;
     span(other: Range<C>): Range<C>;
-    test<T extends Object | number | string | boolean>(input: T): boolean;
     test(input: C): boolean;
     toString(): string;
     upperBound(): Cut<C>;

@@ -82,7 +82,7 @@ export class EntityExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L571 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:571}
      */
-    static getDamageFromExplosion(livingEntity: LivingEntity, pos: Vec3, power: number, explosionRange: number, damageDistance: number, exclude: E[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB, damageSource: DamageSource): number;
+    static getDamageFromExplosion(livingEntity: LivingEntity, pos: Vec3, power: number, explosionRange: number, damageDistance: number, exclude: BlockPos[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB, damageSource: DamageSource): number;
     static getDirection(paramarg0: LocalPlayer): number;
     /**
      * Mirrors the vanilla damage-reduction pipeline after the base amount is known.
@@ -124,7 +124,7 @@ export class EntityExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L626 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:626}
      */
-    static getExposureToExplosion(livingEntity: LivingEntity, source: Vec3, exclude: E[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB): number;
+    static getExposureToExplosion(livingEntity: LivingEntity, source: Vec3, exclude: BlockPos[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB): number;
     static getFeetBlockPos(localPlayer: LocalPlayer): BlockPos;
     static getHandItems(paramarg0: LivingEntity): (Object | null)[];
     /**

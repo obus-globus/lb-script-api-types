@@ -7,19 +7,19 @@ import type { FriendlyByteBuf } from '../../../net/minecraft/network/FriendlyByt
 export class AdvancementRequirements extends Record {
     static CODEC: Codec<AdvancementRequirements>;
     static EMPTY: AdvancementRequirements;
-    static allOf(paramcriteria: E[]): AdvancementRequirements;
-    static anyOf(paramcriteria: E[]): AdvancementRequirements;
+    static allOf(paramcriteria: string[]): AdvancementRequirements;
+    static anyOf(paramcriteria: string[]): AdvancementRequirements;
     constructor(requirements: string[][])
     constructor(input: FriendlyByteBuf)
     // private requirements: string[][];
-    count(predicate: (param0: string) => kotlin.Boolean): number;
+    count(predicate: (param0: string) => boolean): number;
     equals(o: Object | null): boolean;
     hashCode(): number;
     isEmpty(): boolean;
     names(): string[];
     requirements(): string[][];
     size(): number;
-    test(predicate: (param0: string) => kotlin.Boolean): boolean;
+    test(predicate: (param0: string) => boolean): boolean;
     toString(): string;
     validate(expectedCriteria: string[]): DataResult<AdvancementRequirements>;
     write(output: FriendlyByteBuf): void;

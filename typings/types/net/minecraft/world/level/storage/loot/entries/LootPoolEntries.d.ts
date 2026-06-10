@@ -4,6 +4,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LootPoolEntryContainer } from '../../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer.d.ts'
 export class LootPoolEntries extends Object {
     static CODEC: Codec<LootPoolEntryContainer>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<LootPoolEntryContainer>[]): MapCodec<LootPoolEntryContainer>;
     constructor()
 }

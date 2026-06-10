@@ -7,13 +7,13 @@ import type { TargetingConditions } from '../../../../../../net/minecraft/world/
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class TemptGoal extends Goal {
-    private constructor(mob: Mob, speedModifier: number, items: (param0: ItemStack) => kotlin.Boolean, canScare: boolean, stopDistance: number)
-    constructor(mob: PathfinderMob, speedModifier: number, items: (param0: ItemStack) => kotlin.Boolean, canScare: boolean)
-    constructor(mob: PathfinderMob, speedModifier: number, items: (param0: ItemStack) => kotlin.Boolean, canScare: boolean, stopDistance: number)
+    private constructor(mob: Mob, speedModifier: number, items: (param0: ItemStack) => boolean, canScare: boolean, stopDistance: number)
+    constructor(mob: PathfinderMob, speedModifier: number, items: (param0: ItemStack) => boolean, canScare: boolean)
+    constructor(mob: PathfinderMob, speedModifier: number, items: (param0: ItemStack) => boolean, canScare: boolean, stopDistance: number)
     // private calmDown: number;
     // private canScare: boolean;
     // private isRunning: boolean;
-    // private items: (param0: ItemStack) => kotlin.Boolean;
+    // private items: (param0: ItemStack) => boolean;
     // private mob: Mob;
     // private pRotX: number;
     // private pRotY: number;

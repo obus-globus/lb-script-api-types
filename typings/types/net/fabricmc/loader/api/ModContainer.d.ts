@@ -4,7 +4,7 @@ import type { ModMetadata } from '../../../../net/fabricmc/loader/api/metadata/M
 import type { ModOrigin } from '../../../../net/fabricmc/loader/api/metadata/ModOrigin.d.ts'
 export interface ModContainer extends Object{
     findPath(arg0: string): Optional<Path[]>;
-    getContainedMods(): E[];
+    getContainedMods(): ModContainer[];
     getContainingMod(): Optional<ModContainer>;
     getMetadata(): ModMetadata;
     getOrigin(): ModOrigin;

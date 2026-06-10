@@ -25,8 +25,8 @@ export class ClientLanguage extends Language {
     getOrDefault(elementId: string): string;
     getOrDefault(key: string, fallback: string): string;
     // private getTranslation(key: string): string | null;
-    getVisualOrder(lines: FormattedText[]): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
-    getVisualOrder(text: FormattedText): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    getVisualOrder(lines: FormattedText[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
+    getVisualOrder(text: FormattedText): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     has(key: string): boolean;
     isDefaultRightToLeft(): boolean;
 }

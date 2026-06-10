@@ -63,7 +63,7 @@ export abstract class PlayerList extends Object {
     broadcast(except: Player, x: number, y: number, z: number, range: number, dimension: ResourceKey<Level>, packet: Packet<Object>): void;
     broadcastAll(packet: Packet<Object>): void;
     broadcastAll(packet: Packet<Object>, dimension: ResourceKey<Level>): void;
-    // private broadcastChatMessage(message: PlayerChatMessage, isFiltered: (param0: ServerPlayer) => kotlin.Boolean, senderPlayer: ServerPlayer, chatType: ChatType$Bound): void;
+    // private broadcastChatMessage(message: PlayerChatMessage, isFiltered: (param0: ServerPlayer) => boolean, senderPlayer: ServerPlayer, chatType: ChatType$Bound): void;
     broadcastChatMessage(message: PlayerChatMessage, sender: CommandSourceStack, chatType: ChatType$Bound): void;
     broadcastChatMessage(message: PlayerChatMessage, sender: ServerPlayer, chatType: ChatType$Bound): void;
     broadcastSystemMessage(message: Component, playerMessages: (param0: ServerPlayer) => Component, overlay: boolean): void;

@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface PriorityQueue<K extends Object | number | string | boolean> extends Object {
     changed(): void;
     clear(): void;
-    comparator(): (param0: K) => kotlin.Boolean;
+    comparator(): (param0: Object) => boolean;
     dequeue(): K;
     enqueue(arg0: K): void;
     first(): K;

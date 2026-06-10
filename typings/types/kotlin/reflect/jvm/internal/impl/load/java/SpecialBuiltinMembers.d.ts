@@ -5,8 +5,8 @@ import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/in
 export class SpecialBuiltinMembers extends Object {
     static doesOverrideBuiltinWithDifferentJvmName(paramarg0: CallableMemberDescriptor): boolean;
     static getJvmMethodNameIfSpecial(paramarg0: CallableMemberDescriptor): string;
-    static getOverriddenBuiltinWithDifferentJvmName(paramarg0: Object | null): Object | null;
-    static getOverriddenSpecialBuiltin(paramarg0: Object | null): Object | null;
+    static getOverriddenBuiltinWithDifferentJvmName(paramarg0: CallableMemberDescriptor | null): CallableMemberDescriptor | null;
+    static getOverriddenSpecialBuiltin(paramarg0: CallableMemberDescriptor | null): CallableMemberDescriptor | null;
     static hasRealKotlinSuperClassWithOverrideOf(paramarg0: ClassDescriptor, paramarg1: CallableDescriptor): boolean;
     static isFromJava(paramarg0: CallableMemberDescriptor): boolean;
     static isFromJavaOrBuiltins(paramarg0: CallableMemberDescriptor): boolean;

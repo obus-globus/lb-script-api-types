@@ -4,9 +4,9 @@ import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSequence } from '../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class Display$TextDisplay$CachedLine extends Record {
-    // private contents: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private contents: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private width: number;
-    contents(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    contents(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

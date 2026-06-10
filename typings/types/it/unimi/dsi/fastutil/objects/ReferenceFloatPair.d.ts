@@ -1,23 +1,21 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ReferenceFloatPair<K extends Object | number | string | boolean> extends Pair<K, number>, Object{
-    first<L extends Object | number | string | boolean>(): L;
-    first<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
-    key<L extends Object | number | string | boolean>(): L;
-    key<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
-    left<L extends Object | number | string | boolean>(arg0: L): Pair<L, R>;
-    right<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
+    first(): K;
+    first(arg0: K): Pair<K, number>;
+    key(): K;
+    key(arg0: K): Pair<K, number>;
+    left(arg0: K): Pair<K, number>;
+    right(arg0: number): Pair<K, number>;
     right(): number;
     right(arg0: number): ReferenceFloatPair<K>;
     rightFloat(): number;
-    second<R extends Object | number | string | boolean>(): R;
-    second<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     second(): number;
+    second(arg0: number): Pair<K, number>;
     second(arg0: number): ReferenceFloatPair<K>;
     secondFloat(): number;
-    value<R extends Object | number | string | boolean>(): R;
-    value<R extends Object | number | string | boolean>(arg0: R): Pair<L, R>;
     value(): number;
+    value(arg0: number): Pair<K, number>;
     value(arg0: number): ReferenceFloatPair<K>;
     valueFloat(): number;
 }

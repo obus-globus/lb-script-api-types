@@ -1,4 +1,5 @@
 import type { TimeZoneNames } from '../../../../com/ibm/icu/text/TimeZoneNames.d.ts'
+import type { TimeZoneNames$MatchInfo } from '../../../../com/ibm/icu/text/TimeZoneNames$MatchInfo.d.ts'
 import type { TimeZoneNames$NameType } from '../../../../com/ibm/icu/text/TimeZoneNames$NameType.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
@@ -10,7 +11,7 @@ export class TZDBTimeZoneNames extends TimeZoneNames {
     constructor(arg0: ULocale)
     // private _locale: ULocale;
     // private _region: string;
-    find(arg0: CharSequence, arg1: number, arg2: TimeZoneNames$NameType[]): E[];
+    find(arg0: CharSequence, arg1: number, arg2: TimeZoneNames$NameType[]): TimeZoneNames$MatchInfo[];
     getAvailableMetaZoneIDs(): string[];
     getAvailableMetaZoneIDs(arg0: string): string[];
     getMetaZoneDisplayName(arg0: string, arg1: TimeZoneNames$NameType): string;

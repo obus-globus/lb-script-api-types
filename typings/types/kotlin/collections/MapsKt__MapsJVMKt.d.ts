@@ -11,10 +11,10 @@ export class MapsKt__MapsJVMKt extends MapsKt__MapWithDefaultKt {
     static mapCapacity(paramarg0: number): number;
     static mapOf(paramarg0: Pair<Object, Object>): Map<Object | null, Object | null>;
     static sortedMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
-    static sortedMapOf(paramarg0: (param0: Object | null) => kotlin.Boolean, paramarg1: Object | null): Map<Object | null, Object | null>;
+    static sortedMapOf(paramarg0: (param0: Object) => boolean, paramarg1: Object | null): Map<Object | null, Object | null>;
     static toSingletonMap(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
     static toSortedMap(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static toSortedMap(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object | null) => kotlin.Boolean): Map<Object | null, Object | null>;
-    static withDefault(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
-    static withDefaultMutable(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
+    static toSortedMap(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => boolean): Map<Object | null, Object | null>;
+    static withDefault(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): Map<Object | null, Object | null>;
+    static withDefaultMutable(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): Map<Object | null, Object | null>;
 }

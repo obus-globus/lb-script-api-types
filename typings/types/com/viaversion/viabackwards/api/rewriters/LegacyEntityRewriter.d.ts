@@ -21,7 +21,7 @@ export abstract class LegacyEntityRewriter<C extends ClientboundPacketType, T ex
     getMobSpawnRewriter(arg0: Type<EntityData[]>, arg1: (param0: PacketWrapper, param1: number) => void): (param0: PacketWrapper) => void;
     getMobSpawnRewriter1_11(arg0: Type<EntityData[]>): (param0: PacketWrapper) => void;
     getObjectData(arg0: ObjectType): EntityReplacement;
-    getObjectRewriter(arg0: (param0: number, param1: number) => com.viaversion.viaversion.api.minecraft.entities.ObjectType): (param0: PacketWrapper) => void;
+    getObjectRewriter(arg0: (param0: number, param1: number) => ObjectType): (param0: PacketWrapper) => void;
     getObjectTrackerHandler(): (param0: PacketWrapper) => void;
     getTrackerAndDataHandler(arg0: Type<EntityData[]>, arg1: EntityType): (param0: PacketWrapper) => void;
     mapObjectType(arg0: ObjectType, arg1: ObjectType, arg2: number): EntityObjectData;

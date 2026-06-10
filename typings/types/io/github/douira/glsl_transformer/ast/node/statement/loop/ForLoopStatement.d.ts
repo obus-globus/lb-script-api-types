@@ -11,8 +11,8 @@ import type { ASTVisitor } from '../../../../../../../../io/github/douira/glsl_t
 import type { Stream } from '../../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class ForLoopStatement extends LoopStatement {
-    static clone(paramarg0: Object | null): Object | null;
-    static clone(paramarg0: (Object | null)[]): Stream<Object>;
+    static clone(paramarg0: ASTNode | null): ASTNode | null;
+    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: Expression, arg1: Declaration, arg2: Expression, arg3: IterationConditionInitializer, arg4: Expression, arg5: Statement)
     constructor(arg0: Statement)

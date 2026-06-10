@@ -15,5 +15,5 @@ export class QuadConsumers$BlockModel extends Object implements Consumer<Mutable
     renderTypeFunction: (param0: ChunkSectionLayer) => RenderType;
     tintLayers: number[];
     accept(arg0: MutableQuadView): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: MutableQuadView) => void): (param0: MutableQuadView) => void;
 }

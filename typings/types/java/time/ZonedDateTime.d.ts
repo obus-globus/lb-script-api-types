@@ -11,7 +11,6 @@ import type { Month } from '../../java/time/Month.d.ts'
 import type { OffsetDateTime } from '../../java/time/OffsetDateTime.d.ts'
 import type { ZoneId } from '../../java/time/ZoneId.d.ts'
 import type { ZoneOffset } from '../../java/time/ZoneOffset.d.ts'
-import type { ChronoLocalDate } from '../../java/time/chrono/ChronoLocalDate.d.ts'
 import type { ChronoZonedDateTime } from '../../java/time/chrono/ChronoZonedDateTime.d.ts'
 import type { Chronology } from '../../java/time/chrono/Chronology.d.ts'
 import type { DateTimeFormatter } from '../../java/time/format/DateTimeFormatter.d.ts'
@@ -41,7 +40,7 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     static ofStrict(paramarg0: LocalDateTime, paramarg1: ZoneOffset, paramarg2: ZoneId): ZonedDateTime;
     static parse(paramarg0: CharSequence): ZonedDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): ZonedDateTime;
-    static timeLineOrder(): (param0: Object | null) => kotlin.Boolean;
+    static timeLineOrder(): (param0: Object) => boolean;
     private constructor(arg0: LocalDateTime, arg1: ZoneOffset, arg2: ZoneId)
     // private dateTime: LocalDateTime;
     readonly offset: ZoneOffset;
@@ -72,8 +71,8 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): ZonedDateTime;
     minus(arg0: number, arg1: TemporalUnit): ZonedDateTime;
-    minus(arg0: TemporalAmount): ChronoZonedDateTime<D>;
-    minus(arg0: number, arg1: TemporalUnit): ChronoZonedDateTime<D>;
+    minus(arg0: TemporalAmount): ChronoZonedDateTime<LocalDate>;
+    minus(arg0: number, arg1: TemporalUnit): ChronoZonedDateTime<LocalDate>;
     minus(arg0: TemporalAmount): Temporal;
     minus(arg0: number, arg1: TemporalUnit): Temporal;
     minusDays(arg0: number): ZonedDateTime;
@@ -86,7 +85,7 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     minusYears(arg0: number): ZonedDateTime;
     plus(arg0: TemporalAmount): ZonedDateTime;
     plus(arg0: number, arg1: TemporalUnit): ZonedDateTime;
-    plus(arg0: TemporalAmount): ChronoZonedDateTime<D>;
+    plus(arg0: TemporalAmount): ChronoZonedDateTime<LocalDate>;
     plus(arg0: TemporalAmount): Temporal;
     plusDays(arg0: number): ZonedDateTime;
     plusHours(arg0: number): ZonedDateTime;
@@ -96,7 +95,7 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     plusSeconds(arg0: number): ZonedDateTime;
     plusWeeks(arg0: number): ZonedDateTime;
     plusYears(arg0: number): ZonedDateTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     // private resolveInstant(arg0: LocalDateTime): ZonedDateTime;
@@ -105,17 +104,16 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     toEpochSecond(): number;
     toInstant(): Instant;
     toLocalDate(): LocalDate;
-    toLocalDate<D extends ChronoLocalDate>(): D;
     toLocalDateTime(): LocalDateTime;
     toLocalTime(): LocalTime;
     toOffsetDateTime(): OffsetDateTime;
     toString(): string;
     truncatedTo(arg0: TemporalUnit): ZonedDateTime;
     until(arg0: Temporal, arg1: TemporalUnit): number;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): ZonedDateTime;
+    with(arg0: (param0: Temporal) => Temporal): ZonedDateTime;
     with(arg0: TemporalField, arg1: number): ZonedDateTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): ChronoZonedDateTime<D>;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): ChronoZonedDateTime<LocalDate>;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withDayOfMonth(arg0: number): ZonedDateTime;
     withDayOfYear(arg0: number): ZonedDateTime;
     withEarlierOffsetAtOverlap(): ZonedDateTime;

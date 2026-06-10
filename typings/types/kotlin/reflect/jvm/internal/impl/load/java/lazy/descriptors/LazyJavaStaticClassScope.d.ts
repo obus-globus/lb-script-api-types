@@ -1,3 +1,4 @@
+import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -19,12 +20,12 @@ export class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     readonly ownerDescriptor: JavaClassDescriptor;
     computeClassNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeFunctionNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
-    computeImplicitlyDeclaredFunctions(arg0: E[], arg1: Name): void;
+    computeImplicitlyDeclaredFunctions(arg0: SimpleFunctionDescriptor[], arg1: Name): void;
     computeMemberIndex(): ClassDeclaredMemberIndex;
-    computeNonDeclaredFunctions(arg0: E[], arg1: Name): void;
-    computeNonDeclaredProperties(arg0: Name, arg1: E[]): void;
+    computeNonDeclaredFunctions(arg0: SimpleFunctionDescriptor[], arg1: Name): void;
+    computeNonDeclaredProperties(arg0: Name, arg1: PropertyDescriptor[]): void;
     computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
-    // private flatMapJavaStaticSupertypesScopes(arg0: ClassDescriptor, arg1: R[], arg2: (param0: MemberScope) => E[]): R[];
+    // private flatMapJavaStaticSupertypesScopes<R extends Object | number | string | boolean>(arg0: ClassDescriptor, arg1: R[], arg2: (param0: MemberScope) => R[]): R[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getOwnerDescriptor(): JavaClassDescriptor;
     // private getRealOriginal(arg0: PropertyDescriptor): PropertyDescriptor;

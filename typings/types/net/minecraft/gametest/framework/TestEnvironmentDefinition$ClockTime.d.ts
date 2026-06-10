@@ -8,11 +8,11 @@ import type { TestEnvironmentDefinition$Activation } from '../../../../net/minec
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class TestEnvironmentDefinition$ClockTime extends Record implements TestEnvironmentDefinition<number> {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<TestEnvironmentDefinition<Object>>>;
     static CODEC: MapCodec<TestEnvironmentDefinition$ClockTime>;
-    static DIRECT_CODEC: Codec<Object>;
+    static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
     static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     // private clock: Holder<WorldClock>;
     // private time: number;
     clock(): Holder<WorldClock>;

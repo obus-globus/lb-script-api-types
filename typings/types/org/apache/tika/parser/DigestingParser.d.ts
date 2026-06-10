@@ -7,7 +7,7 @@ import type { Parser } from '../../../../org/apache/tika/parser/Parser.d.ts'
 import type { ParserDecorator } from '../../../../org/apache/tika/parser/ParserDecorator.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class DigestingParser extends ParserDecorator {
-    static withFallbacks(paramarg0: E[], paramarg1: MediaType[]): Parser;
+    static withFallbacks(paramarg0: Parser[], paramarg1: MediaType[]): Parser;
     static withTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     static withoutTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     constructor(arg0: Parser, arg1: DigestingParser$Digester, arg2: boolean)

@@ -5,30 +5,31 @@ import type { ToDoubleFunction } from '../../../../java/util/function/ToDoubleFu
 import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Floats$LexicographicalComparator extends Enum<Floats$LexicographicalComparator> implements Comparator<number[]> {
     static INSTANCE: Floats$LexicographicalComparator;
-    static comparing(paramarg0: (param0: Object | null) => Object | null): (param0: Object | null) => kotlin.Boolean;
-    static comparing(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingDouble(paramarg0: (param0: Object | null) => kotlin.Double): (param0: Object | null) => kotlin.Boolean;
-    static comparingInt(paramarg0: (param0: Object | null) => kotlin.Int): (param0: Object | null) => kotlin.Boolean;
-    static comparingLong(paramarg0: (param0: Object | null) => kotlin.Long): (param0: Object | null) => kotlin.Boolean;
-    static naturalOrder(): (param0: Object | null) => kotlin.Boolean;
-    static nullsFirst(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static nullsLast(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static reverseOrder(): (param0: Object | null) => kotlin.Boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
+    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
+    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
+    static naturalOrder(): (param0: Object) => boolean;
+    static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static reverseOrder(): (param0: Object) => boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Floats$LexicographicalComparator;
     static values(): (Object | null)[];
     private constructor()
     compare(left: number[], right: number[]): number;
-    reversed(): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    thenComparingDouble(arg0: (param0: T) => kotlin.Double): (param0: T) => kotlin.Boolean;
-    thenComparingInt(arg0: (param0: T) => kotlin.Int): (param0: T) => kotlin.Boolean;
-    thenComparingLong(arg0: (param0: T) => kotlin.Long): (param0: T) => kotlin.Boolean;
+    reversed(): (param0: Object) => boolean;
+    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: number[]) => U): (param0: Object) => boolean;
+    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: number[]) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparingDouble(arg0: (param0: number[]) => number): (param0: Object) => boolean;
+    thenComparingInt(arg0: (param0: number[]) => number): (param0: Object) => boolean;
+    thenComparingLong(arg0: (param0: number[]) => number): (param0: Object) => boolean;
     toString(): string;
     name(): "INSTANCE";
 }

@@ -6,7 +6,7 @@ export class IndexingIterator<T extends Object | number | string | boolean> exte
     constructor(iterator: Iterator<T>)
     // private index: number;
     // private iterator: Iterator<T>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: IndexedValue<T>) => void): void;
     hasNext(): boolean;
     next(): IndexedValue<T>;
 }

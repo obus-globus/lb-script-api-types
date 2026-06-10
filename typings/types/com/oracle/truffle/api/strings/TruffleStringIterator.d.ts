@@ -1,5 +1,6 @@
 import type { AbstractTruffleString } from '../../../../../com/oracle/truffle/api/strings/AbstractTruffleString.d.ts'
 import type { DecodingErrorHandler } from '../../../../../com/oracle/truffle/api/strings/DecodingErrorHandler.d.ts'
+import type { DecodingErrorHandler$Result } from '../../../../../com/oracle/truffle/api/strings/DecodingErrorHandler$Result.d.ts'
 import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/api/strings/TruffleString$Encoding.d.ts'
 import type { TruffleString$ErrorHandling } from '../../../../../com/oracle/truffle/api/strings/TruffleString$ErrorHandling.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -13,9 +14,9 @@ export class TruffleStringIterator extends Object {
     // private offsetA: number;
     // private rawIndex: number;
     // private strideA: number;
-    // private applyErrorHandler(errorHandler: (param0: AbstractTruffleString, param1: number, param2: number) => com.oracle.truffle.api.strings.DecodingErrorHandler.Result, startIndex: number): number;
-    // private applyErrorHandler(errorHandler: (param0: AbstractTruffleString, param1: number, param2: number) => com.oracle.truffle.api.strings.DecodingErrorHandler.Result, startIndex: number, forward: boolean): number;
-    // private applyErrorHandlerReverse(errorHandler: (param0: AbstractTruffleString, param1: number, param2: number) => com.oracle.truffle.api.strings.DecodingErrorHandler.Result, startIndex: number): number;
+    // private applyErrorHandler(errorHandler: (param0: AbstractTruffleString, param1: number, param2: number) => DecodingErrorHandler$Result, startIndex: number): number;
+    // private applyErrorHandler(errorHandler: (param0: AbstractTruffleString, param1: number, param2: number) => DecodingErrorHandler$Result, startIndex: number, forward: boolean): number;
+    // private applyErrorHandlerReverse(errorHandler: (param0: AbstractTruffleString, param1: number, param2: number) => DecodingErrorHandler$Result, startIndex: number): number;
     // private curIsUtf8ContinuationByte(): boolean;
     errorHandlerSkipBytes(byteLength: number, forward: boolean): void;
     getByteIndex(): number;

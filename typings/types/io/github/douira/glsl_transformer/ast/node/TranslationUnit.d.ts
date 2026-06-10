@@ -14,8 +14,8 @@ import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TranslationUnit extends ListASTNode<ExternalDeclaration> {
-    static clone(paramarg0: Object | null): Object | null;
-    static clone(paramarg0: (Object | null)[]): Stream<Object>;
+    static clone(paramarg0: ASTNode | null): ASTNode | null;
+    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: VersionStatement, arg1: Stream<ExternalDeclaration>)
     constructor(arg0: VersionStatement, arg1: Stream<ExternalDeclaration>, arg2: OutputOptions)
@@ -23,9 +23,9 @@ export class TranslationUnit extends ListASTNode<ExternalDeclaration> {
     outputOptions: OutputOptions;
     versionStatement: VersionStatement;
     accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
-    appendFunctionBody(arg0: string, arg1: E[]): void;
+    appendFunctionBody(arg0: string, arg1: Statement[]): void;
     appendFunctionBody(arg0: string, arg1: Statement): void;
-    appendMainFunctionBody(arg0: E[]): void;
+    appendMainFunctionBody(arg0: Statement[]): void;
     appendMainFunctionBody(arg0: Statement): void;
     appendMainFunctionBody(arg0: ASTParser, arg1: string[]): void;
     appendMainFunctionBody(arg0: ASTParser, arg1: string): void;
@@ -39,14 +39,14 @@ export class TranslationUnit extends ListASTNode<ExternalDeclaration> {
     getOneMainDefinitionBody(): CompoundStatement;
     getVersionStatement(): VersionStatement;
     injectNode(arg0: ASTInjectionPoint, arg1: ExternalDeclaration): void;
-    injectNodes(arg0: ASTInjectionPoint, arg1: E[]): void;
+    injectNodes(arg0: ASTInjectionPoint, arg1: ExternalDeclaration[]): void;
     injectNodes(arg0: ASTInjectionPoint, arg1: Stream<ExternalDeclaration>): void;
     parseAndInjectNode(arg0: ASTParser, arg1: ASTInjectionPoint, arg2: string): void;
     parseAndInjectNodes(arg0: ASTParser, arg1: ASTInjectionPoint, arg2: Stream<string>): void;
     parseAndInjectNodes(arg0: ASTParser, arg1: ASTInjectionPoint, arg2: string[]): void;
-    prependFunctionBody(arg0: string, arg1: E[]): void;
+    prependFunctionBody(arg0: string, arg1: Statement[]): void;
     prependFunctionBody(arg0: string, arg1: Statement): void;
-    prependMainFunctionBody(arg0: E[]): void;
+    prependMainFunctionBody(arg0: Statement[]): void;
     prependMainFunctionBody(arg0: Statement): void;
     prependMainFunctionBody(arg0: ASTParser, arg1: string[]): void;
     prependMainFunctionBody(arg0: ASTParser, arg1: string): void;

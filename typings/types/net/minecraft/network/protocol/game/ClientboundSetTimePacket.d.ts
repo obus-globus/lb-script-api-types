@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -12,7 +13,7 @@ import type { ClockNetworkState } from '../../../../../net/minecraft/world/clock
 import type { WorldClock } from '../../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class ClientboundSetTimePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetTimePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     // private clockUpdates: Map<Holder<WorldClock>, ClockNetworkState>;
     // private gameTime: number;
     clockUpdates(): Map<Holder<WorldClock>, ClockNetworkState>;

@@ -7,7 +7,7 @@ export class MixinContainer extends Object {
     // private agents: IMixinPlatformAgent[];
     // private handle: IContainerHandle;
     getDescriptor(): IContainerHandle;
-    getPhaseProviders(): E[];
+    getPhaseProviders(): string[];
     initPrimaryContainer(): void;
     inject(): void;
     prepare(): void;

@@ -6,7 +6,7 @@ import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 export interface IVec<T extends Object | number | string | boolean> extends Serializable, Object, Cloneable {
     clear(): void;
     protected clone(): Object;
-    copyTo(arg0: E[]): void;
+    copyTo<E extends Object | number | string | boolean>(arg0: E[]): void;
     copyTo(arg0: IVec<T>): void;
     delete(arg0: number): T;
     ensure(arg0: number): void;
@@ -23,5 +23,5 @@ export interface IVec<T extends Object | number | string | boolean> extends Seri
     set(arg0: number, arg1: T): void;
     shrinkTo(arg0: number): void;
     size(): number;
-    sort(arg0: (param0: T) => kotlin.Boolean): void;
+    sort(arg0: (param0: Object) => boolean): void;
 }

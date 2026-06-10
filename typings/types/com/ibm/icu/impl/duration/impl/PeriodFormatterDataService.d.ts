@@ -3,5 +3,5 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PeriodFormatterDataService extends Object {
     constructor()
     get(arg0: string): PeriodFormatterData;
-    getAvailableLocales(): E[];
+    getAvailableLocales(): string[];
 }

@@ -8,6 +8,6 @@ import type { Potion } from '../../../../net/minecraft/world/item/alchemy/Potion
 export class BrewedPotionTrigger extends SimpleCriterionTrigger<BrewedPotionTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<BrewedPotionTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: BrewedPotionTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: BrewedPotionTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, potion: Holder<Potion>): void;
 }

@@ -10,7 +10,7 @@ export class PlayerFilter$Filter extends Enum<PlayerFilter$Filter> implements Ta
     static DISPLAY_NAME: PlayerFilter$Filter;
     static PLAYER_NAME: PlayerFilter$Filter;
     static getEntries(): PlayerFilter$Filter[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerFilter$Filter;

@@ -5,8 +5,8 @@ export class CoroutineTicker extends Object {
     static INSTANCE: CoroutineTicker;
     // private logger: Logger;
     // private minecraftTickDepth: number;
-    // private pendingList: () => kotlin.Boolean[];
-    // private runningList: () => kotlin.Boolean[];
+    // private pendingList: () => boolean[];
+    // private runningList: () => boolean[];
     beginMinecraftTick(): void;
     endMinecraftTick(): void;
     /**
@@ -16,7 +16,7 @@ export class CoroutineTicker extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:60}
      */
-    register(task: () => kotlin.Boolean): void;
+    register(task: () => boolean): void;
     /**
      * We want it to run before everything else, this is because we want to tick the existing tasks before
      * new ones are added and might be ticked in the same tick

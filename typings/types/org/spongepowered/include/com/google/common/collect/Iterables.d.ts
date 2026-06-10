@@ -3,6 +3,6 @@ import type { Function } from '../../../../../../../org/spongepowered/include/co
 export class Iterables extends Object {
     static concat(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): (Object | null)[];
     static getFirst(paramarg0: (Object | null)[], paramarg1: Object | null): Object | null;
-    static toString(paramarg0: (Object | null)[]): string;
-    static transform(paramarg0: (Object | null)[], paramarg1: (param0: Object | null) => Object | null): (Object | null)[];
+    static toString(paramarg0: Object[]): string;
+    static transform(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): (Object | null)[];
 }

@@ -7,6 +7,6 @@ export interface CreativeModeTab$Output extends Object{
     accept(stack: ItemStack, tabVisibility: CreativeModeTab$TabVisibility): void;
     accept(item: ItemLike): void;
     accept(item: ItemLike, tabVisibility: CreativeModeTab$TabVisibility): void;
-    acceptAll(stacks: E[]): void;
-    acceptAll(stacks: E[], tabVisibility: CreativeModeTab$TabVisibility): void;
+    acceptAll(stacks: ItemStack[]): void;
+    acceptAll(stacks: ItemStack[], tabVisibility: CreativeModeTab$TabVisibility): void;
 }

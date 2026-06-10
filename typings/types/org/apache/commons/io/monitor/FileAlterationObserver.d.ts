@@ -10,16 +10,16 @@ import type { FileEntry } from '../../../../../org/apache/commons/io/monitor/Fil
 export class FileAlterationObserver extends Object implements Serializable {
     static builder(): FileAlterationObserver$Builder;
     constructor(arg0: File)
-    constructor(arg0: File, arg1: (param0: File) => kotlin.Boolean)
-    constructor(arg0: File, arg1: (param0: File) => kotlin.Boolean, arg2: IOCase)
+    constructor(arg0: File, arg1: (param0: File) => boolean)
+    constructor(arg0: File, arg1: (param0: File) => boolean, arg2: IOCase)
     constructor(arg0: string)
-    constructor(arg0: string, arg1: (param0: File) => kotlin.Boolean)
-    constructor(arg0: string, arg1: (param0: File) => kotlin.Boolean, arg2: IOCase)
+    constructor(arg0: string, arg1: (param0: File) => boolean)
+    constructor(arg0: string, arg1: (param0: File) => boolean, arg2: IOCase)
     private constructor(arg0: FileAlterationObserver$Builder)
-    private constructor(arg0: FileEntry, arg1: (param0: File) => kotlin.Boolean, arg2: (param0: File) => kotlin.Boolean)
-    constructor(arg0: FileEntry, arg1: (param0: File) => kotlin.Boolean, arg2: IOCase)
-    // private comparator: (param0: File) => kotlin.Boolean;
-    readonly fileFilter: (param0: File) => kotlin.Boolean;
+    private constructor(arg0: FileEntry, arg1: (param0: File) => boolean, arg2: (param0: Object) => boolean)
+    constructor(arg0: FileEntry, arg1: (param0: File) => boolean, arg2: IOCase)
+    // private comparator: (param0: Object) => boolean;
+    readonly fileFilter: (param0: File) => boolean;
     readonly listeners: FileAlterationListener[];
     // private rootEntry: FileEntry;
     addListener(arg0: FileAlterationListener): void;
@@ -30,9 +30,9 @@ export class FileAlterationObserver extends Object implements Serializable {
     // private fireOnChange(arg0: FileEntry, arg1: File): void;
     // private fireOnCreate(arg0: FileEntry): void;
     // private fireOnDelete(arg0: FileEntry): void;
-    getComparator(): (param0: File) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     getDirectory(): File;
-    getFileFilter(): (param0: File) => kotlin.Boolean;
+    getFileFilter(): (param0: File) => boolean;
     getListeners(): FileAlterationListener[];
     initialize(): void;
     // private listFileEntries(arg0: File, arg1: FileEntry): FileEntry[];

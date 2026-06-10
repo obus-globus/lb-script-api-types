@@ -12,6 +12,7 @@ import type { NativeImage } from '../../../../com/mojang/blaze3d/platform/Native
 import type { NativeImage$Format } from '../../../../com/mojang/blaze3d/platform/NativeImage$Format.d.ts'
 import type { CommandEncoderBackend } from '../../../../com/mojang/blaze3d/systems/CommandEncoderBackend.d.ts'
 import type { GpuQuery } from '../../../../com/mojang/blaze3d/systems/GpuQuery.d.ts'
+import type { RenderPass$Draw } from '../../../../com/mojang/blaze3d/systems/RenderPass$Draw.d.ts'
 import type { RenderPassBackend } from '../../../../com/mojang/blaze3d/systems/RenderPassBackend.d.ts'
 import type { GpuTexture } from '../../../../com/mojang/blaze3d/textures/GpuTexture.d.ts'
 import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
@@ -48,14 +49,14 @@ export class GlCommandEncoder extends Object implements CommandEncoderBackend, G
     createRenderPass(label: () => string, colorTexture: GpuTextureView, clearColor: OptionalInt, depthTexture: GpuTextureView, clearDepth: OptionalDouble): RenderPassBackend;
     // private drawFromBuffers(renderPass: GlRenderPass, baseVertex: number, firstIndex: number, drawCount: number, indexType: VertexFormat$IndexType, pipeline: GlRenderPipeline, instanceCount: number): void;
     executeDraw(renderPass: GlRenderPass, baseVertex: number, firstIndex: number, drawCount: number, indexType: VertexFormat$IndexType, instanceCount: number): void;
-    executeDrawMultiple<T extends Object | number | string | boolean>(renderPass: GlRenderPass, draws: E[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: E[], uniformArgument: T): void;
+    executeDrawMultiple<T extends Object | number | string | boolean>(renderPass: GlRenderPass, draws: RenderPass$Draw<T>[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: string[], uniformArgument: T): void;
     finishRenderPass(): void;
     isInRenderPass(): boolean;
     mapBuffer(slice: GpuBufferSlice, read: boolean, write: boolean): GpuBuffer$MappedView;
     presentTexture(textureView: GpuTextureView): void;
     timerQueryBegin(): GpuQuery;
     timerQueryEnd(query: GpuQuery): void;
-    // private trySetup(renderPass: GlRenderPass, dynamicUniforms: E[]): boolean;
+    // private trySetup(renderPass: GlRenderPass, dynamicUniforms: string[]): boolean;
     writeToBuffer(slice: GpuBufferSlice, data: ByteBuffer): void;
     writeToTexture(destination: GpuTexture, source: NativeImage, mipLevel: number, depthOrLayer: number, destX: number, destY: number, width: number, height: number, sourceX: number, sourceY: number): void;
     writeToTexture(destination: GpuTexture, source: ByteBuffer, format: NativeImage$Format, mipLevel: number, depthOrLayer: number, destX: number, destY: number, width: number, height: number): void;

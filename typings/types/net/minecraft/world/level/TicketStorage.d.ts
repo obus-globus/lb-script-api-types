@@ -29,7 +29,7 @@ export class TicketStorage extends SavedData {
     // private canTicketExpire(chunkMap: ChunkMap, ticket: Ticket, chunkPos: number): boolean;
     deactivateTicketsOnClosing(): void;
     // private forEachTicket(output: (param0: ChunkPos, param1: Ticket) => void): void;
-    // private getAllChunksWithTicketThat(ticketCheck: (param0: Ticket) => kotlin.Boolean): (Object | null)[];
+    // private getAllChunksWithTicketThat(ticketCheck: (param0: Ticket) => boolean): (Object | null)[];
     getForceLoadedChunks(): (Object | null)[];
     // private getOrCreateTickets(key: number): Ticket[];
     getTicketDebugString(key: number, simulation: boolean): string;

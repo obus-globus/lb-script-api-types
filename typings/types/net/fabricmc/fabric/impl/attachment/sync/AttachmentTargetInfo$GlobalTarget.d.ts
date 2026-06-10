@@ -10,7 +10,7 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 export class AttachmentTargetInfo$GlobalTarget extends Object implements AttachmentTargetInfo<GlobalAttachments> {
     static INSTANCE: AttachmentTargetInfo$GlobalTarget;
     static MAX_SIZE_IN_BYTES: number;
-    static PACKET_CODEC: StreamCodec<ByteBuf, Object>;
+    static PACKET_CODEC: StreamCodec<ByteBuf, AttachmentTargetInfo<Object>>;
     private constructor()
     appendDebugInformation(arg0: MutableComponent): void;
     getId(): number;

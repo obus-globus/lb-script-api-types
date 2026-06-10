@@ -17,6 +17,6 @@ export class GameRuleBuilder$BooleanRuleBuilder extends GameRuleBuilder<boolean>
     argumentType(arg0: ArgumentType<boolean>): GameRuleBuilder$BooleanRuleBuilder;
     category(arg0: GameRuleCategory): GameRuleBuilder$BooleanRuleBuilder;
     codec(arg0: Codec<boolean>): GameRuleBuilder$BooleanRuleBuilder;
-    commandResultSupplier(arg0: (param0: boolean) => kotlin.Int): GameRuleBuilder$BooleanRuleBuilder;
+    commandResultSupplier(arg0: (param0: boolean) => number): GameRuleBuilder$BooleanRuleBuilder;
     requiredFeatures(arg0: FeatureFlagSet): GameRuleBuilder$BooleanRuleBuilder;
 }

@@ -18,8 +18,8 @@ export class WebAssemblyModuleRecord extends CyclicModuleRecord {
     readonly requestedModules: Module$ModuleRequest[];
     // private webAssemblyModule: JSWebAssemblyModuleObject;
     executeModule(realm: JSRealm, promiseCapability: PromiseCapabilityRecord): Object;
-    getExportedNames(): E[];
-    getExportedNames(exportStarSet: JSModuleRecord[]): E[];
+    getExportedNames(): TruffleString[];
+    getExportedNames(exportStarSet: JSModuleRecord[]): TruffleString[];
     getModuleSource(): Object;
     getRequestedModules(): Module$ModuleRequest[];
     initializeEnvironment(realm: JSRealm): void;

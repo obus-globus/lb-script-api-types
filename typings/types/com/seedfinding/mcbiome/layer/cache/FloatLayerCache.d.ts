@@ -5,7 +5,7 @@ export class FloatLayerCache extends Object {
     // private keys: number[];
     // private mask: number;
     // private values: number[];
-    get(arg0: number, arg1: number, arg2: number, arg3: (param0: number, param1: number, param2: number) => kotlin.Float): number;
+    get(arg0: number, arg1: number, arg2: number, arg3: (param0: number, param1: number, param2: number) => number): number;
     murmur64(arg0: number): number;
     uniqueHash(arg0: number, arg1: number, arg2: number): number;
 }

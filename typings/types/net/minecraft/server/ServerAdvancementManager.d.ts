@@ -15,7 +15,7 @@ import type { SimpleJsonResourceReloadListener } from '../../../net/minecraft/se
 import type { ProfilerFiller } from '../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 export class ServerAdvancementManager extends SimpleJsonResourceReloadListener<Advancement> implements FabricResourceReloader {
     static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
-    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<Object>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
+    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     constructor(registries: HolderLookup$Provider)
     // private advancements: Map<Identifier, AdvancementHolder>;
     // private id: Identifier;
@@ -24,7 +24,7 @@ export class ServerAdvancementManager extends SimpleJsonResourceReloadListener<A
     apply(preparations: Map<Identifier, Advancement>, manager: ResourceManager, profiler: ProfilerFiller): void;
     fabric$getId(): Identifier;
     get(id: Identifier): AdvancementHolder;
-    getAllAdvancements(): E[];
+    getAllAdvancements(): AdvancementHolder[];
     getName(): string;
     tree(): AdvancementTree;
     // private validate(id: Identifier, advancement: Advancement): void;

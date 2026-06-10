@@ -13,9 +13,9 @@ import type { PlayerChatMessage } from '../../../../../../net/minecraft/network/
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerPlayer } from '../../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export class ServerMessageEvents extends Object {
-    static ALLOW_CHAT_MESSAGE: Event<(param0: PlayerChatMessage, param1: ServerPlayer, param2: ChatType$Bound) => kotlin.Boolean>;
-    static ALLOW_COMMAND_MESSAGE: Event<(param0: PlayerChatMessage, param1: CommandSourceStack, param2: ChatType$Bound) => kotlin.Boolean>;
-    static ALLOW_GAME_MESSAGE: Event<(param0: MinecraftServer, param1: Component, param2: boolean) => kotlin.Boolean>;
+    static ALLOW_CHAT_MESSAGE: Event<(param0: PlayerChatMessage, param1: ServerPlayer, param2: ChatType$Bound) => boolean>;
+    static ALLOW_COMMAND_MESSAGE: Event<(param0: PlayerChatMessage, param1: CommandSourceStack, param2: ChatType$Bound) => boolean>;
+    static ALLOW_GAME_MESSAGE: Event<(param0: MinecraftServer, param1: Component, param2: boolean) => boolean>;
     static CHAT_MESSAGE: Event<(param0: PlayerChatMessage, param1: ServerPlayer, param2: ChatType$Bound) => void>;
     static COMMAND_MESSAGE: Event<(param0: PlayerChatMessage, param1: CommandSourceStack, param2: ChatType$Bound) => void>;
     static GAME_MESSAGE: Event<(param0: MinecraftServer, param1: Component, param2: boolean) => void>;

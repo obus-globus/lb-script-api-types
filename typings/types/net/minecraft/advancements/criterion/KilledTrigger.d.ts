@@ -8,6 +8,6 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class KilledTrigger extends SimpleCriterionTrigger<KilledTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<KilledTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: KilledTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: KilledTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, entity: Entity, killingBlow: DamageSource): void;
 }

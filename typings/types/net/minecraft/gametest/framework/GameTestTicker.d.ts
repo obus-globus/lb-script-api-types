@@ -7,7 +7,7 @@ export class GameTestTicker extends Object {
     private constructor()
     readonly runner: GameTestRunner;
     // private state: GameTestTicker$State;
-    // private testInfos: E[];
+    // private testInfos: GameTestInfo[];
     add(testInfo: GameTestInfo): void;
     clear(): void;
     setRunner(runner: GameTestRunner): void;

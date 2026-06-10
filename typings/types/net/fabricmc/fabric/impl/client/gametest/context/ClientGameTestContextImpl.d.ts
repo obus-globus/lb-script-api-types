@@ -5,6 +5,7 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../../../../../java/lang/Throwable.d.ts'
 import type { ClientGameTestContext } from '../../../../../../../net/fabricmc/fabric/api/client/gametest/v1/context/ClientGameTestContext.d.ts'
 import type { TestScreenshotComparisonAlgorithm$RawImage } from '../../../../../../../net/fabricmc/fabric/api/client/gametest/v1/screenshot/TestScreenshotComparisonAlgorithm$RawImage.d.ts'
 import type { TestScreenshotComparisonOptions } from '../../../../../../../net/fabricmc/fabric/api/client/gametest/v1/screenshot/TestScreenshotComparisonOptions.d.ts'
@@ -29,18 +30,18 @@ export class ClientGameTestContextImpl extends Object implements ClientGameTestC
     assertScreenshotEquals(arg0: string): void;
     assertScreenshotEquals(arg0: TestScreenshotComparisonOptions): void;
     clickScreenButton(arg0: string): void;
-    computeOnClient<T extends Object | number | string | boolean>(arg0: (param0: Minecraft) => E): T;
-    // private doAssertScreenshotContains(arg0: TestScreenshotComparisonOptions, arg1: (param0: TestScreenshotComparisonAlgorithm$RawImage<Object>, param1: TestScreenshotComparisonAlgorithm$RawImage<Object>) => kotlin.Boolean): Vector2i;
+    computeOnClient<T extends Object | number | string | boolean, E extends Throwable>(arg0: (param0: Minecraft) => T): T;
+    // private doAssertScreenshotContains(arg0: TestScreenshotComparisonOptions, arg1: (param0: TestScreenshotComparisonAlgorithm$RawImage<Object>, param1: TestScreenshotComparisonAlgorithm$RawImage<Object>) => boolean): Vector2i;
     // private doTakeScreenshot<T extends Object | number | string | boolean>(arg0: TestScreenshotCommonOptionsImpl<Object>, arg1: (param0: NativeImage) => T): T;
     getInput(): TestInputImpl;
     restoreDefaultGameOptions(): void;
-    runOnClient(arg0: (param0: Minecraft) => void): void;
+    runOnClient<E extends Throwable>(arg0: (param0: Minecraft) => void): void;
     setScreen(arg0: () => Screen): void;
     takeScreenshot(arg0: string): Path[];
     takeScreenshot(arg0: TestScreenshotOptions): Path[];
     tryClickScreenButton(arg0: string): boolean;
-    waitFor(arg0: (param0: Minecraft) => kotlin.Boolean): number;
-    waitFor(arg0: (param0: Minecraft) => kotlin.Boolean, arg1: number): number;
+    waitFor(arg0: (param0: Minecraft) => boolean): number;
+    waitFor(arg0: (param0: Minecraft) => boolean, arg1: number): number;
     waitForScreen(arg0: Class<Screen>): number;
     waitTick(): void;
     waitTicks(arg0: number): void;

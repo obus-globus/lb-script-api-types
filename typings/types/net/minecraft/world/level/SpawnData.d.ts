@@ -3,12 +3,13 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts'
+import type { WeightedList } from '../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { EquipmentTable } from '../../../../net/minecraft/world/entity/EquipmentTable.d.ts'
 import type { SpawnData$CustomSpawnRules } from '../../../../net/minecraft/world/level/SpawnData$CustomSpawnRules.d.ts'
 export class SpawnData extends Record {
     static CODEC: Codec<SpawnData>;
     static ENTITY_TAG: string;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<WeightedList<SpawnData>>;
     constructor()
     constructor(entityToSpawn: CompoundTag, customSpawnRules: Optional<SpawnData$CustomSpawnRules>, equipment: Optional<EquipmentTable>)
     customSpawnRules(): Optional<SpawnData$CustomSpawnRules>;

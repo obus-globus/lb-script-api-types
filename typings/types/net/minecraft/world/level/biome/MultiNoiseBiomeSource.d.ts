@@ -2,7 +2,6 @@ import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BiomeSourceAccess } from '../../../../../net/fabricmc/fabric/impl/biome/BiomeSourceAccess.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -16,8 +15,8 @@ import type { MultiNoiseBiomeSourceParameterList } from '../../../../../net/mine
 export class MultiNoiseBiomeSource extends BiomeSource implements BiomeSourceAccess {
     static CODEC: Codec<BiomeSource>;
     static CODEC: MapCodec<MultiNoiseBiomeSource>;
-    static DIRECT_CODEC: MapCodec<Object>;
-    static createFromList(paramparameters: Climate$ParameterList<Object>): MultiNoiseBiomeSource;
+    static DIRECT_CODEC: MapCodec<Climate$ParameterList<Holder<Biome>>>;
+    static createFromList(paramparameters: Climate$ParameterList<Holder<Biome>>): MultiNoiseBiomeSource;
     static createFromPreset(parampreset: Holder<MultiNoiseBiomeSourceParameterList>): MultiNoiseBiomeSource;
     private constructor(parameters: Either<Climate$ParameterList<Holder<Biome>>, Holder<MultiNoiseBiomeSourceParameterList>>)
     // private modifyBiomeEntries: boolean;

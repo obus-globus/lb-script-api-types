@@ -3,8 +3,8 @@ import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastut
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ReferenceFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractShort2ReferenceFunction<V> implements Serializable {
-    constructor(arg0: (param0: V) => unknown)
-    // private function: (param0: V) => unknown;
+    constructor(arg0: (param0: number) => V)
+    // private function: (param0: number) => V;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

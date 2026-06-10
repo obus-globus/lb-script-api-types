@@ -20,7 +20,7 @@ export class AttributeInstance extends Object {
     addOrReplacePermanentModifier(modifier: AttributeModifier): void;
     addOrUpdateTransientModifier(modifier: AttributeModifier): void;
     addPermanentModifier(modifier: AttributeModifier): void;
-    addPermanentModifiers(modifiers: E[]): void;
+    addPermanentModifiers(modifiers: AttributeModifier[]): void;
     addTransientModifier(modifier: AttributeModifier): void;
     apply(packed: AttributeInstance$Packed): void;
     // private calculateValue(): number;
@@ -29,7 +29,7 @@ export class AttributeInstance extends Object {
     getModifier(id: Identifier): AttributeModifier;
     getModifiers(): AttributeModifier[];
     getModifiers(operation: AttributeModifier$Operation): Map<Identifier, AttributeModifier>;
-    // private getModifiersOrEmpty(operation: AttributeModifier$Operation): E[];
+    // private getModifiersOrEmpty(operation: AttributeModifier$Operation): AttributeModifier[];
     getPermanentModifiers(): AttributeModifier[];
     getValue(): number;
     hasModifier(modifier: Identifier): boolean;

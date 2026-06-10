@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { WeightedList } from '../../../../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { EntityType } from '../../../../../../../net/minecraft/world/entity/EntityType.d.ts'
@@ -8,7 +9,7 @@ import type { SpawnData } from '../../../../../../../net/minecraft/world/level/S
 import type { TrialSpawnerConfig$Builder } from '../../../../../../../net/minecraft/world/level/block/entity/trialspawner/TrialSpawnerConfig$Builder.d.ts'
 import type { LootTable } from '../../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class TrialSpawnerConfig extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<TrialSpawnerConfig>>;
     static DEFAULT: TrialSpawnerConfig;
     static DIRECT_CODEC: Codec<TrialSpawnerConfig>;
     static builder(): TrialSpawnerConfig$Builder;

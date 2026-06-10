@@ -19,7 +19,7 @@ export class BreakpointLocation$BreakpointSourceLocation extends BreakpointLocat
     createExecLocationFilter(location: SourceSection, suspendAnchor: SuspendAnchor): SourceSectionFilter;
     createLocationFilters(suspendAnchor: SuspendAnchor): BreakpointLocation$LocationFilters;
     // private createSourceFilter(): SourceFilter;
-    // private createSourcePredicate(): (param0: Source) => kotlin.Boolean;
+    // private createSourcePredicate(): (param0: Source) => boolean;
     isLoadBindingNeeded(): boolean;
     toString(): string;
 }

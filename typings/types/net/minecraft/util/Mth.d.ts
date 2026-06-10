@@ -29,7 +29,7 @@ export class Mth extends Object {
     static approach(paramcurrent: number, paramtarget: number, paramincrement: number): number;
     static approachDegrees(paramcurrent: number, paramtarget: number, paramincrement: number): number;
     static atan2(paramy: number, paramx: number): number;
-    static binarySearch(paramfrom: number, paramto: number, paramcondition: (param0: number) => kotlin.Boolean): number;
+    static binarySearch(paramfrom: number, paramto: number, paramcondition: (param0: number) => boolean): number;
     static catmullrom(paramalpha: number, paramp0: number, paramp1: number, paramp2: number, paramp3: number): number;
     static ceil(paramv: number): number;
     static ceil(paramv: number): number;

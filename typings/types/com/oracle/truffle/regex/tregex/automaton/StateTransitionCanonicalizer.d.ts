@@ -8,9 +8,9 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class StateTransitionCanonicalizer<SI extends StateIndex<S>, S extends AbstractState<S, T>, T extends AbstractTransition<S, T>, TB extends TransitionBuilder<SI, S, T>> extends Object {
     constructor(stateIndex: SI, forward: boolean, prioritySensitive: boolean, booleanMatch: boolean)
     // private anyArgConstraints: boolean;
-    // private argCharSets: T[];
-    // private argConstraints: T[];
-    // private argOperations: T[];
+    // private argCharSets: (Object | null)[][];
+    // private argConstraints: number[][];
+    // private argOperations: number[][];
     // private argTransitions: T[];
     // private booleanMatch: boolean;
     // private constraintBuilder: number[][];

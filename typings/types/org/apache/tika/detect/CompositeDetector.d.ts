@@ -9,11 +9,11 @@ export class CompositeDetector extends Object implements Detector {
     constructor(arg0: Detector[])
     constructor(arg0: Detector[])
     constructor(arg0: MediaTypeRegistry, arg1: Detector[])
-    constructor(arg0: MediaTypeRegistry, arg1: Detector[], arg2: E[])
+    constructor(arg0: MediaTypeRegistry, arg1: Detector[], arg2: Class<Detector>[])
     readonly detectors: Detector[];
     // private registry: MediaTypeRegistry;
-    // private assignableFrom(arg0: E[], arg1: Class<Detector>): boolean;
+    // private assignableFrom(arg0: Class<Detector>[], arg1: Class<Detector>): boolean;
     detect(arg0: InputStream, arg1: Metadata): MediaType;
     getDetectors(): Detector[];
-    // private isExcluded(arg0: E[], arg1: Class<Detector>): boolean;
+    // private isExcluded(arg0: Class<Detector>[], arg1: Class<Detector>): boolean;
 }

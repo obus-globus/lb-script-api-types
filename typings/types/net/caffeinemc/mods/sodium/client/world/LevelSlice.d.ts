@@ -53,11 +53,11 @@ export class LevelSlice extends Object implements FabricBlockGetter, BlockAndTin
     getBiomeFabric(arg0: BlockPos): Holder<Biome>;
     getBlockEntity(arg0: number, arg1: number, arg2: number): BlockEntity;
     getBlockEntity(arg0: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockState(arg0: number, arg1: number, arg2: number): BlockState;
     getBlockState(arg0: BlockPos): BlockState;
-    getBlockTint(arg0: BlockPos, arg1: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
+    getBlockTint(arg0: BlockPos, arg1: (param0: Biome, param1: number, param2: number) => number): number;
     getBrightness(arg0: LightLayer, arg1: BlockPos): number;
     getFluidState(arg0: BlockPos): FluidState;
     getHeight(): number;

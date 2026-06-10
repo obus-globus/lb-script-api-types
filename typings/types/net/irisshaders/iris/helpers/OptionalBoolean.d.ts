@@ -11,6 +11,6 @@ export class OptionalBoolean extends Enum<OptionalBoolean> {
     static values(): (Object | null)[];
     private constructor()
     orElse(arg0: boolean): boolean;
-    orElseGet(arg0: () => kotlin.Boolean): boolean;
+    orElseGet(arg0: () => boolean): boolean;
     name(): "DEFAULT" | "FALSE" | "TRUE";
 }

@@ -10,7 +10,7 @@ export class Arguments extends Object {
     get(arg0: string): string;
     getExtraArgs(): string[];
     getOrDefault(arg0: string, arg1: string): string;
-    keys(): E[];
+    keys(): string[];
     parse(arg0: string[]): void;
     put(arg0: string, arg1: string): void;
     remove(arg0: string): string;

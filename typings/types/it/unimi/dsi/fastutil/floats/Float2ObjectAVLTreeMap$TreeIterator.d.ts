@@ -10,9 +10,9 @@ export class Float2ObjectAVLTreeMap$TreeIterator extends Object {
     back(arg0: number): number;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    nextEntry(): Float2ObjectAVLTreeMap$Entry<V>;
+    nextEntry<V extends Object | number | string | boolean>(): Float2ObjectAVLTreeMap$Entry<V>;
     nextIndex(): number;
-    previousEntry(): Float2ObjectAVLTreeMap$Entry<V>;
+    previousEntry<V extends Object | number | string | boolean>(): Float2ObjectAVLTreeMap$Entry<V>;
     previousIndex(): number;
     remove(): void;
     skip(arg0: number): number;

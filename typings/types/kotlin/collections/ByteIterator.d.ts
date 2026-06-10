@@ -3,7 +3,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 export abstract class ByteIterator extends Object implements Iterator<number> {
     constructor()
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
     nextByte(): number;
 }

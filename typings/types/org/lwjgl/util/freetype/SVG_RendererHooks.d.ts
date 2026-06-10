@@ -42,11 +42,11 @@ export class SVG_RendererHooks extends Struct<SVG_RendererHooks> implements Nati
     static nfree_svg(paramarg0: number): SVG_Lib_Free_Func;
     static nfree_svg(paramarg0: number, paramarg1: (param0: number) => void): void;
     static ninit_svg(paramarg0: number): SVG_Lib_Init_Func;
-    static ninit_svg(paramarg0: number, paramarg1: (param0: number) => kotlin.Int): void;
+    static ninit_svg(paramarg0: number, paramarg1: (param0: number) => number): void;
     static npreset_slot(paramarg0: number): SVG_Lib_Preset_Slot_Func;
-    static npreset_slot(paramarg0: number, paramarg1: (param0: number, param1: boolean, param2: number) => kotlin.Int): void;
+    static npreset_slot(paramarg0: number, paramarg1: (param0: number, param1: boolean, param2: number) => number): void;
     static nrender_svg(paramarg0: number): SVG_Lib_Render_Func;
-    static nrender_svg(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static nrender_svg(paramarg0: number, paramarg1: (param0: number, param1: number) => number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
@@ -57,12 +57,12 @@ export class SVG_RendererHooks extends Struct<SVG_RendererHooks> implements Nati
     free_svg(): SVG_Lib_Free_Func;
     free_svg(arg0: (param0: number) => void): SVG_RendererHooks;
     init_svg(): SVG_Lib_Init_Func;
-    init_svg(arg0: (param0: number) => kotlin.Int): SVG_RendererHooks;
+    init_svg(arg0: (param0: number) => number): SVG_RendererHooks;
     preset_slot(): SVG_Lib_Preset_Slot_Func;
-    preset_slot(arg0: (param0: number, param1: boolean, param2: number) => kotlin.Int): SVG_RendererHooks;
+    preset_slot(arg0: (param0: number, param1: boolean, param2: number) => number): SVG_RendererHooks;
     render_svg(): SVG_Lib_Render_Func;
-    render_svg(arg0: (param0: number, param1: number) => kotlin.Int): SVG_RendererHooks;
-    set(arg0: (param0: number) => kotlin.Int, arg1: (param0: number) => void, arg2: (param0: number, param1: number) => kotlin.Int, arg3: (param0: number, param1: boolean, param2: number) => kotlin.Int): SVG_RendererHooks;
+    render_svg(arg0: (param0: number, param1: number) => number): SVG_RendererHooks;
+    set(arg0: (param0: number) => number, arg1: (param0: number) => void, arg2: (param0: number, param1: number) => number, arg3: (param0: number, param1: boolean, param2: number) => number): SVG_RendererHooks;
     set(arg0: SVG_RendererHooks): SVG_RendererHooks;
     sizeof(): number;
 }

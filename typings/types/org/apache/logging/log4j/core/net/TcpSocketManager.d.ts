@@ -5,6 +5,7 @@ import type { InetSocketAddress } from '../../../../../../java/net/InetSocketAdd
 import type { Socket } from '../../../../../../java/net/Socket.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
+import type { AbstractManager } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { OutputStreamManager } from '../../../../../../org/apache/logging/log4j/core/appender/OutputStreamManager.d.ts'
 import type { AbstractSocketManager } from '../../../../../../org/apache/logging/log4j/core/net/AbstractSocketManager.d.ts'
@@ -13,10 +14,10 @@ import type { TcpSocketManager$HostResolver } from '../../../../../../org/apache
 import type { TcpSocketManager$Reconnector } from '../../../../../../org/apache/logging/log4j/core/net/TcpSocketManager$Reconnector.d.ts'
 export class TcpSocketManager extends AbstractSocketManager {
     static DEFAULT_RECONNECTION_DELAY_MILLIS: number;
-    static getManager(paramname: string, paramfactory: ManagerFactory<Object, Object>, paramdata: Object | null): Object | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<Object, Object>): OutputStreamManager;
-    static getSocketManager(paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Object>, parambufferSize: number): TcpSocketManager;
-    static getSocketManager(paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Object>, parambufferSize: number, paramsocketOptions: SocketOptions): TcpSocketManager;
+    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
+    static getSocketManager(paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Serializable>, parambufferSize: number): TcpSocketManager;
+    static getSocketManager(paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Serializable>, parambufferSize: number, paramsocketOptions: SocketOptions): TcpSocketManager;
     static hasManager(paramname: string): boolean;
     static setHostResolver(paramresolver: TcpSocketManager$HostResolver): void;
     constructor(name: string, os: OutputStream, socket: Socket, inetAddress: InetAddress, host: string, port: number, connectTimeoutMillis: number, reconnectionDelayMillis: number, immediateFail: boolean, layout: Layout<Serializable>, bufferSize: number)

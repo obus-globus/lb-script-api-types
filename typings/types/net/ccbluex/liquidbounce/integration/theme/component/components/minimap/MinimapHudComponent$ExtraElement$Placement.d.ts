@@ -10,7 +10,7 @@ export class MinimapHudComponent$ExtraElement$Placement extends Enum<MinimapHudC
     static TOP_LEFT: MinimapHudComponent$ExtraElement$Placement;
     static TOP_RIGHT: MinimapHudComponent$ExtraElement$Placement;
     static getEntries(): MinimapHudComponent$ExtraElement$Placement[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinimapHudComponent$ExtraElement$Placement;

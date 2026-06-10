@@ -8,10 +8,10 @@ export class Reference2ByteLinkedOpenHashMap$EntryIterator extends Reference2Byt
     constructor(null_: Reference2ByteLinkedOpenHashMap$EntryIterator)
     constructor(null_: Reference2ByteLinkedOpenHashMap$EntryIterator)
     // private entry: Reference2ByteLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Reference2ByteLinkedOpenHashMap$MapEntry;
-    previous(): Reference2ByteLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Reference2ByteMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Reference2ByteLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Reference2ByteLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Reference2ByteMap$Entry<K>): void;
 }

@@ -6,6 +6,6 @@ export class LockFreeTaskQueue<E extends Object | number | string | boolean> ext
     addLast(element: E): boolean;
     close(): void;
     isClosed(): boolean;
-    map(transform: (param0: E) => R): R[];
+    map<R extends Object | number | string | boolean>(transform: (param0: E) => R): R[];
     removeFirstOrNull(): E | null;
 }

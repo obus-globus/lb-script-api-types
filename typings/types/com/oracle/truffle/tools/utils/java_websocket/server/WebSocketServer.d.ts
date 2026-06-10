@@ -28,11 +28,11 @@ export abstract class WebSocketServer extends AbstractWebSocket implements Runna
     constructor(arg0: InetSocketAddress)
     constructor(arg0: InetSocketAddress, arg1: number)
     constructor(arg0: InetSocketAddress, arg1: number, arg2: Draft[])
-    constructor(arg0: InetSocketAddress, arg1: number, arg2: Draft[], arg3: E[])
+    constructor(arg0: InetSocketAddress, arg1: number, arg2: Draft[], arg3: WebSocket[])
     constructor(arg0: InetSocketAddress, arg1: Draft[])
     readonly address: InetSocketAddress;
     // private buffers: ByteBuffer[];
-    readonly connections: E[];
+    readonly connections: WebSocket[];
     // private decoders: WebSocketServer$WebSocketWorker[];
     // private drafts: Draft[];
     // private iqueue: WebSocketImpl[];
@@ -48,15 +48,15 @@ export abstract class WebSocketServer extends AbstractWebSocket implements Runna
     addConnection(arg0: WebSocket): boolean;
     allocateBuffers(arg0: WebSocket): void;
     broadcast(arg0: ByteBuffer): void;
-    broadcast(arg0: ByteBuffer, arg1: E[]): void;
+    broadcast(arg0: ByteBuffer, arg1: WebSocket[]): void;
     broadcast(arg0: number[]): void;
-    broadcast(arg0: number[], arg1: E[]): void;
+    broadcast(arg0: number[], arg1: WebSocket[]): void;
     broadcast(arg0: string): void;
-    broadcast(arg0: string, arg1: E[]): void;
+    broadcast(arg0: string, arg1: WebSocket[]): void;
     createBuffer(): ByteBuffer;
     // private doAccept(arg0: SelectionKey, arg1: Iterator<SelectionKey>): void;
     // private doAdditionalRead(): void;
-    // private doBroadcast(arg0: Object, arg1: E[]): void;
+    // private doBroadcast(arg0: Object, arg1: WebSocket[]): void;
     // private doEnsureSingleThread(): boolean;
     // private doRead(arg0: SelectionKey, arg1: Iterator<SelectionKey>): boolean;
     // private doServerShutdown(): void;
@@ -64,7 +64,7 @@ export abstract class WebSocketServer extends AbstractWebSocket implements Runna
     // private doWrite(arg0: SelectionKey): void;
     // private fillFrames(arg0: Draft, arg1: Map<Draft, Framedata[]>, arg2: string, arg3: ByteBuffer): void;
     getAddress(): InetSocketAddress;
-    getConnections(): E[];
+    getConnections(): WebSocket[];
     getDraft(): Draft[];
     getLocalSocketAddress(arg0: WebSocket): InetSocketAddress;
     getMaxPendingConnections(): number;

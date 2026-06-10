@@ -14,7 +14,7 @@ import type { PreparableReloadListener$SharedState } from '../../../net/minecraf
 import type { PermissionSet } from '../../../net/minecraft/server/permissions/PermissionSet.d.ts'
 import type { TagLoader } from '../../../net/minecraft/tags/TagLoader.d.ts'
 export class ServerFunctionLibrary extends Object implements FabricResourceReloader, PreparableReloadListener {
-    static TYPE_KEY: ResourceKey<Object>;
+    static TYPE_KEY: ResourceKey<CommandFunction<CommandSourceStack>[]>;
     constructor(functionCompilationPermissions: PermissionSet, dispatcher: CommandDispatcher<CommandSourceStack>)
     // private dispatcher: CommandDispatcher<CommandSourceStack>;
     // private functionCompilationPermissions: PermissionSet;
@@ -29,5 +29,5 @@ export class ServerFunctionLibrary extends Object implements FabricResourceReloa
     getName(): string;
     getTag(tag: Identifier): CommandFunction<CommandSourceStack>[];
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
 }

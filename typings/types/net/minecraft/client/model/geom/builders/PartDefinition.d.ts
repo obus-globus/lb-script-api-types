@@ -19,5 +19,5 @@ export class PartDefinition extends Object {
     getChildren(): Map$Entry<string, PartDefinition>[];
     retainExactParts(parts: string[]): void;
     retainPartsAndChildren(parts: string[]): void;
-    transformed(function_: (param0: PartPose) => unknown): PartDefinition;
+    transformed(function_: (param0: PartPose) => Object | null): PartDefinition;
 }

@@ -8,5 +8,5 @@ export class QuadConsumers$BreakingBlockModel extends Object implements Consumer
     buffer: VertexConsumer;
     pose: PoseStack$Pose;
     accept(arg0: MutableQuadView): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: MutableQuadView) => void): (param0: MutableQuadView) => void;
 }

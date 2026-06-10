@@ -29,7 +29,7 @@ export class LocaleMatcher$Builder extends Object {
     setMaxDistance(desired: ULocale, supported: ULocale): LocaleMatcher$Builder;
     setNoDefaultLocale(): LocaleMatcher$Builder;
     setSupportedLocales(locales: string): LocaleMatcher$Builder;
-    setSupportedLocales(locales: E[]): LocaleMatcher$Builder;
-    setSupportedULocales(locales: E[]): LocaleMatcher$Builder;
+    setSupportedLocales(locales: Locale[]): LocaleMatcher$Builder;
+    setSupportedULocales(locales: ULocale[]): LocaleMatcher$Builder;
     toString(): string;
 }

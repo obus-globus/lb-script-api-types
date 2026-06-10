@@ -2,12 +2,12 @@ import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { UnmodifiableIterator } from '../../../../com/google/common/collect/UnmodifiableIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class TreeTraverser<T extends Object | number | string | boolean> extends Object {
-    static using(paramnodeToChildrenFunction: (param0: Object | null) => Object | null): TreeTraverser<Object>;
+    static using(paramnodeToChildrenFunction: (param0: Object) => boolean): TreeTraverser<Object>;
     constructor()
-    breadthFirstTraversal(root: T): E[];
+    breadthFirstTraversal(root: T): T[];
     children(root: T): T[];
     postOrderIterator(root: T): UnmodifiableIterator<T>;
-    postOrderTraversal(root: T): E[];
+    postOrderTraversal(root: T): T[];
     preOrderIterator(root: T): UnmodifiableIterator<T>;
-    preOrderTraversal(root: T): E[];
+    preOrderTraversal(root: T): T[];
 }

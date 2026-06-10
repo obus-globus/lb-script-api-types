@@ -30,6 +30,7 @@ import type { CommandSource } from '../../../net/minecraft/commands/CommandSourc
 import type { ExecutionCommandSource } from '../../../net/minecraft/commands/ExecutionCommandSource.d.ts'
 import type { SharedSuggestionProvider } from '../../../net/minecraft/commands/SharedSuggestionProvider.d.ts'
 import type { SharedSuggestionProvider$ElementSuggestionType } from '../../../net/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType.d.ts'
+import type { SharedSuggestionProvider$TextCoordinates } from '../../../net/minecraft/commands/SharedSuggestionProvider$TextCoordinates.d.ts'
 import type { EntityAnchorArgument$Anchor } from '../../../net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.d.ts'
 import type { TraceCallbacks } from '../../../net/minecraft/commands/execution/TraceCallbacks.d.ts'
 import type { HolderLookup } from '../../../net/minecraft/core/HolderLookup.d.ts'
@@ -56,15 +57,15 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     static MATCH_SPLITTER: CharMatcher;
     static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramprefix: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
     static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
-    static listSuggestions(paramcontext: CommandContext<Object>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
+    static listSuggestions(paramcontext: CommandContext<Object>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object[]>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
     static matchesSubStr(parampattern: string, paraminput: string): boolean;
-    static resultConsumer(): (param0: Object | null, param1: CommandContext<Object>, param2: boolean) => void;
+    static resultConsumer(): (param0: CommandContext<Object>, param1: boolean, param2: number) => void;
     static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramtoString: (param0: Object | null) => string, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggest(paramvalues: string[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest(paramvalues: Stream<string>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: E[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => kotlin.Boolean): CompletableFuture<Suggestions>;
-    static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: E[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => kotlin.Boolean): CompletableFuture<Suggestions>;
+    static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
+    static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramid: (param0: Object | null) => Identifier, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Stream<Object>, parambuilder: SuggestionsBuilder, paramid: (param0: Object | null) => Identifier, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Identifier[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
@@ -97,7 +98,7 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     checkPermission(arg0: Identifier): TriState;
     checkPermission(arg0: Identifier, arg1: boolean): boolean;
     checkPermission(arg0: Identifier, arg1: PermissionLevel): boolean;
-    clearCallbacks<T extends ExecutionCommandSource<T>>(): T;
+    clearCallbacks(): CommandSourceStack;
     customSuggestion(context: CommandContext<Object>): CompletableFuture<Suggestions>;
     dispatcher(): CommandDispatcher<CommandSourceStack>;
     enabledFeatures(): FeatureFlagSet;
@@ -105,25 +106,25 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     fabric_getUuid(): UUID;
     facing(entity: Entity, anchor: EntityAnchorArgument$Anchor): CommandSourceStack;
     facing(pos: Vec3): CommandSourceStack;
-    getAbsoluteCoordinates(): E[];
-    getAllTeams(): E[];
+    getAbsoluteCoordinates(): SharedSuggestionProvider$TextCoordinates[];
+    getAllTeams(): string[];
     getAnchor(): EntityAnchorArgument$Anchor;
     getAvailableSounds(): Stream<Identifier>;
     getChatMessageChainer(): (param0: CompletableFuture<Object>, param1: (param0: Object | null) => void) => void;
-    getCustomTabSuggestions(): E[];
+    getCustomTabSuggestions(): string[];
     getDisplayName(): Component;
     getEntity(): Entity;
     getEntityOrException(): Entity;
     getLevel(): ServerLevel;
     // private getLookup(key: ResourceKey<(Object | null)[]>): Optional<HolderLookup<Object>>;
-    getOnlinePlayerNames(): E[];
+    getOnlinePlayerNames(): string[];
     getPermissionContext(): PermissionContext;
     getPlayer(): ServerPlayer;
     getPlayerOrException(): ServerPlayer;
     getPosition(): Vec3;
-    getRelevantCoordinates(): E[];
+    getRelevantCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getRotation(): Vec2;
-    getSelectedEntities(): E[];
+    getSelectedEntities(): string[];
     getServer(): MinecraftServer;
     getSigningContext(): CommandSigningContext;
     getTextName(): string;
@@ -143,7 +144,7 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;
     withAnchor(anchor: EntityAnchorArgument$Anchor): CommandSourceStack;
     withCallback(resultCallback: (param0: boolean, param1: number) => void): CommandSourceStack;
-    withCallback(newCallback: (param0: boolean, param1: number) => void, combiner: (param0: (param0: boolean, param1: number) => void, param1: Object | null) => unknown): CommandSourceStack;
+    withCallback(newCallback: (param0: boolean, param1: number) => void, combiner: (param0: (param0: boolean, param1: number) => void, param1: Object | null) => Object | null): CommandSourceStack;
     withEntity(entity: Entity): CommandSourceStack;
     withLevel(level: ServerLevel): CommandSourceStack;
     withMaximumPermission(newPermissions: PermissionSet): CommandSourceStack;

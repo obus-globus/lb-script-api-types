@@ -1,6 +1,7 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
+import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Handle } from '../../../../org/objectweb/asm/Handle.d.ts'
 import type { Type } from '../../../../org/objectweb/asm/Type.d.ts'
@@ -18,9 +19,9 @@ export class ASMUtils extends Object {
     static findInitNodeFor(paramarg0: AbstractInsnNode[], paramarg1: TypeInsnNode): MethodInsnNode;
     static getConstantType(paramarg0: AbstractInsnNode): Type;
     static getDummyOpcodeForType(paramarg0: Type): number;
-    static getInvisibleMEAnnotation(paramarg0: MethodNode, paramarg1: Class<Object>): AnnotationNode;
+    static getInvisibleMEAnnotation(paramarg0: MethodNode, paramarg1: Class<Annotation>): AnnotationNode;
     static getInvokeInstruction(paramarg0: ClassNode, paramarg1: MethodNode): MethodInsnNode;
-    static getRepeatedMEAnnotation(paramarg0: MethodNode, paramarg1: Class<Object>): AnnotationNode;
+    static getRepeatedMEAnnotation(paramarg0: MethodNode, paramarg1: Class<Annotation>): AnnotationNode;
     static ifElse(paramarg0: AbstractInsnNode[], paramarg1: number, paramarg2: () => void, paramarg3: () => void): void;
     static ifElse(paramarg0: AbstractInsnNode[], paramarg1: (param0: LabelNode) => void, paramarg2: () => void, paramarg3: () => void): void;
     static isPrimitive(paramarg0: Type): boolean;

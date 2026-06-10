@@ -3,8 +3,8 @@ import type { ObjectIterator } from '../../../../../../com/viaversion/viaversion
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Int2IntMaps extends Object {
-    static fastForEach(paramarg0: Int2IntMap, paramarg1: (param0: Object | null) => void): void;
-    static fastIterable(paramarg0: Int2IntMap): K[];
+    static fastForEach(paramarg0: Int2IntMap, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: Int2IntMap): Int2IntMap$Entry[];
     static fastIterator(paramarg0: Int2IntMap): ObjectIterator<Int2IntMap$Entry>;
     static singleton(paramarg0: number, paramarg1: number): Int2IntMap;
     static singleton(paramarg0: number, paramarg1: number): Int2IntMap;

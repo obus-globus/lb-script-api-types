@@ -8,6 +8,6 @@ import type { Villager } from '../../../../net/minecraft/world/entity/npc/villag
 export class CuredZombieVillagerTrigger extends SimpleCriterionTrigger<CuredZombieVillagerTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<CuredZombieVillagerTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: CuredZombieVillagerTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: CuredZombieVillagerTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, zombie: Zombie, villager: Villager): void;
 }

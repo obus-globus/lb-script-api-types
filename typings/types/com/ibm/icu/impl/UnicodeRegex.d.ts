@@ -15,7 +15,7 @@ export class UnicodeRegex extends Object implements StringTransform, Freezable<U
     static compile(paramarg0: string, paramarg1: number): Pattern;
     static fix(paramarg0: string): string;
     constructor()
-    // private LongestFirst: (param0: Object) => kotlin.Boolean;
+    // private LongestFirst: (param0: Object) => boolean;
     readonly bnfCommentString: string;
     readonly bnfLineSeparator: string;
     readonly bnfVariableInfix: string;

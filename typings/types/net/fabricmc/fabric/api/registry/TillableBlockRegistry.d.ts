@@ -6,8 +6,8 @@ import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class TillableBlockRegistry extends Object {
-    static register(paramarg0: Block, paramarg1: (param0: UseOnContext) => kotlin.Boolean, paramarg2: (param0: UseOnContext) => void): void;
-    static register(paramarg0: Block, paramarg1: (param0: UseOnContext) => kotlin.Boolean, paramarg2: BlockState): void;
-    static register(paramarg0: Block, paramarg1: (param0: UseOnContext) => kotlin.Boolean, paramarg2: BlockState, paramarg3: ItemLike): void;
+    static register(paramarg0: Block, paramarg1: (param0: UseOnContext) => boolean, paramarg2: (param0: UseOnContext) => void): void;
+    static register(paramarg0: Block, paramarg1: (param0: UseOnContext) => boolean, paramarg2: BlockState): void;
+    static register(paramarg0: Block, paramarg1: (param0: UseOnContext) => boolean, paramarg2: BlockState, paramarg3: ItemLike): void;
     private constructor()
 }

@@ -36,7 +36,7 @@ export class LocalePrototypeBuiltins$LocalePrototype extends Enum<LocalePrototyp
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): LocalePrototypeBuiltins$LocalePrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

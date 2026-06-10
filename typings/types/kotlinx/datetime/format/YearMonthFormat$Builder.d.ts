@@ -13,9 +13,9 @@ export class YearMonthFormat$Builder extends Object implements AbstractDateTimeF
     constructor(actualBuilder: AppendableFormatStructure<YearMonthFieldContainer>)
     readonly actualBuilder: AppendableFormatStructure<YearMonthFieldContainer>;
     addFormatStructureForYearMonth(structure: FormatStructure<YearMonthFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: (param0: ActualSelf) => void[], mainFormat: (param0: ActualSelf) => void): void;
-    appendOptionalImpl(onZero: string, format: (param0: ActualSelf) => void): void;
-    build(): CachedFormatStructure<Target>;
+    appendAlternativeParsingImpl(otherFormats: (param0: YearMonthFormat$Builder) => void[], mainFormat: (param0: YearMonthFormat$Builder) => void): void;
+    appendOptionalImpl(onZero: string, format: (param0: YearMonthFormat$Builder) => void): void;
+    build(): CachedFormatStructure<YearMonthFieldContainer>;
     chars(value: string): void;
     createEmpty(): YearMonthFormat$Builder;
     monthName(names: MonthNames): void;

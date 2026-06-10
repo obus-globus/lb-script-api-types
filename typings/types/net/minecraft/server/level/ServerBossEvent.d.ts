@@ -13,7 +13,7 @@ export class ServerBossEvent extends BossEvent {
     readonly visible: boolean;
     addPlayer(player: ServerPlayer): void;
     // private broadcast(factory: (param0: BossEvent) => ClientboundBossEventPacket): void;
-    getPlayers(): E[];
+    getPlayers(): ServerPlayer[];
     isVisible(): boolean;
     removeAllPlayers(): void;
     removePlayer(player: ServerPlayer): void;

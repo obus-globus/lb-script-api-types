@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { BootstrapContext } from '../../../../../net/minecraft/data/worldgen/BootstrapContext.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Climate$ParameterPoint } from '../../../../../net/minecraft/world/level/biome/Climate$ParameterPoint.d.ts'
@@ -12,7 +13,7 @@ import type { WorldgenRandom$Algorithm } from '../../../../../net/minecraft/worl
 export class NoiseGeneratorSettings extends Record {
     static AMPLIFIED: ResourceKey<NoiseGeneratorSettings>;
     static CAVES: ResourceKey<NoiseGeneratorSettings>;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<NoiseGeneratorSettings>>;
     static DIRECT_CODEC: Codec<NoiseGeneratorSettings>;
     static END: ResourceKey<NoiseGeneratorSettings>;
     static FLOATING_ISLANDS: ResourceKey<NoiseGeneratorSettings>;

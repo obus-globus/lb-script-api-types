@@ -5,7 +5,7 @@ import type { ALCCapabilities } from '../../../org/lwjgl/openal/ALCCapabilities.
 import type { ALCapabilities } from '../../../org/lwjgl/openal/ALCapabilities.d.ts'
 export class AL extends Object {
     static createCapabilities(paramarg0: ALCCapabilities): ALCapabilities;
-    static createCapabilities(paramarg0: ALCCapabilities, paramarg1: (param0: PointerBuffer) => unknown): ALCapabilities;
+    static createCapabilities(paramarg0: ALCCapabilities, paramarg1: (param0: number) => PointerBuffer): ALCapabilities;
     static getCapabilities(): ALCapabilities;
     static setCurrentProcess(paramarg0: ALCapabilities): void;
     static setCurrentThread(paramarg0: ALCapabilities): void;

@@ -4,10 +4,10 @@ import type { GlSampler } from '../../../../../net/irisshaders/iris/gl/sampler/G
 import type { TextureAccess } from '../../../../../net/irisshaders/iris/gl/texture/TextureAccess.d.ts'
 import type { TextureType } from '../../../../../net/irisshaders/iris/gl/texture/TextureType.d.ts'
 export class TextureWrapper extends Object implements TextureAccess {
-    constructor(arg0: () => kotlin.Int, arg1: TextureType)
-    // private texture: () => kotlin.Int;
+    constructor(arg0: () => number, arg1: TextureType)
+    // private texture: () => number;
     readonly type: TextureType;
     getSampling(): GlSampler;
-    getTextureId(): () => kotlin.Int;
+    getTextureId(): () => number;
     getType(): TextureType;
 }

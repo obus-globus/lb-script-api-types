@@ -53,7 +53,7 @@ export abstract class AbstractWidget extends Object implements AccessorAbstractW
     getCurrentFocusPath(): ComponentPath;
     getHeight(): number;
     getMessage(): Component;
-    getNarratables(): E[];
+    getNarratables(): NarratableEntry[];
     getRectangle(): ScreenRectangle;
     getRight(): number;
     getTabOrderGroup(): number;

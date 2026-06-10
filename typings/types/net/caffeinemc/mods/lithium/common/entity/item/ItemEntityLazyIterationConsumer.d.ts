@@ -7,12 +7,12 @@ import type { ItemEntity } from '../../../../../../../net/minecraft/world/entity
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { AABB } from '../../../../../../../net/minecraft/world/phys/AABB.d.ts'
 export class ItemEntityLazyIterationConsumer extends Object implements AbortableIterationConsumer<ItemEntity> {
-    static forConsumer(paramconsumer: (param0: Object | null) => void): (param0: Object | null) => net.minecraft.util.AbortableIterationConsumer.Continuation;
-    constructor(arg0: ItemEntity, arg1: AABB, arg2: (param0: ItemEntity) => kotlin.Boolean)
+    static forConsumer(paramconsumer: (param0: Object | null) => void): (param0: Object | null) => AbortableIterationConsumer$Continuation;
+    constructor(arg0: ItemEntity, arg1: AABB, arg2: (param0: ItemEntity) => boolean)
     // private adjustedStackCount: number;
     // private box: AABB;
     readonly mergeEntities: ItemEntity[];
-    // private predicate: (param0: ItemEntity) => kotlin.Boolean;
+    // private predicate: (param0: ItemEntity) => boolean;
     // private searchingEntity: ItemEntity;
     // private stack: ItemStack;
     accept(arg0: ItemEntity): AbortableIterationConsumer$Continuation;

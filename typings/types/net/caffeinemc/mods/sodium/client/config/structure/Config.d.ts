@@ -8,6 +8,7 @@ import type { SearchIndex } from '../../../../../../../net/caffeinemc/mods/sodiu
 import type { SearchQuerySession } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/search/SearchQuerySession.d.ts'
 import type { ModOptions } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/ModOptions.d.ts'
 import type { Option } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Option.d.ts'
+import type { DynamicValue } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/value/DynamicValue.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class Config extends Object implements ConfigState {
     static UPDATE_ON_APPLY: Identifier;
@@ -18,8 +19,8 @@ export class Config extends Object implements ConfigState {
     static onRendererUpdate(): void;
     static onVideoModeReload(): void;
     constructor(arg0: ModOptions[])
-    // private flagHooks: Map<Identifier, E[]>;
-    // private globalRebuildDependents: E[];
+    // private flagHooks: Map<Identifier, FlagHook[]>;
+    // private globalRebuildDependents: DynamicValue<Object>[];
     readonly modOptions: ModOptions[];
     // private options: Map<Identifier, Option>;
     // private pendingStorageHandlers: () => void[];
@@ -36,7 +37,7 @@ export class Config extends Object implements ConfigState {
     flushStorageHandlers(): void;
     getModOptions(): ModOptions[];
     getOption(arg0: Identifier): Option;
-    invalidateDependents(arg0: E[]): void;
+    invalidateDependents(arg0: DynamicValue<Object>[]): void;
     invalidateGlobalRebuildDependents(): void;
     notifyStorageWrite(arg0: () => void): void;
     // private processFlags(arg0: Identifier[]): void;

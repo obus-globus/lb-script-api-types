@@ -7,7 +7,7 @@ export interface FunctionDescriptor extends Object, CallableMemberDescriptor{
     getContainingDeclaration(): DeclarationDescriptor;
     getInitialSignatureDescriptor(): FunctionDescriptor;
     getOriginal(): FunctionDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): FunctionDescriptor[];
     isHiddenForResolutionEverywhereBesideSupercalls(): boolean;
     isHiddenToOvercomeSignatureClash(): boolean;
     isInfix(): boolean;

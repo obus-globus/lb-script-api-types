@@ -9,15 +9,16 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
 import type { OneShot } from '../../../../../../../net/minecraft/world/entity/ai/behavior/OneShot.d.ts'
 import type { BehaviorBuilder } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder.d.ts'
 import type { BehaviorBuilder$Instance } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance.d.ts'
+import type { BehaviorBuilder$Mu } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Mu.d.ts'
 import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/Trigger.d.ts'
 export class BehaviorBuilder$Constant<E extends LivingEntity, A extends Object | number | string | boolean> extends BehaviorBuilder<E, A> {
-    static create(parambuilder: (param0: Object | null) => Object | null): OneShot<Object>;
-    static instance(): BehaviorBuilder$Instance<Object>;
-    static sequence(paramfirst: Trigger<Object>, paramsecond: OneShot<Object>): OneShot<Object>;
-    static triggerIf(parampredicate: (param0: ServerLevel, param1: Object | null) => kotlin.Boolean): OneShot<Object>;
-    static triggerIf(parampredicate: (param0: Object | null) => kotlin.Boolean): OneShot<Object>;
-    static triggerIf(parampredicate: (param0: Object | null) => kotlin.Boolean, parambehavior: OneShot<Object>): OneShot<Object>;
-    static unbox(parambox: App<Object, Object>): BehaviorBuilder<Object, Object>;
+    static create(parambuilder: (param0: BehaviorBuilder$Instance<LivingEntity>) => App<BehaviorBuilder$Mu<LivingEntity>, Trigger<LivingEntity>>): OneShot<LivingEntity>;
+    static instance(): BehaviorBuilder$Instance<LivingEntity>;
+    static sequence(paramfirst: Trigger<Object>, paramsecond: OneShot<Object>): OneShot<LivingEntity>;
+    static triggerIf(parampredicate: (param0: ServerLevel, param1: LivingEntity | null) => boolean): OneShot<LivingEntity>;
+    static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean): OneShot<LivingEntity>;
+    static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean, parambehavior: OneShot<Object>): OneShot<LivingEntity>;
+    static unbox(parambox: App<BehaviorBuilder$Mu<LivingEntity>, Object>): BehaviorBuilder<LivingEntity, Object>;
     private constructor(a: A)
     private constructor(a: A, debugString: () => string)
 }

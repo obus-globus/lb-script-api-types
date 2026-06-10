@@ -8,7 +8,7 @@ import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/wor
 export class RemoveBinomial extends Record implements EnchantmentValueEffect {
     static CODEC: Codec<EnchantmentValueEffect>;
     static CODEC: MapCodec<RemoveBinomial>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(chance: LevelBasedValue)
     // private chance: LevelBasedValue;
     chance(): LevelBasedValue;

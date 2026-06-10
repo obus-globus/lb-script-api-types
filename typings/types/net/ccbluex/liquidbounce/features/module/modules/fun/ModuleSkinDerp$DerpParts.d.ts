@@ -14,7 +14,7 @@ export class ModuleSkinDerp$DerpParts extends Enum<ModuleSkinDerp$DerpParts> imp
     static RIGHT_PANTS: ModuleSkinDerp$DerpParts;
     static RIGHT_SLEEVE: ModuleSkinDerp$DerpParts;
     static getEntries(): ModuleSkinDerp$DerpParts[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSkinDerp$DerpParts;

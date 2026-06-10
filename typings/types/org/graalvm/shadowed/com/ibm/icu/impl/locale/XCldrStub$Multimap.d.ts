@@ -15,8 +15,8 @@ export class XCldrStub$Multimap<K extends Object | number | string | boolean, V 
     keySet(): K[];
     put(key: K, value: V): void;
     putAll(key: K, values: V[]): XCldrStub$Multimap<K, V>;
-    putAll(key: K, values: E[]): void;
-    putAll(keys: E[], value: V): void;
+    putAll(key: K, values: V[]): void;
+    putAll(keys: K[], value: V): void;
     putAll(source: XCldrStub$Multimap<K, V>): void;
     size(): number;
     values(): V[];

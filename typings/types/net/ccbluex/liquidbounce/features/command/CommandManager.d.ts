@@ -20,7 +20,7 @@ export class CommandManager extends Object {
     addCommand(command: Command): void;
     autoComplete(origCmd: string, start: number): CompletableFuture<Suggestions>;
     contains(element: Command): boolean;
-    containsAll(elements: E[]): boolean;
+    containsAll(elements: Command[]): boolean;
     /**
      * Executes a command.
      *

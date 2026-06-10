@@ -49,6 +49,7 @@ import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldCloc
 import type { DamageSource } from '../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 import type { DamageSources } from '../../../../net/minecraft/world/damagesource/DamageSources.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { EnderDragonPart } from '../../../../net/minecraft/world/entity/boss/enderdragon/EnderDragonPart.d.ts'
 import type { Player } from '../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { PotionBrewing } from '../../../../net/minecraft/world/item/alchemy/PotionBrewing.d.ts'
 import type { FireworkExplosion } from '../../../../net/minecraft/world/item/component/FireworkExplosion.d.ts'
@@ -104,7 +105,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     static NBT_ATTACHMENT_KEY: string;
     static NETHER: ResourceKey<Level>;
     static OVERWORLD: ResourceKey<Level>;
-    static RESOURCE_KEY_CODEC: Codec<Object>;
+    static RESOURCE_KEY_CODEC: Codec<ResourceKey<Level>>;
     static SHORT_PARTICLE_CLIP_RANGE: number;
     static create(paramminY: number, paramheight: number): LevelHeightAccessor;
     static isInSpawnableBounds(parampos: BlockPos): boolean;
@@ -169,7 +170,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     dimension(): ResourceKey<Level>;
     dimensionType(): DimensionType;
     dimensionTypeRegistration(): Holder<DimensionType>;
-    dragonParts(): E[];
+    dragonParts(): EnderDragonPart[];
     environmentAttributes(): EnvironmentAttributeSystem;
     explode(source: Entity, x: number, y: number, z: number, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
     explode(source: Entity, x: number, y: number, z: number, r: number, blockInteraction: Level$ExplosionInteraction): void;
@@ -194,7 +195,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
-    fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
+    fabric_updateSyncTarget<T extends Object | number | string | boolean>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<Object>, arg1: AttachmentTargetInfo<Object>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fillReportDetails(report: CrashReport): CrashReportCategory;
@@ -216,7 +217,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getAttachedOrThrow<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     getBiomeManager(): BiomeManager;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockRandomPos(xo: number, yo: number, zo: number, yMask: number): BlockPos;
     getBlockState(arg0: BlockPos): BlockState;
     getChunk(arg0: number, arg1: number): LevelChunk;
@@ -231,10 +232,10 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getDifficulty(): Difficulty;
     getEntities(): LevelEntityGetter<Entity>;
     getEntities(except: Entity, bb: AABB): Entity[];
-    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[]): void;
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean, output: T[], maxResults: number): void;
+    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean): T[];
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean, output: T[]): void;
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean, output: T[], maxResults: number): void;
     getEntity(uuid: UUID): Entity;
     getEntity(id: number): Entity;
     getEntityInAnyDimension(uuid: UUID): Entity;
@@ -273,12 +274,12 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     guardEntityTick<T extends Entity>(tick: (param0: T) => void, entity: T): void;
     hasAttached(arg0: AttachmentType<Object>): boolean;
     hasChunk(chunkX: number, chunkZ: number): boolean;
-    hasEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): boolean;
+    hasEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean): boolean;
     isBrightOutside(): boolean;
     isClientSide(): boolean;
     isDarkOutside(): boolean;
     isDebug(): boolean;
-    isFluidAtPosition(pos: BlockPos, predicate: (param0: FluidState) => kotlin.Boolean): boolean;
+    isFluidAtPosition(pos: BlockPos, predicate: (param0: FluidState) => boolean): boolean;
     isInValidBounds(pos: BlockPos): boolean;
     isInWorldBounds(pos: BlockPos): boolean;
     isInsideBuildHeight(blockY: number): boolean;
@@ -290,7 +291,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     isOutsideBuildHeight(pos: BlockPos): boolean;
     isRaining(): boolean;
     isRainingAt(pos: BlockPos): boolean;
-    isStateAtPosition(pos: BlockPos, predicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    isStateAtPosition(pos: BlockPos, predicate: (param0: BlockState) => boolean): boolean;
     isThundering(): boolean;
     levelEvent(type: number, pos: BlockPos, data: number): void;
     lithium$getData(): LithiumData$Data;
@@ -299,7 +300,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     loadedAndEntityCanStandOn(pos: BlockPos, entity: Entity): boolean;
     loadedAndEntityCanStandOnFace(pos: BlockPos, entity: Entity, faceDirection: Direction): boolean;
     mayInteract(entity: Entity, pos: BlockPos): boolean;
-    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => unknown): A;
+    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
     neighborChanged(pos: BlockPos, changedBlock: Block, orientation: Orientation): void;
     neighborChanged(state: BlockState, pos: BlockPos, changedBlock: Block, orientation: Orientation, movedByPiston: boolean): void;
     neighborShapeChanged(direction: Direction, pos: BlockPos, neighborPos: BlockPos, neighborState: BlockState, updateFlags: number, updateLimit: number): void;
@@ -309,7 +310,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     noCollision(entity: Entity, aabb: AABB, alwaysCollideWithFluids: boolean): boolean;
     noCollision(aabb: AABB): boolean;
     noSave(): boolean;
-    onAttachedSet(arg0: AttachmentType<A>): Event<(param0: A, param1: Object | null) => void>;
+    onAttachedSet<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;
     onAttachedSet(arg0: AttachmentType<Object>): Event<Object>;
     onBlockEntityAdded(blockEntity: BlockEntity): void;
     palettedContainerFactory(): PalettedContainerFactory;

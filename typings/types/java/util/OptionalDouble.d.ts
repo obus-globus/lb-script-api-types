@@ -4,6 +4,7 @@ import type { DoubleSupplier } from '../../java/util/function/DoubleSupplier.d.t
 import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { DoubleStream } from '../../java/util/stream/DoubleStream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Throwable } from '../../java/lang/Throwable.d.ts'
 export class OptionalDouble extends Object {
     static empty(): OptionalDouble;
     static of(paramarg0: number): OptionalDouble;
@@ -19,9 +20,9 @@ export class OptionalDouble extends Object {
     isEmpty(): boolean;
     isPresent(): boolean;
     orElse(arg0: number): number;
-    orElseGet(arg0: () => kotlin.Double): number;
+    orElseGet(arg0: () => number): number;
     orElseThrow(): number;
-    orElseThrow(arg0: () => X): number;
+    orElseThrow<X extends Throwable>(arg0: () => X): number;
     stream(): DoubleStream;
     toString(): string;
 }

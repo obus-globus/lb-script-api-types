@@ -1,6 +1,7 @@
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
+import type { GameProvider$BuiltinMod } from '../../../../../net/fabricmc/loader/impl/game/GameProvider$BuiltinMod.d.ts'
 import type { GameProvider$BuiltinTransform } from '../../../../../net/fabricmc/loader/impl/game/GameProvider$BuiltinTransform.d.ts'
 import type { GameTransformer } from '../../../../../net/fabricmc/loader/impl/game/patch/GameTransformer.d.ts'
 import type { FabricLauncher } from '../../../../../net/fabricmc/loader/impl/launch/FabricLauncher.d.ts'
@@ -9,7 +10,7 @@ export interface GameProvider extends Object{
     canOpenErrorGui(): boolean;
     displayCrash(arg0: Throwable, arg1: string): boolean;
     getArguments(): Arguments;
-    getBuiltinMods(): E[];
+    getBuiltinMods(): GameProvider$BuiltinMod[];
     getBuiltinTransforms(arg0: string): GameProvider$BuiltinTransform[];
     getDefaultModDistributionNamespace(arg0: string): string;
     getEntrypoint(): string;

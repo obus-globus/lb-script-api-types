@@ -11,9 +11,9 @@ export class NativeLibrary extends Object implements Closeable {
     static addSearchPath(paramarg0: string, paramarg1: string): void;
     static getInstance(paramarg0: string): NativeLibrary;
     static getInstance(paramarg0: string, paramarg1: ClassLoader): NativeLibrary;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: Object | null }): NativeLibrary;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: Object }): NativeLibrary;
     static getProcess(): NativeLibrary;
-    static getProcess(paramarg0: { [key: string]: Object | null }): NativeLibrary;
+    static getProcess(paramarg0: { [key: string]: Object }): NativeLibrary;
     private constructor(arg0: string, arg1: string, arg2: number, arg3: { [key: string]: Object | null })
     // private callFlags: number;
     // private cleanable: Cleaner$Cleanable;

@@ -20,6 +20,7 @@ import type { NameResolver } from '../../../../kotlin/reflect/jvm/internal/impl/
 import type { TypeTable } from '../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/TypeTable.d.ts'
 import type { ClassId } from '../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
 import type { FqName } from '../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
+import type { MessageLite } from '../../../../kotlin/reflect/jvm/internal/impl/protobuf/MessageLite.d.ts'
 export class UtilKt extends Object {
     static asReflectCallable(paramarg0: Object): ReflectKCallable<Object>;
     static asReflectFunction(paramarg0: Object): ReflectKFunction;
@@ -27,7 +28,7 @@ export class UtilKt extends Object {
     static computeAnnotations(paramarg0: Annotated): Annotation[];
     static createArrayType(paramarg0: Class<Object>): Class<Object>;
     static defaultPrimitiveValue(paramarg0: Type): Object;
-    static deserializeToDescriptor(paramarg0: Class<Object>, paramarg1: Object | null, paramarg2: NameResolver, paramarg3: TypeTable, paramarg4: BinaryVersion, paramarg5: (param0: Object | null, param1: Object | null) => Object | null): Object | null;
+    static deserializeToDescriptor(paramarg0: Class<Object>, paramarg1: MessageLite | null, paramarg2: NameResolver, paramarg3: TypeTable, paramarg4: BinaryVersion, paramarg5: (param0: Object, param1: Object) => CallableDescriptor | null): CallableDescriptor | null;
     static getDeclaredFieldOrNull(paramarg0: Class<Object>, paramarg1: string): Field;
     static getDeclaredMethodOrNull(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Method;
     static getInstanceReceiverParameter(paramarg0: CallableDescriptor): ReceiverParameterDescriptor;
@@ -37,5 +38,5 @@ export class UtilKt extends Object {
     static loadClass(paramarg0: ClassLoader, paramarg1: ClassId, paramarg2: number): Class<Object>;
     static toJavaClass(paramarg0: ClassDescriptor): Class<Object>;
     static toKVisibility(paramarg0: DescriptorVisibility): KVisibility;
-    static unwrapRepeatableAnnotations(paramarg0: (Object | null)[]): Annotation[];
+    static unwrapRepeatableAnnotations(paramarg0: Annotation[]): Annotation[];
 }

@@ -62,9 +62,9 @@ export class BuiltInLootTables extends Object {
     static SHEAR_MOOSHROOM: ResourceKey<LootTable>;
     static SHEAR_RED_MOOSHROOM: ResourceKey<LootTable>;
     static SHEAR_SHEEP: ResourceKey<LootTable>;
-    static SHEAR_SHEEP_BY_DYE: { [key in DyeColor]: Object | null };
+    static SHEAR_SHEEP_BY_DYE: { [key in DyeColor]: ResourceKey<LootTable> };
     static SHEAR_SNOW_GOLEM: ResourceKey<LootTable>;
-    static SHEEP_BY_DYE: { [key in DyeColor]: Object | null };
+    static SHEEP_BY_DYE: { [key in DyeColor]: ResourceKey<LootTable> };
     static SHEPHERD_GIFT: ResourceKey<LootTable>;
     static SHIPWRECK_MAP: ResourceKey<LootTable>;
     static SHIPWRECK_SUPPLY: ResourceKey<LootTable>;
@@ -122,6 +122,6 @@ export class BuiltInLootTables extends Object {
     static VILLAGE_WEAPONSMITH: ResourceKey<LootTable>;
     static WEAPONSMITH_GIFT: ResourceKey<LootTable>;
     static WOODLAND_MANSION: ResourceKey<LootTable>;
-    static all(): (Object | null)[];
+    static all(): ResourceKey<LootTable>[];
     constructor()
 }

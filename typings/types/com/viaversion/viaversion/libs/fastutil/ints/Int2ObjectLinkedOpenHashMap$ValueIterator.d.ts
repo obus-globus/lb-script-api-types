@@ -4,10 +4,10 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Int2ObjectLinkedOpenHashMap$ValueIterator extends Int2ObjectLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<V> {
     constructor(null_: Int2ObjectLinkedOpenHashMap$ValueIterator)
-    acceptOnIndex(arg0: (param0: V) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: V) => void, arg1: number): void;
+    add<V extends Object | number | string | boolean>(arg0: V): void;
     next<V extends Object | number | string | boolean>(): V;
     previous<V extends Object | number | string | boolean>(): V;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<V extends Object | number | string | boolean>(arg0: V): void;
 }

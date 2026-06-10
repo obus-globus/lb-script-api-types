@@ -19,12 +19,12 @@ export class Grammar<T extends Object | number | string | boolean> extends Recor
     // private top: NamedRule<StringReader, T>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    mapResult(mapper: (param0: T) => S): CommandArgumentParser<S>;
+    mapResult<S extends Object | number | string | boolean>(mapper: (param0: T) => S): CommandArgumentParser<S>;
     parse(state: ParseState<StringReader>): Optional<T>;
     parseForCommands(reader: StringReader): T;
     parseForSuggestions(suggestionsBuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     rules(): Dictionary<StringReader>;
     toString(): string;
     top(): NamedRule<StringReader, T>;
-    withCodec(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
+    withCodec<O extends Object | number | string | boolean>(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
 }

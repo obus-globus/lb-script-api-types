@@ -17,7 +17,7 @@ import type { MinecraftShortcuts } from '../../../../../../../../../net/ccbluex/
  */
 export class CrystalAuraTriggerer extends ValueGroup implements EventListener, MinecraftShortcuts {
     static INSTANCE: CrystalAuraTriggerer;
-    // private canCache: () => kotlin.Boolean;
+    // private canCache: () => boolean;
     // private currentDestroyTask: Future<Object> | null;
     // private currentPlaceTask: Future<Object> | null;
     // private notWhileUsingItem: boolean;

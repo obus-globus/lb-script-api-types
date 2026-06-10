@@ -13,5 +13,5 @@ export abstract class SimpleCriterionTrigger<T extends SimpleCriterionTrigger$Si
     createCriterion(instance: T): Criterion<T>;
     removePlayerListener(player: PlayerAdvancements, listener: CriterionTrigger$Listener<T>): void;
     removePlayerListeners(player: PlayerAdvancements): void;
-    trigger(player: ServerPlayer, matcher: (param0: T) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: T) => boolean): void;
 }

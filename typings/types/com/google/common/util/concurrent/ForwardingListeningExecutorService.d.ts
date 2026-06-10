@@ -10,9 +10,9 @@ export abstract class ForwardingListeningExecutorService extends ForwardingExecu
     constructor()
     awaitTermination(timeout: Duration): boolean;
     delegate(): ListeningExecutorService;
-    invokeAll(tasks: E[], timeout: Duration): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(tasks: E[], timeout: Duration): T;
+    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): T;
     submit(task: () => void): ListenableFuture<Object>;
     submit<T extends Object | number | string | boolean>(task: () => void, result: T): ListenableFuture<T>;
-    submit(task: () => T): ListenableFuture<T>;
+    submit<T extends Object | number | string | boolean>(task: () => T): ListenableFuture<T>;
 }

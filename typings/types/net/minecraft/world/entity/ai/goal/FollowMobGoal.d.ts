@@ -5,7 +5,7 @@ import type { PathNavigation } from '../../../../../../net/minecraft/world/entit
 export class FollowMobGoal extends Goal {
     constructor(mob: Mob, speedModifier: number, stopDistance: number, areaSize: number)
     // private areaSize: number;
-    // private followPredicate: (param0: Mob) => kotlin.Boolean;
+    // private followPredicate: (param0: Mob) => boolean;
     // private followingMob: Mob;
     // private mob: Mob;
     // private navigation: PathNavigation;

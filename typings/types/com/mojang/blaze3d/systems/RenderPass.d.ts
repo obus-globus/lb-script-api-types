@@ -2,6 +2,7 @@ import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer
 import type { GpuBufferSlice } from '../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { GpuDeviceBackend } from '../../../../com/mojang/blaze3d/systems/GpuDeviceBackend.d.ts'
+import type { RenderPass$Draw } from '../../../../com/mojang/blaze3d/systems/RenderPass$Draw.d.ts'
 import type { RenderPassBackend } from '../../../../com/mojang/blaze3d/systems/RenderPassBackend.d.ts'
 import type { GpuSampler } from '../../../../com/mojang/blaze3d/textures/GpuSampler.d.ts'
 import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
@@ -21,7 +22,7 @@ export class RenderPass extends Object implements AutoCloseable, RenderPassInter
     disableScissor(): void;
     draw(firstVertex: number, vertexCount: number): void;
     drawIndexed(baseVertex: number, firstIndex: number, indexCount: number, instanceCount: number): void;
-    drawMultipleIndexed<T extends Object | number | string | boolean>(draws: E[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: E[], uniformArgument: T): void;
+    drawMultipleIndexed<T extends Object | number | string | boolean>(draws: RenderPass$Draw<T>[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: string[], uniformArgument: T): void;
     enableScissor(x: number, y: number, width: number, height: number): void;
     iris$getCustomPass(): CustomPass;
     iris$setCustomPass(arg0: CustomPass): void;

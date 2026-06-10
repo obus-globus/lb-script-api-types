@@ -13,8 +13,8 @@ export class StructuredDataType extends Type<StructuredData<Object>> implements 
     filler(arg0: Protocol<Object, Object, Object, Object>): StructuredDataType$DataFiller;
     key(arg0: number): StructuredDataKey<Object>;
     read(arg0: ByteBuf): StructuredData<Object>;
-    readData(arg0: ByteBuf, arg1: StructuredDataKey<T>, arg2: number): StructuredData<T>;
+    readData<T extends Object | number | string | boolean>(arg0: ByteBuf, arg1: StructuredDataKey<T>, arg2: number): StructuredData<T>;
     write(arg0: Ops, arg1: StructuredData<Object>): void;
     write(arg0: ByteBuf, arg1: StructuredData<Object>): void;
-    // private writeGeneric(arg0: Ops, arg1: StructuredData<V>): void;
+    // private writeGeneric<V extends Object | number | string | boolean>(arg0: Ops, arg1: StructuredData<V>): void;
 }

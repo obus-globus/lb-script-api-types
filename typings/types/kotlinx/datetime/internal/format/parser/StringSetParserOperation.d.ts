@@ -5,7 +5,7 @@ import type { ParseResult } from '../../../../../kotlinx/datetime/internal/forma
 import type { ParserOperation } from '../../../../../kotlinx/datetime/internal/format/parser/ParserOperation.d.ts'
 import type { StringSetParserOperation$TrieNode } from '../../../../../kotlinx/datetime/internal/format/parser/StringSetParserOperation$TrieNode.d.ts'
 export class StringSetParserOperation<Output extends Object | number | string | boolean> extends Object implements ParserOperation<Output> {
-    constructor(strings: E[], setter: AssignableField<Output, string>, whatThisExpects: string)
+    constructor(strings: string[], setter: AssignableField<Output, string>, whatThisExpects: string)
     // private setter: AssignableField<Output, string>;
     // private trie: StringSetParserOperation$TrieNode;
     // private whatThisExpects: string;

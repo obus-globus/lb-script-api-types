@@ -9,6 +9,6 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export class BiomeModification extends Object {
     constructor(arg0: Identifier)
     // private id: Identifier;
-    add(arg0: ModificationPhase, arg1: (param0: BiomeSelectionContext) => kotlin.Boolean, arg2: (param0: BiomeSelectionContext, param1: BiomeModificationContext) => void): BiomeModification;
-    add(arg0: ModificationPhase, arg1: (param0: BiomeSelectionContext) => kotlin.Boolean, arg2: (param0: BiomeModificationContext) => void): BiomeModification;
+    add(arg0: ModificationPhase, arg1: (param0: BiomeSelectionContext) => boolean, arg2: (param0: BiomeSelectionContext, param1: BiomeModificationContext) => void): BiomeModification;
+    add(arg0: ModificationPhase, arg1: (param0: BiomeSelectionContext) => boolean, arg2: (param0: BiomeModificationContext) => void): BiomeModification;
 }

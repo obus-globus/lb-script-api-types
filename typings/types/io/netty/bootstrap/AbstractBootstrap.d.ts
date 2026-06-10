@@ -1,5 +1,6 @@
 import type { AbstractBootstrapConfig } from '../../../io/netty/bootstrap/AbstractBootstrapConfig.d.ts'
 import type { ChannelFactory } from '../../../io/netty/bootstrap/ChannelFactory.d.ts'
+import type { ChannelInitializerExtension } from '../../../io/netty/bootstrap/ChannelInitializerExtension.d.ts'
 import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
 import type { ChannelFactory as ChannelFactory_2 } from '../../../io/netty/channel/ChannelFactory.d.ts'
 import type { ChannelFuture } from '../../../io/netty/channel/ChannelFuture.d.ts'
@@ -40,7 +41,7 @@ export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     config(): AbstractBootstrapConfig<B, C>;
     // private doBind(arg0: SocketAddress): ChannelFuture;
     extensionsClassLoader(arg0: ClassLoader): B;
-    getInitializerExtensions(): E[];
+    getInitializerExtensions(): ChannelInitializerExtension[];
     group(): (Object | null)[];
     group(arg0: (Object | null)[]): B;
     handler(): ChannelHandler;

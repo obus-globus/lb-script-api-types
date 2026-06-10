@@ -6,9 +6,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class CompilableString$CommandParserHelper<T extends Object | number | string | boolean> extends Object implements Function<string, DataResult<T>> {
     static identity(): (param0: Object | null) => Object | null;
     constructor()
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: DataResult<T>) => V): (param0: string) => V;
     apply(contents: string): DataResult<T>;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
+    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => string): (param0: V) => DataResult<T>;
     errorMessage(original: string, exception: CommandSyntaxException): string;
     parse(reader: StringReader): T;
 }

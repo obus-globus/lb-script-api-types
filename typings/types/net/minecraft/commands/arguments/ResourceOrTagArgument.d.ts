@@ -11,15 +11,14 @@ import type { ResourceOrTagArgument$Result } from '../../../../net/minecraft/com
 import type { HolderLookup } from '../../../../net/minecraft/core/HolderLookup.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class ResourceOrTagArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<ResourceOrTagArgument$Result<T>> {
-    static getResourceOrTag(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<Object>): ResourceOrTagArgument$Result<Object>;
-    static resourceOrTag(paramcontext: CommandBuildContext, paramkey: ResourceKey<Object>): ResourceOrTagArgument<Object>;
+    static getResourceOrTag(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>): ResourceOrTagArgument$Result<Object>;
+    static resourceOrTag(paramcontext: CommandBuildContext, paramkey: ResourceKey<(Object | null)[]>): ResourceOrTagArgument<Object>;
     constructor(context: CommandBuildContext, registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): ResourceOrTagArgument$Result<T>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ResourceOrTagArgument$Result<T>;
+    parse(reader: StringReader): ResourceOrTagArgument$Result<T>;
 }

@@ -17,10 +17,10 @@ export class IntRange extends Object implements LootContextUser {
     static upperBound(paramvalue: number): IntRange;
     private constructor(min: Optional<NumberProvider>, max: Optional<NumberProvider>)
     private constructor(min: NumberProvider, max: NumberProvider)
-    // private limiter: (param0: LootContext, param1: number) => kotlin.Int;
+    // private limiter: (param0: LootContext, param1: number) => number;
     // private max: NumberProvider;
     // private min: NumberProvider;
-    // private predicate: (param0: LootContext, param1: number) => kotlin.Boolean;
+    // private predicate: (param0: LootContext, param1: number) => boolean;
     clamp(context: LootContext, value: number): number;
     getReferencedContextParams(): ContextKey<Object>[];
     test(context: LootContext, value: number): boolean;

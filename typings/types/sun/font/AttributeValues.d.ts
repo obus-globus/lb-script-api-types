@@ -15,16 +15,16 @@ export class AttributeValues extends Object implements Cloneable {
     static MASK_ALL: number;
     static extractXRotation(paramarg0: AffineTransform, paramarg1: boolean): AffineTransform;
     static extractYRotation(paramarg0: AffineTransform, paramarg1: boolean): AffineTransform;
-    static fromMap(paramarg0: Map<Object | null, Object | null>): AttributeValues;
-    static fromMap(paramarg0: Map<Object | null, Object | null>, paramarg1: number): AttributeValues;
+    static fromMap(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>): AttributeValues;
+    static fromMap(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>, paramarg1: number): AttributeValues;
     static fromSerializableHashtable(paramarg0: Map<Object, Object>): AttributeValues;
-    static getBaselineTransform(paramarg0: Map<Object | null, Object | null>): AffineTransform;
-    static getCharTransform(paramarg0: Map<Object | null, Object | null>): AffineTransform;
-    static getJustification(paramarg0: Map<Object | null, Object | null>): number;
+    static getBaselineTransform(paramarg0: Map<Object, Object>): AffineTransform;
+    static getCharTransform(paramarg0: Map<Object, Object>): AffineTransform;
+    static getJustification(paramarg0: Map<Object, Object>): number;
     static getMask(paramarg0: EAttribute): number;
     static getMask(paramarg0: (Object | null)[]): number;
-    static getNumericShaping(paramarg0: Map<Object | null, Object | null>): NumericShaper;
-    static getTracking(paramarg0: Map<Object | null, Object | null>): number;
+    static getNumericShaping(paramarg0: Map<Object, Object>): NumericShaper;
+    static getTracking(paramarg0: Map<Object, Object>): number;
     static is16Hashtable(paramarg0: Map<Object, Object>): boolean;
     constructor()
     readonly background: Paint;

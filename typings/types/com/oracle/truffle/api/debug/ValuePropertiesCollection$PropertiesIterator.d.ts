@@ -7,7 +7,7 @@ export class ValuePropertiesCollection$PropertiesIterator extends Object impleme
     // private currentIndex: number;
     // private ignoredName: string;
     // private nextMember: string;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: DebugValue) => void): void;
     hasNext(): boolean;
     next(): DebugValue;
     // private readNext(): string;

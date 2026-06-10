@@ -1,7 +1,8 @@
 import type { TagConverter } from '../../../../../com/viaversion/nbt/conversion/TagConverter.d.ts'
+import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ListTagConverter extends Object implements TagConverter<T[], Object[]> {
+export class ListTagConverter extends Object implements TagConverter<Tag[], Object[]> {
     constructor()
-    convert(arg0: T[]): (Object | null)[];
-    convert(arg0: (Object | null)[]): T[];
+    convert(arg0: Tag[]): (Object | null)[];
+    convert(arg0: (Object | null)[]): Tag[];
 }

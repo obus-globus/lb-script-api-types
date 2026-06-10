@@ -12,9 +12,9 @@ export abstract class ModelZoo extends Object {
     static DJL_REPO_URL: URI;
     static getModelZoo(paramarg0: string): ModelZoo;
     static hasModelZoo(paramarg0: string): boolean;
-    static listModelZoo(): E[];
-    static listModels(): Map<Application, Object | null>;
-    static listModels(paramarg0: Criteria<Object, Object>): Map<Application, Object | null>;
+    static listModelZoo(): ModelZoo[];
+    static listModels(): Map<Application, MRL[]>;
+    static listModels(paramarg0: Criteria<Object, Object>): Map<Application, MRL[]>;
     static loadModel(paramarg0: Criteria<Object, Object>): ZooModel<Object, Object>;
     static registerModelZoo(paramarg0: ZooProvider): void;
     static setModelZooResolver(paramarg0: ModelZooResolver): void;
@@ -24,7 +24,7 @@ export abstract class ModelZoo extends Object {
     addModel(arg0: ModelLoader): void;
     getGroupId(): string;
     getModelLoader(arg0: string): ModelLoader;
-    getModelLoaders(): E[];
+    getModelLoaders(): ModelLoader[];
     getSupportedEngines(): string[];
     listModels(arg0: Repository, arg1: Application): { [key: string]: { [key: string]: Object } };
 }

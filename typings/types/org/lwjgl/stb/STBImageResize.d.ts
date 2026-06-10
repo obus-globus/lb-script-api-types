@@ -87,7 +87,7 @@ export class STBImageResize extends Object {
     static stbir_set_buffer_ptrs(paramarg0: STBIR_RESIZE, paramarg1: ByteBuffer, paramarg2: number, paramarg3: ByteBuffer, paramarg4: number): void;
     static stbir_set_datatypes(paramarg0: STBIR_RESIZE, paramarg1: number, paramarg2: number): void;
     static stbir_set_edgemodes(paramarg0: STBIR_RESIZE, paramarg1: number, paramarg2: number): number;
-    static stbir_set_filter_callbacks(paramarg0: STBIR_RESIZE, paramarg1: (param0: number, param1: number, param2: number) => kotlin.Float, paramarg2: (param0: number, param1: number) => kotlin.Float, paramarg3: (param0: number, param1: number, param2: number) => kotlin.Float, paramarg4: (param0: number, param1: number) => kotlin.Float): number;
+    static stbir_set_filter_callbacks(paramarg0: STBIR_RESIZE, paramarg1: (param0: number, param1: number, param2: number) => number, paramarg2: (param0: number, param1: number) => number, paramarg3: (param0: number, param1: number, param2: number) => number, paramarg4: (param0: number, param1: number) => number): number;
     static stbir_set_filters(paramarg0: STBIR_RESIZE, paramarg1: number, paramarg2: number): number;
     static stbir_set_input_subrect(paramarg0: STBIR_RESIZE, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
     static stbir_set_non_pm_alpha_speed_over_quality(paramarg0: STBIR_RESIZE, paramarg1: boolean): number;

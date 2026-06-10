@@ -12,7 +12,7 @@ export interface Mod extends Object{
     getBadges(): Mod$Badge[];
     getChildHasUpdate(): boolean;
     getContact(arg0: string): ContactInformation;
-    getContributors(): { [key: string]: E[] };
+    getContributors(): { [key: string]: string[] };
     getCredits(): { [key: string]: string[] };
     getDescription(): string;
     getFormattedDescription(): Component;

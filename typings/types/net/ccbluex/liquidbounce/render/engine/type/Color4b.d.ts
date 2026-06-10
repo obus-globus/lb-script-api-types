@@ -103,7 +103,7 @@ export class Color4b extends Record {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:231}
      */
-    toClosestDyeColor(toRgb: (param0: DyeColor) => kotlin.Int): DyeColor;
+    toClosestDyeColor(toRgb: (param0: DyeColor) => number): DyeColor;
     /**
      * @returns the ARGB value in hex string with {@link format}.
      *

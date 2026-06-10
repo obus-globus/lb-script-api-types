@@ -18,7 +18,7 @@ export class ScriptEngineManager extends Object {
     getEngineByMimeType(arg0: string): ScriptEngine;
     getEngineByName(arg0: string): ScriptEngine;
     getEngineFactories(): ScriptEngineFactory[];
-    // private getServiceLoader(arg0: ClassLoader): S[];
+    // private getServiceLoader(arg0: ClassLoader): ScriptEngineFactory[];
     // private initEngines(arg0: ClassLoader): void;
     put(arg0: string, arg1: Object): void;
     registerEngineExtension(arg0: string, arg1: ScriptEngineFactory): void;

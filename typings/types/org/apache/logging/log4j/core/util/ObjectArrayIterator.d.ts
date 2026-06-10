@@ -9,7 +9,7 @@ export class ObjectArrayIterator<E extends Object | number | string | boolean> e
     readonly endIndex: number;
     // private index: number;
     readonly startIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     getArray(): E[];
     getEndIndex(): number;
     getStartIndex(): number;

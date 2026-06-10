@@ -39,7 +39,7 @@ export class DataViewPrototypeBuiltins$DataViewPrototype extends Enum<DataViewPr
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): DataViewPrototypeBuiltins$DataViewPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

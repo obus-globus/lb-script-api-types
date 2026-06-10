@@ -6,5 +6,5 @@ import type { ServerPlayer } from '../../../../net/minecraft/server/level/Server
 export interface ServerEntity$Synchronizer extends Object {
     sendToTrackingPlayers(packet: Packet<ClientGamePacketListener>): void;
     sendToTrackingPlayersAndSelf(packet: Packet<ClientGamePacketListener>): void;
-    sendToTrackingPlayersFiltered(packet: Packet<ClientGamePacketListener>, predicate: (param0: ServerPlayer) => kotlin.Boolean): void;
+    sendToTrackingPlayersFiltered(packet: Packet<ClientGamePacketListener>, predicate: (param0: ServerPlayer) => boolean): void;
 }

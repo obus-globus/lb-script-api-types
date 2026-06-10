@@ -34,8 +34,8 @@ export class IOWorker extends Object implements AutoCloseable, ChunkScanAccess {
     store(pos: ChunkPos, supplier: () => CompoundTag): CompletableFuture<void>;
     store(pos: ChunkPos, value: CompoundTag): CompletableFuture<void>;
     // private storePendingChunk(): void;
-    // private submitTask(task: () => T): CompletableFuture<T>;
-    // private submitThrowingTask(task: () => T): CompletableFuture<T>;
+    // private submitTask<T extends Object | number | string | boolean>(task: () => T): CompletableFuture<T>;
+    // private submitThrowingTask<T extends Object | number | string | boolean>(task: () => T): CompletableFuture<T>;
     synchronize(flush: boolean): CompletableFuture<void>;
     // private tellStorePending(): void;
     // private waitForShutdown(): void;

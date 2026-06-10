@@ -5,10 +5,10 @@ import type { StorageView } from '../../../../../net/fabricmc/fabric/api/transfe
 import type { DataComponentPatch } from '../../../../../net/minecraft/core/component/DataComponentPatch.d.ts'
 import type { Logger } from '../../../../../org/slf4j/Logger.d.ts'
 export class TransferApiImpl extends Object {
-    static EMPTY_STORAGE: StorageView<T>[];
+    static EMPTY_STORAGE: StorageView<Object>[];
     static LOGGER: Logger;
     static version: AtomicLong;
-    static makeListView(paramarg0: (Object | null)[]): (Object | null)[];
+    static makeListView(paramarg0: (Object | null)[]): (Object | null)[][];
     static mergePatches(paramarg0: DataComponentPatch, paramarg1: DataComponentPatch): DataComponentPatch;
     static singletonIterator(paramarg0: Object | null): Iterator<Object>;
     constructor()

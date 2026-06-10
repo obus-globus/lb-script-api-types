@@ -28,7 +28,7 @@ export class FabricMod extends Object implements Mod {
     getChildHasUpdate(): boolean;
     getContact(arg0: string): ContactInformation;
     getContainer(): ModContainer;
-    getContributors(): { [key: string]: E[] };
+    getContributors(): { [key: string]: string[] };
     getCredits(): { [key: string]: string[] };
     getDescription(): string;
     getFormattedDescription(): Component;

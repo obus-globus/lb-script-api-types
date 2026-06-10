@@ -9,6 +9,6 @@ export class ASTTransitionCanonicalizer extends StateTransitionCanonicalizer<Reg
     canMerge(a: TransitionBuilder<RegexAST, Term, ASTTransition>, b: TransitionBuilder<RegexAST, Term, ASTTransition>): boolean;
     createResultArray(size: number): TransitionBuilder<RegexAST, Term, ASTTransition>[];
     createTransitionArray(size: number): ASTTransition[];
-    createTransitionBuilder(transitions: ASTTransition[], targetStateSet: S[], matcherBuilder: (Object | null)[], constraints: number[], operations: number[]): TransitionBuilder<RegexAST, Term, ASTTransition>;
+    createTransitionBuilder(transitions: ASTTransition[], targetStateSet: Term[], matcherBuilder: (Object | null)[], constraints: number[], operations: number[]): TransitionBuilder<RegexAST, Term, ASTTransition>;
     shouldPruneAfterFinalState(): boolean;
 }

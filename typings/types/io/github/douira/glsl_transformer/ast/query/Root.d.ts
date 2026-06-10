@@ -18,7 +18,7 @@ import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Root extends Object {
     static getActiveBuildRoot(): Root;
-    static replaceExpressionsConcurrent(paramarg0: ASTParser, paramarg1: (Object | null)[], paramarg2: string): boolean;
+    static replaceExpressionsConcurrent(paramarg0: ASTParser, paramarg1: Expression[], paramarg2: string): boolean;
     constructor(arg0: NodeIndex<Object>, arg1: IdentifierIndex<Object, Object>, arg2: ExternalDeclarationIndex<Object, Object>)
     // private activity: boolean;
     externalDeclarationIndex: ExternalDeclarationIndex<Object, Object>;
@@ -31,17 +31,17 @@ export class Root extends Object {
     indexBuildSession(arg0: () => void): void;
     indexBuildSession(arg0: (param0: Root) => void): void;
     indexNodes<N extends ASTNode>(arg0: () => N): N;
-    indexSeparateTrees(arg0: (param0: (param0: N) => unknown) => void): void;
-    process(arg0: Stream<N>, arg1: (param0: N) => void): boolean;
+    indexSeparateTrees<N extends ASTNode>(arg0: (param0: (param0: N) => N) => void): void;
+    process<N extends ASTNode>(arg0: Stream<N>, arg1: (param0: N) => void): boolean;
     process(arg0: string, arg1: (param0: Identifier) => void): boolean;
-    processMatches(arg0: ASTParser, arg1: HintedMatcher<N>, arg2: (param0: N) => void): boolean;
-    processMatches(arg0: ASTParser, arg1: Stream<ASTNode>, arg2: Matcher<N>, arg3: (param0: N) => void): boolean;
+    processMatches<N extends ASTNode>(arg0: ASTParser, arg1: HintedMatcher<N>, arg2: (param0: N) => void): boolean;
+    processMatches<N extends ASTNode>(arg0: ASTParser, arg1: Stream<ASTNode>, arg2: Matcher<N>, arg3: (param0: N) => void): boolean;
     registerFastRename(arg0: ASTNode): void;
     registerIdentifierRename(arg0: Identifier): void;
     registerNode(arg0: ASTNode, arg1: boolean): void;
     rename(arg0: string, arg1: string): boolean;
-    replaceExpressionMatches(arg0: ASTParser, arg1: HintedMatcher<N>, arg2: string): boolean;
-    replaceExpressionMatches(arg0: ASTParser, arg1: Stream<ASTNode>, arg2: Matcher<N>, arg3: string): boolean;
+    replaceExpressionMatches<N extends Expression>(arg0: ASTParser, arg1: HintedMatcher<N>, arg2: string): boolean;
+    replaceExpressionMatches<N extends Expression>(arg0: ASTParser, arg1: Stream<ASTNode>, arg2: Matcher<N>, arg3: string): boolean;
     replaceExpressions(arg0: ASTParser, arg1: Stream<Expression>, arg2: string): boolean;
     replaceReferenceExpressions(arg0: ASTParser, arg1: Stream<Identifier>, arg2: string): void;
     replaceReferenceExpressions(arg0: ASTParser, arg1: string, arg2: string): void;

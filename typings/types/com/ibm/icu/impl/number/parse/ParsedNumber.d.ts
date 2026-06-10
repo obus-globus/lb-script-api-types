@@ -4,7 +4,7 @@ import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export class ParsedNumber extends Object {
-    static COMPARATOR: (param0: ParsedNumber) => kotlin.Boolean;
+    static COMPARATOR: (param0: Object) => boolean;
     static FLAG_FAIL: number;
     static FLAG_HAS_DECIMAL_SEPARATOR: number;
     static FLAG_HAS_EXPONENT: number;

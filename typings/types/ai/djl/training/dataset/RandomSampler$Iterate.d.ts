@@ -6,7 +6,7 @@ export class RandomSampler$Iterate extends Object implements Iterator<number> {
     constructor(arg0: RandomAccessDataset)
     // private current: number;
     // private indices: number[];
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
 }

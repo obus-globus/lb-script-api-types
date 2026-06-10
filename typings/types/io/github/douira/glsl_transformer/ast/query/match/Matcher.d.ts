@@ -34,8 +34,8 @@ export class Matcher<N extends ASTNode> extends Object {
     markAnyWildcard(arg0: string, arg1: ASTNode): void;
     markClassWildcard(arg0: string, arg1: ASTNode): void;
     markClassWildcard(arg0: string, arg1: ASTNode, arg2: Class<ASTNode>): void;
-    markClassedPredicateWildcard(arg0: string, arg1: ASTNode, arg2: Class<NN>, arg3: (param0: NN) => kotlin.Boolean): void;
-    markPredicatedWildcard(arg0: string, arg1: ASTNode, arg2: (param0: ASTNode) => kotlin.Boolean): void;
+    markClassedPredicateWildcard<NN extends ASTNode>(arg0: string, arg1: ASTNode, arg2: Class<NN>, arg3: (param0: NN) => boolean): void;
+    markPredicatedWildcard(arg0: string, arg1: ASTNode, arg2: (param0: ASTNode) => boolean): void;
     // private markWildcard(arg0: ASTNode, arg1: Matcher$NodeWildcard): void;
     matches(arg0: N): boolean;
     matchesExtract(arg0: N): boolean;

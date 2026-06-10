@@ -13,12 +13,12 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Block extends Object {
     cast(arg0: DataType): void;
     clear(): void;
-    describeInput(): Pair<K, V>[];
-    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
+    describeInput(): Pair<string, Shape>[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
-    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     freezeParameters(arg0: boolean): void;
-    freezeParameters(arg0: boolean, arg1: (param0: Parameter) => kotlin.Boolean): void;
+    freezeParameters(arg0: boolean, arg1: (param0: Parameter) => boolean): void;
     getChildren(): (Object | null)[];
     getCustomMetadata(): { [key: string]: string };
     getDirectParameters(): (Object | null)[];
@@ -32,6 +32,6 @@ export interface Block extends Object {
     loadParameters(arg0: NDManager, arg1: DataInputStream): void;
     saveParameters(arg0: DataOutputStream): void;
     setInitializer(arg0: Initializer, arg1: Parameter$Type): void;
-    setInitializer(arg0: Initializer, arg1: (param0: Parameter) => kotlin.Boolean): void;
+    setInitializer(arg0: Initializer, arg1: (param0: Parameter) => boolean): void;
     setInitializer(arg0: Initializer, arg1: string): void;
 }

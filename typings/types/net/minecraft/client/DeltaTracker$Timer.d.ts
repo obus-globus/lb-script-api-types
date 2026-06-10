@@ -4,7 +4,7 @@ import type { DeltaTracker } from '../../../net/minecraft/client/DeltaTracker.d.
 export class DeltaTracker$Timer extends Object implements DeltaTracker {
     static ONE: DeltaTracker;
     static ZERO: DeltaTracker;
-    constructor(ticksPerSecond: number, currentMs: number, targetMsptProvider: (param0: number) => kotlin.Float)
+    constructor(ticksPerSecond: number, currentMs: number, targetMsptProvider: (param0: number) => number)
     // private deltaTickResidual: number;
     // private deltaTicks: number;
     // private frozen: boolean;
@@ -14,7 +14,7 @@ export class DeltaTracker$Timer extends Object implements DeltaTracker {
     // private paused: boolean;
     // private pausedDeltaTickResidual: number;
     readonly realtimeDeltaTicks: number;
-    // private targetMsptProvider: (param0: number) => kotlin.Float;
+    // private targetMsptProvider: (param0: number) => number;
     advanceGameTime(currentMs: number): number;
     advanceRealTime(currentMs: number): void;
     getGameTimeDeltaPartialTick(ignoreFrozenGame: boolean): number;

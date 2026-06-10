@@ -9,7 +9,7 @@ export class BeforeLoadLocal$SearchState extends Object {
     // private pendingCheck: boolean;
     // private print: boolean;
     // private varNode: VarInsnNode;
-    check(arg0: InjectionInfo, arg1: AbstractInsnNode[], arg2: E[], arg3: AbstractInsnNode): void;
+    check(arg0: InjectionInfo, arg1: AbstractInsnNode[], arg2: AbstractInsnNode[], arg3: AbstractInsnNode): void;
     isPendingCheck(): boolean;
     register(arg0: VarInsnNode): void;
     setPendingCheck(): void;

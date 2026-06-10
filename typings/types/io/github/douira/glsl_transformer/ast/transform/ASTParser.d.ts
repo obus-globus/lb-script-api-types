@@ -15,6 +15,7 @@ import type { ParseShape } from '../../../../../../io/github/douira/glsl_transfo
 import type { ParserInterface } from '../../../../../../io/github/douira/glsl_transformer/parser/ParserInterface.d.ts'
 import type { TokenFilter } from '../../../../../../io/github/douira/glsl_transformer/token_filter/TokenFilter.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { ParserRuleContext } from '../../../../../../org/antlr/v4/runtime/ParserRuleContext.d.ts'
 export class ASTParser extends Object implements ParserInterface {
     static _getInternalInstance(): ASTParser;
     constructor()
@@ -31,9 +32,9 @@ export class ASTParser extends Object implements ParserInterface {
     parseExternalDeclaration(arg0: Root, arg1: string): ExternalDeclaration;
     parseExternalDeclaration(arg0: RootSupplier, arg1: string): ExternalDeclaration;
     parseExternalDeclarations(arg0: Root, arg1: string[]): ExternalDeclaration[];
-    parseNode<N extends ASTNode>(arg0: Root, arg1: ParseShape<C, N>, arg2: string): N;
-    // private parseNodeCachedUncloned<N extends ASTNode>(arg0: string, arg1: ParseShape<C, N>): N;
-    parseNodeSeparate<N extends ASTNode>(arg0: RootSupplier, arg1: ParseShape<C, N>, arg2: string): N;
+    parseNode<N extends ASTNode, C extends ParserRuleContext>(arg0: Root, arg1: ParseShape<C, N>, arg2: string): N;
+    // private parseNodeCachedUncloned<N extends ASTNode, C extends ParserRuleContext>(arg0: string, arg1: ParseShape<C, N>): N;
+    parseNodeSeparate<N extends ASTNode, C extends ParserRuleContext>(arg0: RootSupplier, arg1: ParseShape<C, N>, arg2: string): N;
     parseStatement(arg0: Root, arg1: string): Statement;
     parseStatement(arg0: RootSupplier, arg1: string): Statement;
     parseStatements(arg0: Root, arg1: string[]): Statement[];

@@ -19,7 +19,7 @@ export class JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat extends En
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

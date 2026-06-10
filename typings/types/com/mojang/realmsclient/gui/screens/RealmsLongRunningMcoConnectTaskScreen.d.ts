@@ -1,7 +1,6 @@
 import type { RealmsJoinInformation } from '../../../../../com/mojang/realmsclient/dto/RealmsJoinInformation.d.ts'
 import type { RealmsLongRunningMcoTaskScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsLongRunningMcoTaskScreen.d.ts'
 import type { LongRunningTask } from '../../../../../com/mojang/realmsclient/util/task/LongRunningTask.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { LinearLayout } from '../../../../../net/minecraft/client/gui/layouts/LinearLayout.d.ts'
@@ -18,7 +17,7 @@ export class RealmsLongRunningMcoConnectTaskScreen extends RealmsLongRunningMcoT
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(lastScreen: Screen, serverAddress: RealmsJoinInformation, task: LongRunningTask)
     // private footer: LinearLayout;

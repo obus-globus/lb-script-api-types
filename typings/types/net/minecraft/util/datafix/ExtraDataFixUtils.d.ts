@@ -11,12 +11,12 @@ export class ExtraDataFixUtils extends Object {
     static blockState(paramid: string, paramproperties: { [key: string]: string }): Dynamic<Object>;
     static cast(paramtype: Type<Object>, paramtyped: Typed<Object>): Typed<Object>;
     static cast(paramtype: Type<Object>, paramvalue: Object, paramops: DynamicOps<Object>): Typed<Object>;
-    static chainAllFilters(paramfixers: Object | null): (param0: Object | null) => Object | null;
+    static chainAllFilters(paramfixers: Object | null): (param0: Typed<Object>) => Typed<Object>;
     static createBlockPos(paramdynamic: Dynamic<Object>, paramx: number, paramy: number, paramz: number): Dynamic<Object>;
     static dyeColorIdToName(paramid: number): string;
     static fixBlockPos(parampos: Dynamic<Object>): Dynamic<Object>;
     static fixInlineBlockPos(paraminput: Dynamic<Object>, paramfieldX: string, paramfieldY: string, paramfieldZ: string, paramnewField: string): Dynamic<Object>;
-    static fixStringField(paramdynamic: Dynamic<Object>, paramfieldName: string, paramfix: (param0: string) => unknown): Dynamic<Object>;
+    static fixStringField(paramdynamic: Dynamic<Object>, paramfieldName: string, paramfix: (param0: string) => Object | null): Dynamic<Object>;
     static patchSubType(paramtype: Type<Object>, paramfind: Type<Object>, paramreplace: Type<Object>): Type<Object>;
     static readAndSet(paramtarget: Typed<Object>, paramoptic: OpticFinder<Object>, paramvalue: Dynamic<Object>): Typed<Object>;
     constructor()

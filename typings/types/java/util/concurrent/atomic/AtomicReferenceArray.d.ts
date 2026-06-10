@@ -7,16 +7,16 @@ export class AtomicReferenceArray<E extends Object | number | string | boolean> 
     constructor(arg0: E[])
     constructor(arg0: number)
     // private array: Object[];
-    accumulateAndGet(arg0: number, arg1: E, arg2: (param0: E, param1: Object | null) => unknown): E;
+    accumulateAndGet(arg0: number, arg1: E, arg2: (param0: E, param1: Object | null) => Object | null): E;
     compareAndExchange(arg0: number, arg1: E, arg2: E): E;
     compareAndExchangeAcquire(arg0: number, arg1: E, arg2: E): E;
     compareAndExchangeRelease(arg0: number, arg1: E, arg2: E): E;
     compareAndSet(arg0: number, arg1: E, arg2: E): boolean;
     get(arg0: number): E;
     getAcquire(arg0: number): E;
-    getAndAccumulate(arg0: number, arg1: E, arg2: (param0: E, param1: Object | null) => unknown): E;
+    getAndAccumulate(arg0: number, arg1: E, arg2: (param0: E, param1: Object | null) => Object | null): E;
     getAndSet(arg0: number, arg1: E): E;
-    getAndUpdate(arg0: number, arg1: (param0: E) => unknown): E;
+    getAndUpdate(arg0: number, arg1: (param0: E) => Object | null): E;
     getOpaque(arg0: number): E;
     getPlain(arg0: number): E;
     lazySet(arg0: number, arg1: E): void;
@@ -27,7 +27,7 @@ export class AtomicReferenceArray<E extends Object | number | string | boolean> 
     setPlain(arg0: number, arg1: E): void;
     setRelease(arg0: number, arg1: E): void;
     toString(): string;
-    updateAndGet(arg0: number, arg1: (param0: E) => unknown): E;
+    updateAndGet(arg0: number, arg1: (param0: E) => Object | null): E;
     weakCompareAndSet(arg0: number, arg1: E, arg2: E): boolean;
     weakCompareAndSetAcquire(arg0: number, arg1: E, arg2: E): boolean;
     weakCompareAndSetPlain(arg0: number, arg1: E, arg2: E): boolean;

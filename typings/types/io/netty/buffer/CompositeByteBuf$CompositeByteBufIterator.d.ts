@@ -6,7 +6,7 @@ export class CompositeByteBuf$CompositeByteBufIterator extends Object implements
     private constructor(null_: CompositeByteBuf$CompositeByteBufIterator)
     // private index: number;
     // private size: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: ByteBuf) => void): void;
     hasNext(): boolean;
     next(): ByteBuf;
     remove(): void;

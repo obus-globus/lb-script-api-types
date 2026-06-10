@@ -7,7 +7,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NamedEntityFix } from '../../../../../net/minecraft/util/datafix/fixes/NamedEntityFix.d.ts'
 export class BlockEntityBlockStateFix extends NamedEntityFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, changesType: boolean)
     fix(entity: Typed<Object>): Typed<Object>;
 }

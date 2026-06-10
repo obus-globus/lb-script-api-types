@@ -57,7 +57,7 @@ export abstract class WebSocketClient extends AbstractWebSocket implements WebSo
     connectBlocking(arg0: number, arg1: TimeUnit): boolean;
     getAttachment<T extends Object | number | string | boolean>(): T;
     getConnection(): WebSocket;
-    getConnections(): E[];
+    getConnections(): WebSocket[];
     getDraft(): Draft;
     getLocalSocketAddress(): InetSocketAddress;
     getLocalSocketAddress(arg0: WebSocket): InetSocketAddress;
@@ -104,7 +104,7 @@ export abstract class WebSocketClient extends AbstractWebSocket implements WebSo
     send(arg0: string): void;
     sendFragmentedFrame(arg0: Opcode, arg1: ByteBuffer, arg2: boolean): void;
     sendFrame(arg0: Framedata): void;
-    sendFrame(arg0: E[]): void;
+    sendFrame(arg0: Framedata[]): void;
     // private sendHandshake(): void;
     sendPing(): void;
     setAttachment<T extends Object | number | string | boolean>(arg0: T): void;

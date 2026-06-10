@@ -9,7 +9,7 @@ export abstract class AbstractSymbolBlock extends AbstractBaseBlock implements S
     static newInstance(paramarg0: NDManager): SymbolBlock;
     constructor()
     constructor(arg0: number)
-    describeOutput(): Pair<K, V>[];
+    describeOutput(): Pair<string, Shape>[];
     getChildren(): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];

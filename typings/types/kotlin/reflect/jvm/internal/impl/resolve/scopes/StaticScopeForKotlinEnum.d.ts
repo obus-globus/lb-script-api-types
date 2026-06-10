@@ -20,7 +20,7 @@ export class StaticScopeForKotlinEnum extends MemberScopeImpl {
     getContributedClassifier(arg0: Name, arg1: LookupLocation): void;
     getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): CallableMemberDescriptor[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];
-    getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
+    getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];
     // private getFunctions(): SimpleFunctionDescriptor[];
     // private getProperties(): PropertyDescriptor[];
 }

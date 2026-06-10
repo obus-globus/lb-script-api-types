@@ -10,7 +10,6 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Enumeration } from '../../../../java/util/Enumeration.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TitlecaseTransliterator extends Transliterator {
     static FORWARD: number;
     static REVERSE: number;
@@ -26,7 +25,7 @@ export class TitlecaseTransliterator extends Transliterator {
     static getInstance(paramarg0: string): Transliterator;
     static registerAlias(paramarg0: string, paramarg1: string): void;
     static registerAny(): void;
-    static registerClass(paramarg0: string, paramarg1: Class<Object>, paramarg2: string): void;
+    static registerClass(paramarg0: string, paramarg1: Class<Transliterator>, paramarg2: string): void;
     static registerFactory(paramarg0: string, paramarg1: Transliterator$Factory): void;
     static registerInstance(paramarg0: Transliterator): void;
     static unregister(paramarg0: string): void;

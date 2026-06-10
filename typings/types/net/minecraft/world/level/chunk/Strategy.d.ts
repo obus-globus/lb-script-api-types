@@ -6,8 +6,8 @@ import type { Palette$Factory } from '../../../../../net/minecraft/world/level/c
 export abstract class Strategy<T extends Object | number | string | boolean> extends Object implements StrategyAccessor {
     static LINEAR_PALETTE_FACTORY: Palette$Factory;
     static SINGLE_VALUE_PALETTE_FACTORY: Palette$Factory;
-    static createForBiomes(paramregistry: T[]): Strategy<Object>;
-    static createForBlockStates(paramregistry: T[]): Strategy<Object>;
+    static createForBiomes(paramregistry: (Object | null)[]): Strategy<Object>;
+    static createForBlockStates(paramregistry: (Object | null)[]): Strategy<Object>;
     private constructor(globalMap: T[], bitsPerAxis: number)
     // private bitsPerAxis: number;
     // private entryCount: number;

@@ -15,7 +15,7 @@ export class Render2DKt extends Object {
     static copyPose(guiGraphicsExtractor: GuiGraphicsExtractor): Matrix3x2f;
     static copyPosePooled(guiGraphicsExtractor: GuiGraphicsExtractor): Matrix3x2f;
     static drawBlitOnCurrentLayer(guiGraphicsExtractor: GuiGraphicsExtractor, textureSetup: TextureSetup, x0: number, y0: number, x1: number, y1: number, u1: number, v1: number, u2: number, v2: number, argb: number, pipeline: RenderPipeline): void;
-    static drawCircle(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, radius: number, innerRadius: number, colorGetter: (param0: number) => kotlin.Int): void;
+    static drawCircle(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, radius: number, innerRadius: number, colorGetter: (param0: number) => number): void;
     static drawCustomElement(guiGraphicsExtractor: GuiGraphicsExtractor, pipeline: RenderPipeline, textureSetup: TextureSetup, scissorArea: ScreenRectangle, bounds: ScreenRectangle, verticesSetupHandler: VerticesSetupHandler): void;
     static drawGlyphOnCurrentLayer(guiGraphicsExtractor: GuiGraphicsExtractor, textureSetup: TextureSetup, x0: number, y0: number, x1: number, y1: number, u1: number, v1: number, u2: number, v2: number, argb: number, pipeline: RenderPipeline): void;
     /**
@@ -50,6 +50,6 @@ export class Render2DKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:89}
      */
     static getBoundsXYWH(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, w: number, h: number): ScreenRectangle;
-    static withPush(scissorStack: GuiGraphicsExtractor$ScissorStack, rect: ScreenRectangle, block: (param0: Object | null) => void): void;
-    static withPush(matrix3x2fStack: Matrix3x2fStack, block: (param0: Object | null) => void): void;
+    static withPush(scissorStack: GuiGraphicsExtractor$ScissorStack, rect: ScreenRectangle, block: (param0: Object) => void): void;
+    static withPush(matrix3x2fStack: Matrix3x2fStack, block: (param0: Object) => void): void;
 }

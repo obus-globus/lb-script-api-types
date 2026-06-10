@@ -13,23 +13,23 @@ import type { CommonDialogData } from '../../../../net/minecraft/server/dialog/C
 import type { Dialog } from '../../../../net/minecraft/server/dialog/Dialog.d.ts'
 import type { Action } from '../../../../net/minecraft/server/dialog/action/Action.d.ts'
 export class DialogListDialog extends Record implements ButtonListDialog {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Dialog>>;
     static CONTEXT_FREE_STREAM_CODEC: StreamCodec<ByteBuf, Dialog>;
     static DIRECT_CODEC: Codec<Dialog>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<Holder<Dialog>[]>;
     static MAP_CODEC: MapCodec<DialogListDialog>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Dialog>>;
     static WIDTH_CODEC: Codec<number>;
     // private buttonWidth: number;
     // private columns: number;
     // private common: CommonDialogData;
-    // private dialogs: Holder<T>[];
+    // private dialogs: Holder<Dialog>[];
     // private exitAction: Optional<ActionButton>;
     buttonWidth(): number;
     codec(): MapCodec<DialogListDialog>;
     columns(): number;
     common(): CommonDialogData;
-    dialogs(): Holder<T>[];
+    dialogs(): Holder<Dialog>[];
     equals(o: Object | null): boolean;
     exitAction(): Optional<ActionButton>;
     hashCode(): number;

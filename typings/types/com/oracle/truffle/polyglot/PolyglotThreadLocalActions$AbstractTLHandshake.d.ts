@@ -22,7 +22,7 @@ export abstract class PolyglotThreadLocalActions$AbstractTLHandshake extends Obj
     // private rawFuture: Future<void>;
     accept(location: Node): void;
     acceptImpl(access: PolyglotThreadLocalActions$PolyglotTLAccess): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: Node) => void): (param0: Node) => void;
     isEnabledForThread(currentThread: Thread): boolean;
     notifyBlocked(location: Node, blocked: boolean): void;
     notifyDone(): void;

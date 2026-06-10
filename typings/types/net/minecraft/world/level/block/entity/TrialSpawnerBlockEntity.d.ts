@@ -22,9 +22,9 @@ import type { ValueOutput } from '../../../../../../net/minecraft/world/level/st
 export class TrialSpawnerBlockEntity extends BlockEntity implements Spawner, TrialSpawner$StateAccessor {
     static NBT_ATTACHMENT_KEY: string;
     static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
-    static appendHoverText(paramdata: TypedEntityData<Object>, paramconsumer: (param0: Component) => void, paramnextSpawnDataTagKey: string): void;
+    static appendHoverText(paramdata: TypedEntityData<BlockEntityType<Object>>, paramconsumer: (param0: Component) => void, paramnextSpawnDataTagKey: string): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
-    static getSpawnEntityDisplayName(paramdata: TypedEntityData<Object>, paramnextSpawnDataTagKey: string): Component;
+    static getSpawnEntityDisplayName(paramdata: TypedEntityData<BlockEntityType<Object>>, paramnextSpawnDataTagKey: string): Component;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
     constructor(worldPosition: BlockPos, blockState: BlockState)

@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -13,7 +14,7 @@ export class ClientboundRespawnPacket extends Record implements Packet<ClientGam
     static KEEP_ATTRIBUTE_MODIFIERS: number;
     static KEEP_ENTITY_DATA: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundRespawnPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     // private commonPlayerSpawnInfo: CommonPlayerSpawnInfo;
     // private dataToKeep: number;
     commonPlayerSpawnInfo(): CommonPlayerSpawnInfo;

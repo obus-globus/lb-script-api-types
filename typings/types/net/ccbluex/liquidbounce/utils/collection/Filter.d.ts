@@ -8,7 +8,7 @@ export class Filter extends Enum<Filter> implements Tagged {
     static Companion: Tagged$Companion;
     static WHITELIST: Filter;
     static getEntries(): Filter[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Filter;
@@ -20,6 +20,6 @@ export class Filter extends Enum<Filter> implements Tagged {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt:36}
      */
-    invoke<T extends Object | number | string | boolean>(item: T, collection: E[]): boolean;
+    invoke<T extends Object | number | string | boolean>(item: T, collection: T[]): boolean;
     name(): "WHITELIST" | "BLACKLIST";
 }

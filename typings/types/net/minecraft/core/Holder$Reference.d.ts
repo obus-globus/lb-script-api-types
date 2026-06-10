@@ -26,13 +26,13 @@ export class Holder$Reference<T extends Object | number | string | boolean> exte
     areComponentsBound(): boolean;
     bindComponents(components: TypedDataComponent<Object>[]): void;
     bindKey(key: ResourceKey<T>): void;
-    bindTags(tags: E[]): void;
+    bindTags(tags: TagKey<T>[]): void;
     bindValue(value: T): void;
     // private boundTags(): TagKey<T>[];
     canSerializeIn(context: HolderOwner<T>): boolean;
     components(): TypedDataComponent<Object>[];
     getRegisteredName(): string;
-    is(predicate: (param0: ResourceKey<T>) => kotlin.Boolean): boolean;
+    is(predicate: (param0: ResourceKey<T>) => boolean): boolean;
     is(holder: Holder<T>): boolean;
     is(key: Identifier): boolean;
     is(key: ResourceKey<T>): boolean;

@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Object2ObjectLinkedOpenHashMap$KeyIterator extends Object2ObjectLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<K> {
     constructor(null_: Object2ObjectLinkedOpenHashMap$KeyIterator)
     constructor(null_: Object2ObjectLinkedOpenHashMap$KeyIterator)
-    acceptOnIndex(arg0: (param0: K) => void, arg1: number): void;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: K) => void, arg1: number): void;
     add<K extends Object | number | string | boolean>(arg0: K): void;
     next<K extends Object | number | string | boolean>(): K;
     previous<K extends Object | number | string | boolean>(): K;

@@ -8,23 +8,23 @@ import type { MetricSampler$MetricSamplerBuilder } from '../../../../../net/mine
 import type { MetricSampler$SamplerResult } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$SamplerResult.d.ts'
 import type { MetricSampler$ThresholdTest } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$ThresholdTest.d.ts'
 export class MetricSampler extends Object {
-    static builder(parammetricName: string, paramcategory: MetricCategory, paramsampler: (param0: Object | null) => kotlin.Double, paramcontext: Object | null): MetricSampler$MetricSamplerBuilder<Object>;
-    static create(parammetricName: string, paramcategory: MetricCategory, paramcontext: Object | null, paramsampler: (param0: Object | null) => kotlin.Double): MetricSampler;
-    static create(paramname: string, paramcategory: MetricCategory, paramsampler: () => kotlin.Double): MetricSampler;
-    constructor(name: string, category: MetricCategory, sampler: () => kotlin.Double, beforeTick: () => void, thresholdTest: MetricSampler$ThresholdTest)
+    static builder(parammetricName: string, paramcategory: MetricCategory, paramsampler: (param0: Object | null) => number, paramcontext: Object | null): MetricSampler$MetricSamplerBuilder<Object>;
+    static create(parammetricName: string, paramcategory: MetricCategory, paramcontext: Object | null, paramsampler: (param0: Object | null) => number): MetricSampler;
+    static create(paramname: string, paramcategory: MetricCategory, paramsampler: () => number): MetricSampler;
+    constructor(name: string, category: MetricCategory, sampler: () => number, beforeTick: () => void, thresholdTest: MetricSampler$ThresholdTest)
     // private beforeTick: () => void;
     readonly category: MetricCategory;
     // private currentValue: number;
     // private isRunning: boolean;
     readonly name: string;
-    // private sampler: () => kotlin.Double;
+    // private sampler: () => number;
     // private thresholdTest: MetricSampler$ThresholdTest;
     // private ticks: ByteBuf;
     // private values: ByteBuf;
     equals(o: Object | null): boolean;
     getCategory(): MetricCategory;
     getName(): string;
-    getSampler(): () => kotlin.Double;
+    getSampler(): () => number;
     hashCode(): number;
     onEndTick(currentTick: number): void;
     onFinished(): void;

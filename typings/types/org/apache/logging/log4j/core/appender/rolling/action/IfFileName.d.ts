@@ -8,7 +8,7 @@ export class IfFileName extends Object implements PathCondition {
     static createNameCondition(paramglob: string, paramregex: string, paramnestedConditions: (Object | null)[]): IfFileName;
     private constructor(glob: string, regex: string, nestedConditions: PathCondition[])
     readonly nestedConditions: PathCondition[];
-    // private pathMatcher: (param0: Path[][]) => kotlin.Boolean;
+    // private pathMatcher: (param0: Path[][]) => boolean;
     readonly syntaxAndPattern: string;
     accept(basePath: Path[], relativePath: Path[], attrs: BasicFileAttributes): boolean;
     beforeFileTreeWalk(): void;

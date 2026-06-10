@@ -7,5 +7,5 @@ export class BisectKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Bisect.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Bisect.kt:24}
      */
-    static findFunctionMinimumByBisect(from: number, to: number, minDelta: number, function_: (param0: number) => kotlin.Double): DoubleDoublePair;
+    static findFunctionMinimumByBisect(from: number, to: number, minDelta: number, function_: (param0: number) => number): DoubleDoublePair;
 }

@@ -7,5 +7,5 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CollectionTypeAdapterFactory extends Object implements TypeAdapterFactory {
     constructor(arg0: ConstructorConstructor)
     // private constructorConstructor: ConstructorConstructor;
-    create(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
 }

@@ -18,7 +18,7 @@ export class WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype extends
     private constructor(length: number)
     // private functionLength: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

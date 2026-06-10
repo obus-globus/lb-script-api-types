@@ -4,8 +4,8 @@ import type { Registry } from '../../../../../../com/viaversion/viaversion/libs/
 import type { RegistryEntry } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/RegistryEntry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Holder<T extends Object | number | string | boolean> extends Object {
-    static fileCodec(paramarg0: Registry, paramarg1: Codec<Object>): Codec<Object>;
-    static fixedCodec(paramarg0: Registry): Codec<Object>;
+    static fileCodec(paramarg0: Registry, paramarg1: Codec<Object>): Codec<Holder<Object>>;
+    static fixedCodec(paramarg0: Registry): Codec<Holder<Object>>;
     constructor(arg0: T)
     constructor(arg0: Either<RegistryEntry, T>)
     constructor(arg0: RegistryEntry)

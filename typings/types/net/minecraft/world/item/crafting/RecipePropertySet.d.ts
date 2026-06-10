@@ -15,7 +15,7 @@ export class RecipePropertySet extends Object {
     static SMITHING_TEMPLATE: ResourceKey<RecipePropertySet>;
     static SMOKER_INPUT: ResourceKey<RecipePropertySet>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipePropertySet>;
-    static TYPE_KEY: ResourceKey<Object>;
+    static TYPE_KEY: ResourceKey<RecipePropertySet[]>;
     private constructor(items: Holder<Item>[])
     // private items: Holder<Item>[];
     test(itemStack: ItemStack): boolean;

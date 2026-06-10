@@ -25,11 +25,11 @@ export class Subject extends Object implements Serializable {
     equals(arg0: Object | null): boolean;
     // private getCredHashCode(arg0: Object): number;
     getPrincipals(): Principal[];
-    getPrincipals(arg0: Class<T>): T[];
+    getPrincipals<T extends Principal>(arg0: Class<T>): T[];
     getPrivateCredentials(): Object[];
-    getPrivateCredentials(arg0: Class<T>): T[];
+    getPrivateCredentials<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
     getPublicCredentials(): Object[];
-    getPublicCredentials(arg0: Class<T>): T[];
+    getPublicCredentials<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
     hashCode(): number;
     isReadOnly(): boolean;
     // private readObject(arg0: ObjectInputStream): void;

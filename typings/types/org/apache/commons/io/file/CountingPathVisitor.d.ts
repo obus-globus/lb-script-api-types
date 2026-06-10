@@ -12,12 +12,12 @@ export class CountingPathVisitor extends SimplePathVisitor {
     static withBigIntegerCounters(): CountingPathVisitor;
     static withLongCounters(): CountingPathVisitor;
     constructor(arg0: Counters$PathCounters)
-    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult)
-    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, arg3: (param0: Path[], param1: IOException) => FileVisitResult)
+    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult)
+    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg3: (param0: Path[], param1: IOException) => FileVisitResult)
     constructor(arg0: CountingPathVisitor$AbstractBuilder<Object, Object>)
-    // private directoryFilter: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult;
-    // private directoryPostTransformer: (param0: Path[]) => unknown;
-    // private fileFilter: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult;
+    // private directoryFilter: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
+    // private directoryPostTransformer: (param0: Path[]) => Object | null;
+    // private fileFilter: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
     readonly pathCounters: Counters$PathCounters;
     accept(arg0: Path[], arg1: BasicFileAttributes): boolean;
     equals(arg0: Object | null): boolean;

@@ -8,6 +8,6 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TargetBlockTrigger extends SimpleCriterionTrigger<TargetBlockTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<TargetBlockTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: TargetBlockTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: TargetBlockTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, projectile: Entity, hitPosition: Vec3, signalStrength: number): void;
 }

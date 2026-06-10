@@ -14,7 +14,7 @@ import type { RegionStorageInfo } from '../../../../net/minecraft/world/level/ch
 import type { SimpleRegionStorage } from '../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 import type { LevelStorageSource$LevelStorageAccess } from '../../../../net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess.d.ts'
 export class RegionStorageUpgrader extends Object {
-    constructor(dataFixer: DataFixer, dataFixType: DataFixTypes, type: string, folderName: string, defaultVersion: number, recreateRegionFiles: boolean, upgradeProgress: UpgradeProgress, startIndex: number, dataFixContextTag: CompoundTag, tagModifiers: Int2ObjectMap<(param0: ChunkPos, param1: CompoundTag) => kotlin.Boolean>)
+    constructor(dataFixer: DataFixer, dataFixType: DataFixTypes, type: string, folderName: string, defaultVersion: number, recreateRegionFiles: boolean, upgradeProgress: UpgradeProgress, startIndex: number, dataFixContextTag: CompoundTag, tagModifiers: Int2ObjectMap<(param0: ChunkPos, param1: CompoundTag) => boolean>)
     // private dataFixContextTag: CompoundTag;
     // private dataFixType: DataFixTypes;
     // private dataFixer: DataFixer;
@@ -26,7 +26,7 @@ export class RegionStorageUpgrader extends Object {
     // private recreateRegionFiles: boolean;
     // private startIndex: number;
     // private storage: SimpleRegionStorage;
-    // private tagModifiers: Int2ObjectMap<(param0: ChunkPos, param1: CompoundTag) => kotlin.Boolean>;
+    // private tagModifiers: Int2ObjectMap<(param0: ChunkPos, param1: CompoundTag) => boolean>;
     // private type: string;
     // private upgradeProgress: UpgradeProgress;
     createStorage(info: RegionStorageInfo, regionFolder: Path[]): SimpleRegionStorage;

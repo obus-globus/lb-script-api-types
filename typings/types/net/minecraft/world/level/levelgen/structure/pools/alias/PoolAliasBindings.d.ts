@@ -5,7 +5,7 @@ import type { BootstrapContext } from '../../../../../../../../net/minecraft/dat
 import type { StructureTemplatePool } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool.d.ts'
 import type { PoolAliasBinding } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasBinding.d.ts'
 export class PoolAliasBindings extends Object {
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<PoolAliasBinding>[]): MapCodec<PoolAliasBinding>;
     static registerTargetsAsPools(paramcontext: BootstrapContext<StructureTemplatePool>, paramemptyPool: Holder<StructureTemplatePool>, paramaliasBindings: PoolAliasBinding[]): void;
     constructor()
 }

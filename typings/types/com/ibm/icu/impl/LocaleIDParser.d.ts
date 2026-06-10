@@ -18,7 +18,7 @@ export class LocaleIDParser extends Object {
     defaultKeywordValue(arg0: string, arg1: string): void;
     getBaseName(): string;
     getCountry(): string;
-    // private getKeyComparator(): (param0: string) => kotlin.Boolean;
+    // private getKeyComparator(): (param0: Object) => boolean;
     // private getKeyword(): string;
     getKeywordMap(): { [key: string]: string };
     getKeywordValue(arg0: string): string;

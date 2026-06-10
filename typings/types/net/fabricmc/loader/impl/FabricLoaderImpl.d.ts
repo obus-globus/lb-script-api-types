@@ -44,12 +44,12 @@ export class FabricLoaderImpl extends FabricLoader {
     dumpNonFabricMods(arg0: Path[][]): void;
     // private finishModLoading(): void;
     freeze(): void;
-    getAllMods(): E[];
+    getAllMods(): ModContainer[];
     getClassTweaker(): ClassTweaker;
     getConfigDir(): Path[];
     getConfigDirectory(): File;
-    getEntrypointContainers(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
-    getEntrypoints(arg0: string, arg1: Class<T>): T[];
+    getEntrypointContainers<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
+    getEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
     getGameDir(): Path[];
     getGameDirectory(): File;
@@ -64,7 +64,7 @@ export class FabricLoaderImpl extends FabricLoader {
     getObjectShare(): ObjectShare;
     getRawGameVersion(): string;
     hasEntrypoints(arg0: string): boolean;
-    invokeEntrypoints(arg0: string, arg1: Class<T>, arg2: (param0: T) => void): void;
+    invokeEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>, arg2: (param0: T) => void): void;
     isDevelopmentEnvironment(): boolean;
     isModLoaded(arg0: string): boolean;
     load(): void;

@@ -6,10 +6,10 @@ import type { LootContext } from '../../../../../../../net/minecraft/world/level
 import type { LootContextUser } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContextUser.d.ts'
 import type { ValidationContext } from '../../../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'
 export interface LootItemCondition extends Predicate<LootContext>, Object, LootContextUser {
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: LootContext) => boolean): (param0: LootContext) => boolean;
     codec(): MapCodec<LootItemCondition>;
     getReferencedContextParams(): ContextKey<Object>[];
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: LootContext) => boolean;
+    or(arg0: (param0: LootContext) => boolean): (param0: LootContext) => boolean;
     validate(context: ValidationContext): void;
 }

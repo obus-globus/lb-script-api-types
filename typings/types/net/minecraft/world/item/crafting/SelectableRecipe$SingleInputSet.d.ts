@@ -7,7 +7,7 @@ import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Re
 import type { SelectableRecipe$SingleInputEntry } from '../../../../../net/minecraft/world/item/crafting/SelectableRecipe$SingleInputEntry.d.ts'
 export class SelectableRecipe$SingleInputSet<T extends Recipe<Object>> extends Record {
     static empty(): SelectableRecipe$SingleInputSet<Object>;
-    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe$SingleInputSet<Object>>;
     constructor(entries: SelectableRecipe$SingleInputEntry<T>[])
     // private entries: SelectableRecipe$SingleInputEntry<T>[];
     acceptsInput(input: ItemStack): boolean;

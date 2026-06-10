@@ -2,19 +2,20 @@ import type { SoftReference } from '../../../../../java/lang/ref/SoftReference.d
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
+import type { ModDependency } from '../../../../../net/fabricmc/loader/api/metadata/ModDependency.d.ts'
 import type { DomainObject$Mod } from '../../../../../net/fabricmc/loader/impl/discovery/DomainObject$Mod.d.ts'
 import type { ModLoadCondition } from '../../../../../net/fabricmc/loader/impl/discovery/ModLoadCondition.d.ts'
 import type { LoaderModMetadata } from '../../../../../net/fabricmc/loader/impl/metadata/LoaderModMetadata.d.ts'
 export class ModCandidateImpl extends Object implements DomainObject$Mod {
-    private constructor(arg0: Path[][], arg1: string, arg2: number, arg3: LoaderModMetadata, arg4: boolean, arg5: E[])
+    private constructor(arg0: Path[][], arg1: string, arg2: number, arg3: LoaderModMetadata, arg4: boolean, arg5: ModCandidateImpl[])
     // private dataRef: SoftReference<ByteBuffer>;
     // private hash: number;
     readonly localPath: string;
     readonly metadata: LoaderModMetadata;
     readonly minNestLevel: number;
-    readonly nestedMods: E[];
+    readonly nestedMods: ModCandidateImpl[];
     readonly originPaths: Path[][];
-    readonly parentMods: E[];
+    readonly parentMods: ModCandidateImpl[];
     readonly paths: Path[][];
     readonly requiresRemap: boolean;
     addParent(arg0: ModCandidateImpl): boolean;
@@ -24,17 +25,17 @@ export class ModCandidateImpl extends Object implements DomainObject$Mod {
     // private getBestSourcingParent(): ModCandidateImpl;
     // private getData(): ByteBuffer;
     getDefaultFileName(): string;
-    getDependencies(): E[];
+    getDependencies(): ModDependency[];
     getId(): string;
     getLoadCondition(): ModLoadCondition;
     getLocalPath(): string;
     getMetadata(): LoaderModMetadata;
     getMinNestLevel(): number;
-    getNestedMods(): E[];
+    getNestedMods(): ModCandidateImpl[];
     getOriginPaths(): Path[][];
-    getParentMods(): E[];
+    getParentMods(): ModCandidateImpl[];
     getPaths(): Path[][];
-    getProvides(): E[];
+    getProvides(): string[];
     getRequiresRemap(): boolean;
     getVersion(): Version;
     hasPath(): boolean;

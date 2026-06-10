@@ -3,8 +3,8 @@ import type { Char2CharFunction } from '../../../../../it/unimi/dsi/fastutil/cha
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2CharFunctions$UnmodifiableFunction extends AbstractChar2CharFunction implements Serializable {
-    constructor(arg0: (param0: string) => kotlin.Char)
-    // private function: (param0: string) => kotlin.Char;
+    constructor(arg0: (param0: string) => string)
+    // private function: (param0: string) => string;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

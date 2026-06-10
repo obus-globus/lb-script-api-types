@@ -17,7 +17,7 @@ export class LinkFileSystem extends FileSystem {
     close(): void;
     getFileStores(): FileStore[];
     getPath(first: string, more: string[]): Path[];
-    getPathMatcher(syntaxAndPattern: string): (param0: Path[][]) => kotlin.Boolean;
+    getPathMatcher(syntaxAndPattern: string): (param0: Path[][]) => boolean;
     getRootDirectories(): Path[][];
     getSeparator(): string;
     getUserPrincipalLookupService(): UserPrincipalLookupService;

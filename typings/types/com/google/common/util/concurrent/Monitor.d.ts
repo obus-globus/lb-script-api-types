@@ -45,7 +45,7 @@ export class Monitor extends Object {
     isOccupiedByCurrentThread(): boolean;
     // private isSatisfied(guard: Monitor$Guard): boolean;
     leave(): void;
-    newGuard(isSatisfied: () => kotlin.Boolean): Monitor$Guard;
+    newGuard(isSatisfied: () => boolean): Monitor$Guard;
     // private signalAllWaiters(): void;
     // private signalNextWaiter(): void;
     tryEnter(): boolean;

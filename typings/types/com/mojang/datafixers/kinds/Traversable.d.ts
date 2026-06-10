@@ -6,6 +6,6 @@ import type { Traversable$Mu } from '../../../../com/mojang/datafixers/kinds/Tra
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface Traversable<T extends K1, Mu extends Traversable$Mu> extends Functor<T, Mu>, Object {
-    flip(arg0: Applicative<F, Object>, arg1: App<T, App<F, A>>): App<F, App<T, A>>;
-    traverse(arg0: Applicative<F, Object>, arg1: (param0: A) => App<F, B>, arg2: App<T, A>): App<F, App<T, B>>;
+    flip<F extends K1, A extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: App<T, App<F, A>>): App<F, App<T, A>>;
+    traverse<F extends K1, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: (param0: A) => App<F, B>, arg2: App<T, A>): App<F, App<T, B>>;
 }

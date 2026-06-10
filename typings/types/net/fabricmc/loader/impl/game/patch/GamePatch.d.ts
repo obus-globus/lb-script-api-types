@@ -10,10 +10,10 @@ import type { FieldNode } from '../../../../../../org/objectweb/asm/tree/FieldNo
 import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
 export abstract class GamePatch extends Object {
     constructor()
-    findField(arg0: ClassNode, arg1: (param0: FieldNode) => kotlin.Boolean): FieldNode;
-    findFields(arg0: ClassNode, arg1: (param0: FieldNode) => kotlin.Boolean): FieldNode[];
-    findInsn(arg0: MethodNode, arg1: (param0: AbstractInsnNode) => kotlin.Boolean, arg2: boolean): AbstractInsnNode;
-    findMethod(arg0: ClassNode, arg1: (param0: MethodNode) => kotlin.Boolean): MethodNode;
+    findField(arg0: ClassNode, arg1: (param0: FieldNode) => boolean): FieldNode;
+    findFields(arg0: ClassNode, arg1: (param0: FieldNode) => boolean): FieldNode[];
+    findInsn(arg0: MethodNode, arg1: (param0: AbstractInsnNode) => boolean, arg2: boolean): AbstractInsnNode;
+    findMethod(arg0: ClassNode, arg1: (param0: MethodNode) => boolean): MethodNode;
     isPublicInstance(arg0: number): boolean;
     isPublicStatic(arg0: number): boolean;
     isStatic(arg0: number): boolean;

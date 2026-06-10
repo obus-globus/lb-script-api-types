@@ -3,6 +3,7 @@ import type { MutableTruffleString } from '../../../../../com/oracle/truffle/api
 import type { MutableTruffleString$SwitchEncodingNode } from '../../../../../com/oracle/truffle/api/strings/MutableTruffleString$SwitchEncodingNode.d.ts'
 import type { MutableTruffleStringFactory$SwitchEncodingNodeGen$TranscodeAndCopyData } from '../../../../../com/oracle/truffle/api/strings/MutableTruffleStringFactory$SwitchEncodingNodeGen$TranscodeAndCopyData.d.ts'
 import type { TranscodingErrorHandler } from '../../../../../com/oracle/truffle/api/strings/TranscodingErrorHandler.d.ts'
+import type { TranscodingErrorHandler$ReplacementString } from '../../../../../com/oracle/truffle/api/strings/TranscodingErrorHandler$ReplacementString.d.ts'
 import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/api/strings/TruffleString$Encoding.d.ts'
 export class MutableTruffleStringFactory$SwitchEncodingNodeGen extends MutableTruffleString$SwitchEncodingNode {
     static create(): MutableTruffleString$SwitchEncodingNode;
@@ -11,6 +12,6 @@ export class MutableTruffleStringFactory$SwitchEncodingNodeGen extends MutableTr
     // private state_0_: number;
     // private transcodeAndCopy_cache: MutableTruffleStringFactory$SwitchEncodingNodeGen$TranscodeAndCopyData;
     execute(a: AbstractTruffleString, encoding: TruffleString$Encoding): MutableTruffleString;
-    execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString): MutableTruffleString;
-    // private executeAndSpecialize(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString): MutableTruffleString;
+    execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => TranscodingErrorHandler$ReplacementString): MutableTruffleString;
+    // private executeAndSpecialize(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => TranscodingErrorHandler$ReplacementString): MutableTruffleString;
 }

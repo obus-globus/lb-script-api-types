@@ -7,7 +7,7 @@ import type { RegistrySetBuilder$EmptyTagLookup } from '../../../net/minecraft/c
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export abstract class RegistrySetBuilder$EmptyTagRegistryLookup<T extends Object | number | string | boolean> extends RegistrySetBuilder$EmptyTagLookup<T> implements HolderLookup$RegistryLookup<T> {
     constructor(owner: HolderOwner<T>)
-    filterElements(filter: (param0: T) => kotlin.Boolean): HolderLookup$RegistryLookup<T>;
+    filterElements(filter: (param0: T) => boolean): HolderLookup$RegistryLookup<T>;
     filterFeatures(enabledFeatures: FeatureFlagSet): HolderLookup$RegistryLookup<T>;
     listTags(): Stream<T[]>;
 }

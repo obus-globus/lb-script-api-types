@@ -14,5 +14,5 @@ export class ProtoBasedClassDataFinder extends Object implements ClassDataFinder
     // private metadataVersion: BinaryVersion;
     // private nameResolver: NameResolver;
     findClassData(arg0: ClassId): ClassData;
-    getAllClassIds(): E[];
+    getAllClassIds(): ClassId[];
 }

@@ -22,8 +22,8 @@ export class JSModuleRecord extends CyclicModuleRecord {
     readonly moduleLoader: JSModuleLoader;
     // private parsedModule: JSModuleData;
     executeModule(realm: JSRealm, capability: PromiseCapabilityRecord): Object;
-    getExportedNames(): E[];
-    getExportedNames(exportStarSet: JSModuleRecord[]): E[];
+    getExportedNames(): TruffleString[];
+    getExportedNames(exportStarSet: JSModuleRecord[]): TruffleString[];
     getFunctionData(): JSFunctionData;
     getImportMeta(createImportMeta: CreateImportMetaNode): JSObject;
     getImportMetaOrNull(): JSObject;

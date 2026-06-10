@@ -42,7 +42,7 @@ export class TruffleFile extends Object {
     static UNIX_MODE: TruffleFile$AttributeDescriptor<number>;
     static UNIX_NLINK: TruffleFile$AttributeDescriptor<number>;
     static UNIX_OWNER: TruffleFile$AttributeDescriptor<UserPrincipal>;
-    static UNIX_PERMISSIONS: TruffleFile$AttributeDescriptor<Object>;
+    static UNIX_PERMISSIONS: TruffleFile$AttributeDescriptor<PosixFilePermission[]>;
     static UNIX_RDEV: TruffleFile$AttributeDescriptor<number>;
     static UNIX_UID: TruffleFile$AttributeDescriptor<number>;
     constructor(fileSystemContext: TruffleFile$FileSystemContext, path: Path[])
@@ -76,7 +76,7 @@ export class TruffleFile extends Object {
     // private getAttributeImpl<T extends Object | number | string | boolean>(forPath: Path[], attribute: string, type: Class<T>, options: LinkOption[]): T;
     // private getAttributeImpl(forPath: Path[], attribute: string, options: LinkOption[]): Object;
     // private getAttributeImpl<T extends Object | number | string | boolean>(attribute: string, type: Class<T>, options: LinkOption[]): T;
-    getAttributes(attributes: E[], linkOptions: LinkOption[]): TruffleFile$Attributes;
+    getAttributes(attributes: TruffleFile$AttributeDescriptor<Object>[], linkOptions: LinkOption[]): TruffleFile$Attributes;
     getCanonicalFile(options: LinkOption[]): TruffleFile;
     getCreationTime(options: LinkOption[]): FileTime;
     getFileStoreInfo(): TruffleFile$FileStoreInfo;
@@ -102,14 +102,14 @@ export class TruffleFile extends Object {
     isSameFile(other: TruffleFile, options: LinkOption[]): boolean;
     isSymbolicLink(): boolean;
     isWritable(): boolean;
-    list(): E[];
+    list(): TruffleFile[];
     move(target: TruffleFile, options: CopyOption[]): void;
     newBufferedReader(): BufferedReader;
     newBufferedReader(charset: Charset): BufferedReader;
     newBufferedWriter(charset: Charset, options: OpenOption[]): BufferedWriter;
     newBufferedWriter(options: OpenOption[]): BufferedWriter;
     newByteChannel(options: OpenOption[], attributes: FileAttribute<Object>[]): SeekableByteChannel;
-    newDirectoryStream(): T[];
+    newDirectoryStream(): TruffleFile[];
     newInputStream(options: OpenOption[]): InputStream;
     newOutputStream(options: OpenOption[]): OutputStream;
     normalize(): TruffleFile;

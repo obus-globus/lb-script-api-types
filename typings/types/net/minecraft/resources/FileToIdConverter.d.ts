@@ -8,7 +8,7 @@ import type { Resource } from '../../../net/minecraft/server/packs/resources/Res
 import type { ResourceManager } from '../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 export class FileToIdConverter extends Record implements FileToIdConverterAccessor, FileToIdConverterAccessor_2 {
     static json(paramprefix: string): FileToIdConverter;
-    static registry(paramregistry: ResourceKey<Object>): FileToIdConverter;
+    static registry(paramregistry: ResourceKey<Object[]>): FileToIdConverter;
     constructor(prefix: string, extension: string)
     // private extension: string;
     equals(o: Object | null): boolean;

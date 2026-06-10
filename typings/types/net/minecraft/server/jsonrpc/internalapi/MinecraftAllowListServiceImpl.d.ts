@@ -11,7 +11,7 @@ export class MinecraftAllowListServiceImpl extends Object implements MinecraftAl
     // private server: DedicatedServer;
     add(infos: UserWhiteListEntry, clientInfo: ClientInfo): boolean;
     clear(clientInfo: ClientInfo): void;
-    getEntries(): E[];
+    getEntries(): UserWhiteListEntry[];
     kickUnlistedPlayers(clientInfo: ClientInfo): void;
     remove(nameAndId: NameAndId, clientInfo: ClientInfo): void;
 }

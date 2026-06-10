@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SmartSet$Companion extends Object {
     private constructor()
-    create(arg0: E[]): T[];
-    create(): T[];
+    create<T extends Object | number | string | boolean>(arg0: T[]): T[];
+    create<T extends Object | number | string | boolean>(): T[];
 }

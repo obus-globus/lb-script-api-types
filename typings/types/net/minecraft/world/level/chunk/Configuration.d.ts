@@ -5,5 +5,5 @@ export interface Configuration extends Object{
     alwaysRepack(): boolean;
     bitsInMemory(): number;
     bitsInStorage(): number;
-    createPalette(strategy: Strategy<T>, paletteEntries: T[]): Palette<T>;
+    createPalette<T extends Object | number | string | boolean>(strategy: Strategy<T>, paletteEntries: T[]): Palette<T>;
 }

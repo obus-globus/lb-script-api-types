@@ -27,7 +27,7 @@ export class TemporalInstantPrototypeBuiltins$TemporalInstantPrototype extends E
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

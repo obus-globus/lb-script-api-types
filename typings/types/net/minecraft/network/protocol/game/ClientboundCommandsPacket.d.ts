@@ -1,4 +1,5 @@
 import type { RootCommandNode } from '../../../../../com/mojang/brigadier/tree/RootCommandNode.d.ts'
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CommandBuildContext } from '../../../../../net/minecraft/commands/CommandBuildContext.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -13,12 +14,12 @@ import type { ClientboundCommandsPacket$NodeBuilder } from '../../../../../net/m
 import type { ClientboundCommandsPacket$NodeInspector } from '../../../../../net/minecraft/network/protocol/game/ClientboundCommandsPacket$NodeInspector.d.ts'
 export class ClientboundCommandsPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCommandsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(root: RootCommandNode<S>, inspector: ClientboundCommandsPacket$NodeInspector<S>)
     private constructor(input: FriendlyByteBuf)
     // private entries: ClientboundCommandsPacket$Entry[];
     // private rootIndex: number;
-    getRoot(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): RootCommandNode<S>;
+    getRoot<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): RootCommandNode<S>;
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;

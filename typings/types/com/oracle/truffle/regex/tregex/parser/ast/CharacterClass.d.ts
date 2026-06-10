@@ -13,7 +13,7 @@ export class CharacterClass extends QuantifiableTerm {
     constructor(charSet: (Object | null)[])
     private constructor(copy: CharacterClass, charSet: (Object | null)[])
     readonly charSet: (Object | null)[];
-    readonly lookBehindEntries: S[];
+    readonly lookBehindEntries: LookBehindAssertion[];
     addLookBehindEntry(ast: RegexAST, lookBehindEntry: LookBehindAssertion): void;
     copy(ast: RegexAST): CharacterClass;
     copyRecursive(ast: RegexAST, compilationBuffer: CompilationBuffer): CharacterClass;

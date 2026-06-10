@@ -6,7 +6,7 @@ import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/interna
 export class TypeMappingConfigurationImpl extends Object implements TypeMappingConfiguration<JvmType> {
     static INSTANCE: TypeMappingConfigurationImpl;
     private constructor()
-    commonSupertype(arg0: E[]): KotlinType;
+    commonSupertype(arg0: KotlinType[]): KotlinType;
     getPredefinedFullInternalNameForClass(arg0: ClassDescriptor): string;
     getPredefinedInternalNameForClass(arg0: ClassDescriptor): string;
     getPredefinedTypeForClass(arg0: ClassDescriptor): JvmType;

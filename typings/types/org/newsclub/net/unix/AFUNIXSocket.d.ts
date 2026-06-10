@@ -2,6 +2,7 @@ import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { SocketImplFactory } from '../../../../java/net/SocketImplFactory.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFSocket } from '../../../../org/newsclub/net/unix/AFSocket.d.ts'
+import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
 import type { AFSocketCapability } from '../../../../org/newsclub/net/unix/AFSocketCapability.d.ts'
 import type { AFSocketFactory } from '../../../../org/newsclub/net/unix/AFSocketFactory.d.ts'
 import type { AFSocketImpl } from '../../../../org/newsclub/net/unix/AFSocketImpl.d.ts'
@@ -11,7 +12,7 @@ import type { AFUNIXSocketChannel } from '../../../../org/newsclub/net/unix/AFUN
 import type { AFUNIXSocketCredentials } from '../../../../org/newsclub/net/unix/AFUNIXSocketCredentials.d.ts'
 import type { AFUNIXSocketExtensions } from '../../../../org/newsclub/net/unix/AFUNIXSocketExtensions.d.ts'
 export class AFUNIXSocket extends AFSocket<AFUNIXSocketAddress> implements AFUNIXSocketExtensions {
-    static connectTo(paramarg0: Object | null): AFSocket<Object>;
+    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<Object>;
     static connectTo(paramarg0: AFUNIXSocketAddress): AFUNIXSocket;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;

@@ -9,12 +9,12 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MapDigraph<V extends Object | number | string | boolean> extends Object implements Digraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
-    static getDefaultDigraphFactory(): DigraphFactory<Object>;
-    static getMapDigraphFactory(paramarg0: MapDigraph$VertexMapFactory<Object>, paramarg1: MapDigraph$EdgeMapFactory<Object>): DigraphFactory<Object>;
+    static getDefaultDigraphFactory(): DigraphFactory<MapDigraph<Object>>;
+    static getMapDigraphFactory(paramarg0: MapDigraph$VertexMapFactory<Object>, paramarg1: MapDigraph$EdgeMapFactory<Object>): DigraphFactory<MapDigraph<Object>>;
     constructor()
     constructor(arg0: MapDigraph$VertexMapFactory<V>, arg1: MapDigraph$EdgeMapFactory<V>)
-    constructor(arg0: (param0: V) => kotlin.Boolean)
-    constructor(arg0: (param0: V) => kotlin.Boolean, arg1: (param0: V) => kotlin.Boolean)
+    constructor(arg0: (param0: Object) => boolean)
+    constructor(arg0: (param0: Object) => boolean, arg1: (param0: Object) => boolean)
     readonly edgeCount: number;
     // private edgeMapFactory: MapDigraph$EdgeMapFactory<V>;
     // private vertexMap: Map<V, Object2IntMap<V>>;
@@ -31,7 +31,7 @@ export class MapDigraph<V extends Object | number | string | boolean> extends Ob
     put(arg0: V, arg1: V, arg2: number): OptionalInt;
     remove(arg0: V): boolean;
     remove(arg0: V, arg1: V): OptionalInt;
-    removeAll(arg0: E[]): void;
+    removeAll(arg0: V[]): void;
     reverse(): MapDigraph<V>;
     subgraph(arg0: V[]): MapDigraph<V>;
     targets(arg0: V): V[];

@@ -25,7 +25,7 @@ export class SlotDisplay$WithRemainder extends Record implements SlotDisplay {
     input(): SlotDisplay;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     remainder(): SlotDisplay;
-    resolve(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
+    resolve<T extends Object | number | string | boolean>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];
     toString(): string;

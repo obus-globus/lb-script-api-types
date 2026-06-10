@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Sspi$SecBuffer } from '../../../../../com/sun/jna/platform/win32/Sspi$SecBuffer.d.ts'
 import type { Sspi$SecBufferDesc } from '../../../../../com/sun/jna/platform/win32/Sspi$SecBufferDesc.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -14,8 +15,8 @@ export class SspiUtil$ManagedSecBufferDesc extends Sspi$SecBufferDesc {
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor(arg0: number)
     constructor(arg0: number, arg1: number[])
     constructor(arg0: number, arg1: number)

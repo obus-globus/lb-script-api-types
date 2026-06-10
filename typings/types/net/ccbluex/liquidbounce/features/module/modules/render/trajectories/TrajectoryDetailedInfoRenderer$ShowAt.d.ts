@@ -14,14 +14,14 @@ export class TrajectoryDetailedInfoRenderer$ShowAt extends Enum<TrajectoryDetail
     static LANDING: TrajectoryDetailedInfoRenderer$ShowAt;
     static OWNER: TrajectoryDetailedInfoRenderer$ShowAt;
     static getEntries(): TrajectoryDetailedInfoRenderer$ShowAt[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrajectoryDetailedInfoRenderer$ShowAt;
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    andThen(arg0: (param0: R) => V): (param0: T, param1: U) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: Vec3) => V): (param0: TrajectoryInfoRenderer, param1: TrajectoryInfoRenderer$SimulationResult) => V;
     apply(renderer: TrajectoryInfoRenderer, result: TrajectoryInfoRenderer$SimulationResult): Vec3;
     name(): "OWNER" | "ENTITY" | "LANDING";
 }

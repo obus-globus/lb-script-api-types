@@ -4,7 +4,6 @@ import type { ServiceQuality } from '../../../../../../com/mojang/realmsclient/d
 import type { RealmsPreferredRegionSelectionScreen$RegionSelectionList } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList.d.ts'
 import type { RealmsSettingsTab$RegionSelection } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsSettingsTab$RegionSelection.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
@@ -22,7 +21,7 @@ export class RealmsPreferredRegionSelectionScreen extends Screen {
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(parent: Screen, applySettings: (param0: RegionSelectionPreference, param1: RealmsRegion) => void, regionServiceQuality: { [key in RealmsRegion]: ServiceQuality }, currentSelection: RealmsSettingsTab$RegionSelection)
     // private applySettings: (param0: RegionSelectionPreference, param1: RealmsRegion) => void;

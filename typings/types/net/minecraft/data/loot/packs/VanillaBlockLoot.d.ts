@@ -7,10 +7,11 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
 import type { LootTable } from '../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { LootTable$Builder } from '../../../../../net/minecraft/world/level/storage/loot/LootTable$Builder.d.ts'
 import type { LootPoolEntryContainer$Builder } from '../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder.d.ts'
+import type { LootItemCondition } from '../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export class VanillaBlockLoot extends BlockLootSubProvider {
     static createCandleCakeDrops(paramcandle: Block): LootTable$Builder;
-    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
     static noDrop(): LootTable$Builder;
     constructor(registries: HolderLookup$Provider)
     // private createDecoratedPotTable(original: Block): LootTable$Builder;

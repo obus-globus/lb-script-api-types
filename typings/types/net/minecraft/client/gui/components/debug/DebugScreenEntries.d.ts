@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DebugScreenEntriesAccessor } from '../../../../../../net/caffeinemc/mods/sodium/mixin/features/gui/hooks/debug/DebugScreenEntriesAccessor.d.ts'
 import type { DebugScreenEntry } from '../../../../../../net/minecraft/client/gui/components/debug/DebugScreenEntry.d.ts'
+import type { DebugScreenEntryStatus } from '../../../../../../net/minecraft/client/gui/components/debug/DebugScreenEntryStatus.d.ts'
 import type { DebugScreenProfile } from '../../../../../../net/minecraft/client/gui/components/debug/DebugScreenProfile.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class DebugScreenEntries extends Object implements DebugScreenEntriesAccessor {
@@ -34,7 +35,7 @@ export class DebugScreenEntries extends Object implements DebugScreenEntriesAcce
     static PLAYER_POSITION: Identifier;
     static PLAYER_SECTION_POSITION: Identifier;
     static POST_EFFECT: Identifier;
-    static PROFILES: { [key in DebugScreenProfile]: Object | null };
+    static PROFILES: { [key in DebugScreenProfile]: Map<Identifier, DebugScreenEntryStatus> };
     static SIMPLE_PERFORMANCE_IMPACTORS: Identifier;
     static SOUND_CACHE: Identifier;
     static SOUND_MOOD: Identifier;

@@ -3,7 +3,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
 import type { FunctionProviderLocal } from '../../../org/lwjgl/system/FunctionProviderLocal.d.ts'
 export class ALCCapabilities extends Object {
-    constructor(arg0: FunctionProviderLocal, arg1: number, arg2: string[], arg3: (param0: PointerBuffer) => unknown)
+    constructor(arg0: FunctionProviderLocal, arg1: number, arg2: string[], arg3: (param0: number) => PointerBuffer)
     ALC_ENUMERATE_ALL_EXT: boolean;
     ALC_ENUMERATION_EXT: boolean;
     ALC_EXT_CAPTURE: boolean;

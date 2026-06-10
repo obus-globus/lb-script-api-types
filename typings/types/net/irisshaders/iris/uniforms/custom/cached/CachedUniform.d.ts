@@ -16,7 +16,7 @@ export abstract class CachedUniform extends Object implements VariableExpression
     getName(): string;
     getType(): Type;
     getUpdateFrequency(): UniformUpdateFrequency;
-    listVariables(arg0: E[]): void;
+    listVariables(arg0: VariableExpression[]): void;
     markUnchanged(): void;
     push(arg0: number): void;
     pushIfChanged(arg0: number): void;

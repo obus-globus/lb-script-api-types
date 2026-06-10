@@ -8,7 +8,7 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class TypeRewriteRule$Seq extends Object implements TypeRewriteRule {
     static all(paramarg0: TypeRewriteRule, paramarg1: boolean, paramarg2: boolean): TypeRewriteRule;
-    static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Object | null) => void): TypeRewriteRule;
+    static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Type<Object>) => void): TypeRewriteRule;
     static everywhere(paramarg0: TypeRewriteRule, paramarg1: PointFreeRule, paramarg2: boolean, paramarg3: boolean): TypeRewriteRule;
     static ifSame(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>): TypeRewriteRule;
     static nop(): TypeRewriteRule;
@@ -22,8 +22,8 @@ export class TypeRewriteRule$Seq extends Object implements TypeRewriteRule {
     constructor(arg0: TypeRewriteRule[])
     // private hashCode: number;
     // private rules: TypeRewriteRule[];
-    cap1(arg0: TypeRewriteRule, arg1: RewriteResult<A, B>): Optional<RewriteResult<A, Object>>;
+    cap1<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: TypeRewriteRule, arg1: RewriteResult<A, B>): Optional<RewriteResult<A, Object>>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
+    rewrite<A extends Object | number | string | boolean>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
 }

@@ -20,7 +20,7 @@ export class PointFreeRule$Nop extends Enum<PointFreeRule$Nop> implements PointF
     static values(): (Object | null)[];
     private constructor()
     get(): PointFreeRule;
-    rewrite(arg0: PointFree<A>): Optional<PointFree<A>>;
-    rewriteOrNop(arg0: PointFree<A>): PointFree<A>;
+    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewriteOrNop<A extends Object | number | string | boolean>(arg0: PointFree<A>): PointFree<A>;
     name(): "INSTANCE";
 }

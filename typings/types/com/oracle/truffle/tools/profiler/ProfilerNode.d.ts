@@ -18,7 +18,7 @@ export class ProfilerNode<T extends Object | number | string | boolean> extends 
     deepMergeNodeToChildren(node: ProfilerNode<T>, mergePayload: (param0: T, param1: T) => void, payloadFactory: () => T): void;
     // private findBySourceLocation(targetSourceLocation: StackTraceEntry): ProfilerNode<T>;
     findChild(childLocation: StackTraceEntry): ProfilerNode<T>;
-    getChildren(): E[];
+    getChildren(): ProfilerNode<T>[];
     getParent(): ProfilerNode<T>;
     getPayload(): T;
     getRootName(): string;

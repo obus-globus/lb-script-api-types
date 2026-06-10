@@ -15,12 +15,12 @@ import type { RecipeDisplayId } from '../../../../../../net/minecraft/world/item
 export class RecipeButton extends AbstractWidget {
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(slotSelectTime: () => kotlin.Int)
+    constructor(slotSelectTime: () => number)
     // private allRecipesHaveSameResultDisplay: boolean;
     // private animationTime: number;
     readonly collection: RecipeCollection;
     // private selectedEntries: RecipeButton$ResolvedEntry[];
-    // private slotSelectTime: () => kotlin.Int;
+    // private slotSelectTime: () => number;
     extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getCollection(): RecipeCollection;
     getCurrentRecipe(): RecipeDisplayId;

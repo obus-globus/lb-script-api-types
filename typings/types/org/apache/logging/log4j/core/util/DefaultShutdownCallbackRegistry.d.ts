@@ -16,7 +16,7 @@ export class DefaultShutdownCallbackRegistry extends Object implements Runnable,
     static SHUTDOWN_HOOK_MARKER: Marker;
     constructor()
     constructor(threadFactory: ThreadFactory)
-    // private hooks: E[];
+    // private hooks: Reference<Cancellable>[];
     // private shutdownHookRef: Reference<Thread>;
     readonly state: AtomicReference<LifeCycle$State>;
     // private threadFactory: ThreadFactory;

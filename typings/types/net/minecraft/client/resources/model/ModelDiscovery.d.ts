@@ -12,7 +12,7 @@ export class ModelDiscovery extends Object {
     // private modelWrappers: Map<Identifier, ModelDiscovery$ModelWrapper>;
     // private parentDiscoveryQueue: ModelDiscovery$ModelWrapper[];
     // private resolver: ResolvableModel$Resolver;
-    // private uncachedResolver: (param0: Identifier) => ModelDiscovery$ModelWrapper;
+    // private uncachedResolver: (param0: Object) => ModelDiscovery$ModelWrapper;
     addRoot(model: ResolvableModel): void;
     addSpecialModel(id: Identifier, model: UnbakedModel): void;
     // private createAndQueueWrapper(id: Identifier, rawModel: UnbakedModel): ModelDiscovery$ModelWrapper;

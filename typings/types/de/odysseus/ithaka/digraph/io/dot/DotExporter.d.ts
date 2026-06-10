@@ -11,13 +11,13 @@ export class DotExporter extends Object {
     constructor(arg0: string, arg1: string)
     // private indent: string;
     // private lineSpeparator: string;
-    // private createClusters<G extends Digraph<V>>(arg0: G, arg1: DotProvider<V, G>, arg2: DigraphProvider<V, G>): Map<V, DotExporter$Cluster<V, G>>;
-    export<G extends Digraph<V>>(arg0: DotProvider<V, G>, arg1: G, arg2: DigraphProvider<V, G>, arg3: Writer): void;
+    // private createClusters<V extends Object | number | string | boolean, G extends Digraph<V>>(arg0: G, arg1: DotProvider<V, G>, arg2: DigraphProvider<V, G>): Map<V, DotExporter$Cluster<V, G>>;
+    export<V extends Object | number | string | boolean, G extends Digraph<V>>(arg0: DotProvider<V, G>, arg1: G, arg2: DigraphProvider<V, G>, arg3: Writer): void;
     // private indent(arg0: Writer, arg1: number): void;
     // private writeAttributes(arg0: Writer, arg1: Iterator<DotAttribute>): void;
-    // private writeCluster<V extends Object | number | string | boolean>(arg0: Writer, arg1: number, arg2: DotProvider<V, G>, arg3: V, arg4: DotExporter$Cluster<V, G>, arg5: DigraphProvider<V, G>): void;
+    // private writeCluster<V extends Object | number | string | boolean, G extends Digraph<V>>(arg0: Writer, arg1: number, arg2: DotProvider<V, G>, arg3: V, arg4: DotExporter$Cluster<V, G>, arg5: DigraphProvider<V, G>): void;
     // private writeDefaultAttributes(arg0: Writer, arg1: number, arg2: string, arg3: DotAttribute[]): void;
     // private writeEdge<V extends Object | number | string | boolean>(arg0: Writer, arg1: number, arg2: V, arg3: V, arg4: number, arg5: DotProvider<V, Object>, arg6: DotExporter$Cluster<V, Object>, arg7: DotExporter$Cluster<V, Object>): void;
     // private writeNode<V extends Object | number | string | boolean>(arg0: Writer, arg1: number, arg2: V, arg3: DotProvider<V, Object>): void;
-    // private writeNodesAndEdges<G extends Digraph<V>>(arg0: Writer, arg1: number, arg2: DotProvider<V, G>, arg3: G, arg4: Map<V, DotExporter$Cluster<V, G>>, arg5: DigraphProvider<V, G>): void;
+    // private writeNodesAndEdges<V extends Object | number | string | boolean, G extends Digraph<V>>(arg0: Writer, arg1: number, arg2: DotProvider<V, G>, arg3: G, arg4: Map<V, DotExporter$Cluster<V, G>>, arg5: DigraphProvider<V, G>): void;
 }

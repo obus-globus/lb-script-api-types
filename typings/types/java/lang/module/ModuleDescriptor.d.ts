@@ -18,9 +18,9 @@ export class ModuleDescriptor extends Object implements Comparable<ModuleDescrip
     static newModule(paramarg0: string, paramarg1: ModuleDescriptor$Modifier[]): ModuleDescriptor$Builder;
     static newOpenModule(paramarg0: string): ModuleDescriptor$Builder;
     static read(paramarg0: InputStream): ModuleDescriptor;
-    static read(paramarg0: InputStream, paramarg1: () => Object | null): ModuleDescriptor;
+    static read(paramarg0: InputStream, paramarg1: () => string[]): ModuleDescriptor;
     static read(paramarg0: ByteBuffer): ModuleDescriptor;
-    static read(paramarg0: ByteBuffer, paramarg1: () => Object | null): ModuleDescriptor;
+    static read(paramarg0: ByteBuffer, paramarg1: () => string[]): ModuleDescriptor;
     private constructor(arg0: string, arg1: ModuleDescriptor$Version, arg2: string, arg3: ModuleDescriptor$Modifier[], arg4: ModuleDescriptor$Requires[], arg5: ModuleDescriptor$Exports[], arg6: ModuleDescriptor$Opens[], arg7: string[], arg8: ModuleDescriptor$Provides[], arg9: string[], arg10: string)
     private constructor(arg0: string, arg1: ModuleDescriptor$Version, arg2: ModuleDescriptor$Modifier[], arg3: ModuleDescriptor$Requires[], arg4: ModuleDescriptor$Exports[], arg5: ModuleDescriptor$Opens[], arg6: string[], arg7: ModuleDescriptor$Provides[], arg8: string[], arg9: string, arg10: number, arg11: boolean)
     readonly automatic: boolean;

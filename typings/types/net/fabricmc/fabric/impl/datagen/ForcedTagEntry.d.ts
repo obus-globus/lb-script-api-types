@@ -9,5 +9,5 @@ export class ForcedTagEntry extends TagEntry {
     static optionalTag(paramid: Identifier): TagEntry;
     static tag(paramid: Identifier): TagEntry;
     constructor(arg0: Identifier)
-    verifyIfPresent(arg0: (param0: Identifier) => kotlin.Boolean, arg1: (param0: Identifier) => kotlin.Boolean): boolean;
+    verifyIfPresent(arg0: (param0: Identifier) => boolean, arg1: (param0: Identifier) => boolean): boolean;
 }

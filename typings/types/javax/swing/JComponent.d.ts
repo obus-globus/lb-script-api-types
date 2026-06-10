@@ -20,6 +20,7 @@ import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { AtomicBoolean } from '../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { ActionMap } from '../../javax/swing/ActionMap.d.ts'
@@ -141,7 +142,7 @@ export abstract class JComponent extends Container implements Serializable, Tran
     getInputVerifier(): InputVerifier;
     getInsets(): Insets;
     getInsets(arg0: Insets): Insets;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getLocation(): Point;
     getLocation(arg0: Point): Point;
     getMaximumSize(): Dimension;

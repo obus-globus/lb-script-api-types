@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { DensityFunction } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
 import type { DensityFunction$ContextProvider } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$ContextProvider.d.ts'
@@ -12,7 +13,7 @@ import type { DensityFunctions$TwoArgumentSimpleFunction } from '../../../../../
 import type { DensityFunctions$TwoArgumentSimpleFunction$Type } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$TwoArgumentSimpleFunction$Type.d.ts'
 import type { Logger } from '../../../../../org/slf4j/Logger.d.ts'
 export class DensityFunctions$MulOrAdd extends Record implements DensityFunctions$PureTransformer, DensityFunctions$TwoArgumentSimpleFunction {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<DensityFunction>>;
     static DIRECT_CODEC: Codec<DensityFunction>;
     static HOLDER_HELPER_CODEC: Codec<DensityFunction>;
     static LOGGER: Logger;

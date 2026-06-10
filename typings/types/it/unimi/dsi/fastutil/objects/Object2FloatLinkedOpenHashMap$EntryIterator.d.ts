@@ -8,10 +8,10 @@ export class Object2FloatLinkedOpenHashMap$EntryIterator extends Object2FloatLin
     constructor(null_: Object2FloatLinkedOpenHashMap$EntryIterator)
     constructor(null_: Object2FloatLinkedOpenHashMap$EntryIterator)
     // private entry: Object2FloatLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Object2FloatMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Object2FloatLinkedOpenHashMap$MapEntry;
-    previous(): Object2FloatLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2FloatMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Object2FloatMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Object2FloatLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Object2FloatLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Object2FloatMap$Entry<K>): void;
 }

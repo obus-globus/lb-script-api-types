@@ -1,6 +1,5 @@
 import type { RealmsResetWorldScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsResetWorldScreen.d.ts'
 import type { RealmCreationTask } from '../../../../../com/mojang/realmsclient/util/task/RealmCreationTask.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../net/minecraft/client/gui/components/Button.d.ts'
@@ -24,7 +23,7 @@ export class RealmsSelectFileToUploadScreen extends RealmsScreen {
     static MENU_BACKGROUND: Identifier;
     static TITLE: Component;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(realmCreationTask: RealmCreationTask, realmId: number, slotId: number, lastScreen: RealmsResetWorldScreen)
     // private lastScreen: RealmsResetWorldScreen;

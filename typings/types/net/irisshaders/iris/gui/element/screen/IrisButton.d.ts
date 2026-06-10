@@ -16,11 +16,11 @@ export class IrisButton extends Button {
     static SMALL_WIDTH: number;
     static builder(parammessage: Component, paramonPress: Button$OnPress): Button$Builder;
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
-    static iris$builder(paramarg0: Component, paramarg1: Button$OnPress, paramarg2: () => kotlin.Float): IrisButton$Builder;
+    static iris$builder(paramarg0: Component, paramarg1: Button$OnPress, paramarg2: () => number): IrisButton$Builder;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: Component, arg5: Button$OnPress, arg6: Button$CreateNarration, arg7: () => kotlin.Float)
-    // private alphaSupplier: () => kotlin.Float;
+    constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: Component, arg5: Button$OnPress, arg6: Button$CreateNarration, arg7: () => number)
+    // private alphaSupplier: () => number;
     extractContents(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: number): void;
     getAlpha(): number;
 }

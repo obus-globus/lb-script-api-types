@@ -33,10 +33,10 @@ export class Validate extends Object {
     static noNullElements(paramarg0: Object | null, paramarg1: string, paramarg2: (Object | null)[]): Object | null;
     static noNullElements(paramarg0: Object | null): Object | null;
     static noNullElements(paramarg0: Object | null, paramarg1: string, paramarg2: (Object | null)[]): Object | null;
-    static notBlank(paramarg0: Object | null): Object | null;
-    static notBlank(paramarg0: Object | null, paramarg1: string, paramarg2: (Object | null)[]): Object | null;
-    static notEmpty(paramarg0: Object | null): Object | null;
-    static notEmpty(paramarg0: Object | null, paramarg1: string, paramarg2: (Object | null)[]): Object | null;
+    static notBlank(paramarg0: CharSequence | null): CharSequence | null;
+    static notBlank(paramarg0: CharSequence | null, paramarg1: string, paramarg2: (Object | null)[]): CharSequence | null;
+    static notEmpty(paramarg0: CharSequence | null): CharSequence | null;
+    static notEmpty(paramarg0: CharSequence | null, paramarg1: string, paramarg2: (Object | null)[]): CharSequence | null;
     static notEmpty(paramarg0: Object | null): Object | null;
     static notEmpty(paramarg0: Object | null, paramarg1: string, paramarg2: (Object | null)[]): Object | null;
     static notEmpty(paramarg0: Object | null): Object | null;
@@ -47,8 +47,8 @@ export class Validate extends Object {
     static notNaN(paramarg0: number, paramarg1: string, paramarg2: (Object | null)[]): void;
     static notNull(paramarg0: Object | null): Object | null;
     static notNull(paramarg0: Object | null, paramarg1: string, paramarg2: (Object | null)[]): Object | null;
-    static validIndex(paramarg0: Object | null, paramarg1: number): Object | null;
-    static validIndex(paramarg0: Object | null, paramarg1: number, paramarg2: string, paramarg3: (Object | null)[]): Object | null;
+    static validIndex(paramarg0: CharSequence | null, paramarg1: number): CharSequence | null;
+    static validIndex(paramarg0: CharSequence | null, paramarg1: number, paramarg2: string, paramarg3: (Object | null)[]): CharSequence | null;
     static validIndex(paramarg0: Object | null, paramarg1: number): Object | null;
     static validIndex(paramarg0: Object | null, paramarg1: number, paramarg2: string, paramarg3: (Object | null)[]): Object | null;
     static validIndex(paramarg0: Object | null, paramarg1: number): Object | null;

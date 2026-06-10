@@ -9,7 +9,7 @@ export class CoroutineScopeKt extends Object {
     static MainScope(): CoroutineScope;
     static cancel(paramarg0: CoroutineScope, paramarg1: string, paramarg2: Throwable): void;
     static cancel(paramarg0: CoroutineScope, paramarg1: CancellationException): void;
-    static coroutineScope(paramarg0: (param0: Object | null, param1: Object | null) => Object | null, paramarg1: Continuation<Object>): Object;
+    static coroutineScope(paramarg0: (param0: Object, param1: Object) => Object, paramarg1: Continuation<Object>): Object;
     static currentCoroutineContext(paramarg0: Continuation<Object>): Object;
     static ensureActive(paramarg0: CoroutineScope): void;
     static isActive(paramarg0: CoroutineScope): boolean;

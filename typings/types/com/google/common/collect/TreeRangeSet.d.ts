@@ -8,7 +8,7 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class TreeRangeSet<C extends Comparable<Object>> extends AbstractRangeSet<C> implements Serializable {
     static create(): TreeRangeSet<Object>;
     static create(paramrangeSet: RangeSet<Object>): TreeRangeSet<Object>;
-    static create(paramranges: (Object | null)[]): TreeRangeSet<Object>;
+    static create(paramranges: Range<Object>[]): TreeRangeSet<Object>;
     private constructor(rangesByLowerCut: Map<Cut<C>, Range<C>>)
     // private asDescendingSetOfRanges: Range<C>[];
     // private asRanges: Range<C>[];

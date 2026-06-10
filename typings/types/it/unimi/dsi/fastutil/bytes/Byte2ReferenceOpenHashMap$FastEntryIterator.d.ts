@@ -3,10 +3,11 @@ import type { Byte2ReferenceOpenHashMap$MapEntry } from '../../../../../it/unimi
 import type { Byte2ReferenceOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2ReferenceOpenHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2ReferenceOpenHashMap$FastEntryIterator extends Byte2ReferenceOpenHashMap$MapIterator<Object> implements ObjectIterator<Byte2ReferenceMap$Entry<V>> {
     private constructor(null_: Byte2ReferenceOpenHashMap$FastEntryIterator)
     // private entry: Byte2ReferenceOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Byte2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    next(): Byte2ReferenceOpenHashMap$MapEntry;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Byte2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    next<V extends Object | number | string | boolean>(): Byte2ReferenceOpenHashMap$MapEntry;
     skip(arg0: number): number;
 }

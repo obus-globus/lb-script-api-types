@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Union } from '../../../../../com/sun/jna/Union.d.ts'
 import type { WTypes$LPSTR } from '../../../../../com/sun/jna/platform/win32/WTypes$LPSTR.d.ts'
 import type { WinCrypt$CERT_STRONG_SIGN_SERIALIZED_INFO$ByReference } from '../../../../../com/sun/jna/platform/win32/WinCrypt$CERT_STRONG_SIGN_SERIALIZED_INFO$ByReference.d.ts'
@@ -15,8 +16,8 @@ export class WinCrypt$CERT_STRONG_SIGN_PARA$DUMMYUNION extends Union {
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor(null_: WinCrypt$CERT_STRONG_SIGN_PARA$DUMMYUNION)
     // private pSerializedInfo: WinCrypt$CERT_STRONG_SIGN_SERIALIZED_INFO$ByReference;
     // private pszOID: WTypes$LPSTR;

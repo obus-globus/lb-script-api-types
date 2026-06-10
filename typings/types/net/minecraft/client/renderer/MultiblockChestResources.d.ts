@@ -10,7 +10,7 @@ export class MultiblockChestResources<T extends Object | number | string | boole
     equals(o: Object | null): boolean;
     hashCode(): number;
     left(): T;
-    map(mapper: (param0: T) => S): MultiblockChestResources<S>;
+    map<S extends Object | number | string | boolean>(mapper: (param0: T) => S): MultiblockChestResources<S>;
     right(): T;
     select(chestType: ChestType): T;
     single(): T;

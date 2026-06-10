@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2FloatMaps extends Object {
     static EMPTY_MAP: Char2FloatMaps$EmptyMap;
-    static fastForEach(paramarg0: Char2FloatMap, paramarg1: (param0: Object | null) => void): void;
-    static fastIterable(paramarg0: Char2FloatMap): K[];
+    static fastForEach(paramarg0: Char2FloatMap, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: Char2FloatMap): Char2FloatMap$Entry[];
     static fastIterator(paramarg0: Char2FloatMap): ObjectIterator<Char2FloatMap$Entry>;
     static singleton(paramarg0: string, paramarg1: number): Char2FloatMap;
     static singleton(paramarg0: string, paramarg1: number): Char2FloatMap;

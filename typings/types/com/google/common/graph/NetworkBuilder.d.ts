@@ -15,11 +15,11 @@ export class NetworkBuilder<N extends Object | number | string | boolean, E exte
     // private expectedEdgeCount: Optional<number>;
     allowsParallelEdges(allowsParallelEdges: boolean): NetworkBuilder<N, E>;
     allowsSelfLoops(allowsSelfLoops: boolean): NetworkBuilder<N, E>;
-    build(): MutableNetwork<N1, E1>;
-    // private cast(): NetworkBuilder<N1, E1>;
-    edgeOrder(edgeOrder: ElementOrder<E1>): NetworkBuilder<N, E1>;
+    build<N1 extends N, E1 extends E>(): MutableNetwork<N1, E1>;
+    // private cast<N1 extends N, E1 extends E>(): NetworkBuilder<N1, E1>;
+    edgeOrder<E1 extends E>(edgeOrder: ElementOrder<E1>): NetworkBuilder<N, E1>;
     expectedEdgeCount(expectedEdgeCount: number): NetworkBuilder<N, E>;
     expectedNodeCount(expectedNodeCount: number): NetworkBuilder<N, E>;
-    immutable(): ImmutableNetwork$Builder<N1, E1>;
-    nodeOrder(nodeOrder: ElementOrder<N1>): NetworkBuilder<N1, E>;
+    immutable<N1 extends N, E1 extends E>(): ImmutableNetwork$Builder<N1, E1>;
+    nodeOrder<N1 extends N>(nodeOrder: ElementOrder<N1>): NetworkBuilder<N1, E>;
 }

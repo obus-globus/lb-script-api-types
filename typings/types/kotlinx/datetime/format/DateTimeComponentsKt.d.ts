@@ -6,7 +6,7 @@ import type { DateTimeComponentsContents } from '../../../kotlinx/datetime/forma
 import type { DateTimeFormat } from '../../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 import type { GenericFieldSpec } from '../../../kotlinx/datetime/internal/format/GenericFieldSpec.d.ts'
 export class DateTimeComponentsKt extends Object {
-    static format(paramarg0: DateTimeFormat<DateTimeComponents>, paramarg1: (param0: Object | null) => void): string;
+    static format(paramarg0: DateTimeFormat<DateTimeComponents>, paramarg1: (param0: Object) => void): string;
     static getTimeZoneField(): GenericFieldSpec<DateTimeComponentsContents, string>;
     static parse(paramarg0: DateTimeComponents$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<DateTimeComponents>): DateTimeComponents;
 }

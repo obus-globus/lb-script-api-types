@@ -10,17 +10,17 @@ import type { BlockInWorld } from '../../../../../../../net/minecraft/world/leve
 import type { BlockPattern$BlockPatternMatch } from '../../../../../../../net/minecraft/world/level/block/state/pattern/BlockPattern$BlockPatternMatch.d.ts'
 export class BlockPattern extends Object implements BlockPatternExtended {
     static createLevelCache(paramlevel: LevelReader, paramloadChunks: boolean): LoadingCache<BlockPos, BlockInWorld>;
-    constructor(pattern: (param0: BlockInWorld) => kotlin.Boolean[][][])
+    constructor(pattern: (param0: BlockInWorld) => boolean[][][])
     readonly depth: number;
     readonly height: number;
-    readonly pattern: (param0: BlockInWorld) => kotlin.Boolean[][][];
+    readonly pattern: (param0: BlockInWorld) => boolean[][][];
     // private requiredBlock: Block;
     // private requiredBlockCount: number;
     readonly width: number;
     find(level: LevelReader, origin: BlockPos): BlockPattern$BlockPatternMatch;
     getDepth(): number;
     getHeight(): number;
-    getPattern(): (param0: BlockInWorld) => kotlin.Boolean[][][];
+    getPattern(): (param0: BlockInWorld) => boolean[][][];
     getWidth(): number;
     lithium$setRequiredBlock(arg0: Block, arg1: number): void;
     // private matches(origin: BlockPos, forwards: Direction, up: Direction, cache: LoadingCache<BlockPos, BlockInWorld>): BlockPattern$BlockPatternMatch;

@@ -61,7 +61,7 @@ export class FT_Stream extends Struct<FT_Stream> implements NativeResource {
     static npos(paramarg0: number): number;
     static npos(paramarg0: number, paramarg1: number): void;
     static nread(paramarg0: number): FT_Stream_IoFunc;
-    static nread(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number, param3: number) => kotlin.Long): void;
+    static nread(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number, param3: number) => number): void;
     static nsize(paramarg0: number): number;
     static nsize(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
@@ -83,8 +83,8 @@ export class FT_Stream extends Struct<FT_Stream> implements NativeResource {
     pos(): number;
     pos(arg0: number): FT_Stream;
     read(): FT_Stream_IoFunc;
-    read(arg0: (param0: number, param1: number, param2: number, param3: number) => kotlin.Long): FT_Stream;
-    set(arg0: ByteBuffer, arg1: number, arg2: number, arg3: FT_StreamDesc, arg4: FT_StreamDesc, arg5: (param0: number, param1: number, param2: number, param3: number) => kotlin.Long, arg6: (param0: number) => void): FT_Stream;
+    read(arg0: (param0: number, param1: number, param2: number, param3: number) => number): FT_Stream;
+    set(arg0: ByteBuffer, arg1: number, arg2: number, arg3: FT_StreamDesc, arg4: FT_StreamDesc, arg5: (param0: number, param1: number, param2: number, param3: number) => number, arg6: (param0: number) => void): FT_Stream;
     set(arg0: FT_Stream): FT_Stream;
     size(): number;
     size(arg0: number): FT_Stream;

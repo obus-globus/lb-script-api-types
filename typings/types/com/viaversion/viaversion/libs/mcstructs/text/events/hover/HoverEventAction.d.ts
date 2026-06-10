@@ -10,7 +10,7 @@ export class HoverEventAction extends Enum<HoverEventAction> implements NamedTyp
     static SHOW_TEXT: HoverEventAction;
     static byName(paramarg0: string): HoverEventAction;
     static byName(paramarg0: string, paramarg1: boolean): HoverEventAction;
-    static byName(paramarg0: string, paramarg1: (param0: string, param1: string) => kotlin.Boolean): HoverEventAction;
+    static byName(paramarg0: string, paramarg1: (param0: string, param1: string) => boolean): HoverEventAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HoverEventAction;
     static values(): (Object | null)[];

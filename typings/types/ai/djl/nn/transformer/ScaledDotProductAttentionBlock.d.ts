@@ -21,8 +21,8 @@ export class ScaledDotProductAttentionBlock extends AbstractBlock {
     readonly valueProjection: Linear;
     // private buildProjection(): Linear;
     // private createAttentionHeadsFromEmbeddings(arg0: NDArray, arg1: number, arg2: number, arg3: number, arg4: number): NDArray;
-    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
-    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     getKeyProjection(): Linear;
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];

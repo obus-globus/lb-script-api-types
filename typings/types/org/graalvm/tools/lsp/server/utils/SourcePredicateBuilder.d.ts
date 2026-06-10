@@ -9,7 +9,7 @@ import type { TextDocumentSurrogateMap } from '../../../../../../org/graalvm/too
 export class SourcePredicateBuilder extends Object {
     static newBuilder(): SourcePredicateBuilder;
     private constructor()
-    // private predicates: (param0: Source) => kotlin.Boolean[];
+    // private predicates: (param0: Source) => boolean[];
     build(): SourceSectionFilter$SourcePredicate;
     excludeInternal(options: OptionValues): SourcePredicateBuilder;
     language(languageInfo: LanguageInfo): SourcePredicateBuilder;

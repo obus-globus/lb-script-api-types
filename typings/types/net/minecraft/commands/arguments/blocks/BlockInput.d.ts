@@ -7,17 +7,17 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { BlockInWorld } from '../../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 import type { Property } from '../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class BlockInput extends Object implements Predicate<BlockInWorld> {
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(state: BlockState, properties: Property<Object>[], tag: CompoundTag)
     // private properties: Property<Object>[];
     readonly state: BlockState;
     // private tag: CompoundTag;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: BlockInWorld) => boolean): (param0: BlockInWorld) => boolean;
     getDefinedProperties(): Property<Object>[];
     getState(): BlockState;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: BlockInWorld) => boolean;
+    or(arg0: (param0: BlockInWorld) => boolean): (param0: BlockInWorld) => boolean;
     // private overwriteWithDefinedProperties(state: BlockState): BlockState;
     place(level: ServerLevel, pos: BlockPos, update: number): boolean;
     test(level: ServerLevel, pos: BlockPos): boolean;

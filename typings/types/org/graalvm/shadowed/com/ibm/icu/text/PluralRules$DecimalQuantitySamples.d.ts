@@ -7,9 +7,9 @@ export class PluralRules$DecimalQuantitySamples extends Object {
     bounded: boolean;
     sampleType: PluralRules$SampleType;
     readonly samples: PluralRules$DecimalQuantitySamplesRange[];
-    addDecimalQuantitySamples(result: E[]): E[];
-    addSamples(result: E[]): E[];
-    addSamples(doubleResult: E[], dqResult: E[]): void;
+    addDecimalQuantitySamples(result: DecimalQuantity[]): DecimalQuantity[];
+    addSamples(result: number[]): number[];
+    addSamples(doubleResult: number[], dqResult: DecimalQuantity[]): void;
     getSamples(): PluralRules$DecimalQuantitySamplesRange[];
     getStartEndSamples(target: DecimalQuantity[]): void;
     toString(): string;

@@ -19,11 +19,12 @@ import type { LootTable$Builder } from '../../../../net/minecraft/world/level/st
 import type { LootPoolEntryContainer$Builder } from '../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder.d.ts'
 import type { FunctionUserBuilder } from '../../../../net/minecraft/world/level/storage/loot/functions/FunctionUserBuilder.d.ts'
 import type { ConditionUserBuilder } from '../../../../net/minecraft/world/level/storage/loot/predicates/ConditionUserBuilder.d.ts'
+import type { LootItemCondition } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 import type { NumberProvider } from '../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export abstract class BlockLootSubProvider extends Object implements FabricBlockLootSubProvider, BlockLootSubProviderAccessor, LootTableSubProvider {
     static createCandleCakeDrops(paramcandle: Block): LootTable$Builder;
-    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
     static noDrop(): LootTable$Builder;
     constructor(explosionResistant: Item[], enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     // private enabledFeatures: FeatureFlagSet;
@@ -43,7 +44,7 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     createCaveVinesDrop(original: Block): LootTable$Builder;
     createCopperGolemStatueBlock(block: Block): LootTable$Builder;
     createCopperOreDrops(block: Block): LootTable$Builder;
-    createCropDrops(original: Block, cropDrop: Item, seedDrop: Item, isMaxAge: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): LootTable$Builder;
+    createCropDrops(original: Block, cropDrop: Item, seedDrop: Item, isMaxAge: () => LootItemCondition): LootTable$Builder;
     createDoorTable(block: Block): LootTable$Builder;
     createDoublePlantShearsDrop(block: Block): LootTable$Builder;
     createDoublePlantWithSeedDrops(block: Block, drop: Block): LootTable$Builder;
@@ -53,7 +54,7 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     createMangroveLeavesDrops(block: Block): LootTable$Builder;
     createMossyCarpetBlockDrops(block: Block): LootTable$Builder;
     createMultifaceBlockDrops(block: Block): LootTable$Builder;
-    createMultifaceBlockDrops(block: Block, condition: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): LootTable$Builder;
+    createMultifaceBlockDrops(block: Block, condition: () => LootItemCondition): LootTable$Builder;
     createMushroomBlockDrop(original: Block, drop: ItemLike): LootTable$Builder;
     createNameableBlockEntityTable(drop: Block): LootTable$Builder;
     createOakLeavesDrops(original: Block, sapling: Block, saplingChances: number[]): LootTable$Builder;
@@ -75,17 +76,17 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     createSinglePropConditionTable<T extends Comparable<T> & StringRepresentable>(drop: Block, property: Property<T>, value: T): LootTable$Builder;
     createSlabItemTable(slab: Block): LootTable$Builder;
     createStemDrops(block: Block, drop: Item): LootTable$Builder;
-    doesNotHaveShearsOrSilkTouch(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    doesNotHaveSilkTouch(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+    doesNotHaveShearsOrSilkTouch(): () => LootItemCondition;
+    doesNotHaveSilkTouch(): () => LootItemCondition;
     dropOther(block: Block, drop: ItemLike): void;
     dropPottedContents(potted: Block): void;
     dropSelf(block: Block): void;
     dropWhenSilkTouch(block: Block): void;
     generate(): void;
     generate(output: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void): void;
-    hasShears(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    hasShearsOrSilkTouch(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    hasSilkTouch(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+    hasShears(): () => LootItemCondition;
+    hasShearsOrSilkTouch(): () => LootItemCondition;
+    hasSilkTouch(): () => LootItemCondition;
     otherWhenSilkTouch(block: Block, other: Block): void;
     withConditions(arg0: ResourceCondition[]): BlockLootSubProvider;
 }

@@ -11,6 +11,6 @@ export class CallFunction<T extends ExecutionCommandSource<T>> extends Object im
     // private function: InstantiatedFunction<T>;
     // private resultCallback: (param0: boolean, param1: number) => void;
     // private returnParentFrame: boolean;
-    bind(sender: T): (param0: T, param1: ExecutionContext<Object>) => void;
+    bind(sender: T): (param0: ExecutionContext<T>, param1: Frame) => void;
     execute(sender: T, context: ExecutionContext<T>, frame: Frame): void;
 }

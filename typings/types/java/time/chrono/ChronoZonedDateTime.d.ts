@@ -7,6 +7,7 @@ import type { ChronoLocalDateTime } from '../../../java/time/chrono/ChronoLocalD
 import type { Chronology } from '../../../java/time/chrono/Chronology.d.ts'
 import type { DateTimeFormatter } from '../../../java/time/format/DateTimeFormatter.d.ts'
 import type { Temporal } from '../../../java/time/temporal/Temporal.d.ts'
+import type { TemporalAccessor } from '../../../java/time/temporal/TemporalAccessor.d.ts'
 import type { TemporalAdjuster } from '../../../java/time/temporal/TemporalAdjuster.d.ts'
 import type { TemporalAmount } from '../../../java/time/temporal/TemporalAmount.d.ts'
 import type { TemporalField } from '../../../java/time/temporal/TemporalField.d.ts'
@@ -35,16 +36,16 @@ export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal
     plus(arg0: TemporalAmount): ChronoZonedDateTime<D>;
     plus(arg0: number, arg1: TemporalUnit): ChronoZonedDateTime<D>;
     plus(arg0: TemporalAmount): Temporal;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     toEpochSecond(): number;
     toInstant(): Instant;
     toLocalDate(): D;
     toLocalDateTime(): ChronoLocalDateTime<D>;
     toLocalTime(): LocalTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): ChronoZonedDateTime<D>;
+    with(arg0: (param0: Temporal) => Temporal): ChronoZonedDateTime<D>;
     with(arg0: TemporalField, arg1: number): ChronoZonedDateTime<D>;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withEarlierOffsetAtOverlap(): ChronoZonedDateTime<D>;
     withLaterOffsetAtOverlap(): ChronoZonedDateTime<D>;
     withZoneSameInstant(arg0: ZoneId): ChronoZonedDateTime<D>;

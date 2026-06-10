@@ -6,7 +6,7 @@ export class SingleThreadEventLoop$ChannelsReadOnlyIterator<T extends Channel> e
     static empty(): Iterator<Object>;
     constructor(arg0: T[])
     // private channelIterator: Iterator<T>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Channel) => void): void;
     hasNext(): boolean;
     next(): Channel;
     remove(): void;

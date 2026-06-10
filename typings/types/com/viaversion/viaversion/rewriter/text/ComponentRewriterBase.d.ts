@@ -33,7 +33,7 @@ export abstract class ComponentRewriterBase<C extends ClientboundPacketType> ext
     processCompoundTag(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     processJsonArray(arg0: UserConnection, arg1: JsonElement[]): void;
     processJsonObject(arg0: UserConnection, arg1: JsonObject): void;
-    // private processListTag(arg0: UserConnection, arg1: T[]): void;
+    // private processListTag(arg0: UserConnection, arg1: Tag[]): void;
     processTag(arg0: UserConnection, arg1: Tag): void;
     processText(arg0: UserConnection, arg1: JsonElement): void;
     processText(arg0: UserConnection, arg1: string): JsonElement;
@@ -52,5 +52,4 @@ export abstract class ComponentRewriterBase<C extends ClientboundPacketType> ext
     // private removeDataComponent(arg0: Map$Entry<string, Tag>[], arg1: string): boolean;
     removeDataComponents(arg0: Map$Entry<string, Tag>[], arg1: StructuredDataKey<Object>[]): void;
     removeDataComponents(arg0: Map$Entry<string, Tag>[], arg1: string[]): void;
-    removeDataComponents(arg0: Map$Entry<string, Tag>[], arg1: E[]): void;
 }

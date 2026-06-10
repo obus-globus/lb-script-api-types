@@ -1,4 +1,5 @@
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { Stopwatch } from '../../../net/minecraft/world/Stopwatch.d.ts'
 import type { SavedData } from '../../../net/minecraft/world/level/saveddata/SavedData.d.ts'
@@ -14,5 +15,5 @@ export class Stopwatches extends SavedData {
     isDirty(): boolean;
     // private pack(): Map<Identifier, number>;
     remove(id: Identifier): boolean;
-    update(id: Identifier, update: (param0: Stopwatch) => unknown): boolean;
+    update(id: Identifier, update: (param0: Stopwatch) => Object | null): boolean;
 }

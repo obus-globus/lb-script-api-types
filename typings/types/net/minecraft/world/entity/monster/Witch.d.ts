@@ -6,15 +6,19 @@ import type { ServerLevel } from '../../../../../net/minecraft/server/level/Serv
 import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { DamageSource } from '../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntitySpawnReason } from '../../../../../net/minecraft/world/entity/EntitySpawnReason.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { EquipmentSlot } from '../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Mob } from '../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { AttributeModifier } from '../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { AttributeSupplier$Builder } from '../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
 import type { NearestAttackableWitchTargetGoal } from '../../../../../net/minecraft/world/entity/ai/goal/target/NearestAttackableWitchTargetGoal.d.ts'
 import type { NearestHealableRaiderTargetGoal } from '../../../../../net/minecraft/world/entity/ai/goal/target/NearestHealableRaiderTargetGoal.d.ts'
+import type { Monster } from '../../../../../net/minecraft/world/entity/monster/Monster.d.ts'
+import type { PatrollingMonster } from '../../../../../net/minecraft/world/entity/monster/PatrollingMonster.d.ts'
 import type { RangedAttackMob } from '../../../../../net/minecraft/world/entity/monster/RangedAttackMob.d.ts'
 import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { Raider } from '../../../../../net/minecraft/world/entity/raid/Raider.d.ts'
@@ -63,7 +67,7 @@ export class Witch extends Raider implements RangedAttackMob {
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
@@ -113,13 +117,13 @@ export class Witch extends Raider implements RangedAttackMob {
     static XP_REWARD_MEDIUM: number;
     static XP_REWARD_NONE: number;
     static XP_REWARD_SMALL: number;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
-    static checkAnyLightMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkPatrollingMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkSurfaceMonstersSpawnRules(paramtype: EntityType<Object>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkAnyLightMonsterSpawnRules(paramtype: EntityType<Monster>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMonsterSpawnRules(paramtype: EntityType<Mob>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkPatrollingMonsterSpawnRules(paramtype: EntityType<PatrollingMonster>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkSurfaceMonstersSpawnRules(paramtype: EntityType<Mob>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static createAttributes(): AttributeSupplier$Builder;

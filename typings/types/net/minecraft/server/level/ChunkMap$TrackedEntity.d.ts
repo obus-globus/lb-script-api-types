@@ -24,7 +24,7 @@ export class ChunkMap$TrackedEntity extends Object implements EntityTrackerAcces
     // private scaledRange(range: number): number;
     sendToTrackingPlayers(packet: Packet<ClientGamePacketListener>): void;
     sendToTrackingPlayersAndSelf(packet: Packet<ClientGamePacketListener>): void;
-    sendToTrackingPlayersFiltered(packet: Packet<ClientGamePacketListener>, targetPredicate: (param0: ServerPlayer) => kotlin.Boolean): void;
+    sendToTrackingPlayersFiltered(packet: Packet<ClientGamePacketListener>, targetPredicate: (param0: ServerPlayer) => boolean): void;
     updatePlayer(player: ServerPlayer): void;
     updatePlayers(players: ServerPlayer[]): void;
 }

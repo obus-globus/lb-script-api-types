@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -19,7 +20,7 @@ export class ClientboundTrackedWaypointPacket extends Record implements Packet<C
     static addWaypointAzimuth(paramidentifier: UUID, paramicon: Waypoint$Icon, paramangle: number): ClientboundTrackedWaypointPacket;
     static addWaypointChunk(paramidentifier: UUID, paramicon: Waypoint$Icon, paramchunk: ChunkPos): ClientboundTrackedWaypointPacket;
     static addWaypointPosition(paramidentifier: UUID, paramicon: Waypoint$Icon, paramposition: Vec3i): ClientboundTrackedWaypointPacket;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static removeWaypoint(paramidentifier: UUID): ClientboundTrackedWaypointPacket;
     static updateWaypointAzimuth(paramidentifier: UUID, paramicon: Waypoint$Icon, paramangle: number): ClientboundTrackedWaypointPacket;
     static updateWaypointChunk(paramidentifier: UUID, paramicon: Waypoint$Icon, paramchunk: ChunkPos): ClientboundTrackedWaypointPacket;

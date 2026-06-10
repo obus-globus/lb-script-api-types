@@ -23,7 +23,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
 import type { CollisionContext } from '../../../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class SingleBlockBlockView extends Record implements BlockGetter, CollisionGetter {
-    static forEachBlockIntersectedBetween(paramfrom: Vec3, paramto: Vec3, paramaabbAtTarget: AABB, paramvisitor: (param0: BlockPos, param1: number) => kotlin.Boolean): boolean;
+    static forEachBlockIntersectedBetween(paramfrom: Vec3, paramto: Vec3, paramaabbAtTarget: AABB, paramvisitor: (param0: BlockPos, param1: number) => boolean): boolean;
     static of(paramarg0: BlockState, paramarg1: BlockPos): SingleBlockBlockView;
     static traverseBlocks(paramfrom: Vec3, paramto: Vec3, paramcontext: Object | null, paramconsumer: (param0: Object | null, param1: BlockPos) => Object | null, parammissFactory: (param0: Object | null) => Object | null): Object | null;
     constructor(state: BlockState, blockPos: BlockPos)
@@ -45,7 +45,7 @@ export class SingleBlockBlockView extends Record implements BlockGetter, Collisi
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
     // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
     getBlockEntity(arg0: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
     getBlockState(arg0: BlockPos): BlockState;

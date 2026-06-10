@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Command } from '../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { CommandBuilder } from '../../../../../../net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class BuildPagedQueryCommandKt extends Object {
     /**
      * Builds a general paged query command with one optional integer parameter.
@@ -13,5 +14,5 @@ export class BuildPagedQueryCommandKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:119}
      */
-    static pagedQuery(commandBuilder: CommandBuilder, pageSize: number, header: (param0: Object | null) => Object | null, items: () => Object | null, eachRow: (param0: Object | null, param1: Object | null, param2: Object | null) => Object | null): Command;
+    static pagedQuery(commandBuilder: CommandBuilder, pageSize: number, header: (param0: Object) => Component, items: () => (Object | null)[], eachRow: (param0: Object, param1: Object, param2: Object) => Component): Command;
 }

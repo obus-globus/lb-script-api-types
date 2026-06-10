@@ -4,14 +4,15 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { OutgoingRpcMethod } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod.d.ts'
 import type { OutgoingRpcMethod$Attributes } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod$Attributes.d.ts'
 import type { OutgoingRpcMethod$Factory } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod$Factory.d.ts'
+import type { MethodInfo } from '../../../../net/minecraft/server/jsonrpc/api/MethodInfo.d.ts'
 import type { ParamInfo } from '../../../../net/minecraft/server/jsonrpc/api/ParamInfo.d.ts'
 import type { ResultInfo } from '../../../../net/minecraft/server/jsonrpc/api/ResultInfo.d.ts'
 import type { Schema } from '../../../../net/minecraft/server/jsonrpc/api/Schema.d.ts'
 export class OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Object {
     static DEFAULT_ATTRIBUTES: OutgoingRpcMethod$Attributes;
-    constructor(method: (param0: Params, param1: Result) => net.minecraft.server.jsonrpc.OutgoingRpcMethod<unknown, unknown>)
+    constructor(method: (param0: MethodInfo<Params, Result>, param1: OutgoingRpcMethod$Attributes) => OutgoingRpcMethod<Params, Result>)
     // private description: string;
-    // private method: (param0: Params, param1: Result) => net.minecraft.server.jsonrpc.OutgoingRpcMethod<unknown, unknown>;
+    // private method: (param0: MethodInfo<Params, Result>, param1: OutgoingRpcMethod$Attributes) => OutgoingRpcMethod<Params, Result>;
     // private paramInfo: ParamInfo<Params>;
     // private resultInfo: ResultInfo<Result>;
     // private build(): OutgoingRpcMethod<Params, Result>;

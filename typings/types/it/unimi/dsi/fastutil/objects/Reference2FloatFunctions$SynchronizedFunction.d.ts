@@ -35,32 +35,32 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2FloatFunctions$SynchronizedFunction<K extends Object | number | string | boolean> extends Object implements Reference2FloatFunction<K>, Serializable {
-    constructor(arg0: (param0: K) => kotlin.Float)
-    constructor(arg0: (param0: K) => kotlin.Float, arg1: Object)
-    // private function: (param0: K) => kotlin.Float;
+    constructor(arg0: (param0: Object) => number)
+    constructor(arg0: (param0: Object) => number, arg1: Object)
+    // private function: (param0: Object) => number;
     // private sync: Object;
-    andThen(arg0: (param0: number) => T): (param0: K) => T;
-    andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: K) => kotlin.Byte;
-    andThenChar(arg0: (param0: number) => kotlin.Char): (param0: K) => kotlin.Char;
-    andThenDouble(arg0: (param0: number) => kotlin.Double): (param0: K) => kotlin.Double;
-    andThenFloat(arg0: (param0: number) => kotlin.Float): (param0: K) => kotlin.Float;
-    andThenInt(arg0: (param0: number) => kotlin.Int): (param0: K) => kotlin.Int;
-    andThenLong(arg0: (param0: number) => kotlin.Long): (param0: K) => kotlin.Long;
-    andThenObject(arg0: (param0: T) => unknown): (param0: K) => T;
-    andThenReference(arg0: (param0: T) => unknown): (param0: K) => T;
-    andThenShort(arg0: (param0: number) => kotlin.Short): (param0: K) => kotlin.Short;
+    andThen<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: K) => T;
+    andThenByte(arg0: (param0: number) => number): (param0: Object) => number;
+    andThenChar(arg0: (param0: number) => string): (param0: Object) => string;
+    andThenDouble(arg0: (param0: number) => number): (param0: Object) => number;
+    andThenFloat(arg0: (param0: number) => number): (param0: Object) => number;
+    andThenInt(arg0: (param0: number) => number): (param0: Object) => number;
+    andThenLong(arg0: (param0: number) => number): (param0: Object) => number;
+    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: Object) => T;
+    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: Object) => T;
+    andThenShort(arg0: (param0: number) => number): (param0: Object) => number;
     apply(arg0: K): number;
     applyAsDouble(arg0: K): number;
     clear(): void;
-    composeByte(arg0: (param0: K) => unknown): (param0: number) => kotlin.Float;
-    composeChar(arg0: (param0: K) => unknown): (param0: string) => kotlin.Float;
-    composeDouble(arg0: (param0: K) => unknown): (param0: number) => kotlin.Float;
-    composeFloat(arg0: (param0: K) => unknown): (param0: number) => kotlin.Float;
-    composeInt(arg0: (param0: K) => unknown): (param0: number) => kotlin.Float;
-    composeLong(arg0: (param0: K) => unknown): (param0: number) => kotlin.Float;
-    composeObject(arg0: (param0: T) => K): (param0: T) => kotlin.Float;
-    composeReference(arg0: (param0: T) => K): (param0: T) => kotlin.Float;
-    composeShort(arg0: (param0: K) => unknown): (param0: number) => kotlin.Float;
+    composeByte(arg0: (param0: number) => K): (param0: number) => number;
+    composeChar(arg0: (param0: string) => K): (param0: string) => number;
+    composeDouble(arg0: (param0: number) => K): (param0: number) => number;
+    composeFloat(arg0: (param0: number) => K): (param0: number) => number;
+    composeInt(arg0: (param0: number) => K): (param0: number) => number;
+    composeLong(arg0: (param0: number) => K): (param0: number) => number;
+    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => number;
+    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => number;
+    composeShort(arg0: (param0: number) => K): (param0: number) => number;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

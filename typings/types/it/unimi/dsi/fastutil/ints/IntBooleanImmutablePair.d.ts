@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntBooleanImmutablePair extends Object implements IntBooleanPair, Serializable {
-    static lexComparator(): (param0: IntBooleanPair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: boolean): IntBooleanImmutablePair;
     static of(paramarg0: number, paramarg1: boolean): IntBooleanPair;
     constructor(arg0: number, arg1: boolean)

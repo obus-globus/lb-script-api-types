@@ -8,7 +8,7 @@ import type { LevelReader } from '../../../../../../../net/minecraft/world/level
 import type { BlockInWorld } from '../../../../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 export class BlockPattern$BlockCacheLoader extends CacheLoader<BlockPos, BlockInWorld> {
     static asyncReloading(paramloader: CacheLoader<Object, Object>, paramexecutor: Executor): CacheLoader<Object, Object>;
-    static from(paramfunction: (param0: Object | null) => Object | null): CacheLoader<Object, Object>;
+    static from(paramfunction: (param0: Object) => boolean): CacheLoader<Object, Object>;
     static from(paramsupplier: () => Object | null): CacheLoader<Object, Object>;
     constructor(level: LevelReader, loadChunks: boolean)
     // private level: LevelReader;

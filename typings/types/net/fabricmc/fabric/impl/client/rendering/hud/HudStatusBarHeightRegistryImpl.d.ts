@@ -6,8 +6,8 @@ import type { Player } from '../../../../../../../net/minecraft/world/entity/pla
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export class HudStatusBarHeightRegistryImpl extends Object implements ClientModInitializer {
     static LOGGER: Logger;
-    static addLeft(paramarg0: Identifier, paramarg1: (param0: Player) => kotlin.Int): void;
-    static addRight(paramarg0: Identifier, paramarg1: (param0: Player) => kotlin.Int): void;
+    static addLeft(paramarg0: Identifier, paramarg1: (param0: Player) => number): void;
+    static addRight(paramarg0: Identifier, paramarg1: (param0: Player) => number): void;
     static getHeight(paramarg0: Identifier): number;
     constructor()
     onInitializeClient(): void;

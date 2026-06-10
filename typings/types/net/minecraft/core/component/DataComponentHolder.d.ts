@@ -6,9 +6,9 @@ import type { DataComponentType } from '../../../../net/minecraft/core/component
 import type { TypedDataComponent } from '../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 export interface DataComponentHolder extends Object, DataComponentGetter{
     get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
-    getAllOfType(valueClass: Class<T>): Stream<T>;
+    getAllOfType<T extends Object | number | string | boolean>(valueClass: Class<T>): Stream<T>;
     getComponents(): TypedDataComponent<Object>[];
     getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
-    getTyped(type: DataComponentType<T>): TypedDataComponent<T>;
+    getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
     has(type: DataComponentType<Object>): boolean;
 }

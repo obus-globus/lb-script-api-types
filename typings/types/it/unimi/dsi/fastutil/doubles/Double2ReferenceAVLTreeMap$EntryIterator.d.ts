@@ -5,11 +5,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2ReferenceAVLTreeMap$EntryIterator extends Double2ReferenceAVLTreeMap$TreeIterator implements ObjectListIterator<Double2ReferenceMap$Entry<V>> {
     constructor(null_: Double2ReferenceAVLTreeMap$EntryIterator)
     constructor(null_: Double2ReferenceAVLTreeMap$EntryIterator, arg1: number)
-    add(arg0: Double2ReferenceMap$Entry<V>): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Double2ReferenceMap$Entry<V>;
-    previous(): Double2ReferenceMap$Entry<V>;
+    add<V extends Object | number | string | boolean>(arg0: Double2ReferenceMap$Entry<V>): void;
+    next<V extends Object | number | string | boolean>(): Double2ReferenceMap$Entry<V>;
+    previous<V extends Object | number | string | boolean>(): Double2ReferenceMap$Entry<V>;
     remove(): void;
-    set(arg0: Double2ReferenceMap$Entry<V>): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<V extends Object | number | string | boolean>(arg0: Double2ReferenceMap$Entry<V>): void;
 }

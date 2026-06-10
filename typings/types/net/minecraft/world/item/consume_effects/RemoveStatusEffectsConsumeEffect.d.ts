@@ -17,10 +17,10 @@ export class RemoveStatusEffectsConsumeEffect extends Record implements ConsumeE
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ConsumeEffect>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RemoveStatusEffectsConsumeEffect>;
     constructor(only: Holder<MobEffect>)
-    constructor(effects: Holder<T>[])
-    // private effects: Holder<T>[];
+    constructor(effects: Holder<MobEffect>[])
+    // private effects: Holder<MobEffect>[];
     apply(level: Level, stack: ItemStack, user: LivingEntity): boolean;
-    effects(): Holder<T>[];
+    effects(): Holder<MobEffect>[];
     equals(o: Object | null): boolean;
     getType(): ConsumeEffect$Type<RemoveStatusEffectsConsumeEffect>;
     hashCode(): number;

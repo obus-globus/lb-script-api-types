@@ -20,7 +20,7 @@ export abstract class Environment extends Object {
     readonly parent: Environment;
     addFrameSlotFromSymbol(symbol: Symbol): void;
     addFrameSlotsFromSymbols(symbols: Symbol[]): void;
-    addFrameSlotsFromSymbols(symbols: Symbol[], onlyBlockScoped: boolean, filter: (param0: Symbol) => kotlin.Boolean): void;
+    addFrameSlotsFromSymbols(symbols: Symbol[], onlyBlockScoped: boolean, filter: (param0: Symbol) => boolean): void;
     createLocal(frameSlot: JSFrameSlot, frameLevel: number, scopeLevel: number): JavaScriptNode;
     createTempVar(): Environment$VarRef;
     declareInternalSlot(name: Object): JSFrameSlot;

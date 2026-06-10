@@ -10,7 +10,7 @@ export class NetUtil extends Object {
     static LOCALHOST4: Inet4Address;
     static LOCALHOST6: Inet6Address;
     static LOOPBACK_IF: NetworkInterface;
-    static NETWORK_INTERFACES: E[];
+    static NETWORK_INTERFACES: NetworkInterface[];
     static SOMAXCONN: number;
     static bytesToIpAddress(paramarg0: number[]): string;
     static bytesToIpAddress(paramarg0: number[], paramarg1: number, paramarg2: number): string;

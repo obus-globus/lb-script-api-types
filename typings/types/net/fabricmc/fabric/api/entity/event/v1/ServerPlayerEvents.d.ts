@@ -9,7 +9,7 @@ import type { ServerPlayer } from '../../../../../../../net/minecraft/server/lev
 import type { DamageSource } from '../../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 export class ServerPlayerEvents extends Object {
     static AFTER_RESPAWN: Event<(param0: ServerPlayer, param1: ServerPlayer, param2: boolean) => void>;
-    static ALLOW_DEATH: Event<(param0: ServerPlayer, param1: DamageSource, param2: number) => kotlin.Boolean>;
+    static ALLOW_DEATH: Event<(param0: ServerPlayer, param1: DamageSource, param2: number) => boolean>;
     static COPY_FROM: Event<(param0: ServerPlayer, param1: ServerPlayer, param2: boolean) => void>;
     static JOIN: Event<(param0: ServerPlayer) => void>;
     static LEAVE: Event<(param0: ServerPlayer) => void>;

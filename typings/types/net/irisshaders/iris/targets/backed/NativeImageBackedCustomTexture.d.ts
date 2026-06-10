@@ -10,7 +10,7 @@ export class NativeImageBackedCustomTexture extends DynamicTexture implements Te
     // private shouldClamp: boolean;
     // private getId(): number;
     getSampling(): GlSampler;
-    getTextureId(): () => kotlin.Int;
+    getTextureId(): () => number;
     getType(): TextureType;
     upload(): void;
 }

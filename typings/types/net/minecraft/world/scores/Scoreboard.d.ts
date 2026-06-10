@@ -6,6 +6,7 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { DisplaySlot } from '../../../../net/minecraft/world/scores/DisplaySlot.d.ts'
 import type { Objective } from '../../../../net/minecraft/world/scores/Objective.d.ts'
 import type { Objective$Packed } from '../../../../net/minecraft/world/scores/Objective$Packed.d.ts'
+import type { PlayerScoreEntry } from '../../../../net/minecraft/world/scores/PlayerScoreEntry.d.ts'
 import type { PlayerScores } from '../../../../net/minecraft/world/scores/PlayerScores.d.ts'
 import type { PlayerTeam } from '../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 import type { PlayerTeam$Packed } from '../../../../net/minecraft/world/scores/PlayerTeam$Packed.d.ts'
@@ -32,18 +33,18 @@ export class Scoreboard extends Object {
     forAllObjectives(criteria: ObjectiveCriteria, name: ScoreHolder, operation: (param0: ScoreAccess) => void): void;
     getDisplayObjective(slot: DisplaySlot): Objective;
     getObjective(name: string): Objective;
-    getObjectiveNames(): E[];
-    getObjectives(): E[];
+    getObjectiveNames(): string[];
+    getObjectives(): Objective[];
     // private getOrCreatePlayerInfo(name: string): PlayerScores;
     getOrCreatePlayerScore(holder: ScoreHolder, objective: Objective): ScoreAccess;
     getOrCreatePlayerScore(scoreHolder: ScoreHolder, objective: Objective, forceWritable: boolean): ScoreAccess;
     getPlayerScoreInfo(name: ScoreHolder, objective: Objective): ReadOnlyScoreInfo;
     getPlayerTeam(name: string): PlayerTeam;
-    getPlayerTeams(): E[];
+    getPlayerTeams(): PlayerTeam[];
     getPlayersTeam(name: string): PlayerTeam;
-    getTeamNames(): E[];
-    getTrackedPlayers(): E[];
-    listPlayerScores(objective: Objective): E[];
+    getTeamNames(): string[];
+    getTrackedPlayers(): ScoreHolder[];
+    listPlayerScores(objective: Objective): PlayerScoreEntry[];
     listPlayerScores(player: ScoreHolder): Object2IntMap<Objective>;
     loadObjective(objective: Objective$Packed): void;
     loadPlayerScore(score: Scoreboard$PackedScore): void;

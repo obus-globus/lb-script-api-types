@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
 import type { SimpleFunctionDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SimpleFunctionDescriptor.d.ts'
 import type { TypeAliasDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeAliasDescriptor.d.ts'
@@ -25,7 +26,7 @@ export class DeserializedMemberScope$NoReorderImplementation extends Object impl
     // private typeAliasList: ProtoBuf$TypeAlias[];
     // private typeAliasesByName$delegate: NotNullLazyValue<Object>;
     // private variableNames$delegate: NotNullLazyValue<Object>;
-    addFunctionsAndPropertiesTo(arg0: E[], arg1: DescriptorKindFilter, arg2: (param0: Name) => boolean, arg3: LookupLocation): void;
+    addFunctionsAndPropertiesTo(arg0: DeclarationDescriptor[], arg1: DescriptorKindFilter, arg2: (param0: Name) => boolean, arg3: LookupLocation): void;
     // private computeAllNonDeclaredFunctions(): SimpleFunctionDescriptor[];
     // private computeAllNonDeclaredProperties(): PropertyDescriptor[];
     // private computeFunctions(): SimpleFunctionDescriptor[];
@@ -36,13 +37,13 @@ export class DeserializedMemberScope$NoReorderImplementation extends Object impl
     // private getAllFunctions(): SimpleFunctionDescriptor[];
     // private getAllProperties(): PropertyDescriptor[];
     // private getAllTypeAliases(): TypeAliasDescriptor[];
-    getContributedFunctions(arg0: Name, arg1: LookupLocation): E[];
-    getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
+    getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];
+    getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];
     // private getDeclaredFunctions(): SimpleFunctionDescriptor[];
     // private getDeclaredProperties(): PropertyDescriptor[];
     getFunctionNames(): Name[];
-    // private getFunctionsByName(): Map<Name, E[]>;
-    // private getPropertiesByName(): Map<Name, E[]>;
+    // private getFunctionsByName(): Map<Name, SimpleFunctionDescriptor[]>;
+    // private getPropertiesByName(): Map<Name, PropertyDescriptor[]>;
     getTypeAliasByName(arg0: Name): TypeAliasDescriptor;
     getTypeAliasNames(): Name[];
     // private getTypeAliasesByName(): Map<Name, TypeAliasDescriptor>;

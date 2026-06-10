@@ -5,7 +5,7 @@ export class BoolLayerCache extends Object {
     // private keys: number[];
     // private mask: number;
     // private values: (Object | null)[];
-    get(arg0: number, arg1: number, arg2: number, arg3: (param0: number, param1: number, param2: number) => kotlin.Boolean): boolean;
+    get(arg0: number, arg1: number, arg2: number, arg3: (param0: number, param1: number, param2: number) => boolean): boolean;
     murmur64(arg0: number): number;
     uniqueHash(arg0: number, arg1: number, arg2: number): number;
 }

@@ -4,7 +4,7 @@ import type { TaskRunner } from '../../../okhttp3/internal/concurrent/TaskRunner
 export interface TaskRunner$Backend extends Object {
     coordinatorNotify(taskRunner: TaskRunner): void;
     coordinatorWait(taskRunner: TaskRunner, nanos: number): void;
-    decorate(queue: T[]): T[];
+    decorate<T extends Object | number | string | boolean>(queue: T[]): T[];
     execute(taskRunner: TaskRunner, runnable: () => void): void;
     nanoTime(): number;
 }

@@ -17,7 +17,7 @@ export class LibClassifier<L extends Enum<L> & LibClassifier$LibraryType> extend
     getClassName(arg0: L): string;
     getLocalPath(arg0: L): string;
     getOrigin(arg0: L): Path[];
-    getSystemLibraries(): E[];
+    getSystemLibraries(): Path[][];
     getUnmatchedOrigins(): Path[][];
     has(arg0: L): boolean;
     is(arg0: Path[], arg1: L[]): boolean;

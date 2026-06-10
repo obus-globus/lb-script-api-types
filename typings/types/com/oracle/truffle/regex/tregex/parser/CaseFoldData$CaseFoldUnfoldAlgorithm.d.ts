@@ -14,6 +14,6 @@ export class CaseFoldData$CaseFoldUnfoldAlgorithm extends Enum<CaseFoldData$Case
     static valueOf(paramname: string): CaseFoldData$CaseFoldUnfoldAlgorithm;
     static values(): (Object | null)[];
     private constructor()
-    getEqualsPredicate(): (param0: number, param1: number) => kotlin.Boolean;
+    getEqualsPredicate(): (param0: number, param1: number) => boolean;
     name(): "Ascii" | "ECMAScriptNonUnicode" | "ECMAScriptUnicode" | "JavaUnicode15" | "JavaUnicode16" | "OracleDBSimple" | "PythonUnicode";
 }

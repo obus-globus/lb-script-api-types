@@ -16,13 +16,13 @@ export class Parameter extends Object implements AnnotatedElement {
     getAnnotatedType(): AnnotatedType;
     getAnnotation<A extends Annotation>(annotationType: Class<A>): A;
     getAnnotations(): Annotation[];
-    getAnnotationsByType(annotationType: Class<A>): A[];
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<A extends Annotation>(annotationType: Class<A>): A[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDeclaredAnnotation<A extends Annotation>(annotationType: Class<A>): A;
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getDeclaredAnnotations(): Annotation[];
-    getDeclaredAnnotationsByType(annotationType: Class<A>): A[];
-    getDeclaredAnnotationsByType(arg0: Class<T>): T[];
+    getDeclaredAnnotationsByType<A extends Annotation>(annotationType: Class<A>): A[];
+    getDeclaredAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDeclaringInvokable(): Invokable<Object, Object>;
     getType(): TypeToken<Object>;
     hashCode(): number;

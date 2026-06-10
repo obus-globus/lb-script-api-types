@@ -1,3 +1,4 @@
+import type { CallTarget } from '../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { Accessor$InstrumentSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$InstrumentSupport.d.ts'
@@ -24,7 +25,7 @@ export class InstrumentAccessor$InstrumentImpl extends Accessor$InstrumentSuppor
     finalizeInstrument(instrumentationHandler: Object, polyglotInstrument: Object): void;
     getEngineInstrumenter(instrumentationHandler: Object): Object;
     getInstrumentationHandlerService<T extends Object | number | string | boolean>(instrumentationHandler: Object, key: Object, type: Class<T>): T;
-    getLoadedCallTargets(instrumentationHandler: Object): E[];
+    getLoadedCallTargets(instrumentationHandler: Object): CallTarget[];
     getPolyglotInstrument(instrumentEnv: Object): Object;
     hasContextBindings(engine: Object): boolean;
     hasThreadBindings(engine: Object): boolean;

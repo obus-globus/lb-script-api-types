@@ -7,7 +7,7 @@ import type { FormattedCharSink } from '../../../../../../../net/minecraft/util/
 export class ConsoleRenderer$MessageRender extends Record {
     // private height: number;
     // private level: MessageLevel;
-    // private lines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private opacity: number;
     // private width: number;
     // private x: number;
@@ -16,7 +16,7 @@ export class ConsoleRenderer$MessageRender extends Record {
     hashCode(): number;
     height(): number;
     level(): MessageLevel;
-    lines(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    lines(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     opacity(): number;
     toString(): string;
     width(): number;

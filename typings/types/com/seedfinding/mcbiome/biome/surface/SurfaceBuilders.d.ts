@@ -16,7 +16,7 @@ export class SurfaceBuilders extends Object {
     static NOPE: (param0: SurfaceConfig) => SurfaceBuilder;
     static SHATTERED_SAVANNA: (param0: SurfaceConfig) => SurfaceBuilder;
     static SOUL_SAND_VALLEY: (param0: SurfaceConfig) => SurfaceBuilder;
-    static SURFACE_BUILDERS: { [key: string]: Object | null };
+    static SURFACE_BUILDERS: { [key: string]: (param0: SurfaceConfig) => SurfaceBuilder };
     static SWAMP: (param0: SurfaceConfig) => SurfaceBuilder;
     static WOODED_BADLANDS: (param0: SurfaceConfig) => SurfaceBuilder;
     static register(paramarg0: string, paramarg1: (param0: SurfaceConfig) => SurfaceBuilder): (param0: SurfaceConfig) => SurfaceBuilder;

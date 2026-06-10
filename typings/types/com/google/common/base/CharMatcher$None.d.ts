@@ -10,7 +10,7 @@ export class CharMatcher$None extends CharMatcher$NamedFastMatcher {
     static ascii(): CharMatcher;
     static breakingWhitespace(): CharMatcher;
     static digit(): CharMatcher;
-    static forPredicate(parampredicate: (param0: Object | null) => kotlin.Boolean): CharMatcher;
+    static forPredicate(parampredicate: (param0: Object) => boolean): CharMatcher;
     static inRange(paramstartInclusive: string, paramendInclusive: string): CharMatcher;
     static invisible(): CharMatcher;
     static is(parammatch: string): CharMatcher;
@@ -27,7 +27,7 @@ export class CharMatcher$None extends CharMatcher$NamedFastMatcher {
     static whitespace(): CharMatcher;
     private constructor()
     and(other: CharMatcher): CharMatcher;
-    and(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    and(arg0: (param0: string) => boolean): (param0: string) => boolean;
     collapseFrom(sequence: CharSequence, replacement: string): string;
     countIn(sequence: CharSequence): number;
     indexIn(sequence: CharSequence): number;
@@ -38,7 +38,7 @@ export class CharMatcher$None extends CharMatcher$NamedFastMatcher {
     matchesNoneOf(sequence: CharSequence): boolean;
     negate(): CharMatcher;
     or(other: CharMatcher): CharMatcher;
-    or(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    or(arg0: (param0: string) => boolean): (param0: string) => boolean;
     removeFrom(sequence: CharSequence): string;
     replaceFrom(sequence: CharSequence, replacement: string): string;
     replaceFrom(sequence: CharSequence, replacement: CharSequence): string;

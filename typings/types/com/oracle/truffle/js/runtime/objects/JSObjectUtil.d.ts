@@ -16,7 +16,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSObjectUtil extends Object {
     static changePropertyFlags(paramthisObj: JSDynamicObject, paramkey: Object, paramflags: number): void;
     static checkForNoSuchPropertyOrMethod(paramcontext: JSContext, paramkey: Object | null): Object | null;
-    static copyProperties(paramtarget: Object | null, paramsource: JSDynamicObject): Object | null;
+    static copyProperties(paramtarget: JSDynamicObject | null, paramsource: JSDynamicObject): JSDynamicObject | null;
     static createCached(paramkey: Object, paramobj: JSDynamicObject): DynamicObjectLibrary;
     static createDispatched(paramkey: Object): DynamicObjectLibrary;
     static createDispatched(paramkey: Object, paramlimit: number): DynamicObjectLibrary;

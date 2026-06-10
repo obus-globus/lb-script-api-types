@@ -30,7 +30,7 @@ export class TextureManager extends Object implements AutoCloseable, FabricResou
     registerAndLoad(textureId: Identifier, texture: ReloadableTexture): void;
     registerForNextReload(location: Identifier): void;
     release(location: Identifier): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     // private safeClose(id: Identifier, texture: AbstractTexture): void;
     tick(): void;
 }

@@ -15,12 +15,12 @@ import type { DeserializedContainerSource } from '../../../../../../../../kotlin
 import type { DeserializedMemberScope } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedMemberScope.d.ts'
 export class DeserializedPackageMemberScope extends DeserializedMemberScope {
     static Companion: MemberScope$Companion;
-    constructor(arg0: PackageFragmentDescriptor, arg1: ProtoBuf$Package, arg2: NameResolver, arg3: BinaryVersion, arg4: DeserializedContainerSource, arg5: DeserializationComponents, arg6: string, arg7: () => E[])
+    constructor(arg0: PackageFragmentDescriptor, arg1: ProtoBuf$Package, arg2: NameResolver, arg3: BinaryVersion, arg4: DeserializedContainerSource, arg5: DeserializationComponents, arg6: string, arg7: () => Name[])
     // private debugName: string;
     // private packageDescriptor: PackageFragmentDescriptor;
     // private packageFqName: FqName;
     readonly proto: ProtoBuf$Package;
-    addEnumEntryDescriptors(arg0: E[], arg1: (param0: Name) => boolean): void;
+    addEnumEntryDescriptors(arg0: DeclarationDescriptor[], arg1: (param0: Name) => boolean): void;
     createClassId(arg0: Name): ClassId;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];

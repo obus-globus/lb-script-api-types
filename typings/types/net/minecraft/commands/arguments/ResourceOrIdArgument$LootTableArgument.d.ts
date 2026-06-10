@@ -9,6 +9,7 @@ import type { ResourceOrIdArgument } from '../../../../net/minecraft/commands/ar
 import type { ResourceOrIdArgument$DialogArgument } from '../../../../net/minecraft/commands/arguments/ResourceOrIdArgument$DialogArgument.d.ts'
 import type { ResourceOrIdArgument$LootModifierArgument } from '../../../../net/minecraft/commands/arguments/ResourceOrIdArgument$LootModifierArgument.d.ts'
 import type { ResourceOrIdArgument$LootPredicateArgument } from '../../../../net/minecraft/commands/arguments/ResourceOrIdArgument$LootPredicateArgument.d.ts'
+import type { ResourceOrIdArgument$Result } from '../../../../net/minecraft/commands/arguments/ResourceOrIdArgument$Result.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { Tag } from '../../../../net/minecraft/nbt/Tag.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -21,7 +22,7 @@ export class ResourceOrIdArgument$LootTableArgument extends ResourceOrIdArgument
     static ERROR_FAILED_TO_PARSE: DynamicCommandExceptionType;
     static ERROR_NO_SUCH_ELEMENT: Dynamic2CommandExceptionType;
     static OPS: DynamicOps<Tag>;
-    static createGrammar(paramregistryKey: ResourceKey<Object>, paramops: DynamicOps<Object>): Grammar<Object>;
+    static createGrammar(paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<Object>): Grammar<ResourceOrIdArgument$Result<Object, Object>>;
     static dialog(paramcontext: CommandBuildContext): ResourceOrIdArgument$DialogArgument;
     static getDialog(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder<Dialog>;
     static getLootModifier(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder<LootItemFunction>;

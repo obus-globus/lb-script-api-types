@@ -9,7 +9,7 @@ export class Vec<T extends Object | number | string | boolean> extends Object im
     // private nbelem: number;
     clear(): void;
     clone(): IVec<T>;
-    copyTo(arg0: E[]): void;
+    copyTo<E extends Object | number | string | boolean>(arg0: E[]): void;
     copyTo(arg0: IVec<T>): void;
     delete(arg0: number): T;
     ensure(arg0: number): void;
@@ -25,11 +25,11 @@ export class Vec<T extends Object | number | string | boolean> extends Object im
     push(arg0: T): IVec<T>;
     remove(arg0: T): void;
     removeFromLast(arg0: T): void;
-    selectionSort(arg0: number, arg1: number, arg2: (param0: T) => kotlin.Boolean): void;
+    selectionSort(arg0: number, arg1: number, arg2: (param0: Object) => boolean): void;
     set(arg0: number, arg1: T): void;
     shrinkTo(arg0: number): void;
     size(): number;
-    sort(arg0: (param0: T) => kotlin.Boolean): void;
-    sort(arg0: number, arg1: number, arg2: (param0: T) => kotlin.Boolean): void;
+    sort(arg0: (param0: Object) => boolean): void;
+    sort(arg0: number, arg1: number, arg2: (param0: Object) => boolean): void;
     toString(): string;
 }

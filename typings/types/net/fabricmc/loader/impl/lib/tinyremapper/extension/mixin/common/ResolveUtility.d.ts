@@ -20,7 +20,7 @@ export class ResolveUtility extends Object {
     resolveField(arg0: TrClass, arg1: string, arg2: string, arg3: number): Optional<TrField>;
     resolveMember(arg0: string, arg1: string, arg2: string, arg3: number): Optional<TrMember>;
     resolveMember(arg0: TrClass, arg1: string, arg2: string, arg3: number): Optional<TrMember>;
-    // private resolveMember0(arg0: TrClass, arg1: string, arg2: string, arg3: number, arg4: () => E[], arg5: () => E[]): Optional<T>;
+    // private resolveMember0<T extends TrMember>(arg0: TrClass, arg1: string, arg2: string, arg3: number, arg4: () => T[], arg5: () => T[]): Optional<T>;
     resolveMethod(arg0: string, arg1: string, arg2: string, arg3: number): Optional<TrMethod>;
     resolveMethod(arg0: TrClass, arg1: string, arg2: string, arg3: number): Optional<TrMethod>;
 }

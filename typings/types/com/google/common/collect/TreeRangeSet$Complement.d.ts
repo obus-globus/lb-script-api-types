@@ -6,10 +6,10 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class TreeRangeSet$Complement extends TreeRangeSet<C> {
     static create(): TreeRangeSet<Object>;
     static create(paramrangeSet: RangeSet<Object>): TreeRangeSet<Object>;
-    static create(paramranges: (Object | null)[]): TreeRangeSet<Object>;
+    static create(paramranges: Range<Object>[]): TreeRangeSet<Object>;
     constructor(null_: TreeRangeSet$Complement)
-    add(rangeToAdd: Range<C>): void;
-    complement(): RangeSet<C>;
+    add<C extends Comparable<Object>>(rangeToAdd: Range<C>): void;
+    complement<C extends Comparable<Object>>(): RangeSet<C>;
     contains<C extends Comparable<Object>>(value: C): boolean;
-    remove(rangeToRemove: Range<C>): void;
+    remove<C extends Comparable<Object>>(rangeToRemove: Range<C>): void;
 }

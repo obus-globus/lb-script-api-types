@@ -4,13 +4,13 @@ import type { PathMatcher } from '../../../../../java/nio/file/PathMatcher.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PathAllowList$EntryType } from '../../../../../net/minecraft/world/level/validation/PathAllowList$EntryType.d.ts'
 export class PathAllowList$ConfigEntry extends Record {
-    constructor(type: (param0: FileSystem, param1: string) => java.nio.file.PathMatcher, pattern: string)
+    constructor(type: (param0: FileSystem, param1: string) => (param0: Path[][]) => boolean, pattern: string)
     // private pattern: string;
-    // private type: (param0: FileSystem, param1: string) => java.nio.file.PathMatcher;
-    compile(fileSystem: FileSystem): (param0: Path[][]) => kotlin.Boolean;
+    // private type: (param0: FileSystem, param1: string) => (param0: Path[][]) => boolean;
+    compile(fileSystem: FileSystem): (param0: Path[][]) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
     pattern(): string;
     toString(): string;
-    type(): (param0: FileSystem, param1: string) => java.nio.file.PathMatcher;
+    type(): (param0: FileSystem, param1: string) => (param0: Path[][]) => boolean;
 }

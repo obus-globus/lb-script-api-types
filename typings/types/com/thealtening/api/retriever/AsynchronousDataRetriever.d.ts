@@ -5,6 +5,7 @@ import type { BasicDataRetriever } from '../../../../com/thealtening/api/retriev
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Logger } from '../../../../java/util/logging/Logger.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
 export class AsynchronousDataRetriever extends BasicDataRetriever {
     static BASE_URL: string;
     static FAVORITES_URL: string;
@@ -16,7 +17,7 @@ export class AsynchronousDataRetriever extends BasicDataRetriever {
     static PRIVATE_ACC_URL: string;
     static gson: Gson;
     constructor(arg0: string)
-    // private completeTask(arg0: (param0: BasicDataRetriever) => T): CompletableFuture<T>;
+    // private completeTask<T extends Object | number | string | boolean>(arg0: (param0: BasicDataRetriever) => T): CompletableFuture<T>;
     getAccountDataAsync(): CompletableFuture<Account>;
     getFavoritedAccountsAsync(): CompletableFuture<Account[]>;
     getLicenseDataAsync(): CompletableFuture<License>;

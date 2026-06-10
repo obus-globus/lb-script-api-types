@@ -3,10 +3,10 @@ import type { TruffleOrderedReadOnlyKeysArray } from '../../../../../com/oracle/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TruffleSmallReadOnlyStringToIntMap extends AbstractRegexObject {
     static MAX_SIZE: number;
-    static canCreate(parammap: { [key: string]: Object | null }): boolean;
-    static create(paramargMap: { [key: string]: Object | null }): TruffleSmallReadOnlyStringToIntMap;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static canCreate(parammap: { [key: string]: number[] }): boolean;
+    static create(paramargMap: { [key: string]: number[] }): TruffleSmallReadOnlyStringToIntMap;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     private constructor(keys: string[], map: string[])
     // private keys: TruffleOrderedReadOnlyKeysArray;
     // private map: string[];

@@ -10,6 +10,6 @@ export class MetadataSectionType$WithValue<T extends Object | number | string | 
     hashCode(): number;
     toString(): string;
     type(): MetadataSectionType<T>;
-    unwrapToType(type: MetadataSectionType<U>): Optional<U>;
+    unwrapToType<U extends Object | number | string | boolean>(type: MetadataSectionType<U>): Optional<U>;
     value(): T;
 }

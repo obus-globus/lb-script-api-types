@@ -17,7 +17,7 @@ export class EntitySelectorOptions extends Object implements EntitySelectorOptio
     static ERROR_SORT_UNKNOWN: DynamicCommandExceptionType;
     static ERROR_UNKNOWN_OPTION: DynamicCommandExceptionType;
     static bootStrap(): void;
-    static callPutOption(paramarg0: string, paramarg1: (param0: EntitySelectorParser) => void, paramarg2: (param0: EntitySelectorParser) => kotlin.Boolean, paramarg3: Component): void;
+    static callPutOption(paramarg0: string, paramarg1: (param0: EntitySelectorParser) => void, paramarg2: (param0: EntitySelectorParser) => boolean, paramarg3: Component): void;
     static get(paramparser: EntitySelectorParser, paramkey: string, paramstart: number): (param0: EntitySelectorParser) => void;
     static suggestNames(paramparser: EntitySelectorParser, parambuilder: SuggestionsBuilder): void;
     constructor()

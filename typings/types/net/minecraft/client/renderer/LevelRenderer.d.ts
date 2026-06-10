@@ -78,7 +78,7 @@ export class LevelRenderer extends Object implements AutoCloseable, LevelRendere
     static HALF_SECTION_SIZE: number;
     static NEARBY_SECTION_DISTANCE_IN_BLOCKS: number;
     static SECTION_SIZE: number;
-    static getLightCoords(parambrightnessGetter: (param0: BlockAndLightGetter, param1: BlockPos) => kotlin.Int, paramlevel: BlockAndLightGetter, paramstate: BlockState, parampos: BlockPos): number;
+    static getLightCoords(parambrightnessGetter: (param0: BlockAndLightGetter, param1: BlockPos) => number, paramlevel: BlockAndLightGetter, paramstate: BlockState, parampos: BlockPos): number;
     static getLightCoords(paramlevel: BlockAndLightGetter, parampos: BlockPos): number;
     static offsetFrustum(paramfrustum: Frustum): Frustum;
     constructor(minecraft: Minecraft, entityRenderDispatcher: EntityRenderDispatcher, blockEntityRenderDispatcher: BlockEntityRenderDispatcher, renderBuffers: RenderBuffers, gameRenderState: GameRenderState, featureRenderDispatcher: FeatureRenderDispatcher)
@@ -193,7 +193,7 @@ export class LevelRenderer extends Object implements AutoCloseable, LevelRendere
     onResourceManagerReload(resourceManager: ResourceManager): void;
     onSectionBecomingNonEmpty(sectionNode: number): void;
     prepareChunkRenders(arg0: Matrix4fc): ChunkSectionsToRender;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     // private removeBlockBreakingProgress(): void;
     // private removeProgress(block: BlockDestructionProgress): void;
     // private renderBlockOutline(bufferSource: MultiBufferSource$BufferSource, poseStack: PoseStack, onlyTranslucentBlocks: boolean, levelRenderState: LevelRenderState): void;

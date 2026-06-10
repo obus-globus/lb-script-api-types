@@ -13,7 +13,7 @@ export class ServerFunctionManager extends Object {
     // private server: MinecraftServer;
     // private ticking: CommandFunction<CommandSourceStack>[];
     execute(functionIn: CommandFunction<CommandSourceStack>, sender: CommandSourceStack): void;
-    // private executeTagFunctions(functions: E[], loadFunctionTag: Identifier): void;
+    // private executeTagFunctions(functions: CommandFunction<CommandSourceStack>[], loadFunctionTag: Identifier): void;
     get(id: Identifier): Optional<CommandFunction<CommandSourceStack>>;
     getDispatcher(): CommandDispatcher<CommandSourceStack>;
     getFunctionNames(): Identifier[];

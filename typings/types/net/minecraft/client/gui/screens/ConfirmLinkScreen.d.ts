@@ -1,6 +1,5 @@
 import type { BooleanConsumer } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanConsumer.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button$OnPress } from '../../../../../net/minecraft/client/gui/components/Button$OnPress.d.ts'
@@ -27,7 +26,7 @@ export class ConfirmLinkScreen extends ConfirmScreen {
     static confirmLinkNow(paramparentScreen: Screen, paramuri: URI): void;
     static confirmLinkNow(paramparentScreen: Screen, paramuri: URI, paramtrusted: boolean): void;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(callback: (param0: boolean) => void, url: string, trusted: boolean)
     constructor(callback: (param0: boolean) => void, title: Component, uri: URI, trusted: boolean)

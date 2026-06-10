@@ -71,7 +71,7 @@ export class Wrapper extends Enum<Wrapper> {
     wrapperClassDescriptor(): ClassDesc;
     wrapperSimpleName(): string;
     wrapperType(): Class<Object>;
-    wrapperType(arg0: Class<T>): Class<T>;
+    wrapperType<T extends Object | number | string | boolean>(arg0: Class<T>): Class<T>;
     zero(): Object;
     zero<T extends Object | number | string | boolean>(arg0: Class<T>): T;
     name(): "BOOLEAN" | "BYTE" | "SHORT" | "CHAR" | "INT" | "LONG" | "FLOAT" | "DOUBLE" | "OBJECT" | "VOID";

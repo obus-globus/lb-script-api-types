@@ -17,8 +17,8 @@ import type { TagBuilder } from '../../../../net/minecraft/tags/TagBuilder.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export abstract class TagsProvider<T extends Object | number | string | boolean> extends Object implements DataProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
@@ -27,16 +27,16 @@ export abstract class TagsProvider<T extends Object | number | string | boolean>
     static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
     static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
     constructor(output: PackOutput, registryKey: ResourceKey<T[]>, lookupProvider: CompletableFuture<HolderLookup$Provider>)
-    constructor(output: PackOutput, registryKey: ResourceKey<T[]>, lookupProvider: CompletableFuture<HolderLookup$Provider>, parentProvider: CompletableFuture<(param0: T) => unknown>)
+    constructor(output: PackOutput, registryKey: ResourceKey<T[]>, lookupProvider: CompletableFuture<HolderLookup$Provider>, parentProvider: CompletableFuture<(param0: T) => Object | null>)
     builders: Map<Identifier, TagBuilder>;
     // private contentsDone: CompletableFuture<void>;
     // private lookupProvider: CompletableFuture<HolderLookup$Provider>;
-    // private parentProvider: CompletableFuture<(param0: T) => unknown>;
+    // private parentProvider: CompletableFuture<(param0: T) => Object | null>;
     // private pathProvider: PackOutput$PathProvider;
     // private registryKey: ResourceKey<T[]>;
     // private tagAliasPathResolver: PackOutput$PathProvider;
     addTags(registries: HolderLookup$Provider): void;
-    contentsGetter(): CompletableFuture<(param0: T) => unknown>;
+    contentsGetter(): CompletableFuture<(param0: T) => Object | null>;
     createContentsProvider(): CompletableFuture<HolderLookup$Provider>;
     getName(): string;
     getOrCreateRawBuilder(tag: TagKey<T>): TagBuilder;

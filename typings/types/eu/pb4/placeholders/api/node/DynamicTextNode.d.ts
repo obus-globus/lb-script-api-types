@@ -12,8 +12,8 @@ export class DynamicTextNode extends Record implements TextNode {
     static asSingle(paramarg0: TextNode[]): TextNode;
     static convert(paramarg0: Component): TextNode;
     static empty(): TextNode;
-    static key(paramarg0: string): ParserContext$Key<Object>;
-    static of(paramarg0: string, paramarg1: ParserContext$Key<Object>): DynamicTextNode;
+    static key(paramarg0: string): ParserContext$Key<(param0: string) => Component>;
+    static of(paramarg0: string, paramarg1: ParserContext$Key<(param0: string) => Component>): DynamicTextNode;
     static of(paramarg0: string): TextNode;
     static wrap(paramarg0: (Object | null)[]): TextNode;
     static wrap(paramarg0: TextNode[]): TextNode;

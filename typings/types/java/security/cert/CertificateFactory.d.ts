@@ -14,12 +14,12 @@ export class CertificateFactory extends Object {
     readonly provider: Provider;
     readonly type: string;
     generateCRL(arg0: InputStream): CRL;
-    generateCRLs(arg0: InputStream): E[];
+    generateCRLs(arg0: InputStream): CRL[];
     generateCertPath(arg0: Certificate[]): CertPath;
     generateCertPath(arg0: InputStream): CertPath;
     generateCertPath(arg0: InputStream, arg1: string): CertPath;
     generateCertificate(arg0: InputStream): Certificate;
-    generateCertificates(arg0: InputStream): E[];
+    generateCertificates(arg0: InputStream): Certificate[];
     getCertPathEncodings(): Iterator<string>;
     getProvider(): Provider;
     getType(): string;

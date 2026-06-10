@@ -10,7 +10,7 @@ export class ImmutableBiMap$Builder<K extends Object | number | string | boolean
     buildKeepingLast(): Map<K, V>;
     buildOrThrow(): Map<K, V>;
     combine(builder: ImmutableMap$Builder<K, V>): ImmutableBiMap$Builder<K, V>;
-    orderEntriesByValue(valueComparator: (param0: V) => kotlin.Boolean): ImmutableBiMap$Builder<K, V>;
+    orderEntriesByValue(valueComparator: (param0: Object) => boolean): ImmutableBiMap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableBiMap$Builder<K, V>;
     put(key: K, value: V): ImmutableBiMap$Builder<K, V>;
     putAll(map: Map<K, V>): ImmutableBiMap$Builder<K, V>;

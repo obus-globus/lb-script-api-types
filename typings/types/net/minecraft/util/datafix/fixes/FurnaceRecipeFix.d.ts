@@ -12,9 +12,9 @@ import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FurnaceRecipeFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(schema: Schema, changesType: boolean)
-    // private cap(recipeType: Type<R>): TypeRewriteRule;
+    // private cap<R extends Object | number | string | boolean>(recipeType: Type<R>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
-    // private updateFurnaceContents(recipeType: Type<R>, replacedType: Type<Pair<Either<Pair<Pair<R, number>[], Dynamic<Object>>, Unit>, Dynamic<Object>>>, input: Typed<Object>): Typed<Object>;
+    // private updateFurnaceContents<R extends Object | number | string | boolean>(recipeType: Type<R>, replacedType: Type<Pair<Either<Pair<Pair<R, number>[], Dynamic<Object>>, Unit>, Dynamic<Object>>>, input: Typed<Object>): Typed<Object>;
 }

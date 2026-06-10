@@ -11,11 +11,11 @@ import type { LootContext } from '../../../../../../../net/minecraft/world/level
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export class LootItemRandomChanceWithEnchantedBonusCondition extends Record implements LootItemCondition {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<LootItemRandomChanceWithEnchantedBonusCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
-    static randomChanceAndLootingBoost(paramregistries: HolderLookup$Provider, paramchance: number, paramperEnchantmentLevel: number): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+    static randomChanceAndLootingBoost(paramregistries: HolderLookup$Provider, paramchance: number, paramperEnchantmentLevel: number): () => LootItemCondition;
     // private enchantedChance: LevelBasedValue;
     // private enchantment: Holder<Enchantment>;
     // private unenchantedChance: number;

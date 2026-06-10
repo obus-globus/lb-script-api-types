@@ -9,15 +9,15 @@ export class LinkedListMultimap$NodeIterator extends Object implements ListItera
     // private next: LinkedListMultimap$Node<K, V>;
     // private nextIndex: number;
     // private previous: LinkedListMultimap$Node<K, V>;
-    add(e: Map$Entry<K, V>): void;
+    add<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(e: Map$Entry<K, V>): void;
     // private checkForConcurrentModification(): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    next(): LinkedListMultimap$Node<K, V>;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): LinkedListMultimap$Node<K, V>;
     nextIndex(): number;
-    previous(): LinkedListMultimap$Node<K, V>;
+    previous<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): LinkedListMultimap$Node<K, V>;
     previousIndex(): number;
     remove(): void;
-    set(e: Map$Entry<K, V>): void;
+    set<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(e: Map$Entry<K, V>): void;
     setValue<V extends Object | number | string | boolean>(value: V): void;
 }

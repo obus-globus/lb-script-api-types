@@ -1,4 +1,7 @@
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
+import type { DeclarationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
+import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
+import type { SimpleFunctionDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SimpleFunctionDescriptor.d.ts'
 import type { LookupLocation } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
 import type { DeclaredMemberIndex } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/DeclaredMemberIndex.d.ts'
@@ -25,13 +28,13 @@ export class LazyJavaPackageScope extends LazyJavaStaticScope {
     computeClassNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeFunctionNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     computeMemberIndex(): DeclaredMemberIndex;
-    computeNonDeclaredFunctions(arg0: E[], arg1: Name): void;
+    computeNonDeclaredFunctions(arg0: SimpleFunctionDescriptor[], arg1: Name): void;
     computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     // private findClassifier(arg0: Name, arg1: JavaClass): ClassDescriptor;
     findClassifierByJavaClass$descriptors_jvm(arg0: JavaClass): ClassDescriptor;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassDescriptor;
-    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): E[];
-    getContributedVariables(arg0: Name, arg1: LookupLocation): E[];
+    getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];
+    getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];
     // private getMetadataVersion(): MetadataVersion;
     getOwnerDescriptor(): LazyJavaPackageFragment;
     // private resolveKotlinBinaryClass(arg0: KotlinJvmBinaryClass): LazyJavaPackageScope$KotlinClassLookupResult;

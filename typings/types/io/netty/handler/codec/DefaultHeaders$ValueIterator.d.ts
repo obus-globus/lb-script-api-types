@@ -9,8 +9,8 @@ export class DefaultHeaders$ValueIterator extends Object implements Iterator<V> 
     // private next: DefaultHeaders$HeaderEntry<K, V>;
     // private previous: DefaultHeaders$HeaderEntry<K, V>;
     // private removalPrevious: DefaultHeaders$HeaderEntry<K, V>;
-    // private calculateNext(arg0: DefaultHeaders$HeaderEntry<K, V>): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    // private calculateNext<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: DefaultHeaders$HeaderEntry<K, V>): void;
+    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: V) => void): void;
     hasNext(): boolean;
     next<V extends Object | number | string | boolean>(): V;
     remove(): void;

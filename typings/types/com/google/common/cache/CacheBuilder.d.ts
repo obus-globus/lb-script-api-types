@@ -8,6 +8,7 @@ import type { CacheLoader } from '../../../../com/google/common/cache/CacheLoade
 import type { LoadingCache } from '../../../../com/google/common/cache/LoadingCache.d.ts'
 import type { LocalCache$Strength } from '../../../../com/google/common/cache/LocalCache$Strength.d.ts'
 import type { RemovalListener } from '../../../../com/google/common/cache/RemovalListener.d.ts'
+import type { RemovalNotification } from '../../../../com/google/common/cache/RemovalNotification.d.ts'
 import type { Weigher } from '../../../../com/google/common/cache/Weigher.d.ts'
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -26,15 +27,15 @@ export class CacheBuilder<K extends Object | number | string | boolean, V extend
     // private maximumSize: number;
     // private maximumWeight: number;
     // private refreshNanos: number;
-    // private removalListener: (param0: K) => void;
+    // private removalListener: (param0: RemovalNotification<K, V>) => void;
     // private statsCounterSupplier: () => AbstractCache$StatsCounter;
     // private strictParsing: boolean;
     // private ticker: Ticker;
     // private valueEquivalence: Equivalence<Object>;
     // private valueStrength: LocalCache$Strength;
-    // private weigher: (param0: K, param1: V) => kotlin.Int;
-    build(): Cache<K1, V1>;
-    build(loader: CacheLoader<K1, V1>): LoadingCache<K1, V1>;
+    // private weigher: (param0: K, param1: V) => number;
+    build<K1 extends K, V1 extends V>(): Cache<K1, V1>;
+    build<K1 extends K, V1 extends V>(loader: CacheLoader<K1, V1>): LoadingCache<K1, V1>;
     // private checkNonLoadingCache(): void;
     // private checkWeightWithWeigher(): void;
     concurrencyLevel(concurrencyLevel: number): CacheBuilder<K, V>;
@@ -50,12 +51,12 @@ export class CacheBuilder<K extends Object | number | string | boolean, V extend
     getKeyStrength(): LocalCache$Strength;
     getMaximumWeight(): number;
     getRefreshNanos(): number;
-    getRemovalListener(): (param0: K1) => void;
+    getRemovalListener<K1 extends K, V1 extends V>(): (param0: RemovalNotification<K1, V1>) => void;
     getStatsCounterSupplier(): () => AbstractCache$StatsCounter;
     getTicker(recordsTime: boolean): Ticker;
     getValueEquivalence(): Equivalence<Object>;
     getValueStrength(): LocalCache$Strength;
-    getWeigher(): (param0: K1, param1: V1) => kotlin.Int;
+    getWeigher<K1 extends K, V1 extends V>(): (param0: K1, param1: V1) => number;
     initialCapacity(initialCapacity: number): CacheBuilder<K, V>;
     isRecordingStats(): boolean;
     keyEquivalence(equivalence: Equivalence<Object>): CacheBuilder<K, V>;
@@ -65,7 +66,7 @@ export class CacheBuilder<K extends Object | number | string | boolean, V extend
     recordStats(): CacheBuilder<K, V>;
     refreshAfterWrite(duration: Duration): CacheBuilder<K, V>;
     refreshAfterWrite(duration: number, unit: TimeUnit): CacheBuilder<K, V>;
-    removalListener(listener: (param0: K1) => void): CacheBuilder<K1, V1>;
+    removalListener<K1 extends K, V1 extends V>(listener: (param0: RemovalNotification<K1, V1>) => void): CacheBuilder<K1, V1>;
     setKeyStrength(strength: LocalCache$Strength): CacheBuilder<K, V>;
     setValueStrength(strength: LocalCache$Strength): CacheBuilder<K, V>;
     softValues(): CacheBuilder<K, V>;
@@ -74,5 +75,5 @@ export class CacheBuilder<K extends Object | number | string | boolean, V extend
     valueEquivalence(equivalence: Equivalence<Object>): CacheBuilder<K, V>;
     weakKeys(): CacheBuilder<K, V>;
     weakValues(): CacheBuilder<K, V>;
-    weigher(weigher: (param0: K1, param1: V1) => kotlin.Int): CacheBuilder<K1, V1>;
+    weigher<K1 extends K, V1 extends V>(weigher: (param0: K1, param1: V1) => number): CacheBuilder<K1, V1>;
 }

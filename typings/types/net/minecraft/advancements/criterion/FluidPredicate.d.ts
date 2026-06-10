@@ -6,13 +6,14 @@ import type { StatePropertiesPredicate } from '../../../../net/minecraft/advance
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { Fluid } from '../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class FluidPredicate extends Record {
     static CODEC: Codec<FluidPredicate>;
-    constructor(fluids: Optional<Holder<T>[]>, properties: Optional<StatePropertiesPredicate>)
-    // private fluids: Optional<Holder<T>[]>;
+    constructor(fluids: Optional<Holder<Fluid>[]>, properties: Optional<StatePropertiesPredicate>)
+    // private fluids: Optional<Holder<Fluid>[]>;
     // private properties: Optional<StatePropertiesPredicate>;
     equals(o: Object | null): boolean;
-    fluids(): Optional<Holder<T>[]>;
+    fluids(): Optional<Holder<Fluid>[]>;
     hashCode(): number;
     matches(level: ServerLevel, pos: BlockPos): boolean;
     properties(): Optional<StatePropertiesPredicate>;

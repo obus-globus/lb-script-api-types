@@ -116,15 +116,15 @@ export abstract class Feature<FC extends FeatureConfiguration> extends Object {
     static VOID_START_PLATFORM: Feature<NoneFeatureConfiguration>;
     static WATERLOGGED_VEGETATION_PATCH: Feature<VegetationPatchConfiguration>;
     static WEEPING_VINES: Feature<NoneFeatureConfiguration>;
-    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => boolean): boolean;
     static isAdjacentToAir(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos): boolean;
-    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => kotlin.Boolean;
+    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => boolean;
     constructor(codec: Codec<FC>)
     // private configuredCodec: MapCodec<ConfiguredFeature<FC, Feature<FC>>>;
     configuredCodec(): MapCodec<ConfiguredFeature<FC, Feature<FC>>>;
     markAboveForPostProcessing(level: WorldGenLevel, placePos: BlockPos): void;
     place(config: FC, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     place(context: FeaturePlaceContext<FC>): boolean;
-    safeSetBlock(level: WorldGenLevel, pos: BlockPos, state: BlockState, canReplace: (param0: BlockState) => kotlin.Boolean): void;
+    safeSetBlock(level: WorldGenLevel, pos: BlockPos, state: BlockState, canReplace: (param0: BlockState) => boolean): void;
     setBlock(level: LevelWriter, pos: BlockPos, blockState: BlockState): void;
 }

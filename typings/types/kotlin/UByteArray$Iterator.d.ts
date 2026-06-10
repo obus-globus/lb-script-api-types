@@ -6,7 +6,7 @@ export class UByteArray$Iterator extends Object implements Iterator<UByte> {
     constructor(array: number[])
     // private array: number[];
     // private index: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: UByte) => void): void;
     hasNext(): boolean;
     next(): UByte;
 }

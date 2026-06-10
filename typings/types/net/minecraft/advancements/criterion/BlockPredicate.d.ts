@@ -10,17 +10,18 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { BlockInWorld } from '../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 export class BlockPredicate extends Record {
     static CODEC: Codec<BlockPredicate>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BlockPredicate>;
-    constructor(blocks: Optional<Holder<T>[]>, properties: Optional<StatePropertiesPredicate>, nbt: Optional<NbtPredicate>, components: DataComponentMatchers)
-    // private blocks: Optional<Holder<T>[]>;
+    constructor(blocks: Optional<Holder<Block>[]>, properties: Optional<StatePropertiesPredicate>, nbt: Optional<NbtPredicate>, components: DataComponentMatchers)
+    // private blocks: Optional<Holder<Block>[]>;
     // private components: DataComponentMatchers;
     // private nbt: Optional<NbtPredicate>;
     // private properties: Optional<StatePropertiesPredicate>;
-    blocks(): Optional<Holder<T>[]>;
+    blocks(): Optional<Holder<Block>[]>;
     components(): DataComponentMatchers;
     equals(o: Object | null): boolean;
     hashCode(): number;

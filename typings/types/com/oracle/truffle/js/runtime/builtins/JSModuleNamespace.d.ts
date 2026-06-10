@@ -12,6 +12,7 @@ import type { ExportResolution } from '../../../../../../com/oracle/truffle/js/r
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class JSModuleNamespace extends JSNonProxy {
     static DEFERRED_INSTANCE: JSModuleNamespace;
     static DEFERRED_TO_STRING_TAG: TruffleString;
@@ -19,7 +20,7 @@ export class JSModuleNamespace extends JSNonProxy {
     static INSTANCE: JSModuleNamespace;
     static TO_STRING_TAG: TruffleString;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
-    static create(paramcontext: JSContext, paramrealm: JSRealm, parammodule: AbstractModuleRecord, paramsortedExports: (Object | null)[], paramdeferred: boolean): JSModuleNamespaceObject;
+    static create(paramcontext: JSContext, paramrealm: JSRealm, parammodule: AbstractModuleRecord, paramsortedExports: Map$Entry<TruffleString, ExportResolution>[], paramdeferred: boolean): JSModuleNamespaceObject;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
     static getBindingValue(parambinding: ExportResolution): Object;
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;

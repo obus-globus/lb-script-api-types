@@ -7,7 +7,7 @@ export class CombinedStorage$CombinedIterator extends Object implements Iterator
     // private currentPartIterator: Iterator<StorageView<T>>;
     // private partIterator: Iterator<S>;
     // private advanceCurrentPartIterator(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<T extends Object | number | string | boolean>(arg0: (param0: StorageView<T>) => void): void;
     hasNext(): boolean;
-    next(): StorageView<T>;
+    next<T extends Object | number | string | boolean>(): StorageView<T>;
 }

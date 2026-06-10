@@ -8,7 +8,7 @@ import type { AbstractPiglinModel } from '../../../../../../net/minecraft/client
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { ZombifiedPiglinRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/ZombifiedPiglinRenderState.d.ts'
 export abstract class ZombifiedPiglinModel extends AbstractPiglinModel<ZombifiedPiglinRenderState> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

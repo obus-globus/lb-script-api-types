@@ -178,7 +178,7 @@ export class ArrayUtils extends Object {
     static isSameLength(paramarg0: number[], paramarg1: number[]): boolean;
     static isSameType(paramarg0: Object, paramarg1: Object): boolean;
     static isSorted(paramarg0: Object | null): boolean;
-    static isSorted(paramarg0: Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): boolean;
+    static isSorted(paramarg0: Object | null, paramarg1: (param0: Object) => boolean): boolean;
     static isSorted(paramarg0: (Object | null)[]): boolean;
     static isSorted(paramarg0: number[]): boolean;
     static isSorted(paramarg0: string[]): boolean;
@@ -301,7 +301,7 @@ export class ArrayUtils extends Object {
     static reverse(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static reverse(paramarg0: number[]): void;
     static reverse(paramarg0: number[], paramarg1: number, paramarg2: number): void;
-    static setAll(paramarg0: Object | null, paramarg1: (param0: Object | null) => unknown): Object | null;
+    static setAll(paramarg0: Object | null, paramarg1: (param0: number) => Object | null): Object | null;
     static setAll(paramarg0: Object | null, paramarg1: () => Object | null): Object | null;
     static shift(paramarg0: (Object | null)[], paramarg1: number): void;
     static shift(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: number): void;

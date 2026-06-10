@@ -6,5 +6,5 @@ import type { Kind2 } from '../../../../../com/mojang/datafixers/kinds/Kind2.d.t
 import type { FunctorProfunctor$Mu } from '../../../../../com/mojang/datafixers/optics/profunctors/FunctorProfunctor$Mu.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface FunctorProfunctor<T extends K1, P extends K2, Mu extends FunctorProfunctor$Mu<T>> extends Kind2<P, Mu>, Object{
-    distribute(arg0: App<T, F>, arg1: App2<P, A, B>): App2<P, App<F, A>, App<F, B>>;
+    distribute<F extends K1, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App<T, F>, arg1: App2<P, A, B>): App2<P, App<F, A>, App<F, B>>;
 }

@@ -7,5 +7,5 @@ export class Multimaps$TransformedEntriesListMultimap<K extends Object | number 
     get(key: K): V2[];
     removeAll(key: Object): V2[];
     replaceValues(key: K, values: V2[]): V2[];
-    transform(key: K, values: E[]): V2[];
+    transform(key: K, values: V1[]): V2[];
 }

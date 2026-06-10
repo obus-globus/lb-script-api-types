@@ -11,11 +11,11 @@ export class CompositeParser extends Object implements Parser {
     constructor()
     constructor(arg0: MediaTypeRegistry, arg1: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: Parser[])
-    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: E[])
+    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: Class<Parser>[])
     readonly fallback: Parser;
     readonly parsers: Parser[];
     // private registry: MediaTypeRegistry;
-    // private assignableFrom(arg0: E[], arg1: Class<Parser>): boolean;
+    // private assignableFrom(arg0: Class<Parser>[], arg1: Class<Parser>): boolean;
     findDuplicateParsers(arg0: ParseContext): Map<MediaType, Parser[]>;
     getAllComponentParsers(): Parser[];
     getFallback(): Parser;
@@ -25,7 +25,7 @@ export class CompositeParser extends Object implements Parser {
     getParsers(): Map<MediaType, Parser>;
     getParsers(arg0: ParseContext): Map<MediaType, Parser>;
     getSupportedTypes(arg0: ParseContext): MediaType[];
-    // private isExcluded(arg0: E[], arg1: Class<Parser>): boolean;
+    // private isExcluded(arg0: Class<Parser>[], arg1: Class<Parser>): boolean;
     parse(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: ParseContext): void;
     // private recordEmbeddedMetadata(arg0: Metadata, arg1: ParseContext): void;
     setFallback(arg0: Parser): void;

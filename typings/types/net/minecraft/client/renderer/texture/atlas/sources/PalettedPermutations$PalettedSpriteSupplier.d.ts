@@ -9,16 +9,16 @@ import type { LazyLoadedImage } from '../../../../../../../net/minecraft/client/
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Resource } from '../../../../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 export class PalettedPermutations$PalettedSpriteSupplier extends Record implements SpriteSource$DiscardableLoader {
-    private constructor(baseImage: LazyLoadedImage, palette: () => (param0: number) => kotlin.Int, permutationLocation: Identifier)
+    private constructor(baseImage: LazyLoadedImage, palette: () => (param0: number) => number, permutationLocation: Identifier)
     // private baseImage: LazyLoadedImage;
-    // private palette: () => (param0: number) => kotlin.Int;
+    // private palette: () => (param0: number) => number;
     // private permutationLocation: Identifier;
     baseImage(): LazyLoadedImage;
     discard(): void;
     equals(o: Object | null): boolean;
-    get(loader: (param0: Identifier, param1: Resource) => net.minecraft.client.renderer.texture.SpriteContents): SpriteContents;
+    get(loader: (param0: Identifier, param1: Resource) => SpriteContents): SpriteContents;
     hashCode(): number;
-    palette(): () => (param0: number) => kotlin.Int;
+    palette(): () => (param0: number) => number;
     permutationLocation(): Identifier;
     toString(): string;
 }

@@ -3,6 +3,7 @@ import type { StackTraceElement } from '../../../../../../../java/lang/StackTrac
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Marker } from '../../../../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
+import type { AbstractManager } from '../../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { ManagerFactory } from '../../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { AbstractDatabaseManager } from '../../../../../../../org/apache/logging/log4j/core/appender/db/AbstractDatabaseManager.d.ts'
 import type { NoSqlConnection } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlConnection.d.ts'
@@ -12,7 +13,7 @@ import type { Configuration } from '../../../../../../../org/apache/logging/log4
 import type { KeyValuePair } from '../../../../../../../org/apache/logging/log4j/core/util/KeyValuePair.d.ts'
 import type { MapMessage } from '../../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 export class NoSqlDatabaseManager<W extends Object | number | string | boolean> extends AbstractDatabaseManager {
-    static getManager(paramname: string, paramfactory: ManagerFactory<Object, Object>, paramdata: Object | null): Object | null;
+    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<Object>): NoSqlDatabaseManager<Object>;
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<Object>, paramadditionalFields: (Object | null)[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;
     static hasManager(paramname: string): boolean;

@@ -28,8 +28,8 @@ export class Checks extends Object {
     static check(paramarg0: CustomBuffer<Object>, paramarg1: number): void;
     static check(paramarg0: number[], paramarg1: number): void;
     static checkFunctions(paramarg0: number[]): boolean;
-    static checkFunctions(paramarg0: (param0: ByteBuffer) => kotlin.Long, paramarg1: number[], paramarg2: number[], paramarg3: (Object | null)[]): boolean;
-    static checkFunctions(paramarg0: (param0: ByteBuffer) => kotlin.Long, paramarg1: PointerBuffer, paramarg2: number[], paramarg3: (Object | null)[]): boolean;
+    static checkFunctions(paramarg0: (param0: ByteBuffer) => number, paramarg1: number[], paramarg2: number[], paramarg3: (Object | null)[]): boolean;
+    static checkFunctions(paramarg0: (param0: ByteBuffer) => number, paramarg1: PointerBuffer, paramarg2: number[], paramarg3: (Object | null)[]): boolean;
     static checkFunctions(paramarg0: FunctionProviderLocal, paramarg1: number, paramarg2: PointerBuffer, paramarg3: number[], paramarg4: (Object | null)[]): boolean;
     static checkGT(paramarg0: Buffer, paramarg1: number): void;
     static checkGT(paramarg0: CustomBuffer<Object>, paramarg1: number): void;

@@ -3,6 +3,7 @@ import type { KotlinBuiltIns$Primitives } from '../../../../../../kotlin/reflect
 import type { PrimitiveType } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
 import type { ClassDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
+import type { PackageViewDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PackageViewDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { AdditionalClassPartsProvider } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/deserialization/AdditionalClassPartsProvider.d.ts'
 import type { ClassDescriptorFactory } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/deserialization/ClassDescriptorFactory.d.ts'
@@ -53,7 +54,7 @@ export abstract class KotlinBuiltIns extends Object {
     static isUnsignedArrayType(paramarg0: KotlinType): boolean;
     constructor(arg0: StorageManager)
     // private builtInClassesByName: MemoizedFunctionToNotNull<Name, ClassDescriptor>;
-    // private builtInPackagesImportedByDefault: NotNullLazyValue<E[]>;
+    // private builtInPackagesImportedByDefault: NotNullLazyValue<PackageViewDescriptor[]>;
     readonly builtInsModule: ModuleDescriptorImpl;
     // private postponedBuiltInsModule: NotNullLazyValue<ModuleDescriptorImpl>;
     // private primitives: NotNullLazyValue<KotlinBuiltIns$Primitives>;

@@ -49,7 +49,7 @@ export class LogManager extends Object {
     // private forceLoadHandlers(arg0: Logger): boolean;
     getBooleanProperty(arg0: string, arg1: boolean): boolean;
     getConfigurationFileName(): string;
-    getFilterProperty(arg0: string, arg1: (param0: LogRecord) => kotlin.Boolean): (param0: LogRecord) => kotlin.Boolean;
+    getFilterProperty(arg0: string, arg1: (param0: LogRecord) => boolean): (param0: LogRecord) => boolean;
     getFormatterProperty(arg0: string, arg1: Formatter): Formatter;
     getIntProperty(arg0: string, arg1: number): number;
     getLevelProperty(arg0: string, arg1: Level): Level;

@@ -12,18 +12,18 @@ export class DataComponentMatchers extends Record implements Predicate<DataCompo
     static ANY: DataComponentMatchers;
     static CODEC: MapCodec<DataComponentMatchers>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentMatchers>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(exact: DataComponentExactPredicate, partial: Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>)
     // private exact: DataComponentExactPredicate;
     // private partial: Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
     equals(o: Object | null): boolean;
     exact(): DataComponentExactPredicate;
     hashCode(): number;
     isEmpty(): boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: DataComponentGetter) => boolean;
+    or(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
     partial(): Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>;
     test(values: DataComponentGetter): boolean;
     toString(): string;

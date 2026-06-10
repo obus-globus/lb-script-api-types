@@ -7,7 +7,7 @@ export class MappingResolverImpl extends Object implements MappingResolver {
     // private targetNamespace: string;
     // private targetNamespaceId: number;
     getCurrentRuntimeNamespace(): string;
-    getNamespaces(): E[];
+    getNamespaces(): string[];
     mapClassName(arg0: string, arg1: string): string;
     mapFieldName(arg0: string, arg1: string, arg2: string, arg3: string): string;
     mapMethodName(arg0: string, arg1: string, arg2: string, arg3: string): string;

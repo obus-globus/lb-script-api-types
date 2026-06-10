@@ -12,10 +12,10 @@ export class ObjectRBTreeSet$SetIterator extends Object implements ObjectListIte
     hasNext(): boolean;
     hasPrevious(): boolean;
     next<K extends Object | number | string | boolean>(): K;
-    nextEntry(): ObjectRBTreeSet$Entry<K>;
+    nextEntry<K extends Object | number | string | boolean>(): ObjectRBTreeSet$Entry<K>;
     nextIndex(): number;
     previous<K extends Object | number | string | boolean>(): K;
-    previousEntry(): ObjectRBTreeSet$Entry<K>;
+    previousEntry<K extends Object | number | string | boolean>(): ObjectRBTreeSet$Entry<K>;
     previousIndex(): number;
     remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;

@@ -12,6 +12,6 @@ export class Render3DKt extends Object {
     static translate(poseStack: PoseStack, x: number, y: number, z: number): void;
     static translate(poseStack: PoseStack, blockPos: number, origin: BlockPos): void;
     static translate(poseStack: PoseStack, vec3i: Vec3i): void;
-    static usePoseStack(block: (param0: Object | null) => Object | null): Object | null;
-    static withPush(poseStack: PoseStack, block: (param0: Object | null) => void): void;
+    static usePoseStack(block: (param0: Object) => Object | null): Object | null;
+    static withPush(poseStack: PoseStack, block: (param0: Object) => void): void;
 }

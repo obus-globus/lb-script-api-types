@@ -11,11 +11,11 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PermissionContextKey<T extends Object | number | string | boolean> extends Record implements PermissionContext$Key<T> {
     static BLOCK_POSITION: PermissionContext$Key<BlockPos>;
     static COMMAND_SOURCE_STACK: PermissionContext$Key<CommandSourceStack>;
-    static DEFAULT_COMMAND_ENTITY_KEYS: (Object | null)[];
-    static DEFAULT_COMMAND_KEYS: (Object | null)[];
-    static DEFAULT_COMMON_KEYS: (Object | null)[];
-    static DEFAULT_ENTITY_KEYS: (Object | null)[];
-    static DEFAULT_SERVER_ENTITY_KEYS: (Object | null)[];
+    static DEFAULT_COMMAND_ENTITY_KEYS: PermissionContext$Key<Object>[];
+    static DEFAULT_COMMAND_KEYS: PermissionContext$Key<Object>[];
+    static DEFAULT_COMMON_KEYS: PermissionContext$Key<Object>[];
+    static DEFAULT_ENTITY_KEYS: PermissionContext$Key<Object>[];
+    static DEFAULT_SERVER_ENTITY_KEYS: PermissionContext$Key<Object>[];
     static ENTITY: PermissionContext$Key<Entity>;
     static LEVEL: PermissionContext$Key<Level>;
     static NAME: PermissionContext$Key<string>;

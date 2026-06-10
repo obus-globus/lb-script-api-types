@@ -58,6 +58,7 @@ import type { PrintStream } from '../../java/io/PrintStream.d.ts'
 import type { PrintWriter } from '../../java/io/PrintWriter.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 import type { AccessibleStateSet } from '../../javax/accessibility/AccessibleStateSet.d.ts'
@@ -253,7 +254,7 @@ export abstract class Component extends Object implements MenuContainer, ImageOb
     getInputMethodRequests(): InputMethodRequests;
     // private getInsets_NoClientCode(): Insets;
     getKeyListeners(): KeyListener[];
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getLocale(): Locale;
     getLocation(): Point;
     getLocation(arg0: Point): Point;

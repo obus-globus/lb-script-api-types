@@ -16,7 +16,7 @@ export class ConstructorStream extends Object {
     by(arg0: Class<Object>[]): ConstructorWrapper;
     by(arg0: number): ConstructorWrapper;
     copy(): ConstructorStream;
-    filter(arg0: (param0: ConstructorWrapper) => kotlin.Boolean): ConstructorStream;
+    filter(arg0: (param0: ConstructorWrapper) => boolean): ConstructorStream;
     filter(arg0: Class<Object>[]): ConstructorStream;
     filter(arg0: boolean): ConstructorStream;
     filterAnnotation(arg0: Class<Object>): ConstructorStream;
@@ -25,7 +25,7 @@ export class ConstructorStream extends Object {
     forEach(arg0: (param0: ConstructorWrapper) => void): ConstructorStream;
     iterator(): Iterator<ConstructorWrapper>;
     jstream(): Stream<ConstructorWrapper>;
-    map(arg0: (param0: ConstructorWrapper) => T): Stream<T>;
+    map<T extends Object | number | string | boolean>(arg0: (param0: ConstructorWrapper) => T): Stream<T>;
     opt(arg0: Class<Object>[]): Optional<ConstructorWrapper>;
     opt(arg0: number): Optional<ConstructorWrapper>;
     parent(): RStream;

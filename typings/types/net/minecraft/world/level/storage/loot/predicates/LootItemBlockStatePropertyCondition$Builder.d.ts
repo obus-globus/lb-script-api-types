@@ -12,9 +12,9 @@ export class LootItemBlockStatePropertyCondition$Builder extends Object implemen
     constructor(block: Block)
     // private block: Holder<Block>;
     // private properties: Optional<StatePropertiesPredicate>;
-    and(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AllOfCondition$Builder;
+    and(other: () => LootItemCondition): AllOfCondition$Builder;
     build(): LootItemCondition;
-    invert(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    or(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AnyOfCondition$Builder;
+    invert(): () => LootItemCondition;
+    or(other: () => LootItemCondition): AnyOfCondition$Builder;
     setProperties(properties: StatePropertiesPredicate$Builder): LootItemBlockStatePropertyCondition$Builder;
 }

@@ -7,15 +7,18 @@ import type { ItemPredicate } from '../../../../../net/minecraft/advancements/cr
 import type { SingleComponentItemPredicate } from '../../../../../net/minecraft/advancements/criterion/SingleComponentItemPredicate.d.ts'
 import type { DataComponentGetter } from '../../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
 import type { DataComponentType } from '../../../../../net/minecraft/core/component/DataComponentType.d.ts'
+import type { DataComponentPredicate } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate.d.ts'
+import type { DataComponentPredicate$Single } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Single.d.ts'
+import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Type.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemContainerContents } from '../../../../../net/minecraft/world/item/component/ItemContainerContents.d.ts'
 export class ContainerPredicate extends Record implements SingleComponentItemPredicate<ItemContainerContents> {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
     static CODEC: Codec<ContainerPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
     constructor(items: Optional<CollectionPredicate<ItemInstance, ItemPredicate>>)
     // private items: Optional<CollectionPredicate<ItemInstance, ItemPredicate>>;
     componentType(): DataComponentType<ItemContainerContents>;

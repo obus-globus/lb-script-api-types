@@ -1,6 +1,5 @@
 import type { DataFixer } from '../../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { BooleanConsumer } from '../../../../../../it/unimi/dsi/fastutil/booleans/BooleanConsumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -21,7 +20,7 @@ export class OptimizeWorldScreen extends Screen {
     static MENU_BACKGROUND: Identifier;
     static create(paramminecraft: Minecraft, paramcallback: (param0: boolean) => void, paramdataFixer: DataFixer, paramlevelSourceAccess: LevelStorageSource$LevelStorageAccess, parameraseCache: boolean): OptimizeWorldScreen;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     private constructor(callback: (param0: boolean) => void, dataFixer: DataFixer, levelSource: LevelStorageSource$LevelStorageAccess, worldData: WorldData, eraseCache: boolean, registryAccess: RegistryAccess)
     // private callback: (param0: boolean) => void;

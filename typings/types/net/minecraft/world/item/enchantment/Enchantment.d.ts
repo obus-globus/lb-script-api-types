@@ -13,6 +13,7 @@ import type { DamageSource } from '../../../../../net/minecraft/world/damagesour
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EquipmentSlot } from '../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { ConditionalEffect } from '../../../../../net/minecraft/world/item/enchantment/ConditionalEffect.d.ts'
@@ -31,18 +32,18 @@ import type { LootContext } from '../../../../../net/minecraft/world/level/stora
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { MutableFloat } from '../../../../../org/apache/commons/lang3/mutable/MutableFloat.d.ts'
 export class Enchantment extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Enchantment>>;
     static DIRECT_CODEC: Codec<Enchantment>;
     static MAX_LEVEL: number;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
-    static applyEffects(parameffects: (Object | null)[], paramfilterData: LootContext, paramaction: (param0: Object | null) => void): void;
-    static applyEffects(parameffects: (Object | null)[], paramfilterData: LootContext, paramvalue: MutableFloat, paramaction: (param0: Object | null, param1: Object | null) => kotlin.Float): void;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Enchantment>>;
+    static applyEffects(parameffects: ConditionalEffect<Object>[], paramfilterData: LootContext, paramaction: (param0: Object | null) => void): void;
+    static applyEffects(parameffects: ConditionalEffect<Object>[], paramfilterData: LootContext, paramvalue: MutableFloat, paramaction: (param0: Object | null, param1: number) => number): void;
     static areCompatible(paramenchantment: Holder<Enchantment>, paramother: Holder<Enchantment>): boolean;
     static blockHitContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramentity: Entity, paramposition: Vec3, paramhitBlock: BlockState): LootContext;
     static constantCost(parambase: number): Enchantment$Cost;
     static damageContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramvictim: Entity, paramsource: DamageSource): LootContext;
-    static definition(paramsupportedItems: Holder<T>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
-    static definition(paramsupportedItems: Holder<T>[], paramprimaryItems: Holder<T>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
+    static definition(paramsupportedItems: Holder<Item>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
+    static definition(paramsupportedItems: Holder<Item>[], paramprimaryItems: Holder<Item>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
     static doPostAttack(parameffect: TargetedConditionalEffect<EnchantmentEntityEffect>, paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramitem: EnchantedItemInUse, paramvictim: Entity, paramdamageSource: DamageSource): void;
     static dynamicCost(parambase: number, paramperLevel: number): Enchantment$Cost;
     static enchantment(paramdefinition: Enchantment$EnchantmentDefinition): Enchantment$Builder;
@@ -50,11 +51,11 @@ export class Enchantment extends Record {
     static getFullname(paramenchantment: Holder<Enchantment>, paramlevel: number): Component;
     static itemContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramitemStack: ItemInstance): LootContext;
     static locationContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramentity: Entity, paramactive: boolean): LootContext;
-    constructor(description: Component, definition: Enchantment$EnchantmentDefinition, exclusiveSet: Holder<T>[], effects: TypedDataComponent<Object>[])
+    constructor(description: Component, definition: Enchantment$EnchantmentDefinition, exclusiveSet: Holder<Enchantment>[], effects: TypedDataComponent<Object>[])
     // private definition: Enchantment$EnchantmentDefinition;
     // private description: Component;
     // private effects: TypedDataComponent<Object>[];
-    // private exclusiveSet: Holder<T>[];
+    // private exclusiveSet: Holder<Enchantment>[];
     canEnchant(itemStack: ItemStack): boolean;
     definition(): Enchantment$EnchantmentDefinition;
     description(): Component;
@@ -62,15 +63,15 @@ export class Enchantment extends Record {
     doPostPiercingAttack(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, user: Entity): void;
     effects(): TypedDataComponent<Object>[];
     equals(o: Object | null): boolean;
-    exclusiveSet(): Holder<T>[];
+    exclusiveSet(): Holder<Enchantment>[];
     getAnvilCost(): number;
-    getEffects(type: DataComponentType<T[]>): T[];
+    getEffects<T extends Object | number | string | boolean>(type: DataComponentType<T[]>): T[];
     getMaxCost(level: number): number;
     getMaxLevel(): number;
     getMinCost(level: number): number;
     getMinLevel(): number;
     getSlotItems(entity: LivingEntity): { [key in EquipmentSlot]: ItemStack };
-    getSupportedItems(): Holder<T>[];
+    getSupportedItems(): Holder<Item>[];
     getWeight(): number;
     hashCode(): number;
     isImmuneToDamage(serverLevel: ServerLevel, enchantmentLevel: number, victim: Entity, source: DamageSource): boolean;

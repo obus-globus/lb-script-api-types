@@ -5,13 +5,13 @@ import type { Predicate } from '../../../../../org/antlr/v4/runtime/misc/Predica
 import type { ParseTree } from '../../../../../org/antlr/v4/runtime/tree/ParseTree.d.ts'
 import type { Tree } from '../../../../../org/antlr/v4/runtime/tree/Tree.d.ts'
 export class Trees extends Object {
-    static _findAllNodes(paramarg0: ParseTree, paramarg1: number, paramarg2: boolean, paramarg3: (Object | null)[]): void;
+    static _findAllNodes(paramarg0: ParseTree, paramarg1: number, paramarg2: boolean, paramarg3: Object[]): void;
     static descendants(paramarg0: ParseTree): ParseTree[];
     static findAllNodes(paramarg0: ParseTree, paramarg1: number, paramarg2: boolean): ParseTree[];
-    static findAllRuleNodes(paramarg0: ParseTree, paramarg1: number): E[];
-    static findAllTokenNodes(paramarg0: ParseTree, paramarg1: number): E[];
+    static findAllRuleNodes(paramarg0: ParseTree, paramarg1: number): ParseTree[];
+    static findAllTokenNodes(paramarg0: ParseTree, paramarg1: number): ParseTree[];
     static findNodeSuchThat(paramarg0: Tree, paramarg1: Predicate<Tree>): Tree;
-    static getAncestors(paramarg0: Tree): (Object | null)[];
+    static getAncestors(paramarg0: Tree): Tree[];
     static getChildren(paramarg0: Tree): Tree[];
     static getDescendants(paramarg0: ParseTree): ParseTree[];
     static getNodeText(paramarg0: Tree, paramarg1: string[]): string;

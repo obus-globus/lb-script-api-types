@@ -13,7 +13,7 @@ import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export interface ChannelHandlerContext extends ChannelInboundInvoker, ChannelOutboundInvoker, AttributeMap, Object{
     alloc(): ByteBufAllocator;
-    attr(arg0: AttributeKey<T>): Attribute<T>;
+    attr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): Attribute<T>;
     bind(arg0: SocketAddress): ChannelFuture;
     channel(): Channel;
     close(): ChannelFuture;
@@ -33,7 +33,7 @@ export interface ChannelHandlerContext extends ChannelInboundInvoker, ChannelOut
     fireUserEventTriggered(arg0: Object): ChannelHandlerContext;
     flush(): ChannelHandlerContext;
     handler(): ChannelHandler;
-    hasAttr(arg0: AttributeKey<T>): boolean;
+    hasAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): boolean;
     isRemoved(): boolean;
     name(): string;
     pipeline(): Map$Entry<string, ChannelHandler>[];

@@ -7,6 +7,6 @@ import type { Animal } from '../../../../net/minecraft/world/entity/animal/Anima
 export class TameAnimalTrigger extends SimpleCriterionTrigger<TameAnimalTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<TameAnimalTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: TameAnimalTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: TameAnimalTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, animal: Animal): void;
 }

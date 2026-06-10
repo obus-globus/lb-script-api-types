@@ -9,7 +9,7 @@ export class BuiltInBlockModels$Builder extends Object {
     // private blockColors: BlockColors;
     // private result: Map<BlockState, BlockModel$Unbaked>;
     build(): Map<BlockState, BlockModel$Unbaked>;
-    // private put(factory: (param0: BlockColors, param1: BlockState) => net.minecraft.client.renderer.block.model.BlockModel.Unbaked, block: Block): void;
-    // private put(factory: (param0: BlockColors, param1: BlockState) => net.minecraft.client.renderer.block.model.BlockModel.Unbaked, a: Block, b: Block): void;
+    // private put(factory: (param0: BlockColors, param1: BlockState) => BlockModel$Unbaked, block: Block): void;
+    // private put(factory: (param0: BlockColors, param1: BlockState) => BlockModel$Unbaked, a: Block, b: Block): void;
     // private put(specialModel: BlockModel$Unbaked, block: Block): void;
 }

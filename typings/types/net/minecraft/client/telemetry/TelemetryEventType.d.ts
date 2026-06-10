@@ -25,7 +25,7 @@ export class TelemetryEventType extends Object {
     // private isOptIn: boolean;
     // private properties: TelemetryProperty<Object>[];
     codec(): MapCodec<TelemetryEventInstance>;
-    contains(property: TelemetryProperty<T>): boolean;
+    contains<T extends Object | number | string | boolean>(property: TelemetryProperty<T>): boolean;
     description(): MutableComponent;
     export(session: TelemetrySession, input: TelemetryPropertyMap): TelemetryEvent;
     id(): string;

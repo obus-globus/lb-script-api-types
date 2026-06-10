@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
+import type { DataResult } from '../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -6,6 +7,7 @@ import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ContextKeySet } from '../../../../../net/minecraft/util/context/ContextKeySet.d.ts'
 import type { ItemStackTemplate } from '../../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
+import type { Enchantment } from '../../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 import type { MerchantOffer } from '../../../../../net/minecraft/world/item/trading/MerchantOffer.d.ts'
 import type { TradeCost } from '../../../../../net/minecraft/world/item/trading/TradeCost.d.ts'
 import type { LootContext } from '../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
@@ -16,19 +18,19 @@ import type { LootItemCondition } from '../../../../../net/minecraft/world/level
 import type { NumberProvider } from '../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class VillagerTrade extends Object implements Validatable {
     static CODEC: Codec<VillagerTrade>;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
-    static validate(paramcontext: ValidationContext, paramname: string, paramlist: (Object | null)[]): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Object>): void;
+    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
-    static validate(paramcontext: ValidationContext, paramlist: (Object | null)[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Object>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
+    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
+    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
     constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[])
-    constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Optional<Holder<T>[]>)
-    private constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: NumberProvider, reputationDiscount: NumberProvider, xp: NumberProvider, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Optional<Holder<T>[]>)
+    constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Optional<Holder<Enchantment>[]>)
+    private constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: NumberProvider, reputationDiscount: NumberProvider, xp: NumberProvider, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Optional<Holder<Enchantment>[]>)
     constructor(wants: TradeCost, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[])
     // private additionalWants: Optional<TradeCost>;
-    // private doubleTradePriceEnchantments: Optional<Holder<T>[]>;
+    // private doubleTradePriceEnchantments: Optional<Holder<Enchantment>[]>;
     // private givenItemModifiers: LootItemFunction[];
     // private gives: ItemStackTemplate;
     // private maxUses: NumberProvider;

@@ -101,5 +101,5 @@ export class Raid extends Object {
     updateBossbar(): void;
     // private updatePlayers(level: ServerLevel): void;
     // private updateRaiders(level: ServerLevel): void;
-    // private validPlayer(): (param0: ServerPlayer) => kotlin.Boolean;
+    // private validPlayer(): (param0: ServerPlayer) => boolean;
 }

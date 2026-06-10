@@ -6,12 +6,12 @@ import type { XPathElement } from '../../../../../../org/antlr/v4/runtime/tree/x
 export class XPath extends Object {
     static NOT: string;
     static WILDCARD: string;
-    static findAll(paramarg0: ParseTree, paramarg1: string, paramarg2: Parser): E[];
+    static findAll(paramarg0: ParseTree, paramarg1: string, paramarg2: Parser): ParseTree[];
     constructor(arg0: Parser, arg1: string)
     // private elements: XPathElement[];
     // private parser: Parser;
     // private path: string;
-    evaluate(arg0: ParseTree): E[];
+    evaluate(arg0: ParseTree): ParseTree[];
     getXPathElement(arg0: Token, arg1: boolean): XPathElement;
     split(arg0: string): XPathElement[];
 }

@@ -13,7 +13,7 @@ export interface MappingTree extends Object, MappingTreeView{
     getClass(arg0: string): MappingTree$ClassMapping;
     getClass(arg0: string, arg1: number): MappingTree$ClassMapping;
     getClass(arg0: string, arg1: number): MappingTreeView$ClassMappingView;
-    getClasses(): E[];
+    getClasses(): MappingTree$ClassMapping[];
     getField(arg0: string, arg1: string, arg2: string, arg3: number): MappingTree$FieldMapping;
     getField(arg0: string, arg1: string, arg2: string, arg3: number): MappingTreeView$FieldMappingView;
     getMethod(arg0: string, arg1: string, arg2: string, arg3: number): MappingTree$MethodMapping;

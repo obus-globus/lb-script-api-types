@@ -14,8 +14,8 @@ export abstract class BaseImageTranslator<T extends Object | number | string | b
     // private height: number;
     // private pipeline: Pipeline;
     // private width: number;
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    batchProcessInput(arg0: TranslatorContext, arg1: Image[]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): T[];
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;

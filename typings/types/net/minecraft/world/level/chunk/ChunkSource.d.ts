@@ -25,6 +25,6 @@ export abstract class ChunkSource extends Object implements AutoCloseable, Light
     onLightUpdate(layer: LightLayer, pos: SectionPos): void;
     onSectionEmptinessChanged(sectionX: number, sectionY: number, sectionZ: number, empty: boolean): void;
     setSpawnSettings(spawnEnemies: boolean): void;
-    tick(haveTime: () => kotlin.Boolean, tickChunks: boolean): void;
+    tick(haveTime: () => boolean, tickChunks: boolean): void;
     updateChunkForced(pos: ChunkPos, forced: boolean): boolean;
 }

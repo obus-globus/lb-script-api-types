@@ -6,14 +6,14 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class TreeRangeSet$SubRangeSet extends TreeRangeSet<C> {
     static create(): TreeRangeSet<Object>;
     static create(paramrangeSet: RangeSet<Object>): TreeRangeSet<Object>;
-    static create(paramranges: (Object | null)[]): TreeRangeSet<Object>;
+    static create(paramranges: Range<Object>[]): TreeRangeSet<Object>;
     constructor(null_: TreeRangeSet$SubRangeSet)
     // private restriction: Range<C>;
-    add(rangeToAdd: Range<C>): void;
+    add<C extends Comparable<Object>>(rangeToAdd: Range<C>): void;
     clear(): void;
     contains<C extends Comparable<Object>>(value: C): boolean;
-    encloses(range: Range<C>): boolean;
+    encloses<C extends Comparable<Object>>(range: Range<C>): boolean;
     rangeContaining<C extends Comparable<Object>>(value: C): Range<C>;
-    remove(rangeToRemove: Range<C>): void;
-    subRangeSet(view: Range<C>): RangeSet<C>;
+    remove<C extends Comparable<Object>>(rangeToRemove: Range<C>): void;
+    subRangeSet<C extends Comparable<Object>>(view: Range<C>): RangeSet<C>;
 }

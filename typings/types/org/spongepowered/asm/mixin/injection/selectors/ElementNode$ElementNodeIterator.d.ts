@@ -7,7 +7,7 @@ export class ElementNode$ElementNodeIterator extends Object implements Iterator<
     constructor(arg0: Iterator<AbstractInsnNode>, arg1: boolean)
     // private filterDynamic: boolean;
     // private iter: Iterator<AbstractInsnNode>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: ElementNode<AbstractInsnNode>) => void): void;
     hasNext(): boolean;
     next(): ElementNode<AbstractInsnNode>;
 }

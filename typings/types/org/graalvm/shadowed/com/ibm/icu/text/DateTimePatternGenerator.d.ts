@@ -94,7 +94,7 @@ export class DateTimePatternGenerator extends Object implements Cloneable, Freez
     getDefaultHourFormatChar(): string;
     getFieldDisplayName(field: number, width: DateTimePatternGenerator$DisplayWidth): string;
     getFields(pattern: string): string;
-    getRedundants(output: E[]): E[];
+    getRedundants(output: string[]): string[];
     // private getSet(id: string): string[];
     getSkeleton(pattern: string): string;
     getSkeletonAllowingDuplicates(pattern: string): string;

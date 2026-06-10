@@ -29,13 +29,12 @@ import type { Player } from '../../../../net/minecraft/world/entity/player/Playe
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { HitResult } from '../../../../net/minecraft/world/phys/HitResult.d.ts'
 import type { Objective } from '../../../../net/minecraft/world/scores/Objective.d.ts'
-import type { PlayerScoreEntry } from '../../../../net/minecraft/world/scores/PlayerScoreEntry.d.ts'
 import type { Pair } from '../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class Gui extends Object implements MixinGuiAccessor, GuiAccessor {
     static NAUSEA_LOCATION: Identifier;
     static getHotbarSelectionTexture(): Identifier;
     static getMobEffectSprite(parameffect: Holder<MobEffect>): Identifier;
-    static getScoreboardEntryComparator(): (param0: PlayerScoreEntry) => kotlin.Boolean;
+    static getScoreboardEntryComparator(): (param0: Object) => boolean;
     constructor(minecraft: Minecraft)
     // private animateOverlayMessageColor: boolean;
     // private autosaveIndicatorValue: number;

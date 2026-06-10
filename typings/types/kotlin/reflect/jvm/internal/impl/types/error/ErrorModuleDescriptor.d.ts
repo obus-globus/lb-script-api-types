@@ -21,6 +21,6 @@ export class ErrorModuleDescriptor extends Object implements ModuleDescriptor {
     getOriginal(): DeclarationDescriptor;
     getPackage(arg0: FqName): PackageViewDescriptor;
     getStableName(): Name;
-    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): E[];
+    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];
     shouldSeeInternalsOf(arg0: ModuleDescriptor): boolean;
 }

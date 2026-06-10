@@ -31,7 +31,7 @@ export class FileSystems$DeniedIOFileSystem extends Object implements FileSystem
     isSameFile(path1: Path[], path2: Path[], options: LinkOption[]): boolean;
     move(source: Path[], target: Path[], options: CopyOption[]): void;
     newByteChannel(inPath: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
-    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => kotlin.Boolean): T[];
+    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     parsePath(uri: URI): Path[];
     parsePath(path: string): Path[];
     readAttributes(path: Path[], attributes: string, options: LinkOption[]): { [key: string]: Object };

@@ -1,3 +1,4 @@
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ICUCurrencyMetaInfo$Collector } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUCurrencyMetaInfo$Collector.d.ts'
 import type { ICUResourceBundle } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { CurrencyMetaInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/CurrencyMetaInfo.d.ts'
@@ -12,8 +13,8 @@ export class ICUCurrencyMetaInfo extends CurrencyMetaInfo {
     constructor()
     // private digitInfo: ICUResourceBundle;
     // private regionInfo: ICUResourceBundle;
-    // private collect(collector: ICUCurrencyMetaInfo$Collector<T>, filter: CurrencyMetaInfo$CurrencyFilter): T[];
-    // private collectRegion(collector: ICUCurrencyMetaInfo$Collector<T>, filter: CurrencyMetaInfo$CurrencyFilter, needed: number, b: ICUResourceBundle): void;
+    // private collect<T extends Object | number | string | boolean>(collector: ICUCurrencyMetaInfo$Collector<T>, filter: CurrencyMetaInfo$CurrencyFilter): T[];
+    // private collectRegion<T extends Object | number | string | boolean>(collector: ICUCurrencyMetaInfo$Collector<T>, filter: CurrencyMetaInfo$CurrencyFilter, needed: number, b: ICUResourceBundle): void;
     currencies(filter: CurrencyMetaInfo$CurrencyFilter): string[];
     currencyDigits(isoCode: string): CurrencyMetaInfo$CurrencyDigits;
     currencyDigits(isoCode: string, currencyPurpose: Currency$CurrencyUsage): CurrencyMetaInfo$CurrencyDigits;

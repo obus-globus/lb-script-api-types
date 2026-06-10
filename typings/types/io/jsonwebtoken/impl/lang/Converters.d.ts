@@ -13,8 +13,8 @@ export class Converters extends Object {
     static X509_CERTIFICATE: Converter<X509Certificate, Object>;
     static compound(paramarg0: Converter<Object, Object>, paramarg1: Converter<Object, Object>): Converter<Object, Object>;
     static forEncoded(paramarg0: Class<Object>, paramarg1: Converter<Object, CharSequence>): Converter<Object, Object>;
-    static forList(paramarg0: Converter<Object, Object>): Converter<Object, Object>;
-    static forSet(paramarg0: Converter<Object, Object>): Converter<Object, Object>;
+    static forList(paramarg0: Converter<Object, Object>): Converter<(Object | null)[], Object>;
+    static forSet(paramarg0: Converter<Object, Object>): Converter<(Object | null)[], Object>;
     static forType(paramarg0: Class<Object>): Converter<Object, Object>;
     private constructor()
 }

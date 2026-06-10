@@ -9,7 +9,7 @@ export class AbstractMapBasedMultiset$MapBasedMultisetIterator extends Object im
     // private currentEntry: Map$Entry<E, Count>;
     // private entryIterator: Iterator<Map$Entry<E, Count>>;
     // private occurrencesLeft: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<E extends Object | number | string | boolean>(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next<E extends Object | number | string | boolean>(): E;
     remove(): void;

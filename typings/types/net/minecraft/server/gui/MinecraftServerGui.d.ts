@@ -32,7 +32,7 @@ export class MinecraftServerGui extends JComponent {
     static setDefaultLocale(paramarg0: Locale): void;
     static showFrameFor(paramserver: DedicatedServer): MinecraftServerGui;
     private constructor(server: DedicatedServer)
-    // private finalizers: E[];
+    // private finalizers: () => void[];
     // private isClosing: AtomicBoolean;
     // private logAppenderThread: Thread;
     // private server: DedicatedServer;

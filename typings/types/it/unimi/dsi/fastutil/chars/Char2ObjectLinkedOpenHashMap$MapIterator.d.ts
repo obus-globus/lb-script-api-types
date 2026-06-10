@@ -8,7 +8,7 @@ export abstract class Char2ObjectLinkedOpenHashMap$MapIterator<ConsumerType exte
     // private next: number;
     // private prev: number;
     acceptOnIndex(arg0: ConsumerType, arg1: number): void;
-    add(arg0: Char2ObjectMap$Entry<V>): void;
+    add<V extends Object | number | string | boolean>(arg0: Char2ObjectMap$Entry<V>): void;
     back(arg0: number): number;
     // private ensureIndexKnown(): void;
     forEachRemaining(arg0: ConsumerType): void;
@@ -19,6 +19,6 @@ export abstract class Char2ObjectLinkedOpenHashMap$MapIterator<ConsumerType exte
     previousEntry(): number;
     previousIndex(): number;
     remove(): void;
-    set(arg0: Char2ObjectMap$Entry<V>): void;
+    set<V extends Object | number | string | boolean>(arg0: Char2ObjectMap$Entry<V>): void;
     skip(arg0: number): number;
 }

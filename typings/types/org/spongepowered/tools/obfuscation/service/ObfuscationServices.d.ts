@@ -6,7 +6,7 @@ export class ObfuscationServices extends Object {
     static getInstance(): ObfuscationServices;
     private constructor()
     // private providerInitDone: boolean;
-    // private serviceLoader: S[];
+    // private serviceLoader: IObfuscationService[];
     // private services: IObfuscationService[];
     getService(arg0: Class<IObfuscationService>): IObfuscationService;
     getSupportedOptions(): string[];

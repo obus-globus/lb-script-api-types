@@ -2,13 +2,13 @@ import type { LongComparator } from '../../../../../it/unimi/dsi/fastutil/longs/
 import type { LongHeapSemiIndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/longs/LongHeapSemiIndirectPriorityQueue.d.ts'
 export class LongHeapIndirectPriorityQueue extends LongHeapSemiIndirectPriorityQueue {
     constructor(arg0: number[])
-    constructor(arg0: number[], arg1: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number)
-    constructor(arg0: number[], arg1: number, arg2: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number, arg2: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number[])
-    constructor(arg0: number[], arg1: number[], arg2: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number[], arg2: (param0: number, param1: number) => number)
     constructor(arg0: number[], arg1: number[], arg2: number)
-    constructor(arg0: number[], arg1: number[], arg2: number, arg3: (param0: number, param1: number) => kotlin.Int)
+    constructor(arg0: number[], arg1: number[], arg2: number, arg3: (param0: number, param1: number) => number)
     // private inv: number[];
     allChanged(): void;
     changed(): void;

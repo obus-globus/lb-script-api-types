@@ -10,8 +10,8 @@ import type { Fluid } from '../../../../../../net/minecraft/world/level/material
 export interface FluidBehavior$Builder extends Object {
     allowBoats(arg0: boolean): FluidBehavior$Builder;
     allowMovingDown(arg0: boolean): FluidBehavior$Builder;
-    allowSprinting(arg0: (param0: TagKey<Fluid>, param1: LivingEntity) => kotlin.Boolean): FluidBehavior$Builder;
-    allowSprinting(arg0: (param0: LivingEntity) => kotlin.Boolean): FluidBehavior$Builder;
+    allowSprinting(arg0: (param0: TagKey<Fluid>, param1: LivingEntity) => boolean): FluidBehavior$Builder;
+    allowSprinting(arg0: (param0: LivingEntity) => boolean): FluidBehavior$Builder;
     allowSprinting(arg0: boolean): FluidBehavior$Builder;
     allowSwimming(arg0: boolean): FluidBehavior$Builder;
     build(): FluidBehavior;
@@ -24,7 +24,7 @@ export interface FluidBehavior$Builder extends Object {
     movementSlowdown(arg0: number): FluidBehavior$Builder;
     movementSlowdown(arg0: number, arg1: number): FluidBehavior$Builder;
     movementSlowdown(arg0: FluidBehavior$Builder$MovementSlowdownFunction): FluidBehavior$Builder;
-    movementSlowdown(arg0: (param0: LivingEntity) => kotlin.Float): FluidBehavior$Builder;
+    movementSlowdown(arg0: (param0: LivingEntity) => number): FluidBehavior$Builder;
     movementSpeed(arg0: number): FluidBehavior$Builder;
-    movementSpeed(arg0: (param0: LivingEntity) => kotlin.Float): FluidBehavior$Builder;
+    movementSpeed(arg0: (param0: LivingEntity) => number): FluidBehavior$Builder;
 }

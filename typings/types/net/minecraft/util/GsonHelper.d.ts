@@ -81,6 +81,6 @@ export class GsonHelper extends Object {
     static parseArray(paramreader: Reader): JsonElement[];
     static parseArray(paramstring: string): JsonElement[];
     static toStableString(paramjsonElement: JsonElement): string;
-    static writeValue(paramout: JsonWriter, paramvalue: JsonElement, paramkeyComparator: (param0: string) => kotlin.Boolean): void;
+    static writeValue(paramout: JsonWriter, paramvalue: JsonElement, paramkeyComparator: (param0: Object) => boolean): void;
     constructor()
 }

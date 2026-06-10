@@ -11,10 +11,10 @@ import type { ConfiguredFeature } from '../../../../../../net/minecraft/world/le
 import type { PlacementContext } from '../../../../../../net/minecraft/world/level/levelgen/placement/PlacementContext.d.ts'
 import type { PlacementModifier } from '../../../../../../net/minecraft/world/level/levelgen/placement/PlacementModifier.d.ts'
 export class PlacedFeature extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<PlacedFeature>>;
     static DIRECT_CODEC: Codec<PlacedFeature>;
-    static LIST_CODEC: Codec<Object>;
-    static LIST_OF_LISTS_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<Holder<PlacedFeature>[]>;
+    static LIST_OF_LISTS_CODEC: Codec<Holder<PlacedFeature>[][]>;
     constructor(feature: Holder<ConfiguredFeature<Object, Object>>, placement: PlacementModifier[])
     // private feature: Holder<ConfiguredFeature<Object, Object>>;
     // private placement: PlacementModifier[];

@@ -3,17 +3,17 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Display$IntInterpolator } from '../../../../net/minecraft/world/entity/Display$IntInterpolator.d.ts'
 export class Display$TextDisplay$TextRenderState extends Record {
-    // private backgroundColor: (param0: number) => kotlin.Int;
+    // private backgroundColor: (param0: number) => number;
     // private flags: number;
     // private lineWidth: number;
     // private text: Component;
-    // private textOpacity: (param0: number) => kotlin.Int;
-    backgroundColor(): (param0: number) => kotlin.Int;
+    // private textOpacity: (param0: number) => number;
+    backgroundColor(): (param0: number) => number;
     equals(o: Object | null): boolean;
     flags(): number;
     hashCode(): number;
     lineWidth(): number;
     text(): Component;
-    textOpacity(): (param0: number) => kotlin.Int;
+    textOpacity(): (param0: number) => number;
     toString(): string;
 }

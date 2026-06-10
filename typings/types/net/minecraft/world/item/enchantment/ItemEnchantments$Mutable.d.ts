@@ -8,7 +8,7 @@ export class ItemEnchantments$Mutable extends Object {
     // private enchantments: Object2IntOpenHashMap<Holder<Enchantment>>;
     getLevel(enchantment: Holder<Enchantment>): number;
     keySet(): Holder<Enchantment>[];
-    removeIf(predicate: (param0: Holder<Enchantment>) => kotlin.Boolean): void;
+    removeIf(predicate: (param0: Holder<Enchantment>) => boolean): void;
     set(enchantment: Holder<Enchantment>, level: number): void;
     toImmutable(): ItemEnchantments;
     upgrade(enchantment: Holder<Enchantment>, level: number): void;

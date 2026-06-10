@@ -10,22 +10,23 @@ import type { StringRepresentable$EnumCodec } from '../../../../../../net/minecr
 import type { ContextKey } from '../../../../../../net/minecraft/util/context/ContextKey.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { LootContext } from '../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
+import type { LootContextArg } from '../../../../../../net/minecraft/world/level/storage/loot/LootContextArg.d.ts'
 import type { LootContextArg$SimpleGetter } from '../../../../../../net/minecraft/world/level/storage/loot/LootContextArg$SimpleGetter.d.ts'
 export class LootContext$EntityTarget extends Enum<LootContext$EntityTarget> implements StringRepresentable, LootContextArg$SimpleGetter<Entity> {
     static ATTACKER: LootContext$EntityTarget;
     static ATTACKING_PLAYER: LootContext$EntityTarget;
     static CODEC: StringRepresentable$EnumCodec<LootContext$EntityTarget>;
     static DIRECT_ATTACKER: LootContext$EntityTarget;
-    static ENTITY_OR_BLOCK: Codec<Object>;
+    static ENTITY_OR_BLOCK: Codec<LootContextArg<Object>>;
     static INTERACTING_ENTITY: LootContext$EntityTarget;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static TARGET_ENTITY: LootContext$EntityTarget;
     static THIS: LootContext$EntityTarget;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getByName(paramname: string): LootContext$EntityTarget;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
@@ -35,7 +36,7 @@ export class LootContext$EntityTarget extends Enum<LootContext$EntityTarget> imp
     // private name: string;
     // private param: ContextKey<Entity>;
     contextParam(): ContextKey<Entity>;
-    get<T extends Object | number | string | boolean>(context: LootContext): T;
+    get(context: LootContext): Entity;
     getSerializedName(): string;
     name(): "THIS" | "ATTACKER" | "DIRECT_ATTACKER" | "ATTACKING_PLAYER" | "TARGET_ENTITY" | "INTERACTING_ENTITY";
 }

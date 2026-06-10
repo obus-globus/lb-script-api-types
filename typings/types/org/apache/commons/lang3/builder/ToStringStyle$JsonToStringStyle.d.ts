@@ -28,7 +28,6 @@ export class ToStringStyle$JsonToStringStyle extends ToStringStyle {
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number, arg3: Object): void;
-    appendDetail(arg0: StringBuffer, arg1: string, arg2: E[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Map<Object | null, Object | null>): void;
     appendFieldStart(arg0: StringBuffer, arg1: string): void;
     // private appendValueAsString(arg0: StringBuffer, arg1: string): void;

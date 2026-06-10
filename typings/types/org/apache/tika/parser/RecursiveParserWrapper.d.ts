@@ -8,7 +8,7 @@ import type { ParserDecorator } from '../../../../org/apache/tika/parser/ParserD
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class RecursiveParserWrapper extends ParserDecorator {
     static getResourceName(paramarg0: Metadata, paramarg1: AtomicInteger): string;
-    static withFallbacks(paramarg0: E[], paramarg1: MediaType[]): Parser;
+    static withFallbacks(paramarg0: Parser[], paramarg1: MediaType[]): Parser;
     static withTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     static withoutTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     constructor(arg0: Parser)

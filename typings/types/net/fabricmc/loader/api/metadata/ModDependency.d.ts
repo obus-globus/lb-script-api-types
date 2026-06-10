@@ -2,10 +2,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
 import type { ModDependency$Kind } from '../../../../../net/fabricmc/loader/api/metadata/ModDependency$Kind.d.ts'
 import type { VersionInterval } from '../../../../../net/fabricmc/loader/api/metadata/version/VersionInterval.d.ts'
+import type { VersionPredicate } from '../../../../../net/fabricmc/loader/api/metadata/version/VersionPredicate.d.ts'
 export interface ModDependency extends Object{
     getKind(): ModDependency$Kind;
     getModId(): string;
     getVersionIntervals(): VersionInterval[];
-    getVersionRequirements(): E[];
+    getVersionRequirements(): VersionPredicate[];
     matches(arg0: Version): boolean;
 }

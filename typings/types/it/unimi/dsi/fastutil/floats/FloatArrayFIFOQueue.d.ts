@@ -14,7 +14,7 @@ export class FloatArrayFIFOQueue extends Object implements FloatPriorityQueue, S
     // private start: number;
     capacity(): number;
     clear(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueFloat(): number;
     dequeueLastFloat(): number;

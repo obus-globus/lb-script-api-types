@@ -5,7 +5,7 @@ import type { FilterCollectionWriter } from '../../../../../org/apache/commons/i
 export class ProxyCollectionWriter extends FilterCollectionWriter {
     static nullWriter(): Writer;
     constructor(arg0: Writer[])
-    constructor(arg0: E[])
+    constructor(arg0: Writer[])
     afterWrite(arg0: number): void;
     append(arg0: string): Writer;
     append(arg0: CharSequence): Writer;

@@ -1,3 +1,5 @@
+import type { ClientboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
+import type { ServerboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { ProtocolVersion } from '../../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
 import type { VersionType } from '../../../../../com/viaversion/viaversion/api/protocol/version/VersionType.d.ts'
 import type { RegistrationBuilder$RangesBuilder } from '../../../../../com/viaversion/viaversion/protocol/shared_registration/RegistrationBuilder$RangesBuilder.d.ts'
@@ -15,9 +17,9 @@ export class RegistrationBuilder extends Object {
     // private registrations: SharedRegistrations;
     // private versionType: VersionType;
     // private checkVersionType(arg0: ProtocolVersion): void;
-    range(arg0: ProtocolVersion, arg1: ProtocolVersion, arg2: (param0: RegistrationContext<Object, Object>) => void): RegistrationBuilder;
-    ranges(arg0: ProtocolVersion, arg1: (param0: RegistrationBuilder$RangesBuilder<CU, SU>) => void): RegistrationBuilder;
-    ranges(arg0: (param0: RegistrationContext<CU, SU>) => R, arg1: ProtocolVersion, arg2: (param0: RegistrationBuilder$TypedRangesBuilder<CU, SU, R>) => void): RegistrationBuilder;
+    range(arg0: ProtocolVersion, arg1: ProtocolVersion, arg2: (param0: RegistrationContext<ClientboundPacketType, ServerboundPacketType>) => void): RegistrationBuilder;
+    ranges<CU extends ClientboundPacketType, SU extends ServerboundPacketType>(arg0: ProtocolVersion, arg1: (param0: RegistrationBuilder$RangesBuilder<CU, SU>) => void): RegistrationBuilder;
+    ranges<CU extends ClientboundPacketType, SU extends ServerboundPacketType, R extends Object | number | string | boolean>(arg0: (param0: RegistrationContext<CU, SU>) => R, arg1: ProtocolVersion, arg2: (param0: RegistrationBuilder$TypedRangesBuilder<CU, SU, R>) => void): RegistrationBuilder;
     register(): void;
-    since(arg0: ProtocolVersion, arg1: (param0: RegistrationContext<Object, Object>) => void): RegistrationBuilder;
+    since(arg0: ProtocolVersion, arg1: (param0: RegistrationContext<ClientboundPacketType, ServerboundPacketType>) => void): RegistrationBuilder;
 }

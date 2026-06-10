@@ -9,7 +9,7 @@ export class ModuleNoSlowBreak$When extends Enum<ModuleNoSlowBreak$When> impleme
     static ON_AIR: ModuleNoSlowBreak$When;
     static UNDERWATER: ModuleNoSlowBreak$When;
     static getEntries(): ModuleNoSlowBreak$When[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleNoSlowBreak$When;

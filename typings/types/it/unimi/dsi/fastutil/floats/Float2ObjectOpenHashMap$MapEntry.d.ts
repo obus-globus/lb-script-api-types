@@ -4,12 +4,12 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Float2ObjectOpenHashMap$MapEntry extends Object implements Float2ObjectMap$Entry<V>, FloatObjectPair<V>, Map$Entry<number, V> {
-    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(): (param0: Object) => boolean;
+    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByValue(): (param0: Object) => boolean;
+    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    static lexComparator(): (param0: Object | null) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: Object | null): FloatObjectPair<Object>;
     constructor(null_: Float2ObjectOpenHashMap$MapEntry)
     constructor(null_: Float2ObjectOpenHashMap$MapEntry, arg1: number)
@@ -17,15 +17,15 @@ export class Float2ObjectOpenHashMap$MapEntry extends Object implements Float2Ob
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first(arg0: number): FloatObjectPair<V>;
+    first<V extends Object | number | string | boolean>(arg0: number): FloatObjectPair<V>;
     firstFloat(): number;
     getFloatKey(): number;
     hashCode(): number;
     key(): number;
-    key(arg0: number): FloatObjectPair<V>;
+    key<V extends Object | number | string | boolean>(arg0: number): FloatObjectPair<V>;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatObjectPair<V>;
+    left<V extends Object | number | string | boolean>(arg0: number): FloatObjectPair<V>;
     leftFloat(): number;
     right<V extends Object | number | string | boolean>(): V;
     right<V extends Object | number | string | boolean>(arg0: V): FloatObjectPair<V>;

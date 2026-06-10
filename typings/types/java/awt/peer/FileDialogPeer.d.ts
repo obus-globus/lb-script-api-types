@@ -5,5 +5,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface FileDialogPeer extends DialogPeer, Object {
     setDirectory(arg0: string): void;
     setFile(arg0: string): void;
-    setFilenameFilter(arg0: (param0: File, param1: string) => kotlin.Boolean): void;
+    setFilenameFilter(arg0: (param0: File, param1: string) => boolean): void;
 }

@@ -10,9 +10,9 @@ export class Object2ReferenceAVLTreeMap$TreeIterator extends Object {
     back(arg0: number): number;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    nextEntry(): Object2ReferenceAVLTreeMap$Entry<K, V>;
+    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Object2ReferenceAVLTreeMap$Entry<K, V>;
     nextIndex(): number;
-    previousEntry(): Object2ReferenceAVLTreeMap$Entry<K, V>;
+    previousEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Object2ReferenceAVLTreeMap$Entry<K, V>;
     previousIndex(): number;
     remove(): void;
     skip(arg0: number): number;

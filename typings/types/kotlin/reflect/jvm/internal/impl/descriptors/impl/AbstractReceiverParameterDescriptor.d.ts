@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { CallableDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
@@ -22,7 +23,7 @@ export abstract class AbstractReceiverParameterDescriptor extends DeclarationDes
     getDispatchReceiverParameter(): ReceiverParameterDescriptor;
     getExtensionReceiverParameter(): ReceiverParameterDescriptor;
     getOriginal(): ParameterDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): CallableDescriptor[];
     getReturnType(): KotlinType;
     getSource(): SourceElement;
     getType(): KotlinType;

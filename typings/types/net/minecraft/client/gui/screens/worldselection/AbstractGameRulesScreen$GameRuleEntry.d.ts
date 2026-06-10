@@ -11,7 +11,7 @@ export abstract class AbstractGameRulesScreen$GameRuleEntry extends AbstractGame
     static CONTENT_PADDING: number;
     constructor(null_: AbstractGameRulesScreen$GameRuleEntry, label: Component)
     // private children: AbstractWidget[];
-    label: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    label: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     children(): GuiEventListener[];
     extractLabel(graphics: GuiGraphicsExtractor, rowTop: number, rowLeft: number): void;
     narratables(): NarratableEntry[];

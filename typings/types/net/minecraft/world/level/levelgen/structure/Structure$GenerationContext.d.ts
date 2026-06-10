@@ -21,7 +21,7 @@ export class Structure$GenerationContext extends Record {
     // private registryAccess: RegistryAccess;
     // private seed: number;
     // private structureTemplateManager: StructureTemplateManager;
-    // private validBiome: (param0: Holder<Biome>) => kotlin.Boolean;
+    // private validBiome: (param0: Holder<Biome>) => boolean;
     biomeSource(): BiomeSource;
     chunkGenerator(): ChunkGenerator;
     chunkPos(): ChunkPos;
@@ -34,5 +34,5 @@ export class Structure$GenerationContext extends Record {
     seed(): number;
     structureTemplateManager(): StructureTemplateManager;
     toString(): string;
-    validBiome(): (param0: Holder<Biome>) => kotlin.Boolean;
+    validBiome(): (param0: Holder<Biome>) => boolean;
 }

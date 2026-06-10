@@ -16,7 +16,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode$PrivateAutoAccessorMemberNode extends ObjectLiteralNode$PrivateClassElementNode {
     static EMPTY: (Object | null)[];
-    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: (Object | null)[]): (Object | null)[];
+    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: Class<Tag>[]): (Object | null)[];
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(isStatic: boolean, valueNode: JavaScriptNode, writePrivateAccessorNode: JSWriteFrameSlotNode, storageKeyNode: JavaScriptNode, privateBrandSlot: number)

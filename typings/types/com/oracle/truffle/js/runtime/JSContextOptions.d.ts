@@ -35,7 +35,7 @@ export class JSContextOptions extends Object {
     static CLASS_FIELDS: OptionKey<boolean>;
     static CLASS_FIELDS_ES_VERSION: number;
     static CLASS_FIELDS_NAME: string;
-    static COMMONJS_CORE_MODULES_REPLACEMENTS: OptionKey<Object>;
+    static COMMONJS_CORE_MODULES_REPLACEMENTS: OptionKey<{ [key: string]: string }>;
     static COMMONJS_CORE_MODULES_REPLACEMENTS_NAME: string;
     static COMMONJS_REQUIRE: OptionKey<boolean>;
     static COMMONJS_REQUIRE_CWD: OptionKey<string>;

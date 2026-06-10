@@ -9,7 +9,7 @@ export class TrieTransitionMap<K extends Object | number | string | boolean, V e
     static create(): TransitionMap<Object, Object>;
     constructor()
     // private map: Map<Object, V>;
-    andThen(arg0: (param0: R) => V): (param0: T, param1: U) => V;
+    andThen(arg0: (param0: Map$Entry<Object, V>) => V): (param0: Object, param1: V) => V;
     apply(k: Object, v: V): Map$Entry<Object, V>;
     expungeStaleEntry(entry: StrongKeyWeakValueEntry<Object, V>): void;
     forEach(consumer: (param0: K, param1: V) => void): void;

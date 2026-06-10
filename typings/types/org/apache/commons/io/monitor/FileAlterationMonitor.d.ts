@@ -7,7 +7,7 @@ export class FileAlterationMonitor extends Object implements Runnable {
     constructor()
     constructor(arg0: number)
     constructor(arg0: number, arg1: FileAlterationObserver[])
-    constructor(arg0: number, arg1: E[])
+    constructor(arg0: number, arg1: FileAlterationObserver[])
     // private intervalMillis: number;
     readonly observers: FileAlterationObserver[];
     // private running: boolean;

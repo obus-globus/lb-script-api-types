@@ -22,7 +22,7 @@ export class ServerPackManager extends Object {
     // private cleanupRemovedPacks(): void;
     // private findPackInfo(id: UUID): ServerPackManager$ServerPackData;
     // private markExistingPacksAsRemoved(id: UUID): void;
-    // private onDownload(data: E[], result: DownloadQueue$BatchResult): void;
+    // private onDownload(data: ServerPackManager$ServerPackData[], result: DownloadQueue$BatchResult): void;
     popAll(): void;
     popPack(id: UUID): void;
     pushLocalPack(id: UUID, path: Path[]): void;

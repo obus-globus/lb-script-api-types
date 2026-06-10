@@ -22,6 +22,6 @@ export class LanguageManager extends Object implements FabricResourceReloader, R
     getName(): string;
     getSelected(): string;
     onResourceManagerReload(resourceManager: ResourceManager): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     setSelected(code: string): void;
 }

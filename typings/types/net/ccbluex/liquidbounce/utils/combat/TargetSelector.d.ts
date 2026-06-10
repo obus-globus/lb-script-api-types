@@ -9,7 +9,7 @@ export class TargetSelector extends ValueGroup {
     constructor(defaultPriority: TargetPriority, range: RangedValue<Object>)
     constructor(defaultPriority: TargetPriority, rangeValue: RangedValueProvider)
     readonly closestSquaredEnemyDistance: number;
-    // private comparator: (param0: LivingEntity) => kotlin.Boolean;
+    // private comparator: (param0: Object) => boolean;
     // private fov: number;
     // private /*not mapped: */ getFov(): number;
     // private hurtTime: number;

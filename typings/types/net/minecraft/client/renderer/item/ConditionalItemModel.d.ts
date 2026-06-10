@@ -9,9 +9,9 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ConditionalItemModel extends Object implements ItemModel {
-    constructor(property: (param0: ItemStack, param1: ClientLevel, param2: LivingEntity, param3: number, param4: ItemDisplayContext) => kotlin.Boolean, onTrue: ItemModel, onFalse: ItemModel)
+    constructor(property: (param0: ItemStack, param1: ClientLevel, param2: LivingEntity, param3: number, param4: ItemDisplayContext) => boolean, onTrue: ItemModel, onFalse: ItemModel)
     // private onFalse: ItemModel;
     // private onTrue: ItemModel;
-    // private property: (param0: ItemStack, param1: ClientLevel, param2: LivingEntity, param3: number, param4: ItemDisplayContext) => kotlin.Boolean;
+    // private property: (param0: ItemStack, param1: ClientLevel, param2: LivingEntity, param3: number, param4: ItemDisplayContext) => boolean;
     update(output: ItemStackRenderState, item: ItemStack, resolver: ItemModelResolver, displayContext: ItemDisplayContext, level: ClientLevel, owner: ItemOwner, seed: number): void;
 }

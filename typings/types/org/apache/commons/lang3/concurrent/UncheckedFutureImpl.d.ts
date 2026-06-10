@@ -5,8 +5,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFutureProxy } from '../../../../../org/apache/commons/lang3/concurrent/AbstractFutureProxy.d.ts'
 import type { UncheckedFuture } from '../../../../../org/apache/commons/lang3/concurrent/UncheckedFuture.d.ts'
 export class UncheckedFutureImpl<V extends Object | number | string | boolean> extends AbstractFutureProxy<V> implements UncheckedFuture<V> {
-    static map(paramarg0: E[]): Stream<Object>;
-    static on(paramarg0: E[]): E[];
+    static map(paramarg0: Future<Object>[]): Stream<UncheckedFuture<Object>>;
+    static on(paramarg0: Future<Object>[]): UncheckedFuture<Object>[];
     static on(paramarg0: Future<Object>): UncheckedFuture<Object>;
     constructor(arg0: Future<V>)
     get(): V;

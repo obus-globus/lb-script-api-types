@@ -10,14 +10,12 @@ import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d
 export class ParentNode extends Object implements ParentTextNode {
     static EMPTY: ParentNode;
     constructor(arg0: TextNode[])
-    constructor(arg0: E[])
+    constructor(arg0: TextNode[])
     readonly children: TextNode[];
     applyFormatting(arg0: MutableComponent, arg1: ParserContext): Component;
     applyFormatting(arg0: Style, arg1: ParserContext): Style;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     getChildren(): TextNode[];
     isDynamic(): boolean;
     isDynamicNoChildren(): boolean;

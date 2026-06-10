@@ -14,7 +14,7 @@ export class EnvironmentAttributeMap extends Object {
     applyModifier<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
     contains(attribute: EnvironmentAttribute<Object>): boolean;
     equals(obj: Object | null): boolean;
-    get(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeMap$Entry<Value, Object>;
+    get<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeMap$Entry<Value, Object>;
     hashCode(): number;
     keySet(): EnvironmentAttribute<Object>[];
     toString(): string;

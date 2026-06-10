@@ -12,7 +12,7 @@ export class ModelProvider$BlockStateGeneratorCollector extends Object implement
     readonly fabricPackOutput: FabricPackOutput;
     generators: Map<Block, BlockModelDefinitionGenerator>;
     accept(generator: BlockModelDefinitionGenerator): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: BlockModelDefinitionGenerator) => void): (param0: BlockModelDefinitionGenerator) => void;
     save(cache: CachedOutput, pathProvider: PackOutput$PathProvider): CompletableFuture<Object>;
     setFabricPackOutput(arg0: FabricPackOutput): void;
     validate(): void;

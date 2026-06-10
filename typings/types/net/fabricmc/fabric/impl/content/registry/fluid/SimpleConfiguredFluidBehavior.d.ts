@@ -17,7 +17,7 @@ export class SimpleConfiguredFluidBehavior extends Record implements FluidBehavi
     static simple(): FluidBehavior$Builder;
     // private allowBoats: boolean;
     // private allowMovingDown: boolean;
-    // private allowSprinting: (param0: TagKey<Fluid>, param1: LivingEntity) => kotlin.Boolean;
+    // private allowSprinting: (param0: TagKey<Fluid>, param1: LivingEntity) => boolean;
     // private allowSwimming: boolean;
     // private drowning: boolean;
     // private fallDistanceMultiplier: number;
@@ -26,10 +26,10 @@ export class SimpleConfiguredFluidBehavior extends Record implements FluidBehavi
     // private makeMobsFloat: boolean;
     // private makeRiddenMobsFloat: boolean;
     // private movementSlowdown: FluidBehavior$Builder$MovementSlowdownFunction;
-    // private movementSpeed: (param0: LivingEntity) => kotlin.Float;
+    // private movementSpeed: (param0: LivingEntity) => number;
     allowBoats(): boolean;
     allowMovingDown(): boolean;
-    allowSprinting(): (param0: TagKey<Fluid>, param1: LivingEntity) => kotlin.Boolean;
+    allowSprinting(): (param0: TagKey<Fluid>, param1: LivingEntity) => boolean;
     allowSwimming(): boolean;
     canDrownInFluid(arg0: TagKey<Fluid>, arg1: LivingEntity): boolean;
     canMoveDownInFluid(arg0: TagKey<Fluid>, arg1: Entity): boolean;
@@ -46,7 +46,7 @@ export class SimpleConfiguredFluidBehavior extends Record implements FluidBehavi
     makeMobsFloat(): boolean;
     makeRiddenMobsFloat(): boolean;
     movementSlowdown(): FluidBehavior$Builder$MovementSlowdownFunction;
-    movementSpeed(): (param0: LivingEntity) => kotlin.Float;
+    movementSpeed(): (param0: LivingEntity) => number;
     shouldTryFloatingInFluid(arg0: TagKey<Fluid>, arg1: Entity): boolean;
     toString(): string;
     travelInFluid(arg0: TagKey<Fluid>, arg1: LivingEntity, arg2: Vec3, arg3: number, arg4: boolean, arg5: number): void;

@@ -13,23 +13,23 @@ import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/c
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export class ItemPredicateArgument$Context extends Object implements ComponentPredicateParser$Context<(param0: ItemStack) => kotlin.Boolean, ItemPredicateArgument$ComponentWrapper, ItemPredicateArgument$PredicateWrapper> {
+export class ItemPredicateArgument$Context extends Object implements ComponentPredicateParser$Context<(param0: ItemStack) => boolean, ItemPredicateArgument$ComponentWrapper, ItemPredicateArgument$PredicateWrapper> {
     private constructor(registries: HolderLookup$Provider)
     // private components: HolderLookup$RegistryLookup<DataComponentType<Object>>;
     // private items: HolderLookup$RegistryLookup<Item>;
     // private predicates: HolderLookup$RegistryLookup<DataComponentPredicate$Type<Object>>;
     // private registries: HolderLookup$Provider;
-    anyOf(alternatives: (param0: ItemStack) => kotlin.Boolean[]): (param0: ItemStack) => kotlin.Boolean;
-    createComponentTest(reader: ImmutableStringReader, componentType: ItemPredicateArgument$ComponentWrapper): (param0: ItemStack) => kotlin.Boolean;
-    createComponentTest(reader: ImmutableStringReader, componentType: ItemPredicateArgument$ComponentWrapper, value: Dynamic<Object>): (param0: ItemStack) => kotlin.Boolean;
-    createPredicateTest(reader: ImmutableStringReader, predicateType: ItemPredicateArgument$PredicateWrapper, value: Dynamic<Object>): (param0: ItemStack) => kotlin.Boolean;
-    forElementType(reader: ImmutableStringReader, id: Identifier): (param0: ItemStack) => kotlin.Boolean;
-    forTagType(reader: ImmutableStringReader, id: Identifier): (param0: ItemStack) => kotlin.Boolean;
+    anyOf(alternatives: (param0: ItemStack) => boolean[]): (param0: ItemStack) => boolean;
+    createComponentTest(reader: ImmutableStringReader, componentType: ItemPredicateArgument$ComponentWrapper): (param0: ItemStack) => boolean;
+    createComponentTest(reader: ImmutableStringReader, componentType: ItemPredicateArgument$ComponentWrapper, value: Dynamic<Object>): (param0: ItemStack) => boolean;
+    createPredicateTest(reader: ImmutableStringReader, predicateType: ItemPredicateArgument$PredicateWrapper, value: Dynamic<Object>): (param0: ItemStack) => boolean;
+    forElementType(reader: ImmutableStringReader, id: Identifier): (param0: ItemStack) => boolean;
+    forTagType(reader: ImmutableStringReader, id: Identifier): (param0: ItemStack) => boolean;
     listComponentTypes(): Stream<Identifier>;
     listElementTypes(): Stream<Identifier>;
     listPredicateTypes(): Stream<Identifier>;
     listTagTypes(): Stream<Identifier>;
     lookupComponentType(reader: ImmutableStringReader, componentId: Identifier): ItemPredicateArgument$ComponentWrapper;
     lookupPredicateType(reader: ImmutableStringReader, componentId: Identifier): ItemPredicateArgument$PredicateWrapper;
-    negate(value: (param0: ItemStack) => kotlin.Boolean): (param0: ItemStack) => kotlin.Boolean;
+    negate(value: (param0: ItemStack) => boolean): (param0: ItemStack) => boolean;
 }

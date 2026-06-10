@@ -4,7 +4,7 @@ import type { Curve } from '../../../sun/awt/geom/Curve.d.ts'
 export abstract class Crossings extends Object {
     static debug: boolean;
     static findCrossings(paramarg0: PathIterator, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): Crossings;
-    static findCrossings(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): Crossings;
+    static findCrossings(paramarg0: Curve[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): Crossings;
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     // private limit: number;
     // private tmp: Curve[];

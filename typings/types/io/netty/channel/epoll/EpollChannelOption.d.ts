@@ -54,7 +54,7 @@ export class EpollChannelOption<T extends Object | number | string | boolean> ex
     static TCP_KEEPCNT: ChannelOption<number>;
     static TCP_KEEPIDLE: ChannelOption<number>;
     static TCP_KEEPINTVL: ChannelOption<number>;
-    static TCP_MD5SIG: ChannelOption<Object>;
+    static TCP_MD5SIG: ChannelOption<Map<InetAddress, number[]>>;
     static TCP_NODELAY: ChannelOption<boolean>;
     static TCP_NOTSENT_LOWAT: ChannelOption<number>;
     static TCP_QUICKACK: ChannelOption<boolean>;

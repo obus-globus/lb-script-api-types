@@ -5,6 +5,7 @@ import type { WorldClock } from '../../../../../../../net/minecraft/world/clock/
 import type { IntRange } from '../../../../../../../net/minecraft/world/level/storage/loot/IntRange.d.ts'
 import type { AllOfCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/AllOfCondition$Builder.d.ts'
 import type { AnyOfCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/AnyOfCondition$Builder.d.ts'
+import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 import type { TimeCheck } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/TimeCheck.d.ts'
 export class TimeCheck$Builder extends Object implements LootItemCondition$Builder {
@@ -12,9 +13,9 @@ export class TimeCheck$Builder extends Object implements LootItemCondition$Build
     // private clock: Holder<WorldClock>;
     // private period: Optional<number>;
     // private value: IntRange;
-    and(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AllOfCondition$Builder;
+    and(other: () => LootItemCondition): AllOfCondition$Builder;
     build(): TimeCheck;
-    invert(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    or(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AnyOfCondition$Builder;
+    invert(): () => LootItemCondition;
+    or(other: () => LootItemCondition): AnyOfCondition$Builder;
     setPeriod(period: number): TimeCheck$Builder;
 }

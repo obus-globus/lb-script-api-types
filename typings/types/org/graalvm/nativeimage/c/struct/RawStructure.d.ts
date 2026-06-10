@@ -3,6 +3,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface RawStructure extends Annotation, Object {
-    constructor(sizeProvider: KClass<(param0: number) => kotlin.Int>)
-    /*not mapped: */ sizeProvider(): KClass<(param0: number) => kotlin.Int>;
+    constructor(sizeProvider: KClass<(param0: number) => number>)
+    /*not mapped: */ sizeProvider(): KClass<(param0: number) => number>;
 }

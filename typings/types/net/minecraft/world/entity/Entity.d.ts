@@ -273,7 +273,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     applyEffectsFromBlocksForLastMovements(): void;
     applyGravity(): void;
     applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
-    applyImplicitComponentIfPresent(components: DataComponentGetter, type: DataComponentType<T>): boolean;
+    applyImplicitComponentIfPresent<T extends Object | number | string | boolean>(components: DataComponentGetter, type: DataComponentType<T>): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     // private applyMovementEmissionAndPlaySound(emission: Entity$MovementEmission, clippedMovement: Vec3, effectPos: BlockPos, effectState: BlockState): void;
     // private applyPistonMovementRestriction(axis: Direction$Axis, amount: number): number;
@@ -366,7 +366,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
-    fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
+    fabric_updateSyncTarget<T extends Object | number | string | boolean>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_updateSyncTarget(arg0: AttachmentTargetInfo<Object>, arg1: AttachmentTargetInfo<Object>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fillCrashReportCategory(category: CrashReportCategory): void;
@@ -494,7 +494,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     getTicksRequiredToFreeze(): number;
     getType(): EntityType<Object>;
     getTypeName(): Component;
-    getTyped(type: DataComponentType<T>): TypedDataComponent<T>;
+    getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
     getUUID(): UUID;
     getUpVector(a: number): Vec3;
     getVehicle(): Entity;
@@ -525,7 +525,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     hasGlowingTag(): boolean;
     hasIndirectPassenger(entity: Entity): boolean;
     hasMovedHorizontallyRecently(): boolean;
-    hasPassenger(test: (param0: Entity) => kotlin.Boolean): boolean;
+    hasPassenger(test: (param0: Entity) => boolean): boolean;
     hasPassenger(entity: Entity): boolean;
     hasPose(pose: Pose): boolean;
     hashCode(): number;
@@ -537,16 +537,12 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     igniteForTicks(numberOfTicks: number): void;
     ignoreExplosion(explosion: Explosion): boolean;
     interact(player: Player, hand: InteractionHand, location: Vec3): InteractionResult;
-    is<T extends Object | number | string | boolean>(rawType: T): boolean;
-    is(type: Holder<T>): boolean;
-    is(set: Holder<T>[]): boolean;
-    is(type: ResourceKey<T>): boolean;
-    is(tag: TagKey<T>): boolean;
+    is(rawType: EntityType<Object>): boolean;
     is(type: Holder<EntityType<Object>>): boolean;
+    is(set: Holder<EntityType<Object>>[]): boolean;
     is(type: ResourceKey<EntityType<Object>>): boolean;
     is(tag: TagKey<EntityType<Object>>): boolean;
     is(other: Entity): boolean;
-    is(rawType: EntityType<Object>): boolean;
     isAffectedByBlocks(): boolean;
     isAlive(): boolean;
     isAlliedTo(other: Entity): boolean;
@@ -635,7 +631,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     mayInteract(level: ServerLevel, pos: BlockPos): boolean;
     maybeBackOffFromEdge(delta: Vec3, moverType: MoverType): Vec3;
     mirror(mirror: Mirror): number;
-    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => unknown): A;
+    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
     modifyPassengerFluidInteractionBox(passengerBox: AABB): AABB;
     move(moverType: MoverType, delta: Vec3): void;
     moveOrInterpolateTo(position: Optional<Vec3>, yRot: Optional<number>, xRot: Optional<number>): void;
@@ -649,7 +645,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     notifyLeasheeRemoved(entity: Leashable): void;
     oldPosition(): Vec3;
     onAboveBubbleColumn(dragDown: boolean, pos: BlockPos): void;
-    onAttachedSet(arg0: AttachmentType<A>): Event<(param0: A, param1: Object | null) => void>;
+    onAttachedSet<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;
     onAttachedSet(arg0: AttachmentType<Object>): Event<Object>;
     onBelowWorld(): void;
     onClientRemoval(): void;
@@ -676,7 +672,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     position(): Vec3;
     positionRider(passenger: Entity): void;
     positionRider(passenger: Entity, moveFunction: (param0: Entity, param1: number, param2: number, param3: number) => void): void;
-    problemPath(): () => kotlin.String;
+    problemPath(): () => string;
     processFlappingMovement(): void;
     processPortalCooldown(): void;
     propagateFallToPassengers(fallDistance: number, damageModifier: number, damageSource: DamageSource): void;
@@ -782,7 +778,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     stopSeenByPlayer(player: ServerPlayer): void;
     supportQuadLeashAsHolder(): boolean;
     syncPacketPositionCodec(x: number, y: number, z: number): void;
-    tags(): Stream<TagKey<T>>;
+    tags(): Stream<TagKey<EntityType<Object>>>;
     teleport(transition: TeleportTransition): Entity;
     // private teleportCrossDimension(oldLevel: ServerLevel, newLevel: ServerLevel, transition: TeleportTransition): Entity;
     // private teleportPassengers(): void;

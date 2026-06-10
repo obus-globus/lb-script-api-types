@@ -3,7 +3,7 @@ import type { DurationFormatterFactory } from '../../../../../../../../org/graal
 import type { PeriodBuilderFactory } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/duration/PeriodBuilderFactory.d.ts'
 import type { PeriodFormatterFactory } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/duration/PeriodFormatterFactory.d.ts'
 export interface PeriodFormatterService extends Object{
-    getAvailableLocaleNames(): E[];
+    getAvailableLocaleNames(): string[];
     newDurationFormatterFactory(): DurationFormatterFactory;
     newPeriodBuilderFactory(): PeriodBuilderFactory;
     newPeriodFormatterFactory(): PeriodFormatterFactory;

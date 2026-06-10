@@ -24,7 +24,7 @@ export class EnumOptionBuilderImpl<E extends Enum<E>> extends StatefulOptionBuil
     readonly enumClass: Class<E>;
     build(): EnumOption<E>;
     getAllowedValues(): DependentValue<E[]>;
-    getDependencies(): E[];
+    getDependencies(): Identifier[];
     getElementNameProvider(): (param0: E) => Component;
     getOptionClass(): Class<EnumOption<E>>;
     setAllowedValues(arg0: E[]): EnumOptionBuilder<E>;

@@ -12,15 +12,15 @@ import type { UnwrappedType } from '../../../../../../kotlin/reflect/jvm/interna
 import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class KotlinTypeFactory extends Object {
     static INSTANCE: KotlinTypeFactory;
-    static computeExpandedType(paramarg0: TypeAliasDescriptor, paramarg1: (Object | null)[]): SimpleType;
+    static computeExpandedType(paramarg0: TypeAliasDescriptor, paramarg1: TypeProjection[]): SimpleType;
     static flexibleType(paramarg0: SimpleType, paramarg1: SimpleType): UnwrappedType;
     static integerLiteralType(paramarg0: TypeAttribute<Object>[], paramarg1: IntegerLiteralTypeConstructor, paramarg2: boolean): SimpleType;
-    static simpleNotNullType(paramarg0: TypeAttribute<Object>[], paramarg1: ClassDescriptor, paramarg2: (Object | null)[]): SimpleType;
-    static simpleType(paramarg0: SimpleType, paramarg1: TypeAttribute<Object>[], paramarg2: TypeConstructor, paramarg3: (Object | null)[], paramarg4: boolean): SimpleType;
-    static simpleType(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean): SimpleType;
-    static simpleType(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: KotlinTypeRefiner): SimpleType;
-    static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: MemberScope): SimpleType;
-    static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: (Object | null)[], paramarg3: boolean, paramarg4: MemberScope, paramarg5: (param0: Object | null) => Object | null): SimpleType;
+    static simpleNotNullType(paramarg0: TypeAttribute<Object>[], paramarg1: ClassDescriptor, paramarg2: TypeProjection[]): SimpleType;
+    static simpleType(paramarg0: SimpleType, paramarg1: TypeAttribute<Object>[], paramarg2: TypeConstructor, paramarg3: TypeProjection[], paramarg4: boolean): SimpleType;
+    static simpleType(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: TypeProjection[], paramarg3: boolean): SimpleType;
+    static simpleType(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: TypeProjection[], paramarg3: boolean, paramarg4: KotlinTypeRefiner): SimpleType;
+    static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: TypeProjection[], paramarg3: boolean, paramarg4: MemberScope): SimpleType;
+    static simpleTypeWithNonTrivialMemberScope(paramarg0: TypeAttribute<Object>[], paramarg1: TypeConstructor, paramarg2: TypeProjection[], paramarg3: boolean, paramarg4: MemberScope, paramarg5: (param0: Object) => SimpleType): SimpleType;
     private constructor()
     // private computeMemberScope(arg0: TypeConstructor, arg1: TypeProjection[], arg2: KotlinTypeRefiner): MemberScope;
     // private refineConstructor(arg0: TypeConstructor, arg1: KotlinTypeRefiner, arg2: TypeProjection[]): KotlinTypeFactory$ExpandedTypeOrRefinedConstructor;

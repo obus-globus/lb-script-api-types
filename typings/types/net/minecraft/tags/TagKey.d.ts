@@ -10,14 +10,14 @@ import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCod
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export class TagKey<T extends Object | number | string | boolean> extends Record implements FabricTagKey, TagKeyMixin {
-    static codec(paramregistryName: ResourceKey<Object>): Codec<Object>;
-    static create(paramregistry: ResourceKey<Object>, paramlocation: Identifier): TagKey<Object>;
-    static hashedCodec(paramregistryName: ResourceKey<Object>): Codec<Object>;
-    static streamCodec(paramregistryName: ResourceKey<Object>): StreamCodec<ByteBuf, Object>;
+    static codec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<TagKey<Object>>;
+    static create(paramregistry: ResourceKey<(Object | null)[]>, paramlocation: Identifier): TagKey<Object>;
+    static hashedCodec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<TagKey<Object>>;
+    static streamCodec(paramregistryName: ResourceKey<(Object | null)[]>): StreamCodec<ByteBuf, TagKey<Object>>;
     constructor(registry: ResourceKey<T[]>, location: Identifier)
     // private location: Identifier;
     // private registry: ResourceKey<T[]>;
-    cast(registry: ResourceKey<E[]>): Optional<TagKey<E>>;
+    cast<E extends Object | number | string | boolean>(registry: ResourceKey<E[]>): Optional<TagKey<E>>;
     equals(o: Object | null): boolean;
     getName(): Component;
     getTranslationKey(): string;

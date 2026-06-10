@@ -4,8 +4,7 @@ export class ServerCookieEncoder extends CookieEncoder {
     static LAX: ServerCookieEncoder;
     static STRICT: ServerCookieEncoder;
     private constructor(arg0: boolean)
-    encode(arg0: E[]): string[];
-    encode(arg0: Cookie): string;
     encode(arg0: Cookie[]): string[];
+    encode(arg0: Cookie): string;
     encode(arg0: string, arg1: string): string;
 }

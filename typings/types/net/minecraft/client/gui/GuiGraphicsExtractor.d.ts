@@ -87,7 +87,7 @@ export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractor
     book(bookModel: BookModel, texture: Identifier, scale: number, open: number, flip: number, x0: number, y0: number, x1: number, y1: number): void;
     centeredText(font: Font, str: string, x: number, y: number, color: number): void;
     centeredText(font: Font, text: Component, x: number, y: number, color: number): void;
-    centeredText(font: Font, text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, x: number, y: number, color: number): void;
+    centeredText(font: Font, text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, x: number, y: number, color: number): void;
     // private componentHoverEffect(font: Font, hoveredStyle: Style, xMouse: number, yMouse: number): void;
     containsPointInScissor(x: number, y: number): boolean;
     // private createDefaultTextParameters(opacity: number): ActiveTextCollector$Parameters;
@@ -130,13 +130,13 @@ export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractor
     setComponentTooltipForNextFrame(font: Font, lines: Component[], xo: number, yo: number): void;
     setComponentTooltipForNextFrame(font: Font, lines: Component[], xo: number, yo: number, style: Identifier): void;
     setPreeditOverlay(preeditOverlay: Renderable): void;
-    setTooltipForNextFrame(formattedCharSequences: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], x: number, y: number): void;
-    setTooltipForNextFrame(font: Font, lines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], xo: number, yo: number): void;
-    setTooltipForNextFrame(font: Font, lines: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], xo: number, yo: number, style: Identifier): void;
+    setTooltipForNextFrame(formattedCharSequences: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], x: number, y: number): void;
+    setTooltipForNextFrame(font: Font, lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], xo: number, yo: number): void;
+    setTooltipForNextFrame(font: Font, lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], xo: number, yo: number, style: Identifier): void;
     setTooltipForNextFrame(font: Font, texts: Component[], optionalImage: Optional<TooltipComponent>, xo: number, yo: number): void;
     setTooltipForNextFrame(font: Font, texts: Component[], optionalImage: Optional<TooltipComponent>, xo: number, yo: number, style: Identifier): void;
-    setTooltipForNextFrame(font: Font, tooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], component: Optional<TooltipComponent>, positioner: ClientTooltipPositioner, xo: number, yo: number, replaceExisting: boolean, style: Identifier): void;
-    setTooltipForNextFrame(font: Font, tooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[], positioner: ClientTooltipPositioner, xo: number, yo: number, replaceExisting: boolean): void;
+    setTooltipForNextFrame(font: Font, tooltip: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], component: Optional<TooltipComponent>, positioner: ClientTooltipPositioner, xo: number, yo: number, replaceExisting: boolean, style: Identifier): void;
+    setTooltipForNextFrame(font: Font, tooltip: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], positioner: ClientTooltipPositioner, xo: number, yo: number, replaceExisting: boolean): void;
     setTooltipForNextFrame(font: Font, text: Component, xo: number, yo: number): void;
     setTooltipForNextFrame(font: Font, text: Component, xo: number, yo: number, style: Identifier): void;
     setTooltipForNextFrame(font: Font, itemStack: ItemStack, xo: number, yo: number): void;
@@ -148,8 +148,8 @@ export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractor
     text(font: Font, str: string, x: number, y: number, color: number, dropShadow: boolean): void;
     text(font: Font, str: Component, x: number, y: number, color: number): void;
     text(font: Font, str: Component, x: number, y: number, color: number, dropShadow: boolean): void;
-    text(font: Font, str: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, x: number, y: number, color: number): void;
-    text(font: Font, str: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, x: number, y: number, color: number, dropShadow: boolean): void;
+    text(font: Font, str: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, x: number, y: number, color: number): void;
+    text(font: Font, str: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, x: number, y: number, color: number, dropShadow: boolean): void;
     textHighlight(x0: number, y0: number, x1: number, y1: number, invertText: boolean): void;
     textRenderer(): ActiveTextCollector;
     textRenderer(hoveredTextEffects: GuiGraphicsExtractor$HoveredTextEffects): ActiveTextCollector;

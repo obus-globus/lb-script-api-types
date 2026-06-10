@@ -9,11 +9,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ListeningExecutorService extends ExecutorService, Object {
     awaitTermination(timeout: Duration): boolean;
     close(): void;
-    invokeAll(tasks: E[]): Future<T>[];
-    invokeAll(tasks: E[], timeout: Duration): Future<T>[];
-    invokeAll(tasks: E[], timeout: number, unit: TimeUnit): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(tasks: E[], timeout: Duration): T;
+    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[]): Future<T>[];
+    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): Future<T>[];
+    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: number, unit: TimeUnit): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): T;
     submit(task: () => void): ListenableFuture<Object>;
     submit<T extends Object | number | string | boolean>(task: () => void, result: T): ListenableFuture<T>;
-    submit(task: () => T): ListenableFuture<T>;
+    submit<T extends Object | number | string | boolean>(task: () => T): ListenableFuture<T>;
 }

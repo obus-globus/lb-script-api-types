@@ -10,20 +10,20 @@ export class MobFoodOption extends Record {
     static Companion: MobFoodOption$Companion;
     static foodNutritionHeal(stack: ItemStack, multiplier: number): number;
     static ofBucket(item: Item): MobFoodOption;
-    constructor(test: (param0: ItemStack) => kotlin.Boolean, healAmount: (param0: ItemStack) => kotlin.Float, isBucket: boolean)
-    constructor(tag: TagKey<Item>, healAmount: (param0: ItemStack) => kotlin.Float, isBucket: boolean)
+    constructor(test: (param0: ItemStack) => boolean, healAmount: (param0: ItemStack) => number, isBucket: boolean)
+    constructor(tag: TagKey<Item>, healAmount: (param0: ItemStack) => number, isBucket: boolean)
     constructor(item: Item, healAmount: number, isBucket: boolean)
-    constructor(item: Item, healAmount: (param0: ItemStack) => kotlin.Float, isBucket: boolean)
-    // private healAmount: (param0: ItemStack) => kotlin.Float;
-    /*not mapped: */ healAmount(): (param0: ItemStack) => kotlin.Float;
+    constructor(item: Item, healAmount: (param0: ItemStack) => number, isBucket: boolean)
+    // private healAmount: (param0: ItemStack) => number;
+    /*not mapped: */ healAmount(): (param0: ItemStack) => number;
     // private isBucket: boolean;
     /*not mapped: */ isBucket(): boolean;
-    // private test: (param0: ItemStack) => kotlin.Boolean;
-    /*not mapped: */ test(): (param0: ItemStack) => kotlin.Boolean;
-    component1(): (param0: ItemStack) => kotlin.Boolean;
-    component2(): (param0: ItemStack) => kotlin.Float;
+    // private test: (param0: ItemStack) => boolean;
+    /*not mapped: */ test(): (param0: ItemStack) => boolean;
+    component1(): (param0: ItemStack) => boolean;
+    component2(): (param0: ItemStack) => number;
     component3(): boolean;
-    copy(test: (param0: ItemStack) => kotlin.Boolean, healAmount: (param0: ItemStack) => kotlin.Float, isBucket: boolean): MobFoodOption;
+    copy(test: (param0: ItemStack) => boolean, healAmount: (param0: ItemStack) => number, isBucket: boolean): MobFoodOption;
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

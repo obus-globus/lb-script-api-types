@@ -6,7 +6,7 @@ import type { DynamicTexture } from '../../../../../net/minecraft/client/rendere
 export class NativeImageBackedNoiseTexture extends DynamicTexture implements TextureAccess {
     constructor(arg0: number)
     getSampling(): GlSampler;
-    getTextureId(): () => kotlin.Int;
+    getTextureId(): () => number;
     getType(): TextureType;
     upload(): void;
 }

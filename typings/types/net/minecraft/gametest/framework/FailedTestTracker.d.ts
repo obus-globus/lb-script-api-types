@@ -4,7 +4,7 @@ import type { Holder$Reference } from '../../../../net/minecraft/core/Holder$Ref
 import type { GameTestInstance } from '../../../../net/minecraft/gametest/framework/GameTestInstance.d.ts'
 export class FailedTestTracker extends Object {
     static forgetFailedTests(): void;
-    static getLastFailedTests(): Stream<Object>;
+    static getLastFailedTests(): Stream<Holder$Reference<GameTestInstance>>;
     static rememberFailedTest(paramtest: Holder$Reference<GameTestInstance>): void;
     constructor()
 }

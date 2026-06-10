@@ -11,16 +11,16 @@ export class ModuleGUICloser$Mode extends Enum<ModuleGUICloser$Mode> implements 
     static Companion: Tagged$Companion;
     static MATCHES: ModuleGUICloser$Mode;
     static getEntries(): ModuleGUICloser$Mode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleGUICloser$Mode;
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    and(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
-    negate(): (param0: T, param1: U) => kotlin.Boolean;
-    or(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
+    and(arg0: (param0: Regex, param1: Component) => boolean): (param0: Regex, param1: Component) => boolean;
+    negate(): (param0: Regex, param1: Component) => boolean;
+    or(arg0: (param0: Regex, param1: Component) => boolean): (param0: Regex, param1: Component) => boolean;
     test(regex: Regex, text: Component): boolean;
     name(): "MATCHES" | "CONTAINS";
 }

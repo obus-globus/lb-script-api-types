@@ -9,10 +9,11 @@ import type { URI } from '../../../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { OptionValues } from '../../../../../../org/graalvm/options/OptionValues.d.ts'
 import type { Range } from '../../../../../../org/graalvm/tools/lsp/server/types/Range.d.ts'
+import type { TextDocumentContentChangeEvent } from '../../../../../../org/graalvm/tools/lsp/server/types/TextDocumentContentChangeEvent.d.ts'
 import type { SourceUtils$SourceFix } from '../../../../../../org/graalvm/tools/lsp/server/utils/SourceUtils$SourceFix.d.ts'
 import type { TextDocumentSurrogate } from '../../../../../../org/graalvm/tools/lsp/server/utils/TextDocumentSurrogate.d.ts'
 export class SourceUtils extends Object {
-    static applyTextDocumentChanges(paramlist: (Object | null)[], paramsource: Source, paramsurrogate: TextDocumentSurrogate, paramlogger: TruffleLogger): string;
+    static applyTextDocumentChanges(paramlist: TextDocumentContentChangeEvent[], paramsource: Source, paramsurrogate: TextDocumentSurrogate, paramlogger: TruffleLogger): string;
     static convertLineAndColumnToOffset(paramsource: Source, paramoneBasedLineNumber: number, paramcolumn: number): number;
     static findSourceLocation(paramenv: TruffleInstrument$Env, paramobject: Object, paramdefaultLanguageInfo: LanguageInfo): SourceSection;
     static getOrFixFileUri(paramsource: Source): URI;

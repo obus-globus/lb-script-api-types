@@ -10,20 +10,20 @@ export class Multimaps$TransformedEntriesMultimap<K extends Object | number | st
     // private transformer: (param0: K, param1: V1) => V2;
     clear(): void;
     containsKey(key: Object): boolean;
-    createAsMap(): Map<K, E[]>;
-    createEntries(): E[];
+    createAsMap(): Map<K, V2[]>;
+    createEntries(): Map$Entry<K, V2>[];
     createKeySet(): K[];
     createKeys(): K[];
-    createValues(): E[];
+    createValues(): V2[];
     entryIterator(): Iterator<Map$Entry<K, V2>>;
-    get(key: K): E[];
+    get(key: K): V2[];
     isEmpty(): boolean;
     put(key: K, value: V2): boolean;
     putAll(key: K, values: V2[]): boolean;
     putAll(multimap: Multimap<K, V2>): boolean;
     remove(key: Object, value: Object): boolean;
-    removeAll(key: Object): E[];
-    replaceValues(key: K, values: V2[]): E[];
+    removeAll(key: Object): V2[];
+    replaceValues(key: K, values: V2[]): V2[];
     size(): number;
-    transform(key: K, values: E[]): E[];
+    transform(key: K, values: V1[]): V2[];
 }

@@ -5,7 +5,7 @@ import type { ClientHotbarScrollEvents$Allow } from '../../../../../../../net/fa
 import type { ClientHotbarScrollEvents$Before } from '../../../../../../../net/fabricmc/fabric/api/event/client/player/ClientHotbarScrollEvents$Before.d.ts'
 export class ClientHotbarScrollEvents extends Object {
     static AFTER: Event<(param0: (Object | null)[], param1: number, param2: number, param3: number, param4: number) => void>;
-    static ALLOW: Event<(param0: (Object | null)[], param1: number, param2: number, param3: number, param4: number) => kotlin.Boolean>;
+    static ALLOW: Event<(param0: (Object | null)[], param1: number, param2: number, param3: number, param4: number) => boolean>;
     static BEFORE: Event<(param0: (Object | null)[], param1: number, param2: number, param3: number, param4: number) => void>;
     private constructor()
 }

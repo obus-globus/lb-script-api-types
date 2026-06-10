@@ -12,7 +12,7 @@ export class Trie2$Trie2Iterator extends Object implements Iterator<Trie2$Range>
     // private mapper: Trie2$ValueMapper;
     // private nextStart: number;
     // private returnValue: Trie2$Range;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Trie2$Range) => void): void;
     hasNext(): boolean;
     next(): Trie2$Range;
     // private rangeEndLS(startingLS: string): number;

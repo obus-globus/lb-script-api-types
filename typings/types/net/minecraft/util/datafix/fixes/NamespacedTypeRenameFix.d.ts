@@ -2,6 +2,7 @@ import type { DSL$TypeReference } from '../../../../../com/mojang/datafixers/DSL
 import type { DataFix } from '../../../../../com/mojang/datafixers/DataFix.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { TypeRewriteRule } from '../../../../../com/mojang/datafixers/TypeRewriteRule.d.ts'
+import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
@@ -9,10 +10,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NamespacedTypeRenameFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
-    constructor(outputSchema: Schema, name: string, type: DSL$TypeReference, renamer: (param0: string) => unknown)
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    constructor(outputSchema: Schema, name: string, type: DSL$TypeReference, renamer: (param0: string) => Object | null)
     // private name: string;
-    // private renamer: (param0: string) => unknown;
+    // private renamer: (param0: string) => Object | null;
     // private type: DSL$TypeReference;
     makeRule(): TypeRewriteRule;
 }

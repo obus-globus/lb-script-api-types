@@ -5,10 +5,11 @@ import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts
 import type { ConfiguredFeature } from '../../../../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { FeatureConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 import type { NoneFeatureConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/NoneFeatureConfiguration.d.ts'
+import type { PlacedFeature } from '../../../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
 export class SimpleRandomFeatureConfiguration extends Object implements FeatureConfiguration {
     static CODEC: Codec<SimpleRandomFeatureConfiguration>;
     static NONE: NoneFeatureConfiguration;
-    constructor(features: Holder<T>[])
-    features: Holder<T>[];
+    constructor(features: Holder<PlacedFeature>[])
+    features: Holder<PlacedFeature>[];
     getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
 }

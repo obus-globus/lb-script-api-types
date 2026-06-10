@@ -21,6 +21,6 @@ export class Products$P16<F extends K1, T1 extends Object | number | string | bo
     // private t7: App<F, T7>;
     // private t8: App<F, T8>;
     // private t9: App<F, T9>;
-    apply(arg0: Applicative<F, Object>, arg1: App<F, Function16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R>>): App<F, R>;
-    apply(arg0: Applicative<F, Object>, arg1: Function16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: App<F, Function16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R>>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: Function16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R>): App<F, R>;
 }

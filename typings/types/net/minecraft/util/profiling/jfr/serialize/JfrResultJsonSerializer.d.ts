@@ -26,7 +26,7 @@ export class JfrResultJsonSerializer extends Object {
     format(jfrStats: JfrStatsResult): string;
     // private fps(fpsStats: FpsStat[]): JsonElement;
     // private heap(heapSummary: GcHeapStat$Summary): JsonElement;
-    // private ioSummary(summary: IoSummary<T>, elementWriter: (param0: T, param1: JsonObject) => void): JsonElement;
+    // private ioSummary<T extends Object | number | string | boolean>(summary: IoSummary<T>, elementWriter: (param0: T, param1: JsonObject) => void): JsonElement;
     // private network(jfrStats: JfrStatsResult): JsonElement;
     // private serverTicks(tickTimeStats: TickTimeStat[]): JsonElement;
     // private structureGen(structureGenStats: StructureGenStat[]): JsonElement;

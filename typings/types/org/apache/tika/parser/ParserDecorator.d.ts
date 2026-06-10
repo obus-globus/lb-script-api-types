@@ -6,7 +6,7 @@ import type { ParseContext } from '../../../../org/apache/tika/parser/ParseConte
 import type { Parser } from '../../../../org/apache/tika/parser/Parser.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class ParserDecorator extends Object implements Parser {
-    static withFallbacks(paramarg0: E[], paramarg1: MediaType[]): Parser;
+    static withFallbacks(paramarg0: Parser[], paramarg1: MediaType[]): Parser;
     static withTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     static withoutTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     constructor(arg0: Parser)

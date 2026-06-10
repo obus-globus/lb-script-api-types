@@ -6,16 +6,16 @@ export class AtomicReference<V extends Object | number | string | boolean> exten
     constructor()
     constructor(arg0: V)
     // private value: V;
-    accumulateAndGet(arg0: V, arg1: (param0: V, param1: Object | null) => unknown): V;
+    accumulateAndGet(arg0: V, arg1: (param0: V, param1: Object | null) => Object | null): V;
     compareAndExchange(arg0: V, arg1: V): V;
     compareAndExchangeAcquire(arg0: V, arg1: V): V;
     compareAndExchangeRelease(arg0: V, arg1: V): V;
     compareAndSet(arg0: V, arg1: V): boolean;
     get(): V;
     getAcquire(): V;
-    getAndAccumulate(arg0: V, arg1: (param0: V, param1: Object | null) => unknown): V;
+    getAndAccumulate(arg0: V, arg1: (param0: V, param1: Object | null) => Object | null): V;
     getAndSet(arg0: V): V;
-    getAndUpdate(arg0: (param0: V) => unknown): V;
+    getAndUpdate(arg0: (param0: V) => Object | null): V;
     getOpaque(): V;
     getPlain(): V;
     lazySet(arg0: V): void;
@@ -24,7 +24,7 @@ export class AtomicReference<V extends Object | number | string | boolean> exten
     setPlain(arg0: V): void;
     setRelease(arg0: V): void;
     toString(): string;
-    updateAndGet(arg0: (param0: V) => unknown): V;
+    updateAndGet(arg0: (param0: V) => Object | null): V;
     weakCompareAndSet(arg0: V, arg1: V): boolean;
     weakCompareAndSetAcquire(arg0: V, arg1: V): boolean;
     weakCompareAndSetPlain(arg0: V, arg1: V): boolean;

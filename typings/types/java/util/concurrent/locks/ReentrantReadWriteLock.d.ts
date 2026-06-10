@@ -14,13 +14,13 @@ export class ReentrantReadWriteLock extends Object implements Serializable, Read
     // private writerLock: ReentrantReadWriteLock$WriteLock;
     getOwner(): Thread;
     getQueueLength(): number;
-    getQueuedReaderThreads(): E[];
-    getQueuedThreads(): E[];
-    getQueuedWriterThreads(): E[];
+    getQueuedReaderThreads(): Thread[];
+    getQueuedThreads(): Thread[];
+    getQueuedWriterThreads(): Thread[];
     getReadHoldCount(): number;
     getReadLockCount(): number;
     getWaitQueueLength(arg0: Condition): number;
-    getWaitingThreads(arg0: Condition): E[];
+    getWaitingThreads(arg0: Condition): Thread[];
     getWriteHoldCount(): number;
     hasQueuedThread(arg0: Thread): boolean;
     hasQueuedThreads(): boolean;

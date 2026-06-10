@@ -5,7 +5,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloTranslator extends ObjectDetectionTranslator {
     static builder(): YoloTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): YoloTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): YoloTranslator$Builder;
     constructor(arg0: YoloTranslator$Builder)
     processOutput(arg0: TranslatorContext, arg1: (Object | null)[]): DetectedObjects;
 }

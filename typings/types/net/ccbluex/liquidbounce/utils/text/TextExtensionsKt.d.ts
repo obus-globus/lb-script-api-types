@@ -28,11 +28,11 @@ export class TextExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:51}
      */
-    static asText(paramarg0: (Object | null)[]): Component;
+    static asText(paramarg0: Component[]): Component;
     static asText(paramarg0: (Object | null)[]): Component;
     static asText(paramarg0: string): MutableComponent;
     static asTextContent(string: string): ComponentContents;
-    static buildText(builderAction: (param0: Object | null) => void): Component;
+    static buildText(builderAction: (param0: Object) => void): Component;
     static capitalize(string: string): string;
     static colored(char: string, color: ChatFormatting): ColoredChar;
     static dropPort(string: string): string;
@@ -49,8 +49,8 @@ export class TextExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:123}
      */
-    static joinToText(collection: E[], separator: Component, prefix: Component, postfix: Component, transform: (param0: Object | null) => Component): Component;
-    static joinToText(collection: E[], separator: Component): Component;
+    static joinToText(collection: (Object | null)[], separator: Component, prefix: Component, postfix: Component, transform: (param0: Object | null) => Component): Component;
+    static joinToText(collection: Component[], separator: Component): Component;
     static plus(paramarg0: Style, paramarg1: Color4b): Style;
     static plus(paramarg0: Style, paramarg1: ChatFormatting): Style;
     static plus(paramarg0: Style, paramarg1: ClickEvent): Style;
@@ -80,7 +80,7 @@ export class TextExtensionsKt extends Object {
     static textLoadingBar(percent: number, progress: ColoredChar, remaining: ColoredChar, length: number): Component;
     static textOf(parts: (Object | null)[]): Component;
     static toLowerCamelCase(string: string): string;
-    static toText(formattedCharSequence: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): Component;
+    static toText(formattedCharSequence: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): Component;
     static toTranslatedString(translatableContents: TranslatableContents): string;
     /**
      * Translate alt color codes to minecraft color codes

@@ -6,7 +6,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InstanceSegmentationTranslator extends BaseImageTranslator<DetectedObjects> {
     static builder(): InstanceSegmentationTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): InstanceSegmentationTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): InstanceSegmentationTranslator$Builder;
     constructor(arg0: InstanceSegmentationTranslator$Builder)
     // private classes: string[];
     // private synsetLoader: BaseImageTranslator$SynsetLoader;

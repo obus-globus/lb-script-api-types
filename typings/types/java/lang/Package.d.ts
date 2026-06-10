@@ -16,13 +16,13 @@ export class Package extends NamedPackage implements AnnotatedElement {
     // private versionInfo: Package$VersionInfo;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotations(): Annotation[];
-    getAnnotationsByType(arg0: Class<A>): A[];
-    getAnnotationsByType(arg0: Class<T>): T[];
+    getAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
+    getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDeclaredAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getDeclaredAnnotations(): Annotation[];
-    getDeclaredAnnotationsByType(arg0: Class<A>): A[];
-    getDeclaredAnnotationsByType(arg0: Class<T>): T[];
+    getDeclaredAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
+    getDeclaredAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getImplementationTitle(): string;
     getImplementationVendor(): string;
     getImplementationVersion(): string;

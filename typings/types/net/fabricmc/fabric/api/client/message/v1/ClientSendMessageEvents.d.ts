@@ -9,13 +9,13 @@ import type { ClientSendMessageEvents$ModifyChat } from '../../../../../../../ne
 import type { ClientSendMessageEvents$ModifyCommand } from '../../../../../../../net/fabricmc/fabric/api/client/message/v1/ClientSendMessageEvents$ModifyCommand.d.ts'
 import type { Event } from '../../../../../../../net/fabricmc/fabric/api/event/Event.d.ts'
 export class ClientSendMessageEvents extends Object {
-    static ALLOW_CHAT: Event<(param0: string) => kotlin.Boolean>;
-    static ALLOW_COMMAND: Event<(param0: string) => kotlin.Boolean>;
+    static ALLOW_CHAT: Event<(param0: string) => boolean>;
+    static ALLOW_COMMAND: Event<(param0: string) => boolean>;
     static CHAT: Event<(param0: string) => void>;
     static CHAT_CANCELED: Event<(param0: string) => void>;
     static COMMAND: Event<(param0: string) => void>;
     static COMMAND_CANCELED: Event<(param0: string) => void>;
-    static MODIFY_CHAT: Event<(param0: string) => kotlin.String>;
-    static MODIFY_COMMAND: Event<(param0: string) => kotlin.String>;
+    static MODIFY_CHAT: Event<(param0: string) => string>;
+    static MODIFY_COMMAND: Event<(param0: string) => string>;
     private constructor()
 }

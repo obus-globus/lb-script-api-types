@@ -20,7 +20,7 @@ export class BooleanBigArrayBigList$Spliterator extends Object implements Boolea
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     // private getWorkingMax(): number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;

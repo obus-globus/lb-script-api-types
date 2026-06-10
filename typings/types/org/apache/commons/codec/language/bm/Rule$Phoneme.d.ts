@@ -5,7 +5,7 @@ import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts
 import type { Languages$LanguageSet } from '../../../../../../org/apache/commons/codec/language/bm/Languages$LanguageSet.d.ts'
 import type { Rule$PhonemeExpr } from '../../../../../../org/apache/commons/codec/language/bm/Rule$PhonemeExpr.d.ts'
 export class Rule$Phoneme extends Object implements Rule$PhonemeExpr {
-    static COMPARATOR: (param0: Rule$Phoneme) => kotlin.Boolean;
+    static COMPARATOR: (param0: Object) => boolean;
     constructor(arg0: CharSequence, arg1: Languages$LanguageSet)
     constructor(arg0: Rule$Phoneme, arg1: Rule$Phoneme)
     constructor(arg0: Rule$Phoneme, arg1: Rule$Phoneme, arg2: Languages$LanguageSet)

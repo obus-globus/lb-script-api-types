@@ -6,10 +6,11 @@ import type { ParseState } from '../../../../../../net/minecraft/util/parsing/pa
 import type { Rule } from '../../../../../../net/minecraft/util/parsing/packrat/Rule.d.ts'
 import type { Rule$RuleAction } from '../../../../../../net/minecraft/util/parsing/packrat/Rule$RuleAction.d.ts'
 import type { Rule$SimpleRuleAction } from '../../../../../../net/minecraft/util/parsing/packrat/Rule$SimpleRuleAction.d.ts'
+import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export abstract class NumberRunParseRule extends Object implements Rule<StringReader, string> {
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Object | null) => Object | null): Rule<Object, Object>;
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Object | null) => Object | null): Rule<Object, Object>;
+    static fromTerm(paramchild: Term<Object>, paramaction: (param0: ParseState<Object>) => Object | null): Rule<Object, Object>;
+    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Scope) => Object | null): Rule<Object, Object>;
     constructor(noValueError: DelayedException<CommandSyntaxException>, underscoreNotAllowedError: DelayedException<CommandSyntaxException>)
     // private noValueError: DelayedException<CommandSyntaxException>;
     // private underscoreNotAllowedError: DelayedException<CommandSyntaxException>;

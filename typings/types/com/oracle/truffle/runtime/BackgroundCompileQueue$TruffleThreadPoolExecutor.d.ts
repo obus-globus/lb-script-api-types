@@ -1,6 +1,7 @@
 import type { BackgroundCompileQueue$DynamicCompilationThresholds } from '../../../../com/oracle/truffle/runtime/BackgroundCompileQueue$DynamicCompilationThresholds.d.ts'
 import type { CompilationTask$ExecutorServiceWrapper } from '../../../../com/oracle/truffle/runtime/CompilationTask$ExecutorServiceWrapper.d.ts'
 import type { EngineData } from '../../../../com/oracle/truffle/runtime/EngineData.d.ts'
+import type { OptimizedCallTarget } from '../../../../com/oracle/truffle/runtime/OptimizedCallTarget.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
@@ -19,13 +20,13 @@ export class BackgroundCompileQueue$TruffleThreadPoolExecutor extends ThreadPool
     awaitTermination(timeout: number, unit: TimeUnit): boolean;
     beforeExecute(t: Thread, r: () => void): void;
     flush(engine: EngineData): void;
-    getAllTargets(engine: EngineData): E[];
-    getQueuedTargets(engine: EngineData): E[];
+    getAllTargets(engine: EngineData): OptimizedCallTarget[];
+    getQueuedTargets(engine: EngineData): OptimizedCallTarget[];
     newTaskFor<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): RunnableFuture<T>;
-    newTaskFor(callable: () => T): RunnableFuture<T>;
+    newTaskFor<T extends Object | number | string | boolean>(callable: () => T): RunnableFuture<T>;
     remove(task: () => void): boolean;
     // private scaleThresholds(): void;
     submit(arg0: () => void): Future<Object>;
     submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
-    submit(task: () => T): Future<T>;
+    submit<T extends Object | number | string | boolean>(task: () => T): Future<T>;
 }

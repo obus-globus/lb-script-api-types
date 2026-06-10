@@ -11,7 +11,7 @@ export class ContainerHandleVirtual extends Object implements IContainerHandle {
     getDescription(): string;
     getId(): string;
     getName(): string;
-    getNestedContainers(): E[];
+    getNestedContainers(): IContainerHandle[];
     hashCode(): number;
     setAttribute(arg0: string, arg1: string): ContainerHandleVirtual;
     toString(): string;

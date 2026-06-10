@@ -43,13 +43,13 @@ export class FT_Module_Class extends Struct<FT_Module_Class> implements NativeRe
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nget_interface(paramarg0: number): FT_Module_Requester;
-    static nget_interface(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Long): void;
+    static nget_interface(paramarg0: number, paramarg1: (param0: number, param1: number) => number): void;
     static nmodule_done(paramarg0: number): FT_Module_Destructor;
     static nmodule_done(paramarg0: number, paramarg1: (param0: number) => void): void;
     static nmodule_flags(paramarg0: number): number;
     static nmodule_flags(paramarg0: number, paramarg1: number): void;
     static nmodule_init(paramarg0: number): FT_Module_Constructor;
-    static nmodule_init(paramarg0: number, paramarg1: (param0: number) => kotlin.Int): void;
+    static nmodule_init(paramarg0: number, paramarg1: (param0: number) => number): void;
     static nmodule_interface(paramarg0: number, paramarg1: number): ByteBuffer;
     static nmodule_interface(paramarg0: number, paramarg1: ByteBuffer): void;
     static nmodule_name(paramarg0: number): ByteBuffer;
@@ -69,13 +69,13 @@ export class FT_Module_Class extends Struct<FT_Module_Class> implements NativeRe
     close(): void;
     create(arg0: number, arg1: ByteBuffer): FT_Module_Class;
     get_interface(): FT_Module_Requester;
-    get_interface(arg0: (param0: number, param1: number) => kotlin.Long): FT_Module_Class;
+    get_interface(arg0: (param0: number, param1: number) => number): FT_Module_Class;
     module_done(): FT_Module_Destructor;
     module_done(arg0: (param0: number) => void): FT_Module_Class;
     module_flags(): number;
     module_flags(arg0: number): FT_Module_Class;
     module_init(): FT_Module_Constructor;
-    module_init(arg0: (param0: number) => kotlin.Int): FT_Module_Class;
+    module_init(arg0: (param0: number) => number): FT_Module_Class;
     module_interface(arg0: ByteBuffer): FT_Module_Class;
     module_interface(arg0: number): ByteBuffer;
     module_name(): ByteBuffer;
@@ -87,7 +87,7 @@ export class FT_Module_Class extends Struct<FT_Module_Class> implements NativeRe
     module_size(arg0: number): FT_Module_Class;
     module_version(): number;
     module_version(arg0: number): FT_Module_Class;
-    set(arg0: number, arg1: number, arg2: ByteBuffer, arg3: number, arg4: number, arg5: ByteBuffer, arg6: (param0: number) => kotlin.Int, arg7: (param0: number) => void, arg8: (param0: number, param1: number) => kotlin.Long): FT_Module_Class;
+    set(arg0: number, arg1: number, arg2: ByteBuffer, arg3: number, arg4: number, arg5: ByteBuffer, arg6: (param0: number) => number, arg7: (param0: number) => void, arg8: (param0: number, param1: number) => number): FT_Module_Class;
     set(arg0: FT_Module_Class): FT_Module_Class;
     sizeof(): number;
 }

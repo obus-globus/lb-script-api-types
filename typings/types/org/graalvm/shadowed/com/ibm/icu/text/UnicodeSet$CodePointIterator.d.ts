@@ -5,7 +5,7 @@ import type { UnicodeSet$CodePointIteratorInt } from '../../../../../../../org/g
 export class UnicodeSet$CodePointIterator extends Object implements Iterator<number> {
     constructor(null_: UnicodeSet$CodePointIterator, unicodeSet: string[])
     // private cpi: UnicodeSet$CodePointIteratorInt;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     remove(): void;

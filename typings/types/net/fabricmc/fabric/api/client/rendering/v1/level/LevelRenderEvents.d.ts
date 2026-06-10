@@ -23,7 +23,7 @@ export class LevelRenderEvents extends Object {
     static AFTER_SOLID_FEATURES: Event<(param0: LevelRenderContext) => void>;
     static AFTER_TRANSLUCENT_FEATURES: Event<(param0: LevelRenderContext) => void>;
     static AFTER_TRANSLUCENT_TERRAIN: Event<(param0: LevelRenderContext) => void>;
-    static BEFORE_BLOCK_OUTLINE: Event<(param0: LevelRenderContext, param1: BlockOutlineRenderState) => kotlin.Boolean>;
+    static BEFORE_BLOCK_OUTLINE: Event<(param0: LevelRenderContext, param1: BlockOutlineRenderState) => boolean>;
     static BEFORE_GIZMOS: Event<(param0: LevelRenderContext) => void>;
     static BEFORE_TRANSLUCENT_TERRAIN: Event<(param0: LevelRenderContext) => void>;
     static COLLECT_SUBMITS: Event<(param0: LevelRenderContext) => void>;

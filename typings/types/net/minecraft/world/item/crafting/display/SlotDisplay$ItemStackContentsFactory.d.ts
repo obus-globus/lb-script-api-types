@@ -6,8 +6,6 @@ import type { DisplayContentsFactory$ForStacks } from '../../../../../../net/min
 export class SlotDisplay$ItemStackContentsFactory extends Object implements DisplayContentsFactory$ForStacks<ItemStack> {
     static INSTANCE: SlotDisplay$ItemStackContentsFactory;
     constructor()
-    forStack<T extends Object | number | string | boolean>(item: Holder<Item>): T;
-    forStack<T extends Object | number | string | boolean>(item: Item): T;
     forStack(item: Holder<Item>): ItemStack;
     forStack(item: Item): ItemStack;
     forStack(stack: ItemStack): ItemStack;

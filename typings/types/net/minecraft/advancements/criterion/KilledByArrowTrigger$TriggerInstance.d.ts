@@ -10,6 +10,7 @@ import type { SimpleCriterionTrigger$SimpleInstance } from '../../../../net/mine
 import type { HolderGetter } from '../../../../net/minecraft/core/HolderGetter.d.ts'
 import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { LootContext } from '../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
 export class KilledByArrowTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<KilledByArrowTrigger$TriggerInstance>;
@@ -23,7 +24,7 @@ export class KilledByArrowTrigger$TriggerInstance extends Record implements Simp
     equals(o: Object | null): boolean;
     firedFromWeapon(): Optional<ItemPredicate>;
     hashCode(): number;
-    matches(victims: E[], uniqueEntityTypes: number, firedFromWeapon: ItemStack): boolean;
+    matches(victims: LootContext[], uniqueEntityTypes: number, firedFromWeapon: ItemStack): boolean;
     player(): Optional<ContextAwarePredicate>;
     toString(): string;
     uniqueEntityTypes(): MinMaxBounds$Ints;

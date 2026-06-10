@@ -1,4 +1,5 @@
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { WinNT$GROUP_AFFINITY } from '../../../../../com/sun/jna/platform/win32/WinNT$GROUP_AFFINITY.d.ts'
 import type { WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX } from '../../../../../com/sun/jna/platform/win32/WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -15,8 +16,8 @@ export class WinNT$CACHE_RELATIONSHIP extends WinNT$SYSTEM_LOGICAL_PROCESSOR_INF
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static fromPointer(paramarg0: Pointer): WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX;
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     constructor(arg0: Pointer)
     associativity: number;

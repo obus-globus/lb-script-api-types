@@ -3,8 +3,8 @@ import type { Char2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2BooleanFunctions$UnmodifiableFunction extends AbstractChar2BooleanFunction implements Serializable {
-    constructor(arg0: (param0: string) => kotlin.Boolean)
-    // private function: (param0: string) => kotlin.Boolean;
+    constructor(arg0: (param0: string) => boolean)
+    // private function: (param0: string) => boolean;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

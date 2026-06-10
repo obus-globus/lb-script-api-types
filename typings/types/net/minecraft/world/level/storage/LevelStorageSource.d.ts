@@ -11,6 +11,7 @@ import type { WorldDataConfiguration } from '../../../../../net/minecraft/world/
 import type { LevelStem } from '../../../../../net/minecraft/world/level/dimension/LevelStem.d.ts'
 import type { GameRules } from '../../../../../net/minecraft/world/level/gamerules/GameRules.d.ts'
 import type { WorldGenSettings } from '../../../../../net/minecraft/world/level/levelgen/WorldGenSettings.d.ts'
+import type { SavedData } from '../../../../../net/minecraft/world/level/saveddata/SavedData.d.ts'
 import type { SavedDataType } from '../../../../../net/minecraft/world/level/saveddata/SavedDataType.d.ts'
 import type { LevelDataAndDimensions } from '../../../../../net/minecraft/world/level/storage/LevelDataAndDimensions.d.ts'
 import type { LevelStorageSource$LevelDirectory } from '../../../../../net/minecraft/world/level/storage/LevelStorageSource$LevelDirectory.d.ts'
@@ -26,7 +27,7 @@ export class LevelStorageSource extends Object {
     static getPackConfig(paramlevelDataTag: Dynamic<Object>, parampackRepository: PackRepository, paramsafeMode: boolean): WorldLoader$PackConfig;
     static parseValidator(paramconfigPath: Path[][]): DirectoryValidator;
     static readDataConfig(paramlevelData: Dynamic<Object>): WorldDataConfiguration;
-    static readExistingSavedData(paramaccess: LevelStorageSource$LevelStorageAccess, paramregistryAccess: HolderLookup$Provider, paramsavedDataType: SavedDataType<Object>): DataResult<Object>;
+    static readExistingSavedData(paramaccess: LevelStorageSource$LevelStorageAccess, paramregistryAccess: HolderLookup$Provider, paramsavedDataType: SavedDataType<SavedData>): DataResult<SavedData>;
     static writeGameRules(paramworldData: WorldData, paramworldFolder: Path[][], paramgameRules: GameRules): void;
     static writeWorldGenSettings(paramregistryAccess: RegistryAccess, paramworldFolder: Path[][], paramworldGenSettings: WorldGenSettings): void;
     constructor(baseDir: Path[], backupDir: Path[], worldDirValidator: DirectoryValidator, fixerUpper: DataFixer)

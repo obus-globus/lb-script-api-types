@@ -5,8 +5,8 @@ import type { Player } from '../../../net/minecraft/world/entity/player/Player.d
 import type { AbstractContainerMenu } from '../../../net/minecraft/world/inventory/AbstractContainerMenu.d.ts'
 import type { MenuConstructor } from '../../../net/minecraft/world/inventory/MenuConstructor.d.ts'
 export class SimpleMenuProvider extends Object implements MenuProvider {
-    constructor(menuConstructor: (param0: number, param1: (Object | null)[], param2: Player) => net.minecraft.world.inventory.AbstractContainerMenu, title: Component)
-    menuConstructor: (param0: number, param1: (Object | null)[], param2: Player) => net.minecraft.world.inventory.AbstractContainerMenu;
+    constructor(menuConstructor: (param0: number, param1: (Object | null)[], param2: Player) => AbstractContainerMenu, title: Component)
+    menuConstructor: (param0: number, param1: (Object | null)[], param2: Player) => AbstractContainerMenu;
     // private title: Component;
     createMenu(containerId: number, inventory: (Object | null)[], player: Player): AbstractContainerMenu;
     getDisplayName(): Component;

@@ -6,12 +6,12 @@ export class BlockPatternBuilder extends Object {
     static start(): BlockPatternBuilder;
     private constructor()
     // private height: number;
-    // private lookup: { [key: string]: (param0: BlockInWorld) => kotlin.Boolean };
+    // private lookup: { [key: string]: (param0: BlockInWorld) => boolean };
     // private pattern: string[][];
     // private unknownCharacters: (Object | null)[];
     // private width: number;
     aisle(aisle: string[]): BlockPatternBuilder;
     build(): BlockPattern;
-    // private createPattern(): (param0: BlockInWorld) => kotlin.Boolean[][][];
-    where(character: string, predicate: (param0: BlockInWorld) => kotlin.Boolean): BlockPatternBuilder;
+    // private createPattern(): (param0: BlockInWorld) => boolean[][][];
+    where(character: string, predicate: (param0: BlockInWorld) => boolean): BlockPatternBuilder;
 }

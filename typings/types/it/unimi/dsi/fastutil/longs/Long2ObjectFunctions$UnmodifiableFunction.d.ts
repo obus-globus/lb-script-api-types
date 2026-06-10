@@ -3,8 +3,8 @@ import type { Long2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/l
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2ObjectFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractLong2ObjectFunction<V> implements Serializable {
-    constructor(arg0: (param0: V) => unknown)
-    // private function: (param0: V) => unknown;
+    constructor(arg0: (param0: number) => V)
+    // private function: (param0: number) => V;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

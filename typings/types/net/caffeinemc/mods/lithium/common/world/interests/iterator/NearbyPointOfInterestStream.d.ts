@@ -4,6 +4,7 @@ import type { Spliterators$AbstractSpliterator } from '../../../../../../../../j
 import type { BiPredicate } from '../../../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Consumer } from '../../../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
+import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { SortedPointOfInterest } from '../../../../../../../../net/caffeinemc/mods/lithium/common/util/tuples/SortedPointOfInterest.d.ts'
 import type { RegionBasedStorageSectionExtended } from '../../../../../../../../net/caffeinemc/mods/lithium/common/world/interests/RegionBasedStorageSectionExtended.d.ts'
 import type { NearbyPointOfInterestStream$QueuedSection } from '../../../../../../../../net/caffeinemc/mods/lithium/common/world/interests/iterator/NearbyPointOfInterestStream$QueuedSection.d.ts'
@@ -17,19 +18,19 @@ export class NearbyPointOfInterestStream extends Spliterators$AbstractSpliterato
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;
-    static NEGATIVE_Y_POINT_COMPARATOR: (param0: SortedPointOfInterest) => kotlin.Boolean;
+    static NEGATIVE_Y_POINT_COMPARATOR: (param0: Object) => boolean;
     static NONNULL: number;
     static ORDERED: number;
-    static POINT_COMPARATOR: (param0: SortedPointOfInterest) => kotlin.Boolean;
+    static POINT_COMPARATOR: (param0: Object) => boolean;
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: (param0: Holder<PoiType>) => kotlin.Boolean, arg1: PoiManager$Occupancy, arg2: (param0: PoiRecord) => kotlin.Boolean, arg3: BlockPos, arg4: number, arg5: RegionBasedStorageSectionExtended<PoiSection>, arg6: (param0: BlockPos, param1: BlockPos) => kotlin.Boolean, arg7: (param0: SortedPointOfInterest) => kotlin.Boolean)
-    // private afterSortingPredicate: (param0: PoiRecord) => kotlin.Boolean;
+    constructor(arg0: (param0: Holder<PoiType>) => boolean, arg1: PoiManager$Occupancy, arg2: (param0: PoiRecord) => boolean, arg3: BlockPos, arg4: number, arg5: RegionBasedStorageSectionExtended<PoiSection>, arg6: (param0: BlockPos, param1: BlockPos) => boolean, arg7: (param0: Object) => boolean)
+    // private afterSortingPredicate: (param0: PoiRecord) => boolean;
     // private chunkYMin: number;
     // private clampedOriginChunkY: number;
     // private closestRingDistanceSq: number;
-    // private distanceLimit: (param0: BlockPos, param1: BlockPos) => kotlin.Boolean;
+    // private distanceLimit: (param0: BlockPos, param1: BlockPos) => boolean;
     // private forciblyDeplete: boolean;
     // private forciblyDepleteTrigger: number;
     // private minChunkYDistSq: number;
@@ -39,7 +40,7 @@ export class NearbyPointOfInterestStream extends Spliterators$AbstractSpliterato
     // private nextSectionDistanceSq: number;
     // private occupationStatus: PoiManager$Occupancy;
     // private origin: BlockPos;
-    // private pointComparatorWithoutInSectionOrder: (param0: SortedPointOfInterest) => kotlin.Boolean;
+    // private pointComparatorWithoutInSectionOrder: (param0: Object) => boolean;
     // private points: SortedPointOfInterest[];
     // private queuedPOISections: NearbyPointOfInterestStream$QueuedSection[];
     // private queuedSectionsSearched: number;
@@ -49,9 +50,9 @@ export class NearbyPointOfInterestStream extends Spliterators$AbstractSpliterato
     // private ringMax: number;
     // private sortedToIndex: number;
     // private storage: RegionBasedStorageSectionExtended<PoiSection>;
-    // private typeSelector: (param0: Holder<PoiType>) => kotlin.Boolean;
+    // private typeSelector: (param0: Holder<PoiType>) => boolean;
     accept(arg0: PoiRecord): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: PoiRecord) => void): (param0: PoiRecord) => void;
     // private collectPoint(arg0: PoiRecord): void;
     getFirst(): PoiRecord;
     // private getMinimumNextPotentialDistanceSq(): number;

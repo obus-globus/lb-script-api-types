@@ -22,7 +22,7 @@ export abstract class AbstractChanneledNetworkAddon<H extends Object | number | 
     // private receiver: GlobalReceiverRegistry<H>;
     readonly sendableChannels: Identifier[];
     createRegisterPayload(): CommonRegisterPayload;
-    createRegistrationPayload(arg0: CustomPacketPayload$Type<RegistrationPayload>, arg1: E[]): RegistrationPayload;
+    createRegistrationPayload(arg0: CustomPacketPayload$Type<RegistrationPayload>, arg1: Identifier[]): RegistrationPayload;
     disconnect(arg0: Component): void;
     getNegotiatedVersion(): number;
     // private getProtocol(): string;

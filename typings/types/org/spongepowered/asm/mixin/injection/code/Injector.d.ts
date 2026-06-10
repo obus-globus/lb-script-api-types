@@ -31,8 +31,8 @@ export abstract class Injector extends Object {
     checkTargetForNode(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, arg2: InjectionPoint$RestrictTargetLevel): void;
     checkTargetModifiers(arg0: AbstractInsnNode[], arg1: boolean): void;
     find(arg0: InjectorTarget, arg1: InjectionPoint[]): InjectionNodes$InjectionNode[];
-    // private findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint[]): E[];
-    findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint, arg2: E[]): boolean;
+    // private findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint[]): Injector$TargetNode[];
+    findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint, arg2: AbstractInsnNode[]): boolean;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;
     invokeHandler(arg0: AbstractInsnNode[]): AbstractInsnNode;

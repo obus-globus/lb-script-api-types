@@ -4,5 +4,5 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { Climate$ParameterList } from '../../../../../net/minecraft/world/level/biome/Climate$ParameterList.d.ts'
 export interface MultiNoiseBiomeSourceParameterList$Preset$SourceProvider extends Object {
-    apply(lookup: (param0: ResourceKey<Biome>) => T): Climate$ParameterList<T>;
+    apply<T extends Object | number | string | boolean>(lookup: (param0: ResourceKey<Biome>) => T): Climate$ParameterList<T>;
 }

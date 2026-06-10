@@ -13,7 +13,7 @@ export class InputBind$Modifier extends Enum<InputBind$Modifier> implements Tagg
     static SUPER: InputBind$Modifier;
     static fromRawValue(modifiers: number): InputBind$Modifier[];
     static getEntries(): InputBind$Modifier[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: number): InputBind$Modifier;
     static of(paramarg0: string): InputBind$Modifier;
     static of(paramarg0: string): Tagged;

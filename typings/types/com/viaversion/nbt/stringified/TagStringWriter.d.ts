@@ -21,7 +21,7 @@ export class TagStringWriter extends Object {
     // private writeByteArray(arg0: ByteArrayTag): TagStringWriter;
     // private writeCompound(arg0: Map$Entry<string, Tag>[]): TagStringWriter;
     // private writeIntArray(arg0: IntArrayTag): TagStringWriter;
-    // private writeList(arg0: T[]): TagStringWriter;
+    // private writeList(arg0: Tag[]): TagStringWriter;
     // private writeLongArray(arg0: LongArrayTag): TagStringWriter;
     // private writeMaybeQuoted(arg0: string, arg1: boolean): void;
     writeTag(arg0: Tag): TagStringWriter;

@@ -9,7 +9,7 @@ export class CharMatcher$Invisible extends CharMatcher$RangesMatcher {
     static ascii(): CharMatcher;
     static breakingWhitespace(): CharMatcher;
     static digit(): CharMatcher;
-    static forPredicate(parampredicate: (param0: Object | null) => kotlin.Boolean): CharMatcher;
+    static forPredicate(parampredicate: (param0: Object) => boolean): CharMatcher;
     static inRange(paramstartInclusive: string, paramendInclusive: string): CharMatcher;
     static invisible(): CharMatcher;
     static is(parammatch: string): CharMatcher;

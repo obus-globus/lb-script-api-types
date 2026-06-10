@@ -30,7 +30,7 @@ export class LinkFSProvider extends FileSystemProvider {
     isSameFile(path: Path[], path2: Path[]): boolean;
     move(source: Path[], target: Path[], options: CopyOption[]): void;
     newByteChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
-    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => kotlin.Boolean): T[];
+    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     newFileSystem(uri: URI, env: { [key: string]: Object | null }): FileSystem;
     newFileSystem(arg0: Path[], arg1: { [key: string]: Object | null }): FileSystem;
     readAttributes<A extends BasicFileAttributes>(path: Path[], type: Class<A>, options: LinkOption[]): A;

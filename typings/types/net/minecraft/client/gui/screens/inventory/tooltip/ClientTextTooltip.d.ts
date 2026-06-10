@@ -7,10 +7,10 @@ import type { FormattedCharSequence } from '../../../../../../../net/minecraft/u
 import type { FormattedCharSink } from '../../../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 import type { TooltipComponent } from '../../../../../../../net/minecraft/world/inventory/tooltip/TooltipComponent.d.ts'
 export class ClientTextTooltip extends Object implements ClientTooltipComponent {
-    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): ClientTooltipComponent;
+    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): ClientTooltipComponent;
     static create(paramcomponent: TooltipComponent): ClientTooltipComponent;
-    constructor(text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean)
-    // private text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    constructor(text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean)
+    // private text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;
     extractText(graphics: GuiGraphicsExtractor, font: Font, x: number, y: number): void;
     getHeight(font: Font): number;

@@ -14,17 +14,17 @@ import type { UniquelyIdentifyable } from '../../../../net/minecraft/world/level
 import type { ValueInput } from '../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class EntityReference<StoredEntityType extends UniquelyIdentifyable> extends Object {
-    static codec(): Codec<Object>;
-    static get(paramreference: EntityReference<Object>, paramlevel: Level, paramclazz: Class<Object>): Object | null;
+    static codec(): Codec<EntityReference<UniquelyIdentifyable>>;
+    static get(paramreference: EntityReference<UniquelyIdentifyable>, paramlevel: Level, paramclazz: Class<UniquelyIdentifyable>): UniquelyIdentifyable | null;
     static getEntity(paramreference: EntityReference<Entity>, paramlevel: Level): Entity;
     static getLivingEntity(paramreference: EntityReference<LivingEntity>, paramlevel: Level): LivingEntity;
     static getPlayer(paramreference: EntityReference<Player>, paramlevel: Level): Player;
-    static of(paramentity: Object | null): EntityReference<Object>;
-    static of(paramuuid: UUID): EntityReference<Object>;
-    static read(paraminput: ValueInput, paramkey: string): EntityReference<Object>;
-    static readWithOldOwnerConversion(paraminput: ValueInput, paramkey: string, paramlevel: Level): EntityReference<Object>;
+    static of(paramentity: UniquelyIdentifyable | null): EntityReference<UniquelyIdentifyable>;
+    static of(paramuuid: UUID): EntityReference<UniquelyIdentifyable>;
+    static read(paraminput: ValueInput, paramkey: string): EntityReference<UniquelyIdentifyable>;
+    static readWithOldOwnerConversion(paraminput: ValueInput, paramkey: string, paramlevel: Level): EntityReference<UniquelyIdentifyable>;
     static store(paramreference: EntityReference<Object>, paramoutput: ValueOutput, paramkey: string): void;
-    static streamCodec(): StreamCodec<ByteBuf, Object>;
+    static streamCodec(): StreamCodec<ByteBuf, EntityReference<UniquelyIdentifyable>>;
     private constructor(entity: StoredEntityType)
     private constructor(uuid: UUID)
     // private entity: Either<UUID, StoredEntityType>;

@@ -15,7 +15,7 @@ export class OptionValuesImpl extends Object implements OptionValues {
     // private usedDeprecatedDescriptors: OptionDescriptor[];
     // private validAssertKeys: OptionKey<Object>[];
     // private values: Map<OptionKey<Object>, Object>;
-    // private contains(optionKey: OptionKey<T>): boolean;
+    // private contains<T extends Object | number | string | boolean>(optionKey: OptionKey<T>): boolean;
     copy(): OptionValuesImpl;
     copyInto(target: OptionValuesImpl): void;
     equals(obj: Object | null): boolean;
@@ -24,7 +24,7 @@ export class OptionValuesImpl extends Object implements OptionValues {
     get<T extends Object | number | string | boolean>(optionKey: OptionKey<T>): T;
     getDescriptors(): OptionDescriptor[];
     getUnparsedOptionValue(key: OptionKey<Object>): string;
-    getUsedDeprecatedDescriptors(): E[];
+    getUsedDeprecatedDescriptors(): OptionDescriptor[];
     hasBeenSet(optionKey: OptionKey<Object>): boolean;
     hasSetOptions(): boolean;
     hashCode(): number;

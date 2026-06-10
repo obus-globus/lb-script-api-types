@@ -10,7 +10,7 @@ export class GameRuleMap extends SavedData {
     static TYPE: SavedDataType<GameRuleMap>;
     static copyOf(paramgameRuleMap: GameRuleMap): GameRuleMap;
     static of(): GameRuleMap;
-    static of(paramgameRuleTypeStream: Stream<Object>): GameRuleMap;
+    static of(paramgameRuleTypeStream: Stream<GameRule<Object>>): GameRuleMap;
     private constructor(map: Map<GameRule<Object>, Object>)
     // private map: Map<GameRule<Object>, Object>;
     equals(obj: Object | null): boolean;
@@ -20,9 +20,9 @@ export class GameRuleMap extends SavedData {
     keySet(): GameRule<Object>[];
     // private map(): Map<GameRule<Object>, Object>;
     remove<T extends Object | number | string | boolean>(gameRule: GameRule<T>): T;
-    reset(gameRule: GameRule<T>): void;
+    reset<T extends Object | number | string | boolean>(gameRule: GameRule<T>): void;
     set<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): void;
-    setFromIf(other: GameRuleMap, predicate: (param0: GameRule<Object>) => kotlin.Boolean): void;
+    setFromIf(other: GameRuleMap, predicate: (param0: GameRule<Object>) => boolean): void;
     size(): number;
     toString(): string;
     withOther(other: GameRuleMap): GameRuleMap;

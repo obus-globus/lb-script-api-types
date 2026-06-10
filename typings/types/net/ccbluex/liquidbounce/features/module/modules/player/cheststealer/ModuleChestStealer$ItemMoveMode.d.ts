@@ -8,7 +8,7 @@ export class ModuleChestStealer$ItemMoveMode extends Enum<ModuleChestStealer$Ite
     static DRAG_AND_DROP: ModuleChestStealer$ItemMoveMode;
     static QUICK_MOVE: ModuleChestStealer$ItemMoveMode;
     static getEntries(): ModuleChestStealer$ItemMoveMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleChestStealer$ItemMoveMode;

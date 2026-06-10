@@ -20,7 +20,7 @@ export class CPUTracer extends Object implements Closeable {
     close(): void;
     // private getCounter(context: EventContext): CPUTracer$Payload;
     getFilter(): SourceSectionFilter;
-    getPayloads(): E[];
+    getPayloads(): CPUTracer$Payload[];
     isCollecting(): boolean;
     // private resetTracer(): void;
     setCollecting(collecting: boolean): void;

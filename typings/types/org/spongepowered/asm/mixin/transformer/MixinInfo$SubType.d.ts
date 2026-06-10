@@ -12,7 +12,7 @@ export abstract class MixinInfo$SubType extends Object {
     // private mixin: MixinInfo;
     // private targetMustBeInterface: boolean;
     createPreProcessor(arg0: MixinInfo$MixinClassNode): MixinPreProcessorStandard;
-    getInterfaces(): E[];
+    getInterfaces(): string[];
     isDetachedSuper(): boolean;
     isLoadable(): boolean;
     validate(arg0: MixinInfo$State, arg1: ClassInfo[]): void;

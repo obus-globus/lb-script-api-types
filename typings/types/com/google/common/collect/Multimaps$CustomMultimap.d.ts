@@ -4,14 +4,14 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Multimaps$CustomMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMapBasedMultimap<K, V> {
-    constructor(map: Map<K, E[]>, factory: () => E[])
-    // private factory: () => E[];
-    createAsMap(): Map<K, E[]>;
-    createCollection(): E[];
-    createCollection(key: K): E[];
+    constructor(map: Map<K, V[]>, factory: () => V[])
+    // private factory: () => V[];
+    createAsMap(): Map<K, V[]>;
+    createCollection(): V[];
+    createCollection(key: K): V[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
-    unmodifiableCollectionSubclass(collection: E[]): E[];
-    wrapCollection(key: K, collection: E[]): E[];
+    unmodifiableCollectionSubclass<E extends Object | number | string | boolean>(collection: E[]): E[];
+    wrapCollection(key: K, collection: V[]): V[];
     // private writeObject(stream: ObjectOutputStream): void;
 }

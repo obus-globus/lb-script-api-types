@@ -5,14 +5,14 @@ import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Multimaps$CustomSortedSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractSortedSetMultimap<K, V> {
-    constructor(map: Map<K, E[]>, factory: () => V[])
+    constructor(map: Map<K, V[]>, factory: () => V[])
     // private factory: () => V[];
-    // private valueComparator: (param0: V) => kotlin.Boolean;
-    createAsMap(): Map<K, E[]>;
+    // private valueComparator: (param0: Object) => boolean;
+    createAsMap(): Map<K, V[]>;
     createCollection(): V[];
-    createCollection(key: K): E[];
+    createCollection(key: K): V[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
-    valueComparator(): (param0: V) => kotlin.Boolean;
+    valueComparator(): (param0: Object) => boolean;
     // private writeObject(stream: ObjectOutputStream): void;
 }

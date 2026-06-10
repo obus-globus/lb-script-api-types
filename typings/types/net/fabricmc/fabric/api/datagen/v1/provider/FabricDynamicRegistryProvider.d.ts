@@ -16,8 +16,8 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { RegistryOps } from '../../../../../../../net/minecraft/resources/RegistryOps.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricDynamicRegistryProvider extends Object implements DataProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
@@ -30,5 +30,5 @@ export abstract class FabricDynamicRegistryProvider extends Object implements Da
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;
     configure(arg0: HolderLookup$Provider, arg1: FabricDynamicRegistryProvider$Entries): void;
     run(arg0: CachedOutput): CompletableFuture<Object>;
-    // private writeHolders(arg0: CachedOutput, arg1: RegistryOps<JsonElement>, arg2: FabricDynamicRegistryProvider$RegistryEntries<T>): CompletableFuture<Object>;
+    // private writeHolders<T extends Object | number | string | boolean>(arg0: CachedOutput, arg1: RegistryOps<JsonElement>, arg2: FabricDynamicRegistryProvider$RegistryEntries<T>): CompletableFuture<Object>;
 }

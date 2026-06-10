@@ -12,7 +12,7 @@ export class EventListenerList extends Object implements Serializable {
     getListenerCount(arg0: Class<Object>): number;
     // private getListenerCount(arg0: Object[], arg1: Class<Object>): number;
     getListenerList(): Object[];
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     // private readObject(arg0: ObjectInputStream): void;
     remove<T extends EventListener>(arg0: Class<T>, arg1: T): void;
     toString(): string;

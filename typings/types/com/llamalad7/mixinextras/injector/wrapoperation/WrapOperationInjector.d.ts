@@ -13,7 +13,7 @@ export class WrapOperationInjector extends Injector {
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo)
     // private operationType: Type;
-    // private operationTypes: (param0: AbstractInsnNode[], param1: InjectionNodes$InjectionNode, param2: StackExtension) => com.llamalad7.mixinextras.injector.wrapoperation.WrapOperationInjector.OperationType[];
+    // private operationTypes: (param0: AbstractInsnNode[], param1: InjectionNodes$InjectionNode, param2: StackExtension) => WrapOperationInjector$OperationType[];
     // private cleanIntLikeArgs(arg0: Type[]): Type[];
     // private getCurrentArgTypes(arg0: InjectionNodes$InjectionNode): Type[];
     // private getEffectiveArgTypes(arg0: AbstractInsnNode): Type[];

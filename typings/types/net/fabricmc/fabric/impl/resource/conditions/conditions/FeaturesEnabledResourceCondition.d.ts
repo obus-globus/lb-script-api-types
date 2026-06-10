@@ -11,13 +11,13 @@ export class FeaturesEnabledResourceCondition extends Record implements Resource
     static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<FeaturesEnabledResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<ResourceCondition[]>;
     constructor(arg0: Identifier[])
     constructor(arg0: FeatureFlag[])
-    constructor(features: E[])
-    // private features: E[];
+    constructor(features: Identifier[])
+    // private features: Identifier[];
     equals(arg0: Object | null): boolean;
-    features(): E[];
+    features(): Identifier[];
     getType(): ResourceConditionType<Object>;
     hashCode(): number;
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;

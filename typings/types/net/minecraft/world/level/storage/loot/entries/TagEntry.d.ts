@@ -13,13 +13,13 @@ import type { LootPoolSingletonContainer$EntryConstructor } from '../../../../..
 import type { LootItemFunction } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class TagEntry extends LootPoolSingletonContainer {
-    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
-    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
+    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static DEFAULT_QUALITY: number;
     static DEFAULT_WEIGHT: number;
     static MAP_CODEC: MapCodec<TagEntry>;
     static expandTag(paramtag: TagKey<Item>): LootPoolSingletonContainer$Builder<Object>;
-    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<Object>;
+    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<Object>;
     static tagContents(paramtag: TagKey<Item>): LootPoolSingletonContainer$Builder<Object>;
     private constructor(tag: TagKey<Item>, expand: boolean, weight: number, quality: number, conditions: LootItemCondition[], functions: LootItemFunction[])
     // private expand: boolean;

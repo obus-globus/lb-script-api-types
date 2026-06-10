@@ -5,7 +5,7 @@ export class Profiler extends Object {
     static FINE: number;
     static ROOT: number;
     static getProfiler(paramarg0: string): Profiler;
-    static getProfilers(): E[];
+    static getProfilers(): Profiler[];
     static printAuditSummary(): void;
     static setActive(paramarg0: boolean): void;
     constructor(arg0: string)
@@ -19,7 +19,7 @@ export class Profiler extends Object {
     begin(arg0: string): Profiler$Section;
     end(arg0: Profiler$Section): void;
     get(arg0: string): Profiler$Section;
-    getSections(): E[];
+    getSections(): Profiler$Section[];
     // private getSubSection(arg0: string, arg1: string, arg2: Profiler$Section): Profiler$Section;
     mark(arg0: string): void;
     printSummary(): void;

@@ -21,7 +21,7 @@ export class FloatSpliterators$ArraySpliterator extends Object implements FloatS
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
+    getComparator(): (param0: number, param1: number) => number;
     makeForSplit(arg0: number, arg1: number): FloatSpliterators$ArraySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;

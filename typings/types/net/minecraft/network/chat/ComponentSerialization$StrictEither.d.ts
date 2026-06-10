@@ -14,7 +14,7 @@ export class ComponentSerialization$StrictEither<T extends Object | number | str
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
-    static recursive(paramarg0: string, paramarg1: (param0: Object | null) => Object | null): MapCodec<Object>;
+    static recursive(paramarg0: string, paramarg1: (param0: Codec<Object>) => MapCodec<Object>): MapCodec<Object>;
     static unit(paramarg0: Object | null): MapCodec<Object>;
     static unit(paramarg0: () => Object | null): MapCodec<Object>;
     static unitCodec(paramarg0: Object | null): Codec<Object>;
@@ -23,7 +23,7 @@ export class ComponentSerialization$StrictEither<T extends Object | number | str
     // private fuzzy: MapCodec<T>;
     // private typeFieldName: string;
     // private typed: MapCodec<T>;
-    decode(ops: DynamicOps<O>, input: MapLike<O>): DataResult<T>;
-    encode(input: T, ops: DynamicOps<O>, prefix: RecordBuilder<O>): RecordBuilder<O>;
-    keys(ops: DynamicOps<T1>): Stream<T1>;
+    decode<O extends Object | number | string | boolean>(ops: DynamicOps<O>, input: MapLike<O>): DataResult<T>;
+    encode<O extends Object | number | string | boolean>(input: T, ops: DynamicOps<O>, prefix: RecordBuilder<O>): RecordBuilder<O>;
+    keys<T1 extends Object | number | string | boolean>(ops: DynamicOps<T1>): Stream<T1>;
 }

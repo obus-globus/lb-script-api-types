@@ -9,7 +9,7 @@ export class ChatAbilities extends Object {
     private constructor(restrictionReasons: ChatRestriction[])
     // private permissions: PermissionSet;
     // private restrictionReasons: ChatRestriction[];
-    // private visibleMessagesFilter: (param0: GuiMessage) => kotlin.Boolean;
+    // private visibleMessagesFilter: (param0: GuiMessage) => boolean;
     canReceivePlayerMessages(): boolean;
     canReceiveSystemMessages(): boolean;
     canSendCommands(): boolean;
@@ -17,5 +17,5 @@ export class ChatAbilities extends Object {
     hasAnyRestrictions(): boolean;
     permissions(): PermissionSet;
     restrictions(): Stream<ChatRestriction>;
-    visibleMessagesFilter(): (param0: GuiMessage) => kotlin.Boolean;
+    visibleMessagesFilter(): (param0: GuiMessage) => boolean;
 }

@@ -37,7 +37,7 @@ export interface DataConverter<T extends Object | number | string | boolean> ext
     empty(): T;
     emptyList(): T;
     emptyMap(): T;
-    fork(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): ConsumerTracking;
     forkIfDefault(): DataConverter<T>;
     mergeList(arg0: T, arg1: T[]): Result<T>;

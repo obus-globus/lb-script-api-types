@@ -105,10 +105,10 @@ export class JSArrayBufferObject$Shared extends JSArrayBufferObject$DirectBase {
     static setWaiterList(paramthisObj: JSDynamicObject, paramwaiterList: JSAgentWaiterList): void;
     static setWithReceiver(paramobj: JSDynamicObject, paramkey: Object, paramvalue: Object, paramreceiver: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile, paramencapsulatingNode: Node): boolean;
     static setWithReceiver(paramobj: JSDynamicObject, paramindex: number, paramvalue: Object, paramreceiver: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile, paramencapsulatingNode: Node): boolean;
-    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => kotlin.Boolean): boolean;
+    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => boolean): boolean;
     static toPrimitive(paramobj: JSDynamicObject): Object;
     static toPrimitive(paramobj: JSDynamicObject, paramhint: JSToPrimitiveNode$Hint): Object;
-    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => kotlin.Int): boolean;
+    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
     constructor(shape: Shape, proto: JSDynamicObject, byteBuffer: ByteBuffer, waiterList: JSAgentWaiterList, byteLength: AtomicInteger, maxByteLength: number)
     byteLength: AtomicInteger;
     waiterList: JSAgentWaiterList;

@@ -11,7 +11,7 @@ import type { LootItemCondition } from '../../../../../../../net/minecraft/world
 export abstract class LootItemConditionalFunction extends Object implements LootItemFunction {
     static decorate(paramfunction: (param0: ItemStack, param1: LootContext) => ItemStack, paramoutput: (param0: ItemStack) => void, paramcontext: LootContext): (param0: ItemStack) => void;
     constructor(predicates: LootItemCondition[])
-    // private compositePredicates: (param0: LootContext) => kotlin.Boolean;
+    // private compositePredicates: (param0: LootContext) => boolean;
     // private predicates: LootItemCondition[];
     apply(itemStack: ItemStack, context: LootContext): ItemStack;
     codec(): MapCodec<LootItemConditionalFunction>;

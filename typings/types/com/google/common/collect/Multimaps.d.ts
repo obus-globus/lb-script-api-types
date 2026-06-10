@@ -12,38 +12,39 @@ import type { SortedSetMultimap } from '../../../../com/google/common/collect/So
 import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier as Supplier_2 } from '../../../../java/util/function/Supplier.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
+import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Multimaps extends Object {
-    static asMap(parammultimap: Multimap<Object, Object>): Map<Object | null, Object | null>;
-    static asMap(parammultimap: ListMultimap<Object, Object>): Map<Object | null, Object | null>;
-    static asMap(parammultimap: SetMultimap<Object, Object>): Map<Object | null, Object | null>;
-    static asMap(parammultimap: SortedSetMultimap<Object, Object>): Map<Object | null, Object | null>;
-    static filterEntries(paramunfiltered: Multimap<Object, Object>, paramentryPredicate: (param0: Object | null) => kotlin.Boolean): Multimap<Object, Object>;
-    static filterEntries(paramunfiltered: SetMultimap<Object, Object>, paramentryPredicate: (param0: Object | null) => kotlin.Boolean): SetMultimap<Object, Object>;
-    static filterKeys(paramunfiltered: ListMultimap<Object, Object>, paramkeyPredicate: (param0: Object | null) => kotlin.Boolean): ListMultimap<Object, Object>;
-    static filterKeys(paramunfiltered: Multimap<Object, Object>, paramkeyPredicate: (param0: Object | null) => kotlin.Boolean): Multimap<Object, Object>;
-    static filterKeys(paramunfiltered: SetMultimap<Object, Object>, paramkeyPredicate: (param0: Object | null) => kotlin.Boolean): SetMultimap<Object, Object>;
-    static filterValues(paramunfiltered: Multimap<Object, Object>, paramvaluePredicate: (param0: Object | null) => kotlin.Boolean): Multimap<Object, Object>;
-    static filterValues(paramunfiltered: SetMultimap<Object, Object>, paramvaluePredicate: (param0: Object | null) => kotlin.Boolean): SetMultimap<Object, Object>;
-    static flatteningToMultimap(paramkeyFunction: (param0: Object | null) => Object | null, paramvalueFunction: (param0: Object | null) => Object | null, parammultimapSupplier: () => Object | null): Collector<Object, Object, Object>;
+    static asMap(parammultimap: Multimap<Object, Object>): Map<Object | null, (Object | null)[]>;
+    static asMap(parammultimap: ListMultimap<Object, Object>): Map<Object | null, (Object | null)[]>;
+    static asMap(parammultimap: SetMultimap<Object, Object>): Map<Object | null, (Object | null)[]>;
+    static asMap(parammultimap: SortedSetMultimap<Object, Object>): Map<Object | null, (Object | null)[]>;
+    static filterEntries(paramunfiltered: Multimap<Object, Object>, paramentryPredicate: (param0: Object) => boolean): Multimap<Object, Object>;
+    static filterEntries(paramunfiltered: SetMultimap<Object, Object>, paramentryPredicate: (param0: Object) => boolean): SetMultimap<Object, Object>;
+    static filterKeys(paramunfiltered: ListMultimap<Object, Object>, paramkeyPredicate: (param0: Object) => boolean): ListMultimap<Object, Object>;
+    static filterKeys(paramunfiltered: Multimap<Object, Object>, paramkeyPredicate: (param0: Object) => boolean): Multimap<Object, Object>;
+    static filterKeys(paramunfiltered: SetMultimap<Object, Object>, paramkeyPredicate: (param0: Object) => boolean): SetMultimap<Object, Object>;
+    static filterValues(paramunfiltered: Multimap<Object, Object>, paramvaluePredicate: (param0: Object) => boolean): Multimap<Object, Object>;
+    static filterValues(paramunfiltered: SetMultimap<Object, Object>, paramvaluePredicate: (param0: Object) => boolean): SetMultimap<Object, Object>;
+    static flatteningToMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Stream<Object>, parammultimapSupplier: () => Object | null): Collector<Object, Object, Object>;
     static forMap(parammap: Map<Object | null, Object | null>): SetMultimap<Object, Object>;
-    static index(paramvalues: (Object | null)[], paramkeyFunction: (param0: Object | null) => Object | null): ImmutableListMultimap<Object, Object>;
-    static index(paramvalues: Iterator<Object>, paramkeyFunction: (param0: Object | null) => Object | null): ImmutableListMultimap<Object, Object>;
+    static index(paramvalues: (Object | null)[], paramkeyFunction: (param0: Object) => boolean): ImmutableListMultimap<Object, Object>;
+    static index(paramvalues: Iterator<Object>, paramkeyFunction: (param0: Object) => boolean): ImmutableListMultimap<Object, Object>;
     static invertFrom(paramsource: Multimap<Object, Object>, paramdest: Object | null): Object | null;
-    static newListMultimap(parammap: Map<Object | null, Object | null>, paramfactory: () => Object | null): ListMultimap<Object, Object>;
-    static newMultimap(parammap: Map<Object | null, Object | null>, paramfactory: () => Object | null): Multimap<Object, Object>;
-    static newSetMultimap(parammap: Map<Object | null, Object | null>, paramfactory: () => Object | null): SetMultimap<Object, Object>;
-    static newSortedSetMultimap(parammap: Map<Object | null, Object | null>, paramfactory: () => Object | null): SortedSetMultimap<Object, Object>;
+    static newListMultimap(parammap: Map<Object | null, (Object | null)[]>, paramfactory: () => (Object | null)[]): ListMultimap<Object, Object>;
+    static newMultimap(parammap: Map<Object | null, (Object | null)[]>, paramfactory: () => (Object | null)[]): Multimap<Object, Object>;
+    static newSetMultimap(parammap: Map<Object | null, (Object | null)[]>, paramfactory: () => (Object | null)[]): SetMultimap<Object, Object>;
+    static newSortedSetMultimap(parammap: Map<Object | null, (Object | null)[]>, paramfactory: () => (Object | null)[]): SortedSetMultimap<Object, Object>;
     static synchronizedListMultimap(parammultimap: ListMultimap<Object, Object>): ListMultimap<Object, Object>;
     static synchronizedMultimap(parammultimap: Multimap<Object, Object>): Multimap<Object, Object>;
     static synchronizedSetMultimap(parammultimap: SetMultimap<Object, Object>): SetMultimap<Object, Object>;
     static synchronizedSortedSetMultimap(parammultimap: SortedSetMultimap<Object, Object>): SortedSetMultimap<Object, Object>;
-    static toMultimap(paramkeyFunction: (param0: Object | null) => Object | null, paramvalueFunction: (param0: Object | null) => Object | null, parammultimapSupplier: () => Object | null): Collector<Object, Object, Object>;
-    static transformEntries(paramfromMap: ListMultimap<Object, Object>, paramtransformer: (param0: Object | null, param1: Object | null) => Object | null): ListMultimap<Object, Object>;
-    static transformEntries(paramfromMap: Multimap<Object, Object>, paramtransformer: (param0: Object | null, param1: Object | null) => Object | null): Multimap<Object, Object>;
-    static transformValues(paramfromMultimap: ListMultimap<Object, Object>, paramfunction: (param0: Object | null) => Object | null): ListMultimap<Object, Object>;
-    static transformValues(paramfromMultimap: Multimap<Object, Object>, paramfunction: (param0: Object | null) => Object | null): Multimap<Object, Object>;
+    static toMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null, parammultimapSupplier: () => Object | null): Collector<Object, Object, Object>;
+    static transformEntries(paramfromMap: ListMultimap<Object, Object>, paramtransformer: (param0: Object, param1: Object) => Object | null): ListMultimap<Object, Object>;
+    static transformEntries(paramfromMap: Multimap<Object, Object>, paramtransformer: (param0: Object, param1: Object) => Object | null): Multimap<Object, Object>;
+    static transformValues(paramfromMultimap: ListMultimap<Object, Object>, paramfunction: (param0: Object) => boolean): ListMultimap<Object, Object>;
+    static transformValues(paramfromMultimap: Multimap<Object, Object>, paramfunction: (param0: Object) => boolean): Multimap<Object, Object>;
     static unmodifiableListMultimap(paramdelegate: ImmutableListMultimap<Object, Object>): ListMultimap<Object, Object>;
     static unmodifiableListMultimap(paramdelegate: ListMultimap<Object, Object>): ListMultimap<Object, Object>;
     static unmodifiableMultimap(paramdelegate: ImmutableMultimap<Object, Object>): Multimap<Object, Object>;

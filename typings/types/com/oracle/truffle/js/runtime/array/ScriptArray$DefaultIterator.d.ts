@@ -6,7 +6,7 @@ export class ScriptArray$DefaultIterator extends Object implements Iterator<Obje
     constructor(null_: ScriptArray$DefaultIterator, arrayObject: JSDynamicObject)
     // private arrayObject: JSDynamicObject;
     // private currentIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Object) => void): void;
     hasNext(): boolean;
     next(): Object;
     remove(): void;

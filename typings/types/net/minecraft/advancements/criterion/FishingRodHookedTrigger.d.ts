@@ -8,6 +8,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class FishingRodHookedTrigger extends SimpleCriterionTrigger<FishingRodHookedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<FishingRodHookedTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: FishingRodHookedTrigger$TriggerInstance) => kotlin.Boolean): void;
-    trigger(player: ServerPlayer, rod: ItemStack, hook: FishingHook, items: E[]): void;
+    trigger(player: ServerPlayer, matcher: (param0: FishingRodHookedTrigger$TriggerInstance) => boolean): void;
+    trigger(player: ServerPlayer, rod: ItemStack, hook: FishingHook, items: ItemStack[]): void;
 }

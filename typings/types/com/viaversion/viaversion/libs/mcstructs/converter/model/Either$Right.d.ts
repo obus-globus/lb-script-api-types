@@ -14,7 +14,7 @@ export class Either$Right<L extends Object | number | string | boolean, R extend
     hashCode(): number;
     isLeft(): boolean;
     isRight(): boolean;
-    map(arg0: (param0: L) => ML, arg1: (param0: R) => MR): Either<ML, MR>;
+    map<ML extends Object | number | string | boolean, MR extends Object | number | string | boolean>(arg0: (param0: L) => ML, arg1: (param0: R) => MR): Either<ML, MR>;
     swap(): Either<R, L>;
     toString(): string;
     xmap<T extends Object | number | string | boolean>(arg0: (param0: L) => T, arg1: (param0: R) => T): T;

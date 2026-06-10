@@ -12,10 +12,10 @@ export class CommandContextBuilder<S extends Object | number | string | boolean>
     constructor(arg0: CommandDispatcher<S>, arg1: S, arg2: CommandNode<S>, arg3: number)
     readonly arguments: { [key: string]: ParsedArgument<S, Object> };
     readonly child: CommandContextBuilder<S>;
-    readonly command: (param0: S) => kotlin.Int;
+    readonly command: (param0: CommandContext<S>) => number;
     readonly dispatcher: CommandDispatcher<S>;
     // private forks: boolean;
-    // private modifier: (param0: S) => kotlin.collections.Collection<unknown>;
+    // private modifier: (param0: CommandContext<S>) => S[];
     readonly nodes: ParsedCommandNode<S>[];
     readonly range: StringRange;
     readonly rootNode: CommandNode<S>;
@@ -25,7 +25,7 @@ export class CommandContextBuilder<S extends Object | number | string | boolean>
     findSuggestionContext(arg0: number): SuggestionContext<S>;
     getArguments(): { [key: string]: ParsedArgument<S, Object> };
     getChild(): CommandContextBuilder<S>;
-    getCommand(): (param0: S) => kotlin.Int;
+    getCommand(): (param0: CommandContext<S>) => number;
     getDispatcher(): CommandDispatcher<S>;
     getLastChild(): CommandContextBuilder<S>;
     getNodes(): ParsedCommandNode<S>[];
@@ -34,7 +34,7 @@ export class CommandContextBuilder<S extends Object | number | string | boolean>
     getSource(): S;
     withArgument(arg0: string, arg1: ParsedArgument<S, Object>): CommandContextBuilder<S>;
     withChild(arg0: CommandContextBuilder<S>): CommandContextBuilder<S>;
-    withCommand(arg0: (param0: S) => kotlin.Int): CommandContextBuilder<S>;
+    withCommand(arg0: (param0: CommandContext<S>) => number): CommandContextBuilder<S>;
     withNode(arg0: CommandNode<S>, arg1: StringRange): CommandContextBuilder<S>;
     withSource(arg0: S): CommandContextBuilder<S>;
 }

@@ -15,19 +15,19 @@ export class DataComponentExactPredicate extends Object implements Predicate<Dat
     static allOf(paramcomponents: TypedDataComponent<Object>[]): DataComponentExactPredicate;
     static builder(): DataComponentExactPredicate$Builder;
     static expect(paramtype: DataComponentType<Object>, paramvalue: Object | null): DataComponentExactPredicate;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static someOf(paramcomponents: TypedDataComponent<Object>[], paramtypes: Object | null): DataComponentExactPredicate;
     private constructor(expectedComponents: TypedDataComponent<Object>[])
     // private expectedComponents: TypedDataComponent<Object>[];
     alwaysMatches(): boolean;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
     asPatch(): DataComponentPatch;
     equals(obj: Object | null): boolean;
     hashCode(): number;
     isEmpty(): boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: DataComponentGetter) => boolean;
+    or(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
     test(actualComponents: DataComponentGetter): boolean;
     toString(): string;
 }

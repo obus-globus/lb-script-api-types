@@ -8,8 +8,8 @@ import type { FormattedCharSequence } from '../../../net/minecraft/util/Formatte
 import type { FormattedCharSink } from '../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class StringSplitter extends Object {
     static getWordPosition(paramtext: string, paramdir: number, paramfrom: number, paramstripSpaces: boolean): number;
-    constructor(widthProvider: (param0: number, param1: Style) => kotlin.Float)
-    widthProvider: (param0: number, param1: Style) => kotlin.Float;
+    constructor(widthProvider: (param0: number, param1: Style) => number)
+    widthProvider: (param0: number, param1: Style) => number;
     findLineBreak(input: string, max: number, initialStyle: Style): number;
     headByWidth(text: FormattedText, width: number, initialStyle: Style): FormattedText;
     plainHeadByWidth(str: string, maxWidth: number, style: Style): string;
@@ -21,5 +21,5 @@ export class StringSplitter extends Object {
     splitLines(input: FormattedText, maxWidth: number, initialStyle: Style, output: (param0: FormattedText, param1: boolean) => void): void;
     stringWidth(str: string): number;
     stringWidth(text: FormattedText): number;
-    stringWidth(text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): number;
+    stringWidth(text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): number;
 }

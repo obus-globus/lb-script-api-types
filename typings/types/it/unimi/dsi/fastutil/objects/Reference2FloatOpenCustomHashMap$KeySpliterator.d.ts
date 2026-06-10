@@ -1,6 +1,7 @@
 import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Reference2FloatOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2FloatOpenCustomHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2FloatOpenCustomHashMap$KeySpliterator extends Reference2FloatOpenCustomHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
@@ -12,8 +13,8 @@ export class Reference2FloatOpenCustomHashMap$KeySpliterator extends Reference2F
     static SUBSIZED: number;
     constructor(null_: Reference2FloatOpenCustomHashMap$KeySpliterator)
     constructor(null_: Reference2FloatOpenCustomHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex(arg0: (param0: K) => void, arg1: number): void;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: K) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit(arg0: number, arg1: number, arg2: boolean): Reference2FloatOpenCustomHashMap$KeySpliterator;
+    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Reference2FloatOpenCustomHashMap$KeySpliterator;
     skip(arg0: number): number;
 }

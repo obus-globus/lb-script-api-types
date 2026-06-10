@@ -7,12 +7,12 @@ import type { Pack } from '../../../../../../net/minecraft/server/packs/reposito
 import type { PackSource } from '../../../../../../net/minecraft/server/packs/repository/PackSource.d.ts'
 import type { RepositorySource } from '../../../../../../net/minecraft/server/packs/repository/RepositorySource.d.ts'
 export class ModResourcePackCreator extends Object implements RepositorySource {
-    static BASE_PARENT: (param0: Object | null) => kotlin.Boolean;
+    static BASE_PARENT: (param0: string[]) => boolean;
     static CLIENT_RESOURCE_PACK_PROVIDER: ModResourcePackCreator;
-    static HIGH_CONTRAST_PARENT: (param0: Object | null) => kotlin.Boolean;
+    static HIGH_CONTRAST_PARENT: (param0: string[]) => boolean;
     static MAX_KNOWN_PACKS: number;
     static POST_CHANGE_HANDLE_REQUIRED: string[];
-    static PROGRAMMER_ART_PARENT: (param0: Object | null) => kotlin.Boolean;
+    static PROGRAMMER_ART_PARENT: (param0: string[]) => boolean;
     static RESOURCE_PACK_SOURCE: PackSource;
     static VANILLA: string;
     constructor(arg0: PackType)
@@ -21,5 +21,5 @@ export class ModResourcePackCreator extends Object implements RepositorySource {
     // private forKnownPacksManager: boolean;
     // private type: PackType;
     loadPacks(arg0: (param0: Pack) => void): void;
-    // private registerModPack(arg0: (param0: Pack) => void, arg1: string, arg2: (param0: string[]) => kotlin.Boolean): void;
+    // private registerModPack(arg0: (param0: Pack) => void, arg1: string, arg2: (param0: string[]) => boolean): void;
 }

@@ -38,7 +38,7 @@ export interface GpuDeviceBackend extends Object {
     getVersion(): string;
     isDebuggingEnabled(): boolean;
     isZZeroToOne(): boolean;
-    precompilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): CompiledRenderPipeline;
+    precompilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => string): CompiledRenderPipeline;
     presentFrame(): void;
     setVsync(enabled: boolean): void;
 }

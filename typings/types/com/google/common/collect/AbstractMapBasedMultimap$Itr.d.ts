@@ -4,9 +4,9 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export abstract class AbstractMapBasedMultimap$Itr<T extends Object | number | string | boolean> extends Object implements Iterator<T> {
     constructor(null_: AbstractMapBasedMultimap$Itr<Object>)
-    // private collection: E[];
+    // private collection: V[];
     // private key: K;
-    // private keyIterator: Iterator<Map$Entry<K, E[]>>;
+    // private keyIterator: Iterator<Map$Entry<K, V[]>>;
     // private valueIterator: Iterator<V>;
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;

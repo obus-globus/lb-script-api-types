@@ -4,8 +4,8 @@ import type { OptionSpec } from '../joptsimple/OptionSpec.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
 import type { Throwable } from '../java/lang/Throwable.d.ts'
 export abstract class OptionException extends RuntimeException {
-    constructor(arg0: E[])
-    constructor(arg0: E[], arg1: Throwable)
+    constructor(arg0: OptionSpec<Object>[])
+    constructor(arg0: OptionSpec<Object>[], arg1: Throwable)
     constructor(arg0: string[])
     readonly message: string | null;
     // private options: string[];
@@ -17,5 +17,5 @@ export abstract class OptionException extends RuntimeException {
     singleOptionString(): string;
     singleOptionString(arg0: string): string;
     // private specToString(arg0: OptionSpec<Object>): string;
-    // private specsToStrings(arg0: E[]): string[];
+    // private specsToStrings(arg0: OptionSpec<Object>[]): string[];
 }

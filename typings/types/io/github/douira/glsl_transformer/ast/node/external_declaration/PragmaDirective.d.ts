@@ -10,8 +10,8 @@ import type { ASTVisitor } from '../../../../../../../io/github/douira/glsl_tran
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PragmaDirective extends ExternalDeclaration {
-    static clone(paramarg0: Object | null): Object | null;
-    static clone(paramarg0: (Object | null)[]): Stream<Object>;
+    static clone(paramarg0: ASTNode | null): ASTNode | null;
+    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: boolean, arg1: PragmaDirective$PragmaType, arg2: PragmaDirective$PragmaOption, arg3: PragmaDirective$PragmaState)
     private constructor(arg0: boolean, arg1: PragmaDirective$PragmaType, arg2: PragmaDirective$PragmaOption, arg3: string, arg4: PragmaDirective$PragmaState)

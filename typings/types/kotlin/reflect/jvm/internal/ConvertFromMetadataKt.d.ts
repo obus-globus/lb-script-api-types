@@ -6,10 +6,11 @@ import type { KType } from '../../../../kotlin/reflect/KType.d.ts'
 import type { TypeParameterTable } from '../../../../kotlin/reflect/jvm/internal/TypeParameterTable.d.ts'
 import type { KmType } from '../../../../kotlin/reflect/jvm/internal/impl/km/KmType.d.ts'
 import type { ClassId } from '../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
+import type { AbstractKType } from '../../../../kotlin/reflect/jvm/internal/types/AbstractKType.d.ts'
 export class ConvertFromMetadataKt extends Object {
-    static convertTypeArgumentToJavaType(paramarg0: () => Object | null, paramarg1: number): () => Type;
+    static convertTypeArgumentToJavaType(paramarg0: () => AbstractKType, paramarg1: number): () => Type;
     static loadKClass(paramarg0: ClassLoader, paramarg1: string): KClass<Object>;
     static toClassId(paramarg0: string): ClassId;
-    static toKType(paramarg0: KmType, paramarg1: ClassLoader, paramarg2: TypeParameterTable, paramarg3: () => Object | null): KType;
+    static toKType(paramarg0: KmType, paramarg1: ClassLoader, paramarg2: TypeParameterTable, paramarg3: () => Type): KType;
     static toNonLocalSimpleName(paramarg0: string): string;
 }

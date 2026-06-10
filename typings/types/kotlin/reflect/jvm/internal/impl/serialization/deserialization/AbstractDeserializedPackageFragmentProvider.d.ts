@@ -16,14 +16,14 @@ export abstract class AbstractDeserializedPackageFragmentProvider extends Object
     // private fragments: MemoizedFunctionToNullable<FqName, PackageFragmentDescriptor>;
     // private moduleDescriptor: ModuleDescriptor;
     // private storageManager: StorageManager;
-    collectPackageFragments(arg0: FqName, arg1: E[]): void;
+    collectPackageFragments(arg0: FqName, arg1: PackageFragmentDescriptor[]): void;
     findPackage(arg0: FqName): DeserializedPackageFragment;
     getComponents(): DeserializationComponents;
     getFinder(): KotlinMetadataFinder;
     getModuleDescriptor(): ModuleDescriptor;
     getPackageFragments(arg0: FqName): PackageFragmentDescriptor[];
     getStorageManager(): StorageManager;
-    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): E[];
+    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];
     isEmpty(arg0: FqName): boolean;
     setComponents(arg0: DeserializationComponents): void;
 }

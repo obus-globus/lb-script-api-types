@@ -10,7 +10,7 @@ export class DynamicAtlasAllocator<K extends Object | number | string | boolean>
     // private width: number;
     endFrame(): void;
     freeSlotCount(): number;
-    // private freeSlotIf(predicate: (param0: K, param1: DynamicAtlasAllocator$Slot) => kotlin.Boolean): void;
+    // private freeSlotIf(predicate: (param0: K, param1: DynamicAtlasAllocator$Slot) => boolean): void;
     getOrAllocate(key: K, discardAfterFrame: boolean): DynamicAtlasAllocator$Slot;
     hasSpaceForAll(keys: K[]): boolean;
     reclaimSpaceFor(keys: K[]): boolean;

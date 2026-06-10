@@ -15,7 +15,7 @@ export class ModifyVariableInjector extends Injector {
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo, arg1: LocalVariableDiscriminator)
     // private discriminator: LocalVariableDiscriminator;
-    findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint, arg2: E[]): boolean;
+    findTargetNodes(arg0: InjectorTarget, arg1: InjectionPoint, arg2: AbstractInsnNode[]): boolean;
     getTargetNodeKey(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): string;
     // private inject(arg0: ModifyVariableInjector$Context, arg1: Injector$InjectorData, arg2: Target$Extension, arg3: number): void;
     inject(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode[]): void;

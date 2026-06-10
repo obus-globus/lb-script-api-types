@@ -9,8 +9,8 @@ export class MultiVariantGenerator$Entry extends Record {
     private constructor(properties: PropertyValueList, variant: MultiVariant)
     // private properties: PropertyValueList;
     // private variant: MultiVariant;
-    apply(stage: PropertyDispatch<(param0: Object | null) => unknown>): Stream<MultiVariantGenerator$Entry>;
-    apply(mutator: (param0: Object | null) => unknown): Stream<MultiVariantGenerator$Entry>;
+    apply(stage: PropertyDispatch<(param0: Object | null) => Object | null>): Stream<MultiVariantGenerator$Entry>;
+    apply(mutator: (param0: Object | null) => Object | null): Stream<MultiVariantGenerator$Entry>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     properties(): PropertyValueList;

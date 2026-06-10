@@ -1,4 +1,5 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AnnotationNode } from '../../../../org/objectweb/asm/tree/AnnotationNode.d.ts'
 import type { ClassNode } from '../../../../org/objectweb/asm/tree/ClassNode.d.ts'
@@ -7,13 +8,13 @@ import type { MethodNode } from '../../../../org/objectweb/asm/tree/MethodNode.d
 import type { IAnnotationHandle } from '../../../../org/spongepowered/asm/util/asm/IAnnotationHandle.d.ts'
 export class Annotations extends Object {
     static get(paramarg0: AnnotationNode[], paramarg1: string): AnnotationNode;
-    static getDesc(paramarg0: Class<Object>): string;
-    static getInvisible(paramarg0: ClassNode, paramarg1: Class<Object>): AnnotationNode;
-    static getInvisible(paramarg0: FieldNode, paramarg1: Class<Object>): AnnotationNode;
-    static getInvisible(paramarg0: MethodNode, paramarg1: Class<Object>): AnnotationNode;
-    static getInvisibleParameter(paramarg0: MethodNode, paramarg1: Class<Object>, paramarg2: number): AnnotationNode;
+    static getDesc(paramarg0: Class<Annotation>): string;
+    static getInvisible(paramarg0: ClassNode, paramarg1: Class<Annotation>): AnnotationNode;
+    static getInvisible(paramarg0: FieldNode, paramarg1: Class<Annotation>): AnnotationNode;
+    static getInvisible(paramarg0: MethodNode, paramarg1: Class<Annotation>): AnnotationNode;
+    static getInvisibleParameter(paramarg0: MethodNode, paramarg1: Class<Annotation>, paramarg2: number): AnnotationNode;
     static getParameter(paramarg0: Object | null, paramarg1: string, paramarg2: number): AnnotationNode;
-    static getSimpleName(paramarg0: Class<Object>): string;
+    static getSimpleName(paramarg0: Class<Annotation>): string;
     static getSimpleName(paramarg0: AnnotationNode): string;
     static getSingleInvisible(paramarg0: MethodNode, paramarg1: Object | null): AnnotationNode;
     static getSingleVisible(paramarg0: MethodNode, paramarg1: Object | null): AnnotationNode;
@@ -24,18 +25,18 @@ export class Annotations extends Object {
     static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Object | null): Object | null;
     static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Class<Object>): Object | null;
     static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: boolean): (Object | null)[];
-    static getVisible(paramarg0: ClassNode, paramarg1: Class<Object>): AnnotationNode;
-    static getVisible(paramarg0: FieldNode, paramarg1: Class<Object>): AnnotationNode;
-    static getVisible(paramarg0: MethodNode, paramarg1: Class<Object>): AnnotationNode;
-    static getVisibleParameter(paramarg0: MethodNode, paramarg1: Class<Object>, paramarg2: number): AnnotationNode;
+    static getVisible(paramarg0: ClassNode, paramarg1: Class<Annotation>): AnnotationNode;
+    static getVisible(paramarg0: FieldNode, paramarg1: Class<Annotation>): AnnotationNode;
+    static getVisible(paramarg0: MethodNode, paramarg1: Class<Annotation>): AnnotationNode;
+    static getVisibleParameter(paramarg0: MethodNode, paramarg1: Class<Annotation>, paramarg2: number): AnnotationNode;
     static handleOf(paramarg0: Object): IAnnotationHandle;
     static merge(paramarg0: ClassNode, paramarg1: ClassNode): void;
     static merge(paramarg0: FieldNode, paramarg1: FieldNode): void;
     static merge(paramarg0: MethodNode, paramarg1: MethodNode): void;
-    static setInvisible(paramarg0: FieldNode, paramarg1: Class<Object>, paramarg2: (Object | null)[]): void;
-    static setInvisible(paramarg0: MethodNode, paramarg1: Class<Object>, paramarg2: (Object | null)[]): void;
+    static setInvisible(paramarg0: FieldNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
+    static setInvisible(paramarg0: MethodNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
     static setValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Object): void;
-    static setVisible(paramarg0: FieldNode, paramarg1: Class<Object>, paramarg2: (Object | null)[]): void;
-    static setVisible(paramarg0: MethodNode, paramarg1: Class<Object>, paramarg2: (Object | null)[]): void;
+    static setVisible(paramarg0: FieldNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
+    static setVisible(paramarg0: MethodNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
     private constructor()
 }

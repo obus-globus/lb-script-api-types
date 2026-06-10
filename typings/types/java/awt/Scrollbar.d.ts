@@ -6,6 +6,7 @@ import type { AdjustmentListener } from '../../java/awt/event/AdjustmentListener
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 export class Scrollbar extends Component implements Adjustable, Accessible {
@@ -48,7 +49,7 @@ export class Scrollbar extends Component implements Adjustable, Accessible {
     getAdjustmentListeners(): AdjustmentListener[];
     getBlockIncrement(): number;
     getLineIncrement(): number;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getMaximum(): number;
     getMinimum(): number;
     getOrientation(): number;

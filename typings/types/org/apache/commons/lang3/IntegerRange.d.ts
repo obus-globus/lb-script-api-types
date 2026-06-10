@@ -5,11 +5,11 @@ import type { NumberRange } from '../../../../org/apache/commons/lang3/NumberRan
 import type { Range } from '../../../../org/apache/commons/lang3/Range.d.ts'
 export class IntegerRange extends NumberRange<number> {
     static between(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
-    static between(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object | null) => kotlin.Boolean): Range<Object>;
+    static between(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object) => boolean): Range<Object>;
     static is(paramarg0: Object | null): Range<Object>;
-    static is(paramarg0: Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): Range<Object>;
+    static is(paramarg0: Object | null, paramarg1: (param0: Object) => boolean): Range<Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object | null) => kotlin.Boolean): Range<Object>;
+    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object) => boolean): Range<Object>;
     static of(paramarg0: number, paramarg1: number): IntegerRange;
     static of(paramarg0: number, paramarg1: number): IntegerRange;
     private constructor(arg0: number, arg1: number)

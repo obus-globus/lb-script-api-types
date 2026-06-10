@@ -38,7 +38,7 @@ export class OffsetDateTime extends Object implements Serializable, Temporal, Te
     static ofInstant(paramarg0: Instant, paramarg1: ZoneId): OffsetDateTime;
     static parse(paramarg0: CharSequence): OffsetDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): OffsetDateTime;
-    static timeLineOrder(): (param0: OffsetDateTime) => kotlin.Boolean;
+    static timeLineOrder(): (param0: Object) => boolean;
     private constructor(arg0: LocalDateTime, arg1: ZoneOffset)
     // private dateTime: LocalDateTime;
     readonly offset: ZoneOffset;
@@ -90,7 +90,7 @@ export class OffsetDateTime extends Object implements Serializable, Temporal, Te
     plusSeconds(arg0: number): OffsetDateTime;
     plusWeeks(arg0: number): OffsetDateTime;
     plusYears(arg0: number): OffsetDateTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochSecond(): number;
@@ -104,9 +104,9 @@ export class OffsetDateTime extends Object implements Serializable, Temporal, Te
     truncatedTo(arg0: TemporalUnit): OffsetDateTime;
     until(arg0: Temporal, arg1: TemporalUnit): number;
     // private with(arg0: LocalDateTime, arg1: ZoneOffset): OffsetDateTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): OffsetDateTime;
+    with(arg0: (param0: Temporal) => Temporal): OffsetDateTime;
     with(arg0: TemporalField, arg1: number): OffsetDateTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withDayOfMonth(arg0: number): OffsetDateTime;
     withDayOfYear(arg0: number): OffsetDateTime;
     withHour(arg0: number): OffsetDateTime;

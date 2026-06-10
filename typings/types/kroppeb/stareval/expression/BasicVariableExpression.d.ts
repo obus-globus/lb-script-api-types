@@ -9,6 +9,6 @@ export class BasicVariableExpression extends Object implements VariableExpressio
     // private name: string;
     // private type: Type;
     evaluateTo(arg0: FunctionContext, arg1: FunctionReturn): void;
-    listVariables(arg0: E[]): void;
+    listVariables(arg0: VariableExpression[]): void;
     partialEval(arg0: FunctionContext, arg1: FunctionReturn): Expression;
 }

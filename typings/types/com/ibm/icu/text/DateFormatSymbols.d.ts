@@ -24,8 +24,8 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     static getAvailableULocales(): (Object | null)[];
     static getDateFormatBundle(paramarg0: Calendar, paramarg1: ULocale): ResourceBundle;
     static getDateFormatBundle(paramarg0: Calendar, paramarg1: Locale): ResourceBundle;
-    static getDateFormatBundle(paramarg0: Class<Object>, paramarg1: ULocale): ResourceBundle;
-    static getDateFormatBundle(paramarg0: Class<Object>, paramarg1: Locale): ResourceBundle;
+    static getDateFormatBundle(paramarg0: Class<Calendar>, paramarg1: ULocale): ResourceBundle;
+    static getDateFormatBundle(paramarg0: Class<Calendar>, paramarg1: Locale): ResourceBundle;
     static getInstance(): DateFormatSymbols;
     static getInstance(paramarg0: ULocale): DateFormatSymbols;
     static getInstance(paramarg0: Locale): DateFormatSymbols;

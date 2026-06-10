@@ -24,8 +24,8 @@ export class Font extends Object {
     bidirectionalShaping(text: string): string;
     drawInBatch(str: string, x: number, y: number, color: number, dropShadow: boolean, pose: Matrix4fc, bufferSource: MultiBufferSource, displayMode: Font$DisplayMode, backgroundColor: number, packedLightCoords: number): void;
     drawInBatch(str: Component, x: number, y: number, color: number, dropShadow: boolean, pose: Matrix4fc, bufferSource: MultiBufferSource, displayMode: Font$DisplayMode, backgroundColor: number, packedLightCoords: number): void;
-    drawInBatch(str: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, x: number, y: number, color: number, dropShadow: boolean, pose: Matrix4fc, bufferSource: MultiBufferSource, displayMode: Font$DisplayMode, backgroundColor: number, packedLightCoords: number): void;
-    drawInBatch8xOutline(str: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, x: number, y: number, color: number, outlineColor: number, pose: Matrix4fc, bufferSource: MultiBufferSource, packedLightCoords: number): void;
+    drawInBatch(str: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, x: number, y: number, color: number, dropShadow: boolean, pose: Matrix4fc, bufferSource: MultiBufferSource, displayMode: Font$DisplayMode, backgroundColor: number, packedLightCoords: number): void;
+    drawInBatch8xOutline(str: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, x: number, y: number, color: number, outlineColor: number, pose: Matrix4fc, bufferSource: MultiBufferSource, packedLightCoords: number): void;
     // private getGlyph(codepoint: number, style: Style): BakedGlyph;
     // private getGlyphSource(fontLocation: FontDescription): GlyphSource;
     getSplitter(): StringSplitter;
@@ -33,12 +33,12 @@ export class Font extends Object {
     plainSubstrByWidth(str: string, width: number): string;
     plainSubstrByWidth(str: string, width: number, reverse: boolean): string;
     prepareText(text: string, x: number, y: number, originalColor: number, drawShadow: boolean, backgroundColor: number): Font$PreparedText;
-    prepareText(text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, x: number, y: number, originalColor: number, drawShadow: boolean, includeEmpty: boolean, backgroundColor: number): Font$PreparedText;
-    split(input: FormattedText, maxWidth: number): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    prepareText(text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, x: number, y: number, originalColor: number, drawShadow: boolean, includeEmpty: boolean, backgroundColor: number): Font$PreparedText;
+    split(input: FormattedText, maxWidth: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     splitIgnoringLanguage(input: FormattedText, maxWidth: number): FormattedText[];
     substrByWidth(text: FormattedText, width: number): FormattedText;
     width(str: string): number;
     width(text: FormattedText): number;
-    width(text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): number;
+    width(text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): number;
     wordWrapHeight(input: FormattedText, textWidth: number): number;
 }

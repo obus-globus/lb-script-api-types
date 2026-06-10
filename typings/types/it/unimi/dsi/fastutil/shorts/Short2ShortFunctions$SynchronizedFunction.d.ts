@@ -20,34 +20,34 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ShortFunctions$SynchronizedFunction extends Object implements Short2ShortFunction, Serializable {
-    static identity(): (param0: number) => kotlin.Short;
-    constructor(arg0: (param0: number) => kotlin.Short)
-    constructor(arg0: (param0: number) => kotlin.Short, arg1: Object)
-    // private function: (param0: number) => kotlin.Short;
+    static identity(): (param0: number) => number;
+    constructor(arg0: (param0: number) => number)
+    constructor(arg0: (param0: number) => number, arg1: Object)
+    // private function: (param0: number) => number;
     // private sync: Object;
-    andThen(arg0: (param0: number) => T): (param0: number) => T;
-    andThenByte(arg0: (param0: number) => kotlin.Byte): (param0: number) => kotlin.Byte;
-    andThenChar(arg0: (param0: number) => kotlin.Char): (param0: number) => kotlin.Char;
-    andThenDouble(arg0: (param0: number) => kotlin.Double): (param0: number) => kotlin.Double;
-    andThenFloat(arg0: (param0: number) => kotlin.Float): (param0: number) => kotlin.Float;
-    andThenInt(arg0: (param0: number) => kotlin.Int): (param0: number) => kotlin.Int;
-    andThenLong(arg0: (param0: number) => kotlin.Long): (param0: number) => kotlin.Long;
-    andThenObject(arg0: (param0: T) => unknown): (param0: T) => unknown;
-    andThenReference(arg0: (param0: T) => unknown): (param0: T) => unknown;
-    andThenShort(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
+    andThen<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: number) => T;
+    andThenByte(arg0: (param0: number) => number): (param0: number) => number;
+    andThenChar(arg0: (param0: number) => string): (param0: number) => string;
+    andThenDouble(arg0: (param0: number) => number): (param0: number) => number;
+    andThenFloat(arg0: (param0: number) => number): (param0: number) => number;
+    andThenInt(arg0: (param0: number) => number): (param0: number) => number;
+    andThenLong(arg0: (param0: number) => number): (param0: number) => number;
+    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: number) => T;
+    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: number) => T;
+    andThenShort(arg0: (param0: number) => number): (param0: number) => number;
     apply(arg0: number): number;
     applyAsInt(arg0: number): number;
     clear(): void;
-    compose(arg0: (param0: T) => number): (param0: T) => number;
-    composeByte(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
-    composeChar(arg0: (param0: string) => kotlin.Short): (param0: string) => kotlin.Short;
-    composeDouble(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
-    composeFloat(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
-    composeInt(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
-    composeLong(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
-    composeObject(arg0: (param0: T) => kotlin.Short): (param0: T) => kotlin.Short;
-    composeReference(arg0: (param0: T) => kotlin.Short): (param0: T) => kotlin.Short;
-    composeShort(arg0: (param0: number) => kotlin.Short): (param0: number) => kotlin.Short;
+    compose<T extends Object | number | string | boolean>(arg0: (param0: T) => number): (param0: T) => number;
+    composeByte(arg0: (param0: number) => number): (param0: number) => number;
+    composeChar(arg0: (param0: string) => number): (param0: string) => number;
+    composeDouble(arg0: (param0: number) => number): (param0: number) => number;
+    composeFloat(arg0: (param0: number) => number): (param0: number) => number;
+    composeInt(arg0: (param0: number) => number): (param0: number) => number;
+    composeLong(arg0: (param0: number) => number): (param0: number) => number;
+    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => number): (param0: Object) => number;
+    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => number): (param0: Object) => number;
+    composeShort(arg0: (param0: number) => number): (param0: number) => number;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

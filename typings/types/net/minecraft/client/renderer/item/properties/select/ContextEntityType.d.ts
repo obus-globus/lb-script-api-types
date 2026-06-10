@@ -10,8 +10,8 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
 import type { ItemDisplayContext } from '../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ContextEntityType extends Record implements SelectItemModelProperty<ResourceKey<EntityType<Object>>> {
-    static TYPE: SelectItemModelProperty$Type<ContextEntityType, Object>;
-    static VALUE_CODEC: Codec<Object>;
+    static TYPE: SelectItemModelProperty$Type<ContextEntityType, ResourceKey<EntityType<Object>>>;
+    static VALUE_CODEC: Codec<ResourceKey<EntityType<Object>>>;
     constructor()
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): ResourceKey<EntityType<Object>>;

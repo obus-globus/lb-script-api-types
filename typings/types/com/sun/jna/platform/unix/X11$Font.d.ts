@@ -6,7 +6,7 @@ export class X11$Font extends X11$XID {
     static None: X11$Font;
     static None: X11$XID;
     static SIZE: number;
-    static compare(paramarg0: Object | null, paramarg1: Object | null): number;
+    static compare(paramarg0: IntegerType | null, paramarg1: IntegerType | null): number;
     static compare(paramarg0: number, paramarg1: number): number;
     static compare(paramarg0: IntegerType, paramarg1: number): number;
     constructor()

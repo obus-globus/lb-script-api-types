@@ -11,8 +11,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class LegacyProvider extends Record implements TagLikeParser$Provider {
     static placeholder(paramarg0: ParserContext$Key<Object>, paramarg1: Placeholders$PlaceholderGetter<Object>): TagLikeParser$Provider;
-    static placeholder(paramarg0: ParserContext$Key<Object>): TagLikeParser$Provider;
-    static placeholder(paramarg0: string[], paramarg1: ParserContext$Key<Object>): TagLikeParser$Provider;
+    static placeholder(paramarg0: ParserContext$Key<(param0: string) => Component>): TagLikeParser$Provider;
+    static placeholder(paramarg0: string[], paramarg1: ParserContext$Key<(param0: string) => Component>): TagLikeParser$Provider;
     static placeholder(paramarg0: (param0: string) => TextNode): TagLikeParser$Provider;
     static placeholderText(paramarg0: (param0: string) => Component): TagLikeParser$Provider;
     constructor(registry: TagRegistry)

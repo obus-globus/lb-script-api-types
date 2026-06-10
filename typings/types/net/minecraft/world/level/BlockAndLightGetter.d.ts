@@ -8,6 +8,7 @@ import type { BlockGetter } from '../../../../net/minecraft/world/level/BlockGet
 import type { ClipBlockStateContext } from '../../../../net/minecraft/world/level/ClipBlockStateContext.d.ts'
 import type { ClipContext } from '../../../../net/minecraft/world/level/ClipContext.d.ts'
 import type { LightLayer } from '../../../../net/minecraft/world/level/LightLayer.d.ts'
+import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { LevelLightEngine } from '../../../../net/minecraft/world/level/lighting/LevelLightEngine.d.ts'
@@ -19,7 +20,7 @@ export interface BlockAndLightGetter extends Object, BlockGetter {
     canSeeSky(pos: BlockPos): boolean;
     clip(arg0: ClipContext): BlockHitResult;
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
     getBlockStates(box: AABB): Stream<BlockState>;

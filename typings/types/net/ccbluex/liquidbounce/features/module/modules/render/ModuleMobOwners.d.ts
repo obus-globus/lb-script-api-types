@@ -13,12 +13,12 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
  */
 export class ModuleMobOwners extends ClientModule {
     static INSTANCE: ModuleMobOwners;
-    // private CANCELED_TEXT: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    // private FAILED_TEXT: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    // private LOADING_TEXT: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private CANCELED_TEXT: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    // private FAILED_TEXT: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    // private LOADING_TEXT: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private projectiles: boolean;
     // private /*not mapped: */ getProjectiles(): boolean;
-    // private uuidNameCache: Map<UUID, (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean>;
-    // private getFromMojangApi(ownerId: UUID): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    getOwnerInfoText(entity: Entity | null): ((param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean) | null;
+    // private uuidNameCache: Map<UUID, (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean>;
+    // private getFromMojangApi(ownerId: UUID): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    getOwnerInfoText(entity: Entity | null): ((param0: (param0: number, param1: Style, param2: number) => boolean) => boolean) | null;
 }

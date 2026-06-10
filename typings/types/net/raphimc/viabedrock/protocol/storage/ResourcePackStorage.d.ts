@@ -39,8 +39,8 @@ export class ResourcePackStorage extends Object implements StorableObject {
     getFogs(): FogDefinitions;
     getItems(): ItemDefinitions;
     getModels(): ModelDefinitions;
-    getPackStackBottomToTop(): E[];
-    getPackStackTopToBottom(): E[];
+    getPackStackBottomToTop(): ResourcePack[];
+    getPackStackTopToBottom(): ResourcePack[];
     getParticles(): ParticleDefinitions;
     getRenderControllers(): RenderControllerDefinitions;
     getSounds(): SoundDefinitions;

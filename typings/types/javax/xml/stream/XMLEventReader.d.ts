@@ -4,7 +4,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export interface XMLEventReader extends Object, Iterator<Object> {
     close(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Object) => void): void;
     getElementText(): string;
     getProperty(arg0: string): Object;
     hasNext(): boolean;

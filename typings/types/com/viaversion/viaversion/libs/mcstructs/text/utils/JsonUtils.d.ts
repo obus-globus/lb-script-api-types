@@ -14,7 +14,7 @@ export class JsonUtils extends Object {
     static getString(paramarg0: JsonElement, paramarg1: string): string;
     static getString(paramarg0: JsonObject, paramarg1: string): string;
     static getString(paramarg0: JsonObject, paramarg1: string, paramarg2: string): string;
-    static sort(paramarg0: JsonElement, paramarg1: (param0: string) => kotlin.Boolean): JsonElement;
-    static toSortedString(paramarg0: JsonElement, paramarg1: (param0: string) => kotlin.Boolean): string;
+    static sort(paramarg0: JsonElement, paramarg1: (param0: Object) => boolean): JsonElement;
+    static toSortedString(paramarg0: JsonElement, paramarg1: (param0: Object) => boolean): string;
     constructor()
 }

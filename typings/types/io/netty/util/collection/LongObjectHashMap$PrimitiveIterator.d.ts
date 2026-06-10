@@ -7,10 +7,10 @@ export class LongObjectHashMap$PrimitiveIterator extends Object implements LongO
     // private entryIndex: number;
     // private nextIndex: number;
     // private prevIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: LongObjectMap$PrimitiveEntry<V>) => void): void;
     hasNext(): boolean;
     key(): number;
-    next(): LongObjectMap$PrimitiveEntry<V>;
+    next<V extends Object | number | string | boolean>(): LongObjectMap$PrimitiveEntry<V>;
     remove(): void;
     // private scanNext(): void;
     setValue<V extends Object | number | string | boolean>(arg0: V): void;

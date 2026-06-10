@@ -9,8 +9,8 @@ export class GLFWNativeEGL extends Object {
     static glfwGetEGLSurface(paramarg0: number): number;
     static nglfwGetEGLConfig(paramarg0: number, paramarg1: number): number;
     static setEGLPath(paramarg0: string): void;
-    static setEGLPath(paramarg0: (param0: ByteBuffer) => kotlin.Long): void;
+    static setEGLPath(paramarg0: (param0: ByteBuffer) => number): void;
     static setGLESPath(paramarg0: string): void;
-    static setGLESPath(paramarg0: (param0: ByteBuffer) => kotlin.Long): void;
+    static setGLESPath(paramarg0: (param0: ByteBuffer) => number): void;
     constructor()
 }

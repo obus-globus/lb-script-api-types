@@ -5,7 +5,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class TruffleLanguage$Env$TruffleFileFactory<P extends Object | number | string | boolean> extends Object implements BiFunction<P, TruffleFile$FileSystemContext, TruffleFile> {
     private constructor()
-    andThen(arg0: (param0: R) => V): (param0: T, param1: U) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: TruffleFile) => V): (param0: P, param1: TruffleFile$FileSystemContext) => V;
     apply(p: P, fileSystemContext: TruffleFile$FileSystemContext): TruffleFile;
     parsePath(p: P, fileSystemContext: TruffleFile$FileSystemContext): Path[];
 }

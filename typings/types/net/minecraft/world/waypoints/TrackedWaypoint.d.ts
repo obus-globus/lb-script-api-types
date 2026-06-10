@@ -32,9 +32,9 @@ export abstract class TrackedWaypoint extends Object implements Waypoint {
     distanceSquared(fromEntity: Entity): number;
     icon(): Waypoint$Icon;
     id(): Either<UUID, string>;
-    pitchDirectionToCamera(level: Level, projector: TrackedWaypoint$Projector, partialTickSupplier: (param0: Entity) => kotlin.Float): TrackedWaypoint$PitchDirection;
+    pitchDirectionToCamera(level: Level, projector: TrackedWaypoint$Projector, partialTickSupplier: (param0: Entity) => number): TrackedWaypoint$PitchDirection;
     update(other: TrackedWaypoint): void;
     write(buf: ByteBuf): void;
     writeContents(buf: ByteBuf): void;
-    yawAngleToCamera(level: Level, camera: TrackedWaypoint$Camera, partialTickSupplier: (param0: Entity) => kotlin.Float): number;
+    yawAngleToCamera(level: Level, camera: TrackedWaypoint$Camera, partialTickSupplier: (param0: Entity) => number): number;
 }

@@ -16,7 +16,7 @@ export class TagStringReader extends Object {
     // private intArray(): number[];
     key(): string;
     legacy(arg0: boolean): void;
-    list(): T[];
+    list(): Tag[];
     // private longArray(): number[];
     // private parseByte(arg0: string, arg1: number, arg2: boolean): number;
     // private parseInt(arg0: string, arg1: number, arg2: boolean): number;

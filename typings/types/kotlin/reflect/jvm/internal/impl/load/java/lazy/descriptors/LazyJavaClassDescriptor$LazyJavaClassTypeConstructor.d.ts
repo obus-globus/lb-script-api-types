@@ -8,7 +8,7 @@ import type { KotlinType } from '../../../../../../../../../kotlin/reflect/jvm/i
 export class LazyJavaClassDescriptor$LazyJavaClassTypeConstructor extends AbstractClassTypeConstructor {
     constructor(null_: LazyJavaClassDescriptor$LazyJavaClassTypeConstructor)
     readonly parameters: NotNullLazyValue<TypeParameterDescriptor[]>;
-    computeSupertypes(): E[];
+    computeSupertypes(): KotlinType[];
     getDeclarationDescriptor(): ClassDescriptor;
     getParameters(): TypeParameterDescriptor[];
     // private getPurelyImplementedSupertype(): KotlinType;

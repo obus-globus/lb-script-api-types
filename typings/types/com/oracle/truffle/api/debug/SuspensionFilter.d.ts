@@ -5,12 +5,12 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SuspensionFilter extends Object {
     static newBuilder(): SuspensionFilter$Builder;
     private constructor()
-    private constructor(ignoreLanguageContextInitialization: boolean, includeInternal: boolean, includeAvailableSourceSectionsOnly: boolean, sourcePredicate: (param0: Source) => kotlin.Boolean)
+    private constructor(ignoreLanguageContextInitialization: boolean, includeInternal: boolean, includeAvailableSourceSectionsOnly: boolean, sourcePredicate: (param0: Source) => boolean)
     readonly ignoreLanguageContextInitialization: boolean;
     // private includeAvailableSourceSectionsOnly: boolean;
     // private includeInternal: boolean;
-    // private sourcePredicate: (param0: Source) => kotlin.Boolean;
-    getSourcePredicate(): (param0: Source) => kotlin.Boolean;
+    // private sourcePredicate: (param0: Source) => boolean;
+    getSourcePredicate(): (param0: Source) => boolean;
     isIgnoreLanguageContextInitialization(): boolean;
     isIncludeAvailableSourceSectionsOnly(): boolean;
     isInternalIncluded(): boolean;

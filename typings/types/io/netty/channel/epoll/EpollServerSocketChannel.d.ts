@@ -16,12 +16,12 @@ export class EpollServerSocketChannel extends AbstractEpollServerChannel impleme
     constructor(arg0: SocketProtocolFamily)
     constructor(arg0: number)
     // private config: EpollServerSocketChannelConfig;
-    // private tcpMd5SigAddresses: E[];
+    // private tcpMd5SigAddresses: InetAddress[];
     config(): EpollServerSocketChannelConfig;
     doBind(arg0: SocketAddress): void;
     localAddress(): InetSocketAddress;
     newChildChannel(arg0: number, arg1: number[], arg2: number, arg3: number): Channel;
     remoteAddress(): InetSocketAddress;
     setTcpMd5Sig(arg0: Map<InetAddress, number[]>): void;
-    tcpMd5SigAddresses(): E[];
+    tcpMd5SigAddresses(): InetAddress[];
 }

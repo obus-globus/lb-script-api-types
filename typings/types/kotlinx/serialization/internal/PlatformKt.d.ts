@@ -8,7 +8,7 @@ export class PlatformKt extends Object {
     static constructSerializerForGivenTypeArgs(paramarg0: KClass<Object>, paramarg1: Object | null): KSerializer<Object>;
     static getChecked(paramarg0: Object | null, paramarg1: number): Object | null;
     static getChecked(paramarg0: (Object | null)[], paramarg1: number): boolean;
-    static initBuiltins(): Map<Object | null, Object | null>;
+    static initBuiltins(): Map<KClass<Object>, KSerializer<Object>>;
     static isInterface(paramarg0: KClass<Object>): boolean;
     static isReferenceArray(paramarg0: KClass<Object>): boolean;
     static platformSpecificSerializerNotRegistered(paramarg0: KClass<Object>): void;

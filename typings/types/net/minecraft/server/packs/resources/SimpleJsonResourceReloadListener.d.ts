@@ -11,7 +11,7 @@ import type { SimplePreparableReloadListener } from '../../../../../net/minecraf
 import type { ProfilerFiller } from '../../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 export abstract class SimpleJsonResourceReloadListener<T extends Object | number | string | boolean> extends SimplePreparableReloadListener<Map<Identifier, T>> {
     static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
-    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<Object>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
+    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     constructor(codec: Codec<T>, lister: FileToIdConverter)
     private constructor(ops: DynamicOps<JsonElement>, codec: Codec<T>, lister: FileToIdConverter)
     constructor(registries: HolderLookup$Provider, codec: Codec<T>, registryKey: ResourceKey<T[]>)

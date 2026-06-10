@@ -6,7 +6,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class BlockConnectionProvider extends Object implements Provider {
     constructor()
     clearStorage(arg0: UserConnection): void;
-    forUser(arg0: UserConnection): (param0: number, param1: number, param2: number) => kotlin.Int;
+    forUser(arg0: UserConnection): (param0: number, param1: number, param2: number) => number;
     getBlockData(arg0: UserConnection, arg1: number, arg2: number, arg3: number): number;
     getWorldBlockData(arg0: UserConnection, arg1: number, arg2: number, arg3: number): number;
     modifiedBlock(arg0: UserConnection, arg1: BlockPosition): void;

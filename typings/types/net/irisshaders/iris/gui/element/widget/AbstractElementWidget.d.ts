@@ -24,7 +24,7 @@ export abstract class AbstractElementWidget<T extends OptionMenuElement> extends
     charTyped(event: CharacterEvent): boolean;
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getCurrentFocusPath(): ComponentPath;
-    getNarratables(): E[];
+    getNarratables(): NarratableEntry[];
     getRectangle(): ScreenRectangle;
     init(arg0: ShaderPackScreen, arg1: NavigationController): void;
     isActive(): boolean;

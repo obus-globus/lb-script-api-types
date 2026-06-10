@@ -13,7 +13,7 @@ import type { Dialog } from '../../../../../net/minecraft/server/dialog/Dialog.d
 export class ClientboundShowDialogPacket extends Record implements Packet<ClientCommonPacketListener> {
     static CONTEXT_FREE_STREAM_CODEC: StreamCodec<ByteBuf, ClientboundShowDialogPacket>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundShowDialogPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(dialog: Holder<Dialog>)
     // private dialog: Holder<Dialog>;
     dialog(): Holder<Dialog>;

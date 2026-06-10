@@ -6,7 +6,7 @@ import type { TelemetryEventLog } from '../../../../net/minecraft/client/telemet
 import type { TelemetryEventLogger } from '../../../../net/minecraft/client/telemetry/TelemetryEventLogger.d.ts'
 import type { EventLogDirectory } from '../../../../net/minecraft/util/eventlog/EventLogDirectory.d.ts'
 export class TelemetryLogManager extends Object implements AutoCloseable {
-    static open(paramroot: Path[][]): CompletableFuture<Object>;
+    static open(paramroot: Path[][]): CompletableFuture<Optional<TelemetryLogManager>>;
     private constructor(directory: EventLogDirectory)
     // private directory: EventLogDirectory;
     // private sessionLog: CompletableFuture<Optional<TelemetryEventLog>>;

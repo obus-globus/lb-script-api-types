@@ -7,6 +7,7 @@ import type { EnvironmentAttributeLayer$Positional } from '../../../../net/minec
 import type { EnvironmentAttributeLayer$TimeBased } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeLayer$TimeBased.d.ts'
 import type { EnvironmentAttributeMap } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeMap.d.ts'
 import type { EnvironmentAttributeSystem } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeSystem.d.ts'
+import type { SpatialAttributeInterpolator } from '../../../../net/minecraft/world/attribute/SpatialAttributeInterpolator.d.ts'
 import type { ClockManager } from '../../../../net/minecraft/world/clock/ClockManager.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -14,14 +15,14 @@ import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline
 export class EnvironmentAttributeSystem$Builder extends Object {
     private constructor()
     // private layersByAttribute: Map<EnvironmentAttribute<Object>, EnvironmentAttributeLayer<Object>[]>;
-    // private addConstantEntry(attribute: EnvironmentAttribute<Value>, attributeMap: EnvironmentAttributeMap): EnvironmentAttributeSystem$Builder;
-    addConstantLayer(attribute: EnvironmentAttribute<Value>, layer: (param0: Value) => unknown): EnvironmentAttributeSystem$Builder;
+    // private addConstantEntry<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, attributeMap: EnvironmentAttributeMap): EnvironmentAttributeSystem$Builder;
+    addConstantLayer<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, layer: (param0: Value) => Value): EnvironmentAttributeSystem$Builder;
     addConstantLayer(attributeMap: EnvironmentAttributeMap): EnvironmentAttributeSystem$Builder;
     addDefaultLayers(level: Level): EnvironmentAttributeSystem$Builder;
-    // private addLayer(attribute: EnvironmentAttribute<Value>, layer: EnvironmentAttributeLayer<Value>): EnvironmentAttributeSystem$Builder;
-    addPositionalLayer(attribute: EnvironmentAttribute<Value>, layer: (param0: Value, param1: Object | null, param2: Vec3) => unknown): EnvironmentAttributeSystem$Builder;
-    addTimeBasedLayer(attribute: EnvironmentAttribute<Value>, layer: (param0: Value, param1: Object | null) => unknown): EnvironmentAttributeSystem$Builder;
+    // private addLayer<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, layer: EnvironmentAttributeLayer<Value>): EnvironmentAttributeSystem$Builder;
+    addPositionalLayer<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, layer: (param0: Value, param1: Vec3, param2: SpatialAttributeInterpolator) => Value): EnvironmentAttributeSystem$Builder;
+    addTimeBasedLayer<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, layer: (param0: Value, param1: number) => Value): EnvironmentAttributeSystem$Builder;
     addTimelineLayer(timeline: Holder<Timeline>, clockManager: ClockManager): EnvironmentAttributeSystem$Builder;
-    // private addTimelineLayerForAttribute(timeline: Holder<Timeline>, attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): void;
+    // private addTimelineLayerForAttribute<Value extends Object | number | string | boolean>(timeline: Holder<Timeline>, attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): void;
     build(): EnvironmentAttributeSystem;
 }

@@ -15,19 +15,20 @@ import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/clie
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { CycleButton$ValueListSupplier } from '../../../net/minecraft/client/gui/components/CycleButton$ValueListSupplier.d.ts'
+import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 export class OptionInstance$ClampingLazyMaxIntRange extends Record implements OptionInstance$IntRangeBase, OptionInstance$SliderableOrCyclableValueSet<number> {
     // private encodableMaxInclusive: number;
-    // private maxSupplier: () => kotlin.Int;
+    // private maxSupplier: () => number;
     // private minInclusive: number;
     codec(): Codec<number>;
-    createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
+    createButton(tooltip: (param0: number) => Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: number) => void): (param0: OptionInstance<number>) => AbstractWidget;
     createCycleButton(): boolean;
     encodableMaxInclusive(): number;
     equals(o: Object | null): boolean;
     fromSliderValue(slider: number): number;
     hashCode(): number;
     maxInclusive(): number;
-    maxSupplier(): () => kotlin.Int;
+    maxSupplier(): () => number;
     minInclusive(): number;
     next(current: number): Optional<number>;
     previous(current: number): Optional<number>;
@@ -35,5 +36,5 @@ export class OptionInstance$ClampingLazyMaxIntRange extends Record implements Op
     toString(): string;
     validateValue(value: number): Optional<number>;
     valueListSupplier(): CycleButton$ValueListSupplier<number>;
-    xmap(to: (param0: R) => unknown, from: (param0: R) => kotlin.Int, discrete: boolean): OptionInstance$SliderableValueSet<R>;
+    xmap<R extends Object | number | string | boolean>(to: (param0: number) => R, from: (param0: R) => number, discrete: boolean): OptionInstance$SliderableValueSet<R>;
 }

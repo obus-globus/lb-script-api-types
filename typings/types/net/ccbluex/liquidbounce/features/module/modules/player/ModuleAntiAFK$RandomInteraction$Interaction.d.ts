@@ -12,7 +12,7 @@ export class ModuleAntiAFK$RandomInteraction$Interaction extends Enum<ModuleAnti
     static SWING_HAND: ModuleAntiAFK$RandomInteraction$Interaction;
     static YAW: ModuleAntiAFK$RandomInteraction$Interaction;
     static getEntries(): ModuleAntiAFK$RandomInteraction$Interaction[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAntiAFK$RandomInteraction$Interaction;

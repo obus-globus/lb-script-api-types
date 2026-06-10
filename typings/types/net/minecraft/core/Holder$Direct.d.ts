@@ -23,7 +23,7 @@ export class Holder$Direct<T extends Object | number | string | boolean> extends
     equals(o: Object | null): boolean;
     getRegisteredName(): string;
     hashCode(): number;
-    is(predicate: (param0: ResourceKey<T>) => kotlin.Boolean): boolean;
+    is(predicate: (param0: ResourceKey<T>) => boolean): boolean;
     is(holder: Holder<T>): boolean;
     is(key: Identifier): boolean;
     is(key: ResourceKey<T>): boolean;

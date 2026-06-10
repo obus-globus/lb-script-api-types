@@ -7,9 +7,10 @@ import type { Shape } from '../../../../../com/oracle/truffle/api/object/Shape.d
 import type { ShapeImpl } from '../../../../../com/oracle/truffle/api/object/ShapeImpl.d.ts'
 import type { ShapeImpl$BaseAllocator } from '../../../../../com/oracle/truffle/api/object/ShapeImpl$BaseAllocator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Pair } from '../../../../../org/graalvm/collections/Pair.d.ts'
 export class ObsolescenceStrategy extends ExtLayoutStrategy {
     static diffToString(paramoldShape: Shape, paramnewShape: Shape): string;
-    static findPropertyDifferences(paramoldShape: Shape, paramnewShape: Shape): Map<Object, Object | null>;
+    static findPropertyDifferences(paramoldShape: Shape, paramnewShape: Shape): Map<Object, Pair<Property, Property>>;
     private constructor()
     // private checkForObsoleteShapeAndMigrate(store: DynamicObject): boolean;
     createAllocator(layout: LayoutImpl): ShapeImpl$BaseAllocator;

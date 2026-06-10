@@ -23,8 +23,8 @@ export class MapMessage<M extends MapMessage<M, V>, V extends Object | number | 
     clear(): void;
     containsKey(key: string): boolean;
     equals(o: Object | null): boolean;
-    forEach(action: (param0: string, param1: CV) => void): void;
-    forEach<S extends Object | number | string | boolean>(action: TriConsumer<string, CV, S>, state: S): void;
+    forEach<CV extends Object | number | string | boolean>(action: (param0: string, param1: CV) => void): void;
+    forEach<CV extends Object | number | string | boolean, S extends Object | number | string | boolean>(action: TriConsumer<string, CV, S>, state: S): void;
     // private format(format: MapMessage$MapFormat, sb: StringBuilder): StringBuilder;
     formatTo(buffer: StringBuilder): void;
     formatTo(formats: string[], buffer: StringBuilder): void;

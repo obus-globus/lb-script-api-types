@@ -14,7 +14,7 @@ export class SwitchGrid$Builder extends Object {
     // private rowSpacing: number;
     // private switchBuilders: SwitchGrid$SwitchBuilder[];
     // private width: number;
-    addSwitch(label: Component, stateSupplier: () => kotlin.Boolean, onClicked: (param0: boolean) => void): SwitchGrid$SwitchBuilder;
+    addSwitch(label: Component, stateSupplier: () => boolean, onClicked: (param0: boolean) => void): SwitchGrid$SwitchBuilder;
     build(): SwitchGrid;
     // private increaseRow(): void;
     withInfoUnderneath(maxRows: number, alwaysMaxHeight: boolean): SwitchGrid$Builder;

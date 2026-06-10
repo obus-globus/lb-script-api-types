@@ -30,7 +30,7 @@ export class PolyglotInternalBuiltins$PolyglotInternal extends Enum<PolyglotInte
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): PolyglotInternalBuiltins$PolyglotInternal;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

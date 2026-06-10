@@ -16,7 +16,7 @@ export class BooleanPrototypeBuiltins$BooleanPrototype extends Enum<BooleanProto
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): BooleanPrototypeBuiltins$BooleanPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

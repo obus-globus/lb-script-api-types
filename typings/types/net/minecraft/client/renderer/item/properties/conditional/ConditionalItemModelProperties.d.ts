@@ -4,7 +4,7 @@ import type { ConditionalItemModelProperty } from '../../../../../../../net/mine
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ExtraCodecs$LateBoundIdMapper } from '../../../../../../../net/minecraft/util/ExtraCodecs$LateBoundIdMapper.d.ts'
 export class ConditionalItemModelProperties extends Object {
-    static ID_MAPPER: ExtraCodecs$LateBoundIdMapper<Identifier, Object>;
+    static ID_MAPPER: ExtraCodecs$LateBoundIdMapper<Identifier, MapCodec<ConditionalItemModelProperty>>;
     static MAP_CODEC: MapCodec<ConditionalItemModelProperty>;
     static bootstrap(): void;
     constructor()

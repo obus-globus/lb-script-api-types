@@ -11,8 +11,6 @@ export class InsertNode extends SimpleStylingNode {
     // private value: TextNode;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     isDynamicNoChildren(): boolean;
     style(arg0: ParserContext): Style;
     toString(): string;

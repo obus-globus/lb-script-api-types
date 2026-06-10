@@ -10,7 +10,7 @@ export class WeightedPicker<T extends Object | number | string | boolean> extend
     add(arg0: T, arg1: number): void;
     getCurrentWeightTotal(): number;
     getEntryCount(): number;
-    map(arg0: (param0: T) => U): WeightedPicker<U>;
+    map<U extends Object | number | string | boolean>(arg0: (param0: T) => U): WeightedPicker<U>;
     pickFromNoise(arg0: ImprovedNoise, arg1: number, arg2: number, arg3: number): T;
     search(arg0: number): WeightedPicker$WeightedEntry<T>;
 }

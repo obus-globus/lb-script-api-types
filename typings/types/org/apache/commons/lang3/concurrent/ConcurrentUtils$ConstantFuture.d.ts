@@ -12,6 +12,6 @@ export class ConcurrentUtils$ConstantFuture<T extends Object | number | string |
     get(arg0: number, arg1: TimeUnit): T;
     isCancelled(): boolean;
     isDone(): boolean;
-    resultNow<V extends Object | number | string | boolean>(): V;
+    resultNow(): T;
     state(): Future$State;
 }

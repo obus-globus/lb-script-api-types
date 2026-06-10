@@ -14,7 +14,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ObjectLiteralNode$ComputedObjectLiteralDataMemberNode extends ObjectLiteralNode$ClassElementNode {
     static EMPTY: (Object | null)[];
-    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: (Object | null)[]): (Object | null)[];
+    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: Class<Tag>[]): (Object | null)[];
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: JavaScriptNode, isStatic: boolean, attributes: number, valueNode: JavaScriptNode, isField: boolean, isAnonymousFunctionDefinition: boolean)

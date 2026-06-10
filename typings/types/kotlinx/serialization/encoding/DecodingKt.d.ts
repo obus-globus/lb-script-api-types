@@ -4,5 +4,5 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 export class DecodingKt extends Object {
     static decodeIfNullable(paramarg0: Decoder, paramarg1: DeserializationStrategy<Object>, paramarg2: () => Object | null): Object | null;
-    static decodeStructure(paramarg0: Decoder, paramarg1: SerialDescriptor, paramarg2: (param0: Object | null) => Object | null): Object | null;
+    static decodeStructure(paramarg0: Decoder, paramarg1: SerialDescriptor, paramarg2: (param0: Object) => Object | null): Object | null;
 }

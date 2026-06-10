@@ -7,6 +7,6 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LevitationTrigger extends SimpleCriterionTrigger<LevitationTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<LevitationTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: LevitationTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: LevitationTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, start: Vec3, duration: number): void;
 }

@@ -13,8 +13,8 @@ export class BiomeModificationImpl extends Object {
     private constructor()
     // private modifiers: BiomeModificationImpl$ModifierRecord[];
     // private modifiersUnsorted: boolean;
-    addModifier(arg0: Identifier, arg1: ModificationPhase, arg2: (param0: BiomeSelectionContext) => kotlin.Boolean, arg3: (param0: BiomeSelectionContext, param1: BiomeModificationContext) => void): void;
-    addModifier(arg0: Identifier, arg1: ModificationPhase, arg2: (param0: BiomeSelectionContext) => kotlin.Boolean, arg3: (param0: BiomeModificationContext) => void): void;
+    addModifier(arg0: Identifier, arg1: ModificationPhase, arg2: (param0: BiomeSelectionContext) => boolean, arg3: (param0: BiomeSelectionContext, param1: BiomeModificationContext) => void): void;
+    addModifier(arg0: Identifier, arg1: ModificationPhase, arg2: (param0: BiomeSelectionContext) => boolean, arg3: (param0: BiomeModificationContext) => void): void;
     changeOrder(arg0: Identifier, arg1: number): void;
     clearModifiers(): void;
     finalizeWorldGen(arg0: RegistryAccess): void;

@@ -10,7 +10,7 @@ export class ResourceOrTagArgument$TagResult<T extends Object | number | string 
     private constructor(tag: T[])
     // private tag: T[];
     asPrintable(): string;
-    cast(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagArgument$Result<E>>;
+    cast<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagArgument$Result<E>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     tag(): T[];

@@ -9,6 +9,7 @@ import type { TypeAliasDescriptor } from '../../../../../../../kotlin/reflect/jv
 import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { DeclarationDescriptorNonRootImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/DeclarationDescriptorNonRootImpl.d.ts'
+import type { TypeAliasConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/TypeAliasConstructorDescriptor.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { NotNullLazyValue } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/NotNullLazyValue.d.ts'
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
@@ -28,7 +29,7 @@ export abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
     getModality(): Modality;
     getOriginal(): TypeAliasDescriptor;
     getStorageManager(): StorageManager;
-    getTypeAliasConstructors(): E[];
+    getTypeAliasConstructors(): TypeAliasConstructorDescriptor[];
     getTypeConstructor(): TypeConstructor;
     getTypeConstructorTypeParameters(): TypeParameterDescriptor[];
     getVisibility(): DescriptorVisibility;

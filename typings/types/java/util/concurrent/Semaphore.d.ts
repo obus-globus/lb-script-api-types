@@ -1,4 +1,5 @@
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
+import type { Thread } from '../../../java/lang/Thread.d.ts'
 import type { Semaphore$Sync } from '../../../java/util/concurrent/Semaphore$Sync.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -13,7 +14,7 @@ export class Semaphore extends Object implements Serializable {
     availablePermits(): number;
     drainPermits(): number;
     getQueueLength(): number;
-    getQueuedThreads(): E[];
+    getQueuedThreads(): Thread[];
     hasQueuedThreads(): boolean;
     isFair(): boolean;
     reducePermits(arg0: number): void;

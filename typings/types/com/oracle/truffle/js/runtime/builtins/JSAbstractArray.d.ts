@@ -14,9 +14,9 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export abstract class JSAbstractArray extends JSNonProxy {
     static ARRAY_PROTOTYPE_NO_ELEMENTS_INVALIDATION: string;
-    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => kotlin.Boolean;
-    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => kotlin.Boolean;
-    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => kotlin.Boolean;
+    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => boolean;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static LAZY_REGEX_ORIGINAL_INPUT_ID: HiddenKey;
     static LAZY_REGEX_RESULT_ID: HiddenKey;

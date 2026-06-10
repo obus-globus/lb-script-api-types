@@ -13,7 +13,7 @@ export class BlockApiCacheImpl<A extends Object | number | string | boolean, C e
     constructor(arg0: BlockApiLookupImpl<A, C>, arg1: ServerLevel, arg2: BlockPos)
     // private blockEntityCacheValid: boolean;
     // private cachedBlockEntity: BlockEntity;
-    // private cachedProvider: (param0: A, param1: C, param2: Level, param3: BlockPos, param4: BlockState) => unknown;
+    // private cachedProvider: (param0: Level, param1: BlockPos, param2: BlockState, param3: BlockEntity, param4: C) => A;
     // private lastState: BlockState;
     readonly level: ServerLevel;
     readonly lookup: BlockApiLookupImpl<A, C>;

@@ -15,7 +15,7 @@ export class FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$Fu
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

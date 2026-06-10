@@ -11,13 +11,15 @@ import type { CycleButton$OnValueChange } from '../../../../../net/minecraft/cli
 import type { CycleButton$SpriteSupplier } from '../../../../../net/minecraft/client/gui/components/CycleButton$SpriteSupplier.d.ts'
 import type { CycleButton$ValueListSupplier } from '../../../../../net/minecraft/client/gui/components/CycleButton$ValueListSupplier.d.ts'
 import type { ResettableOptionWidget } from '../../../../../net/minecraft/client/gui/components/ResettableOptionWidget.d.ts'
+import type { Tooltip } from '../../../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 import type { NarrationElementOutput } from '../../../../../net/minecraft/client/gui/narration/NarrationElementOutput.d.ts'
 import type { InputWithModifiers } from '../../../../../net/minecraft/client/input/InputWithModifiers.d.ts'
 import type { SoundManager } from '../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
+import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class CycleButton<T extends Object | number | string | boolean> extends AbstractButton implements ResettableOptionWidget {
-    static DEFAULT_ALT_LIST_SELECTOR: () => kotlin.Boolean;
+    static DEFAULT_ALT_LIST_SELECTOR: () => boolean;
     static booleanBuilder(paramtrueText: Component, paramfalseText: Component, paramdefaultValue: boolean): CycleButton$Builder<boolean>;
     static builder(paramvalueStringifier: (param0: Object | null) => Component, paramdefaultValue: Object | null): CycleButton$Builder<Object>;
     static builder(paramvalueStringifier: (param0: Object | null) => Component, paramdefaultValueSupplier: () => Object | null): CycleButton$Builder<Object>;
@@ -25,15 +27,15 @@ export class CycleButton<T extends Object | number | string | boolean> extends A
     static onOffBuilder(paraminitialValue: boolean): CycleButton$Builder<boolean>;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    private constructor(x: number, y: number, width: number, height: number, message: Component, name: Component, index: number, value: T, defaultValueSupplier: () => T, values: CycleButton$ValueListSupplier<T>, valueStringifier: (param0: T) => Component, narrationProvider: (param0: CycleButton<T>) => MutableComponent, onValueChange: (param0: T, param1: CycleButton<Object>) => void, tooltipSupplier: (param0: T) => net.minecraft.client.gui.components.Tooltip, displayState: CycleButton$DisplayState, spriteSupplier: (param0: T, param1: CycleButton<Object>) => net.minecraft.resources.Identifier)
+    private constructor(x: number, y: number, width: number, height: number, message: Component, name: Component, index: number, value: T, defaultValueSupplier: () => T, values: CycleButton$ValueListSupplier<T>, valueStringifier: (param0: T) => Component, narrationProvider: (param0: CycleButton<T>) => MutableComponent, onValueChange: (param0: CycleButton<T>, param1: T) => void, tooltipSupplier: (param0: T) => Tooltip, displayState: CycleButton$DisplayState, spriteSupplier: (param0: CycleButton<T>, param1: T) => Identifier)
     // private defaultValueSupplier: () => T;
     // private displayState: CycleButton$DisplayState;
     // private index: number;
     // private name: Component;
     // private narrationProvider: (param0: CycleButton<T>) => MutableComponent;
-    // private onValueChange: (param0: T, param1: CycleButton<Object>) => void;
-    // private spriteSupplier: (param0: T, param1: CycleButton<Object>) => net.minecraft.resources.Identifier;
-    // private tooltipSupplier: (param0: T) => net.minecraft.client.gui.components.Tooltip;
+    // private onValueChange: (param0: CycleButton<T>, param1: T) => void;
+    // private spriteSupplier: (param0: CycleButton<T>, param1: T) => Identifier;
+    // private tooltipSupplier: (param0: T) => Tooltip;
     readonly value: T;
     // private valueStringifier: (param0: T) => Component;
     // private values: CycleButton$ValueListSupplier<T>;

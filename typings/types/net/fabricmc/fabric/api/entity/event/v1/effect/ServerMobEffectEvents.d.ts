@@ -12,8 +12,8 @@ import type { LivingEntity } from '../../../../../../../../net/minecraft/world/e
 export class ServerMobEffectEvents extends Object {
     static AFTER_ADD: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => void>;
     static AFTER_REMOVE: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => void>;
-    static ALLOW_ADD: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => kotlin.Boolean>;
-    static ALLOW_EARLY_REMOVE: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => kotlin.Boolean>;
+    static ALLOW_ADD: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => boolean>;
+    static ALLOW_EARLY_REMOVE: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => boolean>;
     static BEFORE_ADD: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => void>;
     static BEFORE_REMOVE: Event<(param0: MobEffectInstance, param1: LivingEntity, param2: EffectEventContext) => void>;
     private constructor()

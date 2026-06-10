@@ -12,7 +12,7 @@ export class LinesIterator extends Object implements Iterator<string> {
     // private state: number;
     // private string: CharSequence;
     // private tokenStartIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
 }

@@ -7,12 +7,11 @@ import type { SimpleNotation } from '../../../../com/ibm/icu/number/SimpleNotati
 import type { CompactDecimalFormat$CompactStyle } from '../../../../com/ibm/icu/text/CompactDecimalFormat$CompactStyle.d.ts'
 import type { PluralRules } from '../../../../com/ibm/icu/text/PluralRules.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CompactNotation extends Notation {
     static compactLong(): CompactNotation;
     static compactShort(): CompactNotation;
     static engineering(): ScientificNotation;
-    static forCustomData(paramarg0: { [key: string]: Object | null }): CompactNotation;
+    static forCustomData(paramarg0: { [key: string]: { [key: string]: string } }): CompactNotation;
     static scientific(): ScientificNotation;
     static simple(): SimpleNotation;
     constructor(arg0: CompactDecimalFormat$CompactStyle)

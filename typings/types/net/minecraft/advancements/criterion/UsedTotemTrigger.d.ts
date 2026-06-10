@@ -7,6 +7,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class UsedTotemTrigger extends SimpleCriterionTrigger<UsedTotemTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<UsedTotemTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: UsedTotemTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: UsedTotemTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, itemStack: ItemStack): void;
 }

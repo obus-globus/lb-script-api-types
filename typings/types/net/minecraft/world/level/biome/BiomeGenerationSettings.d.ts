@@ -8,11 +8,11 @@ import type { PlacedFeature } from '../../../../../net/minecraft/world/level/lev
 export class BiomeGenerationSettings extends Object {
     static CODEC: MapCodec<BiomeGenerationSettings>;
     static EMPTY: BiomeGenerationSettings;
-    private constructor(carvers: Holder<T>[], features: Holder<T>[][])
+    private constructor(carvers: Holder<ConfiguredWorldCarver<Object>>[], features: Holder<PlacedFeature>[][])
     boneMealFeatures: () => ConfiguredFeature<Object, Object>[];
-    carvers: Holder<T>[];
+    carvers: Holder<ConfiguredWorldCarver<Object>>[];
     featureSet: () => PlacedFeature[];
-    features: Holder<T>[][];
+    features: Holder<PlacedFeature>[][];
     getBoneMealFeatures(): ConfiguredFeature<Object, Object>[];
     getCarvers(): Holder<ConfiguredWorldCarver<Object>>[];
     hasFeature(feature: PlacedFeature): boolean;

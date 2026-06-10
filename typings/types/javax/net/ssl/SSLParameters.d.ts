@@ -1,4 +1,5 @@
 import type { AlgorithmConstraints } from '../../../java/security/AlgorithmConstraints.d.ts'
+import type { SNIMatcher } from '../../../javax/net/ssl/SNIMatcher.d.ts'
 import type { SNIServerName } from '../../../javax/net/ssl/SNIServerName.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class SSLParameters extends Object {
@@ -16,7 +17,7 @@ export class SSLParameters extends Object {
     // private preferLocalCipherSuites: boolean;
     readonly protocols: string[];
     readonly signatureSchemes: string[];
-    // private sniMatchers: E[];
+    // private sniMatchers: SNIMatcher[];
     // private sniNames: SNIServerName[];
     readonly wantClientAuth: boolean;
     getAlgorithmConstraints(): AlgorithmConstraints;
@@ -28,7 +29,7 @@ export class SSLParameters extends Object {
     getNamedGroups(): string[];
     getNeedClientAuth(): boolean;
     getProtocols(): string[];
-    getSNIMatchers(): E[];
+    getSNIMatchers(): SNIMatcher[];
     getServerNames(): SNIServerName[];
     getSignatureSchemes(): string[];
     getUseCipherSuitesOrder(): boolean;
@@ -42,7 +43,7 @@ export class SSLParameters extends Object {
     setNamedGroups(arg0: string[]): void;
     setNeedClientAuth(arg0: boolean): void;
     setProtocols(arg0: string[]): void;
-    setSNIMatchers(arg0: E[]): void;
+    setSNIMatchers(arg0: SNIMatcher[]): void;
     setServerNames(arg0: SNIServerName[]): void;
     setSignatureSchemes(arg0: string[]): void;
     setUseCipherSuitesOrder(arg0: boolean): void;

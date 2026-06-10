@@ -13,10 +13,10 @@ import type { VisitOrder } from '../../../../../../../net/fabricmc/loader/impl/l
 export class MemoryMappingTree$ClassEntry extends MemoryMappingTree$Entry<MemoryMappingTree$ClassEntry> implements MappingTree$ClassMapping {
     constructor(arg0: MemoryMappingTree, arg1: string)
     readonly fields: Map<MemoryMappingTree$MemberKey, MemoryMappingTree$FieldEntry>;
-    // private fieldsView: E[];
+    // private fieldsView: MemoryMappingTree$FieldEntry[];
     // private flags: number;
     readonly methods: Map<MemoryMappingTree$MemberKey, MemoryMappingTree$MethodEntry>;
-    // private methodsView: E[];
+    // private methodsView: MemoryMappingTree$MethodEntry[];
     accept(arg0: MappingVisitor, arg1: VisitOrder, arg2: boolean, arg3: boolean): void;
     addFieldInternal(arg0: MappingTree$FieldMapping): MemoryMappingTree$FieldEntry;
     // private addMember<T extends MemoryMappingTree$MemberEntry<T>>(arg0: T, arg1: Map<MemoryMappingTree$MemberKey, T>, arg2: number, arg3: number): T;
@@ -25,12 +25,12 @@ export class MemoryMappingTree$ClassEntry extends MemoryMappingTree$Entry<Memory
     getField(arg0: string, arg1: string, arg2: number): MappingTree$FieldMapping;
     getField(arg0: string, arg1: string): MemoryMappingTree$FieldEntry;
     getField(arg0: string, arg1: string, arg2: number): MemoryMappingTree$FieldEntry;
-    getFields(): E[];
+    getFields(): MemoryMappingTree$FieldEntry[];
     getKind(): MappedElementKind;
     getMethod(arg0: string, arg1: string, arg2: number): MappingTree$MethodMapping;
     getMethod(arg0: string, arg1: string): MemoryMappingTree$MethodEntry;
     getMethod(arg0: string, arg1: string, arg2: number): MemoryMappingTree$MethodEntry;
-    getMethods(): E[];
+    getMethods(): MemoryMappingTree$MethodEntry[];
     getTree(): MemoryMappingTree;
     setDstNameInternal(arg0: string, arg1: number): void;
     toString(): string;

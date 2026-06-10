@@ -17,7 +17,7 @@ export abstract class CollectSpliterators$FlatMapSpliteratorOfPrimitive<InElemen
     constructor(prefix: OutSpliteratorT, from: Spliterator<InElementT>, function_: (param0: InElementT) => OutSpliteratorT, factory: CollectSpliterators$FlatMapSpliterator$Factory<InElementT, OutSpliteratorT>, characteristics: number, estimatedSize: number)
     forEachRemaining(action: OutConsumerT): void;
     forEachRemaining(action: (param0: OutElementT) => void): void;
-    forEachRemaining<T_CONS extends Object | number | string | boolean>(arg0: T_CONS): void;
+    forEachRemaining(arg0: OutConsumerT): void;
     tryAdvance(action: OutConsumerT): boolean;
     tryAdvance(action: (param0: OutElementT) => void): boolean;
 }

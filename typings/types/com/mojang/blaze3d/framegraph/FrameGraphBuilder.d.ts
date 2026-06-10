@@ -14,9 +14,9 @@ export class FrameGraphBuilder extends Object {
     // private internalResources: FrameGraphBuilder$InternalVirtualResource<Object>[];
     // private passes: FrameGraphBuilder$Pass[];
     addPass(name: string): FramePass;
-    // private assignResourceLifetimes(passesInOrder: E[]): void;
-    createInternal(name: string, descriptor: ResourceDescriptor<T>): ResourceHandle<T>;
-    // private createInternalResource(name: string, descriptor: ResourceDescriptor<T>, createdBy: FrameGraphBuilder$Pass): FrameGraphBuilder$InternalVirtualResource<T>;
+    // private assignResourceLifetimes(passesInOrder: FrameGraphBuilder$Pass[]): void;
+    createInternal<T extends Object | number | string | boolean>(name: string, descriptor: ResourceDescriptor<T>): ResourceHandle<T>;
+    // private createInternalResource<T extends Object | number | string | boolean>(name: string, descriptor: ResourceDescriptor<T>, createdBy: FrameGraphBuilder$Pass): FrameGraphBuilder$InternalVirtualResource<T>;
     // private discoverAllRequiredPasses(sourcePass: FrameGraphBuilder$Pass, visited: BitSet, passesToTrace: FrameGraphBuilder$Pass[]): void;
     execute(resourceAllocator: GraphicsResourceAllocator): void;
     execute(resourceAllocator: GraphicsResourceAllocator, inspector: FrameGraphBuilder$Inspector): void;

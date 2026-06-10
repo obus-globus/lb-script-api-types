@@ -24,8 +24,8 @@ export class Nullish extends JSDynamicObject {
     static setJSClass(paramobj: JSDynamicObject, paramjsclass: JSClass): void;
     static setObjectFlags(paramobj: JSDynamicObject, paramflags: number): void;
     static setPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramflags: number): void;
-    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => kotlin.Boolean): boolean;
-    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => kotlin.Int): boolean;
+    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => boolean): boolean;
+    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
     constructor()
     defaultToString(): TruffleString;
     defineOwnProperty(key: Object, desc: PropertyDescriptor, doThrow: boolean): boolean;

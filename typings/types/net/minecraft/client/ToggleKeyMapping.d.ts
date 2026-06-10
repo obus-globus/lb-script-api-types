@@ -15,9 +15,9 @@ export class ToggleKeyMapping extends KeyMapping {
     static restoreToggleStatesOnScreenClosed(): void;
     static set(paramkey: InputConstants$Key, paramstate: boolean): void;
     static setAll(): void;
-    constructor(name: string, type: InputConstants$Type, value: number, category: KeyMapping$Category, needsToggle: () => kotlin.Boolean, shouldRestore: boolean)
-    constructor(name: string, value: number, category: KeyMapping$Category, needsToggle: () => kotlin.Boolean, shouldRestore: boolean)
-    // private needsToggle: () => kotlin.Boolean;
+    constructor(name: string, type: InputConstants$Type, value: number, category: KeyMapping$Category, needsToggle: () => boolean, shouldRestore: boolean)
+    constructor(name: string, value: number, category: KeyMapping$Category, needsToggle: () => boolean, shouldRestore: boolean)
+    // private needsToggle: () => boolean;
     // private releasedByScreenWhenDown: boolean;
     // private shouldRestore: boolean;
     release(): void;

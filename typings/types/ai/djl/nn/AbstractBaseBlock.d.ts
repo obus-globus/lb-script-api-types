@@ -22,14 +22,14 @@ export abstract class AbstractBaseBlock extends Object implements Block {
     beforeInitialize(arg0: Shape[]): void;
     cast(arg0: DataType): void;
     clear(): void;
-    describeInput(): Pair<K, V>[];
-    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
+    describeInput(): Pair<string, Shape>[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
-    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
-    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
-    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     freezeParameters(arg0: boolean): void;
-    freezeParameters(arg0: boolean, arg1: (param0: Parameter) => kotlin.Boolean): void;
+    freezeParameters(arg0: boolean, arg1: (param0: Parameter) => boolean): void;
     getCustomMetadata(): { [key: string]: string };
     getInputShapes(): Shape[];
     getOutputDataTypes(): DataType[];
@@ -46,7 +46,7 @@ export abstract class AbstractBaseBlock extends Object implements Block {
     saveMetadata(arg0: DataOutputStream): void;
     saveParameters(arg0: DataOutputStream): void;
     setInitializer(arg0: Initializer, arg1: Parameter$Type): void;
-    setInitializer(arg0: Initializer, arg1: (param0: Parameter) => kotlin.Boolean): void;
+    setInitializer(arg0: Initializer, arg1: (param0: Parameter) => boolean): void;
     setInitializer(arg0: Initializer, arg1: string): void;
     toString(): string;
 }

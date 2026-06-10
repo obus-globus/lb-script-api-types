@@ -13,7 +13,7 @@ export abstract class Team extends Object {
     getFormattedName(teamMemberName: Component): MutableComponent;
     getName(): string;
     getNameTagVisibility(): Team$Visibility;
-    getPlayers(): E[];
+    getPlayers(): string[];
     isAlliedTo(other: Team): boolean;
     isAllowFriendlyFire(): boolean;
 }

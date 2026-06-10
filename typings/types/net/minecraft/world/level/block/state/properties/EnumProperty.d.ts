@@ -9,7 +9,7 @@ export class EnumProperty<T extends Enum<T> & StringRepresentable> extends Prope
     static create(paramname: string, paramclazz: Class<Object>): EnumProperty<Object>;
     static create(paramname: string, paramclazz: Class<Object>, paramvalues: Object | null): EnumProperty<Object>;
     static create(paramname: string, paramclazz: Class<Object>, paramvalues: (Object | null)[]): EnumProperty<Object>;
-    static create(paramname: string, paramclazz: Class<Object>, paramfilter: (param0: Object | null) => kotlin.Boolean): EnumProperty<Object>;
+    static create(paramname: string, paramclazz: Class<Object>, paramfilter: (param0: Object | null) => boolean): EnumProperty<Object>;
     private constructor(name: string, clazz: Class<T>, values: T[])
     // private names: { [key: string]: T };
     // private ordinalToIndex: number[];

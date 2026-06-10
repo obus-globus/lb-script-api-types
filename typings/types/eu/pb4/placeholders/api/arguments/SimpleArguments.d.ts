@@ -11,6 +11,6 @@ export class SimpleArguments extends Object {
     static split(paramarg0: string, paramarg1: string): string[];
     static split(paramarg0: string, paramarg1: string, paramarg2: boolean, paramarg3: boolean): string[];
     static unwrap(paramarg0: string): string;
-    static unwrap(paramarg0: string, paramarg1: (param0: string) => kotlin.Boolean): string;
+    static unwrap(paramarg0: string, paramarg1: (param0: string) => boolean): string;
     constructor()
 }

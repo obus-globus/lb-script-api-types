@@ -44,7 +44,7 @@ export class RegistryDataRewriter extends Object implements RegistryDataRewriter
     updateEnchantmentTerm(arg0: Map$Entry<string, Tag>[]): void;
     updateEnchantments(arg0: UserConnection, arg1: RegistryEntry[]): void;
     // private updateItem(arg0: StringTag): void;
-    // private updateItemList(arg0: T[]): void;
+    // private updateItemList(arg0: StringTag[]): void;
     updateJukeboxSongs(arg0: RegistryEntry[]): void;
     // private updateNestedEffect(arg0: Map$Entry<string, Tag>[]): void;
     updateTextComponent(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: string): void;

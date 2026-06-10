@@ -3,8 +3,8 @@ import type { Predicate } from '../../../../com/google/common/base/Predicate.d.t
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Functions$PredicateFunction<T extends Object | number | string | boolean> extends Object implements Function<T, boolean>, Serializable {
-    private constructor(predicate: (param0: T) => kotlin.Boolean)
-    // private predicate: (param0: T) => kotlin.Boolean;
+    private constructor(predicate: (param0: Object) => boolean)
+    // private predicate: (param0: Object) => boolean;
     apply(t: T): boolean;
     equals(obj: Object | null): boolean;
     hashCode(): number;

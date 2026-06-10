@@ -8,7 +8,7 @@ export class CharMatcher$ForPredicate extends CharMatcher {
     static ascii(): CharMatcher;
     static breakingWhitespace(): CharMatcher;
     static digit(): CharMatcher;
-    static forPredicate(parampredicate: (param0: Object | null) => kotlin.Boolean): CharMatcher;
+    static forPredicate(parampredicate: (param0: Object) => boolean): CharMatcher;
     static inRange(paramstartInclusive: string, paramendInclusive: string): CharMatcher;
     static invisible(): CharMatcher;
     static is(parammatch: string): CharMatcher;
@@ -23,8 +23,8 @@ export class CharMatcher$ForPredicate extends CharMatcher {
     static noneOf(paramsequence: CharSequence): CharMatcher;
     static singleWidth(): CharMatcher;
     static whitespace(): CharMatcher;
-    constructor(predicate: (param0: string) => kotlin.Boolean)
-    // private predicate: (param0: string) => kotlin.Boolean;
+    constructor(predicate: (param0: Object) => boolean)
+    // private predicate: (param0: Object) => boolean;
     matches(c: string): boolean;
     toString(): string;
 }

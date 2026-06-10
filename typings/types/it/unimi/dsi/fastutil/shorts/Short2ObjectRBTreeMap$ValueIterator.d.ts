@@ -3,9 +3,9 @@ import type { Short2ObjectRBTreeMap$TreeIterator } from '../../../../../it/unimi
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ObjectRBTreeMap$ValueIterator extends Short2ObjectRBTreeMap$TreeIterator implements ObjectListIterator<V> {
     private constructor(null_: Short2ObjectRBTreeMap$ValueIterator)
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add<V extends Object | number | string | boolean>(arg0: V): void;
     next<V extends Object | number | string | boolean>(): V;
     previous<V extends Object | number | string | boolean>(): V;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<V extends Object | number | string | boolean>(arg0: V): void;
 }

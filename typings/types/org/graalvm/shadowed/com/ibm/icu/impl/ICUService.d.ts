@@ -29,8 +29,8 @@ export class ICUService extends ICUNotifier {
     getDisplayName(id: string, locale: ULocale): string;
     getDisplayNames(): { [key: string]: string };
     getDisplayNames(locale: ULocale): { [key: string]: string };
-    getDisplayNames(locale: ULocale, com: (param0: Object) => kotlin.Boolean): { [key: string]: string };
-    getDisplayNames(locale: ULocale, com: (param0: Object) => kotlin.Boolean, matchID: string): { [key: string]: string };
+    getDisplayNames(locale: ULocale, com: (param0: Object) => boolean): { [key: string]: string };
+    getDisplayNames(locale: ULocale, com: (param0: Object) => boolean, matchID: string): { [key: string]: string };
     getDisplayNames(locale: ULocale, matchID: string): { [key: string]: string };
     getKey(key: ICUService$Key): Object;
     getKey(key: ICUService$Key, actualReturn: string[]): Object;

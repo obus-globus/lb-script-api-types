@@ -8,6 +8,6 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class FallAfterExplosionTrigger extends SimpleCriterionTrigger<FallAfterExplosionTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<FallAfterExplosionTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: FallAfterExplosionTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: FallAfterExplosionTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, startPosition: Vec3, cause: Entity): void;
 }

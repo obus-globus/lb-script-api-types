@@ -31,7 +31,7 @@ export class TRegexBacktrackingNFAExecutorNode extends TRegexBacktrackerSubExecu
     static inputIncRaw(paramindex: number, paramoffset: number, paramforward: boolean): number;
     private constructor(copy: TRegexBacktrackingNFAExecutorNode)
     constructor(ast: RegexAST, nfa: PureNFA, numberOfStates: number, numberOfTransitions: number, subExecutors: TRegexExecutorBaseNode[], mustAdvance: boolean, compilationBuffer: CompilationBuffer)
-    // private equalsIgnoreCase: (param0: number, param1: number, param2: boolean) => kotlin.Boolean;
+    // private equalsIgnoreCase: (param0: number, param1: number, param2: boolean) => boolean;
     // private flags: number;
     // private indexOfNode: TruffleString$ByteIndexOfStringNode;
     // private innerLiteral: InnerLiteral;

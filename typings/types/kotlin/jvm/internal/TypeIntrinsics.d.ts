@@ -4,8 +4,8 @@ import type { Iterator } from '../../../java/util/Iterator.d.ts'
 import type { ListIterator } from '../../../java/util/ListIterator.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export class TypeIntrinsics extends Object {
-    static asMutableCollection(paramarg0: Object): E[];
-    static asMutableCollection(paramarg0: Object, paramarg1: string): E[];
+    static asMutableCollection(paramarg0: Object): (Object | null)[];
+    static asMutableCollection(paramarg0: Object, paramarg1: string): (Object | null)[];
     static asMutableIterable(paramarg0: Object): (Object | null)[];
     static asMutableIterable(paramarg0: Object, paramarg1: string): (Object | null)[];
     static asMutableIterator(paramarg0: Object): Iterator<Object>;
@@ -22,7 +22,7 @@ export class TypeIntrinsics extends Object {
     static asMutableSet(paramarg0: Object, paramarg1: string): (Object | null)[];
     static beforeCheckcastToFunctionOfArity(paramarg0: Object, paramarg1: number): Object;
     static beforeCheckcastToFunctionOfArity(paramarg0: Object, paramarg1: number, paramarg2: string): Object;
-    static castToCollection(paramarg0: Object): E[];
+    static castToCollection(paramarg0: Object): (Object | null)[];
     static castToIterable(paramarg0: Object): (Object | null)[];
     static castToIterator(paramarg0: Object): Iterator<Object>;
     static castToList(paramarg0: Object): (Object | null)[];

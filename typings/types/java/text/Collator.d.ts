@@ -7,6 +7,7 @@ import type { ToIntFunction } from '../../java/util/function/ToIntFunction.d.ts'
 import type { ToLongFunction } from '../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
+import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export abstract class Collator extends Object implements Comparator<Object>, Cloneable {
     static CANONICAL_DECOMPOSITION: number;
     static FULL_DECOMPOSITION: number;
@@ -15,18 +16,18 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     static PRIMARY: number;
     static SECONDARY: number;
     static TERTIARY: number;
-    static comparing(paramarg0: (param0: Object | null) => Object | null): (param0: Object | null) => kotlin.Boolean;
-    static comparing(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingDouble(paramarg0: (param0: Object | null) => kotlin.Double): (param0: Object | null) => kotlin.Boolean;
-    static comparingInt(paramarg0: (param0: Object | null) => kotlin.Int): (param0: Object | null) => kotlin.Boolean;
-    static comparingLong(paramarg0: (param0: Object | null) => kotlin.Long): (param0: Object | null) => kotlin.Boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
+    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
+    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
     static getAvailableLocales(): (Object | null)[];
     static getInstance(paramarg0: Locale): Collator;
     static getInstance(): Collator;
-    static naturalOrder(): (param0: Object | null) => kotlin.Boolean;
-    static nullsFirst(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static nullsLast(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static reverseOrder(): (param0: Object | null) => kotlin.Boolean;
+    static naturalOrder(): (param0: Object) => boolean;
+    static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static reverseOrder(): (param0: Object) => boolean;
     constructor()
     // private decmp: number;
     readonly strength: number;
@@ -40,13 +41,13 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     getDecomposition(): number;
     getStrength(): number;
     hashCode(): number;
-    reversed(): (param0: T) => kotlin.Boolean;
+    reversed(): (param0: Object) => boolean;
     setDecomposition(arg0: number): void;
     setStrength(arg0: number): void;
-    thenComparing(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => U): (param0: T) => kotlin.Boolean;
-    thenComparing(arg0: (param0: T) => U, arg1: (param0: U) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    thenComparingDouble(arg0: (param0: T) => kotlin.Double): (param0: T) => kotlin.Boolean;
-    thenComparingInt(arg0: (param0: T) => kotlin.Int): (param0: T) => kotlin.Boolean;
-    thenComparingLong(arg0: (param0: T) => kotlin.Long): (param0: T) => kotlin.Boolean;
+    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: Object) => U): (param0: Object) => boolean;
+    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: Object) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparingDouble(arg0: (param0: Object) => number): (param0: Object) => boolean;
+    thenComparingInt(arg0: (param0: Object) => number): (param0: Object) => boolean;
+    thenComparingLong(arg0: (param0: Object) => number): (param0: Object) => boolean;
 }

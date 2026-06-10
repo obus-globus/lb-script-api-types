@@ -7,5 +7,5 @@ export class TextureSlots$Resolver extends Object {
     // private entries: TextureSlots$Data[];
     addFirst(data: TextureSlots$Data): TextureSlots$Resolver;
     addLast(data: TextureSlots$Data): TextureSlots$Resolver;
-    resolve(debugNameProvider: () => kotlin.String): TextureSlots;
+    resolve(debugNameProvider: () => string): TextureSlots;
 }

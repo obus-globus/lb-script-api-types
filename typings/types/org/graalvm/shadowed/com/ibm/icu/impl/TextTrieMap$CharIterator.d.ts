@@ -9,7 +9,7 @@ export class TextTrieMap$CharIterator extends Object implements Iterator<string>
     // private _remainingChar: string;
     // private _startIdx: number;
     // private _text: CharSequence;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: string) => void): void;
     hasNext(): boolean;
     next(): string;
     nextIndex(): number;

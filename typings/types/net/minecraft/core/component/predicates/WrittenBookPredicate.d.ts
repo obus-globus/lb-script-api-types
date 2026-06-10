@@ -7,6 +7,9 @@ import type { MinMaxBounds$Ints } from '../../../../../net/minecraft/advancement
 import type { SingleComponentItemPredicate } from '../../../../../net/minecraft/advancements/criterion/SingleComponentItemPredicate.d.ts'
 import type { DataComponentGetter } from '../../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
 import type { DataComponentType } from '../../../../../net/minecraft/core/component/DataComponentType.d.ts'
+import type { DataComponentPredicate } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate.d.ts'
+import type { DataComponentPredicate$Single } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Single.d.ts'
+import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Type.d.ts'
 import type { WrittenBookPredicate$PagePredicate } from '../../../../../net/minecraft/core/component/predicates/WrittenBookPredicate$PagePredicate.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
@@ -14,10 +17,10 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { Filterable } from '../../../../../net/minecraft/server/network/Filterable.d.ts'
 import type { WrittenBookContent } from '../../../../../net/minecraft/world/item/component/WrittenBookContent.d.ts'
 export class WrittenBookPredicate extends Record implements SingleComponentItemPredicate<WrittenBookContent> {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
     static CODEC: Codec<WrittenBookPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
     constructor(pages: Optional<CollectionPredicate<Filterable<Component>, WrittenBookPredicate$PagePredicate>>, author: Optional<string>, title: Optional<string>, generation: MinMaxBounds$Ints, resolved: Optional<boolean>)
     // private author: Optional<string>;
     // private generation: MinMaxBounds$Ints;

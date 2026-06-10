@@ -8,7 +8,7 @@ import type { DensityFunction$ContextProvider } from '../../../../../net/minecra
 import type { DensityFunction$FunctionContext } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$FunctionContext.d.ts'
 import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 export class DensityFunctions$HolderHolder extends Record implements DensityFunction {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<DensityFunction>>;
     static DIRECT_CODEC: Codec<DensityFunction>;
     static HOLDER_HELPER_CODEC: Codec<DensityFunction>;
     constructor(function_: Holder<DensityFunction>)

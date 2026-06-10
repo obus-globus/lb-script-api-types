@@ -4,5 +4,5 @@ export interface FabricValueInput extends Object{
     contains(arg0: string): boolean;
     getOptionalByteArray(arg0: string): Optional<number[]>;
     getOptionalLongArray(arg0: string): Optional<number[]>;
-    keySet(): E[];
+    keySet(): string[];
 }

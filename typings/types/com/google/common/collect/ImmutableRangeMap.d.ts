@@ -14,7 +14,7 @@ export class ImmutableRangeMap<K extends Comparable<Object>, V extends Object | 
     static copyOf(paramrangeMap: RangeMap<Object, Object>): ImmutableRangeMap<Object, Object>;
     static of(): ImmutableRangeMap<Object, Object>;
     static of(paramrange: Range<Object>, paramvalue: Object | null): ImmutableRangeMap<Object, Object>;
-    static toImmutableRangeMap(paramkeyFunction: (param0: Object | null) => Object | null, paramvalueFunction: (param0: Object | null) => Object | null): Collector<Object, Object, Object>;
+    static toImmutableRangeMap(paramkeyFunction: (param0: Object) => Range<Object>, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableRangeMap<Object, Object>>;
     constructor(ranges: Range<K>[], values: V[])
     // private ranges: Range<K>[];
     // private values: V[];

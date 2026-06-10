@@ -27,9 +27,9 @@ export class TrackedWaypoint$Vec3iWaypoint extends TrackedWaypoint {
     constructor(identifier: UUID, icon: Waypoint$Icon, vector: Vec3i)
     // private vector: Vec3i;
     distanceSquared(fromEntity: Entity): number;
-    pitchDirectionToCamera(level: Level, projector: TrackedWaypoint$Projector, partialTickSupplier: (param0: Entity) => kotlin.Float): TrackedWaypoint$PitchDirection;
-    // private position(level: Level, partialTick: (param0: Entity) => kotlin.Float): Vec3;
+    pitchDirectionToCamera(level: Level, projector: TrackedWaypoint$Projector, partialTickSupplier: (param0: Entity) => number): TrackedWaypoint$PitchDirection;
+    // private position(level: Level, partialTick: (param0: Entity) => number): Vec3;
     update(other: TrackedWaypoint): void;
     writeContents(buf: ByteBuf): void;
-    yawAngleToCamera(level: Level, camera: TrackedWaypoint$Camera, partialTickSupplier: (param0: Entity) => kotlin.Float): number;
+    yawAngleToCamera(level: Level, camera: TrackedWaypoint$Camera, partialTickSupplier: (param0: Entity) => number): number;
 }

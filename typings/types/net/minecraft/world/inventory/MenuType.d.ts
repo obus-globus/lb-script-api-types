@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { FeatureElement } from '../../../../net/minecraft/world/flag/FeatureElement.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { AbstractContainerMenu } from '../../../../net/minecraft/world/inventory/AbstractContainerMenu.d.ts'
@@ -32,7 +33,7 @@ export class MenuType<T extends AbstractContainerMenu> extends Object implements
     static CRAFTER_3x3: MenuType<CrafterMenu>;
     static CRAFTING: MenuType<CraftingMenu>;
     static ENCHANTMENT: MenuType<EnchantmentMenu>;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static FURNACE: MenuType<FurnaceMenu>;
     static GENERIC_3x3: MenuType<DispenserMenu>;
     static GENERIC_9x1: MenuType<ChestMenu>;

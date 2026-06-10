@@ -12,6 +12,7 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DataResult$Error<R extends Object | number | string | boolean> extends Record implements DataResult<R> {
     static appendMessages(paramarg0: string, paramarg1: string): string;
     static error(paramarg0: () => string): DataResult<Object>;
@@ -19,7 +20,7 @@ export class DataResult$Error<R extends Object | number | string | boolean> exte
     static error(paramarg0: () => string, paramarg1: Object | null, paramarg2: Lifecycle): DataResult<Object>;
     static error(paramarg0: () => string, paramarg1: Lifecycle): DataResult<Object>;
     static instance(): DataResult$Instance;
-    static partialGet(paramarg0: (param0: Object | null) => Object | null, paramarg1: () => string): (param0: Object | null) => Object | null;
+    static partialGet(paramarg0: (param0: Object | null) => Object | null, paramarg1: () => string): (param0: Object | null) => DataResult<Object>;
     static success(paramarg0: Object | null): DataResult<Object>;
     static success(paramarg0: Object | null, paramarg1: Lifecycle): DataResult<Object>;
     static unbox(paramarg0: App<DataResult$Mu, Object>): DataResult<Object>;
@@ -28,17 +29,17 @@ export class DataResult$Error<R extends Object | number | string | boolean> exte
     // private messageSupplier: () => string;
     // private partialValue: Optional<R>;
     addLifecycle(arg0: Lifecycle): DataResult<R>;
-    ap(arg0: DataResult<(param0: R) => R2>): DataResult$Error<R2>;
-    apply2(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
-    apply2stable(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
-    apply3(arg0: Function3<R, R2, R3, S>, arg1: DataResult<R2>, arg2: DataResult<R3>): DataResult<S>;
+    ap<R2 extends Object | number | string | boolean>(arg0: DataResult<(param0: R) => R2>): DataResult$Error<R2>;
+    apply2<S extends Object | number | string | boolean, R2 extends Object | number | string | boolean>(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
+    apply2stable<S extends Object | number | string | boolean, R2 extends Object | number | string | boolean>(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
+    apply3<S extends Object | number | string | boolean, R2 extends Object | number | string | boolean, R3 extends Object | number | string | boolean>(arg0: Function3<R, R2, R3, S>, arg1: DataResult<R2>, arg2: DataResult<R3>): DataResult<S>;
     equals(arg0: Object | null): boolean;
     error(): Optional<DataResult$Error<R>>;
-    flatMap(arg0: (param0: R) => DataResult<R2>): DataResult$Error<R2>;
+    flatMap<R2 extends Object | number | string | boolean>(arg0: (param0: R) => DataResult<R2>): DataResult$Error<R2>;
     getOrThrow(): R;
-    getOrThrow(arg0: (param0: string) => E): R;
+    getOrThrow<E extends Throwable>(arg0: (param0: string) => E): R;
     getPartialOrThrow(): R;
-    getPartialOrThrow(arg0: (param0: string) => E): R;
+    getPartialOrThrow<E extends Throwable>(arg0: (param0: string) => E): R;
     hasResultOrPartial(): boolean;
     hashCode(): number;
     ifError(arg0: (param0: DataResult$Error<R>) => void): DataResult<R>;
@@ -46,8 +47,8 @@ export class DataResult$Error<R extends Object | number | string | boolean> exte
     isError(): boolean;
     isSuccess(): boolean;
     lifecycle(): Lifecycle;
-    map(arg0: (param0: R) => T): DataResult$Error<T>;
-    mapError(arg0: (param0: string) => unknown): DataResult$Error<R>;
+    map<T extends Object | number | string | boolean>(arg0: (param0: R) => T): DataResult$Error<T>;
+    mapError(arg0: (param0: string) => Object | null): DataResult$Error<R>;
     mapOrElse<T extends Object | number | string | boolean>(arg0: (param0: R) => T, arg1: (param0: DataResult$Error<R>) => T): T;
     message(): string;
     messageSupplier(): () => string;

@@ -14,6 +14,7 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { CommonLevelAccessor } from '../../../../net/minecraft/world/level/CommonLevelAccessor.d.ts'
 import type { ScheduledTickAccess } from '../../../../net/minecraft/world/level/ScheduledTickAccess.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
+import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ChunkSource } from '../../../../net/minecraft/world/level/chunk/ChunkSource.d.ts'
@@ -36,7 +37,7 @@ export interface LevelAccessor extends Object, CommonLevelAccessor, ScheduledTic
     gameEvent(gameEvent: ResourceKey<GameEvent>, pos: BlockPos, context: GameEvent$Context): void;
     gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: BlockPos): void;
     gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: Vec3): void;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getChunkSource(): ChunkSource;
     getDifficulty(): Difficulty;
     getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];

@@ -8,7 +8,7 @@ export class GLX extends Object {
     static _getCpuInfo(): string;
     static _getLWJGLVersion(): string;
     static _getRefreshRate(paramwindow: Window): number;
-    static _initGlfw(paramoptions: BackendOptions): () => kotlin.Long;
+    static _initGlfw(paramoptions: BackendOptions): () => number;
     static _setGlfwErrorCallback(paramonFullscreenError: (param0: number, param1: number) => void): void;
     static _shouldClose(paramwindow: Window): boolean;
     static glfwBool(paramvalue: boolean): number;

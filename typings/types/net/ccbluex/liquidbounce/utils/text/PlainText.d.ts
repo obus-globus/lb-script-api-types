@@ -31,26 +31,26 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
 export class PlainText extends Record implements CharSequence, Component, FormattedCharSequence {
     static EMPTY: PlainText;
     static EMPTY: FormattedText;
-    static EMPTY: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    static EMPTY: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static NEW_LINE: PlainText;
     static SPACE: PlainText;
     static STOP_ITERATION: Optional<Unit>;
-    static backward(paramplainText: string, paramstyle: Style): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static backward(paramplainText: string, paramstyle: Style, parammodifier: (param0: number) => kotlin.Int): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static codepoint(paramcodepoint: number, paramstyle: Style): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    static backward(paramplainText: string, paramstyle: Style): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static backward(paramplainText: string, paramstyle: Style, parammodifier: (param0: number) => number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static codepoint(paramcodepoint: number, paramstyle: Style): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
-    static composite(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static composite(paramparts: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[]): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static composite(parampart: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static composite(paramfirst: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, paramsecond: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static composite(paramparts: (Object | null)[]): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static decorateOutput(paramoutput: (param0: number, param1: Style, param2: number) => kotlin.Boolean, parammodifier: (param0: number) => kotlin.Int): (param0: number, param1: Style, param2: number) => kotlin.Boolean;
+    static composite(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static composite(paramparts: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static composite(parampart: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static composite(paramfirst: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, paramsecond: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static composite(paramparts: (Object | null)[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static decorateOutput(paramoutput: (param0: number, param1: Style, param2: number) => boolean, parammodifier: (param0: number) => number): (param0: number, param1: Style, param2: number) => boolean;
     static empty(): PlainText;
     static empty(): MutableComponent;
-    static forward(paramplainText: string, paramstyle: Style): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static forward(paramplainText: string, paramstyle: Style, parammodifier: (param0: number) => kotlin.Int): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static fromList(parampartCopy: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[]): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static fromPair(paramfirst: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, paramsecond: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    static forward(paramplainText: string, paramstyle: Style): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static forward(paramplainText: string, paramstyle: Style, parammodifier: (param0: number) => number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static fromList(parampartCopy: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static fromPair(paramfirst: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, paramsecond: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static keybind(paramname: string): MutableComponent;
     static literal(paramtext: string): MutableComponent;
     static nbt(paramnbtPath: CompilableString<NbtPathArgument$NbtPath>, paraminterpreting: boolean, paramplain: boolean, paramseparator: Optional<Component>, paramdataSource: DataSource): MutableComponent;
@@ -80,7 +80,7 @@ export class PlainText extends Record implements CharSequence, Component, Format
     constructor(content: PlainTextContents, style: Style)
     // private content: PlainTextContents;
     /*not mapped: */ length(): number;
-    accept(arg0: (param0: number, param1: Style, param2: number) => kotlin.Boolean): boolean;
+    accept(arg0: (param0: number, param1: Style, param2: number) => boolean): boolean;
     chars(): IntStream;
     codePoints(): IntStream;
     contains(arg0: Component): boolean;
@@ -96,7 +96,7 @@ export class PlainText extends Record implements CharSequence, Component, Format
     getString(arg0: number): string;
     getString(limit: number): string;
     getStyle(): Style;
-    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     hashCode(): number;
     isEmpty(): boolean;
     plainCopy(): MutableComponent;
@@ -108,8 +108,8 @@ export class PlainText extends Record implements CharSequence, Component, Format
     toFlatList(rootStyle: Style): Component[];
     toString(): string;
     tryCollapseToString(): string;
-    visit(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

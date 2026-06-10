@@ -1,5 +1,7 @@
 import type { Assumption } from '../../../../com/oracle/truffle/api/Assumption.d.ts'
+import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { InstrumentInfo } from '../../../../com/oracle/truffle/api/InstrumentInfo.d.ts'
+import type { TruffleFile$FileTypeDetector } from '../../../../com/oracle/truffle/api/TruffleFile$FileTypeDetector.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLogger } from '../../../../com/oracle/truffle/api/TruffleLogger.d.ts'
 import type { SpecializationStatistics } from '../../../../com/oracle/truffle/api/dsl/SpecializationStatistics.d.ts'
@@ -85,7 +87,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private engineLoggers: Object;
     // private engineOptionValues: OptionValuesImpl;
     // private err: DispatchOutputStream;
-    // private fileTypeDetectorsSupplier: () => { [key: string]: E[] };
+    // private fileTypeDetectorsSupplier: () => { [key: string]: TruffleFile$FileTypeDetector[] };
     // private host: AbstractPolyglotImpl$AbstractHostLanguageService;
     // private hostLanguage: PolyglotLanguage;
     // private hostLanguageOnly: boolean;
@@ -131,7 +133,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     checkState(): void;
     claimSharingLayer(layer: PolyglotSharingLayer, context: PolyglotContextImpl, requestingLanguage: PolyglotLanguage): void;
     collectAliveContexts(): PolyglotContextImpl[];
-    createContext(engineAPI: Engine, contextSandboxPolicy: SandboxPolicy, configOut: OutputStream, configErr: OutputStream, configIn: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, threadAccessDeniedHandler: (param0: string) => void, allowHostClassLoading: boolean, allowContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => kotlin.Boolean, options: { [key: string]: string }, arguments: { [key: string]: string[] }, onlyLanguagesArray: string[], ioAccess: Object, handler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: { [key: string]: string }, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
+    createContext(engineAPI: Engine, contextSandboxPolicy: SandboxPolicy, configOut: OutputStream, configErr: OutputStream, configIn: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, threadAccessDeniedHandler: (param0: string) => void, allowHostClassLoading: boolean, allowContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: { [key: string]: string }, arguments: { [key: string]: string[] }, onlyLanguagesArray: string[], ioAccess: Object, handler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: { [key: string]: string }, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
     // private createInstruments(instrumentsOptions: Map<PolyglotInstrument, { [key: string]: string }>, deprecatedDescriptors: OptionDescriptor[]): void;
     // private createLanguage(cache: LanguageCache, index: number, initError: RuntimeException): PolyglotLanguage;
     // private createLanguageStaticIndex(): PolyglotLanguage[];
@@ -151,7 +153,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     getAllSourceOptions(): OptionDescriptor[];
     getAsynchronousStackDepth(): number;
     getCachedSources(): Object[];
-    getCallTargets(): E[];
+    getCallTargets(): CallTarget[];
     getDeadSourcesQueue(): ReferenceQueue<Source>;
     getEngine(): PolyglotEngineImpl;
     getEngineAPI(): Engine;
@@ -159,11 +161,11 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     getEngineLogger(): TruffleLogger;
     getEngineLoggers(): Object;
     getEngineOptionValues(): OptionValuesImpl;
-    getFileTypeDetectorsSupplier(): () => { [key: string]: E[] };
+    getFileTypeDetectorsSupplier(): () => { [key: string]: TruffleFile$FileTypeDetector[] };
     getHostLanguageSPI(): TruffleLanguage<Object>;
     getImpl(): PolyglotImpl;
     getInstruments(): { [key: string]: PolyglotInstrument };
-    getLanguage(languageClass: Class<T>, fail: boolean): PolyglotLanguage;
+    getLanguage<T extends TruffleLanguage<Object>>(languageClass: Class<T>, fail: boolean): PolyglotLanguage;
     getOptions(): OptionDescriptor[];
     getOrCreateEngineLoggers(): Object;
     getPreInitializedContext(): PolyglotContextImpl;

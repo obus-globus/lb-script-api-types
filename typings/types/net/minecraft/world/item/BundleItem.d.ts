@@ -1,15 +1,17 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { LivingEntity } from '../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { SlotAccess } from '../../../../net/minecraft/world/entity/SlotAccess.d.ts'
 import type { ItemEntity } from '../../../../net/minecraft/world/entity/item/ItemEntity.d.ts'
 import type { Player } from '../../../../net/minecraft/world/entity/player/Player.d.ts'
+import type { FeatureElement } from '../../../../net/minecraft/world/flag/FeatureElement.d.ts'
 import type { ClickAction } from '../../../../net/minecraft/world/inventory/ClickAction.d.ts'
 import type { Slot } from '../../../../net/minecraft/world/inventory/Slot.d.ts'
 import type { TooltipComponent } from '../../../../net/minecraft/world/inventory/tooltip/TooltipComponent.d.ts'
@@ -26,17 +28,17 @@ export class BundleItem extends Item {
     static BASE_ATTACK_DAMAGE_ID: Identifier;
     static BASE_ATTACK_SPEED_ID: Identifier;
     static BY_BLOCK: Map<Block, Item>;
-    static CODEC: Codec<Object>;
-    static CODEC_WITH_BOUND_COMPONENTS: Codec<Object>;
+    static CODEC: Codec<Holder<Item>>;
+    static CODEC_WITH_BOUND_COMPONENTS: Codec<Holder<Item>>;
     static DEFAULT_LIGHT_COLOR: Vector3f;
     static DEFAULT_MAX_STACK_SIZE: number;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static MAX_BAR_WIDTH: number;
     static MAX_SHOWN_GRID_ITEMS: number;
     static MAX_SHOWN_GRID_ITEMS_X: number;
     static MAX_SHOWN_GRID_ITEMS_Y: number;
     static OVERFLOWING_MAX_SHOWN_GRID_ITEMS: number;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Item>>;
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getFullnessDisplay(paramitemStack: ItemStack): number;

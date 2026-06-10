@@ -29,8 +29,8 @@ export class ExpressionInjectionPoint extends InjectionPoint {
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: string, paramarg4: At$Shift, paramarg5: number, paramarg6: string[], paramarg7: string, paramarg8: string, paramarg9: number, paramarg10: number, paramarg11: string, paramarg12: number): InjectionPoint;
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: AnnotationNode): InjectionPoint;
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: At): InjectionPoint;
-    static register(paramarg0: Class<Object>): void;
-    static register(paramarg0: Class<Object>, paramarg1: string): void;
+    static register(paramarg0: Class<InjectionPoint>): void;
+    static register(paramarg0: Class<InjectionPoint>, paramarg1: string): void;
     static shift(paramarg0: InjectionPoint, paramarg1: number): InjectionPoint;
     static withContext(paramarg0: InjectionInfo, paramarg1: () => void): void;
     constructor(arg0: InjectionPointData)
@@ -42,7 +42,7 @@ export class ExpressionInjectionPoint extends InjectionPoint {
     // private ordinal: number;
     // private pool: IdentifierPool;
     // private checkDeclaredMinVersion(): void;
-    find(arg0: string, arg1: AbstractInsnNode[], arg2: E[]): boolean;
+    find(arg0: string, arg1: AbstractInsnNode[], arg2: AbstractInsnNode[]): boolean;
     // private getMatchingExpressions(arg0: MethodNode): string[];
     // private getTarget(arg0: AbstractInsnNode[]): AbstractInsnNode[];
     // private initialize(arg0: AbstractInsnNode[]): void;

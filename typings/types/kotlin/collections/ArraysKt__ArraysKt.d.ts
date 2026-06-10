@@ -9,6 +9,6 @@ export class ArraysKt__ArraysKt extends ArraysKt__ArraysJVMKt {
     static copyOfRangeToIndexCheck(paramarg0: number, paramarg1: number): void;
     static flatten(paramarg0: Object | null): (Object | null)[];
     static orEmpty(paramarg0: Object | null): Object | null;
-    static toTypedArray(paramarg0: E[]): Object | null;
-    static unzip(paramarg0: Object | null): Pair<Object, Object>;
+    static toTypedArray(paramarg0: (Object | null)[]): Object | null;
+    static unzip(paramarg0: Object | null): Pair<(Object | null)[], (Object | null)[]>;
 }

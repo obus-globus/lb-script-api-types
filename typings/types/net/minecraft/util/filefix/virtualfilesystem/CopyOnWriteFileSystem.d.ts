@@ -11,18 +11,18 @@ import type { CopyOnWriteFileSystem$Moves } from '../../../../../net/minecraft/u
 import type { DirectoryNode } from '../../../../../net/minecraft/util/filefix/virtualfilesystem/DirectoryNode.d.ts'
 import type { FileMove } from '../../../../../net/minecraft/util/filefix/virtualfilesystem/FileMove.d.ts'
 export class CopyOnWriteFileSystem extends FileSystem {
-    static create(paramname: string, parambaseDirectory: Path[][], paramtmpDirectory: Path[][], paramskippedPaths: (param0: Path[][]) => kotlin.Boolean): CopyOnWriteFileSystem;
+    static create(paramname: string, parambaseDirectory: Path[][], paramtmpDirectory: Path[][], paramskippedPaths: (param0: Path[][]) => boolean): CopyOnWriteFileSystem;
     static createDirectories(paramdirectories: Path[][][]): void;
     static hardLinkFiles(parammoves: FileMove[]): void;
     static moveFiles(parammoves: FileMove[]): void;
     static moveFilesWithRetry(parammoves: FileMove[], paramoptions: (Object | null)[]): void;
     static tryRevertMoves(parammoves: FileMove[], paramoptions: (Object | null)[]): FileMove[];
-    private constructor(name: string, baseDirectory: Path[], tmpDirectory: Path[], skippedPaths: (param0: Path[][]) => kotlin.Boolean)
+    private constructor(name: string, baseDirectory: Path[], tmpDirectory: Path[], skippedPaths: (param0: Path[][]) => boolean)
     // private baseDirectory: Path[];
     // private fileTree: DirectoryNode;
     // private provider: CopyOnWriteFSProvider;
     // private rootPath: (Object | null)[];
-    // private skippedPaths: (param0: Path[][]) => kotlin.Boolean;
+    // private skippedPaths: (param0: Path[][]) => boolean;
     // private store: CopyOnWriteFileStore;
     // private tmpDirectory: Path[];
     // private tmpFileIndex: AtomicInteger;
@@ -36,7 +36,7 @@ export class CopyOnWriteFileSystem extends FileSystem {
     fileTree(): DirectoryNode;
     getFileStores(): FileStore[];
     getPath(first: string, more: string[]): (Object | null)[];
-    getPathMatcher(syntaxAndPattern: string): (param0: Path[][]) => kotlin.Boolean;
+    getPathMatcher(syntaxAndPattern: string): (param0: Path[][]) => boolean;
     getRootDirectories(): Path[][];
     getSeparator(): string;
     getUserPrincipalLookupService(): UserPrincipalLookupService;

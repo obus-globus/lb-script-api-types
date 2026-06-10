@@ -6,8 +6,8 @@ import type { BlockModel } from '../../../../../net/minecraft/client/renderer/bl
 import type { SelectBlockModelProperty } from '../../../../../net/minecraft/client/renderer/block/model/properties/select/SelectBlockModelProperty.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class SelectBlockModel<T extends Object | number | string | boolean> extends Object implements BlockModel {
-    constructor(property: SelectBlockModelProperty<T>, models: (param0: T) => net.minecraft.client.renderer.block.model.BlockModel)
-    // private models: (param0: T) => net.minecraft.client.renderer.block.model.BlockModel;
+    constructor(property: SelectBlockModelProperty<T>, models: (param0: T) => BlockModel)
+    // private models: (param0: T) => BlockModel;
     // private property: SelectBlockModelProperty<T>;
     update(output: BlockModelRenderState, blockState: BlockState, displayContext: BlockDisplayContext, seed: number): void;
 }

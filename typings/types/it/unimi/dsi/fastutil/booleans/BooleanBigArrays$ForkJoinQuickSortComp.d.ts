@@ -17,11 +17,11 @@ export class BooleanBigArrays$ForkJoinQuickSortComp extends RecursiveAction {
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: E[]): E[];
+    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
-    constructor(arg0: (Object | null)[][], arg1: number, arg2: number, arg3: (param0: boolean, param1: boolean) => kotlin.Int)
-    // private comp: (param0: boolean, param1: boolean) => kotlin.Int;
+    constructor(arg0: (Object | null)[][], arg1: number, arg2: number, arg3: (param0: boolean, param1: boolean) => number)
+    // private comp: (param0: boolean, param1: boolean) => number;
     // private from: number;
     // private to: number;
     // private x: (Object | null)[][];

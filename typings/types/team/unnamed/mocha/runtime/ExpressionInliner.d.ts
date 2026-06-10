@@ -19,18 +19,15 @@ export class ExpressionInliner extends Object implements ExpressionVisitor<Expre
     // private interpreter: ExpressionInterpreter<Object>;
     // private scope: Scope;
     visit(arg0: Expression): Expression;
-    visitAccess<R extends Object | number | string | boolean>(arg0: AccessExpression): R;
-    visitArrayAccess<R extends Object | number | string | boolean>(arg0: ArrayAccessExpression): R;
-    visitBinary<R extends Object | number | string | boolean>(arg0: BinaryExpression): R;
+    visitAccess(arg0: AccessExpression): Expression;
+    visitArrayAccess(arg0: ArrayAccessExpression): Expression;
     visitBinary(arg0: BinaryExpression): Expression;
-    visitCall<R extends Object | number | string | boolean>(arg0: CallExpression): R;
     visitCall(arg0: CallExpression): Expression;
-    visitDouble<R extends Object | number | string | boolean>(arg0: DoubleExpression): R;
-    visitExecutionScope<R extends Object | number | string | boolean>(arg0: ExecutionScopeExpression): R;
-    visitIdentifier<R extends Object | number | string | boolean>(arg0: IdentifierExpression): R;
-    visitStatement<R extends Object | number | string | boolean>(arg0: StatementExpression): R;
-    visitString<R extends Object | number | string | boolean>(arg0: StringExpression): R;
-    visitTernaryConditional<R extends Object | number | string | boolean>(arg0: TernaryConditionalExpression): R;
+    visitDouble(arg0: DoubleExpression): Expression;
+    visitExecutionScope(arg0: ExecutionScopeExpression): Expression;
+    visitIdentifier(arg0: IdentifierExpression): Expression;
+    visitStatement(arg0: StatementExpression): Expression;
+    visitString(arg0: StringExpression): Expression;
     visitTernaryConditional(arg0: TernaryConditionalExpression): Expression;
-    visitUnary<R extends Object | number | string | boolean>(arg0: UnaryExpression): R;
+    visitUnary(arg0: UnaryExpression): Expression;
 }

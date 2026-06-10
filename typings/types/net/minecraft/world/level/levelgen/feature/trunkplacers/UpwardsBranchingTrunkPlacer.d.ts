@@ -9,6 +9,7 @@ import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { IntProvider } from '../../../../../../../net/minecraft/util/valueproviders/IntProvider.d.ts'
 import type { WorldGenLevel } from '../../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
+import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { TreeConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/TreeConfiguration.d.ts'
 import type { FoliagePlacer$FoliageAttachment } from '../../../../../../../net/minecraft/world/level/levelgen/feature/foliageplacers/FoliagePlacer$FoliageAttachment.d.ts'
@@ -18,8 +19,8 @@ export class UpwardsBranchingTrunkPlacer extends TrunkPlacer {
     static CODEC: Codec<TrunkPlacer>;
     static CODEC: MapCodec<UpwardsBranchingTrunkPlacer>;
     static MAX_HEIGHT: number;
-    constructor(baseHeight: number, heightRandA: number, heightRandB: number, extraBranchSteps: IntProvider, placeBranchPerLogProbability: number, extraBranchLength: IntProvider, canGrowThrough: Holder<T>[])
-    // private canGrowThrough: Holder<T>[];
+    constructor(baseHeight: number, heightRandA: number, heightRandB: number, extraBranchSteps: IntProvider, placeBranchPerLogProbability: number, extraBranchLength: IntProvider, canGrowThrough: Holder<Block>[])
+    // private canGrowThrough: Holder<Block>[];
     // private extraBranchLength: IntProvider;
     // private extraBranchSteps: IntProvider;
     // private placeBranchPerLogProbability: number;

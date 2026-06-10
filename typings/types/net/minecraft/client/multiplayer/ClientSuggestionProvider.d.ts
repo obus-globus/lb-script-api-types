@@ -16,6 +16,7 @@ import type { ClientPacketListener } from '../../../../net/minecraft/client/mult
 import type { LocalPlayer } from '../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { SharedSuggestionProvider } from '../../../../net/minecraft/commands/SharedSuggestionProvider.d.ts'
 import type { SharedSuggestionProvider$ElementSuggestionType } from '../../../../net/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType.d.ts'
+import type { SharedSuggestionProvider$TextCoordinates } from '../../../../net/minecraft/commands/SharedSuggestionProvider$TextCoordinates.d.ts'
 import type { HolderLookup } from '../../../../net/minecraft/core/HolderLookup.d.ts'
 import type { RegistryAccess } from '../../../../net/minecraft/core/RegistryAccess.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
@@ -32,14 +33,14 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     static MATCH_SPLITTER: CharMatcher;
     static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramprefix: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
     static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
-    static listSuggestions(paramcontext: CommandContext<Object>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
+    static listSuggestions(paramcontext: CommandContext<Object>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object[]>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
     static matchesSubStr(parampattern: string, paraminput: string): boolean;
     static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramtoString: (param0: Object | null) => string, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggest(paramvalues: string[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest(paramvalues: Stream<string>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: E[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => kotlin.Boolean): CompletableFuture<Suggestions>;
-    static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: E[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => kotlin.Boolean): CompletableFuture<Suggestions>;
+    static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
+    static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramid: (param0: Object | null) => Identifier, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Stream<Object>, parambuilder: SuggestionsBuilder, paramid: (param0: Object | null) => Identifier, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Identifier[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
@@ -56,20 +57,20 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     completeCustomSuggestions(id: number, result: Suggestions): void;
     customSuggestion(context: CommandContext<Object>): CompletableFuture<Suggestions>;
     enabledFeatures(): FeatureFlagSet;
-    getAbsoluteCoordinates(): E[];
-    getAllTeams(): E[];
+    getAbsoluteCoordinates(): SharedSuggestionProvider$TextCoordinates[];
+    getAllTeams(): string[];
     getAvailableSounds(): Stream<Identifier>;
     getClient(): Minecraft;
-    getCustomTabSuggestions(): E[];
+    getCustomTabSuggestions(): string[];
     getEntity(): Entity;
     getLevel(): ClientLevel;
     getMeta(arg0: string): Object;
-    getOnlinePlayerNames(): E[];
+    getOnlinePlayerNames(): string[];
     getPlayer(): LocalPlayer;
     getPosition(): Vec3;
-    getRelevantCoordinates(): E[];
+    getRelevantCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getRotation(): Vec2;
-    getSelectedEntities(): E[];
+    getSelectedEntities(): string[];
     levels(): ResourceKey<Level>[];
     modifyCustomCompletions(action: ClientboundCustomChatCompletionsPacket$Action, entries: string[]): void;
     permissions(): PermissionSet;

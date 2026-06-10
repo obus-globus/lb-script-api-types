@@ -17,7 +17,7 @@ export class SignatureEnhancement extends Object {
     // private enhance(arg0: CallableMemberDescriptor, arg1: Annotated, arg2: boolean, arg3: LazyJavaResolverContext, arg4: AnnotationQualifierApplicabilityType, arg5: TypeEnhancementInfo, arg6: boolean, arg7: (param0: CallableMemberDescriptor) => KotlinType): KotlinType;
     // private enhance(arg0: SignatureParts, arg1: KotlinType, arg2: KotlinType[], arg3: TypeEnhancementInfo, arg4: boolean): KotlinType;
     // private enhanceSignature<D extends CallableMemberDescriptor>(arg0: D, arg1: LazyJavaResolverContext): D;
-    enhanceSignatures(arg0: LazyJavaResolverContext, arg1: E[]): E[];
+    enhanceSignatures<D extends CallableMemberDescriptor>(arg0: LazyJavaResolverContext, arg1: D[]): D[];
     enhanceSuperType(arg0: KotlinType, arg1: LazyJavaResolverContext): KotlinType;
     enhanceTypeParameterBounds(arg0: TypeParameterDescriptor, arg1: KotlinType[], arg2: LazyJavaResolverContext): KotlinType[];
     // private enhanceValueParameter(arg0: CallableMemberDescriptor, arg1: ValueParameterDescriptor, arg2: LazyJavaResolverContext, arg3: TypeEnhancementInfo, arg4: boolean, arg5: (param0: CallableMemberDescriptor) => KotlinType): KotlinType;

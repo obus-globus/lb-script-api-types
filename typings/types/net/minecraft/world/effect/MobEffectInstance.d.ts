@@ -56,7 +56,7 @@ export class MobEffectInstance extends Object implements Comparable<MobEffectIns
     isInfiniteDuration(): boolean;
     // private isShorterDurationThan(other: MobEffectInstance): boolean;
     isVisible(): boolean;
-    mapDuration(mapper: (param0: number) => kotlin.Int): number;
+    mapDuration(mapper: (param0: number) => number): number;
     onEffectAdded(livingEntity: LivingEntity): void;
     onEffectStarted(mob: LivingEntity): void;
     onMobHurt(level: ServerLevel, mob: LivingEntity, source: DamageSource, damage: number): void;

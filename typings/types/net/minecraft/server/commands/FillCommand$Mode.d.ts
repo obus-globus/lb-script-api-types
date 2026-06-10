@@ -15,8 +15,8 @@ export class FillCommand$Mode extends Enum<FillCommand$Mode> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FillCommand$Mode;
     static values(): (Object | null)[];
-    private constructor(affector: (param0: ServerLevel, param1: BlockPos) => kotlin.Boolean, filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => net.minecraft.commands.arguments.blocks.BlockInput)
-    affector: (param0: ServerLevel, param1: BlockPos) => kotlin.Boolean;
-    filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => net.minecraft.commands.arguments.blocks.BlockInput;
+    private constructor(affector: (param0: ServerLevel, param1: BlockPos) => boolean, filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => BlockInput)
+    affector: (param0: ServerLevel, param1: BlockPos) => boolean;
+    filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => BlockInput;
     name(): "REPLACE" | "OUTLINE" | "HOLLOW" | "DESTROY";
 }

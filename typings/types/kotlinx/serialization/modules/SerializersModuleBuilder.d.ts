@@ -15,15 +15,15 @@ export class SerializersModuleBuilder extends Object implements SerializersModul
     // private polyBase2NamedSerializers: Map<KClass<Object>, { [key: string]: KSerializer<Object> }>;
     // private polyBase2Serializers: Map<KClass<Object>, Map<KClass<Object>, KSerializer<Object>>>;
     build(): SerializersModule;
-    contextual(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
-    contextual(kClass: KClass<T>, serializer: KSerializer<T>): void;
+    contextual<T extends Object | number | string | boolean>(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
+    contextual<T extends Object | number | string | boolean>(kClass: KClass<T>, serializer: KSerializer<T>): void;
     include(module: SerializersModule): void;
-    polymorphic(baseClass: KClass<Base>, actualClass: KClass<Sub>, actualSerializer: KSerializer<Sub>): void;
-    polymorphicDefault(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
-    polymorphicDefaultDeserializer(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
-    polymorphicDefaultSerializer(baseClass: KClass<Base>, defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null): void;
-    registerDefaultPolymorphicDeserializer(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null, allowOverwrite: boolean): void;
-    registerDefaultPolymorphicSerializer(baseClass: KClass<Base>, defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null, allowOverwrite: boolean): void;
-    registerPolymorphicSerializer(baseClass: KClass<Base>, concreteClass: KClass<Sub>, concreteSerializer: KSerializer<Sub>, allowOverwrite: boolean): void;
-    registerSerializer(forClass: KClass<T>, provider: ContextualProvider, allowOverwrite: boolean): void;
+    polymorphic<Base extends Object | number | string | boolean, Sub extends Base>(baseClass: KClass<Base>, actualClass: KClass<Sub>, actualSerializer: KSerializer<Sub>): void;
+    polymorphicDefault<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
+    polymorphicDefaultDeserializer<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
+    polymorphicDefaultSerializer<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null): void;
+    registerDefaultPolymorphicDeserializer<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null, allowOverwrite: boolean): void;
+    registerDefaultPolymorphicSerializer<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null, allowOverwrite: boolean): void;
+    registerPolymorphicSerializer<Base extends Object | number | string | boolean, Sub extends Base>(baseClass: KClass<Base>, concreteClass: KClass<Sub>, concreteSerializer: KSerializer<Sub>, allowOverwrite: boolean): void;
+    registerSerializer<T extends Object | number | string | boolean>(forClass: KClass<T>, provider: ContextualProvider, allowOverwrite: boolean): void;
 }

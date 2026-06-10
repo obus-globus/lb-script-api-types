@@ -8,11 +8,11 @@ export class Config$ApplyHookFlagHook extends Record implements FlagHook {
     private constructor(applyHookId: Identifier, applyHook: (param0: ConfigState) => void)
     // private applyHook: (param0: ConfigState) => void;
     // private applyHookId: Identifier;
-    accept(arg0: E[], arg1: ConfigState): void;
+    accept(arg0: Identifier[], arg1: ConfigState): void;
     applyHook(): (param0: ConfigState) => void;
     applyHookId(): Identifier;
     equals(arg0: Object | null): boolean;
-    getTriggers(): E[];
+    getTriggers(): Identifier[];
     hashCode(): number;
     toString(): string;
 }

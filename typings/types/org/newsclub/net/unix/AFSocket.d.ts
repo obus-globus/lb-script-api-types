@@ -20,7 +20,7 @@ import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/A
 import type { Closeables } from '../../../../org/newsclub/net/unix/Closeables.d.ts'
 import type { SocketAddressFilter } from '../../../../org/newsclub/net/unix/SocketAddressFilter.d.ts'
 export abstract class AFSocket<A extends AFSocketAddress> extends Socket implements AFSocketExtensions, AFSomeSocket {
-    static connectTo(paramarg0: Object | null): AFSocket<Object>;
+    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<Object>;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;
     static getLoadedLibrary(): string;
@@ -34,7 +34,7 @@ export abstract class AFSocket<A extends AFSocketAddress> extends Socket impleme
     // private afh: AFSocketAddressFromHostname<A>;
     readonly channel: AFSocketChannel<A>;
     // private closeables: Closeables;
-    // private connectFilter: (param0: SocketAddress) => java.net.SocketAddress;
+    // private connectFilter: (param0: SocketAddress) => SocketAddress;
     // private created: AtomicBoolean;
     // private impl: AFSocketImpl<A>;
     addCloseable(arg0: Closeable): void;
@@ -44,7 +44,7 @@ export abstract class AFSocket<A extends AFSocketAddress> extends Socket impleme
     connect(arg0: SocketAddress): void;
     connect(arg0: SocketAddress, arg1: number): void;
     connect0(arg0: SocketAddress, arg1: number): boolean;
-    connectHook(arg0: (param0: SocketAddress) => java.net.SocketAddress): AFSocket<A>;
+    connectHook(arg0: (param0: SocketAddress) => SocketAddress): AFSocket<A>;
     ensureAncillaryReceiveBufferSize(arg0: number): void;
     forceConnectAddress(arg0: SocketAddress): AFSocket<A>;
     getAFImpl(): AFSocketImpl<A>;

@@ -4,13 +4,13 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { PackResources } from '../../../../../net/minecraft/server/packs/PackResources.d.ts'
 export class FallbackResourceManager$PackEntry extends Record {
-    private constructor(name: string, resources: PackResources, filter: (param0: Identifier) => kotlin.Boolean)
-    // private filter: (param0: Identifier) => kotlin.Boolean;
+    private constructor(name: string, resources: PackResources, filter: (param0: Identifier) => boolean)
+    // private filter: (param0: Identifier) => boolean;
     // private name: string;
     // private resources: PackResources;
     equals(o: Object | null): boolean;
-    filter(): (param0: Identifier) => kotlin.Boolean;
-    filterAll(collection: E[]): void;
+    filter(): (param0: Identifier) => boolean;
+    filterAll(collection: Identifier[]): void;
     hashCode(): number;
     isFiltered(location: Identifier): boolean;
     name(): string;

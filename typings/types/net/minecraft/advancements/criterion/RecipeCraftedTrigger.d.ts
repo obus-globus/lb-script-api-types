@@ -10,6 +10,6 @@ import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recip
 export class RecipeCraftedTrigger extends SimpleCriterionTrigger<RecipeCraftedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<RecipeCraftedTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: RecipeCraftedTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: RecipeCraftedTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, id: ResourceKey<Recipe<Object>>, usedIngredients: ItemStack[]): void;
 }

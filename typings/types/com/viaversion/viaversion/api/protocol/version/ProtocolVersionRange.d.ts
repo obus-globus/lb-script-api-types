@@ -8,7 +8,7 @@ export class ProtocolVersionRange extends Object {
     static fromString(paramarg0: string): ProtocolVersionRange;
     static of(paramarg0: Range<ProtocolVersion>): ProtocolVersionRange;
     static of(paramarg0: ProtocolVersion, paramarg1: ProtocolVersion): ProtocolVersionRange;
-    static of(paramarg0: (Object | null)[]): ProtocolVersionRange;
+    static of(paramarg0: Range<ProtocolVersion>[]): ProtocolVersionRange;
     static singleton(paramarg0: ProtocolVersion): ProtocolVersionRange;
     private constructor(arg0: Range<ProtocolVersion>[])
     // private ranges: Range<ProtocolVersion>[];

@@ -16,15 +16,15 @@ export class ExpiringMap$Builder<K extends Object | number | string | boolean, V
     // private timeUnit: TimeUnit;
     // private variableExpiration: boolean;
     // private assertNoLoaderSet(): void;
-    asyncExpirationListener(arg0: ExpirationListener<K1, V1>): ExpiringMap$Builder<K1, V1>;
-    asyncExpirationListeners(arg0: ExpirationListener<K1, V1>[]): ExpiringMap$Builder<K1, V1>;
-    build(): Map<K1, V1>;
-    entryLoader(arg0: EntryLoader<K1, V1>): ExpiringMap$Builder<K1, V1>;
+    asyncExpirationListener<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>): ExpiringMap$Builder<K1, V1>;
+    asyncExpirationListeners<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>[]): ExpiringMap$Builder<K1, V1>;
+    build<K1 extends K, V1 extends V>(): Map<K1, V1>;
+    entryLoader<K1 extends K, V1 extends V>(arg0: EntryLoader<K1, V1>): ExpiringMap$Builder<K1, V1>;
     expiration(arg0: number, arg1: TimeUnit): ExpiringMap$Builder<K, V>;
-    expirationListener(arg0: ExpirationListener<K1, V1>): ExpiringMap$Builder<K1, V1>;
-    expirationListeners(arg0: ExpirationListener<K1, V1>[]): ExpiringMap$Builder<K1, V1>;
+    expirationListener<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>): ExpiringMap$Builder<K1, V1>;
+    expirationListeners<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>[]): ExpiringMap$Builder<K1, V1>;
     expirationPolicy(arg0: ExpirationPolicy): ExpiringMap$Builder<K, V>;
-    expiringEntryLoader(arg0: ExpiringEntryLoader<K1, V1>): ExpiringMap$Builder<K1, V1>;
+    expiringEntryLoader<K1 extends K, V1 extends V>(arg0: ExpiringEntryLoader<K1, V1>): ExpiringMap$Builder<K1, V1>;
     maxSize(arg0: number): ExpiringMap$Builder<K, V>;
     variableExpiration(): ExpiringMap$Builder<K, V>;
 }

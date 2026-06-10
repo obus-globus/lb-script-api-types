@@ -17,7 +17,7 @@ export class WebAssemblyModuleFunctionBuiltins$ModuleFunction extends Enum<WebAs
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): WebAssemblyModuleFunctionBuiltins$ModuleFunction;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

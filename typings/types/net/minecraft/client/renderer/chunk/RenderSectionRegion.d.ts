@@ -32,10 +32,10 @@ export class RenderSectionRegion extends Object implements RenderDataMapConsumer
     fabric_acceptRenderDataMap(arg0: Long2ObjectMap<Object>): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockState(pos: BlockPos): BlockState;
-    getBlockTint(pos: BlockPos, resolver: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
+    getBlockTint(pos: BlockPos, resolver: (param0: Biome, param1: number, param2: number) => number): number;
     getFluidState(pos: BlockPos): FluidState;
     getHeight(): number;
     getLightEngine(): LevelLightEngine;

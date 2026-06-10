@@ -5,7 +5,7 @@ import type { Profile } from '../../../../../net/irisshaders/iris/shaderpack/opt
 import type { ProfileSet$ProfileResult } from '../../../../../net/irisshaders/iris/shaderpack/option/ProfileSet$ProfileResult.d.ts'
 import type { OptionValues } from '../../../../../net/irisshaders/iris/shaderpack/option/values/OptionValues.d.ts'
 export class ProfileSet extends Object {
-    static fromTree(paramarg0: { [key: string]: Object | null }, paramarg1: OptionSet): ProfileSet;
+    static fromTree(paramarg0: { [key: string]: string[] }, paramarg1: OptionSet): ProfileSet;
     constructor(arg0: { [key: string]: Profile })
     // private orderedProfiles: { [key: string]: Profile };
     // private sortedProfiles: Profile[];

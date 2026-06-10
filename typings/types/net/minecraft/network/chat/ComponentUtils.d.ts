@@ -11,12 +11,12 @@ export class ComponentUtils extends Object {
     static DEFAULT_SEPARATOR: Component;
     static DEFAULT_SEPARATOR_TEXT: string;
     static copyOnClickText(paramtext: string): MutableComponent;
-    static formatAndSortList(paramvalues: E[], paramformatter: (param0: Object | null) => Component): Component;
-    static formatList(paramvalues: E[], paramformatter: (param0: Object | null) => Component): Component;
-    static formatList(paramvalues: E[], paramseparator: Optional<Object>, paramformatter: (param0: Object | null) => Component): MutableComponent;
-    static formatList(paramvalues: E[], paramseparator: Component, paramformatter: (param0: Object | null) => Component): MutableComponent;
-    static formatList(paramvalues: E[], paramseparator: Component): Component;
-    static formatList(paramvalues: E[]): Component;
+    static formatAndSortList(paramvalues: (Object | null)[], paramformatter: (param0: Object | null) => Component): Component;
+    static formatList(paramvalues: (Object | null)[], paramformatter: (param0: Object | null) => Component): Component;
+    static formatList(paramvalues: (Object | null)[], paramseparator: Optional<Component>, paramformatter: (param0: Object | null) => Component): MutableComponent;
+    static formatList(paramvalues: (Object | null)[], paramseparator: Component, paramformatter: (param0: Object | null) => Component): MutableComponent;
+    static formatList(paramvalues: Component[], paramseparator: Component): Component;
+    static formatList(paramvalues: string[]): Component;
     static fromMessage(parammessage: Message): Component;
     static isTranslationResolvable(paramcomponent: Component): boolean;
     static mergeStyles(paramcomponent: Component, paramstyle: Style): Component;

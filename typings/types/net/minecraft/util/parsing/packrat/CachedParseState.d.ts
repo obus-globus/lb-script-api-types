@@ -20,7 +20,7 @@ export abstract class CachedParseState<S extends Object | number | string | bool
     errorCollector(): ErrorCollector<S>;
     // private getCacheForPosition(index: number): CachedParseState$PositionCache;
     parse<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): T;
-    parseTopRule(rule: NamedRule<S, T>): Optional<T>;
+    parseTopRule<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): Optional<T>;
     releaseControl(): void;
     scope(): Scope;
     silent(): ParseState<S>;

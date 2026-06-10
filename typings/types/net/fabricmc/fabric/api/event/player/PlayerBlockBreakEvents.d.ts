@@ -10,7 +10,7 @@ import type { BlockEntity } from '../../../../../../net/minecraft/world/level/bl
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class PlayerBlockBreakEvents extends Object {
     static AFTER: Event<(param0: Level, param1: Player, param2: BlockPos, param3: BlockState, param4: BlockEntity) => void>;
-    static BEFORE: Event<(param0: Level, param1: Player, param2: BlockPos, param3: BlockState, param4: BlockEntity) => kotlin.Boolean>;
+    static BEFORE: Event<(param0: Level, param1: Player, param2: BlockPos, param3: BlockState, param4: BlockEntity) => boolean>;
     static CANCELED: Event<(param0: Level, param1: Player, param2: BlockPos, param3: BlockState, param4: BlockEntity) => void>;
     private constructor()
 }

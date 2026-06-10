@@ -24,19 +24,19 @@ export class Streams extends Object {
     static findLast(paramstream: DoubleStream): OptionalDouble;
     static findLast(paramstream: IntStream): OptionalInt;
     static findLast(paramstream: LongStream): OptionalLong;
-    static forEachPair(paramstreamA: Stream<Object>, paramstreamB: Stream<Object>, paramconsumer: (param0: Object | null, param1: Object | null) => void): void;
+    static forEachPair(paramstreamA: Stream<Object>, paramstreamB: Stream<Object>, paramconsumer: (param0: Object, param1: Object) => void): void;
     static mapWithIndex(paramstream: DoubleStream, paramfunction: Streams$DoubleFunctionWithIndex<Object>): Stream<Object>;
     static mapWithIndex(paramstream: IntStream, paramfunction: Streams$IntFunctionWithIndex<Object>): Stream<Object>;
     static mapWithIndex(paramstream: LongStream, paramfunction: Streams$LongFunctionWithIndex<Object>): Stream<Object>;
     static mapWithIndex(paramstream: Stream<Object>, paramfunction: Streams$FunctionWithIndex<Object, Object>): Stream<Object>;
     static stream(paramoptional: Optional<Object>): Stream<Object>;
     static stream(paramiterable: (Object | null)[]): Stream<Object>;
-    static stream(paramcollection: E[]): Stream<Object>;
+    static stream(paramcollection: (Object | null)[]): Stream<Object>;
     static stream(paramiterator: Iterator<Object>): Stream<Object>;
     static stream(paramoptional: Optional_2<Object>): Stream<Object>;
     static stream(paramoptional: OptionalDouble): DoubleStream;
     static stream(paramoptional: OptionalInt): IntStream;
     static stream(paramoptional: OptionalLong): LongStream;
-    static zip(paramstreamA: Stream<Object>, paramstreamB: Stream<Object>, paramfunction: (param0: Object | null, param1: Object | null) => Object | null): Stream<Object>;
+    static zip(paramstreamA: Stream<Object>, paramstreamB: Stream<Object>, paramfunction: (param0: Object, param1: Object) => Object | null): Stream<Object>;
     private constructor()
 }

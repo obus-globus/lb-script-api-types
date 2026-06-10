@@ -11,10 +11,10 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export interface MapCodec<T extends Object | number | string | boolean> extends MapDeserializer<T>, MapSerializer<T>, Object {
     asCodec(): Codec<T>;
     defaulted(arg0: T): MapCodec<T>;
-    defaulted(arg0: (param0: T) => kotlin.Boolean, arg1: () => T): MapCodec<T>;
+    defaulted(arg0: (param0: T) => boolean, arg1: () => T): MapCodec<T>;
     elseGet(arg0: () => T): MapCodec<T>;
     field(arg0: string): FieldMapCodec$Builder$Stage1<T>;
-    map(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
-    mapThrowing(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
+    map<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
+    mapThrowing<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
     verified(arg0: (param0: T) => Result<void>): MapCodec<T>;
 }

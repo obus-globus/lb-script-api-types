@@ -5,7 +5,7 @@ import type { IOIterator } from '../../../../../org/apache/commons/io/function/I
 export class UncheckedIOIterator<E extends Object | number | string | boolean> extends Object implements Iterator<E> {
     constructor(arg0: IOIterator<E>)
     // private delegate: IOIterator<E>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
     remove(): void;

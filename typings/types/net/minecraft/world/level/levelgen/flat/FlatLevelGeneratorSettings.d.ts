@@ -12,18 +12,18 @@ import type { PlacedFeature } from '../../../../../../net/minecraft/world/level/
 import type { StructureSet } from '../../../../../../net/minecraft/world/level/levelgen/structure/StructureSet.d.ts'
 export class FlatLevelGeneratorSettings extends Object {
     static CODEC: Codec<FlatLevelGeneratorSettings>;
-    static createLakesList(paramplacedFeatures: HolderGetter<PlacedFeature>): (Object | null)[];
+    static createLakesList(paramplacedFeatures: HolderGetter<PlacedFeature>): Holder<PlacedFeature>[];
     static getDefault(parambiomes: HolderGetter<Biome>, paramstructureSets: HolderGetter<StructureSet>, paramplacedFeatures: HolderGetter<PlacedFeature>): FlatLevelGeneratorSettings;
     static getDefaultBiome(parambiomes: HolderGetter<Biome>): Holder<Biome>;
-    private constructor(structureOverrides: Optional<Holder<T>[]>, layers: FlatLayerInfo[], lakes: boolean, features: boolean, biome: Optional<Holder<Biome>>, fallbackBiome: Holder$Reference<Biome>, lavaUnderground: Holder<PlacedFeature>, lavaSurface: Holder<PlacedFeature>)
-    constructor(structureOverrides: Optional<Holder<T>[]>, biome: Holder<Biome>, lakes: Holder<PlacedFeature>[])
+    private constructor(structureOverrides: Optional<Holder<StructureSet>[]>, layers: FlatLayerInfo[], lakes: boolean, features: boolean, biome: Optional<Holder<Biome>>, fallbackBiome: Holder$Reference<Biome>, lavaUnderground: Holder<PlacedFeature>, lavaSurface: Holder<PlacedFeature>)
+    constructor(structureOverrides: Optional<Holder<StructureSet>[]>, biome: Holder<Biome>, lakes: Holder<PlacedFeature>[])
     // private addLakes: boolean;
     readonly biome: Holder<Biome>;
     // private decoration: boolean;
     // private lakes: Holder<PlacedFeature>[];
     readonly layers: BlockState[];
     readonly layersInfo: FlatLayerInfo[];
-    // private structureOverrides: Optional<Holder<T>[]>;
+    // private structureOverrides: Optional<Holder<StructureSet>[]>;
     // private voidGen: boolean;
     adjustGenerationSettings(sourceBiome: Holder<Biome>): BiomeGenerationSettings;
     getBiome(): Holder<Biome>;
@@ -31,7 +31,7 @@ export class FlatLevelGeneratorSettings extends Object {
     getLayersInfo(): FlatLayerInfo[];
     setAddLakes(): void;
     setDecoration(): void;
-    structureOverrides(): Optional<Holder<T>[]>;
+    structureOverrides(): Optional<Holder<StructureSet>[]>;
     updateLayers(): void;
-    withBiomeAndLayers(layers: FlatLayerInfo[], structureOverrides: Optional<Holder<T>[]>, biome: Holder<Biome>): FlatLevelGeneratorSettings;
+    withBiomeAndLayers(layers: FlatLayerInfo[], structureOverrides: Optional<Holder<StructureSet>[]>, biome: Holder<Biome>): FlatLevelGeneratorSettings;
 }

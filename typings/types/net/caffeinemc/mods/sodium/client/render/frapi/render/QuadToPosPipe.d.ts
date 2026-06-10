@@ -10,5 +10,5 @@ export class QuadToPosPipe extends Object implements Consumer<QuadView> {
     // private posConsumer: (param0: Vector3fc) => void;
     // private vec: Vector3f;
     accept(arg0: QuadView): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: QuadView) => void): (param0: QuadView) => void;
 }

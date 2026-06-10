@@ -121,7 +121,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     static createMisplacedChunkReport(paramstoredPos: ChunkPos, paramrequestedPos: ChunkPos): ReportedException;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => Object | null): Object | null;
+    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
     constructor(serverThread: Thread, storageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, proxy: Proxy, fixerUpper: DataFixer, services: Services, levelLoadListener: LevelLoadListener, propagatesCrashes: boolean)
     // private aggregatedTickTimesNanos: number;
     // private clockManager: ServerClockManager;
@@ -248,7 +248,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getAdvancements(): ServerAdvancementManager;
     getAllLevels(): ServerLevel[];
     getAverageTickTimeNanos(): number;
-    getChatDecorator(): (param0: ServerPlayer, param1: Component) => net.minecraft.network.chat.Component;
+    getChatDecorator(): (param0: ServerPlayer, param1: Component) => Component;
     getCodeOfConducts(): { [key: string]: string };
     getCommandStorage(): CommandStorage;
     getCommands(): Commands;
@@ -364,7 +364,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     publishServer(gameMode: GameType, allowCommands: boolean, port: number): boolean;
     registries(): LayeredRegistryAccess<RegistryLayer>;
     registryAccess(): RegistryAccess$Frozen;
-    reloadResources(packsToEnable: E[]): CompletableFuture<void>;
+    reloadResources(packsToEnable: string[]): CompletableFuture<void>;
     reloadableRegistries(): ReloadableServerRegistries$Holder;
     repliesToStatus(): boolean;
     reportChunkLoadFailure(throwable: Throwable, storageInfo: RegionStorageInfo, pos: ChunkPos): void;
@@ -411,10 +411,10 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     stopServer(): void;
     stopTimeProfiler(): ProfileResults;
     // private storeChunkIoError(report: CrashReport, pos: ChunkPos, storageInfo: RegionStorageInfo): void;
-    tickChildren(haveTime: () => kotlin.Boolean): void;
+    tickChildren(haveTime: () => boolean): void;
     tickConnection(): void;
     tickRateManager(): ServerTickRateManager;
-    tickServer(haveTime: () => kotlin.Boolean): void;
+    tickServer(haveTime: () => boolean): void;
     // private updateEffectiveRespawnData(): void;
     updateMobSpawningFlags(): void;
     useNativeTransport(): boolean;

@@ -1,7 +1,6 @@
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockOffsetOptions$Companion } from '../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/BlockOffsetOptions$Companion.d.ts'
-import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 /**
  * Contains information about offsets (to the target pos) which should be investigated.
@@ -14,7 +13,7 @@ import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 export class BlockOffsetOptions extends Object {
     static Companion: BlockOffsetOptions$Companion;
     static Default: BlockOffsetOptions;
-    constructor(offsetsToInvestigate: Vec3i[], priorityComparator: (param0: BlockPos) => kotlin.Boolean)
+    constructor(offsetsToInvestigate: Vec3i[], priorityComparator: (param0: Object) => boolean)
     readonly offsetsToInvestigate: Vec3i[];
-    readonly priorityComparator: (param0: BlockPos) => kotlin.Boolean;
+    readonly priorityComparator: (param0: Object) => boolean;
 }

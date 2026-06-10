@@ -3,9 +3,9 @@ import type { AtomicLongArray } from '../../../java/util/concurrent/atomic/Atomi
 import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AtomicArraysKt__AtomicArrays_commonKt extends Object {
-    static AtomicArray(paramarg0: number, paramarg1: (param0: Object | null) => Object | null): AtomicReferenceArray<Object>;
-    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicIntegerArray;
-    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicLongArray;
+    static AtomicArray(paramarg0: number, paramarg1: (param0: Object) => Object | null): AtomicReferenceArray<Object>;
+    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicIntegerArray;
+    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicLongArray;
     static atomicArrayOfNulls(paramarg0: number): AtomicReferenceArray<Object>;
     static decrementAndFetchAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
     static decrementAndFetchAt(paramarg0: AtomicLongArray, paramarg1: number): number;

@@ -1,14 +1,15 @@
 import type { DataFix } from '../../../../../com/mojang/datafixers/DataFix.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { TypeRewriteRule } from '../../../../../com/mojang/datafixers/TypeRewriteRule.d.ts'
+import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityRidingToPassengersFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, changesType: boolean)
-    // private cap(inputSchema: Schema, outputType: Schema, oldEntityTreeType: Type<OldEntityTree>, newEntityTreeType: Type<NewEntityTree>, entityType: Type<Entity>): TypeRewriteRule;
+    // private cap<OldEntityTree extends Object | number | string | boolean, NewEntityTree extends Object | number | string | boolean, Entity extends Object | number | string | boolean>(inputSchema: Schema, outputType: Schema, oldEntityTreeType: Type<OldEntityTree>, newEntityTreeType: Type<NewEntityTree>, entityType: Type<Entity>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

@@ -12,12 +12,12 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Decoder<A extends Object | number | string | boolean> extends Object {
     boxed(): Decoder$Boxed<A>;
-    decode(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
+    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<A, T>>;
     decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<A, T>>;
     fieldOf(arg0: string): MapDecoder<A>;
-    flatMap(arg0: (param0: A) => DataResult<B>): Decoder<B>;
-    map(arg0: (param0: A) => B): Decoder<B>;
-    parse(arg0: Dynamic<T>): DataResult<A>;
+    flatMap<B extends Object | number | string | boolean>(arg0: (param0: A) => DataResult<B>): Decoder<B>;
+    map<B extends Object | number | string | boolean>(arg0: (param0: A) => B): Decoder<B>;
+    parse<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<A>;
     parse<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
     promotePartial(arg0: (param0: string) => void): Decoder<A>;
     simple(): Decoder$Simple<A>;

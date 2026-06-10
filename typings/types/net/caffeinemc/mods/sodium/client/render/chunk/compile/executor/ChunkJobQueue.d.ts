@@ -14,7 +14,7 @@ export class ChunkJobQueue extends Object {
     // private getNextTask(): ChunkJob;
     isEmpty(): boolean;
     isRunning(): boolean;
-    shutdown(): E[];
+    shutdown(): ChunkJob[];
     size(): number;
     stealJob(arg0: ChunkJob): boolean;
     waitForNextJob(): ChunkJob;

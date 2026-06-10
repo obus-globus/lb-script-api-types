@@ -13,7 +13,7 @@ export abstract class AbstractBooleanSpliterator extends Object implements Boole
     static SUBSIZED: number;
     constructor()
     forEachRemaining(arg0: (param0: boolean) => void): void;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
 }

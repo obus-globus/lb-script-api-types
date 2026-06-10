@@ -9,7 +9,7 @@ export class EnvScalarConstructor extends Constructor {
     static ENV_TAG: Tag;
     static undefinedConstructor: SafeConstructor$ConstructUndefined;
     constructor()
-    constructor(arg0: TypeDescription, arg1: E[], arg2: LoaderOptions)
+    constructor(arg0: TypeDescription, arg1: TypeDescription[], arg2: LoaderOptions)
     apply(arg0: string, arg1: string, arg2: string, arg3: string): string;
     getEnv(arg0: string): string;
 }

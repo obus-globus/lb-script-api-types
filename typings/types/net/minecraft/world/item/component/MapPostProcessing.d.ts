@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class MapPostProcessing extends Enum<MapPostProcessing> {
-    static ID_MAP: (param0: MapPostProcessing) => unknown;
+    static ID_MAP: (param0: number) => MapPostProcessing;
     static LOCK: MapPostProcessing;
     static SCALE: MapPostProcessing;
     static STREAM_CODEC: StreamCodec<ByteBuf, MapPostProcessing>;

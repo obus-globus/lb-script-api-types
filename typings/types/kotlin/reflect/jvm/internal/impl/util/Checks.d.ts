@@ -5,14 +5,14 @@ import type { Check } from '../../../../../../kotlin/reflect/jvm/internal/impl/u
 import type { CheckResult } from '../../../../../../kotlin/reflect/jvm/internal/impl/util/CheckResult.d.ts'
 import type { Regex } from '../../../../../../kotlin/text/Regex.d.ts'
 export class Checks extends Object {
-    constructor(arg0: E[], arg1: Check[], arg2: (param0: FunctionDescriptor) => string)
+    constructor(arg0: Name[], arg1: Check[], arg2: (param0: FunctionDescriptor) => string)
     constructor(arg0: Name, arg1: Check[], arg2: (param0: FunctionDescriptor) => string)
-    private constructor(arg0: Name, arg1: Regex, arg2: E[], arg3: (param0: FunctionDescriptor) => string, arg4: Check[])
+    private constructor(arg0: Name, arg1: Regex, arg2: Name[], arg3: (param0: FunctionDescriptor) => string, arg4: Check[])
     constructor(arg0: Regex, arg1: Check[], arg2: (param0: FunctionDescriptor) => string)
     // private additionalCheck: (param0: FunctionDescriptor) => string;
     // private checks: Check[];
     // private name: Name;
-    // private nameList: E[];
+    // private nameList: Name[];
     // private regex: Regex;
     checkAll(arg0: FunctionDescriptor): CheckResult;
     isApplicable(arg0: FunctionDescriptor): boolean;

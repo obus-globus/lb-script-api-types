@@ -8,13 +8,13 @@ export class BuiltinHelpFormatter extends Object implements HelpFormatter {
     constructor(arg0: number, arg1: number)
     // private nonOptionRows: Rows;
     // private optionRows: Rows;
-    addHeaders(arg0: E[]): void;
+    addHeaders(arg0: OptionDescriptor[]): void;
     addNonOptionRow(arg0: string): void;
-    addNonOptionsDescription(arg0: E[]): void;
+    addNonOptionsDescription(arg0: OptionDescriptor[]): void;
     addOptionRow(arg0: string): void;
     addOptionRow(arg0: string, arg1: string): void;
-    addOptions(arg0: E[]): void;
-    addRows(arg0: E[]): void;
+    addOptions(arg0: OptionDescriptor[]): void;
+    addRows(arg0: OptionDescriptor[]): void;
     appendOptionHelp(arg0: StringBuilder, arg1: string, arg2: string, arg3: boolean): void;
     appendTypeIndicator(arg0: StringBuilder, arg1: string, arg2: string, arg3: string, arg4: string): void;
     createDefaultValuesDisplay(arg0: (Object | null)[]): string;
@@ -22,11 +22,11 @@ export class BuiltinHelpFormatter extends Object implements HelpFormatter {
     createNonOptionArgumentsDisplay(arg0: OptionDescriptor): string;
     createOptionDisplay(arg0: OptionDescriptor): string;
     extractTypeIndicator(arg0: OptionDescriptor): string;
-    findAndRemoveNonOptionsSpec(arg0: E[]): OptionDescriptor;
+    findAndRemoveNonOptionsSpec(arg0: OptionDescriptor[]): OptionDescriptor;
     fitRowsToWidth(): void;
     format(arg0: { [key: string]: OptionDescriptor }): string;
     formattedHelpOutput(): string;
-    hasRequiredOption(arg0: E[]): boolean;
+    hasRequiredOption(arg0: OptionDescriptor[]): boolean;
     maybeAppendNonOptionsDescription(arg0: StringBuilder, arg1: OptionDescriptor): void;
     maybeAppendOptionInfo(arg0: StringBuilder, arg1: OptionDescriptor): void;
     message(arg0: string, arg1: Object[]): string;

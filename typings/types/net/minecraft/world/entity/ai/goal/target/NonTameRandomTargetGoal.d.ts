@@ -5,7 +5,7 @@ import type { TamableAnimal } from '../../../../../../../net/minecraft/world/ent
 import type { NearestAttackableTargetGoal } from '../../../../../../../net/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal.d.ts'
 import type { TargetingConditions$Selector } from '../../../../../../../net/minecraft/world/entity/ai/targeting/TargetingConditions$Selector.d.ts'
 export class NonTameRandomTargetGoal<T extends LivingEntity> extends NearestAttackableTargetGoal<T> {
-    constructor(mob: TamableAnimal, targetType: Class<T>, mustSee: boolean, subselector: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean)
+    constructor(mob: TamableAnimal, targetType: Class<T>, mustSee: boolean, subselector: (param0: LivingEntity, param1: ServerLevel) => boolean)
     // private tamableMob: TamableAnimal;
     canContinueToUse(): boolean;
     canUse(): boolean;

@@ -78,7 +78,7 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: Vec3): void;
     getBiomeManager(): BiomeManager;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockState(pos: BlockPos): BlockState;
     getBlockTicks(): LevelTickAccess<Block>;
     getCenter(): ChunkPos;
@@ -89,8 +89,8 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     getChunkSource(): ChunkSource;
     getCurrentDifficultyAt(pos: BlockPos): DifficultyInstance;
     getEntities(except: Entity, bb: AABB): Entity[];
-    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
+    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean): T[];
     getFluidState(pos: BlockPos): FluidState;
     getFluidTicks(): LevelTickAccess<Fluid>;
     getHeight(): number;
@@ -100,7 +100,7 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     getLevelData(): LevelData;
     getLightEngine(): LevelLightEngine;
     getMinY(): number;
-    getNearestPlayer(x: number, y: number, z: number, maxDist: number, predicate: (param0: Entity) => kotlin.Boolean): Player;
+    getNearestPlayer(x: number, y: number, z: number, maxDist: number, predicate: (param0: Entity) => boolean): Player;
     getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
     getNearestPlayer(source: Entity, maxDist: number): Player;
     getRandom(): RandomSource;
@@ -112,9 +112,9 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     getWorldBorder(): WorldBorder;
     hasChunk(chunkX: number, chunkZ: number): boolean;
     isClientSide(): boolean;
-    isFluidAtPosition(pos: BlockPos, predicate: (param0: FluidState) => kotlin.Boolean): boolean;
+    isFluidAtPosition(pos: BlockPos, predicate: (param0: FluidState) => boolean): boolean;
     isOldChunkAround(pos: ChunkPos, range: number): boolean;
-    isStateAtPosition(pos: BlockPos, predicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    isStateAtPosition(pos: BlockPos, predicate: (param0: BlockState) => boolean): boolean;
     levelEvent(type: number, pos: BlockPos, data: number): void;
     levelEvent(source: Entity, type: number, pos: BlockPos, data: number): void;
     // private markPosForPostprocessing(blockPos: BlockPos): void;

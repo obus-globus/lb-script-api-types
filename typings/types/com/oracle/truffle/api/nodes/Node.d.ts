@@ -44,7 +44,7 @@ export abstract class Node extends Object implements NodeInterface, Cloneable {
     getSourceSection(): SourceSection;
     // private inAtomicBlock(): boolean;
     insert<T extends Node>(newChild: T): T;
-    insert(newChildren: T[]): T[];
+    insert<T extends Node>(newChildren: T[]): T[];
     isAdoptable(): boolean;
     isSafelyReplaceableBy(newNode: Node): boolean;
     notifyInserted(node: Node): void;

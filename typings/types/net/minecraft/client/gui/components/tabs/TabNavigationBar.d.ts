@@ -28,7 +28,7 @@ export class TabNavigationBar extends AbstractContainerEventHandler implements R
     // private currentTabButton(): TabButton;
     // private currentTabIndex(): number;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
-    getNarratables(): E[];
+    getNarratables(): NarratableEntry[];
     // private getNextTabIndex(currentTab: number, event: KeyEvent): number;
     // private getNextTabIndex(event: KeyEvent): number;
     getRectangle(): ScreenRectangle;

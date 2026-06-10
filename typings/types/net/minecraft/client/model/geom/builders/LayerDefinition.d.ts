@@ -8,6 +8,6 @@ export class LayerDefinition extends Object {
     private constructor(mesh: MeshDefinition, material: MaterialDefinition)
     // private material: MaterialDefinition;
     // private mesh: MeshDefinition;
-    apply(transformer: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition): LayerDefinition;
+    apply(transformer: (param0: MeshDefinition) => MeshDefinition): LayerDefinition;
     bakeRoot(): ModelPart;
 }

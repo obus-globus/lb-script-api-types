@@ -14,9 +14,9 @@ export class Tooltip extends Object implements NarrationSupplier {
     static create(parammessage: Component): Tooltip;
     static create(parammessage: Component, paramcomponent: Optional<TooltipComponent>, paramstyle: Identifier): Tooltip;
     static create(parammessage: Component, paramnarration: Component): Tooltip;
-    static splitTooltip(paramminecraft: Minecraft, parammessage: Component): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    static splitTooltip(paramminecraft: Minecraft, parammessage: Component): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     private constructor(message: Component, narration: Component, component: Optional<TooltipComponent>, style: Identifier)
-    // private cachedTooltip: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private cachedTooltip: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private component: Optional<TooltipComponent>;
     // private message: Component;
     // private narration: Component;
@@ -24,6 +24,6 @@ export class Tooltip extends Object implements NarrationSupplier {
     // private style: Identifier;
     component(): Optional<TooltipComponent>;
     style(): Identifier;
-    toCharSequence(minecraft: Minecraft): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    toCharSequence(minecraft: Minecraft): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     updateNarration(output: NarrationElementOutput): void;
 }

@@ -7,7 +7,7 @@ export class DirectoryNode extends Node {
     addChild(child: Node): void;
     byPath(path: (Object | null)[]): Node;
     byPathOrNull(path: (Object | null)[]): Node;
-    children(): E[];
+    children(): Node[];
     directoryByPath(path: (Object | null)[]): DirectoryNode;
     fileByPath(path: (Object | null)[]): FileNode;
     getChild(name: string): Node;

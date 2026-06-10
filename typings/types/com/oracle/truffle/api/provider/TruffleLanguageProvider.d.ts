@@ -6,5 +6,5 @@ export abstract class TruffleLanguageProvider extends Object {
     createInternalResource(resourceId: string): Object;
     getInternalResourceIds(): string[];
     getLanguageClassName(): string;
-    getServicesClassNames(): E[];
+    getServicesClassNames(): string[];
 }

@@ -12,7 +12,7 @@ export class AllOf$EntityEffects extends Record implements EnchantmentEntityEffe
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<AllOf$EntityEffects>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(effects: EnchantmentEntityEffect[])
     // private effects: EnchantmentEntityEffect[];
     apply(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, entity: Entity, position: Vec3): void;

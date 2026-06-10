@@ -6,7 +6,7 @@ export class ULongArray$Iterator extends Object implements Iterator<ULong> {
     constructor(array: number[])
     // private array: number[];
     // private index: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: ULong) => void): void;
     hasNext(): boolean;
     next(): ULong;
 }

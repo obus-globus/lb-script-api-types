@@ -75,7 +75,7 @@ export class LocalTime extends Object implements Serializable, Temporal, Tempora
     plusMinutes(arg0: number): LocalTime;
     plusNanos(arg0: number): LocalTime;
     plusSeconds(arg0: number): LocalTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochSecond(arg0: LocalDate, arg1: ZoneOffset): number;
@@ -84,9 +84,9 @@ export class LocalTime extends Object implements Serializable, Temporal, Tempora
     toString(): string;
     truncatedTo(arg0: TemporalUnit): LocalTime;
     until(arg0: Temporal, arg1: TemporalUnit): number;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): LocalTime;
+    with(arg0: (param0: Temporal) => Temporal): LocalTime;
     with(arg0: TemporalField, arg1: number): LocalTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withHour(arg0: number): LocalTime;
     withMinute(arg0: number): LocalTime;
     withNano(arg0: number): LocalTime;

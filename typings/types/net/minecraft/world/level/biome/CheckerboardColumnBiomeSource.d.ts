@@ -8,8 +8,8 @@ import type { Climate$Sampler } from '../../../../../net/minecraft/world/level/b
 export class CheckerboardColumnBiomeSource extends BiomeSource {
     static CODEC: Codec<BiomeSource>;
     static CODEC: MapCodec<CheckerboardColumnBiomeSource>;
-    constructor(allowedBiomes: Holder<T>[], size: number)
-    // private allowedBiomes: Holder<T>[];
+    constructor(allowedBiomes: Holder<Biome>[], size: number)
+    // private allowedBiomes: Holder<Biome>[];
     // private bitShift: number;
     // private size: number;
     codec(): MapCodec<BiomeSource>;

@@ -7,10 +7,10 @@ import type { FormattedCharSequence } from '../../../../../net/minecraft/util/Fo
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class DescriptionListWidget$DescriptionEntry extends ContainerObjectSelectionList$Entry<DescriptionListWidget$DescriptionEntry> {
     static CONTENT_PADDING: number;
-    constructor(null_: DescriptionListWidget$DescriptionEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean)
-    constructor(null_: DescriptionListWidget$DescriptionEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, arg2: number)
+    constructor(null_: DescriptionListWidget$DescriptionEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean)
+    constructor(null_: DescriptionListWidget$DescriptionEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, arg2: number)
     // private indent: number;
-    // private text: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     updateTextEntry: boolean;
     children(): GuiEventListener[];
     extractContent(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: boolean, arg4: number): void;

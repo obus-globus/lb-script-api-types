@@ -45,7 +45,7 @@ export class NativeImage extends Object implements AutoCloseable, NativeImageAcc
     isClosed(): boolean;
     // private isOutsideBounds(x: number, y: number): boolean;
     makePixelArray(): number[];
-    mappedCopy(function_: (param0: number) => kotlin.Int): NativeImage;
+    mappedCopy(function_: (param0: number) => number): NativeImage;
     resizeSubRectTo(sourceX: number, sourceY: number, sizeX: number, sizeY: number, to: NativeImage): void;
     setPixel(x: number, y: number, pixel: number): void;
     setPixelABGR(x: number, y: number, pixel: number): void;

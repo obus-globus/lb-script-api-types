@@ -8,7 +8,7 @@ export class ModuleChestStealer$OnFull extends Enum<ModuleChestStealer$OnFull> i
     static NONE: ModuleChestStealer$OnFull;
     static THROW: ModuleChestStealer$OnFull;
     static getEntries(): ModuleChestStealer$OnFull[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleChestStealer$OnFull;

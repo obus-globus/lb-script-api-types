@@ -15,8 +15,6 @@ export class ColorNode extends SimpleStylingNode implements DynamicShadowNode$Si
     applyShadowColors(arg0: Component, arg1: number, arg2: number, arg3: ParserContext): Component;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     getDefaultShadowColor(arg0: Component, arg1: number, arg2: number, arg3: ParserContext): number;
     style(arg0: ParserContext): Style;
     toString(): string;

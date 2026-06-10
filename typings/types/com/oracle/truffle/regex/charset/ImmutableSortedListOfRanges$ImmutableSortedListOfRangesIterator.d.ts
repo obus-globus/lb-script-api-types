@@ -6,7 +6,7 @@ export class ImmutableSortedListOfRanges$ImmutableSortedListOfRangesIterator ext
     private constructor(ranges: Range[])
     // private i: number;
     // private ranges: Range[];
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Range) => void): void;
     hasNext(): boolean;
     next(): Range;
 }

@@ -10,7 +10,7 @@ export interface ParseState<S extends Object | number | string | boolean> extend
     input(): S;
     mark(): number;
     parse<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): T;
-    parseTopRule(rule: NamedRule<S, T>): Optional<T>;
+    parseTopRule<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): Optional<T>;
     releaseControl(): void;
     restore(mark: number): void;
     scope(): Scope;

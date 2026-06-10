@@ -10,9 +10,9 @@ export class InventoryItemSlot extends Object implements ItemSlot {
     static ALL: InventoryItemSlot[];
     static Companion: InventoryItemSlot$Companion;
     static Companion: ItemSlot$Companion;
-    static PREFER_FEWER_ITEM: (param0: Object | null) => kotlin.Boolean;
-    static PREFER_MORE_ITEM: (param0: Object | null) => kotlin.Boolean;
-    static PREFER_NEARBY: (param0: ItemSlot) => kotlin.Boolean;
+    static PREFER_FEWER_ITEM: (param0: Object) => boolean;
+    static PREFER_MORE_ITEM: (param0: Object) => boolean;
+    static PREFER_NEARBY: (param0: Object) => boolean;
     static of(paramarg0: number): InventoryItemSlot;
     private constructor(inventorySlot: number)
     // private inventorySlot: number;

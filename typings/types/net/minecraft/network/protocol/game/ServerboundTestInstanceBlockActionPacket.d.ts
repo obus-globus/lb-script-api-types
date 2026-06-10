@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -17,7 +18,7 @@ import type { Rotation } from '../../../../../net/minecraft/world/level/block/Ro
 import type { TestInstanceBlockEntity$Data } from '../../../../../net/minecraft/world/level/block/entity/TestInstanceBlockEntity$Data.d.ts'
 export class ServerboundTestInstanceBlockActionPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ServerboundTestInstanceBlockActionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(pos: BlockPos, action: ServerboundTestInstanceBlockActionPacket$Action, test: Optional<ResourceKey<GameTestInstance>>, size: Vec3i, rotation: Rotation, ignoreEntities: boolean)
     constructor(pos: BlockPos, action: ServerboundTestInstanceBlockActionPacket$Action, data: TestInstanceBlockEntity$Data)
     // private action: ServerboundTestInstanceBlockActionPacket$Action;

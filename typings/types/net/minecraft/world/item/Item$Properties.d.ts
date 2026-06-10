@@ -34,28 +34,28 @@ import type { TrimMaterial } from '../../../../net/minecraft/world/item/equipmen
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 export class Item$Properties extends Object implements FabricItem$Properties {
     constructor()
-    // private componentInitializer: (param0: Item, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void;
+    // private componentInitializer: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<Item>) => void;
     // private craftingRemainingItem: ItemStackTemplate;
-    // private descriptionId: (param0: Item) => string;
+    // private descriptionId: (param0: ResourceKey<Item>) => string;
     // private id: ResourceKey<Item>;
-    // private model: (param0: Item) => Identifier;
+    // private model: (param0: ResourceKey<Item>) => Identifier;
     // private requiredFeatures: FeatureFlagSet;
     attributes(attributes: ItemAttributeModifiers): Item$Properties;
     axe(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number): Item$Properties;
     component<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): Item$Properties;
     craftRemainder(craftingRemainingItem: Item): Item$Properties;
     craftRemainder(craftingRemainingItem: ItemStackTemplate): Item$Properties;
-    customDamage(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int): Item$Properties;
-    delayedComponent(type: DataComponentType<T>, initializer: (param0: T) => unknown): Item$Properties;
-    delayedHolderComponent(type: DataComponentType<Holder<T>>, valueKey: ResourceKey<T>): Item$Properties;
+    customDamage(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number): Item$Properties;
+    delayedComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, initializer: (param0: HolderLookup$Provider) => T): Item$Properties;
+    delayedHolderComponent<T extends Object | number | string | boolean>(type: DataComponentType<Holder<T>>, valueKey: ResourceKey<T>): Item$Properties;
     durability(maxDamage: number): Item$Properties;
     effectiveDescriptionId(): string;
     effectiveModel(): Identifier;
     enchantable(value: number): Item$Properties;
-    equipmentSlot(arg0: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot): Item$Properties;
+    equipmentSlot(arg0: (param0: LivingEntity, param1: ItemStack) => EquipmentSlot): Item$Properties;
     equippable(slot: EquipmentSlot): Item$Properties;
     equippableUnswappable(slot: EquipmentSlot): Item$Properties;
-    // private finalizeInitializer(name: Component, model: Identifier): (param0: Item, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void;
+    // private finalizeInitializer(name: Component, model: Identifier): (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<Item>) => void;
     fireResistant(): Item$Properties;
     food(foodProperties: FoodProperties): Item$Properties;
     food(foodProperties: FoodProperties, consumable: Consumable): Item$Properties;

@@ -2,10 +2,10 @@ import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../java/util/function/BiConsumer.d.ts'
+import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AxisCycle } from '../../../net/minecraft/core/AxisCycle.d.ts'
 import type { BlockPos } from '../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$TraversalNodeStatus } from '../../../net/minecraft/core/BlockPos$TraversalNodeStatus.d.ts'
@@ -40,10 +40,10 @@ export class BlockPos$MutableBlockPos extends BlockPos {
     static betweenCornersInDirection(paramfirstCornerX: number, paramfirstCornerY: number, paramfirstCornerZ: number, paramsecondCornerX: number, paramsecondCornerY: number, paramsecondCornerZ: number, paramdirection: Vec3): BlockPos[];
     static betweenCornersInDirection(paramfirstCorner: BlockPos, paramsecondCorner: BlockPos, paramdirection: Vec3): BlockPos[];
     static betweenCornersInDirection(paramaabb: AABB, paramdirection: Vec3): BlockPos[];
-    static breadthFirstTraversal(paramstartPos: BlockPos, parammaxDepth: number, parammaxCount: number, paramneighbourProvider: (param0: BlockPos, param1: Object | null) => void, paramnodeProcessor: (param0: BlockPos) => BlockPos$TraversalNodeStatus): number;
+    static breadthFirstTraversal(paramstartPos: BlockPos, parammaxDepth: number, parammaxCount: number, paramneighbourProvider: (param0: BlockPos, param1: (param0: BlockPos) => void) => void, paramnodeProcessor: (param0: BlockPos) => BlockPos$TraversalNodeStatus): number;
     static containing(paramx: number, paramy: number, paramz: number): BlockPos;
     static containing(parampos: Position): BlockPos;
-    static findClosestMatch(paramstartPos: BlockPos, paramhorizontalSearchRadius: number, paramverticalSearchRadius: number, parampredicate: (param0: BlockPos) => kotlin.Boolean): Optional<BlockPos>;
+    static findClosestMatch(paramstartPos: BlockPos, paramhorizontalSearchRadius: number, paramverticalSearchRadius: number, parampredicate: (param0: BlockPos) => boolean): Optional<BlockPos>;
     static getFlatIndex(paramneighborBlockNode: number): number;
     static getX(paramblockNode: number): number;
     static getY(paramblockNode: number): number;

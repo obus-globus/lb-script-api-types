@@ -9,7 +9,7 @@ import type { JsonValue } from '../../../../../../com/oracle/truffle/regex/trege
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class NFA extends Object implements StateIndex<NFAState>, JsonConvertible {
     constructor(original: NFA)
-    constructor(ast: RegexAST, dummyInitialState: NFAState, anchoredEntry: NFAStateTransition[], unAnchoredEntry: NFAStateTransition[], reverseAnchoredEntry: NFAStateTransition, reverseUnAnchoredEntry: NFAStateTransition, states: E[], stateIDCounter: Counter$ThresholdCounter, transitionIDCounter: Counter$ThresholdCounter, initialLoopBack: NFAStateTransition, preCalculatedResults: PreCalculatedResultFactory[])
+    constructor(ast: RegexAST, dummyInitialState: NFAState, anchoredEntry: NFAStateTransition[], unAnchoredEntry: NFAStateTransition[], reverseAnchoredEntry: NFAStateTransition, reverseUnAnchoredEntry: NFAStateTransition, states: NFAState[], stateIDCounter: Counter$ThresholdCounter, transitionIDCounter: Counter$ThresholdCounter, initialLoopBack: NFAStateTransition, preCalculatedResults: PreCalculatedResultFactory[])
     readonly anchoredEntry: NFAStateTransition[];
     readonly ast: RegexAST;
     readonly dummyInitialState: NFAState;

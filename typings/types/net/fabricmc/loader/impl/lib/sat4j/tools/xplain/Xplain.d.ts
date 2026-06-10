@@ -9,7 +9,7 @@ export class Xplain<T extends ISolver> extends FullClauseSelectorSolver<T> {
     // private assump: IVecInt;
     // private xplainStrategy: MinimizationStrategy;
     addAtMost(arg0: IVecInt, arg1: number): IConstr;
-    explain(): E[];
+    explain(): IConstr[];
     // private explanationKeys(): IVecInt;
     isSatisfiable(): boolean;
     isSatisfiable(arg0: IVecInt): boolean;

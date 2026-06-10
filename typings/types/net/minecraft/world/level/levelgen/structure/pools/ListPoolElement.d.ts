@@ -30,7 +30,7 @@ export class ListPoolElement extends StructurePoolElement {
     static feature(paramfeature: Holder<PlacedFeature>): (param0: StructureTemplatePool$Projection) => FeaturePoolElement;
     static legacy(paramlocation: string): (param0: StructureTemplatePool$Projection) => LegacySinglePoolElement;
     static legacy(paramlocation: string, paramprocessors: Holder<StructureProcessorList>): (param0: StructureTemplatePool$Projection) => LegacySinglePoolElement;
-    static list(paramelements: (Object | null)[]): (param0: StructureTemplatePool$Projection) => ListPoolElement;
+    static list(paramelements: (param0: StructureTemplatePool$Projection) => StructurePoolElement[]): (param0: StructureTemplatePool$Projection) => ListPoolElement;
     static single(paramlocation: string): (param0: StructureTemplatePool$Projection) => SinglePoolElement;
     static single(paramlocation: string, paramprocessors: Holder<StructureProcessorList>): (param0: StructureTemplatePool$Projection) => SinglePoolElement;
     static single(paramlocation: string, paramprocessors: Holder<StructureProcessorList>, paramoverrideLiquidSettings: LiquidSettings): (param0: StructureTemplatePool$Projection) => SinglePoolElement;

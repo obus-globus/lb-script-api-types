@@ -11,7 +11,7 @@ import type { EquipmentSlot } from '../../../../../../../net/minecraft/world/ent
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ServerEntityEvents extends Object {
-    static ALLOW_LOAD: Event<(param0: Entity, param1: ServerLevel, param2: EntitySpawnReason, param3: boolean) => kotlin.Boolean>;
+    static ALLOW_LOAD: Event<(param0: Entity, param1: ServerLevel, param2: EntitySpawnReason, param3: boolean) => boolean>;
     static ENTITY_LOAD: Event<(param0: Entity, param1: ServerLevel) => void>;
     static ENTITY_UNLOAD: Event<(param0: Entity, param1: ServerLevel) => void>;
     static EQUIPMENT_CHANGE: Event<(param0: LivingEntity, param1: EquipmentSlot, param2: ItemStack, param3: ItemStack) => void>;

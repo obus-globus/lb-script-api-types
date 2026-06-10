@@ -13,11 +13,11 @@ export class GenericDistanceHSBColorMode<T extends Object | number | string | bo
     static Companion: GenericDistanceHSBColorMode$Companion;
     static entity(paramarg0: ModeValueGroup<Object>): GenericDistanceHSBColorMode<Entity>;
     static entity(parent: ModeValueGroup<Object>, fixedAlpha: number): GenericDistanceHSBColorMode<Entity>;
-    constructor(parent: ModeValueGroup<Object>, fixedAlpha: number | null, distanceGetter: (param0: T) => kotlin.Float)
+    constructor(parent: ModeValueGroup<Object>, fixedAlpha: number | null, distanceGetter: (param0: T) => number)
     // private alphaValue: RangedValue<number> | null;
     // private brightness: number;
     // private /*not mapped: */ getBrightness(): number;
-    // private distanceGetter: (param0: T) => kotlin.Float;
+    // private distanceGetter: (param0: T) => number;
     // private fixedAlpha: number | null;
     // private hue: CurveValue;
     readonly parent: ModeValueGroup<Object>;

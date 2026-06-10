@@ -8,10 +8,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SharedSuggestionProvider } from '../../../../net/minecraft/commands/SharedSuggestionProvider.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class SuggestionProviders$RegisteredSuggestion extends Record implements SuggestionProvider<SharedSuggestionProvider> {
-    private constructor(name: Identifier, delegate: (param0: SharedSuggestionProvider, param1: CommandContext<Object>) => java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions>)
-    // private delegate: (param0: SharedSuggestionProvider, param1: CommandContext<Object>) => java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions>;
+    private constructor(name: Identifier, delegate: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>)
+    // private delegate: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     // private name: Identifier;
-    delegate(): (param0: SharedSuggestionProvider, param1: CommandContext<Object>) => java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions>;
+    delegate(): (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     equals(o: Object | null): boolean;
     getSuggestions(context: CommandContext<SharedSuggestionProvider>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     hashCode(): number;

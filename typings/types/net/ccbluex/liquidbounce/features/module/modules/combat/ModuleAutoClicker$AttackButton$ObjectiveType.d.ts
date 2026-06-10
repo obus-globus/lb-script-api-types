@@ -10,7 +10,7 @@ export class ModuleAutoClicker$AttackButton$ObjectiveType extends Enum<ModuleAut
     static ENEMY: ModuleAutoClicker$AttackButton$ObjectiveType;
     static ENTITY: ModuleAutoClicker$AttackButton$ObjectiveType;
     static getEntries(): ModuleAutoClicker$AttackButton$ObjectiveType[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoClicker$AttackButton$ObjectiveType;

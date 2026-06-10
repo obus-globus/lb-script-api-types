@@ -19,10 +19,10 @@ export class Stat<T extends Object | number | string | boolean> extends Objectiv
     static KILL_COUNT_ALL: ObjectiveCriteria;
     static KILL_COUNT_PLAYERS: ObjectiveCriteria;
     static LEVEL: ObjectiveCriteria;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Stat<Object>>;
     static TEAM_KILL: (Object | null)[];
     static TRIGGER: ObjectiveCriteria;
-    static buildName(paramtype: Stat<T>[], paramvalue: Object | null): string;
+    static buildName(paramtype: Stat<Object>[], paramvalue: Object | null): string;
     static byName(paramname: string): Optional<ObjectiveCriteria>;
     static getCustomCriteriaNames(): string[];
     static registerCustom(paramname: string): ObjectiveCriteria;

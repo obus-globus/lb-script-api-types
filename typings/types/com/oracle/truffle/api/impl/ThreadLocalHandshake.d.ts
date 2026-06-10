@@ -11,7 +11,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ThreadLocalHandshake extends Object {
     constructor()
     activateThread(s: TruffleSafepoint, f: Future<Object>): ThreadLocalHandshake$ActivationResult;
-    // private addHandshakes(threads: Thread[], handshake: ThreadLocalHandshake$Handshake<T>): void;
+    // private addHandshakes<T extends Consumer<Node>>(threads: Thread[], handshake: ThreadLocalHandshake$Handshake<T>): void;
     clearFastPending(): void;
     deactivateThread(s: TruffleSafepoint, f: Future<Object>): boolean;
     ensureThreadInitialized(): void;

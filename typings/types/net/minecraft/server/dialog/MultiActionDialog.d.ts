@@ -4,6 +4,7 @@ import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ActionButton } from '../../../../net/minecraft/server/dialog/ActionButton.d.ts'
@@ -12,12 +13,12 @@ import type { CommonDialogData } from '../../../../net/minecraft/server/dialog/C
 import type { Dialog } from '../../../../net/minecraft/server/dialog/Dialog.d.ts'
 import type { Action } from '../../../../net/minecraft/server/dialog/action/Action.d.ts'
 export class MultiActionDialog extends Record implements ButtonListDialog {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Dialog>>;
     static CONTEXT_FREE_STREAM_CODEC: StreamCodec<ByteBuf, Dialog>;
     static DIRECT_CODEC: Codec<Dialog>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<Holder<Dialog>[]>;
     static MAP_CODEC: MapCodec<MultiActionDialog>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Dialog>>;
     static WIDTH_CODEC: Codec<number>;
     // private actions: ActionButton[];
     // private columns: number;

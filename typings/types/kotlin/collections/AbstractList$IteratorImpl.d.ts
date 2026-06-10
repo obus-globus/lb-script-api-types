@@ -5,7 +5,7 @@ export class AbstractList$IteratorImpl extends Object implements Iterator<E> {
     constructor(null_: AbstractList$IteratorImpl)
     // private index: number;
     // private /*not mapped: */ getIndex(): number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<E extends Object | number | string | boolean>(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next<E extends Object | number | string | boolean>(): E;
 }

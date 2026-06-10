@@ -9,7 +9,7 @@ export class Funnels extends Object {
     static byteArrayFunnel(): Funnel<number[]>;
     static integerFunnel(): Funnel<number>;
     static longFunnel(): Funnel<number>;
-    static sequentialFunnel(paramelementFunnel: Funnel<Object>): Funnel<Object>;
+    static sequentialFunnel(paramelementFunnel: Funnel<Object>): Funnel<(Object | null)[]>;
     static stringFunnel(paramcharset: Charset): Funnel<CharSequence>;
     static unencodedCharsFunnel(): Funnel<CharSequence>;
     private constructor()

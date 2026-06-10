@@ -12,7 +12,7 @@ export class WorldSeed extends Object {
     static randomSeedsIterator(): SeedIterator;
     static toHash(paramarg0: number): number;
     static toPillarSeed(paramarg0: number): number;
-    static toString(paramarg0: number, paramarg1: StringUnhasher$Config, paramarg2: (param0: string) => kotlin.Boolean): void;
+    static toString(paramarg0: number, paramarg1: StringUnhasher$Config, paramarg2: (param0: string) => boolean): void;
     static toStructureSeed(paramarg0: number): number;
     constructor()
 }

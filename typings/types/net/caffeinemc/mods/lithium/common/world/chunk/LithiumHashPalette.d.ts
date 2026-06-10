@@ -21,7 +21,7 @@ export class LithiumHashPalette<T extends Object | number | string | boolean> ex
     getSerializedSize(arg0: T[]): number;
     getSize(): number;
     idFor(arg0: T, arg1: PaletteResize<T>): number;
-    maybeHas(arg0: (param0: T) => kotlin.Boolean): boolean;
+    maybeHas(arg0: (param0: T) => boolean): boolean;
     // private missingPaletteEntryCrash(arg0: number): ReportedException;
     read(arg0: FriendlyByteBuf, arg1: T[]): void;
     // private recoverMissingPaletteEntryOrCrash(arg0: number): T;

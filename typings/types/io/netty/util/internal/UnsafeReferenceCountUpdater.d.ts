@@ -2,10 +2,9 @@ import type { ReferenceCounted } from '../../../../io/netty/util/ReferenceCounte
 import type { ReferenceCountUpdater } from '../../../../io/netty/util/internal/ReferenceCountUpdater.d.ts'
 import type { ReferenceCountUpdater$UpdaterType } from '../../../../io/netty/util/internal/ReferenceCountUpdater$UpdaterType.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class UnsafeReferenceCountUpdater<T extends ReferenceCounted> extends ReferenceCountUpdater<T> {
-    static getUnsafeOffset(paramarg0: Class<Object>, paramarg1: string): number;
-    static updaterTypeOf(paramarg0: Class<Object>, paramarg1: string): ReferenceCountUpdater$UpdaterType;
+    static getUnsafeOffset(paramarg0: Class<ReferenceCounted>, paramarg1: string): number;
+    static updaterTypeOf(paramarg0: Class<ReferenceCounted>, paramarg1: string): ReferenceCountUpdater$UpdaterType;
     constructor()
     casRawRefCnt(arg0: T, arg1: number, arg2: number): boolean;
     getAcquireRawRefCnt(arg0: T): number;

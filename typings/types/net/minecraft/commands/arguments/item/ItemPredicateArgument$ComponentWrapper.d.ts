@@ -9,15 +9,15 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemPredicateArgument$ComponentWrapper extends Record {
     static create(paramreader: ImmutableStringReader, paramid: Identifier, paramtype: DataComponentType<Object>): ItemPredicateArgument$ComponentWrapper;
-    private constructor(id: Identifier, presenceChecker: (param0: ItemStack) => kotlin.Boolean, valueChecker: Decoder<(param0: ItemStack) => kotlin.Boolean>)
+    private constructor(id: Identifier, presenceChecker: (param0: ItemStack) => boolean, valueChecker: Decoder<(param0: ItemStack) => boolean>)
     // private id: Identifier;
-    // private presenceChecker: (param0: ItemStack) => kotlin.Boolean;
-    // private valueChecker: Decoder<(param0: ItemStack) => kotlin.Boolean>;
-    decode(reader: ImmutableStringReader, value: Dynamic<Object>): (param0: ItemStack) => kotlin.Boolean;
+    // private presenceChecker: (param0: ItemStack) => boolean;
+    // private valueChecker: Decoder<(param0: ItemStack) => boolean>;
+    decode(reader: ImmutableStringReader, value: Dynamic<Object>): (param0: ItemStack) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
     id(): Identifier;
-    presenceChecker(): (param0: ItemStack) => kotlin.Boolean;
+    presenceChecker(): (param0: ItemStack) => boolean;
     toString(): string;
-    valueChecker(): Decoder<(param0: ItemStack) => kotlin.Boolean>;
+    valueChecker(): Decoder<(param0: ItemStack) => boolean>;
 }

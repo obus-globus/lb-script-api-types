@@ -4,6 +4,6 @@ export class JsonArrayBuilder extends Object {
     constructor()
     // private content: JsonElement[];
     add(element: JsonElement): boolean;
-    addAll(elements: E[]): boolean;
+    addAll(elements: JsonElement[]): boolean;
     build(): (Object | null)[];
 }

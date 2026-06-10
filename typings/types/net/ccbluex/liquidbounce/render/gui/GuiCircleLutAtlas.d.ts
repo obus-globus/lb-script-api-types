@@ -30,7 +30,7 @@ export class GuiCircleLutAtlas extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas.kt:66}
      */
-    allocate(colorGetter: (param0: number) => kotlin.Int): GuiCircleLutAtlas$Allocation;
+    allocate(colorGetter: (param0: number) => number): GuiCircleLutAtlas$Allocation;
     // private growRows(minRows: number): void;
     /**
      * Resets row allocation cursor for the next GUI draw pass.

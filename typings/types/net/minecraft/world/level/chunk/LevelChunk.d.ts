@@ -53,7 +53,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     static NO_FILLED_SECTION: number;
     static create(paramminY: number, paramheight: number): LevelHeightAccessor;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
-    static problemPath(parampos: ChunkPos): () => kotlin.String;
+    static problemPath(parampos: ChunkPos): () => string;
     static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(level: ServerLevel, protoChunk: ProtoChunk, postLoad: (param0: LevelChunk) => void)
     constructor(level: Level, pos: ChunkPos)
@@ -72,7 +72,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     // private addGameEventListener<T extends BlockEntity>(blockEntity: T, level: ServerLevel): void;
     clearAllBlockEntities(): void;
     // private createBlockEntity(pos: BlockPos): BlockEntity;
-    // private createTicker<T extends BlockEntity>(blockEntity: T, ticker: (param0: T, param1: Level, param2: BlockPos, param3: BlockState) => void): TickingBlockEntity;
+    // private createTicker<T extends BlockEntity>(blockEntity: T, ticker: (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void): TickingBlockEntity;
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
@@ -86,11 +86,11 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
-    fabric_updateSyncTarget(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
+    fabric_updateSyncTarget<T extends Object | number | string | boolean>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     getBlockEntities(): Map<BlockPos, BlockEntity>;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos, creationType: LevelChunk$EntityCreationType): BlockEntity;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
     getBlockState(arg0: BlockPos): BlockState;

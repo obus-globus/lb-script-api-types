@@ -13,6 +13,7 @@ import type { ModuleAwareClassDescriptor$Companion } from '../../../../../../../
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
+import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeConstructor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeConstructor.d.ts'
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
@@ -23,7 +24,7 @@ export class MutableClassDescriptor extends ClassDescriptorBase {
     readonly kind: ClassKind;
     readonly modality: Modality;
     // private storageManager: StorageManager;
-    // private supertypes: E[];
+    // private supertypes: KotlinType[];
     readonly typeConstructor: TypeConstructor;
     // private typeParameters: TypeParameterDescriptor[];
     readonly visibility: DescriptorVisibility;

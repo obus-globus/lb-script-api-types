@@ -1,4 +1,5 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { AtomicsBuiltins$AtomicBinaryOperator } from '../../../../../com/oracle/truffle/js/builtins/AtomicsBuiltins$AtomicBinaryOperator.d.ts'
 import type { AtomicsBuiltins$AtomicIntBinaryOperator } from '../../../../../com/oracle/truffle/js/builtins/AtomicsBuiltins$AtomicIntBinaryOperator.d.ts'
@@ -11,12 +12,13 @@ import type { BigInt } from '../../../../../com/oracle/truffle/js/runtime/BigInt
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { TypedArray } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArray.d.ts'
 import type { JSTypedArrayObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AtomicsBuiltinsFactory$AtomicsComputeNodeGen extends AtomicsBuiltins$AtomicsComputeNode {
     static ARGUMENTS: string;
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramintOperator: (param0: number, param1: number) => kotlin.Int, parambigIntOperator: (param0: BigInt, param1: Object | null) => unknown, paramarguments: (Object | null)[]): AtomicsBuiltins$AtomicsComputeNode;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramintOperator: (param0: number, param1: number) => number, parambigIntOperator: (param0: BigInt, param1: BigInt) => BigInt, paramarguments: (Object | null)[]): AtomicsBuiltins$AtomicsComputeNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static isDirectBigInt64Array(paramta: TypedArray): boolean;
@@ -34,7 +36,7 @@ export class AtomicsBuiltinsFactory$AtomicsComputeNodeGen extends AtomicsBuiltin
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    private constructor(context: JSContext, builtin: JSBuiltin, intOperator: (param0: number, param1: number) => kotlin.Int, bigIntOperator: (param0: BigInt, param1: Object | null) => unknown, arguments: JavaScriptNode[])
+    private constructor(context: JSContext, builtin: JSBuiltin, intOperator: (param0: number, param1: number) => number, bigIntOperator: (param0: BigInt, param1: BigInt) => BigInt, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;

@@ -1,6 +1,7 @@
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractContainerWidget } from '../../../../../net/minecraft/client/gui/components/AbstractContainerWidget.d.ts'
@@ -60,8 +61,8 @@ export abstract class AbstractSelectionList<E extends AbstractSelectionList$Entr
     narrateListElementPosition(output: NarrationElementOutput, element: E): void;
     narrationPriority(): NarratableEntry$NarrationPriority;
     nextEntry(dir: ScreenDirection): E;
-    nextEntry(dir: ScreenDirection, canSelect: (param0: E) => kotlin.Boolean): E;
-    nextEntry(dir: ScreenDirection, canSelect: (param0: E) => kotlin.Boolean, startEntry: E): E;
+    nextEntry(dir: ScreenDirection, canSelect: (param0: E) => boolean): E;
+    nextEntry(dir: ScreenDirection, canSelect: (param0: E) => boolean, startEntry: E): E;
     removeEntries(entries: E[]): void;
     removeEntry(entry: E): void;
     removeEntryFromTop(entry: E): void;
@@ -74,7 +75,7 @@ export abstract class AbstractSelectionList<E extends AbstractSelectionList$Entr
     setFocused(focused: GuiEventListener): void;
     setScrollAmount(scrollAmount: number): void;
     setSelected(selected: E): void;
-    sort(comparator: (param0: E) => kotlin.Boolean): void;
+    sort(comparator: (param0: Object) => boolean): void;
     swap(firstIndex: number, secondIndex: number): void;
     updateSize(width: number, layout: HeaderAndFooterLayout): void;
     updateSizeAndPosition(width: number, height: number, y: number): void;

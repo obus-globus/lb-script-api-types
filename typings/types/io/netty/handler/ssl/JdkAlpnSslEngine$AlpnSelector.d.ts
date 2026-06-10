@@ -7,7 +7,7 @@ export class JdkAlpnSslEngine$AlpnSelector extends Object implements BiFunction<
     constructor(null_: JdkAlpnSslEngine$AlpnSelector, arg1: JdkApplicationProtocolNegotiator$ProtocolSelector)
     // private called: boolean;
     // private selector: JdkApplicationProtocolNegotiator$ProtocolSelector;
-    andThen(arg0: (param0: R) => V): (param0: T, param1: U) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: string) => V): (param0: SSLEngine, param1: string[]) => V;
     apply(arg0: SSLEngine, arg1: string[]): string;
     checkUnsupported(): void;
 }

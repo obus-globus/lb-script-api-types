@@ -1,4 +1,4 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { Transition } from '../../../../../org/antlr/v4/runtime/atn/Transition.d.ts'
 import type { IntervalSet } from '../../../../../org/antlr/v4/runtime/misc/IntervalSet.d.ts'
@@ -14,7 +14,7 @@ export class RangeTransition extends Transition {
     static SET: number;
     static WILDCARD: number;
     static serializationNames: string[];
-    static serializationTypes: Map<Object | null, number>;
+    static serializationTypes: Map<Class<Transition>, number>;
     constructor(arg0: ATNState, arg1: number, arg2: number)
     from: number;
     to: number;

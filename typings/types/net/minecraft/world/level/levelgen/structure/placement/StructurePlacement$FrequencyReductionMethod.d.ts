@@ -15,18 +15,18 @@ export class StructurePlacement$FrequencyReductionMethod extends Enum<StructureP
     static LEGACY_TYPE_2: StructurePlacement$FrequencyReductionMethod;
     static LEGACY_TYPE_3: StructurePlacement$FrequencyReductionMethod;
     static PRE_BUILT_MAP_THRESHOLD: number;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StructurePlacement$FrequencyReductionMethod;
     static values(): (Object | null)[];
-    private constructor(name: string, reducer: (param0: number, param1: number, param2: number, param3: number, param4: number) => kotlin.Boolean)
+    private constructor(name: string, reducer: (param0: number, param1: number, param2: number, param3: number, param4: number) => boolean)
     // private name: string;
-    // private reducer: (param0: number, param1: number, param2: number, param3: number, param4: number) => kotlin.Boolean;
+    // private reducer: (param0: number, param1: number, param2: number, param3: number, param4: number) => boolean;
     getSerializedName(): string;
     shouldGenerate(seed: number, salt: number, sourceX: number, sourceZ: number, probability: number): boolean;
     name(): "DEFAULT" | "LEGACY_TYPE_1" | "LEGACY_TYPE_2" | "LEGACY_TYPE_3";

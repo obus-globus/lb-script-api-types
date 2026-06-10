@@ -59,8 +59,8 @@ export abstract class DelegatingOps<T extends Object | number | string | boolean
     getGeneric(arg0: T, arg1: T): DataResult<T>;
     getIntStream(arg0: T): DataResult<IntStream>;
     getIntStream(input: T): DataResult<IntStream>;
-    getList(arg0: T): DataResult<(param0: (param0: T) => void) => void>;
-    getList(input: T): DataResult<(param0: (param0: T) => void) => void>;
+    getList(arg0: T): DataResult<(param0: Consumer<T>) => void>;
+    getList(input: T): DataResult<(param0: Consumer<T>) => void>;
     getLongStream(arg0: T): DataResult<LongStream>;
     getLongStream(input: T): DataResult<LongStream>;
     getMap(arg0: T): DataResult<MapLike<T>>;
@@ -88,7 +88,7 @@ export abstract class DelegatingOps<T extends Object | number | string | boolean
     set(arg0: T, arg1: string, arg2: T): T;
     update(arg0: T, arg1: string, arg2: (param0: T) => T): T;
     updateGeneric(arg0: T, arg1: T, arg2: (param0: T) => T): T;
-    withDecoder(arg0: Decoder<E>): (param0: T) => DataResult<Pair<E, T>>;
-    withEncoder(arg0: Encoder<E>): (param0: E) => DataResult<T>;
-    withParser(arg0: Decoder<E>): (param0: T) => DataResult<E>;
+    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: T) => DataResult<Pair<E, T>>;
+    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<T>;
+    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: T) => DataResult<E>;
 }

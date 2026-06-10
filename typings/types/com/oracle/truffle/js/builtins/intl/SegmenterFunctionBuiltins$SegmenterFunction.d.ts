@@ -15,7 +15,7 @@ export class SegmenterFunctionBuiltins$SegmenterFunction extends Enum<SegmenterF
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): SegmenterFunctionBuiltins$SegmenterFunction;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

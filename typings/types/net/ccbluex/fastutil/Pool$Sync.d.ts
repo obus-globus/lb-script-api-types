@@ -6,7 +6,7 @@ import type { Pool$Companion } from '../../../net/ccbluex/fastutil/Pool$Companio
 export class Pool$Sync<E extends Object | number | string | boolean> extends Object implements Pool<E> {
     static Companion: Pool$Companion;
     static create(paramarg0: () => Object | null): Pool<Object>;
-    static create(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => void): Pool<Object>;
+    static create(paramarg0: () => Object | null, paramarg1: (param0: Object) => void): Pool<Object>;
     constructor(delegate: Pool<E>)
     // private delegate: Pool<E>;
     borrow(): E;

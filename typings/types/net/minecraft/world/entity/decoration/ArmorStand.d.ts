@@ -9,6 +9,7 @@ import type { SoundEvent } from '../../../../../net/minecraft/sounds/SoundEvent.
 import type { InteractionHand } from '../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { DamageSource } from '../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityDimensions } from '../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
@@ -76,7 +77,7 @@ export class ArmorStand extends LivingEntity {
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static TAG_AIR: string;
@@ -110,7 +111,7 @@ export class ArmorStand extends LivingEntity {
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
     static WOBBLE_TIME: number;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;

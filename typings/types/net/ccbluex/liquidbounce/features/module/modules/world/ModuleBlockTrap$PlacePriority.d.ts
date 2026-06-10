@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
-import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 /**
  * Determines how the blocks are added to the placement queue.
  *
@@ -17,13 +16,13 @@ export class ModuleBlockTrap$PlacePriority extends Enum<ModuleBlockTrap$PlacePri
     static HIGHEST: ModuleBlockTrap$PlacePriority;
     static LOWEST: ModuleBlockTrap$PlacePriority;
     static getEntries(): ModuleBlockTrap$PlacePriority[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBlockTrap$PlacePriority;
     static values(): (Object | null)[];
-    private constructor(tag: string, comparator: (param0: BlockPos) => kotlin.Boolean)
-    readonly comparator: (param0: BlockPos) => kotlin.Boolean;
+    private constructor(tag: string, comparator: (param0: Object) => boolean)
+    readonly comparator: (param0: Object) => boolean;
     readonly tag: string;
     name(): "CLOSEST" | "FURTHEST" | "HIGHEST" | "LOWEST";
 }

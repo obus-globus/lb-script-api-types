@@ -20,10 +20,10 @@ export class ListFormatter extends Object {
     // private start: string;
     // private createPatternHandler(two: string, end: string): ListFormatter$PatternHandler;
     format(items: Object[]): string;
-    format(items: E[]): string;
-    formatImpl(items: E[], needsFields: boolean): ListFormatter$FormattedListBuilder;
+    format(items: (Object | null)[]): string;
+    formatImpl(items: (Object | null)[], needsFields: boolean): ListFormatter$FormattedListBuilder;
     formatToValue(items: Object[]): ListFormatter$FormattedList;
-    formatToValue(items: E[]): ListFormatter$FormattedList;
+    formatToValue(items: (Object | null)[]): ListFormatter$FormattedList;
     getLocale(): ULocale;
     getPatternForNumItems(count: number): string;
 }

@@ -10,10 +10,12 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
+import type { Biome } from '../../../../net/minecraft/world/level/biome/Biome.d.ts'
+import type { Structure } from '../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 export class LocationPredicate extends Record {
     static CODEC: Codec<LocationPredicate>;
-    constructor(position: Optional<LocationPredicate$PositionPredicate>, biomes: Optional<Holder<T>[]>, structures: Optional<Holder<T>[]>, dimension: Optional<ResourceKey<Level>>, smokey: Optional<boolean>, light: Optional<LightPredicate>, block: Optional<BlockPredicate>, fluid: Optional<FluidPredicate>, canSeeSky: Optional<boolean>)
-    // private biomes: Optional<Holder<T>[]>;
+    constructor(position: Optional<LocationPredicate$PositionPredicate>, biomes: Optional<Holder<Biome>[]>, structures: Optional<Holder<Structure>[]>, dimension: Optional<ResourceKey<Level>>, smokey: Optional<boolean>, light: Optional<LightPredicate>, block: Optional<BlockPredicate>, fluid: Optional<FluidPredicate>, canSeeSky: Optional<boolean>)
+    // private biomes: Optional<Holder<Biome>[]>;
     // private block: Optional<BlockPredicate>;
     // private canSeeSky: Optional<boolean>;
     // private dimension: Optional<ResourceKey<Level>>;
@@ -21,8 +23,8 @@ export class LocationPredicate extends Record {
     // private light: Optional<LightPredicate>;
     // private position: Optional<LocationPredicate$PositionPredicate>;
     // private smokey: Optional<boolean>;
-    // private structures: Optional<Holder<T>[]>;
-    biomes(): Optional<Holder<T>[]>;
+    // private structures: Optional<Holder<Structure>[]>;
+    biomes(): Optional<Holder<Biome>[]>;
     block(): Optional<BlockPredicate>;
     canSeeSky(): Optional<boolean>;
     dimension(): Optional<ResourceKey<Level>>;
@@ -33,6 +35,6 @@ export class LocationPredicate extends Record {
     matches(level: ServerLevel, x: number, y: number, z: number): boolean;
     position(): Optional<LocationPredicate$PositionPredicate>;
     smokey(): Optional<boolean>;
-    structures(): Optional<Holder<T>[]>;
+    structures(): Optional<Holder<Structure>[]>;
     toString(): string;
 }

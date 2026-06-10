@@ -8,10 +8,10 @@ export class Reference2ObjectLinkedOpenHashMap$FastEntryIterator extends Referen
     constructor(null_: Reference2ObjectLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Reference2ObjectLinkedOpenHashMap$FastEntryIterator)
     // private entry: Reference2ObjectLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2ObjectMap$Entry<K, V>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Reference2ObjectLinkedOpenHashMap$MapEntry;
-    previous(): Reference2ObjectLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Reference2ObjectMap$Entry<K, V>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Reference2ObjectMap$Entry<K, V>): void;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Reference2ObjectLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Reference2ObjectLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Reference2ObjectMap$Entry<K, V>): void;
 }

@@ -15,7 +15,7 @@ import type { DataSource } from '../../../../../net/minecraft/network/chat/conte
 import type { CompilableString } from '../../../../../net/minecraft/util/CompilableString.d.ts'
 export class NbtContents extends Record implements ComponentContents {
     static MAP_CODEC: MapCodec<NbtContents>;
-    static NBT_PATH_CODEC: Codec<Object>;
+    static NBT_PATH_CODEC: Codec<CompilableString<NbtPathArgument$NbtPath>>;
     // private dataSource: DataSource;
     // private interpreting: boolean;
     // private nbtPath: CompilableString<NbtPathArgument$NbtPath>;
@@ -31,6 +31,6 @@ export class NbtContents extends Record implements ComponentContents {
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
     separator(): Optional<Component>;
     toString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

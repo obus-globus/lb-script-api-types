@@ -13,6 +13,6 @@ export class GlTexture extends GlResource implements TextureAccess {
     destroyInternal(): void;
     getSampling(): GlSampler;
     getTarget(): TextureType;
-    getTextureId(): () => kotlin.Int;
+    getTextureId(): () => number;
     getType(): TextureType;
 }

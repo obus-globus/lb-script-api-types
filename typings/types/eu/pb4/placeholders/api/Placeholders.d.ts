@@ -15,17 +15,17 @@ export class Placeholders extends Object {
     static SERVER_PLACEHOLDER_GETTER: Placeholders$PlaceholderGetter<ServerPlaceholderContext>;
     static SERVER_PLACEHOLDER_PARSER: NodeParser;
     static getCommonPlaceholder(paramarg0: Identifier): Placeholder<PlaceholderContext, Object>;
-    static getCommonPlaceholders(): Map<Identifier, Object | null>;
+    static getCommonPlaceholders(): Map<Identifier, Placeholder<PlaceholderContext, Object>>;
     static getServerPlaceholder(paramarg0: Identifier): Placeholder<ServerPlaceholderContext, Object>;
-    static getServerPlaceholders(): Map<Identifier, Object | null>;
+    static getServerPlaceholders(): Map<Identifier, Placeholder<ServerPlaceholderContext, Object>>;
     static parseCommonPlaceholder(paramarg0: Identifier, paramarg1: string, paramarg2: PlaceholderContext): PlaceholderResult;
     static parseServerPlaceholder(paramarg0: Identifier, paramarg1: string, paramarg2: ServerPlaceholderContext): PlaceholderResult;
-    static registerCommon(paramarg0: Identifier, paramarg1: ArgumentParser<Object>, paramarg2: (param0: PlaceholderContext, param1: Object | null) => eu.pb4.placeholders.api.PlaceholderResult): void;
-    static registerCommon(paramarg0: Identifier, paramarg1: (param0: PlaceholderContext, param1: string) => eu.pb4.placeholders.api.PlaceholderResult): void;
+    static registerCommon(paramarg0: Identifier, paramarg1: ArgumentParser<Object>, paramarg2: (param0: PlaceholderContext, param1: Object | null) => PlaceholderResult): void;
+    static registerCommon(paramarg0: Identifier, paramarg1: (param0: PlaceholderContext, param1: string) => PlaceholderResult): void;
     static registerCommon(paramarg0: Placeholder<PlaceholderContext, Object>): void;
     static registerCommonChangeEvent(paramarg0: Placeholders$PlaceholderListChangedCallback): void;
-    static registerServer(paramarg0: Identifier, paramarg1: ArgumentParser<Object>, paramarg2: (param0: ServerPlaceholderContext, param1: Object | null) => eu.pb4.placeholders.api.PlaceholderResult): void;
-    static registerServer(paramarg0: Identifier, paramarg1: (param0: ServerPlaceholderContext, param1: string) => eu.pb4.placeholders.api.PlaceholderResult): void;
+    static registerServer(paramarg0: Identifier, paramarg1: ArgumentParser<Object>, paramarg2: (param0: ServerPlaceholderContext, param1: Object | null) => PlaceholderResult): void;
+    static registerServer(paramarg0: Identifier, paramarg1: (param0: ServerPlaceholderContext, param1: string) => PlaceholderResult): void;
     static registerServer(paramarg0: Placeholder<ServerPlaceholderContext, Object>): void;
     static registerServerChangeEvent(paramarg0: Placeholders$PlaceholderListChangedCallback): void;
     constructor()

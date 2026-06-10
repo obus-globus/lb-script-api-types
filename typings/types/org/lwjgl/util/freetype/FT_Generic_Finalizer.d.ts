@@ -1,6 +1,6 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Callback } from '../../../../org/lwjgl/system/Callback.d.ts'
 import type { Callback$Descriptor } from '../../../../org/lwjgl/system/Callback$Descriptor.d.ts'
+import type { CallbackI } from '../../../../org/lwjgl/system/CallbackI.d.ts'
 import type { FT_Generic_FinalizerI } from '../../../../org/lwjgl/util/freetype/FT_Generic_FinalizerI.d.ts'
 export abstract class FT_Generic_Finalizer extends Callback implements FT_Generic_FinalizerI {
     static BITS32: boolean;
@@ -14,8 +14,8 @@ export abstract class FT_Generic_Finalizer extends Callback implements FT_Generi
     static create(paramarg0: (param0: number) => void): FT_Generic_Finalizer;
     static createSafe(paramarg0: number): FT_Generic_Finalizer;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): Object | null;
-    static getSafe(paramarg0: number): Object | null;
+    static get(paramarg0: number): CallbackI | null;
+    static getSafe(paramarg0: number): CallbackI | null;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

@@ -20,7 +20,7 @@ export abstract class AFServerSocket<A extends AFSocketAddress> extends ServerSo
     static setSocketFactory(paramarg0: SocketImplFactory): void;
     constructor()
     constructor(arg0: FileDescriptor)
-    // private bindFilter: (param0: SocketAddress) => java.net.SocketAddress;
+    // private bindFilter: (param0: SocketAddress) => SocketAddress;
     // private boundEndpoint: A;
     readonly channel: AFServerSocketChannel<A>;
     // private closeables: Closeables;
@@ -34,7 +34,7 @@ export abstract class AFServerSocket<A extends AFSocketAddress> extends ServerSo
     addressFamily(): AFAddressFamily<A>;
     bind(arg0: SocketAddress): void;
     bind(arg0: SocketAddress, arg1: number): void;
-    bindHook(arg0: (param0: SocketAddress) => java.net.SocketAddress): AFServerSocket<A>;
+    bindHook(arg0: (param0: SocketAddress) => SocketAddress): AFServerSocket<A>;
     // private boundEndpoint0(): A;
     close(): void;
     forceBindAddress(arg0: SocketAddress): AFServerSocket<A>;

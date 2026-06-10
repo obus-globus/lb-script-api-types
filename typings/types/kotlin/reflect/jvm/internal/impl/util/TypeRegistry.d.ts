@@ -8,8 +8,8 @@ export abstract class TypeRegistry<K extends Object | number | string | boolean,
     // private idPerType: { [key: string]: number };
     allValuesThreadUnsafeForRendering(): { [key: string]: number };
     customComputeIfAbsent(arg0: { [key: string]: number }, arg1: string, arg2: (param0: string) => number): number;
-    generateNullableAccessor(arg0: KClass<KK>): NullableArrayMapAccessor<K, V, T>;
+    generateNullableAccessor<T extends V, KK extends K>(arg0: KClass<KK>): NullableArrayMapAccessor<K, V, T>;
     getId(arg0: string): number;
-    getId(arg0: KClass<T>): number;
-    getIndices(): E[];
+    getId<T extends K>(arg0: KClass<T>): number;
+    getIndices(): number[];
 }

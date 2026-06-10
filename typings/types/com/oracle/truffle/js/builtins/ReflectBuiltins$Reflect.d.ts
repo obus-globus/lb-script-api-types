@@ -27,7 +27,7 @@ export class ReflectBuiltins$Reflect extends Enum<ReflectBuiltins$Reflect> imple
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): ReflectBuiltins$Reflect;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

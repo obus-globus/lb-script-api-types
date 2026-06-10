@@ -18,7 +18,7 @@ export class CustomAntiBotMode$CustomConditions extends Enum<CustomAntiBotMode$C
     static NO_GAME_MODE: CustomAntiBotMode$CustomConditions;
     static SWUNG: CustomAntiBotMode$CustomConditions;
     static getEntries(): CustomAntiBotMode$CustomConditions[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomAntiBotMode$CustomConditions;

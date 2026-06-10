@@ -1,3 +1,4 @@
+import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { MultiVariant } from '../../../../../../net/minecraft/client/data/models/MultiVariant.d.ts'
 import type { BlockModelDefinitionGenerator } from '../../../../../../net/minecraft/client/data/models/blockstates/BlockModelDefinitionGenerator.d.ts'
@@ -14,8 +15,8 @@ export class MultiPartGenerator extends Object implements BlockModelDefinitionGe
     // private parts: MultiPartGenerator$Entry[];
     block(): Block;
     create(): BlockStateModelDispatcher;
-    // private validateCondition(condition: (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>): void;
+    // private validateCondition(condition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean): void;
     with(variants: MultiVariant): MultiPartGenerator;
     with(condition: ConditionBuilder, variants: MultiVariant): MultiPartGenerator;
-    with(condition: (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>, variants: MultiVariant): MultiPartGenerator;
+    with(condition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean, variants: MultiVariant): MultiPartGenerator;
 }

@@ -6,14 +6,14 @@ import type { ProblemReporter$PathElement } from '../../../net/minecraft/util/Pr
 import type { ProblemReporter$Problem } from '../../../net/minecraft/util/ProblemReporter$Problem.d.ts'
 export class ProblemReporter$Collector extends Object implements ProblemReporter {
     static DISCARDING: ProblemReporter;
-    static EMPTY_ROOT: () => kotlin.String;
+    static EMPTY_ROOT: () => string;
     constructor()
-    private constructor(parent: ProblemReporter$Collector, path: () => kotlin.String)
-    constructor(root: () => kotlin.String)
-    // private element: () => kotlin.String;
+    private constructor(parent: ProblemReporter$Collector, path: () => string)
+    constructor(root: () => string)
+    // private element: () => string;
     // private parent: ProblemReporter$Collector;
     // private problems: ProblemReporter$Collector$Entry[];
-    forChild(path: () => kotlin.String): ProblemReporter;
+    forChild(path: () => string): ProblemReporter;
     forEach(output: (param0: string, param1: ProblemReporter$Problem) => void): void;
     getReport(): string;
     getTreeReport(): string;

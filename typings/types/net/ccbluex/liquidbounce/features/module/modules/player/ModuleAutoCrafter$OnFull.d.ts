@@ -10,7 +10,7 @@ export class ModuleAutoCrafter$OnFull extends Enum<ModuleAutoCrafter$OnFull> imp
     static THROW: ModuleAutoCrafter$OnFull;
     static WAIT: ModuleAutoCrafter$OnFull;
     static getEntries(): ModuleAutoCrafter$OnFull[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoCrafter$OnFull;

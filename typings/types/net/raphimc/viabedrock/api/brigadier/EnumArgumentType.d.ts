@@ -11,9 +11,8 @@ export class EnumArgumentType extends Object implements ArgumentType<Object> {
     constructor(arg0: string[], arg1: string[])
     // private completions: string[];
     // private values: string[];
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(arg0: StringReader): Object;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Object;
+    parse(arg0: StringReader): Object;
 }

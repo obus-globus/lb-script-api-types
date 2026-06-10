@@ -6,12 +6,12 @@ import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/Method
 import type { ElementNode } from '../../../../../../org/spongepowered/asm/mixin/injection/selectors/ElementNode.d.ts'
 import type { ElementNode$NodeType } from '../../../../../../org/spongepowered/asm/mixin/injection/selectors/ElementNode$NodeType.d.ts'
 export class ElementNode$ElementNodeMethod extends ElementNode<MethodNode> {
-    static dynamicInsnList(paramarg0: AbstractInsnNode[]): (Object | null)[];
-    static fieldList(paramarg0: ClassNode): (Object | null)[];
-    static insnList(paramarg0: AbstractInsnNode[]): (Object | null)[];
-    static listOf(paramarg0: ClassNode, paramarg1: (Object | null)[]): (Object | null)[];
-    static methodList(paramarg0: ClassNode): (Object | null)[];
-    static of(paramarg0: Object | null): ElementNode<Object>;
+    static dynamicInsnList(paramarg0: AbstractInsnNode[]): ElementNode<AbstractInsnNode>[];
+    static fieldList(paramarg0: ClassNode): ElementNode<FieldNode>[];
+    static insnList(paramarg0: AbstractInsnNode[]): ElementNode<AbstractInsnNode>[];
+    static listOf(paramarg0: ClassNode, paramarg1: (Object | null)[]): ElementNode<Object>[];
+    static methodList(paramarg0: ClassNode): ElementNode<MethodNode>[];
+    static of(paramarg0: AbstractInsnNode | null): ElementNode<AbstractInsnNode>;
     static of(paramarg0: ClassNode, paramarg1: Object | null): ElementNode<Object>;
     static of(paramarg0: ClassNode, paramarg1: FieldNode): ElementNode<FieldNode>;
     static of(paramarg0: ClassNode, paramarg1: MethodNode): ElementNode<MethodNode>;

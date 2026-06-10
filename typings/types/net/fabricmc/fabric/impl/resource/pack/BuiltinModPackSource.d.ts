@@ -7,10 +7,10 @@ export class BuiltinModPackSource extends Record implements PackSource {
     static BUILT_IN: PackSource;
     static DEFAULT: PackSource;
     static FEATURE: PackSource;
-    static NO_DECORATION: (param0: Component) => unknown;
+    static NO_DECORATION: (param0: Component) => Object | null;
     static SERVER: PackSource;
     static WORLD: PackSource;
-    static create(paramdecorator: (param0: Component) => unknown, paramaddAutomatically: boolean): PackSource;
+    static create(paramdecorator: (param0: Component) => Object | null, paramaddAutomatically: boolean): PackSource;
     constructor(modId: string)
     // private modId: string;
     decorate(arg0: Component): Component;

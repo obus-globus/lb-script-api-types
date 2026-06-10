@@ -1,3 +1,4 @@
+import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
 import type { ReceiverParameterDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ReceiverParameterDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
@@ -11,7 +12,7 @@ import type { KotlinType } from '../../../../../../../../../kotlin/reflect/jvm/i
 export abstract class LazyJavaStaticScope extends LazyJavaScope {
     static Companion: MemberScope$Companion;
     constructor(arg0: LazyJavaResolverContext)
-    computeNonDeclaredProperties(arg0: Name, arg1: E[]): void;
+    computeNonDeclaredProperties(arg0: Name, arg1: PropertyDescriptor[]): void;
     getDispatchReceiverParameter(): ReceiverParameterDescriptor;
     resolveMethodSignature(arg0: JavaMethod, arg1: TypeParameterDescriptor[], arg2: KotlinType, arg3: ValueParameterDescriptor[]): LazyJavaScope$MethodSignatureData;
 }

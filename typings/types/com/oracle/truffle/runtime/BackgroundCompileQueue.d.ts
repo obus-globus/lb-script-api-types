@@ -18,10 +18,10 @@ export class BackgroundCompileQueue extends Object {
     // private shutdown: boolean;
     // private awaitTermination(timeout: number): void;
     flush(engine: EngineData): void;
-    getAllTargets(engine: EngineData): E[];
+    getAllTargets(engine: EngineData): OptimizedCallTarget[];
     // private getExecutorService(callTarget: OptimizedCallTarget): ExecutorService;
     getQueueSize(): number;
-    getQueuedTargets(engine: EngineData): E[];
+    getQueuedTargets(engine: EngineData): OptimizedCallTarget[];
     newThreadFactory(threadNamePrefix: string, callTarget: OptimizedCallTarget): ThreadFactory;
     // private nextId(): number;
     notifyIdleCompilerThread(): void;

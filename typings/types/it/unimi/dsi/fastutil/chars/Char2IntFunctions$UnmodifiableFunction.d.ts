@@ -3,8 +3,8 @@ import type { Char2IntFunction } from '../../../../../it/unimi/dsi/fastutil/char
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2IntFunctions$UnmodifiableFunction extends AbstractChar2IntFunction implements Serializable {
-    constructor(arg0: (param0: string) => kotlin.Int)
-    // private function: (param0: string) => kotlin.Int;
+    constructor(arg0: (param0: string) => number)
+    // private function: (param0: string) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

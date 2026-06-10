@@ -12,7 +12,7 @@ export class IntegerValueTypeConstructor extends Object implements TypeConstruct
     getBuiltIns(): KotlinBuiltIns;
     getDeclarationDescriptor(): void;
     getParameters(): TypeParameterDescriptor[];
-    getSupertypes(): E[];
+    getSupertypes(): KotlinType[];
     isDenotable(): boolean;
     refine(arg0: KotlinTypeRefiner): TypeConstructor;
     toString(): string;

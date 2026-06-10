@@ -5,8 +5,8 @@ import type { MapLike } from '../../../../com/mojang/serialization/MapLike.d.ts'
 import type { RecordBuilder } from '../../../../com/mojang/serialization/RecordBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface BaseMapCodec<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
-    decode(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
+    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
     elementCodec(): Codec<V>;
-    encode(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
+    encode<T extends Object | number | string | boolean>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     keyCodec(): Codec<K>;
 }

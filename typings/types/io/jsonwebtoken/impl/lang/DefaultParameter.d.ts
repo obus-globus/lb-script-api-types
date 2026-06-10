@@ -3,8 +3,8 @@ import type { Parameter } from '../../../../io/jsonwebtoken/impl/lang/Parameter.
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DefaultParameter<T extends Object | number | string | boolean> extends Object implements Parameter<T> {
-    constructor(arg0: string, arg1: string, arg2: boolean, arg3: Class<T>, arg4: Class<E[]>, arg5: Converter<T, Object>)
-    // private COLLECTION_TYPE: Class<E[]>;
+    constructor(arg0: string, arg1: string, arg2: boolean, arg3: Class<T>, arg4: Class<T[]>, arg5: Converter<T, Object>)
+    // private COLLECTION_TYPE: Class<T[]>;
     // private CONVERTER: Converter<T, Object>;
     // private ID: string;
     // private IDIOMATIC_TYPE: Class<T>;

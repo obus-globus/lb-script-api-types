@@ -41,18 +41,18 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { OptionValues } from '../../../../../org/graalvm/options/OptionValues.d.ts'
 export class InstrumentationHandler extends Object {
     constructor(polyglotEngine: Object)
-    // private allocationBindings: E[];
+    // private allocationBindings: EventBinding$Allocation<AllocationListener>[];
     // private allocationReporters: Map<LanguageInfo, AllocationReporter>;
     // private cachedProvidedTags: Map<Class<Object>, Class<Object>[]>;
-    // private contextsBindings: E[];
+    // private contextsBindings: EventBinding<ContextsListener>[];
     // private engineInstrumenter: InstrumentationHandler$EngineInstrumenter;
-    // private executedRoots: E[];
+    // private executedRoots: RootNode[];
     // private executionBindings: EventBinding$Source<Object>[];
     // private hasLoadOrExecutionBinding: boolean;
     // private instrumenterMap: Map<Object, InstrumentationHandler$AbstractInstrumenter>;
-    // private loadedRoots: E[];
-    // private outputErrBindings: E[];
-    // private outputStdBindings: E[];
+    // private loadedRoots: RootNode[];
+    // private outputErrBindings: EventBinding<OutputStream>[];
+    // private outputStdBindings: EventBinding<OutputStream>[];
     // private polyglotEngine: Object;
     // private sourceSectionBindings: EventBinding$Source<Object>[];
     // private sourcesExecuted: SourceInstrumentationHandler;
@@ -61,17 +61,17 @@ export class InstrumentationHandler extends Object {
     // private threadLocalNewSourcesExecuted: ThreadLocal<Map<Source, void>>;
     // private threadLocalNewSourcesLoaded: ThreadLocal<Map<Source, void>>;
     // private threadLocalSourceSectionLoadedList: ThreadLocal<InstrumentationHandler$BindingLoadSourceSectionEvent[]>;
-    // private threadsActivationBindings: E[];
-    // private threadsBindings: E[];
-    // private addAllocationBinding(binding: EventBinding$Allocation<T>): EventBinding<T>;
-    // private addContextsBinding(binding: EventBinding<T>, includeActiveContexts: boolean): EventBinding<T>;
-    addExecutionBinding(binding: EventBinding$Source<T>): EventBinding<T>;
+    // private threadsActivationBindings: EventBinding<ThreadsActivationListener>[];
+    // private threadsBindings: EventBinding<ThreadsListener>[];
+    // private addAllocationBinding<T extends AllocationListener>(binding: EventBinding$Allocation<T>): EventBinding<T>;
+    // private addContextsBinding<T extends ContextsListener>(binding: EventBinding<T>, includeActiveContexts: boolean): EventBinding<T>;
+    addExecutionBinding<T extends Object | number | string | boolean>(binding: EventBinding$Source<T>): EventBinding<T>;
     // private addInstrumenter(key: Object, instrumenter: InstrumentationHandler$AbstractInstrumenter): void;
-    addOutputBinding(binding: EventBinding<T>, errorOutput: boolean): EventBinding<T>;
-    addSourceExecutionBinding(binding: EventBinding$SourceExecuted<T>): EventBinding<T>;
-    addSourceLoadedBinding(binding: EventBinding$SourceLoaded<T>): EventBinding<T>;
-    addSourceSectionBinding(binding: EventBinding$Source<T>): EventBinding<T>;
-    // private addThreadsBinding(binding: EventBinding<T>, includeStartedThreads: boolean): EventBinding<T>;
+    addOutputBinding<T extends OutputStream>(binding: EventBinding<T>, errorOutput: boolean): EventBinding<T>;
+    addSourceExecutionBinding<T extends Object | number | string | boolean>(binding: EventBinding$SourceExecuted<T>): EventBinding<T>;
+    addSourceLoadedBinding<T extends Object | number | string | boolean>(binding: EventBinding$SourceLoaded<T>): EventBinding<T>;
+    addSourceSectionBinding<T extends Object | number | string | boolean>(binding: EventBinding$Source<T>): EventBinding<T>;
+    // private addThreadsBinding<T extends ThreadsListener>(binding: EventBinding<T>, includeStartedThreads: boolean): EventBinding<T>;
     // private attachAllocationListener<T extends AllocationListener>(instrumenter: InstrumentationHandler$AbstractInstrumenter, filter: AllocationEventFilter, listener: T): EventBinding<T>;
     // private attachContextsListener<T extends ContextsListener>(instrumenter: InstrumentationHandler$AbstractInstrumenter, listener: T, includeActiveContexts: boolean): EventBinding<T>;
     // private attachExecuteSourceListener<T extends Object | number | string | boolean>(abstractInstrumenter: InstrumentationHandler$AbstractInstrumenter, filter: SourceSectionFilter, listener: T, notifyLoaded: boolean): EventBinding<T>;

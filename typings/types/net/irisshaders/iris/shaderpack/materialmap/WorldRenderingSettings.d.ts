@@ -2,7 +2,6 @@ import type { Object2IntFunction } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ChunkVertexType } from '../../../../../net/caffeinemc/mods/sodium/client/render/chunk/vertex/format/ChunkVertexType.d.ts'
 import type { BlockRenderType } from '../../../../../net/irisshaders/iris/shaderpack/materialmap/BlockRenderType.d.ts'
-import type { NamespacedId } from '../../../../../net/irisshaders/iris/shaderpack/materialmap/NamespacedId.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class WorldRenderingSettings extends Object {
@@ -13,9 +12,9 @@ export class WorldRenderingSettings extends Object {
     readonly blockTypeIds: Map<Block, BlockRenderType>;
     // private chunkVertexFormat: ChunkVertexType;
     readonly disableDirectionalShading: boolean;
-    readonly entityIds: (param0: NamespacedId) => kotlin.Int;
+    readonly entityIds: (param0: Object) => number;
     // private hasVillagerConversionId: boolean;
-    readonly itemIds: (param0: NamespacedId) => kotlin.Int;
+    readonly itemIds: (param0: Object) => number;
     readonly reloadRequired: boolean;
     readonly separateEntityDraws: boolean;
     readonly useSeparateAo: boolean;
@@ -25,8 +24,8 @@ export class WorldRenderingSettings extends Object {
     getAmbientOcclusionLevel(): number;
     getBlockStateIds(): Object2IntMap<BlockState>;
     getBlockTypeIds(): Map<Block, BlockRenderType>;
-    getEntityIds(): (param0: NamespacedId) => kotlin.Int;
-    getItemIds(): (param0: NamespacedId) => kotlin.Int;
+    getEntityIds(): (param0: Object) => number;
+    getItemIds(): (param0: Object) => number;
     getVertexFormat(): ChunkVertexType;
     hasVillagerConversionId(): boolean;
     isReloadRequired(): boolean;
@@ -35,8 +34,8 @@ export class WorldRenderingSettings extends Object {
     setBlockTypeIds(arg0: Map<Block, BlockRenderType>): void;
     setBreaksAnisotropy(arg0: boolean): void;
     setDisableDirectionalShading(arg0: boolean): void;
-    setEntityIds(arg0: (param0: NamespacedId) => kotlin.Int): void;
-    setItemIds(arg0: (param0: NamespacedId) => kotlin.Int): void;
+    setEntityIds(arg0: (param0: Object) => number): void;
+    setItemIds(arg0: (param0: Object) => number): void;
     setSeparateEntityDraws(arg0: boolean): void;
     setUseSeparateAo(arg0: boolean): void;
     setVertexFormat(arg0: ChunkVertexType): void;

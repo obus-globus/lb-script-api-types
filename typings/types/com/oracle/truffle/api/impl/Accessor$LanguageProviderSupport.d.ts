@@ -14,5 +14,5 @@ export abstract class Accessor$LanguageProviderSupport extends Accessor$Support 
     getInternalResourceId(provider: InternalResourceProvider): string;
     getInternalResourceIds(provider: TruffleLanguageProvider): string[];
     getLanguageClassName(provider: TruffleLanguageProvider): string;
-    getServicesClassNames(provider: TruffleLanguageProvider): E[];
+    getServicesClassNames(provider: TruffleLanguageProvider): string[];
 }

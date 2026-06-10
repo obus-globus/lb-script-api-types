@@ -17,6 +17,7 @@ import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
+import type { EventListener } from '../../../java/util/EventListener.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DragSource extends Object implements Serializable {
     static DefaultCopyDrop: Cursor;
@@ -40,7 +41,7 @@ export class DragSource extends Object implements Serializable {
     getDragSourceListeners(): DragSourceListener[];
     getDragSourceMotionListeners(): DragSourceMotionListener[];
     getFlavorMap(): FlavorMap;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     processDragDropEnd(arg0: DragSourceDropEvent): void;
     processDragEnter(arg0: DragSourceDragEvent): void;
     processDragExit(arg0: DragSourceEvent): void;

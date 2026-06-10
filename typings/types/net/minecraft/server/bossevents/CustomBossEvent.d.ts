@@ -22,7 +22,7 @@ export class CustomBossEvent extends ServerBossEvent {
     removePlayer(player: ServerPlayer): void;
     setDirty(): void;
     setMax(max: number): void;
-    setPlayers(players: E[]): boolean;
+    setPlayers(players: ServerPlayer[]): boolean;
     setValue(value: number): void;
     value(): number;
 }

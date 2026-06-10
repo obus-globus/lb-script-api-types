@@ -12,10 +12,10 @@ export class ClientPlaceholders extends Object {
     static CLIENT_PLACEHOLDER_GETTER: Placeholders$PlaceholderGetter<ClientPlaceholderContext>;
     static CLIENT_PLACEHOLDER_PARSER: NodeParser;
     static getClientPlaceholder(paramarg0: Identifier): Placeholder<ClientPlaceholderContext, Object>;
-    static getClientPlaceholders(): Map<Identifier, Object | null>;
+    static getClientPlaceholders(): Map<Identifier, Placeholder<ClientPlaceholderContext, Object>>;
     static parseClientPlaceholder(paramarg0: Identifier, paramarg1: string, paramarg2: ClientPlaceholderContext): PlaceholderResult;
-    static registerClient(paramarg0: Identifier, paramarg1: ArgumentParser<Object>, paramarg2: (param0: ClientPlaceholderContext, param1: Object | null) => eu.pb4.placeholders.api.PlaceholderResult): void;
-    static registerClient(paramarg0: Identifier, paramarg1: (param0: ClientPlaceholderContext, param1: string) => eu.pb4.placeholders.api.PlaceholderResult): void;
+    static registerClient(paramarg0: Identifier, paramarg1: ArgumentParser<Object>, paramarg2: (param0: ClientPlaceholderContext, param1: Object | null) => PlaceholderResult): void;
+    static registerClient(paramarg0: Identifier, paramarg1: (param0: ClientPlaceholderContext, param1: string) => PlaceholderResult): void;
     static registerClient(paramarg0: Placeholder<ClientPlaceholderContext, Object>): void;
     static registerClientChangeEvent(paramarg0: Placeholders$PlaceholderListChangedCallback): void;
     constructor()

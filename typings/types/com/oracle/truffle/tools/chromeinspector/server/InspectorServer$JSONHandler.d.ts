@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InspectorServer$JSONHandler extends Object implements Function<InspectorServer$HttpRequest, InspectorServer$HttpResponse> {
     static identity(): (param0: Object | null) => Object | null;
     private constructor(null_: InspectorServer$JSONHandler)
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: InspectorServer$HttpResponse) => V): (param0: InspectorServer$HttpRequest) => V;
     apply(request: InspectorServer$HttpRequest): InspectorServer$HttpResponse;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
+    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => InspectorServer$HttpRequest): (param0: V) => InspectorServer$HttpResponse;
 }

@@ -6,21 +6,21 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class FilteredKeyMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMultimap<K, V> implements FilteredMultimap<K, V> {
-    constructor(unfiltered: Multimap<K, V>, keyPredicate: (param0: K) => kotlin.Boolean)
-    // private keyPredicate: (param0: K) => kotlin.Boolean;
+    constructor(unfiltered: Multimap<K, V>, keyPredicate: (param0: Object) => boolean)
+    // private keyPredicate: (param0: Object) => boolean;
     // private unfiltered: Multimap<K, V>;
     clear(): void;
     containsKey(key: Object): boolean;
-    createAsMap(): Map<K, E[]>;
-    createEntries(): E[];
+    createAsMap(): Map<K, V[]>;
+    createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];
-    createValues(): E[];
+    createValues(): V[];
     entryIterator(): Iterator<Map$Entry<K, V>>;
-    entryPredicate(): (param0: Map$Entry<K, V>) => kotlin.Boolean;
-    get(key: K): E[];
-    removeAll(key: Object): E[];
+    entryPredicate(): (param0: Object) => boolean;
+    get(key: K): V[];
+    removeAll(key: Object): V[];
     size(): number;
     unfiltered(): Multimap<K, V>;
-    unmodifiableEmptyCollection(): E[];
+    unmodifiableEmptyCollection(): V[];
 }

@@ -21,7 +21,7 @@ export abstract class RegexFlavor extends Object {
     emptyChecksOnMandatoryLoopIterations(): boolean;
     failingEmptyChecksDontBacktrack(): boolean;
     getCaseFoldAlgorithm(ast: RegexAST): CaseFoldData$CaseFoldAlgorithm;
-    getEqualsIgnoreCasePredicate(ast: RegexAST): (param0: number, param1: number, param2: boolean) => kotlin.Boolean;
+    getEqualsIgnoreCasePredicate(ast: RegexAST): (param0: number, param1: number, param2: boolean) => boolean;
     getName(): string;
     hasConditionalBackReferences(): boolean;
     // private hasTrait(traitMask: number): boolean;

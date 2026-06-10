@@ -9,7 +9,6 @@ export class ImmutableLongArray$Builder extends Object {
     addAll(values: ImmutableLongArray): ImmutableLongArray$Builder;
     addAll(stream: LongStream): ImmutableLongArray$Builder;
     addAll(values: number[]): ImmutableLongArray$Builder;
-    addAll(values: E[]): ImmutableLongArray$Builder;
     build(): ImmutableLongArray;
     // private ensureRoomFor(numberToAdd: number): void;
 }

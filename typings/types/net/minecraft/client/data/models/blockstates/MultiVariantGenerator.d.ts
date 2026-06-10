@@ -17,6 +17,6 @@ export class MultiVariantGenerator extends Object implements BlockModelDefinitio
     // private seenProperties: Property<Object>[];
     block(): Block;
     create(): BlockStateModelDispatcher;
-    with(newStage: PropertyDispatch<(param0: Object | null) => unknown>): MultiVariantGenerator;
-    with(singleMutator: (param0: Object | null) => unknown): MultiVariantGenerator;
+    with(newStage: PropertyDispatch<(param0: Object | null) => Object | null>): MultiVariantGenerator;
+    with(singleMutator: (param0: Object | null) => Object | null): MultiVariantGenerator;
 }

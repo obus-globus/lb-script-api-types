@@ -2,7 +2,7 @@ import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/int
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InteropArray extends Object implements TruffleObject {
     static create(paramarray: (Object | null)[]): InteropArray;
-    static create(paramlist: (Object | null)[]): InteropArray;
+    static create(paramlist: Object[]): InteropArray;
     private constructor(array: Object[])
     // private array: Object[];
     getArraySize(): number;

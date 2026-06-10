@@ -1,6 +1,7 @@
 import type { Converter } from '../../../../com/google/common/base/Converter.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Number } from '../../../../java/lang/Number.d.ts'
 export class Longs extends Object {
     static BYTES: number;
     static MAX_POWER_OF_TWO: number;
@@ -17,7 +18,7 @@ export class Longs extends Object {
     static indexOf(paramarray: number[], paramtarget: number[]): number;
     static join(paramseparator: string, paramarray: number[]): string;
     static lastIndexOf(paramarray: number[], paramtarget: number): number;
-    static lexicographicalComparator(): (param0: number[]) => kotlin.Boolean;
+    static lexicographicalComparator(): (param0: Object) => boolean;
     static max(paramarray: number[]): number;
     static min(paramarray: number[]): number;
     static reverse(paramarray: number[]): void;
@@ -27,7 +28,7 @@ export class Longs extends Object {
     static sortDescending(paramarray: number[]): void;
     static sortDescending(paramarray: number[], paramfromIndex: number, paramtoIndex: number): void;
     static stringConverter(): Converter<string, number>;
-    static toArray(paramcollection: E[]): number[];
+    static toArray(paramcollection: Number[]): number[];
     static toByteArray(paramvalue: number): number[];
     static tryParse(paramstring: string): number;
     static tryParse(paramstring: string, paramradix: number): number;

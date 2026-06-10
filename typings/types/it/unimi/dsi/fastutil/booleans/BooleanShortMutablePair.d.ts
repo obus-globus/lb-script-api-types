@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanShortMutablePair extends Object implements BooleanShortPair, Serializable {
-    static lexComparator(): (param0: BooleanShortPair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: boolean, paramarg1: number): BooleanShortMutablePair;
     static of(paramarg0: boolean, paramarg1: number): BooleanShortPair;
     constructor(arg0: boolean, arg1: number)

@@ -4,16 +4,16 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { DataComponentGetter } from '../../../../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
 import type { ContextKey } from '../../../../../../../net/minecraft/util/context/ContextKey.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
+import type { LootContextArg } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContextArg.d.ts'
 import type { LootContextArg$Getter } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContextArg$Getter.d.ts'
 export class CopyComponentsFunction$DirectSource<T extends DataComponentGetter> extends Record implements LootContextArg$Getter<T, DataComponentGetter> {
-    static ENTITY_OR_BLOCK: Codec<Object>;
+    static ENTITY_OR_BLOCK: Codec<LootContextArg<Object>>;
     private constructor(contextParam: ContextKey<T>)
     // private contextParam: ContextKey<T>;
     contextParam(): ContextKey<T>;
     equals(o: Object | null): boolean;
-    get<R extends Object | number | string | boolean>(context: LootContext): R;
-    get(value: T): DataComponentGetter;
     get(context: LootContext): DataComponentGetter;
+    get(value: T): DataComponentGetter;
     hashCode(): number;
     toString(): string;
 }

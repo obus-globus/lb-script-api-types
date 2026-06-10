@@ -22,7 +22,7 @@ export class TrivialDigraph<V extends Object | number | string | boolean> extend
     put(arg0: V, arg1: V, arg2: number): OptionalInt;
     remove(arg0: V): boolean;
     remove(arg0: V, arg1: V): OptionalInt;
-    removeAll(arg0: E[]): void;
+    removeAll(arg0: V[]): void;
     reverse(): DoubledDigraph<V>;
     sources(arg0: Object): V[];
     subgraph(arg0: V[]): Digraph<V>;

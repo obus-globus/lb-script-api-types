@@ -9,13 +9,14 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { BlockPredicate } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicate.d.ts'
 import type { BlockPredicateType } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicateType.d.ts'
 import type { StateTestingPredicate } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/StateTestingPredicate.d.ts'
+import type { Fluid } from '../../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class MatchingFluidsPredicate extends StateTestingPredicate {
     static CODEC: Codec<BlockPredicate>;
     static CODEC: MapCodec<MatchingFluidsPredicate>;
     static ONLY_IN_AIR_OR_WATER_PREDICATE: BlockPredicate;
     static ONLY_IN_AIR_PREDICATE: BlockPredicate;
-    constructor(offset: Vec3i, fluids: Holder<T>[])
-    // private fluids: Holder<T>[];
+    constructor(offset: Vec3i, fluids: Holder<Fluid>[])
+    // private fluids: Holder<Fluid>[];
     test(level: WorldGenLevel, origin: BlockPos): boolean;
     test(state: BlockState): boolean;
     type(): BlockPredicateType<Object>;

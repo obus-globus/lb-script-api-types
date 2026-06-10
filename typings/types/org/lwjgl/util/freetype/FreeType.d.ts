@@ -1167,7 +1167,7 @@ export class FreeType extends Object {
     static FTC_Manager_Done(paramarg0: number): void;
     static FTC_Manager_LookupFace(paramarg0: number, paramarg1: number, paramarg2: PointerBuffer): number;
     static FTC_Manager_LookupSize(paramarg0: number, paramarg1: FTC_Scaler, paramarg2: PointerBuffer): number;
-    static FTC_Manager_New(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number, param2: number, param3: number) => kotlin.Int, paramarg5: ByteBuffer, paramarg6: PointerBuffer): number;
+    static FTC_Manager_New(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number, param2: number, param3: number) => number, paramarg5: ByteBuffer, paramarg6: PointerBuffer): number;
     static FTC_Manager_RemoveFaceID(paramarg0: number, paramarg1: number): void;
     static FTC_Manager_Reset(paramarg0: number): void;
     static FTC_Node_Unref(paramarg0: number, paramarg1: number): void;
@@ -1307,7 +1307,7 @@ export class FreeType extends Object {
     static FT_List_Finalize(paramarg0: FT_List, paramarg1: (param0: number, param1: number, param2: number) => void, paramarg2: FT_Memory, paramarg3: number): void;
     static FT_List_Find(paramarg0: FT_List, paramarg1: number): FT_ListNode;
     static FT_List_Insert(paramarg0: FT_List, paramarg1: FT_ListNode): void;
-    static FT_List_Iterate(paramarg0: FT_List, paramarg1: (param0: number, param1: number) => kotlin.Int, paramarg2: number): number;
+    static FT_List_Iterate(paramarg0: FT_List, paramarg1: (param0: number, param1: number) => number, paramarg2: number): number;
     static FT_List_Remove(paramarg0: FT_List, paramarg1: FT_ListNode): void;
     static FT_List_Up(paramarg0: FT_List, paramarg1: FT_ListNode): void;
     static FT_Load_Char(paramarg0: FT_Face, paramarg1: number, paramarg2: number): number;
@@ -1361,7 +1361,7 @@ export class FreeType extends Object {
     static FT_Select_Size(paramarg0: FT_Face, paramarg1: number): number;
     static FT_Set_Char_Size(paramarg0: FT_Face, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
     static FT_Set_Charmap(paramarg0: FT_Face, paramarg1: FT_CharMap): number;
-    static FT_Set_Debug_Hook(paramarg0: number, paramarg1: number, paramarg2: (param0: number) => kotlin.Int): void;
+    static FT_Set_Debug_Hook(paramarg0: number, paramarg1: number, paramarg2: (param0: number) => number): void;
     static FT_Set_Default_Properties(paramarg0: number): void;
     static FT_Set_MM_Blend_Coordinates(paramarg0: FT_Face, paramarg1: CLongBuffer): number;
     static FT_Set_MM_Design_Coordinates(paramarg0: FT_Face, paramarg1: CLongBuffer): number;

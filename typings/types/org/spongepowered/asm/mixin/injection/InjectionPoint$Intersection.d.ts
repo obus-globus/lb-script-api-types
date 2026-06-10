@@ -24,9 +24,9 @@ export class InjectionPoint$Intersection extends InjectionPoint$CompositeInjecti
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: string, paramarg4: At$Shift, paramarg5: number, paramarg6: string[], paramarg7: string, paramarg8: string, paramarg9: number, paramarg10: number, paramarg11: string, paramarg12: number): InjectionPoint;
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: AnnotationNode): InjectionPoint;
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: At): InjectionPoint;
-    static register(paramarg0: Class<Object>): void;
-    static register(paramarg0: Class<Object>, paramarg1: string): void;
+    static register(paramarg0: Class<InjectionPoint>): void;
+    static register(paramarg0: Class<InjectionPoint>, paramarg1: string): void;
     static shift(paramarg0: InjectionPoint, paramarg1: number): InjectionPoint;
     constructor(arg0: InjectionPoint[])
-    find(arg0: string, arg1: AbstractInsnNode[], arg2: E[]): boolean;
+    find(arg0: string, arg1: AbstractInsnNode[], arg2: AbstractInsnNode[]): boolean;
 }

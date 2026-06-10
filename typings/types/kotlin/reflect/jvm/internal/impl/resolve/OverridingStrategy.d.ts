@@ -5,5 +5,5 @@ export abstract class OverridingStrategy extends Object {
     addFakeOverride(arg0: CallableMemberDescriptor): void;
     inheritanceConflict(arg0: CallableMemberDescriptor, arg1: CallableMemberDescriptor): void;
     overrideConflict(arg0: CallableMemberDescriptor, arg1: CallableMemberDescriptor): void;
-    setOverriddenDescriptors(arg0: CallableMemberDescriptor, arg1: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor, arg1: CallableMemberDescriptor[]): void;
 }

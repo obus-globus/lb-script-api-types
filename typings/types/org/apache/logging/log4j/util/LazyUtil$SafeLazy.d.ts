@@ -14,7 +14,7 @@ export class LazyUtil$SafeLazy<T extends Object | number | string | boolean> ext
     // private value: Object;
     get(): T;
     isInitialized(): boolean;
-    map(function_: (param0: T) => R): Lazy<R>;
+    map<R extends Object | number | string | boolean>(function_: (param0: T) => R): Lazy<R>;
     reset(): void;
     set(newValue: T): void;
     toString(): string;

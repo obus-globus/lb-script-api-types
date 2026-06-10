@@ -1,3 +1,4 @@
+import type { VertexConsumer } from '../../../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { ScopedValue } from '../../../../../../../java/lang/ScopedValue.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FluidRenderHandler } from '../../../../../../../net/fabricmc/fabric/api/client/render/fluid/v1/FluidRenderHandler.d.ts'
@@ -11,8 +12,8 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
 import type { FluidState } from '../../../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 export class FluidRenderingImpl extends Object {
     static IS_RENDERING_VANILLA_DEFAULT: ScopedValue<void>;
-    static render(paramarg0: FluidRenderer, paramarg1: FluidRenderHandler, paramarg2: BlockAndTintGetter, paramarg3: BlockPos, paramarg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, paramarg5: BlockState, paramarg6: FluidState, paramarg7: FluidRendering$DefaultRenderer): void;
-    static renderDefault(paramarg0: FluidRenderer, paramarg1: FluidRenderHandler, paramarg2: BlockAndTintGetter, paramarg3: BlockPos, paramarg4: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, paramarg5: BlockState, paramarg6: FluidState): void;
-    static renderVanillaDefault(paramarg0: FluidRenderer, paramarg1: BlockAndTintGetter, paramarg2: BlockPos, paramarg3: (param0: ChunkSectionLayer) => com.mojang.blaze3d.vertex.VertexConsumer, paramarg4: BlockState, paramarg5: FluidState): void;
+    static render(paramarg0: FluidRenderer, paramarg1: FluidRenderHandler, paramarg2: BlockAndTintGetter, paramarg3: BlockPos, paramarg4: (param0: ChunkSectionLayer) => VertexConsumer, paramarg5: BlockState, paramarg6: FluidState, paramarg7: FluidRendering$DefaultRenderer): void;
+    static renderDefault(paramarg0: FluidRenderer, paramarg1: FluidRenderHandler, paramarg2: BlockAndTintGetter, paramarg3: BlockPos, paramarg4: (param0: ChunkSectionLayer) => VertexConsumer, paramarg5: BlockState, paramarg6: FluidState): void;
+    static renderVanillaDefault(paramarg0: FluidRenderer, paramarg1: BlockAndTintGetter, paramarg2: BlockPos, paramarg3: (param0: ChunkSectionLayer) => VertexConsumer, paramarg4: BlockState, paramarg5: FluidState): void;
     constructor()
 }

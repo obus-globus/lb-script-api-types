@@ -8,6 +8,6 @@ import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 export class ChangeDimensionTrigger extends SimpleCriterionTrigger<ChangeDimensionTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ChangeDimensionTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: ChangeDimensionTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: ChangeDimensionTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, from: ResourceKey<Level>, to: ResourceKey<Level>): void;
 }

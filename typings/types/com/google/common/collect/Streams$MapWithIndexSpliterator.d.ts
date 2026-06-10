@@ -17,8 +17,8 @@ export abstract class Streams$MapWithIndexSpliterator<F extends Spliterator<Obje
     characteristics(): number;
     createSplit(from: F, i: number): S;
     estimateSize(): number;
-    forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
+    forEachRemaining(arg0: (param0: R) => void): void;
+    getComparator(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     trySplit(): S;

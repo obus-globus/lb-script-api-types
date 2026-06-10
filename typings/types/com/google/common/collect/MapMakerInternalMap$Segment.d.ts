@@ -15,7 +15,7 @@ export abstract class MapMakerInternalMap$Segment<K extends Object | number | st
     // private threshold: number;
     castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>): E;
     clear(): void;
-    clearReferenceQueue(referenceQueue: ReferenceQueue<T>): void;
+    clearReferenceQueue<T extends Object | number | string | boolean>(referenceQueue: ReferenceQueue<T>): void;
     clearValueForTesting(key: K, hash: number, valueReference: MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>>): boolean;
     containsKey(key: Object, hash: number): boolean;
     containsValue(value: Object): boolean;

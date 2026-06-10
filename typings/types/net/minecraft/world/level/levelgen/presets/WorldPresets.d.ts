@@ -16,7 +16,7 @@ export class WorldPresets extends Object {
     static bootstrap(paramcontext: BootstrapContext<WorldPreset>): void;
     static createFlatWorldDimensions(paramregistries: HolderLookup$Provider): WorldDimensions;
     static createNormalWorldDimensions(paramregistries: HolderLookup$Provider): WorldDimensions;
-    static fromSettings(paramdimensions: WorldDimensions): Optional<Object>;
+    static fromSettings(paramdimensions: WorldDimensions): Optional<ResourceKey<WorldPreset>>;
     static getNormalOverworld(paramregistries: HolderLookup$Provider): LevelStem;
     constructor()
 }

@@ -2,6 +2,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
+import type { CommandServerInfo$DetectionType } from '../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo$DetectionType.d.ts'
 /**
  * ServerInfo Command
  *
@@ -32,8 +33,8 @@ export class CommandServerInfo extends Object implements EventListener, Command$
     createCommand(): Command;
     parent(): EventListener | null;
     // private printHostingInformation(command: Command): void;
-    // private printInformation(command: Command, detections: E[]): void;
+    // private printInformation(command: Command, detections: CommandServerInfo$DetectionType[]): void;
     // private printPluginInformation(command: Command): void;
-    // private runActiveDetection(command: Command, detectionTypes: E[]): void;
+    // private runActiveDetection(command: Command, detectionTypes: CommandServerInfo$DetectionType[]): void;
     unregister(): void;
 }

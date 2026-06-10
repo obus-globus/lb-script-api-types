@@ -4,6 +4,7 @@ import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Runnable } from '../../java/lang/Runnable.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { AtomicBoolean } from '../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Lock } from '../../java/util/concurrent/locks/Lock.d.ts'
 import type { TimerQueue } from '../../javax/swing/TimerQueue.d.ts'
@@ -31,7 +32,7 @@ export class Timer extends Object implements Serializable {
     getActionListeners(): ActionListener[];
     getDelay(): number;
     getInitialDelay(): number;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getLock(): Lock;
     isCoalesce(): boolean;
     isRepeats(): boolean;

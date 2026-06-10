@@ -13,7 +13,7 @@ export class SingleVariant extends Object implements BlockStateModel {
     // private model: BlockStateModelPart;
     collectParts(random: RandomSource, output: BlockStateModelPart[]): void;
     createGeometryKey(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): Object;
-    emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Object) => kotlin.Boolean): void;
+    emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Object) => boolean): void;
     hasMaterialFlag(flag: number): boolean;
     materialFlags(): number;
     materialFlags(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): number;

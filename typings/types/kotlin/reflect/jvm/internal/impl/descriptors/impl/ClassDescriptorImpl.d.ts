@@ -13,12 +13,13 @@ import type { ModuleAwareClassDescriptor$Companion } from '../../../../../../../
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
+import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeConstructor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeConstructor.d.ts'
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class ClassDescriptorImpl extends ClassDescriptorBase {
     static Companion: ModuleAwareClassDescriptor$Companion;
-    constructor(arg0: DeclarationDescriptor, arg1: Name, arg2: Modality, arg3: ClassKind, arg4: E[], arg5: SourceElement, arg6: boolean, arg7: StorageManager)
+    constructor(arg0: DeclarationDescriptor, arg1: Name, arg2: Modality, arg3: ClassKind, arg4: KotlinType[], arg5: SourceElement, arg6: boolean, arg7: StorageManager)
     readonly constructors: ClassConstructorDescriptor[];
     readonly kind: ClassKind;
     readonly modality: Modality;
@@ -27,7 +28,7 @@ export class ClassDescriptorImpl extends ClassDescriptorBase {
     readonly unsubstitutedMemberScope: MemberScope;
     getAnnotations(): AnnotationDescriptor[];
     getCompanionObjectDescriptor(): ClassDescriptor;
-    getConstructors(): E[];
+    getConstructors(): ClassConstructorDescriptor[];
     getDeclaredTypeParameters(): TypeParameterDescriptor[];
     getKind(): ClassKind;
     getModality(): Modality;

@@ -5,8 +5,8 @@ import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { IntFunction } from '../../../../../../../java/util/function/IntFunction.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 export class BlockPositionVarYType<T extends Number> extends Type<BlockPosition> {
-    constructor(arg0: Type<T>, arg1: (param0: T) => unknown)
-    // private yConverter: (param0: T) => unknown;
+    constructor(arg0: Type<T>, arg1: (param0: number) => T)
+    // private yConverter: (param0: number) => T;
     // private yType: Type<T>;
     read(arg0: ByteBuf): BlockPosition;
     write(arg0: Ops, arg1: BlockPosition): void;

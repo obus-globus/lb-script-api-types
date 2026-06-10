@@ -6,13 +6,14 @@ import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { DamageSource } from '../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { DamageType } from '../../../../../net/minecraft/world/damagesource/DamageType.d.ts'
 export class BlocksAttacks$DamageReduction extends Record {
     static CODEC: Codec<BlocksAttacks$DamageReduction>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BlocksAttacks$DamageReduction>;
     // private base: number;
     // private factor: number;
     // private horizontalBlockingAngle: number;
-    // private type: Optional<Holder<T>[]>;
+    // private type: Optional<Holder<DamageType>[]>;
     base(): number;
     equals(o: Object | null): boolean;
     factor(): number;
@@ -20,5 +21,5 @@ export class BlocksAttacks$DamageReduction extends Record {
     horizontalBlockingAngle(): number;
     resolve(source: DamageSource, dealtDamage: number, angle: number): number;
     toString(): string;
-    type(): Optional<Holder<T>[]>;
+    type(): Optional<Holder<DamageType>[]>;
 }

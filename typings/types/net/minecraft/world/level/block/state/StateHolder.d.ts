@@ -12,11 +12,11 @@ export abstract class StateHolder<O extends Object | number | string | boolean, 
     // private owner: O;
     // private propertyKeys: Property<Object>[];
     // private propertyValues: Comparable<Object>[];
-    cycle(property: Property<T>): S;
+    cycle<T extends Comparable<T>>(property: Property<T>): S;
     equals(obj: Object | null): boolean;
     // private getNullableValue<T extends Comparable<T>>(property: Property<T>): T;
-    getOptionalValue(property: Property<T>): Optional<T>;
-    getProperties(): E[];
+    getOptionalValue<T extends Comparable<T>>(property: Property<T>): Optional<T>;
+    getProperties(): Property<Object>[];
     getValue<T extends Comparable<T>>(property: Property<T>): T;
     getValueOrElse<T extends Comparable<T>>(property: Property<T>, defaultValue: T): T;
     getValues(): Stream<Property$Value<Object>>;
@@ -24,9 +24,9 @@ export abstract class StateHolder<O extends Object | number | string | boolean, 
     hashCode(): number;
     initializeNeighbors(neighbors: S[][]): void;
     isSingletonState(): boolean;
-    setValue<V extends T>(property: Property<T>, value: V): S;
-    // private setValueInternal<V extends T>(property: Property<T>, propertyIndex: number, value: V): S;
+    setValue<T extends Comparable<T>, V extends T>(property: Property<T>, value: V): S;
+    // private setValueInternal<T extends Comparable<T>, V extends T>(property: Property<T>, propertyIndex: number, value: V): S;
     toString(): string;
-    trySetValue<V extends T>(property: Property<T>, value: V): S;
+    trySetValue<T extends Comparable<T>, V extends T>(property: Property<T>, value: V): S;
     // private valueIndex(property: Property<Object>): number;
 }

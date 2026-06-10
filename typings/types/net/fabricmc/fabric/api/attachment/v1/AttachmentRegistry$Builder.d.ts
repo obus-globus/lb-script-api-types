@@ -11,6 +11,6 @@ export interface AttachmentRegistry$Builder<A extends Object | number | string |
     copyOnDeath(): AttachmentRegistry$Builder<A>;
     initializer(arg0: () => A): AttachmentRegistry$Builder<A>;
     persistent(arg0: Codec<A>): AttachmentRegistry$Builder<A>;
-    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => kotlin.Boolean): AttachmentRegistry$Builder<A>;
-    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => kotlin.Boolean, arg2: number): AttachmentRegistry$Builder<A>;
+    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => boolean): AttachmentRegistry$Builder<A>;
+    syncWith(arg0: StreamCodec<RegistryFriendlyByteBuf, A>, arg1: (param0: Object | null, param1: Object | null) => boolean, arg2: number): AttachmentRegistry$Builder<A>;
 }

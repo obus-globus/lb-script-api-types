@@ -7,9 +7,9 @@ import type { ContextMap } from '../../../../../../net/minecraft/util/context/Co
 import type { Slot } from '../../../../../../net/minecraft/world/inventory/Slot.d.ts'
 import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/crafting/display/SlotDisplay.d.ts'
 export class GhostSlots extends Object {
-    constructor(slotSelectTime: () => kotlin.Int)
+    constructor(slotSelectTime: () => number)
     // private ingredients: Map<Slot, GhostSlots$GhostSlot>;
-    // private slotSelectTime: () => kotlin.Int;
+    // private slotSelectTime: () => number;
     clear(): void;
     extractRenderState(graphics: GuiGraphicsExtractor, minecraft: Minecraft, isResultSlotBig: boolean): void;
     extractTooltip(graphics: GuiGraphicsExtractor, minecraft: Minecraft, mouseX: number, mouseY: number, hoveredSlot: Slot): void;

@@ -5,7 +5,7 @@ import type { CaseInsensitiveString } from '../../../../../../../org/graalvm/sha
 export class TransliteratorRegistry$IDEnumeration extends Object implements Enumeration<string> {
     constructor(e: Enumeration<CaseInsensitiveString>)
     // private en: Enumeration<CaseInsensitiveString>;
-    asIterator(): Iterator<E>;
+    asIterator(): Iterator<string>;
     hasMoreElements(): boolean;
     nextElement(): string;
 }

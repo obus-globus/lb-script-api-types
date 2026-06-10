@@ -8,7 +8,7 @@ import type { SkeletonModel } from '../../../../../../net/minecraft/client/model
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { BoggedRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/BoggedRenderState.d.ts'
 export class BoggedModel extends SkeletonModel<BoggedRenderState> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

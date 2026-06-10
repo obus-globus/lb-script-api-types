@@ -16,7 +16,7 @@ export class HeapObject extends Object implements TruffleObject, Consumer<Output
     // private path: string;
     // private sink: OutputStream;
     accept(t: OutputStream): void;
-    andThen(arg0: (param0: T) => void): (param0: T) => void;
+    andThen(arg0: (param0: OutputStream) => void): (param0: OutputStream) => void;
     // private checkArity(arity: number, args: Object[]): void;
     close(): void;
     // private dump(args: Object[]): void;

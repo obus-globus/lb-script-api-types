@@ -6,6 +6,7 @@ import type { Statement } from '../../../../../../../../java/sql/Statement.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Layout } from '../../../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
+import type { AbstractManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { ManagerFactory } from '../../../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { AbstractDatabaseManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/AbstractDatabaseManager.d.ts'
 import type { ColumnConfig } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/ColumnConfig.d.ts'
@@ -16,10 +17,10 @@ import type { JdbcDatabaseManager$ResultSetColumnMetaData } from '../../../../..
 import type { MapMessage } from '../../../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 export class JdbcDatabaseManager extends AbstractDatabaseManager {
     static getJDBCDatabaseManager(paramname: string, parambufferSize: number, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[]): JdbcDatabaseManager;
-    static getManager(paramname: string, paramfactory: ManagerFactory<Object, Object>, paramdata: Object | null): Object | null;
-    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Object>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[]): JdbcDatabaseManager;
-    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Object>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number): JdbcDatabaseManager;
-    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Object>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;
+    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[]): JdbcDatabaseManager;
+    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number): JdbcDatabaseManager;
+    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;
     static hasManager(paramname: string): boolean;
     private constructor(name: string, sqlStatement: string, columnConfigs: ColumnConfig[], factoryData: JdbcDatabaseManager$FactoryData)
     // private columnConfigs: ColumnConfig[];

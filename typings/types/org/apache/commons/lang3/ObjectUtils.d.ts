@@ -50,7 +50,7 @@ export class ObjectUtils extends Object {
     static isNotEmpty(paramarg0: Object): boolean;
     static max(paramarg0: Object | null): Object | null;
     static median(paramarg0: Object | null): Object | null;
-    static median(paramarg0: (param0: Object | null) => kotlin.Boolean, paramarg1: Object | null): Object | null;
+    static median(paramarg0: (param0: Object) => boolean, paramarg1: Object | null): Object | null;
     static min(paramarg0: Object | null): Object | null;
     static mode(paramarg0: Object | null): Object | null;
     static notEqual(paramarg0: Object, paramarg1: Object): boolean;

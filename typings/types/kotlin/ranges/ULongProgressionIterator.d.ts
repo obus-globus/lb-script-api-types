@@ -8,7 +8,7 @@ export class ULongProgressionIterator extends Object implements Iterator<ULong> 
     // private hasNext: boolean;
     // private next: ULong;
     // private step: ULong;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: ULong) => void): void;
     hasNext(): boolean;
     next(): ULong;
 }

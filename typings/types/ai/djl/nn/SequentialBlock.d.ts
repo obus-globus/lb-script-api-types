@@ -20,14 +20,13 @@ export class SequentialBlock extends AbstractBlock implements StreamingBlock {
     add(arg0: (param0: (Object | null)[]) => (Object | null)[]): SequentialBlock;
     add(arg0: (param0: (Object | null)[]) => (Object | null)[], arg1: string): SequentialBlock;
     addAll(arg0: Block[]): SequentialBlock;
-    addAll(arg0: E[]): SequentialBlock;
     addSingleton(arg0: (param0: NDArray) => NDArray): SequentialBlock;
     addSingleton(arg0: (param0: NDArray) => NDArray, arg1: string): SequentialBlock;
-    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
-    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
+    forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     forwardStream(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): Stream<(Object | null)[]>;
-    forwardStream(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): Stream<(Object | null)[]>;
-    forwardStreamIter(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): Iterator<(Object | null)[]>;
+    forwardStream(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): Stream<(Object | null)[]>;
+    forwardStreamIter(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): Iterator<(Object | null)[]>;
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;

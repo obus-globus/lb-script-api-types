@@ -8,6 +8,7 @@ import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
 import type { FileVisitOption } from '../../../../../java/nio/file/FileVisitOption.d.ts'
+import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
 import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
 import type { AclEntry } from '../../../../../java/nio/file/attribute/AclEntry.d.ts'
 import type { AclFileAttributeView } from '../../../../../java/nio/file/attribute/AclFileAttributeView.d.ts'
@@ -65,7 +66,7 @@ export class PathUtils extends Object {
     static directoryContentEquals(paramarg0: Path[][], paramarg1: Path[][], paramarg2: number, paramarg3: (Object | null)[], paramarg4: (Object | null)[]): boolean;
     static fileContentEquals(paramarg0: Path[][], paramarg1: Path[][]): boolean;
     static fileContentEquals(paramarg0: Path[][], paramarg1: Path[][], paramarg2: (Object | null)[], paramarg3: (Object | null)[]): boolean;
-    static filter(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, paramarg1: (Object | null)[]): (Object | null)[];
+    static filter(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, paramarg1: (Object | null)[]): (Object | null)[];
     static getAclEntryList(paramarg0: Path[][]): AclEntry[];
     static getAclFileAttributeView(paramarg0: Path[][], paramarg1: (Object | null)[]): AclFileAttributeView;
     static getBaseName(paramarg0: Path[][]): string;
@@ -95,10 +96,10 @@ export class PathUtils extends Object {
     static isOlder(paramarg0: Path[][], paramarg1: number, paramarg2: (Object | null)[]): boolean;
     static isPosix(paramarg0: Path[][], paramarg1: (Object | null)[]): boolean;
     static isRegularFile(paramarg0: Path[][], paramarg1: (Object | null)[]): boolean;
-    static newDirectoryStream(paramarg0: Path[][], paramarg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult): T[];
+    static newDirectoryStream(paramarg0: Path[][], paramarg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): Path[][][];
     static newOutputStream(paramarg0: Path[][], paramarg1: boolean): OutputStream;
     static noFollowLinkOptionArray(): (Object | null)[];
-    static readAttributes(paramarg0: Path[][], paramarg1: Class<Object>, paramarg2: (Object | null)[]): Object | null;
+    static readAttributes(paramarg0: Path[][], paramarg1: Class<BasicFileAttributes>, paramarg2: (Object | null)[]): BasicFileAttributes | null;
     static readBasicFileAttributes(paramarg0: Path[][]): BasicFileAttributes;
     static readBasicFileAttributes(paramarg0: Path[][], paramarg1: (Object | null)[]): BasicFileAttributes;
     static readBasicFileAttributesUnchecked(paramarg0: Path[][]): BasicFileAttributes;
@@ -118,7 +119,7 @@ export class PathUtils extends Object {
     static visitFileTree(paramarg0: Object | null, paramarg1: Path[][]): Object | null;
     static visitFileTree(paramarg0: Object | null, paramarg1: Path[][], paramarg2: FileVisitOption[], paramarg3: number): Object | null;
     static waitFor(paramarg0: Path[][], paramarg1: Duration, paramarg2: (Object | null)[]): boolean;
-    static walk(paramarg0: Path[][], paramarg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, paramarg2: number, paramarg3: boolean, paramarg4: (Object | null)[]): Stream<Path[][]>;
+    static walk(paramarg0: Path[][], paramarg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, paramarg2: number, paramarg3: boolean, paramarg4: (Object | null)[]): Stream<Path[][]>;
     static writeString(paramarg0: Path[][], paramarg1: CharSequence, paramarg2: Charset, paramarg3: (Object | null)[]): Path[][];
     private constructor()
 }

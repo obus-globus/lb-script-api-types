@@ -1,10 +1,12 @@
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { GlobalPos } from '../../../../../../net/minecraft/core/GlobalPos.d.ts'
+import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
+import type { PoiType } from '../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 export class ValidateNearbyPoi extends Object {
-    static create(parampoiType: (param0: Object | null) => kotlin.Boolean, parammemoryType: MemoryModuleType<GlobalPos>): BehaviorControl<LivingEntity>;
+    static create(parampoiType: (param0: Holder<PoiType>) => boolean, parammemoryType: MemoryModuleType<GlobalPos>): BehaviorControl<LivingEntity>;
     constructor()
 }

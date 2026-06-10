@@ -9,12 +9,12 @@ import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ListeningScheduledExecutorService extends ListeningExecutorService, ScheduledExecutorService, Object {
     awaitTermination(timeout: Duration): boolean;
-    invokeAll(tasks: E[], timeout: Duration): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(tasks: E[], timeout: Duration): T;
+    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): T;
     schedule(command: () => void, delay: Duration): ListenableScheduledFuture<Object>;
     schedule(command: () => void, delay: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
-    schedule(callable: () => V, delay: Duration): ListenableScheduledFuture<V>;
-    schedule(callable: () => V, delay: number, unit: TimeUnit): ListenableScheduledFuture<V>;
+    schedule<V extends Object | number | string | boolean>(callable: () => V, delay: Duration): ListenableScheduledFuture<V>;
+    schedule<V extends Object | number | string | boolean>(callable: () => V, delay: number, unit: TimeUnit): ListenableScheduledFuture<V>;
     scheduleAtFixedRate(command: () => void, initialDelay: Duration, period: Duration): ListenableScheduledFuture<Object>;
     scheduleAtFixedRate(command: () => void, initialDelay: number, period: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
     scheduleWithFixedDelay(command: () => void, initialDelay: Duration, delay: Duration): ListenableScheduledFuture<Object>;

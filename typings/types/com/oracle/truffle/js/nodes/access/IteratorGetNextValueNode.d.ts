@@ -11,8 +11,8 @@ import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/run
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IteratorGetNextValueNode extends JavaScriptNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramiterator: JavaScriptNode, paramdoneNode: JavaScriptNode, paramsetDone: boolean): IteratorGetNextValueNode;
     static create(paramcontext: JSContext, paramiterator: JavaScriptNode, paramdoneNode: JavaScriptNode, paramsetDone: boolean, paramreadValue: boolean): IteratorGetNextValueNode;
     static findBlockScopeNode(paramnode: Node): Node;

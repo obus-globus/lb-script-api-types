@@ -8,7 +8,7 @@ import type { KeySpec } from '../../../../java/security/spec/KeySpec.d.ts'
 export class EdwardsCurve extends AbstractCurve implements KeyLengthSupplier {
     static Ed25519: EdwardsCurve;
     static Ed448: EdwardsCurve;
-    static VALUES: E[];
+    static VALUES: EdwardsCurve[];
     static X25519: EdwardsCurve;
     static X448: EdwardsCurve;
     static derivePublic(paramarg0: PrivateKey): PublicKey;

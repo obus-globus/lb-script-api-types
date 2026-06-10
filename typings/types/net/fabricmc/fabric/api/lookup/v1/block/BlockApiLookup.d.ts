@@ -16,10 +16,10 @@ export interface BlockApiLookup<A extends Object | number | string | boolean, C 
     find(arg0: Level, arg1: BlockPos, arg2: C): A;
     find(arg0: Level, arg1: BlockPos, arg2: BlockState, arg3: BlockEntity, arg4: C): A;
     getId(): Identifier;
-    getProvider(arg0: Block): (param0: A, param1: C, param2: Level, param3: BlockPos, param4: BlockState) => unknown;
-    registerFallback(arg0: (param0: A, param1: C, param2: Level, param3: BlockPos, param4: BlockState) => unknown): void;
-    registerForBlockEntities(arg0: (param0: A, param1: C) => unknown, arg1: BlockEntityType<Object>[]): void;
-    registerForBlockEntity(arg0: (param0: T, param1: C) => A, arg1: BlockEntityType<T>): void;
-    registerForBlocks(arg0: (param0: A, param1: C, param2: Level, param3: BlockPos, param4: BlockState) => unknown, arg1: Block[]): void;
+    getProvider(arg0: Block): (param0: Level, param1: BlockPos, param2: BlockState, param3: BlockEntity, param4: C) => A;
+    registerFallback(arg0: (param0: Level, param1: BlockPos, param2: BlockState, param3: BlockEntity, param4: C) => A): void;
+    registerForBlockEntities(arg0: (param0: BlockEntity, param1: C) => A, arg1: BlockEntityType<Object>[]): void;
+    registerForBlockEntity<T extends BlockEntity>(arg0: (param0: T, param1: C) => A, arg1: BlockEntityType<T>): void;
+    registerForBlocks(arg0: (param0: Level, param1: BlockPos, param2: BlockState, param3: BlockEntity, param4: C) => A, arg1: Block[]): void;
     registerSelf(arg0: BlockEntityType<Object>[]): void;
 }

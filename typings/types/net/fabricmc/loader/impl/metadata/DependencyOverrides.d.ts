@@ -5,5 +5,5 @@ export class DependencyOverrides extends Object {
     constructor(arg0: Path[])
     // private dependencyOverrides: { [key: string]: DependencyOverrides$Entry[] };
     apply(arg0: LoaderModMetadata): void;
-    getAffectedModIds(): E[];
+    getAffectedModIds(): string[];
 }

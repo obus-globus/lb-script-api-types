@@ -1,3 +1,4 @@
+import type { Closeable } from '../java/io/Closeable.d.ts'
 import type { File } from '../java/io/File.d.ts'
 import type { InputStream } from '../java/io/InputStream.d.ts'
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
@@ -42,5 +43,5 @@ export class Okio extends Object {
     static source(paramarg0: InputStream): Source;
     static source(paramarg0: Socket): Source;
     static source(paramarg0: Path[][], paramarg1: (Object | null)[]): Source;
-    static use(paramarg0: Object | null, paramarg1: (param0: Object | null) => Object | null): Object | null;
+    static use(paramarg0: Closeable | null, paramarg1: (param0: Object) => Object | null): Object | null;
 }

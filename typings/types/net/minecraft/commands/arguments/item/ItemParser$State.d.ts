@@ -13,7 +13,7 @@ export class ItemParser$State extends Object {
     // private reader: StringReader;
     // private visitor: ItemParser$Visitor;
     parse(): void;
-    // private readComponent(tagParser: TagParser<O>, registryOps: RegistryOps<O>, componentType: DataComponentType<T>): void;
+    // private readComponent<O extends Object | number | string | boolean, T extends Object | number | string | boolean>(tagParser: TagParser<O>, registryOps: RegistryOps<O>, componentType: DataComponentType<T>): void;
     // private readComponents(): void;
     // private readItem(): void;
     // private suggestAssignment(builder: SuggestionsBuilder): CompletableFuture<Suggestions>;

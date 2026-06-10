@@ -5,7 +5,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class UnicodeSet$CodePointIterator extends Object implements Iterator<number> {
     constructor(null_: UnicodeSet$CodePointIterator, arg1: string[])
     // private cpi: UnicodeSet$CodePointIteratorInt;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     next(): number;
     remove(): void;

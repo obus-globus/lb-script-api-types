@@ -3,7 +3,7 @@ import type { VersionParser$CharType } from '../../../../../com/llamalad7/mixine
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class VersionParser extends Object {
     constructor(arg0: string, arg1: boolean)
-    // private chars: E[];
+    // private chars: string[];
     // private isStrictModeOn: boolean;
     // private alphanumericIdentifier(): string;
     // private buildIdentifier(): string;

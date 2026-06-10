@@ -2,17 +2,18 @@ import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 import type { NumberProvider } from '../../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class LootItemRandomChanceCondition extends Record implements LootItemCondition {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<LootItemRandomChanceCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
-    static randomChance(paramprobability: number): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    static randomChance(paramprobability: NumberProvider): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+    static randomChance(paramprobability: number): () => LootItemCondition;
+    static randomChance(paramprobability: NumberProvider): () => LootItemCondition;
     constructor(chance: NumberProvider)
     // private chance: NumberProvider;
     chance(): NumberProvider;

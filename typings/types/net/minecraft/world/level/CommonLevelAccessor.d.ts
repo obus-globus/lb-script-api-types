@@ -15,6 +15,7 @@ import type { EntityGetter } from '../../../../net/minecraft/world/level/EntityG
 import type { LevelReader } from '../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { LevelSimulatedRW } from '../../../../net/minecraft/world/level/LevelSimulatedRW.d.ts'
 import type { Biome } from '../../../../net/minecraft/world/level/biome/Biome.d.ts'
+import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ChunkAccess } from '../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
@@ -28,7 +29,7 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     containsAnyLiquid(box: AABB): boolean;
     getBiome(pos: BlockPos): Holder<Biome>;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockStatesIfLoaded(box: AABB): Stream<BlockState>;
     getChunk(chunkX: number, chunkZ: number): ChunkAccess;
     getChunk(chunkX: number, chunkZ: number, status: ChunkStatus): ChunkAccess;
@@ -36,8 +37,8 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     getChunkForCollisions(chunkX: number, chunkZ: number): BlockGetter;
     getEffectiveSkyBrightness(pos: BlockPos): number;
     getEntities(except: Entity, bb: AABB): Entity[];
-    getEntitiesOfClass(baseClass: Class<T>, bb: AABB): T[];
-    getEntitiesOfClass(baseClass: Class<T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
+    getEntitiesOfClass<T extends Entity>(baseClass: Class<T>, bb: AABB): T[];
+    getEntitiesOfClass<T extends Entity>(baseClass: Class<T>, bb: AABB, selector: (param0: T) => boolean): T[];
     getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];
     getHeight(): number;
     getHeight(type: Heightmap$Types, pos: BlockPos): number;
@@ -46,7 +47,7 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     getMaxLocalRawBrightness(pos: BlockPos): number;
     getMaxLocalRawBrightness(pos: BlockPos, skyDarkening: number): number;
     getMinY(): number;
-    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => kotlin.Boolean): Player;
+    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => boolean): Player;
     getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
     getNearestPlayer(source: Entity, maxDist: number): Player;
     getNoiseBiome(quartX: number, quartY: number, quartZ: number): Holder<Biome>;
@@ -59,7 +60,7 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     hasChunksAt(x0: number, y0: number, z0: number, x1: number, y1: number, z1: number): boolean;
     hasChunksAt(pos0: BlockPos, pos1: BlockPos): boolean;
     hasNearbyAlivePlayer(x: number, y: number, z: number, range: number): boolean;
-    holderLookup(key: ResourceKey<T[]>): HolderLookup<T>;
+    holderLookup<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderLookup<T>;
     isEmptyBlock(pos: BlockPos): boolean;
     isUnobstructed(ignore: Entity): boolean;
     isUnobstructed(source: Entity, shape: VoxelShape): boolean;

@@ -32,14 +32,13 @@ export class Preprocessor extends Object implements Closeable {
     // private _token(): Token;
     addFeature(arg0: Feature): void;
     addFeatures(arg0: Feature[]): void;
-    addFeatures(arg0: E[]): void;
     addInput(arg0: File): void;
     addInput(arg0: Token[]): void;
     addMacro(arg0: string): void;
     addMacro(arg0: string, arg1: string): void;
     addMacro(arg0: Macro): void;
     addWarning(arg0: Warning): void;
-    addWarnings(arg0: E[]): void;
+    addWarnings(arg0: Warning[]): void;
     close(): void;
     // private define(): Token;
     error(arg0: number, arg1: number, arg2: string): void;

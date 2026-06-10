@@ -14,6 +14,6 @@ export class RegressionModeCounterTracker extends CounterTracker {
     dumpState(sId: number, fixedData: number[], intArrays: number[][]): string;
     // private ensureConsistency(sId: number, fixedData: number[], intArrays: number[][]): void;
     init(fixedData: number[], intArrays: number[][]): void;
-    // private onAll(sId: number, fixedData: number[], intArrays: number[][], f: (param0: CounterTracker, param1: number, param2: number[], param3: (Object | null)[]) => kotlin.Boolean): boolean;
+    // private onAll(sId: number, fixedData: number[], intArrays: number[][], f: (param0: CounterTracker, param1: number, param2: number[], param3: (Object | null)[]) => boolean): boolean;
     support(operation: number): boolean;
 }

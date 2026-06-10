@@ -5,9 +5,10 @@ import type { OracleDBCharClassTrieNode } from '../../../../../../com/oracle/tru
 import type { RegexASTBuilder } from '../../../../../../com/oracle/truffle/regex/tregex/parser/RegexASTBuilder.d.ts'
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Pair } from '../../../../../../org/graalvm/collections/Pair.d.ts'
 export class MultiCharacterCaseFolding extends Object {
-    static caseClosure(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcharClass: Range[], paramtmp: Range[], paramfilter: (param0: number, param1: number) => kotlin.Boolean, paramallowedCodePoints: (Object | null)[], paramtransitiveEquivalence: boolean): void;
-    static caseClosureMultiCodePoint(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcharClass: Range[]): (Object | null)[];
+    static caseClosure(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcharClass: Range[], paramtmp: Range[], paramfilter: (param0: number, param1: number) => boolean, paramallowedCodePoints: (Object | null)[], paramtransitiveEquivalence: boolean): void;
+    static caseClosureMultiCodePoint(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcharClass: Range[]): Pair<number, number[]>[];
     static caseFold(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcodePoint: number): number[];
     static caseFoldUnfoldString(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcodepoints: number[], paramencodingRange: (Object | null)[], paramdropAsciiOnStart: boolean, paramtransitiveEquivalence: boolean, paramastBuilder: RegexASTBuilder, paramroot: OracleDBCharClassTrieNode, paramcompilationBuffer: CompilationBuffer): OracleDBCharClassTrieNode;
     static equalsIgnoreCase(paramalgorithm: CaseFoldData$CaseFoldAlgorithm, paramcodePointA: number, paramcodePointB: number): boolean;

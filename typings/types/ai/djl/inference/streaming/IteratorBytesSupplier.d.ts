@@ -9,7 +9,7 @@ export class IteratorBytesSupplier extends Object implements BytesSupplier, Iter
     static wrapAsJson(paramarg0: Object): BytesSupplier;
     constructor(arg0: Iterator<BytesSupplier>)
     // private sources: Iterator<BytesSupplier>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: number[]) => void): void;
     getAsBytes(): number[];
     getAsObject(): Object;
     getAsString(): string;

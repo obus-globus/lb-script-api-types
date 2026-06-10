@@ -8,10 +8,10 @@ export class ArchiveInputStream$ArchiveEntryIOIterator extends Object implements
     static adapt(paramarg0: Iterator<Object>): IOIterator<Object>;
     constructor(null_: ArchiveInputStream$ArchiveEntryIOIterator)
     // private next: E;
-    asIterator(): Iterator<E>;
-    forEachRemaining(arg0: (param0: E) => void): void;
+    asIterator<E extends ArchiveEntry>(): Iterator<E>;
+    forEachRemaining<E extends ArchiveEntry>(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next<E extends ArchiveEntry>(): E;
     remove(): void;
-    unwrap(): Iterator<E>;
+    unwrap<E extends ArchiveEntry>(): Iterator<E>;
 }

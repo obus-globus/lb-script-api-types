@@ -12,11 +12,11 @@ export class StructuredEnchantmentRewriter extends Object {
     constructor(arg0: BackwardsStructuredItemRewriter<Object, Object, Object>)
     // private itemRewriter: BackwardsStructuredItemRewriter<Object, Object, Object>;
     readonly rewriteIds: boolean;
-    // private asTag(arg0: Enchantments): T[];
+    // private asTag(arg0: Enchantments): Map$Entry<string, Tag>[][];
     // private customData(arg0: StructuredDataContainer): Map$Entry<string, Tag>[];
     handleToClient(arg0: Item): void;
     handleToServer(arg0: Item): void;
-    rewriteEnchantmentsToClient(arg0: StructuredDataContainer, arg1: StructuredDataKey<Enchantments>, arg2: (param0: number) => kotlin.Int, arg3: (param0: number, param1: number) => com.viaversion.nbt.tag.Tag, arg4: boolean): void;
+    rewriteEnchantmentsToClient(arg0: StructuredDataContainer, arg1: StructuredDataKey<Enchantments>, arg2: (param0: number) => number, arg3: (param0: number, param1: number) => Tag, arg4: boolean): void;
     rewriteEnchantmentsToServer(arg0: StructuredDataContainer, arg1: Map$Entry<string, Tag>[], arg2: StructuredDataKey<Enchantments>): void;
     setRewriteIds(arg0: boolean): void;
 }

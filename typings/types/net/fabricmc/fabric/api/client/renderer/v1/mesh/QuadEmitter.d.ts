@@ -55,7 +55,7 @@ export interface QuadEmitter extends Object, MutableQuadView {
     pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     postMaterialBake(arg0: Material$Baked): MutableQuadView;
     postMaterialBake(arg0: Material$Baked): QuadEmitter;
-    pushTransform(arg0: (param0: MutableQuadView) => kotlin.Boolean): void;
+    pushTransform(arg0: (param0: MutableQuadView) => boolean): void;
     shadeMode(arg0: ShadeMode): QuadEmitter;
     square(arg0: Direction, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): MutableQuadView;
     square(arg0: Direction, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): QuadEmitter;

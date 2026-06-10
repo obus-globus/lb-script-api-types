@@ -10,7 +10,7 @@ export class QueueLogAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramarg0: string, paramarg1: string, paramarg2: Layout<Object>, paramarg3: Filter, paramarg4: string): QueueLogAppender;
+    static createAppender(paramarg0: string, paramarg1: string, paramarg2: Layout<Serializable>, paramarg3: Filter, paramarg4: string): QueueLogAppender;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: boolean, arg4: string[])
     // private queue: string[];

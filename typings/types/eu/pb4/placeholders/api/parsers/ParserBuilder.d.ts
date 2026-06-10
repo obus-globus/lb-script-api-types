@@ -37,16 +37,13 @@ export class ParserBuilder extends Object {
     customTags(arg0: TagLikeParser$Format, arg1: TagLikeParser$Provider): ParserBuilder;
     forceAdd(arg0: NodeParser): ParserBuilder;
     legacy(arg0: boolean, arg1: ChatFormatting[]): ParserBuilder;
-    legacy(arg0: boolean, arg1: E[]): ParserBuilder;
     legacyAll(): ParserBuilder;
     legacyColor(): ParserBuilder;
     legacyVanillaColor(): ParserBuilder;
     markdown(): ParserBuilder;
     markdown(arg0: (param0: TextNode[]) => TextNode, arg1: (param0: TextNode[]) => TextNode, arg2: (param0: TextNode[], param1: TextNode) => TextNode, arg3: MarkdownLiteParserV1$MarkdownFormat[]): ParserBuilder;
-    markdown(arg0: (param0: TextNode[]) => TextNode, arg1: (param0: TextNode[]) => TextNode, arg2: (param0: TextNode[], param1: TextNode) => TextNode, arg3: E[]): ParserBuilder;
     markdown(arg0: MarkdownLiteParserV1$MarkdownFormat[]): ParserBuilder;
-    markdown(arg0: E[]): ParserBuilder;
-    placeholders(arg0: TagLikeParser$Format, arg1: ParserContext$Key<Ctx>, arg2: Placeholders$PlaceholderGetter<Ctx>): ParserBuilder;
+    placeholders<Ctx extends Object | number | string | boolean>(arg0: TagLikeParser$Format, arg1: ParserContext$Key<Ctx>, arg2: Placeholders$PlaceholderGetter<Ctx>): ParserBuilder;
     placeholders(arg0: TagLikeParser$Format, arg1: ParserContext$Key<(param0: string) => Component>): ParserBuilder;
     placeholders(arg0: TagLikeParser$Format, arg1: (param0: string) => TextNode): ParserBuilder;
     placeholders(arg0: TagLikeParser$Format, arg1: string[], arg2: ParserContext$Key<(param0: string) => Component>): ParserBuilder;

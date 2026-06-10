@@ -14,8 +14,10 @@ import type { HolderLookup } from '../../../../net/minecraft/core/HolderLookup.d
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 import type { MobEffect } from '../../../../net/minecraft/world/effect/MobEffect.d.ts'
+import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Attribute } from '../../../../net/minecraft/world/entity/ai/attributes/Attribute.d.ts'
 import type { Enchantment } from '../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
+import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { Structure } from '../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline.d.ts'
 export class ResourceArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<Holder$Reference<T>> {
@@ -23,22 +25,21 @@ export class ResourceArgument<T extends Object | number | string | boolean> exte
     static ERROR_UNKNOWN_RESOURCE: Dynamic2CommandExceptionType;
     static getAttribute(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Attribute>;
     static getClock(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<WorldClock>;
-    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Object>;
+    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<Object, Object>>;
     static getEnchantment(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Enchantment>;
-    static getEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Object>;
+    static getEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<Object>>;
     static getMobEffect(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<MobEffect>;
-    static getResource(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<Object>): Holder$Reference<Object>;
+    static getResource(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>): Holder$Reference<Object>;
     static getStructure(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Structure>;
-    static getSummonableEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Object>;
+    static getSummonableEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<Object>>;
     static getTimeline(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Timeline>;
-    static resource(paramcontext: CommandBuildContext, paramkey: ResourceKey<Object>): ResourceArgument<Object>;
+    static resource(paramcontext: CommandBuildContext, paramkey: ResourceKey<(Object | null)[]>): ResourceArgument<Object>;
     constructor(context: CommandBuildContext, registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): Holder$Reference<T>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder$Reference<T>;
+    parse(reader: StringReader): Holder$Reference<T>;
 }

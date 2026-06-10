@@ -4,5 +4,5 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface TaskChainer extends Object {
     append(task: () => void): void;
-    append(preparation: CompletableFuture<T>, chainedTask: (param0: T) => void): void;
+    append<T extends Object | number | string | boolean>(preparation: CompletableFuture<T>, chainedTask: (param0: T) => void): void;
 }

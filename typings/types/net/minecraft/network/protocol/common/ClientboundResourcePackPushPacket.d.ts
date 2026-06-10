@@ -13,7 +13,7 @@ import type { ClientCommonPacketListener } from '../../../../../net/minecraft/ne
 export class ClientboundResourcePackPushPacket extends Record implements Packet<ClientCommonPacketListener> {
     static MAX_HASH_LENGTH: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundResourcePackPushPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     // private hash: string;
     // private id: UUID;
     // private prompt: Optional<Component>;

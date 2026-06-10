@@ -5,11 +5,12 @@ import type { AFGenericSocketAddress } from '../../../../org/newsclub/net/unix/A
 import type { AFGenericSocketChannel } from '../../../../org/newsclub/net/unix/AFGenericSocketChannel.d.ts'
 import type { AFGenericSocketExtensions } from '../../../../org/newsclub/net/unix/AFGenericSocketExtensions.d.ts'
 import type { AFSocket } from '../../../../org/newsclub/net/unix/AFSocket.d.ts'
+import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
 import type { AFSocketCapability } from '../../../../org/newsclub/net/unix/AFSocketCapability.d.ts'
 import type { AFSocketFactory } from '../../../../org/newsclub/net/unix/AFSocketFactory.d.ts'
 import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/AFUNIXSocketCapability.d.ts'
 export class AFGenericSocket extends AFSocket<AFGenericSocketAddress> implements AFGenericSocketExtensions {
-    static connectTo(paramarg0: Object | null): AFSocket<Object>;
+    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<Object>;
     static connectTo(paramarg0: AFGenericSocketAddress): AFGenericSocket;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;

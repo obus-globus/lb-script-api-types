@@ -5,10 +5,10 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 import type { Freezable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Freezable.d.ts'
 export class Relation<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Freezable<Relation<K, V>> {
-    static of(parammap: Map<Object | null, Object | null>, paramsetCreator: Class<Object>): Relation<Object, Object>;
-    static of(parammap: Map<Object | null, Object | null>, paramsetCreator: Class<Object>, paramsetComparator: (param0: Object | null) => kotlin.Boolean): Relation<Object, Object>;
+    static of(parammap: Map<Object | null, (Object | null)[]>, paramsetCreator: Class<Object>): Relation<Object, Object>;
+    static of(parammap: Map<Object | null, (Object | null)[]>, paramsetCreator: Class<Object>, paramsetComparator: (param0: Object) => boolean): Relation<Object, Object>;
     constructor(map: Map<K, V[]>, setCreator: Class<Object>)
-    constructor(map: Map<K, V[]>, setCreator: Class<Object>, setComparator: (param0: V) => kotlin.Boolean)
+    constructor(map: Map<K, V[]>, setCreator: Class<Object>, setComparator: (param0: Object) => boolean)
     // private data: Map<K, V[]>;
     frozen: boolean;
     // private setComparatorParam: Object[];
@@ -33,17 +33,17 @@ export class Relation<K extends Object | number | string | boolean, V extends Ob
     // private newSet(): V[];
     put(key: K, value: V): V;
     putAll(t: Map<K, V>): void;
-    putAll(key: K, values: E[]): V;
-    putAll(keys: E[], value: V): V;
+    putAll(key: K, values: V[]): V;
+    putAll(keys: K[], value: V): V;
     putAll(t: Relation<K, V>): void;
     remove(key: K, value: V): boolean;
     removeAll(key: K): V[];
     removeAll(key: K, toBeRemoved: V[]): boolean;
     removeAll(keys: K[]): V[];
-    removeAll(toBeRemoved: E[]): V[];
+    removeAll(toBeRemoved: K[]): V[];
     removeAll(toBeRemoved: Relation<K, V>): boolean;
     size(): number;
     toString(): string;
     values(): V[];
-    values<C extends E[]>(result: C): C;
+    values<C extends V[]>(result: C): C;
 }

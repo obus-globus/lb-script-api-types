@@ -9,11 +9,11 @@ import type { ModContainer } from '../../../../net/fabricmc/loader/api/ModContai
 import type { ObjectShare } from '../../../../net/fabricmc/loader/api/ObjectShare.d.ts'
 import type { EntrypointContainer } from '../../../../net/fabricmc/loader/api/entrypoint/EntrypointContainer.d.ts'
 export interface FabricLoader extends Object {
-    getAllMods(): E[];
+    getAllMods(): ModContainer[];
     getConfigDir(): Path[];
     getConfigDirectory(): File;
-    getEntrypointContainers(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
-    getEntrypoints(arg0: string, arg1: Class<T>): T[];
+    getEntrypointContainers<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
+    getEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
     getGameDir(): Path[];
     getGameDirectory(): File;
@@ -23,7 +23,7 @@ export interface FabricLoader extends Object {
     getModContainer(arg0: string): Optional<ModContainer>;
     getObjectShare(): ObjectShare;
     getRawGameVersion(): string;
-    invokeEntrypoints(arg0: string, arg1: Class<T>, arg2: (param0: T) => void): void;
+    invokeEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>, arg2: (param0: T) => void): void;
     isDevelopmentEnvironment(): boolean;
     isModLoaded(arg0: string): boolean;
 }

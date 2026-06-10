@@ -7,7 +7,7 @@ import type { MetricSampler } from '../../../../net/minecraft/util/profiling/met
 import type { MetricsSamplerProvider } from '../../../../net/minecraft/util/profiling/metrics/MetricsSamplerProvider.d.ts'
 import type { ProfilerSamplerAdapter } from '../../../../net/minecraft/util/profiling/metrics/profiling/ProfilerSamplerAdapter.d.ts'
 export class ClientMetricsSamplersProvider extends Object implements MetricsSamplerProvider {
-    constructor(wallTimeSource: () => kotlin.Long, levelRenderer: LevelRenderer)
+    constructor(wallTimeSource: () => number, levelRenderer: LevelRenderer)
     // private levelRenderer: LevelRenderer;
     // private samplerFactory: ProfilerSamplerAdapter;
     // private samplers: MetricSampler[];

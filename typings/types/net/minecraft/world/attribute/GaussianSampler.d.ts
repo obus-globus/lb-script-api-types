@@ -3,6 +3,6 @@ import type { GaussianSampler$Accumulator } from '../../../../net/minecraft/worl
 import type { GaussianSampler$Sampler } from '../../../../net/minecraft/world/attribute/GaussianSampler$Sampler.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class GaussianSampler extends Object {
-    static sample(paramposition: Vec3, paramsampler: (param0: Object | null, param1: number, param2: number) => unknown, paramaccumulator: (param0: Object | null, param1: number) => void): void;
+    static sample(paramposition: Vec3, paramsampler: (param0: number, param1: number, param2: number) => Object | null, paramaccumulator: (param0: number, param1: Object | null) => void): void;
     constructor()
 }

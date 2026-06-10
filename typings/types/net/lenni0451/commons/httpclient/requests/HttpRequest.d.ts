@@ -23,7 +23,7 @@ export class HttpRequest extends HeaderStore<HttpRequest> {
     // private url: URL;
     bind(arg0: HttpClient): HttpRequest;
     execute(): HttpResponse;
-    execute<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    execute<R extends Object | number | string | boolean>(arg0: (param0: HttpResponse) => R): R;
     getCookieManager(): CookieManager;
     getFollowRedirects(): HttpRequest$FollowRedirects;
     getIgnoreInvalidSSL(): boolean;

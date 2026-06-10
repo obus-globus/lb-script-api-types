@@ -7,7 +7,7 @@ import type { TranslatorOptions } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImageClassificationTranslator extends BaseImageTranslator<Classifications> {
     static builder(): ImageClassificationTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): ImageClassificationTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): ImageClassificationTranslator$Builder;
     constructor(arg0: ImageClassificationTranslator$Builder)
     // private applySoftmax: boolean;
     // private classes: string[];

@@ -25,7 +25,7 @@ export class InWorldGameRulesScreen extends AbstractGameRulesScreen implements H
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(connection: ClientPacketListener, exitCallback: (param0: Optional<GameRules>) => void, lastScreen: Screen)
     // private connection: ClientPacketListener;
@@ -34,11 +34,11 @@ export class InWorldGameRulesScreen extends AbstractGameRulesScreen implements H
     // private loadingDotsWidget: LoadingDotsWidget;
     // private receivedServerValues: boolean;
     // private serverProvidedRules: GameRule<Object>[];
-    // private collectChangedGameRule(rule: GameRule<T>, entries: ServerboundSetGameRulePacket$Entry[]): void;
-    // private hasGameRuleChanged(rule: GameRule<T>): boolean;
+    // private collectChangedGameRule<T extends Object | number | string | boolean>(rule: GameRule<T>, entries: ServerboundSetGameRulePacket$Entry[]): void;
+    // private hasGameRuleChanged<T extends Object | number | string | boolean>(rule: GameRule<T>): boolean;
     // private hasPendingChanges(): boolean;
     initContent(): void;
-    // private initializeGameRuleValue(rule: GameRule<T>, valueStr: string): void;
+    // private initializeGameRuleValue<T extends Object | number | string | boolean>(rule: GameRule<T>, valueStr: string): void;
     onClose(): void;
     onDone(): void;
     onGameRuleValuesUpdated(values: Map<ResourceKey<GameRule<Object>>, string>): void;

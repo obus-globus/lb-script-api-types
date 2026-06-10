@@ -29,8 +29,8 @@ export class ModuleAvoidHazards extends ClientModule {
     // private /*not mapped: */ getMode(): ModuleAvoidHazards$AvoidMode;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
-    // private isHazardCollision(boundingBox: AABB, level: ClientLevel, avoidModes: E[]): boolean;
+    // private isHazardCollision(boundingBox: AABB, level: ClientLevel, avoidModes: ModuleAvoidHazards$Avoid[]): boolean;
     // private isLadderClimbStateAt(pos: BlockPos): boolean;
-    // private isSafeInput(directionalInput: DirectionalInput, jump: boolean, sneak: boolean, avoidModes: E[]): boolean;
+    // private isSafeInput(directionalInput: DirectionalInput, jump: boolean, sneak: boolean, avoidModes: ModuleAvoidHazards$Avoid[]): boolean;
     // private wouldEnterLadderClimbState(simulatedPlayer: SimulatedPlayer): boolean;
 }

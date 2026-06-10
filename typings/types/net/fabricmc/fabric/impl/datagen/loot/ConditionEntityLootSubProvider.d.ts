@@ -9,7 +9,7 @@ import type { LootPool$Builder } from '../../../../../../net/minecraft/world/lev
 import type { LootTable } from '../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { LootTable$Builder } from '../../../../../../net/minecraft/world/level/storage/loot/LootTable$Builder.d.ts'
 export class ConditionEntityLootSubProvider extends EntityLootSubProvider {
-    static createSheepDispatchPool(paramtableNames: { [key in DyeColor]: Object | null }): LootPool$Builder;
+    static createSheepDispatchPool(paramtableNames: { [key in DyeColor]: ResourceKey<LootTable> }): LootPool$Builder;
     constructor(arg0: EntityLootSubProvider, arg1: ResourceCondition[])
     // private conditions: ResourceCondition[];
     // private parent: EntityLootSubProvider;

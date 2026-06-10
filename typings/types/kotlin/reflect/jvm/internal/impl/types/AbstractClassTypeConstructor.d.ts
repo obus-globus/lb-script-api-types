@@ -7,7 +7,7 @@ import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/i
 export abstract class AbstractClassTypeConstructor extends AbstractTypeConstructor {
     constructor(arg0: StorageManager)
     defaultSupertypeIfEmpty(): KotlinType;
-    getAdditionalNeighboursInSupertypeGraph(arg0: boolean): E[];
+    getAdditionalNeighboursInSupertypeGraph(arg0: boolean): KotlinType[];
     getBuiltIns(): KotlinBuiltIns;
     getDeclarationDescriptor(): ClassDescriptor;
     isSameClassifier(arg0: ClassifierDescriptor): boolean;

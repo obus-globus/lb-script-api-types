@@ -47,7 +47,7 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     static ofYearDay(paramarg0: number, paramarg1: number): LocalDate;
     static parse(paramarg0: CharSequence): LocalDate;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): LocalDate;
-    static timeLineOrder(): (param0: ChronoLocalDate) => kotlin.Boolean;
+    static timeLineOrder(): (param0: Object) => boolean;
     private constructor(arg0: number, arg1: number, arg2: number)
     // private day: number;
     readonly month: number;
@@ -110,7 +110,7 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     plusMonths(arg0: number): LocalDate;
     plusWeeks(arg0: number): LocalDate;
     plusYears(arg0: number): LocalDate;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochDay(): number;
@@ -118,11 +118,11 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     toString(): string;
     until(arg0: ChronoLocalDate): Period;
     until(arg0: Temporal, arg1: TemporalUnit): number;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): LocalDate;
+    with(arg0: (param0: Temporal) => Temporal): LocalDate;
     with(arg0: TemporalField, arg1: number): LocalDate;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): ChronoLocalDate;
+    with(arg0: (param0: Temporal) => Temporal): ChronoLocalDate;
     with(arg0: TemporalField, arg1: number): ChronoLocalDate;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withDayOfMonth(arg0: number): LocalDate;
     withDayOfYear(arg0: number): LocalDate;
     withMonth(arg0: number): LocalDate;

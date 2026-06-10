@@ -7,7 +7,7 @@ export class AFTIPCSocketAddress$AddressType extends NamedInteger {
     static SOCKET_ADDR: AFTIPCSocketAddress$AddressType;
     static formatTIPCInt(paramarg0: number): string;
     private constructor(arg0: number)
-    private constructor(arg0: string, arg1: number, arg2: (param0: number, param1: number, param2: number) => kotlin.String)
-    // private ds: (param0: number, param1: number, param2: number) => kotlin.String;
+    private constructor(arg0: string, arg1: number, arg2: (param0: number, param1: number, param2: number) => string)
+    // private ds: (param0: number, param1: number, param2: number) => string;
     // private toDebugString(arg0: AFTIPCSocketAddress$Scope, arg1: number, arg2: number, arg3: number): string;
 }

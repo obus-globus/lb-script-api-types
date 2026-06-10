@@ -46,7 +46,7 @@ export class BlockStateParser extends Object {
     // private reader: StringReader;
     // private state: BlockState;
     // private suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>;
-    // private tag: Holder<T>[];
+    // private tag: Holder<Block>[];
     // private vagueProperties: { [key: string]: string };
     // private hasBlockEntity(): boolean;
     // private parse(): void;
@@ -55,7 +55,7 @@ export class BlockStateParser extends Object {
     // private readProperties(): void;
     // private readTag(): void;
     // private readVagueProperties(): void;
-    // private setValue(property: Property<T>, raw: string, start: number): void;
+    // private setValue<T extends Comparable<T>>(property: Property<T>, raw: string, start: number): void;
     // private suggestBlockIdOrTag(builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     // private suggestEquals(builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     // private suggestItem(builder: SuggestionsBuilder): CompletableFuture<Suggestions>;

@@ -21,7 +21,7 @@ export class XmlConfigurationFactory extends ConfigurationFactory {
     static authorizationProvider(paramprops: PropertiesUtil): AuthorizationProvider;
     static getAuthorizationProvider(): AuthorizationProvider;
     static getInstance(): ConfigurationFactory;
-    static newConfigurationBuilder(paramclazz: Class<Object>): ConfigurationBuilder<Object>;
+    static newConfigurationBuilder(paramclazz: Class<BuiltConfiguration>): ConfigurationBuilder<BuiltConfiguration>;
     static newConfigurationBuilder(): ConfigurationBuilder<BuiltConfiguration>;
     static removeConfigurationFactory(paramfactory: ConfigurationFactory): void;
     static resetConfigurationFactory(): void;

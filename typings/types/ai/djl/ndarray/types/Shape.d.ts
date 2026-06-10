@@ -1,3 +1,4 @@
+import type { DataType } from '../../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { LayoutType } from '../../../../ai/djl/ndarray/types/LayoutType.d.ts'
 import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
 import type { DataInputStream } from '../../../../java/io/DataInputStream.d.ts'
@@ -9,9 +10,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Shape extends Object {
     static decode(paramarg0: DataInputStream): Shape;
     static decode(paramarg0: ByteBuffer): Shape;
-    static parseShapes(paramarg0: string): Pair<K, V>[];
+    static parseShapes(paramarg0: string): Pair<DataType, Shape>[];
     static update(paramarg0: Shape, paramarg1: number, paramarg2: number): Shape;
-    constructor(arg0: Pair<K, V>[])
+    constructor(arg0: Pair<number, LayoutType>[])
     constructor(arg0: number[])
     constructor(arg0: number[], arg1: LayoutType[])
     constructor(arg0: number[], arg1: string)
@@ -22,7 +23,7 @@ export class Shape extends Object {
     addAll(arg0: Shape): Shape;
     dimension(): number;
     equals(arg0: Object | null): boolean;
-    filterByLayoutType(arg0: (param0: LayoutType) => kotlin.Boolean): Shape;
+    filterByLayoutType(arg0: (param0: LayoutType) => boolean): Shape;
     get(arg0: number): number;
     getEncoded(): number[];
     getLastDimension(): number;

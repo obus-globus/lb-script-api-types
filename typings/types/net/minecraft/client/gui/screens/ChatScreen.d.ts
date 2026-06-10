@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MixinChatScreenAccessor } from '../../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/gui/MixinChatScreenAccessor.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -28,7 +27,7 @@ export class ChatScreen extends Screen implements MixinChatScreenAccessor {
     static MOUSE_SCROLL_SPEED: number;
     static USAGE_BACKGROUND_COLOR: number;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(initial: string, isDraft: boolean)
     constructor(initial: string, isDraft: boolean, closeOnSubmit: boolean)
@@ -43,7 +42,7 @@ export class ChatScreen extends Screen implements MixinChatScreenAccessor {
     // private isDraft: boolean;
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
-    // private formatChat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private formatChat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private getActiveMessage(arg0: MouseButtonEvent): number;
     handleChatInput(msg: string, addToRecent: boolean): void;
     // private handleComponentClicked(clicked: Style, allowInsertions: boolean): boolean;

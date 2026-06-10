@@ -8,7 +8,7 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 export class DataComponentInitializers extends Object {
     constructor()
     // private initializers: DataComponentInitializers$InitializerEntry<Object>[];
-    add(key: ResourceKey<T>, initializer: (param0: T, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void): void;
+    add<T extends Object | number | string | boolean>(key: ResourceKey<T>, initializer: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void): void;
     build(context: HolderLookup$Provider): DataComponentInitializers$PendingComponents<Object>[];
     // private runInitializers(context: HolderLookup$Provider): Map<ResourceKey<Object>, DataComponentMap$Builder>;
 }

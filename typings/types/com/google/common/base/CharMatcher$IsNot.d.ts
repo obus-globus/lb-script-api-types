@@ -11,7 +11,7 @@ export class CharMatcher$IsNot extends CharMatcher$FastMatcher {
     static ascii(): CharMatcher;
     static breakingWhitespace(): CharMatcher;
     static digit(): CharMatcher;
-    static forPredicate(parampredicate: (param0: Object | null) => kotlin.Boolean): CharMatcher;
+    static forPredicate(parampredicate: (param0: Object) => boolean): CharMatcher;
     static inRange(paramstartInclusive: string, paramendInclusive: string): CharMatcher;
     static invisible(): CharMatcher;
     static is(parammatch: string): CharMatcher;
@@ -29,11 +29,11 @@ export class CharMatcher$IsNot extends CharMatcher$FastMatcher {
     constructor(match: string)
     // private match: string;
     and(other: CharMatcher): CharMatcher;
-    and(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    and(arg0: (param0: string) => boolean): (param0: string) => boolean;
     matches(c: string): boolean;
     negate(): CharMatcher;
     or(other: CharMatcher): CharMatcher;
-    or(arg0: (param0: string) => kotlin.Boolean): (param0: string) => kotlin.Boolean;
+    or(arg0: (param0: string) => boolean): (param0: string) => boolean;
     setBits(table: BitSet): void;
     toString(): string;
 }

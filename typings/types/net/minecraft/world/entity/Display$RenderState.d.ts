@@ -8,16 +8,16 @@ export class Display$RenderState extends Record {
     // private billboardConstraints: Display$BillboardConstraints;
     // private brightnessOverride: number;
     // private glowColorOverride: number;
-    // private shadowRadius: (param0: number) => kotlin.Float;
-    // private shadowStrength: (param0: number) => kotlin.Float;
-    // private transformation: (param0: Transformation) => unknown;
+    // private shadowRadius: (param0: number) => number;
+    // private shadowStrength: (param0: number) => number;
+    // private transformation: (param0: number) => Transformation;
     billboardConstraints(): Display$BillboardConstraints;
     brightnessOverride(): number;
     equals(o: Object | null): boolean;
     glowColorOverride(): number;
     hashCode(): number;
-    shadowRadius(): (param0: number) => kotlin.Float;
-    shadowStrength(): (param0: number) => kotlin.Float;
+    shadowRadius(): (param0: number) => number;
+    shadowStrength(): (param0: number) => number;
     toString(): string;
-    transformation(): (param0: Transformation) => unknown;
+    transformation(): (param0: number) => Transformation;
 }

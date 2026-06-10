@@ -12,14 +12,14 @@ export class ResolutionContext extends Record {
     // private defaultScoreboardEntity: Entity;
     // private depthLimit: number;
     // private depthLimitBehavior: ResolutionContext$LimitBehavior;
-    // private objectInfoValidator: (param0: ObjectInfo) => kotlin.Boolean;
+    // private objectInfoValidator: (param0: ObjectInfo) => boolean;
     // private source: CommandSourceStack;
     defaultScoreboardEntity(): Entity;
     depthLimit(): number;
     depthLimitBehavior(): ResolutionContext$LimitBehavior;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    objectInfoValidator(): (param0: ObjectInfo) => kotlin.Boolean;
+    objectInfoValidator(): (param0: ObjectInfo) => boolean;
     source(): CommandSourceStack;
     toString(): string;
     validate(description: ObjectInfo): ObjectInfo;

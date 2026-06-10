@@ -6,8 +6,8 @@ import type { SelectBuilder } from '../../../kotlinx/coroutines/selects/SelectBu
 export class TimeKt extends Object {
     static debounce(paramarg0: Flow<Object>, paramarg1: Duration): Flow<Object>;
     static delay(paramarg0: Duration, paramarg1: Continuation<Object>): Object;
-    static onTimeout(paramarg0: SelectBuilder<Object>, paramarg1: Duration, paramarg2: (param0: Object | null) => Object | null): void;
+    static onTimeout(paramarg0: SelectBuilder<Object>, paramarg1: Duration, paramarg2: (param0: Object) => Object): void;
     static sample(paramarg0: Flow<Object>, paramarg1: Duration): Flow<Object>;
-    static withTimeout(paramarg0: Duration, paramarg1: (param0: Object | null, param1: Object | null) => Object | null, paramarg2: Continuation<Object>): Object;
-    static withTimeoutOrNull(paramarg0: Duration, paramarg1: (param0: Object | null, param1: Object | null) => Object | null, paramarg2: Continuation<Object>): Object;
+    static withTimeout(paramarg0: Duration, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static withTimeoutOrNull(paramarg0: Duration, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
 }

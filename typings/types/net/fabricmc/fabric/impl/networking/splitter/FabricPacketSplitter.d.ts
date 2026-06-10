@@ -11,7 +11,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export class FabricPacketSplitter extends MessageToMessageEncoder<Packet<Object>> {
     static SAFE_C2S_SPLIT_SIZE: number;
     static SAFE_S2C_SPLIT_SIZE: number;
-    static genericPacketSplitter(paramarg0: Identifier, paramarg1: ChannelHandlerContext, paramarg2: PacketEncoder<Object>, paramarg3: Packet<Object>, paramarg4: (param0: CustomPacketPayload) => Object | null, paramarg5: (param0: Object | null) => void, paramarg6: number, paramarg7: number): void;
+    static genericPacketSplitter(paramarg0: Identifier, paramarg1: ChannelHandlerContext, paramarg2: PacketEncoder<Object>, paramarg3: Packet<Object>, paramarg4: (param0: CustomPacketPayload) => Packet<Object>, paramarg5: (param0: Packet<Object>) => void, paramarg6: number, paramarg7: number): void;
     constructor(arg0: PacketEncoder<Object>, arg1: PayloadTypeRegistryImpl<Object>)
     // private encoder: PacketEncoder<Object>;
     // private payloadTypeRegistry: PayloadTypeRegistryImpl<Object>;

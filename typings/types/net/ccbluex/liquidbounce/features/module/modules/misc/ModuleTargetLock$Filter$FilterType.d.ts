@@ -8,7 +8,7 @@ export class ModuleTargetLock$Filter$FilterType extends Enum<ModuleTargetLock$Fi
     static Companion: Tagged$Companion;
     static WHITELIST: ModuleTargetLock$Filter$FilterType;
     static getEntries(): ModuleTargetLock$Filter$FilterType[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTargetLock$Filter$FilterType;

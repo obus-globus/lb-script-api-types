@@ -15,7 +15,7 @@ export class ObjectArrayFIFOQueue<K extends Object | number | string | boolean> 
     capacity(): number;
     changed(): void;
     clear(): void;
-    comparator(): (param0: K) => kotlin.Boolean;
+    comparator(): (param0: Object) => boolean;
     dequeue(): K;
     dequeueLast(): K;
     enqueue(arg0: K): void;

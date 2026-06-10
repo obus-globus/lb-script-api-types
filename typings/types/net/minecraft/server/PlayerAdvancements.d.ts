@@ -6,6 +6,7 @@ import type { AdvancementNode } from '../../../net/minecraft/advancements/Advanc
 import type { AdvancementProgress } from '../../../net/minecraft/advancements/AdvancementProgress.d.ts'
 import type { AdvancementTree } from '../../../net/minecraft/advancements/AdvancementTree.d.ts'
 import type { Criterion } from '../../../net/minecraft/advancements/Criterion.d.ts'
+import type { CriterionTriggerInstance } from '../../../net/minecraft/advancements/CriterionTriggerInstance.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { PlayerAdvancements$Data } from '../../../net/minecraft/server/PlayerAdvancements$Data.d.ts'
 import type { ServerAdvancementManager } from '../../../net/minecraft/server/ServerAdvancementManager.d.ts'
@@ -32,11 +33,11 @@ export class PlayerAdvancements extends Object {
     getOrStartProgress(advancement: AdvancementHolder): AdvancementProgress;
     // private load(manager: ServerAdvancementManager): void;
     // private markForVisibilityUpdate(advancement: AdvancementHolder): void;
-    // private registerListener(holder: AdvancementHolder, key: string, criterion: Criterion<T>): void;
+    // private registerListener<T extends CriterionTriggerInstance>(holder: AdvancementHolder, key: string, criterion: Criterion<T>): void;
     // private registerListeners(holder: AdvancementHolder): void;
     // private registerListeners(manager: ServerAdvancementManager): void;
     reload(manager: ServerAdvancementManager): void;
-    // private removeListener(holder: AdvancementHolder, key: string, criterion: Criterion<T>): void;
+    // private removeListener<T extends CriterionTriggerInstance>(holder: AdvancementHolder, key: string, criterion: Criterion<T>): void;
     revoke(advancement: AdvancementHolder, criterion: string): boolean;
     save(): void;
     setPlayer(player: ServerPlayer): void;

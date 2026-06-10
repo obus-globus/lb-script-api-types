@@ -9,11 +9,11 @@ export class AdvancementTree extends Object {
     // private nodes: Map<Identifier, AdvancementNode>;
     // private roots: AdvancementNode[];
     // private tasks: AdvancementNode[];
-    addAll(advancements: E[]): void;
+    addAll(advancements: AdvancementHolder[]): void;
     clear(): void;
     get(advancement: AdvancementHolder): AdvancementNode;
     get(id: Identifier): AdvancementNode;
-    nodes(): E[];
+    nodes(): AdvancementNode[];
     remove(ids: Identifier[]): void;
     // private remove(node: AdvancementNode): void;
     roots(): AdvancementNode[];

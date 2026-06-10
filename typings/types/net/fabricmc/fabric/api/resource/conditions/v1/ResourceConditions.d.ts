@@ -16,9 +16,9 @@ export class ResourceConditions extends Object {
     static not(paramarg0: ResourceCondition): ResourceCondition;
     static or(paramarg0: (Object | null)[]): ResourceCondition;
     static register(paramarg0: ResourceConditionType<Object>): void;
-    static registryContains(paramarg0: ResourceKey<Object>, paramarg1: (Object | null)[]): ResourceCondition;
+    static registryContains(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: (Object | null)[]): ResourceCondition;
     static registryContains(paramarg0: Object | null): ResourceCondition;
-    static tagsPopulated(paramarg0: ResourceKey<Object>, paramarg1: Object | null): ResourceCondition;
+    static tagsPopulated(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Object | null): ResourceCondition;
     static tagsPopulated(paramarg0: Object | null): ResourceCondition;
     private constructor()
 }

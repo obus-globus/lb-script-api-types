@@ -28,7 +28,7 @@ export class StructuredItemRewriter<C extends ClientboundPacketType, S extends S
     handleItemDataComponentsToServer(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;
     handleItemToClient(arg0: UserConnection, arg1: Item): Item;
     handleItemToServer(arg0: UserConnection, arg1: Item): Item;
-    // private handleRewritables(arg0: UserConnection, arg1: boolean, arg2: StructuredDataContainer, arg3: (param0: UserConnection, param1: Item) => com.viaversion.viaversion.api.minecraft.item.Item): void;
+    // private handleRewritables(arg0: UserConnection, arg1: boolean, arg2: StructuredDataContainer, arg3: (param0: UserConnection, param1: Item) => Item): void;
     handleRewritablesToClient(arg0: UserConnection, arg1: StructuredDataContainer, arg2: ItemHasher): void;
     handleRewritablesToServer(arg0: UserConnection, arg1: StructuredDataContainer): void;
     hashItemIfNeeded(arg0: UserConnection, arg1: Item, arg2: ItemHasherBase): HashedItem;
@@ -44,9 +44,9 @@ export class StructuredItemRewriter<C extends ClientboundPacketType, S extends S
     restoreBackupData(arg0: Item): void;
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
     saveTag(arg0: Map$Entry<string, Tag>[], arg1: Tag, arg2: string): void;
-    // private setDataUnchecked(arg0: StructuredData<V>, arg1: Object): void;
+    // private setDataUnchecked<V extends Object | number | string | boolean>(arg0: StructuredData<V>, arg1: Object): void;
     storeOriginalHashedItem(arg0: UserConnection, arg1: Item, arg2: ItemHasherBase, arg3: HashedItem): void;
-    // private updateHolderUnchecked(arg0: Holder<V>, arg1: UserConnection, arg2: boolean): Holder<V>;
+    // private updateHolderUnchecked<V extends Object | number | string | boolean>(arg0: Holder<V>, arg1: UserConnection, arg2: boolean): Holder<V>;
     updateItemDataComponentTypeIds(arg0: StructuredDataContainer, arg1: boolean): void;
     updateTextComponent(arg0: UserConnection, arg1: Item, arg2: StructuredDataKey<Tag>, arg3: string): void;
 }

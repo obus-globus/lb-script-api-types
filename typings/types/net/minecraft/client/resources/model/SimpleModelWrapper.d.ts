@@ -15,7 +15,7 @@ export class SimpleModelWrapper extends Record implements BlockStateModelPart {
     // private particleMaterial: Material$Baked;
     // private quads: QuadCollection;
     // private useAmbientOcclusion: boolean;
-    emitQuads(arg0: QuadEmitter, arg1: (param0: Object) => kotlin.Boolean): void;
+    emitQuads(arg0: QuadEmitter, arg1: (param0: Object) => boolean): void;
     equals(o: Object | null): boolean;
     getQuads(direction: Direction): BakedQuad[];
     hashCode(): number;

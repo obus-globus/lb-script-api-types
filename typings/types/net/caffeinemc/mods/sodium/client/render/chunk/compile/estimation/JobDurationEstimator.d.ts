@@ -5,6 +5,6 @@ export class JobDurationEstimator extends ExpDecayLinear2DEstimator<Class<Object
     static INITIAL_SAMPLE_TARGET: number;
     static NEW_DATA_RATIO: number;
     constructor()
-    createMap(): Map<Class<Object>, T>;
+    createMap<T extends Object | number | string | boolean>(): Map<Class<Object>, T>;
     estimateJobDuration(arg0: Class<Object>, arg1: number): number;
 }

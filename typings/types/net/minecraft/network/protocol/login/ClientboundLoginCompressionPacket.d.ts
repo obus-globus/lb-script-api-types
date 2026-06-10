@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -8,7 +9,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ClientLoginPacketListener } from '../../../../../net/minecraft/network/protocol/login/ClientLoginPacketListener.d.ts'
 export class ClientboundLoginCompressionPacket extends Object implements Packet<ClientLoginPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundLoginCompressionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(compressionThreshold: number)
     private constructor(input: FriendlyByteBuf)
     readonly compressionThreshold: number;

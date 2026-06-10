@@ -3,8 +3,8 @@ import type { Reference2LongFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2LongFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2LongFunction<K> implements Serializable {
-    constructor(arg0: (param0: K) => kotlin.Long)
-    // private function: (param0: K) => kotlin.Long;
+    constructor(arg0: (param0: Object) => number)
+    // private function: (param0: Object) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;

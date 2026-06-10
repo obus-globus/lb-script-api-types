@@ -9,5 +9,5 @@ export class ExpansionTranslatorFactory$ExpandedTranslatorOptions extends Object
     // private translator: Translator<IbaseT, ObaseT>;
     getOptions(): Pair<Type, Type>[];
     isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;
-    option(arg0: Class<I>, arg1: Class<O>): Translator<I, O>;
+    option<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Class<I>, arg1: Class<O>): Translator<I, O>;
 }

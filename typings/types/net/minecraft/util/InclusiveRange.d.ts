@@ -5,10 +5,10 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 export class InclusiveRange<T extends Comparable<T>> extends Record {
-    static INT: Codec<Object>;
-    static codec(paramelementCodec: Codec<Object>): Codec<Object>;
-    static codec(paramelementCodec: Codec<Object>, paramminAllowedInclusive: Object | null, parammaxAllowedInclusive: Object | null): Codec<Object>;
-    static create(paramminInclusive: Object | null, parammaxInclusive: Object | null): DataResult<Object>;
+    static INT: Codec<InclusiveRange<number>>;
+    static codec(paramelementCodec: Codec<Object>): Codec<InclusiveRange<Object>>;
+    static codec(paramelementCodec: Codec<Object>, paramminAllowedInclusive: Object | null, parammaxAllowedInclusive: Object | null): Codec<InclusiveRange<Object>>;
+    static create(paramminInclusive: Object | null, parammaxInclusive: Object | null): DataResult<InclusiveRange<Object>>;
     constructor(value: T)
     constructor(minInclusive: T, maxInclusive: T)
     // private maxInclusive: T;
@@ -17,7 +17,7 @@ export class InclusiveRange<T extends Comparable<T>> extends Record {
     equals(o: Object | null): boolean;
     hashCode(): number;
     isValueInRange(value: T): boolean;
-    map(mapper: (param0: T) => S): InclusiveRange<S>;
+    map<S extends Comparable<S>>(mapper: (param0: T) => S): InclusiveRange<S>;
     maxInclusive(): T;
     minInclusive(): T;
     toString(): string;

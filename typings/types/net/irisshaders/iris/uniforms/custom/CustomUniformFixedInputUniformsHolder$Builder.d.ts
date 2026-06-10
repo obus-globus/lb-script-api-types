@@ -22,11 +22,9 @@ export class CustomUniformFixedInputUniformsHolder$Builder extends Object implem
     build(): CustomUniformFixedInputUniformsHolder;
     externallyManagedUniform(arg0: string, arg1: UniformType): UniformHolder;
     // private put(arg0: string, arg1: CachedUniform): CustomUniformFixedInputUniformsHolder$Builder;
-    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): CustomUniformFixedInputUniformsHolder$Builder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Double): CustomUniformFixedInputUniformsHolder$Builder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): CustomUniformFixedInputUniformsHolder$Builder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Float): CustomUniformFixedInputUniformsHolder$Builder;
-    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): CustomUniformFixedInputUniformsHolder$Builder;
+    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => boolean): CustomUniformFixedInputUniformsHolder$Builder;
+    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): CustomUniformFixedInputUniformsHolder$Builder;
+    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): CustomUniformFixedInputUniformsHolder$Builder;
     uniform2f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2f): CustomUniformFixedInputUniformsHolder$Builder;
     uniform2i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2i): CustomUniformFixedInputUniformsHolder$Builder;
     uniform3d(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector3d): UniformHolder;

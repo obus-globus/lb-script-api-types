@@ -9,5 +9,5 @@ export class NoRotationMode extends RotationMode {
     static Companion: Tagged$Companion;
     constructor(modeValueGroup: ModeValueGroup<RotationMode>, module: ClientModule)
     readonly send: boolean;
-    rotate(rotation: Rotation, isFinished: () => kotlin.Boolean, onFinished: () => void): void;
+    rotate(rotation: Rotation, isFinished: () => boolean, onFinished: () => void): void;
 }

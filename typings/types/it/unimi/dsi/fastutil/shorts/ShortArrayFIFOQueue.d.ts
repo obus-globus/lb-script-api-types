@@ -14,7 +14,7 @@ export class ShortArrayFIFOQueue extends Object implements ShortPriorityQueue, S
     // private start: number;
     capacity(): number;
     clear(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueLastShort(): number;
     dequeueShort(): number;

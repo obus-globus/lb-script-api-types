@@ -17,7 +17,7 @@ export class CharsTrie$Iterator extends Object implements Iterator<CharsTrie$Ent
     // private stack_: number[];
     // private str_: StringBuilder;
     // private branchNext(arg0: number, arg1: number): number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: CharsTrie$Entry) => void): void;
     hasNext(): boolean;
     next(): CharsTrie$Entry;
     remove(): void;

@@ -19,7 +19,7 @@ export abstract class AbstractWebSocket extends WebSocketAdapter {
     // private cancelConnectionLostTimer(): void;
     // private executeConnectionLostDetection(arg0: WebSocket, arg1: number): void;
     getConnectionLostTimeout(): number;
-    getConnections(): E[];
+    getConnections(): WebSocket[];
     getReceiveBufferSize(): number;
     isDaemon(): boolean;
     isReuseAddr(): boolean;

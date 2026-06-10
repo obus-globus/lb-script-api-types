@@ -15,7 +15,6 @@ export class RenderTargetDescriptor extends Record implements ResourceDescriptor
     hashCode(): number;
     height(): number;
     prepare(resource: RenderTarget): void;
-    prepare<T extends Object | number | string | boolean>(resource: T): void;
     toString(): string;
     useDepth(): boolean;
     width(): number;

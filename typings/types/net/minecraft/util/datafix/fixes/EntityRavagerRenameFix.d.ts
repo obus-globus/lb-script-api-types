@@ -1,4 +1,5 @@
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
+import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
@@ -7,7 +8,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SimplestEntityRenameFix } from '../../../../../net/minecraft/util/datafix/fixes/SimplestEntityRenameFix.d.ts'
 export class EntityRavagerRenameFix extends SimplestEntityRenameFix {
     static RENAMED_IDS: { [key: string]: string };
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, changesType: boolean)
     rename(name: string): string;
 }

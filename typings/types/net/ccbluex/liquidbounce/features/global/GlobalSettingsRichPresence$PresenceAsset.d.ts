@@ -7,7 +7,7 @@ export class GlobalSettingsRichPresence$PresenceAsset extends Enum<GlobalSetting
     static Companion: Tagged$Companion;
     static LOGO: GlobalSettingsRichPresence$PresenceAsset;
     static getEntries(): GlobalSettingsRichPresence$PresenceAsset[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlobalSettingsRichPresence$PresenceAsset;

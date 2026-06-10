@@ -17,8 +17,6 @@ export class HoverNode<T extends Object | number | string | boolean, H extends O
     action(): HoverNode$Action<T, H>;
     copyWith(arg0: TextNode[]): ParentTextNode;
     copyWith(arg0: TextNode[], arg1: NodeParser): ParentTextNode;
-    copyWith(arg0: E[]): ParentTextNode;
-    copyWith(arg0: E[], arg1: NodeParser): ParentTextNode;
     isDynamicNoChildren(): boolean;
     style(arg0: ParserContext): Style;
     toString(): string;

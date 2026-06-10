@@ -5,5 +5,5 @@ export class VersionOverrides extends Object {
     constructor()
     // private replacements: { [key: string]: Version };
     apply(arg0: LoaderModMetadata): void;
-    getAffectedModIds(): E[];
+    getAffectedModIds(): string[];
 }

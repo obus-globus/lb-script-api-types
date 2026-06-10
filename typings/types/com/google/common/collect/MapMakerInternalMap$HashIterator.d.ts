@@ -19,7 +19,7 @@ export abstract class MapMakerInternalMap$HashIterator<T extends Object | number
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next(): T;
-    nextEntry(): MapMakerInternalMap$WriteThroughEntry;
+    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean, E extends MapMakerInternalMap$InternalEntry<K, V, E>, S extends MapMakerInternalMap$Segment<K, V, E, S>>(): MapMakerInternalMap$WriteThroughEntry;
     nextInChain(): boolean;
     nextInTable(): boolean;
     remove(): void;

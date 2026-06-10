@@ -224,7 +224,7 @@ export class BigArrays extends Object {
     static length(paramarg0: (Object | null)[]): number;
     static length(paramarg0: (Object | null)[]): number;
     static main(paramarg0: (Object | null)[]): void;
-    static mergeSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int, paramarg3: (param0: number, param1: number) => void): void;
+    static mergeSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number, paramarg3: (param0: number, param1: number) => void): void;
     static mul(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
     static mul(paramarg0: (Object | null)[], paramarg1: number, paramarg2: string): void;
     static mul(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
@@ -233,7 +233,7 @@ export class BigArrays extends Object {
     static mul(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
     static mul(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
     static nearestSegmentStart(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static quickSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int, paramarg3: (param0: number, param1: number) => void): void;
+    static quickSort(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number, paramarg3: (param0: number, param1: number) => void): void;
     static reverse(paramarg0: Object | null): Object | null;
     static reverse(paramarg0: (Object | null)[]): (Object | null)[];
     static reverse(paramarg0: (Object | null)[]): (Object | null)[];

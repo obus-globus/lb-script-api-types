@@ -5,7 +5,7 @@ import type { SslConfiguration } from '../../../../../../org/apache/logging/log4
 import type { AuthorizationProvider } from '../../../../../../org/apache/logging/log4j/core/util/AuthorizationProvider.d.ts'
 export class UrlConnectionFactory extends Object {
     static ALLOWED_PROTOCOLS: string;
-    static createConnection(paramurl: URL, paramlastModifiedMillis: number, paramsslConfiguration: SslConfiguration, paramauthorizationProvider: AuthorizationProvider): Object | null;
+    static createConnection(paramurl: URL, paramlastModifiedMillis: number, paramsslConfiguration: SslConfiguration, paramauthorizationProvider: AuthorizationProvider): URLConnection | null;
     static createConnection(paramurl: URL): URLConnection;
     constructor()
 }

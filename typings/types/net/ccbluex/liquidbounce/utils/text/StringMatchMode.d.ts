@@ -22,15 +22,15 @@ export class StringMatchMode extends Enum<StringMatchMode> implements BiPredicat
     static STARTS_WITH: StringMatchMode;
     static STARTS_WITH_IGNORE_CASE: StringMatchMode;
     static getEntries(): StringMatchMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StringMatchMode;
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    and(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
-    negate(): (param0: T, param1: U) => kotlin.Boolean;
-    or(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
+    and(arg0: (param0: string, param1: string) => boolean): (param0: string, param1: string) => boolean;
+    negate(): (param0: string, param1: string) => boolean;
+    or(arg0: (param0: string, param1: string) => boolean): (param0: string, param1: string) => boolean;
     name(): "EQUALS" | "EQUALS_IGNORE_CASE" | "CONTAINS" | "CONTAINS_IGNORE_CASE" | "STARTS_WITH" | "STARTS_WITH_IGNORE_CASE" | "ENDS_WITH" | "ENDS_WITH_IGNORE_CASE";
 }

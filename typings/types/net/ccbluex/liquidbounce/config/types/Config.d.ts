@@ -1,7 +1,9 @@
 import type { File } from '../../../../../java/io/File.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 export class Config extends ValueGroup {
-    constructor(name: string, value: E[])
+    constructor(name: string, value: Value<Object>[])
     readonly jsonFile: File;
     /**
      * We write to this temp file, we can safely rename {@link jsonTmpFile} to {@link jsonFile},

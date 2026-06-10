@@ -3,6 +3,7 @@ import type { MixinExtrasInjectionInfo } from '../../../../com/llamalad7/mixinex
 import type { InjectorWrapperImpl } from '../../../../com/llamalad7/mixinextras/wrapper/InjectorWrapperImpl.d.ts'
 import type { InjectorWrapperImpl$Factory } from '../../../../com/llamalad7/mixinextras/wrapper/InjectorWrapperImpl$Factory.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { AnnotationNode } from '../../../../org/objectweb/asm/tree/AnnotationNode.d.ts'
@@ -19,11 +20,11 @@ export abstract class WrapperInjectionInfo extends MixinExtrasInjectionInfo impl
     static getDynamicInfo(paramarg0: IAnnotatedElement): string;
     static getInjectorAnnotation(paramarg0: IMixinInfo, paramarg1: MethodNode): AnnotationNode;
     static getInjectorPrefix(paramarg0: AnnotationNode): string;
-    static getRegisteredAnnotations(): (Object | null)[];
+    static getRegisteredAnnotations(): Class<Annotation>[];
     static parse(paramarg0: MixinTargetContext, paramarg1: MethodNode): InjectionInfo;
-    static register(paramarg0: Class<Object>): void;
+    static register(paramarg0: Class<InjectionInfo>): void;
     static wrap(paramarg0: Object, paramarg1: LateApplyingInjectorInfo): boolean;
-    constructor(arg0: (param0: InjectionInfo, param1: MixinTargetContext, param2: MethodNode, param3: AnnotationNode) => com.llamalad7.mixinextras.wrapper.InjectorWrapperImpl, arg1: MixinTargetContext, arg2: MethodNode, arg3: AnnotationNode)
+    constructor(arg0: (param0: InjectionInfo, param1: MixinTargetContext, param2: MethodNode, param3: AnnotationNode) => InjectorWrapperImpl, arg1: MixinTargetContext, arg2: MethodNode, arg3: AnnotationNode)
     readonly delegate: InjectionInfo;
     // private impl: InjectorWrapperImpl;
     // private lateApply: boolean;

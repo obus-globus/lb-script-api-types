@@ -9,13 +9,13 @@ import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export interface StreamingBlock extends Block, Object {
-    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<K, V>[]): (Object | null)[];
+    forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
     forwardStream(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): Stream<(Object | null)[]>;
-    forwardStream(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): Stream<(Object | null)[]>;
-    forwardStreamIter(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<K, V>[]): Iterator<(Object | null)[]>;
+    forwardStream(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): Stream<(Object | null)[]>;
+    forwardStreamIter(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): Iterator<(Object | null)[]>;
     freezeParameters(arg0: boolean): void;
-    freezeParameters(arg0: boolean, arg1: (param0: Parameter) => kotlin.Boolean): void;
+    freezeParameters(arg0: boolean, arg1: (param0: Parameter) => boolean): void;
     getCustomMetadata(): { [key: string]: string };
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
 }

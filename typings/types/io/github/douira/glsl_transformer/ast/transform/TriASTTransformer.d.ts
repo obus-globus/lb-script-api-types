@@ -11,12 +11,11 @@ import type { Triple } from '../../../../../../io/github/douira/glsl_transformer
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TriASTTransformer<J extends JobParameters, E extends Enum<E>> extends EnumASTTransformer<J, E> {
     static _getInternalInstance(): ASTParser;
-    constructor(arg0: (param0: TranslationUnit, param1: J, param2: Object | null, param3: Object | null, param4: Object | null, param5: Root, param6: Root) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
-    constructor(arg0: (param0: TranslationUnit, param1: Object | null, param2: Object | null, param3: Object | null, param4: Root, param5: Root) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
+    constructor(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root, param6: J) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
+    constructor(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
     constructor(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
     constructor(arg0: Class<E>, arg1: E, arg2: E, arg3: E)
     constructor(arg0: (param0: Map<E, TranslationUnit>) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
@@ -25,8 +24,8 @@ export class TriASTTransformer<J extends JobParameters, E extends Enum<E>> exten
     // private cType: E;
     // private enumClass: Class<E>;
     setEnumType(arg0: Class<E>): void;
-    setTransformation(arg0: (param0: TranslationUnit, param1: J, param2: Object | null, param3: Object | null, param4: Object | null, param5: Root, param6: Root) => void): void;
-    setTransformation(arg0: (param0: TranslationUnit, param1: Object | null, param2: Object | null, param3: Object | null, param4: Root, param5: Root) => void): void;
+    setTransformation(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root, param6: J) => void): void;
+    setTransformation(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root) => void): void;
     setTransformation(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit) => void): void;
     setTransformation(arg0: (param0: Map<E, TranslationUnit>, param1: J) => void): void;
     setTransformation(arg0: (param0: Map<E, TranslationUnit>) => void): void;

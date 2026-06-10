@@ -13,16 +13,16 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
     static Companion: HotbarItemSlot$Companion;
     static Companion: ItemSlot$Companion;
     static OFFHAND: HotbarItemSlot;
-    static PREFER_FEWER_ITEM: (param0: Object | null) => kotlin.Boolean;
-    static PREFER_MORE_ITEM: (param0: Object | null) => kotlin.Boolean;
+    static PREFER_FEWER_ITEM: (param0: Object) => boolean;
+    static PREFER_MORE_ITEM: (param0: Object) => boolean;
     /**
      * Distance order:
      * current hand -> offhand -> other slots
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L249 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:249}
      */
-    static PREFER_NEARBY: (param0: HotbarItemSlot) => kotlin.Boolean;
-    static PREFER_NEARBY: (param0: ItemSlot) => kotlin.Boolean;
+    static PREFER_NEARBY: (param0: Object) => boolean;
+    static PREFER_NEARBY: (param0: Object) => boolean;
     static SLOT_0: HotbarItemSlot;
     static SLOT_1: HotbarItemSlot;
     static SLOT_2: HotbarItemSlot;

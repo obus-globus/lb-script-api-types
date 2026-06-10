@@ -19,8 +19,8 @@ export class ObjectOpenCustomHashSet$SetSpliterator extends Object implements Ob
     // private pos: number;
     characteristics(): number;
     estimateSize(): number;
-    forEachRemaining(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
     skip(arg0: number): number;
-    tryAdvance(arg0: (param0: K) => void): boolean;
-    trySplit(): ObjectOpenCustomHashSet$SetSpliterator;
+    tryAdvance<K extends Object | number | string | boolean>(arg0: (param0: K) => void): boolean;
+    trySplit<K extends Object | number | string | boolean>(): ObjectOpenCustomHashSet$SetSpliterator;
 }

@@ -14,16 +14,16 @@ import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class FloatIterators extends Object {
     static EMPTY_ITERATOR: FloatIterators$EmptyIterator;
-    static all(paramarg0: FloatIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static all(paramarg0: FloatIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static any(paramarg0: FloatIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static any(paramarg0: FloatIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
+    static all(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
+    static all(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
+    static any(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
+    static any(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
     static asFloatIterator(paramarg0: Iterator<Object>): FloatIterator;
     static asFloatIterator(paramarg0: ListIterator<Object>): FloatListIterator;
     static concat(paramarg0: (Object | null)[]): FloatIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): FloatIterator;
-    static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => kotlin.Boolean): number;
-    static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => kotlin.Boolean): number;
+    static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): number;
+    static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): number;
     static narrow(paramarg0: PrimitiveIterator$OfDouble): FloatIterator;
     static pour(paramarg0: FloatIterator, paramarg1: (Object | null)[]): number;
     static pour(paramarg0: FloatIterator, paramarg1: (Object | null)[], paramarg2: number): number;

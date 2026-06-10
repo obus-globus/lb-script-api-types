@@ -7,7 +7,7 @@ export class Predicates$IsEqualToPredicate extends Object implements Predicate<O
     apply(o: Object): boolean;
     equals(obj: Object | null): boolean;
     hashCode(): number;
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test(input: Object): boolean;
     toString(): string;
-    withNarrowedType(): (param0: T) => kotlin.Boolean;
+    withNarrowedType<T extends Object | number | string | boolean>(): (param0: Object) => boolean;
 }

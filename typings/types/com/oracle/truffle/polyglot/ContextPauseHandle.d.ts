@@ -15,7 +15,7 @@ export class ContextPauseHandle extends Object implements Future<void> {
     get(timeout: number, unit: TimeUnit): void;
     isCancelled(): boolean;
     isDone(): boolean;
-    resultNow<V extends Object | number | string | boolean>(): V;
+    resultNow(): void;
     resume(): void;
     state(): Future$State;
 }

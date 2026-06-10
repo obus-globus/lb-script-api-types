@@ -7,10 +7,10 @@ import type { EncodingDetector } from '../../../../org/apache/tika/detect/Encodi
 import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.ts'
 export class CompositeEncodingDetector extends Object implements Serializable, EncodingDetector {
     constructor(arg0: EncodingDetector[])
-    constructor(arg0: EncodingDetector[], arg1: E[])
+    constructor(arg0: EncodingDetector[], arg1: Class<EncodingDetector>[])
     readonly detectors: EncodingDetector[];
-    // private assignableFrom(arg0: E[], arg1: Class<EncodingDetector>): boolean;
+    // private assignableFrom(arg0: Class<EncodingDetector>[], arg1: Class<EncodingDetector>): boolean;
     detect(arg0: InputStream, arg1: Metadata): Charset;
     getDetectors(): EncodingDetector[];
-    // private isExcluded(arg0: E[], arg1: Class<EncodingDetector>): boolean;
+    // private isExcluded(arg0: Class<EncodingDetector>[], arg1: Class<EncodingDetector>): boolean;
 }

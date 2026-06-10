@@ -13,7 +13,7 @@ export class ChangeItemDamage extends Record implements EnchantmentEntityEffect 
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<ChangeItemDamage>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(amount: LevelBasedValue)
     // private amount: LevelBasedValue;
     amount(): LevelBasedValue;

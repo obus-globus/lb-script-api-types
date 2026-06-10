@@ -7,6 +7,7 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../org/apache/logging/log4j/Marker.d.ts'
+import type { FlowMessageFactory } from '../../../../../org/apache/logging/log4j/message/FlowMessageFactory.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { MessageFactory } from '../../../../../org/apache/logging/log4j/message/MessageFactory.d.ts'
 import type { AbstractLogger } from '../../../../../org/apache/logging/log4j/spi/AbstractLogger.d.ts'
@@ -19,8 +20,8 @@ import type { MessageSupplier } from '../../../../../org/apache/logging/log4j/ut
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class StatusLogger extends AbstractLogger {
     static CATCHING_MARKER: Marker;
-    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<Object>;
-    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<Object>;
+    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<FlowMessageFactory>;
+    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<MessageFactory>;
     static DEFAULT_STATUS_LISTENER_LEVEL: string;
     static ENTRY_MARKER: Marker;
     static EXCEPTION_MARKER: Marker;
@@ -86,7 +87,7 @@ export class StatusLogger extends AbstractLogger {
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: Message, throwable: Throwable): void;
-    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
     // private notifyListener(listener: StatusListener, statusData: StatusData): void;

@@ -15,7 +15,7 @@ export class DateTimeFormatFunctionBuiltins$DateTimeFormatFunction extends Enum<
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): DateTimeFormatFunctionBuiltins$DateTimeFormatFunction;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

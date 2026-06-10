@@ -19,10 +19,10 @@ export class TagLikeParser$Context extends Object {
     parser(): NodeParser;
     peekId(): string;
     pop(): void;
-    pop(arg0: (param0: string) => kotlin.Boolean): void;
+    pop(arg0: (param0: string) => boolean): void;
     pop(arg0: number): void;
     pop(arg0: string): void;
-    popInclusive(arg0: (param0: string) => kotlin.Boolean): void;
+    popInclusive(arg0: (param0: string) => boolean): void;
     popOnly(arg0: string): void;
     push(arg0: string, arg1: (param0: TextNode[]) => TextNode): void;
     pushParent(): void;

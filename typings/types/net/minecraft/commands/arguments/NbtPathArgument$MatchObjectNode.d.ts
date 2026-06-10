@@ -9,7 +9,7 @@ export class NbtPathArgument$MatchObjectNode extends Object implements NbtPathAr
     constructor(name: string, pattern: CompoundTag)
     // private name: string;
     // private pattern: CompoundTag;
-    // private predicate: (param0: Tag) => kotlin.Boolean;
+    // private predicate: (param0: Tag) => boolean;
     collect(tags: Tag[], collector: (param0: Tag, param1: Tag[]) => void): Tag[];
     createPreferredParentTag(): Tag;
     get(tags: Tag[]): Tag[];

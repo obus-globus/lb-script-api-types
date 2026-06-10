@@ -8,7 +8,7 @@ export class TrueResourceCondition extends Object implements ResourceCondition {
     static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<TrueResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<ResourceCondition[]>;
     constructor()
     getType(): ResourceConditionType<Object>;
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;

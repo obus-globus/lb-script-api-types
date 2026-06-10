@@ -7,12 +7,12 @@ import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.t
 export class IdentifierPattern extends Object {
     static CODEC: Codec<IdentifierPattern>;
     private constructor(namespacePattern: Optional<Pattern>, pathPattern: Optional<Pattern>)
-    // private locationPredicate: (param0: Identifier) => kotlin.Boolean;
+    // private locationPredicate: (param0: Identifier) => boolean;
     // private namespacePattern: Optional<Pattern>;
-    // private namespacePredicate: (param0: string) => kotlin.Boolean;
+    // private namespacePredicate: (param0: string) => boolean;
     // private pathPattern: Optional<Pattern>;
-    // private pathPredicate: (param0: string) => kotlin.Boolean;
-    locationPredicate(): (param0: Identifier) => kotlin.Boolean;
-    namespacePredicate(): (param0: string) => kotlin.Boolean;
-    pathPredicate(): (param0: string) => kotlin.Boolean;
+    // private pathPredicate: (param0: string) => boolean;
+    locationPredicate(): (param0: Identifier) => boolean;
+    namespacePredicate(): (param0: string) => boolean;
+    pathPredicate(): (param0: string) => boolean;
 }

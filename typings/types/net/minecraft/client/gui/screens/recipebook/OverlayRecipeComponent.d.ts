@@ -17,13 +17,13 @@ import type { ContextMap } from '../../../../../../net/minecraft/util/context/Co
 import type { RecipeDisplayId } from '../../../../../../net/minecraft/world/item/crafting/display/RecipeDisplayId.d.ts'
 export class OverlayRecipeComponent extends Object implements Renderable, GuiEventListener {
     static BUTTON_SIZE: number;
-    constructor(slotSelectTime: () => kotlin.Int, isFurnaceMenu: boolean)
+    constructor(slotSelectTime: () => number, isFurnaceMenu: boolean)
     // private collection: RecipeCollection;
     // private isFurnaceMenu: boolean;
     // private isVisible: boolean;
     readonly lastRecipeClicked: RecipeDisplayId;
     // private recipeButtons: OverlayRecipeComponent$OverlayRecipeButton[];
-    // private slotSelectTime: () => kotlin.Int;
+    // private slotSelectTime: () => number;
     // private x: number;
     // private y: number;
     charTyped(event: CharacterEvent): boolean;

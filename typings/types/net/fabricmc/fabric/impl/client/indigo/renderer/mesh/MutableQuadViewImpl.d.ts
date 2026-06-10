@@ -27,9 +27,9 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     static BAKE_ROTATE_NONE: number;
     static CULL_FACE_EPSILON: number;
     constructor()
-    // private activeTransform: (param0: MutableQuadView) => kotlin.Boolean;
-    // private stackTransform: (param0: MutableQuadView) => kotlin.Boolean;
-    // private transformStack: (param0: MutableQuadView) => kotlin.Boolean[];
+    // private activeTransform: (param0: MutableQuadView) => boolean;
+    // private stackTransform: (param0: MutableQuadView) => boolean;
+    // private transformStack: (param0: MutableQuadView) => boolean[];
     ambientOcclusion(): TriState;
     ambientOcclusion(arg0: TriState): MutableQuadViewImpl;
     animated(): boolean;
@@ -75,7 +75,7 @@ export abstract class MutableQuadViewImpl extends QuadViewImpl implements QuadEm
     pos(arg0: number, arg1: Vector3fc): QuadEmitter;
     pos(arg0: number, arg1: number, arg2: number, arg3: number): MutableQuadViewImpl;
     postMaterialBake(arg0: Material$Baked): QuadEmitter;
-    pushTransform(arg0: (param0: MutableQuadView) => kotlin.Boolean): void;
+    pushTransform(arg0: (param0: MutableQuadView) => boolean): void;
     shadeMode(): ShadeMode;
     shadeMode(arg0: ShadeMode): MutableQuadViewImpl;
     square(arg0: Direction, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): QuadEmitter;

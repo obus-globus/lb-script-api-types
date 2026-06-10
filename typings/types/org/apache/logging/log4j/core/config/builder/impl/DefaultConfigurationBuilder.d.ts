@@ -76,9 +76,9 @@ export class DefaultConfigurationBuilder<T extends BuiltConfiguration> extends O
     newAsyncRootLogger(level: string, includeLocation: boolean): RootLoggerComponentBuilder;
     newAsyncRootLogger(level: Level): RootLoggerComponentBuilder;
     newAsyncRootLogger(level: Level, includeLocation: boolean): RootLoggerComponentBuilder;
-    newComponent(type: string): ComponentBuilder<B>;
-    newComponent(name: string, type: string): ComponentBuilder<B>;
-    newComponent(name: string, type: string, value: string): ComponentBuilder<B>;
+    newComponent<B extends ComponentBuilder<B>>(type: string): ComponentBuilder<B>;
+    newComponent<B extends ComponentBuilder<B>>(name: string, type: string): ComponentBuilder<B>;
+    newComponent<B extends ComponentBuilder<B>>(name: string, type: string, value: string): ComponentBuilder<B>;
     newCustomLevel(name: string, level: number): CustomLevelComponentBuilder;
     newFilter(type: string, onMatch: string, onMismatch: string): FilterComponentBuilder;
     newFilter(type: string, onMatch: Filter$Result, onMismatch: Filter$Result): FilterComponentBuilder;

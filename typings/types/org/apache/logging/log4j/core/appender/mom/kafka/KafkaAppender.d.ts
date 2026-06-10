@@ -14,7 +14,7 @@ export class KafkaAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramlayout: Layout<Object>, paramfilter: Filter, paramname: string, paramignoreExceptions: boolean, paramtopic: string, paramproperties: (Object | null)[], paramconfiguration: Configuration, paramkey: string): KafkaAppender;
+    static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramname: string, paramignoreExceptions: boolean, paramtopic: string, paramproperties: (Object | null)[], paramconfiguration: Configuration, paramkey: string): KafkaAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, ignoreExceptions: boolean, manager: KafkaManager, properties: Property[], retryCount: number)

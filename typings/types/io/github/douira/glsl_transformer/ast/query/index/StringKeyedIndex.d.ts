@@ -10,7 +10,7 @@ export abstract class StringKeyedIndex<V extends Object | number | string | bool
     index: I;
     setFactory: () => S;
     get(arg0: string): V[];
-    getAncestors(arg0: string, arg1: Class<M>): Stream<M>;
+    getAncestors<M extends ASTNode>(arg0: string, arg1: Class<M>): Stream<M>;
     getNode(arg0: V): N;
     getOne(arg0: string): V;
     getOneReferenceExpression(arg0: string): ReferenceExpression;

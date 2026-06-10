@@ -26,12 +26,12 @@ export class ItemAndComponents extends Record implements TypedInstance<Item> {
     copy(item: Item, componentsPatch: DataComponentPatch): ItemAndComponents;
     equals(other: Object | null): boolean;
     hashCode(): number;
-    is<T extends Object | number | string | boolean>(rawType: T): boolean;
-    is(type: Holder<T>): boolean;
-    is(set: Holder<T>[]): boolean;
-    is(type: ResourceKey<T>): boolean;
-    is(tag: TagKey<T>): boolean;
-    tags(): Stream<TagKey<T>>;
+    is(rawType: Item): boolean;
+    is(type: Holder<Item>): boolean;
+    is(set: Holder<Item>[]): boolean;
+    is(type: ResourceKey<Item>): boolean;
+    is(tag: TagKey<Item>): boolean;
+    tags(): Stream<TagKey<Item>>;
     toItemStack(count: number): ItemStack;
     toString(): string;
     typeHolder(): Holder<Item>;

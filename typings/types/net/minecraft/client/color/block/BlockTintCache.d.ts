@@ -6,11 +6,11 @@ import type { BlockTintCache$CacheData } from '../../../../../net/minecraft/clie
 import type { BlockTintCache$LatestCacheInfo } from '../../../../../net/minecraft/client/color/block/BlockTintCache$LatestCacheInfo.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 export class BlockTintCache extends Object {
-    constructor(source: (param0: BlockPos) => kotlin.Int)
+    constructor(source: (param0: BlockPos) => number)
     // private cache: Long2ObjectLinkedOpenHashMap<BlockTintCache$CacheData>;
     // private latestChunkOnThread: ThreadLocal<BlockTintCache$LatestCacheInfo>;
     // private lock: ReentrantReadWriteLock;
-    // private source: (param0: BlockPos) => kotlin.Int;
+    // private source: (param0: BlockPos) => number;
     // private findOrCreateChunkCache(x: number, z: number): BlockTintCache$CacheData;
     getColor(pos: BlockPos): number;
     invalidateAll(): void;

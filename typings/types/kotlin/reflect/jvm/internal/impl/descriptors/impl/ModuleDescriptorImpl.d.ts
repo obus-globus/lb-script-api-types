@@ -40,7 +40,7 @@ export class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements M
     getPackage(arg0: FqName): PackageViewDescriptor;
     getPackageFragmentProvider(): PackageFragmentProvider;
     // private getPackageFragmentProviderForWholeModuleWithDependencies(): CompositePackageFragmentProvider;
-    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): E[];
+    getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];
     initialize(arg0: PackageFragmentProvider): void;
     // private isInitialized(): boolean;
     isValid(): boolean;

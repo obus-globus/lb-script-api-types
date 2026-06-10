@@ -11,7 +11,7 @@ export class Strings extends Object {
     static isEmpty(paramcs: CharSequence): boolean;
     static isNotBlank(params: string): boolean;
     static isNotEmpty(paramcs: CharSequence): boolean;
-    static join(paramiterable: (Object | null)[], paramseparator: string): string;
+    static join(paramiterable: Object[], paramseparator: string): string;
     static join(paramiterator: Iterator<Object>, paramseparator: string): string;
     static left(paramstr: string, paramlen: number): string;
     static quote(paramstr: string): string;

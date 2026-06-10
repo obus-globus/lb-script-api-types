@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { GsonElement } from '../../../../../net/lenni0451/commons/gson/elements/GsonElement.d.ts'
 import type { HttpResponse } from '../../../../../net/lenni0451/commons/httpclient/HttpResponse.d.ts'
@@ -12,6 +11,5 @@ export class XblXstsAuthorizeRequest extends PostRequest implements XblResponseH
     constructor(arg0: XblDeviceToken, arg1: XblUserToken, arg2: XblTitleToken, arg3: string)
     handle(arg0: HttpResponse): XblXstsToken;
     handle(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): XblXstsToken;
-    handle<R extends Object | number | string | boolean>(arg0: HttpResponse): R;
     handleError(arg0: HttpResponse, arg1: Map$Entry<string, GsonElement>[]): void;
 }

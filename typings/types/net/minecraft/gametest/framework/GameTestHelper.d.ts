@@ -27,6 +27,7 @@ import type { EntityType } from '../../../../net/minecraft/world/entity/EntityTy
 import type { LivingEntity } from '../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Mob } from '../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { ItemEntity } from '../../../../net/minecraft/world/entity/item/ItemEntity.d.ts'
+import type { InventoryCarrier } from '../../../../net/minecraft/world/entity/npc/InventoryCarrier.d.ts'
 import type { Player } from '../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -51,16 +52,16 @@ export class GameTestHelper extends Object {
     absoluteVec(relativeVec: Vec3): Vec3;
     assertAtTickTimeContainerContains(time: number, pos: BlockPos, item: Item): void;
     assertAtTickTimeContainerEmpty(time: number, pos: BlockPos): void;
-    assertBlock(pos: BlockPos, predicate: (param0: Block) => kotlin.Boolean, errorMessage: (param0: Block) => Component): void;
-    assertBlockEntityData(pos: BlockPos, type: Class<T>, predicate: (param0: T) => kotlin.Boolean, errorMessage: () => Component): void;
+    assertBlock(pos: BlockPos, predicate: (param0: Block) => boolean, errorMessage: (param0: Block) => Component): void;
+    assertBlockEntityData<T extends BlockEntity>(pos: BlockPos, type: Class<T>, predicate: (param0: T) => boolean, errorMessage: () => Component): void;
     assertBlockNotPresent(blockType: Block, x: number, y: number, z: number): void;
     assertBlockNotPresent(blockType: Block, pos: BlockPos): void;
     assertBlockPresent(blockType: Block): void;
     assertBlockPresent(blockType: Block, x: number, y: number, z: number): void;
     assertBlockPresent(blockType: Block, pos: BlockPos): void;
     assertBlockProperty<T extends Comparable<T>>(pos: BlockPos, property: Property<T>, value: T): void;
-    assertBlockProperty(pos: BlockPos, property: Property<T>, predicate: (param0: T) => kotlin.Boolean, errorMessage: Component): void;
-    assertBlockState(pos: BlockPos, predicate: (param0: BlockState) => kotlin.Boolean, errorMessage: (param0: BlockState) => Component): void;
+    assertBlockProperty<T extends Comparable<T>>(pos: BlockPos, property: Property<T>, predicate: (param0: T) => boolean, errorMessage: Component): void;
+    assertBlockState(pos: BlockPos, predicate: (param0: BlockState) => boolean, errorMessage: (param0: BlockState) => Component): void;
     assertBlockState(pos: BlockPos, expected: BlockState): void;
     assertBlockTag(tag: TagKey<Block>, pos: BlockPos): void;
     assertContainerContains(pos: BlockPos, item: Item): void;
@@ -68,14 +69,14 @@ export class GameTestHelper extends Object {
     assertContainerEmpty(pos: BlockPos): void;
     assertEntitiesPresent(entityType: EntityType<Object>, expectedEntities: number): void;
     assertEntitiesPresent(entityType: EntityType<Object>, pos: BlockPos, numOfExpectedEntities: number, distance: number): void;
-    assertEntityData<T extends Object | number | string | boolean>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
-    assertEntityData(pos: BlockPos, entityType: EntityType<E>, test: (param0: E) => kotlin.Boolean): void;
-    assertEntityData<T extends Object | number | string | boolean>(box: AABB, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
+    assertEntityData<E extends Entity, T extends Object | number | string | boolean>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
+    assertEntityData<E extends Entity>(pos: BlockPos, entityType: EntityType<E>, test: (param0: E) => boolean): void;
+    assertEntityData<E extends Entity, T extends Object | number | string | boolean>(box: AABB, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
     assertEntityInstancePresent(entity: Entity, x: number, y: number, z: number): void;
     assertEntityInstancePresent(entity: Entity, pos: BlockPos): void;
     assertEntityInstancePresent(entity: Entity, pos: BlockPos, inflate: number): void;
-    assertEntityInventoryContains(pos: BlockPos, entityType: EntityType<E>, item: Item): void;
-    assertEntityIsHolding(pos: BlockPos, entityType: EntityType<E>, item: Item): void;
+    assertEntityInventoryContains<E extends Entity & InventoryCarrier>(pos: BlockPos, entityType: EntityType<E>, item: Item): void;
+    assertEntityIsHolding<E extends LivingEntity>(pos: BlockPos, entityType: EntityType<E>, item: Item): void;
     assertEntityNotPresent(entityType: EntityType<Object>): void;
     assertEntityNotPresent(entityType: EntityType<Object>, x: number, y: number, z: number): void;
     assertEntityNotPresent(entityType: EntityType<Object>, pos: BlockPos): void;
@@ -88,7 +89,7 @@ export class GameTestHelper extends Object {
     assertEntityPresent(entityType: EntityType<Object>, relativeAABB: AABB): void;
     assertEntityPresent(entityType: EntityType<Object>, relativeAABB: AABB, message: Component): void;
     assertEntityProperty<E extends Entity, T extends Object | number | string | boolean>(entity: E, test: (param0: E) => T, expected: T, description: Component): void;
-    assertEntityProperty<E extends Entity>(entity: E, test: (param0: E) => kotlin.Boolean, description: Component): void;
+    assertEntityProperty<E extends Entity>(entity: E, test: (param0: E) => boolean, description: Component): void;
     assertEntityTouching(entityType: EntityType<Object>, x: number, y: number, z: number): void;
     assertFalse(condition: boolean, errorMessage: string): void;
     assertFalse(condition: boolean, errorMessage: Component): void;
@@ -98,7 +99,7 @@ export class GameTestHelper extends Object {
     assertItemEntityPresent(itemType: Item): void;
     assertItemEntityPresent(itemType: Item, pos: BlockPos, distance: number): void;
     assertLivingEntityHasMobEffect(entity: LivingEntity, mobEffect: Holder<MobEffect>, amplifier: number): void;
-    assertRedstoneSignal(pos: BlockPos, direction: Direction, levelPredicate: (param0: number) => kotlin.Boolean, errorMessage: () => Component): void;
+    assertRedstoneSignal(pos: BlockPos, direction: Direction, levelPredicate: (param0: number) => boolean, errorMessage: () => Component): void;
     assertSameBlockState(sourcePos: BlockPos, targetPos: BlockPos): void;
     assertSameBlockStates(sourceBoundingBox: BoundingBox, targetBoundingBoxCorner: BlockPos): void;
     assertTrue(condition: boolean, errorMessage: string): void;
@@ -120,8 +121,8 @@ export class GameTestHelper extends Object {
     failIf(asserter: () => void): void;
     failIfEver(asserter: () => void): void;
     findClosestEntity<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number, distance: number): E;
-    findEntities(entityType: EntityType<E>, x: number, y: number, z: number, distance: number): E[];
-    findEntities(entityType: EntityType<E>, pos: Vec3, distance: number): E[];
+    findEntities<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number, distance: number): E[];
+    findEntities<E extends Entity>(entityType: EntityType<E>, pos: Vec3, distance: number): E[];
     findOneEntity<E extends Entity>(entityType: EntityType<E>): E;
     forEveryBlockInStructure(forBlock: (param0: BlockPos) => void): void;
     getAbsoluteDirection(direction: Direction): Direction;
@@ -129,8 +130,8 @@ export class GameTestHelper extends Object {
     getBlockState(pos: BlockPos): BlockState;
     getBounds(): AABB;
     getBoundsWithPadding(): AABB;
-    getEntities(entityType: EntityType<T>): T[];
-    getEntities(entityType: EntityType<T>, pos: BlockPos, distance: number): T[];
+    getEntities<T extends Entity>(entityType: EntityType<T>): T[];
+    getEntities<T extends Entity>(entityType: EntityType<T>, pos: BlockPos, distance: number): T[];
     getHeight(heightmap: Heightmap$Types, x: number, z: number): number;
     getLevel(): ServerLevel;
     getRelativeBounds(): AABB;
@@ -174,9 +175,9 @@ export class GameTestHelper extends Object {
     spawn<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawn<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number, entitySpawnReason: EntitySpawnReason): E;
     spawn<E extends Entity>(entityType: EntityType<E>, pos: BlockPos): E;
-    spawn(entityType: EntityType<E>, pos: BlockPos, amount: number): E[];
+    spawn<E extends Entity>(entityType: EntityType<E>, pos: BlockPos, amount: number): E[];
     spawn<E extends Entity>(entityType: EntityType<E>, pos: Vec3): E;
-    spawn(entityType: EntityType<E>, pos: Vec3, amount: number): E[];
+    spawn<E extends Entity>(entityType: EntityType<E>, pos: Vec3, amount: number): E[];
     spawn<E extends Entity>(entityType: EntityType<E>, pos: Vec3, spawnReason: EntitySpawnReason): E;
     spawnItem(item: Item, x: number, y: number, z: number): ItemEntity;
     spawnItem(item: Item, pos: BlockPos): ItemEntity;
@@ -191,7 +192,7 @@ export class GameTestHelper extends Object {
     succeedWhen(asserter: () => void): void;
     succeedWhenBlockPresent(block: Block, x: number, y: number, z: number): void;
     succeedWhenBlockPresent(block: Block, pos: BlockPos): void;
-    succeedWhenEntityData<T extends Object | number | string | boolean>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
+    succeedWhenEntityData<E extends Entity, T extends Object | number | string | boolean>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
     succeedWhenEntityNotPresent(entityType: EntityType<Object>, x: number, y: number, z: number): void;
     succeedWhenEntityNotPresent(entityType: EntityType<Object>, pos: BlockPos): void;
     succeedWhenEntityPresent(entityType: EntityType<Object>, x: number, y: number, z: number): void;

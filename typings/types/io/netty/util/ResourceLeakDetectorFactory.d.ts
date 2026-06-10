@@ -5,7 +5,7 @@ export abstract class ResourceLeakDetectorFactory extends Object {
     static instance(): ResourceLeakDetectorFactory;
     static setResourceLeakDetectorFactory(paramarg0: ResourceLeakDetectorFactory): void;
     constructor()
-    newResourceLeakDetector(arg0: Class<T>): ResourceLeakDetector<T>;
-    newResourceLeakDetector(arg0: Class<T>, arg1: number): ResourceLeakDetector<T>;
-    newResourceLeakDetector(arg0: Class<T>, arg1: number, arg2: number): ResourceLeakDetector<T>;
+    newResourceLeakDetector<T extends Object | number | string | boolean>(arg0: Class<T>): ResourceLeakDetector<T>;
+    newResourceLeakDetector<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: number): ResourceLeakDetector<T>;
+    newResourceLeakDetector<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: number, arg2: number): ResourceLeakDetector<T>;
 }

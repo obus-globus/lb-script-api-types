@@ -14,7 +14,7 @@ import type { TestBlockMode } from '../../../../net/minecraft/world/level/block/
 export class BlockBasedTestInstance extends GameTestInstance {
     static CODEC: MapCodec<BlockBasedTestInstance>;
     static DIRECT_CODEC: Codec<GameTestInstance>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<GameTestInstance>[]): MapCodec<GameTestInstance>;
     constructor(testData: TestData<Holder<TestEnvironmentDefinition<Object>>>)
     codec(): MapCodec<BlockBasedTestInstance>;
     // private findStartBlock(helper: GameTestHelper): BlockPos;

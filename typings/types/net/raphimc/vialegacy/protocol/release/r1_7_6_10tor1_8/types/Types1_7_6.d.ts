@@ -17,7 +17,7 @@ export class Types1_7_6 extends Object {
     static CHUNK_WITHOUT_SKYLIGHT: Type<Chunk>;
     static CHUNK_WITH_SKYLIGHT: Type<Chunk>;
     static ENTITY_DATA: Type<EntityData>;
-    static ENTITY_DATA_LIST: Type<Object>;
+    static ENTITY_DATA_LIST: Type<EntityData[]>;
     static INT_ARRAY: Type<number[]>;
     static ITEM: Type<Item>;
     static ITEM_ARRAY: Type<(Object | null)[]>;

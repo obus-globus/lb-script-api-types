@@ -68,7 +68,7 @@ export class OffsetTime extends Object implements Serializable, Temporal, Tempor
     plusMinutes(arg0: number): OffsetTime;
     plusNanos(arg0: number): OffsetTime;
     plusSeconds(arg0: number): OffsetTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     // private toEpochNano(): number;
@@ -78,9 +78,9 @@ export class OffsetTime extends Object implements Serializable, Temporal, Tempor
     truncatedTo(arg0: TemporalUnit): OffsetTime;
     until(arg0: Temporal, arg1: TemporalUnit): number;
     // private with(arg0: LocalTime, arg1: ZoneOffset): OffsetTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): OffsetTime;
+    with(arg0: (param0: Temporal) => Temporal): OffsetTime;
     with(arg0: TemporalField, arg1: number): OffsetTime;
-    with(arg0: (param0: Temporal) => java.time.temporal.Temporal): Temporal;
+    with(arg0: (param0: Temporal) => Temporal): Temporal;
     withHour(arg0: number): OffsetTime;
     withMinute(arg0: number): OffsetTime;
     withNano(arg0: number): OffsetTime;

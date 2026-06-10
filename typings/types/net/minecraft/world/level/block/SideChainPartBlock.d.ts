@@ -9,7 +9,7 @@ import type { SideChainPartBlock$Neighbors } from '../../../../../net/minecraft/
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { SideChainPart } from '../../../../../net/minecraft/world/level/block/state/properties/SideChainPart.d.ts'
 export interface SideChainPartBlock extends Object {
-    // private addBlocksConnectingTowards(getNeighbor: (param0: SideChainPartBlock$Neighbor) => unknown, endPart: SideChainPart, accumulator: (param0: BlockPos) => void): void;
+    // private addBlocksConnectingTowards(getNeighbor: (param0: number) => SideChainPartBlock$Neighbor, endPart: SideChainPart, accumulator: (param0: BlockPos) => void): void;
     // private canConnect(newBlocksToConnectTo: number, currentChainLength: number): boolean;
     getAllBlocksConnectedTo(level: LevelAccessor, pos: BlockPos): BlockPos[];
     getFacing(state: BlockState): Direction;

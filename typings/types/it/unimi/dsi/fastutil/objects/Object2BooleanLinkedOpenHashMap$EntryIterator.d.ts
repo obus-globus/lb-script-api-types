@@ -8,10 +8,10 @@ export class Object2BooleanLinkedOpenHashMap$EntryIterator extends Object2Boolea
     constructor(null_: Object2BooleanLinkedOpenHashMap$EntryIterator)
     constructor(null_: Object2BooleanLinkedOpenHashMap$EntryIterator)
     // private entry: Object2BooleanLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Object2BooleanMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Object2BooleanLinkedOpenHashMap$MapEntry;
-    previous(): Object2BooleanLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2BooleanMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Object2BooleanMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Object2BooleanLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Object2BooleanLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Object2BooleanMap$Entry<K>): void;
 }

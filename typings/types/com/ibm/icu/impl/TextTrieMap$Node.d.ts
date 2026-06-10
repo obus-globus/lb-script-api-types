@@ -12,10 +12,10 @@ export class TextTrieMap$Node extends Object {
     // private add<V extends Object | number | string | boolean>(arg0: string[], arg1: number, arg2: V): void;
     // private addValue<V extends Object | number | string | boolean>(arg0: V[], arg1: V): V[];
     charCount(): number;
-    findMatch(arg0: TextTrieMap$CharIterator, arg1: TextTrieMap$Output): TextTrieMap$Node;
+    findMatch<V extends Object | number | string | boolean>(arg0: TextTrieMap$CharIterator, arg1: TextTrieMap$Output): TextTrieMap$Node;
     // private lenMatches(arg0: string[], arg1: number): number;
     // private matchFollowing(arg0: TextTrieMap$CharIterator, arg1: TextTrieMap$Output): boolean;
     putLeadCodePoints(arg0: string[]): void;
     // private split(arg0: number): void;
-    values(): Iterator<V>;
+    values<V extends Object | number | string | boolean>(): Iterator<V>;
 }

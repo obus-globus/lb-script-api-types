@@ -15,5 +15,5 @@ export class FRAPIEmitter extends Object implements PlatformModelEmitter {
     static INSTANCE: PlatformModelEmitter;
     static getInstance(): PlatformModelEmitter;
     constructor()
-    emitModel(arg0: BlockStateModel, arg1: (param0: Direction) => kotlin.Boolean, arg2: MutableQuadViewImpl, arg3: RandomSource, arg4: BlockAndTintGetter, arg5: BlockPos, arg6: BlockState, arg7: (param0: BlockStateModelPart, param1: (param0: Direction) => kotlin.Boolean, param2: (param0: MutableQuadViewImpl) => void) => void): void;
+    emitModel(arg0: BlockStateModel, arg1: (param0: Direction) => boolean, arg2: MutableQuadViewImpl, arg3: RandomSource, arg4: BlockAndTintGetter, arg5: BlockPos, arg6: BlockState, arg7: (param0: BlockStateModelPart, param1: (param0: Direction) => boolean, param2: (param0: MutableQuadViewImpl) => void) => void): void;
 }

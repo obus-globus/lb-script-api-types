@@ -3,10 +3,11 @@ import type { Reference2ObjectMap$Entry } from '../../../../../../com/viaversion
 import type { Reference2ObjectOpenHashMap$MapEntry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Reference2ObjectOpenHashMap$MapEntry.d.ts'
 import type { Reference2ObjectOpenHashMap$MapIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Reference2ObjectOpenHashMap$MapIterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Reference2ObjectOpenHashMap$FastEntryIterator extends Reference2ObjectOpenHashMap$MapIterator<Object> implements ObjectIterator<Reference2ObjectMap$Entry<K, V>> {
     private constructor(null_: Reference2ObjectOpenHashMap$FastEntryIterator)
     // private entry: Reference2ObjectOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2ObjectMap$Entry<K, V>) => void, arg1: number): void;
-    next(): Reference2ObjectOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Reference2ObjectMap$Entry<K, V>) => void, arg1: number): void;
+    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Reference2ObjectOpenHashMap$MapEntry;
     skip(arg0: number): number;
 }

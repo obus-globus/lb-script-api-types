@@ -10,7 +10,7 @@ import type { ClientConfigurationPacketListener } from '../../../../../net/minec
 import type { KnownPack } from '../../../../../net/minecraft/server/packs/repository/KnownPack.d.ts'
 export class ClientboundSelectKnownPacks extends Record implements Packet<ClientConfigurationPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundSelectKnownPacks>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(knownPacks: KnownPack[])
     // private knownPacks: KnownPack[];
     equals(o: Object | null): boolean;

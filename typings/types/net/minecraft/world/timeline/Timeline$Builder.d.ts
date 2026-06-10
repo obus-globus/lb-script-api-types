@@ -18,10 +18,10 @@ export class Timeline$Builder extends Object {
     // private periodTicks: Optional<number>;
     // private timeMarkers: ImmutableMap$Builder<ResourceKey<ClockTimeMarker>, Timeline$TimeMarkerInfo>;
     // private tracks: ImmutableMap$Builder<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>;
-    addModifierTrack(attribute: EnvironmentAttribute<Value>, modifier: AttributeModifier<Value, Argument>, builder: (param0: KeyframeTrack$Builder<Argument>) => void): Timeline$Builder;
+    addModifierTrack<Value extends Object | number | string | boolean, Argument extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, modifier: AttributeModifier<Value, Argument>, builder: (param0: KeyframeTrack$Builder<Argument>) => void): Timeline$Builder;
     addTimeMarker(id: ResourceKey<ClockTimeMarker>, ticks: number): Timeline$Builder;
     addTimeMarker(id: ResourceKey<ClockTimeMarker>, ticks: number, showInCommands: boolean): Timeline$Builder;
-    addTrack(attribute: EnvironmentAttribute<Value>, builder: (param0: KeyframeTrack$Builder<Value>) => void): Timeline$Builder;
+    addTrack<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, builder: (param0: KeyframeTrack$Builder<Value>) => void): Timeline$Builder;
     build(): Timeline;
     setPeriodTicks(periodTicks: number): Timeline$Builder;
 }

@@ -14,15 +14,15 @@ export class AttributeModifier$Operation extends Enum<AttributeModifier$Operatio
     static ADD_MULTIPLIED_BASE: AttributeModifier$Operation;
     static ADD_MULTIPLIED_TOTAL: AttributeModifier$Operation;
     static ADD_VALUE: AttributeModifier$Operation;
-    static BY_ID: (param0: AttributeModifier$Operation) => unknown;
+    static BY_ID: (param0: number) => AttributeModifier$Operation;
     static CODEC: Codec<AttributeModifier$Operation>;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, AttributeModifier$Operation>;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AttributeModifier$Operation;

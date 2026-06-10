@@ -10,7 +10,7 @@ export class AdvancementRewards$Builder extends Object {
     static experience(paramamount: number): AdvancementRewards$Builder;
     static function(paramid: Identifier): AdvancementRewards$Builder;
     static loot(paramid: ResourceKey<LootTable>): AdvancementRewards$Builder;
-    static recipe(paramid: ResourceKey<Object>): AdvancementRewards$Builder;
+    static recipe(paramid: ResourceKey<Recipe<Object>>): AdvancementRewards$Builder;
     constructor()
     // private experience: number;
     // private function: Optional<Identifier>;

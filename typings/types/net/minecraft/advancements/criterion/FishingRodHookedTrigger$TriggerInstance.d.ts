@@ -22,7 +22,7 @@ export class FishingRodHookedTrigger$TriggerInstance extends Record implements S
     equals(o: Object | null): boolean;
     hashCode(): number;
     item(): Optional<ItemPredicate>;
-    matches(rod: ItemStack, hookedIn: LootContext, items: E[]): boolean;
+    matches(rod: ItemStack, hookedIn: LootContext, items: ItemStack[]): boolean;
     player(): Optional<ContextAwarePredicate>;
     rod(): Optional<ItemPredicate>;
     toString(): string;

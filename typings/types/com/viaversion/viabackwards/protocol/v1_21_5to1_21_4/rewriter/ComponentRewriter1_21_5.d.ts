@@ -1,3 +1,4 @@
+import type { StringTag } from '../../../../../../com/viaversion/nbt/tag/StringTag.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { BackwardsProtocol } from '../../../../../../com/viaversion/viabackwards/api/BackwardsProtocol.d.ts'
 import type { NBTComponentRewriter } from '../../../../../../com/viaversion/viabackwards/api/rewriters/text/NBTComponentRewriter.d.ts'
@@ -20,7 +21,7 @@ export class ComponentRewriter1_21_5 extends NBTComponentRewriter<ClientboundPac
     processCompoundTag(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     toUglyJson(arg0: UserConnection, arg1: Tag): string;
     // private updateClickEvent(arg0: Map$Entry<string, Tag>[]): void;
-    updateComponentList(arg0: UserConnection, arg1: T[]): T[];
+    updateComponentList(arg0: UserConnection, arg1: Tag[]): StringTag[];
     // private updateDataComponents(arg0: Map$Entry<string, Tag>[]): void;
     // private updateShowEntityHover(arg0: Map$Entry<string, Tag>[]): void;
     // private updateShowInTooltip(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: string[]): void;

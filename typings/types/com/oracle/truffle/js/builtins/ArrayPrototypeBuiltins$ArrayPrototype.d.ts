@@ -52,7 +52,7 @@ export class ArrayPrototypeBuiltins$ArrayPrototype extends Enum<ArrayPrototypeBu
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): ArrayPrototypeBuiltins$ArrayPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

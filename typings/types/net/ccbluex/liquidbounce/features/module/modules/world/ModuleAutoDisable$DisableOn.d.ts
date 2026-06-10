@@ -10,7 +10,7 @@ export class ModuleAutoDisable$DisableOn extends Enum<ModuleAutoDisable$DisableO
     static FLAG: ModuleAutoDisable$DisableOn;
     static WORLD_CHANGE: ModuleAutoDisable$DisableOn;
     static getEntries(): ModuleAutoDisable$DisableOn[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoDisable$DisableOn;

@@ -1,6 +1,7 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { DialogBody } from '../../../../../net/minecraft/server/dialog/body/DialogBody.d.ts'
 export class DialogBodyTypes extends Object {
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<DialogBody>[]): MapCodec<DialogBody>;
     constructor()
 }

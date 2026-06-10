@@ -19,5 +19,5 @@ export class LiquidBounce$ClientResourceReloader extends Object implements Prepa
     static INSTANCE: LiquidBounce$ClientResourceReloader;
     getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    reload(store: PreparableReloadListener$SharedState, prepareExecutor: Executor, synchronizer: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, applyExecutor: Executor): CompletableFuture<void>;
+    reload(store: PreparableReloadListener$SharedState, prepareExecutor: Executor, synchronizer: (param0: Object | null) => CompletableFuture<Object>, applyExecutor: Executor): CompletableFuture<void>;
 }

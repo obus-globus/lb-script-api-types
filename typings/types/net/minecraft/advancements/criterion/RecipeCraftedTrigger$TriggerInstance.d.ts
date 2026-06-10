@@ -13,9 +13,9 @@ import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recip
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
 export class RecipeCraftedTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<RecipeCraftedTrigger$TriggerInstance>;
-    static craftedItem(paramrecipeId: ResourceKey<Object>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
-    static craftedItem(paramrecipeId: ResourceKey<Object>, parampredicates: ItemPredicate$Builder[]): Criterion<RecipeCraftedTrigger$TriggerInstance>;
-    static crafterCraftedItem(paramrecipeId: ResourceKey<Object>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
+    static craftedItem(paramrecipeId: ResourceKey<Recipe<Object>>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
+    static craftedItem(paramrecipeId: ResourceKey<Recipe<Object>>, parampredicates: ItemPredicate$Builder[]): Criterion<RecipeCraftedTrigger$TriggerInstance>;
+    static crafterCraftedItem(paramrecipeId: ResourceKey<Recipe<Object>>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
     constructor(player: Optional<ContextAwarePredicate>, recipeId: ResourceKey<Recipe<Object>>, ingredients: ItemPredicate[])
     // private ingredients: ItemPredicate[];
     // private player: Optional<ContextAwarePredicate>;

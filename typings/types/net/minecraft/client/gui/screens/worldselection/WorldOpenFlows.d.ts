@@ -15,6 +15,8 @@ import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core
 import type { LayeredRegistryAccess } from '../../../../../../net/minecraft/core/LayeredRegistryAccess.d.ts'
 import type { RegistryLayer } from '../../../../../../net/minecraft/server/RegistryLayer.d.ts'
 import type { ReloadableServerResources } from '../../../../../../net/minecraft/server/ReloadableServerResources.d.ts'
+import type { WorldLoader$DataLoadContext } from '../../../../../../net/minecraft/server/WorldLoader$DataLoadContext.d.ts'
+import type { WorldLoader$DataLoadOutput } from '../../../../../../net/minecraft/server/WorldLoader$DataLoadOutput.d.ts'
 import type { WorldLoader$PackConfig } from '../../../../../../net/minecraft/server/WorldLoader$PackConfig.d.ts'
 import type { WorldLoader$ResultFactory } from '../../../../../../net/minecraft/server/WorldLoader$ResultFactory.d.ts'
 import type { WorldLoader$WorldDataSupplier } from '../../../../../../net/minecraft/server/WorldLoader$WorldDataSupplier.d.ts'
@@ -41,7 +43,7 @@ export class WorldOpenFlows extends Object {
     createLevelFromExistingSettings(levelSourceAccess: LevelStorageSource$LevelStorageAccess, serverResources: ReloadableServerResources, registryAccess: LayeredRegistryAccess<RegistryLayer>, worldDataAndGenSettings: LevelDataAndDimensions$WorldDataAndGenSettings, gameRules: Optional<GameRules>): void;
     // private createWorldAccess(levelId: string): LevelStorageSource$LevelStorageAccess;
     // private loadBundledResourcePack(packSource: DownloadedPackSource, levelSourceAccess: LevelStorageSource$LevelStorageAccess): CompletableFuture<void>;
-    // private loadWorldDataBlocking<R extends Object | number | string | boolean>(packConfig: WorldLoader$PackConfig, worldDataGetter: (param0: D) => net.minecraft.server.WorldLoader.DataLoadOutput<unknown>, worldDataSupplier: (param0: D, param1: R, param2: CloseableResourceManager, param3: ReloadableServerResources) => unknown): R;
+    // private loadWorldDataBlocking<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(packConfig: WorldLoader$PackConfig, worldDataGetter: (param0: WorldLoader$DataLoadContext) => WorldLoader$DataLoadOutput<D>, worldDataSupplier: (param0: CloseableResourceManager, param1: ReloadableServerResources, param2: LayeredRegistryAccess<RegistryLayer>, param3: D) => R): R;
     loadWorldStem(worldAccess: LevelStorageSource$LevelStorageAccess, levelDataTag: Dynamic<Object>, safeMode: boolean, packRepository: PackRepository): WorldStem;
     openWorld(levelId: string, onCancel: () => void): void;
     // private openWorldCheckDiskSpace(worldAccess: LevelStorageSource$LevelStorageAccess, worldStem: WorldStem, packSource: DownloadedPackSource, packRepository: PackRepository, onCancel: () => void): void;

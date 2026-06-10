@@ -7,10 +7,10 @@ export class StateDefinition$StateCollection<S extends StateHolder<Object, Objec
     constructor(statesByValues: Map<Comparable<Object>[], S>, statesByPivotCache: Map<Comparable<Object>[], S[]>)
     // private statesByPivotCache: Map<Comparable<Object>[], S[]>;
     // private statesByValues: Map<Comparable<Object>[], S>;
-    // private computeStatesForPivot(valuesKey: Comparable<Object>[], pivot: Property<T>, pivotIndex: number): S[];
+    // private computeStatesForPivot<T extends Comparable<T>>(valuesKey: Comparable<Object>[], pivot: Property<T>, pivotIndex: number): S[];
     equals(o: Object | null): boolean;
     fillNeighborsForState(propertyKeys: Property<Object>[], propertyValues: Comparable<Object>[]): S[][];
-    // private fillStatesForPivot(valuesKey: Comparable<Object>[], pivot: Property<T>, pivotIndex: number): S[];
+    // private fillStatesForPivot<T extends Comparable<T>>(valuesKey: Comparable<Object>[], pivot: Property<T>, pivotIndex: number): S[];
     hashCode(): number;
     statesByPivotCache(): Map<Comparable<Object>[], S[]>;
     statesByValues(): Map<Comparable<Object>[], S>;

@@ -33,6 +33,7 @@ import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { WeakReference } from '../../java/lang/ref/WeakReference.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { ResourceBundle } from '../../java/util/ResourceBundle.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
@@ -129,7 +130,7 @@ export class Window extends Container implements Accessible {
     getFocusableWindowState(): boolean;
     getIconImages(): Image[];
     getInputContext(): InputContext;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getLocale(): Locale;
     getLocationOnWindow(): Point;
     getModalBlocker(): Dialog;

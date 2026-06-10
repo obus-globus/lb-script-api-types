@@ -28,9 +28,9 @@ import type { ValueOutput } from '../../../../../../net/minecraft/world/level/st
 export class SculkShriekerBlockEntity extends BlockEntity implements SleepingBlockEntity, GameEventListener$Provider<VibrationSystem$Listener>, VibrationSystem {
     static NBT_ATTACHMENT_KEY: string;
     static NO_VIBRATION_FREQUENCY: number;
-    static RESONANCE_EVENTS: (Object | null)[];
+    static RESONANCE_EVENTS: ResourceKey<GameEvent>[];
     static SLEEPING_BLOCK_ENTITY_TICKER: TickingBlockEntity;
-    static VIBRATION_FREQUENCY_FOR_EVENT: (param0: Object | null) => kotlin.Int;
+    static VIBRATION_FREQUENCY_FOR_EVENT: (param0: ResourceKey<GameEvent>) => number;
     static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
     static getGameEventFrequency(paramevent: Holder<GameEvent>): number;
     static getGameEventFrequency(paramevent: ResourceKey<GameEvent>): number;

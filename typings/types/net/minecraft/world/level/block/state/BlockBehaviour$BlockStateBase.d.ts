@@ -35,6 +35,7 @@ import type { RenderShape } from '../../../../../../net/minecraft/world/level/bl
 import type { Rotation } from '../../../../../../net/minecraft/world/level/block/Rotation.d.ts'
 import type { SoundType } from '../../../../../../net/minecraft/world/level/block/SoundType.d.ts'
 import type { SupportType } from '../../../../../../net/minecraft/world/level/block/SupportType.d.ts'
+import type { BlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityTicker } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntityTicker.d.ts'
 import type { BlockEntityType } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockBehaviour$BlockStateBase$Cache } from '../../../../../../net/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase$Cache.d.ts'
@@ -63,16 +64,16 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     // private cache: BlockBehaviour$BlockStateBase$Cache;
     // private canOcclude: boolean;
     // private destroySpeed: number;
-    // private emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
+    // private emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
     // private flags: number;
     readonly fluidState: FluidState;
     // private ignitedByLava: boolean;
     // private instrument: NoteBlockInstrument;
     // private isAir: boolean;
     // private isRandomlyTicking: boolean;
-    // private isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
-    // private isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
-    // private isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean;
+    // private isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
+    // private isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
+    // private isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
     // private legacySolid: boolean;
     readonly lightDampening: number;
     readonly lightEmission: number;
@@ -80,8 +81,8 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     // private mapColor: MapColor;
     readonly occlusionShape: VoxelShape;
     // private occlusionShapesByFace: VoxelShape[];
-    // private offsetFunction: (param0: BlockState, param1: BlockPos) => net.minecraft.world.phys.Vec3;
-    // private postProcess: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => net.minecraft.core.BlockPos;
+    // private offsetFunction: (param0: BlockState, param1: BlockPos) => Vec3;
+    // private postProcess: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => BlockPos;
     // private propagatesSkylightDown: boolean;
     // private pushReaction: PushReaction;
     // private replaceable: boolean;
@@ -133,7 +134,7 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     getShape(level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     getSignal(level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getSoundType(): SoundType;
-    getTicker(level: Level, type: BlockEntityType<T>): (param0: T, param1: Level, param2: BlockPos, param3: BlockState) => void;
+    getTicker<T extends BlockEntity>(level: Level, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     getVisualShape(level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     handleNeighborChanged(level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;
     // private handleUninitializedBlockStateFlags(): number;
@@ -144,16 +145,12 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     ignitedByLava(): boolean;
     initCache(): void;
     instrument(): NoteBlockInstrument;
-    is<T extends Object | number | string | boolean>(rawType: T): boolean;
-    is(type: Holder<T>): boolean;
-    is(set: Holder<T>[]): boolean;
-    is(type: ResourceKey<T>): boolean;
-    is(tag: TagKey<T>): boolean;
+    is(rawType: Block): boolean;
     is(type: Holder<Block>): boolean;
+    is(set: Holder<Block>[]): boolean;
     is(type: ResourceKey<Block>): boolean;
     is(tag: TagKey<Block>): boolean;
-    is(tag: TagKey<Block>, predicate: (param0: BlockBehaviour$BlockStateBase) => kotlin.Boolean): boolean;
-    is(rawType: Block): boolean;
+    is(tag: TagKey<Block>, predicate: (param0: BlockBehaviour$BlockStateBase) => boolean): boolean;
     isAir(): boolean;
     isCollisionShapeFullBlock(level: BlockGetter, pos: BlockPos): boolean;
     isFaceSturdy(level: BlockGetter, pos: BlockPos, direction: Direction): boolean;
@@ -182,7 +179,7 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     shouldSpawnTerrainParticles(): boolean;
     skipRendering(neighborState: BlockState, direction: Direction): boolean;
     spawnAfterBreak(level: ServerLevel, pos: BlockPos, tool: ItemStack, dropExperience: boolean): void;
-    tags(): Stream<TagKey<T>>;
+    tags(): Stream<TagKey<Block>>;
     tick(level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     triggerEvent(level: Level, pos: BlockPos, b0: number, b1: number): boolean;
     typeHolder(): Holder<Block>;

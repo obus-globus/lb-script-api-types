@@ -9,7 +9,7 @@ import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/le
 import type { CaveSurface } from '../../../../../net/minecraft/world/level/levelgen/placement/CaveSurface.d.ts'
 export class SurfaceRules$StoneDepthCheck extends Record implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     // private addSurfaceDepth: boolean;
     // private offset: number;
     // private secondaryDepthRange: number;

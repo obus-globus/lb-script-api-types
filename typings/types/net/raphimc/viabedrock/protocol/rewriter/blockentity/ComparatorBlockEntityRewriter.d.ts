@@ -17,6 +17,6 @@ export class ComparatorBlockEntityRewriter extends Object implements BlockEntity
     copyItemList(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
     rewriteCustomName(arg0: UserConnection, arg1: StringTag): StringTag;
     rewriteItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
-    rewriteItemList(arg0: UserConnection, arg1: T[]): T[];
+    rewriteItemList(arg0: UserConnection, arg1: Map$Entry<string, Tag>[][]): Tag[];
     toJava(arg0: UserConnection, arg1: BedrockBlockEntity): BlockEntity;
 }

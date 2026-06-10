@@ -37,7 +37,7 @@ export class TypeHandle extends Object {
     getAnnotation(arg0: Class<Annotation>): IAnnotationHandle;
     getElement(): TypeElement;
     getEnclosedElements(): Element[];
-    getEnclosedElements(arg0: ElementKind[]): T[];
+    getEnclosedElements<T extends Element>(arg0: ElementKind[]): T[];
     getInterfaces(): TypeHandle[];
     getMappingMethod(arg0: string, arg1: string): MappingMethod;
     getMethods(): MethodHandle[];

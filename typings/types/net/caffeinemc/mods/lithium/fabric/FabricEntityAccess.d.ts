@@ -7,5 +7,5 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 export class FabricEntityAccess extends Object implements PlatformEntityAccess {
     static INSTANCE: PlatformEntityAccess;
     constructor()
-    addEnderDragonParts(arg0: Level, arg1: Entity, arg2: AABB, arg3: (param0: Entity) => kotlin.Boolean, arg4: Entity[]): void;
+    addEnderDragonParts(arg0: Level, arg1: Entity, arg2: AABB, arg3: (param0: Entity) => boolean, arg4: Entity[]): void;
 }

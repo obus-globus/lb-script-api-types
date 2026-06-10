@@ -4,11 +4,11 @@ import type { Predicate } from '../../../../../../../../java/util/function/Predi
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class EventSerializer<R extends Object | number | string | boolean, T extends R, A extends Enum<A>, IO extends Object | number | string | boolean> extends Object {
-    constructor(arg0: (param0: R) => kotlin.Boolean, arg1: (param0: T, param1: IO) => unknown, arg2: A, arg3: (param0: IO, param1: T) => unknown)
+    constructor(arg0: (param0: R) => boolean, arg1: (param0: SNbt<Object>, param1: T) => IO, arg2: A, arg3: (param0: SNbt<Object>, param1: IO) => T)
     readonly action: A;
-    // private classMatcher: (param0: R) => kotlin.Boolean;
-    // private deserializer: (param0: IO, param1: T) => unknown;
-    // private serializer: (param0: T, param1: IO) => unknown;
+    // private classMatcher: (param0: R) => boolean;
+    // private deserializer: (param0: SNbt<Object>, param1: IO) => T;
+    // private serializer: (param0: SNbt<Object>, param1: T) => IO;
     deserialize(arg0: SNbt<Object>, arg1: IO): T;
     getAction(): A;
     matches(arg0: A): boolean;

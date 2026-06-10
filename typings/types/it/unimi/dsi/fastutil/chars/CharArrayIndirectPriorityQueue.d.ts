@@ -3,15 +3,15 @@ import type { CharIndirectPriorityQueue } from '../../../../../it/unimi/dsi/fast
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharArrayIndirectPriorityQueue extends Object implements CharIndirectPriorityQueue {
     constructor(arg0: string[])
-    constructor(arg0: string[], arg1: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: string[], arg1: (param0: string, param1: string) => number)
     constructor(arg0: string[], arg1: number)
-    constructor(arg0: string[], arg1: number, arg2: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: string[], arg1: number, arg2: (param0: string, param1: string) => number)
     constructor(arg0: string[], arg1: number[])
-    constructor(arg0: string[], arg1: number[], arg2: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: string[], arg1: number[], arg2: (param0: string, param1: string) => number)
     constructor(arg0: string[], arg1: number[], arg2: number)
-    constructor(arg0: string[], arg1: number[], arg2: number, arg3: (param0: string, param1: string) => kotlin.Int)
+    constructor(arg0: string[], arg1: number[], arg2: number, arg3: (param0: string, param1: string) => number)
     // private array: number[];
-    // private c: (param0: string, param1: string) => kotlin.Int;
+    // private c: (param0: string, param1: string) => number;
     // private firstIndex: number;
     // private firstIndexValid: boolean;
     // private refArray: string[];
@@ -20,7 +20,7 @@ export class CharArrayIndirectPriorityQueue extends Object implements CharIndire
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
-    comparator(): (param0: string, param1: string) => kotlin.Int;
+    comparator(): (param0: string, param1: string) => number;
     dequeue(): number;
     enqueue(arg0: number): void;
     ensureElement(arg0: number): void;

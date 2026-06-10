@@ -8,7 +8,7 @@ export class FunctionResolver$Builder extends Object {
     // private dynamicFunctions: { [key: string]: Map<Type, () => TypedFunction[]> };
     // private functions: { [key: string]: TypedFunction[] };
     add<T extends TypedFunction>(arg0: string, arg1: T): void;
-    addDynamic(arg0: string, arg1: Type, arg2: () => T): void;
+    addDynamic<T extends TypedFunction>(arg0: string, arg1: Type, arg2: () => T): void;
     addDynamicFunction(arg0: string, arg1: Type, arg2: () => TypedFunction): void;
     addFunction(arg0: string, arg1: TypedFunction): void;
     build(): FunctionResolver;

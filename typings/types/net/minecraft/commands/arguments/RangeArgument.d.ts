@@ -7,7 +7,7 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { MinMaxBounds } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds.d.ts'
 export interface RangeArgument<T extends MinMaxBounds<Object>> extends ArgumentType<T>, Object{
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
 }

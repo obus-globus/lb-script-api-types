@@ -7,13 +7,13 @@ import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandN
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CommandContext<S extends Object | number | string | boolean> extends Object {
-    constructor(arg0: S, arg1: string, arg2: { [key: string]: ParsedArgument<S, Object> }, arg3: (param0: S) => kotlin.Int, arg4: CommandNode<S>, arg5: ParsedCommandNode<S>[], arg6: StringRange, arg7: CommandContext<S>, arg8: (param0: S) => kotlin.collections.Collection<unknown>, arg9: boolean)
+    constructor(arg0: S, arg1: string, arg2: { [key: string]: ParsedArgument<S, Object> }, arg3: (param0: CommandContext<S>) => number, arg4: CommandNode<S>, arg5: ParsedCommandNode<S>[], arg6: StringRange, arg7: CommandContext<S>, arg8: (param0: CommandContext<S>) => S[], arg9: boolean)
     // private arguments: { [key: string]: ParsedArgument<S, Object> };
     readonly child: CommandContext<S>;
-    readonly command: (param0: S) => kotlin.Int;
+    readonly command: (param0: CommandContext<S>) => number;
     // private forks: boolean;
     readonly input: string;
-    // private modifier: (param0: S) => kotlin.collections.Collection<unknown>;
+    // private modifier: (param0: CommandContext<S>) => S[];
     readonly nodes: ParsedCommandNode<S>[];
     readonly range: StringRange;
     readonly rootNode: CommandNode<S>;
@@ -22,12 +22,12 @@ export class CommandContext<S extends Object | number | string | boolean> extend
     equals(arg0: Object | null): boolean;
     getArgument<V extends Object | number | string | boolean>(arg0: string, arg1: Class<V>): V;
     getChild(): CommandContext<S>;
-    getCommand(): (param0: S) => kotlin.Int;
+    getCommand(): (param0: CommandContext<S>) => number;
     getInput(): string;
     getLastChild(): CommandContext<S>;
     getNodes(): ParsedCommandNode<S>[];
     getRange(): StringRange;
-    getRedirectModifier(): (param0: S) => kotlin.collections.Collection<unknown>;
+    getRedirectModifier(): (param0: CommandContext<S>) => S[];
     getRootNode(): CommandNode<S>;
     getSource(): S;
     hasNodes(): boolean;

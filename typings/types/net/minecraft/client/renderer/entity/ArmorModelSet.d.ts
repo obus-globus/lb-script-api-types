@@ -21,7 +21,7 @@ export class ArmorModelSet<T extends Object | number | string | boolean> extends
     hashCode(): number;
     head(): T;
     legs(): T;
-    map(mapper: (param0: T) => U): ArmorModelSet<U>;
+    map<U extends Object | number | string | boolean>(mapper: (param0: T) => U): ArmorModelSet<U>;
     putFrom(values: ArmorModelSet<LayerDefinition>, output: ImmutableMap$Builder<T, LayerDefinition>): void;
     toString(): string;
 }

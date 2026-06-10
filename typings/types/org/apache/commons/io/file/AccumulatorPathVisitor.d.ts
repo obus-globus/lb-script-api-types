@@ -11,16 +11,16 @@ import type { IOBiFunction } from '../../../../../org/apache/commons/io/function
 export class AccumulatorPathVisitor extends CountingPathVisitor {
     static builder(): AccumulatorPathVisitor$Builder;
     static withBigIntegerCounters(): AccumulatorPathVisitor;
-    static withBigIntegerCounters(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, paramarg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult): AccumulatorPathVisitor;
+    static withBigIntegerCounters(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, paramarg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): AccumulatorPathVisitor;
     static withBigIntegerCounters(): CountingPathVisitor;
     static withLongCounters(): AccumulatorPathVisitor;
-    static withLongCounters(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, paramarg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult): AccumulatorPathVisitor;
+    static withLongCounters(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, paramarg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): AccumulatorPathVisitor;
     static withLongCounters(): CountingPathVisitor;
     constructor()
     private constructor(arg0: AccumulatorPathVisitor$Builder)
     constructor(arg0: Counters$PathCounters)
-    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult)
-    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => java.nio.file.FileVisitResult, arg3: (param0: Path[], param1: IOException) => FileVisitResult)
+    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult)
+    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg3: (param0: Path[], param1: IOException) => FileVisitResult)
     readonly dirList: Path[][];
     readonly fileList: Path[][];
     // private add(arg0: Path[][], arg1: Path[]): void;
@@ -28,8 +28,8 @@ export class AccumulatorPathVisitor extends CountingPathVisitor {
     getDirList(): Path[][];
     getFileList(): Path[][];
     hashCode(): number;
-    relativizeDirectories(arg0: Path[], arg1: boolean, arg2: (param0: Path[]) => kotlin.Boolean): Path[][];
-    relativizeFiles(arg0: Path[], arg1: boolean, arg2: (param0: Path[]) => kotlin.Boolean): Path[][];
+    relativizeDirectories(arg0: Path[], arg1: boolean, arg2: (param0: Object) => boolean): Path[][];
+    relativizeFiles(arg0: Path[], arg1: boolean, arg2: (param0: Object) => boolean): Path[][];
     updateDirCounter(arg0: Path[], arg1: IOException): void;
     updateFileCounters(arg0: Path[], arg1: BasicFileAttributes): void;
 }

@@ -7,7 +7,7 @@ import type { StateFlow } from '../../../kotlinx/coroutines/flow/StateFlow.d.ts'
 export class StateFlowKt extends Object {
     static MutableStateFlow(paramarg0: Object | null): MutableStateFlow<Object>;
     static fuseStateFlow(paramarg0: StateFlow<Object>, paramarg1: CoroutineContext, paramarg2: number, paramarg3: BufferOverflow): Flow<Object>;
-    static getAndUpdate(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object | null) => Object | null): Object | null;
-    static update(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object | null) => Object | null): void;
-    static updateAndGet(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object | null) => Object | null): Object | null;
+    static getAndUpdate(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
+    static update(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object) => Object | null): void;
+    static updateAndGet(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
 }

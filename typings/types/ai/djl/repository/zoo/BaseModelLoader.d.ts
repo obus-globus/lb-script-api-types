@@ -14,15 +14,15 @@ export class BaseModelLoader extends Object implements ModelLoader {
     // private defaultFactory: TranslatorFactory;
     mrl: MRL;
     createModel(arg0: Path[], arg1: string, arg2: Device, arg3: Block, arg4: { [key: string]: Object }, arg5: string): Model;
-    downloadModel(arg0: Criteria<I, O>, arg1: Progress): void;
+    downloadModel<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Criteria<I, O>, arg1: Progress): void;
     getApplication(): Application;
     getArtifactId(): string;
     // private getFactoryLookupErrorMessage(arg0: TranslatorFactory): string;
     getGroupId(): string;
     getMrl(): MRL;
     getTranslatorFactory(arg0: Criteria<Object, Object>, arg1: { [key: string]: Object }): TranslatorFactory;
-    isDownloaded(arg0: Criteria<I, O>): boolean;
-    loadModel(arg0: Criteria<I, O>): ZooModel<I, O>;
+    isDownloaded<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Criteria<I, O>): boolean;
+    loadModel<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Criteria<I, O>): ZooModel<I, O>;
     // private loadServingProperties(arg0: Path[], arg1: { [key: string]: Object }, arg2: { [key: string]: string }): void;
     toString(): string;
 }

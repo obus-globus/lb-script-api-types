@@ -6,10 +6,10 @@ import type { DebugValueAccess$EventVisitor } from '../../../../net/minecraft/ut
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export interface DebugValueAccess extends Object {
-    forEachBlock(subscription: DebugSubscription<T>, consumer: (param0: BlockPos, param1: T) => void): void;
-    forEachChunk(subscription: DebugSubscription<T>, consumer: (param0: ChunkPos, param1: T) => void): void;
-    forEachEntity(subscription: DebugSubscription<T>, consumer: (param0: Entity, param1: T) => void): void;
-    forEachEvent(subscription: DebugSubscription<T>, visitor: (param0: T, param1: Object | null, param2: number) => void): void;
+    forEachBlock<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, consumer: (param0: BlockPos, param1: T) => void): void;
+    forEachChunk<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, consumer: (param0: ChunkPos, param1: T) => void): void;
+    forEachEntity<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, consumer: (param0: Entity, param1: T) => void): void;
+    forEachEvent<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, visitor: (param0: T, param1: number, param2: number) => void): void;
     getBlockValue<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, blockPos: BlockPos): T;
     getChunkValue<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, chunkPos: ChunkPos): T;
     getEntityValue<T extends Object | number | string | boolean>(subscription: DebugSubscription<T>, entity: Entity): T;

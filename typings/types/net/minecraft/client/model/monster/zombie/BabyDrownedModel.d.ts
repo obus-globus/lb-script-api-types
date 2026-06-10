@@ -7,7 +7,7 @@ import type { MeshTransformer } from '../../../../../../net/minecraft/client/mod
 import type { DrownedModel } from '../../../../../../net/minecraft/client/model/monster/zombie/DrownedModel.d.ts'
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 export class BabyDrownedModel extends DrownedModel {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

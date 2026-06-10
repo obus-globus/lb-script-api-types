@@ -12,8 +12,8 @@ import type { Mob } from '../../../../../../../net/minecraft/world/entity/Mob.d.
 export class ServerLivingEntityEvents extends Object {
     static AFTER_DAMAGE: Event<(param0: LivingEntity, param1: DamageSource, param2: number, param3: number, param4: boolean) => void>;
     static AFTER_DEATH: Event<(param0: LivingEntity, param1: DamageSource) => void>;
-    static ALLOW_DAMAGE: Event<(param0: LivingEntity, param1: DamageSource, param2: number) => kotlin.Boolean>;
-    static ALLOW_DEATH: Event<(param0: LivingEntity, param1: DamageSource, param2: number) => kotlin.Boolean>;
+    static ALLOW_DAMAGE: Event<(param0: LivingEntity, param1: DamageSource, param2: number) => boolean>;
+    static ALLOW_DEATH: Event<(param0: LivingEntity, param1: DamageSource, param2: number) => boolean>;
     static MOB_CONVERSION: Event<(param0: Mob, param1: Mob, param2: ConversionParams) => void>;
     private constructor()
 }

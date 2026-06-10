@@ -5,7 +5,7 @@ import type { Frame } from '../../../../net/minecraft/commands/execution/Frame.d
 import type { TraceCallbacks } from '../../../../net/minecraft/commands/execution/TraceCallbacks.d.ts'
 export interface ExecutionControl<T extends Object | number | string | boolean> extends Object {
     currentFrame(): Frame;
-    queueNext(action: (param0: T, param1: ExecutionContext<Object>) => void): void;
+    queueNext(action: (param0: ExecutionContext<T>, param1: Frame) => void): void;
     tracer(): TraceCallbacks;
     tracer(tracer: TraceCallbacks): void;
 }

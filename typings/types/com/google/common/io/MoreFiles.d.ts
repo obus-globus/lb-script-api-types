@@ -18,8 +18,8 @@ export class MoreFiles extends Object {
     static fileTraverser(): Traverser<Path[][]>;
     static getFileExtension(parampath: Path[][]): string;
     static getNameWithoutExtension(parampath: Path[][]): string;
-    static isDirectory(paramoptions: (Object | null)[]): (param0: Path[][]) => kotlin.Boolean;
-    static isRegularFile(paramoptions: (Object | null)[]): (param0: Path[][]) => kotlin.Boolean;
+    static isDirectory(paramoptions: (Object | null)[]): (param0: Object) => boolean;
+    static isRegularFile(paramoptions: (Object | null)[]): (param0: Object) => boolean;
     static listFiles(paramdir: Path[][]): Path[][][];
     static touch(parampath: Path[][]): void;
     private constructor()

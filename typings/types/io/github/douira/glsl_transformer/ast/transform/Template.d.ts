@@ -7,7 +7,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Template<N extends ASTNode> extends Object {
-    static ofCloned(paramarg0: Object | null): Template<Object>;
+    static ofCloned(paramarg0: ASTNode | null): Template<ASTNode>;
     static withExpression(paramarg0: string): Template<Expression>;
     static withExternalDeclaration(paramarg0: string): Template<ExternalDeclaration>;
     static withStatement(paramarg0: string): Template<Statement>;
@@ -27,7 +27,7 @@ export class Template<N extends ASTNode> extends Object {
     markLocalReplacement(arg0: ASTNode): void;
     markLocalReplacement(arg0: string, arg1: Class<ASTNode>): void;
     markReplacement(arg0: ASTNode, arg1: () => ASTNode): void;
-    markReplacement(arg0: string, arg1: Class<NN>, arg2: () => NN): void;
+    markReplacement<NN extends ASTNode>(arg0: string, arg1: Class<NN>, arg2: () => NN): void;
     supplyLocalReplacements(arg0: ASTNode): void;
     supplyLocalReplacements(arg0: ASTNode[]): void;
 }

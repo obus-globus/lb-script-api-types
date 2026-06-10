@@ -6,9 +6,9 @@ import type { IOConsumer } from '../../../../../org/apache/commons/io/function/I
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
 export interface IOFunction<T extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object {
     andThen(arg0: (param0: R) => void): (param0: T) => void;
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: R) => V): (param0: T) => V;
     apply(arg0: T): R;
     asFunction(): (param0: T) => R;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
+    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => T): (param0: V) => R;
     compose(arg0: () => T): () => R;
 }

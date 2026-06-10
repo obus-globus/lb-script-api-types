@@ -8,7 +8,7 @@ export class EmptyList extends Object implements Serializable, RandomAccess {
     // private serialVersionUID: number;
     readonly size: number;
     contains(element: void): boolean;
-    containsAll(elements: E[]): boolean;
+    containsAll(elements: void[]): boolean;
     equals(other: Object | null): boolean;
     get(index: number): void;
     hashCode(): number;

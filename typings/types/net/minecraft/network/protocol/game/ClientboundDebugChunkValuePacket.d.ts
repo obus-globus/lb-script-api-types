@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -11,7 +12,7 @@ import type { DebugSubscription$Update } from '../../../../../net/minecraft/util
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export class ClientboundDebugChunkValuePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundDebugChunkValuePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(chunkPos: ChunkPos, update: DebugSubscription$Update<Object>)
     // private chunkPos: ChunkPos;
     // private update: DebugSubscription$Update<Object>;

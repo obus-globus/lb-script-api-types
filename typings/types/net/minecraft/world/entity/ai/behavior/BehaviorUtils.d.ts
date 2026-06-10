@@ -30,7 +30,7 @@ export class BehaviorUtils extends Object {
     static setWalkAndLookTargetMemories(paramwalker: LivingEntity, paramtargetPos: BlockPos, paramspeedModifier: number, paramcloseEnoughDistance: number): void;
     static setWalkAndLookTargetMemories(paramwalker: LivingEntity, paramtargetEntity: Entity, paramspeedModifier: number, paramcloseEnoughDistance: number): void;
     static setWalkAndLookTargetMemories(paramwalker: LivingEntity, paramtarget: PositionTracker, paramspeedModifier: number, paramcloseEnoughDistance: number): void;
-    static targetIsValid(parambrain: Brain<Object>, parammemory: MemoryModuleType<Object>, paramtargetType: EntityType<Object>): boolean;
+    static targetIsValid(parambrain: Brain<Object>, parammemory: MemoryModuleType<LivingEntity>, paramtargetType: EntityType<Object>): boolean;
     static throwItem(paramthrower: LivingEntity, paramitem: ItemStack, paramtargetPos: Vec3): void;
     static throwItem(paramthrower: LivingEntity, paramitem: ItemStack, paramtargetPos: Vec3, paramthrowVelocity: Vec3, paramhandYDistanceFromEye: number): void;
     private constructor()

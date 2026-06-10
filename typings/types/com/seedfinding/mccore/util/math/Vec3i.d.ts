@@ -6,7 +6,7 @@ export class Vec3i extends Object {
     readonly x: number;
     readonly y: number;
     readonly z: number;
-    distanceTo(arg0: Vec3i, arg1: (param0: number, param1: number, param2: number) => kotlin.Double): number;
+    distanceTo(arg0: Vec3i, arg1: (param0: number, param1: number, param2: number) => number): number;
     equals(arg0: Object | null): boolean;
     get2DMirrored(): Vec3i;
     getMagnitude(): number;

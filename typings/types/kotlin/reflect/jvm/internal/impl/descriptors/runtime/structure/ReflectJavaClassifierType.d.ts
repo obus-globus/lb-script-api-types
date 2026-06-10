@@ -12,7 +12,7 @@ export class ReflectJavaClassifierType extends ReflectJavaType implements JavaCl
     readonly classifier: JavaClassifier;
     readonly reflectType: Type;
     findAnnotation(arg0: FqName): JavaAnnotation;
-    getAnnotations(): E[];
+    getAnnotations(): JavaAnnotation[];
     getClassifier(): JavaClassifier;
     getClassifierQualifiedName(): string;
     getPresentableText(): string;

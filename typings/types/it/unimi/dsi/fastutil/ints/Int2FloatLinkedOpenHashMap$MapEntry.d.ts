@@ -4,12 +4,12 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Int2FloatLinkedOpenHashMap$MapEntry extends Object implements Int2FloatMap$Entry, IntFloatPair, Map$Entry<number, number> {
-    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(): (param0: Object) => boolean;
+    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByValue(): (param0: Object) => boolean;
+    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    static lexComparator(): (param0: IntFloatPair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: number): IntFloatPair;
     constructor(null_: Int2FloatLinkedOpenHashMap$MapEntry)
     constructor(null_: Int2FloatLinkedOpenHashMap$MapEntry, arg1: number)

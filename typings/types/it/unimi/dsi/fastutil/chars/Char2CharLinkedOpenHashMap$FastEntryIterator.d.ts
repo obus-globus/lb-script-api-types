@@ -3,15 +3,14 @@ import type { Char2CharLinkedOpenHashMap$MapIterator } from '../../../../../it/u
 import type { Char2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/Char2CharMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2CharLinkedOpenHashMap$FastEntryIterator extends Char2CharLinkedOpenHashMap$MapIterator<(param0: Char2CharMap$Entry) => void> implements ObjectListIterator<Char2CharMap$Entry> {
     constructor(null_: Char2CharLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Char2CharLinkedOpenHashMap$FastEntryIterator, arg1: string)
     // private entry: Char2CharLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Char2CharMap$Entry) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add(arg0: Char2CharMap$Entry): void;
     next(): Char2CharLinkedOpenHashMap$MapEntry;
     previous(): Char2CharLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set(arg0: Char2CharMap$Entry): void;
 }

@@ -17,20 +17,20 @@ export class CommandDispatcher<S extends Object | number | string | boolean> ext
     static ARGUMENT_SEPARATOR_CHAR: string;
     constructor()
     constructor(arg0: RootCommandNode<S>)
-    readonly consumer: (param0: S, param1: CommandContext<Object>, param2: boolean) => void;
-    // private hasCommand: (param0: CommandNode<S>) => kotlin.Boolean;
+    readonly consumer: (param0: CommandContext<S>, param1: boolean, param2: number) => void;
+    // private hasCommand: (param0: CommandNode<S>) => boolean;
     readonly root: RootCommandNode<S>;
     // private addPaths(arg0: CommandNode<S>, arg1: CommandNode<S>[][], arg2: CommandNode<S>[]): void;
     execute(arg0: ParseResults<S>): number;
     execute(arg0: StringReader, arg1: S): number;
     execute(arg0: string, arg1: S): number;
-    findAmbiguities(arg0: (param0: S, param1: CommandNode<Object>, param2: CommandNode<Object>, param3: CommandNode<Object>) => void): void;
-    findNode(arg0: E[]): CommandNode<S>;
+    findAmbiguities(arg0: (param0: CommandNode<S>, param1: CommandNode<S>, param2: CommandNode<S>, param3: string[]) => void): void;
+    findNode(arg0: string[]): CommandNode<S>;
     // private getAllUsage(arg0: CommandNode<S>, arg1: S, arg2: string[], arg3: string, arg4: boolean): void;
     getAllUsage(arg0: CommandNode<S>, arg1: S, arg2: boolean): string[];
     getCompletionSuggestions(arg0: ParseResults<S>): CompletableFuture<Suggestions>;
     getCompletionSuggestions(arg0: ParseResults<S>, arg1: number): CompletableFuture<Suggestions>;
-    getPath(arg0: CommandNode<S>): E[];
+    getPath(arg0: CommandNode<S>): string[];
     getRoot(): RootCommandNode<S>;
     getSmartUsage(arg0: CommandNode<S>, arg1: S): Map<CommandNode<S>, string>;
     // private getSmartUsage(arg0: CommandNode<S>, arg1: S, arg2: boolean, arg3: boolean): string;
@@ -38,5 +38,5 @@ export class CommandDispatcher<S extends Object | number | string | boolean> ext
     parse(arg0: string, arg1: S): ParseResults<S>;
     // private parseNodes(arg0: CommandNode<S>, arg1: StringReader, arg2: CommandContextBuilder<S>): ParseResults<S>;
     register(arg0: LiteralArgumentBuilder<S>): LiteralCommandNode<S>;
-    setConsumer(arg0: (param0: S, param1: CommandContext<Object>, param2: boolean) => void): void;
+    setConsumer(arg0: (param0: CommandContext<S>, param1: boolean, param2: number) => void): void;
 }

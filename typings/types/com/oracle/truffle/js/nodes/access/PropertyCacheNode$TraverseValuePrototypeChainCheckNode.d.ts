@@ -14,7 +14,7 @@ export class PropertyCacheNode$TraverseValuePrototypeChainCheckNode extends Prop
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(valueClass: Class<Object>, shape: Shape, thisObj: JSDynamicObject, depth: number, jsclass: JSClass)
     // private getPrototypeNodes: GetPrototypeNode[];
-    // private jsclass: (param0: JSRealm) => com.oracle.truffle.js.runtime.objects.JSDynamicObject;
+    // private jsclass: (param0: JSRealm) => JSDynamicObject;
     // private protoShapes: Shape[];
     // private valueClass: Class<Object>;
     accept(nodeVisitor: NodeVisitor): void;

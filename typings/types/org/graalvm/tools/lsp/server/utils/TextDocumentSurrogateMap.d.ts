@@ -13,7 +13,7 @@ export class TextDocumentSurrogateMap extends Object {
     get(uri: URI): TextDocumentSurrogate;
     getOrCreateSurrogate(uri: URI, languageInfo: LanguageInfo): TextDocumentSurrogate;
     getOrCreateSurrogate(uri: URI, languageInfoSupplier: () => LanguageInfo): TextDocumentSurrogate;
-    getSurrogates(): E[];
+    getSurrogates(): TextDocumentSurrogate[];
     isSourceNewestInSurrogate(source: Source): boolean;
     put(uri: URI, surrogate: TextDocumentSurrogate): void;
     remove(uri: URI): void;

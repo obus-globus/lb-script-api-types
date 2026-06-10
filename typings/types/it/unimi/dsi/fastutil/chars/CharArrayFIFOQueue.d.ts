@@ -14,7 +14,7 @@ export class CharArrayFIFOQueue extends Object implements CharPriorityQueue, Ser
     // private start: number;
     capacity(): number;
     clear(): void;
-    comparator(): (param0: string, param1: string) => kotlin.Int;
+    comparator(): (param0: string, param1: string) => number;
     dequeue(): string;
     dequeueChar(): string;
     dequeueLastChar(): string;

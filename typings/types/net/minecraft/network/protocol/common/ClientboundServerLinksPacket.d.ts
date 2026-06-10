@@ -10,7 +10,7 @@ import type { ClientCommonPacketListener } from '../../../../../net/minecraft/ne
 import type { ServerLinks$UntrustedEntry } from '../../../../../net/minecraft/server/ServerLinks$UntrustedEntry.d.ts'
 export class ClientboundServerLinksPacket extends Record implements Packet<ClientCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundServerLinksPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(links: ServerLinks$UntrustedEntry[])
     // private links: ServerLinks$UntrustedEntry[];
     equals(o: Object | null): boolean;

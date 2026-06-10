@@ -16,7 +16,7 @@ export class Chars extends Object {
     static indexOf(paramarray: string[], paramtarget: string[]): number;
     static join(paramseparator: string, paramarray: string[]): string;
     static lastIndexOf(paramarray: string[], paramtarget: string): number;
-    static lexicographicalComparator(): (param0: string[]) => kotlin.Boolean;
+    static lexicographicalComparator(): (param0: Object) => boolean;
     static max(paramarray: string[]): string;
     static min(paramarray: string[]): string;
     static reverse(paramarray: string[]): void;
@@ -26,7 +26,7 @@ export class Chars extends Object {
     static saturatedCast(paramvalue: number): string;
     static sortDescending(paramarray: string[]): void;
     static sortDescending(paramarray: string[], paramfromIndex: number, paramtoIndex: number): void;
-    static toArray(paramcollection: E[]): string[];
+    static toArray(paramcollection: string[]): string[];
     static toByteArray(paramvalue: string): number[];
     private constructor()
 }

@@ -7,9 +7,9 @@ import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
 export class SavedTick<T extends Object | number | string | boolean> extends Record {
-    static UNIQUE_TICK_HASH: Hash$Strategy<Object>;
-    static codec(paramtypeCodec: Codec<Object>): Codec<Object>;
-    static filterTickListForChunk(paramsavedTicks: (Object | null)[], paramchunkPos: ChunkPos): (Object | null)[];
+    static UNIQUE_TICK_HASH: Hash$Strategy<SavedTick<Object>>;
+    static codec(paramtypeCodec: Codec<Object>): Codec<SavedTick<Object>>;
+    static filterTickListForChunk(paramsavedTicks: SavedTick<Object>[], paramchunkPos: ChunkPos): SavedTick<Object>[];
     static probe(paramtype: Object | null, parampos: BlockPos): SavedTick<Object>;
     // private delay: number;
     // private pos: BlockPos;

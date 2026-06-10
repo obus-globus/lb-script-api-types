@@ -15,7 +15,7 @@ export class PolyglotThreadLocalActions$RecurringFuture extends Object implement
     getCurrentFuture(): Future<void>;
     isCancelled(): boolean;
     isDone(): boolean;
-    resultNow<V extends Object | number | string | boolean>(): V;
+    resultNow(): void;
     setCurrentFuture(currentFuture: Future<void>): void;
     state(): Future$State;
 }

@@ -7,9 +7,9 @@ export class DoubleArrays extends Object {
     static EMPTY_ARRAY: number[];
     static HASH_STRATEGY: Hash$Strategy<number[]>;
     static binarySearch(paramarg0: number[], paramarg1: number): number;
-    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): number;
+    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: (param0: number, param1: number) => number): number;
     static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): number;
-    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => kotlin.Int): number;
+    static binarySearch(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => number): number;
     static copy(paramarg0: number[]): number[];
     static copy(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
     static ensureCapacity(paramarg0: number[], paramarg1: number): number[];
@@ -26,15 +26,15 @@ export class DoubleArrays extends Object {
     static mergeSort(paramarg0: number[]): void;
     static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
-    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int, paramarg4: number[]): void;
-    static mergeSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): void;
+    static mergeSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number, paramarg4: number[]): void;
+    static mergeSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): void;
     static parallelQuickSort(paramarg0: number[]): void;
     static parallelQuickSort(paramarg0: number[], paramarg1: number[]): void;
     static parallelQuickSort(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
     static parallelQuickSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
-    static parallelQuickSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
-    static parallelQuickSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): void;
+    static parallelQuickSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): void;
     static parallelQuickSortIndirect(paramarg0: number[], paramarg1: number[]): void;
     static parallelQuickSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
     static parallelRadixSort(paramarg0: number[]): void;
@@ -47,8 +47,8 @@ export class DoubleArrays extends Object {
     static quickSort(paramarg0: number[], paramarg1: number[]): void;
     static quickSort(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
     static quickSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
-    static quickSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
-    static quickSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static quickSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): void;
+    static quickSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): void;
     static quickSortIndirect(paramarg0: number[], paramarg1: number[]): void;
     static quickSortIndirect(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
     static radixSort(paramarg0: number[]): void;
@@ -70,14 +70,14 @@ export class DoubleArrays extends Object {
     static stabilize(paramarg0: number[], paramarg1: number[], paramarg2: number, paramarg3: number): void;
     static stableSort(paramarg0: number[]): void;
     static stableSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
-    static stableSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
-    static stableSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static stableSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): void;
+    static stableSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): void;
     static swap(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static swap(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): void;
     static trim(paramarg0: number[], paramarg1: number): number[];
     static unstableSort(paramarg0: number[]): void;
     static unstableSort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
-    static unstableSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): void;
-    static unstableSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): void;
+    static unstableSort(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): void;
+    static unstableSort(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): void;
     private constructor()
 }

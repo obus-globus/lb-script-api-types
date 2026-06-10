@@ -7,7 +7,7 @@ import type { RecursiveParserWrapper$ParserState } from '../../../../org/apache/
 import type { StatefulParser } from '../../../../org/apache/tika/parser/StatefulParser.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class RecursiveParserWrapper$EmbeddedParserDecorator extends StatefulParser {
-    static withFallbacks(paramarg0: E[], paramarg1: MediaType[]): Parser;
+    static withFallbacks(paramarg0: Parser[], paramarg1: MediaType[]): Parser;
     static withTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     static withoutTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     private constructor(null_: RecursiveParserWrapper$EmbeddedParserDecorator, arg1: Parser, arg2: string, arg3: string, arg4: RecursiveParserWrapper$ParserState)

@@ -11,19 +11,19 @@ export class ModuleSuperKnockback$Conditions extends Enum<ModuleSuperKnockback$C
     static ONLY_FACING: ModuleSuperKnockback$Conditions;
     static ONLY_ON_GROUND: ModuleSuperKnockback$Conditions;
     static getEntries(): ModuleSuperKnockback$Conditions[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSuperKnockback$Conditions;
     static values(): (Object | null)[];
-    private constructor(tag: string, testCondition: (param0: Entity) => kotlin.Boolean)
+    private constructor(tag: string, testCondition: (param0: Entity) => boolean)
     readonly tag: string;
-    // private testCondition: (param0: Entity) => kotlin.Boolean;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    // private testCondition: (param0: Entity) => boolean;
+    and(arg0: (param0: Entity) => boolean): (param0: Entity) => boolean;
+    negate(): (param0: Entity) => boolean;
+    or(arg0: (param0: Entity) => boolean): (param0: Entity) => boolean;
     test(p0: Entity): boolean;
     name(): "ONLY_FACING" | "ONLY_ON_GROUND" | "NOT_IN_WATER";
 }

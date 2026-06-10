@@ -8,7 +8,7 @@ export class ConcurrentCircularUnpaddedArrayQueue$WeakIterator<E extends Object 
     // private nextElement: E;
     // private nextIndex: number;
     // private pIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     // private getNext(): E;
     hasNext(): boolean;
     next(): E;

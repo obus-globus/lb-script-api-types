@@ -5,8 +5,8 @@ import type { Vector3f } from '../../../../../../../org/joml/Vector3f.d.ts'
 export class VertexSorters$SortByFallback extends VertexSorters$AbstractSorter {
     static DISTANCE_TO_ORIGIN: VertexSorting;
     static ORTHOGRAPHIC_Z: VertexSorting;
-    private constructor(arg0: (param0: Vector3f) => kotlin.Float)
-    // private function: (param0: Vector3f) => kotlin.Float;
+    private constructor(arg0: (param0: Vector3f) => number)
+    // private function: (param0: Vector3f) => number;
     // private scratch: Vector3f;
     applyMetric(arg0: number, arg1: number, arg2: number): number;
     applyMetric(arg0: Vector3f): number;

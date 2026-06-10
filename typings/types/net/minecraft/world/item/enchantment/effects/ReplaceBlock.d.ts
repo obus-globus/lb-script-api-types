@@ -18,7 +18,7 @@ export class ReplaceBlock extends Record implements EnchantmentEntityEffect {
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<ReplaceBlock>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(offset: Vec3i, predicate: Optional<BlockPredicate>, blockState: BlockStateProvider, triggerGameEvent: Optional<Holder<GameEvent>>)
     // private blockState: BlockStateProvider;
     // private offset: Vec3i;

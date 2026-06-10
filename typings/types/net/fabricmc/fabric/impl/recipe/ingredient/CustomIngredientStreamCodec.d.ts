@@ -8,6 +8,7 @@ import type { Function6 } from '../../../../../../com/mojang/datafixers/util/Fun
 import type { Function7 } from '../../../../../../com/mojang/datafixers/util/Function7.d.ts'
 import type { Function8 } from '../../../../../../com/mojang/datafixers/util/Function8.d.ts'
 import type { Function9 } from '../../../../../../com/mojang/datafixers/util/Function9.d.ts'
+import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { BiFunction } from '../../../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { UnaryOperator } from '../../../../../../java/util/function/UnaryOperator.d.ts'
@@ -34,15 +35,15 @@ export class CustomIngredientStreamCodec extends Object implements StreamCodec<R
     static composite(paramcodec1: StreamCodec<Object, Object>, paramgetter1: (param0: Object | null) => Object | null, paramconstructor: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
     static of(paramencoder: (param0: Object | null, param1: Object | null) => void, paramdecoder: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
     static ofMember(paramencoder: (param0: Object | null, param1: Object | null) => void, paramdecoder: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
-    static recursive(paramfactory: (param0: Object | null) => unknown): StreamCodec<Object, Object>;
+    static recursive(paramfactory: (param0: StreamCodec<Object, Object>) => Object | null): StreamCodec<Object, Object>;
     static unit(paraminstance: Object | null): StreamCodec<Object, Object>;
     constructor(arg0: StreamCodec<RegistryFriendlyByteBuf, Ingredient>)
     // private fallback: StreamCodec<RegistryFriendlyByteBuf, Ingredient>;
-    apply(operation: (param0: B) => O): StreamCodec<B, O>;
-    cast(): StreamCodec<S, V>;
+    apply<O extends Object | number | string | boolean>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, Ingredient>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
+    cast<S extends B>(): StreamCodec<S, Ingredient>;
     decode(arg0: RegistryFriendlyByteBuf): Ingredient;
-    dispatch(type: (param0: U) => V, codec: (param0: V) => StreamCodec<B, U>): StreamCodec<B, U>;
+    dispatch<U extends Object | number | string | boolean>(type: (param0: U) => Ingredient, codec: (param0: Ingredient) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
     encode(arg0: RegistryFriendlyByteBuf, arg1: Ingredient): void;
-    map(to: (param0: V) => O, from: (param0: O) => V): StreamCodec<B, O>;
-    mapStream(operation: (param0: O) => B): StreamCodec<O, V>;
+    map<O extends Object | number | string | boolean>(to: (param0: Ingredient) => O, from: (param0: O) => Ingredient): StreamCodec<RegistryFriendlyByteBuf, O>;
+    mapStream<O extends ByteBuf>(operation: (param0: O) => RegistryFriendlyByteBuf): StreamCodec<O, Ingredient>;
 }

@@ -11,7 +11,7 @@ import type { StringRepresentable } from '../../../../net/minecraft/util/StringR
 import type { StringRepresentable$EnumCodec } from '../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 export class DisplaySlot extends Enum<DisplaySlot> implements StringRepresentable {
     static BELOW_NAME: DisplaySlot;
-    static BY_ID: (param0: DisplaySlot) => unknown;
+    static BY_ID: (param0: number) => DisplaySlot;
     static CODEC: StringRepresentable$EnumCodec<DisplaySlot>;
     static LIST: DisplaySlot;
     static PRE_BUILT_MAP_THRESHOLD: number;
@@ -32,11 +32,11 @@ export class DisplaySlot extends Enum<DisplaySlot> implements StringRepresentabl
     static TEAM_RED: DisplaySlot;
     static TEAM_WHITE: DisplaySlot;
     static TEAM_YELLOW: DisplaySlot;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static teamColorToSlot(paramcolor: ChatFormatting): DisplaySlot;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

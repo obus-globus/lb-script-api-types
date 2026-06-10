@@ -18,7 +18,7 @@ export class RollingFileAppender extends AbstractOutputStreamAppender<RollingFil
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
     static PLUGIN_NAME: string;
-    static createAppender(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, parambufferedIO: string, parambufferSizeStr: string, paramimmediateFlush: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Object>, paramfilter: Filter, paramignore: string, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): RollingFileAppender;
+    static createAppender(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, parambufferedIO: string, parambufferSizeStr: string, paramimmediateFlush: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignore: string, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): RollingFileAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: RollingFileManager, fileName: string, filePattern: string, ignoreExceptions: boolean, immediateFlush: boolean, advertiser: Advertiser, properties: Property[])

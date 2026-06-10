@@ -6,12 +6,12 @@ import type { NodeObjectDescriptor } from '../../../../../../com/oracle/truffle/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSTaggedExecutionNode extends JavaScriptNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static createFor(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Object>, parammaterializedTags: (Object | null)[]): JavaScriptNode;
-    static createForInput(paramoriginalNode: JavaScriptNode, paramtransferSourcesFrom: JavaScriptNode, parammaterializedTags: (Object | null)[]): JavaScriptNode;
-    static createForInput(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Object>, paramdescriptor: NodeObjectDescriptor, parammaterializedTags: (Object | null)[]): JavaScriptNode;
-    static createForInput(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Object>, parammaterializedTags: (Object | null)[]): JavaScriptNode;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
+    static createFor(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Tag>, parammaterializedTags: Class<Tag>[]): JavaScriptNode;
+    static createForInput(paramoriginalNode: JavaScriptNode, paramtransferSourcesFrom: JavaScriptNode, parammaterializedTags: Class<Tag>[]): JavaScriptNode;
+    static createForInput(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Tag>, paramdescriptor: NodeObjectDescriptor, parammaterializedTags: Class<Tag>[]): JavaScriptNode;
+    static createForInput(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Tag>, parammaterializedTags: Class<Tag>[]): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

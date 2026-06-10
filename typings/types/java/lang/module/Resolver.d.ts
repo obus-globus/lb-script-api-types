@@ -38,7 +38,7 @@ export class Resolver extends Object {
     // private nameAndInfo(arg0: ModuleReference): string;
     // private requiresStaticMissingModule(arg0: ModuleDescriptor, arg1: ResolvedModule[]): boolean;
     // private resolve(arg0: ModuleDescriptor[]): ModuleDescriptor[];
-    resolve(arg0: E[]): Resolver;
+    resolve(arg0: string[]): Resolver;
     targetPlatform(): string;
     // private trace(arg0: string, arg1: Object[]): void;
     // private visit(arg0: ModuleDescriptor): void;

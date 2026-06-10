@@ -34,7 +34,7 @@ export class EditBox extends AbstractWidget implements IEditBox {
     // private displayPos: number;
     // private focusedTime: number;
     // private font: Font;
-    // private formatters: (param0: string, param1: number) => net.minecraft.util.FormattedCharSequence[];
+    // private formatters: (param0: string, param1: number) => (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     readonly highlightPos: number;
     readonly hint: Component;
     readonly invertHighlightedTextColor: boolean;
@@ -50,8 +50,8 @@ export class EditBox extends AbstractWidget implements IEditBox {
     // private textY: number;
     readonly value: string;
     // private viaFabricPlus$forbiddenCharactersUnlocked: boolean;
-    addFormatter(formatter: (param0: string, param1: number) => net.minecraft.util.FormattedCharSequence): void;
-    // private applyFormat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    addFormatter(formatter: (param0: string, param1: number) => (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): void;
+    // private applyFormat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     canConsumeInput(): boolean;
     charTyped(event: CharacterEvent): boolean;
     createNarrationMessage(): MutableComponent;

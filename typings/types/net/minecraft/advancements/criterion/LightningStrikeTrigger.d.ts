@@ -8,6 +8,6 @@ import type { LightningBolt } from '../../../../net/minecraft/world/entity/Light
 export class LightningStrikeTrigger extends SimpleCriterionTrigger<LightningStrikeTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<LightningStrikeTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: LightningStrikeTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: LightningStrikeTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, lightning: LightningBolt, entitiesAround: Entity[]): void;
 }

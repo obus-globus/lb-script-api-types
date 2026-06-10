@@ -41,13 +41,14 @@ export class TagValueInput extends Object implements FabricValueInput, ValueInpu
     getShortOr(name: string, defaultValue: number): number;
     getString(name: string): Optional<string>;
     getStringOr(name: string, defaultValue: string): string;
-    keySet(): E[];
-    list(name: string, codec: Codec<T>): Optional<T[]>;
-    listOrEmpty(name: string, codec: Codec<T>): T[];
+    keySet(): string[];
+    keySet(): (Object | null)[];
+    list<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): Optional<T[]>;
+    listOrEmpty<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): T[];
     lookup(): HolderLookup$Provider;
-    read(codec: MapCodec<T>): Optional<T>;
-    read(name: string, codec: Codec<T>): Optional<T>;
+    read<T extends Object | number | string | boolean>(codec: MapCodec<T>): Optional<T>;
+    read<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): Optional<T>;
     // private wrapChild(name: string, compoundTag: CompoundTag): ValueInput;
     // private wrapList(name: string, context: ValueInputContextHelper, list: (Object | null)[]): ValueInput[];
-    // private wrapTypedList(name: string, list: (Object | null)[], codec: Codec<T>): T[];
+    // private wrapTypedList<T extends Object | number | string | boolean>(name: string, list: (Object | null)[], codec: Codec<T>): T[];
 }

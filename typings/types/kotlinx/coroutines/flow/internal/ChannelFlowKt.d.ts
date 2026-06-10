@@ -5,5 +5,5 @@ import type { Flow } from '../../../../kotlinx/coroutines/flow/Flow.d.ts'
 import type { ChannelFlow } from '../../../../kotlinx/coroutines/flow/internal/ChannelFlow.d.ts'
 export class ChannelFlowKt extends Object {
     static asChannelFlow(paramarg0: Flow<Object>): ChannelFlow<Object>;
-    static withContextUndispatched(paramarg0: CoroutineContext, paramarg1: Object | null, paramarg2: Object, paramarg3: (param0: Object | null, param1: Object | null) => Object | null, paramarg4: Continuation<Object>): Object;
+    static withContextUndispatched(paramarg0: CoroutineContext, paramarg1: Object | null, paramarg2: Object, paramarg3: (param0: Object, param1: Object) => Object, paramarg4: Continuation<Object>): Object;
 }

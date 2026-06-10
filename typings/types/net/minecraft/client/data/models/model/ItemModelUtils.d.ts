@@ -29,9 +29,9 @@ export class ItemModelUtils extends Object {
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, paramentries: (Object | null)[]): ItemModel$Unbaked;
-    static select(paramtransformation: Transformation, paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: (Object | null)[]): ItemModel$Unbaked;
-    static select(paramproperty: SelectItemModelProperty<Object>, paramcases: (Object | null)[]): ItemModel$Unbaked;
-    static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: (Object | null)[]): ItemModel$Unbaked;
+    static select(paramtransformation: Transformation, paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
+    static select(paramproperty: SelectItemModelProperty<Object>, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
+    static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
     static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: Object | null): ItemModel$Unbaked;
     static select(paramproperty: SelectItemModelProperty<Object>, paramcases: Object | null): ItemModel$Unbaked;
     static selectBlockItemProperty(paramtransformation: Transformation, paramproperty: Property<Object>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;

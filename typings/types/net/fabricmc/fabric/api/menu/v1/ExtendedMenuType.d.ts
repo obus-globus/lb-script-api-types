@@ -2,6 +2,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ExtendedMenuType$ExtendedFactory } from '../../../../../../net/fabricmc/fabric/api/menu/v1/ExtendedMenuType$ExtendedFactory.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
+import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { FeatureElement } from '../../../../../../net/minecraft/world/flag/FeatureElement.d.ts'
 import type { AbstractContainerMenu } from '../../../../../../net/minecraft/world/inventory/AbstractContainerMenu.d.ts'
 import type { AnvilMenu } from '../../../../../../net/minecraft/world/inventory/AnvilMenu.d.ts'
 import type { BeaconMenu } from '../../../../../../net/minecraft/world/inventory/BeaconMenu.d.ts'
@@ -33,7 +35,7 @@ export class ExtendedMenuType<T extends AbstractContainerMenu, D extends Object 
     static CRAFTER_3x3: MenuType<CrafterMenu>;
     static CRAFTING: MenuType<CraftingMenu>;
     static ENCHANTMENT: MenuType<EnchantmentMenu>;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static FURNACE: MenuType<FurnaceMenu>;
     static GENERIC_3x3: MenuType<DispenserMenu>;
     static GENERIC_9x1: MenuType<ChestMenu>;
@@ -51,8 +53,8 @@ export class ExtendedMenuType<T extends AbstractContainerMenu, D extends Object 
     static SMITHING: MenuType<SmithingMenu>;
     static SMOKER: MenuType<SmokerMenu>;
     static STONECUTTER: MenuType<StonecutterMenu>;
-    constructor(arg0: (param0: T, param1: D, param2: number) => unknown, arg1: StreamCodec<RegistryFriendlyByteBuf, D>)
-    // private factory: (param0: T, param1: D, param2: number) => unknown;
+    constructor(arg0: (param0: number, param1: (Object | null)[], param2: D) => T, arg1: StreamCodec<RegistryFriendlyByteBuf, D>)
+    // private factory: (param0: number, param1: (Object | null)[], param2: D) => T;
     readonly streamCodec: StreamCodec<RegistryFriendlyByteBuf, D>;
     create(arg0: number, arg1: (Object | null)[]): T;
     create(arg0: number, arg1: (Object | null)[], arg2: D): T;

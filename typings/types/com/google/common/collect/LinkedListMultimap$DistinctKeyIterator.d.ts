@@ -9,7 +9,7 @@ export class LinkedListMultimap$DistinctKeyIterator extends Object implements It
     // private next: LinkedListMultimap$Node<K, V>;
     // private seenKeys: K[];
     // private checkForConcurrentModification(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     next<K extends Object | number | string | boolean>(): K;
     remove(): void;

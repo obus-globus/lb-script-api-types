@@ -13,8 +13,8 @@ export class AccessWidenerImpl$FieldAccess extends Enum<AccessWidenerImpl$FieldA
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccessWidenerImpl$FieldAccess;
     static values(): (Object | null)[];
-    private constructor(arg2: (param0: number, param1: string, param2: number) => kotlin.Int)
-    // private operator: (param0: number, param1: string, param2: number) => kotlin.Int;
+    private constructor(arg2: (param0: number, param1: string, param2: number) => number)
+    // private operator: (param0: number, param1: string, param2: number) => number;
     apply(arg0: number, arg1: string, arg2: number): number;
     isAccessible(): boolean;
     isExtendable(): boolean;

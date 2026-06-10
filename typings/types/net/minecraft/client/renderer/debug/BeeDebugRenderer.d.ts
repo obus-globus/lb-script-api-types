@@ -19,12 +19,12 @@ export class BeeDebugRenderer extends Object implements DebugRenderer$SimpleDebu
     emitGizmos(camX: number, camY: number, camZ: number, debugValues: DebugValueAccess, frustum: Frustum, partialTicks: number): void;
     // private getCamera(): Camera;
     // private getGhostHives(debugValues: DebugValueAccess): Map<BlockPos, string[]>;
-    // private getHiveMembers(hivePos: BlockPos, debugValues: DebugValueAccess): E[];
+    // private getHiveMembers(hivePos: BlockPos, debugValues: DebugValueAccess): UUID[];
     // private getPosDescription(entity: Entity, pos: BlockPos): string;
     // private isBeeSelected(entity: Entity): boolean;
     // private renderBeeInfo(entity: Entity, beeInfo: DebugBeeInfo, goalInfo: DebugGoalInfo): void;
     // private renderFlowerInfos(debugValues: DebugValueAccess): void;
     // private renderGhostHive(ghostHivePos: BlockPos, hiveMemberNames: string[]): void;
-    // private renderHiveInfo(hivePos: BlockPos, hive: DebugHiveInfo, beesWhoBlacklistThisHive: E[], debugValues: DebugValueAccess): void;
+    // private renderHiveInfo(hivePos: BlockPos, hive: DebugHiveInfo, beesWhoBlacklistThisHive: UUID[], debugValues: DebugValueAccess): void;
     // private updateLastLookedAtUuid(): void;
 }

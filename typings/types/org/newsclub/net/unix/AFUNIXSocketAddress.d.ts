@@ -6,7 +6,6 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFAddressFamily } from '../../../../org/newsclub/net/unix/AFAddressFamily.d.ts'
 import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
 import type { AFUNIXServerSocket } from '../../../../org/newsclub/net/unix/AFUNIXServerSocket.d.ts'
@@ -16,13 +15,13 @@ export class AFUNIXSocketAddress extends AFSocketAddress {
     static addressCharset(): Charset;
     static addressFamily(): AFAddressFamily<AFUNIXSocketAddress>;
     static canMap(paramarg0: SocketAddress): boolean;
-    static canMap(paramarg0: SocketAddress, paramarg1: Class<Object>): boolean;
+    static canMap(paramarg0: SocketAddress, paramarg1: Class<AFSocketAddress>): boolean;
     static createUnresolved(paramarg0: string, paramarg1: number): InetSocketAddress;
     static inAbstractNamespace(paramarg0: string): AFUNIXSocketAddress;
     static inAbstractNamespace(paramarg0: string, paramarg1: number): AFUNIXSocketAddress;
     static isSupportedAddress(paramarg0: InetAddress): boolean;
     static isSupportedAddress(paramarg0: SocketAddress): boolean;
-    static mapOrFail(paramarg0: SocketAddress, paramarg1: Class<Object>): Object | null;
+    static mapOrFail(paramarg0: SocketAddress, paramarg1: Class<AFSocketAddress>): AFSocketAddress | null;
     static mapOrFail(paramarg0: SocketAddress): AFSocketAddress;
     static of(paramarg0: URI): AFSocketAddress;
     static of(paramarg0: URI, paramarg1: number): AFSocketAddress;

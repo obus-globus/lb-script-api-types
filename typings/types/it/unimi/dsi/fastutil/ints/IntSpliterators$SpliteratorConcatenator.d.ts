@@ -24,7 +24,7 @@ export class IntSpliterators$SpliteratorConcatenator extends Object implements I
     // private computeCharacteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
+    getComparator(): (param0: number, param1: number) => number;
     // private recomputeRemaining(): number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;

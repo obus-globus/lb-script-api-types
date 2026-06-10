@@ -10,8 +10,8 @@ export class ConstructorConstructor extends Object {
     // private instanceCreators: Map<Type, InstanceCreator<Object>>;
     // private reflectionFilters: ReflectionAccessFilter[];
     // private useJdkUnsafe: boolean;
-    get(arg0: TypeToken<T>): ObjectConstructor<T>;
-    get(arg0: TypeToken<T>, arg1: boolean): ObjectConstructor<T>;
-    // private newUnsafeAllocator(arg0: Class<T>): ObjectConstructor<T>;
+    get<T extends Object | number | string | boolean>(arg0: TypeToken<T>): ObjectConstructor<T>;
+    get<T extends Object | number | string | boolean>(arg0: TypeToken<T>, arg1: boolean): ObjectConstructor<T>;
+    // private newUnsafeAllocator<T extends Object | number | string | boolean>(arg0: Class<T>): ObjectConstructor<T>;
     toString(): string;
 }

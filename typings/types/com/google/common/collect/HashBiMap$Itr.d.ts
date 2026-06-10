@@ -11,6 +11,6 @@ export abstract class HashBiMap$Itr<T extends Object | number | string | boolean
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next(): T;
-    output(entry: HashBiMap$BiEntry<K, V>): T;
+    output<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(entry: HashBiMap$BiEntry<K, V>): T;
     remove(): void;
 }

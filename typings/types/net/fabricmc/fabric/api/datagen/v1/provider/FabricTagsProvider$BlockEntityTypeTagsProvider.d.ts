@@ -8,8 +8,8 @@ import type { HolderLookup$Provider } from '../../../../../../../net/minecraft/c
 import type { BlockEntityType } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricTagsProvider$BlockEntityTypeTagsProvider extends FabricTagsProvider$FabricIntrinsicHolderTagsProvider<BlockEntityType<Object>> {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>)
 }

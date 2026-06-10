@@ -10,10 +10,10 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 export class PolyglotMapEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements PolyglotWrapper, Map$Entry<K, V> {
     static asInstance(paramv: Object): PolyglotWrapper;
-    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(): (param0: Object) => boolean;
+    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByValue(): (param0: Object) => boolean;
+    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static equals(paramcontext: Object, paramreceiver: Object, paramobj: Object): boolean;
     static equalsProxy(paramwrapper: PolyglotWrapper, paramother: Object): boolean;

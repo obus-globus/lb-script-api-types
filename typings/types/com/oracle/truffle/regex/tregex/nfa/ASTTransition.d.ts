@@ -1,5 +1,4 @@
 import type { RegexLanguage } from '../../../../../../com/oracle/truffle/regex/RegexLanguage.d.ts'
-import type { AbstractState } from '../../../../../../com/oracle/truffle/regex/tregex/automaton/AbstractState.d.ts'
 import type { AbstractTransition } from '../../../../../../com/oracle/truffle/regex/tregex/automaton/AbstractTransition.d.ts'
 import type { GroupBoundaries } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/GroupBoundaries.d.ts'
 import type { Term } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Term.d.ts'
@@ -21,9 +20,8 @@ export class ASTTransition extends Object implements AbstractTransition<Term, AS
     getMatchedConditionGroups(): number[];
     getOperations(): number[];
     getSource(): Term;
-    getTarget<S extends AbstractState<S, T>>(forward: boolean): S;
-    getTarget(): Term;
     getTarget(forward: boolean): Term;
+    getTarget(): Term;
     hashCode(): number;
     setGroupBoundaries(groupBoundaries: GroupBoundaries): void;
     setMatchedConditionGroups(matchedConditionGroups: number[]): void;

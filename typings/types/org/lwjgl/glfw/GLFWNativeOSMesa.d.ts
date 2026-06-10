@@ -12,6 +12,6 @@ export class GLFWNativeOSMesa extends Object {
     static nglfwGetOSMesaColorBuffer(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
     static nglfwGetOSMesaDepthBuffer(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
     static setPath(paramarg0: string): void;
-    static setPath(paramarg0: (param0: ByteBuffer) => kotlin.Long): void;
+    static setPath(paramarg0: (param0: ByteBuffer) => number): void;
     constructor()
 }

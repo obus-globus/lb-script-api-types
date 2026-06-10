@@ -18,6 +18,7 @@ import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEve
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { DifficultyInstance } from '../../../../../../net/minecraft/world/DifficultyInstance.d.ts'
 import type { DamageSource } from '../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { AnimationState } from '../../../../../../net/minecraft/world/entity/AnimationState.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityDimensions } from '../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
@@ -25,6 +26,7 @@ import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/en
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { Pose } from '../../../../../../net/minecraft/world/entity/Pose.d.ts'
 import type { SpawnGroupData } from '../../../../../../net/minecraft/world/entity/SpawnGroupData.d.ts'
 import type { Brain } from '../../../../../../net/minecraft/world/entity/ai/Brain.d.ts'
@@ -92,9 +94,9 @@ export class Warden extends Monster implements VibrationSystem {
     static NBT_ATTACHMENT_KEY: string;
     static NO_VIBRATION_FREQUENCY: number;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
-    static RESONANCE_EVENTS: (Object | null)[];
+    static RESONANCE_EVENTS: ResourceKey<GameEvent>[];
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
     static SPRING_DAMPENING: number;
@@ -132,7 +134,7 @@ export class Warden extends Monster implements VibrationSystem {
     static TORSIONAL_ELASTICITY: number;
     static TOTAL_AIR_SUPPLY: number;
     static UPDATE_GOAL_SELECTOR_EVERY_N_TICKS: number;
-    static VIBRATION_FREQUENCY_FOR_EVENT: (param0: Object | null) => kotlin.Int;
+    static VIBRATION_FREQUENCY_FOR_EVENT: (param0: ResourceKey<GameEvent>) => number;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WEARING_ARMOR_UPGRADE_MATERIAL_ATTEMPTS: number;
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
@@ -145,12 +147,12 @@ export class Warden extends Monster implements VibrationSystem {
     static XP_REWARD_NONE: number;
     static XP_REWARD_SMALL: number;
     static applyDarknessAround(paramlevel: ServerLevel, paramposition: Vec3, paramsource: Entity, paramdarknessRadius: number): void;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
-    static checkAnyLightMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkMonsterSpawnRules(paramtype: EntityType<Object>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static checkSurfaceMonstersSpawnRules(paramtype: EntityType<Object>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkAnyLightMonsterSpawnRules(paramtype: EntityType<Monster>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMonsterSpawnRules(paramtype: EntityType<Mob>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkSurfaceMonstersSpawnRules(paramtype: EntityType<Mob>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static createAttributes(): AttributeSupplier$Builder;

@@ -3,5 +3,5 @@ import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export interface IRunningObjectTable extends Object{
     enumRunning(): IDispatch[];
-    getActiveObjectsByInterface(arg0: Class<T>): T[];
+    getActiveObjectsByInterface<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
 }

@@ -12,7 +12,7 @@ export class LazyUtil$PureLazy<T extends Object | number | string | boolean> ext
     // private value: Object;
     get(): T;
     isInitialized(): boolean;
-    map(function_: (param0: T) => R): Lazy<R>;
+    map<R extends Object | number | string | boolean>(function_: (param0: T) => R): Lazy<R>;
     set(newValue: T): void;
     value(): T;
 }

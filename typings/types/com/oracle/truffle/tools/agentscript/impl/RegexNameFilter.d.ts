@@ -2,12 +2,12 @@ import type { Predicate } from '../../../../../../java/util/function/Predicate.d
 import type { Pattern } from '../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RegexNameFilter extends Object implements Predicate<string> {
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(fn: string)
     // private regex: Pattern;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: string) => boolean): (param0: string) => boolean;
+    negate(): (param0: string) => boolean;
+    or(arg0: (param0: string) => boolean): (param0: string) => boolean;
     test(rootName: string): boolean;
 }

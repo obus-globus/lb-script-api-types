@@ -12,13 +12,13 @@ export class Stats extends Object implements Serializable {
     static fromByteArray(parambyteArray: number[]): Stats;
     static meanOf(paramvalues: number[]): number;
     static meanOf(paramvalues: number[]): number;
-    static meanOf(paramvalues: (Object | null)[]): number;
-    static meanOf(paramvalues: Iterator<Object>): number;
+    static meanOf(paramvalues: Number[]): number;
+    static meanOf(paramvalues: Iterator<Number>): number;
     static meanOf(paramvalues: number[]): number;
     static of(paramvalues: number[]): Stats;
     static of(paramvalues: number[]): Stats;
-    static of(paramvalues: (Object | null)[]): Stats;
-    static of(paramvalues: Iterator<Object>): Stats;
+    static of(paramvalues: Number[]): Stats;
+    static of(paramvalues: Iterator<Number>): Stats;
     static of(paramvalues: DoubleStream): Stats;
     static of(paramvalues: IntStream): Stats;
     static of(paramvalues: LongStream): Stats;

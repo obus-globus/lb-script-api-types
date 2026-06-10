@@ -8,7 +8,7 @@ import type { ClientPacketListener } from '../../../../../../net/minecraft/clien
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { CustomPacketPayload } from '../../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class ClientPlayNetworkAddon extends ClientCommonNetworkAddon<(param0: Object, param1: Object | null) => void, ClientPacketListener> {
+export class ClientPlayNetworkAddon extends ClientCommonNetworkAddon<(param0: Object, param1: ClientPlayNetworking$Context) => void, ClientPacketListener> {
     constructor(arg0: ClientPacketListener, arg1: Minecraft)
     // private context: ClientPlayNetworkAddon$ContextImpl;
     createPacket(arg0: CustomPacketPayload): Packet<Object>;
@@ -18,5 +18,5 @@ export class ClientPlayNetworkAddon extends ClientCommonNetworkAddon<(param0: Ob
     invokeUnregisterEvent(arg0: Identifier[]): void;
     isOnReceiveThread(): boolean;
     onServerReady(): void;
-    receive(arg0: (param0: Object | null, param1: ClientPlayNetworking$Context) => void, arg1: CustomPacketPayload): void;
+    receive(arg0: (param0: CustomPacketPayload | null, param1: ClientPlayNetworking$Context) => void, arg1: CustomPacketPayload): void;
 }

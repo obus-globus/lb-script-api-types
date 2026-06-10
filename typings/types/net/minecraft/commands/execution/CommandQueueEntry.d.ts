@@ -4,10 +4,10 @@ import type { EntryAction } from '../../../../net/minecraft/commands/execution/E
 import type { ExecutionContext } from '../../../../net/minecraft/commands/execution/ExecutionContext.d.ts'
 import type { Frame } from '../../../../net/minecraft/commands/execution/Frame.d.ts'
 export class CommandQueueEntry<T extends Object | number | string | boolean> extends Record {
-    constructor(frame: Frame, action: (param0: T, param1: ExecutionContext<Object>) => void)
-    // private action: (param0: T, param1: ExecutionContext<Object>) => void;
+    constructor(frame: Frame, action: (param0: ExecutionContext<T>, param1: Frame) => void)
+    // private action: (param0: ExecutionContext<T>, param1: Frame) => void;
     // private frame: Frame;
-    action(): (param0: T, param1: ExecutionContext<Object>) => void;
+    action(): (param0: ExecutionContext<T>, param1: Frame) => void;
     equals(o: Object | null): boolean;
     execute(context: ExecutionContext<T>): void;
     // private execute$mixinextras$wrapped$8(arg0: ExecutionContext<Object>): void;

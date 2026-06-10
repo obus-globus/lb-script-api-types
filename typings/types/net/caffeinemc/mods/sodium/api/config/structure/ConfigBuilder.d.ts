@@ -1,5 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { BooleanOptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/BooleanOptionBuilder.d.ts'
 import type { ColorThemeBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/ColorThemeBuilder.d.ts'
 import type { EnumOptionBuilder } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/structure/EnumOptionBuilder.d.ts'
@@ -13,7 +14,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 export interface ConfigBuilder extends Object{
     createBooleanOption(arg0: Identifier): BooleanOptionBuilder;
     createColorTheme(): ColorThemeBuilder;
-    createEnumOption(arg0: Identifier, arg1: Class<E>): EnumOptionBuilder<E>;
+    createEnumOption<E extends Enum<E>>(arg0: Identifier, arg1: Class<E>): EnumOptionBuilder<E>;
     createExternalButtonOption(arg0: Identifier): ExternalButtonOptionBuilder;
     createExternalPage(): ExternalPageBuilder;
     createIntegerOption(arg0: Identifier): IntegerOptionBuilder;

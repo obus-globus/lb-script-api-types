@@ -9,15 +9,16 @@ import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts
 import type { ScheduledExecutorService } from '../../../../../java/util/concurrent/ScheduledExecutorService.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export abstract class FluentFuture<V extends Object | number | string | boolean> extends GwtFluentFutureCatchingSpecialization<V> {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
     constructor()
     addCallback(callback: FutureCallback<V>, executor: Executor): void;
-    catching(exceptionType: Class<X>, fallback: (param0: X) => V, executor: Executor): FluentFuture<V>;
-    catchingAsync(exceptionType: Class<X>, fallback: (param0: X) => V, executor: Executor): FluentFuture<V>;
-    transform(function_: (param0: V) => T, executor: Executor): FluentFuture<T>;
-    transformAsync(function_: (param0: V) => T, executor: Executor): FluentFuture<T>;
+    catching<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: Object) => boolean, executor: Executor): FluentFuture<V>;
+    catchingAsync<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: X) => ListenableFuture<V>, executor: Executor): FluentFuture<V>;
+    transform<T extends Object | number | string | boolean>(function_: (param0: Object) => boolean, executor: Executor): FluentFuture<T>;
+    transformAsync<T extends Object | number | string | boolean>(function_: (param0: V) => ListenableFuture<T>, executor: Executor): FluentFuture<T>;
     withTimeout(timeout: Duration, scheduledExecutor: ScheduledExecutorService): FluentFuture<V>;
     withTimeout(timeout: number, unit: TimeUnit, scheduledExecutor: ScheduledExecutorService): FluentFuture<V>;
 }

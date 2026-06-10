@@ -9,8 +9,8 @@ import type { AABB } from '../../../../../../../net/minecraft/world/phys/AABB.d.
 export class NearestAttackableTargetGoal<T extends LivingEntity> extends TargetGoal {
     constructor(mob: Mob, targetType: Class<T>, mustSee: boolean)
     constructor(mob: Mob, targetType: Class<T>, mustSee: boolean, mustReach: boolean)
-    constructor(mob: Mob, targetType: Class<T>, mustSee: boolean, selector: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean)
-    constructor(mob: Mob, targetType: Class<T>, randomInterval: number, mustSee: boolean, mustReach: boolean, selector: (param0: LivingEntity, param1: ServerLevel) => kotlin.Boolean)
+    constructor(mob: Mob, targetType: Class<T>, mustSee: boolean, selector: (param0: LivingEntity, param1: ServerLevel) => boolean)
+    constructor(mob: Mob, targetType: Class<T>, randomInterval: number, mustSee: boolean, mustReach: boolean, selector: (param0: LivingEntity, param1: ServerLevel) => boolean)
     // private randomInterval: number;
     target: LivingEntity;
     // private targetConditions: TargetingConditions;

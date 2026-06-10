@@ -56,10 +56,10 @@ export class File extends Object implements Serializable, Comparable<File> {
     lastModified(): number;
     length(): number;
     list(): string[];
-    list(arg0: (param0: File, param1: string) => kotlin.Boolean): string[];
+    list(arg0: (param0: File, param1: string) => boolean): string[];
     listFiles(): File[];
-    listFiles(arg0: (param0: File) => kotlin.Boolean): File[];
-    listFiles(arg0: (param0: File, param1: string) => kotlin.Boolean): File[];
+    listFiles(arg0: (param0: File) => boolean): File[];
+    listFiles(arg0: (param0: File, param1: string) => boolean): File[];
     mkdir(): boolean;
     mkdirs(): boolean;
     // private normalizedList(): string[];

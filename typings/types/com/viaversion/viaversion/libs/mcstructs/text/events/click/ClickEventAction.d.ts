@@ -15,7 +15,7 @@ export class ClickEventAction extends Enum<ClickEventAction> implements NamedTyp
     static TWITCH_USER_INFO: ClickEventAction;
     static byName(paramarg0: string): ClickEventAction;
     static byName(paramarg0: string, paramarg1: boolean): ClickEventAction;
-    static byName(paramarg0: string, paramarg1: (param0: string, param1: string) => kotlin.Boolean): ClickEventAction;
+    static byName(paramarg0: string, paramarg1: (param0: string, param1: string) => boolean): ClickEventAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClickEventAction;
     static values(): (Object | null)[];

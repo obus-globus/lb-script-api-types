@@ -7,6 +7,6 @@ import type { DamageSource } from '../../../../net/minecraft/world/damagesource/
 export class EntityHurtPlayerTrigger extends SimpleCriterionTrigger<EntityHurtPlayerTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<EntityHurtPlayerTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: EntityHurtPlayerTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: EntityHurtPlayerTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, source: DamageSource, originalDamage: number, actualDamage: number, blocked: boolean): void;
 }

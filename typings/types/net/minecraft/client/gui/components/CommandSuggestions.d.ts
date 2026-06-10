@@ -25,7 +25,7 @@ export class CommandSuggestions extends Object {
     readonly allowHiding: boolean;
     readonly allowSuggestions: boolean;
     // private anchorToBottom: boolean;
-    // private commandUsage: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private commandUsage: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private commandUsagePosition: number;
     // private commandUsageWidth: number;
     // private commandsAllowed: boolean;
@@ -48,8 +48,8 @@ export class CommandSuggestions extends Object {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     extractSuggestions(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): boolean;
     extractUsage(graphics: GuiGraphicsExtractor): void;
-    // private fillNodeUsage(suggestionContext: SuggestionContext<ClientSuggestionProvider>, usageFormat: Style): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
-    // private formatChat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private fillNodeUsage(suggestionContext: SuggestionContext<ClientSuggestionProvider>, usageFormat: Style): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
+    // private formatChat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     getNarrationMessage(): Component;
     getUsageNarration(): Component;
     hasAllowedInput(): boolean;

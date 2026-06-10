@@ -8,9 +8,9 @@ export abstract class AbstractPatriciaTrie$TrieIterator<E extends Object | numbe
     // private current: AbstractPatriciaTrie$TrieEntry<K, V>;
     // private expectedModCount: number;
     // private next: AbstractPatriciaTrie$TrieEntry<K, V>;
-    findNext(arg0: AbstractPatriciaTrie$TrieEntry<K, V>): AbstractPatriciaTrie$TrieEntry<K, V>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    findNext<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: AbstractPatriciaTrie$TrieEntry<K, V>): AbstractPatriciaTrie$TrieEntry<K, V>;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
-    nextEntry(): AbstractPatriciaTrie$TrieEntry<K, V>;
+    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): AbstractPatriciaTrie$TrieEntry<K, V>;
     remove(): void;
 }

@@ -8,9 +8,9 @@ import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/f
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class AtomicSafeInitializer<T extends Object | number | string | boolean> extends AbstractConcurrentInitializer<T, ConcurrentException> {
     static NUL: () => Object | null;
-    static builder(): AtomicSafeInitializer$Builder<Object, Object>;
+    static builder(): AtomicSafeInitializer$Builder<AtomicSafeInitializer<Object>, Object>;
     constructor()
-    private constructor(arg0: () => ConcurrentException, arg1: (param0: T) => void)
+    private constructor(arg0: () => T, arg1: (param0: T) => void)
     // private factory: AtomicReference<AtomicSafeInitializer<T>>;
     // private reference: AtomicReference<T>;
     get(): T;

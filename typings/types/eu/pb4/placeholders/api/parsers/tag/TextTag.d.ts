@@ -7,13 +7,13 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TextTag extends Record {
     static enclosing(paramarg0: string, paramarg1: string, paramarg2: boolean, paramarg3: NodeCreator): TextTag;
     static enclosing(paramarg0: string, paramarg1: string, paramarg2: NodeCreator): TextTag;
-    static enclosing(paramarg0: string, paramarg1: E[], paramarg2: string, paramarg3: boolean, paramarg4: NodeCreator): TextTag;
+    static enclosing(paramarg0: string, paramarg1: string[], paramarg2: string, paramarg3: boolean, paramarg4: NodeCreator): TextTag;
     static self(paramarg0: string, paramarg1: string, paramarg2: boolean, paramarg3: NodeCreator): TextTag;
     static self(paramarg0: string, paramarg1: string, paramarg2: boolean, paramarg3: (param0: StringArgs) => TextNode): TextTag;
     static self(paramarg0: string, paramarg1: string, paramarg2: NodeCreator): TextTag;
     static self(paramarg0: string, paramarg1: string, paramarg2: (param0: StringArgs) => TextNode): TextTag;
-    static self(paramarg0: string, paramarg1: E[], paramarg2: string, paramarg3: boolean, paramarg4: NodeCreator): TextTag;
-    static self(paramarg0: string, paramarg1: E[], paramarg2: string, paramarg3: boolean, paramarg4: (param0: StringArgs) => TextNode): TextTag;
+    static self(paramarg0: string, paramarg1: string[], paramarg2: string, paramarg3: boolean, paramarg4: NodeCreator): TextTag;
+    static self(paramarg0: string, paramarg1: string[], paramarg2: string, paramarg3: boolean, paramarg4: (param0: StringArgs) => TextNode): TextTag;
     // private aliases: string[];
     // private name: string;
     // private nodeCreator: NodeCreator;

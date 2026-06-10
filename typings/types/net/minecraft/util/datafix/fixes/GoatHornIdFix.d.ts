@@ -10,9 +10,9 @@ import type { UnaryOperator } from '../../../../../java/util/function/UnaryOpera
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ItemStackTagRemainderFix } from '../../../../../net/minecraft/util/datafix/fixes/ItemStackTagRemainderFix.d.ts'
 export class GoatHornIdFix extends ItemStackTagRemainderFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
-    static createFixer(paramitemStackType: Type<Object>, paramidFilter: (param0: string) => kotlin.Boolean, paramfixer: (param0: Object | null) => unknown): (param0: Object | null) => unknown;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static createFixer(paramitemStackType: Type<Object>, paramidFilter: (param0: string) => boolean, paramfixer: (param0: Typed<Object>) => Object | null): (param0: Typed<Object>) => Object | null;
     constructor(outputSchema: Schema)
     fixItemStackTag(tag: Typed<Object>): Typed<Object>;
-    fixItemStackTag(tag: Dynamic<T>): Dynamic<T>;
+    fixItemStackTag<T extends Object | number | string | boolean>(tag: Dynamic<T>): Dynamic<T>;
 }

@@ -1,5 +1,6 @@
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
@@ -26,7 +27,7 @@ export class PoiTypes extends Object {
     static TOOLSMITH: ResourceKey<PoiType>;
     static WEAPONSMITH: ResourceKey<PoiType>;
     static bootstrap(paramregistry: PoiType[]): PoiType;
-    static forState(paramstate: BlockState): Optional<Object>;
+    static forState(paramstate: BlockState): Optional<Holder<PoiType>>;
     static hasPoi(paramstate: BlockState): boolean;
     static register(paramregistry: PoiType[], paramid: ResourceKey<PoiType>, parammatchingStates: BlockState[], parammaxTickets: number, paramvalidRange: number): PoiType;
     constructor()

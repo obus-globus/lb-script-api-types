@@ -6,5 +6,5 @@ export class HeapMonitorInstrumentProvider extends TruffleInstrumentProvider {
     createInternalResource(resourceId: string): Object;
     getInstrumentClassName(): string;
     getInternalResourceIds(): string[];
-    getServicesClassNames(): E[];
+    getServicesClassNames(): string[];
 }

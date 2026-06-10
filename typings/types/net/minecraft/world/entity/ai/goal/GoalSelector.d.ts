@@ -12,7 +12,7 @@ export class GoalSelector extends Object {
     disableControlFlag(flag: Goal$Flag): void;
     enableControlFlag(flag: Goal$Flag): void;
     getAvailableGoals(): WrappedGoal[];
-    removeAllGoals(predicate: (param0: Goal) => kotlin.Boolean): void;
+    removeAllGoals(predicate: (param0: Goal) => boolean): void;
     removeGoal(toRemove: Goal): void;
     setControlFlag(flag: Goal$Flag, enabled: boolean): void;
     tick(): void;

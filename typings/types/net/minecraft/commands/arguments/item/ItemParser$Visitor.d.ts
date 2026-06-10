@@ -9,6 +9,6 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 export interface ItemParser$Visitor extends Object {
     visitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): void;
     visitItem(item: Holder<Item>): void;
-    visitRemovedComponent(type: DataComponentType<T>): void;
+    visitRemovedComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>): void;
     visitSuggestions(suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>): void;
 }

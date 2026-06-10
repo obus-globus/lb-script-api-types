@@ -8,11 +8,11 @@ import type { QuadCollection } from '../../../../../../net/minecraft/client/reso
 import type { UnbakedGeometry } from '../../../../../../net/minecraft/client/resources/model/geometry/UnbakedGeometry.d.ts'
 import type { TextureSlots } from '../../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
 export class UnbakedCuboidGeometry extends Record implements UnbakedGeometry {
-    static EMPTY: (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => kotlin.String) => net.minecraft.client.resources.model.geometry.QuadCollection;
-    static bake(paramelements: CuboidModelElement[], paramtextures: TextureSlots, parammodelBaker: ModelBaker, parammodelState: ModelState, paramname: () => kotlin.String): QuadCollection;
+    static EMPTY: (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
+    static bake(paramelements: CuboidModelElement[], paramtextures: TextureSlots, parammodelBaker: ModelBaker, parammodelState: ModelState, paramname: () => string): QuadCollection;
     constructor(elements: CuboidModelElement[])
     // private elements: CuboidModelElement[];
-    bake(textures: TextureSlots, modelBaker: ModelBaker, modelState: ModelState, name: () => kotlin.String): QuadCollection;
+    bake(textures: TextureSlots, modelBaker: ModelBaker, modelState: ModelState, name: () => string): QuadCollection;
     elements(): CuboidModelElement[];
     equals(o: Object | null): boolean;
     hashCode(): number;

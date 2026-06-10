@@ -17,11 +17,11 @@ export class ObjectArrays$ForkJoinQuickSortComp<K extends Object | number | stri
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: E[]): E[];
+    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
-    constructor(arg0: K[], arg1: number, arg2: number, arg3: (param0: K) => kotlin.Boolean)
-    // private comp: (param0: K) => kotlin.Boolean;
+    constructor(arg0: K[], arg1: number, arg2: number, arg3: (param0: Object) => boolean)
+    // private comp: (param0: Object) => boolean;
     // private from: number;
     // private to: number;
     // private x: K[];

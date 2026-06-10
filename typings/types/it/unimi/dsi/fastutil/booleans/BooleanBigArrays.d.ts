@@ -26,13 +26,13 @@ export class BooleanBigArrays extends Object {
     static length(paramarg0: (Object | null)[]): number;
     static newBigArray(paramarg0: number): (Object | null)[];
     static parallelQuickSort(paramarg0: (Object | null)[]): void;
-    static parallelQuickSort(paramarg0: (Object | null)[], paramarg1: (param0: boolean, param1: boolean) => kotlin.Int): void;
+    static parallelQuickSort(paramarg0: (Object | null)[], paramarg1: (param0: boolean, param1: boolean) => number): void;
     static parallelQuickSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
-    static parallelQuickSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: (param0: boolean, param1: boolean) => kotlin.Int): void;
+    static parallelQuickSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: (param0: boolean, param1: boolean) => number): void;
     static quickSort(paramarg0: (Object | null)[]): void;
-    static quickSort(paramarg0: (Object | null)[], paramarg1: (param0: boolean, param1: boolean) => kotlin.Int): void;
+    static quickSort(paramarg0: (Object | null)[], paramarg1: (param0: boolean, param1: boolean) => number): void;
     static quickSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
-    static quickSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: (param0: boolean, param1: boolean) => kotlin.Int): void;
+    static quickSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: (param0: boolean, param1: boolean) => number): void;
     static set(paramarg0: (Object | null)[], paramarg1: number, paramarg2: boolean): void;
     static setLength(paramarg0: (Object | null)[], paramarg1: number): (Object | null)[];
     static shuffle(paramarg0: (Object | null)[], paramarg1: Random): (Object | null)[];

@@ -7,8 +7,9 @@ import type { OptionInstance } from '../../../net/minecraft/client/OptionInstanc
 import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/client/OptionInstance$TooltipSupplier.d.ts'
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
+import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 export interface OptionInstance$ValueSet<T extends Object | number | string | boolean> extends Object {
     codec(): Codec<T>;
-    createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
+    createButton(tooltip: (param0: T) => Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
     validateValue(value: T): Optional<T>;
 }

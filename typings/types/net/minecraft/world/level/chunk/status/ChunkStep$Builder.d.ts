@@ -1,3 +1,4 @@
+import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { GenerationChunkHolder } from '../../../../../../net/minecraft/server/level/GenerationChunkHolder.d.ts'
 import type { StaticCache2D } from '../../../../../../net/minecraft/util/StaticCache2D.d.ts'
@@ -13,11 +14,11 @@ export class ChunkStep$Builder extends Object {
     // private directDependenciesByRadius: ChunkStatus[];
     // private parent: ChunkStep;
     // private status: ChunkStatus;
-    // private task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => java.util.concurrent.CompletableFuture<net.minecraft.world.level.chunk.ChunkAccess>;
+    // private task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => CompletableFuture<ChunkAccess>;
     addRequirement(status: ChunkStatus, radius: number): ChunkStep$Builder;
     blockStateWriteRadius(radius: number): ChunkStep$Builder;
     build(): ChunkStep;
     // private buildAccumulatedDependencies(): ChunkStatus[];
     // private getRadiusOfParent(status: ChunkStatus): number;
-    setTask(task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => java.util.concurrent.CompletableFuture<net.minecraft.world.level.chunk.ChunkAccess>): ChunkStep$Builder;
+    setTask(task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => CompletableFuture<ChunkAccess>): ChunkStep$Builder;
 }

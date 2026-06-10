@@ -8,6 +8,6 @@ export class CancellableContinuationKt extends Object {
     static disposeOnCancellation(paramarg0: CancellableContinuation<Object>, paramarg1: DisposableHandle): void;
     static getOrCreateCancellableContinuation(paramarg0: Continuation<Object>): CancellableContinuationImpl<Object>;
     static invokeOnCancellation(paramarg0: CancellableContinuation<Object>, paramarg1: CancelHandler): void;
-    static suspendCancellableCoroutine(paramarg0: (param0: Object | null) => void, paramarg1: Continuation<Object>): Object;
-    static suspendCancellableCoroutineReusable(paramarg0: (param0: Object | null) => void, paramarg1: Continuation<Object>): Object;
+    static suspendCancellableCoroutine(paramarg0: (param0: Object) => void, paramarg1: Continuation<Object>): Object;
+    static suspendCancellableCoroutineReusable(paramarg0: (param0: Object) => void, paramarg1: Continuation<Object>): Object;
 }

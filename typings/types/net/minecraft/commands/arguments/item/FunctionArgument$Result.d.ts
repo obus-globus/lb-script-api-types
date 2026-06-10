@@ -6,7 +6,7 @@ import type { CommandSourceStack } from '../../../../../net/minecraft/commands/C
 import type { CommandFunction } from '../../../../../net/minecraft/commands/functions/CommandFunction.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface FunctionArgument$Result extends Object{
-    create(context: CommandContext<CommandSourceStack>): E[];
-    unwrap(context: CommandContext<CommandSourceStack>): Pair<Identifier, Either<CommandFunction<CommandSourceStack>, E[]>>;
-    unwrapToCollection(context: CommandContext<CommandSourceStack>): Pair<Identifier, E[]>;
+    create(context: CommandContext<CommandSourceStack>): CommandFunction<CommandSourceStack>[];
+    unwrap(context: CommandContext<CommandSourceStack>): Pair<Identifier, Either<CommandFunction<CommandSourceStack>, CommandFunction<CommandSourceStack>[]>>;
+    unwrapToCollection(context: CommandContext<CommandSourceStack>): Pair<Identifier, CommandFunction<CommandSourceStack>[]>;
 }

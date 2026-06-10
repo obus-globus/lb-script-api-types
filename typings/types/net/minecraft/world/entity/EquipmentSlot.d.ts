@@ -14,7 +14,7 @@ import type { EquipmentSlot$Type } from '../../../../net/minecraft/world/entity/
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class EquipmentSlot extends Enum<EquipmentSlot> implements StringRepresentable {
     static BODY: EquipmentSlot;
-    static BY_ID: (param0: EquipmentSlot) => unknown;
+    static BY_ID: (param0: number) => EquipmentSlot;
     static CHEST: EquipmentSlot;
     static CODEC: StringRepresentable$EnumCodec<EquipmentSlot>;
     static FEET: EquipmentSlot;
@@ -28,11 +28,11 @@ export class EquipmentSlot extends Enum<EquipmentSlot> implements StringRepresen
     static STREAM_CODEC: StreamCodec<ByteBuf, EquipmentSlot>;
     static VALUES: EquipmentSlot[];
     static byName(paramname: string): EquipmentSlot;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EquipmentSlot;

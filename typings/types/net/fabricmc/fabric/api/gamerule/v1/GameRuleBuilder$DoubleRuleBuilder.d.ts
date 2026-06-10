@@ -17,7 +17,7 @@ export class GameRuleBuilder$DoubleRuleBuilder extends GameRuleBuilder$NumberRul
     argumentType(arg0: ArgumentType<number>): GameRuleBuilder$DoubleRuleBuilder;
     category(arg0: GameRuleCategory): GameRuleBuilder$DoubleRuleBuilder;
     codec(arg0: Codec<number>): GameRuleBuilder$DoubleRuleBuilder;
-    commandResultSupplier(arg0: (param0: number) => kotlin.Int): GameRuleBuilder$DoubleRuleBuilder;
+    commandResultSupplier(arg0: (param0: number) => number): GameRuleBuilder$DoubleRuleBuilder;
     minValue(arg0: number): GameRuleBuilder$DoubleRuleBuilder;
     range(arg0: number, arg1: number): GameRuleBuilder$DoubleRuleBuilder;
     requiredFeatures(arg0: FeatureFlagSet): GameRuleBuilder$DoubleRuleBuilder;

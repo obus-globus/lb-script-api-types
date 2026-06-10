@@ -18,8 +18,8 @@ export class PointFreeRule$Everywhere extends Record implements PointFreeRule {
     bottomUp(): PointFreeRule;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: PointFree<A>): Optional<PointFree<A>>;
-    rewriteOrNop(arg0: PointFree<A>): PointFree<A>;
+    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewriteOrNop<A extends Object | number | string | boolean>(arg0: PointFree<A>): PointFree<A>;
     toString(): string;
     topDown(): PointFreeRule;
 }

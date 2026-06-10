@@ -27,7 +27,7 @@ export class PlayerPredicate$Builder extends Object {
     // private recipes: Object2BooleanMap<ResourceKey<Recipe<Object>>>;
     // private stats: ImmutableList$Builder<PlayerPredicate$StatMatcher<Object>>;
     addRecipe(recipe: ResourceKey<Recipe<Object>>, present: boolean): PlayerPredicate$Builder;
-    addStat(type: Stat<T>[], value: Holder$Reference<T>, range: MinMaxBounds$Ints): PlayerPredicate$Builder;
+    addStat<T extends Object | number | string | boolean>(type: Stat<T>[], value: Holder$Reference<T>, range: MinMaxBounds$Ints): PlayerPredicate$Builder;
     build(): PlayerPredicate;
     checkAdvancementCriterions(advancement: Identifier, criterions: { [key: string]: boolean }): PlayerPredicate$Builder;
     checkAdvancementDone(advancement: Identifier, isDone: boolean): PlayerPredicate$Builder;

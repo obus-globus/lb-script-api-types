@@ -17,17 +17,17 @@ export class ServiceLoader extends Object {
     // private handler: LoadErrorHandler;
     readonly initializableProblemHandler: InitializableProblemHandler;
     readonly loader: ClassLoader;
-    // private collectServiceClassNames(arg0: URL, arg1: E[]): void;
+    // private collectServiceClassNames(arg0: URL, arg1: string[]): void;
     findServiceResources(arg0: string): Enumeration<URL>;
     getInitializableProblemHandler(): InitializableProblemHandler;
     getLoadErrorHandler(): LoadErrorHandler;
     getLoader(): ClassLoader;
     getResourceAsStream(arg0: string): InputStream;
-    getServiceClass(arg0: Class<T>, arg1: string): Class<T>;
-    identifyStaticServiceProviders(arg0: Class<T>): string[];
+    getServiceClass<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: string): Class<T>;
+    identifyStaticServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): string[];
     isDynamic(): boolean;
-    loadDynamicServiceProviders(arg0: Class<T>): T[];
-    loadServiceProviders(arg0: Class<T>): T[];
-    loadStaticServiceProviders(arg0: Class<T>): T[];
-    loadStaticServiceProviders(arg0: Class<T>, arg1: E[]): T[];
+    loadDynamicServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    loadServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    loadStaticServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    loadStaticServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: Class<T>[]): T[];
 }

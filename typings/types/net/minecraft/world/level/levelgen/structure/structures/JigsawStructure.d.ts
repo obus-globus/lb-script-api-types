@@ -20,7 +20,7 @@ import type { PoolAliasBinding } from '../../../../../../../net/minecraft/world/
 import type { JigsawStructure$MaxDistance } from '../../../../../../../net/minecraft/world/level/levelgen/structure/structures/JigsawStructure$MaxDistance.d.ts'
 import type { LiquidSettings } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/LiquidSettings.d.ts'
 export class JigsawStructure extends Structure {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Structure>>;
     static CODEC: MapCodec<JigsawStructure>;
     static DEFAULT_DIMENSION_PADDING: DimensionPadding;
     static DEFAULT_LIQUID_SETTINGS: LiquidSettings;
@@ -29,8 +29,8 @@ export class JigsawStructure extends Structure {
     static MAX_TOTAL_STRUCTURE_RANGE: number;
     static MIN_DEPTH: number;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;
-    static settingsCodec(parami: RecordCodecBuilder$Instance<Object>): RecordCodecBuilder<Object, Structure$StructureSettings>;
-    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Object | null): MapCodec<Object>;
+    static settingsCodec(parami: RecordCodecBuilder$Instance<Structure>): RecordCodecBuilder<Structure, Structure$StructureSettings>;
+    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Structure | null): MapCodec<Structure>;
     constructor(settings: Structure$StructureSettings, startPool: Holder<StructureTemplatePool>, startJigsawName: Optional<Identifier>, maxDepth: number, startHeight: HeightProvider, useExpansionHack: boolean, projectStartToHeightmap: Optional<Heightmap$Types>, maxDistanceFromCenter: JigsawStructure$MaxDistance, poolAliases: PoolAliasBinding[], dimensionPadding: DimensionPadding, liquidSettings: LiquidSettings)
     constructor(settings: Structure$StructureSettings, startPool: Holder<StructureTemplatePool>, maxDepth: number, startHeight: HeightProvider, useExpansionHack: boolean)
     constructor(settings: Structure$StructureSettings, startPool: Holder<StructureTemplatePool>, maxDepth: number, startHeight: HeightProvider, useExpansionHack: boolean, projectStartToHeightmap: Heightmap$Types)

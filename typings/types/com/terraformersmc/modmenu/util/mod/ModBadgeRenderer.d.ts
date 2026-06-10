@@ -19,6 +19,6 @@ export class ModBadgeRenderer extends Object {
     // private startY: number;
     draw(arg0: GuiGraphicsExtractor, arg1: number, arg2: number): void;
     drawBadge(arg0: GuiGraphicsExtractor, arg1: Mod$Badge, arg2: number, arg3: number): void;
-    drawBadge(arg0: GuiGraphicsExtractor, arg1: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean, arg2: number, arg3: number, arg4: number, arg5: number): void;
+    drawBadge(arg0: GuiGraphicsExtractor, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, arg2: number, arg3: number, arg4: number, arg5: number): void;
     getMod(): Mod;
 }

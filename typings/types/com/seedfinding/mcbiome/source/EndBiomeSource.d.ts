@@ -11,7 +11,7 @@ import type { Dimension } from '../../../../com/seedfinding/mccore/state/Dimensi
 import type { BPos } from '../../../../com/seedfinding/mccore/util/pos/BPos.d.ts'
 import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVersion.d.ts'
 export class EndBiomeSource extends LayeredBiomeSource<BiomeLayer> {
-    static factory(paramarg0: Dimension): (param0: MCVersion, param1: number) => com.seedfinding.mcbiome.source.BiomeSource;
+    static factory(paramarg0: Dimension): (param0: MCVersion, param1: number) => BiomeSource;
     static of(paramarg0: Dimension, paramarg1: MCVersion, paramarg2: number): BiomeSource;
     constructor(arg0: MCVersion, arg1: number)
     full: EndBiomeLayer;

@@ -25,9 +25,9 @@ import type { LevelChunk } from '../../../../net/minecraft/world/level/chunk/Lev
 import type { LevelLightEngine } from '../../../../net/minecraft/world/level/lighting/LevelLightEngine.d.ts'
 export class ChunkHolder extends GenerationChunkHolder implements ChunkHolderExtended, FullChunkStatusEventTracker {
     static UNLOADED_CHUNK: ChunkResult<ChunkAccess>;
-    static UNLOADED_CHUNK_FUTURE: CompletableFuture<Object>;
+    static UNLOADED_CHUNK_FUTURE: CompletableFuture<ChunkResult<ChunkAccess>>;
     static UNLOADED_LEVEL_CHUNK: ChunkResult<LevelChunk>;
-    constructor(pos: ChunkPos, ticketLevel: number, levelHeightAccessor: LevelHeightAccessor, lightEngine: LevelLightEngine, onLevelChange: (param0: ChunkPos, param1: () => kotlin.Int, param2: number, param3: (param0: number) => void) => void, playerProvider: ChunkHolder$PlayerProvider)
+    constructor(pos: ChunkPos, ticketLevel: number, levelHeightAccessor: LevelHeightAccessor, lightEngine: LevelLightEngine, onLevelChange: (param0: ChunkPos, param1: () => number, param2: number, param3: (param0: number) => void) => void, playerProvider: ChunkHolder$PlayerProvider)
     // private blockChangedLightSectionFilter: BitSet;
     // private changedBlocksPerSection: (Object | null)[][];
     readonly entityTickingChunkFuture: CompletableFuture<ChunkResult<LevelChunk>>;
@@ -38,7 +38,7 @@ export class ChunkHolder extends GenerationChunkHolder implements ChunkHolderExt
     // private levelHeightAccessor: LevelHeightAccessor;
     // private lightEngine: LevelLightEngine;
     // private oldTicketLevel: number;
-    // private onLevelChange: (param0: ChunkPos, param1: () => kotlin.Int, param2: number, param3: (param0: number) => void) => void;
+    // private onLevelChange: (param0: ChunkPos, param1: () => number, param2: number, param3: (param0: number) => void) => void;
     // private pendingFullStateConfirmation: CompletableFuture<Object>;
     // private playerProvider: ChunkHolder$PlayerProvider;
     readonly queueLevel: number;

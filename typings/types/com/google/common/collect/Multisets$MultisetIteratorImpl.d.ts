@@ -10,7 +10,7 @@ export class Multisets$MultisetIteratorImpl<E extends Object | number | string |
     // private laterCount: number;
     // private multiset: E[];
     // private totalCount: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
     remove(): void;

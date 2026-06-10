@@ -5,6 +5,6 @@ import type { ClientLevel } from '../../../../../../../net/minecraft/client/mult
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class ParticleRenderEvents extends Object {
-    static ALLOW_TERRAIN_PARTICLE_TINT: Event<(param0: BlockState, param1: ClientLevel, param2: BlockPos) => kotlin.Boolean>;
+    static ALLOW_TERRAIN_PARTICLE_TINT: Event<(param0: BlockState, param1: ClientLevel, param2: BlockPos) => boolean>;
     private constructor()
 }

@@ -5,12 +5,12 @@ import type { AnyOfCondition$Builder } from '../../../../../../../net/minecraft/
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export abstract class CompositeLootItemCondition$Builder extends Object implements LootItemCondition$Builder {
-    constructor(terms: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition[])
+    constructor(terms: () => LootItemCondition[])
     // private terms: ImmutableList$Builder<LootItemCondition>;
-    addTerm(term: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): void;
-    and(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AllOfCondition$Builder;
+    addTerm(term: () => LootItemCondition): void;
+    and(other: () => LootItemCondition): AllOfCondition$Builder;
     build(): LootItemCondition;
     create(terms: LootItemCondition[]): LootItemCondition;
-    invert(): () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-    or(other: () => net.minecraft.world.level.storage.loot.predicates.LootItemCondition): AnyOfCondition$Builder;
+    invert(): () => LootItemCondition;
+    or(other: () => LootItemCondition): AnyOfCondition$Builder;
 }

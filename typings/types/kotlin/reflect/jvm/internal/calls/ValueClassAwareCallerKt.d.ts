@@ -1,4 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Member } from '../../../../../java/lang/reflect/Member.d.ts'
 import type { Method } from '../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Caller } from '../../../../../kotlin/reflect/jvm/internal/calls/Caller.d.ts'
@@ -8,7 +9,7 @@ import type { DeclarationDescriptor } from '../../../../../kotlin/reflect/jvm/in
 import type { SimpleType } from '../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 export class ValueClassAwareCallerKt extends Object {
     static coerceToExpectedReceiverType(paramarg0: Object, paramarg1: CallableMemberDescriptor): Object;
-    static createValueClassAwareCallerIfNeeded(paramarg0: Caller<Object>, paramarg1: CallableMemberDescriptor, paramarg2: boolean): Caller<Object>;
+    static createValueClassAwareCallerIfNeeded(paramarg0: Caller<Member>, paramarg1: CallableMemberDescriptor, paramarg2: boolean): Caller<Member>;
     static getInlineClassUnboxMethod(paramarg0: Class<Object>, paramarg1: CallableMemberDescriptor): Method;
     static getMfvcUnboxMethods(paramarg0: SimpleType): Method[];
     static toInlineClass(paramarg0: DeclarationDescriptor): Class<Object>;

@@ -6,8 +6,10 @@ import type { DoubleCompanionObject } from '../../../kotlin/jvm/internal/DoubleC
 import type { FloatCompanionObject } from '../../../kotlin/jvm/internal/FloatCompanionObject.d.ts'
 import type { IntCompanionObject } from '../../../kotlin/jvm/internal/IntCompanionObject.d.ts'
 import type { LongCompanionObject } from '../../../kotlin/jvm/internal/LongCompanionObject.d.ts'
+import type { Pair } from '../../../kotlin/Pair.d.ts'
 import type { ShortCompanionObject } from '../../../kotlin/jvm/internal/ShortCompanionObject.d.ts'
 import type { StringCompanionObject } from '../../../kotlin/jvm/internal/StringCompanionObject.d.ts'
+import type { Triple } from '../../../kotlin/Triple.d.ts'
 import type { UByte } from '../../../kotlin/UByte.d.ts'
 import type { UByte$Companion } from '../../../kotlin/UByte$Companion.d.ts'
 import type { UInt } from '../../../kotlin/UInt.d.ts'
@@ -16,6 +18,7 @@ import type { ULong } from '../../../kotlin/ULong.d.ts'
 import type { ULong$Companion } from '../../../kotlin/ULong$Companion.d.ts'
 import type { UShort } from '../../../kotlin/UShort.d.ts'
 import type { UShort$Companion } from '../../../kotlin/UShort$Companion.d.ts'
+import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { Duration } from '../../../kotlin/time/Duration.d.ts'
 import type { Duration$Companion } from '../../../kotlin/time/Duration$Companion.d.ts'
@@ -33,15 +36,15 @@ export class BuiltinSerializersKt extends Object {
     static DoubleArraySerializer(): KSerializer<number[]>;
     static FloatArraySerializer(): KSerializer<number[]>;
     static IntArraySerializer(): KSerializer<number[]>;
-    static ListSerializer(paramarg0: KSerializer<Object>): KSerializer<Object>;
+    static ListSerializer(paramarg0: KSerializer<Object>): KSerializer<(Object | null)[]>;
     static LongArraySerializer(): KSerializer<number[]>;
-    static MapEntrySerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>): KSerializer<Object>;
-    static MapSerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>): KSerializer<Object>;
+    static MapEntrySerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>): KSerializer<Map$Entry<Object, Object>>;
+    static MapSerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>): KSerializer<Map<Object | null, Object | null>>;
     static NothingSerializer(): KSerializer<Object>;
-    static PairSerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>): KSerializer<Object>;
-    static SetSerializer(paramarg0: KSerializer<Object>): KSerializer<Object>;
+    static PairSerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>): KSerializer<Pair<Object, Object>>;
+    static SetSerializer(paramarg0: KSerializer<Object>): KSerializer<(Object | null)[]>;
     static ShortArraySerializer(): KSerializer<number[]>;
-    static TripleSerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>, paramarg2: KSerializer<Object>): KSerializer<Object>;
+    static TripleSerializer(paramarg0: KSerializer<Object>, paramarg1: KSerializer<Object>, paramarg2: KSerializer<Object>): KSerializer<Triple<Object, Object, Object>>;
     static UByteArraySerializer(): KSerializer<(Object | null)[]>;
     static UIntArraySerializer(): KSerializer<(Object | null)[]>;
     static ULongArraySerializer(): KSerializer<(Object | null)[]>;

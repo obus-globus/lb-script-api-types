@@ -7,7 +7,7 @@ export class Abstract128BitSet$Abstract128BitSetRangesIterator extends Object im
     // private curWord: number;
     // private lastHi: number;
     // private nextWord: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Range) => void): void;
     hasNext(): boolean;
     next(): Range;
 }

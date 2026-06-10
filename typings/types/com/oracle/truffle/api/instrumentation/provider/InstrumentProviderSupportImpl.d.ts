@@ -7,5 +7,5 @@ export class InstrumentProviderSupportImpl extends Accessor$InstrumentProviderSu
     createInternalResource(truffleInstrumentProvider: Object, resourceId: string): InternalResource;
     getInstrumentClassName(truffleInstrumentProvider: Object): string;
     getInternalResourceIds(truffleInstrumentProvider: Object): string[];
-    getServicesClassNames(truffleInstrumentProvider: Object): E[];
+    getServicesClassNames(truffleInstrumentProvider: Object): string[];
 }

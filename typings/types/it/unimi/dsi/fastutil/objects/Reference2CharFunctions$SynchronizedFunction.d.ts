@@ -35,32 +35,32 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2CharFunctions$SynchronizedFunction<K extends Object | number | string | boolean> extends Object implements Reference2CharFunction<K>, Serializable {
-    constructor(arg0: (param0: K) => kotlin.Char)
-    constructor(arg0: (param0: K) => kotlin.Char, arg1: Object)
-    // private function: (param0: K) => kotlin.Char;
+    constructor(arg0: (param0: Object) => string)
+    constructor(arg0: (param0: Object) => string, arg1: Object)
+    // private function: (param0: Object) => string;
     // private sync: Object;
-    andThen(arg0: (param0: string) => T): (param0: K) => T;
-    andThenByte(arg0: (param0: string) => kotlin.Byte): (param0: K) => kotlin.Byte;
-    andThenChar(arg0: (param0: string) => kotlin.Char): (param0: K) => kotlin.Char;
-    andThenDouble(arg0: (param0: string) => kotlin.Double): (param0: K) => kotlin.Double;
-    andThenFloat(arg0: (param0: string) => kotlin.Float): (param0: K) => kotlin.Float;
-    andThenInt(arg0: (param0: string) => kotlin.Int): (param0: K) => kotlin.Int;
-    andThenLong(arg0: (param0: string) => kotlin.Long): (param0: K) => kotlin.Long;
-    andThenObject(arg0: (param0: T) => unknown): (param0: K) => T;
-    andThenReference(arg0: (param0: T) => unknown): (param0: K) => T;
-    andThenShort(arg0: (param0: string) => kotlin.Short): (param0: K) => kotlin.Short;
+    andThen<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: K) => T;
+    andThenByte(arg0: (param0: string) => number): (param0: Object) => number;
+    andThenChar(arg0: (param0: string) => string): (param0: Object) => string;
+    andThenDouble(arg0: (param0: string) => number): (param0: Object) => number;
+    andThenFloat(arg0: (param0: string) => number): (param0: Object) => number;
+    andThenInt(arg0: (param0: string) => number): (param0: Object) => number;
+    andThenLong(arg0: (param0: string) => number): (param0: Object) => number;
+    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: Object) => T;
+    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: Object) => T;
+    andThenShort(arg0: (param0: string) => number): (param0: Object) => number;
     apply(arg0: K): string;
     applyAsInt(arg0: K): number;
     clear(): void;
-    composeByte(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
-    composeChar(arg0: (param0: K) => unknown): (param0: string) => kotlin.Char;
-    composeDouble(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
-    composeFloat(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
-    composeInt(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
-    composeLong(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
-    composeObject(arg0: (param0: T) => K): (param0: T) => kotlin.Char;
-    composeReference(arg0: (param0: T) => K): (param0: T) => kotlin.Char;
-    composeShort(arg0: (param0: K) => unknown): (param0: number) => kotlin.Char;
+    composeByte(arg0: (param0: number) => K): (param0: number) => string;
+    composeChar(arg0: (param0: string) => K): (param0: string) => string;
+    composeDouble(arg0: (param0: number) => K): (param0: number) => string;
+    composeFloat(arg0: (param0: number) => K): (param0: number) => string;
+    composeInt(arg0: (param0: number) => K): (param0: number) => string;
+    composeLong(arg0: (param0: number) => K): (param0: number) => string;
+    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => string;
+    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => string;
+    composeShort(arg0: (param0: number) => K): (param0: number) => string;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;

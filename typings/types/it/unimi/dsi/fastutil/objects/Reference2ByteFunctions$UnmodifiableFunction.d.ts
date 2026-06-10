@@ -3,8 +3,8 @@ import type { Reference2ByteFunction } from '../../../../../it/unimi/dsi/fastuti
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ByteFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2ByteFunction<K> implements Serializable {
-    constructor(arg0: (param0: K) => kotlin.Byte)
-    // private function: (param0: K) => kotlin.Byte;
+    constructor(arg0: (param0: Object) => number)
+    // private function: (param0: Object) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;

@@ -58,6 +58,7 @@ import type { TooltipFlag } from '../../../../net/minecraft/world/item/TooltipFl
 import type { ItemAttributeModifiers$Display } from '../../../../net/minecraft/world/item/component/ItemAttributeModifiers$Display.d.ts'
 import type { SwingAnimation } from '../../../../net/minecraft/world/item/component/SwingAnimation.d.ts'
 import type { TooltipDisplay } from '../../../../net/minecraft/world/item/component/TooltipDisplay.d.ts'
+import type { TooltipProvider } from '../../../../net/minecraft/world/item/component/TooltipProvider.d.ts'
 import type { UseOnContext } from '../../../../net/minecraft/world/item/context/UseOnContext.d.ts'
 import type { Enchantment } from '../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 import type { ItemEnchantments } from '../../../../net/minecraft/world/item/enchantment/ItemEnchantments.d.ts'
@@ -75,7 +76,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     static FIELD_ID: string;
     static MAP_CODEC: MapCodec<ItemStack>;
     static OPTIONAL_CODEC: Codec<ItemStack>;
-    static OPTIONAL_LIST_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static OPTIONAL_LIST_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack[]>;
     static OPTIONAL_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
     static OPTIONAL_UNTRUSTED_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
@@ -91,7 +92,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     static lenientOptionalFieldOf(paramname: string): MapCodec<ItemStack>;
     static listMatches(paramleft: ItemStack[], paramright: ItemStack[]): boolean;
     static matches(parama: ItemStack, paramb: ItemStack): boolean;
-    static matchesIgnoringComponents(parama: ItemStack, paramb: ItemStack, paramignoredPredicate: (param0: Object | null) => kotlin.Boolean): boolean;
+    static matchesIgnoringComponents(parama: ItemStack, paramb: ItemStack, paramignoredPredicate: (param0: DataComponentType<Object>) => boolean): boolean;
     static validateComponents(paramarg0: TypedDataComponent<Object>[]): DataResult<Object>;
     static validateStrict(paramitemStack: ItemStack): DataResult<ItemStack>;
     static validatedStreamCodec(paramcodec: StreamCodec<RegistryFriendlyByteBuf, ItemStack>): StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
@@ -111,7 +112,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     // private subscriberData: number;
     // private addAttributeTooltips(consumer: (param0: Component) => void, display: TooltipDisplay, player: Player): void;
     addDetailsToTooltip(context: Item$TooltipContext, display: TooltipDisplay, player: Player, tooltipFlag: TooltipFlag, builder: (param0: Component) => void): void;
-    addToTooltip(type: DataComponentType<T>, context: Item$TooltipContext, display: TooltipDisplay, consumer: (param0: Component) => void, flag: TooltipFlag): void;
+    addToTooltip<T extends TooltipProvider>(type: DataComponentType<T>, context: Item$TooltipContext, display: TooltipDisplay, consumer: (param0: Component) => void, flag: TooltipFlag): void;
     // private addUnitComponentToTooltip(dataComponentType: DataComponentType<Object>, component: Component, display: TooltipDisplay, builder: (param0: Component) => void): void;
     // private applyAfterUseComponentSideEffects(user: LivingEntity, stackBeforeUsing: ItemStack): ItemStack;
     applyComponents(components: TypedDataComponent<Object>[]): void;
@@ -128,7 +129,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     consumeAndReturn(amount: number, owner: LivingEntity): ItemStack;
     copy(): ItemStack;
     copyAndClear(): ItemStack;
-    copyFrom(type: DataComponentType<T>, source: DataComponentGetter): void;
+    copyFrom<T extends Object | number | string | boolean>(type: DataComponentType<T>, source: DataComponentGetter): void;
     copyWithCount(count: number): ItemStack;
     count(): number;
     enchant(enchantment: Holder<Enchantment>, level: number): void;
@@ -136,7 +137,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     forEachModifier(slot: EquipmentSlot, consumer: (param0: Holder<Attribute>, param1: AttributeModifier) => void): void;
     forEachModifier(slot: EquipmentSlot[], consumer: (param0: Holder<Attribute>, param1: AttributeModifier, param2: ItemAttributeModifiers$Display) => void): void;
     get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
-    getAllOfType(valueClass: Class<T>): Stream<T>;
+    getAllOfType<T extends Object | number | string | boolean>(valueClass: Class<T>): Stream<T>;
     getBarColor(): number;
     getBarWidth(): number;
     getComponents(): TypedDataComponent<Object>[];
@@ -178,9 +179,9 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     immutableComponents(): TypedDataComponent<Object>[];
     interactLivingEntity(player: Player, target: LivingEntity, hand: InteractionHand): InteractionResult;
     inventoryTick(level: Level, owner: Entity, slot: EquipmentSlot): void;
-    is(item: (param0: Holder<Item>) => kotlin.Boolean): boolean;
+    is(item: (param0: Holder<Item>) => boolean): boolean;
     is(type: Holder<Item>): boolean;
-    is(set: Holder<T>[]): boolean;
+    is(set: Holder<Item>[]): boolean;
     is(type: ResourceKey<Item>): boolean;
     is(tag: TagKey<Item>): boolean;
     is(rawType: Item): boolean;
@@ -202,7 +203,6 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     lithium$notify(arg0: (Object | null)[], arg1: number): void;
     lithium$subscribe(arg0: ChangeSubscriber<Object>, arg1: number): void;
     lithium$unsubscribe(arg0: ChangeSubscriber<Object>): number;
-    lithium$unsubscribeWithData(arg0: ChangeSubscriber<T>, arg1: number): void;
     lithium$unsubscribeWithData(arg0: ChangeSubscriber<Object>, arg1: number): void;
     mineBlock(level: Level, state: BlockState, pos: BlockPos, owner: Player): void;
     nextDamageWillBreak(): boolean;
@@ -231,7 +231,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     // private transmuteCopyIgnoreEmpty(newItem: ItemLike, newCount: number): ItemStack;
     typeHolder(): Holder<Item>;
     update<T extends Object | number | string | boolean, U extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T, value: U, combiner: (param0: T, param1: U) => T): T;
-    update<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T, function_: (param0: T) => unknown): T;
+    update<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T, function_: (param0: T) => Object | null): T;
     use(level: Level, player: Player, hand: InteractionHand): InteractionResult;
     useOn(context: UseOnContext): InteractionResult;
     useOnRelease(): boolean;

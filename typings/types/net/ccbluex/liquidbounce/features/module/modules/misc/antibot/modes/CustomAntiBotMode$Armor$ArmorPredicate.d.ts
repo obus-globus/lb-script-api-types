@@ -26,16 +26,16 @@ export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMo
     static SKULL: CustomAntiBotMode$Armor$ArmorPredicate;
     static TURTLE_SCUTE: CustomAntiBotMode$Armor$ArmorPredicate;
     static getEntries(): CustomAntiBotMode$Armor$ArmorPredicate[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomAntiBotMode$Armor$ArmorPredicate;
     static values(): (Object | null)[];
-    private constructor(tag: string, predicate: (param0: ItemStack) => kotlin.Boolean)
+    private constructor(tag: string, predicate: (param0: ItemStack) => boolean)
     private constructor(choiceName: string, items: Item[])
     private constructor(choiceName: string, tag: TagKey<Item>)
     private constructor(choiceName: string, item: Item)
-    readonly predicate: (param0: ItemStack) => kotlin.Boolean;
+    readonly predicate: (param0: ItemStack) => boolean;
     readonly tag: string;
     name(): "NOTHING" | "LEATHER" | "CHAIN" | "IRON" | "GOLD" | "DIAMOND" | "NETHERITE" | "ELYTRA" | "TURTLE_SCUTE" | "PUMPKIN" | "SKULL";
 }

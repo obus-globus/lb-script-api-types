@@ -12,14 +12,14 @@ export class ObjectSpliterators$SingletonSpliterator<K extends Object | number |
     static SORTED: number;
     static SUBSIZED: number;
     constructor(arg0: K)
-    constructor(arg0: K, arg1: (param0: K) => kotlin.Boolean)
-    readonly comparator: (param0: K) => kotlin.Boolean;
+    constructor(arg0: K, arg1: (param0: Object) => boolean)
+    readonly comparator: (param0: Object) => boolean;
     // private consumed: boolean;
     // private element: K;
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: K) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;

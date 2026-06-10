@@ -6,7 +6,7 @@ import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts
 import type { FormattedCharSequence } from '../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class ComponentRenderUtils extends Object {
-    static clipText(paramtext: Component, paramfont: Font, paramwidth: number): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
-    static wrapComponents(parammessage: FormattedText, parammaxWidth: number, paramfont: Font): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    static clipText(paramtext: Component, paramfont: Font, paramwidth: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static wrapComponents(parammessage: FormattedText, parammaxWidth: number, paramfont: Font): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     constructor()
 }

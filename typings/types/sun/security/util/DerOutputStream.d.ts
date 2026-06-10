@@ -4,6 +4,7 @@ import type { BigInteger } from '../../../java/math/BigInteger.d.ts'
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 import type { Comparator } from '../../../java/util/Comparator.d.ts'
 import type { Date } from '../../../java/util/Date.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
 import type { BitArray } from '../../../sun/security/util/BitArray.d.ts'
 import type { DerEncoder } from '../../../sun/security/util/DerEncoder.d.ts'
 import type { DerValue } from '../../../sun/security/util/DerValue.d.ts'
@@ -31,7 +32,7 @@ export class DerOutputStream extends ByteArrayOutputStream implements DerEncoder
     putOID(arg0: ObjectIdentifier): DerOutputStream;
     putOctetString(arg0: number[]): DerOutputStream;
     putOrderedSet(arg0: number, arg1: DerEncoder[]): DerOutputStream;
-    // private putOrderedSet(arg0: number, arg1: DerEncoder[], arg2: (param0: number[]) => kotlin.Boolean): DerOutputStream;
+    // private putOrderedSet(arg0: number, arg1: DerEncoder[], arg2: (param0: Object) => boolean): DerOutputStream;
     putOrderedSetOf(arg0: number, arg1: DerEncoder[]): DerOutputStream;
     putPrintableString(arg0: string): DerOutputStream;
     putSequence(arg0: DerValue[]): DerOutputStream;

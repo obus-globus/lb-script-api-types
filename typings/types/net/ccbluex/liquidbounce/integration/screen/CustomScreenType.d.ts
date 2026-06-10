@@ -29,11 +29,11 @@ export class CustomScreenType extends Enum<CustomScreenType> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomScreenType;
     static values(): (Object | null)[];
-    private constructor(routeName: string, recognizer: (param0: Screen) => kotlin.Boolean, isInGame: boolean, open: () => void)
+    private constructor(routeName: string, recognizer: (param0: Screen) => boolean, isInGame: boolean, open: () => void)
     // private isInGame: boolean;
     /*not mapped: */ isInGame(): boolean;
     // private open: () => void;
-    // private recognizer: (param0: Screen) => kotlin.Boolean;
+    // private recognizer: (param0: Screen) => boolean;
     readonly routeName: string;
     open(): void;
     name(): "HUD" | "CLICK_GUI" | "ALT_MANAGER" | "PROXY_MANAGER" | "TITLE" | "MULTIPLAYER" | "MULTIPLAYER_REALMS" | "SINGLEPLAYER" | "CREATE_WORLD" | "OPTIONS" | "GAME_MENU" | "INVENTORY" | "CONTAINER" | "DISCONNECTED" | "VIAFABRICPLUS_PROTOCOL_SELECTION" | "BROWSER";

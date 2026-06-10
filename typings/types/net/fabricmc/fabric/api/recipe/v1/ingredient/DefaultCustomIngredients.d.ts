@@ -9,7 +9,7 @@ export class DefaultCustomIngredients extends Object {
     static all(paramarg0: (Object | null)[]): Ingredient;
     static any(paramarg0: (Object | null)[]): Ingredient;
     static components(paramarg0: ItemStack): Ingredient;
-    static components(paramarg0: Ingredient, paramarg1: (param0: DataComponentPatch$Builder) => unknown): Ingredient;
+    static components(paramarg0: Ingredient, paramarg1: (param0: DataComponentPatch$Builder) => Object | null): Ingredient;
     static components(paramarg0: Ingredient, paramarg1: DataComponentPatch): Ingredient;
     static customData(paramarg0: Ingredient, paramarg1: CompoundTag): Ingredient;
     static difference(paramarg0: Ingredient, paramarg1: Ingredient): Ingredient;

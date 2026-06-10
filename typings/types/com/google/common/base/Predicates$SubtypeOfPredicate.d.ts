@@ -8,6 +8,6 @@ export class Predicates$SubtypeOfPredicate extends Object implements Predicate<C
     apply(input: Class<Object>): boolean;
     equals(obj: Object | null): boolean;
     hashCode(): number;
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test(input: Class<Object>): boolean;
     toString(): string;
 }

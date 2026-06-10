@@ -113,14 +113,14 @@ export class VegetationPatchFeature extends Feature<VegetationPatchConfiguration
     static VOID_START_PLATFORM: Feature<NoneFeatureConfiguration>;
     static WATERLOGGED_VEGETATION_PATCH: Feature<VegetationPatchConfiguration>;
     static WEEPING_VINES: Feature<NoneFeatureConfiguration>;
-    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    static checkNeighbors(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos, parampredicate: (param0: BlockState) => boolean): boolean;
     static isAdjacentToAir(paramblockGetter: (param0: BlockPos) => BlockState, parampos: BlockPos): boolean;
-    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => kotlin.Boolean;
+    static isReplaceable(paramcannotReplaceTag: TagKey<Block>): (param0: BlockState) => boolean;
     constructor(codec: Codec<VegetationPatchConfiguration>)
     distributeVegetation(context: FeaturePlaceContext<VegetationPatchConfiguration>, level: WorldGenLevel, config: VegetationPatchConfiguration, random: RandomSource, surface: BlockPos[], xRadius: number, zRadius: number): void;
     place(context: FeaturePlaceContext<VegetationPatchConfiguration>): boolean;
     place(config: VegetationPatchConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
-    placeGround(level: WorldGenLevel, config: VegetationPatchConfiguration, replaceable: (param0: BlockState) => kotlin.Boolean, random: RandomSource, belowPos: BlockPos$MutableBlockPos, depth: number): boolean;
-    placeGroundPatch(level: WorldGenLevel, config: VegetationPatchConfiguration, random: RandomSource, origin: BlockPos, replaceable: (param0: BlockState) => kotlin.Boolean, xRadius: number, zRadius: number): BlockPos[];
+    placeGround(level: WorldGenLevel, config: VegetationPatchConfiguration, replaceable: (param0: BlockState) => boolean, random: RandomSource, belowPos: BlockPos$MutableBlockPos, depth: number): boolean;
+    placeGroundPatch(level: WorldGenLevel, config: VegetationPatchConfiguration, random: RandomSource, origin: BlockPos, replaceable: (param0: BlockState) => boolean, xRadius: number, zRadius: number): BlockPos[];
     placeVegetation(level: WorldGenLevel, config: VegetationPatchConfiguration, generator: ChunkGenerator, random: RandomSource, vegetationPos: BlockPos): boolean;
 }

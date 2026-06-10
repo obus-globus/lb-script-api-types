@@ -5,7 +5,7 @@ export class RopeByteString$PieceIterator extends Object implements Iterator<(Ob
     private constructor(arg0: number[])
     // private breadCrumbs: (Object | null)[][];
     // private next: (Object | null)[];
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: (Object | null)[]) => void): void;
     // private getLeafByLeft(arg0: number[]): (Object | null)[];
     // private getNextNonEmptyLeaf(): (Object | null)[];
     hasNext(): boolean;

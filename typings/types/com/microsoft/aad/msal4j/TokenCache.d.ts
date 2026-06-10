@@ -29,7 +29,7 @@ export class TokenCache extends Object implements ITokenCache {
     // private serializedCachedSnapshot: string;
     // private tokenCacheAccessAspect: ITokenCacheAccessAspect;
     deserialize(arg0: string): void;
-    // private deserializeCollection(arg0: JsonReader, arg1: { [key: string]: T }, arg2: (param0: JsonReader) => T): void;
+    // private deserializeCollection<T extends Object | number | string | boolean>(arg0: JsonReader, arg1: { [key: string]: T }, arg2: (param0: JsonReader) => T): void;
     // private deserializeFromJson(arg0: JsonReader): void;
     // private getAccessTokenCacheEntity(arg0: IAccount, arg1: Authority, arg2: string[], arg3: string, arg4: string[]): Optional<AccessTokenCacheEntity>;
     // private getAccountCacheEntity(arg0: IAccount, arg1: string[]): Optional<AccountCacheEntity>;
@@ -56,5 +56,5 @@ export class TokenCache extends Object implements ITokenCache {
     // private serializeToJson(): string;
     // private userAssertionHashMatches(arg0: AccountCacheEntity, arg1: string): boolean;
     // private userAssertionHashMatches(arg0: Credential, arg1: string): boolean;
-    // private writeCollection(arg0: JsonWriter, arg1: string, arg2: { [key: string]: T }): void;
+    // private writeCollection<T extends Object | number | string | boolean>(arg0: JsonWriter, arg1: string, arg2: { [key: string]: T }): void;
 }

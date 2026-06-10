@@ -10,7 +10,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloWorldTranslator extends Object implements NoBatchifyTranslator<VisionLanguageInput, DetectedObjects> {
     static builder(): YoloWorldTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): YoloWorldTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): YoloWorldTranslator$Builder;
     constructor(arg0: YoloWorldTranslator$Builder)
     // private clipModelPath: string;
     // private imageProcessor: BaseImageTranslator<Object>;

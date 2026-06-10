@@ -1,8 +1,9 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 export class NormalNoise$NoiseParameters extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<NormalNoise$NoiseParameters>>;
     static DIRECT_CODEC: Codec<NormalNoise$NoiseParameters>;
     // private amplitudes: (Object | null)[];
     // private firstOctave: number;

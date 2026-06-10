@@ -16,8 +16,8 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncIteratorNextNode extends AbstractAwaitNode implements ResumableNode$WithIntState {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramstateSlot: number, paramiterator: JavaScriptNode, paramasyncContextNode: JSReadFrameSlotNode, paramasyncResultNode: JSReadFrameSlotNode): JavaScriptNode;
     static findAsyncStackFramesFromHandler(paramhandlerFunction: JSFunctionObject, paramargument: Object): TruffleStackTraceElement[];
     static findAsyncStackFramesFromPromise(parampromise: JSDynamicObject): TruffleStackTraceElement[];

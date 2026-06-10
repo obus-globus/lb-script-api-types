@@ -8,8 +8,8 @@ import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCod
 export class UUIDUtil extends Object {
     static AUTHLIB_CODEC: Codec<UUID>;
     static CODEC: Codec<UUID>;
-    static CODEC_LINKED_SET: Codec<Object>;
-    static CODEC_SET: Codec<Object>;
+    static CODEC_LINKED_SET: Codec<UUID[]>;
+    static CODEC_SET: Codec<UUID[]>;
     static LENIENT_CODEC: Codec<UUID>;
     static STREAM_CODEC: StreamCodec<ByteBuf, UUID>;
     static STRING_CODEC: Codec<UUID>;

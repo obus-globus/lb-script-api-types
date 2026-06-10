@@ -12,6 +12,7 @@ import type { OptionInstance$SliderableValueSet } from '../../../net/minecraft/c
 import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/client/OptionInstance$TooltipSupplier.d.ts'
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
+import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 export class OptionInstance$UnitDouble extends Enum<OptionInstance$UnitDouble> implements OptionInstance$SliderableValueSet<number> {
     static INSTANCE: OptionInstance$UnitDouble;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
@@ -20,12 +21,12 @@ export class OptionInstance$UnitDouble extends Enum<OptionInstance$UnitDouble> i
     private constructor()
     applyValueImmediately(): boolean;
     codec(): Codec<number>;
-    createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
+    createButton(tooltip: (param0: number) => Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: number) => void): (param0: OptionInstance<number>) => AbstractWidget;
     fromSliderValue(slider: number): number;
-    next<T extends Object | number | string | boolean>(current: T): Optional<T>;
-    previous<T extends Object | number | string | boolean>(current: T): Optional<T>;
+    next(current: number): Optional<number>;
+    previous(current: number): Optional<number>;
     toSliderValue(value: number): number;
     validateValue(value: number): Optional<number>;
-    xmap(to: (param0: R) => unknown, from: (param0: R) => kotlin.Double): OptionInstance$SliderableValueSet<R>;
+    xmap<R extends Object | number | string | boolean>(to: (param0: number) => R, from: (param0: R) => number): OptionInstance$SliderableValueSet<R>;
     name(): "INSTANCE";
 }

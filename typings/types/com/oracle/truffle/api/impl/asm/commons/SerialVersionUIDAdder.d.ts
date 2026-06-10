@@ -1,6 +1,7 @@
 import type { ClassVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/ClassVisitor.d.ts'
 import type { FieldVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/FieldVisitor.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
+import type { SerialVersionUIDAdder$Item } from '../../../../../../../com/oracle/truffle/api/impl/asm/commons/SerialVersionUIDAdder$Item.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class SerialVersionUIDAdder extends ClassVisitor {
     constructor(classVisitor: ClassVisitor)
@@ -11,9 +12,9 @@ export class SerialVersionUIDAdder extends ClassVisitor {
     // private hasSvuid: boolean;
     // private interfaces: string[];
     // private name: string;
-    // private svuidConstructors: E[];
-    // private svuidFields: E[];
-    // private svuidMethods: E[];
+    // private svuidConstructors: SerialVersionUIDAdder$Item[];
+    // private svuidFields: SerialVersionUIDAdder$Item[];
+    // private svuidMethods: SerialVersionUIDAdder$Item[];
     addSVUID(svuid: number): void;
     computeSHAdigest(value: number[]): number[];
     computeSVUID(): number;

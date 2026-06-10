@@ -24,7 +24,7 @@ export class LevelChunkTicks<T extends Object | number | string | boolean> exten
     peek(): ScheduledTick<Object>;
     poll(): ScheduledTick<Object>;
     // private queueTick(arg0: ScheduledTick<Object>): void;
-    removeIf(arg0: (param0: Object) => kotlin.Boolean): void;
+    removeIf(arg0: (param0: Object) => boolean): void;
     schedule(arg0: ScheduledTick<Object>): void;
     // private scheduleUnchecked(tick: ScheduledTick<T>): void;
     setOnTickAdded(onTickAdded: (param0: LevelChunkTicks<T>, param1: ScheduledTick<T>) => void): void;

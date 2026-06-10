@@ -7,6 +7,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class EnchantedItemTrigger extends SimpleCriterionTrigger<EnchantedItemTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<EnchantedItemTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: EnchantedItemTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: EnchantedItemTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, itemStack: ItemStack, levels: number): void;
 }

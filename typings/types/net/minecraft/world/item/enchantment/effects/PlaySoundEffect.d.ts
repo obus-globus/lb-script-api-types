@@ -15,7 +15,7 @@ export class PlaySoundEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<PlaySoundEffect>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(soundEvents: Holder<SoundEvent>[], volume: FloatProvider, pitch: FloatProvider)
     // private pitch: FloatProvider;
     // private soundEvents: Holder<SoundEvent>[];

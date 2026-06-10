@@ -1,7 +1,7 @@
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { GLFWCursorEnterCallback } from '../../../org/lwjgl/glfw/GLFWCursorEnterCallback.d.ts'
 import type { GLFWCursorEnterCallbackI } from '../../../org/lwjgl/glfw/GLFWCursorEnterCallbackI.d.ts'
 import type { Callback$Descriptor } from '../../../org/lwjgl/system/Callback$Descriptor.d.ts'
+import type { CallbackI } from '../../../org/lwjgl/system/CallbackI.d.ts'
 export class GLFWCursorEnterCallback$Container extends GLFWCursorEnterCallback {
     static BITS32: boolean;
     static BITS64: boolean;
@@ -14,8 +14,8 @@ export class GLFWCursorEnterCallback$Container extends GLFWCursorEnterCallback {
     static create(paramarg0: (param0: number, param1: boolean) => void): GLFWCursorEnterCallback;
     static createSafe(paramarg0: number): GLFWCursorEnterCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): Object | null;
-    static getSafe(paramarg0: number): Object | null;
+    static get(paramarg0: number): CallbackI | null;
+    static getSafe(paramarg0: number): CallbackI | null;
     constructor(arg0: number, arg1: (param0: number, param1: boolean) => void)
     // private delegate: (param0: number, param1: boolean) => void;
     invoke(arg0: number, arg1: boolean): void;

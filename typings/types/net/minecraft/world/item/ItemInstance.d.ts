@@ -12,11 +12,11 @@ export interface ItemInstance extends Object, TypedInstance<Item>, DataComponent
     count(): number;
     getMaxStackSize(): number;
     getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
-    getTyped(type: DataComponentType<T>): TypedDataComponent<T>;
-    is<T extends Object | number | string | boolean>(rawType: T): boolean;
-    is(type: Holder<T>): boolean;
-    is(set: Holder<T>[]): boolean;
-    is(type: ResourceKey<T>): boolean;
-    is(tag: TagKey<T>): boolean;
-    tags(): Stream<TagKey<T>>;
+    getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
+    is(rawType: Item): boolean;
+    is(type: Holder<Item>): boolean;
+    is(set: Holder<Item>[]): boolean;
+    is(type: ResourceKey<Item>): boolean;
+    is(tag: TagKey<Item>): boolean;
+    tags(): Stream<TagKey<Item>>;
 }

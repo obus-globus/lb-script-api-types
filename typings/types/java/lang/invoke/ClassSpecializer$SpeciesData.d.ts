@@ -16,9 +16,9 @@ export abstract class ClassSpecializer$SpeciesData extends Object {
     // private transformHelpers: MethodHandle[];
     deriveClassName(): string;
     deriveFieldTypes<K extends Object | number | string | boolean>(arg0: K): Class<Object>[];
-    deriveSuperClass(): Class<T>;
+    deriveSuperClass<T extends Object | number | string | boolean>(): Class<T>;
     deriveTransformHelper(arg0: MemberName, arg1: number): MethodHandle;
-    deriveTransformHelperArguments(arg0: MemberName, arg1: number, arg2: X[], arg3: X[]): X[];
+    deriveTransformHelperArguments<X extends Object | number | string | boolean>(arg0: MemberName, arg1: number, arg2: X[], arg3: X[]): X[];
     deriveTypeString(): string;
     equals(arg0: Object | null): boolean;
     factory(): MethodHandle;
@@ -31,8 +31,8 @@ export abstract class ClassSpecializer$SpeciesData extends Object {
     hashCode(): number;
     isResolved(): boolean;
     key<K extends Object | number | string | boolean>(): K;
-    outer(): ClassSpecializer<T, K, S>;
-    speciesCode(): Class<T>;
+    outer<T extends Object | number | string | boolean, K extends Object | number | string | boolean, S extends ClassSpecializer$SpeciesData>(): ClassSpecializer<T, K, S>;
+    speciesCode<T extends Object | number | string | boolean>(): Class<T>;
     toString(): string;
     transformHelper(arg0: number): MethodHandle;
     // private transformHelperType(arg0: number): MethodType;

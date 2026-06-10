@@ -11,6 +11,7 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 import type { PacketListener } from '../../../../net/minecraft/network/PacketListener.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
+import type { ServerGamePacketListener } from '../../../../net/minecraft/network/protocol/game/ServerGamePacketListener.d.ts'
 import type { ServerboundContainerClickPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundContainerClickPacket.d.ts'
 import type { StatsCounter } from '../../../../net/minecraft/stats/StatsCounter.d.ts'
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
@@ -78,7 +79,7 @@ export class MultiPlayerGameMode extends Object implements IMultiPlayerGameMode 
     setLocalMode(mode: GameType, previousMode: GameType): void;
     spectate(entity: Entity): void;
     startDestroyBlock(pos: BlockPos, direction: Direction): boolean;
-    startPrediction(level: ClientLevel, predictiveAction: (param0: number) => net.minecraft.network.protocol.Packet<net.minecraft.network.protocol.game.ServerGamePacketListener>): void;
+    startPrediction(level: ClientLevel, predictiveAction: (param0: number) => Packet<ServerGamePacketListener>): void;
     stopDestroyBlock(): void;
     tick(): void;
     useItem(player: Player, hand: InteractionHand): InteractionResult;

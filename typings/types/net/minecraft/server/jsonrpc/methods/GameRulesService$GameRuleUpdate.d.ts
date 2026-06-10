@@ -5,8 +5,8 @@ import type { FabricGameRuleType } from '../../../../../net/fabricmc/fabric/impl
 import type { FabricTypedRule } from '../../../../../net/fabricmc/fabric/impl/gamerule/rpc/FabricTypedRule.d.ts'
 import type { GameRule } from '../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class GameRulesService$GameRuleUpdate<T extends Object | number | string | boolean> extends Record implements FabricTypedRule {
-    static CODEC: Codec<Object>;
-    static TYPED_CODEC: Codec<Object>;
+    static CODEC: Codec<GameRulesService$GameRuleUpdate<Object>>;
+    static TYPED_CODEC: Codec<GameRulesService$GameRuleUpdate<Object>>;
     constructor(gameRule: GameRule<T>, value: T)
     // private fabricGameRuleType: FabricGameRuleType;
     // private gameRule: GameRule<T>;

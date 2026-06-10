@@ -60,10 +60,10 @@ export class TypeSystemContextContextualKt extends Object {
     static makeDefinitelyNotNullOrNotNull(paramarg0: TypeSystemContext, paramarg1: KotlinTypeMarker): KotlinTypeMarker;
     static originalIfDefinitelyNotNullable(paramarg0: TypeSystemContext, paramarg1: RigidTypeMarker): SimpleTypeMarker;
     static parametersCount(paramarg0: TypeSystemContext, paramarg1: TypeConstructorMarker): number;
-    static possibleIntegerTypes(paramarg0: TypeSystemContext, paramarg1: RigidTypeMarker): E[];
+    static possibleIntegerTypes(paramarg0: TypeSystemContext, paramarg1: RigidTypeMarker): KotlinTypeMarker[];
     static projection(paramarg0: TypeSystemContext, paramarg1: CapturedTypeConstructorMarker): TypeArgumentMarker;
     static size(paramarg0: TypeSystemContext, paramarg1: TypeArgumentListMarker): number;
-    static supertypes(paramarg0: TypeSystemContext, paramarg1: TypeConstructorMarker): E[];
+    static supertypes(paramarg0: TypeSystemContext, paramarg1: TypeConstructorMarker): KotlinTypeMarker[];
     static typeConstructor(paramarg0: TypeSystemContext, paramarg1: CapturedTypeMarker): CapturedTypeConstructorMarker;
     static typeConstructor(paramarg0: TypeSystemContext, paramarg1: KotlinTypeMarker): TypeConstructorMarker;
     static typeConstructor(paramarg0: TypeSystemContext, paramarg1: RigidTypeMarker): TypeConstructorMarker;

@@ -7,7 +7,7 @@ import type { AbstractZombieModel } from '../../../../../../net/minecraft/client
 import type { ArmorModelSet } from '../../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
 import type { ZombieRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/ZombieRenderState.d.ts'
 export class ZombieModel<S extends ZombieRenderState> extends AbstractZombieModel<S> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

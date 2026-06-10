@@ -18,12 +18,12 @@ export class SignText extends Object {
     // private hasGlowingText: boolean;
     // private messages: Component[];
     // private renderMessagedFiltered: boolean;
-    // private renderMessages: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private renderMessages: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private filteredMessages(): Optional<Component[]>;
     getColor(): DyeColor;
     getMessage(index: number, shouldFilter: boolean): Component;
     getMessages(shouldFilter: boolean): Component[];
-    getRenderMessages(shouldFilter: boolean, prepare: (param0: Component) => (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    getRenderMessages(shouldFilter: boolean, prepare: (param0: Component) => (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     hasAnyClickCommands(player: Player): boolean;
     hasGlowingText(): boolean;
     hasMessage(player: Player): boolean;

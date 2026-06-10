@@ -12,10 +12,10 @@ export class ObjectAVLTreeSet$SetIterator extends Object implements ObjectListIt
     hasNext(): boolean;
     hasPrevious(): boolean;
     next<K extends Object | number | string | boolean>(): K;
-    nextEntry(): ObjectAVLTreeSet$Entry<K>;
+    nextEntry<K extends Object | number | string | boolean>(): ObjectAVLTreeSet$Entry<K>;
     nextIndex(): number;
     previous<K extends Object | number | string | boolean>(): K;
-    previousEntry(): ObjectAVLTreeSet$Entry<K>;
+    previousEntry<K extends Object | number | string | boolean>(): ObjectAVLTreeSet$Entry<K>;
     previousIndex(): number;
     remove(): void;
     set<K extends Object | number | string | boolean>(arg0: K): void;

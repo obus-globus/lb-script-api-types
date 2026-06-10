@@ -17,7 +17,7 @@ export class GameRuleBuilder$IntegerRuleBuilder extends GameRuleBuilder$NumberRu
     argumentType(arg0: ArgumentType<number>): GameRuleBuilder$IntegerRuleBuilder;
     category(arg0: GameRuleCategory): GameRuleBuilder$IntegerRuleBuilder;
     codec(arg0: Codec<number>): GameRuleBuilder$IntegerRuleBuilder;
-    commandResultSupplier(arg0: (param0: number) => kotlin.Int): GameRuleBuilder$IntegerRuleBuilder;
+    commandResultSupplier(arg0: (param0: number) => number): GameRuleBuilder$IntegerRuleBuilder;
     minValue(arg0: number): GameRuleBuilder$IntegerRuleBuilder;
     range(arg0: number, arg1: number): GameRuleBuilder$IntegerRuleBuilder;
     requiredFeatures(arg0: FeatureFlagSet): GameRuleBuilder$IntegerRuleBuilder;

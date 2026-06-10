@@ -4,5 +4,5 @@ import type { Type$FieldNotFoundException } from '../../../../com/mojang/datafix
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface Type$TypeMatcher<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean> extends Object{
-    match(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
+    match<S extends Object | number | string | boolean>(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
 }

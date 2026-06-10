@@ -14,9 +14,9 @@ export class JSObjectFactory$IntrinsicBuilder extends Object {
     // private context: JSContext;
     // private count: number;
     create<T extends JSClass & PrototypeSupplier>(jsclass: T): JSObjectFactory;
-    create(prototypeSupplier: (param0: JSRealm) => com.oracle.truffle.js.runtime.objects.JSDynamicObject, jsclass: JSClass): JSObjectFactory;
-    create(prototypeSupplier: (param0: JSRealm) => com.oracle.truffle.js.runtime.objects.JSDynamicObject, shapeSupplier: (param0: JSContext, param1: JSDynamicObject) => Shape): JSObjectFactory;
+    create(prototypeSupplier: (param0: JSRealm) => JSDynamicObject, jsclass: JSClass): JSObjectFactory;
+    create(prototypeSupplier: (param0: JSRealm) => JSDynamicObject, shapeSupplier: (param0: JSContext, param1: JSDynamicObject) => Shape): JSObjectFactory;
     finish(): number;
-    function(intrinsicDefaultProto: (param0: JSRealm) => com.oracle.truffle.js.runtime.objects.JSDynamicObject, isStrict: boolean, isConstructor: boolean, isGenerator: boolean, isBound: boolean, isAsync: boolean): JSFunctionFactory;
+    function(intrinsicDefaultProto: (param0: JSRealm) => JSDynamicObject, isStrict: boolean, isConstructor: boolean, isGenerator: boolean, isBound: boolean, isAsync: boolean): JSFunctionFactory;
     nextIndex(): number;
 }

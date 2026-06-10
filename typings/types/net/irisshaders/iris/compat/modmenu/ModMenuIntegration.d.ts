@@ -10,8 +10,8 @@ export class ModMenuIntegration extends Object implements ModMenuApi {
     static createModsScreen(paramarg0: Screen): Screen;
     constructor()
     attachModpackBadges(arg0: (param0: string) => void): void;
-    getModConfigScreenFactory(): (param0: Screen) => unknown;
-    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => unknown };
+    getModConfigScreenFactory(): (param0: Screen) => Screen | null;
+    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => Screen | null };
     getProvidedUpdateCheckers(): { [key: string]: UpdateChecker };
     getUpdateChecker(): UpdateChecker;
 }

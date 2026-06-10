@@ -7,7 +7,7 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionArgumentsNode extends AbstractFunctionArgumentsNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: AbstractFunctionArgumentsNode | null, parammaterializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode | null;
     static create(paramcontext: JSContext, paramargs: (Object | null)[]): AbstractFunctionArgumentsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

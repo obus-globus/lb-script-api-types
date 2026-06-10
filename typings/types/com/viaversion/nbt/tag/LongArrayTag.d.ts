@@ -1,4 +1,5 @@
 import type { TagLimiter } from '../../../../com/viaversion/nbt/limiter/TagLimiter.d.ts'
+import type { LongTag } from '../../../../com/viaversion/nbt/tag/LongTag.d.ts'
 import type { NumberArrayTag } from '../../../../com/viaversion/nbt/tag/NumberArrayTag.d.ts'
 import type { DataInput } from '../../../../java/io/DataInput.d.ts'
 import type { DataOutput } from '../../../../java/io/DataOutput.d.ts'
@@ -19,7 +20,7 @@ export class LongArrayTag extends Object implements NumberArrayTag {
     length(): number;
     set(arg0: number, arg1: number): void;
     setValue(arg0: number[]): void;
-    toListTag(): T[];
+    toListTag(): LongTag[];
     toString(): string;
     write(arg0: DataOutput): void;
 }

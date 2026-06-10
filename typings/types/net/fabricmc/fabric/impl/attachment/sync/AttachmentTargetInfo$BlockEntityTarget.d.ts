@@ -11,7 +11,7 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 import type { BlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 export class AttachmentTargetInfo$BlockEntityTarget extends Record implements AttachmentTargetInfo<BlockEntity> {
     static MAX_SIZE_IN_BYTES: number;
-    static PACKET_CODEC: StreamCodec<ByteBuf, Object>;
+    static PACKET_CODEC: StreamCodec<ByteBuf, AttachmentTargetInfo<Object>>;
     constructor(pos: BlockPos)
     // private pos: BlockPos;
     appendDebugInformation(arg0: MutableComponent): void;

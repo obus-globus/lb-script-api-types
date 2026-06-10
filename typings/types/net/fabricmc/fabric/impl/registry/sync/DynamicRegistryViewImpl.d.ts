@@ -10,7 +10,7 @@ export class DynamicRegistryViewImpl extends Object implements DynamicRegistryVi
     constructor(arg0: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>)
     // private registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>;
     asRegistryAccess(): RegistryAccess;
-    getOptional(arg0: ResourceKey<T[]>): Optional<T[]>;
-    registerEntryAdded(arg0: ResourceKey<T[]>, arg1: (param0: T, param1: number, param2: Identifier) => void): void;
+    getOptional<T extends Object | number | string | boolean>(arg0: ResourceKey<T[]>): Optional<T[]>;
+    registerEntryAdded<T extends Object | number | string | boolean>(arg0: ResourceKey<T[]>, arg1: (param0: number, param1: Identifier, param2: T) => void): void;
     stream(): Stream<(Object | null)[]>;
 }

@@ -17,5 +17,5 @@ export class SelectImplementation$ClauseData extends Object {
     dispose(): void;
     invokeBlock<R extends Object | number | string | boolean>(argument: Object | null): R;
     processResult(result: Object | null): Object | null;
-    tryRegisterAsWaiter(select: SelectImplementation<R>): boolean;
+    tryRegisterAsWaiter<R extends Object | number | string | boolean>(select: SelectImplementation<R>): boolean;
 }

@@ -8,5 +8,5 @@ export class ChunkPyramid$Builder extends Object {
     constructor()
     // private steps: ChunkStep[];
     build(): ChunkPyramid;
-    step(status: ChunkStatus, operator: (param0: ChunkStep$Builder) => unknown): ChunkPyramid$Builder;
+    step(status: ChunkStatus, operator: (param0: ChunkStep$Builder) => Object | null): ChunkPyramid$Builder;
 }

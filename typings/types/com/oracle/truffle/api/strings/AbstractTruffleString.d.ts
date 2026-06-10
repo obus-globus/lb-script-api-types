@@ -3,6 +3,7 @@ import type { InternalByteArray } from '../../../../../com/oracle/truffle/api/st
 import type { MutableTruffleString } from '../../../../../com/oracle/truffle/api/strings/MutableTruffleString.d.ts'
 import type { TStringInternalNodes$GetCodePointLengthNode } from '../../../../../com/oracle/truffle/api/strings/TStringInternalNodes$GetCodePointLengthNode.d.ts'
 import type { TranscodingErrorHandler } from '../../../../../com/oracle/truffle/api/strings/TranscodingErrorHandler.d.ts'
+import type { TranscodingErrorHandler$ReplacementString } from '../../../../../com/oracle/truffle/api/strings/TranscodingErrorHandler$ReplacementString.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { TruffleString$CodeRange } from '../../../../../com/oracle/truffle/api/strings/TruffleString$CodeRange.d.ts'
 import type { TruffleString$CompactionLevel } from '../../../../../com/oracle/truffle/api/strings/TruffleString$CompactionLevel.d.ts'
@@ -136,7 +137,7 @@ export class AbstractTruffleString extends Object {
     substringByteIndexUncached(fromByteIndex: number, byteLength: number, expectedEncoding: TruffleString$Encoding, lazy: boolean): TruffleString;
     substringUncached(fromIndex: number, substringLength: number, expectedEncoding: TruffleString$Encoding, lazy: boolean): TruffleString;
     switchEncodingUncached(targetEncoding: TruffleString$Encoding): TruffleString;
-    switchEncodingUncached(targetEncoding: TruffleString$Encoding, errorHandler: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => com.oracle.truffle.api.strings.TranscodingErrorHandler.ReplacementString): TruffleString;
+    switchEncodingUncached(targetEncoding: TruffleString$Encoding, errorHandler: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => TranscodingErrorHandler$ReplacementString): TruffleString;
     toJavaStringUncached(): string;
     toString(): string;
     toStringDebug(): string;

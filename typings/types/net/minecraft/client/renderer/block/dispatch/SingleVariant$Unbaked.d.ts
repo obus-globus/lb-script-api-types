@@ -8,10 +8,11 @@ import type { Variant } from '../../../../../../net/minecraft/client/renderer/bl
 import type { WeightedVariants$Unbaked } from '../../../../../../net/minecraft/client/renderer/block/dispatch/WeightedVariants$Unbaked.d.ts'
 import type { ModelBaker } from '../../../../../../net/minecraft/client/resources/model/ModelBaker.d.ts'
 import type { ResolvableModel$Resolver } from '../../../../../../net/minecraft/client/resources/model/ResolvableModel$Resolver.d.ts'
+import type { Weighted } from '../../../../../../net/minecraft/util/random/Weighted.d.ts'
 export class SingleVariant$Unbaked extends Record implements BlockStateModel$Unbaked {
     static CODEC: Codec<BlockStateModel$Unbaked>;
     static CODEC: Codec<SingleVariant$Unbaked>;
-    static ELEMENT_CODEC: Codec<Object>;
+    static ELEMENT_CODEC: Codec<Weighted<Variant>>;
     static HARDCODED_WEIGHTED_CODEC: Codec<WeightedVariants$Unbaked>;
     constructor(variant: Variant)
     // private variant: Variant;

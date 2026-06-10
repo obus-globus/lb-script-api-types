@@ -8,6 +8,7 @@ import type { ObfuscationEnvironment$RemapperProxy } from '../../../../org/spong
 import type { ObfuscationType } from '../../../../org/spongepowered/tools/obfuscation/ObfuscationType.d.ts'
 import type { IMixinAnnotationProcessor } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IMixinAnnotationProcessor.d.ts'
 import type { IObfuscationEnvironment } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IObfuscationEnvironment.d.ts'
+import type { IMappingConsumer } from '../../../../org/spongepowered/tools/obfuscation/mapping/IMappingConsumer.d.ts'
 import type { IMappingProvider } from '../../../../org/spongepowered/tools/obfuscation/mapping/IMappingProvider.d.ts'
 import type { IMappingWriter } from '../../../../org/spongepowered/tools/obfuscation/mapping/IMappingWriter.d.ts'
 export abstract class ObfuscationEnvironment extends Object implements IObfuscationEnvironment {
@@ -34,5 +35,5 @@ export abstract class ObfuscationEnvironment extends Object implements IObfuscat
     remapDescriptor(arg0: string): string;
     remapDescriptor(arg0: ITargetSelectorRemappable): ITargetSelectorRemappable;
     toString(): string;
-    writeMappings(arg0: E[]): void;
+    writeMappings(arg0: IMappingConsumer[]): void;
 }

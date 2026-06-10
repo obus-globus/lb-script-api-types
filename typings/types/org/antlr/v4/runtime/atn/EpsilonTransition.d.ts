@@ -1,4 +1,4 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { Transition } from '../../../../../org/antlr/v4/runtime/atn/Transition.d.ts'
 export class EpsilonTransition extends Transition {
@@ -13,7 +13,7 @@ export class EpsilonTransition extends Transition {
     static SET: number;
     static WILDCARD: number;
     static serializationNames: string[];
-    static serializationTypes: Map<Object | null, number>;
+    static serializationTypes: Map<Class<Transition>, number>;
     constructor(arg0: ATNState)
     constructor(arg0: ATNState, arg1: number)
     // private outermostPrecedenceReturn: number;

@@ -4,12 +4,12 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Char2DoubleOpenHashMap$MapEntry extends Object implements Char2DoubleMap$Entry, CharDoublePair, Map$Entry<string, number> {
-    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(): (param0: Object) => boolean;
+    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByValue(): (param0: Object) => boolean;
+    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    static lexComparator(): (param0: CharDoublePair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: number): CharDoublePair;
     constructor(null_: Char2DoubleOpenHashMap$MapEntry)
     constructor(null_: Char2DoubleOpenHashMap$MapEntry, arg1: number)

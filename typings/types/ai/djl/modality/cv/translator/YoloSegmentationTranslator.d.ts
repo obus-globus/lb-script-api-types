@@ -6,9 +6,9 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloSegmentationTranslator extends YoloV5Translator {
     static builder(): YoloSegmentationTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): YoloSegmentationTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): YoloSegmentationTranslator$Builder;
     static builder(): YoloV5Translator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): YoloV5Translator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): YoloV5Translator$Builder;
     constructor(arg0: YoloSegmentationTranslator$Builder)
     // private nmsThreshold: number;
     // private threshold: number;

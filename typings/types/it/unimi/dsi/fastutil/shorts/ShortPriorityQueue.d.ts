@@ -3,14 +3,13 @@ import type { ShortComparator } from '../../../../../it/unimi/dsi/fastutil/short
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ShortPriorityQueue extends PriorityQueue<number>, Object {
     changed(): void;
-    comparator(): (param0: number, param1: number) => kotlin.Int;
+    comparator(): (param0: number, param1: number) => number;
     dequeue(): number;
     dequeueShort(): number;
     enqueue(arg0: number): void;
     first(): number;
     firstShort(): number;
     isEmpty(): boolean;
-    last<K extends Object | number | string | boolean>(): K;
     last(): number;
     lastShort(): number;
 }

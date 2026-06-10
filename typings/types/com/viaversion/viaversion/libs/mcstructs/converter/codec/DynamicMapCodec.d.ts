@@ -1,11 +1,15 @@
 import type { DataConverter } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/DataConverter.d.ts'
+import type { SerializedData } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/SerializedData.d.ts'
 import type { Codec } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
 import type { DataDeserializer } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/DataDeserializer.d.ts'
 import type { DataSerializer } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/DataSerializer.d.ts'
 import type { ThrowingFunction } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/ThrowingFunction.d.ts'
 import type { MapCodec } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/mapcodec/MapCodec.d.ts'
 import type { FieldMapCodec$Builder$Stage1 } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/mapcodec/impl/FieldMapCodec$Builder$Stage1.d.ts'
+import type { Either } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Either.d.ts'
 import type { Result } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Result.d.ts'
+import type { IdentifiedType } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/types/IdentifiedType.d.ts'
+import type { NamedType } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/types/NamedType.d.ts'
 import type { Identifier } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/core/Identifier.d.ts'
 import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { BiFunction } from '../../../../../../../java/util/function/BiFunction.d.ts'
@@ -23,7 +27,7 @@ export class DynamicMapCodec<K extends Object | number | string | boolean, V ext
     static INT_ARRAY_UUID: Codec<UUID>;
     static LONG: Codec<number>;
     static LONG_ARRAY: Codec<number[]>;
-    static RAW: Codec<Object>;
+    static RAW: Codec<SerializedData<Object>>;
     static SHORT: Codec<number>;
     static STRICT_STRING_UUID: Codec<UUID>;
     static STRING: Codec<string>;
@@ -31,23 +35,23 @@ export class DynamicMapCodec<K extends Object | number | string | boolean, V ext
     static STRING_IDENTIFIER_PATH: Codec<string>;
     static UNIT: Codec<boolean>;
     static UNSIGNED_BYTE: Codec<number>;
-    static compactList(paramarg0: Codec<Object>): Codec<Object>;
-    static compactList(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    static either(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
+    static compactList(paramarg0: Codec<Object>): Codec<(Object | null)[]>;
+    static compactList(paramarg0: Codec<Object>, paramarg1: Codec<(Object | null)[]>): Codec<(Object | null)[]>;
+    static either(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Either<Object, Object>>;
     static failing(paramarg0: string): Codec<Object>;
-    static identified(paramarg0: Object | null): Codec<Object>;
-    static lazyInit(paramarg0: () => Object | null): Codec<Object>;
-    static mapOf(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    static mapOf(paramarg0: Codec<Object>, paramarg1: (param0: Object | null) => Object | null): Codec<Object>;
+    static identified(paramarg0: Object | null): Codec<IdentifiedType>;
+    static lazyInit(paramarg0: () => Codec<Object>): Codec<Object>;
+    static mapOf(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Map<Object | null, Object | null>>;
+    static mapOf(paramarg0: Codec<Object>, paramarg1: (param0: Object | null) => Codec<Object>): Codec<Map<Object | null, Object | null>>;
     static minExclusiveFloat(paramarg0: number): Codec<number>;
     static minFloat(paramarg0: number): Codec<number>;
     static minInt(paramarg0: number): Codec<number>;
-    static named(paramarg0: Object | null): Codec<Object>;
-    static ofThrowing(paramarg0: (param0: Object | null, param1: DataConverter<Object>) => com.viaversion.viaversion.libs.mcstructs.converter.model.Result<unknown>, paramarg1: (param0: Object | null, param1: DataConverter<Object>) => com.viaversion.viaversion.libs.mcstructs.converter.model.Result<unknown>): Codec<Object>;
+    static named(paramarg0: Object | null): Codec<NamedType>;
+    static ofThrowing(paramarg0: (param0: DataConverter<Object>, param1: Object | null) => Result<Object>, paramarg1: (param0: DataConverter<Object>, param1: Object | null) => Result<Object>): Codec<Object>;
     static oneOf(paramarg0: Object | null): Codec<Object>;
     static rangedFloat(paramarg0: number, paramarg1: number): Codec<number>;
     static rangedInt(paramarg0: number, paramarg1: number): Codec<number>;
-    static recursive(paramarg0: (param0: Object | null) => Object | null): Codec<Object>;
+    static recursive(paramarg0: (param0: Codec<Object>) => Codec<Object>): Codec<Object>;
     static sizedString(paramarg0: number, paramarg1: number): Codec<string>;
     static unit(paramarg0: () => Object | null): Codec<Object>;
     static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>, paramarg2: (param0: Object | null) => Object | null): Codec<Object>;
@@ -55,25 +59,25 @@ export class DynamicMapCodec<K extends Object | number | string | boolean, V ext
     constructor(arg0: Codec<K>, arg1: (param0: K) => Codec<V>)
     // private keyCodec: Codec<K>;
     // private keyToValueCodec: (param0: K) => Codec<V>;
-    compactListOf(): Codec<T[]>;
-    converterFlatMap(arg0: (param0: DataConverter<Object>, param1: N) => Result<T>, arg1: (param0: DataConverter<Object>, param1: T) => Result<N>): Codec<N>;
-    converterVerified(arg0: (param0: DataConverter<Object>, param1: T) => Result<void>): Codec<T>;
+    compactListOf(): Codec<Map<K, V>[]>;
+    converterFlatMap<N extends Object | number | string | boolean>(arg0: (param0: DataConverter<Object>, param1: N) => Result<Map<K, V>>, arg1: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<N>): Codec<N>;
+    converterVerified(arg0: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<void>): Codec<Map<K, V>>;
     deserialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: S): Result<Map<K, V>>;
-    flatMap(arg0: (param0: N) => Result<T>, arg1: (param0: T) => Result<N>): Codec<N>;
-    listOf(): Codec<T[]>;
-    listOf(arg0: number): Codec<T[]>;
-    listOf(arg0: number, arg1: number): Codec<T[]>;
-    map(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
-    mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<T>;
-    mapThrowing(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
-    nonEmptyList(): Codec<T[]>;
-    optionalListOf(): Codec<T[]>;
-    optionalListOf(arg0: number): Codec<T[]>;
-    optionalListOf(arg0: number, arg1: number): Codec<T[]>;
-    serialize(arg0: DataConverter<S>, arg1: Map<K, V>): Result<S>;
-    typed(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): Codec<N>;
-    typed(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): Codec<N>;
-    typedMap(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): MapCodec<N>;
-    typedMap(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): MapCodec<N>;
-    verified(arg0: (param0: T) => Result<void>): Codec<T>;
+    flatMap<N extends Object | number | string | boolean>(arg0: (param0: N) => Result<Map<K, V>>, arg1: (param0: Map<K, V>) => Result<N>): Codec<N>;
+    listOf(): Codec<Map<K, V>[]>;
+    listOf(arg0: number): Codec<Map<K, V>[]>;
+    listOf(arg0: number, arg1: number): Codec<Map<K, V>[]>;
+    map<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
+    mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<Map<K, V>>;
+    mapThrowing<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
+    nonEmptyList(): Codec<Map<K, V>[]>;
+    optionalListOf(): Codec<Map<K, V>[]>;
+    optionalListOf(arg0: number): Codec<Map<K, V>[]>;
+    optionalListOf(arg0: number, arg1: number): Codec<Map<K, V>[]>;
+    serialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: Map<K, V>): Result<S>;
+    typed<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
+    typed<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
+    typedMap<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
+    typedMap<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
+    verified(arg0: (param0: Map<K, V>) => Result<void>): Codec<Map<K, V>>;
 }

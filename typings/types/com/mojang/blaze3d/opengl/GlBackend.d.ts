@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class GlBackend extends Object implements GpuBackend {
     constructor()
-    createDevice(window: number, defaultShaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String, debugOptions: GpuDebugOptions): GpuDevice;
+    createDevice(window: number, defaultShaderSource: (param0: Identifier, param1: ShaderType) => string, debugOptions: GpuDebugOptions): GpuDevice;
     getName(): string;
     handleWindowCreationErrors(error: GLFWErrorCapture$Error): void;
     setWindowHints(): void;

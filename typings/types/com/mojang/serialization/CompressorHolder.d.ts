@@ -5,5 +5,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class CompressorHolder extends Object implements Compressable {
     constructor()
     // private compressors: Map<DynamicOps<Object>, KeyCompressor<Object>>;
-    compressor(arg0: DynamicOps<T>): KeyCompressor<T>;
+    compressor<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): KeyCompressor<T>;
 }

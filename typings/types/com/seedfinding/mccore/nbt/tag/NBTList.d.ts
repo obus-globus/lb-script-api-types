@@ -19,9 +19,9 @@ export class NBTList extends NBTTag<NBTTag<Object>[]> {
     getElement<T extends Object | number | string | boolean>(arg0: number, arg1: Class<T>): T;
     getElementType(): number;
     getElements(): Object[];
-    getElements(arg0: Class<T>): T[];
+    getElements<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
     getValue(): NBTTag<Object>[];
-    getValue(arg0: Class<T>): T[];
+    getValue<T extends NBTTag<Object>>(arg0: Class<T>): T[];
     isEmpty(): boolean;
     readPayload(arg0: ByteBuffer): void;
     run(arg0: (param0: NBTList) => void): NBTList;

@@ -28,7 +28,7 @@ export class ThreadedLevelLightEngine extends LevelLightEngine implements AutoCl
     // private scheduled: AtomicBoolean;
     // private taskDispatcher: ChunkTaskDispatcher;
     // private taskPerBatch: number;
-    // private addTask(chunkX: number, chunkZ: number, level: () => kotlin.Int, type: ThreadedLevelLightEngine$TaskType, runnable: () => void): void;
+    // private addTask(chunkX: number, chunkZ: number, level: () => number, type: ThreadedLevelLightEngine$TaskType, runnable: () => void): void;
     // private addTask(chunkX: number, chunkZ: number, type: ThreadedLevelLightEngine$TaskType, runnable: () => void): void;
     checkBlock(pos: BlockPos): void;
     close(): void;

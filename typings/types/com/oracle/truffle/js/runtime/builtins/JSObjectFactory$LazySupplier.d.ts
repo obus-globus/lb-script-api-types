@@ -12,8 +12,8 @@ export class JSObjectFactory$LazySupplier extends JSObjectFactory$Lazy {
     static createUnbound(paramcontext: JSContext, paramfactory: Shape): JSObjectFactory$UnboundProto;
     static hasInObjectProto(paramshape: Shape): boolean;
     static verifyPrototype(paramshape: Shape, paramprototype: JSDynamicObject): boolean;
-    constructor(context: JSContext, prototypeSupplier: (param0: JSRealm) => com.oracle.truffle.js.runtime.objects.JSDynamicObject, shapeSupplier: (param0: JSContext, param1: JSDynamicObject) => Shape, slot: number)
-    // private prototypeSupplier: (param0: JSRealm) => com.oracle.truffle.js.runtime.objects.JSDynamicObject;
+    constructor(context: JSContext, prototypeSupplier: (param0: JSRealm) => JSDynamicObject, shapeSupplier: (param0: JSContext, param1: JSDynamicObject) => Shape, slot: number)
+    // private prototypeSupplier: (param0: JSRealm) => JSDynamicObject;
     // private shapeSupplier: (param0: JSContext, param1: JSDynamicObject) => Shape;
     getPrototype(realm: JSRealm): JSDynamicObject;
     makeInitialShape(prototype: JSDynamicObject): Shape;

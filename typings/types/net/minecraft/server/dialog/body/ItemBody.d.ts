@@ -7,7 +7,7 @@ import type { DialogBody } from '../../../../../net/minecraft/server/dialog/body
 import type { PlainMessage } from '../../../../../net/minecraft/server/dialog/body/PlainMessage.d.ts'
 import type { ItemStackTemplate } from '../../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
 export class ItemBody extends Record implements DialogBody {
-    static COMPACT_LIST_CODEC: Codec<Object>;
+    static COMPACT_LIST_CODEC: Codec<DialogBody[]>;
     static DIALOG_BODY_CODEC: Codec<DialogBody>;
     static MAP_CODEC: MapCodec<ItemBody>;
     // private description: Optional<PlainMessage>;

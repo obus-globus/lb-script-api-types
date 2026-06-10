@@ -4,5 +4,5 @@ export class FilteredEntryMultimap$ValuePredicate extends Object implements Pred
     constructor(null_: FilteredEntryMultimap$ValuePredicate)
     // private key: K;
     apply<V extends Object | number | string | boolean>(value: V): boolean;
-    test<T extends Object | number | string | boolean>(input: T): boolean;
+    test<V extends Object | number | string | boolean>(input: V): boolean;
 }

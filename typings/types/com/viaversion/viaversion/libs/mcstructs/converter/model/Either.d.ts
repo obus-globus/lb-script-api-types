@@ -5,7 +5,7 @@ export interface Either<L extends Object | number | string | boolean, R extends 
     getRight(): R;
     isLeft(): boolean;
     isRight(): boolean;
-    map(arg0: (param0: L) => ML, arg1: (param0: R) => MR): Either<ML, MR>;
+    map<ML extends Object | number | string | boolean, MR extends Object | number | string | boolean>(arg0: (param0: L) => ML, arg1: (param0: R) => MR): Either<ML, MR>;
     swap(): Either<R, L>;
     xmap<T extends Object | number | string | boolean>(arg0: (param0: L) => T, arg1: (param0: R) => T): T;
 }

@@ -35,8 +35,8 @@ export class CopyOnWriteFSProvider extends FileSystemProvider {
     isSameFile(path: Path[], path2: Path[]): boolean;
     move(source: Path[], target: Path[], options: CopyOption[]): void;
     newByteChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
-    // private newChannel<C extends Object | number | string | boolean>(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[], channelFactory: (param0: C, param1: Path[][], param2: (Object | null)[]) => unknown): C;
-    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => kotlin.Boolean): T[];
+    // private newChannel<C extends Object | number | string | boolean>(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[], channelFactory: (param0: Path[][], param1: OpenOption[], param2: Object | null) => C): C;
+    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     newFileChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): FileChannel;
     newFileSystem(uri: URI, env: { [key: string]: Object | null }): FileSystem;
     newFileSystem(arg0: Path[], arg1: { [key: string]: Object | null }): FileSystem;

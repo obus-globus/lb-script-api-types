@@ -31,7 +31,7 @@ export class ResourceOrIdArgument<T extends Object | number | string | boolean> 
     static ERROR_FAILED_TO_PARSE: DynamicCommandExceptionType;
     static ERROR_NO_SUCH_ELEMENT: Dynamic2CommandExceptionType;
     static OPS: DynamicOps<Tag>;
-    static createGrammar(paramregistryKey: ResourceKey<Object>, paramops: DynamicOps<Object>): Grammar<Object>;
+    static createGrammar(paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<Object>): Grammar<ResourceOrIdArgument$Result<Object, Object>>;
     static dialog(paramcontext: CommandBuildContext): ResourceOrIdArgument$DialogArgument;
     static getDialog(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder<Dialog>;
     static getLootModifier(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder<LootItemFunction>;
@@ -46,11 +46,10 @@ export class ResourceOrIdArgument<T extends Object | number | string | boolean> 
     // private grammar: Grammar<ResourceOrIdArgument$Result<T, Tag>>;
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup$Provider;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): Holder<T>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder<T>;
-    // private parse(reader: StringReader, grammar: Grammar<ResourceOrIdArgument$Result<T, O>>, ops: DynamicOps<O>): Holder<T>;
+    parse(reader: StringReader): Holder<T>;
+    // private parse<O extends Object | number | string | boolean>(reader: StringReader, grammar: Grammar<ResourceOrIdArgument$Result<T, O>>, ops: DynamicOps<O>): Holder<T>;
 }

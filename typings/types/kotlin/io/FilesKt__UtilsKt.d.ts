@@ -8,20 +8,21 @@ import type { FilePathComponents } from '../../kotlin/io/FilePathComponents.d.ts
 import type { FileTreeWalk } from '../../kotlin/io/FileTreeWalk.d.ts'
 import type { FileWalkDirection } from '../../kotlin/io/FileWalkDirection.d.ts'
 import type { FilesKt__FileTreeWalkKt } from '../../kotlin/io/FilesKt__FileTreeWalkKt.d.ts'
+import type { OnErrorAction } from '../../kotlin/io/OnErrorAction.d.ts'
 export class FilesKt__UtilsKt extends FilesKt__FileTreeWalkKt {
     static appendBytes(paramarg0: File, paramarg1: number[]): void;
     static appendText(paramarg0: File, paramarg1: string, paramarg2: Charset): void;
     static byteBufferForEncoding(paramarg0: number, paramarg1: CharsetEncoder): ByteBuffer;
-    static copyRecursively(paramarg0: File, paramarg1: File, paramarg2: boolean, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): boolean;
+    static copyRecursively(paramarg0: File, paramarg1: File, paramarg2: boolean, paramarg3: (param0: Object, param1: Object) => OnErrorAction): boolean;
     static copyTo(paramarg0: File, paramarg1: File, paramarg2: boolean, paramarg3: number): File;
     static createTempDir(paramarg0: string, paramarg1: string, paramarg2: File): File;
     static createTempFile(paramarg0: string, paramarg1: string, paramarg2: File): File;
     static deleteRecursively(paramarg0: File): boolean;
     static endsWith(paramarg0: File, paramarg1: File): boolean;
     static endsWith(paramarg0: File, paramarg1: string): boolean;
-    static forEachBlock(paramarg0: File, paramarg1: number, paramarg2: (param0: Object | null, param1: Object | null) => void): void;
-    static forEachBlock(paramarg0: File, paramarg1: (param0: Object | null, param1: Object | null) => void): void;
-    static forEachLine(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object | null) => void): void;
+    static forEachBlock(paramarg0: File, paramarg1: number, paramarg2: (param0: Object, param1: Object) => void): void;
+    static forEachBlock(paramarg0: File, paramarg1: (param0: Object, param1: Object) => void): void;
+    static forEachLine(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object) => void): void;
     static getExtension(paramarg0: File): string;
     static getInvariantSeparatorsPath(paramarg0: File): string;
     static getNameWithoutExtension(paramarg0: File): string;
@@ -45,7 +46,7 @@ export class FilesKt__UtilsKt extends FilesKt__FileTreeWalkKt {
     static subPath(paramarg0: File, paramarg1: number, paramarg2: number): File;
     static toComponents(paramarg0: File): FilePathComponents;
     static toRelativeString(paramarg0: File, paramarg1: File): string;
-    static useLines(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object | null) => Object | null): Object | null;
+    static useLines(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object) => Object | null): Object | null;
     static walk(paramarg0: File, paramarg1: FileWalkDirection): FileTreeWalk;
     static walkBottomUp(paramarg0: File): FileTreeWalk;
     static walkTopDown(paramarg0: File): FileTreeWalk;

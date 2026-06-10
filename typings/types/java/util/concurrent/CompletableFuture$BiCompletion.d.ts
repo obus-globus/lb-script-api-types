@@ -18,7 +18,7 @@ export abstract class CompletableFuture$BiCompletion<T extends Object | number |
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: E[]): E[];
+    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
     constructor(arg0: Executor, arg1: CompletableFuture<V>, arg2: CompletableFuture<T>, arg3: CompletableFuture<U>)

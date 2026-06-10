@@ -1,3 +1,4 @@
+import type { Either } from '../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Unit } from '../../../com/mojang/datafixers/util/Unit.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
@@ -25,6 +26,7 @@ import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.
 import type { IntStream } from '../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Number } from '../../../java/lang/Number.d.ts'
 import type { StringRepresentable } from '../../../net/minecraft/util/StringRepresentable.d.ts'
 export class StringRepresentable$StringRepresentableCodec<S extends StringRepresentable> extends Object implements Codec<S> {
     static BOOL: PrimitiveCodec<boolean>;
@@ -37,28 +39,28 @@ export class StringRepresentable$StringRepresentableCodec<S extends StringRepres
     static INT_STREAM: PrimitiveCodec<IntStream>;
     static LONG: PrimitiveCodec<number>;
     static LONG_STREAM: PrimitiveCodec<LongStream>;
-    static PASSTHROUGH: Codec<Object>;
+    static PASSTHROUGH: Codec<Dynamic<Object>>;
     static SHORT: PrimitiveCodec<number>;
     static STRING: PrimitiveCodec<string>;
-    static checkRange(paramarg0: Object | null, paramarg1: Object | null): (param0: Object | null) => Object | null;
-    static compoundList(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    static dispatchedMap(paramarg0: Codec<Object>, paramarg1: (param0: Object | null) => Object | null): Codec<Object>;
+    static checkRange(paramarg0: Number | null, paramarg1: Number | null): (param0: Number | null) => DataResult<Number>;
+    static compoundList(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Pair<Object, Object>[]>;
+    static dispatchedMap(paramarg0: Codec<Object>, paramarg1: (param0: Object | null) => Codec<Object>): Codec<Map<Object | null, Object | null>>;
     static doubleRange(paramarg0: number, paramarg1: number): Codec<number>;
-    static either(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
+    static either(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Either<Object, Object>>;
     static floatRange(paramarg0: number, paramarg1: number): Codec<number>;
     static intRange(paramarg0: number, paramarg1: number): Codec<number>;
-    static lazyInitialized(paramarg0: () => Object | null): Codec<Object>;
-    static list(paramarg0: Codec<Object>): Codec<Object>;
-    static list(paramarg0: Codec<Object>, paramarg1: number, paramarg2: number): Codec<Object>;
-    static mapEither(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Object>;
-    static mapPair(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Object>;
+    static lazyInitialized(paramarg0: () => Codec<Object>): Codec<Object>;
+    static list(paramarg0: Codec<Object>): Codec<(Object | null)[]>;
+    static list(paramarg0: Codec<Object>, paramarg1: number, paramarg2: number): Codec<(Object | null)[]>;
+    static mapEither(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Either<Object, Object>>;
+    static mapPair(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Pair<Object, Object>>;
     static of(paramarg0: Encoder<Object>, paramarg1: Decoder<Object>): Codec<Object>;
     static of(paramarg0: Encoder<Object>, paramarg1: Decoder<Object>, paramarg2: string): Codec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
-    static optionalField(paramarg0: string, paramarg1: Codec<Object>, paramarg2: boolean): MapCodec<Object>;
-    static pair(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    static recursive(paramarg0: string, paramarg1: (param0: Object | null) => Object | null): Codec<Object>;
+    static optionalField(paramarg0: string, paramarg1: Codec<Object>, paramarg2: boolean): MapCodec<Optional<Object>>;
+    static pair(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Pair<Object, Object>>;
+    static recursive(paramarg0: string, paramarg1: (param0: Codec<Object>) => Codec<Object>): Codec<Object>;
     static simpleMap(paramarg0: Codec<Object>, paramarg1: Codec<Object>, paramarg2: Keyable): SimpleMapCodec<Object, Object>;
     static sizeLimitedString(paramarg0: number): Codec<string>;
     static string(paramarg0: number, paramarg1: number): Codec<string>;
@@ -66,48 +68,48 @@ export class StringRepresentable$StringRepresentableCodec<S extends StringRepres
     static unboundedMap(paramarg0: Codec<Object>, paramarg1: Codec<Object>): UnboundedMapCodec<Object, Object>;
     static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>, paramarg2: (param0: Object | null) => Object | null): Codec<Object>;
     static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    static xor(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    constructor(valueArray: S[], nameResolver: (param0: string) => S, idResolver: (param0: S) => kotlin.Int)
+    static xor(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Either<Object, Object>>;
+    constructor(valueArray: S[], nameResolver: (param0: string) => S, idResolver: (param0: S) => number)
     // private codec: Codec<S>;
-    comapFlatMap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => A): Codec<S>;
-    decode(arg0: Dynamic<T>): DataResult<Pair<S, T>>;
+    comapFlatMap(arg0: (param0: S) => DataResult<S>, arg1: (param0: S) => S): Codec<S>;
+    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<S, T>>;
     decode<T extends Object | number | string | boolean>(ops: DynamicOps<T>, input: T): DataResult<Pair<S, T>>;
-    deprecated(arg0: number): Codec<A>;
-    dispatch(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
-    dispatch(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): Codec<E>;
-    dispatchMap(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): MapCodec<E>;
-    dispatchMap(arg0: string, arg1: (param0: E) => A, arg2: (param0: A) => MapCodec<E>): MapCodec<E>;
-    dispatchStable(arg0: (param0: E) => A, arg1: (param0: A) => MapCodec<E>): Codec<E>;
+    deprecated(arg0: number): Codec<S>;
+    dispatch<E extends Object | number | string | boolean>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): Codec<E>;
+    dispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => S, arg2: (param0: S) => MapCodec<E>): Codec<E>;
+    dispatchMap<E extends Object | number | string | boolean>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): MapCodec<E>;
+    dispatchMap<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => S, arg2: (param0: S) => MapCodec<E>): MapCodec<E>;
+    dispatchStable<E extends Object | number | string | boolean>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): Codec<E>;
     encode<T extends Object | number | string | boolean>(input: S, ops: DynamicOps<T>, prefix: T): DataResult<T>;
-    fieldOf(arg0: string): MapCodec<A>;
-    flatComapMap(arg0: (param0: A) => S, arg1: (param0: S) => DataResult<A>): Codec<S>;
-    flatXmap(arg0: (param0: A) => DataResult<S>, arg1: (param0: S) => DataResult<A>): Codec<S>;
-    lenientOptionalFieldOf(arg0: string): MapCodec<Optional<A>>;
-    lenientOptionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: A): MapCodec<A>;
-    lenientOptionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: A, arg2: Lifecycle): MapCodec<A>;
-    lenientOptionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: Lifecycle, arg2: A, arg3: Lifecycle): MapCodec<A>;
-    listOf(): Codec<A[]>;
-    listOf(arg0: number, arg1: number): Codec<A[]>;
-    mapResult(arg0: Codec$ResultFunction<A>): Codec<A>;
-    optionalFieldOf(arg0: string): MapCodec<Optional<A>>;
-    optionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: A): MapCodec<A>;
-    optionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: A, arg2: Lifecycle): MapCodec<A>;
-    // private optionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: A, arg2: boolean): MapCodec<A>;
-    optionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: Lifecycle, arg2: A, arg3: Lifecycle): MapCodec<A>;
-    // private optionalFieldOf<A extends Object | number | string | boolean>(arg0: string, arg1: Lifecycle, arg2: A, arg3: Lifecycle, arg4: boolean): MapCodec<A>;
-    orElse<A extends Object | number | string | boolean>(arg0: A): Codec<A>;
-    orElse<A extends Object | number | string | boolean>(arg0: (param0: string) => void, arg1: A): Codec<A>;
-    orElse<A extends Object | number | string | boolean>(arg0: (param0: string) => unknown, arg1: A): Codec<A>;
-    orElseGet(arg0: (param0: string) => void, arg1: () => A): Codec<A>;
-    orElseGet(arg0: () => A): Codec<A>;
-    orElseGet(arg0: (param0: string) => unknown, arg1: () => A): Codec<A>;
-    partialDispatch(arg0: string, arg1: (param0: E) => DataResult<A>, arg2: (param0: A) => DataResult<MapCodec<E>>): Codec<E>;
-    promotePartial(arg0: (param0: string) => void): Codec<A>;
-    sizeLimitedListOf(arg0: number): Codec<A[]>;
-    stable(): Codec<A>;
-    validate(arg0: (param0: A) => DataResult<A>): Codec<A>;
-    withAlternative(arg0: Codec<U>, arg1: (param0: U) => A): Codec<A>;
-    withAlternative(arg0: Codec<A>): Codec<A>;
-    withLifecycle(arg0: Lifecycle): Codec<A>;
-    xmap(arg0: (param0: A) => S, arg1: (param0: S) => A): Codec<S>;
+    fieldOf(arg0: string): MapCodec<S>;
+    flatComapMap(arg0: (param0: S) => S, arg1: (param0: S) => DataResult<S>): Codec<S>;
+    flatXmap(arg0: (param0: S) => DataResult<S>, arg1: (param0: S) => DataResult<S>): Codec<S>;
+    lenientOptionalFieldOf(arg0: string): MapCodec<Optional<S>>;
+    lenientOptionalFieldOf(arg0: string, arg1: S): MapCodec<S>;
+    lenientOptionalFieldOf(arg0: string, arg1: S, arg2: Lifecycle): MapCodec<S>;
+    lenientOptionalFieldOf(arg0: string, arg1: Lifecycle, arg2: S, arg3: Lifecycle): MapCodec<S>;
+    listOf(): Codec<S[]>;
+    listOf(arg0: number, arg1: number): Codec<S[]>;
+    mapResult(arg0: Codec$ResultFunction<S>): Codec<S>;
+    optionalFieldOf(arg0: string): MapCodec<Optional<S>>;
+    optionalFieldOf(arg0: string, arg1: S): MapCodec<S>;
+    optionalFieldOf(arg0: string, arg1: S, arg2: Lifecycle): MapCodec<S>;
+    // private optionalFieldOf(arg0: string, arg1: S, arg2: boolean): MapCodec<S>;
+    optionalFieldOf(arg0: string, arg1: Lifecycle, arg2: S, arg3: Lifecycle): MapCodec<S>;
+    // private optionalFieldOf(arg0: string, arg1: Lifecycle, arg2: S, arg3: Lifecycle, arg4: boolean): MapCodec<S>;
+    orElse(arg0: S): Codec<S>;
+    orElse(arg0: (param0: string) => void, arg1: S): Codec<S>;
+    orElse(arg0: (param0: string) => Object | null, arg1: S): Codec<S>;
+    orElseGet(arg0: (param0: string) => void, arg1: () => S): Codec<S>;
+    orElseGet(arg0: () => S): Codec<S>;
+    orElseGet(arg0: (param0: string) => Object | null, arg1: () => S): Codec<S>;
+    partialDispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => DataResult<S>, arg2: (param0: S) => DataResult<MapCodec<E>>): Codec<E>;
+    promotePartial(arg0: (param0: string) => void): Codec<S>;
+    sizeLimitedListOf(arg0: number): Codec<S[]>;
+    stable(): Codec<S>;
+    validate(arg0: (param0: S) => DataResult<S>): Codec<S>;
+    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => S): Codec<S>;
+    withAlternative(arg0: Codec<S>): Codec<S>;
+    withLifecycle(arg0: Lifecycle): Codec<S>;
+    xmap(arg0: (param0: S) => S, arg1: (param0: S) => S): Codec<S>;
 }

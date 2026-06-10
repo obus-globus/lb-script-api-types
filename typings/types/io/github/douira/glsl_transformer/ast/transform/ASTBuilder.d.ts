@@ -154,14 +154,13 @@ import type { StructMember } from '../../../../../../io/github/douira/glsl_trans
 import type { Root } from '../../../../../../io/github/douira/glsl_transformer/ast/query/Root.d.ts'
 import type { SourceLocation } from '../../../../../../io/github/douira/glsl_transformer/ast/transform/SourceLocation.d.ts'
 import type { BiFunction } from '../../../../../../java/util/function/BiFunction.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BufferedTokenStream } from '../../../../../../org/antlr/v4/runtime/BufferedTokenStream.d.ts'
 import type { ParseTree } from '../../../../../../org/antlr/v4/runtime/tree/ParseTree.d.ts'
 import type { TerminalNode } from '../../../../../../org/antlr/v4/runtime/tree/TerminalNode.d.ts'
 export class ASTBuilder extends GLSLParserBaseVisitor<ASTNode> {
-    static build(paramarg0: Root, paramarg1: Object | null, paramarg2: (param0: ASTBuilder, param1: Object | null) => Object | null): Object | null;
+    static build(paramarg0: Root, paramarg1: ParseTree | null, paramarg2: (param0: ASTBuilder, param1: ParseTree | null) => ASTNode | null): ASTNode | null;
     static build(paramarg0: Root, paramarg1: ParseTree): ASTNode;
-    static buildSubtree(paramarg0: Root, paramarg1: Object | null, paramarg2: (param0: ASTBuilder, param1: Object | null) => Object | null): Object | null;
+    static buildSubtree(paramarg0: Root, paramarg1: ParseTree | null, paramarg2: (param0: ASTBuilder, param1: ParseTree | null) => ASTNode | null): ASTNode | null;
     static buildSubtree(paramarg0: Root, paramarg1: ParseTree): ASTNode;
     static setTokenStream(paramarg0: BufferedTokenStream): void;
     static unsetTokenStream(): void;

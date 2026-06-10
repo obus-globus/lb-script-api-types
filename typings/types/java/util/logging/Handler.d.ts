@@ -11,7 +11,7 @@ export abstract class Handler extends Object {
     constructor(arg0: Level, arg1: Formatter, arg2: Formatter)
     readonly encoding: string;
     readonly errorManager: ErrorManager;
-    readonly filter: (param0: LogRecord) => kotlin.Boolean;
+    readonly filter: (param0: LogRecord) => boolean;
     readonly formatter: Formatter;
     // private logLevel: Level;
     // private manager: LogManager;
@@ -19,7 +19,7 @@ export abstract class Handler extends Object {
     flush(): void;
     getEncoding(): string;
     getErrorManager(): ErrorManager;
-    getFilter(): (param0: LogRecord) => kotlin.Boolean;
+    getFilter(): (param0: LogRecord) => boolean;
     getFormatter(): Formatter;
     getLevel(): Level;
     isLoggable(arg0: LogRecord): boolean;
@@ -27,7 +27,7 @@ export abstract class Handler extends Object {
     reportError(arg0: string, arg1: Exception, arg2: number): void;
     setEncoding(arg0: string): void;
     setErrorManager(arg0: ErrorManager): void;
-    setFilter(arg0: (param0: LogRecord) => kotlin.Boolean): void;
+    setFilter(arg0: (param0: LogRecord) => boolean): void;
     setFormatter(arg0: Formatter): void;
     setLevel(arg0: Level): void;
 }

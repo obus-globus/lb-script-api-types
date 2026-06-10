@@ -14,7 +14,7 @@ import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/i
 import type { TypeSubstitution } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
 export interface ClassDescriptor extends Object, ClassOrPackageFragmentDescriptor, ClassifierDescriptorWithTypeParameters{
     getCompanionObjectDescriptor(): ClassDescriptor;
-    getConstructors(): E[];
+    getConstructors(): ClassConstructorDescriptor[];
     getContainingDeclaration(): DeclarationDescriptor;
     getContextReceivers(): ReceiverParameterDescriptor[];
     getDeclaredTypeParameters(): TypeParameterDescriptor[];

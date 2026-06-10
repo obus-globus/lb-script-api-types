@@ -6,15 +6,15 @@ import type { PKCS9Attribute$Encoder } from '../../../sun/security/pkcs/PKCS9Att
 import type { DerOutputStream } from '../../../sun/security/util/DerOutputStream.d.ts'
 import type { DerValue } from '../../../sun/security/util/DerValue.d.ts'
 export class PKCS9Attribute$AttributeInfo<T extends Object | number | string | boolean> extends Record {
-    // private decoder: (param0: T) => unknown;
-    // private encoder: (param0: T, param1: DerOutputStream) => void;
+    // private decoder: (param0: DerValue) => T;
+    // private encoder: (param0: DerOutputStream, param1: T) => void;
     // private singleValued: boolean;
     // private valueClass: Class<Object>;
     // private valueTags: number[];
     decode(arg0: DerValue): T;
-    decoder(): (param0: T) => unknown;
+    decoder(): (param0: DerValue) => T;
     encode(arg0: Object): DerOutputStream;
-    encoder(): (param0: T, param1: DerOutputStream) => void;
+    encoder(): (param0: DerOutputStream, param1: T) => void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     singleValued(): boolean;

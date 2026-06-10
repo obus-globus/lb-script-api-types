@@ -34,10 +34,10 @@ export class Duration extends Object implements Comparable<Duration> {
 // (invalid TS: name contains '-')     static plus-LRDsOJo(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static times-UwyO8pc(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static times-UwyO8pc(paramarg0: number, paramarg1: number): number;
-// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): Object | null;
-// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object | null, param1: Object | null, param2: Object | null) => Object | null): Object | null;
-// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object | null, param1: Object | null, param2: Object | null, param3: Object | null) => Object | null): Object | null;
-// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object | null, param1: Object | null, param2: Object | null, param3: Object | null, param4: Object | null) => Object | null): Object | null;
+// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object, param1: Object) => Object | null): Object | null;
+// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object, param1: Object, param2: Object) => Object | null): Object | null;
+// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object, param1: Object, param2: Object, param3: Object) => Object | null): Object | null;
+// (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object | null): Object | null;
 // (invalid TS: name contains '-')     static toDouble-impl(paramarg0: number, paramarg1: DurationUnit): number;
 // (invalid TS: name contains '-')     static toInt-impl(paramarg0: number, paramarg1: DurationUnit): number;
 // (invalid TS: name contains '-')     static toIsoString-impl(paramarg0: number): string;

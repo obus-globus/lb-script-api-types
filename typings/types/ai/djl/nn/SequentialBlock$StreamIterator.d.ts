@@ -8,7 +8,7 @@ export class SequentialBlock$StreamIterator extends Object implements Iterator<(
     // private current: (Object | null)[];
     // private parameterStore: ParameterStore;
     // private training: boolean;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: (Object | null)[]) => void): void;
     hasNext(): boolean;
     next(): (Object | null)[];
 }

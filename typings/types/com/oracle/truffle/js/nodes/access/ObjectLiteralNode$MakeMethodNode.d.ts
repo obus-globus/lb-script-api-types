@@ -13,8 +13,8 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode$MakeMethodNode extends JavaScriptNode implements FunctionNameHolder$Delegate {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramfunctionNode: JavaScriptNode): JavaScriptNode;
     static createWithKey(paramcontext: JSContext, paramfunctionNode: JavaScriptNode, paramkey: HiddenKey): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;

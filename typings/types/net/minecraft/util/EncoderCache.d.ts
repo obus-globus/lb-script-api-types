@@ -6,5 +6,5 @@ import type { EncoderCache$Key } from '../../../net/minecraft/util/EncoderCache$
 export class EncoderCache extends Object {
     constructor(maximumSize: number)
     // private cache: LoadingCache<EncoderCache$Key<Object, Object>, DataResult<Object>>;
-    wrap(codec: Codec<A>): Codec<A>;
+    wrap<A extends Object | number | string | boolean>(codec: Codec<A>): Codec<A>;
 }

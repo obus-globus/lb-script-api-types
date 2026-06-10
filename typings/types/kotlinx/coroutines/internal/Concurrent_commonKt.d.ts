@@ -2,6 +2,6 @@ import type { AtomicReference } from '../../../java/util/concurrent/atomic/Atomi
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Concurrent_commonKt extends Object {
     static getValue(paramarg0: AtomicReference<Object>): Object | null;
-    static loop(paramarg0: AtomicReference<Object>, paramarg1: (param0: Object | null, param1: Object | null) => void): void;
+    static loop(paramarg0: AtomicReference<Object>, paramarg1: (param0: Object, param1: Object) => void): void;
     static setValue(paramarg0: AtomicReference<Object>, paramarg1: Object | null): void;
 }

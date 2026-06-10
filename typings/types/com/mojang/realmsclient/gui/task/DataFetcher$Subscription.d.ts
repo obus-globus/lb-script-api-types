@@ -7,6 +7,6 @@ export class DataFetcher$Subscription extends Object {
     // private subscriptions: DataFetcher$SubscribedTask<Object>[];
     forceUpdate(): void;
     reset(): void;
-    subscribe(task: DataFetcher$Task<T>, output: (param0: T) => void): void;
+    subscribe<T extends Object | number | string | boolean>(task: DataFetcher$Task<T>, output: (param0: T) => void): void;
     tick(): void;
 }

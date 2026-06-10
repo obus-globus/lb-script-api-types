@@ -17,7 +17,7 @@ export class WeakSetPrototypeBuiltins$WeakSetPrototype extends Enum<WeakSetProto
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): WeakSetPrototypeBuiltins$WeakSetPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

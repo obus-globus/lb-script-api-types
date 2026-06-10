@@ -10,7 +10,7 @@ import type { TypedEntityData } from '../../../../../../net/minecraft/world/item
 import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.ts'
 export class BeehiveBlockEntity$Occupant extends Record {
     static CODEC: Codec<BeehiveBlockEntity$Occupant>;
-    static LIST_CODEC: Codec<Object>;
+    static LIST_CODEC: Codec<BeehiveBlockEntity$Occupant[]>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BeehiveBlockEntity$Occupant>;
     static create(paramticksInHive: number): BeehiveBlockEntity$Occupant;
     static of(paramentity: Entity): BeehiveBlockEntity$Occupant;

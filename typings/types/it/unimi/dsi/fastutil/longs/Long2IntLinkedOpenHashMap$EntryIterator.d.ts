@@ -3,15 +3,14 @@ import type { Long2IntLinkedOpenHashMap$MapIterator } from '../../../../../it/un
 import type { Long2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2IntMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2IntLinkedOpenHashMap$EntryIterator extends Long2IntLinkedOpenHashMap$MapIterator<(param0: Long2IntMap$Entry) => void> implements ObjectListIterator<Long2IntMap$Entry> {
     constructor(null_: Long2IntLinkedOpenHashMap$EntryIterator)
     constructor(null_: Long2IntLinkedOpenHashMap$EntryIterator, arg1: number)
     // private entry: Long2IntLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Long2IntMap$Entry) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add(arg0: Long2IntMap$Entry): void;
     next(): Long2IntLinkedOpenHashMap$MapEntry;
     previous(): Long2IntLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set(arg0: Long2IntMap$Entry): void;
 }

@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2BooleanMaps extends Object {
     static EMPTY_MAP: Char2BooleanMaps$EmptyMap;
-    static fastForEach(paramarg0: Char2BooleanMap, paramarg1: (param0: Object | null) => void): void;
-    static fastIterable(paramarg0: Char2BooleanMap): K[];
+    static fastForEach(paramarg0: Char2BooleanMap, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: Char2BooleanMap): Char2BooleanMap$Entry[];
     static fastIterator(paramarg0: Char2BooleanMap): ObjectIterator<Char2BooleanMap$Entry>;
     static singleton(paramarg0: string, paramarg1: boolean): Char2BooleanMap;
     static singleton(paramarg0: string, paramarg1: boolean): Char2BooleanMap;

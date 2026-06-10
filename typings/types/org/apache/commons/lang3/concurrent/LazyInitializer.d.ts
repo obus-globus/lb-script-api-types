@@ -7,9 +7,9 @@ import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/f
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class LazyInitializer<T extends Object | number | string | boolean> extends AbstractConcurrentInitializer<T, ConcurrentException> {
     static NUL: () => Object | null;
-    static builder(): LazyInitializer$Builder<Object, Object>;
+    static builder(): LazyInitializer$Builder<LazyInitializer<Object>, Object>;
     constructor()
-    private constructor(arg0: () => ConcurrentException, arg1: (param0: T) => void)
+    private constructor(arg0: () => T, arg1: (param0: T) => void)
     // private object: T;
     get(): T;
     getTypedException(arg0: Exception): ConcurrentException;

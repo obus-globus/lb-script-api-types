@@ -46,7 +46,7 @@ export class SectionStorage<R extends Object | number | string | boolean, P exte
     lithium$getChunkYMaxInclusive(): number;
     lithium$getChunkYMin(): number;
     lithium$getElementAt(arg0: number): Optional<Object>;
-    lithium$getFirstInRangeInChunkColumn(arg0: number, arg1: number, arg2: number, arg3: BlockPos, arg4: number, arg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => unknown, arg6: (param0: Object) => kotlin.Boolean, arg7: (param0: Object) => kotlin.Boolean, arg8: Object): Object;
+    lithium$getFirstInRangeInChunkColumn(arg0: number, arg1: number, arg2: number, arg3: BlockPos, arg4: number, arg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: number) => Object, arg6: (param0: Object) => boolean, arg7: (param0: Object) => boolean, arg8: Object): Object;
     lithium$getInChunkColumn(arg0: number, arg1: number): (Object | null)[];
     lithium$getNonEmptyPOISections(arg0: number, arg1: number): BitSet;
     // private onEntryAdded(arg0: number, arg1: Optional<Object>): void;
@@ -55,11 +55,11 @@ export class SectionStorage<R extends Object | number | string | boolean, P exte
     outsideStoredRange(sectionPos: number): boolean;
     prefetch(chunkPos: ChunkPos): CompletableFuture<Object>;
     setDirty(sectionPos: number): void;
-    tick(haveTime: () => kotlin.Boolean): void;
+    tick(haveTime: () => boolean): void;
     // private tryRead(chunkPos: ChunkPos): CompletableFuture<Optional<SectionStorage$PackedChunk<P>>>;
     // private unpackChunk(chunkPos: ChunkPos): void;
     // private unpackChunk(pos: ChunkPos, packedChunk: SectionStorage$PackedChunk<P>): void;
     // private unpackPendingLoads(): void;
     // private writeChunk(chunkPos: ChunkPos): void;
-    // private writeChunk(chunkPos: ChunkPos, ops: DynamicOps<T>): Dynamic<T>;
+    // private writeChunk<T extends Object | number | string | boolean>(chunkPos: ChunkPos, ops: DynamicOps<T>): Dynamic<T>;
 }

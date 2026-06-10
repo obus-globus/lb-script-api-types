@@ -5,5 +5,5 @@ import type { MutableQuadViewImpl } from '../../../../../../net/caffeinemc/mods/
 import type { BlockStateModelPart } from '../../../../../../net/minecraft/client/renderer/block/dispatch/BlockStateModelPart.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 export interface PlatformModelEmitter$Bufferer extends Object {
-    emit(arg0: BlockStateModelPart, arg1: (param0: Direction) => kotlin.Boolean, arg2: (param0: MutableQuadViewImpl) => void): void;
+    emit(arg0: BlockStateModelPart, arg1: (param0: Direction) => boolean, arg2: (param0: MutableQuadViewImpl) => void): void;
 }

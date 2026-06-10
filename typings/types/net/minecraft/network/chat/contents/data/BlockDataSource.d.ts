@@ -9,7 +9,7 @@ import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTa
 import type { DataSource } from '../../../../../../net/minecraft/network/chat/contents/data/DataSource.d.ts'
 import type { CompilableString } from '../../../../../../net/minecraft/util/CompilableString.d.ts'
 export class BlockDataSource extends Record implements DataSource {
-    static BLOCK_POS_CODEC: Codec<Object>;
+    static BLOCK_POS_CODEC: Codec<CompilableString<Coordinates>>;
     static MAP_CODEC: MapCodec<BlockDataSource>;
     constructor(coordinates: CompilableString<Coordinates>)
     // private coordinates: CompilableString<Coordinates>;

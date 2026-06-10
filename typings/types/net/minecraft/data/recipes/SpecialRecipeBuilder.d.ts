@@ -6,7 +6,7 @@ import type { RecipeUnlockAdvancementBuilder } from '../../../../net/minecraft/d
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export class SpecialRecipeBuilder extends Object {
-    static special(paramfactory: () => Object | null): SpecialRecipeBuilder;
+    static special(paramfactory: () => Recipe<Object>): SpecialRecipeBuilder;
     constructor(factory: () => Recipe<Object>)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;
     // private factory: () => Recipe<Object>;

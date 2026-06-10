@@ -5,7 +5,7 @@ import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
 import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvider.d.ts'
 export class GLCapabilities extends Object {
     static initialize(): void;
-    constructor(arg0: (param0: ByteBuffer) => kotlin.Long, arg1: string[], arg2: boolean, arg3: (param0: PointerBuffer) => unknown)
+    constructor(arg0: (param0: ByteBuffer) => number, arg1: string[], arg2: boolean, arg3: (param0: number) => PointerBuffer)
     GL_3DFX_texture_compression_FXT1: boolean;
     GL_AMD_blend_minmax_factor: boolean;
     GL_AMD_conservative_depth: boolean;

@@ -18,7 +18,7 @@ export class SubmitNodeStorage$TextSubmit extends Record implements ModelStorage
     // private lightCoords: number;
     // private outlineColor: number;
     // private pose: Matrix4fc;
-    // private string: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    // private string: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private x: number;
     // private y: number;
     backgroundColor(): number;
@@ -33,7 +33,7 @@ export class SubmitNodeStorage$TextSubmit extends Record implements ModelStorage
     lightCoords(): number;
     outlineColor(): number;
     pose(): Matrix4fc;
-    string(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    string(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     toString(): string;
     x(): number;
     y(): number;

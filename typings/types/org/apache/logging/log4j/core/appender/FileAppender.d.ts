@@ -15,7 +15,7 @@ export class FileAppender extends AbstractOutputStreamAppender<FileManager> {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
     static PLUGIN_NAME: string;
-    static createAppender(paramfileName: string, paramappend: string, paramlocking: string, paramname: string, paramimmediateFlush: string, paramignoreExceptions: string, parambufferedIo: string, parambufferSizeStr: string, paramlayout: Layout<Object>, paramfilter: Filter, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): FileAppender;
+    static createAppender(paramfileName: string, paramappend: string, paramlocking: string, paramname: string, paramimmediateFlush: string, paramignoreExceptions: string, parambufferedIo: string, parambufferSizeStr: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): FileAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: FileManager, filename: string, ignoreExceptions: boolean, immediateFlush: boolean, advertiser: Advertiser, properties: Property[])

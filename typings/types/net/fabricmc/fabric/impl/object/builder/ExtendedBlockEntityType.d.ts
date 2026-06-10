@@ -37,6 +37,7 @@ import type { TheEndPortalBlockEntity } from '../../../../../../net/minecraft/wo
 import type { TrialSpawnerBlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/TrialSpawnerBlockEntity.d.ts'
 import type { VaultBlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/vault/VaultBlockEntity.d.ts'
 import type { PistonMovingBlockEntity } from '../../../../../../net/minecraft/world/level/block/piston/PistonMovingBlockEntity.d.ts'
+import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class ExtendedBlockEntityType<T extends BlockEntity> extends BlockEntityType<T> {
     static BANNER: BlockEntityType<BannerBlockEntity>;
     static BARREL: BlockEntityType<(Object | null)[]>;
@@ -87,7 +88,7 @@ export class ExtendedBlockEntityType<T extends BlockEntity> extends BlockEntityT
     static TRAPPED_CHEST: BlockEntityType<(Object | null)[]>;
     static TRIAL_SPAWNER: BlockEntityType<TrialSpawnerBlockEntity>;
     static VAULT: BlockEntityType<VaultBlockEntity>;
-    constructor(arg0: (param0: T, param1: BlockPos) => unknown, arg1: Block[], arg2: boolean)
+    constructor(arg0: (param0: BlockPos, param1: BlockState) => T, arg1: Block[], arg2: boolean)
     // private canPotentiallyExecuteCommands: boolean;
     onlyOpCanSetNbt(): boolean;
 }

@@ -10,7 +10,7 @@ import type { SurfaceRules$SurfaceRule } from '../../../../../net/minecraft/worl
 export class SurfaceRules$Bandlands extends Enum<SurfaceRules$Bandlands> implements SurfaceRules$RuleSource {
     static CODEC: Codec<SurfaceRules$RuleSource>;
     static INSTANCE: SurfaceRules$Bandlands;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<SurfaceRules$RuleSource>[]): MapCodec<SurfaceRules$RuleSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$Bandlands;
     static values(): (Object | null)[];

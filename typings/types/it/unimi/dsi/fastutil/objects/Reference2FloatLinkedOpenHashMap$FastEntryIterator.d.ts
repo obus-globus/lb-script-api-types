@@ -8,10 +8,10 @@ export class Reference2FloatLinkedOpenHashMap$FastEntryIterator extends Referenc
     constructor(null_: Reference2FloatLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Reference2FloatLinkedOpenHashMap$FastEntryIterator)
     // private entry: Reference2FloatLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2FloatMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Reference2FloatLinkedOpenHashMap$MapEntry;
-    previous(): Reference2FloatLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2FloatMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Reference2FloatMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Reference2FloatLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Reference2FloatLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Reference2FloatMap$Entry<K>): void;
 }

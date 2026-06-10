@@ -194,10 +194,10 @@ export class IOUtils extends Object {
     static write(paramarg0: StringBuffer, paramarg1: Writer): void;
     static writeChunked(paramarg0: number[], paramarg1: OutputStream): void;
     static writeChunked(paramarg0: string[], paramarg1: Writer): void;
-    static writeLines(paramarg0: E[], paramarg1: string, paramarg2: OutputStream): void;
-    static writeLines(paramarg0: E[], paramarg1: string, paramarg2: OutputStream, paramarg3: string): void;
-    static writeLines(paramarg0: E[], paramarg1: string, paramarg2: OutputStream, paramarg3: Charset): void;
-    static writeLines(paramarg0: E[], paramarg1: string, paramarg2: Writer): void;
+    static writeLines(paramarg0: Object[], paramarg1: string, paramarg2: OutputStream): void;
+    static writeLines(paramarg0: Object[], paramarg1: string, paramarg2: OutputStream, paramarg3: string): void;
+    static writeLines(paramarg0: Object[], paramarg1: string, paramarg2: OutputStream, paramarg3: Charset): void;
+    static writeLines(paramarg0: Object[], paramarg1: string, paramarg2: Writer): void;
     static writer(paramarg0: Appendable): Writer;
     constructor()
 }

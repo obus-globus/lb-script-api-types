@@ -8,5 +8,5 @@ export interface VersionInterval extends Object{
     isMinInclusive(): boolean;
     isSemantic(): boolean;
     not(): VersionInterval[];
-    or(arg0: E[]): VersionInterval[];
+    or(arg0: VersionInterval[]): VersionInterval[];
 }

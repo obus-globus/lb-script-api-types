@@ -4,7 +4,7 @@ import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvide
 export class EGLCapabilities extends Object {
     private constructor(arg0: string[], arg1: number[])
     constructor(arg0: EGLCapabilities, arg1: string[])
-    constructor(arg0: (param0: ByteBuffer) => kotlin.Long, arg1: string[])
+    constructor(arg0: (param0: ByteBuffer) => number, arg1: string[])
     EGL10: boolean;
     EGL11: boolean;
     EGL12: boolean;

@@ -49,7 +49,7 @@ export class ShapeImpl extends Shape {
     addProperty(property: Property): ShapeImpl;
     addTransitionIfAbsentOrGet(transition: Transition, successor: ShapeImpl): ShapeImpl;
     addTransitionIfAbsentOrNull(transition: Transition, successor: ShapeImpl): ShapeImpl;
-    allPropertiesMatch(predicate: (param0: Property) => kotlin.Boolean): boolean;
+    allPropertiesMatch(predicate: (param0: Property) => boolean): boolean;
     allocator(): ShapeImpl$BaseAllocator;
     allowPropertyAssumptions(): boolean;
     check(subject: DynamicObject): boolean;
@@ -116,7 +116,7 @@ export class ShapeImpl extends Shape {
     replaceProperty(oldProperty: Property, newProperty: Property): ShapeImpl;
     setDynamicType(newObjectType: Object): ShapeImpl;
     setFlags(newShapeFlags: number): ShapeImpl;
-    testPropertyFlags(predicate: (param0: number) => kotlin.Boolean): boolean;
+    testPropertyFlags(predicate: (param0: number) => boolean): boolean;
     toString(): string;
     toStringLimit(limit: number): string;
     tryMerge(other: Shape): Shape;

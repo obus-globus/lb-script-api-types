@@ -10,8 +10,8 @@ import type { JSProxyObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class TypeOfNode extends JSUnaryNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(): TypeOfNode;
     static create(paramoperand: JavaScriptNode): TypeOfNode;
     static findBlockScopeNode(paramnode: Node): Node;

@@ -7,7 +7,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloV5Translator extends ObjectDetectionTranslator {
     static builder(): YoloV5Translator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): YoloV5Translator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): YoloV5Translator$Builder;
     constructor(arg0: YoloV5Translator$Builder)
     // private nmsThreshold: number;
     // private yoloOutputLayerType: YoloV5Translator$YoloOutputType;

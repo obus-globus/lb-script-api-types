@@ -3,7 +3,8 @@ import type { HolderLookup$Provider } from '../../../../net/minecraft/core/Holde
 import type { DataComponentInitializers$Initializer } from '../../../../net/minecraft/core/component/DataComponentInitializers$Initializer.d.ts'
 import type { DataComponentMap$Builder } from '../../../../net/minecraft/core/component/DataComponentMap$Builder.d.ts'
 import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export interface DataComponentInitializers$SingleComponentInitializer<C extends Object | number | string | boolean> extends Object {
-    asInitializer(type: DataComponentType<C>): (param0: T, param1: DataComponentMap$Builder, param2: HolderLookup$Provider) => void;
+    asInitializer<T extends Object | number | string | boolean>(type: DataComponentType<C>): (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void;
     create(context: HolderLookup$Provider): C;
 }

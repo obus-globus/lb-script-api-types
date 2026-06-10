@@ -20,15 +20,11 @@ import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../../org/joml/Vector4i.d.ts'
 export interface DynamicLocationalUniformHolder extends Object, DynamicUniformHolder, LocationalUniformHolder {
     addDynamicUniform(arg0: Uniform, arg1: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): LocationalUniformHolder;
-    uniform1f(arg0: string, arg1: () => kotlin.Double, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1f(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1f(arg0: string, arg1: () => kotlin.Float, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Double): LocationalUniformHolder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): LocationalUniformHolder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Float): LocationalUniformHolder;
-    uniform1i(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): LocationalUniformHolder;
+    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => boolean): LocationalUniformHolder;
+    uniform1f(arg0: string, arg1: () => number, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): LocationalUniformHolder;
+    uniform1i(arg0: string, arg1: () => number, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): LocationalUniformHolder;
     uniform2f(arg0: string, arg1: () => Vector2f, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
     uniform2f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2f): LocationalUniformHolder;
     uniform2i(arg0: string, arg1: () => Vector2i, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;

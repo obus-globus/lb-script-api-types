@@ -10,7 +10,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class HttpRequest extends Object {
     static newBuilder(): HttpRequest$Builder;
     static newBuilder(paramarg0: URI): HttpRequest$Builder;
-    static newBuilder(paramarg0: HttpRequest, paramarg1: (param0: string, param1: string) => kotlin.Boolean): HttpRequest$Builder;
+    static newBuilder(paramarg0: HttpRequest, paramarg1: (param0: string, param1: string) => boolean): HttpRequest$Builder;
     constructor()
     bodyPublisher(): Optional<HttpRequest$BodyPublisher>;
     equals(arg0: Object | null): boolean;

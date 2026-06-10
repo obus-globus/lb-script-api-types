@@ -6,8 +6,8 @@ import type { PathAllowList$ConfigEntry } from '../../../../../net/minecraft/wor
 export class PathAllowList extends Object implements PathMatcher {
     static readPlain(paramreader: BufferedReader): PathAllowList;
     constructor(entries: PathAllowList$ConfigEntry[])
-    // private compiledPaths: { [key: string]: (param0: Path[][]) => kotlin.Boolean };
+    // private compiledPaths: { [key: string]: (param0: Path[][]) => boolean };
     // private entries: PathAllowList$ConfigEntry[];
-    getForFileSystem(fileSystem: FileSystem): (param0: Path[][]) => kotlin.Boolean;
+    getForFileSystem(fileSystem: FileSystem): (param0: Path[][]) => boolean;
     matches(path: Path[]): boolean;
 }

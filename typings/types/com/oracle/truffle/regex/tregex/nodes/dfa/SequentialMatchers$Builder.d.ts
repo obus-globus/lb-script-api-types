@@ -3,11 +3,11 @@ import type { CharMatcher } from '../../../../../../../com/oracle/truffle/regex/
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class SequentialMatchers$Builder extends Object {
     constructor(nBuffers: number)
-    // private buffers: T[][];
+    // private buffers: CharMatcher[][];
     readonly noMatchSuccessor: number;
     createSplitMatcher(i: number, cps: (Object | null)[], compilationBuffer: CompilationBuffer, splitRanges: (Object | null)[][]): void;
     estimatedCost(i: number): number;
-    getBuffer(i: number): T[];
+    getBuffer(i: number): CharMatcher[];
     getNoMatchSuccessor(): number;
     materialize(buf: number): CharMatcher[];
     reset(nTransitions: number): void;

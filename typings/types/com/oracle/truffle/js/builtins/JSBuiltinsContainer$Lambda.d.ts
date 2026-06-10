@@ -8,6 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class JSBuiltinsContainer$Lambda extends JSBuiltinsContainer {
     static fromEnum(paramname: TruffleString, parambuiltinEnum: Class<Object>): JSBuiltinsContainer;
     constructor(name: TruffleString)
-    defineFunction(name: TruffleString, length: number, nodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any): void;
-    defineFunction(name: TruffleString, length: number, attributeFlags: number, nodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any): void;
+    defineFunction(name: TruffleString, length: number, nodeFactory: (param0: JSContext, param1: JSBuiltin) => Object): void;
+    defineFunction(name: TruffleString, length: number, attributeFlags: number, nodeFactory: (param0: JSContext, param1: JSBuiltin) => Object): void;
 }

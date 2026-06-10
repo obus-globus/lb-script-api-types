@@ -7,6 +7,7 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../org/apache/logging/log4j/Marker.d.ts'
+import type { FlowMessageFactory } from '../../../../../org/apache/logging/log4j/message/FlowMessageFactory.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { MessageFactory } from '../../../../../org/apache/logging/log4j/message/MessageFactory.d.ts'
 import type { AbstractLogger } from '../../../../../org/apache/logging/log4j/spi/AbstractLogger.d.ts'
@@ -16,8 +17,8 @@ import type { PropertiesUtil } from '../../../../../org/apache/logging/log4j/uti
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class SimpleLogger extends AbstractLogger {
     static CATCHING_MARKER: Marker;
-    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<Object>;
-    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<Object>;
+    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<FlowMessageFactory>;
+    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<MessageFactory>;
     static ENTRY_MARKER: Marker;
     static EXCEPTION_MARKER: Marker;
     static EXIT_MARKER: Marker;
@@ -68,7 +69,7 @@ export class SimpleLogger extends AbstractLogger {
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logMessage(fqcn: string, mgsLevel: Level, marker: Marker, msg: Message, throwable: Throwable): void;
-    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
     setLevel(level: Level): void;

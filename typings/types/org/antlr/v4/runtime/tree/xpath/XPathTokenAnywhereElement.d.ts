@@ -3,5 +3,5 @@ import type { XPathElement } from '../../../../../../org/antlr/v4/runtime/tree/x
 export class XPathTokenAnywhereElement extends XPathElement {
     constructor(arg0: string, arg1: number)
     // private tokenType: number;
-    evaluate(arg0: ParseTree): E[];
+    evaluate(arg0: ParseTree): ParseTree[];
 }

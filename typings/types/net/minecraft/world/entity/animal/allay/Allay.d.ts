@@ -13,6 +13,7 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { InteractionHand } from '../../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { DamageSource } from '../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/entity/EntitySpawnReason.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
@@ -84,9 +85,9 @@ export class Allay extends PathfinderMob implements InventoryCarrier, VibrationS
     static NBT_ATTACHMENT_KEY: string;
     static NO_VIBRATION_FREQUENCY: number;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
-    static RESONANCE_EVENTS: (Object | null)[];
+    static RESONANCE_EVENTS: ResourceKey<GameEvent>[];
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
     static SPRING_DAMPENING: number;
@@ -126,15 +127,15 @@ export class Allay extends PathfinderMob implements InventoryCarrier, VibrationS
     static TORSIONAL_ELASTICITY: number;
     static TOTAL_AIR_SUPPLY: number;
     static UPDATE_GOAL_SELECTOR_EVERY_N_TICKS: number;
-    static VIBRATION_FREQUENCY_FOR_EVENT: (param0: Object | null) => kotlin.Int;
+    static VIBRATION_FREQUENCY_FOR_EVENT: (param0: ResourceKey<GameEvent>) => number;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WEARING_ARMOR_UPGRADE_MATERIAL_ATTEMPTS: number;
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static createAttributes(): AttributeSupplier$Builder;

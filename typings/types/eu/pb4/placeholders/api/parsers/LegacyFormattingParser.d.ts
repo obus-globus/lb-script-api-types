@@ -22,7 +22,7 @@ export class LegacyFormattingParser extends Object implements NodeParser {
     // private map: Char2ObjectOpenHashMap<ChatFormatting>;
     allowRGB(): boolean;
     codec(): Codec<WrappedText>;
-    formatting(): E[];
+    formatting(): ChatFormatting[];
     parseComponent(arg0: TextNode, arg1: ParserContext): Component;
     parseComponent(arg0: string, arg1: ParserContext): Component;
     // private parseLiteral(arg0: LiteralNode, arg1: TextNode[]): TextNode[];

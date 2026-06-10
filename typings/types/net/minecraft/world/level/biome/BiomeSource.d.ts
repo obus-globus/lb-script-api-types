@@ -19,9 +19,9 @@ export abstract class BiomeSource extends Object implements BiomeResolver {
     addDebugInfo(result: string[], feetPos: BlockPos, sampler: Climate$Sampler): void;
     codec(): MapCodec<BiomeSource>;
     collectPossibleBiomes(): Stream<Holder<Biome>>;
-    findBiomeHorizontal(x: number, y: number, z: number, searchRadius: number, allowed: (param0: Holder<Biome>) => kotlin.Boolean, random: RandomSource, sampler: Climate$Sampler): Pair<BlockPos, Holder<Biome>>;
-    findBiomeHorizontal(originX: number, originY: number, originZ: number, searchRadius: number, skipSteps: number, allowed: (param0: Holder<Biome>) => kotlin.Boolean, random: RandomSource, findClosest: boolean, sampler: Climate$Sampler): Pair<BlockPos, Holder<Biome>>;
-    findClosestBiome3d(origin: BlockPos, searchRadius: number, sampleResolutionHorizontal: number, sampleResolutionVertical: number, allowed: (param0: Holder<Biome>) => kotlin.Boolean, sampler: Climate$Sampler, level: LevelReader): Pair<BlockPos, Holder<Biome>>;
+    findBiomeHorizontal(x: number, y: number, z: number, searchRadius: number, allowed: (param0: Holder<Biome>) => boolean, random: RandomSource, sampler: Climate$Sampler): Pair<BlockPos, Holder<Biome>>;
+    findBiomeHorizontal(originX: number, originY: number, originZ: number, searchRadius: number, skipSteps: number, allowed: (param0: Holder<Biome>) => boolean, random: RandomSource, findClosest: boolean, sampler: Climate$Sampler): Pair<BlockPos, Holder<Biome>>;
+    findClosestBiome3d(origin: BlockPos, searchRadius: number, sampleResolutionHorizontal: number, sampleResolutionVertical: number, allowed: (param0: Holder<Biome>) => boolean, sampler: Climate$Sampler, level: LevelReader): Pair<BlockPos, Holder<Biome>>;
     getBiomesWithin(x: number, y: number, z: number, r: number, sampler: Climate$Sampler): Holder<Biome>[];
     getNoiseBiome(quartX: number, quartY: number, quartZ: number, sampler: Climate$Sampler): Holder<Biome>;
     modifyBiomeSet(arg0: (Object | null)[]): (Object | null)[];

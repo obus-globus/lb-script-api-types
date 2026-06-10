@@ -10,16 +10,17 @@ import type { StringRepresentable$EnumCodec } from '../../../../../../net/minecr
 import type { ContextKey } from '../../../../../../net/minecraft/util/context/ContextKey.d.ts'
 import type { ItemInstance } from '../../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { LootContext } from '../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
+import type { LootContextArg } from '../../../../../../net/minecraft/world/level/storage/loot/LootContextArg.d.ts'
 import type { LootContextArg$SimpleGetter } from '../../../../../../net/minecraft/world/level/storage/loot/LootContextArg$SimpleGetter.d.ts'
 export class LootContext$ItemStackTarget extends Enum<LootContext$ItemStackTarget> implements StringRepresentable, LootContextArg$SimpleGetter<ItemInstance> {
-    static ENTITY_OR_BLOCK: Codec<Object>;
+    static ENTITY_OR_BLOCK: Codec<LootContextArg<Object>>;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static TOOL: LootContext$ItemStackTarget;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LootContext$ItemStackTarget;
@@ -28,7 +29,7 @@ export class LootContext$ItemStackTarget extends Enum<LootContext$ItemStackTarge
     // private name: string;
     // private param: ContextKey<ItemInstance>;
     contextParam(): ContextKey<ItemInstance>;
-    get<T extends Object | number | string | boolean>(context: LootContext): T;
+    get(context: LootContext): ItemInstance;
     getSerializedName(): string;
     name(): "TOOL";
 }

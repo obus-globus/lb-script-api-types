@@ -14,7 +14,7 @@ export class RegExpFunctionBuiltins$RegExpFunction extends Enum<RegExpFunctionBu
     static values(): (Object | null)[];
     private constructor()
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): RegExpFunctionBuiltins$RegExpFunction;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

@@ -8,7 +8,7 @@ import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/wor
 export class ScaleExponentially extends Record implements EnchantmentValueEffect {
     static CODEC: Codec<EnchantmentValueEffect>;
     static CODEC: MapCodec<ScaleExponentially>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(base: LevelBasedValue, exponent: LevelBasedValue)
     // private base: LevelBasedValue;
     // private exponent: LevelBasedValue;

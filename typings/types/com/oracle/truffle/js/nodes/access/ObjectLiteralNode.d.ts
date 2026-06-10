@@ -12,8 +12,8 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode extends JavaScriptNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, parammembers: (Object | null)[]): ObjectLiteralNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static newAccessorMember(paramname: TruffleString, paramisStatic: boolean, paramenumerable: boolean, paramgetterNode: JavaScriptNode, paramsetterNode: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;

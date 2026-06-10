@@ -26,7 +26,7 @@ export class AltModelBlockRendererImpl extends Object implements QuadTransform, 
     // private cacheValid: number;
     // private computedTintValues: (Object | null)[];
     // private cull: boolean;
-    // private cullTest: (param0: Direction) => kotlin.Boolean;
+    // private cullTest: (param0: Direction) => boolean;
     // private defaultAo: boolean;
     // private flatLighter: FlatLighter;
     // private level: BlockAndTintGetter;

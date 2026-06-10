@@ -8,6 +8,6 @@ import type { ExecutionControl } from '../../../../net/minecraft/commands/execut
 export class DebugCommand$TraceCustomExecutor extends CustomCommandExecutor$WithErrorHandling<CommandSourceStack> implements CustomCommandExecutor$CommandAdapter<CommandSourceStack> {
     static SINGLE_SUCCESS: number;
     private constructor()
-    run(context: CommandContext<T>): number;
+    run(context: CommandContext<CommandSourceStack>): number;
     runGuarded(source: CommandSourceStack, currentStep: ContextChain<CommandSourceStack>, modifiers: ChainModifiers, context: ExecutionControl<CommandSourceStack>): void;
 }

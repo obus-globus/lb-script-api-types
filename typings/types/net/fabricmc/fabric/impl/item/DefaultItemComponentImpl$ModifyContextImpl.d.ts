@@ -10,10 +10,10 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 export class DefaultItemComponentImpl$ModifyContextImpl extends Object implements DefaultItemComponentEvents$ModifyContext {
     private constructor(arg0: HolderLookup$Provider)
     // private registryLookup: HolderLookup$Provider;
-    modify(arg0: (param0: Item) => kotlin.Boolean, arg1: (param0: DataComponentMap$Builder, param1: Item) => void): void;
-    modify(arg0: E[], arg1: (param0: DataComponentMap$Builder, param1: Item) => void): void;
-    modify(arg0: E[], arg1: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: Item) => void): void;
+    modify(arg0: (param0: Item) => boolean, arg1: (param0: DataComponentMap$Builder, param1: Item) => void): void;
+    modify(arg0: Item[], arg1: (param0: DataComponentMap$Builder, param1: Item) => void): void;
+    modify(arg0: Item[], arg1: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: Item) => void): void;
     modify(arg0: Item, arg1: (param0: DataComponentMap$Builder) => void): void;
     modify(arg0: Item, arg1: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: Item) => void): void;
-    modify(arg0: (param0: Item) => kotlin.Boolean, arg1: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: Item) => void): void;
+    modify(arg0: (param0: Item) => boolean, arg1: (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: Item) => void): void;
 }

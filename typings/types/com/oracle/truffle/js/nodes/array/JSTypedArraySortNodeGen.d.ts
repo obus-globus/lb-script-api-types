@@ -13,6 +13,6 @@ export class JSTypedArraySortNodeGen extends JSTypedArraySortNode {
     // private cached_cache: JSTypedArraySortNodeGen$CachedData;
     // private interop: InteropLibrary;
     // private state_0_: number;
-    execute(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object) => kotlin.Boolean): void;
-    // private executeAndSpecialize(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object) => kotlin.Boolean): void;
+    execute(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object) => boolean): void;
+    // private executeAndSpecialize(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object) => boolean): void;
 }

@@ -16,6 +16,6 @@ export class ShadowStack extends Object {
     // private stacks: Map<Thread, ShadowStack$ThreadLocalStack>;
     getInitialStack(instrumentedNode: Node): StackTraceEntry[];
     getStack(thread: Thread): ShadowStack$ThreadLocalStack;
-    getStacks(): E[];
+    getStacks(): ShadowStack$ThreadLocalStack[];
     install(instrumenter: Instrumenter, filter: SourceSectionFilter, compiledOnly: boolean): EventBinding<Object>;
 }

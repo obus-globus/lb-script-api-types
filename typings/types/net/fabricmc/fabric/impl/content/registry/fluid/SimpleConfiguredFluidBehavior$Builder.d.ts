@@ -12,7 +12,7 @@ export class SimpleConfiguredFluidBehavior$Builder extends Object implements Flu
     constructor()
     // private allowBoats: boolean;
     // private allowMovingDown: boolean;
-    // private allowSprinting: (param0: TagKey<Fluid>, param1: LivingEntity) => kotlin.Boolean;
+    // private allowSprinting: (param0: TagKey<Fluid>, param1: LivingEntity) => boolean;
     // private allowSwimming: boolean;
     // private drowning: boolean;
     // private fallDistanceModifier: number;
@@ -21,11 +21,11 @@ export class SimpleConfiguredFluidBehavior$Builder extends Object implements Flu
     // private makeMobsFloat: boolean;
     // private makeRiddenMobsFloat: boolean;
     // private movementSlowdown: FluidBehavior$Builder$MovementSlowdownFunction;
-    // private movementSpeed: (param0: LivingEntity) => kotlin.Float;
+    // private movementSpeed: (param0: LivingEntity) => number;
     allowBoats(arg0: boolean): FluidBehavior$Builder;
     allowMovingDown(arg0: boolean): FluidBehavior$Builder;
-    allowSprinting(arg0: (param0: TagKey<Fluid>, param1: LivingEntity) => kotlin.Boolean): FluidBehavior$Builder;
-    allowSprinting(arg0: (param0: LivingEntity) => kotlin.Boolean): FluidBehavior$Builder;
+    allowSprinting(arg0: (param0: TagKey<Fluid>, param1: LivingEntity) => boolean): FluidBehavior$Builder;
+    allowSprinting(arg0: (param0: LivingEntity) => boolean): FluidBehavior$Builder;
     allowSprinting(arg0: boolean): FluidBehavior$Builder;
     allowSwimming(arg0: boolean): FluidBehavior$Builder;
     build(): FluidBehavior;
@@ -38,7 +38,7 @@ export class SimpleConfiguredFluidBehavior$Builder extends Object implements Flu
     movementSlowdown(arg0: number): FluidBehavior$Builder;
     movementSlowdown(arg0: number, arg1: number): FluidBehavior$Builder;
     movementSlowdown(arg0: FluidBehavior$Builder$MovementSlowdownFunction): FluidBehavior$Builder;
-    movementSlowdown(arg0: (param0: LivingEntity) => kotlin.Float): FluidBehavior$Builder;
+    movementSlowdown(arg0: (param0: LivingEntity) => number): FluidBehavior$Builder;
     movementSpeed(arg0: number): FluidBehavior$Builder;
-    movementSpeed(arg0: (param0: LivingEntity) => kotlin.Float): FluidBehavior$Builder;
+    movementSpeed(arg0: (param0: LivingEntity) => number): FluidBehavior$Builder;
 }

@@ -14,8 +14,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 export class TryCatchNode extends StatementNode implements ResumableNode$WithObjectState {
     static EMPTY: Object;
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext, paramtryBlock: JavaScriptNode, paramcatchBlock: JavaScriptNode, paramwriteErrorVar: JSWriteFrameSlotNode, paramblockScope: BlockScopeNode, paramdestructuring: JavaScriptNode, paramconditionExpression: JavaScriptNode): TryCatchNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

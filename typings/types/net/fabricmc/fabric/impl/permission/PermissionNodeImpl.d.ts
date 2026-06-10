@@ -6,25 +6,25 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PermissionNode } from '../../../../../net/fabricmc/fabric/api/permission/v1/PermissionNode.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class PermissionNodeImpl<T extends Object | number | string | boolean> extends Record implements PermissionNode<T> {
-    static BOOLEAN: (param0: Object) => kotlin.Boolean;
-    static INTEGER: (param0: Object) => kotlin.Boolean;
-    static STRING: (param0: Object) => kotlin.Boolean;
+    static BOOLEAN: (param0: Object) => boolean;
+    static INTEGER: (param0: Object) => boolean;
+    static STRING: (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: string): PermissionNode<boolean>;
     static of(paramarg0: Identifier): PermissionNode<boolean>;
     static ofCustom(paramarg0: string, paramarg1: string, paramarg2: Codec<Object>, paramarg3: Class<Object>): PermissionNode<Object>;
-    static ofCustom(paramarg0: string, paramarg1: string, paramarg2: Codec<Object>, paramarg3: (param0: Object) => kotlin.Boolean): PermissionNode<Object>;
+    static ofCustom(paramarg0: string, paramarg1: string, paramarg2: Codec<Object>, paramarg3: (param0: Object) => boolean): PermissionNode<Object>;
     static ofCustom(paramarg0: Identifier, paramarg1: Codec<Object>, paramarg2: Class<Object>): PermissionNode<Object>;
-    static ofCustom(paramarg0: Identifier, paramarg1: Codec<Object>, paramarg2: (param0: Object) => kotlin.Boolean): PermissionNode<Object>;
+    static ofCustom(paramarg0: Identifier, paramarg1: Codec<Object>, paramarg2: (param0: Object) => boolean): PermissionNode<Object>;
     static ofInteger(paramarg0: string, paramarg1: string): PermissionNode<number>;
     static ofInteger(paramarg0: Identifier): PermissionNode<number>;
     static ofString(paramarg0: string, paramarg1: string): PermissionNode<string>;
     static ofString(paramarg0: Identifier): PermissionNode<string>;
-    constructor(key: Identifier, codec: Codec<T>, castPredicate: (param0: Object) => kotlin.Boolean)
-    // private castPredicate: (param0: Object) => kotlin.Boolean;
+    constructor(key: Identifier, codec: Codec<T>, castPredicate: (param0: Object) => boolean)
+    // private castPredicate: (param0: Object) => boolean;
     // private codec: Codec<T>;
     // private key: Identifier;
     cast(arg0: Object): T;
-    castPredicate(): (param0: Object) => kotlin.Boolean;
+    castPredicate(): (param0: Object) => boolean;
     codec(): Codec<T>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

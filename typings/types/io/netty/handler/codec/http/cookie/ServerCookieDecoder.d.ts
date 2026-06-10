@@ -5,6 +5,6 @@ export class ServerCookieDecoder extends CookieDecoder {
     static STRICT: ServerCookieDecoder;
     private constructor(arg0: boolean)
     decode(arg0: string): Cookie[];
-    // private decode(arg0: E[], arg1: string): void;
+    // private decode(arg0: Cookie[], arg1: string): void;
     decodeAll(arg0: string): Cookie[];
 }

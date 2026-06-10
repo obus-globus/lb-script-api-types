@@ -14,11 +14,11 @@ import type { AttributeTrackSampler } from '../../../../net/minecraft/world/time
 import type { Timeline$Builder } from '../../../../net/minecraft/world/timeline/Timeline$Builder.d.ts'
 import type { Timeline$TimeMarkerInfo } from '../../../../net/minecraft/world/timeline/Timeline$TimeMarkerInfo.d.ts'
 export class Timeline extends Object {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<Timeline>>;
     static DIRECT_CODEC: Codec<Timeline>;
     static NETWORK_CODEC: Codec<Timeline>;
     static builder(paramclock: Holder<WorldClock>): Timeline$Builder;
-    static validateRegistry(paramtimelines: Timeline[], paramloadingErrors: Map<Object | null, Exception>): void;
+    static validateRegistry(paramtimelines: Timeline[], paramloadingErrors: Map<ResourceKey<Object>, Exception>): void;
     private constructor(clock: Holder<WorldClock>, periodTicks: Optional<number>, tracks: Map<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>, timeMarkers: Map<ResourceKey<ClockTimeMarker>, Timeline$TimeMarkerInfo>)
     // private clock: Holder<WorldClock>;
     // private periodTicks: Optional<number>;
@@ -26,7 +26,7 @@ export class Timeline extends Object {
     // private tracks: Map<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>;
     attributes(): EnvironmentAttribute<Object>[];
     clock(): Holder<WorldClock>;
-    createTrackSampler(attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): AttributeTrackSampler<Value, Object>;
+    createTrackSampler<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): AttributeTrackSampler<Value, Object>;
     getCurrentTicks(clockManager: ClockManager): number;
     getPeriodCount(clockManager: ClockManager): number;
     getTotalTicks(clockManager: ClockManager): number;

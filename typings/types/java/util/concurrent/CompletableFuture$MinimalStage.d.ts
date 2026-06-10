@@ -37,7 +37,7 @@ export class CompletableFuture$MinimalStage<T extends Object | number | string |
     isCompletedExceptionally(): boolean;
     isDone(): boolean;
     join(): T;
-    newIncompleteFuture(): CompletableFuture<U>;
+    newIncompleteFuture<U extends Object | number | string | boolean>(): CompletableFuture<U>;
     obtrudeException(arg0: Throwable): void;
     obtrudeValue(arg0: T): void;
     orTimeout(arg0: number, arg1: TimeUnit): CompletableFuture<T>;

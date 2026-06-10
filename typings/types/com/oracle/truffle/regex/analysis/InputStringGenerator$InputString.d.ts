@@ -4,8 +4,8 @@ import type { AbstractRegexObject } from '../../../../../com/oracle/truffle/rege
 import type { TruffleReadOnlyKeysArray } from '../../../../../com/oracle/truffle/regex/util/TruffleReadOnlyKeysArray.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InputStringGenerator$InputString extends AbstractConstantKeysObject {
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: Object | null }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     constructor(input: TruffleString, fromIndex: number, matchStart: number)
     // private fromIndex: number;
     // private input: TruffleString;

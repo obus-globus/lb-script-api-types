@@ -13,14 +13,14 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ArgumentCommandNode<S extends Object | number | string | boolean, T extends Object | number | string | boolean> extends CommandNode<S> {
-    constructor(arg0: string, arg1: ArgumentType<T>, arg2: (param0: S) => kotlin.Int, arg3: (param0: S) => kotlin.Boolean, arg4: CommandNode<S>, arg5: (param0: S) => kotlin.collections.Collection<unknown>, arg6: boolean, arg7: (param0: S, param1: CommandContext<Object>) => java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions>)
-    readonly customSuggestions: (param0: S, param1: CommandContext<Object>) => java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions>;
+    constructor(arg0: string, arg1: ArgumentType<T>, arg2: (param0: CommandContext<S>) => number, arg3: (param0: S) => boolean, arg4: CommandNode<S>, arg5: (param0: CommandContext<S>) => S[], arg6: boolean, arg7: (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>)
+    readonly customSuggestions: (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     readonly name: string;
     readonly type: ArgumentType<T>;
     createBuilder(): RequiredArgumentBuilder<S, T>;
     equals(arg0: Object | null): boolean;
-    getCustomSuggestions(): (param0: S, param1: CommandContext<Object>) => java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions>;
-    getExamples(): E[];
+    getCustomSuggestions(): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
+    getExamples(): string[];
     getName(): string;
     getSortedKey(): string;
     getType(): ArgumentType<T>;

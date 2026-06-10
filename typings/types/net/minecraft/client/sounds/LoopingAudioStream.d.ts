@@ -6,9 +6,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AudioStream } from '../../../../net/minecraft/client/sounds/AudioStream.d.ts'
 import type { LoopingAudioStream$AudioStreamProvider } from '../../../../net/minecraft/client/sounds/LoopingAudioStream$AudioStreamProvider.d.ts'
 export class LoopingAudioStream extends Object implements AudioStream {
-    constructor(provider: (param0: InputStream) => net.minecraft.client.sounds.AudioStream, originalInputStream: InputStream)
+    constructor(provider: (param0: InputStream) => AudioStream, originalInputStream: InputStream)
     // private bufferedInputStream: BufferedInputStream;
-    // private provider: (param0: InputStream) => net.minecraft.client.sounds.AudioStream;
+    // private provider: (param0: InputStream) => AudioStream;
     // private stream: AudioStream;
     close(): void;
     getFormat(): AudioFormat;

@@ -5,5 +5,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface AnnotatedConstruct extends Object{
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotationMirrors(): AnnotationMirror[];
-    getAnnotationsByType(arg0: Class<A>): A[];
+    getAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
 }

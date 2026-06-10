@@ -1,6 +1,7 @@
 import type { Module } from '../../java/lang/Module.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { ResourceBundle$KeyElementReference } from '../../java/util/ResourceBundle$KeyElementReference.d.ts'
+import type { ResourceBundleProvider } from '../../java/util/spi/ResourceBundleProvider.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 export class ResourceBundle$CacheKey extends Object {
@@ -16,7 +17,7 @@ export class ResourceBundle$CacheKey extends Object {
     // private moduleRef: ResourceBundle$KeyElementReference<Module>;
     // private modulesHash: number;
     // private name: string;
-    // private providers: S[];
+    // private providers: ResourceBundleProvider[];
     // private providersChecked: boolean;
     callerHasProvider(): boolean;
     equals(arg0: Object | null): boolean;
@@ -26,7 +27,7 @@ export class ResourceBundle$CacheKey extends Object {
     getLocale(): Locale;
     getModule(): Module;
     getName(): string;
-    getProviders(): S[];
+    getProviders(): ResourceBundleProvider[];
     hasProviders(): boolean;
     hashCode(): number;
     // private setCause(arg0: Throwable): void;

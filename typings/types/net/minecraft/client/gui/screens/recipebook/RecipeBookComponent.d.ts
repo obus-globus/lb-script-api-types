@@ -70,7 +70,7 @@ export abstract class RecipeBookComponent<T extends RecipeBookMenu> extends Obje
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getCurrentFocusPath(): ComponentPath;
     getFilterButtonTextures(): WidgetSprites;
-    getNarratables(): E[];
+    getNarratables(): NarratableEntry[];
     getRecipeFilterName(): Component;
     getRectangle(): ScreenRectangle;
     // private getXOrigin(): number;

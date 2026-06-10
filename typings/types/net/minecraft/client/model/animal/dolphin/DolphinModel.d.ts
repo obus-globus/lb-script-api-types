@@ -5,7 +5,7 @@ import type { MeshDefinition } from '../../../../../../net/minecraft/client/mode
 import type { MeshTransformer } from '../../../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 import type { DolphinRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/DolphinRenderState.d.ts'
 export class DolphinModel extends EntityModel<DolphinRenderState> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static MODEL_Y_OFFSET: number;
     static createBodyLayer(): LayerDefinition;
     constructor(root: ModelPart)

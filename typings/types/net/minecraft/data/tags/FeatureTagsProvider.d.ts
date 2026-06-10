@@ -8,8 +8,8 @@ import type { KeyTagProvider } from '../../../../net/minecraft/data/tags/KeyTagP
 import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class FeatureTagsProvider extends KeyTagProvider<ConfiguredFeature<Object, Object>> {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     constructor(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup$Provider>)
     addTags(registries: HolderLookup$Provider): void;

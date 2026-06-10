@@ -30,11 +30,11 @@ export class ReversedLinesFileReader extends Object implements Closeable, IOIter
     // private totalByteLength: number;
     // private trailingNewlineOfFileSkipped: boolean;
     close(): void;
-    forEach(arg0: (param0: T) => void): void;
+    forEach(arg0: (param0: string) => void): void;
     iterator(): IOIterator<string>;
     readLine(): string;
     readLines(arg0: number): string[];
-    spliterator(): IOSpliterator<T>;
+    spliterator(): IOSpliterator<string>;
     toString(): string;
     toString(arg0: number): string;
     unwrap(): string[];

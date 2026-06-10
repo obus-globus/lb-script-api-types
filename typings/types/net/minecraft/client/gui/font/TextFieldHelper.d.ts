@@ -11,14 +11,14 @@ export class TextFieldHelper extends Object {
     static createClipboardSetter(paramminecraft: Minecraft): (param0: string) => void;
     static getClipboardContents(paramminecraft: Minecraft): string;
     static setClipboardContents(paramminecraft: Minecraft, paramtext: string): void;
-    constructor(getMessageFn: () => string, setMessageFn: (param0: string) => void, getClipboardFn: () => string, setClipboardFn: (param0: string) => void, stringValidator: (param0: string) => kotlin.Boolean)
+    constructor(getMessageFn: () => string, setMessageFn: (param0: string) => void, getClipboardFn: () => string, setClipboardFn: (param0: string) => void, stringValidator: (param0: string) => boolean)
     readonly cursorPos: number;
     // private getClipboardFn: () => string;
     // private getMessageFn: () => string;
     readonly selectionPos: number;
     // private setClipboardFn: (param0: string) => void;
     // private setMessageFn: (param0: string) => void;
-    // private stringValidator: (param0: string) => kotlin.Boolean;
+    // private stringValidator: (param0: string) => boolean;
     charTyped(event: CharacterEvent): boolean;
     // private clampToMsgLength(value: number): number;
     copy(): void;

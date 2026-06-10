@@ -4,6 +4,6 @@ export abstract class XPathElement extends Object {
     constructor(arg0: string)
     // private invert: boolean;
     // private nodeName: string;
-    evaluate(arg0: ParseTree): E[];
+    evaluate(arg0: ParseTree): ParseTree[];
     toString(): string;
 }

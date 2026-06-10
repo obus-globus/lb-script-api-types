@@ -25,18 +25,18 @@ import type { IORunnable } from '../../../../../org/apache/commons/io/function/I
 import type { IOSpliterator } from '../../../../../org/apache/commons/io/function/IOSpliterator.d.ts'
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
 export interface IOStream<T extends Object | number | string | boolean> extends Object, IOBaseStream<T, IOStream<T>, Stream<T>> {
-    allMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
-    anyMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
-    asBaseStream(): BaseStream<T, B>;
+    allMatch(arg0: (param0: T) => boolean): boolean;
+    anyMatch(arg0: (param0: T) => boolean): boolean;
+    asBaseStream(): BaseStream<T, Stream<T>>;
     close(): void;
-    collect<R extends Object | number | string | boolean>(arg0: Collector<T, A, R>): R;
+    collect<R extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Collector<T, A, R>): R;
     collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;
     count(): number;
     distinct(): IOStream<T>;
-    filter(arg0: (param0: T) => kotlin.Boolean): IOStream<T>;
+    filter(arg0: (param0: T) => boolean): IOStream<T>;
     findAny(): Optional<T>;
     findFirst(): Optional<T>;
-    flatMap(arg0: (param0: T) => IOStream<R>): IOStream<R>;
+    flatMap<R extends Object | number | string | boolean>(arg0: (param0: T) => IOStream<R>): IOStream<R>;
     flatMapToDouble(arg0: (param0: T) => DoubleStream): DoubleStream;
     flatMapToInt(arg0: (param0: T) => IntStream): IntStream;
     flatMapToLong(arg0: (param0: T) => LongStream): LongStream;
@@ -47,25 +47,25 @@ export interface IOStream<T extends Object | number | string | boolean> extends 
     isParallel(): boolean;
     iterator(): IOIterator<T>;
     limit(arg0: number): IOStream<T>;
-    map(arg0: (param0: T) => R): IOStream<R>;
-    mapToDouble(arg0: (param0: T) => kotlin.Double): DoubleStream;
-    mapToInt(arg0: (param0: T) => kotlin.Int): IntStream;
-    mapToLong(arg0: (param0: T) => kotlin.Long): LongStream;
-    max(arg0: (param0: T, param1: Object | null) => kotlin.Int): Optional<T>;
-    min(arg0: (param0: T, param1: Object | null) => kotlin.Int): Optional<T>;
-    noneMatch(arg0: (param0: T) => kotlin.Boolean): boolean;
-    onClose<S extends IOBaseStream<T, S, B>>(arg0: () => void): S;
-    parallel<S extends IOBaseStream<T, S, B>>(): S;
+    map<R extends Object | number | string | boolean>(arg0: (param0: T) => R): IOStream<R>;
+    mapToDouble(arg0: (param0: T) => number): DoubleStream;
+    mapToInt(arg0: (param0: T) => number): IntStream;
+    mapToLong(arg0: (param0: T) => number): LongStream;
+    max(arg0: (param0: T, param1: T) => number): Optional<T>;
+    min(arg0: (param0: T, param1: T) => number): Optional<T>;
+    noneMatch(arg0: (param0: T) => boolean): boolean;
+    onClose(arg0: () => void): IOStream<T>;
+    parallel(): IOStream<T>;
     peek(arg0: (param0: T) => void): IOStream<T>;
-    reduce(arg0: T, arg1: (param0: T, param1: Object | null) => unknown): T;
-    reduce<U extends Object | number | string | boolean>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => unknown): U;
-    reduce(arg0: (param0: T, param1: Object | null) => unknown): Optional<T>;
-    sequential<S extends IOBaseStream<T, S, B>>(): S;
+    reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
+    reduce<U extends Object | number | string | boolean>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
+    reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
+    sequential(): IOStream<T>;
     skip(arg0: number): IOStream<T>;
     sorted(): IOStream<T>;
-    sorted(arg0: (param0: T, param1: Object | null) => kotlin.Int): IOStream<T>;
+    sorted(arg0: (param0: T, param1: T) => number): IOStream<T>;
     spliterator(): IOSpliterator<T>;
     toArray(): Object[];
-    toArray(arg0: (param0: A[]) => unknown): A[];
-    unordered<S extends IOBaseStream<T, S, B>>(): S;
+    toArray<A extends Object | number | string | boolean>(arg0: (param0: number) => A[]): A[];
+    unordered(): IOStream<T>;
 }

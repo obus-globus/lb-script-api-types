@@ -81,7 +81,7 @@ export class Display$TextDisplay extends Display {
     // private clientDisplayCache: Display$TextDisplay$CachedInfo;
     // private textRenderState: Display$TextDisplay$TextRenderState;
     addAdditionalSaveData(output: ValueOutput): void;
-    cacheDisplay(splitter: (param0: Component, param1: number) => net.minecraft.world.entity.Display.TextDisplay.CachedInfo): Display$TextDisplay$CachedInfo;
+    cacheDisplay(splitter: (param0: Component, param1: number) => Display$TextDisplay$CachedInfo): Display$TextDisplay$CachedInfo;
     // private createFreshTextRenderState(): Display$TextDisplay$TextRenderState;
     // private createInterpolatedTextRenderState(previous: Display$TextDisplay$TextRenderState, progress: number): Display$TextDisplay$TextRenderState;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;

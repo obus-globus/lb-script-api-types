@@ -5,7 +5,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloPoseTranslator extends BaseImageTranslator<Joints[]> {
     static builder(): YoloPoseTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object | null }): YoloPoseTranslator$Builder;
+    static builder(paramarg0: { [key: string]: Object }): YoloPoseTranslator$Builder;
     constructor(arg0: YoloPoseTranslator$Builder)
     // private nmsThreshold: number;
     // private threshold: number;

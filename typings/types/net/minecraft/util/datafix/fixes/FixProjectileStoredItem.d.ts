@@ -9,7 +9,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FixProjectileStoredItem$SubFixer } from '../../../../../net/minecraft/util/datafix/fixes/FixProjectileStoredItem$SubFixer.d.ts'
 export class FixProjectileStoredItem extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
     // private fixChoice(entityName: string, fixer: FixProjectileStoredItem$SubFixer<Object>): (param0: Typed<Object>) => Typed<Object>;
     makeRule(): TypeRewriteRule;

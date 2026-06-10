@@ -2,7 +2,6 @@ import type { RealmsDataFetcher } from '../../../../../com/mojang/realmsclient/g
 import type { RealmsNotificationsScreen$DataFetcherConfiguration } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsNotificationsScreen$DataFetcherConfiguration.d.ts'
 import type { DataFetcher$Subscription } from '../../../../../com/mojang/realmsclient/gui/task/DataFetcher$Subscription.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -18,7 +17,7 @@ export class RealmsNotificationsScreen extends RealmsScreen {
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor()
     // private currentConfiguration: RealmsNotificationsScreen$DataFetcherConfiguration;

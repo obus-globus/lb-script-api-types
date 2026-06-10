@@ -9,6 +9,6 @@ export class DataItemWithExtras extends DataItem {
     lore(): JsonElement[];
     name(): JsonElement;
     // private parse(arg0: string): JsonElement;
-    rawLore(): T[];
+    rawLore(): StringTag[];
     rawName(): StringTag;
 }

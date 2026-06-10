@@ -3,12 +3,12 @@ import type { Difficulty } from '../../../../../../net/minecraft/world/Difficult
 import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { DoorInteractGoal } from '../../../../../../net/minecraft/world/entity/ai/goal/DoorInteractGoal.d.ts'
 export class BreakDoorGoal extends DoorInteractGoal {
-    constructor(mob: Mob, validDifficulties: (param0: Difficulty) => kotlin.Boolean)
-    constructor(mob: Mob, seconds: number, validDifficulties: (param0: Difficulty) => kotlin.Boolean)
+    constructor(mob: Mob, validDifficulties: (param0: Difficulty) => boolean)
+    constructor(mob: Mob, seconds: number, validDifficulties: (param0: Difficulty) => boolean)
     // private breakTime: number;
     // private doorBreakTime: number;
     // private lastBreakProgress: number;
-    // private validDifficulties: (param0: Difficulty) => kotlin.Boolean;
+    // private validDifficulties: (param0: Difficulty) => boolean;
     canContinueToUse(): boolean;
     canUse(): boolean;
     getDoorBreakTime(): number;

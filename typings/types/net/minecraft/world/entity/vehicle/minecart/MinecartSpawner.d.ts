@@ -55,7 +55,7 @@ export class MinecartSpawner extends AbstractMinecart {
     static WILDCARD_NAME: string;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
-    static createMinecart(paramlevel: Level, paramx: number, paramy: number, paramz: number, paramtype: EntityType<Object>, paramreason: EntitySpawnReason, paramitemStack: ItemStack, paramplayer: Player): Object | null;
+    static createMinecart(paramlevel: Level, paramx: number, paramy: number, paramz: number, paramtype: EntityType<AbstractMinecart>, paramreason: EntitySpawnReason, paramitemStack: ItemStack, paramplayer: Player): AbstractMinecart | null;
     static exits(paramshape: RailShape): Pair<Vec3i, Vec3i>;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;

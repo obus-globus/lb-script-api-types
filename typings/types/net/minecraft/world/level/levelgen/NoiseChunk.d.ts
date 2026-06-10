@@ -29,7 +29,7 @@ export class NoiseChunk extends Object implements DensityFunction$ContextProvide
     // private blendAlpha: NoiseChunk$FlatCache;
     // private blendOffset: NoiseChunk$FlatCache;
     readonly blender: Blender;
-    // private blockStateRule: (param0: DensityFunction$FunctionContext) => net.minecraft.world.level.block.state.BlockState;
+    // private blockStateRule: (param0: DensityFunction$FunctionContext) => BlockState;
     // private cellCaches: NoiseChunk$CacheAllInCell[];
     // private cellCountXZ: number;
     // private cellCountY: number;

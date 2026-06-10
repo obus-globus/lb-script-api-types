@@ -16,12 +16,12 @@ export class Dictionary$Reference<S extends Object | number | string | boolean, 
     static negativeLookahead(paramterm: Term<Object>): Term<Object>;
     static optional(paramterm: Term<Object>): Term<Object>;
     static positiveLookahead(paramterm: Term<Object>): Term<Object>;
-    static repeated(paramelement: NamedRule<Object, Object>, paramlistName: Atom<Object>): Term<Object>;
-    static repeated(paramelement: NamedRule<Object, Object>, paramlistName: Atom<Object>, paramminRepetitions: number): Term<Object>;
-    static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<Object>, paramseparator: Term<Object>): Term<Object>;
-    static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<Object>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
-    static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<Object>, paramseparator: Term<Object>): Term<Object>;
-    static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<Object>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
+    static repeated(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>): Term<Object>;
+    static repeated(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramminRepetitions: number): Term<Object>;
+    static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
+    static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
+    static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
+    static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
     static sequence(paramterms: Object | null): Term<Object>;
     private constructor(ruleToParse: Dictionary$Entry<S, T>, nameToStore: Atom<T>)
     // private nameToStore: Atom<T>;

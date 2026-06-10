@@ -9,7 +9,7 @@ export class BufferedChannel$BufferedChannelIterator extends Object implements W
     // private continuation: CancellableContinuationImpl<boolean> | null;
     // private receiveResult: Object | null;
     hasNext(): boolean;
-    // private hasNextOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): boolean;
+    // private hasNextOnNoWaiterSuspend<E extends Object | number | string | boolean>(segment: ChannelSegment<E>, index: number, r: number): boolean;
     invokeOnCancellation(segment: Segment<Object>, index: number): void;
     next<E extends Object | number | string | boolean>(): E;
     next0<E extends Object | number | string | boolean>(): E;

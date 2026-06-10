@@ -22,6 +22,7 @@ import type { SuppressedBy } from '../../../../org/spongepowered/tools/obfuscati
 import type { IMessagerEx$MessageType } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IMessagerEx$MessageType.d.ts'
 import type { IMessagerSuppressible } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IMessagerSuppressible.d.ts'
 import type { IMixinAnnotationProcessor } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IMixinAnnotationProcessor.d.ts'
+import type { IMixinValidator } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IMixinValidator.d.ts'
 import type { IMixinValidator$ValidationPass } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IMixinValidator$ValidationPass.d.ts'
 import type { IObfuscationManager } from '../../../../org/spongepowered/tools/obfuscation/interfaces/IObfuscationManager.d.ts'
 import type { ITypeHandleProvider } from '../../../../org/spongepowered/tools/obfuscation/interfaces/ITypeHandleProvider.d.ts'
@@ -83,6 +84,6 @@ export class AnnotatedMixin extends Object implements IMixinContext, IAnnotatedE
     remap(): boolean;
     // private removeMethod(arg0: ExecutableElement): void;
     // private runFinalValidation(): void;
-    runValidators(arg0: IMixinValidator$ValidationPass, arg1: E[]): AnnotatedMixin;
+    runValidators(arg0: IMixinValidator$ValidationPass, arg1: IMixinValidator[]): AnnotatedMixin;
     toString(): string;
 }

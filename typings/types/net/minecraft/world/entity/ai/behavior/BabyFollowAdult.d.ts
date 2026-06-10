@@ -6,6 +6,6 @@ import type { OneShot } from '../../../../../../net/minecraft/world/entity/ai/be
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class BabyFollowAdult extends Object {
     static create(paramfollowRange: UniformInt, paramspeedModifier: number): OneShot<LivingEntity>;
-    static create(paramfollowRange: UniformInt, paramspeedModifier: (param0: LivingEntity) => number, paramnearestVisibleType: MemoryModuleType<Object>, paramtargetEye: boolean): OneShot<LivingEntity>;
+    static create(paramfollowRange: UniformInt, paramspeedModifier: (param0: LivingEntity) => number, paramnearestVisibleType: MemoryModuleType<LivingEntity>, paramtargetEye: boolean): OneShot<LivingEntity>;
     constructor()
 }

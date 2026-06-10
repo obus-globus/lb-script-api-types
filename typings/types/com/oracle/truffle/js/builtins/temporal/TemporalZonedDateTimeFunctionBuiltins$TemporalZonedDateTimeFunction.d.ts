@@ -16,7 +16,7 @@ export class TemporalZonedDateTimeFunctionBuiltins$TemporalZonedDateTimeFunction
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): TemporalZonedDateTimeFunctionBuiltins$TemporalZonedDateTimeFunction;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

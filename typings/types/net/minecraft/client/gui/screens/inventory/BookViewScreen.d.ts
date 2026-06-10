@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ActiveTextCollector } from '../../../../../../net/minecraft/client/gui/ActiveTextCollector.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -28,7 +27,7 @@ export class BookViewScreen extends Screen {
     static PAGE_TEXT_X_OFFSET: number;
     static PAGE_TEXT_Y_OFFSET: number;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor()
     constructor(bookAccess: BookViewScreen$BookAccess)
@@ -36,7 +35,7 @@ export class BookViewScreen extends Screen {
     // private backButton: PageButton;
     readonly bookAccess: BookViewScreen$BookAccess;
     // private cachedPage: number;
-    // private cachedPageComponents: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private cachedPageComponents: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private currentPage: number;
     // private forwardButton: PageButton;
     // private pageMsg: Component;

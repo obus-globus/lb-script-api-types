@@ -5,9 +5,9 @@ import type { QMatrix$View$Setter } from '../../../../../com/seedfinding/mcmath/
 export class QMatrix$View extends QMatrix {
     static identity(paramarg0: number): QMatrix;
     static zero(paramarg0: number, paramarg1: number): QMatrix;
-    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Rational, arg3: (param0: number, param1: number, param2: Rational) => void)
+    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Rational, arg3: (param0: number, param1: number, param2: Rational) => void)
     readonly columns: number;
-    // private getter: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Rational;
+    // private getter: (param0: number, param1: number) => Rational;
     readonly rows: number;
     // private setter: (param0: number, param1: number, param2: Rational) => void;
     get(arg0: number, arg1: number): Rational;

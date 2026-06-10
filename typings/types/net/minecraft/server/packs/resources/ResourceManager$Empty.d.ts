@@ -10,7 +10,7 @@ import type { Resource } from '../../../../../net/minecraft/server/packs/resourc
 import type { ResourceManager } from '../../../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 import type { ResourceProvider } from '../../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class ResourceManager$Empty extends Enum<ResourceManager$Empty> implements ResourceManager {
-    static EMPTY: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>;
+    static EMPTY: (param0: Identifier) => Optional<Resource>;
     static INSTANCE: ResourceManager$Empty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ResourceManager$Empty;
@@ -20,7 +20,7 @@ export class ResourceManager$Empty extends Enum<ResourceManager$Empty> implement
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
     name(): "INSTANCE";
 }

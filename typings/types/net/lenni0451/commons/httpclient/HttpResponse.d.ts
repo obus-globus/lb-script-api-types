@@ -4,6 +4,7 @@ import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { HeaderStore } from '../../../../net/lenni0451/commons/httpclient/HeaderStore.d.ts'
 import type { HttpResponse$DecoderProvider } from '../../../../net/lenni0451/commons/httpclient/HttpResponse$DecoderProvider.d.ts'
+import type { HttpResponse$InputStreamMapper } from '../../../../net/lenni0451/commons/httpclient/HttpResponse$InputStreamMapper.d.ts'
 import type { HttpContent } from '../../../../net/lenni0451/commons/httpclient/content/HttpContent.d.ts'
 import type { ContentType } from '../../../../net/lenni0451/commons/httpclient/model/ContentType.d.ts'
 export class HttpResponse extends HeaderStore<HttpResponse> {
@@ -18,7 +19,7 @@ export class HttpResponse extends HeaderStore<HttpResponse> {
     getContentAsString(arg0: Charset): string;
     getContentType(): Optional<ContentType>;
     getDecodedContent(): HttpContent;
-    getDecodedContent(arg0: (param0: string) => net.lenni0451.commons.httpclient.HttpResponse.InputStreamMapper): HttpContent;
+    getDecodedContent(arg0: (param0: string) => (param0: InputStream) => InputStream): HttpContent;
     getInputStream(): InputStream;
     getStatusCode(): number;
     getStatusMessage(): string;

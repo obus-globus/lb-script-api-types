@@ -4,6 +4,6 @@ import type { JavaElement } from '../../../../../../../../kotlin/reflect/jvm/int
 import type { FqName } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 export interface JavaAnnotationOwner extends Object, JavaElement{
     findAnnotation(arg0: FqName): JavaAnnotation;
-    getAnnotations(): E[];
+    getAnnotations(): JavaAnnotation[];
     isDeprecatedInJavaDoc(): boolean;
 }

@@ -4,5 +4,5 @@ export interface DebugScreenDisplayer extends Object{
     addLine(line: string): void;
     addPriorityLine(line: string): void;
     addToGroup(group: Identifier, lines: string): void;
-    addToGroup(group: Identifier, lines: E[]): void;
+    addToGroup(group: Identifier, lines: string[]): void;
 }

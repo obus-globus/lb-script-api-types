@@ -13,7 +13,7 @@ export class TruffleLogger extends Object {
     static getLogger(paramid: string, paramloggerName: string): TruffleLogger;
     private constructor(loggerCache: TruffleLogger$LoggerCache)
     private constructor(loggerName: string, loggerCache: TruffleLogger$LoggerCache)
-    // private children: E[];
+    // private children: TruffleLogger$ChildLoggerRef[];
     // private levelNum: number;
     // private levelNumStable: Assumption;
     // private levelObj: Level;

@@ -19,11 +19,9 @@ import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 export interface LocationalUniformHolder extends Object, UniformHolder {
     addUniform(arg0: UniformUpdateFrequency, arg1: Uniform): LocationalUniformHolder;
     location(arg0: string, arg1: UniformType): OptionalInt;
-    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Boolean): LocationalUniformHolder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Double): LocationalUniformHolder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): LocationalUniformHolder;
-    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Float): LocationalUniformHolder;
-    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => kotlin.Int): LocationalUniformHolder;
+    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => boolean): LocationalUniformHolder;
+    uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): LocationalUniformHolder;
+    uniform1i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): LocationalUniformHolder;
     uniform2f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2f): LocationalUniformHolder;
     uniform2i(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector2i): LocationalUniformHolder;
     uniform3d(arg0: UniformUpdateFrequency, arg1: string, arg2: () => Vector3d): LocationalUniformHolder;

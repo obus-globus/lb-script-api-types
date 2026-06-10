@@ -11,7 +11,7 @@ import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class TypeRewriteRule$Nop extends Enum<TypeRewriteRule$Nop> implements TypeRewriteRule, Supplier<TypeRewriteRule> {
     static INSTANCE: TypeRewriteRule$Nop;
     static all(paramarg0: TypeRewriteRule, paramarg1: boolean, paramarg2: boolean): TypeRewriteRule;
-    static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Object | null) => void): TypeRewriteRule;
+    static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Type<Object>) => void): TypeRewriteRule;
     static everywhere(paramarg0: TypeRewriteRule, paramarg1: PointFreeRule, paramarg2: boolean, paramarg3: boolean): TypeRewriteRule;
     static ifSame(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>): TypeRewriteRule;
     static nop(): TypeRewriteRule;
@@ -27,6 +27,6 @@ export class TypeRewriteRule$Nop extends Enum<TypeRewriteRule$Nop> implements Ty
     static values(): (Object | null)[];
     private constructor()
     get(): TypeRewriteRule;
-    rewrite(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
+    rewrite<A extends Object | number | string | boolean>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
     name(): "INSTANCE";
 }

@@ -4,7 +4,7 @@ import type { RegistryEntry } from '../../../../../../com/viaversion/viaversion/
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class MappingData1_21 extends MappingDataBase {
     constructor()
-    // private enchantments: T[];
+    // private enchantments: Map$Entry<string, Tag>[][];
     // private jukeboxSongs: Map$Entry<string, Tag>[];
     enchantment(arg0: number): Map$Entry<string, Tag>[];
     jukeboxSongs(): RegistryEntry[];

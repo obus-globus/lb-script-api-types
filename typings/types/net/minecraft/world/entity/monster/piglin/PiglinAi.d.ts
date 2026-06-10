@@ -6,6 +6,7 @@ import type { InteractionHand } from '../../../../../../net/minecraft/world/Inte
 import type { InteractionResult } from '../../../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { ActivityData } from '../../../../../../net/minecraft/world/entity/ai/ActivityData.d.ts'
 import type { Brain } from '../../../../../../net/minecraft/world/entity/ai/Brain.d.ts'
 import type { AbstractPiglin } from '../../../../../../net/minecraft/world/entity/monster/piglin/AbstractPiglin.d.ts'
 import type { Piglin } from '../../../../../../net/minecraft/world/entity/monster/piglin/Piglin.d.ts'
@@ -18,7 +19,7 @@ export class PiglinAi extends Object {
     static REPELLENT_DETECTION_RANGE_VERTICAL: number;
     static angerNearbyPiglins(paramlevel: ServerLevel, paramplayer: Player, paramonlyIfTheySeeThePlayer: boolean): void;
     static findNearbyAdultPiglins(parambrain: Brain<Object>): AbstractPiglin[];
-    static getActivities(parampiglin: Piglin): (Object | null)[];
+    static getActivities(parampiglin: Piglin): ActivityData<Piglin>[];
     static getAvoidTarget(parambody: Piglin): Optional<LivingEntity>;
     static getNearestVisibleTargetablePlayer(parambody: AbstractPiglin): Optional<Player>;
     static getSoundForCurrentActivity(parambody: Piglin): Optional<SoundEvent>;

@@ -12,9 +12,9 @@ export class RMatrix extends Object {
     static zero(paramarg0: number, paramarg1: number): RMatrix;
     constructor(arg0: RVector[])
     constructor(arg0: Real[][])
-    constructor(arg0: number, arg1: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Real)
+    constructor(arg0: number, arg1: (param0: number, param1: number) => Real)
     constructor(arg0: number, arg1: number)
-    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Real)
+    constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Real)
     // private elements: Real[][];
     add(arg0: RMatrix): RMatrix;
     addAndSet(arg0: RMatrix): RMatrix;
@@ -39,12 +39,12 @@ export class RMatrix extends Object {
     invertAndSet(): RMatrix;
     isSquare(): boolean;
     luDecompose(): LUDecomposition$R;
-    map(arg0: (param0: number, param1: number, param2: Real) => com.seedfinding.mcmath.arithmetic.Real): RMatrix;
-    mapAndSet(arg0: (param0: number, param1: number, param2: Real) => com.seedfinding.mcmath.arithmetic.Real): RMatrix;
-    mapColumn(arg0: number, arg1: (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real): RMatrix;
-    mapColumnAndSet(arg0: number, arg1: (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real): RMatrix;
-    mapRow(arg0: number, arg1: (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real): RMatrix;
-    mapRowAndSet(arg0: number, arg1: (param0: number, param1: Real) => com.seedfinding.mcmath.arithmetic.Real): RMatrix;
+    map(arg0: (param0: number, param1: number, param2: Real) => Real): RMatrix;
+    mapAndSet(arg0: (param0: number, param1: number, param2: Real) => Real): RMatrix;
+    mapColumn(arg0: number, arg1: (param0: number, param1: Real) => Real): RMatrix;
+    mapColumnAndSet(arg0: number, arg1: (param0: number, param1: Real) => Real): RMatrix;
+    mapRow(arg0: number, arg1: (param0: number, param1: Real) => Real): RMatrix;
+    mapRowAndSet(arg0: number, arg1: (param0: number, param1: Real) => Real): RMatrix;
     mergeToAugmented(arg0: RMatrix): RMatrix$Augmented;
     multiply(arg0: Real): RMatrix;
     multiply(arg0: RMatrix): RMatrix;
@@ -66,8 +66,8 @@ export class RMatrix extends Object {
     swapColumnsAndSet(arg0: number, arg1: number): RMatrix;
     swapRows(arg0: number, arg1: number): RMatrix;
     swapRowsAndSet(arg0: number, arg1: number): RMatrix;
-    toGenerator(): (param0: number, param1: number) => com.seedfinding.mcmath.arithmetic.Real;
-    toMapper(): (param0: number, param1: number, param2: Real) => com.seedfinding.mcmath.arithmetic.Real;
+    toGenerator(): (param0: number, param1: number) => Real;
+    toMapper(): (param0: number, param1: number, param2: Real) => Real;
     toString(): string;
     transpose(): RMatrix;
     transposeAndSet(): RMatrix;

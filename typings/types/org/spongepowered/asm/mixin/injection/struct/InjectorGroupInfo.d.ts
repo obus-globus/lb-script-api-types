@@ -10,7 +10,7 @@ export class InjectorGroupInfo extends Object {
     readonly name: string;
     add(arg0: InjectionInfo): InjectorGroupInfo;
     getMaxAllowed(): number;
-    getMembers(): E[];
+    getMembers(): InjectionInfo[];
     getMinRequired(): number;
     getName(): string;
     isDefault(): boolean;

@@ -7,11 +7,11 @@ import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export abstract class CertificateFactorySpi extends Object {
     constructor()
     engineGenerateCRL(arg0: InputStream): CRL;
-    engineGenerateCRLs(arg0: InputStream): E[];
+    engineGenerateCRLs(arg0: InputStream): CRL[];
     engineGenerateCertPath(arg0: Certificate[]): CertPath;
     engineGenerateCertPath(arg0: InputStream): CertPath;
     engineGenerateCertPath(arg0: InputStream, arg1: string): CertPath;
     engineGenerateCertificate(arg0: InputStream): Certificate;
-    engineGenerateCertificates(arg0: InputStream): E[];
+    engineGenerateCertificates(arg0: InputStream): Certificate[];
     engineGetCertPathEncodings(): Iterator<string>;
 }

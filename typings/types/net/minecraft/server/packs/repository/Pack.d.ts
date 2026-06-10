@@ -19,15 +19,15 @@ export class Pack extends Object implements FabricPack {
     constructor(location: PackLocationInfo, resources: Pack$ResourcesSupplier, metadata: Pack$Metadata, selectionConfig: PackSelectionConfig)
     // private location: PackLocationInfo;
     // private metadata: Pack$Metadata;
-    // private parentsPredicate: (param0: Object) => kotlin.Boolean;
+    // private parentsPredicate: (param0: Object) => boolean;
     // private resources: Pack$ResourcesSupplier;
     // private selectionConfig: PackSelectionConfig;
     equals(o: Object | null): boolean;
     fabric$isHidden(): boolean;
     fabric$parentsEnabled(arg0: string[]): boolean;
     fabric$parentsEnabled(arg0: (Object | null)[]): boolean;
-    fabric$setParentsPredicate(arg0: (param0: string[]) => kotlin.Boolean): void;
-    fabric$setParentsPredicate(arg0: (param0: Object) => kotlin.Boolean): void;
+    fabric$setParentsPredicate(arg0: (param0: string[]) => boolean): void;
+    fabric$setParentsPredicate(arg0: (param0: Object) => boolean): void;
     getChatLink(enabled: boolean): Component;
     getCompatibility(): PackCompatibility;
     getDefaultPosition(): Pack$Position;

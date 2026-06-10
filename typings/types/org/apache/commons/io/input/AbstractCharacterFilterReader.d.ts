@@ -7,8 +7,8 @@ export abstract class AbstractCharacterFilterReader extends FilterReader {
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
     constructor(arg0: Reader)
-    constructor(arg0: Reader, arg1: (param0: number) => kotlin.Boolean)
-    // private skip: (param0: number) => kotlin.Boolean;
+    constructor(arg0: Reader, arg1: (param0: number) => boolean)
+    // private skip: (param0: number) => boolean;
     filter(arg0: number): boolean;
     read(): number;
     read(arg0: CharBuffer): number;

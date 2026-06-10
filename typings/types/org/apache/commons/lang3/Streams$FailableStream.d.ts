@@ -11,15 +11,15 @@ export class Streams$FailableStream<O extends Object | number | string | boolean
     constructor(arg0: Stream<O>)
     // private stream: Stream<O>;
     // private terminated: boolean;
-    allMatch(arg0: (param0: O) => Object | null): boolean;
-    anyMatch(arg0: (param0: O) => Object | null): boolean;
+    allMatch(arg0: (param0: O) => boolean): boolean;
+    anyMatch(arg0: (param0: O) => boolean): boolean;
     assertNotTerminated(): void;
     collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: O) => void, arg2: (param0: R, param1: R) => void): R;
-    collect<R extends Object | number | string | boolean>(arg0: Collector<O, A, R>): R;
-    filter(arg0: (param0: O) => Object | null): Streams$FailableStream<O>;
+    collect<R extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Collector<O, A, R>): R;
+    filter(arg0: (param0: O) => boolean): Streams$FailableStream<O>;
     forEach(arg0: (param0: O) => void): void;
     makeTerminated(): void;
-    map(arg0: (param0: O) => Object | null): Streams$FailableStream<R>;
-    reduce(arg0: O, arg1: (param0: O, param1: Object | null) => unknown): O;
+    map<R extends Object | number | string | boolean>(arg0: (param0: O) => R): Streams$FailableStream<R>;
+    reduce(arg0: O, arg1: (param0: O, param1: Object | null) => Object | null): O;
     stream(): Stream<O>;
 }

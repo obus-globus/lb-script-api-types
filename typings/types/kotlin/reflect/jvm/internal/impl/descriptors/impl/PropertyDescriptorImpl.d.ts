@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
+import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
@@ -38,7 +39,7 @@ export class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     readonly lateInit: boolean;
     readonly modality: Modality;
     readonly original: PropertyDescriptor;
-    // private overriddenProperties: E[];
+    // private overriddenProperties: PropertyDescriptor[];
     readonly setter: PropertySetterDescriptor;
     readonly setterProjectedOut: boolean;
     readonly typeParameters: TypeParameterDescriptor[];
@@ -57,7 +58,7 @@ export class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     getKind(): CallableMemberDescriptor$Kind;
     getModality(): Modality;
     getOriginal(): PropertyDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): PropertyDescriptor[];
     getReturnType(): KotlinType;
     getSetter(): PropertySetterDescriptor;
     // private getSourceToUseForCopy(arg0: boolean, arg1: PropertyDescriptor): SourceElement;
@@ -75,7 +76,7 @@ export class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     isSetterProjectedOut(): boolean;
     newCopyBuilder(): PropertyDescriptorImpl$CopyConfiguration;
     setInType(arg0: KotlinType): void;
-    setOverriddenDescriptors(arg0: E[]): void;
+    setOverriddenDescriptors(arg0: CallableMemberDescriptor[]): void;
     setSetterProjectedOut(arg0: boolean): void;
     setType(arg0: KotlinType, arg1: TypeParameterDescriptor[], arg2: ReceiverParameterDescriptor, arg3: ReceiverParameterDescriptor, arg4: ReceiverParameterDescriptor[]): void;
     setVisibility(arg0: DescriptorVisibility): void;

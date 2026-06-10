@@ -6,6 +6,7 @@ import type { InternalResource } from '../../../../../com/oracle/truffle/api/Int
 import type { ThreadLocalAction } from '../../../../../com/oracle/truffle/api/ThreadLocalAction.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { TruffleFile } from '../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
+import type { TruffleFile$FileTypeDetector } from '../../../../../com/oracle/truffle/api/TruffleFile$FileTypeDetector.d.ts'
 import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLanguage$ContextReference } from '../../../../../com/oracle/truffle/api/TruffleLanguage$ContextReference.d.ts'
 import type { TruffleLanguage$Env } from '../../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
@@ -77,18 +78,18 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     closeContext(polyglotContext: Object, force: boolean, resourceExhaused: boolean, resourceExhausedReason: string): void;
     closeEngine(polyglotEngine: Object, force: boolean): void;
     createCancelExecution(sourceSection: SourceSection, message: string, resourceLimit: boolean): ThreadDeath;
-    createContextReference(languageClass: Class<T>): TruffleLanguage$ContextReference<C>;
+    createContextReference<C extends Object | number | string | boolean, T extends TruffleLanguage<C>>(languageClass: Class<T>): TruffleLanguage$ContextReference<C>;
     createDefaultLoggerCache(): Object;
     createExitException(sourceSection: SourceSection, message: string, exitCode: number): ThreadDeath;
     createHostAdapterClass(polyglotLanguageContext: Object, types: Object[], classOverrides: Object): Object;
-    createInstrumentContextLocal(factory: Object): ContextLocal<T>;
-    createInstrumentContextThreadLocal(factory: Object): ContextThreadLocal<T>;
+    createInstrumentContextLocal<T extends Object | number | string | boolean>(factory: Object): ContextLocal<T>;
+    createInstrumentContextThreadLocal<T extends Object | number | string | boolean>(factory: Object): ContextThreadLocal<T>;
     createInstrumentSystemThread(polyglotInstrument: Object, runnable: () => void, threadGroup: ThreadGroup): Thread;
     createInternalContext(sourcePolyglotLanguageContext: Object, out: OutputStream, err: OutputStream, in_: InputStream, timeZone: ZoneId, permittedLanguages: string[], config: { [key: string]: Object }, options: { [key: string]: string }, arguments: { [key: string]: string[] }, sharingEnabled: boolean, initializeCreatorContext: boolean, onCancelled: () => void, onExited: (param0: number) => void, onClosed: () => void, inheritAccess: boolean, allowCreateThreads: boolean, threadAccessDeniedHandler: (param0: string) => void, allowNativeAccess: boolean, allowIO: boolean, allowHostLookup: boolean, allowHostClassLoading: boolean, allowCreateProcess: boolean, allowPolyglotAccess: boolean, allowEnvironmentAccess: boolean, environment: { [key: string]: string }, allowInnerContextOptions: boolean): TruffleContext;
     createInterruptExecution(sourceSection: SourceSection): Throwable;
-    createLanguageContextLocal(factory: Object): ContextLocal<T>;
-    createLanguageContextThreadLocal(factory: Object): ContextThreadLocal<T>;
-    createLanguageReference(targetLanguageClass: Class<T>): TruffleLanguage$LanguageReference<T>;
+    createLanguageContextLocal<T extends Object | number | string | boolean>(factory: Object): ContextLocal<T>;
+    createLanguageContextThreadLocal<T extends Object | number | string | boolean>(factory: Object): ContextThreadLocal<T>;
+    createLanguageReference<T extends TruffleLanguage<Object>>(targetLanguageClass: Class<T>): TruffleLanguage$LanguageReference<T>;
     createLanguageSystemThread(polyglotLanguageContext: Object, runnable: () => void, threadGroup: ThreadGroup): Thread;
     createLogRecord(level: Level, loggerName: string, message: string, className: string, methodName: string, parameters: Object[], thrown: Throwable, formatKind: string): LogRecord;
     createLogRecord(loggerCache: Object, level: Level, loggerName: string, message: string, className: string, methodName: string, parameters: Object[], thrown: Throwable): LogRecord;
@@ -110,7 +111,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     exitContext(polyglotContext: Object, exitLocation: Node, exitCode: number): void;
     exportSymbol(polyglotLanguageContext: Object, symbolName: string, value: Object): void;
     finalizeStore(polyglotEngine: Object): Object;
-    findCallTargets(polyglotEngine: Object): E[];
+    findCallTargets(polyglotEngine: Object): CallTarget[];
     findMetaObjectForLanguage(polyglotLanguageContext: Object, value: Object): Object;
     getAsynchronousStackDepth(polylgotLanguageInstance: Object): number;
     getCancelExecutionSourceLocation(cancelExecution: Throwable): SourceSection;
@@ -118,7 +119,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getContextLogHandler(polyglotContextImpl: Object): AbstractPolyglotImpl$LogHandler;
     getContextLoggerCache(polyglotLanguageContext: Object): Object;
     getContextSandboxPolicy(polyglotLanguageContext: Object): SandboxPolicy;
-    getCurrentContext<C extends Object | number | string | boolean>(languageClass: Class<T>): C;
+    getCurrentContext<C extends Object | number | string | boolean, T extends TruffleLanguage<C>>(languageClass: Class<T>): C;
     getCurrentCreatorTruffleContext(): TruffleContext;
     getCurrentFileSystemContext(): Object;
     getCurrentHostContext(): Object;
@@ -129,7 +130,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getEncapsulatingNodeReference(invalidateOnNull: boolean): EncapsulatingNodeReference;
     getEngineData(polyglotEngine: Object): Object;
     getEngineErr(engine: Object): DispatchOutputStream;
-    getEngineFileTypeDetectors(engineFileSystemContext: Object): { [key: string]: E[] };
+    getEngineFileTypeDetectors(engineFileSystemContext: Object): { [key: string]: TruffleFile$FileTypeDetector[] };
     getEngineFromPolyglotObject(polyglotObject: Object): Object;
     getEngineId(polyglotEngine: Object): number;
     getEngineIn(engine: Object): InputStream;
@@ -187,7 +188,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getReinitializedPath(truffleFile: TruffleFile): string;
     getReinitializedURI(truffleFile: TruffleFile): URI;
     getRelativePathInResourceRoot(truffleFile: TruffleFile): string;
-    getResourceIds(componentId: string): E[];
+    getResourceIds(componentId: string): string[];
     getScope(polyglotLanguageContext: Object, languageInfo: LanguageInfo, internal: boolean): Object;
     getStaticObjectClassLoaders(polyglotLanguageInstance: Object, referenceClass: Class<Object>): Object;
     getStaticObjectStorageStrategy(polyglotLanguageInstance: Object): string;
@@ -259,13 +260,13 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     leaveInternalContext(node: Node, polyglotContext: Object, prev: Object): void;
     leaveLanguageFromRuntime(language: TruffleLanguage<Object>, prev: Object): void;
     leaveRootNodeVisit(root: RootNode, prev: Object): void;
-    loadServices(type: Class<T>): T[];
+    loadServices<T extends Object | number | string | boolean>(type: Class<T>): T[];
     logFallback(s: string): void;
     lookup<T extends Object | number | string | boolean>(info: InstrumentInfo, serviceClass: Class<T>): T;
     lookup<S extends Object | number | string | boolean>(language: LanguageInfo, type: Class<S>): S;
     lookupHostSymbol(polyglotLanguageContext: Object, env: TruffleLanguage$Env, symbolName: string): Object;
     lookupService<S extends Object | number | string | boolean>(polyglotLanguageContext: Object, language: LanguageInfo, accessingLanguage: LanguageInfo, type: Class<S>): S;
-    mergeHostGuestFrames(polyglotEngine: Object, hostStack: StackTraceElement[], guestFrames: Iterator<G>, inHostLanguage: boolean, includeHostFrames: boolean, hostFrameConvertor: (param0: StackTraceElement) => T, guestFrameConvertor: (param0: G) => T): Iterator<T>;
+    mergeHostGuestFrames<T extends Object | number | string | boolean, G extends Object | number | string | boolean>(polyglotEngine: Object, hostStack: StackTraceElement[], guestFrames: Iterator<G>, inHostLanguage: boolean, includeHostFrames: boolean, hostFrameConvertor: (param0: StackTraceElement) => T, guestFrameConvertor: (param0: G) => T): Iterator<T>;
     onSourceCreated(source: Source): void;
     parseForLanguage(sourceLanguageContext: Object, source: Source, argumentNames: string[], allowInternal: boolean): CallTarget;
     parseInlineForLanguage(languageContext: Object, source: Source, node: Node, frame: MaterializedFrame): ExecutableNode;

@@ -11,10 +11,10 @@ export class RamTarget extends Behavior<Goat> {
     static DEFAULT_DURATION: number;
     static RAM_SPEED_FORCE_FACTOR: number;
     static TIME_OUT_DURATION: number;
-    constructor(getTimeBetweenRams: (param0: Goat) => UniformInt, ramTargeting: TargetingConditions, speed: number, getKnockbackForce: (param0: Goat) => kotlin.Double, getImpactSound: (param0: Goat) => SoundEvent, getHornBreakSound: (param0: Goat) => SoundEvent)
+    constructor(getTimeBetweenRams: (param0: Goat) => UniformInt, ramTargeting: TargetingConditions, speed: number, getKnockbackForce: (param0: Goat) => number, getImpactSound: (param0: Goat) => SoundEvent, getHornBreakSound: (param0: Goat) => SoundEvent)
     // private getHornBreakSound: (param0: Goat) => SoundEvent;
     // private getImpactSound: (param0: Goat) => SoundEvent;
-    // private getKnockbackForce: (param0: Goat) => kotlin.Double;
+    // private getKnockbackForce: (param0: Goat) => number;
     // private getTimeBetweenRams: (param0: Goat) => UniformInt;
     // private ramDirection: Vec3;
     // private ramTargeting: TargetingConditions;

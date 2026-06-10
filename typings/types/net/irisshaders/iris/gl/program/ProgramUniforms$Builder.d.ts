@@ -36,10 +36,8 @@ export class ProgramUniforms$Builder extends Object implements DynamicLocational
     buildUniforms(): ProgramUniforms;
     externallyManagedUniform(arg0: string, arg1: UniformType): UniformHolder;
     location(arg0: string, arg1: UniformType): OptionalInt;
-    uniform1f(arg0: string, arg1: () => kotlin.Double, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1f(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1f(arg0: string, arg1: () => kotlin.Float, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
-    uniform1i(arg0: string, arg1: () => kotlin.Int, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1f(arg0: string, arg1: () => number, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
+    uniform1i(arg0: string, arg1: () => number, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
     uniform2f(arg0: string, arg1: () => Vector2f, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
     uniform2i(arg0: string, arg1: () => Vector2i, arg2: ValueUpdateNotifier): DynamicLocationalUniformHolder;
     uniform3f(arg0: string, arg1: () => Vector3f, arg2: ValueUpdateNotifier): DynamicUniformHolder;

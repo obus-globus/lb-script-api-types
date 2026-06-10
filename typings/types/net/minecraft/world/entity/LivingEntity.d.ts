@@ -104,7 +104,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static TAG_AIR: string;
@@ -137,7 +137,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
@@ -290,7 +290,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     // private floatInWaterWhileRidden(): void;
     forceAddEffect(newEffect: MobEffectInstance, source: Entity): void;
     getAbsorptionAmount(): number;
-    getActiveEffects(): E[];
+    getActiveEffects(): MobEffectInstance[];
     getActiveEffectsMap(): Map<Holder<MobEffect>, MobEffectInstance>;
     getActiveItem(): ItemStack;
     getAgeScale(): number;
@@ -426,7 +426,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     isDeadOrDying(): boolean;
     isEquippableInSlot(itemStack: ItemStack, slot: EquipmentSlot): boolean;
     isFallFlying(): boolean;
-    isHolding(itemPredicate: (param0: ItemStack) => kotlin.Boolean): boolean;
+    isHolding(itemPredicate: (param0: ItemStack) => boolean): boolean;
     isHolding(item: Item): boolean;
     isIgnoringFallDamageFromCurrentImpulse(): boolean;
     isImmobile(): boolean;
@@ -470,7 +470,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     onClimbable(): boolean;
     onEffectAdded(effect: MobEffectInstance, source: Entity): void;
     onEffectUpdated(effect: MobEffectInstance, doRefreshAttributes: boolean, source: Entity): void;
-    onEffectsRemoved(effects: E[]): void;
+    onEffectsRemoved(effects: MobEffectInstance[]): void;
     onEnterCombat(): void;
     onEquipItem(slot: EquipmentSlot, oldStack: ItemStack, stack: ItemStack): void;
     onEquippedItemBroken(brokenItem: Item, inSlot: EquipmentSlot): void;
@@ -542,7 +542,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     skipDropExperience(): void;
     spawnItemParticles(itemStack: ItemStack, count: number): void;
     stabAttack(weaponSlot: EquipmentSlot, target: Entity, baseDamage: number, dealsDamage: boolean, dealsKnockback: boolean, dismounts: boolean): boolean;
-    stabbedEntities(filter: (param0: Entity) => kotlin.Boolean): number;
+    stabbedEntities(filter: (param0: Entity) => boolean): number;
     startSleeping(bedPosition: BlockPos): void;
     startUsingItem(hand: InteractionHand): void;
     stopFallFlying(): void;

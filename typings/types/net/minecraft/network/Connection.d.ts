@@ -25,6 +25,7 @@ import type { ConnectionProtocol } from '../../../net/minecraft/network/Connecti
 import type { DisconnectionDetails } from '../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { PacketListener } from '../../../net/minecraft/network/PacketListener.d.ts'
 import type { ProtocolInfo } from '../../../net/minecraft/network/ProtocolInfo.d.ts'
+import type { ServerboundPacketListener } from '../../../net/minecraft/network/ServerboundPacketListener.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketFlow } from '../../../net/minecraft/network/protocol/PacketFlow.d.ts'
@@ -78,7 +79,7 @@ export class Connection extends SimpleChannelInboundHandler<Packet<Object>> impl
     disconnect(reason: Component): void;
     // private doSendPacket(packet: Packet<Object>, listener: ChannelFutureListener, flush: boolean): void;
     exceptionCaught(ctx: ChannelHandlerContext, cause: Throwable): void;
-    fabric_getPendingChannelsNames(arg0: ConnectionProtocol): E[];
+    fabric_getPendingChannelsNames(arg0: ConnectionProtocol): (Object | null)[];
     fabric_getSyncedRecipeSerializers(): (Object | null)[];
     fabric_setSyncedRecipeSerializers(arg0: (Object | null)[]): void;
     // private flush(): void;
@@ -94,8 +95,8 @@ export class Connection extends SimpleChannelInboundHandler<Packet<Object>> impl
     getRemoteAddress(): SocketAddress;
     getSending(): PacketFlow;
     handleDisconnection(): void;
-    // private initiateServerboundConnection<C extends ClientboundPacketListener>(hostName: string, port: number, outbound: ProtocolInfo<S>, inbound: ProtocolInfo<C>, listener: C, intent: ClientIntent): void;
-    initiateServerboundPlayConnection<C extends ClientboundPacketListener>(hostName: string, port: number, outbound: ProtocolInfo<S>, inbound: ProtocolInfo<C>, listener: C, transfer: boolean): void;
+    // private initiateServerboundConnection<S extends ServerboundPacketListener, C extends ClientboundPacketListener>(hostName: string, port: number, outbound: ProtocolInfo<S>, inbound: ProtocolInfo<C>, listener: C, intent: ClientIntent): void;
+    initiateServerboundPlayConnection<S extends ServerboundPacketListener, C extends ClientboundPacketListener>(hostName: string, port: number, outbound: ProtocolInfo<S>, inbound: ProtocolInfo<C>, listener: C, transfer: boolean): void;
     initiateServerboundPlayConnection(hostName: string, port: number, listener: ClientLoginPacketListener): void;
     initiateServerboundStatusConnection(hostName: string, port: number, listener: ClientStatusPacketListener): void;
     isConnected(): boolean;

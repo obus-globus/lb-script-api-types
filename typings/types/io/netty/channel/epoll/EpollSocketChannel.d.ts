@@ -19,7 +19,7 @@ export class EpollSocketChannel extends AbstractEpollStreamChannel implements So
     constructor(arg0: SocketProtocolFamily)
     constructor(arg0: number)
     // private config: EpollSocketChannelConfig;
-    // private tcpMd5SigAddresses: E[];
+    // private tcpMd5SigAddresses: InetAddress[];
     config(): EpollSocketChannelConfig;
     doConnect0(arg0: SocketAddress): boolean;
     localAddress(): InetSocketAddress;

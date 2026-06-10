@@ -40,8 +40,8 @@ export class DateTimeFormatter extends Object {
     static ofLocalizedTime(paramarg0: FormatStyle): DateTimeFormatter;
     static ofPattern(paramarg0: string): DateTimeFormatter;
     static ofPattern(paramarg0: string, paramarg1: Locale): DateTimeFormatter;
-    static parsedExcessDays(): (param0: Period) => unknown;
-    static parsedLeapSecond(): (param0: boolean) => unknown;
+    static parsedExcessDays(): (param0: TemporalAccessor) => Period;
+    static parsedLeapSecond(): (param0: TemporalAccessor) => boolean;
     constructor(arg0: DateTimeFormatterBuilder$CompositePrinterParser, arg1: Locale, arg2: DecimalStyle, arg3: ResolverStyle, arg4: TemporalField[], arg5: Chronology, arg6: ZoneId)
     // private chrono: Chronology;
     readonly decimalStyle: DecimalStyle;
@@ -62,13 +62,13 @@ export class DateTimeFormatter extends Object {
     localizedBy(arg0: Locale): DateTimeFormatter;
     parse(arg0: CharSequence): TemporalAccessor;
     parse(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
-    parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: (param0: T) => unknown): T;
-    parseBest(arg0: CharSequence, arg1: (param0: TemporalAccessor) => unknown[]): TemporalAccessor;
+    parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: (param0: TemporalAccessor) => T): T;
+    parseBest(arg0: CharSequence, arg1: (param0: TemporalAccessor) => Object | null[]): TemporalAccessor;
     // private parseResolved0(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
     parseUnresolved(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
     // private parseUnresolved0(arg0: CharSequence, arg1: ParsePosition): DateTimeParseContext;
     toFormat(): Format;
-    toFormat(arg0: (param0: TemporalAccessor) => unknown): Format;
+    toFormat(arg0: (param0: TemporalAccessor) => Object | null): Format;
     toPrinterParser(arg0: boolean): DateTimeFormatterBuilder$CompositePrinterParser;
     toString(): string;
     withChronology(arg0: Chronology): DateTimeFormatter;

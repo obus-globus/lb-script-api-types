@@ -7,6 +7,7 @@ import type { KeyEvent } from '../../java/awt/event/KeyEvent.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Accessible } from '../../javax/accessibility/Accessible.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
 export class MenuItem extends MenuComponent implements Accessible {
@@ -37,7 +38,7 @@ export class MenuItem extends MenuComponent implements Accessible {
     getActionCommandImpl(): string;
     getActionListeners(): ActionListener[];
     getLabel(): string;
-    getListeners(arg0: Class<T>): T[];
+    getListeners<T extends EventListener>(arg0: Class<T>): T[];
     getShortcut(): MenuShortcut;
     getShortcutMenuItem(arg0: MenuShortcut): MenuItem;
     handleShortcut(arg0: KeyEvent): boolean;

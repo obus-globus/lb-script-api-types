@@ -10,11 +10,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractListeningExecutorService extends AbstractExecutorService implements ListeningExecutorService {
     constructor()
     awaitTermination(timeout: Duration): boolean;
-    invokeAll(tasks: E[], timeout: Duration): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(tasks: E[], timeout: Duration): T;
+    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): T;
     newTaskFor<T extends Object | number | string | boolean>(runnable: () => void, value: T): RunnableFuture<T>;
-    newTaskFor(callable: () => T): RunnableFuture<T>;
+    newTaskFor<T extends Object | number | string | boolean>(callable: () => T): RunnableFuture<T>;
     submit(task: () => void): ListenableFuture<Object>;
     submit<T extends Object | number | string | boolean>(task: () => void, result: T): ListenableFuture<T>;
-    submit(task: () => T): ListenableFuture<T>;
+    submit<T extends Object | number | string | boolean>(task: () => T): ListenableFuture<T>;
 }

@@ -25,5 +25,5 @@ export abstract class ForwardingTable<R extends Object | number | string | boole
     rowKeySet(): R[];
     rowMap(): Map<R, Map<C, V>>;
     size(): number;
-    values(): E[];
+    values(): V[];
 }

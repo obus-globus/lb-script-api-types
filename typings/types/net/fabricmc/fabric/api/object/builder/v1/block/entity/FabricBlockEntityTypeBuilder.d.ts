@@ -5,14 +5,14 @@ import type { BlockPos } from '../../../../../../../../../net/minecraft/core/Blo
 import type { Block } from '../../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockEntity } from '../../../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
+import type { BlockState } from '../../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class FabricBlockEntityTypeBuilder<T extends BlockEntity> extends Object {
-    static create(paramarg0: (param0: Object | null, param1: BlockPos) => unknown, paramarg1: (Object | null)[]): FabricBlockEntityTypeBuilder<Object>;
-    private constructor(arg0: (param0: T, param1: BlockPos) => unknown)
+    static create(paramarg0: (param0: BlockPos, param1: BlockState) => BlockEntity | null, paramarg1: (Object | null)[]): FabricBlockEntityTypeBuilder<BlockEntity>;
+    private constructor(arg0: (param0: BlockPos, param1: BlockState) => T)
     // private blocks: Block[];
     // private canPotentiallyExecuteCommands: boolean;
-    // private factory: (param0: T, param1: BlockPos) => unknown;
+    // private factory: (param0: BlockPos, param1: BlockState) => T;
     addBlock(arg0: Block): FabricBlockEntityTypeBuilder<T>;
-    addBlocks(arg0: E[]): FabricBlockEntityTypeBuilder<T>;
     addBlocks(arg0: Block[]): FabricBlockEntityTypeBuilder<T>;
     build(): BlockEntityType<T>;
     build(arg0: Type<Object>): BlockEntityType<T>;

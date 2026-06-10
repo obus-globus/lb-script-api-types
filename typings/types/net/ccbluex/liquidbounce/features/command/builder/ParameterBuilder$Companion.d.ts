@@ -8,5 +8,5 @@ export class ParameterBuilder$Companion extends Object {
     MODULE_VALIDATOR: Parameter$Verificator<ClientModule>;
     POSITIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
     STRING_VALIDATOR: Parameter$Verificator<string>;
-    begin(name: string): ParameterBuilder<T>;
+    begin<T extends Object | number | string | boolean>(name: string): ParameterBuilder<T>;
 }

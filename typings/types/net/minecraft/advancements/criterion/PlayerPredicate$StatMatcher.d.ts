@@ -7,7 +7,7 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { Stat } from '../../../../net/minecraft/stats/Stat.d.ts'
 import type { StatsCounter } from '../../../../net/minecraft/stats/StatsCounter.d.ts'
 export class PlayerPredicate$StatMatcher<T extends Object | number | string | boolean> extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<PlayerPredicate$StatMatcher<Object>>;
     constructor(type: Stat<T>[], value: Holder<T>, range: MinMaxBounds$Ints)
     private constructor(type: Stat<T>[], value: Holder<T>, range: MinMaxBounds$Ints, stat: () => Stat<T>)
     // private range: MinMaxBounds$Ints;

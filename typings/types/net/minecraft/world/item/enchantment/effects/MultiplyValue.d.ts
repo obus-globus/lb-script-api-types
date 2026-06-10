@@ -8,7 +8,7 @@ import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/wor
 export class MultiplyValue extends Record implements EnchantmentValueEffect {
     static CODEC: Codec<EnchantmentValueEffect>;
     static CODEC: MapCodec<MultiplyValue>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(factor: LevelBasedValue)
     // private factor: LevelBasedValue;
     codec(): MapCodec<MultiplyValue>;

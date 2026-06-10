@@ -9,7 +9,7 @@ import type { NumberParseMatcher } from '../../../../../../../../../org/graalvm/
 import type { NumberParserImpl } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/parse/NumberParserImpl.d.ts'
 import type { ParsedNumber } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/parse/ParsedNumber.d.ts'
 export class AffixMatcher extends Object implements NumberParseMatcher {
-    static COMPARATOR: (param0: AffixMatcher) => kotlin.Boolean;
+    static COMPARATOR: (param0: Object) => boolean;
     static createMatchers(parampatternInfo: AffixPatternProvider, paramoutput: NumberParserImpl, paramfactory: AffixTokenMatcherFactory, paramignorables: IgnorablesMatcher, paramparseFlags: number): void;
     private constructor(prefix: AffixPatternMatcher, suffix: AffixPatternMatcher, flags: number)
     // private flags: number;

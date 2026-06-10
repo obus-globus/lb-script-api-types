@@ -14,6 +14,7 @@ import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { AlgorithmConstraints } from '../../../../java/security/AlgorithmConstraints.d.ts'
 import type { SecretKeySpec } from '../../../../javax/crypto/spec/SecretKeySpec.d.ts'
+import type { SNIMatcher } from '../../../../javax/net/ssl/SNIMatcher.d.ts'
 import type { SNIServerName } from '../../../../javax/net/ssl/SNIServerName.d.ts'
 import type { SSLEngine } from '../../../../javax/net/ssl/SSLEngine.d.ts'
 import type { SSLEngineResult } from '../../../../javax/net/ssl/SSLEngineResult.d.ts'
@@ -43,7 +44,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     // private isInboundDone: boolean;
     // private jdkCompatibilityMode: boolean;
     // private leak: ResourceLeakTracker<ReferenceCountedOpenSslEngine>;
-    // private matchers: E[];
+    // private matchers: SNIMatcher[];
     // private maxWrapBufferSize: number;
     // private maxWrapOverhead: number;
     // private needTask: boolean;

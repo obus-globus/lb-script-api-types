@@ -13,7 +13,7 @@ export class GameEvent extends Record {
     static BLOCK_DETACH: Holder$Reference<GameEvent>;
     static BLOCK_OPEN: Holder$Reference<GameEvent>;
     static BLOCK_PLACE: Holder$Reference<GameEvent>;
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<GameEvent>>;
     static CONTAINER_CLOSE: Holder$Reference<GameEvent>;
     static CONTAINER_OPEN: Holder$Reference<GameEvent>;
     static DEFAULT_NOTIFICATION_RADIUS: number;

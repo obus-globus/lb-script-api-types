@@ -6,8 +6,8 @@ export class StackTraceRecoveryKt extends Object {
     static initCause(paramarg0: Throwable, paramarg1: Throwable): void;
     static isArtificial(paramarg0: StackTraceElement): boolean;
     static recoverAndThrow(paramarg0: Throwable, paramarg1: Continuation<Object>): Object;
-    static recoverStackTrace(paramarg0: Object | null): Object | null;
-    static recoverStackTrace(paramarg0: Object | null, paramarg1: Continuation<Object>): Object | null;
-    static unwrap(paramarg0: Object | null): Object | null;
-    static unwrapImpl(paramarg0: Object | null): Object | null;
+    static recoverStackTrace(paramarg0: Throwable | null): Throwable | null;
+    static recoverStackTrace(paramarg0: Throwable | null, paramarg1: Continuation<Object>): Throwable | null;
+    static unwrap(paramarg0: Throwable | null): Throwable | null;
+    static unwrapImpl(paramarg0: Throwable | null): Throwable | null;
 }

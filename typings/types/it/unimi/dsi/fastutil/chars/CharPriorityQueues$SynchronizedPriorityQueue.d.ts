@@ -9,7 +9,7 @@ export class CharPriorityQueues$SynchronizedPriorityQueue extends Object impleme
     // private sync: Object;
     changed(): void;
     clear(): void;
-    comparator(): (param0: string, param1: string) => kotlin.Int;
+    comparator(): (param0: string, param1: string) => number;
     dequeue(): string;
     dequeueChar(): string;
     enqueue(arg0: string): void;

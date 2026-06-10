@@ -13,7 +13,7 @@ import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.
 export class BlockPredicate$Builder extends Object {
     static block(): BlockPredicate$Builder;
     private constructor()
-    // private blocks: Optional<Holder<T>[]>;
+    // private blocks: Optional<Holder<Block>[]>;
     // private components: DataComponentMatchers;
     // private nbt: Optional<NbtPredicate>;
     // private properties: Optional<StatePropertiesPredicate>;
@@ -21,7 +21,6 @@ export class BlockPredicate$Builder extends Object {
     components(components: DataComponentMatchers): BlockPredicate$Builder;
     hasNbt(nbt: CompoundTag): BlockPredicate$Builder;
     of(lookup: HolderGetter<Block>, blocks: Block[]): BlockPredicate$Builder;
-    of(lookup: HolderGetter<Block>, blocks: E[]): BlockPredicate$Builder;
     of(lookup: HolderGetter<Block>, tag: TagKey<Block>): BlockPredicate$Builder;
     setProperties(properties: StatePropertiesPredicate$Builder): BlockPredicate$Builder;
 }

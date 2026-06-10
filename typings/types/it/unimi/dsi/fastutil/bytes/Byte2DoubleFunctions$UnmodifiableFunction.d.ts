@@ -3,8 +3,8 @@ import type { Byte2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil/b
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2DoubleFunctions$UnmodifiableFunction extends AbstractByte2DoubleFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Double)
-    // private function: (param0: number) => kotlin.Double;
+    constructor(arg0: (param0: number) => number)
+    // private function: (param0: number) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

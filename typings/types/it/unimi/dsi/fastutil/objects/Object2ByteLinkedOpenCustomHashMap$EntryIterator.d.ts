@@ -8,10 +8,10 @@ export class Object2ByteLinkedOpenCustomHashMap$EntryIterator extends Object2Byt
     constructor(null_: Object2ByteLinkedOpenCustomHashMap$EntryIterator)
     constructor(null_: Object2ByteLinkedOpenCustomHashMap$EntryIterator)
     // private entry: Object2ByteLinkedOpenCustomHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Object2ByteMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Object2ByteLinkedOpenCustomHashMap$MapEntry;
-    previous(): Object2ByteLinkedOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2ByteMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Object2ByteMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Object2ByteLinkedOpenCustomHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Object2ByteLinkedOpenCustomHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Object2ByteMap$Entry<K>): void;
 }

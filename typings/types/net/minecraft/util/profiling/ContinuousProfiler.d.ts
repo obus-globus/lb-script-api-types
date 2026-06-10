@@ -6,11 +6,11 @@ import type { ProfileCollector } from '../../../../net/minecraft/util/profiling/
 import type { ProfileResults } from '../../../../net/minecraft/util/profiling/ProfileResults.d.ts'
 import type { ProfilerFiller } from '../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 export class ContinuousProfiler extends Object {
-    constructor(realTime: () => kotlin.Long, tickCount: () => kotlin.Int, suppressWarnings: () => kotlin.Boolean)
+    constructor(realTime: () => number, tickCount: () => number, suppressWarnings: () => boolean)
     // private profiler: ProfileCollector;
-    // private realTime: () => kotlin.Long;
-    // private suppressWarnings: () => kotlin.Boolean;
-    // private tickCount: () => kotlin.Int;
+    // private realTime: () => number;
+    // private suppressWarnings: () => boolean;
+    // private tickCount: () => number;
     disable(): void;
     enable(): void;
     getFiller(): ProfilerFiller;

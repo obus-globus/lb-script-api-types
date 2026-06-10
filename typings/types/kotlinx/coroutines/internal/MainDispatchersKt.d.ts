@@ -4,5 +4,5 @@ import type { MainDispatcherFactory } from '../../../kotlinx/coroutines/internal
 export class MainDispatchersKt extends Object {
     static isMissing(paramarg0: MainCoroutineDispatcher): boolean;
     static throwMissingMainDispatcherException(): void;
-    static tryCreateDispatcher(paramarg0: MainDispatcherFactory, paramarg1: (Object | null)[]): MainCoroutineDispatcher;
+    static tryCreateDispatcher(paramarg0: MainDispatcherFactory, paramarg1: MainDispatcherFactory[]): MainCoroutineDispatcher;
 }

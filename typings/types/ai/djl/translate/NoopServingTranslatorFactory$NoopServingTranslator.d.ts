@@ -14,8 +14,8 @@ export class NoopServingTranslatorFactory$NoopServingTranslator extends Object i
     constructor(arg0: Batchifier)
     readonly batchifier: Batchifier;
     // private csvTranslator: Translator<string, string>;
-    batchProcessInput(arg0: TranslatorContext, arg1: I[]): (Object | null)[];
-    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): O[];
+    batchProcessInput(arg0: TranslatorContext, arg1: Input[]): (Object | null)[];
+    batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): Output[];
     getBatchifier(): Batchifier;
     getExpansions(): TranslatorOptions;
     prepare(arg0: TranslatorContext): void;

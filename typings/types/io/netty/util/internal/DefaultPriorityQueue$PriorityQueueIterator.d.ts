@@ -5,7 +5,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class DefaultPriorityQueue$PriorityQueueIterator extends Object implements Iterator<T> {
     private constructor(null_: DefaultPriorityQueue$PriorityQueueIterator)
     // private index: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<T extends PriorityQueueNode>(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next<T extends PriorityQueueNode>(): T;
     remove(): void;

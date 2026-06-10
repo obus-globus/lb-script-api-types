@@ -10,11 +10,11 @@ export class GraphBuilder<N extends Object | number | string | boolean> extends 
     static undirected(): GraphBuilder<Object>;
     private constructor(directed: boolean)
     allowsSelfLoops(allowsSelfLoops: boolean): GraphBuilder<N>;
-    build(): MutableGraph<N1>;
-    // private cast(): GraphBuilder<N1>;
+    build<N1 extends N>(): MutableGraph<N1>;
+    // private cast<N1 extends N>(): GraphBuilder<N1>;
     copy(): GraphBuilder<N>;
     expectedNodeCount(expectedNodeCount: number): GraphBuilder<N>;
-    immutable(): ImmutableGraph$Builder<N1>;
-    incidentEdgeOrder(incidentEdgeOrder: ElementOrder<N1>): GraphBuilder<N1>;
-    nodeOrder(nodeOrder: ElementOrder<N1>): GraphBuilder<N1>;
+    immutable<N1 extends N>(): ImmutableGraph$Builder<N1>;
+    incidentEdgeOrder<N1 extends N>(incidentEdgeOrder: ElementOrder<N1>): GraphBuilder<N1>;
+    nodeOrder<N1 extends N>(nodeOrder: ElementOrder<N1>): GraphBuilder<N1>;
 }

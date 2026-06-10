@@ -17,7 +17,7 @@ export class DefaultVocabulary$Builder extends Object {
     build(): DefaultVocabulary;
     optMaxTokens(arg0: number): DefaultVocabulary$Builder;
     optMinFrequency(arg0: number): DefaultVocabulary$Builder;
-    optReservedTokens(arg0: E[]): DefaultVocabulary$Builder;
+    optReservedTokens(arg0: string[]): DefaultVocabulary$Builder;
     optUnknownToken(): DefaultVocabulary$Builder;
     optUnknownToken(arg0: string): DefaultVocabulary$Builder;
 }

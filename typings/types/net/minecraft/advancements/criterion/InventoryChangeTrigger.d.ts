@@ -8,7 +8,7 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class InventoryChangeTrigger extends SimpleCriterionTrigger<InventoryChangeTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<InventoryChangeTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: InventoryChangeTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: InventoryChangeTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, inventory: (Object | null)[], changedItem: ItemStack): void;
     // private trigger(player: ServerPlayer, inventory: (Object | null)[], changedItem: ItemStack, slotsFull: number, slotsEmpty: number, slotsOccupied: number): void;
 }

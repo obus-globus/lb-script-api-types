@@ -3,6 +3,7 @@ import type { NativeAllocator } from '../../../../../com/oracle/truffle/api/stri
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { TruffleString$AsNativeNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$AsNativeNode.d.ts'
 import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/api/strings/TruffleString$Encoding.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TruffleStringFactory$AsNativeNodeGen extends TruffleString$AsNativeNode {
     static create(): TruffleString$AsNativeNode;
     static getUncached(): TruffleString$AsNativeNode;
@@ -10,6 +11,6 @@ export class TruffleStringFactory$AsNativeNodeGen extends TruffleString$AsNative
     // private inflateStrideProfile__field1_: number;
     // private interopLibrary_: Node;
     // private state_0_: number;
-    execute(arg0Value: TruffleString, arg1Value: (param0: number) => kotlin.Any, arg2Value: TruffleString$Encoding, arg3Value: boolean, arg4Value: boolean): TruffleString;
-    // private executeAndSpecialize(arg0Value: TruffleString, arg1Value: (param0: number) => kotlin.Any, arg2Value: TruffleString$Encoding, arg3Value: boolean, arg4Value: boolean): TruffleString;
+    execute(arg0Value: TruffleString, arg1Value: (param0: number) => Object, arg2Value: TruffleString$Encoding, arg3Value: boolean, arg4Value: boolean): TruffleString;
+    // private executeAndSpecialize(arg0Value: TruffleString, arg1Value: (param0: number) => Object, arg2Value: TruffleString$Encoding, arg3Value: boolean, arg4Value: boolean): TruffleString;
 }

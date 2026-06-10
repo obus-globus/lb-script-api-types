@@ -11,7 +11,7 @@ export abstract class AbstractClauseSelectorSolver<T extends ISolver> extends So
     // private selectedState: AbstractClauseSelectorSolver$SelectorState;
     createNewVar(arg0: IVecInt): number;
     discardLastestVar(): void;
-    getAddedVars(): E[];
+    getAddedVars(): number[];
     isSatisfiable(): boolean;
     isSatisfiable(arg0: IVecInt): boolean;
     isSatisfiable(arg0: IVecInt, arg1: boolean): boolean;

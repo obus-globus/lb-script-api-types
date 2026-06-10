@@ -3,8 +3,8 @@ import type { Byte2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/by
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2FloatFunctions$UnmodifiableFunction extends AbstractByte2FloatFunction implements Serializable {
-    constructor(arg0: (param0: number) => kotlin.Float)
-    // private function: (param0: number) => kotlin.Float;
+    constructor(arg0: (param0: number) => number)
+    // private function: (param0: number) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;

@@ -6,7 +6,7 @@ import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/uti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface DoubleSpliterator extends Spliterator$OfDouble, Object {
     forEachRemaining(arg0: (param0: number) => void): void;
-    getComparator(): (param0: number, param1: number) => kotlin.Int;
+    getComparator(): (param0: number, param1: number) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
     trySplit(): DoubleSpliterator;

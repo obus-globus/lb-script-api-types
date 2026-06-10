@@ -13,7 +13,7 @@ export class ModuleLiquidFiller$PlaceOrder extends Enum<ModuleLiquidFiller$Place
     static RANDOM: ModuleLiquidFiller$PlaceOrder;
     static TOP_BOTTOM: ModuleLiquidFiller$PlaceOrder;
     static getEntries(): ModuleLiquidFiller$PlaceOrder[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleLiquidFiller$PlaceOrder;

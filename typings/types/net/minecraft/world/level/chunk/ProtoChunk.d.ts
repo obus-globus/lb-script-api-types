@@ -35,7 +35,7 @@ export class ProtoChunk extends ChunkAccess {
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
     static packOffsetCoordinates(paramblockPos: BlockPos): number;
-    static problemPath(parampos: ChunkPos): () => kotlin.String;
+    static problemPath(parampos: ChunkPos): () => string;
     static unpackOffsetCoordinates(parampackedCoord: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, sections: LevelChunkSection[], blockTicks: ProtoChunkTicks<Block>, fluidTicks: ProtoChunkTicks<Fluid>, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, blendingData: BlendingData)
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, blendingData: BlendingData)
@@ -52,7 +52,7 @@ export class ProtoChunk extends ChunkAccess {
     getBelowZeroRetrogen(): BelowZeroRetrogen;
     getBlockEntities(): Map<BlockPos, BlockEntity>;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
     getBlockEntityNbts(): Map<BlockPos, CompoundTag>;
     getBlockState(pos: BlockPos): BlockState;

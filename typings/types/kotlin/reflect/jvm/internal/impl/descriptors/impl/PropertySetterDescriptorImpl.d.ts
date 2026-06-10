@@ -4,6 +4,7 @@ import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
 import type { DescriptorVisibility } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DescriptorVisibility.d.ts'
 import type { Modality } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/Modality.d.ts'
+import type { PropertyAccessorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyAccessorDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
 import type { PropertySetterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertySetterDescriptor.d.ts'
 import type { SourceElement } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SourceElement.d.ts'
@@ -20,8 +21,8 @@ export class PropertySetterDescriptorImpl extends PropertyAccessorDescriptorImpl
     // private parameter: ValueParameterDescriptor;
     accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getOriginal(): PropertySetterDescriptor;
-    getOverriddenDescriptors(): E[];
-    getOverriddenDescriptors(arg0: boolean): E[];
+    getOverriddenDescriptors(): PropertySetterDescriptor[];
+    getOverriddenDescriptors(arg0: boolean): PropertyAccessorDescriptor[];
     getReturnType(): KotlinType;
     getValueParameters(): ValueParameterDescriptor[];
     initialize(arg0: ValueParameterDescriptor): void;

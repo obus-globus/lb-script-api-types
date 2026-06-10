@@ -13,7 +13,7 @@ export class FabricLauncherBase extends Object implements FabricLauncher_2 {
     // private parent: FabricLauncher;
     getClassByteArray(arg0: string, arg1: boolean): number[];
     getEnvironmentType(): EnvType;
-    getLoadTimeDependencies(): E[];
+    getLoadTimeDependencies(): URL[];
     getResourceAsStream(arg0: string): InputStream;
     getTargetClassLoader(): ClassLoader;
     isClassLoaded(arg0: string): boolean;

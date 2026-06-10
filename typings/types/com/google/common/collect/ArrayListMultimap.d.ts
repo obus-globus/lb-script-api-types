@@ -12,7 +12,7 @@ export class ArrayListMultimap<K extends Object | number | string | boolean, V e
     private constructor(expectedKeys: number, expectedValuesPerKey: number)
     // private expectedValuesPerKey: number;
     createCollection(): V[];
-    createCollection(key: K): E[];
+    createCollection(key: K): V[];
     // private readObject(stream: ObjectInputStream): void;
     trimToSize(): void;
     // private writeObject(stream: ObjectOutputStream): void;

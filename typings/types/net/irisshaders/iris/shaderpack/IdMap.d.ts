@@ -16,8 +16,8 @@ export class IdMap extends Object {
     equals(arg0: Object | null): boolean;
     getBlockProperties(): Int2ObjectLinkedOpenHashMap<BlockEntry[]>;
     getBlockRenderTypeMap(): Map<NamespacedId, BlockRenderType>;
-    getEntityIdMap(): (param0: NamespacedId) => kotlin.Int;
-    getItemIdMap(): (param0: NamespacedId) => kotlin.Int;
+    getEntityIdMap(): (param0: Object) => number;
+    getItemIdMap(): (param0: Object) => number;
     getTagEntries(): Int2ObjectLinkedOpenHashMap<TagEntry[]>;
     hashCode(): number;
 }

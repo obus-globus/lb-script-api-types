@@ -27,5 +27,5 @@ export class BlockItemStateProperties extends Record implements TooltipProvider 
     properties(): { [key: string]: string };
     toString(): string;
     with<T extends Comparable<T>>(property: Property<T>, value: T): BlockItemStateProperties;
-    with(property: Property<T>, state: BlockState): BlockItemStateProperties;
+    with<T extends Comparable<T>>(property: Property<T>, state: BlockState): BlockItemStateProperties;
 }

@@ -9,7 +9,7 @@ export class ModuleAnimations$EquipOffset$Ignores extends Enum<ModuleAnimations$
     static Companion: Tagged$Companion;
     static PLACE: ModuleAnimations$EquipOffset$Ignores;
     static getEntries(): ModuleAnimations$EquipOffset$Ignores[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAnimations$EquipOffset$Ignores;

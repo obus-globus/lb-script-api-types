@@ -5,7 +5,7 @@ import type { RegistryFriendlyByteBuf } from '../../../net/minecraft/network/Reg
 import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 export class AdvancementHolder extends Record {
-    static LIST_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static LIST_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, AdvancementHolder[]>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, AdvancementHolder>;
     constructor(id: Identifier, value: Advancement)
     // private id: Identifier;

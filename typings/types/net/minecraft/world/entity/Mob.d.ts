@@ -20,6 +20,7 @@ import type { DifficultyInstance } from '../../../../net/minecraft/world/Difficu
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { DamageSource } from '../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { ConversionParams } from '../../../../net/minecraft/world/entity/ConversionParams.d.ts'
 import type { ConversionParams$AfterConversion } from '../../../../net/minecraft/world/entity/ConversionParams$AfterConversion.d.ts'
 import type { DropChances } from '../../../../net/minecraft/world/entity/DropChances.d.ts'
@@ -101,7 +102,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
@@ -145,10 +146,10 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static angularFriction(paramentity: Object | null): number;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static angularFriction(paramentity: Entity | null): number;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
-    static checkMobSpawnRules(paramtype: EntityType<Object>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static createLivingAttributes(): AttributeSupplier$Builder;
@@ -157,12 +158,12 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
-    static leashableInArea(paramentity: Entity, paramtest: (param0: Leashable) => kotlin.Boolean): Leashable[];
-    static leashableInArea(paramlevel: Level, parampos: Vec3, paramtest: (param0: Leashable) => kotlin.Boolean): Leashable[];
+    static leashableInArea(paramentity: Entity, paramtest: (param0: Leashable) => boolean): Leashable[];
+    static leashableInArea(paramlevel: Level, parampos: Vec3, paramtest: (param0: Leashable) => boolean): Leashable[];
     static leashableLeashedTo(paramentity: Entity): Leashable[];
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    static tickLeash(paramlevel: ServerLevel, paramentity: Object | null): void;
+    static tickLeash(paramlevel: ServerLevel, paramentity: Entity | null): void;
     constructor(type: EntityType<Mob>, level: Level)
     ambientSoundTime: number;
     // private bodyRotationControl: BodyRotationControl;
@@ -227,7 +228,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     dropFromLootTable(level: ServerLevel, source: DamageSource, playerKilled: boolean, lootTable: ResourceKey<LootTable>, itemStackConsumer: (param0: ItemStack) => void): void;
     dropLeash(): void;
     dropPreservedEquipment(level: ServerLevel): void;
-    dropPreservedEquipment(level: ServerLevel, shouldDrop: (param0: ItemStack) => kotlin.Boolean): EquipmentSlot[];
+    dropPreservedEquipment(level: ServerLevel, shouldDrop: (param0: ItemStack) => boolean): EquipmentSlot[];
     enchantSpawnedArmor(level: ServerLevelAccessor, random: RandomSource, slot: EquipmentSlot, difficulty: DifficultyInstance): void;
     // private enchantSpawnedEquipment(level: ServerLevelAccessor, slot: EquipmentSlot, random: RandomSource, chance: number, difficulty: DifficultyInstance): void;
     enchantSpawnedWeapon(level: ServerLevelAccessor, random: RandomSource, difficulty: DifficultyInstance): void;
@@ -320,7 +321,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     registerDebugValues(level: ServerLevel, registration: DebugValueSource$Registration): void;
     registerGoals(): void;
     removeAfterChangingDimensions(): void;
-    removeAllGoals(predicate: (param0: Goal) => kotlin.Boolean): void;
+    removeAllGoals(predicate: (param0: Goal) => boolean): void;
     removeFreeWill(): void;
     removeLeash(): void;
     removeWhenFarAway(distSqr: number): boolean;

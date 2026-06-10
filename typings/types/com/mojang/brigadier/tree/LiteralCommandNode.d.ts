@@ -11,12 +11,12 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LiteralCommandNode<S extends Object | number | string | boolean> extends CommandNode<S> {
-    constructor(arg0: string, arg1: (param0: S) => kotlin.Int, arg2: (param0: S) => kotlin.Boolean, arg3: CommandNode<S>, arg4: (param0: S) => kotlin.collections.Collection<unknown>, arg5: boolean)
+    constructor(arg0: string, arg1: (param0: CommandContext<S>) => number, arg2: (param0: S) => boolean, arg3: CommandNode<S>, arg4: (param0: CommandContext<S>) => S[], arg5: boolean)
     readonly literal: string;
     // private literalLowerCase: string;
     createBuilder(): LiteralArgumentBuilder<S>;
     equals(arg0: Object | null): boolean;
-    getExamples(): E[];
+    getExamples(): string[];
     getLiteral(): string;
     getName(): string;
     getSortedKey(): string;

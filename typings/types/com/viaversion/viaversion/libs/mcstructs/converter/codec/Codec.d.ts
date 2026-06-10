@@ -10,22 +10,22 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export interface Codec<T extends Object | number | string | boolean> extends DataDeserializer<T>, DataSerializer<T>, Object {
     compactListOf(): Codec<T[]>;
-    converterFlatMap(arg0: (param0: DataConverter<Object>, param1: N) => Result<T>, arg1: (param0: DataConverter<Object>, param1: T) => Result<N>): Codec<N>;
+    converterFlatMap<N extends Object | number | string | boolean>(arg0: (param0: DataConverter<Object>, param1: N) => Result<T>, arg1: (param0: DataConverter<Object>, param1: T) => Result<N>): Codec<N>;
     converterVerified(arg0: (param0: DataConverter<Object>, param1: T) => Result<void>): Codec<T>;
-    flatMap(arg0: (param0: N) => Result<T>, arg1: (param0: T) => Result<N>): Codec<N>;
+    flatMap<N extends Object | number | string | boolean>(arg0: (param0: N) => Result<T>, arg1: (param0: T) => Result<N>): Codec<N>;
     listOf(): Codec<T[]>;
     listOf(arg0: number): Codec<T[]>;
     listOf(arg0: number, arg1: number): Codec<T[]>;
-    map(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
+    map<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
     mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<T>;
-    mapThrowing(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
+    mapThrowing<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
     nonEmptyList(): Codec<T[]>;
     optionalListOf(): Codec<T[]>;
     optionalListOf(arg0: number): Codec<T[]>;
     optionalListOf(arg0: number, arg1: number): Codec<T[]>;
-    typed(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): Codec<N>;
-    typed(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): Codec<N>;
-    typedMap(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): MapCodec<N>;
-    typedMap(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): MapCodec<N>;
+    typed<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): Codec<N>;
+    typed<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): Codec<N>;
+    typedMap<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): MapCodec<N>;
+    typedMap<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): MapCodec<N>;
     verified(arg0: (param0: T) => Result<void>): Codec<T>;
 }

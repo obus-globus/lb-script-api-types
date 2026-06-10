@@ -1,3 +1,4 @@
+import type { NumberTag } from '../../../../../../../../com/viaversion/nbt/tag/NumberTag.d.ts'
 import type { Tag } from '../../../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { SNbtDeserializeException } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/snbt/exceptions/SNbtDeserializeException.d.ts'
 import type { SNbtDeserializer } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/snbt/impl/SNbtDeserializer.d.ts'
@@ -15,11 +16,11 @@ export class SNbtDeserializer_v1_12 extends Object implements SNbtDeserializer<M
     makeReader(arg0: string): StringReader_v1_12;
     readArray(arg0: StringReader_v1_12): Tag;
     readCompound(arg0: StringReader_v1_12): Map$Entry<string, Tag>[];
-    readList(arg0: StringReader_v1_12): T[];
+    readList(arg0: StringReader_v1_12): Tag[];
     readListOrArray(arg0: StringReader_v1_12): Tag;
     readNumber(arg0: string): Tag;
     readPrimitive(arg0: StringReader_v1_12): Tag;
     readPrimitive(arg0: string): Tag;
-    readPrimitiveList(arg0: StringReader_v1_12, arg1: Class<T>, arg2: Class<Tag>): T[];
+    readPrimitiveList<T extends NumberTag>(arg0: StringReader_v1_12, arg1: Class<T>, arg2: Class<Tag>): T[];
     readValue(arg0: StringReader_v1_12): Tag;
 }

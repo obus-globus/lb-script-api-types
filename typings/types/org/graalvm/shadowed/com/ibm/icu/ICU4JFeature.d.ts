@@ -1,4 +1,4 @@
-import type { IOException } from '../../../../../../java/io/IOException.d.ts'
+import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Module } from '../../../../../../java/lang/Module.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
@@ -22,7 +22,7 @@ import type { ICU4JFeature$ThrowingFunction } from '../../../../../../org/graalv
 export class ICU4JFeature extends Object implements Feature {
     constructor()
     // private addCompressedResources(patterns: string[]): void;
-    // private addCompressedResources(patterns: string[], module: Module, entryStream: Stream<string>, openResource: (param0: string) => IOException): void;
+    // private addCompressedResources(patterns: string[], module: Module, entryStream: Stream<string>, openResource: (param0: string) => InputStream): void;
     afterAnalysis(access: Feature$AfterAnalysisAccess): void;
     afterCompilation(access: Feature$AfterCompilationAccess): void;
     afterHeapLayout(access: Feature$AfterHeapLayoutAccess): void;

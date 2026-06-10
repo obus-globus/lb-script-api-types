@@ -11,12 +11,13 @@ import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/clie
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { CycleButton$ValueListSupplier } from '../../../net/minecraft/client/gui/components/CycleButton$ValueListSupplier.d.ts'
+import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 export class OptionInstance$Enum<T extends Object | number | string | boolean> extends Record implements OptionInstance$CycleableValueSet<T> {
     constructor(values: T[], codec: Codec<T>)
     // private codec: Codec<T>;
     // private values: T[];
     codec(): Codec<T>;
-    createButton(tooltip: (param0: T) => net.minecraft.client.gui.components.Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
+    createButton(tooltip: (param0: T) => Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

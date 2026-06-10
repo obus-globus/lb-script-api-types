@@ -37,9 +37,9 @@ export class STBIIOCallbacks extends Struct<STBIIOCallbacks> implements NativeRe
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static neof(paramarg0: number): STBIEOFCallback;
-    static neof(paramarg0: number, paramarg1: (param0: number) => kotlin.Int): void;
+    static neof(paramarg0: number, paramarg1: (param0: number) => number): void;
     static nread(paramarg0: number): STBIReadCallback;
-    static nread(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => kotlin.Int): void;
+    static nread(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => number): void;
     static nskip(paramarg0: number): STBISkipCallback;
     static nskip(paramarg0: number, paramarg1: (param0: number, param1: number) => void): void;
     static validate(paramarg0: number): void;
@@ -50,11 +50,11 @@ export class STBIIOCallbacks extends Struct<STBIIOCallbacks> implements NativeRe
     close(): void;
     create(arg0: number, arg1: ByteBuffer): STBIIOCallbacks;
     eof(): STBIEOFCallback;
-    eof(arg0: (param0: number) => kotlin.Int): STBIIOCallbacks;
+    eof(arg0: (param0: number) => number): STBIIOCallbacks;
     read(): STBIReadCallback;
-    read(arg0: (param0: number, param1: number, param2: number) => kotlin.Int): STBIIOCallbacks;
+    read(arg0: (param0: number, param1: number, param2: number) => number): STBIIOCallbacks;
     set(arg0: STBIIOCallbacks): STBIIOCallbacks;
-    set(arg0: (param0: number, param1: number, param2: number) => kotlin.Int, arg1: (param0: number, param1: number) => void, arg2: (param0: number) => kotlin.Int): STBIIOCallbacks;
+    set(arg0: (param0: number, param1: number, param2: number) => number, arg1: (param0: number, param1: number) => void, arg2: (param0: number) => number): STBIIOCallbacks;
     sizeof(): number;
     skip(): STBISkipCallback;
     skip(arg0: (param0: number, param1: number) => void): STBIIOCallbacks;

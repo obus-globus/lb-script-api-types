@@ -11,6 +11,6 @@ export class ExecuteCommand<T extends ExecutionCommandSource<T>> extends Object 
     // private commandInput: string;
     // private executionContext: CommandContext<T>;
     // private modifiers: ChainModifiers;
-    bind(sender: T): (param0: T, param1: ExecutionContext<Object>) => void;
+    bind(sender: T): (param0: ExecutionContext<T>, param1: Frame) => void;
     execute(sender: T, context: ExecutionContext<T>, frame: Frame): void;
 }

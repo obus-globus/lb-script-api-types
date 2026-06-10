@@ -19,11 +19,11 @@ export class ChunkTaskDispatcher extends Object implements AutoCloseable, ChunkH
     // private sleeping: boolean;
     close(): void;
     hasWork(): boolean;
-    onLevelChange(pos: ChunkPos, oldLevel: () => kotlin.Int, newLevel: number, setQueueLevel: (param0: number) => void): void;
+    onLevelChange(pos: ChunkPos, oldLevel: () => number, newLevel: number, setQueueLevel: (param0: number) => void): void;
     onRelease(key: number): void;
     pollTask(): void;
     popTasks(): ChunkTaskPriorityQueue$TasksForChunk;
     release(pos: number, whenReleased: () => void, clearQueue: boolean): void;
     scheduleForExecution(tasksForChunk: ChunkTaskPriorityQueue$TasksForChunk): void;
-    submit(task: () => void, pos: number, level: () => kotlin.Int): void;
+    submit(task: () => void, pos: number, level: () => number): void;
 }

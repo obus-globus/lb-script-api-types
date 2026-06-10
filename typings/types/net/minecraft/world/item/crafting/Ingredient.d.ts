@@ -16,29 +16,29 @@ import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike
 export class Ingredient extends Object implements Predicate<ItemStack>, FabricIngredient, StackedContents$IngredientInfo<Holder<Item>> {
     static CODEC: Codec<Ingredient>;
     static CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Ingredient>;
-    static NON_AIR_HOLDER_SET_CODEC: Codec<Object>;
-    static OPTIONAL_CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static NON_AIR_HOLDER_SET_CODEC: Codec<Holder<Item>[]>;
+    static OPTIONAL_CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>;
     static displayForSingleItem(paramitem: Holder<Item>): SlotDisplay;
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static of(paramstream: Stream<Object>): Ingredient;
-    static of(paramtag: Holder<T>[]): Ingredient;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static of(paramstream: Stream<ItemLike>): Ingredient;
+    static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;
     static of(paramitems: (Object | null)[]): Ingredient;
     static optionalIngredientToDisplay(paramingredient: Optional<Ingredient>): SlotDisplay;
     static testOptionalIngredient(paramingredient: Optional<Ingredient>, paramstack: ItemStack): boolean;
-    constructor(values: Holder<T>[])
-    // private values: Holder<T>[];
+    constructor(values: Holder<Item>[])
+    // private values: Holder<Item>[];
     acceptsItem(item: Holder<Item>): boolean;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    and(arg0: (param0: ItemStack) => boolean): (param0: ItemStack) => boolean;
     display(): SlotDisplay;
     equals(o: Object | null): boolean;
     getCustomIngredient(): CustomIngredient;
     hashCode(): number;
     isEmpty(): boolean;
     items(): Stream<Holder<Item>>;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    negate(): (param0: ItemStack) => boolean;
+    or(arg0: (param0: ItemStack) => boolean): (param0: ItemStack) => boolean;
     requiresTesting(): boolean;
     test(input: ItemStack): boolean;
 }

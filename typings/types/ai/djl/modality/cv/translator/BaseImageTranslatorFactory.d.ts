@@ -10,6 +10,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class BaseImageTranslatorFactory<O extends Object | number | string | boolean> extends ExpansionTranslatorFactory<Image, O> {
     constructor()
     getBaseInputType(): Class<Image>;
-    getExpansions(): Map<Pair<Type, Type>, (param0: Image) => O>;
+    getExpansions(): Map<Pair<Type, Type>, (param0: Object | null) => Object | null>;
     getPreprocessorExpansions(): Map<Type, (param0: PreProcessor<Image>) => PreProcessor<Object>>;
 }

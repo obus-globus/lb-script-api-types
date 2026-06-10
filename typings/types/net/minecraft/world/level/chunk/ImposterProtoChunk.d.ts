@@ -44,7 +44,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
     static packOffsetCoordinates(paramblockPos: BlockPos): number;
-    static problemPath(parampos: ChunkPos): () => kotlin.String;
+    static problemPath(parampos: ChunkPos): () => string;
     static unpackOffsetCoordinates(parampackedCoord: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;
     constructor(wrapped: LevelChunk, allowWrites: boolean)
     // private allowWrites: boolean;
@@ -64,14 +64,14 @@ export class ImposterProtoChunk extends ProtoChunk {
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fillBiomesFromNoise(biomeResolver: BiomeResolver, sampler: Climate$Sampler): void;
-    findBlocks(predicate: (param0: BlockState) => kotlin.Boolean, consumer: (param0: BlockPos, param1: BlockState) => void): void;
+    findBlocks(predicate: (param0: BlockState) => boolean, consumer: (param0: BlockPos, param1: BlockState) => void): void;
     // private fixType(type: Heightmap$Types): Heightmap$Types;
     getAllReferences(): Map<Structure, (Object | null)[]>;
     getAllStarts(): Map<Structure, StructureStart>;
     getAttached(arg0: AttachmentType<Object>): Object;
     getBlendingData(): BlendingData;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityNbt(blockPos: BlockPos): CompoundTag;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
     getBlockState(pos: BlockPos): BlockState;

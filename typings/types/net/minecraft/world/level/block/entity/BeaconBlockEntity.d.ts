@@ -25,7 +25,7 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { ValueInput } from '../../../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class BeaconBlockEntity extends BlockEntity implements MenuProvider, Nameable, BeaconBeamOwner {
-    static BEACON_EFFECTS: (Object | null)[];
+    static BEACON_EFFECTS: Holder<MobEffect>[][];
     static DATA_LEVELS: number;
     static DATA_PRIMARY: number;
     static DATA_SECONDARY: number;

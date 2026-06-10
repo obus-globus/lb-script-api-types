@@ -25,6 +25,7 @@ import type { InteractionHand } from '../../../../../net/minecraft/world/Interac
 import type { InteractionResult } from '../../../../../net/minecraft/world/InteractionResult.d.ts'
 import type { MenuProvider } from '../../../../../net/minecraft/world/MenuProvider.d.ts'
 import type { DamageSource } from '../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
+import type { MobEffectInstance } from '../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { Avatar } from '../../../../../net/minecraft/world/entity/Avatar.d.ts'
 import type { ContainerUser } from '../../../../../net/minecraft/world/entity/ContainerUser.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
@@ -111,7 +112,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
-    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => kotlin.Boolean;
+    static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SLEEP_DURATION: number;
@@ -147,7 +148,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static areAllEffectsAmbient(parameffects: E[]): boolean;
+    static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
@@ -190,7 +191,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     animateHurt(yaw: number): void;
     attack(entity: Entity): void;
     // private attackVisualEffects(entity: Entity, criticalAttack: boolean, sweepAttack: boolean, fullStrengthAttack: boolean, stabAttack: boolean, magicBoost: number): void;
-    awardRecipes(recipes: E[]): number;
+    awardRecipes(recipes: RecipeHolder<Object>[]): number;
     awardRecipesByKey(recipeIds: ResourceKey<Recipe<Object>>[]): void;
     awardStat(location: Identifier): void;
     awardStat(location: Identifier, count: number): void;
@@ -374,7 +375,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     removeVehicle(): void;
     resetAttackStrengthTicker(): void;
     resetOnlyAttackStrengthTicker(): void;
-    resetRecipes(recipe: E[]): number;
+    resetRecipes(recipe: RecipeHolder<Object>[]): number;
     resetStat(stat: Stat<Object>): void;
     rideTick(): void;
     sendMerchantOffers(containerId: number, offers: (Object | null)[], merchantLevel: number, merchantXp: number, showProgressBar: boolean, canRestock: boolean): void;

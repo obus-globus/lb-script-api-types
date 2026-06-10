@@ -25,10 +25,10 @@ export interface ValueInput extends Object, FabricValueInput, ValueInputMixin{
     getShortOr(name: string, defaultValue: number): number;
     getString(name: string): Optional<string>;
     getStringOr(name: string, defaultValue: string): string;
-    keySet(): E[];
-    list(name: string, codec: Codec<T>): Optional<T[]>;
-    listOrEmpty(name: string, codec: Codec<T>): T[];
+    keySet(): string[];
+    list<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): Optional<T[]>;
+    listOrEmpty<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): T[];
     lookup(): HolderLookup$Provider;
-    read(codec: MapCodec<T>): Optional<T>;
-    read(name: string, codec: Codec<T>): Optional<T>;
+    read<T extends Object | number | string | boolean>(codec: MapCodec<T>): Optional<T>;
+    read<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): Optional<T>;
 }

@@ -16,7 +16,7 @@ export class BiomeModificationContextImpl$GenerationSettingsContextImpl extends 
     addFeature(arg0: GenerationStep$Decoration, arg1: ResourceKey<PlacedFeature>): void;
     freeze(): void;
     // private freezeFeatures(): void;
-    // private plus(arg0: Holder<T>[], arg1: Holder<T>): Holder<T>[];
+    // private plus<T extends Object | number | string | boolean>(arg0: Holder<T>[], arg1: Holder<T>): Holder<T>[];
     // private rebuildFlowerFeatures(): void;
     removeCarver(arg0: ResourceKey<ConfiguredWorldCarver<Object>>): boolean;
     removeFeature(arg0: ResourceKey<PlacedFeature>): boolean;

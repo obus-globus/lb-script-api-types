@@ -1,6 +1,5 @@
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { GridLayout } from '../../../../../net/minecraft/client/gui/layouts/GridLayout.d.ts'
@@ -19,7 +18,7 @@ export class NoticeWithLinkScreen extends Screen {
     static createPackSymlinkWarningScreen(paramonClose: () => void): Screen;
     static createWorldSymlinkWarningScreen(paramonClose: () => void): Screen;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(title: Component, message: Component, uri: URI, onClose: () => void)
     // private layout: GridLayout;

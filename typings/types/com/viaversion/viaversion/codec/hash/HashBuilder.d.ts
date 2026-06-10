@@ -2,13 +2,13 @@ import type { HashFunction } from '../../../../../com/viaversion/viaversion/code
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 export class HashBuilder extends Object {
-    constructor(arg0: (param0: number[], param1: number) => kotlin.Int)
+    constructor(arg0: (param0: number[], param1: number) => number)
     // private bytes: number[];
     // private direct: boolean;
-    // private hashFunction: (param0: number[], param1: number) => kotlin.Int;
+    // private hashFunction: (param0: number[], param1: number) => number;
     // private index: number;
     // private ensureSize(arg0: number): void;
-    function(): (param0: number[], param1: number) => kotlin.Int;
+    function(): (param0: number[], param1: number) => number;
     hash(): number;
     preSize(arg0: number): HashBuilder;
     reset(): void;

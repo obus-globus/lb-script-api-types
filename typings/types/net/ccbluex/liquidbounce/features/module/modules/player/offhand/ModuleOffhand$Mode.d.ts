@@ -17,10 +17,10 @@ export class ModuleOffhand$Mode extends Enum<ModuleOffhand$Mode> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleOffhand$Mode;
     static values(): (Object | null)[];
-    private constructor(modeName: string, item: ((param0: ItemStack) => kotlin.Boolean) | null, fallBackItem: ((param0: ItemStack) => kotlin.Boolean) | null)
+    private constructor(modeName: string, item: ((param0: ItemStack) => boolean) | null, fallBackItem: ((param0: ItemStack) => boolean) | null)
     private constructor(modeName: string, item: Item, fallBackItem: Item | null)
-    // private fallBackItem: ((param0: ItemStack) => kotlin.Boolean) | null;
-    // private item: ((param0: ItemStack) => kotlin.Boolean) | null;
+    // private fallBackItem: ((param0: ItemStack) => boolean) | null;
+    // private item: ((param0: ItemStack) => boolean) | null;
     // private modeBeforeDirectSwitch: ModuleOffhand$Mode | null;
     readonly modeName: string;
     canCycleTo(): boolean;

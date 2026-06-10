@@ -6,5 +6,5 @@ import type { Direction } from '../../../../../../../net/minecraft/core/Directio
 export class AbstractBlockRenderContext$BlockEmitter extends MutableQuadViewImpl {
     constructor(null_: AbstractBlockRenderContext$BlockEmitter)
     emitDirectly(): void;
-    emitPart(arg0: BlockStateModelPart, arg1: (param0: Direction) => kotlin.Boolean, arg2: (param0: MutableQuadViewImpl) => void): void;
+    emitPart(arg0: BlockStateModelPart, arg1: (param0: Direction) => boolean, arg2: (param0: MutableQuadViewImpl) => void): void;
 }

@@ -6,7 +6,7 @@ export class DateUtils$DateIterator extends Object implements Iterator<Calendar>
     constructor(arg0: Calendar, arg1: Calendar)
     // private endFinal: Calendar;
     // private spot: Calendar;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Calendar) => void): void;
     hasNext(): boolean;
     next(): Calendar;
     remove(): void;

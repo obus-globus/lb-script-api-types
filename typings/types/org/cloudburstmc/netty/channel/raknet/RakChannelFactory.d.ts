@@ -9,16 +9,16 @@ import type { RakChannel } from '../../../../../org/cloudburstmc/netty/channel/r
 import type { RakClientChannel } from '../../../../../org/cloudburstmc/netty/channel/raknet/RakClientChannel.d.ts'
 import type { RakServerChannel } from '../../../../../org/cloudburstmc/netty/channel/raknet/RakServerChannel.d.ts'
 export class RakChannelFactory<T extends Channel> extends Object implements ChannelFactory<T> {
-    static client(paramarg0: ChannelFactory<Object>): RakChannelFactory<RakClientChannel>;
-    static client(paramarg0: ChannelFactory<Object>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakClientChannel>;
-    static client(paramarg0: Class<Object>): RakChannelFactory<RakClientChannel>;
-    static client(paramarg0: Class<Object>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakClientChannel>;
-    static server(paramarg0: ChannelFactory<Object>): RakChannelFactory<RakServerChannel>;
-    static server(paramarg0: ChannelFactory<Object>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakServerChannel>;
-    static server(paramarg0: ChannelFactory<Object>, paramarg1: (param0: DatagramChannel) => void, paramarg2: (param0: RakChannel) => void): RakChannelFactory<RakServerChannel>;
-    static server(paramarg0: Class<Object>): RakChannelFactory<RakServerChannel>;
-    static server(paramarg0: Class<Object>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakServerChannel>;
-    static server(paramarg0: Class<Object>, paramarg1: (param0: DatagramChannel) => void, paramarg2: (param0: RakChannel) => void): RakChannelFactory<RakServerChannel>;
+    static client(paramarg0: ChannelFactory<DatagramChannel>): RakChannelFactory<RakClientChannel>;
+    static client(paramarg0: ChannelFactory<DatagramChannel>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakClientChannel>;
+    static client(paramarg0: Class<DatagramChannel>): RakChannelFactory<RakClientChannel>;
+    static client(paramarg0: Class<DatagramChannel>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakClientChannel>;
+    static server(paramarg0: ChannelFactory<DatagramChannel>): RakChannelFactory<RakServerChannel>;
+    static server(paramarg0: ChannelFactory<DatagramChannel>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakServerChannel>;
+    static server(paramarg0: ChannelFactory<DatagramChannel>, paramarg1: (param0: DatagramChannel) => void, paramarg2: (param0: RakChannel) => void): RakChannelFactory<RakServerChannel>;
+    static server(paramarg0: Class<DatagramChannel>): RakChannelFactory<RakServerChannel>;
+    static server(paramarg0: Class<DatagramChannel>, paramarg1: (param0: DatagramChannel) => void): RakChannelFactory<RakServerChannel>;
+    static server(paramarg0: Class<DatagramChannel>, paramarg1: (param0: DatagramChannel) => void, paramarg2: (param0: RakChannel) => void): RakChannelFactory<RakServerChannel>;
     private constructor(arg0: Class<T>, arg1: (param0: DatagramChannel) => T, arg2: ChannelFactory<DatagramChannel>, arg3: (param0: DatagramChannel) => void)
     // private channelClass: Class<T>;
     // private constructor: (param0: DatagramChannel) => T;

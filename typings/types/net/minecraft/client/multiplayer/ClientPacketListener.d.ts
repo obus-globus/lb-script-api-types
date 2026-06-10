@@ -220,7 +220,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     readonly commands: CommandDispatcher<ClientSuggestionProvider>;
     readonly debugQueryHandler: DebugQueryHandler;
     // private debugSubscriber: ClientDebugSubscriber;
-    // private decoratedHashOpsGenerator: (param0: Object | null) => unknown;
+    // private decoratedHashOpsGenerator: (param0: Object | null) => Object | null;
     // private enabledFeatures: FeatureFlagSet;
     // private fuelValues: FuelValues;
     // private globalAttachments: GlobalAttachmentsImpl;
@@ -250,7 +250,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     // private serverChunkRadius: number;
     // private serverEnforcesSecureChat: boolean;
     // private serverSimulationDistance: number;
-    // private signedMessageEncoder: (param0: SignedMessageBody) => net.minecraft.network.chat.MessageSignature;
+    // private signedMessageEncoder: (param0: SignedMessageBody) => MessageSignature;
     readonly suggestionsProvider: ClientSuggestionProvider;
     // private viaFabricPlus$teleportConfirmPacket: Packet<PacketListener>;
     readonly waypointManager: ClientWaypointManager;
@@ -264,7 +264,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     createDebugValueAccess(): DebugValueAccess;
     createDialogAccess(): DialogConnectionAccess;
     // private createEntityFromPacket(packet: ClientboundAddEntityPacket): Entity;
-    decoratedHashOpsGenenerator(): (param0: Object | null) => unknown;
+    decoratedHashOpsGenenerator(): (param0: Object | null) => Object | null;
     // private determineLevelLoadingReason(playerDied: boolean, dimensionKey: ResourceKey<Level>, oldDimensionKey: ResourceKey<Level>): LevelLoadingScreen$Reason;
     // private enableChunkLight(chunk: LevelChunk, x: number, z: number): void;
     enabledFeatures(): FeatureFlagSet;
@@ -277,10 +277,10 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     getConnection(): Connection;
     getDebugQueryHandler(): DebugQueryHandler;
     getLevel(): ClientLevel;
-    getListedOnlinePlayers(): E[];
+    getListedOnlinePlayers(): PlayerInfo[];
     getLocalGameProfile(): GameProfile;
-    getOnlinePlayerIds(): E[];
-    getOnlinePlayers(): E[];
+    getOnlinePlayerIds(): UUID[];
+    getOnlinePlayers(): PlayerInfo[];
     getPlayerInfo(player: UUID): PlayerInfo;
     getPlayerInfo(player: string): PlayerInfo;
     getPlayerInfoIgnoreCase(player: string): PlayerInfo;
@@ -451,6 +451,6 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     tick(): void;
     // private updateLevelChunk(x: number, z: number, chunkData: ClientboundLevelChunkPacketData): void;
     updateSearchTrees(): void;
-    // private updateTags(registryKey: ResourceKey<T[]>, payload: TagNetworkSerialization$NetworkPayload): Registry$PendingTags<T>;
+    // private updateTags<T extends Object | number | string | boolean>(registryKey: ResourceKey<T[]>, payload: TagNetworkSerialization$NetworkPayload): Registry$PendingTags<T>;
     // private verifyCommand(command: string): ClientPacketListener$CommandCheckResult;
 }

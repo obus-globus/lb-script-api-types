@@ -3,14 +3,13 @@ import type { CharComparator } from '../../../../../it/unimi/dsi/fastutil/chars/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CharPriorityQueue extends PriorityQueue<string>, Object {
     changed(): void;
-    comparator(): (param0: string, param1: string) => kotlin.Int;
+    comparator(): (param0: string, param1: string) => number;
     dequeue(): string;
     dequeueChar(): string;
     enqueue(arg0: string): void;
     first(): string;
     firstChar(): string;
     isEmpty(): boolean;
-    last<K extends Object | number | string | boolean>(): K;
     last(): string;
     lastChar(): string;
 }

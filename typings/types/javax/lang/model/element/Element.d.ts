@@ -13,7 +13,7 @@ export interface Element extends AnnotatedConstruct, Object{
     asType(): TypeMirror;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotationMirrors(): AnnotationMirror[];
-    getAnnotationsByType(arg0: Class<A>): A[];
+    getAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
     getEnclosedElements(): Element[];
     getEnclosingElement(): Element;
     getKind(): ElementKind;

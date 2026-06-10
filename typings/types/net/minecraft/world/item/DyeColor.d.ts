@@ -36,11 +36,11 @@ export class DyeColor extends Enum<DyeColor> implements StringRepresentable {
     static byFireworkColor(paramcolor: number): DyeColor;
     static byId(paramid: number): DyeColor;
     static byName(paramname: string, paramdef: DyeColor): DyeColor;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getMixedColor(paramlevel: ServerLevel, paramdyeColor1: DyeColor, paramdyeColor2: DyeColor): DyeColor;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

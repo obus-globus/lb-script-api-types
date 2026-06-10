@@ -6,8 +6,8 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class ConcurrentHashMap$ValueIterator<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$BaseIterator<K, V> implements Enumeration<V>, Iterator<V> {
     constructor(arg0: ConcurrentHashMap$Node<K, V>[], arg1: number, arg2: number, arg3: number, arg4: Map<K, V>)
-    asIterator(): Iterator<E>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    asIterator(): Iterator<V>;
+    forEachRemaining(arg0: (param0: V) => void): void;
     next(): V;
     nextElement(): V;
 }

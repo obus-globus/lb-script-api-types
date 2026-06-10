@@ -6,7 +6,7 @@ import type { LocalDate } from '../../kotlinx/datetime/LocalDate.d.ts'
 export class LocalDateProgressionIterator extends Object implements Iterator<LocalDate> {
     constructor(iterator: LongIterator)
     // private iterator: LongIterator;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: LocalDate) => void): void;
     hasNext(): boolean;
     next(): LocalDate;
 }

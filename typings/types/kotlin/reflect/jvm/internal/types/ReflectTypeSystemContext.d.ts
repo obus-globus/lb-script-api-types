@@ -13,8 +13,8 @@ export class ReflectTypeSystemContext extends Object implements TypeSystemContex
     captureFromArguments(type: RigidTypeMarker, status: CaptureStatus): RigidTypeMarker | null;
     captureFromExpression(type: KotlinTypeMarker): KotlinTypeMarker | null;
     createEmptySubstitutor(): TypeSubstitutorMarker;
-    intersectTypes(types: E[]): KotlinTypeMarker;
-    intersectTypes(types: E[]): SimpleTypeMarker;
+    intersectTypes(types: KotlinTypeMarker[]): KotlinTypeMarker;
+    intersectTypes(types: SimpleTypeMarker[]): SimpleTypeMarker;
     substitutionSupertypePolicy(type: RigidTypeMarker): TypeCheckerState$SupertypesPolicy;
     typeSubstitutorByTypeConstructor(map: Map<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
 }

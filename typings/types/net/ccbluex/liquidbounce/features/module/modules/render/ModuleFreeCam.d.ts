@@ -1,4 +1,5 @@
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
+import type { Event } from '../../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { MouseButtonEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/MouseButtonEvent.d.ts'
 import type { MovementInputEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
@@ -37,7 +38,7 @@ export class ModuleFreeCam extends ClientModule {
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;
     applyCameraPosition(entity: Entity | null, partialTicks: number): void;
-    // private cancelTrigger(predicate: (param0: E) => kotlin.Boolean): ModuleFreeCam$CancelTrigger<E>;
+    // private cancelTrigger<E extends Event>(predicate: (param0: E) => boolean): ModuleFreeCam$CancelTrigger<E>;
     // private getCameraLookingAt(): Vec3 | null;
     /**
      * Modify the raycast position

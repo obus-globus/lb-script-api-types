@@ -2,6 +2,7 @@ import type { ViaAPI } from '../../../../../com/viaversion/viaversion/api/ViaAPI
 import type { ViaVersionConfig } from '../../../../../com/viaversion/viaversion/api/configuration/ViaVersionConfig.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { PlatformTask } from '../../../../../com/viaversion/viaversion/api/platform/PlatformTask.d.ts'
+import type { UnsupportedSoftware } from '../../../../../com/viaversion/viaversion/api/platform/UnsupportedSoftware.d.ts'
 import type { JsonObject } from '../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
@@ -18,7 +19,7 @@ export interface ViaPlatform<T extends Object | number | string | boolean> exten
     getPlatformName(): string;
     getPlatformVersion(): string;
     getPluginVersion(): string;
-    getUnsupportedSoftwareClasses(): E[];
+    getUnsupportedSoftwareClasses(): UnsupportedSoftware[];
     hasPlugin(arg0: string): boolean;
     isProxy(): boolean;
     kickPlayer(arg0: UserConnection, arg1: string): boolean;

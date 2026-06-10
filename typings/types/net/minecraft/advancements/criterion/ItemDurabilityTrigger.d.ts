@@ -7,6 +7,6 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 export class ItemDurabilityTrigger extends SimpleCriterionTrigger<ItemDurabilityTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<ItemDurabilityTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: ItemDurabilityTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: ItemDurabilityTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, itemStack: ItemStack, newDurability: number): void;
 }

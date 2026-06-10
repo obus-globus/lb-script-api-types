@@ -15,7 +15,7 @@ export class LinkedHashMultimap<K extends Object | number | string | boolean, V 
     // private multimapIterationChain: LinkedHashMultimap$MultimapIterationChain<K, V>;
     // private valueSetCapacity: number;
     createCollection(): V[];
-    createCollection(key: K): E[];
+    createCollection(key: K): V[];
     entries(): Map$Entry<K, V>[];
     entryIterator(): Iterator<Map$Entry<K, V>>;
     entrySpliterator(): Spliterator<Map$Entry<K, V>>;
@@ -24,6 +24,6 @@ export class LinkedHashMultimap<K extends Object | number | string | boolean, V 
     replaceValues(key: K, values: V[]): V[];
     valueIterator(): Iterator<V>;
     valueSpliterator(): Spliterator<V>;
-    values(): E[];
+    values(): V[];
     // private writeObject(stream: ObjectOutputStream): void;
 }

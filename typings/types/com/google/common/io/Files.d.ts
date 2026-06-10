@@ -34,8 +34,8 @@ export class Files extends Object {
     static getFileExtension(paramfullName: string): string;
     static getNameWithoutExtension(paramfile: string): string;
     static hash(paramfile: File, paramhashFunction: HashFunction): HashCode;
-    static isDirectory(): (param0: File) => kotlin.Boolean;
-    static isFile(): (param0: File) => kotlin.Boolean;
+    static isDirectory(): (param0: Object) => boolean;
+    static isFile(): (param0: Object) => boolean;
     static map(paramfile: File): MappedByteBuffer;
     static map(paramfile: File, parammode: FileChannel$MapMode): MappedByteBuffer;
     static map(paramfile: File, parammode: FileChannel$MapMode, paramsize: number): MappedByteBuffer;

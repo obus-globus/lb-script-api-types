@@ -9,9 +9,9 @@ export class GeneralUtils$MutableTransformer extends Record implements Function<
     static identity(): (param0: Object | null) => Object | null;
     constructor(textMutableTextFunction: (param0: Style) => Style)
     // private textMutableTextFunction: (param0: Style) => Style;
-    andThen(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends Object | number | string | boolean>(arg0: (param0: Component) => V): (param0: MutableComponent) => V;
     apply(arg0: MutableComponent): Component;
-    compose(arg0: (param0: V) => T): (param0: V) => R;
+    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => MutableComponent): (param0: V) => Component;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     textMutableTextFunction(): (param0: Style) => Style;

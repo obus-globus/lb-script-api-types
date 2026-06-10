@@ -13,9 +13,9 @@ export class ExecutionListener$Builder extends Object {
     // private expressions: boolean;
     // private onEnter: (param0: Object | null) => void;
     // private onReturn: (param0: Object | null) => void;
-    // private rootNameFilter: (param0: string) => kotlin.Boolean;
+    // private rootNameFilter: (param0: string) => boolean;
     // private roots: boolean;
-    // private sourceFilter: (param0: Object | null) => kotlin.Boolean;
+    // private sourceFilter: (param0: Object | null) => boolean;
     // private statements: boolean;
     attach(engine: Engine): ExecutionListener;
     collectExceptions(enabled: boolean): ExecutionListener$Builder;
@@ -24,8 +24,8 @@ export class ExecutionListener$Builder extends Object {
     expressions(enabled: boolean): ExecutionListener$Builder;
     onEnter(listener: (param0: ExecutionEvent) => void): ExecutionListener$Builder;
     onReturn(listener: (param0: ExecutionEvent) => void): ExecutionListener$Builder;
-    rootNameFilter(predicate: (param0: string) => kotlin.Boolean): ExecutionListener$Builder;
+    rootNameFilter(predicate: (param0: string) => boolean): ExecutionListener$Builder;
     roots(enabled: boolean): ExecutionListener$Builder;
-    sourceFilter(predicate: (param0: Source) => kotlin.Boolean): ExecutionListener$Builder;
+    sourceFilter(predicate: (param0: Source) => boolean): ExecutionListener$Builder;
     statements(enabled: boolean): ExecutionListener$Builder;
 }

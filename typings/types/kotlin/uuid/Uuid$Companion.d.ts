@@ -5,7 +5,7 @@ import type { Clock } from '../../kotlin/time/Clock.d.ts'
 import type { Instant } from '../../kotlin/time/Instant.d.ts'
 import type { Uuid } from '../../kotlin/uuid/Uuid.d.ts'
 export class Uuid$Companion extends Object {
-    readonly LEXICAL_ORDER: (param0: Uuid) => kotlin.Boolean;
+    readonly LEXICAL_ORDER: (param0: Object) => boolean;
     readonly NIL: Uuid;
     SIZE_BITS: number;
     SIZE_BYTES: number;

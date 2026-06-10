@@ -35,7 +35,7 @@ export class ClientChunkCache extends ChunkSource {
     onSectionEmptinessChanged(sectionX: number, sectionY: number, sectionZ: number, empty: boolean): void;
     replaceBiomes(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf): void;
     replaceWithPacketData(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf, heightmaps: { [key in Heightmap$Types]: number[] }, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<Object>, param2: CompoundTag) => void) => void): LevelChunk;
-    tick(haveTime: () => kotlin.Boolean, tickChunks: boolean): void;
+    tick(haveTime: () => boolean, tickChunks: boolean): void;
     updateViewCenter(x: number, z: number): void;
     updateViewRadius(viewRange: number): void;
 }

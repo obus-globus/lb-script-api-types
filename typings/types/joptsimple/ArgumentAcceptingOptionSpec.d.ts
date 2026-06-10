@@ -31,9 +31,9 @@ export abstract class ArgumentAcceptingOptionSpec<V extends Object | number | st
     hashCode(): number;
     isArgumentOfNumberType(): boolean;
     isRequired(): boolean;
-    ofType(arg0: Class<T>): ArgumentAcceptingOptionSpec<T>;
+    ofType<T extends Object | number | string | boolean>(arg0: Class<T>): ArgumentAcceptingOptionSpec<T>;
     required(): ArgumentAcceptingOptionSpec<V>;
     requiresArgument(): boolean;
-    withValuesConvertedBy(arg0: ValueConverter<T>): ArgumentAcceptingOptionSpec<T>;
+    withValuesConvertedBy<T extends Object | number | string | boolean>(arg0: ValueConverter<T>): ArgumentAcceptingOptionSpec<T>;
     withValuesSeparatedBy(arg0: string): ArgumentAcceptingOptionSpec<V>;
 }

@@ -7,5 +7,5 @@ export class StartRidingTrigger extends SimpleCriterionTrigger<StartRidingTrigge
     constructor()
     codec(): Codec<StartRidingTrigger$TriggerInstance>;
     trigger(player: ServerPlayer): void;
-    trigger(player: ServerPlayer, matcher: (param0: StartRidingTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: StartRidingTrigger$TriggerInstance) => boolean): void;
 }

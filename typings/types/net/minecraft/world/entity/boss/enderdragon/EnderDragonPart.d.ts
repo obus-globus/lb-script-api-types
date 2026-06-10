@@ -71,7 +71,7 @@ export class EnderDragonPart extends Entity {
     getPickResult(): ItemStack;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
     is(type: Holder<EntityType<Object>>): boolean;
-    is(set: Holder<T>[]): boolean;
+    is(set: Holder<EntityType<Object>>[]): boolean;
     is(type: ResourceKey<EntityType<Object>>): boolean;
     is(tag: TagKey<EntityType<Object>>): boolean;
     is(other: Entity): boolean;

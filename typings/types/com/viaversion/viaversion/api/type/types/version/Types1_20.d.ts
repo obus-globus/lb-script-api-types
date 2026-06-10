@@ -5,7 +5,7 @@ import type { ParticleType } from '../../../../../../../com/viaversion/viaversio
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Types1_20 extends Object {
     static ENTITY_DATA: Type<EntityData>;
-    static ENTITY_DATA_LIST: Type<Object>;
+    static ENTITY_DATA_LIST: Type<EntityData[]>;
     static ENTITY_DATA_TYPES: EntityDataTypes1_19_4;
     static PARTICLE: ParticleType;
     constructor()

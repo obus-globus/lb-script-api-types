@@ -18,11 +18,11 @@ export class LevelColorCache extends Object {
     // private populateStamp: number;
     // private sizeXZ: number;
     // private sizeY: number;
-    // private slices: Map<(param0: Biome, param1: number, param2: number) => kotlin.Int, LevelColorCache$Slice[]>;
+    // private slices: Map<(param0: Biome, param1: number, param2: number) => number, LevelColorCache$Slice[]>;
     // private tempColorBuffer: BoxBlur$ColorBuffer;
     getBlendRadius(): number;
-    getColor(arg0: (param0: Biome, param1: number, param2: number) => kotlin.Int, arg1: number, arg2: number, arg3: number): number;
-    // private initializeSlices(arg0: (param0: Biome, param1: number, param2: number) => kotlin.Int): void;
+    getColor(arg0: (param0: Biome, param1: number, param2: number) => number, arg1: number, arg2: number, arg3: number): number;
+    // private initializeSlices(arg0: (param0: Biome, param1: number, param2: number) => number): void;
     update(arg0: ChunkRenderContext): void;
-    // private updateColorBuffers(arg0: number, arg1: (param0: Biome, param1: number, param2: number) => kotlin.Int, arg2: LevelColorCache$Slice): void;
+    // private updateColorBuffers(arg0: number, arg1: (param0: Biome, param1: number, param2: number) => number, arg2: LevelColorCache$Slice): void;
 }

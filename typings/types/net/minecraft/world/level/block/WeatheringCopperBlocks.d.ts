@@ -8,7 +8,7 @@ import type { WeatheringCopper$WeatherState } from '../../../../../net/minecraft
 import type { BlockBehaviour$Properties } from '../../../../../net/minecraft/world/level/block/state/BlockBehaviour$Properties.d.ts'
 import type { TriFunction } from '../../../../../org/apache/commons/lang3/function/TriFunction.d.ts'
 export class WeatheringCopperBlocks extends Record {
-    static create(paramid: string, paramregister: (param0: string, param1: Object | null, param2: BlockBehaviour$Properties) => Block, paramwaxedBlockFactory: (param0: BlockBehaviour$Properties) => Object | null, paramweatheringFactory: (param0: WeatheringCopper$WeatherState, param1: BlockBehaviour$Properties) => Object | null, parampropertiesSupplier: (param0: WeatheringCopper$WeatherState) => BlockBehaviour$Properties): WeatheringCopperBlocks;
+    static create(paramid: string, paramregister: (param0: string, param1: (param0: BlockBehaviour$Properties) => Block, param2: BlockBehaviour$Properties) => Block, paramwaxedBlockFactory: (param0: BlockBehaviour$Properties) => Block | null, paramweatheringFactory: (param0: WeatheringCopper$WeatherState, param1: BlockBehaviour$Properties) => Block | null, parampropertiesSupplier: (param0: WeatheringCopper$WeatherState) => BlockBehaviour$Properties): WeatheringCopperBlocks;
     constructor(unaffected: Block, exposed: Block, weathered: Block, oxidized: Block, waxed: Block, waxedExposed: Block, waxedWeathered: Block, waxedOxidized: Block)
     // private exposed: Block;
     // private oxidized: Block;

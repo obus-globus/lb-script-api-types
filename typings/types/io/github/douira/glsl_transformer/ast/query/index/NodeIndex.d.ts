@@ -5,17 +5,17 @@ import type { Supplier } from '../../../../../../../java/util/function/Supplier.
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class NodeIndex<S extends ASTNode[]> extends Object implements Index<ASTNode> {
-    static withOrdered(): NodeIndex<Object>;
-    static withUnordered(): NodeIndex<Object>;
+    static withOrdered(): NodeIndex<ASTNode[]>;
+    static withUnordered(): NodeIndex<ASTNode[]>;
     constructor(arg0: () => S)
     index: Map<Class<ASTNode>, S>;
     setFactory: () => S;
     add(arg0: ASTNode): void;
     get<N extends ASTNode>(arg0: N): N[];
-    get(arg0: Class<N>): N[];
+    get<N extends ASTNode>(arg0: Class<N>): N[];
     getOne<N extends ASTNode>(arg0: N): N;
     getOne<N extends ASTNode>(arg0: Class<N>): N;
-    getStream(arg0: Class<N>): Stream<N>;
+    getStream<N extends ASTNode>(arg0: Class<N>): Stream<N>;
     getUnique<N extends ASTNode>(arg0: N): N;
     getUnique<N extends ASTNode>(arg0: Class<N>): N;
     has(arg0: ASTNode): boolean;

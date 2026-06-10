@@ -26,19 +26,19 @@ export class ModuleTeams$Matches extends Enum<ModuleTeams$Matches> implements Pr
      */
     static SCOREBOARD_TEAM: ModuleTeams$Matches;
     static getEntries(): ModuleTeams$Matches[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => kotlin.Boolean;
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
-    static not(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
+    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTeams$Matches;
     static values(): (Object | null)[];
-    private constructor(tag: string, testMatches: (param0: LivingEntity) => kotlin.Boolean)
+    private constructor(tag: string, testMatches: (param0: LivingEntity) => boolean)
     readonly tag: string;
-    // private testMatches: (param0: LivingEntity) => kotlin.Boolean;
-    and(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
-    negate(): (param0: T) => kotlin.Boolean;
-    or(arg0: (param0: T) => kotlin.Boolean): (param0: T) => kotlin.Boolean;
+    // private testMatches: (param0: LivingEntity) => boolean;
+    and(arg0: (param0: LivingEntity) => boolean): (param0: LivingEntity) => boolean;
+    negate(): (param0: LivingEntity) => boolean;
+    or(arg0: (param0: LivingEntity) => boolean): (param0: LivingEntity) => boolean;
     test(p0: LivingEntity): boolean;
     name(): "SCOREBOARD_TEAM" | "NAME_COLOR" | "PREFIX";
 }

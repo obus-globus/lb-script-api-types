@@ -10,7 +10,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ClientCommonPacketListener } from '../../../../../net/minecraft/network/protocol/common/ClientCommonPacketListener.d.ts'
 export class ClientboundDisconnectPacket extends Record implements Packet<ClientCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundDisconnectPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(reason: Component)
     // private reason: Component;
     equals(o: Object | null): boolean;

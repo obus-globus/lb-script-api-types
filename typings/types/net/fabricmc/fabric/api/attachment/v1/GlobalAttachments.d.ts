@@ -14,8 +14,8 @@ export interface GlobalAttachments extends Object, AttachmentTarget {
     getAttachedOrSet<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: A): A;
     getAttachedOrThrow<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     hasAttached(arg0: AttachmentType<Object>): boolean;
-    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => unknown): A;
-    onAttachedSet(arg0: AttachmentType<A>): Event<(param0: A, param1: Object | null) => void>;
+    modifyAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
+    onAttachedSet<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;
     removeAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>): A;
     setAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: A): A;
 }

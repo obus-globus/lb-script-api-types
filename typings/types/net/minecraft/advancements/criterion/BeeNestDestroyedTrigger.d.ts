@@ -8,6 +8,6 @@ import type { BlockState } from '../../../../net/minecraft/world/level/block/sta
 export class BeeNestDestroyedTrigger extends SimpleCriterionTrigger<BeeNestDestroyedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<BeeNestDestroyedTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: BeeNestDestroyedTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: BeeNestDestroyedTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, state: BlockState, itemStack: ItemStack, numBeesInside: number): void;
 }

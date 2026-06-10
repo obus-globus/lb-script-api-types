@@ -9,7 +9,7 @@ export class ModuleTNTTimer$ShowTimer$TimeUnit extends Enum<ModuleTNTTimer$ShowT
     static SECONDS: ModuleTNTTimer$ShowTimer$TimeUnit;
     static TICKS: ModuleTNTTimer$ShowTimer$TimeUnit;
     static getEntries(): ModuleTNTTimer$ShowTimer$TimeUnit[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTNTTimer$ShowTimer$TimeUnit;

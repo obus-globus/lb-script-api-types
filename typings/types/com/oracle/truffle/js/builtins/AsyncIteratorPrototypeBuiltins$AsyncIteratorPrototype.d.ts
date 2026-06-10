@@ -25,7 +25,7 @@ export class AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype extends Enum<
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

@@ -34,5 +34,5 @@ export interface IntegerOptionBuilder extends Object, StatefulOptionBuilder<numb
     setTooltip(arg0: Component): IntegerOptionBuilder;
     setValidator(arg0: SteppedValidator): IntegerOptionBuilder;
     setValidatorProvider(arg0: (param0: ConfigState) => SteppedValidator, arg1: Identifier[]): IntegerOptionBuilder;
-    setValueFormatter(arg0: (param0: number) => net.minecraft.network.chat.Component): IntegerOptionBuilder;
+    setValueFormatter(arg0: (param0: number) => Component): IntegerOptionBuilder;
 }

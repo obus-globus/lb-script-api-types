@@ -3,5 +3,5 @@ import type { CommandContext } from '../../../../com/mojang/brigadier/context/Co
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CustomModifierExecutor } from '../../../../net/minecraft/commands/execution/CustomModifierExecutor.d.ts'
 export interface CustomModifierExecutor$ModifierAdapter<T extends Object | number | string | boolean> extends RedirectModifier<T>, Object, CustomModifierExecutor<T>{
-    apply(context: CommandContext<T>): E[];
+    apply(context: CommandContext<T>): T[];
 }

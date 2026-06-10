@@ -17,26 +17,26 @@ export class ByteSpliterators extends Object {
     static SET_SPLITERATOR_CHARACTERISTICS: number;
     static SORTED_SET_SPLITERATOR_CHARACTERISTICS: number;
     static asByteSpliterator(paramarg0: Spliterator<Object>): ByteSpliterator;
-    static asByteSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
+    static asByteSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: number, param1: number) => number): ByteSpliterator;
     static asIterator(paramarg0: ByteSpliterator): ByteIterator;
     static asSpliterator(paramarg0: ByteIterator, paramarg1: number, paramarg2: number): ByteSpliterator;
-    static asSpliteratorFromSorted(paramarg0: ByteIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
-    static asSpliteratorFromSortedUnknownSize(paramarg0: ByteIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
+    static asSpliteratorFromSorted(paramarg0: ByteIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): ByteSpliterator;
+    static asSpliteratorFromSortedUnknownSize(paramarg0: ByteIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): ByteSpliterator;
     static asSpliteratorUnknownSize(paramarg0: ByteIterator, paramarg1: number): ByteSpliterator;
     static concat(paramarg0: (Object | null)[]): ByteSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ByteSpliterator;
     static fromTo(paramarg0: number, paramarg1: number): ByteSpliterator;
     static narrow(paramarg0: Spliterator$OfInt): ByteSpliterator;
-    static onEachMatching(paramarg0: ByteSpliterator, paramarg1: (param0: number) => kotlin.Boolean, paramarg2: (param0: number) => void): void;
-    static onEachMatching(paramarg0: ByteSpliterator, paramarg1: (param0: number) => kotlin.Boolean, paramarg2: (param0: number) => void): void;
+    static onEachMatching(paramarg0: ByteSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
+    static onEachMatching(paramarg0: ByteSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): ByteSpliterator;
-    static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
+    static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => number): ByteSpliterator;
     static widen(paramarg0: ByteSpliterator): IntSpliterator;
     static wrap(paramarg0: number[]): ByteSpliterator;
     static wrap(paramarg0: number[], paramarg1: number, paramarg2: number): ByteSpliterator;
     static wrap(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): ByteSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): ByteSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => number): ByteSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): ByteSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): ByteSpliterator;
     private constructor()
 }

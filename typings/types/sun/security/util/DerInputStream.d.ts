@@ -18,7 +18,7 @@ export class DerInputStream extends Object {
     // private start: number;
     atEnd(): void;
     available(): number;
-    // private checkNextTag(arg0: (param0: number) => kotlin.Boolean): boolean;
+    // private checkNextTag(arg0: (param0: number) => boolean): boolean;
     // private checkNextTag(arg0: number): boolean;
     getBMPString(): string;
     getBigInteger(): BigInteger;

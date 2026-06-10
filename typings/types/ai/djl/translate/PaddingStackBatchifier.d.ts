@@ -15,7 +15,7 @@ export class PaddingStackBatchifier extends Object implements Batchifier {
     // private dimsToPad: number[];
     // private includeValidLengths: boolean;
     // private paddingSizes: number[];
-    // private paddingSuppliers: (param0: NDManager) => ai.djl.ndarray.NDArray[];
+    // private paddingSuppliers: (param0: NDManager) => NDArray[];
     batchify(arg0: (Object | null)[][]): (Object | null)[];
     split(arg0: (Object | null)[], arg1: number, arg2: boolean): (Object | null)[][];
     unbatchify(arg0: (Object | null)[]): (Object | null)[][];

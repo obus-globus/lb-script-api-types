@@ -4,6 +4,6 @@ import type { QuadEmitter } from '../../../../../../net/fabricmc/fabric/api/clie
 import type { BlockStateModelPart } from '../../../../../../net/minecraft/client/renderer/block/dispatch/BlockStateModelPart.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 export class VanillaBlockModelPartEncoder extends Object {
-    static emitQuads(paramarg0: BlockStateModelPart, paramarg1: QuadEmitter, paramarg2: (param0: Direction) => kotlin.Boolean): void;
+    static emitQuads(paramarg0: BlockStateModelPart, paramarg1: QuadEmitter, paramarg2: (param0: Direction) => boolean): void;
     constructor()
 }

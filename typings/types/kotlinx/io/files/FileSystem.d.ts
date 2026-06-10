@@ -8,7 +8,7 @@ export interface FileSystem extends Object{
     createDirectories(path: Path, mustCreate: boolean): void;
     delete(path: Path, mustExist: boolean): void;
     exists(path: Path): boolean;
-    list(directory: Path): E[];
+    list(directory: Path): Path[];
     metadataOrNull(path: Path): FileMetadata | null;
     resolve(path: Path): Path;
     sink(path: Path, append: boolean): RawSink;

@@ -93,13 +93,13 @@ export class BlockEntityType<T extends BlockEntity> extends Object implements Ex
     static TRAPPED_CHEST: BlockEntityType<(Object | null)[]>;
     static TRIAL_SPAWNER: BlockEntityType<TrialSpawnerBlockEntity>;
     static VAULT: BlockEntityType<VaultBlockEntity>;
-    static addRenderPredicate(paramarg0: BlockEntityType<Object>, paramarg1: (param0: Object | null, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): void;
-    static removeRenderPredicate(paramarg0: BlockEntityType<Object>, paramarg1: (param0: Object | null, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): boolean;
-    static shouldRender(paramarg0: BlockEntityType<Object>, paramarg1: BlockGetter, paramarg2: BlockPos, paramarg3: Object | null): boolean;
-    constructor(factory: (param0: T, param1: BlockPos) => unknown, validBlocks: Block[])
+    static addRenderPredicate(paramarg0: BlockEntityType<BlockEntity>, paramarg1: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity | null) => boolean): void;
+    static removeRenderPredicate(paramarg0: BlockEntityType<BlockEntity>, paramarg1: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity | null) => boolean): boolean;
+    static shouldRender(paramarg0: BlockEntityType<BlockEntity>, paramarg1: BlockGetter, paramarg2: BlockPos, paramarg3: BlockEntity | null): boolean;
+    constructor(factory: (param0: BlockPos, param1: BlockState) => T, validBlocks: Block[])
     // private builtInRegistryHolder: Holder$Reference<BlockEntityType<Object>>;
-    // private factory: (param0: T, param1: BlockPos) => unknown;
-    // private sodium$renderPredicates: (param0: BlockEntity, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean[];
+    // private factory: (param0: BlockPos, param1: BlockState) => T;
+    // private sodium$renderPredicates: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity) => boolean[];
     // private validBlocks: Block[];
     addValidBlock(arg0: Block): void;
     builtInRegistryHolder(): Holder$Reference<BlockEntityType<Object>>;
@@ -107,7 +107,7 @@ export class BlockEntityType<T extends BlockEntity> extends Object implements Ex
     getBlockEntity(level: BlockGetter, pos: BlockPos): T;
     isValid(state: BlockState): boolean;
     onlyOpCanSetNbt(): boolean;
-    sodium$addRenderPredicate(arg0: (param0: BlockEntity, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): void;
-    sodium$getRenderPredicates(): (param0: BlockEntity, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean[];
-    sodium$removeRenderPredicate(arg0: (param0: BlockEntity, param1: BlockGetter, param2: BlockPos) => kotlin.Boolean): boolean;
+    sodium$addRenderPredicate(arg0: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity) => boolean): void;
+    sodium$getRenderPredicates(): (param0: BlockGetter, param1: BlockPos, param2: BlockEntity) => boolean[];
+    sodium$removeRenderPredicate(arg0: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity) => boolean): boolean;
 }

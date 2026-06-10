@@ -18,7 +18,7 @@ export class ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError e
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;
-    asEnum<E extends Enum<BuiltinEnum<E>>>(): E;
+    asEnum(): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean): Object;
     getECMAScriptVersion(): number;
     getKey(): Object;

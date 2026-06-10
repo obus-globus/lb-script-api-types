@@ -26,7 +26,7 @@ export class GarbageFreeSortedArrayThreadContextMap extends Object implements Ob
     isEmpty(): boolean;
     put(key: string, value: string): void;
     putAll(values: { [key: string]: string }): void;
-    putAllValues(values: { [key: string]: V }): void;
+    putAllValues<V extends Object | number | string | boolean>(values: { [key: string]: V }): void;
     putValue(key: string, value: Object): void;
     remove(key: string): void;
     removeAll(keys: string[]): void;

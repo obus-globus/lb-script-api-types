@@ -7,6 +7,6 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class SummonedEntityTrigger extends SimpleCriterionTrigger<SummonedEntityTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<SummonedEntityTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: SummonedEntityTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: SummonedEntityTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, entity: Entity): void;
 }

@@ -95,11 +95,11 @@ export class RubyRegexParser extends Object implements RegexParser, RegexValidat
     // private flags(ch0: number): void;
     getFlags(): AbstractRegexObject;
     // private getLocalFlags(): RubyFlags;
-    // private getMany(pred: (param0: number) => kotlin.Boolean): string;
+    // private getMany(pred: (param0: number) => boolean): string;
     getNamedCaptureGroups(): AbstractRegexObject;
     // private getUnicodeCharClass(className: string): (Object | null)[];
     // private getUnicodePosixCharClass(className: string): (Object | null)[];
-    // private getUpTo(count: number, pred: (param0: number) => kotlin.Boolean): string;
+    // private getUpTo(count: number, pred: (param0: number) => boolean): string;
     // private group(capturing: boolean): void;
     // private isCaptureGroupOpen(groupNumber: number): boolean;
     isProperEscapeNext(): boolean;

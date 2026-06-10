@@ -12,18 +12,18 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSBuiltin extends Object implements Builtin, JSFunctionData$CallTargetInitializer {
     static createSourceSection(): SourceSection;
     static getSourceSection(): SourceSection;
-    constructor(containerName: TruffleString, functionName: TruffleString, key: Object, length: number, attributeFlags: number, ecmaScriptVersion: number, annexB: boolean, functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any, constructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any, newTargetConstructorFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any, isOptional: boolean)
-    constructor(containerName: TruffleString, name: TruffleString, length: number, flags: number, functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any)
+    constructor(containerName: TruffleString, functionName: TruffleString, key: Object, length: number, attributeFlags: number, ecmaScriptVersion: number, annexB: boolean, functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object, constructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object, newTargetConstructorFactory: (param0: JSContext, param1: JSBuiltin) => Object, isOptional: boolean)
+    constructor(containerName: TruffleString, name: TruffleString, length: number, flags: number, functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object)
     readonly annexB: boolean;
     readonly attributeFlags: number;
-    // private constructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any;
+    // private constructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object;
     // private ecmaScriptVersion: number;
     readonly fullName: TruffleString;
-    // private functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any;
+    // private functionNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object;
     readonly key: Object;
     readonly length: number;
     readonly name: TruffleString;
-    // private newTargetConstructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => kotlin.Any;
+    // private newTargetConstructorNodeFactory: (param0: JSContext, param1: JSBuiltin) => Object;
     readonly optional: boolean;
     createFunctionData(context: JSContext): JSFunctionData;
     createNode(context: JSContext, construct: boolean, newTarget: boolean): JSBuiltinNode;

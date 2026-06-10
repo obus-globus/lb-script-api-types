@@ -9,7 +9,7 @@ export class KillAuraRangeIndicator$ColorMode extends Enum<KillAuraRangeIndicato
     static RAINBOW: KillAuraRangeIndicator$ColorMode;
     static STATIC: KillAuraRangeIndicator$ColorMode;
     static getEntries(): KillAuraRangeIndicator$ColorMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraRangeIndicator$ColorMode;

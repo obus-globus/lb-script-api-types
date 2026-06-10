@@ -7,7 +7,7 @@ export class EnvironmentAttributeMap$Builder extends Object {
     private constructor()
     // private entries: Map<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>;
     build(): EnvironmentAttributeMap;
-    modify<Parameter extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, modifier: AttributeModifier<Value, Parameter>, value: Parameter): EnvironmentAttributeMap$Builder;
+    modify<Value extends Object | number | string | boolean, Parameter extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, modifier: AttributeModifier<Value, Parameter>, value: Parameter): EnvironmentAttributeMap$Builder;
     putAll(map: EnvironmentAttributeMap): EnvironmentAttributeMap$Builder;
     set<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, value: Value): EnvironmentAttributeMap$Builder;
 }

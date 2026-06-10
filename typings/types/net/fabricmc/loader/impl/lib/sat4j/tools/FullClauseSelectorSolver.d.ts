@@ -10,7 +10,7 @@ export class FullClauseSelectorSolver<T extends ISolver> extends AbstractClauseS
     // private skipDuplicatedEntries: boolean;
     addClause(arg0: IVecInt): IConstr;
     addControlableClause(arg0: IVecInt): IConstr;
-    getAddedVars(): E[];
+    getAddedVars(): number[];
     getConstrs(): { [key: number]: IConstr };
     getLastClause(): IVecInt;
     getLastConstr(): IConstr;

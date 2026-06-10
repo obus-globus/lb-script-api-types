@@ -8,7 +8,7 @@ import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome
 export interface BlockAndTintGetter extends Object, BlockAndLightGetter {
     canSeeSky(pos: BlockPos): boolean;
     cardinalLighting(): CardinalLighting;
-    getBlockTint(pos: BlockPos, color: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
+    getBlockTint(pos: BlockPos, color: (param0: Biome, param1: number, param2: number) => number): number;
     getBrightness(layer: LightLayer, pos: BlockPos): number;
     getRawBrightness(pos: BlockPos, darkening: number): number;
 }

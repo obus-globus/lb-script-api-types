@@ -11,7 +11,7 @@ export interface BiomeModificationContext$MobSpawnSettingsContext extends Object
     clearSpawns(): void;
     clearSpawns(arg0: MobCategory): void;
     getMobs(arg0: MobCategory): Weighted<MobSpawnSettings$SpawnerData>[];
-    removeSpawns(arg0: (param0: MobCategory, param1: MobSpawnSettings$SpawnerData) => kotlin.Boolean): boolean;
+    removeSpawns(arg0: (param0: MobCategory, param1: MobSpawnSettings$SpawnerData) => boolean): boolean;
     removeSpawnsOfEntityType(arg0: EntityType<Object>): boolean;
     setCreatureGenerationProbability(arg0: number): void;
 }

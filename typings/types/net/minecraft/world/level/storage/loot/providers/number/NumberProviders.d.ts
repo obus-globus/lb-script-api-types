@@ -4,6 +4,6 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { NumberProvider } from '../../../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class NumberProviders extends Object {
     static CODEC: Codec<NumberProvider>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<NumberProvider>[]): MapCodec<NumberProvider>;
     constructor()
 }

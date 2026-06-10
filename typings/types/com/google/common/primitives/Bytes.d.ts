@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Number } from '../../../../java/lang/Number.d.ts'
 export class Bytes extends Object {
     static asList(parambackingArray: number[]): number[];
     static concat(paramarrays: (Object | null)[]): number[];
@@ -12,6 +13,6 @@ export class Bytes extends Object {
     static reverse(paramarray: number[], paramfromIndex: number, paramtoIndex: number): void;
     static rotate(paramarray: number[], paramdistance: number): void;
     static rotate(paramarray: number[], paramdistance: number, paramfromIndex: number, paramtoIndex: number): void;
-    static toArray(paramcollection: E[]): number[];
+    static toArray(paramcollection: Number[]): number[];
     private constructor()
 }

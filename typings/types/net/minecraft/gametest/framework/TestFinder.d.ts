@@ -9,10 +9,10 @@ import type { TestInstanceFinder } from '../../../../net/minecraft/gametest/fram
 import type { TestPosFinder } from '../../../../net/minecraft/gametest/framework/TestPosFinder.d.ts'
 export class TestFinder extends Object implements TestInstanceFinder, TestPosFinder {
     static builder(): TestFinder$Builder;
-    private constructor(source: CommandSourceStack, testInstanceFinder: () => java.util.stream.Stream<unknown>, testPosFinder: () => java.util.stream.Stream<net.minecraft.core.BlockPos>)
+    private constructor(source: CommandSourceStack, testInstanceFinder: () => Stream<Holder$Reference<GameTestInstance>>, testPosFinder: () => Stream<BlockPos>)
     // private source: CommandSourceStack;
-    // private testInstanceFinder: () => java.util.stream.Stream<unknown>;
-    // private testPosFinder: () => java.util.stream.Stream<net.minecraft.core.BlockPos>;
+    // private testInstanceFinder: () => Stream<Holder$Reference<GameTestInstance>>;
+    // private testPosFinder: () => Stream<BlockPos>;
     findTestPos(): Stream<BlockPos>;
     findTests(): Stream<Holder$Reference<GameTestInstance>>;
     source(): CommandSourceStack;

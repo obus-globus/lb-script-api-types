@@ -4,6 +4,6 @@ import type { SecurityBuilder } from '../../../io/jsonwebtoken/security/Security
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface JwkSetBuilder extends MapMutator<string, Object, JwkSetBuilder>, KeyOperationPolicied<JwkSetBuilder>, SecurityBuilder<Jwk<Object>[], JwkSetBuilder>, Object{
     add(arg0: Jwk<Object>): JwkSetBuilder;
-    add(arg0: E[]): JwkSetBuilder;
-    keys(arg0: E[]): JwkSetBuilder;
+    add(arg0: Jwk<Object>[]): JwkSetBuilder;
+    keys(arg0: Jwk<Object>[]): JwkSetBuilder;
 }

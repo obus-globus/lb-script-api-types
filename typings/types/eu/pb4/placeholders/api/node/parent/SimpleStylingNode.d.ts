@@ -7,7 +7,7 @@ import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d
 export abstract class SimpleStylingNode extends ParentNode {
     static EMPTY: ParentNode;
     constructor(arg0: TextNode[])
-    constructor(arg0: E[])
+    constructor(arg0: TextNode[])
     applyFormatting(arg0: MutableComponent, arg1: ParserContext): Component;
     applyFormatting(arg0: Style, arg1: ParserContext): Style;
     style(arg0: ParserContext): Style;

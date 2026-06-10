@@ -25,7 +25,7 @@ export class JigsawBlockEntity extends BlockEntity {
     static NBT_ATTACHMENT_KEY: string;
     static PLACEMENT_PRIORITY: string;
     static POOL: string;
-    static POOL_CODEC: Codec<Object>;
+    static POOL_CODEC: Codec<ResourceKey<StructureTemplatePool>>;
     static SELECTION_PRIORITY: string;
     static TARGET: string;
     static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;

@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { URI } from '../../../../../../../java/net/URI.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { ConfigurationFactory } from '../../../../../../../org/apache/logging/log4j/core/config/ConfigurationFactory.d.ts'
@@ -21,7 +20,7 @@ export class PropertiesConfigurationFactory extends ConfigurationFactory {
     static authorizationProvider(paramprops: PropertiesUtil): AuthorizationProvider;
     static getAuthorizationProvider(): AuthorizationProvider;
     static getInstance(): ConfigurationFactory;
-    static newConfigurationBuilder(paramclazz: Class<Object>): ConfigurationBuilder<Object>;
+    static newConfigurationBuilder(paramclazz: Class<BuiltConfiguration>): ConfigurationBuilder<BuiltConfiguration>;
     static newConfigurationBuilder(): ConfigurationBuilder<BuiltConfiguration>;
     static removeConfigurationFactory(paramfactory: ConfigurationFactory): void;
     static resetConfigurationFactory(): void;

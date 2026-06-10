@@ -8,10 +8,10 @@ import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { TrimMaterial } from '../../../../../../net/minecraft/world/item/equipment/trim/TrimMaterial.d.ts'
 export class TrimPattern extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<TrimPattern>>;
     static DIRECT_CODEC: Codec<TrimPattern>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TrimPattern>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<TrimPattern>>;
     // private assetId: Identifier;
     // private decal: boolean;
     // private description: Component;

@@ -16,13 +16,13 @@ export class PlaceholderLookupProvider extends Object implements HolderGetter$Pr
     // private holderSets: Map<TagKey<Object>, Object[]>;
     // private holders: Map<ResourceKey<Object>, Holder$Reference<Object>>;
     // private lookup: PlaceholderLookupProvider$UniversalLookup;
-    createSerializationContext(parent: DynamicOps<V>): RegistryOps<V>;
+    createSerializationContext<V extends Object | number | string | boolean>(parent: DynamicOps<V>): RegistryOps<V>;
     createSwapper(): RegistryContextSwapper;
-    get(id: ResourceKey<T>): Optional<Holder$Reference<T>>;
-    get(id: TagKey<T>): Optional<T[]>;
-    getOrThrow(id: ResourceKey<T>): Holder$Reference<T>;
-    getOrThrow(id: TagKey<T>): T[];
+    get<T extends Object | number | string | boolean>(id: ResourceKey<T>): Optional<Holder$Reference<T>>;
+    get<T extends Object | number | string | boolean>(id: TagKey<T>): Optional<T[]>;
+    getOrThrow<T extends Object | number | string | boolean>(id: ResourceKey<T>): Holder$Reference<T>;
+    getOrThrow<T extends Object | number | string | boolean>(id: TagKey<T>): T[];
     hasRegisteredPlaceholders(): boolean;
-    lookup(key: ResourceKey<T[]>): Optional<HolderGetter<T>>;
-    lookupOrThrow(key: ResourceKey<T[]>): HolderGetter<T>;
+    lookup<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): Optional<HolderGetter<T>>;
+    lookupOrThrow<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderGetter<T>;
 }

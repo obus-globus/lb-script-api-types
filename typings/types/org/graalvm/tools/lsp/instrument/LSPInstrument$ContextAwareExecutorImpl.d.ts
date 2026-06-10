@@ -13,12 +13,12 @@ export class LSPInstrument$ContextAwareExecutorImpl extends Object implements Co
     // private executor: ExecutorService;
     // private lastNestedContext: Context;
     // private workerThread: WeakReference<Thread>;
-    // private execute(taskWithResult: () => T): Future<T>;
-    executeWithDefaultContext(taskWithResult: () => T): Future<T>;
-    executeWithNestedContext(taskWithResult: () => T): Future<T>;
-    executeWithNestedContext(taskWithResult: () => T, cached: boolean): Future<T>;
-    executeWithNestedContext(taskWithResult: () => T, timeoutMillis: number, onTimeoutTask: () => T): Future<T>;
+    // private execute<T extends Object | number | string | boolean>(taskWithResult: () => T): Future<T>;
+    executeWithDefaultContext<T extends Object | number | string | boolean>(taskWithResult: () => T): Future<T>;
+    executeWithNestedContext<T extends Object | number | string | boolean>(taskWithResult: () => T): Future<T>;
+    executeWithNestedContext<T extends Object | number | string | boolean>(taskWithResult: () => T, cached: boolean): Future<T>;
+    executeWithNestedContext<T extends Object | number | string | boolean>(taskWithResult: () => T, timeoutMillis: number, onTimeoutTask: () => T): Future<T>;
     resetContextCache(): void;
     shutdown(): void;
-    // private wrapWithNewContext(taskWithResult: () => T, cached: boolean): () => T;
+    // private wrapWithNewContext<T extends Object | number | string | boolean>(taskWithResult: () => T, cached: boolean): () => T;
 }

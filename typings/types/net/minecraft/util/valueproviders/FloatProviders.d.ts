@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FloatProvider } from '../../../../net/minecraft/util/valueproviders/FloatProvider.d.ts'
 export class FloatProviders extends Object {
     static CODEC: Codec<FloatProvider>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<FloatProvider>[]): MapCodec<FloatProvider>;
     static codec(paramminValue: number, parammaxValue: number): Codec<FloatProvider>;
     constructor()
 }

@@ -13,6 +13,6 @@ export class CoroutineStart extends Enum<CoroutineStart> {
     static values(): (Object | null)[];
     private constructor()
     /*not mapped: */ isLazy(): boolean;
-    invoke<R extends Object | number | string | boolean>(block: (param0: R) => T, receiver: R, completion: Continuation<T>): void;
+    invoke<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(block: (param0: R) => T, receiver: R, completion: Continuation<T>): void;
     name(): "DEFAULT" | "LAZY" | "ATOMIC" | "UNDISPATCHED";
 }

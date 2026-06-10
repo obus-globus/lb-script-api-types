@@ -15,7 +15,7 @@ export class TemporalErrors extends Object {
     static createRangeErrorInvalidTimeZoneString(): JSException;
     static createRangeErrorMonthDayOutsideRange(): JSException;
     static createRangeErrorNumberIsNaN(): JSException;
-    static createRangeErrorOptionsNotContained(paramvalues: (Object | null)[], paramvalue: Object): JSException;
+    static createRangeErrorOptionsNotContained(paramvalues: Object[], paramvalue: Object): JSException;
     static createRangeErrorRelativeToNotUndefined(): JSException;
     static createRangeErrorRelativeToNotUndefined(paramunit: TemporalUtil$Unit): JSException;
     static createRangeErrorSmallestUnitOutOfRange(): JSException;

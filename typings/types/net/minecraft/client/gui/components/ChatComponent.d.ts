@@ -41,7 +41,7 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     // private preservedScreen: ChatScreen;
     readonly recentChat: string[];
     trimmedMessages: GuiMessage$Line[];
-    readonly visibleMessageFilter: (param0: GuiMessage) => kotlin.Boolean;
+    readonly visibleMessageFilter: (param0: GuiMessage) => boolean;
     addClientSystemMessage(message: Component): void;
     // private addMessage(contents: Component, signature: MessageSignature, source: GuiMessageSource, tag: GuiMessageTag): void;
     addMessageToDisplayQueue(message: GuiMessage): void;
@@ -51,13 +51,13 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     addServerSystemMessage(message: Component): void;
     captureClickableText(activeTextCollector: ActiveTextCollector, screenHeight: number, ticks: number, displayMode: ChatComponent$DisplayMode): void;
     clearMessages(history: boolean): void;
-    createScreen<T extends ChatScreen>(chatMethod: ChatComponent$ChatMethod, chat: (param0: T, param1: string) => unknown): T;
+    createScreen<T extends ChatScreen>(chatMethod: ChatComponent$ChatMethod, chat: (param0: string, param1: boolean) => T): T;
     deleteMessage(signature: MessageSignature): void;
     // private deleteMessageOrDelay(signature: MessageSignature): ChatComponent$DelayedMessageDeletion;
     discardDraft(): void;
     extractRenderState(graphics: GuiGraphicsExtractor, font: Font, ticks: number, mouseX: number, mouseY: number, displayMode: ChatComponent$DisplayMode, changeCursorOnInsertions: boolean): void;
     // private extractRenderState(graphics: ChatComponent$ChatGraphicsAccess, screenHeight: number, ticks: number, displayMode: ChatComponent$DisplayMode): void;
-    // private forEachLine(alphaCalculator: (param0: GuiMessage$Line) => kotlin.Float, lineConsumer: (param0: GuiMessage$Line, param1: number, param2: number) => void): number;
+    // private forEachLine(alphaCalculator: (param0: GuiMessage$Line) => number, lineConsumer: (param0: GuiMessage$Line, param1: number, param2: number) => void): number;
     // private getHeight(): number;
     // private getLineHeight(): number;
     getLinesPerPage(): number;
@@ -67,7 +67,7 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     isChatFocused(): boolean;
     liquidbounce_getChatY(): number;
     logChatMessage(message: GuiMessage): void;
-    openScreen(chatMethod: ChatComponent$ChatMethod, chat: (param0: string, param1: boolean) => unknown): void;
+    openScreen(chatMethod: ChatComponent$ChatMethod, chat: (param0: string, param1: boolean) => ChatScreen | null): void;
     preserveCurrentChatScreen(): void;
     // private processMessageDeletionQueue(): void;
     // private refreshTrimmedMessages(): void;
@@ -77,7 +77,7 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     restoreState(state: ChatComponent$State): void;
     saveAsDraft(text: string): void;
     scrollChat(dir: number): void;
-    setVisibleMessageFilter(visibleMessageFilter: (param0: GuiMessage) => kotlin.Boolean): void;
+    setVisibleMessageFilter(visibleMessageFilter: (param0: GuiMessage) => boolean): void;
     storeState(): ChatComponent$State;
     tick(): void;
 }

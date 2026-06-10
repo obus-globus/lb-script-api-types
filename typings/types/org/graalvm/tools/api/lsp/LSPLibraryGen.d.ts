@@ -8,7 +8,7 @@ import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/Metho
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LSPLibrary } from '../../../../../org/graalvm/tools/api/lsp/LSPLibrary.d.ts'
 export class LSPLibraryGen extends LibraryFactory<LSPLibrary> {
-    static resolve(paramlibrary: Class<Object>): LibraryFactory<Object>;
+    static resolve(paramlibrary: Class<Library>): LibraryFactory<Library>;
     private constructor()
     createAssertions(delegate: LSPLibrary): LSPLibrary;
     createDelegate(delegateLibrary: LSPLibrary): LSPLibrary;

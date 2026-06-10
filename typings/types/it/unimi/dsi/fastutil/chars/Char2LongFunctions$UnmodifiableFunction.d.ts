@@ -3,8 +3,8 @@ import type { Char2LongFunction } from '../../../../../it/unimi/dsi/fastutil/cha
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2LongFunctions$UnmodifiableFunction extends AbstractChar2LongFunction implements Serializable {
-    constructor(arg0: (param0: string) => kotlin.Long)
-    // private function: (param0: string) => kotlin.Long;
+    constructor(arg0: (param0: string) => number)
+    // private function: (param0: string) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

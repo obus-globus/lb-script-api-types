@@ -10,9 +10,9 @@ export class Byte2ReferenceRBTreeMap$TreeIterator extends Object {
     back(arg0: number): number;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    nextEntry(): Byte2ReferenceRBTreeMap$Entry<V>;
+    nextEntry<V extends Object | number | string | boolean>(): Byte2ReferenceRBTreeMap$Entry<V>;
     nextIndex(): number;
-    previousEntry(): Byte2ReferenceRBTreeMap$Entry<V>;
+    previousEntry<V extends Object | number | string | boolean>(): Byte2ReferenceRBTreeMap$Entry<V>;
     previousIndex(): number;
     remove(): void;
     skip(arg0: number): number;

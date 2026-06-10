@@ -11,7 +11,7 @@ import type { HumanoidRenderState } from '../../../../../net/minecraft/client/re
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { HumanoidArm } from '../../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
 export class PlayerModel extends HumanoidModel<AvatarRenderState> {
-    static BABY_TRANSFORMER: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static BABY_TRANSFORMER: (param0: MeshDefinition) => MeshDefinition;
     static HAT_OVERLAY_SCALE: number;
     static LEGGINGS_OVERLAY_SCALE: number;
     static MODEL_Y_OFFSET: number;

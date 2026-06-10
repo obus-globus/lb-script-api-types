@@ -19,6 +19,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { InteractionResult } from '../../../../net/minecraft/world/InteractionResult.d.ts'
@@ -53,13 +54,13 @@ export class Item extends Object implements FabricItem, ItemExtensions, ItemVari
     static BASE_ATTACK_DAMAGE_ID: Identifier;
     static BASE_ATTACK_SPEED_ID: Identifier;
     static BY_BLOCK: Map<Block, Item>;
-    static CODEC: Codec<Object>;
-    static CODEC_WITH_BOUND_COMPONENTS: Codec<Object>;
+    static CODEC: Codec<Holder<Item>>;
+    static CODEC_WITH_BOUND_COMPONENTS: Codec<Holder<Item>>;
     static DEFAULT_LIGHT_COLOR: Vector3f;
     static DEFAULT_MAX_STACK_SIZE: number;
-    static FILTERED_REGISTRIES: (Object | null)[];
+    static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static MAX_BAR_WIDTH: number;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Item>>;
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;
@@ -67,9 +68,9 @@ export class Item extends Object implements FabricItem, ItemExtensions, ItemVari
     // private builtInRegistryHolder: Holder$Reference<Item>;
     // private cachedItemVariant: ItemVariant;
     // private craftingRemainingItem: ItemStackTemplate;
-    // private customDamageHandler: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int;
+    // private customDamageHandler: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number;
     readonly descriptionId: string;
-    // private equipmentSlotProvider: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot;
+    // private equipmentSlotProvider: (param0: LivingEntity, param1: ItemStack) => EquipmentSlot;
     // private requiredFeatures: FeatureFlagSet;
     allowComponentsUpdateAnimation(arg0: Player, arg1: InteractionHand, arg2: ItemStack, arg3: ItemStack): boolean;
     allowContinuingBlockBreaking(arg0: Player, arg1: ItemStack, arg2: ItemStack): boolean;
@@ -81,10 +82,10 @@ export class Item extends Object implements FabricItem, ItemExtensions, ItemVari
     canFitInsideContainerItems(): boolean;
     components(): TypedDataComponent<Object>[];
     fabric_getCachedItemVariant(): ItemVariant;
-    fabric_getCustomDamageHandler(): (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int;
-    fabric_getEquipmentSlotProvider(): (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot;
-    fabric_setCustomDamageHandler(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => kotlin.Int): void;
-    fabric_setEquipmentSlotProvider(arg0: (param0: LivingEntity, param1: ItemStack) => net.minecraft.world.entity.EquipmentSlot): void;
+    fabric_getCustomDamageHandler(): (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number;
+    fabric_getEquipmentSlotProvider(): (param0: LivingEntity, param1: ItemStack) => EquipmentSlot;
+    fabric_setCustomDamageHandler(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number): void;
+    fabric_setEquipmentSlotProvider(arg0: (param0: LivingEntity, param1: ItemStack) => EquipmentSlot): void;
     finishUsingItem(itemStack: ItemStack, level: Level, entity: LivingEntity): ItemStack;
     getAttackDamageBonus(victim: Entity, damage: number, damageSource: DamageSource): number;
     getBarColor(stack: ItemStack): number;

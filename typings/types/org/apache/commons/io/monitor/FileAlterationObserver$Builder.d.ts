@@ -6,12 +6,12 @@ import type { FileAlterationObserver } from '../../../../../org/apache/commons/i
 import type { FileEntry } from '../../../../../org/apache/commons/io/monitor/FileEntry.d.ts'
 export class FileAlterationObserver$Builder extends AbstractOriginSupplier<FileAlterationObserver, FileAlterationObserver$Builder> {
     private constructor()
-    // private fileFilter: (param0: File) => kotlin.Boolean;
+    // private fileFilter: (param0: File) => boolean;
     // private ioCase: IOCase;
     // private rootEntry: FileEntry;
     // private checkOriginFile(): File;
     get(): FileAlterationObserver;
-    setFileFilter(arg0: (param0: File) => kotlin.Boolean): FileAlterationObserver$Builder;
+    setFileFilter(arg0: (param0: File) => boolean): FileAlterationObserver$Builder;
     setIOCase(arg0: IOCase): FileAlterationObserver$Builder;
     setRootEntry(arg0: FileEntry): FileAlterationObserver$Builder;
 }

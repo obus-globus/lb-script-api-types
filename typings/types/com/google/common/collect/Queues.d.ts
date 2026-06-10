@@ -2,10 +2,10 @@ import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Queues extends Object {
-    static drain(paramq: (Object | null)[], parambuffer: E[], paramnumElements: number, paramtimeout: Duration): number;
-    static drain(paramq: (Object | null)[], parambuffer: E[], paramnumElements: number, paramtimeout: number, paramunit: TimeUnit): number;
-    static drainUninterruptibly(paramq: (Object | null)[], parambuffer: E[], paramnumElements: number, paramtimeout: Duration): number;
-    static drainUninterruptibly(paramq: (Object | null)[], parambuffer: E[], paramnumElements: number, paramtimeout: number, paramunit: TimeUnit): number;
+    static drain(paramq: (Object | null)[], parambuffer: Object[], paramnumElements: number, paramtimeout: Duration): number;
+    static drain(paramq: (Object | null)[], parambuffer: Object[], paramnumElements: number, paramtimeout: number, paramunit: TimeUnit): number;
+    static drainUninterruptibly(paramq: (Object | null)[], parambuffer: Object[], paramnumElements: number, paramtimeout: Duration): number;
+    static drainUninterruptibly(paramq: (Object | null)[], parambuffer: Object[], paramnumElements: number, paramtimeout: number, paramunit: TimeUnit): number;
     static newArrayBlockingQueue(paramcapacity: number): (Object | null)[];
     static newArrayDeque(): (Object | null)[];
     static newArrayDeque(paramelements: (Object | null)[]): (Object | null)[];

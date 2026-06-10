@@ -5,5 +5,5 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 export interface RegistryAccess$Frozen extends Object, RegistryAccess{
     freeze(): RegistryAccess$Frozen;
     listRegistryKeys(): Stream<ResourceKey<(Object | null)[]>>;
-    lookupOrThrow(name: ResourceKey<E[]>): E[];
+    lookupOrThrow<E extends Object | number | string | boolean>(name: ResourceKey<E[]>): E[];
 }

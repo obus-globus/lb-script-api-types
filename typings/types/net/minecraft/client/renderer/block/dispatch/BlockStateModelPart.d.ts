@@ -11,7 +11,7 @@ import type { Material$Baked } from '../../../../../../net/minecraft/client/reso
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export interface BlockStateModelPart extends Object, FabricBlockStateModelPart, BlockStateModelPartMixin, IrisModelPart, MixinBlockModelPart, MixinBlockState {
-    emitQuads(arg0: QuadEmitter, arg1: (param0: Direction) => kotlin.Boolean): void;
+    emitQuads(arg0: QuadEmitter, arg1: (param0: Direction) => boolean): void;
     getBlockAppearance(): BlockState;
     getQuads(direction: Direction): BakedQuad[];
     materialFlags(): number;

@@ -15,7 +15,7 @@ export class GlobalSettingsRichPresence$RichPresencePart extends Enum<GlobalSett
     static PROTOCOL_VERSION: GlobalSettingsRichPresence$RichPresencePart;
     static SERVER: GlobalSettingsRichPresence$RichPresencePart;
     static getEntries(): GlobalSettingsRichPresence$RichPresencePart[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlobalSettingsRichPresence$RichPresencePart;

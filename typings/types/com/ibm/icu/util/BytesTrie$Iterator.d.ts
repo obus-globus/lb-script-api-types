@@ -13,7 +13,7 @@ export class BytesTrie$Iterator extends Object implements Iterator<BytesTrie$Ent
     // private remainingMatchLength_: number;
     // private stack_: number[];
     // private branchNext(arg0: number, arg1: number): number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: BytesTrie$Entry) => void): void;
     hasNext(): boolean;
     next(): BytesTrie$Entry;
     remove(): void;

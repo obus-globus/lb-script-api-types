@@ -11,7 +11,7 @@ import type { StructureSet } from '../../../../../net/minecraft/world/level/leve
 import type { ConcentricRingsStructurePlacement } from '../../../../../net/minecraft/world/level/levelgen/structure/placement/ConcentricRingsStructurePlacement.d.ts'
 import type { StructurePlacement } from '../../../../../net/minecraft/world/level/levelgen/structure/placement/StructurePlacement.d.ts'
 export class ChunkGeneratorStructureState extends Object {
-    static createForFlat(paramrandomState: RandomState, paramlevelSeed: number, parambiomeSource: BiomeSource, paramstructureOverrides: Stream<Object>): ChunkGeneratorStructureState;
+    static createForFlat(paramrandomState: RandomState, paramlevelSeed: number, parambiomeSource: BiomeSource, paramstructureOverrides: Stream<Holder<StructureSet>>): ChunkGeneratorStructureState;
     static createForNormal(paramrandomState: RandomState, paramlevelSeed: number, parambiomeSource: BiomeSource, paramallStructures: HolderLookup<StructureSet>): ChunkGeneratorStructureState;
     private constructor(randomState: RandomState, biomeSource: BiomeSource, levelSeed: number, concentricRingsSeed: number, possibleStructureSets: Holder<StructureSet>[])
     // private biomeSource: BiomeSource;

@@ -12,5 +12,5 @@ export interface KnotClassLoaderInterface extends Object{
     isClassLoaded(arg0: string): boolean;
     loadIntoTarget(arg0: string): Class<Object>;
     setAllowedPrefixes(arg0: Path[], arg1: string[]): void;
-    setValidParentClassPath(arg0: E[]): void;
+    setValidParentClassPath(arg0: Path[][]): void;
 }

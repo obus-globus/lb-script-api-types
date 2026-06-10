@@ -49,7 +49,7 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static getPrivateProfileString(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: string): string;
     static getProcessPriority(paramarg0: number): WinDef$DWORD;
     static getResource(paramarg0: string, paramarg1: string, paramarg2: string): number[];
-    static getResourceNames(paramarg0: string): { [key: string]: Object | null };
+    static getResourceNames(paramarg0: string): { [key: string]: string[] };
     static getTempPath(): string;
     static getThreadPriority(paramarg0: number): number;
     static getVolumePathNamesForVolumeName(paramarg0: string): string[];

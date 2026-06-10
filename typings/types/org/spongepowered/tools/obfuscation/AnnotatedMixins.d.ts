@@ -41,7 +41,7 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     getJavadocProvider(): IJavadocProvider;
     getMixin(arg0: TypeElement): AnnotatedMixin;
     getMixin(arg0: string): AnnotatedMixin;
-    getMixinsTargeting(arg0: TypeHandle): E[];
+    getMixinsTargeting(arg0: TypeHandle): TypeHandle[];
     getObfuscationManager(): IObfuscationManager;
     getOption(arg0: string): string;
     getOption(arg0: string, arg1: boolean): boolean;

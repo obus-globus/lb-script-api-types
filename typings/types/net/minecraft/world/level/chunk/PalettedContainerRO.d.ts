@@ -9,11 +9,11 @@ import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/St
 export interface PalettedContainerRO<T extends Object | number | string | boolean> extends Object {
     bitsPerEntry(): number;
     copy(): PalettedContainer<T>;
-    count(output: (param0: T, param1: Object | null) => void): void;
+    count(output: (param0: T, param1: number) => void): void;
     get(x: number, y: number, z: number): T;
     getAll(consumer: (param0: T) => void): void;
     getSerializedSize(): number;
-    maybeHas(predicate: (param0: T) => kotlin.Boolean): boolean;
+    maybeHas(predicate: (param0: T) => boolean): boolean;
     pack(strategy: Strategy<T>): PalettedContainerRO$PackedData<T>;
     recreate(): PalettedContainer<T>;
     write(buffer: FriendlyByteBuf): void;

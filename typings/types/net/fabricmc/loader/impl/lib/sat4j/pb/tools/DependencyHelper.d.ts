@@ -33,7 +33,7 @@ export class DependencyHelper<T extends Object | number | string | boolean, C ex
     atMost(arg0: number, arg1: T[]): ImplicationNamer<T, C>;
     clause(arg0: C, arg1: T[]): void;
     // private createObjectivetiveFunctionIfNeeded(arg0: number): void;
-    getASolution(): E[];
+    getASolution(): T[];
     getIntValue(arg0: T): number;
     getIntValue(arg0: T, arg1: boolean): number;
     getSolver(): IPBSolver;

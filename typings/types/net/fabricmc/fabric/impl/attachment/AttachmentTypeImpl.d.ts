@@ -14,7 +14,7 @@ export class AttachmentTypeImpl<A extends Object | number | string | boolean> ex
     // private maxSyncSize: number;
     // private persistenceCodec: Codec<A>;
     // private streamCodec: StreamCodec<RegistryFriendlyByteBuf, A>;
-    // private syncPredicate: (param0: Object | null, param1: Object | null) => kotlin.Boolean;
+    // private syncPredicate: (param0: Object | null, param1: Object | null) => boolean;
     copyOnDeath(): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
@@ -25,6 +25,6 @@ export class AttachmentTypeImpl<A extends Object | number | string | boolean> ex
     maxSyncSize(): number;
     persistenceCodec(): Codec<A>;
     streamCodec(): StreamCodec<RegistryFriendlyByteBuf, A>;
-    syncPredicate(): (param0: Object | null, param1: Object | null) => kotlin.Boolean;
+    syncPredicate(): (param0: Object | null, param1: Object | null) => boolean;
     toString(): string;
 }

@@ -63,8 +63,8 @@ export abstract class Invokable<T extends Object | number | string | boolean, R 
     isTransient(): boolean;
     isVarArgs(): boolean;
     isVolatile(): boolean;
-    returning(returnType: TypeToken<R1>): Invokable<T, R1>;
-    returning(returnType: Class<R1>): Invokable<T, R1>;
+    returning<R1 extends R>(returnType: TypeToken<R1>): Invokable<T, R1>;
+    returning<R1 extends R>(returnType: Class<R1>): Invokable<T, R1>;
     setAccessible(flag: boolean): void;
     toString(): string;
     trySetAccessible(): boolean;

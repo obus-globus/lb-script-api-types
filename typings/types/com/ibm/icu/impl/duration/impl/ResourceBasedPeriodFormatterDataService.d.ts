@@ -3,10 +3,10 @@ import type { PeriodFormatterDataService } from '../../../../../../com/ibm/icu/i
 export class ResourceBasedPeriodFormatterDataService extends PeriodFormatterDataService {
     static getInstance(): ResourceBasedPeriodFormatterDataService;
     private constructor()
-    readonly availableLocales: E[];
+    readonly availableLocales: string[];
     // private cache: { [key: string]: PeriodFormatterData };
     // private lastData: PeriodFormatterData;
     // private lastLocale: string;
     get(arg0: string): PeriodFormatterData;
-    getAvailableLocales(): E[];
+    getAvailableLocales(): string[];
 }

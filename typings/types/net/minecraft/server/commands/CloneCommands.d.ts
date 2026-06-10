@@ -5,7 +5,7 @@ import type { CommandBuildContext } from '../../../../net/minecraft/commands/Com
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { BlockInWorld } from '../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 export class CloneCommands extends Object {
-    static FILTER_AIR: (param0: BlockInWorld) => kotlin.Boolean;
+    static FILTER_AIR: (param0: BlockInWorld) => boolean;
     static register(paramdispatcher: CommandDispatcher<CommandSourceStack>, paramcontext: CommandBuildContext): void;
     constructor()
 }

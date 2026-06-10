@@ -1,4 +1,5 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -6,10 +7,11 @@ import type { GlobalScopeTDZCheckNode } from '../../../../../../com/oracle/truff
 import type { GlobalScopeTDZCheckNodeGen$CachedData } from '../../../../../../com/oracle/truffle/js/nodes/access/GlobalScopeTDZCheckNodeGen$CachedData.d.ts'
 import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GlobalScopeTDZCheckNodeGen extends GlobalScopeTDZCheckNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext): JavaScriptNode;
     static create(paramcontext: JSContext, paramvarName: TruffleString): GlobalScopeTDZCheckNode;
     static createWithTDZCheck(paramcontext: JSContext, paramvarName: TruffleString): JavaScriptNode;

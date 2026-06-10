@@ -7,5 +7,5 @@ export class ItemPredicateArgument extends ParserBasedArgument<ItemPredicateArgu
     static getItemPredicate(paramcontext: CommandContext<CommandSourceStack>, paramname: string): ItemPredicateArgument$Result;
     static itemPredicate(paramcontext: CommandBuildContext): ItemPredicateArgument;
     constructor(registries: CommandBuildContext)
-    getExamples(): E[];
+    getExamples(): string[];
 }

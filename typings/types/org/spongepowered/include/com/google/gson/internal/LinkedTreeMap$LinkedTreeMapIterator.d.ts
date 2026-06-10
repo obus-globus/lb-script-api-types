@@ -9,6 +9,6 @@ export abstract class LinkedTreeMap$LinkedTreeMapIterator<T extends Object | num
     // private next: LinkedTreeMap$Node<K, V>;
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
-    nextNode(): LinkedTreeMap$Node<K, V>;
+    nextNode<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): LinkedTreeMap$Node<K, V>;
     remove(): void;
 }

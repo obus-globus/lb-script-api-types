@@ -9,11 +9,11 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class JukeboxSong extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<JukeboxSong>>;
     static DIRECT_CODEC: Codec<JukeboxSong>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JukeboxSong>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
-    static fromStack(paramstack: ItemStack): Optional<Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<JukeboxSong>>;
+    static fromStack(paramstack: ItemStack): Optional<Holder<JukeboxSong>>;
     // private comparatorOutput: number;
     // private description: Component;
     // private lengthInSeconds: number;

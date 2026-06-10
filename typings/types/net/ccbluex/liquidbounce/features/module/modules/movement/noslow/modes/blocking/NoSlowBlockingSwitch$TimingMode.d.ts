@@ -9,7 +9,7 @@ export class NoSlowBlockingSwitch$TimingMode extends Enum<NoSlowBlockingSwitch$T
     static PRE_POST: NoSlowBlockingSwitch$TimingMode;
     static PRE_TICK: NoSlowBlockingSwitch$TimingMode;
     static getEntries(): NoSlowBlockingSwitch$TimingMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NoSlowBlockingSwitch$TimingMode;

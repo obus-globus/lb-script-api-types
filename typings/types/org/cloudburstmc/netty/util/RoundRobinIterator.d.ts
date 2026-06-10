@@ -5,7 +5,7 @@ export class RoundRobinIterator<E extends Object | number | string | boolean> ex
     constructor(arg0: E[])
     // private collection: E[];
     // private iterator: Iterator<E>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
 }

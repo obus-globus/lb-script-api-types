@@ -3,7 +3,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { PreparableReloadListener } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 export interface IdentifiableResourceReloadListener extends Object, PreparableReloadListener{
-    getFabricDependencies(): E[];
+    getFabricDependencies(): Identifier[];
     getFabricId(): Identifier;
     getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

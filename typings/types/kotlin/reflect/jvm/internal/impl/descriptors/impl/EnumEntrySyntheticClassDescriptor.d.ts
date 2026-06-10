@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ClassKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassKind.d.ts'
@@ -20,7 +19,7 @@ import type { TypeConstructor } from '../../../../../../../kotlin/reflect/jvm/in
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
     static Companion: ModuleAwareClassDescriptor$Companion;
-    static create(paramarg0: StorageManager, paramarg1: ClassDescriptor, paramarg2: Name, paramarg3: NotNullLazyValue<Object>, paramarg4: AnnotationDescriptor[], paramarg5: SourceElement): EnumEntrySyntheticClassDescriptor;
+    static create(paramarg0: StorageManager, paramarg1: ClassDescriptor, paramarg2: Name, paramarg3: NotNullLazyValue<Name[]>, paramarg4: AnnotationDescriptor[], paramarg5: SourceElement): EnumEntrySyntheticClassDescriptor;
     private constructor(arg0: StorageManager, arg1: ClassDescriptor, arg2: KotlinType, arg3: Name, arg4: NotNullLazyValue<Name[]>, arg5: AnnotationDescriptor[], arg6: SourceElement)
     readonly annotations: AnnotationDescriptor[];
     // private enumMemberNames: NotNullLazyValue<Name[]>;
@@ -28,7 +27,7 @@ export class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
     readonly typeConstructor: TypeConstructor;
     getAnnotations(): AnnotationDescriptor[];
     getCompanionObjectDescriptor(): ClassDescriptor;
-    getConstructors(): E[];
+    getConstructors(): ClassConstructorDescriptor[];
     getDeclaredTypeParameters(): TypeParameterDescriptor[];
     getKind(): ClassKind;
     getModality(): Modality;

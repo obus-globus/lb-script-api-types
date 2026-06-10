@@ -1,6 +1,5 @@
 import type { BooleanConsumer } from '../../../../../../it/unimi/dsi/fastutil/booleans/BooleanConsumer.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { EditBox } from '../../../../../../net/minecraft/client/gui/components/EditBox.d.ts'
@@ -23,7 +22,7 @@ export class EditWorldScreen extends Screen {
     static conditionallyMakeBackupAndShowToast(paramcreateBackup: boolean, paramaccess: LevelStorageSource$LevelStorageAccess): CompletableFuture<boolean>;
     static create(paramminecraft: Minecraft, paramlevelAccess: LevelStorageSource$LevelStorageAccess, paramcallback: (param0: boolean) => void): EditWorldScreen;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
-    static findNarratableWidget(paramnarratableEntries: (Object | null)[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
+    static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     static makeBackupAndShowToast(paramaccess: LevelStorageSource$LevelStorageAccess): CompletableFuture<boolean>;
     private constructor(minecraft: Minecraft, levelAccess: LevelStorageSource$LevelStorageAccess, name: string, callback: (param0: boolean) => void)

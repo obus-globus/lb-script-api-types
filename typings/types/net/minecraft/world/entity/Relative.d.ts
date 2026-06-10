@@ -11,7 +11,7 @@ export class Relative extends Enum<Relative> {
     static DELTA_Z: Relative;
     static ROTATE_DELTA: Relative;
     static ROTATION: Relative[];
-    static SET_STREAM_CODEC: StreamCodec<ByteBuf, Object>;
+    static SET_STREAM_CODEC: StreamCodec<ByteBuf, Relative[]>;
     static X: Relative;
     static X_ROT: Relative;
     static Y: Relative;

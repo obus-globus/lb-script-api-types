@@ -10,13 +10,13 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemPredicateArgument$PredicateWrapper extends Record {
     constructor(holder: Holder$Reference<DataComponentPredicate$Type<Object>>)
-    private constructor(id: Identifier, type: Decoder<(param0: ItemStack) => kotlin.Boolean>)
+    private constructor(id: Identifier, type: Decoder<(param0: ItemStack) => boolean>)
     // private id: Identifier;
-    // private type: Decoder<(param0: ItemStack) => kotlin.Boolean>;
-    decode(reader: ImmutableStringReader, value: Dynamic<Object>): (param0: ItemStack) => kotlin.Boolean;
+    // private type: Decoder<(param0: ItemStack) => boolean>;
+    decode(reader: ImmutableStringReader, value: Dynamic<Object>): (param0: ItemStack) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
     id(): Identifier;
     toString(): string;
-    type(): Decoder<(param0: ItemStack) => kotlin.Boolean>;
+    type(): Decoder<(param0: ItemStack) => boolean>;
 }

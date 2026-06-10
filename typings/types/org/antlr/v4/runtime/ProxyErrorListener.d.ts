@@ -6,8 +6,8 @@ import type { RecognitionException } from '../../../../org/antlr/v4/runtime/Reco
 import type { Recognizer } from '../../../../org/antlr/v4/runtime/Recognizer.d.ts'
 import type { DFA } from '../../../../org/antlr/v4/runtime/dfa/DFA.d.ts'
 export class ProxyErrorListener extends Object implements ANTLRErrorListener {
-    constructor(arg0: E[])
-    // private delegates: E[];
+    constructor(arg0: ANTLRErrorListener[])
+    // private delegates: ANTLRErrorListener[];
     reportAmbiguity(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: boolean, arg5: BitSet, arg6: (Object | null)[]): void;
     reportAttemptingFullContext(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: BitSet, arg5: (Object | null)[]): void;
     reportContextSensitivity(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: number, arg5: (Object | null)[]): void;

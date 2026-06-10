@@ -10,7 +10,7 @@ export class StreamIterator<E extends Object | number | string | boolean> extend
     // private iterator: Iterator<E>;
     // private stream: Stream<E>;
     close(): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: E) => void): void;
     hasNext(): boolean;
     next(): E;
 }

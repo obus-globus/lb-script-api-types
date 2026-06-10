@@ -14,7 +14,7 @@ export class TreeDecorator$Context extends Object {
     // private logs: BlockPos[];
     // private random: RandomSource;
     // private roots: BlockPos[];
-    checkBlock(pos: BlockPos, predicate: (param0: BlockState) => kotlin.Boolean): boolean;
+    checkBlock(pos: BlockPos, predicate: (param0: BlockState) => boolean): boolean;
     isAir(pos: BlockPos): boolean;
     leaves(): BlockPos[];
     level(): WorldGenLevel;

@@ -8,7 +8,7 @@ import type { Unit } from '../../../net/minecraft/util/Unit.d.ts'
 export class StringSplitter$LineComponent extends Object implements FormattedText {
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
-    static composite(paramparts: (Object | null)[]): FormattedText;
+    static composite(paramparts: FormattedText[]): FormattedText;
     static composite(paramparts: (Object | null)[]): FormattedText;
     static of(paramtext: string): FormattedText;
     static of(paramtext: string, paramstyle: Style): FormattedText;
@@ -16,6 +16,6 @@ export class StringSplitter$LineComponent extends Object implements FormattedTex
     // private contents: string;
     // private style: Style;
     getString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

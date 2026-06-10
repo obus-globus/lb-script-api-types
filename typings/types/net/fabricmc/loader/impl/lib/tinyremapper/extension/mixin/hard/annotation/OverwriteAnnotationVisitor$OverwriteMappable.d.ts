@@ -3,7 +3,7 @@ import type { MxMember } from '../../../../../../../../../../net/fabricmc/loader
 import type { ConvertibleMappable } from '../../../../../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/extension/mixin/hard/util/ConvertibleMappable.d.ts'
 import type { IConvertibleString } from '../../../../../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/extension/mixin/hard/util/IConvertibleString.d.ts'
 export class OverwriteAnnotationVisitor$OverwriteMappable extends ConvertibleMappable {
-    constructor(arg0: CommonData, arg1: MxMember, arg2: E[])
+    constructor(arg0: CommonData, arg1: MxMember, arg2: string[])
     getDesc(): string;
     getName(): IConvertibleString;
 }

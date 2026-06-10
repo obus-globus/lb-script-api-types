@@ -5,7 +5,7 @@ import type { LevelReader } from '../../../../../../../net/minecraft/world/level
 import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockInWorld extends Object {
-    static hasState(parampredicate: (param0: BlockState) => kotlin.Boolean): (param0: BlockInWorld) => kotlin.Boolean;
+    static hasState(parampredicate: (param0: BlockState) => boolean): (param0: BlockInWorld) => boolean;
     constructor(level: LevelReader, pos: BlockPos, loadChunks: boolean)
     // private cachedEntity: boolean;
     readonly entity: BlockEntity;

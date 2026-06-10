@@ -38,11 +38,11 @@ export class GLFWAllocator extends Struct<GLFWAllocator> implements NativeResour
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nallocate(paramarg0: number): GLFWAllocateCallback;
-    static nallocate(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Long): void;
+    static nallocate(paramarg0: number, paramarg1: (param0: number, param1: number) => number): void;
     static ndeallocate(paramarg0: number): GLFWDeallocateCallback;
     static ndeallocate(paramarg0: number, paramarg1: (param0: number, param1: number) => void): void;
     static nreallocate(paramarg0: number): GLFWReallocateCallback;
-    static nreallocate(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => kotlin.Long): void;
+    static nreallocate(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number) => number): void;
     static nuser(paramarg0: number): number;
     static nuser(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number): void;
@@ -51,14 +51,14 @@ export class GLFWAllocator extends Struct<GLFWAllocator> implements NativeResour
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     allocate(): GLFWAllocateCallback;
-    allocate(arg0: (param0: number, param1: number) => kotlin.Long): GLFWAllocator;
+    allocate(arg0: (param0: number, param1: number) => number): GLFWAllocator;
     close(): void;
     create(arg0: number, arg1: ByteBuffer): GLFWAllocator;
     deallocate(): GLFWDeallocateCallback;
     deallocate(arg0: (param0: number, param1: number) => void): GLFWAllocator;
     reallocate(): GLFWReallocateCallback;
-    reallocate(arg0: (param0: number, param1: number, param2: number) => kotlin.Long): GLFWAllocator;
-    set(arg0: (param0: number, param1: number) => kotlin.Long, arg1: (param0: number, param1: number, param2: number) => kotlin.Long, arg2: (param0: number, param1: number) => void, arg3: number): GLFWAllocator;
+    reallocate(arg0: (param0: number, param1: number, param2: number) => number): GLFWAllocator;
+    set(arg0: (param0: number, param1: number) => number, arg1: (param0: number, param1: number, param2: number) => number, arg2: (param0: number, param1: number) => void, arg3: number): GLFWAllocator;
     set(arg0: GLFWAllocator): GLFWAllocator;
     sizeof(): number;
     user(): number;

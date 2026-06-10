@@ -8,6 +8,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 import type { Marker } from '../../../../../org/apache/logging/log4j/Marker.d.ts'
+import type { FlowMessageFactory } from '../../../../../org/apache/logging/log4j/message/FlowMessageFactory.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { MessageFactory } from '../../../../../org/apache/logging/log4j/message/MessageFactory.d.ts'
 import type { ExtendedLogger } from '../../../../../org/apache/logging/log4j/spi/ExtendedLogger.d.ts'
@@ -16,8 +17,8 @@ import type { MessageSupplier } from '../../../../../org/apache/logging/log4j/ut
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogger {
     static CATCHING_MARKER: Marker;
-    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<Object>;
-    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<Object>;
+    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<FlowMessageFactory>;
+    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<MessageFactory>;
     static ENTRY_MARKER: Marker;
     static EXCEPTION_MARKER: Marker;
     static EXIT_MARKER: Marker;
@@ -65,14 +66,14 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     debug(marker: Marker, message: string, throwable: Throwable): void;
     debug(marker: Marker, message: Message): void;
     debug(marker: Marker, message: Message, throwable: Throwable): void;
-    debug(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    debug(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    debug(marker: Marker, messageSupplier: () => Message): void;
+    debug(marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     debug(marker: Marker, messageSupplier: () => Object | null): void;
     debug(marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     debug(message: Message): void;
     debug(message: Message, throwable: Throwable): void;
-    debug(messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    debug(messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    debug(messageSupplier: () => Message): void;
+    debug(messageSupplier: () => Message, throwable: Throwable): void;
     debug(messageSupplier: () => Object | null): void;
     debug(messageSupplier: () => Object | null, throwable: Throwable): void;
     error(message: Object): void;
@@ -114,14 +115,14 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     error(marker: Marker, message: string, throwable: Throwable): void;
     error(marker: Marker, message: Message): void;
     error(marker: Marker, message: Message, throwable: Throwable): void;
-    error(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    error(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    error(marker: Marker, messageSupplier: () => Message): void;
+    error(marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     error(marker: Marker, messageSupplier: () => Object | null): void;
     error(marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     error(message: Message): void;
     error(message: Message, throwable: Throwable): void;
-    error(messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    error(messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    error(messageSupplier: () => Message): void;
+    error(messageSupplier: () => Message, throwable: Throwable): void;
     error(messageSupplier: () => Object | null): void;
     error(messageSupplier: () => Object | null, throwable: Throwable): void;
     info(message: Object): void;
@@ -163,14 +164,14 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     info(marker: Marker, message: string, throwable: Throwable): void;
     info(marker: Marker, message: Message): void;
     info(marker: Marker, message: Message, throwable: Throwable): void;
-    info(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    info(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    info(marker: Marker, messageSupplier: () => Message): void;
+    info(marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     info(marker: Marker, messageSupplier: () => Object | null): void;
     info(marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     info(message: Message): void;
     info(message: Message, throwable: Throwable): void;
-    info(messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    info(messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    info(messageSupplier: () => Message): void;
+    info(messageSupplier: () => Message, throwable: Throwable): void;
     info(messageSupplier: () => Object | null): void;
     info(messageSupplier: () => Object | null, throwable: Throwable): void;
     isEnabled(arg0: InternalLogLevel): boolean;
@@ -237,14 +238,14 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     log(level: Level, marker: Marker, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Message): void;
     log(level: Level, marker: Marker, message: Message, throwable: Throwable): void;
-    log(level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    log(level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    log(level: Level, marker: Marker, messageSupplier: () => Message): void;
+    log(level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     log(level: Level, marker: Marker, messageSupplier: () => Object | null): void;
     log(level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     log(level: Level, message: Message): void;
     log(level: Level, message: Message, throwable: Throwable): void;
-    log(level: Level, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    log(level: Level, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    log(level: Level, messageSupplier: () => Message): void;
+    log(level: Level, messageSupplier: () => Message, throwable: Throwable): void;
     log(level: Level, messageSupplier: () => Object | null): void;
     log(level: Level, messageSupplier: () => Object | null, throwable: Throwable): void;
     name(): string;
@@ -287,14 +288,14 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     trace(marker: Marker, message: string, throwable: Throwable): void;
     trace(marker: Marker, message: Message): void;
     trace(marker: Marker, message: Message, throwable: Throwable): void;
-    trace(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    trace(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    trace(marker: Marker, messageSupplier: () => Message): void;
+    trace(marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     trace(marker: Marker, messageSupplier: () => Object | null): void;
     trace(marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     trace(message: Message): void;
     trace(message: Message, throwable: Throwable): void;
-    trace(messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    trace(messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    trace(messageSupplier: () => Message): void;
+    trace(messageSupplier: () => Message, throwable: Throwable): void;
     trace(messageSupplier: () => Object | null): void;
     trace(messageSupplier: () => Object | null, throwable: Throwable): void;
     warn(message: Object): void;
@@ -336,14 +337,14 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     warn(marker: Marker, message: string, throwable: Throwable): void;
     warn(marker: Marker, message: Message): void;
     warn(marker: Marker, message: Message, throwable: Throwable): void;
-    warn(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    warn(marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    warn(marker: Marker, messageSupplier: () => Message): void;
+    warn(marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     warn(marker: Marker, messageSupplier: () => Object | null): void;
     warn(marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     warn(message: Message): void;
     warn(message: Message, throwable: Throwable): void;
-    warn(messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    warn(messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    warn(messageSupplier: () => Message): void;
+    warn(messageSupplier: () => Message, throwable: Throwable): void;
     warn(messageSupplier: () => Object | null): void;
     warn(messageSupplier: () => Object | null, throwable: Throwable): void;
 }

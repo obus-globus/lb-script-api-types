@@ -15,7 +15,7 @@ export class Column$Ray extends Column {
     static fromLowest(paramlowest: number): Column;
     static inside(paramfloor: number, paramceiling: number): Column$Range;
     static line(): Column;
-    static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => kotlin.Boolean, paramvalidEdge: (param0: BlockState) => kotlin.Boolean): Optional<Column>;
+    static scan(paramlevel: LevelSimulatedReader, parampos: BlockPos, paramsearchRange: number, paraminsideColumn: (param0: BlockState) => boolean, paramvalidEdge: (param0: BlockState) => boolean): Optional<Column>;
     constructor(edge: number, pointingUp: boolean)
     // private edge: number;
     // private pointingUp: boolean;

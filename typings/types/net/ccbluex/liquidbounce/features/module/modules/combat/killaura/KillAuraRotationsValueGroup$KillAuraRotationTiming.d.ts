@@ -9,7 +9,7 @@ export class KillAuraRotationsValueGroup$KillAuraRotationTiming extends Enum<Kil
     static ON_TICK: KillAuraRotationsValueGroup$KillAuraRotationTiming;
     static SNAP: KillAuraRotationsValueGroup$KillAuraRotationTiming;
     static getEntries(): KillAuraRotationsValueGroup$KillAuraRotationTiming[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraRotationsValueGroup$KillAuraRotationTiming;

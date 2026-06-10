@@ -7,7 +7,7 @@ export class ImmutableMap$Builder<K extends Object | number | string | boolean, 
     // private entries: ImmutableMapEntry<K, V>[];
     // private entriesUsed: boolean;
     // private size: number;
-    // private valueComparator: (param0: V) => kotlin.Boolean;
+    // private valueComparator: (param0: Object) => boolean;
     build(): Map<K, V>;
     // private ensureCapacity(arg0: number): void;
     put(arg0: K, arg1: V): ImmutableMap$Builder<K, V>;

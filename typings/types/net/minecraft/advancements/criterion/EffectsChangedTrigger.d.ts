@@ -7,6 +7,6 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class EffectsChangedTrigger extends SimpleCriterionTrigger<EffectsChangedTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<EffectsChangedTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: EffectsChangedTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: EffectsChangedTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, source: Entity): void;
 }

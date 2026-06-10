@@ -334,7 +334,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     getMusicVolume(): number;
     getNarrator(): GameNarrator;
     getOverlay(): Overlay;
-    getPerTickGizmos(): E[];
+    getPerTickGizmos(): SimpleGizmoCollector$GizmoInstance[];
     getPlayerSocialManager(): PlayerSocialManager;
     getProfileKeyPairManager(): ProfileKeyPairManager;
     getProxy(): Proxy;

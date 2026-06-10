@@ -21,14 +21,14 @@ export abstract class AbstractQueuedSynchronizer extends AbstractOwnableSynchron
     // private cleanQueue(): void;
     compareAndSetState(arg0: number, arg1: number): boolean;
     enqueue(arg0: AbstractQueuedSynchronizer$ConditionNode): void;
-    getExclusiveQueuedThreads(): E[];
+    getExclusiveQueuedThreads(): Thread[];
     getFirstQueuedThread(): Thread;
     getQueueLength(): number;
-    getQueuedThreads(): E[];
-    getSharedQueuedThreads(): E[];
+    getQueuedThreads(): Thread[];
+    getSharedQueuedThreads(): Thread[];
     getState(): number;
     getWaitQueueLength(arg0: AbstractQueuedSynchronizer$ConditionObject): number;
-    getWaitingThreads(arg0: AbstractQueuedSynchronizer$ConditionObject): E[];
+    getWaitingThreads(arg0: AbstractQueuedSynchronizer$ConditionObject): Thread[];
     hasContended(): boolean;
     hasQueuedPredecessors(): boolean;
     hasQueuedThreads(): boolean;

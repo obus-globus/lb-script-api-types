@@ -21,11 +21,11 @@ export class HostClassDesc extends Object {
     readonly type: Class<Object>;
     getAdapter(hostContext: HostContext): HostAdapterFactory$AdapterResult;
     // private getCache(): HostClassCache;
-    getFieldNames(onlyStatic: boolean): E[];
+    getFieldNames(onlyStatic: boolean): string[];
     getFunctionalMethod(): HostMethodDesc;
     // private getJNIMembers(): HostClassDesc$JNIMembers;
     // private getMembers(): HostClassDesc$Members;
-    getMethodNames(onlyStatic: boolean, includeInternal: boolean): E[];
+    getMethodNames(onlyStatic: boolean, includeInternal: boolean): string[];
     // private getMethodsBySignature(): HostClassDesc$MethodsBySignature;
     // private getOrSetAdapter(hostContext: HostContext): HostAdapterFactory$AdapterResult;
     getType(): Class<Object>;

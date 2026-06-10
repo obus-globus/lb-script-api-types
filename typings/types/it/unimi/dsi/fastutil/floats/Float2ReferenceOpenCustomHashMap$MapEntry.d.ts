@@ -4,10 +4,10 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Float2ReferenceOpenCustomHashMap$MapEntry extends Object implements Float2ReferenceMap$Entry<V>, FloatReferencePair<V>, Map$Entry<number, V> {
-    static comparingByKey(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByKey(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(): (param0: Object | null) => kotlin.Boolean;
-    static comparingByValue(paramarg0: (param0: Object | null) => kotlin.Boolean): (param0: Object | null) => kotlin.Boolean;
+    static comparingByKey(): (param0: Object) => boolean;
+    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByValue(): (param0: Object) => boolean;
+    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: number, paramarg1: Object | null): FloatReferencePair<Object>;
     constructor(null_: Float2ReferenceOpenCustomHashMap$MapEntry)
@@ -16,15 +16,15 @@ export class Float2ReferenceOpenCustomHashMap$MapEntry extends Object implements
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first(arg0: number): FloatReferencePair<V>;
+    first<V extends Object | number | string | boolean>(arg0: number): FloatReferencePair<V>;
     firstFloat(): number;
     getFloatKey(): number;
     hashCode(): number;
     key(): number;
-    key(arg0: number): FloatReferencePair<V>;
+    key<V extends Object | number | string | boolean>(arg0: number): FloatReferencePair<V>;
     keyFloat(): number;
     left(): number;
-    left(arg0: number): FloatReferencePair<V>;
+    left<V extends Object | number | string | boolean>(arg0: number): FloatReferencePair<V>;
     leftFloat(): number;
     right<V extends Object | number | string | boolean>(): V;
     right<V extends Object | number | string | boolean>(arg0: V): FloatReferencePair<V>;

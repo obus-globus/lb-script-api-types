@@ -7,10 +7,10 @@ import type { Fluid } from '../../../../net/minecraft/world/level/material/Fluid
 export class FluidPredicate$Builder extends Object {
     static fluid(): FluidPredicate$Builder;
     private constructor()
-    // private fluids: Optional<Holder<T>[]>;
+    // private fluids: Optional<Holder<Fluid>[]>;
     // private properties: Optional<StatePropertiesPredicate>;
     build(): FluidPredicate;
-    of(fluids: Holder<T>[]): FluidPredicate$Builder;
+    of(fluids: Holder<Fluid>[]): FluidPredicate$Builder;
     of(fluid: Fluid): FluidPredicate$Builder;
     setProperties(properties: StatePropertiesPredicate): FluidPredicate$Builder;
 }

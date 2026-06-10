@@ -5,7 +5,7 @@ import type { LSR } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/
 export abstract class LocaleMatcher$LsrIterator extends Object implements Iterator<LSR> {
     private constructor()
     // private bestDesiredIndex: number;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: LSR) => void): void;
     rememberCurrent(desiredIndex: number): void;
     remove(): void;
 }

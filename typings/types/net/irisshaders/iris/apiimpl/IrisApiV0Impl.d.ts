@@ -11,7 +11,7 @@ export class IrisApiV0Impl extends Object implements IrisApi {
     static getInstance(): IrisApi;
     constructor()
     assignPipeline(arg0: RenderPipeline, arg1: IrisProgram): void;
-    createTextVertexSink(arg0: number, arg1: (param0: ByteBuffer) => unknown): IrisTextVertexSink;
+    createTextVertexSink(arg0: number, arg1: (param0: number) => ByteBuffer): IrisTextVertexSink;
     getConfig(): IrisApiConfig;
     getMainScreenLanguageKey(): string;
     getMinorApiRevision(): number;

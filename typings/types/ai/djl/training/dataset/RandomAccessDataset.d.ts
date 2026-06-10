@@ -37,8 +37,8 @@ export abstract class RandomAccessDataset extends Object implements Dataset {
     randomSplit(arg0: number[]): RandomAccessDataset[];
     size(): number;
     subDataset(arg0: number, arg1: number): RandomAccessDataset;
-    subDataset(arg0: K[], arg1: K[]): RandomAccessDataset;
+    subDataset<K extends Object | number | string | boolean>(arg0: K[], arg1: K[]): RandomAccessDataset;
     subDataset(arg0: number[]): RandomAccessDataset;
-    subDataset(arg0: Map<K, number>, arg1: K[]): RandomAccessDataset;
+    subDataset<K extends Object | number | string | boolean>(arg0: Map<K, number>, arg1: K[]): RandomAccessDataset;
     toArray(arg0: NDManager): Pair<Number[][], Number[][]>;
 }

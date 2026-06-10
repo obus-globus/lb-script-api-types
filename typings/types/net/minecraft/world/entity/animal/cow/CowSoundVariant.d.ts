@@ -6,10 +6,10 @@ import type { RegistryFriendlyByteBuf } from '../../../../../../net/minecraft/ne
 import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 export class CowSoundVariant extends Record {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<CowSoundVariant>>;
     static DIRECT_CODEC: Codec<CowSoundVariant>;
     static NETWORK_CODEC: Codec<CowSoundVariant>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<CowSoundVariant>>;
     constructor(ambientSound: Holder<SoundEvent>, hurtSound: Holder<SoundEvent>, deathSound: Holder<SoundEvent>, stepSound: Holder<SoundEvent>)
     // private ambientSound: Holder<SoundEvent>;
     // private deathSound: Holder<SoundEvent>;

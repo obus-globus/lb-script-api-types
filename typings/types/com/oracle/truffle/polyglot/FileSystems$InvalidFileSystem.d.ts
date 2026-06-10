@@ -27,7 +27,7 @@ export class FileSystems$InvalidFileSystem extends Object implements FileSystems
     isInternal(polyglot: AbstractPolyglotImpl): boolean;
     move(source: Path[], target: Path[], options: CopyOption[]): void;
     newByteChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
-    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => kotlin.Boolean): T[];
+    newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     parsePath(uri: URI): Path[];
     parsePath(path: string): Path[];
     readAttributes(path: Path[], attributes: string, options: LinkOption[]): { [key: string]: Object };

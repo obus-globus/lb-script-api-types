@@ -15,7 +15,7 @@ export class DamageEntity extends Record implements EnchantmentEntityEffect {
     static CODEC: Codec<EnchantmentEntityEffect>;
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<DamageEntity>;
-    static bootstrap(paramregistry: (Object | null)[]): MapCodec<Object>;
+    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(minDamage: LevelBasedValue, maxDamage: LevelBasedValue, damageType: Holder<DamageType>)
     // private damageType: Holder<DamageType>;
     // private maxDamage: LevelBasedValue;

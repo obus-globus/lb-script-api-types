@@ -15,14 +15,14 @@ import type { Event } from '../../../../../../../net/fabricmc/fabric/api/event/E
 import type { Screen } from '../../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { MouseButtonEvent } from '../../../../../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
 export class ScreenMouseEvents extends Object {
-    static afterMouseClick(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: boolean) => kotlin.Boolean>;
-    static afterMouseDrag(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: number, param3: number, param4: boolean) => kotlin.Boolean>;
-    static afterMouseRelease(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: boolean) => kotlin.Boolean>;
-    static afterMouseScroll(paramarg0: Screen): Event<(param0: Screen, param1: number, param2: number, param3: number, param4: number, param5: boolean) => kotlin.Boolean>;
-    static allowMouseClick(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent) => kotlin.Boolean>;
-    static allowMouseDrag(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: number, param3: number) => kotlin.Boolean>;
-    static allowMouseRelease(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent) => kotlin.Boolean>;
-    static allowMouseScroll(paramarg0: Screen): Event<(param0: Screen, param1: number, param2: number, param3: number, param4: number) => kotlin.Boolean>;
+    static afterMouseClick(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: boolean) => boolean>;
+    static afterMouseDrag(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: number, param3: number, param4: boolean) => boolean>;
+    static afterMouseRelease(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: boolean) => boolean>;
+    static afterMouseScroll(paramarg0: Screen): Event<(param0: Screen, param1: number, param2: number, param3: number, param4: number, param5: boolean) => boolean>;
+    static allowMouseClick(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent) => boolean>;
+    static allowMouseDrag(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: number, param3: number) => boolean>;
+    static allowMouseRelease(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent) => boolean>;
+    static allowMouseScroll(paramarg0: Screen): Event<(param0: Screen, param1: number, param2: number, param3: number, param4: number) => boolean>;
     static beforeMouseClick(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent) => void>;
     static beforeMouseDrag(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent, param2: number, param3: number) => void>;
     static beforeMouseRelease(paramarg0: Screen): Event<(param0: Screen, param1: MouseButtonEvent) => void>;

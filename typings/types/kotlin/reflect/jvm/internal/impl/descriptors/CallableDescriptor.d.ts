@@ -12,7 +12,7 @@ export interface CallableDescriptor extends Object, DeclarationDescriptorNonRoot
     getDispatchReceiverParameter(): ReceiverParameterDescriptor;
     getExtensionReceiverParameter(): ReceiverParameterDescriptor;
     getOriginal(): CallableDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): CallableDescriptor[];
     getReturnType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
     getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;

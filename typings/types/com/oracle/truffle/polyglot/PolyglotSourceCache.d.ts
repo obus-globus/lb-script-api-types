@@ -16,7 +16,7 @@ export class PolyglotSourceCache extends Object {
     // private strongCache: PolyglotSourceCache$StrongCache;
     // private weakCache: PolyglotSourceCache$WeakCache;
     cleanupStaleEntries(): void;
-    listCachedSources(polyglot: PolyglotImpl, source: E[]): void;
+    listCachedSources(polyglot: PolyglotImpl, source: Object[]): void;
     parseCached(origin: PolyglotSourceCache$ParseOrigin, context: PolyglotLanguageContext, source: Source, argumentNames: string[]): CallTarget;
     patch(listener: SourceCacheListener, statisticsListener: SourceCacheStatisticsListener): void;
 }

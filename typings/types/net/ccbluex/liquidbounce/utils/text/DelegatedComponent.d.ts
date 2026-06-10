@@ -19,14 +19,14 @@ export interface DelegatedComponent extends Supplier<Component>, Object, Compone
     getString(arg0: number): string;
     getString(limit: number): string;
     getStyle(): Style;
-    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean;
+    getVisualOrderText(): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     plainCopy(): MutableComponent;
     toFlatList(): Component[];
     toFlatList(arg0: Style): Component[];
     toFlatList(rootStyle: Style): Component[];
     tryCollapseToString(): string;
-    visit(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

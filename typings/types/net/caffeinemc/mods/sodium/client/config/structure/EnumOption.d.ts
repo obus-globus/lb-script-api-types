@@ -13,7 +13,7 @@ import type { Control } from '../../../../../../../net/caffeinemc/mods/sodium/cl
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class EnumOption<E extends Enum<E>> extends StatefulOption<E> {
-    constructor(arg0: Identifier, arg1: E[], arg2: Component, arg3: DependentValue<boolean>, arg4: () => void, arg5: (param0: E) => Component, arg6: OptionImpact, arg7: Identifier[], arg8: DependentValue<E>, arg9: boolean, arg10: OptionBinding<E>, arg11: (param0: ConfigState) => void, arg12: Class<E>, arg13: DependentValue<E[]>, arg14: (param0: E) => Component)
+    constructor(arg0: Identifier, arg1: Identifier[], arg2: Component, arg3: DependentValue<boolean>, arg4: () => void, arg5: (param0: E) => Component, arg6: OptionImpact, arg7: Identifier[], arg8: DependentValue<E>, arg9: boolean, arg10: OptionBinding<E>, arg11: (param0: ConfigState) => void, arg12: Class<E>, arg13: DependentValue<E[]>, arg14: (param0: E) => Component)
     readonly allowedValues: DependentValue<E[]>;
     readonly elementNameProvider: (param0: E) => Component;
     readonly enumClass: Class<E>;

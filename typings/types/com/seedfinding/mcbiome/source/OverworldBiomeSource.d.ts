@@ -12,7 +12,7 @@ export class OverworldBiomeSource extends LayeredBiomeSource<IntBiomeLayer> {
     static DEFAULT_BIOME_SIZE: number;
     static DEFAULT_RIVER_SIZE: number;
     static LARGE_BIOME_SIZE: number;
-    static factory(paramarg0: Dimension): (param0: MCVersion, param1: number) => com.seedfinding.mcbiome.source.BiomeSource;
+    static factory(paramarg0: Dimension): (param0: MCVersion, param1: number) => BiomeSource;
     static of(paramarg0: Dimension, paramarg1: MCVersion, paramarg2: number): BiomeSource;
     constructor(arg0: MCVersion, arg1: number)
     constructor(arg0: MCVersion, arg1: number, arg2: number, arg3: number)

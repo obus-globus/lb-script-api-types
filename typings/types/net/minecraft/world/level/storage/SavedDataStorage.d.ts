@@ -23,7 +23,7 @@ export class SavedDataStorage extends Object implements AutoCloseable {
     close(): void;
     // private collectDirtyTagsToSave(): Map<SavedDataType<Object>, CompoundTag>;
     computeIfAbsent<T extends SavedData>(type: SavedDataType<T>): T;
-    // private encodeUnchecked(type: SavedDataType<T>, data: SavedData, ops: RegistryOps<Tag>): CompoundTag;
+    // private encodeUnchecked<T extends SavedData>(type: SavedDataType<T>, data: SavedData, ops: RegistryOps<Tag>): CompoundTag;
     get<T extends SavedData>(type: SavedDataType<T>): T;
     // private getDataFile(id: Identifier): Path[];
     // private isGzip(inputStream: PushbackInputStream): boolean;

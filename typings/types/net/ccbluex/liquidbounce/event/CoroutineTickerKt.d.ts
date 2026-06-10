@@ -10,7 +10,7 @@ export class CoroutineTickerKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L134 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:134}
      */
-    static tickConditional(paramarg0: number, paramarg1: () => kotlin.Boolean, paramarg2: Continuation<Object>): Object;
+    static tickConditional(paramarg0: number, paramarg1: () => boolean, paramarg2: Continuation<Object>): Object;
     /**
      * Ticks with {@link stopAt} until it returns true.
      * The elapsed ticks (starting from 1) will be passed to {@link stopAt}.
@@ -26,7 +26,7 @@ export class CoroutineTickerKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:94}
      */
-    static tickUntil(paramarg0: (param0: number) => kotlin.Boolean, paramarg1: Continuation<Object>): Object;
+    static tickUntil(paramarg0: (param0: number) => boolean, paramarg1: Continuation<Object>): Object;
     /**
      * Waits a fixed amount of seconds on tick level before continuing.
      * Re-entry at the game tick.

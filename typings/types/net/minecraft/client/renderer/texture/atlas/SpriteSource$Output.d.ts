@@ -6,5 +6,5 @@ import type { Resource } from '../../../../../../net/minecraft/server/packs/reso
 export interface SpriteSource$Output extends Object {
     add(id: Identifier, sprite: SpriteSource$DiscardableLoader): void;
     add(id: Identifier, resource: Resource): void;
-    removeAll(predicate: (param0: Identifier) => kotlin.Boolean): void;
+    removeAll(predicate: (param0: Identifier) => boolean): void;
 }

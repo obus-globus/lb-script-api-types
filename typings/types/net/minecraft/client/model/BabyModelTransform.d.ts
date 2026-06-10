@@ -3,8 +3,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { MeshDefinition } from '../../../../net/minecraft/client/model/geom/builders/MeshDefinition.d.ts'
 import type { MeshTransformer } from '../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 export class BabyModelTransform extends Record implements MeshTransformer {
-    static IDENTITY: (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
-    static scaling(paramfactor: number): (param0: MeshDefinition) => net.minecraft.client.model.geom.builders.MeshDefinition;
+    static IDENTITY: (param0: MeshDefinition) => MeshDefinition;
+    static scaling(paramfactor: number): (param0: MeshDefinition) => MeshDefinition;
     // private babyBodyScale: number;
     // private babyHeadScale: number;
     // private babyYHeadOffset: number;

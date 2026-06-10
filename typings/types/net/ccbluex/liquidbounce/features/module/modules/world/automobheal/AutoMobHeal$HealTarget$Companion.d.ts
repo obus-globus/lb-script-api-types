@@ -9,6 +9,6 @@ export class AutoMobHeal$HealTarget$Companion extends Object {
     CamelHuskTarget: AutoMobHeal$HealTarget$SimpleHealFoodTarget<CamelHusk>;
     LlamaTarget: AutoMobHeal$HealTarget$SimpleHealFoodTarget<Llama>;
     ZombieHorseTarget: AutoMobHeal$HealTarget$SimpleHealFoodTarget<ZombieHorse>;
-    // private healAmount1xNutrition: (param0: ItemStack) => kotlin.Float;
-    // private healAmount2xNutrition: (param0: ItemStack) => kotlin.Float;
+    // private healAmount1xNutrition: (param0: ItemStack) => number;
+    // private healAmount2xNutrition: (param0: ItemStack) => number;
 }

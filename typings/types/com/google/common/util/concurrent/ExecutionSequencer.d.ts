@@ -10,6 +10,6 @@ export class ExecutionSequencer extends Object {
     private constructor()
     // private latestTaskQueue: ExecutionSequencer$ThreadConfinedTaskQueue;
     // private ref: AtomicReference<ListenableFuture<void>>;
-    submit(callable: () => T, executor: Executor): ListenableFuture<T>;
-    submitAsync(callable: () => T, executor: Executor): ListenableFuture<T>;
+    submit<T extends Object | number | string | boolean>(callable: () => T, executor: Executor): ListenableFuture<T>;
+    submitAsync<T extends Object | number | string | boolean>(callable: () => ListenableFuture<T>, executor: Executor): ListenableFuture<T>;
 }

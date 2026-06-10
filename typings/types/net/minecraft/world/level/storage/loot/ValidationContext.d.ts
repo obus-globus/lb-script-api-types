@@ -16,8 +16,8 @@ export class ValidationContext extends Object {
     // private resolver: Optional<HolderGetter$Provider>;
     // private visitedElements: ResourceKey<Object>[];
     allowsReferences(): boolean;
-    enterElement(subContext: () => kotlin.String, element: ResourceKey<Object>): ValidationContext;
-    forChild(subContext: () => kotlin.String): ValidationContext;
+    enterElement(subContext: () => string, element: ResourceKey<Object>): ValidationContext;
+    forChild(subContext: () => string): ValidationContext;
     forField(name: string): ValidationContext;
     forIndexedField(name: string, index: number): ValidationContext;
     forMapField(name: string, key: string): ValidationContext;

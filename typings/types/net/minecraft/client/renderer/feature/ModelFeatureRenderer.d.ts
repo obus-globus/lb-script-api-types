@@ -11,7 +11,7 @@ export class ModelFeatureRenderer extends Object {
     constructor()
     // private poseStack: PoseStack;
     // private renderBatch(bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource, map: Map<RenderType, SubmitNodeStorage$ModelSubmit<Object>[]>, crumblingBufferSource: MultiBufferSource$BufferSource): void;
-    // private renderModel(submit: SubmitNodeStorage$ModelSubmit<S>, renderType: RenderType, buffer: VertexConsumer, outlineBufferSource: OutlineBufferSource, crumblingBufferSource: MultiBufferSource$BufferSource): void;
+    // private renderModel<S extends Object | number | string | boolean>(submit: SubmitNodeStorage$ModelSubmit<S>, renderType: RenderType, buffer: VertexConsumer, outlineBufferSource: OutlineBufferSource, crumblingBufferSource: MultiBufferSource$BufferSource): void;
     renderSolid(nodeCollection: SubmitNodeCollection, bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource, crumblingBufferSource: MultiBufferSource$BufferSource): void;
     renderTranslucent(nodeCollection: SubmitNodeCollection, bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource, crumblingBufferSource: MultiBufferSource$BufferSource): void;
     // private renderTranslucents(bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource, submits: SubmitNodeStorage$TranslucentModelSubmit<Object>[], crumblingBufferSource: MultiBufferSource$BufferSource): void;

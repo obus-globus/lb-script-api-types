@@ -14,7 +14,7 @@ export class RakServerRateLimiter extends SimpleChannelInboundHandler<DatagramPa
     // private blockedConnections: Map<InetAddress, number>;
     // private blockedTickFuture: ScheduledFuture<Object>;
     // private channel: RakServerChannel;
-    // private exceptions: E[];
+    // private exceptions: InetAddress[];
     // private globalCounter: AtomicLong;
     // private rateLimitMap: Map<InetAddress, AtomicInteger>;
     // private tickFuture: ScheduledFuture<Object>;

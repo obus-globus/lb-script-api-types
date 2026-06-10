@@ -1,3 +1,4 @@
+import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { IntervalSet } from '../../../../../org/antlr/v4/runtime/misc/IntervalSet.d.ts'
@@ -13,7 +14,7 @@ export abstract class Transition extends Object {
     static SET: number;
     static WILDCARD: number;
     static serializationNames: string[];
-    static serializationTypes: Map<Object | null, number>;
+    static serializationTypes: Map<Class<Transition>, number>;
     constructor(arg0: ATNState)
     target: ATNState;
     getSerializationType(): number;

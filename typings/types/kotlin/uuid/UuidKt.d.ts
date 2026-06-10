@@ -20,7 +20,7 @@ export class UuidKt extends UuidKt__UuidKt {
     static setLongAtCommonImpl(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static toJavaUuid(paramarg0: Uuid): UUID;
     static toKotlinUuid(paramarg0: UUID): Uuid;
-    static uuidCheckHyphenAt(paramarg0: string, paramarg1: number, paramarg2: (param0: Object | null, param1: Object | null, param2: Object | null) => void): void;
+    static uuidCheckHyphenAt(paramarg0: string, paramarg1: number, paramarg2: (param0: Object, param1: Object, param2: Object) => void): void;
     static uuidFromRandomBytes(paramarg0: number[]): Uuid;
     static uuidParseHex(paramarg0: string): Uuid;
     static uuidParseHexCommonImpl(paramarg0: string): Uuid;

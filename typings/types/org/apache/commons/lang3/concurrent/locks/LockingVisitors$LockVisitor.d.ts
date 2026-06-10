@@ -13,10 +13,10 @@ export class LockingVisitors$LockVisitor<O extends Object | number | string | bo
     // private writeLockSupplier: () => Lock;
     acceptReadLocked(arg0: (param0: O) => void): void;
     acceptWriteLocked(arg0: (param0: O) => void): void;
-    applyReadLocked<T extends Object | number | string | boolean>(arg0: (param0: O) => Object | null): T;
-    applyWriteLocked<T extends Object | number | string | boolean>(arg0: (param0: O) => Object | null): T;
+    applyReadLocked<T extends Object | number | string | boolean>(arg0: (param0: O) => T): T;
+    applyWriteLocked<T extends Object | number | string | boolean>(arg0: (param0: O) => T): T;
     getLock(): L;
     getObject(): O;
     lockAcceptUnlock(arg0: () => Lock, arg1: (param0: O) => void): void;
-    lockApplyUnlock<T extends Object | number | string | boolean>(arg0: () => Lock, arg1: (param0: O) => Object | null): T;
+    lockApplyUnlock<T extends Object | number | string | boolean>(arg0: () => Lock, arg1: (param0: O) => T): T;
 }

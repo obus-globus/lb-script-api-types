@@ -11,7 +11,7 @@ import type { FormattedCharSink } from '../../../../../../../net/minecraft/util/
 import type { Vector2i } from '../../../../../../../org/joml/Vector2i.d.ts'
 export class ScrollableTooltip extends Object {
     constructor(arg0: ScrollableTooltip$TooltipParent)
-    // private content: (param0: (param0: number, param1: Style, param2: number) => kotlin.Boolean) => kotlin.Boolean[];
+    // private content: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private contentSize: Vector2i;
     // private font: Font;
     // private hoveredElement: ControlElement;

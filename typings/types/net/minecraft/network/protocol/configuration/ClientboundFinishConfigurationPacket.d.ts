@@ -9,7 +9,7 @@ import type { ClientConfigurationPacketListener } from '../../../../../net/minec
 export class ClientboundFinishConfigurationPacket extends Object implements Packet<ClientConfigurationPacketListener> {
     static INSTANCE: ClientboundFinishConfigurationPacket;
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundFinishConfigurationPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     private constructor()
     handle(listener: ClientConfigurationPacketListener): void;
     isSkippable(): boolean;

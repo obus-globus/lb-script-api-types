@@ -1,4 +1,5 @@
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
+import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { AbstractQueuedSynchronizer } from '../../../../java/util/concurrent/locks/AbstractQueuedSynchronizer.d.ts'
@@ -18,7 +19,7 @@ export class AbstractQueuedSynchronizer$ConditionObject extends Object implement
     // private doSignal(arg0: AbstractQueuedSynchronizer$ConditionNode, arg1: boolean): void;
     // private enableWait(arg0: AbstractQueuedSynchronizer$ConditionNode): number;
     getWaitQueueLength(): number;
-    getWaitingThreads(): E[];
+    getWaitingThreads(): Thread[];
     hasWaiters(): boolean;
     isOwnedBy(arg0: AbstractQueuedSynchronizer): boolean;
     // private newConditionNode(): AbstractQueuedSynchronizer$ConditionNode;

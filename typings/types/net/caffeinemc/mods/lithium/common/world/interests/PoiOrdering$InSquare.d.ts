@@ -10,7 +10,7 @@ export class PoiOrdering$InSquare extends Record implements PoiOrdering {
     checkOrderOrThrow(arg0: BlockPos, arg1: PoiManager, arg2: BlockPos[]): void;
     compare(arg0: BlockPos, arg1: PoiManager, arg2: BlockPos, arg3: BlockPos): number;
     equals(arg0: Object | null): boolean;
-    getAsComparator(arg0: BlockPos, arg1: PoiManager): (param0: BlockPos) => kotlin.Boolean;
+    getAsComparator(arg0: BlockPos, arg1: PoiManager): (param0: Object) => boolean;
     hashCode(): number;
     isOrdered(arg0: BlockPos, arg1: PoiManager, arg2: BlockPos[]): boolean;
     toString(): string;

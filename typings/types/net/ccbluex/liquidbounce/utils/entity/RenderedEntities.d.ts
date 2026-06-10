@@ -27,7 +27,7 @@ export class RenderedEntities extends Object implements EventListener {
     // private worldHandler: EventHook<WorldChangeEvent>;
     children(): EventListener[];
     contains(element: LivingEntity): boolean;
-    containsAll(elements: E[]): boolean;
+    containsAll(elements: LivingEntity[]): boolean;
     isEmpty(): boolean;
     iterator(): Iterator<LivingEntity>;
     onUpdated(listener: EventListener, callback: () => void): void;

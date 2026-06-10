@@ -5,14 +5,15 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Condition } from '../../../../../../../net/minecraft/client/renderer/block/dispatch/multipart/Condition.d.ts'
 import type { KeyValueCondition$Terms } from '../../../../../../../net/minecraft/client/renderer/block/dispatch/multipart/KeyValueCondition$Terms.d.ts'
 import type { StateDefinition } from '../../../../../../../net/minecraft/world/level/block/state/StateDefinition.d.ts'
+import type { StateHolder } from '../../../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 export class KeyValueCondition extends Record implements Condition {
-    static CODEC: Codec<(param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>>;
+    static CODEC: Codec<(param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean>;
     static CODEC: Codec<KeyValueCondition>;
     constructor(tests: { [key: string]: KeyValueCondition$Terms })
     // private tests: { [key: string]: KeyValueCondition$Terms };
     equals(o: Object | null): boolean;
     hashCode(): number;
-    instantiate(definition: StateDefinition<O, S>): (param0: S) => kotlin.Boolean;
+    instantiate<S extends StateHolder<O, S>, O extends Object | number | string | boolean>(definition: StateDefinition<O, S>): (param0: S) => boolean;
     tests(): { [key: string]: KeyValueCondition$Terms };
     toString(): string;
 }

@@ -1,4 +1,5 @@
 import type { Pointer } from '../../com/sun/jna/Pointer.d.ts'
+import type { Structure } from '../../com/sun/jna/Structure.d.ts'
 import type { IPHlpAPI$MIB_UDPSTATS } from '../../com/sun/jna/platform/win32/IPHlpAPI$MIB_UDPSTATS.d.ts'
 import type { AutoCloseable } from '../../java/lang/AutoCloseable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
@@ -14,8 +15,8 @@ export class Struct$CloseableMibUdpStats extends IPHlpAPI$MIB_UDPSTATS implement
     static createFieldsOrder(paramarg0: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Object>): Object | null;
-    static newInstance(paramarg0: Class<Object>, paramarg1: Pointer): Object | null;
+    static newInstance(paramarg0: Class<Structure>): Structure | null;
+    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
     close(): void;
 }

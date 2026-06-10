@@ -24,6 +24,6 @@ export class KeybindContents extends Object implements ComponentMarker, Componen
     hashCode(): number;
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
     toString(): string;
-    visit(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

@@ -3,9 +3,9 @@ import type { PasswordProvider } from '../../../../../../../org/apache/logging/l
 export class StoreConfiguration<T extends Object | number | string | boolean> extends Object {
     constructor(location: string, password: string[])
     constructor(location: string, password: string)
-    constructor(location: string, passwordProvider: () => kotlin.CharArray)
+    constructor(location: string, passwordProvider: () => string[])
     readonly location: string;
-    // private passwordProvider: () => kotlin.CharArray;
+    // private passwordProvider: () => string[];
     clearSecrets(): void;
     equals(obj: Object | null): boolean;
     getLocation(): string;

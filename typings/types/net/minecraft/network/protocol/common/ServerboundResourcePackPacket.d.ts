@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -11,7 +12,7 @@ import type { ServerCommonPacketListener } from '../../../../../net/minecraft/ne
 import type { ServerboundResourcePackPacket$Action } from '../../../../../net/minecraft/network/protocol/common/ServerboundResourcePackPacket$Action.d.ts'
 export class ServerboundResourcePackPacket extends Record implements Packet<ServerCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundResourcePackPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(id: UUID, action: ServerboundResourcePackPacket$Action)
     private constructor(input: FriendlyByteBuf)
     action: ServerboundResourcePackPacket$Action;

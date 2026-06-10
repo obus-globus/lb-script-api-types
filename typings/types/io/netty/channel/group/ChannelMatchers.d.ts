@@ -7,10 +7,10 @@ export class ChannelMatchers extends Object {
     static compose(paramarg0: (Object | null)[]): ChannelMatcher;
     static invert(paramarg0: ChannelMatcher): ChannelMatcher;
     static is(paramarg0: Channel): ChannelMatcher;
-    static isInstanceOf(paramarg0: Class<Object>): ChannelMatcher;
+    static isInstanceOf(paramarg0: Class<Channel>): ChannelMatcher;
     static isNonServerChannel(): ChannelMatcher;
     static isNot(paramarg0: Channel): ChannelMatcher;
-    static isNotInstanceOf(paramarg0: Class<Object>): ChannelMatcher;
+    static isNotInstanceOf(paramarg0: Class<Channel>): ChannelMatcher;
     static isServerChannel(): ChannelMatcher;
     private constructor()
 }

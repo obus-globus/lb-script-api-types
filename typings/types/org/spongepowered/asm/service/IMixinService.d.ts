@@ -26,9 +26,9 @@ export interface IMixinService extends Object{
     getLogger(arg0: string): ILogger;
     getMaxCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
     getMinCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
-    getMixinContainers(): E[];
+    getMixinContainers(): IContainerHandle[];
     getName(): string;
-    getPlatformAgents(): E[];
+    getPlatformAgents(): string[];
     getPrimaryContainer(): IContainerHandle;
     getReEntranceLock(): ReEntranceLock;
     getResourceAsStream(arg0: string): InputStream;

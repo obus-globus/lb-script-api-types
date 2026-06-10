@@ -5,7 +5,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class LazyField$LazyIterator<K extends Object | number | string | boolean> extends Object implements Iterator<Map$Entry<K, Object>> {
     constructor(arg0: Iterator<Map$Entry<K, Object>>)
     // private iterator: Iterator<Map$Entry<K, Object>>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: Map$Entry<K, Object>) => void): void;
     hasNext(): boolean;
     next(): Map$Entry<K, Object>;
     remove(): void;

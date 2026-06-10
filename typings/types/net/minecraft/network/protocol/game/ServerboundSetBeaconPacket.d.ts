@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { MobEffect } from '../../../../../net/minecraft/world/effect/MobEffect.d.ts'
 export class ServerboundSetBeaconPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ServerboundSetBeaconPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(primary: Optional<Holder<MobEffect>>, secondary: Optional<Holder<MobEffect>>)
     // private primary: Optional<Holder<MobEffect>>;
     // private secondary: Optional<Holder<MobEffect>>;

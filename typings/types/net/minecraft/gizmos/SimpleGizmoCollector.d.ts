@@ -10,7 +10,7 @@ export class SimpleGizmoCollector extends Object implements GizmoCollector {
     readonly gizmos: SimpleGizmoCollector$GizmoInstance[];
     // private temporaryGizmos: SimpleGizmoCollector$GizmoInstance[];
     add(gizmo: Gizmo): GizmoProperties;
-    addTemporaryGizmos(gizmos: E[]): void;
+    addTemporaryGizmos(gizmos: SimpleGizmoCollector$GizmoInstance[]): void;
     drainGizmos(): SimpleGizmoCollector$GizmoInstance[];
     getGizmos(): SimpleGizmoCollector$GizmoInstance[];
 }

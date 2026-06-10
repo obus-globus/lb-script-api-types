@@ -27,9 +27,9 @@ export abstract class MoveToBlockGoal extends Goal implements LithiumMoveToBlock
     getMoveToTarget(): BlockPos;
     isReachedTarget(): boolean;
     isValidTarget(level: LevelReader, pos: BlockPos): boolean;
-    // private lithium$chunkAwareSearch(arg0: BlockPos, arg1: (param0: Object, param1: Object) => kotlin.Boolean, arg2: CheckAndCacheBlockChecker, arg3: (Object | null)[], arg4: number, arg5: number): boolean;
-    lithium$findNearestBlock(arg0: (param0: Object) => kotlin.Boolean, arg1: (param0: Object, param1: Object) => kotlin.Boolean, arg2: boolean): boolean;
-    // private lithium$vanillaOrderSearch(arg0: BlockPos, arg1: (param0: Object, param1: Object) => kotlin.Boolean, arg2: CheckAndCacheBlockChecker, arg3: number, arg4: number): boolean;
+    // private lithium$chunkAwareSearch(arg0: BlockPos, arg1: (param0: Object, param1: Object) => boolean, arg2: CheckAndCacheBlockChecker, arg3: (Object | null)[], arg4: number, arg5: number): boolean;
+    lithium$findNearestBlock(arg0: (param0: Object) => boolean, arg1: (param0: Object, param1: Object) => boolean, arg2: boolean): boolean;
+    // private lithium$vanillaOrderSearch(arg0: BlockPos, arg1: (param0: Object, param1: Object) => boolean, arg2: CheckAndCacheBlockChecker, arg3: number, arg4: number): boolean;
     moveMobToBlock(): void;
     nextStartTick(mob: PathfinderMob): number;
     requiresUpdateEveryTick(): boolean;

@@ -13,7 +13,7 @@ import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class MinecraftVectorExtensionsKt extends Object {
     static add(vector3f: Vector3f, vec3d: Vec3): Vector3f;
-    static average(iterable: (Object | null)[]): Vec3;
+    static average(iterable: Vec3[]): Vec3;
     static bottomCenter(paramarg0: Vec3i, paramarg1: number): Vec3;
     static component1(paramarg0: Vec3): number;
     static component1(paramarg0: Vec2): number;

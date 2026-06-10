@@ -10,7 +10,7 @@ import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { TradeSet } from '../../../../../../net/minecraft/world/item/trading/TradeSet.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class VillagerProfession extends Record {
-    static ALL_ACQUIRABLE_JOBS: (param0: Object | null) => kotlin.Boolean;
+    static ALL_ACQUIRABLE_JOBS: (param0: Holder<PoiType>) => boolean;
     static ARMORER: ResourceKey<VillagerProfession>;
     static BUTCHER: ResourceKey<VillagerProfession>;
     static CARTOGRAPHER: ResourceKey<VillagerProfession>;
@@ -27,19 +27,19 @@ export class VillagerProfession extends Record {
     static TOOLSMITH: ResourceKey<VillagerProfession>;
     static WEAPONSMITH: ResourceKey<VillagerProfession>;
     static bootstrap(paramregistry: VillagerProfession[]): VillagerProfession;
-    constructor(name: Component, heldJobSite: (param0: Holder<PoiType>) => kotlin.Boolean, acquirableJobSite: (param0: Holder<PoiType>) => kotlin.Boolean, requestedItems: Item[], secondaryPoi: Block[], workSound: SoundEvent, tradeSetsByLevel: Int2ObjectMap<ResourceKey<TradeSet>>)
-    // private acquirableJobSite: (param0: Holder<PoiType>) => kotlin.Boolean;
-    // private heldJobSite: (param0: Holder<PoiType>) => kotlin.Boolean;
+    constructor(name: Component, heldJobSite: (param0: Holder<PoiType>) => boolean, acquirableJobSite: (param0: Holder<PoiType>) => boolean, requestedItems: Item[], secondaryPoi: Block[], workSound: SoundEvent, tradeSetsByLevel: Int2ObjectMap<ResourceKey<TradeSet>>)
+    // private acquirableJobSite: (param0: Holder<PoiType>) => boolean;
+    // private heldJobSite: (param0: Holder<PoiType>) => boolean;
     // private name: Component;
     // private requestedItems: Item[];
     // private secondaryPoi: Block[];
     // private tradeSetsByLevel: Int2ObjectMap<ResourceKey<TradeSet>>;
     // private workSound: SoundEvent;
-    acquirableJobSite(): (param0: Holder<PoiType>) => kotlin.Boolean;
+    acquirableJobSite(): (param0: Holder<PoiType>) => boolean;
     equals(o: Object | null): boolean;
     getTrades(level: number): ResourceKey<TradeSet>;
     hashCode(): number;
-    heldJobSite(): (param0: Holder<PoiType>) => kotlin.Boolean;
+    heldJobSite(): (param0: Holder<PoiType>) => boolean;
     name(): Component;
     requestedItems(): Item[];
     secondaryPoi(): Block[];

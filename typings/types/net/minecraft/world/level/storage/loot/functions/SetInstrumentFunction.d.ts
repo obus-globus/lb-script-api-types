@@ -1,6 +1,7 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
+import type { Instrument } from '../../../../../../../net/minecraft/world/item/Instrument.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { LootItemConditionalFunction } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction.d.ts'
@@ -8,9 +9,9 @@ import type { LootItemConditionalFunction$Builder } from '../../../../../../../n
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class SetInstrumentFunction extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<SetInstrumentFunction>;
-    static setInstrumentOptions(paramoptions: Holder<T>[]): LootItemConditionalFunction$Builder<Object>;
-    private constructor(predicates: LootItemCondition[], options: Holder<T>[])
-    // private options: Holder<T>[];
+    static setInstrumentOptions(paramoptions: Holder<Instrument>[]): LootItemConditionalFunction$Builder<Object>;
+    private constructor(predicates: LootItemCondition[], options: Holder<Instrument>[])
+    // private options: Holder<Instrument>[];
     codec(): MapCodec<SetInstrumentFunction>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;
 }

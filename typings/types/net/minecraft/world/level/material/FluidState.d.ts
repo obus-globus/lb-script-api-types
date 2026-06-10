@@ -43,11 +43,11 @@ export class FluidState extends StateHolder<Fluid, FluidState> implements TypedI
     getOwnHeight(): number;
     getShape(level: BlockGetter, pos: BlockPos): VoxelShape;
     getType(): Fluid;
-    is<T extends Object | number | string | boolean>(rawType: T): boolean;
-    is(type: Holder<T>): boolean;
-    is(set: Holder<T>[]): boolean;
-    is(type: ResourceKey<T>): boolean;
-    is(tag: TagKey<T>): boolean;
+    is(rawType: Fluid): boolean;
+    is(type: Holder<Fluid>): boolean;
+    is(set: Holder<Fluid>[]): boolean;
+    is(type: ResourceKey<Fluid>): boolean;
+    is(tag: TagKey<Fluid>): boolean;
     isEmpty(): boolean;
     isFull(): boolean;
     isRandomlyTicking(): boolean;
@@ -55,7 +55,7 @@ export class FluidState extends StateHolder<Fluid, FluidState> implements TypedI
     isSourceOfType(fluidType: Fluid): boolean;
     randomTick(level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     shouldRenderBackwardUpFace(level: BlockGetter, above: BlockPos): boolean;
-    tags(): Stream<TagKey<T>>;
+    tags(): Stream<TagKey<Fluid>>;
     tick(level: ServerLevel, pos: BlockPos, blockState: BlockState): void;
     typeHolder(): Holder<Fluid>;
 }

@@ -25,7 +25,7 @@ export class EventListenerRunningContinuationInterceptor extends AbstractCorouti
     // private eventListener: EventListener;
     // private original: ContinuationInterceptor | null;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
-    interceptContinuation(continuation: Continuation<T>): Continuation<T>;
+    interceptContinuation<T extends Object | number | string | boolean>(continuation: Continuation<T>): Continuation<T>;
     minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
     releaseInterceptedContinuation(continuation: Continuation<Object>): void;
 }

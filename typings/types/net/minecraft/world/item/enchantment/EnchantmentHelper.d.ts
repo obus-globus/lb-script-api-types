@@ -17,6 +17,7 @@ import type { DamageSource } from '../../../../../net/minecraft/world/damagesour
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EquipmentSlot } from '../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Attribute } from '../../../../../net/minecraft/world/entity/ai/attributes/Attribute.d.ts'
 import type { AttributeModifier } from '../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { Projectile } from '../../../../../net/minecraft/world/entity/projectile/Projectile.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
@@ -39,13 +40,13 @@ export class EnchantmentHelper extends Object {
     static doPostAttackEffectsWithItemSource(paramserverLevel: ServerLevel, paramvictim: Entity, paramdamageSource: DamageSource, paramsource: ItemStack): void;
     static doPostAttackEffectsWithItemSourceOnBreak(paramserverLevel: ServerLevel, paramvictim: Entity, paramdamageSource: DamageSource, paramsource: ItemStack, paramattackerlessOnBreak: (param0: Item) => void): void;
     static doPostPiercingAttackEffects(paramserverLevel: ServerLevel, paramuser: LivingEntity): void;
-    static enchantItem(paramrandom: RandomSource, paramitemStack: ItemStack, paramenchantmentCost: number, paramsource: Stream<Object>): ItemStack;
-    static enchantItem(paramrandom: RandomSource, paramitemStack: ItemStack, paramenchantmentCost: number, paramregistryAccess: RegistryAccess, paramset: Optional<Object>): ItemStack;
+    static enchantItem(paramrandom: RandomSource, paramitemStack: ItemStack, paramenchantmentCost: number, paramsource: Stream<Holder<Enchantment>>): ItemStack;
+    static enchantItem(paramrandom: RandomSource, paramitemStack: ItemStack, paramenchantmentCost: number, paramregistryAccess: RegistryAccess, paramset: Optional<Holder<Enchantment>[]>): ItemStack;
     static enchantItemFromProvider(paramitemStack: ItemStack, paramregistryAccess: RegistryAccess, paramproviderKey: ResourceKey<EnchantmentProvider>, paramdifficulty: DifficultyInstance, paramrandom: RandomSource): void;
     static filterCompatibleEnchantments(paramenchants: EnchantmentInstance[], paramtarget: EnchantmentInstance): void;
-    static forEachModifier(paramitemStack: ItemStack, paramslot: EquipmentSlot, paramconsumer: (param0: Object | null, param1: AttributeModifier) => void): void;
-    static forEachModifier(paramitemStack: ItemStack, paramslot: EquipmentSlot[], paramconsumer: (param0: Object | null, param1: AttributeModifier) => void): void;
-    static getAvailableEnchantmentResults(paramvalue: number, paramitemStack: ItemStack, paramsource: Stream<Object>): EnchantmentInstance[];
+    static forEachModifier(paramitemStack: ItemStack, paramslot: EquipmentSlot, paramconsumer: (param0: Holder<Attribute>, param1: AttributeModifier) => void): void;
+    static forEachModifier(paramitemStack: ItemStack, paramslot: EquipmentSlot[], paramconsumer: (param0: Holder<Attribute>, param1: AttributeModifier) => void): void;
+    static getAvailableEnchantmentResults(paramvalue: number, paramitemStack: ItemStack, paramsource: Stream<Holder<Enchantment>>): EnchantmentInstance[];
     static getComponentType(paramitemStack: ItemStack): DataComponentType<ItemEnchantments>;
     static getDamageProtection(paramserverLevel: ServerLevel, paramvictim: LivingEntity, paramsource: DamageSource): number;
     static getEnchantmentCost(paramrandom: RandomSource, paramslot: number, parambookcases: number, paramitemStack: ItemStack): number;
@@ -56,13 +57,13 @@ export class EnchantmentHelper extends Object {
     static getHighestLevel(paramitem: ItemStack, parameffectType: DataComponentType<Object>): Pair<Object, number>;
     static getItemEnchantmentLevel(paramenchantment: Holder<Enchantment>, parampiece: ItemInstance): number;
     static getPiercingCount(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramammo: ItemStack): number;
-    static getRandomItemWith(paramcomponentType: DataComponentType<Object>, paramsource: LivingEntity, parampredicate: (param0: ItemStack) => kotlin.Boolean): Optional<EnchantedItemInUse>;
+    static getRandomItemWith(paramcomponentType: DataComponentType<Object>, paramsource: LivingEntity, parampredicate: (param0: ItemStack) => boolean): Optional<EnchantedItemInUse>;
     static getTridentReturnToOwnerAcceleration(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramtrident: Entity): number;
     static getTridentSpinAttackStrength(paramtrident: ItemStack, paramholder: LivingEntity): number;
     static has(paramitem: ItemStack, parameffectType: DataComponentType<Object>): boolean;
     static hasAnyEnchantments(paramitemStack: ItemStack): boolean;
     static hasTag(paramitem: ItemStack, paramtag: TagKey<Enchantment>): boolean;
-    static isEnchantmentCompatible(paramenchants: E[], paramtarget: Holder<Enchantment>): boolean;
+    static isEnchantmentCompatible(paramenchants: Holder<Enchantment>[], paramtarget: Holder<Enchantment>): boolean;
     static isImmuneToDamage(paramserverLevel: ServerLevel, paramvictim: LivingEntity, paramsource: DamageSource): boolean;
     static modifyArmorEffectiveness(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramvictim: Entity, paramdamageSource: DamageSource, paramarmorFraction: number): number;
     static modifyCrossbowChargingTime(paramcrossbow: ItemStack, paramholder: LivingEntity, paramtime: number): number;
@@ -72,7 +73,7 @@ export class EnchantmentHelper extends Object {
     static modifyKnockback(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramvictim: Entity, paramdamageSource: DamageSource, paramknockback: number): number;
     static onHitBlock(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramowner: LivingEntity, paramentity: Entity, paramslot: EquipmentSlot, paramhitLocation: Vec3, paramhitBlock: BlockState, paramonBreak: (param0: Item) => void): void;
     static onProjectileSpawned(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramprojectileEntity: Projectile, paramonBreak: (param0: Item) => void): void;
-    static pickHighestLevel(paramitemStack: ItemStack, paramcomponentType: DataComponentType<Object>): Optional<Object>;
+    static pickHighestLevel(paramitemStack: ItemStack, paramcomponentType: DataComponentType<(Object | null)[]>): Optional<Object>;
     static processAmmoUse(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramammo: ItemStack, paramamount: number): number;
     static processBlockExperience(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramamount: number): number;
     static processDurabilityChange(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramamount: number): number;
@@ -85,7 +86,7 @@ export class EnchantmentHelper extends Object {
     static runIterationOnItem(parampiece: ItemStack, parammethod: (param0: Holder<Enchantment>, param1: number) => void): void;
     static runLocationChangedEffects(paramserverLevel: ServerLevel, paramentity: LivingEntity): void;
     static runLocationChangedEffects(paramserverLevel: ServerLevel, paramstack: ItemStack, paramentity: LivingEntity, paramslot: EquipmentSlot): void;
-    static selectEnchantment(paramrandom: RandomSource, paramitemStack: ItemStack, paramenchantmentCost: number, paramsource: Stream<Object>): EnchantmentInstance[];
+    static selectEnchantment(paramrandom: RandomSource, paramitemStack: ItemStack, paramenchantmentCost: number, paramsource: Stream<Holder<Enchantment>>): EnchantmentInstance[];
     static setEnchantments(paramitemStack: ItemStack, paramenchantments: ItemEnchantments): void;
     static stopLocationBasedEffects(paramentity: LivingEntity): void;
     static stopLocationBasedEffects(paramstack: ItemStack, paramentity: LivingEntity, paramslot: EquipmentSlot): void;

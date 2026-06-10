@@ -9,7 +9,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ClientConfigurationPacketListener } from '../../../../../net/minecraft/network/protocol/configuration/ClientConfigurationPacketListener.d.ts'
 export class ClientboundCodeOfConductPacket extends Record implements Packet<ClientConfigurationPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundCodeOfConductPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(codeOfConduct: string)
     // private codeOfConduct: string;
     codeOfConduct(): string;

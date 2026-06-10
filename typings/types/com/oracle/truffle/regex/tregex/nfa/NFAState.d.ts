@@ -9,10 +9,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class NFAState extends BasicState<NFAState, NFAStateTransition> implements JsonConvertible {
     constructor(original: NFAState)
-    private constructor(id: number, stateSet: S[], flags: number, possibleResults: number[], finishedLookBehinds: LookBehindAssertion[], matchedConditionGroupsMap: EconomicMap<number, number[]>)
-    private constructor(id: number, stateSet: S[], flags: number, finishedLookBehinds: LookBehindAssertion[], matchedConditionGroupsMap: EconomicMap<number, number[]>)
-    constructor(id: number, stateSet: S[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean)
-    constructor(id: number, stateSet: S[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean, matchedConditionGroupsMap: EconomicMap<number, number[]>)
+    private constructor(id: number, stateSet: RegexASTNode[], flags: number, possibleResults: number[], finishedLookBehinds: LookBehindAssertion[], matchedConditionGroupsMap: EconomicMap<number, number[]>)
+    private constructor(id: number, stateSet: RegexASTNode[], flags: number, finishedLookBehinds: LookBehindAssertion[], matchedConditionGroupsMap: EconomicMap<number, number[]>)
+    constructor(id: number, stateSet: RegexASTNode[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean)
+    constructor(id: number, stateSet: RegexASTNode[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean, matchedConditionGroupsMap: EconomicMap<number, number[]>)
     readonly finishedLookBehinds: LookBehindAssertion[];
     readonly matchedConditionGroupsMap: EconomicMap<number, number[]>;
     // private numberOfGuardedAnchoredFinalTransitions: number;
@@ -20,7 +20,7 @@ export class NFAState extends BasicState<NFAState, NFAStateTransition> implement
     readonly possibleResults: number[];
     // private revTransitionToAnchoredFinalState: number;
     // private revTransitionToUnAnchoredFinalState: number;
-    readonly stateSet: S[];
+    readonly stateSet: RegexASTNode[];
     // private transitionToAnchoredFinalState: number;
     // private transitionToUnAnchoredFinalState: number;
     addLoopBackNext(transition: NFAStateTransition): void;
@@ -36,7 +36,7 @@ export class NFAState extends BasicState<NFAState, NFAStateTransition> implement
     getMatchedConditionGroupsDebug(): number[];
     getMatchedConditionGroupsMap(): EconomicMap<number, number[]>;
     getPossibleResults(): number[];
-    getStateSet(): S[];
+    getStateSet(): RegexASTNode[];
     getTransitionToAnchoredFinalState(forward: boolean): NFAStateTransition;
     getTransitionToAnchoredFinalStateId(forward: boolean): number;
     getTransitionToUnAnchoredFinalState(forward: boolean): NFAStateTransition;

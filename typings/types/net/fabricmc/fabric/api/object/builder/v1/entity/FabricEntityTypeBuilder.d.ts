@@ -6,18 +6,21 @@ import type { Entity } from '../../../../../../../../net/minecraft/world/entity/
 import type { EntityDimensions } from '../../../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
 import type { EntityType } from '../../../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { EntityType$EntityFactory } from '../../../../../../../../net/minecraft/world/entity/EntityType$EntityFactory.d.ts'
+import type { LivingEntity } from '../../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
+import type { Mob } from '../../../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { MobCategory } from '../../../../../../../../net/minecraft/world/entity/MobCategory.d.ts'
 import type { FeatureFlag } from '../../../../../../../../net/minecraft/world/flag/FeatureFlag.d.ts'
+import type { Level } from '../../../../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Block } from '../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class FabricEntityTypeBuilder<T extends Entity> extends Object {
-    static create(): FabricEntityTypeBuilder<Object>;
-    static create(paramarg0: MobCategory): FabricEntityTypeBuilder<Object>;
-    static create(paramarg0: MobCategory, paramarg1: (param0: Object | null, param1: EntityType<Object>) => unknown): FabricEntityTypeBuilder<Object>;
-    static createLiving(): FabricEntityTypeBuilder$Living<Object>;
-    static createMob(): FabricEntityTypeBuilder$Mob<Object>;
-    constructor(arg0: MobCategory, arg1: (param0: T, param1: EntityType<Object>) => unknown)
+    static create(): FabricEntityTypeBuilder<Entity>;
+    static create(paramarg0: MobCategory): FabricEntityTypeBuilder<Entity>;
+    static create(paramarg0: MobCategory, paramarg1: (param0: EntityType<Entity>, param1: Level) => Entity | null): FabricEntityTypeBuilder<Entity>;
+    static createLiving(): FabricEntityTypeBuilder$Living<LivingEntity>;
+    static createMob(): FabricEntityTypeBuilder$Mob<Mob>;
+    constructor(arg0: MobCategory, arg1: (param0: EntityType<T>, param1: Level) => T)
     // private dimensions: EntityDimensions;
-    // private factory: (param0: T, param1: EntityType<Object>) => unknown;
+    // private factory: (param0: EntityType<T>, param1: Level) => T;
     // private fireImmune: boolean;
     // private forceTrackedVelocityUpdates: boolean;
     // private mobCategory: MobCategory;
@@ -32,7 +35,7 @@ export class FabricEntityTypeBuilder<T extends Entity> extends Object {
     dimensions(arg0: EntityDimensions): FabricEntityTypeBuilder<T>;
     disableSaving(): FabricEntityTypeBuilder<T>;
     disableSummon(): FabricEntityTypeBuilder<T>;
-    entityFactory(arg0: (param0: N, param1: EntityType<Object>) => unknown): FabricEntityTypeBuilder<N>;
+    entityFactory<N extends T>(arg0: (param0: EntityType<N>, param1: Level) => N): FabricEntityTypeBuilder<N>;
     fireImmune(): FabricEntityTypeBuilder<T>;
     forceTrackedVelocityUpdates(arg0: boolean): FabricEntityTypeBuilder<T>;
     mobCategory(arg0: MobCategory): FabricEntityTypeBuilder<T>;

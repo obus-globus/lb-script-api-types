@@ -7,11 +7,11 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class Ghast$GhastMoveControl extends MoveControl {
     static MIN_SPEED: number;
     static MIN_SPEED_SQR: number;
-    constructor(ghast: Mob, careful: boolean, shouldBeStopped: () => kotlin.Boolean)
+    constructor(ghast: Mob, careful: boolean, shouldBeStopped: () => boolean)
     // private careful: boolean;
     // private floatDuration: number;
     // private ghast: Mob;
-    // private shouldBeStopped: () => kotlin.Boolean;
+    // private shouldBeStopped: () => boolean;
     // private blockTraversalPossible(level: BlockGetter, start: Vec3, end: Vec3, pos: BlockPos, canPathThroughWater: boolean, canPathThroughLava: boolean): boolean;
     // private canReach(travel: Vec3): boolean;
     tick(): void;

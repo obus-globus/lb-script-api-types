@@ -6,7 +6,7 @@ import type { Screen } from '../../../../../../../net/minecraft/client/gui/scree
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ExternalButtonOption extends StaticOption {
-    constructor(arg0: Identifier, arg1: E[], arg2: Component, arg3: DependentValue<boolean>, arg4: Component, arg5: (param0: Screen) => void)
+    constructor(arg0: Identifier, arg1: Identifier[], arg2: Component, arg3: DependentValue<boolean>, arg4: Component, arg5: (param0: Screen) => void)
     readonly currentScreenConsumer: (param0: Screen) => void;
     createControl(): Control;
     getCurrentScreenConsumer(): (param0: Screen) => void;

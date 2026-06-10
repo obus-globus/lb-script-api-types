@@ -22,8 +22,8 @@ import type { MessageSupplier } from '../../../../../org/apache/logging/log4j/ut
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     static CATCHING_MARKER: Marker;
-    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<Object>;
-    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<Object>;
+    static DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: Class<FlowMessageFactory>;
+    static DEFAULT_MESSAGE_FACTORY_CLASS: Class<MessageFactory>;
     static ENTRY_MARKER: Marker;
     static EXCEPTION_MARKER: Marker;
     static EXIT_MARKER: Marker;
@@ -105,14 +105,14 @@ export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     log(level: Level, marker: Marker, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Message): void;
     log(level: Level, marker: Marker, message: Message, throwable: Throwable): void;
-    log(level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    log(level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    log(level: Level, marker: Marker, messageSupplier: () => Message): void;
+    log(level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     log(level: Level, marker: Marker, messageSupplier: () => Object | null): void;
     log(level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     log(level: Level, message: Message): void;
     log(level: Level, message: Message, throwable: Throwable): void;
-    log(level: Level, messageSupplier: () => org.apache.logging.log4j.message.Message): void;
-    log(level: Level, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    log(level: Level, messageSupplier: () => Message): void;
+    log(level: Level, messageSupplier: () => Message, throwable: Throwable): void;
     log(level: Level, messageSupplier: () => Object | null): void;
     log(level: Level, messageSupplier: () => Object | null, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: Object, throwable: Throwable): void;
@@ -132,7 +132,7 @@ export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: Message, t: Throwable): void;
-    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => org.apache.logging.log4j.message.Message, throwable: Throwable): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Object | null, throwable: Throwable): void;
     logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
     removeAppender(appender: Appender): void;

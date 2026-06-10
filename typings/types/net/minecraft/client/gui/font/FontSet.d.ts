@@ -19,7 +19,7 @@ export class FontSet extends Object implements AutoCloseable {
     // private allProviders: GlyphProvider$Conditional[];
     // private anyGlyphs: GlyphSource;
     glyphCache: CodepointMap<FontSet$SelectedGlyphs>;
-    // private glyphGetter: (param0: FontSet$SelectedGlyphs) => unknown;
+    // private glyphGetter: (param0: number) => FontSet$SelectedGlyphs;
     // private glyphsByWidth: Int2ObjectMap<(Object | null)[]>;
     // private missingGlyph: BakedGlyph;
     // private missingGlyphGetter: () => BakedGlyph;

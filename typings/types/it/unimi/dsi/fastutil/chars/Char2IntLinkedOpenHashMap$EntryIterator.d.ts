@@ -3,15 +3,14 @@ import type { Char2IntLinkedOpenHashMap$MapIterator } from '../../../../../it/un
 import type { Char2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/Char2IntMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2IntLinkedOpenHashMap$EntryIterator extends Char2IntLinkedOpenHashMap$MapIterator<(param0: Char2IntMap$Entry) => void> implements ObjectListIterator<Char2IntMap$Entry> {
     constructor(null_: Char2IntLinkedOpenHashMap$EntryIterator)
     constructor(null_: Char2IntLinkedOpenHashMap$EntryIterator, arg1: string)
     // private entry: Char2IntLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Char2IntMap$Entry) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add(arg0: Char2IntMap$Entry): void;
     next(): Char2IntLinkedOpenHashMap$MapEntry;
     previous(): Char2IntLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set(arg0: Char2IntMap$Entry): void;
 }

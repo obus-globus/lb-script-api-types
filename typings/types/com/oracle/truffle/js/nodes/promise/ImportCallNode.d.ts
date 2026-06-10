@@ -23,8 +23,8 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ImportCallNode extends JavaScriptNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramcontext: JSContext): ImportCallNode;
     static create(paramcontext: JSContext, paramphase: Module$ImportPhase, paramspecifierRefNode: JavaScriptNode, paramoptionsRefNode: JavaScriptNode, paramactiveScriptOrModule: ScriptOrModule): ImportCallNode;
     static findBlockScopeNode(paramnode: Node): Node;

@@ -16,8 +16,8 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { RegistryDataLoader$RegistryData } from '../../../../net/minecraft/resources/RegistryDataLoader$RegistryData.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class RegistriesDatapackGenerator extends Object implements DataProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
@@ -28,7 +28,7 @@ export class RegistriesDatapackGenerator extends Object implements DataProvider 
     constructor(output: PackOutput, registries: CompletableFuture<HolderLookup$Provider>)
     // private output: PackOutput;
     // private registries: CompletableFuture<HolderLookup$Provider>;
-    // private dumpRegistryCap(cache: CachedOutput, registries: HolderLookup$Provider, writeOps: DynamicOps<JsonElement>, v: RegistryDataLoader$RegistryData<T>): Optional<CompletableFuture<Object>>;
+    // private dumpRegistryCap<T extends Object | number | string | boolean>(cache: CachedOutput, registries: HolderLookup$Provider, writeOps: DynamicOps<JsonElement>, v: RegistryDataLoader$RegistryData<T>): Optional<CompletableFuture<Object>>;
     getName(): string;
     run(cache: CachedOutput): CompletableFuture<Object>;
 }

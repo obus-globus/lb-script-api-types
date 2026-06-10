@@ -10,8 +10,8 @@ import type { ItemDisplayContext } from '../../../../../../../net/minecraft/worl
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Level } from '../../../../../../../net/minecraft/world/level/Level.d.ts'
 export class ContextDimension extends Record implements SelectItemModelProperty<ResourceKey<Level>> {
-    static TYPE: SelectItemModelProperty$Type<ContextDimension, Object>;
-    static VALUE_CODEC: Codec<Object>;
+    static TYPE: SelectItemModelProperty$Type<ContextDimension, ResourceKey<Level>>;
+    static VALUE_CODEC: Codec<ResourceKey<Level>>;
     constructor()
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): ResourceKey<Level>;

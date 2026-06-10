@@ -85,10 +85,10 @@ export class WebSocketImpl extends Object implements WebSocket {
     send(arg0: ByteBuffer): void;
     send(arg0: number[]): void;
     send(arg0: string): void;
-    // private send(arg0: E[]): void;
+    // private send(arg0: Framedata[]): void;
     sendFragmentedFrame(arg0: Opcode, arg1: ByteBuffer, arg2: boolean): void;
     sendFrame(arg0: Framedata): void;
-    sendFrame(arg0: E[]): void;
+    sendFrame(arg0: Framedata[]): void;
     sendPing(): void;
     setAttachment<T extends Object | number | string | boolean>(arg0: T): void;
     setChannel(arg0: ByteChannel): void;

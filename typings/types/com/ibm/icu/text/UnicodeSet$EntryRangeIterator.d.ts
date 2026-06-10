@@ -6,7 +6,7 @@ export class UnicodeSet$EntryRangeIterator extends Object implements Iterator<Un
     private constructor(null_: UnicodeSet$EntryRangeIterator)
     // private pos: number;
     // private result: UnicodeSet$EntryRange;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining(arg0: (param0: UnicodeSet$EntryRange) => void): void;
     hasNext(): boolean;
     next(): UnicodeSet$EntryRange;
     remove(): void;

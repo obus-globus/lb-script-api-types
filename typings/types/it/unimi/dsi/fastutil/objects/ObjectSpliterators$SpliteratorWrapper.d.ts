@@ -17,7 +17,7 @@ export class ObjectSpliterators$SpliteratorWrapper<K extends Object | number | s
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: K) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;

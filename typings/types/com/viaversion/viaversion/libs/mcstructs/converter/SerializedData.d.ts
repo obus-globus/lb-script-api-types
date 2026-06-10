@@ -6,8 +6,8 @@ export class SerializedData<T extends Object | number | string | boolean> extend
     constructor(arg0: T, arg1: DataConverter<T>)
     readonly converter: DataConverter<T>;
     readonly data: T;
-    convert(arg0: DataConverter<S>): Result<S>;
-    deserialize(arg0: Codec<O>): Result<O>;
+    convert<S extends Object | number | string | boolean>(arg0: DataConverter<S>): Result<S>;
+    deserialize<O extends Object | number | string | boolean>(arg0: Codec<O>): Result<O>;
     equals(arg0: Object | null): boolean;
     getConverter(): DataConverter<T>;
     getData(): T;

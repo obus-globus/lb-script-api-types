@@ -9,15 +9,15 @@ import type { TypeProjection } from '../../../../../../../kotlin/reflect/jvm/int
 import type { Variance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/Variance.d.ts'
 export class TypeUtilsKt extends Object {
     static asTypeProjection(paramarg0: KotlinType): TypeProjection;
-    static contains(paramarg0: KotlinType, paramarg1: (param0: Object | null) => boolean): boolean;
+    static contains(paramarg0: KotlinType, paramarg1: (param0: Object) => boolean): boolean;
     static containsTypeAliasParameters(paramarg0: KotlinType): boolean;
     static containsTypeParameter(paramarg0: KotlinType): boolean;
     static createProjection(paramarg0: KotlinType, paramarg1: Variance, paramarg2: TypeParameterDescriptor): TypeProjection;
-    static extractTypeParametersFromUpperBounds(paramarg0: KotlinType, paramarg1: (Object | null)[]): TypeParameterDescriptor[];
+    static extractTypeParametersFromUpperBounds(paramarg0: KotlinType, paramarg1: TypeParameterDescriptor[]): TypeParameterDescriptor[];
     static getBuiltIns(paramarg0: KotlinType): KotlinBuiltIns;
     static getRepresentativeUpperBound(paramarg0: TypeParameterDescriptor): KotlinType;
     static hasTypeParameterRecursiveBounds(paramarg0: TypeParameterDescriptor): boolean;
-    static hasTypeParameterRecursiveBounds(paramarg0: TypeParameterDescriptor, paramarg1: TypeConstructor, paramarg2: (Object | null)[]): boolean;
+    static hasTypeParameterRecursiveBounds(paramarg0: TypeParameterDescriptor, paramarg1: TypeConstructor, paramarg2: TypeParameterDescriptor[]): boolean;
     static isBoolean(paramarg0: KotlinType): boolean;
     static isNothing(paramarg0: KotlinType): boolean;
     static isStubType(paramarg0: KotlinType): boolean;

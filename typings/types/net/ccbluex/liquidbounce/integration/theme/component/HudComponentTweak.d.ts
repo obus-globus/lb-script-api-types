@@ -29,7 +29,7 @@ export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged
      */
     static TWEAK_HOTBAR: HudComponentTweak;
     static getEntries(): HudComponentTweak[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HudComponentTweak;

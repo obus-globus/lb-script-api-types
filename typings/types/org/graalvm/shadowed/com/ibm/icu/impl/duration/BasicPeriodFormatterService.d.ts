@@ -8,7 +8,7 @@ export class BasicPeriodFormatterService extends Object implements PeriodFormatt
     static getInstance(): BasicPeriodFormatterService;
     constructor(ds: PeriodFormatterDataService)
     // private ds: PeriodFormatterDataService;
-    getAvailableLocaleNames(): E[];
+    getAvailableLocaleNames(): string[];
     newDurationFormatterFactory(): DurationFormatterFactory;
     newPeriodBuilderFactory(): PeriodBuilderFactory;
     newPeriodFormatterFactory(): PeriodFormatterFactory;

@@ -15,8 +15,7 @@ export class HashMap$KeySpliterator<K extends Object | number | string | boolean
     constructor(arg0: Map<K, V>, arg1: number, arg2: number, arg3: number, arg4: number)
     characteristics(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: K) => void): boolean;

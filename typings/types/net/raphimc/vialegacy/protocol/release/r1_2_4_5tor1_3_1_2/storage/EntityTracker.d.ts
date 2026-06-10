@@ -15,7 +15,7 @@ export class EntityTracker extends StoredObject {
     RND: Random;
     // private entityMap: { [key: number]: AbstractTrackedEntity };
     readonly playerID: number;
-    getNearestEntity(arg0: Location, arg1: number, arg2: (param0: AbstractTrackedEntity) => kotlin.Boolean): Optional<AbstractTrackedEntity>;
+    getNearestEntity(arg0: Location, arg1: number, arg2: (param0: AbstractTrackedEntity) => boolean): Optional<AbstractTrackedEntity>;
     getPlayerID(): number;
     getTrackedEntities(): { [key: number]: AbstractTrackedEntity };
     playSound(arg0: number, arg1: SoundType): void;

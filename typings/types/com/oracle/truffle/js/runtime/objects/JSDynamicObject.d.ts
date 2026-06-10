@@ -25,8 +25,8 @@ export class JSDynamicObject extends DynamicObject implements TruffleObject {
     static setJSClass(paramobj: JSDynamicObject, paramjsclass: JSClass): void;
     static setObjectFlags(paramobj: JSDynamicObject, paramflags: number): void;
     static setPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramflags: number): void;
-    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => kotlin.Boolean): boolean;
-    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => kotlin.Int): boolean;
+    static testProperties(paramobj: JSDynamicObject, parampredicate: (param0: Property) => boolean): boolean;
+    static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
     constructor(shape: Shape)
     defaultToString(): TruffleString;
     defineOwnProperty(key: Object, value: PropertyDescriptor, doThrow: boolean): boolean;

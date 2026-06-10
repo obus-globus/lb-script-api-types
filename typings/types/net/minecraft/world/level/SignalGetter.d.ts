@@ -8,6 +8,7 @@ import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 import type { BlockGetter } from '../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { ClipBlockStateContext } from '../../../../net/minecraft/world/level/ClipBlockStateContext.d.ts'
 import type { ClipContext } from '../../../../net/minecraft/world/level/ClipContext.d.ts'
+import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
@@ -18,7 +19,7 @@ export interface SignalGetter extends Object, BlockGetter {
     clip(arg0: ClipContext): BlockHitResult;
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
     getBestNeighborSignal(pos: BlockPos): number;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
     getBlockStates(box: AABB): Stream<BlockState>;

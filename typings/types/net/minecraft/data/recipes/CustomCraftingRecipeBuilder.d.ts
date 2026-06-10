@@ -7,11 +7,11 @@ import type { RecipeUnlockAdvancementBuilder } from '../../../../net/minecraft/d
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export class CustomCraftingRecipeBuilder extends Object {
-    static customCrafting(paramcategory: RecipeCategory, paramfactory: (param0: Object | null, param1: Object | null) => unknown): CustomCraftingRecipeBuilder;
-    constructor(category: RecipeCategory, factory: (param0: Object | null, param1: Object | null) => unknown)
+    static customCrafting(paramcategory: RecipeCategory, paramfactory: (param0: Object | null, param1: Object | null) => Object | null): CustomCraftingRecipeBuilder;
+    constructor(category: RecipeCategory, factory: (param0: Object | null, param1: Object | null) => Object | null)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;
     // private category: RecipeCategory;
-    // private factory: (param0: Object | null, param1: Object | null) => unknown;
+    // private factory: (param0: Object | null, param1: Object | null) => Object | null;
     // private group: string;
     group(group: string): CustomCraftingRecipeBuilder;
     save(output: RecipeOutput, name: string): void;

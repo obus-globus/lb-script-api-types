@@ -6,5 +6,5 @@ export interface CompositeData extends Object{
     get(arg0: string): Object;
     getAll(arg0: string[]): Object[];
     getCompositeType(): CompositeType;
-    values(): E[];
+    values(): (Object | null)[];
 }

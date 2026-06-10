@@ -11,8 +11,8 @@ export class BooleanSpliterators$SpliteratorWrapperWithComparator extends Boolea
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Spliterator<boolean>, arg1: (param0: boolean, param1: boolean) => kotlin.Int)
-    readonly comparator: (param0: boolean, param1: boolean) => kotlin.Int;
-    getComparator(): (param0: boolean, param1: boolean) => kotlin.Int;
+    constructor(arg0: Spliterator<boolean>, arg1: (param0: boolean, param1: boolean) => number)
+    readonly comparator: (param0: boolean, param1: boolean) => number;
+    getComparator(): (param0: boolean, param1: boolean) => number;
     trySplit(): BooleanSpliterator;
 }

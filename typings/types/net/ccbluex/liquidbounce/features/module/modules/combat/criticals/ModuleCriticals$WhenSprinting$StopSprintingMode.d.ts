@@ -10,7 +10,7 @@ export class ModuleCriticals$WhenSprinting$StopSprintingMode extends Enum<Module
     static ON_ATTACK: ModuleCriticals$WhenSprinting$StopSprintingMode;
     static ON_NETWORK: ModuleCriticals$WhenSprinting$StopSprintingMode;
     static getEntries(): ModuleCriticals$WhenSprinting$StopSprintingMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleCriticals$WhenSprinting$StopSprintingMode;

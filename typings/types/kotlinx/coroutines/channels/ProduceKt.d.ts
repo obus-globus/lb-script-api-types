@@ -8,7 +8,7 @@ import type { ProducerScope } from '../../../kotlinx/coroutines/channels/Produce
 import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 export class ProduceKt extends Object {
     static awaitClose(paramarg0: ProducerScope<Object>, paramarg1: () => void, paramarg2: Continuation<Object>): Object;
-    static produce(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: number, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): ReceiveChannel<Object>;
-    static produce(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: number, paramarg3: CoroutineStart, paramarg4: (param0: Object | null) => void, paramarg5: (param0: Object | null, param1: Object | null) => Object | null): ReceiveChannel<Object>;
-    static produce(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: number, paramarg3: BufferOverflow, paramarg4: CoroutineStart, paramarg5: (param0: Object | null) => void, paramarg6: (param0: Object | null, param1: Object | null) => Object | null): ReceiveChannel<Object>;
+    static produce(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: number, paramarg3: (param0: Object, param1: Object) => Object): ReceiveChannel<Object>;
+    static produce(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: number, paramarg3: CoroutineStart, paramarg4: (param0: Object) => void, paramarg5: (param0: Object, param1: Object) => Object): ReceiveChannel<Object>;
+    static produce(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: number, paramarg3: BufferOverflow, paramarg4: CoroutineStart, paramarg5: (param0: Object) => void, paramarg6: (param0: Object, param1: Object) => Object): ReceiveChannel<Object>;
 }

@@ -36,27 +36,27 @@ import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Function as Function_2 } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Boolean2ObjectFunction<V extends Object | number | string | boolean> extends Function<boolean, V>, Object {
-    andThenByte(arg0: (param0: V) => kotlin.Byte): (param0: boolean) => kotlin.Byte;
-    andThenChar(arg0: (param0: V) => kotlin.Char): (param0: boolean) => kotlin.Char;
-    andThenDouble(arg0: (param0: V) => kotlin.Double): (param0: boolean) => kotlin.Double;
-    andThenFloat(arg0: (param0: V) => kotlin.Float): (param0: boolean) => kotlin.Float;
-    andThenInt(arg0: (param0: V) => kotlin.Int): (param0: boolean) => kotlin.Int;
-    andThenLong(arg0: (param0: V) => kotlin.Long): (param0: boolean) => kotlin.Long;
-    andThenObject(arg0: (param0: V) => T): (param0: T) => unknown;
-    andThenReference(arg0: (param0: V) => T): (param0: T) => unknown;
-    andThenShort(arg0: (param0: V) => kotlin.Short): (param0: boolean) => kotlin.Short;
-    apply<K extends Object | number | string | boolean>(arg0: K): V;
+    andThenByte(arg0: (param0: Object) => number): (param0: boolean) => number;
+    andThenChar(arg0: (param0: Object) => string): (param0: boolean) => string;
+    andThenDouble(arg0: (param0: Object) => number): (param0: boolean) => number;
+    andThenFloat(arg0: (param0: Object) => number): (param0: boolean) => number;
+    andThenInt(arg0: (param0: Object) => number): (param0: boolean) => number;
+    andThenLong(arg0: (param0: Object) => number): (param0: boolean) => number;
+    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => T): (param0: boolean) => T;
+    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => T): (param0: boolean) => T;
+    andThenShort(arg0: (param0: Object) => number): (param0: boolean) => number;
+    apply(arg0: boolean): V;
     clear(): void;
-    compose(arg0: (param0: T) => boolean): (param0: T) => V;
-    composeByte(arg0: (param0: number) => kotlin.Boolean): (param0: V) => unknown;
-    composeChar(arg0: (param0: string) => kotlin.Boolean): (param0: V) => unknown;
-    composeDouble(arg0: (param0: number) => kotlin.Boolean): (param0: V) => unknown;
-    composeFloat(arg0: (param0: number) => kotlin.Boolean): (param0: V) => unknown;
-    composeInt(arg0: (param0: number) => kotlin.Boolean): (param0: V) => unknown;
-    composeLong(arg0: (param0: number) => kotlin.Boolean): (param0: V) => unknown;
-    composeObject(arg0: (param0: T) => kotlin.Boolean): (param0: T) => V;
-    composeReference(arg0: (param0: T) => kotlin.Boolean): (param0: T) => V;
-    composeShort(arg0: (param0: number) => kotlin.Boolean): (param0: V) => unknown;
+    compose<T extends Object | number | string | boolean>(arg0: (param0: T) => boolean): (param0: T) => V;
+    composeByte(arg0: (param0: number) => boolean): (param0: number) => V;
+    composeChar(arg0: (param0: string) => boolean): (param0: string) => V;
+    composeDouble(arg0: (param0: number) => boolean): (param0: number) => V;
+    composeFloat(arg0: (param0: number) => boolean): (param0: number) => V;
+    composeInt(arg0: (param0: number) => boolean): (param0: number) => V;
+    composeLong(arg0: (param0: number) => boolean): (param0: number) => V;
+    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => boolean): (param0: Object) => V;
+    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => boolean): (param0: Object) => V;
+    composeShort(arg0: (param0: number) => boolean): (param0: number) => V;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: boolean): boolean;
     defaultReturnValue(): V;
@@ -65,7 +65,6 @@ export interface Boolean2ObjectFunction<V extends Object | number | string | boo
     get(arg0: boolean): V;
     getOrDefault(arg0: Object, arg1: V): V;
     getOrDefault(arg0: boolean, arg1: V): V;
-    put<K extends Object | number | string | boolean>(arg0: K, arg1: V): V;
     put(arg0: boolean, arg1: V): V;
     remove(arg0: Object): V;
     remove(arg0: boolean): V;

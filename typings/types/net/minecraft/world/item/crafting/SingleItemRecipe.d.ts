@@ -3,6 +3,7 @@ import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
+import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { ItemStackTemplate } from '../../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
 import type { Ingredient } from '../../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
@@ -16,11 +17,11 @@ import type { SingleRecipeInput } from '../../../../../net/minecraft/world/item/
 import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplay.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export abstract class SingleItemRecipe extends Object implements Recipe<SingleRecipeInput> {
-    static CODEC: Codec<Object>;
-    static KEY_CODEC: Codec<Object>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Object>;
-    static simpleMapCodec(paramfactory: (param0: Object | null, param1: Recipe$CommonInfo, param2: Ingredient) => unknown): MapCodec<Object>;
-    static simpleStreamCodec(paramfactory: (param0: Object | null, param1: Recipe$CommonInfo, param2: Ingredient) => unknown): StreamCodec<RegistryFriendlyByteBuf, Object>;
+    static CODEC: Codec<Recipe<Object>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;
+    static simpleStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): StreamCodec<RegistryFriendlyByteBuf, SingleItemRecipe>;
     constructor(commonInfo: Recipe$CommonInfo, input: Ingredient, result: ItemStackTemplate)
     // private commonInfo: Recipe$CommonInfo;
     // private input: Ingredient;

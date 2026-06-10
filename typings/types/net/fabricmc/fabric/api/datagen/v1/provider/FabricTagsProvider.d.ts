@@ -12,8 +12,8 @@ import type { ResourceKey } from '../../../../../../../net/minecraft/resources/R
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricTagsProvider<T extends Object | number | string | boolean> extends TagsProvider<T> {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     constructor(arg0: FabricPackOutput, arg1: ResourceKey<T[]>, arg2: CompletableFuture<HolderLookup$Provider>)
     readonly aliasGroupBuilders: Map<Identifier, FabricTagsProvider$AliasGroupBuilder>;

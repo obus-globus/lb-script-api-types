@@ -5,13 +5,13 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2IntSortedMaps extends Object {
     static EMPTY_MAP: Short2IntSortedMaps$EmptySortedMap;
-    static entryComparator(paramarg0: (param0: number, param1: number) => kotlin.Int): (param0: Object | null) => kotlin.Boolean;
+    static entryComparator(paramarg0: (param0: number, param1: number) => number): (param0: Object) => boolean;
     static fastIterable(paramarg0: Short2IntSortedMap): Short2IntMap$Entry[];
     static fastIterator(paramarg0: Short2IntSortedMap): ObjectBidirectionalIterator<Short2IntMap$Entry>;
     static singleton(paramarg0: number, paramarg1: number): Short2IntSortedMap;
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): Short2IntSortedMap;
+    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): Short2IntSortedMap;
     static singleton(paramarg0: number, paramarg1: number): Short2IntSortedMap;
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): Short2IntSortedMap;
+    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): Short2IntSortedMap;
     static synchronize(paramarg0: Short2IntSortedMap): Short2IntSortedMap;
     static synchronize(paramarg0: Short2IntSortedMap, paramarg1: Object): Short2IntSortedMap;
     static unmodifiable(paramarg0: Short2IntSortedMap): Short2IntSortedMap;

@@ -10,7 +10,7 @@ export class RangeArgument$Floats extends Object implements RangeArgument<MinMax
     static getRange(paramcontext: CommandContext<CommandSourceStack>, paramname: string): MinMaxBounds$Doubles;
     static intRange(): RangeArgument$Ints;
     constructor()
-    getExamples(): E[];
+    getExamples(): string[];
     parse(reader: StringReader): MinMaxBounds$Doubles;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): MinMaxBounds$Doubles;
 }

@@ -7,15 +7,15 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanComparators$OppositeImplicitComparator extends Object implements BooleanComparator, Serializable {
-    static comparing(paramarg0: (param0: Object | null) => unknown): (param0: boolean, param1: boolean) => kotlin.Int;
-    static comparing(paramarg0: (param0: Object | null) => unknown, paramarg1: (param0: Object | null) => kotlin.Boolean): (param0: boolean, param1: boolean) => kotlin.Int;
-    static comparingDouble(paramarg0: (param0: boolean) => kotlin.Double): (param0: boolean, param1: boolean) => kotlin.Int;
-    static comparingInt(paramarg0: (param0: boolean) => kotlin.Int): (param0: boolean, param1: boolean) => kotlin.Int;
-    static comparingLong(paramarg0: (param0: boolean) => kotlin.Long): (param0: boolean, param1: boolean) => kotlin.Int;
+    static comparing(paramarg0: (param0: boolean) => Object | null): (param0: boolean, param1: boolean) => number;
+    static comparing(paramarg0: (param0: boolean) => Object | null, paramarg1: (param0: Object) => boolean): (param0: boolean, param1: boolean) => number;
+    static comparingDouble(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
+    static comparingInt(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
+    static comparingLong(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
     constructor()
     compare(arg0: boolean, arg1: boolean): number;
     // private readResolve(): Object;
-    reversed(): (param0: boolean, param1: boolean) => kotlin.Int;
-    thenComparing(arg0: (param0: boolean, param1: boolean) => kotlin.Int): (param0: boolean, param1: boolean) => kotlin.Int;
-    thenComparing(arg0: (param0: boolean) => kotlin.Boolean): (param0: boolean) => kotlin.Boolean;
+    reversed(): (param0: boolean, param1: boolean) => number;
+    thenComparing(arg0: (param0: boolean, param1: boolean) => number): (param0: boolean, param1: boolean) => number;
+    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
 }

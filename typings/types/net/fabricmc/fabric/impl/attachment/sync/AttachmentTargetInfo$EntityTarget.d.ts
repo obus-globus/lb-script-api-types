@@ -10,7 +10,7 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
 import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.ts'
 export class AttachmentTargetInfo$EntityTarget extends Record implements AttachmentTargetInfo<Entity> {
     static MAX_SIZE_IN_BYTES: number;
-    static PACKET_CODEC: StreamCodec<ByteBuf, Object>;
+    static PACKET_CODEC: StreamCodec<ByteBuf, AttachmentTargetInfo<Object>>;
     // private networkId: number;
     appendDebugInformation(arg0: MutableComponent): void;
     equals(arg0: Object | null): boolean;

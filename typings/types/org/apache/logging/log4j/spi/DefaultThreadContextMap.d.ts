@@ -14,8 +14,8 @@ export class DefaultThreadContextMap extends Object implements ThreadContextMap,
     clear(): void;
     containsKey(key: string): boolean;
     equals(obj: Object | null): boolean;
-    forEach(action: (param0: string, param1: V) => void): void;
-    forEach<S extends Object | number | string | boolean>(action: TriConsumer<string, V, S>, state: S): void;
+    forEach<V extends Object | number | string | boolean>(action: (param0: string, param1: V) => void): void;
+    forEach<V extends Object | number | string | boolean, S extends Object | number | string | boolean>(action: TriConsumer<string, V, S>, state: S): void;
     get(key: string): string;
     getCopy(): { [key: string]: string };
     getImmutableMapOrNull(): { [key: string]: string };

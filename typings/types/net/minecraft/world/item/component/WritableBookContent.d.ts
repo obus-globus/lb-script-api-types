@@ -10,7 +10,7 @@ export class WritableBookContent extends Record implements BookContent<string, W
     static CODEC: Codec<WritableBookContent>;
     static EMPTY: WritableBookContent;
     static MAX_PAGES: number;
-    static PAGES_CODEC: Codec<Object>;
+    static PAGES_CODEC: Codec<Filterable<string>[]>;
     static PAGE_EDIT_LENGTH: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, WritableBookContent>;
     constructor(pages: Filterable<string>[])

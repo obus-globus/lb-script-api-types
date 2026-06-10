@@ -48,7 +48,7 @@ export class GuiRenderState extends Object implements FabricRenderState {
     reset(): void;
     setData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
-    sortElements(comparator: (param0: GuiElementRenderState) => kotlin.Boolean): void;
+    sortElements(comparator: (param0: Object) => boolean): void;
     // private traverse(consumer: (param0: GuiRenderState$Node) => void, range: GuiRenderState$TraverseRange): void;
     // private traverse(node: GuiRenderState$Node, consumer: (param0: GuiRenderState$Node) => void): void;
     up(): void;

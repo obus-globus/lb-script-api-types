@@ -7,6 +7,6 @@ import type { BlockState } from '../../../../net/minecraft/world/level/block/sta
 export class SlideDownBlockTrigger extends SimpleCriterionTrigger<SlideDownBlockTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<SlideDownBlockTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: SlideDownBlockTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: SlideDownBlockTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, state: BlockState): void;
 }

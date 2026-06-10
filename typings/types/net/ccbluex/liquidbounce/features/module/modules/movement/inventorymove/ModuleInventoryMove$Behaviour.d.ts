@@ -10,7 +10,7 @@ export class ModuleInventoryMove$Behaviour extends Enum<ModuleInventoryMove$Beha
     static STOP_ON_ACTION: ModuleInventoryMove$Behaviour;
     static UNDETECTABLE: ModuleInventoryMove$Behaviour;
     static getEntries(): ModuleInventoryMove$Behaviour[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleInventoryMove$Behaviour;

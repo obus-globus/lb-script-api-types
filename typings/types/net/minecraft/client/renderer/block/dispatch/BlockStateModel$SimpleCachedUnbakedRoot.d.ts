@@ -8,7 +8,7 @@ import type { ResolvableModel$Resolver } from '../../../../../../net/minecraft/c
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockStateModel$SimpleCachedUnbakedRoot extends Object implements BlockStateModel$UnbakedRoot {
     constructor(contents: BlockStateModel$Unbaked)
-    // private bakingKey: (param0: BlockStateModel) => unknown;
+    // private bakingKey: (param0: ModelBaker) => BlockStateModel;
     // private contents: BlockStateModel$Unbaked;
     bake(blockState: BlockState, modelBakery: ModelBaker): BlockStateModel;
     resolveDependencies(resolver: ResolvableModel$Resolver): void;

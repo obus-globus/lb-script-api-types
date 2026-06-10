@@ -30,7 +30,7 @@ export class ForkJoinPool extends AbstractExecutorService implements ScheduledEx
     private constructor(arg0: number)
     constructor(arg0: number)
     constructor(arg0: number, arg1: ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: (param0: Thread, param1: Throwable) => void, arg3: boolean)
-    constructor(arg0: number, arg1: ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: (param0: Thread, param1: Throwable) => void, arg3: boolean, arg4: number, arg5: number, arg6: number, arg7: (param0: ForkJoinPool) => kotlin.Boolean, arg8: number, arg9: TimeUnit)
+    constructor(arg0: number, arg1: ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: (param0: Thread, param1: Throwable) => void, arg3: boolean, arg4: number, arg5: number, arg6: number, arg7: (param0: ForkJoinPool) => boolean, arg8: number, arg9: TimeUnit)
     // private config: number;
     // private container: SharedThreadContainer;
     // private ctl: number;
@@ -41,7 +41,7 @@ export class ForkJoinPool extends AbstractExecutorService implements ScheduledEx
     // private poolName: string;
     // private queues: ForkJoinPool$WorkQueue[];
     // private runState: number;
-    // private saturate: (param0: ForkJoinPool) => kotlin.Boolean;
+    // private saturate: (param0: ForkJoinPool) => boolean;
     stealCount: number;
     // private termination: CountDownLatch;
     // private threadIds: number;
@@ -62,14 +62,14 @@ export class ForkJoinPool extends AbstractExecutorService implements ScheduledEx
     // private createWorker(): boolean;
     // private deactivate(arg0: ForkJoinPool$WorkQueue, arg1: number): number;
     deregisterWorker(arg0: ForkJoinWorkerThread, arg1: Throwable): void;
-    drainTasksTo(arg0: E[]): number;
+    drainTasksTo(arg0: ForkJoinTask<Object>[]): number;
     endCompensatedBlock(arg0: number): void;
     execute(arg0: () => void): void;
     execute(arg0: ForkJoinTask<Object>): void;
     executeEnabledScheduledTask(arg0: DelayScheduler$ScheduledForkJoinTask<Object>): void;
     // private externalHelpQuiesce(arg0: number, arg1: boolean): number;
     externalSubmissionQueue(arg0: boolean): ForkJoinPool$WorkQueue;
-    externalSubmit(arg0: ForkJoinTask<T>): ForkJoinTask<T>;
+    externalSubmit<T extends Object | number | string | boolean>(arg0: ForkJoinTask<T>): ForkJoinTask<T>;
     getActiveThreadCount(): number;
     // private getAndAddCtl(arg0: number): number;
     // private getAndBitwiseOrRunState(arg0: number): number;
@@ -92,33 +92,33 @@ export class ForkJoinPool extends AbstractExecutorService implements ScheduledEx
     // private incrementThreadIds(): number;
     // private interruptAll(): void;
     invoke<T extends Object | number | string | boolean>(arg0: ForkJoinTask<T>): T;
-    invokeAll(arg0: E[]): Future<T>[];
-    // private invokeAll(arg0: E[], arg1: number): Future<T>[];
-    invokeAll(arg0: E[], arg1: number, arg2: TimeUnit): Future<T>[];
-    invokeAllUninterruptibly(arg0: E[]): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(arg0: E[]): T;
-    invokeAny<T extends Object | number | string | boolean>(arg0: E[], arg1: number, arg2: TimeUnit): T;
+    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[]): Future<T>[];
+    // private invokeAll<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number): Future<T>[];
+    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): Future<T>[];
+    invokeAllUninterruptibly<T extends Object | number | string | boolean>(arg0: () => T[]): Future<T>[];
+    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[]): T;
+    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): T;
     isQuiescent(): boolean;
     isShutdown(): boolean;
     isTerminated(): boolean;
     isTerminating(): boolean;
-    lazySubmit(arg0: ForkJoinTask<T>): ForkJoinTask<T>;
+    lazySubmit<T extends Object | number | string | boolean>(arg0: ForkJoinTask<T>): ForkJoinTask<T>;
     // private lockRunState(): number;
     newTaskFor<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): RunnableFuture<T>;
-    newTaskFor(arg0: () => T): RunnableFuture<T>;
+    newTaskFor<T extends Object | number | string | boolean>(arg0: () => T): RunnableFuture<T>;
     nextTaskFor(arg0: ForkJoinPool$WorkQueue): ForkJoinTask<Object>;
     nextWorkerThreadName(): string;
     // private pollScan(arg0: boolean): ForkJoinTask<Object>;
     pollSubmission(): ForkJoinTask<Object>;
-    // private poolSubmit(arg0: boolean, arg1: ForkJoinTask<T>): ForkJoinTask<T>;
+    // private poolSubmit<T extends Object | number | string | boolean>(arg0: boolean, arg1: ForkJoinTask<T>): ForkJoinTask<T>;
     // private quiescent(): number;
     registerWorker(arg0: ForkJoinPool$WorkQueue): void;
     // private releaseWaiters(): void;
     runWorker(arg0: ForkJoinPool$WorkQueue): void;
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ScheduledFuture<Object>;
-    schedule(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
+    schedule<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
-    scheduleDelayedTask(arg0: DelayScheduler$ScheduledForkJoinTask<T>): DelayScheduler$ScheduledForkJoinTask<T>;
+    scheduleDelayedTask<T extends Object | number | string | boolean>(arg0: DelayScheduler$ScheduledForkJoinTask<T>): DelayScheduler$ScheduledForkJoinTask<T>;
     scheduleWithFixedDelay(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
     setParallelism(arg0: number): number;
     shutdown(): void;
@@ -130,9 +130,9 @@ export class ForkJoinPool extends AbstractExecutorService implements ScheduledEx
     // private submissionQueue(arg0: number, arg1: boolean): ForkJoinPool$WorkQueue;
     submit(arg0: () => void): ForkJoinTask<Object>;
     submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): ForkJoinTask<T>;
-    submit(arg0: () => T): ForkJoinTask<T>;
-    submit(arg0: ForkJoinTask<T>): ForkJoinTask<T>;
-    submitWithTimeout(arg0: () => V, arg1: number, arg2: TimeUnit, arg3: (param0: ForkJoinTask<V>) => void): ForkJoinTask<V>;
+    submit<T extends Object | number | string | boolean>(arg0: () => T): ForkJoinTask<T>;
+    submit<T extends Object | number | string | boolean>(arg0: ForkJoinTask<T>): ForkJoinTask<T>;
+    submitWithTimeout<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit, arg3: (param0: ForkJoinTask<V>) => void): ForkJoinTask<V>;
     // private terminationSignal(): CountDownLatch;
     toString(): string;
     // private tryCompensate(arg0: number): number;

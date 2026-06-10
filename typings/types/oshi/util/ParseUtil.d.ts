@@ -26,7 +26,7 @@ export class ParseUtil extends Object {
     static getStringBetween(paramarg0: string, paramarg1: string): string;
     static getStringValueOrUnknown(paramarg0: string): string;
     static getTextBetweenStrings(paramarg0: string, paramarg1: string, paramarg2: string): string;
-    static getValueOrUnknown(paramarg0: Map<Object | null, string>, paramarg1: Object): string;
+    static getValueOrUnknown(paramarg0: Map<Object, string>, paramarg1: Object): string;
     static getValueOrUnknown(paramarg0: { [key: string]: string }, paramarg1: string): string;
     static hexStringToByteArray(paramarg0: string): number[];
     static hexStringToInt(paramarg0: string, paramarg1: number): number;

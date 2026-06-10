@@ -16,9 +16,9 @@ export class ArmorItemSlot extends Enum<ArmorItemSlot> implements ItemSlot {
     static FEET: ArmorItemSlot;
     static HEAD: ArmorItemSlot;
     static LEGS: ArmorItemSlot;
-    static PREFER_FEWER_ITEM: (param0: Object | null) => kotlin.Boolean;
-    static PREFER_MORE_ITEM: (param0: Object | null) => kotlin.Boolean;
-    static PREFER_NEARBY: (param0: ItemSlot) => kotlin.Boolean;
+    static PREFER_FEWER_ITEM: (param0: Object) => boolean;
+    static PREFER_MORE_ITEM: (param0: Object) => boolean;
+    static PREFER_NEARBY: (param0: Object) => boolean;
     static getEntries(): ArmorItemSlot[];
     static of(paramarg0: EquipmentSlot): ArmorItemSlot;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

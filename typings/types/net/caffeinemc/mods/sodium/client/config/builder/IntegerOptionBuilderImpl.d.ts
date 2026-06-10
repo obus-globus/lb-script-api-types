@@ -20,12 +20,12 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 export class IntegerOptionBuilderImpl extends StatefulOptionBuilderImpl<IntegerOption, number> implements IntegerOptionBuilder, IntegerOptionBuilderImplAccessor {
     constructor(arg0: Identifier)
     // private validatorProvider: DependentValue<SteppedValidator>;
-    // private valueFormatter: (param0: number) => net.minecraft.network.chat.Component;
+    // private valueFormatter: (param0: number) => Component;
     build(): IntegerOption;
-    getDependencies(): E[];
+    getDependencies(): Identifier[];
     getOptionClass(): Class<IntegerOption>;
     getValidatorProvider(): DependentValue<SteppedValidator>;
-    getValueFormatter(): (param0: number) => net.minecraft.network.chat.Component;
+    getValueFormatter(): (param0: number) => Component;
     setApplyHook(arg0: (param0: ConfigState) => void): IntegerOptionBuilder;
     setBinding(arg0: (param0: number) => void, arg1: () => number): IntegerOptionBuilder;
     setBinding(arg0: OptionBinding<number>): IntegerOptionBuilder;
@@ -46,6 +46,6 @@ export class IntegerOptionBuilderImpl extends StatefulOptionBuilderImpl<IntegerO
     setTooltip(arg0: Component): IntegerOptionBuilder;
     setValidator(arg0: SteppedValidator): IntegerOptionBuilder;
     setValidatorProvider(arg0: (param0: ConfigState) => SteppedValidator, arg1: Identifier[]): IntegerOptionBuilder;
-    setValueFormatter(arg0: (param0: number) => net.minecraft.network.chat.Component): IntegerOptionBuilder;
+    setValueFormatter(arg0: (param0: number) => Component): IntegerOptionBuilder;
     validateData(): void;
 }

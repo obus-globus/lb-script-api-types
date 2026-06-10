@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { LootPoolEntry } from '../../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntry.d.ts'
 export interface ComposableEntryContainer extends Object {
-    and(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    and(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     expand(context: LootContext, output: (param0: LootPoolEntry) => void): boolean;
-    or(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    or(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
 }

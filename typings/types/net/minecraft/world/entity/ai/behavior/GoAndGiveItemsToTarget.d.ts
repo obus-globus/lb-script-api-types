@@ -1,6 +1,6 @@
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Behavior } from '../../../../../../net/minecraft/world/entity/ai/behavior/Behavior.d.ts'
@@ -11,8 +11,8 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class GoAndGiveItemsToTarget<E extends LivingEntity & InventoryCarrier> extends Behavior<E> {
     static DEFAULT_DURATION: number;
-    constructor(targetPositionGetter: (param0: LivingEntity) => Optional<PositionTracker>, speedModifier: number, timeoutDuration: number, itemThrower: (param0: E, param1: ServerLevel, param2: Object | null, param3: ItemStack) => void)
-    // private itemThrower: (param0: E, param1: ServerLevel, param2: Object | null, param3: ItemStack) => void;
+    constructor(targetPositionGetter: (param0: LivingEntity) => Optional<PositionTracker>, speedModifier: number, timeoutDuration: number, itemThrower: (param0: ServerLevel, param1: E, param2: ItemStack, param3: BlockPos) => void)
+    // private itemThrower: (param0: ServerLevel, param1: E, param2: ItemStack, param3: BlockPos) => void;
     // private speedModifier: number;
     // private targetPositionGetter: (param0: LivingEntity) => Optional<PositionTracker>;
     // private throwVelocity: Vec3;

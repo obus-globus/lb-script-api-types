@@ -11,11 +11,11 @@ import type { DensityFunctions$Spline$Point } from '../../../../../net/minecraft
 export class DensityFunctions$Spline$Coordinate extends Record implements BoundedFloatFunction<DensityFunctions$Spline$Point> {
     static CODEC: Codec<DensityFunctions$Spline$Coordinate>;
     static IDENTITY: BoundedFloatFunction<number>;
-    static createUnlimited(paramfunction: (param0: number) => kotlin.Float): BoundedFloatFunction<number>;
+    static createUnlimited(paramfunction: (param0: number) => number): BoundedFloatFunction<number>;
     constructor(function_: Holder<DensityFunction>)
     // private function: Holder<DensityFunction>;
     apply(point: DensityFunctions$Spline$Point): number;
-    comap(function_: (param0: C2) => C): BoundedFloatFunction<C2>;
+    comap<C2 extends Object | number | string | boolean>(function_: (param0: C2) => DensityFunctions$Spline$Point): BoundedFloatFunction<C2>;
     equals(o: Object | null): boolean;
     function(): Holder<DensityFunction>;
     hashCode(): number;

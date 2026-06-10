@@ -7,7 +7,7 @@ import type { DisplayContentsFactory } from '../../../../../../net/minecraft/wor
 import type { SlotDisplay$Type } from '../../../../../../net/minecraft/world/item/crafting/display/SlotDisplay$Type.d.ts'
 export interface SlotDisplay extends Object{
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    resolve(context: ContextMap, builder: DisplayContentsFactory<T>): Stream<T>;
+    resolve<T extends Object | number | string | boolean>(context: ContextMap, builder: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];
     type(): SlotDisplay$Type<SlotDisplay>;

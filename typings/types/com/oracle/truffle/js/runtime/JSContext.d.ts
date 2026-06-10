@@ -102,7 +102,7 @@ export class JSContext extends Object {
     readonly globalScopeShape: Shape;
     readonly importMetaInitializer: ImportMetaInitializer;
     // private importMetaInitializerNotUsedAssumption: Assumption;
-    readonly importModuleDynamicallyCallback: (param0: JSRealm, param1: ScriptOrModule, param2: Module$ModuleRequest) => com.oracle.truffle.js.runtime.objects.JSDynamicObject;
+    readonly importModuleDynamicallyCallback: (param0: JSRealm, param1: ScriptOrModule, param2: Module$ModuleRequest) => JSDynamicObject;
     // private importModuleDynamicallyCallbackNotUsedAssumption: Assumption;
     // private inObjectPrototypeData: JSPrototypeData;
     readonly interopArrayBufferFactory: JSObjectFactory;
@@ -404,7 +404,7 @@ export class JSContext extends Object {
     setAllocationReporter(env: TruffleLanguage$Env): void;
     setEmbedderData(embedderData: Object): void;
     setImportMetaInitializer(importMetaInitializer: ImportMetaInitializer): void;
-    setImportModuleDynamicallyCallback(callback: (param0: JSRealm, param1: ScriptOrModule, param2: Module$ModuleRequest) => com.oracle.truffle.js.runtime.objects.JSDynamicObject): void;
+    setImportModuleDynamicallyCallback(callback: (param0: JSRealm, param1: ScriptOrModule, param2: Module$ModuleRequest) => JSDynamicObject): void;
     setPrepareStackTraceCallback(callback: PrepareStackTraceCallback): void;
     setPromiseHook(promiseHook: PromiseHook): void;
     setPromiseRejectionTracker(agent: JSAgent, tracker: PromiseRejectionTracker): void;

@@ -3,5 +3,5 @@ import type { ProxyCollectionWriter } from '../../../../../org/apache/commons/io
 export class TeeWriter extends ProxyCollectionWriter {
     static nullWriter(): Writer;
     constructor(arg0: Writer[])
-    constructor(arg0: E[])
+    constructor(arg0: Writer[])
 }

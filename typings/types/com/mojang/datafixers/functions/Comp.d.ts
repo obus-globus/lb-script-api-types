@@ -13,7 +13,7 @@ export class Comp<A extends Object | number | string | boolean, B extends Object
     // private type: Type<(param0: A) => B>;
     all(arg0: PointFreeRule): Optional<PointFree<(param0: A) => B>>;
     equals(arg0: Object | null): boolean;
-    eval(): (param0: DynamicOps<Object>) => (param0: A) => B;
+    eval(): (param0: DynamicOps<Object>) => Function<A, B>;
     hashCode(): number;
     one(arg0: PointFreeRule): Optional<PointFree<(param0: A) => B>>;
     toString(): string;

@@ -9,7 +9,7 @@ export class ModuleAutoBuff$Rotations$RotationTimingMode extends Enum<ModuleAuto
     static ON_TICK: ModuleAutoBuff$Rotations$RotationTimingMode;
     static ON_USE: ModuleAutoBuff$Rotations$RotationTimingMode;
     static getEntries(): ModuleAutoBuff$Rotations$RotationTimingMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoBuff$Rotations$RotationTimingMode;

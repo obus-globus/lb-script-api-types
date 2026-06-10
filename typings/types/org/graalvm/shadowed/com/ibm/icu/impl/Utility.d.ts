@@ -1,3 +1,4 @@
+import type { Appendable } from '../../../../../../../java/lang/Appendable.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -11,8 +12,8 @@ export class Utility extends Object {
     static RLEStringToIntArray(params: string): number[];
     static RLEStringToShortArray(params: string): number[];
     static addExact(paramx: number, paramy: number): number;
-    static appendNumber(paramresult: Object | null, paramn: number, paramradix: number, paramminDigits: number): Object | null;
-    static appendTo(paramstring: CharSequence, paramappendable: Object | null): Object | null;
+    static appendNumber(paramresult: Appendable | null, paramn: number, paramradix: number, paramminDigits: number): Appendable | null;
+    static appendTo(paramstring: CharSequence, paramappendable: Appendable | null): Appendable | null;
     static appendToRule(paramrule: StringBuffer, paramc: number, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
     static appendToRule(paramrule: StringBuffer, paramtext: string, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
     static appendToRule(paramrule: StringBuffer, parammatcher: UnicodeMatcher, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
@@ -36,22 +37,22 @@ export class Utility extends Object {
     static checkHash(parama: Object): number;
     static compareUnsigned(paramsource: number, paramtarget: number): number;
     static cpFromCodePointAndLength(paramcpAndLength: number): number;
-    static escape(paramresult: Object | null, paramc: number): Object | null;
+    static escape(paramresult: Appendable | null, paramc: number): Appendable | null;
     static escape(params: string): string;
-    static escapeUnprintable(paramresult: Object | null, paramc: number): boolean;
+    static escapeUnprintable(paramresult: Appendable | null, paramc: number): boolean;
     static format1ForSource(params: string): string;
     static formatForSource(params: string): string;
     static fromHex(paramstring: string, paramminLength: number, paramseparator: string): string;
     static fromHex(paramstring: string, paramminLength: number, paramseparator: Pattern): string;
-    static hex(params: Object | null, paramwidth: number, paramseparator: Object | null, paramuseCodePoints: boolean, paramresult: Object | null): Object | null;
-    static hex(params: Object | null, paramwidth: number, paramseparator: Object | null): string;
+    static hex(params: CharSequence | null, paramwidth: number, paramseparator: CharSequence | null, paramuseCodePoints: boolean, paramresult: Appendable | null): Appendable | null;
+    static hex(params: CharSequence | null, paramwidth: number, paramseparator: CharSequence | null): string;
     static hex(paramo: number[], paramstart: number, paramend: number, paramseparator: string): string;
     static hex(params: CharSequence): string;
     static hex(paramch: number): string;
     static hex(parami: number, paramplaces: number): string;
     static highBit(paramn: number): number;
     static isUnprintable(paramc: number): boolean;
-    static joinStrings(paramdelimiter: CharSequence, paramelements: (Object | null)[]): string;
+    static joinStrings(paramdelimiter: CharSequence, paramelements: CharSequence[]): string;
     static lengthFromCodePointAndLength(paramcpAndLength: number): number;
     static lookup(paramsource: string, paramtarget: (Object | null)[]): number;
     static parseChar(paramid: string, parampos: number[], paramch: string): boolean;

@@ -54,7 +54,7 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     // private addSealingInfo(arg0: number, arg1: StringBuilder): void;
     // private annotationData(): Class$AnnotationData;
     arrayType(): Class<Object>;
-    asSubclass(arg0: Class<U>): Class<U>;
+    asSubclass<U extends Object | number | string | boolean>(arg0: Class<U>): Class<U>;
     // private cannotCastMsg(arg0: Object): string;
     casAnnotationType(arg0: AnnotationType, arg1: AnnotationType): boolean;
     cast(arg0: Object): T;
@@ -71,7 +71,7 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotationType(): AnnotationType;
     getAnnotations(): Annotation[];
-    getAnnotationsByType(arg0: Class<A>): A[];
+    getAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
     getAnnotationsByType(arg0: Class<T>): T[];
     getCanonicalName(): string;
     // private getCanonicalName0(): string;
@@ -92,7 +92,7 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     getDeclaredAnnotation(arg0: Class<T>): T;
     getDeclaredAnnotationMap(): Map<Class<Annotation>, Annotation>;
     getDeclaredAnnotations(): Annotation[];
-    getDeclaredAnnotationsByType(arg0: Class<A>): A[];
+    getDeclaredAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
     getDeclaredAnnotationsByType(arg0: Class<T>): T[];
     getDeclaredClasses(): Class<Object>[];
     // private getDeclaredClasses0(): Class<Object>[];

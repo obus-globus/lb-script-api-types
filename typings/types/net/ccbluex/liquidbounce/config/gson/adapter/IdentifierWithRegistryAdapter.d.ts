@@ -5,14 +5,16 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { IdentifierWithRegistryAdapter$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/gson/adapter/IdentifierWithRegistryAdapter$Companion.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { MobEffect } from '../../../../../../net/minecraft/world/effect/MobEffect.d.ts'
+import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
+import type { MenuType } from '../../../../../../net/minecraft/world/inventory/MenuType.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class IdentifierWithRegistryAdapter<T extends Object | number | string | boolean> extends TypeAdapter<T> {
     static BLOCK: IdentifierWithRegistryAdapter<Block>;
     static Companion: IdentifierWithRegistryAdapter$Companion;
-    static ENTITY_TYPE: IdentifierWithRegistryAdapter<Object>;
+    static ENTITY_TYPE: IdentifierWithRegistryAdapter<EntityType<Object>>;
     static ITEM: IdentifierWithRegistryAdapter<Item>;
-    static SCREEN_HANDLER: IdentifierWithRegistryAdapter<Object>;
+    static SCREEN_HANDLER: IdentifierWithRegistryAdapter<MenuType<Object>>;
     static SOUND_EVENT: IdentifierWithRegistryAdapter<SoundEvent>;
     static STATUS_EFFECT: IdentifierWithRegistryAdapter<MobEffect>;
     constructor(registry: T[])

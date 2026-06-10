@@ -7,14 +7,14 @@ export class AtomicDouble extends Number {
     constructor()
     constructor(initialValue: number)
     // private value: number;
-    accumulateAndGet(x: number, accumulatorFunction: (param0: number, param1: number) => kotlin.Double): number;
+    accumulateAndGet(x: number, accumulatorFunction: (param0: number, param1: number) => number): number;
     addAndGet(delta: number): number;
     compareAndSet(expect: number, update: number): boolean;
     get(): number;
-    getAndAccumulate(x: number, accumulatorFunction: (param0: number, param1: number) => kotlin.Double): number;
+    getAndAccumulate(x: number, accumulatorFunction: (param0: number, param1: number) => number): number;
     getAndAdd(delta: number): number;
     getAndSet(newValue: number): number;
-    getAndUpdate(updateFunction: (param0: number) => kotlin.Double): number;
+    getAndUpdate(updateFunction: (param0: number) => number): number;
     lazySet(newValue: number): void;
     // private readObject(s: ObjectInputStream): void;
     set(newValue: number): void;
@@ -23,7 +23,7 @@ export class AtomicDouble extends Number {
     toInt(): number;
     toLong(): number;
     toString(): string;
-    updateAndGet(updateFunction: (param0: number) => kotlin.Double): number;
+    updateAndGet(updateFunction: (param0: number) => number): number;
     weakCompareAndSet(expect: number, update: number): boolean;
     // private writeObject(s: ObjectOutputStream): void;
 }

@@ -2,7 +2,7 @@ import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class FileUtil extends Object {
     static createDirectoriesSafe(paramdir: Path[][]): void;
-    static decomposePath(parampath: string): DataResult<Object>;
+    static decomposePath(parampath: string): DataResult<string[]>;
     static findAvailableName(parambaseDir: Path[][], parambaseName: string, paramsuffix: string): string;
     static getFullResourcePath(paramfilename: string): string;
     static isPathPartPortable(paramname: string): boolean;

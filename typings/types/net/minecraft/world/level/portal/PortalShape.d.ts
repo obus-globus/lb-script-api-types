@@ -17,7 +17,7 @@ export class PortalShape extends Object {
     static findAnyShape(paramlevel: BlockGetter, parampos: BlockPos, paramaxis: Direction$Axis): PortalShape;
     static findCollisionFreePosition(parambottomCenter: Vec3, paramserverLevel: ServerLevel, paramentity: Entity, paramdimensions: EntityDimensions): Vec3;
     static findEmptyPortalShape(paramlevel: LevelAccessor, parampos: BlockPos, parampreferredAxis: Direction$Axis): Optional<PortalShape>;
-    static findPortalShape(paramlevel: LevelAccessor, parampos: BlockPos, paramisValid: (param0: PortalShape) => kotlin.Boolean, parampreferredAxis: Direction$Axis): Optional<PortalShape>;
+    static findPortalShape(paramlevel: LevelAccessor, parampos: BlockPos, paramisValid: (param0: PortalShape) => boolean, parampreferredAxis: Direction$Axis): Optional<PortalShape>;
     static getRelativePosition(paramlargestRectangleAround: BlockUtil$FoundRectangle, paramaxis: Direction$Axis, paramposition: Vec3, paramdimensions: EntityDimensions): Vec3;
     private constructor(axis: Direction$Axis, portalBlockCount: number, rightDir: Direction, bottomLeft: BlockPos, width: number, height: number)
     // private axis: Direction$Axis;

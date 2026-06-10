@@ -47,5 +47,5 @@ export class Criteria$Builder<I extends Object | number | string | boolean, O ex
     optProgress(arg0: Progress): Criteria$Builder<I, O>;
     optTranslator(arg0: Translator<I, O>): Criteria$Builder<I, O>;
     optTranslatorFactory(arg0: TranslatorFactory): Criteria$Builder<I, O>;
-    setTypes(arg0: Class<P>, arg1: Class<Q>): Criteria$Builder<P, Q>;
+    setTypes<P extends Object | number | string | boolean, Q extends Object | number | string | boolean>(arg0: Class<P>, arg1: Class<Q>): Criteria$Builder<P, Q>;
 }

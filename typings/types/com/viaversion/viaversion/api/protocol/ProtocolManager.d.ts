@@ -21,7 +21,7 @@ export interface ProtocolManager extends Object {
     checkForMappingCompletion(): boolean;
     checkForMappingCompletion(arg0: boolean): boolean;
     completeMappingDataLoading(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): void;
-    createPacketTransformer(arg0: ProtocolVersion, arg1: Class<C>, arg2: Class<S>): VersionedPacketTransformer<C, S>;
+    createPacketTransformer<C extends ClientboundPacketType, S extends ServerboundPacketType>(arg0: ProtocolVersion, arg1: Class<C>, arg2: Class<S>): VersionedPacketTransformer<C, S>;
     createPacketWrapper(arg0: PacketType, arg1: ByteBuf, arg2: UserConnection): PacketWrapper;
     createPacketWrapper(arg0: number, arg1: ByteBuf, arg2: UserConnection): PacketWrapper;
     getBaseProtocol(): Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>;
@@ -33,7 +33,7 @@ export interface ProtocolManager extends Object {
     getProtocol<T extends Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>(arg0: Class<T>): T;
     getProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
     getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
-    getProtocols(): E[];
+    getProtocols(): Protocol<Object, Object, Object, Object>[];
     getServerProtocolVersion(): ServerProtocolVersion;
     getSupportedVersions(): ProtocolVersion[];
     hasLoadedMappings(): boolean;

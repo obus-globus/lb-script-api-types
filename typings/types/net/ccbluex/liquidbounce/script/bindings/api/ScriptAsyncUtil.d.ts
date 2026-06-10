@@ -26,7 +26,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:151}
      */
-    conditional(ticks: number, breakLoop: () => kotlin.Boolean): Value;
+    conditional(ticks: number, breakLoop: () => boolean): Value;
     /**
      * Starts an async task on {@link executor}, returns a `Promise`.
      * JS `Promise` result will be resolved or rejected on Render thread.
@@ -36,8 +36,8 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:185}
      */
-    launch(executor: Executor, block: () => T): Value;
-    launch(block: () => T): Value;
+    launch<T extends Object | number | string | boolean>(executor: Executor, block: () => T): Value;
+    launch<T extends Object | number | string | boolean>(block: () => T): Value;
     /**
      * Sends an HTTP request or websocket request asynchronously. (based on {@link okhttp3})
      * JS `Promise` result will be resolved or rejected on Render thread.
@@ -64,5 +64,5 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:121}
      */
-    until(condition: () => kotlin.Boolean): Value;
+    until(condition: () => boolean): Value;
 }

@@ -8,8 +8,8 @@ export class StandardTable$CellIterator extends Object implements Iterator<Table
     // private columnIterator: Iterator<Map$Entry<C, V>>;
     // private rowEntry: Map$Entry<R, Map<C, V>>;
     // private rowIterator: Iterator<Map$Entry<R, Map<C, V>>>;
-    forEachRemaining(arg0: (param0: T) => void): void;
+    forEachRemaining<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Table$Cell<R, C, V>) => void): void;
     hasNext(): boolean;
-    next(): Table$Cell<R, C, V>;
+    next<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Table$Cell<R, C, V>;
     remove(): void;
 }

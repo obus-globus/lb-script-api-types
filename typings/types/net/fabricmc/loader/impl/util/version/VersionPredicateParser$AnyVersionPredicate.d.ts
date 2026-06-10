@@ -4,7 +4,7 @@ import type { VersionInterval } from '../../../../../../net/fabricmc/loader/api/
 import type { VersionPredicate } from '../../../../../../net/fabricmc/loader/api/metadata/version/VersionPredicate.d.ts'
 import type { VersionPredicate$PredicateTerm } from '../../../../../../net/fabricmc/loader/api/metadata/version/VersionPredicate$PredicateTerm.d.ts'
 export class VersionPredicateParser$AnyVersionPredicate extends Object implements VersionPredicate {
-    static parse(paramarg0: E[]): E[];
+    static parse(paramarg0: string[]): VersionPredicate[];
     static parse(paramarg0: string): VersionPredicate;
     private constructor()
     getInterval(): VersionInterval;

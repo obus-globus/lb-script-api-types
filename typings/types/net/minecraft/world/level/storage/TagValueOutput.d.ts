@@ -22,7 +22,7 @@ export class TagValueOutput extends Object implements FabricValueOutput, ValueOu
     childrenList(name: string): ValueOutput$ValueOutputList;
     discard(name: string): void;
     isEmpty(): boolean;
-    list(name: string, codec: Codec<T>): ValueOutput$TypedOutputList<T>;
+    list<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): ValueOutput$TypedOutputList<T>;
     putBoolean(name: string, value: boolean): void;
     putByte(name: string, value: number): void;
     putByteArray(arg0: string, arg1: number[]): void;

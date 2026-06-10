@@ -5,6 +5,6 @@ import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/im
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export interface ClassDescriptorFactory extends Object{
     createClass(arg0: ClassId): ClassDescriptor;
-    getAllContributedClassesIfPossible(arg0: FqName): E[];
+    getAllContributedClassesIfPossible(arg0: FqName): ClassDescriptor[];
     shouldCreateClass(arg0: FqName, arg1: Name): boolean;
 }

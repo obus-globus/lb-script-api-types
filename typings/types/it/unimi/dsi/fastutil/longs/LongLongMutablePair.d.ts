@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongLongMutablePair extends Object implements LongLongPair, Serializable {
-    static lexComparator(): (param0: LongLongPair) => kotlin.Boolean;
+    static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: number): LongLongMutablePair;
     static of(paramarg0: number, paramarg1: number): LongLongPair;
     constructor(arg0: number, arg1: number)

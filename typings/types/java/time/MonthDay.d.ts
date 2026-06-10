@@ -42,7 +42,7 @@ export class MonthDay extends Object implements Serializable, TemporalAccessor, 
     isBefore(arg0: MonthDay): boolean;
     isSupported(arg0: TemporalField): boolean;
     isValidYear(arg0: number): boolean;
-    query<R extends Object | number | string | boolean>(arg0: (param0: R) => unknown): R;
+    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toString(): string;

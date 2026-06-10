@@ -16,9 +16,9 @@ export class LocalCache$EntryFactory extends Enum<LocalCache$EntryFactory> {
     static valueOf(paramname: string): LocalCache$EntryFactory;
     static values(): (Object | null)[];
     private constructor()
-    copyAccessEntry(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
-    copyEntry<K extends Object | number | string | boolean>(segment: LocalCache$Segment<K, V>, original: ReferenceEntry<K, V>, newNext: ReferenceEntry<K, V>, key: K): ReferenceEntry<K, V>;
-    copyWriteEntry(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
-    newEntry<K extends Object | number | string | boolean>(segment: LocalCache$Segment<K, V>, key: K, hash: number, next: ReferenceEntry<K, V>): ReferenceEntry<K, V>;
+    copyAccessEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
+    copyEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(segment: LocalCache$Segment<K, V>, original: ReferenceEntry<K, V>, newNext: ReferenceEntry<K, V>, key: K): ReferenceEntry<K, V>;
+    copyWriteEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
+    newEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(segment: LocalCache$Segment<K, V>, key: K, hash: number, next: ReferenceEntry<K, V>): ReferenceEntry<K, V>;
     name(): "STRONG" | "STRONG_ACCESS" | "STRONG_WRITE" | "STRONG_ACCESS_WRITE" | "WEAK" | "WEAK_ACCESS" | "WEAK_WRITE" | "WEAK_ACCESS_WRITE";
 }

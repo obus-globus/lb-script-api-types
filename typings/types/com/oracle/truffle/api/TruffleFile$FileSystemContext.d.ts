@@ -5,6 +5,6 @@ export class TruffleFile$FileSystemContext extends Object {
     constructor(engineFileSystemContext: Object, fileSystem: FileSystem)
     // private engineObject: Object;
     // private fileSystem: FileSystem;
-    // private fileTypeDetectors: { [key: string]: E[] };
+    // private fileTypeDetectors: { [key: string]: TruffleFile$FileTypeDetector[] };
     getFileTypeDetectors(mimeTypes: string[]): TruffleFile$FileTypeDetector[];
 }

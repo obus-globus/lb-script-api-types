@@ -709,7 +709,7 @@ export class SoundEvents extends Object {
     static GOAT_DEATH: SoundEvent;
     static GOAT_EAT: SoundEvent;
     static GOAT_HORN_BREAK: SoundEvent;
-    static GOAT_HORN_SOUND_VARIANTS: (Object | null)[];
+    static GOAT_HORN_SOUND_VARIANTS: Holder$Reference<SoundEvent>[];
     static GOAT_HORN_VARIANT_COUNT: number;
     static GOAT_HURT: SoundEvent;
     static GOAT_LONG_JUMP: SoundEvent;

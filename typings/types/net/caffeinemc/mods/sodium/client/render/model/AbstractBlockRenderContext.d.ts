@@ -36,7 +36,7 @@ export abstract class AbstractBlockRenderContext extends AbstractRenderContext {
     // private slice: LevelSlice;
     // private state: BlockState;
     // private useAmbientOcclusion: boolean;
-    bufferDefaultModel(arg0: BlockStateModelPart, arg1: (param0: Direction) => kotlin.Boolean, arg2: (param0: MutableQuadViewImpl) => void): void;
+    bufferDefaultModel(arg0: BlockStateModelPart, arg1: (param0: Direction) => boolean, arg2: (param0: MutableQuadViewImpl) => void): void;
     getForEmitting(): MutableQuadViewImpl;
     isFaceCulled(arg0: Direction): boolean;
     prepareAoInfo(arg0: boolean): void;

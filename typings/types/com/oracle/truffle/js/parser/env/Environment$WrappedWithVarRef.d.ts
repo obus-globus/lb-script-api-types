@@ -10,7 +10,7 @@ export class Environment$WrappedWithVarRef extends Environment$WrappedVarRef {
     constructor(null_: Environment$WrappedWithVarRef, name: Object, wrappee: Environment$VarRef, withObjVarRef: Environment$VarRef)
     // private withObjVarRef: Environment$VarRef;
     createAccessWrapperNode(delegateNode: JavaScriptNode, withAccessNode: JSTargetableNode): JavaScriptNode;
-    createCompoundAssignNode(): Pair<() => JavaScriptNode, (param0: JavaScriptNode) => unknown>;
+    createCompoundAssignNode(): Pair<() => JavaScriptNode, (param0: JavaScriptNode) => Object | null>;
     createWriteNode(rhs: JavaScriptNode): JavaScriptNode;
     withRequired(required: boolean): Environment$VarRef;
     withTDZCheck(): Environment$VarRef;

@@ -11,7 +11,7 @@ export class SupportBlockRenderer extends Object implements DebugRenderer$Simple
     // private lastUpdateTime: number;
     // private minecraft: Minecraft;
     // private surroundEntities: Entity[];
-    // private drawHighlights(entity: Entity, biasGetter: () => kotlin.Double, color: number): void;
+    // private drawHighlights(entity: Entity, biasGetter: () => number, color: number): void;
     emitGizmos(camX: number, camY: number, camZ: number, debugValues: DebugValueAccess, frustum: Frustum, partialTicks: number): void;
     // private getBias(entity: Entity): number;
     // private highlightPosition(pos: BlockPos, offset: number, color: number): void;

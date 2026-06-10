@@ -8,8 +8,8 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsJSClassNode extends JSUnaryNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramclazz: JSClass): IsJSClassNode;
     static create(paramclazz: JSClass, paramoperand: JavaScriptNode): IsJSClassNode;
     static findBlockScopeNode(paramnode: Node): Node;

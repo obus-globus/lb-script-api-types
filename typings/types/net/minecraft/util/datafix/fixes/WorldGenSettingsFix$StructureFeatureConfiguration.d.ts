@@ -8,5 +8,5 @@ export class WorldGenSettingsFix$StructureFeatureConfiguration extends Object {
     // private salt: number;
     // private separation: number;
     // private spacing: number;
-    serialize(ops: DynamicOps<T>): Dynamic<T>;
+    serialize<T extends Object | number | string | boolean>(ops: DynamicOps<T>): Dynamic<T>;
 }

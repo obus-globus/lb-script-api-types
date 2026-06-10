@@ -1,4 +1,5 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
+import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
@@ -8,10 +9,11 @@ import type { JSToPropertyKeyNode } from '../../../../../../com/oracle/truffle/j
 import type { ToArrayIndexNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/ToArrayIndexNode.d.ts'
 import type { DeletePropertyNode } from '../../../../../../com/oracle/truffle/js/nodes/control/DeletePropertyNode.d.ts'
 import type { DeletePropertyNodeGen$JSObjectData } from '../../../../../../com/oracle/truffle/js/nodes/control/DeletePropertyNodeGen$JSObjectData.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DeletePropertyNodeGen extends DeletePropertyNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramstrict: boolean): DeletePropertyNode;
     static create(paramobject: JavaScriptNode, paramproperty: JavaScriptNode, paramstrict: boolean): DeletePropertyNode;
     static create(paramstrict: boolean, paramtargetNode: JavaScriptNode, parampropertyNode: JavaScriptNode): DeletePropertyNode;

@@ -14,15 +14,15 @@ import type { TextFilter } from '../../../../net/minecraft/server/network/TextFi
 export class LegacyTextFilter extends ServerTextFilter {
     static createFromConfig(paramconfig: DedicatedServerProperties): ServerTextFilter;
     static createTextFilterFromConfig(paramconfig: string): ServerTextFilter;
-    private constructor(chatEndpoint: URL, chatEncoder: (param0: GameProfile, param1: string) => com.google.gson.JsonObject, joinEndpoint: URL, joinEncoder: (param0: GameProfile) => com.google.gson.JsonObject, leaveEndpoint: URL, leaveEncoder: (param0: GameProfile) => com.google.gson.JsonObject, authKey: string, chatIgnoreStrategy: (param0: string, param1: number) => kotlin.Boolean, workerPool: ExecutorService)
+    private constructor(chatEndpoint: URL, chatEncoder: (param0: GameProfile, param1: string) => JsonObject, joinEndpoint: URL, joinEncoder: (param0: GameProfile) => JsonObject, leaveEndpoint: URL, leaveEncoder: (param0: GameProfile) => JsonObject, authKey: string, chatIgnoreStrategy: (param0: string, param1: number) => boolean, workerPool: ExecutorService)
     // private authKey: string;
-    // private joinEncoder: (param0: GameProfile) => com.google.gson.JsonObject;
+    // private joinEncoder: (param0: GameProfile) => JsonObject;
     // private joinEndpoint: URL;
-    // private leaveEncoder: (param0: GameProfile) => com.google.gson.JsonObject;
+    // private leaveEncoder: (param0: GameProfile) => JsonObject;
     // private leaveEndpoint: URL;
     createContext(gameProfile: GameProfile): TextFilter;
-    filterText(message: string, ignoreStrategy: (param0: string, param1: number) => kotlin.Boolean, result: JsonObject): FilteredText;
-    // private processJoinOrLeave(user: GameProfile, endpoint: URL, encoder: (param0: GameProfile) => com.google.gson.JsonObject, executor: Executor): void;
+    filterText(message: string, ignoreStrategy: (param0: string, param1: number) => boolean, result: JsonObject): FilteredText;
+    // private processJoinOrLeave(user: GameProfile, endpoint: URL, encoder: (param0: GameProfile) => JsonObject, executor: Executor): void;
     // private processRequest(payload: JsonObject, url: URL): void;
     setAuthorizationProperty(connection: HttpURLConnection): void;
 }

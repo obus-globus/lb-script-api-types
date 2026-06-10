@@ -3,15 +3,14 @@ import type { Float2ByteLinkedOpenHashMap$MapIterator } from '../../../../../it/
 import type { Float2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/floats/Float2ByteMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2ByteLinkedOpenHashMap$EntryIterator extends Float2ByteLinkedOpenHashMap$MapIterator<(param0: Float2ByteMap$Entry) => void> implements ObjectListIterator<Float2ByteMap$Entry> {
     constructor(null_: Float2ByteLinkedOpenHashMap$EntryIterator)
     constructor(null_: Float2ByteLinkedOpenHashMap$EntryIterator, arg1: number)
     // private entry: Float2ByteLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Float2ByteMap$Entry) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add(arg0: Float2ByteMap$Entry): void;
     next(): Float2ByteLinkedOpenHashMap$MapEntry;
     previous(): Float2ByteLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set(arg0: Float2ByteMap$Entry): void;
 }

@@ -6,14 +6,14 @@ import type { SwitchGrid$Builder } from '../../../../../../net/minecraft/client/
 import type { SwitchGrid$LabeledSwitch } from '../../../../../../net/minecraft/client/gui/screens/worldselection/SwitchGrid$LabeledSwitch.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class SwitchGrid$SwitchBuilder extends Object {
-    private constructor(label: Component, stateSupplier: () => kotlin.Boolean, onClicked: (param0: boolean) => void, buttonWidth: number)
+    private constructor(label: Component, stateSupplier: () => boolean, onClicked: (param0: boolean) => void, buttonWidth: number)
     // private buttonWidth: number;
     // private info: Component;
-    // private isActiveCondition: () => kotlin.Boolean;
+    // private isActiveCondition: () => boolean;
     // private label: Component;
     // private onClicked: (param0: boolean) => void;
-    // private stateSupplier: () => kotlin.Boolean;
+    // private stateSupplier: () => boolean;
     // private build(switchGridBuilder: SwitchGrid$Builder, gridLayout: GridLayout, startColumn: number): SwitchGrid$LabeledSwitch;
     withInfo(info: Component): SwitchGrid$SwitchBuilder;
-    withIsActiveCondition(isActiveCondition: () => kotlin.Boolean): SwitchGrid$SwitchBuilder;
+    withIsActiveCondition(isActiveCondition: () => boolean): SwitchGrid$SwitchBuilder;
 }

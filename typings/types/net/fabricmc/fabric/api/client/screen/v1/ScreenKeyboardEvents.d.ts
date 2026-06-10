@@ -11,8 +11,8 @@ import type { KeyEvent } from '../../../../../../../net/minecraft/client/input/K
 export class ScreenKeyboardEvents extends Object {
     static afterKeyPress(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => void>;
     static afterKeyRelease(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => void>;
-    static allowKeyPress(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => kotlin.Boolean>;
-    static allowKeyRelease(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => kotlin.Boolean>;
+    static allowKeyPress(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => boolean>;
+    static allowKeyRelease(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => boolean>;
     static beforeKeyPress(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => void>;
     static beforeKeyRelease(paramarg0: Screen): Event<(param0: Screen, param1: KeyEvent) => void>;
     private constructor()

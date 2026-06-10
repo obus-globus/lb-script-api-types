@@ -5,7 +5,7 @@ export interface CharIndirectPriorityQueue extends IndirectPriorityQueue<string>
     allChanged(): void;
     changed(): void;
     changed(arg0: number): void;
-    comparator(): (param0: string, param1: string) => kotlin.Int;
+    comparator(): (param0: string, param1: string) => number;
     contains(arg0: number): boolean;
     front(arg0: number[]): number;
     isEmpty(): boolean;

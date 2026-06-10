@@ -39,7 +39,7 @@ export class DeserializedClassDescriptor extends AbstractClassDescriptor impleme
     // private classId: ClassId;
     readonly classProto: ProtoBuf$Class;
     readonly companionObjectDescriptor: NullableLazyValue<ClassDescriptor>;
-    readonly constructors: NotNullLazyValue<E[]>;
+    readonly constructors: NotNullLazyValue<ClassConstructorDescriptor[]>;
     readonly containingDeclaration: DeclarationDescriptor;
     // private enumEntries: DeserializedClassDescriptor$EnumEntryClassDescriptors;
     // private hasEnumEntriesMetadataFlag: boolean;
@@ -48,7 +48,7 @@ export class DeserializedClassDescriptor extends AbstractClassDescriptor impleme
     readonly metadataVersion: BinaryVersion;
     readonly modality: Modality;
     // private primaryConstructor: NullableLazyValue<ClassConstructorDescriptor>;
-    // private sealedSubclasses: NotNullLazyValue<E[]>;
+    // private sealedSubclasses: NotNullLazyValue<ClassDescriptor[]>;
     // private sourceElement: SourceElement;
     readonly staticScope: MemberScopeImpl;
     // private thisAsProtoContainer: ProtoContainer$Class;
@@ -56,16 +56,16 @@ export class DeserializedClassDescriptor extends AbstractClassDescriptor impleme
     readonly valueClassRepresentation: NullableLazyValue<ValueClassRepresentation<SimpleType>>;
     readonly visibility: DescriptorVisibility;
     // private computeCompanionObjectDescriptor(): ClassDescriptor;
-    // private computeConstructors(): E[];
+    // private computeConstructors(): ClassConstructorDescriptor[];
     // private computePrimaryConstructor(): ClassConstructorDescriptor;
     // private computeSecondaryConstructors(): ClassConstructorDescriptor[];
-    // private computeSubclassesForSealedClass(): E[];
+    // private computeSubclassesForSealedClass(): ClassDescriptor[];
     // private computeValueClassRepresentation(): ValueClassRepresentation<SimpleType>;
     getAnnotations(): AnnotationDescriptor[];
     getC(): DeserializationContext;
     getClassProto(): ProtoBuf$Class;
     getCompanionObjectDescriptor(): ClassDescriptor;
-    getConstructors(): E[];
+    getConstructors(): ClassConstructorDescriptor[];
     getContainingDeclaration(): DeclarationDescriptor;
     getContextReceivers(): ReceiverParameterDescriptor[];
     getDeclaredTypeParameters(): TypeParameterDescriptor[];

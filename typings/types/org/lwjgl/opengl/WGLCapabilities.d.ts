@@ -2,7 +2,7 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvider.d.ts'
 export class WGLCapabilities extends Object {
-    constructor(arg0: (param0: ByteBuffer) => kotlin.Long, arg1: string[])
+    constructor(arg0: (param0: ByteBuffer) => number, arg1: string[])
     WGL_AMD_gpu_association: boolean;
     WGL_ARB_buffer_region: boolean;
     WGL_ARB_context_flush_control: boolean;

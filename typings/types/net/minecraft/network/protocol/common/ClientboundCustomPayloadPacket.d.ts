@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ChannelHandlerContext } from '../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -21,7 +22,7 @@ export class ClientboundCustomPayloadPacket extends Record implements GenericPay
     static CONFIG_STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomPayloadPacket>;
     static GAMEPLAY_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundCustomPayloadPacket>;
     static MAX_PAYLOAD_SIZE: number;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static getMaxPayloadSize(): number;
     constructor(payload: CustomPacketPayload)
     // private payload: CustomPacketPayload;

@@ -18,7 +18,7 @@ import type { ChunkStatus } from '../../../../net/minecraft/world/level/chunk/st
 import type { ChunkStep } from '../../../../net/minecraft/world/level/chunk/status/ChunkStep.d.ts'
 export abstract class GenerationChunkHolder extends Object implements GenerationChunkHolderAccessor {
     static UNLOADED_CHUNK: ChunkResult<ChunkAccess>;
-    static UNLOADED_CHUNK_FUTURE: CompletableFuture<Object>;
+    static UNLOADED_CHUNK_FUTURE: CompletableFuture<ChunkResult<ChunkAccess>>;
     constructor(pos: ChunkPos)
     // private futures: AtomicReferenceArray<CompletableFuture<ChunkResult<ChunkAccess>>>;
     // private generationRefCount: AtomicInteger;

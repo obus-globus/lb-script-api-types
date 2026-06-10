@@ -4,7 +4,7 @@ import type { KeyOperation } from '../../../io/jsonwebtoken/security/KeyOperatio
 import type { KeyOperationPolicy } from '../../../io/jsonwebtoken/security/KeyOperationPolicy.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface KeyOperationPolicyBuilder extends Builder<KeyOperationPolicy>, CollectionMutator<KeyOperation, KeyOperationPolicyBuilder>, Object{
-    add(arg0: E[]): KeyOperationPolicyBuilder;
+    add(arg0: KeyOperation[]): KeyOperationPolicyBuilder;
     add(arg0: KeyOperation): KeyOperationPolicyBuilder;
     unrelated(): KeyOperationPolicyBuilder;
 }

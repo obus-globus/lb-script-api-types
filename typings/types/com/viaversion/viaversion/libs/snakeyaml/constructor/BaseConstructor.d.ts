@@ -44,7 +44,7 @@ export abstract class BaseConstructor extends Object {
     constructObjectNoCheck(arg0: Node): Object;
     constructScalar(arg0: ScalarNode): string;
     constructSequence(arg0: SequenceNode): (Object | null)[];
-    constructSequenceStep2(arg0: SequenceNode, arg1: E[]): void;
+    constructSequenceStep2(arg0: SequenceNode, arg1: Object[]): void;
     constructSet(arg0: MappingNode): Object[];
     constructSet(arg0: SequenceNode): (Object | null)[];
     constructSet2ndStep(arg0: MappingNode, arg1: Object[]): void;

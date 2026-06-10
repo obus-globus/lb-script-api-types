@@ -9,5 +9,5 @@ export class ItemCombinerMenuSlotDefinition$Builder extends Object {
     // private resultSlot: ItemCombinerMenuSlotDefinition$SlotDefinition;
     build(): ItemCombinerMenuSlotDefinition;
     withResultSlot(slotIndex: number, xPlacement: number, yPlacement: number): ItemCombinerMenuSlotDefinition$Builder;
-    withSlot(slotIndex: number, xPlacement: number, yPlacement: number, mayPlace: (param0: ItemStack) => kotlin.Boolean): ItemCombinerMenuSlotDefinition$Builder;
+    withSlot(slotIndex: number, xPlacement: number, yPlacement: number, mayPlace: (param0: ItemStack) => boolean): ItemCombinerMenuSlotDefinition$Builder;
 }

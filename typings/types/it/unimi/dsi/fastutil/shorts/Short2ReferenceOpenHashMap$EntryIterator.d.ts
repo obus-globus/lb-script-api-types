@@ -3,11 +3,12 @@ import type { Short2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastu
 import type { Short2ReferenceOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceOpenHashMap$MapEntry.d.ts'
 import type { Short2ReferenceOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceOpenHashMap$MapIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ReferenceOpenHashMap$EntryIterator extends Short2ReferenceOpenHashMap$MapIterator<Object> implements ObjectIterator<Short2ReferenceMap$Entry<V>> {
     private constructor(null_: Short2ReferenceOpenHashMap$EntryIterator)
     // private entry: Short2ReferenceOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Short2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    next(): Short2ReferenceOpenHashMap$MapEntry;
+    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Short2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    next<V extends Object | number | string | boolean>(): Short2ReferenceOpenHashMap$MapEntry;
     remove(): void;
     skip(arg0: number): number;
 }

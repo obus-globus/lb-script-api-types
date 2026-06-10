@@ -24,9 +24,9 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export class JSArray extends JSAbstractArray implements JSConstructorFactory$WithFunctionsAndSpecies, PrototypeSupplier {
     static ARRAY_PROTOTYPE_NO_ELEMENTS_INVALIDATION: string;
     static CLASS_NAME: TruffleString;
-    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => kotlin.Boolean;
-    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => kotlin.Boolean;
-    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => kotlin.Boolean;
+    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => boolean;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static INSTANCE: JSArray;
     static LAZY_REGEX_ORIGINAL_INPUT_ID: HiddenKey;
@@ -75,7 +75,7 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static createEmptyChecked(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramlength: number): JSArrayObject;
     static createEmptyChecked(paramcontext: JSContext, paramrealm: JSRealm, paramlength: number): JSArrayObject;
     static createEmptyZeroLength(paramcontext: JSContext, paramrealm: JSRealm): JSArrayObject;
-    static createLazyArray(paramcontext: JSContext, paramrealm: JSRealm, paramlist: (Object | null)[], paramsize: number): JSArrayObject;
+    static createLazyArray(paramcontext: JSContext, paramrealm: JSRealm, paramlist: Object[], paramsize: number): JSArrayObject;
     static createLazyRegexArray(paramcontext: JSContext, paramrealm: JSRealm, paramlength: number): JSArrayObject;
     static createLazyRegexIndicesArray(paramcontext: JSContext, paramrealm: JSRealm, paramlength: number): JSArrayObject;
     static createSparseArray(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramlength: number): JSArrayObject;

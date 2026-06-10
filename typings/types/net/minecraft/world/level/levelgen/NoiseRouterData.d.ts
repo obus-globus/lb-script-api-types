@@ -59,7 +59,7 @@ export class NoiseRouterData extends Object {
     static VEININESS_FREQUENCY: number;
     static Y: ResourceKey<DensityFunction>;
     static ZERO: ResourceKey<DensityFunction>;
-    static bootstrap(paramcontext: BootstrapContext<DensityFunction>): Holder<Object>;
+    static bootstrap(paramcontext: BootstrapContext<DensityFunction>): Holder<DensityFunction>;
     static caves(paramfunctions: HolderGetter<DensityFunction>): NoiseRouter;
     static end(paramfunctions: HolderGetter<DensityFunction>): NoiseRouter;
     static entrances(paramfunctions: HolderGetter<DensityFunction>, paramnoises: HolderGetter<NormalNoise$NoiseParameters>): DensityFunction;

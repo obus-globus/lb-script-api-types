@@ -7,7 +7,10 @@ import type { NFAGenerator$NFAStateID } from '../../../../../../com/oracle/truff
 import type { NFAState } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFAState.d.ts'
 import type { NFAStateTransition } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFAStateTransition.d.ts'
 import type { Counter$ThresholdCounter } from '../../../../../../com/oracle/truffle/regex/tregex/parser/Counter$ThresholdCounter.d.ts'
+import type { CharacterClass } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/CharacterClass.d.ts'
+import type { LookBehindAssertion } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookBehindAssertion.d.ts'
 import type { RegexAST } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
+import type { RegexASTNode } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class NFAGenerator extends Object {
@@ -39,7 +42,7 @@ export class NFAGenerator extends Object {
     // private unAnchoredReverseEntry: NFAStateTransition;
     // private addNewLoopBackTransition(source: NFAState, target: NFAState): void;
     // private clearGroupBoundaries(): void;
-    // private createFinalState(stateSet: S[], mustAdvance: boolean): NFAState;
+    // private createFinalState(stateSet: RegexASTNode[], mustAdvance: boolean): NFAState;
     // private createNFATransitions(sourceState: NFAState, nextStep: ASTStep): NFAStateTransition[];
     // private createTransition(source: NFAState, target: NFAState, codePointSet: (Object | null)[], constraints: number[], operations: number[]): NFAStateTransition;
     // private doCreateNFA(): NFA;
@@ -47,5 +50,5 @@ export class NFAGenerator extends Object {
     // private findDeadStates(deadStates: NFAState[]): void;
     // private needsReverseTransitions(s: NFAState): boolean;
     // private pruneDeadStates(): void;
-    // private registerMatcherState(stateSetCC: S[], finishedLookBehinds: S[], containsPrefixStates: boolean, mustAdvance: boolean, matchedConditionGroupsMap: EconomicMap<number, number[]>): NFAState;
+    // private registerMatcherState(stateSetCC: CharacterClass[], finishedLookBehinds: LookBehindAssertion[], containsPrefixStates: boolean, mustAdvance: boolean, matchedConditionGroupsMap: EconomicMap<number, number[]>): NFAState;
 }

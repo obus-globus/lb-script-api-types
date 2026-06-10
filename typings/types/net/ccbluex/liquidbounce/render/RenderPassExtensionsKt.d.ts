@@ -28,7 +28,7 @@ export class RenderPassExtensionsKt extends Object {
     static bindLightingUniform(renderPass: RenderPass): void;
     static bindProjectionUniform(renderPass: RenderPass): void;
     static bindTexture(renderPass: RenderPass, name: string, texture: AbstractTexture): void;
-    static bindTextures(renderPass: RenderPass, textures: { [key: string]: Object | null }): void;
+    static bindTextures(renderPass: RenderPass, textures: { [key: string]: AbstractTexture }): void;
     /**
      * Color-only RenderPass.
      *

@@ -7,6 +7,7 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../net/minecraft/network/chat/MutableComponent.d.ts'
+import type { TextColor } from '../../../../net/minecraft/network/chat/TextColor.d.ts'
 import type { ObjectInfo } from '../../../../net/minecraft/network/chat/contents/objects/ObjectInfo.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
@@ -16,7 +17,7 @@ export class GeneralUtils extends Object {
     static LOGGER: Logger;
     static cloneText(paramarg0: Component): MutableComponent;
     static cloneTransformText(paramarg0: Component, paramarg1: (param0: MutableComponent) => MutableComponent): MutableComponent;
-    static cloneTransformText(paramarg0: Component, paramarg1: (param0: MutableComponent) => MutableComponent, paramarg2: (param0: Component) => kotlin.Boolean): MutableComponent;
+    static cloneTransformText(paramarg0: Component, paramarg1: (param0: MutableComponent) => MutableComponent, paramarg2: (param0: Component) => boolean): MutableComponent;
     static convertToNodes(paramarg0: Component): ParentNode;
     static deepTransform(paramarg0: Component): Component;
     static durationToString(paramarg0: number): string;
@@ -26,7 +27,7 @@ export class GeneralUtils extends Object {
     static removeColors(paramarg0: TextNode): TextNode;
     static removeHoverAndClick(paramarg0: Component): Component;
     static rgbToInt(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static toGradient(paramarg0: Component, paramarg1: (param0: number, param1: number) => net.minecraft.network.chat.TextColor): MutableComponent;
-    static toGradientShadow(paramarg0: Component, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => net.minecraft.network.chat.TextColor): MutableComponent;
+    static toGradient(paramarg0: Component, paramarg1: (param0: number, param1: number) => TextColor): MutableComponent;
+    static toGradientShadow(paramarg0: Component, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => TextColor): MutableComponent;
     constructor()
 }

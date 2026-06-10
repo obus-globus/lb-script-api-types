@@ -4,6 +4,7 @@ import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrum
 import type { EventBinding$Source } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding$Source.d.ts'
 import type { EventContext } from '../../../../../com/oracle/truffle/api/instrumentation/EventContext.d.ts'
 import type { ExecutionEventNode } from '../../../../../com/oracle/truffle/api/instrumentation/ExecutionEventNode.d.ts'
+import type { ExecutionEventNodeFactory } from '../../../../../com/oracle/truffle/api/instrumentation/ExecutionEventNodeFactory.d.ts'
 import type { InstrumentableNode } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentableNode.d.ts'
 import type { InstrumentableNode$WrapperNode } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentableNode$WrapperNode.d.ts'
 import type { InstrumentationHandler } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler.d.ts'
@@ -45,7 +46,7 @@ export class ProbeNode extends Node {
     lazyUpdate(frame: VirtualFrame): ProbeNode$EventChainNode;
     // private lazyUpdatedImpl(frame: VirtualFrame): ProbeNode$EventChainNode;
     lookupExecutionEventNode(binding: EventBinding<Object>): ExecutionEventNode;
-    lookupExecutionEventNodes(bindings: E[]): Iterator<ExecutionEventNode>;
+    lookupExecutionEventNodes(bindings: EventBinding<ExecutionEventNodeFactory>[]): Iterator<ExecutionEventNode>;
     onEnter(frame: VirtualFrame): void;
     onInputValue(frame: VirtualFrame, targetBinding: EventBinding<Object>, inputContext: EventContext, inputIndex: number, inputValue: Object): void;
     onResume(frame: VirtualFrame): void;

@@ -10,7 +10,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 export class HashOps extends OpsBase implements Hasher {
-    constructor(arg0: CodecContext, arg1: (param0: number[], param1: number) => kotlin.Int)
+    constructor(arg0: CodecContext, arg1: (param0: number[], param1: number) => number)
     // private hashBuilder: HashBuilder;
     hash(): number;
     reset(): void;

@@ -17,10 +17,10 @@ export class TagEntry extends Object implements TagEntryAccessor {
     id: Identifier;
     required: boolean;
     tag: boolean;
-    build(lookup: TagEntry$Lookup<T>, output: (param0: T) => void): boolean;
+    build<T extends Object | number | string | boolean>(lookup: TagEntry$Lookup<T>, output: (param0: T) => void): boolean;
     // private elementOrTag(): ExtraCodecs$TagOrElementLocation;
     toString(): string;
-    verifyIfPresent(elementCheck: (param0: Identifier) => kotlin.Boolean, tagCheck: (param0: Identifier) => kotlin.Boolean): boolean;
+    verifyIfPresent(elementCheck: (param0: Identifier) => boolean, tagCheck: (param0: Identifier) => boolean): boolean;
     visitOptionalDependencies(output: (param0: Identifier) => void): void;
     visitRequiredDependencies(output: (param0: Identifier) => void): void;
 }

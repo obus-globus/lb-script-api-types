@@ -17,8 +17,8 @@ import type { MetadataSectionType } from '../../../../net/minecraft/server/packs
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class PackMetadataGenerator extends Object implements DataProvider {
-    static FIXED_ORDER_FIELDS: (param0: string) => kotlin.Int;
-    static KEY_COMPARATOR: (param0: string) => kotlin.Boolean;
+    static FIXED_ORDER_FIELDS: (param0: string) => number;
+    static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component): PackMetadataGenerator;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component, paramflags: FeatureFlagSet): PackMetadataGenerator;

@@ -3,8 +3,8 @@ import type { Object2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2DoubleFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractObject2DoubleFunction<K> implements Serializable {
-    constructor(arg0: (param0: K) => kotlin.Double)
-    // private function: (param0: K) => kotlin.Double;
+    constructor(arg0: (param0: Object) => number)
+    // private function: (param0: Object) => number;
     clear(): void;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;

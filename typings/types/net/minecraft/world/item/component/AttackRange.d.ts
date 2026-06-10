@@ -23,10 +23,10 @@ export class AttackRange extends Record {
     effectiveMaxRange(entity: Entity): number;
     effectiveMinRange(entity: Entity): number;
     equals(o: Object | null): boolean;
-    getClosesetHit(attacker: Entity, partial: number, matching: (param0: Entity) => kotlin.Boolean): HitResult;
+    getClosesetHit(attacker: Entity, partial: number, matching: (param0: Entity) => boolean): HitResult;
     hashCode(): number;
     hitboxMargin(): number;
-    // private isInRange(attacker: LivingEntity, distanceFunction: (param0: Vec3) => kotlin.Double, extraBuffer: number): boolean;
+    // private isInRange(attacker: LivingEntity, distanceFunction: (param0: Vec3) => number, extraBuffer: number): boolean;
     isInRange(attacker: LivingEntity, boundingBox: AABB, extraBuffer: number): boolean;
     isInRange(attacker: LivingEntity, location: Vec3): boolean;
     maxCreativeReach(): number;

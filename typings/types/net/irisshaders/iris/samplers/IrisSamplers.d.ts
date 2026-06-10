@@ -21,7 +21,7 @@ export class IrisSamplers extends Object {
     static addCustomTextures(paramarg0: SamplerHolder, paramarg1: { [key: string]: TextureAccess }): void;
     static addLevelSamplers(paramarg0: SamplerHolder, paramarg1: WorldRenderingPipeline, paramarg2: AbstractTexture, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean): void;
     static addNoiseSampler(paramarg0: SamplerHolder, paramarg1: TextureAccess): void;
-    static addRenderTargetSamplers(paramarg0: SamplerHolder, paramarg1: () => Object | null, paramarg2: RenderTargets, paramarg3: boolean, paramarg4: WorldRenderingPipeline): void;
+    static addRenderTargetSamplers(paramarg0: SamplerHolder, paramarg1: () => number[], paramarg2: RenderTargets, paramarg3: boolean, paramarg4: WorldRenderingPipeline): void;
     static addShadowSamplers(paramarg0: SamplerHolder, paramarg1: ShadowRenderTargets, paramarg2: number[], paramarg3: boolean): boolean;
     static addWorldDepthSamplers(paramarg0: SamplerHolder, paramarg1: RenderTargets): void;
     static getTerrainCache(paramarg0: number): GpuSampler;

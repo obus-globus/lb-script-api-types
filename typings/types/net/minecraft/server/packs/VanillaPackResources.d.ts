@@ -10,6 +10,7 @@ import type { PackType } from '../../../../net/minecraft/server/packs/PackType.d
 import type { MetadataSectionType } from '../../../../net/minecraft/server/packs/metadata/MetadataSectionType.d.ts'
 import type { KnownPack } from '../../../../net/minecraft/server/packs/repository/KnownPack.d.ts'
 import type { IoSupplier } from '../../../../net/minecraft/server/packs/resources/IoSupplier.d.ts'
+import type { Resource } from '../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceMetadata } from '../../../../net/minecraft/server/packs/resources/ResourceMetadata.d.ts'
 import type { ResourceProvider } from '../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class VanillaPackResources extends Object implements PackResources {
@@ -22,7 +23,7 @@ export class VanillaPackResources extends Object implements PackResources {
     // private pathsForType: { [key in PackType]: Path[][] };
     // private resourceMetadata: ResourceMetadata;
     // private rootPaths: Path[][];
-    asProvider(): (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>;
+    asProvider(): (param0: Identifier) => Optional<Resource>;
     close(): void;
     getMetadataSection<T extends Object | number | string | boolean>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];

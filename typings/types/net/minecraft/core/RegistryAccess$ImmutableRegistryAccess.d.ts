@@ -11,7 +11,7 @@ import type { Logger } from '../../../org/slf4j/Logger.d.ts'
 export class RegistryAccess$ImmutableRegistryAccess extends Object implements BiomeModificationMarker, DimensionModificationMarker, RegistryAccess {
     static EMPTY: RegistryAccess$Frozen;
     static LOGGER: Logger;
-    static fromRegistryOfRegistries(paramregistries: (Object | null)[]): RegistryAccess$Frozen;
+    static fromRegistryOfRegistries(paramregistries: Object[][]): RegistryAccess$Frozen;
     constructor(registries: (Object | null)[][])
     constructor(registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>)
     constructor(entries: Stream<RegistryAccess$RegistryEntry<Object>>)
@@ -22,7 +22,7 @@ export class RegistryAccess$ImmutableRegistryAccess extends Object implements Bi
     fabric_markModified(): void;
     freeze(): RegistryAccess$Frozen;
     listRegistryKeys(): Stream<ResourceKey<(Object | null)[]>>;
-    lookup(registryKey: ResourceKey<E[]>): Optional<E[]>;
-    lookupOrThrow(name: ResourceKey<E[]>): E[];
+    lookup<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<E[]>;
+    lookupOrThrow<E extends Object | number | string | boolean>(name: ResourceKey<E[]>): E[];
     registries(): Stream<RegistryAccess$RegistryEntry<Object>>;
 }

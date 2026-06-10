@@ -15,11 +15,11 @@ export abstract class LocalCache$HashIterator<T extends Object | number | string
     // private nextSegmentIndex: number;
     // private nextTableIndex: number;
     advance(): void;
-    advanceTo(entry: ReferenceEntry<K, V>): boolean;
+    advanceTo<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(entry: ReferenceEntry<K, V>): boolean;
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next(): T;
-    nextEntry(): LocalCache$WriteThroughEntry;
+    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): LocalCache$WriteThroughEntry;
     nextInChain(): boolean;
     nextInTable(): boolean;
     remove(): void;

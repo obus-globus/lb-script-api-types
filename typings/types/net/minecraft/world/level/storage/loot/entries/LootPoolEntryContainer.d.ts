@@ -1,3 +1,4 @@
+import type { DataResult } from '../../../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
@@ -13,21 +14,21 @@ import type { ComposableEntryContainer } from '../../../../../../../net/minecraf
 import type { LootPoolEntry } from '../../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntry.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export abstract class LootPoolEntryContainer extends Object implements Validatable, ComposableEntryContainer {
-    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
-    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
-    static validate(paramcontext: ValidationContext, paramname: string, paramlist: (Object | null)[]): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Object>): void;
+    static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
+    static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
+    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
-    static validate(paramcontext: ValidationContext, paramlist: (Object | null)[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Object>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
+    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
+    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
     constructor(conditions: LootItemCondition[])
-    // private compositeCondition: (param0: LootContext) => kotlin.Boolean;
+    // private compositeCondition: (param0: LootContext) => boolean;
     // private conditions: LootItemCondition[];
-    and(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    and(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     canRun(context: LootContext): boolean;
     codec(): MapCodec<LootPoolEntryContainer>;
-    or(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => kotlin.Boolean;
+    or(other: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     validate(output: ValidationContext): void;
 }

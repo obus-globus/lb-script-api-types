@@ -10,5 +10,5 @@ export class StyleArgument extends ParserBasedArgument<Style> {
     static getStyle(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Style;
     static style(paramcontext: CommandBuildContext): StyleArgument;
     private constructor(registries: HolderLookup$Provider)
-    getExamples(): E[];
+    getExamples(): string[];
 }

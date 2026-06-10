@@ -11,7 +11,7 @@ export class ShowIn extends Enum<ShowIn> implements Tagged {
     static Companion: Tagged$Companion;
     static MESSAGE: ShowIn;
     static getEntries(): ShowIn[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShowIn;

@@ -5,7 +5,6 @@ import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupp
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { CrashReport } from '../../../../net/minecraft/CrashReport.d.ts'
 import type { SystemReport } from '../../../../net/minecraft/SystemReport.d.ts'
@@ -40,10 +39,10 @@ export class GameTestServer extends MinecraftServer {
     static VANILLA_BRAND: string;
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
     static create(paramserverThread: Thread, paramlevelStorageSource: LevelStorageSource$LevelStorageAccess, parampackRepository: PackRepository, paramtestSelection: Optional<string>, paramverify: boolean, paramrepeatCount: number): GameTestServer;
-    static getTestsForSelection(paramregistries: RegistryAccess, paramselection: string): Stream<Object>;
+    static getTestsForSelection(paramregistries: RegistryAccess, paramselection: string): Stream<Holder$Reference<GameTestInstance>>;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => Object | null): Object | null;
+    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
     private constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, testSelection: Optional<string>, verify: boolean, repeatCount: number)
     // private repeatCount: number;
     // private sampleLogger: LocalSampleLogger;
@@ -72,7 +71,7 @@ export class GameTestServer extends MinecraftServer {
     shouldInformAdmins(): boolean;
     shouldRconBroadcast(): boolean;
     // private startTests(level: ServerLevel): void;
-    tickServer(haveTime: () => kotlin.Boolean): void;
+    tickServer(haveTime: () => boolean): void;
     useNativeTransport(): boolean;
     waitUntilNextTick(): void;
 }

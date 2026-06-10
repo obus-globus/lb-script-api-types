@@ -1,4 +1,5 @@
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CurveValue } from '../../../../../../../net/ccbluex/liquidbounce/config/types/CurveValue.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { OverlayRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/OverlayRenderEvent.d.ts'
@@ -9,7 +10,6 @@ import type { ModuleItemTags$MergeMode } from '../../../../../../../net/ccbluex/
 import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { Filter } from '../../../../../../../net/ccbluex/liquidbounce/utils/collection/Filter.d.ts'
 import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.ts'
-import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * ItemTags module
@@ -27,7 +27,7 @@ export class ModuleItemTags extends ClientModule {
     // private /*not mapped: */ getFilter(): Filter;
     // private itemEntities: ModuleItemTags$ClusteredEntitiesRenderState[];
     // private /*not mapped: */ getItemEntities(): ModuleItemTags$ClusteredEntitiesRenderState[];
-    // private itemStackComparator: (param0: ItemStack) => kotlin.Boolean;
+    // private itemStackComparator: (param0: Object) => boolean;
     // private items: Item[];
     // private /*not mapped: */ getItems(): Item[];
     // private mergeMode: ModuleItemTags$MergeMode;

@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { DensityFunction } from '../../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
@@ -10,7 +11,7 @@ import type { DensityFunction$SimpleFunction } from '../../../../../../net/minec
 import type { DensityFunction$Visitor } from '../../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 import type { PerlinNoise } from '../../../../../../net/minecraft/world/level/levelgen/synth/PerlinNoise.d.ts'
 export class BlendedNoise extends Object implements DensityFunction$SimpleFunction {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<DensityFunction>>;
     static CODEC: KeyDispatchDataCodec<BlendedNoise>;
     static DIRECT_CODEC: Codec<DensityFunction>;
     static HOLDER_HELPER_CODEC: Codec<DensityFunction>;

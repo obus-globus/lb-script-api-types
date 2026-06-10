@@ -13,7 +13,7 @@ import type { ResourceManager } from '../../../../../net/minecraft/server/packs/
 import type { ResourceMetadata } from '../../../../../net/minecraft/server/packs/resources/ResourceMetadata.d.ts'
 import type { ResourceProvider } from '../../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class FallbackResourceManager extends Object implements ResourceManager {
-    static EMPTY: (param0: Identifier) => java.util.Optional<net.minecraft.server.packs.resources.Resource>;
+    static EMPTY: (param0: Identifier) => Optional<Resource>;
     constructor(type: PackType, namespace: string)
     // private fallbacks: FallbackResourceManager$PackEntry[];
     // private namespace: string;
@@ -22,12 +22,12 @@ export class FallbackResourceManager extends Object implements ResourceManager {
     getNamespaces(): string[];
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
-    // private listPackResources(entry: FallbackResourceManager$PackEntry, directory: string, filter: (param0: Identifier) => kotlin.Boolean, foundResources: Map<Identifier, FallbackResourceManager$EntryStack>): void;
+    // private listPackResources(entry: FallbackResourceManager$PackEntry, directory: string, filter: (param0: Identifier) => boolean, foundResources: Map<Identifier, FallbackResourceManager$EntryStack>): void;
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
     push(pack: PackResources): void;
-    push(pack: PackResources, filter: (param0: Identifier) => kotlin.Boolean): void;
-    pushFilterOnly(name: string, filter: (param0: Identifier) => kotlin.Boolean): void;
-    // private pushInternal(name: string, pack: PackResources, contentFilter: (param0: Identifier) => kotlin.Boolean): void;
+    push(pack: PackResources, filter: (param0: Identifier) => boolean): void;
+    pushFilterOnly(name: string, filter: (param0: Identifier) => boolean): void;
+    // private pushInternal(name: string, pack: PackResources, contentFilter: (param0: Identifier) => boolean): void;
 }

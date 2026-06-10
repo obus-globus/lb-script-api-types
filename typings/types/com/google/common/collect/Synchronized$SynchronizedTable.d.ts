@@ -25,5 +25,5 @@ export class Synchronized$SynchronizedTable<R extends Object | number | string |
     rowKeySet(): R[];
     rowMap(): Map<R, Map<C, V>>;
     size(): number;
-    values(): E[];
+    values(): V[];
 }

@@ -38,7 +38,7 @@ export abstract class FileSystemProvider extends Object {
     move(arg0: Path[], arg1: Path[], arg2: CopyOption[]): void;
     newAsynchronousFileChannel(arg0: Path[], arg1: OpenOption[], arg2: ExecutorService, arg3: FileAttribute<Object>[]): AsynchronousFileChannel;
     newByteChannel(arg0: Path[], arg1: OpenOption[], arg2: FileAttribute<Object>[]): SeekableByteChannel;
-    newDirectoryStream(arg0: Path[], arg1: (param0: Path[]) => kotlin.Boolean): T[];
+    newDirectoryStream(arg0: Path[], arg1: (param0: Path[]) => boolean): Path[][];
     newFileChannel(arg0: Path[], arg1: OpenOption[], arg2: FileAttribute<Object>[]): FileChannel;
     newFileSystem(arg0: URI, arg1: { [key: string]: Object | null }): FileSystem;
     newFileSystem(arg0: Path[], arg1: { [key: string]: Object | null }): FileSystem;

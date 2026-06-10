@@ -28,7 +28,7 @@ export class HttpUtil extends Object {
     static isOriginForm(paramarg0: string): boolean;
     static isOriginForm(paramarg0: URI): boolean;
     static isTransferEncodingChunked(paramarg0: HttpMessage): boolean;
-    static normalizeAndGetContentLength(paramarg0: (Object | null)[], paramarg1: boolean, paramarg2: boolean): number;
+    static normalizeAndGetContentLength(paramarg0: CharSequence[], paramarg1: boolean, paramarg2: boolean): number;
     static set100ContinueExpected(paramarg0: HttpMessage, paramarg1: boolean): void;
     static setContentLength(paramarg0: HttpMessage, paramarg1: number): void;
     static setKeepAlive(paramarg0: Map$Entry<string, string>[], paramarg1: HttpVersion, paramarg2: boolean): void;

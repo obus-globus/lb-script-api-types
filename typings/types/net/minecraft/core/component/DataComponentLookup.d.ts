@@ -8,10 +8,10 @@ export class DataComponentLookup<T extends Object | number | string | boolean> e
     constructor(elements: Holder<T>[])
     // private cache: Map<DataComponentType<Object>, DataComponentLookup$ComponentStorage<Object, T>>;
     // private elements: Holder<T>[];
-    findAll(type: DataComponentType<C>): E[];
-    findAll<C extends Object | number | string | boolean>(type: DataComponentType<C>, value: C): E[];
-    findMatching(type: DataComponentType<C>, predicate: (param0: C) => kotlin.Boolean): Stream<Holder<T>>;
-    // private getFromCache(type: DataComponentType<C>): DataComponentLookup$ComponentStorage<C, T>;
-    // private getOrCreateStorage(type: DataComponentType<C>): DataComponentLookup$ComponentStorage<C, T>;
-    // private scanForComponents(type: DataComponentType<C>): DataComponentLookup$ComponentStorage<C, T>;
+    findAll<C extends Object | number | string | boolean>(type: DataComponentType<C>): Holder<T>[];
+    findAll<C extends Object | number | string | boolean>(type: DataComponentType<C>, value: C): Holder<T>[];
+    findMatching<C extends Object | number | string | boolean>(type: DataComponentType<C>, predicate: (param0: C) => boolean): Stream<Holder<T>>;
+    // private getFromCache<C extends Object | number | string | boolean>(type: DataComponentType<C>): DataComponentLookup$ComponentStorage<C, T>;
+    // private getOrCreateStorage<C extends Object | number | string | boolean>(type: DataComponentType<C>): DataComponentLookup$ComponentStorage<C, T>;
+    // private scanForComponents<C extends Object | number | string | boolean>(type: DataComponentType<C>): DataComponentLookup$ComponentStorage<C, T>;
 }

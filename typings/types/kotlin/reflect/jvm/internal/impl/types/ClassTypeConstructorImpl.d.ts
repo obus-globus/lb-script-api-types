@@ -3,12 +3,13 @@ import type { SupertypeLoopChecker } from '../../../../../../kotlin/reflect/jvm/
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { StorageManager } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 import type { AbstractClassTypeConstructor } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/AbstractClassTypeConstructor.d.ts'
+import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 export class ClassTypeConstructorImpl extends AbstractClassTypeConstructor {
-    constructor(arg0: ClassDescriptor, arg1: TypeParameterDescriptor[], arg2: E[], arg3: StorageManager)
+    constructor(arg0: ClassDescriptor, arg1: TypeParameterDescriptor[], arg2: KotlinType[], arg3: StorageManager)
     // private classDescriptor: ClassDescriptor;
     readonly parameters: TypeParameterDescriptor[];
-    readonly supertypes: E[];
-    computeSupertypes(): E[];
+    readonly supertypes: KotlinType[];
+    computeSupertypes(): KotlinType[];
     getDeclarationDescriptor(): ClassDescriptor;
     getParameters(): TypeParameterDescriptor[];
     getSupertypeLoopChecker(): SupertypeLoopChecker;

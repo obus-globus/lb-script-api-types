@@ -7,14 +7,13 @@ export class PriorityQueues$EmptyPriorityQueue extends Object implements Priorit
     changed(): void;
     clear(): void;
     clone(): Object;
-    comparator(): (param0: Object) => kotlin.Boolean;
+    comparator(): (param0: Object) => boolean;
     dequeue(): Object;
     enqueue(arg0: Object): void;
     equals(arg0: Object | null): boolean;
     first(): Object;
     hashCode(): number;
     isEmpty(): boolean;
-    last<K extends Object | number | string | boolean>(): K;
     last(): Object;
     // private readResolve(): Object;
     size(): number;

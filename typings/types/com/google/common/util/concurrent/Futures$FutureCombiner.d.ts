@@ -8,7 +8,7 @@ export class Futures$FutureCombiner<V extends Object | number | string | boolean
     private constructor(allMustSucceed: boolean, futures: ListenableFuture<V>[])
     // private allMustSucceed: boolean;
     // private futures: ListenableFuture<V>[];
-    call(combiner: () => C, executor: Executor): ListenableFuture<C>;
-    callAsync(combiner: () => C, executor: Executor): ListenableFuture<C>;
+    call<C extends Object | number | string | boolean>(combiner: () => C, executor: Executor): ListenableFuture<C>;
+    callAsync<C extends Object | number | string | boolean>(combiner: () => ListenableFuture<C>, executor: Executor): ListenableFuture<C>;
     run(combiner: () => void, executor: Executor): ListenableFuture<Object>;
 }

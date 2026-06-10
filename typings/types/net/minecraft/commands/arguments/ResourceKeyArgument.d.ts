@@ -11,22 +11,22 @@ import type { CommandSourceStack } from '../../../../net/minecraft/commands/Comm
 import type { Holder$Reference } from '../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { RecipeHolder } from '../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
+import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { Structure } from '../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { StructureTemplatePool } from '../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool.d.ts'
 export class ResourceKeyArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<ResourceKey<T>> {
     static getAdvancement(paramcontext: CommandContext<CommandSourceStack>, paramname: string): AdvancementHolder;
-    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Object>;
+    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<Object, Object>>;
     static getRecipe(paramcontext: CommandContext<CommandSourceStack>, paramname: string): RecipeHolder<Object>;
-    static getRegistryKey(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<Object>, paramexceptionType: DynamicCommandExceptionType): ResourceKey<Object>;
+    static getRegistryKey(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>, paramexceptionType: DynamicCommandExceptionType): ResourceKey<Object>;
     static getStructure(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Structure>;
     static getStructureTemplatePool(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<StructureTemplatePool>;
-    static key(paramkey: ResourceKey<Object>): ResourceKeyArgument<Object>;
+    static key(paramkey: ResourceKey<(Object | null)[]>): ResourceKeyArgument<Object>;
     constructor(registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): ResourceKey<T>;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ResourceKey<T>;
+    parse(reader: StringReader): ResourceKey<T>;
 }

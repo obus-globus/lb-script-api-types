@@ -9,18 +9,18 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { StringRepresentable } from '../../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { StringRepresentable$EnumCodec } from '../../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 export class CopperGolemStatueBlock$Pose extends Enum<CopperGolemStatueBlock$Pose> implements StringRepresentable {
-    static BY_ID: (param0: CopperGolemStatueBlock$Pose) => unknown;
+    static BY_ID: (param0: number) => CopperGolemStatueBlock$Pose;
     static CODEC: Codec<CopperGolemStatueBlock$Pose>;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static RUNNING: CopperGolemStatueBlock$Pose;
     static SITTING: CopperGolemStatueBlock$Pose;
     static STANDING: CopperGolemStatueBlock$Pose;
     static STAR: CopperGolemStatueBlock$Pose;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
-    static fromValues(paramvalues: () => Object | null): Codec<Object>;
+    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CopperGolemStatueBlock$Pose;

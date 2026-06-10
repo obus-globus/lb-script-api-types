@@ -1,5 +1,6 @@
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { StructuredDataContainer } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataContainer.d.ts'
+import type { StructuredDataKey } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataKey.d.ts'
 import type { HashedItem } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/HashedItem.d.ts'
 import type { Item } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
 import type { StructuredItem } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/StructuredItem.d.ts'
@@ -10,9 +11,9 @@ import type { ClientboundPacket1_21_2 } from '../../../../../../com/viaversion/v
 import type { StructuredItemRewriter } from '../../../../../../com/viaversion/viaversion/rewriter/StructuredItemRewriter.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockItemPacketRewriter1_21_5 extends StructuredItemRewriter<ClientboundPacket1_21_2, ServerboundPacket1_21_5, Protocol1_21_4To1_21_5> {
-    static HIDE_ADDITIONAL_KEYS: (Object | null)[];
+    static HIDE_ADDITIONAL_KEYS: StructuredDataKey<Object>[];
     static MARKER_KEY: string;
-    static NEW_DATA_TO_REMOVE: (Object | null)[];
+    static NEW_DATA_TO_REMOVE: StructuredDataKey<Object>[];
     static downgradeItemData(paramarg0: Item): void;
     static updateItemData(paramarg0: Item): void;
     constructor(arg0: Protocol1_21_4To1_21_5)

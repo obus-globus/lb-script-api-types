@@ -9,7 +9,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BitStorageAlignFix extends DataFix {
     static addPadding(paramsize: number, parambits: number, paramdata: number[]): number[];
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Object | null) => Object | null, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(schema: Schema)
     makeRule(): TypeRewriteRule;
     // private updateHeightmaps(level: Typed<Object>): Typed<Object>;

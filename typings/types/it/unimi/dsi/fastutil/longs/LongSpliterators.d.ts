@@ -18,17 +18,17 @@ export class LongSpliterators extends Object {
     static SORTED_SET_SPLITERATOR_CHARACTERISTICS: number;
     static asIterator(paramarg0: LongSpliterator): LongIterator;
     static asLongSpliterator(paramarg0: Spliterator<Object>): LongSpliterator;
-    static asLongSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
+    static asLongSpliterator(paramarg0: Spliterator<Object>, paramarg1: (param0: number, param1: number) => number): LongSpliterator;
     static asSpliterator(paramarg0: LongIterator, paramarg1: number, paramarg2: number): LongSpliterator;
-    static asSpliteratorFromSorted(paramarg0: LongIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
-    static asSpliteratorFromSortedUnknownSize(paramarg0: LongIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
+    static asSpliteratorFromSorted(paramarg0: LongIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): LongSpliterator;
+    static asSpliteratorFromSortedUnknownSize(paramarg0: LongIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): LongSpliterator;
     static asSpliteratorUnknownSize(paramarg0: LongIterator, paramarg1: number): LongSpliterator;
     static concat(paramarg0: (Object | null)[]): LongSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): LongSpliterator;
     static fromTo(paramarg0: number, paramarg1: number): LongSpliterator;
-    static onEachMatching(paramarg0: LongSpliterator, paramarg1: (param0: number) => kotlin.Boolean, paramarg2: (param0: number) => void): void;
+    static onEachMatching(paramarg0: LongSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): LongSpliterator;
-    static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
+    static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => number): LongSpliterator;
     static wrap(paramarg0: ByteSpliterator): LongSpliterator;
     static wrap(paramarg0: CharSpliterator): LongSpliterator;
     static wrap(paramarg0: IntSpliterator): LongSpliterator;
@@ -36,8 +36,8 @@ export class LongSpliterators extends Object {
     static wrap(paramarg0: number[]): LongSpliterator;
     static wrap(paramarg0: number[], paramarg1: number, paramarg2: number): LongSpliterator;
     static wrap(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): LongSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
-    static wrapPreSorted(paramarg0: number[], paramarg1: (param0: number, param1: number) => kotlin.Int): LongSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: (param0: number, param1: number) => number): LongSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): LongSpliterator;
+    static wrapPreSorted(paramarg0: number[], paramarg1: (param0: number, param1: number) => number): LongSpliterator;
     private constructor()
 }

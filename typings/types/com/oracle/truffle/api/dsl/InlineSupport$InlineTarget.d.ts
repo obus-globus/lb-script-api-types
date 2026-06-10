@@ -10,7 +10,7 @@ export class InlineSupport$InlineTarget extends Object {
     // private updaters: InlineSupport$InlinableField[];
     // private get<T extends Object | number | string | boolean>(index: number, fieldClass: Class<T>): T;
     getPrimitive<T extends InlineSupport$InlinableField>(index: number, fieldClass: Class<T>): T;
-    getReference(index: number, valueClass: Class<Object>): InlineSupport$ReferenceField<V>;
+    getReference<V extends Object | number | string | boolean>(index: number, valueClass: Class<Object>): InlineSupport$ReferenceField<V>;
     getState(index: number, minimumBits: number): InlineSupport$StateField;
     getTargetClass(): Class<Object>;
 }

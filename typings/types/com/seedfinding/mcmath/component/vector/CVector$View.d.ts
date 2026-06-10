@@ -11,9 +11,9 @@ export class CVector$View extends CVector {
     static basis(paramarg0: number, paramarg1: number, paramarg2: BigInteger): CVector;
     static basis(paramarg0: number, paramarg1: number, paramarg2: number): CVector;
     static zero(paramarg0: number): CVector;
-    constructor(arg0: number, arg1: (param0: number) => com.seedfinding.mcmath.arithmetic.Complex, arg2: (param0: number, param1: Complex) => void)
+    constructor(arg0: number, arg1: (param0: number) => Complex, arg2: (param0: number, param1: Complex) => void)
     readonly dimension: number;
-    // private getter: (param0: number) => com.seedfinding.mcmath.arithmetic.Complex;
+    // private getter: (param0: number) => Complex;
     // private setter: (param0: number, param1: Complex) => void;
     get(arg0: number): Complex;
     getDimension(): number;

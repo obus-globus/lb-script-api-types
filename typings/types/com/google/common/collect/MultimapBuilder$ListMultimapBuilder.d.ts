@@ -12,9 +12,9 @@ export abstract class MultimapBuilder$ListMultimapBuilder<K0 extends Object | nu
     static hashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static linkedHashKeys(): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static linkedHashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
-    static treeKeys(paramcomparator: (param0: Object | null) => kotlin.Boolean): MultimapBuilder$MultimapBuilderWithKeys<Object>;
+    static treeKeys(paramcomparator: (param0: Object) => boolean): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static treeKeys(): MultimapBuilder$MultimapBuilderWithKeys<Comparable<Object>>;
     constructor()
-    build(): ListMultimap<K, V>;
-    build(multimap: Multimap<K, V>): ListMultimap<K, V>;
+    build<K extends K0, V extends V0>(): ListMultimap<K, V>;
+    build<K extends K0, V extends V0>(multimap: Multimap<K, V>): ListMultimap<K, V>;
 }

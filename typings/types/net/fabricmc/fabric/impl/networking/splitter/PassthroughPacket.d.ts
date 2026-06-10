@@ -8,7 +8,7 @@ import type { StreamMemberEncoder } from '../../../../../../net/minecraft/networ
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 export class PassthroughPacket extends Record implements Packet<PacketListener> {
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(buf: ByteBuf)
     // private buf: ByteBuf;
     buf(): ByteBuf;

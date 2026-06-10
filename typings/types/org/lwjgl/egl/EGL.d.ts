@@ -5,11 +5,11 @@ import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvide
 export class EGL extends Object {
     static create(): void;
     static create(paramarg0: string): void;
-    static create(paramarg0: (param0: ByteBuffer) => kotlin.Long): void;
+    static create(paramarg0: (param0: ByteBuffer) => number): void;
     static createDisplayCapabilities(paramarg0: number): EGLCapabilities;
     static createDisplayCapabilities(paramarg0: number, paramarg1: number, paramarg2: number): EGLCapabilities;
     static destroy(): void;
     static getCapabilities(): EGLCapabilities;
-    static getFunctionProvider(): (param0: ByteBuffer) => kotlin.Long;
+    static getFunctionProvider(): (param0: ByteBuffer) => number;
     private constructor()
 }

@@ -8,10 +8,10 @@ export class Reference2DoubleLinkedOpenHashMap$FastEntryIterator extends Referen
     constructor(null_: Reference2DoubleLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Reference2DoubleLinkedOpenHashMap$FastEntryIterator)
     // private entry: Reference2DoubleLinkedOpenHashMap$MapEntry;
-    acceptOnIndex(arg0: (param0: Reference2DoubleMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
-    next(): Reference2DoubleLinkedOpenHashMap$MapEntry;
-    previous(): Reference2DoubleLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2DoubleMap$Entry<K>) => void, arg1: number): void;
+    add<K extends Object | number | string | boolean>(arg0: Reference2DoubleMap$Entry<K>): void;
+    next<K extends Object | number | string | boolean>(): Reference2DoubleLinkedOpenHashMap$MapEntry;
+    previous<K extends Object | number | string | boolean>(): Reference2DoubleLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends Object | number | string | boolean>(arg0: Reference2DoubleMap$Entry<K>): void;
 }

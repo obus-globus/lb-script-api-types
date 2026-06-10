@@ -7,17 +7,17 @@ import type { PathNavigation } from '../../../../../../net/minecraft/world/entit
 import type { TargetingConditions } from '../../../../../../net/minecraft/world/entity/ai/targeting/TargetingConditions.d.ts'
 import type { Path } from '../../../../../../net/minecraft/world/level/pathfinder/Path.d.ts'
 export class AvoidEntityGoal<T extends LivingEntity> extends Goal {
-    constructor(mob: PathfinderMob, avoidClass: Class<T>, avoidPredicate: (param0: LivingEntity) => kotlin.Boolean, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number, predicateOnAvoidEntity: (param0: LivingEntity) => kotlin.Boolean)
+    constructor(mob: PathfinderMob, avoidClass: Class<T>, avoidPredicate: (param0: LivingEntity) => boolean, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number, predicateOnAvoidEntity: (param0: LivingEntity) => boolean)
     constructor(mob: PathfinderMob, avoidClass: Class<T>, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number)
-    constructor(mob: PathfinderMob, avoidClass: Class<T>, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number, predicateOnAvoidEntity: (param0: LivingEntity) => kotlin.Boolean)
+    constructor(mob: PathfinderMob, avoidClass: Class<T>, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number, predicateOnAvoidEntity: (param0: LivingEntity) => boolean)
     // private avoidClass: Class<T>;
     // private avoidEntityTargeting: TargetingConditions;
-    // private avoidPredicate: (param0: LivingEntity) => kotlin.Boolean;
+    // private avoidPredicate: (param0: LivingEntity) => boolean;
     // private maxDist: number;
     // private mob: PathfinderMob;
     // private path: Path;
     // private pathNav: PathNavigation;
-    // private predicateOnAvoidEntity: (param0: LivingEntity) => kotlin.Boolean;
+    // private predicateOnAvoidEntity: (param0: LivingEntity) => boolean;
     // private sprintSpeedModifier: number;
     // private toAvoid: T;
     // private walkSpeedModifier: number;

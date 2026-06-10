@@ -5,14 +5,14 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 export class ResourceKey<T extends Object | number | string | boolean> extends Object {
-    static codec(paramregistryName: ResourceKey<Object>): Codec<Object>;
-    static create(paramregistryName: ResourceKey<Object>, paramlocation: Identifier): ResourceKey<Object>;
-    static createRegistryKey(paramidentifier: Identifier): ResourceKey<Object>;
-    static streamCodec(paramregistryName: ResourceKey<Object>): StreamCodec<ByteBuf, Object>;
+    static codec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<ResourceKey<Object>>;
+    static create(paramregistryName: ResourceKey<(Object | null)[]>, paramlocation: Identifier): ResourceKey<Object>;
+    static createRegistryKey(paramidentifier: Identifier): ResourceKey<(Object | null)[]>;
+    static streamCodec(paramregistryName: ResourceKey<(Object | null)[]>): StreamCodec<ByteBuf, ResourceKey<Object>>;
     private constructor(registryName: Identifier, identifier: Identifier)
     // private identifier: Identifier;
     // private registryName: Identifier;
-    cast(registry: ResourceKey<E[]>): Optional<ResourceKey<E>>;
+    cast<E extends Object | number | string | boolean>(registry: ResourceKey<E[]>): Optional<ResourceKey<E>>;
     identifier(): Identifier;
     isFor(registry: ResourceKey<(Object | null)[]>): boolean;
     registry(): Identifier;

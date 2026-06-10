@@ -10,8 +10,8 @@ export class PoiManager$Occupancy extends Enum<PoiManager$Occupancy> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PoiManager$Occupancy;
     static values(): (Object | null)[];
-    private constructor(test: (param0: PoiRecord) => kotlin.Boolean)
-    readonly test: (param0: PoiRecord) => kotlin.Boolean;
-    getTest(): (param0: PoiRecord) => kotlin.Boolean;
+    private constructor(test: (param0: PoiRecord) => boolean)
+    readonly test: (param0: PoiRecord) => boolean;
+    getTest(): (param0: PoiRecord) => boolean;
     name(): "HAS_SPACE" | "IS_OCCUPIED" | "ANY";
 }

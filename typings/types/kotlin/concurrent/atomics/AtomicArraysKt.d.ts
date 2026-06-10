@@ -4,9 +4,9 @@ import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AtomicArraysKt__AtomicArrays_jvmKt } from '../../../kotlin/concurrent/atomics/AtomicArraysKt__AtomicArrays_jvmKt.d.ts'
 export class AtomicArraysKt extends AtomicArraysKt__AtomicArrays_jvmKt {
-    static AtomicArray(paramarg0: number, paramarg1: (param0: Object | null) => Object | null): AtomicReferenceArray<Object>;
-    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicIntegerArray;
-    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object | null) => number): AtomicLongArray;
+    static AtomicArray(paramarg0: number, paramarg1: (param0: Object) => Object | null): AtomicReferenceArray<Object>;
+    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicIntegerArray;
+    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicLongArray;
     static asJavaAtomicArray(paramarg0: AtomicReferenceArray<Object>): AtomicReferenceArray<Object>;
     static asJavaAtomicArray(paramarg0: AtomicIntegerArray): AtomicIntegerArray;
     static asJavaAtomicArray(paramarg0: AtomicLongArray): AtomicLongArray;

@@ -6,7 +6,7 @@ export class AtomicInteger extends Number implements Serializable {
     constructor()
     constructor(arg0: number)
     // private value: number;
-    accumulateAndGet(arg0: number, arg1: (param0: number, param1: number) => kotlin.Int): number;
+    accumulateAndGet(arg0: number, arg1: (param0: number, param1: number) => number): number;
     addAndGet(arg0: number): number;
     compareAndExchange(arg0: number, arg1: number): number;
     compareAndExchangeAcquire(arg0: number, arg1: number): number;
@@ -15,12 +15,12 @@ export class AtomicInteger extends Number implements Serializable {
     decrementAndGet(): number;
     get(): number;
     getAcquire(): number;
-    getAndAccumulate(arg0: number, arg1: (param0: number, param1: number) => kotlin.Int): number;
+    getAndAccumulate(arg0: number, arg1: (param0: number, param1: number) => number): number;
     getAndAdd(arg0: number): number;
     getAndDecrement(): number;
     getAndIncrement(): number;
     getAndSet(arg0: number): number;
-    getAndUpdate(arg0: (param0: number) => kotlin.Int): number;
+    getAndUpdate(arg0: (param0: number) => number): number;
     getOpaque(): number;
     getPlain(): number;
     incrementAndGet(): number;
@@ -34,7 +34,7 @@ export class AtomicInteger extends Number implements Serializable {
     toInt(): number;
     toLong(): number;
     toString(): string;
-    updateAndGet(arg0: (param0: number) => kotlin.Int): number;
+    updateAndGet(arg0: (param0: number) => number): number;
     weakCompareAndSet(arg0: number, arg1: number): boolean;
     weakCompareAndSetAcquire(arg0: number, arg1: number): boolean;
     weakCompareAndSetPlain(arg0: number, arg1: number): boolean;

@@ -31,7 +31,7 @@ export interface WebSocket extends Object{
     send(arg0: string): void;
     sendFragmentedFrame(arg0: Opcode, arg1: ByteBuffer, arg2: boolean): void;
     sendFrame(arg0: Framedata): void;
-    sendFrame(arg0: E[]): void;
+    sendFrame(arg0: Framedata[]): void;
     sendPing(): void;
     setAttachment<T extends Object | number | string | boolean>(arg0: T): void;
 }

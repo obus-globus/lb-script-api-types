@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -11,9 +12,9 @@ import type { ClientboundPlayerInfoUpdatePacket$Entry } from '../../../../../net
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export class ClientboundPlayerInfoUpdatePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundPlayerInfoUpdatePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
-    static createPlayerInitializing(paramplayers: E[]): ClientboundPlayerInfoUpdatePacket;
-    constructor(actions: ClientboundPlayerInfoUpdatePacket$Action[], players: E[])
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static createPlayerInitializing(paramplayers: ServerPlayer[]): ClientboundPlayerInfoUpdatePacket;
+    constructor(actions: ClientboundPlayerInfoUpdatePacket$Action[], players: ServerPlayer[])
     private constructor(input: RegistryFriendlyByteBuf)
     constructor(action: ClientboundPlayerInfoUpdatePacket$Action, player: ServerPlayer)
     // private actions: ClientboundPlayerInfoUpdatePacket$Action[];

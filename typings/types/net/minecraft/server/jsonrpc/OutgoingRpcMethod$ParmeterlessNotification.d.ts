@@ -15,8 +15,8 @@ export class OutgoingRpcMethod$ParmeterlessNotification extends Record implement
     // private attributes: OutgoingRpcMethod$Attributes;
     // private info: MethodInfo<void, void>;
     attributes(): OutgoingRpcMethod$Attributes;
-    decodeResult<Result extends Object | number | string | boolean>(result: JsonElement): Result;
-    encodeParams<Params extends Object | number | string | boolean>(params: Params): JsonElement;
+    decodeResult(result: JsonElement): void;
+    encodeParams(params: void): JsonElement;
     equals(o: Object | null): boolean;
     hashCode(): number;
     info(): MethodInfo<void, void>;

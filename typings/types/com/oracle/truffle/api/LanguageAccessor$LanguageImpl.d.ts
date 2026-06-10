@@ -42,7 +42,7 @@ export class LanguageAccessor$LanguageImpl extends Accessor$LanguageSupport {
     createEnvContext(env: TruffleLanguage$Env, servicesCollector: Object[]): Object;
     createFileSystemContext(engineFileSystemContext: Object, fileSystem: FileSystem): Object;
     createInstrument(polyglotInstrument: Object, id: string, name: string, version: string): InstrumentInfo;
-    createInternalResourceEnv(resource: InternalResource, contextPreinitializationCheck: () => kotlin.Boolean): InternalResource$Env;
+    createInternalResourceEnv(resource: InternalResource, contextPreinitializationCheck: () => boolean): InternalResource$Env;
     createOptionDescriptorsUnion(descriptors: OptionDescriptor[][]): OptionDescriptor[];
     createTruffleContext(impl: Object, parentContext: TruffleContext): TruffleContext;
     describeOptions(language: TruffleLanguage<Object>, requiredGroup: string): OptionDescriptor[];

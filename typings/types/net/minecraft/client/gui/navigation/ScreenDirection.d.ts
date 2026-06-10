@@ -12,8 +12,8 @@ export class ScreenDirection extends Enum<ScreenDirection> {
     static valueOf(paramname: string): ScreenDirection;
     static values(): (Object | null)[];
     private constructor()
-    // private coordinateValueComparator: (param0: number, param1: number) => kotlin.Int;
-    coordinateValueComparator(): (param0: number, param1: number) => kotlin.Int;
+    // private coordinateValueComparator: (param0: number, param1: number) => number;
+    coordinateValueComparator(): (param0: number, param1: number) => number;
     getAxis(): ScreenAxis;
     getOpposite(): ScreenDirection;
     isAfter(a: number, b: number): boolean;

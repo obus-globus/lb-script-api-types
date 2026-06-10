@@ -13,14 +13,14 @@ import type { Control } from '../../../../../../../net/caffeinemc/mods/sodium/cl
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class IntegerOption extends StatefulOption<number> {
-    constructor(arg0: Identifier, arg1: E[], arg2: Component, arg3: DependentValue<boolean>, arg4: () => void, arg5: (param0: number) => Component, arg6: OptionImpact, arg7: Identifier[], arg8: DependentValue<number>, arg9: boolean, arg10: OptionBinding<number>, arg11: (param0: ConfigState) => void, arg12: DependentValue<SteppedValidator>, arg13: (param0: number) => net.minecraft.network.chat.Component)
+    constructor(arg0: Identifier, arg1: Identifier[], arg2: Component, arg3: DependentValue<boolean>, arg4: () => void, arg5: (param0: number) => Component, arg6: OptionImpact, arg7: Identifier[], arg8: DependentValue<number>, arg9: boolean, arg10: OptionBinding<number>, arg11: (param0: ConfigState) => void, arg12: DependentValue<SteppedValidator>, arg13: (param0: number) => Component)
     // private validator: DependentValue<SteppedValidator>;
-    readonly valueFormatter: (param0: number) => net.minecraft.network.chat.Component;
+    readonly valueFormatter: (param0: number) => Component;
     createControl(): Control;
     formatValue(arg0: number): Component;
     getSteppedValidator(): SteppedValidator;
     getValidatorProvider(): DependentValue<SteppedValidator>;
-    getValueFormatter(): (param0: number) => net.minecraft.network.chat.Component;
+    getValueFormatter(): (param0: number) => Component;
     validateValue(arg0: number): number;
     visitDependentValues(arg0: (param0: DependentValue<Object>) => void): void;
 }

@@ -12,7 +12,7 @@ export class ContainerHandleURI extends Object implements IContainerHandle {
     getDescription(): string;
     getFile(): File;
     getId(): string;
-    getNestedContainers(): E[];
+    getNestedContainers(): IContainerHandle[];
     getURI(): URI;
     hashCode(): number;
     toString(): string;

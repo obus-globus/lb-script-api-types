@@ -17,6 +17,6 @@ export class LootTableEvents extends Object {
     static ALL_LOADED: Event<(param0: ResourceManager, param1: LootTable[]) => void>;
     static MODIFY: Event<(param0: ResourceKey<LootTable>, param1: LootTable$Builder, param2: LootTableSource, param3: HolderLookup$Provider) => void>;
     static MODIFY_DROPS: Event<(param0: Holder<LootTable>, param1: LootContext, param2: ItemStack[]) => void>;
-    static REPLACE: Event<(param0: ResourceKey<LootTable>, param1: LootTable, param2: LootTableSource, param3: HolderLookup$Provider) => net.minecraft.world.level.storage.loot.LootTable>;
+    static REPLACE: Event<(param0: ResourceKey<LootTable>, param1: LootTable, param2: LootTableSource, param3: HolderLookup$Provider) => LootTable>;
     private constructor()
 }

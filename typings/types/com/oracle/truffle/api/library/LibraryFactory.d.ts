@@ -11,7 +11,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class LibraryFactory<T extends Library> extends Object {
-    static resolve(paramlibrary: Class<Object>): LibraryFactory<Object>;
+    static resolve(paramlibrary: Class<Library>): LibraryFactory<Library>;
     constructor(libraryClass: Class<T>, messages: Message[])
     // private afterBuiltinDefaultExports: DefaultExportProvider[];
     // private aot: LibraryFactory$CachedAOTExports;

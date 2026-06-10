@@ -12,5 +12,5 @@ export class FutureKt extends Object {
     static asCompletableFuture(paramarg0: Job): CompletableFuture<void>;
     static asDeferred(paramarg0: CompletionStage<Object>): Deferred<Object>;
     static await(paramarg0: CompletionStage<Object>, paramarg1: Continuation<Object>): Object;
-    static future(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: CoroutineStart, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): CompletableFuture<Object>;
+    static future(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): CompletableFuture<Object>;
 }

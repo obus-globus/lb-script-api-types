@@ -8,7 +8,7 @@ import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/interna
 export class AbstractTypeParameterDescriptor$TypeParameterTypeConstructor extends AbstractTypeConstructor {
     constructor(null_: AbstractTypeParameterDescriptor$TypeParameterTypeConstructor, arg1: StorageManager, arg2: SupertypeLoopChecker)
     // private supertypeLoopChecker: SupertypeLoopChecker;
-    computeSupertypes(): E[];
+    computeSupertypes(): KotlinType[];
     defaultSupertypeIfEmpty(): KotlinType;
     getBuiltIns(): KotlinBuiltIns;
     getDeclarationDescriptor(): ClassifierDescriptor;

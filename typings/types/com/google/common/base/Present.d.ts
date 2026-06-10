@@ -8,7 +8,7 @@ export class Present<T extends Object | number | string | boolean> extends Optio
     static fromJavaUtil(paramjavaUtilOptional: Optional_2<Object>): Optional<Object>;
     static fromNullable(paramnullableReference: Object | null): Optional<Object>;
     static of(paramreference: Object | null): Optional<Object>;
-    static presentInstances(paramoptionals: (Object | null)[]): (Object | null)[];
+    static presentInstances(paramoptionals: Optional<Object>[]): (Object | null)[];
     static toJavaUtil(paramgoogleOptional: Optional<Object>): Optional_2<Object>;
     constructor(reference: T)
     // private reference: T;
@@ -22,5 +22,5 @@ export class Present<T extends Object | number | string | boolean> extends Optio
     or(supplier: () => T): T;
     orNull(): T;
     toString(): string;
-    transform(function_: (param0: T) => V): Optional<V>;
+    transform<V extends Object | number | string | boolean>(function_: (param0: Object) => boolean): Optional<V>;
 }

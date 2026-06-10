@@ -18,11 +18,11 @@ import type { PalettedContainerRO$PackedData } from '../../../../../net/minecraf
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
 export class PalettedContainer<T extends Object | number | string | boolean> extends Object implements PalettedContainerROExtension<Object>, PaletteResize<T>, PalettedContainerRO<T> {
     static clone(paramarg0: PalettedContainerRO<Object>): PalettedContainerRO<Object>;
-    static codecRO(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<Object>;
-    static codecRW(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<Object>;
+    static codecRO(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<PalettedContainerRO<Object>>;
+    static codecRW(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<PalettedContainer<Object>>;
     static noResizeExpected(): PaletteResize<Object>;
     static of(paramarg0: PalettedContainerRO<Object>): PalettedContainerROExtension<Object>;
-    static unpack(paramstrategy: Strategy<Object>, paramdiscData: PalettedContainerRO$PackedData<Object>): DataResult<Object>;
+    static unpack(paramstrategy: Strategy<Object>, paramdiscData: PalettedContainerRO$PackedData<Object>): DataResult<PalettedContainer<Object>>;
     constructor(initialValue: T, strategy: Strategy<T>)
     private constructor(source: PalettedContainer<T>)
     private constructor(strategy: Strategy<T>, dataConfiguration: Configuration, storage: BitStorage, palette: Palette<T>)
@@ -33,7 +33,7 @@ export class PalettedContainer<T extends Object | number | string | boolean> ext
     // private asOptional(arg0: number[]): Optional<Object>;
     bitsPerEntry(): number;
     copy(): PalettedContainer<T>;
-    count(output: (param0: T, param1: Object | null) => void): void;
+    count(output: (param0: T, param1: number) => void): void;
     // private createOrReuseData(oldData: PalettedContainer$Data<T>, targetBits: number): PalettedContainer$Data<T>;
     get(index: number): T;
     get(x: number, y: number, z: number): T;
@@ -43,7 +43,7 @@ export class PalettedContainer<T extends Object | number | string | boolean> ext
     getAndSetUnchecked(x: number, y: number, z: number, value: T): T;
     // private getOrCreate(arg0: number): number[];
     getSerializedSize(): number;
-    maybeHas(predicate: (param0: T) => kotlin.Boolean): boolean;
+    maybeHas(predicate: (param0: T) => boolean): boolean;
     onResize(bits: number, lastAddedValue: T): number;
     pack(arg0: Strategy<Object>): PalettedContainerRO$PackedData<Object>;
     read(buffer: FriendlyByteBuf): void;

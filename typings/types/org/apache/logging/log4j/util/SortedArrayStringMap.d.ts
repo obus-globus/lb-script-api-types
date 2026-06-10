@@ -22,8 +22,8 @@ export class SortedArrayStringMap extends Object implements IndexedStringMap {
     containsKey(key: string): boolean;
     // private ensureCapacity(): void;
     equals(obj: Object | null): boolean;
-    forEach(action: (param0: string, param1: V) => void): void;
-    forEach<T extends Object | number | string | boolean>(action: TriConsumer<string, V, T>, state: T): void;
+    forEach<V extends Object | number | string | boolean>(action: (param0: string, param1: V) => void): void;
+    forEach<V extends Object | number | string | boolean, T extends Object | number | string | boolean>(action: TriConsumer<string, V, T>, state: T): void;
     freeze(): void;
     getKeyAt(index: number): string;
     getValue<V extends Object | number | string | boolean>(key: string): V;

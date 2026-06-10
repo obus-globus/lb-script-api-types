@@ -8,7 +8,7 @@ export class ModuleTargetLock$Temporary$NoLockMode extends Enum<ModuleTargetLock
     static ALLOW_NONE: ModuleTargetLock$Temporary$NoLockMode;
     static Companion: Tagged$Companion;
     static getEntries(): ModuleTargetLock$Temporary$NoLockMode[];
-    static makeLookupTable(paramarg0: (Object | null)[]): { [key: string]: Object | null };
+    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTargetLock$Temporary$NoLockMode;

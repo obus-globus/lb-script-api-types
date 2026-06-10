@@ -10,5 +10,5 @@ export class RegistrySetBuilder$UniversalLookup extends RegistrySetBuilder$Empty
     // private holders: Map<ResourceKey<Object>, Holder$Reference<Object>>;
     get(id: ResourceKey<Object>): Optional<Holder$Reference<Object>>;
     get(id: TagKey<Object>): Optional<Object[]>;
-    // private getOrCreate(id: ResourceKey<T>): Holder$Reference<T>;
+    // private getOrCreate<T extends Object | number | string | boolean>(id: ResourceKey<T>): Holder$Reference<T>;
 }

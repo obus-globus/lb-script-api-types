@@ -10,8 +10,8 @@ import type { ItemDisplayContext } from '../../../../../../../net/minecraft/worl
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { TrimMaterial } from '../../../../../../../net/minecraft/world/item/equipment/trim/TrimMaterial.d.ts'
 export class TrimMaterialProperty extends Record implements SelectItemModelProperty<ResourceKey<TrimMaterial>> {
-    static TYPE: SelectItemModelProperty$Type<TrimMaterialProperty, Object>;
-    static VALUE_CODEC: Codec<Object>;
+    static TYPE: SelectItemModelProperty$Type<TrimMaterialProperty, ResourceKey<TrimMaterial>>;
+    static VALUE_CODEC: Codec<ResourceKey<TrimMaterial>>;
     constructor()
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): ResourceKey<TrimMaterial>;

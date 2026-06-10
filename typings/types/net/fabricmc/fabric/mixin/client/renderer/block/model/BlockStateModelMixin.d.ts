@@ -10,7 +10,7 @@ import type { RandomSource } from '../../../../../../../../net/minecraft/util/Ra
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export interface BlockStateModelMixin extends Object, FabricBlockStateModel {
     createGeometryKey(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): Object;
-    emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Direction) => kotlin.Boolean): void;
+    emitQuads(arg0: QuadEmitter, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: (param0: Direction) => boolean): void;
     hasMaterialFlag(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource, arg4: number): boolean;
     materialFlags(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState, arg3: RandomSource): number;
     particleMaterial(arg0: BlockAndTintGetter, arg1: BlockPos, arg2: BlockState): Material$Baked;

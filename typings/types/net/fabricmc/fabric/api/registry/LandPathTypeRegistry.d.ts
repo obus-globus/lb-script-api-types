@@ -10,8 +10,8 @@ import type { PathType } from '../../../../../net/minecraft/world/level/pathfind
 export class LandPathTypeRegistry extends Object {
     static getPathType(paramarg0: BlockState, paramarg1: BlockGetter, paramarg2: BlockPos, paramarg3: boolean): PathType;
     static getPathTypeProvider(paramarg0: Block): LandPathTypeRegistry$PathTypeProvider;
-    static register(paramarg0: Block, paramarg1: (param0: BlockState, param1: boolean) => net.minecraft.world.level.pathfinder.PathType): void;
+    static register(paramarg0: Block, paramarg1: (param0: BlockState, param1: boolean) => PathType): void;
     static register(paramarg0: Block, paramarg1: PathType, paramarg2: PathType): void;
-    static registerDynamic(paramarg0: Block, paramarg1: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: boolean) => net.minecraft.world.level.pathfinder.PathType): void;
+    static registerDynamic(paramarg0: Block, paramarg1: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: boolean) => PathType): void;
     private constructor()
 }

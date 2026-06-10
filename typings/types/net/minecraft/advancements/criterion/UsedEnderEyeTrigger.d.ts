@@ -7,6 +7,6 @@ import type { ServerPlayer } from '../../../../net/minecraft/server/level/Server
 export class UsedEnderEyeTrigger extends SimpleCriterionTrigger<UsedEnderEyeTrigger$TriggerInstance> {
     constructor()
     codec(): Codec<UsedEnderEyeTrigger$TriggerInstance>;
-    trigger(player: ServerPlayer, matcher: (param0: UsedEnderEyeTrigger$TriggerInstance) => kotlin.Boolean): void;
+    trigger(player: ServerPlayer, matcher: (param0: UsedEnderEyeTrigger$TriggerInstance) => boolean): void;
     trigger(player: ServerPlayer, feature: BlockPos): void;
 }

@@ -20,7 +20,7 @@ export class Excluder extends Object implements Cloneable, TypeAdapterFactory {
     // private version: number;
     protected clone(): Object;
     clone(): Excluder;
-    create(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
     excludeClass(arg0: Class<Object>, arg1: boolean): boolean;
     excludeField(arg0: Field, arg1: boolean): boolean;
     // private isAnonymousOrLocal(arg0: Class<Object>): boolean;

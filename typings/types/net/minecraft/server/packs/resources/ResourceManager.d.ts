@@ -12,8 +12,8 @@ export interface ResourceManager extends Object, ResourceProvider {
     getResourceOrThrow(location: Identifier): Resource;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => kotlin.Boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
     open(location: Identifier): InputStream;
     openAsReader(location: Identifier): BufferedReader;
 }

@@ -57,7 +57,7 @@ export class PacketWrapperImpl extends Object implements PacketWrapper {
     passthrough<T extends Object | number | string | boolean>(arg0: Type<T>): T;
     passthroughAll(): void;
     passthroughAndMap<T extends Object | number | string | boolean>(arg0: Type<Object>, arg1: Type<T>): T;
-    // private pollReadableObject(arg0: Type<T>): PacketWrapperImpl$PacketValue<T>;
+    // private pollReadableObject<T extends Object | number | string | boolean>(arg0: Type<T>): PacketWrapperImpl$PacketValue<T>;
     read<T extends Object | number | string | boolean>(arg0: Type<T>): T;
     // private readFromBuffer<T extends Object | number | string | boolean>(arg0: Type<T>): T;
     resetReader(): void;

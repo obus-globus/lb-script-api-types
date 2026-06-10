@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EntityAnchorArgument$Anchor } from '../../../../../net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -12,7 +13,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundPlayerLookAtPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerLookAtPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(fromAnchor: EntityAnchorArgument$Anchor, x: number, y: number, z: number)
     constructor(fromAnchor: EntityAnchorArgument$Anchor, entity: Entity, toAnchor: EntityAnchorArgument$Anchor)
     private constructor(input: FriendlyByteBuf)

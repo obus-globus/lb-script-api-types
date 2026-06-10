@@ -30,10 +30,10 @@ export class TimeZoneGenericNames extends Object implements Serializable, Freeza
     // private _tznames: TimeZoneNames;
     cloneAsThawed(): TimeZoneGenericNames;
     // private createGenericMatchInfo(matchInfo: TimeZoneNames$MatchInfo): TimeZoneGenericNames$GenericMatchInfo;
-    find(text: string, start: number, genericTypes: TimeZoneGenericNames$GenericNameType[]): E[];
+    find(text: string, start: number, genericTypes: TimeZoneGenericNames$GenericNameType[]): TimeZoneGenericNames$GenericMatchInfo[];
     findBestMatch(text: string, start: number, genericTypes: TimeZoneGenericNames$GenericNameType[]): TimeZoneGenericNames$GenericMatchInfo;
-    // private findLocal(text: string, start: number, types: TimeZoneGenericNames$GenericNameType[]): E[];
-    // private findTimeZoneNames(text: string, start: number, types: TimeZoneGenericNames$GenericNameType[]): E[];
+    // private findLocal(text: string, start: number, types: TimeZoneGenericNames$GenericNameType[]): TimeZoneGenericNames$GenericMatchInfo[];
+    // private findTimeZoneNames(text: string, start: number, types: TimeZoneGenericNames$GenericNameType[]): TimeZoneNames$MatchInfo[];
     // private formatGenericNonLocationName(tz: TimeZone, type: TimeZoneGenericNames$GenericNameType, date: number): string;
     // private formatPattern(pat: TimeZoneGenericNames$Pattern, args: string[]): string;
     freeze(): TimeZoneGenericNames;

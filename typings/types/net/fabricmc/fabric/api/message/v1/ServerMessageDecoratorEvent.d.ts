@@ -6,7 +6,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { ServerPlayer } from '../../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export class ServerMessageDecoratorEvent extends Object {
     static CONTENT_PHASE: Identifier;
-    static EVENT: Event<(param0: ServerPlayer, param1: Component) => net.minecraft.network.chat.Component>;
+    static EVENT: Event<(param0: ServerPlayer, param1: Component) => Component>;
     static STYLING_PHASE: Identifier;
     private constructor()
 }

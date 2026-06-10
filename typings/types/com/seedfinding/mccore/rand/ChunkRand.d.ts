@@ -14,16 +14,15 @@ export class ChunkRand extends JRand {
     static nextLong(paramarg0: number): number;
     static ofInternalSeed(paramarg0: number): JRand;
     static ofScrambledSeed(paramarg0: number): JRand;
-    static shuffle(paramarg0: (Object | null)[], paramarg1: JRand): void;
+    static shuffle(paramarg0: Object[], paramarg1: JRand): void;
     static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
-    static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
+    static swap(paramarg0: Object[], paramarg1: number, paramarg2: number): void;
     constructor()
     constructor(arg0: number)
     constructor(arg0: number, arg1: boolean)
     asChunkRandDebugger(): ChunkRand$Debugger;
     getInt(arg0: number, arg1: number): number;
     getRandom<T extends Object | number | string | boolean>(arg0: T[]): T;
-    getRandom<T extends Object | number | string | boolean>(arg0: E[]): T;
     setBaseStoneSeed(arg0: number, arg1: number, arg2: number, arg3: number): number;
     setCarverSeed(arg0: number, arg1: number, arg2: number, arg3: MCVersion): number;
     setDecoratorSeed(arg0: number, arg1: number, arg2: MCVersion): number;

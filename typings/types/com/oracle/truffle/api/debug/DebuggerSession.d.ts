@@ -61,7 +61,7 @@ export class DebuggerSession extends Object implements Closeable {
     // private sessionId: number;
     readonly showHostStackFrames: boolean;
     // private sourceElements: SourceElement[];
-    // private sourceFilter: (param0: Source) => kotlin.Boolean;
+    // private sourceFilter: (param0: Source) => boolean;
     // private sources: DebugSourcesResolver;
     // private stepping: DebuggerSession$StableBoolean;
     // private steppingEnabledSlots: ThreadLocal<number[]>;
@@ -71,13 +71,13 @@ export class DebuggerSession extends Object implements Closeable {
     // private suspensionFilterUnchanged: Assumption;
     // private syntaxElementsBinding: EventBinding<ExecutionEventNodeFactory>;
     // private threadSuspensions: ThreadLocal<DebuggerSession$ThreadSuspension>;
-    // private addBindings(includeInternalCode: boolean, sFilter: (param0: Source) => kotlin.Boolean): void;
+    // private addBindings(includeInternalCode: boolean, sFilter: (param0: Source) => boolean): void;
     clearDisabledSteppingOnCurrentThread(count: number): void;
     // private clearStrategies(): void;
     close(): void;
     // private collectDebuggerNodes(source: DebuggerNode, suspendAnchor: SuspendAnchor): DebuggerNode[];
     // private collectDebuggerNodes(iNode: Node, suspendAnchor: SuspendAnchor): DebuggerNode[];
-    // private createBinding(includeInternalCode: boolean, sFilter: (param0: Source) => kotlin.Boolean, factory: ExecutionEventNodeFactory, onInput: boolean, tags: Class<Object>[]): EventBinding<ExecutionEventNodeFactory>;
+    // private createBinding(includeInternalCode: boolean, sFilter: (param0: Source) => boolean, factory: ExecutionEventNodeFactory, onInput: boolean, tags: Class<Object>[]): EventBinding<ExecutionEventNodeFactory>;
     createPrimitiveValue(primitiveValue: Object, language: LanguageInfo): DebugValue;
     disposeBreakpoint(breakpoint: Breakpoint): void;
     // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breaks: Breakpoint[], conditionFailures: Map<Breakpoint, Throwable>, singleStepCompleted: boolean, isUnwind: boolean): Object;

@@ -17,7 +17,7 @@ export class ConfigSection extends Object {
     getDouble(arg0: string, arg1: number): number;
     getInt(arg0: string, arg1: number): number;
     getIntegerList(arg0: string): number[];
-    getListSafe(arg0: string, arg1: Class<T>, arg2: string): T[];
+    getListSafe<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>, arg2: string): T[];
     getSection(arg0: string): ConfigSection;
     getSerializedComponent(arg0: string): JsonElement;
     getString(arg0: string, arg1: string): string;

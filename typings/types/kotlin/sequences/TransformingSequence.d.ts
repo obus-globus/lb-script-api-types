@@ -5,6 +5,6 @@ export class TransformingSequence<T extends Object | number | string | boolean, 
     constructor(sequence: Sequence<T>, transformer: (param0: T) => R)
     // private sequence: Sequence<T>;
     // private transformer: (param0: T) => R;
-    flatten(iterator: (param0: R) => Iterator<E>): Sequence<E>;
+    flatten<E extends Object | number | string | boolean>(iterator: (param0: R) => Iterator<E>): Sequence<E>;
     iterator(): Iterator<R>;
 }

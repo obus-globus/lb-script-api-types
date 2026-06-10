@@ -36,8 +36,8 @@ export class InternalThreadLocalMap extends UnpaddedInternalThreadLocalMap {
     // private stringBuilder: StringBuilder;
     // private typeParameterMatcherFindCache: Map<Class<Object>, { [key: string]: TypeParameterMatcher }>;
     // private typeParameterMatcherGetCache: Map<Class<Object>, TypeParameterMatcher>;
-    arrayList(): E[];
-    arrayList(arg0: number): E[];
+    arrayList<E extends Object | number | string | boolean>(): E[];
+    arrayList<E extends Object | number | string | boolean>(arg0: number): E[];
     charsetDecoderCache(): Map<Charset, CharsetDecoder>;
     charsetEncoderCache(): Map<Charset, CharsetEncoder>;
     counterHashCode(): IntegerHolder;

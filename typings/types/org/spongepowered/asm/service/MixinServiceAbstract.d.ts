@@ -25,7 +25,7 @@ export abstract class MixinServiceAbstract extends Object implements IMixinServi
     getLogger(arg0: string): ILogger;
     getMaxCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
     getMinCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
-    getMixinContainers(): E[];
+    getMixinContainers(): IContainerHandle[];
     getReEntranceLock(): ReEntranceLock;
     // private getServiceAgents(): IMixinPlatformServiceAgent[];
     getSideName(): string;

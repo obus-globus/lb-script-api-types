@@ -10,8 +10,8 @@ export class ModuleAutoTool$SilkTouchHandler extends ToggleableValueGroup implem
     // private /*not mapped: */ getBlocks(): Block[];
     // private filter: Filter;
     // private /*not mapped: */ getFilter(): Filter;
-    and(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
-    negate(): (param0: T, param1: U) => kotlin.Boolean;
-    or(arg0: (param0: T, param1: U) => kotlin.Boolean): (param0: T, param1: U) => kotlin.Boolean;
+    and(arg0: (param0: ItemStack, param1: BlockState) => boolean): (param0: ItemStack, param1: BlockState) => boolean;
+    negate(): (param0: ItemStack, param1: BlockState) => boolean;
+    or(arg0: (param0: ItemStack, param1: BlockState) => boolean): (param0: ItemStack, param1: BlockState) => boolean;
     test(itemStack: ItemStack, blockState: BlockState): boolean;
 }

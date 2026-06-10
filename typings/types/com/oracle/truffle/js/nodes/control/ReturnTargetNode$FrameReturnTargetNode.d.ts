@@ -6,8 +6,8 @@ import type { ReturnTargetNode } from '../../../../../../com/oracle/truffle/js/n
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReturnTargetNode$FrameReturnTargetNode extends ReturnTargetNode {
-    static cloneUninitialized(paramnode: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: (Object | null)[]): Object | null;
+    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
+    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static create(paramchild: JavaScriptNode): ReturnTargetNode;
     static createFrameReturnTarget(parambody: JavaScriptNode, paramreturnValue: JavaScriptNode): ReturnTargetNode$FrameReturnTargetNode;
     static findBlockScopeNode(paramnode: Node): Node;

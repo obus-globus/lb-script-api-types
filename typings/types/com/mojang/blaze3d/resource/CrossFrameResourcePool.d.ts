@@ -13,6 +13,6 @@ export class CrossFrameResourcePool extends Object implements GraphicsResourceAl
     clear(): void;
     close(): void;
     endFrame(): void;
-    entries(): E[];
+    entries(): CrossFrameResourcePool$ResourceEntry<Object>[];
     release<T extends Object | number | string | boolean>(descriptor: ResourceDescriptor<T>, resource: T): void;
 }

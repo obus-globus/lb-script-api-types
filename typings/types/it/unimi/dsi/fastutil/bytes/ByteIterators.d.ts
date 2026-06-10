@@ -11,17 +11,17 @@ import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class ByteIterators extends Object {
     static EMPTY_ITERATOR: ByteIterators$EmptyIterator;
-    static all(paramarg0: ByteIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static all(paramarg0: ByteIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static any(paramarg0: ByteIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
-    static any(paramarg0: ByteIterator, paramarg1: (param0: number) => kotlin.Boolean): boolean;
+    static all(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): boolean;
+    static all(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): boolean;
+    static any(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): boolean;
+    static any(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): boolean;
     static asByteIterator(paramarg0: Iterator<Object>): ByteIterator;
     static asByteIterator(paramarg0: ListIterator<Object>): ByteListIterator;
     static concat(paramarg0: (Object | null)[]): ByteIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ByteIterator;
     static fromTo(paramarg0: number, paramarg1: number): ByteListIterator;
-    static indexOf(paramarg0: ByteIterator, paramarg1: (param0: number) => kotlin.Boolean): number;
-    static indexOf(paramarg0: ByteIterator, paramarg1: (param0: number) => kotlin.Boolean): number;
+    static indexOf(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): number;
+    static indexOf(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): number;
     static narrow(paramarg0: PrimitiveIterator$OfInt): ByteIterator;
     static pour(paramarg0: ByteIterator, paramarg1: (Object | null)[]): number;
     static pour(paramarg0: ByteIterator, paramarg1: (Object | null)[], paramarg2: number): number;

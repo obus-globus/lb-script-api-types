@@ -35,7 +35,7 @@ export class MappingDataLoader extends Object {
     loadData(arg0: string): JsonObject;
     loadFromDataDir(arg0: string): JsonObject;
     loadMappings(arg0: Map$Entry<string, Tag>[], arg1: string): Mappings;
-    loadMappings(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: (param0: V) => unknown, arg3: (param0: V, param1: Object | null, param2: number) => void, arg4: (param0: M, param1: V) => unknown): Mappings;
+    loadMappings<V extends Object | number | string | boolean, M extends Mappings>(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: (param0: number) => V, arg3: (param0: V, param1: number, param2: number) => void, arg4: (param0: V, param1: number) => M): Mappings;
     loadNBT(arg0: string): Map$Entry<string, Tag>[];
     loadNBT(arg0: string, arg1: boolean): Map$Entry<string, Tag>[];
     loadNBTFromFile(arg0: string): Map$Entry<string, Tag>[];

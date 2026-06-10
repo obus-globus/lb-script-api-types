@@ -11,7 +11,7 @@ export class PriorityQueues$SynchronizedPriorityQueue<K extends Object | number 
     // private sync: Object;
     changed(): void;
     clear(): void;
-    comparator(): (param0: K) => kotlin.Boolean;
+    comparator(): (param0: Object) => boolean;
     dequeue(): K;
     enqueue(arg0: K): void;
     equals(arg0: Object | null): boolean;

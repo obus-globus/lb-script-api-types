@@ -8,7 +8,7 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { TrackedWaypoint } from '../../../../../net/minecraft/world/waypoints/TrackedWaypoint.d.ts'
 import type { TrackedWaypointManager } from '../../../../../net/minecraft/world/waypoints/TrackedWaypointManager.d.ts'
 export class ClientboundTrackedWaypointPacket$Operation extends Enum<ClientboundTrackedWaypointPacket$Operation> {
-    static BY_ID: (param0: ClientboundTrackedWaypointPacket$Operation) => unknown;
+    static BY_ID: (param0: number) => ClientboundTrackedWaypointPacket$Operation;
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundTrackedWaypointPacket$Operation>;
     static TRACK: ClientboundTrackedWaypointPacket$Operation;
     static UNTRACK: ClientboundTrackedWaypointPacket$Operation;

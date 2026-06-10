@@ -1,3 +1,4 @@
+import type { TimeZoneNames$MatchInfo } from '../../../../com/ibm/icu/text/TimeZoneNames$MatchInfo.d.ts'
 import type { TimeZoneNames$NameType } from '../../../../com/ibm/icu/text/TimeZoneNames$NameType.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
@@ -9,7 +10,7 @@ export abstract class TimeZoneNames extends Object implements Serializable {
     static getInstance(paramarg0: Locale): TimeZoneNames;
     static getTZDBInstance(paramarg0: ULocale): TimeZoneNames;
     constructor()
-    find(arg0: CharSequence, arg1: number, arg2: TimeZoneNames$NameType[]): E[];
+    find(arg0: CharSequence, arg1: number, arg2: TimeZoneNames$NameType[]): TimeZoneNames$MatchInfo[];
     getAvailableMetaZoneIDs(): string[];
     getAvailableMetaZoneIDs(arg0: string): string[];
     getDisplayName(arg0: string, arg1: TimeZoneNames$NameType, arg2: number): string;

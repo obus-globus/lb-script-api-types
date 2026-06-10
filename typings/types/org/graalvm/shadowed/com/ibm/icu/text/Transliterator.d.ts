@@ -23,7 +23,7 @@ export abstract class Transliterator extends Object implements StringTransform {
     static getInstance(paramID: string, paramdir: number): Transliterator;
     static registerAlias(paramaliasID: string, paramrealID: string): void;
     static registerAny(): void;
-    static registerClass(paramID: string, paramtransClass: Class<Object>, paramdisplayName: string): void;
+    static registerClass(paramID: string, paramtransClass: Class<Transliterator>, paramdisplayName: string): void;
     static registerFactory(paramID: string, paramfactory: Transliterator$Factory): void;
     static registerInstance(paramtrans: Transliterator): void;
     static unregister(paramID: string): void;

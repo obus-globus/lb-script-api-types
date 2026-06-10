@@ -11,8 +11,8 @@ export class CharSpliterators$SpliteratorWrapperWithComparator extends CharSplit
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Spliterator<string>, arg1: (param0: string, param1: string) => kotlin.Int)
-    readonly comparator: (param0: string, param1: string) => kotlin.Int;
-    getComparator(): (param0: string, param1: string) => kotlin.Int;
+    constructor(arg0: Spliterator<string>, arg1: (param0: string, param1: string) => number)
+    readonly comparator: (param0: string, param1: string) => number;
+    getComparator(): (param0: string, param1: string) => number;
     trySplit(): CharSpliterator;
 }

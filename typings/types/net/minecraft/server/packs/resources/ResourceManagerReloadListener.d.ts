@@ -9,5 +9,5 @@ export interface ResourceManagerReloadListener extends Object, PreparableReloadL
     getName(): string;
     onResourceManagerReload(resourceManager: ResourceManager): void;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
 }

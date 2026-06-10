@@ -10,7 +10,7 @@ export interface MappingTreeView extends Object{
     accept(arg0: MappingVisitor, arg1: VisitOrder): void;
     getClass(arg0: string): MappingTreeView$ClassMappingView;
     getClass(arg0: string, arg1: number): MappingTreeView$ClassMappingView;
-    getClasses(): E[];
+    getClasses(): MappingTreeView$ClassMappingView[];
     getDstNamespaces(): string[];
     getField(arg0: string, arg1: string, arg2: string, arg3: number): MappingTreeView$FieldMappingView;
     getMethod(arg0: string, arg1: string, arg2: string, arg3: number): MappingTreeView$MethodMappingView;

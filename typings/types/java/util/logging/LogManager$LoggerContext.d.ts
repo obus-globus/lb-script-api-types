@@ -22,7 +22,7 @@ export class LogManager$LoggerContext extends Object {
     getNode(arg0: string): LogManager$LogNode;
     getOwner(): LogManager;
     getRootLogger(): Logger;
-    // private processParentHandlers(arg0: Logger, arg1: string, arg2: (param0: Logger) => kotlin.Boolean): void;
+    // private processParentHandlers(arg0: Logger, arg1: string, arg2: (param0: Logger) => boolean): void;
     removeLoggerRef(arg0: string, arg1: LogManager$LoggerWeakRef): void;
     requiresDefaultLoggers(): boolean;
 }

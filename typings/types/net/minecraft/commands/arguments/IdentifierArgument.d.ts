@@ -11,9 +11,8 @@ export class IdentifierArgument extends Object implements ArgumentType<Identifie
     static getId(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Identifier;
     static id(): IdentifierArgument;
     constructor()
-    getExamples(): E[];
-    listSuggestions(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<T extends Object | number | string | boolean, S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
-    parse(reader: StringReader): Identifier;
+    getExamples(): string[];
+    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Identifier;
+    parse(reader: StringReader): Identifier;
 }

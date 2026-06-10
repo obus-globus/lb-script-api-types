@@ -1,3 +1,4 @@
+import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -11,7 +12,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { DebugSubscription$Update } from '../../../../../net/minecraft/util/debug/DebugSubscription$Update.d.ts'
 export class ClientboundDebugBlockValuePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundDebugBlockValuePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: Object | null) => void, paramreader: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
+    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(blockPos: BlockPos, update: DebugSubscription$Update<Object>)
     // private blockPos: BlockPos;
     // private update: DebugSubscription$Update<Object>;

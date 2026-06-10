@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Payload } from '../../../org/ahocorasick/trie/Payload.d.ts'
 import type { PayloadTrie } from '../../../org/ahocorasick/trie/PayloadTrie.d.ts'
 import type { TrieConfig } from '../../../org/ahocorasick/trie/TrieConfig.d.ts'
 export class PayloadTrie$PayloadTrieBuilder<T extends Object | number | string | boolean> extends Object {
@@ -7,7 +8,7 @@ export class PayloadTrie$PayloadTrieBuilder<T extends Object | number | string |
     // private trieConfig: TrieConfig;
     addKeyword(arg0: string): PayloadTrie$PayloadTrieBuilder<T>;
     addKeyword(arg0: string, arg1: T): PayloadTrie$PayloadTrieBuilder<T>;
-    addKeywords(arg0: E[]): PayloadTrie$PayloadTrieBuilder<T>;
+    addKeywords(arg0: Payload<T>[]): PayloadTrie$PayloadTrieBuilder<T>;
     build(): PayloadTrie<T>;
     caseInsensitive(): PayloadTrie$PayloadTrieBuilder<T>;
     ignoreCase(): PayloadTrie$PayloadTrieBuilder<T>;

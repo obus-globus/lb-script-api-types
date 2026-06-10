@@ -30,7 +30,7 @@ export class ModuleManager extends Object implements EventListener {
     children(): EventListener[];
     clear(): void;
     contains(element: ClientModule): boolean;
-    containsAll(elements: E[]): boolean;
+    containsAll(elements: ClientModule[]): boolean;
     get(moduleName: string): ClientModule | null;
     /**
      * This is being used by UltralightJS for the implementation of the ClickGUI. DO NOT REMOVE!
@@ -39,7 +39,7 @@ export class ModuleManager extends Object implements EventListener {
      */
     getCategories(): string[];
     getModuleByName(module: string): ClientModule | null;
-    getModules(): E[];
+    getModules(): ClientModule[];
     isEmpty(): boolean;
     iterator(): Iterator<ClientModule>;
     parent(): EventListener | null;

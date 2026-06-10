@@ -39,7 +39,7 @@ export class SoundManager extends SimplePreparableReloadListener<SoundManager$Pr
     emergencyShutdown(): void;
     fabric$getId(): Identifier;
     getAvailableSoundDevices(): string[];
-    getAvailableSounds(): E[];
+    getAvailableSounds(): Identifier[];
     getChannelDebugString(): string;
     getListenerTransform(): ListenerTransform;
     getName(): string;
@@ -53,7 +53,7 @@ export class SoundManager extends SimplePreparableReloadListener<SoundManager$Pr
     queueTickingSound(instance: TickableSoundInstance): void;
     refreshCategoryVolume(category: SoundSource): void;
     reload(): void;
-    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => java.util.concurrent.CompletableFuture<unknown>, reloadExecutor: Executor): CompletableFuture<void>;
+    reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     removeListener(listener: SoundEventListener): void;
     resume(): void;
     stop(): void;

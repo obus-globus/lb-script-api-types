@@ -25,5 +25,5 @@ export class Tables$TransposeTable<C extends Object | number | string | boolean,
     rowKeySet(): C[];
     rowMap(): Map<C, Map<R, V>>;
     size(): number;
-    values(): E[];
+    values(): V[];
 }

@@ -27,11 +27,11 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ShaderDefines } from '../../../../net/minecraft/client/renderer/ShaderDefines.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class GlDevice extends Object implements GpuDeviceBackend {
-    constructor(windowHandle: number, defaultShaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String, debugOptions: GpuDebugOptions)
+    constructor(windowHandle: number, defaultShaderSource: (param0: Identifier, param1: ShaderType) => string, debugOptions: GpuDebugOptions)
     readonly bufferStorage: BufferStorage;
     // private debugLabels: GlDebugLabel;
     // private debugLog: GlDebug;
-    // private defaultShaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String;
+    // private defaultShaderSource: (param0: Identifier, param1: ShaderType) => string;
     // private directStateAccess: DirectStateAccess;
     readonly enabledExtensions: string[];
     // private encoder: CommandEncoderBackend;
@@ -45,9 +45,9 @@ export class GlDevice extends Object implements GpuDeviceBackend {
     // private windowHandle: number;
     clearPipelineCache(): void;
     close(): void;
-    // private compilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): GlRenderPipeline;
-    // private compileProgram(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): GlProgram;
-    // private compileShader(key: GlDevice$ShaderCompilationKey, shaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): GlShaderModule;
+    // private compilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => string): GlRenderPipeline;
+    // private compileProgram(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => string): GlProgram;
+    // private compileShader(key: GlDevice$ShaderCompilationKey, shaderSource: (param0: Identifier, param1: ShaderType) => string): GlShaderModule;
     createBuffer(label: () => string, usage: number, data: ByteBuffer): GpuBuffer;
     createBuffer(label: () => string, usage: number, size: number): GpuBuffer;
     createCommandEncoder(): CommandEncoderBackend;
@@ -66,14 +66,14 @@ export class GlDevice extends Object implements GpuDeviceBackend {
     getMaxSupportedAnisotropy(): number;
     getMaxTextureSize(): number;
     getOrCompilePipeline(pipeline: RenderPipeline): GlRenderPipeline;
-    getOrCompileShader(id: Identifier, type: ShaderType, defines: ShaderDefines, shaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): GlShaderModule;
+    getOrCompileShader(id: Identifier, type: ShaderType, defines: ShaderDefines, shaderSource: (param0: Identifier, param1: ShaderType) => string): GlShaderModule;
     getRenderer(): string;
     getUniformOffsetAlignment(): number;
     getVendor(): string;
     getVersion(): string;
     isDebuggingEnabled(): boolean;
     isZZeroToOne(): boolean;
-    precompilePipeline(pipeline: RenderPipeline, customShaderSource: (param0: Identifier, param1: ShaderType) => kotlin.String): GlRenderPipeline;
+    precompilePipeline(pipeline: RenderPipeline, customShaderSource: (param0: Identifier, param1: ShaderType) => string): GlRenderPipeline;
     presentFrame(): void;
     setVsync(enabled: boolean): void;
     vertexArrayCache(): VertexArrayCache;

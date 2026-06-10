@@ -24,17 +24,17 @@ export abstract class StringFormat extends Object {
     canRead(arg0: TextStringReader): boolean;
     canWrite(arg0: TextFormatting): boolean;
     convertTo(arg0: string, arg1: StringFormat): string;
-    fromString(arg0: string, arg1: ColorHandling, arg2: (param0: ResolvedFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): TextComponent;
-    fromString(arg0: string, arg1: ColorHandling, arg2: (param0: ResolvedFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting, arg3: boolean): TextComponent;
+    fromString(arg0: string, arg1: ColorHandling, arg2: (param0: ResolvedFormatting, param1: StringBuilder) => TextFormatting): TextComponent;
+    fromString(arg0: string, arg1: ColorHandling, arg2: (param0: ResolvedFormatting, param1: StringBuilder) => TextFormatting, arg3: boolean): TextComponent;
     matches(arg0: TextStringReader): boolean;
-    prependStyle(arg0: string, arg1: Style, arg2: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): string;
+    prependStyle(arg0: string, arg1: Style, arg2: (param0: TextFormatting, param1: StringBuilder) => TextFormatting): string;
     read(arg0: TextStringReader): TextFormatting;
     resolve(arg0: TextStringReader): ResolvedFormatting;
     shouldResetAtEnd(): boolean;
-    split(arg0: string, arg1: string, arg2: ColorHandling, arg3: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting, arg4: (param0: ResolvedFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): string[];
-    styleAt(arg0: string, arg1: number, arg2: ColorHandling, arg3: (param0: ResolvedFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): Style;
+    split(arg0: string, arg1: string, arg2: ColorHandling, arg3: (param0: TextFormatting, param1: StringBuilder) => TextFormatting, arg4: (param0: ResolvedFormatting, param1: StringBuilder) => TextFormatting): string[];
+    styleAt(arg0: string, arg1: number, arg2: ColorHandling, arg3: (param0: ResolvedFormatting, param1: StringBuilder) => TextFormatting): Style;
     toString(): string;
-    toString(arg0: TextComponent, arg1: ColorHandling, arg2: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting): string;
-    toString(arg0: TextComponent, arg1: ColorHandling, arg2: (param0: TextFormatting, param1: StringBuilder) => com.viaversion.viaversion.libs.mcstructs.text.TextFormatting, arg3: boolean): string;
+    toString(arg0: TextComponent, arg1: ColorHandling, arg2: (param0: TextFormatting, param1: StringBuilder) => TextFormatting): string;
+    toString(arg0: TextComponent, arg1: ColorHandling, arg2: (param0: TextFormatting, param1: StringBuilder) => TextFormatting, arg3: boolean): string;
     write(arg0: StringBuilder, arg1: TextFormatting): void;
 }

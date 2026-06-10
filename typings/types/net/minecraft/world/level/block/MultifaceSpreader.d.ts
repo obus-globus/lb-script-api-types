@@ -16,7 +16,7 @@ export class MultifaceSpreader extends Object {
     constructor(config: MultifaceSpreader$SpreadConfig)
     // private config: MultifaceSpreader$SpreadConfig;
     canSpreadInAnyDirection(state: BlockState, level: BlockGetter, pos: BlockPos, startingFace: Direction): boolean;
-    getSpreadFromFaceTowardDirection(state: BlockState, level: BlockGetter, pos: BlockPos, startingFace: Direction, spreadDirection: Direction, canSpreadInto: (param0: BlockGetter, param1: BlockPos, param2: MultifaceSpreader$SpreadPos) => kotlin.Boolean): Optional<MultifaceSpreader$SpreadPos>;
+    getSpreadFromFaceTowardDirection(state: BlockState, level: BlockGetter, pos: BlockPos, startingFace: Direction, spreadDirection: Direction, canSpreadInto: (param0: BlockGetter, param1: BlockPos, param2: MultifaceSpreader$SpreadPos) => boolean): Optional<MultifaceSpreader$SpreadPos>;
     spreadAll(state: BlockState, level: LevelAccessor, pos: BlockPos, postProcess: boolean): number;
     // private spreadFromFaceTowardAllDirections(state: BlockState, level: LevelAccessor, pos: BlockPos, startingFace: Direction, postProcess: boolean): number;
     spreadFromFaceTowardDirection(state: BlockState, level: LevelAccessor, pos: BlockPos, fromFace: Direction, spreadDirection: Direction, postProcess: boolean): Optional<MultifaceSpreader$SpreadPos>;

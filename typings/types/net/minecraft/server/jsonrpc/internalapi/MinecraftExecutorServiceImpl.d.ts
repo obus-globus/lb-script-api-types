@@ -8,5 +8,5 @@ export class MinecraftExecutorServiceImpl extends Object implements MinecraftExe
     constructor(server: DedicatedServer)
     // private server: DedicatedServer;
     submit(runnable: () => void): CompletableFuture<void>;
-    submit(supplier: () => V): CompletableFuture<V>;
+    submit<V extends Object | number | string | boolean>(supplier: () => V): CompletableFuture<V>;
 }

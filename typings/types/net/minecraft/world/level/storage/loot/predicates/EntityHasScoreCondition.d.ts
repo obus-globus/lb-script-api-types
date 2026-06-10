@@ -2,6 +2,7 @@ import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { ContextKey } from '../../../../../../../net/minecraft/util/context/ContextKey.d.ts'
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { IntRange } from '../../../../../../../net/minecraft/world/level/storage/loot/IntRange.d.ts'
@@ -12,7 +13,7 @@ import type { EntityHasScoreCondition$Builder } from '../../../../../../../net/m
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { Scoreboard } from '../../../../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 export class EntityHasScoreCondition extends Record implements LootItemCondition {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<EntityHasScoreCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;

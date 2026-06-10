@@ -9,12 +9,12 @@ import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export interface EntityGetter extends Object {
     getEntities(except: Entity, bb: AABB): Entity[];
-    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => kotlin.Boolean): Entity[];
-    getEntities(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
-    getEntitiesOfClass(baseClass: Class<T>, bb: AABB): T[];
-    getEntitiesOfClass(baseClass: Class<T>, bb: AABB, selector: (param0: T) => kotlin.Boolean): T[];
+    getEntities(except: Entity, bb: AABB, selector: (param0: Entity) => boolean): Entity[];
+    getEntities<T extends Entity>(type: EntityTypeTest<Entity, T>, bb: AABB, selector: (param0: T) => boolean): T[];
+    getEntitiesOfClass<T extends Entity>(baseClass: Class<T>, bb: AABB): T[];
+    getEntitiesOfClass<T extends Entity>(baseClass: Class<T>, bb: AABB, selector: (param0: T) => boolean): T[];
     getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];
-    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => kotlin.Boolean): Player;
+    getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => boolean): Player;
     getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
     getNearestPlayer(source: Entity, maxDist: number): Player;
     getPlayerByUUID(uuid: UUID): Player;

@@ -1,4 +1,5 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
+import type { DataResult } from '../../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiFunction } from '../../../../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
@@ -21,21 +22,21 @@ import type { Validatable } from '../../../../../../net/minecraft/world/level/st
 import type { ValidationContext } from '../../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'
 import type { LootItemFunction } from '../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction.d.ts'
 export class LootTable extends Object implements FabricLootTable, LootTableAccessor, Validatable {
-    static CODEC: Codec<Object>;
+    static CODEC: Codec<Holder<LootTable>>;
     static DEFAULT_PARAM_SET: ContextKeySet;
     static DIRECT_CODEC: Codec<LootTable>;
     static EMPTY: LootTable;
-    static KEY_CODEC: Codec<Object>;
+    static KEY_CODEC: Codec<ResourceKey<LootTable>>;
     static RANDOMIZE_SEED: number;
     static createStackSplitter(paramlevel: ServerLevel, paramoutput: (param0: ItemStack) => void): (param0: ItemStack) => void;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
     static lootTable(): LootTable$Builder;
-    static validate(paramcontext: ValidationContext, paramname: string, paramlist: (Object | null)[]): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Object>): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
+    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
-    static validate(paramcontext: ValidationContext, paramlist: (Object | null)[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Object>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Object | null) => Object | null;
+    static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
+    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
+    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
     private constructor(paramSet: ContextKeySet, randomSequence: Optional<Identifier>, pools: LootPool[], functions: LootItemFunction[])
     // private compositeFunction: (param0: ItemStack, param1: LootContext) => ItemStack;
     // private functions: LootItemFunction[];

@@ -6,8 +6,8 @@ import type { Button$OnPress } from '../../../../../../net/minecraft/client/gui/
 import type { Tooltip } from '../../../../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class IrisButton$Builder extends Object {
-    constructor(arg0: Component, arg1: Button$OnPress, arg2: () => kotlin.Float)
-    // private alpha: () => kotlin.Float;
+    constructor(arg0: Component, arg1: Button$OnPress, arg2: () => number)
+    // private alpha: () => number;
     // private createNarration: Button$CreateNarration;
     // private height: number;
     // private message: Component;

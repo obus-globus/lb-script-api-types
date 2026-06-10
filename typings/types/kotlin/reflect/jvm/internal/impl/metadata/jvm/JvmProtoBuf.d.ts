@@ -11,7 +11,7 @@ import type { ExtensionRegistryLite } from '../../../../../../../kotlin/reflect/
 import type { GeneratedMessageLite$GeneratedExtension } from '../../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/GeneratedMessageLite$GeneratedExtension.d.ts'
 export class JvmProtoBuf extends Object {
     static anonymousObjectOriginName: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Class, number>;
-    static classLocalVariable: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Class, Object>;
+    static classLocalVariable: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Class, ProtoBuf$Property[]>;
     static classModuleName: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Class, number>;
     static constructorSignature: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Constructor, JvmProtoBuf$JvmMethodSignature>;
     static flags: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Property, number>;
@@ -19,7 +19,7 @@ export class JvmProtoBuf extends Object {
     static jvmClassFlags: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Class, number>;
     static lambdaClassOriginName: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Function, number>;
     static methodSignature: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Function, JvmProtoBuf$JvmMethodSignature>;
-    static packageLocalVariable: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Package, Object>;
+    static packageLocalVariable: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Package, ProtoBuf$Property[]>;
     static packageModuleName: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Package, number>;
     static propertySignature: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Property, JvmProtoBuf$JvmPropertySignature>;
     static registerAllExtensions(paramarg0: ExtensionRegistryLite): void;

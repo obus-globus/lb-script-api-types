@@ -3,5 +3,5 @@ import type { PeriodFormatterData } from '../../../../../../../../../org/graalvm
 export abstract class PeriodFormatterDataService extends Object {
     constructor()
     get(localeName: string): PeriodFormatterData;
-    getAvailableLocales(): E[];
+    getAvailableLocales(): string[];
 }

@@ -9,5 +9,5 @@ export interface Get<K extends Object | number | string | boolean, V extends Obj
     keySet(): K[];
     remove(arg0: Object): V;
     size(): number;
-    values(): E[];
+    values(): V[];
 }

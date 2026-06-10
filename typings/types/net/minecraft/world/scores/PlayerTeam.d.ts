@@ -34,7 +34,7 @@ export class PlayerTeam extends Team {
     getNameTagVisibility(): Team$Visibility;
     getPlayerPrefix(): Component;
     getPlayerSuffix(): Component;
-    getPlayers(): E[];
+    getPlayers(): string[];
     getScoreboard(): Scoreboard;
     isAllowFriendlyFire(): boolean;
     pack(): PlayerTeam$Packed;

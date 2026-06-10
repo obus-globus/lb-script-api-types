@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
+import type { IClassProcessor } from '../../../../../org/spongepowered/asm/launch/IClassProcessor.d.ts'
 import type { ContainerHandleModLauncher } from '../../../../../org/spongepowered/asm/launch/platform/container/ContainerHandleModLauncher.d.ts'
 import type { ILogger } from '../../../../../org/spongepowered/asm/logging/ILogger.d.ts'
 import type { MixinEnvironment$CompatibilityLevel } from '../../../../../org/spongepowered/asm/mixin/MixinEnvironment$CompatibilityLevel.d.ts'
@@ -37,9 +38,9 @@ export class MixinServiceModLauncher extends MixinServiceAbstract {
     getFeatureValidator(): IFeatureValidator;
     getMinCompatibilityLevel(): MixinEnvironment$CompatibilityLevel;
     getName(): string;
-    getPlatformAgents(): E[];
+    getPlatformAgents(): string[];
     getPrimaryContainer(): ContainerHandleModLauncher;
-    getProcessors(): E[];
+    getProcessors(): IClassProcessor[];
     getResourceAsStream(arg0: string): InputStream;
     // private getTransformationHandler(): MixinTransformationHandler;
     getTransformerProvider(): ITransformerProvider;

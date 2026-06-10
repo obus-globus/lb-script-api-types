@@ -19,9 +19,8 @@ export class ConcurrentHashMap$EntrySpliterator<K extends Object | number | stri
     // private map: Map<K, V>;
     characteristics(): number;
     estimateSize(): number;
-    forEachRemaining(arg0: (param0: T) => void): void;
     forEachRemaining(arg0: (param0: Map$Entry<K, V>) => void): void;
-    getComparator(): (param0: T) => kotlin.Boolean;
+    getComparator(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: Map$Entry<K, V>) => void): boolean;

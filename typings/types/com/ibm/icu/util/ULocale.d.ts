@@ -47,7 +47,7 @@ export class ULocale extends Object implements Serializable, Comparable<ULocale>
     static forLanguageTag(paramarg0: string): ULocale;
     static forLocale(paramarg0: Locale): ULocale;
     static getAvailableLocales(): (Object | null)[];
-    static getAvailableLocalesByType(paramarg0: ULocale$AvailableType): E[];
+    static getAvailableLocalesByType(paramarg0: ULocale$AvailableType): ULocale[];
     static getBaseName(paramarg0: string): string;
     static getCountry(paramarg0: string): string;
     static getDefault(): ULocale;

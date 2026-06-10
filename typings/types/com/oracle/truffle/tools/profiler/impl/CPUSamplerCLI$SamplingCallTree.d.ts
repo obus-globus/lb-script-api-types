@@ -8,7 +8,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { OptionValues } from '../../../../../../org/graalvm/options/OptionValues.d.ts'
 export class CPUSamplerCLI$SamplingCallTree extends Object {
     constructor(data: CPUSamplerData, options: OptionValues)
-    // private entries: Map<Thread, E[]>;
+    // private entries: Map<Thread, CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry[]>;
     // private format: string;
     // private maxNameLength: number;
     // private minSamples: number;
@@ -20,9 +20,9 @@ export class CPUSamplerCLI$SamplingCallTree extends Object {
     // private summariseThreads: boolean;
     // private tiers: number[];
     // private title: string;
-    // private calculateMaxValues(threadData: Map<Thread, E[]>): void;
+    // private calculateMaxValues(threadData: Map<Thread, ProfilerNode<CPUSampler$Payload>[]>): void;
     // private calculateMaxValuesRec(node: ProfilerNode<CPUSampler$Payload>, depth: number): void;
-    // private makeEntries(threadData: Map<Thread, E[]>): void;
+    // private makeEntries(threadData: Map<Thread, ProfilerNode<CPUSampler$Payload>[]>): void;
     // private makeEntry(node: ProfilerNode<CPUSampler$Payload>, depth: number): CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry;
     // private mergeEntry(callTreeEntries: CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry[], node: ProfilerNode<CPUSampler$Payload>, depth: number): void;
     print(out: PrintStream): void;

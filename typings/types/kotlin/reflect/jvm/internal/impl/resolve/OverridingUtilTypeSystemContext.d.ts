@@ -95,7 +95,7 @@ export class OverridingUtilTypeSystemContext extends Object implements ClassicTy
     hasFlexibleNullability(arg0: KotlinTypeMarker): boolean;
     hasRecursiveBounds(arg0: TypeParameterMarker, arg1: TypeConstructorMarker): boolean;
     identicalArguments(arg0: RigidTypeMarker, arg1: RigidTypeMarker): boolean;
-    intersectTypes(arg0: E[]): KotlinTypeMarker;
+    intersectTypes(arg0: KotlinTypeMarker[]): KotlinTypeMarker;
     isAnyConstructor(arg0: TypeConstructorMarker): boolean;
     isArrayOrNullableArray(arg0: KotlinTypeMarker): boolean;
     isCapturedType(arg0: KotlinTypeMarker): boolean;
@@ -140,12 +140,12 @@ export class OverridingUtilTypeSystemContext extends Object implements ClassicTy
     original(arg0: DefinitelyNotNullTypeMarker): SimpleTypeMarker;
     originalIfDefinitelyNotNullable(arg0: RigidTypeMarker): SimpleTypeMarker;
     parametersCount(arg0: TypeConstructorMarker): number;
-    possibleIntegerTypes(arg0: RigidTypeMarker): E[];
+    possibleIntegerTypes(arg0: RigidTypeMarker): KotlinTypeMarker[];
     projection(arg0: CapturedTypeConstructorMarker): TypeArgumentMarker;
     safeSubstitute(arg0: TypeSubstitutorMarker, arg1: KotlinTypeMarker): KotlinTypeMarker;
     size(arg0: TypeArgumentListMarker): number;
     substitutionSupertypePolicy(arg0: RigidTypeMarker): TypeCheckerState$SupertypesPolicy;
-    supertypes(arg0: TypeConstructorMarker): E[];
+    supertypes(arg0: TypeConstructorMarker): KotlinTypeMarker[];
     typeConstructor(arg0: CapturedTypeMarker): CapturedTypeConstructorMarker;
     typeConstructor(arg0: KotlinTypeMarker): TypeConstructorMarker;
     typeConstructor(arg0: RigidTypeMarker): TypeConstructorMarker;

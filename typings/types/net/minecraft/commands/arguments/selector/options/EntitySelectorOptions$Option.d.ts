@@ -5,11 +5,11 @@ import type { EntitySelectorParser } from '../../../../../../net/minecraft/comma
 import type { EntitySelectorOptions$Modifier } from '../../../../../../net/minecraft/commands/arguments/selector/options/EntitySelectorOptions$Modifier.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class EntitySelectorOptions$Option extends Record {
-    private constructor(modifier: (param0: EntitySelectorParser) => void, canUse: (param0: EntitySelectorParser) => kotlin.Boolean, description: Component)
-    // private canUse: (param0: EntitySelectorParser) => kotlin.Boolean;
+    private constructor(modifier: (param0: EntitySelectorParser) => void, canUse: (param0: EntitySelectorParser) => boolean, description: Component)
+    // private canUse: (param0: EntitySelectorParser) => boolean;
     // private description: Component;
     // private modifier: (param0: EntitySelectorParser) => void;
-    canUse(): (param0: EntitySelectorParser) => kotlin.Boolean;
+    canUse(): (param0: EntitySelectorParser) => boolean;
     description(): Component;
     equals(o: Object | null): boolean;
     hashCode(): number;

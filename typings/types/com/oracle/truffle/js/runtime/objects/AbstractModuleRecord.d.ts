@@ -26,8 +26,8 @@ export abstract class AbstractModuleRecord extends ScriptOrModule {
     gatherAsynchronousTransitiveDependencies(): AbstractModuleRecord[];
     // private gatherAsynchronousTransitiveDependencies(result: AbstractModuleRecord[], seen: AbstractModuleRecord[]): AbstractModuleRecord[];
     getEnvironment(): MaterializedFrame;
-    getExportedNames(): E[];
-    getExportedNames(exportStarSet: JSModuleRecord[]): E[];
+    getExportedNames(): TruffleString[];
+    getExportedNames(exportStarSet: JSModuleRecord[]): TruffleString[];
     getFrameDescriptor(): FrameDescriptor;
     getHostDefined(): Object;
     getModuleNamespace(phase: Module$ImportPhase): JSModuleNamespaceObject;

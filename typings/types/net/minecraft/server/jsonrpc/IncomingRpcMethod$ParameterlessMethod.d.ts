@@ -11,18 +11,18 @@ import type { MethodInfo } from '../../../../net/minecraft/server/jsonrpc/api/Me
 import type { MinecraftApi } from '../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftApi.d.ts'
 import type { ClientInfo } from '../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
 export class IncomingRpcMethod$ParameterlessMethod<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Record implements IncomingRpcMethod<Params, Result> {
-    static method(paramfunction: (param0: Object | null, param1: Object | null, param2: MinecraftApi) => unknown): IncomingRpcMethod$IncomingRpcMethodBuilder<Object, Object>;
+    static method(paramfunction: (param0: MinecraftApi, param1: Object | null, param2: ClientInfo) => Object | null): IncomingRpcMethod$IncomingRpcMethodBuilder<Object, Object>;
     static method(paramsupplier: (param0: MinecraftApi) => Object | null): IncomingRpcMethod$IncomingRpcMethodBuilder<void, Object>;
-    static method(paramfunction: (param0: Object | null, param1: MinecraftApi) => unknown): IncomingRpcMethod$IncomingRpcMethodBuilder<void, Object>;
-    constructor(info: MethodInfo<Params, Result>, attributes: IncomingRpcMethod$Attributes, supplier: (param0: Result, param1: MinecraftApi) => unknown)
+    static method(paramfunction: (param0: MinecraftApi, param1: ClientInfo) => Object | null): IncomingRpcMethod$IncomingRpcMethodBuilder<void, Object>;
+    constructor(info: MethodInfo<Params, Result>, attributes: IncomingRpcMethod$Attributes, supplier: (param0: MinecraftApi, param1: ClientInfo) => Result)
     // private attributes: IncomingRpcMethod$Attributes;
     // private info: MethodInfo<Params, Result>;
-    // private supplier: (param0: Result, param1: MinecraftApi) => unknown;
+    // private supplier: (param0: MinecraftApi, param1: ClientInfo) => Result;
     apply(minecraftApi: MinecraftApi, paramsJson: JsonElement, clientInfo: ClientInfo): JsonElement;
     attributes(): IncomingRpcMethod$Attributes;
     equals(o: Object | null): boolean;
     hashCode(): number;
     info(): MethodInfo<Params, Result>;
-    supplier(): (param0: Result, param1: MinecraftApi) => unknown;
+    supplier(): (param0: MinecraftApi, param1: ClientInfo) => Result;
     toString(): string;
 }

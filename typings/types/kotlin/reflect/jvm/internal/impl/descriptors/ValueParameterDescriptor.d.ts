@@ -10,7 +10,7 @@ export interface ValueParameterDescriptor extends Object, ParameterDescriptor, V
     getContainingDeclaration(): CallableDescriptor;
     getIndex(): number;
     getOriginal(): ValueParameterDescriptor;
-    getOverriddenDescriptors(): E[];
+    getOverriddenDescriptors(): ValueParameterDescriptor[];
     getVarargElementType(): KotlinType;
     isCrossinline(): boolean;
     isNoinline(): boolean;

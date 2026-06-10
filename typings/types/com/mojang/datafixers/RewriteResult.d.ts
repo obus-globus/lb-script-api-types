@@ -9,7 +9,7 @@ export class RewriteResult<A extends Object | number | string | boolean, B exten
     constructor(view: View<A, B>, recData: BitSet)
     // private recData: BitSet;
     // private view: View<A, B>;
-    compose(arg0: RewriteResult<C, A>): RewriteResult<C, B>;
+    compose<C extends Object | number | string | boolean>(arg0: RewriteResult<C, A>): RewriteResult<C, B>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     recData(): BitSet;

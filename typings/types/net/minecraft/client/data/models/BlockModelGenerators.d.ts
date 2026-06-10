@@ -4,6 +4,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { BiFunction } from '../../../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
+import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ItemTintSource } from '../../../../../net/minecraft/client/color/item/ItemTintSource.d.ts'
 import type { BlockModelGenerators$BlockFamilyProvider } from '../../../../../net/minecraft/client/data/models/BlockModelGenerators$BlockFamilyProvider.d.ts'
@@ -19,6 +20,7 @@ import type { PropertyDispatch } from '../../../../../net/minecraft/client/data/
 import type { ModelInstance } from '../../../../../net/minecraft/client/data/models/model/ModelInstance.d.ts'
 import type { ModelTemplate } from '../../../../../net/minecraft/client/data/models/model/ModelTemplate.d.ts'
 import type { TextureMapping } from '../../../../../net/minecraft/client/data/models/model/TextureMapping.d.ts'
+import type { TexturedModel } from '../../../../../net/minecraft/client/data/models/model/TexturedModel.d.ts'
 import type { TexturedModel$Provider } from '../../../../../net/minecraft/client/data/models/model/TexturedModel$Provider.d.ts'
 import type { MultiblockChestResources } from '../../../../../net/minecraft/client/renderer/MultiblockChestResources.d.ts'
 import type { Variant } from '../../../../../net/minecraft/client/renderer/block/dispatch/Variant.d.ts'
@@ -42,16 +44,16 @@ import type { EnumProperty } from '../../../../../net/minecraft/world/level/bloc
 import type { Property } from '../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 import type { SideChainPart } from '../../../../../net/minecraft/world/level/block/state/properties/SideChainPart.d.ts'
 export class BlockModelGenerators extends Object {
-    static NOP: (param0: Object | null) => unknown;
-    static UV_LOCK: (param0: Object | null) => unknown;
-    static X_ROT_180: (param0: Object | null) => unknown;
-    static X_ROT_270: (param0: Object | null) => unknown;
-    static X_ROT_90: (param0: Object | null) => unknown;
-    static Y_ROT_180: (param0: Object | null) => unknown;
-    static Y_ROT_270: (param0: Object | null) => unknown;
-    static Y_ROT_90: (param0: Object | null) => unknown;
-    static and(paramterms: (Object | null)[]): (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>;
-    static applyRotation(paramorientation: FrontAndTop): (param0: Object | null) => unknown;
+    static NOP: (param0: Object | null) => Object | null;
+    static UV_LOCK: (param0: Object | null) => Object | null;
+    static X_ROT_180: (param0: Object | null) => Object | null;
+    static X_ROT_270: (param0: Object | null) => Object | null;
+    static X_ROT_90: (param0: Object | null) => Object | null;
+    static Y_ROT_180: (param0: Object | null) => Object | null;
+    static Y_ROT_270: (param0: Object | null) => Object | null;
+    static Y_ROT_90: (param0: Object | null) => Object | null;
+    static and(paramterms: (Object | null)[]): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
+    static applyRotation(paramorientation: FrontAndTop): (param0: Object | null) => Object | null;
     static condition(paramproperty: EnumProperty<Object>, paramterm: Object | null, paramadditionalTerms: Object | null): ConditionBuilder;
     static condition(): ConditionBuilder;
     static condition(paramproperty: BooleanProperty, paramterm: boolean): ConditionBuilder;
@@ -71,7 +73,7 @@ export class BlockModelGenerators extends Object {
     static createOrientableTrapdoor(paramblock: Block, paramtop: MultiVariant, parambottom: MultiVariant, paramopen: MultiVariant): BlockModelDefinitionGenerator;
     static createPillarBlockUVLocked(paramblock: Block, parammapping: TextureMapping, parammodelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
     static createPressurePlate(paramblock: Block, paramoff: MultiVariant, paramon: MultiVariant): BlockModelDefinitionGenerator;
-    static createRotatedPillar(): PropertyDispatch<(param0: Object | null) => unknown>;
+    static createRotatedPillar(): PropertyDispatch<(param0: Object | null) => Object | null>;
     static createRotatedPillarWithHorizontalVariant(paramblock: Block, parammodel: MultiVariant, paramhorizontalModel: MultiVariant): BlockModelDefinitionGenerator;
     static createRotatedVariants(parambase: Variant): MultiVariant;
     static createRotatedVariants(paramnormal: Variant, parammirrored: Variant): MultiVariant;
@@ -80,21 +82,21 @@ export class BlockModelGenerators extends Object {
     static createStairs(paramblock: Block, paraminner: MultiVariant, paramstraight: MultiVariant, paramouter: MultiVariant): BlockModelDefinitionGenerator;
     static createTrapdoor(paramblock: Block, paramtop: MultiVariant, parambottom: MultiVariant, paramopen: MultiVariant): BlockModelDefinitionGenerator;
     static createWall(paramblock: Block, parampost: MultiVariant, paramlowSide: MultiVariant, paramtallSide: MultiVariant): BlockModelDefinitionGenerator;
-    static forEachHorizontalDirection(paramconsumer: (param0: Direction, param1: (param0: Object | null) => unknown) => void): void;
-    static or(paramterms: (Object | null)[]): (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>;
+    static forEachHorizontalDirection(paramconsumer: (param0: Direction, param1: (param0: Object | null) => Object | null) => void): void;
+    static or(paramterms: (Object | null)[]): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
     static plainModel(parammodel: Identifier): Variant;
     static plainVariant(parammodel: Identifier): MultiVariant;
-    static selectMultifaceProperties(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => Object | null): Map<Object | null, (param0: Object | null) => unknown>;
-    static shelfCondition(paramdirection: Direction, paramisPowered: boolean, paramsideChainPart: SideChainPart): (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>;
+    static selectMultifaceProperties(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => Object | null): Map<Object | null, (param0: Object | null) => Object | null>;
+    static shelfCondition(paramdirection: Direction, paramisPowered: boolean, paramsideChainPart: SideChainPart): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
     static variant(paramvariant: Variant): MultiVariant;
     static variants(paramvariant: (Object | null)[]): MultiVariant;
     constructor(blockStateOutput: (param0: BlockModelDefinitionGenerator) => void, itemModelOutput: ItemModelOutput, modelOutput: (param0: Identifier, param1: ModelInstance) => void)
     blockStateOutput: (param0: BlockModelDefinitionGenerator) => void;
     itemModelOutput: ItemModelOutput;
     modelOutput: (param0: Identifier, param1: ModelInstance) => void;
-    addBookSlotModel(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>, mutator: (param0: Object | null) => unknown, stateProperty: BooleanProperty, template: ModelTemplate, isSlotOccupied: boolean): void;
+    addBookSlotModel(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null, stateProperty: BooleanProperty, template: ModelTemplate, isSlotOccupied: boolean): void;
     addShelfPart(block: Block, mapping: TextureMapping, generator: MultiPartGenerator, template: ModelTemplate, isPowered: boolean, sideChainPart: SideChainPart): void;
-    addSlotStateAndRotationVariants(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, Object>) => java.util.function.Predicate<unknown>, mutator: (param0: Object | null) => unknown): void;
+    addSlotStateAndRotationVariants(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null): void;
     copyCopperBulbModel(donor: Block, acceptor: Block): void;
     copyDoorModel(donor: Block, acceptor: Block): void;
     copyModel(donor: Block, acceptor: Block): void;
@@ -105,7 +107,7 @@ export class BlockModelGenerators extends Object {
     createAmethystCluster(clusterBlock: Block): void;
     // private createAmethystClusters(): void;
     createAnvil(block: Block): void;
-    createAxisAlignedPillarBlock(block: Block, modelProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel): void;
+    createAxisAlignedPillarBlock(block: Block, modelProvider: (param0: Block) => TexturedModel): void;
     createAxisAlignedPillarBlockCustomModel(block: Block, model: MultiVariant): void;
     createAzalea(block: Block): void;
     // private createBamboo(): void;
@@ -137,8 +139,8 @@ export class BlockModelGenerators extends Object {
     // private createChorusFlower(): void;
     // private createChorusPlant(): void;
     // private createCocoa(): void;
-    createColoredBlockWithRandomRotations(modelProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel, blocks: Block[]): void;
-    createColoredBlockWithStateRotations(modelProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel, blocks: Block[]): void;
+    createColoredBlockWithRandomRotations(modelProvider: (param0: Block) => TexturedModel, blocks: Block[]): void;
+    createColoredBlockWithStateRotations(modelProvider: (param0: Block) => TexturedModel, blocks: Block[]): void;
     createCommandBlock(block: Block): void;
     // private createComparator(): void;
     // private createComposter(): void;
@@ -154,7 +156,7 @@ export class BlockModelGenerators extends Object {
     // private createCrafterBlock(): void;
     createCraftingTableLike(block: Block, bottomBlock: Block, mappingProvider: (param0: Block, param1: Block) => TextureMapping): void;
     createCreakingHeart(block: Block): void;
-    createCreakingHeartModel(provider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel, block: Block, suffix: string): Identifier;
+    createCreakingHeartModel(provider: (param0: Block) => TexturedModel, block: Block, suffix: string): Identifier;
     createCropBlock(block: Block, property: Property<number>, stages: number[]): void;
     createCrossBlock(block: Block, plantType: BlockModelGenerators$PlantType): void;
     createCrossBlock(block: Block, plantType: BlockModelGenerators$PlantType, textures: TextureMapping): void;
@@ -181,7 +183,7 @@ export class BlockModelGenerators extends Object {
     // private createFrogspawnBlock(): void;
     // private createFrostedIce(): void;
     createFullAndCarpetBlocks(block: Block, carpet: Block): void;
-    createFurnace(furnace: Block, provider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel): void;
+    createFurnace(furnace: Block, provider: (param0: Block) => TexturedModel): void;
     createGlassBlocks(block: Block, pane: Block): void;
     // private createGrassBlocks(): void;
     createGrassLikeBlock(block: Block, normal: MultiVariant, snowy: MultiVariant): void;
@@ -192,7 +194,7 @@ export class BlockModelGenerators extends Object {
     createHead(standAlone: Block, wall: Block, skullType: SkullBlock$Type, itemBase: Identifier): void;
     // private createHeads(): void;
     // private createHopper(): void;
-    createHorizontallyRotatedBlock(block: Block, modelProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel): void;
+    createHorizontallyRotatedBlock(block: Block, modelProvider: (param0: Block) => TexturedModel): void;
     // private createInfestedDeepslate(): void;
     // private createInfestedStone(): void;
     createItemWithGrassTint(block: Block): void;
@@ -245,7 +247,7 @@ export class BlockModelGenerators extends Object {
     // private createRespawnAnchor(): void;
     createRotatableColumn(block: Block): void;
     createRotatedMirroredVariantBlock(block: Block): void;
-    createRotatedPillarWithHorizontalVariant(block: Block, verticalProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel, horizontalProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel): void;
+    createRotatedPillarWithHorizontalVariant(block: Block, verticalProvider: (param0: Block) => TexturedModel, horizontalProvider: (param0: Block) => TexturedModel): void;
     createRotatedVariantBlock(block: Block): void;
     // private createScaffolding(): void;
     // private createSculkCatalyst(): void;
@@ -271,13 +273,13 @@ export class BlockModelGenerators extends Object {
     // private createTallSeagrass(): void;
     // private createTestBlock(): void;
     createTintedDoublePlant(block: Block): void;
-    createTintedLeaves(block: Block, modelProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel, tintColor: number): void;
+    createTintedLeaves(block: Block, modelProvider: (param0: Block) => TexturedModel, tintColor: number): void;
     createTopFireModels(block: Block): MultiVariant;
     createTrapdoor(trapdoor: Block): void;
     // private createTrialSpawner(): void;
     // private createTripwire(): void;
     // private createTripwireHook(): void;
-    createTrivialBlock(block: Block, modelProvider: (param0: Block) => net.minecraft.client.data.models.model.TexturedModel): void;
+    createTrivialBlock(block: Block, modelProvider: (param0: Block) => TexturedModel): void;
     createTrivialCube(block: Block): void;
     // private createTurtleEgg(): void;
     createTurtleEggModel(eggs: number, hatch: number): Variant;

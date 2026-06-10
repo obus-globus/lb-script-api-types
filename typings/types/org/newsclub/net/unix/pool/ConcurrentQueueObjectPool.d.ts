@@ -5,13 +5,13 @@ import type { ObjectPool$Lease } from '../../../../../org/newsclub/net/unix/pool
 import type { ObjectPool$ObjectSanitizer } from '../../../../../org/newsclub/net/unix/pool/ObjectPool$ObjectSanitizer.d.ts'
 import type { ObjectPool$ObjectSupplier } from '../../../../../org/newsclub/net/unix/pool/ObjectPool$ObjectSupplier.d.ts'
 export class ConcurrentQueueObjectPool<O extends Object | number | string | boolean> extends Object implements ObjectPool<O> {
-    static newThreadLocalPool(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => kotlin.Boolean): ObjectPool<Object>;
+    static newThreadLocalPool(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => boolean): ObjectPool<Object>;
     static unpooledLease(paramarg0: Object | null): ObjectPool$Lease<Object>;
-    constructor(arg0: () => O, arg1: (param0: O) => kotlin.Boolean, arg2: number)
+    constructor(arg0: () => O, arg1: (param0: O) => boolean, arg2: number)
     // private count: AtomicInteger;
     // private maxCapacity: number;
     // private queue: O[];
-    // private sanitizer: (param0: O) => kotlin.Boolean;
+    // private sanitizer: (param0: O) => boolean;
     // private supplier: () => O;
     take(): ObjectPool$Lease<O>;
 }

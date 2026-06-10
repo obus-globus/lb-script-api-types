@@ -7,7 +7,7 @@ import type { ListenableScheduledFuture } from '../../../../../../../../org/spon
 import type { ListeningExecutorService } from '../../../../../../../../org/spongepowered/include/com/google/common/util/concurrent/ListeningExecutorService.d.ts'
 export interface ListeningScheduledExecutorService extends ScheduledExecutorService, Object, ListeningExecutorService {
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<Object>;
-    schedule(arg0: () => V, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<V>;
+    schedule<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ListenableScheduledFuture<Object>;
     scheduleWithFixedDelay(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ListenableScheduledFuture<Object>;
 }

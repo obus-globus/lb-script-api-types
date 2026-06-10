@@ -108,7 +108,7 @@ export class ItemEntity extends Entity implements ChangePublisher<Object>, Chang
     lithium$notifyCount(arg0: ItemStack, arg1: number, arg2: number): void;
     lithium$subscribe(arg0: ChangeSubscriber<Object>, arg1: number): void;
     lithium$unsubscribe(arg0: ChangeSubscriber<Object>): number;
-    lithium$unsubscribeWithData(arg0: ChangeSubscriber<T>, arg1: number): void;
+    lithium$unsubscribeWithData(arg0: ChangeSubscriber<Object>, arg1: number): void;
     makeFakeItem(): void;
     // private mergeWithNeighbours(): void;
     playerTouch(player: Player): void;

@@ -26,9 +26,9 @@ export class MovingBlockRenderState extends Object implements FabricRenderState,
     clearExtraData(): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;
-    getBlockEntity(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
+    getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockState(pos: BlockPos): BlockState;
-    getBlockTint(pos: BlockPos, color: (param0: Biome, param1: number, param2: number) => kotlin.Int): number;
+    getBlockTint(pos: BlockPos, color: (param0: Biome, param1: number, param2: number) => number): number;
     getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;
     getDataOrDefault<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): T;

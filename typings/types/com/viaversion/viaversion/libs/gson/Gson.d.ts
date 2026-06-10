@@ -66,9 +66,9 @@ export class Gson extends Object {
     fromJson<T extends Object | number | string | boolean>(arg0: string, arg1: TypeToken<T>): T;
     fromJson<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T;
     fromJson<T extends Object | number | string | boolean>(arg0: string, arg1: Type): T;
-    getAdapter(arg0: TypeToken<T>): TypeAdapter<T>;
-    getAdapter(arg0: Class<T>): TypeAdapter<T>;
-    getDelegateAdapter(arg0: TypeAdapterFactory, arg1: TypeToken<T>): TypeAdapter<T>;
+    getAdapter<T extends Object | number | string | boolean>(arg0: TypeToken<T>): TypeAdapter<T>;
+    getAdapter<T extends Object | number | string | boolean>(arg0: Class<T>): TypeAdapter<T>;
+    getDelegateAdapter<T extends Object | number | string | boolean>(arg0: TypeAdapterFactory, arg1: TypeToken<T>): TypeAdapter<T>;
     htmlSafe(): boolean;
     newBuilder(): GsonBuilder;
     newJsonReader(arg0: Reader): JsonReader;

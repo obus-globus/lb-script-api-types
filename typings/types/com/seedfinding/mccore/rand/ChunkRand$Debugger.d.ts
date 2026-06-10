@@ -14,9 +14,9 @@ export class ChunkRand$Debugger extends ChunkRand {
     static nextLong(paramarg0: number): number;
     static ofInternalSeed(paramarg0: number): JRand;
     static ofScrambledSeed(paramarg0: number): JRand;
-    static shuffle(paramarg0: (Object | null)[], paramarg1: JRand): void;
+    static shuffle(paramarg0: Object[], paramarg1: JRand): void;
     static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
-    static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
+    static swap(paramarg0: Object[], paramarg1: number, paramarg2: number): void;
     constructor(arg0: JRand)
     debugger: JRand$Debugger;
     advance(arg0: LCG): void;
