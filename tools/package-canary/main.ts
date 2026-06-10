@@ -39,7 +39,11 @@ localStorage.getItem("k");
 // (verified in a live client — direct static access is undefined at runtime).
 const q = RotationAxis.static.YP.rotationDegrees(90);
 void q;
-const bp = new BlockPos(1, 2, 3);
+// Single-overload ctor: direct `new` carries the signature.
+const v3 = new Vec3i(1, 2, 3);
+void v3;
+// Overloaded ctors: `.static` carries the FULL overload set.
+const bp = new (BlockPos.static)(1, 2, 3);
 void bp;
 const clamped: number = MathHelper.static.clamp(5, 0, 3);
 void clamped;
