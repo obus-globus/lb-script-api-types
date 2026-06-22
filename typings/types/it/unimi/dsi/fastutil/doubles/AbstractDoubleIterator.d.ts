@@ -7,5 +7,6 @@ export abstract class AbstractDoubleIterator extends Object implements DoubleIte
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextDouble(): number;
     skip(arg0: number): number;
 }

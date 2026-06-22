@@ -20,6 +20,7 @@ export class BitSetDiscreteVoxelShape extends DiscreteVoxelShape implements BitS
     firstFull(axis: Direction$Axis): number;
     firstFull(aAxis: Direction$Axis, b: number, c: number): number;
     getIndex(x: number, y: number, z: number): number;
+    getStorage(): BitSet;
     isEmpty(): boolean;
     isFull(x: number, y: number, z: number): boolean;
     isFull(transform: AxisCycle, x: number, y: number, z: number): boolean;

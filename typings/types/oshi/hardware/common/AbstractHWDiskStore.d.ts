@@ -6,9 +6,17 @@ export abstract class AbstractHWDiskStore extends Object implements HWDiskStore 
     readonly name: string;
     readonly serial: string;
     readonly size: number;
+    getCurrentQueueLength(): number;
     getModel(): string;
     getName(): string;
+    getReadBytes(): number;
+    getReads(): number;
     getSerial(): string;
     getSize(): number;
+    getTimeStamp(): number;
+    getTransferTime(): number;
+    getWriteBytes(): number;
+    getWrites(): number;
     toString(): string;
+    updateAttributes(): boolean;
 }

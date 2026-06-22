@@ -8,6 +8,10 @@ import type { SuppressedBy } from '../../../../../org/spongepowered/tools/obfusc
 import type { IMessagerEx } from '../../../../../org/spongepowered/tools/obfuscation/interfaces/IMessagerEx.d.ts'
 import type { IMessagerEx$MessageType } from '../../../../../org/spongepowered/tools/obfuscation/interfaces/IMessagerEx$MessageType.d.ts'
 export interface IMessagerSuppressible extends Object, IMessagerEx{
+    printMessage(arg0: Diagnostic$Kind, arg1: CharSequence): void;
+    printMessage(arg0: Diagnostic$Kind, arg1: CharSequence, arg2: Element): void;
+    printMessage(arg0: IMessagerEx$MessageType, arg1: CharSequence): void;
+    printMessage(arg0: IMessagerEx$MessageType, arg1: CharSequence, arg2: Element): void;
     printMessage(arg0: Diagnostic$Kind, arg1: CharSequence, arg2: Element, arg3: AnnotationMirror, arg4: AnnotationValue, arg5: SuppressedBy): void;
     printMessage(arg0: Diagnostic$Kind, arg1: CharSequence, arg2: Element, arg3: AnnotationMirror, arg4: SuppressedBy): void;
     printMessage(arg0: Diagnostic$Kind, arg1: CharSequence, arg2: Element, arg3: SuppressedBy): void;

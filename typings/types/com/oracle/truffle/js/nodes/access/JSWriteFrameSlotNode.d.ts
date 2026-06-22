@@ -1,4 +1,5 @@
 import type { Frame } from '../../../../../../com/oracle/truffle/api/frame/Frame.d.ts'
+import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { InstrumentableNode } from '../../../../../../com/oracle/truffle/api/instrumentation/InstrumentableNode.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -23,6 +24,7 @@ export abstract class JSWriteFrameSlotNode extends FrameSlotNode$WithDescriptor 
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(slot: number, identifier: Object)
     executeWithFrame(frame: Frame, value: Object): void;
+    executeWrite(frame: VirtualFrame, value: Object): void;
     getNodeObject(): Object;
     getRhs(): JavaScriptNode;
     hasTag(tag: Class<Tag>): boolean;

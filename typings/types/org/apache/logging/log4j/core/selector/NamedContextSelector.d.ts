@@ -5,6 +5,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 import type { LoggerContext } from '../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { ContextSelector } from '../../../../../../org/apache/logging/log4j/core/selector/ContextSelector.d.ts'
 export interface NamedContextSelector extends Object, ContextSelector{
+    getContext(fqcn: string, loader: ClassLoader, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean): LoggerContext;
     getContext(fqcn: string, loader: ClassLoader, entry: Map$Entry<string, Object>, currentContext: boolean, configLocation: URI): LoggerContext;
     hasContext(fqcn: string, loader: ClassLoader, currentContext: boolean): boolean;

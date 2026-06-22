@@ -11,6 +11,7 @@ import type { Material$Baked } from '../../../../../net/minecraft/client/resourc
 import type { TextureSlots } from '../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
 export interface ResolvedModel extends Object, ModelDebugName {
     bakeTopGeometry(textureSlots: TextureSlots, baker: ModelBaker, state: ModelState): QuadCollection;
+    debugName(): string;
     getTopAmbientOcclusion(): boolean;
     getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
     getTopGuiLight(): UnbakedModel$GuiLight;

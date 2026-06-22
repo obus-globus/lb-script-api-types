@@ -10,6 +10,7 @@ import type { HolderLookup } from '../../../net/minecraft/core/HolderLookup.d.ts
 import type { RegistryAccess } from '../../../net/minecraft/core/RegistryAccess.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { PermissionSet } from '../../../net/minecraft/server/permissions/PermissionSet.d.ts'
 import type { PermissionSetSupplier } from '../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { Level } from '../../../net/minecraft/world/level/Level.d.ts'
@@ -24,6 +25,7 @@ export interface SharedSuggestionProvider extends Object, PermissionSetSupplier{
     getRelevantCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getSelectedEntities(): string[];
     levels(): ResourceKey<Level>[];
+    permissions(): PermissionSet;
     registryAccess(): RegistryAccess;
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;

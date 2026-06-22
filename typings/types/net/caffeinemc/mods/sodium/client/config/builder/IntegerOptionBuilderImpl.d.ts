@@ -26,6 +26,7 @@ export class IntegerOptionBuilderImpl extends StatefulOptionBuilderImpl<IntegerO
     getOptionClass(): Class<IntegerOption>;
     getValidatorProvider(): DependentValue<SteppedValidator>;
     getValueFormatter(): (param0: number) => Component;
+    iris$getValueFormatter(): (param0: number) => Component;
     setApplyHook(arg0: (param0: ConfigState) => void): IntegerOptionBuilder;
     setBinding(arg0: (param0: number) => void, arg1: () => number): IntegerOptionBuilder;
     setBinding(arg0: OptionBinding<number>): IntegerOptionBuilder;

@@ -136,6 +136,9 @@ export abstract class ByteBuf extends Object implements ByteBufConvertible, Refe
     readableBytes(): number;
     readerIndex(): number;
     readerIndex(arg0: number): ByteBuf;
+    refCnt(): number;
+    release(): boolean;
+    release(arg0: number): boolean;
     resetReaderIndex(): ByteBuf;
     resetWriterIndex(): ByteBuf;
     retain(): ByteBuf;

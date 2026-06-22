@@ -10,4 +10,5 @@ export abstract class TranslatorMode extends Mode implements TranslatorApi {
     static translate$suspendImpl(paramarg0: TranslatorApi, paramarg1: TranslateLanguage, paramarg2: TranslateLanguage, paramarg3: string, paramarg4: Continuation<Object>): Object;
     constructor(name: string)
     translate(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
+    translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
 }

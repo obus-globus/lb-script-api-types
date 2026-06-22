@@ -3,7 +3,9 @@ import type { Firmware } from '../../../oshi/hardware/Firmware.d.ts'
 export abstract class AbstractFirmware extends Object implements Firmware {
     constructor()
     getDescription(): string;
+    getManufacturer(): string;
     getName(): string;
     getReleaseDate(): string;
+    getVersion(): string;
     toString(): string;
 }

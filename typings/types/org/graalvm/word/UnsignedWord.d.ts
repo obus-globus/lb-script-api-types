@@ -22,6 +22,7 @@ export interface UnsignedWord extends Object, ComparableWord{
     notEqual(val: UnsignedWord): boolean;
     or(val: number): UnsignedWord;
     or(val: UnsignedWord): UnsignedWord;
+    rawValue(): number;
     shiftLeft(n: number): UnsignedWord;
     shiftLeft(n: UnsignedWord): UnsignedWord;
     subtract(val: number): UnsignedWord;

@@ -6,6 +6,7 @@ import type { StandardPlural } from '../../../../../../../../org/graalvm/shadowe
 import type { Modifier$Signum } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/Modifier$Signum.d.ts'
 import type { PluralRules } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules.d.ts'
 import type { PluralRules$IFixedDecimal } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules$IFixedDecimal.d.ts'
+import type { PluralRules$Operand } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules$Operand.d.ts'
 export interface DecimalQuantity extends Object, PluralRules$IFixedDecimal{
     adjustExponent(delta: number): void;
     adjustMagnitude(delta: number): void;
@@ -16,9 +17,11 @@ export interface DecimalQuantity extends Object, PluralRules$IFixedDecimal{
     getExponent(): number;
     getLowerDisplayMagnitude(): number;
     getMagnitude(): number;
+    getPluralOperand(operand: PluralRules$Operand): number;
     getPositionFingerprint(): number;
     getStandardPlural(rules: PluralRules): StandardPlural;
     getUpperDisplayMagnitude(): number;
+    isHasIntegerValue(): boolean;
     isInfinite(): boolean;
     isNaN(): boolean;
     isNegative(): boolean;

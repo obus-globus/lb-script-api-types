@@ -15,7 +15,9 @@ export abstract class AbstractDataStructureFactory extends Object implements Ser
     // private solver: UnitPropagationListener;
     // private tmp: IVec<Propagatable>;
     createCardinalityConstraint(arg0: IVecInt, arg1: number): Constr;
+    createClause(arg0: IVecInt): Constr;
     createLits(): ILits;
+    createUnregisteredClause(arg0: IVecInt): Constr;
     getVocabulary(): ILits;
     learnConstraint(arg0: Constr): void;
     reset(): void;

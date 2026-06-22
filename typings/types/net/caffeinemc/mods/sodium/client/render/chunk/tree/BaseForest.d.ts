@@ -8,7 +8,9 @@ export abstract class BaseForest<T extends Tree> extends Object implements Fores
     // private baseOffsetY: number;
     // private baseOffsetZ: number;
     // private buildDistance: number;
+    add(arg0: number, arg1: number, arg2: number): void;
     add(arg0: RenderSection): void;
+    getPresence(arg0: number, arg1: number, arg2: number): number;
     isSectionPresent(arg0: number, arg1: number, arg2: number): boolean;
     makeTree(arg0: number, arg1: number, arg2: number): T;
 }

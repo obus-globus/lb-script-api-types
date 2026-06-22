@@ -6,12 +6,16 @@ import type { Buffer } from '../okio/Buffer.d.ts'
 import type { ByteString } from '../okio/ByteString.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 import type { Source } from '../okio/Source.d.ts'
+import type { Timeout } from '../okio/Timeout.d.ts'
 export interface BufferedSink extends WritableByteChannel, Object, Sink{
     buffer(): Buffer;
+    close(): void;
     emit(): BufferedSink;
     emitCompleteSegments(): BufferedSink;
     flush(): void;
+    isOpen(): boolean;
     outputStream(): OutputStream;
+    timeout(): Timeout;
     write(source: number[]): BufferedSink;
     write(source: number[], offset: number, byteCount: number): BufferedSink;
     write(byteString: ByteString): BufferedSink;

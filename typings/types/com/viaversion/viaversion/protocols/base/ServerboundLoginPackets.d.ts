@@ -1,3 +1,4 @@
+import type { Direction } from '../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { State } from '../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { BaseServerboundPacket } from '../../../../../com/viaversion/viaversion/protocols/base/packet/BaseServerboundPacket.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -13,6 +14,7 @@ export class ServerboundLoginPackets extends Enum<ServerboundLoginPackets> imple
     static valueOf(paramarg0: string): ServerboundLoginPackets;
     static values(): (Object | null)[];
     private constructor()
+    direction(): Direction;
     getId(): number;
     getName(): string;
     state(): State;

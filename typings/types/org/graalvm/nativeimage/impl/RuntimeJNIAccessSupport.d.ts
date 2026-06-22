@@ -4,4 +4,5 @@ import type { ConfigurationCondition } from '../../../../org/graalvm/nativeimage
 import type { ReflectionRegistry } from '../../../../org/graalvm/nativeimage/impl/ReflectionRegistry.d.ts'
 export interface RuntimeJNIAccessSupport extends Object, ReflectionRegistry{
     register(condition: ConfigurationCondition, classes: Class<Object>[]): void;
+    registerClassLookup(condition: ConfigurationCondition, typeName: string): void;
 }

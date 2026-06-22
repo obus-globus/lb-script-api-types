@@ -49,6 +49,7 @@ export class NativeImage extends Object implements AutoCloseable, NativeImageAcc
     resizeSubRectTo(sourceX: number, sourceY: number, sizeX: number, sizeY: number, to: NativeImage): void;
     setPixel(x: number, y: number, pixel: number): void;
     setPixelABGR(x: number, y: number, pixel: number): void;
+    sodium$getPixels(): number;
     toString(): string;
     untrack(): void;
     writeToChannel(output: WritableByteChannel): boolean;

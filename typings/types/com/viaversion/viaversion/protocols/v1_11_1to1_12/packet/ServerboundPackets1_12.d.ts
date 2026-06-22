@@ -1,5 +1,6 @@
 import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { ServerboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
+import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -44,5 +45,6 @@ export class ServerboundPackets1_12 extends Enum<ServerboundPackets1_12> impleme
     direction(): Direction;
     getId(): number;
     getName(): string;
+    state(): State;
     name(): "ACCEPT_TELEPORTATION" | "CRAFTING_RECIPE_PLACEMENT" | "COMMAND_SUGGESTION" | "CHAT" | "CLIENT_COMMAND" | "CLIENT_INFORMATION" | "CONTAINER_ACK" | "CONTAINER_BUTTON_CLICK" | "CONTAINER_CLICK" | "CONTAINER_CLOSE" | "CUSTOM_PAYLOAD" | "INTERACT" | "KEEP_ALIVE" | "MOVE_PLAYER_STATUS_ONLY" | "MOVE_PLAYER_POS" | "MOVE_PLAYER_POS_ROT" | "MOVE_PLAYER_ROT" | "MOVE_VEHICLE" | "PADDLE_BOAT" | "PLAYER_ABILITIES" | "PLAYER_ACTION" | "PLAYER_COMMAND" | "PLAYER_INPUT" | "RECIPE_BOOK_UPDATE" | "RESOURCE_PACK" | "SEEN_ADVANCEMENTS" | "SET_CARRIED_ITEM" | "SET_CREATIVE_MODE_SLOT" | "SIGN_UPDATE" | "SWING" | "TELEPORT_TO_ENTITY" | "USE_ITEM_ON" | "USE_ITEM";
 }

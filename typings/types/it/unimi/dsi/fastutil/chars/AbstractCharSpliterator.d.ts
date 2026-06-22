@@ -16,4 +16,5 @@ export abstract class AbstractCharSpliterator extends Object implements CharSpli
     getComparator(): (param0: string, param1: string) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;
+    trySplit(): CharSpliterator;
 }

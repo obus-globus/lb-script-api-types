@@ -19,6 +19,7 @@ export abstract class DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle ex
     attemptedBytesRead(arg0: number): void;
     continueReading(): boolean;
     continueReading(arg0: UncheckedBooleanSupplier): boolean;
+    guess(): number;
     incMessagesRead(arg0: number): void;
     lastBytesRead(): number;
     lastBytesRead(arg0: number): void;

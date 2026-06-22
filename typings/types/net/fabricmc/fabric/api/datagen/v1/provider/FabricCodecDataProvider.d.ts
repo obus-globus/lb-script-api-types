@@ -34,6 +34,7 @@ export abstract class FabricCodecDataProvider<T extends Object | number | string
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;
     configure(arg0: (param0: Identifier, param1: T) => void, arg1: HolderLookup$Provider): void;
     // private convert(arg0: Identifier, arg1: T, arg2: DynamicOps<JsonElement>): JsonElement;
+    getName(): string;
     run(arg0: CachedOutput): CompletableFuture<Object>;
     // private write(arg0: CachedOutput, arg1: Map<Identifier, JsonElement>): CompletableFuture<Object>;
 }

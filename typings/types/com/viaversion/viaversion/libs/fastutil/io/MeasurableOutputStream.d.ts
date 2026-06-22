@@ -3,4 +3,6 @@ import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 export abstract class MeasurableOutputStream extends OutputStream implements MeasurableStream {
     static nullOutputStream(): OutputStream;
     constructor()
+    length(): number;
+    position(): number;
 }

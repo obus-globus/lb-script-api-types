@@ -26,6 +26,7 @@ export interface Browser extends AutoCloseable, Object{
     url: string;
     viewport: BrowserViewport;
     visible: boolean;
+    close(): void;
     /**
      * Reloads the page ignoring cache
      *

@@ -6,6 +6,7 @@ import type { Padding } from '../../../kotlinx/datetime/format/Padding.d.ts'
 export interface DateTimeFormatBuilder$WithTime extends Object, DateTimeFormatBuilder{
     amPmHour(padding: Padding): void;
     amPmMarker(am: string, pm: string): void;
+    chars(value: string): void;
     hour(padding: Padding): void;
     minute(padding: Padding): void;
     second(padding: Padding): void;

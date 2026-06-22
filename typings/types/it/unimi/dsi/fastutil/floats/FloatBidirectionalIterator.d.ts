@@ -8,6 +8,7 @@ export interface FloatBidirectionalIterator extends FloatIterator, ObjectBidirec
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextFloat(): number;
     previous(): number;
     previousFloat(): number;
     skip(arg0: number): number;

@@ -23,9 +23,12 @@ export abstract class PackSelectionModel$EntryBase extends Object implements Pac
     getTitle(): Component;
     isFixedPosition(): boolean;
     isRequired(): boolean;
+    isSelected(): boolean;
     move(direction: number): void;
     moveDown(): void;
     moveUp(): void;
+    select(): void;
     toggleSelection(): void;
+    unselect(): void;
     // private updateHighContrastOptionInstance(): void;
 }

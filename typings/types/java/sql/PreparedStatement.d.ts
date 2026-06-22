@@ -5,6 +5,7 @@ import type { URL } from '../../java/net/URL.d.ts'
 import type { Array } from '../../java/sql/Array.d.ts'
 import type { Blob } from '../../java/sql/Blob.d.ts'
 import type { Clob } from '../../java/sql/Clob.d.ts'
+import type { Connection } from '../../java/sql/Connection.d.ts'
 import type { Date } from '../../java/sql/Date.d.ts'
 import type { NClob } from '../../java/sql/NClob.d.ts'
 import type { ParameterMetaData } from '../../java/sql/ParameterMetaData.d.ts'
@@ -21,11 +22,19 @@ import type { Calendar } from '../../java/util/Calendar.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface PreparedStatement extends Statement, Object{
     addBatch(): void;
+    addBatch(arg0: string): void;
+    cancel(): void;
+    clearBatch(): void;
     clearParameters(): void;
+    clearWarnings(): void;
+    close(): void;
+    closeOnCompletion(): void;
     enquoteIdentifier(arg0: string, arg1: boolean): string;
     enquoteLiteral(arg0: string): string;
     enquoteNCharLiteral(arg0: string): string;
     execute(): boolean;
+    execute(arg0: string): boolean;
+    execute(arg0: string, arg1: number): boolean;
     executeLargeBatch(): number[];
     executeLargeUpdate(): number;
     executeLargeUpdate(arg0: string): number;
@@ -33,11 +42,31 @@ export interface PreparedStatement extends Statement, Object{
     executeLargeUpdate(arg0: string, arg1: number): number;
     executeLargeUpdate(arg0: string, arg1: number[]): number;
     executeQuery(): ResultSet;
+    executeQuery(arg0: string): ResultSet;
     executeUpdate(): number;
+    executeUpdate(arg0: string): number;
+    executeUpdate(arg0: string, arg1: number): number;
+    getConnection(): Connection;
+    getFetchDirection(): number;
+    getFetchSize(): number;
+    getGeneratedKeys(): ResultSet;
     getLargeMaxRows(): number;
     getLargeUpdateCount(): number;
+    getMaxFieldSize(): number;
+    getMaxRows(): number;
     getMetaData(): ResultSetMetaData;
+    getMoreResults(): boolean;
+    getMoreResults(arg0: number): boolean;
     getParameterMetaData(): ParameterMetaData;
+    getQueryTimeout(): number;
+    getResultSet(): ResultSet;
+    getResultSetConcurrency(): number;
+    getResultSetHoldability(): number;
+    getResultSetType(): number;
+    getUpdateCount(): number;
+    isCloseOnCompletion(): boolean;
+    isClosed(): boolean;
+    isPoolable(): boolean;
     isSimpleIdentifier(arg0: string): boolean;
     setArray(arg0: number, arg1: Array): void;
     setAsciiStream(arg0: number, arg1: InputStream): void;
@@ -56,13 +85,19 @@ export interface PreparedStatement extends Statement, Object{
     setClob(arg0: number, arg1: Reader): void;
     setClob(arg0: number, arg1: Reader, arg2: number): void;
     setClob(arg0: number, arg1: Clob): void;
+    setCursorName(arg0: string): void;
     setDate(arg0: number, arg1: Date): void;
     setDate(arg0: number, arg1: Date, arg2: Calendar): void;
     setDouble(arg0: number, arg1: number): void;
+    setEscapeProcessing(arg0: boolean): void;
+    setFetchDirection(arg0: number): void;
+    setFetchSize(arg0: number): void;
     setFloat(arg0: number, arg1: number): void;
     setInt(arg0: number, arg1: number): void;
     setLargeMaxRows(arg0: number): void;
     setLong(arg0: number, arg1: number): void;
+    setMaxFieldSize(arg0: number): void;
+    setMaxRows(arg0: number): void;
     setNCharacterStream(arg0: number, arg1: Reader): void;
     setNCharacterStream(arg0: number, arg1: Reader, arg2: number): void;
     setNClob(arg0: number, arg1: Reader): void;
@@ -76,6 +111,8 @@ export interface PreparedStatement extends Statement, Object{
     setObject(arg0: number, arg1: Object, arg2: SQLType, arg3: number): void;
     setObject(arg0: number, arg1: Object, arg2: number): void;
     setObject(arg0: number, arg1: Object, arg2: number, arg3: number): void;
+    setPoolable(arg0: boolean): void;
+    setQueryTimeout(arg0: number): void;
     setRef(arg0: number, arg1: Ref): void;
     setRowId(arg0: number, arg1: RowId): void;
     setSQLXML(arg0: number, arg1: SQLXML): void;

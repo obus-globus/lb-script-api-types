@@ -54,6 +54,8 @@ export class GlCommandEncoder extends Object implements CommandEncoderBackend, G
     isInRenderPass(): boolean;
     mapBuffer(slice: GpuBufferSlice, read: boolean, write: boolean): GpuBuffer$MappedView;
     presentTexture(textureView: GpuTextureView): void;
+    sodium$applyPipelineState(arg0: RenderPipeline): void;
+    sodium$setLastProgram(arg0: GlProgram): void;
     timerQueryBegin(): GpuQuery;
     timerQueryEnd(query: GpuQuery): void;
     // private trySetup(renderPass: GlRenderPass, dynamicUniforms: string[]): boolean;

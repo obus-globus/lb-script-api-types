@@ -1,5 +1,10 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { SpriteContents } from '../../../../../../net/minecraft/client/renderer/texture/SpriteContents.d.ts'
+import type { SpriteResourceLoader } from '../../../../../../net/minecraft/client/renderer/texture/atlas/SpriteResourceLoader.d.ts'
 import type { SpriteSource$Loader } from '../../../../../../net/minecraft/client/renderer/texture/atlas/SpriteSource$Loader.d.ts'
-export interface SpriteSource$DiscardableLoader extends Object, SpriteSource$Loader{
+import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
+import type { Resource } from '../../../../../../net/minecraft/server/packs/resources/Resource.d.ts'
+export interface SpriteSource$DiscardableLoader extends Object, SpriteSource$Loader {
     discard(): void;
+    get(loader: (param0: Identifier, param1: Resource) => SpriteContents): SpriteContents;
 }

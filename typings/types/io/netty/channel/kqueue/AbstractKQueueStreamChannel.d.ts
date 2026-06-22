@@ -1,5 +1,6 @@
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
+import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelFuture } from '../../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelMetadata } from '../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOutboundBuffer } from '../../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
@@ -23,6 +24,7 @@ export abstract class AbstractKQueueStreamChannel extends AbstractKQueueChannel 
     // private byteChannel: WritableByteChannel;
     // private flushTask: () => void;
     // private adjustMaxBytesPerGatheringWrite(arg0: number, arg1: number, arg2: number): void;
+    config(): ChannelConfig;
     doShutdownOutput(): void;
     doWrite(arg0: ChannelOutboundBuffer): void;
     // private doWriteMultiple(arg0: ChannelOutboundBuffer): number;

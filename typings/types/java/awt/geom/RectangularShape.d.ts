@@ -11,9 +11,12 @@ export abstract class RectangularShape extends Object implements Shape, Cloneabl
     constructor()
     clone(): Object;
     protected clone(): Object;
+    contains(arg0: number, arg1: number): boolean;
+    contains(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     contains(arg0: Point2D): boolean;
     contains(arg0: Rectangle2D): boolean;
     getBounds(): Rectangle;
+    getBounds2D(): Rectangle2D;
     getCenterX(): number;
     getCenterY(): number;
     getFrame(): Rectangle2D;
@@ -22,10 +25,12 @@ export abstract class RectangularShape extends Object implements Shape, Cloneabl
     getMaxY(): number;
     getMinX(): number;
     getMinY(): number;
+    getPathIterator(arg0: AffineTransform): PathIterator;
     getPathIterator(arg0: AffineTransform, arg1: number): PathIterator;
     getWidth(): number;
     getX(): number;
     getY(): number;
+    intersects(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     intersects(arg0: Rectangle2D): boolean;
     isEmpty(): boolean;
     setFrame(arg0: Point2D, arg1: Dimension2D): void;

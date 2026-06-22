@@ -1,4 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ConnectionProtocol } from '../../../../../net/minecraft/network/ConnectionProtocol.d.ts'
+import type { DisconnectionDetails } from '../../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { ClientboundClearDialogPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundClearDialogPacket.d.ts'
 import type { ClientboundCustomPayloadPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundCustomPayloadPacket.d.ts'
 import type { ClientboundCustomReportDetailsPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundCustomReportDetailsPacket.d.ts'
@@ -13,6 +15,7 @@ import type { ClientboundStoreCookiePacket } from '../../../../../net/minecraft/
 import type { ClientboundTransferPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundTransferPacket.d.ts'
 import type { ClientboundUpdateTagsPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundUpdateTagsPacket.d.ts'
 import type { ClientCookiePacketListener } from '../../../../../net/minecraft/network/protocol/cookie/ClientCookiePacketListener.d.ts'
+import type { ClientboundCookieRequestPacket } from '../../../../../net/minecraft/network/protocol/cookie/ClientboundCookieRequestPacket.d.ts'
 export interface ClientCommonPacketListener extends Object, ClientCookiePacketListener{
     handleClearDialog(packet: ClientboundClearDialogPacket): void;
     handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;
@@ -20,6 +23,7 @@ export interface ClientCommonPacketListener extends Object, ClientCookiePacketLi
     handleDisconnect(packet: ClientboundDisconnectPacket): void;
     handleKeepAlive(packet: ClientboundKeepAlivePacket): void;
     handlePing(packet: ClientboundPingPacket): void;
+    handleRequestCookie(packet: ClientboundCookieRequestPacket): void;
     handleResourcePackPop(packet: ClientboundResourcePackPopPacket): void;
     handleResourcePackPush(packet: ClientboundResourcePackPushPacket): void;
     handleServerLinks(packet: ClientboundServerLinksPacket): void;
@@ -27,4 +31,7 @@ export interface ClientCommonPacketListener extends Object, ClientCookiePacketLi
     handleStoreCookie(packet: ClientboundStoreCookiePacket): void;
     handleTransfer(packet: ClientboundTransferPacket): void;
     handleUpdateTags(packet: ClientboundUpdateTagsPacket): void;
+    isAcceptingMessages(): boolean;
+    onDisconnect(details: DisconnectionDetails): void;
+    protocol(): ConnectionProtocol;
 }

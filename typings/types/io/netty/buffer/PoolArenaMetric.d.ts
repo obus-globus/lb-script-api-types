@@ -4,6 +4,7 @@ import type { SizeClassesMetric } from '../../../io/netty/buffer/SizeClassesMetr
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface PoolArenaMetric extends SizeClassesMetric, Object{
     chunkLists(): PoolChunkMetric[][];
+    normalizeSize(arg0: number): number;
     numActiveAllocations(): number;
     numActiveBytes(): number;
     numActiveChunks(): number;
@@ -27,6 +28,13 @@ export interface PoolArenaMetric extends SizeClassesMetric, Object{
     numTinyAllocations(): number;
     numTinyDeallocations(): number;
     numTinySubpages(): number;
+    pageIdx2size(arg0: number): number;
+    pageIdx2sizeCompute(arg0: number): number;
+    pages2pageIdx(arg0: number): number;
+    pages2pageIdxFloor(arg0: number): number;
+    size2SizeIdx(arg0: number): number;
+    sizeIdx2size(arg0: number): number;
+    sizeIdx2sizeCompute(arg0: number): number;
     smallSubpages(): PoolSubpageMetric[];
     tinySubpages(): PoolSubpageMetric[];
 }

@@ -5,4 +5,5 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class FinalizableSoftReference<T extends Object | number | string | boolean> extends SoftReference<T> implements FinalizableReference {
     static reachabilityFence(paramarg0: Object): void;
     constructor(referent: T, queue: FinalizableReferenceQueue)
+    finalizeReferent(): void;
 }

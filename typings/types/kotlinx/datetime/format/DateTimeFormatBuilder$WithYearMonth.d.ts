@@ -5,6 +5,7 @@ import type { DateTimeFormatBuilder } from '../../../kotlinx/datetime/format/Dat
 import type { MonthNames } from '../../../kotlinx/datetime/format/MonthNames.d.ts'
 import type { Padding } from '../../../kotlinx/datetime/format/Padding.d.ts'
 export interface DateTimeFormatBuilder$WithYearMonth extends Object, DateTimeFormatBuilder{
+    chars(value: string): void;
     monthName(names: MonthNames): void;
     monthNumber(padding: Padding): void;
     year(padding: Padding): void;

@@ -57,6 +57,7 @@ export abstract class AbstractWidget extends Object implements AccessorAbstractW
     getRectangle(): ScreenRectangle;
     getRight(): number;
     getTabOrderGroup(): number;
+    getTooltip(): WidgetTooltipHolder;
     getWidth(): number;
     getX(): number;
     getY(): number;

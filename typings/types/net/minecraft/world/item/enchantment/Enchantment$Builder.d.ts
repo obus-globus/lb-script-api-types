@@ -25,6 +25,8 @@ export class Enchantment$Builder extends Object implements EnchantmentUtil$Build
     exclusiveWith(set: Holder<Enchantment>[]): Enchantment$Builder;
     fabric$didModify(): boolean;
     fabric$resetModified(): void;
+    getDefinition(): Enchantment$EnchantmentDefinition;
+    getEffectMap(): DataComponentMap$Builder;
     // private getEffectsList<E extends Object | number | string | boolean>(type: DataComponentType<E[]>): E[];
     withEffect<E extends Object | number | string | boolean>(type: DataComponentType<ConditionalEffect<E>[]>, effect: E): Enchantment$Builder;
     withEffect<E extends Object | number | string | boolean>(type: DataComponentType<ConditionalEffect<E>[]>, effect: E, condition: () => LootItemCondition): Enchantment$Builder;

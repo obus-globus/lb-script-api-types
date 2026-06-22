@@ -7,7 +7,9 @@ export abstract class DummyFileAttributes extends Object implements BasicFileAtt
     constructor()
     creationTime(): FileTime;
     fileKey(): Object;
+    isDirectory(): boolean;
     isOther(): boolean;
+    isRegularFile(): boolean;
     isSymbolicLink(): boolean;
     lastAccessTime(): FileTime;
     lastModifiedTime(): FileTime;

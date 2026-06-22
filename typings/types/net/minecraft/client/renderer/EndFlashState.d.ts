@@ -19,5 +19,7 @@ export class EndFlashState extends Object implements EndFlashAccess {
     getXAngle(): number;
     getYAngle(): number;
     // private iris$calculateNewAngles(arg0: number, arg1: CallbackInfo, arg2: number, arg3: RandomSource): void;
+    setXAngle(arg0: number): void;
+    setYAngle(arg0: number): void;
     tick(clockTime: number): void;
 }

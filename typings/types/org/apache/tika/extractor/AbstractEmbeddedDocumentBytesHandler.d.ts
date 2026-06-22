@@ -7,6 +7,7 @@ export abstract class AbstractEmbeddedDocumentBytesHandler extends Object implem
     constructor()
     ids: number[];
     add(arg0: number, arg1: Metadata, arg2: InputStream): void;
+    close(): void;
     getEmitKey(arg0: string, arg1: number, arg2: EmbeddedDocumentBytesConfig, arg3: Metadata): string;
     getIds(): number[];
 }

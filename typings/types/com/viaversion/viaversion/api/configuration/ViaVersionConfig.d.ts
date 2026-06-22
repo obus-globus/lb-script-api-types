@@ -74,8 +74,11 @@ export interface ViaVersionConfig extends Config, Object{
     logOtherConversionWarnings(): boolean;
     logTextComponentConversionErrors(): boolean;
     maxErrorLength(): number;
+    reload(): void;
+    save(): void;
     sendPlayerDetails(): boolean;
     sendServerDetails(): boolean;
+    set(arg0: string, arg1: Object): void;
     setCheckForUpdates(arg0: boolean): void;
     shouldRegisterUserConnectionOnJoin(): boolean;
     translateOcelotToCat(): boolean;

@@ -4,4 +4,5 @@ export interface CompressionCodec extends CompressionAlgorithm, Object{
     compress(arg0: number[]): number[];
     decompress(arg0: number[]): number[];
     getAlgorithmName(): string;
+    getId(): string;
 }

@@ -3,6 +3,8 @@ import type { ShortBidirectionalIterator } from '../../../../../it/unimi/dsi/fas
 export abstract class AbstractShortBidirectionalIterator extends AbstractShortIterator implements ShortBidirectionalIterator {
     constructor()
     back(arg0: number): number;
+    nextShort(): number;
     previous(): number;
+    previousShort(): number;
     skip(arg0: number): number;
 }

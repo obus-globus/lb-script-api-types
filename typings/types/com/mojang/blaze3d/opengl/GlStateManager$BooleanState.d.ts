@@ -8,6 +8,7 @@ export class GlStateManager$BooleanState extends Object implements BooleanStateE
     // private stateUnknown: boolean;
     disable(): void;
     enable(): void;
+    isEnabled(): boolean;
     setEnabled(enabled: boolean): void;
     setUnknownState(): void;
 }

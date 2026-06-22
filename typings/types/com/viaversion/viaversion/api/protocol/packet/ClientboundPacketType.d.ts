@@ -4,5 +4,7 @@ import type { State } from '../../../../../../com/viaversion/viaversion/api/prot
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface ClientboundPacketType extends PacketType, Object{
     direction(): Direction;
+    getId(): number;
+    getName(): string;
     state(): State;
 }

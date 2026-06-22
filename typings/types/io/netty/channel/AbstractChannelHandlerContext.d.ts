@@ -58,6 +58,7 @@ export abstract class AbstractChannelHandlerContext extends Object implements Ch
     fireUserEventTriggered(arg0: Object): ChannelHandlerContext;
     flush(): ChannelHandlerContext;
     getInvokeTasks(): AbstractChannelHandlerContext$Tasks;
+    handler(): ChannelHandler;
     hasAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): boolean;
     // private invokeBind(arg0: SocketAddress, arg1: ChannelPromise): void;
     // private invokeClose(arg0: ChannelPromise): void;

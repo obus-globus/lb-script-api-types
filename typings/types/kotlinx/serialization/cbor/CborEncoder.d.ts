@@ -7,7 +7,20 @@ import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.
 export interface CborEncoder extends Object, Encoder{
     readonly cbor: Cbor;
     beginCollection(descriptor: SerialDescriptor, collectionSize: number): CompositeEncoder;
+    beginStructure(descriptor: SerialDescriptor): CompositeEncoder;
+    encodeBoolean(value: boolean): void;
+    encodeByte(value: number): void;
+    encodeChar(value: string): void;
+    encodeDouble(value: number): void;
+    encodeEnum(enumDescriptor: SerialDescriptor, index: number): void;
+    encodeFloat(value: number): void;
+    encodeInline(descriptor: SerialDescriptor): Encoder;
+    encodeInt(value: number): void;
+    encodeLong(value: number): void;
     encodeNotNullMark(): void;
+    encodeNull(): void;
     encodeNullableSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T | null): void;
     encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeShort(value: number): void;
+    encodeString(value: string): void;
 }

@@ -5,5 +5,7 @@ export abstract class AbstractNetworkParams extends Object implements NetworkPar
     getDnsServers(): string[];
     getDomainName(): string;
     getHostName(): string;
+    getIpv4DefaultGateway(): string;
+    getIpv6DefaultGateway(): string;
     toString(): string;
 }

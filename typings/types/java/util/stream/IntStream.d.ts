@@ -26,6 +26,7 @@ export interface IntStream extends BaseStream<number, IntStream>, Object {
     asLongStream(): LongStream;
     average(): OptionalDouble;
     boxed(): Stream<number>;
+    close(): void;
     collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: number) => void, arg2: (param0: R, param1: R) => void): R;
     count(): number;
     distinct(): IntStream;

@@ -15,6 +15,7 @@ import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflec
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { DeclarationDescriptorNonRootImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/DeclarationDescriptorNonRootImpl.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
+import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export abstract class PropertyAccessorDescriptorImpl extends DeclarationDescriptorNonRootImpl implements PropertyAccessorDescriptor {
     static toString(paramarg0: DeclarationDescriptor): string;
@@ -37,6 +38,7 @@ export abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     getModality(): Modality;
     getOriginal(): PropertyAccessorDescriptor;
     getOverriddenDescriptors(arg0: boolean): PropertyAccessorDescriptor[];
+    getReturnType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
     getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getVisibility(): DescriptorVisibility;

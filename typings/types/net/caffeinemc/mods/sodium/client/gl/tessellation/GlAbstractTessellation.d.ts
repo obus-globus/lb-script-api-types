@@ -7,6 +7,9 @@ export abstract class GlAbstractTessellation extends Object implements GlTessell
     constructor(arg0: GlPrimitiveType, arg1: TessellationBinding[])
     // private bindings: TessellationBinding[];
     readonly primitiveType: GlPrimitiveType;
+    bind(arg0: CommandList): void;
     bindAttributes(arg0: CommandList): void;
+    delete(arg0: CommandList): void;
     getPrimitiveType(): GlPrimitiveType;
+    unbind(arg0: CommandList): void;
 }

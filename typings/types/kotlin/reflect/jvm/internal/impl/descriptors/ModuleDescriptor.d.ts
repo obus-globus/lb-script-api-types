@@ -8,7 +8,10 @@ import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/na
 export interface ModuleDescriptor extends Object, DeclarationDescriptor {
     getBuiltIns(): KotlinBuiltIns;
     getCapability<T extends Object | number | string | boolean>(arg0: ModuleCapability<T>): T;
+    getContainingDeclaration(): DeclarationDescriptor;
     getExpectedByModules(): ModuleDescriptor[];
+    getName(): Name;
+    getOriginal(): DeclarationDescriptor;
     getPackage(arg0: FqName): PackageViewDescriptor;
     getSubPackagesOf(arg0: FqName, arg1: (param0: Name) => boolean): FqName[];
     shouldSeeInternalsOf(arg0: ModuleDescriptor): boolean;

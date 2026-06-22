@@ -27,6 +27,7 @@ export abstract class TaggedDecoder<Tag extends Object | number | string | boole
     decodeCollectionSize(descriptor: SerialDescriptor): number;
     decodeDouble(): number;
     decodeDoubleElement(descriptor: SerialDescriptor, index: number): number;
+    decodeElementIndex(descriptor: SerialDescriptor): number;
     decodeEnum(enumDescriptor: SerialDescriptor): number;
     decodeFloat(): number;
     decodeFloatElement(descriptor: SerialDescriptor, index: number): number;

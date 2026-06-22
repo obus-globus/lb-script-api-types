@@ -1,5 +1,6 @@
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
+import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelFuture } from '../../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelMetadata } from '../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOutboundBuffer } from '../../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
@@ -34,6 +35,7 @@ export abstract class AbstractEpollStreamChannel extends AbstractEpollChannel im
     // private addToSpliceQueue(arg0: AbstractEpollStreamChannel$SpliceInTask): void;
     // private adjustMaxBytesPerGatheringWrite(arg0: number, arg1: number, arg2: number): void;
     // private clearSpliceQueue(arg0: ClosedChannelException): void;
+    config(): ChannelConfig;
     doClose(): void;
     doShutdownOutput(): void;
     doWrite(arg0: ChannelOutboundBuffer): void;

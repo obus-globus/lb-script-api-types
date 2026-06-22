@@ -13,6 +13,7 @@ import type { FormatStructure } from '../../../kotlinx/datetime/internal/format/
 export interface AbstractWithDateBuilder extends Object, AbstractWithYearMonthBuilder, DateTimeFormatBuilder$WithDate{
     addFormatStructureForDate(structure: FormatStructure<DateFieldContainer>): void;
     addFormatStructureForYearMonth(structure: FormatStructure<YearMonthFieldContainer>): void;
+    chars(value: string): void;
     date(format: DateTimeFormat<LocalDate>): void;
     day(padding: Padding): void;
     dayOfMonth(padding: Padding): void;

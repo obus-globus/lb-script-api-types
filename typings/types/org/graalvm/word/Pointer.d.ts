@@ -1,14 +1,23 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { ComparableWord } from '../../../org/graalvm/word/ComparableWord.d.ts'
 import type { LocationIdentity } from '../../../org/graalvm/word/LocationIdentity.d.ts'
 import type { PointerBase } from '../../../org/graalvm/word/PointerBase.d.ts'
 import type { UnsignedWord } from '../../../org/graalvm/word/UnsignedWord.d.ts'
 import type { WordBase } from '../../../org/graalvm/word/WordBase.d.ts'
 export interface Pointer extends Object, PointerBase, UnsignedWord{
+    aboveOrEqual(val: number): boolean;
+    aboveOrEqual(val: UnsignedWord): boolean;
+    aboveThan(val: number): boolean;
+    aboveThan(val: UnsignedWord): boolean;
     add(val: number): Pointer;
     add(val: UnsignedWord): Pointer;
     and(val: number): Pointer;
     and(val: UnsignedWord): Pointer;
+    belowOrEqual(val: number): boolean;
+    belowOrEqual(val: UnsignedWord): boolean;
+    belowThan(val: number): boolean;
+    belowThan(val: UnsignedWord): boolean;
     compareAndSwapInt(offset: number, expectedValue: number, newValue: number, locationIdentity: LocationIdentity): number;
     compareAndSwapInt(offset: WordBase, expectedValue: number, newValue: number, locationIdentity: LocationIdentity): number;
     compareAndSwapLong(offset: number, expectedValue: number, newValue: number, locationIdentity: LocationIdentity): number;
@@ -17,8 +26,13 @@ export interface Pointer extends Object, PointerBase, UnsignedWord{
     compareAndSwapObject(offset: WordBase, expectedValue: Object, newValue: Object, locationIdentity: LocationIdentity): Object;
     compareAndSwapWord<T extends WordBase>(offset: number, expectedValue: T, newValue: T, locationIdentity: LocationIdentity): T;
     compareAndSwapWord<T extends WordBase>(offset: WordBase, expectedValue: T, newValue: T, locationIdentity: LocationIdentity): T;
+    equal(val: ComparableWord): boolean;
+    equal(val: number): boolean;
+    equal(val: UnsignedWord): boolean;
     initializeLong(offset: number, val: number, locationIdentity: LocationIdentity): void;
     initializeLong(offset: WordBase, val: number, locationIdentity: LocationIdentity): void;
+    isNonNull(): boolean;
+    isNull(): boolean;
     logicCompareAndSwapInt(offset: number, expectedValue: number, newValue: number, locationIdentity: LocationIdentity): boolean;
     logicCompareAndSwapInt(offset: WordBase, expectedValue: number, newValue: number, locationIdentity: LocationIdentity): boolean;
     logicCompareAndSwapLong(offset: number, expectedValue: number, newValue: number, locationIdentity: LocationIdentity): boolean;
@@ -27,8 +41,15 @@ export interface Pointer extends Object, PointerBase, UnsignedWord{
     logicCompareAndSwapObject(offset: WordBase, expectedValue: Object, newValue: Object, locationIdentity: LocationIdentity): boolean;
     logicCompareAndSwapWord(offset: number, expectedValue: WordBase, newValue: WordBase, locationIdentity: LocationIdentity): boolean;
     logicCompareAndSwapWord(offset: WordBase, expectedValue: WordBase, newValue: WordBase, locationIdentity: LocationIdentity): boolean;
+    multiply(val: number): UnsignedWord;
+    multiply(val: UnsignedWord): UnsignedWord;
+    not(): UnsignedWord;
+    notEqual(val: ComparableWord): boolean;
+    notEqual(val: number): boolean;
+    notEqual(val: UnsignedWord): boolean;
     or(val: number): Pointer;
     or(val: UnsignedWord): Pointer;
+    rawValue(): number;
     readByte(offset: number): number;
     readByte(offset: number, locationIdentity: LocationIdentity): number;
     readByte(offset: WordBase): number;
@@ -66,11 +87,19 @@ export interface Pointer extends Object, PointerBase, UnsignedWord{
     readWord<T extends WordBase>(offset: WordBase): T;
     readWord<T extends WordBase>(offset: WordBase, locationIdentity: LocationIdentity): T;
     readWordVolatile<T extends WordBase>(offset: number, locationIdentity: LocationIdentity): T;
+    shiftLeft(n: number): UnsignedWord;
+    shiftLeft(n: UnsignedWord): UnsignedWord;
     subtract(val: number): Pointer;
     subtract(val: UnsignedWord): Pointer;
     toObject(): Object;
     toObject<T extends Object | number | string | boolean>(clazz: Class<T>, nonNull: boolean): T;
     toObjectNonNull(): Object;
+    unsignedDivide(val: number): UnsignedWord;
+    unsignedDivide(val: UnsignedWord): UnsignedWord;
+    unsignedRemainder(val: number): UnsignedWord;
+    unsignedRemainder(val: UnsignedWord): UnsignedWord;
+    unsignedShiftRight(n: number): UnsignedWord;
+    unsignedShiftRight(n: UnsignedWord): UnsignedWord;
     writeByte(offset: number, val: number): void;
     writeByte(offset: number, val: number, locationIdentity: LocationIdentity): void;
     writeByte(offset: WordBase, val: number): void;
@@ -108,4 +137,6 @@ export interface Pointer extends Object, PointerBase, UnsignedWord{
     writeWord(offset: WordBase, val: WordBase): void;
     writeWord(offset: WordBase, val: WordBase, locationIdentity: LocationIdentity): void;
     writeWordVolatile(offset: number, val: WordBase): void;
+    xor(val: number): UnsignedWord;
+    xor(val: UnsignedWord): UnsignedWord;
 }

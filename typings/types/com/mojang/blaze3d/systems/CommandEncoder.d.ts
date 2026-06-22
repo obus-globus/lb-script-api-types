@@ -35,6 +35,7 @@ export class CommandEncoder extends Object implements CommandEncoderAccessor {
     mapBuffer(buffer: GpuBuffer, read: boolean, write: boolean): GpuBuffer$MappedView;
     mapBuffer(slice: GpuBufferSlice, read: boolean, write: boolean): GpuBuffer$MappedView;
     presentTexture(textureView: GpuTextureView): void;
+    sodium$getBackend(): CommandEncoderBackend;
     timerQueryBegin(): GpuQuery;
     timerQueryEnd(query: GpuQuery): void;
     // private verifyColorTexture(colorTexture: GpuTexture): void;

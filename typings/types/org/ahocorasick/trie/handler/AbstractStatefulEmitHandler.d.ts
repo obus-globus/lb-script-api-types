@@ -5,5 +5,6 @@ export abstract class AbstractStatefulEmitHandler extends Object implements Stat
     constructor()
     readonly emits: Emit[];
     addEmit(arg0: Emit): void;
+    emit(arg0: Emit): boolean;
     getEmits(): Emit[];
 }

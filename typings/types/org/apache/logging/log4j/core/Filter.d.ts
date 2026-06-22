@@ -4,6 +4,7 @@ import type { Level } from '../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { Filter$Result } from '../../../../../org/apache/logging/log4j/core/Filter$Result.d.ts'
 import type { LifeCycle } from '../../../../../org/apache/logging/log4j/core/LifeCycle.d.ts'
+import type { LifeCycle$State } from '../../../../../org/apache/logging/log4j/core/LifeCycle$State.d.ts'
 import type { LogEvent } from '../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/core/Logger.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
@@ -25,4 +26,10 @@ export interface Filter extends Object, LifeCycle{
     filter(logger: Logger, level: Level, marker: Marker, msg: Message, t: Throwable): Filter$Result;
     getOnMatch(): Filter$Result;
     getOnMismatch(): Filter$Result;
+    getState(): LifeCycle$State;
+    initialize(): void;
+    isStarted(): boolean;
+    isStopped(): boolean;
+    start(): void;
+    stop(): void;
 }

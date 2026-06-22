@@ -4,7 +4,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface BooleanBigListIterator extends BigListIterator<boolean>, BooleanBidirectionalIterator, Object{
     add(arg0: boolean): void;
     back(arg0: number): number;
+    nextBoolean(): boolean;
     previous(): boolean;
+    previousBoolean(): boolean;
     set(arg0: boolean): void;
     skip(arg0: number): number;
 }

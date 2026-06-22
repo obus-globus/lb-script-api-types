@@ -105,7 +105,12 @@ export class GameRenderer extends Object implements AutoCloseable, GameRendererS
     getMainCamera(): Camera;
     getMinecraft(): Minecraft;
     getPanorama(): Panorama;
+    getResourcePool(): CrossFrameResourcePool;
+    getSpinningEffectSpeed(): number;
+    getSpinningEffectTime(): number;
     getSubmitNodeStorage(): SubmitNodeStorage;
+    invokeBobHurt(arg0: CameraRenderState, arg1: PoseStack): void;
+    invokeBobView(arg0: CameraRenderState, arg1: PoseStack): void;
     levelLightmap(): GpuTextureView;
     lightmap(): GpuTextureView;
     overlayTexture(): OverlayTexture;
@@ -124,6 +129,7 @@ export class GameRenderer extends Object implements AutoCloseable, GameRendererS
     // private setPostEffect(id: Identifier): void;
     setRenderBlockOutline(renderBlockOutline: boolean): void;
     // private shouldRenderBlockOutline(): boolean;
+    shouldRenderBlockOutlineA(): boolean;
     sodium$getFogParameters(): FogParameters;
     sodium$getProjectionMatrix(): Matrix4fc;
     // private takeAutoScreenshot(screenshotFile: Path[]): void;

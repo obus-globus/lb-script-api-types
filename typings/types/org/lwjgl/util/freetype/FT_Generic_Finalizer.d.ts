@@ -20,4 +20,5 @@ export abstract class FT_Generic_Finalizer extends Callback implements FT_Generi
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number): void;
 }

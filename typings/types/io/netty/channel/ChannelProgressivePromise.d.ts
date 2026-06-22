@@ -1,3 +1,4 @@
+import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
 import type { ChannelProgressiveFuture } from '../../../io/netty/channel/ChannelProgressiveFuture.d.ts'
 import type { ChannelPromise } from '../../../io/netty/channel/ChannelPromise.d.ts'
 import type { Future } from '../../../io/netty/util/concurrent/Future.d.ts'
@@ -10,6 +11,8 @@ export interface ChannelProgressivePromise extends ChannelProgressiveFuture, Cha
     addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
     await(): ChannelProgressivePromise;
     awaitUninterruptibly(): ChannelProgressivePromise;
+    channel(): Channel;
+    isVoid(): boolean;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelProgressivePromise;
     removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
     setFailure(arg0: Throwable): ChannelProgressivePromise;
@@ -18,5 +21,6 @@ export interface ChannelProgressivePromise extends ChannelProgressiveFuture, Cha
     setSuccess(arg0: void): ChannelProgressivePromise;
     sync(): ChannelProgressivePromise;
     syncUninterruptibly(): ChannelProgressivePromise;
+    trySuccess(): boolean;
     unvoid(): ChannelProgressivePromise;
 }

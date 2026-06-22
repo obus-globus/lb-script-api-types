@@ -7,5 +7,7 @@ export interface ChunkJob extends Object, CancellationToken{
     getEstimatedSize(): number;
     getEstimatedUploadDuration(): number;
     isBlocking(): boolean;
+    isCancelled(): boolean;
     isStarted(): boolean;
+    setCancelled(): void;
 }

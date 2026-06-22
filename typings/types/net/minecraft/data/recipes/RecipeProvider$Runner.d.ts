@@ -28,5 +28,6 @@ export abstract class RecipeProvider$Runner extends Object implements DataProvid
     // private packOutput: PackOutput;
     // private registries: CompletableFuture<HolderLookup$Provider>;
     createRecipeProvider(registries: HolderLookup$Provider, output: RecipeOutput): RecipeProvider;
+    getName(): string;
     run(cache: CachedOutput): CompletableFuture<Object>;
 }

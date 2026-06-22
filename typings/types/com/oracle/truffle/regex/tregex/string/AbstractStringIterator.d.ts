@@ -8,4 +8,5 @@ export abstract class AbstractStringIterator extends Object implements Primitive
     forEachRemaining(arg0: (param0: number) => void): void;
     getIndex(): number;
     next(): number;
+    nextInt(): number;
 }

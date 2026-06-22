@@ -6,8 +6,10 @@ import type { SolverStats } from '../../../../../../../../net/fabricmc/loader/im
 import type { Constr } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/Constr.d.ts'
 export interface RestartStrategy extends Serializable, Object, ConflictTimer{
     init(arg0: SearchParams, arg1: SolverStats): void;
+    newConflict(): void;
     newLearnedClause(arg0: Constr, arg1: number): void;
     onBackjumpToRootLevel(): void;
     onRestart(): void;
+    reset(): void;
     shouldRestart(): boolean;
 }

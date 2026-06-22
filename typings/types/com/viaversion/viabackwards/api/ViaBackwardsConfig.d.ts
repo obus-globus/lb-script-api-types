@@ -16,7 +16,10 @@ export interface ViaBackwardsConfig extends Config, Object{
     mapDarknessEffect(): boolean;
     mapDisplayEntities(): boolean;
     passOriginalItemNameToResourcePacks(): boolean;
+    reload(): void;
+    save(): void;
     scaffoldingToWater(): boolean;
     sculkShriekerToCryingObsidian(): boolean;
+    set(arg0: string, arg1: Object): void;
     suppressEmulationWarnings(): boolean;
 }

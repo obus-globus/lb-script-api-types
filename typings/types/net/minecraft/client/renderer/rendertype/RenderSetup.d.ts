@@ -22,6 +22,7 @@ export class RenderSetup extends Object implements MixinRenderSetupAccessor {
     readonly textures: { [key: string]: RenderSetup$TextureBinding };
     // private useLightmap: boolean;
     // private useOverlay: boolean;
+    getOutlineProperty(): RenderSetup$OutlineProperty;
     getTextures(): { [key: string]: RenderSetup$TextureAndSampler };
     toString(): string;
 }

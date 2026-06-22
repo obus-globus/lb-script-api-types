@@ -34,11 +34,14 @@ export abstract class AbstractGameRulesScreen extends Screen implements Abstract
     // private layout: HeaderAndFooterLayout;
     // private ruleList: AbstractGameRulesScreen$RuleList;
     // private searchBox: EditBox;
+    callClearInvalid(arg0: AbstractGameRulesScreen$RuleEntry): void;
+    callMarkInvalid(arg0: AbstractGameRulesScreen$RuleEntry): void;
     // private clearInvalid(invalidEntry: AbstractGameRulesScreen$RuleEntry): void;
     closeAndApplyChanges(): void;
     closeAndDiscardChanges(): void;
     createAndConfigureSearchBox(headerLayout: LinearLayout): void;
     filterGameRules(filter: string): void;
+    getGameRules(): GameRules;
     init(): void;
     init(width: number, height: number): void;
     initContent(): void;

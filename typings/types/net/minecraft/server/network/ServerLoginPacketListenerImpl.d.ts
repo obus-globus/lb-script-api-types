@@ -43,7 +43,9 @@ export class ServerLoginPacketListenerImpl extends Object implements PacketConte
     fillListenerSpecificCrashDetails(report: CrashReport, connectionDetails: CrashReportCategory): void;
     // private finishLoginAndWaitForClient(gameProfile: GameProfile): void;
     getAddon(): ServerLoginNetworkAddon;
+    getConnection(): Connection;
     getPacketContext(): PacketContext;
+    getServer(): MinecraftServer;
     getUserName(): string;
     handleCookieResponse(packet: ServerboundCookieResponsePacket): void;
     handleCustomQueryPacket(packet: ServerboundCustomQueryAnswerPacket): void;

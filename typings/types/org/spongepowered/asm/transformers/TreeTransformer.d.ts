@@ -6,6 +6,8 @@ export abstract class TreeTransformer extends Object implements ILegacyClassTran
     constructor()
     // private classNode: ClassNode;
     // private classReader: ClassReader;
+    getName(): string;
+    isDelegationExcluded(): boolean;
     readClass(arg0: string, arg1: number[]): ClassNode;
     readClass(arg0: string, arg1: number[], arg2: boolean): ClassNode;
     writeClass(arg0: ClassNode): number[];

@@ -8,6 +8,7 @@ import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Temporal extends TemporalAccessor, Object {
     get(arg0: TemporalField): number;
+    getLong(arg0: TemporalField): number;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): Temporal;
     minus(arg0: number, arg1: TemporalUnit): Temporal;

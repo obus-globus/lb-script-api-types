@@ -28,6 +28,7 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     protected composeName(parentName: string, childName: string): string;
     protected currentElement(tag: string): JsonElement;
     protected currentObject(): JsonElement;
+    decodeElementIndex(descriptor: SerialDescriptor): number;
     decodeInline(descriptor: SerialDescriptor): Decoder;
     decodeJsonElement(): JsonElement;
     decodeNotNullMark(): boolean;

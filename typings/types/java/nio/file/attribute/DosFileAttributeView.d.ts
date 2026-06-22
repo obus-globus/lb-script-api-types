@@ -1,5 +1,6 @@
 import type { BasicFileAttributeView } from '../../../../java/nio/file/attribute/BasicFileAttributeView.d.ts'
 import type { DosFileAttributes } from '../../../../java/nio/file/attribute/DosFileAttributes.d.ts'
+import type { FileTime } from '../../../../java/nio/file/attribute/FileTime.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface DosFileAttributeView extends BasicFileAttributeView, Object{
     name(): string;
@@ -8,4 +9,5 @@ export interface DosFileAttributeView extends BasicFileAttributeView, Object{
     setHidden(arg0: boolean): void;
     setReadOnly(arg0: boolean): void;
     setSystem(arg0: boolean): void;
+    setTimes(arg0: FileTime, arg1: FileTime, arg2: FileTime): void;
 }

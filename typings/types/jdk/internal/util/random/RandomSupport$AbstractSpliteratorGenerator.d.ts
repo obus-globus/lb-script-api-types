@@ -47,6 +47,7 @@ export abstract class RandomSupport$AbstractSpliteratorGenerator extends Object 
     nextInt(): number;
     nextInt(arg0: number): number;
     nextInt(arg0: number, arg1: number): number;
+    nextLong(): number;
     nextLong(arg0: number): number;
     nextLong(arg0: number, arg1: number): number;
 }

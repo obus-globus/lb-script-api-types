@@ -4,7 +4,9 @@ export abstract class AbstractIntListIterator extends AbstractIntBidirectionalIt
     constructor()
     add(arg0: number): void;
     next(): number;
+    nextInt(): number;
     previous(): number;
+    previousInt(): number;
     remove(): void;
     set(arg0: number): void;
 }

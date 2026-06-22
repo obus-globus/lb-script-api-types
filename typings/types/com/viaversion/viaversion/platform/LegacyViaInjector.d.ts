@@ -19,6 +19,7 @@ export abstract class LegacyViaInjector extends Object implements ViaInjector {
     getDump(): JsonObject;
     getEncoderName(): string;
     getServerConnection(): Object;
+    getServerProtocolVersion(): ProtocolVersion;
     getServerProtocolVersions(): ProtocolVersion[];
     inject(): void;
     // private injectChannelFuture(arg0: ChannelFuture): void;

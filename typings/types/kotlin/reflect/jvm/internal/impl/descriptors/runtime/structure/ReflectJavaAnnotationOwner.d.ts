@@ -7,4 +7,5 @@ export interface ReflectJavaAnnotationOwner extends Object, JavaAnnotationOwner{
     findAnnotation(arg0: FqName): ReflectJavaAnnotation;
     getAnnotations(): ReflectJavaAnnotation[];
     getElement(): AnnotatedElement;
+    isDeprecatedInJavaDoc(): boolean;
 }

@@ -105,6 +105,11 @@ export class Gui extends Object implements MixinGuiAccessor, GuiAccessor {
     // private extractTitle(graphics: GuiGraphicsExtractor, deltaTracker: DeltaTracker): void;
     // private extractVehicleHealth(graphics: GuiGraphicsExtractor): void;
     // private extractVignette(graphics: GuiGraphicsExtractor, camera: Entity): void;
+    fabric$callGetCameraPlayer(): Player;
+    fabric$callGetHeartCount(arg0: LivingEntity): number;
+    fabric$callGetHeartRows(arg0: number): number;
+    fabric$callGetRiddenEntity(): LivingEntity;
+    fabric$getRenderHealthValue(): number;
     // private getAirBubbleYLine(vehicleHearts: number, yLineAir: number): number;
     getBossOverlay(): BossHealthOverlay;
     // private getCameraPlayer(): Player;

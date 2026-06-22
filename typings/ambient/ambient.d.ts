@@ -34,8 +34,8 @@ declare global {
     //   https://www.graalvm.org/jdk25/reference-manual/polyglot-programming/
     /** Merge target for the optional Java.type string-literal registry —
      *  add "@wunk/lb-script-api-types/registry-lb" (or registry-full) to your
-     *  tsconfig "types" to populate it. Empty by default: zero compile cost,
-     *  Java.type falls back to the generic overload. */
+     *  tsconfig/jsconfig "types" to populate it. Empty by default: zero
+     *  compile cost; Java.type falls back to the generic overload. */
     interface JavaTypeRegistry {}
 
     interface JavaIntrinsic {

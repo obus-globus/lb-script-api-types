@@ -38,7 +38,9 @@ export class Path2D extends Object implements Shape, Cloneable {
     createTransformedShape(arg0: AffineTransform): Shape;
     curveTo(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     getBounds(): Rectangle;
+    getBounds2D(): Rectangle2D;
     getCurrentPoint(): Point2D;
+    getPathIterator(arg0: AffineTransform): PathIterator;
     getPathIterator(arg0: AffineTransform, arg1: number): PathIterator;
     getPoint(arg0: number): Point2D;
     getWindingRule(): number;

@@ -41,6 +41,7 @@ export class BucketItem extends Item implements BucketItemAccessor, DispensibleC
     readonly content: Fluid;
     checkExtraContent(user: LivingEntity, level: Level, itemStack: ItemStack, pos: BlockPos): void;
     emptyContents(user: LivingEntity, level: Level, pos: BlockPos, hitResult: BlockHitResult): boolean;
+    fabric_getContent(): Fluid;
     getContent(): Fluid;
     playEmptySound(user: LivingEntity, level: LevelAccessor, pos: BlockPos): void;
     use(level: Level, player: Player, hand: InteractionHand): InteractionResult;

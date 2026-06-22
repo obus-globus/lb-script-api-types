@@ -13,8 +13,10 @@ export interface ByteByteSortedPair extends SortedPair<number>, ByteBytePair, Se
     keyByte(): number;
     left(): number;
     left(arg0: number): ByteBytePair;
+    leftByte(): number;
     right(): number;
     right(arg0: number): ByteBytePair;
+    rightByte(): number;
     second(): number;
     second(arg0: number): ByteBytePair;
     secondByte(): number;

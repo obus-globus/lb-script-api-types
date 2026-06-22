@@ -11,5 +11,6 @@ export abstract class ReflectJavaType extends Object implements JavaType {
     findAnnotation(arg0: FqName): JavaAnnotation;
     getReflectType(): Type;
     hashCode(): number;
+    isDeprecatedInJavaDoc(): boolean;
     toString(): string;
 }

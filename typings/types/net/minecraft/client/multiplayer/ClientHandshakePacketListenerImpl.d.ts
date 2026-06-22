@@ -51,6 +51,7 @@ export class ClientHandshakePacketListenerImpl extends Object implements PacketC
     // private authenticateServer(digest: string): Component;
     fillListenerSpecificCrashDetails(report: CrashReport, connectionDetails: CrashReportCategory): void;
     getAddon(): ClientLoginNetworkAddon;
+    getConnection(): Connection;
     getPacketContext(): PacketContext;
     handleCompression(packet: ClientboundLoginCompressionPacket): void;
     handleCustomQuery(packet: ClientboundCustomQueryPacket): void;

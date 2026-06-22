@@ -83,7 +83,9 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:205}
      */
     readonly useHand: InteractionHand;
+    equals(other: Object | null): boolean;
     getIdForServer(screen: AbstractContainerScreen<Object> | null): number | null;
     getIdForServerWithCurrentScreen(): number | null;
+    hashCode(): number;
     name(): "OFFHAND" | "SLOT_0" | "SLOT_1" | "SLOT_2" | "SLOT_3" | "SLOT_4" | "SLOT_5" | "SLOT_6" | "SLOT_7" | "SLOT_8";
 }

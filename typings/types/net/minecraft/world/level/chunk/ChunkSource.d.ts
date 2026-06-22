@@ -2,6 +2,7 @@ import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SectionPos } from '../../../../../net/minecraft/core/SectionPos.d.ts'
+import type { BlockGetter } from '../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { LightLayer } from '../../../../../net/minecraft/world/level/LightLayer.d.ts'
 import type { ChunkAccess } from '../../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
@@ -19,6 +20,7 @@ export abstract class ChunkSource extends Object implements AutoCloseable, Light
     getChunkForLighting(x: number, z: number): LightChunk;
     getChunkNow(x: number, z: number): LevelChunk;
     getForceLoadedChunks(): (Object | null)[];
+    getLevel(): BlockGetter;
     getLightEngine(): LevelLightEngine;
     getLoadedChunksCount(): number;
     hasChunk(x: number, z: number): boolean;

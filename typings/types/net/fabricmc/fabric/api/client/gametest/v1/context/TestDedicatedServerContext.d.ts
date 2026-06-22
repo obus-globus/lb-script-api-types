@@ -5,4 +5,5 @@ import type { TestServerContext } from '../../../../../../../../net/fabricmc/fab
 export interface TestDedicatedServerContext extends AutoCloseable, Object, TestServerContext{
     close(): void;
     connect(): TestServerConnection;
+    runCommand(arg0: string): void;
 }

@@ -7,5 +7,6 @@ export abstract class AbstractFloatIterator extends Object implements FloatItera
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextFloat(): number;
     skip(arg0: number): number;
 }

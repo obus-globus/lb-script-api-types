@@ -15,6 +15,7 @@ export class MeshData extends Object implements AutoCloseable, MeshDataAccessor 
     close(): void;
     drawState(): MeshData$DrawState;
     indexBuffer(): ByteBuffer;
+    sodium$setIndexBuffer(arg0: ByteBufferBuilder$Result): void;
     sortQuads(indexBufferTarget: ByteBufferBuilder, sorting: VertexSorting): MeshData$SortState;
     vertexBuffer(): ByteBuffer;
 }

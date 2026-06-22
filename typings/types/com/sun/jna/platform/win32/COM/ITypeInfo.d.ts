@@ -24,6 +24,7 @@ import type { IntByReference } from '../../../../../../com/sun/jna/ptr/IntByRefe
 import type { PointerByReference } from '../../../../../../com/sun/jna/ptr/PointerByReference.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface ITypeInfo extends IUnknown, Object{
+    AddRef(): number;
     AddressOfMember(arg0: OaIdl$MEMBERID, arg1: OaIdl$INVOKEKIND, arg2: PointerByReference): WinNT$HRESULT;
     CreateInstance(arg0: IUnknown, arg1: Guid$REFIID, arg2: PointerByReference): WinNT$HRESULT;
     GetContainingTypeLib(arg0: PointerByReference, arg1: WinDef$UINTByReference): WinNT$HRESULT;
@@ -40,6 +41,8 @@ export interface ITypeInfo extends IUnknown, Object{
     GetTypeComp(arg0: PointerByReference): WinNT$HRESULT;
     GetVarDesc(arg0: WinDef$UINT, arg1: PointerByReference): WinNT$HRESULT;
     Invoke(arg0: WinDef$PVOID, arg1: OaIdl$MEMBERID, arg2: WinDef$WORD, arg3: OleAuto$DISPPARAMS$ByReference, arg4: Variant$VARIANT$ByReference, arg5: OaIdl$EXCEPINFO$ByReference, arg6: WinDef$UINTByReference): WinNT$HRESULT;
+    QueryInterface(arg0: Guid$REFIID, arg1: PointerByReference): WinNT$HRESULT;
+    Release(): number;
     ReleaseFuncDesc(arg0: OaIdl$FUNCDESC): void;
     ReleaseTypeAttr(arg0: OaIdl$TYPEATTR): void;
     ReleaseVarDesc(arg0: OaIdl$VARDESC): void;

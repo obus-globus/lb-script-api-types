@@ -96,8 +96,10 @@ import type { JNI$SetObjectArrayElement } from '../../../org/graalvm/jniutils/JN
 import type { JNI$SetShortArrayRegion } from '../../../org/graalvm/jniutils/JNI$SetShortArrayRegion.d.ts'
 import type { JNI$SetStaticBooleanField } from '../../../org/graalvm/jniutils/JNI$SetStaticBooleanField.d.ts'
 import type { JNI$Throw } from '../../../org/graalvm/jniutils/JNI$Throw.d.ts'
+import type { ComparableWord } from '../../../org/graalvm/word/ComparableWord.d.ts'
 import type { PointerBase } from '../../../org/graalvm/word/PointerBase.d.ts'
 export interface JNI$JNINativeInterface extends Object, PointerBase{
+    equal(val: ComparableWord): boolean;
     getCallBooleanMethodA(): JNI$CallBooleanMethodA;
     getCallByteMethodA(): JNI$CallByteMethodA;
     getCallCharMethodA(): JNI$CallCharMethodA;
@@ -195,4 +197,8 @@ export interface JNI$JNINativeInterface extends Object, PointerBase{
     getSetShortArrayRegion(): JNI$SetShortArrayRegion;
     getSetStaticBooleanField(): JNI$SetStaticBooleanField;
     getThrow(): JNI$Throw;
+    isNonNull(): boolean;
+    isNull(): boolean;
+    notEqual(val: ComparableWord): boolean;
+    rawValue(): number;
 }

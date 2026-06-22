@@ -8,11 +8,13 @@ import type { PacketListenerExtensions } from '../../../../net/fabricmc/fabric/i
 import type { ServerCommonPacketListenerImplAccessor } from '../../../../net/fabricmc/fabric/mixin/networking/accessor/ServerCommonPacketListenerImplAccessor.d.ts'
 import type { ServerCommonPacketListenerImplAccessor as ServerCommonPacketListenerImplAccessor_2 } from '../../../../net/fabricmc/fabric/mixin/recipe/sync/ServerCommonPacketListenerImplAccessor.d.ts'
 import type { Connection } from '../../../../net/minecraft/network/Connection.d.ts'
+import type { ConnectionProtocol } from '../../../../net/minecraft/network/ConnectionProtocol.d.ts'
 import type { DisconnectionDetails } from '../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { PacketListener } from '../../../../net/minecraft/network/PacketListener.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ServerCommonPacketListener } from '../../../../net/minecraft/network/protocol/common/ServerCommonPacketListener.d.ts'
+import type { ServerboundClientInformationPacket } from '../../../../net/minecraft/network/protocol/common/ServerboundClientInformationPacket.d.ts'
 import type { ServerboundCustomClickActionPacket } from '../../../../net/minecraft/network/protocol/common/ServerboundCustomClickActionPacket.d.ts'
 import type { ServerboundCustomPayloadPacket } from '../../../../net/minecraft/network/protocol/common/ServerboundCustomPayloadPacket.d.ts'
 import type { ServerboundKeepAlivePacket } from '../../../../net/minecraft/network/protocol/common/ServerboundKeepAlivePacket.d.ts'
@@ -42,20 +44,25 @@ export abstract class ServerCommonPacketListenerImpl extends Object implements P
     createCookie(clientInformation: ClientInformation): CommonListenerCookie;
     disconnect(details: DisconnectionDetails): void;
     disconnect(reason: Component): void;
+    getConnection(): Connection;
     getOwner(): GameProfile;
     getPacketContext(): PacketContext;
+    getServer(): MinecraftServer;
+    handleClientInformation(packet: ServerboundClientInformationPacket): void;
     handleCookieResponse(packet: ServerboundCookieResponsePacket): void;
     handleCustomClickAction(packet: ServerboundCustomClickActionPacket): void;
     handleCustomPayload(packet: ServerboundCustomPayloadPacket): void;
     handleKeepAlive(packet: ServerboundKeepAlivePacket): void;
     handlePong(serverboundPongPacket: ServerboundPongPacket): void;
     handleResourcePackResponse(packet: ServerboundResourcePackPacket): void;
+    isAcceptingMessages(): boolean;
     isSingleplayerOwner(): boolean;
     keepConnectionAlive(): void;
     latency(): number;
     onDisconnect(details: DisconnectionDetails): void;
     onPacketError(packet: Packet<PacketListener>, e: Exception): void;
     playerProfile(): GameProfile;
+    protocol(): ConnectionProtocol;
     resumeFlushing(): void;
     send(packet: Packet<Object>): void;
     send(packet: Packet<Object>, listener: ChannelFutureListener): void;

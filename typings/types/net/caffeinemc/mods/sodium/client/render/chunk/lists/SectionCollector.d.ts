@@ -19,6 +19,7 @@ export abstract class SectionCollector extends Object implements RenderListProvi
     getTaskLists(): { [key in TaskQueueType]: RenderSection[] };
     getUnsortedRenderLists(): ChunkRenderList[];
     needsRevisitForPendingUpdates(): boolean;
+    orderIsSorted(): boolean;
     setCachedSortItems(arg0: number[]): void;
     visit(arg0: RenderSection): void;
     // private visit(arg0: RenderSection, arg1: number): void;

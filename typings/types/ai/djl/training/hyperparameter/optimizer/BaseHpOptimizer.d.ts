@@ -8,5 +8,6 @@ export abstract class BaseHpOptimizer extends Object implements HpOptimizer {
     // private results: Map<HpSet, number>;
     getBest(): Pair<HpSet, number>;
     getLoss(arg0: HpSet): number;
+    nextConfig(): HpSet;
     update(arg0: HpSet, arg1: number): void;
 }

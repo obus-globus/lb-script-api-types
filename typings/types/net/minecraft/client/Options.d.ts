@@ -319,6 +319,7 @@ export class Options extends Object implements OptionsAccessor {
     showAutosaveIndicator(): OptionInstance<boolean>;
     showSubtitles(): OptionInstance<boolean>;
     simulationDistance(): OptionInstance<number>;
+    sodium$initialExclusiveFullscreen(): boolean;
     soundDevice(): OptionInstance<string>;
     sprintWindow(): OptionInstance<number>;
     telemetryOptInExtra(): OptionInstance<boolean>;

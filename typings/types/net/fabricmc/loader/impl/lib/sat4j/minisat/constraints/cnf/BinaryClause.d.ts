@@ -22,7 +22,9 @@ export abstract class BinaryClause extends Object implements Serializable, Const
     getActivity(): number;
     getAssertionLevel(arg0: IVecInt, arg1: number): number;
     hashCode(): number;
+    incActivity(arg0: number): void;
     isSatisfied(): boolean;
+    learnt(): boolean;
     locked(): boolean;
     propagate(arg0: UnitPropagationListener, arg1: number): boolean;
     propagatePI(arg0: MandatoryLiteralListener, arg1: number): boolean;
@@ -30,6 +32,8 @@ export abstract class BinaryClause extends Object implements Serializable, Const
     remove(arg0: UnitPropagationListener): void;
     requiredNumberOfSatisfiedLiterals(): number;
     rescaleBy(arg0: number): void;
+    setActivity(arg0: number): void;
+    setLearnt(): void;
     simplify(): boolean;
     size(): number;
     toConstraint(): Constr;

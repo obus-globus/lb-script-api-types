@@ -1,6 +1,14 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ConnectionProtocol } from '../../../../../net/minecraft/network/ConnectionProtocol.d.ts'
+import type { DisconnectionDetails } from '../../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { ServerCommonPacketListener } from '../../../../../net/minecraft/network/protocol/common/ServerCommonPacketListener.d.ts'
+import type { ServerboundClientInformationPacket } from '../../../../../net/minecraft/network/protocol/common/ServerboundClientInformationPacket.d.ts'
+import type { ServerboundCustomClickActionPacket } from '../../../../../net/minecraft/network/protocol/common/ServerboundCustomClickActionPacket.d.ts'
+import type { ServerboundCustomPayloadPacket } from '../../../../../net/minecraft/network/protocol/common/ServerboundCustomPayloadPacket.d.ts'
+import type { ServerboundKeepAlivePacket } from '../../../../../net/minecraft/network/protocol/common/ServerboundKeepAlivePacket.d.ts'
+import type { ServerboundPongPacket } from '../../../../../net/minecraft/network/protocol/common/ServerboundPongPacket.d.ts'
+import type { ServerboundResourcePackPacket } from '../../../../../net/minecraft/network/protocol/common/ServerboundResourcePackPacket.d.ts'
+import type { ServerboundCookieResponsePacket } from '../../../../../net/minecraft/network/protocol/cookie/ServerboundCookieResponsePacket.d.ts'
 import type { ServerboundAcceptTeleportationPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundAcceptTeleportationPacket.d.ts'
 import type { ServerboundAttackPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundAttackPacket.d.ts'
 import type { ServerboundBlockEntityTagQueryPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundBlockEntityTagQueryPacket.d.ts'
@@ -60,6 +68,7 @@ import type { ServerboundTestInstanceBlockActionPacket } from '../../../../../ne
 import type { ServerboundUseItemOnPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundUseItemOnPacket.d.ts'
 import type { ServerboundUseItemPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundUseItemPacket.d.ts'
 import type { ServerPingPacketListener } from '../../../../../net/minecraft/network/protocol/ping/ServerPingPacketListener.d.ts'
+import type { ServerboundPingRequestPacket } from '../../../../../net/minecraft/network/protocol/ping/ServerboundPingRequestPacket.d.ts'
 export interface ServerGamePacketListener extends Object, ServerCommonPacketListener, ServerPingPacketListener{
     handleAcceptPlayerLoad(packet: ServerboundPlayerLoadedPacket): void;
     handleAcceptTeleportPacket(packet: ServerboundAcceptTeleportationPacket): void;
@@ -75,32 +84,40 @@ export interface ServerGamePacketListener extends Object, ServerCommonPacketList
     handleChatSessionUpdate(packet: ServerboundChatSessionUpdatePacket): void;
     handleChunkBatchReceived(packet: ServerboundChunkBatchReceivedPacket): void;
     handleClientCommand(packet: ServerboundClientCommandPacket): void;
+    handleClientInformation(packet: ServerboundClientInformationPacket): void;
     handleClientTickEnd(packet: ServerboundClientTickEndPacket): void;
     handleConfigurationAcknowledged(packet: ServerboundConfigurationAcknowledgedPacket): void;
     handleContainerButtonClick(packet: ServerboundContainerButtonClickPacket): void;
     handleContainerClick(packet: ServerboundContainerClickPacket): void;
     handleContainerClose(packet: ServerboundContainerClosePacket): void;
     handleContainerSlotStateChanged(packet: ServerboundContainerSlotStateChangedPacket): void;
+    handleCookieResponse(packet: ServerboundCookieResponsePacket): void;
+    handleCustomClickAction(packet: ServerboundCustomClickActionPacket): void;
     handleCustomCommandSuggestions(packet: ServerboundCommandSuggestionPacket): void;
+    handleCustomPayload(packet: ServerboundCustomPayloadPacket): void;
     handleDebugSubscriptionRequest(packet: ServerboundDebugSubscriptionRequestPacket): void;
     handleEditBook(packet: ServerboundEditBookPacket): void;
     handleEntityTagQuery(packet: ServerboundEntityTagQueryPacket): void;
     handleInteract(packet: ServerboundInteractPacket): void;
     handleJigsawGenerate(packet: ServerboundJigsawGeneratePacket): void;
+    handleKeepAlive(packet: ServerboundKeepAlivePacket): void;
     handleLockDifficulty(packet: ServerboundLockDifficultyPacket): void;
     handleMovePlayer(packet: ServerboundMovePlayerPacket): void;
     handleMoveVehicle(packet: ServerboundMoveVehiclePacket): void;
     handlePaddleBoat(packet: ServerboundPaddleBoatPacket): void;
     handlePickItemFromBlock(packet: ServerboundPickItemFromBlockPacket): void;
     handlePickItemFromEntity(packet: ServerboundPickItemFromEntityPacket): void;
+    handlePingRequest(packet: ServerboundPingRequestPacket): void;
     handlePlaceRecipe(packet: ServerboundPlaceRecipePacket): void;
     handlePlayerAbilities(packet: ServerboundPlayerAbilitiesPacket): void;
     handlePlayerAction(packet: ServerboundPlayerActionPacket): void;
     handlePlayerCommand(packet: ServerboundPlayerCommandPacket): void;
     handlePlayerInput(packet: ServerboundPlayerInputPacket): void;
+    handlePong(serverboundPongPacket: ServerboundPongPacket): void;
     handleRecipeBookChangeSettingsPacket(packet: ServerboundRecipeBookChangeSettingsPacket): void;
     handleRecipeBookSeenRecipePacket(packet: ServerboundRecipeBookSeenRecipePacket): void;
     handleRenameItem(packet: ServerboundRenameItemPacket): void;
+    handleResourcePackResponse(packet: ServerboundResourcePackPacket): void;
     handleSeenAdvancements(packet: ServerboundSeenAdvancementsPacket): void;
     handleSelectTrade(packet: ServerboundSelectTradePacket): void;
     handleSetBeaconPacket(packet: ServerboundSetBeaconPacket): void;
@@ -119,5 +136,7 @@ export interface ServerGamePacketListener extends Object, ServerCommonPacketList
     handleTestInstanceBlockAction(packet: ServerboundTestInstanceBlockActionPacket): void;
     handleUseItem(packet: ServerboundUseItemPacket): void;
     handleUseItemOn(packet: ServerboundUseItemOnPacket): void;
+    isAcceptingMessages(): boolean;
+    onDisconnect(details: DisconnectionDetails): void;
     protocol(): ConnectionProtocol;
 }

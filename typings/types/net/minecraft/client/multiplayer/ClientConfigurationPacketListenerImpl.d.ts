@@ -47,6 +47,7 @@ export class ClientConfigurationPacketListenerImpl extends ClientCommonPacketLis
     // private seenCodeOfConduct: boolean;
     createDialogAccess(): DialogConnectionAccess;
     getAddon(): ClientConfigurationNetworkAddon;
+    getLocalGameProfile(): GameProfile;
     handleCodeOfConduct(packet: ClientboundCodeOfConductPacket): void;
     handleConfigurationFinished(packet: ClientboundFinishConfigurationPacket): void;
     handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;

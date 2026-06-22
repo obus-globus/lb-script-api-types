@@ -1,4 +1,5 @@
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
+import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelMetadata } from '../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOutboundBuffer } from '../../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
 import type { ServerChannel } from '../../../../io/netty/channel/ServerChannel.d.ts'
@@ -11,6 +12,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractKQueueServerChannel extends AbstractKQueueChannel implements ServerChannel {
     constructor(arg0: BsdSocket)
     constructor(arg0: BsdSocket, arg1: boolean)
+    config(): ChannelConfig;
     doConnect(arg0: SocketAddress, arg1: SocketAddress): boolean;
     doWrite(arg0: ChannelOutboundBuffer): void;
     filterOutboundMessage(arg0: Object): Object;

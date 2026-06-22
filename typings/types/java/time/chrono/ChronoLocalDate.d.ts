@@ -20,6 +20,7 @@ export interface ChronoLocalDate extends Temporal, TemporalAdjuster, Object, Com
     format(arg0: DateTimeFormatter): string;
     getChronology(): Chronology;
     getEra(): Era;
+    getLong(arg0: TemporalField): number;
     isAfter(arg0: ChronoLocalDate): boolean;
     isBefore(arg0: ChronoLocalDate): boolean;
     isEqual(arg0: ChronoLocalDate): boolean;

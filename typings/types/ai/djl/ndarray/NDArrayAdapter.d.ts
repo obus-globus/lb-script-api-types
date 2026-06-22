@@ -72,6 +72,7 @@ export abstract class NDArrayAdapter extends Object implements NDArray {
     cumProd(arg0: number, arg1: DataType): NDArray;
     cumSum(): NDArray;
     cumSum(arg0: number): NDArray;
+    detach(): void;
     diagonal(): NDArray;
     diagonal(arg0: number): NDArray;
     diagonal(arg0: number, arg1: number, arg2: number): NDArray;
@@ -136,6 +137,7 @@ export abstract class NDArrayAdapter extends Object implements NDArray {
     ifft(arg0: number, arg1: number): NDArray;
     ifft2(arg0: number[]): NDArray;
     ifft2(arg0: number[], arg1: number[]): NDArray;
+    intern(arg0: NDArray): void;
     inverse(): NDArray;
     irfft(arg0: number): NDArray;
     irfft(arg0: number, arg1: number): NDArray;
@@ -280,6 +282,7 @@ export abstract class NDArrayAdapter extends Object implements NDArray {
     toBooleanArray(): (Object | null)[];
     toByteArray(): number[];
     toByteBuffer(): ByteBuffer;
+    toByteBuffer(arg0: boolean): ByteBuffer;
     toDebugString(): string;
     toDebugString(arg0: boolean): string;
     toDebugString(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): string;

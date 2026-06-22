@@ -11,6 +11,7 @@ export class AFUNIXProtocolFamily extends Enum<AFUNIXProtocolFamily> implements 
     static valueOf(paramarg0: string): AFUNIXProtocolFamily;
     static values(): (Object | null)[];
     private constructor()
+    name(): string;
     openDatagramChannel(): AFDatagramChannel<Object>;
     openServerSocketChannel(): AFServerSocketChannel<Object>;
     openSocketChannel(): AFSocketChannel<Object>;

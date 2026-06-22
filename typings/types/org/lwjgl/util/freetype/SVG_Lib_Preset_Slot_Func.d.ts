@@ -20,4 +20,5 @@ export abstract class SVG_Lib_Preset_Slot_Func extends Callback implements SVG_L
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: boolean, arg2: number): number;
 }

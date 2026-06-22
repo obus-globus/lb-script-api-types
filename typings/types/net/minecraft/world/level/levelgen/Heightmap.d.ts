@@ -11,6 +11,7 @@ export class Heightmap extends Object implements HeightmapAccessor {
     // private chunk: ChunkAccess;
     // private data: BitStorage;
     // private isOpaque: (param0: BlockState) => boolean;
+    callSet(arg0: number, arg1: number, arg2: number): void;
     // private getFirstAvailable(index: number): number;
     getFirstAvailable(x: number, z: number): number;
     getHighestTaken(x: number, z: number): number;

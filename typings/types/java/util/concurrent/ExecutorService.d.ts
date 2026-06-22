@@ -8,6 +8,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface ExecutorService extends AutoCloseable, Executor, Object {
     awaitTermination(arg0: number, arg1: TimeUnit): boolean;
     close(): void;
+    execute(arg0: () => void): void;
     invokeAll<T extends Object | number | string | boolean>(arg0: () => T[]): Future<T>[];
     invokeAll<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): Future<T>[];
     invokeAny<T extends Object | number | string | boolean>(arg0: () => T[]): T;

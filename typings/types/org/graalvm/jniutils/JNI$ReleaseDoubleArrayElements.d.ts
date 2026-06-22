@@ -3,6 +3,12 @@ import type { JNI$JDoubleArray } from '../../../org/graalvm/jniutils/JNI$JDouble
 import type { JNI$JNIEnv } from '../../../org/graalvm/jniutils/JNI$JNIEnv.d.ts'
 import type { CFunctionPointer } from '../../../org/graalvm/nativeimage/c/function/CFunctionPointer.d.ts'
 import type { CDoublePointer } from '../../../org/graalvm/nativeimage/c/type/CDoublePointer.d.ts'
+import type { ComparableWord } from '../../../org/graalvm/word/ComparableWord.d.ts'
 export interface JNI$ReleaseDoubleArrayElements extends Object, CFunctionPointer{
     call(env: JNI$JNIEnv, array: JNI$JDoubleArray, elems: CDoublePointer, mode: number): void;
+    equal(val: ComparableWord): boolean;
+    isNonNull(): boolean;
+    isNull(): boolean;
+    notEqual(val: ComparableWord): boolean;
+    rawValue(): number;
 }

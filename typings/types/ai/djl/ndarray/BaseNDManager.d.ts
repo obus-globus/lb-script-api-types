@@ -1,4 +1,5 @@
 import type { Device } from '../../../ai/djl/Device.d.ts'
+import type { Engine } from '../../../ai/djl/engine/Engine.d.ts'
 import type { BaseNDManager$TempResource } from '../../../ai/djl/ndarray/BaseNDManager$TempResource.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
@@ -35,6 +36,7 @@ export abstract class BaseNDManager extends Object implements NDManager {
     // private resources: { [key: string]: AutoCloseable };
     // private tempResources: { [key: string]: BaseNDManager$TempResource };
     // private uid: string;
+    allocateDirect(arg0: number): ByteBuffer;
     arange(arg0: number): NDArray;
     arange(arg0: number, arg1: number): NDArray;
     arange(arg0: number, arg1: number, arg2: number): NDArray;
@@ -80,11 +82,13 @@ export abstract class BaseNDManager extends Object implements NDManager {
     eye(arg0: number, arg1: number, arg2: number): NDArray;
     eye(arg0: number, arg1: number, arg2: number, arg3: DataType): NDArray;
     eye(arg0: number, arg1: number, arg2: number, arg3: DataType, arg4: Device): NDArray;
+    from(arg0: NDArray): NDArray;
     full(arg0: Shape, arg1: number): NDArray;
     full(arg0: Shape, arg1: number, arg2: DataType): NDArray;
     full(arg0: Shape, arg1: number, arg2: DataType, arg3: Device): NDArray;
     getAlternativeManager(): NDManager;
     getDevice(): Device;
+    getEngine(): Engine;
     getManagedArrays(): NDArray[];
     getName(): string;
     getParentManager(): NDManager;
@@ -98,6 +102,7 @@ export abstract class BaseNDManager extends Object implements NDManager {
     load(arg0: Path[]): (Object | null)[];
     load(arg0: Path[], arg1: Device): (Object | null)[];
     newSubManager(): NDManager;
+    newSubManager(arg0: Device): NDManager;
     ones(arg0: Shape): NDArray;
     ones(arg0: Shape, arg1: DataType): NDArray;
     ones(arg0: Shape, arg1: DataType, arg2: Device): NDArray;

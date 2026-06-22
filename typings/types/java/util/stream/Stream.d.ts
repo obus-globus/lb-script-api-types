@@ -24,6 +24,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Stream<T extends Object | number | string | boolean> extends BaseStream<T, Stream<T>>, Object {
     allMatch(arg0: (param0: T) => boolean): boolean;
     anyMatch(arg0: (param0: T) => boolean): boolean;
+    close(): void;
     collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;
     collect<R extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Collector<T, A, R>): R;
     count(): number;

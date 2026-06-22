@@ -15,8 +15,11 @@ export abstract class Sensor<E extends LivingEntity> extends Object implements S
     // private scanRate: number;
     // private timeToTick: number;
     doTick(level: ServerLevel, body: E): void;
+    getLastSenseTime(): number;
+    getSenseInterval(): number;
     randomlyDelayStart(randomSource: RandomSource): void;
     requires(): MemoryModuleType<Object>[];
+    setLastSenseTime(arg0: number): void;
     tick(level: ServerLevel, body: E): void;
     // private updateTargetingConditionRanges(body: E): void;
 }

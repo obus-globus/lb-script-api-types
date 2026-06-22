@@ -33,5 +33,6 @@ export abstract class X509Certificate extends Certificate implements DEREncodabl
     getSubjectX500Principal(): X500Principal;
     getTBSCertificate(): number[];
     getVersion(): number;
+    hasUnsupportedCriticalExtension(): boolean;
     verify(arg0: PublicKey, arg1: Provider): void;
 }

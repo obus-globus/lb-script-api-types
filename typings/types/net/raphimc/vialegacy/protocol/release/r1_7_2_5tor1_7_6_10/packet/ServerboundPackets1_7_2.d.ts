@@ -1,5 +1,6 @@
 import type { Direction } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { ServerboundPacketType } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
+import type { State } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
@@ -35,5 +36,6 @@ export class ServerboundPackets1_7_2 extends Enum<ServerboundPackets1_7_2> imple
     direction(): Direction;
     getId(): number;
     getName(): string;
+    state(): State;
     name(): "KEEP_ALIVE" | "CHAT" | "INTERACT" | "MOVE_PLAYER_STATUS_ONLY" | "MOVE_PLAYER_POS" | "MOVE_PLAYER_ROT" | "MOVE_PLAYER_POS_ROT" | "PLAYER_ACTION" | "USE_ITEM_ON" | "SET_CARRIED_ITEM" | "SWING" | "PLAYER_COMMAND" | "PLAYER_INPUT" | "CONTAINER_CLOSE" | "CONTAINER_CLICK" | "CONTAINER_ACK" | "SET_CREATIVE_MODE_SLOT" | "CONTAINER_BUTTON_CLICK" | "SIGN_UPDATE" | "PLAYER_ABILITIES" | "COMMAND_SUGGESTION" | "CLIENT_INFORMATION" | "CLIENT_COMMAND" | "CUSTOM_PAYLOAD";
 }

@@ -1,3 +1,4 @@
+import type { File } from '../../../../../../java/io/File.d.ts'
 import type { Filer } from '../../../../../../javax/annotation/processing/Filer.d.ts'
 import type { Messager } from '../../../../../../javax/annotation/processing/Messager.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -18,4 +19,5 @@ export abstract class MappingProvider extends Object implements IMappingProvider
     getMethodMapping(arg0: MappingMethod): MappingMethod;
     getPackageMapping(arg0: string): string;
     isEmpty(): boolean;
+    read(arg0: File): void;
 }

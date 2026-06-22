@@ -29,6 +29,7 @@ export abstract class FabricDynamicRegistryProvider extends Object implements Da
     // private output: FabricPackOutput;
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;
     configure(arg0: HolderLookup$Provider, arg1: FabricDynamicRegistryProvider$Entries): void;
+    getName(): string;
     run(arg0: CachedOutput): CompletableFuture<Object>;
     // private writeHolders<T extends Object | number | string | boolean>(arg0: CachedOutput, arg1: RegistryOps<JsonElement>, arg2: FabricDynamicRegistryProvider$RegistryEntries<T>): CompletableFuture<Object>;
 }

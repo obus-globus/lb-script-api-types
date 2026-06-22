@@ -28,7 +28,9 @@ export class ArmorItemSlot extends Enum<ArmorItemSlot> implements ItemSlot {
     equipmentSlot: EquipmentSlot;
     readonly itemStack: ItemStack;
     readonly slotType: ItemSlot$Type;
+    equals(other: Object | null): boolean;
     getIdForServer(screen: AbstractContainerScreen<Object> | null): number | null;
     getIdForServerWithCurrentScreen(): number | null;
+    hashCode(): number;
     name(): "FEET" | "LEGS" | "CHEST" | "HEAD";
 }

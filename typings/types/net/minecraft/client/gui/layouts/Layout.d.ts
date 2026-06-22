@@ -5,8 +5,14 @@ import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layo
 import type { ScreenRectangle } from '../../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
 export interface Layout extends Object, LayoutElement {
     arrangeElements(): void;
+    getHeight(): number;
     getRectangle(): ScreenRectangle;
+    getWidth(): number;
+    getX(): number;
+    getY(): number;
     setPosition(x: number, y: number): void;
+    setX(x: number): void;
+    setY(y: number): void;
     visitChildren(layoutElementVisitor: (param0: LayoutElement) => void): void;
     visitWidgets(widgetVisitor: (param0: AbstractWidget) => void): void;
 }

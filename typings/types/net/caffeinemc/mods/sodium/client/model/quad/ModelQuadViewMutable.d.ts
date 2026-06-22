@@ -5,6 +5,20 @@ import type { Direction } from '../../../../../../../net/minecraft/core/Directio
 export interface ModelQuadViewMutable extends Object, ModelQuadView{
     calculateNormal(): number;
     getAccurateNormal(arg0: number): number;
+    getColor(arg0: number): number;
+    getFaceNormal(): number;
+    getFlags(): number;
+    getLight(arg0: number): number;
+    getLightFace(): Direction;
+    getMaxLightQuad(arg0: number): number;
+    getSprite(): TextureAtlasSprite;
+    getTexU(arg0: number): number;
+    getTexV(arg0: number): number;
+    getTintIndex(): number;
+    getVertexNormal(arg0: number): number;
+    getX(arg0: number): number;
+    getY(arg0: number): number;
+    getZ(arg0: number): number;
     hasColor(): boolean;
     setColor(arg0: number, arg1: number): void;
     setFaceNormal(arg0: number): void;

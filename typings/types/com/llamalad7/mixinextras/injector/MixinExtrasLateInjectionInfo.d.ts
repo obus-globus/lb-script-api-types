@@ -24,6 +24,7 @@ export abstract class MixinExtrasLateInjectionInfo extends MixinExtrasInjectionI
     // private hasInjectStarted: boolean;
     // private injectionInfoToQueue: LateApplyingInjectorInfo;
     addCallbackInvocation(arg0: MethodNode): void;
+    getLateInjectionType(): string;
     inject(): void;
     lateApply(): void;
     lateInject(): void;

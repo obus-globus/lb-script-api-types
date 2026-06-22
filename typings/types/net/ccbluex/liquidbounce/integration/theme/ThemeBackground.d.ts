@@ -2,6 +2,7 @@ import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 export interface ThemeBackground extends Closeable, Object{
+    close(): void;
     /**
      * Draws the background on the screen.
      *

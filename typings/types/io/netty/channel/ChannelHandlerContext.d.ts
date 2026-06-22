@@ -4,6 +4,8 @@ import type { ChannelFuture } from '../../../io/netty/channel/ChannelFuture.d.ts
 import type { ChannelHandler } from '../../../io/netty/channel/ChannelHandler.d.ts'
 import type { ChannelInboundInvoker } from '../../../io/netty/channel/ChannelInboundInvoker.d.ts'
 import type { ChannelOutboundInvoker } from '../../../io/netty/channel/ChannelOutboundInvoker.d.ts'
+import type { ChannelProgressivePromise } from '../../../io/netty/channel/ChannelProgressivePromise.d.ts'
+import type { ChannelPromise } from '../../../io/netty/channel/ChannelPromise.d.ts'
 import type { Attribute } from '../../../io/netty/util/Attribute.d.ts'
 import type { AttributeKey } from '../../../io/netty/util/AttributeKey.d.ts'
 import type { AttributeMap } from '../../../io/netty/util/AttributeMap.d.ts'
@@ -15,12 +17,17 @@ export interface ChannelHandlerContext extends ChannelInboundInvoker, ChannelOut
     alloc(): ByteBufAllocator;
     attr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): Attribute<T>;
     bind(arg0: SocketAddress): ChannelFuture;
+    bind(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     channel(): Channel;
     close(): ChannelFuture;
+    close(arg0: ChannelPromise): ChannelFuture;
     connect(arg0: SocketAddress): ChannelFuture;
     connect(arg0: SocketAddress, arg1: SocketAddress): ChannelFuture;
+    connect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): ChannelFuture;
     deregister(): ChannelFuture;
+    deregister(arg0: ChannelPromise): ChannelFuture;
     disconnect(): ChannelFuture;
+    disconnect(arg0: ChannelPromise): ChannelFuture;
     executor(): (Object | null)[];
     fireChannelActive(): ChannelHandlerContext;
     fireChannelInactive(): ChannelHandlerContext;
@@ -36,8 +43,15 @@ export interface ChannelHandlerContext extends ChannelInboundInvoker, ChannelOut
     hasAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): boolean;
     isRemoved(): boolean;
     name(): string;
+    newFailedFuture(arg0: Throwable): ChannelFuture;
+    newProgressivePromise(): ChannelProgressivePromise;
+    newPromise(): ChannelPromise;
+    newSucceededFuture(): ChannelFuture;
     pipeline(): Map$Entry<string, ChannelHandler>[];
     read(): ChannelHandlerContext;
+    voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;
+    write(arg0: Object, arg1: ChannelPromise): ChannelFuture;
     writeAndFlush(arg0: Object): ChannelFuture;
+    writeAndFlush(arg0: Object, arg1: ChannelPromise): ChannelFuture;
 }

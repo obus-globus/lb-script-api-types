@@ -3,5 +3,7 @@ import type { NotificationFilter } from '../../javax/management/NotificationFilt
 import type { NotificationListener } from '../../javax/management/NotificationListener.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface NotificationEmitter extends NotificationBroadcaster, Object{
+    addNotificationListener(arg0: NotificationListener, arg1: NotificationFilter, arg2: Object): void;
+    removeNotificationListener(arg0: NotificationListener): void;
     removeNotificationListener(arg0: NotificationListener, arg1: NotificationFilter, arg2: Object): void;
 }

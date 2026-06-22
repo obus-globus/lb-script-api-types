@@ -7,5 +7,6 @@ export abstract class AbstractByteIterator extends Object implements ByteIterato
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextByte(): number;
     skip(arg0: number): number;
 }

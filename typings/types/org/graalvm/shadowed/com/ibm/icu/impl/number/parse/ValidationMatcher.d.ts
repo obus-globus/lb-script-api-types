@@ -5,5 +5,6 @@ import type { ParsedNumber } from '../../../../../../../../../org/graalvm/shadow
 export abstract class ValidationMatcher extends Object implements NumberParseMatcher {
     constructor()
     match(segment: StringSegment, result: ParsedNumber): boolean;
+    postProcess(result: ParsedNumber): void;
     smokeTest(segment: StringSegment): boolean;
 }

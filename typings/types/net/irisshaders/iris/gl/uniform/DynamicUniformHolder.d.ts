@@ -1,3 +1,4 @@
+import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
 import type { DoubleSupplier } from '../../../../../java/util/function/DoubleSupplier.d.ts'
 import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
@@ -5,6 +6,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ValueUpdateNotifier } from '../../../../../net/irisshaders/iris/gl/state/ValueUpdateNotifier.d.ts'
 import type { FloatSupplier } from '../../../../../net/irisshaders/iris/gl/uniform/FloatSupplier.d.ts'
 import type { UniformHolder } from '../../../../../net/irisshaders/iris/gl/uniform/UniformHolder.d.ts'
+import type { UniformType } from '../../../../../net/irisshaders/iris/gl/uniform/UniformType.d.ts'
+import type { UniformUpdateFrequency } from '../../../../../net/irisshaders/iris/gl/uniform/UniformUpdateFrequency.d.ts'
 import type { Matrix3fc } from '../../../../../org/joml/Matrix3fc.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector2f } from '../../../../../org/joml/Vector2f.d.ts'
@@ -13,6 +16,8 @@ import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../../org/joml/Vector4i.d.ts'
 export interface DynamicUniformHolder extends Object, UniformHolder {
+    externallyManagedUniform(arg0: string, arg1: UniformType): UniformHolder;
+    uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => boolean): UniformHolder;
     uniform1f(arg0: string, arg1: () => number, arg2: ValueUpdateNotifier): DynamicUniformHolder;
     uniform1i(arg0: string, arg1: () => number, arg2: ValueUpdateNotifier): DynamicUniformHolder;
     uniform2f(arg0: string, arg1: () => Vector2f, arg2: ValueUpdateNotifier): DynamicUniformHolder;

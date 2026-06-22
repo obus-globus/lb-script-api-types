@@ -9,6 +9,7 @@ export abstract class AbstractProtocolDetectorService extends Object implements 
     configuredServers(): { [key: string]: number };
     detectedProtocolVersions(): Object2IntMap<string>;
     lowestSupportedProtocolVersion(): ProtocolVersion;
+    probeAllServers(): void;
     serverProtocolVersion(arg0: string): ProtocolVersion;
     setProtocolVersion(arg0: string, arg1: number): void;
     uncacheProtocolVersion(arg0: string): number;

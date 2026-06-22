@@ -22,8 +22,10 @@ export abstract class RandomSupport$AbstractSplittableGenerator extends RandomSu
     static of(paramarg0: string): RandomGenerator$SplittableGenerator;
     constructor()
     makeSplitsSpliterator(arg0: number, arg1: number, arg2: RandomGenerator$SplittableGenerator): Spliterator<RandomGenerator$SplittableGenerator>;
+    nextLong(): number;
     rngs(): Stream<RandomGenerator>;
     rngs(arg0: number): Stream<RandomGenerator>;
+    split(arg0: RandomGenerator$SplittableGenerator): RandomGenerator$SplittableGenerator;
     split(): RandomGenerator$SplittableGenerator;
     splits(): Stream<RandomGenerator$SplittableGenerator>;
     splits(arg0: RandomGenerator$SplittableGenerator): Stream<RandomGenerator$SplittableGenerator>;

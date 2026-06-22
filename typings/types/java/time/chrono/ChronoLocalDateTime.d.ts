@@ -21,6 +21,7 @@ export interface ChronoLocalDateTime<D extends ChronoLocalDate> extends Temporal
     compareTo(arg0: ChronoLocalDateTime<Object>): number;
     format(arg0: DateTimeFormatter): string;
     getChronology(): Chronology;
+    getLong(arg0: TemporalField): number;
     isAfter(arg0: ChronoLocalDateTime<Object>): boolean;
     isBefore(arg0: ChronoLocalDateTime<Object>): boolean;
     isEqual(arg0: ChronoLocalDateTime<Object>): boolean;
@@ -38,6 +39,7 @@ export interface ChronoLocalDateTime<D extends ChronoLocalDate> extends Temporal
     toInstant(arg0: ZoneOffset): Instant;
     toLocalDate(): D;
     toLocalTime(): LocalTime;
+    until(arg0: Temporal, arg1: TemporalUnit): number;
     with(arg0: (param0: Temporal) => Temporal): ChronoLocalDateTime<D>;
     with(arg0: TemporalField, arg1: number): ChronoLocalDateTime<D>;
     with(arg0: (param0: Temporal) => Temporal): Temporal;

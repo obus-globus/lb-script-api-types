@@ -27,6 +27,7 @@ export abstract class AbstractRepeatingNode extends JavaScriptNode implements Re
     execute(frame: VirtualFrame): Object;
     executeBody(frame: VirtualFrame): void;
     executeCondition(frame: VirtualFrame): boolean;
+    executeRepeating(frame: VirtualFrame): boolean;
     executeRepeatingWithValue(frame: VirtualFrame): Object;
     getStateSlotKind(): FrameSlotKind;
     initialLoopStatus(): Object;

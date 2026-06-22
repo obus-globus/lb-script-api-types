@@ -12,6 +12,7 @@ export abstract class Http1ExchangeCodec$AbstractSource extends Object implement
     // private timeout: ForwardingTimeout;
     // private /*not mapped: */ getTimeout(): ForwardingTimeout;
     readonly url: HttpUrl;
+    close(): void;
     read(sink: Buffer, byteCount: number): number;
     responseBodyComplete(trailers: Pair<string, string>[]): void;
     timeout(): Timeout;

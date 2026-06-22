@@ -7,4 +7,10 @@ export interface IOptimizationProblem extends Object, IProblem{
     discardCurrentSolution(): void;
     getObjectiveValue(): Number;
     hasNoObjectiveFunction(): boolean;
+    isSatisfiable(): boolean;
+    isSatisfiable(arg0: IVecInt): boolean;
+    isSatisfiable(arg0: IVecInt, arg1: boolean): boolean;
+    model(arg0: number): boolean;
+    nVars(): number;
+    primeImplicant(arg0: number): boolean;
 }

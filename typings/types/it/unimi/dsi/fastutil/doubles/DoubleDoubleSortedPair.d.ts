@@ -13,8 +13,10 @@ export interface DoubleDoubleSortedPair extends SortedPair<number>, DoubleDouble
     keyDouble(): number;
     left(): number;
     left(arg0: number): DoubleDoublePair;
+    leftDouble(): number;
     right(): number;
     right(arg0: number): DoubleDoublePair;
+    rightDouble(): number;
     second(): number;
     second(arg0: number): DoubleDoublePair;
     secondDouble(): number;

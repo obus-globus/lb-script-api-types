@@ -19,6 +19,7 @@ export abstract class AbstractDecoder extends Object implements CompositeDecoder
     decodeCollectionSize(descriptor: SerialDescriptor): number;
     decodeDouble(): number;
     decodeDoubleElement(descriptor: SerialDescriptor, index: number): number;
+    decodeElementIndex(descriptor: SerialDescriptor): number;
     decodeEnum(enumDescriptor: SerialDescriptor): number;
     decodeFloat(): number;
     decodeFloatElement(descriptor: SerialDescriptor, index: number): number;

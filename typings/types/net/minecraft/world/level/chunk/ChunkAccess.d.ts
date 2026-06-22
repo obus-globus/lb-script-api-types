@@ -48,6 +48,7 @@ import type { Structure } from '../../../../../net/minecraft/world/level/levelge
 import type { StructureStart } from '../../../../../net/minecraft/world/level/levelgen/structure/StructureStart.d.ts'
 import type { ChunkSkyLightSources } from '../../../../../net/minecraft/world/level/lighting/ChunkSkyLightSources.d.ts'
 import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
+import type { FluidState } from '../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 import type { ValueInput } from '../../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 import type { TickContainerAccess } from '../../../../../net/minecraft/world/ticks/TickContainerAccess.d.ts'
@@ -120,9 +121,12 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     getBelowZeroRetrogen(): BelowZeroRetrogen;
     getBlendingData(): BlendingData;
     getBlockEntitiesPos(): BlockPos[];
+    getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntityNbt(blockPos: BlockPos): CompoundTag;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
+    getBlockState(pos: BlockPos): BlockState;
     getBlockTicks(): TickContainerAccess<Block>;
+    getFluidState(pos: BlockPos): FluidState;
     getFluidTicks(): TickContainerAccess<Fluid>;
     getHeight(): number;
     getHeight(type: Heightmap$Types, x: number, z: number): number;

@@ -32,4 +32,5 @@ export class Frustum extends Object implements ViewportProvider, FrustumAccessor
     prepare(camX: number, camY: number, camZ: number): void;
     set(frustum: Frustum): void;
     sodium$createViewport(): Viewport;
+    sodium$getMatrix(): Matrix4f;
 }

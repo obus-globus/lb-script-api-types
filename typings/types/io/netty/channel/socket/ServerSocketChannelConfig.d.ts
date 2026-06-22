@@ -5,10 +5,21 @@ import type { RecvByteBufAllocator } from '../../../../io/netty/channel/RecvByte
 import type { WriteBufferWaterMark } from '../../../../io/netty/channel/WriteBufferWaterMark.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface ServerSocketChannelConfig extends ChannelConfig, Object{
+    getAllocator(): ByteBufAllocator;
     getBacklog(): number;
+    getConnectTimeoutMillis(): number;
+    getMaxMessagesPerRead(): number;
+    getMessageSizeEstimator(): MessageSizeEstimator;
     getReceiveBufferSize(): number;
+    getWriteBufferHighWaterMark(): number;
+    getWriteBufferLowWaterMark(): number;
+    getWriteBufferWaterMark(): WriteBufferWaterMark;
+    getWriteSpinCount(): number;
+    isAutoClose(): boolean;
+    isAutoRead(): boolean;
     isReuseAddress(): boolean;
     setAllocator(arg0: ByteBufAllocator): ServerSocketChannelConfig;
+    setAutoClose(arg0: boolean): ChannelConfig;
     setAutoRead(arg0: boolean): ServerSocketChannelConfig;
     setBacklog(arg0: number): ServerSocketChannelConfig;
     setConnectTimeoutMillis(arg0: number): ServerSocketChannelConfig;

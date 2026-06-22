@@ -7,4 +7,5 @@ import type { ColorModel } from '../../java/awt/image/ColorModel.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface Paint extends Transparency, Object{
     createContext(arg0: ColorModel, arg1: Rectangle, arg2: Rectangle2D, arg3: AffineTransform, arg4: RenderingHints): PaintContext;
+    getTransparency(): number;
 }

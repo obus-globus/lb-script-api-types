@@ -5,4 +5,6 @@ import type { SecretKeyBuilder } from '../../../io/jsonwebtoken/security/SecretK
 import type { SecretKey } from '../../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface SecretKeyAlgorithm extends KeyAlgorithm<SecretKey, SecretKey>, KeyBuilderSupplier<SecretKey, SecretKeyBuilder>, KeyLengthSupplier, Object{
+    getId(): string;
+    getKeyBitLength(): number;
 }

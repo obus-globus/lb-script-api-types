@@ -7,6 +7,7 @@ import type { UtcOffsetFieldContainer } from '../../../kotlinx/datetime/format/U
 import type { FormatStructure } from '../../../kotlinx/datetime/internal/format/FormatStructure.d.ts'
 export interface AbstractWithOffsetBuilder extends Object, DateTimeFormatBuilder$WithUtcOffset{
     addFormatStructureForOffset(structure: FormatStructure<UtcOffsetFieldContainer>): void;
+    chars(value: string): void;
     offset(format: DateTimeFormat<UtcOffset>): void;
     offsetHours(padding: Padding): void;
     offsetMinutesOfHour(padding: Padding): void;

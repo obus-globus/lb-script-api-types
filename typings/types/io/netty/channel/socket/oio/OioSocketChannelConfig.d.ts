@@ -5,7 +5,25 @@ import type { WriteBufferWaterMark } from '../../../../../io/netty/channel/Write
 import type { SocketChannelConfig } from '../../../../../io/netty/channel/socket/SocketChannelConfig.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface OioSocketChannelConfig extends SocketChannelConfig, Object{
+    getAllocator(): ByteBufAllocator;
+    getConnectTimeoutMillis(): number;
+    getMaxMessagesPerRead(): number;
+    getMessageSizeEstimator(): MessageSizeEstimator;
+    getReceiveBufferSize(): number;
+    getSendBufferSize(): number;
+    getSoLinger(): number;
     getSoTimeout(): number;
+    getTrafficClass(): number;
+    getWriteBufferHighWaterMark(): number;
+    getWriteBufferLowWaterMark(): number;
+    getWriteBufferWaterMark(): WriteBufferWaterMark;
+    getWriteSpinCount(): number;
+    isAllowHalfClosure(): boolean;
+    isAutoClose(): boolean;
+    isAutoRead(): boolean;
+    isKeepAlive(): boolean;
+    isReuseAddress(): boolean;
+    isTcpNoDelay(): boolean;
     setAllocator(arg0: ByteBufAllocator): OioSocketChannelConfig;
     setAllowHalfClosure(arg0: boolean): OioSocketChannelConfig;
     setAutoClose(arg0: boolean): OioSocketChannelConfig;

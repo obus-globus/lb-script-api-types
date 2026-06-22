@@ -4,4 +4,8 @@ export abstract class MarkerMixIn extends Object implements Marker {
     constructor(name: string)
     getName(): string;
     getParents(): Marker[];
+    hasParents(): boolean;
+    isInstanceOf(name: string): boolean;
+    isInstanceOf(m: Marker): boolean;
+    remove(marker: Marker): boolean;
 }

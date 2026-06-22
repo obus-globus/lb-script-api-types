@@ -7,7 +7,26 @@ import type { InetAddress } from '../../../../../java/net/InetAddress.d.ts'
 import type { NetworkInterface } from '../../../../../java/net/NetworkInterface.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface OioDatagramChannelConfig extends DatagramChannelConfig, Object{
+    getAllocator(): ByteBufAllocator;
+    getConnectTimeoutMillis(): number;
+    getInterface(): InetAddress;
+    getMaxMessagesPerRead(): number;
+    getMessageSizeEstimator(): MessageSizeEstimator;
+    getNetworkInterface(): NetworkInterface;
+    getReceiveBufferSize(): number;
+    getSendBufferSize(): number;
     getSoTimeout(): number;
+    getTimeToLive(): number;
+    getTrafficClass(): number;
+    getWriteBufferHighWaterMark(): number;
+    getWriteBufferLowWaterMark(): number;
+    getWriteBufferWaterMark(): WriteBufferWaterMark;
+    getWriteSpinCount(): number;
+    isAutoClose(): boolean;
+    isAutoRead(): boolean;
+    isBroadcast(): boolean;
+    isLoopbackModeDisabled(): boolean;
+    isReuseAddress(): boolean;
     setAllocator(arg0: ByteBufAllocator): OioDatagramChannelConfig;
     setAutoClose(arg0: boolean): OioDatagramChannelConfig;
     setAutoRead(arg0: boolean): OioDatagramChannelConfig;

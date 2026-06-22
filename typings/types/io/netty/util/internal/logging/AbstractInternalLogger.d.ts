@@ -7,9 +7,23 @@ export abstract class AbstractInternalLogger extends Object implements InternalL
     constructor(arg0: string)
     // private name: string;
     debug(arg0: Throwable): void;
+    debug(arg0: string, arg1: Object): void;
+    debug(arg0: string, arg1: Object, arg2: Object): void;
+    debug(arg0: string, arg1: Throwable): void;
     error(arg0: Throwable): void;
+    error(arg0: string, arg1: Object): void;
+    error(arg0: string, arg1: Object, arg2: Object): void;
+    error(arg0: string, arg1: Throwable): void;
     info(arg0: Throwable): void;
+    info(arg0: string, arg1: Object): void;
+    info(arg0: string, arg1: Object, arg2: Object): void;
+    info(arg0: string, arg1: Throwable): void;
+    isDebugEnabled(): boolean;
     isEnabled(arg0: InternalLogLevel): boolean;
+    isErrorEnabled(): boolean;
+    isInfoEnabled(): boolean;
+    isTraceEnabled(): boolean;
+    isWarnEnabled(): boolean;
     log(arg0: InternalLogLevel, arg1: string): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Object): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Object, arg3: Object): void;
@@ -20,5 +34,11 @@ export abstract class AbstractInternalLogger extends Object implements InternalL
     readResolve(): Object;
     toString(): string;
     trace(arg0: Throwable): void;
+    trace(arg0: string, arg1: Object): void;
+    trace(arg0: string, arg1: Object, arg2: Object): void;
+    trace(arg0: string, arg1: Throwable): void;
     warn(arg0: Throwable): void;
+    warn(arg0: string, arg1: Object): void;
+    warn(arg0: string, arg1: Object, arg2: Object): void;
+    warn(arg0: string, arg1: Throwable): void;
 }

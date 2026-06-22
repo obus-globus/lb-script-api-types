@@ -36,6 +36,7 @@ export class AdvancementWidget extends Object implements AdvancementWidgetAccess
     extractHover(graphics: GuiGraphicsExtractor, xo: number, yo: number, fade: number, screenxo: number, screenyo: number): void;
     // private extractMultilineText(graphics: GuiGraphicsExtractor, lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], x: number, y: number, color: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
+    fabric_getProgress(): AdvancementProgress;
     // private findOptimalLines(input: Component, preferredWidth: number): FormattedText[];
     // private getFirstVisibleParent(node: AdvancementNode): AdvancementWidget;
     // private getMaxProgressWidth(): number;

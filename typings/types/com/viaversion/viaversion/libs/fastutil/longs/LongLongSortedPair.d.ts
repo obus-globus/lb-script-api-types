@@ -13,8 +13,10 @@ export interface LongLongSortedPair extends SortedPair<number>, LongLongPair, Se
     keyLong(): number;
     left(): number;
     left(arg0: number): LongLongPair;
+    leftLong(): number;
     right(): number;
     right(arg0: number): LongLongPair;
+    rightLong(): number;
     second(): number;
     second(arg0: number): LongLongPair;
     secondLong(): number;

@@ -12,4 +12,5 @@ export abstract class AbstractReferenceCounted extends Object implements Referen
     retain(arg0: number): ReferenceCounted;
     setRefCnt(arg0: number): void;
     touch(): ReferenceCounted;
+    touch(arg0: Object): ReferenceCounted;
 }

@@ -1,6 +1,8 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ConnectionProtocol } from '../../../../../net/minecraft/network/ConnectionProtocol.d.ts'
+import type { DisconnectionDetails } from '../../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { ClientCookiePacketListener } from '../../../../../net/minecraft/network/protocol/cookie/ClientCookiePacketListener.d.ts'
+import type { ClientboundCookieRequestPacket } from '../../../../../net/minecraft/network/protocol/cookie/ClientboundCookieRequestPacket.d.ts'
 import type { ClientboundCustomQueryPacket } from '../../../../../net/minecraft/network/protocol/login/ClientboundCustomQueryPacket.d.ts'
 import type { ClientboundHelloPacket } from '../../../../../net/minecraft/network/protocol/login/ClientboundHelloPacket.d.ts'
 import type { ClientboundLoginCompressionPacket } from '../../../../../net/minecraft/network/protocol/login/ClientboundLoginCompressionPacket.d.ts'
@@ -12,5 +14,8 @@ export interface ClientLoginPacketListener extends Object, ClientCookiePacketLis
     handleDisconnect(packet: ClientboundLoginDisconnectPacket): void;
     handleHello(packet: ClientboundHelloPacket): void;
     handleLoginFinished(packet: ClientboundLoginFinishedPacket): void;
+    handleRequestCookie(packet: ClientboundCookieRequestPacket): void;
+    isAcceptingMessages(): boolean;
+    onDisconnect(details: DisconnectionDetails): void;
     protocol(): ConnectionProtocol;
 }

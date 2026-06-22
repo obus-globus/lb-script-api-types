@@ -5,5 +5,11 @@ export interface InventoryChangeTracker extends Object, InventoryChangeEmitter{
     emitCallbackReplaced(): void;
     listenForContentChangesOnce(arg0: (Object | null)[], arg1: InventoryChangeListener): void;
     listenForMajorInventoryChanges(arg0: InventoryChangeListener): void;
+    lithium$emitContentModified(): void;
+    lithium$emitFirstComparatorAdded(): void;
+    lithium$emitRemoved(): void;
+    lithium$emitStackListReplaced(): void;
+    lithium$forwardMajorInventoryChanges(arg0: InventoryChangeListener): void;
+    lithium$stopForwardingMajorInventoryChanges(arg0: InventoryChangeListener): void;
     stopListenForMajorInventoryChanges(arg0: InventoryChangeListener): void;
 }

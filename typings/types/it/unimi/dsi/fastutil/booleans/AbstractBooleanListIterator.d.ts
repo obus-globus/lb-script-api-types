@@ -4,7 +4,9 @@ export abstract class AbstractBooleanListIterator extends AbstractBooleanBidirec
     constructor()
     add(arg0: boolean): void;
     next(): boolean;
+    nextBoolean(): boolean;
     previous(): boolean;
+    previousBoolean(): boolean;
     remove(): void;
     set(arg0: boolean): void;
 }

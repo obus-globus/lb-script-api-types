@@ -11,6 +11,7 @@ export class SocketProtocolFamily extends Enum<SocketProtocolFamily> implements 
     static valueOf(paramarg0: string): SocketProtocolFamily;
     static values(): (Object | null)[];
     private constructor()
+    name(): string;
     toJdkFamily(): ProtocolFamily;
     name(): "INET" | "INET6" | "UNIX";
 }

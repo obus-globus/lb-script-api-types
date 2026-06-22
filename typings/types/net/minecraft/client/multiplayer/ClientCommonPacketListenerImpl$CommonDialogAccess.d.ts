@@ -12,6 +12,7 @@ export abstract class ClientCommonPacketListenerImpl$CommonDialogAccess extends 
     constructor(null_: ClientCommonPacketListenerImpl$CommonDialogAccess)
     disconnect(message: Component): void;
     openDialog(dialog: Holder<Dialog>, activeScreen: Screen): void;
+    runCommand(command: string, activeScreen: Screen): void;
     sendCustomAction(id: Identifier, payload: Optional<Tag>): void;
     serverLinks(): ServerLinks;
 }

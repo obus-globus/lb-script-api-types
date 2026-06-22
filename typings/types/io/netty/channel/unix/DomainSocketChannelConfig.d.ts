@@ -6,7 +6,17 @@ import type { WriteBufferWaterMark } from '../../../../io/netty/channel/WriteBuf
 import type { DomainSocketReadMode } from '../../../../io/netty/channel/unix/DomainSocketReadMode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface DomainSocketChannelConfig extends ChannelConfig, Object{
+    getAllocator(): ByteBufAllocator;
+    getConnectTimeoutMillis(): number;
+    getMaxMessagesPerRead(): number;
+    getMessageSizeEstimator(): MessageSizeEstimator;
     getReadMode(): DomainSocketReadMode;
+    getWriteBufferHighWaterMark(): number;
+    getWriteBufferLowWaterMark(): number;
+    getWriteBufferWaterMark(): WriteBufferWaterMark;
+    getWriteSpinCount(): number;
+    isAutoClose(): boolean;
+    isAutoRead(): boolean;
     setAllocator(arg0: ByteBufAllocator): DomainSocketChannelConfig;
     setAutoClose(arg0: boolean): DomainSocketChannelConfig;
     setAutoRead(arg0: boolean): DomainSocketChannelConfig;

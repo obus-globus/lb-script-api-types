@@ -3,6 +3,7 @@ import type { ScreenRectangle } from '../../../../../../../net/minecraft/client/
 import type { ScreenArea } from '../../../../../../../net/minecraft/client/renderer/state/gui/ScreenArea.d.ts'
 import type { Matrix3x2f } from '../../../../../../../org/joml/Matrix3x2f.d.ts'
 export interface PictureInPictureRenderState extends Object, ScreenArea{
+    bounds(): ScreenRectangle;
     pose(): Matrix3x2f;
     scale(): number;
     scissorArea(): ScreenRectangle;

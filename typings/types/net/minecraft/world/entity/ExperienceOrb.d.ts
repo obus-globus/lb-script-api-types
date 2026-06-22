@@ -75,6 +75,7 @@ export class ExperienceOrb extends Entity implements MixinExperienceOrbAccessor 
     // private followNearbyPlayer(): void;
     getBlockPosBelowThatAffectsMyMovement(): BlockPos;
     getDefaultGravity(): number;
+    getFollowingPlayer(): Player;
     getIcon(): number;
     getInterpolation(): InterpolationHandler;
     getMovementEmission(): Entity$MovementEmission;

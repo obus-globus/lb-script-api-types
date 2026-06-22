@@ -8,6 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export abstract class AbstractHashFunction extends Object implements HashFunction {
     constructor()
+    bits(): number;
     hashBytes(input: ByteBuffer): HashCode;
     hashBytes(input: number[]): HashCode;
     hashBytes(input: number[], off: number, len: number): HashCode;
@@ -17,4 +18,5 @@ export abstract class AbstractHashFunction extends Object implements HashFunctio
     hashString(input: CharSequence, charset: Charset): HashCode;
     hashUnencodedChars(input: CharSequence): HashCode;
     newHasher(expectedInputSize: number): Hasher;
+    newHasher(): Hasher;
 }

@@ -20,4 +20,5 @@ export abstract class FT_Module_Requester extends Callback implements FT_Module_
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number): number;
 }

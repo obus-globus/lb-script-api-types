@@ -1,3 +1,5 @@
+import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
+import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ServerboundPacket26_1 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_11to26_1/packet/ServerboundPacket26_1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -76,7 +78,9 @@ export class ServerboundPackets26_1 extends Enum<ServerboundPackets26_1> impleme
     static valueOf(paramarg0: string): ServerboundPackets26_1;
     static values(): (Object | null)[];
     private constructor()
+    direction(): Direction;
     getId(): number;
     getName(): string;
+    state(): State;
     name(): "ACCEPT_TELEPORTATION" | "ATTACK" | "BLOCK_ENTITY_TAG_QUERY" | "BUNDLE_ITEM_SELECTED" | "CHANGE_DIFFICULTY" | "CHANGE_GAME_MODE" | "CHAT_ACK" | "CHAT_COMMAND" | "CHAT_COMMAND_SIGNED" | "CHAT" | "CHAT_SESSION_UPDATE" | "CHUNK_BATCH_RECEIVED" | "CLIENT_COMMAND" | "CLIENT_TICK_END" | "CLIENT_INFORMATION" | "COMMAND_SUGGESTION" | "CONFIGURATION_ACKNOWLEDGED" | "CONTAINER_BUTTON_CLICK" | "CONTAINER_CLICK" | "CONTAINER_CLOSE" | "CONTAINER_SLOT_STATE_CHANGED" | "COOKIE_RESPONSE" | "CUSTOM_PAYLOAD" | "DEBUG_SAMPLE_SUBSCRIPTION" | "EDIT_BOOK" | "ENTITY_TAG_QUERY" | "INTERACT" | "JIGSAW_GENERATE" | "KEEP_ALIVE" | "LOCK_DIFFICULTY" | "MOVE_PLAYER_POS" | "MOVE_PLAYER_POS_ROT" | "MOVE_PLAYER_ROT" | "MOVE_PLAYER_STATUS_ONLY" | "MOVE_VEHICLE" | "PADDLE_BOAT" | "PICK_ITEM_FROM_BLOCK" | "PICK_ITEM_FROM_ENTITY" | "PING_REQUEST" | "PLACE_RECIPE" | "PLAYER_ABILITIES" | "PLAYER_ACTION" | "PLAYER_COMMAND" | "PLAYER_INPUT" | "PLAYER_LOADED" | "PONG" | "RECIPE_BOOK_CHANGE_SETTINGS" | "RECIPE_BOOK_SEEN_RECIPE" | "RENAME_ITEM" | "RESOURCE_PACK" | "SEEN_ADVANCEMENTS" | "SELECT_TRADE" | "SET_BEACON" | "SET_CARRIED_ITEM" | "SET_COMMAND_BLOCK" | "SET_COMMAND_MINECART" | "SET_CREATIVE_MODE_SLOT" | "SET_GAME_RULE" | "SET_JIGSAW_BLOCK" | "SET_STRUCTURE_BLOCK" | "SET_TEST_BLOCK" | "SIGN_UPDATE" | "SPECTATE_ENTITY" | "SWING" | "TELEPORT_TO_ENTITY" | "TEST_INSTANCE_BLOCK_ACTION" | "USE_ITEM_ON" | "USE_ITEM" | "CUSTOM_CLICK_ACTION";
 }

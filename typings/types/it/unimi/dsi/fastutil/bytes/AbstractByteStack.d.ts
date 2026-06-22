@@ -3,7 +3,10 @@ import type { ByteStack } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteS
 export abstract class AbstractByteStack extends AbstractStack<number> implements ByteStack {
     constructor()
     peek(arg0: number): number;
+    peekByte(arg0: number): number;
     pop(): number;
+    popByte(): number;
     push(arg0: number): void;
     top(): number;
+    topByte(): number;
 }

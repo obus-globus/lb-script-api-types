@@ -46,6 +46,7 @@ export abstract class EntityRenderer<T extends Entity, S extends EntityRenderSta
     // private renderLabel(arg0: Entity, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, arg2: PoseStack, arg3: SubmitNodeCollector, arg4: number): void;
     shouldRender(entity: T, culler: Frustum, camX: number, camY: number, camZ: number): boolean;
     shouldShowName(entity: T, distanceToCameraSq: number): boolean;
+    sodium$getBoundingBoxForCulling(arg0: Entity): AABB;
     submit(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     submitNameDisplay(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
     submitNameDisplay(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState, offset: number): void;

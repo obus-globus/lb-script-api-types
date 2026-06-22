@@ -19,11 +19,19 @@ export class DensityFunctions$BlendAlpha extends Enum<DensityFunctions$BlendAlph
     static valueOf(paramname: string): DensityFunctions$BlendAlpha;
     static values(): (Object | null)[];
     private constructor()
+    abs(): DensityFunction;
+    clamp(min: number, max: number): DensityFunction;
     codec(): KeyDispatchDataCodec<DensityFunction>;
     compute(context: DensityFunction$FunctionContext): number;
+    cube(): DensityFunction;
     fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
+    halfNegative(): DensityFunction;
+    invert(): DensityFunction;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
     minValue(): number;
+    quarterNegative(): DensityFunction;
+    square(): DensityFunction;
+    squeeze(): DensityFunction;
     name(): "INSTANCE";
 }

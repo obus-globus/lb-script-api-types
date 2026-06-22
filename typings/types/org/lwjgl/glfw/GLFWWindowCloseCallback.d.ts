@@ -20,5 +20,6 @@ export abstract class GLFWWindowCloseCallback extends Callback implements GLFWWi
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number): void;
     set(arg0: number): GLFWWindowCloseCallback;
 }

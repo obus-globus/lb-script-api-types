@@ -9,6 +9,7 @@ export interface Scope extends Object, ObjectValue{
     copy(): Scope;
     entries(): { [key: string]: ObjectProperty };
     get(arg0: string): Value;
+    getProperty(arg0: string): ObjectProperty;
     readOnly(): boolean;
     readOnly(arg0: boolean): void;
     set(arg0: string, arg1: Value): boolean;

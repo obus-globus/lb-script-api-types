@@ -4,8 +4,11 @@ import type { AFSocketExtensions } from '../../../../org/newsclub/net/unix/AFSoc
 import type { AFUNIXSocketCredentials } from '../../../../org/newsclub/net/unix/AFUNIXSocketCredentials.d.ts'
 export interface AFUNIXSocketExtensions extends Object, AFSocketExtensions{
     clearReceivedFileDescriptors(): void;
+    ensureAncillaryReceiveBufferSize(arg0: number): void;
+    getAncillaryReceiveBufferSize(): number;
     getPeerCredentials(): AFUNIXSocketCredentials;
     getReceivedFileDescriptors(): FileDescriptor[];
     hasOutboundFileDescriptors(): boolean;
+    setAncillaryReceiveBufferSize(arg0: number): void;
     setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
 }

@@ -26,6 +26,7 @@ export class TextureAtlasSprite extends Object implements AutoCloseable, Texture
     close(): void;
     contents(): SpriteContents;
     createAnimationState(uboSlice: GpuBufferSlice, spriteUboSize: number): SpriteContents$AnimationState;
+    getPadding(): number;
     getU(offset: number): number;
     getU0(): number;
     getU1(): number;

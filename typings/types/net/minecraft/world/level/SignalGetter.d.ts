@@ -11,6 +11,7 @@ import type { ClipContext } from '../../../../net/minecraft/world/level/ClipCont
 import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { FluidState } from '../../../../net/minecraft/world/level/material/FluidState.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { BlockHitResult } from '../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -19,14 +20,19 @@ export interface SignalGetter extends Object, BlockGetter {
     clip(arg0: ClipContext): BlockHitResult;
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
     getBestNeighborSignal(pos: BlockPos): number;
+    getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
+    getBlockState(pos: BlockPos): BlockState;
     getBlockStates(box: AABB): Stream<BlockState>;
     getControlInputSignal(pos: BlockPos, direction: Direction, onlyDiodes: boolean): number;
     getDirectSignal(pos: BlockPos, direction: Direction): number;
     getDirectSignalTo(pos: BlockPos): number;
+    getFluidState(pos: BlockPos): FluidState;
+    getHeight(): number;
     getLightEmission(pos: BlockPos): number;
+    getMinY(): number;
     getSignal(pos: BlockPos, direction: Direction): number;
     hasNeighborSignal(blockPos: BlockPos): boolean;
     hasSignal(pos: BlockPos, direction: Direction): boolean;

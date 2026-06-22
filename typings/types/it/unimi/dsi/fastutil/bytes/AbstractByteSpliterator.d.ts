@@ -16,4 +16,5 @@ export abstract class AbstractByteSpliterator extends Object implements ByteSpli
     getComparator(): (param0: number, param1: number) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
+    trySplit(): ByteSpliterator;
 }

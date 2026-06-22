@@ -35,12 +35,15 @@ export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtla
     // private sprites: TextureAtlasSprite[];
     readonly texturesByName: Map<Identifier, TextureAtlasSprite>;
     // private width: number;
+    callGetHeight(): number;
+    callGetWidth(): number;
     clearTextureData(): void;
     close(): void;
     // private createTexture(newWidth: number, newHeight: number, newMipLevel: number): void;
     cycleAnimationFrames(): void;
     dumpContents(selfId: Identifier, dir: Path[]): void;
     getHeight(): number;
+    getMaxLevel(): number;
     getOrCreatePBRHolder(): PBRAtlasHolder;
     getPBRHolder(): PBRAtlasHolder;
     getSprite(location: Identifier): TextureAtlasSprite;
@@ -48,7 +51,9 @@ export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtla
     location(): Identifier;
     maxSupportedTextureSize(): number;
     missingSprite(): TextureAtlasSprite;
+    sodium$getHeight(): number;
     sodium$getSpriteFinder(): SodiumSpriteFinder;
+    sodium$getWidth(): number;
     spriteFinder(): SpriteFinder;
     tick(): void;
     upload(preparations: SpriteLoader$Preparations): void;

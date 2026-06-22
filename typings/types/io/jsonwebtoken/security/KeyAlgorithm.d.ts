@@ -8,4 +8,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface KeyAlgorithm<E extends Key, D extends Key> extends Identifiable, Object{
     getDecryptionKey(arg0: DecryptionKeyRequest<D>): SecretKey;
     getEncryptionKey(arg0: KeyRequest<E>): KeyResult;
+    getId(): string;
 }

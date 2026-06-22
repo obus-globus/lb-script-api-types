@@ -9,6 +9,14 @@ export class EntityFluidInteraction$Tracker extends Object implements MixinEntit
     // private eyesInside: boolean;
     // private height: number;
     accumulateCurrent(flow: Vec3): void;
+    accumulatedCurrent(): Vec3;
+    accumulatedCurrent(arg0: Vec3): void;
     applyCurrentTo(entity: Entity, scale: number): void;
+    currentCount(): number;
+    currentCount(arg0: number): void;
+    eyesInside(): boolean;
+    eyesInside(arg0: boolean): void;
+    height(): number;
+    height(arg0: number): void;
     reset(): void;
 }

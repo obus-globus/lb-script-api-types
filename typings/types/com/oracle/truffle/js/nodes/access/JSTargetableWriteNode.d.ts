@@ -17,4 +17,6 @@ export abstract class JSTargetableWriteNode extends JSTargetableNode implements 
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor()
+    executeWrite(frame: VirtualFrame, value: Object): void;
+    getRhs(): JavaScriptNode;
 }

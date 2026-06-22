@@ -14,6 +14,7 @@ export abstract class EventLoopImplBase$DelayedTask extends Object implements Ru
     nanoTime: number;
     compareTo(other: EventLoopImplBase$DelayedTask): number;
     dispose(): void;
+    run(): void;
     scheduleTask(now: number, delayed: EventLoopImplBase$DelayedTaskQueue, eventLoop: EventLoopImplBase): number;
     timeToExecute(now: number): boolean;
     toString(): string;

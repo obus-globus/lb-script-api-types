@@ -20,6 +20,7 @@ export class ClipContext extends Object implements ClipContextAccess, ClipContex
     readonly from: Vec3;
     readonly to: Vec3;
     getBlockShape(blockState: BlockState, level: BlockGetter, pos: BlockPos): VoxelShape;
+    getFluidHandling(): ClipContext$Fluid;
     getFluidShape(fluidState: FluidState, level: BlockGetter, pos: BlockPos): VoxelShape;
     getFrom(): Vec3;
     getTo(): Vec3;

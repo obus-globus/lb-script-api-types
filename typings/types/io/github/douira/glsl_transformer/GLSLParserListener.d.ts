@@ -83,7 +83,10 @@ import type { GLSLParser$VariableDeclarationContext } from '../../../../io/githu
 import type { GLSLParser$VersionStatementContext } from '../../../../io/github/douira/glsl_transformer/GLSLParser$VersionStatementContext.d.ts'
 import type { GLSLParser$WhileStatementContext } from '../../../../io/github/douira/glsl_transformer/GLSLParser$WhileStatementContext.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { ParserRuleContext } from '../../../../org/antlr/v4/runtime/ParserRuleContext.d.ts'
+import type { ErrorNode } from '../../../../org/antlr/v4/runtime/tree/ErrorNode.d.ts'
 import type { ParseTreeListener } from '../../../../org/antlr/v4/runtime/tree/ParseTreeListener.d.ts'
+import type { TerminalNode } from '../../../../org/antlr/v4/runtime/tree/TerminalNode.d.ts'
 export interface GLSLParserListener extends Object, ParseTreeListener{
     enterAdditiveExpression(arg0: GLSLParser$AdditiveExpressionContext): void;
     enterArrayAccessExpression(arg0: GLSLParser$ArrayAccessExpressionContext): void;
@@ -110,6 +113,7 @@ export interface GLSLParserListener extends Object, ParseTreeListener{
     enterEmptyDeclaration(arg0: GLSLParser$EmptyDeclarationContext): void;
     enterEmptyStatement(arg0: GLSLParser$EmptyStatementContext): void;
     enterEqualityExpression(arg0: GLSLParser$EqualityExpressionContext): void;
+    enterEveryRule(arg0: ParserRuleContext): void;
     enterExpression(arg0: GLSLParser$ExpressionContext): void;
     enterExpressionStatement(arg0: GLSLParser$ExpressionStatementContext): void;
     enterExtensionDirective(arg0: GLSLParser$ExtensionDirectiveContext): void;
@@ -194,6 +198,7 @@ export interface GLSLParserListener extends Object, ParseTreeListener{
     exitEmptyDeclaration(arg0: GLSLParser$EmptyDeclarationContext): void;
     exitEmptyStatement(arg0: GLSLParser$EmptyStatementContext): void;
     exitEqualityExpression(arg0: GLSLParser$EqualityExpressionContext): void;
+    exitEveryRule(arg0: ParserRuleContext): void;
     exitExpression(arg0: GLSLParser$ExpressionContext): void;
     exitExpressionStatement(arg0: GLSLParser$ExpressionStatementContext): void;
     exitExtensionDirective(arg0: GLSLParser$ExtensionDirectiveContext): void;
@@ -253,4 +258,6 @@ export interface GLSLParserListener extends Object, ParseTreeListener{
     exitVariableDeclaration(arg0: GLSLParser$VariableDeclarationContext): void;
     exitVersionStatement(arg0: GLSLParser$VersionStatementContext): void;
     exitWhileStatement(arg0: GLSLParser$WhileStatementContext): void;
+    visitErrorNode(arg0: ErrorNode): void;
+    visitTerminal(arg0: TerminalNode): void;
 }

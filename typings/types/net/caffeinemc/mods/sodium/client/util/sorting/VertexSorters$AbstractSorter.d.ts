@@ -7,6 +7,7 @@ export abstract class VertexSorters$AbstractSorter extends Object implements Ver
     static DISTANCE_TO_ORIGIN: VertexSorting;
     static ORTHOGRAPHIC_Z: VertexSorting;
     private constructor()
+    applyMetric(arg0: number, arg1: number, arg2: number): number;
     applyMetric(arg0: Vector3f): number;
     sort(arg0: CompactVectorArray): number[];
 }

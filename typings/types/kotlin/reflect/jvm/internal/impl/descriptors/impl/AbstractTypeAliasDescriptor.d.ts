@@ -1,5 +1,6 @@
 import type { AbstractTypeAliasDescriptor$typeConstructor$1 } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
 import type { DescriptorVisibility } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DescriptorVisibility.d.ts'
@@ -25,13 +26,17 @@ export abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
     // private visibilityImpl: DescriptorVisibility;
     accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     computeDefaultType(): SimpleType;
+    getClassDescriptor(): ClassDescriptor;
     getDeclaredTypeParameters(): TypeParameterDescriptor[];
+    getDefaultType(): SimpleType;
+    getExpandedType(): SimpleType;
     getModality(): Modality;
     getOriginal(): TypeAliasDescriptor;
     getStorageManager(): StorageManager;
     getTypeAliasConstructors(): TypeAliasConstructorDescriptor[];
     getTypeConstructor(): TypeConstructor;
     getTypeConstructorTypeParameters(): TypeParameterDescriptor[];
+    getUnderlyingType(): SimpleType;
     getVisibility(): DescriptorVisibility;
     initialize(arg0: TypeParameterDescriptor[]): void;
     isActual(): boolean;

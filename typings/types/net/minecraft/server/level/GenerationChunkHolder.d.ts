@@ -47,6 +47,7 @@ export abstract class GenerationChunkHolder extends Object implements Generation
     getQueueLevel(): number;
     getTicketLevel(): number;
     increaseGenerationRefCount(): void;
+    invokeCannotBeLoaded(arg0: ChunkStatus): boolean;
     // private isStatusDisallowed(status: ChunkStatus): boolean;
     removeTask(task: ChunkGenerationTask): void;
     replaceProtoChunk(chunk: ImposterProtoChunk): void;

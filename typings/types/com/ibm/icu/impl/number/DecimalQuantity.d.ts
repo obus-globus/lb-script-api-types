@@ -2,6 +2,7 @@ import type { StandardPlural } from '../../../../../com/ibm/icu/impl/StandardPlu
 import type { Modifier$Signum } from '../../../../../com/ibm/icu/impl/number/Modifier$Signum.d.ts'
 import type { PluralRules } from '../../../../../com/ibm/icu/text/PluralRules.d.ts'
 import type { PluralRules$IFixedDecimal } from '../../../../../com/ibm/icu/text/PluralRules$IFixedDecimal.d.ts'
+import type { PluralRules$Operand } from '../../../../../com/ibm/icu/text/PluralRules$Operand.d.ts'
 import type { BigDecimal } from '../../../../../java/math/BigDecimal.d.ts'
 import type { MathContext } from '../../../../../java/math/MathContext.d.ts'
 import type { FieldPosition } from '../../../../../java/text/FieldPosition.d.ts'
@@ -16,9 +17,11 @@ export interface DecimalQuantity extends PluralRules$IFixedDecimal, Object{
     getExponent(): number;
     getLowerDisplayMagnitude(): number;
     getMagnitude(): number;
+    getPluralOperand(arg0: PluralRules$Operand): number;
     getPositionFingerprint(): number;
     getStandardPlural(arg0: PluralRules): StandardPlural;
     getUpperDisplayMagnitude(): number;
+    isHasIntegerValue(): boolean;
     isInfinite(): boolean;
     isNaN(): boolean;
     isNegative(): boolean;

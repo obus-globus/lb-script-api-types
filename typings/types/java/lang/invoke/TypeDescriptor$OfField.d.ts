@@ -3,6 +3,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface TypeDescriptor$OfField<F extends TypeDescriptor$OfField<F>> extends TypeDescriptor, Object{
     arrayType(): F;
     componentType(): F;
+    descriptorString(): string;
     isArray(): boolean;
     isPrimitive(): boolean;
 }

@@ -1,9 +1,15 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ComparableWord } from '../../../../../org/graalvm/word/ComparableWord.d.ts'
 import type { PointerBase } from '../../../../../org/graalvm/word/PointerBase.d.ts'
 import type { SignedWord } from '../../../../../org/graalvm/word/SignedWord.d.ts'
 export interface CDoublePointer extends Object, PointerBase{
     addressOf(index: number): CDoublePointer;
     addressOf(index: SignedWord): CDoublePointer;
+    equal(val: ComparableWord): boolean;
+    isNonNull(): boolean;
+    isNull(): boolean;
+    notEqual(val: ComparableWord): boolean;
+    rawValue(): number;
     read(): number;
     read(index: number): number;
     read(index: SignedWord): number;

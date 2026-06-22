@@ -55,6 +55,8 @@ export class MouseHandler extends Object implements IMouseKeyboardHandlers, Mous
     // private onScroll(handle: number, xoffset: number, yoffset: number): void;
     releaseMouse(): void;
     setIgnoreFirstMove(): void;
+    setLastClick(arg0: MouseHandler$LastClick): void;
+    setLastClickButton(arg0: number): void;
     setup(window: Window): void;
     // private simulateRightClick(info: MouseButtonInfo, pressed: boolean): MouseButtonInfo;
     // private turnPlayer(mousea: number): void;

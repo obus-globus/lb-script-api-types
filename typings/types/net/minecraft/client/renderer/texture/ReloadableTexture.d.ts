@@ -9,6 +9,7 @@ export abstract class ReloadableTexture extends AbstractTexture implements Reloa
     // private resourceId: Identifier;
     apply(contents: TextureContents): void;
     doLoad(image: NativeImage): void;
+    getLocation(): Identifier;
     loadContents(resourceManager: ResourceManager): TextureContents;
     resourceId(): Identifier;
 }

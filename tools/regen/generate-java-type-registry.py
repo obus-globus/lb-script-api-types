@@ -62,11 +62,15 @@ def collect():
             p = pathlib.Path(dp) / f
             name = f[:-5]
             try:
-                head = p.read_text(encoding="utf-8")[:4096]
+                text = p.read_text(encoding="utf-8")
             except Exception:
                 continue
-            m = EXPORT_RE.search(head)
-            if not m or m.group(2) != name or m.group(1) != "class":
+            # Find the export whose name matches the file (the file's primary
+            # declaration), wherever it sits in the file — reading only a 4096-byte
+            # head silently dropped any class behind a long import block (e.g.
+            # api/type/Types, whose `export class` starts at byte ~5478).
+            m = next((c for c in EXPORT_RE.finditer(text) if c.group(2) == name), None)
+            if not m or m.group(1) != "class":
                 continue
             rel = p.relative_to(PKG).as_posix()[:-5]      # types/...
             binary = p.relative_to(TYPES).as_posix()[:-5].replace("/", ".")

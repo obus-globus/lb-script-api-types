@@ -4,7 +4,9 @@ export abstract class AbstractFloatListIterator extends AbstractFloatBidirection
     constructor()
     add(arg0: number): void;
     next(): number;
+    nextFloat(): number;
     previous(): number;
+    previousFloat(): number;
     remove(): void;
     set(arg0: number): void;
 }

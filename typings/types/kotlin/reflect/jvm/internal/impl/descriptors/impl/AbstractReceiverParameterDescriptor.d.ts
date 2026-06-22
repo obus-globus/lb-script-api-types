@@ -12,6 +12,7 @@ import type { ValueParameterDescriptor } from '../../../../../../../kotlin/refle
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { DeclarationDescriptorImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/DeclarationDescriptorImpl.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
+import type { ReceiverValue } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/receivers/ReceiverValue.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export abstract class AbstractReceiverParameterDescriptor extends DeclarationDescriptorImpl implements ReceiverParameterDescriptor {
@@ -19,6 +20,7 @@ export abstract class AbstractReceiverParameterDescriptor extends DeclarationDes
     constructor(arg0: AnnotationDescriptor[])
     constructor(arg0: AnnotationDescriptor[], arg1: Name)
     accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    getContainingDeclaration(): DeclarationDescriptor;
     getContextReceiverParameters(): ReceiverParameterDescriptor[];
     getDispatchReceiverParameter(): ReceiverParameterDescriptor;
     getExtensionReceiverParameter(): ReceiverParameterDescriptor;
@@ -29,6 +31,7 @@ export abstract class AbstractReceiverParameterDescriptor extends DeclarationDes
     getType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
     getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getValue(): ReceiverValue;
     getValueParameters(): ValueParameterDescriptor[];
     getVisibility(): DescriptorVisibility;
     hasSynthesizedParameterNames(): boolean;

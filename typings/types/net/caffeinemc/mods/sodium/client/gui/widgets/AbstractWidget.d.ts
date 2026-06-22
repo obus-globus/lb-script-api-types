@@ -30,6 +30,7 @@ export abstract class AbstractWidget extends Object implements Dimensioned, Rend
     drawRect(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     drawString(arg0: GuiGraphicsExtractor, arg1: string, arg2: number, arg3: number, arg4: number): void;
     drawString(arg0: GuiGraphicsExtractor, arg1: Component, arg2: number, arg3: number, arg4: number): void;
+    extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getCenterX(): number;
     getCenterY(): number;

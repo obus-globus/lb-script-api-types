@@ -13,8 +13,10 @@ export interface ShortShortSortedPair extends SortedPair<number>, ShortShortPair
     keyShort(): number;
     left(): number;
     left(arg0: number): ShortShortPair;
+    leftShort(): number;
     right(): number;
     right(arg0: number): ShortShortPair;
+    rightShort(): number;
     second(): number;
     second(arg0: number): ShortShortPair;
     secondShort(): number;

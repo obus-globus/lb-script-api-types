@@ -1,7 +1,9 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MappedElementKind } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappedElementKind.d.ts'
 import type { MappingVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappingVisitor.d.ts'
+import type { MappingTree } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTree.d.ts'
 import type { MappingTree$ElementMapping } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTree$ElementMapping.d.ts'
+import type { MappingTreeView } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTreeView.d.ts'
 import type { MemoryMappingTree } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MemoryMappingTree.d.ts'
 export abstract class MemoryMappingTree$Entry<T extends MemoryMappingTree$Entry<T>> extends Object implements MappingTree$ElementMapping {
     constructor(arg0: MemoryMappingTree, arg1: string)
@@ -19,6 +21,8 @@ export abstract class MemoryMappingTree$Entry<T extends MemoryMappingTree$Entry<
     getKind(): MappedElementKind;
     getSrcName(): string;
     getSrcNameUnchecked(): string;
+    getTree(): MappingTree;
+    getTree(): MappingTreeView;
     isSrcNameMissing(): boolean;
     resizeDstNames(arg0: number): void;
     setCommentInternal(arg0: string): void;

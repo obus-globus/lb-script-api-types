@@ -6,5 +6,6 @@ export abstract class AbstractBooleanIterator extends Object implements BooleanI
     constructor()
     forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
+    nextBoolean(): boolean;
     skip(arg0: number): number;
 }

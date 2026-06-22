@@ -51,6 +51,7 @@ import type { DamageSources } from '../../../../net/minecraft/world/damagesource
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EnderDragonPart } from '../../../../net/minecraft/world/entity/boss/enderdragon/EnderDragonPart.d.ts'
 import type { Player } from '../../../../net/minecraft/world/entity/player/Player.d.ts'
+import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { PotionBrewing } from '../../../../net/minecraft/world/item/alchemy/PotionBrewing.d.ts'
 import type { FireworkExplosion } from '../../../../net/minecraft/world/item/component/FireworkExplosion.d.ts'
 import type { RecipeAccess } from '../../../../net/minecraft/world/item/crafting/RecipeAccess.d.ts'
@@ -67,7 +68,9 @@ import type { BlockEntityType } from '../../../../net/minecraft/world/level/bloc
 import type { FuelValues } from '../../../../net/minecraft/world/level/block/entity/FuelValues.d.ts'
 import type { TickingBlockEntity } from '../../../../net/minecraft/world/level/block/entity/TickingBlockEntity.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { WorldBorder } from '../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 import type { ChunkAccess } from '../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
+import type { ChunkSource } from '../../../../net/minecraft/world/level/chunk/ChunkSource.d.ts'
 import type { LevelChunk } from '../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 import type { PalettedContainerFactory } from '../../../../net/minecraft/world/level/chunk/PalettedContainerFactory.d.ts'
 import type { ChunkStatus } from '../../../../net/minecraft/world/level/chunk/status/ChunkStatus.d.ts'
@@ -171,6 +174,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     dimensionType(): DimensionType;
     dimensionTypeRegistration(): Holder<DimensionType>;
     dragonParts(): EnderDragonPart[];
+    enabledFeatures(): FeatureFlagSet;
     environmentAttributes(): EnvironmentAttributeSystem;
     explode(source: Entity, x: number, y: number, z: number, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
     explode(source: Entity, x: number, y: number, z: number, r: number, blockInteraction: Level$ExplosionInteraction): void;
@@ -226,6 +230,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getChunk(arg0: BlockPos): ChunkAccess;
     getChunkAt(arg0: BlockPos): LevelChunk;
     getChunkForCollisions(arg0: number, arg1: number): BlockGetter;
+    getChunkSource(): ChunkSource;
     getClientLeafTintColor(pos: BlockPos): number;
     // private getClockTimeTicks(clock: Optional<Holder<WorldClock>>): number;
     getDefaultClockTime(): number;
@@ -258,6 +263,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getRandom(): RandomSource;
     getRespawnData(): LevelData$RespawnData;
     getScoreboard(): Scoreboard;
+    getSeaLevel(): number;
     getSectionIndex(arg0: number): number;
     getSectionIndex(blockY: number): number;
     getSectionIndexFromSectionY(arg0: number): number;
@@ -267,7 +273,9 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     getSectionsCount(): number;
     getServer(): MinecraftServer;
     getSkyDarken(): number;
+    getThread(): Thread;
     getThunderLevel(a: number): number;
+    getWorldBorder(): WorldBorder;
     getWorldBorderAdjustedRespawnData(respawnData: LevelData$RespawnData): LevelData$RespawnData;
     globalAttachments(): GlobalAttachments;
     globalLevelEvent(type: number, pos: BlockPos, data: number): void;
@@ -294,6 +302,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     isStateAtPosition(pos: BlockPos, predicate: (param0: BlockState) => boolean): boolean;
     isThundering(): boolean;
     levelEvent(type: number, pos: BlockPos, data: number): void;
+    levelEvent(source: Entity, type: number, pos: BlockPos, data: number): void;
     lithium$getData(): LithiumData$Data;
     lithium$getLoadedExistingBlockEntity(arg0: BlockPos): BlockEntity;
     lithium$getRandomPosInChunk(arg0: number, arg1: number, arg2: number, arg3: number, arg4: BlockPos$MutableBlockPos): void;

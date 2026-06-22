@@ -7,6 +7,7 @@ import type { Type } from '../../../kroppeb/stareval/function/Type.d.ts'
 export abstract class ConstantExpression extends Object implements Expression {
     constructor(arg0: Type)
     readonly type: Type;
+    evaluateTo(arg0: FunctionContext, arg1: FunctionReturn): void;
     getType(): Type;
     listVariables(arg0: VariableExpression[]): void;
     partialEval(arg0: FunctionContext, arg1: FunctionReturn): Expression;

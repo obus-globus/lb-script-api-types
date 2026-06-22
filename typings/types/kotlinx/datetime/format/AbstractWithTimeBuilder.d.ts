@@ -9,6 +9,7 @@ export interface AbstractWithTimeBuilder extends Object, DateTimeFormatBuilder$W
     addFormatStructureForTime(structure: FormatStructure<TimeFieldContainer>): void;
     amPmHour(padding: Padding): void;
     amPmMarker(am: string, pm: string): void;
+    chars(value: string): void;
     hour(padding: Padding): void;
     minute(padding: Padding): void;
     second(padding: Padding): void;

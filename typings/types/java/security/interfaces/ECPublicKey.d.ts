@@ -4,6 +4,8 @@ import type { ECParameterSpec } from '../../../java/security/spec/ECParameterSpe
 import type { ECPoint } from '../../../java/security/spec/ECPoint.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface ECPublicKey extends PublicKey, ECKey, Object{
+    getAlgorithm(): string;
+    getFormat(): string;
     getParams(): ECParameterSpec;
     getW(): ECPoint;
 }

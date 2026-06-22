@@ -4,6 +4,8 @@ export abstract class AbstractDoubleBigListIterator extends AbstractDoubleBidire
     constructor()
     add(arg0: number): void;
     back(arg0: number): number;
+    nextDouble(): number;
+    previousDouble(): number;
     set(arg0: number): void;
     skip(arg0: number): number;
 }

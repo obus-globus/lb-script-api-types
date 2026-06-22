@@ -12,6 +12,7 @@ import type { BlockEntity } from '../../../../../net/minecraft/world/level/block
 import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ChunkSkyLightSources } from '../../../../../net/minecraft/world/level/lighting/ChunkSkyLightSources.d.ts'
+import type { FluidState } from '../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -20,11 +21,16 @@ export interface LightChunk extends Object, BlockGetter {
     clip(arg0: ClipContext): BlockHitResult;
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
     findBlockLightSources(consumer: (param0: BlockPos, param1: BlockState) => void): void;
+    getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
+    getBlockState(pos: BlockPos): BlockState;
     getBlockStates(box: AABB): Stream<BlockState>;
+    getFluidState(pos: BlockPos): FluidState;
+    getHeight(): number;
     getLightEmission(pos: BlockPos): number;
+    getMinY(): number;
     getSkyLightSources(): ChunkSkyLightSources;
     isBlockInLine(c: ClipBlockStateContext): BlockHitResult;
     // private lithium$blockHitFactory(arg0: ClipContext): (param0: Object, param1: Object) => Object;

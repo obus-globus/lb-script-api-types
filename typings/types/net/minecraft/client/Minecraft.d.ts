@@ -266,6 +266,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     allowsTelemetry(): boolean;
     // private archiveProfilingReport(systemReport: SystemReport, profilingResultPaths: Path[][]): Path[];
     // private buildInitialScreens(cookie: Minecraft$GameLoadCookie): () => void;
+    callStartUseItem(): void;
     canInterruptScreen(): boolean;
     canSwitchGameMode(): boolean;
     clearClientLevel(screen: Screen): void;
@@ -334,6 +335,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     getMusicVolume(): number;
     getNarrator(): GameNarrator;
     getOverlay(): Overlay;
+    getPendingConnection(): Connection;
     getPerTickGizmos(): SimpleGizmoCollector$GizmoInstance[];
     getPlayerSocialManager(): PlayerSocialManager;
     getProfileKeyPairManager(): ProfileKeyPairManager;

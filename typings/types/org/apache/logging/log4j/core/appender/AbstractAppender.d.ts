@@ -23,6 +23,7 @@ export abstract class AbstractAppender extends AbstractFilterable implements App
     // private ignoreExceptions: boolean;
     readonly layout: Layout<Serializable>;
     readonly name: string;
+    append(event: LogEvent): void;
     error(msg: string): void;
     error(msg: string, t: Throwable): void;
     error(msg: string, event: LogEvent, t: Throwable): void;

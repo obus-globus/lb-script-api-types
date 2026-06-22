@@ -17,5 +17,6 @@ export interface RuntimeReflectionSupport extends Object, ReflectionRegistry{
     registerAllPermittedSubclassesQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
     registerAllRecordComponentsQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
     registerAllSignersQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
+    registerClassLookup(condition: ConfigurationCondition, typeName: string): void;
     registerClassLookupException(condition: ConfigurationCondition, typeName: string, t: Throwable): void;
 }

@@ -6,6 +6,7 @@ import type { PackageFragmentDescriptor } from '../../../../../../../kotlin/refl
 import type { SourceElement } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SourceElement.d.ts'
 import type { DeclarationDescriptorNonRootImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/DeclarationDescriptorNonRootImpl.d.ts'
 import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
+import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 export abstract class PackageFragmentDescriptorImpl extends DeclarationDescriptorNonRootImpl implements PackageFragmentDescriptor {
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: ModuleDescriptor, arg1: FqName)
@@ -14,6 +15,7 @@ export abstract class PackageFragmentDescriptorImpl extends DeclarationDescripto
     accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getContainingDeclaration(): ModuleDescriptor;
     getFqName(): FqName;
+    getMemberScope(): MemberScope;
     getSource(): SourceElement;
     toString(): string;
 }

@@ -1,14 +1,26 @@
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
+import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { MessageSizeEstimator } from '../../../../io/netty/channel/MessageSizeEstimator.d.ts'
 import type { RecvByteBufAllocator } from '../../../../io/netty/channel/RecvByteBufAllocator.d.ts'
 import type { WriteBufferWaterMark } from '../../../../io/netty/channel/WriteBufferWaterMark.d.ts'
 import type { DuplexChannelConfig } from '../../../../io/netty/channel/socket/DuplexChannelConfig.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface SocketChannelConfig extends DuplexChannelConfig, Object{
+    getAllocator(): ByteBufAllocator;
+    getConnectTimeoutMillis(): number;
+    getMaxMessagesPerRead(): number;
+    getMessageSizeEstimator(): MessageSizeEstimator;
     getReceiveBufferSize(): number;
     getSendBufferSize(): number;
     getSoLinger(): number;
     getTrafficClass(): number;
+    getWriteBufferHighWaterMark(): number;
+    getWriteBufferLowWaterMark(): number;
+    getWriteBufferWaterMark(): WriteBufferWaterMark;
+    getWriteSpinCount(): number;
+    isAllowHalfClosure(): boolean;
+    isAutoClose(): boolean;
+    isAutoRead(): boolean;
     isKeepAlive(): boolean;
     isReuseAddress(): boolean;
     isTcpNoDelay(): boolean;
@@ -28,6 +40,8 @@ export interface SocketChannelConfig extends DuplexChannelConfig, Object{
     setSoLinger(arg0: number): SocketChannelConfig;
     setTcpNoDelay(arg0: boolean): SocketChannelConfig;
     setTrafficClass(arg0: number): SocketChannelConfig;
+    setWriteBufferHighWaterMark(arg0: number): ChannelConfig;
+    setWriteBufferLowWaterMark(arg0: number): ChannelConfig;
     setWriteBufferWaterMark(arg0: WriteBufferWaterMark): SocketChannelConfig;
     setWriteSpinCount(arg0: number): SocketChannelConfig;
 }

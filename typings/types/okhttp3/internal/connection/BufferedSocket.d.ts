@@ -5,4 +5,5 @@ import type { Socket } from '../../../okio/Socket.d.ts'
 export interface BufferedSocket extends Object, Socket{
     readonly sink: BufferedSink;
     readonly source: BufferedSource;
+    cancel(): void;
 }

@@ -54,6 +54,8 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     coordinateScale(): number;
     defaultClock(): Optional<Holder<WorldClock>>;
     equals(o: Object | null): boolean;
+    fabric_setAttributes(arg0: EnvironmentAttributeMap): void;
+    getAmbientLight(): number;
     hasCeiling(): boolean;
     hasEndFlashes(): boolean;
     hasEnderDragonFight(): boolean;

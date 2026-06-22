@@ -5,6 +5,7 @@ import type { CommandSyntaxException } from '../../../com/mojang/brigadier/excep
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CommandResultCallback } from '../../../net/minecraft/commands/CommandResultCallback.d.ts'
 import type { TraceCallbacks } from '../../../net/minecraft/commands/execution/TraceCallbacks.d.ts'
+import type { PermissionSet } from '../../../net/minecraft/server/permissions/PermissionSet.d.ts'
 import type { PermissionSetSupplier } from '../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
 export interface ExecutionCommandSource<T extends ExecutionCommandSource<T>> extends Object, PermissionSetSupplier {
     callback(): (param0: boolean, param1: number) => void;
@@ -13,5 +14,6 @@ export interface ExecutionCommandSource<T extends ExecutionCommandSource<T>> ext
     handleError(type: CommandExceptionType, message: Message, forked: boolean, tracer: TraceCallbacks): void;
     handleError(e: CommandSyntaxException, forked: boolean, tracer: TraceCallbacks): void;
     isSilent(): boolean;
+    permissions(): PermissionSet;
     withCallback(resultCallback: (param0: boolean, param1: number) => void): T;
 }

@@ -31,6 +31,8 @@ export class KeyMapping extends Object implements Comparable<KeyMapping>, KeyMap
     // private order: number;
     compareTo(o: KeyMapping): number;
     consumeClick(): boolean;
+    fabric_getBoundKey(): InputConstants$Key;
+    fabric_getTimesPressed(): number;
     getCategory(): KeyMapping$Category;
     getDefaultKey(): InputConstants$Key;
     getName(): string;

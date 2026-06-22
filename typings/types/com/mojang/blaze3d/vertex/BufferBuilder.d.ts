@@ -64,10 +64,13 @@ export class BufferBuilder extends Object implements VertexConsumer, VertexBuffe
     // private endLastVertex(): void;
     // private ensureBuilding(): void;
     // private fillExtendedData(arg0: number): void;
+    ignoreMidBlock(arg0: boolean): void;
+    overrideBlock(arg0: number): void;
     push(arg0: MemoryStack, arg1: number, arg2: number, arg3: VertexFormat): void;
     putBakedQuad(arg0: PoseStack$Pose, arg1: BakedQuad, arg2: QuadInstance): void;
     putBakedQuad(pose: PoseStack$Pose, quad: BakedQuad, instance: QuadInstance): void;
     putBlockBakedQuad(x: number, y: number, z: number, quad: BakedQuad, instance: QuadInstance): void;
+    restoreBlock(): void;
     setColor(r: number, g: number, b: number, a: number): VertexConsumer;
     setColor(color: number): VertexConsumer;
     setLight(packedLightCoords: number): VertexConsumer;

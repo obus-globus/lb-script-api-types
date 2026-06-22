@@ -19,7 +19,12 @@ export class SpriteContents$AnimationState extends Object implements AutoCloseab
     // private wasActiveThisTick: boolean;
     close(): void;
     drawToAtlas(renderPass: RenderPass, ubo: GpuBufferSlice): void;
+    getAnimationInfo(): SpriteContents$AnimatedTexture;
     getDrawUbo(level: number): GpuBufferSlice;
+    getFrame(): number;
+    getSubFrame(): number;
     needsToDraw(): boolean;
+    setFrame(arg0: number): void;
+    setSubFrame(arg0: number): void;
     tick(): void;
 }

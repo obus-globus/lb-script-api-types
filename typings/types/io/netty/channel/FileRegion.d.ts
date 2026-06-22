@@ -4,6 +4,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface FileRegion extends ReferenceCounted, Object{
     count(): number;
     position(): number;
+    refCnt(): number;
+    release(): boolean;
+    release(arg0: number): boolean;
     retain(): FileRegion;
     retain(arg0: number): FileRegion;
     touch(): FileRegion;

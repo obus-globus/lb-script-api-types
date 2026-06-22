@@ -20,4 +20,5 @@ export abstract class SVG_Lib_Render_Func extends Callback implements SVG_Lib_Re
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number): number;
 }

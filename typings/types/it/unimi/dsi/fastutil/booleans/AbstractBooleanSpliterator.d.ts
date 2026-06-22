@@ -16,4 +16,5 @@ export abstract class AbstractBooleanSpliterator extends Object implements Boole
     getComparator(): (param0: boolean, param1: boolean) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
+    trySplit(): BooleanSpliterator;
 }

@@ -28,6 +28,7 @@ export interface DdemlUtil$IDdeClient extends Closeable, Object{
     abandonTransactions(): void;
     accessData(arg0: Ddeml$HDDEDATA, arg1: WinDef$DWORDByReference): Pointer;
     addData(arg0: Ddeml$HDDEDATA, arg1: Pointer, arg2: number, arg3: number): Ddeml$HDDEDATA;
+    close(): void;
     connect(arg0: Ddeml$HSZ, arg1: Ddeml$HSZ, arg2: Ddeml$CONVCONTEXT): DdemlUtil$IDdeConnection;
     connect(arg0: string, arg1: string, arg2: Ddeml$CONVCONTEXT): DdemlUtil$IDdeConnection;
     connectList(arg0: Ddeml$HSZ, arg1: Ddeml$HSZ, arg2: DdemlUtil$IDdeConnectionList, arg3: Ddeml$CONVCONTEXT): DdemlUtil$IDdeConnectionList;

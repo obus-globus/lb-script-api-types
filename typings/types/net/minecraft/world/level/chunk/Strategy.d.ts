@@ -20,4 +20,5 @@ export abstract class Strategy<T extends Object | number | string | boolean> ext
     getIndex(x: number, y: number, z: number): number;
     globalMap(): T[];
     globalPalette(): GlobalPalette<T>;
+    lithium$getConfigurationForPaletteSize(arg0: number): Configuration;
 }

@@ -15,6 +15,7 @@ import type { TextStyle } from '../../../java/time/format/TextStyle.d.ts'
 import type { ChronoField } from '../../../java/time/temporal/ChronoField.d.ts'
 import type { TemporalAccessor } from '../../../java/time/temporal/TemporalAccessor.d.ts'
 import type { TemporalField } from '../../../java/time/temporal/TemporalField.d.ts'
+import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Locale } from '../../../java/util/Locale.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractChronology extends Object implements Chronology {
@@ -26,18 +27,28 @@ export abstract class AbstractChronology extends Object implements Chronology {
     addFieldValue(arg0: Map<TemporalField, number>, arg1: ChronoField, arg2: number): void;
     compareTo(arg0: Chronology): number;
     date(arg0: Era, arg1: number, arg2: number, arg3: number): ChronoLocalDate;
+    date(arg0: TemporalAccessor): ChronoLocalDate;
+    date(arg0: number, arg1: number, arg2: number): ChronoLocalDate;
+    dateEpochDay(arg0: number): ChronoLocalDate;
     dateNow(): ChronoLocalDate;
     dateNow(arg0: Clock): ChronoLocalDate;
     dateNow(arg0: ZoneId): ChronoLocalDate;
     dateYearDay(arg0: Era, arg1: number, arg2: number): ChronoLocalDate;
+    dateYearDay(arg0: number, arg1: number): ChronoLocalDate;
     epochSecond(arg0: Era, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: ZoneOffset): number;
     epochSecond(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: ZoneOffset): number;
     equals(arg0: Object | null): boolean;
+    eraOf(arg0: number): Era;
+    getCalendarType(): string;
     getDisplayName(arg0: TextStyle, arg1: Locale): string;
+    getId(): string;
     hashCode(): number;
     isIsoBased(): boolean;
+    isLeapYear(arg0: number): boolean;
     localDateTime(arg0: TemporalAccessor): ChronoLocalDateTime<ChronoLocalDate>;
     period(arg0: number, arg1: number, arg2: number): ChronoPeriod;
+    prolepticYear(arg0: Era, arg1: number): number;
+    range(arg0: ChronoField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     resolveAligned(arg0: ChronoLocalDate, arg1: number, arg2: number, arg3: number): ChronoLocalDate;
     resolveDate(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;

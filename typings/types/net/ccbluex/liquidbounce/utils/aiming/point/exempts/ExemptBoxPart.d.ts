@@ -3,7 +3,9 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { ExemptContext } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptContext.d.ts'
 import type { ExemptPoint } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptPoint.d.ts'
+import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ExemptBoxPart extends Enum<ExemptBoxPart> implements Tagged, ExemptPoint {
     static BODY: ExemptBoxPart;
     static Companion: Tagged$Companion;
@@ -24,5 +26,6 @@ export class ExemptBoxPart extends Enum<ExemptBoxPart> implements Tagged, Exempt
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptBoxPart.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptBoxPart.kt:58}
      */
     isHigherThan(other: ExemptBoxPart): boolean;
+    predicate(context: ExemptContext, point: Vec3): boolean;
     name(): "HEAD" | "BODY" | "FEET";
 }

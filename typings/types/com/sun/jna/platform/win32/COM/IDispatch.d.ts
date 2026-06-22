@@ -15,8 +15,11 @@ import type { IntByReference } from '../../../../../../com/sun/jna/ptr/IntByRefe
 import type { PointerByReference } from '../../../../../../com/sun/jna/ptr/PointerByReference.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface IDispatch extends IUnknown, Object{
+    AddRef(): number;
     GetIDsOfNames(arg0: Guid$REFIID, arg1: WString[], arg2: number, arg3: WinDef$LCID, arg4: OaIdl$DISPIDByReference): WinNT$HRESULT;
     GetTypeInfo(arg0: WinDef$UINT, arg1: WinDef$LCID, arg2: PointerByReference): WinNT$HRESULT;
     GetTypeInfoCount(arg0: WinDef$UINTByReference): WinNT$HRESULT;
     Invoke(arg0: OaIdl$DISPID, arg1: Guid$REFIID, arg2: WinDef$LCID, arg3: WinDef$WORD, arg4: OleAuto$DISPPARAMS$ByReference, arg5: Variant$VARIANT$ByReference, arg6: OaIdl$EXCEPINFO$ByReference, arg7: IntByReference): WinNT$HRESULT;
+    QueryInterface(arg0: Guid$REFIID, arg1: PointerByReference): WinNT$HRESULT;
+    Release(): number;
 }

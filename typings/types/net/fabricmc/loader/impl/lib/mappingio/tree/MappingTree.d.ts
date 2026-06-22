@@ -8,8 +8,10 @@ import type { MappingTreeView } from '../../../../../../../net/fabricmc/loader/i
 import type { MappingTreeView$ClassMappingView } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTreeView$ClassMappingView.d.ts'
 import type { MappingTreeView$FieldMappingView } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTreeView$FieldMappingView.d.ts'
 import type { MappingTreeView$MethodMappingView } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTreeView$MethodMappingView.d.ts'
+import type { VisitOrder } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/VisitOrder.d.ts'
 export interface MappingTree extends Object, MappingTreeView{
     accept(arg0: MappingVisitor): void;
+    accept(arg0: MappingVisitor, arg1: VisitOrder): void;
     getClass(arg0: string): MappingTree$ClassMapping;
     getClass(arg0: string, arg1: number): MappingTree$ClassMapping;
     getClass(arg0: string, arg1: number): MappingTreeView$ClassMappingView;
@@ -19,6 +21,7 @@ export interface MappingTree extends Object, MappingTreeView{
     getMethod(arg0: string, arg1: string, arg2: string, arg3: number): MappingTree$MethodMapping;
     getMethod(arg0: string, arg1: string, arg2: string, arg3: number): MappingTreeView$MethodMappingView;
     getNamespaceId(arg0: string): number;
+    getSrcNamespace(): string;
     mapClassName(arg0: string, arg1: number, arg2: number): string;
     mapDesc(arg0: CharSequence, arg1: number): string;
     mapDesc(arg0: CharSequence, arg1: number, arg2: number): string;

@@ -1,6 +1,10 @@
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
+import type { Channel$Unsafe } from '../../../../io/netty/channel/Channel$Unsafe.d.ts'
+import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelFuture } from '../../../../io/netty/channel/ChannelFuture.d.ts'
+import type { ChannelId } from '../../../../io/netty/channel/ChannelId.d.ts'
+import type { ChannelMetadata } from '../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOption } from '../../../../io/netty/channel/ChannelOption.d.ts'
 import type { ChannelProgressivePromise } from '../../../../io/netty/channel/ChannelProgressivePromise.d.ts'
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
@@ -16,6 +20,8 @@ export interface UnixChannel extends Channel, Object{
     bytesBeforeWritable(): number;
     close(): ChannelFuture;
     close(arg0: ChannelPromise): ChannelFuture;
+    closeFuture(): ChannelFuture;
+    config(): ChannelConfig;
     connect(arg0: SocketAddress): ChannelFuture;
     connect(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     connect(arg0: SocketAddress, arg1: SocketAddress): ChannelFuture;
@@ -27,13 +33,22 @@ export interface UnixChannel extends Channel, Object{
     fd(): FileDescriptor;
     flush(): Channel;
     getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    id(): ChannelId;
+    isActive(): boolean;
+    isOpen(): boolean;
+    isRegistered(): boolean;
     isWritable(): boolean;
+    localAddress(): SocketAddress;
+    metadata(): ChannelMetadata;
     newFailedFuture(arg0: Throwable): ChannelFuture;
     newProgressivePromise(): ChannelProgressivePromise;
     newPromise(): ChannelPromise;
     newSucceededFuture(): ChannelFuture;
+    parent(): Channel;
     read(): Channel;
+    remoteAddress(): SocketAddress;
     setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    unsafe(): Channel$Unsafe;
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;
     write(arg0: Object, arg1: ChannelPromise): ChannelFuture;

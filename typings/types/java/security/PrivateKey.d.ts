@@ -4,6 +4,8 @@ import type { Destroyable } from '../../javax/security/auth/Destroyable.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface PrivateKey extends AsymmetricKey, Destroyable, Object{
     destroy(): void;
+    getAlgorithm(): string;
+    getFormat(): string;
     getParams(): AlgorithmParameterSpec;
     isDestroyed(): boolean;
 }

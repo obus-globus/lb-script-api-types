@@ -4,6 +4,7 @@ import type { Check } from '../../../../../../kotlin/reflect/jvm/internal/impl/u
 export abstract class MemberKindCheck extends Object implements Check {
     private constructor(arg0: string)
     readonly description: string;
+    check(arg0: FunctionDescriptor): boolean;
     getDescription(): string;
     invoke(arg0: FunctionDescriptor): string;
 }

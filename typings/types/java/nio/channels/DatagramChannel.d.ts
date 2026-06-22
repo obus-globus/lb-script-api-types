@@ -1,10 +1,13 @@
 import type { DatagramSocket } from '../../../java/net/DatagramSocket.d.ts'
+import type { InetAddress } from '../../../java/net/InetAddress.d.ts'
+import type { NetworkInterface } from '../../../java/net/NetworkInterface.d.ts'
 import type { ProtocolFamily } from '../../../java/net/ProtocolFamily.d.ts'
 import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 import type { SocketOption } from '../../../java/net/SocketOption.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { ByteChannel } from '../../../java/nio/channels/ByteChannel.d.ts'
 import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
+import type { MembershipKey } from '../../../java/nio/channels/MembershipKey.d.ts'
 import type { MulticastChannel } from '../../../java/nio/channels/MulticastChannel.d.ts'
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 import type { AbstractSelectableChannel } from '../../../java/nio/channels/spi/AbstractSelectableChannel.d.ts'
@@ -20,6 +23,8 @@ export abstract class DatagramChannel extends AbstractSelectableChannel implemen
     getLocalAddress(): SocketAddress;
     getRemoteAddress(): SocketAddress;
     isConnected(): boolean;
+    join(arg0: InetAddress, arg1: NetworkInterface): MembershipKey;
+    join(arg0: InetAddress, arg1: NetworkInterface, arg2: InetAddress): MembershipKey;
     read(arg0: ByteBuffer): number;
     read(arg0: ByteBuffer[]): number;
     read(arg0: ByteBuffer[], arg1: number, arg2: number): number;

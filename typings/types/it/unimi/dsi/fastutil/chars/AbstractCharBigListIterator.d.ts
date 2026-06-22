@@ -4,6 +4,8 @@ export abstract class AbstractCharBigListIterator extends AbstractCharBidirectio
     constructor()
     add(arg0: string): void;
     back(arg0: number): number;
+    nextChar(): string;
+    previousChar(): string;
     set(arg0: string): void;
     skip(arg0: number): number;
 }

@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { Ingredient } from '../../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 import type { PlacementInfo } from '../../../../../net/minecraft/world/item/crafting/PlacementInfo.d.ts'
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { Recipe$CommonInfo } from '../../../../../net/minecraft/world/item/crafting/Recipe$CommonInfo.d.ts'
@@ -19,6 +20,7 @@ export abstract class SimpleSmithingRecipe extends Object implements SmithingRec
     constructor(commonInfo: Recipe$CommonInfo)
     // private commonInfo: Recipe$CommonInfo;
     // private placementInfo: PlacementInfo;
+    baseIngredient(): Ingredient;
     createPlacementInfo(): PlacementInfo;
     getSerializer(): RecipeSerializer<SimpleSmithingRecipe>;
     getType(): RecipeType<SmithingRecipe>;

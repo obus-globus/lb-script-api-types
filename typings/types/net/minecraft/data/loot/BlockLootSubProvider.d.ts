@@ -84,6 +84,7 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     dropWhenSilkTouch(block: Block): void;
     generate(): void;
     generate(output: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void): void;
+    getRegistries(): HolderLookup$Provider;
     hasShears(): () => LootItemCondition;
     hasShearsOrSilkTouch(): () => LootItemCondition;
     hasSilkTouch(): () => LootItemCondition;

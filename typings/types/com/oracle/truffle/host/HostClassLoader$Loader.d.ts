@@ -7,5 +7,6 @@ export abstract class HostClassLoader$Loader extends Object implements Closeable
     constructor(root: TruffleFile)
     // private protectionDomain: ProtectionDomain;
     // private root: TruffleFile;
+    close(): void;
     findResource(name: string): HostClassLoader$Resource;
 }

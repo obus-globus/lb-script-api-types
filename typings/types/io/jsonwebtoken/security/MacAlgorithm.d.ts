@@ -5,4 +5,6 @@ import type { SecureDigestAlgorithm } from '../../../io/jsonwebtoken/security/Se
 import type { SecretKey } from '../../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface MacAlgorithm extends KeyBuilderSupplier<SecretKey, SecretKeyBuilder>, KeyLengthSupplier, SecureDigestAlgorithm<SecretKey, SecretKey>, Object{
+    getId(): string;
+    getKeyBitLength(): number;
 }

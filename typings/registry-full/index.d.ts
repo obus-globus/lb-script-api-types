@@ -3099,6 +3099,7 @@ interface JavaTypeRegistry {
     "com.llamalad7.mixinextras.ap.expressions.DefinitionInfo$Method": typeof import("../types/com/llamalad7/mixinextras/ap/expressions/DefinitionInfo$Method").DefinitionInfo$Method;
     "com.llamalad7.mixinextras.ap.expressions.DefinitionInfo$SyntheticAt": typeof import("../types/com/llamalad7/mixinextras/ap/expressions/DefinitionInfo$SyntheticAt").DefinitionInfo$SyntheticAt;
     "com.llamalad7.mixinextras.config.MixinExtrasConfig": typeof import("../types/com/llamalad7/mixinextras/config/MixinExtrasConfig").MixinExtrasConfig;
+    "com.llamalad7.mixinextras.expression.impl.ExpressionParserFacade": typeof import("../types/com/llamalad7/mixinextras/expression/impl/ExpressionParserFacade").ExpressionParserFacade;
     "com.llamalad7.mixinextras.expression.impl.ExpressionService": typeof import("../types/com/llamalad7/mixinextras/expression/impl/ExpressionService").ExpressionService;
     "com.llamalad7.mixinextras.expression.impl.ExpressionSource": typeof import("../types/com/llamalad7/mixinextras/expression/impl/ExpressionSource").ExpressionSource;
     "com.llamalad7.mixinextras.expression.impl.ast.expressions.ArrayAccessExpression": typeof import("../types/com/llamalad7/mixinextras/expression/impl/ast/expressions/ArrayAccessExpression").ArrayAccessExpression;
@@ -4551,6 +4552,8 @@ interface JavaTypeRegistry {
     "com.oracle.js.parser.ir.VarNode": typeof import("../types/com/oracle/js/parser/ir/VarNode").VarNode;
     "com.oracle.js.parser.ir.WhileNode": typeof import("../types/com/oracle/js/parser/ir/WhileNode").WhileNode;
     "com.oracle.js.parser.ir.WithNode": typeof import("../types/com/oracle/js/parser/ir/WithNode").WithNode;
+    "com.oracle.js.parser.ir.visitor.NodeVisitor": typeof import("../types/com/oracle/js/parser/ir/visitor/NodeVisitor").NodeVisitor;
+    "com.oracle.js.parser.ir.visitor.TranslatorNodeVisitor": typeof import("../types/com/oracle/js/parser/ir/visitor/TranslatorNodeVisitor").TranslatorNodeVisitor;
     "com.oracle.svm.core.annotate.RecomputeFieldValue$Kind": typeof import("../types/com/oracle/svm/core/annotate/RecomputeFieldValue$Kind").RecomputeFieldValue$Kind;
     "com.oracle.svm.core.annotate.TargetClass$AlwaysIncluded": typeof import("../types/com/oracle/svm/core/annotate/TargetClass$AlwaysIncluded").TargetClass$AlwaysIncluded;
     "com.oracle.truffle.api.ArrayUtils": typeof import("../types/com/oracle/truffle/api/ArrayUtils").ArrayUtils;
@@ -4711,6 +4714,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.api.debug.Debugger$AccessorDebug": typeof import("../types/com/oracle/truffle/api/debug/Debugger$AccessorDebug").Debugger$AccessorDebug;
     "com.oracle.truffle.api.debug.DebuggerExecutionLifecycle": typeof import("../types/com/oracle/truffle/api/debug/DebuggerExecutionLifecycle").DebuggerExecutionLifecycle;
     "com.oracle.truffle.api.debug.DebuggerNode": typeof import("../types/com/oracle/truffle/api/debug/DebuggerNode").DebuggerNode;
+    "com.oracle.truffle.api.debug.DebuggerSession": typeof import("../types/com/oracle/truffle/api/debug/DebuggerSession").DebuggerSession;
     "com.oracle.truffle.api.debug.DebuggerSession$Caller": typeof import("../types/com/oracle/truffle/api/debug/DebuggerSession$Caller").DebuggerSession$Caller;
     "com.oracle.truffle.api.debug.DebuggerSession$RootSteppingDepthNode": typeof import("../types/com/oracle/truffle/api/debug/DebuggerSession$RootSteppingDepthNode").DebuggerSession$RootSteppingDepthNode;
     "com.oracle.truffle.api.debug.DebuggerSession$StableBoolean": typeof import("../types/com/oracle/truffle/api/debug/DebuggerSession$StableBoolean").DebuggerSession$StableBoolean;
@@ -4808,6 +4812,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.api.impl.AbstractFastThreadLocal": typeof import("../types/com/oracle/truffle/api/impl/AbstractFastThreadLocal").AbstractFastThreadLocal;
     "com.oracle.truffle.api.impl.Accessor": typeof import("../types/com/oracle/truffle/api/impl/Accessor").Accessor;
     "com.oracle.truffle.api.impl.Accessor$Constants": typeof import("../types/com/oracle/truffle/api/impl/Accessor$Constants").Accessor$Constants;
+    "com.oracle.truffle.api.impl.Accessor$EngineSupport": typeof import("../types/com/oracle/truffle/api/impl/Accessor$EngineSupport").Accessor$EngineSupport;
     "com.oracle.truffle.api.impl.Accessor$ExceptionSupport": typeof import("../types/com/oracle/truffle/api/impl/Accessor$ExceptionSupport").Accessor$ExceptionSupport;
     "com.oracle.truffle.api.impl.Accessor$FrameSupport": typeof import("../types/com/oracle/truffle/api/impl/Accessor$FrameSupport").Accessor$FrameSupport;
     "com.oracle.truffle.api.impl.Accessor$HostSupport": typeof import("../types/com/oracle/truffle/api/impl/Accessor$HostSupport").Accessor$HostSupport;
@@ -4985,6 +4990,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.api.instrumentation.ExecutionEventNode": typeof import("../types/com/oracle/truffle/api/instrumentation/ExecutionEventNode").ExecutionEventNode;
     "com.oracle.truffle.api.instrumentation.InstrumentAccessor": typeof import("../types/com/oracle/truffle/api/instrumentation/InstrumentAccessor").InstrumentAccessor;
     "com.oracle.truffle.api.instrumentation.InstrumentAccessor$InstrumentImpl": typeof import("../types/com/oracle/truffle/api/instrumentation/InstrumentAccessor$InstrumentImpl").InstrumentAccessor$InstrumentImpl;
+    "com.oracle.truffle.api.instrumentation.InstrumentationHandler": typeof import("../types/com/oracle/truffle/api/instrumentation/InstrumentationHandler").InstrumentationHandler;
     "com.oracle.truffle.api.instrumentation.InstrumentationHandler$AbstractInstrumenter": typeof import("../types/com/oracle/truffle/api/instrumentation/InstrumentationHandler$AbstractInstrumenter").InstrumentationHandler$AbstractInstrumenter;
     "com.oracle.truffle.api.instrumentation.InstrumentationHandler$BindingLoadSourceSectionEvent": typeof import("../types/com/oracle/truffle/api/instrumentation/InstrumentationHandler$BindingLoadSourceSectionEvent").InstrumentationHandler$BindingLoadSourceSectionEvent;
     "com.oracle.truffle.api.instrumentation.InstrumentationHandler$DisposeWrapperOperation": typeof import("../types/com/oracle/truffle/api/instrumentation/InstrumentationHandler$DisposeWrapperOperation").InstrumentationHandler$DisposeWrapperOperation;
@@ -7125,6 +7131,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpExecNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpExecNode").RegExpPrototypeBuiltins$JSRegExpExecNode;
     "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpMatchAllNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpMatchAllNode").RegExpPrototypeBuiltins$JSRegExpMatchAllNode;
     "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpMatchNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpMatchNode").RegExpPrototypeBuiltins$JSRegExpMatchNode;
+    "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpReplaceNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpReplaceNode").RegExpPrototypeBuiltins$JSRegExpReplaceNode;
     "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceAccordingToSpecNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceAccordingToSpecNode").RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceAccordingToSpecNode;
     "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceInternalNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceInternalNode").RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceInternalNode;
     "com.oracle.truffle.js.builtins.RegExpPrototypeBuiltins$JSRegExpSearchNode": typeof import("../types/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpSearchNode").RegExpPrototypeBuiltins$JSRegExpSearchNode;
@@ -8345,10 +8352,12 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.nodes.JavaScriptNodeGen": typeof import("../types/com/oracle/truffle/js/nodes/JavaScriptNodeGen").JavaScriptNodeGen;
     "com.oracle.truffle.js.nodes.JavaScriptNodeGen$NodeLibraryExports": typeof import("../types/com/oracle/truffle/js/nodes/JavaScriptNodeGen$NodeLibraryExports").JavaScriptNodeGen$NodeLibraryExports;
     "com.oracle.truffle.js.nodes.JavaScriptNodeWrapper": typeof import("../types/com/oracle/truffle/js/nodes/JavaScriptNodeWrapper").JavaScriptNodeWrapper;
+    "com.oracle.truffle.js.nodes.NodeFactory": typeof import("../types/com/oracle/truffle/js/nodes/NodeFactory").NodeFactory;
     "com.oracle.truffle.js.nodes.NodeFactory$BinaryOperation": typeof import("../types/com/oracle/truffle/js/nodes/NodeFactory$BinaryOperation").NodeFactory$BinaryOperation;
     "com.oracle.truffle.js.nodes.NodeFactory$UnaryOperation": typeof import("../types/com/oracle/truffle/js/nodes/NodeFactory$UnaryOperation").NodeFactory$UnaryOperation;
     "com.oracle.truffle.js.nodes.NodeFactoryDecoderGen": typeof import("../types/com/oracle/truffle/js/nodes/NodeFactoryDecoderGen").NodeFactoryDecoderGen;
     "com.oracle.truffle.js.nodes.NodeFactoryDecoderGen$EncoderSupport": typeof import("../types/com/oracle/truffle/js/nodes/NodeFactoryDecoderGen$EncoderSupport").NodeFactoryDecoderGen$EncoderSupport;
+    "com.oracle.truffle.js.nodes.NodeFactoryProxyGen": typeof import("../types/com/oracle/truffle/js/nodes/NodeFactoryProxyGen").NodeFactoryProxyGen;
     "com.oracle.truffle.js.nodes.ScriptNode": typeof import("../types/com/oracle/truffle/js/nodes/ScriptNode").ScriptNode;
     "com.oracle.truffle.js.nodes.ThrowTypeErrorRootNode": typeof import("../types/com/oracle/truffle/js/nodes/ThrowTypeErrorRootNode").ThrowTypeErrorRootNode;
     "com.oracle.truffle.js.nodes.access.ArrayLiteralNode": typeof import("../types/com/oracle/truffle/js/nodes/access/ArrayLiteralNode").ArrayLiteralNode;
@@ -9362,6 +9371,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.nodes.function.BlockScopeNode$VirtualBlockScopeNode": typeof import("../types/com/oracle/truffle/js/nodes/function/BlockScopeNode$VirtualBlockScopeNode").BlockScopeNode$VirtualBlockScopeNode;
     "com.oracle.truffle.js.nodes.function.BuiltinArgumentBuilder": typeof import("../types/com/oracle/truffle/js/nodes/function/BuiltinArgumentBuilder").BuiltinArgumentBuilder;
     "com.oracle.truffle.js.nodes.function.CallApplyArgumentsNode": typeof import("../types/com/oracle/truffle/js/nodes/function/CallApplyArgumentsNode").CallApplyArgumentsNode;
+    "com.oracle.truffle.js.nodes.function.ClassDefinitionNode": typeof import("../types/com/oracle/truffle/js/nodes/function/ClassDefinitionNode").ClassDefinitionNode;
     "com.oracle.truffle.js.nodes.function.ClassDefinitionNode$ClassDefinitionResumptionRecord": typeof import("../types/com/oracle/truffle/js/nodes/function/ClassDefinitionNode$ClassDefinitionResumptionRecord").ClassDefinitionNode$ClassDefinitionResumptionRecord;
     "com.oracle.truffle.js.nodes.function.ClassElementDefinitionRecord": typeof import("../types/com/oracle/truffle/js/nodes/function/ClassElementDefinitionRecord").ClassElementDefinitionRecord;
     "com.oracle.truffle.js.nodes.function.ClassElementDefinitionRecord$Kind": typeof import("../types/com/oracle/truffle/js/nodes/function/ClassElementDefinitionRecord$Kind").ClassElementDefinitionRecord$Kind;
@@ -9763,6 +9773,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.parser.GraalJSEvaluator$GraphLoadingState": typeof import("../types/com/oracle/truffle/js/parser/GraalJSEvaluator$GraphLoadingState").GraalJSEvaluator$GraphLoadingState;
     "com.oracle.truffle.js.parser.GraalJSEvaluator$ModuleScriptRoot": typeof import("../types/com/oracle/truffle/js/parser/GraalJSEvaluator$ModuleScriptRoot").GraalJSEvaluator$ModuleScriptRoot;
     "com.oracle.truffle.js.parser.GraalJSParserHelper": typeof import("../types/com/oracle/truffle/js/parser/GraalJSParserHelper").GraalJSParserHelper;
+    "com.oracle.truffle.js.parser.GraalJSTranslator": typeof import("../types/com/oracle/truffle/js/parser/GraalJSTranslator").GraalJSTranslator;
     "com.oracle.truffle.js.parser.GraalJSTranslator$EnvironmentCloseable": typeof import("../types/com/oracle/truffle/js/parser/GraalJSTranslator$EnvironmentCloseable").GraalJSTranslator$EnvironmentCloseable;
     "com.oracle.truffle.js.parser.JavaScriptTranslator": typeof import("../types/com/oracle/truffle/js/parser/JavaScriptTranslator").JavaScriptTranslator;
     "com.oracle.truffle.js.parser.date.DateParser": typeof import("../types/com/oracle/truffle/js/parser/date/DateParser").DateParser;
@@ -9814,6 +9825,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.runtime.JSArguments": typeof import("../types/com/oracle/truffle/js/runtime/JSArguments").JSArguments;
     "com.oracle.truffle.js.runtime.JSConfig": typeof import("../types/com/oracle/truffle/js/runtime/JSConfig").JSConfig;
     "com.oracle.truffle.js.runtime.JSConsoleUtil": typeof import("../types/com/oracle/truffle/js/runtime/JSConsoleUtil").JSConsoleUtil;
+    "com.oracle.truffle.js.runtime.JSContext": typeof import("../types/com/oracle/truffle/js/runtime/JSContext").JSContext;
     "com.oracle.truffle.js.runtime.JSContext$BuiltinFunctionKey": typeof import("../types/com/oracle/truffle/js/runtime/JSContext$BuiltinFunctionKey").JSContext$BuiltinFunctionKey;
     "com.oracle.truffle.js.runtime.JSContext$SharedRootNode": typeof import("../types/com/oracle/truffle/js/runtime/JSContext$SharedRootNode").JSContext$SharedRootNode;
     "com.oracle.truffle.js.runtime.JSContextOptions": typeof import("../types/com/oracle/truffle/js/runtime/JSContextOptions").JSContextOptions;
@@ -9844,6 +9856,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.runtime.SafeIntegerGen$InteropLibraryExports": typeof import("../types/com/oracle/truffle/js/runtime/SafeIntegerGen$InteropLibraryExports").SafeIntegerGen$InteropLibraryExports;
     "com.oracle.truffle.js.runtime.SerializedData": typeof import("../types/com/oracle/truffle/js/runtime/SerializedData").SerializedData;
     "com.oracle.truffle.js.runtime.SerializedData$Type": typeof import("../types/com/oracle/truffle/js/runtime/SerializedData$Type").SerializedData$Type;
+    "com.oracle.truffle.js.runtime.Strings": typeof import("../types/com/oracle/truffle/js/runtime/Strings").Strings;
     "com.oracle.truffle.js.runtime.Symbol": typeof import("../types/com/oracle/truffle/js/runtime/Symbol").Symbol;
     "com.oracle.truffle.js.runtime.Symbol$IsIdenticalOrUndefined": typeof import("../types/com/oracle/truffle/js/runtime/Symbol$IsIdenticalOrUndefined").Symbol$IsIdenticalOrUndefined;
     "com.oracle.truffle.js.runtime.SymbolGen": typeof import("../types/com/oracle/truffle/js/runtime/SymbolGen").SymbolGen;
@@ -10468,6 +10481,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.js.runtime.util.TemporalConstants": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalConstants").TemporalConstants;
     "com.oracle.truffle.js.runtime.util.TemporalErrors": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalErrors").TemporalErrors;
     "com.oracle.truffle.js.runtime.util.TemporalParser": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalParser").TemporalParser;
+    "com.oracle.truffle.js.runtime.util.TemporalUtil": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalUtil").TemporalUtil;
     "com.oracle.truffle.js.runtime.util.TemporalUtil$AddDaysToZonedDateTimeResult": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalUtil$AddDaysToZonedDateTimeResult").TemporalUtil$AddDaysToZonedDateTimeResult;
     "com.oracle.truffle.js.runtime.util.TemporalUtil$Disambiguation": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalUtil$Disambiguation").TemporalUtil$Disambiguation;
     "com.oracle.truffle.js.runtime.util.TemporalUtil$FieldsType": typeof import("../types/com/oracle/truffle/js/runtime/util/TemporalUtil$FieldsType").TemporalUtil$FieldsType;
@@ -10507,6 +10521,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.polyglot.DefaultTopScopeGen$InteropLibraryExports": typeof import("../types/com/oracle/truffle/polyglot/DefaultTopScopeGen$InteropLibraryExports").DefaultTopScopeGen$InteropLibraryExports;
     "com.oracle.truffle.polyglot.EngineAccessor": typeof import("../types/com/oracle/truffle/polyglot/EngineAccessor").EngineAccessor;
     "com.oracle.truffle.polyglot.EngineAccessor$AbstractClassLoaderSupplier": typeof import("../types/com/oracle/truffle/polyglot/EngineAccessor$AbstractClassLoaderSupplier").EngineAccessor$AbstractClassLoaderSupplier;
+    "com.oracle.truffle.polyglot.EngineAccessor$EngineImpl": typeof import("../types/com/oracle/truffle/polyglot/EngineAccessor$EngineImpl").EngineAccessor$EngineImpl;
     "com.oracle.truffle.polyglot.EngineAccessor$GuardedExecutableNode": typeof import("../types/com/oracle/truffle/polyglot/EngineAccessor$GuardedExecutableNode").EngineAccessor$GuardedExecutableNode;
     "com.oracle.truffle.polyglot.EngineAccessor$ModulePathLoaderSupplier": typeof import("../types/com/oracle/truffle/polyglot/EngineAccessor$ModulePathLoaderSupplier").EngineAccessor$ModulePathLoaderSupplier;
     "com.oracle.truffle.polyglot.EngineAccessor$StrongClassLoaderSupplier": typeof import("../types/com/oracle/truffle/polyglot/EngineAccessor$StrongClassLoaderSupplier").EngineAccessor$StrongClassLoaderSupplier;
@@ -10579,6 +10594,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.polyglot.PolyglotContextConfig$FileSystemConfig": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextConfig$FileSystemConfig").PolyglotContextConfig$FileSystemConfig;
     "com.oracle.truffle.polyglot.PolyglotContextConfig$PreinitConfig": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextConfig$PreinitConfig").PolyglotContextConfig$PreinitConfig;
     "com.oracle.truffle.polyglot.PolyglotContextDispatch": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextDispatch").PolyglotContextDispatch;
+    "com.oracle.truffle.polyglot.PolyglotContextImpl": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextImpl").PolyglotContextImpl;
     "com.oracle.truffle.polyglot.PolyglotContextImpl$CancellationThreadLocalAction": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextImpl$CancellationThreadLocalAction").PolyglotContextImpl$CancellationThreadLocalAction;
     "com.oracle.truffle.polyglot.PolyglotContextImpl$ExitException": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextImpl$ExitException").PolyglotContextImpl$ExitException;
     "com.oracle.truffle.polyglot.PolyglotContextImpl$InterruptThreadLocalAction": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextImpl$InterruptThreadLocalAction").PolyglotContextImpl$InterruptThreadLocalAction;
@@ -10586,6 +10602,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.polyglot.PolyglotContextImpl$UncachedLocationNode": typeof import("../types/com/oracle/truffle/polyglot/PolyglotContextImpl$UncachedLocationNode").PolyglotContextImpl$UncachedLocationNode;
     "com.oracle.truffle.polyglot.PolyglotEngineDispatch": typeof import("../types/com/oracle/truffle/polyglot/PolyglotEngineDispatch").PolyglotEngineDispatch;
     "com.oracle.truffle.polyglot.PolyglotEngineException": typeof import("../types/com/oracle/truffle/polyglot/PolyglotEngineException").PolyglotEngineException;
+    "com.oracle.truffle.polyglot.PolyglotEngineImpl": typeof import("../types/com/oracle/truffle/polyglot/PolyglotEngineImpl").PolyglotEngineImpl;
     "com.oracle.truffle.polyglot.PolyglotEngineImpl$CancelExecution": typeof import("../types/com/oracle/truffle/polyglot/PolyglotEngineImpl$CancelExecution").PolyglotEngineImpl$CancelExecution;
     "com.oracle.truffle.polyglot.PolyglotEngineImpl$FinalizationResult": typeof import("../types/com/oracle/truffle/polyglot/PolyglotEngineImpl$FinalizationResult").PolyglotEngineImpl$FinalizationResult;
     "com.oracle.truffle.polyglot.PolyglotEngineImpl$InterruptExecution": typeof import("../types/com/oracle/truffle/polyglot/PolyglotEngineImpl$InterruptExecution").PolyglotEngineImpl$InterruptExecution;
@@ -10625,6 +10642,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.polyglot.PolyglotFunctionProxyHandlerFactory": typeof import("../types/com/oracle/truffle/polyglot/PolyglotFunctionProxyHandlerFactory").PolyglotFunctionProxyHandlerFactory;
     "com.oracle.truffle.polyglot.PolyglotFunctionProxyHandlerFactory$FunctionProxyNodeGen": typeof import("../types/com/oracle/truffle/polyglot/PolyglotFunctionProxyHandlerFactory$FunctionProxyNodeGen").PolyglotFunctionProxyHandlerFactory$FunctionProxyNodeGen;
     "com.oracle.truffle.polyglot.PolyglotHostAccess": typeof import("../types/com/oracle/truffle/polyglot/PolyglotHostAccess").PolyglotHostAccess;
+    "com.oracle.truffle.polyglot.PolyglotImpl": typeof import("../types/com/oracle/truffle/polyglot/PolyglotImpl").PolyglotImpl;
     "com.oracle.truffle.polyglot.PolyglotImpl$EmbedderFileSystemContext": typeof import("../types/com/oracle/truffle/polyglot/PolyglotImpl$EmbedderFileSystemContext").PolyglotImpl$EmbedderFileSystemContext;
     "com.oracle.truffle.polyglot.PolyglotImpl$LazyEncodings": typeof import("../types/com/oracle/truffle/polyglot/PolyglotImpl$LazyEncodings").PolyglotImpl$LazyEncodings;
     "com.oracle.truffle.polyglot.PolyglotInstrument": typeof import("../types/com/oracle/truffle/polyglot/PolyglotInstrument").PolyglotInstrument;
@@ -11014,6 +11032,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.regex.tregex.dfa.DFACaptureGroupLazyTransitionBuilder": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFACaptureGroupLazyTransitionBuilder").DFACaptureGroupLazyTransitionBuilder;
     "com.oracle.truffle.regex.tregex.dfa.DFACaptureGroupTransitionBuilder": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFACaptureGroupTransitionBuilder").DFACaptureGroupTransitionBuilder;
     "com.oracle.truffle.regex.tregex.dfa.DFACaptureGroupTransitionBuilder$PartialTransitionDebugInfo": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFACaptureGroupTransitionBuilder$PartialTransitionDebugInfo").DFACaptureGroupTransitionBuilder$PartialTransitionDebugInfo;
+    "com.oracle.truffle.regex.tregex.dfa.DFAGenerator": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFAGenerator").DFAGenerator;
     "com.oracle.truffle.regex.tregex.dfa.DFAGenerator$BQOpBucket": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFAGenerator$BQOpBucket").DFAGenerator$BQOpBucket;
     "com.oracle.truffle.regex.tregex.dfa.DFAGenerator$QuantifierMappingBuilder": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFAGenerator$QuantifierMappingBuilder").DFAGenerator$QuantifierMappingBuilder;
     "com.oracle.truffle.regex.tregex.dfa.DFAGenerator$StateMapping": typeof import("../types/com/oracle/truffle/regex/tregex/dfa/DFAGenerator$StateMapping").DFAGenerator$StateMapping;
@@ -11198,6 +11217,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.regex.tregex.parser.ast.PositionAssertion": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/PositionAssertion").PositionAssertion;
     "com.oracle.truffle.regex.tregex.parser.ast.PositionAssertion$Type": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/PositionAssertion$Type").PositionAssertion$Type;
     "com.oracle.truffle.regex.tregex.parser.ast.QuantifiableTerm": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/QuantifiableTerm").QuantifiableTerm;
+    "com.oracle.truffle.regex.tregex.parser.ast.RegexAST": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/RegexAST").RegexAST;
     "com.oracle.truffle.regex.tregex.parser.ast.RegexASTNode": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/RegexASTNode").RegexASTNode;
     "com.oracle.truffle.regex.tregex.parser.ast.RegexASTRootNode": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/RegexASTRootNode").RegexASTRootNode;
     "com.oracle.truffle.regex.tregex.parser.ast.RegexASTSubtreeRootNode": typeof import("../types/com/oracle/truffle/regex/tregex/parser/ast/RegexASTSubtreeRootNode").RegexASTSubtreeRootNode;
@@ -11589,6 +11609,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.tools.dap.server.BreakpointsHandler": typeof import("../types/com/oracle/truffle/tools/dap/server/BreakpointsHandler").BreakpointsHandler;
     "com.oracle.truffle.tools.dap.server.BreakpointsHandler$ResolvedHandler": typeof import("../types/com/oracle/truffle/tools/dap/server/BreakpointsHandler$ResolvedHandler").BreakpointsHandler$ResolvedHandler;
     "com.oracle.truffle.tools.dap.server.BreakpointsHandler$SectionsCollector": typeof import("../types/com/oracle/truffle/tools/dap/server/BreakpointsHandler$SectionsCollector").BreakpointsHandler$SectionsCollector;
+    "com.oracle.truffle.tools.dap.server.DebugProtocolServerImpl": typeof import("../types/com/oracle/truffle/tools/dap/server/DebugProtocolServerImpl").DebugProtocolServerImpl;
     "com.oracle.truffle.tools.dap.server.DebugProtocolServerImpl$AllContextsCancel": typeof import("../types/com/oracle/truffle/tools/dap/server/DebugProtocolServerImpl$AllContextsCancel").DebugProtocolServerImpl$AllContextsCancel;
     "com.oracle.truffle.tools.dap.server.DebugProtocolServerImpl$ConsoleOutputListener": typeof import("../types/com/oracle/truffle/tools/dap/server/DebugProtocolServerImpl$ConsoleOutputListener").DebugProtocolServerImpl$ConsoleOutputListener;
     "com.oracle.truffle.tools.dap.server.DebugProtocolServerImpl$OneTimeExecutor": typeof import("../types/com/oracle/truffle/tools/dap/server/DebugProtocolServerImpl$OneTimeExecutor").DebugProtocolServerImpl$OneTimeExecutor;
@@ -11638,6 +11659,7 @@ interface JavaTypeRegistry {
     "com.oracle.truffle.tools.dap.types.DataBreakpointInfoArguments": typeof import("../types/com/oracle/truffle/tools/dap/types/DataBreakpointInfoArguments").DataBreakpointInfoArguments;
     "com.oracle.truffle.tools.dap.types.DataBreakpointInfoResponse": typeof import("../types/com/oracle/truffle/tools/dap/types/DataBreakpointInfoResponse").DataBreakpointInfoResponse;
     "com.oracle.truffle.tools.dap.types.DataBreakpointInfoResponse$ResponseBody": typeof import("../types/com/oracle/truffle/tools/dap/types/DataBreakpointInfoResponse$ResponseBody").DataBreakpointInfoResponse$ResponseBody;
+    "com.oracle.truffle.tools.dap.types.DebugProtocolServer": typeof import("../types/com/oracle/truffle/tools/dap/types/DebugProtocolServer").DebugProtocolServer;
     "com.oracle.truffle.tools.dap.types.DebugProtocolServer$ExceptionWithMessage": typeof import("../types/com/oracle/truffle/tools/dap/types/DebugProtocolServer$ExceptionWithMessage").DebugProtocolServer$ExceptionWithMessage;
     "com.oracle.truffle.tools.dap.types.DebugProtocolServer$Session": typeof import("../types/com/oracle/truffle/tools/dap/types/DebugProtocolServer$Session").DebugProtocolServer$Session;
     "com.oracle.truffle.tools.dap.types.DisassembleArguments": typeof import("../types/com/oracle/truffle/tools/dap/types/DisassembleArguments").DisassembleArguments;
@@ -12612,6 +12634,7 @@ interface JavaTypeRegistry {
     "com.sun.jna.platform.win32.Variant$VARIANT": typeof import("../types/com/sun/jna/platform/win32/Variant$VARIANT").Variant$VARIANT;
     "com.sun.jna.platform.win32.Variant$VARIANT$ByReference": typeof import("../types/com/sun/jna/platform/win32/Variant$VARIANT$ByReference").Variant$VARIANT$ByReference;
     "com.sun.jna.platform.win32.Variant$VARIANT$_VARIANT": typeof import("../types/com/sun/jna/platform/win32/Variant$VARIANT$_VARIANT").Variant$VARIANT$_VARIANT;
+    "com.sun.jna.platform.win32.Variant$VARIANT$_VARIANT$__VARIANT": typeof import("../types/com/sun/jna/platform/win32/Variant$VARIANT$_VARIANT$__VARIANT").Variant$VARIANT$_VARIANT$__VARIANT;
     "com.sun.jna.platform.win32.Variant$VARIANT$_VARIANT$__VARIANT$BRECORD": typeof import("../types/com/sun/jna/platform/win32/Variant$VARIANT$_VARIANT$__VARIANT$BRECORD").Variant$VARIANT$_VARIANT$__VARIANT$BRECORD;
     "com.sun.jna.platform.win32.Variant$VariantArg": typeof import("../types/com/sun/jna/platform/win32/Variant$VariantArg").Variant$VariantArg;
     "com.sun.jna.platform.win32.Variant$VariantArg$ByReference": typeof import("../types/com/sun/jna/platform/win32/Variant$VariantArg$ByReference").Variant$VariantArg$ByReference;
@@ -13670,6 +13693,7 @@ interface JavaTypeRegistry {
     "com.viaversion.viaversion.api.minecraft.data.EmptyStructuredData": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/EmptyStructuredData").EmptyStructuredData;
     "com.viaversion.viaversion.api.minecraft.data.FilledStructuredData": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/FilledStructuredData").FilledStructuredData;
     "com.viaversion.viaversion.api.minecraft.data.StructuredDataContainer": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/StructuredDataContainer").StructuredDataContainer;
+    "com.viaversion.viaversion.api.minecraft.data.StructuredDataKey": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/StructuredDataKey").StructuredDataKey;
     "com.viaversion.viaversion.api.minecraft.data.predicate.DataComponentMatchers": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/predicate/DataComponentMatchers").DataComponentMatchers;
     "com.viaversion.viaversion.api.minecraft.data.predicate.DataComponentMatchers$DataComponentMatchersType": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/predicate/DataComponentMatchers$DataComponentMatchersType").DataComponentMatchers$DataComponentMatchersType;
     "com.viaversion.viaversion.api.minecraft.data.predicate.DataComponentPredicate": typeof import("../types/com/viaversion/viaversion/api/minecraft/data/predicate/DataComponentPredicate").DataComponentPredicate;
@@ -13860,6 +13884,7 @@ interface JavaTypeRegistry {
     "com.viaversion.viaversion.api.type.OptionalType": typeof import("../types/com/viaversion/viaversion/api/type/OptionalType").OptionalType;
     "com.viaversion.viaversion.api.type.TransformingType": typeof import("../types/com/viaversion/viaversion/api/type/TransformingType").TransformingType;
     "com.viaversion.viaversion.api.type.Type": typeof import("../types/com/viaversion/viaversion/api/type/Type").Type;
+    "com.viaversion.viaversion.api.type.Types": typeof import("../types/com/viaversion/viaversion/api/type/Types").Types;
     "com.viaversion.viaversion.api.type.types.ArrayType": typeof import("../types/com/viaversion/viaversion/api/type/types/ArrayType").ArrayType;
     "com.viaversion.viaversion.api.type.types.BitSetType": typeof import("../types/com/viaversion/viaversion/api/type/types/BitSetType").BitSetType;
     "com.viaversion.viaversion.api.type.types.BooleanArrayType": typeof import("../types/com/viaversion/viaversion/api/type/types/BooleanArrayType").BooleanArrayType;
@@ -15203,6 +15228,7 @@ interface JavaTypeRegistry {
     "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.packet.ServerboundConfigurationPackets1_20_5": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/packet/ServerboundConfigurationPackets1_20_5").ServerboundConfigurationPackets1_20_5;
     "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.packet.ServerboundPackets1_20_5": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/packet/ServerboundPackets1_20_5").ServerboundPackets1_20_5;
     "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.rewriter.BlockItemPacketRewriter1_20_5": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/BlockItemPacketRewriter1_20_5").BlockItemPacketRewriter1_20_5;
+    "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.rewriter.ComponentRewriter1_20_5": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ComponentRewriter1_20_5").ComponentRewriter1_20_5;
     "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.rewriter.ComponentRewriter1_20_5$ConverterPair": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ComponentRewriter1_20_5$ConverterPair").ComponentRewriter1_20_5$ConverterPair;
     "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.rewriter.EntityPacketRewriter1_20_5": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/EntityPacketRewriter1_20_5").EntityPacketRewriter1_20_5;
     "com.viaversion.viaversion.protocols.v1_20_3to1_20_5.rewriter.ParticleRewriter1_20_5": typeof import("../types/com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ParticleRewriter1_20_5").ParticleRewriter1_20_5;
@@ -15644,6 +15670,7 @@ interface JavaTypeRegistry {
     "eu.pb4.placeholders.impl.textparser.tagreg.SimpleTagRegistry": typeof import("../types/eu/pb4/placeholders/impl/textparser/tagreg/SimpleTagRegistry").SimpleTagRegistry;
     "eu.pb4.placeholders.impl.textparser.tagreg.WrappingTagRegistry": typeof import("../types/eu/pb4/placeholders/impl/textparser/tagreg/WrappingTagRegistry").WrappingTagRegistry;
     "io.github.douira.glsl_transformer.GLSLLexer": typeof import("../types/io/github/douira/glsl_transformer/GLSLLexer").GLSLLexer;
+    "io.github.douira.glsl_transformer.GLSLParser": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser").GLSLParser;
     "io.github.douira.glsl_transformer.GLSLParser$AdditiveExpressionContext": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser$AdditiveExpressionContext").GLSLParser$AdditiveExpressionContext;
     "io.github.douira.glsl_transformer.GLSLParser$ArrayAccessExpressionContext": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser$ArrayAccessExpressionContext").GLSLParser$ArrayAccessExpressionContext;
     "io.github.douira.glsl_transformer.GLSLParser$ArraySpecifierContext": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser$ArraySpecifierContext").GLSLParser$ArraySpecifierContext;
@@ -15733,6 +15760,8 @@ interface JavaTypeRegistry {
     "io.github.douira.glsl_transformer.GLSLParser$VariableDeclarationContext": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser$VariableDeclarationContext").GLSLParser$VariableDeclarationContext;
     "io.github.douira.glsl_transformer.GLSLParser$VersionStatementContext": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser$VersionStatementContext").GLSLParser$VersionStatementContext;
     "io.github.douira.glsl_transformer.GLSLParser$WhileStatementContext": typeof import("../types/io/github/douira/glsl_transformer/GLSLParser$WhileStatementContext").GLSLParser$WhileStatementContext;
+    "io.github.douira.glsl_transformer.GLSLParserBaseListener": typeof import("../types/io/github/douira/glsl_transformer/GLSLParserBaseListener").GLSLParserBaseListener;
+    "io.github.douira.glsl_transformer.GLSLParserBaseVisitor": typeof import("../types/io/github/douira/glsl_transformer/GLSLParserBaseVisitor").GLSLParserBaseVisitor;
     "io.github.douira.glsl_transformer.ast.data.TypeUtil": typeof import("../types/io/github/douira/glsl_transformer/ast/data/TypeUtil").TypeUtil;
     "io.github.douira.glsl_transformer.ast.data.TypedTreeCache$CacheKey": typeof import("../types/io/github/douira/glsl_transformer/ast/data/TypedTreeCache$CacheKey").TypedTreeCache$CacheKey;
     "io.github.douira.glsl_transformer.ast.node.Identifier": typeof import("../types/io/github/douira/glsl_transformer/ast/node/Identifier").Identifier;
@@ -15891,6 +15920,7 @@ interface JavaTypeRegistry {
     "io.github.douira.glsl_transformer.ast.node.type.struct.StructDeclarator": typeof import("../types/io/github/douira/glsl_transformer/ast/node/type/struct/StructDeclarator").StructDeclarator;
     "io.github.douira.glsl_transformer.ast.node.type.struct.StructMember": typeof import("../types/io/github/douira/glsl_transformer/ast/node/type/struct/StructMember").StructMember;
     "io.github.douira.glsl_transformer.ast.node.type.struct.StructSpecifier": typeof import("../types/io/github/douira/glsl_transformer/ast/node/type/struct/StructSpecifier").StructSpecifier;
+    "io.github.douira.glsl_transformer.ast.print.ASTPrinter": typeof import("../types/io/github/douira/glsl_transformer/ast/print/ASTPrinter").ASTPrinter;
     "io.github.douira.glsl_transformer.ast.print.ASTPrinterBase": typeof import("../types/io/github/douira/glsl_transformer/ast/print/ASTPrinterBase").ASTPrinterBase;
     "io.github.douira.glsl_transformer.ast.print.CompactPrinter": typeof import("../types/io/github/douira/glsl_transformer/ast/print/CompactPrinter").CompactPrinter;
     "io.github.douira.glsl_transformer.ast.print.DelegateTokenProcessor": typeof import("../types/io/github/douira/glsl_transformer/ast/print/DelegateTokenProcessor").DelegateTokenProcessor;
@@ -15927,6 +15957,7 @@ interface JavaTypeRegistry {
     "io.github.douira.glsl_transformer.ast.query.match.Matcher$ClassedPredicateWildcard": typeof import("../types/io/github/douira/glsl_transformer/ast/query/match/Matcher$ClassedPredicateWildcard").Matcher$ClassedPredicateWildcard;
     "io.github.douira.glsl_transformer.ast.query.match.Matcher$NodeWildcard": typeof import("../types/io/github/douira/glsl_transformer/ast/query/match/Matcher$NodeWildcard").Matcher$NodeWildcard;
     "io.github.douira.glsl_transformer.ast.query.match.Matcher$PredicateWildcard": typeof import("../types/io/github/douira/glsl_transformer/ast/query/match/Matcher$PredicateWildcard").Matcher$PredicateWildcard;
+    "io.github.douira.glsl_transformer.ast.transform.ASTBuilder": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/ASTBuilder").ASTBuilder;
     "io.github.douira.glsl_transformer.ast.transform.ASTInjectionPoint": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/ASTInjectionPoint").ASTInjectionPoint;
     "io.github.douira.glsl_transformer.ast.transform.ASTParser": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/ASTParser").ASTParser;
     "io.github.douira.glsl_transformer.ast.transform.ASTParser$ASTCacheStrategy": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/ASTParser$ASTCacheStrategy").ASTParser$ASTCacheStrategy;
@@ -15943,6 +15974,9 @@ interface JavaTypeRegistry {
     "io.github.douira.glsl_transformer.ast.transform.Template": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/Template").Template;
     "io.github.douira.glsl_transformer.ast.transform.TransformationException": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/TransformationException").TransformationException;
     "io.github.douira.glsl_transformer.ast.transform.TriASTTransformer": typeof import("../types/io/github/douira/glsl_transformer/ast/transform/TriASTTransformer").TriASTTransformer;
+    "io.github.douira.glsl_transformer.ast.traversal.ASTBaseVisitor": typeof import("../types/io/github/douira/glsl_transformer/ast/traversal/ASTBaseVisitor").ASTBaseVisitor;
+    "io.github.douira.glsl_transformer.ast.traversal.ASTListenerVisitor": typeof import("../types/io/github/douira/glsl_transformer/ast/traversal/ASTListenerVisitor").ASTListenerVisitor;
+    "io.github.douira.glsl_transformer.ast.traversal.ASTVoidVisitor": typeof import("../types/io/github/douira/glsl_transformer/ast/traversal/ASTVoidVisitor").ASTVoidVisitor;
     "io.github.douira.glsl_transformer.ast.traversal.ASTWalker": typeof import("../types/io/github/douira/glsl_transformer/ast/traversal/ASTWalker").ASTWalker;
     "io.github.douira.glsl_transformer.parser.CachingParser": typeof import("../types/io/github/douira/glsl_transformer/parser/CachingParser").CachingParser;
     "io.github.douira.glsl_transformer.parser.CachingParser$CacheContents": typeof import("../types/io/github/douira/glsl_transformer/parser/CachingParser$CacheContents").CachingParser$CacheContents;
@@ -17603,6 +17637,15 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.PriorityQueues$SynchronizedPriorityQueue": typeof import("../types/it/unimi/dsi/fastutil/PriorityQueues$SynchronizedPriorityQueue").PriorityQueues$SynchronizedPriorityQueue;
     "it.unimi.dsi.fastutil.SafeMath": typeof import("../types/it/unimi/dsi/fastutil/SafeMath").SafeMath;
     "it.unimi.dsi.fastutil.booleans.AbstractBoolean2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2BooleanFunction").AbstractBoolean2BooleanFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2ByteFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2ByteFunction").AbstractBoolean2ByteFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2CharFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2CharFunction").AbstractBoolean2CharFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2DoubleFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2DoubleFunction").AbstractBoolean2DoubleFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2FloatFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2FloatFunction").AbstractBoolean2FloatFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2IntFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2IntFunction").AbstractBoolean2IntFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2LongFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2LongFunction").AbstractBoolean2LongFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2ObjectFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2ObjectFunction").AbstractBoolean2ObjectFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2ReferenceFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2ReferenceFunction").AbstractBoolean2ReferenceFunction;
+    "it.unimi.dsi.fastutil.booleans.AbstractBoolean2ShortFunction": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBoolean2ShortFunction").AbstractBoolean2ShortFunction;
     "it.unimi.dsi.fastutil.booleans.AbstractBooleanBidirectionalIterator": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBooleanBidirectionalIterator").AbstractBooleanBidirectionalIterator;
     "it.unimi.dsi.fastutil.booleans.AbstractBooleanBigList$IndexBasedSpliterator": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBooleanBigList$IndexBasedSpliterator").AbstractBooleanBigList$IndexBasedSpliterator;
     "it.unimi.dsi.fastutil.booleans.AbstractBooleanBigListIterator": typeof import("../types/it/unimi/dsi/fastutil/booleans/AbstractBooleanBigListIterator").AbstractBooleanBigListIterator;
@@ -17693,6 +17736,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.booleans.BooleanSpliterators$SpliteratorFromIteratorWithComparator": typeof import("../types/it/unimi/dsi/fastutil/booleans/BooleanSpliterators$SpliteratorFromIteratorWithComparator").BooleanSpliterators$SpliteratorFromIteratorWithComparator;
     "it.unimi.dsi.fastutil.booleans.BooleanSpliterators$SpliteratorWrapper": typeof import("../types/it/unimi/dsi/fastutil/booleans/BooleanSpliterators$SpliteratorWrapper").BooleanSpliterators$SpliteratorWrapper;
     "it.unimi.dsi.fastutil.booleans.BooleanSpliterators$SpliteratorWrapperWithComparator": typeof import("../types/it/unimi/dsi/fastutil/booleans/BooleanSpliterators$SpliteratorWrapperWithComparator").BooleanSpliterators$SpliteratorWrapperWithComparator;
+    "it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/bytes/AbstractByte2BooleanFunction").AbstractByte2BooleanFunction;
     "it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/bytes/AbstractByte2BooleanMap$BasicEntry").AbstractByte2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/bytes/AbstractByte2BooleanSortedMap$KeySetIterator").AbstractByte2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/bytes/AbstractByte2BooleanSortedMap$ValuesIterator").AbstractByte2BooleanSortedMap$ValuesIterator;
@@ -17750,7 +17794,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanArrayMap$MapEntry").Byte2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanFunctions").Byte2BooleanFunctions;
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanFunctions$EmptyFunction").Byte2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanFunctions$PrimitiveFunction").Byte2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanFunctions$Singleton").Byte2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanFunctions$SynchronizedFunction").Byte2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanFunctions$UnmodifiableFunction").Byte2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanLinkedOpenHashMap$EntryIterator").Byte2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.bytes.Byte2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/bytes/Byte2BooleanLinkedOpenHashMap$FastEntryIterator").Byte2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -18300,6 +18346,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.bytes.ByteSpliterators$SpliteratorFromIteratorWithComparator": typeof import("../types/it/unimi/dsi/fastutil/bytes/ByteSpliterators$SpliteratorFromIteratorWithComparator").ByteSpliterators$SpliteratorFromIteratorWithComparator;
     "it.unimi.dsi.fastutil.bytes.ByteSpliterators$SpliteratorWrapper": typeof import("../types/it/unimi/dsi/fastutil/bytes/ByteSpliterators$SpliteratorWrapper").ByteSpliterators$SpliteratorWrapper;
     "it.unimi.dsi.fastutil.bytes.ByteSpliterators$SpliteratorWrapperWithComparator": typeof import("../types/it/unimi/dsi/fastutil/bytes/ByteSpliterators$SpliteratorWrapperWithComparator").ByteSpliterators$SpliteratorWrapperWithComparator;
+    "it.unimi.dsi.fastutil.chars.AbstractChar2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/chars/AbstractChar2BooleanFunction").AbstractChar2BooleanFunction;
     "it.unimi.dsi.fastutil.chars.AbstractChar2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/chars/AbstractChar2BooleanMap$BasicEntry").AbstractChar2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.chars.AbstractChar2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/chars/AbstractChar2BooleanSortedMap$KeySetIterator").AbstractChar2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.chars.AbstractChar2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/chars/AbstractChar2BooleanSortedMap$ValuesIterator").AbstractChar2BooleanSortedMap$ValuesIterator;
@@ -18357,7 +18404,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.chars.Char2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanArrayMap$MapEntry").Char2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.chars.Char2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanFunctions").Char2BooleanFunctions;
     "it.unimi.dsi.fastutil.chars.Char2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanFunctions$EmptyFunction").Char2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.chars.Char2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanFunctions$PrimitiveFunction").Char2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.chars.Char2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanFunctions$Singleton").Char2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.chars.Char2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanFunctions$SynchronizedFunction").Char2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.chars.Char2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanFunctions$UnmodifiableFunction").Char2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.chars.Char2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanLinkedOpenHashMap$EntryIterator").Char2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.chars.Char2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/chars/Char2BooleanLinkedOpenHashMap$FastEntryIterator").Char2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -18907,6 +18956,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.chars.CharSpliterators$SpliteratorFromIteratorWithComparator": typeof import("../types/it/unimi/dsi/fastutil/chars/CharSpliterators$SpliteratorFromIteratorWithComparator").CharSpliterators$SpliteratorFromIteratorWithComparator;
     "it.unimi.dsi.fastutil.chars.CharSpliterators$SpliteratorWrapper": typeof import("../types/it/unimi/dsi/fastutil/chars/CharSpliterators$SpliteratorWrapper").CharSpliterators$SpliteratorWrapper;
     "it.unimi.dsi.fastutil.chars.CharSpliterators$SpliteratorWrapperWithComparator": typeof import("../types/it/unimi/dsi/fastutil/chars/CharSpliterators$SpliteratorWrapperWithComparator").CharSpliterators$SpliteratorWrapperWithComparator;
+    "it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/AbstractDouble2BooleanFunction").AbstractDouble2BooleanFunction;
     "it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/doubles/AbstractDouble2BooleanMap$BasicEntry").AbstractDouble2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/doubles/AbstractDouble2BooleanSortedMap$KeySetIterator").AbstractDouble2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/doubles/AbstractDouble2BooleanSortedMap$ValuesIterator").AbstractDouble2BooleanSortedMap$ValuesIterator;
@@ -18964,7 +19014,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.doubles.Double2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanArrayMap$MapEntry").Double2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.doubles.Double2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanFunctions").Double2BooleanFunctions;
     "it.unimi.dsi.fastutil.doubles.Double2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanFunctions$EmptyFunction").Double2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.doubles.Double2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanFunctions$PrimitiveFunction").Double2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.doubles.Double2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanFunctions$Singleton").Double2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.doubles.Double2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanFunctions$SynchronizedFunction").Double2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.doubles.Double2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanFunctions$UnmodifiableFunction").Double2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.doubles.Double2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanLinkedOpenHashMap$EntryIterator").Double2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.doubles.Double2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2BooleanLinkedOpenHashMap$FastEntryIterator").Double2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -19324,6 +19376,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.doubles.Double2ReferenceFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceFunctions$EmptyFunction").Double2ReferenceFunctions$EmptyFunction;
     "it.unimi.dsi.fastutil.doubles.Double2ReferenceFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceFunctions$PrimitiveFunction").Double2ReferenceFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.doubles.Double2ReferenceFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceFunctions$Singleton").Double2ReferenceFunctions$Singleton;
+    "it.unimi.dsi.fastutil.doubles.Double2ReferenceFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceFunctions$SynchronizedFunction").Double2ReferenceFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.doubles.Double2ReferenceFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceFunctions$UnmodifiableFunction").Double2ReferenceFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.doubles.Double2ReferenceLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceLinkedOpenHashMap$EntryIterator").Double2ReferenceLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.doubles.Double2ReferenceLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/doubles/Double2ReferenceLinkedOpenHashMap$FastEntryIterator").Double2ReferenceLinkedOpenHashMap$FastEntryIterator;
@@ -19523,6 +19576,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.doubles.DoubleSpliterators$SpliteratorFromIteratorWithComparator": typeof import("../types/it/unimi/dsi/fastutil/doubles/DoubleSpliterators$SpliteratorFromIteratorWithComparator").DoubleSpliterators$SpliteratorFromIteratorWithComparator;
     "it.unimi.dsi.fastutil.doubles.DoubleSpliterators$SpliteratorWrapper": typeof import("../types/it/unimi/dsi/fastutil/doubles/DoubleSpliterators$SpliteratorWrapper").DoubleSpliterators$SpliteratorWrapper;
     "it.unimi.dsi.fastutil.doubles.DoubleSpliterators$SpliteratorWrapperWithComparator": typeof import("../types/it/unimi/dsi/fastutil/doubles/DoubleSpliterators$SpliteratorWrapperWithComparator").DoubleSpliterators$SpliteratorWrapperWithComparator;
+    "it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/floats/AbstractFloat2BooleanFunction").AbstractFloat2BooleanFunction;
     "it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/floats/AbstractFloat2BooleanMap$BasicEntry").AbstractFloat2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/floats/AbstractFloat2BooleanSortedMap$KeySetIterator").AbstractFloat2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/floats/AbstractFloat2BooleanSortedMap$ValuesIterator").AbstractFloat2BooleanSortedMap$ValuesIterator;
@@ -19580,7 +19634,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.floats.Float2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanArrayMap$MapEntry").Float2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.floats.Float2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanFunctions").Float2BooleanFunctions;
     "it.unimi.dsi.fastutil.floats.Float2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanFunctions$EmptyFunction").Float2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.floats.Float2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanFunctions$PrimitiveFunction").Float2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.floats.Float2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanFunctions$Singleton").Float2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.floats.Float2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanFunctions$SynchronizedFunction").Float2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.floats.Float2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanFunctions$UnmodifiableFunction").Float2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.floats.Float2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanLinkedOpenHashMap$EntryIterator").Float2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.floats.Float2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/floats/Float2BooleanLinkedOpenHashMap$FastEntryIterator").Float2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -20136,6 +20192,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.floats.FloatSpliterators$SpliteratorFromIteratorWithComparator": typeof import("../types/it/unimi/dsi/fastutil/floats/FloatSpliterators$SpliteratorFromIteratorWithComparator").FloatSpliterators$SpliteratorFromIteratorWithComparator;
     "it.unimi.dsi.fastutil.floats.FloatSpliterators$SpliteratorWrapper": typeof import("../types/it/unimi/dsi/fastutil/floats/FloatSpliterators$SpliteratorWrapper").FloatSpliterators$SpliteratorWrapper;
     "it.unimi.dsi.fastutil.floats.FloatSpliterators$SpliteratorWrapperWithComparator": typeof import("../types/it/unimi/dsi/fastutil/floats/FloatSpliterators$SpliteratorWrapperWithComparator").FloatSpliterators$SpliteratorWrapperWithComparator;
+    "it.unimi.dsi.fastutil.ints.AbstractInt2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/ints/AbstractInt2BooleanFunction").AbstractInt2BooleanFunction;
     "it.unimi.dsi.fastutil.ints.AbstractInt2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/ints/AbstractInt2BooleanMap$BasicEntry").AbstractInt2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.ints.AbstractInt2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/ints/AbstractInt2BooleanSortedMap$KeySetIterator").AbstractInt2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.ints.AbstractInt2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/ints/AbstractInt2BooleanSortedMap$ValuesIterator").AbstractInt2BooleanSortedMap$ValuesIterator;
@@ -20193,7 +20250,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.ints.Int2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanArrayMap$MapEntry").Int2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.ints.Int2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanFunctions").Int2BooleanFunctions;
     "it.unimi.dsi.fastutil.ints.Int2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanFunctions$EmptyFunction").Int2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.ints.Int2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanFunctions$PrimitiveFunction").Int2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.ints.Int2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanFunctions$Singleton").Int2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.ints.Int2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanFunctions$SynchronizedFunction").Int2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.ints.Int2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanFunctions$UnmodifiableFunction").Int2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.ints.Int2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanLinkedOpenHashMap$EntryIterator").Int2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.ints.Int2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/ints/Int2BooleanLinkedOpenHashMap$FastEntryIterator").Int2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -20783,6 +20842,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.io.TextIO$IntReaderWrapper": typeof import("../types/it/unimi/dsi/fastutil/io/TextIO$IntReaderWrapper").TextIO$IntReaderWrapper;
     "it.unimi.dsi.fastutil.io.TextIO$LongReaderWrapper": typeof import("../types/it/unimi/dsi/fastutil/io/TextIO$LongReaderWrapper").TextIO$LongReaderWrapper;
     "it.unimi.dsi.fastutil.io.TextIO$ShortReaderWrapper": typeof import("../types/it/unimi/dsi/fastutil/io/TextIO$ShortReaderWrapper").TextIO$ShortReaderWrapper;
+    "it.unimi.dsi.fastutil.longs.AbstractLong2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/longs/AbstractLong2BooleanFunction").AbstractLong2BooleanFunction;
     "it.unimi.dsi.fastutil.longs.AbstractLong2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/longs/AbstractLong2BooleanMap$BasicEntry").AbstractLong2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.longs.AbstractLong2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/longs/AbstractLong2BooleanSortedMap$KeySetIterator").AbstractLong2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.longs.AbstractLong2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/longs/AbstractLong2BooleanSortedMap$ValuesIterator").AbstractLong2BooleanSortedMap$ValuesIterator;
@@ -20840,7 +20900,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.longs.Long2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanArrayMap$MapEntry").Long2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.longs.Long2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanFunctions").Long2BooleanFunctions;
     "it.unimi.dsi.fastutil.longs.Long2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanFunctions$EmptyFunction").Long2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.longs.Long2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanFunctions$PrimitiveFunction").Long2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.longs.Long2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanFunctions$Singleton").Long2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.longs.Long2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanFunctions$SynchronizedFunction").Long2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.longs.Long2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanFunctions$UnmodifiableFunction").Long2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.longs.Long2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanLinkedOpenHashMap$EntryIterator").Long2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.longs.Long2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/longs/Long2BooleanLinkedOpenHashMap$FastEntryIterator").Long2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -21400,6 +21462,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.longs.LongSpliterators$SpliteratorFromIteratorWithComparator": typeof import("../types/it/unimi/dsi/fastutil/longs/LongSpliterators$SpliteratorFromIteratorWithComparator").LongSpliterators$SpliteratorFromIteratorWithComparator;
     "it.unimi.dsi.fastutil.longs.LongSpliterators$SpliteratorWrapper": typeof import("../types/it/unimi/dsi/fastutil/longs/LongSpliterators$SpliteratorWrapper").LongSpliterators$SpliteratorWrapper;
     "it.unimi.dsi.fastutil.longs.LongSpliterators$SpliteratorWrapperWithComparator": typeof import("../types/it/unimi/dsi/fastutil/longs/LongSpliterators$SpliteratorWrapperWithComparator").LongSpliterators$SpliteratorWrapperWithComparator;
+    "it.unimi.dsi.fastutil.objects.AbstractObject2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObject2BooleanFunction").AbstractObject2BooleanFunction;
     "it.unimi.dsi.fastutil.objects.AbstractObject2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObject2BooleanMap$BasicEntry").AbstractObject2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.objects.AbstractObject2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObject2BooleanSortedMap$KeySetIterator").AbstractObject2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.objects.AbstractObject2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObject2BooleanSortedMap$ValuesIterator").AbstractObject2BooleanSortedMap$ValuesIterator;
@@ -21446,6 +21509,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.objects.AbstractObjectList$IndexBasedSpliterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObjectList$IndexBasedSpliterator").AbstractObjectList$IndexBasedSpliterator;
     "it.unimi.dsi.fastutil.objects.AbstractObjectListIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObjectListIterator").AbstractObjectListIterator;
     "it.unimi.dsi.fastutil.objects.AbstractObjectSpliterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractObjectSpliterator").AbstractObjectSpliterator;
+    "it.unimi.dsi.fastutil.objects.AbstractReference2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractReference2BooleanFunction").AbstractReference2BooleanFunction;
     "it.unimi.dsi.fastutil.objects.AbstractReference2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractReference2BooleanMap$BasicEntry").AbstractReference2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.objects.AbstractReference2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractReference2BooleanSortedMap$KeySetIterator").AbstractReference2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.objects.AbstractReference2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/AbstractReference2BooleanSortedMap$ValuesIterator").AbstractReference2BooleanSortedMap$ValuesIterator;
@@ -21495,7 +21559,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.objects.Object2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanArrayMap$MapEntry").Object2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.objects.Object2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanFunctions").Object2BooleanFunctions;
     "it.unimi.dsi.fastutil.objects.Object2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanFunctions$EmptyFunction").Object2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.objects.Object2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanFunctions$PrimitiveFunction").Object2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.objects.Object2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanFunctions$Singleton").Object2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.objects.Object2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanFunctions$SynchronizedFunction").Object2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.objects.Object2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanFunctions$UnmodifiableFunction").Object2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.objects.Object2BooleanLinkedOpenCustomHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanLinkedOpenCustomHashMap$EntryIterator").Object2BooleanLinkedOpenCustomHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.objects.Object2BooleanLinkedOpenCustomHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/Object2BooleanLinkedOpenCustomHashMap$FastEntryIterator").Object2BooleanLinkedOpenCustomHashMap$FastEntryIterator;
@@ -22100,7 +22166,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.objects.Reference2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanArrayMap$MapEntry").Reference2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanFunctions").Reference2BooleanFunctions;
     "it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanFunctions$EmptyFunction").Reference2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanFunctions$PrimitiveFunction").Reference2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanFunctions$Singleton").Reference2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanFunctions$SynchronizedFunction").Reference2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanFunctions$UnmodifiableFunction").Reference2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.objects.Reference2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanLinkedOpenHashMap$EntryIterator").Reference2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.objects.Reference2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2BooleanLinkedOpenHashMap$FastEntryIterator").Reference2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -22205,6 +22273,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleFunctions$EmptyFunction").Reference2DoubleFunctions$EmptyFunction;
     "it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleFunctions$PrimitiveFunction").Reference2DoubleFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleFunctions$Singleton").Reference2DoubleFunctions$Singleton;
+    "it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleFunctions$SynchronizedFunction").Reference2DoubleFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleFunctions$UnmodifiableFunction").Reference2DoubleFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.objects.Reference2DoubleLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleLinkedOpenHashMap$EntryIterator").Reference2DoubleLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.objects.Reference2DoubleLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/objects/Reference2DoubleLinkedOpenHashMap$FastEntryIterator").Reference2DoubleLinkedOpenHashMap$FastEntryIterator;
@@ -22477,6 +22546,7 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.objects.ReferenceShortImmutablePair": typeof import("../types/it/unimi/dsi/fastutil/objects/ReferenceShortImmutablePair").ReferenceShortImmutablePair;
     "it.unimi.dsi.fastutil.objects.ReferenceShortMutablePair": typeof import("../types/it/unimi/dsi/fastutil/objects/ReferenceShortMutablePair").ReferenceShortMutablePair;
     "it.unimi.dsi.fastutil.objects.ReferenceSortedSets": typeof import("../types/it/unimi/dsi/fastutil/objects/ReferenceSortedSets").ReferenceSortedSets;
+    "it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanFunction": typeof import("../types/it/unimi/dsi/fastutil/shorts/AbstractShort2BooleanFunction").AbstractShort2BooleanFunction;
     "it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanMap$BasicEntry": typeof import("../types/it/unimi/dsi/fastutil/shorts/AbstractShort2BooleanMap$BasicEntry").AbstractShort2BooleanMap$BasicEntry;
     "it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanSortedMap$KeySetIterator": typeof import("../types/it/unimi/dsi/fastutil/shorts/AbstractShort2BooleanSortedMap$KeySetIterator").AbstractShort2BooleanSortedMap$KeySetIterator;
     "it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanSortedMap$ValuesIterator": typeof import("../types/it/unimi/dsi/fastutil/shorts/AbstractShort2BooleanSortedMap$ValuesIterator").AbstractShort2BooleanSortedMap$ValuesIterator;
@@ -22534,7 +22604,9 @@ interface JavaTypeRegistry {
     "it.unimi.dsi.fastutil.shorts.Short2BooleanArrayMap$MapEntry": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanArrayMap$MapEntry").Short2BooleanArrayMap$MapEntry;
     "it.unimi.dsi.fastutil.shorts.Short2BooleanFunctions": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanFunctions").Short2BooleanFunctions;
     "it.unimi.dsi.fastutil.shorts.Short2BooleanFunctions$EmptyFunction": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanFunctions$EmptyFunction").Short2BooleanFunctions$EmptyFunction;
+    "it.unimi.dsi.fastutil.shorts.Short2BooleanFunctions$PrimitiveFunction": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanFunctions$PrimitiveFunction").Short2BooleanFunctions$PrimitiveFunction;
     "it.unimi.dsi.fastutil.shorts.Short2BooleanFunctions$Singleton": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanFunctions$Singleton").Short2BooleanFunctions$Singleton;
+    "it.unimi.dsi.fastutil.shorts.Short2BooleanFunctions$SynchronizedFunction": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanFunctions$SynchronizedFunction").Short2BooleanFunctions$SynchronizedFunction;
     "it.unimi.dsi.fastutil.shorts.Short2BooleanFunctions$UnmodifiableFunction": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanFunctions$UnmodifiableFunction").Short2BooleanFunctions$UnmodifiableFunction;
     "it.unimi.dsi.fastutil.shorts.Short2BooleanLinkedOpenHashMap$EntryIterator": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanLinkedOpenHashMap$EntryIterator").Short2BooleanLinkedOpenHashMap$EntryIterator;
     "it.unimi.dsi.fastutil.shorts.Short2BooleanLinkedOpenHashMap$FastEntryIterator": typeof import("../types/it/unimi/dsi/fastutil/shorts/Short2BooleanLinkedOpenHashMap$FastEntryIterator").Short2BooleanLinkedOpenHashMap$FastEntryIterator;
@@ -23101,6 +23173,7 @@ interface JavaTypeRegistry {
     "java.awt.CheckboxMenuItem": typeof import("../types/java/awt/CheckboxMenuItem").CheckboxMenuItem;
     "java.awt.Choice": typeof import("../types/java/awt/Choice").Choice;
     "java.awt.Color": typeof import("../types/java/awt/Color").Color;
+    "java.awt.Component": typeof import("../types/java/awt/Component").Component;
     "java.awt.Component$BaselineResizeBehavior": typeof import("../types/java/awt/Component$BaselineResizeBehavior").Component$BaselineResizeBehavior;
     "java.awt.ComponentOrientation": typeof import("../types/java/awt/ComponentOrientation").ComponentOrientation;
     "java.awt.Container": typeof import("../types/java/awt/Container").Container;
@@ -25158,6 +25231,7 @@ interface JavaTypeRegistry {
     "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmExtensionNodesKt": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmExtensionNodesKt").JvmExtensionNodesKt;
     "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmFunctionExtension": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmFunctionExtension").JvmFunctionExtension;
     "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmFunctionExtension$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmFunctionExtension$Companion").JvmFunctionExtension$Companion;
+    "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmMetadataExtensions": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmMetadataExtensions").JvmMetadataExtensions;
     "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmPackageExtension": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmPackageExtension").JvmPackageExtension;
     "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmPackageExtension$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmPackageExtension$Companion").JvmPackageExtension$Companion;
     "kotlin.reflect.jvm.internal.impl.km.jvm.internal.JvmPropertyExtension": typeof import("../types/kotlin/reflect/jvm/internal/impl/km/jvm/internal/JvmPropertyExtension").JvmPropertyExtension;
@@ -25241,8 +25315,10 @@ interface JavaTypeRegistry {
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.JavaDescriptorUtilKt": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/JavaDescriptorUtilKt").JavaDescriptorUtilKt;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.JvmPackageScope": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/JvmPackageScope").JvmPackageScope;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaAnnotationDescriptor").LazyJavaAnnotationDescriptor;
+    "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClassDescriptor": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaClassDescriptor").LazyJavaClassDescriptor;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClassDescriptor$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaClassDescriptor$Companion").LazyJavaClassDescriptor$Companion;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClassDescriptor$LazyJavaClassTypeConstructor": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaClassDescriptor$LazyJavaClassTypeConstructor").LazyJavaClassDescriptor$LazyJavaClassTypeConstructor;
+    "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClassMemberScope": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaClassMemberScope").LazyJavaClassMemberScope;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaPackageFragment": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaPackageFragment").LazyJavaPackageFragment;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaPackageFragment$WhenMappings": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaPackageFragment$WhenMappings").LazyJavaPackageFragment$WhenMappings;
     "kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaPackageScope": typeof import("../types/kotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaPackageScope").LazyJavaPackageScope;
@@ -25525,6 +25601,7 @@ interface JavaTypeRegistry {
     "kotlin.reflect.jvm.internal.impl.renderer.ClassifierNamePolicy$SOURCE_CODE_QUALIFIED": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/ClassifierNamePolicy$SOURCE_CODE_QUALIFIED").ClassifierNamePolicy$SOURCE_CODE_QUALIFIED;
     "kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer").DescriptorRenderer;
     "kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer$Companion").DescriptorRenderer$Companion;
+    "kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererImpl": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl").DescriptorRendererImpl;
     "kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererImpl$RenderDeclarationDescriptorVisitor": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$RenderDeclarationDescriptorVisitor").DescriptorRendererImpl$RenderDeclarationDescriptorVisitor;
     "kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererImpl$WhenMappings": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$WhenMappings").DescriptorRendererImpl$WhenMappings;
     "kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererModifier": typeof import("../types/kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererModifier").DescriptorRendererModifier;
@@ -25653,6 +25730,7 @@ interface JavaTypeRegistry {
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.ClassDeserializer$ClassKey": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/ClassDeserializer$ClassKey").ClassDeserializer$ClassKey;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.ClassDeserializer$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/ClassDeserializer$Companion").ClassDeserializer$Companion;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.ContractDeserializer$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/ContractDeserializer$Companion").ContractDeserializer$Companion;
+    "kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationComponents": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/DeserializationComponents").DeserializationComponents;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationConfiguration$Default": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/DeserializationConfiguration$Default").DeserializationConfiguration$Default;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/DeserializationContext").DeserializationContext;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializedClassDataFinder": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/DeserializedClassDataFinder").DeserializedClassDataFinder;
@@ -25683,6 +25761,7 @@ interface JavaTypeRegistry {
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.builtins.BuiltInsPackageFragmentImpl$Companion": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/builtins/BuiltInsPackageFragmentImpl$Companion").BuiltInsPackageFragmentImpl$Companion;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.builtins.BuiltInsResourceLoader": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/builtins/BuiltInsResourceLoader").BuiltInsResourceLoader;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassConstructorDescriptor": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedClassConstructorDescriptor").DeserializedClassConstructorDescriptor;
+    "kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassDescriptor": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedClassDescriptor").DeserializedClassDescriptor;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassDescriptor$DeserializedClassMemberScope": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedClassDescriptor$DeserializedClassMemberScope").DeserializedClassDescriptor$DeserializedClassMemberScope;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassDescriptor$DeserializedClassTypeConstructor": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedClassDescriptor$DeserializedClassTypeConstructor").DeserializedClassDescriptor$DeserializedClassTypeConstructor;
     "kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassDescriptor$EnumEntryClassDescriptors": typeof import("../types/kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedClassDescriptor$EnumEntryClassDescriptors").DeserializedClassDescriptor$EnumEntryClassDescriptors;
@@ -27507,6 +27586,7 @@ interface JavaTypeRegistry {
     "net.caffeinemc.mods.sodium.client.render.chunk.NonStoringBuilderPool": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/NonStoringBuilderPool").NonStoringBuilderPool;
     "net.caffeinemc.mods.sodium.client.render.chunk.RenderSection": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/RenderSection").RenderSection;
     "net.caffeinemc.mods.sodium.client.render.chunk.RenderSectionFlags": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/RenderSectionFlags").RenderSectionFlags;
+    "net.caffeinemc.mods.sodium.client.render.chunk.RenderSectionManager": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/RenderSectionManager").RenderSectionManager;
     "net.caffeinemc.mods.sodium.client.render.chunk.ShaderChunkRenderer": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/ShaderChunkRenderer").ShaderChunkRenderer;
     "net.caffeinemc.mods.sodium.client.render.chunk.SharedQuadIndexBuffer": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/SharedQuadIndexBuffer").SharedQuadIndexBuffer;
     "net.caffeinemc.mods.sodium.client.render.chunk.SharedQuadIndexBuffer$IndexType": typeof import("../types/net/caffeinemc/mods/sodium/client/render/chunk/SharedQuadIndexBuffer$IndexType").SharedQuadIndexBuffer$IndexType;
@@ -27971,6 +28051,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.config.types.group.NoneMode": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/NoneMode").NoneMode;
     "net.ccbluex.liquidbounce.config.types.group.ToggleableValueGroup": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup").ToggleableValueGroup;
     "net.ccbluex.liquidbounce.config.types.group.ToggleableValueGroupKt": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroupKt").ToggleableValueGroupKt;
+    "net.ccbluex.liquidbounce.config.types.group.ValueGroup": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ValueGroup").ValueGroup;
     "net.ccbluex.liquidbounce.config.types.list.ChoiceListValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/ChoiceListValue").ChoiceListValue;
     "net.ccbluex.liquidbounce.config.types.list.ItemListValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/ItemListValue").ItemListValue;
     "net.ccbluex.liquidbounce.config.types.list.ItemListValue$NamedItem": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/ItemListValue$NamedItem").ItemListValue$NamedItem;
@@ -30741,6 +30822,7 @@ interface JavaTypeRegistry {
     "net.fabricmc.fabric.impl.client.rendering.hud.HudStatusBarHeightRegistryImpl": typeof import("../types/net/fabricmc/fabric/impl/client/rendering/hud/HudStatusBarHeightRegistryImpl").HudStatusBarHeightRegistryImpl;
     "net.fabricmc.fabric.impl.client.rendering.level.LevelExtractionContextImpl": typeof import("../types/net/fabricmc/fabric/impl/client/rendering/level/LevelExtractionContextImpl").LevelExtractionContextImpl;
     "net.fabricmc.fabric.impl.client.rendering.level.LevelRenderContextImpl": typeof import("../types/net/fabricmc/fabric/impl/client/rendering/level/LevelRenderContextImpl").LevelRenderContextImpl;
+    "net.fabricmc.fabric.impl.client.screen.ScreenEventFactory": typeof import("../types/net/fabricmc/fabric/impl/client/screen/ScreenEventFactory").ScreenEventFactory;
     "net.fabricmc.fabric.impl.command.client.ClientCommandInternals": typeof import("../types/net/fabricmc/fabric/impl/command/client/ClientCommandInternals").ClientCommandInternals;
     "net.fabricmc.fabric.impl.content.registry.CompostableRegistryImpl": typeof import("../types/net/fabricmc/fabric/impl/content/registry/CompostableRegistryImpl").CompostableRegistryImpl;
     "net.fabricmc.fabric.impl.content.registry.FlammableBlockRegistryImpl": typeof import("../types/net/fabricmc/fabric/impl/content/registry/FlammableBlockRegistryImpl").FlammableBlockRegistryImpl;
@@ -30843,6 +30925,7 @@ interface JavaTypeRegistry {
     "net.fabricmc.fabric.impl.networking.splitter.FabricPacketSplitter": typeof import("../types/net/fabricmc/fabric/impl/networking/splitter/FabricPacketSplitter").FabricPacketSplitter;
     "net.fabricmc.fabric.impl.networking.splitter.FabricSplitPacketPayload": typeof import("../types/net/fabricmc/fabric/impl/networking/splitter/FabricSplitPacketPayload").FabricSplitPacketPayload;
     "net.fabricmc.fabric.impl.networking.splitter.PassthroughPacket": typeof import("../types/net/fabricmc/fabric/impl/networking/splitter/PassthroughPacket").PassthroughPacket;
+    "net.fabricmc.fabric.impl.object.builder.ExtendedBlockEntityType": typeof import("../types/net/fabricmc/fabric/impl/object/builder/ExtendedBlockEntityType").ExtendedBlockEntityType;
     "net.fabricmc.fabric.impl.object.builder.FabricEntityDataRegistryImpl": typeof import("../types/net/fabricmc/fabric/impl/object/builder/FabricEntityDataRegistryImpl").FabricEntityDataRegistryImpl;
     "net.fabricmc.fabric.impl.object.builder.FabricEntityTypeImpl$Builder$Living": typeof import("../types/net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder$Living").FabricEntityTypeImpl$Builder$Living;
     "net.fabricmc.fabric.impl.object.builder.FabricEntityTypeImpl$Builder$Mob": typeof import("../types/net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder$Mob").FabricEntityTypeImpl$Builder$Mob;
@@ -31680,6 +31763,7 @@ interface JavaTypeRegistry {
     "net.irisshaders.iris.pipeline.FinalPassRenderer$Pass": typeof import("../types/net/irisshaders/iris/pipeline/FinalPassRenderer$Pass").FinalPassRenderer$Pass;
     "net.irisshaders.iris.pipeline.FinalPassRenderer$SwapPass": typeof import("../types/net/irisshaders/iris/pipeline/FinalPassRenderer$SwapPass").FinalPassRenderer$SwapPass;
     "net.irisshaders.iris.pipeline.IrisPipelines": typeof import("../types/net/irisshaders/iris/pipeline/IrisPipelines").IrisPipelines;
+    "net.irisshaders.iris.pipeline.IrisRenderingPipeline": typeof import("../types/net/irisshaders/iris/pipeline/IrisRenderingPipeline").IrisRenderingPipeline;
     "net.irisshaders.iris.pipeline.PipelineManager": typeof import("../types/net/irisshaders/iris/pipeline/PipelineManager").PipelineManager;
     "net.irisshaders.iris.pipeline.VanillaRenderingPipeline": typeof import("../types/net/irisshaders/iris/pipeline/VanillaRenderingPipeline").VanillaRenderingPipeline;
     "net.irisshaders.iris.pipeline.WorldRenderingPhase": typeof import("../types/net/irisshaders/iris/pipeline/WorldRenderingPhase").WorldRenderingPhase;
@@ -32199,6 +32283,7 @@ interface JavaTypeRegistry {
     "net.minecraft.advancements.AdvancementRewards$Builder": typeof import("../types/net/minecraft/advancements/AdvancementRewards$Builder").AdvancementRewards$Builder;
     "net.minecraft.advancements.AdvancementTree": typeof import("../types/net/minecraft/advancements/AdvancementTree").AdvancementTree;
     "net.minecraft.advancements.AdvancementType": typeof import("../types/net/minecraft/advancements/AdvancementType").AdvancementType;
+    "net.minecraft.advancements.CriteriaTriggers": typeof import("../types/net/minecraft/advancements/CriteriaTriggers").CriteriaTriggers;
     "net.minecraft.advancements.Criterion": typeof import("../types/net/minecraft/advancements/Criterion").Criterion;
     "net.minecraft.advancements.CriterionProgress": typeof import("../types/net/minecraft/advancements/CriterionProgress").CriterionProgress;
     "net.minecraft.advancements.CriterionTrigger$Listener": typeof import("../types/net/minecraft/advancements/CriterionTrigger$Listener").CriterionTrigger$Listener;
@@ -32386,6 +32471,7 @@ interface JavaTypeRegistry {
     "net.minecraft.client.KeyMapping": typeof import("../types/net/minecraft/client/KeyMapping").KeyMapping;
     "net.minecraft.client.KeyMapping$Category": typeof import("../types/net/minecraft/client/KeyMapping$Category").KeyMapping$Category;
     "net.minecraft.client.KeyboardHandler": typeof import("../types/net/minecraft/client/KeyboardHandler").KeyboardHandler;
+    "net.minecraft.client.Minecraft": typeof import("../types/net/minecraft/client/Minecraft").Minecraft;
     "net.minecraft.client.Minecraft$GameLoadCookie": typeof import("../types/net/minecraft/client/Minecraft$GameLoadCookie").Minecraft$GameLoadCookie;
     "net.minecraft.client.MouseHandler": typeof import("../types/net/minecraft/client/MouseHandler").MouseHandler;
     "net.minecraft.client.MouseHandler$LastClick": typeof import("../types/net/minecraft/client/MouseHandler$LastClick").MouseHandler$LastClick;
@@ -32462,6 +32548,7 @@ interface JavaTypeRegistry {
     "net.minecraft.client.color.item.TeamColor": typeof import("../types/net/minecraft/client/color/item/TeamColor").TeamColor;
     "net.minecraft.client.data.AtlasProvider": typeof import("../types/net/minecraft/client/data/AtlasProvider").AtlasProvider;
     "net.minecraft.client.data.Main": typeof import("../types/net/minecraft/client/data/Main").Main;
+    "net.minecraft.client.data.models.BlockModelGenerators": typeof import("../types/net/minecraft/client/data/models/BlockModelGenerators").BlockModelGenerators;
     "net.minecraft.client.data.models.BlockModelGenerators$BlockFamilyProvider": typeof import("../types/net/minecraft/client/data/models/BlockModelGenerators$BlockFamilyProvider").BlockModelGenerators$BlockFamilyProvider;
     "net.minecraft.client.data.models.BlockModelGenerators$BookSlotModelCacheKey": typeof import("../types/net/minecraft/client/data/models/BlockModelGenerators$BookSlotModelCacheKey").BlockModelGenerators$BookSlotModelCacheKey;
     "net.minecraft.client.data.models.BlockModelGenerators$PlantType": typeof import("../types/net/minecraft/client/data/models/BlockModelGenerators$PlantType").BlockModelGenerators$PlantType;
@@ -32509,6 +32596,7 @@ interface JavaTypeRegistry {
     "net.minecraft.client.gui.Gui": typeof import("../types/net/minecraft/client/gui/Gui").Gui;
     "net.minecraft.client.gui.Gui$ContextualInfo": typeof import("../types/net/minecraft/client/gui/Gui$ContextualInfo").Gui$ContextualInfo;
     "net.minecraft.client.gui.Gui$HeartType": typeof import("../types/net/minecraft/client/gui/Gui$HeartType").Gui$HeartType;
+    "net.minecraft.client.gui.GuiGraphicsExtractor": typeof import("../types/net/minecraft/client/gui/GuiGraphicsExtractor").GuiGraphicsExtractor;
     "net.minecraft.client.gui.GuiGraphicsExtractor$HoveredTextEffects": typeof import("../types/net/minecraft/client/gui/GuiGraphicsExtractor$HoveredTextEffects").GuiGraphicsExtractor$HoveredTextEffects;
     "net.minecraft.client.gui.GuiGraphicsExtractor$RenderingTextCollector": typeof import("../types/net/minecraft/client/gui/GuiGraphicsExtractor$RenderingTextCollector").GuiGraphicsExtractor$RenderingTextCollector;
     "net.minecraft.client.gui.GuiGraphicsExtractor$ScissorStack": typeof import("../types/net/minecraft/client/gui/GuiGraphicsExtractor$ScissorStack").GuiGraphicsExtractor$ScissorStack;
@@ -33280,10 +33368,12 @@ interface JavaTypeRegistry {
     "net.minecraft.client.multiplayer.ClientAdvancements": typeof import("../types/net/minecraft/client/multiplayer/ClientAdvancements").ClientAdvancements;
     "net.minecraft.client.multiplayer.ClientChunkCache": typeof import("../types/net/minecraft/client/multiplayer/ClientChunkCache").ClientChunkCache;
     "net.minecraft.client.multiplayer.ClientChunkCache$Storage": typeof import("../types/net/minecraft/client/multiplayer/ClientChunkCache$Storage").ClientChunkCache$Storage;
+    "net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl": typeof import("../types/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl").ClientCommonPacketListenerImpl;
     "net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl$CommonDialogAccess": typeof import("../types/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl$CommonDialogAccess").ClientCommonPacketListenerImpl$CommonDialogAccess;
     "net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl$DeferredPacket": typeof import("../types/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl$DeferredPacket").ClientCommonPacketListenerImpl$DeferredPacket;
     "net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl$PackConfirmScreen": typeof import("../types/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl$PackConfirmScreen").ClientCommonPacketListenerImpl$PackConfirmScreen;
     "net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest": typeof import("../types/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest").ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest;
+    "net.minecraft.client.multiplayer.ClientConfigurationPacketListenerImpl": typeof import("../types/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl").ClientConfigurationPacketListenerImpl;
     "net.minecraft.client.multiplayer.ClientDebugSubscriber": typeof import("../types/net/minecraft/client/multiplayer/ClientDebugSubscriber").ClientDebugSubscriber;
     "net.minecraft.client.multiplayer.ClientDebugSubscriber$ValueMap": typeof import("../types/net/minecraft/client/multiplayer/ClientDebugSubscriber$ValueMap").ClientDebugSubscriber$ValueMap;
     "net.minecraft.client.multiplayer.ClientDebugSubscriber$ValueMaps": typeof import("../types/net/minecraft/client/multiplayer/ClientDebugSubscriber$ValueMaps").ClientDebugSubscriber$ValueMaps;
@@ -33292,8 +33382,10 @@ interface JavaTypeRegistry {
     "net.minecraft.client.multiplayer.ClientExplosionTracker$ExplosionInfo": typeof import("../types/net/minecraft/client/multiplayer/ClientExplosionTracker$ExplosionInfo").ClientExplosionTracker$ExplosionInfo;
     "net.minecraft.client.multiplayer.ClientHandshakePacketListenerImpl": typeof import("../types/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl").ClientHandshakePacketListenerImpl;
     "net.minecraft.client.multiplayer.ClientHandshakePacketListenerImpl$State": typeof import("../types/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl$State").ClientHandshakePacketListenerImpl$State;
+    "net.minecraft.client.multiplayer.ClientLevel": typeof import("../types/net/minecraft/client/multiplayer/ClientLevel").ClientLevel;
     "net.minecraft.client.multiplayer.ClientLevel$ClientLevelData": typeof import("../types/net/minecraft/client/multiplayer/ClientLevel$ClientLevelData").ClientLevel$ClientLevelData;
     "net.minecraft.client.multiplayer.ClientLevel$EntityCallbacks": typeof import("../types/net/minecraft/client/multiplayer/ClientLevel$EntityCallbacks").ClientLevel$EntityCallbacks;
+    "net.minecraft.client.multiplayer.ClientPacketListener": typeof import("../types/net/minecraft/client/multiplayer/ClientPacketListener").ClientPacketListener;
     "net.minecraft.client.multiplayer.ClientPacketListener$CommandCheckResult": typeof import("../types/net/minecraft/client/multiplayer/ClientPacketListener$CommandCheckResult").ClientPacketListener$CommandCheckResult;
     "net.minecraft.client.multiplayer.ClientRecipeContainer": typeof import("../types/net/minecraft/client/multiplayer/ClientRecipeContainer").ClientRecipeContainer;
     "net.minecraft.client.multiplayer.ClientRegistryLayer": typeof import("../types/net/minecraft/client/multiplayer/ClientRegistryLayer").ClientRegistryLayer;
@@ -33568,6 +33660,7 @@ interface JavaTypeRegistry {
     "net.minecraft.client.player.AbstractClientPlayer": typeof import("../types/net/minecraft/client/player/AbstractClientPlayer").AbstractClientPlayer;
     "net.minecraft.client.player.ClientInput": typeof import("../types/net/minecraft/client/player/ClientInput").ClientInput;
     "net.minecraft.client.player.KeyboardInput": typeof import("../types/net/minecraft/client/player/KeyboardInput").KeyboardInput;
+    "net.minecraft.client.player.LocalPlayer": typeof import("../types/net/minecraft/client/player/LocalPlayer").LocalPlayer;
     "net.minecraft.client.player.LocalPlayerResolver": typeof import("../types/net/minecraft/client/player/LocalPlayerResolver").LocalPlayerResolver;
     "net.minecraft.client.player.RemotePlayer": typeof import("../types/net/minecraft/client/player/RemotePlayer").RemotePlayer;
     "net.minecraft.client.player.inventory.Hotbar": typeof import("../types/net/minecraft/client/player/inventory/Hotbar").Hotbar;
@@ -33590,12 +33683,14 @@ interface JavaTypeRegistry {
     "net.minecraft.client.renderer.FaceInfo": typeof import("../types/net/minecraft/client/renderer/FaceInfo").FaceInfo;
     "net.minecraft.client.renderer.FaceInfo$Extent": typeof import("../types/net/minecraft/client/renderer/FaceInfo$Extent").FaceInfo$Extent;
     "net.minecraft.client.renderer.FaceInfo$VertexInfo": typeof import("../types/net/minecraft/client/renderer/FaceInfo$VertexInfo").FaceInfo$VertexInfo;
+    "net.minecraft.client.renderer.GameRenderer": typeof import("../types/net/minecraft/client/renderer/GameRenderer").GameRenderer;
     "net.minecraft.client.renderer.GlobalSettingsUniform": typeof import("../types/net/minecraft/client/renderer/GlobalSettingsUniform").GlobalSettingsUniform;
     "net.minecraft.client.renderer.GpuWarnlistManager": typeof import("../types/net/minecraft/client/renderer/GpuWarnlistManager").GpuWarnlistManager;
     "net.minecraft.client.renderer.GpuWarnlistManager$Preparations": typeof import("../types/net/minecraft/client/renderer/GpuWarnlistManager$Preparations").GpuWarnlistManager$Preparations;
     "net.minecraft.client.renderer.ItemInHandRenderer": typeof import("../types/net/minecraft/client/renderer/ItemInHandRenderer").ItemInHandRenderer;
     "net.minecraft.client.renderer.ItemInHandRenderer$HandRenderSelection": typeof import("../types/net/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection").ItemInHandRenderer$HandRenderSelection;
     "net.minecraft.client.renderer.LevelEventHandler": typeof import("../types/net/minecraft/client/renderer/LevelEventHandler").LevelEventHandler;
+    "net.minecraft.client.renderer.LevelRenderer": typeof import("../types/net/minecraft/client/renderer/LevelRenderer").LevelRenderer;
     "net.minecraft.client.renderer.LevelRenderer$FinalizedGizmos": typeof import("../types/net/minecraft/client/renderer/LevelRenderer$FinalizedGizmos").LevelRenderer$FinalizedGizmos;
     "net.minecraft.client.renderer.LevelTargetBundle": typeof import("../types/net/minecraft/client/renderer/LevelTargetBundle").LevelTargetBundle;
     "net.minecraft.client.renderer.Lightmap": typeof import("../types/net/minecraft/client/renderer/Lightmap").Lightmap;
@@ -33650,6 +33745,7 @@ interface JavaTypeRegistry {
     "net.minecraft.client.renderer.SkyRenderer": typeof import("../types/net/minecraft/client/renderer/SkyRenderer").SkyRenderer;
     "net.minecraft.client.renderer.SpriteCoordinateExpander": typeof import("../types/net/minecraft/client/renderer/SpriteCoordinateExpander").SpriteCoordinateExpander;
     "net.minecraft.client.renderer.SpriteMapper": typeof import("../types/net/minecraft/client/renderer/SpriteMapper").SpriteMapper;
+    "net.minecraft.client.renderer.SubmitNodeCollection": typeof import("../types/net/minecraft/client/renderer/SubmitNodeCollection").SubmitNodeCollection;
     "net.minecraft.client.renderer.SubmitNodeStorage": typeof import("../types/net/minecraft/client/renderer/SubmitNodeStorage").SubmitNodeStorage;
     "net.minecraft.client.renderer.SubmitNodeStorage$BlockModelSubmit": typeof import("../types/net/minecraft/client/renderer/SubmitNodeStorage$BlockModelSubmit").SubmitNodeStorage$BlockModelSubmit;
     "net.minecraft.client.renderer.SubmitNodeStorage$BreakingBlockModelSubmit": typeof import("../types/net/minecraft/client/renderer/SubmitNodeStorage$BreakingBlockModelSubmit").SubmitNodeStorage$BreakingBlockModelSubmit;
@@ -33899,6 +33995,7 @@ interface JavaTypeRegistry {
     "net.minecraft.client.renderer.entity.EnderDragonRenderer": typeof import("../types/net/minecraft/client/renderer/entity/EnderDragonRenderer").EnderDragonRenderer;
     "net.minecraft.client.renderer.entity.EndermanRenderer": typeof import("../types/net/minecraft/client/renderer/entity/EndermanRenderer").EndermanRenderer;
     "net.minecraft.client.renderer.entity.EndermiteRenderer": typeof import("../types/net/minecraft/client/renderer/entity/EndermiteRenderer").EndermiteRenderer;
+    "net.minecraft.client.renderer.entity.EntityRenderDispatcher": typeof import("../types/net/minecraft/client/renderer/entity/EntityRenderDispatcher").EntityRenderDispatcher;
     "net.minecraft.client.renderer.entity.EntityRenderer": typeof import("../types/net/minecraft/client/renderer/entity/EntityRenderer").EntityRenderer;
     "net.minecraft.client.renderer.entity.EntityRendererProvider$Context": typeof import("../types/net/minecraft/client/renderer/entity/EntityRendererProvider$Context").EntityRendererProvider$Context;
     "net.minecraft.client.renderer.entity.EntityRenderers": typeof import("../types/net/minecraft/client/renderer/entity/EntityRenderers").EntityRenderers;
@@ -34572,6 +34669,7 @@ interface JavaTypeRegistry {
     "net.minecraft.commands.BrigadierExceptions": typeof import("../types/net/minecraft/commands/BrigadierExceptions").BrigadierExceptions;
     "net.minecraft.commands.CacheableFunction": typeof import("../types/net/minecraft/commands/CacheableFunction").CacheableFunction;
     "net.minecraft.commands.CommandSigningContext$SignedArguments": typeof import("../types/net/minecraft/commands/CommandSigningContext$SignedArguments").CommandSigningContext$SignedArguments;
+    "net.minecraft.commands.CommandSourceStack": typeof import("../types/net/minecraft/commands/CommandSourceStack").CommandSourceStack;
     "net.minecraft.commands.Commands": typeof import("../types/net/minecraft/commands/Commands").Commands;
     "net.minecraft.commands.Commands$CommandSelection": typeof import("../types/net/minecraft/commands/Commands$CommandSelection").Commands$CommandSelection;
     "net.minecraft.commands.FunctionInstantiationException": typeof import("../types/net/minecraft/commands/FunctionInstantiationException").FunctionInstantiationException;
@@ -34791,6 +34889,7 @@ interface JavaTypeRegistry {
     "net.minecraft.core.component.DataComponentPatch$PatchKey": typeof import("../types/net/minecraft/core/component/DataComponentPatch$PatchKey").DataComponentPatch$PatchKey;
     "net.minecraft.core.component.DataComponentPatch$SplitResult": typeof import("../types/net/minecraft/core/component/DataComponentPatch$SplitResult").DataComponentPatch$SplitResult;
     "net.minecraft.core.component.DataComponentType$Builder": typeof import("../types/net/minecraft/core/component/DataComponentType$Builder").DataComponentType$Builder;
+    "net.minecraft.core.component.DataComponents": typeof import("../types/net/minecraft/core/component/DataComponents").DataComponents;
     "net.minecraft.core.component.TypedDataComponent": typeof import("../types/net/minecraft/core/component/TypedDataComponent").TypedDataComponent;
     "net.minecraft.core.component.predicates.AnyValue": typeof import("../types/net/minecraft/core/component/predicates/AnyValue").AnyValue;
     "net.minecraft.core.component.predicates.AttributeModifiersPredicate": typeof import("../types/net/minecraft/core/component/predicates/AttributeModifiersPredicate").AttributeModifiersPredicate;
@@ -34845,7 +34944,9 @@ interface JavaTypeRegistry {
     "net.minecraft.core.particles.SpellParticleOption": typeof import("../types/net/minecraft/core/particles/SpellParticleOption").SpellParticleOption;
     "net.minecraft.core.particles.TrailParticleOption": typeof import("../types/net/minecraft/core/particles/TrailParticleOption").TrailParticleOption;
     "net.minecraft.core.particles.VibrationParticleOption": typeof import("../types/net/minecraft/core/particles/VibrationParticleOption").VibrationParticleOption;
+    "net.minecraft.core.registries.BuiltInRegistries": typeof import("../types/net/minecraft/core/registries/BuiltInRegistries").BuiltInRegistries;
     "net.minecraft.core.registries.ConcurrentHolderGetter": typeof import("../types/net/minecraft/core/registries/ConcurrentHolderGetter").ConcurrentHolderGetter;
+    "net.minecraft.core.registries.Registries": typeof import("../types/net/minecraft/core/registries/Registries").Registries;
     "net.minecraft.data.AtlasIds": typeof import("../types/net/minecraft/data/AtlasIds").AtlasIds;
     "net.minecraft.data.BlockFamilies": typeof import("../types/net/minecraft/data/BlockFamilies").BlockFamilies;
     "net.minecraft.data.BlockFamily": typeof import("../types/net/minecraft/data/BlockFamily").BlockFamily;
@@ -35458,6 +35559,7 @@ interface JavaTypeRegistry {
     "net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket": typeof import("../types/net/minecraft/network/protocol/game/ClientboundUpdateRecipesPacket").ClientboundUpdateRecipesPacket;
     "net.minecraft.network.protocol.game.CommonPlayerSpawnInfo": typeof import("../types/net/minecraft/network/protocol/game/CommonPlayerSpawnInfo").CommonPlayerSpawnInfo;
     "net.minecraft.network.protocol.game.DebugEntityNameGenerator": typeof import("../types/net/minecraft/network/protocol/game/DebugEntityNameGenerator").DebugEntityNameGenerator;
+    "net.minecraft.network.protocol.game.GamePacketTypes": typeof import("../types/net/minecraft/network/protocol/game/GamePacketTypes").GamePacketTypes;
     "net.minecraft.network.protocol.game.GameProtocols": typeof import("../types/net/minecraft/network/protocol/game/GameProtocols").GameProtocols;
     "net.minecraft.network.protocol.game.ServerboundAcceptTeleportationPacket": typeof import("../types/net/minecraft/network/protocol/game/ServerboundAcceptTeleportationPacket").ServerboundAcceptTeleportationPacket;
     "net.minecraft.network.protocol.game.ServerboundAttackPacket": typeof import("../types/net/minecraft/network/protocol/game/ServerboundAttackPacket").ServerboundAttackPacket;
@@ -35597,6 +35699,7 @@ interface JavaTypeRegistry {
     "net.minecraft.server.Eula": typeof import("../types/net/minecraft/server/Eula").Eula;
     "net.minecraft.server.LoggedPrintStream": typeof import("../types/net/minecraft/server/LoggedPrintStream").LoggedPrintStream;
     "net.minecraft.server.Main": typeof import("../types/net/minecraft/server/Main").Main;
+    "net.minecraft.server.MinecraftServer": typeof import("../types/net/minecraft/server/MinecraftServer").MinecraftServer;
     "net.minecraft.server.MinecraftServer$ReloadableResources": typeof import("../types/net/minecraft/server/MinecraftServer$ReloadableResources").MinecraftServer$ReloadableResources;
     "net.minecraft.server.MinecraftServer$ServerResourcePackInfo": typeof import("../types/net/minecraft/server/MinecraftServer$ServerResourcePackInfo").MinecraftServer$ServerResourcePackInfo;
     "net.minecraft.server.MinecraftServer$TimeProfiler": typeof import("../types/net/minecraft/server/MinecraftServer$TimeProfiler").MinecraftServer$TimeProfiler;
@@ -35753,6 +35856,7 @@ interface JavaTypeRegistry {
     "net.minecraft.server.commands.data.EntityDataAccessor": typeof import("../types/net/minecraft/server/commands/data/EntityDataAccessor").EntityDataAccessor;
     "net.minecraft.server.commands.data.StorageDataAccessor": typeof import("../types/net/minecraft/server/commands/data/StorageDataAccessor").StorageDataAccessor;
     "net.minecraft.server.dedicated.DedicatedPlayerList": typeof import("../types/net/minecraft/server/dedicated/DedicatedPlayerList").DedicatedPlayerList;
+    "net.minecraft.server.dedicated.DedicatedServer": typeof import("../types/net/minecraft/server/dedicated/DedicatedServer").DedicatedServer;
     "net.minecraft.server.dedicated.DedicatedServerProperties": typeof import("../types/net/minecraft/server/dedicated/DedicatedServerProperties").DedicatedServerProperties;
     "net.minecraft.server.dedicated.DedicatedServerProperties$WorldDimensionData": typeof import("../types/net/minecraft/server/dedicated/DedicatedServerProperties$WorldDimensionData").DedicatedServerProperties$WorldDimensionData;
     "net.minecraft.server.dedicated.DedicatedServerSettings": typeof import("../types/net/minecraft/server/dedicated/DedicatedServerSettings").DedicatedServerSettings;
@@ -35868,6 +35972,7 @@ interface JavaTypeRegistry {
     "net.minecraft.server.level.ChunkHolder": typeof import("../types/net/minecraft/server/level/ChunkHolder").ChunkHolder;
     "net.minecraft.server.level.ChunkLevel": typeof import("../types/net/minecraft/server/level/ChunkLevel").ChunkLevel;
     "net.minecraft.server.level.ChunkLoadCounter": typeof import("../types/net/minecraft/server/level/ChunkLoadCounter").ChunkLoadCounter;
+    "net.minecraft.server.level.ChunkMap": typeof import("../types/net/minecraft/server/level/ChunkMap").ChunkMap;
     "net.minecraft.server.level.ChunkMap$DistanceManager": typeof import("../types/net/minecraft/server/level/ChunkMap$DistanceManager").ChunkMap$DistanceManager;
     "net.minecraft.server.level.ChunkMap$TrackedEntity": typeof import("../types/net/minecraft/server/level/ChunkMap$TrackedEntity").ChunkMap$TrackedEntity;
     "net.minecraft.server.level.ChunkResult$Fail": typeof import("../types/net/minecraft/server/level/ChunkResult$Fail").ChunkResult$Fail;
@@ -35891,9 +35996,12 @@ interface JavaTypeRegistry {
     "net.minecraft.server.level.PlayerSpawnFinder": typeof import("../types/net/minecraft/server/level/PlayerSpawnFinder").PlayerSpawnFinder;
     "net.minecraft.server.level.SectionTracker": typeof import("../types/net/minecraft/server/level/SectionTracker").SectionTracker;
     "net.minecraft.server.level.ServerBossEvent": typeof import("../types/net/minecraft/server/level/ServerBossEvent").ServerBossEvent;
+    "net.minecraft.server.level.ServerChunkCache": typeof import("../types/net/minecraft/server/level/ServerChunkCache").ServerChunkCache;
     "net.minecraft.server.level.ServerChunkCache$MainThreadExecutor": typeof import("../types/net/minecraft/server/level/ServerChunkCache$MainThreadExecutor").ServerChunkCache$MainThreadExecutor;
     "net.minecraft.server.level.ServerEntity": typeof import("../types/net/minecraft/server/level/ServerEntity").ServerEntity;
+    "net.minecraft.server.level.ServerLevel": typeof import("../types/net/minecraft/server/level/ServerLevel").ServerLevel;
     "net.minecraft.server.level.ServerLevel$EntityCallbacks": typeof import("../types/net/minecraft/server/level/ServerLevel$EntityCallbacks").ServerLevel$EntityCallbacks;
+    "net.minecraft.server.level.ServerPlayer": typeof import("../types/net/minecraft/server/level/ServerPlayer").ServerPlayer;
     "net.minecraft.server.level.ServerPlayer$RespawnConfig": typeof import("../types/net/minecraft/server/level/ServerPlayer$RespawnConfig").ServerPlayer$RespawnConfig;
     "net.minecraft.server.level.ServerPlayer$RespawnPosAngle": typeof import("../types/net/minecraft/server/level/ServerPlayer$RespawnPosAngle").ServerPlayer$RespawnPosAngle;
     "net.minecraft.server.level.ServerPlayer$SavedPosition": typeof import("../types/net/minecraft/server/level/ServerPlayer$SavedPosition").ServerPlayer$SavedPosition;
@@ -35904,6 +36012,7 @@ interface JavaTypeRegistry {
     "net.minecraft.server.level.ThrottlingChunkTaskDispatcher": typeof import("../types/net/minecraft/server/level/ThrottlingChunkTaskDispatcher").ThrottlingChunkTaskDispatcher;
     "net.minecraft.server.level.Ticket": typeof import("../types/net/minecraft/server/level/Ticket").Ticket;
     "net.minecraft.server.level.TicketType": typeof import("../types/net/minecraft/server/level/TicketType").TicketType;
+    "net.minecraft.server.level.WorldGenRegion": typeof import("../types/net/minecraft/server/level/WorldGenRegion").WorldGenRegion;
     "net.minecraft.server.level.progress.LevelLoadListener$Stage": typeof import("../types/net/minecraft/server/level/progress/LevelLoadListener$Stage").LevelLoadListener$Stage;
     "net.minecraft.server.level.progress.LevelLoadProgressTracker": typeof import("../types/net/minecraft/server/level/progress/LevelLoadProgressTracker").LevelLoadProgressTracker;
     "net.minecraft.server.level.progress.LoggingLevelLoadListener": typeof import("../types/net/minecraft/server/level/progress/LoggingLevelLoadListener").LoggingLevelLoadListener;
@@ -35923,6 +36032,7 @@ interface JavaTypeRegistry {
     "net.minecraft.server.network.ServerConnectionListener": typeof import("../types/net/minecraft/server/network/ServerConnectionListener").ServerConnectionListener;
     "net.minecraft.server.network.ServerConnectionListener$LatencySimulator": typeof import("../types/net/minecraft/server/network/ServerConnectionListener$LatencySimulator").ServerConnectionListener$LatencySimulator;
     "net.minecraft.server.network.ServerConnectionListener$LatencySimulator$DelayedMessage": typeof import("../types/net/minecraft/server/network/ServerConnectionListener$LatencySimulator$DelayedMessage").ServerConnectionListener$LatencySimulator$DelayedMessage;
+    "net.minecraft.server.network.ServerGamePacketListenerImpl": typeof import("../types/net/minecraft/server/network/ServerGamePacketListenerImpl").ServerGamePacketListenerImpl;
     "net.minecraft.server.network.ServerHandshakePacketListenerImpl": typeof import("../types/net/minecraft/server/network/ServerHandshakePacketListenerImpl").ServerHandshakePacketListenerImpl;
     "net.minecraft.server.network.ServerLoginPacketListenerImpl": typeof import("../types/net/minecraft/server/network/ServerLoginPacketListenerImpl").ServerLoginPacketListenerImpl;
     "net.minecraft.server.network.ServerLoginPacketListenerImpl$State": typeof import("../types/net/minecraft/server/network/ServerLoginPacketListenerImpl$State").ServerLoginPacketListenerImpl$State;
@@ -36962,6 +37072,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.Display$TransformationInterpolator": typeof import("../types/net/minecraft/world/entity/Display$TransformationInterpolator").Display$TransformationInterpolator;
     "net.minecraft.world.entity.DropChances": typeof import("../types/net/minecraft/world/entity/DropChances").DropChances;
     "net.minecraft.world.entity.ElytraAnimationState": typeof import("../types/net/minecraft/world/entity/ElytraAnimationState").ElytraAnimationState;
+    "net.minecraft.world.entity.Entity": typeof import("../types/net/minecraft/world/entity/Entity").Entity;
     "net.minecraft.world.entity.Entity$EntityPathElement": typeof import("../types/net/minecraft/world/entity/Entity$EntityPathElement").Entity$EntityPathElement;
     "net.minecraft.world.entity.Entity$Movement": typeof import("../types/net/minecraft/world/entity/Entity$Movement").Entity$Movement;
     "net.minecraft.world.entity.Entity$MovementEmission": typeof import("../types/net/minecraft/world/entity/Entity$MovementEmission").Entity$MovementEmission;
@@ -36977,6 +37088,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.EntityReference": typeof import("../types/net/minecraft/world/entity/EntityReference").EntityReference;
     "net.minecraft.world.entity.EntitySelector": typeof import("../types/net/minecraft/world/entity/EntitySelector").EntitySelector;
     "net.minecraft.world.entity.EntitySpawnReason": typeof import("../types/net/minecraft/world/entity/EntitySpawnReason").EntitySpawnReason;
+    "net.minecraft.world.entity.EntityType": typeof import("../types/net/minecraft/world/entity/EntityType").EntityType;
     "net.minecraft.world.entity.EntityType$Builder": typeof import("../types/net/minecraft/world/entity/EntityType$Builder").EntityType$Builder;
     "net.minecraft.world.entity.EquipmentSlot": typeof import("../types/net/minecraft/world/entity/EquipmentSlot").EquipmentSlot;
     "net.minecraft.world.entity.EquipmentSlot$Type": typeof import("../types/net/minecraft/world/entity/EquipmentSlot$Type").EquipmentSlot$Type;
@@ -36994,8 +37106,10 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.Leashable$LeashData": typeof import("../types/net/minecraft/world/entity/Leashable$LeashData").Leashable$LeashData;
     "net.minecraft.world.entity.Leashable$Wrench": typeof import("../types/net/minecraft/world/entity/Leashable$Wrench").Leashable$Wrench;
     "net.minecraft.world.entity.LightningBolt": typeof import("../types/net/minecraft/world/entity/LightningBolt").LightningBolt;
+    "net.minecraft.world.entity.LivingEntity": typeof import("../types/net/minecraft/world/entity/LivingEntity").LivingEntity;
     "net.minecraft.world.entity.LivingEntity$Fallsounds": typeof import("../types/net/minecraft/world/entity/LivingEntity$Fallsounds").LivingEntity$Fallsounds;
     "net.minecraft.world.entity.Marker": typeof import("../types/net/minecraft/world/entity/Marker").Marker;
+    "net.minecraft.world.entity.Mob": typeof import("../types/net/minecraft/world/entity/Mob").Mob;
     "net.minecraft.world.entity.MobCategory": typeof import("../types/net/minecraft/world/entity/MobCategory").MobCategory;
     "net.minecraft.world.entity.MoverType": typeof import("../types/net/minecraft/world/entity/MoverType").MoverType;
     "net.minecraft.world.entity.OminousItemSpawner": typeof import("../types/net/minecraft/world/entity/OminousItemSpawner").OminousItemSpawner;
@@ -37309,13 +37423,16 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.ambient.Bat": typeof import("../types/net/minecraft/world/entity/ambient/Bat").Bat;
     "net.minecraft.world.entity.animal.AgeableWaterCreature": typeof import("../types/net/minecraft/world/entity/animal/AgeableWaterCreature").AgeableWaterCreature;
     "net.minecraft.world.entity.animal.Animal": typeof import("../types/net/minecraft/world/entity/animal/Animal").Animal;
+    "net.minecraft.world.entity.animal.allay.Allay": typeof import("../types/net/minecraft/world/entity/animal/allay/Allay").Allay;
     "net.minecraft.world.entity.animal.allay.Allay$JukeboxListener": typeof import("../types/net/minecraft/world/entity/animal/allay/Allay$JukeboxListener").Allay$JukeboxListener;
     "net.minecraft.world.entity.animal.allay.Allay$VibrationUser": typeof import("../types/net/minecraft/world/entity/animal/allay/Allay$VibrationUser").Allay$VibrationUser;
     "net.minecraft.world.entity.animal.allay.AllayAi": typeof import("../types/net/minecraft/world/entity/animal/allay/AllayAi").AllayAi;
+    "net.minecraft.world.entity.animal.armadillo.Armadillo": typeof import("../types/net/minecraft/world/entity/animal/armadillo/Armadillo").Armadillo;
     "net.minecraft.world.entity.animal.armadillo.Armadillo$ArmadilloState": typeof import("../types/net/minecraft/world/entity/animal/armadillo/Armadillo$ArmadilloState").Armadillo$ArmadilloState;
     "net.minecraft.world.entity.animal.armadillo.ArmadilloAi": typeof import("../types/net/minecraft/world/entity/animal/armadillo/ArmadilloAi").ArmadilloAi;
     "net.minecraft.world.entity.animal.armadillo.ArmadilloAi$ArmadilloBallUp": typeof import("../types/net/minecraft/world/entity/animal/armadillo/ArmadilloAi$ArmadilloBallUp").ArmadilloAi$ArmadilloBallUp;
     "net.minecraft.world.entity.animal.armadillo.ArmadilloAi$ArmadilloPanic": typeof import("../types/net/minecraft/world/entity/animal/armadillo/ArmadilloAi$ArmadilloPanic").ArmadilloAi$ArmadilloPanic;
+    "net.minecraft.world.entity.animal.axolotl.Axolotl": typeof import("../types/net/minecraft/world/entity/animal/axolotl/Axolotl").Axolotl;
     "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlAnimationState": typeof import("../types/net/minecraft/world/entity/animal/axolotl/Axolotl$AxolotlAnimationState").Axolotl$AxolotlAnimationState;
     "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlGroupData": typeof import("../types/net/minecraft/world/entity/animal/axolotl/Axolotl$AxolotlGroupData").Axolotl$AxolotlGroupData;
     "net.minecraft.world.entity.animal.axolotl.Axolotl$AxolotlLookControl": typeof import("../types/net/minecraft/world/entity/animal/axolotl/Axolotl$AxolotlLookControl").Axolotl$AxolotlLookControl;
@@ -37324,6 +37441,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.axolotl.AxolotlAi": typeof import("../types/net/minecraft/world/entity/animal/axolotl/AxolotlAi").AxolotlAi;
     "net.minecraft.world.entity.animal.axolotl.PlayDead": typeof import("../types/net/minecraft/world/entity/animal/axolotl/PlayDead").PlayDead;
     "net.minecraft.world.entity.animal.axolotl.ValidatePlayDead": typeof import("../types/net/minecraft/world/entity/animal/axolotl/ValidatePlayDead").ValidatePlayDead;
+    "net.minecraft.world.entity.animal.bee.Bee": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee").Bee;
     "net.minecraft.world.entity.animal.bee.Bee$BaseBeeGoal": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee$BaseBeeGoal").Bee$BaseBeeGoal;
     "net.minecraft.world.entity.animal.bee.Bee$BeeAttackGoal": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee$BeeAttackGoal").Bee$BeeAttackGoal;
     "net.minecraft.world.entity.animal.bee.Bee$BeeBecomeAngryTargetGoal": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee$BeeBecomeAngryTargetGoal").Bee$BeeBecomeAngryTargetGoal;
@@ -37338,6 +37456,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.bee.Bee$BeeWanderGoal": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee$BeeWanderGoal").Bee$BeeWanderGoal;
     "net.minecraft.world.entity.animal.bee.Bee$ValidateFlowerGoal": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee$ValidateFlowerGoal").Bee$ValidateFlowerGoal;
     "net.minecraft.world.entity.animal.bee.Bee$ValidateHiveGoal": typeof import("../types/net/minecraft/world/entity/animal/bee/Bee$ValidateHiveGoal").Bee$ValidateHiveGoal;
+    "net.minecraft.world.entity.animal.camel.Camel": typeof import("../types/net/minecraft/world/entity/animal/camel/Camel").Camel;
     "net.minecraft.world.entity.animal.camel.Camel$CamelBodyRotationControl": typeof import("../types/net/minecraft/world/entity/animal/camel/Camel$CamelBodyRotationControl").Camel$CamelBodyRotationControl;
     "net.minecraft.world.entity.animal.camel.Camel$CamelLookControl": typeof import("../types/net/minecraft/world/entity/animal/camel/Camel$CamelLookControl").Camel$CamelLookControl;
     "net.minecraft.world.entity.animal.camel.Camel$CamelMoveControl": typeof import("../types/net/minecraft/world/entity/animal/camel/Camel$CamelMoveControl").Camel$CamelMoveControl;
@@ -37345,6 +37464,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.camel.CamelAi$CamelPanic": typeof import("../types/net/minecraft/world/entity/animal/camel/CamelAi$CamelPanic").CamelAi$CamelPanic;
     "net.minecraft.world.entity.animal.camel.CamelAi$RandomSitting": typeof import("../types/net/minecraft/world/entity/animal/camel/CamelAi$RandomSitting").CamelAi$RandomSitting;
     "net.minecraft.world.entity.animal.camel.CamelHusk": typeof import("../types/net/minecraft/world/entity/animal/camel/CamelHusk").CamelHusk;
+    "net.minecraft.world.entity.animal.chicken.Chicken": typeof import("../types/net/minecraft/world/entity/animal/chicken/Chicken").Chicken;
     "net.minecraft.world.entity.animal.chicken.ChickenSoundVariant": typeof import("../types/net/minecraft/world/entity/animal/chicken/ChickenSoundVariant").ChickenSoundVariant;
     "net.minecraft.world.entity.animal.chicken.ChickenSoundVariant$ChickenSoundSet": typeof import("../types/net/minecraft/world/entity/animal/chicken/ChickenSoundVariant$ChickenSoundSet").ChickenSoundVariant$ChickenSoundSet;
     "net.minecraft.world.entity.animal.chicken.ChickenSoundVariants": typeof import("../types/net/minecraft/world/entity/animal/chicken/ChickenSoundVariants").ChickenSoundVariants;
@@ -37360,15 +37480,19 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.cow.CowVariant": typeof import("../types/net/minecraft/world/entity/animal/cow/CowVariant").CowVariant;
     "net.minecraft.world.entity.animal.cow.CowVariant$ModelType": typeof import("../types/net/minecraft/world/entity/animal/cow/CowVariant$ModelType").CowVariant$ModelType;
     "net.minecraft.world.entity.animal.cow.CowVariants": typeof import("../types/net/minecraft/world/entity/animal/cow/CowVariants").CowVariants;
+    "net.minecraft.world.entity.animal.cow.MushroomCow": typeof import("../types/net/minecraft/world/entity/animal/cow/MushroomCow").MushroomCow;
     "net.minecraft.world.entity.animal.cow.MushroomCow$Variant": typeof import("../types/net/minecraft/world/entity/animal/cow/MushroomCow$Variant").MushroomCow$Variant;
     "net.minecraft.world.entity.animal.dolphin.Dolphin": typeof import("../types/net/minecraft/world/entity/animal/dolphin/Dolphin").Dolphin;
     "net.minecraft.world.entity.animal.dolphin.Dolphin$DolphinSwimToTreasureGoal": typeof import("../types/net/minecraft/world/entity/animal/dolphin/Dolphin$DolphinSwimToTreasureGoal").Dolphin$DolphinSwimToTreasureGoal;
     "net.minecraft.world.entity.animal.dolphin.Dolphin$DolphinSwimWithPlayerGoal": typeof import("../types/net/minecraft/world/entity/animal/dolphin/Dolphin$DolphinSwimWithPlayerGoal").Dolphin$DolphinSwimWithPlayerGoal;
     "net.minecraft.world.entity.animal.dolphin.Dolphin$PlayWithItemsGoal": typeof import("../types/net/minecraft/world/entity/animal/dolphin/Dolphin$PlayWithItemsGoal").Dolphin$PlayWithItemsGoal;
     "net.minecraft.world.entity.animal.equine.AbstractChestedHorse": typeof import("../types/net/minecraft/world/entity/animal/equine/AbstractChestedHorse").AbstractChestedHorse;
+    "net.minecraft.world.entity.animal.equine.AbstractHorse": typeof import("../types/net/minecraft/world/entity/animal/equine/AbstractHorse").AbstractHorse;
     "net.minecraft.world.entity.animal.equine.AbstractHorse$MountPanicGoal": typeof import("../types/net/minecraft/world/entity/animal/equine/AbstractHorse$MountPanicGoal").AbstractHorse$MountPanicGoal;
     "net.minecraft.world.entity.animal.equine.Donkey": typeof import("../types/net/minecraft/world/entity/animal/equine/Donkey").Donkey;
+    "net.minecraft.world.entity.animal.equine.Horse": typeof import("../types/net/minecraft/world/entity/animal/equine/Horse").Horse;
     "net.minecraft.world.entity.animal.equine.Horse$HorseGroupData": typeof import("../types/net/minecraft/world/entity/animal/equine/Horse$HorseGroupData").Horse$HorseGroupData;
+    "net.minecraft.world.entity.animal.equine.Llama": typeof import("../types/net/minecraft/world/entity/animal/equine/Llama").Llama;
     "net.minecraft.world.entity.animal.equine.Llama$LlamaAttackWolfGoal": typeof import("../types/net/minecraft/world/entity/animal/equine/Llama$LlamaAttackWolfGoal").Llama$LlamaAttackWolfGoal;
     "net.minecraft.world.entity.animal.equine.Llama$LlamaGroupData": typeof import("../types/net/minecraft/world/entity/animal/equine/Llama$LlamaGroupData").Llama$LlamaGroupData;
     "net.minecraft.world.entity.animal.equine.Llama$LlamaHurtByTargetGoal": typeof import("../types/net/minecraft/world/entity/animal/equine/Llama$LlamaHurtByTargetGoal").Llama$LlamaHurtByTargetGoal;
@@ -37381,6 +37505,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.equine.TraderLlama$TraderLlamaDefendWanderingTraderGoal": typeof import("../types/net/minecraft/world/entity/animal/equine/TraderLlama$TraderLlamaDefendWanderingTraderGoal").TraderLlama$TraderLlamaDefendWanderingTraderGoal;
     "net.minecraft.world.entity.animal.equine.Variant": typeof import("../types/net/minecraft/world/entity/animal/equine/Variant").Variant;
     "net.minecraft.world.entity.animal.equine.ZombieHorse": typeof import("../types/net/minecraft/world/entity/animal/equine/ZombieHorse").ZombieHorse;
+    "net.minecraft.world.entity.animal.feline.Cat": typeof import("../types/net/minecraft/world/entity/animal/feline/Cat").Cat;
     "net.minecraft.world.entity.animal.feline.Cat$CatAvoidEntityGoal": typeof import("../types/net/minecraft/world/entity/animal/feline/Cat$CatAvoidEntityGoal").Cat$CatAvoidEntityGoal;
     "net.minecraft.world.entity.animal.feline.Cat$CatRelaxOnOwnerGoal": typeof import("../types/net/minecraft/world/entity/animal/feline/Cat$CatRelaxOnOwnerGoal").Cat$CatRelaxOnOwnerGoal;
     "net.minecraft.world.entity.animal.feline.Cat$CatTemptGoal": typeof import("../types/net/minecraft/world/entity/animal/feline/Cat$CatTemptGoal").Cat$CatTemptGoal;
@@ -37408,6 +37533,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.fish.TropicalFish$TropicalFishGroupData": typeof import("../types/net/minecraft/world/entity/animal/fish/TropicalFish$TropicalFishGroupData").TropicalFish$TropicalFishGroupData;
     "net.minecraft.world.entity.animal.fish.TropicalFish$Variant": typeof import("../types/net/minecraft/world/entity/animal/fish/TropicalFish$Variant").TropicalFish$Variant;
     "net.minecraft.world.entity.animal.fish.WaterAnimal": typeof import("../types/net/minecraft/world/entity/animal/fish/WaterAnimal").WaterAnimal;
+    "net.minecraft.world.entity.animal.fox.Fox": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox").Fox;
     "net.minecraft.world.entity.animal.fox.Fox$DefendTrustedTargetGoal": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox$DefendTrustedTargetGoal").Fox$DefendTrustedTargetGoal;
     "net.minecraft.world.entity.animal.fox.Fox$FaceplantGoal": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox$FaceplantGoal").Fox$FaceplantGoal;
     "net.minecraft.world.entity.animal.fox.Fox$FoxAlertableEntitiesSelector": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox$FoxAlertableEntitiesSelector").Fox$FoxAlertableEntitiesSelector;
@@ -37430,6 +37556,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.fox.Fox$SleepGoal": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox$SleepGoal").Fox$SleepGoal;
     "net.minecraft.world.entity.animal.fox.Fox$StalkPreyGoal": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox$StalkPreyGoal").Fox$StalkPreyGoal;
     "net.minecraft.world.entity.animal.fox.Fox$Variant": typeof import("../types/net/minecraft/world/entity/animal/fox/Fox$Variant").Fox$Variant;
+    "net.minecraft.world.entity.animal.frog.Frog": typeof import("../types/net/minecraft/world/entity/animal/frog/Frog").Frog;
     "net.minecraft.world.entity.animal.frog.Frog$FrogLookControl": typeof import("../types/net/minecraft/world/entity/animal/frog/Frog$FrogLookControl").Frog$FrogLookControl;
     "net.minecraft.world.entity.animal.frog.Frog$FrogNodeEvaluator": typeof import("../types/net/minecraft/world/entity/animal/frog/Frog$FrogNodeEvaluator").Frog$FrogNodeEvaluator;
     "net.minecraft.world.entity.animal.frog.Frog$FrogPathNavigation": typeof import("../types/net/minecraft/world/entity/animal/frog/Frog$FrogPathNavigation").Frog$FrogPathNavigation;
@@ -37442,23 +37569,28 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.goat.Goat": typeof import("../types/net/minecraft/world/entity/animal/goat/Goat").Goat;
     "net.minecraft.world.entity.animal.goat.GoatAi": typeof import("../types/net/minecraft/world/entity/animal/goat/GoatAi").GoatAi;
     "net.minecraft.world.entity.animal.golem.AbstractGolem": typeof import("../types/net/minecraft/world/entity/animal/golem/AbstractGolem").AbstractGolem;
+    "net.minecraft.world.entity.animal.golem.CopperGolem": typeof import("../types/net/minecraft/world/entity/animal/golem/CopperGolem").CopperGolem;
     "net.minecraft.world.entity.animal.golem.CopperGolemAi": typeof import("../types/net/minecraft/world/entity/animal/golem/CopperGolemAi").CopperGolemAi;
     "net.minecraft.world.entity.animal.golem.CopperGolemOxidationLevel": typeof import("../types/net/minecraft/world/entity/animal/golem/CopperGolemOxidationLevel").CopperGolemOxidationLevel;
     "net.minecraft.world.entity.animal.golem.CopperGolemOxidationLevels": typeof import("../types/net/minecraft/world/entity/animal/golem/CopperGolemOxidationLevels").CopperGolemOxidationLevels;
     "net.minecraft.world.entity.animal.golem.CopperGolemState": typeof import("../types/net/minecraft/world/entity/animal/golem/CopperGolemState").CopperGolemState;
     "net.minecraft.world.entity.animal.golem.IronGolem": typeof import("../types/net/minecraft/world/entity/animal/golem/IronGolem").IronGolem;
     "net.minecraft.world.entity.animal.golem.SnowGolem": typeof import("../types/net/minecraft/world/entity/animal/golem/SnowGolem").SnowGolem;
+    "net.minecraft.world.entity.animal.happyghast.HappyGhast": typeof import("../types/net/minecraft/world/entity/animal/happyghast/HappyGhast").HappyGhast;
     "net.minecraft.world.entity.animal.happyghast.HappyGhast$BabyFlyingPathNavigation": typeof import("../types/net/minecraft/world/entity/animal/happyghast/HappyGhast$BabyFlyingPathNavigation").HappyGhast$BabyFlyingPathNavigation;
     "net.minecraft.world.entity.animal.happyghast.HappyGhast$HappyGhastBodyRotationControl": typeof import("../types/net/minecraft/world/entity/animal/happyghast/HappyGhast$HappyGhastBodyRotationControl").HappyGhast$HappyGhastBodyRotationControl;
     "net.minecraft.world.entity.animal.happyghast.HappyGhast$HappyGhastFloatGoal": typeof import("../types/net/minecraft/world/entity/animal/happyghast/HappyGhast$HappyGhastFloatGoal").HappyGhast$HappyGhastFloatGoal;
     "net.minecraft.world.entity.animal.happyghast.HappyGhast$HappyGhastLookControl": typeof import("../types/net/minecraft/world/entity/animal/happyghast/HappyGhast$HappyGhastLookControl").HappyGhast$HappyGhastLookControl;
     "net.minecraft.world.entity.animal.happyghast.HappyGhastAi": typeof import("../types/net/minecraft/world/entity/animal/happyghast/HappyGhastAi").HappyGhastAi;
+    "net.minecraft.world.entity.animal.nautilus.AbstractNautilus": typeof import("../types/net/minecraft/world/entity/animal/nautilus/AbstractNautilus").AbstractNautilus;
     "net.minecraft.world.entity.animal.nautilus.Nautilus": typeof import("../types/net/minecraft/world/entity/animal/nautilus/Nautilus").Nautilus;
     "net.minecraft.world.entity.animal.nautilus.NautilusAi": typeof import("../types/net/minecraft/world/entity/animal/nautilus/NautilusAi").NautilusAi;
+    "net.minecraft.world.entity.animal.nautilus.ZombieNautilus": typeof import("../types/net/minecraft/world/entity/animal/nautilus/ZombieNautilus").ZombieNautilus;
     "net.minecraft.world.entity.animal.nautilus.ZombieNautilusAi": typeof import("../types/net/minecraft/world/entity/animal/nautilus/ZombieNautilusAi").ZombieNautilusAi;
     "net.minecraft.world.entity.animal.nautilus.ZombieNautilusVariant": typeof import("../types/net/minecraft/world/entity/animal/nautilus/ZombieNautilusVariant").ZombieNautilusVariant;
     "net.minecraft.world.entity.animal.nautilus.ZombieNautilusVariant$ModelType": typeof import("../types/net/minecraft/world/entity/animal/nautilus/ZombieNautilusVariant$ModelType").ZombieNautilusVariant$ModelType;
     "net.minecraft.world.entity.animal.nautilus.ZombieNautilusVariants": typeof import("../types/net/minecraft/world/entity/animal/nautilus/ZombieNautilusVariants").ZombieNautilusVariants;
+    "net.minecraft.world.entity.animal.panda.Panda": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda").Panda;
     "net.minecraft.world.entity.animal.panda.Panda$Gene": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda$Gene").Panda$Gene;
     "net.minecraft.world.entity.animal.panda.Panda$PandaAttackGoal": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda$PandaAttackGoal").Panda$PandaAttackGoal;
     "net.minecraft.world.entity.animal.panda.Panda$PandaAvoidGoal": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda$PandaAvoidGoal").Panda$PandaAvoidGoal;
@@ -37471,9 +37603,11 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.panda.Panda$PandaRollGoal": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda$PandaRollGoal").Panda$PandaRollGoal;
     "net.minecraft.world.entity.animal.panda.Panda$PandaSitGoal": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda$PandaSitGoal").Panda$PandaSitGoal;
     "net.minecraft.world.entity.animal.panda.Panda$PandaSneezeGoal": typeof import("../types/net/minecraft/world/entity/animal/panda/Panda$PandaSneezeGoal").Panda$PandaSneezeGoal;
+    "net.minecraft.world.entity.animal.parrot.Parrot": typeof import("../types/net/minecraft/world/entity/animal/parrot/Parrot").Parrot;
     "net.minecraft.world.entity.animal.parrot.Parrot$ParrotWanderGoal": typeof import("../types/net/minecraft/world/entity/animal/parrot/Parrot$ParrotWanderGoal").Parrot$ParrotWanderGoal;
     "net.minecraft.world.entity.animal.parrot.Parrot$Variant": typeof import("../types/net/minecraft/world/entity/animal/parrot/Parrot$Variant").Parrot$Variant;
     "net.minecraft.world.entity.animal.parrot.ShoulderRidingEntity": typeof import("../types/net/minecraft/world/entity/animal/parrot/ShoulderRidingEntity").ShoulderRidingEntity;
+    "net.minecraft.world.entity.animal.pig.Pig": typeof import("../types/net/minecraft/world/entity/animal/pig/Pig").Pig;
     "net.minecraft.world.entity.animal.pig.PigSoundVariant": typeof import("../types/net/minecraft/world/entity/animal/pig/PigSoundVariant").PigSoundVariant;
     "net.minecraft.world.entity.animal.pig.PigSoundVariant$PigSoundSet": typeof import("../types/net/minecraft/world/entity/animal/pig/PigSoundVariant$PigSoundSet").PigSoundVariant$PigSoundSet;
     "net.minecraft.world.entity.animal.pig.PigSoundVariants": typeof import("../types/net/minecraft/world/entity/animal/pig/PigSoundVariants").PigSoundVariants;
@@ -37485,6 +37619,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.polarbear.PolarBear$PolarBearAttackPlayersGoal": typeof import("../types/net/minecraft/world/entity/animal/polarbear/PolarBear$PolarBearAttackPlayersGoal").PolarBear$PolarBearAttackPlayersGoal;
     "net.minecraft.world.entity.animal.polarbear.PolarBear$PolarBearHurtByTargetGoal": typeof import("../types/net/minecraft/world/entity/animal/polarbear/PolarBear$PolarBearHurtByTargetGoal").PolarBear$PolarBearHurtByTargetGoal;
     "net.minecraft.world.entity.animal.polarbear.PolarBear$PolarBearMeleeAttackGoal": typeof import("../types/net/minecraft/world/entity/animal/polarbear/PolarBear$PolarBearMeleeAttackGoal").PolarBear$PolarBearMeleeAttackGoal;
+    "net.minecraft.world.entity.animal.rabbit.Rabbit": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit").Rabbit;
     "net.minecraft.world.entity.animal.rabbit.Rabbit$RabbitAvoidEntityGoal": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit$RabbitAvoidEntityGoal").Rabbit$RabbitAvoidEntityGoal;
     "net.minecraft.world.entity.animal.rabbit.Rabbit$RabbitGroupData": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit$RabbitGroupData").Rabbit$RabbitGroupData;
     "net.minecraft.world.entity.animal.rabbit.Rabbit$RabbitJumpControl": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit$RabbitJumpControl").Rabbit$RabbitJumpControl;
@@ -37492,8 +37627,10 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.rabbit.Rabbit$RabbitPanicGoal": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit$RabbitPanicGoal").Rabbit$RabbitPanicGoal;
     "net.minecraft.world.entity.animal.rabbit.Rabbit$RaidGardenGoal": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit$RaidGardenGoal").Rabbit$RaidGardenGoal;
     "net.minecraft.world.entity.animal.rabbit.Rabbit$Variant": typeof import("../types/net/minecraft/world/entity/animal/rabbit/Rabbit$Variant").Rabbit$Variant;
+    "net.minecraft.world.entity.animal.sheep.Sheep": typeof import("../types/net/minecraft/world/entity/animal/sheep/Sheep").Sheep;
     "net.minecraft.world.entity.animal.sheep.SheepColorSpawnRules": typeof import("../types/net/minecraft/world/entity/animal/sheep/SheepColorSpawnRules").SheepColorSpawnRules;
     "net.minecraft.world.entity.animal.sheep.SheepColorSpawnRules$SheepColorSpawnConfiguration": typeof import("../types/net/minecraft/world/entity/animal/sheep/SheepColorSpawnRules$SheepColorSpawnConfiguration").SheepColorSpawnRules$SheepColorSpawnConfiguration;
+    "net.minecraft.world.entity.animal.sniffer.Sniffer": typeof import("../types/net/minecraft/world/entity/animal/sniffer/Sniffer").Sniffer;
     "net.minecraft.world.entity.animal.sniffer.Sniffer$State": typeof import("../types/net/minecraft/world/entity/animal/sniffer/Sniffer$State").Sniffer$State;
     "net.minecraft.world.entity.animal.sniffer.SnifferAi": typeof import("../types/net/minecraft/world/entity/animal/sniffer/SnifferAi").SnifferAi;
     "net.minecraft.world.entity.animal.sniffer.SnifferAi$Digging": typeof import("../types/net/minecraft/world/entity/animal/sniffer/SnifferAi$Digging").SnifferAi$Digging;
@@ -37506,6 +37643,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.squid.Squid": typeof import("../types/net/minecraft/world/entity/animal/squid/Squid").Squid;
     "net.minecraft.world.entity.animal.squid.Squid$SquidFleeGoal": typeof import("../types/net/minecraft/world/entity/animal/squid/Squid$SquidFleeGoal").Squid$SquidFleeGoal;
     "net.minecraft.world.entity.animal.squid.Squid$SquidRandomMovementGoal": typeof import("../types/net/minecraft/world/entity/animal/squid/Squid$SquidRandomMovementGoal").Squid$SquidRandomMovementGoal;
+    "net.minecraft.world.entity.animal.turtle.Turtle": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle").Turtle;
     "net.minecraft.world.entity.animal.turtle.Turtle$TurtleBreedGoal": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle$TurtleBreedGoal").Turtle$TurtleBreedGoal;
     "net.minecraft.world.entity.animal.turtle.Turtle$TurtleGoHomeGoal": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle$TurtleGoHomeGoal").Turtle$TurtleGoHomeGoal;
     "net.minecraft.world.entity.animal.turtle.Turtle$TurtleGoToWaterGoal": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle$TurtleGoToWaterGoal").Turtle$TurtleGoToWaterGoal;
@@ -37515,6 +37653,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.animal.turtle.Turtle$TurtlePathNavigation": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle$TurtlePathNavigation").Turtle$TurtlePathNavigation;
     "net.minecraft.world.entity.animal.turtle.Turtle$TurtleRandomStrollGoal": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle$TurtleRandomStrollGoal").Turtle$TurtleRandomStrollGoal;
     "net.minecraft.world.entity.animal.turtle.Turtle$TurtleTravelGoal": typeof import("../types/net/minecraft/world/entity/animal/turtle/Turtle$TurtleTravelGoal").Turtle$TurtleTravelGoal;
+    "net.minecraft.world.entity.animal.wolf.Wolf": typeof import("../types/net/minecraft/world/entity/animal/wolf/Wolf").Wolf;
     "net.minecraft.world.entity.animal.wolf.Wolf$WolfAvoidEntityGoal": typeof import("../types/net/minecraft/world/entity/animal/wolf/Wolf$WolfAvoidEntityGoal").Wolf$WolfAvoidEntityGoal;
     "net.minecraft.world.entity.animal.wolf.Wolf$WolfPackData": typeof import("../types/net/minecraft/world/entity/animal/wolf/Wolf$WolfPackData").Wolf$WolfPackData;
     "net.minecraft.world.entity.animal.wolf.WolfSoundVariant": typeof import("../types/net/minecraft/world/entity/animal/wolf/WolfSoundVariant").WolfSoundVariant;
@@ -37527,6 +37666,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.boss.enderdragon.DragonFlightHistory": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/DragonFlightHistory").DragonFlightHistory;
     "net.minecraft.world.entity.boss.enderdragon.DragonFlightHistory$Sample": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/DragonFlightHistory$Sample").DragonFlightHistory$Sample;
     "net.minecraft.world.entity.boss.enderdragon.EndCrystal": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/EndCrystal").EndCrystal;
+    "net.minecraft.world.entity.boss.enderdragon.EnderDragon": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/EnderDragon").EnderDragon;
     "net.minecraft.world.entity.boss.enderdragon.EnderDragonPart": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/EnderDragonPart").EnderDragonPart;
     "net.minecraft.world.entity.boss.enderdragon.phases.AbstractDragonPhaseInstance": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/phases/AbstractDragonPhaseInstance").AbstractDragonPhaseInstance;
     "net.minecraft.world.entity.boss.enderdragon.phases.AbstractDragonSittingPhase": typeof import("../types/net/minecraft/world/entity/boss/enderdragon/phases/AbstractDragonSittingPhase").AbstractDragonSittingPhase;
@@ -37594,6 +37734,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.monster.Phantom$PhantomMoveTargetGoal": typeof import("../types/net/minecraft/world/entity/monster/Phantom$PhantomMoveTargetGoal").Phantom$PhantomMoveTargetGoal;
     "net.minecraft.world.entity.monster.Phantom$PhantomSweepAttackGoal": typeof import("../types/net/minecraft/world/entity/monster/Phantom$PhantomSweepAttackGoal").Phantom$PhantomSweepAttackGoal;
     "net.minecraft.world.entity.monster.Ravager": typeof import("../types/net/minecraft/world/entity/monster/Ravager").Ravager;
+    "net.minecraft.world.entity.monster.Shulker": typeof import("../types/net/minecraft/world/entity/monster/Shulker").Shulker;
     "net.minecraft.world.entity.monster.Shulker$ShulkerAttackGoal": typeof import("../types/net/minecraft/world/entity/monster/Shulker$ShulkerAttackGoal").Shulker$ShulkerAttackGoal;
     "net.minecraft.world.entity.monster.Shulker$ShulkerBodyRotationControl": typeof import("../types/net/minecraft/world/entity/monster/Shulker$ShulkerBodyRotationControl").Shulker$ShulkerBodyRotationControl;
     "net.minecraft.world.entity.monster.Shulker$ShulkerDefenseAttackGoal": typeof import("../types/net/minecraft/world/entity/monster/Shulker$ShulkerDefenseAttackGoal").Shulker$ShulkerDefenseAttackGoal;
@@ -37609,6 +37750,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.monster.Slime$SlimeKeepOnJumpingGoal": typeof import("../types/net/minecraft/world/entity/monster/Slime$SlimeKeepOnJumpingGoal").Slime$SlimeKeepOnJumpingGoal;
     "net.minecraft.world.entity.monster.Slime$SlimeMoveControl": typeof import("../types/net/minecraft/world/entity/monster/Slime$SlimeMoveControl").Slime$SlimeMoveControl;
     "net.minecraft.world.entity.monster.Slime$SlimeRandomDirectionGoal": typeof import("../types/net/minecraft/world/entity/monster/Slime$SlimeRandomDirectionGoal").Slime$SlimeRandomDirectionGoal;
+    "net.minecraft.world.entity.monster.Strider": typeof import("../types/net/minecraft/world/entity/monster/Strider").Strider;
     "net.minecraft.world.entity.monster.Strider$StriderGoToLavaGoal": typeof import("../types/net/minecraft/world/entity/monster/Strider$StriderGoToLavaGoal").Strider$StriderGoToLavaGoal;
     "net.minecraft.world.entity.monster.Strider$StriderPathNavigation": typeof import("../types/net/minecraft/world/entity/monster/Strider$StriderPathNavigation").Strider$StriderPathNavigation;
     "net.minecraft.world.entity.monster.Vex": typeof import("../types/net/minecraft/world/entity/monster/Vex").Vex;
@@ -37634,6 +37776,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.monster.creaking.Creaking$CreakingPathNavigation": typeof import("../types/net/minecraft/world/entity/monster/creaking/Creaking$CreakingPathNavigation").Creaking$CreakingPathNavigation;
     "net.minecraft.world.entity.monster.creaking.Creaking$HomeNodeEvaluator": typeof import("../types/net/minecraft/world/entity/monster/creaking/Creaking$HomeNodeEvaluator").Creaking$HomeNodeEvaluator;
     "net.minecraft.world.entity.monster.creaking.CreakingAi": typeof import("../types/net/minecraft/world/entity/monster/creaking/CreakingAi").CreakingAi;
+    "net.minecraft.world.entity.monster.hoglin.Hoglin": typeof import("../types/net/minecraft/world/entity/monster/hoglin/Hoglin").Hoglin;
     "net.minecraft.world.entity.monster.hoglin.HoglinAi": typeof import("../types/net/minecraft/world/entity/monster/hoglin/HoglinAi").HoglinAi;
     "net.minecraft.world.entity.monster.illager.AbstractIllager": typeof import("../types/net/minecraft/world/entity/monster/illager/AbstractIllager").AbstractIllager;
     "net.minecraft.world.entity.monster.illager.AbstractIllager$IllagerArmPose": typeof import("../types/net/minecraft/world/entity/monster/illager/AbstractIllager$IllagerArmPose").AbstractIllager$IllagerArmPose;
@@ -37655,6 +37798,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.monster.illager.Vindicator$VindicatorBreakDoorGoal": typeof import("../types/net/minecraft/world/entity/monster/illager/Vindicator$VindicatorBreakDoorGoal").Vindicator$VindicatorBreakDoorGoal;
     "net.minecraft.world.entity.monster.illager.Vindicator$VindicatorJohnnyAttackGoal": typeof import("../types/net/minecraft/world/entity/monster/illager/Vindicator$VindicatorJohnnyAttackGoal").Vindicator$VindicatorJohnnyAttackGoal;
     "net.minecraft.world.entity.monster.piglin.AbstractPiglin": typeof import("../types/net/minecraft/world/entity/monster/piglin/AbstractPiglin").AbstractPiglin;
+    "net.minecraft.world.entity.monster.piglin.Piglin": typeof import("../types/net/minecraft/world/entity/monster/piglin/Piglin").Piglin;
     "net.minecraft.world.entity.monster.piglin.PiglinAi": typeof import("../types/net/minecraft/world/entity/monster/piglin/PiglinAi").PiglinAi;
     "net.minecraft.world.entity.monster.piglin.PiglinArmPose": typeof import("../types/net/minecraft/world/entity/monster/piglin/PiglinArmPose").PiglinArmPose;
     "net.minecraft.world.entity.monster.piglin.PiglinBrute": typeof import("../types/net/minecraft/world/entity/monster/piglin/PiglinBrute").PiglinBrute;
@@ -37679,6 +37823,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.monster.warden.AngerLevel": typeof import("../types/net/minecraft/world/entity/monster/warden/AngerLevel").AngerLevel;
     "net.minecraft.world.entity.monster.warden.AngerManagement": typeof import("../types/net/minecraft/world/entity/monster/warden/AngerManagement").AngerManagement;
     "net.minecraft.world.entity.monster.warden.AngerManagement$Sorter": typeof import("../types/net/minecraft/world/entity/monster/warden/AngerManagement$Sorter").AngerManagement$Sorter;
+    "net.minecraft.world.entity.monster.warden.Warden": typeof import("../types/net/minecraft/world/entity/monster/warden/Warden").Warden;
     "net.minecraft.world.entity.monster.warden.Warden$VibrationUser": typeof import("../types/net/minecraft/world/entity/monster/warden/Warden$VibrationUser").Warden$VibrationUser;
     "net.minecraft.world.entity.monster.warden.WardenAi": typeof import("../types/net/minecraft/world/entity/monster/warden/WardenAi").WardenAi;
     "net.minecraft.world.entity.monster.warden.WardenSpawnTracker": typeof import("../types/net/minecraft/world/entity/monster/warden/WardenSpawnTracker").WardenSpawnTracker;
@@ -37694,9 +37839,12 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.monster.zombie.Zombie": typeof import("../types/net/minecraft/world/entity/monster/zombie/Zombie").Zombie;
     "net.minecraft.world.entity.monster.zombie.Zombie$ZombieAttackTurtleEggGoal": typeof import("../types/net/minecraft/world/entity/monster/zombie/Zombie$ZombieAttackTurtleEggGoal").Zombie$ZombieAttackTurtleEggGoal;
     "net.minecraft.world.entity.monster.zombie.Zombie$ZombieGroupData": typeof import("../types/net/minecraft/world/entity/monster/zombie/Zombie$ZombieGroupData").Zombie$ZombieGroupData;
+    "net.minecraft.world.entity.monster.zombie.ZombieVillager": typeof import("../types/net/minecraft/world/entity/monster/zombie/ZombieVillager").ZombieVillager;
     "net.minecraft.world.entity.monster.zombie.ZombifiedPiglin": typeof import("../types/net/minecraft/world/entity/monster/zombie/ZombifiedPiglin").ZombifiedPiglin;
     "net.minecraft.world.entity.npc.CatSpawner": typeof import("../types/net/minecraft/world/entity/npc/CatSpawner").CatSpawner;
     "net.minecraft.world.entity.npc.ClientSideMerchant": typeof import("../types/net/minecraft/world/entity/npc/ClientSideMerchant").ClientSideMerchant;
+    "net.minecraft.world.entity.npc.villager.AbstractVillager": typeof import("../types/net/minecraft/world/entity/npc/villager/AbstractVillager").AbstractVillager;
+    "net.minecraft.world.entity.npc.villager.Villager": typeof import("../types/net/minecraft/world/entity/npc/villager/Villager").Villager;
     "net.minecraft.world.entity.npc.villager.VillagerData": typeof import("../types/net/minecraft/world/entity/npc/villager/VillagerData").VillagerData;
     "net.minecraft.world.entity.npc.villager.VillagerProfession": typeof import("../types/net/minecraft/world/entity/npc/villager/VillagerProfession").VillagerProfession;
     "net.minecraft.world.entity.npc.villager.VillagerType": typeof import("../types/net/minecraft/world/entity/npc/villager/VillagerType").VillagerType;
@@ -37707,6 +37855,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.entity.player.Abilities$Packed": typeof import("../types/net/minecraft/world/entity/player/Abilities$Packed").Abilities$Packed;
     "net.minecraft.world.entity.player.ChatVisiblity": typeof import("../types/net/minecraft/world/entity/player/ChatVisiblity").ChatVisiblity;
     "net.minecraft.world.entity.player.Input": typeof import("../types/net/minecraft/world/entity/player/Input").Input;
+    "net.minecraft.world.entity.player.Player": typeof import("../types/net/minecraft/world/entity/player/Player").Player;
     "net.minecraft.world.entity.player.Player$BedSleepingProblem": typeof import("../types/net/minecraft/world/entity/player/Player$BedSleepingProblem").Player$BedSleepingProblem;
     "net.minecraft.world.entity.player.PlayerEquipment": typeof import("../types/net/minecraft/world/entity/player/PlayerEquipment").PlayerEquipment;
     "net.minecraft.world.entity.player.PlayerModelPart": typeof import("../types/net/minecraft/world/entity/player/PlayerModelPart").PlayerModelPart;
@@ -37912,11 +38061,13 @@ interface JavaTypeRegistry {
     "net.minecraft.world.item.InkSacItem": typeof import("../types/net/minecraft/world/item/InkSacItem").InkSacItem;
     "net.minecraft.world.item.Instrument": typeof import("../types/net/minecraft/world/item/Instrument").Instrument;
     "net.minecraft.world.item.InstrumentItem": typeof import("../types/net/minecraft/world/item/InstrumentItem").InstrumentItem;
+    "net.minecraft.world.item.Item": typeof import("../types/net/minecraft/world/item/Item").Item;
     "net.minecraft.world.item.Item$Properties": typeof import("../types/net/minecraft/world/item/Item$Properties").Item$Properties;
     "net.minecraft.world.item.ItemCooldowns": typeof import("../types/net/minecraft/world/item/ItemCooldowns").ItemCooldowns;
     "net.minecraft.world.item.ItemCooldowns$CooldownInstance": typeof import("../types/net/minecraft/world/item/ItemCooldowns$CooldownInstance").ItemCooldowns$CooldownInstance;
     "net.minecraft.world.item.ItemDisplayContext": typeof import("../types/net/minecraft/world/item/ItemDisplayContext").ItemDisplayContext;
     "net.minecraft.world.item.ItemFrameItem": typeof import("../types/net/minecraft/world/item/ItemFrameItem").ItemFrameItem;
+    "net.minecraft.world.item.ItemStack": typeof import("../types/net/minecraft/world/item/ItemStack").ItemStack;
     "net.minecraft.world.item.ItemStackLinkedSet": typeof import("../types/net/minecraft/world/item/ItemStackLinkedSet").ItemStackLinkedSet;
     "net.minecraft.world.item.ItemStackTemplate": typeof import("../types/net/minecraft/world/item/ItemStackTemplate").ItemStackTemplate;
     "net.minecraft.world.item.ItemUseAnimation": typeof import("../types/net/minecraft/world/item/ItemUseAnimation").ItemUseAnimation;
@@ -38220,6 +38371,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.FoliageColor": typeof import("../types/net/minecraft/world/level/FoliageColor").FoliageColor;
     "net.minecraft.world.level.GameType": typeof import("../types/net/minecraft/world/level/GameType").GameType;
     "net.minecraft.world.level.GrassColor": typeof import("../types/net/minecraft/world/level/GrassColor").GrassColor;
+    "net.minecraft.world.level.Level": typeof import("../types/net/minecraft/world/level/Level").Level;
     "net.minecraft.world.level.Level$ExplosionInteraction": typeof import("../types/net/minecraft/world/level/Level$ExplosionInteraction").Level$ExplosionInteraction;
     "net.minecraft.world.level.LevelSettings": typeof import("../types/net/minecraft/world/level/LevelSettings").LevelSettings;
     "net.minecraft.world.level.LevelSettings$DifficultySettings": typeof import("../types/net/minecraft/world/level/LevelSettings$DifficultySettings").LevelSettings$DifficultySettings;
@@ -38309,8 +38461,11 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.BaseRailBlock": typeof import("../types/net/minecraft/world/level/block/BaseRailBlock").BaseRailBlock;
     "net.minecraft.world.level.block.BaseTorchBlock": typeof import("../types/net/minecraft/world/level/block/BaseTorchBlock").BaseTorchBlock;
     "net.minecraft.world.level.block.BeaconBlock": typeof import("../types/net/minecraft/world/level/block/BeaconBlock").BeaconBlock;
+    "net.minecraft.world.level.block.BedBlock": typeof import("../types/net/minecraft/world/level/block/BedBlock").BedBlock;
     "net.minecraft.world.level.block.BeehiveBlock": typeof import("../types/net/minecraft/world/level/block/BeehiveBlock").BeehiveBlock;
     "net.minecraft.world.level.block.BeetrootBlock": typeof import("../types/net/minecraft/world/level/block/BeetrootBlock").BeetrootBlock;
+    "net.minecraft.world.level.block.BellBlock": typeof import("../types/net/minecraft/world/level/block/BellBlock").BellBlock;
+    "net.minecraft.world.level.block.BigDripleafBlock": typeof import("../types/net/minecraft/world/level/block/BigDripleafBlock").BigDripleafBlock;
     "net.minecraft.world.level.block.BigDripleafStemBlock": typeof import("../types/net/minecraft/world/level/block/BigDripleafStemBlock").BigDripleafStemBlock;
     "net.minecraft.world.level.block.BlastFurnaceBlock": typeof import("../types/net/minecraft/world/level/block/BlastFurnaceBlock").BlastFurnaceBlock;
     "net.minecraft.world.level.block.Block": typeof import("../types/net/minecraft/world/level/block/Block").Block;
@@ -38329,6 +38484,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.CactusFlowerBlock": typeof import("../types/net/minecraft/world/level/block/CactusFlowerBlock").CactusFlowerBlock;
     "net.minecraft.world.level.block.CakeBlock": typeof import("../types/net/minecraft/world/level/block/CakeBlock").CakeBlock;
     "net.minecraft.world.level.block.CalibratedSculkSensorBlock": typeof import("../types/net/minecraft/world/level/block/CalibratedSculkSensorBlock").CalibratedSculkSensorBlock;
+    "net.minecraft.world.level.block.CampfireBlock": typeof import("../types/net/minecraft/world/level/block/CampfireBlock").CampfireBlock;
     "net.minecraft.world.level.block.CandleBlock": typeof import("../types/net/minecraft/world/level/block/CandleBlock").CandleBlock;
     "net.minecraft.world.level.block.CandleCakeBlock": typeof import("../types/net/minecraft/world/level/block/CandleCakeBlock").CandleCakeBlock;
     "net.minecraft.world.level.block.CarpetBlock": typeof import("../types/net/minecraft/world/level/block/CarpetBlock").CarpetBlock;
@@ -38338,7 +38494,9 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.CauldronBlock": typeof import("../types/net/minecraft/world/level/block/CauldronBlock").CauldronBlock;
     "net.minecraft.world.level.block.CaveVinesBlock": typeof import("../types/net/minecraft/world/level/block/CaveVinesBlock").CaveVinesBlock;
     "net.minecraft.world.level.block.CaveVinesPlantBlock": typeof import("../types/net/minecraft/world/level/block/CaveVinesPlantBlock").CaveVinesPlantBlock;
+    "net.minecraft.world.level.block.CeilingHangingSignBlock": typeof import("../types/net/minecraft/world/level/block/CeilingHangingSignBlock").CeilingHangingSignBlock;
     "net.minecraft.world.level.block.ChainBlock": typeof import("../types/net/minecraft/world/level/block/ChainBlock").ChainBlock;
+    "net.minecraft.world.level.block.ChestBlock": typeof import("../types/net/minecraft/world/level/block/ChestBlock").ChestBlock;
     "net.minecraft.world.level.block.ChiseledBookShelfBlock": typeof import("../types/net/minecraft/world/level/block/ChiseledBookShelfBlock").ChiseledBookShelfBlock;
     "net.minecraft.world.level.block.ChorusFlowerBlock": typeof import("../types/net/minecraft/world/level/block/ChorusFlowerBlock").ChorusFlowerBlock;
     "net.minecraft.world.level.block.ChorusPlantBlock": typeof import("../types/net/minecraft/world/level/block/ChorusPlantBlock").ChorusPlantBlock;
@@ -38351,6 +38509,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.ConduitBlock": typeof import("../types/net/minecraft/world/level/block/ConduitBlock").ConduitBlock;
     "net.minecraft.world.level.block.CopperBulbBlock": typeof import("../types/net/minecraft/world/level/block/CopperBulbBlock").CopperBulbBlock;
     "net.minecraft.world.level.block.CopperChestBlock": typeof import("../types/net/minecraft/world/level/block/CopperChestBlock").CopperChestBlock;
+    "net.minecraft.world.level.block.CopperGolemStatueBlock": typeof import("../types/net/minecraft/world/level/block/CopperGolemStatueBlock").CopperGolemStatueBlock;
     "net.minecraft.world.level.block.CopperGolemStatueBlock$Pose": typeof import("../types/net/minecraft/world/level/block/CopperGolemStatueBlock$Pose").CopperGolemStatueBlock$Pose;
     "net.minecraft.world.level.block.CoralBlock": typeof import("../types/net/minecraft/world/level/block/CoralBlock").CoralBlock;
     "net.minecraft.world.level.block.CoralFanBlock": typeof import("../types/net/minecraft/world/level/block/CoralFanBlock").CoralFanBlock;
@@ -38363,11 +38522,13 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.CrossCollisionBlock": typeof import("../types/net/minecraft/world/level/block/CrossCollisionBlock").CrossCollisionBlock;
     "net.minecraft.world.level.block.CryingObsidianBlock": typeof import("../types/net/minecraft/world/level/block/CryingObsidianBlock").CryingObsidianBlock;
     "net.minecraft.world.level.block.DaylightDetectorBlock": typeof import("../types/net/minecraft/world/level/block/DaylightDetectorBlock").DaylightDetectorBlock;
+    "net.minecraft.world.level.block.DecoratedPotBlock": typeof import("../types/net/minecraft/world/level/block/DecoratedPotBlock").DecoratedPotBlock;
     "net.minecraft.world.level.block.DetectorRailBlock": typeof import("../types/net/minecraft/world/level/block/DetectorRailBlock").DetectorRailBlock;
     "net.minecraft.world.level.block.DiodeBlock": typeof import("../types/net/minecraft/world/level/block/DiodeBlock").DiodeBlock;
     "net.minecraft.world.level.block.DirectionalBlock": typeof import("../types/net/minecraft/world/level/block/DirectionalBlock").DirectionalBlock;
     "net.minecraft.world.level.block.DirtPathBlock": typeof import("../types/net/minecraft/world/level/block/DirtPathBlock").DirtPathBlock;
     "net.minecraft.world.level.block.DispenserBlock": typeof import("../types/net/minecraft/world/level/block/DispenserBlock").DispenserBlock;
+    "net.minecraft.world.level.block.DoorBlock": typeof import("../types/net/minecraft/world/level/block/DoorBlock").DoorBlock;
     "net.minecraft.world.level.block.DoubleBlockCombiner": typeof import("../types/net/minecraft/world/level/block/DoubleBlockCombiner").DoubleBlockCombiner;
     "net.minecraft.world.level.block.DoubleBlockCombiner$BlockType": typeof import("../types/net/minecraft/world/level/block/DoubleBlockCombiner$BlockType").DoubleBlockCombiner$BlockType;
     "net.minecraft.world.level.block.DoublePlantBlock": typeof import("../types/net/minecraft/world/level/block/DoublePlantBlock").DoublePlantBlock;
@@ -38381,6 +38542,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.EndPortalBlock": typeof import("../types/net/minecraft/world/level/block/EndPortalBlock").EndPortalBlock;
     "net.minecraft.world.level.block.EndPortalFrameBlock": typeof import("../types/net/minecraft/world/level/block/EndPortalFrameBlock").EndPortalFrameBlock;
     "net.minecraft.world.level.block.EndRodBlock": typeof import("../types/net/minecraft/world/level/block/EndRodBlock").EndRodBlock;
+    "net.minecraft.world.level.block.EnderChestBlock": typeof import("../types/net/minecraft/world/level/block/EnderChestBlock").EnderChestBlock;
     "net.minecraft.world.level.block.EyeblossomBlock": typeof import("../types/net/minecraft/world/level/block/EyeblossomBlock").EyeblossomBlock;
     "net.minecraft.world.level.block.EyeblossomBlock$Type": typeof import("../types/net/minecraft/world/level/block/EyeblossomBlock$Type").EyeblossomBlock$Type;
     "net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock": typeof import("../types/net/minecraft/world/level/block/FaceAttachedHorizontalDirectionalBlock").FaceAttachedHorizontalDirectionalBlock;
@@ -38467,6 +38629,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.PlainSignBlock$Attachment": typeof import("../types/net/minecraft/world/level/block/PlainSignBlock$Attachment").PlainSignBlock$Attachment;
     "net.minecraft.world.level.block.PlayerHeadBlock": typeof import("../types/net/minecraft/world/level/block/PlayerHeadBlock").PlayerHeadBlock;
     "net.minecraft.world.level.block.PlayerWallHeadBlock": typeof import("../types/net/minecraft/world/level/block/PlayerWallHeadBlock").PlayerWallHeadBlock;
+    "net.minecraft.world.level.block.PointedDripstoneBlock": typeof import("../types/net/minecraft/world/level/block/PointedDripstoneBlock").PointedDripstoneBlock;
     "net.minecraft.world.level.block.PointedDripstoneBlock$FluidInfo": typeof import("../types/net/minecraft/world/level/block/PointedDripstoneBlock$FluidInfo").PointedDripstoneBlock$FluidInfo;
     "net.minecraft.world.level.block.Portal$Transition": typeof import("../types/net/minecraft/world/level/block/Portal$Transition").Portal$Transition;
     "net.minecraft.world.level.block.PotatoBlock": typeof import("../types/net/minecraft/world/level/block/PotatoBlock").PotatoBlock;
@@ -38503,6 +38666,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.SculkVeinBlock$SculkVeinSpreaderConfig": typeof import("../types/net/minecraft/world/level/block/SculkVeinBlock$SculkVeinSpreaderConfig").SculkVeinBlock$SculkVeinSpreaderConfig;
     "net.minecraft.world.level.block.SeaPickleBlock": typeof import("../types/net/minecraft/world/level/block/SeaPickleBlock").SeaPickleBlock;
     "net.minecraft.world.level.block.SeagrassBlock": typeof import("../types/net/minecraft/world/level/block/SeagrassBlock").SeagrassBlock;
+    "net.minecraft.world.level.block.ShelfBlock": typeof import("../types/net/minecraft/world/level/block/ShelfBlock").ShelfBlock;
     "net.minecraft.world.level.block.ShortDryGrassBlock": typeof import("../types/net/minecraft/world/level/block/ShortDryGrassBlock").ShortDryGrassBlock;
     "net.minecraft.world.level.block.ShulkerBoxBlock": typeof import("../types/net/minecraft/world/level/block/ShulkerBoxBlock").ShulkerBoxBlock;
     "net.minecraft.world.level.block.SideChainPartBlock$EmptyNeighbor": typeof import("../types/net/minecraft/world/level/block/SideChainPartBlock$EmptyNeighbor").SideChainPartBlock$EmptyNeighbor;
@@ -38550,6 +38714,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.TorchBlock": typeof import("../types/net/minecraft/world/level/block/TorchBlock").TorchBlock;
     "net.minecraft.world.level.block.TorchflowerCropBlock": typeof import("../types/net/minecraft/world/level/block/TorchflowerCropBlock").TorchflowerCropBlock;
     "net.minecraft.world.level.block.TransparentBlock": typeof import("../types/net/minecraft/world/level/block/TransparentBlock").TransparentBlock;
+    "net.minecraft.world.level.block.TrapDoorBlock": typeof import("../types/net/minecraft/world/level/block/TrapDoorBlock").TrapDoorBlock;
     "net.minecraft.world.level.block.TrappedChestBlock": typeof import("../types/net/minecraft/world/level/block/TrappedChestBlock").TrappedChestBlock;
     "net.minecraft.world.level.block.TrialSpawnerBlock": typeof import("../types/net/minecraft/world/level/block/TrialSpawnerBlock").TrialSpawnerBlock;
     "net.minecraft.world.level.block.TripWireBlock": typeof import("../types/net/minecraft/world/level/block/TripWireBlock").TripWireBlock;
@@ -38563,6 +38728,7 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.VineBlock": typeof import("../types/net/minecraft/world/level/block/VineBlock").VineBlock;
     "net.minecraft.world.level.block.WallBannerBlock": typeof import("../types/net/minecraft/world/level/block/WallBannerBlock").WallBannerBlock;
     "net.minecraft.world.level.block.WallBlock": typeof import("../types/net/minecraft/world/level/block/WallBlock").WallBlock;
+    "net.minecraft.world.level.block.WallHangingSignBlock": typeof import("../types/net/minecraft/world/level/block/WallHangingSignBlock").WallHangingSignBlock;
     "net.minecraft.world.level.block.WallSignBlock": typeof import("../types/net/minecraft/world/level/block/WallSignBlock").WallSignBlock;
     "net.minecraft.world.level.block.WallSkullBlock": typeof import("../types/net/minecraft/world/level/block/WallSkullBlock").WallSkullBlock;
     "net.minecraft.world.level.block.WallTorchBlock": typeof import("../types/net/minecraft/world/level/block/WallTorchBlock").WallTorchBlock;
@@ -38605,7 +38771,9 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.entity.BeehiveBlockEntity$BeeReleaseStatus": typeof import("../types/net/minecraft/world/level/block/entity/BeehiveBlockEntity$BeeReleaseStatus").BeehiveBlockEntity$BeeReleaseStatus;
     "net.minecraft.world.level.block.entity.BeehiveBlockEntity$Occupant": typeof import("../types/net/minecraft/world/level/block/entity/BeehiveBlockEntity$Occupant").BeehiveBlockEntity$Occupant;
     "net.minecraft.world.level.block.entity.BellBlockEntity": typeof import("../types/net/minecraft/world/level/block/entity/BellBlockEntity").BellBlockEntity;
+    "net.minecraft.world.level.block.entity.BlockEntity": typeof import("../types/net/minecraft/world/level/block/entity/BlockEntity").BlockEntity;
     "net.minecraft.world.level.block.entity.BlockEntity$BlockEntityPathElement": typeof import("../types/net/minecraft/world/level/block/entity/BlockEntity$BlockEntityPathElement").BlockEntity$BlockEntityPathElement;
+    "net.minecraft.world.level.block.entity.BlockEntityType": typeof import("../types/net/minecraft/world/level/block/entity/BlockEntityType").BlockEntityType;
     "net.minecraft.world.level.block.entity.BoundingBoxRenderable$Mode": typeof import("../types/net/minecraft/world/level/block/entity/BoundingBoxRenderable$Mode").BoundingBoxRenderable$Mode;
     "net.minecraft.world.level.block.entity.BoundingBoxRenderable$RenderableBox": typeof import("../types/net/minecraft/world/level/block/entity/BoundingBoxRenderable$RenderableBox").BoundingBoxRenderable$RenderableBox;
     "net.minecraft.world.level.block.entity.BrushableBlockEntity": typeof import("../types/net/minecraft/world/level/block/entity/BrushableBlockEntity").BrushableBlockEntity;
@@ -38683,6 +38851,8 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.block.piston.PistonMovingBlockEntity": typeof import("../types/net/minecraft/world/level/block/piston/PistonMovingBlockEntity").PistonMovingBlockEntity;
     "net.minecraft.world.level.block.piston.PistonStructureResolver": typeof import("../types/net/minecraft/world/level/block/piston/PistonStructureResolver").PistonStructureResolver;
     "net.minecraft.world.level.block.sounds.AmbientDesertBlockSoundsPlayer": typeof import("../types/net/minecraft/world/level/block/sounds/AmbientDesertBlockSoundsPlayer").AmbientDesertBlockSoundsPlayer;
+    "net.minecraft.world.level.block.state.BlockBehaviour": typeof import("../types/net/minecraft/world/level/block/state/BlockBehaviour").BlockBehaviour;
+    "net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase": typeof import("../types/net/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase").BlockBehaviour$BlockStateBase;
     "net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase$Cache": typeof import("../types/net/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase$Cache").BlockBehaviour$BlockStateBase$Cache;
     "net.minecraft.world.level.block.state.BlockBehaviour$OffsetType": typeof import("../types/net/minecraft/world/level/block/state/BlockBehaviour$OffsetType").BlockBehaviour$OffsetType;
     "net.minecraft.world.level.block.state.BlockBehaviour$Properties": typeof import("../types/net/minecraft/world/level/block/state/BlockBehaviour$Properties").BlockBehaviour$Properties;
@@ -38739,8 +38909,10 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.border.WorldBorder$StaticBorderExtent": typeof import("../types/net/minecraft/world/level/border/WorldBorder$StaticBorderExtent").WorldBorder$StaticBorderExtent;
     "net.minecraft.world.level.chunk.BulkSectionAccess": typeof import("../types/net/minecraft/world/level/chunk/BulkSectionAccess").BulkSectionAccess;
     "net.minecraft.world.level.chunk.CarvingMask": typeof import("../types/net/minecraft/world/level/chunk/CarvingMask").CarvingMask;
+    "net.minecraft.world.level.chunk.ChunkAccess": typeof import("../types/net/minecraft/world/level/chunk/ChunkAccess").ChunkAccess;
     "net.minecraft.world.level.chunk.ChunkAccess$ChunkPathElement": typeof import("../types/net/minecraft/world/level/chunk/ChunkAccess$ChunkPathElement").ChunkAccess$ChunkPathElement;
     "net.minecraft.world.level.chunk.ChunkAccess$PackedTicks": typeof import("../types/net/minecraft/world/level/chunk/ChunkAccess$PackedTicks").ChunkAccess$PackedTicks;
+    "net.minecraft.world.level.chunk.ChunkGenerator": typeof import("../types/net/minecraft/world/level/chunk/ChunkGenerator").ChunkGenerator;
     "net.minecraft.world.level.chunk.ChunkGeneratorStructureState": typeof import("../types/net/minecraft/world/level/chunk/ChunkGeneratorStructureState").ChunkGeneratorStructureState;
     "net.minecraft.world.level.chunk.ChunkGenerators": typeof import("../types/net/minecraft/world/level/chunk/ChunkGenerators").ChunkGenerators;
     "net.minecraft.world.level.chunk.ChunkSource": typeof import("../types/net/minecraft/world/level/chunk/ChunkSource").ChunkSource;
@@ -38750,6 +38922,8 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.chunk.EmptyLevelChunk": typeof import("../types/net/minecraft/world/level/chunk/EmptyLevelChunk").EmptyLevelChunk;
     "net.minecraft.world.level.chunk.GlobalPalette": typeof import("../types/net/minecraft/world/level/chunk/GlobalPalette").GlobalPalette;
     "net.minecraft.world.level.chunk.HashMapPalette": typeof import("../types/net/minecraft/world/level/chunk/HashMapPalette").HashMapPalette;
+    "net.minecraft.world.level.chunk.ImposterProtoChunk": typeof import("../types/net/minecraft/world/level/chunk/ImposterProtoChunk").ImposterProtoChunk;
+    "net.minecraft.world.level.chunk.LevelChunk": typeof import("../types/net/minecraft/world/level/chunk/LevelChunk").LevelChunk;
     "net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity": typeof import("../types/net/minecraft/world/level/chunk/LevelChunk$BoundTickingBlockEntity").LevelChunk$BoundTickingBlockEntity;
     "net.minecraft.world.level.chunk.LevelChunk$EntityCreationType": typeof import("../types/net/minecraft/world/level/chunk/LevelChunk$EntityCreationType").LevelChunk$EntityCreationType;
     "net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper": typeof import("../types/net/minecraft/world/level/chunk/LevelChunk$RebindableTickingBlockEntityWrapper").LevelChunk$RebindableTickingBlockEntityWrapper;
@@ -38979,19 +39153,83 @@ interface JavaTypeRegistry {
     "net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver": typeof import("../types/net/minecraft/world/level/levelgen/carver/ConfiguredWorldCarver").ConfiguredWorldCarver;
     "net.minecraft.world.level.levelgen.carver.NetherWorldCarver": typeof import("../types/net/minecraft/world/level/levelgen/carver/NetherWorldCarver").NetherWorldCarver;
     "net.minecraft.world.level.levelgen.carver.WorldCarver": typeof import("../types/net/minecraft/world/level/levelgen/carver/WorldCarver").WorldCarver;
+    "net.minecraft.world.level.levelgen.feature.AbstractHugeMushroomFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/AbstractHugeMushroomFeature").AbstractHugeMushroomFeature;
+    "net.minecraft.world.level.levelgen.feature.BambooFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BambooFeature").BambooFeature;
+    "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BasaltColumnsFeature").BasaltColumnsFeature;
+    "net.minecraft.world.level.levelgen.feature.BasaltPillarFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BasaltPillarFeature").BasaltPillarFeature;
+    "net.minecraft.world.level.levelgen.feature.BlockBlobFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BlockBlobFeature").BlockBlobFeature;
+    "net.minecraft.world.level.levelgen.feature.BlockColumnFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BlockColumnFeature").BlockColumnFeature;
+    "net.minecraft.world.level.levelgen.feature.BlockPileFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BlockPileFeature").BlockPileFeature;
+    "net.minecraft.world.level.levelgen.feature.BlueIceFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BlueIceFeature").BlueIceFeature;
+    "net.minecraft.world.level.levelgen.feature.BonusChestFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/BonusChestFeature").BonusChestFeature;
+    "net.minecraft.world.level.levelgen.feature.ChorusPlantFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/ChorusPlantFeature").ChorusPlantFeature;
     "net.minecraft.world.level.levelgen.feature.ConfiguredFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/ConfiguredFeature").ConfiguredFeature;
+    "net.minecraft.world.level.levelgen.feature.CoralClawFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/CoralClawFeature").CoralClawFeature;
+    "net.minecraft.world.level.levelgen.feature.CoralFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/CoralFeature").CoralFeature;
+    "net.minecraft.world.level.levelgen.feature.CoralMushroomFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/CoralMushroomFeature").CoralMushroomFeature;
+    "net.minecraft.world.level.levelgen.feature.CoralTreeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/CoralTreeFeature").CoralTreeFeature;
+    "net.minecraft.world.level.levelgen.feature.DeltaFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/DeltaFeature").DeltaFeature;
+    "net.minecraft.world.level.levelgen.feature.DesertWellFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/DesertWellFeature").DesertWellFeature;
+    "net.minecraft.world.level.levelgen.feature.DiskFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/DiskFeature").DiskFeature;
+    "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/DripstoneClusterFeature").DripstoneClusterFeature;
     "net.minecraft.world.level.levelgen.feature.DripstoneUtils": typeof import("../types/net/minecraft/world/level/levelgen/feature/DripstoneUtils").DripstoneUtils;
+    "net.minecraft.world.level.levelgen.feature.EndGatewayFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndGatewayFeature").EndGatewayFeature;
+    "net.minecraft.world.level.levelgen.feature.EndIslandFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndIslandFeature").EndIslandFeature;
+    "net.minecraft.world.level.levelgen.feature.EndPlatformFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndPlatformFeature").EndPlatformFeature;
+    "net.minecraft.world.level.levelgen.feature.EndPodiumFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndPodiumFeature").EndPodiumFeature;
+    "net.minecraft.world.level.levelgen.feature.EndSpikeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndSpikeFeature").EndSpikeFeature;
     "net.minecraft.world.level.levelgen.feature.EndSpikeFeature$EndSpike": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndSpikeFeature$EndSpike").EndSpikeFeature$EndSpike;
     "net.minecraft.world.level.levelgen.feature.EndSpikeFeature$SpikeCacheLoader": typeof import("../types/net/minecraft/world/level/levelgen/feature/EndSpikeFeature$SpikeCacheLoader").EndSpikeFeature$SpikeCacheLoader;
+    "net.minecraft.world.level.levelgen.feature.FallenTreeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/FallenTreeFeature").FallenTreeFeature;
+    "net.minecraft.world.level.levelgen.feature.Feature": typeof import("../types/net/minecraft/world/level/levelgen/feature/Feature").Feature;
     "net.minecraft.world.level.levelgen.feature.FeatureCountTracker": typeof import("../types/net/minecraft/world/level/levelgen/feature/FeatureCountTracker").FeatureCountTracker;
     "net.minecraft.world.level.levelgen.feature.FeatureCountTracker$FeatureData": typeof import("../types/net/minecraft/world/level/levelgen/feature/FeatureCountTracker$FeatureData").FeatureCountTracker$FeatureData;
     "net.minecraft.world.level.levelgen.feature.FeatureCountTracker$LevelData": typeof import("../types/net/minecraft/world/level/levelgen/feature/FeatureCountTracker$LevelData").FeatureCountTracker$LevelData;
     "net.minecraft.world.level.levelgen.feature.FeaturePlaceContext": typeof import("../types/net/minecraft/world/level/levelgen/feature/FeaturePlaceContext").FeaturePlaceContext;
+    "net.minecraft.world.level.levelgen.feature.FillLayerFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/FillLayerFeature").FillLayerFeature;
+    "net.minecraft.world.level.levelgen.feature.FossilFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/FossilFeature").FossilFeature;
     "net.minecraft.world.level.levelgen.feature.FossilFeatureConfiguration": typeof import("../types/net/minecraft/world/level/levelgen/feature/FossilFeatureConfiguration").FossilFeatureConfiguration;
+    "net.minecraft.world.level.levelgen.feature.GeodeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/GeodeFeature").GeodeFeature;
+    "net.minecraft.world.level.levelgen.feature.GlowstoneFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/GlowstoneFeature").GlowstoneFeature;
+    "net.minecraft.world.level.levelgen.feature.HugeBrownMushroomFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/HugeBrownMushroomFeature").HugeBrownMushroomFeature;
     "net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration": typeof import("../types/net/minecraft/world/level/levelgen/feature/HugeFungusConfiguration").HugeFungusConfiguration;
+    "net.minecraft.world.level.levelgen.feature.HugeFungusFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/HugeFungusFeature").HugeFungusFeature;
+    "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/HugeRedMushroomFeature").HugeRedMushroomFeature;
+    "net.minecraft.world.level.levelgen.feature.IcebergFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/IcebergFeature").IcebergFeature;
+    "net.minecraft.world.level.levelgen.feature.KelpFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/KelpFeature").KelpFeature;
+    "net.minecraft.world.level.levelgen.feature.LakeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/LakeFeature").LakeFeature;
     "net.minecraft.world.level.levelgen.feature.LakeFeature$Configuration": typeof import("../types/net/minecraft/world/level/levelgen/feature/LakeFeature$Configuration").LakeFeature$Configuration;
+    "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/LargeDripstoneFeature").LargeDripstoneFeature;
     "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature$LargeDripstone": typeof import("../types/net/minecraft/world/level/levelgen/feature/LargeDripstoneFeature$LargeDripstone").LargeDripstoneFeature$LargeDripstone;
     "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature$WindOffsetter": typeof import("../types/net/minecraft/world/level/levelgen/feature/LargeDripstoneFeature$WindOffsetter").LargeDripstoneFeature$WindOffsetter;
+    "net.minecraft.world.level.levelgen.feature.MonsterRoomFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/MonsterRoomFeature").MonsterRoomFeature;
+    "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/MultifaceGrowthFeature").MultifaceGrowthFeature;
+    "net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/NetherForestVegetationFeature").NetherForestVegetationFeature;
+    "net.minecraft.world.level.levelgen.feature.NoOpFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/NoOpFeature").NoOpFeature;
+    "net.minecraft.world.level.levelgen.feature.OreFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/OreFeature").OreFeature;
+    "net.minecraft.world.level.levelgen.feature.PointedDripstoneFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/PointedDripstoneFeature").PointedDripstoneFeature;
+    "net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/RandomBooleanSelectorFeature").RandomBooleanSelectorFeature;
+    "net.minecraft.world.level.levelgen.feature.RandomSelectorFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/RandomSelectorFeature").RandomSelectorFeature;
+    "net.minecraft.world.level.levelgen.feature.ReplaceBlobsFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/ReplaceBlobsFeature").ReplaceBlobsFeature;
+    "net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/ReplaceBlockFeature").ReplaceBlockFeature;
+    "net.minecraft.world.level.levelgen.feature.RootSystemFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/RootSystemFeature").RootSystemFeature;
+    "net.minecraft.world.level.levelgen.feature.ScatteredOreFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/ScatteredOreFeature").ScatteredOreFeature;
+    "net.minecraft.world.level.levelgen.feature.SculkPatchFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SculkPatchFeature").SculkPatchFeature;
+    "net.minecraft.world.level.levelgen.feature.SeaPickleFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SeaPickleFeature").SeaPickleFeature;
+    "net.minecraft.world.level.levelgen.feature.SeagrassFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SeagrassFeature").SeagrassFeature;
+    "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SimpleBlockFeature").SimpleBlockFeature;
+    "net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SimpleRandomSelectorFeature").SimpleRandomSelectorFeature;
+    "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SnowAndFreezeFeature").SnowAndFreezeFeature;
+    "net.minecraft.world.level.levelgen.feature.SpikeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SpikeFeature").SpikeFeature;
+    "net.minecraft.world.level.levelgen.feature.SpringFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/SpringFeature").SpringFeature;
+    "net.minecraft.world.level.levelgen.feature.TreeFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/TreeFeature").TreeFeature;
+    "net.minecraft.world.level.levelgen.feature.TwistingVinesFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/TwistingVinesFeature").TwistingVinesFeature;
+    "net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/UnderwaterMagmaFeature").UnderwaterMagmaFeature;
+    "net.minecraft.world.level.levelgen.feature.VegetationPatchFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/VegetationPatchFeature").VegetationPatchFeature;
+    "net.minecraft.world.level.levelgen.feature.VinesFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/VinesFeature").VinesFeature;
+    "net.minecraft.world.level.levelgen.feature.VoidStartPlatformFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/VoidStartPlatformFeature").VoidStartPlatformFeature;
+    "net.minecraft.world.level.levelgen.feature.WaterloggedVegetationPatchFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/WaterloggedVegetationPatchFeature").WaterloggedVegetationPatchFeature;
+    "net.minecraft.world.level.levelgen.feature.WeepingVinesFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/WeepingVinesFeature").WeepingVinesFeature;
     "net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature": typeof import("../types/net/minecraft/world/level/levelgen/feature/WeightedPlacedFeature").WeightedPlacedFeature;
     "net.minecraft.world.level.levelgen.feature.configurations.BlockBlobConfiguration": typeof import("../types/net/minecraft/world/level/levelgen/feature/configurations/BlockBlobConfiguration").BlockBlobConfiguration;
     "net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration": typeof import("../types/net/minecraft/world/level/levelgen/feature/configurations/BlockColumnConfiguration").BlockColumnConfiguration;
@@ -43635,6 +43873,7 @@ interface JavaTypeRegistry {
     "org.cef.CefApp$CefAppState": typeof import("../types/org/cef/CefApp$CefAppState").CefApp$CefAppState;
     "org.cef.CefApp$CefVersion": typeof import("../types/org/cef/CefApp$CefVersion").CefApp$CefVersion;
     "org.cef.CefBrowserSettings": typeof import("../types/org/cef/CefBrowserSettings").CefBrowserSettings;
+    "org.cef.CefClient": typeof import("../types/org/cef/CefClient").CefClient;
     "org.cef.CefSettings": typeof import("../types/org/cef/CefSettings").CefSettings;
     "org.cef.CefSettings$ColorType": typeof import("../types/org/cef/CefSettings$ColorType").CefSettings$ColorType;
     "org.cef.CefSettings$LogSeverity": typeof import("../types/org/cef/CefSettings$LogSeverity").CefSettings$LogSeverity;
@@ -45626,6 +45865,7 @@ interface JavaTypeRegistry {
     "org.graalvm.tools.lsp.instrument.LSPInstrumentProvider": typeof import("../types/org/graalvm/tools/lsp/instrument/LSPInstrumentProvider").LSPInstrumentProvider;
     "org.graalvm.tools.lsp.server.DelegateServers": typeof import("../types/org/graalvm/tools/lsp/server/DelegateServers").DelegateServers;
     "org.graalvm.tools.lsp.server.LSPFileSystem": typeof import("../types/org/graalvm/tools/lsp/server/LSPFileSystem").LSPFileSystem;
+    "org.graalvm.tools.lsp.server.LanguageServerImpl": typeof import("../types/org/graalvm/tools/lsp/server/LanguageServerImpl").LanguageServerImpl;
     "org.graalvm.tools.lsp.server.LanguageTriggerCharacters": typeof import("../types/org/graalvm/tools/lsp/server/LanguageTriggerCharacters").LanguageTriggerCharacters;
     "org.graalvm.tools.lsp.server.TruffleAdapter": typeof import("../types/org/graalvm/tools/lsp/server/TruffleAdapter").TruffleAdapter;
     "org.graalvm.tools.lsp.server.request.AbstractRequestHandler": typeof import("../types/org/graalvm/tools/lsp/server/request/AbstractRequestHandler").AbstractRequestHandler;
@@ -45749,6 +45989,7 @@ interface JavaTypeRegistry {
     "org.graalvm.tools.lsp.server.types.InitializedParams": typeof import("../types/org/graalvm/tools/lsp/server/types/InitializedParams").InitializedParams;
     "org.graalvm.tools.lsp.server.types.InsertTextFormat": typeof import("../types/org/graalvm/tools/lsp/server/types/InsertTextFormat").InsertTextFormat;
     "org.graalvm.tools.lsp.server.types.JSONBase": typeof import("../types/org/graalvm/tools/lsp/server/types/JSONBase").JSONBase;
+    "org.graalvm.tools.lsp.server.types.LanguageServer": typeof import("../types/org/graalvm/tools/lsp/server/types/LanguageServer").LanguageServer;
     "org.graalvm.tools.lsp.server.types.LanguageServer$DelegateServer": typeof import("../types/org/graalvm/tools/lsp/server/types/LanguageServer$DelegateServer").LanguageServer$DelegateServer;
     "org.graalvm.tools.lsp.server.types.LanguageServer$Session": typeof import("../types/org/graalvm/tools/lsp/server/types/LanguageServer$Session").LanguageServer$Session;
     "org.graalvm.tools.lsp.server.types.Location": typeof import("../types/org/graalvm/tools/lsp/server/types/Location").Location;
@@ -46129,6 +46370,7 @@ interface JavaTypeRegistry {
     "org.lwjgl.egl.WLCreateWaylandBufferFromImage": typeof import("../types/org/lwjgl/egl/WLCreateWaylandBufferFromImage").WLCreateWaylandBufferFromImage;
     "org.lwjgl.glfw.Callbacks": typeof import("../types/org/lwjgl/glfw/Callbacks").Callbacks;
     "org.lwjgl.glfw.EventLoop": typeof import("../types/org/lwjgl/glfw/EventLoop").EventLoop;
+    "org.lwjgl.glfw.GLFW": typeof import("../types/org/lwjgl/glfw/GLFW").GLFW;
     "org.lwjgl.glfw.GLFW$Functions": typeof import("../types/org/lwjgl/glfw/GLFW$Functions").GLFW$Functions;
     "org.lwjgl.glfw.GLFWAllocateCallback": typeof import("../types/org/lwjgl/glfw/GLFWAllocateCallback").GLFWAllocateCallback;
     "org.lwjgl.glfw.GLFWAllocateCallback$Container": typeof import("../types/org/lwjgl/glfw/GLFWAllocateCallback$Container").GLFWAllocateCallback$Container;

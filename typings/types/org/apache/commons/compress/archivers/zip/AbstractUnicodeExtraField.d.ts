@@ -12,6 +12,7 @@ export abstract class AbstractUnicodeExtraField extends Object implements ZipExt
     // private assembleData(): void;
     getCentralDirectoryData(): number[];
     getCentralDirectoryLength(): ZipShort;
+    getHeaderId(): ZipShort;
     getLocalFileDataData(): number[];
     getLocalFileDataLength(): ZipShort;
     getNameCRC32(): number;

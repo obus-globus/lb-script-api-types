@@ -27,6 +27,7 @@ export class YggdrasilMinecraftSessionService extends Object implements Minecraf
     // private servicesKeySet: ServicesKeySet;
     fetchProfile(arg0: UUID, arg1: boolean): ProfileResult;
     // private fetchProfileUncached(arg0: UUID, arg1: boolean): ProfileResult;
+    getBaseUrl(): string;
     getPackedTextures(arg0: GameProfile): Property;
     // private getPropertySignatureState(arg0: Property): SignatureState;
     getSecurePropertyValue(arg0: Property): string;

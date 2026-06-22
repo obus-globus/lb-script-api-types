@@ -5,4 +5,5 @@ import type { ParseContext } from '../../../../../org/apache/tika/parser/ParseCo
 import type { Emitter } from '../../../../../org/apache/tika/pipes/emitter/Emitter.d.ts'
 export interface StreamEmitter extends Object, Emitter{
     emit(arg0: string, arg1: InputStream, arg2: Metadata, arg3: ParseContext): void;
+    getName(): string;
 }

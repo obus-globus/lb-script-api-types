@@ -5,7 +5,9 @@ export interface ByteListIterator extends ByteBidirectionalIterator, Object, Lis
     add(arg0: number): void;
     back(arg0: number): number;
     next(): number;
+    nextByte(): number;
     previous(): number;
+    previousByte(): number;
     remove(): void;
     set(arg0: number): void;
     skip(arg0: number): number;

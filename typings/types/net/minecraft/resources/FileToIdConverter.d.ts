@@ -15,6 +15,8 @@ export class FileToIdConverter extends Record implements FileToIdConverterAccess
     extension(): string;
     extensionMatches(id: Identifier): boolean;
     fileToId(file: Identifier): Identifier;
+    getDirectoryName(): string;
+    getPrefix(): string;
     hashCode(): number;
     idToFile(id: Identifier): Identifier;
     listMatchingResourceStacks(manager: ResourceManager): Map<Identifier, Resource[]>;

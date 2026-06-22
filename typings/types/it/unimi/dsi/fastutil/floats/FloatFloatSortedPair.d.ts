@@ -13,8 +13,10 @@ export interface FloatFloatSortedPair extends SortedPair<number>, FloatFloatPair
     keyFloat(): number;
     left(): number;
     left(arg0: number): FloatFloatPair;
+    leftFloat(): number;
     right(): number;
     right(arg0: number): FloatFloatPair;
+    rightFloat(): number;
     second(): number;
     second(arg0: number): FloatFloatPair;
     secondFloat(): number;

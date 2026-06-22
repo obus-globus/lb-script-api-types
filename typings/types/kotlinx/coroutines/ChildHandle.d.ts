@@ -5,4 +5,5 @@ import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 export interface ChildHandle extends Object, DisposableHandle{
     readonly parent: Job | null;
     childCancelled(cause: Throwable): boolean;
+    dispose(): void;
 }

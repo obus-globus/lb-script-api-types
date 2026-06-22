@@ -20,4 +20,5 @@ export abstract class FT_List_Destructor extends Callback implements FT_List_Des
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number, arg2: number): void;
 }

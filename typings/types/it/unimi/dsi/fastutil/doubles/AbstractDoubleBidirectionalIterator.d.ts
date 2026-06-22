@@ -3,6 +3,8 @@ import type { DoubleBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 export abstract class AbstractDoubleBidirectionalIterator extends AbstractDoubleIterator implements DoubleBidirectionalIterator {
     constructor()
     back(arg0: number): number;
+    nextDouble(): number;
     previous(): number;
+    previousDouble(): number;
     skip(arg0: number): number;
 }

@@ -39,6 +39,7 @@ export class AdvancementTab extends Object implements AdvancementTabAccessor {
     extractIcon(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
     extractTab(graphics: GuiGraphicsExtractor, xo: number, yo: number, mouseX: number, mouseY: number, selected: boolean): void;
     extractTooltips(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, xo: number, yo: number): void;
+    fabric_getRoot(): AdvancementWidget;
     getDisplay(): DisplayInfo;
     getIndex(): number;
     getRootNode(): AdvancementNode;

@@ -1,4 +1,7 @@
+import type { ParserRuleContext } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/ParserRuleContext.d.ts'
+import type { ErrorNode } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/tree/ErrorNode.d.ts'
 import type { ParseTreeListener } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/tree/ParseTreeListener.d.ts'
+import type { TerminalNode } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/tree/TerminalNode.d.ts'
 import type { ExpressionParser$AdditiveExpressionContext } from '../../../../../../com/llamalad7/mixinextras/lib/grammar/expressions/ExpressionParser$AdditiveExpressionContext.d.ts'
 import type { ExpressionParser$ArgumentsContext } from '../../../../../../com/llamalad7/mixinextras/lib/grammar/expressions/ExpressionParser$ArgumentsContext.d.ts'
 import type { ExpressionParser$ArrayAccessExpressionContext } from '../../../../../../com/llamalad7/mixinextras/lib/grammar/expressions/ExpressionParser$ArrayAccessExpressionContext.d.ts'
@@ -63,6 +66,7 @@ export interface ExpressionParserListener extends ParseTreeListener, Object{
     enterConstructorReferenceExpression(arg0: ExpressionParser$ConstructorReferenceExpressionContext): void;
     enterDecimalLitExpression(arg0: ExpressionParser$DecimalLitExpressionContext): void;
     enterEqualityExpression(arg0: ExpressionParser$EqualityExpressionContext): void;
+    enterEveryRule(arg0: ParserRuleContext): void;
     enterExpressionStatement(arg0: ExpressionParser$ExpressionStatementContext): void;
     enterFreeMethodReferenceExpression(arg0: ExpressionParser$FreeMethodReferenceExpressionContext): void;
     enterIdentifierAssignmentStatement(arg0: ExpressionParser$IdentifierAssignmentStatementContext): void;
@@ -108,6 +112,7 @@ export interface ExpressionParserListener extends ParseTreeListener, Object{
     exitConstructorReferenceExpression(arg0: ExpressionParser$ConstructorReferenceExpressionContext): void;
     exitDecimalLitExpression(arg0: ExpressionParser$DecimalLitExpressionContext): void;
     exitEqualityExpression(arg0: ExpressionParser$EqualityExpressionContext): void;
+    exitEveryRule(arg0: ParserRuleContext): void;
     exitExpressionStatement(arg0: ExpressionParser$ExpressionStatementContext): void;
     exitFreeMethodReferenceExpression(arg0: ExpressionParser$FreeMethodReferenceExpressionContext): void;
     exitIdentifierAssignmentStatement(arg0: ExpressionParser$IdentifierAssignmentStatementContext): void;
@@ -136,4 +141,6 @@ export interface ExpressionParserListener extends ParseTreeListener, Object{
     exitUnaryExpression(arg0: ExpressionParser$UnaryExpressionContext): void;
     exitWildcardExpression(arg0: ExpressionParser$WildcardExpressionContext): void;
     exitWildcardName(arg0: ExpressionParser$WildcardNameContext): void;
+    visitErrorNode(arg0: ErrorNode): void;
+    visitTerminal(arg0: TerminalNode): void;
 }

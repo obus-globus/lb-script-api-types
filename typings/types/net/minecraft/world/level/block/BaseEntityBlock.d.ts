@@ -81,5 +81,6 @@ export abstract class BaseEntityBlock extends Block implements EntityBlock {
     getListener<T extends BlockEntity>(level: ServerLevel, blockEntity: T): GameEventListener;
     getMenuProvider(state: BlockState, level: Level, pos: BlockPos): MenuProvider;
     getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
+    newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
     triggerEvent(state: BlockState, level: Level, pos: BlockPos, b0: number, b1: number): boolean;
 }

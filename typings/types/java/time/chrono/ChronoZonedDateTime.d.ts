@@ -43,6 +43,7 @@ export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal
     toLocalDate(): D;
     toLocalDateTime(): ChronoLocalDateTime<D>;
     toLocalTime(): LocalTime;
+    until(arg0: Temporal, arg1: TemporalUnit): number;
     with(arg0: (param0: Temporal) => Temporal): ChronoZonedDateTime<D>;
     with(arg0: TemporalField, arg1: number): ChronoZonedDateTime<D>;
     with(arg0: (param0: Temporal) => Temporal): Temporal;

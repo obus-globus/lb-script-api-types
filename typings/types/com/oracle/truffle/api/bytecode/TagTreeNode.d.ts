@@ -10,7 +10,9 @@ export abstract class TagTreeNode extends Node implements TagTree {
     createDefaultScope(frame: Frame, nodeEnter: boolean): Object;
     dispatch(): Class<Object>;
     getBytecodeNode(): BytecodeNode;
+    getEnterBytecodeIndex(): number;
     getLanguage(): Class<TruffleLanguage<Object>>;
+    getReturnBytecodeIndex(): number;
     getTagsString(): string;
     toString(): string;
 }

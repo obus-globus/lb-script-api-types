@@ -4,4 +4,7 @@ import type { OSFileStore } from '../../../oshi/software/os/OSFileStore.d.ts'
 export abstract class AbstractFileSystem extends Object implements FileSystem {
     constructor()
     getFileStores(): OSFileStore[];
+    getMaxFileDescriptors(): number;
+    getMaxFileDescriptorsPerProcess(): number;
+    getOpenFileDescriptors(): number;
 }

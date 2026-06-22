@@ -13,6 +13,7 @@ export abstract class X509CRLEntry extends Object implements X509Extension {
     getRevocationReason(): CRLReason;
     getSerialNumber(): BigInteger;
     hasExtensions(): boolean;
+    hasUnsupportedCriticalExtension(): boolean;
     hashCode(): number;
     toString(): string;
 }

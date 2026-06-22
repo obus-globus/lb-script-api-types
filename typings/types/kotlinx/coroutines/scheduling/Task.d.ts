@@ -5,4 +5,5 @@ export abstract class Task extends Object implements Runnable {
     constructor(submissionTime: number, taskContext: boolean)
     submissionTime: number;
     taskContext: boolean;
+    run(): void;
 }

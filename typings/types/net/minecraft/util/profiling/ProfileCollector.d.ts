@@ -9,12 +9,19 @@ import type { Pair } from '../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export interface ProfileCollector extends Object, ProfilerFiller {
     addZoneText(text: string): void;
     addZoneValue(value: number): void;
+    endTick(): void;
     getChartedPaths(): Pair<string, MetricCategory>[];
     getEntry(path: string): ActiveProfiler$PathEntry;
     getResults(): ProfileResults;
     incrementCounter(name: () => string): void;
     incrementCounter(name: string): void;
+    incrementCounter(name: string, amount: number): void;
+    markForCharting(category: MetricCategory): void;
+    pop(): void;
+    popPush(name: string): void;
+    push(name: string): void;
     setZoneColor(color: number): void;
+    startTick(): void;
     zone(name: () => string): Zone;
     zone(name: string): Zone;
 }

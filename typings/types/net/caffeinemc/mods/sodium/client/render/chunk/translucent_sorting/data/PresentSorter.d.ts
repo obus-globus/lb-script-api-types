@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+import type { CombinedCameraPos } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/CombinedCameraPos.d.ts'
 import type { Sorter } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/Sorter.d.ts'
 import type { NativeBuffer } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/util/NativeBuffer.d.ts'
 export abstract class PresentSorter extends Object implements Sorter {
@@ -7,4 +8,5 @@ export abstract class PresentSorter extends Object implements Sorter {
     destroy(): void;
     getIndexBuffer(): NativeBuffer;
     initBufferWithQuadLength(arg0: number): void;
+    writeIndexBuffer(arg0: CombinedCameraPos, arg1: boolean): void;
 }

@@ -3,4 +3,5 @@ import type { ReceiverValue } from '../../../../../../../../kotlin/reflect/jvm/i
 import type { KotlinType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 export interface SuperCallReceiverValue extends Object, ReceiverValue{
     getThisType(): KotlinType;
+    getType(): KotlinType;
 }

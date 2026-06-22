@@ -24,6 +24,7 @@ export abstract class AbstractNioChannel$AbstractNioUnsafe extends AbstractChann
     // private fulfillConnectPromise(arg0: ChannelPromise, arg1: Throwable): void;
     handle(arg0: IoRegistration, arg1: IoEvent): void;
     // private isFlushPending(): boolean;
+    read(): void;
     removeReadOp(): void;
     selectableChannel(): SelectableChannel;
 }

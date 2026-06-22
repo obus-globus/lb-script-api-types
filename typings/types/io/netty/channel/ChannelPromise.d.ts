@@ -11,6 +11,7 @@ export interface ChannelPromise extends ChannelFuture, Promise<void>, Object{
     await(): ChannelPromise;
     awaitUninterruptibly(): ChannelPromise;
     channel(): Channel;
+    isVoid(): boolean;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
     removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     setFailure(arg0: Throwable): ChannelPromise;

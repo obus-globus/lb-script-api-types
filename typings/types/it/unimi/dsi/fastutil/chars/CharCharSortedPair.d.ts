@@ -13,8 +13,10 @@ export interface CharCharSortedPair extends SortedPair<string>, CharCharPair, Se
     keyChar(): string;
     left(): string;
     left(arg0: string): CharCharPair;
+    leftChar(): string;
     right(): string;
     right(arg0: string): CharCharPair;
+    rightChar(): string;
     second(): string;
     second(arg0: string): CharCharPair;
     secondChar(): string;

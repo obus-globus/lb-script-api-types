@@ -9,4 +9,6 @@ export abstract class UnicodeFilter extends Object implements UnicodeMatcher {
     constructor()
     contains(c: number): boolean;
     matches(text: Replaceable, offset: number[], limit: number, incremental: boolean): number;
+    matchesIndexValue(v: number): boolean;
+    toPattern(escapeUnprintable: boolean): string;
 }

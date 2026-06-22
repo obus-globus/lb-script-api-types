@@ -5,6 +5,9 @@ export interface ByteBufHolder extends ReferenceCounted, Object{
     content(): ByteBuf;
     copy(): ByteBufHolder;
     duplicate(): ByteBufHolder;
+    refCnt(): number;
+    release(): boolean;
+    release(arg0: number): boolean;
     replace(arg0: ByteBuf): ByteBufHolder;
     retain(): ByteBufHolder;
     retain(arg0: number): ByteBufHolder;

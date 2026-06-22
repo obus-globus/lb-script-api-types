@@ -18,5 +18,6 @@ export class ModuleAutoQueue$PauseCondition extends Enum<ModuleAutoQueue$PauseCo
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
+    getAsBoolean(): boolean;
     name(): "CLICK_GUI_OPEN" | "CHAT_SCREEN_OPEN" | "CONTAINER_SCREEN_OPEN" | "PAUSE_SCREEN_OPEN";
 }

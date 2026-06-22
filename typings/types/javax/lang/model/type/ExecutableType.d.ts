@@ -1,7 +1,9 @@
+import type { TypeKind } from '../../../../javax/lang/model/type/TypeKind.d.ts'
 import type { TypeMirror } from '../../../../javax/lang/model/type/TypeMirror.d.ts'
 import type { TypeVariable } from '../../../../javax/lang/model/type/TypeVariable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface ExecutableType extends TypeMirror, Object{
+    getKind(): TypeKind;
     getParameterTypes(): TypeMirror[];
     getReceiverType(): TypeMirror;
     getReturnType(): TypeMirror;

@@ -38,6 +38,7 @@ export class BlockRenderer extends AbstractBlockRenderContext implements BlockRe
     // private vertices: ChunkVertexEncoder$Vertex[];
     beginBlock(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     // private bufferQuad(arg0: MutableQuadViewImpl, arg1: number[], arg2: Material): void;
+    getBuffers(): ChunkBuildBuffers;
     overrideBlock(arg0: number): void;
     prepare(arg0: ChunkBuildBuffers, arg1: LevelSlice, arg2: TranslucentGeometryCollector): void;
     processQuad(arg0: MutableQuadViewImpl): void;

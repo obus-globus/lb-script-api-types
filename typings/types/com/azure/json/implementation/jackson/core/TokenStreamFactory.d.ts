@@ -3,6 +3,7 @@ import type { JsonGenerator } from '../../../../../../com/azure/json/implementat
 import type { JsonGenerator$Feature } from '../../../../../../com/azure/json/implementation/jackson/core/JsonGenerator$Feature.d.ts'
 import type { JsonParser } from '../../../../../../com/azure/json/implementation/jackson/core/JsonParser.d.ts'
 import type { JsonParser$Feature } from '../../../../../../com/azure/json/implementation/jackson/core/JsonParser$Feature.d.ts'
+import type { Version } from '../../../../../../com/azure/json/implementation/jackson/core/Version.d.ts'
 import type { Versioned } from '../../../../../../com/azure/json/implementation/jackson/core/Versioned.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -29,4 +30,5 @@ export abstract class TokenStreamFactory extends Object implements Versioned, Se
     getFormatName(): string;
     isEnabled(arg0: JsonGenerator$Feature): boolean;
     isEnabled(arg0: JsonParser$Feature): boolean;
+    version(): Version;
 }

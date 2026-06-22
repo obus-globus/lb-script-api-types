@@ -16,6 +16,7 @@ import type { Sequence } from '../../../../../../../com/oracle/truffle/regex/tre
 import type { SubexpressionCall } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/SubexpressionCall.d.ts'
 import type { JsonConvertible } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonConvertible.d.ts'
 import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
+import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class RegexASTNode extends Object implements JsonConvertible {
     constructor()
@@ -139,5 +140,6 @@ export abstract class RegexASTNode extends Object implements JsonConvertible {
     setStartsWithCaret(startsWithCaret: boolean): void;
     startsWithCaret(): boolean;
     toJson(typeName: string): JsonObject;
+    toJson(): JsonValue;
     toStringWithID(): string;
 }

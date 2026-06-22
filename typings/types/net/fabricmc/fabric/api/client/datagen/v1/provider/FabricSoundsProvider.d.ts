@@ -28,5 +28,6 @@ export abstract class FabricSoundsProvider extends Object implements DataProvide
     // private output: PackOutput;
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;
     configure(arg0: HolderLookup$Provider, arg1: (param0: Identifier, param1: SoundTypeBuilder) => void): void;
+    getName(): string;
     run(arg0: CachedOutput): CompletableFuture<Object>;
 }

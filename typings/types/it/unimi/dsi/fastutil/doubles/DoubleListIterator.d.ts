@@ -5,7 +5,9 @@ export interface DoubleListIterator extends DoubleBidirectionalIterator, Object,
     add(arg0: number): void;
     back(arg0: number): number;
     next(): number;
+    nextDouble(): number;
     previous(): number;
+    previousDouble(): number;
     remove(): void;
     set(arg0: number): void;
     skip(arg0: number): number;

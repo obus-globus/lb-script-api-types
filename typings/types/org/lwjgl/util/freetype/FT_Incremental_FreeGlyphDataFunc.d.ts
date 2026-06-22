@@ -20,4 +20,5 @@ export abstract class FT_Incremental_FreeGlyphDataFunc extends Callback implemen
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number): void;
 }

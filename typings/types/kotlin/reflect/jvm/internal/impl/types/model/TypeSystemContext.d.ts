@@ -46,6 +46,7 @@ export interface TypeSystemContext extends Object, TypeSystemOptimizationContext
     getVariance(arg0: TypeParameterMarker): TypeVariance;
     hasFlexibleNullability(arg0: KotlinTypeMarker): boolean;
     hasRecursiveBounds(arg0: TypeParameterMarker, arg1: TypeConstructorMarker): boolean;
+    identicalArguments(arg0: RigidTypeMarker, arg1: RigidTypeMarker): boolean;
     intersectTypes(arg0: KotlinTypeMarker[]): KotlinTypeMarker;
     isAnyConstructor(arg0: TypeConstructorMarker): boolean;
     isCapturedType(arg0: KotlinTypeMarker): boolean;

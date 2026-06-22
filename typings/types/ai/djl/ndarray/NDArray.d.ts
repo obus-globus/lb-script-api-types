@@ -37,6 +37,7 @@ export interface NDArray extends BytesSupplier, NDResource, Object {
     atan(): NDArray;
     atan2(arg0: NDArray): NDArray;
     atanh(): NDArray;
+    attach(arg0: NDManager): void;
     batchDot(arg0: NDArray): NDArray;
     batchMatMul(arg0: NDArray): NDArray;
     booleanMask(arg0: NDArray): NDArray;
@@ -62,6 +63,7 @@ export interface NDArray extends BytesSupplier, NDResource, Object {
     cumProd(arg0: number, arg1: DataType): NDArray;
     cumSum(): NDArray;
     cumSum(arg0: number): NDArray;
+    detach(): void;
     diagonal(): NDArray;
     diagonal(arg0: number): NDArray;
     diagonal(arg0: number, arg1: number, arg2: number): NDArray;
@@ -108,6 +110,7 @@ export interface NDArray extends BytesSupplier, NDResource, Object {
     getGradient(): NDArray;
     getInt(arg0: number[]): number;
     getLong(arg0: number[]): number;
+    getManager(): NDManager;
     getNDArrayInternal(): NDArrayEx;
     getName(): string;
     getResourceNDArrays(): NDArray[];
@@ -262,6 +265,7 @@ export interface NDArray extends BytesSupplier, NDResource, Object {
     take(arg0: NDManager, arg1: NDArray): NDArray;
     tan(): NDArray;
     tanh(): NDArray;
+    tempAttach(arg0: NDManager): void;
     tile(arg0: Shape): NDArray;
     tile(arg0: number, arg1: number): NDArray;
     tile(arg0: number): NDArray;

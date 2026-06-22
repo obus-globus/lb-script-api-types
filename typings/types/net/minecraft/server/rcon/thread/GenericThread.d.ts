@@ -7,6 +7,7 @@ export abstract class GenericThread extends Object implements Runnable {
     running: boolean;
     // private thread: Thread;
     isRunning(): boolean;
+    run(): void;
     start(): boolean;
     stop(): void;
 }

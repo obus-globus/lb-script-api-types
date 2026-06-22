@@ -1,4 +1,5 @@
 import type { AbstractSecureDigestAlgorithm } from '../../../../io/jsonwebtoken/impl/security/AbstractSecureDigestAlgorithm.d.ts'
+import type { KeyPairBuilder } from '../../../../io/jsonwebtoken/security/KeyPairBuilder.d.ts'
 import type { SecureRequest } from '../../../../io/jsonwebtoken/security/SecureRequest.d.ts'
 import type { SignatureAlgorithm } from '../../../../io/jsonwebtoken/security/SignatureAlgorithm.d.ts'
 import type { VerifySecureDigestRequest } from '../../../../io/jsonwebtoken/security/VerifySecureDigestRequest.d.ts'
@@ -11,6 +12,7 @@ export abstract class AbstractSignatureAlgorithm extends AbstractSecureDigestAlg
     constructor(arg0: string, arg1: string)
     doDigest(arg0: SecureRequest<InputStream, PrivateKey>): number[];
     doVerify(arg0: VerifySecureDigestRequest<PublicKey>): boolean;
+    keyPair(): KeyPairBuilder;
     sign(arg0: Signature, arg1: InputStream): number[];
     validateKey(arg0: Key, arg1: boolean): void;
     verify(arg0: VerifySecureDigestRequest<PublicKey>): boolean;

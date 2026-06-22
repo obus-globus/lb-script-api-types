@@ -20,4 +20,5 @@ export abstract class FT_Raster_RenderFunc extends Callback implements FT_Raster
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number): number;
 }

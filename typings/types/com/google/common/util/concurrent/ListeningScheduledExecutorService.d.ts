@@ -9,8 +9,12 @@ import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ListeningScheduledExecutorService extends ListeningExecutorService, ScheduledExecutorService, Object {
     awaitTermination(timeout: Duration): boolean;
+    awaitTermination(arg0: number, arg1: TimeUnit): boolean;
+    execute(arg0: () => void): void;
     invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): Future<T>[];
     invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): T;
+    isShutdown(): boolean;
+    isTerminated(): boolean;
     schedule(command: () => void, delay: Duration): ListenableScheduledFuture<Object>;
     schedule(command: () => void, delay: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
     schedule<V extends Object | number | string | boolean>(callable: () => V, delay: Duration): ListenableScheduledFuture<V>;
@@ -19,4 +23,5 @@ export interface ListeningScheduledExecutorService extends ListeningExecutorServ
     scheduleAtFixedRate(command: () => void, initialDelay: number, period: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
     scheduleWithFixedDelay(command: () => void, initialDelay: Duration, delay: Duration): ListenableScheduledFuture<Object>;
     scheduleWithFixedDelay(command: () => void, initialDelay: number, delay: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
+    shutdown(): void;
 }

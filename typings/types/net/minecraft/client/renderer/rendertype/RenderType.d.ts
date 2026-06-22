@@ -23,6 +23,8 @@ export class RenderType extends Object implements MixinRenderTypeAccessor, Rende
     canConsolidateConsecutiveGeometry(): boolean;
     draw(mesh: MeshData): void;
     format(): VertexFormat;
+    getName(): string;
+    getState(): RenderSetup;
     hasBlending(): boolean;
     iris$getPipeline(): RenderPipeline;
     iris$getRenderTarget(): RenderTarget;

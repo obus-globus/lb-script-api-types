@@ -12,6 +12,7 @@ import type { BlockEntity } from '../../../../net/minecraft/world/level/block/en
 import type { BlockEntityType } from '../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { WorldBorder } from '../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
+import type { FluidState } from '../../../../net/minecraft/world/level/material/FluidState.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { BlockHitResult } from '../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -28,14 +29,19 @@ export interface CollisionGetter extends Object, BlockGetter {
     getBlockAndLiquidCollisions(source: Entity, box: AABB): VoxelShape[];
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
     // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
+    getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
+    getBlockState(pos: BlockPos): BlockState;
     getBlockStates(box: AABB): Stream<BlockState>;
     getChunkForCollisions(chunkX: number, chunkZ: number): BlockGetter;
     getCollisions(source: Entity, box: AABB): VoxelShape[];
     getEntityCollisions(source: Entity, testArea: AABB): VoxelShape[];
+    getFluidState(pos: BlockPos): FluidState;
+    getHeight(): number;
     getLightEmission(pos: BlockPos): number;
+    getMinY(): number;
     getPreMoveCollisions(source: Entity, box: AABB, oldPos: Vec3): VoxelShape[];
     getWorldBorder(): WorldBorder;
     isBlockInLine(c: ClipBlockStateContext): BlockHitResult;

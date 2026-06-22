@@ -6,6 +6,8 @@ import type { InternetProtocolStats$UdpStats } from '../../../oshi/software/os/I
 export abstract class AbstractInternetProtocolStats extends Object implements InternetProtocolStats {
     constructor()
     getConnections(): InternetProtocolStats$IPConnection[];
+    getTCPv4Stats(): InternetProtocolStats$TcpStats;
     getTCPv6Stats(): InternetProtocolStats$TcpStats;
+    getUDPv4Stats(): InternetProtocolStats$UdpStats;
     getUDPv6Stats(): InternetProtocolStats$UdpStats;
 }

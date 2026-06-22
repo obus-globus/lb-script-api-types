@@ -137,6 +137,7 @@ export abstract class AbstractFish extends WaterAnimal implements Bucketable {
     createNavigation(level: Level): PathNavigation;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     fromBucket(): boolean;
+    getBucketItemStack(): ItemStack;
     getFlopSound(): SoundEvent;
     getMaxSpawnClusterSize(): number;
     getPickupSound(): SoundEvent;

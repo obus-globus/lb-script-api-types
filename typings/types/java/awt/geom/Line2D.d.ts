@@ -21,6 +21,7 @@ export abstract class Line2D extends Object implements Shape, Cloneable {
     contains(arg0: number, arg1: number): boolean;
     contains(arg0: number, arg1: number, arg2: number, arg3: number): boolean;
     getBounds(): Rectangle;
+    getBounds2D(): Rectangle2D;
     getP1(): Point2D;
     getP2(): Point2D;
     getPathIterator(arg0: AffineTransform): PathIterator;

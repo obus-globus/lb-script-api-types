@@ -9,11 +9,20 @@ export abstract class AbstractOSFileStore extends Object implements OSFileStore 
     readonly options: string;
     // private uuid: string;
     readonly volume: string;
+    getDescription(): string;
+    getFreeInodes(): number;
+    getFreeSpace(): number;
     getLabel(): string;
+    getLogicalVolume(): string;
     getMount(): string;
     getName(): string;
     getOptions(): string;
+    getTotalInodes(): number;
+    getTotalSpace(): number;
+    getType(): string;
     getUUID(): string;
+    getUsableSpace(): number;
     getVolume(): string;
     toString(): string;
+    updateAttributes(): boolean;
 }

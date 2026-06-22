@@ -25,5 +25,6 @@ export abstract class GLFWErrorCallback extends Callback implements GLFWErrorCal
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number): void;
     set(): GLFWErrorCallback;
 }

@@ -7,5 +7,6 @@ export abstract class AbstractLongIterator extends Object implements LongIterato
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextLong(): number;
     skip(arg0: number): number;
 }

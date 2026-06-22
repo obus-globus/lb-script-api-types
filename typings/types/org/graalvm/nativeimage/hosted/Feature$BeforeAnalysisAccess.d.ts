@@ -1,4 +1,5 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { Executable } from '../../../../java/lang/reflect/Executable.d.ts'
 import type { Field } from '../../../../java/lang/reflect/Field.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
@@ -8,6 +9,7 @@ import type { Feature$DuringAnalysisAccess } from '../../../../org/graalvm/nativ
 import type { Feature$FeatureAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$FeatureAccess.d.ts'
 import type { FieldValueTransformer } from '../../../../org/graalvm/nativeimage/hosted/FieldValueTransformer.d.ts'
 export interface Feature$BeforeAnalysisAccess extends Object, Feature$FeatureAccess {
+    getApplicationClassLoader(): ClassLoader;
     registerAsAccessed(field: Field): void;
     registerAsInHeap(type: Class<Object>): void;
     registerAsUnsafeAccessed(field: Field): void;

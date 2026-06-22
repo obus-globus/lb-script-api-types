@@ -1,6 +1,21 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ConnectionProtocol } from '../../../../../net/minecraft/network/ConnectionProtocol.d.ts'
+import type { DisconnectionDetails } from '../../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { ClientCommonPacketListener } from '../../../../../net/minecraft/network/protocol/common/ClientCommonPacketListener.d.ts'
+import type { ClientboundClearDialogPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundClearDialogPacket.d.ts'
+import type { ClientboundCustomPayloadPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundCustomPayloadPacket.d.ts'
+import type { ClientboundCustomReportDetailsPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundCustomReportDetailsPacket.d.ts'
+import type { ClientboundDisconnectPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundDisconnectPacket.d.ts'
+import type { ClientboundKeepAlivePacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundKeepAlivePacket.d.ts'
+import type { ClientboundPingPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundPingPacket.d.ts'
+import type { ClientboundResourcePackPopPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundResourcePackPopPacket.d.ts'
+import type { ClientboundResourcePackPushPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundResourcePackPushPacket.d.ts'
+import type { ClientboundServerLinksPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundServerLinksPacket.d.ts'
+import type { ClientboundShowDialogPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundShowDialogPacket.d.ts'
+import type { ClientboundStoreCookiePacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundStoreCookiePacket.d.ts'
+import type { ClientboundTransferPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundTransferPacket.d.ts'
+import type { ClientboundUpdateTagsPacket } from '../../../../../net/minecraft/network/protocol/common/ClientboundUpdateTagsPacket.d.ts'
+import type { ClientboundCookieRequestPacket } from '../../../../../net/minecraft/network/protocol/cookie/ClientboundCookieRequestPacket.d.ts'
 import type { ClientboundAddEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
 import type { ClientboundAnimatePacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundAnimatePacket.d.ts'
 import type { ClientboundAwardStatsPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundAwardStatsPacket.d.ts'
@@ -126,6 +141,7 @@ import type { ClientboundUpdateAttributesPacket } from '../../../../../net/minec
 import type { ClientboundUpdateMobEffectPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundUpdateMobEffectPacket.d.ts'
 import type { ClientboundUpdateRecipesPacket } from '../../../../../net/minecraft/network/protocol/game/ClientboundUpdateRecipesPacket.d.ts'
 import type { ClientPongPacketListener } from '../../../../../net/minecraft/network/protocol/ping/ClientPongPacketListener.d.ts'
+import type { ClientboundPongResponsePacket } from '../../../../../net/minecraft/network/protocol/ping/ClientboundPongResponsePacket.d.ts'
 export interface ClientGamePacketListener extends Object, ClientCommonPacketListener, ClientPongPacketListener{
     handleAddEntity(packet: ClientboundAddEntityPacket): void;
     handleAddObjective(packet: ClientboundSetObjectivePacket): void;
@@ -143,6 +159,7 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleChunkBatchStart(packet: ClientboundChunkBatchStartPacket): void;
     handleChunkBlocksUpdate(packet: ClientboundSectionBlocksUpdatePacket): void;
     handleChunksBiomes(packet: ClientboundChunksBiomesPacket): void;
+    handleClearDialog(packet: ClientboundClearDialogPacket): void;
     handleCommandSuggestions(packet: ClientboundCommandSuggestionsPacket): void;
     handleCommands(packet: ClientboundCommandsPacket): void;
     handleConfigurationStart(packet: ClientboundStartConfigurationPacket): void;
@@ -151,6 +168,8 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleContainerSetData(packet: ClientboundContainerSetDataPacket): void;
     handleContainerSetSlot(packet: ClientboundContainerSetSlotPacket): void;
     handleCustomChatCompletions(packet: ClientboundCustomChatCompletionsPacket): void;
+    handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;
+    handleCustomReportDetails(packet: ClientboundCustomReportDetailsPacket): void;
     handleDamageEvent(packet: ClientboundDamageEventPacket): void;
     handleDebugBlockValue(packet: ClientboundDebugBlockValuePacket): void;
     handleDebugChunkValue(packet: ClientboundDebugChunkValuePacket): void;
@@ -158,6 +177,7 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleDebugEvent(packet: ClientboundDebugEventPacket): void;
     handleDebugSample(packet: ClientboundDebugSamplePacket): void;
     handleDeleteChat(packet: ClientboundDeleteChatPacket): void;
+    handleDisconnect(packet: ClientboundDisconnectPacket): void;
     handleDisguisedChat(packet: ClientboundDisguisedChatPacket): void;
     handleEntityEvent(packet: ClientboundEntityEventPacket): void;
     handleEntityLinkPacket(packet: ClientboundSetEntityLinkPacket): void;
@@ -170,6 +190,7 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleHurtAnimation(packet: ClientboundHurtAnimationPacket): void;
     handleInitializeBorder(packet: ClientboundInitializeBorderPacket): void;
     handleItemCooldown(packet: ClientboundCooldownPacket): void;
+    handleKeepAlive(packet: ClientboundKeepAlivePacket): void;
     handleLevelChunkWithLight(packet: ClientboundLevelChunkWithLightPacket): void;
     handleLevelEvent(packet: ClientboundLevelEventPacket): void;
     handleLightUpdatePacket(packet: ClientboundLightUpdatePacket): void;
@@ -187,6 +208,7 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleOpenScreen(packet: ClientboundOpenScreenPacket): void;
     handleOpenSignEditor(packet: ClientboundOpenSignEditorPacket): void;
     handleParticleEvent(packet: ClientboundLevelParticlesPacket): void;
+    handlePing(packet: ClientboundPingPacket): void;
     handlePlaceRecipe(packet: ClientboundPlaceGhostRecipePacket): void;
     handlePlayerAbilities(packet: ClientboundPlayerAbilitiesPacket): void;
     handlePlayerChat(packet: ClientboundPlayerChatPacket): void;
@@ -195,18 +217,23 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handlePlayerCombatKill(packet: ClientboundPlayerCombatKillPacket): void;
     handlePlayerInfoRemove(packet: ClientboundPlayerInfoRemovePacket): void;
     handlePlayerInfoUpdate(packet: ClientboundPlayerInfoUpdatePacket): void;
+    handlePongResponse(packet: ClientboundPongResponsePacket): void;
     handleProjectilePowerPacket(packet: ClientboundProjectilePowerPacket): void;
     handleRecipeBookAdd(packet: ClientboundRecipeBookAddPacket): void;
     handleRecipeBookRemove(packet: ClientboundRecipeBookRemovePacket): void;
     handleRecipeBookSettings(packet: ClientboundRecipeBookSettingsPacket): void;
     handleRemoveEntities(packet: ClientboundRemoveEntitiesPacket): void;
     handleRemoveMobEffect(packet: ClientboundRemoveMobEffectPacket): void;
+    handleRequestCookie(packet: ClientboundCookieRequestPacket): void;
     handleResetScore(packet: ClientboundResetScorePacket): void;
+    handleResourcePackPop(packet: ClientboundResourcePackPopPacket): void;
+    handleResourcePackPush(packet: ClientboundResourcePackPushPacket): void;
     handleRespawn(packet: ClientboundRespawnPacket): void;
     handleRotateMob(packet: ClientboundRotateHeadPacket): void;
     handleRotatePlayer(packet: ClientboundPlayerRotationPacket): void;
     handleSelectAdvancementsTab(packet: ClientboundSelectAdvancementsTabPacket): void;
     handleServerData(packet: ClientboundServerDataPacket): void;
+    handleServerLinks(packet: ClientboundServerLinksPacket): void;
     handleSetBorderCenter(packet: ClientboundSetBorderCenterPacket): void;
     handleSetBorderLerpSize(packet: ClientboundSetBorderLerpSizePacket): void;
     handleSetBorderSize(packet: ClientboundSetBorderSizePacket): void;
@@ -230,9 +257,11 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleSetSimulationDistance(packet: ClientboundSetSimulationDistancePacket): void;
     handleSetSpawn(packet: ClientboundSetDefaultSpawnPositionPacket): void;
     handleSetTime(packet: ClientboundSetTimePacket): void;
+    handleShowDialog(packet: ClientboundShowDialogPacket): void;
     handleSoundEntityEvent(packet: ClientboundSoundEntityPacket): void;
     handleSoundEvent(packet: ClientboundSoundPacket): void;
     handleStopSoundEvent(packet: ClientboundStopSoundPacket): void;
+    handleStoreCookie(packet: ClientboundStoreCookiePacket): void;
     handleSystemChat(packet: ClientboundSystemChatPacket): void;
     handleTabListCustomisation(packet: ClientboundTabListPacket): void;
     handleTagQueryPacket(packet: ClientboundTagQueryPacket): void;
@@ -242,11 +271,15 @@ export interface ClientGamePacketListener extends Object, ClientCommonPacketList
     handleTickingState(packet: ClientboundTickingStatePacket): void;
     handleTickingStep(packet: ClientboundTickingStepPacket): void;
     handleTitlesClear(packet: ClientboundClearTitlesPacket): void;
+    handleTransfer(packet: ClientboundTransferPacket): void;
     handleUpdateAdvancementsPacket(packet: ClientboundUpdateAdvancementsPacket): void;
     handleUpdateAttributes(packet: ClientboundUpdateAttributesPacket): void;
     handleUpdateMobEffect(packet: ClientboundUpdateMobEffectPacket): void;
     handleUpdateRecipes(packet: ClientboundUpdateRecipesPacket): void;
+    handleUpdateTags(packet: ClientboundUpdateTagsPacket): void;
     handleWaypoint(packet: ClientboundTrackedWaypointPacket): void;
+    isAcceptingMessages(): boolean;
+    onDisconnect(details: DisconnectionDetails): void;
     protocol(): ConnectionProtocol;
     setActionBarText(packet: ClientboundSetActionBarTextPacket): void;
     setSubtitleText(packet: ClientboundSetSubtitleTextPacket): void;

@@ -3,4 +3,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface ClientboundPacket1_21_11 extends ClientboundPacketType, Object{
     direction(): Direction;
+    getId(): number;
+    getName(): string;
 }

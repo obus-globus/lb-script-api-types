@@ -3,6 +3,7 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Sequence } from '../../../../../kotlin/sequences/Sequence.d.ts'
 import type { ChunkScanner$BlockChangeSubscriber } from '../../../../../net/ccbluex/liquidbounce/utils/block/ChunkScanner$BlockChangeSubscriber.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 /**
@@ -23,6 +24,8 @@ export class AbstractBlockLocationTracker<T extends Object | number | string | b
      */
     allPositions(): Sequence<BlockPos>;
     chunkUpdate(chunk: LevelChunk): void;
+    clearAllChunks(): void;
+    clearChunk(pos: ChunkPos): void;
     /**
      * Gets the {@link state} of specified {@link BlockPos} and its {@link BlockState}.
      *

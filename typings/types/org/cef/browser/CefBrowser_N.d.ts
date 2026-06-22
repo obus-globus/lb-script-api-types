@@ -104,6 +104,7 @@ export abstract class CefBrowser_N extends CefNativeAdapter implements CefBrowse
     createBrowser(arg0: CefClientHandler, arg1: number, arg2: string, arg3: boolean, arg4: boolean, arg5: CefRequestContext): void;
     createDevTools(arg0: CefBrowser_N, arg1: CefClientHandler, arg2: number, arg3: boolean, arg4: boolean, arg5: Point): void;
     createDevToolsBrowser(arg0: CefClient, arg1: string, arg2: CefRequestContext, arg3: CefBrowser_N, arg4: Point): CefBrowser_N;
+    createImmediately(): void;
     doClose(): boolean;
     dragSourceEndedAt(arg0: Point, arg1: number): void;
     dragSourceSystemDragEnded(): void;

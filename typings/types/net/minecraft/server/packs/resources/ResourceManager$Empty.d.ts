@@ -1,3 +1,5 @@
+import type { BufferedReader } from '../../../../../java/io/BufferedReader.d.ts'
+import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
@@ -18,9 +20,12 @@ export class ResourceManager$Empty extends Enum<ResourceManager$Empty> implement
     private constructor()
     getNamespaces(): string[];
     getResource(location: Identifier): Optional<Resource>;
+    getResourceOrThrow(location: Identifier): Resource;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
     listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
     listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
+    open(location: Identifier): InputStream;
+    openAsReader(location: Identifier): BufferedReader;
     name(): "INSTANCE";
 }

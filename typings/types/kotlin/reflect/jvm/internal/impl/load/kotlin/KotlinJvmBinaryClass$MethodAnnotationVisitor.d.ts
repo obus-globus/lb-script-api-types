@@ -4,5 +4,7 @@ import type { KotlinJvmBinaryClass$AnnotationArgumentVisitor } from '../../../..
 import type { KotlinJvmBinaryClass$AnnotationVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/KotlinJvmBinaryClass$AnnotationVisitor.d.ts'
 import type { ClassId } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
 export interface KotlinJvmBinaryClass$MethodAnnotationVisitor extends Object, KotlinJvmBinaryClass$AnnotationVisitor{
+    visitAnnotation(arg0: ClassId, arg1: SourceElement): KotlinJvmBinaryClass$AnnotationArgumentVisitor;
+    visitEnd(): void;
     visitParameterAnnotation(arg0: number, arg1: ClassId, arg2: SourceElement): KotlinJvmBinaryClass$AnnotationArgumentVisitor;
 }

@@ -3,4 +3,6 @@ import type { ServerboundPacketType } from '../../../../../../com/viaversion/via
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface ServerboundPacket1_21_9 extends ServerboundPacketType, Object{
     direction(): Direction;
+    getId(): number;
+    getName(): string;
 }

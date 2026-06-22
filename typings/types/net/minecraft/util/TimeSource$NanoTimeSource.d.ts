@@ -4,4 +4,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { TimeSource } from '../../../net/minecraft/util/TimeSource.d.ts'
 export interface TimeSource$NanoTimeSource extends LongSupplier, Object, TimeSource{
     get(timeUnit: TimeUnit): number;
+    getAsLong(): number;
 }

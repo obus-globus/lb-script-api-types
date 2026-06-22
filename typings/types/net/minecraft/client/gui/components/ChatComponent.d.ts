@@ -58,12 +58,17 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     extractRenderState(graphics: GuiGraphicsExtractor, font: Font, ticks: number, mouseX: number, mouseY: number, displayMode: ChatComponent$DisplayMode, changeCursorOnInsertions: boolean): void;
     // private extractRenderState(graphics: ChatComponent$ChatGraphicsAccess, screenHeight: number, ticks: number, displayMode: ChatComponent$DisplayMode): void;
     // private forEachLine(alphaCalculator: (param0: GuiMessage$Line) => number, lineConsumer: (param0: GuiMessage$Line, param1: number, param2: number) => void): number;
+    getChatScrollbarPos(): number;
     // private getHeight(): number;
     // private getLineHeight(): number;
     getLinesPerPage(): number;
     getRecentChat(): string[];
     // private getScale(): number;
     // private getWidth(): number;
+    invokeGetLineHeight(): number;
+    invokeGetLinesPerPage(): number;
+    invokeGetScale(): number;
+    invokeGetWidth(): number;
     isChatFocused(): boolean;
     liquidbounce_getChatY(): number;
     logChatMessage(message: GuiMessage): void;

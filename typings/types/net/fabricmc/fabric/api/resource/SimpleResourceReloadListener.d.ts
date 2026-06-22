@@ -9,6 +9,7 @@ import type { ResourceManager } from '../../../../../net/minecraft/server/packs/
 export interface SimpleResourceReloadListener<T extends Object | number | string | boolean> extends Object, IdentifiableResourceReloadListener {
     apply(arg0: T, arg1: ResourceManager, arg2: Executor): CompletableFuture<void>;
     getFabricDependencies(): Identifier[];
+    getFabricId(): Identifier;
     load(arg0: ResourceManager, arg1: Executor): CompletableFuture<T>;
     reload(arg0: PreparableReloadListener$SharedState, arg1: Executor, arg2: (param0: Object | null) => CompletableFuture<Object>, arg3: Executor): CompletableFuture<void>;
 }

@@ -9,6 +9,7 @@ import type { Batchifier } from '../../../../ai/djl/translate/Batchifier.d.ts'
 import type { Pipeline } from '../../../../ai/djl/translate/Pipeline.d.ts'
 import type { TranslatorOptions } from '../../../../ai/djl/translate/TranslatorOptions.d.ts'
 import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
+import type { Progress } from '../../../../ai/djl/util/Progress.d.ts'
 import type { ExecutorService } from '../../../../java/util/concurrent/ExecutorService.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
@@ -34,6 +35,7 @@ export abstract class RandomAccessDataset extends Object implements Dataset {
     newSubDataset(arg0: number[], arg1: number, arg2: number): RandomAccessDataset;
     newSubDataset(arg0: number[]): RandomAccessDataset;
     prepare(): void;
+    prepare(arg0: Progress): void;
     randomSplit(arg0: number[]): RandomAccessDataset[];
     size(): number;
     subDataset(arg0: number, arg1: number): RandomAccessDataset;

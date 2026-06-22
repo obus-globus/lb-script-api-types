@@ -7,6 +7,7 @@ export interface IntBidirectionalIterator extends IntIterator, ObjectBidirection
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextInt(): number;
     previous(): number;
     previousInt(): number;
     skip(arg0: number): number;

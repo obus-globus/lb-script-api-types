@@ -1,4 +1,6 @@
 import type { Frame } from '../../../../../com/oracle/truffle/api/frame/Frame.d.ts'
+import type { FrameDescriptor } from '../../../../../com/oracle/truffle/api/frame/FrameDescriptor.d.ts'
+import type { MaterializedFrame } from '../../../../../com/oracle/truffle/api/frame/MaterializedFrame.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface VirtualFrame extends Frame, Object{
     clear(slot: number): void;
@@ -26,6 +28,7 @@ export interface VirtualFrame extends Frame, Object{
     getDoubleStatic(slot: number): number;
     getFloat(slot: number): number;
     getFloatStatic(slot: number): number;
+    getFrameDescriptor(): FrameDescriptor;
     getInt(slot: number): number;
     getIntStatic(slot: number): number;
     getLong(slot: number): number;
@@ -42,6 +45,7 @@ export interface VirtualFrame extends Frame, Object{
     isLong(slot: number): boolean;
     isObject(slot: number): boolean;
     isStatic(slot: number): boolean;
+    materialize(): MaterializedFrame;
     setAuxiliarySlot(slot: number, value: Object): void;
     setBoolean(slot: number, value: boolean): void;
     setBooleanStatic(slot: number, value: boolean): void;

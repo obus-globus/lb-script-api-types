@@ -8,4 +8,5 @@ export abstract class SyntheticClassInfo extends Object implements ISyntheticCla
     getClassName(): string;
     getMixin(): IMixinInfo;
     getName(): string;
+    isLoaded(): boolean;
 }

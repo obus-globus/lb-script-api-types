@@ -13,8 +13,10 @@ export interface IntIntSortedPair extends SortedPair<number>, IntIntPair, Serial
     keyInt(): number;
     left(): number;
     left(arg0: number): IntIntPair;
+    leftInt(): number;
     right(): number;
     right(arg0: number): IntIntPair;
+    rightInt(): number;
     second(): number;
     second(arg0: number): IntIntPair;
     secondInt(): number;

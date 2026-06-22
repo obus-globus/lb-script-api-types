@@ -7,6 +7,7 @@ export interface DoubleBidirectionalIterator extends DoubleIterator, ObjectBidir
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextDouble(): number;
     previous(): number;
     previousDouble(): number;
     skip(arg0: number): number;

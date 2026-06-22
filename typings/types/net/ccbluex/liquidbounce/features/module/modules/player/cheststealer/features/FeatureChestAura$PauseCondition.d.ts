@@ -16,5 +16,6 @@ export class FeatureChestAura$PauseCondition extends Enum<FeatureChestAura$Pause
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
+    getAsBoolean(): boolean;
     name(): "COMBAT" | "USING_ITEM";
 }

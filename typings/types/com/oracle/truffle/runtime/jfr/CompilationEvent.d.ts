@@ -1,9 +1,12 @@
+import type { OptimizedCallTarget } from '../../../../../com/oracle/truffle/runtime/OptimizedCallTarget.d.ts'
 import type { RootFunctionEvent } from '../../../../../com/oracle/truffle/runtime/jfr/RootFunctionEvent.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface CompilationEvent extends RootFunctionEvent, Object {
     compilationStarted(): void;
     failed(tier: number, permanent: boolean, reason: string, lazyStackTrace: () => string): void;
+    isEnabled(): boolean;
+    publish(): void;
     setCompilationId(id: string): void;
     setCompiledCodeAddress(addr: number): void;
     setCompiledCodeSize(size: number): void;
@@ -12,5 +15,6 @@ export interface CompilationEvent extends RootFunctionEvent, Object {
     setInlinedCalls(count: number): void;
     setPartialEvaluationNodeCount(count: number): void;
     setPartialEvaluationTime(time: number): void;
+    setRootFunction(target: OptimizedCallTarget): void;
     succeeded(tier: number): void;
 }

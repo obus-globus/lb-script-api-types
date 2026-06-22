@@ -1,6 +1,7 @@
 import type { UserConnection } from '../../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Direction } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { ServerboundPacketType } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
+import type { State } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
@@ -42,5 +43,6 @@ export class ServerboundPacketsb1_8 extends Enum<ServerboundPacketsb1_8> impleme
     getId(): number;
     getName(): string;
     getPacketReader(): (param0: UserConnection, param1: ByteBuf) => void;
+    state(): State;
     name(): "KEEP_ALIVE" | "LOGIN" | "HANDSHAKE" | "CHAT" | "INTERACT" | "RESPAWN" | "MOVE_PLAYER_STATUS_ONLY" | "MOVE_PLAYER_POS" | "MOVE_PLAYER_ROT" | "MOVE_PLAYER_POS_ROT" | "PLAYER_ACTION" | "USE_ITEM_ON" | "SET_CARRIED_ITEM" | "SWING" | "PLAYER_COMMAND" | "POSITION" | "CONTAINER_CLOSE" | "CONTAINER_CLICK" | "CONTAINER_ACK" | "SET_CREATIVE_MODE_SLOT" | "SIGN_UPDATE" | "SERVER_PING" | "DISCONNECT";
 }

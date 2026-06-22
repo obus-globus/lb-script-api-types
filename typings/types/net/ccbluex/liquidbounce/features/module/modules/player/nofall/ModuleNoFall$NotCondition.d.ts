@@ -26,5 +26,6 @@ export class ModuleNoFall$NotCondition extends Enum<ModuleNoFall$NotCondition> i
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
+    getAsBoolean(): boolean;
     name(): "WHILE_GLIDING" | "WITH_MACE";
 }

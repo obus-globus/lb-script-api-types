@@ -4,6 +4,8 @@ import type { Metadata } from '../../../../../org/apache/tika/metadata/Metadata.
 import type { ParseContext } from '../../../../../org/apache/tika/parser/ParseContext.d.ts'
 import type { Fetcher } from '../../../../../org/apache/tika/pipes/fetcher/Fetcher.d.ts'
 export interface RangeFetcher extends Object, Fetcher{
+    fetch(arg0: string, arg1: Metadata, arg2: ParseContext): InputStream;
     fetch(arg0: string, arg1: number, arg2: number, arg3: Metadata): InputStream;
     fetch(arg0: string, arg1: number, arg2: number, arg3: Metadata, arg4: ParseContext): InputStream;
+    getName(): string;
 }

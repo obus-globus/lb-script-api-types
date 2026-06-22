@@ -5,6 +5,7 @@ import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface StructuredData<T extends Object | number | string | boolean> extends Copyable, IdHolder, Object{
     copy(): StructuredData<T>;
+    id(): number;
     isEmpty(): boolean;
     isPresent(): boolean;
     key(): StructuredDataKey<T>;

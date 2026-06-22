@@ -11,4 +11,7 @@ export interface ViaLegacyConfig extends Config, Object{
     isLegacySkullLoading(): boolean;
     isOldBiomes(): boolean;
     isSoundEmulation(): boolean;
+    reload(): void;
+    save(): void;
+    set(arg0: string, arg1: Object): void;
 }

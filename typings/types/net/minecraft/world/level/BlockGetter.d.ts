@@ -31,10 +31,12 @@ export interface BlockGetter extends Object, FabricBlockGetter, BlockGetterMixin
     getBlockState(pos: BlockPos): BlockState;
     getBlockStates(box: AABB): Stream<BlockState>;
     getFluidState(pos: BlockPos): FluidState;
+    getHeight(): number;
     getLightEmission(pos: BlockPos): number;
     getMaxSectionY(): number;
     getMaxY(): number;
     getMinSectionY(): number;
+    getMinY(): number;
     getSectionIndex(blockY: number): number;
     getSectionIndexFromSectionY(sectionY: number): number;
     getSectionYFromSectionIndex(sectionIndex: number): number;

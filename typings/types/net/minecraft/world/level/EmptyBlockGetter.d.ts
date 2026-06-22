@@ -31,6 +31,7 @@ export class EmptyBlockGetter extends Enum<EmptyBlockGetter> implements BlockGet
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockEntityRenderData(arg0: BlockPos): Object;
     getBlockFloorHeight(pos: BlockPos): number;
     getBlockFloorHeight(blockShape: VoxelShape, belowBlockShape: () => VoxelShape): number;
     getBlockState(pos: BlockPos): BlockState;
@@ -38,8 +39,20 @@ export class EmptyBlockGetter extends Enum<EmptyBlockGetter> implements BlockGet
     getFluidState(pos: BlockPos): FluidState;
     getHeight(): number;
     getLightEmission(pos: BlockPos): number;
+    getMaxSectionY(): number;
+    getMaxY(): number;
+    getMinSectionY(): number;
     getMinY(): number;
+    getSectionIndex(blockY: number): number;
+    getSectionIndexFromSectionY(sectionY: number): number;
+    getSectionYFromSectionIndex(sectionIndex: number): number;
+    getSectionsCount(): number;
+    hasBiomes(): boolean;
     isBlockInLine(c: ClipBlockStateContext): BlockHitResult;
+    isInsideBuildHeight(blockY: number): boolean;
+    isInsideBuildHeight(pos: BlockPos): boolean;
+    isOutsideBuildHeight(blockY: number): boolean;
+    isOutsideBuildHeight(pos: BlockPos): boolean;
     // private lithium$blockHitFactory(arg0: ClipContext): (param0: Object, param1: Object) => Object;
     name(): "INSTANCE";
 }

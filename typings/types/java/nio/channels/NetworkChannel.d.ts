@@ -4,8 +4,10 @@ import type { Channel } from '../../../java/nio/channels/Channel.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface NetworkChannel extends Channel, Object{
     bind(arg0: SocketAddress): NetworkChannel;
+    close(): void;
     getLocalAddress(): SocketAddress;
     getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    isOpen(): boolean;
     setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): NetworkChannel;
     supportedOptions(): SocketOption<Object>[];
 }

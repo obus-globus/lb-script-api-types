@@ -11,5 +11,9 @@ export abstract class AbstractComputerSystem extends Object implements ComputerS
     createFirmware(): Firmware;
     getBaseboard(): Baseboard;
     getFirmware(): Firmware;
+    getHardwareUUID(): string;
+    getManufacturer(): string;
+    getModel(): string;
+    getSerialNumber(): string;
     toString(): string;
 }

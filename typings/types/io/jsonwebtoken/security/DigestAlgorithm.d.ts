@@ -5,5 +5,6 @@ import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface DigestAlgorithm<R extends Request<InputStream>, V extends VerifyDigestRequest> extends Identifiable, Object{
     digest(arg0: R): number[];
+    getId(): string;
     verify(arg0: V): boolean;
 }

@@ -16,5 +16,6 @@ export abstract class BeaconScreen$BeaconScreenButton extends AbstractButton imp
     extractIcon(graphics: GuiGraphicsExtractor): void;
     isSelected(): boolean;
     setSelected(selected: boolean): void;
+    updateStatus(levels: number): void;
     updateWidgetNarration(output: NarrationElementOutput): void;
 }

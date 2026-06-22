@@ -4,4 +4,5 @@ import type { TextComponent } from '../../../../../../../../com/viaversion/viave
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export interface TextCodecs_v1_20_3$TextComponentType extends NamedType, Object{
     getCodec(): MapCodec<TextComponent>;
+    getName(): string;
 }

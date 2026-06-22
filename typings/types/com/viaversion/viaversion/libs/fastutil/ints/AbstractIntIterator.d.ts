@@ -7,5 +7,6 @@ export abstract class AbstractIntIterator extends Object implements IntIterator 
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextInt(): number;
     skip(arg0: number): number;
 }

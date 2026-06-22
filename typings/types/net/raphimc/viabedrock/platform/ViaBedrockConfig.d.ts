@@ -8,6 +8,9 @@ export interface ViaBedrockConfig extends Config, Object{
     getResourcePackHost(): string;
     getResourcePackPort(): number;
     getResourcePackUrl(): string;
+    reload(): void;
+    save(): void;
+    set(arg0: string, arg1: Object): void;
     shouldDisableServerBlacklist(): boolean;
     shouldEnableExperimentalFeatures(): boolean;
     shouldTranslateResourcePacks(): boolean;

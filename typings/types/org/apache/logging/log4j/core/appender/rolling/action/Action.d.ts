@@ -4,4 +4,5 @@ export interface Action extends Runnable, Object{
     close(): void;
     execute(): boolean;
     isComplete(): boolean;
+    run(): void;
 }

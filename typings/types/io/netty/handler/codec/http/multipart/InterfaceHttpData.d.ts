@@ -5,6 +5,9 @@ import type { Comparable } from '../../../../../../java/lang/Comparable.d.ts'
 export interface InterfaceHttpData extends ReferenceCounted, Object, Comparable<InterfaceHttpData>{
     getHttpDataType(): InterfaceHttpData$HttpDataType;
     getName(): string;
+    refCnt(): number;
+    release(): boolean;
+    release(arg0: number): boolean;
     retain(): InterfaceHttpData;
     retain(arg0: number): InterfaceHttpData;
     touch(): InterfaceHttpData;

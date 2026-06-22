@@ -4,7 +4,9 @@ import type { CoordinateSectionVisitor } from '../../../../../../../../net/caffe
 import type { Forest } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/tree/Forest.d.ts'
 import type { Viewport } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/viewport/Viewport.d.ts'
 export interface TraversableForest extends Object, Forest{
+    add(arg0: number, arg1: number, arg2: number): void;
     add(arg0: RenderSection): void;
+    getPresence(arg0: number, arg1: number, arg2: number): number;
     isSectionPresent(arg0: number, arg1: number, arg2: number): boolean;
     prepareForTraversal(): void;
     traverse(arg0: CoordinateSectionVisitor, arg1: Viewport, arg2: number): void;

@@ -15,5 +15,6 @@ export abstract class LongRunningTask extends Object implements Runnable {
     error(errorMessage: Component): void;
     getTitle(): Component;
     init(): void;
+    run(): void;
     tick(): void;
 }

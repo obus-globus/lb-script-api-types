@@ -21,10 +21,12 @@ export abstract class GeneratedMessageLite$ExtendableMessage<MessageType extends
     // private extensions: FieldSet<GeneratedMessageLite$ExtensionDescriptor>;
     extensionsAreInitialized(): boolean;
     extensionsSerializedSize(): number;
+    getDefaultInstanceForType(): MessageLite;
     getExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): Type;
     getExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>, arg1: number): Type;
     getExtensionCount<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>): number;
     hasExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): boolean;
+    isInitialized(): boolean;
     makeExtensionsImmutable(): void;
     newExtensionWriter(): GeneratedMessageLite$ExtendableMessage$ExtensionWriter;
     parseUnknownField(arg0: CodedInputStream, arg1: CodedOutputStream, arg2: ExtensionRegistryLite, arg3: number): boolean;

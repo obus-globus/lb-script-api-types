@@ -8,6 +8,7 @@ export interface ShortBidirectionalIterator extends ObjectBidirectionalIterator<
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextShort(): number;
     previous(): number;
     previousShort(): number;
     skip(arg0: number): number;

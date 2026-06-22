@@ -270,6 +270,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getLevelLoadListener(): LevelLoadListener;
     getLocalIp(): string;
     getMaxChainedNeighborUpdates(): number;
+    getMaxPlayers(): number;
     getModdedStatus(): ModCheck;
     getMotd(): string;
     getNextTickTime(): number;

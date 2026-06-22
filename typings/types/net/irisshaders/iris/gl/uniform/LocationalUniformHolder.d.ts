@@ -18,6 +18,7 @@ import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 export interface LocationalUniformHolder extends Object, UniformHolder {
     addUniform(arg0: UniformUpdateFrequency, arg1: Uniform): LocationalUniformHolder;
+    externallyManagedUniform(arg0: string, arg1: UniformType): UniformHolder;
     location(arg0: string, arg1: UniformType): OptionalInt;
     uniform1b(arg0: UniformUpdateFrequency, arg1: string, arg2: () => boolean): LocationalUniformHolder;
     uniform1f(arg0: UniformUpdateFrequency, arg1: string, arg2: () => number): LocationalUniformHolder;

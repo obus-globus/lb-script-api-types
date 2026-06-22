@@ -10,9 +10,15 @@ export interface ISolver extends Serializable, Object, IProblem{
     createBlockingClauseForCurrentModel(): IVecInt;
     expireTimeout(): void;
     getLogPrefix(): string;
+    isSatisfiable(): boolean;
+    isSatisfiable(arg0: IVecInt): boolean;
+    isSatisfiable(arg0: IVecInt, arg1: boolean): boolean;
     isVerbose(): boolean;
+    model(arg0: number): boolean;
     modelWithInternalVariables(): number[];
+    nVars(): number;
     nextFreeVarId(arg0: boolean): number;
+    primeImplicant(arg0: number): boolean;
     printStat(arg0: PrintWriter, arg1: string): void;
     removeConstr(arg0: IConstr): boolean;
     removeSubsumedConstr(arg0: IConstr): boolean;

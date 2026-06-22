@@ -12,5 +12,6 @@ export interface ParentTextNode extends TextNode, Object{
     isDynamicNoChildren(): boolean;
     toComponent(): Component;
     toComponent(arg0: ParserContext): Component;
+    toComponent(arg0: ParserContext, arg1: boolean): Component;
     toComponent(arg0: PlaceholderContext): Component;
 }

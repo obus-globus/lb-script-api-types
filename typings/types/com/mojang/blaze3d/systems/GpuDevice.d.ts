@@ -31,6 +31,7 @@ export class GpuDevice extends Object implements GpuDeviceAccessor, GpuDeviceAcc
     createTexture(label: string, usage: number, format: TextureFormat, width: number, height: number, depthOrLayers: number, mipLevels: number): GpuTexture;
     createTextureView(texture: GpuTexture): GpuTextureView;
     createTextureView(texture: GpuTexture, baseMipLevel: number, mipLevels: number): GpuTextureView;
+    getBackend(): GpuDeviceBackend;
     getBackendName(): string;
     getEnabledExtensions(): string[];
     getImplementationInformation(): string;
@@ -47,6 +48,7 @@ export class GpuDevice extends Object implements GpuDeviceAccessor, GpuDeviceAcc
     precompilePipeline(pipeline: RenderPipeline, shaderSource: (param0: Identifier, param1: ShaderType) => string): CompiledRenderPipeline;
     presentFrame(): void;
     setVsync(enabled: boolean): void;
+    sodium$getBackend(): GpuDeviceBackend;
     // private verifyTextureCreationArgs(usage: number, width: number, height: number, depthOrLayers: number, mipLevels: number): void;
     // private verifyTextureViewCreationArgs(texture: GpuTexture, baseMipLevel: number, mipLevels: number): void;
 }

@@ -13,5 +13,6 @@ export abstract class BinaryClassAnnotationAndConstantLoaderImpl$AbstractAnnotat
     visitArrayValue(arg0: Name, arg1: ConstantValue<Object>[]): void;
     visitClassLiteral(arg0: Name, arg1: ClassLiteralValue): void;
     visitConstantValue(arg0: Name, arg1: ConstantValue<Object>): void;
+    visitEnd(): void;
     visitEnum(arg0: Name, arg1: ClassId, arg2: Name): void;
 }

@@ -103,6 +103,7 @@ export class ItemEntity extends Entity implements ChangePublisher<Object>, Chang
     isAttackable(): boolean;
     // private isMergable(): boolean;
     lithium$forceUnsubscribe(arg0: ItemStack, arg1: number): void;
+    lithium$getOwner(): UUID;
     lithium$isSubscribedWithData(arg0: ChangeSubscriber<ItemStack>, arg1: number): boolean;
     lithium$notify(arg0: ItemStack, arg1: number): void;
     lithium$notifyCount(arg0: ItemStack, arg1: number, arg2: number): void;

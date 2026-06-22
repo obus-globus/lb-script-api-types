@@ -17,6 +17,7 @@ export class AccessWidenerImpl$MethodAccess extends Enum<AccessWidenerImpl$Metho
     // private operator: (param0: number, param1: string, param2: number) => number;
     apply(arg0: number, arg1: string, arg2: number): number;
     isAccessible(): boolean;
+    isChanged(): boolean;
     isExtendable(): boolean;
     isMutable(): boolean;
     makeAccessible(): AccessWidenerImpl$MutableAccess;

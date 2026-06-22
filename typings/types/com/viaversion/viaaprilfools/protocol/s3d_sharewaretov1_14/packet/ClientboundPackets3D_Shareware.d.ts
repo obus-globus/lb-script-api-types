@@ -1,5 +1,6 @@
 import type { ClientboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
+import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -102,5 +103,6 @@ export class ClientboundPackets3D_Shareware extends Enum<ClientboundPackets3D_Sh
     direction(): Direction;
     getId(): number;
     getName(): string;
+    state(): State;
     name(): "ADD_ENTITY" | "ADD_EXPERIENCE_ORB" | "ADD_GLOBAL_ENTITY" | "ADD_MOB" | "ADD_PAINTING" | "ADD_PLAYER" | "ANIMATE" | "AWARD_STATS" | "BLOCK_DESTRUCTION" | "BLOCK_ENTITY_DATA" | "BLOCK_EVENT" | "BLOCK_UPDATE" | "BOSS_EVENT" | "CHANGE_DIFFICULTY" | "CHAT" | "CHUNK_BLOCKS_UPDATE" | "COMMAND_SUGGESTIONS" | "COMMANDS" | "CONTAINER_ACK" | "CONTAINER_CLOSE" | "HORSE_SCREEN_OPEN" | "CONTAINER_SET_CONTENT" | "CONTAINER_SET_DATA" | "CONTAINER_SET_SLOT" | "COOLDOWN" | "CUSTOM_PAYLOAD" | "CUSTOM_SOUND" | "DISCONNECT" | "ENTITY_EVENT" | "TAG_QUERY" | "EXPLODE" | "FORGET_LEVEL_CHUNK" | "GAME_EVENT" | "KEEP_ALIVE" | "LEVEL_CHUNK" | "LEVEL_EVENT" | "LEVEL_PARTICLES" | "LOGIN" | "MAP_ITEM_DATA" | "MOVE_ENTITY" | "MOVE_ENTITY_POS" | "MOVE_ENTITY_POS_ROT" | "MOVE_ENTITY_ROT" | "MOVE_VEHICLE" | "OPEN_BOOK" | "OPEN_SIGN_EDITOR" | "PLACE_GHOST_RECIPE" | "PLAYER_ABILITIES" | "PLAYER_COMBAT" | "PLAYER_INFO" | "PLAYER_LOOK_AT" | "PLAYER_POSITION" | "RECIPE" | "REMOVE_ENTITIES" | "REMOVE_MOB_EFFECT" | "RESOURCE_PACK" | "RESPAWN" | "ROTATE_HEAD" | "SELECT_ADVANCEMENTS_TAB" | "SET_BORDER" | "SET_CAMERA" | "SET_CARRIED_ITEM" | "SET_DISPLAY_OBJECTIVE" | "SET_ENTITY_DATA" | "SET_ENTITY_LINK" | "SET_ENTITY_MOTION" | "SET_EQUIPPED_ITEM" | "SET_EXPERIENCE" | "SET_HEALTH" | "SET_OBJECTIVE" | "SET_PASSENGERS" | "SET_PLAYER_TEAM" | "SET_SCORE" | "SET_DEFAULT_SPAWN_POSITION" | "SET_TIME" | "SET_TITLES" | "STOP_SOUND" | "SOUND" | "SOUND_ENTITY" | "TAB_LIST" | "TAKE_ITEM_ENTITY" | "TELEPORT_ENTITY" | "UPDATE_ADVANCEMENTS" | "UPDATE_ATTRIBUTES" | "UPDATE_MOB_EFFECT" | "UPDATE_RECIPES" | "UPDATE_TAGS" | "LIGHT_UPDATE" | "OPEN_SCREEN" | "MERCHANT_OFFERS" | "SET_CHUNK_CACHE_RADIUS";
 }

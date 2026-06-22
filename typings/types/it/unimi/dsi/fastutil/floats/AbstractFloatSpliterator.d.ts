@@ -16,4 +16,5 @@ export abstract class AbstractFloatSpliterator extends Object implements FloatSp
     getComparator(): (param0: number, param1: number) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
+    trySplit(): FloatSpliterator;
 }

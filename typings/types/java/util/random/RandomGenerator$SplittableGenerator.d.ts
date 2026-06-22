@@ -3,6 +3,7 @@ import type { RandomGenerator$StreamableGenerator } from '../../../java/util/ran
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface RandomGenerator$SplittableGenerator extends RandomGenerator$StreamableGenerator, Object{
+    nextLong(): number;
     rngs(): Stream<RandomGenerator>;
     rngs(arg0: number): Stream<RandomGenerator>;
     split(): RandomGenerator$SplittableGenerator;

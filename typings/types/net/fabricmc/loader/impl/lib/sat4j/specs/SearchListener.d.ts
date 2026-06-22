@@ -19,6 +19,7 @@ export interface SearchListener<S extends ISolverService> extends Serializable, 
     enqueueing(arg0: number, arg1: IConstr): void;
     init(arg0: S): void;
     learn(arg0: IConstr): void;
+    learnUnit(arg0: number): void;
     propagating(arg0: number): void;
     restarting(): void;
     solutionFound(arg0: number[], arg1: RandomAccessModel): void;

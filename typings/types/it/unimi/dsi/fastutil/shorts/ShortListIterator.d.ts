@@ -5,7 +5,9 @@ export interface ShortListIterator extends ShortBidirectionalIterator, Object, L
     add(arg0: number): void;
     back(arg0: number): number;
     next(): number;
+    nextShort(): number;
     previous(): number;
+    previousShort(): number;
     remove(): void;
     set(arg0: number): void;
     skip(arg0: number): number;

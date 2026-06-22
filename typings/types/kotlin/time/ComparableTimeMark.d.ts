@@ -4,6 +4,7 @@ import type { Duration } from '../../kotlin/time/Duration.d.ts'
 import type { TimeMark } from '../../kotlin/time/TimeMark.d.ts'
 export interface ComparableTimeMark extends Object, Comparable<ComparableTimeMark>, TimeMark{
     compareTo(other: ComparableTimeMark): number;
+    elapsedNow(): Duration;
     equals(other: Object | null): boolean;
     hasNotPassedNow(): boolean;
     hasPassedNow(): boolean;

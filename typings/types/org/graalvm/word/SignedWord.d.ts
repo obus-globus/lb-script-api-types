@@ -23,6 +23,7 @@ export interface SignedWord extends Object, ComparableWord{
     notEqual(val: SignedWord): boolean;
     or(val: number): SignedWord;
     or(val: SignedWord): SignedWord;
+    rawValue(): number;
     shiftLeft(n: number): SignedWord;
     shiftLeft(n: UnsignedWord): SignedWord;
     signedDivide(val: number): SignedWord;

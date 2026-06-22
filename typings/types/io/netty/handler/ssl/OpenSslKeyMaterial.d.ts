@@ -5,6 +5,7 @@ export interface OpenSslKeyMaterial extends ReferenceCounted, Object{
     certificateChain(): X509Certificate[];
     certificateChainAddress(): number;
     privateKeyAddress(): number;
+    refCnt(): number;
     release(): boolean;
     release(arg0: number): boolean;
     retain(): OpenSslKeyMaterial;

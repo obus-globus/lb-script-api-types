@@ -11,5 +11,7 @@ export interface ChannelInboundHandler extends ChannelHandler, Object{
     channelUnregistered(arg0: ChannelHandlerContext): void;
     channelWritabilityChanged(arg0: ChannelHandlerContext): void;
     exceptionCaught(arg0: ChannelHandlerContext, arg1: Throwable): void;
+    handlerAdded(arg0: ChannelHandlerContext): void;
+    handlerRemoved(arg0: ChannelHandlerContext): void;
     userEventTriggered(arg0: ChannelHandlerContext, arg1: Object): void;
 }

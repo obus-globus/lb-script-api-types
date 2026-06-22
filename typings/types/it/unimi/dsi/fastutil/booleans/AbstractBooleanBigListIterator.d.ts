@@ -4,6 +4,8 @@ export abstract class AbstractBooleanBigListIterator extends AbstractBooleanBidi
     constructor()
     add(arg0: boolean): void;
     back(arg0: number): number;
+    nextBoolean(): boolean;
+    previousBoolean(): boolean;
     set(arg0: boolean): void;
     skip(arg0: number): number;
 }

@@ -29,6 +29,7 @@
         "types/**/*.d.ts",
         "augmentations/**/*.d.ts",
         "ambient/ambient.d.ts",
+        "ambient-full.d.ts",
         "registry-lb/index.d.ts",
         "registry-full/index.d.ts"
     ],
@@ -42,6 +43,9 @@
             ],
             "ambient": [
                 "./ambient/ambient.d.ts"
+            ],
+            "ambient-full": [
+                "./ambient-full.d.ts"
             ],
             "registry-lb": [
                 "./registry-lb/index.d.ts"

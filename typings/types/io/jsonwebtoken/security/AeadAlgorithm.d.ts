@@ -11,4 +11,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface AeadAlgorithm extends Identifiable, KeyBuilderSupplier<SecretKey, SecretKeyBuilder>, KeyLengthSupplier, Object{
     decrypt(arg0: DecryptAeadRequest, arg1: OutputStream): void;
     encrypt(arg0: AeadRequest, arg1: AeadResult): void;
+    getId(): string;
+    getKeyBitLength(): number;
 }

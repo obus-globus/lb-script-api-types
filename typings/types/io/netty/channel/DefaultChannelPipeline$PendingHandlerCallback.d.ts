@@ -6,4 +6,5 @@ export abstract class DefaultChannelPipeline$PendingHandlerCallback extends Obje
     // private ctx: AbstractChannelHandlerContext;
     // private next: DefaultChannelPipeline$PendingHandlerCallback;
     execute(): void;
+    run(): void;
 }

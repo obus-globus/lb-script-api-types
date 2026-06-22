@@ -38,5 +38,7 @@ export class LootPool extends Object implements LootPoolAccessor, Validatable {
     rolls: NumberProvider;
     // private addRandomItem(result: (param0: ItemStack) => void, context: LootContext): void;
     addRandomItems(result: (param0: ItemStack) => void, context: LootContext): void;
+    fabric_getBonusRolls(): NumberProvider;
+    fabric_getRolls(): NumberProvider;
     validate(output: ValidationContext): void;
 }

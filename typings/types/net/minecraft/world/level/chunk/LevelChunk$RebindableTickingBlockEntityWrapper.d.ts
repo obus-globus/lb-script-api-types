@@ -5,8 +5,10 @@ import type { TickingBlockEntity } from '../../../../../net/minecraft/world/leve
 export class LevelChunk$RebindableTickingBlockEntityWrapper extends Object implements WrappedBlockEntityTickInvokerAccessor, TickingBlockEntity {
     private constructor(ticker: TickingBlockEntity)
     // private ticker: TickingBlockEntity;
+    callSetWrapped(arg0: TickingBlockEntity): void;
     getPos(): BlockPos;
     getType(): string;
+    getWrapped(): TickingBlockEntity;
     isRemoved(): boolean;
     // private rebind(ticker: TickingBlockEntity): void;
     tick(): void;

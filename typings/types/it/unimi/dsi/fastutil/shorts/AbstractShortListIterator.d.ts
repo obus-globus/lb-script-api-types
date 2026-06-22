@@ -4,7 +4,9 @@ export abstract class AbstractShortListIterator extends AbstractShortBidirection
     constructor()
     add(arg0: number): void;
     next(): number;
+    nextShort(): number;
     previous(): number;
+    previousShort(): number;
     remove(): void;
     set(arg0: number): void;
 }

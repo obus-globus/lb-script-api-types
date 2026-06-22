@@ -1,6 +1,8 @@
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
+import type { ByteBufHolder } from '../../../../../io/netty/buffer/ByteBufHolder.d.ts'
 import type { DecoderResult } from '../../../../../io/netty/handler/codec/DecoderResult.d.ts'
 import type { FullHttpMessage } from '../../../../../io/netty/handler/codec/http/FullHttpMessage.d.ts'
+import type { HttpContent } from '../../../../../io/netty/handler/codec/http/HttpContent.d.ts'
 import type { HttpMessage } from '../../../../../io/netty/handler/codec/http/HttpMessage.d.ts'
 import type { HttpVersion } from '../../../../../io/netty/handler/codec/http/HttpVersion.d.ts'
 import type { LastHttpContent } from '../../../../../io/netty/handler/codec/http/LastHttpContent.d.ts'
@@ -23,6 +25,10 @@ export abstract class HttpObjectAggregator$AggregatedFullHttpMessage extends Obj
     refCnt(): number;
     release(): boolean;
     release(arg0: number): boolean;
+    replace(arg0: ByteBuf): ByteBufHolder;
+    replace(arg0: ByteBuf): FullHttpMessage;
+    replace(arg0: ByteBuf): HttpContent;
+    replace(arg0: ByteBuf): LastHttpContent;
     retain(): FullHttpMessage;
     retain(arg0: number): FullHttpMessage;
     retainedDuplicate(): FullHttpMessage;

@@ -182,6 +182,45 @@ gate v2 ratchets) — these track the *generator-root* fixes.
   arguments, else fall back to the bound/Object — never emit an undeclared
   identifier. _Layer: generator._
 
+## 2026-06-22 review wave (B: interface-member conformance + skipLibCheck north-star)
+
+> **North-star (maintainer, 2026-06-22): make the tree clean even WITHOUT
+> `skipLibCheck`.** We will still ship/recommend `skipLibCheck` (a 56k-file
+> declaration set wants it purely for compile speed - it's the normal contract
+> for large generated typings), but the goal is that a consumer who turns it OFF
+> sees zero errors from our `.d.ts`. Today that's false: the package's own
+> `tsconfig` (skipLibCheck:false) OOMs and the tree carries thousands of latent
+> TS2344/TS2304/TS2300/TS2503 errors. The open W12b/W20/W21 items below are the
+> bulk of it; closing them (plus B) is the path to a skipLibCheck-optional tree.
+> _Deferred but tracked: this is the acceptance bar for "properly typed."_
+
+- **[ ] B - implementing classes don't structurally satisfy their interfaces.**
+  `functionsOf` (generator) only re-emits the **non-abstract (default)** methods
+  of **direct** interface supertypes (`.filter { !interfaceFunction.isAbstract }`),
+  assuming abstract interface methods arrive via the class's own
+  `declaredMemberFunctions`. That holds for ordinary classes (e.g.
+  `PacketWrapperImpl` re-declares all of `PacketWrapper`) but FAILS where
+  reflection doesn't surface the override as declared (Java enums) and never
+  walks the **transitive** interface chain. Measured via tsc assignment probes:
+  ~**346 / 701 enum** + ~**2741 / 10930 non-enum** `implements` classes fail to
+  satisfy their interface (TS2739/2740/2741 missing members) - e.g.
+  `ServerboundPackets1_20_5.CUSTOM_PAYLOAD` is not assignable to `PacketType`
+  (missing `direction()`/`state()`), and `AbstractFloatIterator` misses
+  `nextFloat`. Fix: in `functionsOf`, emit ALL transitively-inherited interface
+  members (abstract + default), substituting each interface's type params from
+  the implements-clause arguments, deduped by rendered signature against what the
+  class already declares (reuse the W19 `emittedSignatures` dedup + W21
+  substitution). Add a `check-iface-members` gate (tsc assignment probe over ALL
+  `implements` classes, enum + non-enum - NOT a textual heuristic, which
+  massively undercounts). _Layer: generator (functionsOf) + check gate._
+
+- **[x] A - registry 4096-byte head truncation.** `generate-java-type-registry.py`
+  read only the first 4096 bytes of each file, dropping any `export class` behind
+  a long import block (e.g. `api/type/Types`, decl at byte ~5478). Fixed
+  2026-06-22 to a full-file read: registry-full 48620 -> 48862 (+242 recovered,
+  incl. `Types`); registry-lb +1. Positive-control verified
+  (`Java.type("...Types")` now types). _Layer: registry generator._
+
 ## Smaller, standalone
 
 - **[x] Generator emitted invalid TS for 2 coroutine/inline-class declarations.**

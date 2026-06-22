@@ -1,4 +1,5 @@
 import type { Element } from '../../../../javax/lang/model/element/Element.d.ts'
+import type { ElementKind } from '../../../../javax/lang/model/element/ElementKind.d.ts'
 import type { Name } from '../../../../javax/lang/model/element/Name.d.ts'
 import type { NestingKind } from '../../../../javax/lang/model/element/NestingKind.d.ts'
 import type { Parameterizable } from '../../../../javax/lang/model/element/Parameterizable.d.ts'
@@ -12,6 +13,7 @@ export interface TypeElement extends Element, Parameterizable, QualifiedNameable
     getEnclosedElements(): Element[];
     getEnclosingElement(): Element;
     getInterfaces(): TypeMirror[];
+    getKind(): ElementKind;
     getNestingKind(): NestingKind;
     getPermittedSubclasses(): TypeMirror[];
     getQualifiedName(): Name;

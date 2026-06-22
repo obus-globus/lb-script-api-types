@@ -20,6 +20,7 @@ export interface AbstractWithDateTimeBuilder extends Object, AbstractWithDateBui
     addFormatStructureForYearMonth(structure: FormatStructure<YearMonthFieldContainer>): void;
     amPmHour(padding: Padding): void;
     amPmMarker(am: string, pm: string): void;
+    chars(value: string): void;
     date(format: DateTimeFormat<LocalDate>): void;
     dateTime(format: DateTimeFormat<LocalDateTime>): void;
     day(padding: Padding): void;

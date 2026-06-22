@@ -401,6 +401,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     getBlockY(): number;
     getBlockZ(): number;
     getBoundingBox(): AABB;
+    getChangeListener(): EntityInLevelCallback;
     getControlledVehicle(): Entity;
     getControllingPassenger(): LivingEntity;
     getCustomName(): Component;
@@ -422,6 +423,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     getFireImmuneTicks(): number;
     getFirstPassenger(): Entity;
     getFluidHeight(type: TagKey<Fluid>): number;
+    getFluidInteraction(): EntityFluidInteraction;
     getFluidInteractionBox(): AABB;
     getFluidJumpThreshold(): number;
     getForward(): Vec3;

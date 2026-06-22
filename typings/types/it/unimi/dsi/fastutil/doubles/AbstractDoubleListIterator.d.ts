@@ -4,7 +4,9 @@ export abstract class AbstractDoubleListIterator extends AbstractDoubleBidirecti
     constructor()
     add(arg0: number): void;
     next(): number;
+    nextDouble(): number;
     previous(): number;
+    previousDouble(): number;
     remove(): void;
     set(arg0: number): void;
 }

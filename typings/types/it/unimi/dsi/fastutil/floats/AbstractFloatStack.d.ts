@@ -3,7 +3,10 @@ import type { FloatStack } from '../../../../../it/unimi/dsi/fastutil/floats/Flo
 export abstract class AbstractFloatStack extends AbstractStack<number> implements FloatStack {
     constructor()
     peek(arg0: number): number;
+    peekFloat(arg0: number): number;
     pop(): number;
+    popFloat(): number;
     push(arg0: number): void;
     top(): number;
+    topFloat(): number;
 }

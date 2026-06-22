@@ -20,5 +20,6 @@ export abstract class GLFWWindowIconifyCallback extends Callback implements GLFW
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: boolean): void;
     set(arg0: number): GLFWWindowIconifyCallback;
 }

@@ -36,6 +36,7 @@ export abstract class DecimalQuantity_AbstractBCD extends Object implements Deci
     // private convertToAccurateDouble(): void;
     copyBcdFrom(_other: DecimalQuantity): void;
     copyFrom(_other: DecimalQuantity): void;
+    createCopy(): DecimalQuantity;
     equals(other: Object | null): boolean;
     fitsInLong(): boolean;
     // private fractionCount(): number;
@@ -54,6 +55,7 @@ export abstract class DecimalQuantity_AbstractBCD extends Object implements Deci
     isNaN(): boolean;
     isNegative(): boolean;
     isZeroish(): boolean;
+    maxRepresentableDigits(): number;
     multiplyBy(multiplicand: BigDecimal): void;
     negate(): void;
     popFromLeft(numDigits: number): void;

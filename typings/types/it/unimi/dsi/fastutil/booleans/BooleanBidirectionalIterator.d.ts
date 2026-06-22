@@ -7,6 +7,7 @@ export interface BooleanBidirectionalIterator extends BooleanIterator, ObjectBid
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     next(): boolean;
+    nextBoolean(): boolean;
     previous(): boolean;
     previousBoolean(): boolean;
     skip(arg0: number): number;

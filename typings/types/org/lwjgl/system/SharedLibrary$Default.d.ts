@@ -9,5 +9,7 @@ export abstract class SharedLibrary$Default extends Pointer$Default implements S
     static POINTER_SIZE: number;
     constructor(arg0: string, arg1: number)
     readonly name: string;
+    free(): void;
     getName(): string;
+    getPath(): string;
 }

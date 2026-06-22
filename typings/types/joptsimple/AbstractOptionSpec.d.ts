@@ -10,6 +10,9 @@ export abstract class AbstractOptionSpec<V extends Object | number | string | bo
     constructor(arg0: string[], arg1: string)
     // private description: string;
     // private options: string[];
+    acceptsArguments(): boolean;
+    argumentDescription(): string;
+    argumentTypeIndicator(): string;
     argumentTypeIndicatorFrom(arg0: ValueConverter<V>): string;
     // private arrangeOptions(arg0: string[]): void;
     convert(arg0: string): V;
@@ -20,8 +23,10 @@ export abstract class AbstractOptionSpec<V extends Object | number | string | bo
     handleOption(arg0: OptionParser, arg1: ArgumentList, arg2: OptionSet, arg3: string): void;
     hashCode(): number;
     isForHelp(): boolean;
+    isRequired(): boolean;
     options(): string[];
     representsNonOptions(): boolean;
+    requiresArgument(): boolean;
     toString(): string;
     value(arg0: OptionSet): V;
     values(arg0: OptionSet): V[];

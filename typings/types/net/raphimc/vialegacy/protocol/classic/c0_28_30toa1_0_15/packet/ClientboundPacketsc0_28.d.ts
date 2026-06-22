@@ -1,6 +1,7 @@
 import type { UserConnection } from '../../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { ClientboundPacketType } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { Direction } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
+import type { State } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
@@ -34,5 +35,6 @@ export class ClientboundPacketsc0_28 extends Enum<ClientboundPacketsc0_28> imple
     getId(): number;
     getName(): string;
     getPacketReader(): (param0: UserConnection, param1: ByteBuf) => void;
+    state(): State;
     name(): "LOGIN" | "KEEP_ALIVE" | "LEVEL_INIT" | "LEVEL_DATA" | "LEVEL_FINALIZE" | "BLOCK_UPDATE" | "ADD_PLAYER" | "TELEPORT_ENTITY" | "MOVE_ENTITY_POS_ROT" | "MOVE_ENTITY_POS" | "MOVE_ENTITY_ROT" | "REMOVE_ENTITIES" | "CHAT" | "DISCONNECT" | "OP_LEVEL_UPDATE";
 }

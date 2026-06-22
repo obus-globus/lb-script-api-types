@@ -4,7 +4,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ShortBigListIterator extends BigListIterator<number>, ShortBidirectionalIterator, Object{
     add(arg0: number): void;
     back(arg0: number): number;
+    nextShort(): number;
     previous(): number;
+    previousShort(): number;
     set(arg0: number): void;
     skip(arg0: number): number;
 }

@@ -56,6 +56,7 @@ export class AbstractMemorySegmentImpl extends Object implements MemorySegment, 
     // private length: number;
     readonly readOnly: boolean;
     // private scope: MemorySessionImpl;
+    address(): number;
     allocate(arg0: MemoryLayout): MemorySegment;
     allocate(arg0: MemoryLayout, arg1: number): MemorySegment;
     allocate(arg0: number): MemorySegment;
@@ -134,6 +135,7 @@ export class AbstractMemorySegmentImpl extends Object implements MemorySegment, 
     load(): void;
     makeByteBuffer(): ByteBuffer;
     maxAlignMask(): number;
+    maxByteAlignment(): number;
     mismatch(arg0: MemorySegment): number;
     // private outOfBoundException(arg0: number, arg1: number): IndexOutOfBoundsException;
     overlaps(arg0: AbstractMemorySegmentImpl): boolean;

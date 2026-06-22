@@ -3,9 +3,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface SpdyHeadersFrame extends SpdyStreamFrame, Object{
     headers(): (Object | null)[];
     isInvalid(): boolean;
+    isLast(): boolean;
     isTruncated(): boolean;
     setInvalid(): SpdyHeadersFrame;
     setLast(arg0: boolean): SpdyHeadersFrame;
     setStreamId(arg0: number): SpdyHeadersFrame;
     setTruncated(): SpdyHeadersFrame;
+    streamId(): number;
 }

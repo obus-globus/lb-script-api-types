@@ -7,6 +7,7 @@ export interface RangesBuffer extends SortedListOfRanges, Object{
     adjacent(ia: number, o: SortedListOfRanges, ib: number): boolean;
     adjacent(ia: number, bLo: number, bHi: number): boolean;
     appendRange(lo: number, hi: number): void;
+    appendRangesTo(buffer: RangesBuffer, startIndex: number, endIndex: number): void;
     binarySearch(keyLo: number): number;
     binarySearchExactMatch(searchResult: number, o: SortedListOfRanges, ib: number): boolean;
     binarySearchExactMatch(searchResult: number, bLo: number, bHi: number): boolean;
@@ -26,6 +27,8 @@ export interface RangesBuffer extends SortedListOfRanges, Object{
     equal(ia: number, o: SortedListOfRanges, ib: number): boolean;
     equal(ia: number, bLo: number, bHi: number): boolean;
     equalsListOfRanges(o: SortedListOfRanges): boolean;
+    getHi(i: number): number;
+    getLo(i: number): number;
     getMax(): number;
     getMin(): number;
     insertRange(index: number, lo: number, hi: number): void;
@@ -53,6 +56,7 @@ export interface RangesBuffer extends SortedListOfRanges, Object{
     replaceRanges(fromIndex: number, toIndex: number, lo: number, hi: number): void;
     rightOf(ia: number, o: SortedListOfRanges, ib: number): boolean;
     rightOf(ia: number, bLo: number, bHi: number): boolean;
+    size(): number;
     size(i: number): number;
     sizeOfInverse(encoding: Encodings$Encoding): number;
     valueCount(): number;

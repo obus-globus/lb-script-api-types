@@ -7,5 +7,6 @@ export abstract class AbstractShortIterator extends Object implements ShortItera
     constructor()
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextShort(): number;
     skip(arg0: number): number;
 }

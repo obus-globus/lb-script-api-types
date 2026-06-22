@@ -3,9 +3,11 @@ import type { AbstractChannel$AbstractUnsafe } from '../../../io/netty/channel/A
 import type { AbstractChannel$CloseFuture } from '../../../io/netty/channel/AbstractChannel$CloseFuture.d.ts'
 import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
 import type { Channel$Unsafe } from '../../../io/netty/channel/Channel$Unsafe.d.ts'
+import type { ChannelConfig } from '../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelFuture } from '../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelHandler } from '../../../io/netty/channel/ChannelHandler.d.ts'
 import type { ChannelId } from '../../../io/netty/channel/ChannelId.d.ts'
+import type { ChannelMetadata } from '../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOption } from '../../../io/netty/channel/ChannelOption.d.ts'
 import type { ChannelOutboundBuffer } from '../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
 import type { ChannelProgressivePromise } from '../../../io/netty/channel/ChannelProgressivePromise.d.ts'
@@ -43,6 +45,7 @@ export abstract class AbstractChannel extends DefaultAttributeMap implements Cha
     close(arg0: ChannelPromise): ChannelFuture;
     closeFuture(): ChannelFuture;
     compareTo(arg0: Channel): number;
+    config(): ChannelConfig;
     connect(arg0: SocketAddress): ChannelFuture;
     connect(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     connect(arg0: SocketAddress, arg1: SocketAddress): ChannelFuture;
@@ -69,12 +72,15 @@ export abstract class AbstractChannel extends DefaultAttributeMap implements Cha
     id(): ChannelId;
     invalidateLocalAddress(): void;
     invalidateRemoteAddress(): void;
+    isActive(): boolean;
     isCompatible(arg0: (Object | null)[]): boolean;
+    isOpen(): boolean;
     isRegistered(): boolean;
     isWritable(): boolean;
     localAddress(): SocketAddress;
     localAddress0(): SocketAddress;
     maxMessagesPerWrite(): number;
+    metadata(): ChannelMetadata;
     newChannelPipeline(): (Object | null)[];
     newFailedFuture(arg0: Throwable): ChannelFuture;
     newId(): ChannelId;

@@ -4,8 +4,10 @@ import type { RawSink } from '../../kotlinx/io/RawSink.d.ts'
 import type { RawSource } from '../../kotlinx/io/RawSource.d.ts'
 export interface Source extends Object, RawSource{
     readonly buffer: Buffer;
+    close(): void;
     exhausted(): boolean;
     peek(): Source;
+    readAtMostTo(sink: Buffer, byteCount: number): number;
     readAtMostTo(sink: number[], startIndex: number, endIndex: number): number;
     readByte(): number;
     readInt(): number;

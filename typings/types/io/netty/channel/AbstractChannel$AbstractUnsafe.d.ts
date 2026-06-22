@@ -25,6 +25,7 @@ export abstract class AbstractChannel$AbstractUnsafe extends Object implements C
     closeForcibly(): void;
     closeIfClosed(): void;
     // private closeOutboundBufferForShutdown(arg0: Map$Entry<string, ChannelHandler>[], arg1: ChannelOutboundBuffer, arg2: Throwable): void;
+    connect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): void;
     deregister(arg0: ChannelPromise): void;
     // private deregister(arg0: ChannelPromise, arg1: boolean): void;
     disconnect(arg0: ChannelPromise): void;

@@ -20,4 +20,5 @@ export abstract class FT_Stream_CloseFunc extends Callback implements FT_Stream_
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number): void;
 }

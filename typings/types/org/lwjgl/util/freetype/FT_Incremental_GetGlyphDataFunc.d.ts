@@ -20,4 +20,5 @@ export abstract class FT_Incremental_GetGlyphDataFunc extends Callback implement
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number, arg2: number): number;
 }

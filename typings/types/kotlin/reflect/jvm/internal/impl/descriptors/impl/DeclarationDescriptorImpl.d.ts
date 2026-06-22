@@ -6,6 +6,7 @@ export abstract class DeclarationDescriptorImpl extends AnnotatedImpl implements
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: AnnotationDescriptor[], arg1: Name)
     readonly name: Name;
+    getContainingDeclaration(): DeclarationDescriptor;
     getName(): Name;
     getOriginal(): DeclarationDescriptor;
     toString(): string;

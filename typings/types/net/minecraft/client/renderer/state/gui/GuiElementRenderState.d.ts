@@ -5,6 +5,7 @@ import type { ScreenRectangle } from '../../../../../../net/minecraft/client/gui
 import type { TextureSetup } from '../../../../../../net/minecraft/client/gui/render/TextureSetup.d.ts'
 import type { ScreenArea } from '../../../../../../net/minecraft/client/renderer/state/gui/ScreenArea.d.ts'
 export interface GuiElementRenderState extends Object, ScreenArea{
+    bounds(): ScreenRectangle;
     buildVertices(vertexConsumer: VertexConsumer): void;
     pipeline(): RenderPipeline;
     scissorArea(): ScreenRectangle;

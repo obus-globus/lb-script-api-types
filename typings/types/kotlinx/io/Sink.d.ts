@@ -4,6 +4,7 @@ import type { RawSink } from '../../kotlinx/io/RawSink.d.ts'
 import type { RawSource } from '../../kotlinx/io/RawSource.d.ts'
 export interface Sink extends Object, RawSink{
     readonly buffer: Buffer;
+    close(): void;
     emit(): void;
     flush(): void;
     hintEmit(): void;

@@ -20,11 +20,15 @@ import type { SignalGetter } from '../../../../net/minecraft/world/level/SignalG
 import type { Biome } from '../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BiomeManager } from '../../../../net/minecraft/world/level/biome/BiomeManager.d.ts'
 import type { BiomeManager$NoiseBiomeSource } from '../../../../net/minecraft/world/level/biome/BiomeManager$NoiseBiomeSource.d.ts'
+import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+import type { WorldBorder } from '../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 import type { ChunkAccess } from '../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
 import type { ChunkStatus } from '../../../../net/minecraft/world/level/chunk/status/ChunkStatus.d.ts'
 import type { DimensionType } from '../../../../net/minecraft/world/level/dimension/DimensionType.d.ts'
 import type { Heightmap$Types } from '../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
+import type { LevelLightEngine } from '../../../../net/minecraft/world/level/lighting/LevelLightEngine.d.ts'
+import type { FluidState } from '../../../../net/minecraft/world/level/material/FluidState.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { BlockHitResult } from '../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -49,6 +53,8 @@ export interface LevelReader extends Object, ChunkView, BlockAndLightGetter, Col
     getBlockAndLiquidCollisions(source: Entity, box: AABB): VoxelShape[];
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
     // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
+    getBlockEntity(pos: BlockPos): BlockEntity;
+    getBlockState(pos: BlockPos): BlockState;
     getBlockStatesIfLoaded(box: AABB): Stream<BlockState>;
     getBrightness(layer: LightLayer, pos: BlockPos): number;
     getChunk(chunkX: number, chunkZ: number): ChunkAccess;
@@ -61,10 +67,12 @@ export interface LevelReader extends Object, ChunkView, BlockAndLightGetter, Col
     getDirectSignal(pos: BlockPos, direction: Direction): number;
     getDirectSignalTo(pos: BlockPos): number;
     getEffectiveSkyBrightness(pos: BlockPos): number;
+    getFluidState(pos: BlockPos): FluidState;
     getHeight(): number;
     getHeight(type: Heightmap$Types, x: number, z: number): number;
     getHeight(type: Heightmap$Types, pos: BlockPos): number;
     getHeightmapPos(type: Heightmap$Types, pos: BlockPos): BlockPos;
+    getLightEngine(): LevelLightEngine;
     getLightLevelDependentMagicValue(pos: BlockPos): number;
     getMaxLocalRawBrightness(pos: BlockPos): number;
     getMaxLocalRawBrightness(pos: BlockPos, skyDarkening: number): number;
@@ -77,6 +85,7 @@ export interface LevelReader extends Object, ChunkView, BlockAndLightGetter, Col
     getSignal(pos: BlockPos, direction: Direction): number;
     getSkyDarken(): number;
     getUncachedNoiseBiome(quartX: number, quartY: number, quartZ: number): Holder<Biome>;
+    getWorldBorder(): WorldBorder;
     hasBiomes(): boolean;
     hasChunk(chunkX: number, chunkZ: number): boolean;
     hasChunkAt(blockX: number, blockZ: number): boolean;

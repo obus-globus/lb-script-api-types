@@ -4,6 +4,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface AddressedEnvelope<M extends Object | number | string | boolean, A extends SocketAddress> extends ReferenceCounted, Object{
     content(): M;
     recipient(): A;
+    refCnt(): number;
+    release(): boolean;
+    release(arg0: number): boolean;
     retain(): AddressedEnvelope<M, A>;
     retain(arg0: number): AddressedEnvelope<M, A>;
     sender(): A;

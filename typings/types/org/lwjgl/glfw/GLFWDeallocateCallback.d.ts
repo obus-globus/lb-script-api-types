@@ -20,4 +20,5 @@ export abstract class GLFWDeallocateCallback extends Callback implements GLFWDea
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number): void;
 }

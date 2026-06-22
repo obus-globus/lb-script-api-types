@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
+import type { LifeCycle$State } from '../../../../../../org/apache/logging/log4j/core/LifeCycle$State.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/core/Logger.d.ts'
 import type { LoggerContext } from '../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
@@ -22,6 +23,7 @@ import type { WatchManager } from '../../../../../../org/apache/logging/log4j/co
 export interface Configuration extends Object, Filterable{
     addAppender(appender: Appender): void;
     addComponent(name: string, object: Object): void;
+    addFilter(filter: Filter): void;
     addListener(listener: ConfigurationListener): void;
     addLogger(name: string, loggerConfig: LoggerConfig): void;
     addLoggerAppender(logger: Logger, appender: Appender): void;
@@ -36,6 +38,7 @@ export interface Configuration extends Object, Filterable{
     getConfigurationSource(): ConfigurationSource;
     getConfigurationStrSubstitutor(): StrSubstitutor;
     getCustomLevels(): CustomLevelConfig[];
+    getFilter(): Filter;
     getLoggerConfig(name: string): LoggerConfig;
     getLoggerContext(): LoggerContext;
     getLoggers(): { [key: string]: LoggerConfig };
@@ -48,12 +51,21 @@ export interface Configuration extends Object, Filterable{
     getScheduler(): ConfigurationScheduler;
     getScriptManager(): ScriptManager;
     getShutdownTimeoutMillis(): number;
+    getState(): LifeCycle$State;
     getStrSubstitutor(): StrSubstitutor;
     getWatchManager(): WatchManager;
+    hasFilter(): boolean;
+    initialize(): void;
+    isFiltered(event: LogEvent): boolean;
     isShutdownHookEnabled(): boolean;
+    isStarted(): boolean;
+    isStopped(): boolean;
+    removeFilter(filter: Filter): void;
     removeListener(listener: ConfigurationListener): void;
     removeLogger(name: string): void;
     setAdvertiser(advertiser: Advertiser): void;
     setLoggerAdditive(logger: Logger, additive: boolean): void;
     setNanoClock(nanoClock: NanoClock): void;
+    start(): void;
+    stop(): void;
 }

@@ -27,6 +27,7 @@ export abstract class X509CRL extends CRL implements DEREncodable, X509Extension
     getTBSCertList(): number[];
     getThisUpdate(): Date;
     getVersion(): number;
+    hasUnsupportedCriticalExtension(): boolean;
     hashCode(): number;
     verify(arg0: PublicKey): void;
     verify(arg0: PublicKey, arg1: Provider): void;

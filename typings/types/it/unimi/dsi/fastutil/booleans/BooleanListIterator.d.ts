@@ -5,7 +5,9 @@ export interface BooleanListIterator extends BooleanBidirectionalIterator, Objec
     add(arg0: boolean): void;
     back(arg0: number): number;
     next(): boolean;
+    nextBoolean(): boolean;
     previous(): boolean;
+    previousBoolean(): boolean;
     remove(): void;
     set(arg0: boolean): void;
     skip(arg0: number): number;

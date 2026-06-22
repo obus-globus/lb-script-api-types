@@ -7,12 +7,22 @@ import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { NetworkInterface } from '../../../../java/net/NetworkInterface.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface DatagramChannelConfig extends ChannelConfig, Object{
+    getAllocator(): ByteBufAllocator;
+    getConnectTimeoutMillis(): number;
     getInterface(): InetAddress;
+    getMaxMessagesPerRead(): number;
+    getMessageSizeEstimator(): MessageSizeEstimator;
     getNetworkInterface(): NetworkInterface;
     getReceiveBufferSize(): number;
     getSendBufferSize(): number;
     getTimeToLive(): number;
     getTrafficClass(): number;
+    getWriteBufferHighWaterMark(): number;
+    getWriteBufferLowWaterMark(): number;
+    getWriteBufferWaterMark(): WriteBufferWaterMark;
+    getWriteSpinCount(): number;
+    isAutoClose(): boolean;
+    isAutoRead(): boolean;
     isBroadcast(): boolean;
     isLoopbackModeDisabled(): boolean;
     isReuseAddress(): boolean;
@@ -32,6 +42,8 @@ export interface DatagramChannelConfig extends ChannelConfig, Object{
     setSendBufferSize(arg0: number): DatagramChannelConfig;
     setTimeToLive(arg0: number): DatagramChannelConfig;
     setTrafficClass(arg0: number): DatagramChannelConfig;
+    setWriteBufferHighWaterMark(arg0: number): ChannelConfig;
+    setWriteBufferLowWaterMark(arg0: number): ChannelConfig;
     setWriteBufferWaterMark(arg0: WriteBufferWaterMark): DatagramChannelConfig;
     setWriteSpinCount(arg0: number): DatagramChannelConfig;
 }

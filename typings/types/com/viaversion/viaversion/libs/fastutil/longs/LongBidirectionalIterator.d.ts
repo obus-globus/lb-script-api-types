@@ -7,6 +7,7 @@ export interface LongBidirectionalIterator extends LongIterator, ObjectBidirecti
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextLong(): number;
     previous(): number;
     previousLong(): number;
     skip(arg0: number): number;

@@ -6,6 +6,7 @@ export interface IProblem extends Object, RandomAccessModel{
     isSatisfiable(arg0: IVecInt): boolean;
     isSatisfiable(arg0: IVecInt, arg1: boolean): boolean;
     model(): number[];
+    model(arg0: number): boolean;
     nVars(): number;
     primeImplicant(): number[];
     primeImplicant(arg0: number): boolean;

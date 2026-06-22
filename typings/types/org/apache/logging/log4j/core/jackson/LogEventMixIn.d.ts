@@ -19,6 +19,7 @@ export abstract class LogEventMixIn extends Object implements LogEvent {
     getLoggerName(): string;
     getMarker(): Marker;
     getMessage(): Message;
+    getNanoTime(): number;
     getSource(): StackTraceElement;
     getThreadId(): number;
     getThreadName(): string;
@@ -28,4 +29,7 @@ export abstract class LogEventMixIn extends Object implements LogEvent {
     getTimeMillis(): number;
     isEndOfBatch(): boolean;
     isIncludeLocation(): boolean;
+    setEndOfBatch(endOfBatch: boolean): void;
+    setIncludeLocation(locationRequired: boolean): void;
+    toImmutable(): LogEvent;
 }

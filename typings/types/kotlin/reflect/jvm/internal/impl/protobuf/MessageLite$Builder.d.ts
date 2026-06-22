@@ -7,5 +7,7 @@ import type { MessageLiteOrBuilder } from '../../../../../../kotlin/reflect/jvm/
 export interface MessageLite$Builder extends Object, Cloneable, MessageLiteOrBuilder{
     build(): MessageLite;
     protected clone(): Object;
+    getDefaultInstanceForType(): MessageLite;
+    isInitialized(): boolean;
     mergeFrom(arg0: CodedInputStream, arg1: ExtensionRegistryLite): MessageLite$Builder;
 }

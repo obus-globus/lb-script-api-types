@@ -10,4 +10,5 @@ export abstract class AbstractTickableSoundInstance extends AbstractSoundInstanc
     readonly stopped: boolean;
     isStopped(): boolean;
     stop(): void;
+    tick(): void;
 }

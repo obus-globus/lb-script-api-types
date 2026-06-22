@@ -34,6 +34,7 @@ export class CloudRenderer extends SimplePreparableReloadListener<Optional<Cloud
     endFrame(): void;
     fabric$getId(): Identifier;
     getName(): string;
+    getTexture(): CloudRenderer$TextureData;
     markForRebuild(): void;
     prepare(manager: ResourceManager, profiler: ProfilerFiller): Optional<CloudRenderer$TextureData>;
     render(color: number, cloudStatus: CloudStatus, bottomY: number, range: number, cameraPosition: Vec3, gameTime: number, partialTicks: number): void;

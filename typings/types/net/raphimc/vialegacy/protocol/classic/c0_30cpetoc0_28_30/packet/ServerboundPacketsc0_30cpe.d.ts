@@ -1,6 +1,7 @@
 import type { UserConnection } from '../../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Direction } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { ServerboundPacketType } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
+import type { State } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
@@ -27,5 +28,6 @@ export class ServerboundPacketsc0_30cpe extends Enum<ServerboundPacketsc0_30cpe>
     getId(): number;
     getName(): string;
     getPacketReader(): (param0: UserConnection, param1: ByteBuf) => void;
+    state(): State;
     name(): "LOGIN" | "USE_ITEM_ON" | "MOVE_PLAYER_POS_ROT" | "CHAT" | "EXTENSION_PROTOCOL_INFO" | "EXTENSION_PROTOCOL_ENTRY" | "EXT_CUSTOM_BLOCKS_SUPPORT_LEVEL" | "EXT_TWO_WAY_PING";
 }

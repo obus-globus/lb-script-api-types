@@ -44,6 +44,7 @@ export class ChatScreen extends Screen implements MixinChatScreenAccessor {
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private formatChat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private getActiveMessage(arg0: MouseButtonEvent): number;
+    getInput(): EditBox;
     handleChatInput(msg: string, addToRecent: boolean): void;
     // private handleComponentClicked(clicked: Style, allowInsertions: boolean): boolean;
     init(): void;

@@ -1,4 +1,5 @@
 import type { MaxMessagesRecvByteBufAllocator } from '../../../io/netty/channel/MaxMessagesRecvByteBufAllocator.d.ts'
+import type { RecvByteBufAllocator$Handle } from '../../../io/netty/channel/RecvByteBufAllocator$Handle.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class DefaultMaxMessagesRecvByteBufAllocator extends Object implements MaxMessagesRecvByteBufAllocator {
     constructor()
@@ -9,6 +10,7 @@ export abstract class DefaultMaxMessagesRecvByteBufAllocator extends Object impl
     // private respectMaybeMoreData: boolean;
     maxMessagesPerRead(): number;
     maxMessagesPerRead(arg0: number): MaxMessagesRecvByteBufAllocator;
+    newHandle(): RecvByteBufAllocator$Handle;
     respectMaybeMoreData(): boolean;
     respectMaybeMoreData(arg0: boolean): DefaultMaxMessagesRecvByteBufAllocator;
 }

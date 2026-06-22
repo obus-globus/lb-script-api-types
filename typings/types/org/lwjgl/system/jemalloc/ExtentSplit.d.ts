@@ -20,4 +20,5 @@ export abstract class ExtentSplit extends Callback implements ExtentSplitI {
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: boolean, arg6: number): boolean;
 }

@@ -1,10 +1,16 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ComparableWord } from '../../../../../org/graalvm/word/ComparableWord.d.ts'
 import type { PointerBase } from '../../../../../org/graalvm/word/PointerBase.d.ts'
 import type { SignedWord } from '../../../../../org/graalvm/word/SignedWord.d.ts'
 import type { WordBase } from '../../../../../org/graalvm/word/WordBase.d.ts'
 export interface WordPointer extends Object, PointerBase{
     addressOf(index: number): WordPointer;
     addressOf(index: SignedWord): WordPointer;
+    equal(val: ComparableWord): boolean;
+    isNonNull(): boolean;
+    isNull(): boolean;
+    notEqual(val: ComparableWord): boolean;
+    rawValue(): number;
     read<T extends WordBase>(): T;
     read<T extends WordBase>(index: number): T;
     read<T extends WordBase>(index: SignedWord): T;

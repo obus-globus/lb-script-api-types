@@ -1,3 +1,4 @@
+import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ClientboundPacket1_21_6 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_5to1_21_6/packet/ClientboundPacket1_21_6.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
@@ -27,6 +28,7 @@ export class ClientboundConfigurationPackets1_21_6 extends Enum<ClientboundConfi
     static valueOf(paramarg0: string): ClientboundConfigurationPackets1_21_6;
     static values(): (Object | null)[];
     private constructor()
+    direction(): Direction;
     getId(): number;
     getName(): string;
     state(): State;

@@ -5,4 +5,5 @@ import type { Name } from '../../../../../../../../kotlin/reflect/jvm/internal/i
 export interface JavaEnumValueAnnotationArgument extends Object, JavaAnnotationArgument{
     getEntryName(): Name;
     getEnumClassId(): ClassId;
+    getName(): Name;
 }

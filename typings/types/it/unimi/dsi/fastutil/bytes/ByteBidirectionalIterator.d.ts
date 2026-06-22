@@ -8,6 +8,7 @@ export interface ByteBidirectionalIterator extends ByteIterator, ObjectBidirecti
     back(arg0: number): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;
+    nextByte(): number;
     previous(): number;
     previousByte(): number;
     skip(arg0: number): number;

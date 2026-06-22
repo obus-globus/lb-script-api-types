@@ -2,6 +2,7 @@ import type { Application } from '../../../ai/djl/Application.d.ts'
 import type { Artifact } from '../../../ai/djl/repository/Artifact.d.ts'
 import type { Artifact$Item } from '../../../ai/djl/repository/Artifact$Item.d.ts'
 import type { MRL } from '../../../ai/djl/repository/MRL.d.ts'
+import type { Metadata } from '../../../ai/djl/repository/Metadata.d.ts'
 import type { Repository } from '../../../ai/djl/repository/Repository.d.ts'
 import type { RepositoryFactory } from '../../../ai/djl/repository/RepositoryFactory.d.ts'
 import type { Progress } from '../../../ai/djl/util/Progress.d.ts'
@@ -25,7 +26,9 @@ export abstract class AbstractRepository extends Object implements Repository {
     getFile(arg0: Artifact$Item, arg1: string): Path[];
     getName(): string;
     getResourceDirectory(arg0: Artifact): Path[];
+    isRemote(): boolean;
     listDirectory(arg0: Artifact$Item, arg1: string): string[];
+    locate(arg0: MRL): Metadata;
     model(arg0: Application, arg1: string, arg2: string): MRL;
     model(arg0: Application, arg1: string, arg2: string, arg3: string): MRL;
     model(arg0: Application, arg1: string, arg2: string, arg3: string, arg4: string): MRL;

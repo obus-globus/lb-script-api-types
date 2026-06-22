@@ -10,7 +10,9 @@ export abstract class AsynchronousFileChannel extends Object implements Asynchro
     static open(paramarg0: Path[][], paramarg1: (Object | null)[]): AsynchronousFileChannel;
     static open(paramarg0: Path[][], paramarg1: OpenOption[], paramarg2: ExecutorService, paramarg3: Object | null): AsynchronousFileChannel;
     constructor()
+    close(): void;
     force(arg0: boolean): void;
+    isOpen(): boolean;
     lock(): Future<FileLock>;
     lock<A extends Object | number | string | boolean>(arg0: A, arg1: CompletionHandler<FileLock, A>): void;
     lock(arg0: number, arg1: number, arg2: boolean): Future<FileLock>;

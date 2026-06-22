@@ -8,5 +8,6 @@ export abstract class AbstractCharIterator extends Object implements CharIterato
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
+    nextChar(): string;
     skip(arg0: number): number;
 }

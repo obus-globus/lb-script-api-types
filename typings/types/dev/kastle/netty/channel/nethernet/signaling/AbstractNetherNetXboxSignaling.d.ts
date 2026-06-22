@@ -41,6 +41,7 @@ export abstract class AbstractNetherNetXboxSignaling extends SimpleChannelInboun
     onConnected(arg0: ChannelHandlerContext): void;
     parseTurnServers(arg0: JsonObject): NetherNetSignaling$IceServerInfo[];
     removeSignalHandler(arg0: number): void;
+    sendSignal(arg0: string, arg1: string): void;
     setAdvertisementData(arg0: NetherNetServerSignaling$PongData): void;
     setNewConnectionHandler(arg0: (param0: number, param1: string, param2: string) => void): void;
     setNotFoundHandler(arg0: (param0: string) => void): void;

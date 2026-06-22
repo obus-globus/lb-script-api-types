@@ -16,6 +16,8 @@ export class GuiRenderer$Draw extends Record implements DrawAccessor {
     // private vertexBuffer: GpuBuffer;
     baseVertex(): number;
     equals(o: Object | null): boolean;
+    fabric$indexCount(): number;
+    fabric$pipeline(): RenderPipeline;
     hashCode(): number;
     indexCount(): number;
     mode(): VertexFormat$Mode;

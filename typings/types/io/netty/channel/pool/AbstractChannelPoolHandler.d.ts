@@ -4,5 +4,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractChannelPoolHandler extends Object implements ChannelPoolHandler {
     constructor()
     channelAcquired(arg0: Channel): void;
+    channelCreated(arg0: Channel): void;
     channelReleased(arg0: Channel): void;
 }

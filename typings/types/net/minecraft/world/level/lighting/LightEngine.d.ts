@@ -43,6 +43,7 @@ export abstract class LightEngine<M extends DataLayerStorageMap<M>, S extends La
     // private propagateDecreases(): number;
     propagateIncrease(fromNode: number, increaseData: number, fromLevel: number): void;
     // private propagateIncreases(): number;
+    propagateLightSources(pos: ChunkPos): void;
     queueSectionData(pos: number, data: DataLayer): void;
     retainData(pos: ChunkPos, retain: boolean): void;
     runLightUpdates(): number;

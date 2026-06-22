@@ -20,5 +20,6 @@ export abstract class GLFWWindowMaximizeCallback extends Callback implements GLF
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: boolean): void;
     set(arg0: number): GLFWWindowMaximizeCallback;
 }

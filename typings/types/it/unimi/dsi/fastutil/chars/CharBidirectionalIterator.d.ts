@@ -9,6 +9,7 @@ export interface CharBidirectionalIterator extends CharIterator, ObjectBidirecti
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): string;
+    nextChar(): string;
     previous(): string;
     previousChar(): string;
     skip(arg0: number): number;

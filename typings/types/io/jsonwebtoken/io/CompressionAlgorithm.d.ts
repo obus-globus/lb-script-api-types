@@ -5,4 +5,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface CompressionAlgorithm extends Identifiable, Object{
     compress(arg0: OutputStream): OutputStream;
     decompress(arg0: InputStream): InputStream;
+    getId(): string;
 }

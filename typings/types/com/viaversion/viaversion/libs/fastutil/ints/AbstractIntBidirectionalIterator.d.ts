@@ -3,6 +3,8 @@ import type { IntBidirectionalIterator } from '../../../../../../com/viaversion/
 export abstract class AbstractIntBidirectionalIterator extends AbstractIntIterator implements IntBidirectionalIterator {
     constructor()
     back(arg0: number): number;
+    nextInt(): number;
     previous(): number;
+    previousInt(): number;
     skip(arg0: number): number;
 }

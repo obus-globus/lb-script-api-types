@@ -7,11 +7,15 @@ import type { SharedSuggestionProvider } from '../../../../../../../net/minecraf
 import type { SharedSuggestionProvider$ElementSuggestionType } from '../../../../../../../net/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType.d.ts'
 import type { SharedSuggestionProvider$TextCoordinates } from '../../../../../../../net/minecraft/commands/SharedSuggestionProvider$TextCoordinates.d.ts'
 import type { HolderLookup } from '../../../../../../../net/minecraft/core/HolderLookup.d.ts'
+import type { RegistryAccess } from '../../../../../../../net/minecraft/core/RegistryAccess.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
+import type { PermissionSet } from '../../../../../../../net/minecraft/server/permissions/PermissionSet.d.ts'
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { FeatureFlagSet } from '../../../../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { Vec2 } from '../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export interface FabricClientCommandSource extends Object, SharedSuggestionProvider{
+    enabledFeatures(): FeatureFlagSet;
     getAbsoluteCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getClient(): Minecraft;
     getCustomTabSuggestions(): string[];
@@ -23,6 +27,8 @@ export interface FabricClientCommandSource extends Object, SharedSuggestionProvi
     getRelevantCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getRotation(): Vec2;
     getSelectedEntities(): string[];
+    permissions(): PermissionSet;
+    registryAccess(): RegistryAccess;
     sendError(arg0: Component): void;
     sendFeedback(arg0: Component): void;
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;

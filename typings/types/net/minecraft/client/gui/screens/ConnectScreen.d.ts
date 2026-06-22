@@ -35,6 +35,7 @@ export class ConnectScreen extends Screen implements ConnectScreenAccessor {
     // private status: Component;
     connect(minecraft: Minecraft, hostAndPort: ServerAddress, server: ServerData, transferState: TransferState): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
+    getConnection(): Connection;
     // private getConnectionDetails(arg0: Connection, arg1: ServerAddress): Component;
     init(): void;
     init(width: number, height: number): void;

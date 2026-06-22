@@ -168,11 +168,15 @@ export class LevelRenderer extends Object implements AutoCloseable, LevelRendere
     // private finalizeGizmoCollection(): void;
     getCloudRenderer(): CloudRenderer;
     getCloudsTarget(): RenderTarget;
+    getEntityRenderDispatcher(): EntityRenderDispatcher;
     getEntityStatistics(): string;
     getItemEntityTarget(): RenderTarget;
     getLastViewDistance(): number;
+    getLevel(): ClientLevel;
+    getLevelRenderState(): LevelRenderState;
     getName(): string;
     getParticlesTarget(): RenderTarget;
+    getRenderBuffers(): RenderBuffers;
     getSectionOcclusionGraph(): SectionOcclusionGraph;
     getSectionRenderDispatcher(): SectionRenderDispatcher;
     getSectionStatistics(): string;
@@ -183,6 +187,8 @@ export class LevelRenderer extends Object implements AutoCloseable, LevelRendere
     getWeatherTarget(): RenderTarget;
     hasRenderedAllSections(): boolean;
     initOutline(): void;
+    invokeCullTerrain(arg0: Camera, arg1: Frustum, arg2: boolean): void;
+    invokeExtractBlockEntities(arg0: Camera, arg1: number, arg2: LevelRenderState): void;
     // private iris$alwaysRenderSky(arg0: boolean): boolean;
     // private iris$disableFabulousGraphics(): void;
     // private iris$resetDebugRenderStage(arg0: CallbackInfo): void;
@@ -209,6 +215,7 @@ export class LevelRenderer extends Object implements AutoCloseable, LevelRendere
     setBlockDirty(pos: BlockPos, oldState: BlockState, newState: BlockState): void;
     setBlocksDirty(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
     setLevel(level: ClientLevel): void;
+    setRenderBuffers(arg0: RenderBuffers): void;
     setSectionDirty(sectionX: number, sectionY: number, sectionZ: number): void;
     // private setSectionDirty(arg0: number, arg1: number, arg2: number, arg3: boolean): void;
     setSectionDirtyWithNeighbors(arg0: number, arg1: number, arg2: number): void;

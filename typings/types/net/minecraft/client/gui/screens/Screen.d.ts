@@ -132,6 +132,7 @@ export abstract class Screen extends AbstractContainerEventHandler implements Sc
     fadeWidgets(widgetFade: number): void;
     fillCrashDetails(report: CrashReport): void;
     getBackgroundMusic(): Music;
+    getClient(): Minecraft;
     getFont(): Font;
     getNarrationMessage(): Component;
     getRectangle(): ScreenRectangle;

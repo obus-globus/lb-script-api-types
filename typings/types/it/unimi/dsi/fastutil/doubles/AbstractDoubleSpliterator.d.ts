@@ -1,6 +1,7 @@
 import type { DoubleComparator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleComparator.d.ts'
 import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleConsumer.d.ts'
 import type { DoubleSpliterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleSpliterator.d.ts'
+import type { Spliterator$OfDouble } from '../../../../../java/util/Spliterator$OfDouble.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -18,4 +19,6 @@ export abstract class AbstractDoubleSpliterator extends Object implements Double
     getComparator(): (param0: number, param1: number) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
+    trySplit(): DoubleSpliterator;
+    trySplit(): Spliterator$OfDouble;
 }

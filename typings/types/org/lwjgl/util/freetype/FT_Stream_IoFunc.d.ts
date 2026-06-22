@@ -20,4 +20,5 @@ export abstract class FT_Stream_IoFunc extends Callback implements FT_Stream_IoF
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;
     getDescriptor(): Callback$Descriptor;
+    invoke(arg0: number, arg1: number, arg2: number, arg3: number): number;
 }

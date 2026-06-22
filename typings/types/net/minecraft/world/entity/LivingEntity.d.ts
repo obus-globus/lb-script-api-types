@@ -238,6 +238,8 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     calculateEntityAnimation(useY: boolean): void;
     calculateFallDamage(fallDistance: number, damageModifier: number): number;
     // private calculateFallPower(fallDistance: number): number;
+    callGetWaterSlowDown(): number;
+    callJumpOutOfFluid(arg0: number): void;
     canAttack(target: LivingEntity): boolean;
     canBeAffected(newEffect: MobEffectInstance): boolean;
     // private canBeAffected$mixinextras$wrapped$499(arg0: MobEffectInstance): boolean;

@@ -43,6 +43,8 @@ export class CreativeModeTab extends Object implements FabricCreativeModeTabImpl
     hasAnyItems(): boolean;
     isAlignedRight(): boolean;
     row(): CreativeModeTab$Row;
+    setColumn(arg0: number): void;
+    setRow(arg0: CreativeModeTab$Row): void;
     shouldDisplay(): boolean;
     showTitle(): boolean;
 }

@@ -26,6 +26,7 @@ export abstract class AbstractByteBufAllocator extends Object implements ByteBuf
     ioBuffer(): ByteBuf;
     ioBuffer(arg0: number): ByteBuf;
     ioBuffer(arg0: number, arg1: number): ByteBuf;
+    isDirectBufferPooled(): boolean;
     newDirectBuffer(arg0: number, arg1: number): ByteBuf;
     newHeapBuffer(arg0: number, arg1: number): ByteBuf;
     toString(): string;

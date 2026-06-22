@@ -20,6 +20,7 @@ export class RegistryOps<T extends Object | number | string | boolean> extends D
     private constructor(parent: DynamicOps<T>, lookupProvider: RegistryOps$RegistryInfoLookup)
     lookupProvider: RegistryOps$RegistryInfoLookup;
     equals(obj: Object | null): boolean;
+    getRegistryInfoGetter(): RegistryOps$RegistryInfoLookup;
     getter<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<HolderGetter<E>>;
     hashCode(): number;
     owner<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<HolderOwner<E>>;

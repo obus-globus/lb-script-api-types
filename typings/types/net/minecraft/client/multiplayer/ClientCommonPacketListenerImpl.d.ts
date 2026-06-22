@@ -22,6 +22,7 @@ import type { ServerData } from '../../../../net/minecraft/client/multiplayer/Se
 import type { WorldSessionTelemetryManager } from '../../../../net/minecraft/client/telemetry/WorldSessionTelemetryManager.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { Connection } from '../../../../net/minecraft/network/Connection.d.ts'
+import type { ConnectionProtocol } from '../../../../net/minecraft/network/ConnectionProtocol.d.ts'
 import type { DisconnectionDetails } from '../../../../net/minecraft/network/DisconnectionDetails.d.ts'
 import type { PacketListener } from '../../../../net/minecraft/network/PacketListener.d.ts'
 import type { ServerboundPacketListener } from '../../../../net/minecraft/network/ServerboundPacketListener.d.ts'
@@ -40,6 +41,7 @@ import type { ClientboundServerLinksPacket } from '../../../../net/minecraft/net
 import type { ClientboundShowDialogPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundShowDialogPacket.d.ts'
 import type { ClientboundStoreCookiePacket } from '../../../../net/minecraft/network/protocol/common/ClientboundStoreCookiePacket.d.ts'
 import type { ClientboundTransferPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundTransferPacket.d.ts'
+import type { ClientboundUpdateTagsPacket } from '../../../../net/minecraft/network/protocol/common/ClientboundUpdateTagsPacket.d.ts'
 import type { CustomPacketPayload } from '../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { ClientboundCookieRequestPacket } from '../../../../net/minecraft/network/protocol/cookie/ClientboundCookieRequestPacket.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
@@ -66,6 +68,7 @@ export abstract class ClientCommonPacketListenerImpl extends Object implements P
     createDisconnectScreen(details: DisconnectionDetails): Screen;
     createDisconnectionInfo(reason: Component, cause: Throwable): DisconnectionDetails;
     fillListenerSpecificCrashDetails(report: CrashReport, connectionDetails: CrashReportCategory): void;
+    getConnection(): Connection;
     getPacketContext(): PacketContext;
     handleClearDialog(packet: ClientboundClearDialogPacket): void;
     handleCustomPayload(packet: ClientboundCustomPayloadPacket): void;
@@ -81,8 +84,11 @@ export abstract class ClientCommonPacketListenerImpl extends Object implements P
     handleShowDialog(packet: ClientboundShowDialogPacket): void;
     handleStoreCookie(packet: ClientboundStoreCookiePacket): void;
     handleTransfer(packet: ClientboundTransferPacket): void;
+    handleUpdateTags(packet: ClientboundUpdateTagsPacket): void;
+    isAcceptingMessages(): boolean;
     onDisconnect(details: DisconnectionDetails): void;
     onPacketError(packet: Packet<PacketListener>, cause: Exception): void;
+    protocol(): ConnectionProtocol;
     send(packet: Packet<Object>): void;
     sendDeferredPackets(): void;
     // private sendWhen(packet: Packet<ServerboundPacketListener>, condition: () => boolean, expireAfterDuration: Duration): void;

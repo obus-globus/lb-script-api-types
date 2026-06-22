@@ -8,6 +8,7 @@ import type { YearMonthFieldContainer } from '../../../kotlinx/datetime/format/Y
 import type { FormatStructure } from '../../../kotlinx/datetime/internal/format/FormatStructure.d.ts'
 export interface AbstractWithYearMonthBuilder extends Object, DateTimeFormatBuilder$WithYearMonth{
     addFormatStructureForYearMonth(structure: FormatStructure<YearMonthFieldContainer>): void;
+    chars(value: string): void;
     monthName(names: MonthNames): void;
     monthNumber(padding: Padding): void;
     year(padding: Padding): void;

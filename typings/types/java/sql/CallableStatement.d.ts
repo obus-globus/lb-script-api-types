@@ -6,10 +6,14 @@ import type { URL } from '../../java/net/URL.d.ts'
 import type { Array } from '../../java/sql/Array.d.ts'
 import type { Blob } from '../../java/sql/Blob.d.ts'
 import type { Clob } from '../../java/sql/Clob.d.ts'
+import type { Connection } from '../../java/sql/Connection.d.ts'
 import type { Date } from '../../java/sql/Date.d.ts'
 import type { NClob } from '../../java/sql/NClob.d.ts'
+import type { ParameterMetaData } from '../../java/sql/ParameterMetaData.d.ts'
 import type { PreparedStatement } from '../../java/sql/PreparedStatement.d.ts'
 import type { Ref } from '../../java/sql/Ref.d.ts'
+import type { ResultSet } from '../../java/sql/ResultSet.d.ts'
+import type { ResultSetMetaData } from '../../java/sql/ResultSetMetaData.d.ts'
 import type { RowId } from '../../java/sql/RowId.d.ts'
 import type { SQLType } from '../../java/sql/SQLType.d.ts'
 import type { SQLXML } from '../../java/sql/SQLXML.d.ts'
@@ -18,7 +22,23 @@ import type { Timestamp } from '../../java/sql/Timestamp.d.ts'
 import type { Calendar } from '../../java/util/Calendar.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface CallableStatement extends PreparedStatement, Object{
+    addBatch(): void;
+    addBatch(arg0: string): void;
+    cancel(): void;
+    clearBatch(): void;
+    clearParameters(): void;
+    clearWarnings(): void;
+    close(): void;
+    closeOnCompletion(): void;
+    execute(): boolean;
+    execute(arg0: string): boolean;
+    execute(arg0: string, arg1: number): boolean;
     executeLargeUpdate(): number;
+    executeQuery(): ResultSet;
+    executeQuery(arg0: string): ResultSet;
+    executeUpdate(): number;
+    executeUpdate(arg0: string): number;
+    executeUpdate(arg0: string, arg1: number): number;
     getArray(arg0: number): Array;
     getArray(arg0: string): Array;
     getBigDecimal(arg0: number): BigDecimal;
@@ -36,18 +56,27 @@ export interface CallableStatement extends PreparedStatement, Object{
     getCharacterStream(arg0: string): Reader;
     getClob(arg0: number): Clob;
     getClob(arg0: string): Clob;
+    getConnection(): Connection;
     getDate(arg0: number): Date;
     getDate(arg0: number, arg1: Calendar): Date;
     getDate(arg0: string): Date;
     getDate(arg0: string, arg1: Calendar): Date;
     getDouble(arg0: number): number;
     getDouble(arg0: string): number;
+    getFetchDirection(): number;
+    getFetchSize(): number;
     getFloat(arg0: number): number;
     getFloat(arg0: string): number;
+    getGeneratedKeys(): ResultSet;
     getInt(arg0: number): number;
     getInt(arg0: string): number;
     getLong(arg0: number): number;
     getLong(arg0: string): number;
+    getMaxFieldSize(): number;
+    getMaxRows(): number;
+    getMetaData(): ResultSetMetaData;
+    getMoreResults(): boolean;
+    getMoreResults(arg0: number): boolean;
     getNCharacterStream(arg0: number): Reader;
     getNCharacterStream(arg0: string): Reader;
     getNClob(arg0: number): NClob;
@@ -60,8 +89,14 @@ export interface CallableStatement extends PreparedStatement, Object{
     getObject(arg0: string): Object;
     getObject<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T;
     getObject(arg0: string, arg1: { [key: string]: Class<Object> }): Object;
+    getParameterMetaData(): ParameterMetaData;
+    getQueryTimeout(): number;
     getRef(arg0: number): Ref;
     getRef(arg0: string): Ref;
+    getResultSet(): ResultSet;
+    getResultSetConcurrency(): number;
+    getResultSetHoldability(): number;
+    getResultSetType(): number;
     getRowId(arg0: number): RowId;
     getRowId(arg0: string): RowId;
     getSQLXML(arg0: number): SQLXML;
@@ -80,6 +115,10 @@ export interface CallableStatement extends PreparedStatement, Object{
     getTimestamp(arg0: string, arg1: Calendar): Timestamp;
     getURL(arg0: number): URL;
     getURL(arg0: string): URL;
+    getUpdateCount(): number;
+    isCloseOnCompletion(): boolean;
+    isClosed(): boolean;
+    isPoolable(): boolean;
     registerOutParameter(arg0: number, arg1: SQLType): void;
     registerOutParameter(arg0: number, arg1: SQLType, arg2: number): void;
     registerOutParameter(arg0: number, arg1: SQLType, arg2: string): void;
@@ -92,6 +131,7 @@ export interface CallableStatement extends PreparedStatement, Object{
     registerOutParameter(arg0: string, arg1: number): void;
     registerOutParameter(arg0: string, arg1: number, arg2: number): void;
     registerOutParameter(arg0: string, arg1: number, arg2: string): void;
+    setArray(arg0: number, arg1: Array): void;
     setAsciiStream(arg0: string, arg1: InputStream): void;
     setAsciiStream(arg0: string, arg1: InputStream, arg2: number): void;
     setBigDecimal(arg0: string, arg1: BigDecimal): void;
@@ -108,12 +148,18 @@ export interface CallableStatement extends PreparedStatement, Object{
     setClob(arg0: string, arg1: Reader): void;
     setClob(arg0: string, arg1: Reader, arg2: number): void;
     setClob(arg0: string, arg1: Clob): void;
+    setCursorName(arg0: string): void;
     setDate(arg0: string, arg1: Date): void;
     setDate(arg0: string, arg1: Date, arg2: Calendar): void;
     setDouble(arg0: string, arg1: number): void;
+    setEscapeProcessing(arg0: boolean): void;
+    setFetchDirection(arg0: number): void;
+    setFetchSize(arg0: number): void;
     setFloat(arg0: string, arg1: number): void;
     setInt(arg0: string, arg1: number): void;
     setLong(arg0: string, arg1: number): void;
+    setMaxFieldSize(arg0: number): void;
+    setMaxRows(arg0: number): void;
     setNCharacterStream(arg0: string, arg1: Reader): void;
     setNCharacterStream(arg0: string, arg1: Reader, arg2: number): void;
     setNClob(arg0: string, arg1: Reader): void;
@@ -129,6 +175,9 @@ export interface CallableStatement extends PreparedStatement, Object{
     setObject(arg0: string, arg1: Object, arg2: SQLType, arg3: number): void;
     setObject(arg0: string, arg1: Object, arg2: number): void;
     setObject(arg0: string, arg1: Object, arg2: number, arg3: number): void;
+    setPoolable(arg0: boolean): void;
+    setQueryTimeout(arg0: number): void;
+    setRef(arg0: number, arg1: Ref): void;
     setRowId(arg0: string, arg1: RowId): void;
     setSQLXML(arg0: string, arg1: SQLXML): void;
     setShort(arg0: string, arg1: number): void;
@@ -138,5 +187,6 @@ export interface CallableStatement extends PreparedStatement, Object{
     setTimestamp(arg0: string, arg1: Timestamp): void;
     setTimestamp(arg0: string, arg1: Timestamp, arg2: Calendar): void;
     setURL(arg0: string, arg1: URL): void;
+    setUnicodeStream(arg0: number, arg1: InputStream, arg2: number): void;
     wasNull(): boolean;
 }

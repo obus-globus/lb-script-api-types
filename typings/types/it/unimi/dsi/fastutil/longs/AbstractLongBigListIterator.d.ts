@@ -4,6 +4,8 @@ export abstract class AbstractLongBigListIterator extends AbstractLongBidirectio
     constructor()
     add(arg0: number): void;
     back(arg0: number): number;
+    nextLong(): number;
+    previousLong(): number;
     set(arg0: number): void;
     skip(arg0: number): number;
 }

@@ -8,8 +8,10 @@ export interface FormattedValue extends Object, CharSequence{
     appendTo<A extends Appendable>(arg0: A): A;
     chars(): IntStream;
     codePoints(): IntStream;
+    get(index: number): string;
     getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;
     isEmpty(): boolean;
     nextPosition(arg0: ConstrainedFieldPosition): boolean;
+    subSequence(startIndex: number, endIndex: number): CharSequence;
     toCharacterIterator(): AttributedCharacterIterator;
 }

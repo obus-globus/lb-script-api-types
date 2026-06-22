@@ -65,6 +65,7 @@ export abstract class BlockBehaviour extends Object implements ShapeUpdateHandli
     asBlock(): Block;
     asItem(): Item;
     attack(state: BlockState, level: Level, pos: BlockPos, player: Player): void;
+    callIsRandomlyTicking(arg0: BlockState): boolean;
     canBeReplaced(state: BlockState, context: BlockPlaceContext): boolean;
     canBeReplaced(state: BlockState, fluid: Fluid): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;

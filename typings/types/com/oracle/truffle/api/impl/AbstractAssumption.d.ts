@@ -10,7 +10,10 @@ export abstract class AbstractAssumption extends Object implements Assumption {
     constructor(name: Object)
     // private isValid: boolean;
     readonly name: Object;
+    check(): void;
     getName(): string;
+    invalidate(): void;
     invalidate(message: string): void;
+    isValid(): boolean;
     toString(): string;
 }

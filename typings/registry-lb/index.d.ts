@@ -206,6 +206,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.config.types.group.NoneMode": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/NoneMode").NoneMode;
     "net.ccbluex.liquidbounce.config.types.group.ToggleableValueGroup": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup").ToggleableValueGroup;
     "net.ccbluex.liquidbounce.config.types.group.ToggleableValueGroupKt": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroupKt").ToggleableValueGroupKt;
+    "net.ccbluex.liquidbounce.config.types.group.ValueGroup": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ValueGroup").ValueGroup;
     "net.ccbluex.liquidbounce.config.types.list.ChoiceListValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/ChoiceListValue").ChoiceListValue;
     "net.ccbluex.liquidbounce.config.types.list.ItemListValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/ItemListValue").ItemListValue;
     "net.ccbluex.liquidbounce.config.types.list.ItemListValue$NamedItem": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/ItemListValue$NamedItem").ItemListValue$NamedItem;

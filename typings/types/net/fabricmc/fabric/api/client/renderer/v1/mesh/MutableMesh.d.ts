@@ -9,4 +9,6 @@ export interface MutableMesh extends Object, MeshView {
     emitter(): QuadEmitter;
     forEachMutable(arg0: (param0: MutableQuadView) => void): void;
     immutableCopy(): Mesh;
+    outputTo(arg0: QuadEmitter): void;
+    size(): number;
 }
