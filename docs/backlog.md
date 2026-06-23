@@ -221,30 +221,60 @@ gate v2 ratchets) — these track the *generator-root* fixes.
   incl. `Types`); registry-lb +1. Positive-control verified
   (`Java.type("...Types")` now types). _Layer: registry generator._
 
-## 2026-06-23: skipLibCheck:false debt — what is NOT a mechanical win
+## 2026-06-23: skipLibCheck:false debt-reduction campaign
 
-Investigated the two buckets that looked safe; both are deeper than they appear.
-Attempted generator fixes regressed the gate and were reverted (package stays at
-the clean 0.38.5 baseline: 60 surface + 2981 transitive).
+Drove the surface+transitive `skipLibCheck:false` debt down via generator-root
+fixes (`TypeScriptGenerator.kt`), each gate-verified with **zero new errors**.
+**Net: transitive 2981 -> 1251 (-58%), surface 60 -> 53.** Guiding rule that held:
+ship only fixes that emit `any`/`unknown`/imports (they relax, never tighten, so
+they can't trade one error class for another); anything that *moves* an error to a
+different code (see the TS2300 dead-end) is a fidelity tradeoff, not a sweep.
 
-- **[ ] TS2304 "cannot find name" (348, dominated by `Path` x222 + fastutil
-  primitive maps).** `java.nio.file.Path` is `Iterable`, so `visitClass`
-  deliberately SKIPS generating a module for it (the `shouldIgnoreSuperclass`
-  exclusion that keeps Iterable supertypes from emitting `(Object|null)[]`). It
-  is rendered nominally as `Path[]` but there is no `Path.d.ts` to import from, so
-  adding it to `dependentTypes` is a no-op (the import target does not exist).
-  Real fix = emit modules for Iterable/Map value-types when they are *referenced
-  by name* (distinct from being a supertype) — non-trivial, risks the
-  `(Object|null)[]` regression the exclusion prevents. _Not mechanical._
-- **[ ] TS2300 duplicate `static CODEC`/`STREAM_CODEC` (92).** The duplicate is a
-  symptom: a record/class declares its OWN `static CODEC: MapCodec<Self>` while
-  ALSO inheriting an interface's `static CODEC: Codec<Iface>` (different,
-  covariant type), and `Class.getFields()` returns both. Deduping (keep the
-  class's own) does NOT help: it just trades TS2300 for **TS2417** (static side
-  incorrectly extends base static side) because the covariant static type is
-  itself unrepresentable on a TS `extends` chain. Measured: dedup attempt moved
-  ~46 errors TS2300 -> TS2417, net worse. Real fix = drop or widen conflicting
-  covariant statics (a deliberate fidelity tradeoff), not a dedup. _Not mechanical._
+- **[x] B - interface-member conformance** (0.38.5). `functionsOf` now walks the
+  transitive interface closure (kotlin supertypes + the reliable Java interface
+  list) and injects missing PUBLIC, NON-GENERIC, simple-signature members, deduped
+  vs the class's own + concrete-inherited. Restricting to the generic-free subset
+  avoided re-introducing erasure/variance debt. Enum packet types satisfy
+  `PacketType` again; `Java.type(...).create(...)` types with no cast.
+- **[x] TS2304 "cannot find name" (-339, 0.38.6).** TWO causes: (1) self-iterating
+  types (`java.nio.file.Path : Iterable<Path>`) were treated as collections -> no
+  module -> undefined `Path[]`. Fix: `isSelfIterable` keeps such types out of the
+  `shouldIgnoreSuperclass` collection path so they get a real module + import.
+  (2) fastutil primitive maps (`Int2ObjectMap<V>`, 1 type param) broke the 2-arg
+  `Map` assumption and fell to a nominal name; `mapFromKType` now renders
+  `{ [key: string]: any }` for non-2-arg maps. _(My first TS2304 attempt -- adding
+  no-module types to dependentTypes -- was a no-op and was reverted; the module
+  fix is the real one.)_
+- **[x] TS2344 "X does not satisfy constraint Y" (-1391 total, 0.38.7 + 0.38.8).**
+  Two levers: (1) a method type-variable (`E : Enum<E> & StringRepresentable`,
+  `T : Entity`, ...) erased to the literal `Object` in return types
+  (`EnumCodec<Object>`) violated the bound -- `nonPrimitiveFromKType` now renders
+  `any` for an erased-Object arg against a CONSTRAINED parameter (and pads
+  raw/missing args the same way), keeping `Object` for unconstrained params so
+  `Class<Object>` stays precise (-856). (2) the unconstrained-`<T>` bound was the
+  over-narrow union `Object | number | string | boolean`, which rejected arrays,
+  `void`, maps and functions; emit `unknown` (top type) instead, applied uniformly
+  so extends/implements chains stay consistent (-535).
+
+### NOT mechanical (left as deliberate fidelity tradeoffs)
+
+- **[ ] TS2300 duplicate `static CODEC`/`STREAM_CODEC` (92).** A class declares its
+  OWN `static CODEC: MapCodec<Self>` AND inherits an interface's
+  `static CODEC: Codec<Iface>` (covariant), and `Class.getFields()` returns both.
+  Deduping just trades TS2300 -> **TS2417** (static side incompatible with base) --
+  measured ~46 moved, net worse. Real fix = drop/widen the covariant static, a
+  fidelity decision.
+- **[ ] TS2344 residual (169).** Fragmented sub-patterns: nested erased bounds
+  (`Future<void>` vs `Future<Object>`), primitive-vs-Java-type (`number` is not
+  `Comparable<number>`), array-vs-specific-bound. ~12-44 each; each needs narrow,
+  riskier handling. (An Object-bound -> unknown extension was tried: 1 file
+  changed tree-wide, 0 errors fixed -> reverted. Diminishing returns reached.)
+- **[ ] TS2420 generic-interface conformance (203)** and **[ ] TS2416 covariant
+  overrides (335).** Each error is a distinct class/method; no single lever.
+  TS2420 = the generic-interface conformance B deliberately skipped (fixing it
+  re-introduces the erasure debt just cleared); TS2416 = narrowing returns
+  (`Level.gameEvent`, `ServerLevel.getNearestPlayer`) that TS rejects on an
+  `extends` chain. Both are real fidelity tradeoffs, low yield, regression-prone.
 
 ## Smaller, standalone
 
