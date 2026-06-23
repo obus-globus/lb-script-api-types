@@ -3,7 +3,6 @@ import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../../../../net/minecraft/core/Vec3i.d.ts'
@@ -52,7 +51,7 @@ export class SinglePoolElement extends StructurePoolElement {
     getSize(structureTemplateManager: StructureTemplateManager, rotation: Rotation): Vec3i;
     // private getTemplate(structureTemplateManager: StructureTemplateManager): StructureTemplate;
     getTemplateLocation(): Identifier;
-    getType(): StructurePoolElementType<Object>;
+    getType(): StructurePoolElementType<any>;
     place(structureTemplateManager: StructureTemplateManager, level: WorldGenLevel, structureManager: StructureManager, generator: ChunkGenerator, position: BlockPos, referencePos: BlockPos, rotation: Rotation, chunkBB: BoundingBox, random: RandomSource, liquidSettings: LiquidSettings, keepJigsaws: boolean): boolean;
     toString(): string;
 }

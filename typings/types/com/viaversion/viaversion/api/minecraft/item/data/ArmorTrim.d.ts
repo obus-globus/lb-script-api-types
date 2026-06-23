@@ -20,7 +20,7 @@ export class ArmorTrim extends Record implements Rewritable {
     hashCode(): number;
     material(): Holder<ArmorTrimMaterial>;
     pattern(): Holder<ArmorTrimPattern>;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): ArmorTrim;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): ArmorTrim;
     showInTooltip(): boolean;
     toString(): string;
 }

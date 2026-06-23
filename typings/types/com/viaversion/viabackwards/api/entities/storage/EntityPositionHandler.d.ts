@@ -9,8 +9,8 @@ export class EntityPositionHandler extends Object {
     static RELATIVE_MOVE_FACTOR: number;
     static writeFacingAngles(paramarg0: PacketWrapper, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
     static writeFacingDegrees(paramarg0: PacketWrapper, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
-    constructor(arg0: EntityRewriterBase<Object, Object>, arg1: Class<EntityPositionStorage>, arg2: () => EntityPositionStorage)
-    // private entityRewriter: EntityRewriterBase<Object, Object>;
+    constructor(arg0: EntityRewriterBase<any, any>, arg1: Class<EntityPositionStorage>, arg2: () => EntityPositionStorage)
+    // private entityRewriter: EntityRewriterBase<any, any>;
     // private storageClass: Class<EntityPositionStorage>;
     // private storageSupplier: () => EntityPositionStorage;
     // private warnedForMissingEntity: boolean;

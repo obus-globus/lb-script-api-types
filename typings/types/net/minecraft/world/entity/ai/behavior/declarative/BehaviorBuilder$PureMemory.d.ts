@@ -16,10 +16,10 @@ import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai
 export class BehaviorBuilder$PureMemory<E extends LivingEntity, F extends K1, Value extends Object | number | string | boolean> extends BehaviorBuilder<E, MemoryAccessor<F, Value>> {
     static create(parambuilder: (param0: BehaviorBuilder$Instance<LivingEntity>) => App<BehaviorBuilder$Mu<LivingEntity>, Trigger<LivingEntity>>): OneShot<LivingEntity>;
     static instance(): BehaviorBuilder$Instance<LivingEntity>;
-    static sequence(paramfirst: Trigger<Object>, paramsecond: OneShot<Object>): OneShot<LivingEntity>;
+    static sequence(paramfirst: Trigger<any>, paramsecond: OneShot<any>): OneShot<LivingEntity>;
     static triggerIf(parampredicate: (param0: ServerLevel, param1: LivingEntity | null) => boolean): OneShot<LivingEntity>;
     static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean): OneShot<LivingEntity>;
-    static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean, parambehavior: OneShot<Object>): OneShot<LivingEntity>;
+    static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean, parambehavior: OneShot<any>): OneShot<LivingEntity>;
     static unbox(parambox: App<BehaviorBuilder$Mu<LivingEntity>, Object>): BehaviorBuilder<LivingEntity, Object>;
     private constructor(condition: MemoryCondition<F, Value>)
 }

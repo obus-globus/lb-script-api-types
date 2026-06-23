@@ -9,7 +9,7 @@ import type { RecipeRewriter1_21_2$Recipe } from '../../../../../../com/viaversi
 import type { RecipeRewriter1_21_2$StoneCutterRecipe } from '../../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/rewriter/RecipeRewriter1_21_2$StoneCutterRecipe.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecipeRewriter1_21_2 extends RecipeRewriter1_20_3<ClientboundPacket1_21> implements StorableObject {
-    constructor(arg0: Protocol<ClientboundPacket1_21, Object, Object, Object>)
+    constructor(arg0: Protocol<ClientboundPacket1_21, any, any, any>)
     readonly currentRecipeIdentifier: string;
     // private recipeGroups: { [key: string]: any };
     // private recipeInputs: { [key: string]: (Object | null)[] };

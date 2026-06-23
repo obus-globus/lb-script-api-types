@@ -71,7 +71,7 @@ export abstract class Display extends Entity {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     // private cullingBoundingBox: AABB;
     readonly interpolation: InterpolationHandler;
     // private interpolationDuration: number;

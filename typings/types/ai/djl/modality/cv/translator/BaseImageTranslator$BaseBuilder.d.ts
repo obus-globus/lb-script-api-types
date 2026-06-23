@@ -3,7 +3,7 @@ import type { Batchifier } from '../../../../../ai/djl/translate/Batchifier.d.ts
 import type { Pipeline } from '../../../../../ai/djl/translate/Pipeline.d.ts'
 import type { Transform } from '../../../../../ai/djl/translate/Transform.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class BaseImageTranslator$BaseBuilder<T extends BaseImageTranslator$BaseBuilder<BaseImageTranslator$BaseBuilder<Object>>> extends Object {
+export abstract class BaseImageTranslator$BaseBuilder<T extends BaseImageTranslator$BaseBuilder<BaseImageTranslator$BaseBuilder<any>>> extends Object {
     constructor()
     // private batchifier: Batchifier;
     // private flag: Image$Flag;

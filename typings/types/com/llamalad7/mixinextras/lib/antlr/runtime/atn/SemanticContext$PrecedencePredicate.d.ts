@@ -11,8 +11,8 @@ export class SemanticContext$PrecedencePredicate extends SemanticContext impleme
     precedence: number;
     compareTo(arg0: SemanticContext$PrecedencePredicate): number;
     equals(arg0: Object | null): boolean;
-    eval(arg0: Recognizer<Object, Object>, arg1: RuleContext): boolean;
-    evalPrecedence(arg0: Recognizer<Object, Object>, arg1: RuleContext): SemanticContext;
+    eval(arg0: Recognizer<Object, any>, arg1: RuleContext): boolean;
+    evalPrecedence(arg0: Recognizer<Object, any>, arg1: RuleContext): SemanticContext;
     hashCode(): number;
     toString(): string;
 }

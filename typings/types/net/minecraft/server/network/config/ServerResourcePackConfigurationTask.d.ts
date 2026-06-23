@@ -8,7 +8,7 @@ export class ServerResourcePackConfigurationTask extends Object implements Confi
     static TYPE: ConfigurationTask$Type;
     constructor(info: MinecraftServer$ServerResourcePackInfo)
     // private info: MinecraftServer$ServerResourcePackInfo;
-    start(connection: (param0: Packet<Object>) => void): void;
+    start(connection: (param0: Packet<any>) => void): void;
     tick(): boolean;
     type(): ConfigurationTask$Type;
 }

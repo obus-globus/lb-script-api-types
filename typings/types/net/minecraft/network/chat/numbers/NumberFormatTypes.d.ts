@@ -11,6 +11,6 @@ export class NumberFormatTypes extends Object {
     static MAP_CODEC: MapCodec<NumberFormat>;
     static OPTIONAL_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<NumberFormat>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, NumberFormat>;
-    static bootstrap(paramregistry: NumberFormatType<Object>[]): NumberFormatType<Object>;
+    static bootstrap(paramregistry: NumberFormatType<any>[]): NumberFormatType<any>;
     constructor()
 }

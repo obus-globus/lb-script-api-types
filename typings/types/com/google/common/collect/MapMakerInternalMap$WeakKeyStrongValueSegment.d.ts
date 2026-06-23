@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MapMakerInternalMap$WeakKeyStrongValueSegment<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends MapMakerInternalMap$Segment<K, V, MapMakerInternalMap$WeakKeyStrongValueEntry<K, V>, MapMakerInternalMap$WeakKeyStrongValueSegment<K, V>> {
     constructor(map: Map<K, V>, initialCapacity: number)
     // private queueForKeys: ReferenceQueue<K>;
-    castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>): MapMakerInternalMap$WeakKeyStrongValueEntry<K, V>;
+    castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>): MapMakerInternalMap$WeakKeyStrongValueEntry<K, V>;
     getKeyReferenceQueueForTesting(): ReferenceQueue<K>;
     maybeClearReferenceQueues(): void;
     maybeDrainReferenceQueues(): void;

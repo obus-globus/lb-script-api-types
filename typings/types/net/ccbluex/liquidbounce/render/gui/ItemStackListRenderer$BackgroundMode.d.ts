@@ -6,7 +6,7 @@ import type { ItemStackListRenderer$BackgroundMode$Companion } from '../../../..
 export class ItemStackListRenderer$BackgroundMode extends Mode {
     static Companion: Tagged$Companion;
     static Companion: ItemStackListRenderer$BackgroundMode$Companion;
-    static backgroundChoices$liquidbounce(paramarg0: ModeValueGroup<Object>): (Object | null)[];
-    protected constructor(name: string, parent: ModeValueGroup<Object>)
-    readonly parent: ModeValueGroup<Object>;
+    static backgroundChoices$liquidbounce(paramarg0: ModeValueGroup<any>): (Object | null)[];
+    protected constructor(name: string, parent: ModeValueGroup<any>)
+    readonly parent: ModeValueGroup<any>;
 }

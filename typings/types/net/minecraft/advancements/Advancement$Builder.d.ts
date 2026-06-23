@@ -19,14 +19,14 @@ export class Advancement$Builder extends Object implements FabricAdvancementBuil
     static advancement(): Advancement$Builder;
     static recipeAdvancement(): Advancement$Builder;
     constructor()
-    // private criteria: ImmutableMap$Builder<string, Criterion<Object>>;
+    // private criteria: ImmutableMap$Builder<string, Criterion<any>>;
     // private display: Optional<DisplayInfo>;
     // private parent: Optional<Identifier>;
     // private requirements: Optional<AdvancementRequirements>;
     // private requirementsStrategy: AdvancementRequirements$Strategy;
     // private rewards: AdvancementRewards;
     // private sendsTelemetryEvent: boolean;
-    addCriterion(name: string, criterion: Criterion<Object>): Advancement$Builder;
+    addCriterion(name: string, criterion: Criterion<any>): Advancement$Builder;
     build(id: Identifier): AdvancementHolder;
     display(display: DisplayInfo): Advancement$Builder;
     display(icon: ItemStackTemplate, title: Component, description: Component, background: Identifier, frame: AdvancementType, showToast: boolean, announceChat: boolean, hidden: boolean): Advancement$Builder;

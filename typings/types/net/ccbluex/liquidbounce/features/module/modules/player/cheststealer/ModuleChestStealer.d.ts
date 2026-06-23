@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { ScheduleInventoryActionEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/ScheduleInventoryActionEvent.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -35,9 +34,9 @@ export class ModuleChestStealer extends ClientModule {
     // private scheduleInventoryAction: EventHook<ScheduleInventoryActionEvent>;
     // private selectionMode: ModuleChestStealer$SelectionMode;
     // private /*not mapped: */ getSelectionMode(): ModuleChestStealer$SelectionMode;
-    // private createCleanupPlan(screen: AbstractContainerScreen<Object>): InventoryCleanupPlan;
-    // private getChestScreen(): AbstractContainerScreen<Object> | null;
+    // private createCleanupPlan(screen: AbstractContainerScreen<any>): InventoryCleanupPlan;
+    // private getChestScreen(): AbstractContainerScreen<any> | null;
     // private getStillRequiredSpace(cleanupPlan: InventoryCleanupPlan, slotsToCollect: number): number;
-    // private performQuickSwaps(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan, screen: AbstractContainerScreen<Object>): boolean;
-    // private throwItem(cleanupPlan: InventoryCleanupPlan, screen: AbstractContainerScreen<Object>, targetBlacklist: ItemSlot[]): InventoryAction[] | null;
+    // private performQuickSwaps(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan, screen: AbstractContainerScreen<any>): boolean;
+    // private throwItem(cleanupPlan: InventoryCleanupPlan, screen: AbstractContainerScreen<any>, targetBlacklist: ItemSlot[]): InventoryAction[] | null;
 }

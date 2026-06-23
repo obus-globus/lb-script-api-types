@@ -12,9 +12,9 @@ import type { Block } from '../../../../../../net/minecraft/world/level/block/Bl
 export class IdentifierWithRegistryAdapter<T extends Object | number | string | boolean> extends TypeAdapter<T> {
     static BLOCK: IdentifierWithRegistryAdapter<Block>;
     static Companion: IdentifierWithRegistryAdapter$Companion;
-    static ENTITY_TYPE: IdentifierWithRegistryAdapter<EntityType<Object>>;
+    static ENTITY_TYPE: IdentifierWithRegistryAdapter<EntityType<any>>;
     static ITEM: IdentifierWithRegistryAdapter<Item>;
-    static SCREEN_HANDLER: IdentifierWithRegistryAdapter<MenuType<Object>>;
+    static SCREEN_HANDLER: IdentifierWithRegistryAdapter<MenuType<any>>;
     static SOUND_EVENT: IdentifierWithRegistryAdapter<SoundEvent>;
     static STATUS_EFFECT: IdentifierWithRegistryAdapter<MobEffect>;
     constructor(registry: T[])

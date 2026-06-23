@@ -8,5 +8,5 @@ export class SingletonArgumentInfo$Template extends Object implements ArgumentTy
     constructor(null_: SingletonArgumentInfo$Template)
     // private constructor: (param0: CommandBuildContext) => A;
     instantiate<A extends ArgumentType<Object>>(context: CommandBuildContext): A;
-    type<A extends ArgumentType<Object>>(): ArgumentTypeInfo<A, Object>;
+    type<A extends ArgumentType<Object>>(): ArgumentTypeInfo<A, any>;
 }

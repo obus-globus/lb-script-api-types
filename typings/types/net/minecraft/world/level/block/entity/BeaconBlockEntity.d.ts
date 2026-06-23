@@ -31,7 +31,7 @@ export class BeaconBlockEntity extends BlockEntity implements MenuProvider, Name
     static DATA_SECONDARY: number;
     static NBT_ATTACHMENT_KEY: string;
     static NUM_DATA_VALUES: number;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;

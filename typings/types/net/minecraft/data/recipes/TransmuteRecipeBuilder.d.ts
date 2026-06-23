@@ -20,7 +20,7 @@ export class TransmuteRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static transmute(paramcategory: RecipeCategory, paraminput: Ingredient, parammaterial: Ingredient, paramresult: Item): TransmuteRecipeBuilder;
     static transmute(paramcategory: RecipeCategory, paraminput: Ingredient, parammaterial: Ingredient, paramresult: ItemStackTemplate): TransmuteRecipeBuilder;
     private constructor(category: RecipeCategory, result: ItemStackTemplate, input: Ingredient, material: Ingredient)
@@ -33,11 +33,11 @@ export class TransmuteRecipeBuilder extends Object implements RecipeBuilder {
     // private materialCount: MinMaxBounds$Ints;
     // private result: ItemStackTemplate;
     addMaterialCountToOutput(): TransmuteRecipeBuilder;
-    defaultId(): ResourceKey<Recipe<Object>>;
+    defaultId(): ResourceKey<Recipe<any>>;
     group(group: string): TransmuteRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
     setMaterialCount(materialCount: MinMaxBounds$Ints): TransmuteRecipeBuilder;
-    unlockedBy(name: string, criterion: Criterion<Object>): TransmuteRecipeBuilder;
+    unlockedBy(name: string, criterion: Criterion<any>): TransmuteRecipeBuilder;
 }

@@ -3,10 +3,10 @@ import type { NumberRangeFormatter$RangeCollapse } from '../../../../com/ibm/icu
 import type { NumberRangeFormatter$RangeIdentityFallback } from '../../../../com/ibm/icu/number/NumberRangeFormatter$RangeIdentityFallback.d.ts'
 import type { UnlocalizedNumberFormatter } from '../../../../com/ibm/icu/number/UnlocalizedNumberFormatter.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class NumberRangeFormatterSettings<T extends NumberRangeFormatterSettings<Object>> extends Object {
-    constructor(arg0: NumberRangeFormatterSettings<Object>, arg1: number, arg2: Object)
+export abstract class NumberRangeFormatterSettings<T extends NumberRangeFormatterSettings<any>> extends Object {
+    constructor(arg0: NumberRangeFormatterSettings<any>, arg1: number, arg2: Object)
     // private key: number;
-    // private parent: NumberRangeFormatterSettings<Object>;
+    // private parent: NumberRangeFormatterSettings<any>;
     // private resolvedMacros: RangeMacroProps;
     // private value: Object;
     collapse(arg0: NumberRangeFormatter$RangeCollapse): T;

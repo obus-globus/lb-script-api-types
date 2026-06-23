@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { Filter } from '../../../../../../../net/ccbluex/liquidbounce/utils/collection/Filter.d.ts'
 import type { EntityType } from '../../../../../../../net/minecraft/world/entity/EntityType.d.ts'
@@ -13,13 +12,13 @@ export class ModuleNoEntityInteract extends ClientModule {
     static INSTANCE: ModuleNoEntityInteract;
     // private entityTypeFilter: Filter;
     // private /*not mapped: */ getEntityTypeFilter(): Filter;
-    // private entityTypes: EntityType<Object>[];
-    // private /*not mapped: */ getEntityTypes(): EntityType<Object>[];
+    // private entityTypes: EntityType<any>[];
+    // private /*not mapped: */ getEntityTypes(): EntityType<any>[];
     // private holdingItemFilter: Filter;
     // private /*not mapped: */ getHoldingItemFilter(): Filter;
     // private holdingItems: Item[];
     // private /*not mapped: */ getHoldingItems(): Item[];
-    // private defaultEntityTypes(): EntityType<Object>[];
+    // private defaultEntityTypes(): EntityType<any>[];
     // private defaultHoldingItems(): Item[];
     test(entity: EntityHitResult): boolean;
 }

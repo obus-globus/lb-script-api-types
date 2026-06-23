@@ -61,7 +61,7 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     readonly rotY: MinMaxBounds$FloatDegrees;
     // private startPosition: number;
     readonly suggestions: (param0: SuggestionsBuilder, param1: (param0: SuggestionsBuilder) => void) => CompletableFuture<Suggestions>;
-    // private type: EntityType<Object>;
+    // private type: EntityType<any>;
     // private typeInverse: boolean;
     // private usesSelectors: boolean;
     // private worldLimited: boolean;
@@ -101,7 +101,7 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     isTag(): boolean;
     isTypeLimited(): boolean;
     isTypeLimitedInversely(): boolean;
-    limitToType(type: EntityType<Object>): void;
+    limitToType(type: EntityType<any>): void;
     parse(): EntitySelector;
     parseNameOrUUID(): void;
     parseOptions(): void;

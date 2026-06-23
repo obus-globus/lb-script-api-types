@@ -49,5 +49,5 @@ export class WouldSurvivePredicate extends Object implements BlockPredicate {
     // private offset: Vec3i;
     // private state: BlockState;
     test(level: WorldGenLevel, origin: BlockPos): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

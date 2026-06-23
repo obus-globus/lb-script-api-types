@@ -25,13 +25,13 @@ export class ResourceArgument<T extends Object | number | string | boolean> exte
     static ERROR_UNKNOWN_RESOURCE: Dynamic2CommandExceptionType;
     static getAttribute(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Attribute>;
     static getClock(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<WorldClock>;
-    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<Object, Object>>;
+    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<any, any>>;
     static getEnchantment(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Enchantment>;
-    static getEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<Object>>;
+    static getEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<any>>;
     static getMobEffect(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<MobEffect>;
     static getResource(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>): Holder$Reference<Object>;
     static getStructure(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Structure>;
-    static getSummonableEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<Object>>;
+    static getSummonableEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<any>>;
     static getTimeline(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Timeline>;
     static resource(paramcontext: CommandBuildContext, paramkey: ResourceKey<(Object | null)[]>): ResourceArgument<Object>;
     constructor(context: CommandBuildContext, registryKey: ResourceKey<T[]>)

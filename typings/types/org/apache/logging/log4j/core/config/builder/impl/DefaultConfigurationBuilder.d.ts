@@ -48,14 +48,14 @@ export class DefaultConfigurationBuilder<T extends BuiltConfiguration> extends O
     // private shutdownTimeoutMillis: number;
     // private source: ConfigurationSource;
     add(builder: AppenderComponentBuilder): ConfigurationBuilder<T>;
-    add(parent: Component, builder: ComponentBuilder<Object>): ConfigurationBuilder<T>;
+    add(parent: Component, builder: ComponentBuilder<any>): ConfigurationBuilder<T>;
     add(builder: CustomLevelComponentBuilder): ConfigurationBuilder<T>;
     add(builder: FilterComponentBuilder): ConfigurationBuilder<T>;
     add(builder: LoggerComponentBuilder): ConfigurationBuilder<T>;
     add(builder: RootLoggerComponentBuilder): ConfigurationBuilder<T>;
     add(builder: ScriptComponentBuilder): ConfigurationBuilder<T>;
     add(builder: ScriptFileComponentBuilder): ConfigurationBuilder<T>;
-    addComponent(builder: ComponentBuilder<Object>): ConfigurationBuilder<T>;
+    addComponent(builder: ComponentBuilder<any>): ConfigurationBuilder<T>;
     addProperty(key: string, value: string): ConfigurationBuilder<T>;
     addRootProperty(key: string, value: string): ConfigurationBuilder<T>;
     build(): T;

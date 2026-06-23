@@ -70,12 +70,12 @@ export class EnderDragonPart extends Entity {
     getDimensions(pose: Pose): EntityDimensions;
     getPickResult(): ItemStack;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;
-    is(type: Holder<EntityType<Object>>): boolean;
-    is(set: Holder<EntityType<Object>>[]): boolean;
-    is(type: ResourceKey<EntityType<Object>>): boolean;
-    is(tag: TagKey<EntityType<Object>>): boolean;
+    is(type: Holder<EntityType<any>>): boolean;
+    is(set: Holder<EntityType<any>>[]): boolean;
+    is(type: ResourceKey<EntityType<any>>): boolean;
+    is(tag: TagKey<EntityType<any>>): boolean;
     is(other: Entity): boolean;
-    is(rawType: EntityType<Object>): boolean;
+    is(rawType: EntityType<any>): boolean;
     isPickable(): boolean;
     readAdditionalSaveData(input: ValueInput): void;
     shouldBeSaved(): boolean;

@@ -23,7 +23,7 @@ export class EntityReference<StoredEntityType extends UniquelyIdentifyable> exte
     static of(paramuuid: UUID): EntityReference<UniquelyIdentifyable>;
     static read(paraminput: ValueInput, paramkey: string): EntityReference<UniquelyIdentifyable>;
     static readWithOldOwnerConversion(paraminput: ValueInput, paramkey: string, paramlevel: Level): EntityReference<UniquelyIdentifyable>;
-    static store(paramreference: EntityReference<Object>, paramoutput: ValueOutput, paramkey: string): void;
+    static store(paramreference: EntityReference<any>, paramoutput: ValueOutput, paramkey: string): void;
     static streamCodec(): StreamCodec<ByteBuf, EntityReference<UniquelyIdentifyable>>;
     private constructor(entity: StoredEntityType)
     private constructor(uuid: UUID)

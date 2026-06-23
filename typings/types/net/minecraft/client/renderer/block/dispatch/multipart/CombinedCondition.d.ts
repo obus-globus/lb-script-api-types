@@ -7,14 +7,14 @@ import type { Condition } from '../../../../../../../net/minecraft/client/render
 import type { StateDefinition } from '../../../../../../../net/minecraft/world/level/block/state/StateDefinition.d.ts'
 import type { StateHolder } from '../../../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 export class CombinedCondition extends Record implements Condition {
-    static CODEC: Codec<(param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean>;
-    constructor(operation: CombinedCondition$Operation, terms: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean[])
+    static CODEC: Codec<(param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean>;
+    constructor(operation: CombinedCondition$Operation, terms: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean[])
     // private operation: CombinedCondition$Operation;
-    // private terms: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean[];
+    // private terms: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean[];
     equals(o: Object | null): boolean;
     hashCode(): number;
     instantiate<S extends StateHolder<O, S>, O extends Object | number | string | boolean>(definition: StateDefinition<O, S>): (param0: S) => boolean;
     operation(): CombinedCondition$Operation;
-    terms(): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean[];
+    terms(): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean[];
     toString(): string;
 }

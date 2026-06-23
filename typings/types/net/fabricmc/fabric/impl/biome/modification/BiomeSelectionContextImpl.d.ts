@@ -20,10 +20,10 @@ export class BiomeSelectionContextImpl extends Object implements BiomeSelectionC
     getBiome(): Biome;
     getBiomeHolder(): Holder<Biome>;
     getBiomeKey(): ResourceKey<Biome>;
-    getFeatureKey(arg0: ConfiguredFeature<Object, Object>): Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
+    getFeatureKey(arg0: ConfiguredFeature<any, any>): Optional<ResourceKey<ConfiguredFeature<any, any>>>;
     getPlacedFeatureKey(arg0: PlacedFeature): Optional<ResourceKey<PlacedFeature>>;
     getStructureKey(arg0: Structure): Optional<ResourceKey<Structure>>;
-    hasFeature(arg0: ResourceKey<ConfiguredFeature<Object, Object>>): boolean;
+    hasFeature(arg0: ResourceKey<ConfiguredFeature<any, any>>): boolean;
     hasPlacedFeature(arg0: ResourceKey<PlacedFeature>): boolean;
     hasTag(arg0: TagKey<Biome>): boolean;
     validForStructure(arg0: ResourceKey<Structure>): boolean;

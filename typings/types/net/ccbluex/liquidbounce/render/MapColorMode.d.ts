@@ -1,4 +1,3 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../kotlin/Pair.d.ts'
 import type { ModeValueGroup } from '../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -8,8 +7,8 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class MapColorMode extends GenericColorMode<Pair<BlockPos, BlockState>> {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>, alpha: number)
+    constructor(parent: ModeValueGroup<any>, alpha: number)
     // private alpha: number;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     getColor(param: Pair<BlockPos, BlockState>): Color4b;
 }

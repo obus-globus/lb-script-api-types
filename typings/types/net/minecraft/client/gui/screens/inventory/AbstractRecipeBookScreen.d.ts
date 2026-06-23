@@ -27,8 +27,8 @@ export abstract class AbstractRecipeBookScreen<T extends RecipeBookMenu> extends
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    constructor(menu: T, recipeBookComponent: RecipeBookComponent<Object>, inventory: (Object | null)[], title: Component)
-    // private recipeBookComponent: RecipeBookComponent<Object>;
+    constructor(menu: T, recipeBookComponent: RecipeBookComponent<any>, inventory: (Object | null)[], title: Component)
+    // private recipeBookComponent: RecipeBookComponent<any>;
     // private widthTooNarrow: boolean;
     charTyped(event: CharacterEvent): boolean;
     containerTick(): void;

@@ -191,8 +191,8 @@ export abstract class Player extends Avatar implements ContainerUser {
     animateHurt(yaw: number): void;
     attack(entity: Entity): void;
     // private attackVisualEffects(entity: Entity, criticalAttack: boolean, sweepAttack: boolean, fullStrengthAttack: boolean, stabAttack: boolean, magicBoost: number): void;
-    awardRecipes(recipes: RecipeHolder<Object>[]): number;
-    awardRecipesByKey(recipeIds: ResourceKey<Recipe<Object>>[]): void;
+    awardRecipes(recipes: RecipeHolder<any>[]): number;
+    awardRecipesByKey(recipeIds: ResourceKey<Recipe<any>>[]): void;
     awardStat(location: Identifier): void;
     awardStat(location: Identifier, count: number): void;
     awardStat(stat: Stat<Object>): void;
@@ -375,7 +375,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     removeVehicle(): void;
     resetAttackStrengthTicker(): void;
     resetOnlyAttackStrengthTicker(): void;
-    resetRecipes(recipe: RecipeHolder<Object>[]): number;
+    resetRecipes(recipe: RecipeHolder<any>[]): number;
     resetStat(stat: Stat<Object>): void;
     rideTick(): void;
     sendMerchantOffers(containerId: number, offers: (Object | null)[], merchantLevel: number, merchantXp: number, showProgressBar: boolean, canRestock: boolean): void;
@@ -400,7 +400,7 @@ export abstract class Player extends Avatar implements ContainerUser {
     tickRegeneration(): void;
     // private touch(entity: Entity): void;
     travel(input: Vec3): void;
-    triggerRecipeCrafted(recipe: RecipeHolder<Object>, itemStacks: ItemStack[]): void;
+    triggerRecipeCrafted(recipe: RecipeHolder<any>, itemStacks: ItemStack[]): void;
     tryToStartFallFlying(): boolean;
     // private turtleHelmetTick(): void;
     updateIsUnderwater(): boolean;

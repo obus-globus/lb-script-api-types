@@ -10,22 +10,22 @@ import type { PropertyDispatch$C5 } from '../../../../../../net/minecraft/client
 import type { VariantMutator } from '../../../../../../net/minecraft/client/renderer/block/dispatch/VariantMutator.d.ts'
 import type { Property } from '../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class PropertyDispatch$C4<V extends Object | number | string | boolean, T1 extends Comparable<T1>, T2 extends Comparable<T2>, T3 extends Comparable<T3>, T4 extends Comparable<T4>> extends PropertyDispatch<V> {
-    static initial(paramproperty1: Property<Object>, paramproperty2: Property<Object>, paramproperty3: Property<Object>, paramproperty4: Property<Object>, paramproperty5: Property<Object>): PropertyDispatch$C5<MultiVariant, Object, Object, Object, Object, Object>;
-    static initial(paramproperty1: Property<Object>, paramproperty2: Property<Object>, paramproperty3: Property<Object>, paramproperty4: Property<Object>): PropertyDispatch$C4<MultiVariant, Object, Object, Object, Object>;
-    static initial(paramproperty1: Property<Object>, paramproperty2: Property<Object>, paramproperty3: Property<Object>): PropertyDispatch$C3<MultiVariant, Object, Object, Object>;
-    static initial(paramproperty1: Property<Object>, paramproperty2: Property<Object>): PropertyDispatch$C2<MultiVariant, Object, Object>;
-    static initial(paramproperty1: Property<Object>): PropertyDispatch$C1<MultiVariant, Object>;
-    static modify(paramproperty1: Property<Object>, paramproperty2: Property<Object>, paramproperty3: Property<Object>, paramproperty4: Property<Object>, paramproperty5: Property<Object>): PropertyDispatch$C5<(param0: Object | null) => Object | null, Object, Object, Object, Object, Object>;
-    static modify(paramproperty1: Property<Object>, paramproperty2: Property<Object>, paramproperty3: Property<Object>, paramproperty4: Property<Object>): PropertyDispatch$C4<(param0: Object | null) => Object | null, Object, Object, Object, Object>;
-    static modify(paramproperty1: Property<Object>, paramproperty2: Property<Object>, paramproperty3: Property<Object>): PropertyDispatch$C3<(param0: Object | null) => Object | null, Object, Object, Object>;
-    static modify(paramproperty1: Property<Object>, paramproperty2: Property<Object>): PropertyDispatch$C2<(param0: Object | null) => Object | null, Object, Object>;
-    static modify(paramproperty1: Property<Object>): PropertyDispatch$C1<(param0: Object | null) => Object | null, Object>;
+    static initial(paramproperty1: Property<any>, paramproperty2: Property<any>, paramproperty3: Property<any>, paramproperty4: Property<any>, paramproperty5: Property<any>): PropertyDispatch$C5<MultiVariant, any, any, any, any, any>;
+    static initial(paramproperty1: Property<any>, paramproperty2: Property<any>, paramproperty3: Property<any>, paramproperty4: Property<any>): PropertyDispatch$C4<MultiVariant, any, any, any, any>;
+    static initial(paramproperty1: Property<any>, paramproperty2: Property<any>, paramproperty3: Property<any>): PropertyDispatch$C3<MultiVariant, any, any, any>;
+    static initial(paramproperty1: Property<any>, paramproperty2: Property<any>): PropertyDispatch$C2<MultiVariant, any, any>;
+    static initial(paramproperty1: Property<any>): PropertyDispatch$C1<MultiVariant, any>;
+    static modify(paramproperty1: Property<any>, paramproperty2: Property<any>, paramproperty3: Property<any>, paramproperty4: Property<any>, paramproperty5: Property<any>): PropertyDispatch$C5<(param0: Object | null) => Object | null, any, any, any, any, any>;
+    static modify(paramproperty1: Property<any>, paramproperty2: Property<any>, paramproperty3: Property<any>, paramproperty4: Property<any>): PropertyDispatch$C4<(param0: Object | null) => Object | null, any, any, any, any>;
+    static modify(paramproperty1: Property<any>, paramproperty2: Property<any>, paramproperty3: Property<any>): PropertyDispatch$C3<(param0: Object | null) => Object | null, any, any, any>;
+    static modify(paramproperty1: Property<any>, paramproperty2: Property<any>): PropertyDispatch$C2<(param0: Object | null) => Object | null, any, any>;
+    static modify(paramproperty1: Property<any>): PropertyDispatch$C1<(param0: Object | null) => Object | null, any>;
     private constructor(property1: Property<T1>, property2: Property<T2>, property3: Property<T3>, property4: Property<T4>)
     // private property1: Property<T1>;
     // private property2: Property<T2>;
     // private property3: Property<T3>;
     // private property4: Property<T4>;
     generate(generator: Function4<T1, T2, T3, T4, V>): PropertyDispatch<V>;
-    getDefinedProperties(): Property<Object>[];
+    getDefinedProperties(): Property<any>[];
     select(value1: T1, value2: T2, value3: T3, value4: T4, variants: V): PropertyDispatch$C4<V, T1, T2, T3, T4>;
 }

@@ -57,7 +57,7 @@ import type { Unit } from '../../../../../../com/viaversion/viaversion/util/Unit
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends JsonNBTComponentRewriter<C> {
-    constructor(arg0: Protocol<C, Object, Object, Object>, arg1: StructuredDataType)
+    constructor(arg0: Protocol<C, any, any, any>, arg1: StructuredDataType)
     // private converters: Map<StructuredDataKey<Object>, ComponentRewriter1_20_5$ConverterPair<Object>>;
     // private structuredDataType: StructuredDataType;
     asBoolean(arg0: Tag): boolean;

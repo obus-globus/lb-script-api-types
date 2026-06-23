@@ -1,5 +1,4 @@
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SleepingBlockEntity } from '../../../../../../net/caffeinemc/mods/lithium/common/block/entity/SleepingBlockEntity.d.ts'
 import type { WrappedBlockEntityTickInvokerAccessor } from '../../../../../../net/caffeinemc/mods/lithium/mixin/world/block_entity_ticking/sleeping/WrappedBlockEntityTickInvokerAccessor.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -27,7 +26,7 @@ export class SculkSensorBlockEntity extends BlockEntity implements SleepingBlock
     static RESONANCE_EVENTS: ResourceKey<GameEvent>[];
     static SLEEPING_BLOCK_ENTITY_TICKER: TickingBlockEntity;
     static VIBRATION_FREQUENCY_FOR_EVENT: (param0: ResourceKey<GameEvent>) => number;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getGameEventFrequency(paramevent: Holder<GameEvent>): number;
     static getGameEventFrequency(paramevent: ResourceKey<GameEvent>): number;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
@@ -36,7 +35,7 @@ export class SculkSensorBlockEntity extends BlockEntity implements SleepingBlock
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
     constructor(worldPosition: BlockPos, blockState: BlockState)
-    constructor(type: BlockEntityType<Object>, worldPosition: BlockPos, blockState: BlockState)
+    constructor(type: BlockEntityType<any>, worldPosition: BlockPos, blockState: BlockState)
     readonly lastVibrationFrequency: number;
     // private sleepingTicker: TickingBlockEntity;
     // private tickWrapper: WrappedBlockEntityTickInvokerAccessor;

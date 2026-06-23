@@ -22,5 +22,5 @@ export class SingletonPredictionContext extends PredictionContext {
     getReturnState(arg0: number): number;
     size(): number;
     toString(): string;
-    toString(arg0: Recognizer<Object, Object>): string;
+    toString(arg0: Recognizer<Object, any>): string;
 }

@@ -7,6 +7,6 @@ export interface GenericDeclaration extends AnnotatedElement, Object{
     getAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
     getDeclaredAnnotation<T extends Annotation>(arg0: Class<T>): T;
     getDeclaredAnnotationsByType<T extends Annotation>(arg0: Class<T>): T[];
-    getTypeParameters(): TypeVariable<Object>[];
+    getTypeParameters(): TypeVariable<any>[];
     isAnnotationPresent(arg0: Class<Annotation>): boolean;
 }

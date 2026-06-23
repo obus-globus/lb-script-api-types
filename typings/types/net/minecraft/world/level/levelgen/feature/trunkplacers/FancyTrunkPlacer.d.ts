@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction$Axis } from '../../../../../../../net/minecraft/core/Direction$Axis.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -23,5 +22,5 @@ export class FancyTrunkPlacer extends TrunkPlacer {
     // private makeLimb(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, startPos: BlockPos, endPos: BlockPos, doPlace: boolean, config: TreeConfiguration): boolean;
     placeTrunk(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, treeHeight: number, origin: BlockPos, config: TreeConfiguration): FoliagePlacer$FoliageAttachment[];
     // private trimBranches(height: number, localY: number): boolean;
-    type(): TrunkPlacerType<Object>;
+    type(): TrunkPlacerType<any>;
 }

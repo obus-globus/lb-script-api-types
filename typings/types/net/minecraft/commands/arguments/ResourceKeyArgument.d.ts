@@ -16,8 +16,8 @@ import type { Structure } from '../../../../net/minecraft/world/level/levelgen/s
 import type { StructureTemplatePool } from '../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool.d.ts'
 export class ResourceKeyArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<ResourceKey<T>> {
     static getAdvancement(paramcontext: CommandContext<CommandSourceStack>, paramname: string): AdvancementHolder;
-    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<Object, Object>>;
-    static getRecipe(paramcontext: CommandContext<CommandSourceStack>, paramname: string): RecipeHolder<Object>;
+    static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<any, any>>;
+    static getRecipe(paramcontext: CommandContext<CommandSourceStack>, paramname: string): RecipeHolder<any>;
     static getRegistryKey(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>, paramexceptionType: DynamicCommandExceptionType): ResourceKey<Object>;
     static getStructure(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Structure>;
     static getStructureTemplatePool(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<StructureTemplatePool>;

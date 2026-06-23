@@ -32,13 +32,13 @@ export class DefaultJwtBuilder extends Object implements JwtBuilder {
     // private encoder: Encoder<OutputStream, OutputStream>;
     // private headerBuilder: { [key: string]: any };
     // private key: Key;
-    // private keyAlg: KeyAlgorithm<Key, Object>;
+    // private keyAlg: KeyAlgorithm<Key, any>;
     // private keyAlgFunction: Function<KeyRequest<Key>, KeyResult>;
     // private payload: Payload;
     // private provider: { [key: string]: any };
     // private secureRandom: SecureRandom;
     // private serializer: Serializer<{ [key: string]: Object | null }>;
-    // private sigAlg: SecureDigestAlgorithm<Key, Object>;
+    // private sigAlg: SecureDigestAlgorithm<Key, any>;
     // private signFunction: Function<SecureRequest<InputStream, Key>, number[]>;
     addClaims(arg0: { [key: string]: Object | null }): JwtBuilder;
     // private assertPayloadEncoding(arg0: string): void;
@@ -63,7 +63,7 @@ export class DefaultJwtBuilder extends Object implements JwtBuilder {
     encodePayload(arg0: boolean): JwtBuilder;
     // private encrypt(arg0: Payload, arg1: Key, arg2: { [key: string]: any }): string;
     // private encrypt(arg0: AeadRequest, arg1: AeadResult): void;
-    encryptWith<K extends Key>(arg0: K, arg1: KeyAlgorithm<K, Object>, arg2: AeadAlgorithm): JwtBuilder;
+    encryptWith<K extends Key>(arg0: K, arg1: KeyAlgorithm<K, any>, arg2: AeadAlgorithm): JwtBuilder;
     encryptWith(arg0: SecretKey, arg1: AeadAlgorithm): JwtBuilder;
     expiration(arg0: Date): JwtBuilder;
     header(): JwtBuilder$BuilderHeader;
@@ -88,7 +88,7 @@ export class DefaultJwtBuilder extends Object implements JwtBuilder {
     setPayload(arg0: string): JwtBuilder;
     setSubject(arg0: string): JwtBuilder;
     // private sign(arg0: Payload, arg1: Key, arg2: { [key: string]: any }): string;
-    signWith<K extends Key>(arg0: K, arg1: SecureDigestAlgorithm<K, Object>): JwtBuilder;
+    signWith<K extends Key>(arg0: K, arg1: SecureDigestAlgorithm<K, any>): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: Key): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: number[]): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: string): JwtBuilder;

@@ -1,6 +1,5 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
@@ -16,6 +15,6 @@ export class BlockRotProcessor extends StructureProcessor {
     constructor(tag: Holder<Block>[], integrity: number)
     // private integrity: number;
     // private rottableBlocks: Optional<Holder<Block>[]>;
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
     processBlock(level: LevelReader, targetPosition: BlockPos, referencePos: BlockPos, originalBlockInfo: StructureTemplate$StructureBlockInfo, processedBlockInfo: StructureTemplate$StructureBlockInfo, settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo;
 }

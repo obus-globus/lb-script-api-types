@@ -3,7 +3,7 @@ import type { Object2IntOpenHashMap$MapSpliterator } from '../../../../../../com
 import type { ObjectSpliterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class Object2IntOpenHashMap$EntrySpliterator extends Object2IntOpenHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Object2IntMap$Entry<K>> {
+export class Object2IntOpenHashMap$EntrySpliterator extends Object2IntOpenHashMap$MapSpliterator<Object, any> implements ObjectSpliterator<Object2IntMap$Entry<K>> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

@@ -7,9 +7,9 @@ import type { RegistryDataRewriter } from '../../../../../../com/viaversion/viav
 import type { Key } from '../../../../../../com/viaversion/viaversion/util/Key.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RegistryAccessImpl extends Object implements CodecContext$RegistryAccess {
-    static of(paramarg0: Protocol<Object, Object, Object, Object>): CodecContext$RegistryAccess;
+    static of(paramarg0: Protocol<any, any, any, any>): CodecContext$RegistryAccess;
     private constructor(arg0: MappingData, arg1: RegistryDataRewriter, arg2: boolean)
-    constructor(arg0: Protocol<Object, Object, Object, Object>)
+    constructor(arg0: Protocol<any, any, any, any>)
     // private mapped: boolean;
     // private mappingData: MappingData;
     // private registryDataRewriter: RegistryDataRewriter;

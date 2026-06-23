@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/SpeedBHopBase.d.ts'
@@ -13,5 +12,5 @@ import type { SpeedIntave14$Companion } from '../../../../../../../../../../net/
 export class SpeedIntave14 extends SpeedBHopBase {
     static Companion: Tagged$Companion;
     static Companion: SpeedIntave14$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
 }

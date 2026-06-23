@@ -16,7 +16,7 @@ export class LakeFeature$Configuration extends Record implements FeatureConfigur
     barrier(): BlockStateProvider;
     equals(o: Object | null): boolean;
     fluid(): BlockStateProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     toString(): string;
 }

@@ -25,12 +25,12 @@ export class ProtocolInfoBuilder<T extends PacketListener, B extends ByteBuf, C 
     static serverboundProtocol(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<ServerboundPacketListener, ByteBuf, Unit>) => void): SimpleUnboundProtocol<ServerboundPacketListener, ByteBuf>;
     constructor(protocol: ConnectionProtocol, flow: PacketFlow)
     // private bundlerInfo: BundlerInfo;
-    // private codecs: ProtocolInfoBuilder$CodecEntry<T, Object, B, C>[];
+    // private codecs: ProtocolInfoBuilder$CodecEntry<T, any, B, C>[];
     // private flow: PacketFlow;
     // private protocol: ConnectionProtocol;
     addPacket<P extends Packet<T>>(type: PacketType<P>, serializer: StreamCodec<B, P>): ProtocolInfoBuilder<T, B, C>;
     addPacket<P extends Packet<T>>(type: PacketType<P>, serializer: StreamCodec<B, P>, modifier: (param0: StreamCodec<Object, P>, param1: C) => StreamCodec<Object, P>): ProtocolInfoBuilder<T, B, C>;
-    // private buildPacketCodec(contextWrapper: (param0: ByteBuf) => B, codecs: ProtocolInfoBuilder$CodecEntry<T, Object, B, C>[], context: C): StreamCodec<ByteBuf, Packet<T>>;
+    // private buildPacketCodec(contextWrapper: (param0: ByteBuf) => B, codecs: ProtocolInfoBuilder$CodecEntry<T, any, B, C>[], context: C): StreamCodec<ByteBuf, Packet<T>>;
     buildUnbound(): UnboundProtocol<T, B, C>;
     buildUnbound(context: C): SimpleUnboundProtocol<T, B>;
     withBundlePacket<P extends BundlePacket<T>, D extends BundleDelimiterPacket<T>>(bundlerPacket: PacketType<P>, constructor: (param0: Packet<T>[]) => P, delimiterPacket: D): ProtocolInfoBuilder<T, B, C>;

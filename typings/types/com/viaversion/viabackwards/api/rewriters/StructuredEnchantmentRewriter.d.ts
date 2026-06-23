@@ -9,8 +9,8 @@ import type { IdRewriteFunction } from '../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class StructuredEnchantmentRewriter extends Object {
-    constructor(arg0: BackwardsStructuredItemRewriter<Object, Object, Object>)
-    // private itemRewriter: BackwardsStructuredItemRewriter<Object, Object, Object>;
+    constructor(arg0: BackwardsStructuredItemRewriter<any, any, any>)
+    // private itemRewriter: BackwardsStructuredItemRewriter<any, any, any>;
     readonly rewriteIds: boolean;
     // private asTag(arg0: Enchantments): Map$Entry<string, Tag>[][];
     // private customData(arg0: StructuredDataContainer): Map$Entry<string, Tag>[];

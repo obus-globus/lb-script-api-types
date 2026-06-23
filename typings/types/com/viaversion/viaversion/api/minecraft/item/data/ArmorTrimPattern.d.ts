@@ -21,6 +21,6 @@ export class ArmorTrimPattern extends Record implements Copyable, Rewritable {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     itemId(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): ArmorTrimPattern;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): ArmorTrimPattern;
     toString(): string;
 }

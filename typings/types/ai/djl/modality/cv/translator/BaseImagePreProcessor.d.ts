@@ -3,6 +3,6 @@ import type { BaseImageTranslator$BaseBuilder } from '../../../../../ai/djl/moda
 import type { TranslatorContext } from '../../../../../ai/djl/translate/TranslatorContext.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BaseImagePreProcessor extends BaseImageTranslator<void> {
-    constructor(arg0: BaseImageTranslator$BaseBuilder<Object>)
+    constructor(arg0: BaseImageTranslator$BaseBuilder<any>)
     processOutput(arg0: TranslatorContext, arg1: (Object | null)[]): void;
 }

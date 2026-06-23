@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -11,7 +10,7 @@ import type { Vec2 } from '../../../../../../../../../net/minecraft/world/phys/V
  */
 export class SigmoidAngleSmooth extends FactorAngleSmooth {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private horizontalTurnSpeed: ClosedFloatingPointRange<number>;
     // private /*not mapped: */ getHorizontalTurnSpeed(): ClosedFloatingPointRange<number>;
     // private midpoint: number;

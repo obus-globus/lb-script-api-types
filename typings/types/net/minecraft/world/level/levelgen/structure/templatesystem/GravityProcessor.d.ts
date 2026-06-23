@@ -1,5 +1,4 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { Heightmap$Types } from '../../../../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
@@ -12,6 +11,6 @@ export class GravityProcessor extends StructureProcessor {
     constructor(heightmap: Heightmap$Types, offset: number)
     // private heightmap: Heightmap$Types;
     // private offset: number;
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
     processBlock(level: LevelReader, targetPosition: BlockPos, referencePos: BlockPos, originalBlockInfo: StructureTemplate$StructureBlockInfo, processedBlockInfo: StructureTemplate$StructureBlockInfo, settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo;
 }

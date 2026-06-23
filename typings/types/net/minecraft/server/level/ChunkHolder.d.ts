@@ -51,7 +51,7 @@ export class ChunkHolder extends GenerationChunkHolder implements ChunkHolderExt
     addSaveDependency(sync: CompletableFuture<Object>): void;
     addSendDependency(sync: CompletableFuture<Object>): void;
     blockChanged(pos: BlockPos): boolean;
-    // private broadcast(players: ServerPlayer[], packet: Packet<Object>): void;
+    // private broadcast(players: ServerPlayer[], packet: Packet<any>): void;
     // private broadcastBlockEntity(players: ServerPlayer[], level: Level, blockPos: BlockPos): void;
     // private broadcastBlockEntityIfNeeded(players: ServerPlayer[], level: Level, pos: BlockPos, state: BlockState): void;
     broadcastChanges(chunk: LevelChunk): void;

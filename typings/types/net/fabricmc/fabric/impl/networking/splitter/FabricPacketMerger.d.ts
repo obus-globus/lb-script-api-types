@@ -6,11 +6,11 @@ import type { VanillaPacketTypes } from '../../../../../../net/fabricmc/fabric/i
 import type { FabricPacketMerger$Merger } from '../../../../../../net/fabricmc/fabric/impl/networking/splitter/FabricPacketMerger$Merger.d.ts'
 import type { PacketDecoder } from '../../../../../../net/minecraft/network/PacketDecoder.d.ts'
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
-export class FabricPacketMerger extends MessageToMessageDecoder<Packet<Object>> {
-    constructor(arg0: PacketDecoder<Object>, arg1: PayloadTypeRegistryImpl<Object>, arg2: VanillaPacketTypes)
-    // private packetDecoder: PacketDecoder<Object>;
+export class FabricPacketMerger extends MessageToMessageDecoder<Packet<any>> {
+    constructor(arg0: PacketDecoder<any>, arg1: PayloadTypeRegistryImpl<any>, arg2: VanillaPacketTypes)
+    // private packetDecoder: PacketDecoder<any>;
     // private packetMerger: FabricPacketMerger$Merger;
-    // private payloadTypeRegistry: PayloadTypeRegistryImpl<Object>;
+    // private payloadTypeRegistry: PayloadTypeRegistryImpl<any>;
     // private vanillaPacketTypes: VanillaPacketTypes;
-    decode(arg0: ChannelHandlerContext, arg1: Packet<Object>, arg2: Object[]): void;
+    decode(arg0: ChannelHandlerContext, arg1: Packet<any>, arg2: Object[]): void;
 }

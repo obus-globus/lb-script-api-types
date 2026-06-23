@@ -24,7 +24,7 @@ export class BlockPredicate extends Record implements Copyable, Rewritable {
     hashCode(): number;
     holderSet(): HolderSet;
     propertyMatchers(): StatePropertyMatcher[];
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): BlockPredicate;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): BlockPredicate;
     tag(): Map$Entry<string, Tag>[];
     toString(): string;
 }

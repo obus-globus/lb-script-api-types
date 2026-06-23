@@ -11,7 +11,7 @@ import type { Format } from '../../../../java/text/Format.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class LocalizedNumberFormatter extends NumberFormatterSettings<LocalizedNumberFormatter> {
-    constructor(arg0: NumberFormatterSettings<Object>, arg1: number, arg2: Object)
+    constructor(arg0: NumberFormatterSettings<any>, arg1: number, arg2: Object)
     // private callCountInternal: number;
     // private compiled: NumberFormatterImpl;
     // private savedWithUnit: LocalizedNumberFormatter;

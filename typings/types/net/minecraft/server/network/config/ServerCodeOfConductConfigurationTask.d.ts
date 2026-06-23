@@ -8,7 +8,7 @@ export class ServerCodeOfConductConfigurationTask extends Object implements Conf
     static TYPE: ConfigurationTask$Type;
     constructor(codeOfConduct: () => string)
     // private codeOfConduct: () => string;
-    start(connection: (param0: Packet<Object>) => void): void;
+    start(connection: (param0: Packet<any>) => void): void;
     tick(): boolean;
     type(): ConfigurationTask$Type;
 }

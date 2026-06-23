@@ -6,11 +6,11 @@ import type { CoroutineContext$Key } from '../../../kotlin/coroutines/CoroutineC
 import type { ThreadContextElement } from '../../../kotlinx/coroutines/ThreadContextElement.d.ts'
 export class ThreadLocalElement<T extends Object | number | string | boolean> extends Object implements ThreadContextElement<T> {
     constructor(value: T, threadLocal: ThreadLocal<T>)
-    readonly key: CoroutineContext$Key<Object>;
+    readonly key: CoroutineContext$Key<any>;
     // private threadLocal: ThreadLocal<T>;
     // private value: T;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
-    minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
     restoreThreadContext(context: CoroutineContext, oldState: T): void;
     toString(): string;
     updateThreadContext(context: CoroutineContext): T;

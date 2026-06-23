@@ -14,7 +14,6 @@ import type { IntervalSet } from '../../../../../../com/llamalad7/mixinextras/li
 import type { ErrorNode } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/tree/ErrorNode.d.ts'
 import type { ParseTreeListener } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/tree/ParseTreeListener.d.ts'
 import type { TerminalNode } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/tree/TerminalNode.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class Parser extends Recognizer<Token, ParserATNSimulator> {
     constructor(arg0: TokenStream)
     // private _buildParseTrees: boolean;
@@ -42,7 +41,7 @@ export abstract class Parser extends Recognizer<Token, ParserATNSimulator> {
     getPrecedence(): number;
     getRuleInvocationStack(): string[];
     getRuleInvocationStack(arg0: RuleContext): string[];
-    getTokenFactory(): TokenFactory<Object>;
+    getTokenFactory(): TokenFactory<any>;
     getTokenStream(): TokenStream;
     match(arg0: number): Token;
     notifyErrorListeners(arg0: Token, arg1: string, arg2: RecognitionException): void;

@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockStateProvider } from '../../../../../../../net/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider.d.ts'
 import type { TreeDecorator } from '../../../../../../../net/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator.d.ts'
@@ -14,5 +13,5 @@ export class AlterGroundDecorator extends TreeDecorator {
     place(context: TreeDecorator$Context): void;
     // private placeBlockAt(context: TreeDecorator$Context, pos: BlockPos): void;
     // private placeCircle(context: TreeDecorator$Context, pos: BlockPos): void;
-    type(): TreeDecoratorType<Object>;
+    type(): TreeDecoratorType<any>;
 }

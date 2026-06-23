@@ -17,6 +17,6 @@ export class SmithingTrimRecipeBuilder extends Object {
     // private category: RecipeCategory;
     // private pattern: Holder<TrimPattern>;
     // private template: Ingredient;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlocks(name: string, criterion: Criterion<Object>): SmithingTrimRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlocks(name: string, criterion: Criterion<any>): SmithingTrimRecipeBuilder;
 }

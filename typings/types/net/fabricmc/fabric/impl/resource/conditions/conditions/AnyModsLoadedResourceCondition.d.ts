@@ -13,7 +13,7 @@ export class AnyModsLoadedResourceCondition extends Record implements ResourceCo
     constructor(modIds: string[])
     // private modIds: string[];
     equals(arg0: Object | null): boolean;
-    getType(): ResourceConditionType<Object>;
+    getType(): ResourceConditionType<any>;
     hashCode(): number;
     modIds(): string[];
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;

@@ -3,5 +3,5 @@ import type { EntityRenderer } from '../../../../../net/minecraft/client/rendere
 import type { EntityRendererProvider$Context } from '../../../../../net/minecraft/client/renderer/entity/EntityRendererProvider$Context.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 export interface EntityRendererProvider<T extends Entity> extends Object{
-    create(context: EntityRendererProvider$Context): EntityRenderer<T, Object>;
+    create(context: EntityRendererProvider$Context): EntityRenderer<T, any>;
 }

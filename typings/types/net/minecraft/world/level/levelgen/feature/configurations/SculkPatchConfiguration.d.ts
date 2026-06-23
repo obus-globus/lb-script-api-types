@@ -22,7 +22,7 @@ export class SculkPatchConfiguration extends Record implements FeatureConfigurat
     chargeCount(): number;
     equals(o: Object | null): boolean;
     extraRareGrowths(): IntProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     growthRounds(): number;
     hashCode(): number;
     spreadAttempts(): number;

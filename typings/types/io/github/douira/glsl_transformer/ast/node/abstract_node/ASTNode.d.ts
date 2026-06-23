@@ -20,7 +20,7 @@ export abstract class ASTNode extends Object {
     readonly root: Root;
     // private selfReplacer: (param0: ASTNode) => void;
     sourceLocation: SourceLocation;
-    // private template: Template<Object>;
+    // private template: Template<any>;
     accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
     // private changeRootRecursive(arg0: Root): void;
     clone(): ASTNode;
@@ -48,7 +48,7 @@ export abstract class ASTNode extends Object {
     hasAncestor(arg0: (param0: ASTNode) => boolean): boolean;
     hasAncestor(arg0: number, arg1: number, arg2: (param0: ASTNode) => boolean): boolean;
     hasParent(): boolean;
-    markTemplate(arg0: Template<Object>): void;
+    markTemplate(arg0: Template<any>): void;
     // private register(arg0: boolean): void;
     replaceBy(arg0: ASTNode): boolean;
     replaceByAndDelete(arg0: ASTNode): boolean;

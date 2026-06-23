@@ -9,5 +9,5 @@ export class NoneFeatureConfiguration extends Object implements FeatureConfigura
     static INSTANCE: NoneFeatureConfiguration;
     static NONE: NoneFeatureConfiguration;
     constructor()
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

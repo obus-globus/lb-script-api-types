@@ -16,15 +16,15 @@ export class TypeAliasExpander extends Object {
     // private shouldCheckBounds: boolean;
     // private checkRepeatedAnnotations(arg0: AnnotationDescriptor[], arg1: AnnotationDescriptor[]): void;
     // private checkTypeArgumentsSubstitution(arg0: KotlinType, arg1: KotlinType): void;
-    // private combineAttributes(arg0: DynamicType, arg1: TypeAttribute<Object>[]): DynamicType;
-    // private combineAttributes(arg0: SimpleType, arg1: TypeAttribute<Object>[]): SimpleType;
+    // private combineAttributes(arg0: DynamicType, arg1: TypeAttribute<any>[]): DynamicType;
+    // private combineAttributes(arg0: SimpleType, arg1: TypeAttribute<any>[]): SimpleType;
     // private combineNullability(arg0: SimpleType, arg1: KotlinType): SimpleType;
     // private combineNullabilityAndAnnotations(arg0: SimpleType, arg1: KotlinType): SimpleType;
-    // private createAbbreviation(arg0: TypeAliasExpansion, arg1: TypeAttribute<Object>[], arg2: boolean): SimpleType;
-    // private createdCombinedAttributes(arg0: KotlinType, arg1: TypeAttribute<Object>[]): TypeAttribute<Object>[];
-    expand(arg0: TypeAliasExpansion, arg1: TypeAttribute<Object>[]): SimpleType;
+    // private createAbbreviation(arg0: TypeAliasExpansion, arg1: TypeAttribute<any>[], arg2: boolean): SimpleType;
+    // private createdCombinedAttributes(arg0: KotlinType, arg1: TypeAttribute<any>[]): TypeAttribute<any>[];
+    expand(arg0: TypeAliasExpansion, arg1: TypeAttribute<any>[]): SimpleType;
     // private expandNonArgumentTypeProjection(arg0: TypeProjection, arg1: TypeAliasExpansion, arg2: number): TypeProjection;
-    // private expandRecursively(arg0: TypeAliasExpansion, arg1: TypeAttribute<Object>[], arg2: boolean, arg3: number, arg4: boolean): SimpleType;
+    // private expandRecursively(arg0: TypeAliasExpansion, arg1: TypeAttribute<any>[], arg2: boolean, arg3: number, arg4: boolean): SimpleType;
     // private expandTypeProjection(arg0: TypeProjection, arg1: TypeAliasExpansion, arg2: TypeParameterDescriptor, arg3: number): TypeProjection;
     // private substituteArguments(arg0: SimpleType, arg1: TypeAliasExpansion, arg2: number): SimpleType;
 }

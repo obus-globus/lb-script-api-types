@@ -5,5 +5,5 @@ import type { DialogBodyHandler } from '../../../../../../../net/minecraft/clien
 import type { ItemBody } from '../../../../../../../net/minecraft/server/dialog/body/ItemBody.d.ts'
 export class DialogBodyHandlers$ItemHandler extends Object implements DialogBodyHandler<ItemBody> {
     private constructor()
-    createControls(parent: DialogScreen<Object>, item: ItemBody): LayoutElement;
+    createControls(parent: DialogScreen<any>, item: ItemBody): LayoutElement;
 }

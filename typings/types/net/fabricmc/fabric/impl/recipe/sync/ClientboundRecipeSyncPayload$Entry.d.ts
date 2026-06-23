@@ -6,13 +6,13 @@ import type { RecipeHolder } from '../../../../../../net/minecraft/world/item/cr
 import type { RecipeSerializer } from '../../../../../../net/minecraft/world/item/crafting/RecipeSerializer.d.ts'
 export class ClientboundRecipeSyncPayload$Entry extends Record {
     static CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundRecipeSyncPayload$Entry>;
-    constructor(serializer: RecipeSerializer<Object>, recipes: RecipeHolder<Object>[])
-    // private recipes: RecipeHolder<Object>[];
-    // private serializer: RecipeSerializer<Object>;
+    constructor(serializer: RecipeSerializer<any>, recipes: RecipeHolder<any>[])
+    // private recipes: RecipeHolder<any>[];
+    // private serializer: RecipeSerializer<any>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    recipes(): RecipeHolder<Object>[];
-    serializer(): RecipeSerializer<Object>;
+    recipes(): RecipeHolder<any>[];
+    serializer(): RecipeSerializer<any>;
     toString(): string;
     // private write(arg0: RegistryFriendlyByteBuf): void;
 }

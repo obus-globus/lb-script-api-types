@@ -14,27 +14,27 @@ export class InventoryAction$Click extends Record implements InventoryAction {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt:107}
      */
-    static performMergeStack(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click[];
-    static performPickup(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
-    static performPickupAll(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
-    static performQuickMove(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
-    static performSwap(screen: AbstractContainerScreen<Object>, from: ItemSlot, to: HotbarItemSlot): InventoryAction$Click;
-    static performThrow(screen: AbstractContainerScreen<Object>, slot: ItemSlot): InventoryAction$Click;
-    constructor(screen: AbstractContainerScreen<Object> | null, slot: ItemSlot, button: number, actionType: ContainerInput)
+    static performMergeStack(screen: AbstractContainerScreen<any>, slot: ItemSlot): InventoryAction$Click[];
+    static performPickup(screen: AbstractContainerScreen<any>, slot: ItemSlot): InventoryAction$Click;
+    static performPickupAll(screen: AbstractContainerScreen<any>, slot: ItemSlot): InventoryAction$Click;
+    static performQuickMove(screen: AbstractContainerScreen<any>, slot: ItemSlot): InventoryAction$Click;
+    static performSwap(screen: AbstractContainerScreen<any>, from: ItemSlot, to: HotbarItemSlot): InventoryAction$Click;
+    static performThrow(screen: AbstractContainerScreen<any>, slot: ItemSlot): InventoryAction$Click;
+    constructor(screen: AbstractContainerScreen<any> | null, slot: ItemSlot, button: number, actionType: ContainerInput)
     // private actionType: ContainerInput;
     /*not mapped: */ actionType(): ContainerInput;
     // private button: number;
     /*not mapped: */ button(): number;
-    // private screen: AbstractContainerScreen<Object> | null;
-    /*not mapped: */ screen(): AbstractContainerScreen<Object> | null;
+    // private screen: AbstractContainerScreen<any> | null;
+    /*not mapped: */ screen(): AbstractContainerScreen<any> | null;
     // private slot: ItemSlot;
     /*not mapped: */ slot(): ItemSlot;
     canPerformAction(inventoryConstraints: InventoryConstraints): boolean;
-    component1(): AbstractContainerScreen<Object> | null;
+    component1(): AbstractContainerScreen<any> | null;
     component2(): ItemSlot;
     component3(): number;
     component4(): ContainerInput;
-    copy(screen: AbstractContainerScreen<Object> | null, slot: ItemSlot, button: number, actionType: ContainerInput): InventoryAction$Click;
+    copy(screen: AbstractContainerScreen<any> | null, slot: ItemSlot, button: number, actionType: ContainerInput): InventoryAction$Click;
     equals(other: Object | null): boolean;
     hashCode(): number;
     performAction(): boolean;

@@ -6,7 +6,7 @@ import type { PacketDecoderAccessor } from '../../../../../../net/fabricmc/fabri
 import type { PacketDecoder } from '../../../../../../net/minecraft/network/PacketDecoder.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class FabricPacketMerger$Merger extends Object {
-    constructor(arg0: PacketDecoder<Object>, arg1: Identifier, arg2: number)
+    constructor(arg0: PacketDecoder<any>, arg1: Identifier, arg2: number)
     // private byteBuf: ByteBuf;
     // private finalSize: number;
     // private packetDecoder: PacketDecoderAccessor;

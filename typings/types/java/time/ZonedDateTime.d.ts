@@ -27,7 +27,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 export class ZonedDateTime extends Object implements Serializable, ChronoZonedDateTime<LocalDate>, Temporal {
     static from(paramarg0: TemporalAccessor): ZonedDateTime;
-    static from(paramarg0: TemporalAccessor): ChronoZonedDateTime<Object>;
+    static from(paramarg0: TemporalAccessor): ChronoZonedDateTime<any>;
     static now(): ZonedDateTime;
     static now(paramarg0: Clock): ZonedDateTime;
     static now(paramarg0: ZoneId): ZonedDateTime;
@@ -45,7 +45,7 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     // private dateTime: LocalDateTime;
     readonly offset: ZoneOffset;
     readonly zone: ZoneId;
-    compareTo(arg0: ChronoZonedDateTime<Object>): number;
+    compareTo(arg0: ChronoZonedDateTime<any>): number;
     equals(arg0: Object | null): boolean;
     format(arg0: DateTimeFormatter): string;
     get(arg0: TemporalField): number;
@@ -64,9 +64,9 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     getYear(): number;
     getZone(): ZoneId;
     hashCode(): number;
-    isAfter(arg0: ChronoZonedDateTime<Object>): boolean;
-    isBefore(arg0: ChronoZonedDateTime<Object>): boolean;
-    isEqual(arg0: ChronoZonedDateTime<Object>): boolean;
+    isAfter(arg0: ChronoZonedDateTime<any>): boolean;
+    isBefore(arg0: ChronoZonedDateTime<any>): boolean;
+    isEqual(arg0: ChronoZonedDateTime<any>): boolean;
     isSupported(arg0: TemporalField): boolean;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): ZonedDateTime;

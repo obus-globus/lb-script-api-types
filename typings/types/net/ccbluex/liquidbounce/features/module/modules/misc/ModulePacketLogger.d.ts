@@ -1,7 +1,6 @@
 import type { File } from '../../../../../../../java/io/File.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../../../java/lang/reflect/Field.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AtomicRef } from '../../../../../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
@@ -23,7 +22,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
  */
 export class ModulePacketLogger extends ClientModule {
     static INSTANCE: ModulePacketLogger;
-    // private classNames: Map<Class<Packet<Object>>, string>;
+    // private classNames: Map<Class<Packet<any>>, string>;
     // private clientPackets: Identifier[];
     // private /*not mapped: */ getClientPackets(): Identifier[];
     // private fieldNames: Map<Field, string>;
@@ -39,9 +38,9 @@ export class ModulePacketLogger extends ClientModule {
     // private /*not mapped: */ getServerPackets(): Identifier[];
     // private showFieldType: boolean;
     // private /*not mapped: */ getShowFieldType(): boolean;
-    // private collectFields(clazz: Class<Packet<Object>>, packet: Packet<Object>): ModulePacketLogger$PacketField[];
+    // private collectFields(clazz: Class<Packet<any>>, packet: Packet<any>): ModulePacketLogger$PacketField[];
     // private createFileIfNeeded(): void;
     onDisabled(): void;
     onEnabled(): void;
-    onPacket(origin: TransferOrigin, packet: Packet<Object>, canceled: boolean): void;
+    onPacket(origin: TransferOrigin, packet: Packet<any>, canceled: boolean): void;
 }

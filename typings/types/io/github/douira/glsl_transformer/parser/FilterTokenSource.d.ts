@@ -6,16 +6,16 @@ import type { TokenFactory } from '../../../../../org/antlr/v4/runtime/TokenFact
 import type { TokenSource } from '../../../../../org/antlr/v4/runtime/TokenSource.d.ts'
 export class FilterTokenSource extends Object implements TokenSource {
     constructor(arg0: TokenSource)
-    // private filter: TokenFilter<Object>;
+    // private filter: TokenFilter<any>;
     // private source: TokenSource;
     getCharPositionInLine(): number;
     getInputStream(): CharStream;
     getLine(): number;
     getSourceName(): string;
-    getTokenFactory(): TokenFactory<Object>;
-    getTokenFilter(): TokenFilter<Object>;
+    getTokenFactory(): TokenFactory<any>;
+    getTokenFilter(): TokenFilter<any>;
     nextToken(): Token;
     resetState(): void;
-    setTokenFactory(arg0: TokenFactory<Object>): void;
-    setTokenFilter(arg0: TokenFilter<Object>): void;
+    setTokenFactory(arg0: TokenFactory<any>): void;
+    setTokenFilter(arg0: TokenFilter<any>): void;
 }

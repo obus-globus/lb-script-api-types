@@ -4,9 +4,9 @@ import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/pr
 import type { CommandRewriter$CommandArgumentConsumer } from '../../../../com/viaversion/viaversion/rewriter/CommandRewriter$CommandArgumentConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CommandRewriter<C extends ClientboundPacketType> extends Object {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
+    constructor(arg0: Protocol<C, any, any, any>)
     // private parserHandlers: { [key: string]: (param0: PacketWrapper) => void };
-    // private protocol: Protocol<C, Object, Object, Object>;
+    // private protocol: Protocol<C, any, any, any>;
     argumentType(arg0: number): string;
     handle1_19(arg0: PacketWrapper): void;
     handleArgument(arg0: PacketWrapper, arg1: string): void;

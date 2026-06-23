@@ -17,7 +17,7 @@ export class DiskConfiguration extends Record implements FeatureConfiguration {
     // private stateProvider: BlockStateProvider;
     // private target: BlockPredicate;
     equals(o: Object | null): boolean;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     halfHeight(): number;
     hashCode(): number;
     radius(): IntProvider;

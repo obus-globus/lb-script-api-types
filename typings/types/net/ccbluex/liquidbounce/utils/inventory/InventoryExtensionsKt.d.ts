@@ -3,7 +3,7 @@ import type { AbstractContainerScreen } from '../../../../../net/minecraft/clien
 import type { AbstractContainerMenu } from '../../../../../net/minecraft/world/inventory/AbstractContainerMenu.d.ts'
 export class InventoryExtensionsKt extends Object {
     static getCanCloseMainInventory(): boolean;
-    static getSyncId(paramarg0: AbstractContainerScreen<Object>): number;
+    static getSyncId(paramarg0: AbstractContainerScreen<any>): number;
     static isInContainerScreen(): boolean;
     static isInInventoryScreen(): boolean;
     static isPlayerInventory(paramarg0: AbstractContainerMenu): boolean;

@@ -16,7 +16,7 @@ import type { DependentValue } from '../../../../../../../net/caffeinemc/mods/so
 import type { EnumOptionBuilderImplAccessor } from '../../../../../../../net/irisshaders/iris/compat/sodium/mixin/EnumOptionBuilderImplAccessor.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class EnumOptionBuilderImpl<E extends Enum<E>> extends StatefulOptionBuilderImpl<EnumOption<E>, E> implements EnumOptionBuilder<E>, EnumOptionBuilderImplAccessor<Enum<Object>> {
+export class EnumOptionBuilderImpl<E extends Enum<E>> extends StatefulOptionBuilderImpl<EnumOption<E>, E> implements EnumOptionBuilder<E>, EnumOptionBuilderImplAccessor<Enum<any>> {
     static nameProviderFrom(paramarg0: (Object | null)[]): (param0: Object | null) => Component;
     constructor(arg0: Identifier, arg1: Class<E>)
     // private allowedValues: DependentValue<E[]>;

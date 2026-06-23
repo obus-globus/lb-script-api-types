@@ -11,10 +11,10 @@ import type { ResolvableModel$Resolver } from '../../../../../net/minecraft/clie
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class SelectItemModel$Unbaked extends Record implements ItemModel$Unbaked {
     static MAP_CODEC: MapCodec<SelectItemModel$Unbaked>;
-    constructor(transformation: Optional<Transformation>, unbakedSwitch: SelectItemModel$UnbakedSwitch<Object, Object>, fallback: Optional<ItemModel$Unbaked>)
+    constructor(transformation: Optional<Transformation>, unbakedSwitch: SelectItemModel$UnbakedSwitch<any, Object>, fallback: Optional<ItemModel$Unbaked>)
     // private fallback: Optional<ItemModel$Unbaked>;
     // private transformation: Optional<Transformation>;
-    // private unbakedSwitch: SelectItemModel$UnbakedSwitch<Object, Object>;
+    // private unbakedSwitch: SelectItemModel$UnbakedSwitch<any, Object>;
     bake(context: ItemModel$BakingContext, transformation: Matrix4fc): ItemModel;
     equals(o: Object | null): boolean;
     fallback(): Optional<ItemModel$Unbaked>;
@@ -23,5 +23,5 @@ export class SelectItemModel$Unbaked extends Record implements ItemModel$Unbaked
     toString(): string;
     transformation(): Optional<Transformation>;
     type(): MapCodec<SelectItemModel$Unbaked>;
-    unbakedSwitch(): SelectItemModel$UnbakedSwitch<Object, Object>;
+    unbakedSwitch(): SelectItemModel$UnbakedSwitch<any, Object>;
 }

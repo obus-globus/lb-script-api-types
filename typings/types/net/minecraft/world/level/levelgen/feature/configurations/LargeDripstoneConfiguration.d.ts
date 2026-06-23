@@ -20,5 +20,5 @@ export class LargeDripstoneConfiguration extends Object implements FeatureConfig
     stalactiteBluntness: FloatProvider;
     stalagmiteBluntness: FloatProvider;
     windSpeed: FloatProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

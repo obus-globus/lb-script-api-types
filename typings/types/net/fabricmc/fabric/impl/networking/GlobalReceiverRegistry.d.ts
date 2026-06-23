@@ -7,11 +7,11 @@ import type { PacketFlow } from '../../../../../net/minecraft/network/protocol/P
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class GlobalReceiverRegistry<H extends Object | number | string | boolean> extends Object {
     static DEFAULT_CHANNEL_NAME_MAX_LENGTH: number;
-    constructor(arg0: PacketFlow, arg1: ConnectionProtocol, arg2: PayloadTypeRegistryImpl<Object>)
+    constructor(arg0: PacketFlow, arg1: ConnectionProtocol, arg2: PayloadTypeRegistryImpl<any>)
     // private flow: PacketFlow;
     readonly handlers: Map<Identifier, H>;
     // private lock: ReadWriteLock;
-    // private payloadTypeRegistry: PayloadTypeRegistryImpl<Object>;
+    // private payloadTypeRegistry: PayloadTypeRegistryImpl<any>;
     readonly protocol: ConnectionProtocol;
     // private trackedAddons: AbstractNetworkAddon<H>[];
     assertPayloadType(arg0: Identifier): void;

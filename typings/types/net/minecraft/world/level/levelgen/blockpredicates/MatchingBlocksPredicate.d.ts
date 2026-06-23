@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
@@ -19,5 +18,5 @@ export class MatchingBlocksPredicate extends StateTestingPredicate {
     // private blocks: Holder<Block>[];
     test(level: WorldGenLevel, origin: BlockPos): boolean;
     test(state: BlockState): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

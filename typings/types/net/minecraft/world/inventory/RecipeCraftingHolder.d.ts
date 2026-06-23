@@ -5,7 +5,7 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 import type { RecipeHolder } from '../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
 export interface RecipeCraftingHolder extends Object{
     awardUsedRecipes(player: Player, itemStacks: ItemStack[]): void;
-    getRecipeUsed(): RecipeHolder<Object>;
-    setRecipeUsed(player: ServerPlayer, recipe: RecipeHolder<Object>): boolean;
-    setRecipeUsed(recipeUsed: RecipeHolder<Object>): void;
+    getRecipeUsed(): RecipeHolder<any>;
+    setRecipeUsed(player: ServerPlayer, recipe: RecipeHolder<any>): boolean;
+    setRecipeUsed(recipeUsed: RecipeHolder<any>): void;
 }

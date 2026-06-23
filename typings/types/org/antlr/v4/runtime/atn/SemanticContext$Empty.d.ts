@@ -7,5 +7,5 @@ export class SemanticContext$Empty extends SemanticContext {
     static and(paramarg0: SemanticContext, paramarg1: SemanticContext): SemanticContext;
     static or(paramarg0: SemanticContext, paramarg1: SemanticContext): SemanticContext;
     constructor()
-    eval(arg0: Recognizer<Object, Object>, arg1: RuleContext): boolean;
+    eval(arg0: Recognizer<Object, any>, arg1: RuleContext): boolean;
 }

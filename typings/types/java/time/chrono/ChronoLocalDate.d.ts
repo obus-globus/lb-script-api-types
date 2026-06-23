@@ -15,7 +15,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 export interface ChronoLocalDate extends Temporal, TemporalAdjuster, Object, Comparable<ChronoLocalDate> {
     adjustInto(arg0: Temporal): Temporal;
-    atTime(arg0: LocalTime): ChronoLocalDateTime<Object>;
+    atTime(arg0: LocalTime): ChronoLocalDateTime<any>;
     compareTo(arg0: ChronoLocalDate): number;
     format(arg0: DateTimeFormatter): string;
     getChronology(): Chronology;

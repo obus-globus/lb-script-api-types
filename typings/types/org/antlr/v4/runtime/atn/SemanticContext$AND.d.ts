@@ -9,8 +9,8 @@ export class SemanticContext$AND extends SemanticContext$Operator {
     constructor(arg0: SemanticContext, arg1: SemanticContext)
     opnds: SemanticContext[];
     equals(arg0: Object | null): boolean;
-    eval(arg0: Recognizer<Object, Object>, arg1: RuleContext): boolean;
-    evalPrecedence(arg0: Recognizer<Object, Object>, arg1: RuleContext): SemanticContext;
+    eval(arg0: Recognizer<Object, any>, arg1: RuleContext): boolean;
+    evalPrecedence(arg0: Recognizer<Object, any>, arg1: RuleContext): SemanticContext;
     getOperands(): SemanticContext[];
     hashCode(): number;
     toString(): string;

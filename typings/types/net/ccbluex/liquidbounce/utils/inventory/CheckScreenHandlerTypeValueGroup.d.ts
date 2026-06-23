@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ToggleableValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { Filter } from '../../../../../net/ccbluex/liquidbounce/utils/collection/Filter.d.ts'
@@ -11,5 +10,5 @@ export class CheckScreenHandlerTypeValueGroup extends ToggleableValueGroup {
     // private /*not mapped: */ getFilter(): Filter;
     // private types: MenuType<AbstractContainerMenu>[];
     // private /*not mapped: */ getTypes(): MenuType<AbstractContainerMenu>[];
-    isValid(screen: AbstractContainerScreen<Object>): boolean;
+    isValid(screen: AbstractContainerScreen<any>): boolean;
 }

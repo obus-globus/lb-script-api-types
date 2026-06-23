@@ -52,9 +52,9 @@ export class BlockModelGenerators extends Object {
     static Y_ROT_180: (param0: Object | null) => Object | null;
     static Y_ROT_270: (param0: Object | null) => Object | null;
     static Y_ROT_90: (param0: Object | null) => Object | null;
-    static and(paramterms: (Object | null)[]): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
+    static and(paramterms: (Object | null)[]): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static applyRotation(paramorientation: FrontAndTop): (param0: Object | null) => Object | null;
-    static condition(paramproperty: EnumProperty<Object>, paramterm: Object | null, paramadditionalTerms: Object | null): ConditionBuilder;
+    static condition(paramproperty: EnumProperty<any>, paramterm: Object | null, paramadditionalTerms: Object | null): ConditionBuilder;
     static condition(): ConditionBuilder;
     static condition(paramproperty: BooleanProperty, paramterm: boolean): ConditionBuilder;
     static createAxisAlignedPillarBlock(paramblock: Block, parammodel: MultiVariant): BlockModelDefinitionGenerator;
@@ -64,7 +64,7 @@ export class BlockModelGenerators extends Object {
     static createCopperBulb(paramcopperBulb: Block, parambaseModel: MultiVariant, paramlitModel: MultiVariant, parambaseModelPowered: MultiVariant, paramlitModelPowered: MultiVariant): BlockModelDefinitionGenerator;
     static createCustomFence(paramblock: Block, parampost: MultiVariant, paramnorth: MultiVariant, parameast: MultiVariant, paramsouth: MultiVariant, paramwest: MultiVariant): BlockModelDefinitionGenerator;
     static createDoor(paramblock: Block, parambottomLeft: MultiVariant, parambottomLeftOpen: MultiVariant, parambottomRight: MultiVariant, parambottomRightOpen: MultiVariant, paramtopLeft: MultiVariant, paramtopLeftOpen: MultiVariant, paramtopRight: MultiVariant, paramtopRightOpen: MultiVariant): BlockModelDefinitionGenerator;
-    static createEmptyOrFullDispatch(paramproperty: Property<Object>, paramthreshold: Object | null, paramfullModel: MultiVariant, paramemptyModel: MultiVariant): PropertyDispatch<MultiVariant>;
+    static createEmptyOrFullDispatch(paramproperty: Property<any>, paramthreshold: Object | null, paramfullModel: MultiVariant, paramemptyModel: MultiVariant): PropertyDispatch<MultiVariant>;
     static createFence(paramblock: Block, parampost: MultiVariant, paramside: MultiVariant): BlockModelDefinitionGenerator;
     static createFenceGate(paramblock: Block, paramopen: MultiVariant, paramclosed: MultiVariant, paramopenWall: MultiVariant, paramclosedWall: MultiVariant, paramuvLock: boolean): BlockModelDefinitionGenerator;
     static createMirroredColumnGenerator(paramblock: Block, paramnormal: Variant, parammapping: TextureMapping, parammodelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
@@ -83,20 +83,20 @@ export class BlockModelGenerators extends Object {
     static createTrapdoor(paramblock: Block, paramtop: MultiVariant, parambottom: MultiVariant, paramopen: MultiVariant): BlockModelDefinitionGenerator;
     static createWall(paramblock: Block, parampost: MultiVariant, paramlowSide: MultiVariant, paramtallSide: MultiVariant): BlockModelDefinitionGenerator;
     static forEachHorizontalDirection(paramconsumer: (param0: Direction, param1: (param0: Object | null) => Object | null) => void): void;
-    static or(paramterms: (Object | null)[]): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
+    static or(paramterms: (Object | null)[]): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static plainModel(parammodel: Identifier): Variant;
     static plainVariant(parammodel: Identifier): MultiVariant;
     static selectMultifaceProperties(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => Object | null): Map<Object | null, (param0: Object | null) => Object | null>;
-    static shelfCondition(paramdirection: Direction, paramisPowered: boolean, paramsideChainPart: SideChainPart): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
+    static shelfCondition(paramdirection: Direction, paramisPowered: boolean, paramsideChainPart: SideChainPart): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static variant(paramvariant: Variant): MultiVariant;
     static variants(paramvariant: (Object | null)[]): MultiVariant;
     constructor(blockStateOutput: (param0: BlockModelDefinitionGenerator) => void, itemModelOutput: ItemModelOutput, modelOutput: (param0: Identifier, param1: ModelInstance) => void)
     blockStateOutput: (param0: BlockModelDefinitionGenerator) => void;
     itemModelOutput: ItemModelOutput;
     modelOutput: (param0: Identifier, param1: ModelInstance) => void;
-    addBookSlotModel(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null, stateProperty: BooleanProperty, template: ModelTemplate, isSlotOccupied: boolean): void;
+    addBookSlotModel(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null, stateProperty: BooleanProperty, template: ModelTemplate, isSlotOccupied: boolean): void;
     addShelfPart(block: Block, mapping: TextureMapping, generator: MultiPartGenerator, template: ModelTemplate, isPowered: boolean, sideChainPart: SideChainPart): void;
-    addSlotStateAndRotationVariants(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null): void;
+    addSlotStateAndRotationVariants(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null): void;
     copyCopperBulbModel(donor: Block, acceptor: Block): void;
     copyDoorModel(donor: Block, acceptor: Block): void;
     copyModel(donor: Block, acceptor: Block): void;

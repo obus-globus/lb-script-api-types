@@ -30,7 +30,7 @@ export abstract class Recognizer<Symbol extends Object | number | string | boole
     getSerializedATN(): string;
     getState(): number;
     getTokenErrorDisplay(arg0: Token): string;
-    getTokenFactory(): TokenFactory<Object>;
+    getTokenFactory(): TokenFactory<any>;
     getTokenNames(): string[];
     getTokenType(arg0: string): number;
     getTokenTypeMap(): { [key: string]: number };
@@ -42,5 +42,5 @@ export abstract class Recognizer<Symbol extends Object | number | string | boole
     setInputStream(arg0: IntStream): void;
     setInterpreter(arg0: ATNInterpreter): void;
     setState(arg0: number): void;
-    setTokenFactory(arg0: TokenFactory<Object>): void;
+    setTokenFactory(arg0: TokenFactory<any>): void;
 }

@@ -6,7 +6,7 @@ export class ComparableUtils extends Object {
     static betweenExclusive(paramarg0: Object | null, paramarg1: Object | null): (param0: Object | null) => boolean;
     static ge(paramarg0: Object | null): (param0: Object | null) => boolean;
     static gt(paramarg0: Object | null): (param0: Object | null) => boolean;
-    static is(paramarg0: Object | null): ComparableUtils$ComparableCheckBuilder<Object>;
+    static is(paramarg0: Object | null): ComparableUtils$ComparableCheckBuilder<any>;
     static le(paramarg0: Object | null): (param0: Object | null) => boolean;
     static lt(paramarg0: Object | null): (param0: Object | null) => boolean;
     static max(paramarg0: Object | null, paramarg1: Object | null): Object | null;

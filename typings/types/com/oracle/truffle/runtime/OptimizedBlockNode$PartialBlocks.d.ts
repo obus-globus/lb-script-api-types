@@ -5,7 +5,7 @@ import type { OptimizedCallTarget } from '../../../../com/oracle/truffle/runtime
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OptimizedBlockNode$PartialBlocks<T extends Node> extends Object {
     constructor(rootCompilation: OptimizedCallTarget, block: OptimizedBlockNode<T>, blockRanges: number[], blockSizes: number[], blockIndex: number)
-    // private block: OptimizedBlockNode<Object>;
+    // private block: OptimizedBlockNode<any>;
     readonly blockRanges: number[];
     readonly blockTargets: OptimizedCallTarget[];
     execute(frame: VirtualFrame, arg: number): Object;

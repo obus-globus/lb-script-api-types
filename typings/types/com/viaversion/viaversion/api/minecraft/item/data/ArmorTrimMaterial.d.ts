@@ -25,6 +25,6 @@ export class ArmorTrimMaterial extends Record implements Copyable, Rewritable {
     itemId(): number;
     itemModelIndex(): number;
     overrideArmorMaterials(): { [key: string]: string };
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): ArmorTrimMaterial;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): ArmorTrimMaterial;
     toString(): string;
 }

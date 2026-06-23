@@ -8,9 +8,9 @@ import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class IdentifierWithRegistryAdapter$Companion extends Object {
     BLOCK: IdentifierWithRegistryAdapter<Block>;
-    ENTITY_TYPE: IdentifierWithRegistryAdapter<EntityType<Object>>;
+    ENTITY_TYPE: IdentifierWithRegistryAdapter<EntityType<any>>;
     ITEM: IdentifierWithRegistryAdapter<Item>;
-    SCREEN_HANDLER: IdentifierWithRegistryAdapter<MenuType<Object>>;
+    SCREEN_HANDLER: IdentifierWithRegistryAdapter<MenuType<any>>;
     SOUND_EVENT: IdentifierWithRegistryAdapter<SoundEvent>;
     STATUS_EFFECT: IdentifierWithRegistryAdapter<MobEffect>;
 }

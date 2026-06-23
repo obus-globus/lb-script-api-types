@@ -13,5 +13,5 @@ export class AppendLoot extends Object implements RuleBlockEntityModifier {
     constructor(lootTable: ResourceKey<LootTable>)
     // private lootTable: ResourceKey<LootTable>;
     apply(random: RandomSource, existingTag: CompoundTag): CompoundTag;
-    getType(): RuleBlockEntityModifierType<Object>;
+    getType(): RuleBlockEntityModifierType<any>;
 }

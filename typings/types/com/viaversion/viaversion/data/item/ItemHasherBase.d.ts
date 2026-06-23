@@ -12,7 +12,7 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class ItemHasherBase extends Object implements ItemHasher {
     static UNKNOWN_HASH: number;
     static toHashedItem(paramarg0: Hasher, paramarg1: Item): HashedItem;
-    constructor(arg0: Protocol<Object, Object, Object, Object>, arg1: UserConnection)
+    constructor(arg0: Protocol<any, any, any, any>, arg1: UserConnection)
     // private connection: UserConnection;
     // private context: CodecContext;
     // private hashes: { [key: number]: OriginalHashedItem };

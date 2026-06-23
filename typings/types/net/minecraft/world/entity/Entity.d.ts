@@ -127,7 +127,7 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { PlayerTeam } from '../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 import type { ScoreHolder } from '../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 import type { Team } from '../../../../net/minecraft/world/scores/Team.d.ts'
-export abstract class Entity extends Object implements IEntity, FeetBlockCachingEntity, MaybeInLevelObject, EntityAccessor, AttachmentTarget, EntityLoadData, PermissionContextOwner, AttachmentTargetImpl, EntityLoadDataSetter, EntityAccessor_2, TypedInstance<EntityType<Object>>, DataComponentGetter, SyncedDataHolder, DebugValueSource, Nameable, ItemOwner, SlotProvider, EntityAccess, ScoreHolder {
+export abstract class Entity extends Object implements IEntity, FeetBlockCachingEntity, MaybeInLevelObject, EntityAccessor, AttachmentTarget, EntityLoadData, PermissionContextOwner, AttachmentTargetImpl, EntityLoadDataSetter, EntityAccessor_2, TypedInstance<EntityType<any>>, DataComponentGetter, SyncedDataHolder, DebugValueSource, Nameable, ItemOwner, SlotProvider, EntityAccess, ScoreHolder {
     static BASE_SAFE_FALL_DISTANCE: number;
     static BASE_TICKS_REQUIRED_TO_FREEZE: number;
     static BOARDING_COOLDOWN: number;
@@ -170,7 +170,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     static offsetFromOwner(paramowner: ItemOwner, paramoffset: Vec3): ItemOwner;
     static setViewScale(paramviewScale: number): void;
     static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     // private attachedChangedListeners: Map<Object, Object>;
     // private bb: AABB;
     // private blockPosition: BlockPos;
@@ -232,7 +232,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     // private syncedAttachments: Map<Object, Object>;
     // private tags: string[];
     tickCount: number;
-    readonly type: EntityType<Object>;
+    readonly type: EntityType<any>;
     // private uuid: UUID;
     readonly vehicle: Entity;
     verticalCollision: boolean;
@@ -494,7 +494,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     getTeamColor(): number;
     getTicksFrozen(): number;
     getTicksRequiredToFreeze(): number;
-    getType(): EntityType<Object>;
+    getType(): EntityType<any>;
     getTypeName(): Component;
     getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
     getUUID(): UUID;
@@ -539,11 +539,11 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     igniteForTicks(numberOfTicks: number): void;
     ignoreExplosion(explosion: Explosion): boolean;
     interact(player: Player, hand: InteractionHand, location: Vec3): InteractionResult;
-    is(rawType: EntityType<Object>): boolean;
-    is(type: Holder<EntityType<Object>>): boolean;
-    is(set: Holder<EntityType<Object>>[]): boolean;
-    is(type: ResourceKey<EntityType<Object>>): boolean;
-    is(tag: TagKey<EntityType<Object>>): boolean;
+    is(rawType: EntityType<any>): boolean;
+    is(type: Holder<EntityType<any>>): boolean;
+    is(set: Holder<EntityType<any>>[]): boolean;
+    is(type: ResourceKey<EntityType<any>>): boolean;
+    is(tag: TagKey<EntityType<any>>): boolean;
     is(other: Entity): boolean;
     isAffectedByBlocks(): boolean;
     isAlive(): boolean;
@@ -780,7 +780,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     stopSeenByPlayer(player: ServerPlayer): void;
     supportQuadLeashAsHolder(): boolean;
     syncPacketPositionCodec(x: number, y: number, z: number): void;
-    tags(): Stream<TagKey<EntityType<Object>>>;
+    tags(): Stream<TagKey<EntityType<any>>>;
     teleport(transition: TeleportTransition): Entity;
     // private teleportCrossDimension(oldLevel: ServerLevel, newLevel: ServerLevel, transition: TeleportTransition): Entity;
     // private teleportPassengers(): void;
@@ -797,11 +797,11 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     touchingUnloadedChunk(): boolean;
     trackingPosition(): Vec3;
     turn(xo: number, yo: number): void;
-    typeHolder(): Holder<EntityType<Object>>;
+    typeHolder(): Holder<EntityType<any>>;
     unRide(): void;
     unsetRemoved(): void;
     updateDataBeforeSync(): void;
-    updateDynamicGameEventListener(action: (param0: DynamicGameEventListener<Object>, param1: ServerLevel) => void): void;
+    updateDynamicGameEventListener(action: (param0: DynamicGameEventListener<any>, param1: ServerLevel) => void): void;
     updateFluidInteraction(): boolean;
     updateSwimming(): void;
     viaFabricPlus$isInLoadedChunkAndShouldTick(): boolean;

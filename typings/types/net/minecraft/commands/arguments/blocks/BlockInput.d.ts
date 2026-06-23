@@ -9,12 +9,12 @@ import type { Property } from '../../../../../net/minecraft/world/level/block/st
 export class BlockInput extends Object implements Predicate<BlockInWorld> {
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    constructor(state: BlockState, properties: Property<Object>[], tag: CompoundTag)
-    // private properties: Property<Object>[];
+    constructor(state: BlockState, properties: Property<any>[], tag: CompoundTag)
+    // private properties: Property<any>[];
     readonly state: BlockState;
     // private tag: CompoundTag;
     and(arg0: (param0: BlockInWorld) => boolean): (param0: BlockInWorld) => boolean;
-    getDefinedProperties(): Property<Object>[];
+    getDefinedProperties(): Property<any>[];
     getState(): BlockState;
     negate(): (param0: BlockInWorld) => boolean;
     or(arg0: (param0: BlockInWorld) => boolean): (param0: BlockInWorld) => boolean;

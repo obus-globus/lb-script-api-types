@@ -6,6 +6,6 @@ import type { RuleTestType } from '../../../../../../../net/minecraft/world/leve
 export abstract class RuleTest extends Object {
     static CODEC: Codec<RuleTest>;
     constructor()
-    getType(): RuleTestType<Object>;
+    getType(): RuleTestType<any>;
     test(state: BlockState, random: RandomSource): boolean;
 }

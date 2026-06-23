@@ -15,7 +15,7 @@ export class ProtocolConstants extends Object {
     static BLOCK_FRICTION: number;
     static JAVA_AIR_ID: number;
     static JAVA_PACK_VERSION: number;
-    static JAVA_PROTOCOL_CLASS: Class<Protocol<Object, Object, Object, Object>>;
+    static JAVA_PROTOCOL_CLASS: Class<Protocol<any, any, any, any>>;
     static JAVA_TEXT_COMPONENT_SERIALIZER: TextComponentCodec;
     static JAVA_VERSION: ProtocolVersion;
     static LAST_BLOCK_ITEM_ID: number;

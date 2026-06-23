@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Vec3i } from '../../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { ChunkPos } from '../../../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { ChunkGeneratorStructureState } from '../../../../../../../net/minecraft/world/level/chunk/ChunkGeneratorStructureState.d.ts'
@@ -23,5 +22,5 @@ export class RandomSpreadStructurePlacement extends StructurePlacement {
     separation(): number;
     spacing(): number;
     spreadType(): RandomSpreadType;
-    type(): StructurePlacementType<Object>;
+    type(): StructurePlacementType<any>;
 }

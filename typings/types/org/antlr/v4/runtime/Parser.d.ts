@@ -1,5 +1,4 @@
 import type { PrintStream } from '../../../../java/io/PrintStream.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ANTLRErrorStrategy } from '../../../../org/antlr/v4/runtime/ANTLRErrorStrategy.d.ts'
 import type { IntStream } from '../../../../org/antlr/v4/runtime/IntStream.d.ts'
 import type { Lexer } from '../../../../org/antlr/v4/runtime/Lexer.d.ts'
@@ -66,7 +65,7 @@ export abstract class Parser extends Recognizer<Token, ParserATNSimulator> {
     getRuleInvocationStack(): string[];
     getRuleInvocationStack(arg0: RuleContext): string[];
     getSourceName(): string;
-    getTokenFactory(): TokenFactory<Object>;
+    getTokenFactory(): TokenFactory<any>;
     getTokenStream(): TokenStream;
     getTrimParseTree(): boolean;
     inContext(arg0: string): boolean;
@@ -87,7 +86,7 @@ export abstract class Parser extends Recognizer<Token, ParserATNSimulator> {
     setErrorHandler(arg0: ANTLRErrorStrategy): void;
     setInputStream(arg0: IntStream): void;
     setProfile(arg0: boolean): void;
-    setTokenFactory(arg0: TokenFactory<Object>): void;
+    setTokenFactory(arg0: TokenFactory<any>): void;
     setTokenStream(arg0: TokenStream): void;
     setTrace(arg0: boolean): void;
     setTrimParseTree(arg0: boolean): void;

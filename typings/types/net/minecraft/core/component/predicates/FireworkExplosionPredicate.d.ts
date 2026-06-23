@@ -12,10 +12,10 @@ import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/netwo
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/component/FireworkExplosion.d.ts'
 export class FireworkExplosionPredicate extends Record implements SingleComponentItemPredicate<FireworkExplosion> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<FireworkExplosionPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(predicate: FireworkExplosionPredicate$FireworkPredicate)
     // private predicate: FireworkExplosionPredicate$FireworkPredicate;
     componentType(): DataComponentType<FireworkExplosion>;

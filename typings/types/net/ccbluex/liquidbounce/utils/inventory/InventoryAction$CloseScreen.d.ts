@@ -4,12 +4,12 @@ import type { InventoryAction } from '../../../../../net/ccbluex/liquidbounce/ut
 import type { InventoryConstraints } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/InventoryConstraints.d.ts'
 import type { AbstractContainerScreen } from '../../../../../net/minecraft/client/gui/screens/inventory/AbstractContainerScreen.d.ts'
 export class InventoryAction$CloseScreen extends Record implements InventoryAction {
-    constructor(screen: AbstractContainerScreen<Object>)
-    // private screen: AbstractContainerScreen<Object>;
-    /*not mapped: */ screen(): AbstractContainerScreen<Object>;
+    constructor(screen: AbstractContainerScreen<any>)
+    // private screen: AbstractContainerScreen<any>;
+    /*not mapped: */ screen(): AbstractContainerScreen<any>;
     canPerformAction(inventoryConstraints: InventoryConstraints): boolean;
-    component1(): AbstractContainerScreen<Object>;
-    copy(screen: AbstractContainerScreen<Object>): InventoryAction$CloseScreen;
+    component1(): AbstractContainerScreen<any>;
+    copy(screen: AbstractContainerScreen<any>): InventoryAction$CloseScreen;
     equals(other: Object | null): boolean;
     hashCode(): number;
     performAction(): boolean;

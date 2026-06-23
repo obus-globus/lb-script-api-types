@@ -37,7 +37,7 @@ export class Sets extends Object {
     static newTreeSet(paramelements: (Object | null)[]): (Object | null)[];
     static newTreeSet(paramcomparator: (param0: Object) => boolean): (Object | null)[];
     static powerSet(paramset: (Object | null)[]): (Object | null)[][];
-    static subSet(paramset: (Object | null)[], paramrange: Range<Object>): (Object | null)[];
+    static subSet(paramset: (Object | null)[], paramrange: Range<any>): (Object | null)[];
     static symmetricDifference(paramset1: (Object | null)[], paramset2: (Object | null)[]): (Object | null)[];
     static synchronizedNavigableSet(paramnavigableSet: (Object | null)[]): (Object | null)[];
     static toImmutableEnumSet(): Collector<Object, Object, (Object | null)[]>;

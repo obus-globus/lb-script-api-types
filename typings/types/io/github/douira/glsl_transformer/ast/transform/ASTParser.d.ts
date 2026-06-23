@@ -50,6 +50,6 @@ export class ASTParser extends Object implements ParserInterface {
     setParsingStrategy(arg0: EnhancedParser$ParsingStrategy): void;
     setSLLOnly(): void;
     setThrowParseErrors(arg0: boolean): void;
-    setTokenFilter(arg0: TokenFilter<Object>): void;
+    setTokenFilter(arg0: TokenFilter<any>): void;
     // private unsetBuilderTokenStream(): void;
 }

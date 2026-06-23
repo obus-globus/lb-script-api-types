@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -18,9 +17,9 @@ import type { SingleItemRecipe } from '../../../../../net/minecraft/world/item/c
 import type { SingleItemRecipe$Factory } from '../../../../../net/minecraft/world/item/crafting/SingleItemRecipe$Factory.d.ts'
 import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplay.d.ts'
 export abstract class AbstractCookingRecipe extends SingleItemRecipe {
-    static CODEC: Codec<Recipe<Object>>;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static CODEC: Codec<Recipe<any>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static cookingMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null, paramdefaultCookingTime: number): MapCodec<AbstractCookingRecipe>;
     static cookingStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null): StreamCodec<RegistryFriendlyByteBuf, AbstractCookingRecipe>;
     static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;

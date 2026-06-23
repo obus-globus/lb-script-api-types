@@ -3,7 +3,7 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 import type { FrequencyBasedPolymorphicAccessNode$HitsCount } from '../../../../../../com/oracle/truffle/js/nodes/access/FrequencyBasedPolymorphicAccessNode$HitsCount.d.ts'
 import type { PropertyCacheNode } from '../../../../../../com/oracle/truffle/js/nodes/access/PropertyCacheNode.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class FrequencyBasedPolymorphicAccessNode<T extends PropertyCacheNode<Object>> extends JavaScriptBaseNode {
+export abstract class FrequencyBasedPolymorphicAccessNode<T extends PropertyCacheNode<any>> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(size: number)

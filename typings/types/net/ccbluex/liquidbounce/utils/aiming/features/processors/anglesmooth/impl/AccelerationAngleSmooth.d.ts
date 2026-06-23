@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../../../../../kotlin/Pair.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
@@ -15,7 +14,7 @@ import type { AccelerationAngleSmooth$SigmoidDeceleration } from '../../../../..
 import type { Vec2 } from '../../../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
 export class AccelerationAngleSmooth extends AngleSmooth {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private accelerationError: AccelerationAngleSmooth$AccelerationError;
     // private constantError: AccelerationAngleSmooth$ConstantError;
     // private dynamicAcceleration: AccelerationAngleSmooth$DynamicAccel;

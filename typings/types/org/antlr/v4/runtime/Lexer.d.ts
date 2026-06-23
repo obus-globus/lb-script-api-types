@@ -1,4 +1,3 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharStream } from '../../../../org/antlr/v4/runtime/CharStream.d.ts'
 import type { IntStream } from '../../../../org/antlr/v4/runtime/IntStream.d.ts'
 import type { LexerNoViableAltException } from '../../../../org/antlr/v4/runtime/LexerNoViableAltException.d.ts'
@@ -22,7 +21,7 @@ export abstract class Lexer extends Recognizer<number, LexerATNSimulator> implem
     constructor()
     constructor(arg0: CharStream)
     _channel: number;
-    // private _factory: TokenFactory<Object>;
+    // private _factory: TokenFactory<any>;
     _hitEOF: boolean;
     _input: CharStream;
     _mode: number;
@@ -69,7 +68,7 @@ export abstract class Lexer extends Recognizer<number, LexerATNSimulator> implem
     setLine(arg0: number): void;
     setText(arg0: string): void;
     setToken(arg0: Token): void;
-    setTokenFactory(arg0: TokenFactory<Object>): void;
+    setTokenFactory(arg0: TokenFactory<any>): void;
     setType(arg0: number): void;
     skip(): void;
 }

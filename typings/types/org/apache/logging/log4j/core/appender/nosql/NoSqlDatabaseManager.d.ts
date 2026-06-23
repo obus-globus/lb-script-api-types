@@ -14,8 +14,8 @@ import type { KeyValuePair } from '../../../../../../../org/apache/logging/log4j
 import type { MapMessage } from '../../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 export class NoSqlDatabaseManager<W extends Object | number | string | boolean> extends AbstractDatabaseManager {
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<Object>): NoSqlDatabaseManager<Object>;
-    static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<Object>, paramadditionalFields: (Object | null)[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;
+    static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>): NoSqlDatabaseManager<Object>;
+    static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>, paramadditionalFields: (Object | null)[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;
     static hasManager(paramname: string): boolean;
     private constructor(name: string, bufferSize: number, provider: NoSqlProvider<NoSqlConnection<W, NoSqlObject<W>>>, additionalFields: KeyValuePair[], configuration: Configuration)
     // private additionalFields: KeyValuePair[];
@@ -28,7 +28,7 @@ export class NoSqlDatabaseManager<W extends Object | number | string | boolean> 
     // private convertStackTraceElement(element: StackTraceElement): NoSqlObject<W>;
     // private setAdditionalFields(entity: NoSqlObject<W>): void;
     // private setFields(event: LogEvent, entity: NoSqlObject<W>): void;
-    // private setFields(mapMessage: MapMessage<Object, Object>, noSqlObject: NoSqlObject<W>): void;
+    // private setFields(mapMessage: MapMessage<any, Object>, noSqlObject: NoSqlObject<W>): void;
     shutdownInternal(): boolean;
     startupInternal(): void;
     writeInternal(event: LogEvent): void;

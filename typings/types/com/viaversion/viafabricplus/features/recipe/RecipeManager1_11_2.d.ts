@@ -9,11 +9,11 @@ import type { RecipeInput } from '../../../../../net/minecraft/world/item/crafti
 import type { RecipeType } from '../../../../../net/minecraft/world/item/crafting/RecipeType.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeManager1_11_2 extends Object {
-    constructor(arg0: RecipeHolder<Object>[])
-    // private recipesById: Map<ResourceKey<Recipe<Object>>, RecipeHolder<Object>>;
-    // private recipesByType: Multimap<RecipeType<Object>, RecipeHolder<Object>>;
-    get(arg0: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<Object>>;
+    constructor(arg0: RecipeHolder<any>[])
+    // private recipesById: Map<ResourceKey<Recipe<any>>, RecipeHolder<any>>;
+    // private recipesByType: Multimap<RecipeType<any>, RecipeHolder<any>>;
+    get(arg0: ResourceKey<Recipe<any>>): Optional<RecipeHolder<any>>;
     getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
-    keys(): Stream<ResourceKey<Recipe<Object>>>;
-    values(): RecipeHolder<Object>[];
+    keys(): Stream<ResourceKey<Recipe<any>>>;
+    values(): RecipeHolder<any>[];
 }

@@ -3,7 +3,7 @@ import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Range$RangeLexOrdering extends Ordering<Range<Object>> implements Serializable {
+export class Range$RangeLexOrdering extends Ordering<Range<any>> implements Serializable {
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
     static compound(paramcomparators: (param0: Object) => boolean[]): Ordering<Object>;
@@ -14,5 +14,5 @@ export class Range$RangeLexOrdering extends Ordering<Range<Object>> implements S
     static natural(): Ordering<Object>;
     static usingToString(): Ordering<Object>;
     private constructor()
-    compare(left: Range<Object>, right: Range<Object>): number;
+    compare(left: Range<any>, right: Range<any>): number;
 }

@@ -4,7 +4,7 @@ import type { ByteConsumer } from '../../../../../it/unimi/dsi/fastutil/bytes/By
 import type { ByteSpliterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Byte2ObjectOpenCustomHashMap$KeySpliterator extends Byte2ObjectOpenCustomHashMap$MapSpliterator<Object, Object> implements ByteSpliterator {
+export class Byte2ObjectOpenCustomHashMap$KeySpliterator extends Byte2ObjectOpenCustomHashMap$MapSpliterator<Object, any> implements ByteSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

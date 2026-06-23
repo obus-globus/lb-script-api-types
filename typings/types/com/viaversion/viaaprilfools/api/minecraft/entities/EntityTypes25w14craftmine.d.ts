@@ -208,7 +208,7 @@ export class EntityTypes25w14craftmine extends Enum<EntityTypes25w14craftmine> i
     static ZOMBIE_VILLAGER: EntityTypes25w14craftmine;
     static ZOMBIFIED_PIGLIN: EntityTypes25w14craftmine;
     static getTypeFromId(paramarg0: number): EntityType;
-    static initialize(paramarg0: Protocol<Object, Object, Object, Object>): void;
+    static initialize(paramarg0: Protocol<any, any, any, any>): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTypes25w14craftmine;
     static values(): (Object | null)[];

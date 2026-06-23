@@ -12,7 +12,7 @@ export interface ProcessPropertiesSupport extends Object{
     getArgumentVectorProgramName(): string;
     getExecutableName(): string;
     getObjectFile(symbol: string): string;
-    getObjectFile(symbol: CEntryPointLiteral<Object>): string;
+    getObjectFile(symbol: CEntryPointLiteral<any>): string;
     getObjectFile(symbolAddress: PointerBase): string;
     getProcessID(): number;
     getProcessID(process: Process): number;

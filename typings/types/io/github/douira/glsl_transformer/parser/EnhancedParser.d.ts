@@ -30,14 +30,14 @@ export class EnhancedParser extends Object implements ParserInterface {
     getTokenStream(): BufferedTokenStream;
     // private handleParseCancellationException(arg0: ParseCancellationException): RuntimeException;
     parse(arg0: string): GLSLParser$TranslationUnitContext;
-    parse<C extends ParserRuleContext>(arg0: string, arg1: ParseShape<C, Object>): C;
+    parse<C extends ParserRuleContext>(arg0: string, arg1: ParseShape<C, any>): C;
     parse<C extends ParserRuleContext>(arg0: string, arg1: (param0: GLSLParser) => C): C;
-    parse<C extends ParserRuleContext>(arg0: string, arg1: ParserRuleContext, arg2: ParseShape<C, Object>): C;
+    parse<C extends ParserRuleContext>(arg0: string, arg1: ParserRuleContext, arg2: ParseShape<C, any>): C;
     parse<C extends ParserRuleContext>(arg0: string, arg1: ParserRuleContext, arg2: (param0: GLSLParser) => C): C;
     // private parse<C extends ParserRuleContext>(arg0: IntStream, arg1: ParserRuleContext, arg2: (param0: GLSLParser) => C): C;
     setLLOnly(): void;
     setParsingStrategy(arg0: EnhancedParser$ParsingStrategy): void;
     setSLLOnly(): void;
     setThrowParseErrors(arg0: boolean): void;
-    setTokenFilter(arg0: TokenFilter<Object>): void;
+    setTokenFilter(arg0: TokenFilter<any>): void;
 }

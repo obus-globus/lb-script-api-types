@@ -23,7 +23,7 @@ export class BlockColumnConfiguration extends Record implements FeatureConfigura
     allowedPlacement(): BlockPredicate;
     direction(): Direction;
     equals(o: Object | null): boolean;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     layers(): BlockColumnConfiguration$Layer[];
     prioritizeTip(): boolean;

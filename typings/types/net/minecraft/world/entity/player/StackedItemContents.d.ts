@@ -14,9 +14,9 @@ export class StackedItemContents extends Object {
     accountStack(itemStack: ItemStack, maxCount: number): void;
     // private canCraft(contents: (param0: Holder<Item>) => boolean[], amount: number, output: (param0: Holder<Item>) => void): boolean;
     canCraft(contents: (param0: Holder<Item>) => boolean[], output: (param0: Holder<Item>) => void): boolean;
-    canCraft(recipe: Recipe<Object>, amount: number, output: (param0: Holder<Item>) => void): boolean;
-    canCraft(recipe: Recipe<Object>, output: (param0: Holder<Item>) => void): boolean;
+    canCraft(recipe: Recipe<any>, amount: number, output: (param0: Holder<Item>) => void): boolean;
+    canCraft(recipe: Recipe<any>, output: (param0: Holder<Item>) => void): boolean;
     clear(): void;
-    getBiggestCraftableStack(recipe: Recipe<Object>, maxSize: number, output: (param0: Holder<Item>) => void): number;
-    getBiggestCraftableStack(recipe: Recipe<Object>, output: (param0: Holder<Item>) => void): number;
+    getBiggestCraftableStack(recipe: Recipe<any>, maxSize: number, output: (param0: Holder<Item>) => void): number;
+    getBiggestCraftableStack(recipe: Recipe<any>, output: (param0: Holder<Item>) => void): number;
 }

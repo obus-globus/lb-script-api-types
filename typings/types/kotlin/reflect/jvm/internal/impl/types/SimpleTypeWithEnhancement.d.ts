@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DelegatingSimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DelegatingSimpleType.d.ts'
 import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
@@ -14,7 +13,7 @@ export class SimpleTypeWithEnhancement extends DelegatingSimpleType implements T
     getOrigin(): SimpleType;
     makeNullableAsSpecified(arg0: boolean): SimpleType;
     refine(arg0: KotlinTypeRefiner): SimpleTypeWithEnhancement;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): SimpleType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): SimpleType;
     replaceDelegate(arg0: SimpleType): SimpleTypeWithEnhancement;
     toString(): string;
 }

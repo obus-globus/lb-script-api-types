@@ -16,7 +16,7 @@ export class ServerPlayNetworkAddon extends AbstractChanneledNetworkAddon<(param
     // private requestedReconfigure: boolean;
     // private sentInitialRegisterPacket: boolean;
     // private server: MinecraftServer;
-    createPacket(arg0: CustomPacketPayload): Packet<Object>;
+    createPacket(arg0: CustomPacketPayload): Packet<any>;
     handleRegistration(arg0: Identifier): void;
     handleUnregistration(arg0: Identifier): void;
     invokeDisconnectEvent(): void;

@@ -12,5 +12,5 @@ export class FilterableComponent extends Filterable<Tag> implements Copyable, Re
     static TYPE: Type<FilterableComponent>;
     constructor(arg0: Tag, arg1: Tag)
     copy(): FilterableComponent;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): FilterableComponent;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): FilterableComponent;
 }

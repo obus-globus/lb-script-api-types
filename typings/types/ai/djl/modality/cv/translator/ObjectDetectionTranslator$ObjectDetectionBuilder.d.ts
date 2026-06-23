@@ -1,6 +1,6 @@
 import type { BaseImageTranslator$ClassificationBuilder } from '../../../../../ai/djl/modality/cv/translator/BaseImageTranslator$ClassificationBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class ObjectDetectionTranslator$ObjectDetectionBuilder<T extends ObjectDetectionTranslator$ObjectDetectionBuilder<ObjectDetectionTranslator$ObjectDetectionBuilder<Object>>> extends BaseImageTranslator$ClassificationBuilder<T> {
+export abstract class ObjectDetectionTranslator$ObjectDetectionBuilder<T extends ObjectDetectionTranslator$ObjectDetectionBuilder<ObjectDetectionTranslator$ObjectDetectionBuilder<any>>> extends BaseImageTranslator$ClassificationBuilder<T> {
     constructor()
     // private applyRatio: boolean;
     // private removePadding: boolean;

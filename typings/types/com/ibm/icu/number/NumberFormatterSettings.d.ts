@@ -14,10 +14,10 @@ import type { NumberingSystem } from '../../../../com/ibm/icu/text/NumberingSyst
 import type { MeasureUnit } from '../../../../com/ibm/icu/util/MeasureUnit.d.ts'
 import type { RoundingMode } from '../../../../java/math/RoundingMode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class NumberFormatterSettings<T extends NumberFormatterSettings<Object>> extends Object {
-    constructor(arg0: NumberFormatterSettings<Object>, arg1: number, arg2: Object)
+export abstract class NumberFormatterSettings<T extends NumberFormatterSettings<any>> extends Object {
+    constructor(arg0: NumberFormatterSettings<any>, arg1: number, arg2: Object)
     // private key: number;
-    // private parent: NumberFormatterSettings<Object>;
+    // private parent: NumberFormatterSettings<any>;
     // private resolvedMacros: MacroProps;
     // private value: Object;
     create(arg0: number, arg1: Object): T;

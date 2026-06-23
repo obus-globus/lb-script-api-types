@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -16,7 +15,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/li
  */
 export class SpeedVulcanGround286 extends SpeedBHopBase {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private afterJumpHandler: EventHook<GameTickEvent>;
     // private jumpEvent: EventHook<PlayerJumpEvent>;
     // private packetHandler: EventHook<PacketEvent>;

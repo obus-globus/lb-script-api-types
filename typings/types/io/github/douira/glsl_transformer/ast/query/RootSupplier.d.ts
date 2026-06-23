@@ -15,12 +15,12 @@ export class RootSupplier extends Object implements Supplier<Root> {
     static PREFIX_UNORDERED_ED_EXACT: RootSupplier;
     static PREFIX_UNORDERED_ED_PREFIX: RootSupplier;
     static supplyDefault(): Root;
-    constructor(arg0: () => NodeIndex<Object>, arg1: () => IdentifierIndex<Object, Object>)
-    constructor(arg0: () => NodeIndex<Object>, arg1: () => IdentifierIndex<Object, Object>, arg2: () => ExternalDeclarationIndex<Object, Object>)
-    // private externalDeclarationIndexSupplier: () => ExternalDeclarationIndex<Object, Object>;
-    // private identifierIndexSupplier: () => IdentifierIndex<Object, Object>;
-    // private nodeIndexSupplier: () => NodeIndex<Object>;
+    constructor(arg0: () => NodeIndex<any>, arg1: () => IdentifierIndex<any, any>)
+    constructor(arg0: () => NodeIndex<any>, arg1: () => IdentifierIndex<any, any>, arg2: () => ExternalDeclarationIndex<any, any>)
+    // private externalDeclarationIndexSupplier: () => ExternalDeclarationIndex<any, any>;
+    // private identifierIndexSupplier: () => IdentifierIndex<any, any>;
+    // private nodeIndexSupplier: () => NodeIndex<any>;
     get(): Root;
-    setIdentifierIndex(arg0: () => IdentifierIndex<Object, Object>): RootSupplier;
-    setNodeIndex(arg0: () => NodeIndex<Object>): RootSupplier;
+    setIdentifierIndex(arg0: () => IdentifierIndex<any, any>): RootSupplier;
+    setNodeIndex(arg0: () => NodeIndex<any>): RootSupplier;
 }

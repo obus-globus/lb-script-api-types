@@ -5,11 +5,11 @@ import type { EntityType } from '../../../../../net/minecraft/world/entity/Entit
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { LootTable } from '../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class VanillaChargedCreeperExplosionLoot$Entry extends Record {
-    private constructor(lootTable: ResourceKey<LootTable>, entityType: EntityType<Object>, item: Item)
-    // private entityType: EntityType<Object>;
+    private constructor(lootTable: ResourceKey<LootTable>, entityType: EntityType<any>, item: Item)
+    // private entityType: EntityType<any>;
     // private item: Item;
     // private lootTable: ResourceKey<LootTable>;
-    entityType(): EntityType<Object>;
+    entityType(): EntityType<any>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     item(): Item;

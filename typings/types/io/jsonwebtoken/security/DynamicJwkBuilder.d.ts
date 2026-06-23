@@ -20,17 +20,17 @@ import type { RSAPublicKey } from '../../../java/security/interfaces/RSAPublicKe
 import type { SecretKey } from '../../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface DynamicJwkBuilder<K extends Key, J extends { [key: string]: any }> extends JwkBuilder<K, J, DynamicJwkBuilder<K, J>>, Object{
-    chain<A extends PublicKey, B extends PrivateKey>(arg0: X509Certificate[]): PublicJwkBuilder<A, B, Object, Object, Object, Object>;
+    chain<A extends PublicKey, B extends PrivateKey>(arg0: X509Certificate[]): PublicJwkBuilder<A, B, any, any, any, any>;
     ecChain(arg0: X509Certificate[]): EcPublicJwkBuilder;
     ecKeyPair(arg0: KeyPair): EcPrivateJwkBuilder;
-    key<A extends PublicKey, B extends PrivateKey>(arg0: A): PublicJwkBuilder<A, B, Object, Object, Object, Object>;
-    key<B extends PrivateKey, A extends PublicKey>(arg0: B): PrivateJwkBuilder<B, A, Object, Object, Object>;
+    key<A extends PublicKey, B extends PrivateKey>(arg0: A): PublicJwkBuilder<A, B, any, any, any, any>;
+    key<B extends PrivateKey, A extends PublicKey>(arg0: B): PrivateJwkBuilder<B, A, any, any, any>;
     key(arg0: ECPrivateKey): EcPrivateJwkBuilder;
     key(arg0: ECPublicKey): EcPublicJwkBuilder;
     key(arg0: RSAPrivateKey): RsaPrivateJwkBuilder;
     key(arg0: RSAPublicKey): RsaPublicJwkBuilder;
     key(arg0: SecretKey): SecretJwkBuilder;
-    keyPair<B extends PrivateKey, A extends PublicKey>(arg0: KeyPair): PrivateJwkBuilder<B, A, Object, Object, Object>;
+    keyPair<B extends PrivateKey, A extends PublicKey>(arg0: KeyPair): PrivateJwkBuilder<B, A, any, any, any>;
     octetChain<A extends PublicKey, B extends PrivateKey>(arg0: X509Certificate[]): OctetPublicJwkBuilder<A, B>;
     octetKey<A extends PrivateKey, B extends PublicKey>(arg0: A): OctetPrivateJwkBuilder<A, B>;
     octetKey<A extends PublicKey, B extends PrivateKey>(arg0: A): OctetPublicJwkBuilder<A, B>;

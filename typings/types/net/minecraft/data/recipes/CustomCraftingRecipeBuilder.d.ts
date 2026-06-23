@@ -15,6 +15,6 @@ export class CustomCraftingRecipeBuilder extends Object {
     // private group: string;
     group(group: string): CustomCraftingRecipeBuilder;
     save(output: RecipeOutput, name: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlockedBy(name: string, criterion: Criterion<Object>): CustomCraftingRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlockedBy(name: string, criterion: Criterion<any>): CustomCraftingRecipeBuilder;
 }

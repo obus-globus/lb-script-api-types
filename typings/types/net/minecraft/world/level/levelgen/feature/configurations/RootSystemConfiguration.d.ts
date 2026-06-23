@@ -27,5 +27,5 @@ export class RootSystemConfiguration extends Object implements FeatureConfigurat
     rootReplaceable: TagKey<Block>;
     rootStateProvider: BlockStateProvider;
     treeFeature: Holder<PlacedFeature>;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

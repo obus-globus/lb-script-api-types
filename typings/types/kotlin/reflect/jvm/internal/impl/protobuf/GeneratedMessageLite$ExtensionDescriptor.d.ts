@@ -6,14 +6,14 @@ import type { MessageLite$Builder } from '../../../../../../kotlin/reflect/jvm/i
 import type { WireFormat$FieldType } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/WireFormat$FieldType.d.ts'
 import type { WireFormat$JavaType } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/WireFormat$JavaType.d.ts'
 export class GeneratedMessageLite$ExtensionDescriptor extends Object implements FieldSet$FieldDescriptorLite<GeneratedMessageLite$ExtensionDescriptor> {
-    constructor(arg0: Internal$EnumLiteMap<Object>, arg1: number, arg2: WireFormat$FieldType, arg3: boolean, arg4: boolean)
-    // private enumTypeMap: Internal$EnumLiteMap<Object>;
+    constructor(arg0: Internal$EnumLiteMap<any>, arg1: number, arg2: WireFormat$FieldType, arg3: boolean, arg4: boolean)
+    // private enumTypeMap: Internal$EnumLiteMap<any>;
     // private isPacked: boolean;
     // private isRepeated: boolean;
     readonly number: number;
     // private type: WireFormat$FieldType;
     compareTo(arg0: GeneratedMessageLite$ExtensionDescriptor): number;
-    getEnumType(): Internal$EnumLiteMap<Object>;
+    getEnumType(): Internal$EnumLiteMap<any>;
     getLiteJavaType(): WireFormat$JavaType;
     getLiteType(): WireFormat$FieldType;
     getNumber(): number;

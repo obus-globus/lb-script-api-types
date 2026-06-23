@@ -8,15 +8,15 @@ import type { BlockModel$BakingContext } from '../../../../../net/minecraft/clie
 import type { BlockModel$Unbaked } from '../../../../../net/minecraft/client/renderer/block/model/BlockModel$Unbaked.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class SelectBlockModel$Unbaked extends Record implements BlockModel$Unbaked {
-    constructor(transformation: Optional<Transformation>, unbakedSwitch: SelectBlockModel$UnbakedSwitch<Object, Object>, fallback: Optional<BlockModel$Unbaked>)
+    constructor(transformation: Optional<Transformation>, unbakedSwitch: SelectBlockModel$UnbakedSwitch<any, Object>, fallback: Optional<BlockModel$Unbaked>)
     // private fallback: Optional<BlockModel$Unbaked>;
     // private transformation: Optional<Transformation>;
-    // private unbakedSwitch: SelectBlockModel$UnbakedSwitch<Object, Object>;
+    // private unbakedSwitch: SelectBlockModel$UnbakedSwitch<any, Object>;
     bake(context: BlockModel$BakingContext, transformation: Matrix4fc): BlockModel;
     equals(o: Object | null): boolean;
     fallback(): Optional<BlockModel$Unbaked>;
     hashCode(): number;
     toString(): string;
     transformation(): Optional<Transformation>;
-    unbakedSwitch(): SelectBlockModel$UnbakedSwitch<Object, Object>;
+    unbakedSwitch(): SelectBlockModel$UnbakedSwitch<any, Object>;
 }

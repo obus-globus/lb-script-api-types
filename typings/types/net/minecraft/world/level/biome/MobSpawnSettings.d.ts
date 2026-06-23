@@ -9,11 +9,11 @@ export class MobSpawnSettings extends Object {
     static CODEC: MapCodec<MobSpawnSettings>;
     static EMPTY: MobSpawnSettings;
     static EMPTY_MOB_LIST: WeightedList<MobSpawnSettings$SpawnerData>;
-    private constructor(creatureGenerationProbability: number, spawners: { [key in MobCategory]: WeightedList<MobSpawnSettings$SpawnerData> }, mobSpawnCosts: Map<EntityType<Object>, MobSpawnSettings$MobSpawnCost>)
+    private constructor(creatureGenerationProbability: number, spawners: { [key in MobCategory]: WeightedList<MobSpawnSettings$SpawnerData> }, mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>)
     creatureGenerationProbability: number;
-    mobSpawnCosts: Map<EntityType<Object>, MobSpawnSettings$MobSpawnCost>;
+    mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
     spawners: { [key in MobCategory]: WeightedList<MobSpawnSettings$SpawnerData> };
     getCreatureProbability(): number;
-    getMobSpawnCost(type: EntityType<Object>): MobSpawnSettings$MobSpawnCost;
+    getMobSpawnCost(type: EntityType<any>): MobSpawnSettings$MobSpawnCost;
     getMobs(category: MobCategory): WeightedList<MobSpawnSettings$SpawnerData>;
 }

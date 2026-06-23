@@ -15,7 +15,7 @@ export class LootDataType<T extends Validatable> extends Record {
     static MODIFIER: LootDataType<LootItemFunction>;
     static PREDICATE: LootDataType<LootItemCondition>;
     static TABLE: LootDataType<LootTable>;
-    static values(): Stream<LootDataType<Object>>;
+    static values(): Stream<LootDataType<any>>;
     constructor(registryKey: ResourceKey<T[]>, codec: Codec<T>, contextGetter: (param0: T) => ContextKeySet)
     // private codec: Codec<T>;
     // private contextGetter: (param0: T) => ContextKeySet;

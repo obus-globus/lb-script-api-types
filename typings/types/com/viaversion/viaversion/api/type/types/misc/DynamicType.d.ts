@@ -6,14 +6,13 @@ import type { DynamicType$RawDataFiller } from '../../../../../../../com/viavers
 import type { IdHolder } from '../../../../../../../com/viaversion/viaversion/util/IdHolder.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class DynamicType<T extends IdHolder> extends Type<T> {
     constructor(arg0: { [key: string]: any }, arg1: Class<T>)
     constructor(arg0: Class<T>)
     // private readers: { [key: string]: any };
-    filler(arg0: Protocol<Object, Object, Object, Object>): DynamicType$DataFiller;
-    filler(arg0: Protocol<Object, Object, Object, Object>, arg1: boolean): DynamicType$DataFiller;
-    mappings(arg0: Protocol<Object, Object, Object, Object>): FullMappings;
+    filler(arg0: Protocol<any, any, any, any>): DynamicType$DataFiller;
+    filler(arg0: Protocol<any, any, any, any>, arg1: boolean): DynamicType$DataFiller;
+    mappings(arg0: Protocol<any, any, any, any>): FullMappings;
     rawFiller(): DynamicType$RawDataFiller;
     readData(arg0: ByteBuf, arg1: T): void;
 }

@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -22,7 +21,7 @@ export class FlyHypixelFlat extends Mode {
     // private flyTicks: number;
     // private isFlying: boolean;
     // private packetHandler: EventHook<PacketEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private speedHandler: EventHook<GameTickEvent>;
     // private timer: number;
     // private /*not mapped: */ getTimer(): number;

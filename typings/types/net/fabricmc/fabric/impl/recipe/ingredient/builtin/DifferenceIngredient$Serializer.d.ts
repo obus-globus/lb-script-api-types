@@ -6,8 +6,8 @@ import type { RegistryFriendlyByteBuf } from '../../../../../../../net/minecraft
 import type { StreamCodec } from '../../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class DifferenceIngredient$Serializer extends Object implements CustomIngredientSerializer<DifferenceIngredient> {
-    static get(paramarg0: Identifier): CustomIngredientSerializer<Object>;
-    static register(paramarg0: CustomIngredientSerializer<Object>): void;
+    static get(paramarg0: Identifier): CustomIngredientSerializer<any>;
+    static register(paramarg0: CustomIngredientSerializer<any>): void;
     private constructor()
     getCodec(): MapCodec<DifferenceIngredient>;
     getIdentifier(): Identifier;

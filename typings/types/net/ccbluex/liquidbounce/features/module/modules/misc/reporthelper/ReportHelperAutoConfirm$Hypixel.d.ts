@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { ReportHelperAutoConfirm$Mode } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/reporthelper/ReportHelperAutoConfirm$Mode.d.ts'
 import type { AbstractContainerScreen } from '../../../../../../../../net/minecraft/client/gui/screens/inventory/AbstractContainerScreen.d.ts'
@@ -15,5 +14,5 @@ export class ReportHelperAutoConfirm$Hypixel extends ReportHelperAutoConfirm$Mod
     static Companion: Tagged$Companion;
     static INSTANCE: ReportHelperAutoConfirm$Hypixel;
     // private emptyIndices: number[];
-    protected onScreenUpdated(screen: AbstractContainerScreen<Object>): void;
+    protected onScreenUpdated(screen: AbstractContainerScreen<any>): void;
 }

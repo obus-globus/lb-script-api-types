@@ -9,11 +9,10 @@ import type { TextHoverEvent } from '../../../../../../../../com/viaversion/viav
 import type { EventSerializer } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/EventSerializer.d.ts'
 import type { EventSerializer$IOFunction } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/EventSerializer$IOFunction.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class HoverEventSerializer<T extends HoverEvent> extends EventSerializer<HoverEvent, T, HoverEventAction, TextComponent> {
     static ACHIEVEMENT: HoverEventSerializer<AchievementHoverEvent>;
     static LEGACY_ENTITY: HoverEventSerializer<EntityHoverEvent>;
     static LEGACY_ITEM: HoverEventSerializer<ItemHoverEvent>;
     static TEXT: HoverEventSerializer<TextHoverEvent>;
-    constructor(arg0: (param0: HoverEvent) => boolean, arg1: (param0: SNbt<Object>, param1: T) => TextComponent, arg2: HoverEventAction, arg3: (param0: SNbt<Object>, param1: TextComponent) => T)
+    constructor(arg0: (param0: HoverEvent) => boolean, arg1: (param0: SNbt<any>, param1: T) => TextComponent, arg2: HoverEventAction, arg3: (param0: SNbt<any>, param1: TextComponent) => T)
 }

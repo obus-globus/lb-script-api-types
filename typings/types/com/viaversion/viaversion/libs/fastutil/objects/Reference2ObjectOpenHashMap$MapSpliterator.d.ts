@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class Reference2ObjectOpenHashMap$MapSpliterator<ConsumerType extends Object | number | string | boolean, SplitType extends Reference2ObjectOpenHashMap$MapSpliterator<Object, Object>> extends Object {
-    constructor(null_: Reference2ObjectOpenHashMap$MapSpliterator<Object, Object>)
-    constructor(null_: Reference2ObjectOpenHashMap$MapSpliterator<Object, Object>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+export abstract class Reference2ObjectOpenHashMap$MapSpliterator<ConsumerType extends Object | number | string | boolean, SplitType extends Reference2ObjectOpenHashMap$MapSpliterator<Object, any>> extends Object {
+    constructor(null_: Reference2ObjectOpenHashMap$MapSpliterator<Object, any>)
+    constructor(null_: Reference2ObjectOpenHashMap$MapSpliterator<Object, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

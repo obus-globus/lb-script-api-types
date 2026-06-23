@@ -11,7 +11,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export class ClientPlayNetworkAddon extends ClientCommonNetworkAddon<(param0: Object, param1: ClientPlayNetworking$Context) => void, ClientPacketListener> {
     constructor(arg0: ClientPacketListener, arg1: Minecraft)
     // private context: ClientPlayNetworkAddon$ContextImpl;
-    createPacket(arg0: CustomPacketPayload): Packet<Object>;
+    createPacket(arg0: CustomPacketPayload): Packet<any>;
     invokeDisconnectEvent(): void;
     invokeInitEvent(): void;
     invokeRegisterEvent(arg0: Identifier[]): void;

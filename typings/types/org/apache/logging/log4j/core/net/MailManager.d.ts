@@ -9,5 +9,5 @@ export abstract class MailManager extends AbstractManager {
     static hasManager(paramname: string): boolean;
     constructor(loggerContext: LoggerContext, name: string)
     add(event: LogEvent): void;
-    sendEvents(layout: Layout<Object>, appendEvent: LogEvent): void;
+    sendEvents(layout: Layout<any>, appendEvent: LogEvent): void;
 }

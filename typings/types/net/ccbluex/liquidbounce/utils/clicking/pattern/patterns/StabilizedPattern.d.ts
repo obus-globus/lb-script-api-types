@@ -8,5 +8,5 @@ import type { ClickPattern } from '../../../../../../../net/ccbluex/liquidbounce
  */
 export class StabilizedPattern extends Object implements ClickPattern {
     static INSTANCE: StabilizedPattern;
-    fill(clickArray: number[], cps: { start: number; endInclusive: number; step: number }, clicker: Clicker<Object>): void;
+    fill(clickArray: number[], cps: { start: number; endInclusive: number; step: number }, clicker: Clicker<any>): void;
 }

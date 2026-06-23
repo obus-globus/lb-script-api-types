@@ -21,7 +21,7 @@ export class EntitySelector extends Object {
     static INFINITE: number;
     static ORDER_ARBITRARY: (param0: Vec3, param1: Entity[]) => void;
     static joinNames(paramentities: Entity[]): Component;
-    constructor(maxResults: number, includesEntities: boolean, worldLimited: boolean, contextFreePredicates: (param0: Entity) => boolean[], range: MinMaxBounds$Doubles, position: (param0: Vec3) => Vec3, aabb: AABB, order: (param0: Vec3, param1: Entity[]) => void, currentEntity: boolean, playerName: string, entityUUID: UUID, type: EntityType<Object>, usesSelector: boolean)
+    constructor(maxResults: number, includesEntities: boolean, worldLimited: boolean, contextFreePredicates: (param0: Entity) => boolean[], range: MinMaxBounds$Doubles, position: (param0: Vec3) => Vec3, aabb: AABB, order: (param0: Vec3, param1: Entity[]) => void, currentEntity: boolean, playerName: string, entityUUID: UUID, type: EntityType<any>, usesSelector: boolean)
     // private aabb: AABB;
     // private contextFreePredicates: (param0: Entity) => boolean[];
     // private currentEntity: boolean;
@@ -32,7 +32,7 @@ export class EntitySelector extends Object {
     // private playerName: string;
     // private position: (param0: Vec3) => Vec3;
     // private range: MinMaxBounds$Doubles;
-    // private type: EntityTypeTest<Entity, Object>;
+    // private type: EntityTypeTest<Entity, any>;
     // private usesSelector: boolean;
     readonly worldLimited: boolean;
     // private addEntities(result: Entity[], level: ServerLevel, absoluteAABB: AABB, predicate: (param0: Entity) => boolean): void;

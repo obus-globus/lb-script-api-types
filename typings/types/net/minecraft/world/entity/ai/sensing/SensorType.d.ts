@@ -24,7 +24,7 @@ import type { VillagerBabiesSensor } from '../../../../../../net/minecraft/world
 import type { VillagerHostilesSensor } from '../../../../../../net/minecraft/world/entity/ai/sensing/VillagerHostilesSensor.d.ts'
 import type { WardenEntitySensor } from '../../../../../../net/minecraft/world/entity/ai/sensing/WardenEntitySensor.d.ts'
 import type { Armadillo } from '../../../../../../net/minecraft/world/entity/animal/armadillo/Armadillo.d.ts'
-export class SensorType<U extends Sensor<Object>> extends Object {
+export class SensorType<U extends Sensor<any>> extends Object {
     static ARMADILLO_SCARE_DETECTED: SensorType<MobSensor<Armadillo>>;
     static AXOLOTL_ATTACKABLES: SensorType<AxolotlAttackablesSensor>;
     static BREEZE_ATTACK_ENTITY_SENSOR: SensorType<BreezeAttackEntitySensor>;

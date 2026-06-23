@@ -4,7 +4,7 @@ import type { BooleanSpliterator } from '../../../../../it/unimi/dsi/fastutil/bo
 import type { Reference2BooleanOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2BooleanOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2BooleanOpenHashMap$ValueSpliterator extends Reference2BooleanOpenHashMap$MapSpliterator<Object, Object> implements BooleanSpliterator {
+export class Reference2BooleanOpenHashMap$ValueSpliterator extends Reference2BooleanOpenHashMap$MapSpliterator<Object, any> implements BooleanSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

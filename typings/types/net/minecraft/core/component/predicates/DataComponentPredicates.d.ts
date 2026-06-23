@@ -31,6 +31,6 @@ export class DataComponentPredicates extends Object {
     static VILLAGER_VARIANT: DataComponentPredicate$Type<VillagerTypePredicate>;
     static WRITABLE_BOOK: DataComponentPredicate$Type<WritableBookPredicate>;
     static WRITTEN_BOOK: DataComponentPredicate$Type<WrittenBookPredicate>;
-    static bootstrap(paramregistry: DataComponentPredicate$Type<Object>[]): DataComponentPredicate$Type<Object>;
+    static bootstrap(paramregistry: DataComponentPredicate$Type<any>[]): DataComponentPredicate$Type<any>;
     constructor()
 }

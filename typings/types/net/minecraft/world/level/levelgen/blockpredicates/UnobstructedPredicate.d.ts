@@ -53,5 +53,5 @@ export class UnobstructedPredicate extends Record implements BlockPredicate {
     offset(): Vec3i;
     test(worldGenLevel: WorldGenLevel, pos: BlockPos): boolean;
     toString(): string;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

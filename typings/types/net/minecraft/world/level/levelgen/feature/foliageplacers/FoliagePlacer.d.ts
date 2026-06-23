@@ -22,5 +22,5 @@ export abstract class FoliagePlacer extends Object {
     placeLeavesRowWithHangingLeavesBelow(level: WorldGenLevel, foliageSetter: FoliagePlacer$FoliageSetter, random: RandomSource, config: TreeConfiguration, origin: BlockPos, currentRadius: number, y: number, doubleTrunk: boolean, hangingLeavesChance: number, hangingLeavesExtensionChance: number): void;
     shouldSkipLocation(random: RandomSource, dx: number, y: number, dz: number, currentRadius: number, doubleTrunk: boolean): boolean;
     shouldSkipLocationSigned(random: RandomSource, dx: number, y: number, dz: number, currentRadius: number, doubleTrunk: boolean): boolean;
-    type(): FoliagePlacerType<Object>;
+    type(): FoliagePlacerType<any>;
 }

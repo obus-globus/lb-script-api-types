@@ -3,7 +3,7 @@ import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class TypeParameter<T extends Object | number | string | boolean> extends TypeCapture<T> {
     constructor()
-    // private typeVariable: TypeVariable<Object>;
+    // private typeVariable: TypeVariable<any>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

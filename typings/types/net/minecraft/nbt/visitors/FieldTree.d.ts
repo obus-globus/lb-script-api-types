@@ -6,13 +6,13 @@ export class FieldTree extends Record {
     static createRoot(): FieldTree;
     // private depth: number;
     // private fieldsToRecurse: { [key: string]: FieldTree };
-    // private selectedFields: { [key: string]: TagType<Object> };
+    // private selectedFields: { [key: string]: TagType<any> };
     addEntry(field: FieldSelector): void;
     depth(): number;
     equals(o: Object | null): boolean;
     fieldsToRecurse(): { [key: string]: FieldTree };
     hashCode(): number;
-    isSelected(type: TagType<Object>, id: string): boolean;
-    selectedFields(): { [key: string]: TagType<Object> };
+    isSelected(type: TagType<any>, id: string): boolean;
+    selectedFields(): { [key: string]: TagType<any> };
     toString(): string;
 }

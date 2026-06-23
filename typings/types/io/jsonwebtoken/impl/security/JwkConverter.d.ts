@@ -9,11 +9,11 @@ export class JwkConverter<T extends { [key: string]: any }> extends Object imple
     static JWK_CLASS: Class<{ [key: string]: any }>;
     static PUBLIC_JWK: JwkConverter<{ [key: string]: any }>;
     static PUBLIC_JWK_CLASS: Class<{ [key: string]: any }>;
-    constructor(arg0: Supplier<DynamicJwkBuilder<Object, Object>>)
+    constructor(arg0: Supplier<DynamicJwkBuilder<any, any>>)
     constructor(arg0: Class<T>)
-    constructor(arg0: Class<T>, arg1: Supplier<DynamicJwkBuilder<Object, Object>>)
+    constructor(arg0: Class<T>, arg1: Supplier<DynamicJwkBuilder<any, any>>)
     // private desiredType: Class<T>;
-    // private supplier: Supplier<DynamicJwkBuilder<Object, Object>>;
+    // private supplier: Supplier<DynamicJwkBuilder<any, any>>;
     applyFrom(arg0: Object): T;
     applyTo(arg0: T): Object;
     // private unexpectedIAE(arg0: { [key: string]: any }): IllegalArgumentException;

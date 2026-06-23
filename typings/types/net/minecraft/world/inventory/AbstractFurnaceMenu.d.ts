@@ -40,8 +40,8 @@ export abstract class AbstractFurnaceMenu extends RecipeBookMenu {
     static getRedstoneSignalFromBlockEntity(paramblockEntity: BlockEntity): number;
     static getRedstoneSignalFromContainer(paramcontainer: ItemStack[]): number;
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
-    constructor(menuType: MenuType<Object>, recipeType: RecipeType<AbstractCookingRecipe>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[])
-    constructor(menuType: MenuType<Object>, recipeType: RecipeType<AbstractCookingRecipe>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[], container: ItemStack[], data: ContainerData)
+    constructor(menuType: MenuType<any>, recipeType: RecipeType<AbstractCookingRecipe>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[])
+    constructor(menuType: MenuType<any>, recipeType: RecipeType<AbstractCookingRecipe>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[], container: ItemStack[], data: ContainerData)
     // private acceptedInputs: RecipePropertySet;
     // private container: ItemStack[];
     readonly data: ContainerData;
@@ -54,7 +54,7 @@ export abstract class AbstractFurnaceMenu extends RecipeBookMenu {
     getLitProgress(): number;
     getRecipeBookType(): RecipeBookType;
     getResultSlot(): Slot;
-    handlePlacement(useMaxItems: boolean, allowDroppingItemsToClear: boolean, recipe: RecipeHolder<Object>, level: ServerLevel, inventory: (Object | null)[]): RecipeBookMenu$PostPlaceAction;
+    handlePlacement(useMaxItems: boolean, allowDroppingItemsToClear: boolean, recipe: RecipeHolder<any>, level: ServerLevel, inventory: (Object | null)[]): RecipeBookMenu$PostPlaceAction;
     isFuel(itemStack: ItemStack): boolean;
     isLit(): boolean;
     quickMoveStack(player: Player, slotIndex: number): ItemStack;

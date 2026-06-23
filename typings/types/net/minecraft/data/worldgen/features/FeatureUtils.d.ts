@@ -6,9 +6,9 @@ import type { Feature } from '../../../../../net/minecraft/world/level/levelgen/
 import type { FeatureConfiguration } from '../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 import type { NoneFeatureConfiguration } from '../../../../../net/minecraft/world/level/levelgen/feature/configurations/NoneFeatureConfiguration.d.ts'
 export class FeatureUtils extends Object {
-    static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<Object, Object>>): void;
-    static createKey(paramname: string): ResourceKey<ConfiguredFeature<Object, Object>>;
-    static register(paramcontext: BootstrapContext<ConfiguredFeature<Object, Object>>, paramid: ResourceKey<ConfiguredFeature<Object, Object>>, paramfeature: Object | null, paramconfig: FeatureConfiguration | null): void;
-    static register(paramcontext: BootstrapContext<ConfiguredFeature<Object, Object>>, paramid: ResourceKey<ConfiguredFeature<Object, Object>>, paramfeature: Feature<NoneFeatureConfiguration>): void;
+    static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>): void;
+    static createKey(paramname: string): ResourceKey<ConfiguredFeature<any, any>>;
+    static register(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>, paramid: ResourceKey<ConfiguredFeature<any, any>>, paramfeature: Object | null, paramconfig: FeatureConfiguration | null): void;
+    static register(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>, paramid: ResourceKey<ConfiguredFeature<any, any>>, paramfeature: Feature<NoneFeatureConfiguration>): void;
     constructor()
 }

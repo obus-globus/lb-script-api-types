@@ -7,6 +7,6 @@ export interface ContinuationInterceptor extends Object, CoroutineContext$Elemen
     fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     interceptContinuation<T extends Object | number | string | boolean>(continuation: Continuation<T>): Continuation<T>;
-    minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
     releaseInterceptedContinuation(continuation: Continuation<Object>): void;
 }

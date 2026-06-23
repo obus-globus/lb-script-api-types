@@ -8,5 +8,5 @@ export abstract class FeatureSize extends Object {
     // private minClippedHeight: OptionalInt;
     getSizeAtHeight(treeHeight: number, yo: number): number;
     minClippedHeight(): OptionalInt;
-    type(): FeatureSizeType<Object>;
+    type(): FeatureSizeType<any>;
 }

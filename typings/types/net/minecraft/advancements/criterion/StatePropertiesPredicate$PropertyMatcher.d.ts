@@ -11,7 +11,7 @@ export class StatePropertiesPredicate$PropertyMatcher extends Record {
     private constructor(name: string, valueMatcher: StatePropertiesPredicate$ValueMatcher)
     // private name: string;
     // private valueMatcher: StatePropertiesPredicate$ValueMatcher;
-    checkState(states: StateDefinition<Object, Object>): Optional<string>;
+    checkState(states: StateDefinition<Object, any>): Optional<string>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     match<S extends StateHolder<Object, S>>(definition: StateDefinition<Object, S>, state: S): boolean;

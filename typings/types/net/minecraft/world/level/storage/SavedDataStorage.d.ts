@@ -15,14 +15,14 @@ import type { SavedData } from '../../../../../net/minecraft/world/level/savedda
 import type { SavedDataType } from '../../../../../net/minecraft/world/level/saveddata/SavedDataType.d.ts'
 export class SavedDataStorage extends Object implements AutoCloseable {
     constructor(dataFolder: Path[], fixerUpper: DataFixer, registries: HolderLookup$Provider)
-    // private cache: Map<SavedDataType<Object>, Optional<SavedData>>;
+    // private cache: Map<SavedDataType<any>, Optional<SavedData>>;
     // private closed: boolean;
     // private dataFolder: Path[];
     // private fixerUpper: DataFixer;
     // private pendingWriteFuture: CompletableFuture<Object>;
     // private registries: HolderLookup$Provider;
     close(): void;
-    // private collectDirtyTagsToSave(): Map<SavedDataType<Object>, CompoundTag>;
+    // private collectDirtyTagsToSave(): Map<SavedDataType<any>, CompoundTag>;
     computeIfAbsent<T extends SavedData>(type: SavedDataType<T>): T;
     // private encodeUnchecked<T extends SavedData>(type: SavedDataType<T>, data: SavedData, ops: RegistryOps<Tag>): CompoundTag;
     get<T extends SavedData>(type: SavedDataType<T>): T;
@@ -33,5 +33,5 @@ export class SavedDataStorage extends Object implements AutoCloseable {
     saveAndJoin(): void;
     scheduleSave(): CompletableFuture<Object>;
     set<T extends SavedData>(type: SavedDataType<T>, data: T): void;
-    // private tryWrite(type: SavedDataType<Object>, tag: CompoundTag): void;
+    // private tryWrite(type: SavedDataType<any>, tag: CompoundTag): void;
 }

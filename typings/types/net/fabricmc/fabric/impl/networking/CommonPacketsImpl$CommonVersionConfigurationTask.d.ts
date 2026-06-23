@@ -12,7 +12,7 @@ export class CommonPacketsImpl$CommonVersionConfigurationTask extends Record imp
     addon(): ServerConfigurationNetworkAddon;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    start(arg0: (param0: Packet<Object>) => void): void;
+    start(arg0: (param0: Packet<any>) => void): void;
     tick(): boolean;
     toString(): string;
     type(): ConfigurationTask$Type;

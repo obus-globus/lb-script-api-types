@@ -34,7 +34,7 @@ export class BlockEntityRenderDispatcher extends Object implements FabricResourc
     // private font: Font;
     // private itemModelResolver: ItemModelResolver;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
-    // private renderers: Map<BlockEntityType<Object>, BlockEntityRenderer<Object, Object>>;
+    // private renderers: Map<BlockEntityType<any>, BlockEntityRenderer<any, any>>;
     // private sprites: SpriteGetter;
     fabric$getId(): Identifier;
     getName(): string;

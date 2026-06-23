@@ -23,7 +23,7 @@ export abstract class FabricBlockLootSubProvider extends BlockLootSubProvider im
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     static createCandleCakeDrops(paramcandle: Block): LootTable$Builder;
-    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;
     static noDrop(): LootTable$Builder;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>)
     // private excludedFromStrictValidation: Identifier[];

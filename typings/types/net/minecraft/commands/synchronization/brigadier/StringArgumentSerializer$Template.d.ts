@@ -8,5 +8,5 @@ export class StringArgumentSerializer$Template extends Object implements Argumen
     constructor(null_: StringArgumentSerializer$Template, type: StringArgumentType$StringType)
     // private type: StringArgumentType$StringType;
     instantiate(context: CommandBuildContext): StringArgumentType;
-    type(): ArgumentTypeInfo<StringArgumentType, Object>;
+    type(): ArgumentTypeInfo<StringArgumentType, any>;
 }

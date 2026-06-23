@@ -8,5 +8,5 @@ export class ResourceKeyArgument$Info$Template extends Object implements Argumen
     private constructor(null_: ResourceKeyArgument$Info$Template)
     // private registryKey: ResourceKey<T[]>;
     instantiate<T extends Object | number | string | boolean>(context: CommandBuildContext): ResourceKeyArgument<T>;
-    type<T extends Object | number | string | boolean>(): ArgumentTypeInfo<ResourceKeyArgument<T>, Object>;
+    type<T extends Object | number | string | boolean>(): ArgumentTypeInfo<ResourceKeyArgument<T>, any>;
 }

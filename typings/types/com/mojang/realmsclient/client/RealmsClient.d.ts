@@ -43,7 +43,7 @@ export class RealmsClient extends Object {
     createSnapshotRealm(parentId: number): RealmsServer;
     deleteRealm(realmId: number): void;
     deop(realmId: number, profileId: UUID): Ops;
-    // private execute(request: Request<Object>): string;
+    // private execute(request: Request<any>): string;
     // private fetchFeatureFlags(): string[];
     fetchWorldTemplates(page: number, pageSize: number, type: RealmsServer$WorldType): WorldTemplatePaginatedList;
     getFeatureFlags(): string[];

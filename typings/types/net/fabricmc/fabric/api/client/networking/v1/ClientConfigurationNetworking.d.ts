@@ -6,7 +6,7 @@ import type { CustomPacketPayload } from '../../../../../../../net/minecraft/net
 import type { CustomPacketPayload$Type } from '../../../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload$Type.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientConfigurationNetworking extends Object {
-    static canSend(paramarg0: CustomPacketPayload$Type<Object>): boolean;
+    static canSend(paramarg0: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: Identifier): boolean;
     static getGlobalReceivers(): Identifier[];
     static getReceived(): Identifier[];
@@ -15,7 +15,7 @@ export class ClientConfigurationNetworking extends Object {
     static registerGlobalReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ClientConfigurationNetworking$Context) => void): boolean;
     static registerReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ClientConfigurationNetworking$Context) => void): boolean;
     static send(paramarg0: CustomPacketPayload): void;
-    static unregisterGlobalReceiver(paramarg0: CustomPacketPayload$Type<Object>): (param0: Object, param1: ClientConfigurationNetworking$Context) => void;
+    static unregisterGlobalReceiver(paramarg0: CustomPacketPayload$Type<any>): (param0: Object, param1: ClientConfigurationNetworking$Context) => void;
     static unregisterReceiver(paramarg0: Identifier): (param0: Object, param1: ClientConfigurationNetworking$Context) => void;
     private constructor()
 }

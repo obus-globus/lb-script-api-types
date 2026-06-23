@@ -22,18 +22,18 @@ export class TreeGrower extends Object {
     static OAK: TreeGrower;
     static PALE_OAK: TreeGrower;
     static SPRUCE: TreeGrower;
-    constructor(name: string, megaTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, tree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, flowers: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>)
-    constructor(name: string, secondaryChance: number, megaTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, secondaryMegaTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, tree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, secondaryTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, flowers: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>, secondaryFlowers: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>)
-    // private flowers: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
-    // private megaTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
+    constructor(name: string, megaTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>, tree: Optional<ResourceKey<ConfiguredFeature<any, any>>>, flowers: Optional<ResourceKey<ConfiguredFeature<any, any>>>)
+    constructor(name: string, secondaryChance: number, megaTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>, secondaryMegaTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>, tree: Optional<ResourceKey<ConfiguredFeature<any, any>>>, secondaryTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>, flowers: Optional<ResourceKey<ConfiguredFeature<any, any>>>, secondaryFlowers: Optional<ResourceKey<ConfiguredFeature<any, any>>>)
+    // private flowers: Optional<ResourceKey<ConfiguredFeature<any, any>>>;
+    // private megaTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>;
     // private name: string;
     // private secondaryChance: number;
-    // private secondaryFlowers: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
-    // private secondaryMegaTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
-    // private secondaryTree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
-    // private tree: Optional<ResourceKey<ConfiguredFeature<Object, Object>>>;
-    // private getConfiguredFeature(random: RandomSource, hasFlowers: boolean): ResourceKey<ConfiguredFeature<Object, Object>>;
-    // private getConfiguredMegaFeature(random: RandomSource): ResourceKey<ConfiguredFeature<Object, Object>>;
+    // private secondaryFlowers: Optional<ResourceKey<ConfiguredFeature<any, any>>>;
+    // private secondaryMegaTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>;
+    // private secondaryTree: Optional<ResourceKey<ConfiguredFeature<any, any>>>;
+    // private tree: Optional<ResourceKey<ConfiguredFeature<any, any>>>;
+    // private getConfiguredFeature(random: RandomSource, hasFlowers: boolean): ResourceKey<ConfiguredFeature<any, any>>;
+    // private getConfiguredMegaFeature(random: RandomSource): ResourceKey<ConfiguredFeature<any, any>>;
     getMinimumHeight(level: ServerLevel): OptionalInt;
     growTree(level: ServerLevel, generator: ChunkGenerator, pos: BlockPos, state: BlockState, random: RandomSource): boolean;
     // private hasFlowers(level: LevelAccessor, pos: BlockPos): boolean;

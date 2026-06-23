@@ -11,10 +11,10 @@ import type { LootItemConditionalFunction$Builder } from '../../../../../../../n
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class ApplyBonusCount extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<ApplyBonusCount>;
-    static addBonusBinomialDistributionCount(paramenchantment: Holder<Enchantment>, paramprobability: number, paramextraRounds: number): LootItemConditionalFunction$Builder<Object>;
-    static addOreBonusCount(paramenchantment: Holder<Enchantment>): LootItemConditionalFunction$Builder<Object>;
-    static addUniformBonusCount(paramenchantment: Holder<Enchantment>): LootItemConditionalFunction$Builder<Object>;
-    static addUniformBonusCount(paramenchantment: Holder<Enchantment>, parambonusMultiplier: number): LootItemConditionalFunction$Builder<Object>;
+    static addBonusBinomialDistributionCount(paramenchantment: Holder<Enchantment>, paramprobability: number, paramextraRounds: number): LootItemConditionalFunction$Builder<any>;
+    static addOreBonusCount(paramenchantment: Holder<Enchantment>): LootItemConditionalFunction$Builder<any>;
+    static addUniformBonusCount(paramenchantment: Holder<Enchantment>): LootItemConditionalFunction$Builder<any>;
+    static addUniformBonusCount(paramenchantment: Holder<Enchantment>, parambonusMultiplier: number): LootItemConditionalFunction$Builder<any>;
     private constructor(predicates: LootItemCondition[], enchantment: Holder<Enchantment>, formula: ApplyBonusCount$Formula)
     // private enchantment: Holder<Enchantment>;
     // private formula: ApplyBonusCount$Formula;

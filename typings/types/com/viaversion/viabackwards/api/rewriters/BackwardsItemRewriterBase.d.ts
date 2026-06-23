@@ -7,9 +7,8 @@ import type { ClientboundPacketType } from '../../../../../com/viaversion/viaver
 import type { ServerboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { ItemRewriter } from '../../../../../com/viaversion/viaversion/rewriter/ItemRewriter.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export abstract class BackwardsItemRewriterBase<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, Object, Object, S>> extends ItemRewriter<C, S, T> {
+export abstract class BackwardsItemRewriterBase<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, any, any, S>> extends ItemRewriter<C, S, T> {
     constructor(arg0: T, arg1: Type<Item>, arg2: Type<Item[]>, arg3: Type<Item>, arg4: Type<Item[]>, arg5: boolean)
     constructor(arg0: T, arg1: Type<Item>, arg2: Type<Item[]>, arg3: boolean)
     // private jsonNameFormat: boolean;

@@ -45,10 +45,10 @@ export class AFAddressFamily<A extends AFSocketAddress> extends Object {
     getSocketAddressClass(): Class<A>;
     getSocketConstructor(): (param0: FileDescriptor, param1: AFSocketFactory<A>) => AFSocket<A>;
     initImplExtensions(arg0: AncillaryDataSupport): AFSocketImplExtensions<A>;
-    newServerSocket(): AFServerSocket<Object>;
-    newServerSocketChannel(): AFServerSocketChannel<Object>;
-    newSocket(): AFSocket<Object>;
-    newSocketChannel(): AFSocketChannel<Object>;
+    newServerSocket(): AFServerSocket<any>;
+    newServerSocketChannel(): AFServerSocketChannel<any>;
+    newSocket(): AFSocket<any>;
+    newSocketChannel(): AFSocketChannel<any>;
     nullBindAddress(): SocketAddress;
     parseURI(arg0: URI, arg1: number): AFSocketAddress;
 }

@@ -12,6 +12,6 @@ export abstract class TypeVisitor extends Object {
     visitClass(t: Class<Object>): void;
     visitGenericArrayType(t: GenericArrayType): void;
     visitParameterizedType(t: ParameterizedType): void;
-    visitTypeVariable(t: TypeVariable<Object>): void;
+    visitTypeVariable(t: TypeVariable<any>): void;
     visitWildcardType(t: WildcardType): void;
 }

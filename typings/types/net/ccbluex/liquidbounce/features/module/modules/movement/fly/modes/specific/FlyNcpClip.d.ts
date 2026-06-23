@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -37,7 +36,7 @@ export class FlyNcpClip extends Mode {
     // private maximumDistance: number;
     // private /*not mapped: */ getMaximumDistance(): number;
     // private packetHandler: EventHook<PacketEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private shouldLag: boolean;
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;

@@ -6,13 +6,13 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CodecRegistryContext extends Record implements CodecContext {
     // private mapped: boolean;
-    // private protocol: Protocol<Object, Object, Object, Object>;
+    // private protocol: Protocol<any, any, any, any>;
     // private registryAccess: CodecContext$RegistryAccess;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     isSupported(arg0: StructuredDataKey<Object>): boolean;
     mapped(): boolean;
-    protocol(): Protocol<Object, Object, Object, Object>;
+    protocol(): Protocol<any, any, any, any>;
     registryAccess(): CodecContext$RegistryAccess;
     toString(): string;
 }

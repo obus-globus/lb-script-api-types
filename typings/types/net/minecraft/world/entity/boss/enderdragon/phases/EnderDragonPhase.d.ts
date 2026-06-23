@@ -26,7 +26,7 @@ export class EnderDragonPhase<T extends DragonPhaseInstance> extends Object {
     static SITTING_SCANNING: EnderDragonPhase<DragonSittingScanningPhase>;
     static STRAFE_PLAYER: EnderDragonPhase<DragonStrafePlayerPhase>;
     static TAKEOFF: EnderDragonPhase<DragonTakeoffPhase>;
-    static getById(paramid: number): EnderDragonPhase<Object>;
+    static getById(paramid: number): EnderDragonPhase<any>;
     static getCount(): number;
     private constructor(id: number, instanceClass: Class<DragonPhaseInstance>, name: string)
     readonly id: number;

@@ -50,7 +50,7 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     // private isRandomlyTicking: boolean;
     // private isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
     // private isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
-    // private isValidSpawn: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: EntityType<Object>) => boolean;
+    // private isValidSpawn: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: EntityType<any>) => boolean;
     // private isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
     // private jumpFactor: number;
     // private lightEmission: (param0: BlockState) => number;
@@ -83,7 +83,7 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     instrument(instrument: NoteBlockInstrument): BlockBehaviour$Properties;
     isRedstoneConductor(isRedstoneConductor: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
     isSuffocating(isSuffocating: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
-    isValidSpawn(isValidSpawn: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: EntityType<Object>) => boolean): BlockBehaviour$Properties;
+    isValidSpawn(isValidSpawn: (param0: BlockState, param1: BlockGetter, param2: BlockPos, param3: EntityType<any>) => boolean): BlockBehaviour$Properties;
     isViewBlocking(isViewBlocking: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
     jumpFactor(jumpFactor: number): BlockBehaviour$Properties;
     lightLevel(lightEmission: (param0: BlockState) => number): BlockBehaviour$Properties;

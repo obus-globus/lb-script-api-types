@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../../net/minecraft/advancements/criterion/MinMaxBounds$Ints.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -18,14 +17,14 @@ import type { RecipeSerializer } from '../../../../../net/minecraft/world/item/c
 import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplay.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class TransmuteRecipe extends NormalCraftingRecipe {
-    static CODEC: Codec<Recipe<Object>>;
+    static CODEC: Codec<Recipe<any>>;
     static DEFAULT_MATERIAL_COUNT: MinMaxBounds$Ints;
     static FULL_RANGE_MATERIAL_COUNT: MinMaxBounds$Ints;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<TransmuteRecipe>;
     static MATERIAL_COUNT_BOUNDS: Codec<MinMaxBounds$Ints>;
     static SERIALIZER: RecipeSerializer<TransmuteRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TransmuteRecipe>;
     static createWithOriginalComponents(paramtarget: ItemStackTemplate, paraminput: ItemStack): ItemStack;
     static createWithOriginalComponents(paramtarget: ItemStackTemplate, paraminput: ItemStack, paramextraCount: number): ItemStack;

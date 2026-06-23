@@ -5,7 +5,7 @@ import type { Caller } from '../../../../kotlin/reflect/jvm/internal/calls/Calle
 import type { PropertyGetterDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyGetterDescriptor.d.ts'
 export abstract class DescriptorKProperty$Getter<V extends Object | number | string | boolean> extends DescriptorKProperty$Accessor<V, V> implements KProperty$Getter<V> {
     constructor()
-    readonly caller: Caller<Object>;
+    readonly caller: Caller<any>;
     readonly descriptor: PropertyGetterDescriptor;
     readonly name: string;
     equals(other: Object | null): boolean;

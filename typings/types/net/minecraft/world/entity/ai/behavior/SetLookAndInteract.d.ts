@@ -3,6 +3,6 @@ import type { EntityType } from '../../../../../../net/minecraft/world/entity/En
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 export class SetLookAndInteract extends Object {
-    static create(paramtype: EntityType<Object>, paraminteractionRange: number): BehaviorControl<LivingEntity>;
+    static create(paramtype: EntityType<any>, paraminteractionRange: number): BehaviorControl<LivingEntity>;
     constructor()
 }

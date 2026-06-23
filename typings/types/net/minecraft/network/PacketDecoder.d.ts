@@ -13,8 +13,8 @@ import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts
 export class PacketDecoder<T extends PacketListener> extends ByteToMessageDecoder implements PacketContextSetter, PacketDecoderAccessor, ProtocolSwapHandler {
     static COMPOSITE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
-    static handleInboundTerminalPacket(paramctx: ChannelHandlerContext, parampacket: Packet<Object>): void;
-    static handleOutboundTerminalPacket(paramctx: ChannelHandlerContext, parampacket: Packet<Object>): void;
+    static handleInboundTerminalPacket(paramctx: ChannelHandlerContext, parampacket: Packet<any>): void;
+    static handleOutboundTerminalPacket(paramctx: ChannelHandlerContext, parampacket: Packet<any>): void;
     constructor(protocolInfo: ProtocolInfo<T>)
     // private packetContext: PacketContext;
     // private protocolInfo: ProtocolInfo<T>;

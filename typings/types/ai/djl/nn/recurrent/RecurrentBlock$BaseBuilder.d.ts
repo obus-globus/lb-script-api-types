@@ -1,6 +1,6 @@
 import type { RNN$Activation } from '../../../../ai/djl/nn/recurrent/RNN$Activation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class RecurrentBlock$BaseBuilder<T extends RecurrentBlock$BaseBuilder<RecurrentBlock$BaseBuilder<Object>>> extends Object {
+export abstract class RecurrentBlock$BaseBuilder<T extends RecurrentBlock$BaseBuilder<RecurrentBlock$BaseBuilder<any>>> extends Object {
     constructor()
     // private activation: RNN$Activation;
     // private batchFirst: boolean;

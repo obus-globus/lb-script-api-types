@@ -25,11 +25,11 @@ export interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
     cancelClientbound(arg0: State, arg1: number): void;
     cancelServerbound(arg0: SU): void;
     cancelServerbound(arg0: State, arg1: number): void;
-    dependsOn(): Class<Protocol<Object, Object, Object, Object>>;
+    dependsOn(): Class<Protocol<any, any, any, any>>;
     get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
     getComponentRewriter(): ComponentRewriter;
-    getEntityRewriter(): EntityRewriter<Object>;
-    getItemRewriter(): ItemRewriter<Object>;
+    getEntityRewriter(): EntityRewriter<any>;
+    getItemRewriter(): ItemRewriter<any>;
     getLogger(): ProtocolLogger;
     getMappingData(): MappingData;
     getPacketTypesProvider(): PacketTypesProvider<CU, CM, SM, SU>;

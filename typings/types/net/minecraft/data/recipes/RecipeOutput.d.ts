@@ -7,7 +7,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export interface RecipeOutput extends Object, FabricRecipeOutput, RecipeOutputMixin{
-    accept(id: ResourceKey<Recipe<Object>>, recipe: Recipe<Object>, advancement: AdvancementHolder): void;
+    accept(id: ResourceKey<Recipe<any>>, recipe: Recipe<any>, advancement: AdvancementHolder): void;
     advancement(): Advancement$Builder;
     getRecipeIdentifier(arg0: Identifier): Identifier;
     includeRootAdvancement(): void;

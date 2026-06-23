@@ -5,7 +5,7 @@ import type { LongSpliterator } from '../../../../../it/unimi/dsi/fastutil/longs
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/function/LongConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Long2ReferenceOpenHashMap$KeySpliterator extends Long2ReferenceOpenHashMap$MapSpliterator<Object, Object> implements LongSpliterator {
+export class Long2ReferenceOpenHashMap$KeySpliterator extends Long2ReferenceOpenHashMap$MapSpliterator<Object, any> implements LongSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

@@ -12,5 +12,5 @@ export class UnderwaterMagmaConfiguration extends Object implements FeatureConfi
     floorSearchRange: number;
     placementProbabilityPerValidPosition: number;
     placementRadiusAroundFloor: number;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

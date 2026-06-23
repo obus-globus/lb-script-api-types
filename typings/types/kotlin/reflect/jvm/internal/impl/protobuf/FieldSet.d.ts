@@ -6,11 +6,11 @@ import type { CodedOutputStream } from '../../../../../../kotlin/reflect/jvm/int
 import type { FieldSet$FieldDescriptorLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/FieldSet$FieldDescriptorLite.d.ts'
 import type { WireFormat$FieldType } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/WireFormat$FieldType.d.ts'
 export class FieldSet<FieldDescriptorType extends FieldSet$FieldDescriptorLite<FieldDescriptorType>> extends Object {
-    static computeFieldSize(paramarg0: FieldSet$FieldDescriptorLite<Object>, paramarg1: Object): number;
-    static emptySet(): FieldSet<Object>;
-    static newFieldSet(): FieldSet<Object>;
+    static computeFieldSize(paramarg0: FieldSet$FieldDescriptorLite<any>, paramarg1: Object): number;
+    static emptySet(): FieldSet<any>;
+    static newFieldSet(): FieldSet<any>;
     static readPrimitiveField(paramarg0: CodedInputStream, paramarg1: WireFormat$FieldType, paramarg2: boolean): Object;
-    static writeField(paramarg0: FieldSet$FieldDescriptorLite<Object>, paramarg1: Object, paramarg2: CodedOutputStream): void;
+    static writeField(paramarg0: FieldSet$FieldDescriptorLite<any>, paramarg1: Object, paramarg2: CodedOutputStream): void;
     private constructor()
     private constructor(arg0: boolean)
     // private fields: Map<FieldDescriptorType, Object>;

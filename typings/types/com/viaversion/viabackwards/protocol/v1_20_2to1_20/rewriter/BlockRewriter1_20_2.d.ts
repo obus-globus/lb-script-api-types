@@ -7,14 +7,13 @@ import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/
 import type { ClientboundPackets1_20_2 } from '../../../../../../com/viaversion/viaversion/protocols/v1_20to1_20_2/packet/ClientboundPackets1_20_2.d.ts'
 import type { BlockRewriter } from '../../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { BlockRewriter$ChunkTypeSupplier } from '../../../../../../com/viaversion/viaversion/rewriter/BlockRewriter$ChunkTypeSupplier.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockRewriter1_20_2 extends BlockRewriter<ClientboundPackets1_20_2> {
-    static for1_14(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>): BlockRewriter<ClientboundPacketType>;
-    static for1_18(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_18(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static legacy(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>): BlockRewriter<ClientboundPacketType>;
-    constructor(arg0: Protocol<ClientboundPackets1_20_2, Object, Object, Object>)
+    static for1_14(paramarg0: Protocol<ClientboundPacketType, any, any, any>): BlockRewriter<ClientboundPacketType>;
+    static for1_18(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static for1_18(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static legacy(paramarg0: Protocol<ClientboundPacketType, any, any, any>): BlockRewriter<ClientboundPacketType>;
+    constructor(arg0: Protocol<ClientboundPackets1_20_2, any, any, any>)
     handleBlockEntity(arg0: UserConnection, arg1: BlockEntity): void;
 }

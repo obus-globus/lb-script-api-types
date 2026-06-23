@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { PlacementContext } from '../../../../../../net/minecraft/world/level/levelgen/placement/PlacementContext.d.ts'
@@ -14,5 +13,5 @@ export class RarityFilter extends PlacementFilter {
     private constructor(chance: number)
     // private chance: number;
     shouldPlace(context: PlacementContext, random: RandomSource, origin: BlockPos): boolean;
-    type(): PlacementModifierType<Object>;
+    type(): PlacementModifierType<any>;
 }

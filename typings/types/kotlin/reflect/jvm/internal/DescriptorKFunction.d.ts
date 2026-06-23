@@ -16,9 +16,9 @@ export class DescriptorKFunction extends DescriptorKCallable<Object> implements 
     constructor(container: KDeclarationContainerImpl, descriptor: FunctionDescriptor)
     readonly arity: number;
     // private /*not mapped: */ getBoundReceiver(): Object | null;
-    readonly caller: Caller<Object>;
+    readonly caller: Caller<any>;
     readonly container: KDeclarationContainerImpl;
-    readonly defaultCaller: Caller<Object> | null;
+    readonly defaultCaller: Caller<any> | null;
     readonly descriptor: FunctionDescriptor;
     /*not mapped: */ isExternal(): boolean;
     /*not mapped: */ isInfix(): boolean;
@@ -31,7 +31,7 @@ export class DescriptorKFunction extends DescriptorKCallable<Object> implements 
     // private createConstructorCaller(member: Constructor<Object>, descriptor: FunctionDescriptor, isDefault: boolean): CallerImpl<Constructor<Object>>;
     // private createInstanceMethodCaller(member: Method): CallerImpl$Method;
     // private createJvmStaticInObjectCaller(member: Method): CallerImpl$Method;
-    // private createStaticMethodCaller(member: Method, isCallByToValueClassMangledMethod: boolean): Caller<Object>;
+    // private createStaticMethodCaller(member: Method, isCallByToValueClassMangledMethod: boolean): Caller<any>;
     equals(other: Object | null): boolean;
     // private getFunctionWithDefaultParametersForValueClassOverride(descriptor: FunctionDescriptor): FunctionDescriptor | null;
     hashCode(): number;

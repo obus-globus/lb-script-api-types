@@ -5,6 +5,6 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 export class SetEntityLookTargetSometimes extends Object {
     static create(parammaxDist: number, paraminterval: UniformInt): BehaviorControl<LivingEntity>;
-    static create(paramtype: EntityType<Object>, parammaxDist: number, paraminterval: UniformInt): BehaviorControl<LivingEntity>;
+    static create(paramtype: EntityType<any>, parammaxDist: number, paraminterval: UniformInt): BehaviorControl<LivingEntity>;
     constructor()
 }

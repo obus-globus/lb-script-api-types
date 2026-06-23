@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeAttribute } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeAttribute.d.ts'
@@ -16,7 +15,7 @@ export class ErrorType extends SimpleType {
     readonly kind: ErrorTypeKind;
     readonly memberScope: MemberScope;
     getArguments(): TypeProjection[];
-    getAttributes(): TypeAttribute<Object>[];
+    getAttributes(): TypeAttribute<any>[];
     getConstructor(): TypeConstructor;
     getDebugMessage(): string;
     getKind(): ErrorTypeKind;
@@ -25,5 +24,5 @@ export class ErrorType extends SimpleType {
     makeNullableAsSpecified(arg0: boolean): SimpleType;
     refine(arg0: KotlinTypeRefiner): ErrorType;
     replaceArguments(arg0: TypeProjection[]): ErrorType;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): SimpleType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): SimpleType;
 }

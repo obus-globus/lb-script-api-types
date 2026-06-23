@@ -11,12 +11,12 @@ export class PacketExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt:69}
      */
-    static getEntityIdC2SInteractOrAttack(paramarg0: Packet<Object>): number;
+    static getEntityIdC2SInteractOrAttack(paramarg0: Packet<any>): number;
     static getPosition(paramarg0: ServerboundMovePlayerPacket): Vec3;
-    static isC2SContainerPacket(paramarg0: Packet<Object>): boolean;
+    static isC2SContainerPacket(paramarg0: Packet<any>): boolean;
     static isDeathProtection(paramarg0: ClientboundEntityEventPacket): boolean;
-    static isLocalPlayerDamage(paramarg0: Packet<Object>): boolean;
-    static isLocalPlayerVelocity(considerExplosion: Packet<Object>): boolean;
-    static isLocalPlayerVelocity(paramarg0: Packet<Object>, paramarg1: boolean): boolean;
+    static isLocalPlayerDamage(paramarg0: Packet<any>): boolean;
+    static isLocalPlayerVelocity(considerExplosion: Packet<any>): boolean;
+    static isLocalPlayerVelocity(paramarg0: Packet<any>, paramarg1: boolean): boolean;
     static isMovementYFallDamage(clientboundSetEntityMotionPacket: ClientboundSetEntityMotionPacket): boolean;
 }

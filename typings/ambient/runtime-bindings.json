@@ -802,7 +802,7 @@
       "grabPanoramixScreenshot",
       "gui",
       "handler$cbi000$fabric-registry-sync-v0$disconnectAfter",
-      "handler$cmd000$iris$trackLastDimensionOnLeave",
+      "handler$cdk000$iris$trackLastDimensionOnLeave",
       "hasAltDown",
       "hasControlDown",
       "hasShiftDown",

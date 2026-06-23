@@ -14,7 +14,7 @@ export class CombinedContext extends Object implements Serializable, CoroutineCo
     fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     hashCode(): number;
-    minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
     plus(context: CoroutineContext): CoroutineContext;
     // private readObject(input: ObjectInputStream): void;
     // private size(): number;

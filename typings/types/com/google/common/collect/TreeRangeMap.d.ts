@@ -7,8 +7,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class TreeRangeMap<K extends Comparable<Object>, V extends Object | number | string | boolean> extends Object implements RangeMap<K, V> {
-    static copyOf(paramrangeMap: RangeMap<Object, Object>): TreeRangeMap<Object, Object>;
-    static create(): TreeRangeMap<Object, Object>;
+    static copyOf(paramrangeMap: RangeMap<any, Object>): TreeRangeMap<any, Object>;
+    static create(): TreeRangeMap<any, Object>;
     private constructor()
     private constructor(entriesByLowerBound: Map<Cut<K>, TreeRangeMap$RangeMapEntry<K, V>>)
     // private entriesByLowerBound: Map<Cut<K>, TreeRangeMap$RangeMapEntry<K, V>>;

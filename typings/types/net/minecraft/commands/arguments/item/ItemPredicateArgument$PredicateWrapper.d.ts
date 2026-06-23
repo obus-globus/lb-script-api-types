@@ -9,7 +9,7 @@ import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/c
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemPredicateArgument$PredicateWrapper extends Record {
-    constructor(holder: Holder$Reference<DataComponentPredicate$Type<Object>>)
+    constructor(holder: Holder$Reference<DataComponentPredicate$Type<any>>)
     private constructor(id: Identifier, type: Decoder<(param0: ItemStack) => boolean>)
     // private id: Identifier;
     // private type: Decoder<(param0: ItemStack) => boolean>;

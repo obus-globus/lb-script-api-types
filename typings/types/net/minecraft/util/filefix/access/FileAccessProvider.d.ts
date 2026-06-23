@@ -7,7 +7,7 @@ import type { FileRelation } from '../../../../../net/minecraft/util/filefix/acc
 import type { FileResourceType } from '../../../../../net/minecraft/util/filefix/access/FileResourceType.d.ts'
 export class FileAccessProvider extends Object implements AutoCloseable {
     constructor(dataVersion: number)
-    // private accessedFiles: FileAccess<Object>[];
+    // private accessedFiles: FileAccess<any>[];
     // private baseDirectory: ScopedValue<Path[]>;
     // private dataVersion: number;
     // private frozen: boolean;

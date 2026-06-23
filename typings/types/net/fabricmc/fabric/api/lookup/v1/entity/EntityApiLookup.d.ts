@@ -10,9 +10,9 @@ export interface EntityApiLookup<A extends Object | number | string | boolean, C
     contextClass(): Class<C>;
     find(arg0: Entity, arg1: C): A;
     getId(): Identifier;
-    getProvider(arg0: EntityType<Object>): EntityApiLookup$EntityApiProvider<A, C>;
+    getProvider(arg0: EntityType<any>): EntityApiLookup$EntityApiProvider<A, C>;
     registerFallback(arg0: EntityApiLookup$EntityApiProvider<A, C>): void;
     registerForType<T extends Entity>(arg0: (param0: T, param1: C) => A, arg1: EntityType<T>): void;
-    registerForTypes(arg0: EntityApiLookup$EntityApiProvider<A, C>, arg1: EntityType<Object>[]): void;
-    registerSelf(arg0: EntityType<Object>[]): void;
+    registerForTypes(arg0: EntityApiLookup$EntityApiProvider<A, C>, arg1: EntityType<any>[]): void;
+    registerSelf(arg0: EntityType<any>[]): void;
 }

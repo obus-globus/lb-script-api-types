@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -19,6 +18,6 @@ export class ModuleSpeed extends ClientModule {
     // private /*not mapped: */ getNotCondition(): ModuleSpeed$NotCondition[];
     readonly running: boolean;
     doOptimizationsPreventJump(): boolean;
-    // private initializeSpeeds(modeValueGroup: ModeValueGroup<Object>): Mode[];
+    // private initializeSpeeds(modeValueGroup: ModeValueGroup<any>): Mode[];
     // private passesRequirements(): boolean;
 }

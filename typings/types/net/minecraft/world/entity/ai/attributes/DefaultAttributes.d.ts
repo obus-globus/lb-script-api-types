@@ -6,7 +6,7 @@ import type { AttributeSupplier } from '../../../../../../net/minecraft/world/en
 export class DefaultAttributes extends Object implements DefaultAttributesAccessor {
     static getRegistry(): Map<EntityType<LivingEntity>, AttributeSupplier>;
     static getSupplier(paramtype: EntityType<LivingEntity>): AttributeSupplier;
-    static hasSupplier(paramtype: EntityType<Object>): boolean;
+    static hasSupplier(paramtype: EntityType<any>): boolean;
     static validate(): void;
     constructor()
 }

@@ -29,10 +29,10 @@ export class NaturalSpawner extends Object {
     static createState(paramspawnableChunkCount: number, paramentities: Entity[], paramchunkGetter: (param0: number, param1: (param0: LevelChunk) => void) => void, paramlocalMobCapCalculator: LocalMobCapCalculator): NaturalSpawner$SpawnState;
     static getFilteredSpawningCategories(paramstate: NaturalSpawner$SpawnState, paramspawnFriendlies: boolean, paramspawnEnemies: boolean, paramspawnPersistent: boolean): MobCategory[];
     static isInNetherFortressBounds(parampos: BlockPos, paramlevel: ServerLevel, paramcategory: MobCategory, paramstructureManager: StructureManager): boolean;
-    static isValidEmptySpawnBlock(paramlevel: BlockGetter, parampos: BlockPos, paramblockState: BlockState, paramfluidState: FluidState, paramtype: EntityType<Object>): boolean;
-    static spawnCategoryForChunk(parammobCategory: MobCategory, paramlevel: ServerLevel, paramchunk: LevelChunk, paramextraTest: (param0: EntityType<Object>, param1: BlockPos, param2: ChunkAccess) => boolean, paramspawnCallback: (param0: Mob, param1: ChunkAccess) => void): void;
+    static isValidEmptySpawnBlock(paramlevel: BlockGetter, parampos: BlockPos, paramblockState: BlockState, paramfluidState: FluidState, paramtype: EntityType<any>): boolean;
+    static spawnCategoryForChunk(parammobCategory: MobCategory, paramlevel: ServerLevel, paramchunk: LevelChunk, paramextraTest: (param0: EntityType<any>, param1: BlockPos, param2: ChunkAccess) => boolean, paramspawnCallback: (param0: Mob, param1: ChunkAccess) => void): void;
     static spawnCategoryForPosition(parammobCategory: MobCategory, paramlevel: ServerLevel, paramstart: BlockPos): void;
-    static spawnCategoryForPosition(parammobCategory: MobCategory, paramlevel: ServerLevel, paramchunk: ChunkAccess, paramstart: BlockPos, paramextraTest: (param0: EntityType<Object>, param1: BlockPos, param2: ChunkAccess) => boolean, paramspawnCallback: (param0: Mob, param1: ChunkAccess) => void): void;
+    static spawnCategoryForPosition(parammobCategory: MobCategory, paramlevel: ServerLevel, paramchunk: ChunkAccess, paramstart: BlockPos, paramextraTest: (param0: EntityType<any>, param1: BlockPos, param2: ChunkAccess) => boolean, paramspawnCallback: (param0: Mob, param1: ChunkAccess) => void): void;
     static spawnForChunk(paramlevel: ServerLevel, paramchunk: LevelChunk, paramstate: NaturalSpawner$SpawnState, paramspawningCategories: MobCategory[]): void;
     static spawnMobsForChunkGeneration(paramlevel: ServerLevelAccessor, parambiome: Holder<Biome>, paramchunkPos: ChunkPos, paramrandom: RandomSource): void;
     private constructor()

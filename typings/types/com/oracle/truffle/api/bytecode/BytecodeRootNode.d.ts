@@ -12,7 +12,7 @@ export interface BytecodeRootNode extends Object{
     ensureSourceSection(): SourceSection;
     execute(frame: VirtualFrame): Object;
     getBytecodeNode(): BytecodeNode;
-    getRootNodes(): BytecodeRootNodes<Object>;
+    getRootNodes(): BytecodeRootNodes<any>;
     getStartLocation(): BytecodeLocation;
     interceptControlFlowException(ex: ControlFlowException, frame: VirtualFrame, bytecodeNode: BytecodeNode, bytecodeIndex: number): Object;
     interceptInternalException(t: Throwable, frame: VirtualFrame, bytecodeNode: BytecodeNode, bytecodeIndex: number): Throwable;

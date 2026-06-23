@@ -8,7 +8,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { TranslatorOptions } from '../../../../../ai/djl/translate/TranslatorOptions.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class BaseImageTranslator<T extends Object | number | string | boolean> extends Object implements Translator<Image, T> {
-    constructor(arg0: BaseImageTranslator$BaseBuilder<Object>)
+    constructor(arg0: BaseImageTranslator$BaseBuilder<any>)
     readonly batchifier: Batchifier;
     // private flag: Image$Flag;
     // private height: number;

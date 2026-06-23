@@ -26,8 +26,8 @@ export class ServerLoginNetworkAddon extends AbstractNetworkAddon<(param0: Minec
     // private queryIdFactory: QueryIdFactory;
     // private server: MinecraftServer;
     // private waits: Future<Object>[];
-    createPacket(arg0: CustomPacketPayload): Packet<Object>;
-    createPacket(arg0: Identifier, arg1: FriendlyByteBuf): Packet<Object>;
+    createPacket(arg0: CustomPacketPayload): Packet<any>;
+    createPacket(arg0: Identifier, arg1: FriendlyByteBuf): Packet<any>;
     disconnect(arg0: Component): void;
     // private handle(arg0: number, arg1: FriendlyByteBuf): boolean;
     handle(arg0: ServerboundCustomQueryAnswerPacket): boolean;
@@ -41,8 +41,8 @@ export class ServerLoginNetworkAddon extends AbstractNetworkAddon<(param0: Minec
     // private sendCompressionPacket(): void;
     sendPacket(arg0: Identifier, arg1: FriendlyByteBuf): void;
     sendPacket(arg0: Identifier, arg1: FriendlyByteBuf, arg2: ChannelFutureListener): void;
-    sendPacket(arg0: Packet<Object>): void;
-    sendPacket(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
+    sendPacket(arg0: Packet<any>): void;
+    sendPacket(arg0: Packet<any>, arg1: ChannelFutureListener): void;
     sendPacket(arg0: CustomPacketPayload): void;
     sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
 }

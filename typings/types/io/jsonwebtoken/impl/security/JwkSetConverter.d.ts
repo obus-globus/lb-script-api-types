@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JwkSetConverter extends Object implements Converter<{ [key: string]: any }[], Object> {
     constructor()
     constructor(arg0: Converter<{ [key: string]: any }, Object>, arg1: boolean)
-    constructor(arg0: Supplier<DynamicJwkBuilder<Object, Object>>, arg1: boolean)
+    constructor(arg0: Supplier<DynamicJwkBuilder<any, any>>, arg1: boolean)
     constructor(arg0: boolean)
     // private JWK_CONVERTER: Converter<{ [key: string]: any }, Object>;
     // private PARAM: Parameter<{ [key: string]: any }[]>;

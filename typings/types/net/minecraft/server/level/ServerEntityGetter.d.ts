@@ -22,7 +22,7 @@ export interface ServerEntityGetter extends Object, EntityGetter {
     getNearbyPlayers(targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): Player[];
     getNearestEntity<T extends LivingEntity>(entities: T[], targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): T;
-    getNearestEntity(tag: TagKey<EntityType<Object>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
+    getNearestEntity(tag: TagKey<EntityType<any>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
     getNearestPlayer(x: number, y: number, z: number, range: number, predicate: (param0: Entity) => boolean): Player;
     getNearestPlayer(x: number, y: number, z: number, maxDist: number, filterOutCreative: boolean): Player;
     getNearestPlayer(source: Entity, maxDist: number): Player;

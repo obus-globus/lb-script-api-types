@@ -6,5 +6,5 @@ import type { CommandSourceStack } from '../../../../../net/minecraft/commands/C
 import type { DataAccessor } from '../../../../../net/minecraft/server/commands/data/DataAccessor.d.ts'
 export interface DataCommands$DataProvider extends Object {
     access(context: CommandContext<CommandSourceStack>): DataAccessor;
-    wrap(parent: ArgumentBuilder<CommandSourceStack, Object>, function_: (param0: ArgumentBuilder<CommandSourceStack, Object>) => ArgumentBuilder<CommandSourceStack, Object>): ArgumentBuilder<CommandSourceStack, Object>;
+    wrap(parent: ArgumentBuilder<CommandSourceStack, any>, function_: (param0: ArgumentBuilder<CommandSourceStack, any>) => ArgumentBuilder<CommandSourceStack, any>): ArgumentBuilder<CommandSourceStack, any>;
 }

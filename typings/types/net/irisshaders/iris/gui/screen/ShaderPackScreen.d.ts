@@ -1,7 +1,6 @@
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NavigationController } from '../../../../../net/irisshaders/iris/gui/NavigationController.d.ts'
 import type { OldImageButton } from '../../../../../net/irisshaders/iris/gui/OldImageButton.d.ts'
 import type { ShaderPackOptionList } from '../../../../../net/irisshaders/iris/gui/element/ShaderPackOptionList.d.ts'
@@ -43,7 +42,7 @@ export class ShaderPackScreen extends Screen implements HudHideable {
     // private dropChanges: boolean;
     // private guiButtonHoverTimer: number;
     // private guiHidden: boolean;
-    // private hoveredElement: AbstractElementWidget<Object>;
+    // private hoveredElement: AbstractElementWidget<any>;
     // private hoveredElementCommentBody: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     // private hoveredElementCommentTimer: number;
     // private hoveredElementCommentTitle: Optional<Component>;
@@ -81,6 +80,6 @@ export class ShaderPackScreen extends Screen implements HudHideable {
     // private openShaderPackFolder(): void;
     refreshForChangedPack(): void;
     refreshScreenSwitchButton(): void;
-    setElementHoveredStatus(arg0: AbstractElementWidget<Object>, arg1: boolean): void;
+    setElementHoveredStatus(arg0: AbstractElementWidget<any>, arg1: boolean): void;
     tick(): void;
 }

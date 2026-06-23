@@ -11,7 +11,7 @@ export class SemanticContext$Predicate extends SemanticContext {
     predIndex: number;
     ruleIndex: number;
     equals(arg0: Object | null): boolean;
-    eval(arg0: Recognizer<Object, Object>, arg1: RuleContext): boolean;
+    eval(arg0: Recognizer<Object, any>, arg1: RuleContext): boolean;
     hashCode(): number;
     toString(): string;
 }

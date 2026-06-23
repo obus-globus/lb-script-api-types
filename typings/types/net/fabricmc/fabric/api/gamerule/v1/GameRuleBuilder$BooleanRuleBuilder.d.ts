@@ -11,7 +11,7 @@ import type { GameRuleCategory } from '../../../../../../net/minecraft/world/lev
 export class GameRuleBuilder$BooleanRuleBuilder extends GameRuleBuilder<boolean> {
     static forBoolean(paramarg0: boolean): GameRuleBuilder$BooleanRuleBuilder;
     static forDouble(paramarg0: number): GameRuleBuilder$DoubleRuleBuilder;
-    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<Object>;
+    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<any>;
     static forInteger(paramarg0: number): GameRuleBuilder$IntegerRuleBuilder;
     constructor(arg0: boolean)
     argumentType(arg0: ArgumentType<boolean>): GameRuleBuilder$BooleanRuleBuilder;

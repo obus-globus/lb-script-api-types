@@ -19,7 +19,7 @@ export class LootContext extends Object {
     // private lootDataResolver: HolderGetter$Provider;
     // private params: LootParams;
     readonly random: RandomSource;
-    // private visitedElements: LootContext$VisitedEntry<Object>[];
+    // private visitedElements: LootContext$VisitedEntry<any>[];
     addDynamicDrops(location: Identifier, output: (param0: ItemStack) => void): void;
     getLevel(): ServerLevel;
     getLuck(): number;
@@ -28,7 +28,7 @@ export class LootContext extends Object {
     getRandom(): RandomSource;
     getResolver(): HolderGetter$Provider;
     hasParameter(key: ContextKey<Object>): boolean;
-    hasVisitedElement(element: LootContext$VisitedEntry<Object>): boolean;
-    popVisitedElement(element: LootContext$VisitedEntry<Object>): void;
-    pushVisitedElement(element: LootContext$VisitedEntry<Object>): boolean;
+    hasVisitedElement(element: LootContext$VisitedEntry<any>): boolean;
+    popVisitedElement(element: LootContext$VisitedEntry<any>): void;
+    pushVisitedElement(element: LootContext$VisitedEntry<any>): boolean;
 }

@@ -13,5 +13,5 @@ export class CountConfiguration extends Object implements FeatureConfiguration {
     constructor(count: IntProvider)
     // private count: IntProvider;
     count(): IntProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

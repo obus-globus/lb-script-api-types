@@ -11,14 +11,14 @@ export class NaturalSpawner$SpawnState extends Object {
     private constructor(spawnableChunkCount: number, mobCategoryCounts: { [key: string]: any }, spawnPotential: PotentialCalculator, localMobCapCalculator: LocalMobCapCalculator)
     // private lastCharge: number;
     // private lastCheckedPos: BlockPos;
-    // private lastCheckedType: EntityType<Object>;
+    // private lastCheckedType: EntityType<any>;
     // private localMobCapCalculator: LocalMobCapCalculator;
     readonly mobCategoryCounts: { [key: string]: any };
     // private spawnPotential: PotentialCalculator;
     readonly spawnableChunkCount: number;
     // private unmodifiableMobCategoryCounts: { [key: string]: any };
     // private afterSpawn(mob: Mob, chunk: ChunkAccess): void;
-    // private canSpawn(type: EntityType<Object>, testPos: BlockPos, chunk: ChunkAccess): boolean;
+    // private canSpawn(type: EntityType<any>, testPos: BlockPos, chunk: ChunkAccess): boolean;
     // private canSpawnForCategoryGlobal(mobCategory: MobCategory): boolean;
     // private canSpawnForCategoryLocal(mobCategory: MobCategory, chunkPos: ChunkPos): boolean;
     getMobCategoryCounts(): { [key: string]: any };

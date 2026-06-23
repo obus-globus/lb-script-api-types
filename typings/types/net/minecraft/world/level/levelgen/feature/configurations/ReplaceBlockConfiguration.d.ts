@@ -13,5 +13,5 @@ export class ReplaceBlockConfiguration extends Object implements FeatureConfigur
     constructor(targetBlockStates: OreConfiguration$TargetBlockState[])
     constructor(targetState: BlockState, state: BlockState)
     targetStates: OreConfiguration$TargetBlockState[];
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

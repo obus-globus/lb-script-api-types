@@ -60,7 +60,7 @@ export class Minecart extends AbstractMinecart {
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
     static useExperimentalMovement(paramlevel: Level): boolean;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     // private playerRotationOffset: number;
     // private rotationOffset: number;
     activateMinecart(level: ServerLevel, xt: number, yt: number, zt: number, state: boolean): void;

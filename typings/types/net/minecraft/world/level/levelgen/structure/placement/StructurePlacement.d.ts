@@ -26,5 +26,5 @@ export abstract class StructurePlacement extends Object {
     isStructureChunk(state: ChunkGeneratorStructureState, sourceX: number, sourceZ: number): boolean;
     locateOffset(): Vec3i;
     salt(): number;
-    type(): StructurePlacementType<Object>;
+    type(): StructurePlacementType<any>;
 }

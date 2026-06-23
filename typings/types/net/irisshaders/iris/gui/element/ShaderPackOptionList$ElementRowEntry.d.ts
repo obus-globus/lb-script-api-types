@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NavigationController } from '../../../../../net/irisshaders/iris/gui/NavigationController.d.ts'
 import type { ShaderPackOptionList$BaseEntry } from '../../../../../net/irisshaders/iris/gui/element/ShaderPackOptionList$BaseEntry.d.ts'
 import type { AbstractElementWidget } from '../../../../../net/irisshaders/iris/gui/element/widget/AbstractElementWidget.d.ts'
@@ -9,11 +8,11 @@ import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/na
 import type { MouseButtonEvent } from '../../../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
 export class ShaderPackOptionList$ElementRowEntry extends ShaderPackOptionList$BaseEntry {
     static CONTENT_PADDING: number;
-    constructor(arg0: ShaderPackScreen, arg1: NavigationController, arg2: AbstractElementWidget<Object>[])
+    constructor(arg0: ShaderPackScreen, arg1: NavigationController, arg2: AbstractElementWidget<any>[])
     // private cachedPosX: number;
     // private cachedWidth: number;
     // private screen: ShaderPackScreen;
-    // private widgets: AbstractElementWidget<Object>[];
+    // private widgets: AbstractElementWidget<any>[];
     children(): GuiEventListener[];
     extractContent(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: boolean, arg4: number): void;
     getHoveredWidget(arg0: number): number;

@@ -3,7 +3,7 @@ import type { StringKeyedIndex } from '../../../../../../../io/github/douira/gls
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class IdentifierIndex<S extends Identifier[], I extends { [key: string]: S }> extends StringKeyedIndex<Identifier, Identifier, S, I> {
-    static withOnlyExact(paramarg0: () => Object | null): IdentifierIndex<Object, { [key: string]: Object | null }>;
+    static withOnlyExact(paramarg0: () => Object | null): IdentifierIndex<any, { [key: string]: Object | null }>;
     static withOnlyExact(): IdentifierIndex<Identifier[], { [key: string]: Identifier[] }>;
     static withOnlyExactOrdered(): IdentifierIndex<Identifier[], { [key: string]: Identifier[] }>;
     constructor(arg0: I, arg1: () => S)

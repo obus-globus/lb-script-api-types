@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { RotationTarget } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationTarget.d.ts'
@@ -7,7 +6,7 @@ import type { AngleSmooth } from '../../../../../../../../net/ccbluex/liquidboun
 import type { Vec2 } from '../../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
 export abstract class FactorAngleSmooth extends AngleSmooth {
     static Companion: Tagged$Companion;
-    constructor(name: string, parent: ModeValueGroup<Object>)
+    constructor(name: string, parent: ModeValueGroup<any>)
     /**
      * Calculate the factors for the rotation towards the target rotation.
      *

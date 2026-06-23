@@ -7,8 +7,8 @@ import type { Type } from '../../../../com/viaversion/viaversion/api/type/Type.d
 import type { RecipeRewriter$RecipeConsumer } from '../../../../com/viaversion/viaversion/rewriter/RecipeRewriter$RecipeConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RecipeRewriter<C extends ClientboundPacketType> extends Object {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
-    // private protocol: Protocol<C, Object, Object, Object>;
+    constructor(arg0: Protocol<C, any, any, any>)
+    // private protocol: Protocol<C, any, any, any>;
     // private recipeHandlers: { [key: string]: (param0: PacketWrapper) => void };
     handleCraftingShaped(arg0: PacketWrapper): void;
     handleCraftingShapeless(arg0: PacketWrapper): void;

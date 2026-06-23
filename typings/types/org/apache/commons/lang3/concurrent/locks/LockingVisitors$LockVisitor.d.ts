@@ -6,7 +6,7 @@ import type { FailableConsumer } from '../../../../../../org/apache/commons/lang
 import type { FailableFunction } from '../../../../../../org/apache/commons/lang3/function/FailableFunction.d.ts'
 export class LockingVisitors$LockVisitor<O extends Object | number | string | boolean, L extends Object | number | string | boolean> extends Object {
     constructor(arg0: O, arg1: L, arg2: () => Lock, arg3: () => Lock)
-    private constructor(arg0: LockingVisitors$LockVisitor$LVBuilder<O, L, Object>)
+    private constructor(arg0: LockingVisitors$LockVisitor$LVBuilder<O, L, any>)
     readonly lock: L;
     readonly object: O;
     // private readLockSupplier: () => Lock;

@@ -17,8 +17,8 @@ export interface JvmProfiler extends Object {
     isRunning(): boolean;
     onChunkGenerate(pos: ChunkPos, dimension: ResourceKey<Level>, name: string): (param0: boolean) => void;
     onClientTick(fps: number): void;
-    onPacketReceived(protocol: ConnectionProtocol, packetId: PacketType<Object>, remoteAddress: SocketAddress, readableBytes: number): void;
-    onPacketSent(protocol: ConnectionProtocol, packetId: PacketType<Object>, remoteAddress: SocketAddress, writtenBytes: number): void;
+    onPacketReceived(protocol: ConnectionProtocol, packetId: PacketType<any>, remoteAddress: SocketAddress, readableBytes: number): void;
+    onPacketSent(protocol: ConnectionProtocol, packetId: PacketType<any>, remoteAddress: SocketAddress, writtenBytes: number): void;
     onRegionFileRead(info: RegionStorageInfo, pos: ChunkPos, version: RegionFileVersion, readBytes: number): void;
     onRegionFileWrite(info: RegionStorageInfo, pos: ChunkPos, version: RegionFileVersion, writtenBytes: number): void;
     onServerTick(averageTickTime: number): void;

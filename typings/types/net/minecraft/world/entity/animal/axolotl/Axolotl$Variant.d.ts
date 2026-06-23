@@ -24,8 +24,8 @@ export class Axolotl$Variant extends Enum<Axolotl$Variant> implements StringRepr
     static byId(paramid: number): Axolotl$Variant;
     static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
+    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
     static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static getCommonSpawnVariant(paramrandom: RandomSource): Axolotl$Variant;
     static getRareSpawnVariant(paramrandom: RandomSource): Axolotl$Variant;

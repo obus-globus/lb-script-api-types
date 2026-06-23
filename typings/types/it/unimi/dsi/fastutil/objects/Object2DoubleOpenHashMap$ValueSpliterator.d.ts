@@ -5,7 +5,7 @@ import type { Object2DoubleOpenHashMap$MapSpliterator } from '../../../../../it/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Object2DoubleOpenHashMap$ValueSpliterator extends Object2DoubleOpenHashMap$MapSpliterator<Object, Object> implements DoubleSpliterator {
+export class Object2DoubleOpenHashMap$ValueSpliterator extends Object2DoubleOpenHashMap$MapSpliterator<Object, any> implements DoubleSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

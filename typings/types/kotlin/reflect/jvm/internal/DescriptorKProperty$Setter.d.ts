@@ -5,7 +5,7 @@ import type { Caller } from '../../../../kotlin/reflect/jvm/internal/calls/Calle
 import type { PropertySetterDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertySetterDescriptor.d.ts'
 export abstract class DescriptorKProperty$Setter<V extends Object | number | string | boolean> extends DescriptorKProperty$Accessor<V, void> implements KMutableProperty$Setter<V> {
     constructor()
-    readonly caller: Caller<Object>;
+    readonly caller: Caller<any>;
     readonly descriptor: PropertySetterDescriptor;
     readonly name: string;
     equals(other: Object | null): boolean;

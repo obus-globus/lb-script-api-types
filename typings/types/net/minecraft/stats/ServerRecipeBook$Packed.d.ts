@@ -6,14 +6,14 @@ import type { RecipeBookSettings } from '../../../net/minecraft/stats/RecipeBook
 import type { Recipe } from '../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export class ServerRecipeBook$Packed extends Record {
     static CODEC: Codec<ServerRecipeBook$Packed>;
-    constructor(settings: RecipeBookSettings, known: ResourceKey<Recipe<Object>>[], highlight: ResourceKey<Recipe<Object>>[])
-    // private highlight: ResourceKey<Recipe<Object>>[];
-    // private known: ResourceKey<Recipe<Object>>[];
+    constructor(settings: RecipeBookSettings, known: ResourceKey<Recipe<any>>[], highlight: ResourceKey<Recipe<any>>[])
+    // private highlight: ResourceKey<Recipe<any>>[];
+    // private known: ResourceKey<Recipe<any>>[];
     // private settings: RecipeBookSettings;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    highlight(): ResourceKey<Recipe<Object>>[];
-    known(): ResourceKey<Recipe<Object>>[];
+    highlight(): ResourceKey<Recipe<any>>[];
+    known(): ResourceKey<Recipe<any>>[];
     settings(): RecipeBookSettings;
     toString(): string;
 }

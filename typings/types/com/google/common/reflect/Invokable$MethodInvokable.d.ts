@@ -19,7 +19,7 @@ export class Invokable$MethodInvokable<T extends Object | number | string | bool
     getGenericParameterTypes(): Type[];
     getGenericReturnType(): Type;
     getParameterAnnotations(): Annotation[][];
-    getTypeParameters(): TypeVariable<Object>[];
+    getTypeParameters(): TypeVariable<any>[];
     invokeInternal(receiver: Object, args: Object[]): Object;
     isOverridable(): boolean;
     isVarArgs(): boolean;

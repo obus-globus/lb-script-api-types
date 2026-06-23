@@ -8,11 +8,11 @@ import type { Builder } from '../../../../../../../../org/apache/logging/log4j/c
 export interface ComponentBuilder<T extends ComponentBuilder<T>> extends Object, Builder<Component>{
     addAttribute(key: string, value: Object): T;
     addAttribute(key: string, value: boolean): T;
-    addAttribute(key: string, value: Enum<Object>): T;
+    addAttribute(key: string, value: Enum<any>): T;
     addAttribute(key: string, value: number): T;
     addAttribute(key: string, value: string): T;
     addAttribute(key: string, level: Level): T;
-    addComponent(builder: ComponentBuilder<Object>): T;
+    addComponent(builder: ComponentBuilder<any>): T;
     getBuilder(): ConfigurationBuilder<Configuration>;
     getErrorPrefix(): string;
     getName(): string;

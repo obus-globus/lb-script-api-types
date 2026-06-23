@@ -10,7 +10,7 @@ export class JmsAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static newBuilder(): JmsAppender$Builder<Object>;
+    static newBuilder(): JmsAppender$Builder<any>;
     static parseInt(params: string, paramdefaultValue: number): number;
     readonly manager: JmsManager;
     append(event: LogEvent): void;

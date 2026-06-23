@@ -10,11 +10,11 @@ import type { ModeValueGroup } from '../../../../../net/ccbluex/liquidbounce/con
 import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 export abstract class ModelWrapper<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Mode implements Closeable {
     static Companion: Tagged$Companion;
-    constructor(name: string, translator: Translator<I, O>, outputs: number, parent: ModeValueGroup<Object>)
+    constructor(name: string, translator: Translator<I, O>, outputs: number, parent: ModeValueGroup<any>)
     // private model: Model;
     // private /*not mapped: */ getModel(): Model;
     readonly outputs: number;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private predictor: Predictor<I, O>;
     // private /*not mapped: */ getPredictor(): Predictor<I, O>;
     readonly translator: Translator<I, O>;

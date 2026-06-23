@@ -23,5 +23,5 @@ export class ATNConfig extends Object {
     isPrecedenceFilterSuppressed(): boolean;
     setPrecedenceFilterSuppressed(arg0: boolean): void;
     toString(): string;
-    toString(arg0: Recognizer<Object, Object>, arg1: boolean): string;
+    toString(arg0: Recognizer<Object, any>, arg1: boolean): string;
 }

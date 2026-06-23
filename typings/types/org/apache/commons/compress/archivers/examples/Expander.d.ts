@@ -26,8 +26,8 @@ export class Expander extends Object {
     expand(arg0: string, arg1: SeekableByteChannel, arg2: File, arg3: CloseableConsumer): void;
     expand(arg0: string, arg1: SeekableByteChannel, arg2: Path[], arg3: CloseableConsumer): void;
     expand(arg0: string, arg1: Path[], arg2: Path[]): void;
-    expand(arg0: ArchiveInputStream<Object>, arg1: File): void;
-    expand(arg0: ArchiveInputStream<Object>, arg1: Path[]): void;
+    expand(arg0: ArchiveInputStream<any>, arg1: File): void;
+    expand(arg0: ArchiveInputStream<any>, arg1: Path[]): void;
     // private expand<T extends ArchiveEntry>(arg0: () => T, arg1: (param0: T, param1: OutputStream) => void, arg2: Path[]): void;
     expand(arg0: SevenZFile, arg1: File): void;
     expand(arg0: SevenZFile, arg1: Path[]): void;

@@ -3,5 +3,5 @@ import type { ModeValueGroup } from '../../../../net/ccbluex/liquidbounce/config
 import type { GenericDistanceHSBColorMode } from '../../../../net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class GenericDistanceHSBColorMode$Companion extends Object {
-    entity(parent: ModeValueGroup<Object>, fixedAlpha: number | null): GenericDistanceHSBColorMode<Entity>;
+    entity(parent: ModeValueGroup<any>, fixedAlpha: number | null): GenericDistanceHSBColorMode<Entity>;
 }

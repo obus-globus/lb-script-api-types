@@ -10,16 +10,16 @@ import type { ChunkGenerator } from '../../../../../../net/minecraft/world/level
 import type { Feature } from '../../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeatureConfiguration } from '../../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 export class ConfiguredFeature<FC extends FeatureConfiguration, F extends Feature<FC>> extends Record {
-    static CODEC: Codec<Holder<ConfiguredFeature<Object, Object>>>;
-    static DIRECT_CODEC: Codec<ConfiguredFeature<Object, Object>>;
-    static LIST_CODEC: Codec<Holder<ConfiguredFeature<Object, Object>>[]>;
+    static CODEC: Codec<Holder<ConfiguredFeature<any, any>>>;
+    static DIRECT_CODEC: Codec<ConfiguredFeature<any, any>>;
+    static LIST_CODEC: Codec<Holder<ConfiguredFeature<any, any>>[]>;
     constructor(feature: F, config: FC)
     // private config: FC;
     // private feature: F;
     config(): FC;
     equals(o: Object | null): boolean;
     feature(): F;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     place(level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     toString(): string;

@@ -18,7 +18,7 @@ export class MutexImpl$CancellableContinuationWithOwner extends Object implement
     completeResume(token: Object): void;
     initCancellability(): void;
     invokeOnCancellation(handler: (param0: Throwable | null) => void): void;
-    invokeOnCancellation(segment: Segment<Object>, index: number): void;
+    invokeOnCancellation(segment: Segment<any>, index: number): void;
     resume<R extends void>(value: R, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): void;
     resume(value: void, onCancellation: ((param0: Throwable) => void) | null): void;
     resumeWith(result: Result<void>): void;

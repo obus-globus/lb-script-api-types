@@ -8,11 +8,11 @@ import type { EntityDataHandler } from '../../../../../com/viaversion/viaversion
 import type { EntityDataHandlerEvent } from '../../../../../com/viaversion/viaversion/rewriter/entitydata/EntityDataHandlerEvent.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityDataFilter$Builder extends Object {
-    constructor(arg0: EntityRewriter<Object, Object>)
+    constructor(arg0: EntityRewriter<any, any>)
     // private dataType: EntityDataType;
     // private filterFamily: boolean;
     // private handler: (param0: EntityDataHandlerEvent, param1: EntityData) => void;
     // private index: number;
-    // private rewriter: EntityRewriter<Object, Object>;
+    // private rewriter: EntityRewriter<any, any>;
     // private type: EntityType;
 }

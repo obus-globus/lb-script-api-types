@@ -15,7 +15,7 @@ export class DifferenceIngredient extends Object implements CustomIngredient {
     display(): SlotDisplay;
     equals(arg0: Object | null): boolean;
     // private getBase(): Ingredient;
-    getSerializer(): CustomIngredientSerializer<Object>;
+    getSerializer(): CustomIngredientSerializer<any>;
     // private getSubtracted(): Ingredient;
     hashCode(): number;
     items(): Stream<Holder<Item>>;

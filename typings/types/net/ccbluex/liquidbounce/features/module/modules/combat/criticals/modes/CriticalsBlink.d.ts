@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -15,7 +14,7 @@ export class CriticalsBlink extends Mode {
     // private isInState: boolean;
     /*not mapped: */ isInState(): boolean;
     // private nextDelay: number;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private tickHandler: EventHook<GameTickEvent>;

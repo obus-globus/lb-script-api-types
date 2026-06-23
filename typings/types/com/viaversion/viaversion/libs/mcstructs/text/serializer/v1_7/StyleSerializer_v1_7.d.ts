@@ -5,8 +5,7 @@ import type { SNbt } from '../../../../../../../../com/viaversion/viaversion/lib
 import type { Style } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/Style.d.ts'
 import type { EventSerializers_v1_7 } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/v1_7/EventSerializers_v1_7.d.ts'
 import type { Type } from '../../../../../../../../java/lang/reflect/Type.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class StyleSerializer_v1_7 extends EventSerializers_v1_7 implements JsonSerializer<Style> {
-    constructor(arg0: SNbt<Object>)
+    constructor(arg0: SNbt<any>)
     serialize(arg0: Style, arg1: Type, arg2: JsonSerializationContext): JsonElement;
 }

@@ -50,7 +50,7 @@ export abstract class VehicleEntity extends Entity {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     destroy(level: ServerLevel, source: DamageSource): void;
     destroy(level: ServerLevel, dropItem: Item): void;

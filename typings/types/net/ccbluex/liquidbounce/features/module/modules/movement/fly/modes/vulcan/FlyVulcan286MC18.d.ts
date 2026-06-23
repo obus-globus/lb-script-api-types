@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -46,7 +45,7 @@ export class FlyVulcan286MC18 extends Mode {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:73}
      */
     readonly packetHandler: EventHook<PacketEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
     readonly tickHandler: EventHook<PlayerTickEvent>;
     // private timer: number;

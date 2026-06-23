@@ -7,7 +7,7 @@ import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CycleDetectingLockFactory extends Object {
     static newInstance(parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory;
-    static newInstanceWithExplicitOrdering(paramenumClass: Class<Object>, parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory$WithExplicitOrdering<Object>;
+    static newInstanceWithExplicitOrdering(paramenumClass: Class<Object>, parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory$WithExplicitOrdering<any>;
     private constructor(policy: CycleDetectingLockFactory$Policy)
     // private policy: CycleDetectingLockFactory$Policy;
     // private aboutToAcquire(lock: CycleDetectingLockFactory$CycleDetectingLock): void;

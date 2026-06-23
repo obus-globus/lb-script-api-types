@@ -5,5 +5,5 @@ import type { LivingEntityRenderer } from '../../../../../../../net/minecraft/cl
 import type { EntityType } from '../../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 export interface LivingEntityRenderLayerRegistrationCallback extends Object{
-    registerLayers(arg0: EntityType<LivingEntity>, arg1: LivingEntityRenderer<Object, Object, Object>, arg2: LivingEntityRenderLayerRegistrationCallback$RegistrationHelper, arg3: EntityRendererProvider$Context): void;
+    registerLayers(arg0: EntityType<LivingEntity>, arg1: LivingEntityRenderer<any, any, any>, arg2: LivingEntityRenderLayerRegistrationCallback$RegistrationHelper, arg3: EntityRendererProvider$Context): void;
 }

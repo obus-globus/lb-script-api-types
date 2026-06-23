@@ -5,6 +5,6 @@ import type { MapMakerInternalMap$StrongKeyDummyValueEntry } from '../../../../c
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MapMakerInternalMap$StrongKeyDummyValueSegment<K extends Object | number | string | boolean> extends MapMakerInternalMap$Segment<K, MapMaker$Dummy, MapMakerInternalMap$StrongKeyDummyValueEntry<K>, MapMakerInternalMap$StrongKeyDummyValueSegment<K>> {
     constructor(map: Map<K, MapMaker$Dummy>, initialCapacity: number)
-    castForTesting(entry: MapMakerInternalMap$InternalEntry<K, MapMaker$Dummy, MapMakerInternalMap$InternalEntry<Object, Object, Object>>): MapMakerInternalMap$StrongKeyDummyValueEntry<K>;
+    castForTesting(entry: MapMakerInternalMap$InternalEntry<K, MapMaker$Dummy, MapMakerInternalMap$InternalEntry<Object, Object, any>>): MapMakerInternalMap$StrongKeyDummyValueEntry<K>;
     self(): MapMakerInternalMap$StrongKeyDummyValueSegment<K>;
 }

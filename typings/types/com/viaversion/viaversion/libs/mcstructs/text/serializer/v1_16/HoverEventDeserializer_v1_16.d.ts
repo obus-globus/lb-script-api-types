@@ -9,8 +9,8 @@ import type { TextComponentSerializer } from '../../../../../../../../com/viaver
 import type { Type } from '../../../../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class HoverEventDeserializer_v1_16 extends Object implements JsonDeserializer<HoverEvent> {
-    constructor(arg0: TextComponentSerializer, arg1: SNbt<Object>)
-    // private sNbt: SNbt<Object>;
+    constructor(arg0: TextComponentSerializer, arg1: SNbt<any>)
+    // private sNbt: SNbt<any>;
     // private textComponentSerializer: TextComponentSerializer;
     deserialize(arg0: JsonElement, arg1: Type, arg2: JsonDeserializationContext): HoverEvent;
     deserialize(arg0: HoverEventAction, arg1: JsonElement): HoverEvent;

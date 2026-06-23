@@ -18,7 +18,7 @@ export class PiglinAi extends Object {
     static REPELLENT_DETECTION_RANGE_HORIZONTAL: number;
     static REPELLENT_DETECTION_RANGE_VERTICAL: number;
     static angerNearbyPiglins(paramlevel: ServerLevel, paramplayer: Player, paramonlyIfTheySeeThePlayer: boolean): void;
-    static findNearbyAdultPiglins(parambrain: Brain<Object>): AbstractPiglin[];
+    static findNearbyAdultPiglins(parambrain: Brain<any>): AbstractPiglin[];
     static getActivities(parampiglin: Piglin): ActivityData<Piglin>[];
     static getAvoidTarget(parambody: Piglin): Optional<LivingEntity>;
     static getNearestVisibleTargetablePlayer(parambody: AbstractPiglin): Optional<Player>;

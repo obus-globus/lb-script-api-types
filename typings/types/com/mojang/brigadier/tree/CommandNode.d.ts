@@ -26,7 +26,7 @@ export abstract class CommandNode<S extends Object | number | string | boolean> 
     addChild(arg0: CommandNode<S>): void;
     canUse(arg0: S): boolean;
     compareTo(arg0: CommandNode<S>): number;
-    createBuilder(): ArgumentBuilder<S, Object>;
+    createBuilder(): ArgumentBuilder<S, any>;
     equals(arg0: Object | null): boolean;
     findAmbiguities(arg0: (param0: CommandNode<S>, param1: CommandNode<S>, param2: CommandNode<S>, param3: string[]) => void): void;
     getChild(arg0: string): CommandNode<S>;

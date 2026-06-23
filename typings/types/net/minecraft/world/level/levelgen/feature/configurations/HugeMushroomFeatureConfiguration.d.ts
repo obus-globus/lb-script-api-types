@@ -19,7 +19,7 @@ export class HugeMushroomFeatureConfiguration extends Record implements FeatureC
     capProvider(): BlockStateProvider;
     equals(o: Object | null): boolean;
     foliageRadius(): number;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     stemProvider(): BlockStateProvider;
     toString(): string;

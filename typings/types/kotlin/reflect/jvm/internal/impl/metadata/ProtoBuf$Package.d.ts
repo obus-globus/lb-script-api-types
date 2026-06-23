@@ -23,12 +23,12 @@ export class ProtoBuf$Package extends GeneratedMessageLite$ExtendableMessage<Pro
     static getDefaultInstance(): ProtoBuf$Package;
     static newBuilder(): ProtoBuf$Package$Builder;
     static newBuilder(paramarg0: ProtoBuf$Package): ProtoBuf$Package$Builder;
-    static newRepeatedGeneratedExtension(paramarg0: MessageLite | null, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<Object>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
-    static newSingularGeneratedExtension(paramarg0: MessageLite | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<Object>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
+    static newRepeatedGeneratedExtension(paramarg0: MessageLite | null, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<any>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
+    static newSingularGeneratedExtension(paramarg0: MessageLite | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<any>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
     static parseFrom(paramarg0: InputStream, paramarg1: ExtensionRegistryLite): ProtoBuf$Package;
     private constructor(arg0: boolean)
     private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
-    private constructor(arg0: GeneratedMessageLite$ExtendableBuilder<ProtoBuf$Package, Object>)
+    private constructor(arg0: GeneratedMessageLite$ExtendableBuilder<ProtoBuf$Package, any>)
     // private bitField0_: number;
     // private function_: ProtoBuf$Function[];
     // private memoizedIsInitialized: number;

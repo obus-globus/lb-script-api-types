@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeAttribute } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeAttribute.d.ts'
@@ -8,7 +7,7 @@ import type { UnwrappedType } from '../../../../../../kotlin/reflect/jvm/interna
 export abstract class WrappedType extends KotlinType {
     constructor()
     getArguments(): TypeProjection[];
-    getAttributes(): TypeAttribute<Object>[];
+    getAttributes(): TypeAttribute<any>[];
     getConstructor(): TypeConstructor;
     getDelegate(): KotlinType;
     getMemberScope(): MemberScope;

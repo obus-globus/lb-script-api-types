@@ -22,5 +22,5 @@ export class DripstoneClusterConfiguration extends Object implements FeatureConf
     maxStalagmiteStalactiteHeightDiff: number;
     radius: IntProvider;
     wetness: FloatProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

@@ -5,9 +5,9 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { BlockInWorld } from '../../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 import type { Property } from '../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class BlockPredicateArgument$BlockPredicate extends Object implements BlockPredicateArgument$Result {
-    constructor(state: BlockState, properties: Property<Object>[], nbt: CompoundTag)
+    constructor(state: BlockState, properties: Property<any>[], nbt: CompoundTag)
     // private nbt: CompoundTag;
-    // private properties: Property<Object>[];
+    // private properties: Property<any>[];
     // private state: BlockState;
     requiresNbt(): boolean;
     test(blockInWorld: BlockInWorld): boolean;

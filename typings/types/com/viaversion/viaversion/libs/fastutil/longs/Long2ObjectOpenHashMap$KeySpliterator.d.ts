@@ -4,7 +4,7 @@ import type { LongConsumer } from '../../../../../../com/viaversion/viaversion/l
 import type { LongSpliterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/longs/LongSpliterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { LongConsumer as LongConsumer_2 } from '../../../../../../java/util/function/LongConsumer.d.ts'
-export class Long2ObjectOpenHashMap$KeySpliterator extends Long2ObjectOpenHashMap$MapSpliterator<Object, Object> implements LongSpliterator {
+export class Long2ObjectOpenHashMap$KeySpliterator extends Long2ObjectOpenHashMap$MapSpliterator<Object, any> implements LongSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

@@ -21,7 +21,7 @@ export class ServerConfigurationNetworkAddon extends AbstractChanneledNetworkAdd
     // private registerState: ServerConfigurationNetworkAddon$RegisterState;
     // private server: MinecraftServer;
     configuration(): void;
-    createPacket(arg0: CustomPacketPayload): Packet<Object>;
+    createPacket(arg0: CustomPacketPayload): Packet<any>;
     getChannelInfoHolder(): ChannelInfoHolder;
     getClientBrand(): string;
     handle(arg0: CustomPacketPayload): boolean;
@@ -39,8 +39,8 @@ export class ServerConfigurationNetworkAddon extends AbstractChanneledNetworkAdd
     receive(arg0: (param0: CustomPacketPayload | null, param1: ServerConfigurationNetworking$Context) => void, arg1: CustomPacketPayload): void;
     receiveRegistration(arg0: boolean, arg1: RegistrationPayload): void;
     schedule(arg0: () => void): void;
-    sendPacket(arg0: Packet<Object>): void;
-    sendPacket(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
+    sendPacket(arg0: Packet<any>): void;
+    sendPacket(arg0: Packet<any>, arg1: ChannelFutureListener): void;
     sendPacket(arg0: CustomPacketPayload): void;
     sendPacket(arg0: CustomPacketPayload, arg1: ChannelFutureListener): void;
     setReconfiguring(): void;

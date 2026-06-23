@@ -23,7 +23,7 @@ export interface FabricLanguageProvider$TranslationBuilder extends Object{
     add(arg0: Stat<Object>[], arg1: string): void;
     add(arg0: TagKey<Object>, arg1: string): void;
     add(arg0: MobEffect, arg1: string): void;
-    add(arg0: EntityType<Object>, arg1: string): void;
+    add(arg0: EntityType<any>, arg1: string): void;
     add(arg0: Item, arg1: string): void;
     add(arg0: Block, arg1: string): void;
     addEnchantment(arg0: ResourceKey<Enchantment>, arg1: string): void;

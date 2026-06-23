@@ -51,8 +51,8 @@ export class MemoryUtil extends Object {
     static memAddress(paramarg0: LongBuffer, paramarg1: number): number;
     static memAddress(paramarg0: ShortBuffer): number;
     static memAddress(paramarg0: ShortBuffer, paramarg1: number): number;
-    static memAddress(paramarg0: CustomBuffer<Object>): number;
-    static memAddress(paramarg0: CustomBuffer<Object>, paramarg1: number): number;
+    static memAddress(paramarg0: CustomBuffer<any>): number;
+    static memAddress(paramarg0: CustomBuffer<any>, paramarg1: number): number;
     static memAddress0(paramarg0: Buffer): number;
     static memAddress0(paramarg0: ByteBuffer): number;
     static memAddress0(paramarg0: CharBuffer): number;
@@ -87,7 +87,7 @@ export class MemoryUtil extends Object {
     static memByteBuffer(paramarg0: LongBuffer): ByteBuffer;
     static memByteBuffer(paramarg0: ShortBuffer): ByteBuffer;
     static memByteBuffer(paramarg0: number, paramarg1: number): ByteBuffer;
-    static memByteBuffer(paramarg0: CustomBuffer<Object>): ByteBuffer;
+    static memByteBuffer(paramarg0: CustomBuffer<any>): ByteBuffer;
     static memByteBufferNT1(paramarg0: number): ByteBuffer;
     static memByteBufferNT1(paramarg0: number, paramarg1: number): ByteBuffer;
     static memByteBufferNT1Safe(paramarg0: number): ByteBuffer;
@@ -207,7 +207,7 @@ export class MemoryUtil extends Object {
     static memFree(paramarg0: IntBuffer): void;
     static memFree(paramarg0: LongBuffer): void;
     static memFree(paramarg0: ShortBuffer): void;
-    static memFree(paramarg0: CustomBuffer<Object>): void;
+    static memFree(paramarg0: CustomBuffer<any>): void;
     static memGetAddress(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetAddress(paramarg0: number): number;
     static memGetAddressAtIndex(paramarg0: MemorySegment, paramarg1: number): number;

@@ -15,16 +15,16 @@ import type { TemporalQuery } from '../../../java/time/temporal/TemporalQuery.d.
 import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
-export interface ChronoLocalDateTime<D extends ChronoLocalDate> extends Temporal, TemporalAdjuster, Object, Comparable<ChronoLocalDateTime<Object>> {
+export interface ChronoLocalDateTime<D extends ChronoLocalDate> extends Temporal, TemporalAdjuster, Object, Comparable<ChronoLocalDateTime<any>> {
     adjustInto(arg0: Temporal): Temporal;
     atZone(arg0: ZoneId): ChronoZonedDateTime<D>;
-    compareTo(arg0: ChronoLocalDateTime<Object>): number;
+    compareTo(arg0: ChronoLocalDateTime<any>): number;
     format(arg0: DateTimeFormatter): string;
     getChronology(): Chronology;
     getLong(arg0: TemporalField): number;
-    isAfter(arg0: ChronoLocalDateTime<Object>): boolean;
-    isBefore(arg0: ChronoLocalDateTime<Object>): boolean;
-    isEqual(arg0: ChronoLocalDateTime<Object>): boolean;
+    isAfter(arg0: ChronoLocalDateTime<any>): boolean;
+    isBefore(arg0: ChronoLocalDateTime<any>): boolean;
+    isEqual(arg0: ChronoLocalDateTime<any>): boolean;
     isSupported(arg0: TemporalField): boolean;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): ChronoLocalDateTime<D>;

@@ -4,7 +4,7 @@ import type { Node } from '../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotFastThreadLocals$LanguageReferenceImpl extends TruffleLanguage$LanguageReference<TruffleLanguage<Object>> {
-    static create(paramlanguageClass: Class<Object>): TruffleLanguage$LanguageReference<Object>;
+    static create(paramlanguageClass: Class<Object>): TruffleLanguage$LanguageReference<any>;
     constructor(languageClass: Class<Object>)
     // private index: number;
     // private languageClass: Class<TruffleLanguage<Object>>;

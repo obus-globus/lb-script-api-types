@@ -13,18 +13,18 @@ import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class BlockRewriter<C extends ClientboundPacketType> extends Object {
-    static for1_14(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>): BlockRewriter<ClientboundPacketType>;
-    static for1_18(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_18(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static legacy(paramarg0: Protocol<ClientboundPacketType, Object, Object, Object>): BlockRewriter<ClientboundPacketType>;
-    constructor(arg0: Protocol<C, Object, Object, Object>, arg1: Type<BlockPosition>, arg2: Type<Map$Entry<string, Tag>[]>, arg3: (param0: number, param1: number, param2: number) => Type<Chunk>, arg4: (param0: number, param1: number, param2: number) => Type<Chunk>)
+    static for1_14(paramarg0: Protocol<ClientboundPacketType, any, any, any>): BlockRewriter<ClientboundPacketType>;
+    static for1_18(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static for1_18(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
+    static legacy(paramarg0: Protocol<ClientboundPacketType, any, any, any>): BlockRewriter<ClientboundPacketType>;
+    constructor(arg0: Protocol<C, any, any, any>, arg1: Type<BlockPosition>, arg2: Type<Map$Entry<string, Tag>[]>, arg3: (param0: number, param1: number, param2: number) => Type<Chunk>, arg4: (param0: number, param1: number, param2: number) => Type<Chunk>)
     // private chunkTypeSupplier: (param0: number, param1: number, param2: number) => Type<Chunk>;
     // private compoundTagType: Type<Map$Entry<string, Tag>[]>;
     // private mappedChunkTypeSupplier: (param0: number, param1: number, param2: number) => Type<Chunk>;
     // private positionType: Type<BlockPosition>;
-    // private protocol: Protocol<C, Object, Object, Object>;
+    // private protocol: Protocol<C, any, any, any>;
     createChunkType(arg0: (param0: number, param1: number, param2: number) => Type<Chunk>, arg1: EntityTracker, arg2: boolean): Type<Chunk>;
     handleBlockEntities(arg0: Chunk, arg1: UserConnection): void;
     handleBlockEntity(arg0: UserConnection, arg1: BlockEntity): void;

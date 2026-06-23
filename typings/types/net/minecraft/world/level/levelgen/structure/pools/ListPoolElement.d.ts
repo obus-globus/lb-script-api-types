@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../../../../net/minecraft/core/Vec3i.d.ts'
@@ -41,7 +40,7 @@ export class ListPoolElement extends StructurePoolElement {
     getElements(): StructurePoolElement[];
     getShuffledJigsawBlocks(structureTemplateManager: StructureTemplateManager, position: BlockPos, rotation: Rotation, random: RandomSource): StructureTemplate$JigsawBlockInfo[];
     getSize(structureTemplateManager: StructureTemplateManager, rotation: Rotation): Vec3i;
-    getType(): StructurePoolElementType<Object>;
+    getType(): StructurePoolElementType<any>;
     place(structureTemplateManager: StructureTemplateManager, level: WorldGenLevel, structureManager: StructureManager, generator: ChunkGenerator, position: BlockPos, referencePos: BlockPos, rotation: Rotation, chunkBB: BoundingBox, random: RandomSource, liquidSettings: LiquidSettings, keepJigsaws: boolean): boolean;
     setProjection(projection: StructureTemplatePool$Projection): StructurePoolElement;
     // private setProjectionOnEachElement(projection: StructureTemplatePool$Projection): void;

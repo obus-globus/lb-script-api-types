@@ -15,7 +15,7 @@ export class TrialSpawner$FullConfig extends Record {
     hashCode(): number;
     normal(): Holder<TrialSpawnerConfig>;
     ominous(): Holder<TrialSpawnerConfig>;
-    overrideEntity(type: EntityType<Object>): TrialSpawner$FullConfig;
+    overrideEntity(type: EntityType<any>): TrialSpawner$FullConfig;
     requiredPlayerRange(): number;
     targetCooldownLength(): number;
     toString(): string;

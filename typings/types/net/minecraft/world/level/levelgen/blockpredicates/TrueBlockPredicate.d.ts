@@ -48,5 +48,5 @@ export class TrueBlockPredicate extends Object implements BlockPredicate {
     static wouldSurvive(paramstate: BlockState, paramoffset: Vec3i): BlockPredicate;
     private constructor()
     test(level: WorldGenLevel, origin: BlockPos): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

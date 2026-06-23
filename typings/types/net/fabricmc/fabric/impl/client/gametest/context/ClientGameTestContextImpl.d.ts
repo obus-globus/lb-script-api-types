@@ -33,7 +33,7 @@ export class ClientGameTestContextImpl extends Object implements ClientGameTestC
     clickScreenButton(arg0: string): void;
     computeOnClient<T extends Object | number | string | boolean, E extends Throwable>(arg0: (param0: Minecraft) => T): T;
     // private doAssertScreenshotContains(arg0: TestScreenshotComparisonOptions, arg1: (param0: TestScreenshotComparisonAlgorithm$RawImage<Object>, param1: TestScreenshotComparisonAlgorithm$RawImage<Object>) => boolean): Vector2i;
-    // private doTakeScreenshot<T extends Object | number | string | boolean>(arg0: TestScreenshotCommonOptionsImpl<Object>, arg1: (param0: NativeImage) => T): T;
+    // private doTakeScreenshot<T extends Object | number | string | boolean>(arg0: TestScreenshotCommonOptionsImpl<any>, arg1: (param0: NativeImage) => T): T;
     getInput(): TestInputImpl;
     restoreDefaultGameOptions(): void;
     runOnClient<E extends Throwable>(arg0: (param0: Minecraft) => void): void;

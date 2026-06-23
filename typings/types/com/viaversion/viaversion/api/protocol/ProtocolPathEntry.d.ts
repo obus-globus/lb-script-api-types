@@ -3,5 +3,5 @@ import type { ProtocolVersion } from '../../../../../com/viaversion/viaversion/a
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ProtocolPathEntry extends Object{
     outputProtocolVersion(): ProtocolVersion;
-    protocol(): Protocol<Object, Object, Object, Object>;
+    protocol(): Protocol<any, any, any, any>;
 }

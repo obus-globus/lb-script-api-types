@@ -6,8 +6,8 @@ import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/pr
 import type { PacketHandler } from '../../../../com/viaversion/viaversion/api/protocol/remapper/PacketHandler.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class SoundRewriter<C extends ClientboundPacketType> extends Object {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
-    // private protocol: Protocol<C, Object, Object, Object>;
+    constructor(arg0: Protocol<C, any, any, any>)
+    // private protocol: Protocol<C, any, any, any>;
     getSoundHandler(): (param0: PacketWrapper) => void;
     registerSound(arg0: C): void;
     registerSound1_19_3(arg0: C): void;

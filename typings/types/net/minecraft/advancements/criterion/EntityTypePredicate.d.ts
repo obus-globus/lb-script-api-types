@@ -7,13 +7,13 @@ import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class EntityTypePredicate extends Record {
     static CODEC: Codec<EntityTypePredicate>;
-    static of(paramlookup: HolderGetter<EntityType<Object>>, paramtype: TagKey<EntityType<Object>>): EntityTypePredicate;
-    static of(paramlookup: HolderGetter<EntityType<Object>>, paramtype: EntityType<Object>): EntityTypePredicate;
-    constructor(types: Holder<EntityType<Object>>[])
-    // private types: Holder<EntityType<Object>>[];
+    static of(paramlookup: HolderGetter<EntityType<any>>, paramtype: TagKey<EntityType<any>>): EntityTypePredicate;
+    static of(paramlookup: HolderGetter<EntityType<any>>, paramtype: EntityType<any>): EntityTypePredicate;
+    constructor(types: Holder<EntityType<any>>[])
+    // private types: Holder<EntityType<any>>[];
     equals(o: Object | null): boolean;
     hashCode(): number;
-    matches(type: Holder<EntityType<Object>>): boolean;
+    matches(type: Holder<EntityType<any>>): boolean;
     toString(): string;
-    types(): Holder<EntityType<Object>>[];
+    types(): Holder<EntityType<any>>[];
 }

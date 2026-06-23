@@ -20,7 +20,7 @@ export class VirtualItemSlot extends Object implements ItemSlot {
     readonly itemStack: ItemStack;
     readonly slotType: ItemSlot$Type;
     equals(other: Object | null): boolean;
-    getIdForServer(screen: AbstractContainerScreen<Object> | null): void;
+    getIdForServer(screen: AbstractContainerScreen<any> | null): void;
     getIdForServerWithCurrentScreen(): number | null;
     hashCode(): number;
     toString(): string;

@@ -294,7 +294,7 @@ export class FriendlyByteBuf extends ByteBuf {
     writeContainerId(id: number): void;
     writeDouble(value: number): FriendlyByteBuf;
     writeEither<L extends Object | number | string | boolean, R extends Object | number | string | boolean>(value: Either<L, R>, leftWriter: (param0: FriendlyByteBuf, param1: L) => void, rightWriter: (param0: FriendlyByteBuf, param1: R) => void): void;
-    writeEnum(value: Enum<Object>): FriendlyByteBuf;
+    writeEnum(value: Enum<any>): FriendlyByteBuf;
     writeEnumSet<E extends Enum<E>>(set: E[], clazz: Class<E>): void;
     writeFixedBitSet(bitSet: BitSet, size: number): void;
     writeFixedSizeLongArray(longs: number[]): FriendlyByteBuf;

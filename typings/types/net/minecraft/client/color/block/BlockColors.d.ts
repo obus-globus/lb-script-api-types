@@ -14,7 +14,7 @@ export class BlockColors extends Object implements BlockColorsExtension {
     // private blocksToColor: Map<Object, Object>;
     // private overridenBlocks: Object[];
     // private sources: Map<Block, BlockTintSource[]>;
-    getColoringProperties(block: Block): Property<Object>[];
+    getColoringProperties(block: Block): Property<any>[];
     getTintSource(state: BlockState, layer: number): BlockTintSource;
     getTintSources(state: BlockState): BlockTintSource[];
     register(layers: BlockTintSource[], blocks: Block[]): void;

@@ -35,7 +35,7 @@ import type { ClientStatusPacketListener } from '../../../net/minecraft/network/
 import type { EventLoopGroupHolder } from '../../../net/minecraft/server/network/EventLoopGroupHolder.d.ts'
 import type { LocalSampleLogger } from '../../../net/minecraft/util/debugchart/LocalSampleLogger.d.ts'
 import type { Marker } from '../../../org/slf4j/Marker.d.ts'
-export class Connection extends SimpleChannelInboundHandler<Packet<Object>> implements IConnection, PacketContextProvider, ChannelInfoHolder, SyncedSerializerAwareConnection {
+export class Connection extends SimpleChannelInboundHandler<Packet<any>> implements IConnection, PacketContextProvider, ChannelInfoHolder, SyncedSerializerAwareConnection {
     static PACKET_MARKER: Marker;
     static PACKET_RECEIVED_MARKER: Marker;
     static PACKET_SENT_MARKER: Marker;
@@ -72,12 +72,12 @@ export class Connection extends SimpleChannelInboundHandler<Packet<Object>> impl
     // private viaFabricPlus$userConnection: UserConnection;
     channelActive(ctx: ChannelHandlerContext): void;
     channelInactive(ctx: ChannelHandlerContext): void;
-    channelRead0(ctx: ChannelHandlerContext, packet: Packet<Object>): void;
+    channelRead0(ctx: ChannelHandlerContext, packet: Packet<any>): void;
     channelRegistered(arg0: ChannelHandlerContext): void;
     configurePacketHandler(pipeline: Map$Entry<string, ChannelHandler>[]): void;
     disconnect(details: DisconnectionDetails): void;
     disconnect(reason: Component): void;
-    // private doSendPacket(packet: Packet<Object>, listener: ChannelFutureListener, flush: boolean): void;
+    // private doSendPacket(packet: Packet<any>, listener: ChannelFutureListener, flush: boolean): void;
     exceptionCaught(ctx: ChannelHandlerContext, cause: Throwable): void;
     fabric_getPendingChannelsNames(arg0: ConnectionProtocol): (Object | null)[];
     fabric_getSyncedRecipeSerializers(): (Object | null)[];
@@ -104,21 +104,21 @@ export class Connection extends SimpleChannelInboundHandler<Packet<Object>> impl
     isEncrypted(): boolean;
     isMemoryConnection(): boolean;
     runOnceConnected(action: (param0: Connection) => void): void;
-    send(packet: Packet<Object>): void;
-    send(packet: Packet<Object>, listener: ChannelFutureListener): void;
-    send(packet: Packet<Object>, listener: ChannelFutureListener, flush: boolean): void;
-    // private sendPacket(packet: Packet<Object>, listener: ChannelFutureListener, flush: boolean): void;
+    send(packet: Packet<any>): void;
+    send(packet: Packet<any>, listener: ChannelFutureListener): void;
+    send(packet: Packet<any>, listener: ChannelFutureListener, flush: boolean): void;
+    // private sendPacket(packet: Packet<any>, listener: ChannelFutureListener, flush: boolean): void;
     setBandwidthLogger(bandwidthLogger: LocalSampleLogger): void;
     setEncryptionKey(decryptCipher: Cipher, encryptCipher: Cipher): void;
     setListenerForServerboundHandshake(packetListener: PacketListener): void;
     setReadOnly(): void;
     setupCompression(threshold: number, validateDecompressed: boolean): void;
     setupInboundProtocol<T extends PacketListener>(protocol: ProtocolInfo<T>, packetListener: T): void;
-    setupOutboundProtocol(protocol: ProtocolInfo<Object>): void;
+    setupOutboundProtocol(protocol: ProtocolInfo<any>): void;
     tick(): void;
     tickSecond(): void;
     userEventTriggered(arg0: ChannelHandlerContext, arg1: Object): void;
-    // private validateListener(protocol: ProtocolInfo<Object>, packetListener: PacketListener): void;
+    // private validateListener(protocol: ProtocolInfo<any>, packetListener: PacketListener): void;
     viaFabricPlus$getTargetVersion(): ProtocolVersion;
     viaFabricPlus$getUserConnection(): UserConnection;
     viaFabricPlus$setTargetVersion(arg0: ProtocolVersion): void;

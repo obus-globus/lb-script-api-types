@@ -45,11 +45,11 @@ export abstract class Optics extends Object {
     static id(): Adapter<Object, Object, Object, Object>;
     static inj1(): Inj1<Object, Object, Object>;
     static inj2(): Inj2<Object, Object, Object>;
-    static isId(paramarg0: Optic<Object, Object, Object, Object, Object>): boolean;
-    static isInj1(paramarg0: Optic<Object, Object, Object, Object, Object>): boolean;
-    static isInj2(paramarg0: Optic<Object, Object, Object, Object, Object>): boolean;
-    static isProj1(paramarg0: Optic<Object, Object, Object, Object, Object>): boolean;
-    static isProj2(paramarg0: Optic<Object, Object, Object, Object, Object>): boolean;
+    static isId(paramarg0: Optic<any, Object, Object, Object, Object>): boolean;
+    static isInj1(paramarg0: Optic<any, Object, Object, Object, Object>): boolean;
+    static isInj2(paramarg0: Optic<any, Object, Object, Object, Object>): boolean;
+    static isProj1(paramarg0: Optic<any, Object, Object, Object, Object>): boolean;
+    static isProj2(paramarg0: Optic<any, Object, Object, Object, Object>): boolean;
     static lens(paramarg0: (param0: Object | null) => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): Lens<Object, Object, Object, Object>;
     static listTraversal(): ListTraversal<Object, Object>;
     static pStore(paramarg0: (param0: Object | null) => Object | null, paramarg1: () => Object | null): PStore<Object, Object, Object>;
@@ -61,11 +61,11 @@ export abstract class Optics extends Object {
     static reForgetE(paramarg0: string, paramarg1: (param0: Either<Object, Object>) => Object | null): ReForgetE<Object, Object, Object>;
     static reForgetEP(paramarg0: string, paramarg1: (param0: Either<Object, Pair<Object, Object>>) => Object | null): ReForgetEP<Object, Object, Object>;
     static reForgetP(paramarg0: string, paramarg1: (param0: Object | null, param1: Object | null) => Object | null): ReForgetP<Object, Object, Object>;
-    static toAdapter(paramarg0: Optic<Object, Object, Object, Object, Object>): Adapter<Object, Object, Object, Object>;
-    static toAffine(paramarg0: Optic<Object, Object, Object, Object, Object>): Affine<Object, Object, Object, Object>;
-    static toGetter(paramarg0: Optic<Object, Object, Object, Object, Object>): Getter<Object, Object, Object, Object>;
-    static toLens(paramarg0: Optic<Object, Object, Object, Object, Object>): Lens<Object, Object, Object, Object>;
-    static toPrism(paramarg0: Optic<Object, Object, Object, Object, Object>): Prism<Object, Object, Object, Object>;
-    static toTraversal(paramarg0: Optic<Object, Object, Object, Object, Object>): Traversal<Object, Object, Object, Object>;
+    static toAdapter(paramarg0: Optic<any, Object, Object, Object, Object>): Adapter<Object, Object, Object, Object>;
+    static toAffine(paramarg0: Optic<any, Object, Object, Object, Object>): Affine<Object, Object, Object, Object>;
+    static toGetter(paramarg0: Optic<any, Object, Object, Object, Object>): Getter<Object, Object, Object, Object>;
+    static toLens(paramarg0: Optic<any, Object, Object, Object, Object>): Lens<Object, Object, Object, Object>;
+    static toPrism(paramarg0: Optic<any, Object, Object, Object, Object>): Prism<Object, Object, Object, Object>;
+    static toTraversal(paramarg0: Optic<any, Object, Object, Object, Object>): Traversal<Object, Object, Object, Object>;
     constructor()
 }

@@ -49,5 +49,5 @@ export class HasSturdyFacePredicate extends Object implements BlockPredicate {
     // private direction: Direction;
     // private offset: Vec3i;
     test(level: WorldGenLevel, origin: BlockPos): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

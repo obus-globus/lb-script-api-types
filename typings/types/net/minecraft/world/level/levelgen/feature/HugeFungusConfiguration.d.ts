@@ -17,5 +17,5 @@ export class HugeFungusConfiguration extends Object implements FeatureConfigurat
     replaceableBlocks: BlockPredicate;
     stemState: BlockState;
     validBaseState: BlockState;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

@@ -6,7 +6,7 @@ export class TypeResolver$TypeTable extends Object {
     constructor()
     private constructor(map: Map<TypeResolver$TypeVariableKey, Type>)
     // private map: Map<TypeResolver$TypeVariableKey, Type>;
-    resolve(var_: TypeVariable<Object>): Type;
-    resolveInternal(var_: TypeVariable<Object>, forDependants: TypeResolver$TypeTable): Type;
+    resolve(var_: TypeVariable<any>): Type;
+    resolveInternal(var_: TypeVariable<any>, forDependants: TypeResolver$TypeTable): Type;
     where(mappings: Map<TypeResolver$TypeVariableKey, Type>): TypeResolver$TypeTable;
 }

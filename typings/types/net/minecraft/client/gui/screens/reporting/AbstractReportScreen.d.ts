@@ -1,5 +1,4 @@
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -15,7 +14,7 @@ import type { ReportingContext } from '../../../../../../net/minecraft/client/mu
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export abstract class AbstractReportScreen<B extends Report$Builder<Object>> extends Screen {
+export abstract class AbstractReportScreen<B extends Report$Builder<any>> extends Screen {
     static FOOTER_SEPARATOR: Identifier;
     static HEADER_SEPARATOR: Identifier;
     static INWORLD_FOOTER_SEPARATOR: Identifier;

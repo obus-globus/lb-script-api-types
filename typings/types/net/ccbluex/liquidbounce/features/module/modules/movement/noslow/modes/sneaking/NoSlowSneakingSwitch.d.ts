@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -7,9 +6,9 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../../../
 import type { NoSlowSneakingSwitch$TimingMode } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/sneaking/NoSlowSneakingSwitch$TimingMode.d.ts'
 export class NoSlowSneakingSwitch extends Mode {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private networkTickHandler: EventHook<PlayerNetworkMovementTickEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private timingMode: NoSlowSneakingSwitch$TimingMode;
     // private /*not mapped: */ getTimingMode(): NoSlowSneakingSwitch$TimingMode;
     enable(): void;

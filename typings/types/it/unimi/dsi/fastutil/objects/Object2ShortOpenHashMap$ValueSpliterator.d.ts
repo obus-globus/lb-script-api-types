@@ -4,7 +4,7 @@ import type { ShortConsumer } from '../../../../../it/unimi/dsi/fastutil/shorts/
 import type { ShortSpliterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Object2ShortOpenHashMap$ValueSpliterator extends Object2ShortOpenHashMap$MapSpliterator<Object, Object> implements ShortSpliterator {
+export class Object2ShortOpenHashMap$ValueSpliterator extends Object2ShortOpenHashMap$MapSpliterator<Object, any> implements ShortSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

@@ -35,12 +35,12 @@ export class GameRule<T extends Object | number | string | boolean> extends Obje
     deserialize(value: string): DataResult<T>;
     // private deserialize$mixinextras$wrapped$27(arg0: string): DataResult<Object>;
     fabric_enumCycle<E extends Enum<E>>(arg0: E): E;
-    fabric_enumCycle(arg0: Enum<Object>): Enum<Object>;
+    fabric_enumCycle(arg0: Enum<any>): Enum<any>;
     fabric_getSupportedEnumValues<E extends Enum<E>>(): E[];
     fabric_getSupportedEnumValues(): (Object | null)[];
     fabric_getType(): FabricGameRuleType;
     fabric_setSupportedEnumValues<E extends Enum<E>>(arg0: E[]): void;
-    fabric_setSupportedEnumValues(arg0: Enum<Object>[]): void;
+    fabric_setSupportedEnumValues(arg0: Enum<any>[]): void;
     fabric_setType(arg0: FabricGameRuleType): void;
     gameRuleType(): GameRuleType;
     getCommandResult(value: T): number;

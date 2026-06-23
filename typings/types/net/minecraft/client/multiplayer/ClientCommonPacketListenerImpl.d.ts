@@ -90,12 +90,12 @@ export abstract class ClientCommonPacketListenerImpl extends Object implements P
     onDisconnect(details: DisconnectionDetails): void;
     onPacketError(packet: Packet<PacketListener>, cause: Exception): void;
     protocol(): ConnectionProtocol;
-    send(packet: Packet<Object>): void;
+    send(packet: Packet<any>): void;
     sendDeferredPackets(): void;
     // private sendWhen(packet: Packet<ServerboundPacketListener>, condition: () => boolean, expireAfterDuration: Duration): void;
     serverBrand(): string;
     serverLinks(): ServerLinks;
-    shouldHandleMessage(packet: Packet<Object>): boolean;
+    shouldHandleMessage(packet: Packet<any>): boolean;
     showDialog(dialog: Holder<Dialog>, activeScreen: Screen): void;
     showDialog(dialog: Holder<Dialog>, connectionAccess: DialogConnectionAccess, activeScreen: Screen): void;
     // private storeDisconnectionReport(packet: Packet<PacketListener>, cause: Throwable): Optional<Path[]>;

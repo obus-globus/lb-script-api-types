@@ -7,19 +7,19 @@ import type { RuleContext } from '../../../../org/antlr/v4/runtime/RuleContext.d
 import type { Token } from '../../../../org/antlr/v4/runtime/Token.d.ts'
 import type { IntervalSet } from '../../../../org/antlr/v4/runtime/misc/IntervalSet.d.ts'
 export class RecognitionException extends RuntimeException {
-    constructor(arg0: string, arg1: Recognizer<Object, Object>, arg2: IntStream, arg3: ParserRuleContext)
-    constructor(arg0: Recognizer<Object, Object>, arg1: IntStream, arg2: ParserRuleContext)
+    constructor(arg0: string, arg1: Recognizer<Object, any>, arg2: IntStream, arg3: ParserRuleContext)
+    constructor(arg0: Recognizer<Object, any>, arg1: IntStream, arg2: ParserRuleContext)
     readonly ctx: RuleContext;
     // private input: IntStream;
     readonly offendingState: number;
     readonly offendingToken: Token;
-    readonly recognizer: Recognizer<Object, Object>;
+    readonly recognizer: Recognizer<Object, any>;
     getCtx(): RuleContext;
     getExpectedTokens(): IntervalSet;
     getInputStream(): IntStream;
     getOffendingState(): number;
     getOffendingToken(): Token;
-    getRecognizer(): Recognizer<Object, Object>;
+    getRecognizer(): Recognizer<Object, any>;
     setOffendingState(arg0: number): void;
     setOffendingToken(arg0: Token): void;
 }

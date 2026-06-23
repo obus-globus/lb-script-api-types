@@ -23,14 +23,14 @@ import type { Reader } from '../../../java/io/Reader.d.ts'
 import type { Key } from '../../../java/security/Key.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
-export class DefaultJwtParser extends AbstractParser<Jwt<Object, Object>> implements JwtParser {
+export class DefaultJwtParser extends AbstractParser<Jwt<any, Object>> implements JwtParser {
     static INCORRECT_EXPECTED_CLAIM_MESSAGE_TEMPLATE: string;
     static MISSING_EXPECTED_CLAIM_VALUE_MESSAGE_TEMPLATE: string;
     static MISSING_JWE_ALG_MSG: string;
     static MISSING_JWE_DIGEST_MSG_FMT: string;
     static MISSING_JWS_ALG_MSG: string;
     static MISSING_JWS_DIGEST_MSG_FMT: string;
-    constructor(arg0: { [key: string]: any }, arg1: SigningKeyResolver, arg2: boolean, arg3: boolean, arg4: Locator<Key>, arg5: Clock, arg6: string[], arg7: number, arg8: { [key: string]: any }, arg9: Decoder<InputStream, InputStream>, arg10: Deserializer<{ [key: string]: Object | null }>, arg11: CompressionCodecResolver, arg12: { [key: string]: CompressionAlgorithm }, arg13: { [key: string]: SecureDigestAlgorithm<Object, Object> }, arg14: { [key: string]: KeyAlgorithm<Object, Object> }, arg15: { [key: string]: AeadAlgorithm })
+    constructor(arg0: { [key: string]: any }, arg1: SigningKeyResolver, arg2: boolean, arg3: boolean, arg4: Locator<Key>, arg5: Clock, arg6: string[], arg7: number, arg8: { [key: string]: any }, arg9: Decoder<InputStream, InputStream>, arg10: Deserializer<{ [key: string]: Object | null }>, arg11: CompressionCodecResolver, arg12: { [key: string]: CompressionAlgorithm }, arg13: { [key: string]: SecureDigestAlgorithm<any, any> }, arg14: { [key: string]: KeyAlgorithm<any, any> }, arg15: { [key: string]: AeadAlgorithm })
     // private allowedClockSkewMillis: number;
     // private clock: Clock;
     // private critical: string[];
@@ -38,10 +38,10 @@ export class DefaultJwtParser extends AbstractParser<Jwt<Object, Object>> implem
     // private deserializer: Deserializer<{ [key: string]: Object | null }>;
     // private encAlgs: Function<{ [key: string]: any }, AeadAlgorithm>;
     // private expectedClaims: ClaimsBuilder;
-    // private keyAlgs: Function<{ [key: string]: any }, KeyAlgorithm<Object, Object>>;
+    // private keyAlgs: Function<{ [key: string]: any }, KeyAlgorithm<any, any>>;
     // private keyLocator: Locator<Key>;
     // private provider: { [key: string]: any };
-    // private sigAlgs: Function<{ [key: string]: any }, SecureDigestAlgorithm<Object, Object>>;
+    // private sigAlgs: Function<{ [key: string]: any }, SecureDigestAlgorithm<any, any>>;
     // private signingKeyResolver: SigningKeyResolver;
     // private unsecured: boolean;
     // private unsecuredDecompression: boolean;
@@ -49,13 +49,13 @@ export class DefaultJwtParser extends AbstractParser<Jwt<Object, Object>> implem
     decode(arg0: CharSequence, arg1: string): number[];
     deserialize(arg0: InputStream, arg1: string): { [key: string]: Object | null };
     isSigned(arg0: CharSequence): boolean;
-    parse(arg0: InputStream): Jwt<Object, Object>;
-    parse(arg0: Reader): Jwt<Object, Object>;
-    // private parse(arg0: Reader, arg1: Payload): Jwt<Object, Object>;
-    parse(arg0: CharSequence): Jwt<Object, Object>;
+    parse(arg0: InputStream): Jwt<any, Object>;
+    parse(arg0: Reader): Jwt<any, Object>;
+    // private parse(arg0: Reader, arg1: Payload): Jwt<any, Object>;
+    parse(arg0: CharSequence): Jwt<any, Object>;
     parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: JwtHandler<T>): T;
-    // private parse(arg0: CharSequence, arg1: Payload): Jwt<Object, Object>;
-    parse(arg0: CharSequence, arg1: number, arg2: number): Jwt<Object, Object>;
+    // private parse(arg0: CharSequence, arg1: Payload): Jwt<any, Object>;
+    parse(arg0: CharSequence, arg1: number, arg2: number): Jwt<any, Object>;
     parseClaimsJws(arg0: CharSequence): Jws<{ [key: string]: any }>;
     parseClaimsJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;
     parseContentJws(arg0: CharSequence): Jws<number[]>;

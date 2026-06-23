@@ -7,8 +7,8 @@ import type { DataComponentPredicate$TypeBase } from '../../../../../net/minecra
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class DataComponentPredicate$AnyValueType extends DataComponentPredicate$TypeBase<AnyValue> {
-    static CODEC: Codec<DataComponentPredicate$Type<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Type<Object>>;
+    static CODEC: Codec<DataComponentPredicate$Type<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Type<any>>;
     static create(paramcomponentType: DataComponentType<Object>): DataComponentPredicate$AnyValueType;
     constructor(predicate: AnyValue)
     // private predicate: AnyValue;

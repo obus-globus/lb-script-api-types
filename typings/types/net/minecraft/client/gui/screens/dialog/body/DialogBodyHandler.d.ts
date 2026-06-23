@@ -3,5 +3,5 @@ import type { LayoutElement } from '../../../../../../../net/minecraft/client/gu
 import type { DialogScreen } from '../../../../../../../net/minecraft/client/gui/screens/dialog/DialogScreen.d.ts'
 import type { DialogBody } from '../../../../../../../net/minecraft/server/dialog/body/DialogBody.d.ts'
 export interface DialogBodyHandler<T extends DialogBody> extends Object{
-    createControls(parent: DialogScreen<Object>, body: T): LayoutElement;
+    createControls(parent: DialogScreen<any>, body: T): LayoutElement;
 }

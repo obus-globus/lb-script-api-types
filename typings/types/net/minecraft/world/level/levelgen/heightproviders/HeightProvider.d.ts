@@ -6,6 +6,6 @@ import type { HeightProviderType } from '../../../../../../net/minecraft/world/l
 export abstract class HeightProvider extends Object {
     static CODEC: Codec<HeightProvider>;
     constructor()
-    getType(): HeightProviderType<Object>;
+    getType(): HeightProviderType<any>;
     sample(random: RandomSource, heightAccessor: WorldGenerationContext): number;
 }

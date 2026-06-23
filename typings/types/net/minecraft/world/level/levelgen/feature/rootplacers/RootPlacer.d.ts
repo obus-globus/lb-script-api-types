@@ -23,5 +23,5 @@ export abstract class RootPlacer extends Object {
     getTrunkOrigin(origin: BlockPos, random: RandomSource): BlockPos;
     placeRoot(level: WorldGenLevel, rootSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, pos: BlockPos, config: TreeConfiguration): void;
     placeRoots(level: WorldGenLevel, rootSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, origin: BlockPos, trunkOrigin: BlockPos, config: TreeConfiguration): boolean;
-    type(): RootPlacerType<Object>;
+    type(): RootPlacerType<any>;
 }

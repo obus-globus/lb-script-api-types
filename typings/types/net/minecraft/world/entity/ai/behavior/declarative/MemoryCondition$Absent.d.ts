@@ -12,7 +12,7 @@ export class MemoryCondition$Absent<Value extends Object | number | string | boo
     constructor(memory: MemoryModuleType<Value>)
     // private memory: MemoryModuleType<Value>;
     condition(): MemoryStatus;
-    createAccessor(brain: Brain<Object>, value: Optional<Value>): MemoryAccessor<Const$Mu<Unit>, Value>;
+    createAccessor(brain: Brain<any>, value: Optional<Value>): MemoryAccessor<Const$Mu<Unit>, Value>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     memory(): MemoryModuleType<Value>;

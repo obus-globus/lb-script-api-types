@@ -19,7 +19,7 @@ export class AsyncAppender extends AbstractAppender {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
     static createAppender(paramappenderRefs: (Object | null)[], paramerrorRef: string, paramblocking: boolean, paramshutdownTimeout: number, paramsize: number, paramname: string, paramincludeLocation: boolean, paramfilter: Filter, paramconfig: Configuration, paramignoreExceptions: boolean): AsyncAppender;
-    static newBuilder(): AsyncAppender$Builder<Object>;
+    static newBuilder(): AsyncAppender$Builder<any>;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, filter: Filter, appenderRefs: AppenderRef[], errorRef: string, queueSize: number, blocking: boolean, ignoreExceptions: boolean, shutdownTimeout: number, config: Configuration, includeLocation: boolean, blockingQueueFactory: BlockingQueueFactory<LogEvent>, properties: Property[])
     // private appenderRefs: AppenderRef[];

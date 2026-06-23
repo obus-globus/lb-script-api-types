@@ -8,5 +8,5 @@ export class EntityArgument$Info$Template extends Object implements ArgumentType
     // private playersOnly: boolean;
     // private single: boolean;
     instantiate(context: CommandBuildContext): EntityArgument;
-    type(): ArgumentTypeInfo<EntityArgument, Object>;
+    type(): ArgumentTypeInfo<EntityArgument, any>;
 }

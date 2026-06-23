@@ -15,10 +15,10 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { Filterable } from '../../../../../net/minecraft/server/network/Filterable.d.ts'
 import type { WritableBookContent } from '../../../../../net/minecraft/world/item/component/WritableBookContent.d.ts'
 export class WritableBookPredicate extends Record implements SingleComponentItemPredicate<WritableBookContent> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<WritableBookPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(pages: Optional<CollectionPredicate<Filterable<string>, WritableBookPredicate$PagePredicate>>)
     // private pages: Optional<CollectionPredicate<Filterable<string>, WritableBookPredicate$PagePredicate>>;
     componentType(): DataComponentType<WritableBookContent>;

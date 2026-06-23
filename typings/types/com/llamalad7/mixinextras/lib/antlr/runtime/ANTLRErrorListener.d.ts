@@ -8,5 +8,5 @@ export interface ANTLRErrorListener extends Object{
     reportAmbiguity(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: boolean, arg5: BitSet, arg6: (Object | null)[]): void;
     reportAttemptingFullContext(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: BitSet, arg5: (Object | null)[]): void;
     reportContextSensitivity(arg0: Parser, arg1: DFA, arg2: number, arg3: number, arg4: number, arg5: (Object | null)[]): void;
-    syntaxError(arg0: Recognizer<Object, Object>, arg1: Object, arg2: number, arg3: number, arg4: string, arg5: RecognitionException): void;
+    syntaxError(arg0: Recognizer<Object, any>, arg1: Object, arg2: number, arg3: number, arg4: string, arg5: RecognitionException): void;
 }

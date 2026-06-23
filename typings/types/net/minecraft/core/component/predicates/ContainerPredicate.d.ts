@@ -15,10 +15,10 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemContainerContents } from '../../../../../net/minecraft/world/item/component/ItemContainerContents.d.ts'
 export class ContainerPredicate extends Record implements SingleComponentItemPredicate<ItemContainerContents> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<ContainerPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(items: Optional<CollectionPredicate<ItemInstance, ItemPredicate>>)
     // private items: Optional<CollectionPredicate<ItemInstance, ItemPredicate>>;
     componentType(): DataComponentType<ItemContainerContents>;

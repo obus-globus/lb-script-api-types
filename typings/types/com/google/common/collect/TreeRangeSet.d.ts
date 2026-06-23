@@ -6,9 +6,9 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class TreeRangeSet<C extends Comparable<Object>> extends AbstractRangeSet<C> implements Serializable {
-    static create(): TreeRangeSet<Object>;
-    static create(paramrangeSet: RangeSet<Object>): TreeRangeSet<Object>;
-    static create(paramranges: Range<Object>[]): TreeRangeSet<Object>;
+    static create(): TreeRangeSet<any>;
+    static create(paramrangeSet: RangeSet<any>): TreeRangeSet<any>;
+    static create(paramranges: Range<any>[]): TreeRangeSet<any>;
     private constructor(rangesByLowerCut: Map<Cut<C>, Range<C>>)
     // private asDescendingSetOfRanges: Range<C>[];
     // private asRanges: Range<C>[];

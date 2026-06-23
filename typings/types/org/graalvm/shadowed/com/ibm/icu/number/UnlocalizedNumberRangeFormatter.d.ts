@@ -5,7 +5,7 @@ import type { NumberRangeFormatterSettings } from '../../../../../../../org/graa
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class UnlocalizedNumberRangeFormatter extends NumberRangeFormatterSettings<UnlocalizedNumberRangeFormatter> {
     constructor()
-    constructor(parent: NumberRangeFormatterSettings<Object>, key: number, value: Object)
+    constructor(parent: NumberRangeFormatterSettings<any>, key: number, value: Object)
     create(key: number, value: Object): UnlocalizedNumberRangeFormatter;
     locale(locale: Locale): LocalizedNumberRangeFormatter;
     locale(locale: ULocale): LocalizedNumberRangeFormatter;

@@ -257,7 +257,7 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     sendPlayerChatMessage(message: PlayerChatMessage, chatType: ChatType$Bound): void;
     // private setGameRuleValue<T extends Object | number | string | boolean>(gameRules: GameRules, rule: GameRule<T>, value: string): void;
     // private shouldCheckPlayerMovement(isFallFlying: boolean): boolean;
-    shouldHandleMessage(packet: Packet<Object>): boolean;
+    shouldHandleMessage(packet: Packet<any>): boolean;
     // private signBook(title: FilteredText, contents: FilteredText[], slot: number): void;
     switchToConfig(): void;
     teleport(x: number, y: number, z: number, yRot: number, xRot: number): void;

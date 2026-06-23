@@ -344,7 +344,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     removeBlock(pos: BlockPos, movedByPiston: boolean): boolean;
     removeBlockEntity(pos: BlockPos): void;
     sendBlockUpdated(pos: BlockPos, old: BlockState, current: BlockState, updateFlags: number): void;
-    sendPacketToServer(packet: Packet<Object>): void;
+    sendPacketToServer(packet: Packet<any>): void;
     setAttached<A extends Object | number | string | boolean>(arg0: AttachmentType<A>, arg1: A): A;
     setAttached(arg0: AttachmentType<Object>, arg1: Object): Object;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number): boolean;

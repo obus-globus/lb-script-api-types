@@ -31,7 +31,7 @@ export interface JwtParserBuilder extends Builder<JwtParser>, Object{
     deserializeJsonWith(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
     enc(): NestedCollection<AeadAlgorithm, JwtParserBuilder>;
     json(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
-    key(): NestedCollection<KeyAlgorithm<Object, Object>, JwtParserBuilder>;
+    key(): NestedCollection<KeyAlgorithm<any, any>, JwtParserBuilder>;
     keyLocator(arg0: Locator<Key>): JwtParserBuilder;
     provider(arg0: { [key: string]: any }): JwtParserBuilder;
     require(arg0: string, arg1: Object): JwtParserBuilder;
@@ -49,7 +49,7 @@ export interface JwtParserBuilder extends Builder<JwtParser>, Object{
     setSigningKey(arg0: number[]): JwtParserBuilder;
     setSigningKey(arg0: string): JwtParserBuilder;
     setSigningKeyResolver(arg0: SigningKeyResolver): JwtParserBuilder;
-    sig(): NestedCollection<SecureDigestAlgorithm<Object, Object>, JwtParserBuilder>;
+    sig(): NestedCollection<SecureDigestAlgorithm<any, any>, JwtParserBuilder>;
     unsecured(): JwtParserBuilder;
     unsecuredDecompression(): JwtParserBuilder;
     verifyWith(arg0: PublicKey): JwtParserBuilder;

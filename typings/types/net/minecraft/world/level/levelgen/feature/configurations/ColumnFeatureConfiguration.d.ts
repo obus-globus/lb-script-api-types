@@ -12,7 +12,7 @@ export class ColumnFeatureConfiguration extends Object implements FeatureConfigu
     constructor(reach: IntProvider, height: IntProvider)
     // private height: IntProvider;
     // private reach: IntProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     height(): IntProvider;
     reach(): IntProvider;
 }

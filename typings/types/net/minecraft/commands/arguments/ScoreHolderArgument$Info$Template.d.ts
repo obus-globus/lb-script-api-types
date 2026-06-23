@@ -7,5 +7,5 @@ export class ScoreHolderArgument$Info$Template extends Object implements Argumen
     private constructor(null_: ScoreHolderArgument$Info$Template, multiple: boolean)
     // private multiple: boolean;
     instantiate(context: CommandBuildContext): ScoreHolderArgument;
-    type(): ArgumentTypeInfo<ScoreHolderArgument, Object>;
+    type(): ArgumentTypeInfo<ScoreHolderArgument, any>;
 }

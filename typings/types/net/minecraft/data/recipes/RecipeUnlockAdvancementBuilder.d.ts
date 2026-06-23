@@ -7,7 +7,7 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export class RecipeUnlockAdvancementBuilder extends Object {
     constructor()
-    // private criteria: { [key: string]: Criterion<Object> };
-    build(output: RecipeOutput, id: ResourceKey<Recipe<Object>>, category: RecipeCategory): AdvancementHolder;
-    unlockedBy(name: string, criterion: Criterion<Object>): void;
+    // private criteria: { [key: string]: Criterion<any> };
+    build(output: RecipeOutput, id: ResourceKey<Recipe<any>>, category: RecipeCategory): AdvancementHolder;
+    unlockedBy(name: string, criterion: Criterion<any>): void;
 }

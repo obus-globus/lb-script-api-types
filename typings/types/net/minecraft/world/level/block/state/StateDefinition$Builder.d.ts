@@ -8,8 +8,8 @@ import type { Property } from '../../../../../../net/minecraft/world/level/block
 export class StateDefinition$Builder<O extends Object | number | string | boolean, S extends StateHolder<O, S>> extends Object {
     constructor(owner: O)
     // private owner: O;
-    // private properties: { [key: string]: Property<Object> };
-    add(properties: Property<Object>[]): StateDefinition$Builder<O, S>;
+    // private properties: { [key: string]: Property<any> };
+    add(properties: Property<any>[]): StateDefinition$Builder<O, S>;
     create(defaultState: (param0: O) => S, factory: StateDefinition$Factory<O, S>): StateDefinition<O, S>;
     // private validateProperty<T extends Comparable<T>>(property: Property<T>): void;
 }

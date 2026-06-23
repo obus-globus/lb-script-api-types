@@ -27,7 +27,7 @@ export abstract class ItemCombinerMenu extends AbstractContainerMenu {
     static getRedstoneSignalFromBlockEntity(paramblockEntity: BlockEntity): number;
     static getRedstoneSignalFromContainer(paramcontainer: ItemStack[]): number;
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
-    constructor(menuType: MenuType<Object>, containerId: number, inventory: (Object | null)[], access: ContainerLevelAccess, itemInputSlots: ItemCombinerMenuSlotDefinition)
+    constructor(menuType: MenuType<any>, containerId: number, inventory: (Object | null)[], access: ContainerLevelAccess, itemInputSlots: ItemCombinerMenuSlotDefinition)
     // private access: ContainerLevelAccess;
     // private inputSlots: ItemStack[];
     // private player: Player;

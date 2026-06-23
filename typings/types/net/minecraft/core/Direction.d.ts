@@ -45,8 +45,8 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     static from2DDataValue(paramdata: number): Direction;
     static from3DDataValue(paramdata: number): Direction;
     static fromAxisAndDirection(paramaxis: Direction$Axis, paramdirection: Direction$AxisDirection): Direction;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
+    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
     static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static fromYRot(paramyRot: number): Direction;
     static get(paramaxisDirection: Direction$AxisDirection, paramaxis: Direction$Axis): Direction;

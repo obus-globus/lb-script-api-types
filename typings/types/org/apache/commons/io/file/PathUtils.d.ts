@@ -89,7 +89,7 @@ export class PathUtils extends Object {
     static isNewer(paramarg0: Path[][], paramarg1: Path[][]): boolean;
     static isNewer(paramarg0: Path[][], paramarg1: FileTime, paramarg2: (Object | null)[]): boolean;
     static isNewer(paramarg0: Path[][], paramarg1: Instant, paramarg2: (Object | null)[]): boolean;
-    static isNewer(paramarg0: Path[][], paramarg1: ChronoZonedDateTime<Object>, paramarg2: (Object | null)[]): boolean;
+    static isNewer(paramarg0: Path[][], paramarg1: ChronoZonedDateTime<any>, paramarg2: (Object | null)[]): boolean;
     static isNewer(paramarg0: Path[][], paramarg1: number, paramarg2: (Object | null)[]): boolean;
     static isOlder(paramarg0: Path[][], paramarg1: Path[][]): boolean;
     static isOlder(paramarg0: Path[][], paramarg1: FileTime, paramarg2: (Object | null)[]): boolean;

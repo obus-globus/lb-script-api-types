@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { WorldGenLevel } from '../../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
@@ -28,5 +27,5 @@ export class RuleBasedStateProvider extends BlockStateProvider {
     // private rules: RuleBasedStateProvider$Rule[];
     getOptionalState(level: WorldGenLevel, random: RandomSource, pos: BlockPos): BlockState;
     getState(level: WorldGenLevel, random: RandomSource, pos: BlockPos): BlockState;
-    type(): BlockStateProviderType<Object>;
+    type(): BlockStateProviderType<any>;
 }

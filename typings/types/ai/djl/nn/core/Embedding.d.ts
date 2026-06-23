@@ -16,7 +16,7 @@ export abstract class Embedding<T extends Object | number | string | boolean> ex
     static embedding(paramarg0: NDArray, paramarg1: NDArray, paramarg2: SparseFormat): (Object | null)[];
     constructor(arg0: NDArray)
     constructor(arg0: NDArray, arg1: SparseFormat)
-    constructor(arg0: Embedding$BaseBuilder<T, Object>)
+    constructor(arg0: Embedding$BaseBuilder<T, any>)
     // private embedding: Parameter;
     // private embeddingSize: number;
     // private fallthroughEmbedding: AbstractIndexedEmbedding<T>;

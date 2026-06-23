@@ -77,7 +77,7 @@ export class Item$Properties extends Object implements FabricItem$Properties {
     requiredFeatures(flags: FeatureFlagSet): Item$Properties;
     setId(id: ResourceKey<Item>): Item$Properties;
     shovel(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number): Item$Properties;
-    spawnEgg(type: EntityType<Object>): Item$Properties;
+    spawnEgg(type: EntityType<any>): Item$Properties;
     spear(material: ToolMaterial, attackDuration: number, damageMultiplier: number, delay: number, dismountTime: number, dismountThreshold: number, knockbackTime: number, knockbackThreshold: number, damageTime: number, damageThreshold: number): Item$Properties;
     stacksTo(max: number): Item$Properties;
     sword(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number): Item$Properties;

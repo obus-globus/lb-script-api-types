@@ -4,7 +4,7 @@ import type { ByteSpliterator } from '../../../../../it/unimi/dsi/fastutil/bytes
 import type { Reference2ByteOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteOpenCustomHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2ByteOpenCustomHashMap$ValueSpliterator extends Reference2ByteOpenCustomHashMap$MapSpliterator<Object, Object> implements ByteSpliterator {
+export class Reference2ByteOpenCustomHashMap$ValueSpliterator extends Reference2ByteOpenCustomHashMap$MapSpliterator<Object, any> implements ByteSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

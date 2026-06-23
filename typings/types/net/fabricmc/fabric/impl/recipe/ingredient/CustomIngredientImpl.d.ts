@@ -15,19 +15,19 @@ import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/cra
 import type { ItemLike } from '../../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class CustomIngredientImpl extends Ingredient {
     static CODEC: Codec<Ingredient>;
-    static CODEC: Codec<CustomIngredientSerializer<Object>>;
+    static CODEC: Codec<CustomIngredientSerializer<any>>;
     static CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Ingredient>;
     static NON_AIR_HOLDER_SET_CODEC: Codec<Holder<Item>[]>;
     static OPTIONAL_CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>;
     static TYPE_KEY: string;
     static displayForSingleItem(paramitem: Holder<Item>): SlotDisplay;
-    static getSerializer(paramarg0: Identifier): CustomIngredientSerializer<Object>;
+    static getSerializer(paramarg0: Identifier): CustomIngredientSerializer<any>;
     static of(paramstream: Stream<ItemLike>): Ingredient;
     static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;
     static of(paramitems: (Object | null)[]): Ingredient;
     static optionalIngredientToDisplay(paramingredient: Optional<Ingredient>): SlotDisplay;
-    static registerSerializer(paramarg0: CustomIngredientSerializer<Object>): void;
+    static registerSerializer(paramarg0: CustomIngredientSerializer<any>): void;
     static testOptionalIngredient(paramingredient: Optional<Ingredient>, paramstack: ItemStack): boolean;
     constructor(arg0: CustomIngredient)
     readonly customIngredient: CustomIngredient;

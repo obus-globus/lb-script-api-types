@@ -17,5 +17,5 @@ export class MapItemSavedData$HoldingPlayer extends Object {
     // private createPatch(): MapItemSavedData$MapPatch;
     // private markColorsDirty(x: number, y: number): void;
     // private markDecorationsDirty(): void;
-    // private nextUpdatePacket(id: MapId): Packet<Object>;
+    // private nextUpdatePacket(id: MapId): Packet<any>;
 }

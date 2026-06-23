@@ -48,7 +48,7 @@ export class Executable extends AccessibleObject implements GenericDeclaration, 
     getSharedParameterTypes(): Class<Object>[];
     getTypeAnnotationBytes(): number[];
     getTypeAnnotationBytes0(): number[];
-    getTypeParameters(): TypeVariable<Object>[];
+    getTypeParameters(): TypeVariable<any>[];
     handleParameterNumberMismatch(arg0: number, arg1: Class<Object>[]): boolean;
     hasGenericInformation(): boolean;
     hasRealParameterData(): boolean;

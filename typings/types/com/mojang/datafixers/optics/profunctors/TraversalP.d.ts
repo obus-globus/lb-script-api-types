@@ -16,6 +16,6 @@ export interface TraversalP<P extends K2, Mu extends TraversalP$Mu> extends Affi
     first<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>): App2<P, Pair<A, C>, Pair<B, C>>;
     left<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>): App2<P, Either<A, C>, Either<B, C>>;
     toFP3(): FunctorProfunctor<Traversable$Mu, P, FunctorProfunctor$Mu<Traversable$Mu>>;
-    traverse<T extends K1, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Traversable<T, Object>, arg1: App2<P, A, B>): App2<P, App<T, A>, App<T, B>>;
+    traverse<T extends K1, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Traversable<T, any>, arg1: App2<P, A, B>): App2<P, App<T, A>, App<T, B>>;
     wander<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Wander<S, T, A, B>, arg1: App2<P, A, B>): App2<P, S, T>;
 }

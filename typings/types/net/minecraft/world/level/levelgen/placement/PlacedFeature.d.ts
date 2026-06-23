@@ -15,12 +15,12 @@ export class PlacedFeature extends Record {
     static DIRECT_CODEC: Codec<PlacedFeature>;
     static LIST_CODEC: Codec<Holder<PlacedFeature>[]>;
     static LIST_OF_LISTS_CODEC: Codec<Holder<PlacedFeature>[][]>;
-    constructor(feature: Holder<ConfiguredFeature<Object, Object>>, placement: PlacementModifier[])
-    // private feature: Holder<ConfiguredFeature<Object, Object>>;
+    constructor(feature: Holder<ConfiguredFeature<any, any>>, placement: PlacementModifier[])
+    // private feature: Holder<ConfiguredFeature<any, any>>;
     // private placement: PlacementModifier[];
     equals(o: Object | null): boolean;
-    feature(): Holder<ConfiguredFeature<Object, Object>>;
-    getFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    feature(): Holder<ConfiguredFeature<any, any>>;
+    getFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     place(level: WorldGenLevel, generator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
     placeWithBiomeCheck(level: WorldGenLevel, generator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;

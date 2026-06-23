@@ -10,7 +10,7 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 export class BlockEntityRenderState extends Object implements FabricRenderState {
     static extractBase(paramblockEntity: BlockEntity, paramstate: BlockEntityRenderState, parambreakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     constructor()
-    blockEntityType: BlockEntityType<Object>;
+    blockEntityType: BlockEntityType<any>;
     blockPos: BlockPos;
     blockState: BlockState;
     breakProgress: ModelFeatureRenderer$CrumblingOverlay;

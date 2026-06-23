@@ -34,8 +34,8 @@ export class ItemModelUtils extends Object {
     static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
     static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: Object | null): ItemModel$Unbaked;
     static select(paramproperty: SelectItemModelProperty<Object>, paramcases: Object | null): ItemModel$Unbaked;
-    static selectBlockItemProperty(paramtransformation: Transformation, paramproperty: Property<Object>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;
-    static selectBlockItemProperty(paramproperty: Property<Object>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;
+    static selectBlockItemProperty(paramtransformation: Transformation, paramproperty: Property<any>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;
+    static selectBlockItemProperty(paramproperty: Property<any>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Transformation, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Optional<Transformation>, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;

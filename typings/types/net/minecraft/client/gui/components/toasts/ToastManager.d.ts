@@ -16,7 +16,7 @@ export class ToastManager extends Object {
     // private occupiedSlots: BitSet;
     // private playedToastSounds: SoundEvent[];
     // private queued: Toast[];
-    // private visibleToasts: ToastManager$ToastInstance<Object>[];
+    // private visibleToasts: ToastManager$ToastInstance<any>[];
     addToast(toast: Toast): void;
     clear(): void;
     extractRenderState(graphics: GuiGraphicsExtractor): void;

@@ -4,8 +4,8 @@ import type { ClientboundPacketType } from '../../../../com/viaversion/viaversio
 import type { IdRewriteFunction } from '../../../../com/viaversion/viaversion/rewriter/IdRewriteFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StatisticsRewriter<C extends ClientboundPacketType> extends Object {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
-    // private protocol: Protocol<C, Object, Object, Object>;
+    constructor(arg0: Protocol<C, any, any, any>)
+    // private protocol: Protocol<C, any, any, any>;
     getRegistryTypeForStatistic(arg0: number): RegistryType;
     getRewriter(arg0: RegistryType): (param0: number) => number;
     register(arg0: C): void;

@@ -372,7 +372,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     reportChunkLoadFailure(throwable: Throwable, storageInfo: RegionStorageInfo, pos: ChunkPos): void;
     reportChunkSaveFailure(throwable: Throwable, storageInfo: RegionStorageInfo, pos: ChunkPos): void;
     reportMisplacedChunk(storedPos: ChunkPos, requestedPos: ChunkPos, storageInfo: RegionStorageInfo): void;
-    reportPacketHandlingException(throwable: Throwable, packetType: PacketType<Object>): void;
+    reportPacketHandlingException(throwable: Throwable, packetType: PacketType<any>): void;
     runServer(): void;
     saveAllChunks(silent: boolean, flush: boolean, force: boolean): boolean;
     // private saveDebugReport(output: Path[]): void;

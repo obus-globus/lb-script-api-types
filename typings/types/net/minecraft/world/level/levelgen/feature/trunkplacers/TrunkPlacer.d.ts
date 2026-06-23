@@ -24,6 +24,6 @@ export abstract class TrunkPlacer extends Object {
     placeLog(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, pos: BlockPos, config: TreeConfiguration, stateModifier: (param0: BlockState) => BlockState): boolean;
     placeLogIfFree(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, pos: BlockPos$MutableBlockPos, config: TreeConfiguration): void;
     placeTrunk(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, treeHeight: number, origin: BlockPos, config: TreeConfiguration): FoliagePlacer$FoliageAttachment[];
-    type(): TrunkPlacerType<Object>;
+    type(): TrunkPlacerType<any>;
     validTreePos(level: WorldGenLevel, pos: BlockPos): boolean;
 }

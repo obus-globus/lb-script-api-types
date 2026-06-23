@@ -4,12 +4,12 @@ import type { ProtocolVersion } from '../../../../com/viaversion/viaversion/api/
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ProtocolPathEntryImpl extends Record implements ProtocolPathEntry {
-    constructor(outputProtocolVersion: ProtocolVersion, protocol: Protocol<Object, Object, Object, Object>)
+    constructor(outputProtocolVersion: ProtocolVersion, protocol: Protocol<any, any, any, any>)
     // private outputProtocolVersion: ProtocolVersion;
-    // private protocol: Protocol<Object, Object, Object, Object>;
+    // private protocol: Protocol<any, any, any, any>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     outputProtocolVersion(): ProtocolVersion;
-    protocol(): Protocol<Object, Object, Object, Object>;
+    protocol(): Protocol<any, any, any, any>;
     toString(): string;
 }

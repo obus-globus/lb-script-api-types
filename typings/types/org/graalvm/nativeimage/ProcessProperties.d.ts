@@ -11,7 +11,7 @@ export class ProcessProperties extends Object {
     static getArgumentVectorProgramName(): string;
     static getExecutableName(): string;
     static getObjectFile(paramsymbol: string): string;
-    static getObjectFile(paramsymbol: CEntryPointLiteral<Object>): string;
+    static getObjectFile(paramsymbol: CEntryPointLiteral<any>): string;
     static getProcessID(): number;
     static getProcessID(paramprocess: Process): number;
     static isAlive(paramprocessID: number): boolean;

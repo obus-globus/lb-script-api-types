@@ -32,8 +32,8 @@ export class ChestMenu extends AbstractContainerMenu {
     static threeRows(paramcontainerId: number, paraminventory: (Object | null)[]): ChestMenu;
     static threeRows(paramcontainerId: number, paraminventory: (Object | null)[], paramcontainer: ItemStack[]): ChestMenu;
     static twoRows(paramcontainerId: number, paraminventory: (Object | null)[]): ChestMenu;
-    constructor(menuType: MenuType<Object>, containerId: number, inventory: (Object | null)[], rows: number)
-    constructor(menuType: MenuType<Object>, containerId: number, inventory: (Object | null)[], container: ItemStack[], rows: number)
+    constructor(menuType: MenuType<any>, containerId: number, inventory: (Object | null)[], rows: number)
+    constructor(menuType: MenuType<any>, containerId: number, inventory: (Object | null)[], container: ItemStack[], rows: number)
     readonly container: ItemStack[];
     // private containerRows: number;
     // private addChestGrid(container: ItemStack[], left: number, top: number): void;

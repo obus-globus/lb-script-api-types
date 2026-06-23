@@ -218,7 +218,7 @@ export class Allay extends PathfinderMob implements InventoryCarrier, VibrationS
     tick(): void;
     travel(input: Vec3): void;
     // private updateDuplicationCooldown(): void;
-    updateDynamicGameEventListener(action: (param0: DynamicGameEventListener<Object>, param1: ServerLevel) => void): void;
+    updateDynamicGameEventListener(action: (param0: DynamicGameEventListener<any>, param1: ServerLevel) => void): void;
     wantsToPickUp(level: ServerLevel, itemStack: ItemStack): boolean;
     writeInventoryToTag(output: ValueOutput): void;
 }

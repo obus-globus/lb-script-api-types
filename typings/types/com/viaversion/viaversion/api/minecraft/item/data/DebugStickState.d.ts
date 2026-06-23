@@ -15,7 +15,7 @@ export class DebugStickState extends Record implements Copyable, Rewritable {
     copy(): DebugStickState;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): DebugStickState;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): DebugStickState;
     tag(): Map$Entry<string, Tag>[];
     toString(): string;
 }

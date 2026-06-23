@@ -5,8 +5,8 @@ import type { Function } from '../../../../../../../../java/util/function/Functi
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SerializerMap$Builder<R extends Object | number | string | boolean, A extends Enum<A>, IO extends Object | number | string | boolean> extends Object {
-    constructor(arg0: SNbt<Object>)
-    // private sNbt: SNbt<Object>;
+    constructor(arg0: SNbt<any>)
+    // private sNbt: SNbt<any>;
     // private serializers: EventSerializer<R, R, A, IO>[];
     add(arg0: EventSerializer<R, R, A, IO>): SerializerMap$Builder<R, A, IO>;
     finalize(arg0: (param0: R) => A): SerializerMap<R, A, IO>;

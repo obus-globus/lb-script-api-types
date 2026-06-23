@@ -8,7 +8,7 @@ import type { ClientboundCommandsPacket$NodeStub } from '../../../../../net/mine
 export class ClientboundCommandsPacket$LiteralNodeStub extends Record implements ClientboundCommandsPacket$NodeStub {
     private constructor(id: string)
     // private id: string;
-    build<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): ArgumentBuilder<S, Object>;
+    build<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): ArgumentBuilder<S, any>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     id(): string;

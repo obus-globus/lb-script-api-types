@@ -94,9 +94,9 @@ export class FileUtils extends Object {
     static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDate): boolean;
     static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDate, paramarg2: LocalTime): boolean;
     static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDate, paramarg2: OffsetTime): boolean;
-    static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDateTime<Object>): boolean;
-    static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDateTime<Object>, paramarg2: ZoneId): boolean;
-    static isFileNewer(paramarg0: File, paramarg1: ChronoZonedDateTime<Object>): boolean;
+    static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDateTime<any>): boolean;
+    static isFileNewer(paramarg0: File, paramarg1: ChronoLocalDateTime<any>, paramarg2: ZoneId): boolean;
+    static isFileNewer(paramarg0: File, paramarg1: ChronoZonedDateTime<any>): boolean;
     static isFileNewer(paramarg0: File, paramarg1: Date): boolean;
     static isFileNewer(paramarg0: File, paramarg1: number): boolean;
     static isFileOlder(paramarg0: File, paramarg1: File): boolean;
@@ -106,9 +106,9 @@ export class FileUtils extends Object {
     static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDate): boolean;
     static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDate, paramarg2: LocalTime): boolean;
     static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDate, paramarg2: OffsetTime): boolean;
-    static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDateTime<Object>): boolean;
-    static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDateTime<Object>, paramarg2: ZoneId): boolean;
-    static isFileOlder(paramarg0: File, paramarg1: ChronoZonedDateTime<Object>): boolean;
+    static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDateTime<any>): boolean;
+    static isFileOlder(paramarg0: File, paramarg1: ChronoLocalDateTime<any>, paramarg2: ZoneId): boolean;
+    static isFileOlder(paramarg0: File, paramarg1: ChronoZonedDateTime<any>): boolean;
     static isFileOlder(paramarg0: File, paramarg1: Date): boolean;
     static isFileOlder(paramarg0: File, paramarg1: number): boolean;
     static isRegularFile(paramarg0: File, paramarg1: (Object | null)[]): boolean;

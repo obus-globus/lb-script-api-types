@@ -17,7 +17,7 @@ export class ItemPredicateArgument$Context extends Object implements ComponentPr
     private constructor(registries: HolderLookup$Provider)
     // private components: HolderLookup$RegistryLookup<DataComponentType<Object>>;
     // private items: HolderLookup$RegistryLookup<Item>;
-    // private predicates: HolderLookup$RegistryLookup<DataComponentPredicate$Type<Object>>;
+    // private predicates: HolderLookup$RegistryLookup<DataComponentPredicate$Type<any>>;
     // private registries: HolderLookup$Provider;
     anyOf(alternatives: (param0: ItemStack) => boolean[]): (param0: ItemStack) => boolean;
     createComponentTest(reader: ImmutableStringReader, componentType: ItemPredicateArgument$ComponentWrapper): (param0: ItemStack) => boolean;

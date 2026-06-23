@@ -13,9 +13,9 @@ export class CopyBlockState extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<CopyBlockState>;
     static copyState(paramblock: Block): CopyBlockState$Builder;
     private constructor(predicates: LootItemCondition[], block: Holder<Block>, propertyNames: string[])
-    private constructor(predicates: LootItemCondition[], block: Holder<Block>, properties: Property<Object>[])
+    private constructor(predicates: LootItemCondition[], block: Holder<Block>, properties: Property<any>[])
     // private block: Holder<Block>;
-    // private properties: Property<Object>[];
+    // private properties: Property<any>[];
     codec(): MapCodec<CopyBlockState>;
     getReferencedContextParams(): ContextKey<Object>[];
     run(itemStack: ItemStack, context: LootContext): ItemStack;

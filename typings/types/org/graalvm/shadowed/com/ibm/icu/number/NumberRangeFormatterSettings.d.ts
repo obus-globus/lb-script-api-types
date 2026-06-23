@@ -3,10 +3,10 @@ import type { RangeMacroProps } from '../../../../../../../org/graalvm/shadowed/
 import type { NumberRangeFormatter$RangeCollapse } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/NumberRangeFormatter$RangeCollapse.d.ts'
 import type { NumberRangeFormatter$RangeIdentityFallback } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/NumberRangeFormatter$RangeIdentityFallback.d.ts'
 import type { UnlocalizedNumberFormatter } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/UnlocalizedNumberFormatter.d.ts'
-export abstract class NumberRangeFormatterSettings<T extends NumberRangeFormatterSettings<Object>> extends Object {
-    constructor(parent: NumberRangeFormatterSettings<Object>, key: number, value: Object)
+export abstract class NumberRangeFormatterSettings<T extends NumberRangeFormatterSettings<any>> extends Object {
+    constructor(parent: NumberRangeFormatterSettings<any>, key: number, value: Object)
     // private key: number;
-    // private parent: NumberRangeFormatterSettings<Object>;
+    // private parent: NumberRangeFormatterSettings<any>;
     // private resolvedMacros: RangeMacroProps;
     // private value: Object;
     collapse(collapse: NumberRangeFormatter$RangeCollapse): T;

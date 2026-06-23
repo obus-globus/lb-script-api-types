@@ -7,7 +7,6 @@ import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFAddressFamily } from '../../../../org/newsclub/net/unix/AFAddressFamily.d.ts'
 import type { AFServerSocket } from '../../../../org/newsclub/net/unix/AFServerSocket.d.ts'
 import type { AFSocket } from '../../../../org/newsclub/net/unix/AFSocket.d.ts'
@@ -24,22 +23,22 @@ export abstract class AFSocketAddress extends InetSocketAddress {
     static of(paramarg0: URI): AFSocketAddress;
     static of(paramarg0: URI, paramarg1: number): AFSocketAddress;
     constructor(arg0: Class<SentinelSocketAddress>, arg1: number)
-    constructor(arg0: number, arg1: number[], arg2: ObjectPool$Lease<ByteBuffer>, arg3: AFAddressFamily<Object>)
-    readonly addressFamily: AFAddressFamily<Object>;
+    constructor(arg0: number, arg1: number[], arg2: ObjectPool$Lease<ByteBuffer>, arg3: AFAddressFamily<any>)
+    readonly addressFamily: AFAddressFamily<any>;
     // private bytes: number[];
     // private inetAddress: InetAddress;
     // private nativeAddress: ByteBuffer;
     covers(arg0: AFSocketAddress): boolean;
-    getAddressFamily(): AFAddressFamily<Object>;
+    getAddressFamily(): AFAddressFamily<any>;
     getBytes(): number[];
     getFile(): File;
     getInetAddress(): InetAddress;
-    getInetAddress(arg0: AFAddressFamily<Object>): InetAddress;
+    getInetAddress(arg0: AFAddressFamily<any>): InetAddress;
     getNativeAddressDirectBuffer(): ObjectPool$Lease<ByteBuffer>;
     hasFilename(): boolean;
-    newBoundServerSocket(): AFServerSocket<Object>;
-    newConnectedSocket(): AFSocket<Object>;
-    newForceBoundServerSocket(): AFServerSocket<Object>;
+    newBoundServerSocket(): AFServerSocket<any>;
+    newConnectedSocket(): AFSocket<any>;
+    newForceBoundServerSocket(): AFServerSocket<any>;
     // private readObject(arg0: ObjectInputStream): void;
     toSocatAddressString(arg0: AFSocketType, arg1: AFSocketProtocol): string;
     toURI(arg0: string, arg1: URI): URI;

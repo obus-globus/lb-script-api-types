@@ -18,7 +18,7 @@ import type { ItemRewriter } from '../../../../com/viaversion/viaversion/rewrite
 import type { StructuredItemRewriter$ItemHandler } from '../../../../com/viaversion/viaversion/rewriter/StructuredItemRewriter$ItemHandler.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class StructuredItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends Protocol<C, Object, Object, S>> extends ItemRewriter<C, S, T> {
+export class StructuredItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends Protocol<C, any, any, S>> extends ItemRewriter<C, S, T> {
     static MARKER_KEY: string;
     constructor(arg0: T)
     backedUpOriginalHashes(arg0: Map$Entry<string, Tag>[], arg1: Item): OriginalHashedItem;

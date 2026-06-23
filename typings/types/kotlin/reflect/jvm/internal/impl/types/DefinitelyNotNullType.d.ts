@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CustomTypeParameter } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/CustomTypeParameter.d.ts'
 import type { DefinitelyNotNullType$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DefinitelyNotNullType$Companion.d.ts'
 import type { DelegatingSimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DelegatingSimpleType.d.ts'
@@ -16,7 +15,7 @@ export class DefinitelyNotNullType extends DelegatingSimpleType implements Custo
     isMarkedNullable(): boolean;
     isTypeParameter(): boolean;
     makeNullableAsSpecified(arg0: boolean): SimpleType;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): SimpleType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): SimpleType;
     replaceDelegate(arg0: SimpleType): DefinitelyNotNullType;
     substitutionResult(arg0: KotlinType): KotlinType;
     toString(): string;

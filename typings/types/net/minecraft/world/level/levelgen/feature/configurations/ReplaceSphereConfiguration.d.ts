@@ -14,6 +14,6 @@ export class ReplaceSphereConfiguration extends Object implements FeatureConfigu
     // private radius: IntProvider;
     replaceState: BlockState;
     targetState: BlockState;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     radius(): IntProvider;
 }

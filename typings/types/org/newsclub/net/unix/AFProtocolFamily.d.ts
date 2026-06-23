@@ -5,7 +5,7 @@ import type { AFServerSocketChannel } from '../../../../org/newsclub/net/unix/AF
 import type { AFSocketChannel } from '../../../../org/newsclub/net/unix/AFSocketChannel.d.ts'
 export interface AFProtocolFamily extends ProtocolFamily, Object{
     name(): string;
-    openDatagramChannel(): AFDatagramChannel<Object>;
-    openServerSocketChannel(): AFServerSocketChannel<Object>;
-    openSocketChannel(): AFSocketChannel<Object>;
+    openDatagramChannel(): AFDatagramChannel<any>;
+    openServerSocketChannel(): AFServerSocketChannel<any>;
+    openSocketChannel(): AFSocketChannel<any>;
 }

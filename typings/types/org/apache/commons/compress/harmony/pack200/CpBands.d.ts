@@ -28,7 +28,7 @@ export class CpBands extends BandSet {
     // private cp_String: CPString[];
     // private cp_Utf8: CPUTF8[];
     // private defaultAttributeNames: string[];
-    // private objectsToCPConstant: Map<Object, CPConstant<Object>>;
+    // private objectsToCPConstant: Map<Object, CPConstant<any>>;
     // private segment: Segment;
     // private stringsToCpClass: { [key: string]: CPClass };
     // private stringsToCpField: { [key: string]: CPMethodOrField };
@@ -53,7 +53,7 @@ export class CpBands extends BandSet {
     getCPNameAndType(arg0: string, arg1: string): CPNameAndType;
     getCPSignature(arg0: string): CPSignature;
     getCPUtf8(arg0: string): CPUTF8;
-    getConstant(arg0: Object): CPConstant<Object>;
+    getConstant(arg0: Object): CPConstant<any>;
     pack(arg0: OutputStream): void;
     // private removeCpUtf8(arg0: string): void;
     // private removeSignaturesFromCpUTF8(): void;

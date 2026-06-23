@@ -26,12 +26,12 @@ export class TypeDeserializer extends Object {
     // private computeLocalClassifierReplacementType(arg0: number): SimpleType;
     // private computeTypeAliasDescriptor(arg0: number): ClassifierDescriptor;
     // private createSimpleSuspendFunctionType(arg0: KotlinType, arg1: KotlinType): SimpleType;
-    // private createSuspendFunctionType(arg0: TypeAttribute<Object>[], arg1: TypeConstructor, arg2: TypeProjection[], arg3: boolean): SimpleType;
-    // private createSuspendFunctionTypeForBasicCase(arg0: TypeAttribute<Object>[], arg1: TypeConstructor, arg2: TypeProjection[], arg3: boolean): SimpleType;
+    // private createSuspendFunctionType(arg0: TypeAttribute<any>[], arg1: TypeConstructor, arg2: TypeProjection[], arg3: boolean): SimpleType;
+    // private createSuspendFunctionTypeForBasicCase(arg0: TypeAttribute<any>[], arg1: TypeConstructor, arg2: TypeProjection[], arg3: boolean): SimpleType;
     getOwnTypeParameters(): TypeParameterDescriptor[];
     // private loadTypeParameter(arg0: number): TypeParameterDescriptor;
     simpleType(arg0: ProtoBuf$Type, arg1: boolean): SimpleType;
-    // private toAttributes(arg0: TypeAttributeTranslator[], arg1: AnnotationDescriptor[], arg2: TypeConstructor, arg3: DeclarationDescriptor): TypeAttribute<Object>[];
+    // private toAttributes(arg0: TypeAttributeTranslator[], arg1: AnnotationDescriptor[], arg2: TypeConstructor, arg3: DeclarationDescriptor): TypeAttribute<any>[];
     toString(): string;
     // private transformRuntimeFunctionTypeToSuspendFunction(arg0: KotlinType): SimpleType;
     type(arg0: ProtoBuf$Type): KotlinType;

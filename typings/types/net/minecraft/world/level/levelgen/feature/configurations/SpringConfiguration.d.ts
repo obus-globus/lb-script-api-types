@@ -16,5 +16,5 @@ export class SpringConfiguration extends Object implements FeatureConfiguration 
     rockCount: number;
     state: FluidState;
     validBlocks: Holder<Block>[];
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

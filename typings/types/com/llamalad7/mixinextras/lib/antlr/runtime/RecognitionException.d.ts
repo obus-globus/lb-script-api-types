@@ -7,13 +7,13 @@ import type { IntervalSet } from '../../../../../../com/llamalad7/mixinextras/li
 import type { RuntimeException } from '../../../../../../java/lang/RuntimeException.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecognitionException extends RuntimeException {
-    constructor(arg0: Recognizer<Object, Object>, arg1: IntStream, arg2: ParserRuleContext)
-    constructor(arg0: string, arg1: Recognizer<Object, Object>, arg2: IntStream, arg3: ParserRuleContext)
+    constructor(arg0: Recognizer<Object, any>, arg1: IntStream, arg2: ParserRuleContext)
+    constructor(arg0: string, arg1: Recognizer<Object, any>, arg2: IntStream, arg3: ParserRuleContext)
     // private ctx: RuleContext;
     // private input: IntStream;
     // private offendingState: number;
     readonly offendingToken: Token;
-    // private recognizer: Recognizer<Object, Object>;
+    // private recognizer: Recognizer<Object, any>;
     getExpectedTokens(): IntervalSet;
     getInputStream(): IntStream;
     getOffendingToken(): Token;

@@ -1,5 +1,4 @@
 import type { ChannelFutureListener } from '../../../../../../io/netty/channel/ChannelFutureListener.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { UntrackedPacketListener } from '../../../../../../net/fabricmc/fabric/impl/networking/UntrackedPacketListener.d.ts'
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ServerPlayer } from '../../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
@@ -10,6 +9,6 @@ export class FakePlayerPacketListener extends ServerGamePacketListenerImpl imple
     static LATENCY_CHECK_INTERVAL: number;
     static LOGGER: Logger;
     constructor(arg0: ServerPlayer)
-    send(packet: Packet<Object>): void;
-    send(arg0: Packet<Object>, arg1: ChannelFutureListener): void;
+    send(packet: Packet<any>): void;
+    send(arg0: Packet<any>, arg1: ChannelFutureListener): void;
 }

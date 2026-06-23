@@ -34,8 +34,8 @@ export class DisplaySlot extends Enum<DisplaySlot> implements StringRepresentabl
     static TEAM_YELLOW: DisplaySlot;
     static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<Object>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<Object>;
+    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
     static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
     static teamColorToSlot(paramcolor: ChatFormatting): DisplaySlot;

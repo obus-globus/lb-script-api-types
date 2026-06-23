@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -34,12 +33,12 @@ export class SpawnEggItem extends Item {
     static MAX_BAR_WIDTH: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Item>>;
     static byBlock(paramblock: Block): Item;
-    static byId(paramtype: EntityType<Object>): Optional<Holder<Item>>;
+    static byId(paramtype: EntityType<any>): Optional<Holder<Item>>;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;
-    static getType(paramitemStack: ItemStack): EntityType<Object>;
+    static getType(paramitemStack: ItemStack): EntityType<any>;
     static spawnOffspringFromSpawnEgg(paramplayer: Player, paramparent: Mob, paramtype: EntityType<Mob>, paramlevel: ServerLevel, parampos: Vec3, paramspawnEggStack: ItemStack): Optional<Mob>;
-    static spawnsEntity(paramitemStack: ItemStack, paramtype: EntityType<Object>): boolean;
+    static spawnsEntity(paramitemStack: ItemStack, paramtype: EntityType<any>): boolean;
     constructor(properties: Item$Properties)
     shouldPrintOpWarning(stack: ItemStack, player: Player): boolean;
     use(level: Level, player: Player, hand: InteractionHand): InteractionResult;

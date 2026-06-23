@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -17,7 +16,7 @@ import type { SpeedHypixelBHop$Companion } from '../../../../../../../../../../n
 export class SpeedHypixelBHop extends SpeedBHopBase {
     static Companion: Tagged$Companion;
     static Companion: SpeedHypixelBHop$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private horizontalAcceleration: boolean;
     // private /*not mapped: */ getHorizontalAcceleration(): boolean;
     readonly jumpEvent: EventHook<PlayerJumpEvent>;

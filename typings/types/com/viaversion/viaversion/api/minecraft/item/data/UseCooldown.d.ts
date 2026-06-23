@@ -12,7 +12,7 @@ export class UseCooldown extends Record implements Rewritable {
     cooldownGroup(): string;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): UseCooldown;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): UseCooldown;
     seconds(): number;
     toString(): string;
 }

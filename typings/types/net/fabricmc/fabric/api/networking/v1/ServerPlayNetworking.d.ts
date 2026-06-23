@@ -10,9 +10,9 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { ServerPlayer } from '../../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { ServerGamePacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerGamePacketListenerImpl.d.ts'
 export class ServerPlayNetworking extends Object {
-    static canSend(paramarg0: ServerPlayer, paramarg1: CustomPacketPayload$Type<Object>): boolean;
+    static canSend(paramarg0: ServerPlayer, paramarg1: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: ServerPlayer, paramarg1: Identifier): boolean;
-    static canSend(paramarg0: ServerGamePacketListenerImpl, paramarg1: CustomPacketPayload$Type<Object>): boolean;
+    static canSend(paramarg0: ServerGamePacketListenerImpl, paramarg1: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: ServerGamePacketListenerImpl, paramarg1: Identifier): boolean;
     static createClientboundPacket(paramarg0: CustomPacketPayload | null): Packet<ClientCommonPacketListener>;
     static getGlobalReceivers(): Identifier[];

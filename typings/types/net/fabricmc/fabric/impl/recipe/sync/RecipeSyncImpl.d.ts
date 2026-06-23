@@ -4,9 +4,9 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { RecipeSerializer } from '../../../../../../net/minecraft/world/item/crafting/RecipeSerializer.d.ts'
 export class RecipeSyncImpl extends Object implements ModInitializer {
     static RECIPE_SYNC_EVENT_PHASE: Identifier;
-    static addSynchronizedSerializer(paramarg0: RecipeSerializer<Object>): void;
-    static getSyncedSerializers(): RecipeSerializer<Object>[];
-    static isSynced(paramarg0: RecipeSerializer<Object>): boolean;
+    static addSynchronizedSerializer(paramarg0: RecipeSerializer<any>): void;
+    static getSyncedSerializers(): RecipeSerializer<any>[];
+    static isSynced(paramarg0: RecipeSerializer<any>): boolean;
     constructor()
     onInitialize(): void;
 }

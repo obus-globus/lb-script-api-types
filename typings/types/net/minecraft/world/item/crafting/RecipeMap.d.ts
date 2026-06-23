@@ -11,14 +11,14 @@ import type { RecipeType } from '../../../../../net/minecraft/world/item/craftin
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeMap extends Object implements SyncedSerializerAwarePreparedRecipe {
     static EMPTY: RecipeMap;
-    static create(paramrecipes: RecipeHolder<Object>[]): RecipeMap;
-    private constructor(byType: Multimap<RecipeType<Object>, RecipeHolder<Object>>, byKey: Map<ResourceKey<Recipe<Object>>, RecipeHolder<Object>>)
-    // private byKey: Map<ResourceKey<Recipe<Object>>, RecipeHolder<Object>>;
+    static create(paramrecipes: RecipeHolder<any>[]): RecipeMap;
+    private constructor(byType: Multimap<RecipeType<any>, RecipeHolder<any>>, byKey: Map<ResourceKey<Recipe<any>>, RecipeHolder<any>>)
+    // private byKey: Map<ResourceKey<Recipe<any>>, RecipeHolder<any>>;
     // private bySyncedSerializer: Map<Object | null, Object | null>;
-    // private byType: Multimap<RecipeType<Object>, RecipeHolder<Object>>;
-    byKey(recipeId: ResourceKey<Recipe<Object>>): RecipeHolder<Object>;
+    // private byType: Multimap<RecipeType<any>, RecipeHolder<any>>;
+    byKey(recipeId: ResourceKey<Recipe<any>>): RecipeHolder<any>;
     byType<T extends Recipe<I>>(type: RecipeType<T>): RecipeHolder<T>[];
-    fabric_getRecipesBySyncedSerializer(arg0: RecipeSerializer<Recipe<Object>>): (Object | null)[];
+    fabric_getRecipesBySyncedSerializer(arg0: RecipeSerializer<Recipe<any>>): (Object | null)[];
     getRecipesFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, container: I, level: Level): Stream<RecipeHolder<T>>;
-    values(): RecipeHolder<Object>[];
+    values(): RecipeHolder<any>[];
 }

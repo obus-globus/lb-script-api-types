@@ -4,7 +4,7 @@ import type { IntSpliterator } from '../../../../../../com/viaversion/viaversion
 import type { Object2IntOpenHashMap$MapSpliterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2IntOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer as IntConsumer_2 } from '../../../../../../java/util/function/IntConsumer.d.ts'
-export class Object2IntOpenHashMap$ValueSpliterator extends Object2IntOpenHashMap$MapSpliterator<Object, Object> implements IntSpliterator {
+export class Object2IntOpenHashMap$ValueSpliterator extends Object2IntOpenHashMap$MapSpliterator<Object, any> implements IntSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

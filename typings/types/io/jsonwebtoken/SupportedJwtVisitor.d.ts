@@ -13,5 +13,5 @@ export class SupportedJwtVisitor<T extends Object | number | string | boolean> e
     onVerifiedContent(arg0: Jws<number[]>): T;
     visit(arg0: Jwe<Object>): T;
     visit(arg0: Jws<Object>): T;
-    visit(arg0: Jwt<Object, Object>): T;
+    visit(arg0: Jwt<any, Object>): T;
 }

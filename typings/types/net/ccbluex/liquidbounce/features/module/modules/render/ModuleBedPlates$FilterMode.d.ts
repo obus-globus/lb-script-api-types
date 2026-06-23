@@ -9,7 +9,7 @@ export class ModuleBedPlates$FilterMode extends Mode implements Predicate<Block>
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     protected constructor(name: string)
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     and(arg0: (param0: Block) => boolean): (param0: Block) => boolean;
     negate(): (param0: Block) => boolean;
     or(arg0: (param0: Block) => boolean): (param0: Block) => boolean;

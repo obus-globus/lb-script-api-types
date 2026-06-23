@@ -29,7 +29,7 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     static MAX: LocalDateTime;
     static MIN: LocalDateTime;
     static from(paramarg0: TemporalAccessor): LocalDateTime;
-    static from(paramarg0: TemporalAccessor): ChronoLocalDateTime<Object>;
+    static from(paramarg0: TemporalAccessor): ChronoLocalDateTime<any>;
     static now(): LocalDateTime;
     static now(paramarg0: Clock): LocalDateTime;
     static now(paramarg0: ZoneId): LocalDateTime;
@@ -51,7 +51,7 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     adjustInto(arg0: Temporal): Temporal;
     atOffset(arg0: ZoneOffset): OffsetDateTime;
     atZone(arg0: ZoneId): ZonedDateTime;
-    compareTo(arg0: ChronoLocalDateTime<Object>): number;
+    compareTo(arg0: ChronoLocalDateTime<any>): number;
     // private compareTo0(arg0: LocalDateTime): number;
     equals(arg0: Object | null): boolean;
     format(arg0: DateTimeFormatter): string;
@@ -69,9 +69,9 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     getSecond(): number;
     getYear(): number;
     hashCode(): number;
-    isAfter(arg0: ChronoLocalDateTime<Object>): boolean;
-    isBefore(arg0: ChronoLocalDateTime<Object>): boolean;
-    isEqual(arg0: ChronoLocalDateTime<Object>): boolean;
+    isAfter(arg0: ChronoLocalDateTime<any>): boolean;
+    isBefore(arg0: ChronoLocalDateTime<any>): boolean;
+    isEqual(arg0: ChronoLocalDateTime<any>): boolean;
     isSupported(arg0: TemporalField): boolean;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): LocalDateTime;

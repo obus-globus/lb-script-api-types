@@ -9,8 +9,8 @@ import type { TagRewriter as TagRewriter_2 } from '../../../../com/viaversion/vi
 import type { IdRewriteFunction } from '../../../../com/viaversion/viaversion/rewriter/IdRewriteFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TagRewriter<C extends ClientboundPacketType> extends Object implements TagRewriter_2 {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
-    // private protocol: Protocol<C, Object, Object, Object>;
+    constructor(arg0: Protocol<C, any, any, any>)
+    // private protocol: Protocol<C, any, any, any>;
     // private toAdd: { [key in RegistryType]: TagData[] };
     // private toRemove: { [key in RegistryType]: string[] };
     // private toRemoveRegistries: string[];

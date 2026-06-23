@@ -7,6 +7,6 @@ import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/
 import type { MemoryStatus } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryStatus.d.ts'
 export interface MemoryCondition<F extends K1, Value extends Object | number | string | boolean> extends Object{
     condition(): MemoryStatus;
-    createAccessor(brain: Brain<Object>, value: Optional<Value>): MemoryAccessor<F, Value>;
+    createAccessor(brain: Brain<any>, value: Optional<Value>): MemoryAccessor<F, Value>;
     memory(): MemoryModuleType<Value>;
 }

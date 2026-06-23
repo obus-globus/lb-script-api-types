@@ -26,7 +26,7 @@ export abstract class ASTTransformer<J extends JobParameters, V extends Object |
     setJobParameters(arg0: J): void;
     setPrintType(arg0: PrintType): void;
     setRootSupplier(arg0: RootSupplier): void;
-    setTokenFilter(arg0: TokenFilter<Object>): void;
+    setTokenFilter(arg0: TokenFilter<any>): void;
     supplyRoot(): Root;
     transform(arg0: V): V;
     transform(arg0: V, arg1: J): V;

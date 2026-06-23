@@ -17,11 +17,11 @@ export class DefaultComponentBuilder<T extends ComponentBuilder<T>, CB extends C
     // private value: string;
     addAttribute(key: string, value: Object): T;
     addAttribute(key: string, value: boolean): T;
-    addAttribute(key: string, value: Enum<Object>): T;
+    addAttribute(key: string, value: Enum<any>): T;
     addAttribute(key: string, value: number): T;
     addAttribute(key: string, value: string): T;
     addAttribute(key: string, level: Level): T;
-    addComponent(builder: ComponentBuilder<Object>): T;
+    addComponent(builder: ComponentBuilder<any>): T;
     build(): Component;
     getBuilder(): CB;
     getName(): string;

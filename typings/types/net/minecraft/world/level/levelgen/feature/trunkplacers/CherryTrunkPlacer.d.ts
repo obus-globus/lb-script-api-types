@@ -2,7 +2,6 @@ import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { Direction } from '../../../../../../../net/minecraft/core/Direction.d.ts'
@@ -27,5 +26,5 @@ export class CherryTrunkPlacer extends TrunkPlacer {
     // private secondBranchStartOffsetFromTop: UniformInt;
     // private generateBranch(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, treeHeight: number, origin: BlockPos, config: TreeConfiguration, sidewaysStateModifier: (param0: BlockState) => BlockState, branchDirection: Direction, offsetFromOrigin: number, middleContinuesUpwards: boolean, logPos: BlockPos$MutableBlockPos): FoliagePlacer$FoliageAttachment;
     placeTrunk(level: WorldGenLevel, trunkSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, treeHeight: number, origin: BlockPos, config: TreeConfiguration): FoliagePlacer$FoliageAttachment[];
-    type(): TrunkPlacerType<Object>;
+    type(): TrunkPlacerType<any>;
 }

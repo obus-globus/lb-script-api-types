@@ -5,10 +5,10 @@ import type { GenericColorMode } from '../../../../net/ccbluex/liquidbounce/rend
 import type { Color4b } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 export class GenericRainbowColorMode extends GenericColorMode<Object> {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>, alpha: number)
+    constructor(parent: ModeValueGroup<any>, alpha: number)
     // private alpha: number;
     // private isParamSensitive: boolean;
     /*not mapped: */ isParamSensitive(): boolean;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     getColor(param: Object | null): Color4b;
 }

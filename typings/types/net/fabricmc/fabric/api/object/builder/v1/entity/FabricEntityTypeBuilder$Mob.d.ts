@@ -1,5 +1,4 @@
 import type { Supplier } from '../../../../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { FabricEntityTypeBuilder } from '../../../../../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityTypeBuilder.d.ts'
 import type { FabricEntityTypeBuilder$Living } from '../../../../../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityTypeBuilder$Living.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -30,7 +29,7 @@ export class FabricEntityTypeBuilder$Mob<T extends Mob> extends FabricEntityType
     // private placementHeightmap: Heightmap$Types;
     // private spawnPlacementType: SpawnPlacementType;
     // private spawnPredicate: (param0: EntityType<T>, param1: ServerLevelAccessor, param2: EntitySpawnReason, param3: BlockPos, param4: RandomSource) => boolean;
-    build(arg0: ResourceKey<EntityType<Object>>): EntityType<T>;
+    build(arg0: ResourceKey<EntityType<any>>): EntityType<T>;
     defaultAttributes(arg0: () => AttributeSupplier$Builder): FabricEntityTypeBuilder$Mob<T>;
     dimensions(arg0: EntityDimensions): FabricEntityTypeBuilder$Mob<T>;
     disableSaving(): FabricEntityTypeBuilder$Mob<T>;

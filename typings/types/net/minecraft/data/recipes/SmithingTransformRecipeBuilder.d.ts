@@ -18,6 +18,6 @@ export class SmithingTransformRecipeBuilder extends Object {
     // private result: ItemStackTemplate;
     // private template: Ingredient;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlocks(name: string, criterion: Criterion<Object>): SmithingTransformRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlocks(name: string, criterion: Criterion<any>): SmithingTransformRecipeBuilder;
 }

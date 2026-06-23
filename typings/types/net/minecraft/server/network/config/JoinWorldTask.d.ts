@@ -6,7 +6,7 @@ import type { ConfigurationTask$Type } from '../../../../../net/minecraft/server
 export class JoinWorldTask extends Object implements ConfigurationTask {
     static TYPE: ConfigurationTask$Type;
     constructor()
-    start(connection: (param0: Packet<Object>) => void): void;
+    start(connection: (param0: Packet<any>) => void): void;
     tick(): boolean;
     type(): ConfigurationTask$Type;
 }

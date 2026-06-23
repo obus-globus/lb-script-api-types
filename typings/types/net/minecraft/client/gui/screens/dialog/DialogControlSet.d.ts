@@ -12,8 +12,8 @@ import type { Action } from '../../../../../../net/minecraft/server/dialog/actio
 import type { Action$ValueGetter } from '../../../../../../net/minecraft/server/dialog/action/Action$ValueGetter.d.ts'
 export class DialogControlSet extends Object {
     static EMPTY_ACTION: () => Optional<ClickEvent>;
-    constructor(screen: DialogScreen<Object>)
-    // private screen: DialogScreen<Object>;
+    constructor(screen: DialogScreen<any>)
+    // private screen: DialogScreen<any>;
     // private valueGetters: { [key: string]: Action$ValueGetter };
     addInput(data: Input, output: (param0: LayoutElement) => void): void;
     bindAction(maybeAction: Optional<Action>): () => Optional<ClickEvent>;

@@ -26,7 +26,7 @@ export interface Job extends Object, CoroutineContext$Element {
     invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: (param0: Throwable | null) => void): DisposableHandle;
     invokeOnCompletion(handler: (param0: Throwable | null) => void): DisposableHandle;
     join(): void;
-    minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
     plus(context: CoroutineContext): CoroutineContext;
     plus(other: Job): Job;
     start(): boolean;

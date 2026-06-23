@@ -6,9 +6,9 @@ import type { ConfiguredWorldCarver } from '../../../../../net/minecraft/world/l
 import type { PlacedFeature } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
 export class BiomeGenerationSettings$PlainBuilder extends Object {
     constructor()
-    // private carvers: Holder<ConfiguredWorldCarver<Object>>[];
+    // private carvers: Holder<ConfiguredWorldCarver<any>>[];
     // private features: Holder<PlacedFeature>[][];
-    addCarver(carver: Holder<ConfiguredWorldCarver<Object>>): BiomeGenerationSettings$PlainBuilder;
+    addCarver(carver: Holder<ConfiguredWorldCarver<any>>): BiomeGenerationSettings$PlainBuilder;
     addFeature(index: number, feature: Holder<PlacedFeature>): BiomeGenerationSettings$PlainBuilder;
     addFeature(step: GenerationStep$Decoration, feature: Holder<PlacedFeature>): BiomeGenerationSettings$PlainBuilder;
     // private addFeatureStepsUpTo(index: number): void;

@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractAppender$Builder } from '../../../../../../../org/apache/logging/log4j/core/appender/AbstractAppender$Builder.d.ts'
 import type { NoSqlAppender } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlAppender.d.ts'
 import type { NoSqlProvider } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlProvider.d.ts'
@@ -8,10 +7,10 @@ export class NoSqlAppender$Builder<B extends NoSqlAppender$Builder<B>> extends A
     constructor()
     // private additionalFields: KeyValuePair[];
     // private bufferSize: number;
-    // private provider: NoSqlProvider<Object>;
+    // private provider: NoSqlProvider<any>;
     build(): NoSqlAppender;
     getErrorPrefix(): string;
     isValid(): boolean;
     setBufferSize(bufferSize: number): B;
-    setProvider(provider: NoSqlProvider<Object>): B;
+    setProvider(provider: NoSqlProvider<any>): B;
 }

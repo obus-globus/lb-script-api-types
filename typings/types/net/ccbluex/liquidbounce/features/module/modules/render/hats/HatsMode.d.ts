@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -20,7 +19,7 @@ export abstract class HatsMode extends Mode {
     // private friendsOptions: HatsMode$FriendsOptions;
     // private hurtMarked: boolean;
     // private /*not mapped: */ getHurtMarked(): boolean;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private showInFirstPerson: boolean;
     // private /*not mapped: */ getShowInFirstPerson(): boolean;

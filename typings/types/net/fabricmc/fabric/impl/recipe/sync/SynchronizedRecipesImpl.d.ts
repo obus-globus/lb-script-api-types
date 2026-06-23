@@ -12,19 +12,19 @@ import type { RecipeType } from '../../../../../../net/minecraft/world/item/craf
 import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.ts'
 export class SynchronizedRecipesImpl extends Record implements SynchronizedRecipes {
     static EMPTY: SynchronizedRecipesImpl;
-    static of(paramarg0: RecipeHolder<Object>[]): SynchronizedRecipesImpl;
+    static of(paramarg0: RecipeHolder<any>[]): SynchronizedRecipesImpl;
     constructor(preparedRecipes: RecipeMap)
     // private preparedRecipes: RecipeMap;
     equals(arg0: Object | null): boolean;
-    get<T extends Recipe<Object>>(arg0: RecipeType<T>, arg1: ResourceKey<Recipe<Object>>): RecipeHolder<T>;
-    get(arg0: ResourceKey<Recipe<Object>>): RecipeHolder<Object>;
+    get<T extends Recipe<any>>(arg0: RecipeType<T>, arg1: ResourceKey<Recipe<any>>): RecipeHolder<T>;
+    get(arg0: ResourceKey<Recipe<any>>): RecipeHolder<any>;
     getAllMatches<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Stream<RecipeHolder<T>>;
     getAllOfType<T extends Recipe<I>>(arg0: RecipeType<T>): RecipeHolder<T>[];
-    getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<T>>;
+    getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: ResourceKey<Recipe<any>>): Optional<RecipeHolder<T>>;
     getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level, arg3: RecipeHolder<T>): Optional<RecipeHolder<T>>;
     getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;
     hashCode(): number;
     preparedRecipes(): RecipeMap;
-    recipes(): RecipeHolder<Object>[];
+    recipes(): RecipeHolder<any>[];
     toString(): string;
 }

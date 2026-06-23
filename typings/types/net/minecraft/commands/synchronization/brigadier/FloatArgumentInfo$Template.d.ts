@@ -8,5 +8,5 @@ export class FloatArgumentInfo$Template extends Object implements ArgumentTypeIn
     // private max: number;
     // private min: number;
     instantiate(context: CommandBuildContext): FloatArgumentType;
-    type(): ArgumentTypeInfo<FloatArgumentType, Object>;
+    type(): ArgumentTypeInfo<FloatArgumentType, any>;
 }

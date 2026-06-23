@@ -20,6 +20,6 @@ export class Products$P15<F extends K1, T1 extends Object | number | string | bo
     // private t7: App<F, T7>;
     // private t8: App<F, T8>;
     // private t9: App<F, T9>;
-    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: App<F, Function15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R>>): App<F, R>;
-    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: Function15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: App<F, Function15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R>>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: Function15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R>): App<F, R>;
 }

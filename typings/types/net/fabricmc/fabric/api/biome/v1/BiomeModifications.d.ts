@@ -10,9 +10,9 @@ import type { GenerationStep$Decoration } from '../../../../../../net/minecraft/
 import type { ConfiguredWorldCarver } from '../../../../../../net/minecraft/world/level/levelgen/carver/ConfiguredWorldCarver.d.ts'
 import type { PlacedFeature } from '../../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
 export class BiomeModifications extends Object {
-    static addCarver(paramarg0: (param0: BiomeSelectionContext) => boolean, paramarg1: ResourceKey<ConfiguredWorldCarver<Object>>): void;
+    static addCarver(paramarg0: (param0: BiomeSelectionContext) => boolean, paramarg1: ResourceKey<ConfiguredWorldCarver<any>>): void;
     static addFeature(paramarg0: (param0: BiomeSelectionContext) => boolean, paramarg1: GenerationStep$Decoration, paramarg2: ResourceKey<PlacedFeature>): void;
-    static addSpawn(paramarg0: (param0: BiomeSelectionContext) => boolean, paramarg1: MobCategory, paramarg2: EntityType<Object>, paramarg3: number, paramarg4: number, paramarg5: number): void;
+    static addSpawn(paramarg0: (param0: BiomeSelectionContext) => boolean, paramarg1: MobCategory, paramarg2: EntityType<any>, paramarg3: number, paramarg4: number, paramarg5: number): void;
     static create(paramarg0: Identifier): BiomeModification;
     private constructor()
 }

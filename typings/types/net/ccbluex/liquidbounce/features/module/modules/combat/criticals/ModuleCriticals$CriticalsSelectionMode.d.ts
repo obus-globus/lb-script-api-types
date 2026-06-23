@@ -24,6 +24,6 @@ export class ModuleCriticals$CriticalsSelectionMode extends Enum<ModuleCriticals
     private constructor(tag: string)
     readonly tag: string;
     isCriticalHit(target: Entity): boolean;
-    shouldStopSprinting(clicker: Clicker<Object>, target: Entity | null): boolean;
+    shouldStopSprinting(clicker: Clicker<any>, target: Entity | null): boolean;
     name(): "SMART" | "IGNORE" | "ALWAYS";
 }

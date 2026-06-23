@@ -87,6 +87,6 @@ export class NyliumBlock extends Block implements BonemealableBlock {
     isBonemealSuccess(level: Level, random: RandomSource, pos: BlockPos, state: BlockState): boolean;
     isValidBonemealTarget(level: LevelReader, pos: BlockPos, state: BlockState): boolean;
     performBonemeal(level: ServerLevel, random: RandomSource, pos: BlockPos, state: BlockState): void;
-    // private place(configuredFeatures: ConfiguredFeature<Object, Object>[], id: ResourceKey<ConfiguredFeature<Object, Object>>, level: ServerLevel, generator: ChunkGenerator, random: RandomSource, pos: BlockPos): void;
+    // private place(configuredFeatures: ConfiguredFeature<any, any>[], id: ResourceKey<ConfiguredFeature<any, any>>, level: ServerLevel, generator: ChunkGenerator, random: RandomSource, pos: BlockPos): void;
     randomTick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
 }

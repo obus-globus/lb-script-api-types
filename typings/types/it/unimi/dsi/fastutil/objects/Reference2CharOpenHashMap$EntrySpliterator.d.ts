@@ -3,7 +3,7 @@ import type { Reference2CharMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { Reference2CharOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2CharOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2CharOpenHashMap$EntrySpliterator extends Reference2CharOpenHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Reference2CharMap$Entry<K>> {
+export class Reference2CharOpenHashMap$EntrySpliterator extends Reference2CharOpenHashMap$MapSpliterator<Object, any> implements ObjectSpliterator<Reference2CharMap$Entry<K>> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

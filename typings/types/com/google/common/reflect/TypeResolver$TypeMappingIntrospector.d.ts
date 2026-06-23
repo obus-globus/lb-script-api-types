@@ -12,6 +12,6 @@ export class TypeResolver$TypeMappingIntrospector extends TypeVisitor {
     // private map(var_: TypeResolver$TypeVariableKey, arg: Type): void;
     visitClass(clazz: Class<Object>): void;
     visitParameterizedType(parameterizedType: ParameterizedType): void;
-    visitTypeVariable(t: TypeVariable<Object>): void;
+    visitTypeVariable(t: TypeVariable<any>): void;
     visitWildcardType(t: WildcardType): void;
 }

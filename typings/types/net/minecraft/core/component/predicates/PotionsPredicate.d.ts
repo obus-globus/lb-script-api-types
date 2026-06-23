@@ -13,10 +13,10 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { Potion } from '../../../../../net/minecraft/world/item/alchemy/Potion.d.ts'
 import type { PotionContents } from '../../../../../net/minecraft/world/item/alchemy/PotionContents.d.ts'
 export class PotionsPredicate extends Record implements SingleComponentItemPredicate<PotionContents> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<PotionsPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static potions(parampotions: Holder<Potion>[]): DataComponentPredicate;
     constructor(potions: Holder<Potion>[])
     // private potions: Holder<Potion>[];

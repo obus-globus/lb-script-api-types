@@ -6,9 +6,9 @@ import type { Parser } from '../../io/jsonwebtoken/io/Parser.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
-export interface JwtParser extends Parser<Jwt<Object, Object>>, Object{
+export interface JwtParser extends Parser<Jwt<any, Object>>, Object{
     isSigned(arg0: CharSequence): boolean;
-    parse(arg0: CharSequence): Jwt<Object, Object>;
+    parse(arg0: CharSequence): Jwt<any, Object>;
     parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: JwtHandler<T>): T;
     parseClaimsJws(arg0: CharSequence): Jws<{ [key: string]: any }>;
     parseClaimsJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;

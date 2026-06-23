@@ -3,7 +3,6 @@ import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Rotation } from '../../../../../../../net/minecraft/world/level/block/Rotation.d.ts'
@@ -35,6 +34,6 @@ export class LegacySinglePoolElement extends SinglePoolElement {
     static single(paramlocation: string, paramoverrideLiquidSettings: LiquidSettings): (param0: StructureTemplatePool$Projection) => SinglePoolElement;
     constructor(template: Either<Identifier, StructureTemplate>, processors: Holder<StructureProcessorList>, projection: StructureTemplatePool$Projection, liquidSettings: Optional<LiquidSettings>)
     getSettings(rotation: Rotation, chunkBB: BoundingBox, liquidSettings: LiquidSettings, keepJigsaws: boolean): StructurePlaceSettings;
-    getType(): StructurePoolElementType<Object>;
+    getType(): StructurePoolElementType<any>;
     toString(): string;
 }

@@ -42,7 +42,7 @@ export class BlockStateParser extends Object {
     // private forTesting: boolean;
     // private id: Identifier;
     // private nbt: CompoundTag;
-    // private properties: Map<Property<Object>, Comparable<Object>>;
+    // private properties: Map<Property<any>, Comparable<Object>>;
     // private reader: StringReader;
     // private state: BlockState;
     // private suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>;

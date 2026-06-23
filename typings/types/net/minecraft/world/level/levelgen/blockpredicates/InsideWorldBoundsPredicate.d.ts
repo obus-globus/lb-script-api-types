@@ -48,5 +48,5 @@ export class InsideWorldBoundsPredicate extends Object implements BlockPredicate
     constructor(offset: Vec3i)
     // private offset: Vec3i;
     test(worldGenLevel: WorldGenLevel, blockPos: BlockPos): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

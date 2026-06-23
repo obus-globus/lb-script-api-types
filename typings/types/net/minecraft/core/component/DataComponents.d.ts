@@ -99,7 +99,7 @@ export class DataComponents extends Object {
     static BASE_COLOR: DataComponentType<DyeColor>;
     static BEES: DataComponentType<Bees>;
     static BLOCKS_ATTACKS: DataComponentType<BlocksAttacks>;
-    static BLOCK_ENTITY_DATA: DataComponentType<TypedEntityData<BlockEntityType<Object>>>;
+    static BLOCK_ENTITY_DATA: DataComponentType<TypedEntityData<BlockEntityType<any>>>;
     static BLOCK_STATE: DataComponentType<BlockItemStateProperties>;
     static BREAK_SOUND: DataComponentType<Holder<SoundEvent>>;
     static BUCKET_ENTITY_DATA: DataComponentType<CustomData>;
@@ -132,7 +132,7 @@ export class DataComponents extends Object {
     static ENCHANTABLE: DataComponentType<Enchantable>;
     static ENCHANTMENTS: DataComponentType<ItemEnchantments>;
     static ENCHANTMENT_GLINT_OVERRIDE: DataComponentType<boolean>;
-    static ENTITY_DATA: DataComponentType<TypedEntityData<EntityType<Object>>>;
+    static ENTITY_DATA: DataComponentType<TypedEntityData<EntityType<any>>>;
     static EQUIPPABLE: DataComponentType<Equippable>;
     static FIREWORKS: DataComponentType<Fireworks>;
     static FIREWORK_EXPLOSION: DataComponentType<FireworkExplosion>;
@@ -174,7 +174,7 @@ export class DataComponents extends Object {
     static PROVIDES_TRIM_MATERIAL: DataComponentType<Holder<TrimMaterial>>;
     static RABBIT_VARIANT: DataComponentType<Rabbit$Variant>;
     static RARITY: DataComponentType<Rarity>;
-    static RECIPES: DataComponentType<ResourceKey<Recipe<Object>>[]>;
+    static RECIPES: DataComponentType<ResourceKey<Recipe<any>>[]>;
     static REPAIRABLE: DataComponentType<Repairable>;
     static REPAIR_COST: DataComponentType<number>;
     static SALMON_SIZE: DataComponentType<Salmon$Variant>;

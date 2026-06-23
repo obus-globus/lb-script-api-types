@@ -5,5 +5,5 @@ import type { DialogBodyHandler } from '../../../../../../../net/minecraft/clien
 import type { PlainMessage } from '../../../../../../../net/minecraft/server/dialog/body/PlainMessage.d.ts'
 export class DialogBodyHandlers$PlainMessageHandler extends Object implements DialogBodyHandler<PlainMessage> {
     private constructor()
-    createControls(parent: DialogScreen<Object>, message: PlainMessage): LayoutElement;
+    createControls(parent: DialogScreen<any>, message: PlainMessage): LayoutElement;
 }

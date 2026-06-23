@@ -11,7 +11,7 @@ import type { UnlocalizedNumberFormatter } from '../../../../../../../org/graalv
 import type { Measure } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Measure.d.ts'
 import type { MeasureUnit } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/MeasureUnit.d.ts'
 export class LocalizedNumberFormatter extends NumberFormatterSettings<LocalizedNumberFormatter> {
-    constructor(parent: NumberFormatterSettings<Object>, key: number, value: Object)
+    constructor(parent: NumberFormatterSettings<any>, key: number, value: Object)
     // private callCountInternal: number;
     // private compiled: NumberFormatterImpl;
     // private savedWithUnit: LocalizedNumberFormatter;

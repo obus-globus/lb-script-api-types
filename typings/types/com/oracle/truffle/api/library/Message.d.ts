@@ -21,7 +21,7 @@ export abstract class Message extends Object {
     readonly simpleName: string;
     clone(): Object;
     equals(obj: Object | null): boolean;
-    getFactory(): LibraryFactory<Object>;
+    getFactory(): LibraryFactory<any>;
     getId(): number;
     getLibraryClass(): Class<Library>;
     getLibraryName(): string;

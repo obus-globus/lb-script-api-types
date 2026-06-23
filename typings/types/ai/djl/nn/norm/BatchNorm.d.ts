@@ -14,8 +14,8 @@ export class BatchNorm extends AbstractBlock {
     static batchNorm(paramarg0: NDArray, paramarg1: NDArray, paramarg2: NDArray, paramarg3: NDArray, paramarg4: NDArray): (Object | null)[];
     static batchNorm(paramarg0: NDArray, paramarg1: NDArray, paramarg2: NDArray, paramarg3: NDArray, paramarg4: NDArray, paramarg5: number): (Object | null)[];
     static batchNorm(paramarg0: NDArray, paramarg1: NDArray, paramarg2: NDArray, paramarg3: NDArray, paramarg4: NDArray, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: boolean): (Object | null)[];
-    static builder(): BatchNorm$BaseBuilder<Object>;
-    constructor(arg0: BatchNorm$BaseBuilder<Object>)
+    static builder(): BatchNorm$BaseBuilder<any>;
+    constructor(arg0: BatchNorm$BaseBuilder<any>)
     // private axis: number;
     // private beta: Parameter;
     // private center: boolean;

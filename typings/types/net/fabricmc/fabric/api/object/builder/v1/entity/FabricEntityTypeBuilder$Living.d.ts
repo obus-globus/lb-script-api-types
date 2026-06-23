@@ -1,5 +1,4 @@
 import type { Supplier } from '../../../../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { FabricEntityTypeBuilder } from '../../../../../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityTypeBuilder.d.ts'
 import type { FabricEntityTypeBuilder$Mob } from '../../../../../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityTypeBuilder$Mob.d.ts'
 import type { ResourceKey } from '../../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -21,7 +20,7 @@ export class FabricEntityTypeBuilder$Living<T extends LivingEntity> extends Fabr
     static createMob(): FabricEntityTypeBuilder$Mob<Mob>;
     constructor(arg0: MobCategory, arg1: (param0: EntityType<T>, param1: Level) => T)
     // private defaultAttributeBuilder: () => AttributeSupplier$Builder;
-    build(arg0: ResourceKey<EntityType<Object>>): EntityType<T>;
+    build(arg0: ResourceKey<EntityType<any>>): EntityType<T>;
     defaultAttributes(arg0: () => AttributeSupplier$Builder): FabricEntityTypeBuilder$Living<T>;
     dimensions(arg0: EntityDimensions): FabricEntityTypeBuilder$Living<T>;
     disableSaving(): FabricEntityTypeBuilder$Living<T>;

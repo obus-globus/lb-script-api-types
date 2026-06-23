@@ -12,12 +12,12 @@ export class OutputStreamManager extends AbstractManager implements ByteBufferDe
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
     static hasManager(paramname: string): boolean;
-    constructor(os: OutputStream, streamName: string, layout: Layout<Object>, writeHeader: boolean)
-    constructor(os: OutputStream, streamName: string, layout: Layout<Object>, writeHeader: boolean, byteBuffer: ByteBuffer)
-    constructor(os: OutputStream, streamName: string, layout: Layout<Object>, writeHeader: boolean, bufferSize: number)
+    constructor(os: OutputStream, streamName: string, layout: Layout<any>, writeHeader: boolean)
+    constructor(os: OutputStream, streamName: string, layout: Layout<any>, writeHeader: boolean, byteBuffer: ByteBuffer)
+    constructor(os: OutputStream, streamName: string, layout: Layout<any>, writeHeader: boolean, bufferSize: number)
     constructor(loggerContext: LoggerContext, os: OutputStream, streamName: string, createOnDemand: boolean, layout: Layout<Serializable>, writeHeader: boolean, byteBuffer: ByteBuffer)
     byteBuffer: ByteBuffer;
-    // private layout: Layout<Object>;
+    // private layout: Layout<any>;
     // private outputStream: OutputStream;
     // private skipFooter: boolean;
     closeOutputStream(): boolean;

@@ -11,12 +11,12 @@ import type { LootItemCondition$Builder } from '../../../../../../../net/minecra
 export abstract class LootPoolEntryContainer$Builder<T extends LootPoolEntryContainer$Builder<T>> extends Object implements ConditionUserBuilder<T> {
     constructor()
     // private conditions: ImmutableList$Builder<LootItemCondition>;
-    append(other: LootPoolEntryContainer$Builder<Object>): EntryGroup$Builder;
+    append(other: LootPoolEntryContainer$Builder<any>): EntryGroup$Builder;
     build(): LootPoolEntryContainer;
     getConditions(): LootItemCondition[];
     getThis(): T;
-    otherwise(other: LootPoolEntryContainer$Builder<Object>): AlternativesEntry$Builder;
-    then(other: LootPoolEntryContainer$Builder<Object>): SequentialEntry$Builder;
+    otherwise(other: LootPoolEntryContainer$Builder<any>): AlternativesEntry$Builder;
+    then(other: LootPoolEntryContainer$Builder<any>): SequentialEntry$Builder;
     unwrap(): T;
     when<E extends Object | number | string | boolean>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
     when(condition: () => LootItemCondition): T;

@@ -31,10 +31,10 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     // private deserializer: Deserializer<{ [key: string]: Object | null }>;
     // private encAlgs: { [key: string]: AeadAlgorithm };
     // private expectedClaims: ClaimsBuilder;
-    // private keyAlgs: { [key: string]: KeyAlgorithm<Object, Object> };
+    // private keyAlgs: { [key: string]: KeyAlgorithm<any, any> };
     // private keyLocator: Locator<Key>;
     // private provider: { [key: string]: any };
-    // private sigAlgs: { [key: string]: SecureDigestAlgorithm<Object, Object> };
+    // private sigAlgs: { [key: string]: SecureDigestAlgorithm<any, any> };
     // private signatureVerificationKey: Key;
     // private signingKeyResolver: SigningKeyResolver;
     // private unsecured: boolean;
@@ -52,7 +52,7 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     deserializeJsonWith(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
     enc(): NestedCollection<AeadAlgorithm, JwtParserBuilder>;
     json(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
-    key(): NestedCollection<KeyAlgorithm<Object, Object>, JwtParserBuilder>;
+    key(): NestedCollection<KeyAlgorithm<any, any>, JwtParserBuilder>;
     keyLocator(arg0: Locator<Key>): JwtParserBuilder;
     provider(arg0: { [key: string]: any }): JwtParserBuilder;
     require(arg0: string, arg1: Object): JwtParserBuilder;
@@ -70,7 +70,7 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     setSigningKey(arg0: number[]): JwtParserBuilder;
     setSigningKey(arg0: string): JwtParserBuilder;
     setSigningKeyResolver(arg0: SigningKeyResolver): JwtParserBuilder;
-    sig(): NestedCollection<SecureDigestAlgorithm<Object, Object>, JwtParserBuilder>;
+    sig(): NestedCollection<SecureDigestAlgorithm<any, any>, JwtParserBuilder>;
     unsecured(): JwtParserBuilder;
     unsecuredDecompression(): JwtParserBuilder;
     // private verifyWith(arg0: Key): JwtParserBuilder;

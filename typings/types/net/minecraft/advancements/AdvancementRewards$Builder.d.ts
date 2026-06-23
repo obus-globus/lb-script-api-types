@@ -10,15 +10,15 @@ export class AdvancementRewards$Builder extends Object {
     static experience(paramamount: number): AdvancementRewards$Builder;
     static function(paramid: Identifier): AdvancementRewards$Builder;
     static loot(paramid: ResourceKey<LootTable>): AdvancementRewards$Builder;
-    static recipe(paramid: ResourceKey<Recipe<Object>>): AdvancementRewards$Builder;
+    static recipe(paramid: ResourceKey<Recipe<any>>): AdvancementRewards$Builder;
     constructor()
     // private experience: number;
     // private function: Optional<Identifier>;
     // private loot: ImmutableList$Builder<ResourceKey<LootTable>>;
-    // private recipes: ImmutableList$Builder<ResourceKey<Recipe<Object>>>;
+    // private recipes: ImmutableList$Builder<ResourceKey<Recipe<any>>>;
     addExperience(amount: number): AdvancementRewards$Builder;
     addLootTable(id: ResourceKey<LootTable>): AdvancementRewards$Builder;
-    addRecipe(id: ResourceKey<Recipe<Object>>): AdvancementRewards$Builder;
+    addRecipe(id: ResourceKey<Recipe<any>>): AdvancementRewards$Builder;
     build(): AdvancementRewards;
     runs(function_: Identifier): AdvancementRewards$Builder;
 }

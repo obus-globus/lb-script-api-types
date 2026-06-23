@@ -8,8 +8,8 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Matcher<N extends ASTNode> extends Object {
     constructor(arg0: N)
     constructor(arg0: N, arg1: string)
-    constructor(arg0: string, arg1: ParseShape<Object, N>)
-    constructor(arg0: string, arg1: ParseShape<Object, N>, arg2: string)
+    constructor(arg0: string, arg1: ParseShape<any, N>)
+    constructor(arg0: string, arg1: ParseShape<any, N>, arg2: string)
     // private activeListWildcard: Matcher$NodeWildcard;
     // private collectMatches: boolean;
     readonly dataMatches: { [key: string]: Object };

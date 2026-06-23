@@ -16,10 +16,10 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/component/FireworkExplosion.d.ts'
 import type { Fireworks } from '../../../../../net/minecraft/world/item/component/Fireworks.d.ts'
 export class FireworksPredicate extends Record implements SingleComponentItemPredicate<Fireworks> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<FireworksPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(explosions: Optional<CollectionPredicate<FireworkExplosion, FireworkExplosionPredicate$FireworkPredicate>>, flightDuration: MinMaxBounds$Ints)
     // private explosions: Optional<CollectionPredicate<FireworkExplosion, FireworkExplosionPredicate$FireworkPredicate>>;
     // private flightDuration: MinMaxBounds$Ints;

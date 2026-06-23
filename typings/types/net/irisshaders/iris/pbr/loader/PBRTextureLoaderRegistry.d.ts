@@ -5,7 +5,7 @@ import type { AbstractTexture } from '../../../../../net/minecraft/client/render
 export class PBRTextureLoaderRegistry extends Object {
     static INSTANCE: PBRTextureLoaderRegistry;
     constructor()
-    // private loaderMap: Map<Class<Object>, PBRTextureLoader<Object>>;
+    // private loaderMap: Map<Class<Object>, PBRTextureLoader<any>>;
     getLoader<T extends AbstractTexture>(arg0: Class<T>): PBRTextureLoader<T>;
     register<T extends AbstractTexture>(arg0: Class<T>, arg1: PBRTextureLoader<T>): void;
 }

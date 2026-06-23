@@ -6,8 +6,8 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { RecipeHolder } from '../../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
 import type { SlotDisplay } from '../../../../../net/minecraft/world/item/crafting/display/SlotDisplay.d.ts'
-export class SelectableRecipe<T extends Recipe<Object>> extends Record {
-    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe<Object>>;
+export class SelectableRecipe<T extends Recipe<any>> extends Record {
+    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe<any>>;
     constructor(optionDisplay: SlotDisplay, recipe: Optional<RecipeHolder<T>>)
     // private optionDisplay: SlotDisplay;
     // private recipe: Optional<RecipeHolder<T>>;

@@ -1,5 +1,4 @@
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -21,10 +20,10 @@ import type { ValueInput } from '../../../../../../net/minecraft/world/level/sto
 import type { ValueOutput } from '../../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class TrialSpawnerBlockEntity extends BlockEntity implements Spawner, TrialSpawner$StateAccessor {
     static NBT_ATTACHMENT_KEY: string;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
-    static appendHoverText(paramdata: TypedEntityData<BlockEntityType<Object>>, paramconsumer: (param0: Component) => void, paramnextSpawnDataTagKey: string): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
+    static appendHoverText(paramdata: TypedEntityData<BlockEntityType<any>>, paramconsumer: (param0: Component) => void, paramnextSpawnDataTagKey: string): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
-    static getSpawnEntityDisplayName(paramdata: TypedEntityData<BlockEntityType<Object>>, paramnextSpawnDataTagKey: string): Component;
+    static getSpawnEntityDisplayName(paramdata: TypedEntityData<BlockEntityType<any>>, paramnextSpawnDataTagKey: string): Component;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
     constructor(worldPosition: BlockPos, blockState: BlockState)
@@ -37,6 +36,6 @@ export class TrialSpawnerBlockEntity extends BlockEntity implements Spawner, Tri
     loadAdditional(input: ValueInput): void;
     markUpdated(): void;
     saveAdditional(output: ValueOutput): void;
-    setEntityId(type: EntityType<Object>, random: RandomSource): void;
+    setEntityId(type: EntityType<any>, random: RandomSource): void;
     setState(level: Level, state: TrialSpawnerState): void;
 }

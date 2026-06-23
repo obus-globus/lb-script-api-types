@@ -5,10 +5,9 @@ import type { NBTComponentRewriter } from '../../../../../../com/viaversion/viab
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { JsonObject } from '../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { ClientboundPacket1_21_5 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_4to1_21_5/packet/ClientboundPacket1_21_5.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter1_21_5 extends NBTComponentRewriter<ClientboundPacket1_21_5> {
-    constructor(arg0: BackwardsProtocol<ClientboundPacket1_21_5, Object, Object, Object>)
+    constructor(arg0: BackwardsProtocol<ClientboundPacket1_21_5, any, any, any>)
     // private handleAdventureModePredicate(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: string[]): void;
     // private handleEnchantments(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: string[]): void;
     handleHoverEvent(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;

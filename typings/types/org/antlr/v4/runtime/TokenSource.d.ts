@@ -7,7 +7,7 @@ export interface TokenSource extends Object{
     getInputStream(): CharStream;
     getLine(): number;
     getSourceName(): string;
-    getTokenFactory(): TokenFactory<Object>;
+    getTokenFactory(): TokenFactory<any>;
     nextToken(): Token;
-    setTokenFactory(arg0: TokenFactory<Object>): void;
+    setTokenFactory(arg0: TokenFactory<any>): void;
 }

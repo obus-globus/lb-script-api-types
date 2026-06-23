@@ -12,7 +12,7 @@ import type { Player } from '../../../../../net/minecraft/world/entity/player/Pl
 import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 export class NetworkUtilsKt extends Object {
     static clickBlockWithSlot(localPlayer: LocalPlayer, rayTraceResult: BlockHitResult, slot: number, swingMode: SwingMode, switchMode: SwitchMode, sequenced: boolean): void;
-    static handlePacket(packet: Packet<Object>): Object;
+    static handlePacket(packet: Packet<any>): Object;
     static releaseUsingItemInTickLoop(multiPlayerGameMode: MultiPlayerGameMode): void;
     /**
      * Sends an open inventory packet with the help of ViaFabricPlus. This is only for older versions. (<= 1.11.2)
@@ -25,7 +25,7 @@ export class NetworkUtilsKt extends Object {
     static sendChatOrCommand(clientPacketListener: ClientPacketListener, message: string): void;
     static sendCloseInventory(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
     static sendHeldItemChange(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl, slot: number): void;
-    static sendPacketSilently(packet: Packet<Object>): void;
+    static sendPacketSilently(packet: Packet<any>): void;
     static sendStartSprinting(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
     static sendStopSprinting(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;
     static sendSwapItemWithOffhand(clientCommonPacketListenerImpl: ClientCommonPacketListenerImpl): void;

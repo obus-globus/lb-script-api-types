@@ -4,7 +4,7 @@ import type { CharConsumer } from '../../../../../it/unimi/dsi/fastutil/chars/Ch
 import type { CharSpliterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Char2ReferenceOpenCustomHashMap$KeySpliterator extends Char2ReferenceOpenCustomHashMap$MapSpliterator<Object, Object> implements CharSpliterator {
+export class Char2ReferenceOpenCustomHashMap$KeySpliterator extends Char2ReferenceOpenCustomHashMap$MapSpliterator<Object, any> implements CharSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

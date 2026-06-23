@@ -4,7 +4,6 @@ import type { RecordCodecBuilder } from '../../../../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Heightmap$Types } from '../../../../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
@@ -47,5 +46,5 @@ export class JigsawStructure extends Structure {
     findGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
     getPoolAliases(): PoolAliasBinding[];
     getStartPool(): Holder<StructureTemplatePool>;
-    type(): StructureType<Object>;
+    type(): StructureType<any>;
 }

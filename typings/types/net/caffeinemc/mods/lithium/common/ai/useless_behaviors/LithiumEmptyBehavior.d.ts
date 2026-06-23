@@ -5,7 +5,7 @@ import type { Behavior$Status } from '../../../../../../../net/minecraft/world/e
 import type { BehaviorControl } from '../../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class LithiumEmptyBehavior<E extends LivingEntity> extends Object implements BehaviorControl<E> {
-    static EMPTY_BEHAVIOR_SENTINEL: LithiumEmptyBehavior<Object>;
+    static EMPTY_BEHAVIOR_SENTINEL: LithiumEmptyBehavior<any>;
     constructor()
     debugString(): string;
     doStop(arg0: ServerLevel, arg1: E, arg2: number): void;

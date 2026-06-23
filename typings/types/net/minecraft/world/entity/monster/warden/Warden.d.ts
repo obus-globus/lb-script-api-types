@@ -238,5 +238,5 @@ export class Warden extends Monster implements VibrationSystem {
     setAttackTarget(target: LivingEntity): void;
     // private syncClientAngerLevel(): void;
     tick(): void;
-    updateDynamicGameEventListener(action: (param0: DynamicGameEventListener<Object>, param1: ServerLevel) => void): void;
+    updateDynamicGameEventListener(action: (param0: DynamicGameEventListener<any>, param1: ServerLevel) => void): void;
 }

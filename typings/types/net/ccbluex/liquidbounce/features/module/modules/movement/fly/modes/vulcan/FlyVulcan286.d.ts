@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -23,7 +22,7 @@ export class FlyVulcan286 extends Mode {
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     packet: ClientboundPlayerPositionPacket | null;
     readonly packetHandler: EventHook<PacketEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
     readonly tickHandler: EventHook<PlayerTickEvent>;
     wait: boolean;

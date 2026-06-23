@@ -11,5 +11,5 @@ export class AppendStatic extends Object implements RuleBlockEntityModifier {
     constructor(tag: CompoundTag)
     // private tag: CompoundTag;
     apply(random: RandomSource, existingTag: CompoundTag): CompoundTag;
-    getType(): RuleBlockEntityModifierType<Object>;
+    getType(): RuleBlockEntityModifierType<any>;
 }

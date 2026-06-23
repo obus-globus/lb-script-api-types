@@ -20,7 +20,7 @@ export class Tailer$Builder extends AbstractStreamBuilder<Tailer, Tailer$Builder
     setDelayDuration(arg0: Duration): Tailer$Builder;
     setExecutorService(arg0: ExecutorService): Tailer$Builder;
     setIgnoreTouch(arg0: boolean): Tailer$Builder;
-    setOrigin(arg0: AbstractOrigin<Object, Object>): Tailer$Builder;
+    setOrigin(arg0: AbstractOrigin<Object, any>): Tailer$Builder;
     setReOpen(arg0: boolean): Tailer$Builder;
     setStartThread(arg0: boolean): Tailer$Builder;
     setTailFromEnd(arg0: boolean): Tailer$Builder;

@@ -55,7 +55,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     appendServerbound(arg0: SU, arg1: (param0: PacketWrapper) => void): void;
     applySharedRegistrations(): void;
     // private callOnMappingDataLoaded(arg0: MappingDataListener): void;
-    // private callRegister(arg0: Rewriter<Object>): void;
+    // private callRegister(arg0: Rewriter<any>): void;
     cancelClientbound(arg0: CU): void;
     cancelClientbound(arg0: State, arg1: number): void;
     cancelServerbound(arg0: SU): void;
@@ -64,13 +64,13 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     createLogger(): ProtocolLogger;
     createPacketTypesProvider(): PacketTypesProvider<CU, CM, SM, SU>;
     createServerboundPacketMappings(): PacketMappings;
-    dependsOn(): Class<Protocol<Object, Object, Object, Object>>;
+    dependsOn(): Class<Protocol<any, any, any, any>>;
     get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
     getBlockRewriter(): BlockRewriter<CU>;
     getClientVersion(): ProtocolVersion;
     getComponentRewriter(): ComponentRewriter;
-    getEntityRewriter(): EntityRewriter<Object>;
-    getItemRewriter(): ItemRewriter<Object>;
+    getEntityRewriter(): EntityRewriter<any>;
+    getItemRewriter(): ItemRewriter<any>;
     getLogger(): ProtocolLogger;
     getMappingData(): MappingData;
     getPacketTypesProvider(): PacketTypesProvider<CU, CM, SM, SU>;

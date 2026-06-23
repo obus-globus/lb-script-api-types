@@ -60,7 +60,7 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     atTime(arg0: number, arg1: number): LocalDateTime;
     atTime(arg0: number, arg1: number, arg2: number): LocalDateTime;
     atTime(arg0: number, arg1: number, arg2: number, arg3: number): LocalDateTime;
-    atTime(arg0: LocalTime): ChronoLocalDateTime<Object>;
+    atTime(arg0: LocalTime): ChronoLocalDateTime<any>;
     compareTo(arg0: ChronoLocalDate): number;
     compareTo0(arg0: LocalDate): number;
     datesUntil(arg0: LocalDate): Stream<LocalDate>;

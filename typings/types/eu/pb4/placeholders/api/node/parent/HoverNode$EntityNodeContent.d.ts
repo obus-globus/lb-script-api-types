@@ -6,11 +6,11 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { HoverEvent$EntityTooltipInfo } from '../../../../../../net/minecraft/network/chat/HoverEvent$EntityTooltipInfo.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class HoverNode$EntityNodeContent extends Record {
-    constructor(entityType: EntityType<Object>, uuid: UUID, name: TextNode)
-    // private entityType: EntityType<Object>;
+    constructor(entityType: EntityType<any>, uuid: UUID, name: TextNode)
+    // private entityType: EntityType<any>;
     // private name: TextNode;
     // private uuid: UUID;
-    entityType(): EntityType<Object>;
+    entityType(): EntityType<any>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     name(): TextNode;

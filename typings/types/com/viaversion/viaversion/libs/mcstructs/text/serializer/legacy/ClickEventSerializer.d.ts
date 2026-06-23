@@ -10,7 +10,6 @@ import type { TwitchUserInfoClickEvent } from '../../../../../../../../com/viave
 import type { EventSerializer } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/EventSerializer.d.ts'
 import type { EventSerializer$IOFunction } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/EventSerializer$IOFunction.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class ClickEventSerializer<T extends ClickEvent> extends EventSerializer<ClickEvent, T, ClickEventAction, string> {
     static CHANGE_PAGE: ClickEventSerializer<ChangePageClickEvent>;
     static OPEN_FILE: ClickEventSerializer<OpenFileClickEvent>;
@@ -18,5 +17,5 @@ export class ClickEventSerializer<T extends ClickEvent> extends EventSerializer<
     static RUN_COMMAND: ClickEventSerializer<RunCommandClickEvent>;
     static SUGGEST_COMMAND: ClickEventSerializer<SuggestCommandClickEvent>;
     static TWITCH_USER_INFO: ClickEventSerializer<TwitchUserInfoClickEvent>;
-    constructor(arg0: (param0: ClickEvent) => boolean, arg1: (param0: SNbt<Object>, param1: T) => string, arg2: ClickEventAction, arg3: (param0: SNbt<Object>, param1: string) => T)
+    constructor(arg0: (param0: ClickEvent) => boolean, arg1: (param0: SNbt<any>, param1: T) => string, arg2: ClickEventAction, arg3: (param0: SNbt<any>, param1: string) => T)
 }

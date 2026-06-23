@@ -16,7 +16,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundAddEntityPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundAddEntityPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    constructor(id: number, uuid: UUID, x: number, y: number, z: number, xRot: number, yRot: number, type: EntityType<Object>, data: number, movement: Vec3, yHeadRot: number)
+    constructor(id: number, uuid: UUID, x: number, y: number, z: number, xRot: number, yRot: number, type: EntityType<any>, data: number, movement: Vec3, yHeadRot: number)
     private constructor(input: RegistryFriendlyByteBuf)
     constructor(entity: Entity, data: number, pos: BlockPos)
     constructor(entity: Entity, serverEntity: ServerEntity)
@@ -34,7 +34,7 @@ export class ClientboundAddEntityPacket extends Object implements Packet<ClientG
     getData(): number;
     getId(): number;
     getMovement(): Vec3;
-    getType(): EntityType<Object>;
+    getType(): EntityType<any>;
     getUUID(): UUID;
     getX(): number;
     getXRot(): number;

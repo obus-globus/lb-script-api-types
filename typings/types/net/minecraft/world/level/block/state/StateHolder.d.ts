@@ -7,20 +7,20 @@ import type { Property$Value } from '../../../../../../net/minecraft/world/level
 export abstract class StateHolder<O extends Object | number | string | boolean, S extends Object | number | string | boolean> extends Object {
     static NAME_TAG: string;
     static PROPERTIES_TAG: string;
-    constructor(owner: O, propertyKeys: Property<Object>[], propertyValues: Comparable<Object>[])
+    constructor(owner: O, propertyKeys: Property<any>[], propertyValues: Comparable<Object>[])
     // private neighbors: S[][];
     // private owner: O;
-    // private propertyKeys: Property<Object>[];
+    // private propertyKeys: Property<any>[];
     // private propertyValues: Comparable<Object>[];
     cycle<T extends Comparable<T>>(property: Property<T>): S;
     equals(obj: Object | null): boolean;
     // private getNullableValue<T extends Comparable<T>>(property: Property<T>): T;
     getOptionalValue<T extends Comparable<T>>(property: Property<T>): Optional<T>;
-    getProperties(): Property<Object>[];
+    getProperties(): Property<any>[];
     getValue<T extends Comparable<T>>(property: Property<T>): T;
     getValueOrElse<T extends Comparable<T>>(property: Property<T>, defaultValue: T): T;
-    getValues(): Stream<Property$Value<Object>>;
-    hasProperty(property: Property<Object>): boolean;
+    getValues(): Stream<Property$Value<any>>;
+    hasProperty(property: Property<any>): boolean;
     hashCode(): number;
     initializeNeighbors(neighbors: S[][]): void;
     isSingletonState(): boolean;
@@ -28,5 +28,5 @@ export abstract class StateHolder<O extends Object | number | string | boolean, 
     // private setValueInternal<T extends Comparable<T>, V extends T>(property: Property<T>, propertyIndex: number, value: V): S;
     toString(): string;
     trySetValue<T extends Comparable<T>, V extends T>(property: Property<T>, value: V): S;
-    // private valueIndex(property: Property<Object>): number;
+    // private valueIndex(property: Property<any>): number;
 }

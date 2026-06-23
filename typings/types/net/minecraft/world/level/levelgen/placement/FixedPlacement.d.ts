@@ -14,5 +14,5 @@ export class FixedPlacement extends PlacementModifier {
     private constructor(positions: BlockPos[])
     // private positions: BlockPos[];
     getPositions(context: PlacementContext, random: RandomSource, origin: BlockPos): Stream<BlockPos>;
-    type(): PlacementModifierType<Object>;
+    type(): PlacementModifierType<any>;
 }

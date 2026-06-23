@@ -16,7 +16,7 @@ export class ContainerItemSlot extends Object implements ItemSlot {
     readonly slotType: ItemSlot$Type;
     distance(itemSlot: ContainerItemSlot): number;
     equals(other: Object | null): boolean;
-    getIdForServer(screen: AbstractContainerScreen<Object> | null): number;
+    getIdForServer(screen: AbstractContainerScreen<any> | null): number;
     getIdForServerWithCurrentScreen(): number | null;
     hashCode(): number;
     toString(): string;

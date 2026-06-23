@@ -7,11 +7,11 @@ export class VanillaPacketTypes extends Record {
     static CONFIGURATION_S2C: VanillaPacketTypes;
     static PLAY_C2S: VanillaPacketTypes;
     static PLAY_S2C: VanillaPacketTypes;
-    static get(paramarg0: ProtocolInfo<Object>): VanillaPacketTypes;
-    // private types: PacketType<Object>[];
+    static get(paramarg0: ProtocolInfo<any>): VanillaPacketTypes;
+    // private types: PacketType<any>[];
     equals(arg0: Object | null): boolean;
-    get(arg0: number): PacketType<Object>;
+    get(arg0: number): PacketType<any>;
     hashCode(): number;
     toString(): string;
-    types(): PacketType<Object>[];
+    types(): PacketType<any>[];
 }

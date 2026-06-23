@@ -27,7 +27,7 @@ export interface ConfigurationBuilder<T extends Configuration> extends Object, B
     add(builder: RootLoggerComponentBuilder): ConfigurationBuilder<T>;
     add(builder: ScriptComponentBuilder): ConfigurationBuilder<T>;
     add(builder: ScriptFileComponentBuilder): ConfigurationBuilder<T>;
-    addComponent(builder: ComponentBuilder<Object>): ConfigurationBuilder<T>;
+    addComponent(builder: ComponentBuilder<any>): ConfigurationBuilder<T>;
     addProperty(key: string, value: string): ConfigurationBuilder<T>;
     addRootProperty(key: string, value: string): ConfigurationBuilder<T>;
     build(initialize: boolean): T;

@@ -4,7 +4,6 @@ import type { RecordCodecBuilder } from '../../../../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Structure } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { Structure$GenerationContext } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure$GenerationContext.d.ts'
@@ -24,5 +23,5 @@ export class MineshaftStructure extends Structure {
     // private type: MineshaftStructure$Type;
     findGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
     // private generatePiecesAndAdjust(builder: StructurePiecesBuilder, context: Structure$GenerationContext): number;
-    type(): StructureType<Object>;
+    type(): StructureType<any>;
 }

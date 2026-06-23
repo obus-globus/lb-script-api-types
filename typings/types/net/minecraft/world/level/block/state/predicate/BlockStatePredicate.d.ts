@@ -12,7 +12,7 @@ export class BlockStatePredicate extends Object implements Predicate<BlockState>
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     private constructor(definition: StateDefinition<Block, BlockState>)
     // private definition: StateDefinition<Block, BlockState>;
-    // private properties: Map<Property<Object>, (param0: Object) => boolean>;
+    // private properties: Map<Property<any>, (param0: Object) => boolean>;
     and(arg0: (param0: BlockState) => boolean): (param0: BlockState) => boolean;
     applies<T extends Comparable<T>>(input: BlockState, key: Property<T>, predicate: (param0: Object) => boolean): boolean;
     negate(): (param0: BlockState) => boolean;

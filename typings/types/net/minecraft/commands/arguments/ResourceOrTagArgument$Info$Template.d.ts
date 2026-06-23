@@ -8,5 +8,5 @@ export class ResourceOrTagArgument$Info$Template extends Object implements Argum
     private constructor(null_: ResourceOrTagArgument$Info$Template)
     // private registryKey: ResourceKey<T[]>;
     instantiate<T extends Object | number | string | boolean>(context: CommandBuildContext): ResourceOrTagArgument<T>;
-    type<T extends Object | number | string | boolean>(): ArgumentTypeInfo<ResourceOrTagArgument<T>, Object>;
+    type<T extends Object | number | string | boolean>(): ArgumentTypeInfo<ResourceOrTagArgument<T>, any>;
 }

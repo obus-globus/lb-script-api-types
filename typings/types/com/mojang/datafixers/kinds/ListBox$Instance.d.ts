@@ -16,8 +16,8 @@ export class ListBox$Instance extends Enum<ListBox$Instance> implements Traversa
     static valueOf(paramarg0: string): ListBox$Instance;
     static values(): (Object | null)[];
     private constructor()
-    flip<F extends K1, A extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: App<ListBox$Mu, App<F, A>>): App<F, App<ListBox$Mu, A>>;
+    flip<F extends K1, A extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: App<ListBox$Mu, App<F, A>>): App<F, App<ListBox$Mu, A>>;
     map<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: (param0: T) => R, arg1: App<ListBox$Mu, T>): App<ListBox$Mu, R>;
-    traverse<F extends K1, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: (param0: A) => App<F, B>, arg2: App<ListBox$Mu, A>): App<F, App<ListBox$Mu, B>>;
+    traverse<F extends K1, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: (param0: A) => App<F, B>, arg2: App<ListBox$Mu, A>): App<F, App<ListBox$Mu, B>>;
     name(): "INSTANCE";
 }

@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../../../../../kotlin/Pair.d.ts'
 import type { Mode } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
@@ -25,7 +24,7 @@ export class CriticalsJump extends Mode {
     // private movementInputEvent: EventHook<MovementInputEvent>;
     // private optimizeForCooldown: boolean;
     // private /*not mapped: */ getOptimizeForCooldown(): boolean;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private calculateTicksUntilNextCrit(): number;

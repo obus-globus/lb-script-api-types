@@ -44,14 +44,14 @@ import type { BlockEntityType } from '../../../../../../net/minecraft/world/leve
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ValueInput } from '../../../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
-export abstract class BlockEntity extends Object implements SetBlockStateHandlingBlockEntity, SetChangedHandlingBlockEntity, ComparatorTracker, SupportCache, AttachmentTarget, RenderDataBlockEntity, AttachmentTargetImpl, TypedInstance<BlockEntityType<Object>>, DebugValueSource {
+export abstract class BlockEntity extends Object implements SetBlockStateHandlingBlockEntity, SetChangedHandlingBlockEntity, ComparatorTracker, SupportCache, AttachmentTarget, RenderDataBlockEntity, AttachmentTargetImpl, TypedInstance<BlockEntityType<any>>, DebugValueSource {
     static NBT_ATTACHMENT_KEY: string;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
     static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
-    constructor(type: BlockEntityType<Object>, worldPosition: BlockPos, blockState: BlockState)
+    constructor(type: BlockEntityType<any>, worldPosition: BlockPos, blockState: BlockState)
     // private attachedChangedListeners: Map<Object, Object>;
     readonly blockState: BlockState;
     // private dataAttachments: Map<Object, Object>;
@@ -61,7 +61,7 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     // private remove: boolean;
     // private supportTestResult: boolean;
     // private syncedAttachments: Map<Object, Object>;
-    readonly type: BlockEntityType<Object>;
+    readonly type: BlockEntityType<any>;
     // private worldPosition: BlockPos;
     // private acknowledgeSynced(arg0: AttachmentType<Object>, arg1: Object): void;
     // private acknowledgeSyncedEntry(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
@@ -104,16 +104,16 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     getLevel(): Level;
     getNameForReporting(): string;
     getRenderData(): Object;
-    getType(): BlockEntityType<Object>;
+    getType(): BlockEntityType<any>;
     getUpdatePacket(): Packet<ClientGamePacketListener>;
     getUpdateTag(registries: HolderLookup$Provider): CompoundTag;
     hasAttached(arg0: AttachmentType<Object>): boolean;
     hasLevel(): boolean;
-    is(rawType: BlockEntityType<Object>): boolean;
-    is(type: Holder<BlockEntityType<Object>>): boolean;
-    is(set: Holder<BlockEntityType<Object>>[]): boolean;
-    is(type: ResourceKey<BlockEntityType<Object>>): boolean;
-    is(tag: TagKey<BlockEntityType<Object>>): boolean;
+    is(rawType: BlockEntityType<any>): boolean;
+    is(type: Holder<BlockEntityType<any>>): boolean;
+    is(set: Holder<BlockEntityType<any>>[]): boolean;
+    is(type: ResourceKey<BlockEntityType<any>>): boolean;
+    is(tag: TagKey<BlockEntityType<any>>): boolean;
     isRemoved(): boolean;
     isValidBlockState(blockState: BlockState): boolean;
     lithium$handleSetBlockState(): void;
@@ -149,8 +149,8 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     setComponents(components: TypedDataComponent<Object>[]): void;
     setLevel(level: Level): void;
     setRemoved(): void;
-    tags(): Stream<TagKey<BlockEntityType<Object>>>;
+    tags(): Stream<TagKey<BlockEntityType<any>>>;
     triggerEvent(b0: number, b1: number): boolean;
-    typeHolder(): Holder<BlockEntityType<Object>>;
+    typeHolder(): Holder<BlockEntityType<any>>;
     // private validateBlockState(blockState: BlockState): void;
 }

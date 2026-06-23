@@ -5,6 +5,6 @@ import type { BlockEntityRendererProvider$Context } from '../../../../../../../n
 import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 export class BlockEntityRendererRegistry extends Object {
-    static register(paramarg0: BlockEntityType<BlockEntity>, paramarg1: (param0: BlockEntityRendererProvider$Context) => BlockEntityRenderer<Object, Object>): void;
+    static register(paramarg0: BlockEntityType<BlockEntity>, paramarg1: (param0: BlockEntityRendererProvider$Context) => BlockEntityRenderer<any, any>): void;
     private constructor()
 }

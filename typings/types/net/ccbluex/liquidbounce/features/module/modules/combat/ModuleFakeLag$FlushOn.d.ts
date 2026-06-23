@@ -5,7 +5,7 @@ import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { Packet } from '../../../../../../../net/minecraft/network/protocol/Packet.d.ts'
-export class ModuleFakeLag$FlushOn extends Enum<ModuleFakeLag$FlushOn> implements Predicate<Packet<Object>>, Tagged {
+export class ModuleFakeLag$FlushOn extends Enum<ModuleFakeLag$FlushOn> implements Predicate<Packet<any>>, Tagged {
     static ACTION: ModuleFakeLag$FlushOn;
     static BLOCK_INTERACT: ModuleFakeLag$FlushOn;
     static Companion: Tagged$Companion;
@@ -18,12 +18,12 @@ export class ModuleFakeLag$FlushOn extends Enum<ModuleFakeLag$FlushOn> implement
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFakeLag$FlushOn;
     static values(): (Object | null)[];
-    private constructor(tag: string, testPacket: (param0: Packet<Object> | null) => boolean)
+    private constructor(tag: string, testPacket: (param0: Packet<any> | null) => boolean)
     readonly tag: string;
-    // private testPacket: (param0: Packet<Object> | null) => boolean;
-    and(arg0: (param0: Packet<Object> | null) => boolean): (param0: Packet<Object> | null) => boolean;
-    negate(): (param0: Packet<Object> | null) => boolean;
-    or(arg0: (param0: Packet<Object> | null) => boolean): (param0: Packet<Object> | null) => boolean;
-    test(p0: Packet<Object> | null): boolean;
+    // private testPacket: (param0: Packet<any> | null) => boolean;
+    and(arg0: (param0: Packet<any> | null) => boolean): (param0: Packet<any> | null) => boolean;
+    negate(): (param0: Packet<any> | null) => boolean;
+    or(arg0: (param0: Packet<any> | null) => boolean): (param0: Packet<any> | null) => boolean;
+    test(p0: Packet<any> | null): boolean;
     name(): "ENTITY_INTERACT" | "BLOCK_INTERACT" | "ACTION";
 }

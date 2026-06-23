@@ -25,5 +25,5 @@ export class VegetationPatchConfiguration extends Object implements FeatureConfi
     vegetationFeature: Holder<PlacedFeature>;
     verticalRange: number;
     xzRadius: IntProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

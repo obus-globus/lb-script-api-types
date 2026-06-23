@@ -16,17 +16,17 @@ import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts
 import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
-export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal, Object, Comparable<ChronoZonedDateTime<Object>> {
-    compareTo(arg0: ChronoZonedDateTime<Object>): number;
+export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal, Object, Comparable<ChronoZonedDateTime<any>> {
+    compareTo(arg0: ChronoZonedDateTime<any>): number;
     format(arg0: DateTimeFormatter): string;
     get(arg0: TemporalField): number;
     getChronology(): Chronology;
     getLong(arg0: TemporalField): number;
     getOffset(): ZoneOffset;
     getZone(): ZoneId;
-    isAfter(arg0: ChronoZonedDateTime<Object>): boolean;
-    isBefore(arg0: ChronoZonedDateTime<Object>): boolean;
-    isEqual(arg0: ChronoZonedDateTime<Object>): boolean;
+    isAfter(arg0: ChronoZonedDateTime<any>): boolean;
+    isBefore(arg0: ChronoZonedDateTime<any>): boolean;
+    isEqual(arg0: ChronoZonedDateTime<any>): boolean;
     isSupported(arg0: TemporalField): boolean;
     isSupported(arg0: TemporalUnit): boolean;
     minus(arg0: TemporalAmount): ChronoZonedDateTime<D>;

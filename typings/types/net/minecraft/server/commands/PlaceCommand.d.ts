@@ -11,7 +11,7 @@ import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/le
 import type { Structure } from '../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { StructureTemplatePool } from '../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool.d.ts'
 export class PlaceCommand extends Object {
-    static placeFeature(paramsource: CommandSourceStack, paramfeatureHolder: Holder$Reference<ConfiguredFeature<Object, Object>>, parampos: BlockPos): number;
+    static placeFeature(paramsource: CommandSourceStack, paramfeatureHolder: Holder$Reference<ConfiguredFeature<any, any>>, parampos: BlockPos): number;
     static placeJigsaw(paramsource: CommandSourceStack, parampool: Holder<StructureTemplatePool>, paramtarget: Identifier, parammaxDepth: number, parampos: BlockPos): number;
     static placeStructure(paramsource: CommandSourceStack, paramstructureHolder: Holder$Reference<Structure>, parampos: BlockPos): number;
     static placeTemplate(paramsource: CommandSourceStack, paramtemplate: Identifier, parampos: BlockPos, paramrotation: Rotation, parammirror: Mirror, paramintegrity: number, paramseed: number, paramstrict: boolean): number;

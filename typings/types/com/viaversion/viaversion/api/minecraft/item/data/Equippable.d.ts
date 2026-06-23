@@ -33,7 +33,7 @@ export class Equippable extends Record implements Rewritable {
     equipmentSlot(): number;
     hashCode(): number;
     model(): string;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): Equippable;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): Equippable;
     shearingSound(): Holder<SoundEvent>;
     soundEvent(): Holder<SoundEvent>;
     swappable(): boolean;

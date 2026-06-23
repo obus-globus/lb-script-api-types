@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { KeyboardKeyEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/KeyboardKeyEvent.d.ts'
 import type { MovementInputEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
@@ -18,7 +17,7 @@ export class ModuleInventoryMove extends ClientModule {
     static INSTANCE: ModuleInventoryMove;
     // private behavior: ModuleInventoryMove$Behaviour;
     // private /*not mapped: */ getBehavior(): ModuleInventoryMove$Behaviour;
-    // private delayedContainerPackets: Packet<Object>[];
+    // private delayedContainerPackets: Packet<any>[];
     /**
      * Restricts user from clicking while moving in inventory.
      *

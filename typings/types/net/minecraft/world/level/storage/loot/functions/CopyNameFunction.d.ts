@@ -9,7 +9,7 @@ import type { LootItemConditionalFunction$Builder } from '../../../../../../../n
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class CopyNameFunction extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<CopyNameFunction>;
-    static copyName(paramtarget: LootContextArg<Object>): LootItemConditionalFunction$Builder<Object>;
+    static copyName(paramtarget: LootContextArg<Object>): LootItemConditionalFunction$Builder<any>;
     private constructor(predicates: LootItemCondition[], source: LootContextArg<Object>)
     // private source: LootContextArg<Object>;
     codec(): MapCodec<CopyNameFunction>;

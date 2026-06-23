@@ -6,7 +6,7 @@ import type { TokenSource } from '../../../../org/antlr/v4/runtime/TokenSource.d
 export class ListTokenSource extends Object implements TokenSource {
     constructor(arg0: Token[])
     constructor(arg0: Token[], arg1: string)
-    // private _factory: TokenFactory<Object>;
+    // private _factory: TokenFactory<any>;
     // private eofToken: Token;
     // private i: number;
     readonly sourceName: string;
@@ -15,7 +15,7 @@ export class ListTokenSource extends Object implements TokenSource {
     getInputStream(): CharStream;
     getLine(): number;
     getSourceName(): string;
-    getTokenFactory(): TokenFactory<Object>;
+    getTokenFactory(): TokenFactory<any>;
     nextToken(): Token;
-    setTokenFactory(arg0: TokenFactory<Object>): void;
+    setTokenFactory(arg0: TokenFactory<any>): void;
 }

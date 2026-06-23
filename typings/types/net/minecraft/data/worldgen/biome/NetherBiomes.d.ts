@@ -5,11 +5,11 @@ import type { Biome$BiomeBuilder } from '../../../../../net/minecraft/world/leve
 import type { ConfiguredWorldCarver } from '../../../../../net/minecraft/world/level/levelgen/carver/ConfiguredWorldCarver.d.ts'
 import type { PlacedFeature } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
 export class NetherBiomes extends Object {
-    static basaltDeltas(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
+    static basaltDeltas(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
     static baseBiome(): Biome$BiomeBuilder;
-    static crimsonForest(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static netherWastes(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static soulSandValley(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static warpedForest(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
+    static crimsonForest(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static netherWastes(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static soulSandValley(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static warpedForest(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
     constructor()
 }

@@ -14,9 +14,9 @@ import type { SmithingRecipe } from '../../../../../net/minecraft/world/item/cra
 import type { SmithingRecipeInput } from '../../../../../net/minecraft/world/item/crafting/SmithingRecipeInput.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export abstract class SimpleSmithingRecipe extends Object implements SmithingRecipe {
-    static CODEC: Codec<Recipe<Object>>;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static CODEC: Codec<Recipe<any>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(commonInfo: Recipe$CommonInfo)
     // private commonInfo: Recipe$CommonInfo;
     // private placementInfo: PlacementInfo;

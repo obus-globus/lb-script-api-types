@@ -2,5 +2,5 @@ import type { UserConnection } from '../../../../com/viaversion/viaversion/api/c
 import type { Protocol } from '../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface Rewritable extends Object{
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): Object;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): Object;
 }

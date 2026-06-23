@@ -40,7 +40,7 @@ export class GuiRenderer extends Object implements AutoCloseable, GuiRendererExt
     static GUI_3D_Z_FAR: number;
     static GUI_3D_Z_NEAR: number;
     static MIN_GUI_Z: number;
-    constructor(renderState: GuiRenderState, bufferSource: MultiBufferSource$BufferSource, submitNodeCollector: SubmitNodeCollector, featureRenderDispatcher: FeatureRenderDispatcher, pictureInPictureRenderers: PictureInPictureRenderer<Object>[])
+    constructor(renderState: GuiRenderState, bufferSource: MultiBufferSource$BufferSource, submitNodeCollector: SubmitNodeCollector, featureRenderDispatcher: FeatureRenderDispatcher, pictureInPictureRenderers: PictureInPictureRenderer<any>[])
     // private bufferBuilder: BufferBuilder;
     // private bufferSource: MultiBufferSource$BufferSource;
     // private byteBufferBuilder: ByteBufferBuilder;
@@ -55,7 +55,7 @@ export class GuiRenderer extends Object implements AutoCloseable, GuiRendererExt
     // private itemAtlas: GuiItemAtlas;
     // private meshesToDraw: GuiRenderer$MeshToDraw[];
     // private oversizedItemRenderers: Map<Object, OversizedItemRenderer>;
-    // private pictureInPictureRenderers: Map<Class<PictureInPictureRenderState>, PictureInPictureRenderer<Object>>;
+    // private pictureInPictureRenderers: Map<Class<PictureInPictureRenderState>, PictureInPictureRenderer<any>>;
     // private pipRendererPools: Map<Object | null, Object | null>;
     // private previousPipeline: RenderPipeline;
     // private previousScissorArea: ScreenRectangle;

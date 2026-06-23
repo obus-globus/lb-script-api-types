@@ -9,7 +9,7 @@ import type { LootItemConditionalFunction$Builder } from '../../../../../../../n
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class FillPlayerHead extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<FillPlayerHead>;
-    static fillPlayerHead(paramentityTarget: LootContext$EntityTarget): LootItemConditionalFunction$Builder<Object>;
+    static fillPlayerHead(paramentityTarget: LootContext$EntityTarget): LootItemConditionalFunction$Builder<any>;
     constructor(predicates: LootItemCondition[], entityTarget: LootContext$EntityTarget)
     // private entityTarget: LootContext$EntityTarget;
     codec(): MapCodec<FillPlayerHead>;

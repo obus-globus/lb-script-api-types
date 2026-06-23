@@ -8,5 +8,5 @@ export class DoubleArgumentInfo$Template extends Object implements ArgumentTypeI
     // private max: number;
     // private min: number;
     instantiate(context: CommandBuildContext): DoubleArgumentType;
-    type(): ArgumentTypeInfo<DoubleArgumentType, Object>;
+    type(): ArgumentTypeInfo<DoubleArgumentType, any>;
 }

@@ -27,10 +27,10 @@ export class PlacementUtils extends Object {
     static filtered(paramfeature: Object | null, paramconfig: FeatureConfiguration | null, parampredicate: BlockPredicate): Holder<PlacedFeature>;
     static filteredByBlockSurvival(paramblock: Block): BlockPredicateFilter;
     static inlinePlaced(paramfeature: Object | null, paramconfig: FeatureConfiguration | null, paramplacedFeatures: (Object | null)[]): Holder<PlacedFeature>;
-    static inlinePlaced(paramconfiguredFeature: Holder<ConfiguredFeature<Object, Object>>, paramplacedFeatures: (Object | null)[]): Holder<PlacedFeature>;
+    static inlinePlaced(paramconfiguredFeature: Holder<ConfiguredFeature<any, any>>, paramplacedFeatures: (Object | null)[]): Holder<PlacedFeature>;
     static isEmpty(): PlacementFilter;
     static onlyWhenEmpty(paramfeature: Object | null, paramconfig: FeatureConfiguration | null): Holder<PlacedFeature>;
-    static register(paramcontext: BootstrapContext<PlacedFeature>, paramid: ResourceKey<PlacedFeature>, paramfeature: Holder<ConfiguredFeature<Object, Object>>, paramplacementModifiers: PlacementModifier[]): void;
-    static register(paramcontext: BootstrapContext<PlacedFeature>, paramid: ResourceKey<PlacedFeature>, paramfeature: Holder<ConfiguredFeature<Object, Object>>, paramplacementModifiers: (Object | null)[]): void;
+    static register(paramcontext: BootstrapContext<PlacedFeature>, paramid: ResourceKey<PlacedFeature>, paramfeature: Holder<ConfiguredFeature<any, any>>, paramplacementModifiers: PlacementModifier[]): void;
+    static register(paramcontext: BootstrapContext<PlacedFeature>, paramid: ResourceKey<PlacedFeature>, paramfeature: Holder<ConfiguredFeature<any, any>>, paramplacementModifiers: (Object | null)[]): void;
     constructor()
 }

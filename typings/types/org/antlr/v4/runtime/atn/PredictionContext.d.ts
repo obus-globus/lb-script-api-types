@@ -28,7 +28,7 @@ export abstract class PredictionContext extends Object {
     isEmpty(): boolean;
     size(): number;
     toString(): string;
-    toString(arg0: Recognizer<Object, Object>): string;
-    toStrings(arg0: Recognizer<Object, Object>, arg1: number): string[];
-    toStrings(arg0: Recognizer<Object, Object>, arg1: PredictionContext, arg2: number): string[];
+    toString(arg0: Recognizer<Object, any>): string;
+    toStrings(arg0: Recognizer<Object, any>, arg1: number): string[];
+    toStrings(arg0: Recognizer<Object, any>, arg1: PredictionContext, arg2: number): string[];
 }

@@ -9,7 +9,7 @@ import type { Property } from '../../../../../../net/minecraft/world/level/block
 export class ConditionBuilder extends Object {
     constructor()
     // private terms: ImmutableMap$Builder<string, KeyValueCondition$Terms>;
-    build(): (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean;
+    build(): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     negatedTerm<T extends Comparable<T>>(property: Property<T>, value: T): ConditionBuilder;
     // private putValue<T extends Comparable<T>>(property: Property<T>, term: KeyValueCondition$Terms): void;
     term<T extends Comparable<T>>(property: Property<T>, value: T): ConditionBuilder;

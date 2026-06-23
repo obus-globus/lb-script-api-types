@@ -6,20 +6,20 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class Range<C extends Comparable<Object>> extends Object implements Predicate<C>, Serializable {
-    static all(): Range<Object>;
-    static atLeast(paramendpoint: Object | null): Range<Object>;
-    static atMost(paramendpoint: Object | null): Range<Object>;
-    static closed(paramlower: Object | null, paramupper: Object | null): Range<Object>;
-    static closedOpen(paramlower: Object | null, paramupper: Object | null): Range<Object>;
-    static downTo(paramendpoint: Object | null, paramboundType: BoundType): Range<Object>;
-    static encloseAll(paramvalues: (Object | null)[]): Range<Object>;
-    static greaterThan(paramendpoint: Object | null): Range<Object>;
-    static lessThan(paramendpoint: Object | null): Range<Object>;
-    static open(paramlower: Object | null, paramupper: Object | null): Range<Object>;
-    static openClosed(paramlower: Object | null, paramupper: Object | null): Range<Object>;
-    static range(paramlower: Object | null, paramlowerType: BoundType, paramupper: Object | null, paramupperType: BoundType): Range<Object>;
-    static singleton(paramvalue: Object | null): Range<Object>;
-    static upTo(paramendpoint: Object | null, paramboundType: BoundType): Range<Object>;
+    static all(): Range<any>;
+    static atLeast(paramendpoint: Object | null): Range<any>;
+    static atMost(paramendpoint: Object | null): Range<any>;
+    static closed(paramlower: Object | null, paramupper: Object | null): Range<any>;
+    static closedOpen(paramlower: Object | null, paramupper: Object | null): Range<any>;
+    static downTo(paramendpoint: Object | null, paramboundType: BoundType): Range<any>;
+    static encloseAll(paramvalues: (Object | null)[]): Range<any>;
+    static greaterThan(paramendpoint: Object | null): Range<any>;
+    static lessThan(paramendpoint: Object | null): Range<any>;
+    static open(paramlower: Object | null, paramupper: Object | null): Range<any>;
+    static openClosed(paramlower: Object | null, paramupper: Object | null): Range<any>;
+    static range(paramlower: Object | null, paramlowerType: BoundType, paramupper: Object | null, paramupperType: BoundType): Range<any>;
+    static singleton(paramvalue: Object | null): Range<any>;
+    static upTo(paramendpoint: Object | null, paramboundType: BoundType): Range<any>;
     private constructor(lowerBound: Cut<C>, upperBound: Cut<C>)
     // private lowerBound: Cut<C>;
     // private upperBound: Cut<C>;

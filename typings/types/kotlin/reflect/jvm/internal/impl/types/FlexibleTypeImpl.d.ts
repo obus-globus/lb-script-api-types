@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DescriptorRenderer } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer.d.ts'
 import type { DescriptorRendererOptions } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererOptions.d.ts'
 import type { CustomTypeParameter } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/CustomTypeParameter.d.ts'
@@ -19,7 +18,7 @@ export class FlexibleTypeImpl extends FlexibleType implements CustomTypeParamete
     makeNullableAsSpecified(arg0: boolean): UnwrappedType;
     refine(arg0: KotlinTypeRefiner): FlexibleType;
     render(arg0: DescriptorRenderer, arg1: DescriptorRendererOptions): string;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): UnwrappedType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): UnwrappedType;
     // private runAssertions(): void;
     substitutionResult(arg0: KotlinType): KotlinType;
     toString(): string;

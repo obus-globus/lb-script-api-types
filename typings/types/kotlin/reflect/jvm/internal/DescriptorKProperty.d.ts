@@ -18,9 +18,9 @@ export abstract class DescriptorKProperty<V extends Object | number | string | b
     // private _descriptor: ReflectProperties$LazySoftVal<PropertyDescriptor>;
     // private _javaField: Lazy<Field>;
     readonly boundReceiver: Object | null;
-    readonly caller: Caller<Object>;
+    readonly caller: Caller<any>;
     readonly container: KDeclarationContainerImpl;
-    readonly defaultCaller: Caller<Object> | null;
+    readonly defaultCaller: Caller<any> | null;
     readonly descriptor: PropertyDescriptor;
     readonly getter: DescriptorKProperty$Getter<V>;
     /*not mapped: */ isConst(): boolean;

@@ -10,6 +10,6 @@ export class TrueResourceCondition extends Object implements ResourceCondition {
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;
     constructor()
-    getType(): ResourceConditionType<Object>;
+    getType(): ResourceConditionType<any>;
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;
 }

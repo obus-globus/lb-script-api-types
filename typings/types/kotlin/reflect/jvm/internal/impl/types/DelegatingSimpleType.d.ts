@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeAttribute } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeAttribute.d.ts'
@@ -8,7 +7,7 @@ import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/int
 export abstract class DelegatingSimpleType extends SimpleType {
     constructor()
     getArguments(): TypeProjection[];
-    getAttributes(): TypeAttribute<Object>[];
+    getAttributes(): TypeAttribute<any>[];
     getConstructor(): TypeConstructor;
     getDelegate(): SimpleType;
     getMemberScope(): MemberScope;

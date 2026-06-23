@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class Optimizer$OptimizerBuilder<T extends Optimizer$OptimizerBuilder<Optimizer$OptimizerBuilder<Object>>> extends Object {
+export abstract class Optimizer$OptimizerBuilder<T extends Optimizer$OptimizerBuilder<Optimizer$OptimizerBuilder<any>>> extends Object {
     constructor()
     // private beginNumUpdate: number;
     // private clipGrad: number;

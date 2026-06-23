@@ -1,7 +1,7 @@
 import type { Batchifier } from '../../../../../ai/djl/translate/Batchifier.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class QATranslator$BaseBuilder<T extends QATranslator$BaseBuilder<QATranslator$BaseBuilder<Object>>> extends Object {
+export abstract class QATranslator$BaseBuilder<T extends QATranslator$BaseBuilder<QATranslator$BaseBuilder<any>>> extends Object {
     constructor()
     // private batchifier: Batchifier;
     // private includeTokenTypes: boolean;

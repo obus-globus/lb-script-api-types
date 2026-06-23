@@ -26,7 +26,7 @@ export abstract class FabricEntityLootSubProvider extends EntityLootSubProvider 
     // private excludedFromStrictValidation: Identifier[];
     // private output: FabricPackOutput;
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;
-    excludeFromStrictValidation(arg0: EntityType<Object>): void;
+    excludeFromStrictValidation(arg0: EntityType<any>): void;
     generate(): void;
     generate(arg0: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void): void;
     getName(): string;

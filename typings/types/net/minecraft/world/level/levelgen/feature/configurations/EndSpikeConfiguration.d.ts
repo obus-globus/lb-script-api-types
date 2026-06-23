@@ -18,6 +18,6 @@ export class EndSpikeConfiguration extends Object implements FeatureConfiguratio
     readonly spikes: EndSpikeFeature$EndSpike[];
     getCrystalBeamTarget(): BlockPos;
     getSpikes(): EndSpikeFeature$EndSpike[];
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     isCrystalInvulnerable(): boolean;
 }

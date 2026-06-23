@@ -14,9 +14,9 @@ export class DataComponentMatchers extends Record implements Predicate<DataCompo
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentMatchers>;
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    constructor(exact: DataComponentExactPredicate, partial: Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>)
+    constructor(exact: DataComponentExactPredicate, partial: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>)
     // private exact: DataComponentExactPredicate;
-    // private partial: Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>;
+    // private partial: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>;
     and(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
     equals(o: Object | null): boolean;
     exact(): DataComponentExactPredicate;
@@ -24,7 +24,7 @@ export class DataComponentMatchers extends Record implements Predicate<DataCompo
     isEmpty(): boolean;
     negate(): (param0: DataComponentGetter) => boolean;
     or(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
-    partial(): Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>;
+    partial(): Map<DataComponentPredicate$Type<any>, DataComponentPredicate>;
     test(values: DataComponentGetter): boolean;
     toString(): string;
 }

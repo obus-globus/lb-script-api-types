@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -16,11 +15,11 @@ import type { SprintEvent } from '../../../../../../../../../../net/ccbluex/liqu
  */
 export class SpeedBlocksMC extends Mode {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private flagDelay: number;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     // private packetHandler: EventHook<PacketEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private roundStrafeYaw: boolean;
     // private /*not mapped: */ getRoundStrafeYaw(): boolean;
     // private sprintHandler: EventHook<SprintEvent>;

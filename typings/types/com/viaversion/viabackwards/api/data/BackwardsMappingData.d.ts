@@ -5,15 +5,14 @@ import type { MappingDataBase } from '../../../../../com/viaversion/viaversion/a
 import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BackwardsMappingData extends MappingDataBase {
     constructor(arg0: string, arg1: string)
-    constructor(arg0: string, arg1: string, arg2: Class<Protocol<Object, Object, Object, Object>>)
+    constructor(arg0: string, arg1: string, arg2: Class<Protocol<any, any, any, any>>)
     backwardsItemMappings: { [key: string]: any };
     // private enchantmentNames: { [key: string]: any };
     // private entityNames: { [key: string]: string };
-    // private vvProtocolClass: Class<Protocol<Object, Object, Object, Object>>;
+    // private vvProtocolClass: Class<Protocol<any, any, any, any>>;
     getBackwardsItemMappings(): { [key: string]: any };
     getLogger(): Logger;
     getMappedItem(arg0: number): MappedItem;
@@ -22,7 +21,7 @@ export class BackwardsMappingData extends MappingDataBase {
     getNewBlockId(arg0: number): number;
     getNewItemId(arg0: number): number;
     getOldItemId(arg0: number): number;
-    getViaVersionProtocolClass(): Class<Protocol<Object, Object, Object, Object>>;
+    getViaVersionProtocolClass(): Class<Protocol<any, any, any, any>>;
     loadBiMappings(arg0: Map$Entry<string, Tag>[], arg1: string): BiMappings;
     loadExtras(arg0: Map$Entry<string, Tag>[]): void;
     // private loadNameByIdMappings(arg0: Map$Entry<string, Tag>[], arg1: string): { [key: string]: any };

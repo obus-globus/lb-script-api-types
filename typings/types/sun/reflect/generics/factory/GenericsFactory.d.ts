@@ -5,7 +5,7 @@ import type { WildcardType } from '../../../../java/lang/reflect/WildcardType.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FieldTypeSignature } from '../../../../sun/reflect/generics/tree/FieldTypeSignature.d.ts'
 export interface GenericsFactory extends Object{
-    findTypeVariable(arg0: string): TypeVariable<Object>;
+    findTypeVariable(arg0: string): TypeVariable<any>;
     makeArrayType(arg0: Type): Type;
     makeBool(): Type;
     makeByte(): Type;
@@ -17,7 +17,7 @@ export interface GenericsFactory extends Object{
     makeNamedType(arg0: string): Type;
     makeParameterizedType(arg0: Type, arg1: Type[], arg2: Type): ParameterizedType;
     makeShort(): Type;
-    makeTypeVariable(arg0: string, arg1: FieldTypeSignature[]): TypeVariable<Object>;
+    makeTypeVariable(arg0: string, arg1: FieldTypeSignature[]): TypeVariable<any>;
     makeVoid(): Type;
     makeWildcard(arg0: FieldTypeSignature[], arg1: FieldTypeSignature[]): WildcardType;
 }

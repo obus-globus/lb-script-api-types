@@ -9,8 +9,8 @@ import type { JavaTypeParameter } from '../../../../../../../../kotlin/reflect/j
 import type { FqName } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { Name } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export class ReflectJavaTypeParameter extends ReflectJavaElement implements ReflectJavaAnnotationOwner, JavaTypeParameter {
-    constructor(arg0: TypeVariable<Object>)
-    // private typeVariable: TypeVariable<Object>;
+    constructor(arg0: TypeVariable<any>)
+    // private typeVariable: TypeVariable<any>;
     equals(arg0: Object | null): boolean;
     findAnnotation(arg0: FqName): ReflectJavaAnnotation;
     getAnnotations(): ReflectJavaAnnotation[];

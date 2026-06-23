@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { BlockStateProvider } from '../../../../../../../net/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider.d.ts'
@@ -19,5 +18,5 @@ export class AttachedToLeavesDecorator extends TreeDecorator {
     // private requiredEmptyBlocks: number;
     // private hasRequiredEmptyBlocks(context: TreeDecorator$Context, leafPos: BlockPos, direction: Direction): boolean;
     place(context: TreeDecorator$Context): void;
-    type(): TreeDecoratorType<Object>;
+    type(): TreeDecoratorType<any>;
 }

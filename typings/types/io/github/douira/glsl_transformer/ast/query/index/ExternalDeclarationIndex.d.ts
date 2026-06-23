@@ -6,7 +6,7 @@ import type { BiConsumer } from '../../../../../../../java/util/function/BiConsu
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ExternalDeclarationIndex<S extends ExternalDeclarationIndex$DeclarationEntry[], I extends { [key: string]: S }> extends StringKeyedIndex<ExternalDeclarationIndex$DeclarationEntry, ExternalDeclaration, S, I> {
-    static withOnlyExact(paramarg0: () => Object | null): ExternalDeclarationIndex<Object, { [key: string]: Object | null }>;
+    static withOnlyExact(paramarg0: () => Object | null): ExternalDeclarationIndex<any, { [key: string]: Object | null }>;
     static withOnlyExact(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
     static withOnlyExactOrdered(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
     constructor(arg0: I, arg1: () => S)

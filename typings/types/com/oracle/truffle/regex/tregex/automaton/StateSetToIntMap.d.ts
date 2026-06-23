@@ -2,8 +2,8 @@ import type { AbstractState } from '../../../../../../com/oracle/truffle/regex/t
 import type { AbstractTransition } from '../../../../../../com/oracle/truffle/regex/tregex/automaton/AbstractTransition.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class StateSetToIntMap<S extends AbstractState<S, T>, T extends AbstractTransition<S, T>> extends Object {
-    static create(paramsingleState: Object | null): StateSetToIntMap<Object, Object>;
-    static create(paramstateSet: (Object | null)[]): StateSetToIntMap<Object, Object>;
+    static create(paramsingleState: Object | null): StateSetToIntMap<any, any>;
+    static create(paramstateSet: (Object | null)[]): StateSetToIntMap<any, any>;
     private constructor(keys: number[])
     // private keys: number[];
     // private usedValues: number[];

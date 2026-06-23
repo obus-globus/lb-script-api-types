@@ -1,6 +1,5 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { SlotSource } from '../../../../../../../net/minecraft/world/item/slot/SlotSource.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
@@ -18,7 +17,7 @@ export class SlotLoot extends LootPoolSingletonContainer {
     static DEFAULT_QUALITY: number;
     static DEFAULT_WEIGHT: number;
     static MAP_CODEC: MapCodec<SlotLoot>;
-    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<Object>;
+    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<any>;
     private constructor(slotSource: SlotSource, weight: number, quality: number, conditions: LootItemCondition[], functions: LootItemFunction[])
     // private slotSource: SlotSource;
     codec(): MapCodec<SlotLoot>;

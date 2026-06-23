@@ -7,5 +7,5 @@ export interface BlockPredicate extends BiPredicate<WorldGenLevel, BlockPos>, Ob
     and(arg0: (param0: WorldGenLevel, param1: BlockPos) => boolean): (param0: WorldGenLevel, param1: BlockPos) => boolean;
     negate(): (param0: WorldGenLevel, param1: BlockPos) => boolean;
     or(arg0: (param0: WorldGenLevel, param1: BlockPos) => boolean): (param0: WorldGenLevel, param1: BlockPos) => boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

@@ -7,10 +7,10 @@ import type { HolderLookup$Provider } from '../../../../../net/minecraft/core/Ho
 import type { AdvancementSubProvider } from '../../../../../net/minecraft/data/advancements/AdvancementSubProvider.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class VanillaHusbandryAdvancements extends Object implements AdvancementSubProvider {
-    static BREEDABLE_ANIMALS: EntityType<Object>[];
-    static INDIRECTLY_BREEDABLE_ANIMALS: EntityType<Object>[];
+    static BREEDABLE_ANIMALS: EntityType<any>[];
+    static INDIRECTLY_BREEDABLE_ANIMALS: EntityType<any>[];
     static WAX_SCRAPING_TOOLS: (Object | null)[];
-    static createBreedAllAnimalsAdvancement(paramparent: AdvancementHolder, paramoutput: (param0: AdvancementHolder) => void, paramentityTypes: HolderGetter<EntityType<Object>>, parambreedable: Stream<EntityType<Object>>, paramindirectlyBreedable: Stream<EntityType<Object>>): AdvancementHolder;
+    static createBreedAllAnimalsAdvancement(paramparent: AdvancementHolder, paramoutput: (param0: AdvancementHolder) => void, paramentityTypes: HolderGetter<EntityType<any>>, parambreedable: Stream<EntityType<any>>, paramindirectlyBreedable: Stream<EntityType<any>>): AdvancementHolder;
     static createPlaceholder(paramid: string): AdvancementHolder;
     constructor()
     generate(registries: HolderLookup$Provider, output: (param0: AdvancementHolder) => void): void;

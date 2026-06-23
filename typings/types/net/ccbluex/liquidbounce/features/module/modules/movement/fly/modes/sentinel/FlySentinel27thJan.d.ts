@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
@@ -21,6 +20,6 @@ export class FlySentinel27thJan extends Mode {
     // private horizontalSpeed: ClosedFloatingPointRange<number>;
     // private /*not mapped: */ getHorizontalSpeed(): ClosedFloatingPointRange<number>;
     readonly moveHandler: EventHook<PlayerMoveEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

@@ -14,10 +14,10 @@ import type { DecimalFormatSymbols } from '../../../../../../../org/graalvm/shad
 import type { DisplayOptions } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DisplayOptions.d.ts'
 import type { NumberingSystem } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberingSystem.d.ts'
 import type { MeasureUnit } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/MeasureUnit.d.ts'
-export abstract class NumberFormatterSettings<T extends NumberFormatterSettings<Object>> extends Object {
-    constructor(parent: NumberFormatterSettings<Object>, key: number, value: Object)
+export abstract class NumberFormatterSettings<T extends NumberFormatterSettings<any>> extends Object {
+    constructor(parent: NumberFormatterSettings<any>, key: number, value: Object)
     // private key: number;
-    // private parent: NumberFormatterSettings<Object>;
+    // private parent: NumberFormatterSettings<any>;
     // private resolvedMacros: MacroProps;
     // private value: Object;
     create(key: number, value: Object): T;

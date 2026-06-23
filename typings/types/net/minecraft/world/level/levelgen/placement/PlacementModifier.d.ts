@@ -9,5 +9,5 @@ export abstract class PlacementModifier extends Object {
     static CODEC: Codec<PlacementModifier>;
     constructor()
     getPositions(context: PlacementContext, random: RandomSource, origin: BlockPos): Stream<BlockPos>;
-    type(): PlacementModifierType<Object>;
+    type(): PlacementModifierType<any>;
 }

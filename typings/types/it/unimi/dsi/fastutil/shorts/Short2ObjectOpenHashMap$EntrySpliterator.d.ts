@@ -3,7 +3,7 @@ import type { Short2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil
 import type { Short2ObjectOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Short2ObjectOpenHashMap$EntrySpliterator extends Short2ObjectOpenHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Short2ObjectMap$Entry<V>> {
+export class Short2ObjectOpenHashMap$EntrySpliterator extends Short2ObjectOpenHashMap$MapSpliterator<Object, any> implements ObjectSpliterator<Short2ObjectMap$Entry<V>> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

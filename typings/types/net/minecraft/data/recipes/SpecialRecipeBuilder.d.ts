@@ -6,11 +6,11 @@ import type { RecipeUnlockAdvancementBuilder } from '../../../../net/minecraft/d
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 export class SpecialRecipeBuilder extends Object {
-    static special(paramfactory: () => Recipe<Object>): SpecialRecipeBuilder;
-    constructor(factory: () => Recipe<Object>)
+    static special(paramfactory: () => Recipe<any>): SpecialRecipeBuilder;
+    constructor(factory: () => Recipe<any>)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;
-    // private factory: () => Recipe<Object>;
+    // private factory: () => Recipe<any>;
     save(output: RecipeOutput, name: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlockedBy(name: string, criterion: Criterion<Object>): SpecialRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlockedBy(name: string, criterion: Criterion<any>): SpecialRecipeBuilder;
 }

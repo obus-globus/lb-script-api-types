@@ -39,13 +39,13 @@ export class EntityType$Builder<T extends Entity> extends Object implements Fabr
     // private canSpawnFarFromPlayer: boolean;
     // private category: MobCategory;
     // private clientTrackingRange: number;
-    // private descriptionId: (param0: ResourceKey<EntityType<Object>>) => string;
+    // private descriptionId: (param0: ResourceKey<EntityType<any>>) => string;
     // private dimensions: EntityDimensions;
     // private factory: (param0: EntityType<T>, param1: Level) => T;
     // private fireImmune: boolean;
     // private immuneTo: Block[];
     // private livingBuilder: FabricEntityTypeImpl$Builder$Living<LivingEntity>;
-    // private lootTable: (param0: ResourceKey<EntityType<Object>>) => Optional<ResourceKey<LootTable>>;
+    // private lootTable: (param0: ResourceKey<EntityType<any>>) => Optional<ResourceKey<LootTable>>;
     // private mobBuilder: FabricEntityTypeImpl$Builder$Mob<Mob>;
     // private requiredFeatures: FeatureFlagSet;
     // private serialize: boolean;
@@ -56,7 +56,7 @@ export class EntityType$Builder<T extends Entity> extends Object implements Fabr
     alwaysUpdateVelocity(arg0: boolean): EntityType$Builder<Entity>;
     attach(attachment: EntityAttachment, x: number, y: number, z: number): EntityType$Builder<T>;
     attach(attachment: EntityAttachment, point: Vec3): EntityType$Builder<T>;
-    build(name: ResourceKey<EntityType<Object>>): EntityType<T>;
+    build(name: ResourceKey<EntityType<any>>): EntityType<T>;
     canPotentiallyExecuteCommands(arg0: boolean): EntityType$Builder<T>;
     canPotentiallyExecuteCommands(arg0: boolean): EntityType$Builder<Entity>;
     canSpawnFarFromPlayer(): EntityType$Builder<T>;

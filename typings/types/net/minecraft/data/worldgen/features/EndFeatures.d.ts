@@ -3,12 +3,12 @@ import type { BootstrapContext } from '../../../../../net/minecraft/data/worldge
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ConfiguredFeature } from '../../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 export class EndFeatures extends Object {
-    static CHORUS_PLANT: ResourceKey<ConfiguredFeature<Object, Object>>;
-    static END_GATEWAY_DELAYED: ResourceKey<ConfiguredFeature<Object, Object>>;
-    static END_GATEWAY_RETURN: ResourceKey<ConfiguredFeature<Object, Object>>;
-    static END_ISLAND: ResourceKey<ConfiguredFeature<Object, Object>>;
-    static END_PLATFORM: ResourceKey<ConfiguredFeature<Object, Object>>;
-    static END_SPIKE: ResourceKey<ConfiguredFeature<Object, Object>>;
-    static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<Object, Object>>): void;
+    static CHORUS_PLANT: ResourceKey<ConfiguredFeature<any, any>>;
+    static END_GATEWAY_DELAYED: ResourceKey<ConfiguredFeature<any, any>>;
+    static END_GATEWAY_RETURN: ResourceKey<ConfiguredFeature<any, any>>;
+    static END_ISLAND: ResourceKey<ConfiguredFeature<any, any>>;
+    static END_PLATFORM: ResourceKey<ConfiguredFeature<any, any>>;
+    static END_SPIKE: ResourceKey<ConfiguredFeature<any, any>>;
+    static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>): void;
     constructor()
 }

@@ -6,7 +6,7 @@ import type { NumberRangeFormatterImpl } from '../../../../../../../org/graalvm/
 import type { NumberRangeFormatterSettings } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/NumberRangeFormatterSettings.d.ts'
 import type { UnlocalizedNumberRangeFormatter } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/UnlocalizedNumberRangeFormatter.d.ts'
 export class LocalizedNumberRangeFormatter extends NumberRangeFormatterSettings<LocalizedNumberRangeFormatter> {
-    constructor(parent: NumberRangeFormatterSettings<Object>, key: number, value: Object)
+    constructor(parent: NumberRangeFormatterSettings<any>, key: number, value: Object)
     // private fImpl: NumberRangeFormatterImpl;
     create(key: number, value: Object): LocalizedNumberRangeFormatter;
     formatImpl(first: DecimalQuantity, second: DecimalQuantity, equalBeforeRounding: boolean): FormattedNumberRange;

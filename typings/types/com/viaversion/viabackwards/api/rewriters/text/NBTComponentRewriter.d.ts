@@ -6,11 +6,10 @@ import type { UserConnection } from '../../../../../../com/viaversion/viaversion
 import type { ClientboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { JsonObject } from '../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { NBTComponentRewriter as NBTComponentRewriter_2 } from '../../../../../../com/viaversion/viaversion/rewriter/text/NBTComponentRewriter.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class NBTComponentRewriter<C extends ClientboundPacketType> extends NBTComponentRewriter_2<C> implements TranslatableRewriter {
-    constructor(arg0: BackwardsProtocol<C, Object, Object, Object>)
-    constructor(arg0: BackwardsProtocol<C, Object, Object, Object>, arg1: string)
+    constructor(arg0: BackwardsProtocol<C, any, any, any>)
+    constructor(arg0: BackwardsProtocol<C, any, any, any>, arg1: string)
     // private translatables: { [key: string]: string };
     handleTranslate(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: StringTag): void;
     handleTranslate(arg0: JsonObject, arg1: string): void;

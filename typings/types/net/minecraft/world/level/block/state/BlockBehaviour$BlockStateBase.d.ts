@@ -60,7 +60,7 @@ import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shap
 export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, BlockState> implements BlockStateFlagHolder, OxidizableBlocksRegistryImpl$RandomTickCacheRefresher, TypedInstance<Block> {
     static NAME_TAG: string;
     static PROPERTIES_TAG: string;
-    constructor(owner: Block, propertyKeys: Property<Object>[], propertyValues: Comparable<Object>[])
+    constructor(owner: Block, propertyKeys: Property<any>[], propertyValues: Comparable<Object>[])
     // private cache: BlockBehaviour$BlockStateBase$Cache;
     // private canOcclude: boolean;
     // private destroySpeed: number;
@@ -162,7 +162,7 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     isSolid(): boolean;
     isSolidRender(): boolean;
     isSuffocating(level: BlockGetter, pos: BlockPos): boolean;
-    isValidSpawn(level: BlockGetter, pos: BlockPos, type: EntityType<Object>): boolean;
+    isValidSpawn(level: BlockGetter, pos: BlockPos, type: EntityType<any>): boolean;
     isViewBlocking(level: BlockGetter, pos: BlockPos): boolean;
     liquid(): boolean;
     lithium$getAllFlags(): number;

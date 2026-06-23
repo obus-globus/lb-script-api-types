@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -120,5 +119,5 @@ export class MonsterRoomFeature extends Feature<NoneFeatureConfiguration> {
     constructor(codec: Codec<NoneFeatureConfiguration>)
     place(context: FeaturePlaceContext<NoneFeatureConfiguration>): boolean;
     place(config: NoneFeatureConfiguration, level: WorldGenLevel, chunkGenerator: ChunkGenerator, random: RandomSource, origin: BlockPos): boolean;
-    // private randomEntityId(random: RandomSource): EntityType<Object>;
+    // private randomEntityId(random: RandomSource): EntityType<any>;
 }

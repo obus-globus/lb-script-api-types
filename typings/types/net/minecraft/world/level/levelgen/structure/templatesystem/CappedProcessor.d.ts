@@ -1,5 +1,4 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { IntProvider } from '../../../../../../../net/minecraft/util/valueproviders/IntProvider.d.ts'
 import type { ServerLevelAccessor } from '../../../../../../../net/minecraft/world/level/ServerLevelAccessor.d.ts'
@@ -13,5 +12,5 @@ export class CappedProcessor extends StructureProcessor {
     // private delegate: StructureProcessor;
     // private limit: IntProvider;
     finalizeProcessing(level: ServerLevelAccessor, position: BlockPos, referencePos: BlockPos, originalBlockInfoList: StructureTemplate$StructureBlockInfo[], processedBlockInfoList: StructureTemplate$StructureBlockInfo[], settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo[];
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
 }

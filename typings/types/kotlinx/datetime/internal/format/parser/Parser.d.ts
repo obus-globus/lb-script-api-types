@@ -4,7 +4,7 @@ import type { Copyable } from '../../../../../kotlinx/datetime/internal/format/p
 import type { ParseError } from '../../../../../kotlinx/datetime/internal/format/parser/ParseError.d.ts'
 import type { ParserStructure } from '../../../../../kotlinx/datetime/internal/format/parser/ParserStructure.d.ts'
 export class Parser<Output extends Copyable<Output>> extends Object {
-// (invalid TS: name contains '-')     static box-impl(paramarg0: ParserStructure<Object>): Parser<Object>;
+// (invalid TS: name contains '-')     static box-impl(paramarg0: ParserStructure<Object>): Parser<any>;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: ParserStructure<Object>): ParserStructure<Object>;
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: ParserStructure<Object>, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: ParserStructure<Object>, paramarg1: ParserStructure<Object>): boolean;

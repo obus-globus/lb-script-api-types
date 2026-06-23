@@ -13,7 +13,7 @@ import type { AFSelector$PollFd } from '../../../../org/newsclub/net/unix/AFSele
 import type { AFSelectorProvider } from '../../../../org/newsclub/net/unix/AFSelectorProvider.d.ts'
 export class AFSelector extends AbstractSelector {
     static open(): Selector;
-    constructor(arg0: AFSelectorProvider<Object>)
+    constructor(arg0: AFSelectorProvider<any>)
     // private keysRegistered: Map<AFSelectionKey, number>;
     // private keysRegisteredKeySet: AFSelectionKey[];
     // private keysRegisteredPublic: SelectionKey[];

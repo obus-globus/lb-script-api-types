@@ -15,7 +15,7 @@ export class ClientConfigurationNetworkAddon extends ClientCommonNetworkAddon<(p
     // private context: ClientConfigurationNetworkAddon$ContextImpl;
     // private hasStarted: boolean;
     // private sentInitialRegisterPacket: boolean;
-    createPacket(arg0: CustomPacketPayload): Packet<Object>;
+    createPacket(arg0: CustomPacketPayload): Packet<any>;
     getChannelInfoHolder(): ChannelInfoHolder;
     handle(arg0: CustomPacketPayload): boolean;
     handleComplete(): void;

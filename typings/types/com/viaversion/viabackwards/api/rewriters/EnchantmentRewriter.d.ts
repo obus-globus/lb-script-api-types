@@ -6,10 +6,10 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class EnchantmentRewriter extends Object {
     static ENCHANTMENT_LEVEL_TRANSLATION: string;
     static getRomanNumber(paramarg0: number): string;
-    constructor(arg0: BackwardsItemRewriter<Object, Object, Object>)
-    constructor(arg0: BackwardsItemRewriter<Object, Object, Object>, arg1: boolean)
+    constructor(arg0: BackwardsItemRewriter<any, any, any>)
+    constructor(arg0: BackwardsItemRewriter<any, any, any>, arg1: boolean)
     // private enchantmentMappings: { [key: string]: string };
-    // private itemRewriter: BackwardsItemRewriter<Object, Object, Object>;
+    // private itemRewriter: BackwardsItemRewriter<any, any, any>;
     // private jsonFormat: boolean;
     handleToClient(arg0: Item): void;
     handleToServer(arg0: Item): void;

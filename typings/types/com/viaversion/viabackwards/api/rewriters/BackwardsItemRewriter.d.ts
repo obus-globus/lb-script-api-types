@@ -5,8 +5,7 @@ import type { Item } from '../../../../../com/viaversion/viaversion/api/minecraf
 import type { ClientboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { ServerboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class BackwardsItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, Object, Object, S>> extends BackwardsItemRewriterBase<C, S, T> {
+export class BackwardsItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, any, any, S>> extends BackwardsItemRewriterBase<C, S, T> {
     constructor(arg0: T, arg1: Type<Item>, arg2: Type<Item[]>)
     constructor(arg0: T, arg1: Type<Item>, arg2: Type<Item[]>, arg3: Type<Item>, arg4: Type<Item[]>)
     handleItemToClient(arg0: UserConnection, arg1: Item): Item;

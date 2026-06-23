@@ -35,13 +35,13 @@ export abstract class AbstractContainerMenu extends Object implements IAbstractC
     static getRedstoneSignalFromBlockEntity(paramblockEntity: BlockEntity): number;
     static getRedstoneSignalFromContainer(paramcontainer: ItemStack[]): number;
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
-    constructor(menuType: MenuType<Object>, containerId: number)
+    constructor(menuType: MenuType<any>, containerId: number)
     readonly carried: ItemStack;
     containerId: number;
     // private containerListeners: ContainerListener[];
     // private dataSlots: DataSlot[];
     // private lastSlots: ItemStack[];
-    // private menuType: MenuType<Object>;
+    // private menuType: MenuType<any>;
     // private quickcraftSlots: Slot[];
     // private quickcraftStatus: number;
     // private quickcraftType: number;
@@ -74,7 +74,7 @@ export abstract class AbstractContainerMenu extends Object implements IAbstractC
     getItems(): ItemStack[];
     getSlot(index: number): Slot;
     getStateId(): number;
-    getType(): MenuType<Object>;
+    getType(): MenuType<any>;
     incrementStateId(): number;
     initializeContents(stateId: number, items: ItemStack[], carried: ItemStack): void;
     isValidSlotIndex(slotIndex: number): boolean;

@@ -10,5 +10,5 @@ export class Clear extends Object implements RuleBlockEntityModifier {
     static CODEC: MapCodec<Clear>;
     constructor()
     apply(random: RandomSource, existingTag: CompoundTag): CompoundTag;
-    getType(): RuleBlockEntityModifierType<Object>;
+    getType(): RuleBlockEntityModifierType<any>;
 }

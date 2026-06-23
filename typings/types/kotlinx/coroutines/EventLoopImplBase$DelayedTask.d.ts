@@ -9,7 +9,7 @@ import type { ThreadSafeHeapNode } from '../../kotlinx/coroutines/internal/Threa
 export abstract class EventLoopImplBase$DelayedTask extends Object implements Runnable, Comparable<EventLoopImplBase$DelayedTask>, DisposableHandle, ThreadSafeHeapNode {
     constructor(nanoTime: number)
     // private _heap: Object | null;
-    heap: ThreadSafeHeap<Object> | null;
+    heap: ThreadSafeHeap<any> | null;
     index: number;
     nanoTime: number;
     compareTo(other: EventLoopImplBase$DelayedTask): number;

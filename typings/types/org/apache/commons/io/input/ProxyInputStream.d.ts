@@ -8,8 +8,8 @@ import type { ProxyInputStream$AbstractBuilder } from '../../../../../org/apache
 export abstract class ProxyInputStream extends FilterInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    constructor(arg0: InputStream, arg1: ProxyInputStream$AbstractBuilder<Object, Object>)
-    constructor(arg0: ProxyInputStream$AbstractBuilder<Object, Object>)
+    constructor(arg0: InputStream, arg1: ProxyInputStream$AbstractBuilder<Object, any>)
+    constructor(arg0: ProxyInputStream$AbstractBuilder<Object, any>)
     // private afterRead: (param0: number) => void;
     // private closed: boolean;
     // private exceptionHandler: (param0: IOException) => void;

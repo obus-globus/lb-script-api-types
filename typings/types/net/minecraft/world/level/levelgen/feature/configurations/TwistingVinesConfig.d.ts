@@ -13,7 +13,7 @@ export class TwistingVinesConfig extends Record implements FeatureConfiguration 
     // private spreadHeight: number;
     // private spreadWidth: number;
     equals(o: Object | null): boolean;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     maxHeight(): number;
     spreadHeight(): number;

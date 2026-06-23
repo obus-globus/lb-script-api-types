@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeAttribute } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeAttribute.d.ts'
@@ -13,11 +12,11 @@ export class SimpleTypeImpl extends SimpleType {
     readonly memberScope: MemberScope;
     // private refinedTypeFactory: (param0: KotlinTypeRefiner) => SimpleType;
     getArguments(): TypeProjection[];
-    getAttributes(): TypeAttribute<Object>[];
+    getAttributes(): TypeAttribute<any>[];
     getConstructor(): TypeConstructor;
     getMemberScope(): MemberScope;
     isMarkedNullable(): boolean;
     makeNullableAsSpecified(arg0: boolean): SimpleType;
     refine(arg0: KotlinTypeRefiner): SimpleType;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): SimpleType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): SimpleType;
 }

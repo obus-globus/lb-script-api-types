@@ -8,9 +8,9 @@ import type { MobEffectInstance } from '../../../../../../net/minecraft/world/ef
 export class EffectsInInventory extends Object {
     static SPACING: number;
     static SPRITE_SQUARE_SIZE: number;
-    constructor(screen: AbstractContainerScreen<Object>)
+    constructor(screen: AbstractContainerScreen<any>)
     // private minecraft: Minecraft;
-    // private screen: AbstractContainerScreen<Object>;
+    // private screen: AbstractContainerScreen<any>;
     canSeeEffects(): boolean;
     // private extractBackground(graphics: GuiGraphicsExtractor, font: Font, effectName: Component, duration: Component, x0: number, y0: number, isAmbient: boolean, maxTextureWidth: number): number;
     // private extractEffects(graphics: GuiGraphicsExtractor, activeEffects: MobEffectInstance[], x0: number, yStep: number, mouseX: number, mouseY: number, maxWidth: number): void;

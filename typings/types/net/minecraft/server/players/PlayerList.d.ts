@@ -61,9 +61,9 @@ export abstract class PlayerList extends Object {
     readonly viewDistance: number;
     // private whitelist: UserWhiteList;
     addWorldborderListener(level: ServerLevel): void;
-    broadcast(except: Player, x: number, y: number, z: number, range: number, dimension: ResourceKey<Level>, packet: Packet<Object>): void;
-    broadcastAll(packet: Packet<Object>): void;
-    broadcastAll(packet: Packet<Object>, dimension: ResourceKey<Level>): void;
+    broadcast(except: Player, x: number, y: number, z: number, range: number, dimension: ResourceKey<Level>, packet: Packet<any>): void;
+    broadcastAll(packet: Packet<any>): void;
+    broadcastAll(packet: Packet<any>, dimension: ResourceKey<Level>): void;
     // private broadcastChatMessage(message: PlayerChatMessage, isFiltered: (param0: ServerPlayer) => boolean, senderPlayer: ServerPlayer, chatType: ChatType$Bound): void;
     broadcastChatMessage(message: PlayerChatMessage, sender: CommandSourceStack, chatType: ChatType$Bound): void;
     broadcastChatMessage(message: PlayerChatMessage, sender: ServerPlayer, chatType: ChatType$Bound): void;

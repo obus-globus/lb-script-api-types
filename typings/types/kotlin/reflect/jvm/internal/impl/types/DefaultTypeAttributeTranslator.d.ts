@@ -7,5 +7,5 @@ import type { TypeConstructor } from '../../../../../../kotlin/reflect/jvm/inter
 export class DefaultTypeAttributeTranslator extends Object implements TypeAttributeTranslator {
     static INSTANCE: DefaultTypeAttributeTranslator;
     private constructor()
-    toAttributes(arg0: AnnotationDescriptor[], arg1: TypeConstructor, arg2: DeclarationDescriptor): TypeAttribute<Object>[];
+    toAttributes(arg0: AnnotationDescriptor[], arg1: TypeConstructor, arg2: DeclarationDescriptor): TypeAttribute<any>[];
 }

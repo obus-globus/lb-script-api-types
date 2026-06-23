@@ -6,8 +6,8 @@ import type { ClosedRange } from '../../kotlin/ranges/ClosedRange.d.ts'
 import type { OpenEndRange } from '../../kotlin/ranges/OpenEndRange.d.ts'
 import type { RangesKt__RangesKt } from '../../kotlin/ranges/RangesKt__RangesKt.d.ts'
 export class RangesKt___RangesKt extends RangesKt__RangesKt {
-    static byteRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static byteRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
+    static byteRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static byteRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
     static byteRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static byteRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static byteRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
@@ -30,8 +30,8 @@ export class RangesKt___RangesKt extends RangesKt__RangesKt {
     static coerceAtMost(paramarg0: number, paramarg1: number): number;
     static coerceAtMost(paramarg0: number, paramarg1: number): number;
     static coerceIn(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null): Object | null;
-    static coerceIn(paramarg0: Object | null, paramarg1: ClosedFloatingPointRange<Object>): Object | null;
-    static coerceIn(paramarg0: Object | null, paramarg1: ClosedRange<Object>): Object | null;
+    static coerceIn(paramarg0: Object | null, paramarg1: ClosedFloatingPointRange<any>): Object | null;
+    static coerceIn(paramarg0: Object | null, paramarg1: ClosedRange<any>): Object | null;
     static coerceIn(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static coerceIn(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static coerceIn(paramarg0: number, paramarg1: number, paramarg2: number): number;
@@ -40,10 +40,10 @@ export class RangesKt___RangesKt extends RangesKt__RangesKt {
     static coerceIn(paramarg0: number, paramarg1: ClosedRange<number>): number;
     static coerceIn(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static coerceIn(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static doubleRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static doubleRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static doubleRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static doubleRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
+    static doubleRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static doubleRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static doubleRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static doubleRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
     static doubleRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static doubleRangeContains(paramarg0: OpenEndRange<number>, paramarg1: number): boolean;
     static downTo(paramarg0: string, paramarg1: string): { first: string; last: string; step: number };
@@ -69,13 +69,13 @@ export class RangesKt___RangesKt extends RangesKt__RangesKt {
     static firstOrNull(paramarg0: { first: string; last: string; step: number }): string;
     static firstOrNull(paramarg0: { first: number; last: number; step: number }): number;
     static firstOrNull(paramarg0: { first: number; last: number; step: number }): number;
-    static floatRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static floatRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static floatRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static floatRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
+    static floatRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static floatRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static floatRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static floatRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
     static floatRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
-    static intRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static intRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
+    static intRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static intRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
     static intRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static intRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static intRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
@@ -88,8 +88,8 @@ export class RangesKt___RangesKt extends RangesKt__RangesKt {
     static lastOrNull(paramarg0: { first: string; last: string; step: number }): string;
     static lastOrNull(paramarg0: { first: number; last: number; step: number }): number;
     static lastOrNull(paramarg0: { first: number; last: number; step: number }): number;
-    static longRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static longRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
+    static longRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static longRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
     static longRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static longRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static longRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
@@ -102,17 +102,17 @@ export class RangesKt___RangesKt extends RangesKt__RangesKt {
     static randomOrNull(paramarg0: { start: string; endInclusive: string; step: number }, paramarg1: Random): string;
     static randomOrNull(paramarg0: { start: number; endInclusive: number; step: number }, paramarg1: Random): number;
     static randomOrNull(paramarg0: { start: number; endInclusive: number; step: number }, paramarg1: Random): number;
-    static rangeTo(paramarg0: Object | null, paramarg1: Object | null): ClosedRange<Object>;
+    static rangeTo(paramarg0: Object | null, paramarg1: Object | null): ClosedRange<any>;
     static rangeTo(paramarg0: number, paramarg1: number): ClosedFloatingPointRange<number>;
     static rangeTo(paramarg0: number, paramarg1: number): ClosedFloatingPointRange<number>;
-    static rangeUntil(paramarg0: Object | null, paramarg1: Object | null): OpenEndRange<Object>;
+    static rangeUntil(paramarg0: Object | null, paramarg1: Object | null): OpenEndRange<any>;
     static rangeUntil(paramarg0: number, paramarg1: number): OpenEndRange<number>;
     static rangeUntil(paramarg0: number, paramarg1: number): OpenEndRange<number>;
     static reversed(paramarg0: { first: string; last: string; step: number }): { first: string; last: string; step: number };
     static reversed(paramarg0: { first: number; last: number; step: number }): { first: number; last: number; step: number };
     static reversed(paramarg0: { first: number; last: number; step: number }): { first: number; last: number; step: number };
-    static shortRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
-    static shortRangeContains(paramarg0: ClosedRange<Object>, paramarg1: number): boolean;
+    static shortRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
+    static shortRangeContains(paramarg0: ClosedRange<any>, paramarg1: number): boolean;
     static shortRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static shortRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;
     static shortRangeContains(paramarg0: ClosedRange<number>, paramarg1: number): boolean;

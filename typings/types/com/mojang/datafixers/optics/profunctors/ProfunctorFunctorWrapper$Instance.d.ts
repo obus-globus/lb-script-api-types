@@ -13,9 +13,9 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ProfunctorFunctorWrapper$Instance<P extends K2, F extends K1, G extends K1> extends Object implements App<ProfunctorFunctorWrapper$Instance$Mu, ProfunctorFunctorWrapper$Mu<P, F, G>>, Profunctor<ProfunctorFunctorWrapper$Mu<P, F, G>, ProfunctorFunctorWrapper$Instance$Mu> {
     static unbox(paramarg0: App<Profunctor$Mu, K2>): Profunctor<K2, Profunctor$Mu>;
-    constructor(arg0: App<Profunctor$Mu, P>, arg1: Functor<F, Object>, arg2: Functor<G, Object>)
-    // private fFunctor: Functor<F, Object>;
-    // private gFunctor: Functor<G, Object>;
+    constructor(arg0: App<Profunctor$Mu, P>, arg1: Functor<F, any>, arg2: Functor<G, any>)
+    // private fFunctor: Functor<F, any>;
+    // private gFunctor: Functor<G, any>;
     // private profunctor: Profunctor<P, Profunctor$Mu>;
     dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<ProfunctorFunctorWrapper$Mu<P, F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ProfunctorFunctorWrapper$Mu<P, F, G>, C, D>;
     dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<ProfunctorFunctorWrapper$Mu<P, F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<ProfunctorFunctorWrapper$Mu<P, F, G>, C, D>;

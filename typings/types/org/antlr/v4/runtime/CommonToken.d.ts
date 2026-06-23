@@ -46,5 +46,5 @@ export class CommonToken extends Object implements Serializable, WritableToken {
     setTokenIndex(arg0: number): void;
     setType(arg0: number): void;
     toString(): string;
-    toString(arg0: Recognizer<Object, Object>): string;
+    toString(arg0: Recognizer<Object, any>): string;
 }

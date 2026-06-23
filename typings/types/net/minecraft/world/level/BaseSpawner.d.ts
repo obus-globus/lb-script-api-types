@@ -36,6 +36,6 @@ export abstract class BaseSpawner extends Object {
     onEventTriggered(level: Level, id: number): boolean;
     save(output: ValueOutput): void;
     serverTick(level: ServerLevel, pos: BlockPos): void;
-    setEntityId(type: EntityType<Object>, level: Level, random: RandomSource, pos: BlockPos): void;
+    setEntityId(type: EntityType<any>, level: Level, random: RandomSource, pos: BlockPos): void;
     setNextSpawnData(level: Level, pos: BlockPos, nextSpawnData: SpawnData): void;
 }

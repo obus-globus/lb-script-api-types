@@ -62,7 +62,7 @@ export class Interaction extends Entity implements Attackable, Targeting {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     // private attack: Interaction$PlayerAction;
     // private interaction: Interaction$PlayerAction;
     addAdditionalSaveData(output: ValueOutput): void;

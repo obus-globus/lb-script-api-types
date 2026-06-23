@@ -16,7 +16,7 @@ import type { GameRules$VisitorCaller } from '../../../../../../net/minecraft/wo
 export class GameRuleBuilder<T extends Object | number | string | boolean> extends Object {
     static forBoolean(paramarg0: boolean): GameRuleBuilder$BooleanRuleBuilder;
     static forDouble(paramarg0: number): GameRuleBuilder$DoubleRuleBuilder;
-    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<Object>;
+    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<any>;
     static forInteger(paramarg0: number): GameRuleBuilder$IntegerRuleBuilder;
     constructor(arg0: T)
     // private acceptor: GameRules$VisitorCaller<T>;

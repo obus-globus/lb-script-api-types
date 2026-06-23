@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DescriptorRenderer } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer.d.ts'
 import type { DescriptorRendererOptions } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererOptions.d.ts'
 import type { FlexibleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/FlexibleType.d.ts'
@@ -18,6 +17,6 @@ export class FlexibleTypeWithEnhancement extends FlexibleType implements TypeWit
     makeNullableAsSpecified(arg0: boolean): UnwrappedType;
     refine(arg0: KotlinTypeRefiner): FlexibleTypeWithEnhancement;
     render(arg0: DescriptorRenderer, arg1: DescriptorRendererOptions): string;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): UnwrappedType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): UnwrappedType;
     toString(): string;
 }

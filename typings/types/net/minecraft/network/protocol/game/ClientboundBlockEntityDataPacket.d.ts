@@ -18,12 +18,12 @@ export class ClientboundBlockEntityDataPacket extends Object implements Packet<C
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static create(paramblockEntity: BlockEntity): ClientboundBlockEntityDataPacket;
     static create(paramblockEntity: BlockEntity, paramupdateTagSaver: (param0: BlockEntity, param1: RegistryAccess) => CompoundTag): ClientboundBlockEntityDataPacket;
-    private constructor(pos: BlockPos, type: BlockEntityType<Object>, tag: CompoundTag)
+    private constructor(pos: BlockPos, type: BlockEntityType<any>, tag: CompoundTag)
     readonly pos: BlockPos;
     readonly tag: CompoundTag;
     getPos(): BlockPos;
     getTag(): CompoundTag;
-    getType(): BlockEntityType<Object>;
+    getType(): BlockEntityType<any>;
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;

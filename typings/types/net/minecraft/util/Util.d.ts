@@ -84,7 +84,7 @@ export class Util extends Object {
     static getMillis(): number;
     static getNanos(): number;
     static getPlatform(): Util$OS;
-    static getPropertyName(paramkey: Property<Object>, paramvalue: Object): string;
+    static getPropertyName(paramkey: Property<any>, paramvalue: Object): string;
     static getRandom(paramarray: Object | null, paramrandom: RandomSource): Object | null;
     static getRandom(paramlist: (Object | null)[], paramrandom: RandomSource): Object | null;
     static getRandom(paramarray: number[], paramrandom: RandomSource): number;

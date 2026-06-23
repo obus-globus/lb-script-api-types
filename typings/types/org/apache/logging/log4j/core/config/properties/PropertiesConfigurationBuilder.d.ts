@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { ConfigurationSource } from '../../../../../../../org/apache/logging/log4j/core/config/ConfigurationSource.d.ts'
 import type { AppenderComponentBuilder } from '../../../../../../../org/apache/logging/log4j/core/config/builder/api/AppenderComponentBuilder.d.ts'
@@ -25,8 +24,8 @@ export class PropertiesConfigurationBuilder extends ConfigurationBuilderFactory 
     // private builder: ConfigurationBuilder<PropertiesConfiguration>;
     readonly loggerContext: LoggerContext;
     // private rootProperties: { [key: string]: any };
-    // private addFiltersToComponent<B extends FilterableComponentBuilder<ComponentBuilder<Object>>>(componentBuilder: B, properties: { [key: string]: any }): B;
-    // private addLoggersToComponent<B extends LoggableComponentBuilder<ComponentBuilder<Object>>>(loggerBuilder: B, properties: { [key: string]: any }): B;
+    // private addFiltersToComponent<B extends FilterableComponentBuilder<ComponentBuilder<any>>>(componentBuilder: B, properties: { [key: string]: any }): B;
+    // private addLoggersToComponent<B extends LoggableComponentBuilder<ComponentBuilder<any>>>(loggerBuilder: B, properties: { [key: string]: any }): B;
     build(): PropertiesConfiguration;
     // private createAppender(key: string, properties: { [key: string]: any }): AppenderComponentBuilder;
     // private createAppenderRef(key: string, properties: { [key: string]: any }): AppenderRefComponentBuilder;

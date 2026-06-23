@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -27,7 +26,7 @@ export class FlySentinel20thApr extends Mode {
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     // private nostalgia: boolean;
     // private /*not mapped: */ getNostalgia(): boolean;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private reboostTicks: number;
     // private /*not mapped: */ getReboostTicks(): number;
     readonly repeatable: EventHook<GameTickEvent>;

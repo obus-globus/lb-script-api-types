@@ -14,7 +14,7 @@ export class TagRegistration<T extends Object | number | string | boolean> exten
     static BIOME_TAG: TagRegistration<Biome>;
     static BLOCK_TAG: TagRegistration<Block>;
     static ENCHANTMENT_TAG: TagRegistration<Enchantment>;
-    static ENTITY_TYPE_TAG: TagRegistration<EntityType<Object>>;
+    static ENTITY_TYPE_TAG: TagRegistration<EntityType<any>>;
     static FLUID_TAG: TagRegistration<Fluid>;
     static ITEM_TAG: TagRegistration<Item>;
     static POTION_TAG: TagRegistration<Potion>;

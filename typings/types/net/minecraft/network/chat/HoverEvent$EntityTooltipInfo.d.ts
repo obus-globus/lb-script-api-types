@@ -6,11 +6,11 @@ import type { Component } from '../../../../net/minecraft/network/chat/Component
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class HoverEvent$EntityTooltipInfo extends Object {
     static CODEC: MapCodec<HoverEvent$EntityTooltipInfo>;
-    constructor(type: EntityType<Object>, uuid: UUID, name: Optional<Component>)
-    constructor(type: EntityType<Object>, uuid: UUID, name: Component)
+    constructor(type: EntityType<any>, uuid: UUID, name: Optional<Component>)
+    constructor(type: EntityType<any>, uuid: UUID, name: Component)
     // private linesCache: Component[];
     name: Optional<Component>;
-    type: EntityType<Object>;
+    type: EntityType<any>;
     uuid: UUID;
     equals(o: Object | null): boolean;
     getTooltipLines(): Component[];

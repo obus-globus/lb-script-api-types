@@ -7,10 +7,9 @@ import type { Record } from '../../../../ai/djl/training/dataset/Record.d.ts'
 import type { Sampler } from '../../../../ai/djl/training/dataset/Sampler.d.ts'
 import type { Progress } from '../../../../ai/djl/util/Progress.d.ts'
 import type { ExecutorService } from '../../../../java/util/concurrent/ExecutorService.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ArrayDataset extends RandomAccessDataset {
     constructor()
-    constructor(arg0: RandomAccessDataset$BaseBuilder<Object>)
+    constructor(arg0: RandomAccessDataset$BaseBuilder<any>)
     // private data: NDArray[];
     // private labels: NDArray[];
     availableSize(): number;

@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { Mode } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
@@ -10,7 +9,7 @@ export class ModuleMiddleClickAction$Pearl extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleMiddleClickAction$Pearl;
     // private handler: EventHook<WorldChangeEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private slotResetDelay: number;
     // private /*not mapped: */ getSlotResetDelay(): number;

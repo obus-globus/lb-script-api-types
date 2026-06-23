@@ -13,19 +13,19 @@ import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recip
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
 export class RecipeCraftedTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<RecipeCraftedTrigger$TriggerInstance>;
-    static craftedItem(paramrecipeId: ResourceKey<Recipe<Object>>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
-    static craftedItem(paramrecipeId: ResourceKey<Recipe<Object>>, parampredicates: ItemPredicate$Builder[]): Criterion<RecipeCraftedTrigger$TriggerInstance>;
-    static crafterCraftedItem(paramrecipeId: ResourceKey<Recipe<Object>>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
-    constructor(player: Optional<ContextAwarePredicate>, recipeId: ResourceKey<Recipe<Object>>, ingredients: ItemPredicate[])
+    static craftedItem(paramrecipeId: ResourceKey<Recipe<any>>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
+    static craftedItem(paramrecipeId: ResourceKey<Recipe<any>>, parampredicates: ItemPredicate$Builder[]): Criterion<RecipeCraftedTrigger$TriggerInstance>;
+    static crafterCraftedItem(paramrecipeId: ResourceKey<Recipe<any>>): Criterion<RecipeCraftedTrigger$TriggerInstance>;
+    constructor(player: Optional<ContextAwarePredicate>, recipeId: ResourceKey<Recipe<any>>, ingredients: ItemPredicate[])
     // private ingredients: ItemPredicate[];
     // private player: Optional<ContextAwarePredicate>;
-    // private recipeId: ResourceKey<Recipe<Object>>;
+    // private recipeId: ResourceKey<Recipe<any>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     ingredients(): ItemPredicate[];
-    // private matches(id: ResourceKey<Recipe<Object>>, usedIngredients: ItemStack[]): boolean;
+    // private matches(id: ResourceKey<Recipe<any>>, usedIngredients: ItemStack[]): boolean;
     player(): Optional<ContextAwarePredicate>;
-    recipeId(): ResourceKey<Recipe<Object>>;
+    recipeId(): ResourceKey<Recipe<any>>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
 }

@@ -15,7 +15,7 @@ export class EntityData extends Record implements Copyable, Rewritable {
     copy(): EntityData;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): EntityData;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): EntityData;
     tag(): Map$Entry<string, Tag>[];
     toString(): string;
     type(): number;

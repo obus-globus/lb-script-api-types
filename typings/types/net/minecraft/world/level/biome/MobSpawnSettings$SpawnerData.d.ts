@@ -6,11 +6,11 @@ export class MobSpawnSettings$SpawnerData extends Record {
     static CODEC: MapCodec<MobSpawnSettings$SpawnerData>;
     // private maxCount: number;
     // private minCount: number;
-    // private type: EntityType<Object>;
+    // private type: EntityType<any>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     maxCount(): number;
     minCount(): number;
     toString(): string;
-    type(): EntityType<Object>;
+    type(): EntityType<any>;
 }

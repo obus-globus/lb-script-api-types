@@ -24,7 +24,7 @@ import type { LootItemCondition$Builder } from '../../../../net/minecraft/world/
 import type { NumberProvider } from '../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export abstract class BlockLootSubProvider extends Object implements FabricBlockLootSubProvider, BlockLootSubProviderAccessor, LootTableSubProvider {
     static createCandleCakeDrops(paramcandle: Block): LootTable$Builder;
-    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;
     static noDrop(): LootTable$Builder;
     constructor(explosionResistant: Item[], enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     // private enabledFeatures: FeatureFlagSet;
@@ -62,13 +62,13 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     createPotFlowerItemTable(flower: ItemLike): LootTable$Builder;
     createRedstoneOreDrops(block: Block): LootTable$Builder;
     createSegmentedBlockDrops(block: Block): LootTable$Builder;
-    createShearsDispatchTable(original: Block, entry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    createShearsDispatchTable(original: Block, entry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;
     createShearsOnlyDrop(drop: ItemLike): LootTable$Builder;
     createShearsOrSilkTouchOnlyDrop(drop: ItemLike): LootTable$Builder;
     createShulkerBoxDrop(shulkerBox: Block): LootTable$Builder;
-    createSilkTouchDispatchTable(original: Block, entry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    createSilkTouchDispatchTable(original: Block, entry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;
     createSilkTouchOnlyTable(drop: ItemLike): LootTable$Builder;
-    createSilkTouchOrShearsDispatchTable(original: Block, entry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    createSilkTouchOrShearsDispatchTable(original: Block, entry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;
     createSingleItemTable(drop: ItemLike): LootTable$Builder;
     createSingleItemTable(drop: ItemLike, count: NumberProvider): LootTable$Builder;
     createSingleItemTableWithSilkTouch(original: Block, drop: ItemLike): LootTable$Builder;

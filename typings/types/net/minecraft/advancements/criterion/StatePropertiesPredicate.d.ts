@@ -14,7 +14,7 @@ export class StatePropertiesPredicate extends Record {
     static STREAM_CODEC: StreamCodec<ByteBuf, StatePropertiesPredicate>;
     constructor(properties: StatePropertiesPredicate$PropertyMatcher[])
     // private properties: StatePropertiesPredicate$PropertyMatcher[];
-    checkState(states: StateDefinition<Object, Object>): Optional<string>;
+    checkState(states: StateDefinition<Object, any>): Optional<string>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(state: BlockState): boolean;

@@ -29,5 +29,5 @@ export class TreeConfiguration extends Object implements FeatureConfiguration {
     rootPlacer: Optional<RootPlacer>;
     trunkPlacer: TrunkPlacer;
     trunkProvider: BlockStateProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

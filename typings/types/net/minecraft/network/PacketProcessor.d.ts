@@ -7,7 +7,7 @@ import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts
 export class PacketProcessor extends Object implements AutoCloseable {
     constructor(runningThread: Thread)
     // private closed: boolean;
-    // private packetsToBeHandled: PacketProcessor$ListenerAndPacket<Object>[];
+    // private packetsToBeHandled: PacketProcessor$ListenerAndPacket<any>[];
     // private runningThread: Thread;
     close(): void;
     isSameThread(): boolean;

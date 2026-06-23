@@ -7,7 +7,7 @@ import type { CollectionContentsPredicate } from '../../../../net/minecraft/adva
 import type { CollectionCountsPredicate } from '../../../../net/minecraft/advancements/criterion/CollectionCountsPredicate.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds$Ints.d.ts'
 export class CollectionPredicate<T extends Object | number | string | boolean, P extends Predicate<T>> extends Record implements Predicate<T[]> {
-    static codec(paramelementCodec: Codec<Object>): Codec<CollectionPredicate<Object, Object>>;
+    static codec(paramelementCodec: Codec<Object>): Codec<CollectionPredicate<Object, any>>;
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     constructor(contains: Optional<CollectionContentsPredicate<T, P>>, counts: Optional<CollectionCountsPredicate<T, P>>, size: Optional<MinMaxBounds$Ints>)

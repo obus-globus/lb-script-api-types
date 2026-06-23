@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -12,7 +11,7 @@ export class AutoQueueCustom extends Mode {
     static INSTANCE: AutoQueueCustom;
     // private actions: ModeValueGroup<AutoQueueAction>;
     /*not mapped: */ getActions$liquidbounce(): ModeValueGroup<AutoQueueAction>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
     // private triggers: ModeValueGroup<AutoQueueTrigger>;
     /*not mapped: */ getTriggers$liquidbounce(): ModeValueGroup<AutoQueueTrigger>;

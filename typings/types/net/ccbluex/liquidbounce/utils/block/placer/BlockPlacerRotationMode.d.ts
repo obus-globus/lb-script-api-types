@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -11,7 +10,7 @@ export abstract class BlockPlacerRotationMode extends Mode implements MinecraftS
     static Companion: Tagged$Companion;
     constructor(name: string, modeValueGroup: ModeValueGroup<BlockPlacerRotationMode>, placer: BlockPlacer)
     // private modeValueGroup: ModeValueGroup<BlockPlacerRotationMode>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     readonly placer: BlockPlacer;
     readonly postMove: boolean;
     getVerificationRotation(targetedRotation: Rotation): Rotation;

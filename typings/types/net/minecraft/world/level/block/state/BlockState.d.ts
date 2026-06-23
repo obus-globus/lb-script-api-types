@@ -12,7 +12,7 @@ export class BlockState extends BlockBehaviour$BlockStateBase implements FabricB
     static CODEC: Codec<BlockState>;
     static NAME_TAG: string;
     static PROPERTIES_TAG: string;
-    constructor(owner: Block, propertyKeys: Property<Object>[], propertyValues: Comparable<Object>[])
+    constructor(owner: Block, propertyKeys: Property<any>[], propertyValues: Comparable<Object>[])
     asState(): BlockState;
     getAppearance(arg0: BlockAndLightGetter, arg1: BlockPos, arg2: Direction, arg3: BlockState, arg4: BlockPos): BlockState;
 }

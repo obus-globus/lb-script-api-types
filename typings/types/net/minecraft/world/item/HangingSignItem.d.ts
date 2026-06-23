@@ -1,5 +1,4 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -35,7 +34,7 @@ export class HangingSignItem extends SignItem {
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;
-    static setBlockEntityData(paramstack: ItemStack, paramtype: BlockEntityType<Object>, paramoutput: TagValueOutput): void;
+    static setBlockEntityData(paramstack: ItemStack, paramtype: BlockEntityType<any>, paramoutput: TagValueOutput): void;
     static updateCustomBlockEntityTag(paramlevel: Level, paramplayer: Player, parampos: BlockPos, paramitemStack: ItemStack): boolean;
     constructor(hangingSign: Block, wallHangingSign: Block, properties: Item$Properties)
     canPlace(context: BlockPlaceContext, stateForPlacement: BlockState): boolean;

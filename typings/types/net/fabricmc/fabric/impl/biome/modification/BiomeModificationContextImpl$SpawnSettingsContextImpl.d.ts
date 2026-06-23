@@ -10,9 +10,9 @@ export class BiomeModificationContextImpl$SpawnSettingsContextImpl extends Objec
     constructor(null_: BiomeModificationContextImpl$SpawnSettingsContextImpl)
     // private fabricSpawners: { [key in MobCategory]: Weighted<MobSpawnSettings$SpawnerData>[] };
     // private spawnSettings: MobSpawnSettings;
-    addMobCharge(arg0: EntityType<Object>, arg1: number, arg2: number): void;
+    addMobCharge(arg0: EntityType<any>, arg1: number, arg2: number): void;
     addSpawn(arg0: MobCategory, arg1: MobSpawnSettings$SpawnerData, arg2: number): void;
-    clearMobCharge(arg0: EntityType<Object>): void;
+    clearMobCharge(arg0: EntityType<any>): void;
     clearSpawns(): void;
     clearSpawns(arg0: MobCategory): void;
     freeze(): void;
@@ -20,7 +20,7 @@ export class BiomeModificationContextImpl$SpawnSettingsContextImpl extends Objec
     // private freezeSpawners(): void;
     getMobs(arg0: MobCategory): Weighted<MobSpawnSettings$SpawnerData>[];
     removeSpawns(arg0: (param0: MobCategory, param1: MobSpawnSettings$SpawnerData) => boolean): boolean;
-    removeSpawnsOfEntityType(arg0: EntityType<Object>): boolean;
+    removeSpawnsOfEntityType(arg0: EntityType<any>): boolean;
     setCreatureGenerationProbability(arg0: number): void;
     // private unfreezeSpawnCost(): void;
     // private unfreezeSpawners(): void;

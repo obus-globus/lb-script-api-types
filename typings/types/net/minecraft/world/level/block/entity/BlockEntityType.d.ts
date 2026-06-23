@@ -97,12 +97,12 @@ export class BlockEntityType<T extends BlockEntity> extends Object implements Ex
     static removeRenderPredicate(paramarg0: BlockEntityType<BlockEntity>, paramarg1: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity | null) => boolean): boolean;
     static shouldRender(paramarg0: BlockEntityType<BlockEntity>, paramarg1: BlockGetter, paramarg2: BlockPos, paramarg3: BlockEntity | null): boolean;
     constructor(factory: (param0: BlockPos, param1: BlockState) => T, validBlocks: Block[])
-    // private builtInRegistryHolder: Holder$Reference<BlockEntityType<Object>>;
+    // private builtInRegistryHolder: Holder$Reference<BlockEntityType<any>>;
     // private factory: (param0: BlockPos, param1: BlockState) => T;
     // private sodium$renderPredicates: (param0: BlockGetter, param1: BlockPos, param2: BlockEntity) => boolean[];
     // private validBlocks: Block[];
     addValidBlock(arg0: Block): void;
-    builtInRegistryHolder(): Holder$Reference<BlockEntityType<Object>>;
+    builtInRegistryHolder(): Holder$Reference<BlockEntityType<any>>;
     create(worldPosition: BlockPos, blockState: BlockState): T;
     getBlockEntity(level: BlockGetter, pos: BlockPos): T;
     isValid(state: BlockState): boolean;

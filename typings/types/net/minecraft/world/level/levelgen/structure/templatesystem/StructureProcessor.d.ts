@@ -8,6 +8,6 @@ import type { StructureTemplate$StructureBlockInfo } from '../../../../../../../
 export abstract class StructureProcessor extends Object {
     constructor()
     finalizeProcessing(level: ServerLevelAccessor, position: BlockPos, referencePos: BlockPos, originalBlockInfoList: StructureTemplate$StructureBlockInfo[], processedBlockInfoList: StructureTemplate$StructureBlockInfo[], settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo[];
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
     processBlock(level: LevelReader, targetPosition: BlockPos, referencePos: BlockPos, originalBlockInfo: StructureTemplate$StructureBlockInfo, processedBlockInfo: StructureTemplate$StructureBlockInfo, settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo;
 }

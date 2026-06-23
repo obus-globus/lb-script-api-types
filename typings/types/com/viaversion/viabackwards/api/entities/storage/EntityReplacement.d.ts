@@ -5,13 +5,13 @@ import type { WrappedEntityData } from '../../../../../../com/viaversion/viaback
 import type { EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EntityReplacement extends Object {
-    constructor(arg0: BackwardsProtocol<Object, Object, Object, Object>, arg1: EntityType, arg2: number)
-    constructor(arg0: BackwardsProtocol<Object, Object, Object, Object>, arg1: string, arg2: number, arg3: number)
+    constructor(arg0: BackwardsProtocol<any, any, any, any>, arg1: EntityType, arg2: number)
+    constructor(arg0: BackwardsProtocol<any, any, any, any>, arg1: string, arg2: number, arg3: number)
     // private componentType: EntityReplacement$ComponentType;
     // private defaultData: (param0: WrappedEntityData) => void;
     // private id: number;
     // private key: string;
-    // private protocol: BackwardsProtocol<Object, Object, Object, Object>;
+    // private protocol: BackwardsProtocol<any, any, any, any>;
     // private replacementId: number;
     defaultData(): (param0: WrappedEntityData) => void;
     entityName(): Object;

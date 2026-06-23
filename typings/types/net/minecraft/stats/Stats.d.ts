@@ -28,8 +28,8 @@ export class Stats extends Object {
     static DROP: Identifier;
     static EAT_CAKE_SLICE: Identifier;
     static ENCHANT_ITEM: Identifier;
-    static ENTITY_KILLED: Stat<EntityType<Object>>[];
-    static ENTITY_KILLED_BY: Stat<EntityType<Object>>[];
+    static ENTITY_KILLED: Stat<EntityType<any>>[];
+    static ENTITY_KILLED_BY: Stat<EntityType<any>>[];
     static FALL_ONE_CM: Identifier;
     static FILL_CAULDRON: Identifier;
     static FISH_CAUGHT: Identifier;

@@ -6,7 +6,7 @@ import type { Signature } from '../../../../sun/reflect/generics/tree/Signature.
 export abstract class GenericDeclRepository<S extends Signature> extends AbstractRepository<S> {
     static EMPTY_TYPE_VARS: Object | null;
     constructor(arg0: string, arg1: GenericsFactory)
-    readonly typeParameters: TypeVariable<Object>[];
-    // private computeTypeParameters(): TypeVariable<Object>[];
-    getTypeParameters(): TypeVariable<Object>[];
+    readonly typeParameters: TypeVariable<any>[];
+    // private computeTypeParameters(): TypeVariable<any>[];
+    getTypeParameters(): TypeVariable<any>[];
 }

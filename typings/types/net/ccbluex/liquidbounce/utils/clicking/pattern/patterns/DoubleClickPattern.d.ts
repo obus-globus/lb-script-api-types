@@ -15,5 +15,5 @@ import type { ClickPattern } from '../../../../../../../net/ccbluex/liquidbounce
  */
 export class DoubleClickPattern extends Object implements ClickPattern {
     static INSTANCE: DoubleClickPattern;
-    fill(clickArray: number[], cps: { start: number; endInclusive: number; step: number }, clicker: Clicker<Object>): void;
+    fill(clickArray: number[], cps: { start: number; endInclusive: number; step: number }, clicker: Clicker<any>): void;
 }

@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DelegatingSimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DelegatingSimpleType.d.ts'
 import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeAttribute } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeAttribute.d.ts'
@@ -7,5 +6,5 @@ export abstract class DelegatingSimpleTypeImpl extends DelegatingSimpleType {
     // private delegate: SimpleType;
     getDelegate(): SimpleType;
     makeNullableAsSpecified(arg0: boolean): SimpleType;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): SimpleType;
+    replaceAttributes(arg0: TypeAttribute<any>[]): SimpleType;
 }

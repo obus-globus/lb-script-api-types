@@ -41,7 +41,7 @@ export abstract class TypeToken<T extends Object | number | string | boolean> ex
     getType(): Type;
     getTypes(): T[];
     hashCode(): number;
-    // private is(formalType: Type, declaration: TypeVariable<Object>): boolean;
+    // private is(formalType: Type, declaration: TypeVariable<any>): boolean;
     isArray(): boolean;
     // private isOwnedBySubtypeOf(supertype: Type): boolean;
     isPrimitive(): boolean;

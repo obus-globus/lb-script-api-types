@@ -9,7 +9,7 @@ export class DataComponentMatchers$Builder extends Object {
     static components(): DataComponentMatchers$Builder;
     private constructor()
     // private exact: DataComponentExactPredicate;
-    // private partial: ImmutableMap$Builder<DataComponentPredicate$Type<Object>, DataComponentPredicate>;
+    // private partial: ImmutableMap$Builder<DataComponentPredicate$Type<any>, DataComponentPredicate>;
     any(type: DataComponentType<Object>): DataComponentMatchers$Builder;
     build(): DataComponentMatchers;
     exact(exact: DataComponentExactPredicate): DataComponentMatchers$Builder;

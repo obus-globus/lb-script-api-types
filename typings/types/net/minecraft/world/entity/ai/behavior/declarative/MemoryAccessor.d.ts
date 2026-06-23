@@ -5,8 +5,8 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Brain } from '../../../../../../../net/minecraft/world/entity/ai/Brain.d.ts'
 import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class MemoryAccessor<F extends K1, Value extends Object | number | string | boolean> extends Object {
-    constructor(brain: Brain<Object>, memoryType: MemoryModuleType<Value>, value: App<F, Value>)
-    // private brain: Brain<Object>;
+    constructor(brain: Brain<any>, memoryType: MemoryModuleType<Value>, value: App<F, Value>)
+    // private brain: Brain<any>;
     // private memoryType: MemoryModuleType<Value>;
     // private value: App<F, Value>;
     erase(): void;

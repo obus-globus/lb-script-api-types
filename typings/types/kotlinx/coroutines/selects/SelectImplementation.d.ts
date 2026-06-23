@@ -19,7 +19,7 @@ export class SelectImplementation<R extends Object | number | string | boolean> 
     // private doSelectSuspend(): R;
     // private findClause(clauseObject: Object): SelectImplementation$ClauseData | null;
     invoke(cause: Throwable | null): void;
-    invokeOnCancellation(segment: Segment<Object>, index: number): void;
+    invokeOnCancellation(segment: Segment<any>, index: number): void;
     onTimeout(timeMillis: number, block: () => R): void;
     // private processResultAndInvokeBlockRecoveringException(clause: SelectImplementation$ClauseData, internalResult: Object | null): R;
     // private reregisterClause(clauseObject: Object): void;

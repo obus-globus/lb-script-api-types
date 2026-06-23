@@ -5,7 +5,7 @@ export class TranslatableMappings extends Object {
     static fillTranslatables(paramarg0: JsonObject, paramarg1: { [key: string]: { [key: string]: string } }): void;
     static getTranslatableMappings(paramarg0: string): { [key: string]: string };
     static loadTranslatables(): void;
-    static translatablesFor(paramarg0: Protocol<Object, Object, Object, Object>): { [key: string]: string };
+    static translatablesFor(paramarg0: Protocol<any, any, any, any>): { [key: string]: string };
     static translatablesFor(paramarg0: string): { [key: string]: string };
     constructor()
 }

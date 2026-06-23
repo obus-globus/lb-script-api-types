@@ -3,7 +3,7 @@ import type { ArgumentBuilder } from '../../../../../com/mojang/brigadier/builde
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface ClientboundCommandsPacket$NodeBuilder<S extends Object | number | string | boolean> extends Object{
-    configure(input: ArgumentBuilder<S, Object>, executable: boolean, restricted: boolean): ArgumentBuilder<S, Object>;
-    createArgument(id: string, argumentType: ArgumentType<Object>, suggestionId: Identifier): ArgumentBuilder<S, Object>;
-    createLiteral(id: string): ArgumentBuilder<S, Object>;
+    configure(input: ArgumentBuilder<S, any>, executable: boolean, restricted: boolean): ArgumentBuilder<S, any>;
+    createArgument(id: string, argumentType: ArgumentType<Object>, suggestionId: Identifier): ArgumentBuilder<S, any>;
+    createLiteral(id: string): ArgumentBuilder<S, any>;
 }

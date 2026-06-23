@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -9,7 +8,7 @@ import type { BedBlock } from '../../../../../../net/minecraft/world/level/block
 import type { Vector3d } from '../../../../../../org/joml/Vector3d.d.ts'
 export class IsSelfBedMode$SpawnLocation extends IsSelfBedMode {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private bedDistance: number;
     // private /*not mapped: */ getBedDistance(): number;
     // private gameStartHandler: EventHook<PacketEvent>;

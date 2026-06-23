@@ -11,5 +11,5 @@ export class Passthrough extends Object implements RuleBlockEntityModifier {
     static INSTANCE: Passthrough;
     constructor()
     apply(random: RandomSource, existingTag: CompoundTag): CompoundTag;
-    getType(): RuleBlockEntityModifierType<Object>;
+    getType(): RuleBlockEntityModifierType<any>;
 }

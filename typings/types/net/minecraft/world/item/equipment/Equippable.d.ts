@@ -24,7 +24,7 @@ export class Equippable extends Record {
     static harness(paramcolor: DyeColor): Equippable;
     static llamaSwag(paramcolor: DyeColor): Equippable;
     static saddle(): Equippable;
-    // private allowedEntities: Optional<Holder<EntityType<Object>>[]>;
+    // private allowedEntities: Optional<Holder<EntityType<any>>[]>;
     // private assetId: Optional<ResourceKey<EquipmentAsset>>;
     // private cameraOverlay: Optional<Identifier>;
     // private canBeSheared: boolean;
@@ -35,10 +35,10 @@ export class Equippable extends Record {
     // private shearingSound: Holder<SoundEvent>;
     // private slot: EquipmentSlot;
     // private swappable: boolean;
-    allowedEntities(): Optional<Holder<EntityType<Object>>[]>;
+    allowedEntities(): Optional<Holder<EntityType<any>>[]>;
     assetId(): Optional<ResourceKey<EquipmentAsset>>;
     cameraOverlay(): Optional<Identifier>;
-    canBeEquippedBy(type: Holder<EntityType<Object>>): boolean;
+    canBeEquippedBy(type: Holder<EntityType<any>>): boolean;
     canBeSheared(): boolean;
     damageOnHurt(): boolean;
     dispensable(): boolean;

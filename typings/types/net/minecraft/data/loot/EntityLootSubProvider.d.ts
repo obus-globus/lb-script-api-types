@@ -22,16 +22,16 @@ export abstract class EntityLootSubProvider extends Object implements FabricEnti
     constructor(enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     constructor(allowed: FeatureFlagSet, required: FeatureFlagSet, registries: HolderLookup$Provider)
     // private allowed: FeatureFlagSet;
-    map: Map<EntityType<Object>, Map<ResourceKey<LootTable>, LootTable$Builder>>;
+    map: Map<EntityType<any>, Map<ResourceKey<LootTable>, LootTable$Builder>>;
     readonly registries: HolderLookup$Provider;
     // private required: FeatureFlagSet;
-    add(type: EntityType<Object>, lootTable: ResourceKey<LootTable>, builder: LootTable$Builder): void;
-    add(type: EntityType<Object>, builder: LootTable$Builder): void;
+    add(type: EntityType<any>, lootTable: ResourceKey<LootTable>, builder: LootTable$Builder): void;
+    add(type: EntityType<any>, builder: LootTable$Builder): void;
     generate(): void;
     generate(output: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void): void;
     getRegistries(): HolderLookup$Provider;
-    killedByFrog(entityTypes: HolderGetter<EntityType<Object>>): () => LootItemCondition;
-    killedByFrogVariant(entityTypes: HolderGetter<EntityType<Object>>, frogVariants: HolderGetter<FrogVariant>, variant: ResourceKey<FrogVariant>): () => LootItemCondition;
+    killedByFrog(entityTypes: HolderGetter<EntityType<any>>): () => LootItemCondition;
+    killedByFrogVariant(entityTypes: HolderGetter<EntityType<any>>, frogVariants: HolderGetter<FrogVariant>, variant: ResourceKey<FrogVariant>): () => LootItemCondition;
     shouldSmeltLoot(): AnyOfCondition$Builder;
     withConditions(arg0: ResourceCondition[]): EntityLootSubProvider;
 }

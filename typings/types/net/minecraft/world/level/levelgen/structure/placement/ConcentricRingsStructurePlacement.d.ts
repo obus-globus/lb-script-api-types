@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { Biome } from '../../../../../../../net/minecraft/world/level/biome/Biome.d.ts'
@@ -24,5 +23,5 @@ export class ConcentricRingsStructurePlacement extends StructurePlacement {
     isPlacementChunk(generatorState: ChunkGeneratorStructureState, sourceX: number, sourceZ: number): boolean;
     preferredBiomes(): Holder<Biome>[];
     spread(): number;
-    type(): StructurePlacementType<Object>;
+    type(): StructurePlacementType<any>;
 }

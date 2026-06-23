@@ -5,6 +5,6 @@ export abstract class SemanticContext extends Object {
     static and(paramarg0: SemanticContext, paramarg1: SemanticContext): SemanticContext;
     static or(paramarg0: SemanticContext, paramarg1: SemanticContext): SemanticContext;
     constructor()
-    eval(arg0: Recognizer<Object, Object>, arg1: RuleContext): boolean;
-    evalPrecedence(arg0: Recognizer<Object, Object>, arg1: RuleContext): SemanticContext;
+    eval(arg0: Recognizer<Object, any>, arg1: RuleContext): boolean;
+    evalPrecedence(arg0: Recognizer<Object, any>, arg1: RuleContext): SemanticContext;
 }

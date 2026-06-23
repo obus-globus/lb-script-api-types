@@ -233,8 +233,8 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     adjustSpawnLocation(level: ServerLevel, spawnSuggestion: BlockPos): BlockPos;
     allowsListing(): boolean;
     awardKillScore(victim: Entity, killingBlow: DamageSource): void;
-    awardRecipes(recipes: RecipeHolder<Object>[]): number;
-    awardRecipesByKey(recipeIds: ResourceKey<Recipe<Object>>[]): void;
+    awardRecipes(recipes: RecipeHolder<any>[]): number;
+    awardRecipesByKey(recipeIds: ResourceKey<Recipe<any>>[]): void;
     awardStat(location: Identifier): void;
     awardStat(location: Identifier, count: number): void;
     awardStat(stat: Stat<Object>): void;
@@ -354,7 +354,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     requestedViewDistance(): number;
     resetFallDistance(): void;
     resetLastActionTime(): void;
-    resetRecipes(recipe: RecipeHolder<Object>[]): number;
+    resetRecipes(recipe: RecipeHolder<any>[]): number;
     resetSentInfo(): void;
     resetStat(stat: Stat<Object>): void;
     // private respawnEntityOnShoulder(tag: CompoundTag): void;
@@ -415,7 +415,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     trackStartFallingPosition(): void;
     // private transferInventoryXpAndScore(oldPlayer: Player): void;
     // private triggerDimensionChangeTriggers(oldLevel: ServerLevel): void;
-    triggerRecipeCrafted(recipe: RecipeHolder<Object>, itemStacks: ItemStack[]): void;
+    triggerRecipeCrafted(recipe: RecipeHolder<any>, itemStacks: ItemStack[]): void;
     updateInvisibilityStatus(): void;
     updateOptions(information: ClientInformation): void;
     // private updatePlayerAttributes(): void;

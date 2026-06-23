@@ -9,11 +9,10 @@ import type { ClientboundPackets1_19 } from '../../../../../com/viaversion/viave
 import type { ServerboundPackets1_19 } from '../../../../../com/viaversion/viaversion/protocols/v1_18_2to1_19/packet/ServerboundPackets1_19.d.ts'
 import type { ClientboundPackets1_19_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_19to1_19_1/packet/ClientboundPackets1_19_1.d.ts'
 import type { ServerboundPackets1_19_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_19to1_19_1/packet/ServerboundPackets1_19_1.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Protocol1_19_1To1_19 extends BackwardsProtocol<ClientboundPackets1_19_1, ClientboundPackets1_19, ServerboundPackets1_19_1, ServerboundPackets1_19> {
     static GAME_INFO_ID: number;
     static SYSTEM_CHAT_ID: number;
-    static decorateChatMessage(paramarg0: Protocol<Object, Object, Object, Object>, paramarg1: ChatRegistryStorage, paramarg2: number, paramarg3: JsonElement, paramarg4: JsonElement, paramarg5: JsonElement): JsonElement;
+    static decorateChatMessage(paramarg0: Protocol<any, any, any, any>, paramarg1: ChatRegistryStorage, paramarg2: number, paramarg3: JsonElement, paramarg4: JsonElement, paramarg5: JsonElement): JsonElement;
     constructor()
     readonly entityRewriter: EntityPacketRewriter1_19_1;
     // private translatableRewriter: JsonNBTComponentRewriter<ClientboundPackets1_19_1>;

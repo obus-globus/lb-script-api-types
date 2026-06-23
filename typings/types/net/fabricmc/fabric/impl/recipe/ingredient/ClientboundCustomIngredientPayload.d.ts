@@ -13,7 +13,7 @@ export class ClientboundCustomIngredientPayload extends Record implements Custom
     static CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomIngredientPayload>;
     static TYPE: CustomPacketPayload$Type<ClientboundCustomIngredientPayload>;
     static codec(paramwriter: (param0: CustomPacketPayload | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => CustomPacketPayload | null): StreamCodec<ByteBuf, CustomPacketPayload>;
-    static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<Object, Object>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
+    static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
     static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
     // private protocolVersion: number;
     equals(arg0: Object | null): boolean;

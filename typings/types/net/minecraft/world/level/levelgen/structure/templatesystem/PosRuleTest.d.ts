@@ -6,6 +6,6 @@ import type { PosRuleTestType } from '../../../../../../../net/minecraft/world/l
 export abstract class PosRuleTest extends Object {
     static CODEC: Codec<PosRuleTest>;
     constructor()
-    getType(): PosRuleTestType<Object>;
+    getType(): PosRuleTestType<any>;
     test(inTemplatePos: BlockPos, worldPos: BlockPos, worldReference: BlockPos, random: RandomSource): boolean;
 }

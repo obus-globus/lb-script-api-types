@@ -18,7 +18,7 @@ export class FeaturesEnabledResourceCondition extends Record implements Resource
     // private features: Identifier[];
     equals(arg0: Object | null): boolean;
     features(): Identifier[];
-    getType(): ResourceConditionType<Object>;
+    getType(): ResourceConditionType<any>;
     hashCode(): number;
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;
     toString(): string;

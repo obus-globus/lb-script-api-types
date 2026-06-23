@@ -84,7 +84,7 @@ export class BedBlock extends HorizontalDirectionalBlock implements EntityBlock 
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos): void;
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemStack): void;
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
-    static findStandUpPosition(paramtype: EntityType<Object>, paramlevel: CollisionGetter, parampos: BlockPos, paramforward: Direction, paramyaw: number): Optional<Vec3>;
+    static findStandUpPosition(paramtype: EntityType<any>, paramlevel: CollisionGetter, parampos: BlockPos, paramforward: Direction, paramyaw: number): Optional<Vec3>;
     static getBedOrientation(paramlevel: BlockGetter, parampos: BlockPos): Direction;
     static getBlockType(paramstate: BlockState): DoubleBlockCombiner$BlockType;
     static getConnectedDirection(paramstate: BlockState): Direction;

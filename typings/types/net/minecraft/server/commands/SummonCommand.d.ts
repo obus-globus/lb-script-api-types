@@ -8,7 +8,7 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class SummonCommand extends Object {
-    static createEntity(paramsource: CommandSourceStack, paramtype: Holder$Reference<EntityType<Object>>, parampos: Vec3, paramnbt: CompoundTag, paramfinalize: boolean): Entity;
+    static createEntity(paramsource: CommandSourceStack, paramtype: Holder$Reference<EntityType<any>>, parampos: Vec3, paramnbt: CompoundTag, paramfinalize: boolean): Entity;
     static register(paramdispatcher: CommandDispatcher<CommandSourceStack>, paramcontext: CommandBuildContext): void;
     constructor()
 }

@@ -13,7 +13,7 @@ export class NoSqlAppender extends AbstractDatabaseAppender<NoSqlDatabaseManager
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramname: string, paramignore: string, paramfilter: Filter, parambufferSize: string, paramprovider: NoSqlProvider<Object>): NoSqlAppender;
+    static createAppender(paramname: string, paramignore: string, paramfilter: Filter, parambufferSize: string, paramprovider: NoSqlProvider<any>): NoSqlAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, filter: Filter, layout: Layout<Serializable>, ignoreExceptions: boolean, properties: Property[], manager: NoSqlDatabaseManager<Object>)

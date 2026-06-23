@@ -32,11 +32,11 @@ export class ThreadLocalHandshake$TruffleSafepointImpl extends TruffleSafepoint 
     // private lock: ReentrantLock;
     // private recurringActionsEnabled: boolean;
     // private sideEffectsEnabled: boolean;
-    activateThread(handshake: ThreadLocalHandshake$Handshake<Object>): ThreadLocalHandshake$ActivationResult;
-    addHandshake(t: Thread, handshake: ThreadLocalHandshake$Handshake<Object>): void;
-    // private addHandshakeImpl(t: Thread, handshake: ThreadLocalHandshake$Handshake<Object>, reactivated: boolean): void;
+    activateThread(handshake: ThreadLocalHandshake$Handshake<any>): ThreadLocalHandshake$ActivationResult;
+    addHandshake(t: Thread, handshake: ThreadLocalHandshake$Handshake<any>): void;
+    // private addHandshakeImpl(t: Thread, handshake: ThreadLocalHandshake$Handshake<any>, reactivated: boolean): void;
     // private claimEntry(entry: ThreadLocalHandshake$HandshakeEntry): boolean;
-    deactivateThread(handshake: ThreadLocalHandshake$Handshake<Object>): boolean;
+    deactivateThread(handshake: ThreadLocalHandshake$Handshake<any>): boolean;
     hasPendingSideEffectingActions(): boolean;
     // private hasSideEffecting(): boolean;
     // private interruptIfPending(location: Node, interrupter: TruffleSafepoint$Interrupter): void;
@@ -44,7 +44,7 @@ export class ThreadLocalHandshake$TruffleSafepointImpl extends TruffleSafepoint 
     isFastPendingSet(): boolean;
     // private isPending(): boolean;
     // private isPending(entry: ThreadLocalHandshake$HandshakeEntry): boolean;
-    // private lookupEntry(handshake: ThreadLocalHandshake$Handshake<Object>): ThreadLocalHandshake$HandshakeEntry;
+    // private lookupEntry(handshake: ThreadLocalHandshake$Handshake<any>): ThreadLocalHandshake$HandshakeEntry;
     processOrNotifyHandshakes(location: Node, toProcessOrNotify: ThreadLocalHandshake$HandshakeEntry[], blockedNotification: boolean): void;
     // private resetPending(): void;
     setAllowActions(enabled: boolean): boolean;

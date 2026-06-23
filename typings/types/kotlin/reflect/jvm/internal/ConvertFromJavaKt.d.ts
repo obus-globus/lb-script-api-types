@@ -6,7 +6,7 @@ import type { KType } from '../../../../kotlin/reflect/KType.d.ts'
 import type { KTypeParameter } from '../../../../kotlin/reflect/KTypeParameter.d.ts'
 import type { TypeNullability } from '../../../../kotlin/reflect/jvm/internal/TypeNullability.d.ts'
 export class ConvertFromJavaKt extends Object {
-    static allTypeParameters(paramarg0: Class<Object>): TypeVariable<Object>[];
-    static toKType(paramarg0: Type, paramarg1: Map<TypeVariable<Object>, KTypeParameter>, paramarg2: TypeNullability, paramarg3: boolean): KType;
+    static allTypeParameters(paramarg0: Class<Object>): TypeVariable<any>[];
+    static toKType(paramarg0: Type, paramarg1: Map<TypeVariable<any>, KTypeParameter>, paramarg2: TypeNullability, paramarg3: boolean): KType;
     static toKTypeParameters(paramarg0: Object | null): KTypeParameter[];
 }

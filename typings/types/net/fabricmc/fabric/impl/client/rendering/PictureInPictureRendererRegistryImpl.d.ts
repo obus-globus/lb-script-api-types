@@ -10,7 +10,7 @@ import type { PictureInPictureRenderState } from '../../../../../../net/minecraf
 export class PictureInPictureRendererRegistryImpl extends Object {
     static createNewRenderer(paramarg0: PictureInPictureRenderState | null, paramarg1: Minecraft, paramarg2: MultiBufferSource$BufferSource, paramarg3: SubmitNodeCollector): PictureInPictureRenderer<PictureInPictureRenderState>;
     static getRegisteredFactoryStateClasses(): Class<PictureInPictureRenderState>[];
-    static onReady(paramarg0: Minecraft, paramarg1: MultiBufferSource$BufferSource, paramarg2: SubmitNodeCollector, paramarg3: Map<Class<PictureInPictureRenderState>, PictureInPictureRenderer<Object>>): void;
-    static register(paramarg0: (param0: PictureInPictureRendererRegistry$Context) => PictureInPictureRenderer<Object>): void;
+    static onReady(paramarg0: Minecraft, paramarg1: MultiBufferSource$BufferSource, paramarg2: SubmitNodeCollector, paramarg3: Map<Class<PictureInPictureRenderState>, PictureInPictureRenderer<any>>): void;
+    static register(paramarg0: (param0: PictureInPictureRendererRegistry$Context) => PictureInPictureRenderer<any>): void;
     private constructor()
 }

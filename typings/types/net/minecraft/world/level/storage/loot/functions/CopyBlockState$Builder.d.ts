@@ -1,5 +1,4 @@
 import type { ImmutableSet$Builder } from '../../../../../../../com/google/common/collect/ImmutableSet$Builder.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { Property } from '../../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
@@ -8,8 +7,8 @@ import type { LootItemFunction } from '../../../../../../../net/minecraft/world/
 export class CopyBlockState$Builder extends LootItemConditionalFunction$Builder<CopyBlockState$Builder> {
     private constructor(block: Block)
     // private block: Holder<Block>;
-    // private properties: ImmutableSet$Builder<Property<Object>>;
+    // private properties: ImmutableSet$Builder<Property<any>>;
     build(): LootItemFunction;
-    copy(property: Property<Object>): CopyBlockState$Builder;
+    copy(property: Property<any>): CopyBlockState$Builder;
     getThis(): CopyBlockState$Builder;
 }

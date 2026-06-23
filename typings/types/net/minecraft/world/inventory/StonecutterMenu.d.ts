@@ -49,7 +49,7 @@ export class StonecutterMenu extends AbstractContainerMenu {
     clickMenuButton(player: Player, buttonId: number): boolean;
     getNumberOfVisibleRecipes(): number;
     getSelectedRecipeIndex(): number;
-    getType(): MenuType<Object>;
+    getType(): MenuType<any>;
     getVisibleRecipes(): SelectableRecipe$SingleInputSet<StonecutterRecipe>;
     hasInputItem(): boolean;
     // private isValidRecipeIndex(buttonId: number): boolean;

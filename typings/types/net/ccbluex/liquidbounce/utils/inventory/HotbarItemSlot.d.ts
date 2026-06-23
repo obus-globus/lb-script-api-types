@@ -84,7 +84,7 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
      */
     readonly useHand: InteractionHand;
     equals(other: Object | null): boolean;
-    getIdForServer(screen: AbstractContainerScreen<Object> | null): number | null;
+    getIdForServer(screen: AbstractContainerScreen<any> | null): number | null;
     getIdForServerWithCurrentScreen(): number | null;
     hashCode(): number;
     name(): "OFFHAND" | "SLOT_0" | "SLOT_1" | "SLOT_2" | "SLOT_3" | "SLOT_4" | "SLOT_5" | "SLOT_6" | "SLOT_7" | "SLOT_8";

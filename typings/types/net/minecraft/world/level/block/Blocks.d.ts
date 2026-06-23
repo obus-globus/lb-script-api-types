@@ -1160,7 +1160,7 @@ export class Blocks extends Object {
     static ZOMBIE_HEAD: Block;
     static ZOMBIE_WALL_HEAD: Block;
     static always(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos): boolean;
-    static always(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos, paramentityType: EntityType<Object>): boolean;
+    static always(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos, paramentityType: EntityType<any>): boolean;
     static buttonProperties(): BlockBehaviour$Properties;
     static flowerPotProperties(): BlockBehaviour$Properties;
     static leavesProperties(paramsoundType: SoundType): BlockBehaviour$Properties;
@@ -1168,8 +1168,8 @@ export class Blocks extends Object {
     static logProperties(paramtopColor: MapColor, paramsideColor: MapColor, paramsoundType: SoundType): BlockBehaviour$Properties;
     static netherStemProperties(parammapColor: MapColor): BlockBehaviour$Properties;
     static never(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos): boolean;
-    static never(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos, paramentityType: EntityType<Object>): boolean;
-    static ocelotOrParrot(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos, paramentityType: EntityType<Object>): boolean;
+    static never(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos, paramentityType: EntityType<any>): boolean;
+    static ocelotOrParrot(paramstate: BlockState, paramblockGetter: BlockGetter, paramblockPos: BlockPos, paramentityType: EntityType<any>): boolean;
     static register(paramid: ResourceKey<Block>, paramfactory: (param0: BlockBehaviour$Properties) => Block, paramproperties: BlockBehaviour$Properties): Block;
     static register(paramid: ResourceKey<Block>, paramproperties: BlockBehaviour$Properties): Block;
     constructor()

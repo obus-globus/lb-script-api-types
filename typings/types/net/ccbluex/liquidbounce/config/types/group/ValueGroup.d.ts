@@ -100,7 +100,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     curve(name: string, default_: Vector2f[], xAxis: CurveValue$Axis, yAxis: CurveValue$Axis, tension: number): CurveValue;
     drop<T extends ValueGroup>(valueGroup: T): T;
     easing(name: string, default_: Easing): ChoiceListValue<Easing>;
-    entityTypes<C extends EntityType<Object>[]>(name: string, default_: C): RegistryListValue<C, EntityType<Object>>;
+    entityTypes<C extends EntityType<any>[]>(name: string, default_: C): RegistryListValue<C, EntityType<any>>;
     enumChoice<T extends Enum<T> & Tagged>(name: string, default_: T): ChoiceListValue<T>;
     enumChoice<T extends Tagged>(name: string, default_: T, choices: T[]): ChoiceListValue<T>;
     file(name: string, default_: File | null, dialogMode: FileDialogMode, supportedExtensions: string[] | null): FileValue;
@@ -148,7 +148,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     multiEnumChoice<T extends Enum<T> & Tagged>(name: string, default_: T[], canBeNone: boolean): MultiChoiceListValue<T>;
     multiEnumChoice<T extends Tagged>(name: string, default_: T[], choices: T[], canBeNone: boolean, isOrderSensitive: boolean): MultiChoiceListValue<T>;
     mutableList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): MutableListValue<T, E>;
-    // private rangedValue<T extends Object | number | string | boolean>(name: string, defaultValue: T, range: ClosedRange<Object>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
+    // private rangedValue<T extends Object | number | string | boolean>(name: string, defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
     regex(name: string, default_: Regex): Value<Regex>;
     regexList<C extends Regex[]>(name: string, default_: C): MutableListValue<C, Regex>;
     registryList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): RegistryListValue<T, E>;

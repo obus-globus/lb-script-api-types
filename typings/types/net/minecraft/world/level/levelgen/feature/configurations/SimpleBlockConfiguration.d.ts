@@ -13,7 +13,7 @@ export class SimpleBlockConfiguration extends Record implements FeatureConfigura
     // private scheduleTick: boolean;
     // private toPlace: BlockStateProvider;
     equals(o: Object | null): boolean;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     scheduleTick(): boolean;
     toPlace(): BlockStateProvider;

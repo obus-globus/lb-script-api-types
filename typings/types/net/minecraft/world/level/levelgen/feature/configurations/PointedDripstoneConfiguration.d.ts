@@ -13,5 +13,5 @@ export class PointedDripstoneConfiguration extends Object implements FeatureConf
     chanceOfSpreadRadius2: number;
     chanceOfSpreadRadius3: number;
     chanceOfTallerDripstone: number;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

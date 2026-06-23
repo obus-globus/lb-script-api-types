@@ -4,13 +4,13 @@ import type { Property$Value } from '../../../../../../net/minecraft/world/level
 export class PropertyValueList extends Record {
     static EMPTY: PropertyValueList;
     static of(paramvalues: Object | null): PropertyValueList;
-    constructor(values: Property$Value<Object>[])
-    // private values: Property$Value<Object>[];
+    constructor(values: Property$Value<any>[])
+    // private values: Property$Value<any>[];
     equals(o: Object | null): boolean;
     extend(other: PropertyValueList): PropertyValueList;
-    extend(element: Property$Value<Object>): PropertyValueList;
+    extend(element: Property$Value<any>): PropertyValueList;
     getKey(): string;
     hashCode(): number;
     toString(): string;
-    values(): Property$Value<Object>[];
+    values(): Property$Value<any>[];
 }

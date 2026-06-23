@@ -18,7 +18,7 @@ export abstract class Optimizer extends Object {
     static nag(): Nag$Builder;
     static rmsprop(): RmsProp$Builder;
     static sgd(): Sgd$Builder;
-    constructor(arg0: Optimizer$OptimizerBuilder<Object>)
+    constructor(arg0: Optimizer$OptimizerBuilder<any>)
     // private beginNumUpdate: number;
     // private clipGrad: number;
     // private numUpdate: number;

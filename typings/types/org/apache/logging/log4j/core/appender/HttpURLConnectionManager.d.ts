@@ -21,5 +21,5 @@ export class HttpURLConnectionManager extends HttpManager {
     // private sslConfiguration: SslConfiguration;
     // private url: URL;
     // private verifyHostname: boolean;
-    send(layout: Layout<Object>, event: LogEvent): void;
+    send(layout: Layout<any>, event: LogEvent): void;
 }

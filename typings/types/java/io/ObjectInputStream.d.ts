@@ -86,7 +86,7 @@ export class ObjectInputStream extends InputStream implements ObjectInput, Objec
     // private readClassDesc(arg0: boolean): ObjectStreamClass;
     readClassDescriptor(): ObjectStreamClass;
     readDouble(): number;
-    // private readEnum(arg0: boolean): Enum<Object>;
+    // private readEnum(arg0: boolean): Enum<any>;
     // private readExternalData(arg0: Externalizable, arg1: ObjectStreamClass): void;
     // private readFatalException(): IOException;
     readFields(): ObjectInputStream$GetField;

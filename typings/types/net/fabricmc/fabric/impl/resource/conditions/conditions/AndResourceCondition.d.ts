@@ -14,7 +14,7 @@ export class AndResourceCondition extends Record implements ResourceCondition {
     // private conditions: ResourceCondition[];
     conditions(): ResourceCondition[];
     equals(arg0: Object | null): boolean;
-    getType(): ResourceConditionType<Object>;
+    getType(): ResourceConditionType<any>;
     hashCode(): number;
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;
     toString(): string;

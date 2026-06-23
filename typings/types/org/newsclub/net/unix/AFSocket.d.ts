@@ -5,7 +5,6 @@ import type { Socket } from '../../../../java/net/Socket.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { SocketImplFactory } from '../../../../java/net/SocketImplFactory.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFInputStream } from '../../../../org/newsclub/net/unix/AFInputStream.d.ts'
 import type { AFOutputStream } from '../../../../org/newsclub/net/unix/AFOutputStream.d.ts'
 import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
@@ -20,7 +19,7 @@ import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/A
 import type { Closeables } from '../../../../org/newsclub/net/unix/Closeables.d.ts'
 import type { SocketAddressFilter } from '../../../../org/newsclub/net/unix/SocketAddressFilter.d.ts'
 export abstract class AFSocket<A extends AFSocketAddress> extends Socket implements AFSocketExtensions, AFSomeSocket {
-    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<Object>;
+    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<any>;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;
     static getLoadedLibrary(): string;

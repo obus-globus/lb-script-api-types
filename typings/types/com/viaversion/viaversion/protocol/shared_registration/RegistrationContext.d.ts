@@ -10,11 +10,11 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RegistrationContext<CU extends ClientboundPacketType, SU extends ServerboundPacketType> extends Record {
-    constructor(protocol: AbstractProtocol<CU, Object, Object, SU>, min: ProtocolVersion, max: ProtocolVersion)
+    constructor(protocol: AbstractProtocol<CU, any, any, SU>, min: ProtocolVersion, max: ProtocolVersion)
     // private max: ProtocolVersion;
     // private min: ProtocolVersion;
-    // private protocol: AbstractProtocol<CU, Object, Object, SU>;
-    castProtocol<P extends AbstractProtocol<CU, Object, Object, SU>>(): P;
+    // private protocol: AbstractProtocol<CU, any, any, SU>;
+    castProtocol<P extends AbstractProtocol<CU, any, any, SU>>(): P;
     clientbound(arg0: ClientboundPacketType, arg1: (param0: CU) => void): void;
     clientbound(arg0: ClientboundPacketType, arg1: (param0: CU) => void, arg2: PacketBound[]): void;
     clientboundHandler(arg0: ClientboundPacketType, arg1: (param0: PacketWrapper) => void): void;
@@ -24,8 +24,8 @@ export class RegistrationContext<CU extends ClientboundPacketType, SU extends Se
     hashCode(): number;
     max(): ProtocolVersion;
     min(): ProtocolVersion;
-    protocol(): AbstractProtocol<CU, Object, Object, SU>;
-    protocol<P extends AbstractProtocol<CU, Object, Object, SU>>(arg0: Class<P>): P;
+    protocol(): AbstractProtocol<CU, any, any, SU>;
+    protocol<P extends AbstractProtocol<CU, any, any, SU>>(arg0: Class<P>): P;
     serverbound(arg0: ServerboundPacketType, arg1: (param0: SU) => void): void;
     serverbound(arg0: ServerboundPacketType, arg1: (param0: SU) => void, arg2: PacketBound[]): void;
     serverboundHandler(arg0: ServerboundPacketType, arg1: (param0: PacketWrapper) => void): void;

@@ -6,7 +6,7 @@ import type { LockableFileWriter } from '../../../../../org/apache/commons/io/ou
 export class LockableFileWriter$Builder extends AbstractStreamBuilder<LockableFileWriter, LockableFileWriter$Builder> {
     constructor()
     // private append: boolean;
-    // private lockDirectory: AbstractOrigin<Object, Object>;
+    // private lockDirectory: AbstractOrigin<Object, any>;
     // private checkOriginFile(): File;
     get(): LockableFileWriter;
     setAppend(arg0: boolean): LockableFileWriter$Builder;

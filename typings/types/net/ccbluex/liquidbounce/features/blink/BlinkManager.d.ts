@@ -39,7 +39,7 @@ export class BlinkManager extends ValueGroup implements EventListener {
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     cancel(): void;
     children(): EventListener[];
-    // private fireEvent(packet: Packet<Object> | null, origin: TransferOrigin): BlinkManager$Action;
+    // private fireEvent(packet: Packet<any> | null, origin: TransferOrigin): BlinkManager$Action;
     flush(flushWhen: (param0: PacketSnapshot) => boolean): void;
     flush(count: number): void;
     flush(origin: TransferOrigin): void;

@@ -72,8 +72,8 @@ export abstract class AbstractMinecart extends VehicleEntity {
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
     static useExperimentalMovement(paramlevel: Level): boolean;
-    constructor(type: EntityType<Object>, level: Level)
-    constructor(type: EntityType<Object>, level: Level, x: number, y: number, z: number)
+    constructor(type: EntityType<any>, level: Level)
+    constructor(type: EntityType<any>, level: Level, x: number, y: number, z: number)
     readonly behavior: MinecartBehavior;
     readonly flipped: boolean;
     readonly onRails: boolean;

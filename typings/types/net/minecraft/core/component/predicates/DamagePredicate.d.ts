@@ -10,12 +10,12 @@ import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/c
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class DamagePredicate extends Record implements DataComponentPredicate {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<DamagePredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static durability(paramrange: MinMaxBounds$Ints): DamagePredicate;
-    static singleCodec(paramname: string): MapCodec<DataComponentPredicate$Single<Object>>;
+    static singleCodec(paramname: string): MapCodec<DataComponentPredicate$Single<any>>;
     constructor(durability: MinMaxBounds$Ints, damage: MinMaxBounds$Ints)
     // private damage: MinMaxBounds$Ints;
     // private durability: MinMaxBounds$Ints;

@@ -73,7 +73,7 @@ export class ClassBands extends BandSet {
     // private code_attr_calls: number[];
     // private cpBands: CpBands;
     // private fieldAttributeBands: NewAttributeBands[];
-    // private fieldConstantValueKQ: CPConstant<Object>[];
+    // private fieldConstantValueKQ: CPConstant<any>[];
     // private fieldSignature: CPSignature[];
     // private field_RIA_bands: MetadataBandGroup;
     // private field_RVA_bands: MetadataBandGroup;

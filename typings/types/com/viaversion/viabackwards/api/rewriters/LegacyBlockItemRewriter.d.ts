@@ -13,9 +13,8 @@ import type { PacketHandler } from '../../../../../com/viaversion/viaversion/api
 import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { JsonObject } from '../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { IdAndData } from '../../../../../com/viaversion/viaversion/util/IdAndData.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export abstract class LegacyBlockItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, Object, Object, S>> extends BackwardsItemRewriterBase<C, S, T> {
+export abstract class LegacyBlockItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, any, any, S>> extends BackwardsItemRewriterBase<C, S, T> {
     constructor(arg0: T, arg1: string)
     constructor(arg0: T, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>)
     constructor(arg0: T, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>, arg4: Type<Item>, arg5: Type<Item[]>)

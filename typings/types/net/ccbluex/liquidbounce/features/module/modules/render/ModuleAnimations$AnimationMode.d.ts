@@ -1,5 +1,4 @@
 import type { PoseStack } from '../../../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -12,7 +11,7 @@ import type { HumanoidArm } from '../../../../../../../net/minecraft/world/entit
 export abstract class ModuleAnimations$AnimationMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     protected applySwingOffset(matrices: PoseStack, arm: HumanoidArm, swingProgress: number): void;
     transform(matrices: PoseStack, arm: HumanoidArm, equipProgress: number, swingProgress: number): void;
 }

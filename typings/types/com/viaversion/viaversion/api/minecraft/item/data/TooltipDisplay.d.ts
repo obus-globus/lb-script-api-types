@@ -13,6 +13,6 @@ export class TooltipDisplay extends Record implements Rewritable {
     hashCode(): number;
     hiddenComponents(): (Object | null)[];
     hideTooltip(): boolean;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): TooltipDisplay;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): TooltipDisplay;
     toString(): string;
 }

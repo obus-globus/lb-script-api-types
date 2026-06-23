@@ -8,5 +8,5 @@ export class TypeSubstitutionKt extends Object {
     static asSimpleType(paramarg0: KotlinType): SimpleType;
     static replace(paramarg0: KotlinType, paramarg1: TypeProjection[], paramarg2: AnnotationDescriptor[]): KotlinType;
     static replace(paramarg0: KotlinType, paramarg1: TypeProjection[], paramarg2: AnnotationDescriptor[], paramarg3: TypeProjection[]): KotlinType;
-    static replace(paramarg0: SimpleType, paramarg1: TypeProjection[], paramarg2: TypeAttribute<Object>[]): SimpleType;
+    static replace(paramarg0: SimpleType, paramarg1: TypeProjection[], paramarg2: TypeAttribute<any>[]): SimpleType;
 }

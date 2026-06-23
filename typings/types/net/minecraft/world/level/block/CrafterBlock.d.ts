@@ -98,7 +98,7 @@ export class CrafterBlock extends BaseEntityBlock {
     codec(): MapCodec<CrafterBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     dispenseFrom(state: BlockState, level: ServerLevel, pos: BlockPos): void;
-    // private dispenseItem(level: ServerLevel, pos: BlockPos, blockEntity: (Object | null)[], results: ItemStack, blockState: BlockState, recipe: RecipeHolder<Object>): void;
+    // private dispenseItem(level: ServerLevel, pos: BlockPos, blockEntity: (Object | null)[], results: ItemStack, blockState: BlockState, recipe: RecipeHolder<any>): void;
     getAnalogOutputSignal(state: BlockState, level: Level, pos: BlockPos, direction: Direction): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;

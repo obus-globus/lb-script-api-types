@@ -7,7 +7,7 @@ export class ServerDebugSubscribers extends Object {
     constructor(server: MinecraftServer)
     // private enabledSubscriptions: Map<DebugSubscription<Object>, ServerPlayer[]>;
     // private server: MinecraftServer;
-    broadcastToAll(subscription: DebugSubscription<Object>, packet: Packet<Object>): void;
+    broadcastToAll(subscription: DebugSubscription<Object>, packet: Packet<any>): void;
     enabledSubscriptions(): DebugSubscription<Object>[];
     // private getSubscribersFor(subscription: DebugSubscription<Object>): ServerPlayer[];
     hasAnySubscriberFor(subscription: DebugSubscription<Object>): boolean;

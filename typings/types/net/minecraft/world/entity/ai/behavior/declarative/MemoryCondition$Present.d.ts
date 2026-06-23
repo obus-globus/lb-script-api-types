@@ -11,7 +11,7 @@ export class MemoryCondition$Present<Value extends Object | number | string | bo
     constructor(memory: MemoryModuleType<Value>)
     // private memory: MemoryModuleType<Value>;
     condition(): MemoryStatus;
-    createAccessor(brain: Brain<Object>, value: Optional<Value>): MemoryAccessor<IdF$Mu, Value>;
+    createAccessor(brain: Brain<any>, value: Optional<Value>): MemoryAccessor<IdF$Mu, Value>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     memory(): MemoryModuleType<Value>;

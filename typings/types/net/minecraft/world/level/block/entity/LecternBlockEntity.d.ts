@@ -23,7 +23,7 @@ export class LecternBlockEntity extends BlockEntity implements Clearable, MenuPr
     static NUM_DATA: number;
     static NUM_SLOTS: number;
     static SLOT_BOOK: number;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;

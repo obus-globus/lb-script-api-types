@@ -13,13 +13,13 @@ export class AdvancementRewards extends Record {
     // private experience: number;
     // private function: Optional<CacheableFunction>;
     // private loot: ResourceKey<LootTable>[];
-    // private recipes: ResourceKey<Recipe<Object>>[];
+    // private recipes: ResourceKey<Recipe<any>>[];
     equals(o: Object | null): boolean;
     experience(): number;
     function(): Optional<CacheableFunction>;
     grant(player: ServerPlayer): void;
     hashCode(): number;
     loot(): ResourceKey<LootTable>[];
-    recipes(): ResourceKey<Recipe<Object>>[];
+    recipes(): ResourceKey<Recipe<any>>[];
     toString(): string;
 }

@@ -11,10 +11,10 @@ import type { Property } from '../../../../../../net/minecraft/world/level/block
 export class MultiVariantGenerator extends Object implements BlockModelDefinitionGenerator {
     static dispatch(paramblock: Block, paraminitialModel: MultiVariant): MultiVariantGenerator;
     static dispatch(paramblock: Block): MultiVariantGenerator$Empty;
-    private constructor(block: Block, entries: MultiVariantGenerator$Entry[], seenProperties: Property<Object>[])
+    private constructor(block: Block, entries: MultiVariantGenerator$Entry[], seenProperties: Property<any>[])
     // private block: Block;
     // private entries: MultiVariantGenerator$Entry[];
-    // private seenProperties: Property<Object>[];
+    // private seenProperties: Property<any>[];
     block(): Block;
     create(): BlockStateModelDispatcher;
     with(newStage: PropertyDispatch<(param0: Object | null) => Object | null>): MultiVariantGenerator;

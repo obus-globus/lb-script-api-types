@@ -2,8 +2,7 @@ import type { Protocol } from '../../../../../../com/viaversion/viaversion/api/p
 import type { ClientboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
 import type { PacketWrapper } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { RecipeDisplayRewriter } from '../../../../../../com/viaversion/viaversion/rewriter/RecipeDisplayRewriter.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecipeDisplayRewriter1_21_5<C extends ClientboundPacketType> extends RecipeDisplayRewriter<C> {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
+    constructor(arg0: Protocol<C, any, any, any>)
     handleSmithingTrimSlotDisplay(arg0: PacketWrapper): void;
 }

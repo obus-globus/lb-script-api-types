@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { TranslateLanguage } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.d.ts'
 import type { TranslationResult } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslationResult.d.ts'
 import type { TranslatorMode } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorMode.d.ts'
@@ -11,8 +10,8 @@ import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbo
  */
 export class GoogleTranslateApi extends TranslatorMode {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
-    readonly parent: ModeValueGroup<Object>;
+    constructor(parent: ModeValueGroup<any>)
+    readonly parent: ModeValueGroup<any>;
     /**
      * {@link Reference}(https://github.com/ssut/py-googletrans/issues/268)
      * Updated at 2025/06/11

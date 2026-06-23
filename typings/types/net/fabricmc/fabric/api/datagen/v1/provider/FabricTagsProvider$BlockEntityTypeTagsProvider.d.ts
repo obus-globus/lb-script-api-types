@@ -7,7 +7,7 @@ import type { FabricTagsProvider$FabricIntrinsicHolderTagsProvider } from '../..
 import type { HolderLookup$Provider } from '../../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { BlockEntityType } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
-export abstract class FabricTagsProvider$BlockEntityTypeTagsProvider extends FabricTagsProvider$FabricIntrinsicHolderTagsProvider<BlockEntityType<Object>> {
+export abstract class FabricTagsProvider$BlockEntityTypeTagsProvider extends FabricTagsProvider$FabricIntrinsicHolderTagsProvider<BlockEntityType<any>> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

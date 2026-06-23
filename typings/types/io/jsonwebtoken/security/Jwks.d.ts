@@ -5,7 +5,7 @@ import type { JwkSetParserBuilder } from '../../../io/jsonwebtoken/security/JwkS
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Jwks extends Object {
     static UNSAFE_JSON(paramarg0: { [key: string]: any }): string;
-    static builder(): DynamicJwkBuilder<Object, Object>;
+    static builder(): DynamicJwkBuilder<any, any>;
     static json(paramarg0: { [key: string]: any }): string;
     static parser(): JwkParserBuilder;
     static set(): JwkSetBuilder;

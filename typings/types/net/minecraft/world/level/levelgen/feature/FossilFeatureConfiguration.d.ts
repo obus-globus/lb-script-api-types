@@ -16,5 +16,5 @@ export class FossilFeatureConfiguration extends Object implements FeatureConfigu
     maxEmptyCornersAllowed: number;
     overlayProcessors: Holder<StructureProcessorList>;
     overlayStructures: Identifier[];
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

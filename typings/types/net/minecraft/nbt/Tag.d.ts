@@ -27,7 +27,7 @@ export interface Tag extends Object{
     asString(): Optional<string>;
     copy(): Tag;
     getId(): number;
-    getType(): TagType<Object>;
+    getType(): TagType<any>;
     sizeInBytes(): number;
     write(output: DataOutput): void;
 }

@@ -13,9 +13,9 @@ import type { RecipeBookCategory } from '../../../../../net/minecraft/world/item
 import type { RecipeSerializer } from '../../../../../net/minecraft/world/item/crafting/RecipeSerializer.d.ts'
 import type { RecipeType } from '../../../../../net/minecraft/world/item/crafting/RecipeType.d.ts'
 export abstract class CustomRecipe extends Object implements CraftingRecipe {
-    static CODEC: Codec<Recipe<Object>>;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static CODEC: Codec<Recipe<any>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static defaultCraftingReminder(paraminput: CraftingInput): ItemStack[];
     constructor()
     category(): CraftingBookCategory;

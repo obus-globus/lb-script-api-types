@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -9,7 +8,7 @@ export class AntiVoidBlinkMode extends AntiVoidMode {
     static INSTANCE: AntiVoidBlinkMode;
     // private fakeLagHandler: EventHook<BlinkPacketEvent>;
     /*not mapped: */ isExempt(): boolean;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private /*not mapped: */ getRequiresLag(): boolean;
     /**
      * This method is called to discover a safe position to teleport to.

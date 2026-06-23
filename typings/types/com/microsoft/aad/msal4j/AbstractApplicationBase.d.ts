@@ -16,7 +16,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export abstract class AbstractApplicationBase extends Object implements IApplicationBase {
     static DEFAULT_AUTHORITY: string;
-    constructor(arg0: AbstractApplicationBase$Builder<Object>)
+    constructor(arg0: AbstractApplicationBase$Builder<any>)
     // private authenticationAuthority: Authority;
     // private authority: string;
     // private clientId: string;

@@ -18,7 +18,7 @@ export class ComponentsIngredient extends Object implements CustomIngredient {
     equals(arg0: Object | null): boolean;
     // private getBase(): Ingredient;
     // private getComponents(): DataComponentPatch;
-    getSerializer(): CustomIngredientSerializer<Object>;
+    getSerializer(): CustomIngredientSerializer<any>;
     hashCode(): number;
     items(): Stream<Holder<Item>>;
     requiresTesting(): boolean;

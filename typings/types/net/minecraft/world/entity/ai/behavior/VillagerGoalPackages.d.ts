@@ -7,15 +7,15 @@ export class VillagerGoalPackages extends Object {
     static INTERACT_DIST_SQR: number;
     static INTERACT_SPEED_MODIFIER: number;
     static INTERACT_WALKUP_DIST: number;
-    static getCorePackage(paramprofession: Holder<VillagerProfession>, paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getHidePackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getIdlePackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getMeetPackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getPanicPackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getPlayPackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getPreRaidPackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getRaidPackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getRestPackage(paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
-    static getWorkPackage(paramprofession: Holder<VillagerProfession>, paramspeedModifier: number): Pair<number, BehaviorControl<Object>>[];
+    static getCorePackage(paramprofession: Holder<VillagerProfession>, paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getHidePackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getIdlePackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getMeetPackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getPanicPackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getPlayPackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getPreRaidPackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getRaidPackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getRestPackage(paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
+    static getWorkPackage(paramprofession: Holder<VillagerProfession>, paramspeedModifier: number): Pair<number, BehaviorControl<any>>[];
     constructor()
 }

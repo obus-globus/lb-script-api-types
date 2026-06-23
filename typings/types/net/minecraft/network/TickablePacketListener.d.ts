@@ -18,6 +18,6 @@ export interface TickablePacketListener extends Object, PacketListener{
     onDisconnect(details: DisconnectionDetails): void;
     onPacketError(packet: Packet<PacketListener>, cause: Exception): void;
     protocol(): ConnectionProtocol;
-    shouldHandleMessage(packet: Packet<Object>): boolean;
+    shouldHandleMessage(packet: Packet<any>): boolean;
     tick(): void;
 }

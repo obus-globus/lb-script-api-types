@@ -12,10 +12,10 @@ export class ResourceConditions extends Object {
     static anyModsLoaded(paramarg0: (Object | null)[]): ResourceCondition;
     static featuresEnabled(paramarg0: (Object | null)[]): ResourceCondition;
     static featuresEnabled(paramarg0: (Object | null)[]): ResourceCondition;
-    static getConditionType(paramarg0: Identifier): ResourceConditionType<Object>;
+    static getConditionType(paramarg0: Identifier): ResourceConditionType<any>;
     static not(paramarg0: ResourceCondition): ResourceCondition;
     static or(paramarg0: (Object | null)[]): ResourceCondition;
-    static register(paramarg0: ResourceConditionType<Object>): void;
+    static register(paramarg0: ResourceConditionType<any>): void;
     static registryContains(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: (Object | null)[]): ResourceCondition;
     static registryContains(paramarg0: Object | null): ResourceCondition;
     static tagsPopulated(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Object | null): ResourceCondition;

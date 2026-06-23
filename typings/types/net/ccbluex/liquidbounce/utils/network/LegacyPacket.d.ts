@@ -23,7 +23,7 @@ export interface LegacyPacket extends Object{
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:36}
      */
-    readonly protocol: Class<Protocol<Object, Object, Object, Object>>;
+    readonly protocol: Class<Protocol<any, any, any, any>>;
     /**
      * Writes the actual information to the {@link packetWrapper}.
      *

@@ -1,5 +1,4 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { ProcessorRule } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/ProcessorRule.d.ts'
@@ -11,6 +10,6 @@ export class RuleProcessor extends StructureProcessor {
     static CODEC: MapCodec<RuleProcessor>;
     constructor(rules: ProcessorRule[])
     // private rules: ProcessorRule[];
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
     processBlock(level: LevelReader, targetPosition: BlockPos, referencePos: BlockPos, originalBlockInfo: StructureTemplate$StructureBlockInfo, processedBlockInfo: StructureTemplate$StructureBlockInfo, settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo;
 }

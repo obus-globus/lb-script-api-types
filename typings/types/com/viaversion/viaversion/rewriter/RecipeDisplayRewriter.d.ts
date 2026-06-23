@@ -5,8 +5,8 @@ import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/pr
 import type { RecipeDisplayRewriter$SlotDisplayConsumer } from '../../../../com/viaversion/viaversion/rewriter/RecipeDisplayRewriter$SlotDisplayConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RecipeDisplayRewriter<C extends ClientboundPacketType> extends Object {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
-    // private protocol: Protocol<C, Object, Object, Object>;
+    constructor(arg0: Protocol<C, any, any, any>)
+    // private protocol: Protocol<C, any, any, any>;
     // private slotDisplayHandlers: { [key: string]: (param0: PacketWrapper) => void };
     handleDyedSlotDisplay(arg0: PacketWrapper): void;
     handleFurnace(arg0: PacketWrapper): void;

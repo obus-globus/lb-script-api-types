@@ -29,5 +29,5 @@ export class NetworkSynchronizer extends Object {
     preTaskAdded(arg0: () => void): void;
     reset(): void;
     // private signalMorePackets(): void;
-    waitForPacketHandlers(arg0: BlockableEventLoop<Object>): void;
+    waitForPacketHandlers(arg0: BlockableEventLoop<any>): void;
 }

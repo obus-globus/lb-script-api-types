@@ -13,7 +13,7 @@ import type { EntityRewriter } from '../../../../../com/viaversion/viaversion/re
 import type { EntityDataHandlerEvent } from '../../../../../com/viaversion/viaversion/rewriter/entitydata/EntityDataHandlerEvent.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../java/lang/Number.d.ts'
-export abstract class EntityRewriterBase<C extends ClientboundPacketType, T extends BackwardsProtocol<C, Object, Object, Object>> extends EntityRewriter<C, T> {
+export abstract class EntityRewriterBase<C extends ClientboundPacketType, T extends BackwardsProtocol<C, any, any, any>> extends EntityRewriter<C, T> {
     constructor(arg0: T, arg1: EntityDataType, arg2: number, arg3: EntityDataType, arg4: number)
     // private displayNameDataType: EntityDataType;
     // private displayNameIndex: number;

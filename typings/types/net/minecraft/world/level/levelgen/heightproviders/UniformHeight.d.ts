@@ -14,7 +14,7 @@ export class UniformHeight extends HeightProvider {
     // private maxInclusive: VerticalAnchor;
     // private minInclusive: VerticalAnchor;
     // private warnedFor: (Object | null)[];
-    getType(): HeightProviderType<Object>;
+    getType(): HeightProviderType<any>;
     sample(random: RandomSource, context: WorldGenerationContext): number;
     toString(): string;
 }

@@ -1,4 +1,3 @@
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { MinecraftServer } from '../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { DisplaySlot } from '../../../net/minecraft/world/scores/DisplaySlot.d.ts'
@@ -17,8 +16,8 @@ export class ServerScoreboard extends Scoreboard {
     // private trackedObjectives: Objective[];
     addPlayerToTeam(player: string, team: PlayerTeam): boolean;
     getObjectiveDisplaySlotCount(objective: Objective): number;
-    getStartTrackingPackets(objective: Objective): Packet<Object>[];
-    getStopTrackingPackets(objective: Objective): Packet<Object>[];
+    getStartTrackingPackets(objective: Objective): Packet<any>[];
+    getStopTrackingPackets(objective: Objective): Packet<any>[];
     load(data: ScoreboardSaveData$Packed): void;
     onObjectiveAdded(objective: Objective): void;
     onObjectiveChanged(objective: Objective): void;

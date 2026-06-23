@@ -19,6 +19,6 @@ export class TrackedEntityPosition extends Object {
     constructor(initialPos: Vec3)
     base: Vec3;
     // private codec: VecDeltaCodec;
-    handlePacket(packet: Packet<Object>, level: ClientLevel, target: Entity): Vec3 | null;
+    handlePacket(packet: Packet<any>, level: ClientLevel, target: Entity): Vec3 | null;
     setBaseFrom(entity: Entity): void;
 }

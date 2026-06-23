@@ -20,7 +20,7 @@ import type { ValueInput } from '../../../../../../net/minecraft/world/level/sto
 import type { ValueOutput } from '../../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class SignBlockEntity extends BlockEntity {
     static NBT_ATTACHMENT_KEY: string;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;

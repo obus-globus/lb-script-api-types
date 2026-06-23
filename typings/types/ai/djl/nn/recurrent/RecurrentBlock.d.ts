@@ -3,9 +3,8 @@ import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
 import type { AbstractBlock } from '../../../../ai/djl/nn/AbstractBlock.d.ts'
 import type { RecurrentBlock$BaseBuilder } from '../../../../ai/djl/nn/recurrent/RecurrentBlock$BaseBuilder.d.ts'
 import type { DataInputStream } from '../../../../java/io/DataInputStream.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class RecurrentBlock extends AbstractBlock {
-    constructor(arg0: RecurrentBlock$BaseBuilder<Object>)
+    constructor(arg0: RecurrentBlock$BaseBuilder<any>)
     // private batchFirst: boolean;
     // private bidirectional: boolean;
     // private dropRate: number;

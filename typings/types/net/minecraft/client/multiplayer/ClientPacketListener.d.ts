@@ -211,7 +211,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     constructor(minecraft: Minecraft, connection: Connection, cookie: CommonListenerCookie)
     readonly addon: ClientPlayNetworkAddon;
     readonly advancements: ClientAdvancements;
-    // private cacheSlots: WeakReference<CacheSlot<Object, Object>>[];
+    // private cacheSlots: WeakReference<CacheSlot<any, Object>>[];
     // private chatSession: LocalChatSession;
     // private chunkBatchSizeCalculator: ChunkBatchSizeCalculator;
     // private clientLoaded: boolean;
@@ -433,7 +433,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     // private readSectionList(chunkX: number, chunkZ: number, lightEngine: LevelLightEngine, layer: LightLayer, yMask: BitSet, emptyYMask: BitSet, updates: Iterator<number[]>, scheduleRebuild: boolean): void;
     recipes(): RecipeAccess;
     // private refreshRecipeBook(recipeBook: ClientRecipeBook): void;
-    registerForCleaning(slot: CacheSlot<Object, Object>): void;
+    registerForCleaning(slot: CacheSlot<any, Object>): void;
     registryAccess(): RegistryAccess$Frozen;
     scoreboard(): Scoreboard;
     searchTrees(): SessionSearchTrees;

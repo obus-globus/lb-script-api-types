@@ -19,7 +19,7 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     // private classesBySrcName: { [key: string]: MemoryMappingTree$ClassEntry };
     // private classesView: MemoryMappingTree$ClassEntry[];
     // private currentClass: MemoryMappingTree$ClassEntry;
-    // private currentEntry: MemoryMappingTree$Entry<Object>;
+    // private currentEntry: MemoryMappingTree$Entry<any>;
     // private currentMethod: MemoryMappingTree$MethodEntry;
     // private dstNameMap: number[];
     readonly dstNamespaces: string[];
@@ -28,13 +28,13 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     // private indexByDstNames: boolean;
     // private metadata: MappingTree$MetadataEntry[];
     // private pendingClasses: { [key: string]: MemoryMappingTree$ClassEntry };
-    // private pendingMembers: Map<MemoryMappingTree$GlobalMemberKey, MemoryMappingTree$MemberEntry<Object>>;
+    // private pendingMembers: Map<MemoryMappingTree$GlobalMemberKey, MemoryMappingTree$MemberEntry<any>>;
     readonly srcNamespace: string;
     // private srcNsMap: number;
     accept(arg0: MappingVisitor): void;
     accept(arg0: MappingVisitor, arg1: VisitOrder): void;
     // private addPendingClass(arg0: MemoryMappingTree$ClassEntry): void;
-    // private addPendingMember(arg0: MemoryMappingTree$MemberEntry<Object>): void;
+    // private addPendingMember(arg0: MemoryMappingTree$MemberEntry<any>): void;
     assertNotInVisitPass(): void;
     getClass(arg0: string): MappingTree$ClassMapping;
     getClass(arg0: string, arg1: number): MappingTree$ClassMapping;
@@ -45,7 +45,7 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     // private initClassesByDstNames(): void;
     // private propagateNames<T extends Object | number | string | boolean>(arg0: HierarchyInfoProvider<T>): void;
     // private queuePendingClass(arg0: string): MemoryMappingTree$ClassEntry;
-    // private queuePendingMember(arg0: string, arg1: string, arg2: boolean): MemoryMappingTree$MemberEntry<Object>;
+    // private queuePendingMember(arg0: string, arg1: string, arg2: boolean): MemoryMappingTree$MemberEntry<any>;
     reset(): void;
     // private resizeDstNames(arg0: number): void;
     visitClass(arg0: string): boolean;

@@ -18,7 +18,7 @@ export class SpikeConfiguration extends Record implements FeatureConfiguration {
     canPlaceOn(): BlockPredicate;
     canReplace(): BlockPredicate;
     equals(o: Object | null): boolean;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     state(): BlockState;
     toString(): string;

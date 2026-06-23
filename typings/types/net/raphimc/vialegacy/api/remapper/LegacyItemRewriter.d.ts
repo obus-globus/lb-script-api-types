@@ -8,10 +8,9 @@ import type { ServerboundPacketType } from '../../../../../com/viaversion/viaver
 import type { ItemRewriter } from '../../../../../com/viaversion/viaversion/api/rewriter/ItemRewriter.d.ts'
 import type { RewriterBase } from '../../../../../com/viaversion/viaversion/api/rewriter/RewriterBase.d.ts'
 import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LegacyItemRewriter$NonExistentEntry } from '../../../../../net/raphimc/vialegacy/api/remapper/LegacyItemRewriter$NonExistentEntry.d.ts'
 import type { LegacyItemRewriter$RewriteEntry } from '../../../../../net/raphimc/vialegacy/api/remapper/LegacyItemRewriter$RewriteEntry.d.ts'
-export abstract class LegacyItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, P extends Protocol<C, Object, Object, S>> extends RewriterBase<P> implements ItemRewriter<P> {
+export abstract class LegacyItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, P extends Protocol<C, any, any, S>> extends RewriterBase<P> implements ItemRewriter<P> {
     constructor(arg0: P, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>)
     constructor(arg0: P, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>, arg4: Type<Item>, arg5: Type<Item[]>)
     // private itemArrayType: Type<Item[]>;

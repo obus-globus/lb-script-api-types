@@ -5,7 +5,7 @@ import type { EntityModel } from '../../../../../../net/minecraft/client/model/E
 import type { RenderLayer } from '../../../../../../net/minecraft/client/renderer/entity/layers/RenderLayer.d.ts'
 import type { EntityRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
 export class RegistrationHelperImpl extends Object implements LivingEntityRenderLayerRegistrationCallback$RegistrationHelper {
-    constructor(arg0: (param0: RenderLayer<Object, Object>) => boolean)
-    // private delegate: (param0: RenderLayer<Object, Object>) => boolean;
+    constructor(arg0: (param0: RenderLayer<any, any>) => boolean)
+    // private delegate: (param0: RenderLayer<any, any>) => boolean;
     register<T extends EntityRenderState>(arg0: RenderLayer<T, EntityModel<T>>): void;
 }

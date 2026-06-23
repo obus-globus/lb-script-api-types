@@ -9,14 +9,14 @@ import type { EntityType } from '../../../../../../../net/minecraft/world/entity
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { ItemDisplayContext } from '../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export class ContextEntityType extends Record implements SelectItemModelProperty<ResourceKey<EntityType<Object>>> {
-    static TYPE: SelectItemModelProperty$Type<ContextEntityType, ResourceKey<EntityType<Object>>>;
-    static VALUE_CODEC: Codec<ResourceKey<EntityType<Object>>>;
+export class ContextEntityType extends Record implements SelectItemModelProperty<ResourceKey<EntityType<any>>> {
+    static TYPE: SelectItemModelProperty$Type<ContextEntityType, ResourceKey<EntityType<any>>>;
+    static VALUE_CODEC: Codec<ResourceKey<EntityType<any>>>;
     constructor()
     equals(o: Object | null): boolean;
-    get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): ResourceKey<EntityType<Object>>;
+    get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): ResourceKey<EntityType<any>>;
     hashCode(): number;
     toString(): string;
-    type(): SelectItemModelProperty$Type<ContextEntityType, ResourceKey<EntityType<Object>>>;
-    valueCodec(): Codec<ResourceKey<EntityType<Object>>>;
+    type(): SelectItemModelProperty$Type<ContextEntityType, ResourceKey<EntityType<any>>>;
+    valueCodec(): Codec<ResourceKey<EntityType<any>>>;
 }

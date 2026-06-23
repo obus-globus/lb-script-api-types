@@ -23,5 +23,5 @@ export class MultifaceGrowthConfiguration extends Object implements FeatureConfi
     // private validDirections: Direction[];
     getShuffledDirections(random: RandomSource): Direction[];
     getShuffledDirectionsExcept(random: RandomSource, excludeDirection: Direction): Direction[];
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

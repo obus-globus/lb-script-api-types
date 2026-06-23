@@ -68,7 +68,7 @@ export class Display$ItemDisplay extends Display {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     // private itemRenderState: Display$ItemDisplay$ItemRenderState;
     readonly slot: SlotAccess;
     addAdditionalSaveData(output: ValueOutput): void;

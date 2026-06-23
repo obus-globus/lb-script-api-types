@@ -17,7 +17,7 @@ export class ParticleEngine extends Object implements ParticleEngineAccessor {
     static getParticleRenderTypes(): ParticleRenderType[];
     constructor(level: ClientLevel, resourceManager: ParticleResources)
     level: ClientLevel;
-    // private particles: Map<ParticleRenderType, ParticleGroup<Object>>;
+    // private particles: Map<ParticleRenderType, ParticleGroup<any>>;
     // private particlesToAdd: Particle[];
     // private random: RandomSource;
     resourceManager: ParticleResources;
@@ -27,7 +27,7 @@ export class ParticleEngine extends Object implements ParticleEngineAccessor {
     clearParticles(): void;
     countParticles(): string;
     createParticle(options: ParticleOptions, x: number, y: number, z: number, xa: number, ya: number, za: number): Particle;
-    // private createParticleGroup(type: ParticleRenderType): ParticleGroup<Object>;
+    // private createParticleGroup(type: ParticleRenderType): ParticleGroup<any>;
     createTrackingEmitter(entity: Entity, particle: ParticleOptions): void;
     createTrackingEmitter(entity: Entity, particle: ParticleOptions, lifeTime: number): void;
     extract(particlesRenderState: ParticlesRenderState, frustum: Frustum, camera: Camera, partialTickTime: number): void;

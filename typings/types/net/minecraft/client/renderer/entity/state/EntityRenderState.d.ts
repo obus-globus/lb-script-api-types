@@ -17,7 +17,7 @@ export class EntityRenderState extends Object implements EntityRenderStateAdditi
     boundingBoxWidth: number;
     displayFireAnimation: boolean;
     distanceToCameraSq: number;
-    entityType: EntityType<Object>;
+    entityType: EntityType<any>;
     eyeHeight: number;
     isDiscrete: boolean;
     isInvisible: boolean;

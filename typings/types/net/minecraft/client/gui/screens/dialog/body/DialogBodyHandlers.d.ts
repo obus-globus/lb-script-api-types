@@ -4,6 +4,6 @@ import type { DialogScreen } from '../../../../../../../net/minecraft/client/gui
 import type { DialogBody } from '../../../../../../../net/minecraft/server/dialog/body/DialogBody.d.ts'
 export class DialogBodyHandlers extends Object {
     static bootstrap(): void;
-    static createBodyElement(paramscreen: DialogScreen<Object>, parambody: DialogBody | null): LayoutElement;
+    static createBodyElement(paramscreen: DialogScreen<any>, parambody: DialogBody | null): LayoutElement;
     constructor()
 }

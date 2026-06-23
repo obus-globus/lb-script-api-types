@@ -11,5 +11,5 @@ export class SetContainerContents$Builder extends LootItemConditionalFunction$Bu
     // private entries: ImmutableList$Builder<LootPoolEntryContainer>;
     build(): LootItemFunction;
     getThis(): SetContainerContents$Builder;
-    withEntry(entry: LootPoolEntryContainer$Builder<Object>): SetContainerContents$Builder;
+    withEntry(entry: LootPoolEntryContainer$Builder<any>): SetContainerContents$Builder;
 }

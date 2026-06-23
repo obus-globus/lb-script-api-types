@@ -15,8 +15,8 @@ export class MultiPartGenerator extends Object implements BlockModelDefinitionGe
     // private parts: MultiPartGenerator$Entry[];
     block(): Block;
     create(): BlockStateModelDispatcher;
-    // private validateCondition(condition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean): void;
+    // private validateCondition(condition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean): void;
     with(variants: MultiVariant): MultiPartGenerator;
     with(condition: ConditionBuilder, variants: MultiVariant): MultiPartGenerator;
-    with(condition: (param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean, variants: MultiVariant): MultiPartGenerator;
+    with(condition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, variants: MultiVariant): MultiPartGenerator;
 }

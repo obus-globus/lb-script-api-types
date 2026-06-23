@@ -3,8 +3,8 @@ import type { MessageToMessageEncoder } from '../../../io/netty/handler/codec/Me
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { BundlerInfo } from '../../../net/minecraft/network/protocol/BundlerInfo.d.ts'
 import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts'
-export class PacketBundleUnpacker extends MessageToMessageEncoder<Packet<Object>> {
+export class PacketBundleUnpacker extends MessageToMessageEncoder<Packet<any>> {
     constructor(bundlerInfo: BundlerInfo)
     // private bundlerInfo: BundlerInfo;
-    encode(ctx: ChannelHandlerContext, msg: Packet<Object>, out: Object[]): void;
+    encode(ctx: ChannelHandlerContext, msg: Packet<any>, out: Object[]): void;
 }

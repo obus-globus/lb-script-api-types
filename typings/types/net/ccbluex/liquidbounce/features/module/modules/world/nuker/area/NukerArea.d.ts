@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../../../../../kotlin/Pair.d.ts'
 import type { Mode } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
@@ -9,7 +8,7 @@ import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/V
 export class NukerArea extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     protected isPositionAvailable(eyesPos: Vec3, rangeSquared: number, pos: BlockPos, state: BlockState): boolean;
     lookupTargets(radius: number, count: number | null): Pair<BlockPos, BlockState>[];
 }

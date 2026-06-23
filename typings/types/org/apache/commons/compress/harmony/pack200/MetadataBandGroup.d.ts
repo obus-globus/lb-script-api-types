@@ -15,10 +15,10 @@ export class MetadataBandGroup extends BandSet {
     constructor(arg0: string, arg1: number, arg2: CpBands, arg3: SegmentHeader, arg4: number)
     T: string[];
     anno_N: IntList;
-    caseD_KD: CPConstant<Object>[];
-    caseF_KF: CPConstant<Object>[];
-    caseI_KI: CPConstant<Object>[];
-    caseJ_KJ: CPConstant<Object>[];
+    caseD_KD: CPConstant<any>[];
+    caseF_KF: CPConstant<any>[];
+    caseI_KI: CPConstant<any>[];
+    caseJ_KJ: CPConstant<any>[];
     casearray_N: IntList;
     casec_RS: CPSignature[];
     caseec_RU: CPUTF8[];

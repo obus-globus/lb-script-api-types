@@ -31,7 +31,7 @@ export class Bootstrap extends AbstractBootstrap<Bootstrap, Channel> {
     remoteAddress(arg0: InetAddress, arg1: number): Bootstrap;
     remoteAddress(arg0: SocketAddress): Bootstrap;
     remoteAddress(arg0: string, arg1: number): Bootstrap;
-    resolver(): AddressResolverGroup<Object>;
-    resolver(arg0: AddressResolverGroup<Object>): Bootstrap;
+    resolver(): AddressResolverGroup<any>;
+    resolver(arg0: AddressResolverGroup<any>): Bootstrap;
     validate(): Bootstrap;
 }

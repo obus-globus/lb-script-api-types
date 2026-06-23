@@ -12,9 +12,9 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class RegistryDataRewriter extends Object implements RegistryDataRewriter_2 {
-    constructor(arg0: Protocol<Object, Object, Object, Object>)
+    constructor(arg0: Protocol<any, any, any, any>)
     // private enchantmentEffectHandlers: { [key: string]: (param0: Map$Entry<string, Tag>[]) => void };
-    // private protocol: Protocol<Object, Object, Object, Object>;
+    // private protocol: Protocol<any, any, any, any>;
     // private registryEntryHandlers: { [key: string]: (param0: string, param1: Map$Entry<string, Tag>[]) => void };
     // private registryKeyMappings: { [key: string]: KeyMappings };
     // private toAdd: { [key: string]: RegistryEntry[] };

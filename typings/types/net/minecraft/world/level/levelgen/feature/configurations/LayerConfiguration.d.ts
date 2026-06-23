@@ -12,5 +12,5 @@ export class LayerConfiguration extends Object implements FeatureConfiguration {
     constructor(height: number, state: BlockState)
     height: number;
     state: BlockState;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

@@ -6,7 +6,7 @@ import type { EntityRendererProvider$Context } from '../../../../../../net/minec
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class EntityRendererRegistryImpl extends Object {
-    static register(paramarg0: EntityType<Entity>, paramarg1: (param0: EntityRendererProvider$Context) => EntityRenderer<Entity, Object>): void;
-    static setup(paramarg0: (param0: EntityType<Object>, param1: (param0: EntityRendererProvider$Context) => EntityRenderer<Object, Object>) => void): void;
+    static register(paramarg0: EntityType<Entity>, paramarg1: (param0: EntityRendererProvider$Context) => EntityRenderer<Entity, any>): void;
+    static setup(paramarg0: (param0: EntityType<any>, param1: (param0: EntityRendererProvider$Context) => EntityRenderer<any, any>) => void): void;
     private constructor()
 }

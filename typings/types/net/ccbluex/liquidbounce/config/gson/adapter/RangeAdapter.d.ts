@@ -8,10 +8,10 @@ import type { Type } from '../../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ClosedRange } from '../../../../../../kotlin/ranges/ClosedRange.d.ts'
-export class RangeAdapter extends Object implements JsonDeserializer<ClosedRange<Object>>, JsonSerializer<ClosedRange<Object>> {
+export class RangeAdapter extends Object implements JsonDeserializer<ClosedRange<any>>, JsonSerializer<ClosedRange<any>> {
     static INSTANCE: RangeAdapter;
     // private TYPE_DOUBLE_RANGE: Class<ClosedFloatingPointRange<number>>;
     // private TYPE_FLOAT_RANGE: Class<ClosedFloatingPointRange<number>>;
-    deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext | null): ClosedRange<Object>;
-    serialize(src: ClosedRange<Object>, typeOfSrc: Type, context: JsonSerializationContext): JsonElement;
+    deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext | null): ClosedRange<any>;
+    serialize(src: ClosedRange<any>, typeOfSrc: Type, context: JsonSerializationContext): JsonElement;
 }

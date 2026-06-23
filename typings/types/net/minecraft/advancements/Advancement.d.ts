@@ -17,14 +17,14 @@ export class Advancement extends Record {
     static CODEC: Codec<Advancement>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Advancement>;
     static name(paramholder: AdvancementHolder): Component;
-    // private criteria: { [key: string]: Criterion<Object> };
+    // private criteria: { [key: string]: Criterion<any> };
     // private display: Optional<DisplayInfo>;
     // private name: Optional<Component>;
     // private parent: Optional<Identifier>;
     // private requirements: AdvancementRequirements;
     // private rewards: AdvancementRewards;
     // private sendsTelemetryEvent: boolean;
-    criteria(): { [key: string]: Criterion<Object> };
+    criteria(): { [key: string]: Criterion<any> };
     display(): Optional<DisplayInfo>;
     equals(o: Object | null): boolean;
     hashCode(): number;

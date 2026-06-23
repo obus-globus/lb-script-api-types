@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -20,5 +19,5 @@ export class EnvironmentScanPlacement extends PlacementModifier {
     // private maxSteps: number;
     // private targetCondition: BlockPredicate;
     getPositions(context: PlacementContext, random: RandomSource, origin: BlockPos): Stream<BlockPos>;
-    type(): PlacementModifierType<Object>;
+    type(): PlacementModifierType<any>;
 }

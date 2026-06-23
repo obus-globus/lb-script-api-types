@@ -1,5 +1,4 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -28,7 +27,7 @@ export class JigsawBlockEntity extends BlockEntity {
     static POOL_CODEC: Codec<ResourceKey<StructureTemplatePool>>;
     static SELECTION_PRIORITY: string;
     static TARGET: string;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;

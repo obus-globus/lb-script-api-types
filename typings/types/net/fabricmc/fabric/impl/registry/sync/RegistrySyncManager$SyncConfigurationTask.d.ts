@@ -15,7 +15,7 @@ export class RegistrySyncManager$SyncConfigurationTask extends Record implements
     handler(): ServerConfigurationPacketListenerImpl;
     hashCode(): number;
     map(): Map<Identifier, { [key: string]: any }>;
-    start(arg0: (param0: Packet<Object>) => void): void;
+    start(arg0: (param0: Packet<any>) => void): void;
     tick(): boolean;
     toString(): string;
     type(): ConfigurationTask$Type;

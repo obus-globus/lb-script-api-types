@@ -5,9 +5,9 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { SelectableRecipe$SingleInputEntry } from '../../../../../net/minecraft/world/item/crafting/SelectableRecipe$SingleInputEntry.d.ts'
-export class SelectableRecipe$SingleInputSet<T extends Recipe<Object>> extends Record {
-    static empty(): SelectableRecipe$SingleInputSet<Object>;
-    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe$SingleInputSet<Object>>;
+export class SelectableRecipe$SingleInputSet<T extends Recipe<any>> extends Record {
+    static empty(): SelectableRecipe$SingleInputSet<any>;
+    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe$SingleInputSet<any>>;
     constructor(entries: SelectableRecipe$SingleInputEntry<T>[])
     // private entries: SelectableRecipe$SingleInputEntry<T>[];
     acceptsInput(input: ItemStack): boolean;

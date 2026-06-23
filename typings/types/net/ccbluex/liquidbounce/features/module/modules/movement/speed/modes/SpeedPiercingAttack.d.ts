@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -7,7 +6,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../net/ccbluex/liqui
 import type { SwingMode } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/block/SwingMode.d.ts'
 export class SpeedPiercingAttack extends SpeedBHopBase {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private holdTime: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getHoldTime(): { start: number; endInclusive: number; step: number };
     // private ignoreHunger: boolean;

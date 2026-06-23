@@ -23,7 +23,7 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     add(arg0: LootPoolEntryContainer[]): LootPool$Builder;
     add(arg0: LootPoolEntryContainer): LootPool$Builder;
     add(arg0: (Object | null)[]): LootPool$Builder;
-    add(entry: LootPoolEntryContainer$Builder<Object>): LootPool$Builder;
+    add(entry: LootPoolEntryContainer$Builder<any>): LootPool$Builder;
     apply(arg0: LootItemFunction[]): LootPool$Builder;
     apply(arg0: LootItemFunction): LootPool$Builder;
     apply<E extends Object | number | string | boolean>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;

@@ -4,5 +4,5 @@ import type { EntityType } from '../../../../net/minecraft/world/entity/EntityTy
 import type { LevelReader } from '../../../../net/minecraft/world/level/LevelReader.d.ts'
 export interface SpawnPlacementType extends Object{
     adjustSpawnPosition(level: LevelReader, candidate: BlockPos): BlockPos;
-    isSpawnPositionOk(level: LevelReader, blockPos: BlockPos, type: EntityType<Object>): boolean;
+    isSpawnPositionOk(level: LevelReader, blockPos: BlockPos, type: EntityType<any>): boolean;
 }

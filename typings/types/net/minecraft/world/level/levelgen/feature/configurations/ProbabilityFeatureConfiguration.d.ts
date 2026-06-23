@@ -10,5 +10,5 @@ export class ProbabilityFeatureConfiguration extends Object implements FeatureCo
     static NONE: NoneFeatureConfiguration;
     constructor(probability: number)
     probability: number;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

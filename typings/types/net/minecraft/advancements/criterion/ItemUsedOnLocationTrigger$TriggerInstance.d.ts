@@ -17,8 +17,8 @@ export class ItemUsedOnLocationTrigger$TriggerInstance extends Record implements
     static itemUsedOnBlock(paramlocation: LocationPredicate$Builder, paramitem: ItemPredicate$Builder): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlock(paramblock: Block): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlock(paramconditions: (Object | null)[]): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
-    static placedBlockWithProperties(paramblock: Block, paramproperties: Property<Object>, parampropertyValue: Object | null): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
-    static placedBlockWithProperties(paramblock: Block, paramproperty: Property<Object>, parampropertyValue: string): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
+    static placedBlockWithProperties(paramblock: Block, paramproperties: Property<any>, parampropertyValue: Object | null): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
+    static placedBlockWithProperties(paramblock: Block, paramproperty: Property<any>, parampropertyValue: string): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperty: Property<boolean>, parampropertyValue: boolean): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperty: Property<number>, parampropertyValue: number): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     constructor(player: Optional<ContextAwarePredicate>, location: Optional<ContextAwarePredicate>)

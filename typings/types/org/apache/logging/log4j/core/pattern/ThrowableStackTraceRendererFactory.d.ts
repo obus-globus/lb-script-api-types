@@ -3,5 +3,5 @@ import type { ThrowableFormatOptions } from '../../../../../../org/apache/loggin
 import type { ThrowableStackTraceRenderer } from '../../../../../../org/apache/logging/log4j/core/pattern/ThrowableStackTraceRenderer.d.ts'
 export class ThrowableStackTraceRendererFactory extends Object {
     constructor()
-    createStackTraceRenderer(options: ThrowableFormatOptions): ThrowableStackTraceRenderer<Object>;
+    createStackTraceRenderer(options: ThrowableFormatOptions): ThrowableStackTraceRenderer<any>;
 }

@@ -21,7 +21,7 @@ export class SingleItemRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static stonecutting(paramingredient: Ingredient, paramcategory: RecipeCategory, paramresult: ItemLike, paramcount: number): SingleItemRecipeBuilder;
     private constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemStackTemplate)
     constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemLike, count: number)
@@ -30,10 +30,10 @@ export class SingleItemRecipeBuilder extends Object implements RecipeBuilder {
     // private factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null;
     // private ingredient: Ingredient;
     // private result: ItemStackTemplate;
-    defaultId(): ResourceKey<Recipe<Object>>;
+    defaultId(): ResourceKey<Recipe<any>>;
     group(group: string): SingleItemRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlockedBy(name: string, criterion: Criterion<Object>): SingleItemRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlockedBy(name: string, criterion: Criterion<any>): SingleItemRecipeBuilder;
 }

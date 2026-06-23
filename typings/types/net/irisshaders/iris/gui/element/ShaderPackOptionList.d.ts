@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NavigationController } from '../../../../../net/irisshaders/iris/gui/NavigationController.d.ts'
 import type { IrisContainerObjectSelectionList } from '../../../../../net/irisshaders/iris/gui/element/IrisContainerObjectSelectionList.d.ts'
 import type { ShaderPackOptionList$BaseEntry } from '../../../../../net/irisshaders/iris/gui/element/ShaderPackOptionList$BaseEntry.d.ts'
@@ -19,11 +18,11 @@ export class ShaderPackOptionList extends IrisContainerObjectSelectionList<Shade
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
     constructor(arg0: ShaderPackScreen, arg1: NavigationController, arg2: ShaderPack, arg3: Minecraft, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number)
     // private container: OptionMenuContainer;
-    // private elementWidgets: AbstractElementWidget<Object>[];
+    // private elementWidgets: AbstractElementWidget<any>[];
     readonly navigation: NavigationController;
     // private screen: ShaderPackScreen;
     addHeader(arg0: Component, arg1: boolean): void;
-    addWidgets(arg0: number, arg1: AbstractElementWidget<Object>[]): void;
+    addWidgets(arg0: number, arg1: AbstractElementWidget<any>[]): void;
     applyShaderPack(arg0: ShaderPack): void;
     extractListBackground(arg0: GuiGraphicsExtractor): void;
     extractListSeparators(arg0: GuiGraphicsExtractor): void;

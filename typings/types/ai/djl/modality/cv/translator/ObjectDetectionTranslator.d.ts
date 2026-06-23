@@ -3,9 +3,8 @@ import type { BaseImageTranslator } from '../../../../../ai/djl/modality/cv/tran
 import type { BaseImageTranslator$SynsetLoader } from '../../../../../ai/djl/modality/cv/translator/BaseImageTranslator$SynsetLoader.d.ts'
 import type { ObjectDetectionTranslator$ObjectDetectionBuilder } from '../../../../../ai/djl/modality/cv/translator/ObjectDetectionTranslator$ObjectDetectionBuilder.d.ts'
 import type { TranslatorContext } from '../../../../../ai/djl/translate/TranslatorContext.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ObjectDetectionTranslator extends BaseImageTranslator<DetectedObjects> {
-    constructor(arg0: ObjectDetectionTranslator$ObjectDetectionBuilder<Object>)
+    constructor(arg0: ObjectDetectionTranslator$ObjectDetectionBuilder<any>)
     // private applyRatio: boolean;
     // private classes: string[];
     // private removePadding: boolean;

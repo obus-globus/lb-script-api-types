@@ -28,7 +28,7 @@ export class FluidState extends StateHolder<Fluid, FluidState> implements TypedI
     static CODEC: Codec<FluidState>;
     static NAME_TAG: string;
     static PROPERTIES_TAG: string;
-    constructor(owner: Fluid, propertyKeys: Property<Object>[], propertyValues: Comparable<Object>[])
+    constructor(owner: Fluid, propertyKeys: Property<any>[], propertyValues: Comparable<Object>[])
     // private isEmptyCache: boolean;
     animateTick(level: Level, pos: BlockPos, random: RandomSource): void;
     canBeReplacedWith(level: BlockGetter, pos: BlockPos, other: Fluid, direction: Direction): boolean;

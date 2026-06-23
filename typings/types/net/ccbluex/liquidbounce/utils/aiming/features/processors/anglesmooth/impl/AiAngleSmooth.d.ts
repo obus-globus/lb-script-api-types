@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { TwoDimensionalRegressionModel } from '../../../../../../../../../net/ccbluex/liquidbounce/deeplearn/models/TwoDimensionalRegressionModel.d.ts'
@@ -19,7 +18,7 @@ import type { AiAngleSmooth$OutputMultiplier } from '../../../../../../../../../
 export class AiAngleSmooth extends AngleSmooth {
     static Companion: Tagged$Companion;
     static Companion: AiAngleSmooth$Companion;
-    constructor(parent: ModeValueGroup<Object>, fallback: AngleSmooth)
+    constructor(parent: ModeValueGroup<any>, fallback: AngleSmooth)
     // private choices: ModeValueGroup<TwoDimensionalRegressionModel>;
     // private correctionMode: ModeValueGroup<AngleSmooth>;
     readonly fallback: AngleSmooth;

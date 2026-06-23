@@ -6,10 +6,10 @@ import type { ConfiguredWorldCarver } from '../../../../../net/minecraft/world/l
 import type { PlacedFeature } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
 export class EndBiomes extends Object {
     static baseEndBiome(paramgeneration: BiomeGenerationSettings$Builder): Biome;
-    static endBarrens(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static endHighlands(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static endMidlands(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static smallEndIslands(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
-    static theEnd(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<Object>>): Biome;
+    static endBarrens(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static endHighlands(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static endMidlands(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static smallEndIslands(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
+    static theEnd(paramplacedFeatures: HolderGetter<PlacedFeature>, paramcarvers: HolderGetter<ConfiguredWorldCarver<any>>): Biome;
     constructor()
 }

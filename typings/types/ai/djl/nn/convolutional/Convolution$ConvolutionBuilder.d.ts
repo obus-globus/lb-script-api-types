@@ -1,6 +1,6 @@
 import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class Convolution$ConvolutionBuilder<T extends Convolution$ConvolutionBuilder<Convolution$ConvolutionBuilder<Object>>> extends Object {
+export abstract class Convolution$ConvolutionBuilder<T extends Convolution$ConvolutionBuilder<Convolution$ConvolutionBuilder<any>>> extends Object {
     constructor()
     // private dilation: Shape;
     // private filters: number;

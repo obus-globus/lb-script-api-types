@@ -20,7 +20,7 @@ export class Products$P1<F extends K1, T1 extends Object | number | string | boo
     and<T2 extends Object | number | string | boolean, T3 extends Object | number | string | boolean, T4 extends Object | number | string | boolean, T5 extends Object | number | string | boolean, T6 extends Object | number | string | boolean, T7 extends Object | number | string | boolean>(arg0: Products$P6<F, T2, T3, T4, T5, T6, T7>): Products$P7<F, T1, T2, T3, T4, T5, T6, T7>;
     and<T2 extends Object | number | string | boolean, T3 extends Object | number | string | boolean, T4 extends Object | number | string | boolean, T5 extends Object | number | string | boolean, T6 extends Object | number | string | boolean, T7 extends Object | number | string | boolean, T8 extends Object | number | string | boolean>(arg0: Products$P7<F, T2, T3, T4, T5, T6, T7, T8>): Products$P8<F, T1, T2, T3, T4, T5, T6, T7, T8>;
     and<T2 extends Object | number | string | boolean>(arg0: App<F, T2>): Products$P2<F, T1, T2>;
-    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: App<F, (param0: T1) => R>): App<F, R>;
-    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, Object>, arg1: (param0: T1) => R): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: App<F, (param0: T1) => R>): App<F, R>;
+    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: (param0: T1) => R): App<F, R>;
     t1(): App<F, T1>;
 }

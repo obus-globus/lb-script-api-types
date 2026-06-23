@@ -9,7 +9,7 @@ import type { StuckInBodyLayer$PlacementStyle } from '../../../../../../net/mine
 import type { AvatarRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/AvatarRenderState.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export abstract class StuckInBodyLayer<M extends PlayerModel, S extends Object | number | string | boolean> extends RenderLayer<AvatarRenderState, M> {
-    constructor(renderer: LivingEntityRenderer<Object, AvatarRenderState, M>, model: Model<S>, modelState: S, texture: Identifier, placementStyle: StuckInBodyLayer$PlacementStyle)
+    constructor(renderer: LivingEntityRenderer<any, AvatarRenderState, M>, model: Model<S>, modelState: S, texture: Identifier, placementStyle: StuckInBodyLayer$PlacementStyle)
     // private model: Model<S>;
     // private modelState: S;
     // private placementStyle: StuckInBodyLayer$PlacementStyle;

@@ -10,11 +10,11 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class ImmutableRangeMap<K extends Comparable<Object>, V extends Object | number | string | boolean> extends Object implements RangeMap<K, V>, Serializable {
-    static builder(): ImmutableRangeMap$Builder<Object, Object>;
-    static copyOf(paramrangeMap: RangeMap<Object, Object>): ImmutableRangeMap<Object, Object>;
-    static of(): ImmutableRangeMap<Object, Object>;
-    static of(paramrange: Range<Object>, paramvalue: Object | null): ImmutableRangeMap<Object, Object>;
-    static toImmutableRangeMap(paramkeyFunction: (param0: Object) => Range<Object>, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableRangeMap<Object, Object>>;
+    static builder(): ImmutableRangeMap$Builder<any, Object>;
+    static copyOf(paramrangeMap: RangeMap<any, Object>): ImmutableRangeMap<any, Object>;
+    static of(): ImmutableRangeMap<any, Object>;
+    static of(paramrange: Range<any>, paramvalue: Object | null): ImmutableRangeMap<any, Object>;
+    static toImmutableRangeMap(paramkeyFunction: (param0: Object) => Range<any>, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableRangeMap<any, Object>>;
     constructor(ranges: Range<K>[], values: V[])
     // private ranges: Range<K>[];
     // private values: V[];

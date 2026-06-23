@@ -11,9 +11,9 @@ export class SynchronizeRegistriesTask extends Object implements ConfigurationTa
     constructor(knownPacks: KnownPack[], registries: LayeredRegistryAccess<RegistryLayer>)
     // private registries: LayeredRegistryAccess<RegistryLayer>;
     // private requestedPacks: KnownPack[];
-    handleResponse(acceptedPacks: KnownPack[], connection: (param0: Packet<Object>) => void): void;
-    // private sendRegistries(connection: (param0: Packet<Object>) => void, negotiatedPacks: KnownPack[]): void;
-    start(connection: (param0: Packet<Object>) => void): void;
+    handleResponse(acceptedPacks: KnownPack[], connection: (param0: Packet<any>) => void): void;
+    // private sendRegistries(connection: (param0: Packet<any>) => void, negotiatedPacks: KnownPack[]): void;
+    start(connection: (param0: Packet<any>) => void): void;
     tick(): boolean;
     type(): ConfigurationTask$Type;
 }

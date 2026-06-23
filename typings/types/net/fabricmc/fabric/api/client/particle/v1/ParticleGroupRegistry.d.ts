@@ -7,7 +7,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 export class ParticleGroupRegistry extends Object {
     static getId(paramarg0: ParticleRenderType): Identifier;
     static getParticleRenderType(paramarg0: Identifier): ParticleRenderType;
-    static register(paramarg0: ParticleRenderType, paramarg1: (param0: ParticleEngine) => ParticleGroup<Object>): void;
+    static register(paramarg0: ParticleRenderType, paramarg1: (param0: ParticleEngine) => ParticleGroup<any>): void;
     static registerOrdering(paramarg0: ParticleRenderType, paramarg1: ParticleRenderType): void;
     static registerOrdering(paramarg0: ParticleRenderType, paramarg1: Identifier): void;
     static registerOrdering(paramarg0: Identifier, paramarg1: ParticleRenderType): void;

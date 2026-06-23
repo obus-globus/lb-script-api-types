@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { WorldGenLevel } from '../../../../../../net/minecraft/world/level/WorldGenLevel.d.ts'
 import type { BlockPredicate } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicate.d.ts'
@@ -15,5 +14,5 @@ export class AnyOfPredicate extends CombiningPredicate {
     static codec(paramconstructor: (param0: BlockPredicate[]) => CombiningPredicate | null): MapCodec<CombiningPredicate>;
     constructor(predicates: BlockPredicate[])
     test(level: WorldGenLevel, origin: BlockPos): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

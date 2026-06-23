@@ -13,5 +13,5 @@ export class ListTraversal<A extends Object | number | string | boolean, B exten
     private constructor()
     eval<P extends K2>(arg0: App<TraversalP$Mu, P>): FunctionType<App2<P, A, B>, App2<P, A[], B[]>>;
     toString(): string;
-    wander<F extends K1>(arg0: Applicative<F, Object>, arg1: FunctionType<A, App<F, B>>): FunctionType<A[], App<F, B[]>>;
+    wander<F extends K1>(arg0: Applicative<F, any>, arg1: FunctionType<A, App<F, B>>): FunctionType<A[], App<F, B[]>>;
 }

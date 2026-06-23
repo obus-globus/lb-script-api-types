@@ -1,5 +1,4 @@
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { Tagged } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'

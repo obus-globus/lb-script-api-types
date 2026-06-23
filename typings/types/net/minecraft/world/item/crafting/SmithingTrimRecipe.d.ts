@@ -1,7 +1,6 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -17,11 +16,11 @@ import type { SmithingRecipeInput } from '../../../../../net/minecraft/world/ite
 import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplay.d.ts'
 import type { TrimPattern } from '../../../../../net/minecraft/world/item/equipment/trim/TrimPattern.d.ts'
 export class SmithingTrimRecipe extends SimpleSmithingRecipe {
-    static CODEC: Codec<Recipe<Object>>;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
+    static CODEC: Codec<Recipe<any>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<SmithingTrimRecipe>;
     static SERIALIZER: RecipeSerializer<SmithingTrimRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SmithingTrimRecipe>;
     static applyTrim(parambaseItem: ItemStack, parammaterialItem: ItemStack, parampattern: Holder<TrimPattern>): ItemStack;
     constructor(commonInfo: Recipe$CommonInfo, template: Ingredient, base: Ingredient, addition: Ingredient, pattern: Holder<TrimPattern>)

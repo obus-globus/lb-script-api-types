@@ -24,11 +24,11 @@ export class InventoryUtilsKt extends Object {
     static findBestToolToMineBlock(iterable: (ItemSlot | null)[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): ItemSlot | null;
     static findBlocksEndingWith(targets: (Object | null)[]): Block[];
     static findEmptyStorageSlotsInInventory(): ItemSlot[];
-    static findItemsInContainer(abstractContainerScreen: AbstractContainerScreen<Object>): ContainerItemSlot[];
+    static findItemsInContainer(abstractContainerScreen: AbstractContainerScreen<any>): ContainerItemSlot[];
     static findNonEmptySlotsInInventory(): ItemSlot[];
     static findNonEmptyStorageSlotsInInventory(): ItemSlot[];
-    static getSlotsInContainer(abstractContainerScreen: AbstractContainerScreen<Object>): ContainerItemSlot[];
-    static getTypeOrNull(paramarg0: AbstractContainerMenu): MenuType<Object>;
+    static getSlotsInContainer(abstractContainerScreen: AbstractContainerScreen<any>): ContainerItemSlot[];
+    static getTypeOrNull(paramarg0: AbstractContainerMenu): MenuType<any>;
     static hasInventorySpace(): boolean;
     static mergeableCapacityFor(paramarg0: ItemSlot[], paramarg1: ItemStack, paramarg2: ItemSlot[]): number;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot): InteractionResult;

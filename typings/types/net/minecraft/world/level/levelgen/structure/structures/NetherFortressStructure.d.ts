@@ -4,7 +4,6 @@ import type { RecordCodecBuilder } from '../../../../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { WeightedList } from '../../../../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { MobSpawnSettings$SpawnerData } from '../../../../../../../net/minecraft/world/level/biome/MobSpawnSettings$SpawnerData.d.ts'
@@ -23,5 +22,5 @@ export class NetherFortressStructure extends Structure {
     static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Structure | null): MapCodec<Structure>;
     constructor(settings: Structure$StructureSettings)
     findGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
-    type(): StructureType<Object>;
+    type(): StructureType<any>;
 }

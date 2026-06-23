@@ -23,9 +23,9 @@ import type { SensorType } from '../../../../../net/minecraft/world/entity/ai/se
 import type { Activity } from '../../../../../net/minecraft/world/entity/schedule/Activity.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class Brain<E extends LivingEntity> extends Object implements MemoryModificationCounter, BrainAccessor<LivingEntity> {
-    static provider(parammemoryTypes: MemoryModuleType<Object>[], paramsensorTypes: SensorType<Sensor<Object>>[], paramactivities: (param0: LivingEntity | null) => ActivityData<LivingEntity>[]): Brain$Provider<LivingEntity>;
-    static provider(paramsensorTypes: SensorType<Sensor<Object>>[]): Brain$Provider<LivingEntity>;
-    static provider(paramsensorTypes: SensorType<Sensor<Object>>[], paramactivities: (param0: LivingEntity | null) => ActivityData<LivingEntity>[]): Brain$Provider<LivingEntity>;
+    static provider(parammemoryTypes: MemoryModuleType<Object>[], paramsensorTypes: SensorType<Sensor<any>>[], paramactivities: (param0: LivingEntity | null) => ActivityData<LivingEntity>[]): Brain$Provider<LivingEntity>;
+    static provider(paramsensorTypes: SensorType<Sensor<any>>[]): Brain$Provider<LivingEntity>;
+    static provider(paramsensorTypes: SensorType<Sensor<any>>[], paramactivities: (param0: LivingEntity | null) => ActivityData<LivingEntity>[]): Brain$Provider<LivingEntity>;
     constructor(memoryTypes: MemoryModuleType<Object>[], sensorTypes: SensorType<Sensor<E>>[], activities: ActivityData<E>[], memories: MemoryMap$Value<Object>[], randomSource: RandomSource)
     constructor()
     readonly activeActivities: Activity[];

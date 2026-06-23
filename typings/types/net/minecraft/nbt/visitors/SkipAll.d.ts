@@ -8,10 +8,10 @@ export interface SkipAll extends Object, StreamTagVisitor{
     visit(value: number[]): StreamTagVisitor$ValueResult;
     visit(value: string): StreamTagVisitor$ValueResult;
     visitContainerEnd(): StreamTagVisitor$ValueResult;
-    visitElement(type: TagType<Object>, index: number): StreamTagVisitor$EntryResult;
+    visitElement(type: TagType<any>, index: number): StreamTagVisitor$EntryResult;
     visitEnd(): StreamTagVisitor$ValueResult;
-    visitEntry(type: TagType<Object>): StreamTagVisitor$EntryResult;
-    visitEntry(type: TagType<Object>, id: string): StreamTagVisitor$EntryResult;
-    visitList(elementType: TagType<Object>, size: number): StreamTagVisitor$ValueResult;
-    visitRootEntry(type: TagType<Object>): StreamTagVisitor$ValueResult;
+    visitEntry(type: TagType<any>): StreamTagVisitor$EntryResult;
+    visitEntry(type: TagType<any>, id: string): StreamTagVisitor$EntryResult;
+    visitList(elementType: TagType<any>, size: number): StreamTagVisitor$ValueResult;
+    visitRootEntry(type: TagType<any>): StreamTagVisitor$ValueResult;
 }

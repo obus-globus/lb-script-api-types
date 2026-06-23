@@ -9,7 +9,7 @@ export abstract class ModuleDebugRecorder$DebugRecorderMode<T extends Object | n
     readonly folder: File;
     // private packets: T[];
     /*not mapped: */ getPackets$liquidbounce(): T[];
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     disable(): void;
     enable(): void;
     protected recordPacket(packet: T): void;

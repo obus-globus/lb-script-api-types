@@ -5,5 +5,5 @@ import type { Recognizer } from '../../../../../org/antlr/v4/runtime/Recognizer.
 export class EnhancedParser$ThrowingErrorListener extends BaseErrorListener {
     static INSTANCE: EnhancedParser$ThrowingErrorListener;
     private constructor()
-    syntaxError(arg0: Recognizer<Object, Object>, arg1: Object, arg2: number, arg3: number, arg4: string, arg5: RecognitionException): void;
+    syntaxError(arg0: Recognizer<Object, any>, arg1: Object, arg2: number, arg3: number, arg4: string, arg5: RecognitionException): void;
 }

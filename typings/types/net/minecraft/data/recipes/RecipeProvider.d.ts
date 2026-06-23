@@ -122,7 +122,7 @@ export abstract class RecipeProvider extends Object {
     threeByThreePacker(category: RecipeCategory, result: ItemLike, ingredient: ItemLike, unlockedBy: string): void;
     tilesBuilder(category: RecipeCategory, result: ItemLike, base: Ingredient): RecipeBuilder;
     trapdoorBuilder(result: ItemLike, base: Ingredient): RecipeBuilder;
-    trimSmithing(trimTemplate: Item, patternId: ResourceKey<TrimPattern>, id: ResourceKey<Recipe<Object>>): void;
+    trimSmithing(trimTemplate: Item, patternId: ResourceKey<TrimPattern>, id: ResourceKey<Recipe<any>>): void;
     twoByTwoPacker(category: RecipeCategory, result: ItemLike, ingredient: ItemLike): void;
     wall(category: RecipeCategory, result: ItemLike, base: ItemLike): void;
     wallBuilder(category: RecipeCategory, result: ItemLike, base: Ingredient): RecipeBuilder;

@@ -42,7 +42,7 @@ export abstract class Invokable<T extends Object | number | string | boolean, R 
     getParameterAnnotations(): Annotation[][];
     getParameters(): Parameter[];
     getReturnType(): TypeToken<R>;
-    getTypeParameters(): TypeVariable<Object>[];
+    getTypeParameters(): TypeVariable<any>[];
     hashCode(): number;
     invoke(receiver: T, args: Object[]): R;
     invokeInternal(receiver: Object, args: Object[]): Object;

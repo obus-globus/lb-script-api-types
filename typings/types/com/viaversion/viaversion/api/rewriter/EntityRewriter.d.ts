@@ -5,7 +5,7 @@ import type { EntityData } from '../../../../../com/viaversion/viaversion/api/mi
 import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { Rewriter } from '../../../../../com/viaversion/viaversion/api/rewriter/Rewriter.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface EntityRewriter<T extends Protocol<Object, Object, Object, Object>> extends Rewriter<T>, Object{
+export interface EntityRewriter<T extends Protocol<any, any, any, any>> extends Rewriter<T>, Object{
     handleEntityData(arg0: number, arg1: EntityData[], arg2: UserConnection): void;
     mappedEntityIdentifier(arg0: string): string;
     newEntityId(arg0: number): number;

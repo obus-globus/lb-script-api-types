@@ -51,5 +51,5 @@ export abstract class Structure extends Object {
     spawnOverrides(): { [key in MobCategory]: StructureSpawnOverride };
     step(): GenerationStep$Decoration;
     terrainAdaptation(): TerrainAdjustment;
-    type(): StructureType<Object>;
+    type(): StructureType<any>;
 }

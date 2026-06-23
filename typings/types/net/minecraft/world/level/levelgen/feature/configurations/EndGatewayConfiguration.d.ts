@@ -16,6 +16,6 @@ export class EndGatewayConfiguration extends Object implements FeatureConfigurat
     // private exact: boolean;
     readonly exit: Optional<BlockPos>;
     getExit(): Optional<BlockPos>;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     isExitExact(): boolean;
 }

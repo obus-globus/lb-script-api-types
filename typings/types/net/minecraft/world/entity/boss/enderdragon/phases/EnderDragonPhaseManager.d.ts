@@ -9,5 +9,5 @@ export class EnderDragonPhaseManager extends Object {
     // private phases: DragonPhaseInstance[];
     getCurrentPhase(): DragonPhaseInstance;
     getPhase<T extends DragonPhaseInstance>(phase: EnderDragonPhase<T>): T;
-    setPhase(target: EnderDragonPhase<Object>): void;
+    setPhase(target: EnderDragonPhase<any>): void;
 }

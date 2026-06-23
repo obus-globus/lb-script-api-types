@@ -16,5 +16,5 @@ export class FallenTreeConfiguration extends Object implements FeatureConfigurat
     logLength: IntProvider;
     stumpDecorators: TreeDecorator[];
     trunkProvider: BlockStateProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

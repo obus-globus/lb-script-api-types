@@ -1,5 +1,4 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
@@ -13,7 +12,7 @@ export class BlockAgeProcessor extends StructureProcessor {
     constructor(mossiness: number)
     // private mossiness: number;
     // private getRandomBlock(random: RandomSource, nonMossyBlocks: BlockState[], mossyBlocks: BlockState[]): BlockState;
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
     // private maybeReplaceFullStoneBlock(random: RandomSource): BlockState;
     // private maybeReplaceObsidian(random: RandomSource): BlockState;
     // private maybeReplaceSlab(blockState: BlockState, random: RandomSource): BlockState;

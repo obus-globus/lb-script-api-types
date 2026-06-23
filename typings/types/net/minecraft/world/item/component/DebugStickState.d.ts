@@ -7,11 +7,11 @@ import type { Property } from '../../../../../net/minecraft/world/level/block/st
 export class DebugStickState extends Record {
     static CODEC: Codec<DebugStickState>;
     static EMPTY: DebugStickState;
-    constructor(properties: Map<Holder<Block>, Property<Object>>)
-    // private properties: Map<Holder<Block>, Property<Object>>;
+    constructor(properties: Map<Holder<Block>, Property<any>>)
+    // private properties: Map<Holder<Block>, Property<any>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    properties(): Map<Holder<Block>, Property<Object>>;
+    properties(): Map<Holder<Block>, Property<any>>;
     toString(): string;
-    withProperty(block: Holder<Block>, property: Property<Object>): DebugStickState;
+    withProperty(block: Holder<Block>, property: Property<any>): DebugStickState;
 }

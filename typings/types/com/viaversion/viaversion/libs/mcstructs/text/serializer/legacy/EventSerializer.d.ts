@@ -4,14 +4,14 @@ import type { Predicate } from '../../../../../../../../java/util/function/Predi
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class EventSerializer<R extends Object | number | string | boolean, T extends R, A extends Enum<A>, IO extends Object | number | string | boolean> extends Object {
-    constructor(arg0: (param0: R) => boolean, arg1: (param0: SNbt<Object>, param1: T) => IO, arg2: A, arg3: (param0: SNbt<Object>, param1: IO) => T)
+    constructor(arg0: (param0: R) => boolean, arg1: (param0: SNbt<any>, param1: T) => IO, arg2: A, arg3: (param0: SNbt<any>, param1: IO) => T)
     readonly action: A;
     // private classMatcher: (param0: R) => boolean;
-    // private deserializer: (param0: SNbt<Object>, param1: IO) => T;
-    // private serializer: (param0: SNbt<Object>, param1: T) => IO;
-    deserialize(arg0: SNbt<Object>, arg1: IO): T;
+    // private deserializer: (param0: SNbt<any>, param1: IO) => T;
+    // private serializer: (param0: SNbt<any>, param1: T) => IO;
+    deserialize(arg0: SNbt<any>, arg1: IO): T;
     getAction(): A;
     matches(arg0: A): boolean;
     matches(arg0: R): boolean;
-    serialize(arg0: SNbt<Object>, arg1: T): IO;
+    serialize(arg0: SNbt<any>, arg1: T): IO;
 }

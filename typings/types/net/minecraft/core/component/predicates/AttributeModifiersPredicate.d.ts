@@ -15,10 +15,10 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { ItemAttributeModifiers } from '../../../../../net/minecraft/world/item/component/ItemAttributeModifiers.d.ts'
 import type { ItemAttributeModifiers$Entry } from '../../../../../net/minecraft/world/item/component/ItemAttributeModifiers$Entry.d.ts'
 export class AttributeModifiersPredicate extends Record implements SingleComponentItemPredicate<ItemAttributeModifiers> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<AttributeModifiersPredicate>;
-    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<Object>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<Object>, DataComponentPredicate>>;
+    static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(modifiers: Optional<CollectionPredicate<ItemAttributeModifiers$Entry, AttributeModifiersPredicate$EntryPredicate>>)
     // private modifiers: Optional<CollectionPredicate<ItemAttributeModifiers$Entry, AttributeModifiersPredicate$EntryPredicate>>;
     componentType(): DataComponentType<ItemAttributeModifiers>;

@@ -47,7 +47,7 @@ export class JdbcDatabaseManager extends AbstractDatabaseManager {
     // private isClosed(connection: Connection): boolean;
     // private isClosed(statement: Statement): boolean;
     // private reconnectOn(exception: Exception): void;
-    // private setFields(mapMessage: MapMessage<Object, Object>): void;
+    // private setFields(mapMessage: MapMessage<any, Object>): void;
     // private setStatementObject(j: number, nameKey: string, value: Object): void;
     shutdownInternal(): boolean;
     startupInternal(): void;

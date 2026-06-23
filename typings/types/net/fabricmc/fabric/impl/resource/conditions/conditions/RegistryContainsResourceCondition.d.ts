@@ -19,7 +19,7 @@ export class RegistryContainsResourceCondition extends Record implements Resourc
     // private registry: Identifier;
     entries(): Identifier[];
     equals(arg0: Object | null): boolean;
-    getType(): ResourceConditionType<Object>;
+    getType(): ResourceConditionType<any>;
     hashCode(): number;
     registry(): Identifier;
     test(arg0: RegistryOps$RegistryInfoLookup): boolean;

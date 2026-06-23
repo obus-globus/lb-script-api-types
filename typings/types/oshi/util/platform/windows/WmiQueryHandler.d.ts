@@ -14,7 +14,7 @@ export class WmiQueryHandler extends Object {
     readonly wmiTimeout: number;
     getComThreading(): number;
     getWmiTimeout(): number;
-    handleComException(arg0: WbemcliUtil$WmiQuery<Object>, arg1: COMException): void;
+    handleComException(arg0: WbemcliUtil$WmiQuery<any>, arg1: COMException): void;
     initCOM(): boolean;
     initCOM(arg0: number): boolean;
     isSecurityInitialized(): boolean;

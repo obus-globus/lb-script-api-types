@@ -11,10 +11,9 @@ import type { SilentParameters } from '../../../../com/microsoft/aad/msal4j/Sile
 import type { TokenCache } from '../../../../com/microsoft/aad/msal4j/TokenCache.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractClientApplicationBase extends AbstractApplicationBase implements IClientApplicationBase {
     static DEFAULT_AUTHORITY: string;
-    constructor(arg0: AbstractClientApplicationBase$Builder<Object>)
+    constructor(arg0: AbstractClientApplicationBase$Builder<any>)
     // private aadAadInstanceDiscoveryResponse: AadInstanceDiscoveryResponse;
     // private applicationName: string;
     // private applicationVersion: string;

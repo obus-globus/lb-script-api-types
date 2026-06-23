@@ -13,10 +13,10 @@ import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai
 export class BehaviorBuilder<E extends LivingEntity, M extends Object | number | string | boolean> extends Object implements App<BehaviorBuilder$Mu<E>, M> {
     static create(parambuilder: (param0: BehaviorBuilder$Instance<LivingEntity>) => App<BehaviorBuilder$Mu<LivingEntity>, Trigger<LivingEntity>>): OneShot<LivingEntity>;
     static instance(): BehaviorBuilder$Instance<LivingEntity>;
-    static sequence(paramfirst: Trigger<Object>, paramsecond: OneShot<Object>): OneShot<LivingEntity>;
+    static sequence(paramfirst: Trigger<any>, paramsecond: OneShot<any>): OneShot<LivingEntity>;
     static triggerIf(parampredicate: (param0: ServerLevel, param1: LivingEntity | null) => boolean): OneShot<LivingEntity>;
     static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean): OneShot<LivingEntity>;
-    static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean, parambehavior: OneShot<Object>): OneShot<LivingEntity>;
+    static triggerIf(parampredicate: (param0: LivingEntity | null) => boolean, parambehavior: OneShot<any>): OneShot<LivingEntity>;
     static unbox(parambox: App<BehaviorBuilder$Mu<LivingEntity>, Object>): BehaviorBuilder<LivingEntity, Object>;
     private constructor(trigger: BehaviorBuilder$TriggerWithResult<E, M>)
     // private trigger: BehaviorBuilder$TriggerWithResult<E, M>;

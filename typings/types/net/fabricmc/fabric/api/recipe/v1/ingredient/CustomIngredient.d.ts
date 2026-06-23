@@ -8,7 +8,7 @@ import type { Ingredient } from '../../../../../../../net/minecraft/world/item/c
 import type { SlotDisplay } from '../../../../../../../net/minecraft/world/item/crafting/display/SlotDisplay.d.ts'
 export interface CustomIngredient extends Object{
     display(): SlotDisplay;
-    getSerializer(): CustomIngredientSerializer<Object>;
+    getSerializer(): CustomIngredientSerializer<any>;
     items(): Stream<Holder<Item>>;
     requiresTesting(): boolean;
     test(arg0: ItemStack): boolean;

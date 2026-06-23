@@ -1,6 +1,5 @@
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder$Reference } from '../../../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
@@ -31,7 +30,7 @@ import type { ValueOutput } from '../../../../../../net/minecraft/world/level/st
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 export class TestInstanceBlockEntity extends BlockEntity implements BeaconBeamOwner, BoundingBoxRenderable {
     static NBT_ATTACHMENT_KEY: string;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static export(paramlevel: ServerLevel, paramstructureId: Identifier, paramfeedbackOutput: (param0: Component) => void): boolean;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static getStructurePos(paramblockPos: BlockPos): BlockPos;

@@ -7,7 +7,7 @@ import type { AbstractContainerMenu } from '../../../../../net/minecraft/world/i
 import type { MenuType } from '../../../../../net/minecraft/world/inventory/MenuType.d.ts'
 export class MenuScreens extends Object {
     static create(paramtype: MenuType<AbstractContainerMenu>, paramminecraft: Minecraft, paramcontainerId: number, paramtitle: Component): void;
-    static getConstructor(paramtype: MenuType<AbstractContainerMenu>): MenuScreens$ScreenConstructor<AbstractContainerMenu, Object>;
+    static getConstructor(paramtype: MenuType<AbstractContainerMenu>): MenuScreens$ScreenConstructor<AbstractContainerMenu, any>;
     static register(paramtype: MenuType<AbstractContainerMenu>, paramfactory: MenuScreens$ScreenConstructor<AbstractContainerMenu, Screen>): void;
     static selfTest(): boolean;
     constructor()

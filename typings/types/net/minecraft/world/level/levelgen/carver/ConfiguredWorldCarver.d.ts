@@ -14,9 +14,9 @@ import type { CarverConfiguration } from '../../../../../../net/minecraft/world/
 import type { CarvingContext } from '../../../../../../net/minecraft/world/level/levelgen/carver/CarvingContext.d.ts'
 import type { WorldCarver } from '../../../../../../net/minecraft/world/level/levelgen/carver/WorldCarver.d.ts'
 export class ConfiguredWorldCarver<WC extends CarverConfiguration> extends Record {
-    static CODEC: Codec<Holder<ConfiguredWorldCarver<Object>>>;
-    static DIRECT_CODEC: Codec<ConfiguredWorldCarver<Object>>;
-    static LIST_CODEC: Codec<Holder<ConfiguredWorldCarver<Object>>[]>;
+    static CODEC: Codec<Holder<ConfiguredWorldCarver<any>>>;
+    static DIRECT_CODEC: Codec<ConfiguredWorldCarver<any>>;
+    static LIST_CODEC: Codec<Holder<ConfiguredWorldCarver<any>>[]>;
     constructor(worldCarver: WorldCarver<WC>, config: WC)
     // private config: WC;
     // private worldCarver: WorldCarver<WC>;

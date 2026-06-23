@@ -7,11 +7,10 @@ import type { TokenSource } from '../../../../../../com/llamalad7/mixinextras/li
 import type { LexerATNSimulator } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/LexerATNSimulator.d.ts'
 import type { IntegerStack } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/misc/IntegerStack.d.ts'
 import type { Pair } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/misc/Pair.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class Lexer extends Recognizer<number, LexerATNSimulator> implements TokenSource {
     constructor(arg0: CharStream)
     _channel: number;
-    // private _factory: TokenFactory<Object>;
+    // private _factory: TokenFactory<any>;
     _hitEOF: boolean;
     _input: CharStream;
     _mode: number;

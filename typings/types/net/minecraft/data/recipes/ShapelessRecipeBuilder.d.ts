@@ -22,7 +22,7 @@ export class ShapelessRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static shapeless(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramresult: ItemStackTemplate): ShapelessRecipeBuilder;
     static shapeless(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike): ShapelessRecipeBuilder;
     static shapeless(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike, paramcount: number): ShapelessRecipeBuilder;
@@ -33,7 +33,7 @@ export class ShapelessRecipeBuilder extends Object implements RecipeBuilder {
     // private ingredients: Ingredient[];
     // private items: HolderGetter<Item>;
     // private result: ItemStackTemplate;
-    defaultId(): ResourceKey<Recipe<Object>>;
+    defaultId(): ResourceKey<Recipe<any>>;
     group(group: string): ShapelessRecipeBuilder;
     requires(tag: TagKey<Item>): ShapelessRecipeBuilder;
     requires(ingredient: Ingredient): ShapelessRecipeBuilder;
@@ -42,6 +42,6 @@ export class ShapelessRecipeBuilder extends Object implements RecipeBuilder {
     requires(item: ItemLike, count: number): ShapelessRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlockedBy(name: string, criterion: Criterion<Object>): ShapelessRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlockedBy(name: string, criterion: Criterion<any>): ShapelessRecipeBuilder;
 }

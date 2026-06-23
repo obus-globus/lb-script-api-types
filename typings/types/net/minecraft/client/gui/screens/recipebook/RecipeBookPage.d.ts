@@ -14,7 +14,7 @@ import type { MouseButtonEvent } from '../../../../../../net/minecraft/client/in
 import type { RecipeDisplayId } from '../../../../../../net/minecraft/world/item/crafting/display/RecipeDisplayId.d.ts'
 export class RecipeBookPage extends Object {
     static ITEMS_PER_PAGE: number;
-    constructor(parent: RecipeBookComponent<Object>, slotSelectTime: () => number, isFurnaceMenu: boolean)
+    constructor(parent: RecipeBookComponent<any>, slotSelectTime: () => number, isFurnaceMenu: boolean)
     // private backButton: ImageButton;
     // private buttons: RecipeButton[];
     // private currentPage: number;
@@ -25,7 +25,7 @@ export class RecipeBookPage extends Object {
     readonly lastClickedRecipeCollection: RecipeCollection;
     // private minecraft: Minecraft;
     // private overlay: OverlayRecipeComponent;
-    // private parent: RecipeBookComponent<Object>;
+    // private parent: RecipeBookComponent<any>;
     readonly recipeBook: ClientRecipeBook;
     // private recipeCollections: RecipeCollection[];
     // private totalPages: number;

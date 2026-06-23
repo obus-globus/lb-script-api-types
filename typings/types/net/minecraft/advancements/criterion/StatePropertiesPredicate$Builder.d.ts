@@ -11,7 +11,7 @@ export class StatePropertiesPredicate$Builder extends Object {
     private constructor()
     // private matchers: ImmutableList$Builder<StatePropertiesPredicate$PropertyMatcher>;
     build(): Optional<StatePropertiesPredicate>;
-    hasProperty(property: Property<Object>, value: string): StatePropertiesPredicate$Builder;
+    hasProperty(property: Property<any>, value: string): StatePropertiesPredicate$Builder;
     hasProperty<T extends Comparable<T> & StringRepresentable>(property: Property<T>, value: T): StatePropertiesPredicate$Builder;
     hasProperty(property: Property<boolean>, value: boolean): StatePropertiesPredicate$Builder;
     hasProperty(property: Property<number>, value: number): StatePropertiesPredicate$Builder;

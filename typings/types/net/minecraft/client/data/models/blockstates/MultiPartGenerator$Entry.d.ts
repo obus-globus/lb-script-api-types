@@ -7,10 +7,10 @@ import type { Condition } from '../../../../../../net/minecraft/client/renderer/
 import type { Selector } from '../../../../../../net/minecraft/client/renderer/block/dispatch/multipart/Selector.d.ts'
 import type { StateDefinition } from '../../../../../../net/minecraft/world/level/block/state/StateDefinition.d.ts'
 export class MultiPartGenerator$Entry extends Record {
-    private constructor(condition: Optional<(param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean>, variants: MultiVariant)
-    // private condition: Optional<(param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean>;
+    private constructor(condition: Optional<(param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean>, variants: MultiVariant)
+    // private condition: Optional<(param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean>;
     // private variants: MultiVariant;
-    condition(): Optional<(param0: StateDefinition<Object, Object>) => (param0: Object | null) => boolean>;
+    condition(): Optional<(param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

@@ -6,7 +6,7 @@ import type { BlockEntityRenderState } from '../../../../../net/minecraft/client
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 export class BlockEntityRenderers extends Object {
-    static createEntityRenderers(paramcontext: BlockEntityRendererProvider$Context): Map<BlockEntityType<Object>, BlockEntityRenderer<Object, Object>>;
+    static createEntityRenderers(paramcontext: BlockEntityRendererProvider$Context): Map<BlockEntityType<any>, BlockEntityRenderer<any, any>>;
     static register(paramtype: BlockEntityType<BlockEntity>, paramrenderer: (param0: BlockEntityRendererProvider$Context) => BlockEntityRenderer<BlockEntity, BlockEntityRenderState>): void;
     constructor()
 }

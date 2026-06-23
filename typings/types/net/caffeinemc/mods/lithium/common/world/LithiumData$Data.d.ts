@@ -8,18 +8,18 @@ import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core
 import type { PathNavigation } from '../../../../../../net/minecraft/world/entity/ai/navigation/PathNavigation.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class LithiumData$Data extends Record {
-    constructor(gameEventDispatchers: GameEventDispatcherStorage, ominousBanner: ItemStack, activeNavigations: PathNavigation[], blockChangeTrackers: LithiumInterner<SectionedBlockChangeTracker>, entityMovementTrackers: LithiumInterner<SectionedEntityMovementTracker<Object>>, chunkSectionChangeCallbacks: { [key: string]: any })
+    constructor(gameEventDispatchers: GameEventDispatcherStorage, ominousBanner: ItemStack, activeNavigations: PathNavigation[], blockChangeTrackers: LithiumInterner<SectionedBlockChangeTracker>, entityMovementTrackers: LithiumInterner<SectionedEntityMovementTracker<any>>, chunkSectionChangeCallbacks: { [key: string]: any })
     constructor(arg0: HolderLookup$Provider)
     // private activeNavigations: PathNavigation[];
     // private blockChangeTrackers: LithiumInterner<SectionedBlockChangeTracker>;
     // private chunkSectionChangeCallbacks: { [key: string]: any };
-    // private entityMovementTrackers: LithiumInterner<SectionedEntityMovementTracker<Object>>;
+    // private entityMovementTrackers: LithiumInterner<SectionedEntityMovementTracker<any>>;
     // private gameEventDispatchers: GameEventDispatcherStorage;
     // private ominousBanner: ItemStack;
     activeNavigations(): PathNavigation[];
     blockChangeTrackers(): LithiumInterner<SectionedBlockChangeTracker>;
     chunkSectionChangeCallbacks(): { [key: string]: any };
-    entityMovementTrackers(): LithiumInterner<SectionedEntityMovementTracker<Object>>;
+    entityMovementTrackers(): LithiumInterner<SectionedEntityMovementTracker<any>>;
     equals(arg0: Object | null): boolean;
     gameEventDispatchers(): GameEventDispatcherStorage;
     hashCode(): number;

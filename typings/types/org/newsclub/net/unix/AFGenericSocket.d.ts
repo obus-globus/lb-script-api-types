@@ -1,6 +1,5 @@
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { SocketImplFactory } from '../../../../java/net/SocketImplFactory.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFGenericSocketAddress } from '../../../../org/newsclub/net/unix/AFGenericSocketAddress.d.ts'
 import type { AFGenericSocketChannel } from '../../../../org/newsclub/net/unix/AFGenericSocketChannel.d.ts'
 import type { AFGenericSocketExtensions } from '../../../../org/newsclub/net/unix/AFGenericSocketExtensions.d.ts'
@@ -10,7 +9,7 @@ import type { AFSocketCapability } from '../../../../org/newsclub/net/unix/AFSoc
 import type { AFSocketFactory } from '../../../../org/newsclub/net/unix/AFSocketFactory.d.ts'
 import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/AFUNIXSocketCapability.d.ts'
 export class AFGenericSocket extends AFSocket<AFGenericSocketAddress> implements AFGenericSocketExtensions {
-    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<Object>;
+    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<any>;
     static connectTo(paramarg0: AFGenericSocketAddress): AFGenericSocket;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;

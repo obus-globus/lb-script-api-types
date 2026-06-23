@@ -15,11 +15,11 @@ export class SummonEntityEffect extends Record implements EnchantmentEntityEffec
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<SummonEntityEffect>;
     static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
-    // private entityTypes: Holder<EntityType<Object>>[];
+    // private entityTypes: Holder<EntityType<any>>[];
     // private joinTeam: boolean;
     apply(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, entity: Entity, position: Vec3): void;
     codec(): MapCodec<SummonEntityEffect>;
-    entityTypes(): Holder<EntityType<Object>>[];
+    entityTypes(): Holder<EntityType<any>>[];
     equals(o: Object | null): boolean;
     hashCode(): number;
     joinTeam(): boolean;

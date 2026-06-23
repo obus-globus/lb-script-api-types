@@ -8,12 +8,12 @@ import type { ClientboundCommandsPacket$NodeBuilder } from '../../../../../net/m
 import type { ClientboundCommandsPacket$NodeStub } from '../../../../../net/minecraft/network/protocol/game/ClientboundCommandsPacket$NodeStub.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientboundCommandsPacket$ArgumentNodeStub extends Record implements ClientboundCommandsPacket$NodeStub {
-    private constructor(id: string, argumentType: ArgumentTypeInfo$Template<Object>, suggestionId: Identifier)
-    // private argumentType: ArgumentTypeInfo$Template<Object>;
+    private constructor(id: string, argumentType: ArgumentTypeInfo$Template<any>, suggestionId: Identifier)
+    // private argumentType: ArgumentTypeInfo$Template<any>;
     // private id: string;
     // private suggestionId: Identifier;
-    argumentType(): ArgumentTypeInfo$Template<Object>;
-    build<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): ArgumentBuilder<S, Object>;
+    argumentType(): ArgumentTypeInfo$Template<any>;
+    build<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): ArgumentBuilder<S, any>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     id(): string;

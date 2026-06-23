@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { DelegatingSimpleType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/DelegatingSimpleType.d.ts'
 import type { KotlinType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { NotNullTypeParameter } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/NotNullTypeParameter.d.ts'
@@ -12,7 +11,7 @@ export class NotNullTypeParameterImpl extends DelegatingSimpleType implements No
     isTypeParameter(): boolean;
     makeNullableAsSpecified(arg0: boolean): SimpleType;
     // private prepareReplacement(arg0: SimpleType): SimpleType;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): NotNullTypeParameterImpl;
+    replaceAttributes(arg0: TypeAttribute<any>[]): NotNullTypeParameterImpl;
     replaceDelegate(arg0: SimpleType): NotNullTypeParameterImpl;
     substitutionResult(arg0: KotlinType): KotlinType;
 }

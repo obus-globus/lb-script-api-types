@@ -14,7 +14,7 @@ export class JukeboxPlayable extends Record implements Rewritable {
     // private song: EitherHolder<JukeboxPlayable$JukeboxSong>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): JukeboxPlayable;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): JukeboxPlayable;
     showInTooltip(): boolean;
     song(): EitherHolder<JukeboxPlayable$JukeboxSong>;
     toString(): string;

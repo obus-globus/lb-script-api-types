@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { DescriptorRenderer } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer.d.ts'
 import type { DescriptorRendererOptions } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererOptions.d.ts'
 import type { MemberScope } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
@@ -15,5 +14,5 @@ export class RawTypeImpl extends FlexibleType implements RawType {
     makeNullableAsSpecified(arg0: boolean): RawTypeImpl;
     refine(arg0: KotlinTypeRefiner): FlexibleType;
     render(arg0: DescriptorRenderer, arg1: DescriptorRendererOptions): string;
-    replaceAttributes(arg0: TypeAttribute<Object>[]): RawTypeImpl;
+    replaceAttributes(arg0: TypeAttribute<any>[]): RawTypeImpl;
 }

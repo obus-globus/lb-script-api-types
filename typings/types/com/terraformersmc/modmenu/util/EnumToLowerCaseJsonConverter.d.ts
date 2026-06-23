@@ -6,8 +6,8 @@ import type { JsonSerializer } from '../../../../com/google/gson/JsonSerializer.
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
-export class EnumToLowerCaseJsonConverter extends Object implements JsonDeserializer<Enum<Object>>, JsonSerializer<Enum<Object>> {
+export class EnumToLowerCaseJsonConverter extends Object implements JsonDeserializer<Enum<any>>, JsonSerializer<Enum<any>> {
     constructor()
-    deserialize(arg0: JsonElement, arg1: Type, arg2: JsonDeserializationContext): Enum<Object>;
-    serialize(arg0: Enum<Object>, arg1: Type, arg2: JsonSerializationContext): JsonElement;
+    deserialize(arg0: JsonElement, arg1: Type, arg2: JsonDeserializationContext): Enum<any>;
+    serialize(arg0: Enum<any>, arg1: Type, arg2: JsonSerializationContext): JsonElement;
 }

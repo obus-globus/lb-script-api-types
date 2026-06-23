@@ -17,5 +17,5 @@ export class TokenTagToken extends CommonToken {
     getText(): string;
     getTokenName(): string;
     toString(): string;
-    toString(arg0: Recognizer<Object, Object>): string;
+    toString(arg0: Recognizer<Object, any>): string;
 }

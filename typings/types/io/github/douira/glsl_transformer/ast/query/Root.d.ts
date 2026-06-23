@@ -19,15 +19,15 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Root extends Object {
     static getActiveBuildRoot(): Root;
     static replaceExpressionsConcurrent(paramarg0: ASTParser, paramarg1: Expression[], paramarg2: string): boolean;
-    constructor(arg0: NodeIndex<Object>, arg1: IdentifierIndex<Object, Object>, arg2: ExternalDeclarationIndex<Object, Object>)
+    constructor(arg0: NodeIndex<any>, arg1: IdentifierIndex<any, any>, arg2: ExternalDeclarationIndex<any, any>)
     // private activity: boolean;
-    externalDeclarationIndex: ExternalDeclarationIndex<Object, Object>;
-    identifierIndex: IdentifierIndex<Object, Object>;
-    nodeIndex: NodeIndex<Object>;
+    externalDeclarationIndex: ExternalDeclarationIndex<any, any>;
+    identifierIndex: IdentifierIndex<any, any>;
+    nodeIndex: NodeIndex<any>;
     // private nodeList: ASTNode[];
     // private ensureEmptyNodeList(): void;
-    getPrefixExternalDeclarationIndex(): PrefixExternalDeclarationIndex<Object, Object>;
-    getPrefixIdentifierIndex(): PrefixIdentifierIndex<Object, Object>;
+    getPrefixExternalDeclarationIndex(): PrefixExternalDeclarationIndex<any, any>;
+    getPrefixIdentifierIndex(): PrefixIdentifierIndex<any, any>;
     indexBuildSession(arg0: () => void): void;
     indexBuildSession(arg0: (param0: Root) => void): void;
     indexNodes<N extends ASTNode>(arg0: () => N): N;

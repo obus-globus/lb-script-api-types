@@ -87,7 +87,7 @@ export class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
     // private writeClassDesc(arg0: ObjectStreamClass, arg1: boolean): void;
     writeClassDescriptor(arg0: ObjectStreamClass): void;
     writeDouble(arg0: number): void;
-    // private writeEnum(arg0: Enum<Object>, arg1: ObjectStreamClass, arg2: boolean): void;
+    // private writeEnum(arg0: Enum<any>, arg1: ObjectStreamClass, arg2: boolean): void;
     // private writeExternalData(arg0: Externalizable): void;
     // private writeFatalException(arg0: IOException): void;
     writeFields(): void;

@@ -18,6 +18,6 @@ export class ModulePacketLogger$OutputTarget extends Enum<ModulePacketLogger$Out
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    handle(origin: TransferOrigin, packet: Packet<Object>, canceled: boolean, packetId: Identifier): void;
+    handle(origin: TransferOrigin, packet: Packet<any>, canceled: boolean, packetId: Identifier): void;
     name(): "CHAT" | "FILE";
 }

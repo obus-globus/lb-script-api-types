@@ -1,5 +1,4 @@
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { HolderLookup$Provider } from '../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { BlockLootSubProvider } from '../../../../../net/minecraft/data/loot/BlockLootSubProvider.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -11,7 +10,7 @@ import type { LootItemCondition } from '../../../../../net/minecraft/world/level
 import type { LootItemCondition$Builder } from '../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export class VanillaBlockLoot extends BlockLootSubProvider {
     static createCandleCakeDrops(paramcandle: Block): LootTable$Builder;
-    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<Object>): LootTable$Builder;
+    static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;
     static noDrop(): LootTable$Builder;
     constructor(registries: HolderLookup$Provider)
     // private createDecoratedPotTable(original: Block): LootTable$Builder;

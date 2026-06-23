@@ -27,5 +27,5 @@ export class GeodeConfiguration extends Object implements FeatureConfiguration {
     pointOffset: IntProvider;
     useAlternateLayer0Chance: number;
     usePotentialPlacementsChance: number;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

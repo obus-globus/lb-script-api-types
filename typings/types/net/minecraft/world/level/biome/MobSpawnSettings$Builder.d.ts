@@ -8,9 +8,9 @@ import type { MobSpawnSettings$SpawnerData } from '../../../../../net/minecraft/
 export class MobSpawnSettings$Builder extends Object {
     constructor()
     // private creatureGenerationProbability: number;
-    // private mobSpawnCosts: Map<EntityType<Object>, MobSpawnSettings$MobSpawnCost>;
+    // private mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
     // private spawners: { [key in MobCategory]: WeightedList$Builder<MobSpawnSettings$SpawnerData> };
-    addMobCharge(type: EntityType<Object>, charge: number, energyBudget: number): MobSpawnSettings$Builder;
+    addMobCharge(type: EntityType<any>, charge: number, energyBudget: number): MobSpawnSettings$Builder;
     addSpawn(category: MobCategory, weight: number, spawnerData: MobSpawnSettings$SpawnerData): MobSpawnSettings$Builder;
     build(): MobSpawnSettings;
     creatureGenerationProbability(creatureGenerationProbability: number): MobSpawnSettings$Builder;

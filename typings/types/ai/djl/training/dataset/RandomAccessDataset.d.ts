@@ -15,7 +15,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export abstract class RandomAccessDataset extends Object implements Dataset {
     constructor()
-    constructor(arg0: RandomAccessDataset$BaseBuilder<Object>)
+    constructor(arg0: RandomAccessDataset$BaseBuilder<any>)
     // private dataBatchifier: Batchifier;
     // private device: Device;
     // private labelBatchifier: Batchifier;

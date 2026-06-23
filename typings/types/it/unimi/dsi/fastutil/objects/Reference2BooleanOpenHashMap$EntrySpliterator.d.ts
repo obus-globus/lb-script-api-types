@@ -3,7 +3,7 @@ import type { Reference2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fas
 import type { Reference2BooleanOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2BooleanOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2BooleanOpenHashMap$EntrySpliterator extends Reference2BooleanOpenHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Reference2BooleanMap$Entry<K>> {
+export class Reference2BooleanOpenHashMap$EntrySpliterator extends Reference2BooleanOpenHashMap$MapSpliterator<Object, any> implements ObjectSpliterator<Reference2BooleanMap$Entry<K>> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

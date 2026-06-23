@@ -54,7 +54,7 @@ export class Marker extends Entity {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    constructor(type: EntityType<Object>, level: Level)
+    constructor(type: EntityType<any>, level: Level)
     addAdditionalSaveData(output: ValueOutput): void;
     addPassenger(passenger: Entity): void;
     canAddPassenger(passenger: Entity): boolean;

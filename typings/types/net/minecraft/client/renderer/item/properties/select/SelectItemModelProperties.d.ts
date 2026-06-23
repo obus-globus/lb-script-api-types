@@ -4,8 +4,8 @@ import type { SelectItemModelProperty$Type } from '../../../../../../../net/mine
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ExtraCodecs$LateBoundIdMapper } from '../../../../../../../net/minecraft/util/ExtraCodecs$LateBoundIdMapper.d.ts'
 export class SelectItemModelProperties extends Object {
-    static CODEC: Codec<SelectItemModelProperty$Type<Object, Object>>;
-    static ID_MAPPER: ExtraCodecs$LateBoundIdMapper<Identifier, SelectItemModelProperty$Type<Object, Object>>;
+    static CODEC: Codec<SelectItemModelProperty$Type<any, Object>>;
+    static ID_MAPPER: ExtraCodecs$LateBoundIdMapper<Identifier, SelectItemModelProperty$Type<any, Object>>;
     static bootstrap(): void;
     constructor()
 }

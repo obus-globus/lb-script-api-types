@@ -7,7 +7,7 @@ import type { TranslatorOptions } from '../../../../../ai/djl/translate/Translat
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class QATranslator extends Object implements Translator<QAInput, string> {
-    constructor(arg0: QATranslator$BaseBuilder<Object>)
+    constructor(arg0: QATranslator$BaseBuilder<any>)
     batchifier: Batchifier;
     // private includeTokenTypes: boolean;
     // private locale: Locale;

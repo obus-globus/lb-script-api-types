@@ -42,7 +42,7 @@ export abstract class StructurePoolElement extends Object {
     getProjection(): StructureTemplatePool$Projection;
     getShuffledJigsawBlocks(structureTemplateManager: StructureTemplateManager, position: BlockPos, rotation: Rotation, random: RandomSource): StructureTemplate$JigsawBlockInfo[];
     getSize(structureTemplateManager: StructureTemplateManager, rotation: Rotation): Vec3i;
-    getType(): StructurePoolElementType<Object>;
+    getType(): StructurePoolElementType<any>;
     handleDataMarker(level: LevelAccessor, dataMarker: StructureTemplate$StructureBlockInfo, position: BlockPos, rotation: Rotation, random: RandomSource, chunkBB: BoundingBox): void;
     place(structureTemplateManager: StructureTemplateManager, level: WorldGenLevel, structureManager: StructureManager, generator: ChunkGenerator, position: BlockPos, referencePos: BlockPos, rotation: Rotation, chunkBB: BoundingBox, random: RandomSource, liquidSettings: LiquidSettings, keepJigsaws: boolean): boolean;
     setProjection(projection: StructureTemplatePool$Projection): StructurePoolElement;

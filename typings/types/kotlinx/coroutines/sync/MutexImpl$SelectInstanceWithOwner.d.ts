@@ -9,7 +9,7 @@ export class MutexImpl$SelectInstanceWithOwner<Q extends Object | number | strin
     owner: Object | null;
     select: SelectInstanceInternal<Q>;
     disposeOnCompletion(disposableHandle: DisposableHandle): void;
-    invokeOnCancellation(segment: Segment<Object>, index: number): void;
+    invokeOnCancellation(segment: Segment<any>, index: number): void;
     selectInRegistrationPhase(internalResult: Object | null): void;
     trySelect(clauseObject: Object, result: Object | null): boolean;
 }

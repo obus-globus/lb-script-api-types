@@ -5,8 +5,8 @@ import type { ProxyInputStream$AbstractBuilder } from '../../../../../org/apache
 export class CountingInputStream extends ProxyInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    constructor(arg0: InputStream, arg1: ProxyInputStream$AbstractBuilder<Object, Object>)
-    constructor(arg0: ProxyInputStream$AbstractBuilder<Object, Object>)
+    constructor(arg0: InputStream, arg1: ProxyInputStream$AbstractBuilder<Object, any>)
+    constructor(arg0: ProxyInputStream$AbstractBuilder<Object, any>)
     readonly count: number;
     afterRead(arg0: number): void;
     getByteCount(): number;

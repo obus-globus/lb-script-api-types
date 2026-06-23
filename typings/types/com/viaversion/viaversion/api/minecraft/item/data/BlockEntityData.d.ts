@@ -13,7 +13,7 @@ export class BlockEntityData extends Record implements Rewritable {
     // private type: number;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): BlockEntityData;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): BlockEntityData;
     tag(): Map$Entry<string, Tag>[];
     toString(): string;
     type(): number;

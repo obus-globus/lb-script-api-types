@@ -1,6 +1,5 @@
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -21,7 +20,7 @@ export class RotationMode extends Mode implements MinecraftShortcuts {
     readonly instant: boolean;
     // private modeValueGroup: ModeValueGroup<RotationMode>;
     readonly module: ClientModule;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     /**
      * Already sends the packet on post-move.
      * This might get us a little advantage because the packets are added a little bit earlier to the server tick queue.

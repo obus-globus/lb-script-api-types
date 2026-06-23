@@ -79,8 +79,8 @@ export class BonemealableFeaturePlacerBlock extends Block implements Bonemealabl
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
-    constructor(feature: ResourceKey<ConfiguredFeature<Object, Object>>, properties: BlockBehaviour$Properties)
-    // private feature: ResourceKey<ConfiguredFeature<Object, Object>>;
+    constructor(feature: ResourceKey<ConfiguredFeature<any, any>>, properties: BlockBehaviour$Properties)
+    // private feature: ResourceKey<ConfiguredFeature<any, any>>;
     codec(): MapCodec<BonemealableFeaturePlacerBlock>;
     getParticlePos(blockPos: BlockPos): BlockPos;
     getType(): BonemealableBlock$Type;

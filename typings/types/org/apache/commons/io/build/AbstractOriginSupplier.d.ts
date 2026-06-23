@@ -13,16 +13,16 @@ import type { AbstractOrigin } from '../../../../../org/apache/commons/io/build/
 import type { AbstractSupplier } from '../../../../../org/apache/commons/io/build/AbstractSupplier.d.ts'
 export abstract class AbstractOriginSupplier<T extends Object | number | string | boolean, B extends AbstractOriginSupplier<T, B>> extends AbstractSupplier<T, B> {
     constructor()
-    // private origin: AbstractOrigin<Object, Object>;
-    checkOrigin(): AbstractOrigin<Object, Object>;
-    getOrigin(): AbstractOrigin<Object, Object>;
+    // private origin: AbstractOrigin<Object, any>;
+    checkOrigin(): AbstractOrigin<Object, any>;
+    getOrigin(): AbstractOrigin<Object, any>;
     hasOrigin(): boolean;
     setByteArray(arg0: number[]): B;
     setCharSequence(arg0: CharSequence): B;
     setFile(arg0: File): B;
     setFile(arg0: string): B;
     setInputStream(arg0: InputStream): B;
-    setOrigin(arg0: AbstractOrigin<Object, Object>): B;
+    setOrigin(arg0: AbstractOrigin<Object, any>): B;
     setOutputStream(arg0: OutputStream): B;
     setPath(arg0: Path[]): B;
     setPath(arg0: string): B;

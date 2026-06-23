@@ -9,7 +9,7 @@ import type { PropertyAccessorDescriptor } from '../../../../kotlin/reflect/jvm/
 export abstract class DescriptorKProperty$Accessor<PropertyType extends Object | number | string | boolean, ReturnType extends Object | number | string | boolean> extends DescriptorKCallable<ReturnType> implements KFunction<ReturnType>, KProperty$Accessor<PropertyType> {
     constructor()
     readonly container: KDeclarationContainerImpl;
-    readonly defaultCaller: Caller<Object> | null;
+    readonly defaultCaller: Caller<any> | null;
     readonly descriptor: PropertyAccessorDescriptor;
     /*not mapped: */ isExternal(): boolean;
     /*not mapped: */ isInfix(): boolean;

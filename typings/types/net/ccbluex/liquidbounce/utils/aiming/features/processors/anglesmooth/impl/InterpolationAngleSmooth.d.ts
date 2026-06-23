@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { RotationTarget } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationTarget.d.ts'
@@ -7,7 +6,7 @@ import type { FactorAngleSmooth } from '../../../../../../../../../net/ccbluex/l
 import type { Vec2 } from '../../../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
 export class InterpolationAngleSmooth extends FactorAngleSmooth {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>, horizontalSpeed: { start: number; endInclusive: number; step: number }, verticalSpeed: { start: number; endInclusive: number; step: number }, directionChangeFactor: { start: number; endInclusive: number; step: number })
+    constructor(parent: ModeValueGroup<any>, horizontalSpeed: { start: number; endInclusive: number; step: number }, verticalSpeed: { start: number; endInclusive: number; step: number }, directionChangeFactor: { start: number; endInclusive: number; step: number })
     // private directionChangeFactor: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getDirectionChangeFactor(): { start: number; endInclusive: number; step: number };
     // private horizontalSpeed: { start: number; endInclusive: number; step: number };

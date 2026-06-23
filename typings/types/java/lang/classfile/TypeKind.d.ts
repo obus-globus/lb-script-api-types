@@ -15,7 +15,7 @@ export class TypeKind extends Enum<TypeKind> {
     static REFERENCE: TypeKind;
     static SHORT: TypeKind;
     static VOID: TypeKind;
-    static from(paramarg0: TypeDescriptor$OfField<Object>): TypeKind;
+    static from(paramarg0: TypeDescriptor$OfField<any>): TypeKind;
     static fromDescriptor(paramarg0: CharSequence): TypeKind;
     static fromNewarrayCode(paramarg0: number): TypeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;

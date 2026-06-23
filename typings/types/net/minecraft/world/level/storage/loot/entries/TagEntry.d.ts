@@ -1,6 +1,5 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -18,9 +17,9 @@ export class TagEntry extends LootPoolSingletonContainer {
     static DEFAULT_QUALITY: number;
     static DEFAULT_WEIGHT: number;
     static MAP_CODEC: MapCodec<TagEntry>;
-    static expandTag(paramtag: TagKey<Item>): LootPoolSingletonContainer$Builder<Object>;
-    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<Object>;
-    static tagContents(paramtag: TagKey<Item>): LootPoolSingletonContainer$Builder<Object>;
+    static expandTag(paramtag: TagKey<Item>): LootPoolSingletonContainer$Builder<any>;
+    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<any>;
+    static tagContents(paramtag: TagKey<Item>): LootPoolSingletonContainer$Builder<any>;
     private constructor(tag: TagKey<Item>, expand: boolean, weight: number, quality: number, conditions: LootItemCondition[], functions: LootItemFunction[])
     // private expand: boolean;
     // private tag: TagKey<Item>;

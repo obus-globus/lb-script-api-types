@@ -3,7 +3,7 @@ import type { CodedInputStream } from '../../../../../../kotlin/reflect/jvm/inte
 import type { ExtensionRegistryLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/ExtensionRegistryLite.d.ts'
 import type { MessageLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/MessageLite.d.ts'
 import type { MessageLite$Builder } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/MessageLite$Builder.d.ts'
-export abstract class AbstractMessageLite$Builder<BuilderType extends AbstractMessageLite$Builder<AbstractMessageLite$Builder<Object>>> extends Object implements MessageLite$Builder {
+export abstract class AbstractMessageLite$Builder<BuilderType extends AbstractMessageLite$Builder<AbstractMessageLite$Builder<any>>> extends Object implements MessageLite$Builder {
     constructor()
     build(): MessageLite;
     clone(): BuilderType;

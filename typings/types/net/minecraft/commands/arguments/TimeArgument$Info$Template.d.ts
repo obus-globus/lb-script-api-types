@@ -7,5 +7,5 @@ export class TimeArgument$Info$Template extends Object implements ArgumentTypeIn
     private constructor(null_: TimeArgument$Info$Template, min: number)
     // private min: number;
     instantiate(context: CommandBuildContext): TimeArgument;
-    type(): ArgumentTypeInfo<TimeArgument, Object>;
+    type(): ArgumentTypeInfo<TimeArgument, any>;
 }

@@ -6,5 +6,5 @@ export abstract class TreeDecorator extends Object {
     static CODEC: Codec<TreeDecorator>;
     constructor()
     place(context: TreeDecorator$Context): void;
-    type(): TreeDecoratorType<Object>;
+    type(): TreeDecoratorType<any>;
 }

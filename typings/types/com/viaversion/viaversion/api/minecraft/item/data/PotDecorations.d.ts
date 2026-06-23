@@ -17,7 +17,7 @@ export class PotDecorations extends Record implements Copyable, Rewritable {
     // private item(arg0: number): number;
     itemIds(): number[];
     leftItem(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): PotDecorations;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): PotDecorations;
     rightItem(): number;
     toString(): string;
 }

@@ -7,12 +7,12 @@ import type { Ingredient } from '../../../../../net/minecraft/world/item/craftin
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { RecipeManager$IngredientExtractor } from '../../../../../net/minecraft/world/item/crafting/RecipeManager$IngredientExtractor.d.ts'
 import type { RecipePropertySet } from '../../../../../net/minecraft/world/item/crafting/RecipePropertySet.d.ts'
-export class RecipeManager$IngredientCollector extends Object implements Consumer<Recipe<Object>> {
-    constructor(key: ResourceKey<RecipePropertySet>, extractor: (param0: Recipe<Object>) => Optional<Ingredient>)
-    // private extractor: (param0: Recipe<Object>) => Optional<Ingredient>;
+export class RecipeManager$IngredientCollector extends Object implements Consumer<Recipe<any>> {
+    constructor(key: ResourceKey<RecipePropertySet>, extractor: (param0: Recipe<any>) => Optional<Ingredient>)
+    // private extractor: (param0: Recipe<any>) => Optional<Ingredient>;
     // private ingredients: Ingredient[];
     // private key: ResourceKey<RecipePropertySet>;
-    accept(recipe: Recipe<Object>): void;
-    andThen(arg0: (param0: Recipe<Object>) => void): (param0: Recipe<Object>) => void;
+    accept(recipe: Recipe<any>): void;
+    andThen(arg0: (param0: Recipe<any>) => void): (param0: Recipe<any>) => void;
     asPropertySet(enabledFeatures: FeatureFlagSet): RecipePropertySet;
 }

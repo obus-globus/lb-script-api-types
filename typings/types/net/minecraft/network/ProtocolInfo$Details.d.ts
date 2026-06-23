@@ -6,5 +6,5 @@ import type { PacketType } from '../../../net/minecraft/network/protocol/PacketT
 export interface ProtocolInfo$Details extends Object {
     flow(): PacketFlow;
     id(): ConnectionProtocol;
-    listPackets(output: (param0: PacketType<Object>, param1: number) => void): void;
+    listPackets(output: (param0: PacketType<any>, param1: number) => void): void;
 }

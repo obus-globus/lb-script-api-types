@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DescriptorRenderer } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer.d.ts'
 import type { DescriptorRendererOptions } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererOptions.d.ts'
 import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
@@ -13,7 +12,7 @@ export abstract class FlexibleType extends UnwrappedType implements FlexibleType
     readonly lowerBound: SimpleType;
     readonly upperBound: SimpleType;
     getArguments(): TypeProjection[];
-    getAttributes(): TypeAttribute<Object>[];
+    getAttributes(): TypeAttribute<any>[];
     getConstructor(): TypeConstructor;
     getDelegate(): SimpleType;
     getLowerBound(): SimpleType;

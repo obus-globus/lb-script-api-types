@@ -10,7 +10,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class StructuredDataType extends Type<StructuredData<Object>> implements StructuredDataTypeBase {
     constructor()
     // private types: StructuredDataKey<Object>[];
-    filler(arg0: Protocol<Object, Object, Object, Object>): StructuredDataType$DataFiller;
+    filler(arg0: Protocol<any, any, any, any>): StructuredDataType$DataFiller;
     key(arg0: number): StructuredDataKey<Object>;
     read(arg0: ByteBuf): StructuredData<Object>;
     readData<T extends Object | number | string | boolean>(arg0: ByteBuf, arg1: StructuredDataKey<T>, arg2: number): StructuredData<T>;

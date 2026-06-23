@@ -5,7 +5,7 @@ import type { Reference2IntOpenHashMap$MapSpliterator } from '../../../../../it/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2IntOpenHashMap$ValueSpliterator extends Reference2IntOpenHashMap$MapSpliterator<Object, Object> implements IntSpliterator {
+export class Reference2IntOpenHashMap$ValueSpliterator extends Reference2IntOpenHashMap$MapSpliterator<Object, any> implements IntSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

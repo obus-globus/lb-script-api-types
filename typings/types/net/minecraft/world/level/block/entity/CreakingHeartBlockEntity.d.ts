@@ -1,7 +1,6 @@
 import type { Either } from '../../../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -21,7 +20,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class CreakingHeartBlockEntity extends BlockEntity {
     static CREAKING_ROAMING_RADIUS: number;
     static NBT_ATTACHMENT_KEY: string;
-    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<Object>): void;
+    static addEntityType(paramoutput: ValueOutput, paramtype: BlockEntityType<any>): void;
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;

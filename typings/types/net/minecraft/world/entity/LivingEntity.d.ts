@@ -159,7 +159,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     autoSpinAttackDmg: number;
     // private autoSpinAttackItemStack: ItemStack;
     // private autoSpinAttackTicks: number;
-    brain: Brain<Object>;
+    brain: Brain<any>;
     readonly combatTracker: CombatTracker;
     currentExplosionCause: Entity;
     // private currentImpulseContextResetGraceTime: number;

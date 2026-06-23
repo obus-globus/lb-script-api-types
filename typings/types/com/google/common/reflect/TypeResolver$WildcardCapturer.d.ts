@@ -7,8 +7,8 @@ export class TypeResolver$WildcardCapturer extends Object {
     private constructor(id: AtomicInteger)
     // private id: AtomicInteger;
     capture(type: Type): Type;
-    captureAsTypeVariable(upperBounds: Type[]): TypeVariable<Object>;
+    captureAsTypeVariable(upperBounds: Type[]): TypeVariable<any>;
     // private captureNullable(type: Type): Type;
-    // private forTypeVariable(typeParam: TypeVariable<Object>): TypeResolver$WildcardCapturer;
+    // private forTypeVariable(typeParam: TypeVariable<any>): TypeResolver$WildcardCapturer;
     // private notForTypeVariable(): TypeResolver$WildcardCapturer;
 }

@@ -10,7 +10,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerConfigurationPacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerConfigurationPacketListenerImpl.d.ts'
 export class ServerConfigurationNetworking extends Object {
-    static canSend(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: CustomPacketPayload$Type<Object>): boolean;
+    static canSend(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: Identifier): boolean;
     static createClientboundPacket(paramarg0: CustomPacketPayload): Packet<ClientCommonPacketListener>;
     static getGlobalReceivers(): Identifier[];

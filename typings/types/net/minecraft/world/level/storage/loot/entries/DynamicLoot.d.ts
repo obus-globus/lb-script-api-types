@@ -1,6 +1,5 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
@@ -17,8 +16,8 @@ export class DynamicLoot extends LootPoolSingletonContainer {
     static DEFAULT_QUALITY: number;
     static DEFAULT_WEIGHT: number;
     static MAP_CODEC: MapCodec<DynamicLoot>;
-    static dynamicEntry(paramname: Identifier): LootPoolSingletonContainer$Builder<Object>;
-    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<Object>;
+    static dynamicEntry(paramname: Identifier): LootPoolSingletonContainer$Builder<any>;
+    static simpleBuilder(paramconstructor: (param0: number, param1: number, param2: LootItemCondition[], param3: LootItemFunction[]) => LootPoolSingletonContainer): LootPoolSingletonContainer$Builder<any>;
     private constructor(name: Identifier, weight: number, quality: number, conditions: LootItemCondition[], functions: LootItemFunction[])
     // private name: Identifier;
     codec(): MapCodec<DynamicLoot>;

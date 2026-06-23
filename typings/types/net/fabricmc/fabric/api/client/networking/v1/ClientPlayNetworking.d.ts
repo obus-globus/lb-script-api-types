@@ -8,7 +8,7 @@ import type { CustomPacketPayload } from '../../../../../../../net/minecraft/net
 import type { CustomPacketPayload$Type } from '../../../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload$Type.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientPlayNetworking extends Object {
-    static canSend(paramarg0: CustomPacketPayload$Type<Object>): boolean;
+    static canSend(paramarg0: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: Identifier): boolean;
     static createServerboundPacket(paramarg0: CustomPacketPayload | null): Packet<ServerCommonPacketListener>;
     static getGlobalReceivers(): Identifier[];

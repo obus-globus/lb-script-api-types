@@ -8,7 +8,7 @@ import type { GameRuleBuilder$IntegerRuleBuilder } from '../../../../../../net/f
 export abstract class GameRuleBuilder$NumberRuleBuilder<T extends Number> extends GameRuleBuilder<T> {
     static forBoolean(paramarg0: boolean): GameRuleBuilder$BooleanRuleBuilder;
     static forDouble(paramarg0: number): GameRuleBuilder$DoubleRuleBuilder;
-    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<Object>;
+    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<any>;
     static forInteger(paramarg0: number): GameRuleBuilder$IntegerRuleBuilder;
     constructor(arg0: T)
     minValue(arg0: T): GameRuleBuilder$NumberRuleBuilder<T>;

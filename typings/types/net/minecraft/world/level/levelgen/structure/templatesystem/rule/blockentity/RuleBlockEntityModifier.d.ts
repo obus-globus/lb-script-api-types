@@ -4,5 +4,5 @@ import type { RandomSource } from '../../../../../../../../../net/minecraft/util
 import type { RuleBlockEntityModifierType } from '../../../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/RuleBlockEntityModifierType.d.ts'
 export interface RuleBlockEntityModifier extends Object{
     apply(random: RandomSource, existingTag: CompoundTag): CompoundTag;
-    getType(): RuleBlockEntityModifierType<Object>;
+    getType(): RuleBlockEntityModifierType<any>;
 }

@@ -17,7 +17,7 @@ export class ToolRule extends Record implements Rewritable {
     correctForDrops(): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): ToolRule;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): ToolRule;
     speed(): number;
     toString(): string;
 }

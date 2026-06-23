@@ -7,5 +7,5 @@ export interface CoroutineExceptionHandler extends Object, CoroutineContext$Elem
     fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     handleException(context: CoroutineContext, exception: Throwable): void;
-    minusKey(key: CoroutineContext$Key<Object>): CoroutineContext;
+    minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
 }

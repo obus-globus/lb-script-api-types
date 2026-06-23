@@ -28,6 +28,6 @@ export abstract class ArgumentBuilder<S extends Object | number | string | boole
     redirect(arg0: CommandNode<S>): T;
     redirect(arg0: CommandNode<S>, arg1: (param0: CommandContext<S>) => S): T;
     requires(arg0: (param0: S) => boolean): T;
-    then(arg0: ArgumentBuilder<S, Object>): T;
+    then(arg0: ArgumentBuilder<S, any>): T;
     then(arg0: CommandNode<S>): T;
 }

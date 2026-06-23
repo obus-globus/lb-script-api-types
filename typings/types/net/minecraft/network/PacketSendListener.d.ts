@@ -4,7 +4,7 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts'
 export class PacketSendListener extends Object {
-    static exceptionallySend(paramhandler: () => Packet<Object>): ChannelFutureListener;
+    static exceptionallySend(paramhandler: () => Packet<any>): ChannelFutureListener;
     static thenRun(paramrunnable: () => void): ChannelFutureListener;
     constructor()
 }

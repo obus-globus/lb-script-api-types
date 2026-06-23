@@ -1,5 +1,4 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
@@ -34,7 +33,7 @@ export class SignItem extends StandingAndWallBlockItem {
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;
-    static setBlockEntityData(paramstack: ItemStack, paramtype: BlockEntityType<Object>, paramoutput: TagValueOutput): void;
+    static setBlockEntityData(paramstack: ItemStack, paramtype: BlockEntityType<any>, paramoutput: TagValueOutput): void;
     static updateCustomBlockEntityTag(paramlevel: Level, paramplayer: Player, parampos: BlockPos, paramitemStack: ItemStack): boolean;
     constructor(properties: Item$Properties, sign: Block, wallSign: Block, direction: Direction)
     constructor(sign: Block, wallSign: Block, properties: Item$Properties)

@@ -10,14 +10,14 @@ import type { RecipeHolder } from '../../../../net/minecraft/world/item/crafting
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
 export class RecipeUnlockedTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<RecipeUnlockedTrigger$TriggerInstance>;
-    constructor(player: Optional<ContextAwarePredicate>, recipe: ResourceKey<Recipe<Object>>)
+    constructor(player: Optional<ContextAwarePredicate>, recipe: ResourceKey<Recipe<any>>)
     // private player: Optional<ContextAwarePredicate>;
-    // private recipe: ResourceKey<Recipe<Object>>;
+    // private recipe: ResourceKey<Recipe<any>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    matches(recipe: RecipeHolder<Object>): boolean;
+    matches(recipe: RecipeHolder<any>): boolean;
     player(): Optional<ContextAwarePredicate>;
-    recipe(): ResourceKey<Recipe<Object>>;
+    recipe(): ResourceKey<Recipe<any>>;
     toString(): string;
     validate(validator: ValidationContextSource): void;
 }

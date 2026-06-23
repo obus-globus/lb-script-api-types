@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -23,7 +22,7 @@ export class FlyGrim2373Jan15 extends Mode {
     // private /*not mapped: */ getAutoLag(): boolean;
     // private isStarted: boolean;
     // private motionHandler: EventHook<PlayerNetworkMovementTickEvent>;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private queuePacketHandler: EventHook<BlinkPacketEvent>;
     // private shouldDelay: boolean;
     disable(): void;

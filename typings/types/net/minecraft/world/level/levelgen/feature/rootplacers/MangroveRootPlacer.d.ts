@@ -2,7 +2,6 @@ import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -28,5 +27,5 @@ export class MangroveRootPlacer extends RootPlacer {
     placeRoots(level: WorldGenLevel, rootSetter: (param0: BlockPos, param1: BlockState) => void, random: RandomSource, origin: BlockPos, trunkOrigin: BlockPos, config: TreeConfiguration): boolean;
     potentialRootPositions(pos: BlockPos, prevDir: Direction, random: RandomSource, rootOrigin: BlockPos): BlockPos[];
     // private simulateRoots(level: LevelSimulatedReader, random: RandomSource, rootPos: BlockPos, dir: Direction, rootOrigin: BlockPos, rootPositions: BlockPos[], layer: number): boolean;
-    type(): RootPlacerType<Object>;
+    type(): RootPlacerType<any>;
 }

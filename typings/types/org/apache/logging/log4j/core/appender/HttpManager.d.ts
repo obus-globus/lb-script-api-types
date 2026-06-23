@@ -11,6 +11,6 @@ export abstract class HttpManager extends AbstractManager {
     constructor(configuration: Configuration, loggerContext: LoggerContext, name: string)
     readonly configuration: Configuration;
     getConfiguration(): Configuration;
-    send(layout: Layout<Object>, event: LogEvent): void;
+    send(layout: Layout<any>, event: LogEvent): void;
     startup(): void;
 }

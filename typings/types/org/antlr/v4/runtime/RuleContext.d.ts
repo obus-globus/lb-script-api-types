@@ -27,8 +27,8 @@ export class RuleContext extends Object implements RuleNode {
     toString(): string;
     toString(arg0: string[]): string;
     toString(arg0: string[], arg1: RuleContext): string;
-    toString(arg0: Recognizer<Object, Object>): string;
-    toString(arg0: Recognizer<Object, Object>, arg1: RuleContext): string;
+    toString(arg0: Recognizer<Object, any>): string;
+    toString(arg0: Recognizer<Object, any>, arg1: RuleContext): string;
     toStringTree(): string;
     toStringTree(arg0: string[]): string;
     toStringTree(arg0: Parser): string;

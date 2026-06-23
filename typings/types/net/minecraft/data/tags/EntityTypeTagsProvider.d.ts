@@ -7,7 +7,7 @@ import type { PackOutput } from '../../../../net/minecraft/data/PackOutput.d.ts'
 import type { IntrinsicHolderTagsProvider } from '../../../../net/minecraft/data/tags/IntrinsicHolderTagsProvider.d.ts'
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
-export class EntityTypeTagsProvider extends IntrinsicHolderTagsProvider<EntityType<Object>> {
+export class EntityTypeTagsProvider extends IntrinsicHolderTagsProvider<EntityType<any>> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

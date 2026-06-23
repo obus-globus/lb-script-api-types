@@ -23,9 +23,9 @@ export class TypedOptic<S extends Object | number | string | boolean, T extends 
     static proj1(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
     static proj2(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
     static tagged(paramarg0: TaggedChoice$TaggedChoiceType<Object>, paramarg1: Object | null, paramarg2: Type<Object>, paramarg3: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
-    constructor(arg0: TypeToken<K1>, arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<Object, S, T, A, B>)
+    constructor(arg0: TypeToken<K1>, arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<any, S, T, A, B>)
     constructor(bounds: TypeToken<K1>[], elements: TypedOptic$Element<Object, Object, Object, Object>[])
-    constructor(arg0: TypeToken<K1>[], arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<Object, S, T, A, B>)
+    constructor(arg0: TypeToken<K1>[], arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<any, S, T, A, B>)
     // private bounds: TypeToken<K1>[];
     // private elements: TypedOptic$Element<Object, Object, Object, Object>[];
     aType(): Type<A>;
@@ -38,9 +38,9 @@ export class TypedOptic<S extends Object | number | string | boolean, T extends 
     elements(): TypedOptic$Element<Object, Object, Object, Object>[];
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    innermost(): Optic<Object, Object, Object, A, B>;
+    innermost(): Optic<any, Object, Object, A, B>;
     // private innermostElement(): TypedOptic$Element<Object, Object, A, B>;
-    outermost(): Optic<Object, S, T, Object, Object>;
+    outermost(): Optic<any, S, T, Object, Object>;
     // private outermostElement(): TypedOptic$Element<S, T, Object, Object>;
     sType(): Type<S>;
     tType(): Type<T>;

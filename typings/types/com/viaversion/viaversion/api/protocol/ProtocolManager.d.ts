@@ -33,7 +33,7 @@ export interface ProtocolManager extends Object {
     getProtocol<T extends Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>(arg0: Class<T>): T;
     getProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
     getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
-    getProtocols(): Protocol<Object, Object, Object, Object>[];
+    getProtocols(): Protocol<any, any, any, any>[];
     getServerProtocolVersion(): ServerProtocolVersion;
     getSupportedVersions(): ProtocolVersion[];
     hasLoadedMappings(): boolean;

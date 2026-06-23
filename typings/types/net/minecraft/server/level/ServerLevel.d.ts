@@ -270,7 +270,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     getNearbyPlayers(targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): Player[];
     getNearestEntity<T extends LivingEntity>(entities: T[], targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): T;
-    getNearestEntity(tag: TagKey<EntityType<Object>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
+    getNearestEntity(tag: TagKey<EntityType<any>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
     getNearestPlayer(targetConditions: TargetingConditions, x: number, y: number, z: number): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): Player;
@@ -339,7 +339,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     sendParticles<T extends ParticleOptions>(particle: T, overrideLimiter: boolean, alwaysShow: boolean, x: number, y: number, z: number, count: number, xDist: number, yDist: number, zDist: number, speed: number): number;
     sendParticles<T extends ParticleOptions>(particle: T, x: number, y: number, z: number, count: number, xDist: number, yDist: number, zDist: number, speed: number): number;
     sendParticles<T extends ParticleOptions>(player: ServerPlayer, particle: T, overrideLimiter: boolean, alwaysShow: boolean, x: number, y: number, z: number, count: number, xDist: number, yDist: number, zDist: number, speed: number): boolean;
-    sendParticles(player: ServerPlayer, overrideLimiter: boolean, x: number, y: number, z: number, packet: Packet<Object>): boolean;
+    sendParticles(player: ServerPlayer, overrideLimiter: boolean, x: number, y: number, z: number, packet: Packet<any>): boolean;
     setChunkForced(chunkX: number, chunkZ: number, forced: boolean): boolean;
     setCurrentlyGenerating(currentlyGenerating: () => string): void;
     setDragonFight(fight: EnderDragonFight): void;

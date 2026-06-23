@@ -28,35 +28,35 @@ import type { RecipeDisplayEntry } from '../../../../../net/minecraft/world/item
 import type { RecipeDisplayId } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplayId.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeManager extends SimplePreparableReloadListener<RecipeMap> implements FabricRecipeManager, FabricResourceReloader, RecipeManagerAccessor, RecipeAccess {
-    static createCheck(paramtype: RecipeType<Object>): RecipeManager$CachedCheck<RecipeInput, Object>;
+    static createCheck(paramtype: RecipeType<any>): RecipeManager$CachedCheck<RecipeInput, any>;
     constructor(registries: HolderLookup$Provider)
     // private allDisplays: RecipeManager$ServerDisplayInfo[];
     // private id: Identifier;
     // private propertySets: Map<ResourceKey<RecipePropertySet>, RecipePropertySet>;
-    // private recipeToDisplay: Map<ResourceKey<Recipe<Object>>, RecipeManager$ServerDisplayInfo[]>;
+    // private recipeToDisplay: Map<ResourceKey<Recipe<any>>, RecipeManager$ServerDisplayInfo[]>;
     readonly recipes: RecipeMap;
     // private registries: HolderLookup$Provider;
     // private stonecutterRecipes: SelectableRecipe$SingleInputSet<StonecutterRecipe>;
     readonly synchronizedRecipes: SynchronizedRecipes;
     apply(recipes: RecipeMap, manager: ResourceManager, profiler: ProfilerFiller): void;
-    byKey(recipeId: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<Object>>;
-    // private byKeyTyped<T extends Recipe<Object>>(type: RecipeType<T>, recipeId: ResourceKey<Recipe<Object>>): RecipeHolder<T>;
+    byKey(recipeId: ResourceKey<Recipe<any>>): Optional<RecipeHolder<any>>;
+    // private byKeyTyped<T extends Recipe<any>>(type: RecipeType<T>, recipeId: ResourceKey<Recipe<any>>): RecipeHolder<T>;
     fabric$getId(): Identifier;
     finalizeRecipeLoading(enabledFlags: FeatureFlagSet): void;
     getAllMatches<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Stream<RecipeHolder<T>>;
-    getAllMatches(arg0: RecipeType<Recipe<Object>>, arg1: RecipeInput, arg2: Level): Stream<Object>;
+    getAllMatches(arg0: RecipeType<Recipe<any>>, arg1: RecipeInput, arg2: Level): Stream<Object>;
     getAllOfType<T extends Recipe<I>>(arg0: RecipeType<T>): RecipeHolder<T>[];
-    getAllOfType(arg0: RecipeType<Recipe<Object>>): (Object | null)[];
+    getAllOfType(arg0: RecipeType<Recipe<any>>): (Object | null)[];
     getName(): string;
     getRecipeFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, input: I, level: Level): Optional<RecipeHolder<T>>;
-    getRecipeFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, input: I, level: Level, recipeHint: ResourceKey<Recipe<Object>>): Optional<RecipeHolder<T>>;
+    getRecipeFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, input: I, level: Level, recipeHint: ResourceKey<Recipe<any>>): Optional<RecipeHolder<T>>;
     getRecipeFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, input: I, level: Level, recipeHint: RecipeHolder<T>): Optional<RecipeHolder<T>>;
     getRecipeFromDisplay(id: RecipeDisplayId): RecipeManager$ServerDisplayInfo;
-    getRecipes(): RecipeHolder<Object>[];
+    getRecipes(): RecipeHolder<any>[];
     getSynchronizedItemProperties(): Map<ResourceKey<RecipePropertySet>, RecipePropertySet>;
     getSynchronizedRecipes(): SynchronizedRecipes;
     getSynchronizedStonecutterRecipes(): SelectableRecipe$SingleInputSet<StonecutterRecipe>;
-    listDisplaysForRecipe(id: ResourceKey<Recipe<Object>>, output: (param0: RecipeDisplayEntry) => void): void;
+    listDisplaysForRecipe(id: ResourceKey<Recipe<any>>, output: (param0: RecipeDisplayEntry) => void): void;
     prepare(manager: ResourceManager, profiler: ProfilerFiller): RecipeMap;
     propertySet(id: ResourceKey<RecipePropertySet>): RecipePropertySet;
     stonecutterRecipes(): SelectableRecipe$SingleInputSet<StonecutterRecipe>;

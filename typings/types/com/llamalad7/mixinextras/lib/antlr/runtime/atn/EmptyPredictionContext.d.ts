@@ -23,5 +23,5 @@ export class EmptyPredictionContext extends SingletonPredictionContext {
     isEmpty(): boolean;
     size(): number;
     toString(): string;
-    toString(arg0: Recognizer<Object, Object>): string;
+    toString(arg0: Recognizer<Object, any>): string;
 }

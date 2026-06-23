@@ -22,7 +22,7 @@ export class FabricDynamicRegistryProvider$Entries extends Object {
     add<T extends Object | number | string | boolean>(arg0: ResourceKey<T>, arg1: T): Holder<T>;
     add<T extends Object | number | string | boolean>(arg0: ResourceKey<T>, arg1: T, arg2: ResourceCondition[]): Holder<T>;
     addAll<T extends Object | number | string | boolean>(arg0: HolderLookup$RegistryLookup<T>): Holder<T>[];
-    configuredCarvers(): HolderGetter<ConfiguredWorldCarver<Object>>;
+    configuredCarvers(): HolderGetter<ConfiguredWorldCarver<any>>;
     getLookup<T extends Object | number | string | boolean>(arg0: ResourceKey<T[]>): HolderGetter<T>;
     getLookups(): HolderLookup$Provider;
     getQueuedEntries<T extends Object | number | string | boolean>(arg0: ResourceKey<T>): FabricDynamicRegistryProvider$RegistryEntries<T>;

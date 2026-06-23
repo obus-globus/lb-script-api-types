@@ -136,7 +136,7 @@ export class EntityTypes1_14 extends Enum<EntityTypes1_14> implements EntityType
     static ZOMBIE_PIGMAN: EntityTypes1_14;
     static ZOMBIE_VILLAGER: EntityTypes1_14;
     static getTypeFromId(paramarg0: number): EntityType;
-    static initialize(paramarg0: Protocol<Object, Object, Object, Object>): void;
+    static initialize(paramarg0: Protocol<any, any, any, any>): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTypes1_14;
     static values(): (Object | null)[];

@@ -18,7 +18,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export class BackwardsStructuredItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, Object, Object, S>> extends StructuredItemRewriter<C, S, T> {
+export class BackwardsStructuredItemRewriter<C extends ClientboundPacketType, S extends ServerboundPacketType, T extends BackwardsProtocol<C, any, any, S>> extends StructuredItemRewriter<C, S, T> {
     static MARKER_KEY: string;
     constructor(arg0: T)
     // private nbtTagName: string;

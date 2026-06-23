@@ -29,7 +29,7 @@ export abstract class AbstractCraftingMenu extends RecipeBookMenu {
     static getRedstoneSignalFromBlockEntity(paramblockEntity: BlockEntity): number;
     static getRedstoneSignalFromContainer(paramcontainer: ItemStack[]): number;
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
-    constructor(menuType: MenuType<Object>, containerId: number, width: number, height: number)
+    constructor(menuType: MenuType<any>, containerId: number, width: number, height: number)
     // private craftSlots: (Object | null)[];
     // private height: number;
     // private resultSlots: (Object | null)[];
@@ -43,6 +43,6 @@ export abstract class AbstractCraftingMenu extends RecipeBookMenu {
     getGridWidth(): number;
     getInputGridSlots(): Slot[];
     getResultSlot(): Slot;
-    handlePlacement(useMaxItems: boolean, allowDroppingItemsToClear: boolean, recipe: RecipeHolder<Object>, level: ServerLevel, inventory: (Object | null)[]): RecipeBookMenu$PostPlaceAction;
+    handlePlacement(useMaxItems: boolean, allowDroppingItemsToClear: boolean, recipe: RecipeHolder<any>, level: ServerLevel, inventory: (Object | null)[]): RecipeBookMenu$PostPlaceAction;
     owner(): Player;
 }

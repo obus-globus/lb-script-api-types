@@ -18,7 +18,7 @@ export class CustomDataIngredient extends Object implements CustomIngredient {
     equals(arg0: Object | null): boolean;
     // private getBase(): Ingredient;
     // private getNbt(): CompoundTag;
-    getSerializer(): CustomIngredientSerializer<Object>;
+    getSerializer(): CustomIngredientSerializer<any>;
     hashCode(): number;
     items(): Stream<Holder<Item>>;
     requiresTesting(): boolean;

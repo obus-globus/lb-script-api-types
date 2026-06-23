@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RecipeSerializer } from '../../../../../net/minecraft/world/item/crafting/RecipeSerializer.d.ts'
 export class RecipeSerializers extends Object {
-    static bootstrap(paramregistry: RecipeSerializer<Object>[]): Object;
+    static bootstrap(paramregistry: RecipeSerializer<any>[]): Object;
     constructor()
 }

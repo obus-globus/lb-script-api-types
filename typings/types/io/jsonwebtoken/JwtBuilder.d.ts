@@ -31,7 +31,7 @@ export interface JwtBuilder extends ClaimsMutator<JwtBuilder>, Object{
     content(arg0: string): JwtBuilder;
     content(arg0: string, arg1: string): JwtBuilder;
     encodePayload(arg0: boolean): JwtBuilder;
-    encryptWith<K extends Key>(arg0: K, arg1: KeyAlgorithm<K, Object>, arg2: AeadAlgorithm): JwtBuilder;
+    encryptWith<K extends Key>(arg0: K, arg1: KeyAlgorithm<K, any>, arg2: AeadAlgorithm): JwtBuilder;
     encryptWith(arg0: SecretKey, arg1: AeadAlgorithm): JwtBuilder;
     expiration(arg0: Date): JwtBuilder;
     header(): JwtBuilder$BuilderHeader;
@@ -48,7 +48,7 @@ export interface JwtBuilder extends ClaimsMutator<JwtBuilder>, Object{
     setHeaderParam(arg0: string, arg1: Object): JwtBuilder;
     setHeaderParams(arg0: { [key: string]: Object | null }): JwtBuilder;
     setPayload(arg0: string): JwtBuilder;
-    signWith<K extends Key>(arg0: K, arg1: SecureDigestAlgorithm<K, Object>): JwtBuilder;
+    signWith<K extends Key>(arg0: K, arg1: SecureDigestAlgorithm<K, any>): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: Key): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: number[]): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: string): JwtBuilder;

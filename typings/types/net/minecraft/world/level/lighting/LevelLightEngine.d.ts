@@ -15,9 +15,9 @@ export class LevelLightEngine extends Object implements LightEventListener {
     static LIGHT_SECTION_PADDING: number;
     private constructor()
     constructor(chunkSource: LightChunkGetter, hasBlockLight: boolean, hasSkyLight: boolean)
-    // private blockEngine: LightEngine<Object, Object>;
+    // private blockEngine: LightEngine<any, any>;
     // private levelHeightAccessor: LevelHeightAccessor;
-    // private skyEngine: LightEngine<Object, Object>;
+    // private skyEngine: LightEngine<any, any>;
     checkBlock(pos: BlockPos): void;
     getDebugData(layer: LightLayer, pos: SectionPos): string;
     getDebugSectionType(layer: LightLayer, pos: SectionPos): LayerLightSectionStorage$SectionType;

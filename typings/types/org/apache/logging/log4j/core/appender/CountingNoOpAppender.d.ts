@@ -12,8 +12,8 @@ export class CountingNoOpAppender extends AbstractAppender {
     static EMPTY_ARRAY: (Object | null)[];
     static createAppender(paramname: string): CountingNoOpAppender;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(name: string, layout: Layout<Object>)
-    private constructor(name: string, layout: Layout<Object>, properties: Property[])
+    constructor(name: string, layout: Layout<any>)
+    private constructor(name: string, layout: Layout<any>, properties: Property[])
     // private total: AtomicLong;
     append(event: LogEvent): void;
     getCount(): number;

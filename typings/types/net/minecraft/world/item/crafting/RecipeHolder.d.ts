@@ -4,14 +4,14 @@ import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/netwo
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
-export class RecipeHolder<T extends Recipe<Object>> extends Record {
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeHolder<Object>>;
-    constructor(id: ResourceKey<Recipe<Object>>, value: T)
-    // private id: ResourceKey<Recipe<Object>>;
+export class RecipeHolder<T extends Recipe<any>> extends Record {
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeHolder<any>>;
+    constructor(id: ResourceKey<Recipe<any>>, value: T)
+    // private id: ResourceKey<Recipe<any>>;
     // private value: T;
     equals(obj: Object | null): boolean;
     hashCode(): number;
-    id(): ResourceKey<Recipe<Object>>;
+    id(): ResourceKey<Recipe<any>>;
     toString(): string;
     value(): T;
 }

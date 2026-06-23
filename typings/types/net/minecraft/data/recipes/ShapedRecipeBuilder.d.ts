@@ -22,7 +22,7 @@ export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static shaped(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike): ShapedRecipeBuilder;
     static shaped(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike, paramcount: number): ShapedRecipeBuilder;
     private constructor(items: HolderGetter<Item>, category: RecipeCategory, result: ItemStackTemplate)
@@ -35,7 +35,7 @@ export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     // private result: ItemStackTemplate;
     // private rows: string[];
     // private showNotification: boolean;
-    defaultId(): ResourceKey<Recipe<Object>>;
+    defaultId(): ResourceKey<Recipe<any>>;
     define(symbol: string, tag: TagKey<Item>): ShapedRecipeBuilder;
     define(symbol: string, ingredient: Ingredient): ShapedRecipeBuilder;
     define(symbol: string, item: ItemLike): ShapedRecipeBuilder;
@@ -43,7 +43,7 @@ export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     pattern(row: string): ShapedRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
     showNotification(showNotification: boolean): ShapedRecipeBuilder;
-    unlockedBy(name: string, criterion: Criterion<Object>): ShapedRecipeBuilder;
+    unlockedBy(name: string, criterion: Criterion<any>): ShapedRecipeBuilder;
 }

@@ -3,7 +3,7 @@ import type { Short2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastu
 import type { Short2ReferenceOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceOpenHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Short2ReferenceOpenHashMap$EntrySpliterator extends Short2ReferenceOpenHashMap$MapSpliterator<Object, Object> implements ObjectSpliterator<Short2ReferenceMap$Entry<V>> {
+export class Short2ReferenceOpenHashMap$EntrySpliterator extends Short2ReferenceOpenHashMap$MapSpliterator<Object, any> implements ObjectSpliterator<Short2ReferenceMap$Entry<V>> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

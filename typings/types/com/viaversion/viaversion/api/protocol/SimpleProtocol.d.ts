@@ -18,10 +18,10 @@ import type { VersionedTypesHolder } from '../../../../../com/viaversion/viavers
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface SimpleProtocol extends Protocol<SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes, SimpleProtocol$DummyPacketTypes>, Object {
-    dependsOn(): Class<Protocol<Object, Object, Object, Object>>;
+    dependsOn(): Class<Protocol<any, any, any, any>>;
     getComponentRewriter(): ComponentRewriter;
-    getEntityRewriter(): EntityRewriter<Object>;
-    getItemRewriter(): ItemRewriter<Object>;
+    getEntityRewriter(): EntityRewriter<any>;
+    getItemRewriter(): ItemRewriter<any>;
     getMappingData(): MappingData;
     getParticleRewriter(): ParticleRewriter;
     getRegistryDataRewriter(): RegistryDataRewriter;

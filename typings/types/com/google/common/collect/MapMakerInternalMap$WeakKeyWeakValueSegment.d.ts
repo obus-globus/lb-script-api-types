@@ -8,13 +8,13 @@ export class MapMakerInternalMap$WeakKeyWeakValueSegment<K extends Object | numb
     constructor(map: Map<K, V>, initialCapacity: number)
     // private queueForKeys: ReferenceQueue<K>;
     // private queueForValues: ReferenceQueue<V>;
-    castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>): MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>;
+    castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>): MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>;
     getKeyReferenceQueueForTesting(): ReferenceQueue<K>;
     getValueReferenceQueueForTesting(): ReferenceQueue<V>;
-    getWeakValueReferenceForTesting(e: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>): MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>>;
+    getWeakValueReferenceForTesting(e: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>): MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>>;
     maybeClearReferenceQueues(): void;
     maybeDrainReferenceQueues(): void;
-    newWeakValueReferenceForTesting(e: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>, value: V): MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>>;
+    newWeakValueReferenceForTesting(e: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>, value: V): MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>>;
     self(): MapMakerInternalMap$WeakKeyWeakValueSegment<K, V>;
-    setWeakValueReferenceForTesting(e: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>, valueReference: MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, Object>>>): void;
+    setWeakValueReferenceForTesting(e: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>, valueReference: MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>>): void;
 }

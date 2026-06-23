@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -13,7 +12,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/li
  */
 export class SpeedIntave14Fast extends SpeedBHopBase {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>)
+    constructor(parent: ModeValueGroup<any>)
     // private tickHandler: EventHook<GameTickEvent>;
     // private timer: boolean;
     // private /*not mapped: */ getTimer(): boolean;

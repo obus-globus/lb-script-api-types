@@ -4,7 +4,6 @@ import type { RecordCodecBuilder } from '../../../../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -32,5 +31,5 @@ export class WoodlandMansionStructure extends Structure {
     afterPlace(level: WorldGenLevel, structureManager: StructureManager, generator: ChunkGenerator, random: RandomSource, chunkBB: BoundingBox, chunkPos: ChunkPos, pieces: PiecesContainer): void;
     findGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
     // private generatePieces(builder: StructurePiecesBuilder, context: Structure$GenerationContext, startPos: BlockPos, rotation: Rotation): void;
-    type(): StructureType<Object>;
+    type(): StructureType<any>;
 }

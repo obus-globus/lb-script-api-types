@@ -7,7 +7,7 @@ import type { PackOutput } from '../../../../net/minecraft/data/PackOutput.d.ts'
 import type { KeyTagProvider } from '../../../../net/minecraft/data/tags/KeyTagProvider.d.ts'
 import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
-export class FeatureTagsProvider extends KeyTagProvider<ConfiguredFeature<Object, Object>> {
+export class FeatureTagsProvider extends KeyTagProvider<ConfiguredFeature<any, any>> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

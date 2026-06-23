@@ -24,7 +24,7 @@ export class Consumable1_21_2 extends Record implements Copyable, Rewritable {
     equals(arg0: Object | null): boolean;
     hasConsumeParticles(): boolean;
     hashCode(): number;
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): Consumable1_21_2;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): Consumable1_21_2;
     sound(): Holder<SoundEvent>;
     toString(): string;
 }

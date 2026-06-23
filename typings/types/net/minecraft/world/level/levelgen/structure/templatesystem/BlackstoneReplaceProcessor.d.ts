@@ -1,5 +1,4 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
@@ -12,6 +11,6 @@ export class BlackstoneReplaceProcessor extends StructureProcessor {
     static INSTANCE: BlackstoneReplaceProcessor;
     private constructor()
     // private replacements: Map<Block, Block>;
-    getType(): StructureProcessorType<Object>;
+    getType(): StructureProcessorType<any>;
     processBlock(level: LevelReader, targetPosition: BlockPos, referencePos: BlockPos, originalBlockInfo: StructureTemplate$StructureBlockInfo, processedBlockInfo: StructureTemplate$StructureBlockInfo, settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo;
 }

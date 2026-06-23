@@ -21,10 +21,10 @@ export class ChickenVariant extends Record implements PriorityProvider<SpawnCont
     static DIRECT_CODEC: Codec<ChickenVariant>;
     static NETWORK_CODEC: Codec<ChickenVariant>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<ChickenVariant>>;
-    static alwaysTrue(parampriority: number): PriorityProvider$Selector<Object, Object>[];
-    static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, Object>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
-    static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, Object>, paramcontext: Object | null): Stream<Object>;
-    static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, Object>[];
+    static alwaysTrue(parampriority: number): PriorityProvider$Selector<Object, any>[];
+    static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
+    static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
+    static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
     private constructor(assetInfo: ModelAndTexture<ChickenVariant$ModelType>, babyTexture: ClientAsset$ResourceTexture)
     constructor(modelAndTexture: ModelAndTexture<ChickenVariant$ModelType>, babyTexture: ClientAsset$ResourceTexture, spawnConditions: SpawnPrioritySelectors)
     // private babyTexture: ClientAsset$ResourceTexture;

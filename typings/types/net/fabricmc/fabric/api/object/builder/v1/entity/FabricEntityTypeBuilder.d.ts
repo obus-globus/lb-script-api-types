@@ -31,7 +31,7 @@ export class FabricEntityTypeBuilder<T extends Entity> extends Object {
     // private summonable: boolean;
     // private trackRange: number;
     // private trackedUpdateRate: number;
-    build(arg0: ResourceKey<EntityType<Object>>): EntityType<T>;
+    build(arg0: ResourceKey<EntityType<any>>): EntityType<T>;
     dimensions(arg0: EntityDimensions): FabricEntityTypeBuilder<T>;
     disableSaving(): FabricEntityTypeBuilder<T>;
     disableSummon(): FabricEntityTypeBuilder<T>;

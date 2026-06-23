@@ -72,8 +72,8 @@ export class PointerBuffer extends CustomBuffer<PointerBuffer> implements Compar
     put(arg0: PointerBuffer): PointerBuffer;
     put(arg0: Pointer): PointerBuffer;
     // private put32(arg0: number[], arg1: number, arg2: number): void;
-    putAddressOf(arg0: number, arg1: CustomBuffer<Object>): PointerBuffer;
-    putAddressOf(arg0: CustomBuffer<Object>): PointerBuffer;
+    putAddressOf(arg0: number, arg1: CustomBuffer<any>): PointerBuffer;
+    putAddressOf(arg0: CustomBuffer<any>): PointerBuffer;
     self(): PointerBuffer;
     sizeof(): number;
 }

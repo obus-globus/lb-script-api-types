@@ -37,5 +37,5 @@ export class TrialSpawnerConfig extends Record {
     toString(): string;
     totalMobs(): number;
     totalMobsAddedPerPlayer(): number;
-    withSpawning(type: EntityType<Object>): TrialSpawnerConfig;
+    withSpawning(type: EntityType<any>): TrialSpawnerConfig;
 }

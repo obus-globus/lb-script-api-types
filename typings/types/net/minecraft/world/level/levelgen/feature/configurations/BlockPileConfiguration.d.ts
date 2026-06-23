@@ -11,5 +11,5 @@ export class BlockPileConfiguration extends Object implements FeatureConfigurati
     static NONE: NoneFeatureConfiguration;
     constructor(stateProvider: BlockStateProvider)
     stateProvider: BlockStateProvider;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

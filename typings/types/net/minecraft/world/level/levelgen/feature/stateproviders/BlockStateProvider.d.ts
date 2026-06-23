@@ -14,5 +14,5 @@ export abstract class BlockStateProvider extends Object {
     constructor()
     getOptionalState(level: WorldGenLevel, random: RandomSource, pos: BlockPos): BlockState;
     getState(level: WorldGenLevel, random: RandomSource, pos: BlockPos): BlockState;
-    type(): BlockStateProviderType<Object>;
+    type(): BlockStateProviderType<any>;
 }

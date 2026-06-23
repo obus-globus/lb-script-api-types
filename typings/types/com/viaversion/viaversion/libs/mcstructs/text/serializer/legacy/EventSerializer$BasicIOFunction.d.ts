@@ -3,5 +3,5 @@ import type { EventSerializer$IOFunction } from '../../../../../../../../com/via
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export interface EventSerializer$BasicIOFunction<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends EventSerializer$IOFunction<I, O>, Object{
     apply(arg0: I): O;
-    apply(arg0: SNbt<Object>, arg1: I): O;
+    apply(arg0: SNbt<any>, arg1: I): O;
 }

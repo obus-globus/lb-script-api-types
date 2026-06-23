@@ -6,6 +6,6 @@ export interface TokenSource extends Object{
     getCharPositionInLine(): number;
     getInputStream(): CharStream;
     getLine(): number;
-    getTokenFactory(): TokenFactory<Object>;
+    getTokenFactory(): TokenFactory<any>;
     nextToken(): Token;
 }

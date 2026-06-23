@@ -16,7 +16,7 @@ import type { CameraRenderState } from '../../../../../net/minecraft/client/rend
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
-export abstract class LivingEntityRenderer<T extends LivingEntity, S extends LivingEntityRenderState, M extends EntityModel<S>> extends EntityRenderer<T, S> implements LivingEntityRendererAccessor<LivingEntityRenderState, EntityModel<Object>>, RenderLayerParent<S, M> {
+export abstract class LivingEntityRenderer<T extends LivingEntity, S extends LivingEntityRenderState, M extends EntityModel<S>> extends EntityRenderer<T, S> implements LivingEntityRendererAccessor<LivingEntityRenderState, EntityModel<any>>, RenderLayerParent<S, M> {
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context, model: M, shadow: number)

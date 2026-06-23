@@ -7,5 +7,5 @@ export interface BlockTintSource extends Object{
     color(state: BlockState): number;
     colorAsTerrainParticle(state: BlockState, level: BlockAndTintGetter, pos: BlockPos): number;
     colorInWorld(state: BlockState, level: BlockAndTintGetter, pos: BlockPos): number;
-    relevantProperties(): Property<Object>[];
+    relevantProperties(): Property<any>[];
 }

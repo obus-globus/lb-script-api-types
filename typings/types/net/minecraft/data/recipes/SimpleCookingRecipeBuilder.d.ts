@@ -26,7 +26,7 @@ export class SimpleCookingRecipeBuilder extends Object implements RecipeBuilder 
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
     static generic(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramcookingCategory: CookingBookCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number, paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null): SimpleCookingRecipeBuilder;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<Object>>;
+    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static smelting(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramcookingCategory: CookingBookCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number): SimpleCookingRecipeBuilder;
     static smoking(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number): SimpleCookingRecipeBuilder;
     private constructor(craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemStackTemplate, ingredient: Ingredient, experience: number, cookingTime: number, factory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null)
@@ -40,10 +40,10 @@ export class SimpleCookingRecipeBuilder extends Object implements RecipeBuilder 
     // private group: string;
     // private ingredient: Ingredient;
     // private result: ItemStackTemplate;
-    defaultId(): ResourceKey<Recipe<Object>>;
+    defaultId(): ResourceKey<Recipe<any>>;
     group(group: string): SimpleCookingRecipeBuilder;
     save(output: RecipeOutput): void;
     save(output: RecipeOutput, id: string): void;
-    save(output: RecipeOutput, id: ResourceKey<Recipe<Object>>): void;
-    unlockedBy(name: string, criterion: Criterion<Object>): SimpleCookingRecipeBuilder;
+    save(output: RecipeOutput, id: ResourceKey<Recipe<any>>): void;
+    unlockedBy(name: string, criterion: Criterion<any>): SimpleCookingRecipeBuilder;
 }

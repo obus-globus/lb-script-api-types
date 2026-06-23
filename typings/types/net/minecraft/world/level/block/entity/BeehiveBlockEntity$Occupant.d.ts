@@ -14,11 +14,11 @@ export class BeehiveBlockEntity$Occupant extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BeehiveBlockEntity$Occupant>;
     static create(paramticksInHive: number): BeehiveBlockEntity$Occupant;
     static of(paramentity: Entity): BeehiveBlockEntity$Occupant;
-    // private entityData: TypedEntityData<EntityType<Object>>;
+    // private entityData: TypedEntityData<EntityType<any>>;
     // private minTicksInHive: number;
     // private ticksInHive: number;
     createEntity(level: Level, hivePos: BlockPos): Entity;
-    entityData(): TypedEntityData<EntityType<Object>>;
+    entityData(): TypedEntityData<EntityType<any>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     minTicksInHive(): number;

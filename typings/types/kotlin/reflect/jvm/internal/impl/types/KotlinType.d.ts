@@ -15,7 +15,7 @@ export abstract class KotlinType extends Object implements Annotated, KotlinType
     equals(arg0: Object | null): boolean;
     getAnnotations(): AnnotationDescriptor[];
     getArguments(): TypeProjection[];
-    getAttributes(): TypeAttribute<Object>[];
+    getAttributes(): TypeAttribute<any>[];
     getConstructor(): TypeConstructor;
     getMemberScope(): MemberScope;
     hashCode(): number;

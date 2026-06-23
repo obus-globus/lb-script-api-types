@@ -50,7 +50,7 @@ export class Maps extends Object {
     static newTreeMap(paramcomparator: (param0: Object) => boolean): Map<Object | null, Object | null>;
     static newTreeMap(): Map<Object | null, Object | null>;
     static newTreeMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static subMap(parammap: Map<Object | null, Object | null>, paramrange: Range<Object>): Map<Object | null, Object | null>;
+    static subMap(parammap: Map<Object | null, Object | null>, paramrange: Range<any>): Map<Object | null, Object | null>;
     static synchronizedBiMap(parambimap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
     static synchronizedNavigableMap(paramnavigableMap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
     static toImmutableEnumMap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, Map<Object | null, Object | null>>;

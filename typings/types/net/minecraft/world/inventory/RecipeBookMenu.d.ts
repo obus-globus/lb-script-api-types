@@ -29,8 +29,8 @@ export abstract class RecipeBookMenu extends AbstractContainerMenu {
     static getRedstoneSignalFromBlockEntity(paramblockEntity: BlockEntity): number;
     static getRedstoneSignalFromContainer(paramcontainer: ItemStack[]): number;
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
-    constructor(menuType: MenuType<Object>, containerId: number)
+    constructor(menuType: MenuType<any>, containerId: number)
     fillCraftSlotsStackedContents(stackedContents: StackedItemContents): void;
     getRecipeBookType(): RecipeBookType;
-    handlePlacement(useMaxItems: boolean, allowDroppingItemsToClear: boolean, recipe: RecipeHolder<Object>, level: ServerLevel, inventory: (Object | null)[]): RecipeBookMenu$PostPlaceAction;
+    handlePlacement(useMaxItems: boolean, allowDroppingItemsToClear: boolean, recipe: RecipeHolder<any>, level: ServerLevel, inventory: (Object | null)[]): RecipeBookMenu$PostPlaceAction;
 }

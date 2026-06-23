@@ -9,6 +9,6 @@ export class SetEntityLookTarget extends Object {
     static create(paramcategory: MobCategory, parammaxDist: number): BehaviorControl<LivingEntity>;
     static create(parammaxDist: number): OneShot<LivingEntity>;
     static create(parampredicate: (param0: LivingEntity) => boolean, parammaxDist: number): OneShot<LivingEntity>;
-    static create(paramtype: EntityType<Object>, parammaxDist: number): OneShot<LivingEntity>;
+    static create(paramtype: EntityType<any>, parammaxDist: number): OneShot<LivingEntity>;
     constructor()
 }

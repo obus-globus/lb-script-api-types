@@ -83,12 +83,12 @@ export class NetherFungusBlock extends VegetationBlock implements BonemealableBl
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
-    constructor(feature: ResourceKey<ConfiguredFeature<Object, Object>>, requiredBlock: Block, supportBlocks: TagKey<Block>, properties: BlockBehaviour$Properties)
-    // private feature: ResourceKey<ConfiguredFeature<Object, Object>>;
+    constructor(feature: ResourceKey<ConfiguredFeature<any, any>>, requiredBlock: Block, supportBlocks: TagKey<Block>, properties: BlockBehaviour$Properties)
+    // private feature: ResourceKey<ConfiguredFeature<any, any>>;
     // private requiredBlock: Block;
     // private supportBlocks: TagKey<Block>;
     codec(): MapCodec<NetherFungusBlock>;
-    // private getFeature(level: LevelReader): Optional<Holder<ConfiguredFeature<Object, Object>>>;
+    // private getFeature(level: LevelReader): Optional<Holder<ConfiguredFeature<any, any>>>;
     getParticlePos(blockPos: BlockPos): BlockPos;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     getType(): BonemealableBlock$Type;

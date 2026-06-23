@@ -64,7 +64,7 @@ export abstract class ServerCommonPacketListenerImpl extends Object implements P
     playerProfile(): GameProfile;
     protocol(): ConnectionProtocol;
     resumeFlushing(): void;
-    send(packet: Packet<Object>): void;
-    send(packet: Packet<Object>, listener: ChannelFutureListener): void;
+    send(packet: Packet<any>): void;
+    send(packet: Packet<any>, listener: ChannelFutureListener): void;
     suspendFlushing(): void;
 }

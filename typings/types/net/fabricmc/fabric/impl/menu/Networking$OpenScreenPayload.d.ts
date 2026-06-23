@@ -16,7 +16,7 @@ export class Networking$OpenScreenPayload<D extends Object | number | string | b
     static CODEC: StreamCodec<RegistryFriendlyByteBuf, Networking$OpenScreenPayload<Object>>;
     static ID: CustomPacketPayload$Type<Networking$OpenScreenPayload<Object>>;
     static codec(paramwriter: (param0: CustomPacketPayload | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => CustomPacketPayload | null): StreamCodec<ByteBuf, CustomPacketPayload>;
-    static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<Object, Object>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
+    static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
     static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
     // private containerId: number;
     // private data: D;

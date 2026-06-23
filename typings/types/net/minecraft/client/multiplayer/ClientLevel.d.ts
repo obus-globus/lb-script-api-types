@@ -226,7 +226,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     registerForCleaning(slot: CacheSlot<ClientLevel, Object>): void;
     removeEntity(id: number, reason: Entity$RemovalReason): void;
     sendBlockUpdated(pos: BlockPos, old: BlockState, current: BlockState, updateFlags: number): void;
-    sendPacketToServer(packet: Packet<Object>): void;
+    sendPacketToServer(packet: Packet<any>): void;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number): boolean;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number, updateLimit: number): boolean;
     setBlocksDirty(pos: BlockPos, oldState: BlockState, newState: BlockState): void;

@@ -9,12 +9,12 @@ import type { ItemDisplayContext } from '../../../../../../../net/minecraft/worl
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ComponentMatches extends Record implements ConditionalItemModelProperty {
     static MAP_CODEC: MapCodec<ComponentMatches>;
-    constructor(predicate: DataComponentPredicate$Single<Object>)
-    // private predicate: DataComponentPredicate$Single<Object>;
+    constructor(predicate: DataComponentPredicate$Single<any>)
+    // private predicate: DataComponentPredicate$Single<any>;
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): boolean;
     hashCode(): number;
-    predicate(): DataComponentPredicate$Single<Object>;
+    predicate(): DataComponentPredicate$Single<any>;
     toString(): string;
     type(): MapCodec<ComponentMatches>;
 }

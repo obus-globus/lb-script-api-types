@@ -1,7 +1,6 @@
 import type { Pair } from '../../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
@@ -55,7 +54,7 @@ export class MapItemSavedData extends SavedData {
     getBanners(): MapBanner[];
     getDecorations(): MapDecoration[];
     getHoldingPlayer(player: Player): MapItemSavedData$HoldingPlayer;
-    getUpdatePacket(id: MapId, player: Player): Packet<Object>;
+    getUpdatePacket(id: MapId, player: Player): Packet<any>;
     isExplorationMap(): boolean;
     isTrackedCountOverLimit(limit: number): boolean;
     // private playerDecorationTypeAndRotation(type: Holder<MapDecorationType>, level: LevelAccessor, yRot: number, xDeltaFromCenter: number, yDeltaFromCenter: number): Pair<Holder<MapDecorationType>, number>;

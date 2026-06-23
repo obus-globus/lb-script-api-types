@@ -21,7 +21,7 @@ export class CancellableContinuationImpl<T extends Object | number | string | bo
     callCancelHandler(handler: CancelHandler, cause: Throwable | null): void;
     // private callCancelHandlerSafely(block: () => void): void;
     callOnCancellation<R extends Object | number | string | boolean>(onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void, cause: Throwable, value: R): void;
-    // private callSegmentOnCancellation(segment: Segment<Object>, cause: Throwable | null): void;
+    // private callSegmentOnCancellation(segment: Segment<any>, cause: Throwable | null): void;
     cancel(cause: Throwable | null): boolean;
     cancelCompletedResult(takenState: Object | null, cause: Throwable): void;
     // private cancelLater(cause: Throwable): boolean;
@@ -37,7 +37,7 @@ export class CancellableContinuationImpl<T extends Object | number | string | bo
     initCancellability(): void;
     // private installParentHandle(): DisposableHandle | null;
     invokeOnCancellation(handler: (param0: Throwable | null) => void): void;
-    invokeOnCancellation(segment: Segment<Object>, index: number): void;
+    invokeOnCancellation(segment: Segment<any>, index: number): void;
     // private invokeOnCancellationImpl(handler: Object): void;
     invokeOnCancellationInternal(handler: CancelHandler): void;
     // private isReusable(): boolean;

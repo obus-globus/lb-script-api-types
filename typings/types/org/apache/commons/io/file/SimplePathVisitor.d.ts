@@ -8,7 +8,7 @@ import type { SimplePathVisitor$AbstractBuilder } from '../../../../../org/apach
 import type { IOBiFunction } from '../../../../../org/apache/commons/io/function/IOBiFunction.d.ts'
 export abstract class SimplePathVisitor extends SimpleFileVisitor<Path[]> implements PathVisitor {
     constructor()
-    constructor(arg0: SimplePathVisitor$AbstractBuilder<Object, Object>)
+    constructor(arg0: SimplePathVisitor$AbstractBuilder<Object, any>)
     constructor(arg0: (param0: Path[], param1: IOException) => FileVisitResult)
     // private visitFileFailedFunction: (param0: Path[], param1: IOException) => FileVisitResult;
     visitFileFailed(arg0: Path[], arg1: IOException): FileVisitResult;

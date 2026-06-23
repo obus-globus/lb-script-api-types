@@ -6,7 +6,7 @@ import type { UnlocalizedNumberRangeFormatter } from '../../../../com/ibm/icu/nu
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class LocalizedNumberRangeFormatter extends NumberRangeFormatterSettings<LocalizedNumberRangeFormatter> {
-    constructor(arg0: NumberRangeFormatterSettings<Object>, arg1: number, arg2: Object)
+    constructor(arg0: NumberRangeFormatterSettings<any>, arg1: number, arg2: Object)
     // private fImpl: NumberRangeFormatterImpl;
     create(arg0: number, arg1: Object): LocalizedNumberRangeFormatter;
     formatImpl(arg0: DecimalQuantity, arg1: DecimalQuantity, arg2: boolean): FormattedNumberRange;

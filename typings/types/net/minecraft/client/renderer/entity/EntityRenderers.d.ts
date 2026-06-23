@@ -9,8 +9,8 @@ import type { EntityType } from '../../../../../net/minecraft/world/entity/Entit
 import type { PlayerModelType } from '../../../../../net/minecraft/world/entity/player/PlayerModelType.d.ts'
 export class EntityRenderers extends Object {
     static createAvatarRenderers(paramcontext: EntityRendererProvider$Context): { [key in PlayerModelType]: AvatarRenderer<Avatar> };
-    static createEntityRenderers(paramcontext: EntityRendererProvider$Context): Map<EntityType<Object>, EntityRenderer<Object, Object>>;
-    static register(paramtype: EntityType<Entity>, paramrenderer: (param0: EntityRendererProvider$Context) => EntityRenderer<Entity, Object>): void;
+    static createEntityRenderers(paramcontext: EntityRendererProvider$Context): Map<EntityType<any>, EntityRenderer<any, any>>;
+    static register(paramtype: EntityType<Entity>, paramrenderer: (param0: EntityRendererProvider$Context) => EntityRenderer<Entity, any>): void;
     static validateRegistrations(): boolean;
     constructor()
 }

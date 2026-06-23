@@ -16,9 +16,8 @@ import type { EntityDataFilter } from '../../../../com/viaversion/viaversion/rew
 import type { EntityDataFilter$Builder } from '../../../../com/viaversion/viaversion/rewriter/entitydata/EntityDataFilter$Builder.d.ts'
 import type { EntityDataFilter$DataTypeMapper } from '../../../../com/viaversion/viaversion/rewriter/entitydata/EntityDataFilter$DataTypeMapper.d.ts'
 import type { Exception } from '../../../../java/lang/Exception.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class EntityRewriter<C extends ClientboundPacketType, T extends Protocol<C, Object, Object, Object>> extends RewriterBase<T> implements EntityRewriter_2<T> {
+export abstract class EntityRewriter<C extends ClientboundPacketType, T extends Protocol<C, any, any, any>> extends RewriterBase<T> implements EntityRewriter_2<T> {
     constructor(arg0: T)
     constructor(arg0: T, arg1: boolean)
     // private entityDataFilters: EntityDataFilter[];

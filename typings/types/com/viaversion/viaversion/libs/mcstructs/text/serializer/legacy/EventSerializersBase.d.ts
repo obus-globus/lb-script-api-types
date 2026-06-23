@@ -8,7 +8,7 @@ import type { SerializerMap } from '../../../../../../../../com/viaversion/viave
 import type { SerializerMap$Builder } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/SerializerMap$Builder.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export abstract class EventSerializersBase extends Object {
-    constructor(arg0: SNbt<Object>)
+    constructor(arg0: SNbt<any>)
     // private clickEventSerializer: SerializerMap<ClickEvent, ClickEventAction, string>;
     // private hoverEventSerializer: SerializerMap<HoverEvent, HoverEventAction, TextComponent>;
     createClickEventSerializer(arg0: SerializerMap$Builder<ClickEvent, ClickEventAction, string>): SerializerMap<ClickEvent, ClickEventAction, string>;

@@ -19,5 +19,5 @@ export class OreConfiguration extends Object implements FeatureConfiguration {
     discardChanceOnAirExposure: number;
     size: number;
     targetStates: OreConfiguration$TargetBlockState[];
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

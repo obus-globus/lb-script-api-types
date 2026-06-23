@@ -5,14 +5,14 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { TrimPattern } from '../../../../../net/minecraft/world/item/equipment/trim/TrimPattern.d.ts'
 export class VanillaRecipeProvider$TrimTemplate extends Record {
-    constructor(template: Item, patternId: ResourceKey<TrimPattern>, recipeId: ResourceKey<Recipe<Object>>)
+    constructor(template: Item, patternId: ResourceKey<TrimPattern>, recipeId: ResourceKey<Recipe<any>>)
     // private patternId: ResourceKey<TrimPattern>;
-    // private recipeId: ResourceKey<Recipe<Object>>;
+    // private recipeId: ResourceKey<Recipe<any>>;
     // private template: Item;
     equals(o: Object | null): boolean;
     hashCode(): number;
     patternId(): ResourceKey<TrimPattern>;
-    recipeId(): ResourceKey<Recipe<Object>>;
+    recipeId(): ResourceKey<Recipe<any>>;
     template(): Item;
     toString(): string;
 }

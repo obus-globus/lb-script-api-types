@@ -1,5 +1,4 @@
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -9,11 +8,11 @@ import type { BlinkEspMode } from '../../../../../../net/ccbluex/liquidbounce/fe
 import type { Color4b } from '../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 export class BlinkEspBox extends BlinkEspMode {
     static Companion: Tagged$Companion;
-    constructor(parent: ModeValueGroup<Object>, getEspData: () => BlinkEspData | null)
+    constructor(parent: ModeValueGroup<any>, getEspData: () => BlinkEspData | null)
     // private color: Color4b;
     // private /*not mapped: */ getColor(): Color4b;
     // private outlineColor: Color4b;
     // private /*not mapped: */ getOutlineColor(): Color4b;
-    readonly parent: ModeValueGroup<Object>;
+    readonly parent: ModeValueGroup<any>;
     // private renderHandler: EventHook<WorldRenderEvent>;
 }

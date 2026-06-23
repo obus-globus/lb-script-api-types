@@ -12,8 +12,8 @@ import type { ComponentRewriterBase$ReadType } from '../../../../../com/viaversi
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export abstract class ComponentRewriterBase<C extends ClientboundPacketType> extends Object implements ComponentRewriter {
-    constructor(arg0: Protocol<C, Object, Object, Object>, arg1: ComponentRewriterBase$ReadType)
-    // private protocol: Protocol<C, Object, Object, Object>;
+    constructor(arg0: Protocol<C, any, any, any>, arg1: ComponentRewriterBase$ReadType)
+    // private protocol: Protocol<C, any, any, any>;
     // private type: ComponentRewriterBase$ReadType;
     handleAttributeModifiers(arg0: Map$Entry<string, Tag>[]): void;
     handleContainerContents(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;

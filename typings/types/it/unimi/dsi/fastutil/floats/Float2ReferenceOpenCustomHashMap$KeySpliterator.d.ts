@@ -4,7 +4,7 @@ import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/
 import type { FloatSpliterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Float2ReferenceOpenCustomHashMap$KeySpliterator extends Float2ReferenceOpenCustomHashMap$MapSpliterator<Object, Object> implements FloatSpliterator {
+export class Float2ReferenceOpenCustomHashMap$KeySpliterator extends Float2ReferenceOpenCustomHashMap$MapSpliterator<Object, any> implements FloatSpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

@@ -8,10 +8,10 @@ import type { ParticleRewriter as ParticleRewriter_2 } from '../../../../com/via
 import type { Type } from '../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ParticleRewriter<C extends ClientboundPacketType> extends Object implements ParticleRewriter_2 {
-    constructor(arg0: Protocol<C, Object, Object, Object>)
+    constructor(arg0: Protocol<C, any, any, any>)
     // private mappedParticleType: Type<Particle>;
     // private particleType: Type<Particle>;
-    // private protocol: Protocol<C, Object, Object, Object>;
+    // private protocol: Protocol<C, any, any, any>;
     levelParticlesHandler1_13(arg0: Type<number>): (param0: PacketWrapper) => void;
     mappedParticleType(): Type<Particle>;
     particleType(): Type<Particle>;

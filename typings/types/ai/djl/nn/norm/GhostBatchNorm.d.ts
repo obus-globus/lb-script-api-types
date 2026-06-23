@@ -11,7 +11,7 @@ export class GhostBatchNorm extends BatchNorm {
     static batchNorm(paramarg0: NDArray, paramarg1: NDArray, paramarg2: NDArray, paramarg3: NDArray, paramarg4: NDArray): (Object | null)[];
     static batchNorm(paramarg0: NDArray, paramarg1: NDArray, paramarg2: NDArray, paramarg3: NDArray, paramarg4: NDArray, paramarg5: number): (Object | null)[];
     static batchNorm(paramarg0: NDArray, paramarg1: NDArray, paramarg2: NDArray, paramarg3: NDArray, paramarg4: NDArray, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: boolean): (Object | null)[];
-    static builder(): BatchNorm$BaseBuilder<Object>;
+    static builder(): BatchNorm$BaseBuilder<any>;
     static builder(): GhostBatchNorm$Builder;
     constructor(arg0: GhostBatchNorm$Builder)
     // private batchifier: Batchifier;

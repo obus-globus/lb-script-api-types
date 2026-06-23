@@ -15,7 +15,7 @@ export class AttributeModifiers1_20_5 extends Record implements Copyable, Rewrit
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     modifiers(): AttributeModifiers1_20_5$AttributeModifier[];
-    rewrite(arg0: UserConnection, arg1: Protocol<Object, Object, Object, Object>, arg2: boolean): AttributeModifiers1_20_5;
+    rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): AttributeModifiers1_20_5;
     showInTooltip(): boolean;
     toString(): string;
 }

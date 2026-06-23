@@ -16,7 +16,7 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class BehaviorUtils extends Object {
     static canSee(parambody: LivingEntity, paramtarget: LivingEntity): boolean;
-    static entityIsVisible(parambrain: Brain<Object>, paramtargetEntity: LivingEntity): boolean;
+    static entityIsVisible(parambrain: Brain<any>, paramtargetEntity: LivingEntity): boolean;
     static findSectionClosestToVillage(paramlevel: ServerLevel, paramcenter: SectionPos, paramradius: number): SectionPos;
     static getLivingEntityFromUUIDMemory(parambody: LivingEntity, parammemoryType: MemoryModuleType<UUID>): Optional<LivingEntity>;
     static getNearestTarget(parambody: LivingEntity, paramtarget1: Optional<LivingEntity>, paramtarget2: LivingEntity): LivingEntity;
@@ -30,7 +30,7 @@ export class BehaviorUtils extends Object {
     static setWalkAndLookTargetMemories(paramwalker: LivingEntity, paramtargetPos: BlockPos, paramspeedModifier: number, paramcloseEnoughDistance: number): void;
     static setWalkAndLookTargetMemories(paramwalker: LivingEntity, paramtargetEntity: Entity, paramspeedModifier: number, paramcloseEnoughDistance: number): void;
     static setWalkAndLookTargetMemories(paramwalker: LivingEntity, paramtarget: PositionTracker, paramspeedModifier: number, paramcloseEnoughDistance: number): void;
-    static targetIsValid(parambrain: Brain<Object>, parammemory: MemoryModuleType<LivingEntity>, paramtargetType: EntityType<Object>): boolean;
+    static targetIsValid(parambrain: Brain<any>, parammemory: MemoryModuleType<LivingEntity>, paramtargetType: EntityType<any>): boolean;
     static throwItem(paramthrower: LivingEntity, paramitem: ItemStack, paramtargetPos: Vec3): void;
     static throwItem(paramthrower: LivingEntity, paramitem: ItemStack, paramtargetPos: Vec3, paramthrowVelocity: Vec3, paramhandYDistanceFromEye: number): void;
     private constructor()

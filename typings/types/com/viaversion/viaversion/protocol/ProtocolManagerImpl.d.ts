@@ -31,7 +31,7 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     readonly maxPathDeltaIncrease: number;
     readonly maxProtocolPathSize: number;
     // private pathCache: Map<ProtocolPathKey, ProtocolPathEntry[]>;
-    readonly protocols: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, Protocol<Object, Object, Object, Object>>;
+    readonly protocols: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, Protocol<any, any, any, any>>;
     // private registryMap: Map<ProtocolVersion, Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>>;
     readonly serverProtocolVersion: ServerProtocolVersion;
     // private serverboundBaseProtocols: Pair<Range<ProtocolVersion>, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>[];
@@ -54,7 +54,7 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
     getProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
     // private getProtocolPath(arg0: Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ProtocolVersion, arg2: ProtocolVersion): Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>;
-    getProtocols(): Protocol<Object, Object, Object, Object>[];
+    getProtocols(): Protocol<any, any, any, any>[];
     getServerProtocolVersion(): ServerProtocolVersion;
     getSupportedVersions(): ProtocolVersion[];
     hasLoadedMappings(): boolean;

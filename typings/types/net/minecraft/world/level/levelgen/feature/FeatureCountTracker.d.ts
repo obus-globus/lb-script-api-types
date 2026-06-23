@@ -6,7 +6,7 @@ import type { PlacedFeature } from '../../../../../../net/minecraft/world/level/
 export class FeatureCountTracker extends Object {
     static chunkDecorated(paramlevel: ServerLevel): void;
     static clearCounts(): void;
-    static featurePlaced(paramlevel: ServerLevel, paramfeature: ConfiguredFeature<Object, Object>, paramtopFeature: Optional<PlacedFeature>): void;
+    static featurePlaced(paramlevel: ServerLevel, paramfeature: ConfiguredFeature<any, any>, paramtopFeature: Optional<PlacedFeature>): void;
     static logCounts(): void;
     constructor()
 }

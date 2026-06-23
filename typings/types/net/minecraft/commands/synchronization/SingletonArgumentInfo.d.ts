@@ -8,8 +8,8 @@ import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchr
 import type { SingletonArgumentInfo$Template } from '../../../../net/minecraft/commands/synchronization/SingletonArgumentInfo$Template.d.ts'
 import type { FriendlyByteBuf } from '../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 export class SingletonArgumentInfo<A extends ArgumentType<Object>> extends Object implements ArgumentTypeInfo<A, SingletonArgumentInfo$Template> {
-    static contextAware(paramconstructor: (param0: CommandBuildContext) => Object | null): SingletonArgumentInfo<Object>;
-    static contextFree(paramconstructor: () => Object | null): SingletonArgumentInfo<Object>;
+    static contextAware(paramconstructor: (param0: CommandBuildContext) => Object | null): SingletonArgumentInfo<any>;
+    static contextFree(paramconstructor: () => Object | null): SingletonArgumentInfo<any>;
     private constructor(constructor: (param0: CommandBuildContext) => A)
     // private template: SingletonArgumentInfo$Template;
     deserializeFromNetwork(in_: FriendlyByteBuf): SingletonArgumentInfo$Template;

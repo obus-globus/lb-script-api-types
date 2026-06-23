@@ -19,7 +19,7 @@ export class InventoryItemSlot extends Object implements ItemSlot {
     readonly itemStack: ItemStack;
     readonly slotType: ItemSlot$Type;
     equals(other: Object | null): boolean;
-    getIdForServer(screen: AbstractContainerScreen<Object> | null): number;
+    getIdForServer(screen: AbstractContainerScreen<any> | null): number;
     getIdForServerWithCurrentScreen(): number | null;
     hashCode(): number;
     toString(): string;

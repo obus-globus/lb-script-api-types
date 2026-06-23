@@ -4,7 +4,6 @@ import type { RecordCodecBuilder } from '../../../../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { HeightProvider } from '../../../../../../../net/minecraft/world/level/levelgen/heightproviders/HeightProvider.d.ts'
 import type { Structure } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
@@ -22,5 +21,5 @@ export class NetherFossilStructure extends Structure {
     constructor(settings: Structure$StructureSettings, height: HeightProvider)
     height: HeightProvider;
     findGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
-    type(): StructureType<Object>;
+    type(): StructureType<any>;
 }

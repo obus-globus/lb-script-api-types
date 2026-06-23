@@ -9,7 +9,7 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RootCommandNode<S extends Object | number | string | boolean> extends CommandNode<S> {
     constructor()
-    createBuilder(): ArgumentBuilder<S, Object>;
+    createBuilder(): ArgumentBuilder<S, any>;
     equals(arg0: Object | null): boolean;
     getExamples(): string[];
     getName(): string;

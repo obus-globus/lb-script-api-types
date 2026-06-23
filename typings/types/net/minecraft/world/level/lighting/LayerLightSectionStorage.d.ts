@@ -31,7 +31,7 @@ export abstract class LayerLightSectionStorage<M extends DataLayerStorageMap<M>>
     // private initializeSection(sectionNode: number): void;
     lightOnInColumn(sectionZeroNode: number): boolean;
     lightOnInSection(sectionNode: number): boolean;
-    markNewInconsistencies(engine: LightEngine<M, Object>): void;
+    markNewInconsistencies(engine: LightEngine<M, any>): void;
     markSectionAndNeighborsAsAffected(sectionNode: number): void;
     onNodeAdded(sectionNode: number): void;
     onNodeRemoved(sectionNode: number): void;

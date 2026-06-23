@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -14,12 +13,12 @@ import type { RecipeSerializer } from '../../../../../net/minecraft/world/item/c
 import type { ShapedRecipePattern } from '../../../../../net/minecraft/world/item/crafting/ShapedRecipePattern.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class MapExtendingRecipe extends CustomRecipe {
-    static CODEC: Codec<Recipe<Object>>;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
+    static CODEC: Codec<Recipe<any>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<MapExtendingRecipe>;
     static SERIALIZER: RecipeSerializer<MapExtendingRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, MapExtendingRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(map: Ingredient, material: Ingredient, result: ItemStackTemplate)
     // private map: Ingredient;
     // private material: Ingredient;

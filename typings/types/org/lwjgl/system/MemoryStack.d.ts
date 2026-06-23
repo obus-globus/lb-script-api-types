@@ -211,7 +211,7 @@ export class MemoryStack extends Pointer$Default implements AutoCloseable {
     pointers(arg0: Pointer, arg1: Pointer): PointerBuffer;
     pointers(arg0: Pointer, arg1: Pointer, arg2: Pointer): PointerBuffer;
     pointers(arg0: Pointer, arg1: Pointer, arg2: Pointer, arg3: Pointer): PointerBuffer;
-    pointersOfElements(arg0: CustomBuffer<Object>): PointerBuffer;
+    pointersOfElements(arg0: CustomBuffer<any>): PointerBuffer;
     pop(): MemoryStack;
     push(): MemoryStack;
     setPointer(arg0: number): void;

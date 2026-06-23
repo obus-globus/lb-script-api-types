@@ -10,7 +10,7 @@ import type { SerializerVersion } from '../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class JsonNBTComponentRewriter<C extends ClientboundPacketType> extends ComponentRewriterBase<C> {
-    constructor(arg0: Protocol<C, Object, Object, Object>, arg1: ComponentRewriterBase$ReadType)
+    constructor(arg0: Protocol<C, any, any, any>, arg1: ComponentRewriterBase$ReadType)
     convertLegacyEntityContents(arg0: Map$Entry<string, Tag>[]): void;
     convertLegacyItemContents(arg0: Map$Entry<string, Tag>[]): void;
     handleHoverEvent(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;

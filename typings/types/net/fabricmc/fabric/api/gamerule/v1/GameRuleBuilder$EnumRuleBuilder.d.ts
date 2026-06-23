@@ -13,7 +13,7 @@ import type { GameRuleCategory } from '../../../../../../net/minecraft/world/lev
 export class GameRuleBuilder$EnumRuleBuilder<E extends Enum<E>> extends GameRuleBuilder<E> {
     static forBoolean(paramarg0: boolean): GameRuleBuilder$BooleanRuleBuilder;
     static forDouble(paramarg0: number): GameRuleBuilder$DoubleRuleBuilder;
-    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<Object>;
+    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<any>;
     static forInteger(paramarg0: number): GameRuleBuilder$IntegerRuleBuilder;
     constructor(arg0: E)
     // private supportedValues: E[];

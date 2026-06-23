@@ -10,13 +10,13 @@ import type { AFSocketOption } from '../../../../org/newsclub/net/unix/AFSocketO
 import type { AFSupplier } from '../../../../org/newsclub/net/unix/AFSupplier.d.ts'
 import type { AncillaryDataSupport } from '../../../../org/newsclub/net/unix/AncillaryDataSupport.d.ts'
 export class AFSocketCore extends AFCore {
-    constructor(arg0: Object, arg1: FileDescriptor, arg2: AncillaryDataSupport, arg3: AFAddressFamily<Object>, arg4: boolean)
-    // private af: AFAddressFamily<Object>;
+    constructor(arg0: Object, arg1: FileDescriptor, arg2: AncillaryDataSupport, arg3: AFAddressFamily<any>, arg4: boolean)
+    // private af: AFAddressFamily<any>;
     // private inode: AtomicLong;
     // private pendingAccepts: AtomicInteger;
     // private shutdownOnClose: boolean;
     // private socketAddress: AFSocketAddress;
-    addressFamily(): AFAddressFamily<Object>;
+    addressFamily(): AFAddressFamily<any>;
     decPendingAccepts(): void;
     doClose(): void;
     getOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>): T;

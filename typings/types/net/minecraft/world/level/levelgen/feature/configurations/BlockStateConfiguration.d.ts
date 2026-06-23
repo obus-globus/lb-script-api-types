@@ -11,5 +11,5 @@ export class BlockStateConfiguration extends Object implements FeatureConfigurat
     static NONE: NoneFeatureConfiguration;
     constructor(state: BlockState)
     state: BlockState;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
 }

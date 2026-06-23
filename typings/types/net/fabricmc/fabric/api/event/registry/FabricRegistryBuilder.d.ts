@@ -8,7 +8,7 @@ export class FabricRegistryBuilder<T extends Object | number | string | boolean,
     static create(paramarg0: ResourceKey<(Object | null)[]>): FabricRegistryBuilder<Object, (Object | null)[]>;
     static createDefaulted(paramarg0: Class<Object>, paramarg1: Identifier, paramarg2: Identifier): FabricRegistryBuilder<Object, (Object | null)[]>;
     static createDefaulted(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Identifier): FabricRegistryBuilder<Object, (Object | null)[]>;
-    static from(paramarg0: Object | null): FabricRegistryBuilder<Object, Object>;
+    static from(paramarg0: Object | null): FabricRegistryBuilder<Object, any>;
     private constructor(arg0: R)
     // private attributes: RegistryAttribute[];
     // private registry: R;

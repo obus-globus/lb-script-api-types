@@ -48,7 +48,7 @@ export class TrialSpawner extends Object {
     markUpdated(): void;
     normalConfig(): TrialSpawnerConfig;
     ominousConfig(): TrialSpawnerConfig;
-    overrideEntityToSpawn(type: EntityType<Object>, level: Level): void;
+    overrideEntityToSpawn(type: EntityType<any>, level: Level): void;
     overridePeacefulAndMobSpawnRule(): void;
     removeOminous(level: ServerLevel, spawnerPos: BlockPos): void;
     setPlayerDetector(playerDetector: PlayerDetector): void;

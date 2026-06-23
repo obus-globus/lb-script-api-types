@@ -5,8 +5,8 @@ import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { ProxyChannel } from '../../../../../../org/cloudburstmc/netty/channel/proxy/ProxyChannel.d.ts'
 export class ProxyInboundRouter extends Object implements ChannelInboundHandler {
     static NAME: string;
-    constructor(arg0: ProxyChannel<Object>)
-    // private proxiedChannel: ProxyChannel<Object>;
+    constructor(arg0: ProxyChannel<any>)
+    // private proxiedChannel: ProxyChannel<any>;
     channelActive(arg0: ChannelHandlerContext): void;
     channelInactive(arg0: ChannelHandlerContext): void;
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;

@@ -52,8 +52,8 @@ export class EntityPredicate$Builder extends Object {
     movementAffectedBy(location: LocationPredicate$Builder): EntityPredicate$Builder;
     moving(movement: MovementPredicate): EntityPredicate$Builder;
     nbt(nbt: NbtPredicate): EntityPredicate$Builder;
-    of(lookup: HolderGetter<EntityType<Object>>, entityTypeTag: TagKey<EntityType<Object>>): EntityPredicate$Builder;
-    of(lookup: HolderGetter<EntityType<Object>>, entityType: EntityType<Object>): EntityPredicate$Builder;
+    of(lookup: HolderGetter<EntityType<any>>, entityTypeTag: TagKey<EntityType<any>>): EntityPredicate$Builder;
+    of(lookup: HolderGetter<EntityType<any>>, entityType: EntityType<any>): EntityPredicate$Builder;
     passenger(passenger: EntityPredicate$Builder): EntityPredicate$Builder;
     periodicTick(period: number): EntityPredicate$Builder;
     slots(slots: SlotsPredicate): EntityPredicate$Builder;

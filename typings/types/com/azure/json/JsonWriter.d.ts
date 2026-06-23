@@ -27,8 +27,8 @@ export abstract class JsonWriter extends Object implements Closeable {
     writeFloatField(arg0: string, arg1: number): JsonWriter;
     writeInt(arg0: number): JsonWriter;
     writeIntField(arg0: string, arg1: number): JsonWriter;
-    writeJson(arg0: JsonSerializable<Object>): JsonWriter;
-    writeJsonField(arg0: string, arg1: JsonSerializable<Object>): JsonWriter;
+    writeJson(arg0: JsonSerializable<any>): JsonWriter;
+    writeJsonField(arg0: string, arg1: JsonSerializable<any>): JsonWriter;
     writeLong(arg0: number): JsonWriter;
     writeLongField(arg0: string, arg1: number): JsonWriter;
     writeMap<T extends Object | number | string | boolean>(arg0: { [key: string]: T }, arg1: (param0: JsonWriter, param1: T) => void): JsonWriter;

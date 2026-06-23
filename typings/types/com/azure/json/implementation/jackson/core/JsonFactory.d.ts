@@ -34,12 +34,12 @@ export class JsonFactory extends TokenStreamFactory implements Versioned, Serial
     static DEFAULT_QUOTE_CHAR: string;
     static DEFAULT_ROOT_VALUE_SEPARATOR: SerializableString;
     static FORMAT_NAME_JSON: string;
-    static builder(): TSFBuilder<Object, Object>;
+    static builder(): TSFBuilder<any, any>;
     constructor()
     constructor(arg0: JsonFactory, arg1: ObjectCodec)
     constructor(arg0: JsonFactoryBuilder)
     constructor(arg0: ObjectCodec)
-    constructor(arg0: TSFBuilder<Object, Object>, arg1: boolean)
+    constructor(arg0: TSFBuilder<any, any>, arg1: boolean)
     // private _byteSymbolCanonicalizer: ByteQuadsCanonicalizer;
     // private _characterEscapes: CharacterEscapes;
     // private _factoryFeatures: number;

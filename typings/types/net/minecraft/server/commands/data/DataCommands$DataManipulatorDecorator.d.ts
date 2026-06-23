@@ -7,5 +7,5 @@ import type { CompoundTag } from '../../../../../net/minecraft/nbt/CompoundTag.d
 import type { Tag } from '../../../../../net/minecraft/nbt/Tag.d.ts'
 import type { DataCommands$DataManipulator } from '../../../../../net/minecraft/server/commands/data/DataCommands$DataManipulator.d.ts'
 export interface DataCommands$DataManipulatorDecorator extends Object {
-    create(manipulator: (param0: CommandContext<CommandSourceStack>, param1: CompoundTag, param2: NbtPathArgument$NbtPath, param3: Tag[]) => number): ArgumentBuilder<CommandSourceStack, Object>;
+    create(manipulator: (param0: CommandContext<CommandSourceStack>, param1: CompoundTag, param2: NbtPathArgument$NbtPath, param3: Tag[]) => number): ArgumentBuilder<CommandSourceStack, any>;
 }

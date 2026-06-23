@@ -8,8 +8,8 @@ import type { ParticleType } from '../../../../../../net/minecraft/core/particle
 export class ParticleProviderRegistryImpl$DeferredParticleProviderRegistry extends Object implements ParticleProviderRegistry {
     static getInstance(): ParticleProviderRegistry;
     constructor()
-    // private constructors: Map<ParticleType<Object>, (param0: FabricSpriteSet) => ParticleProvider<ParticleOptions>>;
-    // private factories: Map<ParticleType<Object>, ParticleProvider<Object>>;
+    // private constructors: Map<ParticleType<any>, (param0: FabricSpriteSet) => ParticleProvider<ParticleOptions>>;
+    // private factories: Map<ParticleType<any>, ParticleProvider<any>>;
     applyTo(arg0: ParticleProviderRegistry): void;
     register<T extends ParticleOptions>(arg0: ParticleType<T>, arg1: (param0: FabricSpriteSet) => ParticleProvider<T>): void;
     register<T extends ParticleOptions>(arg0: ParticleType<T>, arg1: ParticleProvider<T>): void;

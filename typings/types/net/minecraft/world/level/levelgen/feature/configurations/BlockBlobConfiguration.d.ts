@@ -16,7 +16,7 @@ export class BlockBlobConfiguration extends Record implements FeatureConfigurati
     // private state: BlockState;
     canPlaceOn(): BlockPredicate;
     equals(o: Object | null): boolean;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     hashCode(): number;
     state(): BlockState;
     toString(): string;

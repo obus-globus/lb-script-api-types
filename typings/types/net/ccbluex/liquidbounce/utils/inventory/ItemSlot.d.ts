@@ -17,7 +17,7 @@ export interface ItemSlot extends Object, ItemStackHolder{
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:46}
      */
-    getIdForServer(screen: AbstractContainerScreen<Object> | null): number | null;
+    getIdForServer(screen: AbstractContainerScreen<any> | null): number | null;
     getIdForServerWithCurrentScreen(): number | null;
     hashCode(): number;
 }

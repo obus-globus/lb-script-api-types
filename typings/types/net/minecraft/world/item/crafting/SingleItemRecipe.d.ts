@@ -17,9 +17,9 @@ import type { SingleRecipeInput } from '../../../../../net/minecraft/world/item/
 import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplay.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export abstract class SingleItemRecipe extends Object implements Recipe<SingleRecipeInput> {
-    static CODEC: Codec<Recipe<Object>>;
-    static KEY_CODEC: Codec<ResourceKey<Recipe<Object>>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<Object>>;
+    static CODEC: Codec<Recipe<any>>;
+    static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;
     static simpleStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): StreamCodec<RegistryFriendlyByteBuf, SingleItemRecipe>;
     constructor(commonInfo: Recipe$CommonInfo, input: Ingredient, result: ItemStackTemplate)

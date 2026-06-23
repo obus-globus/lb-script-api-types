@@ -48,5 +48,5 @@ export class NotPredicate extends Object implements BlockPredicate {
     constructor(predicate: BlockPredicate)
     // private predicate: BlockPredicate;
     test(level: WorldGenLevel, origin: BlockPos): boolean;
-    type(): BlockPredicateType<Object>;
+    type(): BlockPredicateType<any>;
 }

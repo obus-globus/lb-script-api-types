@@ -16,7 +16,7 @@ export class DeltaFeatureConfiguration extends Object implements FeatureConfigur
     // private rimSize: IntProvider;
     // private size: IntProvider;
     contents(): BlockState;
-    getSubFeatures(): Stream<Holder<ConfiguredFeature<Object, Object>>>;
+    getSubFeatures(): Stream<Holder<ConfiguredFeature<any, any>>>;
     rim(): BlockState;
     rimSize(): IntProvider;
     size(): IntProvider;

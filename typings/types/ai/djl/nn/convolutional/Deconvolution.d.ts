@@ -9,7 +9,7 @@ import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
 import type { DataInputStream } from '../../../../java/io/DataInputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Deconvolution extends AbstractBlock {
-    constructor(arg0: Deconvolution$DeconvolutionBuilder<Object>)
+    constructor(arg0: Deconvolution$DeconvolutionBuilder<any>)
     // private bias: Parameter;
     // private dilation: Shape;
     // private filters: number;

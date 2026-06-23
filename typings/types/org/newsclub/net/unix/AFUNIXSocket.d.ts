@@ -12,7 +12,7 @@ import type { AFUNIXSocketChannel } from '../../../../org/newsclub/net/unix/AFUN
 import type { AFUNIXSocketCredentials } from '../../../../org/newsclub/net/unix/AFUNIXSocketCredentials.d.ts'
 import type { AFUNIXSocketExtensions } from '../../../../org/newsclub/net/unix/AFUNIXSocketExtensions.d.ts'
 export class AFUNIXSocket extends AFSocket<AFUNIXSocketAddress> implements AFUNIXSocketExtensions {
-    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<Object>;
+    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<any>;
     static connectTo(paramarg0: AFUNIXSocketAddress): AFUNIXSocket;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;
